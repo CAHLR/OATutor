@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_af62676data_analysis2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Concept",
+        "text": "The average score of a sample is a measure that summarizes the data. It represents a characteristic of the sample.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676data_analysis2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676data_analysis2a-h1"
+        ],
+        "title": "Sample vs. Population",
+        "text": "A statistic is a numerical value that describes a characteristic of a sample, while a parameter describes a characteristic of a population.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676data_analysis2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Statistic"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676data_analysis2a-h2"
+        ],
+        "title": "Identifying the Correct Term",
+        "text": "Given that the average score is calculated from a sample of $$10$$ students, what is this measure called?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Variable",
+            "Population",
+            "Statistic",
+            "Data"
+        ]
+    }
+]

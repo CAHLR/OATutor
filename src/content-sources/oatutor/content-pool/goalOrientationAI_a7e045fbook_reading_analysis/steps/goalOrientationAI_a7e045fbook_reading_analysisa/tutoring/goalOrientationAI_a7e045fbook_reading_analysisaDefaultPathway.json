@@ -1,0 +1,41 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fbook_reading_analysisa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Data",
+        "text": "First, identify how many members read between $$50$$ and $$150$$ pages. Count the number of members in this range.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fbook_reading_analysisa-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fbook_reading_analysisa-h1"
+        ],
+        "title": "Total Members",
+        "text": "Determine the total number of members in the book club. This will help you calculate the percentage.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fbook_reading_analysisa-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$40$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fbook_reading_analysisa-h2"
+        ],
+        "title": "Calculate the Percentage",
+        "text": "Use the formula: (number of members who read between $$50$$ and $$150$$ pages) divided by (total number of members) times $$100$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

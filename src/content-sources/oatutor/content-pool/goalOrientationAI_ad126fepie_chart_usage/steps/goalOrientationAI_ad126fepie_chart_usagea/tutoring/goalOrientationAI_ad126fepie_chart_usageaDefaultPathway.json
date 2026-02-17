@@ -1,0 +1,48 @@
+[
+    {
+        "id": "goalOrientationAI_ad126fepie_chart_usagea-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Purpose of Pie Charts",
+        "text": "Pie charts are used to represent parts of a whole based on how much data is in each category.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad126fepie_chart_usagea-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad126fepie_chart_usagea-h1"
+        ],
+        "title": "Focus on Proportions",
+        "text": "Pie charts are effective for showing proportions between different categories visually, but it is difficult to show exact values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad126fepie_chart_usagea-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad126fepie_chart_usagea-h2"
+        ],
+        "title": "Not for Trends",
+        "text": "A line chart is more suitable for visualizing and analyzing change in chronological data trends over time, since a pie chart only takes the count of each section as a proportion of the whole.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad126fepie_chart_usagea-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad126fepie_chart_usagea-h3"
+        ],
+        "title": "Not for Correlations",
+        "text": "Pie charts are not suitable for showing correlations between variables because multiple categories are often included.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

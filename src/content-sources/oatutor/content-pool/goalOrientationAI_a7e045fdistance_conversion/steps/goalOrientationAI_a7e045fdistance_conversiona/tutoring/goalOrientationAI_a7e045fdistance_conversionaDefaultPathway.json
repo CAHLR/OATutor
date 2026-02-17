@@ -1,0 +1,41 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fdistance_conversiona-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand the Conversion Factor",
+        "text": "To convert miles to kilometers, use the conversion factor $$1$$ mile $$=$$ $$1.60934$$ kilometers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fdistance_conversiona-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8.0467$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fdistance_conversiona-h1"
+        ],
+        "title": "Apply the Conversion Formula",
+        "text": "Multiply the number of miles by the conversion factor: $$5\\times1.60934$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fdistance_conversiona-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fdistance_conversiona-h2"
+        ],
+        "title": "Simplify the Calculation",
+        "text": "After multiplying, ensure your answer is rounded to four decimal places.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

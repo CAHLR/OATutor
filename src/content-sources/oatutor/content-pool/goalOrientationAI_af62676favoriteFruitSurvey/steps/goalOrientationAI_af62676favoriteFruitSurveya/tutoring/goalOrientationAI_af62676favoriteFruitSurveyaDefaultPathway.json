@@ -1,0 +1,69 @@
+[
+    {
+        "id": "goalOrientationAI_af62676favoriteFruitSurveya-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Relative Frequency",
+        "text": "Relative frequency is calculated by dividing the number of people who prefer a specific fruit by the total number of people surveyed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676favoriteFruitSurveya-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676favoriteFruitSurveya-h1"
+        ],
+        "title": "Calculate Relative Frequency for Apples",
+        "text": "To find the relative frequency of people who prefer apples, divide the number of apple lovers by the total number of participants.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676favoriteFruitSurveya-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676favoriteFruitSurveya-h1"
+        ],
+        "title": "Calculate Relative Frequency for Bananas",
+        "text": "Similarly, calculate the relative frequency for bananas by dividing the number of banana lovers by the total number of participants.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676favoriteFruitSurveya-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676favoriteFruitSurveya-h2"
+        ],
+        "title": "Compare the Frequencies",
+        "text": "Compare the relative frequencies of apples and bananas to determine which is greater.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676favoriteFruitSurveya-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676favoriteFruitSurveya-h4"
+        ],
+        "title": "Final Comparison",
+        "text": "Is the relative frequency of people who prefer apples greater than those who prefer bananas?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "True",
+            "False"
+        ]
+    }
+]

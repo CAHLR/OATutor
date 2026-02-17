@@ -1,0 +1,63 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266imageCredibilityChecka-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Verify Image Authenticity",
+        "text": "To verify an image's authenticity, consider checking its metadata. This can provide information about the image's origin, date, and any modifications.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266imageCredibilityChecka-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Analyze Image Composition",
+        "text": "While analyzing the image composition can help understand the image's context, it doesn't confirm authenticity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266imageCredibilityChecka-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Search for Similar Images",
+        "text": "Searching for similar images online can help identify if the image has been used elsewhere, but it doesn't guarantee authenticity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266imageCredibilityChecka-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Evaluate Aesthetic Quality",
+        "text": "Evaluating an image's aesthetic quality is subjective and doesn't contribute to verifying its authenticity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266imageCredibilityChecka-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Check the image metadata"
+        ],
+        "dependencies": [],
+        "title": "Key Step in Image Verification",
+        "text": "What is a crucial step in verifying the authenticity of an image?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Check the image metadata",
+            "Analyze the image composition",
+            "Search for similar images online",
+            "Evaluate the image's aesthetic quality"
+        ]
+    }
+]

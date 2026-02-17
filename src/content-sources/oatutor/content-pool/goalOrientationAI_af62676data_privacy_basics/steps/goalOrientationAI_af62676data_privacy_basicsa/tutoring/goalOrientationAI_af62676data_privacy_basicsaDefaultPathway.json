@@ -1,0 +1,45 @@
+[
+    {
+        "id": "goalOrientationAI_af62676data_privacy_basicsa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Encryption",
+        "text": "Encryption is a method used to convert data into a code to prevent unauthorized access. It ensures that only authorized parties can read the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676data_privacy_basicsa-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676data_privacy_basicsa-h1"
+        ],
+        "title": "Why Encrypt Data?",
+        "text": "Encrypting data is crucial for protecting sensitive information from being accessed by unauthorized users, especially in digital communications.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676data_privacy_basicsa-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676data_privacy_basicsa-h2"
+        ],
+        "title": "True or False Question",
+        "text": "Encrypting sensitive data helps protect it from unauthorized access.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

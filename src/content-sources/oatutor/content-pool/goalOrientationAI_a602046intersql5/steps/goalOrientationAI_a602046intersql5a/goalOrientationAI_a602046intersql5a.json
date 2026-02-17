@@ -1,0 +1,17 @@
+{
+    "id": "goalOrientationAI_a602046intersql5a",
+    "stepAnswer": [
+        "WHERE Note LIKE 'urgent%'"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Select the WHERE clause that returns all records with the text \"urgent\" at the beginning of the Note column.",
+    "stepBody": "",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "WHERE Note LIKE 'urgent%'",
+        "WHERE Note LIKE '%urgent%'",
+        "WHERE Note LIKE '%urgent'",
+        "WHERE Note LIKE 'urgent'"
+    ]
+}

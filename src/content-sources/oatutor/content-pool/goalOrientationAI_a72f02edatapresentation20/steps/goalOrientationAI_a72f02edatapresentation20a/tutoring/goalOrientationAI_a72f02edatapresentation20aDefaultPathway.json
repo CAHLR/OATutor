@@ -1,0 +1,71 @@
+[
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider Accessibility",
+        "text": "Colors should be chosen to ensure that everyone, including those with color blindness, can distinguish them.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation20a-h1"
+        ],
+        "title": "Avoid Overuse of Colors",
+        "text": "Using too many colors can make the presentation look cluttered and confusing.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation20a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation20a-h2"
+        ],
+        "title": "Consistency is Key",
+        "text": "Maintaining a consistent color scheme throughout the presentation helps in creating a professional look.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation20a-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation20a-h3"
+        ],
+        "title": "Consider the Background",
+        "text": "Ensure that the text color contrasts well with the background color for readability.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation20a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Ensure colors are distinguishable and accessible"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation20a-h4"
+        ],
+        "title": "Choose the Best Option",
+        "text": "The most accessible presentation is one that emphasizes distinguishable and accessible colors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Use as many colors as possible",
+            "Ensure colors are distinguishable and accessible",
+            "Choose colors based on personal preference",
+            "Use only shades of gray"
+        ]
+    }
+]

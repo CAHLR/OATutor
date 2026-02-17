@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_af62676communitySurvey1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Population",
+        "text": "The population of interest is the entire group of individuals you want to draw conclusions about from your survey.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676communitySurvey1a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All residents of the community"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676communitySurvey1a-h1"
+        ],
+        "title": "Identifying the Population",
+        "text": "Consider who the survey is targeting. Is it everyone in the community or just a specific group?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "All residents of the community",
+            "All visitors to the community center",
+            "All employees of the community center",
+            "All residents who participate in recreational activities"
+        ]
+    }
+]

@@ -1,0 +1,83 @@
+[
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Analysis Types",
+        "text": "Diagnostic analysis focuses on understanding the reasons behind past outcomes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation7a-h1"
+        ],
+        "title": "Purpose of Diagnostic Analysis",
+        "text": "Diagnostic analysis helps identify the causes of past events or outcomes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation7a-h2"
+        ],
+        "title": "Comparison with Descriptive Analysis",
+        "text": "Unlike descriptive analysis, which summarizes past data, diagnostic analysis explains why things happened.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation7a-h3"
+        ],
+        "title": "Focus of Predictive Analysis",
+        "text": "Predictive analysis is used to forecast future outcomes based on past data trends.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation7a-h5",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation7a-h4"
+        ],
+        "title": "Role of Prescriptive Analysis",
+        "text": "Prescriptive analysis suggests actions to achieve desired outcomes based on data insights.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation7a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Diagnostic Analysis"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation7a-h5"
+        ],
+        "title": "Identifying the Correct Analysis Type",
+        "text": "The analysis type that examines past data to understand reasons behind outcomes is diagnostic analysis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Descriptive Analysis",
+            "Diagnostic Analysis",
+            "Predictive Analysis",
+            "Prescriptive Analysis"
+        ]
+    }
+]

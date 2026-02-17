@@ -1,0 +1,46 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266dataSecurity2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MFA",
+        "text": "Multi-factor authentication (MFA) is a security measure that requires more than one form of verification to access an account or system.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266dataSecurity2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266dataSecurity2a-h1"
+        ],
+        "title": "Why Use MFA?",
+        "text": "MFA is used to enhance security by adding an extra layer of protection beyond just a password.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266dataSecurity2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "To enhance security by requiring multiple forms of verification"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266dataSecurity2a-h2"
+        ],
+        "title": "Benefits of MFA",
+        "text": "What is the primary benefit of using multi-factor authentication?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "To enhance security by requiring multiple forms of verification",
+            "To simplify the login process",
+            "To reduce the need for passwords"
+        ]
+    }
+]

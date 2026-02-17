@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_af62676weather_analysis1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Concept",
+        "text": "When you calculate an average from a sample, like the data from $$30$$ weather stations, you're dealing with a specific type of data representation. This is not the entire population but a summary of it.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676weather_analysis1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676weather_analysis1a-h1"
+        ],
+        "title": "Defining Terms",
+        "text": "A 'statistic' is a numerical value that describes a characteristic of a sample. In this case, the average temperature is a statistic because it summarizes the data from the sample of weather stations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676weather_analysis1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Statistic"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676weather_analysis1a-h2"
+        ],
+        "title": "Identifying the Correct Term",
+        "text": "Given the definition of a statistic, what term best describes the average temperature calculated from the sample data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Variable",
+            "Population",
+            "Statistic",
+            "Data"
+        ]
+    }
+]

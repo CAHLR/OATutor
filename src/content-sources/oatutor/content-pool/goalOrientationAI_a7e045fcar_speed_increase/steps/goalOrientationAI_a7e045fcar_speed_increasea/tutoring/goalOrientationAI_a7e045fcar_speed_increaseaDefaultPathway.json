@@ -1,0 +1,70 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fcar_speed_increasea-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify Initial and Final Speeds",
+        "text": "The car's initial speed is $$60$$ $$\\frac{km}{h}$$, and its final speed is $$75$$ $$\\frac{km}{h}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fcar_speed_increasea-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fcar_speed_increasea-h1"
+        ],
+        "title": "Calculate the Change in Speed",
+        "text": "Find the difference between the final speed and the initial speed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fcar_speed_increasea-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$15$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fcar_speed_increasea-h2"
+        ],
+        "title": "Compute the Speed Difference",
+        "text": "What is $$75$$ $$\\frac{km}{h}$$ minus $$60$$ $$\\frac{km}{h}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fcar_speed_increasea-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fcar_speed_increasea-h3"
+        ],
+        "title": "Determine the Percentage Increase",
+        "text": "Use the formula: (change in speed / initial speed) * 100%.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fcar_speed_increasea-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "25%"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fcar_speed_increasea-h4"
+        ],
+        "title": "Calculate the Percentage Increase",
+        "text": "What is (15/60)*100%?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

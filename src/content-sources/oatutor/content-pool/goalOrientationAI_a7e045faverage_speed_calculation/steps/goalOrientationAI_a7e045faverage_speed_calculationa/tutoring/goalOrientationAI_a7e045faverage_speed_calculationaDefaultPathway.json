@@ -1,0 +1,41 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045faverage_speed_calculationa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Average Speed",
+        "text": "Average speed is calculated by dividing the total distance traveled by the total time taken.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045faverage_speed_calculationa-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$50$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045faverage_speed_calculationa-h1"
+        ],
+        "title": "Calculate the Average Speed",
+        "text": "Use the formula: average speed $$=$$ total distance / total time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045faverage_speed_calculationa-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045faverage_speed_calculationa-h2"
+        ],
+        "title": "Simplifying the Calculation",
+        "text": "Divide $$150$$ miles by $$3$$ hours to find the average speed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

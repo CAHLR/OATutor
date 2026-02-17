@@ -1,0 +1,58 @@
+[
+    {
+        "id": "goalOrientationAI_af62676gardenPlotAnalysisa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To determine if the area for growing tomatoes is greater than the combined area for carrots and lettuce, compare the given areas.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676gardenPlotAnalysisa-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$carrots_{area}+lettuce_{area}$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676gardenPlotAnalysisa-h1"
+        ],
+        "title": "Calculate the Combined Area",
+        "text": "Add the areas of the carrot and lettuce sections together.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676gardenPlotAnalysisa-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$tomatoes_{area}>carrots_{area}+lettuce_{area}$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676gardenPlotAnalysisa-h2"
+        ],
+        "title": "Compare the Areas",
+        "text": "Check if the area for tomatoes is greater than the combined area of carrots and lettuce.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676gardenPlotAnalysisa-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676gardenPlotAnalysisa-h3"
+        ],
+        "title": "Conclusion",
+        "text": "If the area for tomatoes is greater, the statement is true. Otherwise, it is false.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

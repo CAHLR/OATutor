@@ -1,0 +1,45 @@
+[
+    {
+        "id": "goalOrientationAI_af62676data_security2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Two-Factor Authentication",
+        "text": "Two-factor authentication (2FA) requires two forms of identification before granting access. This could be something you know (like a password) and something you have (like a phone).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676data_security2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676data_security2a-h1"
+        ],
+        "title": "Why Use Two-Factor Authentication?",
+        "text": "2FA adds an extra layer of security by making it harder for unauthorized users to access your account, even if they have your password.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676data_security2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676data_security2a-h2"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Does requiring two forms of identification enhance security?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_ad5badfsql2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "SQL Sorting Order",
+        "text": "By default, the sorting order is ascending. However, you can specify descending order using a specific keyword after the column name.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad5badfsql2b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "DESC"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad5badfsql2b-h1"
+        ],
+        "title": "SQL Descedning order",
+        "text": "Which keyword is used to specify descending order in SQL sorting?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "ASC",
+            "DESC",
+            "DOWN",
+            "REVERSE"
+        ]
+    }
+]

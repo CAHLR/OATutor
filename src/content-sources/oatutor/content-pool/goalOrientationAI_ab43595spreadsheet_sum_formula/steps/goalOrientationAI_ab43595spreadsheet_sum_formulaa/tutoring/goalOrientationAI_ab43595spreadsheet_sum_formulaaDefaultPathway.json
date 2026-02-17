@@ -1,0 +1,71 @@
+[
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_sum_formulaa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Function",
+        "text": "The function used to add numbers in a range of cells starts with the letter 'S'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_sum_formulaa-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_sum_formulaa-h1"
+        ],
+        "title": "Common Spreadsheet Function",
+        "text": "This function is one of the most commonly used in spreadsheets for totaling values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_sum_formulaa-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_sum_formulaa-h2"
+        ],
+        "title": "Function Name",
+        "text": "The function name is a three-letter word that is synonymous with 'total'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_sum_formulaa-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_sum_formulaa-h3"
+        ],
+        "title": "Formula Structure",
+        "text": "The formula is written as the function name followed by the range of cells in parentheses.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_sum_formulaa-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "SUM"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_sum_formulaa-h4"
+        ],
+        "title": "Select the Correct Function",
+        "text": "Choose the function that correctly adds up a range of cells.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "SUM",
+            "ADD",
+            "TOTAL",
+            "COMBINE"
+        ]
+    }
+]

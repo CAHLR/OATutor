@@ -1,0 +1,58 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045ffruitPreferenceSurveya-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Relative Frequency",
+        "text": "Relative frequency is the ratio of the number of times a particular event occurs to the total number of events. It is often expressed as a fraction or percentage.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ffruitPreferenceSurveya-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045ffruitPreferenceSurveya-h1"
+        ],
+        "title": "Calculate Relative Frequency for Apples",
+        "text": "To find the relative frequency of people who prefer apples, divide the number of people who prefer apples by the total number of people surveyed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ffruitPreferenceSurveya-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045ffruitPreferenceSurveya-h1"
+        ],
+        "title": "Calculate Relative Frequency for Bananas",
+        "text": "Similarly, calculate the relative frequency for bananas by dividing the number of people who prefer bananas by the total number of people surveyed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ffruitPreferenceSurveya-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045ffruitPreferenceSurveya-h2",
+            "goalOrientationAI_a7e045ffruitPreferenceSurveya-h3"
+        ],
+        "title": "Compare the Relative Frequencies",
+        "text": "Compare the relative frequency of people who prefer apples to those who prefer bananas. Which is greater?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "True",
+            "False"
+        ]
+    }
+]

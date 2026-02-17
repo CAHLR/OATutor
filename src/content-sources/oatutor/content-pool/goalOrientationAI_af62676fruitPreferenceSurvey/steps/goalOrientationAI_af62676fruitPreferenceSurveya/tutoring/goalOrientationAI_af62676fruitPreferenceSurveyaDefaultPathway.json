@@ -1,0 +1,57 @@
+[
+    {
+        "id": "goalOrientationAI_af62676fruitPreferenceSurveya-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Relative Frequency",
+        "text": "Relative frequency is the ratio of the number of times a particular event occurs to the total number of events. It is often expressed as a fraction or percentage.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676fruitPreferenceSurveya-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676fruitPreferenceSurveya-h1"
+        ],
+        "title": "Calculate Relative Frequency for Apples",
+        "text": "To find the relative frequency of people who prefer apples, divide the number of people who prefer apples by the total number of people surveyed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676fruitPreferenceSurveya-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676fruitPreferenceSurveya-h1"
+        ],
+        "title": "Calculate Relative Frequency for Bananas",
+        "text": "Similarly, calculate the relative frequency for bananas by dividing the number of people who prefer bananas by the total number of people surveyed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676fruitPreferenceSurveya-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676fruitPreferenceSurveya-h2"
+        ],
+        "title": "Compare the Relative Frequencies",
+        "text": "Compare the relative frequency of apples to that of bananas. Is the relative frequency of apples greater than that of bananas?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "True",
+            "False"
+        ]
+    }
+]

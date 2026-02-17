@@ -1,0 +1,53 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045ftemperature_analysisa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Range",
+        "text": "First, identify which cities have average temperatures between 60°F and 75°F.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ftemperature_analysisa-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045ftemperature_analysisa-h1"
+        ],
+        "title": "Count the Cities",
+        "text": "Count the number of cities that fall within the specified temperature range.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ftemperature_analysisa-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045ftemperature_analysisa-h2"
+        ],
+        "title": "Calculate the Percentage",
+        "text": "Use the formula: (Number of cities in range / Total number of cities) * $$100$$ to find the percentage.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ftemperature_analysisa-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$45$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045ftemperature_analysisa-h3"
+        ],
+        "title": "Simplify the Fraction",
+        "text": "If the fraction is $$\\frac{9}{20}$$, simplify it to find the percentage.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

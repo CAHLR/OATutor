@@ -1,0 +1,46 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266professional3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Role of a Sales Colleague",
+        "text": "When seeking help from a sales colleague, consider what specific expertise or resources they can provide to support your initiative.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266professional3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266professional3a-h1"
+        ],
+        "title": "Clarifying the Need",
+        "text": "Clarifying the need involves explaining why their assistance is crucial and what specific outcomes you aim to achieve with their help.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266professional3a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Clarify the need"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266professional3a-h2"
+        ],
+        "title": "Choosing the Right Option",
+        "text": "Among the options, which one best describes the initial step in collaborating with your sales colleague?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Define the scope",
+            "Establish the purpose",
+            "Clarify the need"
+        ]
+    }
+]

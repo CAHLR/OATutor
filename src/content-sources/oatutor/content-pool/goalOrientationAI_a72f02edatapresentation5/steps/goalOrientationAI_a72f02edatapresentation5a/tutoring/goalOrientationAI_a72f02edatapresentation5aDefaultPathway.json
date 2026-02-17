@@ -1,0 +1,71 @@
+[
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider the Purpose",
+        "text": "The primary goal of data presentation is to convey information clearly and effectively.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation5a-h1"
+        ],
+        "title": "Think About the Audience",
+        "text": "Data presentation should be tailored to the audience to ensure they understand the insights being communicated.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation5a-h2"
+        ],
+        "title": "Focus on Clarity",
+        "text": "Effective data presentation involves simplifying complex data to make it understandable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation5a-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation5a-h3"
+        ],
+        "title": "Highlight Key Insights",
+        "text": "The goal is to highlight the most important insights derived from the data analysis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation5a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Communicate Insights Effectively"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation5a-h4"
+        ],
+        "title": "Identify the Correct Goal",
+        "text": "The primary goal of data presentation is to communicate insights effectively.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Communicate Insights Effectively",
+            "Ensure Data Privacy",
+            "Increase Data Volume",
+            "Reduce Data Complexity"
+        ]
+    }
+]

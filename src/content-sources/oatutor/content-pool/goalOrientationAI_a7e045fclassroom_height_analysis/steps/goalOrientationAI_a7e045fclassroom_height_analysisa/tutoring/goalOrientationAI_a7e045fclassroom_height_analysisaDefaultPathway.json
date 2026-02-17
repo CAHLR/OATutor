@@ -1,0 +1,53 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fclassroom_height_analysisa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Range",
+        "text": "To find the percentage of students taller than $$150$$ cm but shorter than $$180$$ cm, identify the total number of students within this height range.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fclassroom_height_analysisa-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fclassroom_height_analysisa-h1"
+        ],
+        "title": "Calculate the Total",
+        "text": "Determine the total number of students in the class. This will help you calculate the percentage.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fclassroom_height_analysisa-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fclassroom_height_analysisa-h2"
+        ],
+        "title": "Find the Percentage",
+        "text": "Use the formula: (Number of students in range / Total number of students) * $$100$$ to find the percentage.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fclassroom_height_analysisa-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$75$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fclassroom_height_analysisa-h3"
+        ],
+        "title": "Calculate the Percentage",
+        "text": "If there are $$15$$ students in the range and $$20$$ students in total, what is the percentage?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

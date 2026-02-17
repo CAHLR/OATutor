@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fcustomer_churn_analysisa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Features in Data Analysis",
+        "text": "In data analysis, a feature is an individual measurable property or characteristic of a phenomenon being observed. Think about what kind of data points might help predict whether a customer will leave.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fcustomer_churn_analysisa-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fcustomer_churn_analysisa-h1"
+        ],
+        "title": "Identifying Relevant Features",
+        "text": "Consider what information about a customer might change over time and could influence their decision to stay or leave.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fcustomer_churn_analysisa-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Monthly charges"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fcustomer_churn_analysisa-h2"
+        ],
+        "title": "Evaluating Potential Features",
+        "text": "Which of the following could be considered a feature in the dataset for predicting customer churn?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Customer ID",
+            "Monthly charges",
+            "Customer name",
+            "Company address"
+        ]
+    }
+]

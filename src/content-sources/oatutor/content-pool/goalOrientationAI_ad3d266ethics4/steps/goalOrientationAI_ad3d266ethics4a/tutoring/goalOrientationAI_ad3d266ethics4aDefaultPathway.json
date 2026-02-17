@@ -1,0 +1,58 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266ethics4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Privacy Laws",
+        "text": "Privacy laws are designed to protect personal information, but they can also create challenges for companies and engineers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics4a-h1"
+        ],
+        "title": "Privacy Terms as Blockers",
+        "text": "Privacy terms can be seen as obstacles, making it difficult for users to understand and agree to them.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics4a-h1"
+        ],
+        "title": "Engineers and Privacy Concerns",
+        "text": "There is a perception that engineers prioritize functionality over privacy, which can lead to mistrust.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics4a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All of these answers"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics4a-h2"
+        ],
+        "title": "Combining the Effects",
+        "text": "Consider how both the complexity of privacy terms and the perception of engineers contribute to a lose-lose situation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "They make the privacy terms look like blockers",
+            "They create the narrative that engineers do not care about privacy",
+            "All of these answers"
+        ]
+    }
+]

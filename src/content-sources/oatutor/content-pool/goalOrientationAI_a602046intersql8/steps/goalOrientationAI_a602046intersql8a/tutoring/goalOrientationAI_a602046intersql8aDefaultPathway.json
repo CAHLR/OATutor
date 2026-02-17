@@ -1,0 +1,86 @@
+[
+    {
+        "id": "goalOrientationAI_a602046intersql8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding ORDER BY",
+        "text": "The ORDER BY clause is used to sort the result set in either ascending or descending order. By default, it sorts in ascending order. To sort in descending order, use the DESC keyword.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql8a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LIMIT",
+        "text": "The LIMIT clause is used to specify the number of records to return. It is useful for pagination or when you only need a subset of the results.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql8a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Descending order by salary"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a602046intersql8a-h1"
+        ],
+        "title": "Identify the Sorting Order",
+        "text": "In the given query, how are the records sorted?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Ascending order by salary",
+            "Descending order by salary",
+            "Ascending order by name",
+            "Descending order by name"
+        ]
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a602046intersql8a-h2"
+        ],
+        "title": "Determine the Number of Records",
+        "text": "How many records will the query return?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql8a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Records for Eve, Dave, and Carol"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a602046intersql8a-h3",
+            "goalOrientationAI_a602046intersql8a-h4"
+        ],
+        "title": "Select the Correct Records",
+        "text": "Based on the sorting order and the limit, which records will be returned?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Records for Eve, Dave, and Carol",
+            "Records for Alice, Bob, and Carol",
+            "Records for Bob, Carol, and Dave",
+            "Records for Alice, Bob, and Eve"
+        ]
+    }
+]

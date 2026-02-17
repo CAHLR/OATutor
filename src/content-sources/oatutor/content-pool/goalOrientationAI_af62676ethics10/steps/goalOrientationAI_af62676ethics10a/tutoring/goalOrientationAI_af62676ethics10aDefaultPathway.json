@@ -1,0 +1,46 @@
+[
+    {
+        "id": "goalOrientationAI_af62676ethics10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Classification",
+        "text": "Data classification involves categorizing data based on its sensitivity and importance. This helps in determining who should have access to it.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676ethics10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676ethics10a-h1"
+        ],
+        "title": "Role of Access Management",
+        "text": "Access management ensures that only authorized individuals can access certain data, protecting sensitive information from unauthorized use.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676ethics10a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "by helping deploy access control tools more strategically and selectively"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676ethics10a-h2"
+        ],
+        "title": "Strategic Deployment of Access Control",
+        "text": "How does data classification help in deploying access control tools?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "by creating a paper trail to hold everyone accountable",
+            "by letting everyone access everything",
+            "by creating so much process that exhausted engineers can't find the time to access data"
+        ]
+    }
+]

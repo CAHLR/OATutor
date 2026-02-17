@@ -1,0 +1,62 @@
+[
+    {
+        "id": "goalOrientationAI_af62676data_privacy_riska-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Privacy Risks",
+        "text": "Consider how frequently accessed datasets might expose more personal information.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676data_privacy_riska-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "High usage frequency can lead to more opportunities for data breaches or misuse."
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676data_privacy_riska-h1"
+        ],
+        "title": "Frequency and Risk",
+        "text": "Why might high usage frequency increase privacy risks?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676data_privacy_riska-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676data_privacy_riska-h2"
+        ],
+        "title": "Data Sensitivity",
+        "text": "Think about the type of data that is often accessed and how sensitive it might be.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676data_privacy_riska-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676data_privacy_riska-h3"
+        ],
+        "title": "True or False",
+        "text": "Datasets with high usage frequency often carry significant privacy risks.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

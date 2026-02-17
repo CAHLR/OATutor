@@ -1,0 +1,71 @@
+[
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Focus on Readability",
+        "text": "Ensure that the text on the slide is easy to read from a distance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation22a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation22a-h1"
+        ],
+        "title": "Limit Font Styles",
+        "text": "Avoid using multiple font styles as it can make the slide look cluttered.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation22a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation22a-h2"
+        ],
+        "title": "Consistency is Key",
+        "text": "Maintain a consistent font style throughout the presentation for a professional look.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation22a-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation22a-h3"
+        ],
+        "title": "Avoid Overuse of Colors",
+        "text": "Using too many colors can distract from the main message of the slide.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation22a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Use Consistent Fonts"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation22a-h4"
+        ],
+        "title": "Choose the Best Practice",
+        "text": "Select the option that emphasizes consistency in font usage.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Use Consistent Fonts",
+            "Include As Much Text As Possible",
+            "Use Multiple Font Styles",
+            "Add Many Colors To Make It Vibrant"
+        ]
+    }
+]

@@ -1,0 +1,80 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045ftemperature_conversiona-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand the Formula",
+        "text": "To convert Fahrenheit to Celsius, use the formula $$C=\\frac{5\\left(F-32\\right)}{9}$$. This formula helps you find the equivalent temperature in Celsius.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ftemperature_conversiona-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$C=\\frac{5\\left(68-32\\right)}{9}$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045ftemperature_conversiona-h1"
+        ],
+        "title": "Substitute the Value",
+        "text": "Substitute $$68$$ for F in the formula $$C=\\frac{5\\left(F-32\\right)}{9}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ftemperature_conversiona-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$36$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045ftemperature_conversiona-h2"
+        ],
+        "title": "Calculate the Difference",
+        "text": "Calculate the difference: $$68-32$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ftemperature_conversiona-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$180$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045ftemperature_conversiona-h3"
+        ],
+        "title": "Multiply by $$5$$",
+        "text": "Multiply the result by 5: $$36\\times5$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ftemperature_conversiona-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045ftemperature_conversiona-h4"
+        ],
+        "title": "Divide by $$9$$",
+        "text": "Finally, divide the result by 9: $$\\frac{180}{9}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

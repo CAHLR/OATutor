@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fdata_correlation_analysisa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Correlation",
+        "text": "Correlation measures the strength and direction of a linear relationship between two variables. It is important to choose the right method to calculate it.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fdata_correlation_analysisa-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fdata_correlation_analysisa-h1"
+        ],
+        "title": "Types of Correlation Coefficients",
+        "text": "There are different methods to calculate correlation coefficients, such as Pearson, Spearman, and Kendall. Each has its own use case.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fdata_correlation_analysisa-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Pearson correlation coefficient"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fdata_correlation_analysisa-h2"
+        ],
+        "title": "Choosing the Right Method",
+        "text": "For continuous variables like height and weight, which method is most appropriate to find the correlation coefficient?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Pearson correlation coefficient",
+            "Spearman rank correlation",
+            "Kendall tau correlation",
+            "$$Chi-square$$ test"
+        ]
+    }
+]

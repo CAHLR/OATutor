@@ -1,0 +1,58 @@
+[
+    {
+        "id": "goalOrientationAI_af62676fruit_survey_analysisa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Percentages",
+        "text": "To determine if 25% of the people chose apples, calculate the fraction of people who chose apples and convert it to a percentage.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676fruit_survey_analysisa-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{4}$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676fruit_survey_analysisa-h1"
+        ],
+        "title": "Calculate the Fraction",
+        "text": "If $$10$$ out of $$40$$ people chose apples, what fraction of the total is that?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676fruit_survey_analysisa-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "25%"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676fruit_survey_analysisa-h2"
+        ],
+        "title": "Convert Fraction to Percentage",
+        "text": "Convert the fraction $$\\frac{1}{4}$$ to a percentage.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676fruit_survey_analysisa-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676fruit_survey_analysisa-h3"
+        ],
+        "title": "Conclusion",
+        "text": "Since $$\\frac{1}{4}$$ is equivalent to 25%, the statement is true.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

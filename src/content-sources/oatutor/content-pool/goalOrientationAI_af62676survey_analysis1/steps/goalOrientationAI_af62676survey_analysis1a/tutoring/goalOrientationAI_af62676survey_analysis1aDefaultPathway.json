@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_af62676survey_analysis1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Concept",
+        "text": "When analyzing survey data, it's important to distinguish between different statistical terms. The average satisfaction score from a sample is a specific type of measurement.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676survey_analysis1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676survey_analysis1a-h1"
+        ],
+        "title": "Defining a Statistic",
+        "text": "A statistic is a numerical value that describes a characteristic of a sample. In this case, the average satisfaction score is calculated from the sample of $$50$$ customers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676survey_analysis1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Statistic"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676survey_analysis1a-h2"
+        ],
+        "title": "Identifying the Correct Term",
+        "text": "Given that the average satisfaction score is derived from a sample, what is the correct term for this measurement?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Variable",
+            "Population",
+            "Statistic",
+            "Data"
+        ]
+    }
+]

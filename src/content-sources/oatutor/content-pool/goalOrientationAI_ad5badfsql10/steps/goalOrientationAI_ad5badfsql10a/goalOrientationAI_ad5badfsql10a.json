@@ -1,0 +1,17 @@
+{
+    "id": "goalOrientationAI_ad5badfsql10a",
+    "stepAnswer": [
+        "The rows showing the query results for Query $$1$$ can appear in any order, while the rows showing the query results for Query $$2$$ will show in descending order based on the Age values."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "For Query $$1$$, Jamie enters SELECT Name, Age FROM Employees. For Query $$2$$, Jamie enters SELECT Name, Age FROM Employees ORDER BY Age DESC.",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "The rows showing the query results for Query $$1$$ can appear in any order, while the rows showing the query results for Query $$2$$ will show in descending order based on the Age values.",
+    "choices": [
+        "The rows showing the query results for Query $$1$$ can appear in any order, while the rows showing the query results for Query $$2$$ will show in descending order based on the Age values.",
+        "The rows showing the query results for Query $$1$$ can appear in any order, while the rows showing the query results for Query $$2$$ will show Age values that begin with the number $$2$$.",
+        "The query results for Query $$1$$ will show without any error message, while Query $$2$$ will show an error message."
+    ]
+}

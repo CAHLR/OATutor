@@ -1,0 +1,73 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266ethics21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Inventory",
+        "text": "When considering data inventory, it's crucial to ask questions that help you understand the data's origin, growth, and sensitivity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics21a-h1"
+        ],
+        "title": "Reverse Engineering Data Sources",
+        "text": "Consider whether you can trace back the data to its sources and identify which teams contribute to its growth.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics21a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics21a-h1"
+        ],
+        "title": "Growth in Customer Base vs. Data",
+        "text": "Evaluate how the increase in customers and revenue aligns with the expansion of data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics21a-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics21a-h1"
+        ],
+        "title": "Sensitive Data Growth",
+        "text": "Assess the rate at which sensitive data is increasing compared to overall data growth.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics21a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "all of these answers"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics21a-h2",
+            "goalOrientationAI_ad3d266ethics21a-h3",
+            "goalOrientationAI_ad3d266ethics21a-h4"
+        ],
+        "title": "Comprehensive Understanding",
+        "text": "To fully grasp data inventory, consider all aspects: data source tracing, customer growth correlation, and sensitive data expansion.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Are you able to reverse engineer the data sources and understand which teams are responsible for the growth in data size and risk",
+            "As the company grows, how does the growth in the customer base and revenue correspond to the growth in data",
+            "How fast is sensitive data growing relative to data overall",
+            "all of these answers"
+        ]
+    }
+]

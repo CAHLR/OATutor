@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_af62676forest_analysis1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Concept",
+        "text": "When you calculate an average from a sample, what are you trying to determine about the larger group? 🤔",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676forest_analysis1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676forest_analysis1a-h1"
+        ],
+        "title": "Defining Terms",
+        "text": "A statistic is a numerical value that describes a characteristic of a sample. How does this relate to the average height calculated?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676forest_analysis1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Statistic"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676forest_analysis1a-h2"
+        ],
+        "title": "Identifying the Correct Term",
+        "text": "The average height from the sample plots is a measure of the sample, not the entire population. What is this called?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Variable",
+            "Population",
+            "Statistic",
+            "Data"
+        ]
+    }
+]

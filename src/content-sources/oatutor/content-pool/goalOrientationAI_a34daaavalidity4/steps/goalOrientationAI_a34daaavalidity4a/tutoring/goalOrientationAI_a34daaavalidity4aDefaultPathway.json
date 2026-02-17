@@ -1,0 +1,70 @@
+[
+    {
+        "id": "goalOrientationAI_a34daaavalidity4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding",
+        "text": "Alex needs to ensure that all entries in a column are formatted as dates. This means he needs a feature that can automatically check and enforce this format.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a34daaavalidity4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a34daaavalidity4a-h1"
+        ],
+        "title": "Picking a Feature",
+        "text": "Consider the features available in spreadsheet software that can help enforce data formats. Think about features that can set rules or conditions for data entry.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a34daaavalidity4a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "He should use the Data Validation feature."
+        ],
+        "dependencies": [
+            "goalOrientationAI_a34daaavalidity4a-h2"
+        ],
+        "title": "Choosing the Right Feature",
+        "text": "Which feature should Alex use if he wants to prevent incorrect data entry rather than just highlight it?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Data Validation",
+            "Conditional Formatting",
+            "Find and Replace",
+            "Sort"
+        ]
+    },
+    {
+        "id": "goalOrientationAI_a34daaavalidity4a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "He can set a rule that only allows date entries in the column."
+        ],
+        "dependencies": [
+            "goalOrientationAI_a34daaavalidity4a-h3"
+        ],
+        "title": "Using the Correct Feature",
+        "text": "What specific rule can Alex set in the Data Validation feature to ensure only dates are entered?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Set a rule that only allows date entries in the column.",
+            "Set a rule that only allows text entries in the column.",
+            "Set a rule that only allows numeric entries in the column.",
+            "Set a rule that only allows time entries in the column."
+        ]
+    }
+]

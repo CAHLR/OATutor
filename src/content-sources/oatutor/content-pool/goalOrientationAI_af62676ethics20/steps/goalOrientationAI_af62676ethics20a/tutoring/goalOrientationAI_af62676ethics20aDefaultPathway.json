@@ -1,0 +1,57 @@
+[
+    {
+        "id": "goalOrientationAI_af62676ethics20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Inventory Challenges",
+        "text": "Data inventory involves more than just regulations. Consider other factors that might make it challenging.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676ethics20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676ethics20a-h1"
+        ],
+        "title": "Factors Affecting Data Inventory",
+        "text": "Data complexity, volume, and integration issues can make data inventory challenging.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676ethics20a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676ethics20a-h2"
+        ],
+        "title": "Regulations and Data Inventory",
+        "text": "While regulations play a role, they are not the sole reason for the challenges in data inventory.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676ethics20a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676ethics20a-h3"
+        ],
+        "title": "True or False: Data Inventory Challenges",
+        "text": "Is it true that data inventory is challenging purely because of regulations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

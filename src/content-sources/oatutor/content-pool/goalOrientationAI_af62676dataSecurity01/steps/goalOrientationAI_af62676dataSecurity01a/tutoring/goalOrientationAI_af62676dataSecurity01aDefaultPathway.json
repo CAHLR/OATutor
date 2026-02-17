@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_af62676dataSecurity01a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Access Controls",
+        "text": "When setting up data access controls, consider factors that ensure only authorized users can access sensitive information.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676dataSecurity01a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676dataSecurity01a-h1"
+        ],
+        "title": "Key Considerations",
+        "text": "Think about how you can verify user identities, protect sensitive data, and monitor access activities.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676dataSecurity01a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "all of these answers"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676dataSecurity01a-h2"
+        ],
+        "title": "Identifying Key Considerations",
+        "text": "Which of the following is a key consideration for data access controls?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "User authentication methods",
+            "Data sensitivity levels",
+            "Access logging and monitoring",
+            "all of these answers"
+        ]
+    }
+]

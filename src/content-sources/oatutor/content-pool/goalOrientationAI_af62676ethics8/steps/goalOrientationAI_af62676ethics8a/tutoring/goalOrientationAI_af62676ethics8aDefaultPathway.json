@@ -1,0 +1,45 @@
+[
+    {
+        "id": "goalOrientationAI_af62676ethics8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Role of Legal Teams",
+        "text": "While legal teams are crucial in ensuring compliance with laws and regulations, they may not have the technical expertise to fully understand the nuances of data classification.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676ethics8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676ethics8a-h1"
+        ],
+        "title": "Involvement of Other Departments",
+        "text": "Consider the importance of involving IT, data management, and business units in the classification process to ensure a comprehensive approach.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676ethics8a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676ethics8a-h2"
+        ],
+        "title": "Collaboration Across Teams",
+        "text": "Why is it important to involve multiple departments in the classification process?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

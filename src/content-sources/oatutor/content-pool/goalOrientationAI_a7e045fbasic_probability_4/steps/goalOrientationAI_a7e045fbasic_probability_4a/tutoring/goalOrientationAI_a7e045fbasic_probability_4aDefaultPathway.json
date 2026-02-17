@@ -1,0 +1,53 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fbasic_probability_4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Probability",
+        "text": "Probability is the measure of the likelihood of an event occurring. It is calculated by dividing the number of favorable outcomes by the total number of possible outcomes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fbasic_probability_4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fbasic_probability_4a-h1"
+        ],
+        "title": "Identify Favorable Outcomes",
+        "text": "In this scenario, the favorable outcomes are the number of blue marbles in the bag.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fbasic_probability_4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fbasic_probability_4a-h2"
+        ],
+        "title": "Calculate Total Outcomes",
+        "text": "The total number of outcomes is the total number of marbles in the bag.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fbasic_probability_4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fbasic_probability_4a-h3"
+        ],
+        "title": "Calculate Probability",
+        "text": "Use the formula: Probability $$=$$ (Number of favorable outcomes) / (Total number of outcomes).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

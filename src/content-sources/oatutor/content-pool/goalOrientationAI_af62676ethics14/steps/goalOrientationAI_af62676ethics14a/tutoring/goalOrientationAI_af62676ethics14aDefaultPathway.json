@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_af62676ethics14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Discovery Infrastructure",
+        "text": "Discovery infrastructure on the PULL side involves mechanisms to gather and update metadata from various sources. This ensures that the data remains current and relevant.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676ethics14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676ethics14a-h1"
+        ],
+        "title": "Components of PULL Side Infrastructure",
+        "text": "Consider the different tools and methods used to collect metadata. These can include automated systems like crawlers and event-based listeners.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676ethics14a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "all of these answers"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676ethics14a-h2"
+        ],
+        "title": "Evaluating the Options",
+        "text": "Which of the following options best describes the components of the PULL side discovery $$infrastructure$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Crawlers that periodically collect information from metadata sources",
+            "Other bespoke tools are necessary given the volume and diversity of data most companies are grappling with",
+            "Event based listeners for near real time metadata collection to capture time sensitive information such as data quality or metadata versioning",
+            "all of these answers"
+        ]
+    }
+]

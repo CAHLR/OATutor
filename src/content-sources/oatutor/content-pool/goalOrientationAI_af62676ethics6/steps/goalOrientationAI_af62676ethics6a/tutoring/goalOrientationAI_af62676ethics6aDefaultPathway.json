@@ -1,0 +1,33 @@
+[
+    {
+        "id": "goalOrientationAI_af62676ethics6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Types",
+        "text": "Structured data is organized and easily searchable, often stored in databases. Unstructured data lacks a predefined format, making it more challenging to analyze.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676ethics6a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676ethics6a-h1"
+        ],
+        "title": "Analyzing Data Complexity",
+        "text": "Consider the format and organization of structured versus unstructured data. Which is typically easier to analyze?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

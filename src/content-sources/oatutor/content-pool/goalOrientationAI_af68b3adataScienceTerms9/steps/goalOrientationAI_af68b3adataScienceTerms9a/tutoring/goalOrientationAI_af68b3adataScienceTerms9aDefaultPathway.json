@@ -1,0 +1,60 @@
+[
+    {
+        "id": "goalOrientationAI_af68b3adataScienceTerms9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Dimensionality Reduction",
+        "text": "Dimensionality reduction is a process used to reduce the number of random variables under consideration by obtaining a set of principal variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af68b3adataScienceTerms9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af68b3adataScienceTerms9a-h1"
+        ],
+        "title": "Preserving Variance",
+        "text": "The technique aims to preserve as much variance as possible from the original dataset while reducing its dimensions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af68b3adataScienceTerms9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af68b3adataScienceTerms9a-h2"
+        ],
+        "title": "Common Techniques",
+        "text": "Some common techniques for dimensionality reduction include Principal Component Analysis (PCA), Linear Discriminant Analysis (LDA), and $$t-Distributed$$ Stochastic Neighbor Embedding $$(t-SNE)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af68b3adataScienceTerms9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af68b3adataScienceTerms9a-h3"
+        ],
+        "title": "Prediction Models",
+        "text": "Linear Regression, K-Means Clustering, and Decision Trees are more often used as prediction models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af68b3adataScienceTerms9a-h5",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af68b3adataScienceTerms9a-h4"
+        ],
+        "title": "Focus on PCA",
+        "text": "Principal Component Analysis (PCA) is a technique that transforms the original variables into a new set of variables, the principal components, which are uncorrelated and ordered by the amount of variance they capture from the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

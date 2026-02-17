@@ -1,0 +1,71 @@
+[
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider the Role of an Appendix",
+        "text": "An appendix is often used to include information that is too detailed to fit into the main slides.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation23a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation23a-h1"
+        ],
+        "title": "Think About the Main Content",
+        "text": "The main slides should focus on the key points, while the appendix can provide additional context.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation23a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation23a-h2"
+        ],
+        "title": "Purpose of Detailed Information",
+        "text": "Detailed information in an appendix supports the main content without overwhelming the audience during the presentation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation23a-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation23a-h3"
+        ],
+        "title": "Avoiding Overcrowding Slides",
+        "text": "An appendix helps avoid overcrowding the main slides with too much information.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation23a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "To provide additional detailed information that supports the main content"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation23a-h4"
+        ],
+        "title": "Identify the Correct Purpose",
+        "text": "The primary purpose of an appendix is to provide additional detailed information that supports the main content.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "To provide additional detailed information that supports the main content",
+            "To summarize the entire presentation",
+            "To replace the main slides with more detailed ones",
+            "To make the presentation longer"
+        ]
+    }
+]

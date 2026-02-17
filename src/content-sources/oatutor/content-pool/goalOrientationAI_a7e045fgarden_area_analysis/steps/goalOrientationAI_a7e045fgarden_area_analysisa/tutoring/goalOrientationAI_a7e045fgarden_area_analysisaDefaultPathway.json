@@ -1,0 +1,29 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fgarden_area_analysisa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Area Calculation",
+        "text": "To find the area of a rectangle, multiply the length by the width. 🌿",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fgarden_area_analysisa-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$96$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fgarden_area_analysisa-h1"
+        ],
+        "title": "Calculate the Area",
+        "text": "Given the length is $$12$$ meters and the width is $$8$$ meters, calculate the area using the formula: Area $$=$$ length * width.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

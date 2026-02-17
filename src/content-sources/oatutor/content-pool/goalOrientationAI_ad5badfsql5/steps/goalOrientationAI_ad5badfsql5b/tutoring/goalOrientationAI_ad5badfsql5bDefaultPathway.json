@@ -1,0 +1,34 @@
+[
+    {
+        "id": "goalOrientationAI_ad5badfsql5b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the USING Clause",
+        "text": "The USING clause is used in SQL JOINs to specify the column(s) that should be used for matching records between tables when the column names are the same in both tables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad5badfsql5b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It specifies the column(s) that should be used for matching records between tables."
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad5badfsql5b-h1"
+        ],
+        "title": "Purpose of the USING Clause",
+        "text": "What is the purpose of the USING clause in a SQL JOIN statement?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It defines the order of the output columns.",
+            "It specifies the column(s) that should be used for matching records between tables.",
+            "It limits the number of rows returned."
+        ]
+    }
+]

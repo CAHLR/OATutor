@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_af62676foundational1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Population",
+        "text": "The population refers to the entire group that the instructor is interested in studying. Think about who the instructor wants to gather information about.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676foundational1a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All Lake Tahoe Community College math students"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676foundational1a-h1"
+        ],
+        "title": "Identifying the Population",
+        "text": "Consider the specific group of students the instructor is focusing on. Is it all students, or a specific subset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "All Lake Tahoe Community College students",
+            "All Lake Tahoe Community College English students",
+            "All Lake Tahoe Community College students in her classes",
+            "All Lake Tahoe Community College math students"
+        ]
+    }
+]

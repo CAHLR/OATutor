@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_af62676city_temperature_analysisa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Concept",
+        "text": "The average temperature calculated from the data of $$365$$ daily readings is a summary measure of the data. It represents a single value that describes the central tendency of the dataset.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676city_temperature_analysisa-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676city_temperature_analysisa-h1"
+        ],
+        "title": "Defining Terms",
+        "text": "A 'statistic' is a numerical value that summarizes or describes a characteristic of a sample. In this case, the average temperature is a statistic because it summarizes the temperature data collected over the year.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676city_temperature_analysisa-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Statistic"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676city_temperature_analysisa-h2"
+        ],
+        "title": "Identifying the Correct Term",
+        "text": "Which term best describes a numerical summary of a sample, such as the average temperature from $$365$$ readings?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Variable",
+            "Population",
+            "Statistic",
+            "Data"
+        ]
+    }
+]

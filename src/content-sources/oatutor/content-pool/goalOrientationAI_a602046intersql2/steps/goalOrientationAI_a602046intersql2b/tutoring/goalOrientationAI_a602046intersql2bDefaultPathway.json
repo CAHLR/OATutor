@@ -1,0 +1,37 @@
+[
+    {
+        "id": "goalOrientationAI_a602046intersql2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a602046intersql2a-h1"
+        ],
+        "title": "SQL Statement Example",
+        "text": "In SQL, a clause is a part of a query that performs a specific function. Common clauses include SELECT, FROM, WHERE, GROUP BY, HAVING, and ORDER BY.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql2b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Four"
+        ],
+        "dependencies": [
+            "a602046intersql2a-h1"
+        ],
+        "title": "Count the Clauses",
+        "text": "How many clauses are in the SQL statement provided in the example?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Three",
+            "Four",
+            "Five",
+            "Six"
+        ]
+    }
+]

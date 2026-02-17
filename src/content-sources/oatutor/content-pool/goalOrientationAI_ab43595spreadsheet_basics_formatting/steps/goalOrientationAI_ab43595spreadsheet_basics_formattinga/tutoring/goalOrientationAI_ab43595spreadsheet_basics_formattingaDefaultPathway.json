@@ -1,0 +1,71 @@
+[
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_basics_formattinga-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Tool's Purpose",
+        "text": "The 'Format as Currency' tool is used to change the appearance of numbers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_basics_formattinga-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_basics_formattinga-h1"
+        ],
+        "title": "Focus on Currency",
+        "text": "This tool adds a currency symbol to the numbers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_basics_formattinga-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_basics_formattinga-h2"
+        ],
+        "title": "Consider the Symbol",
+        "text": "The tool ensures that numbers are displayed with a currency symbol like $ or €.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_basics_formattinga-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_basics_formattinga-h3"
+        ],
+        "title": "Think About Number Formatting",
+        "text": "The tool formats numbers to look like monetary values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_basics_formattinga-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "To display numbers as currency with a currency symbol"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_basics_formattinga-h4"
+        ],
+        "title": "Select the Correct Function",
+        "text": "The primary function of the 'Format as Currency' tool is to $$___$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "To change the font style of text",
+            "To display numbers as currency with a currency symbol",
+            "To sort data in ascending order",
+            "To merge cells into one"
+        ]
+    }
+]

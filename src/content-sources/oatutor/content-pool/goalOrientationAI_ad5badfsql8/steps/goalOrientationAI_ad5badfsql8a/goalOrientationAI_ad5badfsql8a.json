@@ -1,0 +1,17 @@
+{
+    "id": "goalOrientationAI_ad5badfsql8a",
+    "stepAnswer": [
+        "The WHERE clause should come before the ORDER BY clause."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "What is wrong with the following query? SELECT City, COUNT(*) FROM Customers ORDER BY City WHERE City LIKE 'New%'",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "The WHERE clause should come before the ORDER BY clause.",
+        "The ORDER BY clause should not use a wildcard.",
+        "COUNT should be used with a specific column.",
+        "The results should be ordered by customer ID."
+    ]
+}

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "goalOrientationAI_af62676ethics17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Dataset Overlap",
+        "text": "Consider the types of datasets that are frequently used and those that might pose privacy risks. Is there a possibility that these datasets could overlap?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676ethics17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676ethics17a-h1"
+        ],
+        "title": "Privacy Risk in Common Datasets",
+        "text": "Think about datasets that are commonly used in various applications. Could these datasets also contain sensitive information that poses a privacy risk?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676ethics17a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676ethics17a-h2"
+        ],
+        "title": "Analyzing Dataset Usage and Privacy",
+        "text": "Evaluate whether datasets that are used most often could also be the ones with the highest privacy risk.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

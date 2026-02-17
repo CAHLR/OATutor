@@ -1,0 +1,58 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266professional4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify Key Questions",
+        "text": "To determine the necessary data, start by asking key questions related to the decision you need to make. This will guide you in identifying relevant data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266professional4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266professional4a-h1"
+        ],
+        "title": "Consider Data Sources",
+        "text": "Think about where you can obtain the data. Consider both internal and external sources that might provide the information you need.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266professional4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266professional4a-h2"
+        ],
+        "title": "Evaluate Data Relevance",
+        "text": "Assess whether the data you have is directly related to the decision-making process. Only relevant data should be considered.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266professional4a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Ask fundamental questions"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266professional4a-h3"
+        ],
+        "title": "Ask Fundamental Questions",
+        "text": "To identify the data required, ask fundamental questions about the decision. This helps in pinpointing the exact data needed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Evaluate the available data.",
+            "Build a table or spreadsheet.",
+            "Ask fundamental questions."
+        ]
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_af62676ethics19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variables in Tagging",
+        "text": "When tagging data, consider all aspects that could affect the model's performance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676ethics19a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "all of these answers"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676ethics19a-h1"
+        ],
+        "title": "Identifying Key Variables",
+        "text": "Which of the following variables should be considered during data tagging?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "the volume of the data",
+            "the amount of data available to the ML models for training",
+            "other critical measurements like performance and accuracy",
+            "all of these answers"
+        ]
+    }
+]

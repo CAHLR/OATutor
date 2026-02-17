@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266data_analysis_1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider Alternative Data Sources",
+        "text": "When sales data is incomplete, think about other sources that can provide insights into the product's market performance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266data_analysis_1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266data_analysis_1a-h1"
+        ],
+        "title": "Customer Feedback",
+        "text": "Customer reviews and feedback can offer valuable insights into how the product is perceived by the market.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266data_analysis_1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Customer reviews and feedback"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266data_analysis_1a-h2"
+        ],
+        "title": "Identify the Best Alternative",
+        "text": "Which of the following is a good alternative data source to estimate market performance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Customer reviews and feedback",
+            "Competitor sales data",
+            "Employee satisfaction surveys",
+            "Weather reports"
+        ]
+    }
+]

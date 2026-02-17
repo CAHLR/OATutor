@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266ethics12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Mapping",
+        "text": "When mapping your tags, consider the broader context of privacy laws that affect your users and business operations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics12a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "privacy laws that impact your users and businesses rather than just a specific law"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics12a-h1"
+        ],
+        "title": "Identify the Relevant Laws",
+        "text": "Think about the privacy laws that are most relevant to your users and business, rather than focusing on a single law.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "GDPR only",
+            "CCPA only",
+            "privacy laws that impact your users and businesses rather than just a specific law",
+            "ISO only"
+        ]
+    }
+]

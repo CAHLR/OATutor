@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266ethics7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Governance",
+        "text": "Data governance involves managing data availability, usability, integrity, and security. It helps organizations make informed decisions by providing a framework for data management.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics7a-h1"
+        ],
+        "title": "Converting Uncertainty to Risk",
+        "text": "By establishing clear data policies and procedures, data governance helps organizations identify potential risks and manage them effectively, turning uncertainty into manageable risks.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics7a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "by helping convert uncertainty to risk"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics7a-h2"
+        ],
+        "title": "Choosing the Correct Answer",
+        "text": "Which of the following best describes how data governance aids organizational maturity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "by creating more \"busy work\" for attorneys who would otherwise block risky projects",
+            "by helping convert uncertainty to risk",
+            "by creating the illusion of privacy for regulators",
+            "by creating so much process that exhausted engineers can't find the time to make mistakes"
+        ]
+    }
+]

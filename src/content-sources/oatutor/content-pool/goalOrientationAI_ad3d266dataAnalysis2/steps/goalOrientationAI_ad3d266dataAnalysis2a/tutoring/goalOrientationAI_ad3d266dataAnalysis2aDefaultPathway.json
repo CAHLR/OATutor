@@ -1,0 +1,46 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266dataAnalysis2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Dataset",
+        "text": "To identify the category with the highest expenditure, you need to analyze the dataset provided. Start by examining the data structure and the columns available.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266dataAnalysis2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266dataAnalysis2a-h1"
+        ],
+        "title": "Sorting the Data",
+        "text": "Sorting the data by expenditure in descending order will help you quickly identify the category with the highest expenditure.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266dataAnalysis2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Sort the data by expenditure in descending order"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266dataAnalysis2a-h2"
+        ],
+        "title": "Sorting Method",
+        "text": "What is the first step in identifying the category with the highest expenditure?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Sort the data by expenditure in descending order",
+            "Calculate the average expenditure for each category",
+            "Create a pie chart of the expenditures"
+        ]
+    }
+]

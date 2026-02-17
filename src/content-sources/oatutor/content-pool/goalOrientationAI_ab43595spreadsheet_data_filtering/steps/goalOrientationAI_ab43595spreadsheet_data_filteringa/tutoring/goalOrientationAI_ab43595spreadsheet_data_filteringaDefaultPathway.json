@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_data_filteringa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Spreadsheet Functions",
+        "text": "In spreadsheets, functions are used to perform calculations or operations on data. Some functions are designed to manipulate data, while others are used for calculations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_data_filteringa-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_data_filteringa-h1"
+        ],
+        "title": "Filtering Data",
+        "text": "Filtering data allows you to display only the rows that meet certain criteria, hiding the rest. This is useful for analyzing specific subsets of data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_data_filteringa-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FILTER(range, condition)"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_data_filteringa-h2"
+        ],
+        "title": "Identifying the Correct Function",
+        "text": "Consider the functions available in spreadsheets. Which one is specifically designed to filter data based on criteria?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FILTER(range,condition)",
+            "SORT(range)",
+            "SUM(range)",
+            "AVERAGE(range)"
+        ]
+    }
+]

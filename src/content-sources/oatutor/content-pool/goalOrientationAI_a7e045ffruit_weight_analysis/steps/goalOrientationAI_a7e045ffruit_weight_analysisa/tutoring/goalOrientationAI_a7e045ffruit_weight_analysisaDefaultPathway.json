@@ -1,0 +1,53 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045ffruit_weight_analysisa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Range",
+        "text": "First, identify the fruits that weigh between $$1.5$$ kg and $$3$$ kg. Count how many fruits fall within this range.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ffruit_weight_analysisa-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045ffruit_weight_analysisa-h1"
+        ],
+        "title": "Total Number of Fruits",
+        "text": "Determine the total number of fruits in the dataset. This will help you calculate the percentage.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ffruit_weight_analysisa-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045ffruit_weight_analysisa-h2"
+        ],
+        "title": "Calculate the Percentage",
+        "text": "Use the formula: (Number of fruits in range / Total number of fruits) * $$100$$ to find the percentage.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ffruit_weight_analysisa-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$60$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045ffruit_weight_analysisa-h3"
+        ],
+        "title": "Simplify the Fraction",
+        "text": "If the fraction is $$\\frac{3}{5}$$, simplify it to 60%.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

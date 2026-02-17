@@ -1,0 +1,57 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266ethics8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider the Role of Different Teams",
+        "text": "Think about the various perspectives and expertise that different teams bring to the table when classifying data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics8a-h1"
+        ],
+        "title": "Legal Team's Expertise",
+        "text": "The legal team is crucial for ensuring compliance with laws and regulations, but is that the only aspect to consider?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics8a-h2"
+        ],
+        "title": "Involvement of Other Teams",
+        "text": "Consider the importance of involving IT, data analysts, and business teams in the classification process.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics8a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics8a-h3"
+        ],
+        "title": "Final Decision",
+        "text": "Based on the need for diverse expertise, should only the legal team drive the classification process?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

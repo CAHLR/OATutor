@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266research_methods1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider the Source",
+        "text": "When gathering information, it's important to consider the credibility and reliability of the source. Academic sources are often peer-reviewed, ensuring accuracy and quality.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266research_methods1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266research_methods1a-h1"
+        ],
+        "title": "What is Peer Review?",
+        "text": "Peer review is a process where experts in the field evaluate the quality and validity of a research paper before it is published. This ensures the information is credible.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266research_methods1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Using $$peer-reviewed$$ academic journals."
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266research_methods1a-h2"
+        ],
+        "title": "Identify Reliable Sources",
+        "text": "Which of the following is a reliable method to gather information for a college research paper?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Using $$peer-reviewed$$ academic journals.",
+            "Relying solely on Wikipedia.",
+            "Consulting social media posts.",
+            "Using personal blogs as primary sources."
+        ]
+    }
+]

@@ -1,0 +1,18 @@
+{
+    "id": "goalOrientationAI_a602046intersql12a",
+    "stepAnswer": [
+        "SELECT * FROM Orders LEFT JOIN Customers ON Orders.CustomerId $$=$$ Customers.Id;"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Which SQL statement will return all rows from the Orders table and only the matching rows from the Customers table based on the CustomerId?",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "SELECT * FROM Orders LEFT JOIN Customers ON Orders.CustomerId $$=$$ Customers.Id;",
+    "choices": [
+        "SELECT * FROM Orders LEFT JOIN Customers ON Orders.CustomerId $$=$$ Customers.Id;",
+        "SELECT * FROM Orders RIGHT JOIN Customers ON Orders.CustomerId $$=$$ Customers.Id;",
+        "SELECT * FROM Orders INNER JOIN Customers ON Orders.CustomerId $$=$$ Customers.Id;",
+        "SELECT * FROM Orders FULL JOIN Customers ON Orders.CustomerId $$=$$ Customers.Id;"
+    ]
+}

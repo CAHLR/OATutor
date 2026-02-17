@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266digital_trusta-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Trust Building",
+        "text": "Online platforms build trust by providing transparency and accountability. This can be achieved through various features that allow users to share their experiences and feedback.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266digital_trusta-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "By implementing user reviews and ratings"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266digital_trusta-h1"
+        ],
+        "title": "Identifying Trust Features",
+        "text": "Which feature allows users to share their experiences and feedback on online platforms?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "By implementing user reviews and ratings",
+            "By allowing anonymous comments",
+            "By hiding user feedback",
+            "By restricting user interactions"
+        ]
+    }
+]

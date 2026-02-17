@@ -1,0 +1,58 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045ffruit_survey_analysisa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Percentages",
+        "text": "To determine if 25% of the people chose apples, calculate the percentage of people who selected apples from the total surveyed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ffruit_survey_analysisa-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$25$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045ffruit_survey_analysisa-h1"
+        ],
+        "title": "Calculate the Percentage",
+        "text": "If $$20$$ out of $$80$$ people chose apples, what percentage is that?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ffruit_survey_analysisa-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045ffruit_survey_analysisa-h1"
+        ],
+        "title": "Simplifying Fractions",
+        "text": "To find the percentage, divide the number of people who chose apples by the total number of people surveyed and multiply by $$100$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ffruit_survey_analysisa-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$25$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045ffruit_survey_analysisa-h3"
+        ],
+        "title": "Fraction to Percentage",
+        "text": "Convert the fraction $$\\frac{20}{80}$$ to a percentage.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

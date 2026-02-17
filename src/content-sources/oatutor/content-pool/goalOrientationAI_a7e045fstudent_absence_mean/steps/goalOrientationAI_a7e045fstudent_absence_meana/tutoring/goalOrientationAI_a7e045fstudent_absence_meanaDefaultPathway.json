@@ -1,0 +1,65 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fstudent_absence_meana-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the mean number of days absent, you need to calculate the average of the given data set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fstudent_absence_meana-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fstudent_absence_meana-h1"
+        ],
+        "title": "Summing the Data",
+        "text": "Add all the numbers in the data set to find the total number of days absent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fstudent_absence_meana-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$84$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fstudent_absence_meana-h2"
+        ],
+        "title": "Calculate the Total",
+        "text": "Add the numbers: $$2+3+1+4+2+5+3+2+1+4+3+2+5+3+2+1+4+3+2+5+3+2+1+4+3+2+5+3+2+1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fstudent_absence_meana-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fstudent_absence_meana-h3"
+        ],
+        "title": "Finding the Mean",
+        "text": "Divide the total number of days absent by the number of students to find the mean.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fstudent_absence_meana-h5",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fstudent_absence_meana-h4"
+        ],
+        "title": "Calculate the MeanA",
+        "text": "Divide the total sum by the number of students: $$\\frac{84}{30}$$",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

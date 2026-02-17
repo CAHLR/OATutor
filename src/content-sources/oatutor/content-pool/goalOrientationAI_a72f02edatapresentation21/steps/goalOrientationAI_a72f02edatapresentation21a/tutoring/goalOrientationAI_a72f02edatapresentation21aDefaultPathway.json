@@ -1,0 +1,71 @@
+[
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Focus on the Audience",
+        "text": "The primary goal of slide design is to focus on the audience's needs.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation21a-h1"
+        ],
+        "title": "Clarity and Simplicity",
+        "text": "Simplifying slides helps in making the information clearer and easier to understand.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation21a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation21a-h2"
+        ],
+        "title": "Retention of Information",
+        "text": "A well-designed slide aids in better retention of the presented information.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation21a-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation21a-h3"
+        ],
+        "title": "Avoiding Distractions",
+        "text": "Reducing unnecessary elements on slides prevents distractions for the audience.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation21a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "To enhance audience understanding and retention."
+        ],
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation21a-h4"
+        ],
+        "title": "Choosing the Best Option",
+        "text": "The best option focuses on enhancing audience understanding and retention.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "To make the slides look more colorful.",
+            "To enhance audience understanding and retention.",
+            "To reduce the number of slides.",
+            "To impress the audience with design skills."
+        ]
+    }
+]

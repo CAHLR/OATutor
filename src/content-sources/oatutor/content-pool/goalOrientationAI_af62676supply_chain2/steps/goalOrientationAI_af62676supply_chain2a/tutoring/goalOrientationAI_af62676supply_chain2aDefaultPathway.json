@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_af62676supply_chain2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Automated Systems",
+        "text": "Automated supply chain management systems are designed to streamline processes. Think about what this means for the overall operation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676supply_chain2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676supply_chain2a-h1"
+        ],
+        "title": "Efficiency in Operations",
+        "text": "Consider how automation affects the speed and accuracy of tasks compared to manual processes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676supply_chain2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "improves efficiency"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676supply_chain2a-h2"
+        ],
+        "title": "Key Advantage",
+        "text": "What is the main benefit of using automation in supply chain management?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "increases manual labor",
+            "improves efficiency",
+            "reduces data accuracy",
+            "increases costs"
+        ]
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_ad5badfsql9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL Grouping",
+        "text": "In SQL, the GROUP BY clause is used to arrange identical data into groups. This is often used with aggregate functions like COUNT, SUM, AVG, etc., to perform operations on each group of data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad5badfsql9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad5badfsql9a-h1"
+        ],
+        "title": "Why Use GROUP BY with Multiple Columns?",
+        "text": "Using GROUP BY with multiple columns allows you to create subgroups within your data. This is useful when you want to analyze data at a more granular level, such as sales by store and region.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad5badfsql9a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It calculates the total sales for each store in each region."
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad5badfsql9a-h2"
+        ],
+        "title": "Understanding SQL Query Structure",
+        "text": "Consider the SQL query: SELECT store, region, SUM(sales) FROM $$sales_{data}$$ GROUP BY store, region. What does this query do?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It calculates the total sales for each store in each region",
+            "It lists all sales data without any aggregation",
+            "It filters out sales data for a specific region",
+            "It sorts the sales data by store and region"
+        ]
+    }
+]

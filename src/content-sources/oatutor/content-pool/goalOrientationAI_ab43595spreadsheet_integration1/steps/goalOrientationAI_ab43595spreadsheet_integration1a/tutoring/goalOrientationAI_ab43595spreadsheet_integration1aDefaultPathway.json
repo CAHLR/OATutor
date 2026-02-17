@@ -1,0 +1,71 @@
+[
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_integration1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider Collaboration",
+        "text": "Think about how integrating Excel with Google Sheets might enhance teamwork.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_integration1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_integration1a-h1"
+        ],
+        "title": "Real-Time Features",
+        "text": "Consider the benefits of real-time updates when using integrated tools.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_integration1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_integration1a-h2"
+        ],
+        "title": "Advanced Features",
+        "text": "Remember that Excel offers advanced features that can be useful in integration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_integration1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_integration1a-h3"
+        ],
+        "title": "Platform Accessibility",
+        "text": "Think about how integration affects data accessibility across platforms.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_integration1a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "To collaborate in $$real-time$$ with others while using Excel's advanced features"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_integration1a-h4"
+        ],
+        "title": "Combine Benefits",
+        "text": "Combining Excel's advanced features with Google Sheets allows for real-time collaboration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "To collaborate in $$real-time$$ with others while using Excel's advanced features",
+            "To convert Excel files into Google Sheets format automatically",
+            "To use Google Sheets offline without any internet connection",
+            "To ensure data is only accessible on one platform"
+        ]
+    }
+]

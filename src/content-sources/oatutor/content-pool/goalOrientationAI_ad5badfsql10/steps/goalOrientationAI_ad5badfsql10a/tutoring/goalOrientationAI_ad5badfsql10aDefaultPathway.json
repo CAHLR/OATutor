@@ -1,0 +1,46 @@
+[
+    {
+        "id": "goalOrientationAI_ad5badfsql10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL ORDER BY",
+        "text": "The ORDER BY clause in SQL is used to sort the result set of a query by one or more columns. By default, it sorts in ascending order. To sort in descending order, you use the DESC keyword.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad5badfsql10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad5badfsql10a-h1"
+        ],
+        "title": "SQL Syntax Reminder",
+        "text": "Remember that SQL keywords are not case-sensitive, but it's a good practice to write them in uppercase for better readability.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad5badfsql10a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The rows showing the query results for Query $$1$$ can appear in any order, while the rows showing the query results for Query $$2$$ will show in ascending order based on the Salary values."
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad5badfsql10a-h1"
+        ],
+        "title": "Query Analysis",
+        "text": "Consider the following queries: Query 1: SELECT Name, Salary FROM Employees. Query 2: SELECT Name, Salary FROM Employees ORDER BY Salary ASC. What is the difference in the result sets of these queries?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The rows showing the query results for Query $$1$$ can appear in any order, while the rows showing the query results for Query $$2$$ will show in ascending order based on the Salary values.",
+            "The rows showing the query results for Query $$1$$ can appear in any order, while the rows showing the query results for Query $$2$$ will show Salary values that begin with the number $$5$$.",
+            "The query results for Query $$1$$ will show without any error message, while Query $$2$$ will show an error message."
+        ]
+    }
+]

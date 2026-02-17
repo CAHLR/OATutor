@@ -1,0 +1,91 @@
+[
+    {
+        "id": "goalOrientationAI_af62676favoriteColorSurveya-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Relative Frequency",
+        "text": "Relative frequency is calculated by dividing the number of people who prefer a specific color by the total number of people surveyed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676favoriteColorSurveya-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676favoriteColorSurveya-h1"
+        ],
+        "title": "Calculate Relative Frequencies",
+        "text": "To compare the relative frequencies, calculate the relative frequency for both blue and green preferences.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676favoriteColorSurveya-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.2$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676favoriteColorSurveya-h2"
+        ],
+        "title": "Relative Frequency of Blue",
+        "text": "If $$20$$ people prefer blue out of $$100$$ surveyed, what is the relative frequency?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676favoriteColorSurveya-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.3$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676favoriteColorSurveya-h2"
+        ],
+        "title": "Relative Frequency of Green",
+        "text": "If $$30$$ people prefer green out of $$100$$ surveyed, what is the relative frequency?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676favoriteColorSurveya-h5",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676favoriteColorSurveya-h3"
+        ],
+        "title": "Compare the Frequencies",
+        "text": "Compare the relative frequencies of blue and green to determine which is less.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676favoriteColorSurveya-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676favoriteColorSurveya-h5"
+        ],
+        "title": "Conclusion",
+        "text": "Is the relative frequency of blue less than that of green?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "True",
+            "False"
+        ]
+    }
+]

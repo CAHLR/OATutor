@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fcity_park_surveya-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Population",
+        "text": "The population refers to the entire group of individuals that the city planner is interested in studying.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fcity_park_surveya-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All people visiting the city park"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fcity_park_surveya-h1"
+        ],
+        "title": "Identifying the Population",
+        "text": "Consider who the city planner wants to gather information about. Is it everyone in the city or a specific group?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "All city residents",
+            "All people visiting the city park",
+            "All park staff",
+            "All tourists visiting the city"
+        ]
+    }
+]

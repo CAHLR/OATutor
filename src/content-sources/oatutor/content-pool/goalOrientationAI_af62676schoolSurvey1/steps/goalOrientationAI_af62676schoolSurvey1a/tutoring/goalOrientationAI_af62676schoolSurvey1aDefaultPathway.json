@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_af62676schoolSurvey1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Population",
+        "text": "The population of interest is the entire group you want to draw conclusions about. In this case, think about who the survey is targeting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676schoolSurvey1a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All students of the school"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676schoolSurvey1a-h1"
+        ],
+        "title": "Identifying the Target Group",
+        "text": "Consider who the survey is intended to gather information from. Is it students, teachers, or parents?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "All students of the school",
+            "All teachers of the school",
+            "All parents of the students",
+            "All students who do homework"
+        ]
+    }
+]

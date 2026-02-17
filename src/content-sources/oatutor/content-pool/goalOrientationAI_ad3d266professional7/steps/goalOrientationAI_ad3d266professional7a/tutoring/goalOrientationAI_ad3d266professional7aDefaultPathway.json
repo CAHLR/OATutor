@@ -1,0 +1,55 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266professional7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Remote Access",
+        "text": "Margot can access a wide range of books and resources from anywhere in the world, which is convenient for her frequent travels.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266professional7a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Variety of Resources",
+        "text": "Online libraries often provide access to a vast collection of digital books, journals, and articles that might not be available in physical libraries.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266professional7a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Time Efficiency",
+        "text": "Using an online library can save time as Margot doesn't need to physically visit a library to borrow or return books.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266professional7a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "She can access the books remotely"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266professional7a-h1"
+        ],
+        "title": "Correct Choice",
+        "text": "Margot can access the books remotely, which is ideal for her frequent travels.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "She can access the books remotely",
+            "She only needs books in the public domain",
+            "Only online libraries have free books",
+            "She needs to use books written by an author who's still living"
+        ]
+    }
+]

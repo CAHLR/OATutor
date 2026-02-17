@@ -1,0 +1,71 @@
+[
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Patterns",
+        "text": "Focus on the type of analysis that seeks to understand the 'why' behind the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation1a-h1"
+        ],
+        "title": "Types of Analysis",
+        "text": "Consider the analysis that involves subjective assessment and interpretation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation1a-h2"
+        ],
+        "title": "Qualitative vs Quantitative",
+        "text": "Remember that qualitative analysis is more about understanding motivations than measuring quantities.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation1a-h3"
+        ],
+        "title": "Focus on Motivations",
+        "text": "The correct analysis type often involves interviews, observations, and open-ended questions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation1a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Qualitative Analysis"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation1a-h4"
+        ],
+        "title": "Identify the Analysis Type",
+        "text": "Select the analysis type that focuses on understanding motivations behind data patterns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Descriptive Analysis",
+            "Predictive Analysis",
+            "Qualitative Analysis",
+            "Quantitative Analysis"
+        ]
+    }
+]

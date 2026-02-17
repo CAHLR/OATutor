@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045flibrary_surveya-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Population",
+        "text": "The population refers to the entire group of individuals the librarian is interested in studying.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045flibrary_surveya-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All students borrowing books from the library"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045flibrary_surveya-h1"
+        ],
+        "title": "Identifying the Population",
+        "text": "Consider who the librarian wants to gather data from to determine the average number of books borrowed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "All library visitors",
+            "All students borrowing books from the library",
+            "All library staff",
+            "All local residents"
+        ]
+    }
+]

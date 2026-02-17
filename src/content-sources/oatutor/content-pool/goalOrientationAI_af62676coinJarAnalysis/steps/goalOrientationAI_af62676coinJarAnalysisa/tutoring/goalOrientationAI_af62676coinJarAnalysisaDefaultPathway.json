@@ -1,0 +1,80 @@
+[
+    {
+        "id": "goalOrientationAI_af62676coinJarAnalysisa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Coin Values",
+        "text": "To determine if the total value of quarters is greater than the total value of dimes, calculate the value of each type of coin. Remember, a quarter is worth $$25$$ cents and a dime is worth $$10$$ cents.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676coinJarAnalysisa-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8\\times25=200$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676coinJarAnalysisa-h1"
+        ],
+        "title": "Calculate Total Value of Quarters",
+        "text": "If there are $$8$$ quarters, calculate their total value in cents.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676coinJarAnalysisa-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$15\\times10=150$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676coinJarAnalysisa-h1"
+        ],
+        "title": "Calculate Total Value of Dimes",
+        "text": "If there are $$15$$ dimes, calculate their total value in cents.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676coinJarAnalysisa-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676coinJarAnalysisa-h2",
+            "goalOrientationAI_af62676coinJarAnalysisa-h3"
+        ],
+        "title": "Compare the Values",
+        "text": "Now that you have the total values of quarters and dimes, compare them to determine which is greater.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676coinJarAnalysisa-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676coinJarAnalysisa-h4"
+        ],
+        "title": "Final Comparison",
+        "text": "Is $$200$$ greater than 150?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "True",
+            "False"
+        ]
+    }
+]

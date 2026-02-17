@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fcommunity_gardena-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Population",
+        "text": "The population refers to the entire group of individuals the coordinator is interested in studying.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fcommunity_gardena-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All volunteers working in the community garden"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fcommunity_gardena-h1"
+        ],
+        "title": "Identifying the Population",
+        "text": "Who is actively involved in the community garden activities?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "All community garden visitors",
+            "All volunteers working in the community garden",
+            "All community garden coordinators",
+            "All local residents"
+        ]
+    }
+]

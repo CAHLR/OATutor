@@ -1,0 +1,41 @@
+[
+    {
+        "id": "goalOrientationAI_af62676commute_analysisa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Data",
+        "text": "To determine if 3% of people commute $$3$$ miles, check the data for the number of people commuting $$3$$ miles and compare it to the total surveyed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676commute_analysisa-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2%"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676commute_analysisa-h1"
+        ],
+        "title": "Calculate the Percentage",
+        "text": "If $$2$$ out of $$100$$ people commute $$3$$ miles, what percentage is that?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676commute_analysisa-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676commute_analysisa-h2"
+        ],
+        "title": "Compare the Percentages",
+        "text": "Compare the calculated percentage with 3% to determine if the statement is true or false.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

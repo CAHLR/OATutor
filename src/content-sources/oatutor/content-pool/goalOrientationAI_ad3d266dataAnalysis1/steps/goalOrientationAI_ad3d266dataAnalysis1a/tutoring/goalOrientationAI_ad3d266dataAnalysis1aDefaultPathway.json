@@ -1,0 +1,58 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266dataAnalysis1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand the Data",
+        "text": "Before diving into analysis, ensure you understand the type of data you have. Is it quantitative or qualitative? 📊",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266dataAnalysis1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266dataAnalysis1a-h1"
+        ],
+        "title": "Data Collection",
+        "text": "Gather all relevant sales data for the month. This includes sales figures, product names, and any other pertinent information.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266dataAnalysis1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266dataAnalysis1a-h2"
+        ],
+        "title": "Organize the Data",
+        "text": "Arrange the data in a structured format, such as a spreadsheet, to make analysis easier. 📈",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266dataAnalysis1a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Sort the data by sales figures to identify the product with the highest sales."
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266dataAnalysis1a-h3"
+        ],
+        "title": "Identify the Best-Selling Product",
+        "text": "Once the data is organized, what should you do next to find the best-selling product?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Sort the data by sales figures",
+            "Look for the product with the lowest sales",
+            "Choose a product at random"
+        ]
+    }
+]

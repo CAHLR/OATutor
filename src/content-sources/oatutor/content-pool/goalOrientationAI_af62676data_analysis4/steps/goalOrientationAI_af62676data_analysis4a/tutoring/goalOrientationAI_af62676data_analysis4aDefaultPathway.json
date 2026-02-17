@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_af62676data_analysis4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scenario",
+        "text": "The teacher is interested in the average score of the entire class, but she only has data from $$10$$ students. What does this represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676data_analysis4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676data_analysis4a-h1"
+        ],
+        "title": "Defining Key Terms",
+        "text": "A statistic is a numerical value that describes a sample. A parameter describes a population. Which one applies here?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676data_analysis4a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Statistic"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676data_analysis4a-h2"
+        ],
+        "title": "Identifying the Correct Term",
+        "text": "The average score of the $$10$$ students is a measure of the sample, not the entire class. What is this called?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Variable",
+            "Population",
+            "Statistic",
+            "Data"
+        ]
+    }
+]

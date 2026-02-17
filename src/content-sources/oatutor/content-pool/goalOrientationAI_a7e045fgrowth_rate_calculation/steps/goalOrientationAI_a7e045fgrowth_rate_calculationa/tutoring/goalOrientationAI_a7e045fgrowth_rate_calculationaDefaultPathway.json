@@ -1,0 +1,70 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fgrowth_rate_calculationa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify Initial and Final Heights",
+        "text": "Start by identifying the initial and final heights of the plant. The initial height is $$15$$ cm, and the final height is $$18$$ cm.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fgrowth_rate_calculationa-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fgrowth_rate_calculationa-h1"
+        ],
+        "title": "Calculate the Change in Height",
+        "text": "Find the change in height by subtracting the initial height from the final height: $$18$$ cm - $$15$$ cm.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fgrowth_rate_calculationa-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fgrowth_rate_calculationa-h2"
+        ],
+        "title": "Compute the Change in Height",
+        "text": "What is the change in height?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fgrowth_rate_calculationa-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fgrowth_rate_calculationa-h3"
+        ],
+        "title": "Calculate the Percentage Increase",
+        "text": "To find the percentage increase, divide the change in height by the initial height and multiply by 100: $$100\\frac{3}{15}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fgrowth_rate_calculationa-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "20%"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fgrowth_rate_calculationa-h4"
+        ],
+        "title": "Compute the Percentage Increase",
+        "text": "What is the percentage increase in the plant's height?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

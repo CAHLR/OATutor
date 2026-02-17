@@ -1,0 +1,46 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266professional1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Inventory",
+        "text": "Inventorying your current data access helps you understand what data you have and what you might need. This knowledge is crucial for making informed decisions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266professional1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266professional1a-h1"
+        ],
+        "title": "Benefits of Data Inventory",
+        "text": "Knowing your data capabilities allows you to identify gaps and opportunities for improvement. It also helps in aligning your data strategy with business goals.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266professional1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "To know your capabilities and needs"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266professional1a-h2"
+        ],
+        "title": "Choosing the Right Answer",
+        "text": "Consider why understanding your current data access is important. Is it more about knowing your capabilities, justifying investments, or creating a database?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "To know your capabilities and needs",
+            "To justify IT investments",
+            "To create a large database for future reference"
+        ]
+    }
+]

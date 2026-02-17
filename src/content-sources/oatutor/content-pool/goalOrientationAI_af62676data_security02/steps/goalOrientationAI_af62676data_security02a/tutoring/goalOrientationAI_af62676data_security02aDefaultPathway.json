@@ -1,0 +1,34 @@
+[
+    {
+        "id": "goalOrientationAI_af62676data_security02a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Firewalls",
+        "text": "A firewall acts as a barrier between a trusted network and an untrusted network, like the internet. It helps protect the network by filtering traffic based on security rules.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676data_security02a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "by monitoring and controlling incoming and outgoing network traffic based on predetermined security rules"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676data_security02a-h1"
+        ],
+        "title": "Firewall Functionality",
+        "text": "What is the primary function of a firewall in network security?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "by monitoring and controlling incoming and outgoing network traffic based on predetermined security rules",
+            "by encrypting all data within the network",
+            "by physically blocking access to network cables"
+        ]
+    }
+]

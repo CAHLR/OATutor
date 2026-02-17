@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_af62676data_encryption_basicsa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Encryption",
+        "text": "Encryption is a method used to secure data by transforming it into a format that is unreadable without a decryption key.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676data_encryption_basicsa-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676data_encryption_basicsa-h1"
+        ],
+        "title": "Why Encrypt Data?",
+        "text": "The main goal of encryption is to ensure that only authorized parties can access the original data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676data_encryption_basicsa-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "protect data by converting it into a secure format"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676data_encryption_basicsa-h2"
+        ],
+        "title": "Purpose of Encryption",
+        "text": "What is the primary purpose of encryption?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "protect data by converting it into a secure format",
+            "increase data storage capacity",
+            "improve data processing speed",
+            "reduce data redundancy"
+        ]
+    }
+]

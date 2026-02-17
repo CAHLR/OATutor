@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_af62676fruit_survey1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Concept",
+        "text": "The average number of fruits consumed per day is derived from the data collected from a sample of $$50$$ people. What does this represent in statistical terms?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676fruit_survey1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676fruit_survey1a-h1"
+        ],
+        "title": "Defining Terms",
+        "text": "In statistics, a 'statistic' is a numerical value that describes a characteristic of a sample. How does this relate to the average number of fruits consumed?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676fruit_survey1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Statistic"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676fruit_survey1a-h2"
+        ],
+        "title": "Identifying the Correct Term",
+        "text": "The average number of fruits consumed per day by the sample is a numerical summary of the data. What is this called?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Variable",
+            "Population",
+            "Statistic",
+            "Data"
+        ]
+    }
+]

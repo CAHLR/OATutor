@@ -1,0 +1,56 @@
+[
+    {
+        "id": "goalOrientationAI_af62676pet_survey_analysisa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Percentages",
+        "text": "To determine if 40% of the people chose dogs, calculate the percentage of people who selected dogs from the total surveyed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676pet_survey_analysisa-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "40%"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676pet_survey_analysisa-h1"
+        ],
+        "title": "Calculate the Percentage",
+        "text": "If $$40$$ out of $$100$$ people chose dogs, what percentage is that?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676pet_survey_analysisa-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplifying Fractions",
+        "text": "When calculating percentages, simplify the fraction to make it easier to convert to a percentage.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676pet_survey_analysisa-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "40%"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676pet_survey_analysisa-h3"
+        ],
+        "title": "Convert to Percentage",
+        "text": "Convert the fraction $$\\frac{40}{100}$$ to a percentage.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,71 @@
+[
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_formattinga-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Locate the Toolbar",
+        "text": "The toolbar is located at the top of the Google Sheets interface.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_formattinga-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_formattinga-h1"
+        ],
+        "title": "Identify the Font Tool",
+        "text": "Look for an icon that resembles a letter or text style in the toolbar.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_formattinga-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_formattinga-h2"
+        ],
+        "title": "Understand Font Functionality",
+        "text": "The font tool allows you to change the appearance of your text, such as style and size.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_formattinga-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_formattinga-h3"
+        ],
+        "title": "Differentiate Between Tools",
+        "text": "The format tool is used for adjusting cell properties, not text style.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_formattinga-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Font"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_formattinga-h4"
+        ],
+        "title": "Select the Correct Tool",
+        "text": "Choose the tool that specifically changes the font style of your text.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Font",
+            "Format",
+            "Text",
+            "Style"
+        ]
+    }
+]

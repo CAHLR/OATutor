@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266ethics2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Classification",
+        "text": "Data classification helps in organizing data based on its sensitivity and importance. This ensures that sensitive data is protected and managed appropriately.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics2a-h1"
+        ],
+        "title": "Benefits of Data Classification",
+        "text": "By classifying data, businesses can ensure compliance with regulations, protect customer information, and optimize data management processes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "protecting your customers while growing your business"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics2a-h2"
+        ],
+        "title": "Choosing the Right Answer",
+        "text": "Consider how data classification can impact both customer trust and business growth.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "protecting your customers while growing your business",
+            "keeping attorneys busy",
+            "creating the illusion of privacy",
+            "eliminating privacy risks by deleting all data"
+        ]
+    }
+]

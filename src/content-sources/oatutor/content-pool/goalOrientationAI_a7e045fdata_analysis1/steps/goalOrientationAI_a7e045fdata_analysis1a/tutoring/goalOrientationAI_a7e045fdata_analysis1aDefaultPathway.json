@@ -1,0 +1,59 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fdata_analysis1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Concept",
+        "text": "In statistics, a statistic is a numerical value that represents a characteristic of a sample. It is used to estimate the corresponding parameter of the population.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fdata_analysis1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fdata_analysis1a-h1"
+        ],
+        "title": "Sample vs. Population",
+        "text": "The average height calculated from the $$50$$ sunflowers is based on a sample, not the entire population of sunflowers in the field.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fdata_analysis1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fdata_analysis1a-h2"
+        ],
+        "title": "Defining a Statistic",
+        "text": "A statistic is a measure that describes a characteristic of a sample, such as the average height of the $$50$$ sunflowers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fdata_analysis1a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Statistic"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fdata_analysis1a-h3"
+        ],
+        "title": "Identifying the Correct Term",
+        "text": "Given that the average height is calculated from a sample of $$50$$ sunflowers, what is this an example of?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Variable",
+            "Population",
+            "Statistic",
+            "Data"
+        ]
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fdiscount_calculationa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Discount",
+        "text": "To find the final price, you need to calculate 25% of the original price and subtract it from the original price.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fdiscount_calculationa-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fdiscount_calculationa-h1"
+        ],
+        "title": "Calculate 25% of the Original Price",
+        "text": "What is 25% of $80?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fdiscount_calculationa-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$60$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fdiscount_calculationa-h2"
+        ],
+        "title": "Subtract the Discount from the Original Price",
+        "text": "Subtract the discount from the original price: $80 minus $20.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fdiscount_calculationa-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fdiscount_calculationa-h3"
+        ],
+        "title": "Final Price",
+        "text": "After subtracting the discount, the final price of the jacket is $60.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

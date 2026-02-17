@@ -1,0 +1,57 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fpetPreferenceSurveya-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Relative Frequency",
+        "text": "Relative frequency is the ratio of the number of times a specific event occurs to the total number of events. It helps compare different categories.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fpetPreferenceSurveya-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fpetPreferenceSurveya-h1"
+        ],
+        "title": "Calculate Relative Frequency for Dogs",
+        "text": "To find the relative frequency of people who prefer dogs, divide the number of people who prefer dogs by the total number of people surveyed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fpetPreferenceSurveya-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fpetPreferenceSurveya-h2"
+        ],
+        "title": "Calculate Relative Frequency for Cats",
+        "text": "Similarly, calculate the relative frequency for cats by dividing the number of people who prefer cats by the total number of people surveyed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fpetPreferenceSurveya-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fpetPreferenceSurveya-h3"
+        ],
+        "title": "Compare the Relative Frequencies",
+        "text": "Compare the relative frequencies of people who prefer dogs and cats. Is the frequency for dogs less than that for cats?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "True",
+            "False"
+        ]
+    }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "id": "goalOrientationAI_af68b3adataScienceTerms18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Joins",
+        "text": "A data join method is used to combine rows from two or more tables based on a related column between them.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af68b3adataScienceTerms18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af68b3adataScienceTerms18a-h1"
+        ],
+        "title": "Types of Data Joins",
+        "text": "Common types of data joins include Inner Join, Left Join, Right Join, and Full Outer Join.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af68b3adataScienceTerms18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af68b3adataScienceTerms18a-h2"
+        ],
+        "title": "Inner Join",
+        "text": "An Inner Join returns only the rows where there is a match in both tables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af68b3adataScienceTerms18a-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af68b3adataScienceTerms18a-h2"
+        ],
+        "title": "Left Join",
+        "text": "A Left Join returns all rows from the left table and the matched rows from the right table. If there is no match, the result is NULL from the right side.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af68b3adataScienceTerms18a-h5",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af68b3adataScienceTerms18a-h2"
+        ],
+        "title": "Right Join",
+        "text": "A Right Join returns all rows from the right table and the matched rows from the left table. If there is no match, the result is NULL from the left side.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af68b3adataScienceTerms18a-h6",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af68b3adataScienceTerms18a-h2"
+        ],
+        "title": "Full Outer Join",
+        "text": "An outer join keeps the records from both of the tables. If there is no corresponding value, the \"full\" indicates that it will be filled.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

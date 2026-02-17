@@ -1,0 +1,58 @@
+[
+    {
+        "id": "goalOrientationAI_a34daaavalidity3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Filtering Data",
+        "text": "The correct feature will help you filter your data based on a certain condition.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a34daaavalidity3a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Format menu"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a34daaavalidity3a-h1"
+        ],
+        "title": "Setting Up Filters",
+        "text": "To highlight negative values in the 'Sales Amount' column, which menu should you access in the spreadsheet software?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Data menu",
+            "Format menu",
+            "Insert menu",
+            "Tools menu"
+        ]
+    },
+    {
+        "id": "goalOrientationAI_a34daaavalidity3a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Set a rule to highlight cells with values less than $$0$$."
+        ],
+        "dependencies": [
+            "goalOrientationAI_a34daaavalidity3a-h2"
+        ],
+        "title": "Creating Rules",
+        "text": "After accessing the Format menu, what rule should you set to highlight cells with negative values?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Highlight cells with values greater than $$0$$.",
+            "Highlight cells with values equal to $$0$$.",
+            "Set a rule to highlight cells with values less than $$0$$.",
+            "Set a rule to highlight cells with values equal to $$100$$."
+        ]
+    }
+]

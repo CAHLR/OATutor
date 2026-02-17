@@ -1,0 +1,53 @@
+[
+    {
+        "id": "goalOrientationAI_a602046intersql13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL Joins",
+        "text": "In SQL, a JOIN clause is used to combine rows from two or more tables, based on a related column between them.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a602046intersql13a-h1"
+        ],
+        "title": "Types of Joins",
+        "text": "There are several types of JOINs in SQL: INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN. Each type determines how the tables are combined.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a602046intersql13a-h2"
+        ],
+        "title": "Using ON Clause",
+        "text": "The ON clause is used to specify the condition for the JOIN, usually by matching a column from each table.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql13a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "JOIN Profiles ON $$ \\cup sers.Email=Profiles.ContactEmail$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a602046intersql13a-h3"
+        ],
+        "title": "Constructing the JOIN Clause",
+        "text": "To associate the 'Email' field in the 'Users' table with the 'ContactEmail' field in the 'Profiles' table, use the following SQL syntax:",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

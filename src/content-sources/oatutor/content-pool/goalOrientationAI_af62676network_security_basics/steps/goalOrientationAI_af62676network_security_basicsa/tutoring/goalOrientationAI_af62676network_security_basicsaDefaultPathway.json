@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_af62676network_security_basicsa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Firewalls",
+        "text": "A firewall acts as a barrier between a trusted network and an untrusted network, such as the internet.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676network_security_basicsa-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676network_security_basicsa-h1"
+        ],
+        "title": "Firewall Functions",
+        "text": "Firewalls can block or allow traffic based on predefined security rules.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676network_security_basicsa-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "monitor and control incoming and outgoing network traffic"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676network_security_basicsa-h2"
+        ],
+        "title": "Primary Function of a Firewall",
+        "text": "What is the main role of a firewall in network security?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "monitor and control incoming and outgoing network traffic",
+            "encrypt data for secure transmission",
+            "provide a backup for data",
+            "optimize network speed"
+        ]
+    }
+]

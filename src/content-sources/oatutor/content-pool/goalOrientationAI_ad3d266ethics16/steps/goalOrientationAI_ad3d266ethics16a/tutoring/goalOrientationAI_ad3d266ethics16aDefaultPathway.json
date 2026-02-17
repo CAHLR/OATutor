@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266ethics16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding DIS",
+        "text": "DIS stands for Data Integration Service. It acts as a central hub for managing and integrating data from various sources.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics16a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "a database and a service"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics16a-h1"
+        ],
+        "title": "Role of DIS",
+        "text": "What are the two main functions of DIS?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "a database and a service",
+            "a service only",
+            "a database only",
+            "a placeholder"
+        ]
+    }
+]

@@ -1,0 +1,66 @@
+[
+    {
+        "id": "goalOrientationAI_a34daaavalidity1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Validity",
+        "text": "Data validity ensures that the data is accurate, consistent, and reliable for analysis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a34daaavalidity1a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A valid EmployeeID should be unique, $$non-null$$, and follow a consistent format."
+        ],
+        "dependencies": [
+            "goalOrientationAI_a34daaavalidity1a-h1"
+        ],
+        "title": "Identifying Valid EmployeeID",
+        "text": "What characteristics should a valid EmployeeID have?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A valid EmployeeID should be unique, $$non-null$$, and follow a consistent format.",
+            "A valid EmployeeID should be a positive integer and can be repeated.",
+            "A valid EmployeeID should be a string of any length and can be null."
+        ]
+    },
+    {
+        "id": "goalOrientationAI_a34daaavalidity1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A valid HireDate should be a past date, formatted correctly, and $$non-null$$."
+        ],
+        "dependencies": [
+            "goalOrientationAI_a34daaavalidity1a-h1"
+        ],
+        "title": "Checking HireDate Validity",
+        "text": "What criteria should a valid HireDate meet?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A valid HireDate should be a past date, formatted correctly, and $$non-null$$.",
+            "A valid HireDate can be any date, including future dates, and can be null.",
+            "A valid HireDate should be a string of any format and can be repeated."
+        ]
+    },
+    {
+        "id": "goalOrientationAI_a34daaavalidity1a-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Common Data Validity Issues",
+        "text": "Common issues include duplicate IDs, incorrect date formats, and missing values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

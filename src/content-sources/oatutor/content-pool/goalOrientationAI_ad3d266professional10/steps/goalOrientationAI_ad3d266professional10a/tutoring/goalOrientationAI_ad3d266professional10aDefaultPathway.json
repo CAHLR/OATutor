@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266professional10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider the Data Source",
+        "text": "Think about what kind of information would provide insights into future population trends.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266professional10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266professional10a-h1"
+        ],
+        "title": "Focus on Statistical Data",
+        "text": "Statistical data can help predict future trends based on past and current data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266professional10a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Statistical database"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266professional10a-h2"
+        ],
+        "title": "Identify the Best Resource",
+        "text": "Which resource provides numerical data that can be analyzed to predict future trends?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Objects and artifacts",
+            "Statistical database",
+            "Maps",
+            "Materials collections"
+        ]
+    }
+]

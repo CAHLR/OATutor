@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_a602046intersql1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL Tables",
+        "text": "In SQL, a table is a collection of related data entries and it consists of columns and rows. Each column in a table represents a specific field of data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql1a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A field of data"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a602046intersql1a-h1"
+        ],
+        "title": "Identifying SQL Column",
+        "text": "What does a column represent in a database table?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A field of data",
+            "A set of records",
+            "A type of table",
+            "A database schema"
+        ]
+    }
+]

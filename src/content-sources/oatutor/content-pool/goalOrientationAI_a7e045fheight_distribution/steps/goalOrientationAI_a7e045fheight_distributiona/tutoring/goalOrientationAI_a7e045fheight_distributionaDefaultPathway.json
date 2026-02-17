@@ -1,0 +1,58 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fheight_distributiona-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Table",
+        "text": "First, identify the frequency of heights within the range $$67.95$$ to $$71.95$$ inches from the table.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fheight_distributiona-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fheight_distributiona-h1"
+        ],
+        "title": "Calculate Total Frequency",
+        "text": "Add up all the frequencies in the table to find the total number of observations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fheight_distributiona-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.29$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fheight_distributiona-h2"
+        ],
+        "title": "Find Frequency in Range",
+        "text": "What is the frequency of heights between $$67.95$$ and $$71.95$$ inches?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fheight_distributiona-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$29$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fheight_distributiona-h3"
+        ],
+        "title": "Calculate Percentage",
+        "text": "Divide the frequency of heights in the range by the total frequency and multiply by $$100$$ to get the percentage.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

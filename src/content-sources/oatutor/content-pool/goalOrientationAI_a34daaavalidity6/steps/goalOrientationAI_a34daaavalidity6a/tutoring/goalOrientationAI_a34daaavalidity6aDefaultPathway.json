@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_a34daaavalidity6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Quality Dimensions",
+        "text": "Data quality dimensions are criteria used to assess the quality of data. Common dimensions include: $$1$$. Completeness: Ensures all required data is present. $$2$$. Uniqueness: Ensures no duplicate records exist. $$3$$. Consistency: Ensures data is consistent across different datasets. $$4$$. Validity: Ensures data conforms to defined formats or rules.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a34daaavalidity6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a34daaavalidity6a-h1"
+        ],
+        "title": "Identifying the Issue",
+        "text": "The issue here is that the age recorded is $$150$$ years, which is highly unlikely for a human. This suggests that the data does not conform to realistic or expected values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a34daaavalidity6a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Validity"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a34daaavalidity6a-h2"
+        ],
+        "title": "Choosing the Dimension",
+        "text": "The issue with the age being recorded as $$150$$ years relates to which data quality dimension?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Completeness",
+            "Uniqueness",
+            "Consistency",
+            "Validity"
+        ]
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "id": "goalOrientationAI_ad126fescaling_visualizations1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider the Scale",
+        "text": "Ensure the scale is neither too large nor too small for the data range.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad126fescaling_visualizations1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad126fescaling_visualizations1a-h1"
+        ],
+        "title": "Check Interval Consistency",
+        "text": "Use consistent intervals to maintain clarity across the graph.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad126fescaling_visualizations1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad126fescaling_visualizations1a-h2"
+        ],
+        "title": "Avoid Random Intervals",
+        "text": "Random intervals can mislead the viewer and distort data representation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad126fescaling_visualizations1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad126fescaling_visualizations1a-h3"
+        ],
+        "title": "Balance Scale Size",
+        "text": "A balanced scale size ensures that all data points are visible and comparable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

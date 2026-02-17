@@ -1,0 +1,41 @@
+[
+    {
+        "id": "goalOrientationAI_af62676book_club_analysisa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Percentages",
+        "text": "To determine if 40% of the members chose mystery, calculate the percentage of members who did so. Use the formula: (number of members who chose $$\\frac{mystery}{total}$$ number of members)*100.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676book_club_analysisa-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$40$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676book_club_analysisa-h1"
+        ],
+        "title": "Calculate the Percentage",
+        "text": "If $$20$$ out of $$50$$ members chose mystery, what percentage is that?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676book_club_analysisa-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676book_club_analysisa-h2"
+        ],
+        "title": "Compare the Calculated Percentage",
+        "text": "Compare the calculated percentage with 40% to determine if the statement is true or false.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

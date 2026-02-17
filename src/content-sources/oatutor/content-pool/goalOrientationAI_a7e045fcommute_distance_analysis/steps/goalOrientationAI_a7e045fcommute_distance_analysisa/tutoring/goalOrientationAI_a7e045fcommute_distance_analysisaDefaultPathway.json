@@ -1,0 +1,63 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fcommute_distance_analysisa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Commute Distances",
+        "text": "First, count how many people commute $$6$$ miles and how many commute $$9$$ miles.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fcommute_distance_analysisa-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$11$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fcommute_distance_analysisa-h1"
+        ],
+        "title": "Calculate the Total Commuting $$6$$ or $$9$$ miles",
+        "text": "Add the number of people commuting $$6$$ miles to those commuting $$9$$ miles.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fcommute_distance_analysisa-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$24$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fcommute_distance_analysisa-h2"
+        ],
+        "title": "Calculate the Total",
+        "text": "Now, count the total number of people in the survey",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fcommute_distance_analysisa-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{11}{24}$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fcommute_distance_analysisa-h3"
+        ],
+        "title": "Find the Fraction",
+        "text": "Divide the total number of people commuting $$6$$ or $$9$$ miles by the total number of people surveyed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

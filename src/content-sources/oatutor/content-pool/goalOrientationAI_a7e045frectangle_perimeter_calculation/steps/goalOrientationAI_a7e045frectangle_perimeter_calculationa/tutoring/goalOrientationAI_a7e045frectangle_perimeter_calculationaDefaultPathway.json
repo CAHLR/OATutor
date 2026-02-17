@@ -1,0 +1,29 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045frectangle_perimeter_calculationa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Perimeter Formula",
+        "text": "The perimeter of a rectangle is calculated by adding the lengths of all four sides. Since opposite sides of a rectangle are equal, you can use the formula: $$2\\left(length+width\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045frectangle_perimeter_calculationa-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$34$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045frectangle_perimeter_calculationa-h1"
+        ],
+        "title": "Calculate the Perimeter",
+        "text": "Substitute the given values into the formula: $$2\\left(12+5\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

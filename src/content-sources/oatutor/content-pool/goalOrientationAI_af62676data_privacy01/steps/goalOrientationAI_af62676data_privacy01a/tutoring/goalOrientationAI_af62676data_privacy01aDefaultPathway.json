@@ -1,0 +1,45 @@
+[
+    {
+        "id": "goalOrientationAI_af62676data_privacy01a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Privacy",
+        "text": "Data privacy involves protecting personal information from unauthorized access and ensuring that individuals have control over their data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676data_privacy01a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676data_privacy01a-h1"
+        ],
+        "title": "Data Governance",
+        "text": "Data governance refers to the overall management of data availability, usability, integrity, and security in an organization.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676data_privacy01a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676data_privacy01a-h2"
+        ],
+        "title": "True or False Question",
+        "text": "Is data privacy a fundamental aspect of data governance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

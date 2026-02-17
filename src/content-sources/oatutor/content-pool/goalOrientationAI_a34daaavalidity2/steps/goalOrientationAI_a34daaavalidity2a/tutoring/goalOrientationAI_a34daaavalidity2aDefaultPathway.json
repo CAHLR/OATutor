@@ -1,0 +1,46 @@
+[
+    {
+        "id": "goalOrientationAI_a34daaavalidity2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Integrity",
+        "text": "Data integrity refers to the accuracy and consistency of data over its lifecycle. It is a critical aspect of the design, implementation, and usage of any system that stores, processes, or retrieves data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a34daaavalidity2a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Performing data validation checks to ensure data is accurate and complete."
+        ],
+        "dependencies": [
+            "goalOrientationAI_a34daaavalidity2a-h1"
+        ],
+        "title": "Identifying Data Validation Steps",
+        "text": "What is one of the first steps you should take to ensure data validity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Ignoring data errors",
+            "Checking the data to ensure it is accurate and complete",
+            "Assuming data is valid if it looks correct"
+        ]
+    },
+    {
+        "id": "goalOrientationAI_a34daaavalidity2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a34daaavalidity2a-h2"
+        ],
+        "title": "Data Validation Techniques",
+        "text": "Data validation techniques include checking for data type consistency, range checks, and format checks. These techniques help ensure that the data is accurate and reliable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

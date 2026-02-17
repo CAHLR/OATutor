@@ -1,0 +1,57 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266ethics22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Centralized Tagging",
+        "text": "Centralized tagging involves managing tags from a single point, which can streamline processes but may also lead to bottlenecks.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics22a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics22a-h1"
+        ],
+        "title": "Advantages of Centralized Tagging",
+        "text": "Centralized tagging can ensure consistency and uniformity across the organization, making data easier to manage and search.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics22a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics22a-h1"
+        ],
+        "title": "Disadvantages of Centralized Tagging",
+        "text": "It can create a single point of failure and may slow down processes if the central system becomes overloaded.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics22a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics22a-h2"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Considering both the advantages and disadvantages, is the statement about centralized tagging true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fcity_park_cleanupa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Population",
+        "text": "The population refers to the entire group of individuals that the manager is interested in studying or gathering data from.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fcity_park_cleanupa-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All volunteers participating in the park cleanup event"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fcity_park_cleanupa-h1"
+        ],
+        "title": "Identifying the Population",
+        "text": "Consider who is directly involved in the park cleanup event.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "All park visitors",
+            "All volunteers participating in the park cleanup event",
+            "All city park managers",
+            "All local residents"
+        ]
+    }
+]

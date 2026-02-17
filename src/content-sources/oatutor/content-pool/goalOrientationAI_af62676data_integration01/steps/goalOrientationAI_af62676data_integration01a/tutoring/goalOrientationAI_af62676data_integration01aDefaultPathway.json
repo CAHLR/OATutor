@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_af62676data_integration01a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Integration",
+        "text": "Data integration involves combining data from different sources to provide a unified view. It is essential for businesses to make informed decisions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676data_integration01a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676data_integration01a-h1"
+        ],
+        "title": "Key Components",
+        "text": "The key components of a data integration system include data sources, transformation tools, and data storage solutions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676data_integration01a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "all of these answers"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676data_integration01a-h2"
+        ],
+        "title": "Identifying Components",
+        "text": "Which of the following is a component of a data integration system?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Data sources that provide raw data",
+            "Transformation tools that clean and format data",
+            "Data storage solutions for processed data",
+            "all of these answers"
+        ]
+    }
+]

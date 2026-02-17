@@ -1,0 +1,48 @@
+[
+    {
+        "id": "goalOrientationAI_af68b3adataScienceTerms10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand the Outcome Type",
+        "text": "The method in question is used to predict a continuous outcome variable. Continuous variables can take any value within a range, such as height, weight, or temperature.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af68b3adataScienceTerms10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af68b3adataScienceTerms10a-h1"
+        ],
+        "title": "Identify the Method Type",
+        "text": "The method used for predicting continuous outcomes is typically a type of regression analysis. Regression analysis helps in understanding the relationship between dependent and independent variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af68b3adataScienceTerms10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af68b3adataScienceTerms10a-h2"
+        ],
+        "title": "Differentiate Between Regression Types",
+        "text": "Linear regression is used for predicting continuous outcomes, while logistic regression is used for predicting categorical outcomes of either one or the other.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af68b3adataScienceTerms10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af68b3adataScienceTerms10a-h3"
+        ],
+        "title": "Categorical Classifications",
+        "text": "Clustering and decision trees are not primarily used for predicting continuous outcomes, and are more commonly used for prediction of categorical variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

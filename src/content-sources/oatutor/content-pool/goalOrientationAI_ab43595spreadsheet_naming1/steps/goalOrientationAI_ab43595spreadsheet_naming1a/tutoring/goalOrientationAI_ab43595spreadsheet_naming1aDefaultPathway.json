@@ -1,0 +1,83 @@
+[
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_naming1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider the Purpose",
+        "text": "Think about what the spreadsheet is used for and reflect that in the name.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_naming1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_naming1a-h1"
+        ],
+        "title": "Avoid Randomness",
+        "text": "Avoid using random characters or numbers that do not convey any meaning.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_naming1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_naming1a-h2"
+        ],
+        "title": "Use Conciseness",
+        "text": "Keep the name concise to ensure it is easy to read and understand.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_naming1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_naming1a-h3"
+        ],
+        "title": "Descriptive Naming",
+        "text": "Include key information in the name to describe the content or purpose of the spreadsheet.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_naming1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_naming1a-h4"
+        ],
+        "title": "Avoid Spaces",
+        "text": "Avoid using spaces between words to prevent issues with file compatibility, and instead use dashes or underscores instead to separate words.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_naming1a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Use descriptive and concise names"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_naming1a-h5"
+        ],
+        "title": "Combine Best Practices",
+        "text": "Combine descriptive and concise elements without using spaces or random characters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Use descriptive and concise names",
+            "Use random characters and numbers",
+            "Use only lowercase letters",
+            "Use spaces between words"
+        ]
+    }
+]

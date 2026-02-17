@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_af62676dataEncryption01a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Encryption",
+        "text": "Encryption is a method of converting data into a code to prevent unauthorized access. It ensures that only authorized parties can read the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676dataEncryption01a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676dataEncryption01a-h1"
+        ],
+        "title": "Common Encryption Methods",
+        "text": "Some common encryption methods include AES, RSA, and DES. Each has its own strengths and use cases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676dataEncryption01a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "AES (Advanced Encryption Standard)"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676dataEncryption01a-h2"
+        ],
+        "title": "Choosing the Right Method",
+        "text": "AES is a widely used encryption standard known for its speed and security. It is often used to secure sensitive data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "AES (Advanced Encryption Standard)",
+            "RSA $$(Rivest-Shamir-Adleman)$$",
+            "DES (Data Encryption Standard)",
+            "All of the above"
+        ]
+    }
+]

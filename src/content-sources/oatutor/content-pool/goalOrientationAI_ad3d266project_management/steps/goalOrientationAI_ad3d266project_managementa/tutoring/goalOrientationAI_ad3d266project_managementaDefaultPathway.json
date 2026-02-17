@@ -1,0 +1,46 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266project_managementa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Marketing's Role",
+        "text": "The marketing team is crucial in ensuring the event reaches the right audience. They use various channels to create awareness and excitement.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266project_managementa-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266project_managementa-h1"
+        ],
+        "title": "Key Responsibilities",
+        "text": "Think about what marketing typically does for events. They often handle advertising, social media, and press releases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266project_managementa-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Promote the event"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266project_managementa-h2"
+        ],
+        "title": "Choosing the Right Role",
+        "text": "What is the primary function of the marketing team in this context?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Promote the event",
+            "Handle logistics",
+            "Provide technical support"
+        ]
+    }
+]

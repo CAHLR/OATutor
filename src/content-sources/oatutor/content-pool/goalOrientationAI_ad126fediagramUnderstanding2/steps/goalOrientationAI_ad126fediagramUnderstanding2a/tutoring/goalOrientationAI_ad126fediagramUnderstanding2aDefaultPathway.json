@@ -1,0 +1,36 @@
+[
+    {
+        "id": "goalOrientationAI_ad126fediagramUnderstanding2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Purpose",
+        "text": "Consider what type of diagram is used to show relationships and levels of a hierarchy within an organization.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad126fediagramUnderstanding2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad126fediagramUnderstanding2a-h1"
+        ],
+        "title": "Distribution Charts",
+        "text": "Pie charts are meant to display the distribution of categorical variables, and a histogram is the distribution of one particular variable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad126fediagramUnderstanding2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad126fediagramUnderstanding2a-h2"
+        ],
+        "title": "Chronological Charts",
+        "text": "A flowchart shows a chronological path of a process, and do not usually have multilayered structures.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

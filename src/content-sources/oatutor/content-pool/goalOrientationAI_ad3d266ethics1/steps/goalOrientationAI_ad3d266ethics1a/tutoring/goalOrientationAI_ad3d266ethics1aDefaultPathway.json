@@ -1,0 +1,65 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266ethics1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding CCPA",
+        "text": "The California Consumer Privacy Act (CCPA) is a state statute intended to enhance privacy rights and consumer protection for residents of California, USA.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics1a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "To enhance privacy rights and consumer protection for California residents."
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics1a-h1"
+        ],
+        "title": "CCPA's Purpose",
+        "text": "What is the primary purpose of the CCPA?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "To enhance privacy rights and consumer protection for California residents.",
+            "To increase business profits.",
+            "To reduce government regulations."
+        ]
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics1a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consumer Rights under CCPA",
+        "text": "The CCPA provides consumers with rights such as the right to know what personal data is being collected, the right to delete personal data, and the right to opt-out of the sale of personal data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics1a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics1a-h3"
+        ],
+        "title": "True or False: CCPA Rights",
+        "text": "The CCPA allows consumers to know what personal data is collected about them.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

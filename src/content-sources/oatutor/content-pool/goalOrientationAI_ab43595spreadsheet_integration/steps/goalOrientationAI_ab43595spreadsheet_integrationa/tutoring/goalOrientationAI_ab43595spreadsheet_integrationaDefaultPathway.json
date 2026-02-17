@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_integrationa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Spreadsheet Formulas",
+        "text": "Formulas in spreadsheets are used to perform calculations and automate data processing. They can reference other cells to dynamically update results.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_integrationa-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_integrationa-h1"
+        ],
+        "title": "Common Uses of Formulas",
+        "text": "Formulas are often used to sum up values, calculate averages, or perform complex mathematical operations based on cell data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_integrationa-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "To automatically calculate values based on other cells' data."
+        ],
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_integrationa-h2"
+        ],
+        "title": "Identifying the Correct Use of Formulas",
+        "text": "Which of the following is a correct use of a formula in a spreadsheet?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "To automatically calculate values based on other cells' data.",
+            "To change the font style of the text in the spreadsheet.",
+            "To insert a new image into the spreadsheet.",
+            "To adjust the column width of the spreadsheet."
+        ]
+    }
+]

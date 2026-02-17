@@ -1,0 +1,59 @@
+[
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_formula_usagea-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Function",
+        "text": "The function used to add a range of cells in Google Sheets starts with 'SUM'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_formula_usagea-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_formula_usagea-h1"
+        ],
+        "title": "Recognize the Range",
+        "text": "The range of cells is specified using a colon between the starting and ending cell references.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_formula_usagea-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_formula_usagea-h2"
+        ],
+        "title": "Correct Syntax",
+        "text": "Ensure the formula is written in uppercase letters for consistency and clarity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_formula_usagea-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "SUM(A1:A10)"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_formula_usagea-h3"
+        ],
+        "title": "Complete the Formula",
+        "text": "Combine the function and the range to form the complete formula.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "SUM(A1:A10)",
+            "ADD(A1:A10)",
+            "TOTAL(A1:A10)",
+            "COMBINE(A1:A10)"
+        ]
+    }
+]

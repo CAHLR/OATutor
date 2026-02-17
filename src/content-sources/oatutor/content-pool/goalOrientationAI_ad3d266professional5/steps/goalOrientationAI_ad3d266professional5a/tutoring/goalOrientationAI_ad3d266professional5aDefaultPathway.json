@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266professional5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Social Media's Role",
+        "text": "Social media platforms are increasingly being used for more than just social interactions. They serve as vital tools for information dissemination.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266professional5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266professional5a-h1"
+        ],
+        "title": "Information Sharing",
+        "text": "Consider how social media can quickly spread information to a large audience, especially during emergencies.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266professional5a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "They're used to update communities about natural disasters"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266professional5a-h2"
+        ],
+        "title": "Identifying the Correct Use",
+        "text": "Which of the following is a way social media is used as a trusted source of information?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "They're used to update communities about natural disasters",
+            "They're used to connect classmates and coworkers",
+            "They're used to share personal videos",
+            "They're used by organizations to push a political agenda"
+        ]
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "id": "goalOrientationAI_ad5badfsql7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL Aggregate Functions",
+        "text": "In SQL, aggregate functions are used to perform calculations on a set of values and return a single value. Common aggregate functions include SUM(), AVG(), MIN(), MAX(), and COUNT().",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad5badfsql7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad5badfsql7a-h1"
+        ],
+        "title": "Using MIN() and MAX() Functions",
+        "text": "The MIN() function returns the smallest value in a column, while the MAX() function returns the largest value. These functions are often used to find the range of values in a column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad5badfsql7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$MAX(Price)-MIN(Price)$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad5badfsql7a-h2"
+        ],
+        "title": "Calculating the Range of Values",
+        "text": "To find the range of values in a column, you can subtract the result of the MIN() function from the result of the MAX() function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad5badfsql7a-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "SQL Query Structure",
+        "text": "A basic SQL query structure includes SELECT, FROM, and WHERE clauses. The SELECT clause specifies the columns to retrieve, FROM specifies the table, and WHERE filters the results.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad5badfsql7a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "SELECT $$MAX(Price)-MIN(Price)$$ AS PriceRange FROM Products;"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad5badfsql7a-h3"
+        ],
+        "title": "Writing a SQL Query to Find the Range",
+        "text": "How would you write a SQL query to find the range of values in the 'Price' column of a table named 'Products'?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

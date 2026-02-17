@@ -1,0 +1,31 @@
+[
+    {
+        "id": "goalOrientationAI_a602046intersql10b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a602046intersql10a-h1"
+        ],
+        "title": "SQL SELECT Statement",
+        "text": "The SELECT statement is used to select data from a database. The data returned is stored in a result table, sometimes called the result set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql10b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "SELECT DISTINCT name FROM employees;"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a602046intersql10b-h2"
+        ],
+        "title": "Correct Query",
+        "text": "How would you write a query to select unique values from the 'name' column in a table called 'employees'?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266professional2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider Alternative Data Sources",
+        "text": "If direct data on product lifetime and repair incidents isn't available, think about what other data might indirectly provide similar insights.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266professional2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266professional2a-h1"
+        ],
+        "title": "Think About Product Usage",
+        "text": "Consider data that reflects how often a product might need replacement or repair.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266professional2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Sales of replacement part"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266professional2a-h2"
+        ],
+        "title": "Identify a Substitute Data Source",
+        "text": "What data could indicate the frequency of product repairs or replacements?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "YouTube videos demonstrating product use",
+            "Sales of replacement parts",
+            "Technician training and availability",
+            "New product sales"
+        ]
+    }
+]

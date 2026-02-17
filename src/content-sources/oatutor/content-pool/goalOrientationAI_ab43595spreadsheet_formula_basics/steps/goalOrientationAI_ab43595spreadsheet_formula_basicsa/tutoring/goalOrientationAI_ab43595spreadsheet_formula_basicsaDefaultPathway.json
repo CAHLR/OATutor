@@ -1,0 +1,71 @@
+[
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_formula_basicsa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Operation",
+        "text": "The task involves adding two cell values together.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_formula_basicsa-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_formula_basicsa-h1"
+        ],
+        "title": "Locate the Cells",
+        "text": "The cells involved in the operation are A1 and A2.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_formula_basicsa-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_formula_basicsa-h2"
+        ],
+        "title": "Use the Correct Operator",
+        "text": "The plus sign (+) is used for addition in formulas.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_formula_basicsa-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_formula_basicsa-h3"
+        ],
+        "title": "Construct the Formula",
+        "text": "Combine the cell references with the addition operator to form the formula.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_formula_basicsa-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A1+A2$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_formula_basicsa-h4"
+        ],
+        "title": "Complete the Formula",
+        "text": "Select the option that add the values in cells A1 and A2.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$A1+A2$$",
+            "SUM(A1,A2)",
+            "ADD(A1,A2)",
+            "$$A1-A2$$"
+        ]
+    }
+]

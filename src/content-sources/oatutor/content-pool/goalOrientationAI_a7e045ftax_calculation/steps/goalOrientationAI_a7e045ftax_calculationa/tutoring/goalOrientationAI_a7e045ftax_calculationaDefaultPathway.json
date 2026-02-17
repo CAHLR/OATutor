@@ -1,0 +1,46 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045ftax_calculationa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Sales Tax",
+        "text": "To find the total amount including tax, you need to calculate 8% of the original bill and add it to the bill.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ftax_calculationa-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045ftax_calculationa-h1"
+        ],
+        "title": "Calculate 8% of $50",
+        "text": "First, find 8% of $50. Use the formula: $$\\frac{percentage}{100}$$ * original amount.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ftax_calculationa-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$54$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045ftax_calculationa-h2"
+        ],
+        "title": "Add the Tax to the Original Bill",
+        "text": "Now, add the calculated tax to the original bill amount to find the total amount to be paid.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

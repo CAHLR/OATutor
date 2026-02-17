@@ -1,0 +1,46 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266teamwork_initiativea-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Role",
+        "text": "Consider the expertise of the IT colleague and how it can be applied to the project.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266teamwork_initiativea-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266teamwork_initiativea-h1"
+        ],
+        "title": "Technical Expertise",
+        "text": "The IT colleague is likely to have skills in managing and implementing technology solutions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266teamwork_initiativea-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Provide technical support"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266teamwork_initiativea-h2"
+        ],
+        "title": "Role Identification",
+        "text": "What specific role does the IT colleague play in implementing the communication tool?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Provide technical support",
+            "Lead the project",
+            "Manage team schedules"
+        ]
+    }
+]

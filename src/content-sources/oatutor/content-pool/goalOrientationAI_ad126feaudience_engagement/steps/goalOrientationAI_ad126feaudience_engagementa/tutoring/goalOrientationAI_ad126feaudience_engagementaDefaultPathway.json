@@ -1,0 +1,36 @@
+[
+    {
+        "id": "goalOrientationAI_ad126feaudience_engagementa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider Audience Interaction",
+        "text": "Engaging an audience often involves making them part of the presentation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad126feaudience_engagementa-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad126feaudience_engagementa-h1"
+        ],
+        "title": "Think About Presentation Style",
+        "text": "A monotone voice can make a presentation less engaging.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad126feaudience_engagementa-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad126feaudience_engagementa-h2"
+        ],
+        "title": "Evaluate the Use of Slides",
+        "text": "Just reading from the slides does not provide an extra layer of engagement as a presenter and will make the presentation uninteresting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

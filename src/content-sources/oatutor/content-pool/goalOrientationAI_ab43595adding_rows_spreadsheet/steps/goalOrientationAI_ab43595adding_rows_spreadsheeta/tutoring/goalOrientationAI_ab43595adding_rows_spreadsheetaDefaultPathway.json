@@ -1,0 +1,71 @@
+[
+    {
+        "id": "goalOrientationAI_ab43595adding_rows_spreadsheeta-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Need for More Data",
+        "text": "Consider if there is new information that needs to be added to the spreadsheet.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595adding_rows_spreadsheeta-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595adding_rows_spreadsheeta-h1"
+        ],
+        "title": "Check Existing Rows",
+        "text": "Look at the current rows to see if they can accommodate the new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595adding_rows_spreadsheeta-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595adding_rows_spreadsheeta-h2"
+        ],
+        "title": "Evaluate Data Fit",
+        "text": "Determine if the new data fits within the existing structure of the spreadsheet.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595adding_rows_spreadsheeta-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595adding_rows_spreadsheeta-h3"
+        ],
+        "title": "Consider Data Organization",
+        "text": "Think about how the new data will be organized in relation to the existing data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595adding_rows_spreadsheeta-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "When you need to include additional data that doesn't fit in the existing rows."
+        ],
+        "dependencies": [
+            "goalOrientationAI_ab43595adding_rows_spreadsheeta-h4"
+        ],
+        "title": "Decide on Adding a Row",
+        "text": "You should add a new row to your spreadsheet $$___$$",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "When you need to include additional data that doesn't fit in the existing rows.",
+            "When you want to change the color of the spreadsheet.",
+            "When you want to delete data from the spreadsheet.",
+            "When you want to print the spreadsheet."
+        ]
+    }
+]

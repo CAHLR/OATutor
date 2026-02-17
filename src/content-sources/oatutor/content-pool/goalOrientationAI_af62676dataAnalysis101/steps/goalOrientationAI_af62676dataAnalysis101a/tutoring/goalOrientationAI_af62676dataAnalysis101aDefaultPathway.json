@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_af62676dataAnalysis101a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Measures of Central Tendency",
+        "text": "Measures of central tendency describe the center of a data set. Common examples include mean, median, and mode.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676dataAnalysis101a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676dataAnalysis101a-h1"
+        ],
+        "title": "Identifying the Odd One Out",
+        "text": "Think about which option does not describe the center of a data set but rather the spread or range of values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676dataAnalysis101a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "range"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676dataAnalysis101a-h2"
+        ],
+        "title": "Defining the Range",
+        "text": "The range is the difference between the highest and lowest values in a data set. It measures the spread, not the center.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "mean",
+            "median",
+            "mode",
+            "range"
+        ]
+    }
+]

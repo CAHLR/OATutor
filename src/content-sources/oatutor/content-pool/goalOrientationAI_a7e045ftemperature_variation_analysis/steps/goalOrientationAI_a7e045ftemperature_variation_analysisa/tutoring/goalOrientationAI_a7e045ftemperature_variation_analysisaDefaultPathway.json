@@ -1,0 +1,53 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045ftemperature_variation_analysisa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify Initial and Final Speeds",
+        "text": "First, identify the initial speed and the final speed of the car.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ftemperature_variation_analysisa-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045ftemperature_variation_analysisa-h1"
+        ],
+        "title": "Calculate the Change in Speed",
+        "text": "Subtract the initial speed from the final speed to find the change in speed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ftemperature_variation_analysisa-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045ftemperature_variation_analysisa-h2"
+        ],
+        "title": "Use the Percentage Increase Formula",
+        "text": "The formula for percentage increase is: (final speed-initial $$\\frac{speed}{initial}$$ speed)∗100.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ftemperature_variation_analysisa-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$25$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045ftemperature_variation_analysisa-h3"
+        ],
+        "title": "Calculate the Percentage Increase",
+        "text": "Using the formula, calculate the percentage increase in speed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

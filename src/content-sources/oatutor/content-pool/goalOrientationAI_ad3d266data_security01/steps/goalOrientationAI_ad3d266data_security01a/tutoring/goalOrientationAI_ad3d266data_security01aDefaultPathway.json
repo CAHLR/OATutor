@@ -1,0 +1,34 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266data_security01a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Encryption",
+        "text": "Encryption is a method used to protect sensitive data by converting it into a format that is unreadable without a special key.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266data_security01a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "by converting data into a coded format that can only be read by someone with the decryption key"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266data_security01a-h1"
+        ],
+        "title": "How Encryption Works",
+        "text": "Encryption protects sensitive information by converting data into a coded format that can only be read by someone with the decryption key.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "by converting data into a coded format that can only be read by someone with the decryption key",
+            "by making data invisible to everyone",
+            "by storing data in a physical vault"
+        ]
+    }
+]

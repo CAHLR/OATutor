@@ -1,0 +1,81 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266dataSecurity01a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Key Components of Data Security",
+        "text": "Consider the essential elements that protect data from unauthorized access and ensure its integrity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266dataSecurity01a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "encryption"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266dataSecurity01a-h1"
+        ],
+        "title": "Encryption",
+        "text": "Encryption is a method of converting data into a code to prevent unauthorized access. It is crucial for protecting sensitive information.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "encryption, access controls, and regular audits",
+            "encryption only",
+            "access controls only",
+            "regular audits only"
+        ]
+    },
+    {
+        "id": "goalOrientationAI_ad3d266dataSecurity01a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "access controls"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266dataSecurity01a-h1"
+        ],
+        "title": "Access Controls",
+        "text": "Access controls are mechanisms that restrict access to data based on user roles and permissions. They help ensure that only authorized users can access certain data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "encryption, access controls, and regular audits",
+            "encryption only",
+            "access controls only",
+            "regular audits only"
+        ]
+    },
+    {
+        "id": "goalOrientationAI_ad3d266dataSecurity01a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "regular audits"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266dataSecurity01a-h1"
+        ],
+        "title": "Regular Audits",
+        "text": "Regular audits involve systematically reviewing and assessing data security measures to ensure compliance and identify potential vulnerabilities.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "encryption, access controls, and regular audits",
+            "encryption only",
+            "access controls only",
+            "regular audits only"
+        ]
+    }
+]

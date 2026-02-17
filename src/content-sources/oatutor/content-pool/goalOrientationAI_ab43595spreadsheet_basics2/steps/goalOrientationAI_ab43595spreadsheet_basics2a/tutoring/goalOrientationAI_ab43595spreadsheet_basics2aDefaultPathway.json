@@ -1,0 +1,71 @@
+[
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_basics2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the AVERAGE Function",
+        "text": "The AVERAGE function calculates the mean value of a set of numbers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_basics2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_basics2a-h1"
+        ],
+        "title": "Identifying the Purpose",
+        "text": "The primary purpose of the AVERAGE function is not to sum or count numbers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_basics2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_basics2a-h2"
+        ],
+        "title": "Focus on Calculation",
+        "text": "The AVERAGE function divides the sum of numbers by the count of numbers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_basics2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_basics2a-h3"
+        ],
+        "title": "Eliminating Options",
+        "text": "The AVERAGE function does not find the maximum value in a range.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_basics2a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "To find the average of a range of numbers"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_basics2a-h4"
+        ],
+        "title": "Choosing the Correct Answer",
+        "text": "Select the option that describes finding the mean of numbers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "To add up a range of numbers",
+            "To find the average of a range of numbers",
+            "To count the number of cells in a range",
+            "To find the maximum value in a range"
+        ]
+    }
+]

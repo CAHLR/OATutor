@@ -1,0 +1,103 @@
+[
+    {
+        "id": "goalOrientationAI_af62676foundational5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Relative Frequency",
+        "text": "Relative frequency is calculated by dividing the frequency of a data point by the total number of data points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676foundational5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676foundational5a-h1"
+        ],
+        "title": "Calculate Relative Frequency for $$3$$ Miles",
+        "text": "The frequency for $$3$$ miles is $$3$$. Calculate the relative frequency by dividing $$3$$ by the total number of people surveyed, which is $$19$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676foundational5a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{19}$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676foundational5a-h2"
+        ],
+        "title": "Compute the Relative Frequency",
+        "text": "What is $$3$$ divided by 19?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676foundational5a-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676foundational5a-h3"
+        ],
+        "title": "Convert to Percentage",
+        "text": "To convert a fraction to a percentage, multiply by $$100$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676foundational5a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$15.79$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676foundational5a-h4"
+        ],
+        "title": "Calculate the Percentage",
+        "text": "What is $$100\\frac{3}{19}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676foundational5a-h6",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676foundational5a-h5"
+        ],
+        "title": "Compare with 3%",
+        "text": "Compare the calculated percentage with 3%.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676foundational5a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676foundational5a-h6"
+        ],
+        "title": "Final Decision",
+        "text": "Is $$15.79\\%$$ equal to 3%?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "True",
+            "False"
+        ]
+    }
+]

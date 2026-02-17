@@ -1,0 +1,71 @@
+[
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_filtering_basicsa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Purpose of Filters",
+        "text": "Filters are used to display only the data that meets specific conditions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_filtering_basicsa-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_filtering_basicsa-h1"
+        ],
+        "title": "Temporary View",
+        "text": "Using a filter allows a temporary view of the data without altering the original dataset.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_filtering_basicsa-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_filtering_basicsa-h2"
+        ],
+        "title": "Criteria-Based Selection",
+        "text": "Filters help in selecting data based on certain criteria, such as dates or numerical values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_filtering_basicsa-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_filtering_basicsa-h3"
+        ],
+        "title": "Non-Destructive Action",
+        "text": "Applying a filter does not delete or modify the data permanently.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_filtering_basicsa-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "To view only specific data that meets certain criteria"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_filtering_basicsa-h4"
+        ],
+        "title": "Correct Use of Filters",
+        "text": "Filters are used $$___$$",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "To view only specific data that meets certain criteria",
+            "To permanently delete unwanted data",
+            "To change the format of the entire spreadsheet",
+            "To create a backup of the spreadsheet"
+        ]
+    }
+]

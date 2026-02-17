@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fdata_analysis2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Concept",
+        "text": "In statistics, a statistic is a numerical value that represents a characteristic of a sample. It is used to estimate the corresponding parameter of the population.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fdata_analysis2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fdata_analysis2a-h1"
+        ],
+        "title": "Sample vs. Population",
+        "text": "A sample is a subset of the population, and a statistic is a measure that describes this sample. The average score of the $$10$$ students is a statistic because it describes the sample, not the entire class.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fdata_analysis2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Statistic"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fdata_analysis2a-h2"
+        ],
+        "title": "Identifying the Correct Term",
+        "text": "Given that the average score is calculated from a sample of $$10$$ students, what is this an example of?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Variable",
+            "Population",
+            "Statistic",
+            "Data"
+        ]
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_ad5badfsql5c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL String Functions",
+        "text": "SQL string functions are used to manipulate and analyze string data. Common functions include:\\n\\n- **CONCAT()**: Combines two or more strings into one.\\n- **LENGTH()**: Returns the length of a string.\\n- **SUBSTRING()**: Extracts a part of a string.\\n\\nThese functions are essential for handling text data in SQL databases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad5badfsql5c-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "CONCAT(), LENGTH(), and SUBSTRING()"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad5badfsql5c-h1"
+        ],
+        "title": "Identify SQL String Functions",
+        "text": "Which of the following are valid SQL string functions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "CONCAT(), LENGTH(), and SUBSTRING()",
+            "SUM(), AVG(), and COUNT()",
+            "DATE(), TIME(), and NOW()",
+            "ROUND(), FLOOR(), and CEIL()"
+        ]
+    }
+]

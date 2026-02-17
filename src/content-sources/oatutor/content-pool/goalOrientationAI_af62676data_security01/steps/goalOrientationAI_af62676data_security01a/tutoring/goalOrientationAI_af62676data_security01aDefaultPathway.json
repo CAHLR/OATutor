@@ -1,0 +1,34 @@
+[
+    {
+        "id": "goalOrientationAI_af62676data_security01a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Encryption",
+        "text": "Encryption is a method used to protect sensitive information by converting it into a code. This ensures that only authorized parties can access the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676data_security01a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "by converting data into a code to prevent unauthorized access"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676data_security01a-h1"
+        ],
+        "title": "How Encryption Works",
+        "text": "Encryption protects sensitive information by converting data into a code to prevent unauthorized access.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "by converting data into a code to prevent unauthorized access",
+            "by making data visible to everyone",
+            "by deleting data permanently"
+        ]
+    }
+]

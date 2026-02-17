@@ -1,0 +1,57 @@
+[
+    {
+        "id": "goalOrientationAI_ad5badfsql1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Date Filtering",
+        "text": "In SQL, to filter records based on a date, you can use the WHERE clause with a comparison operator. Ensure the date is in the correct format, typically 'YYYY-MM-DD'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad5badfsql1a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Combining Conditions",
+        "text": "To apply multiple conditions in SQL, use the AND or OR operators. AND requires both conditions to be true, while OR requires at least one condition to be true.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad5badfsql1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad5badfsql1a-h2"
+        ],
+        "title": "Using the DATE Function",
+        "text": "The DATE function in SQL is used to extract the date part from a datetime expression. This can be useful when comparing dates.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad5badfsql1a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "WHERE DATE(OrderDate)>'2020-03-15' AND $$TotalPrice<500$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad5badfsql1a-h3"
+        ],
+        "title": "Multiple Choice Question",
+        "text": "Which of the following SQL statements correctly filters records where the 'OrderDate' is after March $$15$$, $$2020$$, and the 'TotalPrice' is less than $500?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "WHERE DATE(OrderDate)>'2020-03-15' AND $$TotalPrice<500$$",
+            "WHERE OrderDate<'2020-03-15' AND $$TotalPrice>500$$",
+            "WHERE DATE(OrderDate)<'2020-03-15' AND $$TotalPrice<500$$",
+            "WHERE DATE(OrderDate)>'2020-03-15' AND $$TotalPrice>500$$"
+        ]
+    }
+]

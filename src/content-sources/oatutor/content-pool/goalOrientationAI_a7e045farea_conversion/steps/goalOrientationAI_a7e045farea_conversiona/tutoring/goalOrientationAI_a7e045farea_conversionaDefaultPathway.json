@@ -1,0 +1,46 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045farea_conversiona-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand the Conversion Factor",
+        "text": "To convert square meters to square feet, use the conversion factor $$1$$ square meter $$=$$ $$10.7639$$ square feet.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045farea_conversiona-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$50\\times10.7639$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045farea_conversiona-h1"
+        ],
+        "title": "Calculate the Conversion",
+        "text": "Multiply $$50$$ square meters by the conversion factor $$10.7639$$ to find the area in square feet.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045farea_conversiona-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$538.195$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045farea_conversiona-h2"
+        ],
+        "title": "Simplify the Calculation",
+        "text": "Calculate the product of $$50$$ and $$10.7639$$ to get the area in square feet.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

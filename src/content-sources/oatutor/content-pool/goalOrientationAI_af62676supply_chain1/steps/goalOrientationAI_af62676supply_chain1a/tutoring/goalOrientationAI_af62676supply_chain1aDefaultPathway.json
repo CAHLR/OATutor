@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_af62676supply_chain1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding JIT",
+        "text": "Just-in-time (JIT) inventory systems focus on reducing waste and improving efficiency. What aspect of inventory management does JIT primarily target?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676supply_chain1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676supply_chain1a-h1"
+        ],
+        "title": "Cost Implications",
+        "text": "Consider how holding large amounts of inventory can impact a company's finances. What costs are associated with storing excess inventory?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676supply_chain1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "reduces inventory costs"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676supply_chain1a-h2"
+        ],
+        "title": "Primary Benefit of JIT",
+        "text": "The main advantage of a JIT system is that it minimizes the need for large storage spaces and reduces the costs associated with holding inventory. Which option reflects this benefit?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "increases production time",
+            "reduces inventory costs",
+            "increases storage space",
+            "reduces product quality"
+        ]
+    }
+]

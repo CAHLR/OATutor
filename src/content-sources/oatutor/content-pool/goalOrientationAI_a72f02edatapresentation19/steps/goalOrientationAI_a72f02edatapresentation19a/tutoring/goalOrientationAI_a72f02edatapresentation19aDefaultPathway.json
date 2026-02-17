@@ -1,0 +1,71 @@
+[
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Purpose",
+        "text": "Consider the goal of the presentation: to address an issue and propose a solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation19a-h1"
+        ],
+        "title": "Focus on Structure",
+        "text": "Look for a framework that naturally progresses from identifying a problem to suggesting actions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation19a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation19a-h2"
+        ],
+        "title": "Consider the Sequence",
+        "text": "The framework should start with a problem, then explore solutions, and end with a call to action.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation19a-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation19a-h3"
+        ],
+        "title": "Think About the Outcome",
+        "text": "The chosen framework should lead the audience to take specific actions after understanding the problem and solutions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation19a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$Problem-Solution-Action$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation19a-h4"
+        ],
+        "title": "Select the Framework",
+        "text": "Choose the framework that best fits the structure of problem, solution, and action.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Chronological",
+            "$$Problem-Solution-Action$$",
+            "Compare and Contrast",
+            "Cause and Effect"
+        ]
+    }
+]

@@ -1,0 +1,79 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266ethics11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Inventory Tags",
+        "text": "Consider how your data inventory tags can be used to manage data effectively. Think about classification, retention policies, and automated processes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics11a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Your tags are representations of your data classification"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics11a-h1"
+        ],
+        "title": "Data Classification",
+        "text": "How do your tags represent your data classification?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "You can configure your tags with retention policies so that your automated deletion programs can process deletion at scale",
+            "all of these answers",
+            "Your tags are representations of your data classification"
+        ]
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics11a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "You can configure your tags with retention policies so that your automated deletion programs can process deletion at scale"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics11a-h1"
+        ],
+        "title": "Retention Policies",
+        "text": "How can tags be configured with retention policies?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "You can configure your tags with retention policies so that your automated deletion programs can process deletion at scale",
+            "all of these answers",
+            "Your tags are representations of your data classification"
+        ]
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics11a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "all of these answers"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics11a-h2",
+            "goalOrientationAI_ad3d266ethics11a-h3"
+        ],
+        "title": "Comprehensive Understanding",
+        "text": "What is the best approach to think about your data inventory tags?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "You can configure your tags with retention policies so that your automated deletion programs can process deletion at scale",
+            "all of these answers",
+            "Your tags are representations of your data classification"
+        ]
+    }
+]

@@ -1,0 +1,53 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266research101a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Evaluate the Author",
+        "text": "Check the author's credentials to ensure they are an expert in the field. 🧑‍🎓",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266research101a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Publication Date Matters",
+        "text": "Ensure the source is up-to-date by checking the publication date. 📅",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266research101a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider the Publisher",
+        "text": "Look at the publisher's reputation to assess the source's reliability. 🏢",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266research101a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Check the author's credentials and the publication date."
+        ],
+        "dependencies": [],
+        "title": "Identify Key Practices",
+        "text": "Which of the following is a good practice to ensure a source's credibility?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Check the author's credentials and the publication date.",
+            "Rely on the number of pages in the document.",
+            "Use the source if it has a colorful design.",
+            "Trust the source if it has a lot of references."
+        ]
+    }
+]

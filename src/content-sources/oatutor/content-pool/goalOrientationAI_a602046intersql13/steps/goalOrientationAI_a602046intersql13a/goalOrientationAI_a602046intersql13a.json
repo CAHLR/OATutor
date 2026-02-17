@@ -1,0 +1,18 @@
+{
+    "id": "goalOrientationAI_a602046intersql13a",
+    "stepAnswer": [
+        "JOIN Profiles ON $$ \\cup sers.Email=Profiles.ContactEmail$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Which SQL clause will you add to this query to associate the \"Email\" field in the \"Users\" table with the \"ContactEmail\" field in the \"Profiles\" table?",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "JOIN Profiles ON $$ \\cup sers.Email=Profiles.ContactEmail$$",
+    "choices": [
+        "JOIN Profiles ON $$Email=ContactEmail$$",
+        "JOIN ON $$ \\cup sers.Email=Profiles.ContactEmail$$",
+        "JOIN Profiles ON $$ \\cup sers.Email=Profiles.ContactEmail$$",
+        "CONNECT $$ \\cup sers.Email=Profiles.ContactEmail$$"
+    ]
+}

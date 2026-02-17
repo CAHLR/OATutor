@@ -1,0 +1,18 @@
+{
+    "id": "goalOrientationAI_ad5badfsql9a",
+    "stepAnswer": [
+        "It calculates the total sales for each store in each region."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Consider the SQL query: SELECT store, region, SUM(sales) FROM $$sales_{data}$$ GROUP BY store, region. What does this query do?",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "It calculates the total sales for each store in each region",
+        "It calculates the total sales for each store in each region.",
+        "It filters out sales data for a specific region",
+        "It lists all sales data without any aggregation",
+        "It sorts the sales data by store and region"
+    ]
+}

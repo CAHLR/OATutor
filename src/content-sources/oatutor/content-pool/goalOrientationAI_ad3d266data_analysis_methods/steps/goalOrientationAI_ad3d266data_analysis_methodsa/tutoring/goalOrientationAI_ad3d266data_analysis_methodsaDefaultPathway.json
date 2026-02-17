@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266data_analysis_methodsa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider the Tools",
+        "text": "Think about the tools that are commonly used in data analysis. Are there any software or programming languages that are known for handling large datasets?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266data_analysis_methodsa-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266data_analysis_methodsa-h1"
+        ],
+        "title": "Efficiency Matters",
+        "text": "When dealing with large datasets, efficiency is key. Consider methods that can process data quickly and accurately.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266data_analysis_methodsa-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Using statistical software like R or Python."
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266data_analysis_methodsa-h2"
+        ],
+        "title": "Software Solutions",
+        "text": "Which software is known for its statistical analysis capabilities and is widely used in data science?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Using statistical software like R or Python.",
+            "Manually reviewing each data point.",
+            "Relying on intuition.",
+            "Using a basic calculator."
+        ]
+    }
+]

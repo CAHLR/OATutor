@@ -1,0 +1,87 @@
+[
+    {
+        "id": "goalOrientationAI_af62676fruitBasketAnalysisa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Proportions",
+        "text": "To determine if the proportion of apples is greater than bananas, compare the fraction of apples to the total number of fruits with the fraction of bananas to the total number of fruits.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676fruitBasketAnalysisa-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{10}{20}$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676fruitBasketAnalysisa-h1"
+        ],
+        "title": "Calculate Proportion of Apples",
+        "text": "If there are $$10$$ apples, $$5$$ bananas, and $$5$$ oranges, calculate the proportion of apples.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676fruitBasketAnalysisa-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{5}{20}$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676fruitBasketAnalysisa-h1"
+        ],
+        "title": "Calculate Proportion of Bananas",
+        "text": "Using the same numbers, calculate the proportion of bananas.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676fruitBasketAnalysisa-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676fruitBasketAnalysisa-h2"
+        ],
+        "title": "Compare Proportions",
+        "text": "Compare the simplified fractions of apples and bananas to determine which is greater.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676fruitBasketAnalysisa-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$ and $$\\frac{1}{4}$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676fruitBasketAnalysisa-h4"
+        ],
+        "title": "Simplify Fractions",
+        "text": "Simplify the fractions $$\\frac{10}{20}$$ and $$\\frac{5}{20}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676fruitBasketAnalysisa-h6",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676fruitBasketAnalysisa-h5"
+        ],
+        "title": "Final Comparison",
+        "text": "Since $$\\frac{1}{2}$$ is greater than $$\\frac{1}{4}$$, the proportion of apples is greater than the proportion of bananas.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

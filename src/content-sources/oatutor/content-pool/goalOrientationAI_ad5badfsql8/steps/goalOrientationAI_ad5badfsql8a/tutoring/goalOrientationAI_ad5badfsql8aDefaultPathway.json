@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_ad5badfsql8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL Clauses Order",
+        "text": "In SQL, the order of clauses is important. The typical order is: SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad5badfsql8a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The WHERE clause should come before the ORDER BY clause."
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad5badfsql8a-h1"
+        ],
+        "title": "Identifying the Error",
+        "text": "What is wrong with the following query? SELECT City, COUNT(*) FROM Customers ORDER BY City WHERE City LIKE 'New%'",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The WHERE clause should come before the ORDER BY clause.",
+            "The ORDER BY clause should not use a wildcard.",
+            "COUNT should be used with a specific column.",
+            "The results should be ordered by customer ID."
+        ]
+    }
+]

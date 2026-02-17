@@ -1,0 +1,45 @@
+[
+    {
+        "id": "goalOrientationAI_af62676ethics3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Classification",
+        "text": "Data classification helps in organizing data based on its sensitivity and importance. This process ensures that sensitive data is handled appropriately, which aids in compliance with regulations and enhances convenience in data management.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676ethics3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676ethics3a-h1"
+        ],
+        "title": "Compliance and Convenience",
+        "text": "By classifying data, organizations can apply the right security measures to protect sensitive information, ensuring compliance with legal requirements. At the same time, it makes data retrieval and management more efficient, adding convenience.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676ethics3a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676ethics3a-h2"
+        ],
+        "title": "True or False Question",
+        "text": "Is it true that data classification allows you to be compliant and convenient at the same time?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

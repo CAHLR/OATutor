@@ -1,0 +1,71 @@
+[
+    {
+        "id": "goalOrientationAI_ab43595using_formulas_spreadsheeta-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Function",
+        "text": "The function used to add a range of cells in Google Sheets is called SUM.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595using_formulas_spreadsheeta-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595using_formulas_spreadsheeta-h1"
+        ],
+        "title": "Understand the Syntax",
+        "text": "The syntax for the SUM function includes the function name followed by the range of cells in parentheses.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595using_formulas_spreadsheeta-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595using_formulas_spreadsheeta-h2"
+        ],
+        "title": "Recognize the Range Notation",
+        "text": "In Google Sheets, a range of cells is denoted by a colon between the first and last cell in the range.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595using_formulas_spreadsheeta-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595using_formulas_spreadsheeta-h3"
+        ],
+        "title": "Apply the Formula",
+        "text": "To add the values in cells A1, A2, and A3, use the range notation A1:A3 within the SUM function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595using_formulas_spreadsheeta-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "SUM(A1:A3)"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ab43595using_formulas_spreadsheeta-h4"
+        ],
+        "title": "Construct the Formula",
+        "text": "Combine the SUM function with the range A1:A3 to form the complete formula.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "SUM(A1:A3)",
+            "ADD(A1,A2,A3)",
+            "$$A1+A2+A3$$",
+            "TOTAL(A1:A3)"
+        ]
+    }
+]

@@ -1,0 +1,41 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fpool_volume_calculationa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Volume Calculation",
+        "text": "To find the volume of a rectangular pool, use the formula: length times width times depth.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fpool_volume_calculationa-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$100$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fpool_volume_calculationa-h1"
+        ],
+        "title": "Calculate the Volume",
+        "text": "Given the pool dimensions: $$length=10m$$, $$width=5m$$, $$depth=2m$$, calculate the volume using the formula: $$volume=length width depth$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fpool_volume_calculationa-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fpool_volume_calculationa-h2"
+        ],
+        "title": "Simplifying the Calculation",
+        "text": "Multiply the numbers: $$10\\times5\\times2$$ to find the volume.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

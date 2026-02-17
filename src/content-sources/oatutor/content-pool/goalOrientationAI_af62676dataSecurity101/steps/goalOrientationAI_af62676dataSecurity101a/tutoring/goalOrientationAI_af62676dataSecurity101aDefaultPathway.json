@@ -1,0 +1,33 @@
+[
+    {
+        "id": "goalOrientationAI_af62676dataSecurity101a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Security",
+        "text": "Data security involves protecting data from both external and internal threats. It encompasses measures to prevent unauthorized access, use, disclosure, disruption, modification, or destruction of data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676dataSecurity101a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676dataSecurity101a-h1"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Consider whether data security only focuses on external threats or if it also includes internal threats.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

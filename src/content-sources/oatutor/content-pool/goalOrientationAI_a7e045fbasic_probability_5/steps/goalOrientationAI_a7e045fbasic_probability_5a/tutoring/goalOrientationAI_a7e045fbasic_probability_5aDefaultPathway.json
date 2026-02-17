@@ -1,0 +1,75 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fbasic_probability_5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Deck",
+        "text": "A standard deck of cards has $$52$$ cards in total. It includes $$4$$ aces, $$12$$ face cards, and $$36$$ numbered cards.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fbasic_probability_5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fbasic_probability_5a-h1"
+        ],
+        "title": "Calculating Probability",
+        "text": "Probability is calculated as the number of favorable outcomes divided by the total number of possible outcomes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fbasic_probability_5a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fbasic_probability_5a-h2"
+        ],
+        "title": "Favorable Outcomes",
+        "text": "How many aces are there in the deck?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fbasic_probability_5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$52$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fbasic_probability_5a-h3"
+        ],
+        "title": "Total Outcomes",
+        "text": "What is the total number of cards in the deck?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fbasic_probability_5a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{13}$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fbasic_probability_5a-h4"
+        ],
+        "title": "Probability of Drawing an Ace",
+        "text": "Use the formula for probability: number of aces over total number of cards.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

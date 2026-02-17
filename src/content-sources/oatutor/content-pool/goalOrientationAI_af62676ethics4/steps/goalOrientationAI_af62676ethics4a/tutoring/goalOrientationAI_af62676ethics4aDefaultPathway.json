@@ -1,0 +1,58 @@
+[
+    {
+        "id": "goalOrientationAI_af62676ethics4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Privacy Laws",
+        "text": "Privacy laws are designed to protect personal information, but they can sometimes create challenges for businesses and consumers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676ethics4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676ethics4a-h1"
+        ],
+        "title": "Privacy Terms as Blockers",
+        "text": "Privacy terms can be lengthy and complex, making them seem like obstacles to users who just want to access services quickly.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676ethics4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676ethics4a-h1"
+        ],
+        "title": "Engineers and Privacy Concerns",
+        "text": "When privacy laws are too strict or unclear, it can create the impression that engineers are not prioritizing user privacy.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676ethics4a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All of these answers"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676ethics4a-h2"
+        ],
+        "title": "All of These Answers",
+        "text": "Considering the points about privacy terms and engineers, it's clear that privacy laws can create a lose-lose situation by making terms seem like blockers and suggesting engineers don't care about privacy.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "They make the privacy terms look like blockers",
+            "They create the narrative that engineers do not care about privacy",
+            "All of these answers"
+        ]
+    }
+]

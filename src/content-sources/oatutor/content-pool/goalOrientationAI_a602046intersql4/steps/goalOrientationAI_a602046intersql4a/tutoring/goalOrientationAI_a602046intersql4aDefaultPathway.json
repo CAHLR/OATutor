@@ -1,0 +1,53 @@
+[
+    {
+        "id": "goalOrientationAI_a602046intersql4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL WHERE Clause",
+        "text": "The WHERE clause in SQL is used to filter records. It is used to extract only those records that fulfill a specified condition.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a602046intersql4a-h1"
+        ],
+        "title": "Using NOT EQUAL Operator",
+        "text": "In SQL, the NOT EQUAL operator is represented by $$ \\neq $$ or <>. It is used to exclude records that match a certain condition.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "SELECT EmployeeName FROM Employees WHERE Department $$ \\neq $$ 'Sales';"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a602046intersql4a-h2"
+        ],
+        "title": "Formulating the SQL Query",
+        "text": "Write an SQL query to select all employees except those in the 'Sales' department.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a602046intersql4a-h2"
+        ],
+        "title": "Alternative SQL Syntax",
+        "text": "Another way to write the NOT EQUAL condition in SQL is using the <> operator. For example, WHERE Department <> 'Sales'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

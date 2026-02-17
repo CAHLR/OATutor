@@ -1,0 +1,53 @@
+[
+    {
+        "id": "goalOrientationAI_a602046intersql7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL Sorting",
+        "text": "In SQL, the ORDER BY clause is used to sort the result set of a query by one or more columns. By default, it sorts in ascending order.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a602046intersql7a-h1"
+        ],
+        "title": "Ascending vs Descending Order",
+        "text": "To sort in ascending order, use ASC. To sort in descending order, use DESC. If no order is specified, ASC is the default.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a602046intersql7a-h2"
+        ],
+        "title": "Common Mistakes",
+        "text": "Ensure that the ORDER BY clause is placed after the FROM clause and before any LIMIT or OFFSET clauses.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql7a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "SELECT EmployeeName (Comma) HireDate FROM Employees ORDER BY HireDate ASC;"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a602046intersql7a-h2"
+        ],
+        "title": "Constructing the SQL Query",
+        "text": "Start by selecting the columns you want to display, then use the ORDER BY clause to sort by the hire date.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

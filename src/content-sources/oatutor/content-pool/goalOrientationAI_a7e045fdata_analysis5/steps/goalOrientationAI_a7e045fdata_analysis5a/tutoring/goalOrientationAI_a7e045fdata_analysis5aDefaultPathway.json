@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fdata_analysis5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Concept",
+        "text": "In statistics, a statistic is a numerical value that represents a characteristic of a sample. It is used to estimate the corresponding parameter of the population.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fdata_analysis5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fdata_analysis5a-h1"
+        ],
+        "title": "Sample vs. Population",
+        "text": "A sample is a subset of the population, and the average height calculated from this sample is a statistic, not a parameter.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fdata_analysis5a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Statistic"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fdata_analysis5a-h2"
+        ],
+        "title": "Identifying the Correct Term",
+        "text": "What is the term for a numerical value that describes a characteristic of a sample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Variable",
+            "Population",
+            "Statistic",
+            "Data"
+        ]
+    }
+]

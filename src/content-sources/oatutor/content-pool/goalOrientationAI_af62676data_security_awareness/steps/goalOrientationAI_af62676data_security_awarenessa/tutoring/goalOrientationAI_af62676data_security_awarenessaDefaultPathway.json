@@ -1,0 +1,33 @@
+[
+    {
+        "id": "goalOrientationAI_af62676data_security_awarenessa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Why Update Passwords?",
+        "text": "Regularly updating passwords helps protect against unauthorized access by ensuring that even if a password is compromised, it won't be usable for long.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676data_security_awarenessa-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676data_security_awarenessa-h1"
+        ],
+        "title": "True or False Question",
+        "text": "Is it true that regularly updating passwords reduces the risk of unauthorized access?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,71 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fcommuteDataAnalysisa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Relative Frequency",
+        "text": "Relative frequency is the ratio of the frequency of a particular value to the total number of data points. It helps us understand how common a particular value is compared to the entire dataset.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fcommuteDataAnalysisa-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fcommuteDataAnalysisa-h1"
+        ],
+        "title": "Calculate Relative Frequencies",
+        "text": "To determine the relative frequency, divide the number of people commuting a specific distance by the total number of people surveyed. Compare these values for $$10$$ miles and $$3$$ miles.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fcommuteDataAnalysisa-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{15}{100}$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fcommuteDataAnalysisa-h2"
+        ],
+        "title": "Compute Relative Frequency for $$10$$ Miles",
+        "text": "If $$15$$ people commute $$10$$ miles and there are $$100$$ people surveyed, what is the relative frequency?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fcommuteDataAnalysisa-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{5}{100}$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fcommuteDataAnalysisa-h2"
+        ],
+        "title": "Compute Relative Frequency for $$3$$ Miles",
+        "text": "If $$5$$ people commute $$3$$ miles and there are $$100$$ people surveyed, what is the relative frequency?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fcommuteDataAnalysisa-h5",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fcommuteDataAnalysisa-h3",
+            "goalOrientationAI_a7e045fcommuteDataAnalysisa-h4"
+        ],
+        "title": "Compare the Relative Frequencies",
+        "text": "Compare the relative frequencies calculated for $$10$$ miles and $$3$$ miles to determine which is greater.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

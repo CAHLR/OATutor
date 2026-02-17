@@ -1,0 +1,46 @@
+[
+    {
+        "id": "goalOrientationAI_a602046intersql16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL COUNT and GROUP BY",
+        "text": "The COUNT function in SQL is used to count the number of rows that match a specified condition. The GROUP BY statement groups rows that have the same values into summary rows, like \"find the number of employees in each department.\"",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql16a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using GROUP BY in SQL",
+        "text": "The GROUP BY clause is used in collaboration with the SELECT statement to arrange identical data into groups. This is often used with aggregate functions like COUNT, SUM, AVG, etc.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql16a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "SELECT COUNT(EmployeeID) FROM Employees GROUP BY Department;"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a602046intersql16a-h1",
+            "goalOrientationAI_a602046intersql16a-h2"
+        ],
+        "title": "Formulate the SQL Query",
+        "text": "What is the query to find the total number of employees in each department.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "SELECT Department FROM Employees GROUP BY COUNT(EmployeeID);",
+            "SELECT COUNT(EmployeeID, Department) FROM Employees;",
+            "SELECT COUNT(EmployeeID) FROM Employees GROUP BY Department;",
+            "SELECT COUNT(EmployeeID), Department FROM Employees;"
+        ]
+    }
+]

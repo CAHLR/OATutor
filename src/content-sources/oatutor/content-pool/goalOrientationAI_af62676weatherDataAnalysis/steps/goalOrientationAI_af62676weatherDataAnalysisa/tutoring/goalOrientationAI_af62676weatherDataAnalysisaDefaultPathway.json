@@ -1,0 +1,45 @@
+[
+    {
+        "id": "goalOrientationAI_af62676weatherDataAnalysisa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Question",
+        "text": "To determine if the statement is true or false, compare the number of rainy days in March and April.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676weatherDataAnalysisa-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676weatherDataAnalysisa-h1"
+        ],
+        "title": "Check the Data",
+        "text": "Look at the data table provided by the weather station. Find the number of rainy days recorded for March and April.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676weatherDataAnalysisa-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676weatherDataAnalysisa-h2"
+        ],
+        "title": "Compare the Values",
+        "text": "If March has $$10$$ rainy days and April has $$15$$ rainy days, is March less than April?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "True",
+            "False"
+        ]
+    }
+]

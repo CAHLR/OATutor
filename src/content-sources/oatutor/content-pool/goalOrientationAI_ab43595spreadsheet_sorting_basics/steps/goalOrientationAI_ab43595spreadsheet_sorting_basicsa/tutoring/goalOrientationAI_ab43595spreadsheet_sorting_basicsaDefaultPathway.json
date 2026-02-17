@@ -1,0 +1,83 @@
+[
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_sorting_basicsa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Purpose of Sorting",
+        "text": "Sorting a column helps in arranging data systematically.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_sorting_basicsa-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_sorting_basicsa-h1"
+        ],
+        "title": "Order of Data",
+        "text": "Data can be sorted in ways such as ascending or descending order.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_sorting_basicsa-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_sorting_basicsa-h2"
+        ],
+        "title": "Organizing Information",
+        "text": "Sorting is used to organize information for better analysis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_sorting_basicsa-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_sorting_basicsa-h3"
+        ],
+        "title": "Sorting vs. Formatting",
+        "text": "Sorting does not change the appearance of the data, only its order.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_sorting_basicsa-h5",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_sorting_basicsa-h4"
+        ],
+        "title": "Sorting vs. Deleting",
+        "text": "Sorting does not remove any data from the spreadsheet.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_sorting_basicsa-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "To organize data in a specific order, such as ascending or descending."
+        ],
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_sorting_basicsa-h5"
+        ],
+        "title": "Purpose of Sorting",
+        "text": "Which of the following is the purpose of sorting a column?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "To organize data in a specific order, such as ascending or descending.",
+            "To delete duplicate entries in the column.",
+            "To change the font style of the data in the column.",
+            "To merge cells in the column."
+        ]
+    }
+]

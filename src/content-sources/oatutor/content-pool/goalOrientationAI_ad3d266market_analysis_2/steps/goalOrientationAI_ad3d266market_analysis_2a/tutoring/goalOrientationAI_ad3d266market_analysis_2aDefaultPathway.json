@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266market_analysis_2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider Alternative Data Sources",
+        "text": "Think about data sources that can provide real-time insights into customer behavior and preferences.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266market_analysis_2a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Social media $$check-ins$$ and $$location-based$$ services"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266market_analysis_2a-h1"
+        ],
+        "title": "Social Media and Location Data",
+        "text": "Consider using data from social media check-ins and location-based services as an alternative source. This can provide insights into popular areas and customer preferences.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Social media $$check-ins$$ and $$location-based$$ services",
+            "Local newspaper reviews",
+            "Employee attendance records",
+            "Weather forecasts"
+        ]
+    }
+]

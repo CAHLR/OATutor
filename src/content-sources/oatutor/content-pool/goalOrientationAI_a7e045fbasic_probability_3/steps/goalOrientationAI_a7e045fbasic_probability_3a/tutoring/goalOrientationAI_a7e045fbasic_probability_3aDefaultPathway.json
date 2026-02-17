@@ -1,0 +1,75 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fbasic_probability_3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Deck",
+        "text": "A standard deck of cards has $$52$$ cards, divided into $$4$$ suits: hearts, diamonds, clubs, and spades. Each suit has $$13$$ cards.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fbasic_probability_3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fbasic_probability_3a-h1"
+        ],
+        "title": "Calculating Probability",
+        "text": "Probability is calculated as the number of favorable outcomes divided by the total number of possible outcomes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fbasic_probability_3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$13$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fbasic_probability_3a-h2"
+        ],
+        "title": "Favorable Outcomes",
+        "text": "How many hearts are there in a deck of cards?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fbasic_probability_3a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$52$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fbasic_probability_3a-h3"
+        ],
+        "title": "Total Outcomes",
+        "text": "What is the total number of cards in the deck?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fbasic_probability_3a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{4}$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fbasic_probability_3a-h4"
+        ],
+        "title": "Calculate the Probability",
+        "text": "Use the formula: Probability $$=$$ (Number of Hearts) / (Total Number of Cards).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

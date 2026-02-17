@@ -1,0 +1,65 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266digital_securitya-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Encryption",
+        "text": "Encryption is a process that converts information or data into a code, especially to prevent unauthorized access. It's a key method for protecting sensitive information online.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266digital_securitya-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Why Not Public Wi-Fi?",
+        "text": "Public Wi-Fi is often unsecured, making it a risky choice for transmitting sensitive information. It does not protect data but rather exposes it to potential threats.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266digital_securitya-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Open Source Software",
+        "text": "While open source software can be secure, it is not inherently a method for protecting sensitive information. It refers to software with source code that anyone can inspect, modify, and enhance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266digital_securitya-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Social Media Sharing",
+        "text": "Sharing on social media is not a method for protecting information. In fact, it can lead to the exposure of sensitive data if not managed carefully.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266digital_securitya-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Encryption"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266digital_securitya-h1"
+        ],
+        "title": "Choosing the Right Method",
+        "text": "Among the options, which one is specifically designed to protect sensitive information online?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Encryption",
+            "Public $$Wi-Fi$$",
+            "Open Source Software",
+            "Social Media Sharing"
+        ]
+    }
+]

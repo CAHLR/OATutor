@@ -1,0 +1,56 @@
+[
+    {
+        "id": "goalOrientationAI_a602046intersql15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding ORDER BY Clause",
+        "text": "The ORDER BY clause is used to sort the result set of a query by one or more columns. It can sort in ascending (ASC) or descending (DESC) order.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql15a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "ORDER BY Column1 (comma) Column2"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a602046intersql15a-h1"
+        ],
+        "title": "Using ORDER BY with Multiple Columns",
+        "text": "To sort by multiple columns, list the columns separated by commas in the ORDER BY clause.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql15a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Syntax for ORDER BY",
+        "text": "The basic syntax for the ORDER BY clause is: ORDER BY $$column_{name1}$$ [ASC|DESC], $$column_{name2}$$ [ASC|DESC], ...",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql15a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "ORDER BY $$last_{name}$$ (comma) $$first_{name}$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a602046intersql15a-h3"
+        ],
+        "title": "Example of ORDER BY with Multiple Columns",
+        "text": "Consider a table with columns $$'first_{name'}$$ and $$'last_{name'}$$. How would you order the results first by $$'last_{name'}$$ and then by $$'first_{name'}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

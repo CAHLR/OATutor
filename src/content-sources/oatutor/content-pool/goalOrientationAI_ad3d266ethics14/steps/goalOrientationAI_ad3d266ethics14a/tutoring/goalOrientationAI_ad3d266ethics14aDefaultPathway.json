@@ -1,0 +1,116 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266ethics14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Discovery Infrastructure",
+        "text": "Discovery infrastructure on the PULL side involves tools and methods to gather metadata from various sources. It ensures that data is collected efficiently and accurately.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics14a-h1"
+        ],
+        "title": "Components of PULL Side",
+        "text": "The PULL side uses different components like crawlers, event-based listeners, and bespoke tools to manage data collection.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics14a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Crawlers that periodically collect information from metadata sources"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics14a-h2"
+        ],
+        "title": "Crawlers",
+        "text": "Crawlers are automated programs that periodically collect information from metadata sources. They are essential for keeping data up-to-date.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Crawlers that periodically collect information from metadata sources",
+            "Other bespoke tools are necessary given the volume and diversity of data most companies are grappling with",
+            "Event based listeners for near real time metadata collection to capture time sensitive information such as data quality or metadata versioning",
+            "all of these answers"
+        ]
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics14a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Event based listeners for near real time metadata collection to capture time sensitive information such as data quality or metadata versioning"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics14a-h2"
+        ],
+        "title": "Event-Based Listeners",
+        "text": "Event-based listeners capture time-sensitive information like data quality or metadata versioning in near real-time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Crawlers that periodically collect information from metadata sources",
+            "Other bespoke tools are necessary given the volume and diversity of data most companies are grappling with",
+            "Event based listeners for near real time metadata collection to capture time sensitive information such as data quality or metadata versioning",
+            "all of these answers"
+        ]
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics14a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Other bespoke tools are necessary given the volume and diversity of data most companies are grappling with"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics14a-h2"
+        ],
+        "title": "Bespoke Tools",
+        "text": "Given the volume and diversity of data, companies often require custom tools to handle specific data collection needs.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Crawlers that periodically collect information from metadata sources",
+            "Other bespoke tools are necessary given the volume and diversity of data most companies are grappling with",
+            "Event based listeners for near real time metadata collection to capture time sensitive information such as data quality or metadata versioning",
+            "all of these answers"
+        ]
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics14a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "all of these answers"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics14a-h3"
+        ],
+        "title": "All Components Together",
+        "text": "The PULL side of discovery infrastructure uses a combination of crawlers, event-based listeners, and bespoke tools to effectively manage data collection.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Crawlers that periodically collect information from metadata sources",
+            "Other bespoke tools are necessary given the volume and diversity of data most companies are grappling with",
+            "Event based listeners for near real time metadata collection to capture time sensitive information such as data quality or metadata versioning",
+            "all of these answers"
+        ]
+    }
+]

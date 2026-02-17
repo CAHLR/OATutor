@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_af62676school_lunch_surveya-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Population",
+        "text": "The population refers to the entire group that the nutritionist is interested in studying. Think about who is directly involved in the school cafeteria lunches.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676school_lunch_surveya-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All students eating lunch at the school cafeteria"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676school_lunch_surveya-h1"
+        ],
+        "title": "Identifying the Population",
+        "text": "Consider who the nutritionist wants to gather data from. Is it all students, just those who eat lunch, or another group?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "All students in the school",
+            "All students eating lunch at the school cafeteria",
+            "All teachers in the school",
+            "All staff in the cafeteria"
+        ]
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_ad5badfsql4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding JOIN Types",
+        "text": "There are several types of JOINs in SQL, including INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN. Each type serves a different purpose in how it combines data from tables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad5badfsql4b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "LEFT JOIN"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad5badfsql4b-h1"
+        ],
+        "title": "Choosing the Correct JOIN Type",
+        "text": "Since we want values from the left table what kind of JOIN should we use?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "INNER JOIN",
+            "LEFT JOIN",
+            "RIGHT JOIN",
+            "FULL JOIN"
+        ]
+    }
+]

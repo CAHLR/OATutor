@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_af62676ethics7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Governance",
+        "text": "Data governance involves managing data availability, usability, integrity, and security. It helps organizations make informed decisions by providing a framework for data management.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676ethics7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_af62676ethics7a-h1"
+        ],
+        "title": "Role of Data Governance in Risk Management",
+        "text": "By establishing clear data policies and procedures, data governance helps organizations identify potential risks and manage them effectively.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676ethics7a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "by helping convert uncertainty to risk"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676ethics7a-h2"
+        ],
+        "title": "Converting Uncertainty to Risk",
+        "text": "Data governance helps convert uncertainty to risk by providing a structured approach to data management, allowing organizations to anticipate and mitigate potential issues.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "by creating more \"busy work\" for attorneys who would otherwise block risky projects",
+            "by helping convert uncertainty to risk",
+            "by creating the illusion of privacy for regulators",
+            "by creating so much process that exhausted engineers can't find the time to make mistakes"
+        ]
+    }
+]

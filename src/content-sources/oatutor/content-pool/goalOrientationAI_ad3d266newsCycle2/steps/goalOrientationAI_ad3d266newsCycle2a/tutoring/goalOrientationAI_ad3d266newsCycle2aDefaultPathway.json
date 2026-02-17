@@ -1,0 +1,59 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266newsCycle2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the News Cycle",
+        "text": "When a government policy is announced, it takes time for detailed analyses to be published. Consider where in-depth articles are typically found.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266newsCycle2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266newsCycle2a-h1"
+        ],
+        "title": "Types of Publications",
+        "text": "Think about the types of publications that provide detailed analyses. Newspapers, academic journals, and reference books are some options.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266newsCycle2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266newsCycle2a-h2"
+        ],
+        "title": "Timeliness of Information",
+        "text": "Consider which publication is likely to have a detailed analysis ready by the following Monday after a Tuesday announcement.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266newsCycle2a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Newspaper"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266newsCycle2a-h3"
+        ],
+        "title": "Choosing the Right Source",
+        "text": "Which source is most likely to have a detailed analysis of the policy by the following Monday?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Internet",
+            "Newspaper",
+            "Academic journal",
+            "Reference book"
+        ]
+    }
+]

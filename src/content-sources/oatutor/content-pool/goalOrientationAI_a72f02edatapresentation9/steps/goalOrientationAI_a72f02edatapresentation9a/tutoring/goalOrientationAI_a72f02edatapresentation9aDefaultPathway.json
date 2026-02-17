@@ -1,0 +1,71 @@
+[
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider Peer Feedback",
+        "text": "Peer feedback can provide a fresh perspective on the clarity of the slides.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation9a-h1"
+        ],
+        "title": "Avoid Overconfidence",
+        "text": "Relying solely on personal judgment may overlook potential areas of confusion.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation9a-h2"
+        ],
+        "title": "Simplify Language",
+        "text": "Using complex language might confuse the audience rather than impress them.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation9a-h3"
+        ],
+        "title": "Importance of Review",
+        "text": "Skipping the review process can lead to unnoticed errors in the presentation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation9a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Ask a colleague to review the slides"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation9a-h4"
+        ],
+        "title": "Best Strategy for Clarity",
+        "text": "The most effective strategy involves seeking external feedback to ensure clarity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Ask a colleague to review the slides.",
+            "Rely on your own judgment.",
+            "Use complex language to impress the audience.",
+            "Skip the review process."
+        ]
+    }
+]

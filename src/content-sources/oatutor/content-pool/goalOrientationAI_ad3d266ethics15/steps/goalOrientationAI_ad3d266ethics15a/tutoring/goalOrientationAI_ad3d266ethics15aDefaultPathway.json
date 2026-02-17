@@ -1,0 +1,59 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266ethics15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Inventory Architecture",
+        "text": "A data inventory architecture should be flexible and comprehensive. It should allow for easy addition of new metadata and support the organization of personal data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics15a-h1"
+        ],
+        "title": "Exploring Data Sources",
+        "text": "The architecture should be capable of crawling through various known data stores to gather information efficiently.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics15a-h2"
+        ],
+        "title": "Discovering Unstructured Data",
+        "text": "An effective data inventory architecture should be able to discover unstructured datasets and make them available for tagging and analysis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics15a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "all of these answers"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics15a-h3"
+        ],
+        "title": "Comprehensive Solution",
+        "text": "Considering all the capabilities needed, which option best describes a complete data inventory architecture?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "provide extensibility to add new metadata and support the categorization of personal data",
+            "crawl various known datastores",
+            "discover other datasets (especially unstructured data) and make them available for tagging",
+            "all of these answers"
+        ]
+    }
+]

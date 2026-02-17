@@ -1,0 +1,71 @@
+[
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider the Audience",
+        "text": "Visuals are used to make complex information more accessible to the audience.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation11a-h1"
+        ],
+        "title": "Engagement Factor",
+        "text": "Visuals help maintain the audience's attention during a presentation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation11a-h2"
+        ],
+        "title": "Clarity and Illustration",
+        "text": "Visuals can illustrate key points more clearly than text alone.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation11a-h3"
+        ],
+        "title": "Complementary Role",
+        "text": "Visuals should complement the verbal explanation, not replace it entirely.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation11a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "To enhance understanding and engagement by illustrating key points clearly."
+        ],
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation11a-h4"
+        ],
+        "title": "Purpose of Visuals",
+        "text": "The primary purpose of using visuals is to enhance understanding and engagement by illustrating key points clearly.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "To make the presentation look more colorful and attractive.",
+            "To fill up space in the slides.",
+            "To enhance understanding and engagement by illustrating key points clearly.",
+            "To replace the need for verbal explanation entirely."
+        ]
+    }
+]

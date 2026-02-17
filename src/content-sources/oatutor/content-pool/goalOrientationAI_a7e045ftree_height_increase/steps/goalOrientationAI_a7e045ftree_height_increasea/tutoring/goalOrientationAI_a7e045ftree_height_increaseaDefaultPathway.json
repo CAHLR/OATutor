@@ -1,0 +1,53 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045ftree_height_increasea-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Initial and Final Heights",
+        "text": "The tree was initially $$4$$ meters tall and grew to $$5$$ meters after a year. 🌳",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ftree_height_increasea-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045ftree_height_increasea-h1"
+        ],
+        "title": "Calculate the Increase in Height",
+        "text": "Find the difference between the final height and the initial height. This is the increase in height.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ftree_height_increasea-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045ftree_height_increasea-h2"
+        ],
+        "title": "Use the Percentage Increase Formula",
+        "text": "The formula for percentage increase is: (increase/original value)*100%.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ftree_height_increasea-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "25%"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045ftree_height_increasea-h3"
+        ],
+        "title": "Calculate the Percentage Increase",
+        "text": "Substitute the values into the formula: ((5-4)/4)*100%.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

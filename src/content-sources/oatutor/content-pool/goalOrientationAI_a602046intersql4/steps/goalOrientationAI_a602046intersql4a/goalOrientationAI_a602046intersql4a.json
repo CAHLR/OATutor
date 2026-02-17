@@ -1,0 +1,18 @@
+{
+    "id": "goalOrientationAI_a602046intersql4a",
+    "stepAnswer": [
+        "SELECT EmployeeName FROM Employees WHERE Department $$ \\neq $$ 'Sales';"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Choose the correct SQL statement that retrieves all employees except those in the 'Sales' department.",
+    "stepBody": "",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "SELECT EmployeeName FROM Employees WHERE Department $$ \\neq $$ 'Sales';",
+    "choices": [
+        "SELECT EmployeeName FROM Employees WHERE Department $$=$$ 'Sales';",
+        "SELECT EmployeeName FROM Employees WHERE Department IS NOT 'Sales';",
+        "SELECT EmployeeName FROM Employees WHERE Department $$ \\neq $$ 'Sales';",
+        "SELECT EmployeeName FROM Employees WHERE Department $$=$$ 'HR' OR 'IT';"
+    ]
+}

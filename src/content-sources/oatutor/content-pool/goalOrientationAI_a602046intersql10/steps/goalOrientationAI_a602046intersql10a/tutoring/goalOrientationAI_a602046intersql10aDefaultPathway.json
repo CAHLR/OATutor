@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_a602046intersql10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL Keywords",
+        "text": "In SQL, certain keywords are used to perform specific operations on data. For example, to retrieve unique values from a column, a specific keyword is used to filter out duplicates.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql10a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "DISTINCT"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a602046intersql10a-h1"
+        ],
+        "title": "Identifying the Correct Keyword",
+        "text": "Which SQL keyword is used to retrieve unique values from a column?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "UNIQUE",
+            "DISTINCT",
+            "ONLY",
+            "SINGLE"
+        ]
+    }
+]

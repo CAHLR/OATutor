@@ -1,0 +1,71 @@
+[
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_basics_formula1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the SUM Function",
+        "text": "The 'SUM' function is primarily used to perform a basic arithmetic operation on a set of numbers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_basics_formula1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_basics_formula1a-h1"
+        ],
+        "title": "Identifying the Operation",
+        "text": "The operation performed by the 'SUM' function involves combining values to reach a total.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_basics_formula1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_basics_formula1a-h2"
+        ],
+        "title": "Focus on Addition",
+        "text": "The 'SUM' function is not used for finding averages, counting, or identifying minimum values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_basics_formula1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_basics_formula1a-h3"
+        ],
+        "title": "Range of Numbers",
+        "text": "The 'SUM' function works on a range of numbers, adding them together to produce a single result.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_basics_formula1a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "To add up a range of numbers"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_basics_formula1a-h4"
+        ],
+        "title": "Final Step",
+        "text": "The 'SUM' function is used to $$___$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "To add up a range of numbers",
+            "To find the average of a range of numbers",
+            "To count the number of cells in a range",
+            "To find the minimum value in a range"
+        ]
+    }
+]

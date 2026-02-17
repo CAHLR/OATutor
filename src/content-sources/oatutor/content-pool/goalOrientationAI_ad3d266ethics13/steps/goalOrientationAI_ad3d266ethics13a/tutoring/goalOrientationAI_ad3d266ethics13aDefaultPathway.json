@@ -1,0 +1,45 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266ethics13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Inventory",
+        "text": "Data inventory is a comprehensive list of all data assets within an organization. It helps in identifying, managing, and protecting data effectively.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics13a-h1"
+        ],
+        "title": "Role of Data Inventory in Governance",
+        "text": "Data inventory supports data governance by providing a clear overview of data assets, which aids in compliance, security, and efficient data management.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics13a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics13a-h2"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Consider whether having a detailed list of data assets would help or hinder managing data effectively at scale.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "id": "goalOrientationAI_ad126fevisualization_scalinga-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider the Starting Point",
+        "text": "Always start the y-axis at zero to avoid misleading representations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad126fevisualization_scalinga-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad126fevisualization_scalinga-h1"
+        ],
+        "title": "Avoid Misleading Scales",
+        "text": "Using a non-zero starting point can exaggerate differences between data points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad126fevisualization_scalinga-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad126fevisualization_scalinga-h2"
+        ],
+        "title": "Logarithmic Scale Usage",
+        "text": "A logarithmic scale is not suitable for all types of data, especially when comparing absolute values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad126fevisualization_scalinga-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad126fevisualization_scalinga-h3"
+        ],
+        "title": "Percentage Scale Consideration",
+        "text": "A percentage scale is useful when data is expressed as parts of a whole, not for general data representation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

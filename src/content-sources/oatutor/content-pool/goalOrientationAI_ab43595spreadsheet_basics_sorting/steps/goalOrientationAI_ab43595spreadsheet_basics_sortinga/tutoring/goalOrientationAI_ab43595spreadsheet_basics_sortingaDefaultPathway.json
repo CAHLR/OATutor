@@ -1,0 +1,71 @@
+[
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_basics_sortinga-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Tool's Purpose",
+        "text": "The 'Sort Descending' tool is used to organize data in a specific order.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_basics_sortinga-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_basics_sortinga-h1"
+        ],
+        "title": "Consider the Order",
+        "text": "The tool arranges data starting from the largest value and moving to the smallest.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_basics_sortinga-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_basics_sortinga-h2"
+        ],
+        "title": "Focus on Data Arrangement",
+        "text": "This tool does not change the appearance of the data, such as font color or cell merging.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_basics_sortinga-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_basics_sortinga-h3"
+        ],
+        "title": "Eliminate Incorrect Options",
+        "text": "The tool is not used for calculations like summing up a column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_basics_sortinga-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "To arrange data from largest to smallest"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_basics_sortinga-h4"
+        ],
+        "title": "Select the Correct Function",
+        "text": "The primary function of the 'Sort Ascending' tool is to arrange data from largest to smallest.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "To arrange data from largest to smallest",
+            "To change the font color of text",
+            "To merge multiple cells into one",
+            "To calculate the sum of a column"
+        ]
+    }
+]

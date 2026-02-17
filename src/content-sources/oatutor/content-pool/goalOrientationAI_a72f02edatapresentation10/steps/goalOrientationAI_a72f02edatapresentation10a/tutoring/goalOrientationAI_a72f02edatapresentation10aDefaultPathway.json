@@ -1,0 +1,71 @@
+[
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Start with the Basics",
+        "text": "Begin by understanding the core message you want to communicate through the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation10a-h1"
+        ],
+        "title": "Focus on the Key Message",
+        "text": "Identify the main insight or takeaway that the data should highlight.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation10a-h2"
+        ],
+        "title": "Avoid Overloading with Data",
+        "text": "Do not start by presenting all data chronologically; focus on the most relevant information.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation10a-h3"
+        ],
+        "title": "Logical Flow in Storytelling",
+        "text": "Ensure the data story has a logical flow by centering it around a clear message.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation10a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Identify the key message or insight you want to convey."
+        ],
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation10a-h4"
+        ],
+        "title": "Identify the Key Message",
+        "text": "The first step is to identify the key message or insight you want to convey.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Start with the conclusion and work backwards.",
+            "Identify the key message or insight you want to convey.",
+            "Gather all data and present it in chronological order.",
+            "Focus on the most complex data points first."
+        ]
+    }
+]

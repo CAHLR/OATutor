@@ -1,0 +1,37 @@
+[
+    {
+        "id": "goalOrientationAI_a602046intersql1b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a602046intersql1a-h1"
+        ],
+        "title": "SQL Data Types",
+        "text": "In SQL, each column in a table is assigned a data type, which defines the kind of data it can hold, such as integers, strings, or dates.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql1b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "VARCHAR"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a602046intersql1b-h2"
+        ],
+        "title": "Indentifying SQL Data Type",
+        "text": "Which of the following is a valid SQL data type?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "VARCHAR",
+            "TEXT",
+            "NUMBER",
+            "STRING"
+        ]
+    }
+]

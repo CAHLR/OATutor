@@ -1,0 +1,79 @@
+[
+    {
+        "id": "goalOrientationAI_af62676ethics11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Inventory Tags",
+        "text": "Consider how your data inventory tags can be used to manage data effectively. Think about their role in data classification and retention policies.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676ethics11a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Your tags are representations of your data classification"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676ethics11a-h1"
+        ],
+        "title": "Role of Tags in Data Classification",
+        "text": "How do tags help in data classification?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "You can configure your tags with retention policies so that your automated deletion programs can process deletion at scale",
+            "all of these answers",
+            "Your tags are representations of your data classification"
+        ]
+    },
+    {
+        "id": "goalOrientationAI_af62676ethics11a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "You can configure your tags with retention policies so that your automated deletion programs can process deletion at scale"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676ethics11a-h1"
+        ],
+        "title": "Tags and Retention Policies",
+        "text": "How can tags be configured to assist with data retention policies?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "You can configure your tags with retention policies so that your automated deletion programs can process deletion at scale",
+            "all of these answers",
+            "Your tags are representations of your data classification"
+        ]
+    },
+    {
+        "id": "goalOrientationAI_af62676ethics11a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "all of these answers"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676ethics11a-h2",
+            "goalOrientationAI_af62676ethics11a-h3"
+        ],
+        "title": "Comprehensive Understanding of Tags",
+        "text": "What is the comprehensive role of tags in data management?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "You can configure your tags with retention policies so that your automated deletion programs can process deletion at scale",
+            "all of these answers",
+            "Your tags are representations of your data classification"
+        ]
+    }
+]

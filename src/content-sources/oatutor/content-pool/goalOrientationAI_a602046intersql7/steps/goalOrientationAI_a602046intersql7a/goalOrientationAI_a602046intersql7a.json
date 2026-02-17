@@ -1,0 +1,18 @@
+{
+    "id": "goalOrientationAI_a602046intersql7a",
+    "stepAnswer": [
+        "SELECT EmployeeName, HireDate FROM Employees ORDER BY HireDate ASC;"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "To sort a list of employees by their hire date in ascending order, you can use this statement:",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "SELECT EmployeeName (Comma) HireDate FROM Employees ORDER BY EmployeeName ASC;",
+        "SELECT EmployeeName (Comma) HireDate FROM Employees ORDER BY HireDate ASC;",
+        "SELECT EmployeeName (Comma) HireDate FROM Employees ORDER BY HireDate DESC;",
+        "SELECT EmployeeName (Comma) HireDate FROM Employees WHERE ORDER BY HireDate ASC;",
+        "SELECT EmployeeName, HireDate FROM Employees ORDER BY HireDate ASC;"
+    ]
+}

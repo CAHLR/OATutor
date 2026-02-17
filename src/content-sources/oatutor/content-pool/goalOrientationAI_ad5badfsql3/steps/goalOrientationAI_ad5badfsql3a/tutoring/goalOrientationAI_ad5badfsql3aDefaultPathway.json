@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_ad5badfsql3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the CASE Statement",
+        "text": "The CASE statement in SQL is used to implement conditional logic. It allows you to perform different actions based on different conditions within a query.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad5badfsql3a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It allows for conditional logic to be applied within a query."
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad5badfsql3a-h1"
+        ],
+        "title": "Purpose of CASE statement",
+        "text": "What is the purpose of the CASE statement in SQL?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It allows for conditional logic to be applied within a query.",
+            "It is used to join two tables together.",
+            "It is used to create a new table.",
+            "It is used to delete records from a table."
+        ]
+    }
+]

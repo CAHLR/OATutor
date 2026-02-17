@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_a602046intersql9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL Ordering",
+        "text": "In SQL, the ORDER BY clause is used to sort the result set of a query by one or more columns. By default, it sorts in ascending order.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a602046intersql9a-h1"
+        ],
+        "title": "Descending Order",
+        "text": "To sort the results in descending order, you need to use the DESC keyword after the column name in the ORDER BY clause.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql9a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "ORDER BY Price DESC"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a602046intersql9a-h2"
+        ],
+        "title": "Applying ORDER BY Clause",
+        "text": "What SQL clause would you use to sort the 'Price' column from highest to lowest?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "ORDER BY Price ASC",
+            "ORDER BY Price",
+            "ORDER BY Price DESC",
+            "ORDER BY Price CURRENT"
+        ]
+    }
+]

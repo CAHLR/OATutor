@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_a602046intersql12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL Joins",
+        "text": "In SQL, a JOIN clause is used to combine rows from two or more tables, based on a related column between them. The different types of joins include INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a602046intersql12a-h1"
+        ],
+        "title": "LEFT JOIN Explanation",
+        "text": "A LEFT JOIN returns all records from the left table (Orders), and the matched records from the right table (Customers). The result is NULL from the right side, if there is no match.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql12a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "SELECT * FROM Orders LEFT JOIN Customers ON Orders.CustomerId $$=$$ Customers.Id;"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a602046intersql12a-h2"
+        ],
+        "title": "Choosing the Correct SQL Statement",
+        "text": "Which SQL statement will return all rows from the Orders table and only the matching rows from the Customers table based on the CustomerId?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "SELECT * FROM Orders LEFT JOIN Customers ON Orders.CustomerId $$=$$ Customers.Id;",
+            "SELECT * FROM Orders RIGHT JOIN Customers ON Orders.CustomerId $$=$$ Customers.Id;",
+            "SELECT * FROM Orders INNER JOIN Customers ON Orders.CustomerId $$=$$ Customers.Id;",
+            "SELECT * FROM Orders FULL JOIN Customers ON Orders.CustomerId $$=$$ Customers.Id;"
+        ]
+    }
+]

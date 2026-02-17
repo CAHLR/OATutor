@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_af62676cityParkSurveya-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Population of Interest",
+        "text": "The population of interest refers to the entire group of individuals or items that the survey aims to understand or make conclusions about.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676cityParkSurveya-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All visitors to the city park"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676cityParkSurveya-h1"
+        ],
+        "title": "Identifying the Population",
+        "text": "Consider who the survey is targeting. Is it everyone in the city, or a specific group of people related to the park?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "All visitors to the city park",
+            "All residents of the city",
+            "All employees of the city park",
+            "All tourists visiting the city"
+        ]
+    }
+]

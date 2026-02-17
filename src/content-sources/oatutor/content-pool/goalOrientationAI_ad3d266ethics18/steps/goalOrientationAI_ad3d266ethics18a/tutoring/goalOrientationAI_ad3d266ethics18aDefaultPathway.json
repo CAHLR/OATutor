@@ -1,0 +1,45 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266ethics18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Inventory",
+        "text": "Data inventory involves cataloging all data assets within an organization. It helps in managing, protecting, and utilizing data effectively.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics18a-h1"
+        ],
+        "title": "Why No One-Size-Fits-All?",
+        "text": "Different organizations have varying data needs, structures, and goals. Therefore, the depth of data inventory required can differ significantly.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266ethics18a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266ethics18a-h2"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Consider the diversity in data management practices across industries. Does this support the idea that there is no universal rule for data inventory depth?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

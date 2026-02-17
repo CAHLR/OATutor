@@ -1,0 +1,71 @@
+[
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider the Audience",
+        "text": "Storytelling in data presentation helps the audience connect with the information.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation17a-h1"
+        ],
+        "title": "Engagement Factor",
+        "text": "Using stories can make the data more engaging and easier to understand.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation17a-h2"
+        ],
+        "title": "Memory Aid",
+        "text": "Stories can help the audience remember the data better.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation17a-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation17a-h3"
+        ],
+        "title": "Relatability",
+        "text": "Storytelling makes data relatable by connecting it to real-life scenarios.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation17a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It helps to make data more relatable and memorable."
+        ],
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation17a-h4"
+        ],
+        "title": "Choose the Best Option",
+        "text": "Select the option that highlights the benefit of storytelling in data presentation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It helps to make data more relatable and memorable.",
+            "It allows the presenter to use more technical jargon.",
+            "It ensures the presentation is longer.",
+            "It focuses solely on numerical accuracy."
+        ]
+    }
+]

@@ -1,0 +1,59 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266professional6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Information Cycle",
+        "text": "The information cycle describes how news and information about an event are disseminated over time. It starts with immediate sources and progresses to more detailed analyses.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266professional6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266professional6a-h1"
+        ],
+        "title": "Immediate Sources",
+        "text": "Right after an event occurs, the first sources to report are usually online platforms and social media. These provide real-time updates.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266professional6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266professional6a-h2"
+        ],
+        "title": "Next Day Coverage",
+        "text": "By the next day, traditional media like newspapers often provide more detailed reports, summarizing the event with verified information.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266professional6a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Newspaper"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266professional6a-h3"
+        ],
+        "title": "Where to Find the Story on Tuesday",
+        "text": "Considering the information cycle, where would you expect to find a detailed report about the train derailment on Tuesday?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Internet",
+            "Newspaper",
+            "Academic journal",
+            "Reference book"
+        ]
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_ad5badfsql2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL Sorting",
+        "text": "In SQL, to sort the results of a query, you use a specific keyword. This keyword allows you to specify the order of the results, either ascending or descending.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad5badfsql2a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "ORDER BY"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad5badfsql2a-h1"
+        ],
+        "title": "Identifying the Sorting Keyword",
+        "text": "What is the SQL keyword used to sort the results of a query?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "GROUP BY",
+            "ORDER BY",
+            "HAVING",
+            "SELECT"
+        ]
+    }
+]

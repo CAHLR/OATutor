@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_af62676networkSecurity01a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Network Security",
+        "text": "Network security involves protecting the integrity, confidentiality, and availability of your network and data. Consider factors like threats, vulnerabilities, and security measures.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_af62676networkSecurity01a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "all of these answers"
+        ],
+        "dependencies": [
+            "goalOrientationAI_af62676networkSecurity01a-h1"
+        ],
+        "title": "Critical Components of Network Security",
+        "text": "Identify the key elements that contribute to a secure network environment.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Firewall configuration",
+            "Intrusion detection systems",
+            "Regular security audits",
+            "all of these answers"
+        ]
+    }
+]

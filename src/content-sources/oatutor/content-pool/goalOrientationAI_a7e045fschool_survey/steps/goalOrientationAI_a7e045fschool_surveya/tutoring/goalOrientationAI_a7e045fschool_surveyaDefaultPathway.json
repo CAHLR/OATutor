@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fschool_surveya-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Population",
+        "text": "The population refers to the entire group that the principal is interested in studying. Think about who would be relevant to the study of homework hours.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fschool_surveya-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All students attending the school"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fschool_surveya-h1"
+        ],
+        "title": "Identifying the Population",
+        "text": "Consider who the principal wants to gather information about regarding homework hours.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "All teachers at the school",
+            "All students attending the school",
+            "All parents of the students",
+            "All school staff"
+        ]
+    }
+]

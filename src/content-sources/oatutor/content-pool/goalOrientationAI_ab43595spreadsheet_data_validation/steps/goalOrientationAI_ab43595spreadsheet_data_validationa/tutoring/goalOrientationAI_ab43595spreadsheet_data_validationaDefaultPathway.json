@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_data_validationa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Validation",
+        "text": "Data validation is a feature in spreadsheets that helps maintain data integrity by restricting the type of data that can be entered into a cell.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_data_validationa-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_data_validationa-h1"
+        ],
+        "title": "Why Use Data Validation?",
+        "text": "Consider scenarios where you need to ensure that only numbers are entered in a column meant for numerical data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ab43595spreadsheet_data_validationa-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "To ensure that the data entered meets specific criteria and is accurate."
+        ],
+        "dependencies": [
+            "goalOrientationAI_ab43595spreadsheet_data_validationa-h2"
+        ],
+        "title": "Purpose of Data Validation",
+        "text": "What is the primary purpose of using data validation in a spreadsheet?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "To ensure that the data entered meets specific criteria and is accurate.",
+            "To automatically format cells based on their content.",
+            "To create a backup of the spreadsheet data.",
+            "To allow multiple users to edit the spreadsheet simultaneously."
+        ]
+    }
+]

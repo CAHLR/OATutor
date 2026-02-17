@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_a602046intersql5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SQL Wildcards",
+        "text": "In SQL, the LIKE operator is used in a WHERE clause to search for a specified pattern in a column. Wildcards are used to substitute one or more characters in a string.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a602046intersql5a-h1"
+        ],
+        "title": "Using the Percent Sign (%)",
+        "text": "The percent sign (%) is a wildcard character in SQL that represents zero, one, or multiple characters. It is used to define patterns in a LIKE clause like '%this' which would return strings that end in this.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a602046intersql5a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "WHERE Note LIKE 'urgent%'"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a602046intersql5a-h2"
+        ],
+        "title": "Formulating the WHERE Clause",
+        "text": "How would you write a WHERE clause to find all records where the Note column starts with 'urgent'?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "WHERE Note LIKE 'urgent%'",
+            "WHERE Note LIKE '%urgent%'",
+            "WHERE Note LIKE '%urgent'",
+            "WHERE Note LIKE 'urgent'"
+        ]
+    }
+]

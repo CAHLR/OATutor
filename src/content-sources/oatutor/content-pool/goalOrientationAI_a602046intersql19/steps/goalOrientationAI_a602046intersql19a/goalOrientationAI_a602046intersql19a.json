@@ -1,0 +1,17 @@
+{
+    "id": "goalOrientationAI_a602046intersql19a",
+    "stepAnswer": [
+        "It increases the salary of all employees in the Sales department by 10%."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "UPDATE Employees SET Salary $$=$$ Salary * $$1.1$$ WHERE Department $$=$$ 'Sales';",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "It increases the salary of all employees in the Sales department by 10%.",
+        "It sets the salary of all employees in the Sales department to 10%.",
+        "It increases the salary of all employees in the company by 10%.",
+        "It sets the salary of all employees in the company to 10%."
+    ]
+}

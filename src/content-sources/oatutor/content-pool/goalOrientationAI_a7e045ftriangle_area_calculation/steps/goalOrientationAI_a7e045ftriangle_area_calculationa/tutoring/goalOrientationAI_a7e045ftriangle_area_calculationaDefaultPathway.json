@@ -1,0 +1,58 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045ftriangle_area_calculationa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Formula",
+        "text": "The area of a triangle is calculated using the formula: $$\\frac{base height}{2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ftriangle_area_calculationa-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$30$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045ftriangle_area_calculationa-h1"
+        ],
+        "title": "Substitute the Values",
+        "text": "Substitute the given values into the formula: $$\\frac{10\\times6}{2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ftriangle_area_calculationa-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045ftriangle_area_calculationa-h2"
+        ],
+        "title": "Simplify the Expression",
+        "text": "Calculate the multiplication first: $$10\\times6=60$$, then divide by $$2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045ftriangle_area_calculationa-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$30$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045ftriangle_area_calculationa-h3"
+        ],
+        "title": "Final Calculation",
+        "text": "Divide $$60$$ by $$2$$ to find the area.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

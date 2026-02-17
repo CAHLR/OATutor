@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_ad3d266newsCycle1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Information Cycle",
+        "text": "When a scientific study is published, it goes through an information cycle. Initially, it might be reported in news outlets, but detailed analyses are usually found in academic journals.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266newsCycle1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ad3d266newsCycle1a-h1"
+        ],
+        "title": "Where to Find In-depth Analysis",
+        "text": "By Friday, a detailed analysis of a study published on Monday is likely to be found in sources that provide comprehensive reviews, such as academic journals.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad3d266newsCycle1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Academic journal"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad3d266newsCycle1a-h2"
+        ],
+        "title": "Identifying the Right Source",
+        "text": "Which source is known for providing detailed and peer-reviewed analyses of scientific studies?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Internet",
+            "Newspaper",
+            "Academic journal",
+            "Reference book"
+        ]
+    }
+]

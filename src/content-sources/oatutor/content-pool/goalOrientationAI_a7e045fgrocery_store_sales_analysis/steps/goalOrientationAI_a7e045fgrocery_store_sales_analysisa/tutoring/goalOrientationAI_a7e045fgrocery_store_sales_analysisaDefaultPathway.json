@@ -1,0 +1,63 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fgrocery_store_sales_analysisa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Percentages",
+        "text": "To find the percentage of apples sold, divide the number of apples by the total number of fruits sold and multiply by $$100$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fgrocery_store_sales_analysisa-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{150}{500}$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fgrocery_store_sales_analysisa-h1"
+        ],
+        "title": "Calculate the Fraction",
+        "text": "What is the fraction of apples sold out of the total fruits?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fgrocery_store_sales_analysisa-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{10}$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fgrocery_store_sales_analysisa-h2"
+        ],
+        "title": "Simplify the Fraction",
+        "text": "Simplify the fraction $$\\frac{150}{500}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fgrocery_store_sales_analysisa-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$30$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fgrocery_store_sales_analysisa-h3"
+        ],
+        "title": "Convert to Percentage",
+        "text": "Convert the simplified fraction $$\\frac{3}{10}$$ to a percentage.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

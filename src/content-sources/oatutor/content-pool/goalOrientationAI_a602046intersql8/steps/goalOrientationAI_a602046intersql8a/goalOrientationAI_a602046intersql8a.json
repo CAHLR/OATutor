@@ -1,0 +1,17 @@
+{
+    "id": "goalOrientationAI_a602046intersql8a",
+    "stepAnswer": [
+        "Records for Eve, Dave, and Carol"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "What will be the result of the following SQL query?\\n\\n```sql\\nSELECT * FROM employees ORDER BY salary DESC LIMIT 3;\\n```\\n\\nAssume the `employees` table has the following data:\\n\\n| id | name | salary |\\n|----|--------|--------|\\n| $$1$$ | Alice | $$50000$$ |\\n| $$2$$ | Bob | $$60000$$ |\\n| $$3$$ | Carol | $$70000$$ |\\n| $$4$$ | Dave | $$80000$$ |\\n| $$5$$ | Eve | $$90000$$ |\\n\\nChoose the correct set of records that will be returned by the query.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "Records for Eve, Dave, and Carol",
+        "Records for Alice, Bob, and Carol",
+        "Records for Bob, Carol, and Dave",
+        "Records for Alice, Bob, and Eve"
+    ]
+}

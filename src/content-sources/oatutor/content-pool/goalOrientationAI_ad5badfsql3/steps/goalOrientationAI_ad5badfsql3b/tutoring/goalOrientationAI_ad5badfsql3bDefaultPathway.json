@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_ad5badfsql3b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Syntax of CASE Statement",
+        "text": "The basic syntax of a CASE statement is:\\n\\n```\\nCASE\\nWHEN condition1 THEN result1\\nWHEN condition2 THEN result2\\nELSE result3\\nEND\\n```",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad5badfsql3b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "By specifying WHEN conditions and THEN results within the CASE statement."
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad5badfsql3b-h1"
+        ],
+        "title": "Using CASE for Conditional Logic",
+        "text": "How can you use the CASE statement to categorize data based on a condition? It is similar to the 'if' statement in other programming languages.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "By specifying WHEN conditions and THEN results within the CASE statement.",
+            "By using the SELECT statement to filter data.",
+            "By using the JOIN statement to combine tables.",
+            "By using the DELETE statement to remove records."
+        ]
+    }
+]

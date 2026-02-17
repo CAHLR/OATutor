@@ -1,0 +1,34 @@
+[
+    {
+        "id": "goalOrientationAI_ad5badfsql5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the ON Clause",
+        "text": "The ON clause tells us how we should join the tables, typically by specifying a common column name to join on.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ad5badfsql5a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It specifies the condition for joining tables, usually by matching columns."
+        ],
+        "dependencies": [
+            "goalOrientationAI_ad5badfsql5a-h1"
+        ],
+        "title": "Using the ON Clause",
+        "text": "What is the purpose of the ON clause in a SQL JOIN statement?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It specifies the condition for joining tables, usually by matching columns.",
+            "It limits the number of rows returned.",
+            "It defines the order of the output columns."
+        ]
+    }
+]

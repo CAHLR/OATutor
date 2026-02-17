@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fweather_analysis1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Concept",
+        "text": "When you calculate an average from a sample, like the data from $$30$$ weather stations, what is this calculation called?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fweather_analysis1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fweather_analysis1a-h1"
+        ],
+        "title": "Defining Terms",
+        "text": "A 'statistic' is a numerical value that describes a characteristic of a sample. Is the average temperature a characteristic of the sample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fweather_analysis1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Statistic"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fweather_analysis1a-h2"
+        ],
+        "title": "Identifying the Correct Term",
+        "text": "The average temperature from the sample of $$30$$ weather stations is a:",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Variable",
+            "Population",
+            "Statistic",
+            "Data"
+        ]
+    }
+]

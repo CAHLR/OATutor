@@ -1,0 +1,41 @@
+[
+    {
+        "id": "goalOrientationAI_a7e045fgarden_area_calculationa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Formula",
+        "text": "To find the area of a rectangle, multiply the length by the width. 📏",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fgarden_area_calculationa-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$96$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a7e045fgarden_area_calculationa-h1"
+        ],
+        "title": "Calculate the Area",
+        "text": "Use the formula: Area $$=$$ length * width. What is $$12$$ * 8?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a7e045fgarden_area_calculationa-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a7e045fgarden_area_calculationa-h2"
+        ],
+        "title": "Simplifying the Calculation",
+        "text": "Multiply $$12$$ by $$8$$ to get the total area in square meters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

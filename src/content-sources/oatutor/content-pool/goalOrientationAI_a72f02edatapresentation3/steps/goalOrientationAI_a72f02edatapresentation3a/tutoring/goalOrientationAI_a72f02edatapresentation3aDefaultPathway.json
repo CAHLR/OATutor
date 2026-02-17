@@ -1,0 +1,71 @@
+[
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider the Nature of Historical Data",
+        "text": "Historical data often involves observations collected over time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation3a-h1"
+        ],
+        "title": "Focus on Time-Related Patterns",
+        "text": "Identifying trends requires analyzing how data points change over time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation3a-h2"
+        ],
+        "title": "Think About Data Consistency",
+        "text": "Consistent data collection intervals are crucial for trend analysis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation3a-h3"
+        ],
+        "title": "Consider the Analysis Method",
+        "text": "Time series analysis is specifically designed to handle data collected over time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a72f02edatapresentation3a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Time Series Analysis"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a72f02edatapresentation3a-h4"
+        ],
+        "title": "Choose the Best Method",
+        "text": "The most effective method for identifying trends in historical data is Time Series Analysis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Time Series Analysis",
+            "$$Cross-sectional$$ Analysis",
+            "Qualitative Analysis",
+            "Experimental Analysis"
+        ]
+    }
+]
