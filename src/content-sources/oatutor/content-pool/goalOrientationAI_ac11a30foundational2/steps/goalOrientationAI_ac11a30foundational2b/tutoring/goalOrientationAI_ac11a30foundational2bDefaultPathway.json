@@ -1,0 +1,46 @@
+[
+    {
+        "id": "goalOrientationAI_ac11a30foundational2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Range",
+        "text": "The range of a set of numbers is the difference between the largest and smallest numbers in the set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ac11a30foundational2b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7$$ and $$2$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ac11a30foundational2b-h1"
+        ],
+        "title": "Identify the Largest and Smallest Values",
+        "text": "Look at the set of numbers: {2,2,5,6,7}. What is the largest number? What is the smallest number?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ac11a30foundational2b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ac11a30foundational2b-h2"
+        ],
+        "title": "Calculate the Range",
+        "text": "Now that you have identified the largest number (7) and the smallest number (2), calculate the range by subtracting the smallest number from the largest number.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

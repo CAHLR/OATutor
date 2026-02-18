@@ -1,0 +1,81 @@
+[
+    {
+        "id": "goalOrientationAI_ac11a30foundational5b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the relevant data points",
+        "text": "To find the fraction of people who commute either five or seven miles, first identify how many people commute exactly five miles and how many commute exactly seven miles.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ac11a30foundational5b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ac11a30foundational5b-h1"
+        ],
+        "title": "Count the number of people commuting five miles",
+        "text": "Look at the data set and count how many people commute exactly five miles.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ac11a30foundational5b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ac11a30foundational5b-h1"
+        ],
+        "title": "Count the number of people commuting seven miles",
+        "text": "Now, count how many people commute exactly seven miles.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ac11a30foundational5b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ac11a30foundational5b-h2",
+            "goalOrientationAI_ac11a30foundational5b-h3"
+        ],
+        "title": "Calculate the total number of people commuting five or seven miles",
+        "text": "Add the number of people commuting five miles to the number of people commuting seven miles.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ac11a30foundational5b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{5}{19}$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ac11a30foundational5b-h4"
+        ],
+        "title": "Determine the fraction",
+        "text": "Divide the total number of people commuting five or seven miles by the total number of people surveyed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

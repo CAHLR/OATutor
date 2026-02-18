@@ -1,0 +1,59 @@
+[
+    {
+        "id": "goalOrientationAI_adb4b62ethics21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Origin",
+        "text": "Understanding where data comes from and who is responsible can help manage growth and mitigate risks. Why would this be crucial for data inventory?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_adb4b62ethics21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_adb4b62ethics21a-h1"
+        ],
+        "title": "Analyzing Data Growth",
+        "text": "As a company expands, its data also grows. Consider how understanding this relationship can help optimize storage and compliance efforts.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_adb4b62ethics21a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_adb4b62ethics21a-h2"
+        ],
+        "title": "Sensitive Data Considerations",
+        "text": "Consider how the growth of sensitive data compares to overall data growth. This can highlight areas that may require more stringent security measures.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_adb4b62ethics21a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All of the Answers"
+        ],
+        "dependencies": [
+            "goalOrientationAI_adb4b62ethics21a-h3"
+        ],
+        "title": "Evaluating All Aspects",
+        "text": "Combine your understanding of data source responsibility, company growth, and sensitive data management to form a comprehensive view of data inventory.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Are you able to reverse engineer the data sources and understand which teams are responsible for the growth in data size and risk",
+            "As the company grows, how does the growth in the customer base and revenue correspond to the growth in data",
+            "How fast is sensitive data growing relative to data overall",
+            "All of the Answers"
+        ]
+    }
+]

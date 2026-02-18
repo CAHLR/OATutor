@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_ac11a30foundational1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Population",
+        "text": "To determine the population the instructor is interested in, consider who the data is being collected from. The instructor wants to know about the absences of a specific group of students.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ac11a30foundational1a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All Lake Tahoe Community College math students"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ac11a30foundational1a-h1"
+        ],
+        "title": "Identifying the Population",
+        "text": "Think about the group of students that the instructor is focusing on. Is it all students at the college, or a specific subset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "All Lake Tahoe Community College students",
+            "All Lake Tahoe Community College English students",
+            "All Lake Tahoe Community College students in her classes",
+            "All Lake Tahoe Community College math students"
+        ]
+    }
+]

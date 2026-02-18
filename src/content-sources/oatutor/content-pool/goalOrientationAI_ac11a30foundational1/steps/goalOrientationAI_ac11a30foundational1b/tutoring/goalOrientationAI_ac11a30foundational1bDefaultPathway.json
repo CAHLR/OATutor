@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_ac11a30foundational1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To solve this problem, we need to identify what 'X' represents in the context of the problem. Think about what 'X' is describing.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ac11a30foundational1b-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ac11a30foundational1b-h1"
+        ],
+        "title": "Defining 'X'",
+        "text": "In the problem, 'X' is defined as the number of days a student is absent. What kind of term is used to describe such a quantity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ac11a30foundational1b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Variable"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ac11a30foundational1b-h2"
+        ],
+        "title": "Identifying 'X'",
+        "text": "X' is a term that can take on different values depending on the student. What is this term called?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Variable",
+            "Population",
+            "Statistic",
+            "Data"
+        ]
+    }
+]

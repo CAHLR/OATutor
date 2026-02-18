@@ -1,0 +1,80 @@
+[
+    {
+        "id": "goalOrientationAI_a439352validity9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Excel Formula Auto-Update",
+        "text": "In Excel, when you copy a formula from one cell to another, the cell references in the formula automatically update according to the new location. This is due to the concept of relative cell references.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a439352validity9a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of Relative Cell References",
+        "text": "Relative cell references in Excel are cell addresses that automatically change when you copy or move the formula to another cell. They are the default in Excel and do not have any dollar signs in their reference.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a439352validity9a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of Fixed Cell Reference",
+        "text": "A fixed reference (or absolute reference) in Excel is indicated by the use of the '$' sign (e.g., $H$1). This tells Excel to keep the cell reference constant when copying a formula to another location, unlike relative references.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a439352validity9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a439352validity9a-h1"
+        ],
+        "title": "Formula Update",
+        "text": "Why does the formula automatically update to $$=I1+I8$$? Because the formula in cell H30 is using relative references (H1 and H8), when you copy it to cell I30, Excel updates these references to reflect the shift by one column to the right, resulting in I1 and I8.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a439352validity9a-h5",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a439352validity9a-h2"
+        ],
+        "title": "Understanding Absolute vs. Relative References",
+        "text": "The formula remaining as $$=H1+H8$$ would suggest that the references are fixed, which requires the use of absolute references like $H$1, $H$8. Given there are no dollar signs in the original formula, they are relative references that change when moved.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a439352validity9a-h6",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a439352validity9a-h3"
+        ],
+        "title": "Misinterpretation of Absolute References",
+        "text": "The formula changing to =$H1+$H8 implies the original had absolute references (which is not the case as they are relative), so the use of the '$' symbol is unfounded.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a439352validity9a-h7",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a439352validity9a-h6"
+        ],
+        "title": "Copying Formulas with Relative References",
+        "text": "Why 'You cannot copy a formula, only numeric values' is incorrect: In Excel, you can copy formulas just as you would any other data or cell contents. When you copy a formula, Excel adjusts the cell references by default if they are relative.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "id": "goalOrientationAI_adb4b62ethics10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Classification",
+        "text": "Data classification involves categorizing data based on its sensitivity and importance. Think about how this process can influence who should have access to different types of data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_adb4b62ethics10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_adb4b62ethics10a-h1"
+        ],
+        "title": "Linking Classification to Access Control",
+        "text": "Consider how knowing the classification of data can help in deciding which access control tools to use. Why might it be beneficial to apply different tools to different data categories?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_adb4b62ethics10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_adb4b62ethics10a-h2"
+        ],
+        "title": "Strategic Deployment of Access Tools",
+        "text": "Think about how access control tools can be deployed more effectively when you know the classification of data. How does this help in protecting sensitive information?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_adb4b62ethics10a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "by helping deploy access control tools more strategically and selectively"
+        ],
+        "dependencies": [
+            "goalOrientationAI_adb4b62ethics10a-h3"
+        ],
+        "title": "Connecting the Dots",
+        "text": "Now, try to connect the idea of data classification with the strategic deployment of access control tools. How does knowing the classification help in deciding where and how to apply these tools?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "by creating a paper trail to hold everyone accountable",
+            "by letting everyone access everything",
+            "by creating so much process that exhausted engineers can't find the time to access data"
+        ]
+    }
+]

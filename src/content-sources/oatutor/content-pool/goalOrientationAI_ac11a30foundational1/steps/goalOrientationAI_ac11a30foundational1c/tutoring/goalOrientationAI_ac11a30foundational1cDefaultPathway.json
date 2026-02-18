@@ -1,0 +1,35 @@
+[
+    {
+        "id": "goalOrientationAI_ac11a30foundational1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Sample Mean",
+        "text": "The sample mean is a value calculated from a subset of the population. It represents the average of the data points in the sample.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ac11a30foundational1c-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Statistic"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ac11a30foundational1c-h1"
+        ],
+        "title": "Identifying the Sample Mean",
+        "text": "Given that the mean number of days absent is calculated from a sample of students, what is this value called?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Parameter",
+            "Data",
+            "Statistic",
+            "Variable"
+        ]
+    }
+]

@@ -1,0 +1,64 @@
+[
+    {
+        "id": "goalOrientationAI_ac11a30foundational2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Mode",
+        "text": "The mode is the number that appears most frequently in a data set. To find the mode, count how many times each number appears.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ac11a30foundational2c-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ac11a30foundational2c-h1"
+        ],
+        "title": "Counting Occurrences",
+        "text": "Count how many times each number appears in the set {2,2,5,6,7}.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ac11a30foundational2c-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ac11a30foundational2c-h2"
+        ],
+        "title": "Identifying the Mode",
+        "text": "After counting, identify which number appears the most. This number is the mode.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ac11a30foundational2c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ac11a30foundational2c-h3"
+        ],
+        "title": "Choosing the Correct Answer",
+        "text": "Based on your count, which number appears most frequently in the set?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$7$$",
+            "$$6$$",
+            "$$5$$",
+            "$$2$$"
+        ]
+    }
+]

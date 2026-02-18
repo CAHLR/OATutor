@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_a180525professional2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "What Are Product Lifetime and Repair Incidents?",
+        "text": "Product \"lifetime\" refers to the duration a product typically lasts before it needs to be replaced. \"Repair incidents\" refer to the instances when a product needs servis or repair due to failures or malfunctions. Knowing these can help predict service needs and product replacements.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a180525professional2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_a180525professional2a-h1"
+        ],
+        "title": "What to Consider When Data is Unavailable",
+        "text": "If critical data is missing, consider using related or proxy data. This data might not be an exact replacement but can offer useful insights. For example, sales of replacement parts can indicate product failure rates indirectly.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_a180525professional2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Sales of replacement part"
+        ],
+        "dependencies": [
+            "goalOrientationAI_a180525professional2a-h2"
+        ],
+        "title": "Data Analysis",
+        "text": "Which answer provides the most useful data to learn the lifespan of a product and how often it needs to be replaced?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "YouTube videos demonstrating product use",
+            "Sales of replacement part",
+            "Technician training and availability",
+            "New product sales"
+        ]
+    }
+]

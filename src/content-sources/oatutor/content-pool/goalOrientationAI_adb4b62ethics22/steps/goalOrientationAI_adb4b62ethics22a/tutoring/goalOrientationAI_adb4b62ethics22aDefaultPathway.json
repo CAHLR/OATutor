@@ -1,0 +1,45 @@
+[
+    {
+        "id": "goalOrientationAI_adb4b62ethics22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Centralized Tagging",
+        "text": "Consider the benefits of having a single, unified system for tagging data. How might this help in organizing and retrieving information efficiently?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_adb4b62ethics22a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_adb4b62ethics22a-h1"
+        ],
+        "title": "Exploring the Downsides",
+        "text": "Think about the potential risks or challenges that might arise from centralizing the tagging process. Could it lead to any issues with flexibility or adaptability?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_adb4b62ethics22a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Centralizing tagging can improve consistency but may reduce flexibility."
+        ],
+        "dependencies": [
+            "goalOrientationAI_adb4b62ethics22a-h2"
+        ],
+        "title": "Evaluating Both Sides",
+        "text": "List one advantage and one disadvantage of centralizing tagging. Consider how these factors might impact the overall data management strategy.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_adb4b62ethics2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Classification",
+        "text": "Consider how a well-structured data classification system can impact both the security and usability of data. Think about the balance between protecting sensitive information and allowing for its effective use.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_adb4b62ethics2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_adb4b62ethics2a-h1"
+        ],
+        "title": "Impact on Customers and Business",
+        "text": "Reflect on how data classification can influence customer trust and business growth. How does ensuring data privacy contribute to a positive relationship with customers?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_adb4b62ethics2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "protecting your customers while growing your business"
+        ],
+        "dependencies": [
+            "goalOrientationAI_adb4b62ethics2a-h2"
+        ],
+        "title": "Evaluating the Options",
+        "text": "Let's evaluate the given options. Which option best aligns with the goal of maintaining customer trust while supporting business objectives?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "protecting your customers while growing your business",
+            "keeping attorneys busy",
+            "creating the illusion of privacy",
+            "eliminating privacy risks by deleting all data"
+        ]
+    }
+]

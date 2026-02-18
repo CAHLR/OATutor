@@ -1,0 +1,58 @@
+[
+    {
+        "id": "goalOrientationAI_ac11a30foundational3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Table",
+        "text": "Look at the 'Cumulative Relative Frequency' column. This column shows the cumulative percentage of heights up to a certain range.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ac11a30foundational3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ac11a30foundational3a-h1"
+        ],
+        "title": "Identifying the Range",
+        "text": "We need to find the percentage of heights less than $$65.95$$ inches. Check the cumulative relative frequency for the range that ends at $$65.95$$ inches.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ac11a30foundational3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.23$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ac11a30foundational3a-h2"
+        ],
+        "title": "Reading the Cumulative Relative Frequency",
+        "text": "What is the cumulative relative frequency for the range $$63.95-65.95$$ inches?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ac11a30foundational3a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$23$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ac11a30foundational3a-h3"
+        ],
+        "title": "Converting to Percentage",
+        "text": "Convert the cumulative relative frequency $$0.23$$ to a percentage.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "id": "goalOrientationAI_adb4b62ethics11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Inventory Tags",
+        "text": "Consider the purpose of data inventory tags. What role do they play in managing your data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_adb4b62ethics11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_adb4b62ethics11a-h1"
+        ],
+        "title": "Retention Policies and Automation",
+        "text": "Think about how retention policies can be linked to your data tags. How might this help in automating data management processes?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_adb4b62ethics11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_adb4b62ethics11a-h2"
+        ],
+        "title": "Data Classification Representation",
+        "text": "Reflect on how data tags can serve as representations of data classification. Why is this important for data management?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_adb4b62ethics11a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "all of these answers"
+        ],
+        "dependencies": [
+            "goalOrientationAI_adb4b62ethics11a-h3"
+        ],
+        "title": "Choosing the Best Answer",
+        "text": "Now that you've considered the roles of data tags, retention policies, and data classification, which option best encompasses all these aspects?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "You can configure your tags with retention policies so that your automated deletion programs can process deletion at scale",
+            "all of these answers",
+            "Your tags are representations of your data classification"
+        ]
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "id": "goalOrientationAI_ac11a30foundational2f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To predict one value from another using a linear relationship, we need to identify a statistical technique that models the relationship between two variables. This technique should allow us to make predictions based on the linear association between these variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ac11a30foundational2f-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ac11a30foundational2f-h1"
+        ],
+        "title": "Exploring Options",
+        "text": "Consider the following options: Hypothesis testing, Correlation, Regression, and Chi-square. Which of these techniques is specifically designed to predict one variable based on another using a linear relationship?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ac11a30foundational2f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Regression"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ac11a30foundational2f-h2"
+        ],
+        "title": "Identifying the Correct Technique",
+        "text": "The correct answer involves finding the best-fitting line that represents the trend in the data and makes predictions. Which option is this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Hypothesis testing",
+            "Correlation",
+            "Regression",
+            "$$Chi-square$$"
+        ]
+    }
+]

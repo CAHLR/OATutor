@@ -1,0 +1,60 @@
+[
+    {
+        "id": "goalOrientationAI_adb4b62ethics16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding DIS",
+        "text": "Think about the role of DIS in managing and providing access to data. Consider what functions it might perform in a data architecture context.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_adb4b62ethics16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_adb4b62ethics16a-h1"
+        ],
+        "title": "Database Functionality",
+        "text": "Consider how a database is used in storing and organizing data. What kind of operations can you perform with a database?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_adb4b62ethics16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_adb4b62ethics16a-h1"
+        ],
+        "title": "Service Functionality",
+        "text": "Think about what a service does in terms of providing data to users or other systems. How does it interact with data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_adb4b62ethics16a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "a database and a service"
+        ],
+        "dependencies": [
+            "goalOrientationAI_adb4b62ethics16a-h2",
+            "goalOrientationAI_adb4b62ethics16a-h3"
+        ],
+        "title": "Combining Functions",
+        "text": "Now, combine the functionalities of a database and a service. What does DIS serve as in this context?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "a database and a service",
+            "a service only",
+            "a database only",
+            "a placeholder"
+        ]
+    }
+]

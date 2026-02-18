@@ -1,0 +1,82 @@
+[
+    {
+        "id": "goalOrientationAI_ac11a30foundational4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Table",
+        "text": "Look at the frequency column for the rainfall intervals. We need to find the percentage of rainfall between $$6.99$$ and $$13.05$$ inches.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ac11a30foundational4b-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ac11a30foundational4b-h1"
+        ],
+        "title": "Identify Relevant Intervals",
+        "text": "The intervals between $$6.99$$ and $$13.05$$ inches are $$6.99-9.01$$, $$9.01-11.03$$, and $$11.03-13.05$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ac11a30foundational4b-h3",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ac11a30foundational4b-h2"
+        ],
+        "title": "Calculate Total Frequency",
+        "text": "Add the frequencies for the intervals $$6.99-9.01$$, $$9.01-11.03$$, and $$11.03-13.05$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ac11a30foundational4b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$32$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ac11a30foundational4b-h3"
+        ],
+        "title": "Sum of Frequencies",
+        "text": "What is the sum of the frequencies for the intervals $$6.99-9.01$$, $$9.01-11.03$$, and $$11.03-13.05$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ac11a30foundational4b-h5",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_ac11a30foundational4b-h4"
+        ],
+        "title": "Calculate Percentage",
+        "text": "Divide the sum of the frequencies by the total frequency and multiply by $$100$$ to get the percentage.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_ac11a30foundational4b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$64$$"
+        ],
+        "dependencies": [
+            "goalOrientationAI_ac11a30foundational4b-h5"
+        ],
+        "title": "Percentage Calculation",
+        "text": "What is $$100\\frac{32}{50}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

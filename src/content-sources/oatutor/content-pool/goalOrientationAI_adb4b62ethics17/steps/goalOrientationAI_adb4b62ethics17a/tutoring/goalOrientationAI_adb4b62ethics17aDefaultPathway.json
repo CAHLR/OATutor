@@ -1,0 +1,57 @@
+[
+    {
+        "id": "goalOrientationAI_adb4b62ethics17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Dataset Overlap",
+        "text": "Consider the types of datasets that are frequently used in various applications. Think about whether these datasets might also contain sensitive information that could pose privacy risks.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_adb4b62ethics17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_adb4b62ethics17a-h1"
+        ],
+        "title": "Privacy Risk in Common Datasets",
+        "text": "Reflect on the nature of datasets that are commonly used. Do they often include personal or sensitive information that could lead to privacy concerns?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "goalOrientationAI_adb4b62ethics17a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "goalOrientationAI_adb4b62ethics17a-h2"
+        ],
+        "title": "Analyzing Dataset Usage and Privacy",
+        "text": "Identify examples of datasets that are frequently used. Do these examples include any personal data that could be considered high-risk for privacy?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "goalOrientationAI_adb4b62ethics17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "goalOrientationAI_adb4b62ethics17a-h1"
+        ],
+        "title": "Overlap Between Usage and Risk",
+        "text": "Think about the relationship between the frequency of dataset usage and the level of privacy risk they carry. Is it possible for a dataset to be both commonly used and high-risk?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]
