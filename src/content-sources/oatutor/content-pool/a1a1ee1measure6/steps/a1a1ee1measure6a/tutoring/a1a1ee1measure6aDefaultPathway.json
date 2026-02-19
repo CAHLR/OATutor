@@ -1,0 +1,115 @@
+[
+    {
+        "id": "a1a1ee1measure6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Multiply",
+        "text": "We will multiply the length of one plank to find the total length.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1a1ee1measure6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1a1ee1measure6a-h1"
+        ],
+        "title": "Multiply",
+        "text": "Multiply the inches and then the feet.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1a1ee1measure6a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$24$$ feet, $$16$$ inches"
+        ],
+        "dependencies": [
+            "a1a1ee1measure6a-h2"
+        ],
+        "title": "Multiply",
+        "text": "What do we get after multiplying the length of the plank by 4?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$24$$ feet",
+            "$$24$$ feet, $$16$$ inches",
+            "$$24$$ feet, $$18$$ inches"
+        ]
+    },
+    {
+        "id": "a1a1ee1measure6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1a1ee1measure6a-h3"
+        ],
+        "title": "Convert",
+        "text": "We then need to convert the $$16$$ inches to feet.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1a1ee1measure6a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1$$ foot, $$4$$ inches"
+        ],
+        "dependencies": [
+            "a1a1ee1measure6a-h4"
+        ],
+        "title": "Convert",
+        "text": "What do we get after the conversion?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$1$$ foot, $$4$$ inches",
+            "$$1$$ foot, $$6$$ inches",
+            "$$1$$ foot, $$8$$ inches"
+        ]
+    },
+    {
+        "id": "a1a1ee1measure6a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a1a1ee1measure6a-h5"
+        ],
+        "title": "Add",
+        "text": "We then need to add $$24$$ feet with $$1$$ foot, $$4$$ inches.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1a1ee1measure6a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$25$$ feet, $$4$$ inches"
+        ],
+        "dependencies": [
+            "a1a1ee1measure6a-h6"
+        ],
+        "title": "Add",
+        "text": "What do we get after the addition?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$24$$ feet, $$3$$ inches",
+            "$$25$$ feet, $$4$$ inches",
+            "$$25$$ feet, $$8$$ inches",
+            "$$25$$ feet"
+        ]
+    }
+]

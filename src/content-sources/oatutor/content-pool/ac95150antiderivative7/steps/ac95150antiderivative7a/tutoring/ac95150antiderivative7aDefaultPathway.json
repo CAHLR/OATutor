@@ -1,0 +1,81 @@
+[
+    {
+        "id": "ac95150antiderivative7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sums and Differences",
+        "text": "Rewrite the integrand $$\\frac{x^2+4\\sqrt[3]{x}}{x}$$ as $$\\frac{x^2}{x}+\\frac{4\\sqrt[3]{x}}{x}$$ and then use the sums and differences property of indefinite integrals to rewrite the integrands again.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ac95150antiderivative7a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\int x \\,dx+4*\\int \\frac{\\sqrt[3]{x}}{x} \\,dx$$"
+        ],
+        "dependencies": [
+            "ac95150antiderivative7a-h1"
+        ],
+        "title": "Sums and Differences",
+        "text": "Using the properties of indefinite integrals of sums and differeces, $$\\int \\frac{x^2+4\\sqrt[3]{x}}{x} \\,dx$$ can be rewritten as $$___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\int x \\,dx+4*\\int \\frac{\\sqrt[3]{x}}{x} \\,dx$$",
+            "$$4*\\int \\frac{\\sqrt[3]{x}}{x} \\,dx$$"
+        ]
+    },
+    {
+        "id": "ac95150antiderivative7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac95150antiderivative7a-h2"
+        ],
+        "title": "Constant Multiplies",
+        "text": "Next, use the properties of constant multiples so you can rewrite the problem again.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ac95150antiderivative7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ac95150antiderivative7a-h3"
+        ],
+        "title": "Constant Multiplies",
+        "text": "Using the constant multiples properties of indefinite integrals, $$\\int x \\,dx+\\int \\frac{4\\sqrt[3]{x}}{x} \\,dx$$ can be rewritten as $$___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ac95150antiderivative7a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ac95150antiderivative7a-h4"
+        ],
+        "title": "Power Rule",
+        "text": "Next, use the power rule.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ac95150antiderivative7a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ac95150antiderivative7a-h5"
+        ],
+        "title": "Adding Constants",
+        "text": "Make sure to add \"+C\" after your intial antiderivative to account for the unknown constant.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

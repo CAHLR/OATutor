@@ -1,0 +1,81 @@
+[
+    {
+        "id": "a0098c7real18b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "Substitute $$z=5$$ into the equation to obtain $$4\\left(5\\right)-2\\left(5\\right) \\left(1+4\\right)-36$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0098c7real18b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a0098c7real18b-h1"
+        ],
+        "title": "Parentheses",
+        "text": "What is $$1+4$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0098c7real18b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20$$"
+        ],
+        "dependencies": [
+            "a0098c7real18b-h2"
+        ],
+        "title": "Multiplication",
+        "text": "What is 4(5)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0098c7real18b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-50$$"
+        ],
+        "dependencies": [
+            "a0098c7real18b-h3"
+        ],
+        "title": "Multiplication",
+        "text": "What is $$-2(5)(5)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0098c7real18b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-66$$"
+        ],
+        "dependencies": [
+            "a0098c7real18b-h3",
+            "a0098c7real18b-h4"
+        ],
+        "title": "Addition",
+        "text": "What is $$20-50-36$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

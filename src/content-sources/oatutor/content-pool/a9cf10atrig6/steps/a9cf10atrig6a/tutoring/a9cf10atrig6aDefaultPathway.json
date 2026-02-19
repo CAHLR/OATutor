@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a9cf10atrig6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Intuition",
+        "text": "We could use other identities, but knowing $$tan\\theta=\\frac{sintheta}{costheta}$$ and we see a sec\u03b8, let's try our best to simplify this expression first.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig6a-h1"
+        ],
+        "title": "Identity",
+        "text": "$$tan\\theta=\\frac{sintheta}{costheta}$$, $$sec\\theta=\\frac{1}{costheta}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig6a-h2"
+        ],
+        "title": "Substitute",
+        "text": "Substitute identity into 2tan\u03b8sec\u03b8.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig6a-h3"
+        ],
+        "title": "Simplify",
+        "text": "Simplify $$\\frac{sintheta}{costheta} \\frac{1}{costheta}=\\frac{2sintheta}{cos^2\\left(\\theta\\right)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig6a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig6a-h4"
+        ],
+        "title": "Identity",
+        "text": "How can we write $$cos^2\\left(\\theta\\right)$$ in terms of sin\u03b8?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig6a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig6a-h5"
+        ],
+        "title": "Substitute",
+        "text": "Substitute identity into $$\\frac{2sintheta}{cos^2\\left(\\theta\\right)}=\\frac{2sintheta}{1-sin^2\\left(\\theta\\right)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

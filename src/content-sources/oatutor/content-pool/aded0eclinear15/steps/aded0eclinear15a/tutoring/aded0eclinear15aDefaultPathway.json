@@ -1,0 +1,59 @@
+[
+    {
+        "id": "aded0eclinear15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using Addition Property of Inequality",
+        "text": "Add $$\\frac{3}{4}$$ to both sides of the inequality. Then, simplify to get $$x \\geq \\frac{11}{12}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aded0eclinear15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aded0eclinear15a-h1"
+        ],
+        "title": "Writing the Left Endpoint",
+        "text": "Since the inequality includes a greater than or equal to symbol, $$ \\geq $$, we will need to use a bracket to denote the left endpoint.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aded0eclinear15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aded0eclinear15a-h2"
+        ],
+        "title": "Writing the Right Endpoint",
+        "text": "There is no upper end to the solution to this inequality so we express it using the infinity symbol.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aded0eclinear15a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "[11/12, inf)"
+        ],
+        "dependencies": [
+            "aded0eclinear15a-h3"
+        ],
+        "title": "Displaying Final Interval Notation",
+        "text": "What is the interval notation for the inequality?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "(3/4, inf)",
+            "[11/12, inf)",
+            "[7/6, inf)",
+            "(-inf, 7/12)"
+        ]
+    }
+]

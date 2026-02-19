@@ -1,0 +1,84 @@
+[
+    {
+        "id": "a9cf10atrig28a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identity",
+        "text": "$$sin(-x)=-sin(x)$$, $$sin^2\\left(x\\right)+cos^2\\left(x\\right)=1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig28a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig28a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Substitute identity into $$\\frac{cosx}{1+\\operatorname{sinnegneg}\\left(x\\right)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig28a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig28a-h2"
+        ],
+        "title": "Simplify",
+        "text": "$$\\frac{cosx}{1-sinx}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig28a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig28a-h3"
+        ],
+        "title": "Solve",
+        "text": "Multiply both sides of the equation by cosx: $$1+sinx=\\frac{cos^2\\left(x\\right)}{1-sinx}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig28a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig28a-h4"
+        ],
+        "title": "Solve",
+        "text": "Divide both sides of the equation by $$1+sinx$$: $$1=\\frac{\\frac{cos^2\\left(x\\right)}{1-sinx}}{1+sinx}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig28a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig28a-h5"
+        ],
+        "title": "Solve",
+        "text": "Multiply both sides by $$1-sin^2\\left(x\\right)$$: $$1-sin^2\\left(x\\right)=cos^2\\left(x\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig28a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig28a-h6"
+        ],
+        "title": "Compare",
+        "text": "We have $$1-sin^2\\left(x\\right)=cos^2\\left(x\\right)$$ and the identity states that $$sin^2\\left(x\\right)+cos^2\\left(x\\right)=1$$, so the original equation is true. Proved.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

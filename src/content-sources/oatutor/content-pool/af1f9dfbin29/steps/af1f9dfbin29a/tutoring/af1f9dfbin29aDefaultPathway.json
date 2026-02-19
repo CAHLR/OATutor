@@ -1,0 +1,48 @@
+[
+    {
+        "id": "af1f9dfbin29a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Binomial Theorem",
+        "text": "Recollect the definition of the binomial theorem which gives us sum{k\\=0}{n}{nCk*x**{n-k}*y**k} for the binomial expansion $$\\left(x+y\\right)^n$$. How many $$\\frac{variables}{constants}$$ can this expansion have?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af1f9dfbin29a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af1f9dfbin29a-h1"
+        ],
+        "title": "Simplifying terms",
+        "text": "Simplify each term so that it is the standard form for a binomial expansion and one of them will not be simplifiable.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af1f9dfbin29a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\left(x^3+2y^2-z\\right)^5$$"
+        ],
+        "dependencies": [
+            "af1f9dfbin29a-h1",
+            "af1f9dfbin29a-h2"
+        ],
+        "title": "Final answer",
+        "text": "What is the final answer?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$x^2-2x+1$$",
+            "$$\\left(\\sqrt{a}+4\\sqrt{a}-5\\right)^8$$",
+            "$$\\left(x^3+2y^2-z\\right)^5$$",
+            "$$\\left(3x^2-\\sqrt{2y^3}\\right)^{12}$$"
+        ]
+    }
+]

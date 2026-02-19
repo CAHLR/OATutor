@@ -1,0 +1,86 @@
+[
+    {
+        "id": "a3d3e89log30a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exponential Form",
+        "text": "Rewrite $$f(x)=\\ln\\left(x\\right)$$ in exponential form to reason the answer to this question.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log30a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log30a-h1"
+        ],
+        "title": "Formula",
+        "text": "Recall relationship between logarithmic form and exponential form.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log30a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "a3d3e89log30a-h2"
+        ],
+        "title": "Common Logarithm",
+        "text": "If we only have $$\\ln\\left(x\\right)$$, i.e., we don't see a base $$b$$ as in logb(x), what is the base?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log30a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$b=10$$, $$x=x$$, $$y=f(x)$$"
+        ],
+        "dependencies": [
+            "a3d3e89log30a-h3"
+        ],
+        "title": "Identify Variables",
+        "text": "What is $$b$$? What is $$x$$? What is $$y$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$b=10$$, $$x=x$$, $$y=f(x)$$",
+            "$$b=0$$, $$x=2$$, $$y=f(x)$$"
+        ]
+    },
+    {
+        "id": "a3d3e89log30a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log30a-h4"
+        ],
+        "title": "Substitute",
+        "text": "We have $${10}^{f{\\left(x\\right)}}=x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log30a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log30a-h5"
+        ],
+        "title": "Substitute",
+        "text": "Substitute $$f(x)=0$$: $${10}^0=1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

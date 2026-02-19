@@ -1,0 +1,81 @@
+[
+    {
+        "id": "ab4750azeropoly18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using the rational root theorem",
+        "text": "What are the possible rational roots when we use the rational root theorem given the leading coeffcient and the constant term?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab4750azeropoly18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab4750azeropoly18a-h1"
+        ],
+        "title": "Using the rational roots",
+        "text": "How can we verify if the possible rational roots we have are actual rational roots?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab4750azeropoly18a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "ab4750azeropoly18a-h2"
+        ],
+        "title": "Possible roots",
+        "text": "List one of the positive rational roots (choose the smallest one that works)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab4750azeropoly18a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "ab4750azeropoly18a-h2"
+        ],
+        "title": "Possible roots",
+        "text": "List one of the negative rational roots (choose the largest one that works)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab4750azeropoly18a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(2, 3, -1, -2)$$"
+        ],
+        "dependencies": [
+            "ab4750azeropoly18a-h4"
+        ],
+        "title": "Final roots",
+        "text": "What values are the roots?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$(-2, 3, 1, 2)$$",
+            "(2,3,1,2)",
+            "$$(2, -3, 1, 2)$$",
+            "$$(2, 3, -1, -2)$$"
+        ]
+    }
+]

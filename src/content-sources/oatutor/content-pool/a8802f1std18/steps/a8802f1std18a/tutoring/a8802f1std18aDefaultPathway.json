@@ -1,0 +1,62 @@
+[
+    {
+        "id": "a8802f1std18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "P-Value & Null Hypothesis",
+        "text": "The problem says to test at a 1% significance level, meaning that the $$p-value$$ threshold is $$0.01$$. If $$p-value$$ < $$0.01$$, reject $$H_0$$. This means that you would be rejecting $$\u03bc_1$$ $$=$$ $$\u03bc_2$$, and the means are different. If $$p-value$$ $$ \\geq $$ $$0.01$$, accept $$H_0$$ such that $$\u03bc_1$$ $$=$$ $$\u03bc_2$$, and the means are the same.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8802f1std18a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.0011$$"
+        ],
+        "dependencies": [
+            "a8802f1std18a-h1"
+        ],
+        "title": "Finding the P-Value",
+        "text": "Using a calculator, what is the $$p-value$$? Round to four decimal places.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8802f1std18a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Less than"
+        ],
+        "dependencies": [
+            "a8802f1std18a-h2"
+        ],
+        "title": "Testing the Null Hypothesis",
+        "text": "Is the $$p-value$$ greater than or less than $$0.01$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Greater than",
+            "Less than"
+        ]
+    },
+    {
+        "id": "a8802f1std18a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8802f1std18a-h3"
+        ],
+        "title": "Rejecting or Accepting the Null Hypothesis",
+        "text": "The professor was correct. The evidence shows that the mean of the final exam scores for the online class is lower than that of the face-to-face class. At the 5% level of significance, from the sample data, there is sufficient evidence to conclude that the mean of the final exam scores for the online class is less than the mean of final exam scores of the face-to-face class.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

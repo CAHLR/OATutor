@@ -1,0 +1,65 @@
+[
+    {
+        "id": "abcb484geometric9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Writing Terms of a Geometric Sequence",
+        "text": "The sequence can be written in terms of the initial term and the common ratio r: $$3$$, $$3r$$, $$3r^2$$, $$3r^3$$, ...",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abcb484geometric9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abcb484geometric9a-h1"
+        ],
+        "title": "Geometric Sequence Formula",
+        "text": "The nth term of a geometric sequence is given by the explicit formula: $$a_n=a_1 r^{n-1}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abcb484geometric9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abcb484geometric9a-h2"
+        ],
+        "title": "Geometric Sequence Formula",
+        "text": "Plug in $$a_4$$ for $$a_n$$ and $$3r^3$$ for $$a_1 r^{n-1}$$ in the formula.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abcb484geometric9a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "abcb484geometric9a-h3"
+        ],
+        "title": "Solving for Common Ratio",
+        "text": "Using the fact that $$a_4=24$$, solve for $$r$$, the common ratio, in the equation. What does it equal?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abcb484geometric9a-h5",
+        "type": "hint",
+        "dependencies": [
+            "abcb484geometric9a-h4"
+        ],
+        "title": "Finding Second Term",
+        "text": "Find the second term by multiplying the first term by the common ratio.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
