@@ -1,0 +1,104 @@
+[
+    {
+        "id": "ad9fdaecorr23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Concept refresher",
+        "text": "Conditional probability divides the joint frequency by the conditioning group total.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad9fdaecorr23a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Chronically absent students"
+        ],
+        "dependencies": [
+            "ad9fdaecorr23a-h1"
+        ],
+        "title": "H1: Concept orientation",
+        "text": "This question focuses on outcomes within which subgroup?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Counseling recipients",
+            "Chronically absent students",
+            "$$Non-absent$$ students",
+            "All students"
+        ]
+    },
+    {
+        "id": "ad9fdaecorr23a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$84$$"
+        ],
+        "dependencies": [
+            "ad9fdaecorr23a-h2"
+        ],
+        "title": "H2: Data navigation",
+        "text": "Which cell represents counseling + chronic absence?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$84$$",
+            "$$216$$",
+            "$$126$$",
+            "$$300$$"
+        ]
+    },
+    {
+        "id": "ad9fdaecorr23a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$210$$"
+        ],
+        "dependencies": [
+            "ad9fdaecorr23a-h3"
+        ],
+        "title": "H3: Computational reasoning",
+        "text": "Which denominator is used?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$84$$",
+            "$$210$$",
+            "$$300$$",
+            "1,000"
+        ]
+    },
+    {
+        "id": "ad9fdaecorr23a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Counseling rates among absent students"
+        ],
+        "dependencies": [
+            "ad9fdaecorr23a-h4"
+        ],
+        "title": "H4: Interpretation check",
+        "text": "Does the result represent:",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Counseling rates among absent students",
+            "Absence rates among counseled students",
+            "Joint counseling probability",
+            "Marginal counseling rates"
+        ]
+    }
+]

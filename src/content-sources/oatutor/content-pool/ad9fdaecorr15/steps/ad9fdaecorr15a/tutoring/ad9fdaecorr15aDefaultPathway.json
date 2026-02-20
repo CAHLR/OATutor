@@ -1,0 +1,102 @@
+[
+    {
+        "id": "ad9fdaecorr15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Concept refresher",
+        "text": "Joint probability requires two outcomes; marginal probability involves only one.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad9fdaecorr15a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Two or more"
+        ],
+        "dependencies": [
+            "ad9fdaecorr15a-h1"
+        ],
+        "title": "H1: Concept orientation",
+        "text": "Joint probability requires how many variables?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "One",
+            "Two or more",
+            "Three",
+            "Any number"
+        ]
+    },
+    {
+        "id": "ad9fdaecorr15a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "ad9fdaecorr15a-h2"
+        ],
+        "title": "H2: Data navigation",
+        "text": "Did the intern include another variable such as course failure?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ad9fdaecorr15a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Interior cells"
+        ],
+        "dependencies": [
+            "ad9fdaecorr15a-h3"
+        ],
+        "title": "H3: Computational reasoning",
+        "text": "Joint probability is calculated using:",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Interior cells",
+            "Row totals only",
+            "Column totals only",
+            "Marginal percentages"
+        ]
+    },
+    {
+        "id": "ad9fdaecorr15a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Marginal"
+        ],
+        "dependencies": [
+            "ad9fdaecorr15a-h4"
+        ],
+        "title": "H4: Interpretation check",
+        "text": "If only absenteeism is analyzed, the probability is:",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Joint",
+            "Conditional",
+            "Marginal",
+            "Independent"
+        ]
+    }
+]

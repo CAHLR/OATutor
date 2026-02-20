@@ -1,0 +1,104 @@
+[
+    {
+        "id": "ad9fdaecorr12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Concept refresher",
+        "text": "Joint values come from interior cells; marginal totals aggregate across categories.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad9fdaecorr12a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Overlapping categories"
+        ],
+        "dependencies": [
+            "ad9fdaecorr12a-h1"
+        ],
+        "title": "H1: Concept orientation",
+        "text": "Joint values represent:",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "One variable totals",
+            "Overlapping categories",
+            "Percentages",
+            "Conditional rates"
+        ]
+    },
+    {
+        "id": "ad9fdaecorr12a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A totals $$\\frac{row}{column}$$"
+        ],
+        "dependencies": [
+            "ad9fdaecorr12a-h2"
+        ],
+        "title": "H2: Data navigation",
+        "text": "Is $$930$$ located in:",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "An interior cell",
+            "A totals $$\\frac{row}{column}$$",
+            "Female row only",
+            "AP row only"
+        ]
+    },
+    {
+        "id": "ad9fdaecorr12a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "ad9fdaecorr12a-h3"
+        ],
+        "title": "H3: Computational reasoning",
+        "text": "Does $$930$$ combine multiple subgroups?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No",
+            "Only females",
+            "Only males"
+        ]
+    },
+    {
+        "id": "ad9fdaecorr12a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All AP students"
+        ],
+        "dependencies": [
+            "ad9fdaecorr12a-h4"
+        ],
+        "title": "H4: Interpretation check",
+        "text": "Therefore, $$930$$ represents:",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Female AP students",
+            "Male AP students",
+            "All AP students",
+            "$$Non-AP$$ females"
+        ]
+    }
+]

@@ -1,0 +1,56 @@
+[
+    {
+        "id": "a2b6a8bcorr9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sample size effect",
+        "text": "Larger samples make it easier to detect significance. A smaller correlation can be significant if based on a large enough sample.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2b6a8bcorr9a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Study B"
+        ],
+        "dependencies": [
+            "a2b6a8bcorr9a-h1"
+        ],
+        "title": "Compare samples",
+        "text": "Which study has more participants?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Study A",
+            "Study B"
+        ]
+    },
+    {
+        "id": "a2b6a8bcorr9a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Study B, because its correlation is significant even though it is smaller"
+        ],
+        "dependencies": [
+            "a2b6a8bcorr9a-h2"
+        ],
+        "title": "Compare significance",
+        "text": "Which study\u2019s result is statistically significant?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Study A, because it has the larger correlation",
+            "Study B, because its correlation is significant even though it is smaller",
+            "Both studies are statistically significant",
+            "Neither study is statistically significant"
+        ]
+    }
+]

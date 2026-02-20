@@ -1,0 +1,81 @@
+[
+    {
+        "id": "a2b6a8bcorr4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "No linear link",
+        "text": "A near-zero correlation means no linear relationship. It doesn\u2019t mean the variables never change together; just that there\u2019s no consistent linear pattern",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2b6a8bcorr4a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No, there is no consistent increase or $$decrease--$$ the changes don\u2019t follow a pattern"
+        ],
+        "dependencies": [
+            "a2b6a8bcorr4a-h1"
+        ],
+        "title": "Check for systematic change",
+        "text": "If per capita consumption of margarine increases, does divorce rate in Maine systematically increase or decrease?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes, it consistently increases as margarine consumption rises",
+            "Yes, it consistently decreases as margarine consumption rises",
+            "No, there is no consistent increase or $$decrease--$$ the changes don\u2019t follow a pattern",
+            "Yes, but only when margarine consumption reaches a certain threshold."
+        ]
+    },
+    {
+        "id": "a2b6a8bcorr4a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes, because a $$near-zero$$ correlation suggests the relationship might be due to random variation"
+        ],
+        "dependencies": [
+            "a2b6a8bcorr4a-h2"
+        ],
+        "title": "Identify randomness",
+        "text": "Could random variation explain the data pattern?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes, because a $$near-zero$$ correlation suggests the relationship might be due to random variation",
+            "No, random variation can never cause a correlation near zero",
+            "No, a zero correlation always proves the variables are unrelated in every possible way",
+            "Yes, but only if both variables never change over time."
+        ]
+    },
+    {
+        "id": "a2b6a8bcorr4a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It would appear scattered randomly with no visible pattern"
+        ],
+        "dependencies": [
+            "a2b6a8bcorr4a-h3"
+        ],
+        "title": "Scatterplot look",
+        "text": "How would a scatterplot look, tightly patterned or scattered randomly?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "It would show a clear upward line",
+            "It would show a clear downward line",
+            "It would be tightly clustered around a curve but not a line",
+            "It would appear scattered randomly with no visible pattern"
+        ]
+    }
+]
