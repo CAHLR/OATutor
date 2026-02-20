@@ -1,0 +1,102 @@
+[
+    {
+        "id": "ad9fdaeprob3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Concept refresher",
+        "text": "There are three methods for estimating probability: subjective, a priori, and empirical probability. Two of these require calculation, while one does not.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad9fdaeprob3a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "ad9fdaeprob3a-h1"
+        ],
+        "title": "H1: Concept orientation",
+        "text": "Is the estimate derived from actual observed program outcomes?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ad9fdaeprob3a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "ad9fdaeprob3a-h2"
+        ],
+        "title": "H2: Data navigation",
+        "text": "Does the dataset include counts of students who succeeded and did not succeed?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No",
+            "Only projections",
+            "Only theoretical models"
+        ]
+    },
+    {
+        "id": "ad9fdaeprob3a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "ad9fdaeprob3a-h3"
+        ],
+        "title": "H3: Computational reasoning",
+        "text": "Is the probability calculated using a ratio of observed successes to total participants?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No",
+            "Only estimated subjectively",
+            "Only through simulation"
+        ]
+    },
+    {
+        "id": "ad9fdaeprob3a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Empirical"
+        ],
+        "dependencies": [
+            "ad9fdaeprob3a-h4"
+        ],
+        "title": "H4: Interpretation check",
+        "text": "Which probability approach relies on observed frequencies?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Empirical",
+            "A priori",
+            "Subjective",
+            "Conditional"
+        ]
+    }
+]

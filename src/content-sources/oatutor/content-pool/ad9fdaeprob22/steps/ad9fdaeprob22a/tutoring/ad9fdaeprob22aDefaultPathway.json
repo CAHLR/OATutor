@@ -1,0 +1,100 @@
+[
+    {
+        "id": "ad9fdaeprob22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Concept refresher",
+        "text": "Conditional probability depends on which variable is used as the condition.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad9fdaeprob22a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Conditioning grou"
+        ],
+        "dependencies": [
+            "ad9fdaeprob22a-h1"
+        ],
+        "title": "H1: Concept orientation",
+        "text": "Conditional probability depends on:",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Sample size only",
+            "Conditioning group",
+            "Joint frequencies only",
+            "Random variation"
+        ]
+    },
+    {
+        "id": "ad9fdaeprob22a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "ad9fdaeprob22a-h2"
+        ],
+        "title": "H2: Data navigation",
+        "text": "Do the two questions focus on the same subgroup?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ad9fdaeprob22a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "ad9fdaeprob22a-h3"
+        ],
+        "title": "H3: Computational reasoning",
+        "text": "Do they use the same denominator?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ad9fdaeprob22a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The denominator and meaning"
+        ],
+        "dependencies": [
+            "ad9fdaeprob22a-h4"
+        ],
+        "title": "H4: Interpretation check",
+        "text": "Changing the condition changes:",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "The numerator only",
+            "The denominator and meaning",
+            "The sample size",
+            "The marginal totals only"
+        ]
+    }
+]

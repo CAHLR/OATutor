@@ -1,0 +1,104 @@
+[
+    {
+        "id": "ad9fdaeprob9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Concept refresher",
+        "text": "Column percentages are used when conditioning on a column total.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad9fdaeprob9a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The group named in the question"
+        ],
+        "dependencies": [
+            "ad9fdaeprob9a-h1"
+        ],
+        "title": "H1: Concept orientation",
+        "text": "Conditional percentages are calculated within:",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "The entire sample",
+            "The group named in the question",
+            "The explanatory variable",
+            "The marginal totals"
+        ]
+    },
+    {
+        "id": "ad9fdaeprob9a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "AP students"
+        ],
+        "dependencies": [
+            "ad9fdaeprob9a-h2"
+        ],
+        "title": "H2: Data navigation",
+        "text": "Which group forms the condition here?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Female students",
+            "Male students",
+            "AP students",
+            "$$Non-AP$$ students"
+        ]
+    },
+    {
+        "id": "ad9fdaeprob9a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Total AP students"
+        ],
+        "dependencies": [
+            "ad9fdaeprob9a-h3"
+        ],
+        "title": "H3: Computational reasoning",
+        "text": "Which denominator should be used?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Total females",
+            "Total males",
+            "Total AP students",
+            "Total district enrollment"
+        ]
+    },
+    {
+        "id": "ad9fdaeprob9a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Gender composition within AP"
+        ],
+        "dependencies": [
+            "ad9fdaeprob9a-h4"
+        ],
+        "title": "H4: Interpretation check",
+        "text": "This percentage describes:",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "AP participation within gender",
+            "Gender composition within AP",
+            "Overall AP enrollment",
+            "Joint probability of gender and AP"
+        ]
+    }
+]

@@ -1,0 +1,102 @@
+[
+    {
+        "id": "ad9fdaeprob4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Concept refresher",
+        "text": "There are three methods for estimating probability: subjective, a priori, and empirical probability. Two of these require calculation, while one does not.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad9fdaeprob4a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Observed retention data"
+        ],
+        "dependencies": [
+            "ad9fdaeprob4a-h1"
+        ],
+        "title": "H1: Concept orientation",
+        "text": "Which estimate is grounded in measurable evidence?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Survey predictions",
+            "Observed retention data"
+        ]
+    },
+    {
+        "id": "ad9fdaeprob4a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Both equally"
+        ],
+        "dependencies": [
+            "ad9fdaeprob4a-h2"
+        ],
+        "title": "H2: Data navigation",
+        "text": "Which analyst uses historical datasets rather than opinions?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Analyst using surveys",
+            "Analyst using retention records",
+            "Both equally",
+            "Neither"
+        ]
+    },
+    {
+        "id": "ad9fdaeprob4a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Retention data"
+        ],
+        "dependencies": [
+            "ad9fdaeprob4a-h3"
+        ],
+        "title": "H3: Computational reasoning",
+        "text": "Which estimate could be calculated using frequency ratios?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Survey responses",
+            "Retention data",
+            "Expert panels",
+            "Conference feedback"
+        ]
+    },
+    {
+        "id": "ad9fdaeprob4a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Empirical"
+        ],
+        "dependencies": [
+            "ad9fdaeprob4a-h4"
+        ],
+        "title": "H4: Interpretation check",
+        "text": "Observed outcome analysis probesponds to which approach?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Subjective",
+            "Empirical",
+            "A priori",
+            "Joint"
+        ]
+    }
+]

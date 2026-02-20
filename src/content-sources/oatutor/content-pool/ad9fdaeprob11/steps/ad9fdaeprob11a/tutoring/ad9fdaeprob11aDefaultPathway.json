@@ -1,0 +1,104 @@
+[
+    {
+        "id": "ad9fdaeprob11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Concept refresher",
+        "text": "Percentages should be calculated in the direction of the explanatory variable.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad9fdaeprob11a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Explanatory groups"
+        ],
+        "dependencies": [
+            "ad9fdaeprob11a-h1"
+        ],
+        "title": "H1: Concept orientation",
+        "text": "When comparing outcomes across groups, percentages are calculated within:",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Outcome categories",
+            "Explanatory groups",
+            "Totals only",
+            "Joint cells"
+        ]
+    },
+    {
+        "id": "ad9fdaeprob11a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Gender"
+        ],
+        "dependencies": [
+            "ad9fdaeprob11a-h2"
+        ],
+        "title": "H2: Data navigation",
+        "text": "Which variable defines the comparison groups?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "AP enrollment",
+            "Gender",
+            "Total enrollment",
+            "Course level"
+        ]
+    },
+    {
+        "id": "ad9fdaeprob11a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Total students per gender"
+        ],
+        "dependencies": [
+            "ad9fdaeprob11a-h3"
+        ],
+        "title": "H3: Computational reasoning",
+        "text": "Which denominator is used?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Total AP students",
+            "Total students per gender",
+            "District enrollment",
+            "$$Non-AP$$ students"
+        ]
+    },
+    {
+        "id": "ad9fdaeprob11a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Participation rates within genders"
+        ],
+        "dependencies": [
+            "ad9fdaeprob11a-h4"
+        ],
+        "title": "H4: Interpretation check",
+        "text": "This percentage allows analysts to compare:",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Gender composition of AP",
+            "Participation rates within genders",
+            "Marginal enrollment totals",
+            "Joint enrollment counts"
+        ]
+    }
+]
