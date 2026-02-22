@@ -18,10 +18,11 @@ import {
     ThemeContext,
     USER_ID_STORAGE_KEY,
 } from "./config/config.js";
-
-import { ThemeProvider } from "@material-ui/core/styles";
-import { theme } from './theme';
-
+import {
+    createTheme,
+    responsiveFontSizes,
+    ThemeProvider,
+} from "@material-ui/core/styles";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -46,10 +47,12 @@ import experimentalBKTParams from "./content-sources/oatutor/bkt-params/experime
 import { heuristic as defaultHeuristic } from "./models/BKT/problem-select-heuristics/defaultHeuristic.js";
 import { heuristic as experimentalHeuristic } from "./models/BKT/problem-select-heuristics/experimentalHeuristic.js";
 import BrowserStorage from "./util/browserStorage";
-import tableOfContents from "@components/tableOfContents";
 // ### END CUSTOMIZABLE IMPORTS ###
 
 loadFirebaseEnvConfig(config);
+
+let theme = createTheme();
+theme = responsiveFontSizes(theme);
 
 const queryParamToContext = {
     token: "jwt",
@@ -426,14 +429,6 @@ class App extends React.Component {
                                             />
                                         )}
                                     />
-
-                                    <Route 
-                                        exact 
-                                        path = "/table-of-contents"
-                                        component={tableOfContents}
-
-                                    />
-
                                     <Route component={NotFound} />
                                 </Switch>
                             </div>
