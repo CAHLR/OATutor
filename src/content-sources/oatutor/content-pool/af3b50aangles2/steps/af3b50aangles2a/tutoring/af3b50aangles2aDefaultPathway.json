@@ -1,0 +1,66 @@
+[
+    {
+        "id": "af3b50aangles2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Positive vs Negative",
+        "text": "A positive angle means you rotate counterclockwise from the positive x-axis, while a negative angle means you rotate clockwise.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af3b50aangles2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af3b50aangles2a-h1"
+        ],
+        "title": "Starting Axis",
+        "text": "When measuring angles in standard position, the angle starts from the positive x-axis. Think about the direction you rotate for positive and negative angles.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af3b50aangles2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Positive"
+        ],
+        "dependencies": [
+            "af3b50aangles2a-h2"
+        ],
+        "title": "Clockwise",
+        "text": "Imagine starting at the positive x-axis. If you rotate counterclockwise, is the angle positive or negative?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Positive",
+            "Negative"
+        ]
+    },
+    {
+        "id": "af3b50aangles2a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Negative"
+        ],
+        "dependencies": [
+            "af3b50aangles2a-h3"
+        ],
+        "title": "Counterclockwise",
+        "text": "Now, imagine rotating clockwise from the positive x-axis. Is this a positive or negative angle?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Positive",
+            "Negative"
+        ]
+    }
+]

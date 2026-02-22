@@ -1,0 +1,38 @@
+[
+    {
+        "id": "a005bd5real21a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "f(x) $$input=hours$$ and f(x) $$output=miles$$. g(y) $$input=miles$$ and g(y) $$output=gallons$$ on gas."
+        ],
+        "dependencies": [],
+        "title": "Define Input and Output",
+        "text": "Define the input and output for each function.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "f(x) $$input=miles$$ and f(x) $$output=hours$$. g(y) $$input=gallons$$ on gas and g(y) $$output=miles$$.",
+            "f(x) $$input=hours$$ and f(x) $$output=miles$$. g(y) $$input=miles$$ and g(y) $$output=gallons$$ on gas."
+        ]
+    },
+    {
+        "id": "a005bd5real21a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "g(f(x))"
+        ],
+        "dependencies": [
+            "a005bd5real21a-h1"
+        ],
+        "title": "Composition of Functions",
+        "text": "We see that f(x) has the same output as the input of g(y) (miles). So, g(f(x)) is meaningful.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

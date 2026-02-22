@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ac561a1systems28a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Subsititute",
+        "text": "First, multiply by $$-1$$ on both sides of the second equation, then substiute $$-2y$$ for $$x$$ in the first equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac561a1systems28a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac561a1systems28a-h1"
+        ],
+        "title": "Simplify and Solve",
+        "text": "Next, simplify the equation so that all terms are squared properly and all terms are on the left side.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac561a1systems28a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "ac561a1systems28a-h2"
+        ],
+        "title": "Quadratic equation",
+        "text": "Now, use the quadratic equation to find the intercepts of the function. Are there any real solutions?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ac561a1systems28a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ac561a1systems28a-h3"
+        ],
+        "title": "Therefore, since there are no real solutions for $$y$$, the system of nonlinear equations has no solutions.",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

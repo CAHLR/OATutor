@@ -1,0 +1,79 @@
+[
+    {
+        "id": "a6014eaSubAdd15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Addition property of equality",
+        "text": "When you add the same quantity to both sides of an equation, you still have equality.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6014eaSubAdd15a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$b-0.47+0.47=-2.1+0.47$$"
+        ],
+        "dependencies": [
+            "a6014eaSubAdd15a-h1"
+        ],
+        "title": "Addition",
+        "text": "Add $$0.47$$ to each side of the equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6014eaSubAdd15a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$b=-1.63$$"
+        ],
+        "dependencies": [
+            "a6014eaSubAdd15a-h2"
+        ],
+        "title": "Simplification",
+        "text": "Simplify the equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6014eaSubAdd15a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6014eaSubAdd15a-h3"
+        ],
+        "title": "Verification",
+        "text": "Check whether the result is a solution of the equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6014eaSubAdd15a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a6014eaSubAdd15a-h4"
+        ],
+        "title": "Verification",
+        "text": "Check whether $$-1.63-0.47$$ equals $$-2.1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

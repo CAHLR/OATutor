@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a88aae9QuadEq29a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Procedure",
+        "text": "To solve the quadratic inequality, the procedure is as follows. Solve for the roots of the quadratic formula, divide the number line into intervals based on the roots of the quadratic formula, test the values of each interval to see if they are positive or negative, and determine the intervals where the inequality is correct.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a88aae9QuadEq29a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(1~3*i*sqrt(3))/2"
+        ],
+        "dependencies": [
+            "a88aae9QuadEq29a-h1"
+        ],
+        "title": "Quadratic Roots",
+        "text": "What are the roots of the quadratic equation? Use ~ for $$\\frac{plus}{minus}$$ and i for imaginary numbers in the answer. Write the answer in the form of x1,x2 if applicable as well.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a88aae9QuadEq29a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a88aae9QuadEq29a-h2"
+        ],
+        "title": "Interval Checking",
+        "text": "If our roots are comprised of imaginary numbers, then that root does not seperate two intervals. In other words, we can ignore the imaginary solutions.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a88aae9QuadEq29a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-7$$"
+        ],
+        "dependencies": [
+            "a88aae9QuadEq29a-h3"
+        ],
+        "title": "Interval Checking",
+        "text": "If we plug in $$x=0$$, what will our value be?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a88aae9QuadEq29a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "None"
+        ],
+        "dependencies": [
+            "a88aae9QuadEq29a-h4"
+        ],
+        "title": "Solution",
+        "text": "Since we only have $$1$$ interval and it is negative, where will our inequality be true?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

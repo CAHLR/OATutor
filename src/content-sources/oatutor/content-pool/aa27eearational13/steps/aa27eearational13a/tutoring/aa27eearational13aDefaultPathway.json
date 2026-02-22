@@ -1,0 +1,48 @@
+[
+    {
+        "id": "aa27eearational13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the LCD",
+        "text": "LCD of $$\\frac{y}{y+6}$$, $$\\frac{72}{y^2-36}$$, and $$4$$ is $$\\left(y+6\\right) \\left(y-6\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa27eearational13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aa27eearational13a-h1"
+        ],
+        "title": "Clear All Fractions",
+        "text": "We must multiply each fraction by the LCD. We get $$y(y-6)=72+4\\left(y^2-36\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa27eearational13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aa27eearational13a-h2"
+        ],
+        "title": "Simplify the Equation",
+        "text": "Let's simplify this equation: $$y^2-6y=72+4y^2-144$$. This becomes $$y^2+2y-24=0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa27eearational13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aa27eearational13a-h3"
+        ],
+        "title": "Solve the Equation",
+        "text": "Let's factor to solve. $$0=\\left(y+6\\right) \\left(y-4\\right)$$. $$y=-6$$, $$y=4$$. $$y=-6$$ is extraneous since it is in the original denominator. So, our solution is $$y=4$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

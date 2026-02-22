@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a104861trifactor25a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Perfect Square",
+        "text": "This equation is a perfect square",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a104861trifactor25a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a104861trifactor25a-h1"
+        ],
+        "title": "Common Factor",
+        "text": "Take out the $$10$$ to make $$\\operatorname{10}\\left(k^2+8k+16\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a104861trifactor25a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a104861trifactor25a-h2"
+        ],
+        "title": "Factors",
+        "text": "In this equation $$z\\left({ax}^2+bx+c\\right)$$ the square root of a and c are $$1$$ and $$4$$ respectively.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a104861trifactor25a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a104861trifactor25a-h3"
+        ],
+        "title": "Plug in",
+        "text": "Plug into the perfect square simplified form $${z\\left(nx+m\\right)}^2$$ where $$n$$ is the square root of a and $$m$$ is the square root of c",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]
