@@ -1,0 +1,36 @@
+[
+    {
+        "id": "acbe785cha2c-1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Fairness",
+        "text": "You need a number that tells you: \u201cHow weird is this result under the fair coin model?\u201d",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acbe785cha2c-2",
+        "type": "hint",
+        "dependencies": [
+            "acbe785cha2c-1"
+        ],
+        "title": "Observe",
+        "text": "Compare: observed heads vs expected heads",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acbe785cha2c-3",
+        "type": "hint",
+        "dependencies": [
+            "acbe785cha2c-2"
+        ],
+        "title": "Statistic",
+        "text": "Make a statistic that gets large when too many heads OR too few heads (Think distance from expectation.)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
