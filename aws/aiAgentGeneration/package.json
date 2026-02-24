@@ -1,0 +1,26 @@
+{
+  "name": "oatutor-aws-lambda-ai-agent",
+  "version": "1.0.0",
+  "description": "AI Agent chatbot for OATutor - provides TA-like assistance to students",
+  "main": "index.mjs",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.mjs",
+    "deploy": "echo 'Deploy to AWS Lambda'"
+  },
+  "keywords": ["oatutor", "ai", "agent", "chatbot", "tutoring"],
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.0.0",
+    "@aws-sdk/lib-dynamodb": "^3.0.0",
+    "@hapi/validate": "^2.0.1",
+    "@types/node": "^22.8.7",
+    "aws-lambda": "^1.0.7",
+    "aws-sdk": "^2.1692.0",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^3.3.2",
+    "openai": "^4.70.2",
+    "serverless-offline": "^14.3.3"
+  }
+}
