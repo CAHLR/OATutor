@@ -30,6 +30,8 @@ jobs:
           echo "git_name=$(git log --format='%an' HEAD^!)" >> $GITHUB_ENV
 
       - uses: actions/setup-node@v2.4.1
+        with:
+            node-version: 8
 
       - name: Change homepage in package.json
         run: sed -i 's/place-holder/OATutor/g' package.json
