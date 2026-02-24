@@ -1,0 +1,95 @@
+[
+    {
+        "id": "a41f771slope19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Solve the first equation for $$y$$",
+        "text": "$$5x-2y=11$$\\n$$-2y=-5x+11$$\\n$$\\frac{\\left(-2y\\right)}{-2}=\\frac{\\left(-5x+11\\right)}{-2}$$\\n$$y=\\frac{5}{2} x-\\frac{11}{2}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a41f771slope19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a41f771slope19a-h1"
+        ],
+        "title": "Slope-Intercept Form of an Equation of Second Line",
+        "text": "Compare the second equation to the slope-intercept form of the equation.\\n$$y=m x+b$$\\n$$y=\\frac{5}{2} x-\\frac{11}{2}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a41f771slope19a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{5}{2}$$"
+        ],
+        "dependencies": [
+            "a41f771slope19a-h2"
+        ],
+        "title": "Identify the Slope of First Line",
+        "text": "What is $$m$$ in the first equation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a41f771slope19a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a41f771slope19a-h3"
+        ],
+        "title": "Solve the second equation for $$y$$",
+        "text": "$$5x-y=7$$\\n$$-y=-5x+7$$\\n$$y=5x-7$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a41f771slope19a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a41f771slope19a-h4"
+        ],
+        "title": "Slope-Intercept Form of an Equation of Second Line",
+        "text": "Compare the second equation to the slope-intercept form of the equation.\\n$$y=m x+b$$\\n$$y=5x-7$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a41f771slope19a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a41f771slope19a-h5"
+        ],
+        "title": "Identify the Slope of Second Line",
+        "text": "What is $$m$$ in the second equation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a41f771slope19a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a41f771slope19a-h3",
+            "a41f771slope19a-h6"
+        ],
+        "title": "Parallel Lines",
+        "text": "The lines have different slopes, therefore they are not parallel.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

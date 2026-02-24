@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a3c51e5DiscreteD1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculating Probabilities",
+        "text": "The procedure to find the probability of something is as follows: First find the total number of possible outcomes for your situation. Second, find the total number of outcomes where your situation matches the one you want. Finally, divide your number acquired in the second step of this procedure by the first number, and you have the probability of your desired situation occuring.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3c51e5DiscreteD1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3c51e5DiscreteD1a-h1"
+        ],
+        "title": "Calculating Probabilities",
+        "text": "To calculate the probability of this situation, we first have to count the total number of outcomes in this situation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3c51e5DiscreteD1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "a3c51e5DiscreteD1a-h2"
+        ],
+        "title": "Dice Faces",
+        "text": "Assuming we select a number beforehand, how many different faces can our dice show on $$1$$ roll?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3c51e5DiscreteD1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3c51e5DiscreteD1a-h3"
+        ],
+        "title": "Calculating Probabilities",
+        "text": "The next step of calculating this probability is to find the number of instances of our situation occurring.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3c51e5DiscreteD1a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a3c51e5DiscreteD1a-h4"
+        ],
+        "title": "Correct Dice Face",
+        "text": "Out of our $$6$$ rolls, how many of them result in us having the correct number?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3c51e5DiscreteD1a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{6}$$"
+        ],
+        "dependencies": [
+            "a3c51e5DiscreteD1a-h5"
+        ],
+        "title": "Answer",
+        "text": "Knowing the total number of outcomes and the total number of instances in which our situation occurs, what is our final answer?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,91 @@
+[
+    {
+        "id": "a662caelawsin19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Law of Sines",
+        "text": "The Law of Sines states $$\\frac{a}sin^$\\left(A\\righ$$ $$=$$ $$\\frac{b}sin^$\\left(B\\righ$$ $$=$$ (c/(sin(C))",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin19a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0.99$$"
+        ],
+        "dependencies": [
+            "a662caelawsin19a-h1"
+        ],
+        "title": "Finding Sine",
+        "text": "For this question, to find $$x$$, you will need to apply $$\\frac{a}sin^$\\left(A\\righ$$ $$=$$ $$\\frac{b}sin^$\\left(B\\righ$$. First, find sin(98\u00b0).",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$0.87$$",
+            "$$0.74$$",
+            "$$0.68$$",
+            "$$0.99$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin19a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin19a-h2"
+        ],
+        "title": "Substitution",
+        "text": "Now that you have sin(A), substitute the values into $$\\frac{a}sin^$\\left(A\\righ$$ $$=$$ $$\\frac{b}sin^$\\left(B\\righ$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin19a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1.98$$"
+        ],
+        "dependencies": [
+            "a662caelawsin19a-h3"
+        ],
+        "title": "Sine of X",
+        "text": "What is sin(x)?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$0.68$$",
+            "$$0.99$$",
+            "$$1.98$$",
+            "$$0.82$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin19a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a662caelawsin19a-h4"
+        ],
+        "title": "Possibility",
+        "text": "Is it possible for the sin of a variable to exceed 1?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "id": "aa4d8eereal7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Odd Function Property",
+        "text": "An odd function satisfies the property: $$f(-a)$$ $$=$$ $$-f(a)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aa4d8eereal7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aa4d8eereal7a-h1"
+        ],
+        "title": "Odd Function Property",
+        "text": "The sine function is odd, which means: $$sin(-\\theta)$$ $$=$$ $$-sin(\\theta)$$. So for $$sin(-x)$$, we have $$sin(-x)=-sin(x)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aa4d8eereal7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aa4d8eereal7a-h2"
+        ],
+        "title": "Substitute into the Expression",
+        "text": "Now, substitute $$sin(-x)$$ into $$(-x)sin(-x)$$: $$(-x)sin(-x)=(-x)(-sinx)=xsinx$$. We are given that $$xsin(x)=2$$, thus $$(-x)sin(-x)=xsin(x)=2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

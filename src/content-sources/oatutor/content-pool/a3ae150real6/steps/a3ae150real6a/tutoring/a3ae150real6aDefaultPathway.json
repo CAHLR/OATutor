@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a3ae150real6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Finding tangent",
+        "text": "Recall: $$tan(2angle)=\\frac{B}{A-C}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3ae150real6a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{4}{3}$$"
+        ],
+        "dependencies": [
+            "a3ae150real6a-h1"
+        ],
+        "title": "Finding tangent",
+        "text": "What is tan(2angle)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3ae150real6a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a3ae150real6a-h2"
+        ],
+        "title": "Hypotenuse",
+        "text": "What is the hypotenuse?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3ae150real6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3ae150real6a-h3"
+        ],
+        "title": "Finding cosine and sine",
+        "text": "Find the cosine and since of the triangle formed.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3ae150real6a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3ae150real6a-h4"
+        ],
+        "title": "Using Formulas for $$x$$ and $$y$$",
+        "text": "Use the formulas for $$x$$ and y: $$x=Xcos(angle)-Ysin(angle);$$ $$y=\\operatorname{Xsin}\\left(angle\\right)+\\operatorname{Ycos}\\left(angle\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3ae150real6a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a3ae150real6a-h5"
+        ],
+        "title": "Substitution",
+        "text": "Substitute the equations back in for $$x$$ and $$y$$ in the original equation and simplify",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

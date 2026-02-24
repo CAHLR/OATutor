@@ -1,0 +1,190 @@
+[
+    {
+        "id": "a18d102geometric30a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Represent Repeating Decimal with Summation",
+        "text": "We can rewrite $$0.5$$ as $$0.5555..$$. with repeating 5s forever. We can represent this summation as $$0.5+0.05+0.005+0.0005+...$$, which is an infinite sum. Now, we use this infinite geometric series and find $$a_1$$ and $$r$$ to find the fraction.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a18d102geometric30a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.1$$"
+        ],
+        "dependencies": [
+            "a18d102geometric30a-h1"
+        ],
+        "title": "Determine $$r$$",
+        "text": "What is the common ratio between the consecutive terms?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a18d102geometric30a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$0.1$$"
+                ],
+                "dependencies": [],
+                "title": "Ratio Between $$0.5$$ and $$0.05$$",
+                "text": "What is the common ratio between $$0.5$$ and $$0.05$$? Effectively, what is $$\\frac{0.05}{0.5}$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a18d102geometric30a-h2-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$0.1$$"
+                ],
+                "dependencies": [],
+                "title": "Ratio Between $$0.05$$ and $$0.005$$",
+                "text": "What is the common ratio between $$0.05$$ and $$0.005$$? Effectively, what is $$\\frac{0.005}{0.05}$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a18d102geometric30a-h2-s3",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$0.1$$"
+                ],
+                "dependencies": [],
+                "title": "Ratio Between $$0.005$$ and $$0.0005$$",
+                "text": "What is the common ratio between $$0.005$$ and $$0.0005$$? Effectively, what is $$\\frac{0.0005}{0.005}$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a18d102geometric30a-h2-s4",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$0.1$$"
+                ],
+                "dependencies": [],
+                "title": "Ratio Between $$0.0005$$ and $$0.00005$$",
+                "text": "What is the common ratio between $$0.0005$$ and $$0.00005$$? Effectively, what is $$\\frac{5e-05}{0.0005}$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a18d102geometric30a-h2-s5",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$0.1$$"
+                ],
+                "dependencies": [],
+                "title": "Ratio Between $$0.00005$$ and $$0.000005$$",
+                "text": "What is the common ratio between $$0.00005$$ and $$0.000005$$? Effectively, what is $$\\frac{5e-06}{0.5}$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a18d102geometric30a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.5$$"
+        ],
+        "dependencies": [
+            "a18d102geometric30a-h2"
+        ],
+        "title": "Determine $$a_1$$",
+        "text": "What is $$a_1$$? What is the first term in the series?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a18d102geometric30a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a18d102geometric30a-h3"
+        ],
+        "title": "Formula for Summation of an Infinite Geometric Series",
+        "text": "The sum, S, of an infinite geometric series with starting term $$a_1$$ and common ratio $$r$$ given |r|<1 is $$S=\\frac{a_1}{1-r}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a18d102geometric30a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a18d102geometric30a-h4"
+        ],
+        "title": "Determining if there is a Sum",
+        "text": "Is |r|<1? We can only find a sum if |r|<1.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a18d102geometric30a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{5}{9}$$"
+        ],
+        "dependencies": [
+            "a18d102geometric30a-h5"
+        ],
+        "title": "Using the Formula",
+        "text": "Substitute $$a_1$$ and $$r$$ into the summation formula. What is the sum? Leave this in fraction form.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a18d102geometric30a-h5-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$\\frac{5}{9}$$"
+                ],
+                "dependencies": [],
+                "title": "Using the Formula",
+                "text": "What is $$\\frac{0.5}{1-0.1}$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    }
+]

@@ -1,0 +1,63 @@
+[
+    {
+        "id": "a4f52d1probability4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Probability of the Union of Two Events",
+        "text": "The probability of the union of two events E and F equals the sum of the probability of E and the probability of F minus the probability of E and F occurring together (\\nP(EUF)=P(E)+P(F)-P(E\u2229F)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4f52d1probability4a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a4f52d1probability4a-h1"
+        ],
+        "title": "Intersection",
+        "text": "How many cards are there in the standard deck such that it is both a red card and an ace?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4f52d1probability4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$26$$"
+        ],
+        "dependencies": [
+            "a4f52d1probability4a-h2"
+        ],
+        "title": "Event $$1$$",
+        "text": "How many cards are there in the standard deck such that it is a red card?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4f52d1probability4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a4f52d1probability4a-h3"
+        ],
+        "title": "Event $$2$$",
+        "text": "How many cards are there in the standard deck such that it is an ace?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a662caelawsin29a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Ambiguous Case",
+        "text": "An ambiguous case occurs when there are multiple possible solutions for the unknowns in a triangle. This typically happens in oblique triangles, where there can be no solution, one solution, or two solutions.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin29a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin29a-h1"
+        ],
+        "title": "Law of Sines",
+        "text": "The ambiguous case is most commonly associated with the Law of Sines when we have two sides and a non-included angle (SSA case). For example, when we know two sides and an angle that is not between them, we use the Law of Sines to find the possible angles.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin29a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin29a-h2"
+        ],
+        "title": "Conditions",
+        "text": "When you know two sides and an angle that is not between them, the situation is indeterminate. The triangle could be formed in multiple ways depending on the angle, leading to different solutions for the length of the third side or the other angles.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

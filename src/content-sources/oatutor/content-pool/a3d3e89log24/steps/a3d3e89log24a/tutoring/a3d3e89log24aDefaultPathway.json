@@ -1,0 +1,81 @@
+[
+    {
+        "id": "a3d3e89log24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Write an Equation",
+        "text": "$$-2=\\operatorname{log2}\\left(\\frac{f^2}{16}\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log24a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log24a-h1"
+        ],
+        "title": "Solve",
+        "text": "How do you solve for f, given $$-2=\\operatorname{log2}\\left(\\frac{f^2}{16}\\right)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log24a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log24a-h2"
+        ],
+        "title": "Formula",
+        "text": "Recall relationship between logarithmic form and exponential form.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log24a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$b=2$$, $$x=\\frac{f^2}{16}$$, $$y=-2$$"
+        ],
+        "dependencies": [
+            "a3d3e89log24a-h3"
+        ],
+        "title": "Identify Variables",
+        "text": "What is $$b$$? What is $$x$$? What is $$y$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$b=2$$, $$x=\\frac{f^2}{16}$$, $$y=-2$$",
+            "$$b=-2$$, $$x=\\frac{f^2}{16}$$, $$y=2$$"
+        ]
+    },
+    {
+        "id": "a3d3e89log24a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log24a-h4"
+        ],
+        "title": "Substitute",
+        "text": "$$2^{\\left(-2\\right)}=\\frac{f^2}{16}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log24a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log24a-h5"
+        ],
+        "title": "Solve for f",
+        "text": "$$f=\\left(16\\frac{1}{4}\\right)^{0.5}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

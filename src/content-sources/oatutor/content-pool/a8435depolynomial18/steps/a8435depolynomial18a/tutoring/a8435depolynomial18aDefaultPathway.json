@@ -1,0 +1,139 @@
+[
+    {
+        "id": "a8435depolynomial18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up Divison",
+        "text": "To check whether $$x+13$$ is a factor of $$3x^4+x^3-3x+1$$, perform synthetic division. Set up the division using $$x+13$$, which corresponds to $$k=-13$$, and write the coefficients of the polynomial 3,1,0,-3,1.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8435depolynomial18a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-39$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial18a-h1"
+        ],
+        "title": "Synthetic Division",
+        "text": "Start by bringing down the first coefficient $$3$$. What do you get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$-39$$",
+            "$$3$$",
+            "$$0$$",
+            "$$13$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial18a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$38$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial18a-h2"
+        ],
+        "title": "Synthetic Division",
+        "text": "What do you get when you add $$-39$$ to the second coefficient 1?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$38$$",
+            "$$-40$$",
+            "$$-38$$",
+            "$$40$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial18a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-494$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial18a-h3"
+        ],
+        "title": "Synthetic Division",
+        "text": "What do you get when you multiply $$-38$$ by -13?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$-352$$",
+            "$$-22-$$",
+            "$$494$$",
+            "$$-10$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial18a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-494$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial18a-h4"
+        ],
+        "title": "Synthetic Division",
+        "text": "What do you get when you add $$-494$$ to the next coefficient 0?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$-492$$",
+            "$$-493$$",
+            "$$-494$$",
+            "$$-495$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial18a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$6422$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial18a-h5"
+        ],
+        "title": "Synthetic Division",
+        "text": "Now, multiply $$-494$$ by $$-13$$. What do you get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$6662$$",
+            "$$6402$$",
+            "$$6832$$",
+            "$$6422$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial18a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a8435depolynomial18a-h6"
+        ],
+        "title": "Remainder",
+        "text": "What does it mean if the remainder is not zero?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

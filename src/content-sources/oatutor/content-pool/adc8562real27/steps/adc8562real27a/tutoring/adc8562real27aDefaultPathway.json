@@ -1,0 +1,118 @@
+[
+    {
+        "id": "adc8562real27a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Denominator",
+        "text": "We want to include only values of the input that do not force the denominator to be zero.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adc8562real27a-h2",
+        "type": "hint",
+        "dependencies": [
+            "adc8562real27a-h1"
+        ],
+        "title": "Denominator",
+        "text": "When there is an even root in the formula, we exclude any real numbers that result in a negative number in the radicand.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adc8562real27a-h3",
+        "type": "hint",
+        "dependencies": [
+            "adc8562real27a-h2"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "Set the radicand in the denominator greater than zero and solve for $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adc8562real27a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(6,\\infty)$$"
+        ],
+        "dependencies": [
+            "adc8562real27a-h3"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "Solve the inequation $$x-6>0$$. Express the solution in the form of interval.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$[6,\\infty)$$",
+            "$$(6,\\infty)$$",
+            "$$[-\\infty,6]$$",
+            "$$[-\\infty,6)$$"
+        ]
+    },
+    {
+        "id": "adc8562real27a-h5",
+        "type": "hint",
+        "dependencies": [
+            "adc8562real27a-h4"
+        ],
+        "title": "Numerator",
+        "text": "When there is an even root in the formula, we exclude any real numbers that result in a negative number in the radicand.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adc8562real27a-h6",
+        "type": "hint",
+        "dependencies": [
+            "adc8562real27a-h5"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "Set the radicand in the numerator greater than or equal to zero and solve for $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adc8562real27a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$[4,\\infty)$$"
+        ],
+        "dependencies": [
+            "adc8562real27a-h6"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "Solve the inequation $$x-4 \\geq 0$$. Express the solution in the form of interval.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$(4,\\infty)$$",
+            "$$[4,\\infty)$$",
+            "$$(-\\infty,4]$$",
+            "$$(-\\infty,4)$$"
+        ]
+    },
+    {
+        "id": "adc8562real27a-h8",
+        "type": "hint",
+        "dependencies": [
+            "adc8562real27a-h7"
+        ],
+        "title": "Inteval Union",
+        "text": "The answers are all real numbers where $$x \\geq 4$$ and $$x>6$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

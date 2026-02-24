@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a76e5d4tab3f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "For loops",
+        "text": "When running this for loop, what is the next value of c?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a76e5d4tab3f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a76e5d4tab3f-h1"
+        ],
+        "title": "For loops conditional",
+        "text": "After finding c, you go to the next line: is c < 2? If so, compute the body. If not, move to the else statement, and compute the body.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a76e5d4tab3f-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a76e5d4tab3f-h2"
+        ],
+        "title": "np.arange()",
+        "text": "What is the final value in np.arange(5)? Recall, np.arange(5) ends on...?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a76e5d4tab3f-h4",
+        "type": "hint",
+        "dependencies": [
+            "a76e5d4tab3f-h3"
+        ],
+        "title": "For loops",
+        "text": "Since c is not less than $$2$$, we move to the else body. Ask yourself, is c % $$2$$ $$==$$ 1? If so, print the statement. Else, print the other statement.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a76e5d4tab3f-h5",
+        "type": "hint",
+        "dependencies": [
+            "a76e5d4tab3f-h4"
+        ],
+        "title": "Multiply",
+        "text": "What happens when you take (\"CHOCOLATE\" + (\"!\" * (c * $$2$$ - 3)))?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
