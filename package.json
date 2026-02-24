@@ -2,6 +2,9 @@
   "name": "open-its",
   "version": "0.1.0",
   "private": true,
+  "engines": { 
+    "node": ">=12" 
+  },
   "dependencies": {
     "@common/global-config": "file:./common",
     "@material-ui/core": "~4.12.3",
