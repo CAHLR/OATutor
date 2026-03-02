@@ -31,7 +31,7 @@ jobs:
 
       - uses: actions/setup-node@v2.4.1
         with:
-            node-version: 8
+            node-version: 18
 
       - name: Change homepage in package.json
         run: sed -i 's/place-holder/OATutor/g' package.json
