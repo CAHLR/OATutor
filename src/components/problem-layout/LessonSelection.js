@@ -123,10 +123,10 @@ class LessonSelection extends React.Component {
                                                                 this.props.history.push(`/courses/${i}`)
                                                             }}>
                                                             <img
-                                                                src={`${process.env.PUBLIC_URL}/static/images/icons/folder.svg`}
+                                                                src={`${process.env.PUBLIC_URL}/static/images/icons/folder_outline_2.svg`}
                                                                 // width="56px"
                                                                 alt="folderIcon"
-                                                                style= {{ width: "2.4em" }}
+                                                                style= {{ width: "2.6em" }}
                                                             />
                                                         </IconButton>
                                                     </Paper>
