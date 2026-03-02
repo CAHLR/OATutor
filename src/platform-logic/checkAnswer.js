@@ -173,7 +173,7 @@ function checkAnswer({ attempt, actual, answerType, precision = 5, variabilizati
             }
 
         } else if (answerType === "string") {
-            parsed = attempt;
+            parsed = variabilization ? variabilize(attempt, variabilization) : attempt;
             //console.log(parsed);
             //console.log(actual);
             const correctAnswers = _equality(parsed, actual);
