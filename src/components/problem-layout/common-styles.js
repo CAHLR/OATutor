@@ -78,7 +78,8 @@ const styles = theme => ({
     },
 
     paper: {
-        padding: theme.spacing(3, 2),
+        padding: theme.spacing(2, 2),
+        boxShadow: "0 4px 4px rgba(0, 0, 0, 0.08)",
     },
 
     // Problem
