@@ -1,7 +1,10 @@
-name: Automated Content Update
+name: Incremental Content Update
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * *'
+    - cron: '0 15 * * *'
 
 jobs:
   update-content:
@@ -39,16 +42,19 @@ jobs:
     - name: Set environment variable for spreadsheet key
       run: echo "URL_SPREADSHEET_KEY=${{ secrets.URL_SPREADSHEET_KEY }}" >> $GITHUB_ENV
 
-    - name: Remove existing content
-      run: rm -rf content-staging-build/src/content-sources/oatutor/*
-
-    - name: Create Content Directory
-      run: mkdir -p content-staging-build/src/content-sources/oatutor/Content
+    - name: Prepare for incremental update
+      run: |
+        cd content-staging-build/src/content-sources/oatutor
+        # Rename content-pool back to OpenStax Content for the script
+        if [ -d "content-pool" ]; then
+          mv "content-pool" "OpenStax Content"
+        fi
+        mkdir -p Content
 
     - name: Run content update script
       run: |
         cd content-staging-build/src/content-sources/oatutor/Content
-        python3 /home/runner/work/OATutor-Tooling/content_script/final.py online full
+        python3 /home/runner/work/OATutor-Tooling/content_script/final.py online
 
     - name: Move and prepare files
       run: |
@@ -76,7 +82,7 @@ jobs:
         if git diff-index --quiet HEAD; then
           echo "No changes to commit"
         else
-          git commit -m "Automated content update"
+          git commit -m "Incremental content update"
           git push origin content-staging
         fi
       env:
@@ -86,7 +92,7 @@ jobs:
       run: |
         cd content-staging-build
         sed -i 's/place-holder/OATutor-Content-Staging/g' package.json
-    
+
     - name: Run CI install
       run: |
         cd content-staging-build
