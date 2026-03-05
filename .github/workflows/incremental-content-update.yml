@@ -60,7 +60,9 @@ jobs:
       run: |
         cd content-staging-build/src/content-sources/oatutor
         mv "OpenStax Content" "content-pool"
-        rm -f bktParams.json
+        mkdir -p bkt-params
+        mv bktParams.json bkt-params/defaultBKTParams.json
+        cp bkt-params/defaultBKTParams.json bkt-params/experimentalBKTParams.json
 
     - name: Run Node.js preprocessing script
       run: |
