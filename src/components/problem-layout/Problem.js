@@ -15,6 +15,9 @@ import styles from "./common-styles.js";
 import { NavLink } from "react-router-dom";
 import withTranslation from "../../util/withTranslation.js"
 import avatar from "../../assets/avatar_default_state.svg";
+import TTSPlayer from "../../util/ttsPlayer.js";
+import TTSButtons from "./TTSButtons.js";
+import { textToReadable } from "../../util/latexToReadable.js";
 
 import {
     CANVAS_WARNING_STORAGE_KEY,
@@ -68,6 +71,7 @@ class Problem extends React.Component {
         this.unlockFirstHint = unlockFirstHint != null && unlockFirstHint;
         this.giveStuBottomHint = giveStuBottomHint == null || giveStuBottomHint;
         this.giveDynamicHint = this.props.lesson?.allowDynamicHint;
+        this.enableTTS = this.props.lesson?.allowTTS;
         this.prompt_template = this.props.lesson?.prompt_template
             ? this.props.lesson?.prompt_template
             : "";
@@ -79,16 +83,24 @@ class Problem extends React.Component {
             showFeedback: false,
             feedback: "",
             feedbackSubmitted: false,
-            showPopup: false, 
+            showPopup: false,
             expandedAccordion: 0,
             hintToggleTrigger: 0,
             hintToggleIndex: null,
             isHintPortalOpen: false,
             attemptHistory: {}, // { "Problem Title": { "Question Text": ["attempt1", "attempt2"] } }
+            ttsPlaying: false,
+            ttsPlayingStep: -1,
         };
 
         this.togglePopup = this.togglePopup.bind(this);
         this.hintPortalRef = React.createRef();
+        this.stepTTSPlayers = {};
+
+        if (this.enableTTS) {
+            this.ttsPlayer = new TTSPlayer();
+            this.ttsPlayer.onStateChange((playing) => this.setState({ ttsPlaying: playing }));
+        }
     }
 
     componentDidMount() {
@@ -105,11 +117,64 @@ class Problem extends React.Component {
         for (const annotation of document.querySelectorAll("annotation")) {
             annotation.ariaLabel = annotation.textContent;
         }
+
+        if (this.enableTTS) this._loadTTSAudio(this.props.problem);
+    }
+
+    componentDidUpdate(prevProps) {
+        if (this.enableTTS && prevProps.problem?.id !== this.props.problem?.id) {
+            this._loadTTSAudio(this.props.problem);
+        }
+    }
+
+    _loadTTSAudio(problem) {
+        if (!problem) return;
+
+        // 停止并重置所有旧的 player
+        if (this.ttsPlayer) {
+            this.ttsPlayer.destroy();
+            this.ttsPlayer = new TTSPlayer();
+            this.ttsPlayer.onStateChange((playing) => this.setState({ ttsPlaying: playing }));
+        }
+        Object.values(this.stepTTSPlayers).forEach(p => p.destroy());
+        this.stepTTSPlayers = {};
+        this.setState({ ttsPlaying: false, ttsPlayingStep: -1 });
+
+        // 加载大题音频
+        this.ttsPlayer.onReady(() => this.forceUpdate());
+        let segments;
+        if (problem.pacedSpeech && Array.isArray(problem.pacedSpeech) && problem.pacedSpeech.length > 0) {
+            segments = problem.pacedSpeech;
+        } else {
+            const raw = textToReadable((problem.title || "") + ". " + (problem.body || ""));
+            if (raw && raw !== ".") segments = [raw];
+        }
+        if (segments) this.ttsPlayer.fetchAudio(segments);
+
+        // 加载每个 step 音频
+        (problem.steps || []).forEach((step, idx) => {
+            let stepSegments = null;
+            if (step.pacedSpeech && Array.isArray(step.pacedSpeech) && step.pacedSpeech.length > 0) {
+                stepSegments = step.pacedSpeech;
+            } else {
+                const raw = textToReadable((step.stepTitle || "") + ". " + (step.stepBody || ""));
+                if (raw && raw !== ".") stepSegments = [raw];
+            }
+            if (stepSegments) {
+                const player = new TTSPlayer();
+                player.onStateChange((playing) => this.setState({ ttsPlayingStep: playing ? idx : -1 }));
+                player.onReady(() => this.forceUpdate());
+                this.stepTTSPlayers[idx] = player;
+                player.fetchAudio(stepSegments);
+            }
+        });
     }
 
     componentWillUnmount() {
         document["oats-meta-courseName"] = "";
         document["oats-meta-textbookName"] = "";
+        if (this.ttsPlayer) this.ttsPlayer.destroy();
+        Object.values(this.stepTTSPlayers).forEach(p => p.destroy());
     }
 
     updateCanvas = async (mastery, components) => {
@@ -588,7 +653,7 @@ class Problem extends React.Component {
                         <div className={classes.prompt} role={"banner"}>
                             <Card className={classes.titleCard}>
 
-                                <div 
+                                <div
                                     style = {{
                                         backgroundColor: "#EBF4FA",
                                         padding: 20
@@ -604,7 +669,14 @@ class Problem extends React.Component {
                                             ),
                                             this.context
                                         )}
-                                        
+                                        {this.enableTTS && this.ttsPlayer && (
+                                            <TTSButtons
+                                                playing={this.state.ttsPlaying}
+                                                onToggle={() => this.ttsPlayer.togglePlayPause()}
+                                                onReplay={() => this.ttsPlayer.replay()}
+                                                disabled={!this.ttsPlayer.isReady()}
+                                            />
+                                        )}
                                     </div>
                                 </div>
 
@@ -612,7 +684,7 @@ class Problem extends React.Component {
                                     {...stagingProp({
                                         "data-selenium-target": "problem-header",
                                     })}
-                                    style={{ 
+                                    style={{
                                         padding: 20
                                     }}
                                 >
@@ -631,7 +703,57 @@ class Problem extends React.Component {
                                 </CardContent>
                             </Card>
                             <Spacer height={8} />
-                            
+                        </div>
+                    <div width="100%">
+                        {this.context.debug ? (
+                            <Grid container spacing={0}>
+                                <Grid item xs={2} key={0} />
+                                <Grid item xs={2} key={1}>
+                                    <NavLink
+                                        activeClassName="active"
+                                        className="link"
+                                        to={this._getNextDebug(-1)}
+                                        type="menu"
+                                        style={{ marginRight: "10px" }}
+                                    >
+                                        <Button
+                                            className={classes.button}
+                                            style={{ width: "100%" }}
+                                            size="small"
+                                            onClick={() =>
+                                                (this.context.needRefresh = true)
+                                            }
+                                        >
+                                            {translate('problem.PreviousProblem')}
+                                        </Button>
+                                    </NavLink>
+                                </Grid>
+                                <Grid item xs={4} key={2} />
+                                <Grid item xs={2} key={3}>
+                                    <NavLink
+                                        activeClassName="active"
+                                        className="link"
+                                        to={this._getNextDebug(1)}
+                                        type="menu"
+                                        style={{ marginRight: "10px" }}
+                                    >
+                                        <Button
+                                            className={classes.button}
+                                            style={{ width: "100%" }}
+                                            size="small"
+                                            onClick={() =>
+                                                (this.context.needRefresh = true)
+                                            }
+                                        >
+                                           {translate('problem.NextProblem')}
+                                        </Button>
+                                    </NavLink>
+                                </Grid>
+                                <Grid item xs={2} key={4} />
+                            </Grid>
+                        ) : (
+                            null
+                        )}
                         </div>
 
                         <div role={"main"}>
@@ -665,6 +787,8 @@ class Problem extends React.Component {
                                                     variant="subtitle1"
                                                     style={{
                                                         fontWeight: 800,
+                                                        display: "flex",
+                                                        alignItems: "center",
                                                     }}
                                                 >
                                                     {renderText(
@@ -680,10 +804,19 @@ class Problem extends React.Component {
                                                         ),
                                                         this.context
                                                     )}
+                                                    {this.enableTTS && this.stepTTSPlayers[idx] && (
+                                                        <TTSButtons
+                                                            playing={this.state.ttsPlayingStep === idx}
+                                                            onToggle={(e) => { e.stopPropagation(); this.stepTTSPlayers[idx].togglePlayPause(); }}
+                                                            onReplay={(e) => { e.stopPropagation(); this.stepTTSPlayers[idx].replay(); }}
+                                                            disabled={!this.stepTTSPlayers[idx].isReady()}
+                                                        />
+                                                    )}
                                                 </Typography>
                                             </AccordionSummary>
 
                                                 <ProblemCardWrapper
+                                                    enableTTS={this.enableTTS}
                                                     problemID={problem.id}
                                                     step={step}
                                                     index={idx}
