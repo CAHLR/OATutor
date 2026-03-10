@@ -108,6 +108,8 @@ const DYNAMIC_HINT_URL = process.env.AI_HINT_GENERATION_AWS_ENDPOINT;
 const DYNAMIC_HINT_TEMPLATE =
     "<{problem_title}.> <{problem_subtitle}.> <{question_title}.> <{question_subtitle}.> <Student's answer is: {student_answer}.> <The correct answer is: {correct_answer}.> Please give a hint for this.";
 
+const TTS_API_URL = process.env.REACT_APP_TTS_AWS_ENDPOINT;
+
 const MASTERY_THRESHOLD = 0.95;
 // const coursePlans = courses.sort((a, b) => a.courseName.localeCompare(b.courseName));
 const coursePlans = courses;
@@ -168,6 +170,7 @@ export {
     DO_FOCUS_TRACKING,
     findLessonById,
     SHOW_NOT_CANVAS_WARNING,
-    DEFAULT_LANGUAGE, 
-    AVAILABLE_LANGUAGES
+    DEFAULT_LANGUAGE,
+    AVAILABLE_LANGUAGES,
+    TTS_API_URL
 };

@@ -35,6 +35,9 @@ import {
 import { joinList } from "../../util/formListString";
 import withTranslation from "../../util/withTranslation.js"
 import CryptoJS from "crypto-js";
+import TTSPlayer from "../../util/ttsPlayer.js";
+import TTSButtons from "./TTSButtons.js";
+import { textToReadable } from "../../util/latexToReadable.js";
 
 class ProblemCard extends React.Component {
     static contextType = ThemeContext;
@@ -59,6 +62,7 @@ class ProblemCard extends React.Component {
         console.log("ProblemCard - all props:", props);
 
         this.giveDynamicHint = props.giveDynamicHint;
+        this.enableTTS = props.enableTTS;
         this.showHints = this.giveStuHints == null || this.giveStuHints;
         this.showCorrectness = this.giveStuFeedback;
         this.expandFirstIncorrect = false;
@@ -152,7 +156,13 @@ class ProblemCard extends React.Component {
             // When we are currently streaming the response from ChatGPT, this variable is `true`
             isGeneratingHint: false, 
             lastAIHintHash: null,
+            ttsPlaying: false,
         };
+
+        if (this.enableTTS) {
+            this.ttsPlayer = new TTSPlayer();
+            this.ttsPlayer.onStateChange((playing) => this.setState({ ttsPlaying: playing }));
+        }
 
          // This is used for AI hint generation
          if (this.giveDynamicHint) {
@@ -210,6 +220,23 @@ class ProblemCard extends React.Component {
         // Start an asynchronous task
         this.updateBioInfo();
         console.log("student show hints status: ", this.showHints);
+
+        // Pre-load step TTS audio: use pacedSpeech when available, else fallback
+        if (this.enableTTS) {
+            this.ttsPlayer.onReady(() => this.forceUpdate());
+            let segments = null;
+            if (this.step.pacedSpeech && Array.isArray(this.step.pacedSpeech) && this.step.pacedSpeech.length > 0) {
+                segments = this.step.pacedSpeech;
+            } else {
+                const raw = textToReadable((this.step.stepTitle || "") + ". " + (this.step.stepBody || ""));
+                if (raw && raw !== ".") segments = [raw];
+            }
+            if (segments) this.ttsPlayer.fetchAudio(segments);
+        }
+    }
+
+    componentWillUnmount() {
+        if (this.ttsPlayer) this.ttsPlayer.destroy();
     }
 
     componentDidUpdate(prevProps) {
@@ -644,6 +671,14 @@ class ProblemCard extends React.Component {
                             ),
                             this.context
                         )}
+                        {this.enableTTS && this.ttsPlayer && (
+                            <TTSButtons
+                                playing={this.state.ttsPlaying}
+                                onToggle={() => this.ttsPlayer.togglePlayPause()}
+                                onReplay={() => this.ttsPlayer.replay()}
+                                disabled={!this.ttsPlayer.isReady()}
+                            />
+                        )}
                         <hr />
                     </h2>
 
@@ -694,6 +729,7 @@ class ProblemCard extends React.Component {
                                         isIncorrect={this.expandFirstIncorrect}
                                         generateHintFromGPT={this.generateHintFromGPT}
                                         isGeneratingHint={this.state.isGeneratingHint}
+                                        enableTTS={this.enableTTS}
                                     />
                                 </ErrorBoundary>
                                 <Spacer />
