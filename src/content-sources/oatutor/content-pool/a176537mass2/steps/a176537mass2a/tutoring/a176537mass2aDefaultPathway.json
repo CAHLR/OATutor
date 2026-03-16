@@ -1,0 +1,111 @@
+[
+    {
+        "id": "a176537mass2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Check for a Balanced Equation",
+        "text": "Check if the equation is balanced or not. If not, balance the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a176537mass2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a176537mass2a-h1"
+        ],
+        "title": "Calculate the Molar Amount of $$C_8 H_{18}$$",
+        "text": "Use the equation $$\\text{Moles$$ $$of$$ $$Reactant$$ $$A}=\\frac{\\text{Moles$$ $$of$$ $$Reactant$$ $$A}}{\\text{Molar$$ $$Mass$$ $$of$$ $$Reactant$$ $$A}}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a176537mass2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6.145$$"
+        ],
+        "dependencies": [
+            "a176537mass2a-h2"
+        ],
+        "title": "Calculate the Molar Amount of $$C_8 H_{18}$$",
+        "text": "What is (702 g $$\\text{C}_8\\text{H}_{18}$$ )*(1 mol $$\\text{C}_8\\text{H}_{18}$$ / $$114.23$$ g $$\\text{C}_8\\text{H}_{18}$$ )? Keep three decimal places.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a176537mass2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a176537mass2a-h3"
+        ],
+        "title": "Identify the Stoichiometric Factor",
+        "text": "The stoichiometric factor relating the two substances of interest is $$25$$ mol $$O_2$$ / $$2$$ mol $$C_8 H_{18}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a176537mass2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a176537mass2a-h4"
+        ],
+        "title": "Calculate the Molar Amount of $$O_2$$",
+        "text": "The molar amount of $$O_2$$ is derived by multiplying the provided molar amount of $$C_8 H_{18}$$ by multiplying the stoichiometric factor.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a176537mass2a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$76.819$$"
+        ],
+        "dependencies": [
+            "a176537mass2a-h5"
+        ],
+        "title": "Calculate the Molar Amount of $$O_2$$",
+        "text": "What is $$(6.145$$ mol $$\\text{C}_8\\text{H}_{18}$$ )*(25 mol $$O_2$$ / $$2$$ mol $$\\text{C}_8\\text{H}_{18}$$ )? Keep three decimal places.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a176537mass2a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a176537mass2a-h6"
+        ],
+        "title": "Calculate the Mass of $$O_2$$",
+        "text": "Calculate the Mass of $$O_2$$ with Mass of Reactant A $$=$$ (Molar Mass of Reactant A)/(Moles of Reactant A)*(Moles of Reactant A).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a176537mass2a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.46\\times{10}^3$$"
+        ],
+        "dependencies": [
+            "a176537mass2a-h7"
+        ],
+        "title": "Calculate the Mass of $$O_2$$",
+        "text": "What is $$(76.819$$ mol $$\\text{O}_2$$ )*(32.0 g $$\\text{O}_2$$ )/(mol $$\\text{O}_2$$ ))? Give your answer in scientific notation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

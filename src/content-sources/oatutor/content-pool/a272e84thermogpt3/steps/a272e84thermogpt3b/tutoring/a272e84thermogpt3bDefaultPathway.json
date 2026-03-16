@@ -1,0 +1,94 @@
+[
+    {
+        "id": "a272e84thermogpt3b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand the Formula",
+        "text": "Remember: The work done on the gas during an expansion can be found using the formula $$w=-P(V2-V1)$$. Isolate P using the ideal gas law: $$PV=nRT$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt3b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermogpt3b-h1"
+        ],
+        "title": "Using the Ideal Gas Law",
+        "text": "The ideal gas law is given as $$PV=nRT$$. Use initial conditions to find P: $$P=$$ $$\\frac{nRT}{V}$$. Substitute $$3$$ mols for $$n$$, $$8.314$$ $$\\frac{J}{mol}$$ K for R, $$300$$ K for T, and $$40$$ L for V.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt3b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermogpt3b-h2"
+        ],
+        "title": "Setting up and Solving for P",
+        "text": "Substituting the values: $$P=$$ (3\u00d78.314\u00d7300)/40. Calculate P.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt3b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$186.405$$"
+        ],
+        "dependencies": [
+            "a272e84thermogpt3b-h3"
+        ],
+        "title": "Calculate Pressure",
+        "text": "Calculate the pressure $$P_1$$ using $$PV=nRT;$$ $$P_1$$ $$=$$ (3\u00d78.314\u00d7300)/40.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt3b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermogpt3b-h4"
+        ],
+        "title": "Determine the Change in Volume",
+        "text": "The change in volume is given as $$\u0394V=V_2-V_1$$. Here, $$V_2$$ is $$80$$ L and V1 is $$40$$ L.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt3b-h6",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermogpt3b-h5"
+        ],
+        "title": "Substitute Values into the Work Formula",
+        "text": "Now, use $$w=-P\\left(V_2-V_1\\right)$$ and substitute P and \u0394V calculated from previous steps.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt3b-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-7487$$"
+        ],
+        "dependencies": [
+            "a272e84thermogpt3b-h6"
+        ],
+        "title": "Calculate Work Done",
+        "text": "With $$P=186.405$$ $$\\frac{J}{L}$$ and $$\u0394V=40$$ L, find w using the formula $$w=-P(V2-V1)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

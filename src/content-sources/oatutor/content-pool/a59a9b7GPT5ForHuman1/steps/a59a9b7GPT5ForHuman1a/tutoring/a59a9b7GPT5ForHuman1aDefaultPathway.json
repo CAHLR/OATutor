@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a59a9b7GPT5ForHuman1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Entropy Change in Sublimation",
+        "text": "When a solid substance, like iodine crystals, is converted into gas, the molecules have more freedom to move. Will this increase or decrease the disorder of the system?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a59a9b7GPT5ForHuman1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a59a9b7GPT5ForHuman1a-h1"
+        ],
+        "title": "Compare States of Matter",
+        "text": "Entropy is often linked with the orderliness of a system. Consider how ordered a solid structure is compared to a gas. Which one has more disorder?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a59a9b7GPT5ForHuman1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a59a9b7GPT5ForHuman1a-h2"
+        ],
+        "title": "Relate Movement and Entropy",
+        "text": "In the case of gas molecules, they tend to move around more freely and occupy a larger volume than in a solid. What does this tell us about the entropy change going from solid to gas?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a59a9b7GPT5ForHuman1a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "positive"
+        ],
+        "dependencies": [
+            "a59a9b7GPT5ForHuman1a-h3"
+        ],
+        "title": "Determine the Entropy Change",
+        "text": "Given that gases generally have more disorder than solids, predict the entropy change when iodine crystals sublimate into gas.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "positive",
+            "negative",
+            "no change"
+        ]
+    }
+]

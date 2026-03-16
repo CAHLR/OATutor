@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a176537limiting2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Check for a Balanced Equation",
+        "text": "Check if the equation is balanced or not. If not, balance the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a176537limiting2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a176537limiting2a-h1"
+        ],
+        "title": "Find the Amount of Moles of Products formed from the Reactants",
+        "text": "Set up dimensional analysis $$=$$ Mass of Reactant A * (Moles of Reactant A) / (Molar Mass of Reactant A) $$=$$ Moles of Reactant A. Keep four demical places.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a176537limiting2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a176537limiting2a-h2"
+        ],
+        "title": "Find the Amount of Moles of HCl formed from $$H_2$$",
+        "text": "mol HCl produced $$=$$ $$3$$ mol $$H_2$$ \u00d7 $$2$$ mol HCl / $$1$$ mol $$H_2$$ $$=$$ $$6$$ mol HCl",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a176537limiting2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a176537limiting2a-h2"
+        ],
+        "title": "Find the Amount of Moles of HCl formed from Cl",
+        "text": "mol HCl produced $$=$$ $$2$$ mol Cl $$2$$ \u00d7 $$2$$ mol HCl $$1$$ mol Cl $$2$$ $$=$$ $$4$$ mol HCl",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a176537limiting2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a176537limiting2a-h4"
+        ],
+        "title": "Find the Limiting Reactant",
+        "text": "Compare the Moles of product HCl formed from Reactants $$H_2$$ and Cl. Is Reactant $$H_2$$ producing less Moles of product HCl? If Yes, then Reactant $$H_2$$ is limiting. If the answer is NO, then Reactant Cl is limiting.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

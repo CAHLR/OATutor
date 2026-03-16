@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a59a9b7GPT2ForHuman1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Entropy",
+        "text": "Entropy is a measure of randomness or disorder within a system. When a system's disorder increases, so does the entropy. Conversely, when a system becomes more ordered, the entropy decreases.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a59a9b7GPT2ForHuman1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a59a9b7GPT2ForHuman1a-h1"
+        ],
+        "title": "Effect of Compression",
+        "text": "Consider what happens when you compress a gas at constant temperature. Are the gas particles more or less free to move? How does this affect the system's entropy?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a59a9b7GPT2ForHuman1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a59a9b7GPT2ForHuman1a-h2"
+        ],
+        "title": "Behavior of Gas Particles",
+        "text": "When a gas is compressed, the particles have less space to move around. This restriction decreases the randomness of their positions, leading to a decrease in entropy.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a59a9b7GPT2ForHuman1a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "negative"
+        ],
+        "dependencies": [
+            "a59a9b7GPT2ForHuman1a-h3"
+        ],
+        "title": "Determine the Entropy Change",
+        "text": "Based on the information you have learned, what would be the net change in entropy when a gas is compressed at constant temperature?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "positive",
+            "negative",
+            "no change"
+        ]
+    }
+]

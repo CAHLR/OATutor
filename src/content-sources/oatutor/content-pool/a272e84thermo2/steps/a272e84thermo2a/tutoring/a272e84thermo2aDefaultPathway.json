@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a272e84thermo2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand the Energy Exchange",
+        "text": "When a piece of zinc is dropped into water, the zinc will absorb heat and the water will release heat until they reach the same temperature. This is the concept of heat transfer where the energy lost by the water is equal to the energy gained by the zinc.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermo2a-h1"
+        ],
+        "title": "Set Up the Heat Exchange Equation",
+        "text": "Use the equation:\\n$$m_w$$ * $$c_w$$ * (T_i,w - T_f) $$=$$ $$m_z$$ * $$c_z$$ * (T_f - T_i,z)\\n\\nWhere:\\n\\n$$m_w$$: mass of water\\n$$c_w$$: specific heat capacity of water\\n$$T_{i,w}$$: initial temperature of water\\n$$T_f$$: final temperature of both\\n$$m_z$$: mass of zinc\\n$$c_z$$: specific heat capacity of zinc\\n$$T_{i,z}$$: initial temperature of zinc",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermo2a-h2"
+        ],
+        "title": "Identify the Known and Unknown Variables",
+        "text": "Plug in the known values:\\n$$m_w$$ $$=$$ $$200$$ g\\n$$c_w$$ $$=$$ $$4.22$$ $$\\frac{J}{g\u00b7K}$$\\n$$T_{i,w}$$ $$=$$ 100\u00b0C or $$373$$ K\\n$$m_z$$ $$=$$ $$60$$ g\\n$$c_z$$ $$=$$ $$0.389$$ $$\\frac{J}{g\u00b7K}$$\\n$$T_{i,z}$$ $$=$$ 20\u00b0C or $$293$$ K\\n$$T_f$$ is unknown",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$371$$"
+        ],
+        "dependencies": [
+            "a272e84thermo2a-h3"
+        ],
+        "title": "Solve for Final Temperature $$T_f$$",
+        "text": "Equate the heat gained by zinc to the heat lost by water and solve for $$T_f$$:\\n$$200$$ \u00d7 $$4.22(373$$ - T_f) $$=$$ $$60$$ \u00d7 0.389(T_f - 293)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

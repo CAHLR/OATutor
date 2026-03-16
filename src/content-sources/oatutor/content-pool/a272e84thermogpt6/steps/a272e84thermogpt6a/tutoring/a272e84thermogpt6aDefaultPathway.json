@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a272e84thermogpt6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "You are given two reactions with their respective enthalpy changes, \u0394H. Your task is to calculate the enthalpy change for a different, yet related, reaction. To do this, you'll need to consider how these reactions combine to form the new reaction.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermogpt6a-h1"
+        ],
+        "title": "Identify Common Elements",
+        "text": "Notice that the reaction we need to find the enthalpy for is C\u2082H\u2082+2H\u2082\u2192C\u2082H\u2086. Check how C\u2082H\u2082 and C\u2082H\u2086 appear in the given reactions and identify any common species.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermogpt6a-h2"
+        ],
+        "title": "Constructing the Overall Reaction",
+        "text": "The target reaction is C\u2082H\u2082+2H\u2082\u2192C\u2082H\u2086. You can achieve this by adding the two given reactions:\\n\\n$$1$$. C\u2082H\u2082+H\u2082\u2192C\u2082H\u2084 with $$\\Delta H_1=-175.0kJ$$\\n$$2$$. C\u2082H\u2084+H\u2082\u2192C\u2082H\u2086 with $$\\Delta H_2=-136.0kJ$$\\n\\nAdding these will give you the overall reaction you need.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt6a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-311$$"
+        ],
+        "dependencies": [
+            "a272e84thermogpt6a-h3"
+        ],
+        "title": "Combine Reaction Enthalpies",
+        "text": "To find the enthalpy change of the overall reaction, sum the enthalpy changes of the individual reactions. Calculate \u0394H=\u0394H\u2081+\u0394H\u2082.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

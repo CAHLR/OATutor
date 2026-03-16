@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a272e84thermo3b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "We are dealing with an ideal gas that is undergoing a reversible isothermal process at constant pressure. We need to calculate the work done on the gas as it is cooled and its volume changes.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo3b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermo3b-h1"
+        ],
+        "title": "Work Formula for Ideal Gases",
+        "text": "For reversible processes at constant pressure, the work done on a gas can be calculated using the formula: w=-P_{ext}(V_f-V_i), where P_{ext} is the external pressure, $$V_f$$ is the final volume, and $$V_i$$ is the initial volume.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo3b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermo3b-h2"
+        ],
+        "title": "Plugging in the Values",
+        "text": "Given: P_{ext}=2 atm, $$V_f=50$$ L, $$V_i$$ $$=100$$ L. First, remember to convert the pressure to the appropriate units if needed. Then, calculate the change in volume and use the formula to find work.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo3b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$202650$$"
+        ],
+        "dependencies": [
+            "a272e84thermo3b-h3"
+        ],
+        "title": "Convert Pressure to SI Units",
+        "text": "Convert the pressure from atm to pascals (Pa).\\n$$1$$ atm $$=$$ $$101325$$ Pa.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo3b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-50$$"
+        ],
+        "dependencies": [
+            "a272e84thermo3b-h4"
+        ],
+        "title": "Calculate the Change in Volume",
+        "text": "What is the change in volume (in L)? Calculate $$V_f-V_i$$ using the given values.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo3b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10132.5$$"
+        ],
+        "dependencies": [
+            "a272e84thermo3b-h5"
+        ],
+        "title": "Calculate Work Using the Formula",
+        "text": "Substitute the converted pressure in pascals and the change in volume in the formula to find the work done. Remember, the result will be in joules.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

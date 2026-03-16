@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a59a9b7GPT2ForHuman1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Entropy in Melting",
+        "text": "Entropy is a measure of randomness or disorder in a system. Think about what happens at the molecular level when ice cream melts. Does the order of molecules increase or decrease?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a59a9b7GPT2ForHuman1b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a59a9b7GPT2ForHuman1b-h1"
+        ],
+        "title": "Energy Transfer in Melting",
+        "text": "Consider how energy is transferred in the melting process. Does adding heat to the ice cream make the molecules more or less ordered?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a59a9b7GPT2ForHuman1b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a59a9b7GPT2ForHuman1b-h2"
+        ],
+        "title": "Environmental Impact on Entropy",
+        "text": "A hot day adds thermal energy to the ice cream. How do you think this influences the entropy of the ice cream?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a59a9b7GPT2ForHuman1b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increases"
+        ],
+        "dependencies": [
+            "a59a9b7GPT2ForHuman1b-h3"
+        ],
+        "title": "Relating Energy and Disorder",
+        "text": "As energy in the form of heat is added to the ice cream, the molecules move more freely. How does this affect the level of disorder?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Increases",
+            "Decreases",
+            "Stays the same"
+        ]
+    },
+    {
+        "id": "a59a9b7GPT2ForHuman1b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "positive"
+        ],
+        "dependencies": [
+            "a59a9b7GPT2ForHuman1b-h4"
+        ],
+        "title": "Predict the Entropy Change",
+        "text": "Will the melting of ice cream result in a positive, negative, or no change in entropy?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "positive",
+            "negative",
+            "no change"
+        ]
+    }
+]

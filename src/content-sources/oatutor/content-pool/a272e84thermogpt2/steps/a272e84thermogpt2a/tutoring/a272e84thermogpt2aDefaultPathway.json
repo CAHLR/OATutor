@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a272e84thermogpt2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify Energy Exchange",
+        "text": "Consider that energy is exchanged between the copper block and the water until they reach a thermal equilibrium. The heat lost by the copper equals the heat gained by the water. How can this idea help in finding the final temperature?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt2a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$27.42$$"
+        ],
+        "dependencies": [
+            "a272e84thermogpt2a-h1"
+        ],
+        "title": "Use the Heat Transfer Equation",
+        "text": "Since no heat is lost to the surroundings, apply the formula $$q=mc\u0394T$$ separately for the copper and the water, knowing that $$q_{copper}$$ (heat lost by $$copper)=-q_{water}$$ (heat gained by water). Set up the equation:\\n\\n$$150$$ \u00d7 0.385(T_f - 80) $$=$$ $$-300$$ \u00d7 4.18(T_f - 25)\\n\\nWhere\\n$$T_f$$ is the final temperature in \u00b0C. Simplify and solve for $$T_f$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermogpt2a-h2"
+        ],
+        "title": "Convert to Kelvin",
+        "text": "Once you find the final temperature in Celsius, remember to convert it to Kelvin. The conversion formula is: $$T_K$$ $$=$$ $$T_C$$ + $$273.15$$. Don\u2019t forget to round your answer to the nearest integer.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a272e84thermogpt8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding monatomic and diatomic gases",
+        "text": "To calculate the heat transferred to a gas at constant volume, we need to use its molar heat capacity $$C_v$$. Monatomic gases (like helium) have different $$C_v$$ values compared to diatomic gases (like hydrogen and nitrogen).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermogpt8a-h1"
+        ],
+        "title": "Molar heat capacities $$C_v$$",
+        "text": "Monatomic gases have a molar $$C_v$$ of $$\\frac{3}{2}$$ R, while diatomic gases have a molar $$C_v$$ of $$\\frac{5}{2}$$ R. This means diatomic gases can absorb more heat per mole for the same temperature change because they have more degrees of freedom.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermogpt8a-h2"
+        ],
+        "title": "Heat calculation at constant volume",
+        "text": "The heat transferred, q, for each gas can be calculated using the formula: $$q=nC_{v\\Delta T}$$, where $$n$$ is the number of moles, $$C_v$$ is the molar heat capacity, and \u0394T is the change in temperature.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt8a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermogpt8a-h3"
+        ],
+        "title": "Comparing heat transfer for containers",
+        "text": "Since each container holds the same number of moles and undergoes the same temperature change, the heat transferred is directly proportional to Cv. Subsequently, compare based on whether a gas is monatomic (He, Ne) or diatomic (H\u2082, N\u2082).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermogpt8a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "a = c < b = d"
+        ],
+        "dependencies": [
+            "a272e84thermogpt8a-h4"
+        ],
+        "title": "Given the molar heat capacities, rank the gases:\\n\\nMonatomic gases (He and Ne) gain the least heat.\\nDiatomic gases (H\u2082 and N\u2082) gain more heat.\\n\\nRank them as a $$=$$ c < $$b$$ $$=$$ $$d$$.",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

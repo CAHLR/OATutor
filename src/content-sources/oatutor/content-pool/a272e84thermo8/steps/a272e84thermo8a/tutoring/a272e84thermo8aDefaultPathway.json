@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a272e84thermo8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Variables",
+        "text": "Consider the number of moles present in each vessel and what impact it has on the heat capacity. More moles might imply a greater change in energy under a constant heating process.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermo8a-h1"
+        ],
+        "title": "Use the Heat Capacity Formula",
+        "text": "Recall the formula for calculating heat. For a given amount of substance, heat Q can be represented as $$Q=nC_{v\\Delta T}$$, where $$n$$ is moles, $$C_v$$ is specific heat capacity at constant volume and \u0394T is the change in temperature.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermo8a-h2"
+        ],
+        "title": "Consider Specific Heat Capacities",
+        "text": "Different gases have different specific heat capacities at constant volume $$C_v$$. For ideal gases like He, $$H_2$$, $$N_2$$, and Ne, these values differ. Determine the $$C_v$$ values for these gases to understand their heating behavior.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "c<b<d<a"
+        ],
+        "dependencies": [
+            "a272e84thermo8a-h3"
+        ],
+        "title": "Calculate Heat for Each Vessel",
+        "text": "Using the given values and understanding from the hints, calculate the heat absorbed by each vessel:\\n$$1$$. $$Q_1=2C_{v,H,2\\Delta T}$$\\n$$2$$. $$Q_2=4C_{v,N,2\\Delta T}$$\\n$$3$$. $$Q_3=2C_{v,He\\Delta T}$$\\n$$4$$. $$Q_4=1C_{v,Ne\\Delta T}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo8a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "c<b<d<a"
+        ],
+        "dependencies": [
+            "a272e84thermo8a-h4"
+        ],
+        "title": "Analyze the Expressed Relationships",
+        "text": "Based on the calculated heat values, if Q_{s1} < Q_{s2} then vessel $$1$$ absorbs less heat than vessel $$2$$ and so forth. Formulate the final ranking order.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

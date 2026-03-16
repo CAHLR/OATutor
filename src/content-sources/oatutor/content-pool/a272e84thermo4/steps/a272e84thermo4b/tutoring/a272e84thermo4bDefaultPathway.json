@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a272e84thermo4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "First Step - Check Given Values",
+        "text": "To calculate the change in enthalpy, first ensure you have all the necessary information. You need:\\n$$1$$. The moles of ethylene $$(2.00$$ moles).\\n$$2$$. Heat capacity values from the equipartition theorem.\\n$$3$$. The temperature range information.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo4b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermo4b-h1"
+        ],
+        "title": "Understanding Equipartition Theorem",
+        "text": "Equipartition theorem states that each degree of freedom contributes $$\\frac{1}{2}$$ R to the molar heat capacity. For ethylene, $$C_2 H_4$$, which has both translational and rotational degrees of freedom, consider its contribution to the heat capacity.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo4b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermo4b-h2"
+        ],
+        "title": "Calculate Heat Capacity of $$C_2 H_4$$",
+        "text": "The heat capacity $$C_p$$ can be calculated knowing the degrees of freedom of $$C_2 H_4$$:\\nTranslational: $$3$$ degrees\\nRotational: $$2$$ degrees for linear molecule\\nVibrational: Neglect if not specified\\n\\nTotal $$C_p$$ $$=$$ number of degrees * $$\\frac{1}{2}$$ R, with R $$=$$ $$8.314$$ $$\\frac{J}{mol} K$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a272e84thermo4b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a272e84thermo4b-h3"
+        ],
+        "title": "Calculate Change in Enthalpy",
+        "text": "Use the formula \u0394H $$=$$ $$nC_{p\\Delta T}$$ to find the change in enthalpy:\\n$$n$$ $$=$$ number of moles $$=$$ $$2.00$$ moles\\n$$C_p$$ $$=$$ heat capacity\\n\u0394T $$=$$ change in temperature range\\nInsert these values to compute \u0394H.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

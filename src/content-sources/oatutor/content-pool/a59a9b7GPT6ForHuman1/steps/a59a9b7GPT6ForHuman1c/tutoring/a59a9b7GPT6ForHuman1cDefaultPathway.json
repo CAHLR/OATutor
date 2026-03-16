@@ -1,0 +1,79 @@
+[
+    {
+        "id": "a59a9b7GPT6ForHuman1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Entropy Change",
+        "text": "When a sealed container of ammonium nitrate is exploded, what happens to the physical state of the reactants and products? Does the entropy increase, decrease, or stay the same?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a59a9b7GPT6ForHuman1c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a59a9b7GPT6ForHuman1c-h1"
+        ],
+        "title": "Observing Phase Change",
+        "text": "Consider the phase change from solid or liquid to gas. Would you expect the entropy to increase or decrease?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a59a9b7GPT6ForHuman1c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a59a9b7GPT6ForHuman1c-h2"
+        ],
+        "title": "Determining Entropy Change",
+        "text": "Does converting a solid or liquid into gas generally lead to an increase in the randomness or the disorder of the system?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a59a9b7GPT6ForHuman1c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a59a9b7GPT6ForHuman1c-h3"
+        ],
+        "title": "Entropy and Molecular Disorder",
+        "text": "When a process involves an increase in molecular disorder, would that process have a positive or negative entropy change? Consider the definition of entropy.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a59a9b7GPT6ForHuman1c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "positive"
+        ],
+        "dependencies": [
+            "a59a9b7GPT6ForHuman1c-h4"
+        ],
+        "title": "Analyzing the Explosive Reaction",
+        "text": "Given that the explosion leads to the release of gaseous products from a more ordered state, what is the sign of the entropy change?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "positive",
+            "negative",
+            "no change"
+        ]
+    }
+]
