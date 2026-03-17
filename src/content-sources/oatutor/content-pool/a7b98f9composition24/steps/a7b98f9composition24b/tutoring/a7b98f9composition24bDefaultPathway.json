@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a7b98f9composition24b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Composition",
+        "text": "Remember that to solve g(f(x)), we need to plug in the value of f(x) into the value of $$x$$ in g(x).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7b98f9composition24b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7b98f9composition24b-h1"
+        ],
+        "title": "Composition",
+        "text": "We need to plug in f(x), or $$\\sqrt{x}+2$$, for the $$x$$ in the function f: $$\\left(\\sqrt{x}+2\\right)^2+3$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7b98f9composition24b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7b98f9composition24b-h2"
+        ],
+        "title": "Exponents",
+        "text": "Based off the Order of Operations, the first step is the exponent: $$\\left(\\sqrt{x}+2\\right)^2=x+4\\left(\\sqrt{x}\\right)+4$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7b98f9composition24b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7b98f9composition24b-h3"
+        ],
+        "title": "Addition",
+        "text": "The expression now reads $$x+4\\left(\\sqrt{x}\\right)+4+3$$. The last step is to add the constants: $$x+4\\left(\\sqrt{x}\\right)+4+3=$$ $$x+4\\left(\\sqrt{x}\\right)+7$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

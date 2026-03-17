@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a3bdccdfunctions27a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "At $$n=1000$$ shirts, the price is $$p=\\$30$$. At $$n=3000$$ shirts, the price is $$p=\\$22$$. Thus we have two points $$(1000,30)$$ and $$(3000,22)$$.",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3bdccdfunctions27a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3bdccdfunctions27a-h1"
+        ],
+        "title": "Calculate the slope $$m$$. The slope between two points (n1, p1) and (n2, p2) is $$m=\\frac{p2-p1}{n2-n1}$$.",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3bdccdfunctions27a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-0.004$$"
+        ],
+        "dependencies": [
+            "a3bdccdfunctions27a-h2"
+        ],
+        "title": "Substitute the given points. What is the value of $$m$$?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3bdccdfunctions27a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3bdccdfunctions27a-h3"
+        ],
+        "title": "Use the slope and one point (e.g., $$(1000,30))$$ in the equation $$p=mn+b$$, we solve for $$b$$.",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3bdccdfunctions27a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$34$$"
+        ],
+        "dependencies": [
+            "a3bdccdfunctions27a-h4"
+        ],
+        "title": "What is the value of $$b$$?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

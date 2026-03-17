@@ -1,0 +1,107 @@
+[
+    {
+        "id": "a4593e0functrans101b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Horizontal Translations",
+        "text": "A horizontal translation means that the input is translated by some amount of units a: $$f{\\left(x+a\\right)}$$. Translating left adds a while translating right subtracts a.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4593e0functrans101b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans101b-h1"
+        ],
+        "title": "Understanding Horizontal $$\\frac{Stretch}{Compression}$$",
+        "text": "A horizontal $$\\frac{stretch}{compression}$$ means that the input is multiplied by some value b: $$f{\\left(b x\\right)}$$. Compressing multiplies $$b$$, while stretching multiplies $$\\frac{1}{b}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4593e0functrans101b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans101b-h2"
+        ],
+        "title": "Solving the Equation",
+        "text": "A horizontal $$\\frac{stretch}{compression}$$ by $$b$$ units, then a horizontal translation by a units can be combined to create one equation to solve: $$y=f{\\left(b \\left(x+a\\right)\\right)}=3x-6$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4593e0functrans101b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans101b-h3"
+        ],
+        "title": "Solving the Equation",
+        "text": "Since the transformations are from $$y=x$$, the equation to solve is $$b \\left(x+a\\right)=3x-6$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4593e0functrans101b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans101b-h4"
+        ],
+        "title": "Solving the Equation",
+        "text": "The equation can be solved as a system of linear equations by looking at like terms:\\n\\n$$b=3$$\\n$$b a=-6$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4593e0functrans101b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a4593e0functrans101b-h5"
+        ],
+        "title": "Solving the Equation",
+        "text": "What is the value of $$b$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4593e0functrans101b-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-2$$"
+        ],
+        "dependencies": [
+            "a4593e0functrans101b-h5"
+        ],
+        "title": "Solving the Equation",
+        "text": "What is the value of a?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4593e0functrans101b-h8",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans101b-h6",
+            "a4593e0functrans101b-h7"
+        ],
+        "title": "Translating into Words",
+        "text": "Since $$a=-2$$ and $$b=3$$, the transformations can now be written out. Translating left adds a while translating right subtracts a. Compressing multiplies $$b$$, while stretching multiplies $$\\frac{1}{b}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    }
+]

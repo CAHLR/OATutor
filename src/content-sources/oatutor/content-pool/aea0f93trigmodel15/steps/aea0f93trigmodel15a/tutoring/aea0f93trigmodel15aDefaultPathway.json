@@ -1,0 +1,36 @@
+[
+    {
+        "id": "aea0f93trigmodel15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Final equation",
+        "text": "The equation will be of the form f(t) $$=$$ $$10e^{cycles t}$$ cos(wpi)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel15a-h1"
+        ],
+        "title": "Plug Cycles in",
+        "text": "The cycles is equal to $$.5$$ so plug that in",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel15a-h2"
+        ],
+        "title": "Solve for w",
+        "text": "W $$=$$ (cycles per second) * $$2\\pi$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

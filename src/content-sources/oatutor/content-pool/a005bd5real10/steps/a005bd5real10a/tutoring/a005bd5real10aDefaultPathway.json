@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a005bd5real10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Define Composition of Functions",
+        "text": "$$(g\u2218f)(x)=g(f(x))$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a005bd5real10a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Plug in f(x) for x: $$g(f(x))=\\left(x^3+1-1\\right)^{\\frac{1}{3}}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real10a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "The ones cancel out: x**3+1-1=x**3 and 3*1/3 cancels out: (x**3)**1/3=x"
+        ],
+        "dependencies": [
+            "a005bd5real10a-h2"
+        ],
+        "title": "Simplify",
+        "text": "What can we cancel out in $$g(f(x))=\\left(x^3+1-1\\right)^{\\frac{1}{3}}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real10a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "When we have a denominator or an even root"
+        ],
+        "dependencies": [
+            "a005bd5real10a-h3"
+        ],
+        "title": "Domain Considerations",
+        "text": "What should we look for? (In what cases do we have to worry about the domain?)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real10a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a005bd5real10a-h4"
+        ],
+        "title": "Cases",
+        "text": "$$g(f(x))=x$$, so we have nothing to exclude in our domain.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a9b0a01geo13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Draw",
+        "text": "Draw the figure to try to better understand what the problem is asking",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9b0a01geo13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9b0a01geo13a-h1"
+        ],
+        "title": "Identify and Name",
+        "text": "We are looking for the third angle of the triangle and we can name it \"x\", we know the second side is $$90$$ because it is a right triangle",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9b0a01geo13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9b0a01geo13a-h2"
+        ],
+        "title": "Translate",
+        "text": "Each of the three angles added together equals $$180$$ degrees, $$x+90+45=180$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9b0a01geo13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9b0a01geo13a-h3"
+        ],
+        "title": "Solve",
+        "text": "Solve the equation using algebra",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9b0a01geo13a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$135$$"
+        ],
+        "dependencies": [
+            "a9b0a01geo13a-h4"
+        ],
+        "title": "Solve",
+        "text": "First let's simplify the left side of the equation. What is $$45+90$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9b0a01geo13a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a9b0a01geo13a-h5"
+        ],
+        "title": "Solve",
+        "text": "Now, we can subtract $$135$$ from both sides of the equation to find $$x$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a342e92limit24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Function and Graph",
+        "text": "$$\\lim_{x\\to6} f(x)$$ is the value of f(x) as $$x$$ approaches $$6$$ from both sides. Locate $$x=6$$ on the graph and observe the value of f(x) from both sides.\\n##figure2.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a342e92limit24a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "DNE"
+        ],
+        "dependencies": [
+            "a342e92limit24a-h1"
+        ],
+        "title": "Finding the Limit",
+        "text": "What value is f(x) approaching when $$x$$ approaches $$6$$ from both sides? If the limit is $$\\infty$$, write $$-\\infty$$ or $$+\\infty$$. If the limit does not exist, write 'DNE'.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$-\\infty$$",
+            "$$+\\infty$$",
+            "DNE"
+        ]
+    },
+    {
+        "id": "a342e92limit24a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a342e92limit24a-h2"
+        ],
+        "title": "Limit Value",
+        "text": "$$\\lim_{x\\to6} f(x)$$ DNE because $$\\lim_{x\\to6} f(x)=2$$ (from the left) and $$\\lim_{x\\to6} f(x)=5$$ (from the right).\\n##figure3.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

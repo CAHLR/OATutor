@@ -1,0 +1,33 @@
+[
+    {
+        "id": "aac5661polarcoords1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Polar Axis Symmetry Explanation",
+        "text": "Replace theta with -theta and check equivalence.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aac5661polarcoords1a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "aac5661polarcoords1a-h1"
+        ],
+        "title": "Testing Polar Axis Symmetry",
+        "text": "After substitution, does $$r=5cos(-3theta)=5cos3theta$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a62d4a8factoring3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use a preliminary strategy",
+        "text": "As there is a greatest common factor(5), factor it out. The expression should look like this: $$5\\left(k^2-3k-10\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a62d4a8factoring3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a62d4a8factoring3a-h1"
+        ],
+        "title": "Identify",
+        "text": "Inside the parentheses, is it a binomial, trinomial, or are there more than three terms? Since it is a trinomial with a coefficient of $$1$$, undo FOIL.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a62d4a8factoring3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a62d4a8factoring3a-h2"
+        ],
+        "title": "Use factors",
+        "text": "Use the factors of $$-10$$ to finish FOIL.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a62d4a8factoring3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a62d4a8factoring3a-h3"
+        ],
+        "title": "Answer",
+        "text": "The answer is $$5\\left(k+2\\right) \\left(k-5\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

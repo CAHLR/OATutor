@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a9c64f0series9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use $$S_n$$ formula",
+        "text": "$$S_n$$ $$=$$ $$a_1$$ * (1 - r**n) / (1 - r)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9c64f0series9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9c64f0series9a-h1"
+        ],
+        "title": "Solve for $$r$$",
+        "text": "$$r$$ is equal to the second term divided by the first term",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9c64f0series9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9c64f0series9a-h2"
+        ],
+        "title": "Plug in $$r$$ and $$a_1$$ and $$n$$",
+        "text": "$$r$$ $$=$$ $$-.5$$, $$a_1$$ $$=$$ $$8$$, $$n$$ $$=$$ $$11$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

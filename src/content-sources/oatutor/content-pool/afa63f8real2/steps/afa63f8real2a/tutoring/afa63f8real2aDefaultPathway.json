@@ -1,0 +1,63 @@
+[
+    {
+        "id": "afa63f8real2a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$b=2$$, $$c=1$$, $$d=-3$$"
+        ],
+        "dependencies": [],
+        "title": "The exponential equation is of the form $$f(x)=b^{x+c}+d$$ what is $$b$$, c, and $$d$$ in these cases?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$b=1$$, $$c=1$$, $$d=-2$$",
+            "$$b=2$$, $$c=3$$, $$d=3$$",
+            "$$b=2$$, $$c=1$$, $$d=-3$$",
+            "$$b=1$$, $$c=1$$, $$d=-1$$"
+        ]
+    },
+    {
+        "id": "afa63f8real2a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-3$$"
+        ],
+        "dependencies": [
+            "afa63f8real2a-h1"
+        ],
+        "title": "The horizontal asymptote is defined as $$y=d$$. What is the horizontal asymptote?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afa63f8real2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(-1,-3)$$"
+        ],
+        "dependencies": [
+            "afa63f8real2a-h2"
+        ],
+        "title": "The shift is $$(-c,d)$$. Input some values of $$x$$ and find f(x), then graphing these points.",
+        "text": "\\n##figure2.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$(-1,3)$$",
+            "$$(1,-3)$$",
+            "$$(-1,-3)$$",
+            "$$(1,3)$$"
+        ]
+    }
+]

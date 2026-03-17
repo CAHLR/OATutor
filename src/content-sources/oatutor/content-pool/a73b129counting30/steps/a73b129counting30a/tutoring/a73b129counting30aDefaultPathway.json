@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a73b129counting30a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Vowel Block",
+        "text": "To solve this problem, treat the vowels (o, u, a, i) as a single entity or \"block\" since they must form a string.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73b129counting30a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "a73b129counting30a-h1"
+        ],
+        "title": "Number of Consonants",
+        "text": "After treating the vowels as a single block, you have to arrange the consonants and the \"vowel block\". How many total elements are there?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73b129counting30a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a73b129counting30a-h2"
+        ],
+        "title": "Using the Combination Formula",
+        "text": "The combination formula is used to calculate the number of ways to choose $$r$$ objects from a set of $$n$$ objects, where the order of selection does not matter.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73b129counting30a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a73b129counting30a-h3"
+        ],
+        "title": "Combination Formula",
+        "text": "The combination formula is: C(n,r)=n!/(r!*(n-r)!)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73b129counting30a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a73b129counting30a-h4"
+        ],
+        "title": "Repetition",
+        "text": "Only one of the consonants is repeated more than once, how many times is it repeated? The factorial of this will be your denominator in the Combination formula.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73b129counting30a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a73b129counting30a-h5"
+        ],
+        "title": "Number of Vowels",
+        "text": "How many vowels are in the word?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73b129counting30a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a73b129counting30a-h6"
+        ],
+        "title": "Finding the answer",
+        "text": "Now, substitute the values into the combination formula, and multiply that by the factorial of the number of vowels to find the answer.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,79 @@
+[
+    {
+        "id": "a909d26DivMul15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Division property of equality",
+        "text": "When you divide both sides of an equation by any non-zero number, you still have equality.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a909d26DivMul15a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\frac{5}{6}}{\\left(-\\frac{8}{3}\\right)}=\\frac{-\\left(\\frac{8}{3}\\right) r}{\\left(-\\frac{8}{3}\\right)}$$"
+        ],
+        "dependencies": [
+            "a909d26DivMul15a-h1"
+        ],
+        "title": "Division",
+        "text": "Divide $$\\frac{-8}{3}$$ from each side.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a909d26DivMul15a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-5}{16}$$"
+        ],
+        "dependencies": [
+            "a909d26DivMul15a-h2"
+        ],
+        "title": "Simplification",
+        "text": "What do we get for $$r$$ after simplifying the equation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a909d26DivMul15a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a909d26DivMul15a-h3"
+        ],
+        "title": "Verification",
+        "text": "Check whether the result is a solution of the equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a909d26DivMul15a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a909d26DivMul15a-h4"
+        ],
+        "title": "Verification",
+        "text": "Check whether $$\\frac{5}{6}$$ equals $$-\\left(\\frac{8}{3}\\right) \\left(-\\frac{5}{16}\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "id": "a0bf68dadd13b-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [],
+        "title": "Seeing if the Signs Are Different",
+        "text": "Are the signs of the two terms different?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a0bf68dadd13b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0bf68dadd13b-h1"
+        ],
+        "title": "First Step to Find the Value of the Expression",
+        "text": "Since $$2$$ and $$-5$$ have different signs, we subtract $$2$$ from $$5$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0bf68dadd13b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a0bf68dadd13b-h2"
+        ],
+        "title": "Sign of the Answer",
+        "text": "The answer will be negative because there are more negatives than positives.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0bf68dadd13b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-3$$"
+        ],
+        "dependencies": [
+            "a0bf68dadd13b-h3"
+        ],
+        "title": "Final Answer",
+        "text": "What is $$-(5-2)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

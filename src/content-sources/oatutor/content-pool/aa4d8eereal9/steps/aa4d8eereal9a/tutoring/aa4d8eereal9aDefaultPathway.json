@@ -1,0 +1,48 @@
+[
+    {
+        "id": "aa4d8eereal9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply Even-Odd Identities",
+        "text": "Recall the following properties: tangent is odd, cosine is even, and sine is odd.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aa4d8eereal9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aa4d8eereal9a-h1"
+        ],
+        "title": "Apply Even-Odd Identities",
+        "text": "This means that $$tan(-x)=-tan(x)$$, $$cos(-x)=cos(x)$$, and $$sin(-x)=-sin(x)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aa4d8eereal9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aa4d8eereal9a-h2"
+        ],
+        "title": "Rewrite Each Term",
+        "text": "Apply the identities to each part of the expression: $$cos\\left(-x\\right)+\\operatorname{tannegneg}\\left(x\\right) \\operatorname{sinnegneg}\\left(x\\right)$$ $$=cos\\left(x\\right)+\\left(-tan\\left(x\\right)\\right) \\left(-sin\\left(x\\right)\\right)$$ $$=cos\\left(x\\right)+tan\\left(x\\right) sin\\left(x\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aa4d8eereal9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aa4d8eereal9a-h3"
+        ],
+        "title": "Express cotx in Terms of sinx and cosx",
+        "text": "Recall that $$tan(x)=\\frac{sinx}{cosx}$$. Substitute this in: $$=cos\\left(x\\right)+\\frac{sinx}{cosx} sin\\left(x\\right)$$ $$=\\frac{{cos}^2 x+{sin}^2 x}cos^$\\left(x\\righ$$ $$=\\frac{1}cos^$\\left(x\\righ$$ $$=sec(x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

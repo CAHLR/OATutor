@@ -1,0 +1,70 @@
+[
+    {
+        "id": "afb69a0sumprod25a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Product of Sine and Cosine",
+        "text": "To evaluate the product, rewrite the product of sine and cosine as a sum or difference using the following formula: sin(a)cos(b)=1/2[sin(a+b)+sin(a-b)].",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod25a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$195$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod25a-h1"
+        ],
+        "title": "Identifying Unknown Angles",
+        "text": "From the formula, what is the value of the unknown angle a?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod25a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$15$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod25a-h2"
+        ],
+        "title": "Identifying Unknown Angles",
+        "text": "From the formula, what is the value of the unknown angle $$b$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod25a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod25a-h3"
+        ],
+        "title": "Evaluating the Product",
+        "text": "To make it easier to evaluate the product, plug in the identified values of a and $$b$$ into the product-to-sum formula.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod25a-h5",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod25a-h4"
+        ],
+        "title": "Special Angle Values",
+        "text": "To evaluate, use the known values that $$sin(210)=\\frac{-1}{2}$$ and $$sin(180)=0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

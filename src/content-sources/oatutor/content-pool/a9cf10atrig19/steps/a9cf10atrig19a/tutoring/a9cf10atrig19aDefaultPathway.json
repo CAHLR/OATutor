@@ -1,0 +1,120 @@
+[
+    {
+        "id": "a9cf10atrig19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identity",
+        "text": "$$cscx=\\frac{1}{sinx}$$, $$secx=\\frac{1}{cosx}$$, $$t$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig19a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Substitute identities into $$\\operatorname{tanx}\\left(\\frac{1}{{\\operatorname{csc}\\left(x\\right)}^2}+\\frac{1}{{\\operatorname{sec}\\left(x\\right)}^2}\\right) \\frac{1+tanx}{1+cotx}-\\frac{1}{cos^2\\left(x\\right)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig19a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig19a-h2"
+        ],
+        "title": "Simplify",
+        "text": "$$\\operatorname{tanx}\\left(sin^2\\left(x\\right)+cos^2\\left(x\\right)\\right) \\frac{1+tanx}{1+cotx}-\\frac{1}{{ccos^2eft(x\\right)}=\\frac{\\operatorname{tanx}\\left(1+tanx\\right)}{1+cotx}-\\frac{1}{cos^2\\left(x\\right)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig19a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig19a-h3"
+        ],
+        "title": "Distribute",
+        "text": "$$\\frac{tanx+{\\operatorname{tanx}\\left(x\\right)}^2}{1+cotx}-\\frac{1}{cos^2\\left(x\\right)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig19a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig19a-h4"
+        ],
+        "title": "Identity",
+        "text": "$$\\frac{1}{cos^2\\left(x\\right)}={\\operatorname{sec}\\left(x\\right)}^2=1+tan^2\\left(x\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig19a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig19a-h5"
+        ],
+        "title": "Substitute",
+        "text": "Substitute identity into $$\\frac{tanx+{\\operatorname{tanx}\\left(x\\right)}^2}{1+cotx}-\\frac{1}{cos^2\\left(x\\right)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig19a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig19a-h6"
+        ],
+        "title": "Simplify",
+        "text": "$$\\frac{tanx+{\\operatorname{tanx}\\left(x\\right)}^2}{1+cotx}-{\\operatorname{sec}\\left(x\\right)}^2=\\frac{tanx+{\\operatorname{tanx}\\left(x\\right)}^2}{1+cotx}-1+tan^2\\left(x\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig19a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig19a-h7"
+        ],
+        "title": "Rewrite",
+        "text": "Rewrite $$cotx=\\frac{1}{tanx}$$ and multiplify denominator by its reciprocal, $$\\frac{tanx}{tanx+1}$$, to get: $$\\frac{tan^2\\left(x\\right)+{ttan^3eft(x\\right)}{tanx+1}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig19a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig19a-h8"
+        ],
+        "title": "Rewrite",
+        "text": "Rewrite $$-\\left(1+tan^2\\left(x\\right)\\right)$$ with the same denominator and expand its numerator.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig19a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig19a-h9"
+        ],
+        "title": "Simplify",
+        "text": "$$\\frac{tan^2\\left(x\\right)-{ttan^3eft(x\\right)}{tanx+1}-\\frac{tanx+{tantan^3t(x\\right)+1+{tan\\ltan^2x\\right)}{tanx+1}=-1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

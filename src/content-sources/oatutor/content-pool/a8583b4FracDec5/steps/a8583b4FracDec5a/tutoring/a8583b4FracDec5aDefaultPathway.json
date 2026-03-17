@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a8583b4FracDec5a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12$$"
+        ],
+        "dependencies": [],
+        "title": "Getting Rid of Fraction Denominators",
+        "text": "What is the LCD (largest common denominator) of $$\\frac{1}{2}$$, $$\\frac{3}{4}$$, and $$\\frac{-2}{3}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8583b4FracDec5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8583b4FracDec5a-h1"
+        ],
+        "title": "Getting Rid of Fraction Denominators",
+        "text": "We must now multiply both sides of the equation by the LCD. We get: $$12\\times7=\\frac{12\\times1}{2} x+\\frac{12\\times3}{4} x-\\frac{12\\times2}{3} x$$. This simplifies to $$7x=84$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8583b4FracDec5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8583b4FracDec5a-h2"
+        ],
+        "title": "Solving the New Equation",
+        "text": "To solve this equation, we must now isolate the \"x\" term.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8583b4FracDec5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12$$"
+        ],
+        "dependencies": [
+            "a8583b4FracDec5a-h3"
+        ],
+        "title": "Solving the New Equation",
+        "text": "To isolate $$x$$, we must divide both sides of the equation by $$7$$. What is the value of $$x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

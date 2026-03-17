@@ -1,0 +1,58 @@
+[
+    {
+        "id": "af3b50aangles20a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{4}$$"
+        ],
+        "dependencies": [],
+        "title": "Converting to Radians",
+        "text": "In order to plug the values into the formula, you will need to convert degrees into radians. What do you get when you divide the degrees by 180\u00b0 and multiply by pi?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\pi}{2}$$",
+            "pi",
+            "$$\\frac{\\pi}{4}$$",
+            "$$\\frac{\\pi}{3}$$"
+        ]
+    },
+    {
+        "id": "af3b50aangles20a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{36\\pi}{8}$$"
+        ],
+        "dependencies": [
+            "af3b50aangles20a-h1"
+        ],
+        "title": "Formula of Area",
+        "text": "This is the formula for the area of a sector: $$\\frac{\\theta}{2\\pi} \\pi r^2$$. Plug in the appropriate values and calculate the area of the sector.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{36\\pi}{2}$$",
+            "$$\\frac{36\\pi}{4}$$",
+            "$$\\frac{36\\pi}{6}$$",
+            "$$\\frac{36\\pi}{8}$$"
+        ]
+    },
+    {
+        "id": "af3b50aangles20a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af3b50aangles20a-h2"
+        ],
+        "title": "Simplify",
+        "text": "Simplify the expression and multiply by the decimal value of pi $$(3.14)$$ to get the final answer.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

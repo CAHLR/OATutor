@@ -1,0 +1,69 @@
+[
+    {
+        "id": "af4e405log6c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the base and exponent",
+        "text": "To convert a logarithmic equation to exponential form, we need to identify the base of the exponential, a, and the exponent $$y$$ since $$y=\\log_{a}\\left(x\\right)$$ is equivalent to $$x=a^y$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af4e405log6c-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "af4e405log6c-h1"
+        ],
+        "title": "Identify the base",
+        "text": "What is the base of the exponent?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af4e405log6c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "af4e405log6c-h2"
+        ],
+        "title": "Identify the exponent",
+        "text": "What is the exponent?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af4e405log6c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{1}{10}={10}^{\\left(-1\\right)}$$"
+        ],
+        "dependencies": [
+            "af4e405log6c-h3"
+        ],
+        "title": "Determining Exponential Form",
+        "text": "Knowing the base and the exponent, what is the exponential form?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$\\frac{1}{10}={10}^{\\left(-1\\right)}$$",
+            "$$(-1)={10}^{\\frac{1}{10}}$$",
+            "$$10={\\left(-1\\right)}^{\\frac{1}{10}}$$",
+            "$$\\frac{1}{10}={\\left(-1\\right)}^{10}$$"
+        ]
+    }
+]

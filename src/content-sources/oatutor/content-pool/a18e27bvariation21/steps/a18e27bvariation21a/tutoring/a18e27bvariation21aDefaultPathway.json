@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a18e27bvariation21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "General form",
+        "text": "You can represent the relationship between the variables as $$y$$ $$=$$ $$\\frac{kxz}{w}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a18e27bvariation21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a18e27bvariation21a-h1"
+        ],
+        "title": "Finding k",
+        "text": "Substitute $$x=5$$, $$z=2$$, and $$w=20$$ to find the value of the constant k.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a18e27bvariation21a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a18e27bvariation21a-h2"
+        ],
+        "title": "Evaluating k",
+        "text": "$$y$$ $$=$$ $$\\frac{kxz}{w}$$, so k $$=$$ $$\\frac{wy}{xz}$$. What is k?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a18e27bvariation21a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a18e27bvariation21a-h3"
+        ],
+        "title": "New value of $$y$$",
+        "text": "You can use the equation $$y$$ $$=$$ $$\\frac{kxz}{w}$$ with your new $$y$$, $$z$$, and k value to get the new $$y$$ value.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

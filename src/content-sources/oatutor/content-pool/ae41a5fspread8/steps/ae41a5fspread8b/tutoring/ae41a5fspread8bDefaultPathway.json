@@ -1,0 +1,48 @@
+[
+    {
+        "id": "ae41a5fspread8b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae41a5fspread8a-h2"
+        ],
+        "title": "Method for Determining Standard Deviation",
+        "text": "Since the table gives us the difference from the sample mean to the midpoint $$(m-x)$$, we can actually use the formula sqrt((sum{}{}{f*(m-x)**2})/(n-1)). Essentially, in words, this means that we want to find the square root of the summation of the product of frequency by the squared difference from the mean.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae41a5fspread8b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3.5$$"
+        ],
+        "dependencies": [
+            "ae41a5fspread8b-h3"
+        ],
+        "title": "Determine the Sample Standard Deviation",
+        "text": "What is the sample standard deviation? Round to the nearest hundredth.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "ae41a5fspread8b-h4-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$3.5$$"
+                ],
+                "dependencies": [],
+                "title": "Determine the Sample Standard Deviation",
+                "text": "What is $$\\sqrt{\\frac{43.2964}{26-1}}$$ rounded to the nearest hundredth?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    }
+]

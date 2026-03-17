@@ -1,0 +1,65 @@
+[
+    {
+        "id": "af4dc22Lawcos23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Law of Cosines",
+        "text": "How could we use the law of cosines to find the length of the third side?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af4dc22Lawcos23a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af4dc22Lawcos23a-h1"
+        ],
+        "title": "Side",
+        "text": "Which side length are we solving for? What is the formula to find the side length using the law of cosines? (It is a generalized version of the pythagorean theorem)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af4dc22Lawcos23a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af4dc22Lawcos23a-h2"
+        ],
+        "title": "Missing angle",
+        "text": "What angle are we missing to be able to use the cosine law? How do we find this angle given that we know $$2$$ side lengths and have another angle given to us?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af4dc22Lawcos23a-h4",
+        "type": "hint",
+        "dependencies": [
+            "af4dc22Lawcos23a-h3"
+        ],
+        "title": "Area",
+        "text": "How can we find the area after we have found the $$3$$ side lengths?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af4dc22Lawcos23a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7.62$$"
+        ],
+        "dependencies": [
+            "af4dc22Lawcos23a-h3"
+        ],
+        "title": "Final answer",
+        "text": "After simplifying the equation using the law of cosines what is our area rounded to the nearest tenth?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

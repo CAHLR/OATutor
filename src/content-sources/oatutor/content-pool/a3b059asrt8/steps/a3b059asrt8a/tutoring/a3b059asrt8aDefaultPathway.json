@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a3b059asrt8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding $$45-45-90$$ Triangles",
+        "text": "In a $$45-45-90$$ triangle, the two legs are equal in length, and the hypotenuse is always the leg length times the square root of $$2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3b059asrt8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3b059asrt8a-h1"
+        ],
+        "title": "Formula for Hypotenuse",
+        "text": "The formula for the hypotenuse in a $$45-45-90$$ triangle is: hypotenuse $$=$$ leg * $$\\sqrt{2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a3b059asrt8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8\\sqrt{2}$$"
+        ],
+        "dependencies": [
+            "a3b059asrt8a-h2"
+        ],
+        "title": "Calculate the Hypotenuse",
+        "text": "Given that the leg length is $$8$$ cm, use the formula to find the hypotenuse.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

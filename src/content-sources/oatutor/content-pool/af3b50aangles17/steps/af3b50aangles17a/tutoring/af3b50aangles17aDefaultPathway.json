@@ -1,0 +1,70 @@
+[
+    {
+        "id": "af3b50aangles17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula of arc length",
+        "text": "The formula for the arc length of a sector is the $$radius the$$ central angle in radians (theta).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af3b50aangles17a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [
+            "af3b50aangles17a-h1"
+        ],
+        "title": "Finding the radius",
+        "text": "The first step is to find the radus since you are given the diameter. What is the radius of the circle if the radius is half of the diameter?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$14$$",
+            "$$5$$",
+            "$$28$$",
+            "$$7$$"
+        ]
+    },
+    {
+        "id": "af3b50aangles17a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{35\\pi}{6}$$"
+        ],
+        "dependencies": [
+            "af3b50aangles17a-h2"
+        ],
+        "title": "Multiplying",
+        "text": "Now that you have the radius, what do you get after multiplying the radius by the central angle?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{7\\pi}{6}$$",
+            "$$\\frac{35\\pi}{6}$$",
+            "$$\\frac{35\\pi}{7}$$",
+            "$$7\\pi$$"
+        ]
+    },
+    {
+        "id": "af3b50aangles17a-h4",
+        "type": "hint",
+        "dependencies": [
+            "af3b50aangles17a-h3"
+        ],
+        "title": "Simplify",
+        "text": "Simplify the expression and multiply by the decimal value of pi $$(3.14)$$ to get the final answer.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

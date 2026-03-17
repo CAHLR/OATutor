@@ -1,0 +1,63 @@
+[
+    {
+        "id": "aed4feastability2a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [],
+        "title": "Determine the Net Torque",
+        "text": "What should the net torque be when the seesaw is balanced (in Nm)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aed4feastability2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aed4feastability2a-h1"
+        ],
+        "title": "Solve for the Force",
+        "text": "Assume the direction of the wind is the positive direction. What force is exerted by the chicken's center of gravity (in Newtons)? Take acceleration from gravity to be $$\\frac{9.8m}{s^2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aed4feastability2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$24.5$$"
+        ],
+        "dependencies": [
+            "aed4feastability2a-h2"
+        ],
+        "title": "Force at Center of Gravity",
+        "text": "What force is exerted by the chicken's center of gravity (in Newtons)? Take acceleration from gravity to be $$\\frac{9.8m}{s^2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aed4feastability2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$11$$"
+        ],
+        "dependencies": [
+            "aed4feastability2a-h3"
+        ],
+        "title": "Calculate the Force",
+        "text": "Solve for F: $$0$$ $$=$$ $$(-24.5N$$ * $$0.09m)$$ + (F * $$0.2m)$$ (rounded to the nearest Newton).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

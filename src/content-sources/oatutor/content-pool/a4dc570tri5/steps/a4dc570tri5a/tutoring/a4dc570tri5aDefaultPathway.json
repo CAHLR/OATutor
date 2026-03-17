@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a4dc570tri5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Follow the hint",
+        "text": "Identify the point on the unit circle where $$sin(\\theta)=-1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4dc570tri5a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(0,-1)$$"
+        ],
+        "dependencies": [
+            "a4dc570tri5a-h1"
+        ],
+        "title": "Follow the hint",
+        "text": "What is the corresponding point?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$(0,-1)$$",
+            "$$(0,1)$$",
+            "$$(1,0)$$",
+            "$$(-1,0)$$"
+        ]
+    },
+    {
+        "id": "a4dc570tri5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4dc570tri5a-h2"
+        ],
+        "title": "Find all angles",
+        "text": "\u03b8 can be $$\\frac{3\\pi}{2}$$, $$\\frac{3\\pi}{2}+2\\pi$$, $$\\frac{3\\pi}{2}-2\\pi$$, $$\\frac{3\\pi}{2}+4\\pi$$, $$\\frac{3\\pi}{2}-4\\pi$$ ......",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4dc570tri5a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4dc570tri5a-h3"
+        ],
+        "title": "Interval",
+        "text": "\u03b8 is in $$(-3\\pi,3\\pi)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4dc570tri5a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{-5\\pi}{2}$$, $$\\frac{-\\pi}{2}$$, $$\\frac{3\\pi}{2}$$"
+        ],
+        "dependencies": [
+            "a4dc570tri5a-h4"
+        ],
+        "title": "Interval",
+        "text": "What are possible values of \u03b8?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$\\frac{-5\\pi}{2}$$, $$\\frac{-\\pi}{2}$$, $$\\frac{3\\pi}{2}$$",
+            "$$\\frac{3\\pi}{2}+2n \\pi$$"
+        ]
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a6f06c3real16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Solve for cost and sint",
+        "text": "$${sint}^2=\\frac{y}{2}$$, $$cost=x-4$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6f06c3real16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6f06c3real16a-h1"
+        ],
+        "title": "Use the Pythagorean Identity",
+        "text": "Since $${cost}^2+{sint}^2=1$$, we have $$\\left(x-4\\right)^2+\\frac{y}{2}=1$$. Simplify the equation, we get $$y=-2x^2+16x-30$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

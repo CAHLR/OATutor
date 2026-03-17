@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a590f38trigonometric12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Modeling the problem",
+        "text": "For any length of ladder, the base needs to be a distance from the wall equal to one forth of the ladder's length. Equivalently, if the base of the ladder is 'a' feet from the wall, the length of the ladder will be 4a feet.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric12a-h1"
+        ],
+        "title": "Pythagorean Theorem",
+        "text": "We can find the length of the cable with the Pythagorean Theorem: $$a^2+b^2=c^2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric12a-h2"
+        ],
+        "title": "Pythagorean Theorem",
+        "text": "Plugging values into the equation results in: $$a^2+b^2=\\left(4a\\right)^2$$. Now we can solve for $$b$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric12a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$15a^2$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric12a-h3"
+        ],
+        "title": "Pythagorean Theorem",
+        "text": "What does $$b^2$$ equal?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "15a",
+            "$$15a^2$$",
+            "$$4a^2$$",
+            "4a"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric12a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\sqrt{15} a$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric12a-h4"
+        ],
+        "title": "Pythagorean Theorem",
+        "text": "To get $$b$$, the height of the ladder, we must divide find the square root of our previous result, $$b^2$$. What does this result in?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\sqrt{15} a$$",
+            "15a",
+            "$$15\\sqrt{a}$$",
+            "$$\\sqrt{4a}$$"
+        ]
+    }
+]

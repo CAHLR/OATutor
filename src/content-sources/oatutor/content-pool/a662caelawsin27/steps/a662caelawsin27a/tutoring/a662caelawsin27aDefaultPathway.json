@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a662caelawsin27a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Law of Sines",
+        "text": "The Law of Sines states (a/sin(A))=(b/sin(B))=(c/(sin(C))",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin27a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "26\u00b0"
+        ],
+        "dependencies": [
+            "a662caelawsin27a-h1"
+        ],
+        "title": "Find the Missing Angle",
+        "text": "The missing angle here is B. If the sum of all angles should add up to 180\u00b0, sum the two given angles and subtract from 180\u00b0. What is angle B?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "39\u00b0",
+            "42\u00b0",
+            "26\u00b0",
+            "87\u00b0"
+        ]
+    },
+    {
+        "id": "a662caelawsin27a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin27a-h2"
+        ],
+        "title": "Substitution",
+        "text": "Now that you have B, substitute the values into (b/sin(B))=(c/(sin(C)).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

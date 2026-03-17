@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a150a865.3retire1d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exponential Distribution",
+        "text": "We can set our decay parameter and use a PDF function to find $$P\\left(X>x\\right)$$ where X is greater than a bounded value.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a150a865.3retire1d-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20$$"
+        ],
+        "dependencies": [
+            "a150a865.3retire1d-h1"
+        ],
+        "title": "Before using $$P\\left(X>x\\right)$$ function, we need to find what $$x$$ will be. What is $$x$$? Remember the random variable definition.",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a150a865.3retire1d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a150a865.3retire1d-h2"
+        ],
+        "title": "Exponential Distribution",
+        "text": "Since we are looking at a population aged $$80$$ years old or older, we can subtract $$60$$ from $$80$$ to get $$20$$ as our chosen bound value $$x$$ when solving $$P\\left(X>x\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

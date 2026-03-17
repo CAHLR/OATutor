@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a8d81afgaussian21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Matrix",
+        "text": "The given matrix is an augmented matrix, which represents a system of linear equations. Each row of the matrix corresponds to one equation in the system, with the coefficients of $$x$$, $$y$$, and the constant on the right-hand side.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8d81afgaussian21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8d81afgaussian21a-h1"
+        ],
+        "title": "Solving the System",
+        "text": "In order to solve the system, set the variables in each row equal to the constant on the right-hand side, then solve for the variables.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8d81afgaussian21a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$87$$"
+        ],
+        "dependencies": [
+            "a8d81afgaussian21a-h2"
+        ],
+        "title": "Finding $$z$$",
+        "text": "According to the third equation, what is the value of $$z$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$31$$",
+            "$$45$$",
+            "$$87$$"
+        ]
+    },
+    {
+        "id": "a8d81afgaussian21a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-42$$"
+        ],
+        "dependencies": [
+            "a8d81afgaussian21a-h3"
+        ],
+        "title": "Finding $$y$$",
+        "text": "Now that you know $$z$$, substitute $$z$$ into the second equation and solve for $$y$$. What is $$y$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$40$$",
+            "$$45$$",
+            "$$-42$$",
+            "$$-45$$"
+        ]
+    },
+    {
+        "id": "a8d81afgaussian21a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a8d81afgaussian21a-h4"
+        ],
+        "title": "Finding $$x$$",
+        "text": "Using the two known values, substitute into any equation to solve for $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

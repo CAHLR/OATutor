@@ -1,0 +1,40 @@
+[
+    {
+        "id": "a8e1cdadrag1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Drag Formula",
+        "text": "Recall the drag force formula: F $$=$$ $$\\frac{1}{2} C \u03c1 A v^2$$ where C is the drag coefficient, \u03c1 is the mass density of the fluid, and A is the reference area.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8e1cdadrag1a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the Drag Coefficient C for Skydiver",
+        "text": "Recall the drag coefficient C for a skydiver is $$0.7$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8e1cdadrag1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$115$$"
+        ],
+        "dependencies": [
+            "a8e1cdadrag1a-h1",
+            "a8e1cdadrag1a-h2"
+        ],
+        "title": "Plug In and Solve for the Terminal Velocity",
+        "text": "Solve for v (in $$\\frac{m}{s}$$, rounded to nearest whole number): $$80\\times9.8$$ $$=$$ $$0.7\\frac{1}{2}\\times1.21\\times0.14 v^2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

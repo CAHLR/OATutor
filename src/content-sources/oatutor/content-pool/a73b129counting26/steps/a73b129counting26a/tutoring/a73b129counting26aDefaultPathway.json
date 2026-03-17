@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a73b129counting26a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using the Subset Formula",
+        "text": "The formula for finding the number of subsets of a set is $$2^n$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73b129counting26a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73b129counting26a-h1"
+        ],
+        "title": "Finding the Total Number of Elements",
+        "text": "Before applying the subset formula, first find the total number of elements in the set.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73b129counting26a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a73b129counting26a-h2"
+        ],
+        "title": "Two-Digit Numbers",
+        "text": "Consider the two-digit numbers between $$1$$ and $$100$$ that contain the digit $$0$$. These numbers are: 10,20,30,40,50,60,70,80,90.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73b129counting26a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "a73b129counting26a-h3"
+        ],
+        "title": "Finding the Number of Elements",
+        "text": "How many numbers are in the set?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73b129counting26a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a73b129counting26a-h4"
+        ],
+        "title": "Applying the Subset Formula",
+        "text": "Now that you know there are $$9$$ elements in the set, apply the subset formula, with the elements representing $$n$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

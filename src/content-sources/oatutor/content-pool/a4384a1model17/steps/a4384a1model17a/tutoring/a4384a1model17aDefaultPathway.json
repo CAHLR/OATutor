@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a4384a1model17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Change years to months",
+        "text": "$$3$$ years is $$36$$ months",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4384a1model17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4384a1model17a-h1"
+        ],
+        "title": "Plug in months",
+        "text": "P(36) $$=$$ $$558$$ / (1 + $$54.8e$$ ** $$(-.462$$ * 36))",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4384a1model17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4384a1model17a-h2"
+        ],
+        "title": "Solve",
+        "text": "$$558$$ / $$1$$ + $$.00000299$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

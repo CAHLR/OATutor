@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ab6a46ageo9a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [],
+        "title": "Identify $$a_1$$",
+        "text": "What is the first term?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab6a46ageo9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab6a46ageo9a-h1"
+        ],
+        "title": "Find $$r$$",
+        "text": "The common ratio can be found by dividing the second term by the first term.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab6a46ageo9a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-5$$"
+        ],
+        "dependencies": [
+            "ab6a46ageo9a-h2"
+        ],
+        "title": "Find $$r$$",
+        "text": "What is $$\\frac{5}{-1}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab6a46ageo9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ab6a46ageo9a-h3"
+        ],
+        "title": "Recursive Formula for Geometric Sequences",
+        "text": "Define $$a_1$$ and then substitute the common ratio into the recursive formula: $$a_n=r a_n-1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab6a46ageo9a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ab6a46ageo9a-h4"
+        ],
+        "title": "Recursive Formula for Geometric Sequences",
+        "text": "The recursive formula for this geometric sequence is $$a_1=-1$$, $$a_n=-5a_n-1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

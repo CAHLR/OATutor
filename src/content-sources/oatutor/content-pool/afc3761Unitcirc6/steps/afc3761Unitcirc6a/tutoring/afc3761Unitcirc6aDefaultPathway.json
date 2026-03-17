@@ -1,0 +1,72 @@
+[
+    {
+        "id": "afc3761Unitcirc6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Triangles in Unit Circle",
+        "text": "Try to a draw triangle in the unit circle to get the side lengths",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afc3761Unitcirc6a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$180$$"
+        ],
+        "dependencies": [
+            "afc3761Unitcirc6a-h1"
+        ],
+        "title": "Angle in Degrees",
+        "text": "What is the given angle in degrees?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afc3761Unitcirc6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afc3761Unitcirc6a-h1",
+            "afc3761Unitcirc6a-h2"
+        ],
+        "title": "Sides of Triangle",
+        "text": "What are the sides lengths of the triangle? (Try creating an equilateral triangle to derive the lengths)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afc3761Unitcirc6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afc3761Unitcirc6a-h3"
+        ],
+        "title": "Coordinates of Unit Circle",
+        "text": "What is the relationship between cosine and the point on the unit circle?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afc3761Unitcirc6a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "afc3761Unitcirc6a-h4",
+            "afc3761Unitcirc6a-h3"
+        ],
+        "title": "",
+        "text": "What is the final value?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

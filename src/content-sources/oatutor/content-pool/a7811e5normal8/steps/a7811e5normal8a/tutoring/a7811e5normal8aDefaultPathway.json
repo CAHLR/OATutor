@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a7811e5normal8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify \u03bc and \u03c3",
+        "text": "Let $$X=age$$ of smart phone users. What is \u03bc and \u03c3 in $$X~N(\u03bc,\u03c3)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7811e5normal8a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$36.9$$"
+        ],
+        "dependencies": [
+            "a7811e5normal8a-h1"
+        ],
+        "title": "Identify \u03bc",
+        "text": "What is the mean \u03bc in here?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7811e5normal8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$13.9$$"
+        ],
+        "dependencies": [
+            "a7811e5normal8a-h1"
+        ],
+        "title": "Identify \u03c3",
+        "text": "What is the standard deviation \u03c3?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7811e5normal8a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7811e5normal8a-h1"
+        ],
+        "title": "Using a Calculator (TI-83, 83+, $$84$$, 84+ Calculator)",
+        "text": "We know X~N(36.9,13.9). Compute $$P\\left(23<x<64.7\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7811e5normal8a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a7811e5normal8a-h4"
+        ],
+        "title": "Compute the area probability between $$x=23$$ and $$x=64.7$$. $$P\\left(23<x<64.7\\right)$$.",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7811e5normal8a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.8186$$"
+        ],
+        "dependencies": [
+            "a7811e5normal8a-h5"
+        ],
+        "title": "$$normalcdf(23, 64, 36.9, 13.9)$$",
+        "text": "Round to 4th digits after decimal.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

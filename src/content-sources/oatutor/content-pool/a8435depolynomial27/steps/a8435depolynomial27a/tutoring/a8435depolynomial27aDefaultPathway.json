@@ -1,0 +1,127 @@
+[
+    {
+        "id": "a8435depolynomial27a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Finding the Height",
+        "text": "The volume of a cube is the product of the length, width and height. Here, we are given the volume, the length, and the width. To find the height, multiply the length by the width and divide the volume by the product.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8435depolynomial27a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$6x^2+9x-12$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial27a-h1"
+        ],
+        "title": "Setting Up the Long Division",
+        "text": "We are dividing $$12x^3+20x^2-21x-36$$ by the product of $$\\left(2x+3\\right) \\left(3x-4\\right)$$. First, multiply $$2x+3$$ by $$(3x-4)$$. What do you get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$6x^2+10x-16$$",
+            "$$6x^2+9x-12$$",
+            "$$6x^2+3x-4$$",
+            "$$4x^2+7x-12$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial27a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2x$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial27a-h2"
+        ],
+        "title": "Multiply and Subtract",
+        "text": "Now, divide $$12x^3+20x^2-21x-36$$ by the result $$6x^2+9x-12$$. What do you get when you divide the first term $$12x^3$$ by $$6x^2$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2x$$",
+            "$$3x$$",
+            "$$4x$$",
+            "$$x$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial27a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$8x^2-15x-36$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial27a-h3"
+        ],
+        "title": "Multiply and Subtract",
+        "text": "Now, multiply $$2x$$ by $$6x^2+9x-12$$ and subtract the result from $$12x^3+20x^2-21x-36$$. What do you get after performing the subtraction?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$8x^2-15x-36$$",
+            "$$8x^2-20x-30$$",
+            "$$8x^2-15x-34$$",
+            "$$8x^2-13x-35$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial27a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{4}{3}$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial27a-h4"
+        ],
+        "title": "Divide Again",
+        "text": "Now, divide the first term of the new result $$8x^2$$ by $$6x^2$$. What do you get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{2}{3}$$",
+            "$$\\frac{4}{3}$$",
+            "8/3\u200b",
+            "$$\\frac{2}{5}$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial27a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial27a-h5"
+        ],
+        "title": "Multiply and Subtract Again",
+        "text": "Now, multiply 34\u200b by $$6x^2+9x-12$$, and subtract the result from $$8x^2-15x-36$$. What is the result of this operation?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$1$$",
+            "$$2$$",
+            "$$\\frac{1}{2}$$"
+        ]
+    }
+]

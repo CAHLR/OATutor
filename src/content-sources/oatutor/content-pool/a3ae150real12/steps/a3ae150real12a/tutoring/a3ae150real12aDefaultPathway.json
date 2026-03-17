@@ -1,0 +1,56 @@
+[
+    {
+        "id": "a3ae150real12a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [],
+        "title": "Identify A and B",
+        "text": "What is A",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3ae150real12a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [],
+        "title": "Identify A and B",
+        "text": "What is B",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3ae150real12a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "ellipse"
+        ],
+        "dependencies": [
+            "a3ae150real12a-h1",
+            "a3ae150real12a-h2"
+        ],
+        "title": "$$AB>0$$",
+        "text": "Notice that $$AB=6>0$$, so the conic section is a",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "hyperbola",
+            "ellipse",
+            "parabola",
+            "circle"
+        ]
+    }
+]

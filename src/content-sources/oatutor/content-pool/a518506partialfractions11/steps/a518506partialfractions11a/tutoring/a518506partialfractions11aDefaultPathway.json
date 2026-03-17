@@ -1,0 +1,100 @@
+[
+    {
+        "id": "a518506partialfractions11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Repeated Factors",
+        "text": "To allow for the repeated factor of $$x+4$$, the decomposition will include two denominators: $$x+4$$ and $$\\left(x+4\\right)^2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a518506partialfractions11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a518506partialfractions11a-h1"
+        ],
+        "title": "Separating Denominator Factors",
+        "text": "Separate the denominator factors and give each numerator a symbolic label like A and B",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a518506partialfractions11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a518506partialfractions11a-h2"
+        ],
+        "title": "Separating Denominator Factors",
+        "text": "The equation should now look like: $$\\frac{\\left(-5x-19\\right)}{\\left(x+4\\right)^2}=\\frac{A}{x+4}+\\frac{B}{\\left(x+4\\right)^2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a518506partialfractions11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a518506partialfractions11a-h3"
+        ],
+        "title": "Eliminating Fractions",
+        "text": "Multiply both sides of the equation by the common denominator to eliminate the fractions. The resulting equation is $$-5x-19=A\\left(x+4\\right)+B$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a518506partialfractions11a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a518506partialfractions11a-h4"
+        ],
+        "title": "System of Equations",
+        "text": "Expand the right side of the equation and collect like terms, and then set up a system of equations associating corresponding coefficients.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a518506partialfractions11a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a518506partialfractions11a-h5"
+        ],
+        "title": "Solving Equations",
+        "text": "The two equations are $$-5=A$$ and $$-19=4A+B$$. Plug $$A=-5$$ into the second equation to solve for B. What is B equal to?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a518506partialfractions11a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{-5}{x+4}+\\frac{1}{\\left(x+4\\right)^2}$$"
+        ],
+        "dependencies": [
+            "a518506partialfractions11a-h6"
+        ],
+        "title": "Partial Fraction Decomposition",
+        "text": "What is the partial fraction decomposition after plugging in the values for A and B?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{-5}{x+4}+\\frac{1}{\\left(x+4\\right)^2}$$",
+            "$$\\frac{2}{x-1}-\\frac{5}{\\left(x-1\\right)^2}$$",
+            "$$\\frac{5}{x+4}+\\frac{7}{\\left(x+4\\right)^2}$$",
+            "$$\\frac{6}{x-1}-\\frac{5}{\\left(x-1\\right)^2}$$"
+        ]
+    }
+]

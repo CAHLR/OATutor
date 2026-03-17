@@ -1,0 +1,70 @@
+[
+    {
+        "id": "afb69a0sumprod20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sum to Product Identity",
+        "text": "The formula to express the sum of two cosines as a product is as follows: $$cos\\left(a\\right)+cos\\left(b\\right)=2cos\\left(\\frac{a+b}{2}\\right) cos\\left(\\frac{a-b}{2}\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod20a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3x$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod20a-h1"
+        ],
+        "title": "Identify Unknown Angle a",
+        "text": "What is the value of the unknown placeholder angle a?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod20a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9x$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod20a-h2"
+        ],
+        "title": "Identify Unknown Angle $$b$$",
+        "text": "What is the value of the unknown placeholder angle $$b$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod20a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod20a-h3"
+        ],
+        "title": "Express as Product",
+        "text": "To express the sum as a singular product, plug in the identified values of a and $$b$$ and simplify if necessary.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod20a-h5",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod20a-h4"
+        ],
+        "title": "Cosine Properties",
+        "text": "Since the cosine is an even function, $$cos(-x)=cos(x)$$. Use this property to rewrite all angles as positive.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

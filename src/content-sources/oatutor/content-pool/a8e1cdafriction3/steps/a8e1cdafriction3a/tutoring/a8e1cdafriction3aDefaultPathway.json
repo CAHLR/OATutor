@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a8e1cdafriction3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Friction Formula",
+        "text": "Recall the friction formula: f $$=$$ \\mu * N.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a8e1cdafriction3a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Coefficient of Friction",
+        "text": "Recall the coefficient of kinetic friction of bone lubricated in synovial fluid is $$0.015$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a8e1cdafriction3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$646.8$$"
+        ],
+        "dependencies": [
+            "a8e1cdafriction3a-h1"
+        ],
+        "title": "Use Newton's Second Law to Calculate Normal Force",
+        "text": "By Newton's Second Law (F=m*a), we have $$N=m g$$. What is the normal force (in Newtons)? What is $$N=m g=66kg$$ * $$9.8$$ $$\\frac{m}{s^2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a8e1cdafriction3a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$9.7$$ N"
+        ],
+        "dependencies": [
+            "a8e1cdafriction3a-h1",
+            "a8e1cdafriction3a-h2",
+            "a8e1cdafriction3a-h3"
+        ],
+        "title": "Solve for f",
+        "text": "Using the f and \\mu that we found, solve for f in newtons. What is f=\\mu*N=0.015*646.8? (keep one digit after the decimal point)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$970$$ N",
+            "$$97$$ N",
+            "$$9.7$$ N",
+            "$$0.97$$ N"
+        ]
+    }
+]

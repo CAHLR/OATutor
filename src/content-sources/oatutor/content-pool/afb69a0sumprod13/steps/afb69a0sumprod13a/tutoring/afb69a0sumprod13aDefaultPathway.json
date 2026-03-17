@@ -1,0 +1,58 @@
+[
+    {
+        "id": "afb69a0sumprod13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Product of Cosine and Sine",
+        "text": "The formula to express the product of cosine and sine as a sum or difference is 1/2[sin(a+b)-sin(a-b)].",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod13a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5x$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod13a-h1"
+        ],
+        "title": "Identify Unknown Angles",
+        "text": "From the formula structure of cos(a)sin(b), what is the value of angle a in this problem?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod13a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10x$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod13a-h2"
+        ],
+        "title": "Identify Unknown Angles",
+        "text": "From the formula structure of cos(a)sin(b), what is the value of angle $$b$$ in this problem?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod13a-h3"
+        ],
+        "title": "Using Formula to Solve",
+        "text": "To solve, plug in the values for a and $$b$$ into the formula. The initial coefficient of $$10$$ becomes $$5$$ when multiplied by the $$\\frac{1}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

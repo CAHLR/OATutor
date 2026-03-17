@@ -1,0 +1,84 @@
+[
+    {
+        "id": "a642536polar8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identities",
+        "text": "We will rearrange the formula to use the identities $$r^2=x^2+y^2$$, $$x=rcos\\theta$$, and $$y=rsin\\theta$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a642536polar8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a642536polar8a-h1"
+        ],
+        "title": "Multiply Both Sides",
+        "text": "Rectangular form does not have one big fraction like polar form. Multiply both sides by the denominator, $$3-2cos\\theta$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a642536polar8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a642536polar8a-h2"
+        ],
+        "title": "Isolate $$r$$",
+        "text": "One of the identities is $$r$$ (which we will make r**2) all by itself. Add 2rcos\u03b8 to both sides.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a642536polar8a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a642536polar8a-h3"
+        ],
+        "title": "Square Both Sides",
+        "text": "The identity is $$r^2=x^2+y^2$$, so square both sides.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a642536polar8a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a642536polar8a-h4"
+        ],
+        "title": "Substitute",
+        "text": "$$9r^2=\\left(8+2rcostheta\\right)^2$$ becomes $$9\\left(x^2+y^2\\right)=\\left(8+2x\\right)^2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a642536polar8a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a642536polar8a-h5"
+        ],
+        "title": "Simplify",
+        "text": "FOIL $$\\left(8+2x\\right)^2$$ and subtract from both sides: $$9x^2+9y^2-81-32x-4x^2=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a642536polar8a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a642536polar8a-h6"
+        ],
+        "title": "Rectangular Form",
+        "text": "$$5x^2+9y^2-32x-81=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

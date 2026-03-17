@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a5b26d4physical9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculating Distance with Speed and Time",
+        "text": "The formula to calculate distance using speed and time is: Distance $$=$$ Speed $$x$$ Time.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a5b26d4physical9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5b26d4physical9a-h1"
+        ],
+        "title": "Find the Formula to Calculate Distance",
+        "text": "Distance $$=$$ $$4.0$$ $$\\frac{cm}{year}$$ * $$1$$ s",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a5b26d4physical9a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Convertinging the Speed from $$\\frac{cm}{year}$$ to $$\\frac{m}{s}$$",
+        "text": "Multiply by the conversion factors that turn $$\\frac{cm}{year}$$ into $$\\frac{m}{s}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5b26d4physical9a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1.3\\times{10}^{-9}$$ $$m$$"
+        ],
+        "dependencies": [
+            "a5b26d4physical9a-h3"
+        ],
+        "title": "Multiplying by the Conversion Factor in the Distance Formula",
+        "text": "What is $$4.0$$ $$\\frac{cm}{year}$$ * $$\\frac{1}{365}$$ $$\\frac{year}{day}$$ * $$\\frac{1}{24}$$ $$\\frac{day}{hr}$$ * $$\\frac{1}{3600}$$ $$\\frac{hr}{sec}$$ * $$\\frac{1}{100}$$ $$\\frac{m}{cm}$$ * $$1$$ sec?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$1.3\\times{10}^9$$ $$m$$",
+            "$$1.3\\times{10}^{-9}$$ $$m$$",
+            "$$1.3\\times{10}^9$$ $$m$$",
+            "$$1.3\\times{10}^{-9}$$ $$m$$"
+        ]
+    }
+]

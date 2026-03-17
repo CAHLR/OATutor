@@ -1,0 +1,58 @@
+[
+    {
+        "id": "aae6efeSolving25c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Setup",
+        "text": "Assume the fraction is $$x$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aae6efeSolving25c-h2",
+        "type": "hint",
+        "dependencies": [
+            "aae6efeSolving25c-h1"
+        ],
+        "title": "Translation",
+        "text": "Transform the question in equation form as $$\\frac{50}{40}=x$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aae6efeSolving25c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.25$$"
+        ],
+        "dependencies": [
+            "aae6efeSolving25c-h2"
+        ],
+        "title": "Calculation",
+        "text": "What is the value of $$x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aae6efeSolving25c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$125$$"
+        ],
+        "dependencies": [
+            "aae6efeSolving25c-h3"
+        ],
+        "title": "Conversion",
+        "text": "Translate $$1.25$$ to a percentage (omit the percent sign in your answer)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a590f38trigonometric9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Pythagorean Theorem",
+        "text": "Using the information given, we can draw a right triangle. We can find the length of the cable with the Pythagorean Theorem: $$a^2+b^2=c^2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric9a-h1"
+        ],
+        "title": "Pythagorean Theorem",
+        "text": "c represents the hypothenuse in the equation, so plugging in $$69.5$$ and $$23$$ for a and $$b$$ results in: $${23}^2+{69.5}^2=c^2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric9a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5359$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric9a-h2"
+        ],
+        "title": "Pythagorean Theorem",
+        "text": "What does $${23}^2+{69.5}^2$$ result in?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric9a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$73.2$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric9a-h3"
+        ],
+        "title": "Pythagorean Theorem",
+        "text": "To get c, the length of the cable, we must divide find the square root of our previous result, $$c^2$$. What is the value to the nearest decimal point?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

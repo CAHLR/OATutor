@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a9cf10atrig20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identity",
+        "text": "$$tanx=\\frac{sinx}{cosx}$$, $$cotx=\\frac{cosx}{sinx}$$, $$cscx=\\frac{1}{sinx}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig20a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Substitute identity into $$\\frac{tanx+cotx}{cscx}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig20a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig20a-h2"
+        ],
+        "title": "Simplify",
+        "text": "$$\\frac{\\frac{sinx}{cosx}+\\frac{cosx}{sinx}}{\\frac{1}{sinx}}=\\operatorname{sinx}\\left(\\frac{sinx}{cosx}+\\frac{cosx}{sinx}\\right)=\\frac{sin^2\\left(x\\right)}{cosx}+cosx$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig20a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig20a-h3"
+        ],
+        "title": "Identity",
+        "text": "$$sin^2\\left(x\\right)=1-cos^2\\left(x\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig20a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig20a-h4"
+        ],
+        "title": "Substitute",
+        "text": "Substitute identity into $$\\frac{sin^2\\left(x\\right)}{cosx}+cosx$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig20a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig20a-h5"
+        ],
+        "title": "Simplify",
+        "text": "$$\\frac{1-cos^2\\left(x\\right)}{cosx}+cosx=\\frac{1}{cosx}-cosx+cosx=\\frac{1}{cosx}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

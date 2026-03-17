@@ -1,0 +1,63 @@
+[
+    {
+        "id": "ad1dfa0problem21b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the Total Force at the Bottom of the Arc",
+        "text": "At the bottom of the arc, the total force exerted by the ride on the rider includes two components: the centripetal force\\nand the gravitational force, acting downwards. F_{total} $$=$$ $$F_c$$ + $$F_g$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad1dfa0problem21b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1176$$"
+        ],
+        "dependencies": [
+            "ad1dfa0problem21b-h1"
+        ],
+        "title": "Calculate Centripetal force",
+        "text": "What is $$F_c$$ $$=$$ $$m$$ \\cdot $$a_c=$$ $$60.0\\text{kg$$} \\cdot 19.6\\text{m/s}**2 in N?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad1dfa0problem21b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$588$$"
+        ],
+        "dependencies": [
+            "ad1dfa0problem21b-h2"
+        ],
+        "title": "Calculate Centripetal force",
+        "text": "What is $$F_g$$ $$=$$ $$m$$ \\cdot $$g=$$ $$60.0\\text{kg$$} \\cdot 9.8\\text{m/s}**2 in N?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad1dfa0problem21b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1764$$"
+        ],
+        "dependencies": [
+            "ad1dfa0problem21b-h3"
+        ],
+        "title": "Sum Up",
+        "text": "What is F_{total} $$=$$ $$F_c$$ + $$F_g$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,49 @@
+[
+    {
+        "id": "a526a0cintegration9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Reciprocal Function",
+        "text": "Using one of the basic integration formula $$\\int \\frac{1}{x} \\,dx=log|x|+C$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a526a0cintegration9a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{1}{2} log|x|+C$$"
+        ],
+        "dependencies": [
+            "a526a0cintegration9a-h1"
+        ],
+        "title": "Integration",
+        "text": "What is the result of integration?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\frac{1}{2} log$$",
+            "$$x$$",
+            "$$+C$$",
+            "log",
+            "$$x$$",
+            "$$+C$$"
+        ],
+        "subHints": [
+            {
+                "id": "a526a0cintegration9a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Failing to apply Power Rule",
+                "text": "As the function can be rewritten as $$(1/2)*\\int x^{-1} \\,dx$$, we realize the Power Rule for Integrals will result in the denominator equal $$0$$ which is undefined. We have to use another method to approach the problem.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    }
+]

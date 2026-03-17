@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a3d3e89log28a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Change of Base",
+        "text": "Knowing the logarithm is of base $$121$$, rewrite $$11$$ as $$121$$ raised to a power.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log28a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log28a-h1"
+        ],
+        "title": "Recognize Relationship",
+        "text": "$${11}^2=121$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log28a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log28a-h2"
+        ],
+        "title": "Simplify",
+        "text": "$$y=\\operatorname{log121}\\left({121}^{0.5}\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

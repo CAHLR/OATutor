@@ -1,0 +1,41 @@
+[
+    {
+        "id": "afa63f8real3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Press $$[Y=]$$ and enter $${\\operatorname{1.2}\\left(5\\right)}^x+2.8$$ next to $$Y1=$$. Then enter $$42$$ next to $$Y2=$$. For a window, use the values $$-3$$ to $$3$$ for $$x$$ and $$-5$$ to $$5$$ for $$y$$. Press [GRAPH].",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afa63f8real3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afa63f8real3a-h1"
+        ],
+        "title": "The graphs generated should intersect near $$x=2$$.",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afa63f8real3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.166$$"
+        ],
+        "dependencies": [
+            "afa63f8real3a-h2"
+        ],
+        "title": "The x-coordinate of the point of intersection should be displayed.",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

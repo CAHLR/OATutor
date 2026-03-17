@@ -1,0 +1,82 @@
+[
+    {
+        "id": "afb69a0sumprod6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Product of Cosines",
+        "text": "Use the formula for the product of cosines to write the product as a sum or difference. The formula is cos(a)cos(b)=1/2[cos(a-b)+cos(a+b)].",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod6a-h1"
+        ],
+        "title": "Substitute Angles",
+        "text": "To rewrite the product, substitute the given values for the unknown variable angles into the formula.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod6a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{11\\pi}{12}$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod6a-h2"
+        ],
+        "title": "Identifying Unknown Angle a",
+        "text": "From the formula written as cos(a)cos(b), what is the angle a?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod6a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{12}$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod6a-h3"
+        ],
+        "title": "Identifying Unknown Angle $$b$$",
+        "text": "From the formula written as cos(a)cos(b), what is the angle $$b$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod6a-h5",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod6a-h4"
+        ],
+        "title": "Plugging in Angles",
+        "text": "Use the formula and plug in the identified values for the angles a and $$b$$. Leave the $$\\frac{1}{2}$$ as a constant multiplier for the sum of cosines.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod6a-h6",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod6a-h5"
+        ],
+        "title": "Simplifying",
+        "text": "To simplify, plug in the angles for a and $$b$$ that we identified. Leave the $$\\frac{1}{2}$$ as a constant multiplier for the sum of cosines.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

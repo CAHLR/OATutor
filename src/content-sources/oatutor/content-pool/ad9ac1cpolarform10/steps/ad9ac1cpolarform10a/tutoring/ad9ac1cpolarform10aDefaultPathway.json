@@ -1,0 +1,58 @@
+[
+    {
+        "id": "ad9ac1cpolarform10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Verify $$x$$, $$y$$, and $$r$$.",
+        "text": "We know that r=sqrt(x**2 + y**2), and tan(theta) $$=$$ $$\\frac{y}{x}$$. Plugging in $$y$$ and $$x$$, we can verify that $$r$$ $$=$$ $$13$$, so we know $$x$$ $$=$$ $$5$$ and $$y$$ $$=$$ $$12$$ and we don't need to scale these values.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad9ac1cpolarform10a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{12}{13}$$"
+        ],
+        "dependencies": [
+            "ad9ac1cpolarform10a-h1"
+        ],
+        "title": "Find cos(theta)",
+        "text": "Cos(theta) $$=$$ $$\\frac{x}{r}$$. What is cos(theta)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad9ac1cpolarform10a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{5}{13}$$"
+        ],
+        "dependencies": [
+            "ad9ac1cpolarform10a-h1"
+        ],
+        "title": "Find sin(theta)",
+        "text": "Sin(theta) $$=$$ $$\\frac{y}{r}$$. What is sin(theta)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad9ac1cpolarform10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad9ac1cpolarform10a-h3"
+        ],
+        "title": "Rectangular form",
+        "text": "Substitute into r(cos(theta) + isin(theta)) to get rectangualr form",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

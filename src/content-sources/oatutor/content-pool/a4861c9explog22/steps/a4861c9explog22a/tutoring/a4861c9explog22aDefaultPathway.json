@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a4861c9explog22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Isolate Terms with $$x$$",
+        "text": "The first step in solving is to move all the terms containing an $$x$$ to one side of the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog22a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4861c9explog22a-h1"
+        ],
+        "title": "Divide Coefficient",
+        "text": "To simplify after isolating all terms with $$x$$ on one side, divide by the coefficient of the term with $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog22a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a4861c9explog22a-h2"
+        ],
+        "title": "Equation after Division",
+        "text": "What is the right hand side of the equation once the constant in front of ln(x) is divided on both sides?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog22a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4861c9explog22a-h3"
+        ],
+        "title": "Inverse of Natural Log",
+        "text": "The inverse of the natural log ln is to exponentiate by e.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

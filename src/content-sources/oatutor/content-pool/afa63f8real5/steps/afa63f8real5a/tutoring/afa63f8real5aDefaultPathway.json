@@ -1,0 +1,52 @@
+[
+    {
+        "id": "afa63f8real5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "To reflect the parent function about the x-axis, multiply f(x) by $$-1$$ after inputting arbitrary points of $$x$$ to find the f(x).",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afa63f8real5a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(-Inf,Inf)$$ $$(-Inf,0)$$"
+        ],
+        "dependencies": [
+            "afa63f8real5a-h1"
+        ],
+        "title": "Find the $$x$$ values (domain) and the y-values of the function (range)",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$(-Inf,Inf)$$ (0,Inf)",
+            "$$(-Inf,0)$$ $$(-lnf,Inf)$$",
+            "$$(-Inf,0]$$ [1,Inf)",
+            "$$(-Inf,Inf)$$ $$(-Inf,0)$$"
+        ]
+    },
+    {
+        "id": "afa63f8real5a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "afa63f8real5a-h2"
+        ],
+        "title": "Graph the points and find the asymptotes where $$y$$ approaches and never gets to.",
+        "text": "\\n##figure2.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

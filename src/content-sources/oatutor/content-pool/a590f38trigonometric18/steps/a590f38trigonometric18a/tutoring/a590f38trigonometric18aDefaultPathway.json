@@ -1,0 +1,88 @@
+[
+    {
+        "id": "a590f38trigonometric18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factoring equation",
+        "text": "Factor the equation so it looks like: $$\\operatorname{tantheta}\\left(tantheta-\\sqrt{3}\\right)=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric18a-h1"
+        ],
+        "title": "Solving equation",
+        "text": "Now, set each factor equal to $$0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric18a-h2"
+        ],
+        "title": "Solving equation",
+        "text": "For one of these factors, we get $$tan\\theta=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric18a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric18a-h3"
+        ],
+        "title": "Solving equation",
+        "text": "What does tan\u03b8 equal when we solve $$tantheta-\\sqrt{3}=0$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric18a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric18a-h4"
+        ],
+        "title": "Solving for \u03b8",
+        "text": "Solve each of the equations for \u03b8 using the unit circle.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric18a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$, pi, $$\\frac{\\pi}{3}$$, $$\\frac{4\\pi}{3}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric18a-h5"
+        ],
+        "title": "Solving for \u03b8",
+        "text": "What does \u03b8 equal on our given domain?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$0$$, pi, $$\\frac{\\pi}{3}$$, $$\\frac{4\\pi}{3}$$",
+            "$$\\frac{2\\pi}{3}$$, $$\\frac{5\\pi}{4}$$, $$\\frac{\\pi}{6}$$, $$\\frac{\\pi}{2}$$",
+            "$$0$$, $$\\frac{\\pi}{4}$$, $$\\frac{5\\pi}{4}$$, $$\\frac{6\\pi}{4}$$",
+            "$$\\frac{\\pi}{3}$$, $$\\frac{5\\pi}{6}$$, $$\\frac{\\pi}{6}$$, pi"
+        ]
+    }
+]

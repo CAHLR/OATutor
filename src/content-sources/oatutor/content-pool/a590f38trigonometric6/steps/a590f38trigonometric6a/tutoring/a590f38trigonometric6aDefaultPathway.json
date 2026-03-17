@@ -1,0 +1,89 @@
+[
+    {
+        "id": "a590f38trigonometric6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Solving equation",
+        "text": "Let $$sin\\theta=x$$. The equation becomes $$2x^2+x=0$$. Now, factor this equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric6a-h1"
+        ],
+        "title": "Factoring equation",
+        "text": "After factoring, the equation becomes: $$x\\left(2x+1\\right)=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric6a-h2"
+        ],
+        "title": "Solving equation",
+        "text": "Now, set each factor equal to $$0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric6a-h3"
+        ],
+        "title": "Solving equation",
+        "text": "For one of these factors, we get $$x=0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric6a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-1}{2}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric6a-h4"
+        ],
+        "title": "Solving equation",
+        "text": "What does $$x$$ equal when we solve $$2x+1=0$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric6a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric6a-h5"
+        ],
+        "title": "Solving equation",
+        "text": "Now, substitute back into the equation the original expression sin\u03b8 for $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric6a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric6a-h6"
+        ],
+        "title": "Solving for \u03b8",
+        "text": "Solve each of the equations for \u03b8 using the unit circle. Keep in mind that the domain is $$0 \\leq \\theta \\leq 2\\pi$$. Some of the factors may have no solution on the given domain.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

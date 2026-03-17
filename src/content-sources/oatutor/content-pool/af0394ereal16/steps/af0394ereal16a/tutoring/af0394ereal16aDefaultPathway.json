@@ -1,0 +1,56 @@
+[
+    {
+        "id": "af0394ereal16a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{9}{4}$$"
+        ],
+        "dependencies": [],
+        "title": "Set $$h(t)=j(t)$$. What is $$t$$?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af0394ereal16a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{11}{4}$$"
+        ],
+        "dependencies": [
+            "af0394ereal16a-h1"
+        ],
+        "title": "Substitute the $$t$$ value for the equations given.",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af0394ereal16a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(\\frac{9}{4},\\frac{11}{4})$$"
+        ],
+        "dependencies": [
+            "af0394ereal16a-h2"
+        ],
+        "title": "What is this point put together?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$(\\frac{9}{4},\\frac{11}{4})$$",
+            "$$(9,11)$$",
+            "$$(\\frac{4}{9},\\frac{4}{11})$$"
+        ]
+    }
+]

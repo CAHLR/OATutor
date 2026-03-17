@@ -1,0 +1,36 @@
+[
+    {
+        "id": "aa27eearational6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the LCD of the Fractions",
+        "text": "LCD of $$1$$, $$\\frac{4}{y}$$, and $$\\frac{12}{y^2}$$ is $$y^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa27eearational6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aa27eearational6a-h1"
+        ],
+        "title": "Clear All Fractions",
+        "text": "We must multiply each fraction by the LCD. We get $$y^2-4y=12$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa27eearational6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aa27eearational6a-h2"
+        ],
+        "title": "Solve The Equation",
+        "text": "$$y^2-4y=12$$ becomes $$y^2-4y-12$$ becomes $$\\left(y-6\\right) \\left(y+2\\right)$$. Our solutions are thus $$y=6$$ and $$y=-2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

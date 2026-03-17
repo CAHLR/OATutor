@@ -1,0 +1,58 @@
+[
+    {
+        "id": "aea0f93trigmodel21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Solve for amplitude",
+        "text": "The function is given by A(t) $$=$$ 5(1 - .3)**t",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel21a-h1"
+        ],
+        "title": "Solve for c",
+        "text": "e ** ct $$=$$ (1 - $$.3)$$ ** $$t$$ and make c negative",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel21a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel21a-h2"
+        ],
+        "title": "Solve for c",
+        "text": "c $$=$$ $$-.357$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel21a-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Solve for w",
+        "text": "$$3$$ $$=$$ $$2\\pi$$ / w",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel21a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel21a-h3"
+        ],
+        "title": "Final equation",
+        "text": "$$y$$ $$=$$ -5e ** (ct) cos(wt) + $$b$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

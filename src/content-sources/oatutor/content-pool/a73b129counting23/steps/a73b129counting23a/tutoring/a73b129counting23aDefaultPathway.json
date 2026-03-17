@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a73b129counting23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using the Combination Formula",
+        "text": "The combination formula is used to calculate the number of ways to choose $$r$$ objects from a set of $$n$$ objects, where the order of selection does not matter.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73b129counting23a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73b129counting23a-h1"
+        ],
+        "title": "Combination Formula",
+        "text": "The combination formula is: C(n,r)=n!/(r!*(n-r)!)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73b129counting23a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Expand 10! and cancel out the common 7! term in the numerator and denominator"
+        ],
+        "dependencies": [
+            "a73b129counting23a-h2"
+        ],
+        "title": "Simplification",
+        "text": "Expand the formula to make it easier to solve. How can you simplify solving 10!/(3!*7!)?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Multiply 10! and 7!, then divide by 3!",
+            "Expand 10! and cancel out the common 7! term in the numerator and denominator",
+            "Simplify 10! and 3! into smaller numbers, then subtract the results",
+            "Use the distributive property to break 10!, 7!, and 3! into separate terms"
+        ]
+    },
+    {
+        "id": "a73b129counting23a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a73b129counting23a-h3"
+        ],
+        "title": "Finding the answer",
+        "text": "Finally, simplify (10*9*8)/7!",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

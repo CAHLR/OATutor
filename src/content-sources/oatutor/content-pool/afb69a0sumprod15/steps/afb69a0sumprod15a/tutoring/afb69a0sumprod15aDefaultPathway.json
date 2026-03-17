@@ -1,0 +1,70 @@
+[
+    {
+        "id": "afb69a0sumprod15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Product of Sine and Cosine",
+        "text": "The formula to express the product of sine and cosine sin(a)cos(b) as a sum is 1/2[sin(a+b)+sin(a-b)].",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod15a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3x$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod15a-h1"
+        ],
+        "title": "Identify Unknown Angles",
+        "text": "From the problem, what is the value of the unknown angle a?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod15a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5x$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod15a-h2"
+        ],
+        "title": "Identify Unknown Angles",
+        "text": "From the problem, what is the value of the unknown angle $$b$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod15a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod15a-h3"
+        ],
+        "title": "Plug Values into Formula",
+        "text": "To rewrite the product as a sum or difference, plug the identified values of a and $$b$$ into the formula for the product of sine and cosine.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod15a-h5",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod15a-h4"
+        ],
+        "title": "Constant Value",
+        "text": "Leave the $$\\frac{1}{2}$$ as a constant multipler outside of the difference of sines.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

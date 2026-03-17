@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a4be2a0derivative21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula",
+        "text": "AROC $$=$$ [f(a+h)-f(a)]/h",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4be2a0derivative21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4be2a0derivative21a-h1"
+        ],
+        "title": "Define",
+        "text": "Pick one point to be (a, f(a)) and one to be (a+h, f(a+h)). Then, define the $$x$$ distance between the $$2$$ points as $$h=a+h-a$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4be2a0derivative21a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4be2a0derivative21a-h2"
+        ],
+        "title": "Calculate Volume",
+        "text": "To find AROC, we need V(1) and V(2): $$V(1)=\\frac{4}{3} {\\operatorname{\\pi}\\left(1\\right)}^3=\\frac{4}{3} \\pi$$, $$V(2)=\\frac{4}{3} {\\operatorname{\\pi}\\left(2\\right)}^3=\\frac{32}{3} \\pi$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4be2a0derivative21a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4be2a0derivative21a-h3"
+        ],
+        "title": "Distance",
+        "text": "$$h=2-1=1$$ for $$a+h=2$$ and $$a=1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4be2a0derivative21a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a4be2a0derivative21a-h4"
+        ],
+        "title": "Substitute",
+        "text": "AROC $$=$$ $$\\frac{V\\left(2\\right)-V\\left(1\\right)}{1}$$ $$=$$ $$\\frac{32}{3} \\pi-\\frac{4}{3} \\pi$$ $$=$$ $$\\frac{28}{3} \\pi$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
