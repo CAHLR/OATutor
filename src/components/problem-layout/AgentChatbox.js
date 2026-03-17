@@ -385,12 +385,37 @@ class AgentChatbox extends React.Component {
      * @returns {Object} Student state including answers, correctness, skill mastery, and attempt history
      */
     getStudentState() {
-        const { stepStates, bktParams, getActiveStepData, attemptHistory } = this.props;
+        const { stepStates, bktParams, getActiveStepData, attemptHistory, hintUsageByStep } = this.props;
         
         // Get active step
         const activeStepData = getActiveStepData ? getActiveStepData() : null;
         const stepIndex = activeStepData ? activeStepData.stepIndex : 0;
         const isCorrect = stepStates ? stepStates[stepIndex] : null;
+
+        // Derive hints used for the active step (manual hints only)
+        let hintsUsed = [];
+        if (hintUsageByStep && Number.isInteger(stepIndex)) {
+            const usage = hintUsageByStep[stepIndex];
+            if (usage && Array.isArray(usage.hints)) {
+                hintsUsed = usage.hints
+                    .filter(h => {
+                        // Only include viewed MANUAL hints:
+                        // - viewed: student actually opened/used the hint
+                        // - isManual flag true OR (fallback) type is not gptHint/bottomOut
+                        const isManual = h.isManual !== undefined
+                            ? h.isManual
+                            : (h.type !== 'gptHint' && h.type !== 'bottomOut');
+                        return h.viewed && isManual;
+                    })
+                    .map(h => ({
+                        id: h.id,
+                        title: h.title,
+                        text: h.text,
+                        type: h.type,
+                        displayIndex: h.displayIndex,
+                    }));
+            }
+        }
 
         // Extract skill mastery for relevant KCs
         const skillMastery = this.extractRelevantSkillMastery(
@@ -405,7 +430,8 @@ class AgentChatbox extends React.Component {
             isCorrect: isCorrect,
             skillMastery: skillMastery,
             attemptHistory: attemptHistory || {},
-            currentLessonMastery: currentLessonMastery
+            currentLessonMastery: currentLessonMastery,
+            hintsUsed,
         };
     }
 

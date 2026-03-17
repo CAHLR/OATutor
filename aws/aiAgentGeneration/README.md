@@ -54,6 +54,7 @@ Platform.js → ProblemWrapper → Problem.js → AgentIntegration → AgentChat
 | Variable | Source | Path |
 |----------|--------|------|
 | `isCorrect` | `this.state.stepStates[stepIndex]` | Problem.js state → AgentChatbox |
+| `hintsUsed` | `hintUsageByStep[stepIndex]` | ProblemCard reports **manual hint** usage → Problem (`state.hintUsageByStep`) → AgentIntegration → `AgentChatbox.getStudentState()` (filters out `gptHint` and `bottomOut` types, so only manual "Hint 1/2/3" are used) |
 
 **Key Method:** `AgentChatbox.getStudentState()`
 
@@ -156,6 +157,7 @@ PROBLEM CONTEXT:
 
 STUDENT'S CURRENT STATE:
   - isCorrect (correct/incorrect/not attempted)
+  - hintsUsed (list of hint texts already shown to the student for this step)
 
 ATTEMPT HISTORY:
   - All previous attempts per question in this problem
@@ -246,6 +248,9 @@ Correct Answer: x + (x+1) + (x+2) = 24
 
 STUDENT'S CURRENT STATE:
 Status: Incorrect
+Hints already given for this step:
+Hints already shown to the student for this step:
+- Hint 1: Try writing the sum of three consecutive integers as x + (x+1) + (x+2).
 
 ATTEMPT HISTORY (all questions in this problem):
   Question: "Set up the equation"
@@ -285,5 +290,3 @@ Student asks: "I don't understand how to set up the equation for this problem"
 
 Provide helpful, step-by-step guidance.
 ```
-
-

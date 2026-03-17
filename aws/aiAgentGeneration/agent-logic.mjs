@@ -16,10 +16,30 @@ export function buildAgentPrompt({ userMessage, problemContext, studentState, co
             .join('\n')
         : 'No skill mastery data available for this step';
 
-    // Format hints used
-    const hintsText = studentState.hintsUsed?.length > 0 
-        ? `${studentState.hintsUsed.length} hint(s) viewed` 
-        : 'No hints viewed yet';
+    // Format hints used (manual, UI-numbered hints only)
+    let hintsText = 'No hints viewed yet';
+    if (Array.isArray(studentState.hintsUsed) && studentState.hintsUsed.length > 0) {
+        const maxHints = 3;
+
+        // Only include hints that actually have non-empty text
+        const nonEmptyHints = studentState.hintsUsed.filter((hint) => {
+            const rawText = (hint.text || '').toString().trim();
+            return rawText.length > 0;
+        });
+
+        if (nonEmptyHints.length > 0) {
+            const recentHints = nonEmptyHints.slice(-maxHints);
+            const lines = recentHints.map((hint, index) => {
+                const rawText = (hint.text || '').toString().trim();
+                const truncated =
+                    rawText.length > 300 ? `${rawText.slice(0, 300)}...` : rawText;
+                // displayIndex is the same number the student sees in the UI: "Hint {displayIndex}"
+                const uiIndex = hint.displayIndex || (index + 1);
+                return `- Hint ${uiIndex}: ${truncated}`;
+            });
+            hintsText = `Hints already shown to the student for this step:\n${lines.join('\n')}`;
+        }
+    }
 
     // Format answer correctness
     const correctnessText = studentState.isCorrect === null 

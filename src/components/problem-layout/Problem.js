@@ -85,6 +85,7 @@ class Problem extends React.Component {
             hintToggleIndex: null,
             isHintPortalOpen: false,
             attemptHistory: {}, // { "Problem Title": { "Question Text": ["attempt1", "attempt2"] } }
+            hintUsageByStep: {}, // { [stepIndex]: { stepId, hints: [{ id, title, text, type, viewed }] } }
         };
 
         this.togglePopup = this.togglePopup.bind(this);
@@ -106,6 +107,15 @@ class Problem extends React.Component {
             annotation.ariaLabel = annotation.textContent;
         }
     }
+
+    handleHintUsageChange = (stepIndex, usage) => {
+        this.setState((prevState) => ({
+            hintUsageByStep: {
+                ...prevState.hintUsageByStep,
+                [stepIndex]: usage,
+            },
+        }));
+    };
 
     componentWillUnmount() {
         document["oats-meta-courseName"] = "";
@@ -708,6 +718,7 @@ class Problem extends React.Component {
                                                     hintToggleIndex={this.state.hintToggleIndex}
                                                     hintPortalTarget={this.hintPortalRef}
                                                     onHintToggle={this.handleHintToggleFromStep}
+                                                    onHintUsageChange={this.handleHintUsageChange}
                                                 />
                                         </Accordion>
                                     </Element>
@@ -1097,6 +1108,7 @@ class Problem extends React.Component {
                         attemptHistory={this.state.attemptHistory}
                         user={this.props.user}
                         lessonMasteryMap={this.props.lessonMasteryMap}
+                        hintUsageByStep={this.state.hintUsageByStep}
                     />
                 )}
             </>
