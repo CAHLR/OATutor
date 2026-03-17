@@ -33,7 +33,8 @@ const styles = (theme) => ({
         minWidth: 300,
         minHeight: 400,
         maxWidth: '95vw',
-        maxHeight: '90vh'
+        maxHeight: '90vh',
+        fontFamily: '"Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
     },
     chatHeader: {
         background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
@@ -41,7 +42,8 @@ const styles = (theme) => ({
         padding: '12px 16px',
         display: 'flex',
         justifyContent: 'space-between',
-        alignItems: 'center'
+        alignItems: 'center',
+        boxShadow: '0 1px 0 rgba(255, 255, 255, 0.25)'
     },
     chatTitle: {
         display: 'flex',
@@ -52,8 +54,8 @@ const styles = (theme) => ({
     chatMessages: {
         flex: 1,
         overflowY: 'auto',
-        padding: 16,
-        backgroundColor: '#f5f5f5',
+        padding: '20px 24px',
+        backgroundColor: '#f7f7fb',
         display: 'flex',
         flexDirection: 'column',
         gap: 12
@@ -61,13 +63,15 @@ const styles = (theme) => ({
     message: {
         display: 'flex',
         flexDirection: 'column',
-        gap: 4
+        gap: 4,
+        width: '100%'
     },
     userMessage: {
         alignItems: 'flex-end'
     },
     assistantMessage: {
-        alignItems: 'flex-start'
+        alignItems: 'stretch',
+        marginTop: 8
     },
     messageBubble: {
         padding: '10px 14px',
@@ -76,12 +80,17 @@ const styles = (theme) => ({
         wordWrap: 'break-word'
     },
     userBubble: {
-        backgroundColor: '#667eea',
+        backgroundColor: '#7c8cff',
         color: 'white'
     },
     assistantBubble: {
         backgroundColor: 'white',
         color: '#333'
+    },
+    assistantContent: {
+        width: '100%',
+        maxWidth: '100%',
+        wordWrap: 'break-word'
     },
     messageMeta: {
         display: 'flex',
@@ -554,30 +563,40 @@ class AgentChatbox extends React.Component {
                             key={message.id}
                             className={`${classes.message} ${message.role === 'user' ? classes.userMessage : classes.assistantMessage}`}
                         >
-                            <Paper
-                                className={`${classes.messageBubble} ${message.role === 'user' ? classes.userBubble : classes.assistantBubble}`}
-                                elevation={1}
-                            >
-                                {message.content ? (
-                                    message.role === 'user' ? (
-                                        <Typography variant="body2">{message.content}</Typography>
+                            {message.role === 'user' ? (
+                                <Paper
+                                    className={`${classes.messageBubble} ${classes.userBubble}`}
+                                    elevation={1}
+                                >
+                                    {message.content ? (
+                                        <Typography variant="body2" style={{ fontSize: 14, lineHeight: 1.4, fontWeight: 400 }}>
+                                            {message.content}
+                                        </Typography>
                                     ) : (
-                                        <MessageRenderer content={message.content} />
-                                    )
-                                ) : (
-                                    <Typography variant="body2">
-                                        {message.isGenerating ? 'Thinking...' : ''}
-                                    </Typography>
-                                )}
-                                {message.isGenerating && (
-                                    <CircularProgress size={16} style={{ marginLeft: 8 }} />
-                                )}
-                            </Paper>
-                            <div className={classes.messageMeta}>
-                                <Typography variant="caption" color="textSecondary">
-                                    {message.role === 'user' ? 'You' : 'AI Tutor'}
-                                </Typography>
-                            </div>
+                                        <Typography variant="body2" style={{ fontSize: 14, lineHeight: 1.4, fontWeight: 400 }}>
+                                            {message.isGenerating ? 'Thinking...' : ''}
+                                        </Typography>
+                                    )}
+                                    {message.isGenerating && (
+                                        <CircularProgress size={16} style={{ marginLeft: 8 }} />
+                                    )}
+                                </Paper>
+                            ) : (
+                                <div className={classes.assistantContent}>
+                                    {message.content ? (
+                                        <div style={{ fontSize: 15, lineHeight: 1.6, fontWeight: 500, color: '#1f2933' }}>
+                                            <MessageRenderer content={message.content} />
+                                        </div>
+                                    ) : (
+                                        <Typography variant="body2" style={{ fontSize: 15, lineHeight: 1.6, fontWeight: 500, color: '#1f2933' }}>
+                                            {message.isGenerating ? 'Thinking...' : ''}
+                                        </Typography>
+                                    )}
+                                    {message.isGenerating && (
+                                        <CircularProgress size={16} style={{ marginLeft: 8 }} />
+                                    )}
+                                </div>
+                            )}
                         </div>
                     ))}
                     
