@@ -19,7 +19,7 @@ jobs:
         persist-credentials: true
 
     - name: Clone OATutor-Tooling repository
-      run: git clone https://github.com/CAHLR/OATutor-Tooling.git /home/runner/work/OATutor-Tooling
+      run: git clone -b move-hash-computation-to-python https://github.com/mjyang00001/OATutor-Tooling.git /home/runner/work/OATutor-Tooling
 
     - name: Install distutils and build tools
       run: |
