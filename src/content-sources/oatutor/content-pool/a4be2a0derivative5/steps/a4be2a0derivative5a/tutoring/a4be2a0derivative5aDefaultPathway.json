@@ -16,7 +16,7 @@
             "a4be2a0derivative5a-h1"
         ],
         "title": "Rationalize",
-        "text": "lim h\u21920 1/h(\u221a(1+3(x+h))-\u221a(1+3x))(\u221a(1+3(x+h))+\u221a(1+3x))/(\u221a(1+3(x+h))+\u221a(1+3x)) $$=$$ lim h\u21920 (1+3(x+h)-(1+3x))/[h(\u221a(1+3(x+h))+\u221a(1+3x))]",
+        "text": "lim h\u21920 1/h(\u221a(1+3(x+h))-\u221a(1+3x))(\u221a(1+3(x+h))+\u221a(1+3x))/(\u221a(1+3(x+h))+\u221a(1+3x)) $$=$$ lim h\u21920 (1+3(x+h)-(1+3x))/(h(\u221a(1+3(x+h))+\u221a(1+3x)))",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -28,7 +28,7 @@
             "a4be2a0derivative5a-h2"
         ],
         "title": "Simplify",
-        "text": "lim h\u21920 (1+3(x+h)-(1+3x))/[h(\u221a(1+3(x+h))+\u221a(1+3x))] $$=$$ lim h\u21920 3/[(\u221a(1+3(x+h))+\u221a(1+3x))]",
+        "text": "lim h\u21920 (1+3(x+h)-(1+3x))/(h(\u221a(1+3(x+h))+\u221a(1+3x))) $$=$$ lim h\u21920 3/((\u221a(1+3(x+h))+\u221a(1+3x)))",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -40,7 +40,7 @@
             "a4be2a0derivative5a-h3"
         ],
         "title": "Apply Limit",
-        "text": "lim h\u21920 3/[(\u221a(1+3(x+h))+\u221a(1+3x))] $$=$$ 3/[(\u221a(1+3(x+0))+\u221a(1+3x))] $$=$$ 3/[(\u221a(1+3x)+\u221a(1+3x)] $$=$$ 3/[2\u221a(1+3x)]",
+        "text": "lim h\u21920 3/((\u221a(1+3(x+h))+\u221a(1+3x))) $$=$$ 3/((\u221a(1+3(x+0))+\u221a(1+3x))) $$=$$ 3/((\u221a(1+3x)+\u221a(1+3x)) $$=$$ 3/(2\u221a(1+3x))",
         "variabilization": {},
         "oer": "",
         "license": ""

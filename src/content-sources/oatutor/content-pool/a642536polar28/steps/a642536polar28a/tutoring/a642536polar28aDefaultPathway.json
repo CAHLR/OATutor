@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Identities",
-        "text": "We have the identities $$r^2=x^2+y^2$$, $$x=rcos\\theta$$, and $$y=rsin\\theta$$.",
+        "text": "We have the identities $$r^2=x^2+y^2$$, $$x=rcos(\\theta)$$, and $$y=rsin(\\theta)$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -16,7 +16,7 @@
             "a642536polar28a-h1"
         ],
         "title": "Substitute",
-        "text": "$$4rcostheta rsintheta+2r^2=r^{2\\left(4costheta sintheta+2\\right)}=9$$",
+        "text": "$$4\\operatorname{rcos}\\left(\\theta\\right) \\operatorname{rsin}\\left(\\theta\\right)+2r^2=r^{2\\left(4cos\\left(\\theta\\right) sin\\left(\\theta\\right)+2\\right)}=9$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -28,7 +28,7 @@
             "a642536polar28a-h2"
         ],
         "title": "Trigonometric Identity",
-        "text": "$$2sin\\thetacos\\theta=2sin2\\theta$$",
+        "text": "$$2sin(\\theta)cos(\\theta)=2sin2(\\theta)$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -40,7 +40,7 @@
             "a642536polar28a-h3"
         ],
         "title": "Substitute",
-        "text": "$$r^{2\\left(2sin2theta+2\\right)}=9$$",
+        "text": "$$r^{2\\left(2\\operatorname{sin2}\\left(\\theta\\right)+2\\right)}=9$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -52,7 +52,7 @@
             "a642536polar28a-h4"
         ],
         "title": "Isolate $$r$$",
-        "text": "$$r^2=\\frac{9}{2sin2theta+2}$$",
+        "text": "$$r^2=\\frac{9}{2\\operatorname{sin2}\\left(\\theta\\right)+2}$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -64,7 +64,7 @@
             "a642536polar28a-h5"
         ],
         "title": "Isolate $$r$$",
-        "text": "r=sqrt(9/(2sin2\u03b8+2))=3/sqrt(2sin2\u03b8+2)=3/\u221a(2(1+sin2\u03b8))",
+        "text": "r=sqrt(9/(2sin2(\u03b8)+2))=3/sqrt(2sin2(\u03b8)+2)=3/\u221a(2(1+sin2(\u03b8)))",
         "variabilization": {},
         "oer": "",
         "license": ""

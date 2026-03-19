@@ -64,8 +64,8 @@
         "dependencies": [
             "aaa465eanov4a-h2"
         ],
-        "title": "Compute the Sum of Squares representing variation among the different samples. $$($\\SS_{between}$)$$",
-        "text": "$$$\\SS_{between}$$$ $$=$$ $\\sum[\\frac{(\\sum s_j)**2}{n_j}] - \\frac{(\\sum s_j)**2}{n}$",
+        "title": "Compute the Sum of Squares representing variation among the different samples. ($\\SS_{between}$)",
+        "text": "$\\SS_{between}$ $$=$$ $\\sum[\\frac{(\\sum s_j)**2}{n_j}] - \\frac{(\\sum s_j)**2}{n}$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -93,8 +93,8 @@
         "dependencies": [
             "aaa465eanov4a-h4"
         ],
-        "title": "Compute the Sum of Squares representing variation within samples due to chance. $$($\\SS_{within})$$",
-        "text": "$$$\\SS_{within}$$ $$=$$ $$\\SS_{total}$$ - $$\\SS_{between}$$$",
+        "title": "Compute the Sum of Squares representing variation within samples due to chance. ($\\SS_{within})",
+        "text": "$\\SS_{within} $$=$$ \\SS_{total} - \\SS_{between}$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -110,7 +110,7 @@
         "dependencies": [
             "aaa465eanov4a-h5"
         ],
-        "title": "Compute $$$\\SS_{total}$$ $$=$$ \\sum $$x^2$$ - \\frac{(\\sum x) ** 2}{n}$",
+        "title": "Compute $\\SS_{total} $$=$$ \\sum $$x^2$$ - \\frac{(\\sum x) ** 2}{n}$",
         "text": "$(216**2 + $${198}^2$$ + $${240}^2$$ + $${187}^2$$ + $${176}^2$$ + $${202}^2$$ + $${213}^2$$ + $${284}^2$$ + $${228}^2$$ + $${210}^2$$ + $${170}^2$$ + $${165}^2$$ + $${182}^2$$ + $${297}^2$$ + 201**2) - \\frac{(216 + $$198$$ + $$240$$ + $$187$$ + $$176$$ + $$202$$ + $$213$$ + $$284$$ + $$228$$ + $$210$$ + $$170$$ + $$165$$ + $$182$$ + $$197$$ + 201)**2}{5+5+5} $",
         "variabilization": {},
         "oer": "",
@@ -123,7 +123,7 @@
             "aaa465eanov4a-h6"
         ],
         "title": "What is the Degree of Freedom of Factor (Between)?",
-        "text": "$$$df_{numerator}$$$",
+        "text": "$df_{numerator}$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -139,7 +139,7 @@
         "dependencies": [
             "aaa465eanov4a-h7"
         ],
-        "title": "$$$df_{numerator}$$ $$=$$ k - 1$",
+        "title": "$df_{numerator} $$=$$ k - 1$",
         "text": "$$3$$ groups - $$1$$",
         "variabilization": {},
         "oer": "",
@@ -152,7 +152,7 @@
             "aaa465eanov4a-h8"
         ],
         "title": "What is the Degree of Freedom of Error (within)?",
-        "text": "$$$df_{denominator}$$$",
+        "text": "$df_{denominator}$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -168,7 +168,7 @@
         "dependencies": [
             "aaa465eanov4a-h9"
         ],
-        "title": "$$$df_{denominator}$$ $$=$$ $$n$$ - k$",
+        "title": "$df_{denominator} $$=$$ $$n$$ - k$",
         "text": "$$15$$ total data - $$3$$ groups",
         "variabilization": {},
         "oer": "",

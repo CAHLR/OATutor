@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "St\u00e4ll upp integralen",
-        "text": "A=/int{abs(f(x)-g(x)),a,b}= $$\\int_{0}^{\\frac{\\pi}{4}} cos(x)-sin(x) \\,dx+$$ $$\\int_{\\frac{\\pi}{4}}^{pi} sin(x)-cos(x) \\,dx$$",
+        "text": "$$A=\\int |f{\\left(x\\right)}-g{\\left(x\\right)}| a \\,db=$$ $$\\int_{0}^{\\frac{\\pi}{4}} cos(x)-sin(x) \\,dx+$$ $$\\int_{\\frac{\\pi}{4}}^{pi} sin(x)-cos(x) \\,dx$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -45,7 +45,7 @@
             "a1fac02a1cc0dcareas3a-h3"
         ],
         "title": "Integrera fr\u00e5n $$\\frac{\\pi}{4}$$ till pi",
-        "text": "$$\\int_{\\frac{\\pi}{4}}^{\\pi}$$ $$(\\sin$$ $$x$$ $$-$$ $$\\cos$$ $$x)\\, dx$$ $$=$$ $$-\\cos$$ $$x$$ $$-$$ $$\\sin$$ $$x$$\\nmed $$x$$ g\u00e5r fr\u00e5n $$\\frac{\\pi}{4}$$ till $$\\pi$$. $$\\n$$",
+        "text": "$$\\int_{\\frac{\\pi}{4}}**{\\pi} $$(\\sin$$ $$x$$ $$-$$ $$\\cos$$ $$x)\\, dx$$ $$=$$ $$-\\cos$$ $$x$$ $$-$$ $$\\sin$$ $$x$$\\nmed $$x$$ g\u00e5r fr\u00e5n $$\\frac{\\pi}{4}$$ till $$\\pi$$. $$\\n$$",
         "variabilization": {},
         "oer": "",
         "license": ""
