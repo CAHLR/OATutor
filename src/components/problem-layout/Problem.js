@@ -500,7 +500,7 @@ class Problem extends React.Component {
 
     render() {
         const { translate } = this.props;
-        const { classes, problem, seed } = this.props;
+        const { classes, problem, seed, compactHeader, hideHintPanel } = this.props;
         const [oerLink, oerName, licenseLink, licenseName] =
             this.getOerLicense();
         const { showPopup, isHintPortalOpen, metaCollapsed } = this.state;
@@ -584,13 +584,14 @@ class Problem extends React.Component {
                     alignItems="flex-start"
                     style={{ width: "100%", margin: 0 }}
                 >
+                    {!compactHeader && (
                     <Grid item xs={12} style={{ position: "sticky", top: hintStickTop, paddingTop: 0, paddingBottom: 0, backgroundColor: "#F6F6F6", zIndex: 3, marginBottom: -10, paddingRight: 40 }}>
-                    
+
                     {/* <Grid item xs={12} style={{ position: "sticky", top: hintStickTop, zIndex: 3 }}> */}
                         <div ref={this.bannerRef} className={classes.prompt} role={"banner"}>
                             <Card className={classes.titleCard}>
 
-                                <div 
+                                <div
                                     style = {{
                                         backgroundColor: "#EBF4FA",
                                         padding: 15,
@@ -609,7 +610,7 @@ class Problem extends React.Component {
                                             ),
                                             this.context
                                         )}
-                                        
+
                                     </div>
                                     <IconButton
                                         aria-label="Toggle problem statement"
@@ -628,7 +629,7 @@ class Problem extends React.Component {
                                         {...stagingProp({
                                             "data-selenium-target": "problem-header",
                                         })}
-                                        style={{ 
+                                        style={{
                                             padding: 15
                                         }}
                                     >
@@ -648,15 +649,58 @@ class Problem extends React.Component {
                                 )}
                             </Card>
                             <Spacer height={0} />
-                            
+
                         </div>
                     </Grid>
+                    )}
 
                     <Grid
                         item
                         xs={12}
                         md={drawerOpen ? 8 : 7}
                     >
+                        {compactHeader && (
+                            <div className={classes.prompt} role={"banner"} >
+                                <Card className={classes.titleCard}>
+                                    <div
+                                        style={{
+                                            backgroundColor: "#EBF4FA",
+                                            padding: 15,
+                                        }}
+                                    >
+                                        <div className={classes.problemHeader}>
+                                            {renderText(
+                                                problem.title,
+                                                problem.id,
+                                                chooseVariables(
+                                                    problem.variabilization,
+                                                    seed
+                                                ),
+                                                this.context
+                                            )}
+                                        </div>
+                                    </div>
+                                    <CardContent
+                                        {...stagingProp({
+                                            "data-selenium-target": "problem-header",
+                                        })}
+                                        style={{ padding: 15 }}
+                                    >
+                                        <div className={classes.problemBody}>
+                                            {renderText(
+                                                problem.body,
+                                                problem.id,
+                                                chooseVariables(
+                                                    problem.variabilization,
+                                                    seed
+                                                ),
+                                                this.context
+                                            )}
+                                        </div>
+                                    </CardContent>
+                                </Card>
+                            </div>
+                        )}
                         <div role={"main"}>
                             {problem.steps.map((step, idx) => {
                                 const expanded =
@@ -815,7 +859,7 @@ class Problem extends React.Component {
                         </div>
                     </Grid>
 
-                    <Grid
+                    {!hideHintPanel && <Grid
                         item
                         xs={12}
                         md={drawerOpen ? 4 : 5}
@@ -904,7 +948,7 @@ class Problem extends React.Component {
                         />
                         </div>
                     </div>
-                    </Grid>
+                    </Grid>}
                 </Grid>
 
                 <footer>

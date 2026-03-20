@@ -256,14 +256,16 @@ const ViewAllProblems = ({ translate, history }) => {
         {visibleProblems.length ? visibleProblems.map(problem => (
           <Box key={problem.id} className={classes.problemCard}>
             {/* ID badge */}
-            <Box className={classes.idBadge} style ={{marginRight: 20}}>
+            <Box className={classes.idBadge} style ={{marginRight: 40}}>
               <Typography variant="caption" color="textSecondary">
                 {problem.id}
               </Typography>
             </Box>
-            <Box className={classes.noFooterWrapper}>
+            <Box className={classes.noFooterWrapper} style ={{marginLeft: 40}} >
               <ProblemWrapper
                 autoScroll={false}
+                compactHeader={true}
+                hideHintPanel={true}
                 problem={problem}
                 lesson={lesson}
                 seed={seed}
