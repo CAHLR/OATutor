@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Substituting the Given Value",
-        "text": "We can substitute the given value for $$y$$ into the equation. This gives us $$5\\left(\\frac{3}{5}\\right)+3=\\operatorname{10}\\left(\\frac{3}{5}\\right)-4$$",
+        "text": "We can substitute the given value for $$y$$ into the equation. This gives us $$5\\frac{3}{5}+3=10\\frac{3}{5}-4$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
@@ -21,7 +21,7 @@
             "a7139feLinear1a-h1"
         ],
         "title": "Calculation",
-        "text": "What is $$5\\left(\\frac{3}{5}\\right)+3$$?",
+        "text": "What is $$5\\frac{3}{5}+3$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
@@ -38,7 +38,7 @@
             "a7139feLinear1a-h1"
         ],
         "title": "Calculation",
-        "text": "What is $$\\operatorname{10}\\left(\\frac{3}{5}\\right)-4$$?",
+        "text": "What is $$10\\frac{3}{5}-4$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
@@ -46,9 +46,12 @@
     {
         "id": "a7139feLinear1a-h4",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a7139feLinear1a-h2",
+            "a7139feLinear1a-h3"
+        ],
         "title": "Equality",
-        "text": "$$6$$ does not equal to $$2$$",
+        "text": "$$6$$ does not equal $$2$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"

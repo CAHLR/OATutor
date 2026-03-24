@@ -1,12 +1,7 @@
 [
     {
         "id": "a005bd5real24a-h1",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$5-x^2$$ is an \"inner function\" in $$\\sqrt{5-x^2}$$"
-        ],
+        "type": "hint",
         "dependencies": [],
         "title": "Identify an f and g.",
         "text": "Look at the parentheses. Can you see an \"inner\" and \"outer\" function?",
@@ -16,17 +11,12 @@
     },
     {
         "id": "a005bd5real24a-h2",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$g(x)=x+2$$ and $$f(x)=x^2$$"
-        ],
+        "type": "hint",
         "dependencies": [
             "a005bd5real24a-h1"
         ],
         "title": "Substitute",
-        "text": "Moving backwards, set the inner function we found, $$g(x)=5-x^2$$, to equal $$x$$ to get f(x): $$f(x)=sqrtx$$.",
+        "text": "Moving backwards, set the inner function we found, $$h(x)=5-x^2$$, to equal $$x$$ and you could set another function to equal $$\\sqrt{x}$$ like $$g(x)=\\sqrt{x}$$ so f(x) $$=$$ g(h(x))",
         "variabilization": {},
         "oer": "",
         "license": ""

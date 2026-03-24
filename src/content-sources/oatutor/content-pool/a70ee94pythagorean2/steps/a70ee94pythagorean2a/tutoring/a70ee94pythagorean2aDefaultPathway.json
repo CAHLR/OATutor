@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a70ee94pythagorean2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Pythagorean Theorem",
+        "text": "The Pythagorean Theorem is a fundamental principle in geometry that relates the lengths of the sides of a right triangle. It states that the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70ee94pythagorean2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a70ee94pythagorean2a-h1"
+        ],
+        "title": "Identifying the Sides",
+        "text": "In the given problem, the hypotenuse is $$13$$ inches, and one of the legs is $$5$$ inches. We need to find the length of the other leg.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70ee94pythagorean2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5^2+b^2={13}^2$$"
+        ],
+        "dependencies": [
+            "a70ee94pythagorean2a-h2"
+        ],
+        "title": "Setting Up the Equation",
+        "text": "Using the Pythagorean Theorem, set up the equation: $$5^2+b^2={13}^2$$. What is the next step?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70ee94pythagorean2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a70ee94pythagorean2a-h3"
+        ],
+        "title": "Calculating the Squares",
+        "text": "Calculate the squares of the known sides: $$5^2$$ and $${13}^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70ee94pythagorean2a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$b^2=144$$"
+        ],
+        "dependencies": [
+            "a70ee94pythagorean2a-h4"
+        ],
+        "title": "Solving for $$b$$",
+        "text": "After calculating the squares, solve for b: $$25+b^2=169$$. What is $$b^2$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70ee94pythagorean2a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a70ee94pythagorean2a-h5"
+        ],
+        "title": "Finding the Length of the Other Leg",
+        "text": "To find the length of the other leg, take the square root of $$b^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70ee94pythagorean2a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12$$"
+        ],
+        "dependencies": [
+            "a70ee94pythagorean2a-h6"
+        ],
+        "title": "Final Calculation",
+        "text": "Calculate the square root of $$144$$ to find the length of the other leg.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

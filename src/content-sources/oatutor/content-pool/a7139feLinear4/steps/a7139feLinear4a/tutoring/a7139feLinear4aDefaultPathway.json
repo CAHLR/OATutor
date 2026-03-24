@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Substitution",
-        "text": "Substitute u for its numeric value $$\\left(-\\frac{1}{2}\\right)$$ on either side of the equation",
+        "text": "Substitute u for its numeric value, $$\\frac{-1}{2}$$, on either side of the equation.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
@@ -63,9 +63,12 @@
     {
         "id": "a7139feLinear4a-h5",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a7139feLinear4a-h3",
+            "a7139feLinear4a-h4"
+        ],
         "title": "Equality",
-        "text": "Check if the numbers on both sides are equal",
+        "text": "Check if the numbers on both sides are equal.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"

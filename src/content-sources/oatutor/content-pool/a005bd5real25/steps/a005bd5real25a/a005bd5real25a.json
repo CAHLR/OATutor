@@ -3,10 +3,16 @@
     "stepAnswer": [
         "$$g(x)=x+2$$ and $$f(x)=x^2$$"
     ],
-    "problemType": "TextBox",
+    "problemType": "MultipleChoice",
     "stepTitle": "Write $$f(x)=\\frac{4}{3-\\sqrt{4+x^2}}$$ as the composition of two functions.",
     "stepBody": "",
-    "answerType": "arithmetic",
+    "answerType": "string",
     "variabilization": {},
-    "answerLatex": "$$g(x)=x+2$$ and $$f(x)=x^2$$"
+    "answerLatex": "$$g(x)=x+2$$ and $$f(x)=x^2$$",
+    "choices": [
+        "$$g(x)=\\frac{4}{3-\\sqrt{x}}$$ and h(x) $$=$$ $$4+x^2$$",
+        "$$g(x)=\\frac{4}{7-\\sqrt{x}}$$ and h(x) $$=$$ $$3+x^2$$",
+        "$$g(x)=\\frac{5}{2-\\sqrt{x}}$$ and h(x) $$=$$ $$3+x^2$$",
+        "$$g(x)=x+2$$ and $$f(x)=x^2$$"
+    ]
 }

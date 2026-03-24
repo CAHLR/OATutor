@@ -3,11 +3,11 @@
         "id": "a70ee94geo3a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Draw",
-        "text": "Draw and label the sides of the triangle with the given information",
+        "title": "Understanding the Pythagorean Theorem",
+        "text": "The Pythagorean Theorem is a fundamental principle in geometry that relates the lengths of the sides of a right triangle. It states that in a right triangle, the square of the length of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the lengths of the other two sides.",
         "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "oer": "openai",
+        "license": ""
     },
     {
         "id": "a70ee94geo3a-h2",
@@ -15,11 +15,11 @@
         "dependencies": [
             "a70ee94geo3a-h1"
         ],
-        "title": "Identify and Name",
-        "text": "We are looking for the height of the triangle and we can name it \"h\"",
+        "title": "Identifying the Right Triangle",
+        "text": "To use the Pythagorean Theorem, you need to identify the right triangle in the problem. Look for a triangle with one angle measuring $$90$$ degrees.",
         "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "oer": "openai",
+        "license": ""
     },
     {
         "id": "a70ee94geo3a-h3",
@@ -27,51 +27,56 @@
         "dependencies": [
             "a70ee94geo3a-h2"
         ],
-        "title": "Translate",
-        "text": "Using the formula $$a=0.5b h$$, we can substitute it to get $$90=0.5\\times15 h$$",
+        "title": "Labeling the Sides",
+        "text": "In a right triangle, label the sides as follows: 'a' and 'b' are the legs (the two shorter sides), and 'c' is the hypotenuse (the longest side).",
         "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "oer": "openai",
+        "license": ""
     },
     {
         "id": "a70ee94geo3a-h4",
-        "type": "hint",
-        "dependencies": [
-            "a70ee94geo3a-h3"
-        ],
-        "title": "Solve",
-        "text": "Solve the equation by simplifying it first to get $$90=15\\times0.5 h$$, and then solving for $$h$$ by isolating the variable",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
-    },
-    {
-        "id": "a70ee94geo3a-h5",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$7.5$$"
+            "$$c=\\sqrt{a^2+b^2}$$"
         ],
+        "dependencies": [
+            "a70ee94geo3a-h3"
+        ],
+        "title": "Applying the Pythagorean Theorem",
+        "text": "Use the formula $$a^2+b^2=c^2$$ to find the missing side of the triangle. If you know the lengths of the two legs, solve for the hypotenuse. If you know one leg and the hypotenuse, solve for the other leg.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70ee94geo3a-h5",
+        "type": "hint",
         "dependencies": [
             "a70ee94geo3a-h4"
         ],
-        "title": "Solve",
-        "text": "First let's simplify the right side of the equation. What is $$15\\times0.5$$?",
+        "title": "Solving for the Unknown",
+        "text": "If you are solving for one of the legs, rearrange the formula to find the missing side: $$a^2=c^2-b^2$$ or $$b^2=c^2-a^2$$.",
         "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "oer": "openai",
+        "license": ""
     },
     {
         "id": "a70ee94geo3a-h6",
-        "type": "hint",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$a=\\sqrt{c^2-b^2}$$"
+        ],
         "dependencies": [
             "a70ee94geo3a-h5"
         ],
-        "title": "Solve",
-        "text": "Now, we can divide $$7.5$$ by both sides to isolate $$h$$",
+        "title": "Calculating the Missing Side",
+        "text": "Substitute the known values into the equation and solve for the unknown side. Remember to take the square root of the result to find the length of the side.",
         "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+        "oer": "openai",
+        "license": ""
     }
 ]

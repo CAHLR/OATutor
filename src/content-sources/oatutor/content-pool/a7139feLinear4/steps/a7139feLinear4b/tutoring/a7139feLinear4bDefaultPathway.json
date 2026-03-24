@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Substitution",
-        "text": "Substitute u for its numeric value $$\\frac{1}{2}$$ on either side of the equation",
+        "text": "Substitute u for its numeric value, $$\\frac{1}{3}$$, on either side of the equation.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
@@ -15,13 +15,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$4$$"
+            "$$\\frac{8}{3}$$"
         ],
         "dependencies": [
             "a7139feLinear4b-h1"
         ],
         "title": "Substitution",
-        "text": "What is $$8\\frac{1}{2}$$?",
+        "text": "What is $$8\\frac{1}{3}$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
@@ -32,13 +32,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$3$$"
+            "$$\\frac{5}{3}$$"
         ],
         "dependencies": [
             "a7139feLinear4b-h1"
         ],
         "title": "Simplifying",
-        "text": "What is $$4-1$$?",
+        "text": "What is $$\\frac{8}{3}-1$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
@@ -49,13 +49,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$3$$"
+            "$$2$$"
         ],
         "dependencies": [
             "a7139feLinear4b-h1"
         ],
         "title": "Substitution",
-        "text": "What is $$6\\frac{1}{2}$$?",
+        "text": "What is $$6\\frac{1}{3}$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
@@ -63,9 +63,12 @@
     {
         "id": "a7139feLinear4b-h5",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a7139feLinear4b-h3",
+            "a7139feLinear4b-h4"
+        ],
         "title": "Equality",
-        "text": "Check if the numbers on both sides are equal",
+        "text": "Check if the numbers on both sides are equal.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"

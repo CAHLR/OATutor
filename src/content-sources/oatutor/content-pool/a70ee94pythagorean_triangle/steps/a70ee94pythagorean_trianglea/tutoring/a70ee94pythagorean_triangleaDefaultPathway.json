@@ -1,0 +1,92 @@
+[
+    {
+        "id": "a70ee94pythagorean_trianglea-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the sides of the triangle",
+        "text": "In a right triangle, the hypotenuse is the side opposite the right angle. The other two sides are called the legs.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70ee94pythagorean_trianglea-h2",
+        "type": "hint",
+        "dependencies": [
+            "a70ee94pythagorean_trianglea-h1"
+        ],
+        "title": "Recall the Pythagorean Theorem",
+        "text": "The Pythagorean Theorem states that in a right triangle, the square of the hypotenuse (c) is equal to the sum of the squares of the other two sides (a and b): $$a^2+b^2=c^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70ee94pythagorean_trianglea-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8^2+{15}^2=c^2$$"
+        ],
+        "dependencies": [
+            "a70ee94pythagorean_trianglea-h2"
+        ],
+        "title": "Substitute the given values",
+        "text": "Substitute the lengths of the legs into the Pythagorean Theorem: $$8^2+{15}^2=c^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70ee94pythagorean_trianglea-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$64$$ and $$225$$"
+        ],
+        "dependencies": [
+            "a70ee94pythagorean_trianglea-h3"
+        ],
+        "title": "Calculate the squares of the legs",
+        "text": "Calculate $$8^2$$ and $${15}^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70ee94pythagorean_trianglea-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$289$$"
+        ],
+        "dependencies": [
+            "a70ee94pythagorean_trianglea-h4"
+        ],
+        "title": "Add the squares of the legs",
+        "text": "Add the results from the previous step: $$64+225$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70ee94pythagorean_trianglea-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$17$$"
+        ],
+        "dependencies": [
+            "a70ee94pythagorean_trianglea-h5"
+        ],
+        "title": "Find the hypotenuse",
+        "text": "Take the square root of $$289$$ to find the length of the hypotenuse.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]
