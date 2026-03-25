@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a7db3eepoly_gcf_1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the GCF",
+        "text": "Look for the greatest common factor in the coefficients and variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a7db3eepoly_gcf_1a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a7db3eepoly_gcf_1a-h1"
+        ],
+        "title": "Factor the Coefficients",
+        "text": "What is the greatest common factor of the coefficients $$6$$, $$9$$, and 12?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$2$$",
+            "$$3$$",
+            "$$6$$"
+        ]
+    },
+    {
+        "id": "a7db3eepoly_gcf_1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x$$"
+        ],
+        "dependencies": [
+            "a7db3eepoly_gcf_1a-h2"
+        ],
+        "title": "Factor the Variables",
+        "text": "What is the greatest common factor of the variables $$x^3$$, $$x^2$$, and $$x$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$x^3$$",
+            "$$x^2$$",
+            "$$x$$",
+            "$$1$$"
+        ]
+    },
+    {
+        "id": "a7db3eepoly_gcf_1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7db3eepoly_gcf_1a-h3"
+        ],
+        "title": "Combine the Factors",
+        "text": "Combine the factors from the coefficients and variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a7db3eepoly_gcf_1a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3x \\left(2x^2+3x-4\\right)$$"
+        ],
+        "dependencies": [
+            "a7db3eepoly_gcf_1a-h4"
+        ],
+        "title": "Final Factored Form",
+        "text": "What is the factored form of $$6x^3+9x^2-12x$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

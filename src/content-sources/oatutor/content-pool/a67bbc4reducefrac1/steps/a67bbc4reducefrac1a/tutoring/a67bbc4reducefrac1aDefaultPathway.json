@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a67bbc4reducefrac1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Ratios",
+        "text": "A ratio is a comparison between two quantities. It tells us how much of one thing there is compared to another.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a67bbc4reducefrac1a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Rates",
+        "text": "A rate is a specific type of ratio where the two quantities have different units, like miles per hour or cost per item.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a67bbc4reducefrac1a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Proportions",
+        "text": "A proportion is an equation that states that two ratios are equal. For example, if $$\\frac{1}{2}$$ $$=$$ $$\\frac{2}{4}$$, then these two ratios form a proportion.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a67bbc4reducefrac1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [],
+        "title": "Finding the GCD",
+        "text": "To simplify a fraction, find the greatest common divisor (GCD) of the numerator and the denominator. What is the GCD of $$18$$ and 24?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a67bbc4reducefrac1a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{4}$$"
+        ],
+        "dependencies": [
+            "a67bbc4reducefrac1a-h4"
+        ],
+        "title": "Simplifying the Fraction",
+        "text": "Divide both the numerator and the denominator by their GCD to simplify the fraction. What is $$18$$ divided by $$6$$ and $$24$$ divided by 6?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

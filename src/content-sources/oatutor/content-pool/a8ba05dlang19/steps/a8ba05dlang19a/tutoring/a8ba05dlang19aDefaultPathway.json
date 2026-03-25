@@ -15,8 +15,83 @@
         "dependencies": [
             "a8ba05dlang19a-h1"
         ],
-        "title": "Simplifying the Terms",
-        "text": "$$4+6\\left(3+6\\right)=4+6\\left(9\\right)=4+54=58$$",
+        "title": "Parentheses",
+        "text": "Since there are parentheses, we do the calculations inside the parentheses first.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05dlang19a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "a8ba05dlang19a-h2"
+        ],
+        "title": "Parentheses",
+        "text": "What is $$3+6$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05dlang19a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8ba05dlang19a-h3"
+        ],
+        "title": "$$\\frac{Multiplication}{Division}$$",
+        "text": "Then, we calculate the division and multiplication.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05dlang19a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$54$$"
+        ],
+        "dependencies": [
+            "a8ba05dlang19a-h4"
+        ],
+        "title": "$$\\frac{Multiplication}{Division}$$",
+        "text": "What is $$6\\times9$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05dlang19a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a8ba05dlang19a-h5"
+        ],
+        "title": "$$\\frac{Addition}{Subtraction}$$",
+        "text": "The last step is to do the addition and subtraction.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05dlang19a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$58$$"
+        ],
+        "dependencies": [
+            "a8ba05dlang19a-h6"
+        ],
+        "title": "$$\\frac{Addition}{Subtraction}$$",
+        "text": "What is $$4+54$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"

@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a30046daddprop14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Associative Property",
+        "text": "The associative property of addition states that the way in which numbers are grouped in an addition problem does not change the sum. This means that $$a+b+c$$ is the same as $$a+b+c$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a30046daddprop14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a30046daddprop14a-h1"
+        ],
+        "title": "Applying the Associative Property",
+        "text": "To apply the associative property to the expression $$1+5+7$$, try regrouping the numbers. Think about how you can change the grouping without changing the sum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a30046daddprop14a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1+5+7$$"
+        ],
+        "dependencies": [
+            "a30046daddprop14a-h2"
+        ],
+        "title": "Regrouping the Expression",
+        "text": "Rewrite the expression $$1+5+7$$ by changing the grouping of the numbers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a30046daddprop14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a30046daddprop14a-h3"
+        ],
+        "title": "Checking Your Work",
+        "text": "After regrouping the expression, calculate the sum to ensure it remains the same. What is the sum of $$1+5+7$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a30046daddprop14a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$13$$"
+        ],
+        "dependencies": [
+            "a30046daddprop14a-h4"
+        ],
+        "title": "Calculating the Sum",
+        "text": "Calculate the sum of the expression $$1+5+7$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

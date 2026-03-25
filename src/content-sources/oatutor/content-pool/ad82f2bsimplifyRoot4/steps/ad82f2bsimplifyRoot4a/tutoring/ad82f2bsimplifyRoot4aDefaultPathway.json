@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ad82f2bsimplifyRoot4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Roots",
+        "text": "The nth root of a number is a value that, when raised to the power of $$n$$, gives the original number.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad82f2bsimplifyRoot4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad82f2bsimplifyRoot4a-h1"
+        ],
+        "title": "Identify the Root",
+        "text": "In this problem, we are looking for the 3rd root of $$27$$. This means we need to find a number that, when multiplied by itself three times, equals $$27$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad82f2bsimplifyRoot4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "ad82f2bsimplifyRoot4a-h2"
+        ],
+        "title": "Calculate the 3rd Root",
+        "text": "What is the 3rd root of 27?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad82f2bsimplifyRoot4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad82f2bsimplifyRoot4a-h3"
+        ],
+        "title": "Verify Your Answer",
+        "text": "To verify, multiply the number you found by itself three times and check if it equals $$27$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

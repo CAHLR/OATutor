@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ad82f2bsimplifyRoot3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Roots",
+        "text": "The nth root of a number is a value that, when raised to the power of $$n$$, gives the original number.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad82f2bsimplifyRoot3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad82f2bsimplifyRoot3a-h1"
+        ],
+        "title": "Breaking Down the Problem",
+        "text": "To simplify $$\\sqrt[6]{64}$$, we need to find a number that, when raised to the power of $$6$$, equals $$64$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad82f2bsimplifyRoot3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "ad82f2bsimplifyRoot3a-h2"
+        ],
+        "title": "Finding the 6th Root",
+        "text": "What is the 6th root of 64?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad82f2bsimplifyRoot3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad82f2bsimplifyRoot3a-h3"
+        ],
+        "title": "Verification",
+        "text": "Verify your answer by raising it to the power of $$6$$ and checking if it equals $$64$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad82f2bsimplifyRoot3a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$64$$"
+        ],
+        "dependencies": [
+            "ad82f2bsimplifyRoot3a-h4"
+        ],
+        "title": "Verification Step",
+        "text": "Calculate $$2^6$$. Does it equal 64?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

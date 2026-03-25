@@ -15,8 +15,112 @@
         "dependencies": [
             "a8ba05dlang24a-h1"
         ],
-        "title": "Simplifying the Terms",
-        "text": "$$2\\left(1+3\\left(8\\right)\\right)=2\\left(1+24\\right)=2(25)=50$$",
+        "title": "Parentheses",
+        "text": "Start with the innermost parentheses.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05dlang24a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a8ba05dlang24a-h2"
+        ],
+        "title": "Parentheses",
+        "text": "What is $$10-2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05dlang24a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8ba05dlang24a-h3"
+        ],
+        "title": "$$\\frac{Multiplication}{Division}$$",
+        "text": "Now multiply inside outer parenthese.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05dlang24a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$24$$"
+        ],
+        "dependencies": [
+            "a8ba05dlang24a-h4"
+        ],
+        "title": "$$\\frac{Multiplication}{Division}$$",
+        "text": "What is 3\u00d78?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05dlang24a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a8ba05dlang24a-h5"
+        ],
+        "title": "Parentheses",
+        "text": "Simplify the remaining parentheses.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05dlang24a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$25$$"
+        ],
+        "dependencies": [
+            "a8ba05dlang24a-h6"
+        ],
+        "title": "Parentheses",
+        "text": "What is $$1+24$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05dlang24a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a8ba05dlang24a-h7"
+        ],
+        "title": "$$\\frac{Multiplication}{Division}$$",
+        "text": "Finally multiply.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05dlang24a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$50$$"
+        ],
+        "dependencies": [
+            "a8ba05dlang24a-h8"
+        ],
+        "title": "$$\\frac{Multiplication}{Division}$$",
+        "text": "What is 2\u00d725?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"

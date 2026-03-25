@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ad82f2bsimplifyRoot2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Roots",
+        "text": "The nth root of a number is a value that, when raised to the power of $$n$$, gives the original number. For example, the 5th root of $$32$$ is a number that, when raised to the power of $$5$$, equals $$32$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad82f2bsimplifyRoot2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad82f2bsimplifyRoot2a-h1"
+        ],
+        "title": "Breaking Down the Problem",
+        "text": "To find the 5th root of $$32$$, think about what number multiplied by itself $$5$$ times equals $$32$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad82f2bsimplifyRoot2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "ad82f2bsimplifyRoot2a-h2"
+        ],
+        "title": "Calculating the 5th Root",
+        "text": "Try calculating $$2^5$$. Does it equal 32?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad82f2bsimplifyRoot2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad82f2bsimplifyRoot2a-h3"
+        ],
+        "title": "Verification",
+        "text": "Verify your answer by raising it to the power of $$5$$ and checking if it equals $$32$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]
