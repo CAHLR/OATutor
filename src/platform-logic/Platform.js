@@ -25,6 +25,7 @@ import { cleanArray } from "../util/cleanObject";
 import ErrorBoundary from "@components/ErrorBoundary";
 import { CONTENT_SOURCE } from "@common/global-config";
 import withTranslation from "../util/withTranslation";
+import confetti from "canvas-confetti";
 
 import userIcon from "../assets/UserThumb.svg";
 import IconButton from "@material-ui/core/IconButton";
@@ -146,8 +147,21 @@ class Platform extends React.Component {
         this.toggleDrawer(true);
       }
     }
+    if (prevState.status !== "completed" && this.state.status === "completed") {
+      this.fireConfetti();
+    }
     this.onComponentUpdate(prevProps, prevState, snapshot);
   }
+
+  fireConfetti = () => {
+    try {
+      confetti({
+        particleCount: 240,
+        spread: 120,
+        origin: { x: 0.6, y: 0.6 },
+      });
+    } catch (e) {}
+  };
 
   handleLessonClick = (lesson) => {
     if (lesson && lesson.id) {
@@ -347,9 +361,10 @@ class Platform extends React.Component {
   displayMastery = (mastery) => {
     this.setState({ mastery: mastery });
     if (mastery >= MASTERY_THRESHOLD) {
-      toast.success("You've successfully completed this assignment!", {
-        toastId: ToastID.successfully_completed_lesson.toString(),
-      });
+      // toast.success("You've successfully completed this assignment!", {
+      //   toastId: ToastID.successfully_completed_lesson.toString(),
+      // });
+      this.setState({ status: "completed" });
     }
   };
 
@@ -723,48 +738,30 @@ class Platform extends React.Component {
                               }
                             >
                               {/* Track fills the minmax column width (never 0, never > MAX) */}
-                            <div
-                              role="progressbar"
-                              aria-valuenow={Math.round((this.state.mastery || 0) * 100)}
-                              aria-valuemin={0}
-                              aria-valuemax={100}
-                              style={{
-                                position: "relative",
-                                width: "100%",
-                                height: 30,
-                                backgroundColor: "#C9D3D8",
-                                borderRadius: 24,
-                                padding: "2px",
-                                overflow: "hidden",
-                                cursor: "pointer",
-                              }}
-                            >
-                              {/* Filled progress */}
                               <div
+                                role="progressbar"
+                                aria-valuenow={Math.round((this.state.mastery || 0) * 100)}
+                                aria-valuemin={0}
+                                aria-valuemax={100}
                                 style={{
-                                  width: `${Math.round((this.state.mastery || 0) * 100)}%`,
-                                  height: "100%",
-                                  backgroundColor: "#FFFFFF",
-                                  borderRadius: 24,
-                                  transition: "width 0.4s ease",
+                                  width: "100%",
+                                  height: 16,
+                                  backgroundColor: "#E8EDEC",
+                                  borderRadius: 18,
+                                  overflow: "hidden",
+                                  cursor: "pointer",
                                 }}
-                              />
-
-                              {/* Avatar rider on progress bar */}
-                              <img
-                                src="/place-holder/static/images/icons/avatar_progress_bar.svg" 
-                                alt=""    
-                                style={{
-                                  position: "absolute",
-                                  top: "50%",
-                                  left: `${Math.round((this.state.mastery || 0) * 100)}%`,
-                                  transform: "translate(-110%, -50%)",
-                                  height: 24,
-                                  width: 24,
-                                  transition: "left 0.4s ease",
-                                }}
-                              />
-                            </div>
+                              >
+                                <div
+                                  style={{
+                                    width: `${Math.round((this.state.mastery || 0) * 100)}%`,
+                                    height: "100%",
+                                    backgroundColor: "#67CDBC",
+                                    borderRadius: 18,
+                                    transition: "width 0.3s ease",
+                                  }}
+                                />
+                              </div>
                             </ProgressTooltip>
                           </div>
 
@@ -851,6 +848,55 @@ class Platform extends React.Component {
               <center>
                 <h2>Thank you for learning with {SITE_NAME}. You have mastered all the skills for this session!</h2>
               </center>
+            ) : (
+              ""
+            )}
+            {this.state.status === "completed" ? (
+              <div
+                style={{
+                  minHeight: "60vh",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  textAlign: "center",
+                  // gap: 16,
+                }}
+              >
+                <img
+                  src="/place-holder/static/images/icons/completion_avatar.png"
+                  alt="Completion Avatar"
+                  width={120}
+                />
+                <h1>Well done! You've completed the lesson!</h1>
+                <p>You've taken a big step forward in mastering this topic. Keep up with the great work!</p>
+                <div style={{ display: "flex", gap: 20, marginTop: 36 }}>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    onClick={() => {
+                      const curr = findLessonById(this.props.lessonID);
+                      const course = coursePlans.find((c) => c.courseName === curr?.courseName);
+                      const lessons = course?.lessons || [];
+                      const idx = lessons.findIndex((l) => l.id === curr?.id);
+                      const nextLesson = idx >= 0 ? lessons[idx + 1] : null;
+                      if (nextLesson?.id) {
+                        this.props.history.push(`/lessons/${nextLesson.id}`);
+                      }
+                    }}
+                  >
+                    Next Lesson
+                  </Button>
+                  <Button
+                    variant="outlined"
+                    color="primary"
+                    onClick={() => this.props.history.push("/")}
+                  >
+                    Back to Home
+                  </Button>
+                </div>
+              </div>
+              
             ) : (
               ""
             )}

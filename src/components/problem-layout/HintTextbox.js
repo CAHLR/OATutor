@@ -140,15 +140,17 @@ class HintTextbox extends React.Component {
                         }
                     </Grid> */}
                     <Grid item xs={4} sm={4} md={2}>
-                        <Button className={classes.button} style={{ width: "100%" }} size="small"
-                                onClick={this.submit}
-                                disabled={(use_expanded_view && debug) || (!this.allowRetry && problemAttempted) || !this.state.answerSelected}
-                                {...stagingProp({
-                                    "data-selenium-target": `submit-button-${hintIndex}`
-                                })}
-                        >
-                            {translate('problem.Submit')}
-                        </Button>
+                        <center>
+                            <Button className={classes.button} style={{ width: "80%" }} size="small"
+                                    onClick={this.submit}
+                                    disabled={(use_expanded_view && debug) || (!this.allowRetry && problemAttempted) || !this.state.answerSelected}
+                                    {...stagingProp({
+                                        "data-selenium-target": `submit-button-${hintIndex}`
+                                    })}
+                            >
+                                {translate('problem.Submit')}
+                            </Button>
+                        </center>
                     </Grid>
                     <Grid item xs={4} sm={3} md={1}>
                         <div style={{

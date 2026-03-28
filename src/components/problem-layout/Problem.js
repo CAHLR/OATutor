@@ -563,31 +563,22 @@ class Problem extends React.Component {
             position: "relative",
             width: isHintPortalOpen ? "100%" : "auto",
             maxWidth: isHintPortalOpen ? "100%" : 240,
-            // maxHeight: "60vh",
+            // height: isHintPortalOpen ? "70vh" : "auto",
+            maxHeight: "60vh",
             alignSelf: isHintPortalOpen ? "stretch" : "flex-end",
             textAlign: "left",
             cursor: "pointer",
-            transition: "all 0.3s ease",
+            transition: "all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1)",
             marginTop: isHintPortalOpen ? "auto" : 0,
             zIndex: 2,
-            overflowY: "hidden",
         };
-
-        // const hintPortalStyle = {
-        //     display: isHintPortalOpen ? "block" : "none",
-        //     width: "100%",
-        //     marginTop: isHintPortalOpen ? 8 : 0,
-        // };
 
         const hintPortalStyle = {
             display: isHintPortalOpen ? "block" : "none",
-            border: "none",
-            position: "sticky",
             width: "100%",
-            // height: metaCollapsed? "45vh": "37vh",
-            height: "50vh",
-            marginTop: 8,
-            marginBottom: -24,
+            height: isHintPortalOpen ? "50vh" : "auto",
+            marginTop: isHintPortalOpen ? 8 : 0,
+            maxHeight: "60vh",
             overflowY: "auto",
         };
 
@@ -599,20 +590,18 @@ class Problem extends React.Component {
                     alignItems="flex-start"
                     style={{ width: "100%", margin: 0 }}
                 >
-                    {!compactHeader && (
-                    <Grid item xs={12} style={{ position: "sticky", top: hintStickTop, paddingTop: 0, paddingBottom: 0, backgroundColor: "#F6F6F6", zIndex: 3, marginBottom: -10, paddingRight: 40 }}>
-
-                    {/* <Grid item xs={12} style={{ position: "sticky", top: hintStickTop, zIndex: 3 }}> */}
-                        <div ref={this.bannerRef} className={classes.prompt} role={"banner"}>
+                    <Grid
+                        item
+                        xs={12}
+                        md={drawerOpen ? 8 : 7}
+                    >
+                        <div className={classes.prompt} role={"banner"}>
                             <Card className={classes.titleCard}>
 
-                                <div
+                                <div 
                                     style = {{
                                         backgroundColor: "#EBF4FA",
-                                        padding: 15,
-                                        display: "flex",
-                                        alignItems: "center",
-                                        justifyContent: "space-between"
+                                        padding: 20
                                     }}
                                 >
                                     <div className={classes.problemHeader}>
@@ -625,97 +614,36 @@ class Problem extends React.Component {
                                             ),
                                             this.context
                                         )}
-
+                                        
                                     </div>
-                                    <IconButton
-                                        aria-label="Toggle problem statement"
-                                        onClick={toggleMetaCollapsed}
-                                        style={{
-                                            transform: metaCollapsed ? "rotate(180deg)" : "rotate(0deg)",
-                                            transition: "transform 0.2s ease",
-                                        }}
-                                    >
-                                        <ExpandMoreIcon />
-                                    </IconButton>
                                 </div>
 
-                                {!metaCollapsed && (
-                                    <CardContent
-                                        {...stagingProp({
-                                            "data-selenium-target": "problem-header",
-                                        })}
-                                        style={{
-                                            padding: 15
-                                        }}
-                                    >
+                                <CardContent
+                                    {...stagingProp({
+                                        "data-selenium-target": "problem-header",
+                                    })}
+                                    style={{ 
+                                        padding: 20
+                                    }}
+                                >
 
-                                        <div className={classes.problemBody}>
-                                            {renderText(
-                                                problem.body,
-                                                problem.id,
-                                                chooseVariables(
-                                                    problem.variabilization,
-                                                    seed
-                                                ),
-                                                this.context
-                                            )}
-                                        </div>
-                                    </CardContent>
-                                )}
-                            </Card>
-                            <Spacer height={0} />
-
-                        </div>
-                    </Grid>
-                    )}
-
-                    <Grid
-                        item
-                        xs={12}
-                        md={drawerOpen ? 8 : 7}
-                    >
-                        {compactHeader && (
-                            <div className={classes.prompt} role={"banner"} >
-                                <Card className={classes.titleCard}>
-                                    <div
-                                        style={{
-                                            backgroundColor: "#EBF4FA",
-                                            padding: 15,
-                                        }}
-                                    >
-                                        <div className={classes.problemHeader}>
-                                            {renderText(
-                                                problem.title,
-                                                problem.id,
-                                                chooseVariables(
-                                                    problem.variabilization,
-                                                    seed
-                                                ),
-                                                this.context
-                                            )}
-                                        </div>
+                                    <div className={classes.problemBody}>
+                                        {renderText(
+                                            problem.body,
+                                            problem.id,
+                                            chooseVariables(
+                                                problem.variabilization,
+                                                seed
+                                            ),
+                                            this.context
+                                        )}
                                     </div>
-                                    <CardContent
-                                        {...stagingProp({
-                                            "data-selenium-target": "problem-header",
-                                        })}
-                                        style={{ padding: 15 }}
-                                    >
-                                        <div className={classes.problemBody}>
-                                            {renderText(
-                                                problem.body,
-                                                problem.id,
-                                                chooseVariables(
-                                                    problem.variabilization,
-                                                    seed
-                                                ),
-                                                this.context
-                                            )}
-                                        </div>
-                                    </CardContent>
-                                </Card>
-                            </div>
-                        )}
+                                </CardContent>
+                            </Card>
+                            <Spacer height={8} />
+                            
+                        </div>
+
                         <div role={"main"}>
                             {problem.steps.map((step, idx) => {
                                 const expanded =
@@ -874,11 +802,13 @@ class Problem extends React.Component {
                         </div>
                     </Grid>
 
-                    {!hideHintPanel && <Grid
+                    <Grid
                         item
                         xs={12}
                         md={drawerOpen ? 4 : 5}
                         style={{
+                        position: "sticky",
+                        top: hintStickTop,
                         alignSelf: "flex-start",
                         zIndex: 2,
                     }}
@@ -886,18 +816,16 @@ class Problem extends React.Component {
                         <div style={hintDisplayStyle}>
                         <button
                             style={{
-                                backgroundColor: "#4E7DAA",
+                                backgroundColor: "#4E7DAA", // similar blue tone
                                 color: "white",
                                 border: "none",
-                                borderRadius: "9999px",
+                                borderRadius: "9999px", // fully rounded edges
                                 padding: "2px 14px",
                                 fontSize: "12px",
                                 fontWeight: 500,
                                 cursor: "pointer",
                                 alignSelf: "flex-end",
                                 marginBottom: "56px",
-                                position: "fixed",
-                                right: 26
                             }}
                             >
                             OpenAI o1
@@ -963,7 +891,7 @@ class Problem extends React.Component {
                         />
                         </div>
                     </div>
-                    </Grid>}
+                    </Grid>
                 </Grid>
 
                 <footer>
