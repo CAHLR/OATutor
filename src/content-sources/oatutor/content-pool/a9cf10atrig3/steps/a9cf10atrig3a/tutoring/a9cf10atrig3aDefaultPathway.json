@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a9cf10atrig3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identity",
+        "text": "$$sin(-x)=-sinx$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig3a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Substitute identity into $$\\left(1+sinx\\right) \\left(1+\\operatorname{sinnegneg}\\left(x\\right)\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig3a-h2"
+        ],
+        "title": "Simplify",
+        "text": "Simplify $$\\left(1+sinx\\right) \\left(1-sinx\\right)=1-sinx+sinx-sin^2\\left(x\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig3a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$cos^2\\left(x\\right)=1-sin^2\\left(x\\right)$$"
+        ],
+        "dependencies": [
+            "a9cf10atrig3a-h3"
+        ],
+        "title": "Identity",
+        "text": "What Pythagorean Identity could help us simplify $$1-sin^2\\left(x\\right)$$ even further?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
