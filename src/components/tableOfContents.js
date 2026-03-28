@@ -72,7 +72,7 @@ const MasteryRing = ({ mastery = 0 }) => {
           component="div"
           style={{
             color: "#0B9B8A",
-            fontFamily: "Inter",
+            fontFamily: "Inter, sans-serif",
             fontWeight: 700,
           }}
         >

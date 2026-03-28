@@ -172,6 +172,7 @@ class HintSystem extends React.Component {
                                 debug)
                         }
                         defaultExpanded={false}
+                        style={{ margin: 0, boxShadow: "none", borderBottom: "1px solid #e7e7e7ff", }}
                     >
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}

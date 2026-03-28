@@ -127,11 +127,10 @@ class LessonSelection extends React.Component {
                                                         <IconButton aria-label={`View Course ${i}`}
                                                             aria-roledescription={`Navigate to course ${i}'s page to view available lessons`}
                                                             role={"link"}
-                                                            // onClick={() => {
-                                                            //     this.props.history.push(`/courses/${i}`)
-                                                            // }}
-                                                            onClick={() => this.handleCourseSelect(course, i)}
-                                                            >
+                                                            onClick={() => {
+                                                                this.props.selectCourse(course);
+                                                                this.props.history.push(`/courses/${i}`)
+                                                            }}>
                                                             <img
                                                                 src={`${process.env.PUBLIC_URL}/static/images/icons/folder.png`}
                                                                 width="64px"

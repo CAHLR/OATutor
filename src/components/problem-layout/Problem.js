@@ -33,6 +33,9 @@ import {Accordion, AccordionSummary, Typography} from "@material-ui/core";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import AgentIntegration from './AgentIntegration';
 
+import {Accordion, AccordionSummary, AccordionDetails, Typography} from "@material-ui/core";
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
 class Problem extends React.Component {
     static defaultProps = {
         autoScroll: true
@@ -84,17 +87,18 @@ class Problem extends React.Component {
             hintToggleTrigger: 0,
             hintToggleIndex: null,
             isHintPortalOpen: false,
-            attemptHistory: {}, // { "Problem Title": { "Question Text": ["attempt1", "attempt2"] } }
+            metaCollapsed: false,
         };
 
         this.togglePopup = this.togglePopup.bind(this);
         this.hintPortalRef = React.createRef();
+        this.bannerRef = React.createRef();
     }
 
     componentDidMount() {
-        const { lesson, setLanguage } = this.props;
-        setLanguage(lesson.language);
-
+        const h = this.bannerRef.current?.offsetHeight || 0;
+        this.setState({ bannerHeight: h });
+        const { lesson } = this.props;
         document["oats-meta-courseName"] = lesson?.courseName || "";
         document["oats-meta-textbookName"] =
             lesson?.courseName
@@ -511,16 +515,20 @@ class Problem extends React.Component {
 
     render() {
         const { translate } = this.props;
-        const { classes, problem, seed } = this.props;
+        const { classes, problem, seed, compactHeader, hideHintPanel } = this.props;
         const [oerLink, oerName, licenseLink, licenseName] =
             this.getOerLicense();
-        const { isHintPortalOpen } = this.state;
+        const { showPopup, isHintPortalOpen, metaCollapsed } = this.state;
         if (problem == null) {
             return <div></div>;
         }
 
         const drawerOpen = this.props.drawerOpen;
         const layoutGap = drawerOpen ? 3 : 4;
+        const toggleMetaCollapsed = () =>
+            this.setState((prevState) => ({
+                metaCollapsed: !prevState.metaCollapsed,
+            }));
         const hintStickTop = 200;
         const hintDisplayStyle = {
             position: "sticky",
@@ -533,15 +541,17 @@ class Problem extends React.Component {
             maxHeight: "70vh",
             transition: "all 0.4s ease",
         };
-
+        // Yellow box
         const bubbleContainerStyle = {
-            position: "relative",
+            position: "fixed",
+            top: metaCollapsed? 410 : this.state.bannerHeight + 330,
+            right: 28,
+            bottom: 24,
             display: "flex",
             flexDirection: "column",
             alignItems: isHintPortalOpen ? "stretch" : "flex-end",
             justifyContent: isHintPortalOpen ? "flex-end" : "flex-start",
-            width: isHintPortalOpen ? "100%" : "auto",
-            flexGrow: 1,
+            width: drawerOpen ? "22%" : "37%",
         };
 
         const speechBubbleStyle = {
@@ -553,22 +563,31 @@ class Problem extends React.Component {
             position: "relative",
             width: isHintPortalOpen ? "100%" : "auto",
             maxWidth: isHintPortalOpen ? "100%" : 240,
-            // height: isHintPortalOpen ? "70vh" : "auto",
-            maxHeight: "60vh",
+            // maxHeight: "60vh",
             alignSelf: isHintPortalOpen ? "stretch" : "flex-end",
             textAlign: "left",
             cursor: "pointer",
-            transition: "all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1)",
+            transition: "all 0.3s ease",
             marginTop: isHintPortalOpen ? "auto" : 0,
             zIndex: 2,
+            overflowY: "hidden",
         };
+
+        // const hintPortalStyle = {
+        //     display: isHintPortalOpen ? "block" : "none",
+        //     width: "100%",
+        //     marginTop: isHintPortalOpen ? 8 : 0,
+        // };
 
         const hintPortalStyle = {
             display: isHintPortalOpen ? "block" : "none",
+            border: "none",
+            position: "sticky",
             width: "100%",
-            height: isHintPortalOpen ? "50vh" : "auto",
-            marginTop: isHintPortalOpen ? 8 : 0,
-            maxHeight: "60vh",
+            // height: metaCollapsed? "45vh": "37vh",
+            height: "50vh",
+            marginTop: 8,
+            marginBottom: -24,
             overflowY: "auto",
         };
 
@@ -580,18 +599,20 @@ class Problem extends React.Component {
                     alignItems="flex-start"
                     style={{ width: "100%", margin: 0 }}
                 >
-                    <Grid
-                        item
-                        xs={12}
-                        md={drawerOpen ? 8 : 7}
-                    >
-                        <div className={classes.prompt} role={"banner"}>
+                    {!compactHeader && (
+                    <Grid item xs={12} style={{ position: "sticky", top: hintStickTop, paddingTop: 0, paddingBottom: 0, backgroundColor: "#F6F6F6", zIndex: 3, marginBottom: -10, paddingRight: 40 }}>
+
+                    {/* <Grid item xs={12} style={{ position: "sticky", top: hintStickTop, zIndex: 3 }}> */}
+                        <div ref={this.bannerRef} className={classes.prompt} role={"banner"}>
                             <Card className={classes.titleCard}>
 
-                                <div 
+                                <div
                                     style = {{
                                         backgroundColor: "#EBF4FA",
-                                        padding: 20
+                                        padding: 15,
+                                        display: "flex",
+                                        alignItems: "center",
+                                        justifyContent: "space-between"
                                     }}
                                 >
                                     <div className={classes.problemHeader}>
@@ -604,36 +625,97 @@ class Problem extends React.Component {
                                             ),
                                             this.context
                                         )}
-                                        
+
                                     </div>
+                                    <IconButton
+                                        aria-label="Toggle problem statement"
+                                        onClick={toggleMetaCollapsed}
+                                        style={{
+                                            transform: metaCollapsed ? "rotate(180deg)" : "rotate(0deg)",
+                                            transition: "transform 0.2s ease",
+                                        }}
+                                    >
+                                        <ExpandMoreIcon />
+                                    </IconButton>
                                 </div>
 
-                                <CardContent
-                                    {...stagingProp({
-                                        "data-selenium-target": "problem-header",
-                                    })}
-                                    style={{ 
-                                        padding: 20
-                                    }}
-                                >
+                                {!metaCollapsed && (
+                                    <CardContent
+                                        {...stagingProp({
+                                            "data-selenium-target": "problem-header",
+                                        })}
+                                        style={{
+                                            padding: 15
+                                        }}
+                                    >
 
-                                    <div className={classes.problemBody}>
-                                        {renderText(
-                                            problem.body,
-                                            problem.id,
-                                            chooseVariables(
-                                                problem.variabilization,
-                                                seed
-                                            ),
-                                            this.context
-                                        )}
-                                    </div>
-                                </CardContent>
+                                        <div className={classes.problemBody}>
+                                            {renderText(
+                                                problem.body,
+                                                problem.id,
+                                                chooseVariables(
+                                                    problem.variabilization,
+                                                    seed
+                                                ),
+                                                this.context
+                                            )}
+                                        </div>
+                                    </CardContent>
+                                )}
                             </Card>
-                            <Spacer height={8} />
-                            
-                        </div>
+                            <Spacer height={0} />
 
+                        </div>
+                    </Grid>
+                    )}
+
+                    <Grid
+                        item
+                        xs={12}
+                        md={drawerOpen ? 8 : 7}
+                    >
+                        {compactHeader && (
+                            <div className={classes.prompt} role={"banner"} >
+                                <Card className={classes.titleCard}>
+                                    <div
+                                        style={{
+                                            backgroundColor: "#EBF4FA",
+                                            padding: 15,
+                                        }}
+                                    >
+                                        <div className={classes.problemHeader}>
+                                            {renderText(
+                                                problem.title,
+                                                problem.id,
+                                                chooseVariables(
+                                                    problem.variabilization,
+                                                    seed
+                                                ),
+                                                this.context
+                                            )}
+                                        </div>
+                                    </div>
+                                    <CardContent
+                                        {...stagingProp({
+                                            "data-selenium-target": "problem-header",
+                                        })}
+                                        style={{ padding: 15 }}
+                                    >
+                                        <div className={classes.problemBody}>
+                                            {renderText(
+                                                problem.body,
+                                                problem.id,
+                                                chooseVariables(
+                                                    problem.variabilization,
+                                                    seed
+                                                ),
+                                                this.context
+                                            )}
+                                        </div>
+                                    </CardContent>
+                                </Card>
+                            </div>
+                        )}
                         <div role={"main"}>
                             {problem.steps.map((step, idx) => {
                                 const expanded =
@@ -792,13 +874,11 @@ class Problem extends React.Component {
                         </div>
                     </Grid>
 
-                    <Grid
+                    {!hideHintPanel && <Grid
                         item
                         xs={12}
                         md={drawerOpen ? 4 : 5}
                         style={{
-                        position: "sticky",
-                        top: hintStickTop,
                         alignSelf: "flex-start",
                         zIndex: 2,
                     }}
@@ -806,16 +886,18 @@ class Problem extends React.Component {
                         <div style={hintDisplayStyle}>
                         <button
                             style={{
-                                backgroundColor: "#4E7DAA", // similar blue tone
+                                backgroundColor: "#4E7DAA",
                                 color: "white",
                                 border: "none",
-                                borderRadius: "9999px", // fully rounded edges
+                                borderRadius: "9999px",
                                 padding: "2px 14px",
                                 fontSize: "12px",
                                 fontWeight: 500,
                                 cursor: "pointer",
                                 alignSelf: "flex-end",
                                 marginBottom: "56px",
+                                position: "fixed",
+                                right: 26
                             }}
                             >
                             OpenAI o1
@@ -881,7 +963,7 @@ class Problem extends React.Component {
                         />
                         </div>
                     </div>
-                    </Grid>
+                    </Grid>}
                 </Grid>
 
                 <footer>
