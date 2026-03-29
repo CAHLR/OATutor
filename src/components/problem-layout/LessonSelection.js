@@ -120,7 +120,7 @@ class LessonSelection extends React.Component {
                                             <Grid item xs={12} sm={6} md={4} key={course.courseName}>
                                                 <center>
                                                     {/* card, text, and icon scale in proportion to one another */}
-                                                    <Paper className={classes.paper} style={{ fontSize: "1rem" }}>
+                                                    <Paper className={classes.paper} style={{ fontSize: "1rem", textAlign: "center" }}>
                                                         <h2 style={{
                                                             height: "2.5em",
                                                             marginTop: "0.2em",
@@ -148,7 +148,7 @@ class LessonSelection extends React.Component {
                                         return (
                                             <Grid item xs={12} sm={6} md={4} key={i}>
                                             <center>
-                                            <Paper className={classes.paper} style={{ position: "relative", height: "12rem" }}>
+                                            <Paper className={classes.paper} style={{ position: "relative", height: "12rem", textAlign: "center" }}>
                                                 {/* top-right “view all problems” button */}
                                                 <IconButton
                                                     size="small"

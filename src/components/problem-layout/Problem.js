@@ -3,6 +3,7 @@ import { withStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
+import TextField from "@material-ui/core/TextField";
 import ProblemCardWrapper from "./ProblemCardWrapper";
 import Grid from "@material-ui/core/Grid";
 import { animateScroll as scroll, Element, scroller } from "react-scroll";
@@ -978,6 +979,72 @@ class Problem extends React.Component {
                             <About />
                         </Popup> */}
                     </div>
+
+                    {this.props.showFeedback && (
+                        <div
+                            className="Feedback"
+                            style={{
+                                paddingTop: 16,
+                                paddingBottom: 24,
+                            }}
+                        >
+                            <center>
+                                <h1>{translate('problem.Feedback')}</h1>
+                            </center>
+                            <div className={classes.textBox}>
+                                <div className={classes.textBoxHeader}>
+                                    <center>
+                                        {this.props.feedbackSubmitted
+                                            ? translate('problem.Thanks')
+                                            : translate('problem.Description')}
+                                    </center>
+                                </div>
+                                {this.props.feedbackSubmitted ? (
+                                    <Spacer />
+                                ) : (
+                                    <Grid container spacing={0}>
+                                        <Grid item xs={1} sm={2} md={2} key={1} />
+                                        <Grid item xs={10} sm={8} md={8} key={2}>
+                                            <TextField
+                                                id="outlined-multiline-flexible"
+                                                label={translate('problem.Response')}
+                                                multiline
+                                                fullWidth
+                                                minRows="6"
+                                                maxRows="20"
+                                                value={this.props.feedback || ""}
+                                                onChange={(event) => this.props.onFeedbackChange?.(event.target.value)}
+                                                className={classes.textField}
+                                                margin="normal"
+                                                variant="outlined"
+                                            />
+                                        </Grid>
+                                        <Grid item xs={1} sm={2} md={2} key={3} />
+                                    </Grid>
+                                )}
+                            </div>
+                            {this.props.feedbackSubmitted ? (
+                                ""
+                            ) : (
+                                <div className="submitFeedback">
+                                    <Grid container spacing={0}>
+                                        <Grid item xs={3} sm={3} md={5} key={1} />
+                                        <Grid item xs={6} sm={6} md={2} key={2}>
+                                            <Button
+                                                className={classes.button}
+                                                onClick={this.props.submitFeedback}
+                                                style={{ width: "100%" }}
+                                                disabled={(this.props.feedback || "").trim() === ""}
+                                            >
+                                                {translate('problem.Submit')}
+                                            </Button>
+                                        </Grid>
+                                        <Grid item xs={3} sm={3} md={5} key={3} />
+                                    </Grid>
+                                </div>
+                            )}
+                        </div>
+                    )}
 
 
                     {/* {this.state.showFeedback ? (
