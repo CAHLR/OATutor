@@ -120,11 +120,20 @@ class LessonSelection extends React.Component {
                                             <Grid item xs={12} sm={6} md={4} key={course.courseName}>
                                                 <center>
                                                     {/* card, text, and icon scale in proportion to one another */}
-                                                    <Paper className={classes.paper} style={{ fontSize: "1rem", textAlign: "center" }}>
+                                                    <Paper className={classes.paper} style={{
+                                                        fontSize: "1rem",
+                                                        textAlign: "center",
+                                                        display: "flex",
+                                                        flexDirection: "column",
+                                                        alignItems: "center",
+                                                        justifyContent: "center",
+                                                        minHeight: "12rem",
+                                                    }}>
                                                         <h2 style={{
                                                             height: "2.5em",
                                                             marginTop: "0.2em",
                                                             marginBottom: "1em",
+                                                            textAlign: "center",
                                                         }}>{course.courseName}</h2>
                                                         <IconButton aria-label={`View Course ${i}`}
                                                             aria-roledescription={`Navigate to course ${i}'s page to view available lessons`}
@@ -148,7 +157,15 @@ class LessonSelection extends React.Component {
                                         return (
                                             <Grid item xs={12} sm={6} md={4} key={i}>
                                             <center>
-                                            <Paper className={classes.paper} style={{ position: "relative", height: "12rem", textAlign: "center" }}>
+                                            <Paper className={classes.paper} style={{
+                                                position: "relative",
+                                                height: "12rem",
+                                                textAlign: "center",
+                                                display: "flex",
+                                                flexDirection: "column",
+                                                alignItems: "center",
+                                                justifyContent: "center",
+                                            }}>
                                                 {/* top-right “view all problems” button */}
                                                 <IconButton
                                                     size="small"
@@ -158,10 +175,10 @@ class LessonSelection extends React.Component {
                                                 >
                                                 <MenuBookIcon fontSize="small" />
                                                 </IconButton>
-                                                <h2 style={{ marginTop: 5, marginBottom: 10 }}>
+                                                <h2 style={{ marginTop: 5, marginBottom: 10, textAlign: "center" }}>
                                                 {lesson.name.replace(/##/g, "")}
                                                 </h2>
-                                                <h3 style={{ marginTop: 5 }}>{lesson.topics}</h3>
+                                                <h3 style={{ marginTop: 5, textAlign: "center" }}>{lesson.topics}</h3>
                                                 <Button
                                                     variant="contained"
                                                     color="primary"

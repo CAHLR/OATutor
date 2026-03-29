@@ -323,9 +323,25 @@ class Problem extends React.Component {
             // console.log("num attempted: ", numAttempted);
             // console.log("num steps: ", numSteps);
             // console.log("step states: ", Object.values(nextStepStates));
-            this.setState({
-                stepStates: nextStepStates,
-            });
+            if (isCorrect && cardIndex + 1 < numSteps) {
+                if (this.props.autoScroll) {
+                    scroller.scrollTo((cardIndex + 1).toString(), {
+                        duration: 350,
+                        smooth: true,
+                        offset: -80,
+                    });
+                }
+                this.setState({
+                    stepStates: nextStepStates,
+                    expandedAccordion: cardIndex + 1,
+                    hintToggleIndex: null,
+                    isHintPortalOpen: false,
+                });
+            } else {
+                this.setState({
+                    stepStates: nextStepStates,
+                });
+            }
             if (numAttempted === numSteps) {
                 this.setState({
                     problemFinished: true,
@@ -347,13 +363,16 @@ class Problem extends React.Component {
                 );
                 if (this.props.autoScroll) {
                     scroller.scrollTo((cardIndex + 1).toString(), {
-                        duration: 500,
+                        duration: 350,
                         smooth: true,
-                        offset: -100,
+                        offset: -80,
                     });
                 }
                 this.setState({
                     stepStates: nextStepStates,
+                    expandedAccordion: cardIndex + 1,
+                    hintToggleIndex: null,
+                    isHintPortalOpen: false,
                 });
             } else {
                 this.setState({
