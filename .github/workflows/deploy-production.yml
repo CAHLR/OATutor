@@ -55,6 +55,7 @@ jobs:
         env:
           REACT_APP_FIREBASE_CONFIG: ${{ secrets.STAGING_FIREBASE_CONFIG }}
           REACT_APP_AI_AGENT_URL: ${{ secrets.REACT_APP_AI_AGENT_URL }}
+          REACT_APP_TTS_AWS_ENDPOINT: ${{ secrets.REACT_APP_TTS_AWS_ENDPOINT }}
           CI: false
           REACT_APP_BUILD_TYPE: "production"
           REACT_APP_COMMIT_HASH: ${{ github.sha }}

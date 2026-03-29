@@ -35,6 +35,9 @@ import {
 import { joinList } from "../../util/formListString";
 import withTranslation from "../../util/withTranslation.js"
 import CryptoJS from "crypto-js";
+import TTSPlayer from "../../util/ttsPlayer.js";
+import TTSButtons from "./TTSButtons.js";
+import { textToReadable } from "../../util/latexToReadable.js";
 
 import ReactDOM from "react-dom";
 import {Accordion, AccordionSummary, AccordionDetails, typography} from "@material-ui/core";
@@ -62,6 +65,7 @@ class ProblemCard extends React.Component {
 
         this.giveStuBottomHint = props.giveStuBottomHint;
         this.giveDynamicHint = props.giveDynamicHint;
+        this.enableTTS = props.enableTTS;
         this.showHints = this.giveStuHints == null || this.giveStuHints;
         this.showCorrectness = this.giveStuFeedback;
         this.expandFirstIncorrect = false;
@@ -211,6 +215,7 @@ class ProblemCard extends React.Component {
         // Start an asynchronous task
         this.updateBioInfo();
         console.log("student show hints status: ", this.showHints);
+
     }
 
     componentDidUpdate(prevProps) {
@@ -673,33 +678,34 @@ class ProblemCard extends React.Component {
                     >
                         <HintSystem
                             key={`hints-${this.giveDynamicHint ? "dynamic" : "manual"}`}
-                            giveHintOnIncorrect={this.giveHintOnIncorrect}
-                            giveDynamicHint={this.giveDynamicHint}
-                            giveStuFeedback={this.giveStuFeedback}
-                            unlockFirstHint={this.unlockFirstHint}
-                            problemID={this.props.problemID}
-                            index={this.props.index}
-                            step={this.step}
-                            hints={this.state.hints}
-                            unlockHint={this.unlockHint}
-                            hintStatus={this.state.hintsFinished}
-                            submitHint={this.submitHint}
-                            seed={this.props.seed}
-                            stepVars={Object.assign(
-                                {},
-                                this.props.problemVars,
-                                this.step.variabilization
-                            )}
-                            answerMade={this.props.answerMade}
-                            lesson={this.props.lesson}
-                            courseName={this.props.courseName}
-                            isIncorrect={this.expandFirstIncorrect}
-                            generateHintFromGPT={this.generateHintFromGPT}
-                            isGeneratingHint={this.state.isGeneratingHint}
-                        />
-                    </ErrorBoundary>
-                    {/* <Spacer /> */}
-                </div>
+                                        giveHintOnIncorrect={this.giveHintOnIncorrect}
+                                        giveDynamicHint={this.giveDynamicHint}
+                                        giveStuFeedback={this.giveStuFeedback}
+                                        unlockFirstHint={this.unlockFirstHint}
+                                        problemID={this.props.problemID}
+                                        index={this.props.index}
+                                        step={this.step}
+                                        hints={this.state.hints}
+                                        unlockHint={this.unlockHint}
+                                        hintStatus={this.state.hintsFinished}
+                                        submitHint={this.submitHint}
+                                        seed={this.props.seed}
+                                        stepVars={Object.assign(
+                                            {},
+                                            this.props.problemVars,
+                                            this.step.variabilization
+                                        )}
+                                        answerMade={this.props.answerMade}
+                                        lesson={this.props.lesson}
+                                        courseName={this.props.courseName}
+                                        isIncorrect={this.expandFirstIncorrect}
+                                        generateHintFromGPT={this.generateHintFromGPT}
+                                        isGeneratingHint={this.state.isGeneratingHint}
+                                        enableTTS={this.enableTTS}
+                                    />
+                                </ErrorBoundary>
+                                <Spacer />
+                            </div>
             );
 
             if (

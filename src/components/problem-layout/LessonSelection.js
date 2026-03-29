@@ -120,11 +120,12 @@ class LessonSelection extends React.Component {
                                             <Grid item xs={12} sm={6} md={4} key={course.courseName}>
                                                 <center>
                                                     {/* card, text, and icon scale in proportion to one another */}
-                                                    <Paper className={classes.paper} style={{ fontSize: "1rem" }}>
+                                                    <Paper className={classes.paper} style={{ fontSize: "1rem", textAlign: "center" }}>
                                                         <h2 style={{
                                                             height: "2.5em",
                                                             marginTop: "0.2em",
                                                             marginBottom: "1em",
+                                                            textAlign: "center",
                                                         }}>{course.courseName}</h2>
                                                         <IconButton aria-label={`View Course ${i}`}
                                                             aria-roledescription={`Navigate to course ${i}'s page to view available lessons`}
