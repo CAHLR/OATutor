@@ -468,7 +468,7 @@ class Platform extends React.Component {
             anchor="left"
             open={this.state.drawerOpen}
             classes={{ paper: this.props.classes.drawerPaper }}
-            style={{ position: "fixed", width: 320, flexShrink: 0 }}
+            style={{ position: "fixed", width: 320, flexShrink: 0, zIndex: this.state.drawerOpen ? 4 : 0 }}
             PaperProps={{ style: { padding: 0 } }}
           >
             <div style={{ width: drawerWidth, padding: 16 }}>
@@ -603,8 +603,8 @@ class Platform extends React.Component {
           >
             {this.state.status === "learning" ? (
               <AppBar position="sticky" 
-                      style={{ top: 120, backgroundColor: "#F6F6F6", boxShadow: "none", zIndex: 3, marginLeft: "16px", paddingRight: "32px" }}>
-                <Toolbar disableGutters style={{ minHeight: 80 }}>
+                      style={{ top: 120, backgroundColor: "#F6F6F6", boxShadow: "none", zIndex: 3 }}>
+                <Toolbar disableGutters style={{ minHeight: 80, paddingLeft: "16px", paddingRight: "32px" }}>
                   <Grid container spacing={0} role="progress-bar" alignItems="center" style={{ width: "100%" }}>
                     {!this.state.drawerOpen && (
                       <IconButton
@@ -623,7 +623,7 @@ class Platform extends React.Component {
                         <div
                           style={{
                             display: "grid",
-                            // Middle column gets a real width range so it NEVER collapses
+                            // Middle column gets a real width range so it never collapses
                             gridTemplateColumns: `auto minmax(${MIN_PROGRESS_BAR_WIDTH}px, ${MAX_PROGRESS_BAR_WIDTH}px) auto`,
                             alignItems: "center",
                             justifyContent: "center",    // center the whole trio as a group
