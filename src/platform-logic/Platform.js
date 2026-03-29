@@ -742,21 +742,39 @@ class Platform extends React.Component {
                                 aria-valuemin={0}
                                 aria-valuemax={100}
                                 style={{
+                                  position: "relative",
                                   width: "100%",
-                                  height: 16,
-                                  backgroundColor: "#E8EDEC",
-                                  borderRadius: 18,
+                                  height: 30,
+                                  backgroundColor: "#C9D3D8",
+                                  borderRadius: 24,
+                                  padding: "2px",
                                   overflow: "hidden",
                                   cursor: "pointer",
                                 }}
                               >
+                                {/* Filled progress */}
                                 <div
                                   style={{
                                     width: `${Math.round((this.state.mastery || 0) * 100)}%`,
                                     height: "100%",
-                                    backgroundColor: "#67CDBC",
-                                    borderRadius: 18,
-                                    transition: "width 0.3s ease",
+                                    backgroundColor: "#FFFFFF",
+                                    borderRadius: 24,
+                                    transition: "width 0.4s ease",
+                                  }}
+                                />
+
+                                {/* Avatar rider on progress bar */}
+                                <img
+                                  src="/place-holder/static/images/icons/avatar_progress_bar.svg" 
+                                  alt=""    
+                                  style={{
+                                    position: "absolute",
+                                    top: "50%",
+                                    left: `${Math.round((this.state.mastery || 0) * 100)}%`,
+                                    transform: "translate(-110%, -50%)",
+                                    height: 24,
+                                    width: 24,
+                                    transition: "left 0.4s ease",
                                   }}
                                 />
                               </div>
