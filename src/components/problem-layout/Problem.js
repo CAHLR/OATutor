@@ -3,6 +3,7 @@ import { withStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
+import TextField from "@material-ui/core/TextField";
 import ProblemCardWrapper from "./ProblemCardWrapper";
 import Grid from "@material-ui/core/Grid";
 import { animateScroll as scroll, Element, scroller } from "react-scroll";
@@ -32,7 +33,7 @@ import Spacer from "../Spacer";
 import { stagingProp } from "../../util/addStagingProperty";
 import { cleanArray } from "../../util/cleanObject";
 
-import {Accordion, AccordionSummary, Typography} from "@material-ui/core";
+import {Accordion, AccordionSummary, AccordionDetails, Typography} from "@material-ui/core";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import AgentIntegration from './AgentIntegration';
 
@@ -91,6 +92,7 @@ class Problem extends React.Component {
             attemptHistory: {}, // { "Problem Title": { "Question Text": ["attempt1", "attempt2"] } }
             ttsPlaying: false,
             ttsPlayingStep: -1,
+            metaCollapsed: false,
         };
 
         this.togglePopup = this.togglePopup.bind(this);
@@ -101,12 +103,13 @@ class Problem extends React.Component {
             this.ttsPlayer = new TTSPlayer();
             this.ttsPlayer.onStateChange((playing) => this.setState({ ttsPlaying: playing }));
         }
+        this.bannerRef = React.createRef();
     }
 
     componentDidMount() {
-        const { lesson, setLanguage } = this.props;
-        setLanguage(lesson.language);
-
+        const h = this.bannerRef.current?.offsetHeight || 0;
+        this.setState({ bannerHeight: h });
+        const { lesson } = this.props;
         document["oats-meta-courseName"] = lesson?.courseName || "";
         document["oats-meta-textbookName"] =
             lesson?.courseName
@@ -386,9 +389,25 @@ class Problem extends React.Component {
             // console.log("num attempted: ", numAttempted);
             // console.log("num steps: ", numSteps);
             // console.log("step states: ", Object.values(nextStepStates));
-            this.setState({
-                stepStates: nextStepStates,
-            });
+            if (isCorrect && cardIndex + 1 < numSteps) {
+                if (this.props.autoScroll) {
+                    scroller.scrollTo((cardIndex + 1).toString(), {
+                        duration: 350,
+                        smooth: true,
+                        offset: -80,
+                    });
+                }
+                this.setState({
+                    stepStates: nextStepStates,
+                    expandedAccordion: cardIndex + 1,
+                    hintToggleIndex: null,
+                    isHintPortalOpen: false,
+                });
+            } else {
+                this.setState({
+                    stepStates: nextStepStates,
+                });
+            }
             if (numAttempted === numSteps) {
                 this.setState({
                     problemFinished: true,
@@ -410,13 +429,16 @@ class Problem extends React.Component {
                 );
                 if (this.props.autoScroll) {
                     scroller.scrollTo((cardIndex + 1).toString(), {
-                        duration: 500,
+                        duration: 350,
                         smooth: true,
-                        offset: -100,
+                        offset: -80,
                     });
                 }
                 this.setState({
                     stepStates: nextStepStates,
+                    expandedAccordion: cardIndex + 1,
+                    hintToggleIndex: null,
+                    isHintPortalOpen: false,
                 });
             } else {
                 this.setState({
@@ -576,16 +598,20 @@ class Problem extends React.Component {
 
     render() {
         const { translate } = this.props;
-        const { classes, problem, seed } = this.props;
+        const { classes, problem, seed, compactHeader, hideHintPanel } = this.props;
         const [oerLink, oerName, licenseLink, licenseName] =
             this.getOerLicense();
-        const { isHintPortalOpen } = this.state;
+        const { showPopup, isHintPortalOpen, metaCollapsed } = this.state;
         if (problem == null) {
             return <div></div>;
         }
 
         const drawerOpen = this.props.drawerOpen;
         const layoutGap = drawerOpen ? 3 : 4;
+        const toggleMetaCollapsed = () =>
+            this.setState((prevState) => ({
+                metaCollapsed: !prevState.metaCollapsed,
+            }));
         const hintStickTop = 200;
         const hintDisplayStyle = {
             position: "sticky",
@@ -598,15 +624,17 @@ class Problem extends React.Component {
             maxHeight: "70vh",
             transition: "all 0.4s ease",
         };
-
+        // Yellow box
         const bubbleContainerStyle = {
-            position: "relative",
+            position: "fixed",
+            top: metaCollapsed? 410 : this.state.bannerHeight + 330,
+            right: 28,
+            bottom: 24,
             display: "flex",
             flexDirection: "column",
             alignItems: isHintPortalOpen ? "stretch" : "flex-end",
             justifyContent: isHintPortalOpen ? "flex-end" : "flex-start",
-            width: isHintPortalOpen ? "100%" : "auto",
-            flexGrow: 1,
+            width: drawerOpen ? "22%" : "37%",
         };
 
         const speechBubbleStyle = {
@@ -1104,6 +1132,72 @@ class Problem extends React.Component {
                             <About />
                         </Popup> */}
                     </div>
+
+                    {this.props.showFeedback && (
+                        <div
+                            className="Feedback"
+                            style={{
+                                paddingTop: 16,
+                                paddingBottom: 24,
+                            }}
+                        >
+                            <center>
+                                <h1>{translate('problem.Feedback')}</h1>
+                            </center>
+                            <div className={classes.textBox}>
+                                <div className={classes.textBoxHeader}>
+                                    <center>
+                                        {this.props.feedbackSubmitted
+                                            ? translate('problem.Thanks')
+                                            : translate('problem.Description')}
+                                    </center>
+                                </div>
+                                {this.props.feedbackSubmitted ? (
+                                    <Spacer />
+                                ) : (
+                                    <Grid container spacing={0}>
+                                        <Grid item xs={1} sm={2} md={2} key={1} />
+                                        <Grid item xs={10} sm={8} md={8} key={2}>
+                                            <TextField
+                                                id="outlined-multiline-flexible"
+                                                label={translate('problem.Response')}
+                                                multiline
+                                                fullWidth
+                                                minRows="6"
+                                                maxRows="20"
+                                                value={this.props.feedback || ""}
+                                                onChange={(event) => this.props.onFeedbackChange?.(event.target.value)}
+                                                className={classes.textField}
+                                                margin="normal"
+                                                variant="outlined"
+                                            />
+                                        </Grid>
+                                        <Grid item xs={1} sm={2} md={2} key={3} />
+                                    </Grid>
+                                )}
+                            </div>
+                            {this.props.feedbackSubmitted ? (
+                                ""
+                            ) : (
+                                <div className="submitFeedback">
+                                    <Grid container spacing={0}>
+                                        <Grid item xs={3} sm={3} md={5} key={1} />
+                                        <Grid item xs={6} sm={6} md={2} key={2}>
+                                            <Button
+                                                className={classes.button}
+                                                onClick={this.props.submitFeedback}
+                                                style={{ width: "100%" }}
+                                                disabled={(this.props.feedback || "").trim() === ""}
+                                            >
+                                                {translate('problem.Submit')}
+                                            </Button>
+                                        </Grid>
+                                        <Grid item xs={3} sm={3} md={5} key={3} />
+                                    </Grid>
+                                </div>
+                            )}
+                        </div>
+                    )}
 
 
                     {/* {this.state.showFeedback ? (
