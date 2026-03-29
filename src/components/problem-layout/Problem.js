@@ -29,12 +29,9 @@ import Spacer from "../Spacer";
 import { stagingProp } from "../../util/addStagingProperty";
 import { cleanArray } from "../../util/cleanObject";
 
-import {Accordion, AccordionSummary, Typography} from "@material-ui/core";
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import AgentIntegration from './AgentIntegration';
-
 import {Accordion, AccordionSummary, AccordionDetails, Typography} from "@material-ui/core";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import AgentIntegration from './AgentIntegration';
 
 class Problem extends React.Component {
     static defaultProps = {
