@@ -688,15 +688,17 @@ class Problem extends React.Component {
                                     }}
                                 >
                                     <div className={classes.problemHeader}>
-                                        {renderText(
-                                            problem.title,
-                                            problem.id,
-                                            chooseVariables(
-                                                problem.variabilization,
-                                                seed
-                                            ),
-                                            this.context
-                                        )}
+                                        <span style={{ minWidth: 0 }}>
+                                            {renderText(
+                                                problem.title,
+                                                problem.id,
+                                                chooseVariables(
+                                                    problem.variabilization,
+                                                    seed
+                                                ),
+                                                this.context
+                                            )}
+                                        </span>
                                         {this.enableTTS && this.ttsPlayer && (
                                             <TTSButtons
                                                 playing={this.state.ttsPlaying}
@@ -817,21 +819,24 @@ class Problem extends React.Component {
                                                         fontWeight: 800,
                                                         display: "flex",
                                                         alignItems: "center",
+                                                        gap: 8,
                                                     }}
                                                 >
-                                                    {renderText(
-                                                        step.stepTitle,
-                                                        problem.id,
-                                                        chooseVariables(
-                                                            Object.assign(
-                                                                {},
-                                                                problem.variabilization,
-                                                                step.variabilization
+                                                    <span style={{ minWidth: 0 }}>
+                                                        {renderText(
+                                                            step.stepTitle,
+                                                            problem.id,
+                                                            chooseVariables(
+                                                                Object.assign(
+                                                                    {},
+                                                                    problem.variabilization,
+                                                                    step.variabilization
+                                                                ),
+                                                                seed
                                                             ),
-                                                            seed
-                                                        ),
-                                                        this.context
-                                                    )}
+                                                            this.context
+                                                        )}
+                                                    </span>
                                                     {this.enableTTS && this.stepTTSPlayers[idx] && (
                                                         <TTSButtons
                                                             playing={this.state.ttsPlayingStep === idx}
