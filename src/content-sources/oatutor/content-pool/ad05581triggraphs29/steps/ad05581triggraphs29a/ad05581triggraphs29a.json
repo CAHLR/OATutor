@@ -1,12 +1,17 @@
 {
     "id": "ad05581triggraphs29a",
     "stepAnswer": [
-        "$$1$$"
+        "pi/6,5pi/6"
     ],
-    "problemType": "TextBox",
-    "stepTitle": "Evaluate $$f{\\left(\\frac{\\pi}{2}\\right)}$$",
+    "problemType": "MultipleChoice",
+    "stepTitle": "On $$(0,2\\pi)$$, solve $$f(x)=\\frac{1}{2}$$",
     "stepBody": "",
-    "answerType": "arithmetic",
+    "answerType": "string",
     "variabilization": {},
-    "answerLatex": "$$1$$"
+    "choices": [
+        "$$\\frac{\\pi}{6}$$",
+        "pi/3,2*pi/3",
+        "pi/6,5pi/6",
+        "7*pi/6,pi/6"
+    ]
 }

@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Heron's formula",
-        "text": "What are the quantities that we need to calculate to use Heron's formula?",
+        "text": "Heron's formula is given by $$A=\\sqrt{s\\left(s-a\\right) \\left(s-b\\right) \\left(s-c\\right)}$$ where $$s=\\frac{a+b+c}{2}$$ and is the semi-perimeter",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -21,7 +21,7 @@
             "af4dc22Lawcos19a-h1"
         ],
         "title": "Semi-Perimeter",
-        "text": "What is the value of the semi-perimeter?",
+        "text": "What is the value of the semi-perimeter s?",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -33,24 +33,7 @@
             "af4dc22Lawcos19a-h2"
         ],
         "title": "Using Semi-Perimeter",
-        "text": "How can we use the semi-perimeter along with the side lengths using Heron's formula?",
-        "variabilization": {},
-        "oer": "",
-        "license": ""
-    },
-    {
-        "id": "af4dc22Lawcos19a-h4",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$43.52$$"
-        ],
-        "dependencies": [
-            "af4dc22Lawcos19a-h2"
-        ],
-        "title": "Final Area",
-        "text": "What is the final area?",
+        "text": "Use the semi-perimeter along with the side lengths in Heron's formula to calculate the area.",
         "variabilization": {},
         "oer": "",
         "license": ""
