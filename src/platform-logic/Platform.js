@@ -633,7 +633,7 @@ class Platform extends React.Component {
                           {/* Left: lightning + label */}
                           <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
                             <img
-                              src=`${process.env.PUBLIC_URL}/static/images/icons/mastery-bolt.png"
+                              src={`${process.env.PUBLIC_URL}/static/images/icons/mastery-bolt.png`}
                               alt="Mastery Icon"
                               width={20}
                               height={20}
@@ -669,7 +669,7 @@ class Platform extends React.Component {
                                       ).length;
                                       return (
                                         <div style={{ display: "flex", alignItems: "center", gap: 4, whiteSpace: "nowrap" }}>
-                                          <img src=`${process.env.PUBLIC_URL}/static/images/icons/mastery-bolt.png" alt="" width={20} height={20} />
+                                          <img src={`${process.env.PUBLIC_URL}/static/images/icons/mastery-bolt.png`} alt="" width={20} height={20} />
                                           <div style={{ fontFamily: "Inter, sans-serif", fontSize: 14, fontWeight: 500 }}>
                                             {mastered}/{keys.length}
                                           </div>
@@ -765,7 +765,7 @@ class Platform extends React.Component {
 
                                 {/* Avatar rider on progress bar */}
                                 <img
-                                  src=`${process.env.PUBLIC_URL}/static/images/icons/avatar_progress_bar.svg" 
+                                  src={`${process.env.PUBLIC_URL}/static/images/icons/avatar_progress_bar.svg`} 
                                   alt=""    
                                   style={{
                                     position: "absolute",
@@ -799,7 +799,7 @@ class Platform extends React.Component {
                             }
                           >
                             <img
-                              src=`${process.env.PUBLIC_URL}/static/images/icons/information-icon.png"
+                              src={`${process.env.PUBLIC_URL}/static/images/icons/information-icon.png`}
                               alt="Info"
                               width={20}
                               height={20}
@@ -885,7 +885,7 @@ class Platform extends React.Component {
                 }}
               >
                 <img
-                  src=`${process.env.PUBLIC_URL}/static/images/icons/completion_avatar.png"
+                  src={`${process.env.PUBLIC_URL}/static/images/icons/completion_avatar.png"`}
                   alt="Completion Avatar"
                   width={120}
                 />
