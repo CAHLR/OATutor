@@ -101,6 +101,9 @@ const styles = theme => ({
         fontSize: 22,
         fontWeight: 700,
         marginTop: 0,
+        display: 'flex',
+        alignItems: 'center',
+        gap: 8,
     },
     problemBody: {
         fontSize: 18,
