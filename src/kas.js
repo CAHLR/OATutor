@@ -1895,8 +1895,15 @@ _.extend(Expr.prototype, {
             var useFloats = i % 2 === 0;
 
             _.each(varList, function(v) {
-                vars[v] = useFloats ? randomFloat(-range, range)
+                // ahaim:
+                // We clamp the range to avoid a precision issue with function
+                // exponents, but this should eventually be replaced with a
+                // proper solution to mitigate precision calculations altogether.
+                var value = useFloats ? randomFloat(-range, range)
                                     : _.random(-range, range);
+                if (value > 250) value = 250;
+                if (value < -250) value = -250;
+                vars[v] = value;
             });
 
             var equal;
