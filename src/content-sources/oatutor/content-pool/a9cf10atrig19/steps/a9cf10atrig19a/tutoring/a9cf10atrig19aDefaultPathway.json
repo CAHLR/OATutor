@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Identity",
-        "text": "$$cscx=\\frac{1}{sinx}$$, $$secx=\\frac{1}{cosx}$$, $$t$$",
+        "text": "$$\\csc(x)=\\frac{1}{\\sin(x)}, \\$$ $$\\sec(x)=\\frac{1}{\\cos(x)}$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -16,7 +16,7 @@
             "a9cf10atrig19a-h1"
         ],
         "title": "Substitute",
-        "text": "Substitute identities into $$\\operatorname{tanx}\\left(\\frac{1}{{\\operatorname{csc}\\left(x\\right)}^2}+\\frac{1}{{\\operatorname{sec}\\left(x\\right)}^2}\\right) \\frac{1+tanx}{1+cotx}-\\frac{1}{cos^2\\left(x\\right)}$$.",
+        "text": "Substitute identities into $$\\tan(x)\\left(\\frac{1}{\\csc(x)**2}+\\frac{1}{\\sec(x)**2}\\right)\\left(\\frac{1+\\tan(x)}{1+\\cot(x)}\\right)-\\frac{1}{\\cos(x)**2}.$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -28,7 +28,7 @@
             "a9cf10atrig19a-h2"
         ],
         "title": "Simplify",
-        "text": "$$\\operatorname{tanx}\\left(sin^2\\left(x\\right)+cos^2\\left(x\\right)\\right) \\frac{1+tanx}{1+cotx}-\\frac{1}{{ccos^2eft(x\\right)}=\\frac{\\operatorname{tanx}\\left(1+tanx\\right)}{1+cotx}-\\frac{1}{cos^2\\left(x\\right)}$$",
+        "text": "$$\\tan(x)\\left(\\sin**2(x)+\\cos**2(x)\\right)\\left(\\frac{1+\\tan(x)}{1+\\cot(x)}\\right)-\\frac{1}{\\cos(x)**2}=\\tan(x)\\left(\\frac{1+\\tan(x)}{1+\\cot(x)}\\right)-\\frac{1}{\\cos(x)**2}$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -40,7 +40,7 @@
             "a9cf10atrig19a-h3"
         ],
         "title": "Distribute",
-        "text": "$$\\frac{tanx+{\\operatorname{tanx}\\left(x\\right)}^2}{1+cotx}-\\frac{1}{cos^2\\left(x\\right)}$$",
+        "text": "$$\\frac{\\tan(x)+\\tan**2(x)}{1+\\cot(x)}-\\frac{1}{\\cos(x)**2}$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -52,7 +52,7 @@
             "a9cf10atrig19a-h4"
         ],
         "title": "Identity",
-        "text": "$$\\frac{1}{cos^2\\left(x\\right)}={\\operatorname{sec}\\left(x\\right)}^2=1+tan^2\\left(x\\right)$$",
+        "text": "$$\\csc(x)=\\frac{1}{\\sin(x)}, \\$$ $$\\sec(x)=\\frac{1}{\\cos(x)}$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -64,7 +64,7 @@
             "a9cf10atrig19a-h5"
         ],
         "title": "Substitute",
-        "text": "Substitute identity into $$\\frac{tanx+{\\operatorname{tanx}\\left(x\\right)}^2}{1+cotx}-\\frac{1}{cos^2\\left(x\\right)}$$.",
+        "text": "Substitute an identity into $$\\frac{\\tan(x)+\\tan**2(x)}{1+\\cot(x)}-\\frac{1}{\\cos(x)**2}.$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -76,7 +76,7 @@
             "a9cf10atrig19a-h6"
         ],
         "title": "Simplify",
-        "text": "$$\\frac{tanx+{\\operatorname{tanx}\\left(x\\right)}^2}{1+cotx}-{\\operatorname{sec}\\left(x\\right)}^2=\\frac{tanx+{\\operatorname{tanx}\\left(x\\right)}^2}{1+cotx}-1+tan^2\\left(x\\right)$$",
+        "text": "$$\\frac{\\tan(x)+\\tan**2(x)}{1+\\cot(x)}-\\sec(x)**2=\\frac{\\tan(x)+\\tan**2(x)}{1+\\cot(x)}-\\left(1+\\tan**2(x)\\right)$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -88,7 +88,7 @@
             "a9cf10atrig19a-h7"
         ],
         "title": "Rewrite",
-        "text": "Rewrite $$cotx=\\frac{1}{tanx}$$ and multiplify denominator by its reciprocal, $$\\frac{tanx}{tanx+1}$$, to get: $$\\frac{tan^2\\left(x\\right)+{ttan^3eft(x\\right)}{tanx+1}$$",
+        "text": "Rewrite $$\\cot(x)=\\frac{1}{\\tan(x)}$$ and multiply the denominator by its reciprocal, $$\\frac{\\tan(x)}{\\tan(x)}, $$ to get $$\\frac{\\tan(x)**2+\\tan(x)**3}{\\tan(x)+1}.$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -112,7 +112,7 @@
             "a9cf10atrig19a-h9"
         ],
         "title": "Simplify",
-        "text": "$$\\frac{tan^2\\left(x\\right)-{ttan^3eft(x\\right)}{tanx+1}-\\frac{tanx+{tantan^3t(x\\right)+1+{tan\\ltan^2x\\right)}{tanx+1}=-1$$",
+        "text": "$$\\frac{\\tan(x)**2+\\tan(x)**3}{\\tan(x)+1}-\\left(1+\\tan**2(x)\\right)$$",
         "variabilization": {},
         "oer": "",
         "license": ""
