@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a0ec58fterminology8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of Probability",
+        "text": "The probability of any outcome in the sample space occuring is the long-term relative frequency of that oucome. Effectively, to find the probability of an event, P(event), we need to find the size of that event (how many outcomes are in it) and divide that by the size of the sample space (how many outcomes are in it).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0ec58fterminology8a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a0ec58fterminology8a-h1"
+        ],
+        "title": "Size of C",
+        "text": "What is the size of C? Effectively, how many bags of confetti are in the sample space?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0ec58fterminology8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$42$$"
+        ],
+        "dependencies": [
+            "a0ec58fterminology8a-h2"
+        ],
+        "title": "Size of Sample Space",
+        "text": "What is the size of the sample space? Effectively, how many total party favors were there?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a0ec58fterminology8a-h3-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$42$$"
+                ],
+                "dependencies": [],
+                "title": "Size of Sample Space",
+                "text": "What is $$12+15+10+5$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a0ec58fterminology8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{5}{42}$$"
+        ],
+        "dependencies": [
+            "a0ec58fterminology8a-h3"
+        ],
+        "title": "Determining P(C)",
+        "text": "What is P(C), or what is the size of C divided by the size of the sample size?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

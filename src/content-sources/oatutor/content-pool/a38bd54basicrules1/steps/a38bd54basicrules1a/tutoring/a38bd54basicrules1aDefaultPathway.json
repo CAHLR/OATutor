@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a38bd54basicrules1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The Addition Rule",
+        "text": "We note that P(A AND B) $$=$$ $$0$$. By definition, this means that A and B are mutually exclusive. For two mutually exclusive events, we note that P(A OR $$B)=P\\left(A\\right)+P\\left(B\\right)$$. We want to find the probability that Kluas doesn't choose A or B. Therefore, we want to find 1-P(A OR $$B)=1-P\\left(A\\right)+P\\left(B\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a38bd54basicrules1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.05$$"
+        ],
+        "dependencies": [
+            "a38bd54basicrules1a-h1"
+        ],
+        "title": "The Addition Rule Applied",
+        "text": "What is the probability that Klaus chooses neither New Zealand nor Alaska?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a38bd54basicrules1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.05$$"
+        ],
+        "dependencies": [
+            "a38bd54basicrules1a-h2"
+        ],
+        "title": "The Addition Rule Applied",
+        "text": "What is $$1-0.6+0.35$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a502645sqroot7a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [],
+        "title": "Determining the Square Roots",
+        "text": "What number times itself yields 9?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a502645sqroot7a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a502645sqroot7a-h1"
+        ],
+        "title": "Determining the Square Roots",
+        "text": "What number times itself yields 16?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a502645sqroot7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a502645sqroot7a-h1",
+            "a502645sqroot7a-h2"
+        ],
+        "title": "Simplify",
+        "text": "In the end, we are left with $$3+4$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

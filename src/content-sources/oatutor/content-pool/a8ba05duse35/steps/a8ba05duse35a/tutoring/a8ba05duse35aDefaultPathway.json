@@ -1,0 +1,164 @@
+[
+    {
+        "id": "a8ba05duse35a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using PEMDAS",
+        "text": "The Order of Operations, PEMDAS, is Parenthese, Exponents, Multiplication, Division, Addition, and Subtraction.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05duse35a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a8ba05duse35a-h1"
+        ],
+        "title": "P-Parentheses",
+        "text": "Are there any parentheses?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a8ba05duse35a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12$$"
+        ],
+        "dependencies": [
+            "a8ba05duse35a-h2"
+        ],
+        "title": "First Operation",
+        "text": "What is $$9+3$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05duse35a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$48$$"
+        ],
+        "dependencies": [
+            "a8ba05duse35a-h3"
+        ],
+        "title": "Second Operation",
+        "text": "What is $$4$$ times the result of the first operation (the value in the inner parentheses)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05duse35a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a8ba05duse35a-h4"
+        ],
+        "title": "E-Exponents",
+        "text": "Are there any exponents?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a8ba05duse35a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$125$$"
+        ],
+        "dependencies": [
+            "a8ba05duse35a-h5"
+        ],
+        "title": "Third Operation",
+        "text": "What is $$5^3$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05duse35a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a8ba05duse35a-h6"
+        ],
+        "title": "MD- Multiplication or Division",
+        "text": "Is there any multiplication or division?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a8ba05duse35a-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a8ba05duse35a-h7"
+        ],
+        "title": "AS- Addition or Subtraction",
+        "text": "Is there any addition or subtraction?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a8ba05duse35a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$86$$"
+        ],
+        "dependencies": [
+            "a8ba05duse35a-h8"
+        ],
+        "title": "Fourth Operation",
+        "text": "What is $$9+125-48$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

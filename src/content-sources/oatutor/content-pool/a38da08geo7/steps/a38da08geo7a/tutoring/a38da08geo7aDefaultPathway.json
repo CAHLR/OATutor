@@ -1,0 +1,112 @@
+[
+    {
+        "id": "a38da08geo7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Define k",
+        "text": "Scaling by factor k multiplies volumes by $$k^3$$ and areas by $$k^2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a38da08geo7a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$${10}^{\\left(-\\frac{2}{3}\\right)}$$"
+        ],
+        "dependencies": [
+            "a38da08geo7a-h1"
+        ],
+        "title": "Define k",
+        "text": "$$1000k^3=10$$. What is k?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$${10}^{\\left(-\\frac{2}{3}\\right)}$$",
+            "$${10}^{\\left(-2\\right)}$$"
+        ],
+        "subHints": [
+            {
+                "id": "a38da08geo7a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Define k",
+                "text": "$$k^3=\\frac{10}{1000}={10}^{\\left(-2\\right)}$$, so $$k={10}^{\\left(-\\frac{2}{3}\\right)}$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a38da08geo7a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$${10}^{\\left(-\\frac{4}{3}\\right)}$$"
+        ],
+        "dependencies": [
+            "a38da08geo7a-h2"
+        ],
+        "title": "Computation",
+        "text": "What is $$k^2$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$${10}^{\\left(-\\frac{4}{3}\\right)}$$",
+            "$${10}^{\\left(-\\frac{3}{4}\\right)}$$"
+        ],
+        "subHints": [
+            {
+                "id": "a38da08geo7a-h3-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Computation",
+                "text": "$$k^2={10}^{\\left(-\\frac{4}{3}\\right)}$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a38da08geo7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a38da08geo7a-h3"
+        ],
+        "title": "Computation",
+        "text": "New surface $$area=250k^2=250\\times{10}^{\\left(-\\frac{4}{3}\\right)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a38da08geo7a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$11.6$$"
+        ],
+        "dependencies": [
+            "a38da08geo7a-h4"
+        ],
+        "title": "Computation",
+        "text": "What is the approximate value of the new surface area?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$10$$",
+            "$$11.6$$",
+            "$$12.5$$"
+        ]
+    }
+]

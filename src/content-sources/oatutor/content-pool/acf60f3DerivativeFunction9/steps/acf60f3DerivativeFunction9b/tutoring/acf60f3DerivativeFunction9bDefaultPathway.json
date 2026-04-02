@@ -1,0 +1,70 @@
+[
+    {
+        "id": "acf60f3DerivativeFunction9b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Second Derivative",
+        "text": "Use $$f''(x)=\\lim_{h\\to0} \\frac{\\operatorname{f'}\\left(x+h\\right)-\\operatorname{f'}\\left(x\\right)}{h}$$ to find Second Derivative",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acf60f3DerivativeFunction9b-h2",
+        "type": "hint",
+        "dependencies": [
+            "acf60f3DerivativeFunction9b-h1"
+        ],
+        "title": "Derivative Function",
+        "text": "We will get $$f''(x)=\\lim_{h\\to0} \\frac{2\\left(x+h\\right)-2x}{h}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acf60f3DerivativeFunction9b-h3",
+        "type": "hint",
+        "dependencies": [
+            "acf60f3DerivativeFunction9b-h2"
+        ],
+        "title": "Expand",
+        "text": "Expand $$\\frac{2\\left(x+h\\right)-2x}{h}$$ and Simplify",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acf60f3DerivativeFunction9b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\lim_{h\\to0} 2$$"
+        ],
+        "dependencies": [
+            "acf60f3DerivativeFunction9b-h3"
+        ],
+        "title": "Simplify",
+        "text": "What will get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\lim_{h\\to0} 2x$$",
+            "$$\\lim_{h\\to0} 2+h$$",
+            "$$\\lim_{h\\to0} 2$$"
+        ]
+    },
+    {
+        "id": "acf60f3DerivativeFunction9b-h5",
+        "type": "hint",
+        "dependencies": [
+            "acf60f3DerivativeFunction9b-h4"
+        ],
+        "title": "Evaluate the Limit",
+        "text": "To get a final answer, Evaluate the Limit by inserting h-->0 $$=$$ $$h=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

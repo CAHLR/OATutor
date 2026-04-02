@@ -1,0 +1,101 @@
+[
+    {
+        "id": "a0ec58fterminology24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of Probability",
+        "text": "The probability of any outcome in the sample space occuring is the long-term relative frequency of that oucome. Effectively, to find the probability of an event, P(event), we need to find the size of that event (how many outcomes are in it) and divide that by the size of the sample space (how many outcomes are in it).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0ec58fterminology24a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a0ec58fterminology24a-h1"
+        ],
+        "title": "Number of Faces with Prime Number of Dots",
+        "text": "How many faces of a fair, six-sided die has a prime number of dots? In other words, how many numbers in the range one through six inclusive, are prime? Please note that prime numbers are greater than $$1$$ such that the only divisors of that number are $$1$$ and itself.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a0ec58fterminology24a-h2-s1",
+                "type": "scaffold",
+                "problemType": "MultipleChoice",
+                "answerType": "string",
+                "hintAnswer": [
+                    "$$2$$, $$3$$, $$2005$$"
+                ],
+                "dependencies": [],
+                "title": "Determining the Prime Numbers",
+                "text": "What is the list of prime numbers from one through six inclusive?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+                "choices": [
+                    "$$2$$, $$3$$, $$5$$",
+                    "$$1$$, $$2$$, $$3$$, $$5$$",
+                    "$$1$$, $$2$$, $$3$$, $$4$$, $$5$$, $$6$$",
+                    "$$2$$, $$3$$, $$4$$, $$5$$, $$6$$"
+                ]
+            },
+            {
+                "id": "a0ec58fterminology24a-h2-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$3$$"
+                ],
+                "dependencies": [],
+                "title": "Number of Faces with Prime Number of Dots",
+                "text": "Now, how many numbers are in the list of the prime numbers from one through six inclusive? How many numbers are in the list you just answered?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a0ec58fterminology24a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "a0ec58fterminology24a-h2"
+        ],
+        "title": "Number of Total Faces",
+        "text": "How many faces does a fair, six-sided die have?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0ec58fterminology24a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{6}$$"
+        ],
+        "dependencies": [
+            "a0ec58fterminology24a-h3"
+        ],
+        "title": "Determining Probability of Prime Number of Dots",
+        "text": "What is the probability of rolling a prime number of dots with a fair, six-sided die? In other words, what is the number of faces with a prime number of dots divided by the total number of faces on the die?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,140 @@
+[
+    {
+        "id": "ab846b4standard14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula",
+        "text": "The formula for the $$z-score$$ is $$z=\\frac{x-\u03bc}{\\sigma}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab846b4standard14a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$176$$"
+        ],
+        "dependencies": [
+            "ab846b4standard14a-h1"
+        ],
+        "title": "Identify $$x$$",
+        "text": "What is $$x$$ in this scenario?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab846b4standard14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab846b4standard14a-h2"
+        ],
+        "title": "Z-score",
+        "text": "Find the $$z-score$$ of $$x$$, when $$x=176$$ and X~N(170,6.28) as given in the question.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab846b4standard14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ab846b4standard14a-h3"
+        ],
+        "title": "Identify \u03bc and \u03c3",
+        "text": "We know X~N(\u03bc, \u03c3). In this problem, X~N(170,6.28). We need to identify what is \u03bc and \u03c3.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab846b4standard14a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$170$$"
+        ],
+        "dependencies": [
+            "ab846b4standard14a-h4"
+        ],
+        "title": "Identify \u03bc",
+        "text": "The first argument in X~N(170,6.28) is \u03bc. What is \u03bc?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab846b4standard14a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6.28$$"
+        ],
+        "dependencies": [
+            "ab846b4standard14a-h4"
+        ],
+        "title": "Identify \u03c3",
+        "text": "The second argument in X~N(170,6.28) is \u03c3. What is \u03c3?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab846b4standard14a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ab846b4standard14a-h5",
+            "ab846b4standard14a-h6"
+        ],
+        "title": "Calculate $$z-score$$",
+        "text": "The formula for the $$z-score$$ is $$z=\\frac{x-\u03bc}{\\sigma}$$. Substitute the variables in the formula for numerical values, and solve for $$z$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab846b4standard14a-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$z=\\frac{176-170}{6.28}$$"
+        ],
+        "dependencies": [
+            "ab846b4standard14a-h7"
+        ],
+        "title": "Substitution",
+        "text": "We know $$x=176$$, $$\u03bc=170$$, and $$\u03c3=6.28$$. What is $$z$$ after substituting these variables?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$z=\\frac{176-170}{6.28}$$",
+            "$$z=\\frac{170-6.28}{176}$$",
+            "$$z=\\frac{176-6.28}{170}$$",
+            "$$z=\\frac{170-176}{6.28}$$"
+        ]
+    },
+    {
+        "id": "ab846b4standard14a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.96$$"
+        ],
+        "dependencies": [
+            "ab846b4standard14a-h8"
+        ],
+        "title": "Solve for $$z$$",
+        "text": "What is $$\\frac{176-170}{6.28}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

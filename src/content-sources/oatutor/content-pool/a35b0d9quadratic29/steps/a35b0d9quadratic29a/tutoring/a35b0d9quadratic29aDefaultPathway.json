@@ -1,0 +1,121 @@
+[
+    {
+        "id": "a35b0d9quadratic29a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determing the Domain",
+        "text": "The domain off all quadratic functions is all real numbers.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a35b0d9quadratic29a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a35b0d9quadratic29a-h1"
+        ],
+        "title": "Finding the Vertex",
+        "text": "Do $$\\frac{-b}{2} a$$ where $$b$$ is the $$x$$ coefficient and a is the $$x^2$$ coefficient to find the $$x$$ value of the vertex",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a35b0d9quadratic29a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a35b0d9quadratic29a-h2"
+        ],
+        "title": "Subsituting in the x-value",
+        "text": "Substitute the $$x$$ value you just found into the original function to get the $$y$$ value",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a35b0d9quadratic29a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(-3,-5)$$"
+        ],
+        "dependencies": [
+            "a35b0d9quadratic29a-h3"
+        ],
+        "title": "Determining the Vertex",
+        "text": "What is the vertex?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$(-3,-5)$$",
+            "$$(-5,-3)$$",
+            "$$(3,-6)$$",
+            "(3/2, 2)"
+        ]
+    },
+    {
+        "id": "a35b0d9quadratic29a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a35b0d9quadratic29a-h4"
+        ],
+        "title": "Determining the Coefficient",
+        "text": "What is the coefficient of the expression?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a35b0d9quadratic29a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a35b0d9quadratic29a-s1"
+        ],
+        "title": "Identifying the Shape",
+        "text": "If the coefficient is positive, it opens upwards.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a35b0d9quadratic29a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Minimum"
+        ],
+        "dependencies": [
+            "a35b0d9quadratic29a-h5"
+        ],
+        "title": "Interpreting the Shape",
+        "text": "Does this mean that the vertex will be a Minimum or Maximum?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Minimum",
+            "Maximum"
+        ]
+    },
+    {
+        "id": "a35b0d9quadratic29a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a35b0d9quadratic29a-h6"
+        ],
+        "title": "Identifying the Range",
+        "text": "The range is everything above the Minimum $$y$$ value",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

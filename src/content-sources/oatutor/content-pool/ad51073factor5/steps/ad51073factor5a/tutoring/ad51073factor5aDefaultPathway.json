@@ -1,0 +1,92 @@
+[
+    {
+        "id": "ad51073factor5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Difference of Squares Formula",
+        "text": "Notice that the problem is a difference of squares and can be factored into the $$\\operatorname{form}\\left(k a+b\\right) \\left(k a-b\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad51073factor5a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$25x^2$$"
+        ],
+        "dependencies": [
+            "ad51073factor5a-h1"
+        ],
+        "title": "Identify Difference of Squares Component",
+        "text": "What is $$a^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad51073factor5a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$64$$"
+        ],
+        "dependencies": [
+            "ad51073factor5a-h2"
+        ],
+        "title": "Identify Difference of Squares Component",
+        "text": "What is $$b^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad51073factor5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5x$$"
+        ],
+        "dependencies": [
+            "ad51073factor5a-h3"
+        ],
+        "title": "Solve for a",
+        "text": "What is a?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad51073factor5a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "ad51073factor5a-h4"
+        ],
+        "title": "Solve for $$b$$",
+        "text": "what is $$b$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad51073factor5a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ad51073factor5a-h5"
+        ],
+        "title": "Putting Everything Together",
+        "text": "Put a and $$b$$ in the form $$\\left(a+b\\right) \\left(a-b\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

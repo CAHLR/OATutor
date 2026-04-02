@@ -1,0 +1,46 @@
+[
+    {
+        "id": "ad1dfa0problem18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Linear Speed Formula",
+        "text": "Use formula $$v=\\omega r$$ to calculate the linear speed in this context.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad1dfa0problem18a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5236$$"
+        ],
+        "dependencies": [
+            "ad1dfa0problem18a-h1"
+        ],
+        "title": "Unit Conversion",
+        "text": "Since $$1$$ revolution is equal to $$2\\pi$$ radians and $$1$$ minute is $$60$$ seconds, $$\\frac{rad}{s}=\\frac{2\\frac{rev}{min} \\pi}{60}$$. Now convert $$50000$$ $$\\frac{rev}{min}$$ to $$\\frac{rad}{s}$$. (round to the nearest integer)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad1dfa0problem18a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.524$$"
+        ],
+        "dependencies": [
+            "ad1dfa0problem18a-h2"
+        ],
+        "title": "Calculate the Linear Speed",
+        "text": "What is $$v=\\omega r=0.1\\frac{5236rad}{s} m$$ in $$\\frac{km}{s}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

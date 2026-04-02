@@ -1,0 +1,347 @@
+[
+    {
+        "id": "aef8b03optimize12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Constraint Equation",
+        "text": "First, find the constraint equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize12a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2l+h$$ is less than or equal to $$62$$"
+        ],
+        "dependencies": [
+            "aef8b03optimize12a-h1"
+        ],
+        "title": "Constraint Equation",
+        "text": "Let l denote the length, w denote the width, and $$h$$ denote the height. Choose the correct equation representing the constraints that the \"base of the suitcase is square\" and that \"the length + width + height of the box must be less than or equal to $$62$$ in.\"",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$l^2+h$$ is less than or equal to $$62$$",
+            "$$2l+h$$ is less than or equal to $$62$$",
+            "$$l+w+h$$ is less than $$62$$"
+        ]
+    },
+    {
+        "id": "aef8b03optimize12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aef8b03optimize12a-h2"
+        ],
+        "title": "Subsitute Variables",
+        "text": "In order to rewrite the constraint equation in terms of only one variable, we need to find a substitute for the other variables. Rewrite the equation for the volume in terms of only $$h$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize12a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Equals"
+        ],
+        "dependencies": [
+            "aef8b03optimize12a-h3"
+        ],
+        "title": "Square Space",
+        "text": "If the base of the box is a square, that means that $$l___w$$. Fill in the blank.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "Is greater than",
+            "Is less than",
+            "Equals"
+        ]
+    },
+    {
+        "id": "aef8b03optimize12a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$h l^2$$"
+        ],
+        "dependencies": [
+            "aef8b03optimize12a-h4"
+        ],
+        "title": "Rewrite the Equation",
+        "text": "If $$l=w$$ and the volume of any rectangular prism is $$V=l w h$$, how can we rewrite the equation? $$V=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$h^2+l^2+w^2$$",
+            "$$h l^2$$",
+            "$$l w h$$"
+        ]
+    },
+    {
+        "id": "aef8b03optimize12a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$31-\\frac{1}{2} h$$"
+        ],
+        "dependencies": [
+            "aef8b03optimize12a-h5"
+        ],
+        "title": "Find the Length",
+        "text": "We need to represent the volume in terms of only $$h$$. If $$2l$$ + $$h$$ $$=$$ $$62$$, $$l=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$V=h$$",
+            "$$h$$",
+            "$$31-\\frac{1}{2} h$$",
+            "$$\\left(31-\\frac{1}{2} h\\right)^2$$"
+        ]
+    },
+    {
+        "id": "aef8b03optimize12a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$${h{\\left(31-\\frac{1}{2} h\\right)}}^2$$"
+        ],
+        "dependencies": [
+            "aef8b03optimize12a-h6"
+        ],
+        "title": "Rewrite the Equation",
+        "text": "If V $$=$$ $$l^2 h$$ and l $$=$$ $$31-\\frac{1}{2} h$$, then what is V in terms of only $$h$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$${h{\\left(31-\\frac{1}{2} h\\right)}}^2$$",
+            "$$h{\\left(31-\\frac{1}{2} h\\right)}$$",
+            "$$h \\sqrt{31-\\frac{1}{2} h}$$"
+        ]
+    },
+    {
+        "id": "aef8b03optimize12a-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$h$$ is less than or equal to $$62$$"
+        ],
+        "dependencies": [
+            "aef8b03optimize12a-h7"
+        ],
+        "title": "Solve for $$h$$",
+        "text": "Solve for $$h$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$h$$ is less than or equal to $$62$$",
+            "$$h$$ is greater than or equal to $$31$$",
+            "$$h$$ is less than or equal to $$31$$"
+        ]
+    },
+    {
+        "id": "aef8b03optimize12a-h9",
+        "type": "hint",
+        "dependencies": [
+            "aef8b03optimize12a-h8"
+        ],
+        "title": "Domain",
+        "text": "Next, find the domain for consideration.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize12a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(0,62]"
+        ],
+        "dependencies": [
+            "aef8b03optimize12a-h9"
+        ],
+        "title": "h's Domain",
+        "text": "Considering the fact that we need the height to be a positive number and that $$h$$ must be less than or equal to $$62$$, what is the range of $$h$$. Write it in interval notation with no spaces.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize12a-h11",
+        "type": "hint",
+        "dependencies": [
+            "aef8b03optimize12a-h10"
+        ],
+        "title": "Critical Points",
+        "text": "Next, find the critical points.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize12a-h12",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "aef8b03optimize12a-h11"
+        ],
+        "title": "Find where slope of $$V(h)=0$$",
+        "text": "When is the slope of V(h) equal to 0?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize12a-h13",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{4} h^2-62h+961$$"
+        ],
+        "dependencies": [
+            "aef8b03optimize12a-h12"
+        ],
+        "title": "Find the Derivative of V(h)",
+        "text": "What is the derivative of V(h)? In other words, $$V'(h)=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize12a-h14",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{62}{3}$$ and $$62$$"
+        ],
+        "dependencies": [
+            "aef8b03optimize12a-h13"
+        ],
+        "title": "Find where slope of $$V(h)=0$$",
+        "text": "When is $$V'(h)=\\frac{3}{4} h^2-62h+961=0$$? $$h=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\frac{62}{3}$$ and $$62$$",
+            "$$3$$",
+            "$$62$$",
+            "$$31$$ and $$62$$"
+        ]
+    },
+    {
+        "id": "aef8b03optimize12a-h15",
+        "type": "hint",
+        "dependencies": [
+            "aef8b03optimize12a-h14"
+        ],
+        "title": "Endpoints",
+        "text": "Lastly, compare V(h) at the endpoints and critical point to find out which $$h-value$$ produces the greatest volume.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize12a-h16",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "aef8b03optimize12a-h15"
+        ],
+        "title": "Left Endpoint",
+        "text": "What does V equal at the left most endpoint?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize12a-h17",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "aef8b03optimize12a-h16"
+        ],
+        "title": "Left Endpoint",
+        "text": "What is $$V(0)=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize12a-h18",
+        "type": "hint",
+        "dependencies": [
+            "aef8b03optimize12a-h17"
+        ],
+        "title": "Right Endpoint",
+        "text": "What does V equal at the right most endpoint?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize12a-h19",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "aef8b03optimize12a-h18"
+        ],
+        "title": "Critical Point",
+        "text": "What is $$V(62)=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize12a-h20",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{62}{3}$$"
+        ],
+        "dependencies": [
+            "aef8b03optimize12a-h19"
+        ],
+        "title": "Find $$h$$ for the Greatest V",
+        "text": "Which $$h$$ value has the greatest V?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

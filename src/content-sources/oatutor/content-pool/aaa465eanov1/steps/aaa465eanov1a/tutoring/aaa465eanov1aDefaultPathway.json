@@ -1,0 +1,264 @@
+[
+    {
+        "id": "aaa465eanov1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "What is the sum of the values in the jth group?",
+        "text": "Sum of value in each column.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaa465eanov1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$16.5$$"
+        ],
+        "dependencies": [
+            "aaa465eanov1a-h1"
+        ],
+        "title": "Sum of value for group n1.",
+        "text": "Add up the value in column n1.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "aaa465eanov1a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$15$$"
+                ],
+                "dependencies": [],
+                "title": "Sum of value for group n2.",
+                "text": "Add up the value in column n2.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            },
+            {
+                "id": "aaa465eanov1a-h2-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$15.5$$"
+                ],
+                "dependencies": [],
+                "title": "Sum of value for group n3.",
+                "text": "Add up the value in column n3.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "aaa465eanov1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aaa465eanov1a-h2"
+        ],
+        "title": "Compute the Sum of Squares representing variation among the different samples. ($\\SS_{between}$)",
+        "text": "$\\SS_{between}$ $$=$$ $\\sum[\\frac{(\\sum s_j)**2}{n_j}] - \\frac{(\\sum s_j)**2}{n}$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaa465eanov1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.2458$$"
+        ],
+        "dependencies": [
+            "aaa465eanov1a-h3"
+        ],
+        "title": "$\\frac{s_1 **2}{4} + \\frac{s_2 ** 2}{3} + \\frac{s_3 **3}{3} - $$\\frac{(16.5$$ + $$15$$ + 15.5)**2}{10}$",
+        "text": "Round to the fourth place after the decimal.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaa465eanov1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aaa465eanov1a-h4"
+        ],
+        "title": "Compute the Sum of Squares representing variation within samples due to chance. ($\\SS_{within})",
+        "text": "$\\SS_{within} $$=$$ \\SS_{total} - \\SS_{between}$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaa465eanov1a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$23.1$$"
+        ],
+        "dependencies": [
+            "aaa465eanov1a-h5"
+        ],
+        "title": "Compute $\\SS_{total} $$=$$ \\sum $$x^2$$ - \\frac{(\\sum x) ** 2}{n}$",
+        "text": "$(5**2 + $${4.5}^2$$ + $$4^2$$ + $$3^2$$ + $${3.5}^2$$ + $$7^2$$ + $${4.5}^2$$ + $$8^2$$ + $$4^2$$ + 3.5**2) - \\frac{(5 + $$4.5$$ + $$4$$ + $$3$$ + $$3.5$$ + $$7$$ + $$4.5$$ + $$8$$ + $$4$$ + 3.5)**2}{4+3+3} $",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaa465eanov1a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20.8542$$"
+        ],
+        "dependencies": [
+            "aaa465eanov1a-h6"
+        ],
+        "title": "$\\SS_{total} $$=$$ \\sum $$x^2$$ - \\frac{(\\sum x) ** 2}{n}$",
+        "text": "$$23.1$$ - $$2.2458$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaa465eanov1a-h8",
+        "type": "hint",
+        "dependencies": [
+            "aaa465eanov1a-h7"
+        ],
+        "title": "What is the Degree of Freedom of Factor (Between)?",
+        "text": "$df_{numerator}$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaa465eanov1a-h9",
+        "type": "hint",
+        "dependencies": [
+            "aaa465eanov1a-h8"
+        ],
+        "title": "What is the Degree of Freedom of Error (within)?",
+        "text": "$df_{denominator}$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaa465eanov1a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [
+            "aaa465eanov1a-h9"
+        ],
+        "title": "$df_{denominator} $$=$$ $$n$$ - k$",
+        "text": "$$10$$ total data - $$3$$ groups",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaa465eanov1a-h11",
+        "type": "hint",
+        "dependencies": [
+            "aaa465eanov1a-h10"
+        ],
+        "title": "Compute the Mean Square of Factor (Between)",
+        "text": "Round to the fourth place after the decimal.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaa465eanov1a-h12",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.1229$$"
+        ],
+        "dependencies": [
+            "aaa465eanov1a-h11"
+        ],
+        "title": "MS(Factor) $$=$$ SS(Factor) / (k - 1)",
+        "text": "$$2.2458$$ / $$2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaa465eanov1a-h13",
+        "type": "hint",
+        "dependencies": [
+            "aaa465eanov1a-h12"
+        ],
+        "title": "Compute the Mean Square of Error (Within)",
+        "text": "Round to the fourth place after the decimal.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaa465eanov1a-h14",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.9792$$"
+        ],
+        "dependencies": [
+            "aaa465eanov1a-h13"
+        ],
+        "title": "MS(Error) $$=$$ SS(Error) / (n - k)",
+        "text": "$$20.8542$$ / $$7$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaa465eanov1a-h15",
+        "type": "hint",
+        "dependencies": [
+            "aaa465eanov1a-h14"
+        ],
+        "title": "Compute the F-statistics",
+        "text": "Round to the fourth place after the decimal.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaa465eanov1a-h16",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.3769$$"
+        ],
+        "dependencies": [
+            "aaa465eanov1a-h15"
+        ],
+        "title": "F $$=$$ MS(Factor) / MS(Error)",
+        "text": "$$1.1229$$ / $$2.9792$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

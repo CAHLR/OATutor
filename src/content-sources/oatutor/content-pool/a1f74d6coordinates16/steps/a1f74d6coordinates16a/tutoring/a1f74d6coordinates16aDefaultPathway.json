@@ -1,0 +1,97 @@
+[
+    {
+        "id": "a1f74d6coordinates16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Coordinate Format",
+        "text": "The ordered pairs are given in coordinate format with (x,y). The $$x$$ value will be plugged into the $$x$$ variable of the given equation and the same for the $$y$$ value in the $$y$$ variable.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1f74d6coordinates16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1f74d6coordinates16a-h1"
+        ],
+        "title": "Plugging in Ordered Pairs",
+        "text": "In order to check which ordered pairs are solutions, plug in each option into the given equation to check if it outputs the right answer.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1f74d6coordinates16a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12$$"
+        ],
+        "dependencies": [
+            "a1f74d6coordinates16a-h2"
+        ],
+        "title": "Plugging in $$(4,0)$$",
+        "text": "What does the ordered pair $$(4,0)$$ output when plugged into the equation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1f74d6coordinates16a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12$$"
+        ],
+        "dependencies": [
+            "a1f74d6coordinates16a-h3"
+        ],
+        "title": "Plugging in $$(2,-3)$$",
+        "text": "What does the ordered pair $$(2,-3)$$ output when plugged into the equation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1f74d6coordinates16a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-9$$"
+        ],
+        "dependencies": [
+            "a1f74d6coordinates16a-h4"
+        ],
+        "title": "Plugging in $$(1,6)$$",
+        "text": "What does the ordered pair $$(1,6)$$ output when plugged into the equation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1f74d6coordinates16a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(4,0)$$ and $$(2,-3)$$"
+        ],
+        "dependencies": [
+            "a1f74d6coordinates16a-h5"
+        ],
+        "title": "Identifying Correct Ordered Pairs",
+        "text": "Which ordered pairs satisfy the solution to the given equation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$(4,0)$$ and $$(2,-3)$$",
+            "$$(1,6)$$ and $$(2,-3)$$",
+            "$$(4,0)$$ and $$(1,6)$$"
+        ]
+    }
+]

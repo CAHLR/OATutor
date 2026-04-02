@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a970b2ahypergeometric3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Structure of Probability Statements",
+        "text": "The structure of a probability statement is $$P(x=C)$$ where P stands for the probability, $$x$$ is the variable we are testing against and C is the constant value.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a970b2ahypergeometric3a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x$$"
+        ],
+        "dependencies": [
+            "a970b2ahypergeometric3a-h1"
+        ],
+        "title": "Determining the variable",
+        "text": "What is the variable that we are using?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$x$$",
+            "$$y$$",
+            "$$z$$",
+            "c"
+        ]
+    },
+    {
+        "id": "a970b2ahypergeometric3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a970b2ahypergeometric3a-h2"
+        ],
+        "title": "Determining the constant",
+        "text": "What is the number of vowel tiles we want in the sample?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a970b2ahypergeometric3a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$P(x=4)$$"
+        ],
+        "dependencies": [
+            "a970b2ahypergeometric3a-h3"
+        ],
+        "title": "Putting it All Together",
+        "text": "What is the probability statement written mathematically, using the variable and constant we found?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$P(x=4)$$",
+            "$$P(y=4)$$",
+            "$$P(x=3)$$",
+            "$$P(x=7)$$"
+        ]
+    }
+]

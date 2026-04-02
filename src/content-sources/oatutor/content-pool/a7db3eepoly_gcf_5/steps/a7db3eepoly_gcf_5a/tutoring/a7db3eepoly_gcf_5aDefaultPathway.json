@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a7db3eepoly_gcf_5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the GCF",
+        "text": "Look for the greatest common factor in the terms of the polynomial.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a7db3eepoly_gcf_5a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3x$$"
+        ],
+        "dependencies": [
+            "a7db3eepoly_gcf_5a-h1"
+        ],
+        "title": "Factor out the GCF",
+        "text": "$$6x^3+9x^2-12x$$",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a7db3eepoly_gcf_5a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the GCF",
+        "text": "Look for the greatest common factor in the terms of the polynomial.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a7db3eepoly_gcf_5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8y^2$$"
+        ],
+        "dependencies": [
+            "a7db3eepoly_gcf_5a-h3"
+        ],
+        "title": "Factor out the GCF",
+        "text": "$$8y^4-16y^3+24y^2$$",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a7db3eepoly_gcf_5a-h5",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the GCF",
+        "text": "Look for the greatest common factor in the terms of the polynomial.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a7db3eepoly_gcf_5a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5a b$$"
+        ],
+        "dependencies": [
+            "a7db3eepoly_gcf_5a-h5"
+        ],
+        "title": "Factor out the GCF",
+        "text": "$$15a^2 b+25a b^2-35a b$$",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a7db3eepoly_gcf_5a-h7",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the GCF",
+        "text": "Look for the greatest common factor in the terms of the polynomial.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

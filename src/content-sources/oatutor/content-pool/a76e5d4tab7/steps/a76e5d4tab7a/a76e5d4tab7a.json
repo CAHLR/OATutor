@@ -1,0 +1,12 @@
+{
+    "id": "a76e5d4tab7a",
+    "stepAnswer": [
+        "squirrel.group(\"Location\").sort(\"count\",descending=True).column(\"Location\").item(0)"
+    ],
+    "problemType": "TextBox",
+    "stepTitle": "One line of code:",
+    "stepBody": "Only use spaces if absolutely necessary. Use double quotations instead of single quotations, unless absolutely necessary.",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "$$squirrel.group(\"Location\").sort(\"count\", descending=True).column(\"Location\").item(0)$$"
+}

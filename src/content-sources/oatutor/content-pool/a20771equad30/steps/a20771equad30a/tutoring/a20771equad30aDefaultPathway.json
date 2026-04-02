@@ -1,0 +1,98 @@
+[
+    {
+        "id": "a20771equad30a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Difference of Squares",
+        "text": "Write the two factors by taking the square root of each term, using a minus sign as the operator in one factor and a plus sign as the operator in the other.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a20771equad30a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(x-5)$$ and $$x+5$$"
+        ],
+        "dependencies": [
+            "a20771equad30a-h1"
+        ],
+        "title": "Difference of Squares",
+        "text": "What are the factors?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$(x-5)$$ and $$(x-10)$$",
+            "$$x+5$$ and $$x+5$$",
+            "$$(x-5)$$ and $$x+5$$"
+        ]
+    },
+    {
+        "id": "a20771equad30a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a20771equad30a-h2"
+        ],
+        "title": "Difference of Squares",
+        "text": "Use the zero-factor property to solve each factor.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a20771equad30a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a20771equad30a-h3"
+        ],
+        "title": "Zero-Factor Property",
+        "text": "What is the solution of $$(x-5)=0$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a20771equad30a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-5$$"
+        ],
+        "dependencies": [
+            "a20771equad30a-h3"
+        ],
+        "title": "Finding Factors",
+        "text": "What is the solution of $$x+5=0$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a20771equad30a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "5, -5"
+        ],
+        "dependencies": [
+            "a20771equad30a-h4",
+            "a20771equad30a-h5"
+        ],
+        "title": "Zero-Factor Property",
+        "text": "What are the solutions?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

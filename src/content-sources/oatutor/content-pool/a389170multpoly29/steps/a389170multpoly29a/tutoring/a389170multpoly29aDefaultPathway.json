@@ -1,0 +1,104 @@
+[
+    {
+        "id": "a389170multpoly29a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To multiply a trinomial by a binomial, you need to distribute each term in the binomial across each term in the trinomial.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a389170multpoly29a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a389170multpoly29a-h1"
+        ],
+        "title": "Distribute the First Term",
+        "text": "Start by distributing the first term of the binomial, which is $$x$$, to each term in the trinomial $$x^2+3x+2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a389170multpoly29a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x^3+3x^2+2x$$"
+        ],
+        "dependencies": [
+            "a389170multpoly29a-h2"
+        ],
+        "title": "First Distribution",
+        "text": "What do you get when you multiply $$x$$ by each term in the trinomial?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a389170multpoly29a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a389170multpoly29a-h3"
+        ],
+        "title": "Distribute the Second Term",
+        "text": "Now, distribute the second term of the binomial, which is $$-4$$, to each term in the trinomial $$x^2+3x+2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a389170multpoly29a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-4x^2-12x-8$$"
+        ],
+        "dependencies": [
+            "a389170multpoly29a-h4"
+        ],
+        "title": "Second Distribution",
+        "text": "What do you get when you multiply $$-4$$ by each term in the trinomial?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a389170multpoly29a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a389170multpoly29a-h5"
+        ],
+        "title": "Combine Like Terms",
+        "text": "Now, combine the results from the two distributions to form a single polynomial.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a389170multpoly29a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x^3-x^2-10x-8$$"
+        ],
+        "dependencies": [
+            "a389170multpoly29a-h6"
+        ],
+        "title": "Final Expression",
+        "text": "What is the final expression after combining like terms?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$x^3-x^2-10x-8$$",
+            "$$x^3+3x^2+2x-4x^2-12x-8$$",
+            "$$x^3-x^2+2x-8$$"
+        ]
+    }
+]

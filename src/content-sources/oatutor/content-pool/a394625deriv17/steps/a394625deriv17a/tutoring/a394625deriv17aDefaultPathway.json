@@ -1,0 +1,89 @@
+[
+    {
+        "id": "a394625deriv17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Breaking Down the Question",
+        "text": "Write cot(x) as an expression of sin(x) and cos(x)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a394625deriv17a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\fraccos^i\\left(x\\right)n^$\\left(x\\righ$$"
+        ],
+        "dependencies": [
+            "a394625deriv17a-h1"
+        ],
+        "title": "Transform cot(x)",
+        "text": "What's cot(x)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\fraccos^i\\left(x\\right)n^$\\left(x\\righ$$",
+            "$$\\fracsin^c\\left(x\\right)os\\left(x\\right)}$$"
+        ]
+    },
+    {
+        "id": "a394625deriv17a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "cos(x)"
+        ],
+        "dependencies": [
+            "a394625deriv17a-h2"
+        ],
+        "title": "Find the Derivative of sin(x)",
+        "text": "What's the derivative of sin(x)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "cos(x)",
+            "sin(x)",
+            "$$-sin(x)$$"
+        ]
+    },
+    {
+        "id": "a394625deriv17a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-sin(x)$$"
+        ],
+        "dependencies": [
+            "a394625deriv17a-h3"
+        ],
+        "title": "Find the Derivative of cos(x)",
+        "text": "What's the derivative of cos(x)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "cos(x)",
+            "sin(x)",
+            "$$-sin(x)$$"
+        ]
+    },
+    {
+        "id": "a394625deriv17a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a394625deriv17a-h4"
+        ],
+        "title": "Apply Derivatives' Rule",
+        "text": "Apply the quotient derivative rule of composed functions to find the final solution",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

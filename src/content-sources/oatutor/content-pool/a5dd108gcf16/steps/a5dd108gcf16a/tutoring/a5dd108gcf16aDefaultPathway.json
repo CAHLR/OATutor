@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a5dd108gcf16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Look at the common factors between the two terms. We can break it down by first looking at the constant terms and then looking at the variable terms.",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5dd108gcf16a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a5dd108gcf16a-h1"
+        ],
+        "title": "GCF for Constants",
+        "text": "What is the greatest comon factor between $$8$$ and 16?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5dd108gcf16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd108gcf16a-h2"
+        ],
+        "title": "GCF for Constants Complete",
+        "text": "Since $$8$$ is a greatest factor of both $$8$$ and $$16$$, we know that the greatest common factor for the constants is $$8$$. Next, onto the variables.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5dd108gcf16a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$y^2$$"
+        ],
+        "dependencies": [
+            "a5dd108gcf16a-h3"
+        ],
+        "title": "GCF for Variables",
+        "text": "What is the greatest common factor between $$y^3$$ and $$y^2$$ in exponential form (only write $$y$$ once in your answer)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5dd108gcf16a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8y^2 \\left(y+2\\right)$$"
+        ],
+        "dependencies": [
+            "a5dd108gcf16a-h4"
+        ],
+        "title": "Factoring",
+        "text": "Now, knowing the greatest common numerical factor is $$8$$ and the greatest common variable factor is $$y^2$$, we can multiply them together to get $$8y^2$$. Now, we must factor it out of the two terms. What is the result of factoring out the 8? As in, what is the original expression $$8y^3+16y^2$$ equivalent to?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

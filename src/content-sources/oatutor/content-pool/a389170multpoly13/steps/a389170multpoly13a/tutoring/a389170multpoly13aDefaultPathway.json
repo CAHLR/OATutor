@@ -1,0 +1,167 @@
+[
+    {
+        "id": "a389170multpoly13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To multiply a trinomial by a binomial, you need to distribute each term in the binomial to every term in the trinomial.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a389170multpoly13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a389170multpoly13a-h1"
+        ],
+        "title": "Distribute the First Term",
+        "text": "Start by distributing the first term of the binomial, $$3x$$, to each term in the trinomial $$x^2-2x+4$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a389170multpoly13a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3x^3$$"
+        ],
+        "dependencies": [
+            "a389170multpoly13a-h2"
+        ],
+        "title": "Calculate First Distribution",
+        "text": "What is $$3x$$ times $$x^2$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a389170multpoly13a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-6x^2$$"
+        ],
+        "dependencies": [
+            "a389170multpoly13a-h2"
+        ],
+        "title": "Calculate Second Distribution",
+        "text": "What is $$3x$$ times $$-2x$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a389170multpoly13a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12x$$"
+        ],
+        "dependencies": [
+            "a389170multpoly13a-h2"
+        ],
+        "title": "Calculate Third Distribution",
+        "text": "What is $$3x$$ times 4?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a389170multpoly13a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a389170multpoly13a-h5"
+        ],
+        "title": "Distribute the Second Term",
+        "text": "Now distribute the second term of the binomial, $$2$$, to each term in the trinomial $$x^2-2x+4$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a389170multpoly13a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2x^2$$"
+        ],
+        "dependencies": [
+            "a389170multpoly13a-h6"
+        ],
+        "title": "Calculate Fourth Distribution",
+        "text": "What is $$2$$ times $$x^2$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a389170multpoly13a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-4x$$"
+        ],
+        "dependencies": [
+            "a389170multpoly13a-h6"
+        ],
+        "title": "Calculate Fifth Distribution",
+        "text": "What is $$2$$ times $$-2x$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a389170multpoly13a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a389170multpoly13a-h6"
+        ],
+        "title": "Calculate Sixth Distribution",
+        "text": "What is $$2$$ times 4?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a389170multpoly13a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a389170multpoly13a-h9"
+        ],
+        "title": "Combine Like Terms",
+        "text": "Now, combine all the terms you calculated: $$3x^3$$, $$-6x^2$$, $$12x$$, $$2x^2$$, $$-4x$$, and $$8$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a389170multpoly13a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3x^3-4x^2+8x+8$$"
+        ],
+        "dependencies": [
+            "a389170multpoly13a-h10"
+        ],
+        "title": "Final Expression",
+        "text": "Combine the terms to get the final expression.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

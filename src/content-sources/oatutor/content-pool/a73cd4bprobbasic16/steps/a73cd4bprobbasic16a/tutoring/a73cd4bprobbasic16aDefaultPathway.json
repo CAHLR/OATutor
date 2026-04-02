@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a73cd4bprobbasic16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Probability Rules",
+        "text": "To find the probability of our situation, we first need to find out how many students we can choose from.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a73cd4bprobbasic16a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1200$$"
+        ],
+        "dependencies": [
+            "a73cd4bprobbasic16a-h1"
+        ],
+        "title": "Total Students",
+        "text": "How many students are there?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a73cd4bprobbasic16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a73cd4bprobbasic16a-h2"
+        ],
+        "title": "Probability Rules",
+        "text": "Next, we need to find the amount of students that correspond to our initial condition.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a73cd4bprobbasic16a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$750$$"
+        ],
+        "dependencies": [
+            "a73cd4bprobbasic16a-h3"
+        ],
+        "title": "Total Non-Athletes",
+        "text": "How many students do not play sports?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a73cd4bprobbasic16a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{15}{24}$$"
+        ],
+        "dependencies": [
+            "a73cd4bprobbasic16a-h4"
+        ],
+        "title": "Answer",
+        "text": "To find our answer, we can take our first proportion and divide it by our second to get the probability. What is our final answer?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

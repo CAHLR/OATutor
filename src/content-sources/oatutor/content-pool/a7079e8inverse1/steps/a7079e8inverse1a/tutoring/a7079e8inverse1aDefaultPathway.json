@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a7079e8inverse1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The Inverse Function Theorem",
+        "text": "The Inverse Function Theorem is $$g'(x)=\\frac{1}{h{\\left(g{\\left(x\\right)}\\right)}}$$ where g(x) is the inverse of f(x) and $$h(x)=f'(x)$$ or in other words h(x) is the derivative of f(x).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7079e8inverse1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7079e8inverse1a-h1"
+        ],
+        "title": "Finding the Inverse of f(x) at $$a=0$$.",
+        "text": "To find the inverse of f(x) where $$a=0$$, then we need to first find what value of $$x$$ when we plug it into f(x) will give us a value of $$0$$. In this case, it is when $$x=-1$$, so we know that $$g(0)=-1$$ where g(x) is the inverse of f(x).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7079e8inverse1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7079e8inverse1a-h2"
+        ],
+        "title": "Finding the Derivative of f(x)",
+        "text": "Next, to find the derivative of f(x), we can use the power rule. To do this, we can multiply the coefficient of each $$x$$ by its current exponent, and then subtract $$1$$ from the exponent. Remember, constants become $$0$$ when we take the derivative of a function.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a7079e8inverse1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7079e8inverse1a-h3"
+        ],
+        "title": "Applying the Inverse Function Theorem",
+        "text": "Since we already found $$g(0)=-1$$ (remember g(x) is the inverse of f(x)) and the derivative of f(x) h(x), then we can plug what we know into the inverse function theorem.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

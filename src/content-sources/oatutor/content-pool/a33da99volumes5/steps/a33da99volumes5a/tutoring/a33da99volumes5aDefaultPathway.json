@@ -1,0 +1,120 @@
+[
+    {
+        "id": "a33da99volumes5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sketching",
+        "text": "First, sketch the region and the solid of revolution as shown.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a33da99volumes5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a33da99volumes5a-h1"
+        ],
+        "title": "Seperate the region",
+        "text": "If we want to integrate with respect to $$x$$, we would have to break the integral into two pieces, because we have different functions bounding the region over [0,1] and [1,2]. In this case, using the disk method,",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a33da99volumes5a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$y=x$$"
+        ],
+        "dependencies": [
+            "a33da99volumes5a-h2"
+        ],
+        "title": "Seperate the region",
+        "text": "What is the function bounding over [0,1]?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$y=x$$",
+            "$$y=2-x$$"
+        ]
+    },
+    {
+        "id": "a33da99volumes5a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a33da99volumes5a-h3"
+        ],
+        "title": "Disk Method",
+        "text": "$$V=\\int_{0}^{1} \\pi x^2 \\,dx+\\int_{1}^{2} \\pi \\left(2-x\\right)^2 \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a33da99volumes5a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2-2y$$"
+        ],
+        "dependencies": [
+            "a33da99volumes5a-h4"
+        ],
+        "title": "Shell Method",
+        "text": "What would the function be if we used the shell method instead?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$2-2x$$",
+            "$$2-2y$$",
+            "$$y-2+y$$"
+        ],
+        "subHints": [
+            {
+                "id": "a33da99volumes5a-h5-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Shell Method",
+                "text": "In order to use Shell Method in this case, we need to use function of $$y$$ to represent the curves. Since we have $$x=y$$ and $$y=2-x$$ then $$x=2-y$$, we will replace $$x$$ in the given functions to get a new function in term of $$y$$.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a33da99volumes5a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "[0,1]"
+        ],
+        "dependencies": [
+            "a33da99volumes5a-h5"
+        ],
+        "title": "Shell Method",
+        "text": "What would the limits of the function revolving around the y-axis? Express in Interval Expression",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a33da99volumes5a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a33da99volumes5a-h6"
+        ],
+        "title": "Shell Method",
+        "text": "The integral of the Shell Method can be set up as $$V=\\int_{0}^{1} 2\\pi y \\left(2-y-y\\right) \\,dy=\\int_{0}^{1} 2\\pi y \\left(2-2y\\right) \\,dy$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

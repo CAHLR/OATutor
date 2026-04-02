@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a150a865.3police1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exponential Distribution",
+        "text": "Let T equal the time elapsed between calls. From part a, the mean is found to be $$0.25$$, so the decay parameter is $$1$$ divided by the mean, $$0.25$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a150a865.3police1b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a150a865.3police1b-h1"
+        ],
+        "title": "Exponential Distribution",
+        "text": "The cumulative distribution function is $$P\\left(T<t\\right)$$ $$=$$ $$1-e^{\\left(-4t\\right)}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a150a865.3police1b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a150a865.3police1b-h2"
+        ],
+        "title": "Exponential Distribution",
+        "text": "We want to find the area under the exponential distiributiion function where T is less than the $$t=\\frac{1}{6}$$ minutes boundary.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a150a865.3police1b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a150a865.3police1b-h3"
+        ],
+        "title": "Exponential Distribution",
+        "text": "The probability that the next call occurs in less than $$10$$ seconds (where $$10$$ seconds is equal to $$\\frac{1}{6}$$ minutes) is $$P\\left(T<\\frac{1}{6}\\right)=1-e^{\\left(-4t\\right)}$$, where $$t$$ is $$\\frac{1}{6}$$.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

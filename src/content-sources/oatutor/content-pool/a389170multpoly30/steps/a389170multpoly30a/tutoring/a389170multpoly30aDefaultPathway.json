@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a389170multpoly30a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To multiply a trinomial by a binomial, you need to distribute each term in the binomial to every term in the trinomial.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a389170multpoly30a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a389170multpoly30a-h1"
+        ],
+        "title": "Distribute the First Term",
+        "text": "Start by distributing the first term of the binomial, $$2x$$, to each term in the trinomial $$x^2-x+4$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a389170multpoly30a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2x^3-2x^2+8x$$"
+        ],
+        "dependencies": [
+            "a389170multpoly30a-h2"
+        ],
+        "title": "Calculate First Distribution",
+        "text": "What do you get when you multiply $$2x$$ by each term in the trinomial?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a389170multpoly30a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a389170multpoly30a-h3"
+        ],
+        "title": "Distribute the Second Term",
+        "text": "Now distribute the second term of the binomial, $$3$$, to each term in the trinomial $$x^2-x+4$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a389170multpoly30a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3x^2-3x+12$$"
+        ],
+        "dependencies": [
+            "a389170multpoly30a-h4"
+        ],
+        "title": "Calculate Second Distribution",
+        "text": "What do you get when you multiply $$3$$ by each term in the trinomial?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a389170multpoly30a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a389170multpoly30a-h5"
+        ],
+        "title": "Combine Like Terms",
+        "text": "Add the results from the two distributions together and combine like terms to get the final answer.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a389170multpoly30a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2x^3+x^2+5x+12$$"
+        ],
+        "dependencies": [
+            "a389170multpoly30a-h6"
+        ],
+        "title": "Final Expression",
+        "text": "What is the final expression after combining like terms?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

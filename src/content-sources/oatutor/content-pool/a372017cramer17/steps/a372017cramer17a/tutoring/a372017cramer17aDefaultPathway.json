@@ -1,0 +1,150 @@
+[
+    {
+        "id": "a372017cramer17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Cramer's Rule for 2x2 Systems",
+        "text": "Cramer\u2019s Rule is a method that uses determinants to solve systems of equations that have the same number of equations as variables.\\nConsider a system of two linear equations in two variables.\\n$$a_1 x+b_1 y=c_1$$\\n$$a_2 x+b_2 y=c_2$$\\n\\nThe solution using Cramer's Rule is given as\\n$$x=\\frac{D_x}{D}=$$ |(c_1,b_1),(c_2,b_2)|/|(a_1,b_1),(a_2,b_2)|, $$D \\neq 0;$$\\n$$y=\\frac{D_y}{D}=$$ |(a_1,c_1),(a_2,c_2)|/|(a_1,b_1),(a_2,b_2)|, $$D \\neq 0;$$\\nIf we are solving for $$x$$, the $$x$$ column is replaced with the constant column. If we are solving for $$y$$, the $$y$$ column is replaced with the constant column.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a372017cramer17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a372017cramer17a-h1"
+        ],
+        "title": "Determinant",
+        "text": "The determinant of a 2\u00d72 matrix, given $$A=\\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}$$ is defined as $$det(A)=a d-c b$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a372017cramer17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a372017cramer17a-h2"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "Using the Cramer's Rule, replace the column for $$x$$ with the constant column, then find the determinant of $$D_x$$ and D to solve for $$x=\\frac{D_x}{D}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a372017cramer17a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-84$$"
+        ],
+        "dependencies": [
+            "a372017cramer17a-h3"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "Find the determinant $$D_x$$ $$=$$ $$|(15,3),(13,-3)|$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a372017cramer17a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-42$$"
+        ],
+        "dependencies": [
+            "a372017cramer17a-h4"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "Find the determinant D $$=$$ $$|(12,3),(2,-3)|$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a372017cramer17a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a372017cramer17a-h5"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "What is $$\\frac{D_x}{D}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a372017cramer17a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a372017cramer17a-h6"
+        ],
+        "title": "Solve for $$y$$",
+        "text": "Using the Cramer's Rule, replace the column for $$y$$ with the constant column, then find the determinant of $$D_y$$ and D to solve for $$y=\\frac{D_y}{D}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a372017cramer17a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$126$$"
+        ],
+        "dependencies": [
+            "a372017cramer17a-h7"
+        ],
+        "title": "Solve for $$y$$",
+        "text": "Find the determinant $$D_y$$ $$=$$ $$|(12,15),(2,13)|$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a372017cramer17a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-42$$"
+        ],
+        "dependencies": [
+            "a372017cramer17a-h8"
+        ],
+        "title": "Solve for $$y$$",
+        "text": "Find the determinant D $$=$$ $$|(12,3),(2,-3)|$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a372017cramer17a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-3$$"
+        ],
+        "dependencies": [
+            "a372017cramer17a-h9"
+        ],
+        "title": "Solve for $$y$$",
+        "text": "What is $$\\frac{D_y}{D}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

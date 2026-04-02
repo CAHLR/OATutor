@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a2c7986stat13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Figure Out the Rows to Use",
+        "text": "First, determine which rows from the table to look at. Since we want heights that fall between $$61.95$$ and $$65.95$$, we note that we want to only look at the second and third rows because everything in a later that will have a larger height and everything in an earlier row will have a smaller height.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a2c7986stat13a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$18$$"
+        ],
+        "dependencies": [
+            "a2c7986stat13a-h1"
+        ],
+        "title": "Add Up the Relative Frequencies of the Chosen Rows",
+        "text": "Now, knowing which rows to access, we can actually look at the relative frequencies and add them together to get the percentage of players in that range. What is the sum of the relative frequencies, written as a percentage (multiply proportions by 100)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a2c7986stat13a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$18$$"
+                ],
+                "dependencies": [],
+                "title": "Add Up the Relative Frequencies of the Chosen Rows",
+                "text": "What is $$100\\left(0.03+0.15\\right)$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    }
+]

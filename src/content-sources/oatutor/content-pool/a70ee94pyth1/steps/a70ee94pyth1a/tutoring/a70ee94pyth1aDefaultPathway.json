@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a70ee94pyth1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Pythagorean Theorem",
+        "text": "The Pythagorean Theorem is a fundamental principle in geometry that relates the lengths of the sides of a right triangle. It states that in a right triangle, the square of the length of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the lengths of the other two sides.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70ee94pyth1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a70ee94pyth1a-h1"
+        ],
+        "title": "Identifying the Right Triangle",
+        "text": "To use the Pythagorean Theorem, you need to identify the right triangle in the problem. Look for a triangle with a 90-degree angle. In this problem, we are dealing with a triangular garden, but we need to determine if it's a right triangle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70ee94pyth1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$11$$"
+        ],
+        "dependencies": [
+            "a70ee94pyth1a-h2"
+        ],
+        "title": "Using the Pythagorean Theorem",
+        "text": "If the triangle is a right triangle, you can use the formula: $$a^2+b^2=c^2$$, where c is the hypotenuse. In this problem, you need to determine if the given sides can form a right triangle and find the missing side.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70ee94pyth1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a70ee94pyth1a-h3"
+        ],
+        "title": "Checking the Triangle Inequality",
+        "text": "Before applying the Pythagorean Theorem, ensure the given sides can form a triangle. The sum of the lengths of any two sides must be greater than the length of the third side. Check if $$4+9>11$$, $$4+11>9$$, and $$9+11>4$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a70ee94pyth1a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$11$$"
+        ],
+        "dependencies": [
+            "a70ee94pyth1a-h4"
+        ],
+        "title": "Calculating the Missing Side",
+        "text": "If the triangle is valid, use the perimeter to find the missing side. The perimeter is the sum of all sides. Given the perimeter is $$24$$ feet, and two sides are $$4$$ feet and $$9$$ feet, calculate the third side.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

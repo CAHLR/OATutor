@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a88b451a394625deriv13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Bryta ner fr\u00e5gan",
+        "text": "Hitta derivatans v\u00e4rde och det kommer att vara lutningen.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a88b451a394625deriv13a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\sin\\left(x\\right)$$"
+        ],
+        "dependencies": [
+            "a88b451a394625deriv13a-h1"
+        ],
+        "title": "Deluppgift",
+        "text": "Vad \u00e4r derivatan av $$1+cos\\left(x\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a88b451a394625deriv13a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a88b451a394625deriv13a-h2"
+        ],
+        "title": "Delfr\u00e5ga",
+        "text": "Vad \u00e4r derivatans v\u00e4rde vid $$x$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a88b451a394625deriv13a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a88b451a394625deriv13a-h3"
+        ],
+        "title": "Deluppgift",
+        "text": "Vad \u00e4r funktionsv\u00e4rdet vid $$x$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a88b451a394625deriv13a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a88b451a394625deriv13a-h4"
+        ],
+        "title": "En fast punkt och best\u00e4md lutning best\u00e4mmer linjen.",
+        "text": "Vi fick linjen att passera genom tangentpunkten och vi fick dess lutning att vara derivatans v\u00e4rde, s\u00e5 vi kan best\u00e4mma linjen.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
