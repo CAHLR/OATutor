@@ -704,7 +704,7 @@ class ProblemCard extends React.Component {
                                         enableTTS={this.enableTTS}
                                     />
                                 </ErrorBoundary>
-                                <Spacer />
+                                {/* <Spacer /> */}
                             </div>
             );
 

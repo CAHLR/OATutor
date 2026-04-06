@@ -627,13 +627,12 @@ class Problem extends React.Component {
         // Yellow box
         const bubbleContainerStyle = {
             position: "fixed",
-            top: metaCollapsed? 410 : this.state.bannerHeight + 330,
+            top: metaCollapsed ? 410 : this.state.bannerHeight + 330,
             right: 28,
-            bottom: 24,
             display: "flex",
             flexDirection: "column",
-            alignItems: isHintPortalOpen ? "stretch" : "flex-end",
-            justifyContent: isHintPortalOpen ? "flex-end" : "flex-start",
+            alignItems: "flex-end",
+            justifyContent: "flex-start",
             width: drawerOpen ? "22%" : "37%",
         };
 
@@ -654,15 +653,16 @@ class Problem extends React.Component {
             transition: "all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1)",
             marginTop: isHintPortalOpen ? "auto" : 0,
             zIndex: 2,
+            overflowY: "hidden",
         };
 
         const hintPortalStyle = {
             display: isHintPortalOpen ? "block" : "none",
+            right: 28,
+            // width: drawerOpen ? "22%" : "37%",
             width: "100%",
-            height: isHintPortalOpen ? "50vh" : "auto",
-            marginTop: isHintPortalOpen ? 8 : 0,
-            maxHeight: "60vh",
-            overflowY: "auto",
+            height: "55vh",
+            zIndex: 3,
         };
 
         return (
@@ -972,7 +972,7 @@ class Problem extends React.Component {
                         <div style={hintDisplayStyle}>
                         <button
                             style={{
-                                backgroundColor: "#4E7DAA", // similar blue tone
+                                backgroundColor: "#4E7DAA",
                                 color: "white",
                                 border: "none",
                                 borderRadius: "9999px", // fully rounded edges
@@ -982,6 +982,8 @@ class Problem extends React.Component {
                                 cursor: "pointer",
                                 alignSelf: "flex-end",
                                 marginBottom: "56px",
+                                position: "fixed",
+                                top: 250
                             }}
                             >
                             OpenAI o1
