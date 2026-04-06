@@ -169,9 +169,10 @@ website for more info on this syntax.
 
 ### ./platform-logic
 
-- `checkAnswer.js`: Function to check answers. 3 different types of answers are supported: Algebraic, String, Numeric.
-  Algebraic will simplify numeric expressions, numeric checks numeric equivalence, string requires answers to exactly
-  match.
+- `checkAnswer.js`: Function to check answers. 3 different types of answers are supported: 
+    - `arithmetic`: simplifies numeric expressions
+    - `numeric`: checks numeric equivalence
+    - `string`: requires answers to exactly match.
 
 - `Platform.js`: Creates top "AppBar" and presents the first "problem" (everything under the app bar is part of the
   problem component). Also imports all of the problem files and stores them in `const problemIndex`. The
