@@ -22,7 +22,7 @@
         "license": ""
     },
     {
-        "id": "a8cc02freal5a-h3",
+        "id": "a8cc02freal5a-s1",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -32,14 +32,14 @@
         "dependencies": [
             "a8cc02freal5a-h2"
         ],
-        "title": "For the second equation, what does the left side equal to?",
+        "title": "For the second equation, what is the left side equal to?",
         "text": "",
         "variabilization": {},
         "oer": "",
         "license": ""
     },
     {
-        "id": "a8cc02freal5a-h4",
+        "id": "a8cc02freal5a-s2",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -47,12 +47,33 @@
             "$$15$$"
         ],
         "dependencies": [
-            "a8cc02freal5a-h3"
+            "a8cc02freal5a-s1"
         ],
-        "title": "For the second equation, what does the right side equal to?",
+        "title": "For the second equation, what is the right side equal to?",
         "text": "",
         "variabilization": {},
         "oer": "",
         "license": ""
+    },
+    {
+        "id": "a8cc02freal5a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "no"
+        ],
+        "dependencies": [
+            "a8cc02freal5a-s2"
+        ],
+        "title": "If the LHS doesn't equal the RHS, is our point a solution?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "yes",
+            "no"
+        ]
     }
 ]

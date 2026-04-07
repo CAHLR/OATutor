@@ -6,14 +6,14 @@
         "title": "Identify the GCF",
         "text": "Look for the greatest common factor in the coefficients and variables.",
         "variabilization": {},
-        "oer": "openai",
+        "oer": "https://OATutor.io <OATutor>",
         "license": ""
     },
     {
         "id": "a7db3eepoly_gcf_4a-h2",
         "type": "scaffold",
-        "problemType": "MultipleChoice",
-        "answerType": "string",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
         "hintAnswer": [
             "$$6x y$$"
         ],
@@ -23,14 +23,8 @@
         "title": "Factor the GCF",
         "text": "$$12x^2 y+18x y^2$$",
         "variabilization": {},
-        "oer": "openai",
-        "license": "",
-        "choices": [
-            "$$6$$",
-            "$$6x$$",
-            "$$6x y$$",
-            "$$12x y$$"
-        ]
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
     },
     {
         "id": "a7db3eepoly_gcf_4a-h3",
@@ -39,7 +33,7 @@
         "title": "Identify the GCF",
         "text": "Look for the greatest common factor in the coefficients and variables.",
         "variabilization": {},
-        "oer": "openai",
+        "oer": "https://OATutor.io <OATutor>",
         "license": ""
     },
     {
@@ -48,7 +42,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$5a$$ $$b$$"
+            "$$5a b$$"
         ],
         "dependencies": [
             "a7db3eepoly_gcf_4a-h3"
@@ -56,13 +50,7 @@
         "title": "Factor the GCF",
         "text": "$$15a^3 b-25a^2 b^2+35a b^3$$",
         "variabilization": {},
-        "oer": "openai",
-        "license": "",
-        "choices": [
-            "$$5$$",
-            "$$5a$$",
-            "$$5a b$$",
-            "$$10a b$$"
-        ]
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
     }
 ]

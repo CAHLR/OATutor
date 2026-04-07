@@ -6,7 +6,7 @@
         "title": "Identify the GCF",
         "text": "Look at the coefficients and the variables in each term. What is the largest number that divides all the coefficients? What is the smallest power of $$y$$ present in all terms?",
         "variabilization": {},
-        "oer": "openai",
+        "oer": "https://OATutor.io <OATutor>",
         "license": ""
     },
     {
@@ -23,7 +23,7 @@
         "title": "Factor the GCF",
         "text": "Factor out the GCF from each term: $$15y^4-25y^3+10y^2$$",
         "variabilization": {},
-        "oer": "openai",
+        "oer": "https://OATutor.io <OATutor>",
         "license": ""
     },
     {
@@ -35,14 +35,14 @@
         "title": "Simplify the Expression",
         "text": "After factoring out the GCF, simplify the expression inside the parentheses.",
         "variabilization": {},
-        "oer": "openai",
+        "oer": "https://OATutor.io <OATutor>",
         "license": ""
     },
     {
         "id": "a7db3eepoly_gcf_2a-h4",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
             "$$5y^2 \\left(3y^2-5y+2\\right)$$"
         ],
@@ -52,8 +52,13 @@
         "title": "Final Expression",
         "text": "What is the simplified expression after factoring out the GCF?",
         "variabilization": {},
-        "oer": "openai",
-        "license": ""
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$5y^2 \\left(3y^2-5y+2\\right)$$",
+            "$$5y^2 \\left(3y^2-5y-2\\right)$$",
+            "$$5y^2 \\left(3y^2+5y+2\\right)$$"
+        ]
     },
     {
         "id": "a7db3eepoly_gcf_2a-h5",
@@ -64,24 +69,7 @@
         "title": "Check Your Work",
         "text": "Multiply the factored expression to verify it equals the original polynomial.",
         "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "a7db3eepoly_gcf_2a-h6",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$15y^4-25y^3+10y^2$$"
-        ],
-        "dependencies": [
-            "a7db3eepoly_gcf_2a-h5"
-        ],
-        "title": "Verification",
-        "text": "Multiply $$5y^2 \\left(3y^2-5y+2\\right)$$ to check if it equals $$15y^4-25y^3+10y^2$$.",
-        "variabilization": {},
-        "oer": "openai",
+        "oer": "https://OATutor.io <OATutor>",
         "license": ""
     }
 ]
