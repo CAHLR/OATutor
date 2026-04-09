@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a590f38trigonometric34a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Isolate the trigonometric function",
+        "text": "Divide both sides of the equation by $$2$$ to isolate $$sintheta$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric34a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\sin\\theta=-\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric34a-h1"
+        ],
+        "title": "What is the simplified equation?",
+        "text": "What is the equation after isolating $$sintheta$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\sin\\theta=-\\frac{1}{2}$$",
+            "$$\\sin\\theta=-1$$",
+            "$$\\sin\\theta=-2$$",
+            "$$\\sin\\theta=\\frac{1}{2}$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric34a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric34a-h1"
+        ],
+        "title": "Recall unit circle values and quadrants",
+        "text": "Sine is negative in the third and fourth quadrants. Think about the angle in the third quadrant where the sine value is $$-\\frac{1}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric34a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{6}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric34a-h2"
+        ],
+        "title": "What is the reference angle?",
+        "text": "What is the reference angle $$\\theta_R$$ such that $$\\sin(\\theta_R)=\\frac{1}{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric34a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric34a-h2"
+        ],
+        "title": "Find the angle in the third quadrant",
+        "text": "To find the angle in the third quadrant, add the reference angle to $$\\pi$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric34a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{7\\pi}{6}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric34a-h3"
+        ],
+        "title": "Calculate the angle",
+        "text": "What is $$\\pi$$ + $$\\frac{\\pi}{6}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,134 @@
+[
+    {
+        "id": "aea0f93trigmodel4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the key parameters (A, D) from the data.",
+        "text": "Recall that the midline D is the average of the maximum and minimum values, and the amplitude A is half the difference between the maximum and minimum values.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel4a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$55.8$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel4a-h1"
+        ],
+        "title": "What is the midline (D) of the data?",
+        "text": "(Max + Min) / $$2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel4a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$13.3$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel4a-h1"
+        ],
+        "title": "What is the amplitude (A) of the data?",
+        "text": "(Max - Min) / $$2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel4a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determine the period and B value.",
+        "text": "The period is the length of one full cycle. For a function of the form $$y=A\\sin(Bt-C)+D$$, $$the$$ $$period$$ $$is$$ $$2\\pi/B$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel4a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel4a-h2"
+        ],
+        "title": "What is the period of the data?",
+        "text": "The data covers $$12$$ months for one full cycle.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel4a-s4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{6}$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel4a-h2"
+        ],
+        "title": "Use the period to find B.",
+        "text": "$$B$$ $$=$$ $$2\\pi$$ / $$\\text{Period}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel4a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determine the phase shift $$(C).$$",
+        "text": "For a sine function $$y=A\\sin(B(t-t_{shift}))+D$$, $$t_{shift}$$ is the time when the function crosses the midline going upwards. Then $$C$$ $$=$$ $$B$$ $$\\cdot$$ t_{shift}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel4a-s5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel4a-h3"
+        ],
+        "title": "Identify the time (t) when the function crosses the midline going upwards.",
+        "text": "The minimum is at $$t=2$$ (February) and the maximum is at $$t=8$$ (August). The midline crossing going up occurs $$\\frac{1}{4}$$ of a period after the minimum.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel4a-s6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{5\\pi}{6}$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel4a-h3"
+        ],
+        "title": "Use the phase shift time to find C in the form $$y=A\\sin(Bt-C)+D$$.",
+        "text": "If the function is $$y=A\\sin(B(t-t_{shift}))+D$$, $$then$$ $$C$$ $$=$$ $$B$$ $$\\cdot$$ t_{shift}$$. $$Substitute$$ $$the$$ $$value$$ $$of$$ $$B$$ $$and$$ $$the$$ $$identified$$ $$t_{shift}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

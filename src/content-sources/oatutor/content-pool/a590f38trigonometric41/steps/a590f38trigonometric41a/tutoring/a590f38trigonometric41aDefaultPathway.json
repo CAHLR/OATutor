@@ -1,0 +1,95 @@
+[
+    {
+        "id": "a590f38trigonometric41a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Isolate the trigonometric function",
+        "text": "The first step is to isolate the cosine term on one side of the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric41a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\cos(\\frac{pi}{5}\\theta)=\\frac{\\sqrt{3}}{2}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric41a-h1"
+        ],
+        "title": "Isolate cosine",
+        "text": "What is the equation after isolating $$\\cos(\\frac{pi}{5}\\theta)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\cos(\\frac{pi}{5}\\theta)=\\frac{\\sqrt{3}}{2}$$",
+            "$$\\cos(\\frac{pi}{5}\\theta)=-\\frac{\\sqrt{3}}{2}$$",
+            "$$\\cos(\\frac{pi}{5}\\theta)=\\frac{1}{2}$$",
+            "$$\\cos(\\frac{pi}{5}\\theta)=\\frac{2}{\\sqrt{3}}$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric41a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find general solutions for the argument",
+        "text": "Let $$u$$ $$=$$ \\frac{pi}{5}\\theta$$. $$Find$$ $$the$$ $$general$$ $$solutions$$ $$for$$ $$u$$ where $$\\cos(u)=\\frac{\\sqrt{3}}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric41a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$u$$ $$=$$ $$\\frac{pi}{6$$} + $$2kpi$$ and $$u$$ $$=$$ \\frac{11pi}{6} + $$2kpi$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric41a-h2"
+        ],
+        "title": "General solutions for $u$",
+        "text": "What are the general solutions for $$u$$ when $$\\cos(u)=\\frac{\\sqrt{3}}{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$u$$ $$=$$ $$\\frac{pi}{6$$} + $$2kpi$$ and $$u$$ $$=$$ \\frac{11pi}{6} + $$2kpi$$",
+            "$$u$$ $$=$$ \\frac{5pi}{6} + $$2kpi$$ and $$u$$ $$=$$ \\frac{7pi}{6} + $$2kpi$$",
+            "$$u$$ $$=$$ $$\\frac{pi}{3$$} + $$2kpi$$ and $$u$$ $$=$$ \\frac{5pi}{3} + $$2kpi$$",
+            "$$u$$ $$=$$ $$\\frac{pi}{6$$} + $$kpi$$ and $$u$$ $$=$$ \\frac{11pi}{6} + $$kpi$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric41a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Solve for $$\\theta$$ within the interval",
+        "text": "Substitute $$u$$ $$=$$ \\frac{pi}{5}\\theta$$ back and solve for $$\\theta$$ in the interval $$0\\leq\\theta<2pi$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric41a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{5}{6}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric41a-h3"
+        ],
+        "title": "Final solution for $$\\theta$$",
+        "text": "What is the value of $$\\theta$$ in the interval $$0\\leq\\theta<2pi$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

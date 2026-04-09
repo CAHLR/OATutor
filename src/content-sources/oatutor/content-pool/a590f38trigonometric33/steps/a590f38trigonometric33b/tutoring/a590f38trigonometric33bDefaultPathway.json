@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a590f38trigonometric33b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider other quadrants",
+        "text": "Cosine is negative in the second and third quadrants. You've found the second quadrant solution. Now find the solution in the third quadrant.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric33b-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\pi$$ + $$\\theta_R$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric33b-h1"
+        ],
+        "title": "How do you find the angle in the third quadrant?",
+        "text": "If $$\\theta_R$$ is the reference angle, how do you express the angle in the third quadrant?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\pi$$ + $$\\theta_R$$",
+            "$$\\pi$$ $$-$$ $$\\theta_R$$",
+            "$$2\\pi$$ $$-$$ $$\\theta_R$$",
+            "$$\\theta_R$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric33b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric33b-h1"
+        ],
+        "title": "Apply the reference angle",
+        "text": "Use the reference angle $$\\frac{\\pi}{3}$$ to find the angle in the third quadrant.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric33b-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{4\\pi}{3}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric33b-h2"
+        ],
+        "title": "Calculate the angle",
+        "text": "What is $$\\pi$$ + $$\\frac{\\pi}{3}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "id": "aea0f93trigmodel12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the general form",
+        "text": "The problem describes damped harmonic motion. Recall the general form for such a function, typically $$y=ae**{-ct}\\cos(\\omegat)$$ or $$y=ae**{-ct}\\sin(\\omegat)$$. $$Since$$ $$the$$ $$spring$$ $$is$$ $$compressed$$ $$and$$ $$released$$, $$it$$ $$starts$$ $$at$$ $$maximum$$ $$displacement$$, $$suggesting$$ $$a$$ $$cosine$$ $$function$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel12a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel12a-h1"
+        ],
+        "title": "What is the initial amplitude?",
+        "text": "What is the initial displacement (amplitude) $$a$$ when the spring is released?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel12a-h1"
+        ],
+        "title": "Determine angular frequency",
+        "text": "The problem states the oscillation period. Use this to find the angular frequency $$\\omega$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel12a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2\\pi}{3}$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel12a-h2"
+        ],
+        "title": "Calculate omega",
+        "text": "Given that it oscillates once every $$3$$ seconds (period $$p=3\\$\\$)$$, $$what$$ $$is$$ $$\\omega$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel12a-h2"
+        ],
+        "title": "Determine the damping constant",
+        "text": "The amplitude decreases by 30% every second. This information helps determine the damping constant $$c$$ in the $$e**{-ct}$$ term.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,139 @@
+[
+    {
+        "id": "aea0f93trigmodel5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the key parameters (A, D) from the data.",
+        "text": "Recall that the midline D is the average of the maximum and minimum values, and the amplitude A is half the difference between the maximum and minimum values.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel5a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$54$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel5a-h1"
+        ],
+        "title": "What is the midline (D) of the data?",
+        "text": "(Max + Min) / $$2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel5a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$24$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel5a-h1"
+        ],
+        "title": "What is the amplitude (A) of the data?",
+        "text": "(Max - Min) / $$2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel5a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determine the period and B value.",
+        "text": "The period is the length of one full cycle. For a function of the form $$y=A\\cos(B(x-C))+D$$, $$the$$ $$period$$ $$is$$ $$2\\pi/B$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel5a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel5a-h2"
+        ],
+        "title": "What is the period of the motion?",
+        "text": "The cycle repeats every $$12$$ hours.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel5a-s4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{6}$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel5a-h2"
+        ],
+        "title": "Use the period to find B.",
+        "text": "$$B$$ $$=$$ $$2\\pi$$ / $$\\text{Period}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel5a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determine the phase shift (C) and the form of the function.",
+        "text": "Observe the starting point of the cycle (at $$x=0)$$ to decide if it's a positive cosine, negative cosine, positive sine, or negative sine function, and its corresponding phase shift.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel5a-s5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Minimum"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel5a-h3"
+        ],
+        "title": "Does the function start at a maximum, minimum, or midline at $$x=0$$?",
+        "text": "At noon $$(x=0)$$, the tip is $$30$$ inches from the ceiling, which is the minimum value.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Maximum",
+            "Minimum",
+            "Midline"
+        ]
+    },
+    {
+        "id": "aea0f93trigmodel5a-s6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel5a-h3"
+        ],
+        "title": "What is the phase shift (C) for a negative cosine function starting at a minimum at $$x=0$$?",
+        "text": "For $$y=-A\\cos(B(x-C))+D$$, $$if$$ $$the$$ $$minimum$$ $$is$$ $$at$$ $$x=0$$, $$then$$ $$C=0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

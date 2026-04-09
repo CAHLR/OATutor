@@ -1,0 +1,139 @@
+[
+    {
+        "id": "a590f38trigonometric61a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recognize the quadratic form",
+        "text": "This equation resembles a quadratic equation. Consider a substitution to make it clearer.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric61a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$u^2+u-2=0$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric61a-h1"
+        ],
+        "title": "Substitute $$u$$ for $$\\sin(x)$$",
+        "text": "If $$u$$ $$=$$ $$\\sin(x)$$, $$rewrite$$ $$the$$ $$equation$$ $$in$$ $$terms$$ $$of$$ $$u$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$u^2+u-2=0$$",
+            "$$u^2-u-2=0$$",
+            "$$u^2+u+2=0$$",
+            "$$2u^2+u-2=0$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric61a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric61a-h1"
+        ],
+        "title": "Solve the quadratic",
+        "text": "Factor the quadratic equation for $$u$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric61a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\left(u+2\\right) \\left(u-1\\right)=0$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric61a-h2"
+        ],
+        "title": "Factor the quadratic equation",
+        "text": "Factor $$u^2+u-2=0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\left(u+2\\right) \\left(u-1\\right)=0$$",
+            "$$\\left(u-2\\right) \\left(u+1\\right)=0$$",
+            "$$\\left(u+2\\right) \\left(u+1\\right)=0$$",
+            "$$(u-2)(u-1)=0$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric61a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$u=-2$$, $$u=1$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric61a-h2"
+        ],
+        "title": "Find values for $$u$$",
+        "text": "What are the possible values for $$u$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$u=-2$$, $$u=1$$",
+            "$$u=2$$, $$u=-1$$",
+            "$$u=1$$",
+            "$$u=-2$$, $$u=-1$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric61a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric61a-h2"
+        ],
+        "title": "Substitute back and solve",
+        "text": "Replace $$u$$ with $$\\sin(x)$$ and solve the resulting trigonometric equations.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric61a-s4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "No solutions"
+        ],
+        "dependencies": [
+            "a590f38trigonometric61a-h3"
+        ],
+        "title": "Solve $$\\sin(x)=-2$$",
+        "text": "Are there any solutions for $$\\sin(x)=-2$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric61a-s5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{2}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric61a-h3"
+        ],
+        "title": "Solve $$\\sin(x)=1$$",
+        "text": "What are the solutions for $$\\sin(x)=1$$ in the interval $$0\\leq$$ $$x<2\\pi$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

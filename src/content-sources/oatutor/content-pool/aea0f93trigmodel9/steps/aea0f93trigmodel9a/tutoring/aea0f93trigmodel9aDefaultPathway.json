@@ -1,0 +1,64 @@
+[
+    {
+        "id": "aea0f93trigmodel9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Damped harmonic motion formula",
+        "text": "The general form for damped harmonic motion is $$f(t)$$ $$=$$ Ae**{-ct}\\cos(\\omega $$t)$$ or $$f(t)$$ $$=$$ Ae**{-ct}\\sin(\\omega $$t)$$. $$ \\cup se$$ $$cosine$$ $$for$$ $$initial$$ $$displacement$$ $$at$$ $$t=0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel9a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A=10$$, $$c=0.5$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel9a-h1"
+        ],
+        "title": "Identify A and c",
+        "text": "What are the initial displacement $$A$$ and the damping factor $$c$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$A=10$$, $$c=0.5$$",
+            "$$A=0.5$$, $$c=10$$",
+            "$$A=10$$, $$c=5$$",
+            "$$A=10$$, $$c=-0.5$$"
+        ]
+    },
+    {
+        "id": "aea0f93trigmodel9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel9a-h1"
+        ],
+        "title": "Calculate angular frequency",
+        "text": "The angular frequency $$\\omega$$ is related to the frequency $$f$$ by the formula $$\\omega$$ $$=$$ $$2\\pi$$ $$f$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel9a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "pi"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel9a-h2"
+        ],
+        "title": "Calculate \\omega",
+        "text": "Given a frequency of $$0.5$$ cycles per second, what is the angular frequency $$\\omega$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

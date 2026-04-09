@@ -1,0 +1,105 @@
+[
+    {
+        "id": "afb69a0sumprod19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall sum-to-product formulas",
+        "text": "Which sum-to-product formula applies to $$\\sin(A)+\\sin(B)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod19a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2\\sin\\left(\\frac{A+B}{2}\\right)\\cos\\left(\\frac{A-B}{2}\\right)$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod19a-h1"
+        ],
+        "title": "Identify the correct formula",
+        "text": "The sum $$\\sin(A)+\\sin(B)$$ can be rewritten using which formula?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2\\sin\\left(\\frac{A+B}{2}\\right)\\cos\\left(\\frac{A-B}{2}\\right)$$",
+            "$$2\\cos\\left(\\frac{A+B}{2}\\right)\\sin\\left(\\frac{A-B}{2}\\right)$$",
+            "$$2\\sin\\left(\\frac{A+B}{2}\\right)\\sin\\left(\\frac{A-B}{2}\\right)$$",
+            "$$2\\cos\\left(\\frac{A+B}{2}\\right)\\cos\\left(\\frac{A-B}{2}\\right)$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod19a-h1"
+        ],
+        "title": "Identify $A$ and $B$",
+        "text": "What are the values of A and B in the given expression?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod19a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A=3x$$, $$B=7x$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod19a-h2"
+        ],
+        "title": "Determine A and B",
+        "text": "In $$\\sin(3x)+\\sin(7x)$$, $$what$$ $$are$$ $$A$$ $$and$$ $$B$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$A=3x$$, $$B=7x$$",
+            "$$A=7x$$, $$B=3x$$",
+            "$$A=3$$, $$B=7$$",
+            "$$A=3x$$, $$B=-7x$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod19a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{A+B}{2}=5x$$, $$\\frac{A-B}{2}=-2x$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod19a-h2"
+        ],
+        "title": "Calculate $$\\frac{A+B}{2}$$ and $$\\frac{A-B}{2}$$",
+        "text": "What are $$\\frac{A+B}{2}$$ and $$\\frac{A-B}{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{A+B}{2}=5x$$, $$\\frac{A-B}{2}=-2x$$",
+            "$$\\frac{A+B}{2}=5x$$, $$\\frac{A-B}{2}=2x$$",
+            "$$\\frac{A+B}{2}=2x$$, $$\\frac{A-B}{2}=5x$$",
+            "$$\\frac{A+B}{2}=10x$$, $$\\frac{A-B}{2}=-4x$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod19a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod19a-h2"
+        ],
+        "title": "Apply the formula",
+        "text": "Substitute A and B into the formula and simplify. Remember $$\\cos(-\\theta) $$=$$ \\cos(\\theta)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

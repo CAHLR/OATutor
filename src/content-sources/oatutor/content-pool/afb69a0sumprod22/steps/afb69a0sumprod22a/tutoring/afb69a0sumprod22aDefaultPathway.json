@@ -1,0 +1,105 @@
+[
+    {
+        "id": "afb69a0sumprod22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sum-to-Product Formulas",
+        "text": "Recall the sum-to-product formula for the sum of two cosines.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod22a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2\\cos\\left(\\frac{A+B}{2}\\right)\\cos\\left(\\frac{A-B}{2}\\right)$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod22a-h1"
+        ],
+        "title": "Recall formula",
+        "text": "What is the sum-to-product formula for $$\\cos$$ $$A$$ + $$\\cos$$ $$B$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2\\cos\\left(\\frac{A+B}{2}\\right)\\cos\\left(\\frac{A-B}{2}\\right)$$",
+            "$$2\\sin\\left(\\frac{A+B}{2}\\right)\\sin\\left(\\frac{A-B}{2}\\right)$$",
+            "$$2\\cos\\left(\\frac{A+B}{2}\\right)\\sin\\left(\\frac{A-B}{2}\\right)$$",
+            "$$2\\sin\\left(\\frac{A+B}{2}\\right)\\cos\\left(\\frac{A-B}{2}\\right)$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod22a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod22a-h1"
+        ],
+        "title": "Identify $A$ and $B$",
+        "text": "Identify the values of A and B in the given expression.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod22a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A=9x$$, $$B=3x$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod22a-h2"
+        ],
+        "title": "Identify $A$ and $B$",
+        "text": "In $$\\cos(3x)+\\cos(9x)$$, $$what$$ $$are$$ $$A$$ $$and$$ $$B$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$A=9x$$, $$B=3x$$",
+            "$$A=3x$$, $$B=9x$$",
+            "$$A=3x$$, $$B=3x$$",
+            "$$A=9x$$, $$B=9x$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod22a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod22a-h2"
+        ],
+        "title": "Apply the formula",
+        "text": "Substitute A and B into the sum-to-product formula and simplify.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod22a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{9x+3x}{2} $$=$$ $$6x$$, $$\\frac{9x-3x}{2$$} $$=$$ $$3x$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod22a-h3"
+        ],
+        "title": "Calculate arguments",
+        "text": "Calculate $$\\frac{A+B}{2}$$ and $$\\frac{A-B}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{9x+3x}{2} $$=$$ $$6x$$, $$\\frac{9x-3x}{2$$} $$=$$ $$3x$$",
+            "$$\\frac{9x+3x}{2} $$=$$ $$6x$$, $$\\frac{9x-3x}{2$$} $$=$$ $$-3x$$",
+            "$$\\frac{9x+3x}{2} $$=$$ $$12x$$, $$\\frac{9x-3x}{2$$} $$=$$ $$6x$$",
+            "$$\\frac{9x+3x}{2} $$=$$ $$6x$$, $$\\frac{9x-3x}{2$$} $$=$$ $$0$$"
+        ]
+    }
+]

@@ -1,0 +1,99 @@
+[
+    {
+        "id": "afb69a0sumprod21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "$$\\frac{Even}{Odd}$$ properties of trigonometric functions",
+        "text": "Recall the $$\\frac{even}{odd}$$ properties of cosine and sine functions.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod21a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Odd"
+        ],
+        "dependencies": [
+            "afb69a0sumprod21a-h1"
+        ],
+        "title": "Identify sine property",
+        "text": "Is sine an even or odd function?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod21a-h1"
+        ],
+        "title": "Applying odd function property",
+        "text": "For an odd function, $$f(-x)$$ $$=$$ $$-f(x)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod21a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-\\sin(3x)$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod21a-h2"
+        ],
+        "title": "Simplify $$\\sin(-3x)$$",
+        "text": "How does $$\\sin(-3x)$$ simplify?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$-\\sin(3x)$$",
+            "$$\\sin(3x)$$",
+            "$$\\cos(3x)$$",
+            "$$-\\cos(3x)$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod21a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod21a-h2"
+        ],
+        "title": "Combining like terms",
+        "text": "Once simplified, combine the terms.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod21a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2\\sin(3x)$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod21a-h3"
+        ],
+        "title": "Combine terms",
+        "text": "What is $$\\sin(3x)$$ $$-$$ $$(-\\sin(3x))$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2\\sin(3x)$$",
+            "$$0$$",
+            "$$\\sin(3x)$$",
+            "$$2\\cos(3x)$$"
+        ]
+    }
+]

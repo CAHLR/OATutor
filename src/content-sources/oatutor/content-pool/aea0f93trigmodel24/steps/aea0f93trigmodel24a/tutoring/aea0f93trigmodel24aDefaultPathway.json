@@ -1,0 +1,104 @@
+[
+    {
+        "id": "aea0f93trigmodel24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify key features",
+        "text": "Determine the minimum and maximum y-values, the midline, and the amplitude from the table.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel24a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel24a-h1"
+        ],
+        "title": "Calculate midline",
+        "text": "The midline D is the average of the maximum and minimum values. What is D?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel24a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel24a-h1"
+        ],
+        "title": "Calculate amplitude",
+        "text": "The amplitude A is half the difference between the maximum and minimum values. What is A?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel24a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel24a-h1"
+        ],
+        "title": "Determine the period",
+        "text": "Observe the $$x-interval$$ over which the y-values complete one full cycle to find the period P. Then calculate B using $P $$=$$ \\frac{2\\pi}{B}$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel24a-s4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel24a-h2"
+        ],
+        "title": "Find the period",
+        "text": "How many units of $$x$$ does it take for the y-values to repeat a full cycle?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel24a-s5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$\\frac{\\pi}{2}$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel24a-h2"
+        ],
+        "title": "Calculate B",
+        "text": "Using the period P, calculate the value of B where $P $$=$$ \\frac{2\\pi}{B}$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel24a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel24a-h2"
+        ],
+        "title": "Choose function type and phase",
+        "text": "Decide whether a sine or cosine function (and if it's reflected) best fits the starting point $$(x=0)$$ relative to the midline. A sine function starts at the midline, a cosine function starts at an extremum.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

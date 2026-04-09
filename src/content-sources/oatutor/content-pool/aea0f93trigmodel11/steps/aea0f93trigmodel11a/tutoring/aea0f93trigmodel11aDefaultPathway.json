@@ -1,0 +1,53 @@
+[
+    {
+        "id": "aea0f93trigmodel11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify known parameters",
+        "text": "The general form is $$y=ae**{-ct}\\sin(\\omegat)$$. $$Identify$$ $$the$$ $$values$$ $$of$$ $$a$$ and $$c$$ directly from the given information.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel11a-h1"
+        ],
+        "title": "Calculate angular frequency",
+        "text": "The period $$p$$ is given. Recall the relationship between period and angular frequency $$\\omega$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel11a-h2"
+        ],
+        "title": "Substitute and solve for omega",
+        "text": "Use the given period $$p=\\frac{\\pi}{6}$$ and the formula to find $$\\omega$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel11a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel11a-h3"
+        ],
+        "title": "Calculate omega",
+        "text": "What is the value of $$\\omega$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a649252angle4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall double angle and reciprocal identities",
+        "text": "Start by rewriting the cotangent and tangent terms in terms of sine and cosine.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle4a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\cot\\theta $$=$$ \\frac{\\cos\\theta}{\\sin\\theta}$$, $$\\tan\\theta $$=$$ \\frac{\\sin\\theta}{\\cos\\theta}$$"
+        ],
+        "dependencies": [
+            "a649252angle4a-h1"
+        ],
+        "title": "Rewrite cotangent and tangent",
+        "text": "What are $$\\cot\\theta$$ and $$\\tan\\theta$$ in terms of sine and cosine?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\cot\\theta $$=$$ \\frac{\\cos\\theta}{\\sin\\theta}$$, $$\\tan\\theta $$=$$ \\frac{\\sin\\theta}{\\cos\\theta}$$",
+            "$$\\cot\\theta $$=$$ \\frac{\\sin\\theta}{\\cos\\theta}$$, $$\\tan\\theta $$=$$ \\frac{\\cos\\theta}{\\sin\\theta}$$",
+            "$$\\cot\\theta $$=$$ \\frac{1}{\\sin\\theta}$$, $$\\tan\\theta $$=$$ \\frac{1}{\\cos\\theta}$$",
+            "$$\\cot\\theta $$=$$ \\cos\\theta$$, $$\\tan\\theta $$=$$ \\sin\\theta$$"
+        ]
+    },
+    {
+        "id": "a649252angle4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle4a-h1"
+        ],
+        "title": "Combine fractions",
+        "text": "Find a common denominator for the terms in the denominator.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle4a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sin\\theta\\cos\\theta$$"
+        ],
+        "dependencies": [
+            "a649252angle4a-h2"
+        ],
+        "title": "Common denominator",
+        "text": "What is the common denominator for $$\\frac{\\cos\\theta}{\\sin\\theta}-\\frac{\\sin\\theta}{\\cos\\theta}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle4a-h2"
+        ],
+        "title": "Apply double angle identities",
+        "text": "After simplifying the complex fraction, look for expressions that match double angle identities for sine and cosine.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle4a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\sin(2\\theta)$$ and $$\\cos(2\\theta)$$"
+        ],
+        "dependencies": [
+            "a649252angle4a-h3"
+        ],
+        "title": "Identify double angle forms",
+        "text": "What are the double angle identities for $$2\\sin\\theta\\cos\\theta$$ and $$\\cos**2\\theta-\\sin**2\\theta$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\sin(2\\theta)$$ and $$\\cos(2\\theta)$$",
+            "$$2\\sin\\theta$$ and $$\\cos(2\\theta)$$",
+            "$$\\sin(2\\theta)$$ and $$\\cos**2\\theta$$",
+            "$$\\sin**2\\theta$$ and $$\\cos**2\\theta$$"
+        ]
+    }
+]

@@ -1,0 +1,197 @@
+[
+    {
+        "id": "afb69a0sumprod31a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Applying the product-to-sum formula",
+        "text": "Recall the product-to-sum formula for \\sin A \\sin B.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod31a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\sin$$ $$A$$ $$\\sin$$ $$B$$ $$=$$ $$\\frac{1}{2}$$ $$(\\cos(A-B)$$ $$-$$ \\cos(A+B))$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod31a-h1"
+        ],
+        "title": "Identify the correct formula",
+        "text": "Which product-to-sum formula should be used for \\sin A \\sin B?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\sin$$ $$A$$ $$\\sin$$ $$B$$ $$=$$ $$\\frac{1}{2}$$ $$(\\cos(A-B)$$ $$-$$ \\cos(A+B))$$",
+            "$$\\sin$$ $$A$$ $$\\sin$$ $$B$$ $$=$$ $$\\frac{1}{2}$$ (\\cos(A+B) $$-$$ $$\\cos(A-B))$$",
+            "$$\\sin$$ $$A$$ $$\\sin$$ $$B$$ $$=$$ $$\\frac{1}{2}$$ (\\cos(A+B) + $$\\cos(A-B))$$",
+            "$$\\sin$$ $$A$$ $$\\sin$$ $$B$$ $$=$$ $$\\frac{1}{2}$$ $$(\\sin(A-B)$$ $$-$$ \\sin(A+B))$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod31a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod31a-h1"
+        ],
+        "title": "Account for the coefficient",
+        "text": "Notice the coefficient of $$2$$ in front of the product. How does this affect the formula?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod31a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\cos(A-B)$$ $$-$$ \\cos(A+B)$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod31a-h2"
+        ],
+        "title": "Simplify the formula",
+        "text": "If \\sin A \\sin B $$=$$ $$\\frac{1}{2}$$ $$(\\cos(A-B)$$ - \\cos(A+B)), what is $$2$$ \\sin A \\sin B?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\cos(A-B)$$ $$-$$ \\cos(A+B)$$",
+            "$$\\cos(A-B)$$ + \\cos(A+B)$$",
+            "$$\\cos(A+B) $$-$$ $$\\cos(A-B)$$",
+            "$$1/2(\\cos(A-B) $$-$$ \\cos(A+B))$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod31a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod31a-h2"
+        ],
+        "title": "Identify $A$ and $B$",
+        "text": "Determine the values of A and B from the given expression.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod31a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-100**{\\circ}$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod31a-h3"
+        ],
+        "title": "What is A?",
+        "text": "In 2\\sin(-100**{\\circ})\\sin(-20**{\\circ}), what is A?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod31a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-20**{\\circ}$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod31a-h3"
+        ],
+        "title": "What is B?",
+        "text": "In 2\\sin(-100**{\\circ})\\sin(-20**{\\circ}), what is B?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod31a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod31a-h3"
+        ],
+        "title": "Calculate sums and differences",
+        "text": "Compute $$A+B$$ and A-B.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod31a-s4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-120**{\\circ}$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod31a-h4"
+        ],
+        "title": "What is $$A+B$$?",
+        "text": "Calculate -100**{\\circ} + (-20**{\\circ})",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod31a-s4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-80**{\\circ}$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod31a-h4"
+        ],
+        "title": "What is A-B?",
+        "text": "Calculate -100**{\\circ} - (-20**{\\circ}).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod31a-h5",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod31a-h4"
+        ],
+        "title": "Simplify using $$\\frac{even}{odd}$$ identities",
+        "text": "Recall the $$\\frac{even}{odd}$$ properties for cosine functions.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod31a-s5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\cos(x)$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod31a-h5"
+        ],
+        "title": "What is $$\\cos(-x)$$?",
+        "text": "How does $$\\cos(-x)$$ relate to \\cos(x)?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\cos(x)$$",
+            "$$-\\cos(x)$$",
+            "$$\\sin(x)$$",
+            "$$-\\sin(x)$$"
+        ]
+    }
+]

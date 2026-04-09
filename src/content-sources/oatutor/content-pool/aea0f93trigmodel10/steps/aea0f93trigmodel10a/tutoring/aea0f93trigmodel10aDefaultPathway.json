@@ -1,0 +1,99 @@
+[
+    {
+        "id": "aea0f93trigmodel10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify known parameters",
+        "text": "The general form is $$y=ae**{-ct}\\cos(\\omegat)$$. $$Identify$$ $$the$$ $$values$$ $$of$$ $$a$$ and $$c$$ directly from the given information.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel10a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$a=20$$, $$c=0.05$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel10a-h1"
+        ],
+        "title": "What are a and c?",
+        "text": "What are the values of $$a$$ and $$c$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$a=20$$, $$c=0.05$$",
+            "$$a=0.05$$, $$c=20$$",
+            "$$a=20$$, $$c=0.5$$",
+            "$$a=20$$, $$c=-0.05$$"
+        ]
+    },
+    {
+        "id": "aea0f93trigmodel10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel10a-h1"
+        ],
+        "title": "Calculate angular frequency",
+        "text": "The period $$p$$ is given. Recall the relationship between period and angular frequency $$\\omega$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel10a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$p=\\frac{2\\pi}{\\omega}$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel10a-h2"
+        ],
+        "title": "Formula for omega",
+        "text": "What is the formula relating period $$p$$ and angular frequency $$\\omega$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$p=\\frac{2\\pi}{\\omega}$$",
+            "$$p=\\frac{\\omega}{2\\pi}$$",
+            "$$p=2\\pi\\omega$$",
+            "$$p=\\frac{\\pi}{\\omega}$$"
+        ]
+    },
+    {
+        "id": "aea0f93trigmodel10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel10a-h2"
+        ],
+        "title": "Substitute and solve for omega",
+        "text": "Use the given period $$p=4$$ and the formula to find $$\\omega$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel10a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{2}$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel10a-h3"
+        ],
+        "title": "Calculate omega",
+        "text": "What is the value of $$\\omega$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

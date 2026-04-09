@@ -1,0 +1,99 @@
+[
+    {
+        "id": "aae56detrig2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Decompose the angle",
+        "text": "Express $$75**{\\circ}$$ as a sum or difference of two special angles (e.g., $$30**{\\circ}$$, $$45**{\\circ}$$, $$60**{\\circ}$$).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig2a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$45**{\\circ} + 30**{\\circ}$$"
+        ],
+        "dependencies": [
+            "aae56detrig2a-h1"
+        ],
+        "title": "Choose angles",
+        "text": "Which two special angles sum to $$75**{\\circ}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$45**{\\circ} + 30**{\\circ}$$",
+            "$$30**{\\circ} + 45**{\\circ}$$",
+            "$$60**{\\circ} + 15**{\\circ}$$",
+            "$$60**{\\circ} + 30**{\\circ}$$"
+        ]
+    },
+    {
+        "id": "aae56detrig2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig2a-h1"
+        ],
+        "title": "Applying the cosine sum formula",
+        "text": "Recall that $$\\cos(A+B) $$=$$ $$\\cos(A)\\cos(B)$$ $$-$$ $$\\sin(A)\\sin(B)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig2a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\cos(A+B) $$=$$ $$\\cos(A)\\cos(B)$$ $$-$$ $$\\sin(A)\\sin(B)$$"
+        ],
+        "dependencies": [
+            "aae56detrig2a-h2"
+        ],
+        "title": "State the formula",
+        "text": "What is the formula for $$\\cos(A$$ + $$B)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\cos(A+B) $$=$$ $$\\cos(A)\\cos(B)$$ $$-$$ $$\\sin(A)\\sin(B)$$",
+            "$$\\cos(A+B) $$=$$ $$\\cos(A)\\cos(B)$$ + $$\\sin(A)\\sin(B)$$",
+            "$$\\cos(A+B) $$=$$ $$\\sin(A)\\cos(B)$$ + $$\\cos(A)\\sin(B)$$",
+            "$$\\cos(A+B) $$=$$ $$\\sin(A)\\cos(B)$$ $$-$$ $$\\cos(A)\\sin(B)$$"
+        ]
+    },
+    {
+        "id": "aae56detrig2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig2a-h2"
+        ],
+        "title": "Evaluate trig values",
+        "text": "Find the sine and cosine values for your chosen A and B.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig2a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\sqrt{2}}{2}$$"
+        ],
+        "dependencies": [
+            "aae56detrig2a-h3"
+        ],
+        "title": "Evaluate $$\\cos(45**{\\circ})$$",
+        "text": "What is $$\\cos(45**{\\circ})$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

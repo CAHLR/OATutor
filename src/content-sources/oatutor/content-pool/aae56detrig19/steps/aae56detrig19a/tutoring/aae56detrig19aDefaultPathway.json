@@ -1,0 +1,105 @@
+[
+    {
+        "id": "aae56detrig19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Applying the tangent difference formula",
+        "text": "Recall the tangent difference identity: $$tan(A-B)$$ $$=$$ $$\\frac{tan(A)$$ $$-$$ $$tan(B)}{1$$ + $$tan(A)tan(B)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig19a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$tan(A-B)$$ $$=$$ $$\\frac{tan(A)$$ $$-$$ $$tan(B)}{1$$ + $$tan(A)tan(B)}$$"
+        ],
+        "dependencies": [
+            "aae56detrig19a-h1"
+        ],
+        "title": "Identify the formula",
+        "text": "Which trigonometric identity is appropriate for $$tan(A-B)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$tan(A-B)$$ $$=$$ $$\\frac{tan(A)$$ $$-$$ $$tan(B)}{1$$ + $$tan(A)tan(B)}$$",
+            "$$tan(A-B)$$ $$=$$ $$\\frac{tan(A)$$ + $$tan(B)}{1$$ + $$tan(A)tan(B)}$$",
+            "$$tan(A-B)$$ $$=$$ $$\\frac{tan(A)$$ $$-$$ $$tan(B)}{1$$ $$-$$ $$tan(A)tan(B)}$$",
+            "$$tan(A-B)$$ $$=$$ $$\\frac{tan(A)$$ + $$tan(B)}{1$$ $$-$$ $$tan(A)tan(B)}$$"
+        ]
+    },
+    {
+        "id": "aae56detrig19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig19a-h1"
+        ],
+        "title": "Use $$\\frac{odd}{even}$$ property and decompose",
+        "text": "First, use the odd property $$tan(-x)$$ $$=$$ $$-tan(x)$$. $$Then$$, $$find$$ $$two$$ $$common$$ $$angles$$ $$that$$ $$difference$$ $$to$$ $$\\frac{pi}{12}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig19a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A$$ $$=$$ $$\\frac{\\pi}{4$$,} $$B$$ $$=$$ $$\\frac{\\pi}{6}$$"
+        ],
+        "dependencies": [
+            "aae56detrig19a-h2"
+        ],
+        "title": "Choose angles",
+        "text": "Which two common angles difference to $$\\frac{pi}{12}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$A$$ $$=$$ $$\\frac{\\pi}{4$$,} $$B$$ $$=$$ $$\\frac{\\pi}{6}$$",
+            "$$A$$ $$=$$ $$\\frac{\\pi}{3$$,} $$B$$ $$=$$ $$\\frac{\\pi}{2}$$",
+            "$$A$$ $$=$$ $$\\frac{\\pi}{2$$,} $$B$$ $$=$$ $$\\frac{\\pi}{4}$$",
+            "$$A$$ $$=$$ $$\\frac{\\pi}{6$$,} $$B$$ $$=$$ $$\\frac{\\pi}{3}$$"
+        ]
+    },
+    {
+        "id": "aae56detrig19a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig19a-h2"
+        ],
+        "title": "Evaluate components",
+        "text": "Consider $$\\frac{pi}{12$$} $$=$$ $$\\frac{pi}{4$$} $$-$$ $$\\frac{pi}{6}$$. $$Evaluate$$ $$the$$ $$tangent$$ $$of$$ $$these$$ $$angles$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig19a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\tan(\\frac{\\pi}{4})$$ $$=$$ $$1$$, $$\\tan(\\frac{\\pi}{6})$$ $$=$$ \\frac{\\sqrt{3}}{3}$$"
+        ],
+        "dependencies": [
+            "aae56detrig19a-h3"
+        ],
+        "title": "Evaluate components",
+        "text": "What are the values of $$tan(\\frac{\\pi}{4})$$ and $$tan(\\frac{\\pi}{6})$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\tan(\\frac{\\pi}{4})$$ $$=$$ $$1$$, $$\\tan(\\frac{\\pi}{6})$$ $$=$$ \\frac{\\sqrt{3}}{3}$$",
+            "$$\\tan(\\frac{\\pi}{4})$$ $$=$$ \\frac{\\sqrt{3}}{3}, $$\\tan(\\frac{\\pi}{6})$$ $$=$$ $$1$$",
+            "$$\\tan(\\frac{\\pi}{4})$$ $$=$$ \\sqrt{3}, $$\\tan(\\frac{\\pi}{6})$$ $$=$$ \\frac{\\sqrt{3}}{3}$$",
+            "$$\\tan(\\frac{\\pi}{4})$$ $$=$$ $$1$$, $$\\tan(\\frac{\\pi}{6})$$ $$=$$ \\sqrt{3}$$"
+        ]
+    }
+]

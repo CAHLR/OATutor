@@ -1,0 +1,156 @@
+[
+    {
+        "id": "a649252angle45a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewrite in terms of sine and cosine",
+        "text": "Express cotangent and tangent using sine and cosine functions.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle45a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\cos$$ $$x}{\\sin$$ $$x}$$"
+        ],
+        "dependencies": [
+            "a649252angle45a-h1"
+        ],
+        "title": "Rewrite $$\\cotx$$ in terms of sine and cosine.",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\cos$$ $$x}{\\sin$$ $$x}$$",
+            "$$\\frac{\\sin$$ $$x}{\\cos$$ $$x}$$",
+            "$$\\frac{1}{\\sin$$ $$x}$$",
+            "$$\\frac{1}{\\cos$$ $$x}$$"
+        ]
+    },
+    {
+        "id": "a649252angle45a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\sin$$ $$x}{\\cos$$ $$x}$$"
+        ],
+        "dependencies": [
+            "a649252angle45a-h1"
+        ],
+        "title": "Rewrite $$\\tanx$$ in terms of sine and cosine.",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\sin$$ $$x}{\\cos$$ $$x}$$",
+            "$$\\frac{\\cos$$ $$x}{\\sin$$ $$x}$$",
+            "$$\\frac{1}{\\sin$$ $$x}$$",
+            "$$\\frac{1}{\\cos$$ $$x}$$"
+        ]
+    },
+    {
+        "id": "a649252angle45a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle45a-h1"
+        ],
+        "title": "Combine fractions and use identities",
+        "text": "Find a common denominator, then apply Pythagorean and double angle identities.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle45a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\cos**2x $$-$$ \\sin**2x}{\\sin $$x\\cos$$ $$x}$$"
+        ],
+        "dependencies": [
+            "a649252angle45a-h2"
+        ],
+        "title": "Combine $$\\frac{\\cos$$ $$x}{\\sin$$ $$x$$} $$-$$ $$\\frac{\\sin$$ $$x}{\\cos$$ $$x}$$ into a single fraction.",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\cos**2x $$-$$ \\sin**2x}{\\sin $$x\\cos$$ $$x}$$",
+            "$$\\frac{\\cos**2x + \\sin**2x}{\\sin $$x\\cos$$ $$x}$$",
+            "$$\\frac{\\cos$$ $$x$$ $$-$$ $$\\sin$$ $$x}{\\sin$$ $$x\\cos$$ $$x}$$",
+            "$$\\frac{\\cos**2x $$-$$ \\sin**2x}{\\sin**2x\\cos**2x}$$"
+        ]
+    },
+    {
+        "id": "a649252angle45a-s4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\cos(2x)$$"
+        ],
+        "dependencies": [
+            "a649252angle45a-h2"
+        ],
+        "title": "What is $$\\cos**2x $$-$$ \\sin**2x$$ equal to?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle45a-s5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{1}{2}\\sin(2x)$$"
+        ],
+        "dependencies": [
+            "a649252angle45a-h2"
+        ],
+        "title": "How can you relate $$\\sin$$ $$x\\cos$$ $$x$$ to $$\\sin(2x)$$?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{1}{2}\\sin(2x)$$",
+            "$$2\\sin(2x)$$",
+            "$$\\sin(2x)$$",
+            "$$\\cos(2x)$$"
+        ]
+    },
+    {
+        "id": "a649252angle45a-s6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\cos(2x)}{\\frac{1}{2}\\sin(2x)$$} $$=$$ $$2\\frac{\\cos(2x)}{\\sin(2x)$$} $$=$$ $$2\\cot(2x)$$"
+        ],
+        "dependencies": [
+            "a649252angle45a-h2"
+        ],
+        "title": "Substitute these identities back into the expression and simplify.",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\cos(2x)}{\\frac{1}{2}\\sin(2x)$$} $$=$$ $$2\\frac{\\cos(2x)}{\\sin(2x)$$} $$=$$ $$2\\cot(2x)$$",
+            "$$2\\tan(2x)$$",
+            "$$\\cot(2x)$$",
+            "$$2\\cot(x)$$"
+        ]
+    }
+]

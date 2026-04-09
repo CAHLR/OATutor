@@ -1,0 +1,76 @@
+[
+    {
+        "id": "a590f38trigonometric35a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Isolate the trigonometric function",
+        "text": "Begin by isolating the sine function on one side of the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric35a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-\\sqrt{3}/2$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric35a-h1"
+        ],
+        "title": "Solve for $$sintheta$$",
+        "text": "What is the value of $$\\sin\\theta$$ after isolating it?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$-\\sqrt{3}/2$$",
+            "$$\\sqrt{3}/2$$",
+            "$$-\\sqrt{3}$$",
+            "$$-\\frac{1}{2}$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric35a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric35a-h1"
+        ],
+        "title": "Recall unit circle values",
+        "text": "Identify the angles in the unit circle where the sine value is $$-\\sqrt{3}/2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric35a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric35a-h2"
+        ],
+        "title": "Use reference angles",
+        "text": "Determine the reference angle for which $$\\sin\\theta $$=$$ \\sqrt{3}/2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric35a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\pi/3$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric35a-h3"
+        ],
+        "title": "Find the reference angle",
+        "text": "What is the reference angle for $$\\sin\\theta $$=$$ \\sqrt{3}/2$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

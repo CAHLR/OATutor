@@ -1,0 +1,121 @@
+[
+    {
+        "id": "aae56detrig33a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Evaluate inverse trigonometric functions",
+        "text": "Start by finding the values of $$\\cos**{-1}(0)$$ and $$\\cos**{-1}(\\frac{1}{2})$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig33a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{2}$$"
+        ],
+        "dependencies": [
+            "aae56detrig33a-h1"
+        ],
+        "title": "Evaluate $$\\cos**{-1}(0)$$",
+        "text": "What is the angle $$A$$ in $$(0$$, $$\\pi)$$ such that $$\\cos(A)$$ $$=$$ $$0$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig33a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{3}$$"
+        ],
+        "dependencies": [
+            "aae56detrig33a-h1"
+        ],
+        "title": "Evaluate $$\\cos**{-1}(\\frac{1}{2})$$",
+        "text": "What is the angle $$B$$ in $$(0$$, $$\\pi)$$ such that $$\\cos(B)$$ $$=$$ $$\\frac{1}{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig33a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig33a-h1"
+        ],
+        "title": "Apply the sine difference formula",
+        "text": "Recall that $$\\sin(A$$ $$-$$ $$B)$$ $$=$$ $$\\sin(A)\\cos(B)$$ $$-$$ $$\\cos(A)\\sin(B)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig33a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A$$ $$=$$ $$\\frac{\\pi}{2$$,} $$B$$ $$=$$ $$\\frac{\\pi}{3}$$"
+        ],
+        "dependencies": [
+            "aae56detrig33a-h2"
+        ],
+        "title": "Identify $A$ and $B$",
+        "text": "After evaluating the inverse functions, what are the values for A and B in $$\\sin(A$$ $$-$$ $$B)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$A$$ $$=$$ $$\\frac{\\pi}{2$$,} $$B$$ $$=$$ $$\\frac{\\pi}{3}$$",
+            "$$A$$ $$=$$ $$\\frac{\\pi}{3$$,} $$B$$ $$=$$ $$\\frac{\\pi}{2}$$",
+            "$$A$$ $$=$$ $$0$$, $$B$$ $$=$$ $$\\frac{\\pi}{2}$$",
+            "$$A$$ $$=$$ $$\\pi$$, $$B$$ $$=$$ $$\\frac{\\pi}{6}$$"
+        ]
+    },
+    {
+        "id": "aae56detrig33a-s4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(1)(\\frac{1}{2})$$ $$-$$ (0)(\\frac{\\sqrt{3}}{2})$$"
+        ],
+        "dependencies": [
+            "aae56detrig33a-h2"
+        ],
+        "title": "Apply the formula",
+        "text": "Substitute the values into $$\\sin(A)\\cos(B)$$ $$-$$ $$\\cos(A)\\sin(B)$$. $$What$$ $$is$$ $$\\sin(\\frac{\\pi}{2})\\cos(\\frac{\\pi}{3})$$ $$-$$ $$\\cos(\\frac{\\pi}{2})\\sin(\\frac{\\pi}{3})$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$$$ (1)(\\frac{1}{2}) $$-$$ (0)(\\frac{\\sqrt{3}}{2}) $$$$",
+            "$$$$ (1)(\\frac{1}{2}) + (0)(\\frac{\\sqrt{3}}{2}) $$$$",
+            "$$$$ (0)(\\frac{\\sqrt{3}}{2}) $$-$$ (1)(\\frac{1}{2}) $$$$",
+            "$$$$ (1)(\\frac{\\sqrt{3}}{2}) $$-$$ (0)(\\frac{1}{2}) $$$$"
+        ]
+    },
+    {
+        "id": "aae56detrig33a-s5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "aae56detrig33a-h2"
+        ],
+        "title": "Simplify",
+        "text": "What is the final simplified value?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
