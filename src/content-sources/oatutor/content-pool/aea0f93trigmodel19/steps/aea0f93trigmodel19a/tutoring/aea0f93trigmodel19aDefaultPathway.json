@@ -1,0 +1,175 @@
+[
+    {
+        "id": "aea0f93trigmodel19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify Key Features from the Table",
+        "text": "To find the formula, first determine the amplitude, vertical shift, period, and phase shift from the given table of values.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel19a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Max $$=$$ $$2$$, Min $$=$$ $$-4$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel19a-h1"
+        ],
+        "title": "Find the Maximum and Minimum Values",
+        "text": "What are the maximum and minimum y-values in the table?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Max $$=$$ $$2$$, Min $$=$$ $$-4$$",
+            "Max $$=$$ $$-4$$, Min $$=$$ $$2$$",
+            "Max $$=$$ $$2$$, Min $$=$$ $$4$$",
+            "Max $$=$$ $$5$$, Min $$=$$ $$-3$$"
+        ]
+    },
+    {
+        "id": "aea0f93trigmodel19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel19a-h1"
+        ],
+        "title": "Calculate Amplitude and Vertical Shift",
+        "text": "Use the maximum and minimum y-values to calculate the amplitude (A) and the vertical shift (D). Recall that $$A$$ $$=$$ \\frac{y_{max} $$-$$ y_{min}}{2}$$ and $$D$$ $$=$$ \\frac{y_{max} + y_{min}}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel19a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A $$=$$ $$3$$, D $$=$$ $$-1$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel19a-h2"
+        ],
+        "title": "Calculate A and D",
+        "text": "What are the values of A and D?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "A $$=$$ $$3$$, D $$=$$ $$-1$$",
+            "A $$=$$ $$6$$, D $$=$$ $$-1$$",
+            "A $$=$$ $$3$$, D $$=$$ $$1$$",
+            "A $$=$$ $$2$$, D $$=$$ $$-4$$"
+        ]
+    },
+    {
+        "id": "aea0f93trigmodel19a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel19a-h2"
+        ],
+        "title": "Determine the Period",
+        "text": "Observe the x-values at which the function completes one full cycle. This will give you the period (P). Then use $$B$$ $$=$$ $$\\frac{2\\pi}{P}$$ to find B.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel19a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "P $$=$$ $$12$$, $$B$$ $$=$$ $$\\frac{\\pi}{6}$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel19a-h3"
+        ],
+        "title": "Find P and B",
+        "text": "What is the period P, and what is the value of B?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "P $$=$$ $$12$$, $$B$$ $$=$$ $$\\frac{\\pi}{6}$$",
+            "P $$=$$ $$6$$, $$B$$ $$=$$ $$\\frac{\\pi}{3}$$",
+            "P $$=$$ $$24$$, $$B$$ $$=$$ $$\\frac{\\pi}{12}$$",
+            "P $$=$$ $$12$$, B $$=$$ $$12$$"
+        ]
+    },
+    {
+        "id": "aea0f93trigmodel19a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel19a-h3"
+        ],
+        "title": "Determine the Phase Shift and Function Type",
+        "text": "Look at the y-value at $$x=0$$. Does it start at a maximum, minimum, or midline? This helps determine if it's a sine or cosine function and its phase shift $$(C).$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel19a-s4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Minimum"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel19a-h4"
+        ],
+        "title": "Identify Starting Point",
+        "text": "At $$x=0$$, the y-value is $$-4$$. Is this a maximum, minimum, or the vertical shift value?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Minimum",
+            "Maximum",
+            "Midline (vertical shift value)",
+            "Neither"
+        ]
+    },
+    {
+        "id": "aea0f93trigmodel19a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel19a-h4"
+        ],
+        "title": "Construct the Formula",
+        "text": "Since the function starts at a minimum, a negative cosine function is a good choice with no phase shift $$(C=0)$$. Combine A, B, C, and D into the general form $$y$$ $$=$$ $$A\\cos(B(x-C))$$ + $$D$$ or $$y$$ $$=$$ $$-A\\cos(B(x-C))$$ + $$D$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel19a-s5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$y$$ $$=$$ $$-3\\cos\\left(\\frac{\\pi}{6}x\\right)$$ $$-$$ $$1$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel19a-h5"
+        ],
+        "title": "Write the Final Formula",
+        "text": "Using $$A=3$$, $$B=\\frac{\\pi}{6}$$, $$D=-1$$, and recognizing it starts at a minimum (suggesting a negative cosine function with $$C=0)$$, write the formula.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$y$$ $$=$$ $$-3\\cos\\left(\\frac{\\pi}{6}x\\right)$$ $$-$$ $$1$$",
+            "$$y$$ $$=$$ $$3\\cos\\left(\\frac{\\pi}{6}x\\right)$$ $$-$$ $$1$$",
+            "$$y$$ $$=$$ $$-3\\sin\\left(\\frac{\\pi}{6}x\\right)$$ $$-$$ $$1$$",
+            "$$y$$ $$=$$ $$-3\\cos\\left(\\frac{\\pi}{12}x\\right)$$ $$-$$ $$1$$"
+        ]
+    }
+]

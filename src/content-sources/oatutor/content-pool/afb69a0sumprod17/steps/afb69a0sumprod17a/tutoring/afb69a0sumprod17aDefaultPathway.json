@@ -1,0 +1,70 @@
+[
+    {
+        "id": "afb69a0sumprod17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall product-to-sum formulas",
+        "text": "Which product-to-sum formula applies to $$\\sin(A)\\cos(B)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod17a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{1}{2}(\\sin(A+B) + $$\\sin(A-B))$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod17a-h1"
+        ],
+        "title": "Identify the correct formula",
+        "text": "The product $$\\sin(A)\\cos(B)$$ can be rewritten using which formula?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{1}{2}(\\sin(A+B) + $$\\sin(A-B))$$",
+            "$$\\frac{1}{2}(\\sin(A+B) $$-$$ $$\\sin(A-B))$$",
+            "$$\\frac{1}{2}(\\cos(A+B) + $$\\cos(A-B))$$",
+            "$$\\frac{1}{2}(\\sin(A+B) + $$\\cos(A-B))$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod17a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A+B=8x$$, $$A-B=-2x$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod17a-h1"
+        ],
+        "title": "Identify $A$ and $B$. Calculate their sum and difference.",
+        "text": "What are $$A+B$$ and $$A-B$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$A+B=8x$$, $$A-B=-2x$$",
+            "$$A+B=8x$$, $$A-B=2x$$",
+            "$$A+B=2x$$, $$A-B=8x$$",
+            "$$A+B=8x$$, $$A-B=-8x$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod17a-h1"
+        ],
+        "title": "Apply the formula",
+        "text": "Substitute A and B into the formula and simplify.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

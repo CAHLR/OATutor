@@ -1,0 +1,54 @@
+[
+    {
+        "id": "afdfbd3vector17a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "|v|=\u221a(a**2+b**2)"
+        ],
+        "dependencies": [],
+        "title": "Find Magnitude",
+        "text": "How do we find the magnitude of a vector?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "v",
+            "=\u221a(a**2+b**2)",
+            "",
+            "v",
+            "$$=a+b$$",
+            "",
+            "v",
+            "=\u221a(a+b)",
+            "",
+            "v",
+            "$$=a^2+b^2$$"
+        ]
+    },
+    {
+        "id": "afdfbd3vector17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afdfbd3vector17a-h1"
+        ],
+        "title": "Substitute",
+        "text": "\u221a((-4)**2+(-6)**2)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afdfbd3vector17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afdfbd3vector17a-h2"
+        ],
+        "title": "Simplify",
+        "text": "\u221a((-4)**2+(-6)**2)=\u221a(16+36)=\u221a52=2\u221a13",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

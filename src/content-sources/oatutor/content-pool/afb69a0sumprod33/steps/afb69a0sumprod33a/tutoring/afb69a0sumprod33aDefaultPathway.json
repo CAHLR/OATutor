@@ -1,0 +1,99 @@
+[
+    {
+        "id": "afb69a0sumprod33a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the correct product-to-sum formula",
+        "text": "Recall the product-to-sum formulas. Which one applies to \\cos A \\cos B?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod33a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1/2(\\cos(A+B) + $$\\cos(A-B))$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod33a-h1"
+        ],
+        "title": "Recall the formula",
+        "text": "What is the product-to-sum formula for \\cos A \\cos B?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$1/2(\\cos(A+B) + $$\\cos(A-B))$$",
+            "$$1/2(\\cos(A+B) $$-$$ $$\\cos(A-B))$$",
+            "$$1/2(\\sin(A+B) + $$\\sin(A-B))$$",
+            "$$1/2(\\sin(A+B) $$-$$ $$\\sin(A-B))$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod33a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod33a-h1"
+        ],
+        "title": "Account for the leading coefficient",
+        "text": "Notice the $$2$$ in front of the expression. How does this affect the formula?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod33a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\cos(A+B) + $$\\cos(A-B)$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod33a-h2"
+        ],
+        "title": "Simplify the formula",
+        "text": "If the formula for \\cos A \\cos B is 1/2(\\cos(A+B) + $$\\cos(A-B))$$, what is 2\\cos A \\cos B?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\cos(A+B) + $$\\cos(A-B)$$",
+            "$$\\cos(A+B) $$-$$ $$\\cos(A-B)$$",
+            "$$\\sin(A+B) + $$\\sin(A-B)$$",
+            "$$1/2(\\cos(A+B) + $$\\cos(A-B))$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod33a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod33a-h2"
+        ],
+        "title": "Identify $A$ and $B$. Calculate their sum and difference.",
+        "text": "Identify $A$ and $B$, then calculate their sum and difference.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod33a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9**{\\circ}$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod33a-h3"
+        ],
+        "title": "What is A-B?",
+        "text": "In 2\\cos(56**{\\circ})\\cos(47**{\\circ}), what is A-B?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

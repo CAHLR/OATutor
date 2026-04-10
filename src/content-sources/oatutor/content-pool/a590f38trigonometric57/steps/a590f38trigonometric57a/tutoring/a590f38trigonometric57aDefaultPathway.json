@@ -1,0 +1,128 @@
+[
+    {
+        "id": "a590f38trigonometric57a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply Double Angle Identity",
+        "text": "Recall the double angle identity for sine.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric57a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2\\sin$$ $$t\\cos$$ $$t$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric57a-h1"
+        ],
+        "title": "Identify Sine Double Angle Identity",
+        "text": "What is the identity for $\\sin(2t)$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2\\sin$$ $$t\\cos$$ $$t$$",
+            "$$2\\sin$$ $$t$$",
+            "$$\\sin**2t $$-$$ $${cos}^2 t$$",
+            "$$2\\cos$$ $$t$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric57a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric57a-h1"
+        ],
+        "title": "Factor the Equation",
+        "text": "Rewrite the equation, move all terms to one side, and factor.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric57a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\cos$$ $$t(2\\sin$$ $$t$$ $$-$$ $$1)$$ $$=$$ $$0$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric57a-h2"
+        ],
+        "title": "Factor the Expression",
+        "text": "What is the factored form of the equation?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\cos$$ $$t(2\\sin$$ $$t$$ $$-$$ $$1)$$ $$=$$ $$0$$",
+            "$$\\cos$$ $$t(\\sin$$ $$t$$ $$-$$ $$1)$$ $$=$$ $$0$$",
+            "$$\\sin$$ $$t(2\\cos$$ $$t$$ $$-$$ $$1)$$ $$=$$ $$0$$",
+            "$$\\cos$$ $$t(2\\sin$$ $$t$$ + $$1)$$ $$=$$ $$0$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric57a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric57a-h2"
+        ],
+        "title": "Solve for $t$",
+        "text": "Set each factor to zero and find all solutions for $t$ in the interval $$0\\leq$$ $$t<2\\pi$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric57a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{2$$,} $$\\frac{3\\pi}{2}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric57a-h3"
+        ],
+        "title": "Solve for $\\cos $$t=0\\$$$",
+        "text": "What are the values of $t$ when $\\cos $$t$$ $$=$$ 0$ on the given interval?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\pi}{2$$,} $$\\frac{3\\pi}{2}$$",
+            "$$0$$, $$\\pi$$",
+            "$$\\frac{\\pi}{2$$,} $$\\pi$$",
+            "$$\\frac{\\pi}{2}$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric57a-s4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{6$$,} $$\\frac{5\\pi}{6}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric57a-h3"
+        ],
+        "title": "Solve for $\\sin t=1/2$",
+        "text": "What are the values of $t$ when $\\sin $$t$$ $$=$$ \\frac{1}{2}$ on the given interval?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\pi}{6$$,} $$\\frac{5\\pi}{6}$$",
+            "$$\\frac{\\pi}{6$$,} $$\\frac{7\\pi}{6}$$",
+            "$$\\frac{\\pi}{3$$,} $$\\frac{2\\pi}{3}$$",
+            "$$\\frac{\\pi}{6$$,} $$\\frac{11\\pi}{6}$$"
+        ]
+    }
+]

@@ -1,0 +1,105 @@
+[
+    {
+        "id": "a590f38trigonometric66a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recognize Quadratic Form",
+        "text": "The equation is quadratic in terms of tanx.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric66a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$y$$ $$=$$ tanx"
+        ],
+        "dependencies": [
+            "a590f38trigonometric66a-h1"
+        ],
+        "title": "Substitute for tanx",
+        "text": "What substitution can you make to simplify this equation?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$y$$ $$=$$ tanx",
+            "$$y$$ $$=$$ $$x$$",
+            "$$y$$ $$=$$ $${tan}^2 x$$",
+            "$$y$$ $$=$$ $$\\frac{1}{tanx}$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric66a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric66a-h1"
+        ],
+        "title": "Apply Quadratic Formula",
+        "text": "Use the quadratic formula to solve for tanx.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric66a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{-5+\\sqrt{29}}{2}, \\frac{-5-\\sqrt{29}}{2}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric66a-h2"
+        ],
+        "title": "Solve for tanx",
+        "text": "What are the two values for tanx?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{-5+\\sqrt{29}}{2}, \\frac{-5-\\sqrt{29}}{2}$$",
+            "$$\\frac{5+\\sqrt{29}}{2}, \\frac{5-\\sqrt{29}}{2}$$",
+            "$$\\frac{-5+\\sqrt{21}}{2}, \\frac{-5-\\sqrt{21}}{2}$$",
+            "$$\\frac{-5+\\sqrt{29}}{-2}, \\frac{-5-\\sqrt{29}}{-2}$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric66a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric66a-h2"
+        ],
+        "title": "Find $$x$$ values",
+        "text": "Determine the values of $$x$$ in the interval $$(0$$, $$2\\pi)$$ for each tanx value.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric66a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x=\\arctan(k)$$, \\pi+\\arctan(k)$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric66a-h3"
+        ],
+        "title": "General Solution for $$tanx=k$$",
+        "text": "If $$tanx=k$$, $$how$$ $$do$$ $$you$$ $$find$$ $$all$$ $$solutions$$ $$for$$ $$x$$ $$in$$ $$(0$$, $$2\\pi)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$x=\\arctan(k)$$, \\pi+\\arctan(k)$$",
+            "$$x=\\arctan(k)$$, 2\\pi+\\arctan(k)$$",
+            "$$x=\\arctan(k)$$, -\\pi+\\arctan(k)$$",
+            "$$x=\\arctan(k)$$, $$\\pi-\\arctan(k)$$"
+        ]
+    }
+]

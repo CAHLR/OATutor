@@ -1,0 +1,151 @@
+[
+    {
+        "id": "a590f38trigonometric56a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply Double Angle Identity",
+        "text": "Recall the double angle identity for cosine that involves only $cos\\theta$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric56a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2\\cos**2\\theta $$-$$ $$1$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric56a-h1"
+        ],
+        "title": "Identify Cosine Double Angle Identity",
+        "text": "What is the identity for $\\cos(2\\theta)$ in terms of $cos\\theta$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2\\cos**2\\theta $$-$$ $$1$$",
+            "$$1$$ $$-$$ 2\\cos**2\\theta$$",
+            "$$\\cos**2\\theta $$-$$ $$1$$",
+            "$$2\\cos\\theta$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric56a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric56a-h1"
+        ],
+        "title": "Simplify and Solve for $cos\\theta$",
+        "text": "Substitute the identity, simplify the equation, and solve for $cos\\theta$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric56a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$9cos**2\\theta $$=$$ $$5$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric56a-h2"
+        ],
+        "title": "Form a Quadratic Equation",
+        "text": "After substitution and rearrangement, what is the simplified equation in terms of $cos**2\\theta$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$9cos**2\\theta $$=$$ $$5$$",
+            "$$9cos**2\\theta $$=$$ $$13$$",
+            "$$9cos**2\\theta $$=$$ $$-5$$",
+            "$$18cos**2\\theta $$=$$ $$5$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric56a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\pm\\frac{\\sqrt{5}}{3}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric56a-h2"
+        ],
+        "title": "Find Values for $cos\\theta$",
+        "text": "What are the possible values for $cos\\theta$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\pm\\frac{\\sqrt{5}}{3}$$",
+            "$$\\pm\\frac{5}{9}$$",
+            "$$\\pm\\frac{\\sqrt{5}}{9}$$",
+            "$$\\pm\\frac{3}{\\sqrt{5}}$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric56a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric56a-h2"
+        ],
+        "title": "Find Solutions for $\\theta$",
+        "text": "Determine all values of $\\theta$ in the interval $$0\\leq\\theta<2pi$$ that satisfy the $cos\\theta$ values.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric56a-s4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$arccos(\\frac{\\sqrt{5}}{3}), $$2\\pi$$ $$-$$ arccos(\\frac{\\sqrt{5}}{3})$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric56a-h3"
+        ],
+        "title": "Identify Solutions for Positive Cosine",
+        "text": "What are the solutions for $\\theta$ when $cos\\theta $$=$$ \\frac{\\sqrt{5}}{3}$ on the given interval?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$arccos(\\frac{\\sqrt{5}}{3}), $$2\\pi$$ $$-$$ arccos(\\frac{\\sqrt{5}}{3})$$",
+            "$$arccos(\\frac{\\sqrt{5}}{3}), $$\\pi$$ $$-$$ arccos(\\frac{\\sqrt{5}}{3})$$",
+            "$$arccos(\\frac{\\sqrt{5}}{3}), $$\\pi$$ + arccos(\\frac{\\sqrt{5}}{3})$$",
+            "$$arccos(\\frac{\\sqrt{5}}{3})$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric56a-s5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\pi$$ $$-$$ arccos(\\frac{\\sqrt{5}}{3}), $$\\pi$$ + arccos(\\frac{\\sqrt{5}}{3})$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric56a-h3"
+        ],
+        "title": "Identify Solutions for Negative Cosine",
+        "text": "What are the solutions for $\\theta$ when $cos\\theta $$=$$ -\\frac{\\sqrt{5}}{3}$ on the given interval?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\pi$$ $$-$$ arccos(\\frac{\\sqrt{5}}{3}), $$\\pi$$ + arccos(\\frac{\\sqrt{5}}{3})$$",
+            "$$arccos(\\frac{\\sqrt{5}}{3}), $$2\\pi$$ $$-$$ arccos(\\frac{\\sqrt{5}}{3})$$",
+            "$$\\pi$$ $$-$$ arccos(\\frac{\\sqrt{5}}{3}), $$2\\pi$$ $$-$$ arccos(\\frac{\\sqrt{5}}{3})$$",
+            "$$\\pi$$ $$-$$ arccos(\\frac{\\sqrt{5}}{3})$$"
+        ]
+    }
+]

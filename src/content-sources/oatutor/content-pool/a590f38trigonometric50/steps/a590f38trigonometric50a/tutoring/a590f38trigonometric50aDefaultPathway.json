@@ -1,0 +1,105 @@
+[
+    {
+        "id": "a590f38trigonometric50a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recognize the form",
+        "text": "This equation is quadratic in form. Let $$u$$ $$=$$ $$\\sin(x)$$ to simplify it.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric50a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$u$$ $$=$$ $$\\frac{-1}{4}$$, $$\\frac{-1}{2}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric50a-h1"
+        ],
+        "title": "Substitute and solve",
+        "text": "Substitute $$u$$ $$=$$ $$\\sin(x)$$ into $$8sin**{2}(x)+6\\sin(x)+1=0$$ and solve for $$u$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$u$$ $$=$$ $$\\frac{-1}{4}$$, $$\\frac{-1}{2}$$",
+            "$$u$$ $$=$$ $$\\frac{1}{4}$$, $$\\frac{1}{2}$$",
+            "$$u$$ $$=$$ $$\\frac{-1}{4}$$, $$\\frac{1}{2}$$",
+            "$$u$$ $$=$$ $$-1$$, $$\\frac{-1}{8}$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric50a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric50a-h1"
+        ],
+        "title": "Back-substitute",
+        "text": "Now substitute $$\\sin(x)$$ back for $$u$$ and solve $$\\sin(x)$$ $$=$$ $$\\frac{-1}{4}$$ and $$\\sin(x)$$ $$=$$ $$\\frac{-1}{2}$$ for $$x$$ in the interval $$(0$$, $$2\\pi)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric50a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$7\\pi/6, 11\\pi/6$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric50a-h2"
+        ],
+        "title": "Solutions for $$\\sin(x)$$ $$=$$ $$\\frac{-1}{2}$$",
+        "text": "What are the solutions for $$\\sin(x)$$ $$=$$ $$\\frac{-1}{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$7\\pi/6, 11\\pi/6$$",
+            "$$7\\pi/6$$",
+            "$$\\pi/6, 5\\pi/6$$",
+            "$$4\\pi/3, 5\\pi/3$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric50a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric50a-h2"
+        ],
+        "title": "Solutions for $$\\sin(x)$$ $$=$$ $$\\frac{-1}{4}$$",
+        "text": "For $$\\sin(x)$$ $$=$$ $$\\frac{-1}{4}$$, $$use$$ $$the$$ $$inverse$$ $$sine$$ $$function$$ $$and$$ $$consider$$ $$the$$ $$quadrants$$ $$where$$ $$sine$$ $$is$$ $$negative$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric50a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\pi$$ + \\arcsin(1/4), $$2\\pi$$ $$-$$ \\arcsin(1/4)$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric50a-h3"
+        ],
+        "title": "Solutions for $$\\sin(x)$$ $$=$$ $$\\frac{-1}{4}$$",
+        "text": "What are the solutions for $$\\sin(x)$$ $$=$$ $$\\frac{-1}{4}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\pi$$ + \\arcsin(1/4), $$2\\pi$$ $$-$$ \\arcsin(1/4)$$",
+            "$$\\pi$$ + \\arcsin(1/4)$$",
+            "$$\\arcsin(1/4), $$\\pi$$ $$-$$ \\arcsin(1/4)$$",
+            "$$\\pi$$ $$-$$ \\arcsin(1/4), $$2\\pi$$ + \\arcsin(1/4)$$"
+        ]
+    }
+]

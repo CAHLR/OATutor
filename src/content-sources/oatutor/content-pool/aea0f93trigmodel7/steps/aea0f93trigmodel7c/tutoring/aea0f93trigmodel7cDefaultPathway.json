@@ -1,0 +1,35 @@
+[
+    {
+        "id": "aea0f93trigmodel7c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify amplitude and vertical shift",
+        "text": "For a sinusoidal function $$f(t)$$ $$=$$ $$A\\sin(Bt)$$ + $$D$$, $$the$$ $$amplitude$$ $$is$$ $$|A|$$ and the vertical shift is $$D$$. $$The$$ $$range$$ $$of$$ $$the$$ $$function$$ $$is$$ $$(D-|A|$$, D+|A|)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel7c-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A=20$$, $$D=100$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel7c-h1"
+        ],
+        "title": "Identify A and D",
+        "text": "What are the values of $$A$$ and $$D$$ in the function $$f(t)=20\\sin(160pit)+100$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$A=20$$, $$D=100$$",
+            "$$A=160\\pi$$, $$D=100$$",
+            "$$A=100$$, $$D=20$$",
+            "$$A=20$$, $$D=160\\pi$$"
+        ]
+    }
+]
