@@ -50,6 +50,9 @@ jobs:
           mv "content-pool" "OpenStax Content"
         fi
         mkdir -p Content
+        if [ -f "bkt-params/defaultBKTParams.json" ]; then
+          cp bkt-params/defaultBKTParams.json bktParams.json
+        fi
 
     - name: Run content update script
       run: |
