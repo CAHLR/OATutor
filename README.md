@@ -169,9 +169,10 @@ website for more info on this syntax.
 
 ### ./platform-logic
 
-- `checkAnswer.js`: Function to check answers. 3 different types of answers are supported: Algebraic, String, Numeric.
-  Algebraic will simplify numeric expressions, numeric checks numeric equivalence, string requires answers to exactly
-  match.
+- `checkAnswer.js`: Function to check answers. 3 different types of answers are supported: 
+    - `arithmetic`: simplifies numeric expressions
+    - `numeric`: checks numeric equivalence
+    - `string`: requires answers to exactly match.
 
 - `Platform.js`: Creates top "AppBar" and presents the first "problem" (everything under the app bar is part of the
   problem component). Also imports all of the problem files and stores them in `const problemIndex`. The
@@ -190,7 +191,7 @@ website for more info on this syntax.
 #### Markdown Support
 
 - All `\` must be escaped as `\\` because values are strings
-- Wrap Latex in `$` for inline LaTeX
+- Wrap Latex in `$$` for inline LaTeX
 - Newlines can be created with `\n`, escaped as `\\n`
 
 ### ./config [Configurable]
@@ -285,6 +286,7 @@ DO_FOCUS_TRACKING = false;
 - However, content sources can be copied in as entire folders as well and committed to this repository
 
 ### Content Source Directory Structure
+
 #### ./content-pool
 - Each _problem_ is contained in its own folder.
 - Problems can contain _steps_ which are contained in their own sub-folder.
@@ -324,10 +326,12 @@ DO_FOCUS_TRACKING = false;
 
 ### Types of problems
 
-* `TextBox` : Box for student to enter answer. 3 different types of answers are supported: Algebraic, String, Numeric.
+* `TextBox`: Box for student to enter answer. 3 different types of answers are supported: Algebraic, String, Numeric.
   Algebraic will simplify numeric expressions, numeric checks numeric equivalence, string requires answers to exactly
   match.
 * `MultipleChoice`: List choices as `choices: ["Choice A", "Choice B"]`, must have `answerType: "string"`
+* `GridInput`: Provides a grid for the student to fill out. Must have `numRows` and `numCols` for the answer size, while the `stepAnswer` must be a list of lists of strings: `"[[\"1\",\"2\"],[\"3\",\"4\"]]"` for a 2x2 grid. Must have `answerType: "string"`.
+* `MatrixInput`: Provides a matrix for the student to fill out. Must have `numRows` and `numCols` for the answer size, while the `stepAnswer` must be a list of lists of strings: `"[[\"1\",\"2\"],[\"3\",\"4\"]]"` for a 2x2 grid. Must have `answerType: "string"`.
 
 ### Example Directory Structure
 
@@ -340,6 +344,8 @@ content-sources/
     ├── content-pool/
     │   ├── circle1/
     │   │   ├── circle1.json
+    |   |   ├── figures/
+    |   |   |   ├── figure1.png
     │   │   └── steps/
     │   │       ├── circle1a/
     │   │       │   ├── circle1a.json
@@ -362,7 +368,7 @@ content-sources/
 {
     "id": "circle1",
     "title": "Buying a Big Rug",
-    "body": "Bob wants to surprise Alice by buying a new rug for their living room. Their living room is 28 feet wide and 20 feet long. To further surprise Alice, Bob wants to buy the biggest circular rug that will fit.",
+    "body": "Bob wants to surprise Alice by buying a new rug for their living room. Their living room is 28 feet wide and 20 feet long. To further surprise Alice, Bob wants to buy the biggest circular rug that will fit.\\n##figure1.gif##",
     "variabilization": {},
     "oer": "https://example.com",
     "lesson": "1.1 Circle Radius",
@@ -426,6 +432,7 @@ content-sources/
 {
     "id": "pythag1", //Substeps will be in the form problem.id + 'a' and so on
     "title": "Car Forces",
+    // Figures are set using ##<figure_path>##, where the figure path is relative to the 'figures' directory for the problem
     "body": "A %CAR% experiences three horizontal forces of -3.10N, 1.70N and -4.00N. It also experiences three vertical forces of -4.30N, 0.20N and 4.20N. \\n Round all answers to the hundredths place. \\n##triangle.png## ",
     "variabilization": {}
 }
