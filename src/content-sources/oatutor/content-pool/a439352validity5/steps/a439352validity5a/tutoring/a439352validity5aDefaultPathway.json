@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a439352validity5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Themes",
+        "text": "Think about how you can apply a consistent look to your spreadsheet without manually formatting each time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a439352validity5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a439352validity5a-h1"
+        ],
+        "title": "Exploring the Format Menu",
+        "text": "Consider what options are available in the Format menu that might help with applying consistent styles.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a439352validity5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a439352validity5a-h2"
+        ],
+        "title": "Using Themes",
+        "text": "Themes can be a powerful tool for maintaining consistency. Where might you find them in the spreadsheet options?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a439352validity5a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Format"
+        ],
+        "dependencies": [
+            "a439352validity5a-h3"
+        ],
+        "title": "Applying a Theme",
+        "text": "To apply a theme, you need to navigate through the menu options. Which menu would you start with?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Format",
+            "Data",
+            "Insert",
+            "View"
+        ]
+    },
+    {
+        "id": "a439352validity5a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Theme"
+        ],
+        "dependencies": [
+            "a439352validity5a-h4"
+        ],
+        "title": "Selecting a Theme",
+        "text": "Once in the Format menu, what option should you choose to apply a consistent style?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Theme",
+            "Conditional Formatting",
+            "Cell Styles",
+            "Borders"
+        ]
+    }
+]
