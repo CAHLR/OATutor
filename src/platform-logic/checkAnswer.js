@@ -166,7 +166,7 @@ function checkAnswer({ attempt, actual, answerType, precision = 5, variabilizati
                 let correctAnswers = _parseEquality(parsed, actual.map((actualAns) => parse(actualAns).expr));
 
                 if (correctAnswers.length > 0) {
-                    return [parsed.print(), correctAnswers[0], null]
+                    return [parsed.print(), correctAnswers[0].print(), null]
                 }
 
                 return [parsed.print(), false, WrongAnswerReasons.wrong];
