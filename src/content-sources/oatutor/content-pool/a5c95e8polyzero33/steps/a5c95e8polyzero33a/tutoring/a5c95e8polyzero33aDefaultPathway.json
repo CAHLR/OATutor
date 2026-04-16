@@ -1,0 +1,249 @@
+[
+    {
+        "id": "a5c95e8polyzero33a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formulating the problem.",
+        "text": "Let l, w, $$h$$ denote length, width, height respectively. What is the volume, V, in terms of l, w, $$h$$? What is the relationship between length and width? What is the relationship between height and width?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5c95e8polyzero33a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "w + $$4$$"
+        ],
+        "dependencies": [
+            "a5c95e8polyzero33a-h1"
+        ],
+        "title": "Relationship between length and width.",
+        "text": "The length of the cake is four inches longer than the width. Express l in terms of w.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5c95e8polyzero33a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{w}{3}$$"
+        ],
+        "dependencies": [
+            "a5c95e8polyzero33a-h1"
+        ],
+        "title": "Relationship between height and width.",
+        "text": "The height of the cake is one-third of the width. Express $$h$$ in terms of w.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5c95e8polyzero33a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$l w h$$"
+        ],
+        "dependencies": [
+            "a5c95e8polyzero33a-h1"
+        ],
+        "title": "Relationship between volume and the parameters.",
+        "text": "Volume is given by the product of length, width and height. Express V in terms of l, w, $$h$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5c95e8polyzero33a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{w^3}{3}+\\frac{4w^2}{3}$$"
+        ],
+        "dependencies": [
+            "a5c95e8polyzero33a-h4"
+        ],
+        "title": "Expressing V in terms of w.",
+        "text": "We want a polynomial that is in terms of a single variable so that we are able to apply what we have learnt to solve it. Substitute the previous expressions that were found.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5c95e8polyzero33a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$w^3+7w^2-1053$$"
+        ],
+        "dependencies": [
+            "a5c95e8polyzero33a-h5"
+        ],
+        "title": "Substitute the given volume into the equation so that we can solve for the roots.",
+        "text": "Substitute V $$=$$ $$351$$ into V $$=$$ $$\\frac{w^3}{3}+\\frac{4w^2}{3}$$, then shift everything to a single side so that the equation is equal to $$0$$. Multiply by $$3$$ to remove the fractions so that calculation is easier. What is the polynomial function of w, f(w)? (Recall that the if k is a root of the function f(x), then f(k) $$=$$ $$0$$. In this case we want to make one side of the equation zero so that the polynomial function of w on the other side can be used to solve for the root.)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5c95e8polyzero33a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a5c95e8polyzero33a-h6"
+        ],
+        "title": "How many positive real solutions are there?",
+        "text": "Since the width has to be a positive real number, we can use the Descartes' Rule of Signs.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5c95e8polyzero33a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a5c95e8polyzero33a-h7"
+        ],
+        "title": "How many positive real solutions are there?",
+        "text": "How many sign changes are there? The number of positive real zeros is either equal to the number of sign changes of f(x) or is less than the number of sign changes by an even integer.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5c95e8polyzero33a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a5c95e8polyzero33a-h8"
+        ],
+        "title": "Find the possible rational zeros for the function using the Rational Zero Theorem.",
+        "text": "We can use the Rational Zero Theorem to tell us how many rational zeros that could potentially be roots. The Rational Zero Theorem states that, if the polynomial f(x) $$=$$ $$a_n x^n+a_n$$ - 1*x**(n - 1)+...+a_1*x+a_0 has integer coefficients, then every rational zero of f(x) has the form $$\\frac{p}{q}$$ where $$p$$ is a factor of the constant term $$a_0$$ and q is a factor of the leading coefficient $$a_n$$. When the leading coefficient is $$1$$, the possible rational zeros are the factors of the constant term.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5c95e8polyzero33a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "1, 3, 9, 13, 27, 39, 81, 117, 351, 1053"
+        ],
+        "dependencies": [
+            "a5c95e8polyzero33a-h9"
+        ],
+        "title": "What are the factors of the constant term, 1053? From here on, these factors will be denoted as $$p$$, factors of the constant term. (List only the positive factors for this question. List them in ascending order as such: $$1$$, $$2$$, ...)",
+        "text": "There are $$20$$ factors in total, including the negative factors. We will only be listing the positive factors. There are $$10$$ of them.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5c95e8polyzero33a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "1"
+        ],
+        "dependencies": [
+            "a5c95e8polyzero33a-h9"
+        ],
+        "title": "What are the factors of the leading coefficient, 1? From here on, these factors will be denoted as $$p$$, factors of the constant term. (List only the positive factors for this question. List them in ascending order as such: $$1$$, $$2$$, ...)",
+        "text": "There are $$2$$ factors in total, including the negative factors. We will only be listing the positive factors. There is $$1$$ of them.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5c95e8polyzero33a-h12",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "1, 3, 9, 13, 27, 39, 81, 117, 351, 1053"
+        ],
+        "dependencies": [
+            "a5c95e8polyzero33a-h9"
+        ],
+        "title": "What are the different combination of rational zeros?",
+        "text": "Consider that a rational zero is of the form $$\\frac{p}{q}$$ where $$p$$ are factors of the constant term and q are factors of the leading coefficient. It would help to list out all your $$p$$ and q to write out the different combination. There are $$20$$ in total, including the negative rational zeros. We will only be listing the positive rational zeros. There are $$10$$ of them. (List them in ascending order as such: $$\\frac{1}{2}$$, $$1$$, ...)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5c95e8polyzero33a-h13",
+        "type": "hint",
+        "dependencies": [
+            "a5c95e8polyzero33a-h9"
+        ],
+        "title": "Testing for roots.",
+        "text": "Use synthetic division to check if the potential zero is actually a root. We would want to start testing from the most logical values. Thus, we would ignore negative potential zeros and start from $$1$$. By Descartes' Rule of Signs, how many roots are we looking for?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5c95e8polyzero33a-h14",
+        "type": "hint",
+        "dependencies": [
+            "a5c95e8polyzero33a-h13"
+        ],
+        "title": "Testing for roots.",
+        "text": "Is w $$=$$ $$1$$ a root? A root would result in a remainder of zero.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5c95e8polyzero33a-h15",
+        "type": "hint",
+        "dependencies": [
+            "a5c95e8polyzero33a-h13"
+        ],
+        "title": "Testing for roots.",
+        "text": "Is w $$=$$ $$3$$ a root? A root would result in a remainder of zero.\\n##figure2.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5c95e8polyzero33a-h16",
+        "type": "hint",
+        "dependencies": [
+            "a5c95e8polyzero33a-h13"
+        ],
+        "title": "Testing for roots.",
+        "text": "Is w $$=$$ $$9$$ a root? A root would result in a remainder of zero.\\n##figure3.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5c95e8polyzero33a-h17",
+        "type": "hint",
+        "dependencies": [
+            "a5c95e8polyzero33a-h13"
+        ],
+        "title": "Finding the other parameter, length and height.",
+        "text": "Substitute the w that we found into the expression for l and $$h$$ from before.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

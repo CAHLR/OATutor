@@ -1,0 +1,70 @@
+[
+    {
+        "id": "aae56detrig12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cofunctions",
+        "text": "Recall the definition of cofunction identities and the relationship between angles in a right triangle.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig12a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$\\sin(\\theta) $$=$$ \\cos(90**\\circ $$-$$ \\theta)$"
+        ],
+        "dependencies": [
+            "aae56detrig12a-h1"
+        ],
+        "title": "Defining Cofunctions",
+        "text": "What is the relationship between $\\sin(\\theta)$ and $\\cos(90**\\circ - \\theta)$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$\\sin(\\theta) $$=$$ \\cos(90**\\circ $$-$$ \\theta)$",
+            "$\\sin(\\theta) $$=$$ \\sin(90**\\circ $$-$$ \\theta)$",
+            "$\\sin(\\theta) $$=$$ \\cos(\\theta)$",
+            "$\\sin(\\theta) $$=$$ -\\cos(90**\\circ $$-$$ \\theta)$"
+        ]
+    },
+    {
+        "id": "aae56detrig12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig12a-h1"
+        ],
+        "title": "Complementary Angles",
+        "text": "Think about what 'complementary angles' means and how it relates to the angles in a right triangle.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig12a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Right triangle"
+        ],
+        "dependencies": [
+            "aae56detrig12a-h2"
+        ],
+        "title": "Applying Cofunctions",
+        "text": "Cofunction identities are most directly derived from the relationships within which geometric figure?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Right triangle",
+            "Unit circle",
+            "Isosceles triangle",
+            "Equilateral triangle"
+        ]
+    }
+]

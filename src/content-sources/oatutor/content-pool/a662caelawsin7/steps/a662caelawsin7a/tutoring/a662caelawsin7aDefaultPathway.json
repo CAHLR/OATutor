@@ -1,0 +1,95 @@
+[
+    {
+        "id": "a662caelawsin7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Law of Sines Formula",
+        "text": "Recall the formula for the Law of Sines: $$\\frac{a}{\\sin(A)$$} $$=$$ $$\\frac{b}{\\sin(B)$$} $$=$$ $$\\frac{c}{\\sin(C)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin7a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Both the angle and its opposite side must be known."
+        ],
+        "dependencies": [
+            "a662caelawsin7a-h1"
+        ],
+        "title": "Known Pair",
+        "text": "To set up the Law of Sines, what information must you have about at least one angle and its opposite side?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin7a-h1"
+        ],
+        "title": "Required Information",
+        "text": "To use the Law of Sines, you need a known \"pair\" (an angle and its opposite side).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin7a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a662caelawsin7a-h2"
+        ],
+        "title": "$$\\frac{AAS}{ASA}$$",
+        "text": "If you know two angles and one side (AAS or ASA), can you always find a known angle-side pair?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a662caelawsin7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin7a-h2"
+        ],
+        "title": "Common Cases",
+        "text": "Think about the standard triangle $$\\frac{congruence}{similarity}$$ cases (AAS, ASA, SSA, SAS, SSS). Which ones provide a known angle-side pair?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin7a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a662caelawsin7a-h3"
+        ],
+        "title": "SSA",
+        "text": "If you know two sides and a non-included angle (SSA), can you always form a known angle-side pair?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

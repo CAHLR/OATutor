@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a590f38trigonometric39a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find principal values for the argument",
+        "text": "Let $$u$$ $$=$$ 2\\theta$$. $$Find$$ $$the$$ $$values$$ $$of$$ $$u$$ in $$(0$$, $$2\\pi)$$ for which $$\\cos(u)$$ $$=$$ -\\frac{\\sqrt{3}}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric39a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{5pi}{6}, \\frac{7pi}{6}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric39a-h1"
+        ],
+        "title": "Identify principal values for $$u$$",
+        "text": "What are the values of $$u$$ in $$(0$$, $$2\\pi)$$ such that $$\\cos(u)$$ $$=$$ -\\frac{\\sqrt{3}}{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{5pi}{6}, \\frac{7pi}{6}$$",
+            "$$\\frac{pi}{6$$,} \\frac{11pi}{6}$$",
+            "$$\\frac{2pi}{3}, \\frac{4pi}{3}$$",
+            "$$\\frac{pi}{3$$,} \\frac{5pi}{3}$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric39a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric39a-h1"
+        ],
+        "title": "Account for the multiple angle and interval",
+        "text": "Since the original interval is $$0\\leq\\theta<2pi$$, $$the$$ $$interval$$ $$for$$ $$2\\theta$$ is $$0\\leq2\\theta<4pi$$. $$Find$$ $$all$$ $$solutions$$ $$for$$ $$2\\theta$$ in this extended interval, then divide by $$2$$ to find $$\\theta$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric39a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{5pi}{6}, \\frac{7pi}{6}, \\frac{17pi}{6}, \\frac{19pi}{6}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric39a-h2"
+        ],
+        "title": "Find all solutions for $$2\\theta$$",
+        "text": "What are all the solutions for $$2\\theta$$ in the interval $$(0$$, $$4\\pi)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{5pi}{6}, \\frac{7pi}{6}, \\frac{17pi}{6}, \\frac{19pi}{6}$$",
+            "$$\\frac{5pi}{6}, \\frac{7pi}{6}$$",
+            "$$\\frac{pi}{6$$,} \\frac{5pi}{6}, \\frac{13pi}{6}, \\frac{17pi}{6}$$",
+            "$$\\frac{3pi}{4}, \\frac{5pi}{4}, \\frac{11pi}{4}, \\frac{13pi}{4}$$"
+        ]
+    }
+]

@@ -1,0 +1,92 @@
+[
+    {
+        "id": "abc3475rational15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Writing Independent Equations for Water and Fertilizer",
+        "text": "Since the water increases at $$5$$ gallons per minute, and the fertilizer increases at $$2$$ pounds per minute, these are constant rates of change. This tells us the amount of water in the tank and the amount of fertilizer in the tank are both changing linearly.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abc3475rational15a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "water: W(t) $$=$$ $$50$$ + $$5t$$ in gallons, fertilizer: F(t) $$=$$ $$2t$$ in pounds"
+        ],
+        "dependencies": [
+            "abc3475rational15a-h1"
+        ],
+        "title": "Select Independent Equations",
+        "text": "Which pair of equations best represents the equations for water and fertilizer? Let $$t$$ be the number of minutes since the water started flowing.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "water: W(t) $$=$$ $$50$$ + $$5t$$ in gallons, fertilizer: F(t) $$=$$ $$2t$$ in pounds",
+            "water: W(t) $$=$$ $$50$$ + $$5t$$ in gallons, fertilizer: F(t) $$=$$ $$50$$ + $$2t$$ in pounds",
+            "water: W(t) $$=$$ $$50$$ + $$t^2$$ in gallons, fertilizer: F(t) $$=$$ $$2t^2$$ in pounds"
+        ]
+    },
+    {
+        "id": "abc3475rational15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abc3475rational15a-h2"
+        ],
+        "title": "Concentration",
+        "text": "The concentration will be the ratio of pounds of fertilizer to gallons of water. Think about how you can represent that ratio from the equations for water and fertilizer.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abc3475rational15a-h4",
+        "type": "hint",
+        "dependencies": [
+            "abc3475rational15a-h3"
+        ],
+        "title": "Find the Concentration in the Beginning",
+        "text": "Plug in $$t$$ $$=$$ $$0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abc3475rational15a-h5",
+        "type": "hint",
+        "dependencies": [
+            "abc3475rational15a-h4"
+        ],
+        "title": "Find the Concentration After $$15$$ Minutes",
+        "text": "Plug in $$t$$ $$=$$ $$15$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abc3475rational15a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "less"
+        ],
+        "dependencies": [
+            "abc3475rational15a-h5"
+        ],
+        "title": "Compare the concentrations",
+        "text": "Is the concentration after $$15$$ minutes greater, less, or the same as the concentration in the beginning?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "same",
+            "less",
+            "greater"
+        ]
+    }
+]

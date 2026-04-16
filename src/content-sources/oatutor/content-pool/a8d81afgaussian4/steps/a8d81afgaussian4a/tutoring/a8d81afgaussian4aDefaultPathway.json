@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a8d81afgaussian4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "What is a Matrix with Zeroes on the Diagonal?",
+        "text": "A matrix with zeroes on the diagonal refers to a square matrix where all the diagonal entries (from the top left to the bottom right) are zero.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8d81afgaussian4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8d81afgaussian4a-h1"
+        ],
+        "title": "Gaussian Elimination",
+        "text": "If you're using Gaussian elimination, a zero on the diagonal does not automatically make the matrix unsolvable, but it can create challenges. A zero in the diagonal position of a pivot can indicate that the system has no unique solution, or it may require special handling, such as row swapping or using other methods.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

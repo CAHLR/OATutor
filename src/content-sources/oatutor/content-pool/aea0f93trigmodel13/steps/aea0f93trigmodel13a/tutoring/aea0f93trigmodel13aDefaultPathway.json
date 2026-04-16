@@ -1,0 +1,70 @@
+[
+    {
+        "id": "aea0f93trigmodel13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Damped Harmonic Motion Formula",
+        "text": "The general form for damped harmonic motion is f(t) $$=$$ ae**(-ct)\\cos(\\omegat) or f(t) $$=$$ ae**(-ct)\\sin(\\omegat). For problems where the initial displacement is given as a maximum, we often use f(t) $$=$$ $${ae}^{\\left(-ct\\right)}$$ to model the envelope of the damping.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel13a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel13a-h1"
+        ],
+        "title": "Identify Initial Amplitude",
+        "text": "What is the initial displacement of the string from its resting position?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel13a-h1"
+        ],
+        "title": "Set up the Equation",
+        "text": "Substitute the known values (initial amplitude, time, and displacement at that time) into the envelope equation f(t) $$=$$ $${ae}^{\\left(-ct\\right)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel13a-h2"
+        ],
+        "title": "Solve for c",
+        "text": "Use logarithms to isolate c.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel13a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\ln\\left(2\\right)}{3}$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel13a-h3"
+        ],
+        "title": "Calculate Damping Constant",
+        "text": "What is the value of c?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

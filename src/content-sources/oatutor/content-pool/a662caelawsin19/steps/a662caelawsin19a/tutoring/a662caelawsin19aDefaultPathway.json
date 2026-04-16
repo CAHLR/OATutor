@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a662caelawsin19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply the Law of Sines",
+        "text": "Use the Law of Sines to find angle $$B$$: $$\\frac{\\sin$$ $$B}{b$$} $$=$$ $$\\frac{\\sin$$ $$C}{c}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin19a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\sin$$ $$B}{10$$} $$=$$ $$\\frac{\\sin$$ 113**\\circ}{32}$$"
+        ],
+        "dependencies": [
+            "a662caelawsin19a-h1"
+        ],
+        "title": "Set up the proportion for $$\\sin$$ $$B$$",
+        "text": "What is the proportion for $$\\sin$$ $$B$$ using the given values?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\sin$$ $$B}{10$$} $$=$$ $$\\frac{\\sin$$ 113**\\circ}{32}$$",
+            "$$\\frac{\\sin$$ $$B}{32$$} $$=$$ $$\\frac{\\sin$$ 113**\\circ}{10}$$",
+            "$$\\frac{10}{\\sin$$ $$B$$} $$=$$ $$\\frac{32}{\\sin$$ 113**\\circ}$$",
+            "$$\\frac{\\sin$$ $$B}{10$$} $$=$$ $$\\frac{32}{\\sin$$ 113**\\circ}$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin19a-h1"
+        ],
+        "title": "Solve for $$\\sin$$ $$B$$",
+        "text": "Isolate $$\\sin$$ $$B$$ and calculate its value.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin19a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{10$$ $$\\sin$$ 113**\\circ}{32} $$\\approx$$ $$0.288$$"
+        ],
+        "dependencies": [
+            "a662caelawsin19a-h2"
+        ],
+        "title": "What is the value of $$\\sin$$ $$B$$?",
+        "text": "Calculate $$\\sin$$ $$B$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{10$$ $$\\sin$$ 113**\\circ}{32} $$\\approx$$ $$0.288$$",
+            "$$\\frac{32$$ $$\\sin$$ 113**\\circ}{10} $$\\approx$$ $$2.95$$",
+            "$$\\frac{10$$ $$\\cos$$ 113**\\circ}{32} $$\\approx$$ $$-0.12$$",
+            "$$\\frac{10$$ $$\\sin$$ 113**\\circ}{10} $$\\approx$$ $$0.93$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin19a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin19a-h2"
+        ],
+        "title": "Find angle $$B$$",
+        "text": "Use the inverse sine function to find $$B$$, $$rounding$$ $$to$$ $$the$$ $$nearest$$ $$tenth$$ $$of$$ $$a$$ $$degree$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin19a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$16.4$$"
+        ],
+        "dependencies": [
+            "a662caelawsin19a-h3"
+        ],
+        "title": "Calculate $$B$$",
+        "text": "What is the value of $$B$$, $$in$$ $$degrees$$ $$to$$ $$the$$ $$nearest$$ $$tenth$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

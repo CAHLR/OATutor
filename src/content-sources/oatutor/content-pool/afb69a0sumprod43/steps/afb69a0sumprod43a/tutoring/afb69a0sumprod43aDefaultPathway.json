@@ -1,0 +1,89 @@
+[
+    {
+        "id": "afb69a0sumprod43a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor out common terms",
+        "text": "Look for common factors on the left side of the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod43a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod43a-h1"
+        ],
+        "title": "Recall double angle formula for cosine",
+        "text": "The expression $$\\cos**{2}x-sin**{2}x$$ is a form of the double angle identity for cosine.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod43a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\cos(2x)$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod43a-h2"
+        ],
+        "title": "Apply double angle formula",
+        "text": "What is $$\\cos**{2}x-sin**{2}x$$ equivalent to?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod43a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod43a-h2"
+        ],
+        "title": "Rewrite the expression",
+        "text": "Substitute the simplified term back into the expression.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod43a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod43a-h3"
+        ],
+        "title": "Recall product-to-sum formula for \\cos A \\cos B",
+        "text": "The product-to-sum formula for \\cos A \\cos B is $$\\cos$$ $$A$$ $$\\cos$$ $$B$$ $$=$$ $$\\frac{1}{2}(\\cos(A-B)$$ + \\cos(A+B))$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod43a-h5",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod43a-h4"
+        ],
+        "title": "Apply the product-to-sum formula",
+        "text": "Substitute A and B into the formula to rewrite $$\\cosx\\cos(2x)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod43a-h6",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod43a-h5"
+        ],
+        "title": "Final simplification",
+        "text": "Substitute this back into $$2\\cosx\\cos(2x)$$ and use the even identity for cosine.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

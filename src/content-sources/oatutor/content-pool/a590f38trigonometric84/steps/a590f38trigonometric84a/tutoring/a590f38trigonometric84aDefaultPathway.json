@@ -1,0 +1,128 @@
+[
+    {
+        "id": "a590f38trigonometric84a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rearrange and factor",
+        "text": "Move all terms to one side of the equation and factor out the common trigonometric function.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric84a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\cos$$ $$t$$ (\\cos**2 $$t$$ $$-$$ $$1)$$ $$=$$ $$0$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric84a-h1"
+        ],
+        "title": "Factor the equation",
+        "text": "After moving terms, what is the factored form of the equation?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\cos$$ $$t$$ (\\cos**2 $$t$$ $$-$$ $$1)$$ $$=$$ $$0$$",
+            "$$\\cos$$ $$t$$ (\\cos**2 $$t$$ + $$1)$$ $$=$$ $$0$$",
+            "$$\\cos$$ $$t$$ $$(\\cos$$ $$t$$ $$-$$ $$1)$$ $$=$$ $$0$$",
+            "$$\\sin$$ $$t$$ (\\sin**2 $$t$$ $$-$$ $$1)$$ $$=$$ $$0$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric84a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric84a-h1"
+        ],
+        "title": "Use a Pythagorean Identity",
+        "text": "Simplify the expression inside the parentheses using a Pythagorean identity.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric84a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-\\sin**2 $$t$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric84a-h2"
+        ],
+        "title": "Apply identity",
+        "text": "How can $$\\cos**2 $$t$$ $$-$$ $$1$$ be rewritten using a Pythagorean identity?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$-\\sin**2 $$t$$",
+            "$$\\sin**2 $$t$$",
+            "$$\\cos**2 $$t$$",
+            "$$1$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric84a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric84a-h2"
+        ],
+        "title": "Solve each factor",
+        "text": "Set each factor equal to zero and solve for $$t$$ within the given interval $$0$$ $$\\leq$$ $$t$$ < $$2\\pi$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric84a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{2$$,} $$\\frac{3\\pi}{2}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric84a-h3"
+        ],
+        "title": "Solve for $$\\cos$$ $$t$$ $$=$$ $$0$$",
+        "text": "What are the solutions for $$\\cos$$ $$t$$ $$=$$ $$0$$ in the interval $$(0$$, $$2\\pi)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\pi}{2$$,} $$\\frac{3\\pi}{2}$$",
+            "$$\\frac{\\pi}{2}$$",
+            "$$0$$, $$\\pi$$",
+            "$$\\frac{\\pi}{2$$,} $$\\frac{3\\pi}{2$$,} $$\\frac{5\\pi}{2}$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric84a-s4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$, $$\\pi$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric84a-h3"
+        ],
+        "title": "Solve for $$\\sin$$ $$t$$ $$=$$ $$0$$",
+        "text": "What are the solutions for $$\\sin$$ $$t$$ $$=$$ $$0$$ in the interval $$(0$$, $$2\\pi)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$0$$, $$\\pi$$",
+            "$$0$$",
+            "$$\\frac{\\pi}{2$$,} $$\\frac{3\\pi}{2}$$",
+            "$$0$$, $$\\pi$$, $$2\\pi$$"
+        ]
+    }
+]

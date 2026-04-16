@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a63563bnewton22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Derivative of f(x)",
+        "text": "The derivative of f(x) would be needed to use Newton's method.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a63563bnewton22a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$f'(x)=e^x$$"
+        ],
+        "dependencies": [
+            "a63563bnewton22a-h1"
+        ],
+        "title": "Derivative of f(x)",
+        "text": "What is the derivative of $$f(x)=e^x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$f'(x)={xe}^x$$",
+            "$$f'(x)=e$$",
+            "$$f'(x)=e^x$$",
+            "$$f'(x)=xe$$"
+        ]
+    },
+    {
+        "id": "a63563bnewton22a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a63563bnewton22a-h2"
+        ],
+        "title": "Failure of Newton's Method",
+        "text": "Consider what the consequence is when f'(x) is the same as f(x).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

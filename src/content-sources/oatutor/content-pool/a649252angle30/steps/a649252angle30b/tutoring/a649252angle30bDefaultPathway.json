@@ -1,0 +1,62 @@
+[
+    {
+        "id": "a649252angle30b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall the double angle formula for cosine",
+        "text": "The double angle formulas for cosine are $$\\cos(2x)$$ $$=$$ \\cos**2(x) $$-$$ \\sin**2(x)$$, $$\\cos(2x)$$ $$=$$ 2\\cos**2(x) $$-$$ $$1$$, $$or$$ $$\\cos(2x)$$ $$=$$ $$1$$ $$-$$ 2\\sin**2(x)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle30b-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1$$ $$-$$ 2\\sin**2(x)$$"
+        ],
+        "dependencies": [
+            "a649252angle30b-h1"
+        ],
+        "title": "Choose a formula",
+        "text": "Which of the following double angle formulas for cosine would be most convenient to use, given you know $$\\sin(x)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\cos**2(x) $$-$$ \\sin**2(x)$$",
+            "$$2\\cos**2(x) $$-$$ $$1$$",
+            "$$1$$ $$-$$ 2\\sin**2(x)$$",
+            "$$2\\sin(x)\\cos(x)$$"
+        ]
+    },
+    {
+        "id": "a649252angle30b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute and simplify",
+        "text": "Substitute the value of $$\\sin(x)$$ into the chosen formula.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle30b-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\frac{119}{169}$$"
+        ],
+        "dependencies": [
+            "a649252angle30b-h2"
+        ],
+        "title": "Calculate $$1$$ $$-$$ 2\\sin**2(x)$$",
+        "text": "Calculate $$1$$ $$-$$ $$2$$ $$\\cdot$$ (-\\frac{12}{13})**2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

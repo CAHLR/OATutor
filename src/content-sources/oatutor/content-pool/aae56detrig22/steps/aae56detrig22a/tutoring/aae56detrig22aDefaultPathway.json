@@ -1,0 +1,58 @@
+[
+    {
+        "id": "aae56detrig22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Applying the sine difference formula",
+        "text": "Recall the difference identity for sine: $$\\sin(A-B)$$ $$=$$ $$\\sin$$ $$A$$ $$\\cos$$ $$B$$ $$-$$ $$\\cos$$ $$A$$ $$\\sin$$ $$B$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig22a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig22a-h1"
+        ],
+        "title": "Evaluate trigonometric values",
+        "text": "Determine the exact values of $$\\cos(\\frac{3pi}{4})$$ and $$\\sin(\\frac{3pi}{4})$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig22a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\frac{\\sqrt{2}}{2}$$"
+        ],
+        "dependencies": [
+            "aae56detrig22a-h2"
+        ],
+        "title": "Evaluate $$\\cos(\\frac{3pi}{4})$$",
+        "text": "What is the exact value of $$\\cos(\\frac{3pi}{4})$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig22a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\sqrt{2}}{2}$$"
+        ],
+        "dependencies": [
+            "aae56detrig22a-h2"
+        ],
+        "title": "Evaluate $$\\sin(\\frac{3pi}{4})$$",
+        "text": "What is the exact value of $$\\sin(\\frac{3pi}{4})$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

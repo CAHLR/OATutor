@@ -1,0 +1,124 @@
+[
+    {
+        "id": "ac1df14related3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Partial Derivatives",
+        "text": "Take the partial derivatives to this equation in relation to the variable $$t$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ac1df14related3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac1df14related3a-h1"
+        ],
+        "title": "Partial Derivatives Rules",
+        "text": "When taking partial derivatives, take the derivative of every value as normal, and make sure to include $$\\frac{du}{dx}$$ (with u being the variable involved) to each term with a variable.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ac1df14related3a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{2z dz}{dt}=\\frac{2x dx}{dt}+\\frac{2y dy}{dt}$$"
+        ],
+        "dependencies": [
+            "ac1df14related3a-h2"
+        ],
+        "title": "Derive First Term",
+        "text": "Derive $$z^2=x^2+y^2$$ in terms of $$t$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\frac{2z dz}{dt}=\\frac{2x dx}{dt}+\\frac{2y dy}{dt}$$",
+            "$$\\frac{z dz}{dt}=\\frac{x dx}{dt}+\\frac{y dy}{dt}$$",
+            "$$\\frac{2z^2 dz}{dt}=\\frac{2x^2 dx}{dt}+\\frac{2y^2 dy}{dt}$$",
+            "$$\\frac{2dz}{dt}=\\frac{2dx}{dt}+\\frac{2dy}{dt}$$"
+        ],
+        "subHints": [
+            {
+                "id": "ac1df14related3a-h3-s1",
+                "type": "scaffold",
+                "problemType": "MultipleChoice",
+                "answerType": "string",
+                "hintAnswer": [
+                    "$$\\frac{2z dz}{dt}$$"
+                ],
+                "dependencies": [],
+                "title": "Derive Second Term",
+                "text": "What is the derivative of $$z^2$$ with respect to $$t$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "",
+                "choices": [
+                    "$$\\frac{2z dz}{dt}$$",
+                    "$$\\frac{2z^2 dz}{dt}$$",
+                    "$$\\frac{z^2 dz}{dt}$$",
+                    "$$\\frac{2dz}{dt}$$"
+                ]
+            },
+            {
+                "id": "ac1df14related3a-h3-s2",
+                "type": "scaffold",
+                "problemType": "MultipleChoice",
+                "answerType": "string",
+                "hintAnswer": [
+                    "$$\\frac{2x dx}{dt}$$"
+                ],
+                "dependencies": [],
+                "title": "Derive Third Term",
+                "text": "What is the derivative of $$x^2$$ with respect to $$t$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "",
+                "choices": [
+                    "$$\\frac{2x dx}{dt}$$",
+                    "$$\\frac{2x^2 dx}{dt}$$",
+                    "$$\\frac{x^2 dx}{dt}$$",
+                    "$$\\frac{2dx}{dt}$$"
+                ]
+            },
+            {
+                "id": "ac1df14related3a-h3-s3",
+                "type": "scaffold",
+                "problemType": "MultipleChoice",
+                "answerType": "string",
+                "hintAnswer": [
+                    "$$\\frac{2y dx}{dt}$$"
+                ],
+                "dependencies": [],
+                "title": "Derive Fourth Term",
+                "text": "What is the derivative of $$y^2$$ with respect to $$t$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "",
+                "choices": [
+                    "$$\\frac{2y dy}{dt}$$",
+                    "$$\\frac{2y^2 dy}{dt}$$",
+                    "$$\\frac{y^2 dy}{dt}$$",
+                    "$$\\frac{2dy}{dt}$$"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ac1df14related3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ac1df14related3a-h3"
+        ],
+        "title": "Use $$\\frac{dx}{dt}$$ and $$x$$",
+        "text": "Now, the $$\\frac{dx}{dt}$$ and $$x$$ that were given in the problem statement can be plugged in to solve for the solution.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

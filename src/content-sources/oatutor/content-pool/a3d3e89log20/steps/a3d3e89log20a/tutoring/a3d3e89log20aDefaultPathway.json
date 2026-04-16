@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a3d3e89log20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Natural Logarithm",
+        "text": "lnx is the same as loge(x).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log20a-h1"
+        ],
+        "title": "Simplify",
+        "text": "Simplify $$\\operatorname{loge}\\left(\\sqrt{2}\\right)$$ with a calculator. You may have to type $$\\sqrt{2}$$ as $$2^{0.5}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log20a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log20a-h2"
+        ],
+        "title": "Round",
+        "text": "We get $$0.1505$$. To round to nearest thousandth, we check that the third decimal place is less or equal $$\\frac{to}{greater}$$ than $$5$$. If equal $$\\frac{to}{greater}$$ than $$5$$, we round up to the next thousandth.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

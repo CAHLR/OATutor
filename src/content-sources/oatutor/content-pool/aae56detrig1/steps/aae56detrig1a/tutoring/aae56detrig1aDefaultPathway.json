@@ -1,0 +1,99 @@
+[
+    {
+        "id": "aae56detrig1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Applying the cosine difference formula",
+        "text": "Recall that $$\\cos(A-B)$$ $$=$$ $$\\cos(A)\\cos(B)$$ + $$\\sin(A)\\sin(B)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig1a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\cos(A-B)$$ $$=$$ $$\\cos(A)\\cos(B)$$ + $$\\sin(A)\\sin(B)$$"
+        ],
+        "dependencies": [
+            "aae56detrig1a-h1"
+        ],
+        "title": "State the formula",
+        "text": "What is the formula for $$\\cos(A$$ $$-$$ $$B)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\cos(A-B)$$ $$=$$ $$\\cos(A)\\cos(B)$$ + $$\\sin(A)\\sin(B)$$",
+            "$$\\cos(A-B)$$ $$=$$ $$\\cos(A)\\cos(B)$$ $$-$$ $$\\sin(A)\\sin(B)$$",
+            "$$\\cos(A-B)$$ $$=$$ $$\\sin(A)\\cos(B)$$ + $$\\cos(A)\\sin(B)$$",
+            "$$\\cos(A-B)$$ $$=$$ $$\\sin(A)\\cos(B)$$ $$-$$ $$\\cos(A)\\sin(B)$$"
+        ]
+    },
+    {
+        "id": "aae56detrig1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig1a-h1"
+        ],
+        "title": "Identify $A$ and $B$",
+        "text": "What are the values of A and B in the expression $$\\cos(\\frac{5pi}{4}-\\frac{pi}{6})$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig1a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A$$ $$=$$ \\frac{5pi}{4}, $$B$$ $$=$$ $$\\frac{pi}{6}$$"
+        ],
+        "dependencies": [
+            "aae56detrig1a-h2"
+        ],
+        "title": "Identify $A$ and $B$",
+        "text": "In $$\\cos(\\frac{5pi}{4}-\\frac{pi}{6})$$, $$what$$ $$are$$ $$A$$ $$and$$ $$B$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$A$$ $$=$$ \\frac{5pi}{4}, $$B$$ $$=$$ $$\\frac{pi}{6}$$",
+            "$$A$$ $$=$$ $$\\frac{pi}{6$$,} $$B$$ $$=$$ \\frac{5pi}{4}$$",
+            "$$A$$ $$=$$ \\frac{5pi}{4}, $$B$$ $$=$$ $$-\\frac{pi}{6}$$",
+            "$$A$$ $$=$$ $$\\frac{pi}{4$$,} $$B$$ $$=$$ $$\\frac{pi}{6}$$"
+        ]
+    },
+    {
+        "id": "aae56detrig1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig1a-h2"
+        ],
+        "title": "Evaluate trig values",
+        "text": "Find the sine and cosine values for $$A$$ $$=$$ \\frac{5pi}{4}$$ and $$B$$ $$=$$ $$\\frac{pi}{6}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig1a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\frac{\\sqrt{2}}{2}$$"
+        ],
+        "dependencies": [
+            "aae56detrig1a-h3"
+        ],
+        "title": "Evaluate $$\\cos(A)$$",
+        "text": "What is $$\\cos(\\frac{5pi}{4})$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

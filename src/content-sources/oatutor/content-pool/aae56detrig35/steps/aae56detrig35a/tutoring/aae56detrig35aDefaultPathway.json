@@ -1,0 +1,115 @@
+[
+    {
+        "id": "aae56detrig35a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Evaluate inverse trigonometric functions",
+        "text": "Begin by finding the values of $$\\sin**{-1}(\\frac{1}{2})$$ and $$\\cos**{-1}(\\frac{1}{2})$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig35a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{6}$$"
+        ],
+        "dependencies": [
+            "aae56detrig35a-h1"
+        ],
+        "title": "Evaluate $$\\sin**{-1}(\\frac{1}{2})$$",
+        "text": "What is the angle $$A$$ in $$(-\\frac{\\pi}{2$$,} $$\\frac{\\pi}{2})$$ such that $$\\sin(A)$$ $$=$$ $$\\frac{1}{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig35a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{3}$$"
+        ],
+        "dependencies": [
+            "aae56detrig35a-h1"
+        ],
+        "title": "Evaluate $$\\cos**{-1}(\\frac{1}{2})$$",
+        "text": "What is the angle $$B$$ in $$(0$$, $$\\pi)$$ such that $$\\cos(B)$$ $$=$$ $$\\frac{1}{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig35a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig35a-h1"
+        ],
+        "title": "Apply the tangent difference formula",
+        "text": "Recall that $$tan(A$$ $$-$$ $$B)$$ $$=$$ $$\\frac{tan(A)$$ $$-$$ $$tan(B)}{1$$ + $$tan(A)tan(B)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig35a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A$$ $$=$$ $$\\frac{\\pi}{6$$,} $$B$$ $$=$$ $$\\frac{\\pi}{3}$$"
+        ],
+        "dependencies": [
+            "aae56detrig35a-h2"
+        ],
+        "title": "Identify $A$ and $B$",
+        "text": "After evaluating the inverse functions, what are the values for A and B in $$tan(A$$ $$-$$ $$B)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$A$$ $$=$$ $$\\frac{\\pi}{6$$,} $$B$$ $$=$$ $$\\frac{\\pi}{3}$$",
+            "$$A$$ $$=$$ $$\\frac{\\pi}{3$$,} $$B$$ $$=$$ $$\\frac{\\pi}{6}$$",
+            "$$A$$ $$=$$ $$\\frac{\\pi}{4$$,} $$B$$ $$=$$ $$\\frac{\\pi}{2}$$",
+            "$$A$$ $$=$$ $$\\frac{\\pi}{2$$,} $$B$$ $$=$$ $$\\frac{\\pi}{4}$$"
+        ]
+    },
+    {
+        "id": "aae56detrig35a-s4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\frac{\\pi}{6}$$"
+        ],
+        "dependencies": [
+            "aae56detrig35a-h2"
+        ],
+        "title": "Calculate $$A$$ $$-$$ $$B$$",
+        "text": "What is $$\\frac{\\pi}{6$$} $$-$$ $$\\frac{\\pi}{3}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig35a-s5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\frac{\\sqrt{3}}{3}$$"
+        ],
+        "dependencies": [
+            "aae56detrig35a-h2"
+        ],
+        "title": "Evaluate $$tan(-\\frac{\\pi}{6})$$",
+        "text": "What is the exact value of $$tan(-\\frac{\\pi}{6})$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

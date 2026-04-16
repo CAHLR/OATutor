@@ -1,0 +1,56 @@
+[
+    {
+        "id": "acc585clocation15b-h3",
+        "type": "hint",
+        "dependencies": [
+            "acc585clocation15a-h2"
+        ],
+        "title": "Good or Bad in Context",
+        "text": "A low percentile means that that a player scored less points per game while a high percentile means that a player scored more points per game.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "acc585clocation15b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Higher Percentile"
+        ],
+        "dependencies": [
+            "acc585clocation15b-h3"
+        ],
+        "title": "Good or Bad in Context",
+        "text": "In context, since this assesses accuracy, is it better to have a lower percentile (scoring less points per game) or have a higher percentile (scoring more points per game)? Assume this is like basketball, a game where high scores are better than low scores.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Lower Percentile",
+            "Higher Percentile"
+        ]
+    },
+    {
+        "id": "acc585clocation15b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Bad"
+        ],
+        "dependencies": [
+            "acc585clocation15b-h4"
+        ],
+        "title": "Determining if 40th Percentile is Good or Bad",
+        "text": "Since it is better to have a higher percentile (scoring more answers correct), is having a low percentile such as $$40$$ (less than 50) relatively a good thing or a bad thing?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Good",
+            "Bad"
+        ]
+    }
+]

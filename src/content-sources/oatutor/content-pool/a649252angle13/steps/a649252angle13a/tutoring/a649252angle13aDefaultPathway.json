@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a649252angle13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall the formula",
+        "text": "Recall a common form of the half-angle formula for $$\\tan(\\frac{x}{2})$$ that involves $$\\cos$$ $$x$$ in the denominator.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle13a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\sin$$ $$x}{1$$ + $$\\cos$$ $$x}$$"
+        ],
+        "dependencies": [
+            "a649252angle13a-h1"
+        ],
+        "title": "Identify the formula",
+        "text": "What is one common form of the half-angle formula for $$\\tan(\\frac{x}{2})$$ that has $$\\cos$$ $$x$$ in the denominator?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\sin$$ $$x}{1$$ + $$\\cos$$ $$x}$$",
+            "$$\\frac{\\sin$$ $$x}{1$$ $$-$$ $$\\cos$$ $$x}$$",
+            "$$\\frac{1$$ + $$\\cos$$ $$x}{\\sin$$ $$x}$$",
+            "$$\\frac{\\cos$$ $$x}{1$$ + $$\\sin$$ $$x}$$"
+        ]
+    },
+    {
+        "id": "a649252angle13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle13a-h1"
+        ],
+        "title": "Find when denominator is zero",
+        "text": "Identify the values of $$x$$ for which the denominator of this formula is zero.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle13a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "a649252angle13a-h2"
+        ],
+        "title": "Value of $$\\cos$$ $$x$$",
+        "text": "For the formula $$\\frac{\\sin$$ $$x}{1$$ + $$\\cos$$ $$x}$$, $$what$$ $$value$$ $$of$$ $$\\cos$$ $$x$$ makes the denominator zero?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle13a-h2"
+        ],
+        "title": "Consider $$\\tan(x/2)$$ at these values",
+        "text": "Consider what happens to $$\\tan(\\frac{x}{2})$$ at these values of $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle13a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{2$$} + $$k\\pi$$"
+        ],
+        "dependencies": [
+            "a649252angle13a-h3"
+        ],
+        "title": "Values of $$\\frac{x}{2}$$",
+        "text": "If $$\\cos$$ $$x$$ $$=$$ $$-1$$, $$what$$ $$are$$ $$the$$ $$corresponding$$ $$values$$ $$of$$ $$\\frac{x}{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\pi}{2$$} + $$k\\pi$$",
+            "$$k\\pi$$",
+            "$$\\frac{\\pi}{2$$} + $$2k\\pi$$",
+            "$$\\pi$$ + $$2k\\pi$$"
+        ]
+    }
+]

@@ -1,0 +1,105 @@
+[
+    {
+        "id": "a590f38trigonometric38a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Isolate the trigonometric function",
+        "text": "Begin by isolating $$\\cos(3\\theta)$$ on one side of the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric38a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\cos(3\\theta)=-\\frac{\\sqrt{2}}{2}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric38a-h1"
+        ],
+        "title": "Isolate $$\\cos(3\\theta)$$",
+        "text": "What is the equation after isolating $$\\cos(3\\theta)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\cos(3\\theta)=-\\frac{\\sqrt{2}}{2}$$",
+            "$$\\cos(3\\theta)=\\frac{\\sqrt{2}}{2}$$",
+            "$$\\cos(3\\theta)=-\\frac{1}{2}$$",
+            "$$\\cos(3\\theta)=\\frac{1}{2}$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric38a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric38a-h1"
+        ],
+        "title": "Find principal values for the argument",
+        "text": "Let $$u$$ $$=$$ 3\\theta$$. $$Find$$ $$the$$ $$values$$ $$of$$ $$u$$ in $$(0$$, $$2\\pi)$$ for which $$\\cos(u)$$ $$=$$ -\\frac{\\sqrt{2}}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric38a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{3pi}{4}, \\frac{5pi}{4}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric38a-h2"
+        ],
+        "title": "Identify principal values for $$u$$",
+        "text": "What are the values of $$u$$ in $$(0$$, $$2\\pi)$$ such that $$\\cos(u)$$ $$=$$ -\\frac{\\sqrt{2}}{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{3pi}{4}, \\frac{5pi}{4}$$",
+            "$$\\frac{pi}{4$$,} \\frac{7pi}{4}$$",
+            "$$\\frac{pi}{3$$,} \\frac{2pi}{3}$$",
+            "$$\\frac{pi}{6$$,} \\frac{11pi}{6}$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric38a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric38a-h2"
+        ],
+        "title": "Account for the multiple angle and interval",
+        "text": "Since the original interval is $$0\\leq\\theta<2pi$$, $$the$$ $$interval$$ $$for$$ $$3\\theta$$ is $$0\\leq3\\theta<6pi$$. $$Find$$ $$all$$ $$solutions$$ $$for$$ $$3\\theta$$ in this extended interval, then divide by $$3$$ to find $$\\theta$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric38a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{3pi}{4}, \\frac{5pi}{4}, \\frac{11pi}{4}, \\frac{13pi}{4}, \\frac{19pi}{4}, \\frac{21pi}{4}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric38a-h3"
+        ],
+        "title": "Find all solutions for $$3\\theta$$",
+        "text": "What are all the solutions for $$3\\theta$$ in the interval $$(0$$, $$6\\pi)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{3pi}{4}, \\frac{5pi}{4}, \\frac{11pi}{4}, \\frac{13pi}{4}, \\frac{19pi}{4}, \\frac{21pi}{4}$$",
+            "$$\\frac{3pi}{4}, \\frac{5pi}{4}, \\frac{11pi}{4}, \\frac{13pi}{4}$$",
+            "$$\\frac{pi}{4$$,} \\frac{3pi}{4}, \\frac{9pi}{4}, \\frac{11pi}{4}, \\frac{17pi}{4}, \\frac{19pi}{4}$$",
+            "$$\\frac{5pi}{6}, \\frac{7pi}{6}, \\frac{17pi}{6}, \\frac{19pi}{6}, \\frac{29pi}{6}, \\frac{31pi}{6}$$"
+        ]
+    }
+]

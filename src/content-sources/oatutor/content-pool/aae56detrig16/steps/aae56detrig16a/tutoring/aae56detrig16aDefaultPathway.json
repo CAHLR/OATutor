@@ -1,0 +1,99 @@
+[
+    {
+        "id": "aae56detrig16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Decompose the angle",
+        "text": "The angle $$$$ \\frac{pi}{12} $$$$ is not a standard unit circle angle. Try to express it as a sum or difference of two standard angles (e.g., $$$$ \\frac{pi}{3} $$$$, $$$$ \\frac{pi}{4} $$$$, $$$$ \\frac{pi}{6} $$)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig16a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$$$ \\frac{pi}{3} $$-$$ \\frac{pi}{4} $$$$"
+        ],
+        "dependencies": [
+            "aae56detrig16a-h1"
+        ],
+        "title": "Rewrite $$$$ \\frac{pi}{12} $$$$",
+        "text": "Which difference of two common angles equals $$$$ \\frac{pi}{12} $$$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$$$ \\frac{pi}{3} $$-$$ \\frac{pi}{4} $$$$",
+            "$$$$ \\frac{pi}{2} $$-$$ \\frac{pi}{3} $$$$",
+            "$$$$ \\frac{pi}{3} + \\frac{pi}{4} $$$$",
+            "$$$$ \\frac{pi}{6} $$-$$ \\frac{pi}{4} $$$$"
+        ]
+    },
+    {
+        "id": "aae56detrig16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig16a-h1"
+        ],
+        "title": "Recall the $$\\frac{sum}{difference}$$ identity",
+        "text": "Once you've decomposed the angle, recall the appropriate sum or difference identity for cosine.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig16a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$$$ \\cos(A)\\cos(B) + \\sin(A)\\sin(B) $$$$"
+        ],
+        "dependencies": [
+            "aae56detrig16a-h2"
+        ],
+        "title": "Cosine difference identity",
+        "text": "What is the identity for $$$$ $$\\cos(A-B)$$ $$$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$$$ \\cos(A)\\cos(B) + \\sin(A)\\sin(B) $$$$",
+            "$$$$ \\cos(A)\\cos(B) $$-$$ \\sin(A)\\sin(B) $$$$",
+            "$$$$ \\sin(A)\\cos(B) + \\cos(A)\\sin(B) $$$$",
+            "$$$$ \\sin(A)\\cos(B) $$-$$ \\cos(A)\\sin(B) $$$$"
+        ]
+    },
+    {
+        "id": "aae56detrig16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig16a-h2"
+        ],
+        "title": "Evaluate standard trigonometric values",
+        "text": "You will need the sine and cosine values for the standard angles you chose.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig16a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$$$ \\frac{\\sqrt{2}}{2} $$$$"
+        ],
+        "dependencies": [
+            "aae56detrig16a-h3"
+        ],
+        "title": "Value of $$$$ \\sin(\\frac{pi}{4}) $$$$",
+        "text": "What is the exact value of $$$$ \\sin(\\frac{pi}{4}) $$$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

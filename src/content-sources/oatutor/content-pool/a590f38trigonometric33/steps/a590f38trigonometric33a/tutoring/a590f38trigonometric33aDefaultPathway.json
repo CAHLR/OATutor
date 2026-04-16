@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a590f38trigonometric33a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Isolate the trigonometric function",
+        "text": "Divide both sides of the equation by $$2$$ to isolate $$costheta$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric33a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\cos\\theta=-\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric33a-h1"
+        ],
+        "title": "What is the simplified equation?",
+        "text": "What is the equation after isolating $$costheta$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\cos\\theta=-\\frac{1}{2}$$",
+            "$$\\cos\\theta=-1$$",
+            "$$\\cos\\theta=-2$$",
+            "$$\\cos\\theta=\\frac{1}{2}$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric33a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric33a-h1"
+        ],
+        "title": "Recall unit circle values and quadrants",
+        "text": "Cosine is negative in the second and third quadrants. Think about the angle in the second quadrant where the cosine value is $$-\\frac{1}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric33a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{3}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric33a-h2"
+        ],
+        "title": "What is the reference angle?",
+        "text": "What is the reference angle $$\\theta_R$$ such that $$\\cos(\\theta_R)=\\frac{1}{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric33a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric33a-h2"
+        ],
+        "title": "Find the angle in the second quadrant",
+        "text": "To find the angle in the second quadrant, subtract the reference angle from $$\\pi$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric33a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2\\pi}{3}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric33a-h3"
+        ],
+        "title": "Calculate the angle",
+        "text": "What is $$\\pi$$ $$-$$ $$\\frac{\\pi}{3}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

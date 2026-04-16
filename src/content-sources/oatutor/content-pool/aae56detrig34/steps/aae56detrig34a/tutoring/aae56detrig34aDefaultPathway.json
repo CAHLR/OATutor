@@ -1,0 +1,121 @@
+[
+    {
+        "id": "aae56detrig34a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Evaluate inverse trigonometric functions",
+        "text": "First, find the values of $$\\cos**{-1}(\\frac{\\sqrt{2}}{2})$$ and $$\\sin**{-1}(\\frac{\\sqrt{3}}{2})$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig34a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{4}$$"
+        ],
+        "dependencies": [
+            "aae56detrig34a-h1"
+        ],
+        "title": "Evaluate $$\\cos**{-1}(\\frac{\\sqrt{2}}{2})$$",
+        "text": "What is the angle $$A$$ in $$(0$$, $$\\pi)$$ such that $$\\cos(A)$$ $$=$$ \\frac{\\sqrt{2}}{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig34a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{3}$$"
+        ],
+        "dependencies": [
+            "aae56detrig34a-h1"
+        ],
+        "title": "Evaluate $$\\sin**{-1}(\\frac{\\sqrt{3}}{2})$$",
+        "text": "What is the angle $$B$$ in $$(-\\frac{\\pi}{2$$,} $$\\frac{\\pi}{2})$$ such that $$\\sin(B)$$ $$=$$ \\frac{\\sqrt{3}}{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig34a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig34a-h1"
+        ],
+        "title": "Apply the cosine sum formula",
+        "text": "Recall that $$\\cos(A$$ + $$B)$$ $$=$$ $$\\cos(A)\\cos(B)$$ $$-$$ $$\\sin(A)\\sin(B)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig34a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A$$ $$=$$ $$\\frac{\\pi}{4$$,} $$B$$ $$=$$ $$\\frac{\\pi}{3}$$"
+        ],
+        "dependencies": [
+            "aae56detrig34a-h2"
+        ],
+        "title": "Identify $A$ and $B$",
+        "text": "After evaluating the inverse functions, what are the values for A and B in $$\\cos(A$$ + $$B)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$A$$ $$=$$ $$\\frac{\\pi}{4$$,} $$B$$ $$=$$ $$\\frac{\\pi}{3}$$",
+            "$$A$$ $$=$$ $$\\frac{\\pi}{3$$,} $$B$$ $$=$$ $$\\frac{\\pi}{4}$$",
+            "$$A$$ $$=$$ $$\\frac{\\pi}{2$$,} $$B$$ $$=$$ $$\\frac{\\pi}{6}$$",
+            "$$A$$ $$=$$ $$\\frac{\\pi}{6$$,} $$B$$ $$=$$ $$\\frac{\\pi}{2}$$"
+        ]
+    },
+    {
+        "id": "aae56detrig34a-s4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(\\frac{\\sqrt{2}}{2})(\\frac{1}{2}) $$-$$ (\\frac{\\sqrt{2}}{2})(\\frac{\\sqrt{3}}{2})$$"
+        ],
+        "dependencies": [
+            "aae56detrig34a-h2"
+        ],
+        "title": "Apply the formula",
+        "text": "Substitute the values into $$\\cos(A)\\cos(B)$$ $$-$$ $$\\sin(A)\\sin(B)$$. $$What$$ $$is$$ $$\\cos(\\frac{\\pi}{4})\\cos(\\frac{\\pi}{3})$$ $$-$$ $$\\sin(\\frac{\\pi}{4})\\sin(\\frac{\\pi}{3})$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$(\\frac{\\sqrt{2}}{2})(\\frac{1}{2}) $$-$$ (\\frac{\\sqrt{2}}{2})(\\frac{\\sqrt{3}}{2})$$",
+            "$$(\\frac{\\sqrt{2}}{2})(\\frac{1}{2}) + (\\frac{\\sqrt{2}}{2})(\\frac{\\sqrt{3}}{2})$$",
+            "$$(\\frac{\\sqrt{2}}{2})(\\frac{\\sqrt{3}}{2}) $$-$$ (\\frac{\\sqrt{2}}{2})(\\frac{1}{2})$$",
+            "$$(\\frac{1}{2})(\\frac{\\sqrt{2}}{2}) $$-$$ (\\frac{\\sqrt{3}}{2})(\\frac{\\sqrt{2}}{2})$$"
+        ]
+    },
+    {
+        "id": "aae56detrig34a-s5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\sqrt{2} $$-$$ \\sqrt{6}}{4}$$"
+        ],
+        "dependencies": [
+            "aae56detrig34a-h2"
+        ],
+        "title": "Simplify",
+        "text": "What is the final simplified value?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

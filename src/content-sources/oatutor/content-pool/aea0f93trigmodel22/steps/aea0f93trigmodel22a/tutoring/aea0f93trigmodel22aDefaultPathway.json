@@ -1,0 +1,71 @@
+[
+    {
+        "id": "aea0f93trigmodel22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify key features",
+        "text": "To find the formula, identify the midline, amplitude, period, and phase shift from the table.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel22a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel22a-h1"
+        ],
+        "title": "Calculate midline and amplitude",
+        "text": "Recall that the midline D $$=$$ (Max + Min) / $$2$$ and the amplitude A $$=$$ (Max - Min) / $$2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel22a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel22a-h2"
+        ],
+        "title": "Determine the period",
+        "text": "The period P is the horizontal distance for one complete cycle. Use P $$=$$ $$\\frac{2\\pi}{B}$$ to find B.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel22a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel22a-h3"
+        ],
+        "title": "Choose function type and phase shift",
+        "text": "Observe the function's behavior at $$x=0$$ to decide if it's a sine or cosine function and if there's a phase shift.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel22a-s4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Maximum"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel22a-h4"
+        ],
+        "title": "Function at $$x=0$$",
+        "text": "At $$x=0$$, is the function at its midline, maximum, or minimum?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Maximum",
+            "Minimum",
+            "Midline, increasing",
+            "Midline, decreasing"
+        ]
+    }
+]

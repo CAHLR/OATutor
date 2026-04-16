@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a4593e0functrans1000c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Input or Output?",
+        "text": "A transformation that affects the input is within the function paranetheses, while a transformation that affects the output is outside the function paranetheses.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4593e0functrans1000c-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Input"
+        ],
+        "dependencies": [
+            "a4593e0functrans1000c-h1"
+        ],
+        "title": "Input or Output?",
+        "text": "Does the step affect the input or output of the function?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Input",
+            "Output"
+        ]
+    },
+    {
+        "id": "a4593e0functrans1000c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans1000c-h2"
+        ],
+        "title": "Horizontal or Vertical?",
+        "text": "A $$\\frac{stretch}{compression}$$ that affects the input is horizontal, while a $$\\frac{stretch}{compression}$$ that affects the output is vertical.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4593e0functrans1000c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Horizontal"
+        ],
+        "dependencies": [
+            "a4593e0functrans1000c-h3"
+        ],
+        "title": "Horizontal or Vertical?",
+        "text": "Is the $$\\frac{stretch}{compression}$$ horizontal or vertical?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Horizontal",
+            "Vertical"
+        ]
+    },
+    {
+        "id": "a4593e0functrans1000c-h5",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans1000c-h4"
+        ],
+        "title": "Understanding $$\\frac{Stretch}{Compression}$$",
+        "text": "A horizontal $$\\frac{stretch}{compression}$$ means that the input is multiplied by some value b: $$f{\\left(b x\\right)}$$. Compressing multiplies $$b$$, while stretching multiplies $$\\frac{1}{b}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4593e0functrans1000c-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Stretch"
+        ],
+        "dependencies": [
+            "a4593e0functrans1000c-h5"
+        ],
+        "title": "Understanding $$\\frac{Stretch}{Compression}$$",
+        "text": "Is the horizontal transformation a stretch or compression?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Stretch",
+            "Compression"
+        ]
+    }
+]

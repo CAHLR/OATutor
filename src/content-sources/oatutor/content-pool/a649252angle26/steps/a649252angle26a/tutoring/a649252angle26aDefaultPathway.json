@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a649252angle26a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Half-angle formula for tangent",
+        "text": "Recall the half-angle formula for tangent: $$\\tan(\\frac{\\theta}{2}) $$=$$ \\frac{1-\\cos(\\theta)}{\\sin(\\theta)}$$ or $$\\tan(\\frac{\\theta}{2}) $$=$$ \\frac{\\sin(\\theta)}{1+\\cos(\\theta)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle26a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{5\\pi}{6}$$"
+        ],
+        "dependencies": [
+            "a649252angle26a-h1"
+        ],
+        "title": "Identify $$\\theta$$",
+        "text": "If $$\\frac{\\theta}{2} $$=$$ $$\\frac{5\\pi}{12}$$, $$what$$ $$is$$ $$\\theta$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle26a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle26a-h1"
+        ],
+        "title": "Evaluate $$\\cos(\\theta)$$ and $$\\sin(\\theta)$$",
+        "text": "Determine $$\\theta$$ such that $$\\frac{\\theta}{2} $$=$$ $$\\frac{5\\pi}{12}$$ and evaluate its sine and cosine.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle26a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\frac{\\sqrt{3}}{2}$$"
+        ],
+        "dependencies": [
+            "a649252angle26a-h2"
+        ],
+        "title": "Evaluate $$\\cos(\\theta)$$ value",
+        "text": "What is the exact value of $$\\cos(\\frac{5\\pi}{6})$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle26a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a649252angle26a-h2"
+        ],
+        "title": "Evaluate $$\\sin(\\theta)$$ value",
+        "text": "What is the exact value of $$\\sin(\\frac{5\\pi}{6})$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

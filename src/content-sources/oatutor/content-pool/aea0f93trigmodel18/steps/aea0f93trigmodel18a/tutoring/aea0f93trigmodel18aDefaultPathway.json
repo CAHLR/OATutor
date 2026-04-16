@@ -1,0 +1,105 @@
+[
+    {
+        "id": "aea0f93trigmodel18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Damping",
+        "text": "Recall what a damping factor represents in the context of oscillations. What physical phenomenon does it model?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel18a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It causes the magnitude to decrease."
+        ],
+        "dependencies": [
+            "aea0f93trigmodel18a-h1"
+        ],
+        "title": "Definition of Damping",
+        "text": "Damping is typically associated with the gradual loss of energy in an oscillating system. What effect does this loss of energy have on the oscillation's magnitude?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "It causes the magnitude to decrease.",
+            "It causes the magnitude to increase.",
+            "It causes the frequency to change.",
+            "It causes the phase to shift."
+        ]
+    },
+    {
+        "id": "aea0f93trigmodel18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel18a-h1"
+        ],
+        "title": "Connecting Damping to Graph Features",
+        "text": "How does the magnitude of an oscillation relate to its graph? Which characteristic of the graph is directly affected by the magnitude?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel18a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Amplitude"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel18a-h2"
+        ],
+        "title": "Identifying Graph Characteristics",
+        "text": "In a sinusoidal graph, which parameter represents the maximum displacement or intensity of the oscillation?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Amplitude",
+            "Period",
+            "Phase Shift",
+            "Vertical Shift"
+        ]
+    },
+    {
+        "id": "aea0f93trigmodel18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel18a-h2"
+        ],
+        "title": "Synthesizing the Effect",
+        "text": "Combine your understanding of damping and graph characteristics. If damping causes the magnitude to decrease, what happens to the amplitude over time?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel18a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The oscillations get smaller."
+        ],
+        "dependencies": [
+            "aea0f93trigmodel18a-h3"
+        ],
+        "title": "Describing the Overall Effect",
+        "text": "If the amplitude decreases over time, how would you describe the overall shape of the graph of a damped harmonic motion function?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "The oscillations get smaller.",
+            "The oscillations get larger.",
+            "The oscillations shift left.",
+            "The oscillations shift up."
+        ]
+    }
+]

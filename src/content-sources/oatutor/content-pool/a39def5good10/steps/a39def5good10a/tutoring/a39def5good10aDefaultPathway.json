@@ -1,0 +1,134 @@
+[
+    {
+        "id": "a39def5good10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Hypotheses",
+        "text": "What are the Null Hypothesis $$H_0$$ and Alternative Hypothesis in this context?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a39def5good10a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$H_0$$: The actual college majors of graduating females fit the distribution of their expected majors"
+        ],
+        "dependencies": [
+            "a39def5good10a-h1"
+        ],
+        "title": "Null Hypothesis",
+        "text": "Choose the answer from the following.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$H_0$$: The actual college majors of graduating females fit the distribution of their expected majors",
+            "$$H_0$$: The actual college majors of graduating females do not fit the distribution of their expected majors"
+        ]
+    },
+    {
+        "id": "a39def5good10a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$H_a$$: The actual college majors of graduating females do not fit the distribution of their expected majors"
+        ],
+        "dependencies": [],
+        "title": "Alternative Hypothesis",
+        "text": "Choose the answer from the following.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$H_a$$: The actual college majors of graduating females fit the distribution of their expected majors",
+            "$$H_a$$: The actual college majors of graduating females do not fit the distribution of their expected majors"
+        ]
+    },
+    {
+        "id": "a39def5good10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a39def5good10a-h2"
+        ],
+        "title": "Consider what distribution is most appropriate to use in this problem.",
+        "text": "Is this a Goodness-of-Fit problem?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a39def5good10a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "a39def5good10a-h3"
+        ],
+        "title": "What is the degree of freedom?",
+        "text": "$$df=11-1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a39def5good10a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a39def5good10a-h4"
+        ],
+        "title": "Compute the chi-square test statistics",
+        "text": "$$X^2$$ $$=$$ $$11.48$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a39def5good10a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.3211$$"
+        ],
+        "dependencies": [
+            "a39def5good10a-h5"
+        ],
+        "title": "Compute the $$p-value$$.",
+        "text": "Round the answer to four decimal places.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a39def5good10a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a39def5good10a-h6"
+        ],
+        "title": "Compare with the significant level $$0.05$$.",
+        "text": "At 5% significance level, \\alpha $$=$$ $$0.05$$. For this data, P < \\alpha. Reject the null hypothesis.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a39def5good10a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a39def5good10a-h7"
+        ],
+        "title": "Interpret the Result",
+        "text": "At the 5% level of significance, from the data, there is insufficient evidence to conclude that the distribution of actual college majors of graduating females do not fit the distribution of their expected majors.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

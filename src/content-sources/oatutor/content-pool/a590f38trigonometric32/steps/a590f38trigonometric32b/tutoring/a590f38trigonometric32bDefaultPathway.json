@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a590f38trigonometric32b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider other quadrants",
+        "text": "Cosine is positive in the first and fourth quadrants. You've found the first quadrant solution. Now find the solution in the fourth quadrant.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric32b-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2\\pi$$ $$-$$ $$\\theta_R$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric32b-h1"
+        ],
+        "title": "How do you find the angle in the fourth quadrant?",
+        "text": "If $$\\theta_R$$ is the reference angle, how do you express the angle in the fourth quadrant?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2\\pi$$ $$-$$ $$\\theta_R$$",
+            "$$\\pi$$ $$-$$ $$\\theta_R$$",
+            "$$\\pi$$ + $$\\theta_R$$",
+            "$$\\theta_R$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric32b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric32b-h1"
+        ],
+        "title": "Apply the reference angle",
+        "text": "Use the reference angle $$\\frac{\\pi}{4}$$ to find the angle in the fourth quadrant.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric32b-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{7\\pi}{4}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric32b-h2"
+        ],
+        "title": "Calculate the angle",
+        "text": "What is $$2\\pi$$ $$-$$ $$\\frac{\\pi}{4}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

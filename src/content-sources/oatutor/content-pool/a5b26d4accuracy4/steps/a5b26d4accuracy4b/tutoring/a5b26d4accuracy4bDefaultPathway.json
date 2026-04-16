@@ -1,0 +1,81 @@
+[
+    {
+        "id": "a5b26d4accuracy4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Uncertainty Equation",
+        "text": "Use the answer from the previous part with our uncertainty equation % unc $$=$$ uncertainty/(expected value) * 100%.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a5b26d4accuracy4b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x$$ $$=$$ $$1.3$$"
+        ],
+        "dependencies": [
+            "a5b26d4accuracy4b-h1"
+        ],
+        "title": "Solve the Uncertainty Equation",
+        "text": "Solve for x: $$2.2\\%$$ $$=$$ $$x$$ / $$\\frac{60km}{h}$$ * 100%.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$x$$ $$=$$ $$1.3$$",
+            "$$x$$ $$=$$ $$13$$",
+            "$$x$$ $$=$$ $$2.9$$",
+            "$$x$$ $$=$$ $$3.2$$"
+        ]
+    },
+    {
+        "id": "a5b26d4accuracy4b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$59$$ to $$61$$"
+        ],
+        "dependencies": [
+            "a5b26d4accuracy4b-h2"
+        ],
+        "title": "Find the Range of speeds",
+        "text": "What range of speeds do we get from this uncertainty (in km/h)?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$55$$ to $$65$$",
+            "$$30$$ to $$90$$",
+            "$$59$$ to $$61$$",
+            "$$57$$ to $$63$$"
+        ],
+        "subHints": [
+            {
+                "id": "a5b26d4accuracy4b-h3-s1",
+                "type": "scaffold",
+                "problemType": "MultipleChoice",
+                "answerType": "string",
+                "hintAnswer": [
+                    "$$59$$ to $$61$$"
+                ],
+                "dependencies": [],
+                "title": "Range of speeds +/- Uncertainty",
+                "text": "What is $$60$$ +/- our uncertainty?",
+                "variabilization": {},
+                "oer": "",
+                "license": "",
+                "choices": [
+                    "$$55$$ to $$65$$",
+                    "$$30$$ to $$90$$",
+                    "$$59$$ to $$61$$",
+                    "$$57$$ to $$63$$"
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a4488b1Fraction1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Principle",
+        "text": "Find the common factor of numerator and denominator",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4488b1Fraction1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4488b1Fraction1a-h1"
+        ],
+        "title": "Factor",
+        "text": "Factor the numerator to 3x23",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4488b1Fraction1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4488b1Fraction1a-h2"
+        ],
+        "title": "Factor",
+        "text": "Factor the denominator to 2x2x2x3x5",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4488b1Fraction1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a4488b1Fraction1a-h3"
+        ],
+        "title": "Organizing",
+        "text": "What is the common factor?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4488b1Fraction1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a4488b1Fraction1a-h4"
+        ],
+        "title": "Division",
+        "text": "Dividing both sides by the common factor",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

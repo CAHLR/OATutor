@@ -1,0 +1,98 @@
+[
+    {
+        "id": "ac613aahypergeometric4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Structure of Probability Statements",
+        "text": "The structure of a probability statement is P(xOC) where P stands for the probability, $$x$$ is the variable we are testing against, O is the operation (equal to, less than, less than or equal to, greater than, greater than or equal to) and C is the constant value.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac613aahypergeometric4a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x$$"
+        ],
+        "dependencies": [
+            "ac613aahypergeometric4a-h1"
+        ],
+        "title": "Determining the variable",
+        "text": "What is the variable that we are using?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$x$$",
+            "$$y$$",
+            "$$z$$",
+            "c"
+        ]
+    },
+    {
+        "id": "ac613aahypergeometric4a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Less than or equal to"
+        ],
+        "dependencies": [
+            "ac613aahypergeometric4a-h2"
+        ],
+        "title": "Determining the operation",
+        "text": "What is the operation? The inspector wants at most $$2$$ of the $$12$$ players to be defective. What operation best represents a ceiling when compared to a constant, or \"at most\", which is inclusive?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Less than or equal to",
+            "Less than",
+            "Greater than",
+            "Greater than or equal to"
+        ]
+    },
+    {
+        "id": "ac613aahypergeometric4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "ac613aahypergeometric4a-h3"
+        ],
+        "title": "Determining the constant",
+        "text": "What is the number of defective players we want at most in the sample?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac613aahypergeometric4a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$P(x \\leq 2)$$"
+        ],
+        "dependencies": [
+            "ac613aahypergeometric4a-h4"
+        ],
+        "title": "Putting it All Together",
+        "text": "What is the probability statement written mathematically, using the variable and constant we found?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$P(x \\leq 2)$$",
+            "$$P\\left(x<2\\right)$$",
+            "$$P\\left(x>2\\right)$$",
+            "$$P(x \\geq 2)$$"
+        ]
+    }
+]

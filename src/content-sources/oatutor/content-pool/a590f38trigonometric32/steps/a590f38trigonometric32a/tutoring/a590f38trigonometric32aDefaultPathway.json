@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a590f38trigonometric32a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Isolate the trigonometric function",
+        "text": "Divide both sides of the equation by $$2$$ to isolate $$costheta$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric32a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\cos\\theta=\\frac{\\sqrt{2}}{2}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric32a-h1"
+        ],
+        "title": "What is the simplified equation?",
+        "text": "What is the equation after isolating $$costheta$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\cos\\theta=\\frac{\\sqrt{2}}{2}$$",
+            "$$\\cos\\theta=\\sqrt{2}$$",
+            "$$\\cos\\theta=\\frac{1}{2}$$",
+            "$$\\cos\\theta=\\frac{\\sqrt{2}}{4}$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric32a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric32a-h1"
+        ],
+        "title": "Recall unit circle values",
+        "text": "Think about the angles in the first quadrant where the cosine value is $$\\frac{\\sqrt{2}}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric32a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{4}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric32a-h2"
+        ],
+        "title": "What is the reference angle?",
+        "text": "What is the angle $$\\theta$$ in the first quadrant where $$\\cos\\theta=\\frac{\\sqrt{2}}{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

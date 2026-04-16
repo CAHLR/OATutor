@@ -1,0 +1,99 @@
+[
+    {
+        "id": "aae56detrig11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify relevant triangles and angles",
+        "text": "Draw a diagram. Identify the two right triangles formed by each guy-wire, the pole, and the ground. Let $$\\theta_R$$ be the angle wire R makes with the ground, and $$\\theta_S$$ be the angle wire S makes with the ground.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig11a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Opposite $$=$$ $$47$$, Adjacent $$=$$ $$50$$"
+        ],
+        "dependencies": [
+            "aae56detrig11a-h1"
+        ],
+        "title": "Identify opposite and adjacent sides for wire R",
+        "text": "For the angle $$\\theta_R$$ that wire R makes with the ground, what are the lengths of the opposite and adjacent sides?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Opposite $$=$$ $$47$$, Adjacent $$=$$ $$50$$",
+            "Opposite $$=$$ $$50$$, Adjacent $$=$$ $$47$$",
+            "Opposite $$=$$ $$47$$, Adjacent $$=$$ $$40$$",
+            "Opposite $$=$$ $$50$$, Adjacent $$=$$ $$40$$"
+        ]
+    },
+    {
+        "id": "aae56detrig11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig11a-h1"
+        ],
+        "title": "Relate angles to tangent",
+        "text": "Use the tangent function to find expressions for $$tantheta_R$$ and $$tantheta_S$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig11a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$tantheta_R$$ $$=$$ $$\\frac{47}{50}$$, $$tantheta_S$$ $$=$$ $$\\frac{40}{50}$$"
+        ],
+        "dependencies": [
+            "aae56detrig11a-h2"
+        ],
+        "title": "Calculate $$tantheta_R$$ and $$tantheta_S$$",
+        "text": "What are the values of $$tantheta_R$$ and $$tantheta_S$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$tantheta_R$$ $$=$$ $$\\frac{47}{50}$$, $$tantheta_S$$ $$=$$ $$\\frac{40}{50}$$",
+            "$$tantheta_R$$ $$=$$ $$\\frac{40}{50}$$, $$tantheta_S$$ $$=$$ $$\\frac{47}{50}$$",
+            "$$tantheta_R$$ $$=$$ $$\\frac{50}{47}$$, $$tantheta_S$$ $$=$$ $$\\frac{50}{40}$$",
+            "$$tantheta_R$$ $$=$$ $$\\frac{47}{50}$$, $$tantheta_S$$ $$=$$ $$\\frac{50}{40}$$"
+        ]
+    },
+    {
+        "id": "aae56detrig11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig11a-h2"
+        ],
+        "title": "Apply the tangent difference formula",
+        "text": "The angle $$\\alpha$$ between the wires is the difference between the angles each wire makes with the ground. Use the tangent difference identity: $$tan(\\theta_R $$-$$ \\theta_S) $$=$$ \\frac{tan\\theta_R $$-$$ tan\\theta_S}{1 + $$tantheta_R$$ tan\\theta_S}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig11a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{35}{438}$$"
+        ],
+        "dependencies": [
+            "aae56detrig11a-h3"
+        ],
+        "title": "Calculate $$tan\\alpha$$",
+        "text": "Substitute the tangent values into the formula $$tan\\alpha$$ $$=$$ \\frac{tan\\theta_R $$-$$ tan\\theta_S}{1 + $$tantheta_R$$ tan\\theta_S}$$ and simplify.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

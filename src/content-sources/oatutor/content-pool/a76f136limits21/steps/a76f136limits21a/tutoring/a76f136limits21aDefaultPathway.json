@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a76f136limits21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Unequal One-Sided Graph Limits",
+        "text": "A two-sided limit exists only when both one-sided limits exist and are equal.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a76f136limits21a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sketch Each Side Separately",
+        "text": "Graph the left-hand piece and right-hand piece on the same axes. Then compare the height the graph approaches from each side of $$x=3$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a76f136limits21a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a76f136limits21a-h2"
+        ],
+        "title": "Left-Side Reading",
+        "text": "What value does the graph approach from the left of $$x=3$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a76f136limits21a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "a76f136limits21a-h3"
+        ],
+        "title": "Right-Side Reading",
+        "text": "What value does the graph approach from the right of $$x=3$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a76f136limits21a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a76f136limits21a-h4"
+        ],
+        "title": "Compare the Two Sides",
+        "text": "A two-sided limit exists only if the left-hand and right-hand graph values match.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

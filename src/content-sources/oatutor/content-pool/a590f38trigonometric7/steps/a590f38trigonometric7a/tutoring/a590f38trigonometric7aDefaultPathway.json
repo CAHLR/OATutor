@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a590f38trigonometric7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplify the equation",
+        "text": "Combine like terms to isolate tanx.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric7a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$tanx$$ $$=$$ $$-1$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric7a-h1"
+        ],
+        "title": "Isolate tanx",
+        "text": "What is the equation after isolating tanx?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$tanx$$ $$=$$ $$-1$$",
+            "$$tanx$$ $$=$$ $$1$$",
+            "$$tanx$$ $$=$$ $$-2$$",
+            "$$tanx$$ $$=$$ $$0$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric7a-h1"
+        ],
+        "title": "Unit Circle for Tangent",
+        "text": "Recall the values of $$x$$ in the unit circle where tanx $$=$$ $$-1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric7a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\pi/4$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric7a-h2"
+        ],
+        "title": "Reference Angle",
+        "text": "What is the reference angle for tanx $$=$$ -1?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric7a-h2"
+        ],
+        "title": "Interval for Solutions",
+        "text": "Ensure your solutions are within the given interval $$0$$ \\leq $$x$$ < $$2\\pi$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric7a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Quadrant II and IV"
+        ],
+        "dependencies": [
+            "a590f38trigonometric7a-h3"
+        ],
+        "title": "Quadrants for tanx < $$0$$",
+        "text": "In which quadrants is tanx negative?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Quadrant I and III",
+            "Quadrant II and IV",
+            "Quadrant I and II",
+            "Quadrant III and IV"
+        ]
+    }
+]

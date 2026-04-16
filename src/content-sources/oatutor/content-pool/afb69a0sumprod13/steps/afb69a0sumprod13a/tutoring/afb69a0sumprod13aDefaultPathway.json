@@ -1,0 +1,105 @@
+[
+    {
+        "id": "afb69a0sumprod13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the correct formula",
+        "text": "Recall the product-to-sum formula for $$\\cos(A)\\cos(B)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod13a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{1}{2}(\\cos(A-B)$$ + \\cos(A+B))$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod13a-h1"
+        ],
+        "title": "State the formula",
+        "text": "What is the product-to-sum formula for $$\\cos(A)\\cos(B)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{1}{2}(\\cos(A-B)$$ + \\cos(A+B))$$",
+            "$$\\frac{1}{2}(\\cos(A-B)$$ $$-$$ \\cos(A+B))$$",
+            "$$\\frac{1}{2}(\\sin(A-B)$$ + \\sin(A+B))$$",
+            "$$\\frac{1}{2}(\\cos(A+B) $$-$$ $$\\cos(A-B))$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod13a-h1"
+        ],
+        "title": "Identify $A$ and $B$",
+        "text": "In the given expression, identify the values for A and B.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod13a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A=36t$$, $$B=6t$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod13a-h2"
+        ],
+        "title": "Determine A and B",
+        "text": "For $$20\\cos(36t)\\cos(6t)$$, $$what$$ $$are$$ $$A$$ $$and$$ $$B$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$A=36t$$, $$B=6t$$",
+            "$$A=6t$$, $$B=36t$$",
+            "$$A=36$$, $$B=6$$",
+            "$$A=42t$$, $$B=30t$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod13a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A-B$$ $$=$$ $$30t$$, $$A+B$$ $$=$$ $$42t$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod13a-h2"
+        ],
+        "title": "Identify $A$ and $B$. Calculate their sum and difference.",
+        "text": "What are $$A-B$$ and $$A+B$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$A-B$$ $$=$$ $$30t$$, $$A+B$$ $$=$$ $$42t$$",
+            "$$A-B$$ $$=$$ $$42t$$, $$A+B$$ $$=$$ $$30t$$",
+            "$$A-B$$ $$=$$ $$-30t$$, $$A+B$$ $$=$$ $$42t$$",
+            "$$A-B$$ $$=$$ $$30$$, $$A+B$$ $$=$$ $$42$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod13a-h2"
+        ],
+        "title": "Apply the formula",
+        "text": "Substitute A and B into the formula and simplify, remembering to account for the coefficient $$20$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a9ed39ahyperbola21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Grouping Terms",
+        "text": "Express the equation in standard form by first grouping the terms with the same variable so you get $$9x^2-18x-16y^2+32y=151$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9ed39ahyperbola21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9ed39ahyperbola21a-h1"
+        ],
+        "title": "Factoring Out Coefficient",
+        "text": "Factor the leading coefficient of each expression so you get $$9\\left(x^2-2x\\right)-\\operatorname{16}\\left(y^2-2y\\right)=151$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9ed39ahyperbola21a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9ed39ahyperbola21a-h2"
+        ],
+        "title": "Complete the Square",
+        "text": "Complete the square twice and make sure to balance the equation by adding same constants on each side so you'll have $$9\\left(x^2-2x+1\\right)-\\operatorname{16}\\left(y^2-2y+1\\right)=151+9-16$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9ed39ahyperbola21a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9ed39ahyperbola21a-h3"
+        ],
+        "title": "Rewrite and Divide",
+        "text": "Rewrite as perfect squares and divide both sides by constants so that it's in standard form $$\\frac{\\left(x-1\\right)^2}{4^2}-\\frac{\\left(y-1\\right)^2}{3^2}=1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

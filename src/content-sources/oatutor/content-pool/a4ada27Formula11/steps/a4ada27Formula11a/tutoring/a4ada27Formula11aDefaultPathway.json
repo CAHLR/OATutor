@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a4ada27Formula11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Unknown",
+        "text": "The formula is $$I=P r t$$, and we want to find P.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4ada27Formula11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4ada27Formula11a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Since we know that $$I=\\$5, 600$$, $$r=4\\%$$ $$(0.04)$$, and $$t=7$$ years, we can substitute these values into the formula and get $$5600=0.04P\\times7$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4ada27Formula11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4ada27Formula11a-h2"
+        ],
+        "title": "Simplify",
+        "text": "Simplifying the equation, we get $$5600=0.28P$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4ada27Formula11a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20000$$"
+        ],
+        "dependencies": [
+            "a4ada27Formula11a-h3"
+        ],
+        "title": "Solve",
+        "text": "To solve for P, we can divide both sides of the equation by the coefficient of P. What is P?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

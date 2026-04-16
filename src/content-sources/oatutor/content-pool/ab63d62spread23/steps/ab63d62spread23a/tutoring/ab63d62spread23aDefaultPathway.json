@@ -1,0 +1,80 @@
+[
+    {
+        "id": "ab63d62spread23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculating Standard Deviations Away From Mean",
+        "text": "To calculate how far a given data point is from the mean, we must use the formula (value-mean)/(standard deviation).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab63d62spread23a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1000$$"
+        ],
+        "dependencies": [
+            "ab63d62spread23a-h1"
+        ],
+        "title": "Determining Mean",
+        "text": "Given the summary statistics, what is the mean?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab63d62spread23a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$474$$"
+        ],
+        "dependencies": [
+            "ab63d62spread23a-h2"
+        ],
+        "title": "Determining Standard Deviation",
+        "text": "Given the summary statistics, what is the standard deviation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab63d62spread23a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.0295$$"
+        ],
+        "dependencies": [
+            "ab63d62spread23a-h3"
+        ],
+        "title": "Determining Standard Deviations Away From Mean",
+        "text": "Now knowing the mean and the standard deviation as well as the fact that the median is $$1014$$ FTES, how many standard deviations away from the mean is the median? Use the formula given.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "ab63d62spread23a-h4-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$0.0295$$"
+                ],
+                "dependencies": [],
+                "title": "Determining Standard Deviations Away From Mean",
+                "text": "What is $$1014-\\frac{1000}{474}$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    }
+]

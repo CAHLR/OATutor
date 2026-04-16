@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a590f38trigonometric18b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose the Right Trigonometric Ratio",
+        "text": "Consider which trigonometric ratio relates the opposite side (height) and the adjacent side (ground distance) to the angle of elevation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric18b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric18b-h1"
+        ],
+        "title": "Set up the Equation",
+        "text": "Formulate the equation using the chosen trigonometric ratio and the given values.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric18b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric18b-h2"
+        ],
+        "title": "Calculate the Angle",
+        "text": "Solve for the angle of elevation, rounding to one decimal place.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric18b-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$71.7**\\circ$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric18b-h3"
+        ],
+        "title": "Compute Angle",
+        "text": "Calculate the angle of elevation in degrees, rounded to one decimal place.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

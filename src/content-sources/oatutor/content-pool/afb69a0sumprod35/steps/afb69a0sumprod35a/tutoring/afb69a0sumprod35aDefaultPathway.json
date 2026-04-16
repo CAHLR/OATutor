@@ -1,0 +1,105 @@
+[
+    {
+        "id": "afb69a0sumprod35a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall sum-to-product formula",
+        "text": "Recall the sum-to-product formula for $\\cos(A) - \\cos(B)$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod35a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\cos(A)$$ $$-$$ $$\\cos(B)$$ $$=$$ $$-2$$ \\sin((A+B)/2) \\sin((A-B)/2)$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod35a-h1"
+        ],
+        "title": "Identify the correct formula",
+        "text": "Which formula should be used to rewrite $\\cos(A) - \\cos(B)$ as a product?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\cos(A)$$ $$-$$ $$\\cos(B)$$ $$=$$ $$-2$$ \\sin((A+B)/2) \\sin((A-B)/2)$$",
+            "$$\\cos(A)$$ $$-$$ $$\\cos(B)$$ $$=$$ $$2$$ \\sin((A+B)/2) \\sin((A-B)/2)$$",
+            "$$\\cos(A)$$ $$-$$ $$\\cos(B)$$ $$=$$ $$-2$$ \\cos((A+B)/2) \\cos((A-B)/2)$$",
+            "$$\\cos(A)$$ $$-$$ $$\\cos(B)$$ $$=$$ $$-2$$ \\cos((A+B)/2) \\sin((A-B)/2)$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod35a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod35a-h1"
+        ],
+        "title": "Identify $A$ and $B$",
+        "text": "Identify the values of A and B from the given expression.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod35a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A $$=$$ 58**{\\circ}, B $$=$$ 12**{\\circ}"
+        ],
+        "dependencies": [
+            "afb69a0sumprod35a-h2"
+        ],
+        "title": "What are A and B?",
+        "text": "In $\\cos(58**{\\circ}) - \\cos(12**{\\circ})$, what are the values of A and B?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "A $$=$$ 58**{\\circ}, B $$=$$ 12**{\\circ}",
+            "A $$=$$ 12**{\\circ}, B $$=$$ 58**{\\circ}",
+            "A $$=$$ 35**{\\circ}, B $$=$$ 23**{\\circ}",
+            "A $$=$$ 58**{\\circ}, B $$=$$ 58**{\\circ}"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod35a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod35a-h2"
+        ],
+        "title": "Calculate the arguments for the product",
+        "text": "Calculate the values for $(A+B)/2$ and $(A-B)/2$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod35a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$(A+B)/2 $$=$$ 35**{\\circ}$, $(A-B)/2 $$=$$ 23**{\\circ}$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod35a-h3"
+        ],
+        "title": "Calculate the sum and difference arguments",
+        "text": "What are the values of $(A+B)/2$ and $(A-B)/2$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$(A+B)/2 $$=$$ 35**{\\circ}$, $(A-B)/2 $$=$$ 23**{\\circ}",
+            "$$\\frac{A+B}{2}$$ $$=$$ 23**{\\circ}$, $(A-B)/2 $$=$$ 35**{\\circ}",
+            "$$\\frac{A+B}{2}$$ $$=$$ 70**{\\circ}$, $(A-B)/2 $$=$$ 46**{\\circ}",
+            "$$\\frac{A+B}{2}$$ $$=$$ 35**{\\circ}$, $(A-B)/2 $$=$$ 12**{\\circ}"
+        ]
+    }
+]

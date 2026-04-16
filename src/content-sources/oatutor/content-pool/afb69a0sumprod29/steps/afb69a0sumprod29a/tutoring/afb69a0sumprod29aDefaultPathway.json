@@ -1,0 +1,127 @@
+[
+    {
+        "id": "afb69a0sumprod29a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Applying the product-to-sum formula",
+        "text": "Recall the product-to-sum formula for \\cos A \\sin B.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod29a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\cos$$ $$A$$ $$\\sin$$ $$B$$ $$=$$ $$\\frac{1}{2}$$ (\\sin(A+B) $$-$$ $$\\sin(A-B))$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod29a-h1"
+        ],
+        "title": "Identify the correct formula",
+        "text": "Which product-to-sum formula should be used for \\cos A \\sin B?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\cos$$ $$A$$ $$\\sin$$ $$B$$ $$=$$ $$\\frac{1}{2}$$ (\\sin(A+B) $$-$$ $$\\sin(A-B))$$",
+            "$$\\cos$$ $$A$$ $$\\sin$$ $$B$$ $$=$$ $$\\frac{1}{2}$$ (\\sin(A+B) + $$\\sin(A-B))$$",
+            "$$\\cos$$ $$A$$ $$\\sin$$ $$B$$ $$=$$ $$\\frac{1}{2}$$ (\\cos(A+B) $$-$$ $$\\cos(A-B))$$",
+            "$$\\cos$$ $$A$$ $$\\sin$$ $$B$$ $$=$$ $$\\frac{1}{2}$$ $$(\\sin(A-B)$$ $$-$$ \\sin(A+B))$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod29a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod29a-h1"
+        ],
+        "title": "Identify $A$ and $B$",
+        "text": "Determine the values of A and B from the given expression.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod29a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$23**{\\circ}$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod29a-h2"
+        ],
+        "title": "What is A?",
+        "text": "In \\cos(23**{\\circ})\\sin(17**{\\circ}), what is A?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod29a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$17**{\\circ}$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod29a-h2"
+        ],
+        "title": "What is B?",
+        "text": "In \\cos(23**{\\circ})\\sin(17**{\\circ}), what is B?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod29a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod29a-h2"
+        ],
+        "title": "Calculate sums and differences",
+        "text": "Compute $$A+B$$ and A-B.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod29a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$40**{\\circ}$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod29a-h3"
+        ],
+        "title": "What is $$A+B$$?",
+        "text": "Calculate 23**{\\circ} + 17**{\\circ}.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod29a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6**{\\circ}$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod29a-h3"
+        ],
+        "title": "What is A-B?",
+        "text": "Calculate 23**{\\circ} - 17**{\\circ}.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

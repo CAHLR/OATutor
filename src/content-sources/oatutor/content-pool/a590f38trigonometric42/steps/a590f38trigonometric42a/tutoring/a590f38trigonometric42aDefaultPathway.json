@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a590f38trigonometric42a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the common factor",
+        "text": "Look for a term that appears in both parts of the expression.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric42a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sin(x)$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric42a-h1"
+        ],
+        "title": "Common factor",
+        "text": "What is the common factor in $$sec(x)\\sin(x)-2\\sin(x)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric42a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric42a-h1"
+        ],
+        "title": "Perform the factoring",
+        "text": "Factor out the common term from the expression.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric42a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\sin(x)(sec(x)-2)$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric42a-h2"
+        ],
+        "title": "Factored expression",
+        "text": "What is the expression after factoring?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\sin(x)(sec(x)-2)$$",
+            "$$\\sin(x)(sec(x)+2)$$",
+            "$$sec(x)(\\sin(x)-2)$$",
+            "$$\\sin(x)sec(x)-2$$"
+        ]
+    }
+]

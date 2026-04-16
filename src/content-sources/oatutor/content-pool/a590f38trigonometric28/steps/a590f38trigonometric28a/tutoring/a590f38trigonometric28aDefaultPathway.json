@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a590f38trigonometric28a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify quadrants",
+        "text": "Determine the quadrants where tanx is positive.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric28a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "I and III"
+        ],
+        "dependencies": [
+            "a590f38trigonometric28a-h1"
+        ],
+        "title": "Quadrants for positive tangent",
+        "text": "In which quadrants is tanx positive?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "I and II",
+            "II and III",
+            "III and IV",
+            "I and III"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric28a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric28a-h1"
+        ],
+        "title": "Find the reference angle",
+        "text": "Determine the reference angle $$x'$$ for which $$tan(x')$$ $$=$$ $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric28a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{4}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric28a-h2"
+        ],
+        "title": "Reference angle for tan(x') $$=$$ $$1$$",
+        "text": "What is the reference angle $$x'$$ such that $$tan(x')$$ $$=$$ $$1$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric28a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric28a-h2"
+        ],
+        "title": "First solution",
+        "text": "The first solution is the reference angle itself, as it is in Quadrant I.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric28a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{4}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric28a-h3"
+        ],
+        "title": "Angle in Quadrant I",
+        "text": "What is the angle in Quadrant I?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

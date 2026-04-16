@@ -1,0 +1,105 @@
+[
+    {
+        "id": "afb69a0sumprod15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the correct product-to-sum formula",
+        "text": "Recall the product-to-sum formulas. Which one matches the form $$\\cos(A)\\sin(B)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod15a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1/2(\\sin(A+B) $$-$$ $$\\sin(A-B))$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod15a-h1"
+        ],
+        "title": "Product-to-sum formula for $$\\cos(A)\\sin(B)$$?",
+        "text": "What is the product-to-sum formula for $$\\cos(A)\\sin(B)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$1/2(\\sin(A+B) $$-$$ $$\\sin(A-B))$$",
+            "$$1/2(\\sin(A+B) + $$\\sin(A-B))$$",
+            "$$1/2(\\cos(A+B) $$-$$ $$\\cos(A-B))$$",
+            "$$\\sin(A+B) $$-$$ $$\\sin(A-B)$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod15a-h1"
+        ],
+        "title": "Identify $A$ and $B$",
+        "text": "Once you have the formula, identify the values of A and B from the given expression. Remember to handle the coefficient.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod15a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A=5x$$, $$B=10x$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod15a-h2"
+        ],
+        "title": "Identify $A$ and $B$ in the expression",
+        "text": "In $$10\\cos(5x)\\sin(10x)$$, $$what$$ $$are$$ $$A$$ $$and$$ $$B$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$A=5x$$, $$B=10x$$",
+            "$$A=10x$$, $$B=5x$$",
+            "$$A=5$$, $$B=10$$",
+            "$$A=15x$$, $$B=-5x$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod15a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A+B=15x$$, $$A-B=-5x$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod15a-h2"
+        ],
+        "title": "Identify $A$ and $B$. Calculate their sum and difference.",
+        "text": "What are $$A+B$$ and A-B?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$A+B=15x$$, $$A-B=-5x$$",
+            "$$A+B=-5x$$, $$A-B=15x$$",
+            "$$A+B=15x$$, $$A-B=5x$$",
+            "$$A+B=15$$, $$A-B=-5$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod15a-h2"
+        ],
+        "title": "Apply the formula and simplify",
+        "text": "Substitute A and B into the chosen product-to-sum formula and simplify, paying attention to $$\\sin(-x)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

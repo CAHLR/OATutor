@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a590f38trigonometric8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Inverse Sine Function",
+        "text": "Use the arcsin (or sin**-1) function on your calculator to find the principal value.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric8a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.927$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric8a-h1"
+        ],
+        "title": "Principal Value",
+        "text": "What is $$arcsin(0.8)$$ in radians, rounded to three decimal places?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric8a-h1"
+        ],
+        "title": "Quadrants for Sine",
+        "text": "Remember that $$sintheta$$ is positive in two quadrants. Find the second solution.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric8a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\pi$$ $$-$$ $$theta1$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric8a-h2"
+        ],
+        "title": "Second Solution",
+        "text": "If $$theta1$$ is the principal value, how do you find the second solution in (0, 2pi) where $$sintheta$$ is positive?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\pi$$ $$-$$ $$theta1$$",
+            "$$2\\pi$$ $$-$$ $$theta1$$",
+            "$$\\pi$$ + $$theta1$$",
+            "$$theta1$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric8a-h1"
+        ],
+        "title": "Calculator Mode",
+        "text": "Ensure your calculator is set to radian mode.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric8a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric8a-h3"
+        ],
+        "title": "Check Radian Mode",
+        "text": "To verify your calculator is in radian mode, what is \\sin(pi/2)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

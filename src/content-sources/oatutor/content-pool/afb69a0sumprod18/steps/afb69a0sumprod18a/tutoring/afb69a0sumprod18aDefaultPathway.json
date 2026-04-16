@@ -1,0 +1,105 @@
+[
+    {
+        "id": "afb69a0sumprod18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall sum-to-product formulas",
+        "text": "Which sum-to-product formula applies to $$\\cos(A)+\\cos(B)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod18a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2\\cos\\left(\\frac{A+B}{2}\\right)\\cos\\left(\\frac{A-B}{2}\\right)$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod18a-h1"
+        ],
+        "title": "Identify the correct formula",
+        "text": "The sum $$\\cos(A)+\\cos(B)$$ can be rewritten using which formula?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2\\cos\\left(\\frac{A+B}{2}\\right)\\cos\\left(\\frac{A-B}{2}\\right)$$",
+            "$$-2\\sin\\left(\\frac{A+B}{2}\\right)\\sin\\left(\\frac{A-B}{2}\\right)$$",
+            "$$2\\sin\\left(\\frac{A+B}{2}\\right)\\cos\\left(\\frac{A-B}{2}\\right)$$",
+            "$$2\\cos\\left(\\frac{A+B}{2}\\right)\\sin\\left(\\frac{A-B}{2}\\right)$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod18a-h1"
+        ],
+        "title": "Identify $A$ and $B$",
+        "text": "What are the values of A and B in the given expression?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod18a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A=6t$$, $$B=4t$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod18a-h2"
+        ],
+        "title": "Determine A and B",
+        "text": "In $$\\cos(6t)+\\cos(4t)$$, $$what$$ $$are$$ $$A$$ $$and$$ $$B$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$A=6t$$, $$B=4t$$",
+            "$$A=4t$$, $$B=6t$$",
+            "$$A=6$$, $$B=4$$",
+            "$$A=6t$$, $$B=-4t$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod18a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{A+B}{2}=5t$$, $$\\frac{A-B}{2}=t$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod18a-h2"
+        ],
+        "title": "Calculate $$\\frac{A+B}{2}$$ and $$\\frac{A-B}{2}$$",
+        "text": "What are $$\\frac{A+B}{2}$$ and $$\\frac{A-B}{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{A+B}{2}=5t$$, $$\\frac{A-B}{2}=t$$",
+            "$$\\frac{A+B}{2}=5t$$, $$\\frac{A-B}{2}=-t$$",
+            "$$\\frac{A+B}{2}=t$$, $$\\frac{A-B}{2}=5t$$",
+            "$$\\frac{A+B}{2}=10t$$, $$\\frac{A-B}{2}=2t$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod18a-h2"
+        ],
+        "title": "Apply the formula",
+        "text": "Substitute A and B into the formula and simplify.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a8d81afgaussian18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Matrix",
+        "text": "The given matrix is an augmented matrix, which represents a system of linear equations. Each row of the matrix corresponds to one equation in the system, with the coefficients of $$x$$, $$y$$, and the constant on the right-hand side.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8d81afgaussian18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8d81afgaussian18a-h1"
+        ],
+        "title": "Solving the System",
+        "text": "In order to solve the system, set the variables in each row equal to the constant on the right-hand side, then solve for the variables.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8d81afgaussian18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8d81afgaussian18a-h2"
+        ],
+        "title": "Gaussian Elimination",
+        "text": "To solve the system, use Gaussian elimination. First, use the first row to eliminate $$x$$ from the second equation. Subtract 4*(Row 1) from Row $$2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8d81afgaussian18a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a8d81afgaussian18a-h3"
+        ],
+        "title": "Solving for $$y$$",
+        "text": "Once you have eliminated $$x$$, solve for $$y$$. What is the value of $$y$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2$$",
+            "$$1$$",
+            "$$-2$$",
+            "$$0$$",
+            "$$1$$"
+        ]
+    },
+    {
+        "id": "a8d81afgaussian18a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a8d81afgaussian18a-h4"
+        ],
+        "title": "Solving for $$x$$",
+        "text": "Now that you have the value of $$y$$, substitute it into one of the equations and solve for $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

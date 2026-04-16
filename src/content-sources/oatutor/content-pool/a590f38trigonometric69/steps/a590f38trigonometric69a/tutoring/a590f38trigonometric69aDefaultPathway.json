@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a590f38trigonometric69a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use a Pythagorean Identity",
+        "text": "To solve this equation, express all trigonometric functions in terms of a single function. Recall the Pythagorean identity involving sine and cosine.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric69a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric69a-h1"
+        ],
+        "title": "Simplify to a quadratic form",
+        "text": "Substitute the identity into the equation and simplify to get a quadratic equation in terms of $$\\sinx$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric69a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric69a-h2"
+        ],
+        "title": "Solve the quadratic equation",
+        "text": "Let $$u$$ $$=$$ $$sinx$$ and solve the quadratic equation for $$u$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric69a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric69a-h3"
+        ],
+        "title": "Find the values of $$x$$",
+        "text": "Substitute $$\\sinx$$ back for $$u$$ and find all values of $$x$$ in the interval $$0\\leq$$ $$x<2\\pi$$ that satisfy the resulting equations.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric69a-s5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{2}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric69a-h4"
+        ],
+        "title": "Identify solutions for $$\\sinx$$ $$=$$ $$1$$",
+        "text": "For $$\\sinx$$ $$=$$ $$1$$ on the interval $$0\\leq$$ $$x<2\\pi$$, $$what$$ $$is$$ $$x$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

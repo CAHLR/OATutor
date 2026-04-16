@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a590f38trigonometric64a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recognize quadratic form",
+        "text": "This equation resembles a quadratic equation. Consider a substitution to simplify it.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric64a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$u$$ $$=$$ $$\\cos(x)$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric64a-h1"
+        ],
+        "title": "Identify substitution",
+        "text": "What substitution can you make to transform $$3cos**{2}x-2\\cosx-2=0$$ into a standard quadratic equation?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric64a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric64a-h1"
+        ],
+        "title": "Solve the quadratic equation",
+        "text": "After substitution, solve the resulting quadratic equation for $u$ using the quadratic formula.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric64a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$u$$ $$=$$ $$\\frac{1$$ $$\\pm$$ \\sqrt{7}}{3}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric64a-h2"
+        ],
+        "title": "Find solutions for $u$",
+        "text": "What are the solutions for $u$ in $$3u^2$$ $$-$$ $$2u$$ $$-$$ $$2$$ $$=$$ $$0$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$u$$ $$=$$ $$\\frac{1$$ $$\\pm$$ \\sqrt{7}}{3}$$",
+            "$$u$$ $$=$$ $$\\frac{-1$$ $$\\pm$$ \\sqrt{7}}{3}$$",
+            "$$u$$ $$=$$ $$\\frac{1$$ $$\\pm$$ \\sqrt{5}}{3}$$",
+            "$$u$$ $$=$$ $$\\frac{2$$ $$\\pm$$ \\sqrt{7}}{3}$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric64a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric64a-h2"
+        ],
+        "title": "Check range and find principal value",
+        "text": "Recall the range of the cosine function. Which value for $u$ is valid, and how do you find the principal value for $$x$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric64a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$u$$ $$=$$ \\frac{1-\\sqrt{7}}{3}$$, $$x$$ $$=$$ arccos\\left(\\frac{1-\\sqrt{7}}{3}\\right)$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric64a-h3"
+        ],
+        "title": "Evaluate validity and express $$x$$",
+        "text": "Given that the range of $$\\cos(x)$$ is $$(-1,1)$$, $$which$$ $$value$$ $$of$$ $$u$$ $$is$$ $$valid$$, $$and$$ $$how$$ $$do$$ $$you$$ $$express$$ $$x$$ $$using$$ $$the$$ $$inverse$$ $$cosine$$ $$function$$ $$for$$ $$that$$ $$valid$$ $$u$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$u$$ $$=$$ \\frac{1-\\sqrt{7}}{3}$$, $$x$$ $$=$$ arccos\\left(\\frac{1-\\sqrt{7}}{3}\\right)$$",
+            "$$u$$ $$=$$ \\frac{1+\\sqrt{7}}{3}$$, $$x$$ $$=$$ arccos\\left(\\frac{1+\\sqrt{7}}{3}\\right)$$",
+            "$$u$$ $$=$$ \\frac{1-\\sqrt{7}}{3}$$, $$x$$ $$=$$ arcsin\\left(\\frac{1-\\sqrt{7}}{3}\\right)$$",
+            "$$u$$ $$=$$ \\frac{1-\\sqrt{7}}{3}$$"
+        ]
+    }
+]

@@ -1,0 +1,65 @@
+[
+    {
+        "id": "af9dcc3physical3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the spring constant",
+        "text": "Since $$x=-0.2$$ and $$F(x)=-10$$ are given, we have $$-10=k \\left(-0.2\\right)$$ then $$k=50$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af9dcc3physical3a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$50x$$"
+        ],
+        "dependencies": [
+            "af9dcc3physical3a-h1"
+        ],
+        "title": "Define F(x)",
+        "text": "What is the force F(x) applied to stretch the spring?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af9dcc3physical3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af9dcc3physical3a-h2"
+        ],
+        "title": "Set up the integral",
+        "text": "$$W=\\int_{a}^{b} F(x) \\,dx=\\int_{0}^{0.5} 50x \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af9dcc3physical3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "af9dcc3physical3a-h3"
+        ],
+        "title": "Find the integral",
+        "text": "$$25x^2$$ as the limits going from $$x=0$$ to $$x=0.5$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af9dcc3physical3a-h5",
+        "type": "hint",
+        "dependencies": [
+            "af9dcc3physical3a-h4"
+        ],
+        "title": "Evaluate",
+        "text": "$$25\\times{0.5}^2=6.25$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

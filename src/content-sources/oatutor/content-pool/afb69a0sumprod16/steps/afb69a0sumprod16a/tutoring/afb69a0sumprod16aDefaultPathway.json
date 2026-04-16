@@ -1,0 +1,105 @@
+[
+    {
+        "id": "afb69a0sumprod16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplify the expression first",
+        "text": "Use the $$\\frac{odd}{even}$$ identity for sine to simplify $$\\sin(-x)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod16a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-\\sin(x)$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod16a-h1"
+        ],
+        "title": "Simplify $$\\sin(-x)$$",
+        "text": "What is $$\\sin(-x)$$ equal to?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$-\\sin(x)$$",
+            "$$\\sin(x)$$",
+            "$$\\cos(x)$$",
+            "$$-\\cos(x)$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod16a-h1"
+        ],
+        "title": "Identify the correct product-to-sum formula",
+        "text": "Recall the product-to-sum formulas. Which one matches the form $$\\sin(A)\\sin(B)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod16a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1/2(\\cos(A-B) $$-$$ \\cos(A+B))$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod16a-h2"
+        ],
+        "title": "Product-to-sum formula for $$\\sin(A)\\sin(B)$$",
+        "text": "What is the product-to-sum formula for $$\\sin(A)\\sin(B)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$1/2(\\cos(A-B) $$-$$ \\cos(A+B))$$",
+            "$$1/2(\\cos(A+B) $$-$$ $$\\cos(A-B))$$",
+            "$$1/2(\\sin(A-B) $$-$$ \\sin(A+B))$$",
+            "$$1/2(\\cos(A-B) + \\cos(A+B))$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod16a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A=x$$, $$B=5x$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod16a-h2"
+        ],
+        "title": "Identify $A$ and $B$",
+        "text": "In $$-\\sin(x)\\sin(5x)$$, $$what$$ $$are$$ $$A$$ $$and$$ $$B$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$A=x$$, $$B=5x$$",
+            "$$A=5x$$, $$B=x$$",
+            "$$A=-x$$, $$B=5x$$",
+            "$$A=x$$, $$B=-5x$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod16a-h2"
+        ],
+        "title": "Apply the formula and simplify",
+        "text": "Substitute A and B into the chosen product-to-sum formula and simplify, paying attention to $$\\cos(-x)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

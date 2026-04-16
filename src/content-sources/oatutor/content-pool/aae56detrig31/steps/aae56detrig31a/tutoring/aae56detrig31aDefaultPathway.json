@@ -1,0 +1,133 @@
+[
+    {
+        "id": "aae56detrig31a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall the sum identity for sine",
+        "text": "What is the formula for $$\\sin(A+B)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig31a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\sinAcosB$$ + $$cosAsinB$$"
+        ],
+        "dependencies": [
+            "aae56detrig31a-h1"
+        ],
+        "title": "Sine sum identity",
+        "text": "What is $$\\sin(A+B)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\sinAcosB$$ + $$cosAsinB$$",
+            "$$\\sinAcosB$$ $$-$$ $$cosAsinB$$",
+            "$$\\cosAcosB$$ + $$sinAsinB$$",
+            "$$\\cosAcosB$$ $$-$$ $$sinAsinB$$"
+        ]
+    },
+    {
+        "id": "aae56detrig31a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig31a-h1"
+        ],
+        "title": "Find missing trigonometric values",
+        "text": "You need $$\\cosa$$ and $$\\sinb$$. $$ \\cup se$$ $$the$$ $$Pythagorean$$ $$identity$$ $$and$$ $$the$$ $$given$$ $$quadrant$$ $$information$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig31a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\frac{\\sqrt{5}}{3}$$"
+        ],
+        "dependencies": [
+            "aae56detrig31a-h2"
+        ],
+        "title": "Find cosa",
+        "text": "Given $$\\sina=\\frac{2}{3}$$ and $$a$$ $$\\in$$ $$(\\frac{pi}{2}, pi)$$, $$what$$ $$is$$ $$\\cosa$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig31a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\sqrt{15}}{4}$$"
+        ],
+        "dependencies": [
+            "aae56detrig31a-h2"
+        ],
+        "title": "Find sinb",
+        "text": "Given $$\\cosb=-\\frac{1}{4}$$ and $$b$$ $$\\in$$ $$(\\frac{pi}{2}, pi)$$, $$what$$ $$is$$ $$\\sinb$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig31a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig31a-h2"
+        ],
+        "title": "Substitute and simplify",
+        "text": "Substitute all known values into the $$\\sin(a+b)$$ formula and simplify the expression.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig31a-s4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(\\frac{2}{3})(-\\frac{1}{4})$$ + (-\\frac{\\sqrt{5}}{3})(\\frac{\\sqrt{15}}{4})$$"
+        ],
+        "dependencies": [
+            "aae56detrig31a-h3"
+        ],
+        "title": "Substitute values",
+        "text": "Substitute $$\\sina$$, $$\\cosa$$, $$\\sinb$$, $$\\cosb$$ into $$\\sin(a+b)$$ formula.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$(\\frac{2}{3})(-\\frac{1}{4})$$ + (-\\frac{\\sqrt{5}}{3})(\\frac{\\sqrt{15}}{4})$$",
+            "$$(\\frac{2}{3})(-\\frac{1}{4})$$ $$-$$ (-\\frac{\\sqrt{5}}{3})(\\frac{\\sqrt{15}}{4})$$",
+            "$$(-\\frac{\\sqrt{5}}{3})(-\\frac{1}{4}) + (\\frac{2}{3})(\\frac{\\sqrt{15}}{4})$$",
+            "$$(\\frac{2}{3})(\\frac{1}{4})$$ + (\\frac{\\sqrt{5}}{3})(\\frac{\\sqrt{15}}{4})$$"
+        ]
+    },
+    {
+        "id": "aae56detrig31a-s5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-2$$ $$-$$ 5\\sqrt{3}}{12}$$"
+        ],
+        "dependencies": [
+            "aae56detrig31a-h3"
+        ],
+        "title": "Simplify the expression",
+        "text": "Simplify $$-\\frac{2}{12$$} $$-$$ \\frac{\\sqrt{75}}{12}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

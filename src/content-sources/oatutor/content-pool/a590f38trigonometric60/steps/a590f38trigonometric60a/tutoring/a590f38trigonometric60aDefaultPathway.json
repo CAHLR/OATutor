@@ -1,0 +1,105 @@
+[
+    {
+        "id": "a590f38trigonometric60a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor out the common term",
+        "text": "Notice that $$tan(x)$$ is a common factor in both terms.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric60a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$tanx(tanx-\\sqrt{3})=0$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric60a-h1"
+        ],
+        "title": "Factor the equation",
+        "text": "Factor $$tan**{2}x-\\sqrt{3}tanx=0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$tanx(tanx-\\sqrt{3})=0$$",
+            "$$tanx(tanx+\\sqrt{3})=0$$",
+            "$$tanx(tanx-3)=0$$",
+            "$$tanx(tanx-\\sqrt{3}x)=0$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric60a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric60a-h1"
+        ],
+        "title": "Solve each factor",
+        "text": "Set each factor equal to zero and solve the resulting equations.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric60a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$, $$\\pi$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric60a-h2"
+        ],
+        "title": "Solve for $$tan(x)=0$$",
+        "text": "What are the solutions for $$tan(x)=0$$ in the interval $$0\\leq$$ $$x<2\\pi$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$0$$, $$\\pi$$",
+            "$$0$$, $$2\\pi$$",
+            "$$\\frac{\\pi}{2$$,} $$\\frac{3\\pi}{2}$$",
+            "$$0$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric60a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{3$$,} $$\\frac{4\\pi}{3}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric60a-h2"
+        ],
+        "title": "Solve for $$tan(x)=\\sqrt{3}$$",
+        "text": "What are the solutions for $$tan(x)=\\sqrt{3}$$ in the interval $$0\\leq$$ $$x<2\\pi$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\pi}{3$$,} $$\\frac{4\\pi}{3}$$",
+            "$$\\frac{\\pi}{3$$,} $$\\frac{2\\pi}{3}$$",
+            "$$\\frac{\\pi}{6$$,} $$\\frac{7\\pi}{6}$$",
+            "$$\\frac{\\pi}{3$$,} $$\\frac{5\\pi}{3}$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric60a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric60a-h2"
+        ],
+        "title": "Combine all solutions",
+        "text": "List all unique solutions found from both equations.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

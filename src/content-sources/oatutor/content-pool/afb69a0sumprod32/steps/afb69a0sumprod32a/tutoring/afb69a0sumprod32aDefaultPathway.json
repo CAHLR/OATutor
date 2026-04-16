@@ -1,0 +1,93 @@
+[
+    {
+        "id": "afb69a0sumprod32a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the correct product-to-sum formula",
+        "text": "Recall the product-to-sum formulas. Which one applies to \\sin A \\cos B?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod32a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1/2(\\sin(A+B) + $$\\sin(A-B))$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod32a-h1"
+        ],
+        "title": "Recall the formula",
+        "text": "What is the product-to-sum formula for \\sin A \\cos B?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$1/2(\\sin(A+B) + $$\\sin(A-B))$$",
+            "$$1/2(\\sin(A+B) $$-$$ $$\\sin(A-B))$$",
+            "$$1/2(\\cos(A+B) + $$\\cos(A-B))$$",
+            "$$1/2(\\cos(A+B) $$-$$ $$\\cos(A-B))$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod32a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod32a-h1"
+        ],
+        "title": "Identify $A$ and $B$",
+        "text": "Determine the values of A and B from the given expression.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod32a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$213**{\\circ}$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod32a-h2"
+        ],
+        "title": "What is A?",
+        "text": "In \\sin(213**{\\circ})\\cos(8**{\\circ}), what is the value of A?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod32a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod32a-h2"
+        ],
+        "title": "Identify $A$ and $B$. Calculate their sum and difference.",
+        "text": "Once A and B are identified, calculate the sum and difference of the angles.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod32a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$221**{\\circ}$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod32a-h3"
+        ],
+        "title": "Calculate $$A+B$$",
+        "text": "What is $$A+B$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

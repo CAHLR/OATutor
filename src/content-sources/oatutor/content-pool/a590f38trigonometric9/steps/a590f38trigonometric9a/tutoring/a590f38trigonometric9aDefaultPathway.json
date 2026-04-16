@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a590f38trigonometric9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Reciprocal Identity",
+        "text": "Rewrite the equation in terms of $$costheta$$ using the reciprocal identity.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric9a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\cos\\theta $$=$$ $$\\frac{-1}{4}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric9a-h1"
+        ],
+        "title": "Convert to Cosine",
+        "text": "What is the equation $$sectheta$$ $$=$$ $$-4$$ when rewritten in terms of $$costheta$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\cos\\theta $$=$$ $$\\frac{-1}{4}$$",
+            "$$\\cos\\theta $$=$$ $$\\frac{1}{4}$$",
+            "$$\\cos\\theta $$=$$ $$-4$$",
+            "$$\\sin\\theta $$=$$ $$\\frac{-1}{4}$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric9a-h1"
+        ],
+        "title": "Inverse Cosine Function",
+        "text": "Use the arccos (or cos**-1) function on your calculator to find the principal value.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric9a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.823$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric9a-h2"
+        ],
+        "title": "Principal Value",
+        "text": "What is $$arccos(-0.25)$$ in radians, rounded to three decimal places?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric9a-h2"
+        ],
+        "title": "Quadrants for Cosine",
+        "text": "Remember that $$costheta$$ is negative in two quadrants. Find the second solution.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric9a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2\\pi$$ $$-$$ $$theta1$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric9a-h3"
+        ],
+        "title": "Second Solution",
+        "text": "If $$theta1$$ is the principal value $$arccos(-0.25)$$, how do you find the second solution in (0, 2pi) where $$costheta$$ is negative?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2\\pi$$ $$-$$ $$theta1$$",
+            "$$\\pi$$ $$-$$ $$theta1$$",
+            "$$\\pi$$ + $$theta1$$",
+            "$$theta1$$"
+        ]
+    }
+]

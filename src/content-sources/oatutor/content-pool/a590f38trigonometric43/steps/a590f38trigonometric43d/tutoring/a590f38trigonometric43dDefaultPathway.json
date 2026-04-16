@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a590f38trigonometric43d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Isolate the sine function",
+        "text": "Rewrite the equation to solve for $$\\sin(x)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric43d-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\sin(x)=\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric43d-h1"
+        ],
+        "title": "Equation after isolating $$\\sin(x)$$",
+        "text": "What is the equation after isolating $$\\sin(x)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\sin(x)=\\frac{1}{2}$$",
+            "$$\\sin(x)=-\\frac{1}{2}$$",
+            "$$\\sin(x)=2$$",
+            "$$\\sin(x)=-2$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric43d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric43d-h1"
+        ],
+        "title": "Recall the unit circle",
+        "text": "Think about where the y-coordinate is $$\\frac{1}{2}$$ on the unit circle.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric43d-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{6}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric43d-h2"
+        ],
+        "title": "First solution for $$\\sin(x)=\\frac{1}{2}$$",
+        "text": "What is the first angle in $$(0$$, 2pi)$$ where $$\\sin(x)=\\frac{1}{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

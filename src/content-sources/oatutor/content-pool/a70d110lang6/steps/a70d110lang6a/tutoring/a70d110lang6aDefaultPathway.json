@@ -1,0 +1,91 @@
+[
+    {
+        "id": "a70d110lang6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Start with the smallest prime number",
+        "text": "To begin factoring $$45$$, start by dividing it by the smallest prime number. What is the smallest prime number?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70d110lang6a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$15$$"
+        ],
+        "dependencies": [
+            "a70d110lang6a-h1"
+        ],
+        "title": "Divide by the smallest prime",
+        "text": "What do you get when you divide $$45$$ by 3?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70d110lang6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a70d110lang6a-h2"
+        ],
+        "title": "Continue factoring the result",
+        "text": "Now that you have $$15$$, continue factoring it by dividing by the smallest prime number again.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70d110lang6a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a70d110lang6a-h3"
+        ],
+        "title": "Divide $$15$$ by the smallest prime",
+        "text": "What do you get when you divide $$15$$ by 3?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70d110lang6a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a70d110lang6a-h4"
+        ],
+        "title": "Identify the remaining factor",
+        "text": "Now that you have $$5$$, check if it is a prime number or if it can be factored further.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70d110lang6a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a70d110lang6a-h5"
+        ],
+        "title": "Is $$5$$ a prime number?",
+        "text": "Is $$5$$ a prime number?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

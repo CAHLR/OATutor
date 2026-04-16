@@ -1,0 +1,94 @@
+[
+    {
+        "id": "a28722cappquad19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify what we are looking for.",
+        "text": "We are looking for the length of the side of the flag, which is s.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a28722cappquad19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a28722cappquad19a-h1"
+        ],
+        "title": "Name what we are looking for.",
+        "text": "As we can see in the picture, the sides are: s, s, $$s+3$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a28722cappquad19a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a28722cappquad19a-h2"
+        ],
+        "title": "Translate into an equation.",
+        "text": "We can use the Pythagorean Theorem to solve for s: $$s^2$$ $$+s^2$$ $$=$$ $$\\left(s+3\\right)^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a28722cappquad19a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a28722cappquad19a-h3"
+        ],
+        "title": "Rewrite in standard form.",
+        "text": "$$s^2-6s-9=0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a28722cappquad19a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a28722cappquad19a-h4"
+        ],
+        "title": "Solve the equation using the Quadratic Formula.",
+        "text": "Idenfity the a, $$b$$, c value: $$a=1$$, $$b=-6$$, $$c=-9$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a28722cappquad19a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$s=\\frac{6\\pm \\sqrt{72}}{2}$$"
+        ],
+        "dependencies": [
+            "a28722cappquad19a-h5"
+        ],
+        "title": "Solve the equation.",
+        "text": "We could solve the equation using the Quadratic Formula, $$h=\\frac{\\left(-b\\pm \\sqrt{b^2-4a c}\\right)}{2a}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a28722cappquad19a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7.2$$"
+        ],
+        "dependencies": [
+            "a28722cappquad19a-h6"
+        ],
+        "title": "Rounding",
+        "text": "Round to nearest tenth",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

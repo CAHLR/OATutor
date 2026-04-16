@@ -1,0 +1,41 @@
+[
+    {
+        "id": "aae56detrig6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use the sum identity for cosine",
+        "text": "Recall the sum identity for cosine: $$\\cos(\\alpha+\u03b2) $$=$$ $$cos\\alphacos\u03b2$$ $$-$$ $$sin\\alphasin\u03b2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig6b-h2",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig6b-h1"
+        ],
+        "title": "Substitute and simplify",
+        "text": "Substitute the values into the cosine sum identity and simplify.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig6b-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{16}{65}$$"
+        ],
+        "dependencies": [
+            "aae56detrig6b-h2"
+        ],
+        "title": "Calculate \\cos(\\alpha+\u03b2)",
+        "text": "Using the values, what is $$\\cos(\\alpha+\u03b2)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

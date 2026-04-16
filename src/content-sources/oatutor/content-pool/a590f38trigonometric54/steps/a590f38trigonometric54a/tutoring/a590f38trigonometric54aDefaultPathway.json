@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a590f38trigonometric54a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the identity",
+        "text": "Recognize the trigonometric identity on the left side of the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric54a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Cosine Difference Formula"
+        ],
+        "dependencies": [
+            "a590f38trigonometric54a-h1"
+        ],
+        "title": "Which identity?",
+        "text": "Which trigonometric identity matches the form $$\\cos(A)\\cos(B)+\\sin(A)\\sin(B)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric54a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric54a-h1"
+        ],
+        "title": "Simplify the equation",
+        "text": "Apply the identified formula to simplify the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric54a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\cos(x)$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric54a-h2"
+        ],
+        "title": "Apply the identity",
+        "text": "What is the simplified form of $$\\cos(2x)cosx+\\sin(2x)sinx$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\cos(x)$$",
+            "$$\\cos(3x)$$",
+            "$$\\sin(x)$$",
+            "$$\\sin(3x)$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric54a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric54a-h2"
+        ],
+        "title": "Solve for the variable",
+        "text": "Solve the simplified equation for $$x$$ on the given interval.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric54a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric54a-h3"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "For what value(s) of $$x$$ is $$\\cos(x)$$ $$=$$ $$1$$ on the interval $$0\\leq$$ $$x<2\\pi$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

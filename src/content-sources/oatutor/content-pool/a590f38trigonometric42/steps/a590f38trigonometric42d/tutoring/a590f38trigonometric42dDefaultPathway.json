@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a590f38trigonometric42d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewrite in terms of cosine",
+        "text": "Convert $$sec(x)$$ to $$\\frac{1}{\\cos(x)}$$ to simplify the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric42d-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\cos(x)=\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric42d-h1"
+        ],
+        "title": "Equation in terms of cosine",
+        "text": "What is the equation $$sec(x)-2=0$$ when rewritten in terms of $$\\cos(x)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\cos(x)=\\frac{1}{2}$$",
+            "$$\\cos(x)=-\\frac{1}{2}$$",
+            "$$\\cos(x)=2$$",
+            "$$\\cos(x)=-2$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric42d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric42d-h1"
+        ],
+        "title": "Recall the unit circle",
+        "text": "Think about where the x-coordinate is $$\\frac{1}{2}$$ on the unit circle.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric42d-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{3}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric42d-h2"
+        ],
+        "title": "First solution for $$\\cos(x)=\\frac{1}{2}$$",
+        "text": "What is the first angle in $$(0$$, 2pi)$$ where $$\\cos(x)=\\frac{1}{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

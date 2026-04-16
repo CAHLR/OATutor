@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a9790f0System12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Isolating Variable",
+        "text": "To solve the system of equations using substitution, we will want to isolate one of our variables. Then we will replace the variable in our other equation with our isolated formula. We can then solve for one of our variables, after which we can solve for the other one.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9790f0System12a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4x^2+\\left(x+2\\right)^2=4$$"
+        ],
+        "dependencies": [
+            "a9790f0System12a-h1"
+        ],
+        "title": "Plugging it in",
+        "text": "What will our other equation look like once we replace $$y$$ with the expression?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9790f0System12a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "x=-.8,0"
+        ],
+        "dependencies": [
+            "a9790f0System12a-h2"
+        ],
+        "title": "Simplifying",
+        "text": "What will our expression look like when simplified?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9790f0System12a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "y=1.2,2"
+        ],
+        "dependencies": [
+            "a9790f0System12a-h3"
+        ],
+        "title": "Plugging it in",
+        "text": "When we plug in our values, what will $$y$$ evaluate to?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9790f0System12a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(-.8,1.2),(0,2)"
+        ],
+        "dependencies": [
+            "a9790f0System12a-h4"
+        ],
+        "title": "Solution",
+        "text": "What are our $$x$$ and $$y$$ values equal to? Please enter your answer as (a,b). If there is more than one answer, please enter them as (a,b), (c,d) where $$a<c$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

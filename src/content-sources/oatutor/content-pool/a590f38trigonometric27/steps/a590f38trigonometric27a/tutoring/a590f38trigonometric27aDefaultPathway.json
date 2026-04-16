@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a590f38trigonometric27a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify quadrants",
+        "text": "Determine the quadrants where $$tantheta$$ is negative.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric27a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "II and IV"
+        ],
+        "dependencies": [
+            "a590f38trigonometric27a-h1"
+        ],
+        "title": "Quadrants for negative tangent",
+        "text": "In which quadrants is $$tantheta$$ negative?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "I and II",
+            "II and III",
+            "III and IV",
+            "II and IV"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric27a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric27a-h1"
+        ],
+        "title": "Find the reference angle",
+        "text": "Determine the reference angle $$theta'$$ for which $$tan\\left(theta'\\right)$$ $$=$$ $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric27a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{4}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric27a-h2"
+        ],
+        "title": "Reference angle for tan(theta') $$=$$ $$1$$",
+        "text": "What is the reference angle $$theta'$$ such that $$tan\\left(theta'\\right)$$ $$=$$ $$1$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric27a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric27a-h2"
+        ],
+        "title": "Calculate the first solution",
+        "text": "Use the reference angle to find the solution in Quadrant II.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric27a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\pi$$ $$-$$ $$theta'$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric27a-h3"
+        ],
+        "title": "Angle in Quadrant II",
+        "text": "How do you find the angle in Quadrant II given a reference angle $$theta'$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\pi$$ $$-$$ $$theta'$$",
+            "$$\\pi$$ + $$theta'$$",
+            "$$2\\pi$$ $$-$$ $$theta'$$",
+            "$$theta'$$"
+        ]
+    }
+]

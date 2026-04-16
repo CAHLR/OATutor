@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a590f38trigonometric27b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculate the second solution",
+        "text": "Use the reference angle to find the solution in Quadrant IV.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric27b-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2\\pi$$ $$-$$ $$theta'$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric27b-h1"
+        ],
+        "title": "Angle in Quadrant IV",
+        "text": "How do you find the angle in Quadrant IV given a reference angle $$theta'$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2\\pi$$ $$-$$ $$theta'$$",
+            "$$\\pi$$ $$-$$ $$theta'$$",
+            "$$\\pi$$ + $$theta'$$",
+            "$$theta'$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric27b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric27b-h1"
+        ],
+        "title": "Final calculation",
+        "text": "Substitute the reference angle into the formula for Quadrant IV.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric27b-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{7\\pi}{4}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric27b-h2"
+        ],
+        "title": "Second solution value",
+        "text": "What is $$2\\pi$$ $$-$$ $$\\frac{\\pi}{4}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

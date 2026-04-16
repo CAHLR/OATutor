@@ -1,0 +1,121 @@
+[
+    {
+        "id": "a70d110lang3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Prime factorization",
+        "text": "First, find the prime factorization of each number.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70d110lang3a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2\\times2\\times3$$"
+        ],
+        "dependencies": [
+            "a70d110lang3a-h1"
+        ],
+        "title": "Prime factorization of $$12$$",
+        "text": "What is the prime factorization of 12?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70d110lang3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2\\times3\\times3$$"
+        ],
+        "dependencies": [
+            "a70d110lang3a-h1"
+        ],
+        "title": "Prime factorization of $$18$$",
+        "text": "What is the prime factorization of 18?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70d110lang3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a70d110lang3a-h3"
+        ],
+        "title": "Finding LCM",
+        "text": "For each prime factorm, find the greatest number of times it appears in either factorization $$2\\times2\\times3$$ or $$2\\times3\\times3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70d110lang3a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a70d110lang3a-h4"
+        ],
+        "title": "Highest power of $$2$$",
+        "text": "What is the highest power of $$2$$ appearing in the factorizations?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70d110lang3a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a70d110lang3a-h4"
+        ],
+        "title": "Highest power of $$3$$",
+        "text": "What is the highest power of $$3$$ appearing in the factorizations?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70d110lang3a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a70d110lang3a-h6"
+        ],
+        "title": "Multiply the factors",
+        "text": "Finally, multiply these factors together to get the LCM.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70d110lang3a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$36$$"
+        ],
+        "dependencies": [
+            "a70d110lang3a-h7"
+        ],
+        "title": "Multiply the factors",
+        "text": "What is $$2\\times2\\times3\\times3$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,105 @@
+[
+    {
+        "id": "afb69a0sumprod28a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall product-to-sum formula",
+        "text": "Recall the product-to-sum formula for $\\sin A \\sin B$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod28a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{1}{2}(\\cos(A-B)$$ $$-$$ \\cos(A+B))$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod28a-h1"
+        ],
+        "title": "Identify the correct formula",
+        "text": "What is the product-to-sum formula for $\\sin A \\sin B$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{1}{2}(\\cos(A-B)$$ $$-$$ \\cos(A+B))$$",
+            "$$\\frac{1}{2}(\\cos(A-B)$$ + \\cos(A+B))$$",
+            "$$\\frac{1}{2}(\\sin(A+B) + $$\\sin(A-B))$$",
+            "$$\\frac{1}{2}(\\cos(A+B) $$-$$ $$\\cos(A-B))$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod28a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod28a-h1"
+        ],
+        "title": "Identify $A$ and $B$",
+        "text": "Identify the values of A and B from the given expression.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod28a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A $$=$$ -45**{\\circ}, B $$=$$ -15**{\\circ}"
+        ],
+        "dependencies": [
+            "afb69a0sumprod28a-h2"
+        ],
+        "title": "Determine A and B",
+        "text": "In $\\sin(-45**{\\circ})\\sin(-15**{\\circ})$, what are A and B?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "A $$=$$ -45**{\\circ}, B $$=$$ -15**{\\circ}",
+            "A $$=$$ -15**{\\circ}, B $$=$$ -45**{\\circ}",
+            "A $$=$$ -45**{\\circ}, B $$=$$ 15**{\\circ}",
+            "A $$=$$ 45**{\\circ}, B $$=$$ 15**{\\circ}"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod28a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod28a-h2"
+        ],
+        "title": "Evaluate cosine values",
+        "text": "Evaluate the cosine values for the resulting angles.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod28a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\cos(-30**\\circ) $$=$$ \\frac{\\sqrt{3}}{2}, \\cos(-60**\\circ) $$=$$ $$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod28a-h3"
+        ],
+        "title": "Calculate cosine values",
+        "text": "What are $\\cos(-30**\\circ)$ and $\\cos(-60**\\circ)$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\cos(-30**\\circ) $$=$$ \\frac{\\sqrt{3}}{2}, \\cos(-60**\\circ) $$=$$ $$\\frac{1}{2}$$",
+            "$$\\cos(-30**\\circ) $$=$$ -\\frac{\\sqrt{3}}{2}, \\cos(-60**\\circ) $$=$$ $$\\frac{1}{2}$$",
+            "$$\\cos(-30**\\circ) $$=$$ \\frac{\\sqrt{3}}{2}, \\cos(-60**\\circ) $$=$$ $$-\\frac{1}{2}$$",
+            "$$\\cos(-30**\\circ) $$=$$ $$\\frac{1}{2$$,} \\cos(-60**\\circ) $$=$$ \\frac{\\sqrt{3}}{2}$$"
+        ]
+    }
+]

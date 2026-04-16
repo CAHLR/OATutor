@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a3d3e89log19a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [],
+        "title": "Common Logarithm",
+        "text": "If we only have $$\\ln\\left(x\\right)$$, i.e., we don't see a base $$b$$ as in logb(x), what is the base?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log19a-h1"
+        ],
+        "title": "Simplify",
+        "text": "Simplify $$log10(0.04)$$ with a calculator.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log19a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log19a-h2"
+        ],
+        "title": "Round",
+        "text": "We get $$-1.39794$$. To round to nearest thousandth, we check that the third decimal place is less or equal $$\\frac{to}{greater}$$ than $$5$$. If equal $$\\frac{to}{greater}$$ than $$5$$, we round up to the next thousandth.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

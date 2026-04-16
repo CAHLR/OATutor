@@ -1,0 +1,184 @@
+[
+    {
+        "id": "a590f38trigonometric73a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplify the right side",
+        "text": "Recall the Pythagorean identity $$\\sin**{2}(x) + cos**{2}(x) $$=$$ $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric73a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric73a-h1"
+        ],
+        "title": "Simplify the right side",
+        "text": "What is $$\\sin**{2}(x) + cos**{2}(x)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric73a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplify the denominator",
+        "text": "Recall the identity $$sec**{2}(x) $$=$$ $$1$$ + tan**{2}(x)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric73a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1$$ + tan**{2}(x)$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric73a-h2"
+        ],
+        "title": "Rewrite $$sec**{2}(x)$$",
+        "text": "Express $$sec**{2}(x)$$ in terms of $$tan**{2}(x)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$1$$ + tan**{2}(x)$$",
+            "$$1$$ $$-$$ tan**{2}(x)$$",
+            "$$tan**{2}(x) $$-$$ $$1$$",
+            "$$cot**{2}(x) + $$1$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric73a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1$$ $$-$$ tan**{2}(x)$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric73a-h2"
+        ],
+        "title": "Simplify the denominator",
+        "text": "What does $$2$$ $$-$$ sec**{2}(x)$$ simplify to?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$1$$ $$-$$ tan**{2}(x)$$",
+            "$$1$$ + tan**{2}(x)$$",
+            "$$tan**{2}(x) $$-$$ $$1$$",
+            "$$2$$ + tan**{2}(x)$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric73a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recognize a double angle identity",
+        "text": "The simplified left side matches the double angle identity for tangent.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric73a-s4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$tan(2x)$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric73a-h3"
+        ],
+        "title": "Identify the identity",
+        "text": "What trigonometric identity does $$\\frac{2\\tanx}{1-tan**{2}x}$$ represent?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$tan(2x)$$",
+            "$$2\\tan(x)$$",
+            "$$tan**{2}(x)$$",
+            "$$\\sin(2x)$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric73a-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Solve for $$2x$$",
+        "text": "Find all values for $$2x$$ on the interval $$(0$$, 4pi)$$ where $$tan(2x)$$ $$=$$ $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric73a-s5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{4}$$, $$\\frac{5\\pi}{4}$$, $$\\frac{9\\pi}{4}$$, $$\\frac{13\\pi}{4}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric73a-h4"
+        ],
+        "title": "Solve $$tan(u)$$ $$=$$ $$1$$",
+        "text": "If $$u$$ $$=$$ $$2x$$, $$what$$ $$are$$ $$the$$ $$solutions$$ $$for$$ $$u$$ on $$(0$$, 4pi)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\pi}{4}$$, $$\\frac{5\\pi}{4}$$, $$\\frac{9\\pi}{4}$$, $$\\frac{13\\pi}{4}$$",
+            "$$\\frac{\\pi}{4}$$, $$\\frac{5\\pi}{4}$$",
+            "$$\\frac{\\pi}{4}$$, $$\\frac{3\\pi}{4}$$, $$\\frac{5\\pi}{4}$$, $$\\frac{7\\pi}{4}$$",
+            "$$\\frac{\\pi}{4}$$, $$\\frac{3\\pi}{4}$$, $$\\frac{9\\pi}{4}$$, $$\\frac{11\\pi}{4}$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric73a-h5",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Solve for $$x$$",
+        "text": "Divide the solutions for $$2x$$ by $$2$$ to find the solutions for $$x$$ on $$(0$$, 2pi)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric73a-s6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{8}$$, $$\\frac{5\\pi}{8}$$, $$\\frac{9\\pi}{8}$$, $$\\frac{13\\pi}{8}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric73a-h5"
+        ],
+        "title": "Find $$x$$ values",
+        "text": "Divide the solutions for $$2x$$ by $$2$$. What are the solutions for $$x$$ on $$(0$$, 2pi)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\pi}{8}$$, $$\\frac{5\\pi}{8}$$, $$\\frac{9\\pi}{8}$$, $$\\frac{13\\pi}{8}$$",
+            "$$\\frac{\\pi}{4}$$, $$\\frac{5\\pi}{4}$$",
+            "$$\\frac{\\pi}{8}$$, $$\\frac{3\\pi}{8}$$, $$\\frac{5\\pi}{8}$$, $$\\frac{7\\pi}{8}$$",
+            "$$\\frac{\\pi}{8}$$, $$\\frac{5\\pi}{8}$$"
+        ]
+    }
+]

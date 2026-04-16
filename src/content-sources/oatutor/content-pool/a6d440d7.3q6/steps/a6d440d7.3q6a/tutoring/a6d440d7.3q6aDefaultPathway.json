@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a6d440d7.3q6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the k Value",
+        "text": "Let k $$=$$ the 90th percentile. Find k where P(\u03a3x < k) $$=$$ $$0.90$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6d440d7.3q6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6d440d7.3q6a-h1"
+        ],
+        "title": "Find the k Value",
+        "text": "k $$=$$ $$237.8$$, draw a graph to help you comprehend",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6d440d7.3q6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6d440d7.3q6a-h2"
+        ],
+        "title": "Explanation",
+        "text": "The 90th percentile for the sum of $$75$$ scores is about $$237.8$$. This tells us that 90% of all the sums of $$75$$ scores are no more than $$237.8$$ and 10% are no less than $$237.8$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6d440d7.3q6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6d440d7.3q6a-h3"
+        ],
+        "title": "Normal CDF",
+        "text": "$$invNorm(0.90$$, $$75\\times3$$, sqrt(75)*(1.15)) $$=$$ $$237.8$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

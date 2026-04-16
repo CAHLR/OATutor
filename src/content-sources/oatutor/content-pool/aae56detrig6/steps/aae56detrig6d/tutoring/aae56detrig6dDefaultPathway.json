@@ -1,0 +1,41 @@
+[
+    {
+        "id": "aae56detrig6d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use the tangent difference identity",
+        "text": "Recall the difference identity for tangent: $$tan(\\alpha-\u03b2)$$ $$=$$ $$\\frac{tan\\alpha$$ $$-$$ $$tan\u03b2}{1$$ + $$tan\\alpha$$ $$tan\u03b2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig6d-h2",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig6d-h1"
+        ],
+        "title": "Substitute and simplify",
+        "text": "Substitute the tangent values into the difference identity and simplify.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig6d-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\frac{33}{56}$$"
+        ],
+        "dependencies": [
+            "aae56detrig6d-h2"
+        ],
+        "title": "Calculate $$tan(\\alpha-\u03b2)$$",
+        "text": "Using the values, what is $$tan(\\alpha-\u03b2)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

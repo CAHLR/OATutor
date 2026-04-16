@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a590f38trigonometric28b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculate the second solution",
+        "text": "Use the reference angle to find the solution in Quadrant III.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric28b-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\pi$$ + $$x'$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric28b-h1"
+        ],
+        "title": "Angle in Quadrant III",
+        "text": "How do you find the angle in Quadrant III given a reference angle $$x'$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\pi$$ + $$x'$$",
+            "$$\\pi$$ $$-$$ $$x'$$",
+            "$$2\\pi$$ $$-$$ $$x'$$",
+            "$$x'$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric28b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric28b-h1"
+        ],
+        "title": "Final calculation",
+        "text": "Substitute the reference angle into the formula for Quadrant III.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric28b-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{5\\pi}{4}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric28b-h2"
+        ],
+        "title": "Second solution value",
+        "text": "What is $$\\pi$$ + $$\\frac{\\pi}{4}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

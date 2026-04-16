@@ -1,0 +1,163 @@
+[
+    {
+        "id": "a590f38trigonometric52a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the trigonometric identity",
+        "text": "The left side of the equation matches the sine difference formula: $$\\sin(A-B)$$ $$=$$ $$\\sin(A)\\cos(B)$$ $$-$$ $$\\cos(A)\\sin(B)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric52a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\sin(-3x)$$ $$=$$ $$-0.9$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric52a-h1"
+        ],
+        "title": "Apply the identity",
+        "text": "Simplify the left side of the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\sin(-3x)$$ $$=$$ $$-0.9$$",
+            "$$\\sin(3x)$$ $$=$$ $$-0.9$$",
+            "$$\\sin(-3x)$$ $$=$$ $$0.9$$",
+            "$$\\cos(-3x)$$ $$=$$ $$-0.9$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric52a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric52a-h1"
+        ],
+        "title": "Simplify the sine term",
+        "text": "Use the odd property of sine: $$\\sin(-y)$$ $$=$$ $$-\\sin(y)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric52a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\sin(3x)$$ $$=$$ $$0.9$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric52a-h2"
+        ],
+        "title": "Rewrite the equation",
+        "text": "What is the simplified equation?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\sin(3x)$$ $$=$$ $$0.9$$",
+            "$$\\sin(3x)$$ $$=$$ $$-0.9$$",
+            "$$\\sin(x)$$ $$=$$ $$0.9$$",
+            "$$\\cos(3x)$$ $$=$$ $$0.9$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric52a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric52a-h2"
+        ],
+        "title": "Adjust the interval for the argument",
+        "text": "Let $$y$$ $$=$$ $$3x$$. $$Since$$ $$0$$ $$\\leq$$ $$x$$ < $$2\\pi$$, $$the$$ $$interval$$ $$for$$ $$y$$ is $$0$$ $$\\leq$$ $$y$$ < $$6\\pi$$. $$This$$ $$means$$ $$you$$ $$need$$ $$to$$ $$find$$ $$solutions$$ $$over$$ $$three$$ $$full$$ $$rotations$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric52a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\arcsin(0.9)$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric52a-h3"
+        ],
+        "title": "Find reference angle",
+        "text": "What is the reference angle for $$\\sin(y)$$ $$=$$ $$0.9$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\arcsin(0.9)$$",
+            "$$\\arccos(0.9)$$",
+            "$$\\arctan(0.9)$$",
+            "$$0.9$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric52a-s4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\alpha$$, $$\\pi$$ $$-$$ $$\\alpha$$, $$2\\pi$$ + $$\\alpha$$, $$3\\pi$$ $$-$$ $$\\alpha$$, $$4\\pi$$ + $$\\alpha$$, $$5\\pi$$ $$-$$ $$\\alpha$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric52a-h3"
+        ],
+        "title": "Find solutions for $$y$$ in $$(0$$, $$6\\pi)$$",
+        "text": "List all solutions for $$y$$ in $$(0$$, $$6\\pi)$$ .",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\alpha$$, $$\\pi$$ $$-$$ $$\\alpha$$, $$2\\pi$$ + $$\\alpha$$, $$3\\pi$$ $$-$$ $$\\alpha$$, $$4\\pi$$ + $$\\alpha$$, $$5\\pi$$ $$-$$ $$\\alpha$$",
+            "$$\\alpha$$, $$\\pi$$ $$-$$ $$\\alpha$$, $$2\\pi$$ + $$\\alpha$$, $$3\\pi$$ + $$\\alpha$$, $$4\\pi$$ + $$\\alpha$$, $$5\\pi$$ + $$\\alpha$$",
+            "$$\\alpha$$, $$\\pi$$ $$-$$ $$\\alpha$$, $$2\\pi$$ $$-$$ $$\\alpha$$, $$3\\pi$$ $$-$$ $$\\alpha$$, $$4\\pi$$ $$-$$ $$\\alpha$$, $$5\\pi$$ $$-$$ $$\\alpha$$",
+            "$$\\alpha$$, $$\\pi$$ $$-$$ $$\\alpha$$, $$2\\pi$$ + $$\\alpha$$, $$2\\pi$$ $$-$$ $$\\alpha$$, $$4\\pi$$ + $$\\alpha$$, $$4\\pi$$ $$-$$ $$\\alpha$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric52a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric52a-h3"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "Divide each solution for $$y$$ by $$3$$ to find the solutions for $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric52a-s5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\arcsin(0.9)}{3$$,} $$\\frac{\\pi$$ $$-$$ $$\\arcsin(0.9)}{3$$,} $$\\frac{2\\pi$$ + $$\\arcsin(0.9)}{3$$,} $$\\frac{3\\pi$$ $$-$$ $$\\arcsin(0.9)}{3$$,} $$\\frac{4\\pi$$ + $$\\arcsin(0.9)}{3$$,} $$\\frac{5\\pi$$ $$-$$ $$\\arcsin(0.9)}{3}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric52a-h4"
+        ],
+        "title": "Final solutions for $$x$$",
+        "text": "What are the final solutions for $$x$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\arcsin(0.9)}{3$$,} $$\\frac{\\pi$$ $$-$$ $$\\arcsin(0.9)}{3$$,} $$\\frac{2\\pi$$ + $$\\arcsin(0.9)}{3$$,} $$\\frac{3\\pi$$ $$-$$ $$\\arcsin(0.9)}{3$$,} $$\\frac{4\\pi$$ + $$\\arcsin(0.9)}{3$$,} $$\\frac{5\\pi$$ $$-$$ $$\\arcsin(0.9)}{3}$$",
+            "$$\\arcsin(0.9)$$, $$\\pi$$ $$-$$ $$\\arcsin(0.9)$$, $$2\\pi$$ + $$\\arcsin(0.9)$$, $$3\\pi$$ $$-$$ $$\\arcsin(0.9)$$, $$4\\pi$$ + $$\\arcsin(0.9)$$, $$5\\pi$$ $$-$$ $$\\arcsin(0.9)$$",
+            "$$\\frac{\\arcsin(0.9)}{3$$,} $$\\frac{\\pi$$ + $$\\arcsin(0.9)}{3$$,} $$\\frac{2\\pi$$ + $$\\arcsin(0.9)}{3$$,} $$\\frac{3\\pi$$ + $$\\arcsin(0.9)}{3$$,} $$\\frac{4\\pi$$ + $$\\arcsin(0.9)}{3$$,} $$\\frac{5\\pi$$ + $$\\arcsin(0.9)}{3}$$",
+            "$$\\frac{\\arcsin(0.9)}{3$$,} $$\\frac{\\pi$$ $$-$$ $$\\arcsin(0.9)}{3$$,} $$\\frac{2\\pi$$ $$-$$ $$\\arcsin(0.9)}{3$$,} $$\\frac{3\\pi$$ $$-$$ $$\\arcsin(0.9)}{3$$,} $$\\frac{4\\pi$$ $$-$$ $$\\arcsin(0.9)}{3$$,} $$\\frac{5\\pi$$ $$-$$ $$\\arcsin(0.9)}{3}$$"
+        ]
+    }
+]

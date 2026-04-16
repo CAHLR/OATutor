@@ -1,0 +1,105 @@
+[
+    {
+        "id": "a590f38trigonometric48a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Reciprocal identity",
+        "text": "Rewrite the equation in terms of cosine.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric48a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{1}{\\cos$$ $$x}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric48a-h1"
+        ],
+        "title": "Rewrite secant",
+        "text": "What is $$sec$$ $$x$$ in terms of $$\\cos$$ $$x$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{1}{\\cos$$ $$x}$$",
+            "$$\\frac{1}{\\sin$$ $$x}$$",
+            "$$\\frac{\\sin$$ $$x}{\\cos$$ $$x}$$",
+            "$$\\cos$$ $$x$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric48a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric48a-h1"
+        ],
+        "title": "Isolate the trigonometric function",
+        "text": "Take the square root of both sides and then solve for \\cos $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric48a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\pm1$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric48a-h2"
+        ],
+        "title": "Solve for \\cos $$x$$",
+        "text": "What are the possible values for $$\\cos$$ $$x$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\pm1$$",
+            "$$1$$",
+            "$$-1$$",
+            "$$\\pm\\frac{1}{2}$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric48a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric48a-h2"
+        ],
+        "title": "Unit Circle values",
+        "text": "Identify the angles on the unit circle where cosine is $$1$$ or $$-1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric48a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$, $$\\pi$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric48a-h3"
+        ],
+        "title": "Find angles for cosine",
+        "text": "For what angles $$x$$ in $$(0$$, $$2\\pi)$$ is $$\\cos$$ $$x$$ $$=$$ $$1$$ or $$\\cos$$ $$x$$ $$=$$ $$-1$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$0$$, $$\\pi$$",
+            "$$0$$",
+            "$$\\frac{\\pi}{2$$,} $$\\frac{3\\pi}{2}$$",
+            "$$\\frac{\\pi}{4$$,} $$\\frac{3\\pi}{4}$$"
+        ]
+    }
+]

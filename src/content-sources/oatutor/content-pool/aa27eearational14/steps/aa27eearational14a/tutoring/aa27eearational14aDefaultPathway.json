@@ -1,0 +1,48 @@
+[
+    {
+        "id": "aa27eearational14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the LCD of the Fractions",
+        "text": "LCD of $$\\frac{x}{x+4}$$, $$\\frac{32}{x^2-16}$$, $$5$$ is $$\\left(x+4\\right) \\left(x-4\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa27eearational14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aa27eearational14a-h1"
+        ],
+        "title": "Clear All Fractions",
+        "text": "We must multiply each fraction by the LCD. We get $$x(x-4)=32+5\\left(x^2-16\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa27eearational14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aa27eearational14a-h2"
+        ],
+        "title": "Simplify the Equation",
+        "text": "Let's simplify this equation: $$x^2-4x=32+5x^2-80$$. $$4x^2+4x-48=0$$ becomes $$x^2+x-12=0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa27eearational14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aa27eearational14a-h3"
+        ],
+        "title": "Solve the Equation",
+        "text": "Let's factor to solve. $$\\left(x+4\\right) \\left(x-3\\right)=0$$. $$x=-4$$ is not a solution since it is in the denominator. $$x=3$$ is a solution.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

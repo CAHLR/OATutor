@@ -1,0 +1,105 @@
+[
+    {
+        "id": "afb69a0sumprod12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the correct formula",
+        "text": "Recall the product-to-sum formula for $$\\sin(A)\\sin(B)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod12a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{1}{2}(\\cos(A-B)$$ $$-$$ \\cos(A+B))$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod12a-h1"
+        ],
+        "title": "State the formula",
+        "text": "What is the product-to-sum formula for $$\\sin(A)\\sin(B)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{1}{2}(\\cos(A-B)$$ $$-$$ \\cos(A+B))$$",
+            "$$\\frac{1}{2}(\\cos(A+B) $$-$$ $$\\cos(A-B))$$",
+            "$$\\frac{1}{2}(\\sin(A+B) + $$\\sin(A-B))$$",
+            "$$\\frac{1}{2}(\\sin(A-B)$$ $$-$$ \\sin(A+B))$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod12a-h1"
+        ],
+        "title": "Identify $A$ and $B$",
+        "text": "In the given expression, identify the values for A and B.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod12a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A=16x$$, $$B=11x$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod12a-h2"
+        ],
+        "title": "Determine A and B",
+        "text": "For $$16\\sin(16x)\\sin(11x)$$, $$what$$ $$are$$ $$A$$ $$and$$ $$B$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$A=16x$$, $$B=11x$$",
+            "$$A=11x$$, $$B=16x$$",
+            "$$A=16$$, $$B=11$$",
+            "$$A=27x$$, $$B=5x$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod12a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A-B$$ $$=$$ $$5x$$, $$A+B$$ $$=$$ $$27x$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod12a-h2"
+        ],
+        "title": "Identify $A$ and $B$. Calculate their sum and difference.",
+        "text": "What are $$A-B$$ and $$A+B$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$A-B$$ $$=$$ $$5x$$, $$A+B$$ $$=$$ $$27x$$",
+            "$$A-B$$ $$=$$ $$27x$$, $$A+B$$ $$=$$ $$5x$$",
+            "$$A-B$$ $$=$$ $$-5x$$, $$A+B$$ $$=$$ $$27x$$",
+            "$$A-B$$ $$=$$ $$5$$, $$A+B$$ $$=$$ $$27$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod12a-h2"
+        ],
+        "title": "Apply the formula",
+        "text": "Substitute A and B into the formula and simplify, remembering to account for the coefficient $$16$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

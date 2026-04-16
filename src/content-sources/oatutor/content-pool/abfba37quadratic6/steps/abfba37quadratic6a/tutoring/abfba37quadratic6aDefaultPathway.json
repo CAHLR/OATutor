@@ -1,0 +1,99 @@
+[
+    {
+        "id": "abfba37quadratic6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Ordering of powers of $$x$$",
+        "text": "The first step in finding the standard form of the equation is to rearrange the $$x$$ terms in decreasing order based on their exponents.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abfba37quadratic6a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$g(x)=x^2-6x+13$$"
+        ],
+        "dependencies": [
+            "abfba37quadratic6a-h1"
+        ],
+        "title": "Reordered Terms",
+        "text": "What equation do we get when the terms are reordered so the largest power of $$x$$ is first and the rest follow in decreasing order?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abfba37quadratic6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abfba37quadratic6a-h2"
+        ],
+        "title": "Complete the Square",
+        "text": "The standard form includes a constant added or subtracted to the $$x$$ term within the exponent parentheses. The constant is equal to $$\\frac{1}{2}$$ of the coefficient of the $$x$$ term.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abfba37quadratic6a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(x-3\\right)^2$$"
+        ],
+        "dependencies": [
+            "abfba37quadratic6a-h3"
+        ],
+        "title": "Complete the Square",
+        "text": "What binomial will be part of the standard form of this quadratic?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abfba37quadratic6a-h5",
+        "type": "hint",
+        "dependencies": [
+            "abfba37quadratic6a-h4"
+        ],
+        "title": "Accounting for constant term",
+        "text": "Once the binomial is expanded out, a constant is usually required to match the constant term of the original equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abfba37quadratic6a-h6",
+        "type": "hint",
+        "dependencies": [
+            "abfba37quadratic6a-h5"
+        ],
+        "title": "Solving for the constant",
+        "text": "The binomial expansion leads to a constant of $$9$$. The original equation has a constant of $$13$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abfba37quadratic6a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "abfba37quadratic6a-h6"
+        ],
+        "title": "Accounting for Difference",
+        "text": "What do we need to add to get from $$9$$ to $$13$$ outside of the binomial term to complete the standard form?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,52 @@
+[
+    {
+        "id": "a662caelawsin23b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sum of angles in a triangle",
+        "text": "The sum of the angles in any triangle is $$180**{\\circ}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin23b-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\alpha=43**{\\circ},$$ \u03b3_1=61.2**{\\circ}$$"
+        ],
+        "dependencies": [
+            "a662caelawsin23b-h1"
+        ],
+        "title": "Identify known angles",
+        "text": "What are the measures of angles $$\\alpha$$ and $$\\gamma_1$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\alpha=43**{\\circ},$$ \u03b3_1=61.2**{\\circ}$$",
+            "$$\\alpha=61.2**{\\circ},$$ \u03b3_1=43**{\\circ}$$",
+            "$$\\alpha=35**{\\circ},$$ \u03b3_1=54.3**{\\circ}$$",
+            "$$\\alpha=43**{\\circ},$$ \u03b3_1=118.8**{\\circ}$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin23b-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "75.8**{\\circ}"
+        ],
+        "dependencies": [
+            "a662caelawsin23b-h1"
+        ],
+        "title": "Calculate $$\\beta_1$$",
+        "text": "What is $$180**{\\circ} $$-$$ $$\\alpha$$ $$-$$ $$\\gamma_1$$? $$Round$$ $$to$$ $$the$$ $$nearest$$ $$tenth$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

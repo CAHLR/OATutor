@@ -1,0 +1,76 @@
+[
+    {
+        "id": "a590f38trigonometric65a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recognize Quadratic Form",
+        "text": "The equation is quadratic in terms of sinx.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric65a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$y$$ $$=$$ sinx"
+        ],
+        "dependencies": [
+            "a590f38trigonometric65a-h1"
+        ],
+        "title": "Substitute for sinx",
+        "text": "What substitution can you make to simplify this equation?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric65a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric65a-h1"
+        ],
+        "title": "Apply Quadratic Formula",
+        "text": "Use the quadratic formula to solve for sinx.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric65a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{-1+\\sqrt{6}}{5}, \\frac{-1-\\sqrt{6}}{5}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric65a-h2"
+        ],
+        "title": "Solve for sinx",
+        "text": "What are the two values for sinx?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{-1+\\sqrt{6}}{5}, \\frac{-1-\\sqrt{6}}{5}$$",
+            "$$\\frac{1+\\sqrt{6}}{5}, \\frac{1-\\sqrt{6}}{5}$$",
+            "$$\\frac{-1+\\sqrt{5}}{5}, \\frac{-1-\\sqrt{5}}{5}$$",
+            "$$\\frac{-1+\\sqrt{6}}{10}, \\frac{-1-\\sqrt{6}}{10}$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric65a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric65a-h2"
+        ],
+        "title": "Find $$x$$ values",
+        "text": "Determine the values of $$x$$ in the interval $$(0$$, $$2\\pi)$$ for each sinx value.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

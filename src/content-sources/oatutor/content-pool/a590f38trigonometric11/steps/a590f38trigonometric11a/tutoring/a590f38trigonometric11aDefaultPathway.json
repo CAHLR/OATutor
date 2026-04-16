@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a590f38trigonometric11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recognize quadratic form",
+        "text": "The equation is in the form $${ax}^2+bx+c=0$$ where $$x=sintheta$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric11a-h1"
+        ],
+        "title": "Factor the quadratic",
+        "text": "Factor the quadratic expression $$2x^2-5x+3=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric11a-h2"
+        ],
+        "title": "Consider the range of sine",
+        "text": "Recall that the value of $$\\sin\\theta$$ must be between $$-1$$ and $$1$$, inclusive.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric11a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric11a-h3"
+        ],
+        "title": "Evaluate possible values",
+        "text": "After factoring, what are the valid values for $$\\sin\\theta$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric11a-s4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{2}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric11a-h3"
+        ],
+        "title": "Find angles",
+        "text": "What angle(s) $$\\theta$$ in the interval $$(0$$, $$2\\pi)$$ satisfy $$\\sin\\theta=1$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

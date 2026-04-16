@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ad0aaf6linear4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Obtaining dy",
+        "text": "In order to determine dy, we must take the derivative of $$y$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ad0aaf6linear4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad0aaf6linear4a-h1"
+        ],
+        "title": "Solving for y'",
+        "text": "$$y=x^2+2x$$ such that $$y'=2x^{2-1}+2=2x+2$$. Thus, $$dy=\\left(2x+2\\right) dx$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ad0aaf6linear4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad0aaf6linear4a-h2"
+        ],
+        "title": "Plugging Into y'",
+        "text": "Plug $$x$$ $$=$$ $$3$$ and dx $$=$$ $$0.1$$ into $$dy=\\left(2x+2\\right) dx$$ to solve for dy.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ad0aaf6linear4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.8$$"
+        ],
+        "dependencies": [
+            "ad0aaf6linear4a-h3"
+        ],
+        "title": "Determining dy",
+        "text": "What is dy?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "ad0aaf6linear4a-h4-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$0.8$$"
+                ],
+                "dependencies": [],
+                "title": "Substitution and Simplification to Getting dy",
+                "text": "$$dy=\\left(2x+2\\right) dx=0.1\\left(2\\times3+2\\right)=0.1\\left(6+2\\right)=$$ $$8\\times0.1$$. What is dy?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    }
+]

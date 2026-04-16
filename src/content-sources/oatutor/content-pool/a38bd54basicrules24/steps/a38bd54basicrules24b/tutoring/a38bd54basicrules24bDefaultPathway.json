@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a38bd54basicrules24b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Complement Rule",
+        "text": "This question is asking for the complement rule. We are essentially asked the probability that a person does not have type O blood and the Rh- factor. We can rewrite this express mathematically as P(NOT(O AND R)) and using complement notation (with the apostrophe), this can be simplified to P((O AND R)'), or the complement of what we found in the previous step.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a38bd54basicrules24b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.94$$"
+        ],
+        "dependencies": [
+            "a38bd54basicrules24b-h1"
+        ],
+        "title": "Applying the Complement Rule",
+        "text": "What is 1-P(NOT(O AND R))?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a38bd54basicrules24b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.94$$"
+        ],
+        "dependencies": [
+            "a38bd54basicrules24b-h2"
+        ],
+        "title": "Applying the Complement Rule",
+        "text": "What is $$1-0.06$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

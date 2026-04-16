@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a7b98f9composition23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Composition",
+        "text": "Remember that to solve f(g(x)), we need to plug in the value of g(x) into the value of $$x$$ in f(x).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7b98f9composition23a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7b98f9composition23a-h1"
+        ],
+        "title": "Composition",
+        "text": "We need to plug in g(x), or $$\\sqrt{x-2}$$, for the $$x$$ in the function f: $${\\sqrt{x+2}}^2+1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7b98f9composition23a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7b98f9composition23a-h2"
+        ],
+        "title": "Exponents",
+        "text": "Based off the Order of Operations, the first step is the exponents: $${\\sqrt{x+2}}^2=x+2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7b98f9composition23a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7b98f9composition23a-h3"
+        ],
+        "title": "Multiplication",
+        "text": "Now, our composition function reads $$x+2+1$$. The next step is to add the constants: $$x+2+1=x+3$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

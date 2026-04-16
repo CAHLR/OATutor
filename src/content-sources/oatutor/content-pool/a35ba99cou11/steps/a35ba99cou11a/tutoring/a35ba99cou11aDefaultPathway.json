@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a35ba99cou11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Product of the Number of Options",
+        "text": "To find the total number of outcomes, find the product of the number of breakfast sandwich options, the number of side dish options, and the number of beverage options.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a35ba99cou11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a35ba99cou11a-h1"
+        ],
+        "title": "Number of Breakfast Sandwiches",
+        "text": "There are $$3$$ types of breakfast sandwiches.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a35ba99cou11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a35ba99cou11a-h2"
+        ],
+        "title": "Number of Side Dishes",
+        "text": "There are $$4$$ side dish options.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a35ba99cou11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a35ba99cou11a-h3"
+        ],
+        "title": "Number of Beverages",
+        "text": "There are $$5$$ beverage choices.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a35ba99cou11a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a35ba99cou11a-h4"
+        ],
+        "title": "Add the Number of Options",
+        "text": "# of breakfast sandwiches options+# of side dish options+# of beverage options\\n$$3\\times4\\times5=60$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a35ba99cou11a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a35ba99cou11a-h5"
+        ],
+        "title": "Total Ways",
+        "text": "There are $$60$$ possible breakfast specials.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

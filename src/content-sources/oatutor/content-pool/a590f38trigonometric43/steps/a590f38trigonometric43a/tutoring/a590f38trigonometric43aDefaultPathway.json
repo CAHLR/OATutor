@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a590f38trigonometric43a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the common factor",
+        "text": "Look for a term that appears in both parts of the expression.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric43a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$tan(x)$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric43a-h1"
+        ],
+        "title": "Common factor",
+        "text": "What is the common factor in $$tan(x)-2\\sin(x)tan(x)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric43a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric43a-h1"
+        ],
+        "title": "Perform the factoring",
+        "text": "Factor out the common term from the expression.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric43a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$tan(x)(1-2\\sin(x))$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric43a-h2"
+        ],
+        "title": "Factored expression",
+        "text": "What is the expression after factoring?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$tan(x)(1-2\\sin(x))$$",
+            "$$tan(x)(1+2\\sin(x))$$",
+            "$$tan(x)(2\\sin(x)-1)$$",
+            "$$tan(x)-2\\sin(x)$$"
+        ]
+    }
+]

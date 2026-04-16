@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a9c64f0series12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use Geometric Series formula",
+        "text": "The sum of the first $$n$$ terms of a geometric series is $$S_n$$ $$=$$ $$a_1$$ * (1 - r**n) / (1 - r).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9c64f0series12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9c64f0series12a-h1"
+        ],
+        "title": "Find $$a_1$$",
+        "text": "Substitute $$k=1$$ into the summand: $$a_1$$ $$=$$ $$3^1$$ $$=$$ $$3$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9c64f0series12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9c64f0series12a-h2"
+        ],
+        "title": "Find $$r$$",
+        "text": "In an expression of the form $$b^k$$, the base $$b$$ is the common ratio.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9c64f0series12a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a9c64f0series12a-h3"
+        ],
+        "title": "Solve for $$r$$.",
+        "text": "Find the value of $$r$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9c64f0series12a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9c64f0series12a-h3"
+        ],
+        "title": "Plug in $$a_1$$, $$r$$, and $$n$$",
+        "text": "$$a_1$$ $$=$$ $$3$$, $$r$$ $$=$$ $$3$$, $$n$$ $$=$$ $$8$$. Evaluate $$S_8$$ $$=$$ $$3$$ * (1 - 3**8) / (1 - 3).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
