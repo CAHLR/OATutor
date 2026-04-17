@@ -1,4 +1,5 @@
 import React from 'react';
+import { CONTENT_SOURCE } from '@common/global-config';
 import { agentHelper } from './AgentHelper';
 import MessageRenderer from './MessageRenderer';
 import { withStyles } from '@material-ui/core/styles';
@@ -308,6 +309,9 @@ class AgentChatbox extends React.Component {
         // Get context from props
         const problemContext = this.getProblemContext();
         const studentState = this.getStudentState();
+        const { text, figureUrls } = this.extractConceptExplorationInput(userMessage, problemContext);
+        const images = await this.fetchFiguresAsBase64(figureUrls);
+        const extracted = { text, images };
 
         const assistantMessageId = `assistant-${messageId}`;
 
@@ -317,6 +321,7 @@ class AgentChatbox extends React.Component {
                 userMessage,
                 problemContext,
                 studentState,
+                extracted,
                 {
                     onChunkReceived: (partialResponse) => {
                         this.setState(prevState => ({
@@ -355,11 +360,72 @@ class AgentChatbox extends React.Component {
                         }));
                     }
                 }
+            ,
+            extracted
             );
         } catch (error) {
             // Error already handled in callbacks
         }
     };
+
+    extractConceptExplorationInput(userMessage, problemContext) {
+        const sources = [
+            userMessage || '',
+            problemContext?.problemTitle ? `Problem title: ${problemContext.problemTitle}` : '',
+            problemContext?.problemBody ? `Problem body: ${problemContext.problemBody}` : '',
+            problemContext?.currentStep?.title ? `Step title: ${problemContext.currentStep.title}` : '',
+            problemContext?.currentStep?.body ? `Step body: ${problemContext.currentStep.body}` : '',
+        ].filter(Boolean);
+
+        const combined = sources.join('\n\n');
+
+        // Collect figure filenames from ##filename tokens (same convention as RenderMedia).
+        // Only figures from the current problem are collected; the path is identical to what
+        // RenderMedia builds, so if the student can see the image the URL is resolvable.
+        const figureUrls = [];
+        const problemID = problemContext?.problemID;
+        if (problemID) {
+            const figTokenRegex = /##([^\s#\n]+)/g;
+            let m;
+            while ((m = figTokenRegex.exec(combined)) !== null) {
+                const filename = (m[1] || '').trim();
+                if (filename) {
+                    const base = (process.env.PUBLIC_URL || '').replace(/\/$/, '');
+                    figureUrls.push(
+                        `${window.location.origin}${base}/static/images/figures/${CONTENT_SOURCE}/${problemID}/${filename}`
+                    );
+                }
+            }
+        }
+
+        return {
+            label: 'Concept Exploration',
+            text: combined,
+            figureUrls: Array.from(new Set(figureUrls)),
+        };
+    }
+
+    async fetchFiguresAsBase64(figureUrls) {
+        const results = [];
+        for (const url of figureUrls) {
+            try {
+                const res = await fetch(url);
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                const blob = await res.blob();
+                const dataUrl = await new Promise((resolve, reject) => {
+                    const reader = new FileReader();
+                    reader.onloadend = () => resolve(reader.result);
+                    reader.onerror = () => reject(new Error('read failed'));
+                    reader.readAsDataURL(blob);
+                });
+                results.push(dataUrl);
+            } catch (e) {
+                // eslint-disable-next-line no-console
+                console.warn('[AI Tutor] Could not load figure for vision:', url, e);
+            }
+        }
+        return results;
+    }
 
     /**
      * Extract problem context for the AI agent.

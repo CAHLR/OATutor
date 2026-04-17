@@ -5,7 +5,7 @@ import { dirname, join } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-export function buildAgentPrompt({ userMessage, problemContext, studentState, conversationHistory }) {
+export function buildAgentPrompt({ userMessage, problemContext, studentState, conversationHistory, extracted = {} }) {
     // Load prompt template
     const promptTemplate = readFileSync(join(__dirname, 'prompt.txt'), 'utf-8');
     
@@ -97,8 +97,19 @@ export function buildAgentPrompt({ userMessage, problemContext, studentState, co
         messages.push(...conversationHistory);
     }
 
-    // Add current user message
-    messages.push({ role: "user", content: userMessage });
+    // Build the last user message.
+    // If the problem has figures (sent as base64 data URLs from the browser), attach them
+    // as multimodal image_url parts so the vision model can see them.
+    const images = Array.isArray(extracted?.images) ? extracted.images : [];
+    if (images.length > 0) {
+        const parts = [{ type: "text", text: userMessage }];
+        for (const img of images) {
+            parts.push({ type: "image_url", image_url: { url: img, detail: "auto" } });
+        }
+        messages.push({ role: "user", content: parts });
+    } else {
+        messages.push({ role: "user", content: userMessage });
+    }
 
     return messages;
 }

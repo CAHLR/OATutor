@@ -46,6 +46,7 @@ export const handler = awslambda.streamifyResponse(
                 userMessage,
                 problemContext,
                 studentState,
+                extracted = {},
                 conversationHistory = []
             } = requestBody;
 
@@ -70,15 +71,22 @@ export const handler = awslambda.streamifyResponse(
                 userMessage,
                 problemContext,
                 studentState,
-                conversationHistory: fullConversationHistory
+                conversationHistory: fullConversationHistory,
+                extracted,
             });
+
+            const lastMsg = agentPrompt[agentPrompt.length - 1];
+            const lastPreview = typeof lastMsg?.content === 'string'
+                ? lastMsg.content
+                : JSON.stringify(lastMsg?.content)?.slice(0, 300);
 
             console.log('================================================================================');
             console.log('SYSTEM PROMPT:');
             console.log('================================================================================');
             console.log(agentPrompt[0].content);
             console.log('================================================================================');
-            console.log('USER MESSAGE:', agentPrompt[1].content);
+            console.log('USER MESSAGE (preview):', lastPreview);
+            console.log('VISION IMAGES:', Array.isArray(extracted?.images) ? extracted.images.length : 0);
             console.log('================================================================================');
 
             const response = await generateAgentResponse(openai, agentPrompt, httpResponseStream);
@@ -90,10 +98,9 @@ export const handler = awslambda.streamifyResponse(
         } catch (error) {
             console.error("Agent error:", error);
             if (httpResponseStream) {
-                httpResponseStream.write(JSON.stringify({
-                    error: error.message,
-                    type: "error"
-                }));
+                httpResponseStream.write(
+                    JSON.stringify({ error: error.message, type: "error" }) + "\n"
+                );
             }
         } finally {
             if (httpResponseStream) {
