@@ -388,7 +388,9 @@ content-sources/
     "stepTitle": "1. Maximum Radius",
     "stepBody": "What is the maximum radius of a circular rug that will fit in the room?",
     "answerType": "numeric",
-    "variabilization": {}
+    "variabilization": {},
+    // Can be either 'default' or 'simplified'
+    "answerValidator": "default"
 }
 ```
 
@@ -413,7 +415,9 @@ content-sources/
         "answerType": "numeric",
         "type": "scaffold",
         "dependencies": [0],
-        "variabilization": {}
+        "variabilization": {},
+        // Can be either 'default' or 'simplified'
+        "answerValidator": "default"
     },
     {
         "id": "circle1a-h3",

@@ -91,6 +91,59 @@ function convertSwedishToUS(numberString) {
 }
 
 /**
+ * A map of validators types to their functions
+ */
+const ANSWER_VALIDATORS = {
+    // Checks if the representation of the parsed text is not the same as the representation of the question
+    "default": (questionText, attempt, parsed) => parse(questionText).expr.repr() !== parsed.repr(),
+    // Checks if the question text doesn't include the attempt and that the parsed answer is in its simplest form
+    "simplified": (questionText, attempt, parsed) => !questionText.includes(attempt) && parsed.normalize().repr() === parsed.simplify().normalize().repr()
+}
+
+/**
+ * 
+ * @param {string} attempt 
+ * @param {string[]} actual 
+ * @returns 
+ */
+function checkExplicitAnswerText(attempt, actual) {
+    // First check if they are exactly the same
+    let checker = actual.filter((actualAns) => attempt === actualAns);
+    if (checker.length > 0) {
+        return [true, checker[0]];
+    }
+
+    // If not, remove any leading or trailing dollar signs from actual answer
+    let cleanedActual = actual.map((actualAns) => {
+        if (actualAns.startsWith('$$')) actualAns = actualAns.substring(2);
+        if (actualAns.endsWith('$$')) actualAns = actualAns.substring(0, actualAns.length - 2);
+        return actualAns;
+    })
+    checker = cleanedActual.filter((actualAns) => attempt === actualAns);
+    if (checker.length > 0) {
+        return [true, checker[0]];
+    }
+
+    // Check without parentheses
+    cleanedActual = cleanedActual.map((actualAns) => {
+        return actualAns.replaceAll(/\s+/g, '').replaceAll(/\\left\(/g, '').replaceAll(/\\right\)/g, '')
+    })
+    checker = cleanedActual.filter((actualAns) => attempt === actualAns);
+    if (checker.length > 0) {
+        return [true, checker[0]];
+    }
+
+    // Maybe attempt needs to be cleaned
+    let cleanedAttempt = attempt.replaceAll(/\s+/g, '').replaceAll(/\\left\(/g, '').replaceAll(/\\right\)/g, '')
+    if (cleanedAttempt !== attempt) {
+        return checkExplicitAnswerText(cleanedAttempt, actual);
+    }
+
+    // Otherwise, they are likely not the same
+    return [false, false];
+}
+
+/**
  *
  * @param attempt
  * @param actual
@@ -98,9 +151,15 @@ function convertSwedishToUS(numberString) {
  * @param precision
  * @param variabilization
  * @param questionText {string} allows for a check to see if student pasted in the answer exactly
+ * @param answerValidator Specifies the validator method to use when determining if an answer is considered the same as a problem
  * @returns {[string, boolean | string, null | WrongAnswerReasons]}
  */
-function checkAnswer({ attempt, actual, answerType, precision = 5, variabilization = {}, questionText = ""}) {
+function checkAnswer({ attempt, actual, answerType, precision = 5, variabilization = {}, questionText = "", answerValidator = "default"}) {
+    // Make sure the validation method used is never null or undefined
+    if (answerValidator == null) {
+        answerValidator = "default";
+    }
+
     if (localStorage.getItem('locale') == 'se') {
         attempt = convertSwedishToUS(attempt)
     }
@@ -155,8 +214,15 @@ function checkAnswer({ attempt, actual, answerType, precision = 5, variabilizati
 
                 // try to see if student paste in exact question
                 try {
-                    const questionTextRepr = parse(questionText).expr.repr()
-                    if (questionTextRepr === parsed.repr()) {
+                    if (!ANSWER_VALIDATORS[answerValidator](questionText, attempt, parsed)) {
+                        // If validators think that the problem text is similar to the answer, it might
+                        // be a problem that we need to explicitly check the answer text for (e.g.,
+                        // converting number representations to another form).
+                        const [matches, correctAnswer] = checkExplicitAnswerText(attempt, actual);
+                        if (matches) {
+                            return [parsed.print(), correctAnswer, null];
+                        }
+
                         return [parsed.print(), false, WrongAnswerReasons.sameAsProblem];
                     }
                 } catch (_) {

@@ -48,7 +48,8 @@ class HintTextbox extends React.Component {
             answerType: this.hint.answerType,
             precision: this.hint.precision,
             variabilization: chooseVariables(this.props.hintVars, this.props.seed),
-            questionText: this.hint.text
+            questionText: this.hint.text,
+            answerValidator: this.hint.answerValidator
         });
 
         if (parsed == '') {
