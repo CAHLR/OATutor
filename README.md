@@ -333,6 +333,13 @@ DO_FOCUS_TRACKING = false;
 * `GridInput`: Provides a grid for the student to fill out. Must have `numRows` and `numCols` for the answer size, while the `stepAnswer` must be a list of lists of strings: `"[[\"1\",\"2\"],[\"3\",\"4\"]]"` for a 2x2 grid. Must have `answerType: "string"`.
 * `MatrixInput`: Provides a matrix for the student to fill out. Must have `numRows` and `numCols` for the answer size, while the `stepAnswer` must be a list of lists of strings: `"[[\"1\",\"2\"],[\"3\",\"4\"]]"` for a 2x2 grid. Must have `answerType: "string"`.
 
+### Answer Validation
+
+Due to the numerous different ways an arithmetic expression can be an answer, OATutor performs some additional validation on the student's answer to make sure they are not copying and pasting the problem body into the answer box. However, the backing evaluator does not always identify the question and answer text as unique states from different inputs. For this, steps and scaffolds have an optional `answerValidator` field that can take in one the following values:
+
+* `default`: Checks whether the representation of the problem is not the same as the representation of the student's answer. This is the default behavior in OATutor.
+* `simplified`: Compares whether the question does not contain the student's answer, and that the student's answer is in it's simplest form. This should be used for problems that convert one form of an expression to another equivalent form (e.g., convert the fifth root of x to its exponent representation).
+
 ### Example Directory Structure
 
 ```
