@@ -56,7 +56,7 @@ All content is available in JSON format within the repository. To view the raw s
 
 Content in the system is now largely authored by subject matter experts utilizing the [PromptHive](https://github.com/mohireza/prompthive/) GenAI tool:
 
-Mohi Reza, Ioannis Anastasopoulos, Shreya Bhandari, and Zachary A. Pardos. 2025. PromptHive: Bringing Subject Matter Experts Back to the Forefront with Collaborative Prompt Engineering for Educational Content Creation. In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25). Association for Computing Machinery, New York, NY, USA, Article 148, 1–22. [https://doi.org/10.1145/3706598.3714051](https://doi.org/10.1145/3706598.3714051)
+Mohi Reza, Ioannis Anastasopoulos, Shreya Bhandari, and Zachary A. Pardos. 2025. PromptHive: Bringing Subject Matter Experts Back to the Forefront with Collaborative Prompt Engineering for Educational Content Creation. In *Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems* (CHI '25). Association for Computing Machinery, New York, NY, USA, Article 148, 1–22. [https://doi.org/10.1145/3706598.3714051](https://doi.org/10.1145/3706598.3714051)
 ```
 @inproceedings{reza2025prompthive,
   title={PromptHive: Bringing subject matter experts back to the forefront with collaborative prompt engineering for educational content creation},
