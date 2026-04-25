@@ -731,7 +731,16 @@ class ProblemCard extends React.Component {
                     this.props.hintPortalTarget.current
                 );
             } else {
-                inlineHints = hintsContent;
+                inlineHints = (
+                <div style={{
+                    boxShadow: "0 2px 8px rgba(0,0,0,0.12)",
+                    borderRadius: 4,
+                    marginTop: 4,
+                    marginBottom: 12
+                }}>
+                    {hintsContent}
+                </div>
+    );
             }
         }
 
@@ -818,13 +827,13 @@ class ProblemCard extends React.Component {
                         <CardActions style = {{padding: "0px"}}>
                             
 
-                            {/* <Grid item xs={4} sm={4} md={1}>
+                            <Grid item xs={4} sm={4} md={1}>
                                 {this.showHints && (
                                     <center>
 
 
                                         <IconButton
-                                            aria-label="delete"
+                                            aria-label="hints"
                                             onClick={this.toggleHints}
                                             title="View available hints"
                                             disabled={
@@ -849,7 +858,7 @@ class ProblemCard extends React.Component {
 
                                     </center>
                                 )}
-                            </Grid> */}
+                            </Grid>
 
                         
                             <Grid 

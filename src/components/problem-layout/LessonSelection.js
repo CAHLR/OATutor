@@ -124,8 +124,11 @@ class LessonSelection extends React.Component {
                                                         <h2 style={{
                                                             height: "2.5em",
                                                             marginTop: "0.2em",
-                                                            marginBottom: "1em",
+                                                            marginBottom: "0.4em",
                                                             textAlign: "center",
+                                                            display: "flex",
+                                                            alignItems: "center",
+                                                            justifyContent: "center",
                                                         }}>{course.courseName}</h2>
                                                         <IconButton aria-label={`View Course ${i}`}
                                                             aria-roledescription={`Navigate to course ${i}'s page to view available lessons`}
@@ -150,19 +153,42 @@ class LessonSelection extends React.Component {
                                             <Grid item xs={12} sm={6} md={4} key={i}>
                                             <center>
                                             <Paper className={classes.paper} style={{ position: "relative", height: "12rem" }}>
-                                                {/* top-right “view all problems” button */}
                                                 <IconButton
                                                     size="small"
                                                     style={{ position: 'absolute', top: 8, right: 8 }}
                                                     aria-label={`View all problems for lesson ${lesson.id}`}
                                                     onClick={() => this.props.history.push(`/lessons/${lesson.id}/problems`)}
                                                 >
-                                                <MenuBookIcon fontSize="small" />
+                                                    <MenuBookIcon fontSize="small" />
                                                 </IconButton>
-                                                <h2 style={{ marginTop: 5, marginBottom: 10 }}>
-                                                {lesson.name.replace(/##/g, "")}
-                                                </h2>
-                                                <h3 style={{ marginTop: 5 }}>{lesson.topics}</h3>
+
+                                                <div
+                                                    style={{
+                                                        height: "2.5em",
+                                                        marginTop: 5,
+                                                        marginBottom: 10,
+                                                        display: "flex",
+                                                        alignItems: "center",
+                                                        justifyContent: "center",
+                                                        textAlign: "center",
+                                                    }}
+                                                >
+                                                    <h2 style={{ margin: 0 }}>{lesson.name.replace(/##/g, "")}</h2>
+                                                </div>
+
+                                                <div
+                                                    style={{
+                                                        height: "2em",
+                                                        marginTop: 5,
+                                                        display: "flex",
+                                                        alignItems: "center",
+                                                        justifyContent: "center",
+                                                        textAlign: "center",
+                                                    }}
+                                                >
+                                                    <h3 style={{ margin: 0 }}>{lesson.topics}</h3>
+                                                </div>
+
                                                 <Button
                                                     variant="contained"
                                                     color="primary"
@@ -176,7 +202,7 @@ class LessonSelection extends React.Component {
                                                     }}
                                                     onClick={() => this.props.history.push(`/lessons/${lesson.id}`)}
                                                 >
-                                                {translate('lessonSelection.onlyselect')}
+                                                    {translate('lessonSelection.onlyselect')}
                                                 </Button>
                                             </Paper>
                                             </center>

@@ -676,7 +676,7 @@ class Problem extends React.Component {
                     <Grid
                         item
                         xs={12}
-                        md={drawerOpen ? 8 : 7}
+                        md={hideHintPanel ? 12 : (drawerOpen ? 8 : 7)}
                     >
                         <div className={classes.prompt} role={"banner"}>
                             <Card className={classes.titleCard}>
@@ -870,10 +870,10 @@ class Problem extends React.Component {
                                                     giveDynamicHint={this.giveDynamicHint}
                                                     prompt_template={this.prompt_template}
                                                     showCardHeader={false}
-                                                    hintToggleTrigger={this.state.hintToggleTrigger}
-                                                    hintToggleIndex={this.state.hintToggleIndex}
-                                                    hintPortalTarget={this.hintPortalRef}
-                                                    onHintToggle={this.handleHintToggleFromStep}
+                                                    hintToggleTrigger={hideHintPanel ? undefined : this.state.hintToggleTrigger}
+                                                    hintToggleIndex={hideHintPanel ? undefined : this.state.hintToggleIndex}
+                                                    hintPortalTarget={hideHintPanel ? undefined : this.hintPortalRef}
+                                                    onHintToggle={hideHintPanel ? undefined : this.handleHintToggleFromStep}
                                                 />
                                         </Accordion>
                                     </Element>
@@ -957,99 +957,100 @@ class Problem extends React.Component {
                             )}
                         </div>
                     </Grid>
-
-                    <Grid
-                        item
-                        xs={12}
-                        md={drawerOpen ? 4 : 5}
-                        style={{
-                        position: "sticky",
-                        top: hintStickTop,
-                        alignSelf: "flex-start",
-                        zIndex: 2,
-                    }}
-                    >
-                        <div style={hintDisplayStyle}>
-                        <button
+                    {!hideHintPanel && (
+                        <Grid
+                            item
+                            xs={12}
+                            md={drawerOpen ? 4 : 5}
                             style={{
-                                backgroundColor: "#4E7DAA",
-                                color: "white",
-                                border: "none",
-                                borderRadius: "9999px", // fully rounded edges
-                                padding: "2px 14px",
-                                fontSize: "12px",
-                                fontWeight: 500,
-                                cursor: "pointer",
-                                alignSelf: "flex-end",
-                                marginBottom: "56px",
-                                position: "fixed",
-                                top: 250
-                            }}
-                            >
-                            OpenAI o1
-                        </button>
-                        <div
-                            style={bubbleContainerStyle}
-                        >
-                        {/* Speech Bubble */}
-                        <div
-                        style={speechBubbleStyle}
-                        {...stagingProp({
-                            "data-selenium-target": "hint-avatar-toggle",
-                        })}
-                        role="button"
-                        tabIndex={0}
-                        aria-expanded={this.state.isHintPortalOpen}
-                        aria-controls="hint-portal-content"
-                        onClick={this.handleHintAvatarClick}
-                        onKeyDown={this.handleHintAvatarKeyDown}
-                        aria-label="Toggle hints"
-                        >
-                        <p style={{ margin: 0, fontWeight: 600 }}>Stuck on the problem?</p>
-                        {!this.state.isHintPortalOpen && (
-                            <p style={{ margin: 0 }}>Give me a tap and I am happy to help!</p>
-                        )}
-                        <div
-                            ref={this.hintPortalRef}
-                            id="hint-portal-content"
-                            role="region"
-                            aria-live="polite"
-                            aria-label="Hints"
-                            aria-hidden={!this.state.isHintPortalOpen}
-                            style={hintPortalStyle}
-                        />
-
-                        {/* Tail at top right, pointing upward */}
-                        <div
-                            style={{
-                                position: "absolute",
-                                top: "-8px",
-                                right: "24px",
-                                width: 0,
-                                height: 0,
-                                borderLeft: "8px solid transparent",
-                                borderRight: "8px solid transparent",
-                                borderBottom: "8px solid #FFF3CC"
-                            }}
-                        />
-                        </div>
-
-                        {/* Avatar Icon */}
-                        <img
-                        src={avatar}
-                        alt="Whisper"
-                        style={{
-                            width: 64,
-                            height: 64,
-                            position: "absolute",
-                            top: "-55px",
-                            right: "-10px",
-                            zIndex: 0,
+                            position: "sticky",
+                            top: hintStickTop,
+                            alignSelf: "flex-start",
+                            zIndex: 2,
                         }}
-                        />
+                        >
+                            <div style={hintDisplayStyle}>
+                            <button
+                                style={{
+                                    backgroundColor: "#4E7DAA",
+                                    color: "white",
+                                    border: "none",
+                                    borderRadius: "9999px", // fully rounded edges
+                                    padding: "2px 14px",
+                                    fontSize: "12px",
+                                    fontWeight: 500,
+                                    cursor: "pointer",
+                                    alignSelf: "flex-end",
+                                    marginBottom: "56px",
+                                    position: "fixed",
+                                    top: 250
+                                }}
+                                >
+                                OpenAI o1
+                            </button>
+                            <div
+                                style={bubbleContainerStyle}
+                            >
+                            {/* Speech Bubble */}
+                            <div
+                            style={speechBubbleStyle}
+                            {...stagingProp({
+                                "data-selenium-target": "hint-avatar-toggle",
+                            })}
+                            role="button"
+                            tabIndex={0}
+                            aria-expanded={this.state.isHintPortalOpen}
+                            aria-controls="hint-portal-content"
+                            onClick={this.handleHintAvatarClick}
+                            onKeyDown={this.handleHintAvatarKeyDown}
+                            aria-label="Toggle hints"
+                            >
+                            <p style={{ margin: 0, fontWeight: 600 }}>Stuck on the problem?</p>
+                            {!this.state.isHintPortalOpen && (
+                                <p style={{ margin: 0 }}>Give me a tap and I am happy to help!</p>
+                            )}
+                            <div
+                                ref={this.hintPortalRef}
+                                id="hint-portal-content"
+                                role="region"
+                                aria-live="polite"
+                                aria-label="Hints"
+                                aria-hidden={!this.state.isHintPortalOpen}
+                                style={hintPortalStyle}
+                            />
+
+                            {/* Tail at top right, pointing upward */}
+                            <div
+                                style={{
+                                    position: "absolute",
+                                    top: "-8px",
+                                    right: "24px",
+                                    width: 0,
+                                    height: 0,
+                                    borderLeft: "8px solid transparent",
+                                    borderRight: "8px solid transparent",
+                                    borderBottom: "8px solid #FFF3CC"
+                                }}
+                            />
+                            </div>
+
+                            {/* Avatar Icon */}
+                            <img
+                            src={avatar}
+                            alt="Whisper"
+                            style={{
+                                width: 64,
+                                height: 64,
+                                position: "absolute",
+                                top: "-55px",
+                                right: "-10px",
+                                zIndex: 0,
+                            }}
+                            />
+                            </div>
                         </div>
-                    </div>
-                    </Grid>
+                        </Grid>
+                    )}
                 </Grid>
 
                 <footer>
