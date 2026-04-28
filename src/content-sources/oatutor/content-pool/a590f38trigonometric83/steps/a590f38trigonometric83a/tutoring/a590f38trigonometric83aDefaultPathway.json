@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Rewrite tangent",
-        "text": "Recall that $$\\tan$$ $$x$$ $$=$$ $$\\frac{\\sin$$ $$x}{\\cos$$ $$x}$$.",
+        "text": "Recall that tan $$x$$ $$=$$ (sin x)/(cos x).",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -15,21 +15,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\frac{\\sin$$ $$x}{\\cos$$ $$x}$$"
+            "(sin x)/(cos x)"
         ],
         "dependencies": [
             "a590f38trigonometric83a-h1"
         ],
-        "title": "Express $$tan$$ $$x$$",
-        "text": "How can you rewrite $$\\tan$$ $$x$$ in terms of $$\\sin$$ $$x$$ and $$\\cos$$ $$x$$?",
+        "title": "Express tan $$x$$",
+        "text": "How can you rewrite tan $$x$$ in terms of sin $$x$$ and cos $$x$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\frac{\\sin$$ $$x}{\\cos$$ $$x}$$",
-            "$$\\frac{\\cos$$ $$x}{\\sin$$ $$x}$$",
-            "$$\\sin$$ $$x$$ $$\\cos$$ $$x$$",
-            "$$\\frac{1}{\\sin$$ $$x}$$"
+            "(sin x)/(cos x)",
+            "(cos x)/(sin x)",
+            "sin $$x$$ cos $$x$$",
+            "(1)/(sin x)"
         ]
     },
     {
@@ -50,7 +50,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\sin$$ $$x$$ $$\\left(\\frac{1}{\\cos$$ $$x$$} $$-$$ $$3\\right)$$ $$=$$ $$0$$"
+            "sin $$x$$ ((1)/(cos x) $$-$$ 3) $$=$$ $$0$$"
         ],
         "dependencies": [
             "a590f38trigonometric83a-h2"
@@ -61,10 +61,10 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\sin$$ $$x$$ $$\\left(\\frac{1}{\\cos$$ $$x$$} $$-$$ $$3\\right)$$ $$=$$ $$0$$",
-            "$$\\sin$$ $$x$$ $$\\left(\\frac{1}{\\cos$$ $$x$$} + $$3\\right)$$ $$=$$ $$0$$",
-            "$$\\sin$$ $$x$$ $$\\left(\\frac{1}{\\cos$$ $$x$$} $$-$$ $$\\frac{1}{3}\\right)$$ $$=$$ $$0$$",
-            "$$\\cos$$ $$x$$ $$\\left(\\frac{1}{\\sin$$ $$x$$} $$-$$ $$3\\right)$$ $$=$$ $$0$$"
+            "sin $$x$$ ((1)/(cos x) $$-$$ 3) $$=$$ $$0$$",
+            "sin $$x$$ ((1)/(cos x) + 3) $$=$$ $$0$$",
+            "sin $$x$$ ((1)/(cos x) $$-$$ (1)/(3)) $$=$$ $$0$$",
+            "cos $$x$$ ((1)/(sin x) $$-$$ 3) $$=$$ $$0$$"
         ]
     },
     {
@@ -74,7 +74,7 @@
             "a590f38trigonometric83a-h2"
         ],
         "title": "Solve each factor",
-        "text": "Set each factor equal to zero and solve for $$x$$ within the given interval $$0$$ $$\\leq$$ $$x$$ < $$2\\pi$$.",
+        "text": "Set each factor equal to zero and solve for $$x$$ within the given interval $$0$$ \\leq $$x$$ < $$2\\pi$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -85,21 +85,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$0$$, $$\\pi$$"
+            "$$0$$, pi"
         ],
         "dependencies": [
             "a590f38trigonometric83a-h3"
         ],
-        "title": "Solve for $$\\sin$$ $$x$$ $$=$$ $$0$$",
-        "text": "What are the solutions for $$\\sin$$ $$x$$ $$=$$ $$0$$ in the interval $$(0$$, $$2\\pi)$$?",
+        "title": "Solve for sin $$x$$ $$=$$ $$0$$",
+        "text": "What are the solutions for sin $$x$$ $$=$$ $$0$$ in the interval (0, 2pi)?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$0$$, $$\\pi$$",
+            "$$0$$, pi",
             "$$0$$",
-            "$$\\frac{\\pi}{2$$,} $$\\frac{3\\pi}{2}$$",
-            "$$0$$, $$\\pi$$, $$2\\pi$$"
+            "$$\\frac{\\pi}{2}$$, $$\\frac{3\\pi}{2}$$",
+            "$$0$$, pi, $$2\\pi$$"
         ]
     },
     {
@@ -108,21 +108,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\arccos(\\frac{1}{3})$$, $$2\\pi$$ $$-$$ $$\\arccos(\\frac{1}{3})$$"
+            "$$\\arccos\\left(\\frac{1}{3}\\right)$$, $$2\\pi$$ $$-$$ $$\\arccos\\left(\\frac{1}{3}\\right)$$"
         ],
         "dependencies": [
             "a590f38trigonometric83a-h3"
         ],
-        "title": "Solve for $$\\cos$$ $$x$$ $$=$$ $$\\frac{1}{3}$$",
-        "text": "What are the solutions for $$\\cos$$ $$x$$ $$=$$ $$\\frac{1}{3}$$ in the interval $$(0$$, $$2\\pi)$$?",
+        "title": "Solve for cos $$x$$ $$=$$ $$\\frac{1}{3}$$",
+        "text": "What are the solutions for cos $$x$$ $$=$$ $$\\frac{1}{3}$$ in the interval (0, 2pi)?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\arccos(\\frac{1}{3})$$, $$2\\pi$$ $$-$$ $$\\arccos(\\frac{1}{3})$$",
-            "$$\\arccos(\\frac{1}{3})$$",
-            "$$\\arccos(\\frac{1}{3})$$, $$\\pi$$ $$-$$ $$\\arccos(\\frac{1}{3})$$",
-            "$$\\arcsin(\\frac{1}{3})$$, $$2\\pi$$ $$-$$ $$\\arcsin(\\frac{1}{3})$$"
+            "$$\\arccos\\left(\\frac{1}{3}\\right)$$, $$2\\pi$$ $$-$$ $$\\arccos\\left(\\frac{1}{3}\\right)$$",
+            "$$\\arccos\\left(\\frac{1}{3}\\right)$$",
+            "$$\\arccos\\left(\\frac{1}{3}\\right)$$, pi $$-$$ $$\\arccos\\left(\\frac{1}{3}\\right)$$",
+            "$$\\arcsin\\left(\\frac{1}{3}\\right)$$, $$2\\pi$$ $$-$$ $$\\arcsin\\left(\\frac{1}{3}\\right)$$"
         ]
     }
 ]

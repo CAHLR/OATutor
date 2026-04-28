@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Applying the tangent sum formula",
-        "text": "Recall the tangent sum identity: $$tan\\left(A+B\\right)$$ $$=$$ $$\\frac{tan(A)$$ + $$tan(B)}{1$$ $$-$$ $$tan(A)tan(B)}$$",
+        "text": "Recall the tangent sum identity: $$tan\\left(A+B\\right)$$ $$=$$ (tan(A) + tan(B))/(1 - tan(A)tan(B))",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -15,7 +15,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$tan\\left(A+B\\right)$$ $$=$$ $$\\frac{tan(A)$$ + $$tan(B)}{1$$ $$-$$ $$tan(A)tan(B)}$$"
+            "$$tan\\left(A+B\\right)$$ $$=$$ (tan(A) + tan(B))/(1 $$-$$ tan(A)tan(B))"
         ],
         "dependencies": [
             "aae56detrig20a-h1"
@@ -26,10 +26,10 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$tan\\left(A+B\\right)$$ $$=$$ $$\\frac{tan(A)$$ + $$tan(B)}{1$$ $$-$$ $$tan(A)tan(B)}$$",
-            "$$tan\\left(A+B\\right)$$ $$=$$ $$\\frac{tan(A)$$ $$-$$ $$tan(B)}{1$$ $$-$$ $$tan(A)tan(B)}$$",
-            "$$tan\\left(A+B\\right)$$ $$=$$ $$\\frac{tan(A)$$ + $$tan(B)}{1$$ + $$tan(A)tan(B)}$$",
-            "$$tan\\left(A+B\\right)$$ $$=$$ $$\\frac{tan(A)$$ $$-$$ $$tan(B)}{1$$ + $$tan(A)tan(B)}$$"
+            "$$tan\\left(A+B\\right)$$ $$=$$ (tan(A) + tan(B))/(1 $$-$$ tan(A)tan(B))",
+            "$$tan\\left(A+B\\right)$$ $$=$$ (tan(A) $$-$$ tan(B))/(1 $$-$$ tan(A)tan(B))",
+            "$$tan\\left(A+B\\right)$$ $$=$$ (tan(A) + tan(B))/(1 + tan(A)tan(B))",
+            "$$tan\\left(A+B\\right)$$ $$=$$ (tan(A) $$-$$ tan(B))/(1 + tan(A)tan(B))"
         ]
     },
     {
@@ -39,7 +39,7 @@
             "aae56detrig20a-h1"
         ],
         "title": "Simplify the angle and decompose",
-        "text": "First, simplify $$tan(\\frac{19pi}{12})$$ using periodicity (e.g., $$tan(x$$ + $$pi)$$ $$=$$ $$tan(x)\\$\\$)$$. $$Then$$, $$find$$ $$two$$ $$common$$ $$angles$$ $$that$$ $$sum$$ $$to$$ $$the$$ $$simplified$$ $$angle$$.",
+        "text": "First, simplify $$tan\\left(\\frac{19\\pi}{12}\\right)$$ using periodicity (e.g., tan(x + pi) $$=$$ tan(x)). Then, find two common angles that sum to the simplified angle.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -50,21 +50,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\tan(\\frac{7\\pi}{12})$$"
+            "$$tan\\left(\\frac{7\\pi}{12}\\right)$$"
         ],
         "dependencies": [
             "aae56detrig20a-h2"
         ],
         "title": "Simplify the angle",
-        "text": "What is $$tan(\\frac{19pi}{12})$$ equivalent to using periodicity?",
+        "text": "What is $$tan\\left(\\frac{19\\pi}{12}\\right)$$ equivalent to using periodicity?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\tan(\\frac{7\\pi}{12})$$",
-            "$$\\tan(-\\frac{5\\pi}{12})$$",
-            "$$\\tan(\\frac{pi}{12})$$",
-            "$$\\tan(\\frac{13pi}{12})$$"
+            "$$tan\\left(\\frac{7\\pi}{12}\\right)$$",
+            "$$tan\\left(\\left(-\\frac{5\\pi}{12}\\right)\\right)$$",
+            "$$tan\\left(\\frac{\\pi}{12}\\right)$$",
+            "$$tan\\left(\\frac{13\\pi}{12}\\right)$$"
         ]
     },
     {
@@ -74,7 +74,7 @@
             "aae56detrig20a-h2"
         ],
         "title": "Decompose the angle",
-        "text": "Consider $$\\frac{7pi}{12} $$=$$ $$\\frac{pi}{3$$} + $$\\frac{pi}{4}$$. $$Evaluate$$ $$the$$ $$tangent$$ $$of$$ $$these$$ $$angles$$.",
+        "text": "Consider $$\\frac{7\\pi}{12}$$ $$=$$ $$\\frac{\\pi}{3}$$ + $$\\frac{\\pi}{4}$$. Evaluate the tangent of these angles.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -85,21 +85,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$A$$ $$=$$ $$\\frac{\\pi}{3$$,} $$B$$ $$=$$ $$\\frac{\\pi}{4}$$"
+            "A $$=$$ $$\\frac{\\pi}{3}$$, B $$=$$ $$\\frac{\\pi}{4}$$"
         ],
         "dependencies": [
             "aae56detrig20a-h3"
         ],
         "title": "Choose angles",
-        "text": "Which two common angles sum to $$\\frac{7pi}{12}$$?",
+        "text": "Which two common angles sum to $$\\frac{7\\pi}{12}$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$A$$ $$=$$ $$\\frac{\\pi}{3$$,} $$B$$ $$=$$ $$\\frac{\\pi}{4}$$",
-            "$$A$$ $$=$$ $$\\frac{\\pi}{2$$,} $$B$$ $$=$$ $$\\frac{\\pi}{6}$$",
-            "$$A$$ $$=$$ $$\\frac{\\pi}{4$$,} $$B$$ $$=$$ $$\\frac{\\pi}{6}$$",
-            "$$A$$ $$=$$ $$\\frac{2\\pi}{3$$,} $$B$$ $$=$$ $$\\frac{\\pi}{6}$$"
+            "A $$=$$ $$\\frac{\\pi}{3}$$, B $$=$$ $$\\frac{\\pi}{4}$$",
+            "A $$=$$ $$\\frac{\\pi}{2}$$, B $$=$$ $$\\frac{\\pi}{6}$$",
+            "A $$=$$ $$\\frac{\\pi}{4}$$, B $$=$$ $$\\frac{\\pi}{6}$$",
+            "A $$=$$ $$\\frac{2\\pi}{3}$$, B $$=$$ $$\\frac{\\pi}{6}$$"
         ]
     },
     {
@@ -108,21 +108,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\tan(\\frac{\\pi}{3})$$ $$=$$ \\sqrt{3}, $$\\tan(\\frac{\\pi}{4})$$ $$=$$ $$1$$"
+            "$$tan\\left(\\frac{\\pi}{3}\\right)$$ $$=$$ $$\\sqrt{3}$$, $$tan\\left(\\frac{\\pi}{4}\\right)$$ $$=$$ $$1$$"
         ],
         "dependencies": [
             "aae56detrig20a-h3"
         ],
         "title": "Evaluate components",
-        "text": "What are the values of $$tan(\\frac{\\pi}{3})$$ and $$tan(\\frac{\\pi}{4})$$?",
+        "text": "What are the values of $$tan\\left(\\frac{\\pi}{3}\\right)$$ and $$tan\\left(\\frac{\\pi}{4}\\right)$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\tan(\\frac{\\pi}{3})$$ $$=$$ \\sqrt{3}, $$\\tan(\\frac{\\pi}{4})$$ $$=$$ $$1$$",
-            "$$\\tan(\\frac{\\pi}{3})$$ $$=$$ $$1$$, $$\\tan(\\frac{\\pi}{4})$$ $$=$$ \\sqrt{3}$$",
-            "$$\\tan(\\frac{\\pi}{3})$$ $$=$$ \\frac{\\sqrt{3}}{3}, $$\\tan(\\frac{\\pi}{4})$$ $$=$$ $$1$$",
-            "$$\\tan(\\frac{\\pi}{3})$$ $$=$$ \\sqrt{3}, $$\\tan(\\frac{\\pi}{4})$$ $$=$$ \\frac{\\sqrt{3}}{3}$$"
+            "$$tan\\left(\\frac{\\pi}{3}\\right)$$ $$=$$ $$\\sqrt{3}$$, $$tan\\left(\\frac{\\pi}{4}\\right)$$ $$=$$ $$1$$",
+            "$$tan\\left(\\frac{\\pi}{3}\\right)$$ $$=$$ $$1$$, $$tan\\left(\\frac{\\pi}{4}\\right)$$ $$=$$ $$\\sqrt{3}$$",
+            "$$tan\\left(\\frac{\\pi}{3}\\right)$$ $$=$$ $$\\frac{\\sqrt{3}}{3}$$, $$tan\\left(\\frac{\\pi}{4}\\right)$$ $$=$$ $$1$$",
+            "$$tan\\left(\\frac{\\pi}{3}\\right)$$ $$=$$ $$\\sqrt{3}$$, $$tan\\left(\\frac{\\pi}{4}\\right)$$ $$=$$ $$\\frac{\\sqrt{3}}{3}$$"
         ]
     }
 ]

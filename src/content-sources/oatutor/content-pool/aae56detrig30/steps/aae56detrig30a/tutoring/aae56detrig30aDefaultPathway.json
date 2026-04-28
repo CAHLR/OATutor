@@ -15,21 +15,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$tan(A-B)$$ $$=$$ $$\\frac{tanA$$ $$-$$ $$tanB}{1$$ + $$tanAtanB}$$"
+            "$$tan(A-B)$$ $$=$$ (tan(A) $$-$$ tan(B))/(1 + tanAtanB)"
         ],
         "dependencies": [
             "aae56detrig30a-h1"
         ],
         "title": "Tangent difference identity",
-        "text": "What is the formula for $$tan(A$$ $$-$$ $$B)$$?",
+        "text": "What is the formula for tan(A - B)?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$tan(A-B)$$ $$=$$ $$\\frac{tanA$$ $$-$$ $$tanB}{1$$ + $$tanAtanB}$$",
-            "$$tan\\left(A+B\\right)$$ $$=$$ $$\\frac{tanA$$ + $$tanB}{1$$ $$-$$ $$tanAtanB}$$",
-            "$$tan(A-B)$$ $$=$$ $$\\frac{tanA$$ + $$tanB}{1$$ $$-$$ $$tanAtanB}$$",
-            "$$tan(A-B)$$ $$=$$ $$\\frac{tanA$$ $$-$$ $$tanB}{1$$ $$-$$ $$tanAtanB}$$"
+            "$$tan(A-B)$$ $$=$$ (tan(A) $$-$$ tan(B))/(1 + tanAtanB)",
+            "$$tan\\left(A+B\\right)$$ $$=$$ (tan(A) + tan(B))/(1 $$-$$ tanAtanB)",
+            "$$tan(A-B)$$ $$=$$ (tan(A) + tan(B))/(1 $$-$$ tanAtanB)",
+            "$$tan(A-B)$$ $$=$$ (tan(A) $$-$$ tan(B))/(1 $$-$$ tanAtanB)"
         ]
     },
     {
@@ -50,21 +50,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$A$$ $$=$$ $$\\frac{3}{2}x$$, $$B$$ $$=$$ $$\\frac{7}{5}x$$"
+            "A $$=$$ $$\\frac{3}{2} x$$, B $$=$$ $$\\frac{7}{5} x$$"
         ],
         "dependencies": [
             "aae56detrig30a-h2"
         ],
-        "title": "Identify $A$ and $B$",
+        "title": "Identify A and B",
         "text": "In the given expression, what are A and B?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$A$$ $$=$$ $$\\frac{3}{2}x$$, $$B$$ $$=$$ $$\\frac{7}{5}x$$",
-            "$$A$$ $$=$$ $$\\frac{7}{5}x$$, $$B$$ $$=$$ $$\\frac{3}{2}x$$",
-            "$$A$$ $$=$$ $$\\frac{3}{2}x$$, $$B$$ $$=$$ $$-\\frac{7}{5}x$$",
-            "$$A$$ $$=$$ $$\\frac{3}{2$$,} $$B$$ $$=$$ $$\\frac{7}{5}$$"
+            "A $$=$$ $$\\frac{3}{2} x$$, B $$=$$ $$\\frac{7}{5} x$$",
+            "A $$=$$ $$\\frac{7}{5} x$$, B $$=$$ $$\\frac{3}{2} x$$",
+            "A $$=$$ $$\\frac{3}{2} x$$, B $$=$$ $$\\frac{-7}{5} x$$",
+            "A $$=$$ $$\\frac{3}{2}$$, B $$=$$ $$\\frac{7}{5}$$"
         ]
     },
     {
@@ -91,7 +91,7 @@
             "aae56detrig30a-h3"
         ],
         "title": "Simplify the argument",
-        "text": "What is $$\\frac{3}{2}x$$ $$-$$ $$\\frac{7}{5}x$$?",
+        "text": "What is $$\\frac{3}{2} x$$ - $$\\frac{7}{5} x$$?",
         "variabilization": {},
         "oer": "",
         "license": ""

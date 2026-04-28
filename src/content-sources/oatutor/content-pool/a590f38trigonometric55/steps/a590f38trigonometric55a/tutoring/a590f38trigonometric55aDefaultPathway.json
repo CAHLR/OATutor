@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Use a double angle identity",
-        "text": "Rewrite $$\\sin(2t)$$ using a double angle identity.",
+        "text": "Rewrite sin(2t) using a double angle identity.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -15,21 +15,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$2\\sin(t)\\cos(t)$$"
+            "2sin(t)cos(t)"
         ],
         "dependencies": [
             "a590f38trigonometric55a-h1"
         ],
         "title": "Which identity?",
-        "text": "What is the double angle identity for $$\\sin(2t)$$?",
+        "text": "What is the double angle identity for sin(2t)?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$2\\sin(t)\\cos(t)$$",
-            "$$\\sin**{2}(t)-cos**{2}(t)$$",
-            "$$2\\sin(t)$$",
-            "$$2\\cos(t)$$"
+            "2sin(t)cos(t)",
+            "$${sin}^2 t-{cos}^2 t$$",
+            "2sin(t)",
+            "2cos(t)"
         ]
     },
     {
@@ -50,21 +50,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$3\\sin(t)$$"
+            "3sin(t)"
         ],
         "dependencies": [
             "a590f38trigonometric55a-h2"
         ],
         "title": "Factor the equation",
-        "text": "After substitution, what common factor can be extracted from $$12\\sin(t)\\cos(t)+9\\sin(t)=0$$?",
+        "text": "After substitution, what common factor can be extracted from $$12sin\\left(t\\right) cos\\left(t\\right)+9sin\\left(t\\right)=0$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$3\\sin(t)$$",
-            "$$\\sin(t)$$",
-            "$$3\\cos(t)$$",
-            "$$3\\sin(t)\\cos(t)$$"
+            "3sin(t)",
+            "sin(t)",
+            "3cos(t)",
+            "3sin(t)cos(t)"
         ]
     },
     {
@@ -85,21 +85,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$0$$, $$\\pi$$"
+            "$$0$$, pi"
         ],
         "dependencies": [
             "a590f38trigonometric55a-h3"
         ],
-        "title": "Solve for $$\\sin(t)=0$$",
-        "text": "What are the solutions for $$\\sin(t)=0$$ on $$0\\leq$$ $$t<2\\pi$$?",
+        "title": "Solve for $$sin(t)=0$$",
+        "text": "What are the solutions for $$sin(t)=0$$ on 0\\leq $$t<2\\pi$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$0$$, $$\\pi$$",
+            "$$0$$, pi",
             "$$0$$",
             "$$\\pi$$",
-            "$0, \\pi/2, \\pi, 3\\pi/2$$"
+            "$$0$$, $$\\frac{\\pi}{2}$$, pi, $$\\frac{3\\pi}{2}$$"
         ]
     },
     {
@@ -108,21 +108,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\arccos\\left(-\\frac{3}{4}\\right)$$, $$2\\pi$$ $$-$$ $$\\arccos\\left(-\\frac{3}{4}\\right)$$"
+            "$$arccos\\left(-\\frac{3}{4}\\right)$$, $$2\\pi$$ $$-$$ $$arccos\\left(-\\frac{3}{4}\\right)$$"
         ],
         "dependencies": [
             "a590f38trigonometric55a-h3"
         ],
-        "title": "Solve for $$\\cos(t)=\\frac{-3}{4}$$",
-        "text": "What are the solutions for $$\\cos(t)=-\\frac{3}{4}$$ on $$0\\leq$$ $$t<2\\pi$$?",
+        "title": "Solve for $$cos(t)=\\frac{-3}{4}$$",
+        "text": "What are the solutions for $$cos(t)=\\frac{-3}{4}$$ on 0\\leq $$t<2\\pi$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\arccos\\left(-\\frac{3}{4}\\right)$$, $$2\\pi$$ $$-$$ $$\\arccos\\left(-\\frac{3}{4}\\right)$$",
-            "$$\\arccos\\left(-\\frac{3}{4}\\right)$$",
+            "$$arccos\\left(-\\frac{3}{4}\\right)$$, $$2\\pi$$ $$-$$ $$arccos\\left(-\\frac{3}{4}\\right)$$",
+            "$$arccos\\left(-\\frac{3}{4}\\right)$$",
             "$$\\arccos\\left(\\frac{3}{4}\\right)$$, $$2\\pi$$ $$-$$ $$\\arccos\\left(\\frac{3}{4}\\right)$$",
-            "$$\\pi$$ $$-$$ $$\\arccos\\left(-\\frac{3}{4}\\right)$$, $$\\pi$$ + $$\\arccos\\left(-\\frac{3}{4}\\right)$$"
+            "pi $$-$$ $$arccos\\left(-\\frac{3}{4}\\right)$$, pi + $$arccos\\left(-\\frac{3}{4}\\right)$$"
         ]
     }
 ]

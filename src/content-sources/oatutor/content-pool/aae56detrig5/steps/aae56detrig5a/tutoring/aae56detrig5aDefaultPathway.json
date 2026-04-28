@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Use the sum identity for tangent",
-        "text": "Recall the sum identity for tangent: $$tan\\left(A+B\\right)$$ $$=$$ $$\\frac{tanA$$ + $$tanB}{1$$ $$-$$ $$tanA$$ $$tanB}$$",
+        "text": "Recall the sum identity for tangent: $$tan\\left(A+B\\right)$$ $$=$$ (tan(A) + tan(B))/(1 - tan(A) tan(B))",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -15,21 +15,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$A$$ $$=$$ $$\\frac{\\pi}{6$$,} $$B$$ $$=$$ $$\\frac{\\pi}{4}$$"
+            "A $$=$$ $$\\frac{\\pi}{6}$$, B $$=$$ $$\\frac{\\pi}{4}$$"
         ],
         "dependencies": [
             "aae56detrig5a-h1"
         ],
-        "title": "Identify $A$ and $B$",
-        "text": "In the expression $$tan(\\frac{pi}{6}+\\frac{pi}{4})$$, $$what$$ $$are$$ $$A$$ $$and$$ $$B$$?",
+        "title": "Identify A and B",
+        "text": "In the expression $$tan\\left(\\frac{\\pi}{6}+\\frac{\\pi}{4}\\right)$$, what are A and B?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$A$$ $$=$$ $$\\frac{\\pi}{6$$,} $$B$$ $$=$$ $$\\frac{\\pi}{4}$$",
-            "$$A$$ $$=$$ $$\\frac{\\pi}{4$$,} $$B$$ $$=$$ $$\\frac{\\pi}{6}$$",
-            "$$A$$ $$=$$ $$\\frac{\\pi}{3$$,} $$B$$ $$=$$ $$\\frac{\\pi}{4}$$",
-            "$$A$$ $$=$$ $$\\frac{\\pi}{6$$,} $$B$$ $$=$$ $$\\frac{\\pi}{3}$$"
+            "A $$=$$ $$\\frac{\\pi}{6}$$, B $$=$$ $$\\frac{\\pi}{4}$$",
+            "A $$=$$ $$\\frac{\\pi}{4}$$, B $$=$$ $$\\frac{\\pi}{6}$$",
+            "A $$=$$ $$\\frac{\\pi}{3}$$, B $$=$$ $$\\frac{\\pi}{4}$$",
+            "A $$=$$ $$\\frac{\\pi}{6}$$, B $$=$$ $$\\frac{\\pi}{3}$$"
         ]
     },
     {
@@ -38,8 +38,8 @@
         "dependencies": [
             "aae56detrig5a-h1"
         ],
-        "title": "Evaluate tanA and tanB",
-        "text": "Find the values of $$tan(\\frac{\\pi}{6})$$ and $$tan(\\frac{\\pi}{4})$$.",
+        "title": "Evaluate tan(A) and tan(B)",
+        "text": "Find the values of $$tan\\left(\\frac{\\pi}{6}\\right)$$ and $$tan\\left(\\frac{\\pi}{4}\\right)$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -56,7 +56,7 @@
             "aae56detrig5a-h2"
         ],
         "title": "Find $$tan\\left(\\frac{\\pi}{6}\\right)$$",
-        "text": "What is the exact value of $$tan(\\frac{\\pi}{6})$$?",
+        "text": "What is the exact value of $$tan\\left(\\frac{\\pi}{6}\\right)$$?",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -73,7 +73,7 @@
             "aae56detrig5a-h2"
         ],
         "title": "Find $$tan\\left(\\frac{\\pi}{4}\\right)$$",
-        "text": "What is the exact value of $$tan(\\frac{\\pi}{4})$$?",
+        "text": "What is the exact value of $$tan\\left(\\frac{\\pi}{4}\\right)$$?",
         "variabilization": {},
         "oer": "",
         "license": ""

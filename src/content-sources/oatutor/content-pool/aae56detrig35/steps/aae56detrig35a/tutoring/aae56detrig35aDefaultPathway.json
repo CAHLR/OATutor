@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Evaluate inverse trigonometric functions",
-        "text": "Begin by finding the values of $$\\sin**{-1}(\\frac{1}{2})$$ and $$\\cos**{-1}(\\frac{1}{2})$$",
+        "text": "Begin by finding the values of $${sin}^{-1\\left(\\frac{1}{2}\\right)}$$ and $${cos}^{-1\\left(\\frac{1}{2}\\right)}$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -20,8 +20,8 @@
         "dependencies": [
             "aae56detrig35a-h1"
         ],
-        "title": "Evaluate $$\\sin**{-1}(\\frac{1}{2})$$",
-        "text": "What is the angle $$A$$ in $$(-\\frac{\\pi}{2$$,} $$\\frac{\\pi}{2})$$ such that $$\\sin(A)$$ $$=$$ $$\\frac{1}{2}$$?",
+        "title": "Evaluate $${sin}^{-1\\left(\\frac{1}{2}\\right)}$$",
+        "text": "What is the angle A in (-(pi)/(2), (pi)/(2)) such that sin(A) $$=$$ $$\\frac{1}{2}$$?",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -37,8 +37,8 @@
         "dependencies": [
             "aae56detrig35a-h1"
         ],
-        "title": "Evaluate $$\\cos**{-1}(\\frac{1}{2})$$",
-        "text": "What is the angle $$B$$ in $$(0$$, $$\\pi)$$ such that $$\\cos(B)$$ $$=$$ $$\\frac{1}{2}$$?",
+        "title": "Evaluate $${cos}^{-1\\left(\\frac{1}{2}\\right)}$$",
+        "text": "What is the angle B in (0, pi) such that cos(B) $$=$$ $$\\frac{1}{2}$$?",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -50,7 +50,7 @@
             "aae56detrig35a-h1"
         ],
         "title": "Apply the tangent difference formula",
-        "text": "Recall that $$tan(A$$ $$-$$ $$B)$$ $$=$$ $$\\frac{tan(A)$$ $$-$$ $$tan(B)}{1$$ + $$tan(A)tan(B)}$$",
+        "text": "Recall that tan(A - B) $$=$$ (tan(A) - tan(B))/(1 + tan(A)tan(B))",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -61,21 +61,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$A$$ $$=$$ $$\\frac{\\pi}{6$$,} $$B$$ $$=$$ $$\\frac{\\pi}{3}$$"
+            "A $$=$$ $$\\frac{\\pi}{6}$$, B $$=$$ $$\\frac{\\pi}{3}$$"
         ],
         "dependencies": [
             "aae56detrig35a-h2"
         ],
-        "title": "Identify $A$ and $B$",
-        "text": "After evaluating the inverse functions, what are the values for A and B in $$tan(A$$ $$-$$ $$B)$$?",
+        "title": "Identify A and B",
+        "text": "After evaluating the inverse functions, what are the values for A and B in tan(A - B)?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$A$$ $$=$$ $$\\frac{\\pi}{6$$,} $$B$$ $$=$$ $$\\frac{\\pi}{3}$$",
-            "$$A$$ $$=$$ $$\\frac{\\pi}{3$$,} $$B$$ $$=$$ $$\\frac{\\pi}{6}$$",
-            "$$A$$ $$=$$ $$\\frac{\\pi}{4$$,} $$B$$ $$=$$ $$\\frac{\\pi}{2}$$",
-            "$$A$$ $$=$$ $$\\frac{\\pi}{2$$,} $$B$$ $$=$$ $$\\frac{\\pi}{4}$$"
+            "A $$=$$ $$\\frac{\\pi}{6}$$, B $$=$$ $$\\frac{\\pi}{3}$$",
+            "A $$=$$ $$\\frac{\\pi}{3}$$, B $$=$$ $$\\frac{\\pi}{6}$$",
+            "A $$=$$ $$\\frac{\\pi}{4}$$, B $$=$$ $$\\frac{\\pi}{2}$$",
+            "A $$=$$ $$\\frac{\\pi}{2}$$, B $$=$$ $$\\frac{\\pi}{4}$$"
         ]
     },
     {
@@ -84,13 +84,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$-\\frac{\\pi}{6}$$"
+            "$$\\frac{-\\pi}{6}$$"
         ],
         "dependencies": [
             "aae56detrig35a-h2"
         ],
-        "title": "Calculate $$A$$ $$-$$ $$B$$",
-        "text": "What is $$\\frac{\\pi}{6$$} $$-$$ $$\\frac{\\pi}{3}$$?",
+        "title": "Calculate A - B",
+        "text": "What is $$\\frac{\\pi}{6}$$ - $$\\frac{\\pi}{3}$$?",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -101,13 +101,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$-\\frac{\\sqrt{3}}{3}$$"
+            "$$\\frac{-\\sqrt{3}}{3}$$"
         ],
         "dependencies": [
             "aae56detrig35a-h2"
         ],
-        "title": "Evaluate $$tan(-\\frac{\\pi}{6})$$",
-        "text": "What is the exact value of $$tan(-\\frac{\\pi}{6})$$?",
+        "title": "Evaluate $$tan\\left(\\left(-\\frac{\\pi}{6}\\right)\\right)$$",
+        "text": "What is the exact value of $$tan\\left(\\left(-\\frac{\\pi}{6}\\right)\\right)$$?",
         "variabilization": {},
         "oer": "",
         "license": ""

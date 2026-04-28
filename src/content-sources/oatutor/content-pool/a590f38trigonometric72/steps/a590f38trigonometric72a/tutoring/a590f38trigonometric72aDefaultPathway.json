@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Use double angle identity",
-        "text": "Recall the double angle identity for cosine: $$\\cos(2x)$$ $$=$$ 2\\cos**{2}(x) $$-$$ $$1$$.",
+        "text": "Recall the double angle identity for cosine: cos(2x) $$=$$ $$2{cos}^2 x$$ - $$1$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -15,21 +15,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$2\\cos**{2}(x) $$-$$ $$1$$"
+            "$$2{cos}^2 x$$ $$-$$ $$1$$"
         ],
         "dependencies": [
             "a590f38trigonometric72a-h1"
         ],
         "title": "Apply the double angle identity",
-        "text": "What is $$\\cos(2x)$$ in terms of $$\\cos(x)$$?",
+        "text": "What is cos(2x) in terms of cos(x)?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$2\\cos**{2}(x) $$-$$ $$1$$",
-            "$$2\\cos(x)$$ $$-$$ $$1$$",
-            "$$\\cos**{2}(x) + $$1$$",
-            "$$\\cos(x)$$ $$-$$ $$1$$"
+            "$$2{cos}^2 x$$ $$-$$ $$1$$",
+            "2cos(x) $$-$$ $$1$$",
+            "$${cos}^2 x$$ + $$1$$",
+            "cos(x) $$-$$ $$1$$"
         ]
     },
     {
@@ -37,7 +37,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Form a quadratic equation",
-        "text": "Rewrite the equation in terms of $$\\cos(x)$$ and solve the resulting quadratic equation.",
+        "text": "Rewrite the equation in terms of cos(x) and solve the resulting quadratic equation.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -48,21 +48,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$2\\cos**{2}(x) $$-$$ $$\\cos(x)$$ $$-$$ $$1$$ $$=$$ $$0$$"
+            "$$2{cos}^2 x$$ $$-$$ cos(x) $$-$$ $$1$$ $$=$$ $$0$$"
         ],
         "dependencies": [
             "a590f38trigonometric72a-h2"
         ],
         "title": "Rewrite as a quadratic",
-        "text": "After applying the identity, what is the quadratic equation in terms of $$\\cos(x)$$?",
+        "text": "After applying the identity, what is the quadratic equation in terms of cos(x)?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$2\\cos**{2}(x) $$-$$ $$\\cos(x)$$ $$-$$ $$1$$ $$=$$ $$0$$",
-            "$$2\\cos**{2}(x) + $$\\cos(x)$$ $$-$$ $$1$$ $$=$$ $$0$$",
-            "$$2\\cos**{2}(x) $$-$$ $$\\cos(x)$$ + $$1$$ $$=$$ $$0$$",
-            "$$\\cos**{2}(x) $$-$$ $$\\cos(x)$$ $$-$$ $$1$$ $$=$$ $$0$$"
+            "$$2{cos}^2 x$$ $$-$$ cos(x) $$-$$ $$1$$ $$=$$ $$0$$",
+            "$$2{cos}^2 x$$ + cos(x) $$-$$ $$1$$ $$=$$ $$0$$",
+            "$$2{cos}^2 x$$ $$-$$ cos(x) + $$1$$ $$=$$ $$0$$",
+            "$${cos}^2 x$$ $$-$$ cos(x) $$-$$ $$1$$ $$=$$ $$0$$"
         ]
     },
     {
@@ -71,21 +71,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$(2u$$ + $$1)(u$$ $$-$$ $$1)$$ $$=$$ $$0$$"
+            "(2u + 1)(u $$-$$ 1) $$=$$ $$0$$"
         ],
         "dependencies": [
             "a590f38trigonometric72a-h2"
         ],
         "title": "Factor the quadratic",
-        "text": "Factor the quadratic equation $$2u**{2} $$-$$ $$u$$ $$-$$ $$1$$ $$=$$ $$0$$ where $$u$$ $$=$$ $$\\cos(x)$$.",
+        "text": "Factor the quadratic equation $$2u^2$$ - u - $$1$$ $$=$$ $$0$$ where u $$=$$ cos(x).",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$(2u$$ + $$1)(u$$ $$-$$ $$1)$$ $$=$$ $$0$$",
-            "$$(2u$$ $$-$$ $$1)(u$$ + $$1)$$ $$=$$ $$0$$",
-            "$$(2u$$ $$-$$ $$1)(u$$ $$-$$ $$1)$$ $$=$$ $$0$$",
-            "$$(u$$ + $$1)(u$$ $$-$$ $$1)$$ $$=$$ $$0$$"
+            "(2u + 1)(u $$-$$ 1) $$=$$ $$0$$",
+            "(2u $$-$$ 1)(u + 1) $$=$$ $$0$$",
+            "(2u $$-$$ 1)(u $$-$$ 1) $$=$$ $$0$$",
+            "(u + 1)(u $$-$$ 1) $$=$$ $$0$$"
         ]
     },
     {
@@ -109,8 +109,8 @@
         "dependencies": [
             "a590f38trigonometric72a-h3"
         ],
-        "title": "Solve $$\\cos(x)$$ $$=$$ $$\\frac{-1}{2}$$",
-        "text": "What are the solutions for $$\\cos(x)$$ $$=$$ $$\\frac{-1}{2}$$ on $$(0$$, 2pi)$$?",
+        "title": "Solve cos(x) $$=$$ $$\\frac{-1}{2}$$",
+        "text": "What are the solutions for cos(x) $$=$$ $$\\frac{-1}{2}$$ on (0, 2pi)?",
         "variabilization": {},
         "oer": "",
         "license": "",
@@ -132,8 +132,8 @@
         "dependencies": [
             "a590f38trigonometric72a-h3"
         ],
-        "title": "Solve $$\\cos(x)$$ $$=$$ $$1$$",
-        "text": "What are the solutions for $$\\cos(x)$$ $$=$$ $$1$$ on $$(0$$, 2pi)$$?",
+        "title": "Solve cos(x) $$=$$ $$1$$",
+        "text": "What are the solutions for cos(x) $$=$$ $$1$$ on (0, 2pi)?",
         "variabilization": {},
         "oer": "",
         "license": ""

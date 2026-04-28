@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Simplify the right side",
-        "text": "Recall the Pythagorean identity $$\\sin**{2}(x) + cos**{2}(x) $$=$$ $$1$$.",
+        "text": "Recall the Pythagorean identity $${sin}^2 x$$ + $${cos}^2 x$$ $$=$$ $$1$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -21,7 +21,7 @@
             "a590f38trigonometric73a-h1"
         ],
         "title": "Simplify the right side",
-        "text": "What is $$\\sin**{2}(x) + cos**{2}(x)$$?",
+        "text": "What is $${sin}^2 x$$ + $${cos}^2 x$$?",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -31,7 +31,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Simplify the denominator",
-        "text": "Recall the identity $$sec**{2}(x) $$=$$ $$1$$ + tan**{2}(x)$$.",
+        "text": "Recall the identity $${sec}^2 x$$ $$=$$ $$1$$ + $${tan}^2 x$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -42,21 +42,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$1$$ + tan**{2}(x)$$"
+            "$$1$$ + $${tan}^2 x$$"
         ],
         "dependencies": [
             "a590f38trigonometric73a-h2"
         ],
-        "title": "Rewrite $$sec**{2}(x)$$",
-        "text": "Express $$sec**{2}(x)$$ in terms of $$tan**{2}(x)$$.",
+        "title": "Rewrite $${sec}^2 x$$",
+        "text": "Express $${sec}^2 x$$ in terms of $${tan}^2 x$$.",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$1$$ + tan**{2}(x)$$",
-            "$$1$$ $$-$$ tan**{2}(x)$$",
-            "$$tan**{2}(x) $$-$$ $$1$$",
-            "$$cot**{2}(x) + $$1$$"
+            "$$1$$ + $${tan}^2 x$$",
+            "$$1$$ $$-$$ $${tan}^2 x$$",
+            "$${tan}^2 x$$ $$-$$ $$1$$",
+            "$${cot}^2 x$$ + $$1$$"
         ]
     },
     {
@@ -65,21 +65,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$1$$ $$-$$ tan**{2}(x)$$"
+            "$$1$$ $$-$$ $${tan}^2 x$$"
         ],
         "dependencies": [
             "a590f38trigonometric73a-h2"
         ],
         "title": "Simplify the denominator",
-        "text": "What does $$2$$ $$-$$ sec**{2}(x)$$ simplify to?",
+        "text": "What does $$2$$ - $${sec}^2 x$$ simplify to?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$1$$ $$-$$ tan**{2}(x)$$",
-            "$$1$$ + tan**{2}(x)$$",
-            "$$tan**{2}(x) $$-$$ $$1$$",
-            "$$2$$ + tan**{2}(x)$$"
+            "$$1$$ $$-$$ $${tan}^2 x$$",
+            "$$1$$ + $${tan}^2 x$$",
+            "$${tan}^2 x$$ $$-$$ $$1$$",
+            "$$2$$ + $${tan}^2 x$$"
         ]
     },
     {
@@ -98,21 +98,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$tan(2x)$$"
+            "tan(2x)"
         ],
         "dependencies": [
             "a590f38trigonometric73a-h3"
         ],
         "title": "Identify the identity",
-        "text": "What trigonometric identity does $$\\frac{2\\tanx}{1-tan**{2}x}$$ represent?",
+        "text": "What trigonometric identity does $$\\frac{2tan\\left(x\\right)}{1-{tan}^2 x}$$ represent?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$tan(2x)$$",
-            "$$2\\tan(x)$$",
-            "$$tan**{2}(x)$$",
-            "$$\\sin(2x)$$"
+            "tan(2x)",
+            "2tan(x)",
+            "$${tan}^2 x$$",
+            "sin(2x)"
         ]
     },
     {
@@ -120,7 +120,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Solve for $$2x$$",
-        "text": "Find all values for $$2x$$ on the interval $$(0$$, 4pi)$$ where $$tan(2x)$$ $$=$$ $$1$$.",
+        "text": "Find all values for $$2x$$ on the interval (0, 4pi) where tan(2x) $$=$$ $$1$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -136,8 +136,8 @@
         "dependencies": [
             "a590f38trigonometric73a-h4"
         ],
-        "title": "Solve $$tan(u)$$ $$=$$ $$1$$",
-        "text": "If $$u$$ $$=$$ $$2x$$, $$what$$ $$are$$ $$the$$ $$solutions$$ $$for$$ $$u$$ on $$(0$$, 4pi)$$?",
+        "title": "Solve tan(u) $$=$$ $$1$$",
+        "text": "If u $$=$$ $$2x$$, what are the solutions for u on (0, 4pi)?",
         "variabilization": {},
         "oer": "",
         "license": "",
@@ -153,7 +153,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Solve for $$x$$",
-        "text": "Divide the solutions for $$2x$$ by $$2$$ to find the solutions for $$x$$ on $$(0$$, 2pi)$$.",
+        "text": "Divide the solutions for $$2x$$ by $$2$$ to find the solutions for $$x$$ on (0, 2pi).",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -170,7 +170,7 @@
             "a590f38trigonometric73a-h5"
         ],
         "title": "Find $$x$$ values",
-        "text": "Divide the solutions for $$2x$$ by $$2$$. What are the solutions for $$x$$ on $$(0$$, 2pi)$$?",
+        "text": "Divide the solutions for $$2x$$ by $$2$$. What are the solutions for $$x$$ on (0, 2pi)?",
         "variabilization": {},
         "oer": "",
         "license": "",

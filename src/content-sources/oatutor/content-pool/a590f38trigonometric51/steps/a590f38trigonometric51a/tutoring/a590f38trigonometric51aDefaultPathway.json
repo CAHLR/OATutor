@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Rearrange and factor",
-        "text": "Move all terms to one side and factor out $$tan(x)$$.",
+        "text": "Move all terms to one side and factor out tan(x).",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -15,20 +15,20 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$tan(x)(tan(x)-1)(tan(x)+1)(tan**{2}(x)+1)=0$$"
+            "$$tan\\left(x\\right) \\left(tan\\left(x\\right)-1\\right) \\left(tan\\left(x\\right)+1\\right) \\left({tan}^2 x+1\\right)=0$$"
         ],
         "dependencies": [
             "a590f38trigonometric51a-h1"
         ],
         "title": "Factor the equation",
-        "text": "Factor $$tan**{5}(x)=tan(x)$$.",
+        "text": "Factor $${tan}^5 x=tan(x)$$.",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$tan(x)(tan(x)-1)(tan(x)+1)(tan**{2}(x)+1)=0$$",
-            "$$tan(x)(tan**{2}(x)-1)(tan**{2}(x)+1)=0$$",
-            "$$tan(x)(tan(x)-1)(tan(x)+1)(tan**{2}(x)-1)=0$$",
+            "$$tan\\left(x\\right) \\left(tan\\left(x\\right)-1\\right) \\left(tan\\left(x\\right)+1\\right) \\left({tan}^2 x+1\\right)=0$$",
+            "$$tan\\left(x\\right) \\left({tan}^2 x-1\\right) \\left({tan}^2 x+1\\right)=0$$",
+            "$$tan\\left(x\\right) \\left(tan\\left(x\\right)-1\\right) \\left(tan\\left(x\\right)+1\\right) \\left({tan}^2 x-1\\right)=0$$",
             "$$tan\\left(x\\right) \\left(tan\\left(x\\right)-1\\right) \\left(tan\\left(x\\right)+1\\right)=0$$"
         ]
     },
@@ -39,7 +39,7 @@
             "a590f38trigonometric51a-h1"
         ],
         "title": "Identify factors that can be zero",
-        "text": "Recall that $$tan**{2}(x)+1 $$=$$ sec**{2}(x)$$, $$which$$ $$is$$ $$never$$ $$zero$$. $$So$$, $$set$$ $$the$$ $$other$$ $$factors$$ $$to$$ $$zero$$.",
+        "text": "Recall that $${tan}^2 x+1$$ $$=$$ $${sec}^2 x$$, which is never zero. So, set the other factors to zero.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -64,7 +64,7 @@
             "$$tan(x)=0$$, $$tan(x)=1$$, $$tan(x)=-1$$",
             "$$tan(x)=0$$, $$tan(x)=1$$",
             "$$tan(x)=0$$, $$tan(x)=-1$$",
-            "$$tan(x)=0$$, $$tan(x)=1$$, $$tan(x)=-1$$, tan**{2}(x)=-1$$"
+            "$$tan(x)=0$$, $$tan(x)=1$$, $$tan(x)=-1$$, $${tan}^2 x=-1$$"
         ]
     },
     {
@@ -74,7 +74,7 @@
             "a590f38trigonometric51a-h2"
         ],
         "title": "Solve each equation",
-        "text": "Find all solutions for $$x$$ in $$(0$$, $$2\\pi)$$ for each of the three equations.",
+        "text": "Find all solutions for $$x$$ in (0, 2pi) for each of the three equations.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -85,21 +85,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$0$$, $$\\pi$$"
+            "$$0$$, pi"
         ],
         "dependencies": [
             "a590f38trigonometric51a-h3"
         ],
-        "title": "Solutions for $$tan(x)$$ $$=$$ $$0$$",
+        "title": "Solutions for tan(x) $$=$$ $$0$$",
         "text": "What are the solutions for $$tan(x)=0$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$0$$, $$\\pi$$",
+            "$$0$$, pi",
             "$$0$$",
             "$$\\pi$$",
-            "$0, \\pi, $$2\\pi$$"
+            "$$0$$, pi, $$2\\pi$$"
         ]
     },
     {
@@ -108,21 +108,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\pi/4, 5\\pi/4$$"
+            "$$\\frac{\\pi}{4}$$, $$\\frac{5\\pi}{4}$$"
         ],
         "dependencies": [
             "a590f38trigonometric51a-h3"
         ],
-        "title": "Solutions for $$tan(x)$$ $$=$$ $$1$$",
+        "title": "Solutions for tan(x) $$=$$ $$1$$",
         "text": "What are the solutions for $$tan(x)=1$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\pi/4, 5\\pi/4$$",
-            "$$\\pi/4$$",
-            "$$3\\pi/4, 7\\pi/4$$",
-            "$$\\pi/4, 3\\pi/4$$"
+            "$$\\frac{\\pi}{4}$$, $$\\frac{5\\pi}{4}$$",
+            "$$\\frac{\\pi}{4}$$",
+            "$$\\frac{3\\pi}{4}$$, $$\\frac{7\\pi}{4}$$",
+            "$$\\frac{\\pi}{4}$$, $$\\frac{3\\pi}{4}$$"
         ]
     },
     {
@@ -131,21 +131,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$3\\pi/4, 7\\pi/4$$"
+            "$$\\frac{3\\pi}{4}$$, $$\\frac{7\\pi}{4}$$"
         ],
         "dependencies": [
             "a590f38trigonometric51a-h3"
         ],
-        "title": "Solutions for $$tan(x)$$ $$=$$ $$-1$$",
+        "title": "Solutions for tan(x) $$=$$ $$-1$$",
         "text": "What are the solutions for $$tan(x)=-1$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$3\\pi/4, 7\\pi/4$$",
-            "$$3\\pi/4$$",
-            "$$\\pi/4, 5\\pi/4$$",
-            "$$3\\pi/4, 5\\pi/4$$"
+            "$$\\frac{3\\pi}{4}$$, $$\\frac{7\\pi}{4}$$",
+            "$$\\frac{3\\pi}{4}$$",
+            "$$\\frac{\\pi}{4}$$, $$\\frac{5\\pi}{4}$$",
+            "$$\\frac{3\\pi}{4}$$, $$\\frac{5\\pi}{4}$$"
         ]
     }
 ]

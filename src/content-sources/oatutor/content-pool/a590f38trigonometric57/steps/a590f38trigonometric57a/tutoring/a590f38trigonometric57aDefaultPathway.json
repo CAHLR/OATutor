@@ -15,21 +15,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$2\\sin$$ $$t\\cos$$ $$t$$"
+            "2sin tcos $$t$$"
         ],
         "dependencies": [
             "a590f38trigonometric57a-h1"
         ],
         "title": "Identify Sine Double Angle Identity",
-        "text": "What is the identity for $\\sin(2t)$?",
+        "text": "What is the identity for sin(2t)?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$2\\sin$$ $$t\\cos$$ $$t$$",
-            "$$2\\sin$$ $$t$$",
-            "$$\\sin**2t $$-$$ $${cos}^2 t$$",
-            "$$2\\cos$$ $$t$$"
+            "2sin tcos $$t$$",
+            "2sin $$t$$",
+            "$${sin}^2 t$$ $$-$$ $${cos}^2 t$$",
+            "2cos $$t$$"
         ]
     },
     {
@@ -50,7 +50,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\cos$$ $$t(2\\sin$$ $$t$$ $$-$$ $$1)$$ $$=$$ $$0$$"
+            "cos t(2sin $$t$$ $$-$$ 1) $$=$$ $$0$$"
         ],
         "dependencies": [
             "a590f38trigonometric57a-h2"
@@ -61,10 +61,10 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\cos$$ $$t(2\\sin$$ $$t$$ $$-$$ $$1)$$ $$=$$ $$0$$",
-            "$$\\cos$$ $$t(\\sin$$ $$t$$ $$-$$ $$1)$$ $$=$$ $$0$$",
-            "$$\\sin$$ $$t(2\\cos$$ $$t$$ $$-$$ $$1)$$ $$=$$ $$0$$",
-            "$$\\cos$$ $$t(2\\sin$$ $$t$$ + $$1)$$ $$=$$ $$0$$"
+            "cos t(2sin $$t$$ $$-$$ 1) $$=$$ $$0$$",
+            "cos t(sin $$t$$ $$-$$ 1) $$=$$ $$0$$",
+            "sin t(2cos $$t$$ $$-$$ 1) $$=$$ $$0$$",
+            "cos t(2sin $$t$$ + 1) $$=$$ $$0$$"
         ]
     },
     {
@@ -73,8 +73,8 @@
         "dependencies": [
             "a590f38trigonometric57a-h2"
         ],
-        "title": "Solve for $t$",
-        "text": "Set each factor to zero and find all solutions for $t$ in the interval $$0\\leq$$ $$t<2\\pi$$.",
+        "title": "Solve for $$t$$",
+        "text": "Set each factor to zero and find all solutions for $$t$$ in the interval 0\\leq $$t<2\\pi$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -85,20 +85,20 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\frac{\\pi}{2$$,} $$\\frac{3\\pi}{2}$$"
+            "$$\\frac{\\pi}{2}$$, $$\\frac{3\\pi}{2}$$"
         ],
         "dependencies": [
             "a590f38trigonometric57a-h3"
         ],
-        "title": "Solve for $\\cos $$t=0\\$$$",
-        "text": "What are the values of $t$ when $\\cos $$t$$ $$=$$ 0$ on the given interval?",
+        "title": "Solve for cos $$t=0$$",
+        "text": "What are the values of $$t$$ when cos $$t$$ $$=$$ $$0$$ on the given interval?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\frac{\\pi}{2$$,} $$\\frac{3\\pi}{2}$$",
-            "$$0$$, $$\\pi$$",
-            "$$\\frac{\\pi}{2$$,} $$\\pi$$",
+            "$$\\frac{\\pi}{2}$$, $$\\frac{3\\pi}{2}$$",
+            "$$0$$, pi",
+            "$$\\frac{\\pi}{2}$$, pi",
             "$$\\frac{\\pi}{2}$$"
         ]
     },
@@ -108,21 +108,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\frac{\\pi}{6$$,} $$\\frac{5\\pi}{6}$$"
+            "$$\\frac{\\pi}{6}$$, $$\\frac{5\\pi}{6}$$"
         ],
         "dependencies": [
             "a590f38trigonometric57a-h3"
         ],
-        "title": "Solve for $\\sin t=1/2$",
-        "text": "What are the values of $t$ when $\\sin $$t$$ $$=$$ \\frac{1}{2}$ on the given interval?",
+        "title": "Solve for sin $$t=\\frac{1}{2}$$",
+        "text": "What are the values of $$t$$ when sin $$t$$ $$=$$ $$\\frac{1}{2}$$ on the given interval?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\frac{\\pi}{6$$,} $$\\frac{5\\pi}{6}$$",
-            "$$\\frac{\\pi}{6$$,} $$\\frac{7\\pi}{6}$$",
-            "$$\\frac{\\pi}{3$$,} $$\\frac{2\\pi}{3}$$",
-            "$$\\frac{\\pi}{6$$,} $$\\frac{11\\pi}{6}$$"
+            "$$\\frac{\\pi}{6}$$, $$\\frac{5\\pi}{6}$$",
+            "$$\\frac{\\pi}{6}$$, $$\\frac{7\\pi}{6}$$",
+            "$$\\frac{\\pi}{3}$$, $$\\frac{2\\pi}{3}$$",
+            "$$\\frac{\\pi}{6}$$, $$\\frac{11\\pi}{6}$$"
         ]
     }
 ]

@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Evaluate inverse trigonometric functions",
-        "text": "Start by finding the values of $$\\cos**{-1}(0)$$ and $$\\cos**{-1}(\\frac{1}{2})$$",
+        "text": "Start by finding the values of $${cos}^{-1\\left(0\\right)}$$ and $${cos}^{-1\\left(\\frac{1}{2}\\right)}$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -20,8 +20,8 @@
         "dependencies": [
             "aae56detrig33a-h1"
         ],
-        "title": "Evaluate $$\\cos**{-1}(0)$$",
-        "text": "What is the angle $$A$$ in $$(0$$, $$\\pi)$$ such that $$\\cos(A)$$ $$=$$ $$0$$?",
+        "title": "Evaluate $${cos}^{-1\\left(0\\right)}$$",
+        "text": "What is the angle A in (0, pi) such that cos(A) $$=$$ 0?",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -37,8 +37,8 @@
         "dependencies": [
             "aae56detrig33a-h1"
         ],
-        "title": "Evaluate $$\\cos**{-1}(\\frac{1}{2})$$",
-        "text": "What is the angle $$B$$ in $$(0$$, $$\\pi)$$ such that $$\\cos(B)$$ $$=$$ $$\\frac{1}{2}$$?",
+        "title": "Evaluate $${cos}^{-1\\left(\\frac{1}{2}\\right)}$$",
+        "text": "What is the angle B in (0, pi) such that cos(B) $$=$$ $$\\frac{1}{2}$$?",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -50,7 +50,7 @@
             "aae56detrig33a-h1"
         ],
         "title": "Apply the sine difference formula",
-        "text": "Recall that $$\\sin(A$$ $$-$$ $$B)$$ $$=$$ $$\\sin(A)\\cos(B)$$ $$-$$ $$\\cos(A)\\sin(B)$$",
+        "text": "Recall that sin(A - B) $$=$$ sin(A)cos(B) - cos(A)sin(B)",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -61,21 +61,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$A$$ $$=$$ $$\\frac{\\pi}{2$$,} $$B$$ $$=$$ $$\\frac{\\pi}{3}$$"
+            "A $$=$$ $$\\frac{\\pi}{2}$$, B $$=$$ $$\\frac{\\pi}{3}$$"
         ],
         "dependencies": [
             "aae56detrig33a-h2"
         ],
-        "title": "Identify $A$ and $B$",
-        "text": "After evaluating the inverse functions, what are the values for A and B in $$\\sin(A$$ $$-$$ $$B)$$?",
+        "title": "Identify A and B",
+        "text": "After evaluating the inverse functions, what are the values for A and B in sin(A - B)?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$A$$ $$=$$ $$\\frac{\\pi}{2$$,} $$B$$ $$=$$ $$\\frac{\\pi}{3}$$",
-            "$$A$$ $$=$$ $$\\frac{\\pi}{3$$,} $$B$$ $$=$$ $$\\frac{\\pi}{2}$$",
-            "$$A$$ $$=$$ $$0$$, $$B$$ $$=$$ $$\\frac{\\pi}{2}$$",
-            "$$A$$ $$=$$ $$\\pi$$, $$B$$ $$=$$ $$\\frac{\\pi}{6}$$"
+            "A $$=$$ $$\\frac{\\pi}{2}$$, B $$=$$ $$\\frac{\\pi}{3}$$",
+            "A $$=$$ $$\\frac{\\pi}{3}$$, B $$=$$ $$\\frac{\\pi}{2}$$",
+            "A $$=$$ $$0$$, B $$=$$ $$\\frac{\\pi}{2}$$",
+            "A $$=$$ pi, B $$=$$ $$\\frac{\\pi}{6}$$"
         ]
     },
     {
@@ -84,21 +84,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$(1)(\\frac{1}{2})$$ $$-$$ (0)(\\frac{\\sqrt{3}}{2})$$"
+            "$$1\\frac{1}{2}$$ $$-$$ $$0\\frac{\\sqrt{3}}{2}$$"
         ],
         "dependencies": [
             "aae56detrig33a-h2"
         ],
         "title": "Apply the formula",
-        "text": "Substitute the values into $$\\sin(A)\\cos(B)$$ $$-$$ $$\\cos(A)\\sin(B)$$. $$What$$ $$is$$ $$\\sin(\\frac{\\pi}{2})\\cos(\\frac{\\pi}{3})$$ $$-$$ $$\\cos(\\frac{\\pi}{2})\\sin(\\frac{\\pi}{3})$$?",
+        "text": "Substitute the values into sin(A)cos(B) - cos(A)sin(B). What is $$sin\\left(\\frac{\\pi}{2}\\right) cos\\left(\\frac{\\pi}{3}\\right)$$ - $$cos\\left(\\frac{\\pi}{2}\\right) sin\\left(\\frac{\\pi}{3}\\right)$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$$$ (1)(\\frac{1}{2}) $$-$$ (0)(\\frac{\\sqrt{3}}{2}) $$$$",
-            "$$$$ (1)(\\frac{1}{2}) + (0)(\\frac{\\sqrt{3}}{2}) $$$$",
-            "$$$$ (0)(\\frac{\\sqrt{3}}{2}) $$-$$ (1)(\\frac{1}{2}) $$$$",
-            "$$$$ (1)(\\frac{\\sqrt{3}}{2}) $$-$$ (0)(\\frac{1}{2}) $$$$"
+            "$$1\\frac{1}{2}$$ $$-$$ $$0\\frac{\\sqrt{3}}{2}$$",
+            "$$1\\frac{1}{2}$$ + $$0\\frac{\\sqrt{3}}{2}$$",
+            "$$0\\frac{\\sqrt{3}}{2}$$ $$-$$ $$1\\frac{1}{2}$$",
+            "$$1\\frac{\\sqrt{3}}{2}$$ $$-$$ $$0\\frac{1}{2}$$"
         ]
     },
     {

@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Decompose the angle",
-        "text": "The angle $$$$ \\frac{5pi}{12} $$$$ is not a standard unit circle angle. Try to express it as a sum or difference of two standard angles (e.g., $$$$ \\frac{pi}{3} $$$$, $$$$ \\frac{pi}{4} $$$$, $$$$ \\frac{pi}{6} $$)$$.",
+        "text": "The angle $$\\frac{5\\pi}{12}$$ is not a standard unit circle angle. Try to express it as a sum or difference of two standard angles (e.g., $$\\frac{\\pi}{3}$$ , $$\\frac{\\pi}{4}$$ , $$\\frac{\\pi}{6}$$ ).",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -15,21 +15,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$$$ \\frac{pi}{6} + \\frac{pi}{4} $$$$"
+            "$$\\frac{\\pi}{6}$$ + $$\\frac{\\pi}{4}$$"
         ],
         "dependencies": [
             "aae56detrig17a-h1"
         ],
-        "title": "Rewrite $$$$ \\frac{5pi}{12} $$$$",
-        "text": "Which sum of two common angles equals $$$$ \\frac{5pi}{12} $$$$?",
+        "title": "Rewrite $$\\frac{5\\pi}{12}$$",
+        "text": "Which sum of two common angles equals $$\\frac{5\\pi}{12}$$ ?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$$$ \\frac{pi}{6} + \\frac{pi}{4} $$$$",
-            "$$$$ \\frac{pi}{3} + \\frac{pi}{4} $$$$",
-            "$$$$ \\frac{pi}{2} $$-$$ \\frac{pi}{6} $$$$",
-            "$$$$ \\frac{pi}{3} + \\frac{pi}{6} $$$$"
+            "$$\\frac{\\pi}{6}$$ + $$\\frac{\\pi}{4}$$",
+            "$$\\frac{\\pi}{3}$$ + $$\\frac{\\pi}{4}$$",
+            "$$\\frac{\\pi}{2}$$ $$-$$ $$\\frac{\\pi}{6}$$",
+            "$$\\frac{\\pi}{3}$$ + $$\\frac{\\pi}{6}$$"
         ]
     },
     {
@@ -38,7 +38,7 @@
         "dependencies": [
             "aae56detrig17a-h1"
         ],
-        "title": "Recall the $$\\frac{sum}{difference}$$ identity",
+        "title": "Recall the Sum or Difference identity",
         "text": "Once you've decomposed the angle, recall the appropriate sum or difference identity for sine.",
         "variabilization": {},
         "oer": "",
@@ -50,21 +50,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$$$ \\sin(A)\\cos(B) + \\cos(A)\\sin(B) $$$$"
+            "sin(A)cos(B) + cos(A)sin(B)"
         ],
         "dependencies": [
             "aae56detrig17a-h2"
         ],
         "title": "Sine sum identity",
-        "text": "What is the identity for $$$$ \\sin(A+B) $$$$?",
+        "text": "What is the identity for $$sin\\left(A+B\\right)$$ ?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$$$ \\sin(A)\\cos(B) + \\cos(A)\\sin(B) $$$$",
-            "$$$$ \\sin(A)\\cos(B) $$-$$ \\cos(A)\\sin(B) $$$$",
-            "$$$$ \\cos(A)\\cos(B) + \\sin(A)\\sin(B) $$$$",
-            "$$$$ \\cos(A)\\cos(B) $$-$$ \\sin(A)\\sin(B) $$$$"
+            "sin(A)cos(B) + cos(A)sin(B)",
+            "sin(A)cos(B) $$-$$ cos(A)sin(B)",
+            "cos(A)cos(B) + sin(A)sin(B)",
+            "cos(A)cos(B) $$-$$ sin(A)sin(B)"
         ]
     },
     {
@@ -85,13 +85,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$$$ \\frac{1}{2} $$$$"
+            "$$\\frac{1}{2}$$"
         ],
         "dependencies": [
             "aae56detrig17a-h3"
         ],
-        "title": "Value of $$$$ \\sin(\\frac{pi}{6}) $$$$",
-        "text": "What is the exact value of $$$$ \\sin(\\frac{pi}{6}) $$$$?",
+        "title": "Value of $$sin\\left(\\frac{\\pi}{6}\\right)$$",
+        "text": "What is the exact value of $$sin\\left(\\frac{\\pi}{6}\\right)$$ ?",
         "variabilization": {},
         "oer": "",
         "license": ""

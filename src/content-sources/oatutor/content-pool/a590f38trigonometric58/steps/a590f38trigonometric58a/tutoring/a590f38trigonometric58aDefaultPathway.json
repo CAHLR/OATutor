@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Choose Double Angle Identity",
-        "text": "Select the double angle identity for cosine that involves only $\\sin t$.",
+        "text": "Select the double angle identity for cosine that involves only sin $$t$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -15,21 +15,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$1$$ $$-$$ 2\\sin**2t$$"
+            "$$1$$ $$-$$ $$2{sin}^2 t$$"
         ],
         "dependencies": [
             "a590f38trigonometric58a-h1"
         ],
         "title": "Identify Cosine Double Angle Identity",
-        "text": "Which identity for $\\cos(2t)$ uses only $\\sin t$?",
+        "text": "Which identity for cos(2t) uses only sin $$t$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$1$$ $$-$$ 2\\sin**2t$$",
-            "$$2\\cos**2t $$-$$ $$1$$",
-            "$$\\cos**2t $$-$$ $${sin}^2 t$$",
-            "$$2\\sin$$ $$t\\cos$$ $$t$$"
+            "$$1$$ $$-$$ $$2{sin}^2 t$$",
+            "$$2{cos}^2 t$$ $$-$$ $$1$$",
+            "$${cos}^2 t$$ $$-$$ $${sin}^2 t$$",
+            "2sin tcos $$t$$"
         ]
     },
     {
@@ -39,7 +39,7 @@
             "a590f38trigonometric58a-h1"
         ],
         "title": "Form and Factor Quadratic",
-        "text": "Rewrite the equation as a quadratic in $\\sin $$t\\$$$ and factor it.",
+        "text": "Rewrite the equation as a quadratic in sin $$t$$ and factor it.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -50,21 +50,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$2\\sin**2t + $$\\sin$$ $$t$$ $$-$$ $$1$$ $$=$$ $$0$$"
+            "$$2{sin}^2 t$$ + sin $$t$$ $$-$$ $$1$$ $$=$$ $$0$$"
         ],
         "dependencies": [
             "a590f38trigonometric58a-h2"
         ],
         "title": "Form a Quadratic Equation",
-        "text": "What is the quadratic equation in terms of $\\sin t$?",
+        "text": "What is the quadratic equation in terms of sin $$t$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$2\\sin**2t + $$\\sin$$ $$t$$ $$-$$ $$1$$ $$=$$ $$0$$",
-            "$$2\\sin**2t $$-$$ $$\\sin$$ $$t$$ $$-$$ $$1$$ $$=$$ $$0$$",
-            "$$2\\sin**2t + $$\\sin$$ $$t$$ + $$1$$ $$=$$ $$0$$",
-            "$$\\sin**2t + $$\\sin$$ $$t$$ $$-$$ $$1$$ $$=$$ $$0$$"
+            "$$2{sin}^2 t$$ + sin $$t$$ $$-$$ $$1$$ $$=$$ $$0$$",
+            "$$2{sin}^2 t$$ $$-$$ sin $$t$$ $$-$$ $$1$$ $$=$$ $$0$$",
+            "$$2{sin}^2 t$$ + sin $$t$$ + $$1$$ $$=$$ $$0$$",
+            "$${sin}^2 t$$ + sin $$t$$ $$-$$ $$1$$ $$=$$ $$0$$"
         ]
     },
     {
@@ -73,21 +73,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\frac{1}{2$$,} $$-1$$"
+            "$$\\frac{1}{2}$$, $$-1$$"
         ],
         "dependencies": [
             "a590f38trigonometric58a-h2"
         ],
         "title": "Factor the Quadratic",
-        "text": "What are the possible values for $\\sin $$t\\$$$ after factoring?",
+        "text": "What are the possible values for sin $$t$$ after factoring?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\frac{1}{2$$,} $$-1$$",
-            "$$-\\frac{1}{2$$,} $$1$$",
-            "$$\\frac{1}{2$$,} $$1$$",
-            "$$-\\frac{1}{2$$,} $$-1$$"
+            "$$\\frac{1}{2}$$, $$-1$$",
+            "$$\\frac{-1}{2}$$, $$1$$",
+            "$$\\frac{1}{2}$$, $$1$$",
+            "$$\\frac{-1}{2}$$, $$-1$$"
         ]
     },
     {
@@ -96,8 +96,8 @@
         "dependencies": [
             "a590f38trigonometric58a-h2"
         ],
-        "title": "Find Solutions for $t$",
-        "text": "Determine all values of $t$ in the interval $$0\\leq$$ $$t<2\\pi$$ that satisfy the $\\sin $$t\\$$$ values.",
+        "title": "Find Solutions for $$t$$",
+        "text": "Determine all values of $$t$$ in the interval 0\\leq $$t<2\\pi$$ that satisfy the sin $$t$$ values.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -108,21 +108,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\frac{\\pi}{6$$,} $$\\frac{5\\pi}{6}$$"
+            "$$\\frac{\\pi}{6}$$, $$\\frac{5\\pi}{6}$$"
         ],
         "dependencies": [
             "a590f38trigonometric58a-h3"
         ],
-        "title": "Solve for $\\sin t=1/2$",
-        "text": "What are the values of $t$ when $\\sin $$t$$ $$=$$ \\frac{1}{2}$ on the given interval?",
+        "title": "Solve for sin $$t=\\frac{1}{2}$$",
+        "text": "What are the values of $$t$$ when sin $$t$$ $$=$$ $$\\frac{1}{2}$$ on the given interval?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\frac{\\pi}{6$$,} $$\\frac{5\\pi}{6}$$",
-            "$$\\frac{\\pi}{6$$,} $$\\frac{7\\pi}{6}$$",
-            "$$\\frac{\\pi}{3$$,} $$\\frac{2\\pi}{3}$$",
-            "$$\\frac{\\pi}{6$$,} $$\\frac{11\\pi}{6}$$"
+            "$$\\frac{\\pi}{6}$$, $$\\frac{5\\pi}{6}$$",
+            "$$\\frac{\\pi}{6}$$, $$\\frac{7\\pi}{6}$$",
+            "$$\\frac{\\pi}{3}$$, $$\\frac{2\\pi}{3}$$",
+            "$$\\frac{\\pi}{6}$$, $$\\frac{11\\pi}{6}$$"
         ]
     },
     {
@@ -136,8 +136,8 @@
         "dependencies": [
             "a590f38trigonometric58a-h3"
         ],
-        "title": "Solve for $\\sin $$t=-1\\$$$",
-        "text": "What is the value of $t$ when $\\sin $$t$$ $$=$$ -1$ on the given interval?",
+        "title": "Solve for sin $$t=-1$$",
+        "text": "What is the value of $$t$$ when sin $$t$$ $$=$$ $$-1$$ on the given interval?",
         "variabilization": {},
         "oer": "",
         "license": ""

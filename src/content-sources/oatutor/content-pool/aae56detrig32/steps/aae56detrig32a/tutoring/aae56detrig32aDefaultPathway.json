@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Recall the difference identity for sine",
-        "text": "What is the formula for $$\\sin(A-B)$$?",
+        "text": "What is the formula for $$sin(A-B)$$?",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -15,21 +15,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\sinAcosB$$ $$-$$ $$cosAsinB$$"
+            "sin(A)cos(B) $$-$$ cosAsinB"
         ],
         "dependencies": [
             "aae56detrig32a-h1"
         ],
         "title": "Sine difference identity",
-        "text": "What is $$\\sin(A-B)$$?",
+        "text": "What is $$sin(A-B)$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\sinAcosB$$ $$-$$ $$cosAsinB$$",
-            "$$\\sinAcosB$$ + $$cosAsinB$$",
-            "$$\\cosAcosB$$ $$-$$ $$sinAsinB$$",
-            "$$\\cosAcosB$$ + $$sinAsinB$$"
+            "sin(A)cos(B) $$-$$ cosAsinB",
+            "sin(A)cos(B) + cosAsinB",
+            "cos(A)cos(B) $$-$$ sinAsinB",
+            "cos(A)cos(B) + sinAsinB"
         ]
     },
     {
@@ -39,7 +39,7 @@
             "aae56detrig32a-h1"
         ],
         "title": "Find missing trigonometric values",
-        "text": "You need $$\\cosa$$ and $$\\sinb$$. $$ \\cup se$$ $$the$$ $$Pythagorean$$ $$identity$$ $$and$$ $$the$$ $$given$$ $$quadrant$$ $$information$$.",
+        "text": "You need cos(a) and sin(b). Use the Pythagorean identity and the given quadrant information.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -56,7 +56,7 @@
             "aae56detrig32a-h2"
         ],
         "title": "Find cosa",
-        "text": "Given $$\\sina=\\frac{4}{5}$$ and $$a$$ $$\\in$$ $$(0, \\frac{pi}{2})$$, $$what$$ $$is$$ $$\\cosa$$?",
+        "text": "Given $$sin(a)=\\frac{4}{5}$$ and a \u2208 $$(0,\\frac{\\pi}{2})$$, what is cos(a)?",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -73,7 +73,7 @@
             "aae56detrig32a-h2"
         ],
         "title": "Find sinb",
-        "text": "Given $$\\cosb=\\frac{1}{3}$$ and $$b$$ $$\\in$$ $$(0, \\frac{pi}{2})$$, $$what$$ $$is$$ $$\\sinb$$?",
+        "text": "Given $$cos(b)=\\frac{1}{3}$$ and $$b$$ \u2208 $$(0,\\frac{\\pi}{2})$$, what is sin(b)?",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -85,7 +85,7 @@
             "aae56detrig32a-h2"
         ],
         "title": "Substitute and simplify",
-        "text": "Substitute all known values into the $$\\sin(a-b)$$ formula and simplify the expression.",
+        "text": "Substitute all known values into the $$sin(a-b)$$ formula and simplify the expression.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -96,21 +96,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$(\\frac{4}{5})(\\frac{1}{3})$$ $$-$$ (\\frac{3}{5})(\\frac{2\\sqrt{2}}{3})$$"
+            "$$\\frac{4}{5} \\frac{1}{3}$$ $$-$$ $$\\frac{3}{5} \\frac{2\\sqrt{2}}{3}$$"
         ],
         "dependencies": [
             "aae56detrig32a-h3"
         ],
         "title": "Substitute values",
-        "text": "Substitute $$\\sina$$, $$\\cosa$$, $$\\sinb$$, $$\\cosb$$ into $$\\sin(a-b)$$ formula.",
+        "text": "Substitute sin(a), cos(a), sin(b), cos(b) into $$sin(a-b)$$ formula.",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$(\\frac{4}{5})(\\frac{1}{3})$$ $$-$$ (\\frac{3}{5})(\\frac{2\\sqrt{2}}{3})$$",
-            "$$(\\frac{4}{5})(\\frac{1}{3})$$ + (\\frac{3}{5})(\\frac{2\\sqrt{2}}{3})$$",
-            "$$(\\frac{3}{5})(\\frac{1}{3})$$ $$-$$ (\\frac{4}{5})(\\frac{2\\sqrt{2}}{3})$$",
-            "$$(\\frac{4}{5})(\\frac{1}{3})$$ $$-$$ (\\frac{3}{5})(\\frac{\\sqrt{2}}{3})$$"
+            "$$\\frac{4}{5} \\frac{1}{3}$$ $$-$$ $$\\frac{3}{5} \\frac{2\\sqrt{2}}{3}$$",
+            "$$\\frac{4}{5} \\frac{1}{3}$$ + $$\\frac{3}{5} \\frac{2\\sqrt{2}}{3}$$",
+            "$$\\frac{3}{5} \\frac{1}{3}$$ $$-$$ $$\\frac{4}{5} \\frac{2\\sqrt{2}}{3}$$",
+            "$$\\frac{4}{5} \\frac{1}{3}$$ $$-$$ $$\\frac{3}{5} \\frac{\\sqrt{2}}{3}$$"
         ]
     },
     {
@@ -119,13 +119,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$\\frac{4$$ $$-$$ 6\\sqrt{2}}{15}$$"
+            "(4 - 6sqrt(2))/(15)"
         ],
         "dependencies": [
             "aae56detrig32a-h3"
         ],
         "title": "Simplify the expression",
-        "text": "Simplify $$\\frac{4}{15$$} $$-$$ \\frac{6\\sqrt{2}}{15}$$.",
+        "text": "Simplify $$\\frac{4}{15}$$ - $$\\frac{6\\sqrt{2}}{15}$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
