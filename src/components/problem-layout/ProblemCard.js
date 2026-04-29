@@ -256,6 +256,7 @@ class ProblemCard extends React.Component {
                 seed
             ),
             questionText: stepBody.trim() || stepTitle.trim(),
+            answerValidator: this.step.answerValidator
         });
 
         const isCorrect = !!correctAnswer;
@@ -472,6 +473,7 @@ class ProblemCard extends React.Component {
             ),
             questionText:
                 this.step.stepBody.trim() || this.step.stepTitle.trim(),
+            answerValidator: this.step.answerValidator
         });
     
         const isCorrect = !!correctAnswer;

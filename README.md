@@ -54,6 +54,18 @@ All content is available in JSON format within the repository. To view the raw s
 * **Calculus Volume 1**: [Link to Spreadsheet](https://docs.google.com/spreadsheets/d/1YPJw-vBkaP54n3L4gd-t0sMKQW0e_Tj0SCp2CiAxyws/edit?gid=1196972050#gid=1196972050)
 * **Pre-Calculus Essentials (UC Berkeley Math 1B)**: [Link to Spreadsheet](https://docs.google.com/spreadsheets/d/1rL-4YOVp5d5xWJqekabRfyhuBS5AjGS1XqTQ--uzHOU/edit?gid=0#gid=0)
 
+Content in the system is now largely authored by subject matter experts utilizing the [PromptHive](https://github.com/mohireza/prompthive/) GenAI tool:
+
+Mohi Reza, Ioannis Anastasopoulos, Shreya Bhandari, and Zachary A. Pardos. 2025. PromptHive: Bringing Subject Matter Experts Back to the Forefront with Collaborative Prompt Engineering for Educational Content Creation. In *Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems* (CHI '25). Association for Computing Machinery, New York, NY, USA, Article 148, 1–22. [https://doi.org/10.1145/3706598.3714051](https://doi.org/10.1145/3706598.3714051)
+```
+@inproceedings{reza2025prompthive,
+  title={PromptHive: Bringing subject matter experts back to the forefront with collaborative prompt engineering for educational content creation},
+  author={Reza, Mohi and Anastasopoulos, Ioannis and Bhandari, Shreya and Pardos, Zachary A},
+  booktitle={Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems},
+  pages={1--22},
+  year={2025}
+}
+```
 ### License/Atribution
 
 All content in this repository is made available under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) license.
@@ -333,6 +345,13 @@ DO_FOCUS_TRACKING = false;
 * `GridInput`: Provides a grid for the student to fill out. Must have `numRows` and `numCols` for the answer size, while the `stepAnswer` must be a list of lists of strings: `"[[\"1\",\"2\"],[\"3\",\"4\"]]"` for a 2x2 grid. Must have `answerType: "string"`.
 * `MatrixInput`: Provides a matrix for the student to fill out. Must have `numRows` and `numCols` for the answer size, while the `stepAnswer` must be a list of lists of strings: `"[[\"1\",\"2\"],[\"3\",\"4\"]]"` for a 2x2 grid. Must have `answerType: "string"`.
 
+### Answer Validation
+
+Due to the numerous different ways an arithmetic expression can be an answer, OATutor performs some additional validation on the student's answer to make sure they are not copying and pasting the problem body into the answer box. However, the backing evaluator does not always identify the question and answer text as unique states from different inputs. For this, steps and scaffolds have an optional `answerValidator` field that can take in one the following values:
+
+* `default`: Checks whether the representation of the problem is not the same as the representation of the student's answer. This is the default behavior in OATutor.
+* `simplified`: Compares whether the question does not contain the student's answer, and that the student's answer is in it's simplest form. This should be used for problems that convert one form of an expression to another equivalent form (e.g., convert the fifth root of x to its exponent representation).
+
 ### Example Directory Structure
 
 ```
@@ -388,7 +407,9 @@ content-sources/
     "stepTitle": "1. Maximum Radius",
     "stepBody": "What is the maximum radius of a circular rug that will fit in the room?",
     "answerType": "numeric",
-    "variabilization": {}
+    "variabilization": {},
+    // Can be either 'default' or 'simplified'
+    "answerValidator": "default"
 }
 ```
 
@@ -413,7 +434,9 @@ content-sources/
         "answerType": "numeric",
         "type": "scaffold",
         "dependencies": [0],
-        "variabilization": {}
+        "variabilization": {},
+        // Can be either 'default' or 'simplified'
+        "answerValidator": "default"
     },
     {
         "id": "circle1a-h3",
