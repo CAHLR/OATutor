@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a76f136limits27a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Compute the Limit Separately from the Value",
+        "text": "The defined value at the point does not control the limit. Simplify the expression for nearby inputs.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a76f136limits27a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x+1$$"
+        ],
+        "dependencies": [
+            "a76f136limits27a-h1"
+        ],
+        "title": "Simplify the Rational Expression",
+        "text": "For $$x\\ne$$ $$1$$, $$\\frac{x**2-1}{x-1}$$ simplifies to what expression?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a76f136limits27a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a76f136limits27a-h2"
+        ],
+        "title": "Use the Simplified Expression",
+        "text": "After simplifying the expression valid for $$x\\ne$$ $$1$$, $$evaluate$$ $$that$$ $$simpler$$ $$form$$ $$near$$ $$x=1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a76f136limits27a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a76f136limits27a-h3"
+        ],
+        "title": "Compare with the Given Value",
+        "text": "What value is assigned to $$h(1)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

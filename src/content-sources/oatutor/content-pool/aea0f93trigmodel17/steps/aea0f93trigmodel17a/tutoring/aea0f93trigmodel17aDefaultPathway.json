@@ -1,0 +1,70 @@
+[
+    {
+        "id": "aea0f93trigmodel17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Nature of Cumulative Data",
+        "text": "Cumulative data, by definition, adds up over time. Think about whether a sinusoidal function, which oscillates, can accurately represent a quantity that only increases (or decreases monotonically).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel17a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The total amount of rainfall collected up to a certain point in time"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel17a-h1"
+        ],
+        "title": "Define Cumulative",
+        "text": "What does 'cumulative' mean in the context of $$rainfall$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "The total amount of rainfall collected up to a certain point in time",
+            "The average rainfall per day",
+            "The maximum rainfall in a single event",
+            "The rate at which rain falls"
+        ]
+    },
+    {
+        "id": "aea0f93trigmodel17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel17a-h1"
+        ],
+        "title": "Sinusoidal Function Behavior",
+        "text": "Recall that sinusoidal functions go up and down, repeating their values. Does cumulative rainfall ever decrease over the course of a year?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel17a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel17a-h2"
+        ],
+        "title": "Analyze Sinusoidal Pattern",
+        "text": "If a function models cumulative $$rainfall$$, should its graph ever go downwards?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No",
+            "Sometimes",
+            "Only if there is a drought"
+        ]
+    }
+]

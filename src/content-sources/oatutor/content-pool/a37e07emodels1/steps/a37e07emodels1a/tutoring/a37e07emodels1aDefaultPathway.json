@@ -1,0 +1,112 @@
+[
+    {
+        "id": "a37e07emodels1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exponential growth",
+        "text": "When an amount grows at a fixed percent per unit time, the growth is exponential.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a37e07emodels1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a37e07emodels1a-h1"
+        ],
+        "title": "Exponential function form",
+        "text": "The form of an exponential function is $$y=A_0 e^{kt}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a37e07emodels1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a37e07emodels1a-h2"
+        ],
+        "title": "Finding $$A_0$$",
+        "text": "To find the intercept $$A_0$$, we use the fact that $$A_0$$ is the amount at time zero.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a37e07emodels1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "a37e07emodels1a-h3"
+        ],
+        "title": "Finding $$A_0$$",
+        "text": "What is $$A_0$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a37e07emodels1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a37e07emodels1a-h4"
+        ],
+        "title": "Finding k",
+        "text": "To find k, use the fact that after one hour $$(t=1)$$ the population doubles from $$10$$ to $$20$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a37e07emodels1a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a37e07emodels1a-h5"
+        ],
+        "title": "Finding k",
+        "text": "After plugging into the equation, it should look like $$20=10e^{1k}$$. Now you just have to solve for k.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a37e07emodels1a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "ln2"
+        ],
+        "dependencies": [
+            "a37e07emodels1a-h6"
+        ],
+        "title": "Finding k",
+        "text": "What do you get when solving for k?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "ln5",
+            "ln7",
+            "ln2",
+            "$$6$$"
+        ]
+    },
+    {
+        "id": "a37e07emodels1a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a37e07emodels1a-h7"
+        ],
+        "title": "Final equation",
+        "text": "Now, plug in the values of $$A_0$$ and k into the equation. Remember that $$e^{ln1}$$ simplifies to $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

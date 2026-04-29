@@ -1,0 +1,48 @@
+[
+    {
+        "id": "aa27eearational8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the LCD of the Fractions",
+        "text": "LCD of $$\\frac{2}{x+1}$$, $$\\frac{1}{x-1}$$, and $$\\frac{1}{x^2-1}$$ is $$\\left(x+1\\right) \\left(x-1\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa27eearational8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aa27eearational8a-h1"
+        ],
+        "title": "Clear All Fractions",
+        "text": "We must multiply each fraction by the LCD. We get $$2\\left(x-1\\right)+x+1=1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa27eearational8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aa27eearational8a-h2"
+        ],
+        "title": "Simplify the Equation",
+        "text": "Let's simplify this equation: $$2x-2+x+1=1$$ simplifies to $$3x=2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa27eearational8a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aa27eearational8a-h3"
+        ],
+        "title": "Solve the Equation",
+        "text": "$$3x=2$$ can be solved as $$x=\\frac{2}{3}$$. This solution is not extraneous.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

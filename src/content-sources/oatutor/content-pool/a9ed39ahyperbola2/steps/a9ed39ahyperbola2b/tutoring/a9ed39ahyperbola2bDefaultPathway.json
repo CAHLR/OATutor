@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a9ed39ahyperbola2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Standard Form of Hyperbola with Center $$(0,0)$$",
+        "text": "The standard form of the equation of a hyperbola with center $$(0,0)$$ and transverse axis on the x-axis is\\n$$\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1$$\\nwhere\\nthe length of the transverse axis is 2a\\nthe coordinates of the vertices are $$(a,0),(-a,0)$$\\nthe length of the conjugate axis is $$2b$$\\nthe coordinates of the co-vertices are (0,b),(0,b)\\nthe distance between the foci is 2c, where $$c^2=a^2+b^2$$\\nthe coordinates of the foci are $$(c,0),(-c,0)$$\\nthe equations of the asymptotes are $$y=\\frac{b}{a} x$$, $$y=-\\left(\\frac{b}{a}\\right) x$$\\n(See the left image)\\n\\nThe standard form of the equation of a hyperbola with center $$(0,0)$$ and transverse axis on the y-axis is\\n$$\\frac{y^2}{a^2}-\\frac{x^2}{b^2}=1$$\\nwhere\\nthe length of the transverse axis is 2a\\nthe coordinates of the vertices are $$(0,a),(0,-a)$$\\nthe length of the conjugate axis is $$2b$$\\nthe coordinates of the co-vertices are $$(b,0),(-b,0)$$\\nthe distance between the foci is 2c, where $$c^2=a^2+b^2$$\\nthe coordinates of the foci are $$(0,c),(0,-c)$$\\nthe equations of the asymptotes are y=(a/b)*x,y=-(a/b)*x\\n(See the right image)\\n##figure2.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9ed39ahyperbola2b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x$$"
+        ],
+        "dependencies": [
+            "a9ed39ahyperbola2b-h1"
+        ],
+        "title": "Transverse Axis",
+        "text": "Which axis is transverse axis on?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$x$$",
+            "$$y$$"
+        ]
+    },
+    {
+        "id": "a9ed39ahyperbola2b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sqrt{34}$$"
+        ],
+        "dependencies": [
+            "a9ed39ahyperbola2b-h2"
+        ],
+        "title": "Finding the Foci",
+        "text": "From the standard equation $$\\frac{y^2}{a^2}-\\frac{x^2}{b^2}=1$$, the foci are c units away from the center of the hyperbola where $$c^2=a^2+b^2$$.\\nTo calculate c, we identify that in the given hyperbola, $$a=\\sqrt{9}$$ and $$b=\\sqrt{25}$$, thus $$c=\\sqrt{a^2+b^2}$$. What is c?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9ed39ahyperbola2b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(sqrt(34),0),(-sqrt(34),0)"
+        ],
+        "dependencies": [
+            "a9ed39ahyperbola2b-h3"
+        ],
+        "title": "Finding the Foci",
+        "text": "We add and subtract $$\\sqrt{34}$$ units to the center of the hyperbola along the transverse axis to find the two vertices. Given the center is $$(0,0)$$. What are the foci?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "(sqrt(34),0),(-sqrt(34),0)",
+            "(0,sqrt(34)),(0,-sqrt(34))"
+        ]
+    }
+]

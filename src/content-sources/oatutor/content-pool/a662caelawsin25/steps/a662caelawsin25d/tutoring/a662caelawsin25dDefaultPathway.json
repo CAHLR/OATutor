@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a662caelawsin25d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Ambiguous case for SSA",
+        "text": "If $$\\sin$$ $$\u03b2$$ is positive, there are two possible angles for $$\\beta$$: $$an$$ $$acute$$ $$angle$$ $$and$$ $$an$$ $$obtuse$$ $$angle$$ ($$180**{\\circ} $$-$$ $$\\text{acute$$ $$angle}\\$\\$)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin25d-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "153.2**{\\circ}"
+        ],
+        "dependencies": [
+            "a662caelawsin25d-h1"
+        ],
+        "title": "Obtuse angle calculation",
+        "text": "Given the acute angle $$\\beta_1$$ $$=$$ 26.8**{\\circ}$$, $$what$$ $$is$$ $$the$$ $$obtuse$$ $$angle$$ $$\\beta_2$$? $$Round$$ $$to$$ $$the$$ $$nearest$$ $$tenth$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin25d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin25d-h1"
+        ],
+        "title": "Checking validity",
+        "text": "Ensure that $$\u03b3$$ + $$\\beta_2$$ < 180**{\\circ}$$ for the second triangle to be valid.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a8b65afdynamics14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply Newton's Second Law",
+        "text": "Use Newton's Second Law $$(F=ma)$$ to find the net force required to accelerate the train. Here, F $$=$$ (m_engine*2 + m_car*45)*a + friction.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8b65afdynamics14a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$881750$$"
+        ],
+        "dependencies": [
+            "a8b65afdynamics14a-h1"
+        ],
+        "title": "Calculate Net Force",
+        "text": "What is (8.00*10**4*2 + 5.50*10**4*45)*5.00*10**(-2) + $$7.5\\times{10}^5$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8b65afdynamics14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8b65afdynamics14a-h2"
+        ],
+        "title": "Calculate Force of Each Engine",
+        "text": "Given that the two engines exert identical force, how much force should each engine exert?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8b65afdynamics14a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4.41\\times{10}^5$$"
+        ],
+        "dependencies": [
+            "a8b65afdynamics14a-h3"
+        ],
+        "title": "Calculate Force of Each Engine",
+        "text": "What is $$\\frac{881750}{2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

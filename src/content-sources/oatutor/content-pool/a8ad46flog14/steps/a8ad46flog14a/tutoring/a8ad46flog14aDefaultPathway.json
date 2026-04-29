@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a8ad46flog14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Isolate the Exponential Term",
+        "text": "Divide by $$2$$ both sides and get $$e^{x-2}=9$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ad46flog14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8ad46flog14a-h1"
+        ],
+        "title": "Bring Down the Exponential",
+        "text": "Take the logarithm of both sides.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ad46flog14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8ad46flog14a-h2"
+        ],
+        "title": "Take Natural log Both Sides",
+        "text": "Definition of Natural log: $$ln(a)=\\log_{e}\\left(a\\right)$$\\n$$\\ln\\left(a^b\\right)=b \\ln\\left(a\\right)$$\\n$$ln(e)=1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ad46flog14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8ad46flog14a-h3"
+        ],
+        "title": "Use the log Rule",
+        "text": "$$\\ln\\left(e^{x-2}\\right)=\\left(x-2\\right) \\ln\\left(e\\right)=ln(9)$$\\n$$x-2=ln(9)$$, $$x=2+\\ln\\left(9\\right)$$ $$x$$ approximately equals $$4.197$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

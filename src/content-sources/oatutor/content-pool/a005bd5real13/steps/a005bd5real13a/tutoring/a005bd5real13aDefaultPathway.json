@@ -1,0 +1,132 @@
+[
+    {
+        "id": "a005bd5real13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Define Composition of Functions",
+        "text": "$$(g\u2218f)(x)=g(f(x))$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a005bd5real13a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Let $$x=f(x)$$: $$g(f(x))=\\sqrt{x^2+2-2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real13a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The twos cancel out: $$x^2+2-2=x^2$$ and $$\\sqrt{x^2}$$ $$=$$ $$x$$."
+        ],
+        "dependencies": [
+            "a005bd5real13a-h2"
+        ],
+        "title": "Simplify",
+        "text": "What can we cancel out in $$g(f(x))=\\sqrt{x^2+2-2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "The twos cancel out: $$x^2+2-2=x^2$$ and $$\\sqrt{x^2}$$ $$=$$ $$x$$.",
+            "You can reduce an $$x$$",
+            "Nothing"
+        ]
+    },
+    {
+        "id": "a005bd5real13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a005bd5real13a-h3"
+        ],
+        "title": "Substitute",
+        "text": "We found that $$(g\u2218f)(x)=x$$, so $$(g\u2218f)(6)=6$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real13a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a005bd5real13a-h4"
+        ],
+        "title": "Composition of Functions",
+        "text": "Find (f\u2218g)(6).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real13a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a005bd5real13a-h5"
+        ],
+        "title": "Define Composition of Functions",
+        "text": "$$(f\u2218g)(x)=f(g(x))$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real13a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a005bd5real13a-h6"
+        ],
+        "title": "Substitute",
+        "text": "Let $$x=g(x)$$: $$f(g(x))={\\sqrt{x-2}}^2+2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real13a-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\sqrt{x-2}=x-2$$ and $$x-2+2=x$$"
+        ],
+        "dependencies": [
+            "a005bd5real13a-h7"
+        ],
+        "title": "Simplify",
+        "text": "What can we cancel out in $$f(g(x))={\\sqrt{x-2}}^2+2$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\sqrt{x-2}=x+2$$ and $$x+2+2=x+4$$",
+            "$$\\sqrt{x-2}=x-2$$ and $$x-2+2=x$$"
+        ]
+    },
+    {
+        "id": "a005bd5real13a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "a005bd5real13a-h8"
+        ],
+        "title": "Substitute",
+        "text": "We found that $$(f\u2218g)(x)=x$$, so $$(f\u2218g)(6)=6$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

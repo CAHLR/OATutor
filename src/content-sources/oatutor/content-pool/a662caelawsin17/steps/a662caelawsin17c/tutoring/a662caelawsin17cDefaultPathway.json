@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a662caelawsin17c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply the Law of Sines",
+        "text": "Use the Law of Sines: $$\\frac{a}{\\sin$$ $$A$$} $$=$$ $$\\frac{b}{\\sin$$ $$B}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin17c-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{a}{\\sin$$ $$A$$} $$=$$ $$\\frac{b}{\\sin$$ $$B}$$"
+        ],
+        "dependencies": [
+            "a662caelawsin17c-h1"
+        ],
+        "title": "Set up the proportion for $$a$$",
+        "text": "Which ratio involving $$a$$ can you use with the known values?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{a}{\\sin$$ $$A$$} $$=$$ $$\\frac{b}{\\sin$$ $$B}$$",
+            "$$\\frac{a}{\\sin$$ $$B$$} $$=$$ $$\\frac{b}{\\sin$$ $$A}$$",
+            "$$\\frac{a}{A$$} $$=$$ $$\\frac{b}{B}$$",
+            "$$\\frac{a}{\\sin$$ $$C$$} $$=$$ $$\\frac{b}{\\sin$$ $$B}$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin17c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin17c-h1"
+        ],
+        "title": "Substitute known values",
+        "text": "Substitute $A=122**{\\circ},$$ B=37**{\\circ},$$ $$b=23\\$$$ into the proportion.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin17c-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{a}{\\sin$$ 122**\\circ} $$=$$ $$\\frac{23}{\\sin$$ 37**\\circ}$$"
+        ],
+        "dependencies": [
+            "a662caelawsin17c-h2"
+        ],
+        "title": "What is the equation after substitution?",
+        "text": "What is the equation after substituting the known values?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{a}{\\sin$$ 122**\\circ} $$=$$ $$\\frac{23}{\\sin$$ 37**\\circ}$$",
+            "$$\\frac{a}{\\sin$$ 37**\\circ} $$=$$ $$\\frac{23}{\\sin$$ 122**\\circ}$$",
+            "$$\\frac{a}{122**\\circ} $$=$$ \\frac{23}{37**\\circ}$$",
+            "$$\\frac{a}{\\sin$$ 122**\\circ} $$=$$ $$\\frac{23}{\\sin$$ 21**\\circ}$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin17c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin17c-h2"
+        ],
+        "title": "Solve for $$a$$",
+        "text": "Isolate $$a$$ and calculate its value, rounding to the nearest tenth.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin17c-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\$32.1\\$$$"
+        ],
+        "dependencies": [
+            "a662caelawsin17c-h3"
+        ],
+        "title": "Calculate $$a$$",
+        "text": "What is the value of $$a$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

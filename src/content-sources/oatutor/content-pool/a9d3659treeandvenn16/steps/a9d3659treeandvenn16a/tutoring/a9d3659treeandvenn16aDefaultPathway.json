@@ -1,0 +1,129 @@
+[
+    {
+        "id": "a9d3659treeandvenn16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "How to Use Tree Diagrams",
+        "text": "When looking at a tree diagram, it consists of \"branches\", sometimes labeled with frequencies (whole numbers) or probabilities (fractions). Each branch of the tree represents a \"choice\" of sorts and each level represents the completion of a choice, and at the bottom of the tree--the leaf--houses the final outcomes. To get to the final outcome, you want to multiply all the probabilities going down the tree from the top to the end of the leaf.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9d3659treeandvenn16a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{4}{7}$$"
+        ],
+        "dependencies": [
+            "a9d3659treeandvenn16a-h1"
+        ],
+        "title": "Using the Tree Diagram",
+        "text": "We want to calculate the probability of choosing one ball of each color, meaning P(RY OR YR). Let's start with P(RY). This mean we need to pick a red ball first. What is P(R)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9d3659treeandvenn16a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{6}$$"
+        ],
+        "dependencies": [
+            "a9d3659treeandvenn16a-h2"
+        ],
+        "title": "Using the Tree Diagram",
+        "text": "We want to calculate P(RY) first. That means the second ball is yellow. What is P(Y|R), remembering this is WITHOUT replacement?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9d3659treeandvenn16a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{12}{42}$$"
+        ],
+        "dependencies": [
+            "a9d3659treeandvenn16a-h3"
+        ],
+        "title": "Calculating Probability",
+        "text": "Now, multiply the two probabilities, $$P\\left(R\\right) P\\left(Y|R\\right)=P(RY)$$. What is the answer?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9d3659treeandvenn16a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{7}$$"
+        ],
+        "dependencies": [
+            "a9d3659treeandvenn16a-h4"
+        ],
+        "title": "Using the Tree Diagram",
+        "text": "We want to calculate P(YR) second. That means the first ball is Y. What is P(Y)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9d3659treeandvenn16a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{4}{6}$$"
+        ],
+        "dependencies": [
+            "a9d3659treeandvenn16a-h5"
+        ],
+        "title": "Using the Tree Diagram",
+        "text": "We want to calculate P(YR) second. That means the second ball is red. What is P(R|Y), remembering this is WITHOUT replacement?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9d3659treeandvenn16a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{12}{42}$$"
+        ],
+        "dependencies": [
+            "a9d3659treeandvenn16a-h6"
+        ],
+        "title": "Calculating Probability",
+        "text": "Now, multiply the two probabilities, $$P\\left(Y\\right) P\\left(R|Y\\right)=P(YR)$$. What is the answer?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9d3659treeandvenn16a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{24}{42}$$"
+        ],
+        "dependencies": [],
+        "title": "Summing the Probabilities",
+        "text": "Since we want to find P(RY OR YR), we use the operator, which means we add up the two probabilities. What is P(RY OR $$YR)=P\\left(RY\\right)+P\\left(YR\\right)=P(one$$ ball of each color is chosen)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

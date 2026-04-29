@@ -1,0 +1,92 @@
+[
+    {
+        "id": "a9ef311slicing2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sketch the Graph",
+        "text": "Using the problem-solving strategy, we first sketch the graph of the quadratic function over the interval [1,4], as shown in the following figure.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a9ef311slicing2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9ef311slicing2a-h1"
+        ],
+        "title": "Revolve the Region About the x-axis",
+        "text": "Next, revolve the region around the x-axis, as shown in the following figure.\\n##figure2.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a9ef311slicing2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9ef311slicing2a-h2"
+        ],
+        "title": "Formula for Area of the Circle",
+        "text": "Since the solid was formed by revolving the region around the x-axis, the cross-sections are circles. The area of the cross-section, then, is the area of a circle, and the radius of the circle is given by f(x). Use the formula for the area of the circle: $$A(x)=\\pi r^2=\\pi {f{\\left(x\\right)}}^2=\\pi \\left(x^2-4x+5\\right)^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a9ef311slicing2a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$V=\\int_{1}^{4} {\\operatorname{\\pi}\\left(x^2-4x+5\\right)}^2 \\,dx$$"
+        ],
+        "dependencies": [
+            "a9ef311slicing2a-h3"
+        ],
+        "title": "Set Up the Integral",
+        "text": "Select the appropriate integral for finding the volume of the solid.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$V=\\int_{1}^{4} {\\operatorname{\\pi}\\left(x^2-4x+5\\right)}^2 \\,dx$$",
+            "$$V=\\int_{4}^{1} {\\operatorname{\\pi}\\left(x^2-4x+5\\right)}^2 \\,dx$$",
+            "$$V=\\int_{0}^{4} {\\operatorname{\\pi}\\left(x^2-4x+5\\right)}^2 \\,dx$$",
+            "$$V=\\int_{0}^{1} {\\operatorname{\\pi}\\left(x^2-4x+5\\right)}^2 \\,dx$$"
+        ]
+    },
+    {
+        "id": "a9ef311slicing2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a9ef311slicing2a-h4"
+        ],
+        "title": "Integrate the Formula",
+        "text": "Find the volume of the solid using the slicing method.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a9ef311slicing2a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{78\\pi}{5}$$"
+        ],
+        "dependencies": [
+            "a9ef311slicing2a-h5"
+        ],
+        "title": "Integrate the Formula",
+        "text": "What is the volume of the solid?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\frac{78\\pi}{5}$$",
+            "$$\\frac{78\\times5}{\\pi}$$"
+        ]
+    }
+]

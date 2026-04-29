@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a662caelawsin34a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Altitutde Dropping",
+        "text": "Draw an altitude from one vertex to a side. Note that in an equilateral triangle, an altitude is also a median and an angle bisector.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin34a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$26$$"
+        ],
+        "dependencies": [
+            "a662caelawsin34a-h1"
+        ],
+        "title": "Altitude Length",
+        "text": "Using the Law of Sines or the Pythagorean Theorem, find the length of the altitude to the nearest tenth.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$10$$",
+            "$$15$$",
+            "$$30$$",
+            "$$60$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin34a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin34a-h1",
+            "a662caelawsin34a-s1"
+        ],
+        "title": "Formula for Area of Triangle",
+        "text": "The area of a triangle is $$\\frac{1}{2$$} $$bh$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

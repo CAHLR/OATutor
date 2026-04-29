@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a88b451a394625deriv23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Bryta ner fr\u00e5gan",
+        "text": "G\u00f6r den f\u00f6rsta derivatan och derivera sedan den tv\u00e5 g\u00e5nger till.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a88b451a394625deriv23a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-3\\sin\\left(x\\right)$$\\n"
+        ],
+        "dependencies": [
+            "a88b451a394625deriv23a-h1"
+        ],
+        "title": "Deluppgift",
+        "text": "Vad \u00e4r f\u00f6rstaderivatan?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a88b451a394625deriv23a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-3\\cos\\left(x\\right)$$\\n"
+        ],
+        "dependencies": [
+            "a88b451a394625deriv23a-h2"
+        ],
+        "title": "Deluppgift",
+        "text": "Vad \u00e4r derivatan av f\u00f6rsta derivatan",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a88b451a394625deriv23a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3\\sin\\left(x\\right)$$"
+        ],
+        "dependencies": [
+            "a88b451a394625deriv23a-h3"
+        ],
+        "title": "Deluppgift",
+        "text": "Vad \u00e4r derivatan av andraderivatan?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a88b451a394625deriv23a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a88b451a394625deriv23a-h4"
+        ],
+        "title": "Derivatan av $$(n-1)th$$ derivatan \u00e4r den n:te derivatan",
+        "text": "Dra din slutsats fr\u00e5n del-fr\u00e5gor",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

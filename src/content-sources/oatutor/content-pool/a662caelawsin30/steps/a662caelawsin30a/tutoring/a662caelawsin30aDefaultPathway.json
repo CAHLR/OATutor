@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a662caelawsin30a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Applying the Law of Sines",
+        "text": "Recall the Law of Sines: $$\\frac{a}{\\sin$$ $$A$$} $$=$$ $$\\frac{b}{\\sin$$ $$B$$} $$=$$ $$\\frac{c}{\\sin$$ $$C}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin30a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A=12**{\\circ},$$ $$a=2$$, $$b=9$$"
+        ],
+        "dependencies": [
+            "a662caelawsin30a-h1"
+        ],
+        "title": "Identify known values",
+        "text": "What are the known values for $$A$$, $$a$$, $$\\text{and$$ $$$$} $$b$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$A=12**{\\circ},$$ $$a=2$$, $$b=9$$",
+            "$$A=2**{\\circ},$$ $$a=12$$, $$b=9$$",
+            "$$A=12$$, $$a=2$$, b=9**{\\circ}$$",
+            "$$A=12**{\\circ},$$ $$a=9$$, $$b=2$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin30a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin30a-h1"
+        ],
+        "title": "Setting up the equation",
+        "text": "Substitute the given values into the Law of Sines to find $$\\sin$$ $$B$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin30a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.9356$$"
+        ],
+        "dependencies": [
+            "a662caelawsin30a-h2"
+        ],
+        "title": "Calculate $$\\sin$$ $$B$$",
+        "text": "Using the Law of Sines, what is the value of $$\\sin$$ $$B$$? $$Round$$ $$to$$ $$four$$ $$decimal$$ $$places$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin30a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin30a-h2"
+        ],
+        "title": "Solving for B",
+        "text": "Use the inverse sine function to find the angle $$B$$. $$Remember$$ $$to$$ $$consider$$ $$the$$ $$ambiguous$$ $$case$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin30a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "69.3**{\\circ}"
+        ],
+        "dependencies": [
+            "a662caelawsin30a-h3"
+        ],
+        "title": "Calculate B",
+        "text": "What is the acute angle $$B$$ (in degrees), rounded to the nearest tenth?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

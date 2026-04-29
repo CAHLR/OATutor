@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a251a50MultiplyPoly14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Principle",
+        "text": "Consider $$\\left(2x+5\\right) \\left(2x-5\\right)$$ as $$\\left(a+b\\right) \\left(a-b\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a251a50MultiplyPoly14a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4x^2$$"
+        ],
+        "dependencies": [
+            "a251a50MultiplyPoly14a-h1"
+        ],
+        "title": "Multiplication",
+        "text": "What is $$a^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a251a50MultiplyPoly14a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$25$$"
+        ],
+        "dependencies": [
+            "a251a50MultiplyPoly14a-h2"
+        ],
+        "title": "Multiplication",
+        "text": "What is $$b^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a251a50MultiplyPoly14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a251a50MultiplyPoly14a-h3"
+        ],
+        "title": "Principle",
+        "text": "Organize the term to $$a^2-b^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

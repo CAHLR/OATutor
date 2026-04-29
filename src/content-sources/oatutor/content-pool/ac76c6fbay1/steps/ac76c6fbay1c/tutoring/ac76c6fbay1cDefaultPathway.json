@@ -1,0 +1,34 @@
+[
+    {
+        "id": "ac76c6fbay1c-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "complement"
+        ],
+        "dependencies": [],
+        "title": "Hint",
+        "text": "If Thomas's randomly chosen fish is not a Salmon, it is a Tuna. What rule does this suggest we use to calculate the probability?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "division",
+            "complement",
+            "chain"
+        ]
+    },
+    {
+        "id": "ac76c6fbay1c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac76c6fbay1c-h1"
+        ],
+        "title": "Hint",
+        "text": "We can set up the probability as $$1$$ - P[Salmon]",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a662caelawsin24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Applying the Law of Sines",
+        "text": "Recall the Law of Sines: $$\\frac{\\sin$$ $$\\alpha}{a$$} $$=$$ $$\\frac{\\sin$$ $$\u03b2}{b$$} $$=$$ $$\\frac{\\sin$$ $$\u03b3}{c}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin24a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\sin$$ $$\\alpha}{a$$} $$=$$ $$\\frac{\\sin$$ $$\u03b2}{b}$$"
+        ],
+        "dependencies": [
+            "a662caelawsin24a-h1"
+        ],
+        "title": "Law of Sines setup",
+        "text": "Which ratio should you use to find $$\\sin$$ $$\\alpha$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\sin$$ $$\\alpha}{a$$} $$=$$ $$\\frac{\\sin$$ $$\u03b2}{b}$$",
+            "$$\\frac{\\sin$$ $$\\alpha}{b$$} $$=$$ $$\\frac{\\sin$$ $$\u03b2}{a}$$",
+            "$$\\frac{a}{\\sin$$ $$\\alpha$$} $$=$$ $$\\frac{\\sin$$ $$\u03b2}{b}$$",
+            "$$\\frac{\\sin$$ $$\\alpha}{a$$} $$=$$ $$\\frac{\\cos$$ $$\u03b2}{b}$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin24a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin24a-h1"
+        ],
+        "title": "Setting up the equation",
+        "text": "Substitute the known values into the Law of Sines to find $$\\sin$$ $$\\alpha$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin24a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.9489$$"
+        ],
+        "dependencies": [
+            "a662caelawsin24a-h2"
+        ],
+        "title": "Calculate $$\\sin$$ $$\\alpha$$",
+        "text": "What is the value of $$\\sin$$ $$\\alpha$$? $$Round$$ $$to$$ $$four$$ $$decimal$$ $$places$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin24a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin24a-h2"
+        ],
+        "title": "Considering the ambiguous case",
+        "text": "Remember that for SSA, there might be two possible angles for $$\\alpha$$. $$Calculate$$ $$both$$ $$the$$ $$acute$$ $$and$$ $$obtuse$$ $$angles$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin24a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "71.6**{\\circ}"
+        ],
+        "dependencies": [
+            "a662caelawsin24a-h3"
+        ],
+        "title": "First possible angle",
+        "text": "What is the acute angle $$\\alpha_1$$ (in degrees) that satisfies this $$\\sin$$ $$\\alpha$$ value? Round to the nearest tenth.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

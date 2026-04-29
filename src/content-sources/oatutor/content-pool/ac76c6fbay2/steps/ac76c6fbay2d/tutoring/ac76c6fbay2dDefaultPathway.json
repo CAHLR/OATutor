@@ -1,0 +1,58 @@
+[
+    {
+        "id": "ac76c6fbay2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Hint",
+        "text": "Like above, we compute this with Bayes, except that we now have an updated prior. The prior is P[Jesse is the thief] $$=$$ $$0.25$$ and we want to compute P[Jesse is the thief | Jesse has a key card].",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac76c6fbay2d-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac76c6fbay2d-h1"
+        ],
+        "title": "Hint",
+        "text": "(P[Jesse has a key card | Jesse is the thief] * P[Jesse is the thief])/P[Jesse has a key card]",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac76c6fbay2d-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.25$$"
+        ],
+        "dependencies": [
+            "ac76c6fbay2d-h2"
+        ],
+        "title": "Hint",
+        "text": "What is our numberator",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac76c6fbay2d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.25$$ * $$1$$ + $$0.75$$ * $$\\frac{9}{99}$$"
+        ],
+        "dependencies": [
+            "ac76c6fbay2d-h3"
+        ],
+        "title": "Hint",
+        "text": "What is our denominator",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

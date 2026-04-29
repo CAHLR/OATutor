@@ -1,0 +1,65 @@
+[
+    {
+        "id": "adfa1cbterminology2d-h7",
+        "type": "hint",
+        "dependencies": [
+            "adfa1cbterminology2c-h6"
+        ],
+        "title": "Definition of Probability",
+        "text": "The probability of any outcome in the sample space occuring is the long-term relative frequency of that oucome. Effectively, to find the probability of an event, P(event), we need to find the size of that event (how many outcomes are in it) and divide that by the size of the sample space (how many outcomes are in it).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "adfa1cbterminology2d-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "adfa1cbterminology2d-h7"
+        ],
+        "title": "Size of A",
+        "text": "What is the size of A? Effectively, how many ordered pairs are in the event A?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "adfa1cbterminology2d-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12$$"
+        ],
+        "dependencies": [
+            "adfa1cbterminology2d-h8"
+        ],
+        "title": "Size of Sample Space",
+        "text": "What is the size of the sample space? Effectively, how many total ordered pairs were there?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "adfa1cbterminology2d-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{6}{12}$$"
+        ],
+        "dependencies": [
+            "adfa1cbterminology2d-h9"
+        ],
+        "title": "Determining P(A)",
+        "text": "What is P(A), or what is the size of A divided by the size of the sample size?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,56 @@
+[
+    {
+        "id": "aea0f93trigmodel8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Frequency formula",
+        "text": "Frequency $$f$$ $$=$$ $$\\frac{1}{T}$$ or $$f$$ $$=$$ $$\\frac{|B|}{2\\pi}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel8b-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2\\pi}{3}$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel8b-h1"
+        ],
+        "title": "Recall the period",
+        "text": "What is the period $$T$$ of $$y=5\\sin(3t)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Vertical shift formula",
+        "text": "For $$y$$ $$=$$ $$A\\sin(Bt-C)$$ + $$D$$, $$the$$ $$vertical$$ $$shift$$ $$is$$ $$D$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel8b-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel8b-h1"
+        ],
+        "title": "Identify D",
+        "text": "What is $$D$$ in $$y=5\\sin(3t)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

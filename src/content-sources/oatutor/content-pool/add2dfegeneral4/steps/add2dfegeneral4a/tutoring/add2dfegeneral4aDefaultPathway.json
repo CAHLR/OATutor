@@ -1,0 +1,91 @@
+[
+    {
+        "id": "add2dfegeneral4a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [],
+        "title": "Is there a greatest common factor?",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "add2dfegeneral4a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Trionomial"
+        ],
+        "dependencies": [
+            "add2dfegeneral4a-h1"
+        ],
+        "title": "Is the polynomial a binomial, trinomial, or are there more than three terms?",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Binomial",
+            "Trinomial",
+            "Other"
+        ]
+    },
+    {
+        "id": "add2dfegeneral4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "add2dfegeneral4a-h2"
+        ],
+        "title": "Trinomial",
+        "text": "Since it's a trinomial, check to see whether the expression is in the form of $$x^2+bx+x$$ or $${ax}^2+bx+c$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "add2dfegeneral4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "add2dfegeneral4a-h3"
+        ],
+        "title": "$${ax}^2+bx+c$$",
+        "text": "Since a and c are squares, check if it fits the trinomial square pattern",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "add2dfegeneral4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "add2dfegeneral4a-h4"
+        ],
+        "title": "Trinomial square pattern",
+        "text": "The expression fits the square pattern $$\\left(a-b\\right)^2=a^2-2ab+b^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "add2dfegeneral4a-h6",
+        "type": "hint",
+        "dependencies": [
+            "add2dfegeneral4a-h5"
+        ],
+        "title": "Check",
+        "text": "Is it factored completely? Do the factors multiply back to the original polynomial?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

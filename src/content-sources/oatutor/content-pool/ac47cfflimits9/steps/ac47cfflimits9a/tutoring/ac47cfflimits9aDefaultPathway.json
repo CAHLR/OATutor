@@ -1,0 +1,39 @@
+[
+    {
+        "id": "ac47cfflimits9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Check for Indeterminate Form",
+        "text": "Direct substitution gives $$\\frac{0}{0}$$, $$so$$ $$simplify$$ $$before$$ $$evaluating$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac47cfflimits9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac47cfflimits9a-h1"
+        ],
+        "title": "Factor the Numerator",
+        "text": "Rewrite $$x^2+3x-4$$ as a product of two binomials.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac47cfflimits9a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x+4$$"
+        ],
+        "dependencies": [],
+        "title": "Simplify the Quotient",
+        "text": "After factoring, cancel the common factor and state the simpler expression.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

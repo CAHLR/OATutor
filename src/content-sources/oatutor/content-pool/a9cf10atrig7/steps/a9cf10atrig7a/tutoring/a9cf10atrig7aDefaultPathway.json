@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a9cf10atrig7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identity",
+        "text": "$$sin(-(\\theta))=-sin(\\theta)$$, $$cos(-(\\theta))=cos(\\theta)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig7a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Substitute identities into $$\\frac{\\sin(-\\theta)**2-\\cos(-\\theta)**2}{\\sin(-\\theta)-\\cos(-\\theta)}.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig7a-h2"
+        ],
+        "title": "Simplify",
+        "text": "$$\\frac{(-\\sin(\\theta))**2-\\cos(\\theta)**2}{-\\sin(\\theta)-\\cos(\\theta)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig7a-h3"
+        ],
+        "title": "Factor",
+        "text": "$$sin^2\\left(\\theta\\right)-cos^2\\left(\\theta\\right)=\\left(sin\\left(\\theta\\right)-cos\\left(\\theta\\right)\\right) \\left(sin\\left(\\theta\\right)+cos\\left(\\theta\\right)\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig7a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig7a-h4"
+        ],
+        "title": "Simplify",
+        "text": "$$\\frac{\\left(sin\\left(\\theta\\right)-cos\\left(\\theta\\right)\\right) \\left(sin\\left(\\theta\\right)+cos\\left(\\theta\\right)\\right)}{-\\left(sin\\left(\\theta\\right)+cos\\left(\\theta\\right)\\right)}=-(sin(\\theta)-cos(\\theta))=cos(\\theta)-sin(\\theta)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

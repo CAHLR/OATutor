@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a39b8a0def20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Limit Definition of the Derivative",
+        "text": "The limit defintion of a derivative is $$\\lim_{h\\to0} \\frac{f{\\left(x+h\\right)}-f{\\left(x\\right)}}{h}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a39b8a0def20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a39b8a0def20a-h1"
+        ],
+        "title": "Plugging In",
+        "text": "Plug in $$h=0$$ into the previous equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a39b8a0def20a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Infinity"
+        ],
+        "dependencies": [
+            "a39b8a0def20a-h2"
+        ],
+        "title": "Resulting Limit",
+        "text": "What is the value of this limit?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Negative Infinity",
+            "$$-1$$",
+            "$$0$$",
+            "Infinity"
+        ]
+    },
+    {
+        "id": "a39b8a0def20a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a39b8a0def20a-h2"
+        ],
+        "title": "Undefined Limits",
+        "text": "Limits are undefined when they do not approach a finite value or when both sides do not approach the same value.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

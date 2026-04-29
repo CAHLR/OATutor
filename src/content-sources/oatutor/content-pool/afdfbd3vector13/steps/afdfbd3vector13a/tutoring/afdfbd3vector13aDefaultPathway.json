@@ -1,0 +1,90 @@
+[
+    {
+        "id": "afdfbd3vector13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definiton",
+        "text": "A unit vector is the components of v divided by the magnitude of v.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afdfbd3vector13a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "|v|=\u221a(a**2+b**2)"
+        ],
+        "dependencies": [
+            "afdfbd3vector13a-h1"
+        ],
+        "title": "Find Magnitude",
+        "text": "How do we find the magnitude of a vector?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "v",
+            "=\u221a(a**2+b**2)",
+            "",
+            "v",
+            "$$=a+b$$",
+            "",
+            "v",
+            "=\u221a(a+b)",
+            "",
+            "v",
+            "$$=a^2+b^2$$"
+        ]
+    },
+    {
+        "id": "afdfbd3vector13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afdfbd3vector13a-s1"
+        ],
+        "title": "Substitute",
+        "text": "|a|=\u221a(3**2+4**2)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afdfbd3vector13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afdfbd3vector13a-h2"
+        ],
+        "title": "Simplify",
+        "text": "\u221a(3**2+4**2)=\u221a(9+16)=\u221a25=5",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afdfbd3vector13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afdfbd3vector13a-h3"
+        ],
+        "title": "Divide",
+        "text": "Now divide each component of a by |a|.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afdfbd3vector13a-h5",
+        "type": "hint",
+        "dependencies": [
+            "afdfbd3vector13a-h4"
+        ],
+        "title": "Simplify",
+        "text": "$$\\frac{3i}{5}+\\frac{4j}{5}=\\frac{3}{5} i+\\frac{4}{5} j$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

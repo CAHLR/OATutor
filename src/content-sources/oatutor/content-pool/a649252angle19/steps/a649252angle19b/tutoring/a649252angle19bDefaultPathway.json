@@ -1,0 +1,76 @@
+[
+    {
+        "id": "a649252angle19b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Pythagorean Identity",
+        "text": "Recall that $$\\sin**2(A) + \\cos**2(A) $$=$$ $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle19b-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a649252angle19b-h1"
+        ],
+        "title": "Substitute $$\\cos(2\\theta)$$",
+        "text": "Substitute the given $$\\cos(2\\theta)$$ into the identity. What is $$\\sin**2(2\\theta)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle19b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle19b-h1"
+        ],
+        "title": "Quadrant of $$2\\theta$$",
+        "text": "Given $$180**{\\circ}\\leq\\theta\\leq270**{\\circ}$$, $$determine$$ $$the$$ $$range$$ $$for$$ $$2\\theta$$ and its effective quadrant.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle19b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle19b-h2"
+        ],
+        "title": "Sign of $$\\sin(2\\theta)$$",
+        "text": "Use the quadrant of $$2\\theta$$ to determine the sign of $$\\sin(2\\theta)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle19b-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Quadrant I"
+        ],
+        "dependencies": [
+            "a649252angle19b-h3"
+        ],
+        "title": "Effective Quadrant",
+        "text": "In the range $$360**{\\circ}\\leq2\\theta\\leq540**{\\circ}$$, $$2\\theta$$ is equivalent to an angle in which quadrant?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Quadrant I",
+            "Quadrant II",
+            "Quadrant III",
+            "Quadrant IV"
+        ]
+    }
+]

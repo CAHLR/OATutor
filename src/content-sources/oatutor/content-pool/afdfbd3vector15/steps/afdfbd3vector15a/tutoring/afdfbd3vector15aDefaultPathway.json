@@ -1,0 +1,90 @@
+[
+    {
+        "id": "afdfbd3vector15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definiton",
+        "text": "A unit vector is the components of v divided by the magnitude of v.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afdfbd3vector15a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "|v|=\u221a(a**2+b**2)"
+        ],
+        "dependencies": [
+            "afdfbd3vector15a-h1"
+        ],
+        "title": "Find Magnitude",
+        "text": "How do we find the magnitude of a vector?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "v",
+            "=\u221a(a**2+b**2)",
+            "",
+            "v",
+            "$$=a+b$$",
+            "",
+            "v",
+            "=\u221a(a+b)",
+            "",
+            "v",
+            "$$=a^2+b^2$$"
+        ]
+    },
+    {
+        "id": "afdfbd3vector15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afdfbd3vector15a-s1"
+        ],
+        "title": "Substitute",
+        "text": "|d|=\u221a((-1/3)**2+(5/2)**2)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afdfbd3vector15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afdfbd3vector15a-h2"
+        ],
+        "title": "Simplify",
+        "text": "\u221a((-1/3)**2+(5/2)**2)=\u221a(1/9+25/4)=\u221a(229/36)=\u221a229/6",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afdfbd3vector15a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afdfbd3vector15a-h3"
+        ],
+        "title": "Divide",
+        "text": "Now divide each component of $$d$$ by |d|.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afdfbd3vector15a-h5",
+        "type": "hint",
+        "dependencies": [
+            "afdfbd3vector15a-h4"
+        ],
+        "title": "Simplify",
+        "text": "(-1/3)i/(\u221a229/6)+5/2j/(\u221a229/6)=-2\u221a229i+15\u221a229j",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

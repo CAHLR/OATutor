@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a4384a1model9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Plug in $$45$$",
+        "text": "$$45$$ $$=$$ $$90$$ / (1 + 5e**-.42t)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4384a1model9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4384a1model9a-h1"
+        ],
+        "title": "Multiply both sides by the denominator",
+        "text": "45(1 + 5e**(-.42t)) $$=$$ $$90$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4384a1model9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4384a1model9a-h2"
+        ],
+        "title": "Divide by $$45$$",
+        "text": "$$1$$ + $$5e^{-0.42 t}$$ $$=$$ $$2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4384a1model9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4384a1model9a-h3"
+        ],
+        "title": "Solve for $$t$$",
+        "text": "e ** $$-.42t$$ $$=$$ $$.2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

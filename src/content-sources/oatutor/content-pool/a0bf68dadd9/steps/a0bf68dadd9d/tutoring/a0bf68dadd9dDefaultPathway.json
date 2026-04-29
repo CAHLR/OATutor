@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a0bf68dadd9d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Finding the Value of $$|q|$$",
+        "text": "The first step is to find the value of $$|q|$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0bf68dadd9d-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$49$$"
+        ],
+        "dependencies": [
+            "a0bf68dadd9d-h1"
+        ],
+        "title": "Calculating $$|q|$$",
+        "text": "$$q=-49$$. What is $$|-49|$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a0bf68dadd9d-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Evaluating the Absolute Value of Negative Numbers",
+                "text": "If a is negative, then $$|a|=-a$$. For example, $$|-11|=11$$.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a0bf68dadd9d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a0bf68dadd9d-h2"
+        ],
+        "title": "Finding the Value of $$-|q|$$",
+        "text": "Multiply $$|q|$$ by $$-1$$ to find $$-|q|$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0bf68dadd9d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-49$$"
+        ],
+        "dependencies": [
+            "a0bf68dadd9d-h3"
+        ],
+        "title": "Calculating $$-|q|$$ with the Substituted Value of q",
+        "text": "What is $$-1\\times49$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

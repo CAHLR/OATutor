@@ -1,0 +1,141 @@
+[
+    {
+        "id": "ae3c1a1exponential20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The Continuous $$\\frac{Growth}{Decay}$$ Formula",
+        "text": "For all real numbers $$t$$, and all positive numbers a and $$r$$, continuous growth or decay is represented by the formula $$A(t)=a e^{r t}$$ where:\\na is the initial value,\\n$$r$$ is the continuous growth rate per unit time,\\nand $$t$$ is the elapsed time.\\n\\nIf $$r>0$$ , then the formula represents continuous growth. If $$r<0$$ , then the formula represents continuous decay.\\n\\nFor business applications, the continuous growth formula is called the continuous compounding formula and takes the form $$A(t)=P e^{r t}$$\\nwhere:\\nP is the principal or the initial invested,\\n$$r$$ is the growth or interest rate per unit time,\\nand $$t$$ is the period or term of the investment.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae3c1a1exponential20a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Continuous Growth"
+        ],
+        "dependencies": [
+            "ae3c1a1exponential20a-h1"
+        ],
+        "title": "Model",
+        "text": "What type of model is this?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Continuous Growth",
+            "Continuous Decay"
+        ]
+    },
+    {
+        "id": "ae3c1a1exponential20a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Continuous growth rate per unit time, $$r$$"
+        ],
+        "dependencies": [
+            "ae3c1a1exponential20a-h2"
+        ],
+        "title": "Defining the Exponential Model",
+        "text": "Identify the terms of the model, $$A(t)=P e^{r t}$$, that are given and the terms that you would have to find. Which terms are not given?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Continuous growth rate per unit time, $$r$$",
+            "initial value, P"
+        ]
+    },
+    {
+        "id": "ae3c1a1exponential20a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae3c1a1exponential20a-h3"
+        ],
+        "title": "Continuous Growth Rate",
+        "text": "Find the continuous Growth Rate per unit time.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae3c1a1exponential20a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$145000=110000e^{20r}$$"
+        ],
+        "dependencies": [
+            "ae3c1a1exponential20a-h4"
+        ],
+        "title": "Continuous Growth Rate",
+        "text": "Substitute all known terms (P - initial values, $$t$$ - elapsed time, A(t) - model's estimate) provided in the question into the exponential decay model, $$A(t)=P e^{r t}$$ and find $$r$$, the continuous growth rate. What is the equation after substituting the values in?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$145000=110000e^{20r}$$",
+            "$$110000=145000e^{20r}$$",
+            "$$145000=35e^{110000r}$$"
+        ]
+    },
+    {
+        "id": "ae3c1a1exponential20a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ae3c1a1exponential20a-h5"
+        ],
+        "title": "Continuous Growth Rate",
+        "text": "Divide by $$110000$$ on both sides.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae3c1a1exponential20a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ae3c1a1exponential20a-h6"
+        ],
+        "title": "Continuous Growth Rate",
+        "text": "Take ln on both sides.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae3c1a1exponential20a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ae3c1a1exponential20a-h7"
+        ],
+        "title": "Continuous Growth Rate",
+        "text": "Divide by $$20$$ on both sides. You would have successfully isolated $$r$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae3c1a1exponential20a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.0138$$"
+        ],
+        "dependencies": [
+            "ae3c1a1exponential20a-h8"
+        ],
+        "title": "Continuous Growth Rate",
+        "text": "Evaluate $$r$$, the continuous growth rate, numerically. Leave the answer in three significant figures.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,128 @@
+[
+    {
+        "id": "a662caelawsin27a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Applying the Law of Sines",
+        "text": "Recall the Law of Sines: $$\\frac{a}{\\sin$$ $$\\alpha$$} $$=$$ $$\\frac{b}{\\sin$$ $$\\beta$$} $$=$$ $$\\frac{c}{\\sin$$ $$\\gamma}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin27a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$a=11.3$$, $$b=8.2$$, $$\\beta=119**{\\circ}$$"
+        ],
+        "dependencies": [
+            "a662caelawsin27a-h1"
+        ],
+        "title": "Identify known values",
+        "text": "What are the known values for a, $$b$$, and $$\\beta$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$a=11.3$$, $$b=8.2$$, $$\\beta=119**{\\circ}$$",
+            "$$a=8.2$$, $$b=11.3$$, $$\\beta=119**{\\circ}$$",
+            "$$a=11.3$$, $$b=8.2$$, $$\\alpha=119**{\\circ}$$",
+            "$$a=11.3$$, $$b=8.2$$, $$\\beta=100**{\\circ}$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin27a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin27a-h1"
+        ],
+        "title": "Set up the equation",
+        "text": "Use the Law of Sines to set up an equation to find $$\\sin$$ $$\\alpha$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin27a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{a}{\\sin$$ $$\\alpha$$} $$=$$ $$\\frac{b}{\\sin$$ $$\\beta}$$"
+        ],
+        "dependencies": [
+            "a662caelawsin27a-h2"
+        ],
+        "title": "Law of Sines equation",
+        "text": "Which part of the Law of Sines relates a, $$b$$, $$\\alpha$$, $$and$$ $$\\beta$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{a}{\\sin$$ $$\\alpha$$} $$=$$ $$\\frac{b}{\\sin$$ $$\\beta}$$",
+            "$$\\frac{a}{\\sin$$ $$\\beta$$} $$=$$ $$\\frac{b}{\\sin$$ $$\\alpha}$$",
+            "$$\\frac{\\sin$$ $$\\alpha}{a$$} $$=$$ $$\\frac{b}{\\sin$$ $$\\beta}$$",
+            "$$\\frac{a}{\\cos$$ $$\\alpha$$} $$=$$ $$\\frac{b}{\\cos$$ $$\\beta}$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin27a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin27a-h2"
+        ],
+        "title": "Calculate $$\\sin$$ $$\\alpha$$",
+        "text": "Calculate the value of $$\\sin$$ $$\\alpha$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin27a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.2053$$"
+        ],
+        "dependencies": [
+            "a662caelawsin27a-h3"
+        ],
+        "title": "Value of $$\\sin$$ $$\\alpha$$",
+        "text": "What is the value of $$\\sin$$ $$\\alpha$$? $$Round$$ $$to$$ $$four$$ $$decimal$$ $$places$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin27a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin27a-h3"
+        ],
+        "title": "Interpret the result",
+        "text": "Consider the range of possible values for the sine function.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin27a-s4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a662caelawsin27a-h4"
+        ],
+        "title": "Range of sine",
+        "text": "What is the maximum possible value for $$\\sin$$ $$\\alpha$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

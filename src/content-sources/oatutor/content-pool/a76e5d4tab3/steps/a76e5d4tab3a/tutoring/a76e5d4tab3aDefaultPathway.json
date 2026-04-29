@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a76e5d4tab3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "For loops",
+        "text": "When running this for loop, what is the first value of c?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a76e5d4tab3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a76e5d4tab3a-h1"
+        ],
+        "title": "For loops",
+        "text": "After finding the first value of c, you go to the next line: is c < 2? If so, compute the body. If not, move to the else statement, and compute the body.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a76e5d4tab3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a76e5d4tab3a-h2"
+        ],
+        "title": "np.arange()",
+        "text": "What is the first value in np.arange(5)? Recall, the default start value is....?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

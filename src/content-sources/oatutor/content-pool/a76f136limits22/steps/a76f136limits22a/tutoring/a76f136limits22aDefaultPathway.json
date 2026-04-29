@@ -1,0 +1,51 @@
+[
+    {
+        "id": "a76f136limits22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "A Limit Can Exist Without a Function Value",
+        "text": "The existence of $$f(0)$$ is separate from the existence of $$\\lim_{x\\to $$0}f(x)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a76f136limits22a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Graph the Parabola by Hand",
+        "text": "Sketch $$y=x^2+4$$ and leave an open circle at $$(0,4)$$. $$Then$$ $$decide$$ $$what$$ $$the$$ $$graph$$ $$approaches$$ $$near$$ $$x=0$$ and whether the function has a defined value there.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a76f136limits22a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a76f136limits22a-h2"
+        ],
+        "title": "Determine the Limit First",
+        "text": "If the graph approaches $$4$$ from both sides, what is $$\\lim_{x\\to $$0}f(x)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a76f136limits22a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a76f136limits22a-h3"
+        ],
+        "title": "Defined Value Check",
+        "text": "A hole means the graph is not filled in at that x-value, even if the nearby behavior approaches a number.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a662caelawsin24f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Applying the Law of Sines",
+        "text": "Use the Law of Sines to find side $$c_2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin24f-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\sin$$ $$\u03b2}{b$$} $$=$$ $$\\frac{\\sin$$ \u03b3_2}{c_2}$$"
+        ],
+        "dependencies": [
+            "a662caelawsin24f-h1"
+        ],
+        "title": "Law of Sines setup",
+        "text": "Set up the Law of Sines to solve for $$c_2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\sin$$ $$\u03b2}{b$$} $$=$$ $$\\frac{\\sin$$ \u03b3_2}{c_2}$$",
+            "$$\\frac{\\sin$$ \u03b2}{c_2} $$=$$ $$\\frac{\\sin$$ \u03b3_2}{b}$$",
+            "$$\\frac{b}{\\sin$$ $$\u03b2$$} $$=$$ $$\\frac{\\sin$$ \u03b3_2}{c_2}$$",
+            "$$\\frac{\\cos$$ $$\u03b2}{b$$} $$=$$ $$\\frac{\\cos$$ \u03b3_2}{c_2}$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin24f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin24f-h1"
+        ],
+        "title": "Using known ratios",
+        "text": "You can use the ratio with angle $$\\beta$$ and side $$b$$ since they are given and exact.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin24f-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\sin$$ 24**{\\circ}}{3} $$=$$ $$\\frac{\\sin$$ 47.6**{\\circ}}{c_2}$$"
+        ],
+        "dependencies": [
+            "a662caelawsin24f-h2"
+        ],
+        "title": "Substitute values",
+        "text": "Substitute the known values into the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\sin$$ 24**{\\circ}}{3} $$=$$ $$\\frac{\\sin$$ 47.6**{\\circ}}{c_2}$$",
+            "$$\\frac{\\sin$$ 3**{\\circ}}{24} $$=$$ $$\\frac{\\sin$$ 47.6**{\\circ}}{c_2}$$",
+            "$$\\frac{\\sin$$ 24**{\\circ}}{c_2} $$=$$ $$\\frac{\\sin$$ 47.6**{\\circ}}{3}$$",
+            "$$\\frac{\\sin$$ 24**{\\circ}}{3} $$=$$ \\frac{c_2}{\\sin 47.6**{\\circ}}$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin24f-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5.4$$"
+        ],
+        "dependencies": [
+            "a662caelawsin24f-h2"
+        ],
+        "title": "Calculate $$c_2$$",
+        "text": "What is the value of $$c_2$$? $$Round$$ $$to$$ $$the$$ $$nearest$$ $$tenth$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

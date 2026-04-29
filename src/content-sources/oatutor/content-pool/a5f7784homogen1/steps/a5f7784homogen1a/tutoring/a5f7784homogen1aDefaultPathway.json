@@ -1,0 +1,185 @@
+[
+    {
+        "id": "a5f7784homogen1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Null and Alternative Hypotheses",
+        "text": "$$H_0$$: the distribution of living arrangements for male college students is the same as the distribution of living arrangements for female college students. $$H_a$$: the distribution of living arrangements for male college students is not the same as the distribution of living arrangements for female college students.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5f7784homogen1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a5f7784homogen1a-h1"
+        ],
+        "title": "Degrees of Freedom (df)",
+        "text": "What is df, the degrees of freedom?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a5f7784homogen1a-h2-h3",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$3$$"
+                ],
+                "dependencies": [],
+                "title": "df Equation",
+                "text": "If df $$=$$ number of columns - $$1$$, what is df?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a5f7784homogen1a-h2-h4",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$3$$"
+                ],
+                "dependencies": [],
+                "title": "Solving for df",
+                "text": "df $$=$$ number of columns - $$1$$ where the number of columns is $$4$$. What is df?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a5f7784homogen1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a5f7784homogen1a-h2"
+        ],
+        "title": "Test Distribution",
+        "text": "The distribution for the test is as follows:\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5f7784homogen1a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10.1287$$"
+        ],
+        "dependencies": [
+            "a5f7784homogen1a-h5"
+        ],
+        "title": "Test Statistic",
+        "text": "Using a calculator or computer, what is the test statistic $$X^2$$? Round to four decimal places.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5f7784homogen1a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a5f7784homogen1a-h6"
+        ],
+        "title": "Probability Statement",
+        "text": "$$p-value$$ $$=$$ P((X**2) > $$10.1287)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5f7784homogen1a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.0175$$"
+        ],
+        "dependencies": [
+            "a5f7784homogen1a-h7"
+        ],
+        "title": "P-Value",
+        "text": "What is the $$p-value$$? Round your answer to four decimal places.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5f7784homogen1a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a5f7784homogen1a-h8"
+        ],
+        "title": "Comparing \ud835\udefc and the P-Value",
+        "text": "Since the problem asks us to use a level of significance of $$0.05$$, \ud835\udefc $$=$$ $$0.05$$. The $$p-value$$ $$=$$ $$0.0175$$. If \ud835\udefc > $$p-value$$, reject $$H_0$$. If \ud835\udefc < $$p-value$$, accept $$H_0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5f7784homogen1a-h10",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a5f7784homogen1a-h9"
+        ],
+        "title": "Greater Than or Less Than the P-Value",
+        "text": "Is \ud835\udefc > $$p-value$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a5f7784homogen1a-h11",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Reject"
+        ],
+        "dependencies": [
+            "a5f7784homogen1a-h10"
+        ],
+        "title": "Reject or Accept $$H_0$$ Based on the P-Value",
+        "text": "Based on your previous answer, would you reject or not reject $$H_0$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Do not reject",
+            "Reject"
+        ]
+    },
+    {
+        "id": "a5f7784homogen1a-h12",
+        "type": "hint",
+        "dependencies": [
+            "a5f7784homogen1a-h11"
+        ],
+        "title": "Conclusion",
+        "text": "At a 5% level of significance, from the data, there is sufficient evidence to conclude that the distributions of living arrangements for male and female college students are not the same. Notice that the conclusion is only that the distributions are not the same. We cannot use the test for homogeneity to draw any conclusions about how they differ.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

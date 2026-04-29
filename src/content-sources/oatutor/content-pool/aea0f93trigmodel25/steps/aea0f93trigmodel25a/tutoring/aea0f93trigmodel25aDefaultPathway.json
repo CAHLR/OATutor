@@ -1,0 +1,53 @@
+[
+    {
+        "id": "aea0f93trigmodel25a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify function type",
+        "text": "Observe the range of y-values. If they span from negative infinity to positive $$\\infty$$, consider tangent or cotangent. If they are bounded, consider sine or cosine.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel25a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel25a-h1"
+        ],
+        "title": "Determine period and B",
+        "text": "For tangent functions, the period $P $$=$$ \\frac{\\pi}{B}$. Find two x-values where the function repeats or where it passes through the midline with the same slope to determine the period.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel25a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$\\frac{\\pi}{8}$"
+        ],
+        "dependencies": [
+            "aea0f93trigmodel25a-h2"
+        ],
+        "title": "Use a known point",
+        "text": "Use a point like $$(2,1)$$ and the general form $y $$=$$ \\tan(Bx)$ to solve for B.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aea0f93trigmodel25a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aea0f93trigmodel25a-h2"
+        ],
+        "title": "Formulate the equation",
+        "text": "Combine the identified function type and the B value to write the formula.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

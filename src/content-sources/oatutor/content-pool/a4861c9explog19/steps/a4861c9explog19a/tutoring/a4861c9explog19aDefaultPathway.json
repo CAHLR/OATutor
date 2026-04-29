@@ -1,0 +1,113 @@
+[
+    {
+        "id": "a4861c9explog19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Setting equal to $$0$$",
+        "text": "First, move all terms to one side of the equal sign so that all of the terms are set equal to zero.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4861c9explog19a-h1"
+        ],
+        "title": "Writing as Quadratic",
+        "text": "Note that the exponent of the $$e^2 x$$ is $$2x$$, with another $$e^x$$ term term with $$x$$ as the exponent. Substitute $$e^x$$ to another variable, such as $$t$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog19a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$t^2-t-56=0$$"
+        ],
+        "dependencies": [
+            "a4861c9explog19a-h2"
+        ],
+        "title": "Rewriting Equation",
+        "text": "What is the equation rewritten where $$e^x=t$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog19a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4861c9explog19a-h3"
+        ],
+        "title": "Solving for Variable",
+        "text": "To solve for the value of the variable, first find two numbers that sum to $$-1$$ and multiply to $$56$$ and factor.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog19a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a4861c9explog19a-h4"
+        ],
+        "title": "Zero Product Property",
+        "text": "For two factors multiplied to be equal to be zero, one or the other must be equal to zero.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog19a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a4861c9explog19a-h5"
+        ],
+        "title": "Setting Factors Equal to Zero",
+        "text": "To solve, set both factors equal to zero and isolate the variable $$t$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog19a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a4861c9explog19a-h6"
+        ],
+        "title": "Reintroducing $$e^x$$",
+        "text": "To solve the original equation, set $$t$$ back to be equal to $$e^x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog19a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a4861c9explog19a-h7"
+        ],
+        "title": "Inverse Functions",
+        "text": "Since ln(x) and $$e^x$$ are inverse functions, taking the natural log of a term with e leaves only the exponent left.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog19a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a4861c9explog19a-h8"
+        ],
+        "title": "Extraneous Solutions",
+        "text": "Remember that the argument of a logarithm is always positive. There may be solutions that are extraneous.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

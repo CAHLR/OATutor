@@ -1,0 +1,107 @@
+[
+    {
+        "id": "a6dffedreal4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute the Value",
+        "text": "We can choose the y-intercept of the graph, $$(0,3)$$, as our first point. This gives us the initial value, $$a=3$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dffedreal4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6dffedreal4a-h1"
+        ],
+        "title": "Choose the Second Point",
+        "text": "Next, choose a point on the curve some distance away from $$(0,3)$$ that has integer coordinates. One such point is $$(2,12)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dffedreal4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6dffedreal4a-h2"
+        ],
+        "title": "General Form",
+        "text": "Write the general form of an exponential equation. $$y={ab}^x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dffedreal4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6dffedreal4a-h3"
+        ],
+        "title": "Substitute the Value",
+        "text": "Substitute the initial value $$3$$ for a. We get $$y=3b^x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dffedreal4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a6dffedreal4a-h4"
+        ],
+        "title": "Substitute the Value",
+        "text": "Substitute in $$12$$ for $$y$$ and $$2$$ for $$x$$. Then solve for $$b$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dffedreal4a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2, -2$$"
+        ],
+        "dependencies": [
+            "a6dffedreal4a-h5"
+        ],
+        "title": "Calculation",
+        "text": "What is the value of $$b$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "2,2",
+            "$$2, -2$$",
+            "$$-2, -2$$",
+            "$$2, -1$$"
+        ]
+    },
+    {
+        "id": "a6dffedreal4a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a6dffedreal4a-h6"
+        ],
+        "title": "Value of $$b$$",
+        "text": "Because we restrict ourselves to positive values of $$b$$, we will use $$b=2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dffedreal4a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a6dffedreal4a-h7"
+        ],
+        "title": "Substitute the Value",
+        "text": "Substitute a and $$b$$ into the standard form to yield the equation $$f(x)={3\\left(2\\right)}^x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,39 @@
+[
+    {
+        "id": "ac47cfflimits20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor Completely",
+        "text": "Factor both quadratics before trying to substitute.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac47cfflimits20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac47cfflimits20a-h1"
+        ],
+        "title": "Cancel the Shared Factor",
+        "text": "A factor of $$x-3$$ appears in both the numerator and denominator.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac47cfflimits20a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{x-2}{x-1}$$"
+        ],
+        "dependencies": [],
+        "title": "Write the Reduced Quotient",
+        "text": "After canceling the shared factor, what simpler quotient remains?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

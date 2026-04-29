@@ -1,0 +1,192 @@
+[
+    {
+        "id": "acc585clocation3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Median and Frequency",
+        "text": "Note that in the \"cumulative relative frequency\" column we see the value $$0.52$$. The median is the 50th percentile or the second quartile. Therefore, we can count of the \"frequency\" column and find the midpoint.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "acc585clocation3a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$25$$"
+        ],
+        "dependencies": [
+            "acc585clocation3a-h1"
+        ],
+        "title": "Looking at the Frequency Column",
+        "text": "There are $$50$$ total data points. How many data points will be less than the median?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "acc585clocation3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [
+            "acc585clocation3a-h2"
+        ],
+        "title": "Determining Median from the Frequency Column",
+        "text": "Where is the 25th data point based on frequency?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "acc585clocation3a-h3-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$14$$"
+                ],
+                "dependencies": [],
+                "title": "Determining Median from the Frequency Column",
+                "text": "How many data points (what is the sum of the frequencies) up to and including $$6$$ hours of sleep per school night?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "acc585clocation3a-h3-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$26$$"
+                ],
+                "dependencies": [],
+                "title": "Determining Median from the Frequency Column",
+                "text": "How many data points (what is the sum of the frequencies) up to and including $$7$$ hours of sleep per school night?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "acc585clocation3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "acc585clocation3a-h3"
+        ],
+        "title": "Median Between 25th and 26th Data Point",
+        "text": "Because there are an even number of total data points, we note that there will be $$\\frac{50}{2}=25$$ data points below the median and $$\\frac{50}{2}=25$$ data points above the median. Therefore, the median will be the middle point between the 25th and 26th data points.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "acc585clocation3a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [
+            "acc585clocation3a-h4"
+        ],
+        "title": "25th Data Point",
+        "text": "What is the 25th data point?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "acc585clocation3a-h5-s3",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$7$$"
+                ],
+                "dependencies": [],
+                "title": "25th Data Point",
+                "text": "The first $$14$$ data points reside in $$4$$ hours to $$6$$ hours of sleep per night. The first $$26$$ data points reside in $$4$$ hours to $$7$$ hours of sleep per night. This means that data points $$15$$ through $$26$$ reside in the $$7$$ hours of sleep per night category. Therefore, what is the 25th data point?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "acc585clocation3a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [
+            "acc585clocation3a-h5"
+        ],
+        "title": "26th Data Point",
+        "text": "What is the 26th data point?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "acc585clocation3a-h6-s4",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$7$$"
+                ],
+                "dependencies": [],
+                "title": "26th Data Point",
+                "text": "The first $$14$$ data points reside in $$4$$ hours to $$6$$ hours of sleep per night. The first $$26$$ data points reside in $$4$$ hours to $$7$$ hours of sleep per night. This means that data points $$15$$ through $$26$$ reside in the $$7$$ hours of sleep per night category. Therefore, what is the 26th data point?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "acc585clocation3a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [
+            "acc585clocation3a-h6"
+        ],
+        "title": "Determining the Median",
+        "text": "What is the middle point between the 25th and 26th data points?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "acc585clocation3a-h7-s5",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$7$$"
+                ],
+                "dependencies": [],
+                "title": "Determining the Median",
+                "text": "What is $$\\frac{7+7}{2}$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    }
+]

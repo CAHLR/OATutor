@@ -1,0 +1,128 @@
+[
+    {
+        "id": "a662caelawsin28a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Applying the Law of Sines",
+        "text": "Recall the Law of Sines: $$\\frac{a}{\\sin$$ $$A$$} $$=$$ $$\\frac{b}{\\sin$$ $$B$$} $$=$$ $$\\frac{c}{\\sin$$ $$C}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin28a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$a=24$$, $$b=5$$, B=22**{\\circ}"
+        ],
+        "dependencies": [
+            "a662caelawsin28a-h1"
+        ],
+        "title": "Identify known values",
+        "text": "What are the known values for a, $$b$$, and B?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$a=24$$, $$b=5$$, B=22**{\\circ}",
+            "$$a=5$$, $$b=24$$, B=22**{\\circ}",
+            "$$a=24$$, $$b=5$$, A=22**{\\circ}",
+            "$$a=24$$, $$b=5$$, B=30**{\\circ}"
+        ]
+    },
+    {
+        "id": "a662caelawsin28a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin28a-h1"
+        ],
+        "title": "Set up the equation",
+        "text": "Use the Law of Sines to set up an equation to find $$\\sin$$ $$A$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin28a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{a}{\\sin$$ $$A$$} $$=$$ $$\\frac{b}{\\sin$$ $$B}$$"
+        ],
+        "dependencies": [
+            "a662caelawsin28a-h2"
+        ],
+        "title": "Law of Sines equation",
+        "text": "Which part of the Law of Sines relates a, $$b$$, A, and B?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{a}{\\sin$$ $$A$$} $$=$$ $$\\frac{b}{\\sin$$ $$B}$$",
+            "$$\\frac{a}{\\sin$$ $$B$$} $$=$$ $$\\frac{b}{\\sin$$ $$A}$$",
+            "$$\\frac{\\sin$$ $$A}{a$$} $$=$$ $$\\frac{b}{\\sin$$ $$B}$$",
+            "$$\\frac{a}{\\cos$$ $$A$$} $$=$$ $$\\frac{b}{\\cos$$ $$B}$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin28a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin28a-h2"
+        ],
+        "title": "Calculate $$\\sin$$ $$A$$",
+        "text": "Calculate the value of $$\\sin$$ $$A$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin28a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.7981$$"
+        ],
+        "dependencies": [
+            "a662caelawsin28a-h3"
+        ],
+        "title": "Value of $$\\sin$$ $$A$$",
+        "text": "What is the value of $$\\sin$$ $$A$$? $$Round$$ $$to$$ $$four$$ $$decimal$$ $$places$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin28a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin28a-h3"
+        ],
+        "title": "Interpret the result",
+        "text": "Consider the range of possible values for the sine function.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin28a-s4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a662caelawsin28a-h4"
+        ],
+        "title": "Range of sine",
+        "text": "What is the maximum possible value for $$\\sin$$ $$A$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a662caelawsin19c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply the Law of Sines",
+        "text": "Use the Law of Sines: $$\\frac{a}{\\sin$$ $$A$$} $$=$$ $$\\frac{c}{\\sin$$ $$C}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin19c-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{a}{\\sin$$ $$A$$} $$=$$ $$\\frac{c}{\\sin$$ $$C}$$"
+        ],
+        "dependencies": [
+            "a662caelawsin19c-h1"
+        ],
+        "title": "Set up the proportion for $$a$$",
+        "text": "Which ratio involving $$a$$ can you use with the known values?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{a}{\\sin$$ $$A$$} $$=$$ $$\\frac{c}{\\sin$$ $$C}$$",
+            "$$\\frac{\\sin$$ $$A}{a$$} $$=$$ $$\\frac{c}{\\sin$$ $$C}$$",
+            "$$\\frac{a}{\\sin$$ $$C$$} $$=$$ $$\\frac{c}{\\sin$$ $$A}$$",
+            "$$\\frac{a}{\\cos$$ $$A$$} $$=$$ $$\\frac{c}{\\cos$$ $$C}$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin19c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin19c-h1"
+        ],
+        "title": "Substitute known values",
+        "text": "Substitute $A=50.6**{\\circ},$$ C=113**{\\circ},$$ $$c=32\\$$$ into the proportion.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin19c-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{a}{\\sin$$ 50.6**\\circ} $$=$$ $$\\frac{32}{\\sin$$ 113**\\circ}$$"
+        ],
+        "dependencies": [
+            "a662caelawsin19c-h2"
+        ],
+        "title": "What is the equation after substitution?",
+        "text": "What is the equation after substituting the known values?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{a}{\\sin$$ 50.6**\\circ} $$=$$ $$\\frac{32}{\\sin$$ 113**\\circ}$$",
+            "$$\\frac{a}{\\sin$$ 113**\\circ} $$=$$ $$\\frac{32}{\\sin$$ 50.6**\\circ}$$",
+            "$$\\frac{\\sin$$ 50.6**\\circ}{a} $$=$$ $$\\frac{32}{\\sin$$ 113**\\circ}$$",
+            "$$\\frac{a}{\\cos$$ 50.6**\\circ} $$=$$ $$\\frac{32}{\\cos$$ 113**\\circ}$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin19c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin19c-h2"
+        ],
+        "title": "Solve for $$a$$",
+        "text": "Isolate $$a$$ and calculate its value, rounding to the nearest tenth.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin19c-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\$26.7\\$$$"
+        ],
+        "dependencies": [
+            "a662caelawsin19c-h3"
+        ],
+        "title": "Calculate $$a$$",
+        "text": "What is the value of $$a$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

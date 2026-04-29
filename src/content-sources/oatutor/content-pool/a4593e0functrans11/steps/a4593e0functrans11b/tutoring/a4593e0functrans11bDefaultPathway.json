@@ -1,0 +1,115 @@
+[
+    {
+        "id": "a4593e0functrans11b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding $$f(x-h)$$",
+        "text": "For some value $$h$$, $$f(x-h)$$ means that f(x) is translated to the right by $$h$$ units. Similarly, $$f{\\left(x+h\\right)}$$ means that f(x) is translated to the left by $$h$$ units.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4593e0functrans11b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans11b-h1"
+        ],
+        "title": "Understanding $$f(x-h)$$",
+        "text": "Since $$h$$ is $$4$$, $$f(x-4)$$ means that the graph is translated right by $$4$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4593e0functrans11b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans11b-h2"
+        ],
+        "title": "Understanding $$f{\\left(\\frac{x}{h}\\right)}$$",
+        "text": "For some value $$h$$ not equal to $$0$$, $$f{\\left(\\frac{x}{h}\\right)}$$ means that f(x) is stretched horizontally by $$h$$. Similarly, $$f{\\left(h x\\right)}$$ means that f(x) is compressed horizontally by $$h$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4593e0functrans11b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans11b-h3"
+        ],
+        "title": "Understanding $$f{\\left(\\frac{x}{h}\\right)}$$",
+        "text": "Since $$h$$ is $$\\frac{1}{2}$$, $$f{\\left(\\frac{x}{2}-4\\right)}$$ means that the graph is stretched horizontally by $$2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4593e0functrans11b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans11b-h4"
+        ],
+        "title": "Does Order Matter?",
+        "text": "The order of transformation does not matter if each transformation is performed independently on the input (within the paranethesis of the function) and output (outside the paranethesis of the function).",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a4593e0functrans11b-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Input"
+        ],
+        "dependencies": [
+            "a4593e0functrans11b-h5"
+        ],
+        "title": "Does Order Matter?",
+        "text": "Is the translation right performed on the input or output of the function?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Input",
+            "Output"
+        ]
+    },
+    {
+        "id": "a4593e0functrans11b-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Input"
+        ],
+        "dependencies": [
+            "a4593e0functrans11b-h5"
+        ],
+        "title": "Does Order Matter?",
+        "text": "Is the stretch horizontally performed on the input or output of the function?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Input",
+            "Output"
+        ]
+    },
+    {
+        "id": "a4593e0functrans11b-h8",
+        "type": "hint",
+        "dependencies": [
+            "a4593e0functrans11b-h6",
+            "a4593e0functrans11b-h7"
+        ],
+        "title": "Does Order Matter?",
+        "text": "Since the transformations were both performed on the input, the order does matter.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    }
+]

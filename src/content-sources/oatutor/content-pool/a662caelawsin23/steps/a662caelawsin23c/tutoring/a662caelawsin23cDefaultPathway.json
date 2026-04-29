@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a662caelawsin23c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Applying the Law of Sines",
+        "text": "Use the Law of Sines again to find side $$b_1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin23c-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\sin$$ $$\\alpha}{a$$} $$=$$ $$\\frac{\\sin$$ \u03b2_1}{b_1}$$"
+        ],
+        "dependencies": [
+            "a662caelawsin23c-h1"
+        ],
+        "title": "Law of Sines setup",
+        "text": "Set up the Law of Sines to solve for $$b_1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\sin$$ $$\\alpha}{a$$} $$=$$ $$\\frac{\\sin$$ \u03b2_1}{b_1}$$",
+            "$$\\frac{a}{\\sin$$ $$\\alpha$$} $$=$$ $$\\frac{\\sin$$ \u03b2_1}{b_1}$$",
+            "$$\\frac{\\sin$$ \\alpha}{b_1} $$=$$ $$\\frac{\\sin$$ \u03b2_1}{a}$$",
+            "$$\\frac{\\cos$$ $$\\alpha}{a$$} $$=$$ $$\\frac{\\cos$$ \u03b2_1}{b_1}$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin23c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin23c-h1"
+        ],
+        "title": "Using known ratios",
+        "text": "You can use the ratio with angle $$\\alpha$$ and side $$a$$ since they are given and exact.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin23c-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\sin$$ 43**{\\circ}}{7} $$=$$ $$\\frac{\\sin$$ 75.8**{\\circ}}{b_1}$$"
+        ],
+        "dependencies": [
+            "a662caelawsin23c-h2"
+        ],
+        "title": "Substitute values",
+        "text": "Substitute the known values into the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\sin$$ 43**{\\circ}}{7} $$=$$ $$\\frac{\\sin$$ 75.8**{\\circ}}{b_1}$$",
+            "$$\\frac{\\sin$$ 75.8**{\\circ}}{7} $$=$$ $$\\frac{\\sin$$ 43**{\\circ}}{b_1}$$",
+            "$$\\frac{7}{\\sin$$ 43**{\\circ}} $$=$$ $$\\frac{\\sin$$ 75.8**{\\circ}}{b_1}$$",
+            "$$\\frac{\\cos$$ 43**{\\circ}}{7} $$=$$ $$\\frac{\\cos$$ 75.8**{\\circ}}{b_1}$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin23c-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9.9$$"
+        ],
+        "dependencies": [
+            "a662caelawsin23c-h2"
+        ],
+        "title": "Calculate $$b_1$$",
+        "text": "What is the value of $$b_1$$? $$Round$$ $$to$$ $$the$$ $$nearest$$ $$tenth$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

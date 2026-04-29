@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a32c9a5kinetic2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Kinetic Energy Formula",
+        "text": "Recall the formula for kinetic energy: KE $$=$$ $$\\frac{1}{2} m v^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a32c9a5kinetic2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a32c9a5kinetic2a-h1"
+        ],
+        "title": "Set Equal",
+        "text": "Set the KE of the elephant equal to the KE of the sprinter and solve for v.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a32c9a5kinetic2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.47$$"
+        ],
+        "dependencies": [
+            "a32c9a5kinetic2a-h2"
+        ],
+        "title": "Plug In and Solve For v",
+        "text": "Solve for v: $$3000\\frac{1}{2} v^2$$ $$=$$ $$65\\frac{1}{2}\\times{10}^2$$ (in $$\\frac{m}{s}$$, round to $$2$$ decimals).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

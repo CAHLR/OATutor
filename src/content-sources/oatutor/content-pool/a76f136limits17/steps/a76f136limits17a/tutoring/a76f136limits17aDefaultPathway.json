@@ -1,0 +1,67 @@
+[
+    {
+        "id": "a76f136limits17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Compare the One-Sided Limits",
+        "text": "Compute the left-hand and right-hand limits separately before deciding on the two-sided limit.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a76f136limits17a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{1}$$"
+        ],
+        "dependencies": [
+            "a76f136limits17a-h1"
+        ],
+        "title": "Left-Side Evaluation",
+        "text": "Using $$2x$$ for $$x<1$$, $$what$$ $$is$$ $$\\lim_{x\\to 1**-}f(x)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a76f136limits17a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a76f136limits17a-h2"
+        ],
+        "title": "Right-Side Evaluation",
+        "text": "Using $$x+4$$ for $$x>1$$, $$what$$ $$is$$ $$\\lim_{x\\to 1**+}f(x)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a76f136limits17a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a76f136limits17a-h3"
+        ],
+        "title": "Existence Test",
+        "text": "Are the one-sided limits equal?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

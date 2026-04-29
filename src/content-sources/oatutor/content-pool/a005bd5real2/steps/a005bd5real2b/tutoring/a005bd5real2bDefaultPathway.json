@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a005bd5real2b-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(f-g)(x)=f(x)-g(x)"
+        ],
+        "dependencies": [],
+        "title": "Difference of Functions",
+        "text": "Give the formula for adding two functions.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real2b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x^2+2x-6-x^2$$"
+        ],
+        "dependencies": [
+            "a005bd5real2b-h1"
+        ],
+        "title": "Substitute",
+        "text": "Plug in the given f(x) and g(x).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real2b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x^2+2x-6-\\left(-x^2\\right)$$"
+        ],
+        "dependencies": [
+            "a005bd5real2b-h2"
+        ],
+        "title": "Solve",
+        "text": "Distribute the negative sign.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real2b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x^2-\\left(-x^2\\right)+2x-6$$"
+        ],
+        "dependencies": [
+            "a005bd5real2b-h2"
+        ],
+        "title": "Solve",
+        "text": "Combine like terms.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real2b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a005bd5real2b-h3"
+        ],
+        "title": "Simplify",
+        "text": "$$x^2-\\left(-x^2\\right)=x^2+x^2=2x^2$$, so we are left with $$2x^2+2x-6$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

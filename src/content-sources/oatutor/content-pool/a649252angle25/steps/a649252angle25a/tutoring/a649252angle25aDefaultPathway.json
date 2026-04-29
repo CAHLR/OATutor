@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a649252angle25a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Half-angle formula for cosine",
+        "text": "Recall the half-angle formula for cosine: $$\\cos(\\frac{\\theta}{2}) $$=$$ \\pm\\sqrt{\\frac{1+\\cos(\\theta)}{2}}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle25a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{7\\pi}{4}$$"
+        ],
+        "dependencies": [
+            "a649252angle25a-h1"
+        ],
+        "title": "Identify $$\\theta$$",
+        "text": "If $$\\frac{\\theta}{2} $$=$$ $$\\frac{7\\pi}{8}$$, $$what$$ $$is$$ $$\\theta$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle25a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle25a-h1"
+        ],
+        "title": "Evaluate $$\\cos(\\theta)$$",
+        "text": "Determine $$\\theta$$ such that $$\\frac{\\theta}{2} $$=$$ $$\\frac{7\\pi}{8}$$ and evaluate its cosine.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle25a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\sqrt{2}}{2}$$"
+        ],
+        "dependencies": [
+            "a649252angle25a-h2"
+        ],
+        "title": "Evaluate $$\\cos(\\theta)$$ value",
+        "text": "What is the exact value of $$\\cos(\\frac{7\\pi}{4})$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle25a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle25a-h2"
+        ],
+        "title": "Determine the sign",
+        "text": "Identify the quadrant of $$\\frac{7\\pi}{8}$$ to determine the correct sign for the cosine value.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle25a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Quadrant II"
+        ],
+        "dependencies": [
+            "a649252angle25a-h3"
+        ],
+        "title": "Determine the quadrant",
+        "text": "In which quadrant does $$\\frac{7\\pi}{8}$$ lie?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Quadrant I",
+            "Quadrant II",
+            "Quadrant III",
+            "Quadrant IV"
+        ]
+    }
+]

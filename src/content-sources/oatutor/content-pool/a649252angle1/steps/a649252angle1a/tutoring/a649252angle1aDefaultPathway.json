@@ -1,0 +1,81 @@
+[
+    {
+        "id": "a649252angle1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Double-angle formula for sine",
+        "text": "Recall that $$\\sin(2\\theta) $$=$$ 2\\sin\\theta\\cos\\theta$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle1a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2\\sin\\theta\\cos\\theta$$"
+        ],
+        "dependencies": [
+            "a649252angle1a-h1"
+        ],
+        "title": "Identify the formula",
+        "text": "What is the double-angle formula for $$\\sin(2\\theta)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2\\sin\\theta\\cos\\theta$$",
+            "$$\\sin**2\\theta $$-$$ \\cos**2\\theta$$",
+            "$$2\\sin\\theta$$",
+            "$$\\sin\\theta\\cos\\theta$$"
+        ]
+    },
+    {
+        "id": "a649252angle1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle1a-h1"
+        ],
+        "title": "Find $$\\sin\\theta$$ and $$\\cos\\theta$$",
+        "text": "Use the given $$\\tan\\theta$$ and quadrant information to find the values of $$\\sin\\theta$$ and $$\\cos\\theta$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle1a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{5}$$"
+        ],
+        "dependencies": [
+            "a649252angle1a-h2"
+        ],
+        "title": "Determine $$\\sin\\theta$$",
+        "text": "Given $$\\tan\\theta=-\\frac{3}{4}$$ and $$\\theta$$ is in quadrant II, what is $$\\sin\\theta$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle1a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-4}{5}$$"
+        ],
+        "dependencies": [
+            "a649252angle1a-h2"
+        ],
+        "title": "Determine $$\\cos\\theta$$",
+        "text": "Given $$\\tan\\theta=-\\frac{3}{4}$$ and $$\\theta$$ is in quadrant II, what is $$\\cos\\theta$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

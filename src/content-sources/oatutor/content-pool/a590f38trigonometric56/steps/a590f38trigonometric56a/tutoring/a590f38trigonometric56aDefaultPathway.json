@@ -1,0 +1,151 @@
+[
+    {
+        "id": "a590f38trigonometric56a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply Double Angle Identity",
+        "text": "Recall the double angle identity for cosine that involves only cos(\u03b8).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric56a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "2cos**2\u03b8 $$-$$ $$1$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric56a-h1"
+        ],
+        "title": "Identify Cosine Double Angle Identity",
+        "text": "What is the identity for cos(2\u03b8) in terms of cos(\u03b8)?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "2cos**2\u03b8 $$-$$ $$1$$",
+            "$$1$$ $$-$$ 2cos**2\u03b8",
+            "cos**2\u03b8 $$-$$ $$1$$",
+            "2cos(\u03b8)"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric56a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric56a-h1"
+        ],
+        "title": "Simplify and Solve for cos(\u03b8)",
+        "text": "Substitute the identity, simplify the equation, and solve for cos(\u03b8).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric56a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "9cos**2\u03b8 $$=$$ $$5$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric56a-h2"
+        ],
+        "title": "Form a Quadratic Equation",
+        "text": "After substitution and rearrangement, what is the simplified equation in terms of cos**2\u03b8?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "9cos**2\u03b8 $$=$$ $$5$$",
+            "9cos**2\u03b8 $$=$$ $$13$$",
+            "9cos**2\u03b8 $$=$$ $$-5$$",
+            "18cos**2\u03b8 $$=$$ $$5$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric56a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "\u00b1(sqrt(5))/(3)"
+        ],
+        "dependencies": [
+            "a590f38trigonometric56a-h2"
+        ],
+        "title": "Find Values for cos(\u03b8)",
+        "text": "What are the possible values for cos(\u03b8)?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "\u00b1(sqrt(5))/(3)",
+            "\u00b1(5)/(9)",
+            "\u00b1(sqrt(5))/(9)",
+            "\u00b1(3)/(sqrt(5))"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric56a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric56a-h2"
+        ],
+        "title": "Find Solutions for \u03b8",
+        "text": "Determine all values of \u03b8 in the interval 0\\leq\u03b8<2pi that satisfy the cos(\u03b8) values.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric56a-s4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\arccos\\left(\\frac{\\sqrt{5}}{3}\\right)$$, $$2\\pi$$ $$-$$ $$\\arccos\\left(\\frac{\\sqrt{5}}{3}\\right)$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric56a-h3"
+        ],
+        "title": "Identify Solutions for Positive Cosine",
+        "text": "What are the solutions for \u03b8 when cos(\u03b8) $$=$$ $$\\frac{\\sqrt{5}}{3}$$ on the given interval?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\arccos\\left(\\frac{\\sqrt{5}}{3}\\right)$$, $$2\\pi$$ $$-$$ $$\\arccos\\left(\\frac{\\sqrt{5}}{3}\\right)$$",
+            "$$\\arccos\\left(\\frac{\\sqrt{5}}{3}\\right)$$, pi $$-$$ $$\\arccos\\left(\\frac{\\sqrt{5}}{3}\\right)$$",
+            "$$\\arccos\\left(\\frac{\\sqrt{5}}{3}\\right)$$, pi + $$\\arccos\\left(\\frac{\\sqrt{5}}{3}\\right)$$",
+            "$$\\arccos\\left(\\frac{\\sqrt{5}}{3}\\right)$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric56a-s5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "pi $$-$$ $$\\arccos\\left(\\frac{\\sqrt{5}}{3}\\right)$$, pi + $$\\arccos\\left(\\frac{\\sqrt{5}}{3}\\right)$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric56a-h3"
+        ],
+        "title": "Identify Solutions for Negative Cosine",
+        "text": "What are the solutions for \u03b8 when cos(\u03b8) $$=$$ $$\\frac{-\\sqrt{5}}{3}$$ on the given interval?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "pi $$-$$ $$\\arccos\\left(\\frac{\\sqrt{5}}{3}\\right)$$, pi + $$\\arccos\\left(\\frac{\\sqrt{5}}{3}\\right)$$",
+            "$$\\arccos\\left(\\frac{\\sqrt{5}}{3}\\right)$$, $$2\\pi$$ $$-$$ $$\\arccos\\left(\\frac{\\sqrt{5}}{3}\\right)$$",
+            "pi $$-$$ $$\\arccos\\left(\\frac{\\sqrt{5}}{3}\\right)$$, $$2\\pi$$ $$-$$ $$\\arccos\\left(\\frac{\\sqrt{5}}{3}\\right)$$",
+            "pi $$-$$ $$\\arccos\\left(\\frac{\\sqrt{5}}{3}\\right)$$"
+        ]
+    }
+]

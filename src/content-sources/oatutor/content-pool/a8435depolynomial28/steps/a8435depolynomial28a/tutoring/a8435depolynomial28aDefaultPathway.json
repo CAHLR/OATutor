@@ -1,0 +1,150 @@
+[
+    {
+        "id": "a8435depolynomial28a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Volume of a Cube",
+        "text": "The volume of a cube is the product of the length, width and height. Here, we are given the volume, the length, and the width. To find the height, multiply the length by the width and divide the volume by the product.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8435depolynomial28a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$10x^3+27x^2+2x-24$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial28a-h1"
+        ],
+        "title": "Finding the Product",
+        "text": "We are dividing $$10x^3+27x^2+2x-24$$ by the product of $$(5x-4)$$ and $$2x+3$$. First, multiply $$(5x-4)$$ by $$2x+3$$. What do you get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$10x^3+20x^2+4x-15$$",
+            "$$10x^3+15x^2+6x-30$$",
+            "$$10x^3+27x^2+2x-24$$",
+            "$$10x^3+16x^2+3x-24$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial28a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial28a-h2"
+        ],
+        "title": "Setting Up the Long Division",
+        "text": "We are dividing $$10x^3+27x^2+2x-24$$ by $$10x^2+7x-12$$. First, divide the first term $$10x^3$$ by $$10x^2$$. What do you get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$0$$",
+            "$$2x$$",
+            "$$x$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial28a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$10x^3+7x^2-12x$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial28a-h3"
+        ],
+        "title": "Multiply and Subtract",
+        "text": "Now, multiply $$x$$ by $$10x^2+7x-12$$ and subtract the result from $$10x^3+27x^2+2x-24$$. What do you get after performing this step?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$10x^3+5x^2-10x$$",
+            "$$10x^3+16x^2-12x$$",
+            "$$10x^3+7x^2-12x$$",
+            "$$10x^3+6x^2-x$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial28a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$20x^2+14x-24$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial28a-h4"
+        ],
+        "title": "Subtract the Polynomials",
+        "text": "Now, subtract $$10x^3+7x^2-12x$$ from $$10x^3+27x^2+2x-24$$. What do you get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$x^2+7x-20$$",
+            "$$20x^2+14x-24$$",
+            "$$20x^2+10x-25$$",
+            "$$20x^2+15x-14$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial28a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial28a-h5"
+        ],
+        "title": "Divide Again",
+        "text": "Now, divide $$20x^2$$ by $$10x^2$$. What do you get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2$$",
+            "$$4$$",
+            "$$2x$$",
+            "$$4x$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial28a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial28a-h6"
+        ],
+        "title": "Multiply and Subtract Again",
+        "text": "Now, multiply $$2$$ by $$10x^2+7x-12$$ and subtract the result from $$20x^2+14x-24$$. What do you get after performing this step?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$10x+14$$",
+            "$$0$$",
+            "$$20$$",
+            "$$20x-24$$"
+        ]
+    }
+]

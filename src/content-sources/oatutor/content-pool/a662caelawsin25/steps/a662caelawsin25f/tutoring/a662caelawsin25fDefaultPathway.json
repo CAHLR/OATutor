@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a662caelawsin25f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Applying the Law of Sines",
+        "text": "Use the Law of Sines to find side $$a_2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin25f-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\sin$$ $$\u03b3}{c$$} $$=$$ $$\\frac{\\sin$$ \\alpha_2}{a_2}$$"
+        ],
+        "dependencies": [
+            "a662caelawsin25f-h1"
+        ],
+        "title": "Law of Sines setup",
+        "text": "Set up the Law of Sines to solve for $$a_2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\sin$$ $$\u03b3}{c$$} $$=$$ $$\\frac{\\sin$$ \\alpha_2}{a_2}$$",
+            "$$\\frac{\\sin$$ \u03b3}{a_2} $$=$$ $$\\frac{\\sin$$ \\alpha_2}{c}$$",
+            "$$\\frac{c}{\\sin$$ $$\u03b3$$} $$=$$ $$\\frac{\\sin$$ \\alpha_2}{a_2}$$",
+            "$$\\frac{\\cos$$ $$\u03b3}{c$$} $$=$$ $$\\frac{\\cos$$ \\alpha_2}{a_2}$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin25f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin25f-h1"
+        ],
+        "title": "Using known ratios",
+        "text": "You can use the ratio with angle $$\\gamma$$ and side $$c$$ since they are given and exact.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin25f-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\sin$$ 10**{\\circ}}{5} $$=$$ $$\\frac{\\sin$$ 16.8**{\\circ}}{a_2}$$"
+        ],
+        "dependencies": [
+            "a662caelawsin25f-h2"
+        ],
+        "title": "Substitute values",
+        "text": "Substitute the known values into the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\sin$$ 10**{\\circ}}{5} $$=$$ $$\\frac{\\sin$$ 16.8**{\\circ}}{a_2}$$",
+            "$$\\frac{\\sin$$ 5**{\\circ}}{10} $$=$$ $$\\frac{\\sin$$ 16.8**{\\circ}}{a_2}$$",
+            "$$\\frac{\\sin$$ 10**{\\circ}}{a_2} $$=$$ $$\\frac{\\sin$$ 16.8**{\\circ}}{5}$$",
+            "$$\\frac{\\sin$$ 10**{\\circ}}{5} $$=$$ \\frac{a_2}{\\sin 16.8**{\\circ}}$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin25f-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8.3$$"
+        ],
+        "dependencies": [
+            "a662caelawsin25f-h2"
+        ],
+        "title": "Calculate $$a_2$$",
+        "text": "What is the value of $$a_2$$? $$Round$$ $$to$$ $$the$$ $$nearest$$ $$tenth$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

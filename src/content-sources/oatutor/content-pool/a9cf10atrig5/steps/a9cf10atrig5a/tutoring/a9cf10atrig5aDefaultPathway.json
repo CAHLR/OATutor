@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a9cf10atrig5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identity",
+        "text": "$$\\cot(\\theta)=\\frac{1}{\\tan(\\theta)},\\ \\csc(\\theta)=\\frac{1}{\\sin(\\theta)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig5a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Substitute identity into $$\\frac{\\operatorname{cot}\\left(\\theta\\right)}{\\operatorname{csc}\\left(\\theta\\right)}=cos(\\theta)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig5a-h2"
+        ],
+        "title": "Simplify",
+        "text": "Simplify: $$\\frac{\\frac{1}{\\tan(\\theta)}}{\\frac{1}{\\sin(\\theta)}}=\\left(\\frac{\\cos(\\theta)}{\\sin(\\theta)}\\right)\\sin(\\theta)=\\cos(\\theta).$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
