@@ -1,0 +1,36 @@
+[
+    {
+        "id": "af40364q3cd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Key idea: uniqueness of OLS via normal equation",
+        "text": "A unique OLS solution from (X**T X)**{-1}X**T $$y$$ requires X to have full column rank (equivalently, $$X^T$$ X invertible).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af40364q3cd-h2",
+        "type": "hint",
+        "dependencies": [
+            "af40364q3cd-h1"
+        ],
+        "title": "One-hot encoding pitfall",
+        "text": "If you include all one-hot columns plus an intercept, one column becomes redundant (dummy-variable trap) \u2192 columns linearly dependent.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af40364q3cd-h3",
+        "type": "hint",
+        "dependencies": [
+            "af40364q3cd-h2"
+        ],
+        "title": "Decide this statement",
+        "text": "Ask: does this statement imply (or incorrectly claim) lack of full column rank / multicollinearity?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
