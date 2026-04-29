@@ -16,7 +16,7 @@ import styles from "./common-styles.js";
 import { NavLink } from "react-router-dom";
 import withTranslation from "../../util/withTranslation.js"
 import avatar from "../../assets/avatar_default_state.svg";
-import TTSPlayer from "../../util/ttsPlayer.js";
+import TTSPlayer, { splitIntoSegments } from "../../util/ttsPlayer.js";
 import TTSButtons from "./TTSButtons.js";
 import { textToReadable } from "../../util/latexToReadable.js";
 
@@ -36,6 +36,16 @@ import { cleanArray } from "../../util/cleanObject";
 import {Accordion, AccordionSummary, AccordionDetails, Typography} from "@material-ui/core";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import AgentIntegration from './AgentIntegration';
+
+function splitTextIntoSentences(text) {
+    if (!text) return [text];
+    const parts = text
+        .split(/\\n|\n/)
+        .flatMap(line => line.split(/(?<=[.?!,])\s+/))
+        .map(s => s.trim())
+        .filter(s => s.length > 0);
+    return parts.length > 0 ? parts : [text];
+}
 
 class Problem extends React.Component {
     static defaultProps = {
@@ -92,6 +102,8 @@ class Problem extends React.Component {
             attemptHistory: {}, // { "Problem Title": { "Question Text": ["attempt1", "attempt2"] } }
             ttsPlaying: false,
             ttsPlayingStep: -1,
+            ttsActiveSegment: -1,
+            ttsActiveSegmentStep: -1,
             metaCollapsed: false,
         };
 
@@ -101,7 +113,8 @@ class Problem extends React.Component {
 
         if (this.enableTTS) {
             this.ttsPlayer = new TTSPlayer();
-            this.ttsPlayer.onStateChange((playing) => this.setState({ ttsPlaying: playing }));
+            this.ttsPlayer.onStateChange((playing) => this.setState({ ttsPlaying: playing, ttsActiveSegment: playing ? this.state.ttsActiveSegment : -1 }));
+            this.ttsPlayer.onSegmentChange((segIdx) => this.setState({ ttsActiveSegment: segIdx }));
         }
         this.bannerRef = React.createRef();
     }
@@ -137,7 +150,8 @@ class Problem extends React.Component {
         if (this.ttsPlayer) {
             this.ttsPlayer.destroy();
             this.ttsPlayer = new TTSPlayer();
-            this.ttsPlayer.onStateChange((playing) => this.setState({ ttsPlaying: playing }));
+            this.ttsPlayer.onStateChange((playing) => this.setState({ ttsPlaying: playing, ttsActiveSegment: playing ? this.state.ttsActiveSegment : -1 }));
+            this.ttsPlayer.onSegmentChange((segIdx) => this.setState({ ttsActiveSegment: segIdx }));
         }
         Object.values(this.stepTTSPlayers).forEach(p => p.destroy());
         this.stepTTSPlayers = {};
@@ -165,7 +179,8 @@ class Problem extends React.Component {
             }
             if (stepSegments) {
                 const player = new TTSPlayer();
-                player.onStateChange((playing) => this.setState({ ttsPlayingStep: playing ? idx : -1 }));
+                player.onStateChange((playing) => this.setState({ ttsPlayingStep: playing ? idx : -1, ttsActiveSegmentStep: playing ? this.state.ttsActiveSegmentStep : -1 }));
+                player.onSegmentChange((segIdx) => this.setState({ ttsActiveSegmentStep: segIdx }));
                 player.onReady(() => this.forceUpdate());
                 this.stepTTSPlayers[idx] = player;
                 player.fetchAudio(stepSegments);
@@ -606,6 +621,11 @@ class Problem extends React.Component {
             return <div></div>;
         }
 
+        // Extend ThemeContext with TTS info so RenderMedia can access it via renderText
+        const ttsContext = this.enableTTS
+            ? { ...this.context, enableTTS: true, ttsContext: `${problem.title || ""} ${problem.body || ""}`.trim() }
+            : this.context;
+
         const drawerOpen = this.props.drawerOpen;
         const layoutGap = drawerOpen ? 3 : 4;
         const toggleMetaCollapsed = () =>
@@ -688,15 +708,26 @@ class Problem extends React.Component {
                                     }}
                                 >
                                     <div className={classes.problemHeader}>
-                                        {renderText(
-                                            problem.title,
-                                            problem.id,
-                                            chooseVariables(
-                                                problem.variabilization,
-                                                seed
-                                            ),
-                                            this.context
-                                        )}
+                                        {(() => {
+                                            const vars = chooseVariables(problem.variabilization, seed);
+                                            if (!this.enableTTS || !this.state.ttsPlaying) {
+                                                return renderText(problem.title, problem.id, vars, ttsContext);
+                                            }
+                                            // title + body share the same player; title segments come first
+                                            const titleSentences = splitTextIntoSentences(problem.title);
+                                            return titleSentences.map((sentence, sIdx) => (
+                                                <span
+                                                    key={sIdx}
+                                                    style={{
+                                                        backgroundColor: sIdx === this.state.ttsActiveSegment ? "#FFF3CD" : "transparent",
+                                                        borderRadius: 3,
+                                                        transition: "background-color 0.2s",
+                                                    }}
+                                                >
+                                                    {renderText(sentence, problem.id, vars, ttsContext)}
+                                                </span>
+                                            ));
+                                        })()}
                                         {this.enableTTS && this.ttsPlayer && (
                                             <TTSButtons
                                                 playing={this.state.ttsPlaying}
@@ -718,15 +749,26 @@ class Problem extends React.Component {
                                 >
 
                                     <div className={classes.problemBody}>
-                                        {renderText(
-                                            problem.body,
-                                            problem.id,
-                                            chooseVariables(
-                                                problem.variabilization,
-                                                seed
-                                            ),
-                                            this.context
-                                        )}
+                                        {(() => {
+                                            const vars = chooseVariables(problem.variabilization, seed);
+                                            if (!this.enableTTS || !this.state.ttsPlaying) {
+                                                return renderText(problem.body, problem.id, vars, ttsContext);
+                                            }
+                                            // body segments are offset by the number of title segments
+                                            const titleOffset = splitTextIntoSentences(problem.title).length;
+                                            return splitTextIntoSentences(problem.body).map((sentence, sIdx) => (
+                                                <span
+                                                    key={sIdx}
+                                                    style={{
+                                                        backgroundColor: (sIdx + titleOffset) === this.state.ttsActiveSegment ? "#FFF3CD" : "transparent",
+                                                        borderRadius: 3,
+                                                        transition: "background-color 0.2s",
+                                                    }}
+                                                >
+                                                    {renderText(sentence, problem.id, vars, ttsContext)}
+                                                </span>
+                                            ));
+                                        })()}
                                     </div>
                                 </CardContent>
                             </Card>
@@ -811,27 +853,31 @@ class Problem extends React.Component {
                                                     "data-selenium-target": `problem-step-toggle-${idx}`,
                                                 })}
                                             >
-                                                <Typography
-                                                    variant="subtitle1"
-                                                    style={{
-                                                        fontWeight: 800,
-                                                        display: "flex",
-                                                        alignItems: "center",
-                                                    }}
-                                                >
-                                                    {renderText(
-                                                        step.stepTitle,
-                                                        problem.id,
-                                                        chooseVariables(
-                                                            Object.assign(
-                                                                {},
-                                                                problem.variabilization,
-                                                                step.variabilization
-                                                            ),
-                                                            seed
-                                                        ),
-                                                        this.context
-                                                    )}
+                                                <div style={{ display: "flex", alignItems: "center" }}>
+                                                    <Typography
+                                                        variant="subtitle1"
+                                                        style={{ fontWeight: 800 }}
+                                                    >
+                                                        {(() => {
+                                                            const vars = chooseVariables(Object.assign({}, problem.variabilization, step.variabilization), seed);
+                                                            const isPlaying = this.enableTTS && this.state.ttsPlayingStep === idx;
+                                                            if (!isPlaying) {
+                                                                return renderText(step.stepTitle, problem.id, vars, ttsContext);
+                                                            }
+                                                            return splitTextIntoSentences(step.stepTitle).map((sentence, sIdx) => (
+                                                                <span
+                                                                    key={sIdx}
+                                                                    style={{
+                                                                        backgroundColor: sIdx === this.state.ttsActiveSegmentStep ? "#FFF3CD" : "transparent",
+                                                                        borderRadius: 3,
+                                                                        transition: "background-color 0.2s",
+                                                                    }}
+                                                                >
+                                                                    {renderText(sentence, problem.id, vars, ttsContext)}
+                                                                </span>
+                                                            ));
+                                                        })()}
+                                                    </Typography>
                                                     {this.enableTTS && this.stepTTSPlayers[idx] && (
                                                         <TTSButtons
                                                             playing={this.state.ttsPlayingStep === idx}
@@ -840,11 +886,12 @@ class Problem extends React.Component {
                                                             disabled={!this.stepTTSPlayers[idx].isReady()}
                                                         />
                                                     )}
-                                                </Typography>
+                                                </div>
                                             </AccordionSummary>
 
                                                 <ProblemCardWrapper
                                                     enableTTS={this.enableTTS}
+                                                    ttsActiveSegment={this.state.ttsPlayingStep === idx ? this.state.ttsActiveSegmentStep : -1}
                                                     problemID={problem.id}
                                                     step={step}
                                                     index={idx}

@@ -35,7 +35,7 @@ import {
 import { joinList } from "../../util/formListString";
 import withTranslation from "../../util/withTranslation.js"
 import CryptoJS from "crypto-js";
-import TTSPlayer from "../../util/ttsPlayer.js";
+import TTSPlayer, { splitIntoSegments } from "../../util/ttsPlayer.js";
 import TTSButtons from "./TTSButtons.js";
 import { textToReadable } from "../../util/latexToReadable.js";
 
@@ -44,6 +44,16 @@ import {Accordion, AccordionSummary, AccordionDetails, typography} from "@materi
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import withWidth from '@material-ui/core/withWidth';
+
+function splitTextIntoSentences(text) {
+    if (!text) return [text];
+    const parts = text
+        .split(/\\n|\n/)
+        .flatMap(line => line.split(/(?<=[.?!,])\s+/))
+        .map(s => s.trim())
+        .filter(s => s.length > 0);
+    return parts.length > 0 ? parts : [text];
+}
 
 class ProblemCard extends React.Component {
     static contextType = ThemeContext;
@@ -702,6 +712,7 @@ class ProblemCard extends React.Component {
                                         generateHintFromGPT={this.generateHintFromGPT}
                                         isGeneratingHint={this.state.isGeneratingHint}
                                         enableTTS={this.enableTTS}
+                                        problemTitle={this.props.problemTitle}
                                     />
                                 </ErrorBoundary>
                                 <Spacer />
@@ -767,19 +778,27 @@ class ProblemCard extends React.Component {
                     )}
 
                             <div className={"classes.stepBody"}>
-                                {renderText(
-                                    this.step.stepBody,
-                                    problemID,
-                                    chooseVariables(
-                                        Object.assign(
-                                            {},
-                                            problemVars,
-                                            this.step.variabilization
-                                        ),
-                                        seed
-                                    ),
-                                    this.context
-                                )}
+                                {(() => {
+                                    const vars = chooseVariables(Object.assign({}, problemVars, this.step.variabilization), seed);
+                                    const activeSegment = this.props.ttsActiveSegment;
+                                    if (!this.enableTTS || activeSegment == null || activeSegment < 0) {
+                                        return renderText(this.step.stepBody, problemID, vars, this.context);
+                                    }
+                                    // stepTitle segments come before stepBody in the pacedSpeech array
+                                    const titleOffset = splitTextIntoSentences(this.step.stepTitle).length;
+                                    return splitTextIntoSentences(this.step.stepBody).map((sentence, sIdx) => (
+                                        <span
+                                            key={sIdx}
+                                            style={{
+                                                backgroundColor: (sIdx + titleOffset) === activeSegment ? "#FFF3CD" : "transparent",
+                                                borderRadius: 3,
+                                                transition: "background-color 0.2s",
+                                            }}
+                                        >
+                                            {renderText(sentence, problemID, vars, this.context)}
+                                        </span>
+                                    ));
+                                })()}
                             </div>
                             {inlineHints}
 

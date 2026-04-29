@@ -15,6 +15,20 @@
 import axios from "axios";
 import { TTS_API_URL } from "../config/config";
 
+/**
+ * Split a pacedSpeech string into sentence-level segments.
+ * First splits on \n, then on sentence boundaries (.?!).
+ * Used both in TTSPlayer (for audio) and in rendering (for highlight).
+ */
+export function splitIntoSegments(text) {
+    if (!text || !text.trim()) return [];
+    return text
+        .split(/\\n|\n/)
+        .flatMap(line => line.split(/(?<=[.?!,])\s+/))
+        .map(s => s.trim())
+        .filter(s => s.length > 0);
+}
+
 class TTSPlayer {
     constructor() {
         this.audios = null;      // base64 audio data array from API
@@ -22,8 +36,10 @@ class TTSPlayer {
         this.audioUrl = null;    // current object URL
         this.playing = false;
         this.currentSegment = 0;
-        this._onStateChange = null; // callback: (playing) => void
-        this._onReady = null;       // callback: () => void — fired when audio is fetched
+        this.segments = [];      // text segments corresponding to audios
+        this._onStateChange = null;    // callback: (playing) => void
+        this._onReady = null;          // callback: () => void — fired when audio is fetched
+        this._onSegmentChange = null;  // callback: (segmentIndex) => void
         this._destroyed = false;
     }
 
@@ -41,6 +57,13 @@ class TTSPlayer {
         this._onReady = callback;
     }
 
+    /**
+     * Set a callback that fires when the active segment changes during playback
+     */
+    onSegmentChange(callback) {
+        this._onSegmentChange = callback;
+    }
+
     _setPlaying(val) {
         this.playing = val;
         if (this._onStateChange) {
@@ -49,13 +72,22 @@ class TTSPlayer {
     }
 
     /**
-     * Fetch audio from TTS API
-     * @param {string[]} segments - array of text segments to convert to speech
+     * Fetch audio from TTS API.
+     * If a single-element array is passed, it will be split into sentence-level segments.
+     * @param {string[]} rawSegments - array of text segments to convert to speech
      * @returns {Promise<boolean>} true if audio was fetched successfully
      */
-    async fetchAudio(segments) {
+    async fetchAudio(rawSegments) {
         if (this._destroyed) return false;
-        if (!segments || segments.length === 0) return false;
+        if (!rawSegments || rawSegments.length === 0) return false;
+
+        // Split single-string pacedSpeech into sentence-level segments
+        const segments = (rawSegments.length === 1)
+            ? splitIntoSegments(rawSegments[0])
+            : rawSegments;
+
+        if (segments.length === 0) return false;
+        this.segments = segments;
 
         try {
             const response = await axios.post(
@@ -113,6 +145,7 @@ class TTSPlayer {
 
         this.audioRef.play();
         this._setPlaying(true);
+        if (this._onSegmentChange) this._onSegmentChange(segmentIndex);
 
         this.audioRef.onended = () => {
             if (segmentIndex + 1 < this.audios.length) {
@@ -120,6 +153,7 @@ class TTSPlayer {
             } else {
                 this._setPlaying(false);
                 this.currentSegment = 0;
+                if (this._onSegmentChange) this._onSegmentChange(-1);
             }
         };
     }
@@ -188,8 +222,10 @@ class TTSPlayer {
         this._destroyed = true;
         this._cleanupCurrentAudio();
         this.audios = null;
+        this.segments = [];
         this._onStateChange = null;
         this._onReady = null;
+        this._onSegmentChange = null;
     }
 }
 

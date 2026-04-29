@@ -71,6 +71,8 @@ function renderText(text, problemID, variabilization, context) {
                                 url={subPart}
                                 problemID={problemID}
                                 contentSource={CONTENT_SOURCE}
+                                enableTTS={context?.enableTTS || false}
+                                context={context?.ttsContext || ""}
                             />
                         </center>
                     );
@@ -155,6 +157,8 @@ function renderGPTText(text, problemID, variabilization, context) {
                                 url={subPart}
                                 problemID={problemID}
                                 contentSource={CONTENT_SOURCE}
+                                enableTTS={context?.enableTTS || false}
+                                context={context?.ttsContext || ""}
                             />
                         </center>
                     );
