@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Isolate the trigonometric function",
-        "text": "Begin by isolating cos(\u03b8) on one side of the equation.",
+        "text": "Begin by isolating $$\\cos(\\theta)$$ on one side of the equation.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -15,13 +15,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$\\frac{-\\sqrt{2}}{2}$$"
+            "$$-\\frac{\\sqrt{2}}{2}$$"
         ],
         "dependencies": [
             "a590f38trigonometric26a-h1"
         ],
-        "title": "Isolate cos(\u03b8)",
-        "text": "What is cos(\u03b8) equal to?",
+        "title": "Isolate $$\\cos(\\theta)$$",
+        "text": "What is $$\\cos(\\theta)$$ equal to?",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -33,7 +33,7 @@
             "a590f38trigonometric26a-h1"
         ],
         "title": "Identify quadrants",
-        "text": "Determine the quadrants where cos(\u03b8) is negative.",
+        "text": "Determine the quadrants where $$\\cos(\\theta)$$ is negative.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -50,7 +50,7 @@
             "a590f38trigonometric26a-h2"
         ],
         "title": "Quadrants for negative cosine",
-        "text": "In which quadrants is cos(\u03b8) negative?",
+        "text": "In which quadrants is $$\\cos(\\theta)$$ negative?",
         "variabilization": {},
         "oer": "",
         "license": "",
@@ -68,7 +68,7 @@
             "a590f38trigonometric26a-h2"
         ],
         "title": "Find the reference angle",
-        "text": "Determine the reference angle \u03b8' for which cos(\u03b8') $$=$$ $$\\frac{\\sqrt{2}}{2}$$.",
+        "text": "Determine the reference angle $$theta'$$ for which $$\\cos(\\theta') $$=$$ \\frac{\\sqrt{2}}{2}.$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -84,8 +84,8 @@
         "dependencies": [
             "a590f38trigonometric26a-h3"
         ],
-        "title": "Reference angle for cos(theta') $$=$$ $$\\frac{\\sqrt{2}}{2}$$",
-        "text": "What is the reference angle \u03b8' such that cos(\u03b8') $$=$$ $$\\frac{\\sqrt{2}}{2}$$?",
+        "title": "Reference angle for $$\\cos(\\\\theta') $$=$$ \\frac{\\sqrt{2}}{2}$$",
+        "text": "What is the reference angle $$theta'$$ such that $$\\cos(\\theta') $$=$$ \\frac{\\sqrt{2}}{2}$$?",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -108,21 +108,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "pi $$-$$ \u03b8'"
+            "$$\\pi$$ $$-$$ $$theta'$$"
         ],
         "dependencies": [
             "a590f38trigonometric26a-h4"
         ],
         "title": "Angle in Quadrant II",
-        "text": "How do you find the angle in Quadrant II given a reference angle \u03b8'?",
+        "text": "How do you find the angle in Quadrant II given a reference angle $$theta'$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "pi $$-$$ \u03b8'",
-            "pi + \u03b8'",
-            "$$2\\pi$$ $$-$$ \u03b8'",
-            "\u03b8'"
+            "$$\\pi$$ $$-$$ $$theta'$$",
+            "$$\\pi$$ + $$theta'$$",
+            "$$2\\pi$$ $$-$$ $$theta'$$",
+            "$$theta'$$"
         ]
     }
 ]

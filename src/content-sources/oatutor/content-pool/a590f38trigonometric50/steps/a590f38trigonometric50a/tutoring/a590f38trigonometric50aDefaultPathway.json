@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Recognize the form",
-        "text": "This equation is quadratic in form. Let u $$=$$ sin(x) to simplify it.",
+        "text": "This equation is quadratic in form. Let u $$=$$ $$\\sin(x)$$ to simplify it.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -21,7 +21,7 @@
             "a590f38trigonometric50a-h1"
         ],
         "title": "Substitute and solve",
-        "text": "Substitute u $$=$$ sin(x) into $$8{sin}^2 x+6sin\\left(x\\right)+1=0$$ and solve for u.",
+        "text": "Substitute u $$=$$ $$\\sin(x)$$ into 8$$\\sin**{2}(x)$$+6$$\\sin(x)$$+1=0 and solve for u.",
         "variabilization": {},
         "oer": "",
         "license": "",
@@ -39,7 +39,7 @@
             "a590f38trigonometric50a-h1"
         ],
         "title": "Back-substitute",
-        "text": "Now substitute sin(x) back for u and solve sin(x) $$=$$ $$\\frac{-1}{4}$$ and sin(x) $$=$$ $$\\frac{-1}{2}$$ for $$x$$ in the interval (0, 2pi).",
+        "text": "Now substitute $$\\sin(x)$$ back for u and solve $$\\sin(x)$$ $$=$$ $$\\frac{-1}{4$$} $$and$$ $$\\sin(x)$$ $$=$$ $$\\frac{-1}{2$$} $$for$$ $$x$$ $$in$$ $$the$$ $$interval$$ $$(0$$, 2pi).",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -50,21 +50,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\frac{7\\pi}{6}$$, $$\\frac{11\\pi}{6}$$"
+            "$$\\frac{7\\pi}{6$$,} $$\\frac{11\\pi}{6}$$"
         ],
         "dependencies": [
             "a590f38trigonometric50a-h2"
         ],
-        "title": "Solutions for sin(x) $$=$$ $$\\frac{-1}{2}$$",
-        "text": "What are the solutions for sin(x) $$=$$ $$\\frac{-1}{2}$$?",
+        "title": "Solutions for $$\\sin(x)$$ $$=$$ $$\\frac{-1}{2}$$",
+        "text": "What are the solutions for $$\\sin(x)$$ $$=$$ $$\\frac{-1}{2}$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\frac{7\\pi}{6}$$, $$\\frac{11\\pi}{6}$$",
+            "$$\\frac{7\\pi}{6$$,} $$\\frac{11\\pi}{6}$$",
             "$$\\frac{7\\pi}{6}$$",
-            "$$\\frac{\\pi}{6}$$, $$\\frac{5\\pi}{6}$$",
-            "$$\\frac{4\\pi}{3}$$, $$\\frac{5\\pi}{3}$$"
+            "$$\\frac{\\pi}{6$$,} $$\\frac{5\\pi}{6}$$",
+            "$$\\frac{4\\pi}{3$$,} $$\\frac{5\\pi}{3}$$"
         ]
     },
     {
@@ -73,8 +73,8 @@
         "dependencies": [
             "a590f38trigonometric50a-h2"
         ],
-        "title": "Solutions for sin(x) $$=$$ $$\\frac{-1}{4}$$",
-        "text": "For sin(x) $$=$$ $$\\frac{-1}{4}$$, use the inverse sine function and consider the quadrants where sine is negative.",
+        "title": "Solutions for $$\\sin(x)$$ $$=$$ $$\\frac{-1}{4}$$",
+        "text": "For $$\\sin(x)$$ $$=$$ $$\\frac{-1}{4}$$, $$use$$ $$the$$ $$inverse$$ $$sine$$ $$function$$ $$and$$ $$consider$$ $$the$$ $$quadrants$$ $$where$$ $$sine$$ $$is$$ $$negative$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -85,21 +85,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "pi + $$\\arcsin\\left(\\frac{1}{4}\\right)$$, $$2\\pi$$ $$-$$ $$\\arcsin\\left(\\frac{1}{4}\\right)$$"
+            "$$\\pi$$ + $$\\arcsin(\\frac{1}{4})$$, $$2\\pi$$ $$-$$ $$\\arcsin(\\frac{1}{4})$$"
         ],
         "dependencies": [
             "a590f38trigonometric50a-h3"
         ],
-        "title": "Solutions for sin(x) $$=$$ $$\\frac{-1}{4}$$",
-        "text": "What are the solutions for sin(x) $$=$$ $$\\frac{-1}{4}$$?",
+        "title": "Solutions for $$\\sin(x)$$ $$=$$ $$\\frac{-1}{4}$$",
+        "text": "What are the solutions for $$\\sin(x)$$ $$=$$ $$\\frac{-1}{4}$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "pi + $$\\arcsin\\left(\\frac{1}{4}\\right)$$, $$2\\pi$$ $$-$$ $$\\arcsin\\left(\\frac{1}{4}\\right)$$",
-            "pi + $$\\arcsin\\left(\\frac{1}{4}\\right)$$",
-            "$$\\arcsin\\left(\\frac{1}{4}\\right)$$, pi $$-$$ $$\\arcsin\\left(\\frac{1}{4}\\right)$$",
-            "pi $$-$$ $$\\arcsin\\left(\\frac{1}{4}\\right)$$, $$2\\pi$$ + $$\\arcsin\\left(\\frac{1}{4}\\right)$$"
+            "$$\\pi$$ + $$\\arcsin(\\frac{1}{4})$$, $$2\\pi$$ $$-$$ $$\\arcsin(\\frac{1}{4})$$",
+            "$$\\pi$$ + $$\\arcsin(\\frac{1}{4})$$",
+            "$$\\arcsin(\\frac{1}{4})$$, $$\\pi$$ $$-$$ $$\\arcsin(\\frac{1}{4})$$",
+            "$$\\pi$$ $$-$$ $$\\arcsin(\\frac{1}{4})$$, $$2\\pi$$ + $$\\arcsin(\\frac{1}{4})$$"
         ]
     }
 ]

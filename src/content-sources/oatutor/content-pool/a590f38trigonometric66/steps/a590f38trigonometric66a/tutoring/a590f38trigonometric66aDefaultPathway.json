@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Recognize Quadratic Form",
-        "text": "The equation is quadratic in terms of tanx.",
+        "text": "The equation is quadratic in terms of $$\\tan$$ $$x$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -15,21 +15,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$y$$ $$=$$ tanx"
+            "$$y$$ $$=$$ $$\\tan$$ $$x$$"
         ],
         "dependencies": [
             "a590f38trigonometric66a-h1"
         ],
-        "title": "Substitute for tanx",
+        "title": "Substitute for $$\\tan$$ $$x$$",
         "text": "What substitution can you make to simplify this equation?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$y$$ $$=$$ tanx",
+            "$$y$$ $$=$$ $$\\tan$$ $$x$$",
             "$$y$$ $$=$$ $$x$$",
-            "$$y$$ $$=$$ $${tan}^2 x$$",
-            "$$y$$ $$=$$ $$\\frac{1}{tanx}$$"
+            "$$y$$ $$=$$ \\tan**{2} $$x$$",
+            "$$y$$ $$=$$ 1/\\tan $$x$$"
         ]
     },
     {
@@ -39,7 +39,7 @@
             "a590f38trigonometric66a-h1"
         ],
         "title": "Apply Quadratic Formula",
-        "text": "Use the quadratic formula to solve for tanx.",
+        "text": "Use the quadratic formula to solve for $$\\tan$$ $$x$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -50,21 +50,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\frac{\\left(-5+\\sqrt{29}\\right)}{2}$$, $$\\frac{\\left(-5-\\sqrt{29}\\right)}{2}$$"
+            "$$\\frac{-5$$ + \\sqrt{29}}{2}, $$\\frac{-5$$ $$-$$ \\sqrt{29}}{2}$$"
         ],
         "dependencies": [
             "a590f38trigonometric66a-h2"
         ],
-        "title": "Solve for tanx",
-        "text": "What are the two values for tanx?",
+        "title": "Solve for $$\\tan$$ $$x$$",
+        "text": "What are the two values for $$\\tan$$ $$x$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\frac{\\left(-5+\\sqrt{29}\\right)}{2}$$, $$\\frac{\\left(-5-\\sqrt{29}\\right)}{2}$$",
-            "$$\\frac{5+\\sqrt{29}}{2}$$, $$\\frac{5-\\sqrt{29}}{2}$$",
-            "$$\\frac{\\left(-5+\\sqrt{21}\\right)}{2}$$, $$\\frac{\\left(-5-\\sqrt{21}\\right)}{2}$$",
-            "$$\\frac{\\left(-5+\\sqrt{29}\\right)}{\\left(-2\\right)}$$, $$\\frac{\\left(-5-\\sqrt{29}\\right)}{\\left(-2\\right)}$$"
+            "$$\\frac{-5$$ + \\sqrt{29}}{2}, $$\\frac{-5$$ $$-$$ \\sqrt{29}}{2}$$",
+            "$$\\frac{5$$ + \\sqrt{29}}{2}, $$\\frac{5$$ $$-$$ \\sqrt{29}}{2}$$",
+            "$$\\frac{-5$$ + \\sqrt{21}}{2}, $$\\frac{-5$$ $$-$$ \\sqrt{21}}{2}$$",
+            "$$\\frac{-5$$ + \\sqrt{29}}{-2}, $$\\frac{-5$$ $$-$$ \\sqrt{29}}{-2}$$"
         ]
     },
     {
@@ -74,7 +74,7 @@
             "a590f38trigonometric66a-h2"
         ],
         "title": "Find $$x$$ values",
-        "text": "Determine the values of $$x$$ in the interval (0, 2pi) for each tanx value.",
+        "text": "Determine the values of $$x$$ in the interval $$(0$$, $$2\\pi)$$ for each $$\\tan$$ $$x$$ value.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -85,21 +85,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$x=arctan(k)$$, $$\\pi+\\arctan\\left(k\\right)$$"
+            "$$x$$ $$=$$ $$\\arctan(k)$$, $$\\pi$$ + $$\\arctan(k)$$"
         ],
         "dependencies": [
             "a590f38trigonometric66a-h3"
         ],
-        "title": "General Solution for $$tanx=k$$",
-        "text": "If $$tanx=k$$, how do you find all solutions for $$x$$ in (0, 2pi)?",
+        "title": "General Solution for $$\\tan$$ $$x$$ $$=$$ $$k$$",
+        "text": "If $$\\tan$$ $$x$$ $$=$$ $$k$$, $$how$$ $$do$$ $$you$$ $$find$$ $$all$$ $$solutions$$ $$for$$ $$x$$ $$in$$ $$(0$$, $$2\\pi)$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$x=arctan(k)$$, $$\\pi+\\arctan\\left(k\\right)$$",
-            "$$x=arctan(k)$$, $$2\\pi+\\arctan\\left(k\\right)$$",
-            "$$x=arctan(k)$$, $$-\\pi+\\arctan\\left(k\\right)$$",
-            "$$x=arctan(k)$$, $$pi-arctan(k)$$"
+            "$$x$$ $$=$$ $$\\arctan(k)$$, $$\\pi$$ + $$\\arctan(k)$$",
+            "$$x$$ $$=$$ $$\\arctan(k)$$, $$2\\pi$$ + $$\\arctan(k)$$",
+            "$$x$$ $$=$$ $$\\arctan(k)$$, $$-\\pi$$ + $$\\arctan(k)$$",
+            "$$x$$ $$=$$ $$\\arctan(k)$$, $$\\pi$$ $$-$$ $$\\arctan(k)$$"
         ]
     }
 ]
