@@ -1,0 +1,83 @@
+[
+    {
+        "id": "af40364Q2ab-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variance of Estimator",
+        "text": "We are now finding the variance of the estimator \\alpha_hat, not its bias. Variance tells us how much the estimator changes from sample to sample. A smaller variance means the estimator is more stable.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af40364Q2ab-h2",
+        "type": "hint",
+        "dependencies": [
+            "af40364Q2ab-h1"
+        ],
+        "title": "Variance Rule for Constants",
+        "text": "If c is a constant, then $$Var(cX)=c^2 \\operatorname{Var}\\left(X\\right)$$. Using this: Var(\\alpha_hat)=Var((1/100)*sum{i\\=1}{100}{X_i})=(1/100)**2*Var(sum{i\\=1}{100}{X_i})",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af40364Q2ab-h3",
+        "type": "hint",
+        "dependencies": [
+            "af40364Q2ab-h2"
+        ],
+        "title": "Independence in Context of Variance",
+        "text": "Because the $$X_i$$ are independent, their covariance is $$0$$. So, the variance of their sum is simply the sum of their variances. Using this: (1/100)**2*Var(sum{i\\=1}{100}{X_i})=(1/100)**2*(Var(X_1)+Var(X_2)+...+Var(X_100))",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af40364Q2ab-h4",
+        "type": "hint",
+        "dependencies": [
+            "af40364Q2ab-h3"
+        ],
+        "title": "Use the Common Variance Value",
+        "text": "The problem says each observation has the same variance of $${\\sigma}^2$$. So, the sum of variances becomes $$100$$ copies of $${\\sigma}^2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af40364Q2ab-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{{\\sigma}^2}{100}$$"
+        ],
+        "dependencies": [
+            "af40364Q2ab-h4"
+        ],
+        "title": "Simplify the Sum",
+        "text": "Simplifying: $$\\left(\\frac{1}{100}\\right)^2 \\left(\\operatorname{Var}\\left(X_1\\right)+\\operatorname{Var}\\left(X_2\\right)+...+\\operatorname{Var}\\left(X_{100}\\right)\\right)=\\left(\\frac{1}{100}\\right)^2 100{\\sigma}^2$$ What is the simplified expression?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{{\\sigma}^2}{100}$$",
+            "$$\\frac{{\\sigma}^2}{10}$$",
+            "$${\\sigma}^2$$",
+            "$$\\frac{{\\sigma}^2}{{100}^2}$$"
+        ]
+    },
+    {
+        "id": "af40364Q2ab-h6",
+        "type": "hint",
+        "dependencies": [
+            "af40364Q2ab-h5"
+        ],
+        "title": "Understanding Variance Conceptually",
+        "text": "This shows that averaging $$100$$ independent observations reduces variability by a factor of $$100$$. Var(\\alpha_hat) describes how much the sample mean would vary across repeated random samples of $$100$$ students. Even if individual students vary a lot, averaging many students makes the estimator more stable.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

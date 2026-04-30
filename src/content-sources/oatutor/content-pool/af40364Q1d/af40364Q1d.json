@@ -1,0 +1,10 @@
+{
+    "id": "af40364Q1d",
+    "title": "Basketball SQL with Teams!",
+    "body": "Willy wants to see how Berkeley IM sports compare to IM sports at other UC campuses. He finds a public SQL Database with all the IM teams across all UC campuses since $$2020$$. The database contains a table teams. Here are the columns of teams:\\n\u2022 $$team_{id}$$: the primary key of the table $$(type=int)$$\\n\u2022 $$team_{name}$$: the name of the team. At each UC campus, teams can only play for one semester and team names are unique across semesters. But, team names are not necessarily unique across UC campuses. $$(type=String)$$\\n\u2022 $$uc_{campus}$$: the UC Campus that the team is from $$(type=String)$$\\n\u2022 semester: the semester that this team played. You can assume that all UC campuses have only the Fall and Spring semester for IM sports $$(type=String)$$\\n\u2022 sport: the sport that this team played $$(type=String)$$ \u2022 players: the number of players in the team $$(type=int)$$\\n\\nThe first five rows of teams are shown.\\n\\nWrite an SQL query that returns a table with the number of IM basketball teams at each UC campus, sorted by the number of IM basketball teams in descending order. There should be two columns (uc_campus and num_teams). Fill in the blanks below. Assume that DuckDB is imported and teams can be queried as an SQL table.\\n##figure1.gif##\\n##figure2.gif",
+    "variabilization": {},
+    "oer": "https://ds100.org/sp26/assets/exams/fa25/fa25_final_sol.pdf",
+    "license": 0.0,
+    "lesson": "worksheet",
+    "courseName": "Data 100 Staging Sheet"
+}

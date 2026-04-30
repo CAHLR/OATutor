@@ -1,0 +1,24 @@
+[
+    {
+        "id": "af40364Q5ca-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using the Decision Threshold",
+        "text": "Compare each predicted probability in the table to $$.45$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af40364Q5ca-h2",
+        "type": "hint",
+        "dependencies": [
+            "af40364Q5ca-h1"
+        ],
+        "title": "Predicting Class Labels",
+        "text": "If the predicted probability is at least $$.45$$, then the model predicts a win. If not, it predicts a loss.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
