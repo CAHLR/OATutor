@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Differentiate squared error",
-        "text": "For $$r_i=y_i-\\theta_1$$ x_{i1}-\u03b8_2 x_{i2}, $$\\frac{d}{dtheta_1}$$ $${r_i}^2=2$$ $$r_i$$ \u00b7 $$d$$ $$\\frac{r_i}{dtheta_1}$$ and $$d$$ r_i/d\u03b8_1=-x_{i1}.",
+        "text": "For $$r_i=y_i-\\theta_1 x1_i-\\theta_2 x2_i$$, $$\\frac{d}{dtheta_1} {r_i}^2=\\frac{2r_i d r_i}{dtheta_1}$$ and $$\\frac{d r_i}{dtheta_1}=-x1_i$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -28,7 +28,7 @@
             "af40364q3f1a-h2"
         ],
         "title": "Sign check",
-        "text": "Because dr_i/d\u03b8_1=-x_{i1}, the gradient contribution from the data term has a leading negative sign.",
+        "text": "Because $$\\frac{d r_i}{dtheta_1}=-x1_i$$, the gradient contribution from the data term has a leading negative sign.",
         "variabilization": {},
         "oer": "",
         "license": ""
