@@ -7,7 +7,6 @@ import {
     Card,
     TextField,
     Typography,
-    Box,
     Paper,
     IconButton,
     CircularProgress
@@ -216,16 +215,44 @@ class AgentChatbox extends React.Component {
         }
     };
 
+    // Build a one-shot greeting from the current problem context. Returned as
+    // an array so callers can splice it into `messages`. Kept agent-free
+    // (purely client-side, no LLM call) — the goal is just to invite the
+    // student to drive the conversation per the open-inquiry research finding,
+    // not to make a contextual diagnosis.
+    buildGreetingMessages = () => {
+        const title = this.props.problem?.title;
+        const subject = title ? `**${title}**` : 'this problem';
+        return [{
+            id: `greeting-${Date.now()}`,
+            role: 'assistant',
+            content: `Hello! I'm Oski, your AI tutor. I'm here to think through ${subject} with you — feel free to ask me anything, or tell me where you're stuck.`,
+            timestamp: Date.now(),
+            isGenerating: false,
+        }];
+    };
+
     toggleChat = () => {
-        this.setState(prevState => ({
-            isVisible: !prevState.isVisible
-        }));
+        this.setState(prevState => {
+            const opening = !prevState.isVisible;
+            // Seed the greeting the first time the chat is opened for this
+            // session. If the student already has a conversation going, leave
+            // it alone.
+            const needsGreeting = opening && prevState.messages.length === 0;
+            return {
+                isVisible: opening,
+                messages: needsGreeting ? this.buildGreetingMessages() : prevState.messages,
+            };
+        });
     };
 
     clearConversation = () => {
         agentHelper.initializeSession();
+        // Reset to a fresh greeting rather than an empty pane so the student
+        // is always met with an invitation to ask, including after switching
+        // problems (componentDidUpdate calls this on problem change).
         this.setState({
-            messages: [],
+            messages: this.buildGreetingMessages(),
             agentSessionId: agentHelper.getSessionId()
         });
     };
@@ -616,14 +643,6 @@ class AgentChatbox extends React.Component {
                 </div>
 
                 <div className={classes.chatMessages}>
-                    {messages.length === 0 && (
-                        <Box textAlign="center" color="text.secondary" py={2}>
-                            <Typography variant="body2">
-                                Hi! I'm your AI tutor. Ask me anything about this problem!
-                            </Typography>
-                        </Box>
-                    )}
-
                     {messages.map((message) => (
                         <div
                             key={message.id}
