@@ -1,0 +1,10 @@
+{
+    "id": "af40364Q1e",
+    "title": "Basketball SQL with Results!",
+    "body": "The database also contains a table called results that summarizes the performances of these teams. Here are the columns of results:\\n\u2022 $$result_{id}$$: the primary key of the table $$(type=int)$$\\n\u2022 $$team_{id}$$: a foreign key referring to the $$team_{id}$$ in the teams table $$(type=int)$$\\n\u2022 $$points_{scored}$$: the number of points the team scored for that game $$(type=int)$$.\\n\\nThe first five rows of results are shown.\\n\\nWilly wants to determine which UC campus has the weakest IM Basketball teams. Help Willy write an SQL query that returns a table with the following conditions:\\n$$1$$. Each row of the table has the name of a UC Campus and the sum of all points scored across all games played at that UC Campus that meet the conditions in (2). The name of the columns should be $$uc_{campus}$$ and $$total_{points}$$, respectively.\\n$$2$$. The table should only include UC campuses where the average points scored by each team in every game is at least $$25$$. The table should only include points scored by IM Basketball teams (i.e., no other sports).\\n$$3$$. The table should be ordered by $$total_{points}$$ in ascending order.\\n\\nTeams is shown again, for reference\\n\\nFill in the blanks below. Assume that DuckDB is imported, and teams and results can be queried as SQL tables.\\n##figure1.gif##\\n##figure2.gif##\\n##figure3.gif",
+    "variabilization": {},
+    "oer": "https://ds100.org/sp26/assets/exams/fa25/fa25_final_sol.pdf",
+    "license": 0.0,
+    "lesson": "worksheet",
+    "courseName": "Data 100 Staging Sheet"
+}
