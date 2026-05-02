@@ -4,8 +4,8 @@
         "FALSE"
     ],
     "problemType": "MultipleChoice",
-    "stepTitle": "basketball.groupby('Team')['Day'].size()",
-    "stepBody": "Suppose Jake correctly creates the Day column described in the previous question. Jake wants to know which days of the week have the most teams playing. Which of the following line(s) of code returns a Series with the number of teams that have played during each day, across all semesters in basketball?",
+    "stepTitle": "Writing Pandas $$3$$",
+    "stepBody": "Suppose Jake correctly creates the Day column described in the previous question. Jake wants to know which days of the week have the most teams playing. Does following line(s) of code returns a Series with the number of teams that have played during each day, across all semesters in basketball?\\n\\nbasketball.groupby('Team')['Day'].size()",
     "answerType": "string",
     "variabilization": {},
     "choices": [

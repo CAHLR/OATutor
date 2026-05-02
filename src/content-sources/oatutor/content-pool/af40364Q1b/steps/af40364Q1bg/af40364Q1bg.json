@@ -1,11 +1,11 @@
 {
     "id": "af40364Q1bg",
     "stepAnswer": [
-        "FALSE"
+        "TRUE"
     ],
     "problemType": "MultipleChoice",
-    "stepTitle": "r\"(Fall \\d*|Spring \\d*)\"",
-    "stepBody": "Jake creates a new Semester column that contains the semester mentioned in the Team Description column. Jake writes the following skeleton code: $$basketball['Semester']=basketball['Team$$ $$Description'].str.extract(___iv___)$$\\n\\nWhich of the following regex patterns correctly fills the blank (iv) to create the Semester column? For example, your chosen regex pattern should extract the text \"Fall 2025\" from the example below: \"D(100) Hoopers played during the Fall $$2025$$ semester on Monday\"\\nNote: The special character refers to a single space.\\nAssumptions: All entries in the Team Description column follow the format below. No team name contains the words Spring or Fall. IM basketball does not happen during the summer semester.\\n\\n{$$Team_{Name}$$} played during the {$$\\frac{Fall}{Spring}$$} {Year} semester on {Day}",
+    "stepTitle": "Using Regex in Basketball $$4$$",
+    "stepBody": "Jake creates a new Semester column that contains the semester mentioned in the Team Description column. He writes the following skeleton code:\\n\\n$$basketball['Semester']=basketball['Team$$ Description'].str.extract(iv)\\n\\nVerify if the following regex pattern correctly fills the blank (iv) to create the Semester column? For example, your chosen regex pattern should extract the text \"Fall 2025\" from the example below: \"D(100) Hoopers played during the Fall $$2025$$ semester on Monday.\"\\n\\nAssumptions: No team name contains the words Spring or Fall. IM basketball does not happen during the summer semester. All entries in the Team Description column follow this format: {$$Team_{Name}$$} played during the {$$\\frac{Fall}{Spring}$$} {Year} semester on {Day}.\\n\\nPattern: r\"(Fall \\d*|Spring \\d*)\"",
     "answerType": "string",
     "variabilization": {},
     "choices": [
