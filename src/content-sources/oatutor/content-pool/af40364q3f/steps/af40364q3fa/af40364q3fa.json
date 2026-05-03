@@ -1,11 +1,18 @@
 {
     "id": "af40364q3fa",
     "stepAnswer": [
-        "-(1/n)*sum{i\\=1}{n}{(y_i-\u03b8_1*x1_i-\u03b8_2*x2_i)*x1_i}+\u03bb*\u03b8_1"
+        "$$\\frac{\\partial$$ L}{\\partial\\theta_1}=-\\frac{1}{n}\\sum_{i=1}**{n}(y_i-\\theta_1x_{i1}-\\theta_2x_{i2})x_{i1}+\\lambda\\theta_1$$"
     ],
-    "problemType": "TextBox",
+    "problemType": "MultipleChoice",
     "stepTitle": "Enter \u2202L/\u2202\u03b8\u2081",
     "stepBody": "Use the given loss function to derive \u2202L/\u2202\u03b8\u2081. Use sum{i\\=1}{n}{...} for summations in your answer.",
-    "answerType": "arithmetic",
-    "variabilization": {}
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "$$\\frac{\\partial$$ L}{\\partial\\theta_1}=-\\frac{1}{n}\\sum_{i=1}**{n}(y_i-\\theta_1x_{i1}-\\theta_2x_{i2})x_{i1}+\\lambda\\theta_1$$",
+    "choices": [
+        "$$\\frac{\\partial$$ L}{\\partial\\theta_1}=-\\frac{1}{n}\\sum_{i=1}**{n}(y_i-\\theta_1x_{i1}-\\theta_2x_{i2})x_{i1}+\\lambda\\theta_1$$",
+        "$$\\frac{\\partial$$ L}{\\partial\\theta_1}=-\\frac{1}{n}\\sum_{i=1}**{n}(y_i-\\theta_1x_{i1}-\\theta_2x_{i2})x_{i1}$$",
+        "$$\\frac{\\partial$$ L}{\\partial\\theta_1}=-\\frac{1}{n}\\sum_{i=1}**{n}(y_i-\\theta_1x_{i1}-\\theta_2x_{i2})x_{i2}+\\lambda\\theta_1$$",
+        "$$\\frac{\\partial$$ L}{\\partial\\theta_1}=\\frac{1}{n}\\sum_{i=1}**{n}(y_i-\\theta_1x_{i1}-\\theta_2x_{i2})x_{i1}+\\lambda\\theta_1$$"
+    ]
 }
