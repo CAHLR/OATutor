@@ -1,6 +1,6 @@
 [
     {
-        "id": "af40364q3f1a-h1",
+        "id": "af40364q3fa-h1",
         "type": "hint",
         "dependencies": [],
         "title": "Differentiate squared error",
@@ -10,10 +10,10 @@
         "license": ""
     },
     {
-        "id": "af40364q3f1a-h2",
+        "id": "af40364q3fa-h2",
         "type": "hint",
         "dependencies": [
-            "af40364q3f1a-h1"
+            "af40364q3fa-h1"
         ],
         "title": "Don\u2019t forget the regularization term",
         "text": "The derivative of the regularization term is:\\n$$\\frac{d}{d\\theta_1}\\left[\\frac{\\lambda}{2}\\theta_1**{2}\\right]=\\lambda\\theta_1$$",
@@ -22,10 +22,10 @@
         "license": ""
     },
     {
-        "id": "af40364q3f1a-h3",
+        "id": "af40364q3fa-h3",
         "type": "hint",
         "dependencies": [
-            "af40364q3f1a-h2"
+            "af40364q3fa-h2"
         ],
         "title": "Sign check",
         "text": "Because $$\\frac{d r_i}{dtheta_1}=-x1_i$$, the gradient contribution from the data term has a leading negative sign.",
