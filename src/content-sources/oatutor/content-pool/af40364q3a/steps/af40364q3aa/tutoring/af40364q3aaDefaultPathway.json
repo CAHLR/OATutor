@@ -1,0 +1,36 @@
+[
+    {
+        "id": "af40364q3aa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition: linear in \u03b8",
+        "text": "A model is linear in \u03b8 if it can be written as y_hat=\u03b8_0+\u03b8_1*\u03c6_1(x)+\u03b8_2*\u03c6_2(x)+... where the $$\\Phi_j$$ (x) are functions of $$x$$ only (no \u03b8 inside them).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af40364q3aa-h2",
+        "type": "hint",
+        "dependencies": [
+            "af40364q3aa-h1"
+        ],
+        "title": "Common non-linear-in-\u03b8 patterns",
+        "text": "Not linear in \u03b8 if: parameters are multiplied together:\\n$$\\theta_1\\cdot\\theta_2$$\\nraised to powers:\\n$$(\\theta_2)**{2}$$\\nor appear inside non-linear functions such as sin(\u03b8\u2081) or exp(\u03b8).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af40364q3aa-h3",
+        "type": "hint",
+        "dependencies": [
+            "af40364q3aa-h2"
+        ],
+        "title": "Apply to this model",
+        "text": "Check each term: does any term contain \u03b8 inside a non-linear function, power, or product with another \u03b8? If yes \u2192 not linear in \u03b8.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
