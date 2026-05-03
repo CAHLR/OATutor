@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Identify the estimator and target parameter",
-        "text": "The estimator is given by:\\n$$\\hat{\\alpha}=\\frac{1}{100}\\sum_{i=1}**{100}X_i$$\\nIt is trying to estimate the parameter:\\n$$\\alpha=E[X_i]$$\\nThus, \\alpha is the true population mean number of games attended (parameter), while \\alpha\u0302 is the sample mean computed from the $$100$$ observed students.",
+        "text": "The estimator is given by:\\n$$\\hat{\\alpha}=\\frac{1}{100}\\sum_{i=1}**{100}X_i$$\\nIt is trying to estimate the parameter:\\n$$\\alpha=E[X_i]$$\\n\\nThus, alpha is the true population mean number of games attended (parameter), while \\alpha\u0302 is the sample mean computed from the $$100$$ observed students.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -16,7 +16,7 @@
             "af40364Q2aa-h1"
         ],
         "title": "Understanding Bias",
-        "text": "The bias of an estimator tells us whether, on average, the estimator overestimates or underestimates the true parameter. It is defined as Bias(\\alpha_hat)=E[\\alpha_hat]-\\alpha. If the bias is $$0$$, the estimator is called unbiased.",
+        "text": "The bias of an estimator tells us whether, on average, the estimator overestimates or underestimates the true parameter. It is defined as $$Bias(a-hat)=E[a-hat]-a$$. If the bias is $$0$$, the estimator is called unbiased.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -27,7 +27,7 @@
         "dependencies": [
             "af40364Q2aa-h2"
         ],
-        "title": "Compute E[\\alpha\u0302] first",
+        "title": "Compute E[a-hat] first",
         "text": "Substitute the given estimator into the expectation:\\n$$E[\\hat{\\alpha}]=E\\left[\\frac{1}{100}\\sum_{i=1}**{100}X_i\\right]$$",
         "variabilization": {},
         "oer": "",
@@ -63,7 +63,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "\\alpha"
+            "a"
         ],
         "dependencies": [
             "af40364Q2aa-h5"
@@ -74,10 +74,10 @@
         "oer": "",
         "license": "",
         "choices": [
-            "\\alpha",
-            "100\\alpha",
-            "10\\alpha",
-            "100**2\\alpha"
+            "a",
+            "$$100a$$",
+            "$$10a$$",
+            "$${100}^2a$$"
         ]
     },
     {
@@ -87,7 +87,7 @@
             "af40364Q2aa-h6"
         ],
         "title": "Compute Bias",
-        "text": "We know that $$E[\u0007lpha_hat]=\\alpha$$. Plug this into the bias formula: Bias(\\alpha_hat)=E[\\alpha_hat]-\\alpha=\\alpha-\\alpha=0. Thus, the estimator is unbiased.",
+        "text": "We know that $$E[a-hat]=a$$. Plug this into the bias formula: $$Bias(a-hat)=E[a-hat]-a=a-a=0$$. Thus, the estimator is unbiased.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -99,7 +99,7 @@
             "af40364Q2aa-h7"
         ],
         "title": "Understanding Unbiased Estimator",
-        "text": "An estimator is unbiased if its expected value equals the true parameter: $$E[\u0007lpha_hat]=\\alpha$$. This does not mean every sample gives the exact true value. It means that over many repeated random samples, the estimator is centered at the truth on average.",
+        "text": "An estimator is unbiased if its expected value equals the true parameter: $$E[a-hat]=a$$. This does not mean every sample gives the exact true value. It means that over many repeated random samples, the estimator is centered at the truth on average.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -111,7 +111,7 @@
             "af40364Q2aa-h8"
         ],
         "title": "Concept Check: parameter vs estimator",
-        "text": "The parameter \\alpha is a fixed but unknown population value. The estimator \\alpha_hat depends on the random sample, so it changes from sample to sample.",
+        "text": "The parameter a is a fixed but unknown population value. The estimator a-hat depends on the random sample, so it changes from sample to sample.",
         "variabilization": {},
         "oer": "",
         "license": ""
