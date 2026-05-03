@@ -21,7 +21,7 @@
             "af40364Q5ba-h1"
         ],
         "title": "Compute the Linear Score",
-        "text": "Compute the linear score by multiplying the parameter vector by the feature vector for the new game:\\n$$z=\\hat{\\theta}**{T}\\begin{pmatrix}1\\\\\\\\\\text{opponent $$fans}\\\\\\\\\\text{One-Hot$$ $$Wonders$$ $$fans}\\end{pmatrix}$$",
+        "text": "Compute the linear score by multiplying the parameter vector by the feature vector for the new game:\\n$$z=\\hat{\\theta}**{T}\\begin{pmatrix}1\\\\\\\\x_1\\\\\\\\x_2\\end{pmatrix}$$\\nwhere x\u2081 is opponent fans and x\u2082 is One-Hot Wonders fans.",
         "variabilization": {},
         "oer": "",
         "license": ""
