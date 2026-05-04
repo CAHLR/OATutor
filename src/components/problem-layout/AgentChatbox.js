@@ -1,4 +1,5 @@
 import React from 'react';
+import { CONTENT_SOURCE } from '@common/global-config';
 import { agentHelper } from './AgentHelper';
 import MessageRenderer from './MessageRenderer';
 import { withStyles } from '@material-ui/core/styles';
@@ -33,7 +34,8 @@ const styles = (theme) => ({
         minWidth: 300,
         minHeight: 400,
         maxWidth: '95vw',
-        maxHeight: '90vh'
+        maxHeight: '90vh',
+        fontFamily: '"Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
     },
     chatHeader: {
         background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
@@ -41,7 +43,8 @@ const styles = (theme) => ({
         padding: '12px 16px',
         display: 'flex',
         justifyContent: 'space-between',
-        alignItems: 'center'
+        alignItems: 'center',
+        boxShadow: '0 1px 0 rgba(255, 255, 255, 0.25)'
     },
     chatTitle: {
         display: 'flex',
@@ -52,8 +55,8 @@ const styles = (theme) => ({
     chatMessages: {
         flex: 1,
         overflowY: 'auto',
-        padding: 16,
-        backgroundColor: '#f5f5f5',
+        padding: '20px 24px',
+        backgroundColor: '#f7f7fb',
         display: 'flex',
         flexDirection: 'column',
         gap: 12
@@ -61,13 +64,15 @@ const styles = (theme) => ({
     message: {
         display: 'flex',
         flexDirection: 'column',
-        gap: 4
+        gap: 4,
+        width: '100%'
     },
     userMessage: {
         alignItems: 'flex-end'
     },
     assistantMessage: {
-        alignItems: 'flex-start'
+        alignItems: 'stretch',
+        marginTop: 8
     },
     messageBubble: {
         padding: '10px 14px',
@@ -76,12 +81,17 @@ const styles = (theme) => ({
         wordWrap: 'break-word'
     },
     userBubble: {
-        backgroundColor: '#667eea',
+        backgroundColor: '#7c8cff',
         color: 'white'
     },
     assistantBubble: {
         backgroundColor: 'white',
         color: '#333'
+    },
+    assistantContent: {
+        width: '100%',
+        maxWidth: '100%',
+        wordWrap: 'break-word'
     },
     messageMeta: {
         display: 'flex',
@@ -299,6 +309,9 @@ class AgentChatbox extends React.Component {
         // Get context from props
         const problemContext = this.getProblemContext();
         const studentState = this.getStudentState();
+        const { text, figureUrls } = this.extractConceptExplorationInput(userMessage, problemContext);
+        const images = await this.fetchFiguresAsBase64(figureUrls);
+        const extracted = { text, images };
 
         const assistantMessageId = `assistant-${messageId}`;
 
@@ -308,6 +321,7 @@ class AgentChatbox extends React.Component {
                 userMessage,
                 problemContext,
                 studentState,
+                extracted,
                 {
                     onChunkReceived: (partialResponse) => {
                         this.setState(prevState => ({
@@ -346,11 +360,72 @@ class AgentChatbox extends React.Component {
                         }));
                     }
                 }
+            ,
+            extracted
             );
         } catch (error) {
             // Error already handled in callbacks
         }
     };
+
+    extractConceptExplorationInput(userMessage, problemContext) {
+        const sources = [
+            userMessage || '',
+            problemContext?.problemTitle ? `Problem title: ${problemContext.problemTitle}` : '',
+            problemContext?.problemBody ? `Problem body: ${problemContext.problemBody}` : '',
+            problemContext?.currentStep?.title ? `Step title: ${problemContext.currentStep.title}` : '',
+            problemContext?.currentStep?.body ? `Step body: ${problemContext.currentStep.body}` : '',
+        ].filter(Boolean);
+
+        const combined = sources.join('\n\n');
+
+        // Collect figure filenames from ##filename tokens (same convention as RenderMedia).
+        // Only figures from the current problem are collected; the path is identical to what
+        // RenderMedia builds, so if the student can see the image the URL is resolvable.
+        const figureUrls = [];
+        const problemID = problemContext?.problemID;
+        if (problemID) {
+            const figTokenRegex = /##([^\s#\n]+)/g;
+            let m;
+            while ((m = figTokenRegex.exec(combined)) !== null) {
+                const filename = (m[1] || '').trim();
+                if (filename) {
+                    const base = (process.env.PUBLIC_URL || '').replace(/\/$/, '');
+                    figureUrls.push(
+                        `${window.location.origin}${base}/static/images/figures/${CONTENT_SOURCE}/${problemID}/${filename}`
+                    );
+                }
+            }
+        }
+
+        return {
+            label: 'Concept Exploration',
+            text: combined,
+            figureUrls: Array.from(new Set(figureUrls)),
+        };
+    }
+
+    async fetchFiguresAsBase64(figureUrls) {
+        const results = [];
+        for (const url of figureUrls) {
+            try {
+                const res = await fetch(url);
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                const blob = await res.blob();
+                const dataUrl = await new Promise((resolve, reject) => {
+                    const reader = new FileReader();
+                    reader.onloadend = () => resolve(reader.result);
+                    reader.onerror = () => reject(new Error('read failed'));
+                    reader.readAsDataURL(blob);
+                });
+                results.push(dataUrl);
+            } catch (e) {
+                // eslint-disable-next-line no-console
+                console.warn('[AI Tutor] Could not load figure for vision:', url, e);
+            }
+        }
+        return results;
+    }
 
     /**
      * Extract problem context for the AI agent.
@@ -385,12 +460,37 @@ class AgentChatbox extends React.Component {
      * @returns {Object} Student state including answers, correctness, skill mastery, and attempt history
      */
     getStudentState() {
-        const { stepStates, bktParams, getActiveStepData, attemptHistory } = this.props;
+        const { stepStates, bktParams, getActiveStepData, attemptHistory, hintUsageByStep } = this.props;
         
         // Get active step
         const activeStepData = getActiveStepData ? getActiveStepData() : null;
         const stepIndex = activeStepData ? activeStepData.stepIndex : 0;
         const isCorrect = stepStates ? stepStates[stepIndex] : null;
+
+        // Derive hints used for the active step (manual hints only)
+        let hintsUsed = [];
+        if (hintUsageByStep && Number.isInteger(stepIndex)) {
+            const usage = hintUsageByStep[stepIndex];
+            if (usage && Array.isArray(usage.hints)) {
+                hintsUsed = usage.hints
+                    .filter(h => {
+                        // Only include viewed MANUAL hints:
+                        // - viewed: student actually opened/used the hint
+                        // - isManual flag true OR (fallback) type is not gptHint/bottomOut
+                        const isManual = h.isManual !== undefined
+                            ? h.isManual
+                            : (h.type !== 'gptHint' && h.type !== 'bottomOut');
+                        return h.viewed && isManual;
+                    })
+                    .map(h => ({
+                        id: h.id,
+                        title: h.title,
+                        text: h.text,
+                        type: h.type,
+                        displayIndex: h.displayIndex,
+                    }));
+            }
+        }
 
         // Extract skill mastery for relevant KCs
         const skillMastery = this.extractRelevantSkillMastery(
@@ -405,7 +505,8 @@ class AgentChatbox extends React.Component {
             isCorrect: isCorrect,
             skillMastery: skillMastery,
             attemptHistory: attemptHistory || {},
-            currentLessonMastery: currentLessonMastery
+            currentLessonMastery: currentLessonMastery,
+            hintsUsed,
         };
     }
 
@@ -528,30 +629,40 @@ class AgentChatbox extends React.Component {
                             key={message.id}
                             className={`${classes.message} ${message.role === 'user' ? classes.userMessage : classes.assistantMessage}`}
                         >
-                            <Paper
-                                className={`${classes.messageBubble} ${message.role === 'user' ? classes.userBubble : classes.assistantBubble}`}
-                                elevation={1}
-                            >
-                                {message.content ? (
-                                    message.role === 'user' ? (
-                                        <Typography variant="body2">{message.content}</Typography>
+                            {message.role === 'user' ? (
+                                <Paper
+                                    className={`${classes.messageBubble} ${classes.userBubble}`}
+                                    elevation={1}
+                                >
+                                    {message.content ? (
+                                        <Typography variant="body2" style={{ fontSize: 14, lineHeight: 1.4, fontWeight: 400 }}>
+                                            {message.content}
+                                        </Typography>
                                     ) : (
-                                        <MessageRenderer content={message.content} />
-                                    )
-                                ) : (
-                                    <Typography variant="body2">
-                                        {message.isGenerating ? 'Thinking...' : ''}
-                                    </Typography>
-                                )}
-                                {message.isGenerating && (
-                                    <CircularProgress size={16} style={{ marginLeft: 8 }} />
-                                )}
-                            </Paper>
-                            <div className={classes.messageMeta}>
-                                <Typography variant="caption" color="textSecondary">
-                                    {message.role === 'user' ? 'You' : 'AI Tutor'}
-                                </Typography>
-                            </div>
+                                        <Typography variant="body2" style={{ fontSize: 14, lineHeight: 1.4, fontWeight: 400 }}>
+                                            {message.isGenerating ? 'Thinking...' : ''}
+                                        </Typography>
+                                    )}
+                                    {message.isGenerating && (
+                                        <CircularProgress size={16} style={{ marginLeft: 8 }} />
+                                    )}
+                                </Paper>
+                            ) : (
+                                <div className={classes.assistantContent}>
+                                    {message.content ? (
+                                        <div style={{ fontSize: 15, lineHeight: 1.6, fontWeight: 500, color: '#1f2933' }}>
+                                            <MessageRenderer content={message.content} />
+                                        </div>
+                                    ) : (
+                                        <Typography variant="body2" style={{ fontSize: 15, lineHeight: 1.6, fontWeight: 500, color: '#1f2933' }}>
+                                            {message.isGenerating ? 'Thinking...' : ''}
+                                        </Typography>
+                                    )}
+                                    {message.isGenerating && (
+                                        <CircularProgress size={16} style={{ marginLeft: 8 }} />
+                                    )}
+                                </div>
+                            )}
                         </div>
                     ))}
                     

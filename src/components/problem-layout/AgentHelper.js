@@ -26,12 +26,13 @@ export class AgentHelper {
     /**
      * Build request payload from Problem.js and ProblemCard.js
      */
-    buildAgentRequest(userMessage, problemContext, studentState) {
+    buildAgentRequest(userMessage, problemContext, studentState, extracted) {
         const request = {
             sessionId: this.sessionId,
             userMessage: userMessage,
             problemContext: problemContext,
             studentState: studentState,
+            extracted: extracted || {},
             conversationHistory: []  // Lambda loads from DynamoDB
         };
 
@@ -44,9 +45,10 @@ export class AgentHelper {
      * @param {string} userMessage - Student's question
      * @param {object} problemContext - Problem data from Problem.js
      * @param {object} studentState - Student state from Problem.js
+     * @param {object} extracted - Optional extracted input (e.g., { text, images }) for vision
      * @param {object} callbacks - { onChunkReceived, onSuccessfulCompletion, onError }
      */
-    async sendMessage(userMessage, problemContext, studentState, callbacks = {}) {
+    async sendMessage(userMessage, problemContext, studentState, extracted = {}, callbacks = {}) {
         const {
             onChunkReceived = () => {},
             onSuccessfulCompletion = () => {},
@@ -65,7 +67,7 @@ export class AgentHelper {
             }
 
             // Build request
-            const agentRequest = this.buildAgentRequest(userMessage, problemContext, studentState);
+            const agentRequest = this.buildAgentRequest(userMessage, problemContext, studentState, extracted);
 
             // Send POST request with streaming
             const response = await fetch(this.agentEndpoint, {
