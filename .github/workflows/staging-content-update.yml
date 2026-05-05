@@ -77,7 +77,7 @@ jobs:
           git push origin staging-v2
         fi
       env:
-        GITHUB_TOKEN: ${{ secrets.CONTENT_STAGING_PAT }}
+        GITHUB_TOKEN: ${{ secrets.STAGING_V2_PAT }}
 
     - name: Change homepage in package.json
       run: |
@@ -105,7 +105,7 @@ jobs:
       with:
         repository: 'CAHLR/CAHLR-OATutor-Staging-V2'
         ref: 'main'
-        token: ${{ secrets.CONTENT_STAGING_PAT }}
+        token: ${{ secrets.STAGING_V2_PAT }}
         path: 'content-staging-deploy'
 
     - name: Save original git author and git email
@@ -125,4 +125,4 @@ jobs:
         git commit -m "deploy commit: CAHLR/OATutor@$GITHUB_SHA"
         git push
       env:
-        GITHUB_TOKEN: ${{ secrets.CONTENT_STAGING_PAT }}
+        GITHUB_TOKEN: ${{ secrets.STAGING_V2_PAT }}
