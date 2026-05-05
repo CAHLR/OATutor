@@ -82,7 +82,7 @@ jobs:
     - name: Change homepage in package.json
       run: |
         cd content-staging-build
-        sed -i 's/place-holder/OATutor-Staging-V2/g' package.json
+        sed -i 's/place-holder/CAHLR-OATutor-Staging-V2/g' package.json
     
     - name: Run CI install
       run: |
@@ -103,7 +103,7 @@ jobs:
     - name: Checkout Content Staging
       uses: actions/checkout@v3
       with:
-        repository: 'CAHLR/OATutor-Staging-V2'
+        repository: 'CAHLR/CAHLR-OATutor-Staging-V2'
         ref: 'main'
         token: ${{ secrets.CONTENT_STAGING_PAT }}
         path: 'content-staging-deploy'
