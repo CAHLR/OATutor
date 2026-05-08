@@ -18,6 +18,9 @@ import { NavLink } from "react-router-dom";
 import HelpOutlineOutlinedIcon from "@material-ui/icons/HelpOutlineOutlined";
 import FeedbackOutlinedIcon from "@material-ui/icons/FeedbackOutlined";
 import withTranslation from "../../util/withTranslation.js"
+import TTSPlayer from "../../util/ttsPlayer.js";
+import TTSButtons from "./TTSButtons.js";
+import { textToReadable } from "../../util/latexToReadable.js";
 
 import {
     CANVAS_WARNING_STORAGE_KEY,
@@ -70,6 +73,7 @@ class Problem extends React.Component {
         this.unlockFirstHint = unlockFirstHint != null && unlockFirstHint;
         this.giveStuBottomHint = giveStuBottomHint == null || giveStuBottomHint;
         this.giveDynamicHint = this.props.lesson?.allowDynamicHint;
+        this.enableTTS = this.props.lesson?.allowTTS;
         this.prompt_template = this.props.lesson?.prompt_template
             ? this.props.lesson?.prompt_template
             : "";
@@ -81,8 +85,14 @@ class Problem extends React.Component {
             showFeedback: false,
             feedback: "",
             feedbackSubmitted: false,
-            showPopup: false
+            showPopup: false,
+            ttsPlaying: false,
         };
+
+        if (this.enableTTS) {
+            this.ttsPlayer = new TTSPlayer();
+            this.ttsPlayer.onStateChange((playing) => this.setState({ ttsPlaying: playing }));
+        }
     }
 
     componentDidMount() {
@@ -99,11 +109,26 @@ class Problem extends React.Component {
         for (const annotation of document.querySelectorAll("annotation")) {
             annotation.ariaLabel = annotation.textContent;
         }
+
+        // Pre-load problem body TTS audio
+        const { problem } = this.props;
+        if (problem && this.enableTTS) {
+            this.ttsPlayer.onReady(() => this.forceUpdate());
+            let segments;
+            if (problem.pacedSpeech && Array.isArray(problem.pacedSpeech) && problem.pacedSpeech.length > 0) {
+                segments = problem.pacedSpeech;
+            } else {
+                const raw = textToReadable((problem.title || "") + ". " + (problem.body || ""));
+                if (raw && raw !== ".") segments = [raw];
+            }
+            if (segments) this.ttsPlayer.fetchAudio(segments);
+        }
     }
 
     componentWillUnmount() {
         document["oats-meta-courseName"] = "";
         document["oats-meta-textbookName"] = "";
+        if (this.ttsPlayer) this.ttsPlayer.destroy();
     }
 
     updateCanvas = async (mastery, components) => {
@@ -459,6 +484,14 @@ class Problem extends React.Component {
                                         ),
                                         this.context
                                     )}
+                                    {this.enableTTS && this.ttsPlayer && (
+                                        <TTSButtons
+                                            playing={this.state.ttsPlaying}
+                                            onToggle={() => this.ttsPlayer.togglePlayPause()}
+                                            onReplay={() => this.ttsPlayer.replay()}
+                                            disabled={!this.ttsPlayer.isReady()}
+                                        />
+                                    )}
                                     <hr />
                                 </h1>
                                 <div className={classes.problemBody}>
@@ -505,6 +538,7 @@ class Problem extends React.Component {
                                     giveStuBottomHint={this.giveStuBottomHint}
                                     giveDynamicHint={this.giveDynamicHint}
                                     prompt_template={this.prompt_template}
+                                    enableTTS={this.enableTTS}
                                 />
                             </Element>
                         ))}

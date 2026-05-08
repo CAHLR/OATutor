@@ -17,6 +17,9 @@ import { stagingProp } from "../../util/addStagingProperty";
 import ErrorBoundary from "../ErrorBoundary";
 import withTranslation from '../../util/withTranslation';
 import ReloadIcon from './ReloadIcon';
+import TTSPlayer from "../../util/ttsPlayer.js";
+import TTSButtons from "./TTSButtons.js";
+import { textToReadable } from "../../util/latexToReadable.js";
 
 class HintSystem extends React.Component {
     static contextType = ThemeContext;
@@ -40,12 +43,17 @@ class HintSystem extends React.Component {
         this.isIncorrect = props.isIncorrect;
         this.giveHintOnIncorrect = props.giveHintOnIncorrect
         this.generateHintFromGPT = props.generateHintFromGPT;
+        this.enableTTS = props.enableTTS;
+
+        this.ttsPlayers = {};
+
         this.state = {
             latestStep: 0,
             currentExpanded: (this.unlockFirstHint || this.isIncorrect) ? 0 : -1,
             hintAnswer: "",
             showSubHints: new Array(this.props.hints.length).fill(false),
             subHintsFinished: subHintsFinished,
+            ttsPlayingHint: -1, // index of currently playing hint, -1 = none
         };
 
         if (this.unlockFirstHint && this.props.hintStatus.length > 0) {
@@ -56,6 +64,62 @@ class HintSystem extends React.Component {
             this.props.unlockHint(0, this.props.hints[0].type);
         }
     }
+
+    componentDidMount() {
+        if (!this.enableTTS) return;
+        for (let j = 0; j < this.props.hints.length; j++) {
+            const hint = this.props.hints[j];
+            let segments = null;
+            if (hint.pacedSpeech && Array.isArray(hint.pacedSpeech) && hint.pacedSpeech.length > 0) {
+                segments = hint.pacedSpeech;
+            } else {
+                const raw = textToReadable(
+                    (hint.title && hint.title !== "nan" ? hint.title : "") + ". " + (hint.text || "")
+                );
+                if (raw && raw !== ".") segments = [raw];
+            }
+            if (segments && segments.length > 0) {
+                const player = new TTSPlayer();
+                player.onStateChange((playing) => this.setState({ ttsPlayingHint: playing ? j : -1 }));
+                player.onReady(() => this.forceUpdate());
+                this.ttsPlayers[j] = player;
+                player.fetchAudio(segments);
+            }
+        }
+    }
+
+    componentWillUnmount() {
+        Object.values(this.ttsPlayers).forEach(p => p.destroy());
+    }
+
+    toggleHintTTS = (hintIndex) => {
+        const player = this.ttsPlayers[hintIndex];
+        if (!player) return;
+        // Stop any other playing hint
+        Object.entries(this.ttsPlayers).forEach(([idx, p]) => {
+            if (parseInt(idx) !== hintIndex && p.playing) {
+                p.pause();
+            }
+        });
+        player.onStateChange((playing) => {
+            this.setState({ ttsPlayingHint: playing ? hintIndex : -1 });
+        });
+        player.togglePlayPause();
+    };
+
+    replayHintTTS = (hintIndex) => {
+        const player = this.ttsPlayers[hintIndex];
+        if (!player) return;
+        Object.entries(this.ttsPlayers).forEach(([idx, p]) => {
+            if (parseInt(idx) !== hintIndex && p.playing) {
+                p.pause();
+            }
+        });
+        player.onStateChange((playing) => {
+            this.setState({ ttsPlayingHint: playing ? hintIndex : -1 });
+        });
+        player.replay();
+    };
 
     unlockHint = (event, expanded, i) => {
         if (this.state.currentExpanded === i ) {
@@ -195,6 +259,14 @@ class HintSystem extends React.Component {
                                         seed
                                     ),
                                     this.context
+                                )}
+                                {this.ttsPlayers[i] && (
+                                    <TTSButtons
+                                        playing={this.state.ttsPlayingHint === i}
+                                        onToggle={(e) => { e.stopPropagation(); this.toggleHintTTS(i); }}
+                                        onReplay={(e) => { e.stopPropagation(); this.replayHintTTS(i); }}
+                                        disabled={!this.ttsPlayers[i].isReady()}
+                                    />
                                 )}
                             </Typography>
                         </AccordionSummary>

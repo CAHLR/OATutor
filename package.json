@@ -35,7 +35,8 @@
     "typeface-roboto": "~0.0.75",
     "underscore": "~1.13.1",
     "universal-cookie": "~4.0.4",
-    "use-window-focus": "^1.4.1"
+    "use-window-focus": "^1.4.1",
+    "speech-rule-engine": "^5.0.0-alpha.8"
   },
   "scripts": {
     "start": "cross-env PORT=3001 react-app-rewired start",
@@ -49,7 +50,13 @@
     "test": "react-app-rewired test",
     "pretest": "node src/tools/preprocessProblemPool.js",
     "eject": "react-scripts eject",
-    "fix-lockfile": "npm install --package-lock-only"
+    "fix-lockfile": "npm install --package-lock-only",
+    "process-tts": "node src/math-to-speech/scripts/autoTTSProcessor.js",
+    "process-tts:force": "node src/math-to-speech/scripts/autoTTSProcessor.js --force",
+    "process-tts:dry-run": "node src/math-to-speech/scripts/autoTTSProcessor.js --dry-run --verbose",
+    "process-tts:hints": "node src/math-to-speech/scripts/autoTTSProcessor.js --types hints",
+    "process-tts:steps": "node src/math-to-speech/scripts/autoTTSProcessor.js --types steps",
+    "process-tts:problems": "node src/math-to-speech/scripts/autoTTSProcessor.js --types problems"
   },
   "browserslist": {
     "production": [
