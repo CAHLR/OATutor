@@ -12,12 +12,26 @@ import {
     CircularProgress
 } from '@material-ui/core';
 import {
-    Send as SendIcon,
     Close as CloseIcon,
-    Chat as ChatIcon,
-    Android as BotIcon,
     Delete as DeleteIcon
 } from '@material-ui/icons';
+
+// UC Berkeley brand palette — sourced from the official identity guidelines.
+// Used consistently across the chat surface so the tutor visually belongs to
+// the institution rather than reading as a generic SaaS chatbot.
+const BERKELEY = {
+    blue: '#002676',       // Berkeley Blue (primary)
+    blueDark: '#010133',   // Blue Dark (gradient depth, hover states)
+    gold: '#FDB515',       // California Gold (primary accent — Oski's halo)
+    goldDark: '#FC9313',   // Gold Dark (hover on gold surfaces)
+    white: '#FFFFFF',
+    grayLight: '#F2F2F2',
+};
+
+// Public path to the Oski mascot. The image lives in /public so webpack
+// serves it directly; PUBLIC_URL handles the GitHub Pages subpath in prod.
+const OSKI_SRC = `${process.env.PUBLIC_URL || ''}/static/images/icons/oski1.png`;
+const SEND_ICON_SRC = `${process.env.PUBLIC_URL || ''}/static/images/icons/send.png`;
 
 const styles = (theme) => ({
     chatContainer: {
@@ -37,25 +51,25 @@ const styles = (theme) => ({
         fontFamily: '"Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
     },
     chatHeader: {
-        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        background: 'linear-gradient(135deg, #002676 0%, #010133 100%)',
         color: 'white',
         padding: '12px 16px',
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        boxShadow: '0 1px 0 rgba(255, 255, 255, 0.25)'
+        borderBottom: '3px solid #FDB515', // gold underline ties header to avatar
     },
     chatTitle: {
         display: 'flex',
         alignItems: 'center',
-        gap: 8,
+        gap: 10,
         fontWeight: 600
     },
     chatMessages: {
         flex: 1,
         overflowY: 'auto',
         padding: '20px 24px',
-        backgroundColor: '#f7f7fb',
+        backgroundColor: '#F2F2F2',
         display: 'flex',
         flexDirection: 'column',
         gap: 12
@@ -80,7 +94,7 @@ const styles = (theme) => ({
         wordWrap: 'break-word'
     },
     userBubble: {
-        backgroundColor: '#7c8cff',
+        backgroundColor: '#002676',
         color: 'white'
     },
     assistantBubble: {
@@ -119,28 +133,45 @@ const styles = (theme) => ({
         minWidth: 40,
         height: 40,
         borderRadius: '50%',
-        backgroundColor: '#667eea',
-        color: 'white',
+        backgroundColor: '#E6E6E6',
+        color: '#111',
+        border: '1px solid rgba(0,0,0,0.10)',
         '&:hover': {
-            backgroundColor: '#5a6fd8'
+            backgroundColor: '#DADADA'
         },
         '&:disabled': {
-            backgroundColor: '#ccc'
+            backgroundColor: '#F2F2F2',
+            opacity: 0.6,
         }
+    },
+    sendIconImg: {
+        width: 20,
+        height: 20,
+        display: 'block',
+        opacity: 0.9,
     },
     toggleButton: {
         position: 'fixed',
         bottom: 20,
         right: 20,
         zIndex: 1001,
-        backgroundColor: '#667eea',
+        backgroundColor: BERKELEY.white,
         color: 'white',
         '&:hover': {
-            backgroundColor: '#5a6fd8'
+            backgroundColor: BERKELEY.grayLight,
         },
         width: 60,
         height: 60,
-        boxShadow: '0 4px 12px rgba(102, 126, 234, 0.4)'
+        padding: 0,
+        boxShadow: '0 4px 14px rgba(0, 38, 118, 0.28)',
+        border: `2px solid ${BERKELEY.blue}`,
+    },
+    toggleAvatarImg: {
+        width: 54,
+        height: 54,
+        borderRadius: '50%',
+        objectFit: 'contain',
+        display: 'block',
     },
     resizeHandle: {
         position: 'absolute',
@@ -150,16 +181,6 @@ const styles = (theme) => ({
         height: 20,
         cursor: 'nwse-resize',
         zIndex: 10,
-        '&::after': {
-            content: '""',
-            position: 'absolute',
-            top: 2,
-            left: 2,
-            width: 16,
-            height: 16,
-            borderTop: '2px solid rgba(102, 126, 234, 0.4)',
-            borderLeft: '2px solid rgba(102, 126, 234, 0.4)'
-        }
     }
 });
 
@@ -593,7 +614,7 @@ class AgentChatbox extends React.Component {
                     onClick={this.toggleChat}
                     aria-label="Open AI Tutor"
                 >
-                    <ChatIcon />
+                    <img src={OSKI_SRC} alt="Oski" className={classes.toggleAvatarImg} />
                 </IconButton>
             );
         }
@@ -617,8 +638,12 @@ class AgentChatbox extends React.Component {
 
                 <div className={classes.chatHeader}>
                     <div className={classes.chatTitle}>
-                        <BotIcon />
-                        <Typography variant="subtitle1">AI Tutor</Typography>
+                        <img
+                            src={OSKI_SRC}
+                            alt="Oski"
+                            style={{ width: 32, height: 32, borderRadius: '50%', display: 'block' }}
+                        />
+                        <Typography variant="subtitle1">Oski • AI Tutor</Typography>
                     </div>
                     <div style={{ display: 'flex', gap: '4px' }}>
                         {messages.length > 0 && (
@@ -707,7 +732,7 @@ class AgentChatbox extends React.Component {
                             onClick={this.handleSendMessage}
                             disabled={!currentMessage.trim() || isGenerating}
                         >
-                            <SendIcon />
+                            <img src={SEND_ICON_SRC} alt="Send" className={classes.sendIconImg} />
                         </IconButton>
                     </div>
                 </div>

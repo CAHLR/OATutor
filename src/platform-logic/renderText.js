@@ -7,6 +7,26 @@ import ErrorBoundary from "@components/ErrorBoundary";
 import RenderMedia from "@components/RenderMedia";
 import { CONTENT_SOURCE } from "@common/global-config";
 
+// KaTeX is strict about Unicode characters inside math. Some authored content
+// (and some LLM output) uses unicode symbols like `°` / `º` directly, which
+// causes KaTeX to throw and can crash the page if not handled.
+function sanitizeLatexMath(math) {
+    if (typeof math !== "string") return math;
+    return math
+        // Degrees
+        .replace(/[°º]/g, "^{\\circ}")
+        // Common operators/relations
+        .replace(/×/g, "\\times ")
+        .replace(/÷/g, "\\div ")
+        .replace(/±/g, "\\pm ")
+        .replace(/≈/g, "\\approx ")
+        .replace(/≤/g, "\\leq ")
+        .replace(/≥/g, "\\geq ")
+        .replace(/≠/g, "\\neq ")
+        // Unicode minus to ASCII hyphen-minus
+        .replace(/−/g, "-");
+}
+
 /**
  * @param {string|*} text
  * @param problemID
@@ -52,9 +72,13 @@ function renderText(text, problemID, variabilization, context) {
                         key={Math.random() * 2 ** 16}
                     >
                         <InlineMath
-                            math={part}
+                            math={sanitizeLatexMath(part)}
                             renderError={(error) => {
-                                throw error;
+                                // Never crash the whole UI for a single bad token.
+                                // Show raw math text instead.
+                                // eslint-disable-next-line no-console
+                                console.warn("[katex] render error in authored content:", error);
+                                return part;
                             }}
                         />
                     </ErrorBoundary>
@@ -136,9 +160,13 @@ function renderGPTText(text, problemID, variabilization, context) {
                         key={Math.random() * 2 ** 16}
                     >
                         <InlineMath
-                            math={part}
+                            math={sanitizeLatexMath(part)}
                             renderError={(error) => {
-                                throw error;
+                                // Never crash the whole UI for a single bad token.
+                                // Show raw math text instead.
+                                // eslint-disable-next-line no-console
+                                console.warn("[katex] render error in GPT content:", error);
+                                return part;
                             }}
                         />
                     </ErrorBoundary>
