@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a48e533fluid7b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Flow Rate Formula",
+        "text": "Use the formula for volume flow rate: $$Q=A v$$ where Q is the volume flow rate, A is the cross-sectional area, and v is the speed of the flow.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a48e533fluid7b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a48e533fluid7b-h1"
+        ],
+        "title": "The Equation for Conservation of Flow Rate",
+        "text": "Since the flow rate must be conserved, we have: $$A_1 v_1=A_2 v_2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a48e533fluid7b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2.68\\times{10}^{\\left(-5\\right)}$$"
+        ],
+        "dependencies": [
+            "a48e533fluid7b-h2"
+        ],
+        "title": "Use the Conservation of Flow Rate to Find $$A_2$$",
+        "text": "We've calculated in the previous problem that $$A_1=2.01\\times{10}^{\\left(-4\\right)}$$, thus solve for $$A_2$$: $$2.01\\times{10}^{\\left(-4\\right)}\\times2=15A_2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$2.68\\times{10}^{\\left(-3\\right)}$$",
+            "$$2.68\\times{10}^{\\left(-5\\right)}$$",
+            "$$5\\times{10}^{\\left(-5\\right)}$$",
+            "$$2.01\\times{10}^{\\left(-2\\right)}$$"
+        ]
+    },
+    {
+        "id": "a48e533fluid7b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.584$$"
+        ],
+        "dependencies": [
+            "a48e533fluid7b-h3"
+        ],
+        "title": "Calculate the Radius and Diameter of the Nozzle",
+        "text": "As $$A={pir}^2=2.68\\times{10}^{\\left(-5\\right)}$$, solve for $$r$$, and then as $$d=2r$$, calculate for the nozzle\u2019s inside diameter $$d$$. Remember to convert the unit from $$m$$ to cm.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

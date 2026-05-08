@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a8435depolynomial21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Dividing with a Complex Number",
+        "text": "In normal synthetic division, we use a real number as the divisor, but when we have a complex number like $$x-i$$, we perform synthetic division similarly, but we use the complex number $$k=i$$ as the root. So, for the division of (x+1)/(x-1)\u200b, we will divide using $$k=i$$, where i is the imaginary unit.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8435depolynomial21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8435depolynomial21a-h1"
+        ],
+        "title": "Setting up Synthetic Division",
+        "text": "Start by writing down the coefficients of the polynomial $$x+1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8435depolynomial21a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "i"
+        ],
+        "dependencies": [
+            "a8435depolynomial21a-h2"
+        ],
+        "title": "Bring Down the First Coefficient",
+        "text": "What do you get when you multiply $$1$$ by i?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "2i",
+            "$$-i$$",
+            "i",
+            "$$1$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial21a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1+i$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial21a-h3"
+        ],
+        "title": "Multiply by i and Add",
+        "text": "What do you get when you add i to the next coefficient 1?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$1-i$$",
+            "$$i+1$$",
+            "$$0$$",
+            "$$1+i$$"
+        ]
+    }
+]

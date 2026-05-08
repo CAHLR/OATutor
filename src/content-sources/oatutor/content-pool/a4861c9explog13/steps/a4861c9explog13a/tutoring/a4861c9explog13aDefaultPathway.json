@@ -1,0 +1,96 @@
+[
+    {
+        "id": "a4861c9explog13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Logarithms",
+        "text": "Since there is no easy way to get both powers to have the same base by rewriting in terms of their exponents, use logarithm operation to simplify.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4861c9explog13a-h1"
+        ],
+        "title": "Taking log of both sides",
+        "text": "To simplify, take the natural log ln of both sides.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4861c9explog13a-h2"
+        ],
+        "title": "Power Rule of Logarithms",
+        "text": "When taking the logarithm of a number with an exponent, the exponent can be moved in front of the logarithm and multiplied.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4861c9explog13a-h3"
+        ],
+        "title": "Distributing",
+        "text": "After moving the $$x+2$$ and $$x$$ exponents in front of the ln terms, distribute on the RHS the ln $$3$$ to both the $$x$$ and the $$1$$ in parentheses using the distributive law.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog13a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a4861c9explog13a-h4"
+        ],
+        "title": "Isolating $$x$$",
+        "text": "To move towards solving the equation, move all terms containing $$x$$ to one side and terms without $$x$$ to the other.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog13a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a4861c9explog13a-h5"
+        ],
+        "title": "Solving for $$x$$",
+        "text": "Once all the $$x$$ terms are on one side of the equation, factor out the $$x$$ from all the terms.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog13a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a4861c9explog13a-h6"
+        ],
+        "title": "Dividing Out Coefficient",
+        "text": "To solve for the value of $$x$$, divide both sides of the equation with the coefficient of the $$x$$ term.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog13a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a4861c9explog13a-h7"
+        ],
+        "title": "Use the Quotient Rule",
+        "text": "Use the quotient rule that $$ln(a)-ln(b)=\\ln\\left(\\frac{a}{b}\\right)$$ to simplify the denominator after dividing both sides.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,105 @@
+[
+    {
+        "id": "a590f38trigonometric67a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rearrange and Factor",
+        "text": "Move all terms to one side and factor the expression.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric67a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\cot$$ $$x(\\cot$$ $$x$$ + $$1)$$ $$=$$ $$0$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric67a-h1"
+        ],
+        "title": "Factor the equation",
+        "text": "What is the factored form of $$\\cot**{2} x$$+$$\\cot $$x$$ $$=$$ $$0$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\cot$$ $$x(\\cot$$ $$x$$ + $$1)$$ $$=$$ $$0$$",
+            "$$\\cot$$ $$x(\\cot$$ $$x$$ $$-$$ $$1)$$ $$=$$ $$0$$",
+            "$$\\cot$$ $$x2$$ + $$\\cot$$ $$x$$ $$=$$ $$0$$",
+            "$$\\cot$$ $$x(2\\cot(x))$$ $$=$$ $$0$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric67a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric67a-h1"
+        ],
+        "title": "Solve for $$\\cot$$ $$x$$",
+        "text": "Set each factor equal to zero to find the possible values for $$\\cot$$ $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric67a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\cot$$ $$x$$ $$=$$ $$0$$ $$or$$ $$\\cot$$ $$x$$ $$=$$ $$-1$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric67a-h2"
+        ],
+        "title": "Identify $$\\cot$$ $$x$$ values",
+        "text": "What are the two possible values for $$\\cot$$ $$x$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\cot$$ $$x$$ $$=$$ $$0$$ $$or$$ $$\\cot$$ $$x$$ $$=$$ $$-1$$",
+            "$$\\cot$$ $$x$$ $$=$$ $$0$$ $$or$$ $$\\cot$$ $$x$$ $$=$$ $$1$$",
+            "$$\\cot$$ $$x$$ $$=$$ $$1$$ $$or$$ $$\\cot$$ $$x$$ $$=$$ $$-1$$",
+            "$$\\cot$$ $$x$$ $$=$$ $$0$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric67a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric67a-h2"
+        ],
+        "title": "Find $$x$$ values",
+        "text": "Determine the values of $$x$$ in the interval $$(0$$, $$2\\pi)$$ for each $$\\cot$$ $$x$$ value.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric67a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{3\\pi}{4$$,} $$\\frac{7\\pi}{4}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric67a-h3"
+        ],
+        "title": "Solutions for $$\\cot$$ $$x$$ $$=$$ $$-1$$",
+        "text": "What are the solutions for $$x$$ in $$(0$$, $$2\\pi)$$ when $$\\cot$$ $$x$$ $$=$$ $$-1$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{3\\pi}{4$$,} $$\\frac{7\\pi}{4}$$",
+            "$$\\frac{\\pi}{4$$,} $$\\frac{5\\pi}{4}$$",
+            "$$\\frac{2\\pi}{3$$,} $$\\frac{5\\pi}{3}$$",
+            "$$\\frac{3\\pi}{4$$,} $$\\frac{5\\pi}{4}$$"
+        ]
+    }
+]

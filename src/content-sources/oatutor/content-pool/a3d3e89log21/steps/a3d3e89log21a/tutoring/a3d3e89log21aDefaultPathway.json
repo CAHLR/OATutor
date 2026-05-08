@@ -1,0 +1,74 @@
+[
+    {
+        "id": "a3d3e89log21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Solve",
+        "text": "How do you solve for $$x$$, given $$lnx=2$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log21a-h1"
+        ],
+        "title": "Formula",
+        "text": "Recall relationship between logarithmic form and exponential form.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log21a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "loge(x)"
+        ],
+        "dependencies": [
+            "a3d3e89log21a-h2"
+        ],
+        "title": "Rewrite",
+        "text": "Before we can identify the variables, we see that lnx isn't of the form logb(x). What is ln the same as?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log21a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$b=e$$, $$x=x$$, $$y=2$$"
+        ],
+        "dependencies": [
+            "a3d3e89log21a-h3"
+        ],
+        "title": "Identify Variables",
+        "text": "What is $$b$$? What is $$x$$? What is $$y$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$b=e$$, $$x=x$$, $$y=2$$",
+            "$$b=3$$, $$x=e$$, $$y=2$$"
+        ]
+    },
+    {
+        "id": "a3d3e89log21a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log21a-h4"
+        ],
+        "title": "Substitute",
+        "text": "Substitute $$b$$, $$x$$, $$y$$ into $$x=b^y$$, giving us $$x=e^2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

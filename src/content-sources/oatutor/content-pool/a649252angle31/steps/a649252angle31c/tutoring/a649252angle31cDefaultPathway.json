@@ -1,0 +1,52 @@
+[
+    {
+        "id": "a649252angle31c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall the double angle formula for tangent, or use the values of $$\\sin(2x)$$ and $$\\cos(2x)$$.",
+        "text": "$$\\tan(2x)$$ $$=$$ $$\\frac{\\sin(2x)}{\\cos(2x)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle31c-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-\\frac{8\\sqrt{3}}{49}$$"
+        ],
+        "dependencies": [
+            "a649252angle31c-h1"
+        ],
+        "title": "What is $$\\sin(2x)$$?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{8\\sqrt{3}}{49}$$",
+            "$$-\\frac{8\\sqrt{3}}{7}$$",
+            "$$-\\frac{4\\sqrt{3}}{49}$$",
+            "$$-\\frac{8\\sqrt{3}}{49}$$"
+        ]
+    },
+    {
+        "id": "a649252angle31c-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{47}{49}$$"
+        ],
+        "dependencies": [
+            "a649252angle31c-s1"
+        ],
+        "title": "What is $$\\cos(2x)$$?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

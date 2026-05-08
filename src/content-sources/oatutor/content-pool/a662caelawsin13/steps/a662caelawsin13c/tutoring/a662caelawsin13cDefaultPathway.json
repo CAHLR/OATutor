@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a662caelawsin13c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Law of Sines",
+        "text": "Recall the Law of Sines: $$$$ \\frac{a}{\\sin \\alpha} $$=$$ \\frac{b}{\\sin \\beta} $$=$$ \\frac{c}{\\sin \\gamma} $$$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin13c-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$$$ \\frac{c}{\\sin \\gamma} $$=$$ \\frac{a}{\\sin \\alpha} $$$$"
+        ],
+        "dependencies": [
+            "a662caelawsin13c-h1"
+        ],
+        "title": "Choose appropriate Law of Sines ratio",
+        "text": "Which part of the Law of Sines should you use to find $$c$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$$$ \\frac{c}{\\sin \\gamma} $$=$$ \\frac{a}{\\sin \\alpha} $$$$",
+            "$$$$ \\frac{c}{\\sin \\alpha} $$=$$ \\frac{a}{\\sin \\gamma} $$$$",
+            "$$$$ \\frac{c}{\\sin \\gamma} $$=$$ \\frac{b}{\\sin \\beta} $$$$",
+            "$$$$ \\frac{\\sin \\gamma}{c} $$=$$ \\frac{\\sin \\alpha}{a} $$$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin13c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin13c-h1"
+        ],
+        "title": "Substitute known values",
+        "text": "Substitute the known values into the chosen Law of Sines equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin13c-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$$$ \\frac{c}{\\sin 20**\\circ} $$=$$ \\frac{4}{\\sin 60**\\circ} $$$$"
+        ],
+        "dependencies": [
+            "a662caelawsin13c-h2"
+        ],
+        "title": "Equation with known values",
+        "text": "What is the equation after substituting the known values?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$$$ \\frac{c}{\\sin 20**\\circ} $$=$$ \\frac{4}{\\sin 60**\\circ} $$$$",
+            "$$$$ \\frac{c}{\\sin 60**\\circ} $$=$$ \\frac{4}{\\sin 20**\\circ} $$$$",
+            "$$$$ \\frac{c}{\\cos 20**\\circ} $$=$$ \\frac{4}{\\cos 60**\\circ} $$$$",
+            "$$$$ \\frac{\\sin 20**\\circ}{c} $$=$$ \\frac{\\sin 60**\\circ}{4} $$$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin13c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin13c-h2"
+        ],
+        "title": "Solve for $$c$$",
+        "text": "Isolate $$c$$ and calculate its value, rounding to the nearest tenth.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin13c-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.6$$"
+        ],
+        "dependencies": [
+            "a662caelawsin13c-h3"
+        ],
+        "title": "Calculate $$c$$",
+        "text": "What is the value of $$c$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a662caelawsin14b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply the Law of Sines",
+        "text": "The Law of Sines states that $$a/\\sin(\\alpha) $$=$$ b/\\sin(\\beta) $$=$$ c/\\sin(\\gamma)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin14b-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$10$$, 55**{\\circ},$$ 95**{\\circ}"
+        ],
+        "dependencies": [
+            "a662caelawsin14b-h1"
+        ],
+        "title": "Identify known values",
+        "text": "What are the values of $$b$$, $$\\alpha$$, $$and$$ $$\\beta$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$10$$, 55**{\\circ},$$ 95**{\\circ}",
+            "$$10$$, 95**{\\circ},$$ 55**{\\circ}",
+            "$$10$$, 30**{\\circ},$$ 95**{\\circ}",
+            "$$8.2$$, 55**{\\circ},$$ 95**{\\circ}"
+        ]
+    },
+    {
+        "id": "a662caelawsin14b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin14b-h1"
+        ],
+        "title": "Set up the proportion",
+        "text": "Which ratio involves the unknown side $$a$$ and a known side and angle?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin14b-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$a/\\sin(55**{\\circ}) $$=$$ 10/\\sin(95**{\\circ})$$"
+        ],
+        "dependencies": [
+            "a662caelawsin14b-h2"
+        ],
+        "title": "Law of Sines equation",
+        "text": "Write the Law of Sines equation to solve for $$a$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$a/\\sin(55**{\\circ}) $$=$$ 10/\\sin(95**{\\circ})$$",
+            "$$a/\\sin(95**{\\circ}) $$=$$ 10/\\sin(55**{\\circ})$$",
+            "$$a/\\sin(55**{\\circ}) $$=$$ \\sin(95**{\\circ})/10$$",
+            "$$\\frac{a}{10}$$ $$=$$ \\sin(55**{\\circ})/\\sin(95**{\\circ})$$"
+        ]
+    }
+]

@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a526a0cintegration15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up the integral",
+        "text": "The calories lost after \u2018t\u2019 hours have to be the difference between the calories burnt and calories consumed after these \u2018t\u2019 hours. Therefore the calories intake will carry a negative sign $$-100t$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a526a0cintegration15a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\int_{0}^{3} 300-50t-100t \\,dt$$"
+        ],
+        "dependencies": [
+            "a526a0cintegration15a-h1"
+        ],
+        "title": "Set up the integral",
+        "text": "How can we express the integral?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\int_{0}^{3} 300-50t-100t \\,dt$$",
+            "$$\\int_{1}^{3} 300-50t-100t \\,dt$$"
+        ]
+    },
+    {
+        "id": "a526a0cintegration15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a526a0cintegration15a-h2"
+        ],
+        "title": "Simplify the integral",
+        "text": "$$\\int_{0}^{3} 300-50t-100t \\,dt$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a526a0cintegration15a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a526a0cintegration15a-h3"
+        ],
+        "title": "Seperating the terms",
+        "text": "Seperate and conpute the integral of each term $$\\int_{0}^{3} 300 \\,dt-\\int_{0}^{3} 150t \\,dt$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a526a0cintegration15a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a526a0cintegration15a-h4"
+        ],
+        "title": "Use basic integration formulas to compute the following antiderivatives or definite integrals.",
+        "text": "$$300\\times3-150\\frac{3^2}{2}=225$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

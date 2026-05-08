@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a649252angle19c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "tangent Identity",
+        "text": "Recall that $$\\tan(A)$$ $$=$$ $$\\frac{\\sin(A)}{\\cos(A)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle19c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle19c-h1"
+        ],
+        "title": "Substitute and Simplify",
+        "text": "Substitute the values of $$\\sin(2\\theta)$$ and $$\\cos(2\\theta)$$ into the tangent identity and simplify.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle19c-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a649252angle19c-h2"
+        ],
+        "title": "Calculate $$\\tan(2\\theta)$$",
+        "text": "What is $$\\frac{1/\\sqrt{2}}{1/\\sqrt{2}}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a3d3e89log12a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [],
+        "title": "Common Logarithm",
+        "text": "If we only have $$\\ln\\left(x\\right)$$, i.e., we don't see a base $$b$$ as in logb(x), what is the base?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log12a-h1"
+        ],
+        "title": "Change of Base",
+        "text": "Knowing the logarithm is of base $$10$$, rewrite $${100}^8$$ with a base of $$10$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log12a-h2"
+        ],
+        "title": "Simplify",
+        "text": "Simplify $$\\log\\left({10}^{16}\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

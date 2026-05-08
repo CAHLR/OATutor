@@ -1,0 +1,100 @@
+[
+    {
+        "id": "a662caelawsin18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Check for the ambiguous case (SSA)",
+        "text": "When given two sides and a non-included angle (SSA), you must check for the ambiguous case.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin18a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Obtuse"
+        ],
+        "dependencies": [
+            "a662caelawsin18a-h1"
+        ],
+        "title": "Identify the type of angle A",
+        "text": "Is angle $$A$$ acute or obtuse?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Acute",
+            "Obtuse"
+        ]
+    },
+    {
+        "id": "a662caelawsin18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin18a-h1"
+        ],
+        "title": "Conditions for obtuse angle SSA",
+        "text": "If angle $$A$$ is obtuse, a triangle exists only if side $$a$$ is greater than side $$b$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin18a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a662caelawsin18a-h2"
+        ],
+        "title": "Compare side $$a$$ and side $$b$$",
+        "text": "Compare the lengths of side $$a$$ and side $$b$$. $$Is$$ $$a$$ > $$b$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a662caelawsin18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin18a-h2"
+        ],
+        "title": "Conclude existence",
+        "text": "Since $$A$$ is obtuse and $$a$$ < $$b$$, $$no$$ $$triangle$$ $$can$$ $$be$$ $$formed$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin18a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No triangle exists."
+        ],
+        "dependencies": [
+            "a662caelawsin18a-h3"
+        ],
+        "title": "What is the conclusion?",
+        "text": "Based on the comparison, how many triangles exist?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "A unique triangle exists.",
+            "Two triangles exist.",
+            "No triangle exists."
+        ]
+    }
+]

@@ -1,0 +1,105 @@
+[
+    {
+        "id": "a8d81afgaussian8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "First Step",
+        "text": "Write down the coefficients of the variables $$x$$ and $$y$$ for each equation. If a variable is missing from an equation, represent it as $$0$$ in the matrix.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8d81afgaussian8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8d81afgaussian8a-h1"
+        ],
+        "title": "Second Step",
+        "text": "Include the constants (the numbers on the right-hand side of the equations) in an additional column.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8d81afgaussian8a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\begin{bmatrix} 3 & 2 & 10 & 3 \\end{bmatrix}$$"
+        ],
+        "dependencies": [
+            "a8d81afgaussian8a-h2"
+        ],
+        "title": "First Row",
+        "text": "What would the first row look like if it is the coefficients of the first equation with the constant on the right side?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\begin{bmatrix} 0 & 3 & 2 & 10 \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} 3 & 2 & 10 & 3 \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} 3 & 10 & 2 & 3 \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} 3 & 2 & 0 & 3 \\end{bmatrix}$$"
+        ]
+    },
+    {
+        "id": "a8d81afgaussian8a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\begin{bmatrix} -6 & 2 & 5 & 13 \\end{bmatrix}$$"
+        ],
+        "dependencies": [
+            "a8d81afgaussian8a-h3"
+        ],
+        "title": "Second Row",
+        "text": "What would the second row look like if it is the coefficients of the second equation with the constant on the right side?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\begin{bmatrix} 6 & -2 & -5 & 13 \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} -6 & -2 & 5 & 13 \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} 2 & -6 & 5 & 13 \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} -6 & 2 & 5 & 13 \\end{bmatrix}$$"
+        ]
+    },
+    {
+        "id": "a8d81afgaussian8a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\begin{bmatrix} 4 & 0 & 1 & 18 \\end{bmatrix}$$"
+        ],
+        "dependencies": [
+            "a8d81afgaussian8a-h4"
+        ],
+        "title": "Third Row",
+        "text": "What would the second row look like if it is the coefficients of the third equation with the constant on the right side?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\begin{bmatrix} 4 & 1 & 0 & 18 \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} 0 & 4 & 1 & 18 \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} 4 & 0 & 1 & 18 \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} 4 & 0 & 0 & 18 \\end{bmatrix}$$"
+        ]
+    },
+    {
+        "id": "a8d81afgaussian8a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a8d81afgaussian8a-h5"
+        ],
+        "title": "Combine",
+        "text": "Combine the three rows to form the matrix.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,53 @@
+[
+    {
+        "id": "abfba37quadratic11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplifying Equation",
+        "text": "The most straightforward way to find the x-intercepts is to find the factored form of the equation, if it is easily factorable, then set the factored form to zero and solve for $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abfba37quadratic11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abfba37quadratic11a-h1"
+        ],
+        "title": "Factoring a Quadratic",
+        "text": "When factoring, the quadratic is split up into the multiplication of two binomials, one with $$3x$$ and one with $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abfba37quadratic11a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(3x-1\\right) \\left(x+2\\right)$$"
+        ],
+        "dependencies": [
+            "abfba37quadratic11a-h2"
+        ],
+        "title": "Result of Factoring",
+        "text": "What is the result when the quadratic is factored?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abfba37quadratic11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "abfba37quadratic11a-h3"
+        ],
+        "title": "Zero Product Property",
+        "text": "For two expressions multiplied to be equal to zero, one or the other must also be equal to zero. Set the binomials equal to zero and solve for the negative $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

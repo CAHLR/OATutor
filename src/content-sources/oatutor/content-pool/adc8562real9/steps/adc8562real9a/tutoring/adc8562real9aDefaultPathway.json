@@ -1,0 +1,95 @@
+[
+    {
+        "id": "adc8562real9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factors",
+        "text": "What factors cause domain restricitions",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adc8562real9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "adc8562real9a-h1"
+        ],
+        "title": "Answer",
+        "text": "When denominator $$=0$$ and when sqrt is less than $$0$$. In this case its both",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adc8562real9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "adc8562real9a-h2"
+        ],
+        "title": "Numerator",
+        "text": "The numerator's square root has to be $$0$$ or higher so $$x+4$$ $$ \\geq $$ $$0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adc8562real9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "adc8562real9a-h3"
+        ],
+        "title": "Denominator",
+        "text": "The denominator can't be equal to $$0$$ so $$x<0<x$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adc8562real9a-h5",
+        "type": "hint",
+        "dependencies": [
+            "adc8562real9a-h4"
+        ],
+        "title": "Answer",
+        "text": "The answer is $$[-4,0) \\cup (0,\\infty)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adc8562real9a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(-4$$, inf)"
+        ],
+        "dependencies": [
+            "adc8562real9a-h5"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "Solve the inequation $$x+4 \\geq 0$$. Express the solution in the form of interval.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$(-4,\\infty)$$",
+            "$$(-4,\\infty)$$",
+            "$$(-\\infty,4)$$",
+            "$$(-\\infty,4)$$"
+        ]
+    },
+    {
+        "id": "adc8562real9a-h7",
+        "type": "hint",
+        "dependencies": [
+            "adc8562real9a-h6"
+        ],
+        "title": "Inteval Union",
+        "text": "The answers are all real numbers where $$x$$ does not equal to $$4$$ and $$x>-2$$. We can use a symbol known as the union, U, to combine the two sets.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

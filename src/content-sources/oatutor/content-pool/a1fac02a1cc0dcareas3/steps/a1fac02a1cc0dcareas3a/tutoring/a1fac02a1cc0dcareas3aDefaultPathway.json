@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a1fac02a1cc0dcareas3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "St\u00e4ll upp integralen",
+        "text": "$$A=\\int |f{\\left(x\\right)}-g{\\left(x\\right)}| a \\,db=$$ $$\\int_{0}^{\\frac{\\pi}{4}} cos(x)-sin(x) \\,dx+$$ $$\\int_{\\frac{\\pi}{4}}^{pi} sin(x)-cos(x) \\,dx$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1fac02a1cc0dcareas3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1fac02a1cc0dcareas3a-h1"
+        ],
+        "title": "Integrera fr\u00e5n $$0$$ till $$\\frac{\\pi}{4}$$",
+        "text": "$$\\int_{0}^{\\frac{\\pi}{4}} cos(x)-sin(x) \\,dx=sin\\left(x\\right)+cos\\left(x\\right)$$ | x=0..pi/4",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1fac02a1cc0dcareas3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sqrt{2} $$-$$ $$1$$"
+        ],
+        "dependencies": [
+            "a1fac02a1cc0dcareas3a-h2"
+        ],
+        "title": "Utv\u00e4rdera",
+        "text": "Vad \u00e4r arean av ett omr\u00e5de begr\u00e4nsat fr\u00e5n $$x=0$$ till $$x=\\frac{\\pi}{4}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1fac02a1cc0dcareas3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1fac02a1cc0dcareas3a-h3"
+        ],
+        "title": "Integrera fr\u00e5n $$\\frac{\\pi}{4}$$ till pi",
+        "text": "$$\\int_{\\frac{\\pi}{4}}**{\\pi} $$(\\sin$$ $$x$$ $$-$$ $$\\cos$$ $$x)\\, dx$$ $$=$$ $$-\\cos$$ $$x$$ $$-$$ $$\\sin$$ $$x$$\\nmed $$x$$ g\u00e5r fr\u00e5n $$\\frac{\\pi}{4}$$ till $$\\pi$$. $$\\n$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1fac02a1cc0dcareas3a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sqrt{2} + $$1$$"
+        ],
+        "dependencies": [
+            "a1fac02a1cc0dcareas3a-h4"
+        ],
+        "title": "Utv\u00e4rdera",
+        "text": "Vad \u00e4r arean av ett omr\u00e5de begr\u00e4nsat fr\u00e5n $$x=\\frac{\\pi}{4}$$ till $$x=\\pi$$? $$\\n$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1fac02a1cc0dcareas3a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a1fac02a1cc0dcareas3a-h5"
+        ],
+        "title": "Arean av hela omr\u00e5det",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,54 @@
+[
+    {
+        "id": "a9d3aa3stat10b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definitions of Qualitative and Quantitative Data",
+        "text": "Qualitative data usually involves categorizing (working with categorical data) and therefore usually isn't numeric in context. Quantitative data, in contrast, always words with numbers whether that be counting or measuring.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9d3aa3stat10b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Quantitative"
+        ],
+        "dependencies": [
+            "a9d3aa3stat10b-h1"
+        ],
+        "title": "Quantitative or Qualitative?",
+        "text": "We want to measure the duration (amount of time). Is this qualitative (uses categories) or quantitative (counting, measuring numerical values)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Quantitative",
+            "Qualitative"
+        ]
+    },
+    {
+        "id": "a9d3aa3stat10b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Continuous"
+        ],
+        "dependencies": [
+            "a9d3aa3stat10b-h2"
+        ],
+        "title": "Continuous or Discrete?",
+        "text": "Discrete data we know usually deals with integer or \"discrete\" values (in the sense that, for instance, you can't have half a person). Counting people would be an example of discrete data. On the other hand, continuous data can be represented as fractions or decimals. For instance, we can have $$1.2$$ miles $$(0.2$$ miles is valid, even though it's not a full mile). Is the duration (amount of time) therefore discrete or continuous? Similarly, can you split up time into $$0.5$$ minutes or something of that nature?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Discrete",
+            "Continuous"
+        ]
+    }
+]

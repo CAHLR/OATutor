@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a649252angle1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Double-angle formula for cosine",
+        "text": "Recall one of the double-angle formulas for $$\\cos(2\\theta)$$, $$such$$ $$as$$ $$\\cos(2\\theta) $$=$$ \\cos**2\\theta $$-$$ \\sin**2\\theta$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle1b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle1b-h1"
+        ],
+        "title": "Substitute values",
+        "text": "Substitute the values of $$\\sin\\theta$$ and $$\\cos\\theta$$ found previously into the chosen formula.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle1b-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{16}{25}$$"
+        ],
+        "dependencies": [
+            "a649252angle1b-h2"
+        ],
+        "title": "Calculate $$\\cos**2\\theta$$",
+        "text": "Using $$\\cos\\theta $$=$$ $$\\frac{-4}{5}$$, $$what$$ $$is$$ $$\\cos**2\\theta$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle1b-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{9}{25}$$"
+        ],
+        "dependencies": [
+            "a649252angle1b-h2"
+        ],
+        "title": "Calculate $$\\sin**2\\theta$$",
+        "text": "Using $$\\sin\\theta $$=$$ $$\\frac{3}{5}$$, $$what$$ $$is$$ $$\\sin**2\\theta$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

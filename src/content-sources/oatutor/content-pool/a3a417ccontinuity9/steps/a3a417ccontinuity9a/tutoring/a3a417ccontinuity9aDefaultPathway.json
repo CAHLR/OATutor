@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a3a417ccontinuity9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor Denominator",
+        "text": "$$x^2-1$$ $$=$$ $$\\left(x-1\\right) \\left(x+1\\right)$$. At $$x=1$$, denom $$=$$ $$0$$, numer $$=$$ $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3a417ccontinuity9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3a417ccontinuity9a-h1"
+        ],
+        "title": "Behavior Near $$x=1$$",
+        "text": "As x\u21921, $$\\frac{1}{x^2-1}$$ blows up to \u00b1\u221e (no cancellation possible).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3a417ccontinuity9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3a417ccontinuity9a-h2"
+        ],
+        "title": "Classify",
+        "text": "Function approaches infinity $$=$$ infinite discontinuity.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

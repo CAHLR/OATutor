@@ -1,0 +1,113 @@
+[
+    {
+        "id": "a19d043polysq11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Perfect Square",
+        "text": "To expand the square of a binomial, you need to apply the formula $$\\left(a+b\\right)^2$$ $$=$$ $$a^2$$ + 2ab + $$b^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a19d043polysq11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a19d043polysq11a-h1"
+        ],
+        "title": "Identify the Terms",
+        "text": "In the expression $$\\left(2x+3\\right)^2$$, identify 'a' and 'b'. Here, 'a' is $$2x$$ and 'b' is $$3$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a19d043polysq11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a19d043polysq11a-h2"
+        ],
+        "title": "Apply the Formula",
+        "text": "Substitute 'a' and 'b' into the formula: $$\\left(2x+3\\right)^2$$ $$=$$ $$\\left(2x\\right)^2$$ + $$2\\times2x\\times3$$ + $$3^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a19d043polysq11a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$4x^2$$"
+        ],
+        "dependencies": [
+            "a19d043polysq11a-h2"
+        ],
+        "title": "Calculate $$a^2$$",
+        "text": "Calculate the square of the first term, $$a^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$4x^2$$",
+            "$$4x^4$$",
+            "$$6x^2$$",
+            "$$2x^2$$"
+        ]
+    },
+    {
+        "id": "a19d043polysq11a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$12x$$"
+        ],
+        "dependencies": [
+            "a19d043polysq11a-h2"
+        ],
+        "title": "Calculate 2ab",
+        "text": "Calculate $$2$$ times the product of the two terms, 2ab.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$12x$$",
+            "$$8x$$",
+            "$$24x$$",
+            "$$6x$$"
+        ]
+    },
+    {
+        "id": "a19d043polysq11a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "a19d043polysq11a-h2"
+        ],
+        "title": "Calculate $$b^2$$",
+        "text": "Calculate the square of the second term, $$b^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a19d043polysq11a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a19d043polysq11a-h3",
+            "a19d043polysq11a-h4",
+            "a19d043polysq11a-h5"
+        ],
+        "title": "Combine the Results",
+        "text": "Combine the results from the previous steps to get the expanded form of the binomial.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

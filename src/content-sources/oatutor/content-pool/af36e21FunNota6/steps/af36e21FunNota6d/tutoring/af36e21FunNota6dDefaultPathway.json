@@ -1,0 +1,41 @@
+[
+    {
+        "id": "af36e21FunNota6d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Evaluating functions",
+        "text": "Given the equation for a function, we should replace the input variable in the equation with the value provided and then calculate the result.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af36e21FunNota6d-h2",
+        "type": "hint",
+        "dependencies": [
+            "af36e21FunNota6d-h1"
+        ],
+        "title": "Replacement",
+        "text": "Replace the term $$f{\\left(a+h\\right)}$$ and f(a) with the result in step $$2$$ and step $$3$$, namely, $$f{\\left(a+h\\right)}=a^2+2ah+h^2+3a+3h-4$$, and $$f(a)=a^2+3a-4$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af36e21FunNota6d-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2a+h+3$$"
+        ],
+        "dependencies": [
+            "af36e21FunNota6d-h2"
+        ],
+        "title": "Simplification",
+        "text": "Simplify the expression after plugging in. What do we get?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

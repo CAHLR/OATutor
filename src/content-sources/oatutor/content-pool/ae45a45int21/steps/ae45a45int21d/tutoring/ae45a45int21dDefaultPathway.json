@@ -1,0 +1,97 @@
+[
+    {
+        "id": "ae45a45int21d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewriting the Expression",
+        "text": "Subtracting $$-4$$ is the same as adding $$4$$, since the two negative signs (one from the subtraction, the other from -4) cancel out into a +",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae45a45int21d-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-3$$"
+        ],
+        "dependencies": [
+            "ae45a45int21d-h1"
+        ],
+        "title": "Rewriting the Expression",
+        "text": "What is $$-7+4$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "ae45a45int21d-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$-6$$"
+                ],
+                "dependencies": [],
+                "title": "Rewriting the Expression",
+                "text": "What is $$-7+1$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "ae45a45int21d-h2-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$-5$$"
+                ],
+                "dependencies": [
+                    "ae45a45int21d-h2-s1"
+                ],
+                "title": "Rewriting the Expression",
+                "text": "What is $$-7+2$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "ae45a45int21d-h2-s3",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$-4$$"
+                ],
+                "dependencies": [
+                    "ae45a45int21d-h2-s2"
+                ],
+                "title": "Rewriting the Expression",
+                "text": "What is $$-7+3$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "ae45a45int21d-h2-s4",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$-3$$"
+                ],
+                "dependencies": [
+                    "ae45a45int21d-h2-s3"
+                ],
+                "title": "Rewriting the Expression",
+                "text": "What is $$-7+4$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    }
+]

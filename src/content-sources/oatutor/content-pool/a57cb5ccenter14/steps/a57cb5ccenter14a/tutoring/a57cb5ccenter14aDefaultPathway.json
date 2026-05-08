@@ -1,0 +1,63 @@
+[
+    {
+        "id": "a57cb5ccenter14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the Location of the Median",
+        "text": "To find the median of a data set, we want to first determine the location of the median. Remember the formula for that data point is $$\\frac{n+1}{2}$$ where $$n$$ represents the total number of data points in the set.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a57cb5ccenter14a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$14$$"
+        ],
+        "dependencies": [
+            "a57cb5ccenter14a-h1"
+        ],
+        "title": "Determining Location of the Median",
+        "text": "What is the location of the median? What is $$\\frac{n+1}{2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a57cb5ccenter14a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$14$$"
+                ],
+                "dependencies": [],
+                "title": "Determining Location of the Median",
+                "text": "What is $$\\frac{27+1}{2}$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a57cb5ccenter14a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$27$$"
+        ],
+        "dependencies": [
+            "a57cb5ccenter14a-h2"
+        ],
+        "title": "Finding the 14th Data Value",
+        "text": "What is the median? In other words, what is the 14th data point?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

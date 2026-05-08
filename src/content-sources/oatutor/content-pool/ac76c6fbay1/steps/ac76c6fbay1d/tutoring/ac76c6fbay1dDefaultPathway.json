@@ -1,0 +1,34 @@
+[
+    {
+        "id": "ac76c6fbay1d-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "division"
+        ],
+        "dependencies": [],
+        "title": "Hint",
+        "text": "This is a GIVEN bayes probability. We need P[Fish from Spelling Bay | Salmon]. What rule does this suggest we use to calculate the probability.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "division",
+            "complement",
+            "chain"
+        ]
+    },
+    {
+        "id": "ac76c6fbay1d-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac76c6fbay1d-h1"
+        ],
+        "title": "Hint",
+        "text": "We can set up the probability as P[Spelling Bay and Salmon] / P[Salmon]",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

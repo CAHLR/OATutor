@@ -1,0 +1,99 @@
+[
+    {
+        "id": "ad291beRadRat2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Inner Radical",
+        "text": "You can start of by simplifying the inner radical.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad291beRadRat2b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "ad291beRadRat2b-h1"
+        ],
+        "title": "Principal Square Root",
+        "text": "What is $$\\sqrt{81}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "ad291beRadRat2b-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Principal Square Root",
+                "text": "The principal square root of a is the nonnegative number that, when multiplied by itself, equals a. It is written as a radical expression, with a symbol called a radical over the term called the radicand: $$\\sqrt{a}$$.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "ad291beRadRat2b-h2-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$9$$"
+                ],
+                "dependencies": [
+                    "ad291beRadRat2b-h2-s1"
+                ],
+                "title": "Principal Square Root",
+                "text": "What number multiplied by itself equals 81?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "ad291beRadRat2b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad291beRadRat2b-h2"
+        ],
+        "title": "Inner Radical",
+        "text": "Simlify the expression: $$\\sqrt{\\sqrt{81}}=\\sqrt{9}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad291beRadRat2b-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad291beRadRat2b-h3"
+        ],
+        "title": "Principal Square Root",
+        "text": "The principal square root of a is the nonnegative number that, when multiplied by itself, equals a. It is written as a radical expression, with a symbol called a radical over the term called the radicand: $$\\sqrt{a}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad291beRadRat2b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "ad291beRadRat2b-h4"
+        ],
+        "title": "Principal Square Root",
+        "text": "What number multiplied by itself equals 9?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

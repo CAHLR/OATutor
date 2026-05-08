@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a649252angle18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use the Pythagorean identity",
+        "text": "Recall the Pythagorean identity: $$\\sin**2(A) + \\cos**2(A) $$=$$ $$1$$. $$You$$ $$can$$ $$use$$ $$this$$ $$to$$ $$find$$ $$\\sin(2\\theta)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle18a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{16}{25}$$"
+        ],
+        "dependencies": [
+            "a649252angle18a-h1"
+        ],
+        "title": "Apply the Pythagorean identity",
+        "text": "Using the identity, what is $$\\sin**2(2\\theta)$$ if $$\\cos(2\\theta)=\\frac{3}{5}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle18a-h1"
+        ],
+        "title": "Determine the sign of \\sin(2\\theta)",
+        "text": "The given range for $$\\theta$$ helps determine the quadrant for $$2\\theta$$, $$which$$ $$in$$ $$turn$$ $$determines$$ $$the$$ $$sign$$ $$of$$ $$\\sin(2\\theta)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle18a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Quadrant IV"
+        ],
+        "dependencies": [
+            "a649252angle18a-h2"
+        ],
+        "title": "Identify the quadrant of 2\\theta",
+        "text": "Given $$\\cos(2\\theta)=\\frac{3}{5}$$ (positive) and $$180**{\\circ}\\leq2\\theta\\leq360**{\\circ}$$ (Quadrants III or IV), in which quadrant is $$2\\theta$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Quadrant I",
+            "Quadrant II",
+            "Quadrant III",
+            "Quadrant IV"
+        ]
+    }
+]

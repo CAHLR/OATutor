@@ -1,0 +1,157 @@
+[
+    {
+        "id": "a161552dividing4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rearrange expression and group like terms",
+        "text": "use associative and commutative property of multiplication to group like terms together",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividing4a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x^8$$"
+        ],
+        "dependencies": [
+            "a161552dividing4a-h1"
+        ],
+        "title": "Rearrange expression and group like terms",
+        "text": "In this expression, what is the like term of $$x^5$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividing4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a161552dividing4a-h2"
+        ],
+        "title": "Rearrange expression and group like terms",
+        "text": "$$45$$ and $$-60$$ are consider as like terms because they are both real numbers. $$x^5$$ and $$x^8$$ are consider like terms because they are different power of a. Similar for $$y^9$$ and $$y^6$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividing4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a161552dividing4a-h3"
+        ],
+        "title": "Simplify each group",
+        "text": "We can rewrite the given expression in a new way by grouping the like terms using parenthese, $$\\frac{45x^5 x^9}{\\left(-60x^8 x^6\\right)}=\\frac{45}{-60} \\frac{x^5}{x^8} \\frac{y^9}{y^6}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividing4a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-3}{4}$$"
+        ],
+        "dependencies": [
+            "a161552dividing4a-h4"
+        ],
+        "title": "Simplify each group",
+        "text": "Simplify $$\\frac{45}{-60}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividing4a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{x^3}$$"
+        ],
+        "dependencies": [
+            "a161552dividing4a-h5"
+        ],
+        "title": "Simplify each group",
+        "text": "Simplify $$\\frac{x^5}{x^8}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividing4a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$y^3$$"
+        ],
+        "dependencies": [
+            "a161552dividing4a-h6"
+        ],
+        "title": "Simplify each group",
+        "text": "Simplify $$\\frac{y^9}{y^6}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a161552dividing4a-h7-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Rules for simplify power",
+                "text": "Given a real number $$x$$, and m,n integers, $$\\frac{a^m}{a^n}=a^{m-n}$$ and $$a^m a^n=a^{m+n}$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a161552dividing4a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a161552dividing4a-h7"
+        ],
+        "title": "Multiply each group together",
+        "text": "Then, replace the each group with its simplified form we get $$\\left(-\\frac{3}{4}\\right) \\frac{1}{x^3} y^3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividing4a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3y^3}{\\left(-4x^3\\right)}$$"
+        ],
+        "dependencies": [
+            "a161552dividing4a-h8"
+        ],
+        "title": "Fraction mutiplication Rule",
+        "text": "The final step is take $$\\left(-\\frac{3}{4}\\right) \\frac{1}{x^3} y^3$$ and turn it into fraction form using fraction multiplication.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a161552dividing4a-h9-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Fraction mutiplication Rule",
+                "text": "As a reminder, given fractions $$\\frac{a}{b}$$ and $$\\frac{d}{c}$$ where a, $$d$$ are real number, and $$b$$, c are non zero real number, $$\\frac{a}{b} \\frac{d}{c}=\\frac{a d}{b c}$$. we can write $$y^3$$ as $$\\frac{y^3}{1}$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    }
+]

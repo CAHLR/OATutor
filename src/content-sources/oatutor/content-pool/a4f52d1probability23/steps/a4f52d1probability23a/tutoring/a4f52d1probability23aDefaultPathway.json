@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a4f52d1probability23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Complement Rule",
+        "text": "P(no ace) $$=$$ $$1$$ - P(ace).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4f52d1probability23a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{13}$$"
+        ],
+        "dependencies": [
+            "a4f52d1probability23a-h1"
+        ],
+        "title": "P(ace)",
+        "text": "What is P(drawing an ace)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4f52d1probability23a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{12}{13}$$"
+        ],
+        "dependencies": [
+            "a4f52d1probability23a-h2"
+        ],
+        "title": "P(no ace)",
+        "text": "What is $$1$$ - P(ace)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

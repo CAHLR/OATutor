@@ -1,0 +1,46 @@
+[
+    {
+        "id": "afa63f8real8a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(-Inf,Inf),(-Inf,7)$$"
+        ],
+        "dependencies": [],
+        "title": "Domain and Range",
+        "text": "What is the range of x-values (domain) and the range of y-values (range)?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$(-Inf,Inf)$$ $$(-Inf$$, 7)",
+            "$$(-Inf,0)$$ (7,Inf)",
+            "$$(-Inf,0)$$ (1,Inf)",
+            "$$(-Inf,Inf)$$ $$(0,7)$$"
+        ]
+    },
+    {
+        "id": "afa63f8real8a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$y-intercept=(0,6),and$$ $$g(x)=-{10}^x+7$$"
+        ],
+        "dependencies": [
+            "afa63f8real8a-h1"
+        ],
+        "title": "Y-Intercept",
+        "text": "Find the value of $$y$$ when $$x=0;$$ the y-axis reflection means that $$x$$ has its sign reflected, and the shift upwards means that $$7$$ is added to the function.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$y-intercept=(0,-6)$$, and $$g(x)={10}^x+7$$",
+            "$$y-intercept=(6,0)$$, and $$g(x)=-{10}^x+7$$",
+            "$$y-intercept=(0,6)$$, and $$g(x)=-{10}^x+7$$",
+            "$$y-intercept=(0,-6)$$, and $$g(x)=-{10}^x+6$$"
+        ]
+    }
+]

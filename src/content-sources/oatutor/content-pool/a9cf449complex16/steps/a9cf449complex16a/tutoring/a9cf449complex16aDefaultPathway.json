@@ -1,0 +1,88 @@
+[
+    {
+        "id": "a9cf449complex16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Comverting Division into Multiplication",
+        "text": "Write the division as multiplying by a fraction.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9cf449complex16a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{3}$$"
+        ],
+        "dependencies": [
+            "a9cf449complex16a-h1"
+        ],
+        "title": "Comverting Division into Multiplication",
+        "text": "What is the fraction such that multiplying by this fraction is equivalent to dividing by 3?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9cf449complex16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9cf449complex16a-h2"
+        ],
+        "title": "Distributive Property",
+        "text": "Distribute the $$\\frac{1}{3}$$ to each term in the complex number.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9cf449complex16a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a9cf449complex16a-h3"
+        ],
+        "title": "Distributive Property",
+        "text": "What is the first term?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9cf449complex16a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\left(\\frac{2}{3}\\right) i$$"
+        ],
+        "dependencies": [
+            "a9cf449complex16a-h3"
+        ],
+        "title": "Distributive Property",
+        "text": "What is the second term?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9cf449complex16a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a9cf449complex16a-h4",
+            "a9cf449complex16a-h5"
+        ],
+        "title": "Distributive Property",
+        "text": "Write the expression into standard form: $$2-\\frac{2}{3} i$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

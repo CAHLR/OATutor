@@ -1,0 +1,123 @@
+[
+    {
+        "id": "a37e07emodels27a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula for half-life",
+        "text": "The half-life of a drug that decays exponentially can be found using the formula: $$t=\\frac{-ln2}{k}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a37e07emodels27a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a37e07emodels27a-h1"
+        ],
+        "title": "Rearranging equation",
+        "text": "Once we rearrange the equation to solve for k, we get $$k=\\frac{-ln2}{t}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a37e07emodels27a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$30$$"
+        ],
+        "dependencies": [
+            "a37e07emodels27a-h2"
+        ],
+        "title": "Representing values in an equation",
+        "text": "If $$t$$ represents the half-life, what number should we plug in for $$t$$ in the equation?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a37e07emodels27a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a37e07emodels27a-h3"
+        ],
+        "title": "Solving for k",
+        "text": "Now, solve for k and round to four decimal places.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a37e07emodels27a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-0.0231$$"
+        ],
+        "dependencies": [
+            "a37e07emodels27a-h4"
+        ],
+        "title": "Solving for k",
+        "text": "What does k equal?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a37e07emodels27a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a37e07emodels27a-h5"
+        ],
+        "title": "Solving for $$t$$",
+        "text": "Use the decay formula to solve for $$t$$ when $$A=1$$. This is the formula: $$A=A_0 e^{kt}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a37e07emodels27a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a37e07emodels27a-h6"
+        ],
+        "title": "Solving for $$t$$",
+        "text": "Plug in $$200$$ for $$A_0$$ and the value you found for k into the formula.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a37e07emodels27a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$229$$"
+        ],
+        "dependencies": [
+            "a37e07emodels27a-h7"
+        ],
+        "title": "Solving for $$t$$",
+        "text": "What does $$t$$ equal, rounded to the nearest whole number?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a37e07emodels27a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a37e07emodels27a-h8"
+        ],
+        "title": "Comparing numbers",
+        "text": "Compare the value of $$t$$ with $$230$$. Is it more or less than $$230$$ years?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

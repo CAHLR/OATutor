@@ -1,0 +1,36 @@
+[
+    {
+        "id": "ac76c6fbay2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Hint",
+        "text": "Calculate this probability using bayes rule: P(A and B) $$=$$ P(A) * P(B | A)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac76c6fbay2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac76c6fbay2b-h1"
+        ],
+        "title": "Hint",
+        "text": "The P(A) term when we set up bayes rule is P(not eraser thief)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac76c6fbay2b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac76c6fbay2b-h2"
+        ],
+        "title": "Hint",
+        "text": "The P( B | A) term when we set up bayes rule is P( has key card | not eraser thief)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a73b129counting13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding",
+        "text": "When constructing a string of $$3$$ digits, the numbers must be selected without repetition. For each digit in the string, the number of available choices decreases as digits are used.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73b129counting13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73b129counting13a-h1"
+        ],
+        "title": "Multiplication Principle",
+        "text": "Since the choices for each digit depend on the previous choices (no repetition), we should use the Multiplication Principle. The total number of possible outcomes is found by multiplying the number of choices for each digit.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73b129counting13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a73b129counting13a-h2"
+        ],
+        "title": "Application",
+        "text": "Since the first digit has $$10$$ choices, the second digit has $$9$$ choices, and the third digit has $$8$$ choices, multiply these values together.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

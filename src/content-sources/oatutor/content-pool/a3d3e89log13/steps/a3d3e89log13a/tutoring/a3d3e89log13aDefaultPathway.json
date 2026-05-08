@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a3d3e89log13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Natural Logarithm",
+        "text": "lnx is the same as loge(x).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log13a-h1"
+        ],
+        "title": "Change of Base",
+        "text": "Knowing the logarithm is of base $$10$$, rewrite $${100}^8$$ with a base of $$10$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log13a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$b=e$$, $$y=ln(1.06)$$, $$x=e^{\\ln\\left(1.06\\right)}$$"
+        ],
+        "dependencies": [
+            "a3d3e89log13a-h2"
+        ],
+        "title": "Identify Variables",
+        "text": "By exponential form, $$b^y=x$$, what are $$b$$, $$y$$, and $$x$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$b=e$$, $$y=ln(1.06)$$, $$x=e^{\\ln\\left(1.06\\right)}$$",
+            "$$b=e$$, $$y=ln(1.06)$$, $$x=e$$"
+        ]
+    },
+    {
+        "id": "a3d3e89log13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log13a-h3"
+        ],
+        "title": "Substitute",
+        "text": "Substitute $$b$$, $$x$$, $$y$$ into $$logb(x)=y$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log13a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log13a-h4"
+        ],
+        "title": "Simplify",
+        "text": "$$\\operatorname{loge}\\left(e^{\\ln\\left(1.06\\right)}\\right)=ln(1.06)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

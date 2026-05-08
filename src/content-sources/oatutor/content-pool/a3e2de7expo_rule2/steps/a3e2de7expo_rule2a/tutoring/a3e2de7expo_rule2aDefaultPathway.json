@@ -1,0 +1,90 @@
+[
+    {
+        "id": "a3e2de7expo_rule2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Product Rule",
+        "text": "The product rule of exponents states that when you multiply two powers with the same base, you add the exponents.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a3e2de7expo_rule2a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "k"
+        ],
+        "dependencies": [
+            "a3e2de7expo_rule2a-h1"
+        ],
+        "title": "Identify the Base",
+        "text": "What is the common base in the expression $$k^6 k^9$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "k",
+            "$$6$$",
+            "$$9$$"
+        ]
+    },
+    {
+        "id": "a3e2de7expo_rule2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$15$$"
+        ],
+        "dependencies": [
+            "a3e2de7expo_rule2a-h2"
+        ],
+        "title": "Add the Exponents",
+        "text": "Using the product rule, add the exponents of k in the expression $$k^6 k^9$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$15$$",
+            "$$54$$",
+            "$$3$$"
+        ]
+    },
+    {
+        "id": "a3e2de7expo_rule2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3e2de7expo_rule2a-h3"
+        ],
+        "title": "Simplify the Expression",
+        "text": "After adding the exponents, rewrite the expression with the new exponent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a3e2de7expo_rule2a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$k^{15}$$"
+        ],
+        "dependencies": [
+            "a3e2de7expo_rule2a-h4"
+        ],
+        "title": "Final Simplified Expression",
+        "text": "What is the simplified form of $$k^6 k^9$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$k^{15}$$",
+            "$$k^3$$",
+            "$$k^{54}$$"
+        ]
+    }
+]

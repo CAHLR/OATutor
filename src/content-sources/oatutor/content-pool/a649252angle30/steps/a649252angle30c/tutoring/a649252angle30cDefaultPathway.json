@@ -1,0 +1,62 @@
+[
+    {
+        "id": "a649252angle30c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use previous results",
+        "text": "You have already found $$\\sin(2x)$$ and $$\\cos(2x)$$. $$Recall$$ $$that$$ $$\\tan(2x)$$ $$=$$ $$\\frac{\\sin(2x)}{\\cos(2x)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle30c-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\sin(2x)$$ $$=$$ $$\\frac{120}{169$$,} $$\\cos(2x)$$ $$=$$ $$-\\frac{119}{169}$$"
+        ],
+        "dependencies": [
+            "a649252angle30c-h1"
+        ],
+        "title": "Identify $$\\sin(2x)$$ and $$\\cos(2x)$$",
+        "text": "What are the values of $$\\sin(2x)$$ and $$\\cos(2x)$$ you found in the previous steps?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\sin(2x)$$ $$=$$ $$\\frac{120}{169$$,} $$\\cos(2x)$$ $$=$$ $$-\\frac{119}{169}$$",
+            "$$\\sin(2x)$$ $$=$$ $$-\\frac{120}{169$$,} $$\\cos(2x)$$ $$=$$ $$-\\frac{119}{169}$$",
+            "$$\\sin(2x)$$ $$=$$ $$-\\frac{120}{169$$,} $$\\cos(2x)$$ $$=$$ $$\\frac{119}{169}$$",
+            "$$\\sin(2x)$$ $$=$$ $$-\\frac{119}{169$$,} $$\\cos(2x)$$ $$=$$ $$\\frac{120}{169}$$"
+        ]
+    },
+    {
+        "id": "a649252angle30c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculate the ratio",
+        "text": "Divide $$\\sin(2x)$$ by $$\\cos(2x)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle30c-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\frac{120}{119}$$"
+        ],
+        "dependencies": [
+            "a649252angle30c-h2"
+        ],
+        "title": "Calculate $$\\frac{\\sin(2x)}{\\cos(2x)}$$",
+        "text": "Calculate $$\\frac{\\frac{120}{169}}{-\\frac{119}{169}}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

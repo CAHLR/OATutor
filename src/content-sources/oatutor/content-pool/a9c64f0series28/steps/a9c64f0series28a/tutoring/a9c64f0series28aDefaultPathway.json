@@ -1,0 +1,89 @@
+[
+    {
+        "id": "a9c64f0series28a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use Infinite Geometric Series formula",
+        "text": "The sum of an infinite geometric series with |r| < $$1$$ is S $$=$$ $$a_1$$ / (1 - r).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9c64f0series28a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9c64f0series28a-h1"
+        ],
+        "title": "Find $$r$$",
+        "text": "The common ratio $$r$$ $$=$$ (second term) / (first term) $$=$$ $$1.6$$ / $$2$$ $$=$$ $$0.8$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9c64f0series28a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9c64f0series28a-h2"
+        ],
+        "title": "Check |r|",
+        "text": "Since $$r$$ $$=$$ $$0.8$$, we have |r| $$=$$ $$0.8$$ < $$1$$. The series converges and the formula applies.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9c64f0series28a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9c64f0series28a-h3"
+        ],
+        "title": "Identify $$a_1$$",
+        "text": "$$a_1$$ is the first term of the series: $$a_1$$ $$=$$ $$2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9c64f0series28a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a9c64f0series28a-h4"
+        ],
+        "title": "Set up the formula",
+        "text": "Substitute $$a_1$$ $$=$$ $$2$$ and $$r$$ $$=$$ $$0.8$$ into S $$=$$ $$a_1$$ / (1 - r).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9c64f0series28a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.2$$"
+        ],
+        "dependencies": [
+            "a9c64f0series28a-h5"
+        ],
+        "title": "Compute $$1$$ - $$r$$",
+        "text": "What is $$1$$ - $$r$$ when $$r$$ $$=$$ $$0.8$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9c64f0series28a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a9c64f0series28a-h5"
+        ],
+        "title": "Find the Sum",
+        "text": "S $$=$$ $$2$$ / (1 - $$0.8)$$ $$=$$ $$2$$ / $$0.2$$ $$=$$ $$10$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

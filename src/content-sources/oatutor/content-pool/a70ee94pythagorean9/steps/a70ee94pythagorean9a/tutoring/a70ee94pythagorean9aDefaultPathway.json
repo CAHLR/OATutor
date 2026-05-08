@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a70ee94pythagorean9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the formula",
+        "text": "For a right triangle with legs a and $$b$$ and hypotenuse c, use $$a^2+b^2=c^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70ee94pythagorean9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a70ee94pythagorean9a-h1"
+        ],
+        "title": "Substitute the side lengths",
+        "text": "Replace a and $$b$$ with $$8$$ and $$15$$, so $$8^2+{15}^2=c^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70ee94pythagorean9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a70ee94pythagorean9a-h2"
+        ],
+        "title": "Simplify the squares",
+        "text": "Compute $$8^2=64$$ and $${15}^2=225$$, so $$c^2=64+225=289$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70ee94pythagorean9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a70ee94pythagorean9a-h3"
+        ],
+        "title": "Take the square root",
+        "text": "Since $$c^2=289$$, take the square root of both sides to get $$c=17$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

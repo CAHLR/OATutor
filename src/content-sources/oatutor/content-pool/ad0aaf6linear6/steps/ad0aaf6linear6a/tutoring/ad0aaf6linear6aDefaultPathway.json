@@ -1,0 +1,201 @@
+[
+    {
+        "id": "ad0aaf6linear6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "\u0394y Formula",
+        "text": "\u0394y $$=$$ f(a + dx) - f(a)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ad0aaf6linear6a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3.1$$"
+        ],
+        "dependencies": [
+            "ad0aaf6linear6a-h1"
+        ],
+        "title": "First Step: $$x_1$$",
+        "text": "dx is the difference between two values of $$x$$. Given that dx $$=$$ $$0.1$$ and the initial value of $$x$$ is $$3$$, what is the new value, $$x_1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "ad0aaf6linear6a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$3.1$$"
+                ],
+                "dependencies": [],
+                "title": "Determining $$x_1$$",
+                "text": "$$x_1$$ $$=$$ a + dx. What is $$x_1$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            },
+            {
+                "id": "ad0aaf6linear6a-h2-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$3.1$$"
+                ],
+                "dependencies": [],
+                "title": "Plugging Into $$x_1$$",
+                "text": "$$x_1$$ $$=$$ $$3$$ + $$0.1$$. What is $$x_1$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "ad0aaf6linear6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad0aaf6linear6a-h2"
+        ],
+        "title": "Applying Solved Values to the \u0394y Formula",
+        "text": "Plug $$x$$ $$=$$ $$3$$ and $$x_1$$ $$=$$ $$3.1$$ into \u0394y $$=$$ $$f{\\left(x_1\\right)}$$ - f(x) to get \u0394y $$=$$ $$f(3.1)$$ - f(3).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ad0aaf6linear6a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$15$$"
+        ],
+        "dependencies": [
+            "ad0aaf6linear6a-h3"
+        ],
+        "title": "Solving for f(x)",
+        "text": "What is f(x)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "ad0aaf6linear6a-h4-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$15$$"
+                ],
+                "dependencies": [],
+                "title": "Plugging $$x$$ Into the Equation",
+                "text": "Given that $$x$$ $$=$$ $$3$$, plug this x-value into the equation $$y$$ $$=$$ $$x^2$$ + $$2x$$ to solve for f(x). What answer do you get?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            },
+            {
+                "id": "ad0aaf6linear6a-h4-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$15$$"
+                ],
+                "dependencies": [],
+                "title": "Next Steps of Finding $$x$$",
+                "text": "Solve for $$y$$ $$=$$ $$3^2$$ + 2(3). What is f(x)?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "ad0aaf6linear6a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$15.81$$"
+        ],
+        "dependencies": [
+            "ad0aaf6linear6a-h3"
+        ],
+        "title": "Solving for $$f{\\left(x_1\\right)}$$",
+        "text": "What is $$f{\\left(x_1\\right)}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "subHints": [
+            {
+                "id": "ad0aaf6linear6a-h5-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$15.81$$"
+                ],
+                "dependencies": [],
+                "title": "Plugging $$x_1$$ Into the Equation",
+                "text": "Given that $$x_1$$ $$=$$ $$3.1$$, plug this x-value into the equation $$y$$ $$=$$ $$x^2$$ + $$2x$$ to solve for $$f{\\left(x_1\\right)}$$. What answer do you get?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            },
+            {
+                "id": "ad0aaf6linear6a-h5-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$15.81$$"
+                ],
+                "dependencies": [],
+                "title": "Next Steps of Finding $$x_1$$",
+                "text": "Solve for $$y$$ $$=$$ $${3.1}^2$$ + $$2(3.1)$$. What is $$f{\\left(x_1\\right)}$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "ad0aaf6linear6a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.81$$"
+        ],
+        "dependencies": [
+            "ad0aaf6linear6a-h4",
+            "ad0aaf6linear6a-h5"
+        ],
+        "title": "Putting It Together",
+        "text": "Now that we know that f(x) $$=$$ $$15$$ and $$f{\\left(x_1\\right)}$$ $$=$$ $$15.81$$, what is \u0394y?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ad0aaf6linear6a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ad0aaf6linear6a-h6"
+        ],
+        "title": "Final Answer",
+        "text": "\u0394y $$=$$ $$f{\\left(x_1\\right)}$$ - f(x) $$=$$ $$15.81$$ - $$15$$ $$=$$ $$0.81$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

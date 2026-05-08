@@ -1,0 +1,94 @@
+[
+    {
+        "id": "ae45a45int24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exponents with Negatives",
+        "text": "The best approach to this is turning this into a multiplication problem: this is is equivalent to $$\\left(-2\\right) \\left(-2\\right) \\left(-2\\right) \\left(-2\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae45a45int24a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae45a45int24a-h1"
+        ],
+        "title": "Multiplying Negative Numbers",
+        "text": "When multiplying two numbers, you can multiply as if they are both positive, then make the answer negative IF the signs of both numbers are different (ONLY ONE of the numbers is negative)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae45a45int24a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$16$$"
+        ],
+        "dependencies": [
+            "ae45a45int24a-h2"
+        ],
+        "title": "Multiplying Negative Numbers",
+        "text": "What is $$\\left(-2\\right) \\left(-2\\right) \\left(-2\\right) \\left(-2\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "ae45a45int24a-h3-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$4$$"
+                ],
+                "dependencies": [
+                    "ae45a45int24a-h3"
+                ],
+                "title": "Multiplying Negative Numbers",
+                "text": "What is $$\\left(-2\\right) \\left(-2\\right)$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "ae45a45int24a-h3-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$-8$$"
+                ],
+                "dependencies": [
+                    "ae45a45int24a-h3-s1"
+                ],
+                "title": "Multiplying Negative Numbers",
+                "text": "What is $$4\\left(-2\\right)$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "ae45a45int24a-h3-s3",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$16$$"
+                ],
+                "dependencies": [
+                    "ae45a45int24a-h3-s2"
+                ],
+                "title": "Multiplying Negative Numbers",
+                "text": "What is $$-8\\left(-2\\right)$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "id": "aae56detrig32b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall the sum identity for cosine",
+        "text": "What is the formula for $$cos\\left(A+B\\right)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig32b-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "cos(A)cos(B) $$-$$ sinAsinB"
+        ],
+        "dependencies": [
+            "aae56detrig32b-h1"
+        ],
+        "title": "Cosine sum identity",
+        "text": "What is $$cos\\left(A+B\\right)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "cos(A)cos(B) $$-$$ sinAsinB",
+            "cos(A)cos(B) + sinAsinB",
+            "sin(A)cos(B) + cosAsinB",
+            "sin(A)cos(B) $$-$$ cosAsinB"
+        ]
+    },
+    {
+        "id": "aae56detrig32b-h2",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig32b-h1"
+        ],
+        "title": "Use previously found values",
+        "text": "You already have sin(a), cos(a), sin(b), cos(b) from the previous part.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig32b-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$sin(a)=\\frac{4}{5}$$, $$cosa=\\frac{3}{5}$$, $$sinb=\\frac{2\\sqrt{2}}{3}$$, $$cosb=\\frac{1}{3}$$"
+        ],
+        "dependencies": [
+            "aae56detrig32b-h2"
+        ],
+        "title": "Recall values",
+        "text": "What are sin(a), cos(a), sin(b), cos(b)?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$sin(a)=\\frac{4}{5}$$, $$cosa=\\frac{3}{5}$$, $$sinb=\\frac{2\\sqrt{2}}{3}$$, $$cosb=\\frac{1}{3}$$",
+            "$$sin(a)=\\frac{4}{5}$$, $$cosa=\\frac{-3}{5}$$, $$sinb=\\frac{2\\sqrt{2}}{3}$$, $$cosb=\\frac{1}{3}$$",
+            "$$sin(a)=\\frac{4}{5}$$, $$cosa=\\frac{3}{5}$$, $$sinb=\\frac{-\\left(2\\sqrt{2}\\right)}{3}$$, $$cosb=\\frac{1}{3}$$",
+            "$$sin(a)=\\frac{3}{5}$$, $$cosa=\\frac{4}{5}$$, $$sinb=\\frac{2\\sqrt{2}}{3}$$, $$cosb=\\frac{1}{3}$$"
+        ]
+    },
+    {
+        "id": "aae56detrig32b-h3",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig32b-h2"
+        ],
+        "title": "Substitute and simplify",
+        "text": "Substitute all known values into the $$cos\\left(a+b\\right)$$ formula and simplify the expression.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig32b-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{3}{5} \\frac{1}{3}$$ $$-$$ $$\\frac{4}{5} \\frac{2\\sqrt{2}}{3}$$"
+        ],
+        "dependencies": [
+            "aae56detrig32b-h3"
+        ],
+        "title": "Substitute values",
+        "text": "Substitute these values into $$cos\\left(a+b\\right)$$ formula.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{3}{5} \\frac{1}{3}$$ $$-$$ $$\\frac{4}{5} \\frac{2\\sqrt{2}}{3}$$",
+            "$$\\frac{3}{5} \\frac{1}{3}$$ + $$\\frac{4}{5} \\frac{2\\sqrt{2}}{3}$$",
+            "$$\\frac{4}{5} \\frac{1}{3}$$ $$-$$ $$\\frac{3}{5} \\frac{2\\sqrt{2}}{3}$$",
+            "$$\\frac{3}{5} \\frac{1}{3}$$ $$-$$ $$\\frac{4}{5} \\frac{\\sqrt{2}}{3}$$"
+        ]
+    },
+    {
+        "id": "aae56detrig32b-s4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "(3 - 8sqrt(2))/(15)"
+        ],
+        "dependencies": [
+            "aae56detrig32b-h3"
+        ],
+        "title": "Simplify the expression",
+        "text": "Simplify $$\\frac{3}{15}$$ - $$\\frac{8\\sqrt{2}}{15}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

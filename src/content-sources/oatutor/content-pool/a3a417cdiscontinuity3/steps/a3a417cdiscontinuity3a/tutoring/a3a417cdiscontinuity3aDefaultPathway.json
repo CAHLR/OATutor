@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a3a417cdiscontinuity3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor Denominator",
+        "text": "$$x^2-4$$ $$=$$ $$\\left(x-2\\right) \\left(x+2\\right)$$. Function undefined at $$x=2$$ and $$x=-2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3a417cdiscontinuity3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3a417cdiscontinuity3a-h1"
+        ],
+        "title": "Check $$x=2$$",
+        "text": "Numerator is $$1$$ (no cancellation). As x\u21922, function blows up $$=$$ $$infinite$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3a417cdiscontinuity3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3a417cdiscontinuity3a-h2"
+        ],
+        "title": "Check $$x=-2$$",
+        "text": "Same logic. Numerator stays at $$1$$, denom\u21920 $$=$$ $$infinite$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

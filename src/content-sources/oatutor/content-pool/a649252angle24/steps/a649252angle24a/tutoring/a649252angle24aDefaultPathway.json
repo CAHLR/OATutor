@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a649252angle24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify $$2x$$",
+        "text": "First, calculate the value of $$2x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle24a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{11pi}{6}$$"
+        ],
+        "dependencies": [
+            "a649252angle24a-h1"
+        ],
+        "title": "Calculate $$2x$$",
+        "text": "If $$x$$ $$=$$ \\frac{11pi}{12}$$, $$what$$ $$is$$ $$2x$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle24a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle24a-h1"
+        ],
+        "title": "Find the reference angle",
+        "text": "The angle $$\\frac{11pi}{6}$$ is in Quadrant IV. Find its reference angle.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle24a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{pi}{6}$$"
+        ],
+        "dependencies": [
+            "a649252angle24a-h2"
+        ],
+        "title": "Reference angle calculation",
+        "text": "Subtract $$\\frac{11pi}{6}$$ from $$2\\pi$$ (or $$\\frac{12pi}{6}$$) $$to$$ $$find$$ $$the$$ $$reference$$ $$angle$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle24a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle24a-h2"
+        ],
+        "title": "Evaluate $$\\sin(\\frac{11pi}{6})$$",
+        "text": "What is the exact value of $$\\sin(\\frac{11pi}{6})$$? $$Remember$$ $$the$$ $$sign$$ $$in$$ $$Quadrant$$ $$IV$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

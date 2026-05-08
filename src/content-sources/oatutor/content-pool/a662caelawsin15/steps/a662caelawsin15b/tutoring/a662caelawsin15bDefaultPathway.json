@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a662caelawsin15b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply the Law of Sines",
+        "text": "The Law of Sines states that $$\\$\\$\\frac{a}{\\sin(A)$$} $$=$$ $$\\frac{b}{\\sin(B)$$} $$=$$ $$\\frac{c}{\\sin(C)}\\$\\$$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin15b-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$5$$, 49**{\\circ},$$ 94**{\\circ}"
+        ],
+        "dependencies": [
+            "a662caelawsin15b-h1"
+        ],
+        "title": "Identify known values",
+        "text": "What are the values of $$c$$, $$B$$, $$and$$ $$C$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$5$$, 49**{\\circ},$$ 94**{\\circ}",
+            "$$5$$, 94**{\\circ},$$ 49**{\\circ}",
+            "$$5$$, 37**{\\circ},$$ 94**{\\circ}",
+            "$$3.8$$, 49**{\\circ},$$ 94**{\\circ}"
+        ]
+    },
+    {
+        "id": "a662caelawsin15b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin15b-h1"
+        ],
+        "title": "Set up the proportion",
+        "text": "Which ratio involves the unknown side $$b$$ and a known side and angle?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin15b-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$b/\\sin(49**{\\circ}) $$=$$ 5/\\sin(94**{\\circ})$$"
+        ],
+        "dependencies": [
+            "a662caelawsin15b-h2"
+        ],
+        "title": "Law of Sines equation",
+        "text": "Write the Law of Sines equation to solve for $$b$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$b/\\sin(49**{\\circ}) $$=$$ 5/\\sin(94**{\\circ})$$",
+            "$$b/\\sin(94**{\\circ}) $$=$$ 5/\\sin(49**{\\circ})$$",
+            "$$b/\\sin(49**{\\circ}) $$=$$ \\sin(94**{\\circ})/5$$",
+            "$$\\frac{b}{5}$$ $$=$$ \\sin(49**{\\circ})/\\sin(94**{\\circ})$$"
+        ]
+    }
+]

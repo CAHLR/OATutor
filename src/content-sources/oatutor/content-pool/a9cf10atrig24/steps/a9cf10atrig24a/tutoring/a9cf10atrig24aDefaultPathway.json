@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a9cf10atrig24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Distribute",
+        "text": "Distribute $$\\left(sin\\left(x\\right)+cos\\left(x\\right)\\right)^2=sin^2\\left(x\\right)+2sin\\left(x\\right) cos\\left(x\\right)+cos^2\\left(x\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig24a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig24a-h1"
+        ],
+        "title": "Identity",
+        "text": "$$sin^2\\left(x\\right)+cos^2\\left(x\\right)=1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig24a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig24a-h2"
+        ],
+        "title": "Substitute",
+        "text": "Substitute identity into $$sin^2\\left(x\\right)+2sin\\left(x\\right) cos\\left(x\\right)+cos^2\\left(x\\right)=1+2sin\\left(x\\right) cos\\left(x\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

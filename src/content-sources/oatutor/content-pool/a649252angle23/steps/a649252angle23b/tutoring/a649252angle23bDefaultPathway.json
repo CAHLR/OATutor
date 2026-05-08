@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a649252angle23b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify $$2x$$",
+        "text": "First, calculate the value of $$2x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle23b-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\frac{11pi}{6}$$"
+        ],
+        "dependencies": [
+            "a649252angle23b-h1"
+        ],
+        "title": "Calculate $$2x$$",
+        "text": "If $$x$$ $$=$$ -\\frac{11pi}{12}$$, $$what$$ $$is$$ $$2x$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle23b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle23b-h1"
+        ],
+        "title": "Find a coterminal angle",
+        "text": "The angle $$-\\frac{11pi}{6}$$ is coterminal with a common angle on the unit circle. Find this angle.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle23b-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{pi}{6}$$"
+        ],
+        "dependencies": [
+            "a649252angle23b-h2"
+        ],
+        "title": "coterminal angle calculation",
+        "text": "Add $$2\\pi$$ (or $$$$ \\frac{12pi}{6} $$)$$ $$to$$ $$-\\frac{11pi}{6}$$ to find a positive coterminal angle.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle23b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle23b-h2"
+        ],
+        "title": "Evaluate $$\\cos(\\frac{pi}{6})$$",
+        "text": "What is the exact value of $$\\cos(\\frac{pi}{6})$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle23b-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\sqrt{3}}{2}$$"
+        ],
+        "dependencies": [
+            "a649252angle23b-h3"
+        ],
+        "title": "Unit Circle Value",
+        "text": "Refer to the unit circle to find the x-coordinate at angle $$\\frac{pi}{6}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

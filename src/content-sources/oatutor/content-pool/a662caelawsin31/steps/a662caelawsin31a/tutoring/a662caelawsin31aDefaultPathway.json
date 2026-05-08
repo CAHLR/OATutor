@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a662caelawsin31a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Applying the Law of Cosines",
+        "text": "Recall the Law of Cosines: $$b^2$$ $$=$$ $$a^2$$ + $$c^2$$ $$-$$ $$2ac$$ $$\\cos(\\beta)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin31a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$a=5$$, $$c=6$$, \\beta=35**{\\circ}$$"
+        ],
+        "dependencies": [
+            "a662caelawsin31a-h1"
+        ],
+        "title": "Identify known values",
+        "text": "What are the known values for $$a$$, $$c$$, $$\\text{and$$ $$$$} $$\\beta$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$a=5$$, $$c=6$$, \\beta=35**{\\circ}$$",
+            "$$a=6$$, $$c=5$$, \\beta=35**{\\circ}$$",
+            "$$a=5$$, c=35**{\\circ},$$ $$\\beta=6$$",
+            "$$a=5$$, $$c=6$$, $$\\beta=35$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin31a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin31a-h1"
+        ],
+        "title": "Substituting values",
+        "text": "Substitute the given values into the Law of Cosines equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin31a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$11.851$$"
+        ],
+        "dependencies": [
+            "a662caelawsin31a-h2"
+        ],
+        "title": "Calculate $$b^2$$",
+        "text": "What is the value of $$b^2$$ after substituting the values into the Law of Cosines? Round to three decimal places.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin31a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin31a-h2"
+        ],
+        "title": "Calculating $$b$$",
+        "text": "Perform the calculations and take the square root to find $$b$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin31a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3.4$$"
+        ],
+        "dependencies": [
+            "a662caelawsin31a-h3"
+        ],
+        "title": "Calculate $$b$$",
+        "text": "What is the value of $$b$$, $$rounded$$ $$to$$ $$the$$ $$nearest$$ $$tenth$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "id": "ac76c6fbay2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Hint",
+        "text": "We want to compute P[Gus is the thief | Gus has a key card] using Bayes, since the provided information was that Gus has a key card.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac76c6fbay2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac76c6fbay2c-h1"
+        ],
+        "title": "Hint",
+        "text": "Set up the equation as (P[Gus has a key card | Gus is the thief] * P[Gus is a thief])/P[Gus has a key card]",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac76c6fbay2c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.01$$"
+        ],
+        "dependencies": [
+            "ac76c6fbay2c-h2"
+        ],
+        "title": "Hint",
+        "text": "What is our numberator",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac76c6fbay2c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.1$$"
+        ],
+        "dependencies": [
+            "ac76c6fbay2c-h3"
+        ],
+        "title": "Hint",
+        "text": "What is our denominator",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

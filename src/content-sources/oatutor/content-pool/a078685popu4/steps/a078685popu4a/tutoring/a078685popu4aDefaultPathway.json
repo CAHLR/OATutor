@@ -1,0 +1,230 @@
+[
+    {
+        "id": "a078685popu4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find sample statistics",
+        "text": "To find the confidence interval, we need to the sample mean \u03bc, the sample standard error s and sample size $$n$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a078685popu4a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6.133$$"
+        ],
+        "dependencies": [
+            "a078685popu4a-h1"
+        ],
+        "title": "Sample Mean \u03bc",
+        "text": "What is the mean of the given data set above? Round answers to three decimal place.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a078685popu4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5.514$$"
+        ],
+        "dependencies": [
+            "a078685popu4a-h1"
+        ],
+        "title": "Sample Standard Error s",
+        "text": "What is the standard deviation of the given data set above? $$s=\\sqrt{\\sigma}$$ Round answers to three decimal place. Square root of the variance.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a078685popu4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$15$$"
+        ],
+        "dependencies": [
+            "a078685popu4a-h1"
+        ],
+        "title": "Sample Size $$n$$",
+        "text": "What is the size of the sample?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a078685popu4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a078685popu4a-h4"
+        ],
+        "title": "Degree of Freedom - df",
+        "text": "T-scores follow a Student's $$t-distribution$$ with $$n-1$$ degrees of freedom.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a078685popu4a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$14$$"
+        ],
+        "dependencies": [
+            "a078685popu4a-h5"
+        ],
+        "title": "Compute degree of freedom",
+        "text": "What is $$n-1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a078685popu4a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a078685popu4a-h6"
+        ],
+        "title": "Area Under the Curve",
+        "text": "What are the area to the right and the area to the left?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a078685popu4a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.01$$"
+        ],
+        "dependencies": [
+            "a078685popu4a-h7"
+        ],
+        "title": "What is the area to the right if using a 95% Confidence Interval?",
+        "text": "$$\\frac{1-CL}{2}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a078685popu4a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.99$$"
+        ],
+        "dependencies": [
+            "a078685popu4a-h7"
+        ],
+        "title": "What is the area to the left if using a 95% confidence interval?",
+        "text": "$$1$$ - area to the $$right=1-0.01$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a078685popu4a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a078685popu4a-h9"
+        ],
+        "title": "T-Score",
+        "text": "To find the confidence interval, we need to compute $$t-score$$, and to find the $$t-score$$ we will need to find the EBM (error bound)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a078685popu4a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.624$$"
+        ],
+        "dependencies": [
+            "a078685popu4a-h10"
+        ],
+        "title": "$$\\frac{t_\u03b1}{2}$$",
+        "text": "Using $$invT(0.99$$, df) on the TI-84+ calculator. Round to three decimal place.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a078685popu4a-h12",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3.736$$"
+        ],
+        "dependencies": [
+            "a078685popu4a-h10"
+        ],
+        "title": "EBM",
+        "text": "$$EBM=\\frac{t_\u03b1}{2} \\frac{s}{\\sqrt{n}}$$. Round answers to three decimal place.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a078685popu4a-h13",
+        "type": "hint",
+        "dependencies": [
+            "a078685popu4a-h12"
+        ],
+        "title": "Bounds of the Confidence Interval",
+        "text": "What is the lower and upper bound the confidence interval?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a078685popu4a-h14",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.397$$"
+        ],
+        "dependencies": [
+            "a078685popu4a-h13"
+        ],
+        "title": "Lower Bound",
+        "text": "$$x\u0304-EBM=6.133-3.736$$. Round answers to three decimal place.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a078685popu4a-h15",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9.869$$"
+        ],
+        "dependencies": [
+            "a078685popu4a-h13"
+        ],
+        "title": "Upper Bound",
+        "text": "$$x\u0304+EBM=6.133+3.736$$. Round answers to three decimal place.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

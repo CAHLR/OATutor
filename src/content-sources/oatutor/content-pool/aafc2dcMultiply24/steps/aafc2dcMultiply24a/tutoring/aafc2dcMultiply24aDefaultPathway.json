@@ -1,0 +1,70 @@
+[
+    {
+        "id": "aafc2dcMultiply24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "We first need to substitute $$-3$$ for $$x$$ and $$14$$ for $$y$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aafc2dcMultiply24a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aafc2dcMultiply24a-h1"
+        ],
+        "title": "Add",
+        "text": "We then need to add inside parentheses.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aafc2dcMultiply24a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$11$$"
+        ],
+        "dependencies": [
+            "aafc2dcMultiply24a-h2"
+        ],
+        "title": "Add",
+        "text": "What do we get for $$-3+14$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aafc2dcMultiply24a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aafc2dcMultiply24a-h3"
+        ],
+        "title": "Exponents",
+        "text": "We then need to evaluate the exponentiation term.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aafc2dcMultiply24a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$121$$"
+        ],
+        "dependencies": [
+            "aafc2dcMultiply24a-h4"
+        ],
+        "title": "Exponents",
+        "text": "What do we get for $${11}^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

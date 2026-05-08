@@ -1,0 +1,140 @@
+[
+    {
+        "id": "a2d77b8chainrule10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The Chain Rule",
+        "text": "Remember, the chain rule in Leibniz's notation tells us that $$\\frac{dy}{dx}=\\frac{dy}{du} \\frac{du}{dx}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a2d77b8chainrule10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2d77b8chainrule10a-h1"
+        ],
+        "title": "Decompose the Function",
+        "text": "First we need to decompose our function $$y$$ into the form $$y=f(u)$$ and $$u=g(x)$$, try finding what f(u) and g(x) should be in this case.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a2d77b8chainrule10a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$u^2$$"
+        ],
+        "dependencies": [
+            "a2d77b8chainrule10a-h2"
+        ],
+        "title": "Find f(u)",
+        "text": "What is f(u)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$u^2$$",
+            "cot(u)",
+            "$$u^3$$",
+            "$$\\sqrt{u}$$"
+        ]
+    },
+    {
+        "id": "a2d77b8chainrule10a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "cot(x)"
+        ],
+        "dependencies": [
+            "a2d77b8chainrule10a-h3"
+        ],
+        "title": "Find g(x)",
+        "text": "What is g(x)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "cot(x)",
+            "$$x^2$$",
+            "$$x^3$$",
+            "$$\\sqrt{x}$$"
+        ]
+    },
+    {
+        "id": "a2d77b8chainrule10a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a2d77b8chainrule10a-h4"
+        ],
+        "title": "Find the Derivative",
+        "text": "Next, we take the derivative of f(u) in terms of u, $$\\frac{dy}{du}$$, and the derivative of g(x) in terms of $$x$$, $$\\frac{du}{dx}$$. Multiplying these two expressions together yields our final answer, $$\\frac{dy}{dx}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a2d77b8chainrule10a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "2u"
+        ],
+        "dependencies": [
+            "a2d77b8chainrule10a-h5"
+        ],
+        "title": "Find $$\\frac{dy}{du}$$",
+        "text": "What is $$\\frac{dy}{du}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "2u",
+            "$$\\frac{2}{3} u^3$$",
+            "$$u^2$$",
+            "$$2$$"
+        ]
+    },
+    {
+        "id": "a2d77b8chainrule10a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-{\\operatorname{csc}\\left(x\\right)}^2$$"
+        ],
+        "dependencies": [
+            "a2d77b8chainrule10a-h6"
+        ],
+        "title": "Find $$\\frac{du}{dx}$$",
+        "text": "What is $$\\frac{du}{dx}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$${\\operatorname{sec}\\left(x\\right)}^2$$",
+            "$$\\operatorname{sec}\\left(x\\right) tan\\left(x\\right)$$",
+            "$$-{\\operatorname{csc}\\left(x\\right)}^2$$",
+            "$$-\\operatorname{csc}\\left(x\\right) \\operatorname{cot}\\left(x\\right)$$"
+        ]
+    },
+    {
+        "id": "a2d77b8chainrule10a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a2d77b8chainrule10a-h7"
+        ],
+        "title": "Plug In and Solve in Terms of $$x$$",
+        "text": "Finally, we only need to multiply these two expressions to find our final answer. Don't forget to plug in what we have for u in terms of $$x$$ into our final answer.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

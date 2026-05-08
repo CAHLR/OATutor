@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a3a417cdiscontinuity10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify Trouble Spots",
+        "text": "Denom $$=$$ $$0$$ at $$x=1$$ and $$x=-2$$. Numerator is constant $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3a417cdiscontinuity10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3a417cdiscontinuity10a-h1"
+        ],
+        "title": "Check $$x=1$$",
+        "text": "Numer stays at $$1$$, denom\u21920. No cancellation. Blows up $$=$$ $$infinite$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3a417cdiscontinuity10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3a417cdiscontinuity10a-h2"
+        ],
+        "title": "Check $$x=-2$$",
+        "text": "Same logic. Numer $$=$$ $$1$$, denom\u21920 $$=$$ $$infinite$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
