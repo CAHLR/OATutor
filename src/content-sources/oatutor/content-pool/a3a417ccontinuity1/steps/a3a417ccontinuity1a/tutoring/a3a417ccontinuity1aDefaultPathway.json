@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a3a417ccontinuity1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor",
+        "text": "Numerator: $$9-x^2=-\\left(x-3\\right) \\left(x+3\\right)$$. Denominator: $$x^2-3x$$ $$=$$ $$x(x-3)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3a417ccontinuity1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3a417ccontinuity1a-h1"
+        ],
+        "title": "Simplify",
+        "text": "Cancel $$(x-3)$$: f(x) $$=$$ $$\\frac{-\\left(x+3\\right)}{x}$$ for $$x$$ $$ \\neq $$ $$3$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3a417ccontinuity1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3a417ccontinuity1a-h2"
+        ],
+        "title": "Classify",
+        "text": "Limit at $$x=3$$ is $$\\frac{-6}{3}$$ $$=$$ $$-2$$, but f(3) is undefined. Hole $$=$$ removable discontinuity.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

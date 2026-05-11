@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a3a417cdiscontinuity1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find Where Undefined",
+        "text": "The function is undefined where the denominator equals zero. Set $$x-6$$ $$=$$ $$0$$ to find $$x$$ $$=$$ $$6$$ is a problem point.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3a417cdiscontinuity1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3a417cdiscontinuity1a-h1"
+        ],
+        "title": "Factor the Numerator",
+        "text": "Factor $$x^2-6x$$ by pulling out an x: $$x^2-6x$$ $$=$$ $$x(x-6)$$. So f(x) $$=$$ $$\\frac{x\\left(x-6\\right)}{x-6}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3a417cdiscontinuity1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3a417cdiscontinuity1a-h2"
+        ],
+        "title": "Simplify",
+        "text": "The $$(x-6)$$ factors cancel, leaving f(x) $$=$$ $$x$$ for all $$x$$ $$ \\neq $$ $$6$$. The graph is the line $$y=x$$ with a hole at $$x=6$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3a417cdiscontinuity1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3a417cdiscontinuity1a-h3"
+        ],
+        "title": "Classify",
+        "text": "Since the discontinuity can be \"removed\" by redefining f(6) $$=$$ $$6$$, this is a removable discontinuity.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
