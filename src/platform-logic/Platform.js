@@ -195,7 +195,7 @@ class Platform extends React.Component {
 
         const lessonName = String(this.lesson.name.replace("Lesson ", "") + " " + this.lesson.topics);
         const problems = this.problemIndex.problems.filter(
-            ({ lesson }) => String(lesson).includes(lessonName)
+            ({ lesson }) => String(lesson).includes(this.lesson.topics)
         );
         const completed = this.completedProbs.size;
         const total = problems.length;
