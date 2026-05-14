@@ -1,0 +1,115 @@
+[
+    {
+        "id": "a3ae150real15a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [],
+        "title": "Identify A, B, and C",
+        "text": "What is A",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$8$$",
+            "$$4$$",
+            "$$-8$$",
+            "$$16$$"
+        ]
+    },
+    {
+        "id": "a3ae150real15a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$4\\sqrt{2}$$"
+        ],
+        "dependencies": [
+            "a3ae150real15a-h1"
+        ],
+        "title": "Identify A, B, and C",
+        "text": "What is B",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$4\\sqrt{2}$$",
+            "$$2\\sqrt{2}$$",
+            "$$4\\sqrt{3}$$",
+            "$$-4\\sqrt{2}$$"
+        ]
+    },
+    {
+        "id": "a3ae150real15a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a3ae150real15a-h2"
+        ],
+        "title": "Identify A, B, and C",
+        "text": "What is C",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$4$$",
+            "$$8$$",
+            "$$-4$$",
+            "$$2$$"
+        ]
+    },
+    {
+        "id": "a3ae150real15a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-96$$"
+        ],
+        "dependencies": [
+            "a3ae150real15a-h3"
+        ],
+        "title": "Discriminant",
+        "text": "Find the discriminant, $$B^2-4AC$$",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$-96$$",
+            "$$96$$",
+            "$$-32$$",
+            "$$128$$"
+        ]
+    },
+    {
+        "id": "a3ae150real15a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "ellipse"
+        ],
+        "dependencies": [
+            "a3ae150real15a-h4"
+        ],
+        "title": "Discriminant",
+        "text": "If the discriminant is less than $$0$$, the conic section is a",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "ellipse",
+            "hyperbola",
+            "parabola",
+            "circle"
+        ]
+    }
+]

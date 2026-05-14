@@ -1,0 +1,35 @@
+[
+    {
+        "id": "a838a73vectoranalytical1newb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Triangle Angle",
+        "text": "We have an east component (20m) and a south component (15m). Use arctan to find the angle.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a838a73vectoranalytical1newb-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$126.9$$"
+        ],
+        "dependencies": [
+            "a838a73vectoranalytical1newb-h1"
+        ],
+        "title": "Apply Arctan Function",
+        "text": "The vector ends $$20m$$ east and $$15m$$ south of start. The compass bearing from north (clockwise) is $$90+\\arctan\\left(\\frac{15}{20}\\right)$$. What is this value?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$126.9$$",
+            "$$53.1$$",
+            "$$216.9$$",
+            "$$36.9$$"
+        ]
+    }
+]

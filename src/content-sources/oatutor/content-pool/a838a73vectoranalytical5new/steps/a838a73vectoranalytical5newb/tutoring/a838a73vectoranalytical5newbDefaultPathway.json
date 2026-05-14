@@ -1,0 +1,35 @@
+[
+    {
+        "id": "a838a73vectoranalytical5newb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Triangle Angle",
+        "text": "We have an east component (20m) and a south component (35m). The resultant points into the southeast quadrant.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a838a73vectoranalytical5newb-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$150.3$$"
+        ],
+        "dependencies": [
+            "a838a73vectoranalytical5newb-h1"
+        ],
+        "title": "Apply Arctan Function",
+        "text": "The vector ends $$20m$$ east and $$35m$$ south of start. The compass bearing from north (clockwise) is $$180-\\arctan\\left(\\frac{20}{35}\\right)$$. What is this value?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$150.3$$",
+            "$$29.7$$",
+            "$$209.7$$",
+            "$$119.7$$"
+        ]
+    }
+]
