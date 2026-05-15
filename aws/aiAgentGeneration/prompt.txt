@@ -13,7 +13,8 @@ Correct Answer: {correctAnswer}
 STUDENT'S CURRENT STATE:
 Their Answer: "{studentAnswer}"
 Status: {correctnessStatus}
-Hints: {hintsUsed}
+Hints already given for this step:
+{hintsUsed}
 
 ATTEMPT HISTORY (all questions in this problem):
 {attemptHistory}
@@ -45,4 +46,3 @@ NOTE: If "Their Answer" shows "No answer provided yet", ask the student what the
 Student asks: "{userMessage}"
 
 Provide helpful, step-by-step guidance.
-

@@ -370,6 +370,28 @@ class ProblemCard extends React.Component {
         });
     };
 
+    reportHintUsage = () => {
+        const { onHintUsageChange } = this.props;
+        if (!onHintUsageChange) return;
+
+        const hintsWithStatus = this.hints.map((hint, index) => ({
+            id: hint.id,
+            title: hint.title,
+            text: hint.text,
+            type: hint.type,
+            viewed: this.state.hintsFinished[index] > 0,
+            // UI shows "Hint {index+1}" for each top-level hint accordion
+            displayIndex: index + 1,
+            // Manual hints are everything except AI-generated and bottom-out hints
+            isManual: hint.type !== "gptHint" && hint.type !== "bottomOut",
+        }));
+
+        onHintUsageChange(this.index, {
+            stepId: this.step.id,
+            hints: hintsWithStatus,
+        });
+    };
+
     unlockHint = (hintNum, hintType) => {
         // Mark question as wrong if hints are used (on the first time)
         const { seed, problemVars, problemID, courseName, answerMade, lesson } =
@@ -391,6 +413,7 @@ class ProblemCard extends React.Component {
                     return { hintsFinished: prevState.hintsFinished };
                 },
                 () => {
+                    this.reportHintUsage();
                     const { firebase } = this.context;
 
                     firebase.log(
@@ -418,10 +441,18 @@ class ProblemCard extends React.Component {
 
     submitHint = (parsed, hint, isCorrect, hintNum) => {
         if (isCorrect) {
-            this.setState((prevState) => {
-                prevState.hintsFinished[hintNum] = 1;
-                return { hintsFinished: prevState.hintsFinished };
-            });
+            this.setState(
+                (prevState) => {
+                    prevState.hintsFinished[hintNum] = 1;
+                    return { hintsFinished: prevState.hintsFinished };
+                },
+                () => {
+                    this.reportHintUsage();
+                }
+            );
+        } else {
+            // Even if the scaffold answer is incorrect, we still consider the hint as viewed.
+            this.reportHintUsage();
         }
         this.context.firebase.hintLog(
             parsed,

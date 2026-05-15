@@ -90,9 +90,7 @@ class Problem extends React.Component {
             hintToggleIndex: null,
             isHintPortalOpen: false,
             attemptHistory: {}, // { "Problem Title": { "Question Text": ["attempt1", "attempt2"] } }
-            ttsPlaying: false,
-            ttsPlayingStep: -1,
-            metaCollapsed: false,
+            hintUsageByStep: {}, // { [stepIndex]: { stepId, hints: [{ id, title, text, type, viewed }] } }
         };
 
         this.togglePopup = this.togglePopup.bind(this);
@@ -172,6 +170,15 @@ class Problem extends React.Component {
             }
         });
     }
+
+    handleHintUsageChange = (stepIndex, usage) => {
+        this.setState((prevState) => ({
+            hintUsageByStep: {
+                ...prevState.hintUsageByStep,
+                [stepIndex]: usage,
+            },
+        }));
+    };
 
     componentWillUnmount() {
         document["oats-meta-courseName"] = "";
@@ -870,10 +877,11 @@ class Problem extends React.Component {
                                                     giveDynamicHint={this.giveDynamicHint}
                                                     prompt_template={this.prompt_template}
                                                     showCardHeader={false}
-                                                    hintToggleTrigger={hideHintPanel ? undefined : this.state.hintToggleTrigger}
-                                                    hintToggleIndex={hideHintPanel ? undefined : this.state.hintToggleIndex}
-                                                    hintPortalTarget={hideHintPanel ? undefined : this.hintPortalRef}
-                                                    onHintToggle={hideHintPanel ? undefined : this.handleHintToggleFromStep}
+                                                    hintToggleTrigger={this.state.hintToggleTrigger}
+                                                    hintToggleIndex={this.state.hintToggleIndex}
+                                                    hintPortalTarget={this.hintPortalRef}
+                                                    onHintToggle={this.handleHintToggleFromStep}
+                                                    onHintUsageChange={this.handleHintUsageChange}
                                                 />
                                         </Accordion>
                                     </Element>
@@ -1332,6 +1340,7 @@ class Problem extends React.Component {
                         attemptHistory={this.state.attemptHistory}
                         user={this.props.user}
                         lessonMasteryMap={this.props.lessonMasteryMap}
+                        hintUsageByStep={this.state.hintUsageByStep}
                     />
                 )}
             </>
