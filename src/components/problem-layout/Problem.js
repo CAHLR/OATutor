@@ -1320,7 +1320,7 @@ class Problem extends React.Component {
                 </footer>
 
                 {/* AI Agent Chatbot */}
-                {this.props.lesson?.enable_ai_chat && (
+                {this.props.lesson?.enable_ai_chat && !this.props.hideHintPanel && (
                     <AgentIntegration
                         problem={problem}
                         lesson={this.props.lesson}
