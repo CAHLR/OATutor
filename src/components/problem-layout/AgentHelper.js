@@ -12,6 +12,7 @@ export class AgentHelper {
         // AWS Lambda Function URL from environment
         this.agentEndpoint = process.env.REACT_APP_AI_AGENT_URL || "";
         this.sessionId = null;
+        this.turnId = 0;
     }
 
     /**
@@ -20,23 +21,50 @@ export class AgentHelper {
      */
     initializeSession() {
         this.sessionId = `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+        this.turnId = 0;
         return this.sessionId;
     }
 
     /**
      * Build request payload from Problem.js and ProblemCard.js
      */
-    buildAgentRequest(userMessage, problemContext, studentState, extracted) {
+    buildAgentRequest(userMessage, problemContext, studentState, extracted, chatPrompt, chatDisplayMode) {
         const request = {
             sessionId: this.sessionId,
+            turnId: this.turnId,
             userMessage: userMessage,
             problemContext: problemContext,
             studentState: studentState,
             extracted: extracted || {},
+            chatPrompt: chatPrompt || 'PROMPTv2.txt',
+            chatDisplayMode: chatDisplayMode || 'Off',
             conversationHistory: []  // Lambda loads from DynamoDB
         };
 
         return request;
+    }
+
+    /**
+     * Minimal client lifecycle logging. Ships a compact event payload to the
+     * same Lambda URL (handled server-side as a log-only request).
+     */
+    async logEvent(eventType, payload = {}) {
+        if (!this.agentEndpoint) return;
+        if (!this.sessionId) this.initializeSession();
+        try {
+            await fetch(this.agentEndpoint, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    eventType,
+                    sessionId: this.sessionId,
+                    turnId: this.turnId,
+                    ...payload,
+                }),
+            });
+        } catch (_e) {
+            // Logging should never break the UX.
+        }
     }
 
     /**
@@ -48,7 +76,7 @@ export class AgentHelper {
      * @param {object} extracted - Optional extracted input (e.g., { text, images }) for vision
      * @param {object} callbacks - { onChunkReceived, onSuccessfulCompletion, onError }
      */
-    async sendMessage(userMessage, problemContext, studentState, extracted = {}, callbacks = {}) {
+    async sendMessage(userMessage, problemContext, studentState, extracted = {}, chatPrompt = 'PROMPTv2.txt', chatDisplayMode = 'Off', callbacks = {}) {
         const {
             onChunkReceived = () => {},
             onSuccessfulCompletion = () => {},
@@ -60,6 +88,7 @@ export class AgentHelper {
             if (!this.sessionId) {
                 this.initializeSession();
             }
+            this.turnId += 1;
 
             // Validate endpoint
             if (!this.agentEndpoint) {
@@ -67,7 +96,7 @@ export class AgentHelper {
             }
 
             // Build request
-            const agentRequest = this.buildAgentRequest(userMessage, problemContext, studentState, extracted);
+            const agentRequest = this.buildAgentRequest(userMessage, problemContext, studentState, extracted, chatPrompt, chatDisplayMode);
 
             // Send POST request with streaming
             const response = await fetch(this.agentEndpoint, {

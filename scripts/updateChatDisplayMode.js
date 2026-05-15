@@ -10,6 +10,8 @@ const coursePlansPath = path.join(
   "coursePlans.json"
 );
 
+const DEFAULT_CHAT_DISPLAY_MODE = "Off";
+
 function main() {
   const raw = fs.readFileSync(coursePlansPath, "utf8");
   const data = JSON.parse(raw);
@@ -20,12 +22,12 @@ function main() {
 
   for (const course of data) {
     if (course && typeof course === "object") {
-      course.enable_ai_chat = false;
+      course.chat_display_mode = DEFAULT_CHAT_DISPLAY_MODE;
 
       if (Array.isArray(course.lessons)) {
         for (const lesson of course.lessons) {
           if (lesson && typeof lesson === "object") {
-            lesson.enable_ai_chat = false;
+            lesson.chat_display_mode = DEFAULT_CHAT_DISPLAY_MODE;
           }
         }
       }
@@ -36,4 +38,3 @@ function main() {
 }
 
 main();
-

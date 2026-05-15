@@ -15,22 +15,18 @@ import {
     Close as CloseIcon,
     Delete as DeleteIcon
 } from '@material-ui/icons';
+import { ReactComponent as OskiAvatar } from '../../assets/avatar_default_state.svg';
 
-// UC Berkeley brand palette — sourced from the official identity guidelines.
-// Used consistently across the chat surface so the tutor visually belongs to
-// the institution rather than reading as a generic SaaS chatbot.
-const BERKELEY = {
-    blue: '#002676',       // Berkeley Blue (primary)
-    blueDark: '#010133',   // Blue Dark (gradient depth, hover states)
-    gold: '#FDB515',       // California Gold (primary accent — Oski's halo)
-    goldDark: '#FC9313',   // Gold Dark (hover on gold surfaces)
+const CHAT_THEME = {
+    primary: '#4c7d9f',
+    primaryDark: '#3f7091',
+    accent: '#ffc300',
+    light: '#7ba9f3',
+    pale: '#a3c5de',
     white: '#FFFFFF',
-    grayLight: '#F2F2F2',
+    surface: '#eef4fa',
 };
 
-// Public path to the Oski mascot. The image lives in /public so webpack
-// serves it directly; PUBLIC_URL handles the GitHub Pages subpath in prod.
-const OSKI_SRC = `${process.env.PUBLIC_URL || ''}/static/images/icons/oski1.png`;
 const SEND_ICON_SRC = `${process.env.PUBLIC_URL || ''}/static/images/icons/send.png`;
 
 const styles = (theme) => ({
@@ -51,13 +47,13 @@ const styles = (theme) => ({
         fontFamily: '"Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
     },
     chatHeader: {
-        background: 'linear-gradient(135deg, #002676 0%, #010133 100%)',
+        background: `linear-gradient(135deg, ${CHAT_THEME.primary} 0%, ${CHAT_THEME.primaryDark} 100%)`,
         color: 'white',
         padding: '12px 16px',
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        borderBottom: '3px solid #FDB515', // gold underline ties header to avatar
+        borderBottom: `3px solid ${CHAT_THEME.accent}`,
     },
     chatTitle: {
         display: 'flex',
@@ -69,7 +65,7 @@ const styles = (theme) => ({
         flex: 1,
         overflowY: 'auto',
         padding: '20px 24px',
-        backgroundColor: '#F2F2F2',
+        backgroundColor: CHAT_THEME.surface,
         display: 'flex',
         flexDirection: 'column',
         gap: 12
@@ -94,7 +90,7 @@ const styles = (theme) => ({
         wordWrap: 'break-word'
     },
     userBubble: {
-        backgroundColor: '#002676',
+        backgroundColor: CHAT_THEME.primary,
         color: 'white'
     },
     assistantBubble: {
@@ -116,7 +112,7 @@ const styles = (theme) => ({
     chatInput: {
         padding: 16,
         backgroundColor: 'white',
-        borderTop: '1px solid #e0e0e0'
+        borderTop: `1px solid ${CHAT_THEME.pale}`,
     },
     inputContainer: {
         display: 'flex',
@@ -137,7 +133,8 @@ const styles = (theme) => ({
         color: '#111',
         border: '1px solid rgba(0,0,0,0.10)',
         '&:hover': {
-            backgroundColor: '#DADADA'
+            backgroundColor: CHAT_THEME.light,
+            color: CHAT_THEME.white,
         },
         '&:disabled': {
             backgroundColor: '#F2F2F2',
@@ -155,23 +152,38 @@ const styles = (theme) => ({
         bottom: 20,
         right: 20,
         zIndex: 1001,
-        backgroundColor: BERKELEY.white,
-        color: 'white',
-        '&:hover': {
-            backgroundColor: BERKELEY.grayLight,
-        },
-        width: 60,
-        height: 60,
+        background: 'none',
+        backgroundColor: 'transparent !important',
         padding: 0,
-        boxShadow: '0 4px 14px rgba(0, 38, 118, 0.28)',
-        border: `2px solid ${BERKELEY.blue}`,
+        border: 'none',
+        boxShadow: 'none !important',
+        borderRadius: 0,
+        width: 'auto',
+        height: 'auto',
+        minWidth: 0,
+        '&:hover': {
+            backgroundColor: 'transparent !important',
+            boxShadow: 'none !important',
+            '& $toggleAvatarImg': {
+                transform: 'scale(1.06)',
+            },
+        },
+        '&:focus': {
+            backgroundColor: 'transparent !important',
+        },
+    },
+    avatarIcon: {
+        width: 32,
+        height: 32,
+        display: 'block',
+        flexShrink: 0,
     },
     toggleAvatarImg: {
-        width: 54,
-        height: 54,
-        borderRadius: '50%',
-        objectFit: 'contain',
+        width: 80,
+        height: 74,
         display: 'block',
+        filter: 'drop-shadow(0 4px 14px rgba(76, 125, 159, 0.32))',
+        transition: 'transform 0.2s ease',
     },
     resizeHandle: {
         position: 'absolute',
@@ -188,7 +200,7 @@ class AgentChatbox extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            isVisible: false,
+            isVisible: props.mode === 'embedded',
             messages: [],
             currentMessage: '',
             isTyping: false,
@@ -202,9 +214,27 @@ class AgentChatbox extends React.Component {
         this.chatContainerRef = React.createRef();
     }
 
+    getChatTelemetry = () => ({
+        chatDisplayMode: this.props.lesson?.chat_display_mode || 'Off',
+        problemId: this.props.problem?.id,
+        courseName: this.props.lesson?.courseName,
+        lessonId: this.props.lesson?.id,
+        condition: this.props.condition,
+    });
+
     componentDidMount() {
         agentHelper.initializeSession();
         this.setState({ agentSessionId: agentHelper.getSessionId() });
+        if (this.props.mode === 'embedded') {
+            // In standalone embedded mode, greet immediately and mark chat as opened.
+            this.setState((prev) => ({
+                messages: prev.messages.length === 0 ? this.buildGreetingMessages() : prev.messages,
+            }));
+            agentHelper.logEvent('chat_opened', {
+                ...this.getChatTelemetry(),
+                embedded: true,
+            });
+        }
     }
 
     componentDidUpdate(prevProps, prevState) {
@@ -244,6 +274,8 @@ class AgentChatbox extends React.Component {
     buildGreetingMessages = () => {
         const title = this.props.problem?.title;
         const subject = title ? `**${title}**` : 'this problem';
+        // Client-side telemetry: greeting was shown (first open / after clear).
+        agentHelper.logEvent('greeting_shown', this.getChatTelemetry());
         return [{
             id: `greeting-${Date.now()}`,
             role: 'assistant',
@@ -260,6 +292,18 @@ class AgentChatbox extends React.Component {
             // session. If the student already has a conversation going, leave
             // it alone.
             const needsGreeting = opening && prevState.messages.length === 0;
+            if (opening) {
+                agentHelper.logEvent('chat_opened', {
+                    ...this.getChatTelemetry(),
+                    hasExistingMessages: prevState.messages.length > 0,
+                });
+            } else {
+                agentHelper.logEvent('chat_closed', {
+                    ...this.getChatTelemetry(),
+                    hadMessages: prevState.messages.length > 0,
+                    messagesCount: prevState.messages.length,
+                });
+            }
             return {
                 isVisible: opening,
                 messages: needsGreeting ? this.buildGreetingMessages() : prevState.messages,
@@ -269,6 +313,7 @@ class AgentChatbox extends React.Component {
 
     clearConversation = () => {
         agentHelper.initializeSession();
+        agentHelper.logEvent('chat_cleared', this.getChatTelemetry());
         // Reset to a fresh greeting rather than an empty pane so the student
         // is always met with an invitation to ask, including after switching
         // problems (componentDidUpdate calls this on problem change).
@@ -359,7 +404,17 @@ class AgentChatbox extends React.Component {
         const studentState = this.getStudentState();
         const { text, figureUrls } = this.extractConceptExplorationInput(userMessage, problemContext);
         const images = await this.fetchFiguresAsBase64(figureUrls);
-        const extracted = { text, images };
+        const extracted = {
+            text,
+            images,
+            // Forward experiment condition + lesson id to Lambda so it can be
+            // persisted in CloudWatch + S3 transcripts.
+            condition: this.props.condition,
+            lessonId: this.props.lesson?.id,
+        };
+
+        const chatPrompt = this.props.lesson?.chat_prompt || 'PROMPTv2.txt';
+        const chatDisplayMode = this.props.lesson?.chat_display_mode ?? 'Off';
 
         const assistantMessageId = `assistant-${messageId}`;
 
@@ -370,6 +425,8 @@ class AgentChatbox extends React.Component {
                 problemContext,
                 studentState,
                 extracted,
+                chatPrompt,
+                chatDisplayMode,
                 {
                     onChunkReceived: (partialResponse) => {
                         this.setState(prevState => ({
@@ -605,16 +662,19 @@ class AgentChatbox extends React.Component {
     render() {
         const { classes } = this.props;
         const { isVisible, messages, currentMessage, isGenerating, chatWidth, chatHeight } = this.state;
+        const mode = this.props.mode || 'floating';
 
         // Toggle button (always visible)
-        if (!isVisible) {
+        if (mode === 'floating' && !isVisible) {
             return (
                 <IconButton
                     className={classes.toggleButton}
                     onClick={this.toggleChat}
                     aria-label="Open AI Tutor"
+                    disableRipple
+                    disableFocusRipple
                 >
-                    <img src={OSKI_SRC} alt="Oski" className={classes.toggleAvatarImg} />
+                    <OskiAvatar className={classes.toggleAvatarImg} aria-label="Oski" />
                 </IconButton>
             );
         }
@@ -625,47 +685,56 @@ class AgentChatbox extends React.Component {
                 ref={this.chatContainerRef}
                 className={classes.chatContainer}
                 style={{
-                    width: chatWidth,
-                    height: chatHeight
+                    width: mode === 'embedded' ? '100%' : chatWidth,
+                    height: mode === 'embedded' ? '100%' : chatHeight,
+                    position: mode === 'embedded' ? 'relative' : undefined,
+                    bottom: mode === 'embedded' ? 'auto' : undefined,
+                    right: mode === 'embedded' ? 'auto' : undefined,
+                    borderRadius: mode === 'embedded' ? 0 : undefined,
+                    boxShadow: mode === 'embedded' ? 'none' : undefined,
+                    minWidth: mode === 'embedded' ? 0 : undefined,
+                    minHeight: mode === 'embedded' ? 0 : undefined,
+                    maxWidth: mode === 'embedded' ? 'none' : undefined,
+                    maxHeight: mode === 'embedded' ? 'none' : undefined,
                 }}
             >
                 {/* Resize handle */}
-                <div 
-                    className={classes.resizeHandle}
-                    onMouseDown={this.handleResizeStart}
-                    title="Drag to resize"
-                />
+                {mode === 'floating' && (
+                    <div 
+                        className={classes.resizeHandle}
+                        onMouseDown={this.handleResizeStart}
+                        title="Drag to resize"
+                    />
+                )}
 
-                <div className={classes.chatHeader}>
-                    <div className={classes.chatTitle}>
-                        <img
-                            src={OSKI_SRC}
-                            alt="Oski"
-                            style={{ width: 32, height: 32, borderRadius: '50%', display: 'block' }}
-                        />
-                        <Typography variant="subtitle1">Oski • AI Tutor</Typography>
-                    </div>
-                    <div style={{ display: 'flex', gap: '4px' }}>
-                        {messages.length > 0 && (
+                {mode === 'floating' && (
+                    <div className={classes.chatHeader}>
+                        <div className={classes.chatTitle}>
+                            <OskiAvatar className={classes.avatarIcon} aria-label="Oski" />
+                            <Typography variant="subtitle1">Oski • AI Tutor</Typography>
+                        </div>
+                        <div style={{ display: 'flex', gap: '4px' }}>
+                            {messages.length > 0 && (
+                                <IconButton
+                                    size="small"
+                                    onClick={this.clearConversation}
+                                    title="Clear chat"
+                                    style={{ color: 'white' }}
+                                >
+                                    <DeleteIcon />
+                                </IconButton>
+                            )}
                             <IconButton
                                 size="small"
-                                onClick={this.clearConversation}
-                                title="Clear chat"
+                                onClick={this.toggleChat}
+                                title="Close chat"
                                 style={{ color: 'white' }}
                             >
-                                <DeleteIcon />
+                                <CloseIcon />
                             </IconButton>
-                        )}
-                        <IconButton
-                            size="small"
-                            onClick={this.toggleChat}
-                            title="Close chat"
-                            style={{ color: 'white' }}
-                        >
-                            <CloseIcon />
-                        </IconButton>
+                        </div>
                     </div>
-                </div>
+                )}
 
                 <div className={classes.chatMessages}>
                     {messages.map((message) => (
