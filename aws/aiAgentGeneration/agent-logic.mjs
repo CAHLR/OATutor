@@ -5,9 +5,35 @@ import { dirname, join } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-export function buildAgentPrompt({ userMessage, problemContext, studentState, conversationHistory, extracted = {} }) {
-    // Load prompt template
-    const promptTemplate = readFileSync(join(__dirname, 'prompt.txt'), 'utf-8');
+export const DEFAULT_CHAT_PROMPT = 'PROMPTv2.txt';
+
+const ALLOWED_CHAT_PROMPTS = new Set([
+    'PROMPTv1.txt',
+    'PROMPTv2.txt',
+]);
+
+const promptTemplateCache = new Map();
+
+function resolveChatPromptFile(chatPrompt) {
+    const name = String(chatPrompt || DEFAULT_CHAT_PROMPT).trim();
+    if (!ALLOWED_CHAT_PROMPTS.has(name)) {
+        return DEFAULT_CHAT_PROMPT;
+    }
+    return name;
+}
+
+export function loadPromptTemplate(chatPrompt) {
+    const file = resolveChatPromptFile(chatPrompt);
+    if (promptTemplateCache.has(file)) {
+        return { template: promptTemplateCache.get(file), file };
+    }
+    const template = readFileSync(join(__dirname, file), 'utf-8');
+    promptTemplateCache.set(file, template);
+    return { template, file };
+}
+
+export function buildAgentPrompt({ userMessage, problemContext, studentState, conversationHistory, extracted = {}, chatPrompt }) {
+    const { template: promptTemplate } = loadPromptTemplate(chatPrompt);
     
     // Format skill mastery
     const skillMasteryText = studentState.skillMastery && Object.keys(studentState.skillMastery).length > 0
