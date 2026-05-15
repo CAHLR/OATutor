@@ -805,7 +805,7 @@ class ProblemCard extends React.Component {
                             <hr />
                         </h2>
                     )}
-
+                        {showCardHeader && (
                             <div className={"classes.stepBody"}>
                                 {renderText(
                                     this.step.stepBody,
@@ -821,6 +821,7 @@ class ProblemCard extends React.Component {
                                     this.context
                                 )}
                             </div>
+                        )}
                             {inlineHints}
 
                             <div className={classes.root}>
@@ -853,16 +854,10 @@ class ProblemCard extends React.Component {
                             </div>
                         </CardContent>
 
-
-
                         <CardActions style = {{padding: "0px"}}>
-                            
-
-                            <Grid item xs={4} sm={4} md={1}>
-                                {this.showHints && (
+                            {this.showHints && !this.props.hintPortalTarget && (
+                                <Grid item xs={4} sm={4} md={1}>
                                     <center>
-
-
                                         <IconButton
                                             aria-label="hints"
                                             onClick={this.toggleHints}
@@ -885,13 +880,10 @@ class ProblemCard extends React.Component {
                                                 alt="hintToggle"
                                             />
                                         </IconButton>
-
-
                                     </center>
-                                )}
-                            </Grid>
+                                </Grid>
+                            )}
 
-                        
                             <Grid 
                                 container
                                 spacing = {2}

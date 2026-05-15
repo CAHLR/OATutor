@@ -877,10 +877,10 @@ class Problem extends React.Component {
                                                     giveDynamicHint={this.giveDynamicHint}
                                                     prompt_template={this.prompt_template}
                                                     showCardHeader={false}
-                                                    hintToggleTrigger={this.state.hintToggleTrigger}
-                                                    hintToggleIndex={this.state.hintToggleIndex}
-                                                    hintPortalTarget={this.hintPortalRef}
-                                                    onHintToggle={this.handleHintToggleFromStep}
+                                                    hintToggleTrigger={hideHintPanel ? undefined : this.state.hintToggleTrigger}
+                                                    hintToggleIndex={hideHintPanel ? undefined : this.state.hintToggleIndex}
+                                                    hintPortalTarget={hideHintPanel ? undefined : this.hintPortalRef}
+                                                    onHintToggle={hideHintPanel ? undefined : this.handleHintToggleFromStep}
                                                     onHintUsageChange={this.handleHintUsageChange}
                                                 />
                                         </Accordion>
