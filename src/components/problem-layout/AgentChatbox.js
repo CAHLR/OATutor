@@ -16,6 +16,7 @@ import {
     Delete as DeleteIcon
 } from '@material-ui/icons';
 import { ReactComponent as OskiAvatar } from '../../assets/avatar_default_state.svg';
+import { ReactComponent as SendArrowIcon } from '../../assets/arrow.svg';
 
 const CHAT_THEME = {
     primary: '#4c7d9f',
@@ -26,8 +27,6 @@ const CHAT_THEME = {
     white: '#FFFFFF',
     surface: '#eef4fa',
 };
-
-const SEND_ICON_SRC = `${process.env.PUBLIC_URL || ''}/static/images/icons/send.png`;
 
 const styles = (theme) => ({
     chatContainer: {
@@ -117,7 +116,7 @@ const styles = (theme) => ({
     inputContainer: {
         display: 'flex',
         gap: 8,
-        alignItems: 'flex-end'
+        alignItems: 'center',
     },
     messageInput: {
         flex: 1,
@@ -126,26 +125,37 @@ const styles = (theme) => ({
         }
     },
     sendButton: {
-        minWidth: 40,
-        height: 40,
-        borderRadius: '50%',
-        backgroundColor: '#E6E6E6',
-        color: '#111',
-        border: '1px solid rgba(0,0,0,0.10)',
+        padding: 0,
+        minWidth: 0,
+        width: 48,
+        height: 48,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        background: 'none',
+        backgroundColor: 'transparent !important',
+        border: 'none',
+        boxShadow: 'none',
+        borderRadius: 0,
+        flexShrink: 0,
         '&:hover': {
-            backgroundColor: CHAT_THEME.light,
-            color: CHAT_THEME.white,
+            backgroundColor: 'transparent !important',
+            boxShadow: 'none',
+            '& $sendIcon': {
+                transform: 'scale(1.06)',
+            },
         },
         '&:disabled': {
-            backgroundColor: '#F2F2F2',
-            opacity: 0.6,
-        }
+            backgroundColor: 'transparent !important',
+            opacity: 0.45,
+        },
     },
-    sendIconImg: {
-        width: 20,
-        height: 20,
+    sendIcon: {
+        width: 48,
+        height: 48,
         display: 'block',
-        opacity: 0.9,
+        flexShrink: 0,
+        transition: 'transform 0.2s ease',
     },
     toggleButton: {
         position: 'fixed',
@@ -800,8 +810,10 @@ class AgentChatbox extends React.Component {
                             className={classes.sendButton}
                             onClick={this.handleSendMessage}
                             disabled={!currentMessage.trim() || isGenerating}
+                            disableRipple
+                            disableFocusRipple
                         >
-                            <img src={SEND_ICON_SRC} alt="Send" className={classes.sendIconImg} />
+                            <SendArrowIcon className={classes.sendIcon} aria-label="Send" />
                         </IconButton>
                     </div>
                 </div>
