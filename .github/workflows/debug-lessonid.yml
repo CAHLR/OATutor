@@ -1,0 +1,81 @@
+name: DEBUG Content Update (lessonId test)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update-content:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout OATutor repository
+      uses: actions/checkout@v2
+      with:
+        ref: 'content-staging'
+        path: 'content-staging-build'
+        persist-credentials: true
+
+    - name: Clone OATutor-Tooling repository (fork branch)
+      run: git clone --branch weiyang/lessonid-kc-fix https://github.com/weiyangcheng/OATutor-Tooling.git /home/runner/work/OATutor-Tooling
+
+    - name: Install distutils and build tools
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y build-essential meson ninja-build python3-dev
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.11'
+
+    - name: Upgrade pip and install Python dependencies
+      run: |
+        pip install --upgrade pip
+        pip install --prefer-binary -r /home/runner/work/OATutor-Tooling/content_script/requirements.txt
+
+    - name: Create credentials JSON file
+      run: echo "${{ secrets.OATUTOR_JSON_KEY }}" | base64 --decode > /home/runner/work/oatutor-askoski-705644bfdf34.json
+
+    - name: Set environment variable for spreadsheet key
+      run: echo "URL_SPREADSHEET_KEY=${{ secrets.URL_SPREADSHEET_KEY }}" >> $GITHUB_ENV
+
+    - name: Remove existing content
+      run: rm -rf content-staging-build/src/content-sources/oatutor/*
+
+    - name: Create Content Directory
+      run: mkdir -p content-staging-build/src/content-sources/oatutor/Content
+
+    - name: Run content update script
+      run: |
+        cd content-staging-build/src/content-sources/oatutor/Content
+        python3 /home/runner/work/OATutor-Tooling/content_script/final.py online full
+
+    - name: Move and prepare files
+      run: |
+        cd content-staging-build/src/content-sources/oatutor
+        mv "OpenStax Content" "content-pool"
+        mkdir -p bkt-params
+        mv bktParams.json bkt-params/defaultBKTParams.json
+        cp bkt-params/defaultBKTParams.json bkt-params/experimentalBKTParams.json
+
+    - name: Run Node.js preprocessing script
+      run: |
+        cd content-staging-build/src/tools
+        node preprocessProblemPool.js
+
+    - name: Inspect generated content
+      run: |
+        cd content-staging-build/src/content-sources/oatutor
+        echo "=== coursePlans.json (lesson names -> IDs) ==="
+        python3 -c "import json; [print(c['courseName'], '->', [(l['name'], l['id']) for l in c['lessons']]) for c in json.load(open('coursePlans.json'))]"
+        echo ""
+        echo "=== Checking for NaN in any problem JSON ==="
+        if grep -rl "NaN" content-pool/; then echo "WARNING: NaN found above"; else echo "No NaN found — sanitization OK"; fi
+        echo ""
+        echo "=== Sample lessonId fields from problem JSONs ==="
+        for f in $(find content-pool -maxdepth 2 -name "*.json" | head -10); do
+          echo "$f:"; grep '"lessonId"' "$f" || echo "  (no lessonId)"
+        done
+        echo ""
+        echo "=== Problem count per lessonId ==="
+        find content-pool -maxdepth 2 -name "*.json" -exec grep -h '"lessonId"' {} \; | sort | uniq -c | sort -rn
