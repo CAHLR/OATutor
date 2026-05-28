@@ -114,14 +114,23 @@ const ViewAllProblems = ({ translate, history }) => {
   }, [lessonID]);
 
   // Filter by objectives
+  // const memoFiltered = useMemo(() => {
+  //   if (!lesson || problemPool.length === 0) return [];
+  //   return problemPool.filter(problem =>
+  //     problem.steps.some(step =>
+  //       (context.skillModel[step.id] || []).some(kc => kc in lesson.learningObjectives)
+  //     )
+  //   );
+  // }, [lesson, problemPool, context.skillModel]);
+
   const memoFiltered = useMemo(() => {
     if (!lesson || problemPool.length === 0) return [];
-    return problemPool.filter(problem =>
-      problem.steps.some(step =>
-        (context.skillModel[step.id] || []).some(kc => kc in lesson.learningObjectives)
-      )
-    );
-  }, [lesson, problemPool, context.skillModel]);
+    console.log('lesson.id:', lesson.id);
+    console.log('lesson:', lesson);
+
+    console.log('sample problem:', problemPool[0]);
+    return problemPool.filter(problem => problem.lessonId === lesson.id);
+  }, [lesson, problemPool]);
 
   useEffect(() => {
     setFilteredProblems(memoFiltered);
@@ -129,19 +138,39 @@ const ViewAllProblems = ({ translate, history }) => {
 
   // Chunk rendering
   useEffect(() => {
-    setVisibleProblems([]);
-    if (filteredProblems.length === 0) return;
-    let idx = 0;
+    if (memoFiltered.length === 0) {
+      setVisibleProblems([]);
+      return;
+    }
+
+    setVisibleProblems(memoFiltered.slice(0, BATCH_SIZE));
+    
+    let idx = BATCH_SIZE;
+    let timeoutId;
+    
     function batch() {
       setVisibleProblems(prev => [
         ...prev,
-        ...filteredProblems.slice(idx, idx + BATCH_SIZE)
+        ...memoFiltered.slice(idx, idx + BATCH_SIZE)
       ]);
       idx += BATCH_SIZE;
-      if (idx < filteredProblems.length) setTimeout(batch, 16);
+      if (idx < memoFiltered.length) {
+        timeoutId = setTimeout(batch, 16);
+      }
     }
-    batch();
-  }, [filteredProblems]);
+    
+    if (idx < memoFiltered.length) {
+      timeoutId = setTimeout(batch, 16);
+    }
+    
+    return () => {
+      if (timeoutId) clearTimeout(timeoutId);
+    };
+  }, [memoFiltered]);
+
+  // useEffect(() => {
+  //   setVisibleProblems(filteredProblems);
+  // }, [filteredProblems]);
 
   // Safely build topics string
   const topicsText = lesson?.topics
@@ -253,7 +282,9 @@ const ViewAllProblems = ({ translate, history }) => {
 
 
       <Container maxWidth="med" className={classes.container}>
-        {visibleProblems.length ? visibleProblems.map(problem => (
+        {visibleProblems.length ? visibleProblems.map(problem => {
+  console.log('rendering problem:', problem.id);
+  return(
           <Box key={problem.id} className={classes.problemCard}>
             {/* ID badge */}
             <Box className={classes.idBadge} style ={{marginRight: 40}}>
@@ -275,7 +306,8 @@ const ViewAllProblems = ({ translate, history }) => {
               />
             </Box>
           </Box>
-        )) : (
+        );
+}) : (
           <Box className={classes.loadingBox}>
             <Typography>{translate('loadingProblems') || 'Loading problems…'}</Typography>
           </Box>

@@ -260,15 +260,24 @@ class Platform extends React.Component {
   };
 
   _nextProblem = (context) => {
+    console.log('_nextProblem called, this.lesson:', this.lesson);
+
     seed = Date.now().toString();
     this.setState({ seed: seed });
     this.props.saveProgress();
-    const problems = this.problemIndex.problems.filter(({ courseName }) => !courseName.toString().startsWith("!!"));
+    const problems = this.problemIndex.problems.filter(({ courseName, lessonId }) => {
+      if (courseName.toString().startsWith("!!")) return false;
+      if (lessonId && lessonId !== this.lesson.id) return false;
+      return true;
+    });
     let chosenProblem;
 
     for (const problem of problems) {
       let probMastery = 1;
       let isRelevant = false;
+      if (problem.lessonId === this.lesson.id) {
+        isRelevant = true;
+      }
       for (const step of problem.steps) {
         if (typeof step.knowledgeComponents === "undefined") continue;
         for (const kc of step.knowledgeComponents) {
@@ -281,12 +290,17 @@ class Platform extends React.Component {
         }
       }
       if (isRelevant) {
-        problem.probMastery = probMastery;
+        problem.probMastery = probMastery < 1 ? probMastery : 0;
       } else {
         problem.probMastery = null;
       }
     }
+    console.log('probMastery values:', problems.filter(p => p.probMastery !== null).map(p => p.probMastery).slice(0, 10));
 
+    console.log('problems with probMastery set:', problems.filter(p => p.probMastery !== null).length);
+    console.log('completedProbs size:', this.completedProbs.size);
+    chosenProblem = context.heuristic(problems, this.completedProbs);
+    console.log('chosenProblem:', chosenProblem?.id);
     chosenProblem = context.heuristic(problems, this.completedProbs);
 
     const objectives = Object.keys(this.lesson.learningObjectives);

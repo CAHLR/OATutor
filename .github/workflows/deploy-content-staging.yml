@@ -19,7 +19,7 @@ jobs:
         persist-credentials: true
 
     - name: Clone OATutor-Tooling repository
-      run: git clone https://github.com/CAHLR/OATutor-Tooling.git /home/runner/work/OATutor-Tooling
+      run: git clone --branch weiyang/lessonid-kc-fix https://github.com/weiyangcheng/OATutor-Tooling.git /home/runner/work/OATutor-Tooling
 
     - name: Install distutils and build tools
       run: |
