@@ -355,9 +355,11 @@ class Platform extends React.Component {
         seed = Date.now().toString();
         this.setState({ seed: seed });
         this.props.saveProgress();
-        const problems = this.problemIndex.problems.filter(
-            ({ courseName }) => !courseName.toString().startsWith("!!")
-        );
+        const problems = this.problemIndex.problems.filter(({ courseName, lessonId }) => {
+            if (courseName.toString().startsWith("!!")) return false;
+            if (lessonId && lessonId !== this.lesson.id) return false;
+            return true;
+        });
         let chosenProblem;
 
         console.debug(
@@ -369,6 +371,9 @@ class Platform extends React.Component {
             // Calculate the mastery for this problem
             let probMastery = 1;
             let isRelevant = false;
+            if (problem.lessonId === this.lesson.id) {
+                isRelevant = true;
+            }
             for (const step of problem.steps) {
                 if (typeof step.knowledgeComponents === "undefined") {
                     continue;
