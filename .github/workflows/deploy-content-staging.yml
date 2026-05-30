@@ -80,7 +80,7 @@ jobs:
           echo "No changes to commit"
         else
           git commit -m "Automated content update"
-          git push origin HEAD:debug-lessonid-content
+          git push --force origin HEAD:debug-lessonid-content
         fi
       env:
         GITHUB_TOKEN: ${{ secrets.CONTENT_STAGING_PAT }}
