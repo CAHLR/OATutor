@@ -125,12 +125,8 @@ const ViewAllProblems = ({ translate, history }) => {
   // Filter by objectives
   const memoFiltered = useMemo(() => {
     if (!lesson || problemPool.length === 0) return [];
-    return problemPool.filter(problem =>
-      problem.steps.some(step =>
-        (context.skillModel[step.id] || []).some(kc => kc in lesson.learningObjectives)
-      )
-    );
-  }, [lesson, problemPool, context.skillModel]);
+    return problemPool.filter(problem => problem.lessonId === lesson.id);
+  }, [lesson, problemPool]);
 
   useEffect(() => {
     setFilteredProblems(memoFiltered);
