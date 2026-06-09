@@ -17,6 +17,9 @@ import { stagingProp } from "../../util/addStagingProperty";
 import ErrorBoundary from "../ErrorBoundary";
 import withTranslation from '../../util/withTranslation';
 import ReloadIcon from './ReloadIcon';
+import TTSPlayer, { splitIntoSegments, splitTextIntoSentences } from "../../util/ttsPlayer.js";
+import TTSButtons from "./TTSButtons.js";
+import { textToReadable } from "../../util/latexToReadable.js";
 
 class HintSystem extends React.Component {
     static contextType = ThemeContext;
@@ -40,12 +43,18 @@ class HintSystem extends React.Component {
         this.isIncorrect = props.isIncorrect;
         this.giveHintOnIncorrect = props.giveHintOnIncorrect
         this.generateHintFromGPT = props.generateHintFromGPT;
+        this.enableTTS = props.enableTTS;
+
+        this.ttsPlayers = {};
+
         this.state = {
             latestStep: 0,
-            currentExpanded: (this.unlockFirstHint || this.isIncorrect) ? 0 : -1,
+            currentExpanded: -1,
             hintAnswer: "",
             showSubHints: new Array(this.props.hints.length).fill(false),
             subHintsFinished: subHintsFinished,
+            ttsPlayingHint: -1,   // index of currently playing hint, -1 = none
+            ttsActiveSegment: -1, // sentence segment index within playing hint
         };
 
         if (this.unlockFirstHint && this.props.hintStatus.length > 0) {
@@ -56,6 +65,55 @@ class HintSystem extends React.Component {
             this.props.unlockHint(0, this.props.hints[0].type);
         }
     }
+
+    componentDidMount() {
+        if (!this.enableTTS) return;
+        for (let j = 0; j < this.props.hints.length; j++) {
+            const hint = this.props.hints[j];
+            let segments = null;
+            if (hint.pacedSpeech && Array.isArray(hint.pacedSpeech) && hint.pacedSpeech.length > 0) {
+                segments = hint.pacedSpeech;
+            } else {
+                const raw = textToReadable(
+                    (hint.title && hint.title !== "nan" ? hint.title : "") + ". " + (hint.text || "")
+                );
+                if (raw && raw !== ".") segments = [raw];
+            }
+            if (segments && segments.length > 0) {
+                const player = new TTSPlayer();
+                player.onStateChange((playing) => this.setState({
+                    ttsPlayingHint: playing ? j : -1,
+                    ttsActiveSegment: playing ? this.state.ttsActiveSegment : -1,
+                }));
+                player.onSegmentChange((segIdx) => this.setState({ ttsActiveSegment: segIdx }));
+                player.onReady(() => this.forceUpdate());
+                this.ttsPlayers[j] = player;
+                player.fetchAudio(segments);
+            }
+        }
+    }
+
+    componentWillUnmount() {
+        Object.values(this.ttsPlayers).forEach(p => p.destroy());
+    }
+
+    toggleHintTTS = (hintIndex) => {
+        const player = this.ttsPlayers[hintIndex];
+        if (!player) return;
+        Object.entries(this.ttsPlayers).forEach(([idx, p]) => {
+            if (parseInt(idx) !== hintIndex && p.playing) p.pause();
+        });
+        player.togglePlayPause();
+    };
+
+    replayHintTTS = (hintIndex) => {
+        const player = this.ttsPlayers[hintIndex];
+        if (!player) return;
+        Object.entries(this.ttsPlayers).forEach(([idx, p]) => {
+            if (parseInt(idx) !== hintIndex && p.playing) p.pause();
+        });
+        player.replay();
+    };
 
     unlockHint = (event, expanded, i) => {
         if (this.state.currentExpanded === i ) {
@@ -152,6 +210,9 @@ class HintSystem extends React.Component {
         const { classes, index, hints, problemID, seed, stepVars } = this.props;
         const { currentExpanded, showSubHints } = this.state;
         const { debug, use_expanded_view } = this.context;
+        const ttsContext = this.enableTTS
+            ? { ...this.context, enableTTS: true, ttsContext: this.props.problemTitle || "" }
+            : this.context;
 
         return (
             <div className={classes.root}>
@@ -172,6 +233,7 @@ class HintSystem extends React.Component {
                                 debug)
                         }
                         defaultExpanded={false}
+                        style={{ margin: 0, boxShadow: "none", borderBottom: "1px solid #e7e7e7ff", }}
                     >
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
@@ -182,19 +244,14 @@ class HintSystem extends React.Component {
                             })}
                         >
                             <Typography className={classes.heading}>
-                                {translate('hintsystem.hint') + (i + 1) + ": "}
-                                {renderText(
-                                    hint.title === "nan" ? "" : hint.title,
-                                    problemID,
-                                    chooseVariables(
-                                        Object.assign(
-                                            {},
-                                            stepVars,
-                                            hint.variabilization
-                                        ),
-                                        seed
-                                    ),
-                                    this.context
+                                {translate("hintsystem.hint") + (i + 1)}
+                                {this.ttsPlayers[i] && (
+                                    <TTSButtons
+                                        playing={this.state.ttsPlayingHint === i}
+                                        onToggle={(e) => { e.stopPropagation(); this.toggleHintTTS(i); }}
+                                        onReplay={(e) => { e.stopPropagation(); this.replayHintTTS(i); }}
+                                        disabled={!this.ttsPlayers[i].isReady()}
+                                    />
                                 )}
                             </Typography>
                         </AccordionSummary>
@@ -204,19 +261,51 @@ class HintSystem extends React.Component {
                                 component={"span"}
                                 style={{ width: "100%" }}
                             >
-                                {renderText(
-                                    hint.text,
-                                    problemID,
-                                    chooseVariables(
-                                        Object.assign(
-                                            {},
-                                            stepVars,
-                                            hint.variabilization
-                                        ),
-                                        seed
-                                    ),
-                                    this.context
-                                )}
+                                {(() => {
+                                    const vars = chooseVariables(Object.assign({}, stepVars, hint.variabilization), seed);
+                                    const isPlaying = this.enableTTS && this.state.ttsPlayingHint === i;
+                                    const hasTitle = hint.title && hint.title !== "nan";
+                                    const titleSentences = hasTitle ? splitTextIntoSentences(hint.title) : [];
+                                    const titleOffset = titleSentences.length;
+
+                                    return (<>
+                                        {hasTitle && (
+                                            <>
+                                                <strong>
+                                                    {!isPlaying ? renderText(hint.title, problemID, vars, ttsContext) :
+                                                        titleSentences.map((sentence, sIdx) => (
+                                                            <span
+                                                                key={sIdx}
+                                                                style={{
+                                                                    backgroundColor: sIdx === this.state.ttsActiveSegment ? "#FFF3CD" : "transparent",
+                                                                    borderRadius: 3,
+                                                                    transition: "background-color 0.2s",
+                                                                }}
+                                                            >
+                                                                {renderText(sentence, problemID, vars, ttsContext)}
+                                                            </span>
+                                                        ))
+                                                    }
+                                                </strong>
+                                                <br />
+                                            </>
+                                        )}
+                                        {!isPlaying ? renderText(hint.text, problemID, vars, ttsContext) :
+                                            splitTextIntoSentences(hint.text).map((sentence, sIdx) => (
+                                                <span
+                                                    key={sIdx}
+                                                    style={{
+                                                        backgroundColor: (sIdx + titleOffset) === this.state.ttsActiveSegment ? "#FFF3CD" : "transparent",
+                                                        borderRadius: 3,
+                                                        transition: "background-color 0.2s",
+                                                    }}
+                                                >
+                                                    {renderText(sentence, problemID, vars, ttsContext)}
+                                                </span>
+                                            ))
+                                        }
+                                    </>);
+                                })()}
                                 {hint.type === "scaffold" ? (
                                     <div>
                                         <Spacer />

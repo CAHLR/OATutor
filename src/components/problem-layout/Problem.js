@@ -3,6 +3,7 @@ import { withStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
+import TextField from "@material-ui/core/TextField";
 import ProblemCardWrapper from "./ProblemCardWrapper";
 import Grid from "@material-ui/core/Grid";
 import { animateScroll as scroll, Element, scroller } from "react-scroll";
@@ -12,18 +13,17 @@ import {
     renderText,
 } from "../../platform-logic/renderText.js";
 import styles from "./common-styles.js";
-import IconButton from "@material-ui/core/IconButton";
-import TextField from "@material-ui/core/TextField";
 import { NavLink } from "react-router-dom";
-import HelpOutlineOutlinedIcon from "@material-ui/icons/HelpOutlineOutlined";
-import FeedbackOutlinedIcon from "@material-ui/icons/FeedbackOutlined";
 import withTranslation from "../../util/withTranslation.js"
+import avatar from "../../assets/avatar_default_state.svg";
+import TTSPlayer, { splitIntoSegments, splitTextIntoSentences } from "../../util/ttsPlayer.js";
+import TTSButtons from "./TTSButtons.js";
+import { textToReadable } from "../../util/latexToReadable.js";
 
 import {
     CANVAS_WARNING_STORAGE_KEY,
     MIDDLEWARE_URL,
     SHOW_NOT_CANVAS_WARNING,
-    SITE_NAME,
     ThemeContext,
 } from "../../config/config.js";
 import { toast } from "react-toastify";
@@ -32,8 +32,10 @@ import ToastID from "../../util/toastIds";
 import Spacer from "../Spacer";
 import { stagingProp } from "../../util/addStagingProperty";
 import { cleanArray } from "../../util/cleanObject";
-import Popup from '../Popup/Popup.js';
-import About from '../../pages/Posts/About.js';
+
+import {Accordion, AccordionSummary, AccordionDetails, Typography} from "@material-ui/core";
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import AgentIntegration from './AgentIntegration';
 
 class Problem extends React.Component {
     static defaultProps = {
@@ -59,7 +61,7 @@ class Problem extends React.Component {
         const keyboardType = this.props.lesson?.keyboardType;
         const doMasteryUpdate = this.props.lesson?.doMasteryUpdate;
         const unlockFirstHint = this.props.lesson?.unlockFirstHint;
-        const giveStuBottomHint = this.props.lesson?.giveStuBottomHint;
+        const giveStuBottomHint = this.props.lesson?.allowBottomHint;
 
         this.giveHintOnIncorrect = giveHintOnIncorrect != null && giveHintOnIncorrect;
         this.giveStuFeedback = giveStuFeedback == null || giveStuFeedback;
@@ -70,6 +72,7 @@ class Problem extends React.Component {
         this.unlockFirstHint = unlockFirstHint != null && unlockFirstHint;
         this.giveStuBottomHint = giveStuBottomHint == null || giveStuBottomHint;
         this.giveDynamicHint = this.props.lesson?.allowDynamicHint;
+        this.enableTTS = this.props.lesson?.allowTTS;
         this.prompt_template = this.props.lesson?.prompt_template
             ? this.props.lesson?.prompt_template
             : "";
@@ -81,14 +84,35 @@ class Problem extends React.Component {
             showFeedback: false,
             feedback: "",
             feedbackSubmitted: false,
-            showPopup: false
+            showPopup: false,
+            expandedAccordion: 0,
+            hintToggleTrigger: 0,
+            hintToggleIndex: null,
+            isHintPortalOpen: false,
+            attemptHistory: {}, // { "Problem Title": { "Question Text": ["attempt1", "attempt2"] } }
+            ttsPlaying: false,
+            ttsPlayingStep: -1,
+            ttsActiveSegment: -1,
+            ttsActiveSegmentStep: -1,
+            metaCollapsed: false,
         };
+
+        this.togglePopup = this.togglePopup.bind(this);
+        this.hintPortalRef = React.createRef();
+        this.stepTTSPlayers = {};
+
+        if (this.enableTTS) {
+            this.ttsPlayer = new TTSPlayer();
+            this.ttsPlayer.onStateChange((playing) => this.setState({ ttsPlaying: playing, ttsActiveSegment: playing ? this.state.ttsActiveSegment : -1 }));
+            this.ttsPlayer.onSegmentChange((segIdx) => this.setState({ ttsActiveSegment: segIdx }));
+        }
+        this.bannerRef = React.createRef();
     }
 
     componentDidMount() {
-        const { lesson, setLanguage } = this.props;
-        if (lesson) setLanguage(lesson.language);
-
+        const h = this.bannerRef.current?.offsetHeight || 0;
+        this.setState({ bannerHeight: h });
+        const { lesson } = this.props;
         document["oats-meta-courseName"] = lesson?.courseName || "";
         document["oats-meta-textbookName"] =
             lesson?.courseName
@@ -99,11 +123,66 @@ class Problem extends React.Component {
         for (const annotation of document.querySelectorAll("annotation")) {
             annotation.ariaLabel = annotation.textContent;
         }
+
+        if (this.enableTTS) this._loadTTSAudio(this.props.problem);
+    }
+
+    componentDidUpdate(prevProps) {
+        if (this.enableTTS && prevProps.problem?.id !== this.props.problem?.id) {
+            this._loadTTSAudio(this.props.problem);
+        }
+    }
+
+    _loadTTSAudio(problem) {
+        if (!problem) return;
+
+        // 停止并重置所有旧的 player
+        if (this.ttsPlayer) {
+            this.ttsPlayer.destroy();
+            this.ttsPlayer = new TTSPlayer();
+            this.ttsPlayer.onStateChange((playing) => this.setState({ ttsPlaying: playing, ttsActiveSegment: playing ? this.state.ttsActiveSegment : -1 }));
+            this.ttsPlayer.onSegmentChange((segIdx) => this.setState({ ttsActiveSegment: segIdx }));
+        }
+        Object.values(this.stepTTSPlayers).forEach(p => p.destroy());
+        this.stepTTSPlayers = {};
+        this.setState({ ttsPlaying: false, ttsPlayingStep: -1 });
+
+        // 加载大题音频
+        this.ttsPlayer.onReady(() => this.forceUpdate());
+        let segments;
+        if (problem.pacedSpeech && Array.isArray(problem.pacedSpeech) && problem.pacedSpeech.length > 0) {
+            segments = problem.pacedSpeech;
+        } else {
+            const raw = textToReadable((problem.title || "") + ". " + (problem.body || ""));
+            if (raw && raw !== ".") segments = [raw];
+        }
+        if (segments) this.ttsPlayer.fetchAudio(segments);
+
+        // 加载每个 step 音频
+        (problem.steps || []).forEach((step, idx) => {
+            let stepSegments = null;
+            if (step.pacedSpeech && Array.isArray(step.pacedSpeech) && step.pacedSpeech.length > 0) {
+                stepSegments = step.pacedSpeech;
+            } else {
+                const raw = textToReadable((step.stepTitle || "") + ". " + (step.stepBody || ""));
+                if (raw && raw !== ".") stepSegments = [raw];
+            }
+            if (stepSegments) {
+                const player = new TTSPlayer();
+                player.onStateChange((playing) => this.setState({ ttsPlayingStep: playing ? idx : -1, ttsActiveSegmentStep: playing ? this.state.ttsActiveSegmentStep : -1 }));
+                player.onSegmentChange((segIdx) => this.setState({ ttsActiveSegmentStep: segIdx }));
+                player.onReady(() => this.forceUpdate());
+                this.stepTTSPlayers[idx] = player;
+                player.fetchAudio(stepSegments);
+            }
+        });
     }
 
     componentWillUnmount() {
         document["oats-meta-courseName"] = "";
         document["oats-meta-textbookName"] = "";
+        if (this.ttsPlayer) this.ttsPlayer.destroy();
+        Object.values(this.stepTTSPlayers).forEach(p => p.destroy());
     }
 
     updateCanvas = async (mastery, components) => {
@@ -228,11 +307,29 @@ class Problem extends React.Component {
         }
     };
 
-    answerMade = (cardIndex, kcArray, isCorrect) => {
-        const { stepStates, firstAttempts } = this.state;
+    answerMade = (cardIndex, kcArray, isCorrect, attemptedAnswer, questionText) => {
+        const { stepStates, firstAttempts, attemptHistory } = this.state;
         const { lesson, problem } = this.props;
 
         console.debug(`answer made and is correct: ${isCorrect}`);
+
+        // Record attempt history
+        if (attemptedAnswer && questionText) {
+            const problemTitle = problem.title;
+            const updatedHistory = { ...attemptHistory };
+            
+            if (!updatedHistory[problemTitle]) {
+                updatedHistory[problemTitle] = {};
+            }
+            
+            if (!updatedHistory[problemTitle][questionText]) {
+                updatedHistory[problemTitle][questionText] = [];
+            }
+            
+            updatedHistory[problemTitle][questionText].push(attemptedAnswer);
+            
+            this.setState({ attemptHistory: updatedHistory });
+        }
 
         if (stepStates[cardIndex] === true) {
             return;
@@ -297,9 +394,25 @@ class Problem extends React.Component {
             // console.log("num attempted: ", numAttempted);
             // console.log("num steps: ", numSteps);
             // console.log("step states: ", Object.values(nextStepStates));
-            this.setState({
-                stepStates: nextStepStates,
-            });
+            if (isCorrect && cardIndex + 1 < numSteps) {
+                if (this.props.autoScroll) {
+                    scroller.scrollTo((cardIndex + 1).toString(), {
+                        duration: 350,
+                        smooth: true,
+                        offset: -80,
+                    });
+                }
+                this.setState({
+                    stepStates: nextStepStates,
+                    expandedAccordion: cardIndex + 1,
+                    hintToggleIndex: null,
+                    isHintPortalOpen: false,
+                });
+            } else {
+                this.setState({
+                    stepStates: nextStepStates,
+                });
+            }
             if (numAttempted === numSteps) {
                 this.setState({
                     problemFinished: true,
@@ -321,13 +434,16 @@ class Problem extends React.Component {
                 );
                 if (this.props.autoScroll) {
                     scroller.scrollTo((cardIndex + 1).toString(), {
-                        duration: 500,
+                        duration: 350,
                         smooth: true,
-                        offset: -100,
+                        offset: -80,
                     });
                 }
                 this.setState({
                     stepStates: nextStepStates,
+                    expandedAccordion: cardIndex + 1,
+                    hintToggleIndex: null,
+                    isHintPortalOpen: false,
                 });
             } else {
                 this.setState({
@@ -353,7 +469,7 @@ class Problem extends React.Component {
     };
 
     submitFeedback = () => {
-        const { problem } = this.props;
+        const problem = this.state.currProblem;
 
         console.debug("problem when submitting feedback", problem);
         this.context.firebase.submitFeedback(
@@ -429,86 +545,225 @@ class Problem extends React.Component {
         return [oerLink, oerName, licenseLink, licenseName];
     };
 
+    accordionChange = (panel) => (event, isExpanded) => {
+        this.setState(() => ({
+            expandedAccordion: isExpanded ? panel : null,
+            hintToggleIndex: null,
+            isHintPortalOpen: false,
+        }));
+    };
+
+    handleHintAvatarClick = (event) => {
+        if (
+            event &&
+            this.state.isHintPortalOpen &&
+            this.hintPortalRef?.current &&
+            this.hintPortalRef.current.contains(event.target)
+        ) {
+            return;
+        }
+
+        this.setState((prevState, props) => {
+            const steps = props.problem?.steps || [];
+
+            if (steps.length === 0) {
+                return null;
+            }
+
+            const hasExpanded = prevState.expandedAccordion !== null;
+            const targetIndex = hasExpanded ? prevState.expandedAccordion : 0;
+
+            return {
+                hintToggleTrigger: prevState.hintToggleTrigger + 1,
+                hintToggleIndex: targetIndex,
+                expandedAccordion: hasExpanded
+                    ? prevState.expandedAccordion
+                    : targetIndex,
+                isHintPortalOpen: false,
+            };
+        });
+    };
+
+    handleHintAvatarKeyDown = (event) => {
+        if (
+            (event.key === "Enter" || event.key === " ") &&
+            event.target === event.currentTarget
+        ) {
+            event.preventDefault();
+            this.handleHintAvatarClick(event);
+        }
+    };
+
+    handleHintToggleFromStep = (index, isOpen) => {
+        this.setState((prevState) => ({
+            isHintPortalOpen: isOpen,
+            hintToggleIndex: isOpen ? index : null,
+        }));
+    };
+
     render() {
         const { translate } = this.props;
-        const { classes, problem, seed } = this.props;
+        const { classes, problem, seed, compactHeader, hideHintPanel } = this.props;
         const [oerLink, oerName, licenseLink, licenseName] =
             this.getOerLicense();
-        const { showPopup } = this.state;
+        const { showPopup, isHintPortalOpen, metaCollapsed } = this.state;
         if (problem == null) {
             return <div></div>;
         }
 
+        // Extend ThemeContext with TTS info so RenderMedia can access it via renderText
+        const ttsContext = this.enableTTS
+            ? { ...this.context, enableTTS: true, ttsContext: `${problem.title || ""} ${problem.body || ""}`.trim() }
+            : this.context;
+
+        const drawerOpen = this.props.drawerOpen;
+        const layoutGap = drawerOpen ? 3 : 4;
+        const toggleMetaCollapsed = () =>
+            this.setState((prevState) => ({
+                metaCollapsed: !prevState.metaCollapsed,
+            }));
+        const hintStickTop = 200;
+        const hintDisplayStyle = {
+            position: "sticky",
+            top: hintStickTop,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "stretch",
+            width: "95%",
+            maxWidth: "100%",
+            maxHeight: "70vh",
+            transition: "all 0.4s ease",
+        };
+        // Yellow box
+        const bubbleContainerStyle = {
+            position: "fixed",
+            top: metaCollapsed? 410 : this.state.bannerHeight + 330,
+            right: 28,
+            bottom: 24,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: isHintPortalOpen ? "stretch" : "flex-end",
+            justifyContent: isHintPortalOpen ? "flex-end" : "flex-start",
+            width: drawerOpen ? "22%" : "37%",
+        };
+
+        const speechBubbleStyle = {
+            background: "#FFF3CC",
+            color: "#222",
+            padding: "12px 16px",
+            borderRadius: 8,
+            boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
+            position: "relative",
+            width: isHintPortalOpen ? "100%" : "auto",
+            maxWidth: isHintPortalOpen ? "100%" : 240,
+            // height: isHintPortalOpen ? "70vh" : "auto",
+            maxHeight: "60vh",
+            alignSelf: isHintPortalOpen ? "stretch" : "flex-end",
+            textAlign: "left",
+            cursor: "pointer",
+            transition: "all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1)",
+            marginTop: isHintPortalOpen ? "auto" : 0,
+            zIndex: 2,
+        };
+
+        const hintPortalStyle = {
+            display: isHintPortalOpen ? "block" : "none",
+            width: "100%",
+            height: isHintPortalOpen ? "50vh" : "auto",
+            marginTop: isHintPortalOpen ? 8 : 0,
+            maxHeight: "60vh",
+            overflowY: "auto",
+        };
+
         return (
             <>
-                <div>
-                    <div className={classes.prompt} role={"banner"}>
-                        <Card className={classes.titleCard}>
-                            <CardContent
-                                {...stagingProp({
-                                    "data-selenium-target": "problem-header",
-                                })}
-                            >
-                                <h1 className={classes.problemHeader}>
-                                    {renderText(
-                                        problem.title,
-                                        problem.id,
-                                        chooseVariables(
-                                            problem.variabilization,
-                                            seed
-                                        ),
-                                        this.context
-                                    )}
-                                    <hr />
-                                </h1>
-                                <div className={classes.problemBody}>
-                                    {renderText(
-                                        problem.body,
-                                        problem.id,
-                                        chooseVariables(
-                                            problem.variabilization,
-                                            seed
-                                        ),
-                                        this.context
-                                    )}
+                <Grid
+                    container
+                    spacing={layoutGap}
+                    alignItems="flex-start"
+                    style={{ width: "100%", margin: 0 }}
+                >
+                    <Grid
+                        item
+                        xs={12}
+                        md={drawerOpen ? 8 : 7}
+                    >
+                        <div className={classes.prompt} role={"banner"}>
+                            <Card className={classes.titleCard}>
+
+                                <div
+                                    style = {{
+                                        backgroundColor: "#EBF4FA",
+                                        padding: 20
+                                    }}
+                                >
+                                    <div className={classes.problemHeader}>
+                                        {(() => {
+                                            const vars = chooseVariables(problem.variabilization, seed);
+                                            if (!this.enableTTS || !this.state.ttsPlaying) {
+                                                return renderText(problem.title, problem.id, vars, ttsContext);
+                                            }
+                                            // title + body share the same player; title segments come first
+                                            const titleSentences = splitTextIntoSentences(problem.title);
+                                            return titleSentences.map((sentence, sIdx) => (
+                                                <span
+                                                    key={sIdx}
+                                                    style={{
+                                                        backgroundColor: sIdx === this.state.ttsActiveSegment ? "#FFF3CD" : "transparent",
+                                                        borderRadius: 3,
+                                                        transition: "background-color 0.2s",
+                                                    }}
+                                                >
+                                                    {renderText(sentence, problem.id, vars, ttsContext)}
+                                                </span>
+                                            ));
+                                        })()}
+                                        {this.enableTTS && this.ttsPlayer && (
+                                            <TTSButtons
+                                                playing={this.state.ttsPlaying}
+                                                onToggle={() => this.ttsPlayer.togglePlayPause()}
+                                                onReplay={() => this.ttsPlayer.replay()}
+                                                disabled={!this.ttsPlayer.isReady()}
+                                            />
+                                        )}
+                                    </div>
                                 </div>
-                            </CardContent>
-                        </Card>
-                        <Spacer height={8} />
-                        <hr />
-                    </div>
-                    <div role={"main"}>
-                        {problem.steps.map((step, idx) => (
-                            <Element
-                                name={idx.toString()}
-                                key={`${problem.id}-${step.id}`}
-                            >
-                                <ProblemCardWrapper
-                                    problemID={problem.id}
-                                    step={step}
-                                    index={idx}
-                                    answerMade={this.answerMade}
-                                    seed={seed}
-                                    problemVars={problem.variabilization}
-                                    lesson={problem.lesson}
-                                    courseName={problem.courseName}
-                                    problemTitle={problem.title}
-                                    problemSubTitle={problem.body}
-                                    giveStuFeedback={this.giveStuFeedback}
-                                    giveStuHints={this.giveStuHints}
-                                    keepMCOrder={this.keepMCOrder}
-                                    keyboardType={this.keyboardType}
-                                    giveHintOnIncorrect={
-                                        this.giveHintOnIncorrect
-                                    }
-                                    unlockFirstHint={this.unlockFirstHint}
-                                    giveStuBottomHint={this.giveStuBottomHint}
-                                    giveDynamicHint={this.giveDynamicHint}
-                                    prompt_template={this.prompt_template}
-                                />
-                            </Element>
-                        ))}
-                    </div>
+
+                                <CardContent
+                                    {...stagingProp({
+                                        "data-selenium-target": "problem-header",
+                                    })}
+                                    style={{
+                                        padding: 20
+                                    }}
+                                >
+
+                                    <div className={classes.problemBody}>
+                                        {(() => {
+                                            const vars = chooseVariables(problem.variabilization, seed);
+                                            if (!this.enableTTS || !this.state.ttsPlaying) {
+                                                return renderText(problem.body, problem.id, vars, ttsContext);
+                                            }
+                                            // body segments are offset by the number of title segments
+                                            const titleOffset = splitTextIntoSentences(problem.title).length;
+                                            return splitTextIntoSentences(problem.body).map((sentence, sIdx) => (
+                                                <span
+                                                    key={sIdx}
+                                                    style={{
+                                                        backgroundColor: (sIdx + titleOffset) === this.state.ttsActiveSegment ? "#FFF3CD" : "transparent",
+                                                        borderRadius: 3,
+                                                        transition: "background-color 0.2s",
+                                                    }}
+                                                >
+                                                    {renderText(sentence, problem.id, vars, ttsContext)}
+                                                </span>
+                                            ));
+                                        })()}
+                                    </div>
+                                </CardContent>
+                            </Card>
+                            <Spacer height={8} />
+                        </div>
                     <div width="100%">
                         {this.context.debug ? (
                             <Grid container spacing={0}>
@@ -557,30 +812,276 @@ class Problem extends React.Component {
                                 <Grid item xs={2} key={4} />
                             </Grid>
                         ) : (
-                            
-                            <Grid container spacing={0}>
-                                <Grid item xs={3} sm={3} md={5} key={1} />
-                                <Grid item xs={6} sm={6} md={2} key={2}>
-                                    <Button
-                                        className={classes.button}
-                                        style={{ width: "100%" }}
-                                        size="small"
-                                        onClick={this.clickNextProblem}
-                                        disabled={
-                                            !(
-                                                this.state.problemFinished ||
-                                                this.state.feedbackSubmitted
-                                            )
-                                        }
-                                    >
-                                        {translate('problem.NextProblem')}
-                                    </Button>
-                                </Grid>
-                                <Grid item xs={3} sm={3} md={5} key={3} />
-                            </Grid>
+                            null
                         )}
+                        </div>
+
+                        <div role={"main"}>
+                            {problem.steps.map((step, idx) => {
+                                const expanded =
+                                    this.state.expandedAccordion === idx;
+                                return (
+                                    <Element
+                                        name={idx.toString()}
+                                        key={`${problem.id}-${step.id}`}
+                                    >
+                                        <Accordion
+                                            style={{
+                                                marginBottom: 32,
+                                                // backgroundColor: "transparent",
+                                                boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
+                                            }}
+                                            expanded={expanded}
+                                            onChange={this.accordionChange(idx)}
+                                            round
+                                        >
+                                            <AccordionSummary
+                                                expandIcon={<ExpandMoreIcon />}
+                                                aria-controls={`problem-step-${idx}-content`}
+                                                id={`problem-step-${idx}-header`}
+                                                {...stagingProp({
+                                                    "data-selenium-target": `problem-step-toggle-${idx}`,
+                                                })}
+                                            >
+                                                <div style={{ display: "flex", alignItems: "center" }}>
+                                                    <Typography
+                                                        variant="subtitle1"
+                                                        style={{ fontWeight: 800 }}
+                                                    >
+                                                        {(() => {
+                                                            const vars = chooseVariables(Object.assign({}, problem.variabilization, step.variabilization), seed);
+                                                            const isPlaying = this.enableTTS && this.state.ttsPlayingStep === idx;
+                                                            if (!isPlaying) {
+                                                                return renderText(step.stepTitle, problem.id, vars, ttsContext);
+                                                            }
+                                                            return splitTextIntoSentences(step.stepTitle).map((sentence, sIdx) => (
+                                                                <span
+                                                                    key={sIdx}
+                                                                    style={{
+                                                                        backgroundColor: sIdx === this.state.ttsActiveSegmentStep ? "#FFF3CD" : "transparent",
+                                                                        borderRadius: 3,
+                                                                        transition: "background-color 0.2s",
+                                                                    }}
+                                                                >
+                                                                    {renderText(sentence, problem.id, vars, ttsContext)}
+                                                                </span>
+                                                            ));
+                                                        })()}
+                                                    </Typography>
+                                                    {this.enableTTS && this.stepTTSPlayers[idx] && (
+                                                        <TTSButtons
+                                                            playing={this.state.ttsPlayingStep === idx}
+                                                            onToggle={(e) => { e.stopPropagation(); this.stepTTSPlayers[idx].togglePlayPause(); }}
+                                                            onReplay={(e) => { e.stopPropagation(); this.stepTTSPlayers[idx].replay(); }}
+                                                            disabled={!this.stepTTSPlayers[idx].isReady()}
+                                                        />
+                                                    )}
+                                                </div>
+                                            </AccordionSummary>
+
+                                                <ProblemCardWrapper
+                                                    enableTTS={this.enableTTS}
+                                                    ttsActiveSegment={this.state.ttsPlayingStep === idx ? this.state.ttsActiveSegmentStep : -1}
+                                                    problemID={problem.id}
+                                                    step={step}
+                                                    index={idx}
+                                                    answerMade={this.answerMade}
+                                                    seed={seed}
+                                                    problemVars={problem.variabilization}
+                                                    lesson={problem.lesson}
+                                                    courseName={problem.courseName}
+                                                    problemTitle={problem.title}
+                                                    problemSubTitle={problem.body}
+                                                    giveStuFeedback={this.giveStuFeedback}
+                                                    giveStuHints={this.giveStuHints}
+                                                    keepMCOrder={this.keepMCOrder}
+                                                    keyboardType={this.keyboardType}
+                                                    giveHintOnIncorrect={this.giveHintOnIncorrect}
+                                                    unlockFirstHint={this.unlockFirstHint}
+                                                    giveStuBottomHint={this.giveStuBottomHint}
+                                                    giveDynamicHint={this.giveDynamicHint}
+                                                    prompt_template={this.prompt_template}
+                                                    showCardHeader={false}
+                                                    hintToggleTrigger={this.state.hintToggleTrigger}
+                                                    hintToggleIndex={this.state.hintToggleIndex}
+                                                    hintPortalTarget={this.hintPortalRef}
+                                                    onHintToggle={this.handleHintToggleFromStep}
+                                                />
+                                        </Accordion>
+                                    </Element>
+                                );
+                            })}
+                        </div>
+                        <div width="100%">
+                            {this.context.debug ? (
+                                <Grid container spacing={0}>
+                                    <Grid item xs={2} key={0} />
+                                    <Grid item xs={2} key={1}>
+                                        <NavLink
+                                            activeClassName="active"
+                                            className="link"
+                                            to={this._getNextDebug(-1)}
+                                            type="menu"
+                                            style={{ marginRight: "10px" }}
+                                        >
+                                            <Button
+                                                className={classes.button}
+                                                style={{ width: "100%" }}
+                                                size="small"
+                                                onClick={() =>
+                                                    (this.context.needRefresh = true)
+                                                }
+                                            >
+                                                {translate('problem.PreviousProblem')}
+                                            </Button>
+                                        </NavLink>
+                                    </Grid>
+                                    <Grid item xs={4} key={2} />
+                                    <Grid item xs={2} key={3}>
+                                        <NavLink
+                                            activeClassName="active"
+                                            className="link"
+                                            to={this._getNextDebug(1)}
+                                            type="menu"
+                                            style={{ marginRight: "10px" }}
+                                        >
+                                            <Button
+                                                className={classes.button}
+                                                style={{ width: "100%" }}
+                                                size="small"
+                                                onClick={() =>
+                                                    (this.context.needRefresh = true)
+                                                }
+                                            >
+                                            {translate('problem.NextProblem')}
+                                            </Button>
+                                        </NavLink>
+                                    </Grid>
+                                    <Grid item xs={2} key={4} />
+                                </Grid>
+                            ) : (
+                                
+                                <Grid 
+                                    container 
+                                    justifyContent="flex-end"
+                                    style={{ marginTop: 32, marginBottom: 32}}
+                                >
+                                    <Grid item
+                                        style={{width: 167}}
+                                    >
+                                        <Button
+                                            className={classes.button} 
+                                            style={{ width: "100%" }}
+                                            size="small"
+                                            onClick={this.clickNextProblem}
+                                            disabled={
+                                                !(
+                                                    this.state.problemFinished ||
+                                                    this.state.feedbackSubmitted
+                                                )
+                                            }
+                                        >
+                                            {translate('problem.NextProblem')}
+                                        </Button>
+                                    </Grid>
+                                </Grid>
+
+                            )}
+                        </div>
+                    </Grid>
+
+                    <Grid
+                        item
+                        xs={12}
+                        md={drawerOpen ? 4 : 5}
+                        style={{
+                        position: "sticky",
+                        top: hintStickTop,
+                        alignSelf: "flex-start",
+                        zIndex: 2,
+                    }}
+                    >
+                        <div style={hintDisplayStyle}>
+                        <button
+                            style={{
+                                backgroundColor: "#4E7DAA", // similar blue tone
+                                color: "white",
+                                border: "none",
+                                borderRadius: "9999px", // fully rounded edges
+                                padding: "2px 14px",
+                                fontSize: "12px",
+                                fontWeight: 500,
+                                cursor: "pointer",
+                                alignSelf: "flex-end",
+                                marginBottom: "56px",
+                            }}
+                            >
+                            OpenAI o1
+                        </button>
+                        <div
+                            style={bubbleContainerStyle}
+                        >
+                        {/* Speech Bubble */}
+                        <div
+                        style={speechBubbleStyle}
+                        {...stagingProp({
+                            "data-selenium-target": "hint-avatar-toggle",
+                        })}
+                        role="button"
+                        tabIndex={0}
+                        aria-expanded={this.state.isHintPortalOpen}
+                        aria-controls="hint-portal-content"
+                        onClick={this.handleHintAvatarClick}
+                        onKeyDown={this.handleHintAvatarKeyDown}
+                        aria-label="Toggle hints"
+                        >
+                        <p style={{ margin: 0, fontWeight: 600 }}>Stuck on the problem?</p>
+                        {!this.state.isHintPortalOpen && (
+                            <p style={{ margin: 0 }}>Give me a tap and I am happy to help!</p>
+                        )}
+                        <div
+                            ref={this.hintPortalRef}
+                            id="hint-portal-content"
+                            role="region"
+                            aria-live="polite"
+                            aria-label="Hints"
+                            aria-hidden={!this.state.isHintPortalOpen}
+                            style={hintPortalStyle}
+                        />
+
+                        {/* Tail at top right, pointing upward */}
+                        <div
+                            style={{
+                                position: "absolute",
+                                top: "-8px",
+                                right: "24px",
+                                width: 0,
+                                height: 0,
+                                borderLeft: "8px solid transparent",
+                                borderRight: "8px solid transparent",
+                                borderBottom: "8px solid #FFF3CC"
+                            }}
+                        />
+                        </div>
+
+                        {/* Avatar Icon */}
+                        <img
+                        src={avatar}
+                        alt="Whisper"
+                        style={{
+                            width: 64,
+                            height: 64,
+                            position: "absolute",
+                            top: "-55px",
+                            right: "-10px",
+                            zIndex: 0,
+                        }}
+                        />
+                        </div>
                     </div>
-                </div>
+                    </Grid>
+                </Grid>
+
                 <footer>
                     <div
                         style={{
@@ -628,7 +1129,9 @@ class Problem extends React.Component {
                             </div>
                             )}
                         </div>
-                        <div
+
+
+                        {/* <div
                             style={{
                                 display: "flex",
                                 flexGrow: 1,
@@ -664,10 +1167,86 @@ class Problem extends React.Component {
                         </div>
                         <Popup isOpen={showPopup} onClose={this.togglePopup}>
                             <About />
-                        </Popup>
+                        </Popup> */}
                     </div>
-                    {this.state.showFeedback ? (
-                        <div className="Feedback">
+
+                    {this.props.showFeedback && (
+                        <div
+                            className="Feedback"
+                            style={{
+                                paddingTop: 16,
+                                paddingBottom: 24,
+                            }}
+                        >
+                            <center>
+                                <h1>{translate('problem.Feedback')}</h1>
+                            </center>
+                            <div className={classes.textBox}>
+                                <div className={classes.textBoxHeader}>
+                                    <center>
+                                        {this.props.feedbackSubmitted
+                                            ? translate('problem.Thanks')
+                                            : translate('problem.Description')}
+                                    </center>
+                                </div>
+                                {this.props.feedbackSubmitted ? (
+                                    <Spacer />
+                                ) : (
+                                    <Grid container spacing={0}>
+                                        <Grid item xs={1} sm={2} md={2} key={1} />
+                                        <Grid item xs={10} sm={8} md={8} key={2}>
+                                            <TextField
+                                                id="outlined-multiline-flexible"
+                                                label={translate('problem.Response')}
+                                                multiline
+                                                fullWidth
+                                                minRows="6"
+                                                maxRows="20"
+                                                value={this.props.feedback || ""}
+                                                onChange={(event) => this.props.onFeedbackChange?.(event.target.value)}
+                                                className={classes.textField}
+                                                margin="normal"
+                                                variant="outlined"
+                                            />
+                                        </Grid>
+                                        <Grid item xs={1} sm={2} md={2} key={3} />
+                                    </Grid>
+                                )}
+                            </div>
+                            {this.props.feedbackSubmitted ? (
+                                ""
+                            ) : (
+                                <div className="submitFeedback">
+                                    <Grid container spacing={0}>
+                                        <Grid item xs={3} sm={3} md={5} key={1} />
+                                        <Grid item xs={6} sm={6} md={2} key={2}>
+                                            <Button
+                                                className={classes.button}
+                                                onClick={this.props.submitFeedback}
+                                                style={{ width: "100%" }}
+                                                disabled={(this.props.feedback || "").trim() === ""}
+                                            >
+                                                {translate('problem.Submit')}
+                                            </Button>
+                                        </Grid>
+                                        <Grid item xs={3} sm={3} md={5} key={3} />
+                                    </Grid>
+                                </div>
+                            )}
+                        </div>
+                    )}
+
+
+                    {/* {this.state.showFeedback ? (
+                        <div className="Feedback" 
+                            style={{
+                                marginTop: 0,
+                                paddingTop: 0,
+                                paddingBottom: 690,
+                                backgroundColor: "#F6F6F6",
+                            }}
+                        
+                        >
                             <center>
                                 <h1>{translate('problem.Feedback')}</h1>
                             </center>
@@ -765,10 +1344,78 @@ class Problem extends React.Component {
                         </div>
                     ) : (
                         ""
-                    )}
+                    )} */}
+                    
                 </footer>
+
+                {/* AI Agent Chatbot */}
+                {this.props.lesson?.enable_ai_chat && (
+                    <AgentIntegration
+                        problem={problem}
+                        lesson={this.props.lesson}
+                        seed={seed}
+                        problemVars={this.props.problemVars}
+                        stepStates={this.state.stepStates}
+                        bktParams={this.bktParams}
+                        getActiveStepData={this.getActiveStepData}
+                        attemptHistory={this.state.attemptHistory}
+                        user={this.props.user}
+                        lessonMasteryMap={this.props.lessonMasteryMap}
+                    />
+                )}
             </>
         );
+    }
+
+    /**
+     * Find the step that needs help
+     * Priority: hintToggleIndex (currently expanded) > first incorrect > last attempted > first step
+     * Used by AI Agent to determine which step student is working on
+     */
+    getActiveStepData = () => {
+        const { problem } = this.props;
+        const { stepStates, expandedAccordion } = this.state;
+        
+        // PRIORITY 1: Use expandedAccordion (which accordion is actually open)
+        if (expandedAccordion !== null && expandedAccordion >= 0 && problem.steps[expandedAccordion]) {
+            return {
+                step: problem.steps[expandedAccordion],
+                stepIndex: expandedAccordion,
+                isIncorrect: stepStates[expandedAccordion] === false
+            };
+        }
+        
+        // If NO accordion is expanded, use smart fallbacks:
+        
+        // PRIORITY 2: Find first INCORRECT (wrong) step - student needs help here!
+        for (let i = 0; i < problem.steps.length; i++) {
+            if (stepStates[i] === false) {
+                return {
+                    step: problem.steps[i],
+                    stepIndex: i,
+                    isIncorrect: true
+                };
+            }
+        }
+        
+        // PRIORITY 3: Find first UNANSWERED step - student is working on this next
+        for (let i = 0; i < problem.steps.length; i++) {
+            if (stepStates[i] === undefined || stepStates[i] === null) {
+                return {
+                    step: problem.steps[i],
+                    stepIndex: i,
+                    isIncorrect: false
+                };
+            }
+        }
+        
+        // PRIORITY 4: All steps completed correctly! Use last step for congratulations
+        const lastStepIndex = problem.steps.length - 1;
+        return {
+            step: problem.steps[lastStepIndex],
+            stepIndex: lastStepIndex,
+            isIncorrect: false
+        };
     }
 }
 
