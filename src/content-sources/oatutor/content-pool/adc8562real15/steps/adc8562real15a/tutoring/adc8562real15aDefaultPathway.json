@@ -50,7 +50,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$(0,2)$$"
+            "[0,2]"
         ],
         "dependencies": [
             "adc8562real15a-h3"
@@ -61,10 +61,11 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$(-5,3)$$",
             "$$(-5,-3)$$",
+            "$$(-5,3)$$",
+            "$$(0,-2)$$",
             "$$(0,2)$$",
-            "$$(0,-2)$$"
+            "[0,2]"
         ]
     }
 ]
