@@ -102,17 +102,22 @@ const ViewAllProblems = ({ translate }) => {
     if (found) setLesson(found);
   }, [lessonID]);
 
-  // Filter by objectives
+  // // Filter by objectives
+  // const memoFiltered = useMemo(() => {
+  //   if (!lesson || problemPool.length === 0) return [];
+  //   const pool = problemPool.filter(problem =>
+  //     problem.steps.some(step =>
+  //       (context.skillModel[step.id] || []).some(kc => kc in lesson.learningObjectives)
+  //     )
+  //   );
+
+  //   return pool;
+  // }, [lesson, problemPool, context.skillModel]);
+
   const memoFiltered = useMemo(() => {
     if (!lesson || problemPool.length === 0) return [];
-    const pool = problemPool.filter(problem =>
-      problem.steps.some(step =>
-        (context.skillModel[step.id] || []).some(kc => kc in lesson.learningObjectives)
-      )
-    );
-
-    return pool;
-  }, [lesson, problemPool, context.skillModel]);
+    return problemPool.filter(problem => problem.lessonId === lesson.id);
+  }, [lesson, problemPool]);
 
   useEffect(() => {
     setFilteredProblems(memoFiltered);
