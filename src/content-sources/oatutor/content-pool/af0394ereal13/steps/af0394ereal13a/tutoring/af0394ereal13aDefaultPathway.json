@@ -17,10 +17,10 @@
     {
         "id": "af0394ereal13a-h2",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
-            "$$y=\\frac{-1}{3} x+1$$"
+            "$$(0,1)$$"
         ],
         "dependencies": [
             "af0394ereal13a-h1"
@@ -29,6 +29,12 @@
         "text": "Substitute $$x=3$$ and find a y-intercept such that $$y$$ would equal $$0$$.",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "choices": [
+            "$$(0,1)$$",
+            "$$(0,\\frac{-1}{3})$$",
+            "$$(0,3)$$",
+            "$$(0,2)$$"
+        ]
     }
 ]
