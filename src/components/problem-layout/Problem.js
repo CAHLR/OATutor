@@ -338,6 +338,38 @@ class Problem extends React.Component {
         }
     };
 
+
+    /**
+     * Computes the current BKT mastery for logging. Reads the live (in-place
+     * mutated) bktParams, so call this AFTER answerMade has applied the update
+     * for the step to capture the post-step mastery.
+     * @param {string[]} kcArray knowledge components for the specific step
+     * @returns {{ masteryScore: number|null, kcMastery: Object }}
+     */
+    getMasteryData = (kcArray = []) => {
+        const { lesson } = this.props;
+        const objectives = Object.keys(lesson?.learningObjectives || {});
+
+        let masteryScore = null;
+        if (objectives.length) {
+            const sum = objectives.reduce(
+                (acc, kc) => acc + (this.bktParams[kc]?.probMastery ?? 0),
+                0
+            );
+            masteryScore = sum / objectives.length;
+        }
+
+        const kcMastery = {};
+        cleanArray(kcArray || []).forEach((kc) => {
+            if (this.bktParams[kc]) {
+                kcMastery[kc] = this.bktParams[kc].probMastery;
+            }
+        });
+
+        return { masteryScore, kcMastery };
+    };
+
+
     clickNextProblem = async () => {
         scroll.scrollToTop({ duration: 900, smooth: true });
 
@@ -492,6 +524,7 @@ class Problem extends React.Component {
                                     problemVars={problem.variabilization}
                                     lesson={problem.lesson}
                                     courseName={problem.courseName}
+                                    getMasteryData={this.getMasteryData}
                                     problemTitle={problem.title}
                                     problemSubTitle={problem.body}
                                     giveStuFeedback={this.giveStuFeedback}
