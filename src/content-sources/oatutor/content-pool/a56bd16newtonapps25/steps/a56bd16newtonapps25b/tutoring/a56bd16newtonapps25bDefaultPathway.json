@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a56bd16newtonapps25b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Terminal Velocity",
+        "text": "Terminal velocity is the constant speed that a freely falling object eventually reaches when the resistance of the medium prevents further acceleration. In this case, the diamond reaches a terminal velocity of $$2.0$$ $$\\frac{m}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps25b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps25b-h1"
+        ],
+        "title": "Calculating 90% of Terminal Velocity",
+        "text": "To find 90% of the terminal velocity, multiply the terminal velocity by $$0.9$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps25b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.8$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps25b-h2"
+        ],
+        "title": "Calculate 90% of Terminal Velocity",
+        "text": "What is 90% of the terminal velocity of $$2.0$$ $$\\frac{m}{s}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps25b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps25b-h3"
+        ],
+        "title": "Using the Drag Equation",
+        "text": "The drag force can be calculated using the equation: $$F_d=\\frac{1}{2} C_d A \\rho v^2$$, where $$C_d$$ is the drag coefficient, A is the cross-sectional area, rho is the fluid density, and v is the velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps25b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps25b-h4"
+        ],
+        "title": "Relating Drag Force to Weight",
+        "text": "At terminal velocity, the drag force equals the weight of the object. Use this relationship to find the distance fallen when the velocity is 90% of terminal velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps25b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.57$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps25b-h5"
+        ],
+        "title": "Calculate Distance Fallen",
+        "text": "Using the relationship between drag force and weight, calculate the distance the diamond falls before reaching 90% of its terminal velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,54 @@
+[
+    {
+        "id": "a56bd16newtonapps14d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Forces",
+        "text": "To find the ratio of the centripetal force to the child's weight, you need to calculate both forces separately. The centripetal force is given by the formula: $$F_c=\\frac{m v^2}{r}$$, where $$m$$ is the mass, v is the velocity, and $$r$$ is the radius. The weight is given by $$W=m g$$, where g is the acceleration due to gravity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps14d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps14d-h1"
+        ],
+        "title": "Calculate the Centripetal Force",
+        "text": "First, convert the rotational speed from revolutions per minute to meters per second. Use the formula: v=2*pi*r*(revolutions per second).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps14d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps14d-h1"
+        ],
+        "title": "Calculate the Weight",
+        "text": "The weight of the child can be calculated using the formula: $$W=m g$$, where $$m$$ is the mass of the child and g is the acceleration due to gravity (approximately $$9.8$$ m/s\u00b2).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps14d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.081$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps14d-h2",
+            "a56bd16newtonapps14d-h3"
+        ],
+        "title": "Find the Ratio",
+        "text": "Now, find the ratio of the centripetal force to the weight using the formula: $$Ratio=\\frac{F_c}{W}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a88c93efixedaxis20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Relationship",
+        "text": "To find the torque produced by the turbine, we need to understand the relationship between power, torque, and angular velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis20a-h1"
+        ],
+        "title": "Formula for Power",
+        "text": "The power output of a rotating object is given by the formula: Power $$=$$ Torque * Angular Velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis20a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis20a-h2"
+        ],
+        "title": "Converting Units",
+        "text": "The angular velocity is given in revolutions per minute $$\\frac{rev}{min}$$. Convert this to radians per second $$\\frac{rad}{s}$$ for use in the formula.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis20a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2\\pi\\times20}{60}$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis20a-h3"
+        ],
+        "title": "Calculate Angular Velocity",
+        "text": "Convert $$20$$ $$\\frac{rev}{min}$$ to $$\\frac{rad}{s}$$. Use the conversion: $$1$$ rev $$=$$ $$2\\pi$$ rad and $$1$$ min $$=$$ $$60$$ s.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis20a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{Power}{AngularVelocity}$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis20a-h4"
+        ],
+        "title": "Rearrange the Formula",
+        "text": "Rearrange the formula to solve for torque: Torque $$=$$ Power / Angular Velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis20a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2\\times{10}^6}{\\frac{2\\pi\\times20}{60}}$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis20a-h5"
+        ],
+        "title": "Calculate Torque",
+        "text": "Substitute the values into the formula: Power $$=$$ $$2.0$$ MW $$=$$ $$2\\times{10}^6$$ W, Angular Velocity $$=$$ $$\\frac{2\\pi\\times20}{60}$$ $$\\frac{rad}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

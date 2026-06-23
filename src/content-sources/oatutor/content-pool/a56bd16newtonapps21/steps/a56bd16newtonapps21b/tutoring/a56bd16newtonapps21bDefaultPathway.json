@@ -1,0 +1,116 @@
+[
+    {
+        "id": "a56bd16newtonapps21b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Forces",
+        "text": "When an airplane banks, the lift force is tilted. This tilt provides the centripetal force needed for the turn. The vertical component of the lift balances the weight of the airplane.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps21b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps21b-h1"
+        ],
+        "title": "Components of Lift",
+        "text": "The lift force can be broken into two components: vertical and horizontal. The vertical component is $$L cos\\left(\\theta\\right)$$, and the horizontal component is $$L sin\\left(\\theta\\right)$$, where L is the lift force and theta is the banking angle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps21b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps21b-h2"
+        ],
+        "title": "Centripetal Force Equation",
+        "text": "The horizontal component of the lift provides the centripetal force needed for the turn. Therefore, $$L sin\\left(\\theta\\right)=\\frac{m v^2}{r}$$, where $$m$$ is the mass, v is the velocity, and $$r$$ is the radius of the turn.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps21b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$r=\\frac{m v^2}{L sin\\left(\\theta\\right)}$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps21b-h3"
+        ],
+        "title": "Solving for Radius",
+        "text": "Rearrange the equation $$L sin\\left(\\theta\\right)=\\frac{m v^2}{r}$$ to solve for $$r$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps21b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps21b-h4"
+        ],
+        "title": "Finding Lift Force",
+        "text": "The lift force L can be found using the vertical component: $$L cos\\left(\\theta\\right)=m g$$, where g is the acceleration due to gravity $$(9.8$$ m/s**2).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps21b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$L=\\frac{m g}cos^$\\left(\\theta\\righ$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps21b-h5"
+        ],
+        "title": "Calculate Lift Force",
+        "text": "Use the equation $$L cos\\left(\\theta\\right)=m g$$ to find L.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps21b-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$r=\\frac{m v^2}{m g tan\\left(\\theta\\right)}$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps21b-h6"
+        ],
+        "title": "Substitute and Solve for Radius",
+        "text": "Substitute $$L=\\frac{m g}cos^$\\left(\\theta\\righ$$ into the equation for $$r$$ and solve.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps21b-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2545$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps21b-h7"
+        ],
+        "title": "Final Calculation",
+        "text": "Substitute the given values $$(m=2500$$ kg, $$v=120$$ $$\\frac{m}{s}$$, $$theta=30$$ degrees) into the equation $$r=\\frac{m v^2}{m g tan\\left(\\theta\\right)}$$ to find the radius.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,87 @@
+[
+    {
+        "id": "ace918bnlaws17b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The bird is perched at the middle of the telephone line, causing tension in the line. We need to calculate this tension when the angle theta is $$0.5$$ degrees.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws17b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws17b-h1"
+        ],
+        "title": "Forces Acting on the Bird",
+        "text": "The bird's weight acts downward, and the tension in the line acts along the line at an angle theta with the horizontal.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws17b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws17b-h2"
+        ],
+        "title": "Components of Tension",
+        "text": "The tension in the line has two components: a vertical component that balances the bird's weight and a horizontal component.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws17b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$T sin\\left(0.5\\right)=0.026\\times9.8$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws17b-h3"
+        ],
+        "title": "Calculate the Vertical Component of Tension",
+        "text": "The vertical component of tension $$T sin\\left(\\theta\\right)$$ must equal the weight of the bird. Use the formula: $$T sin\\left(\\theta\\right)=m g$$, where $$m$$ is the mass of the bird and g is the acceleration due to gravity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws17b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$T=\\frac{0.026\\times9.8}sin^$\\left(0.5\\righ$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws17b-h4"
+        ],
+        "title": "Solve for Tension",
+        "text": "Rearrange the equation to solve for T: $$T=\\frac{m g}sin^$\\left(\\theta\\righ$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws17b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$14.6$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws17b-h5"
+        ],
+        "title": "Calculate the Numerical Value of Tension",
+        "text": "Substitute the values into the equation to find the tension.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

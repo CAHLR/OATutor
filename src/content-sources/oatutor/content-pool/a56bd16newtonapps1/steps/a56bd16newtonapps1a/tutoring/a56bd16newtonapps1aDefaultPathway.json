@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a56bd16newtonapps1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Forces",
+        "text": "To find the tension in the ropes, consider the forces acting on the girl. The forces include the gravitational force, the horizontal force, and the tension in the ropes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps1a-h1"
+        ],
+        "title": "Components of Tension",
+        "text": "The tension in the ropes can be broken down into two components: one vertical and one horizontal. The vertical component balances the gravitational force, and the horizontal component balances the horizontal force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps1a-h2"
+        ],
+        "title": "Using Trigonometry",
+        "text": "Use trigonometric functions to relate the tension components to the angle of the ropes. The vertical component is $$T cos\\left(30\\right)$$ and the horizontal component is $$T sin\\left(30\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$T=\\frac{30\\times9.8}cos^$\\left(30\\righ$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps1a-h3"
+        ],
+        "title": "Calculate Vertical Component",
+        "text": "Calculate the vertical component of the tension using the equation: $$T cos\\left(30\\right)=m g$$, where $$m$$ is the mass of the girl and g is the acceleration due to gravity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps1a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$170$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps1a-h4"
+        ],
+        "title": "Calculate Tension",
+        "text": "Solve for T using the equation from the previous step.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

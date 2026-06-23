@@ -1,0 +1,116 @@
+[
+    {
+        "id": "aaf87e0equilibrium2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Young's Modulus",
+        "text": "Young's modulus is a measure of the stiffness of a material. It is defined as the ratio of stress to strain. In this problem, you will use Young's modulus to find the change in length of the pencil lead.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aaf87e0equilibrium2a-h1"
+        ],
+        "title": "Formula for Young's Modulus",
+        "text": "The formula for Young's modulus (E) is: $$E=\\frac{stress}{strain}$$. Stress is the force applied per unit area, and strain is the change in length divided by the original length.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aaf87e0equilibrium2a-h2"
+        ],
+        "title": "Calculate Stress",
+        "text": "Stress is calculated as force divided by area. Use the formula: $$stress=\\frac{force}{area}$$. The area of the lead can be found using the formula for the area of a circle: $$area=\\pi \\left(\\frac{diameter}{2}\\right)^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aaf87e0equilibrium2a-h3"
+        ],
+        "title": "Calculate Strain",
+        "text": "Strain is the change in length divided by the original length. Use the formula: $$strain=change$$ in $$\\frac{length}{original}$$ length.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium2a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.96E-07$$"
+        ],
+        "dependencies": [
+            "aaf87e0equilibrium2a-h3"
+        ],
+        "title": "Calculate the Area of the Lead",
+        "text": "Given the diameter of the lead is $$0.50$$ mm, calculate the area using the formula: $$area=\\pi \\left(\\frac{diameter}{2}\\right)^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium2a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2.04E+07"
+        ],
+        "dependencies": [
+            "aaf87e0equilibrium2a-h5"
+        ],
+        "title": "Calculate the Stress",
+        "text": "Using the force of $$4.0$$ N and the area calculated, find the stress using the formula: $$stress=\\frac{force}{area}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium2a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.04E-02$$"
+        ],
+        "dependencies": [
+            "aaf87e0equilibrium2a-h6"
+        ],
+        "title": "Calculate the Strain",
+        "text": "Using Young's modulus (1.0*10**9 N/m**2) and the stress calculated, find the strain using the formula: $$strain=\\frac{stress}{Young's}$$ modulus.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium2a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.22$$"
+        ],
+        "dependencies": [
+            "aaf87e0equilibrium2a-h7"
+        ],
+        "title": "Calculate the Change in Length",
+        "text": "Using the original length of $$60$$ mm and the strain calculated, find the change in length using the formula: change in $$length=strain original$$ length.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

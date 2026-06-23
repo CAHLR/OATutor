@@ -1,0 +1,87 @@
+[
+    {
+        "id": "abaea60linmom11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Elastic Collisions",
+        "text": "In an elastic collision, both momentum and kinetic energy are conserved. This means that the total kinetic energy before the collision is equal to the total kinetic energy after the collision.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom11a-h1"
+        ],
+        "title": "Using Conservation of Momentum",
+        "text": "The conservation of momentum can be expressed as: $$m1 v1_{initial}+m2 v2_{initial}=m1 v1_{final}+m2 v2_{final}$$. Here, m1 and m2 are the masses of the alpha particle and uranium nucleus, respectively, and v1 and v2 are their velocities.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom11a-h2"
+        ],
+        "title": "Using Conservation of Kinetic Energy",
+        "text": "The conservation of kinetic energy can be expressed as: $$0.5m1 {v1_{initial}}^2+0.5m2 {v2_{initial}}^2=0.5m1 {v1_{final}}^2+0.5m2 {v2_{final}}^2$$. Since the uranium nucleus is initially stationary, $$v2_{initial}=0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom11a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$v1_{final}=\\frac{m1-m2}{m1+m2} v1_{initial}$$ $$v2_{final}=\\frac{2m1}{m1+m2} v1_{initial}$$"
+        ],
+        "dependencies": [
+            "abaea60linmom11a-h3"
+        ],
+        "title": "Calculating the Final Velocities",
+        "text": "Using the conservation equations, solve for the final velocities of the alpha particle and the uranium nucleus.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom11a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$KE_{transferred}=0.5m2 \\left(\\frac{2m1}{m1+m2} v1_{initial}\\right)^2$$"
+        ],
+        "dependencies": [
+            "abaea60linmom11a-h4"
+        ],
+        "title": "Finding the Kinetic Energy Transferred",
+        "text": "Calculate the kinetic energy transferred to the uranium nucleus using the formula: $$KE_{transferred}=0.5m2 {v2_{final}}^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom11a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6.58$$"
+        ],
+        "dependencies": [
+            "abaea60linmom11a-h5"
+        ],
+        "title": "Calculating the Percent of Kinetic Energy Transferred",
+        "text": "The percent of kinetic energy transferred is given by: $$100\\frac{KE_{transferred}}{KE_{initial}}$$, where $$KE_{initial}$$ is the initial kinetic energy of the alpha particle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

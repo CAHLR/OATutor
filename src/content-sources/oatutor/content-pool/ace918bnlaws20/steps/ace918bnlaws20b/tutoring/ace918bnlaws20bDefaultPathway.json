@@ -1,0 +1,77 @@
+[
+    {
+        "id": "ace918bnlaws20b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the net force, we need to use the work-energy principle. The work done by the net force is equal to the change in kinetic energy of the car.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws20b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws20b-h1"
+        ],
+        "title": "Kinetic Energy Formula",
+        "text": "The initial kinetic energy of the car can be calculated using the formula: $$KE=\\frac{1}{2} m v^2$$, where $$m$$ is the mass and v is the velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws20b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws20b-h2"
+        ],
+        "title": "Convert Speed to $$\\frac{m}{s}$$",
+        "text": "The initial speed is given in $$\\frac{km}{h}$$. Convert it to $$\\frac{m}{s}$$ by multiplying by $$\\frac{5}{18}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws20b-h4",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws20b-h3"
+        ],
+        "title": "Calculate Initial Kinetic Energy",
+        "text": "Substitute the values into the kinetic energy formula: $$KE=1050\\frac{1}{2} \\left(\\frac{40\\times5}{18}\\right)^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws20b-h5",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws20b-h4"
+        ],
+        "title": "Work Done by the Net Force",
+        "text": "The work done by the net force is equal to the initial kinetic energy, which is also equal to the force times the stopping distance: $$Work=Force x$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws20b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2592$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws20b-h5"
+        ],
+        "title": "Calculate the Net Force",
+        "text": "Rearrange the work formula to find the force: $$Force=\\frac{Work}{x}$$. Use the initial kinetic energy as the work done.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

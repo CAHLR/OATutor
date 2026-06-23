@@ -1,0 +1,53 @@
+[
+    {
+        "id": "abaea60linmom18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Geometry of the Cone",
+        "text": "To find the center of mass of the cone, we need to consider its geometry. The cone has a circular base with radius R and a height $$h$$. The center of mass will be along the axis of symmetry, which is the $$z-axis$$ in this case.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom18a-h1"
+        ],
+        "title": "Using Symmetry",
+        "text": "Due to the symmetry of the cone, the center of mass will lie along the $$z-axis$$. This means we only need to find the $$z-coordinate$$ of the center of mass.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom18a-h2"
+        ],
+        "title": "Setting Up the Integral",
+        "text": "To find the $$z-coordinate$$ of the center of mass, we can use the formula for the center of mass of a solid of revolution. The formula involves integrating over the volume of the cone.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom18a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{h}{4}$$"
+        ],
+        "dependencies": [
+            "abaea60linmom18a-h3"
+        ],
+        "title": "Calculating the Center of Mass",
+        "text": "The $$z-coordinate$$ of the center of mass is given by the integral formula: (1/M)*int{z*dV}, where dV is the differential volume element. For a cone, dV can be expressed in terms of the radius and height.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

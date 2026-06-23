@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a88c93efixedaxis22b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Power",
+        "text": "Power is the rate at which work is done or energy is transferred. In rotational motion, power can be calculated using the formula: Power $$=$$ Torque * Angular Velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis22b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis22b-h1"
+        ],
+        "title": "Angular Velocity Conversion",
+        "text": "The angular velocity is given in revolutions per minute $$\\frac{rev}{min}$$. Convert this to radians per second $$\\frac{rad}{s}$$ using the conversion factor: $$1$$ rev $$=$$ $$2\\pi$$ rad and $$1$$ min $$=$$ $$60$$ s.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis22b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$52.36$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis22b-h2"
+        ],
+        "title": "Calculate Angular Velocity at $$3.0$$ s",
+        "text": "First, find the angular velocity at $$3.0$$ seconds. Use the formula: Angular Velocity $$=$$ Initial Angular Velocity + (Angular Acceleration * Time).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis22b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis22b-h3"
+        ],
+        "title": "Calculate Angular Acceleration",
+        "text": "Angular acceleration can be found using the formula: Angular Acceleration $$=$$ (Final Angular Velocity - Initial Angular Velocity) / Time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis22b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$105000$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis22b-h4"
+        ],
+        "title": "Calculate Power at $$3.0$$ s",
+        "text": "Now, calculate the power at $$3.0$$ seconds using the formula: Power $$=$$ Torque * Angular Velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

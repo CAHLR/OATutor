@@ -1,0 +1,100 @@
+[
+    {
+        "id": "a16844emotion2d22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Components of Acceleration",
+        "text": "To find the total acceleration of the car, you need to consider both the tangential and centripetal components of acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d22a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d22a-h1"
+        ],
+        "title": "Tangential Acceleration",
+        "text": "The tangential acceleration is the rate at which the speed of the car is decreasing. Convert the rate from km/h\u00b2 to m/s\u00b2.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d22a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.694$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d22a-h2"
+        ],
+        "title": "Calculate Tangential Acceleration",
+        "text": "Convert $$9.0$$ km/h\u00b2 to m/s\u00b2.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d22a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d22a-h1"
+        ],
+        "title": "Centripetal Acceleration",
+        "text": "The centripetal acceleration depends on the speed of the car and the radius of the curve. Use the formula for centripetal acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d22a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.667$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d22a-h4"
+        ],
+        "title": "Calculate Centripetal Acceleration",
+        "text": "Use the formula a_c=v\u00b2/r, where v is the speed in $$\\frac{m}{s}$$ and $$r$$ is the radius in meters. Convert $$60.0$$ $$\\frac{km}{h}$$ to $$\\frac{m}{s}$$ first.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d22a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d22a-h3",
+            "a16844emotion2d22a-h5"
+        ],
+        "title": "Total Acceleration",
+        "text": "The total acceleration is the vector sum of the tangential and centripetal accelerations. Use the Pythagorean theorem to find the magnitude.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d22a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3.11$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d22a-h6"
+        ],
+        "title": "Calculate Total Acceleration",
+        "text": "Use the formula a=sqrt(a_t\u00b2+a_c\u00b2), where $$a_t$$ is the tangential acceleration and $$a_c$$ is the centripetal acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,104 @@
+[
+    {
+        "id": "aaf87e0equilibrium5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Shear Deformation",
+        "text": "Shear deformation occurs when a force is applied parallel to the surface of a material, causing it to change shape. In this problem, the wind applies a force at the top of the flagpole, causing it to bend sideways.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aaf87e0equilibrium5a-h1"
+        ],
+        "title": "Shear Modulus and Deformation",
+        "text": "The shear modulus (G) is a measure of a material's ability to resist shear deformation. It is defined as the ratio of shear stress to shear strain. In this problem, the shear modulus is given as $$2.5\\times{10}^{10}$$ N/m\u00b2.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aaf87e0equilibrium5a-h2"
+        ],
+        "title": "Calculating Shear Stress",
+        "text": "Shear stress (\u03c4) is calculated using the formula $$\u03c4=\\frac{F}{A}$$, where F is the force applied and A is the cross-sectional area. For a cylinder, $$A=\\pi \\left(\\frac{d}{2}\\right)^2$$, where $$d$$ is the diameter.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$A=\\pi \\left(\\frac{0.04}{2}\\right)^2$$"
+        ],
+        "dependencies": [
+            "aaf87e0equilibrium5a-h3"
+        ],
+        "title": "Calculate the Cross-Sectional Area",
+        "text": "Given the diameter of the solid cylinder is $$4.00$$ cm, calculate the cross-sectional area.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium5a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\u03c4=\\frac{900}{\\pi \\left(\\frac{0.04}{2}\\right)^2}$$"
+        ],
+        "dependencies": [
+            "aaf87e0equilibrium5a-h4"
+        ],
+        "title": "Determine the Shear Stress",
+        "text": "Using the force of $$900.0$$ N and the cross-sectional area calculated, determine the shear stress.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium5a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\u03b3=\\frac{\\frac{900}{\\pi \\left(\\frac{0.04}{2}\\right)^2}}{2.5\\times{10}^{10}}$$"
+        ],
+        "dependencies": [
+            "aaf87e0equilibrium5a-h5"
+        ],
+        "title": "Calculate Shear Strain",
+        "text": "Shear strain (\u03b3) is calculated using the formula $$\u03b3=\\frac{\\tau}{G}$$, where \u03c4 is the shear stress and G is the shear modulus.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium5a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\u0394x=20\\frac{\\frac{900}{\\pi \\left(\\frac{0.04}{2}\\right)^2}}{2.5\\times{10}^{10}}$$"
+        ],
+        "dependencies": [
+            "aaf87e0equilibrium5a-h6"
+        ],
+        "title": "Determine the Sideways Flex",
+        "text": "The sideways flex (\u0394x) at the top of the pole can be calculated using the formula $$\u0394x=\\gamma L$$, where L is the length of the pole.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

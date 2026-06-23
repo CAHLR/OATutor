@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a16844emotion2d17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Circular Motion",
+        "text": "In circular motion, even if the speed is constant, the direction of the velocity changes, which means there is acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d17a-h1"
+        ],
+        "title": "Formula for Centripetal Acceleration",
+        "text": "The formula for centripetal acceleration is given by \\(a_c=v**2/r\\), where \\(v\\) is the speed and \\(r\\) is the radius of the circle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d17a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$40$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d17a-h2"
+        ],
+        "title": "Calculate the Acceleration",
+        "text": "Using the formula \\(a_c=v**2/r\\), substitute $$\\(v=20\\)$$ $$\\frac{m}{s}$$ and $$\\(r=10\\)$$ $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

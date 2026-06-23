@@ -1,0 +1,133 @@
+[
+    {
+        "id": "abaea60linmom7d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the average force during the impact, we need to use the concept of impulse and momentum. Impulse is the change in momentum, and it is also equal to the average force multiplied by the time duration of the impact.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom7d-h2",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom7d-h1"
+        ],
+        "title": "Calculate the Change in Momentum",
+        "text": "The change in momentum is the difference between the final momentum and the initial momentum of the bullet. Since the bullet is embedded in the block, they move together after the impact.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom7d-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.2\\times400$$"
+        ],
+        "dependencies": [
+            "abaea60linmom7d-h2"
+        ],
+        "title": "Initial Momentum of the Bullet",
+        "text": "Calculate the initial momentum of the bullet using the formula: momentum $$=$$ mass * velocity. Remember to convert the mass of the bullet from grams to kilograms.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom7d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(0.2+1.5\\right) v_f$$"
+        ],
+        "dependencies": [
+            "abaea60linmom7d-h3"
+        ],
+        "title": "Final Momentum of the System",
+        "text": "After the impact, the bullet and block move together. Calculate the final momentum using the combined mass and the final velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom7d-h5",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom7d-h4"
+        ],
+        "title": "Impulse-Momentum Theorem",
+        "text": "The impulse-momentum theorem states that the impulse on an object is equal to the change in its momentum. Impulse can also be calculated as the average force times the time duration of the impact.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom7d-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{0.2\\times400-\\left(0.2+1.5\\right) v_f}{0.003}$$"
+        ],
+        "dependencies": [
+            "abaea60linmom7d-h5"
+        ],
+        "title": "Calculate the Average Force",
+        "text": "Use the formula: average force $$=$$ change in momentum / time duration. Substitute the values you have calculated for change in momentum and the given time duration of $$3$$ ms (convert to seconds).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom7d-h7",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom7d-h6"
+        ],
+        "title": "Final Velocity Calculation",
+        "text": "To find the final velocity, use the conservation of momentum principle: initial momentum $$=$$ final momentum. Solve for the final velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom7d-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$v_f=\\frac{0.2\\times400}{0.2+1.5}$$"
+        ],
+        "dependencies": [
+            "abaea60linmom7d-h7"
+        ],
+        "title": "Final Velocity Expression",
+        "text": "Using the conservation of momentum, set the initial momentum equal to the final momentum and solve for the final velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom7d-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{0.2\\times400-\\frac{\\left(0.2+1.5\\right) 0.2\\times400}{0.2+1.5}}{0.003}$$"
+        ],
+        "dependencies": [
+            "abaea60linmom7d-h8"
+        ],
+        "title": "Substitute Final Velocity",
+        "text": "Substitute the expression for the final velocity into the average force equation to find the numerical value of the average force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,128 @@
+[
+    {
+        "id": "ace918bnlaws30b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the force, we need to determine the change in velocity and use the mass of the drone.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws30b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws30b-h1"
+        ],
+        "title": "Calculate Change in Velocity",
+        "text": "The initial velocity is $$3.00i$$ $$\\frac{m}{s}$$ and the final velocity is $$9i+4j$$ $$\\frac{m}{s}$$. Calculate the change in velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws30b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6i+4j$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws30b-h2"
+        ],
+        "title": "Change in Velocity Calculation",
+        "text": "Change in velocity $$=$$ final velocity - initial velocity. Calculate this value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws30b-h4",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws30b-h3"
+        ],
+        "title": "Use Newton's Second Law",
+        "text": "Newton's second law states that force equals mass times acceleration. We need to find the acceleration first.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws30b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.6i+0.4j$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws30b-h4"
+        ],
+        "title": "Calculate Acceleration",
+        "text": "Acceleration $$=$$ change in velocity / time. Use the change in velocity you calculated and the time given.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws30b-h6",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws30b-h5"
+        ],
+        "title": "Calculate the Force",
+        "text": "Now that you have the acceleration, use the mass of the drone to find the force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws30b-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.9i+0.6j$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws30b-h6"
+        ],
+        "title": "Force Calculation",
+        "text": "Force $$=$$ mass * acceleration. Use the mass of $$1.50$$ kg and the acceleration you calculated.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws30b-h8",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws30b-h7"
+        ],
+        "title": "Find the Magnitude of the Force",
+        "text": "To find the magnitude of the force, use the Pythagorean theorem on the force components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws30b-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.08$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws30b-h8"
+        ],
+        "title": "Magnitude Calculation",
+        "text": "Magnitude $$=$$ $$\\sqrt{{0.9}^2+{0.6}^2}$$. Calculate this value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

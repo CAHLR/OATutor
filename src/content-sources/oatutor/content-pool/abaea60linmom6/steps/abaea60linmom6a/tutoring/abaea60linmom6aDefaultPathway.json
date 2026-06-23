@@ -1,0 +1,145 @@
+[
+    {
+        "id": "abaea60linmom6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Momentum Conservation",
+        "text": "In a closed system, the total momentum before an event is equal to the total momentum after the event. This principle can be used to find the final velocity of the coupled train cars.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom6a-h1"
+        ],
+        "title": "Calculate Initial Momentum",
+        "text": "Calculate the initial momentum of each train car. Use the formula: momentum $$=$$ mass * velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom6a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$45000$$"
+        ],
+        "dependencies": [
+            "abaea60linmom6a-h2"
+        ],
+        "title": "Initial Momentum of First Car",
+        "text": "What is the initial momentum of the first train car?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom6a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-13200$$"
+        ],
+        "dependencies": [
+            "abaea60linmom6a-h2"
+        ],
+        "title": "Initial Momentum of Second Car",
+        "text": "What is the initial momentum of the second train car?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom6a-h5",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom6a-h4"
+        ],
+        "title": "Total Initial Momentum",
+        "text": "Add the initial momenta of both train cars to find the total initial momentum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom6a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$31800$$"
+        ],
+        "dependencies": [
+            "abaea60linmom6a-h5"
+        ],
+        "title": "Calculate Total Initial Momentum",
+        "text": "What is the total initial momentum of the system?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom6a-h7",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom6a-h6"
+        ],
+        "title": "Final Momentum Equals Initial Momentum",
+        "text": "Since momentum is conserved, the total final momentum is equal to the total initial momentum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom6a-h8",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom6a-h7"
+        ],
+        "title": "Calculate Final Velocity",
+        "text": "Use the formula: final velocity $$=$$ total momentum / total mass. The total mass is the sum of the masses of both train cars.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom6a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$260000$$"
+        ],
+        "dependencies": [
+            "abaea60linmom6a-h8"
+        ],
+        "title": "Total Mass of Coupled Cars",
+        "text": "What is the total mass of the coupled train cars?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom6a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.122$$"
+        ],
+        "dependencies": [
+            "abaea60linmom6a-h9"
+        ],
+        "title": "Final Velocity Calculation",
+        "text": "Calculate the final velocity using the total momentum and total mass.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

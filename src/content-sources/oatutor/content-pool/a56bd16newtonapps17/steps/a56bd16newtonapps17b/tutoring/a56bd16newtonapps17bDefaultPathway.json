@@ -1,0 +1,89 @@
+[
+    {
+        "id": "a56bd16newtonapps17b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the minimum coefficient of friction needed, we need to consider the forces acting on the car as it takes the banked curve.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps17b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps17b-h1"
+        ],
+        "title": "Forces on the Car",
+        "text": "The forces acting on the car include gravitational force, normal force, and frictional force. The frictional force is what prevents the car from sliding inward.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps17b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps17b-h2"
+        ],
+        "title": "Components of Forces",
+        "text": "Break down the forces into components parallel and perpendicular to the banked surface. The frictional force will have a component that acts parallel to the surface.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps17b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps17b-h3"
+        ],
+        "title": "Using Newton's Second Law",
+        "text": "Apply Newton's second law to the components of the forces. The net force in the direction of the banked surface should equal the centripetal force needed to keep the car moving in a circle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps17b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps17b-h4"
+        ],
+        "title": "Centripetal Force Equation",
+        "text": "The centripetal force needed is given by the equation: $$F_c=\\frac{{mv}^2}{r}$$, where $$m$$ is the mass of the car, v is the velocity, and $$r$$ is the radius of the curve.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps17b-h6",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps17b-h5"
+        ],
+        "title": "Solving for Friction",
+        "text": "Use the equations for the forces to solve for the minimum coefficient of friction, \\( \\mu \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps17b-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.234$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps17b-h6"
+        ],
+        "title": "Calculate the Minimum Coefficient of Friction",
+        "text": "Given the velocity of $$20.0$$ $$\\frac{km}{h}$$, convert it to meters per second and use the centripetal force equation to find \\( \\mu \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

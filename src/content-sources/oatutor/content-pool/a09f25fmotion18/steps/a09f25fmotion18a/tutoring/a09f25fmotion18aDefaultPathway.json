@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a09f25fmotion18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the vertical speed of the kangaroo when it leaves the ground, we need to consider the energy conservation principle. The potential energy at the highest point is equal to the kinetic energy at the start.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion18a-h1"
+        ],
+        "title": "Potential Energy at the Highest Point",
+        "text": "At the highest point of the jump, the kangaroo's speed is zero, and all its energy is potential energy. The potential energy can be calculated using the formula: potential energy $$=$$ $$m g h$$, where $$m$$ is mass, g is the acceleration due to gravity $$(9.8$$ m/s\u00b2), and $$h$$ is the height $$(2.50$$ m).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion18a-h2"
+        ],
+        "title": "Kinetic Energy at the Start",
+        "text": "When the kangaroo leaves the ground, all its energy is kinetic energy. The kinetic energy can be calculated using the formula: kinetic energy $$=$$ $$0.5m v^2$$, where $$m$$ is mass and v is the vertical speed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion18a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion18a-h3"
+        ],
+        "title": "Equating Energies",
+        "text": "Since energy is conserved, the potential energy at the highest point is equal to the kinetic energy at the start. Set the potential energy equal to the kinetic energy and solve for v.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion18a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$v=\\sqrt{2g h}$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion18a-h4"
+        ],
+        "title": "Solving for Vertical Speed",
+        "text": "Use the equation $$m g h=0.5m v^2$$. Cancel out $$m$$ from both sides and solve for v.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion18a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion18a-h5"
+        ],
+        "title": "Calculate the Vertical Speed",
+        "text": "Substitute the values of $$g=9.8$$ m/s\u00b2 and $$h=2.50$$ $$m$$ into the equation $$v=\\sqrt{2g h}$$ to find the vertical speed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

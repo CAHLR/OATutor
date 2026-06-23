@@ -1,0 +1,99 @@
+[
+    {
+        "id": "ace918bnlaws29b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Forces",
+        "text": "To find the mass of the object, we need to first determine the net force acting on it. The net force is the vector sum of all the forces acting on the object.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws29b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws29b-h1"
+        ],
+        "title": "Calculate the Net Force",
+        "text": "Add the forces vectorially: \\(\\vec{F}_{net}=\\vec{F}_1+\\vec{F}_2+\\vec{F}_3\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws29b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "5.00\\hat{i}+3.00\\hat{j}"
+        ],
+        "dependencies": [
+            "ace918bnlaws29b-h2"
+        ],
+        "title": "Calculate \\(\\vec{F}_{net}\\)",
+        "text": "Calculate \\(\\vec{F}_{net}\\) by adding the components of the forces: \\((-3.00+6.00+2.00)\\hat{i}+(2.00-4.00+5.00)\\hat{j}\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws29b-h4",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws29b-h3"
+        ],
+        "title": "Magnitude of the Net Force",
+        "text": "Find the magnitude of the net force using the formula: \\(\\sqrt{(F_{net_x})**2+(F_{net_y})**2}\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws29b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5.83$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws29b-h4"
+        ],
+        "title": "Calculate Magnitude of \\(\\vec{F}_{net}\\)",
+        "text": "Calculate the magnitude: \\(\\sqrt{(5.00)**2+(3.00)**2}\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws29b-h6",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws29b-h5"
+        ],
+        "title": "Using Newton's Second Law",
+        "text": "Use Newton's second law: \\(F_{net}=m*a\\), where \\(F_{net}\\) is the net force, \\(m\\) is the mass, and \\(a\\) is the acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws29b-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.38$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws29b-h6"
+        ],
+        "title": "Solve for Mass",
+        "text": "Rearrange the formula to solve for mass: \\(m=F_{net}/a\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a56bd16newtonapps22b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Terminal Velocity",
+        "text": "Terminal velocity is the constant speed that a freely falling object eventually reaches when the resistance of the medium prevents further acceleration. It can be calculated using the formula: $$v=\\sqrt{\\frac{2m g}{C_d p A}}$$, where $$m$$ is mass, g is acceleration due to gravity, $$C_d$$ is the drag coefficient, $$p$$ is the density of the fluid, and A is the cross-sectional area.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps22b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps22b-h1"
+        ],
+        "title": "Substitute the Known Values",
+        "text": "Substitute the given values into the formula: $$m=80.0$$ kg, $$g=9.81$$ $$\\frac{m}{s^2}$$, $$C_d=0.70$$, $$p=1.21$$ $$\\frac{kg}{m^3}$$, and $$A=0.140$$ $$m^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps22b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$56.5$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps22b-h2"
+        ],
+        "title": "Calculate Terminal Velocity",
+        "text": "Calculate the terminal velocity using the formula: $$v=\\sqrt{\\frac{2\\times80\\times9.81}{0.7\\times1.21\\times0.14}}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps22b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps22b-h3"
+        ],
+        "title": "Convert to Kilometers per Hour",
+        "text": "To convert the velocity from meters per second to kilometers per hour, multiply by $$3.6$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps22b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$203.4$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps22b-h4"
+        ],
+        "title": "Final Conversion",
+        "text": "Convert the calculated velocity to kilometers per hour: $$56.5\\times3.6$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

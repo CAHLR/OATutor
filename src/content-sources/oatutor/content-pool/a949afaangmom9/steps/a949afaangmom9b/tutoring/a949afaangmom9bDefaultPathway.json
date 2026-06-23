@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a949afaangmom9b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Torque",
+        "text": "Torque is a measure of the rotational force acting on an object. It is calculated as the cross product of the position vector and the force vector.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom9b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom9b-h1"
+        ],
+        "title": "Cross Product Formula",
+        "text": "The cross product of two vectors \\( \\vec{A} \\) and \\( \\vec{B} \\) is given by \\( \\vec{A} \\times \\vec{B} $$=$$ (A_yB_z - A_zB_y)\\hat{i} + (A_zB_x - A_xB_z)\\hat{j} + (A_xB_y - A_yB_x)\\hat{k} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom9b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "10\\hat{k}"
+        ],
+        "dependencies": [
+            "a949afaangmom9b-h2"
+        ],
+        "title": "Calculate the Cross Product",
+        "text": "Given \\( $$\\vec{r}=2.0\\hat{i}-3.0\\hat{j$$} \\) and \\( $$\\vec{F}=5.0\\hat{j$$} \\), calculate \\( \\vec{r} \\times \\vec{F} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom9b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom9b-h3"
+        ],
+        "title": "Components of the Cross Product",
+        "text": "For the vectors \\( $$\\vec{r}=2.0\\hat{i}-3.0\\hat{j$$} \\) and \\( $$\\vec{F}=5.0\\hat{j$$} \\), the cross product \\( \\vec{r} \\times \\vec{F} \\) only has a \\( \\hat{k} \\) component because the \\( \\hat{i} \\) and \\( \\hat{j} \\) components cancel out.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom9b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "10\\hat{k}"
+        ],
+        "dependencies": [
+            "a949afaangmom9b-h4"
+        ],
+        "title": "Final Calculation",
+        "text": "Calculate the \\( \\hat{k} \\) component: \\( $$(2.0)(5.0)$$ - $$(0)(-3.0)$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

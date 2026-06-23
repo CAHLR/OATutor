@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a56bd16newtonapps18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the speed for which the tracks are designed, we need to consider the forces acting on the train as it moves along the banked curve.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps18a-h1"
+        ],
+        "title": "Forces on the Train",
+        "text": "The forces acting on the train include gravitational force, normal force, and the centripetal force required to keep the train moving in a circle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps18a-h2"
+        ],
+        "title": "Centripetal Force Equation",
+        "text": "The centripetal force needed to keep the train on the track is provided by the horizontal component of the normal force. Use the equation: centripetal force $$=$$ $$\\frac{m v^2}{r}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps18a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps18a-h3"
+        ],
+        "title": "Components of Forces",
+        "text": "The normal force can be broken into two components: one perpendicular to the track and one parallel to the track. The parallel component provides the centripetal force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps18a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps18a-h4"
+        ],
+        "title": "Using Trigonometry",
+        "text": "Use trigonometry to relate the angle of the bank, the gravitational force, and the normal force. The tangent of the angle is equal to the centripetal force divided by the gravitational force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps18a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20.7$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps18a-h5"
+        ],
+        "title": "Calculate the Speed",
+        "text": "Use the equation tan(theta) $$=$$ $$\\frac{v^2}{r g}$$ to solve for v, where theta is the banking angle, $$r$$ is the radius, and g is the acceleration due to gravity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

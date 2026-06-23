@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a56bd16newtonapps20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Forces",
+        "text": "To find the minimum speed, consider the forces acting on the cyclist. The centripetal force required to keep the cyclist moving in a circle is provided by the frictional force. Can you identify these forces?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps20a-h1"
+        ],
+        "title": "Centripetal Force Equation",
+        "text": "The centripetal force needed to keep the cyclist moving in a circle is given by the equation: $$F_c=\\frac{{mv}^2}{r}$$, where $$m$$ is the mass, v is the velocity, and $$r$$ is the radius of the circle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps20a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps20a-h2"
+        ],
+        "title": "Frictional Force Equation",
+        "text": "The frictional force that provides the centripetal force is given by: $$F_f=\u03bcN$$, where \u03bc is the coefficient of static friction and N is the normal force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps20a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps20a-h3"
+        ],
+        "title": "Balancing the Forces",
+        "text": "For the cyclist to stay on the wall, the frictional force must equal the centripetal force. Set $$F_c$$ equal to $$F_f$$ and solve for v.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps20a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$v=\\sqrt{\u03bc g r}$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps20a-h4"
+        ],
+        "title": "Solving for Velocity",
+        "text": "Using the equations $$F_c=\\frac{{mv}^2}{r}$$ and $$F_f=\u03bcN$$, and knowing that $$N=mg$$ (where g is the acceleration due to gravity), solve for v.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps20a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$13.2$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps20a-h5"
+        ],
+        "title": "Calculate the Minimum Speed",
+        "text": "Substitute the given values into the equation $$v=\\sqrt{\u03bc g r}$$ to find the minimum speed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

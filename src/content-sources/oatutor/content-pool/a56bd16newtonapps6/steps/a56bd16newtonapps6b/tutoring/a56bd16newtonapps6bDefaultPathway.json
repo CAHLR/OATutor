@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a56bd16newtonapps6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Constant Velocity",
+        "text": "When an object moves at a constant velocity, what can we say about the net force acting on it?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps6b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps6b-h1"
+        ],
+        "title": "Net Force at Constant Velocity",
+        "text": "If an object is moving at a constant velocity, the net force acting on it is zero. This means the upward force (tension) must balance the downward force (gravity).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps6b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps6b-h2"
+        ],
+        "title": "Calculating Gravitational Force",
+        "text": "The gravitational force acting on the elevator can be calculated using the formula: $$F_{gravity}=m g$$, where $$m$$ is the mass and g is the acceleration due to gravity $$\\frac{9.8m}{s^2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps6b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$16660$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps6b-h3"
+        ],
+        "title": "Calculate Gravitational Force",
+        "text": "Calculate the gravitational force acting on the elevator using the formula $$F_{gravity}=m g$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps6b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps6b-h4"
+        ],
+        "title": "Tension Equals Gravitational Force",
+        "text": "Since the elevator is moving at a constant velocity, the tension in the cable must equal the gravitational force acting on the elevator.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

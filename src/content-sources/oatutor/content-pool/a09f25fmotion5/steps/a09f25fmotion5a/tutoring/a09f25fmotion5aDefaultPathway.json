@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a09f25fmotion5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Acceleration",
+        "text": "Acceleration is the rate of change of velocity over time. It can be calculated using the formula: acceleration $$=$$ (final velocity - initial velocity) / time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion5a-h1"
+        ],
+        "title": "Identify Known Values",
+        "text": "From the problem, we know the initial velocity is $$0$$ $$\\frac{m}{s}$$ (since the cheetah starts from rest), the final velocity is $$30.0$$ $$\\frac{m}{s}$$, and the time taken is $$7.00$$ s.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion5a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4.29$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion5a-h2"
+        ],
+        "title": "Calculate the Acceleration",
+        "text": "Use the formula: acceleration $$=$$ (final velocity - initial velocity) / time. Substitute the known values: acceleration $$=$$ $$\\frac{30-0}{7}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

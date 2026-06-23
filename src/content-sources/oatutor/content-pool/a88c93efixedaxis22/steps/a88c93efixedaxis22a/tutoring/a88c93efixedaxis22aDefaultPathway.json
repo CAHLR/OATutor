@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a88c93efixedaxis22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Moment of Inertia",
+        "text": "The moment of inertia is a measure of an object's resistance to changes in its rotation. It depends on the mass distribution of the object.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis22a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis22a-h1"
+        ],
+        "title": "Relating Torque and Angular Acceleration",
+        "text": "The torque applied to an object is related to its moment of inertia and angular acceleration by the equation: torque $$=$$ moment of inertia * angular acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis22a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis22a-h2"
+        ],
+        "title": "Finding Angular Acceleration",
+        "text": "Angular acceleration can be found using the formula: angular acceleration $$=$$ (final angular velocity - initial angular velocity) / time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis22a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10.47$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis22a-h3"
+        ],
+        "title": "Calculate Angular Acceleration",
+        "text": "Given that the initial angular velocity is $$0$$ and the final angular velocity is $$1000$$ $$\\frac{rev}{min}$$, convert this to radians per second and calculate the angular acceleration over $$6$$ seconds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis22a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$115$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis22a-h4"
+        ],
+        "title": "Calculate Moment of Inertia",
+        "text": "Using the torque and the angular acceleration, calculate the moment of inertia using the formula: moment of inertia $$=$$ torque / angular acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a56bd16newtonapps14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Centripetal Force",
+        "text": "Centripetal force is the force that keeps an object moving in a circular path. It acts towards the center of the circle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps14a-h1"
+        ],
+        "title": "Formula for Centripetal Force",
+        "text": "The formula for centripetal force \\(F_c\\) is given by \\(F_c=m*v**2/r\\), where \\(m\\) is the mass, \\(v\\) is the velocity, and \\(r\\) is the radius.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps14a-h2"
+        ],
+        "title": "Convert Revolutions per Minute to Meters per Second",
+        "text": "To find the velocity \\(v\\), convert the angular speed from revolutions per minute to meters per second. Use the formula \\(v=2*pi*r*(revolutions/minute)/60\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps14a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5.23598776$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps14a-h3"
+        ],
+        "title": "Calculate the Velocity",
+        "text": "Given the radius $$\\(r=1.25\\)$$ $$m$$ and the angular speed \\(40\\) $$\\frac{rev}{min}$$, calculate the velocity \\(v\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps14a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$483$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps14a-h4"
+        ],
+        "title": "Calculate the Centripetal Force",
+        "text": "Now that you have the velocity, use the formula \\(F_c=m*v**2/r\\) to calculate the centripetal force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

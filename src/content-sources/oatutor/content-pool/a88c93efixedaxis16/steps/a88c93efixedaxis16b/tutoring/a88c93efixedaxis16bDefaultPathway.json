@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a88c93efixedaxis16b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Torque",
+        "text": "To find the angular acceleration, we first need to calculate the torque exerted by the force. Torque (\u03c4) is given by the formula: $$\u03c4=F R$$, where F is the force applied and R is the radius of the grindstone.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis16b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis16b-h1"
+        ],
+        "title": "Moment of Inertia for a Solid Disk",
+        "text": "The moment of inertia (I) for a solid disk is calculated using the formula: $$I=\\frac{1}{2} M R^2$$, where M is the mass and R is the radius of the disk.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis16b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis16b-h2"
+        ],
+        "title": "Relating Torque and Angular Acceleration",
+        "text": "The angular acceleration (\\alpha) can be found using the relation: \u03c4=I*\\alpha, where \u03c4 is the torque and I is the moment of inertia. Rearrange this formula to solve for \\alpha.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis16b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$50.4$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis16b-h1"
+        ],
+        "title": "Calculate Torque",
+        "text": "Using the formula $$\u03c4=F R$$, calculate the torque exerted by the force of $$180$$ N on the grindstone with a radius of $$0.280$$ $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis16b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.94$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis16b-h2"
+        ],
+        "title": "Calculate Moment of Inertia",
+        "text": "Using the formula $$I=\\frac{1}{2} M R^2$$, calculate the moment of inertia of the grindstone with a mass of $$75.0$$ kg and a radius of $$0.280$$ $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis16b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$17.1$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis16b-h3"
+        ],
+        "title": "Calculate Angular Acceleration",
+        "text": "Using the formula $$\\alpha=\\frac{\\tau}{I}$$, calculate the angular acceleration of the grindstone.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

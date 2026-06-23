@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ace918bnlaws22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Spring Stretch",
+        "text": "The stretch of the spring is proportional to the weight it supports. This means that the more nails in the box, the more the spring stretches.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws22a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws22a-h1"
+        ],
+        "title": "Initial and Final Stretch",
+        "text": "At the beginning of the day, the spring stretches $$50$$ cm. At the end of the day, it stretches $$30$$ cm. This change indicates the number of nails used.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws22a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws22a-h2"
+        ],
+        "title": "Calculate the Fraction of Nails Used",
+        "text": "To find the fraction of nails used, calculate the difference in stretch and divide by the initial stretch.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws22a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws22a-h3"
+        ],
+        "title": "Calculate the Difference in Stretch",
+        "text": "What is the difference in the spring stretch from the beginning to the end of the day?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws22a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.4$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws22a-h4"
+        ],
+        "title": "Calculate the Fraction",
+        "text": "Divide the difference in stretch by the initial stretch to find the fraction of nails used.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

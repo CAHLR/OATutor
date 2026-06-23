@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a88c93efixedaxis3b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Acceleration",
+        "text": "Angular acceleration is the rate of change of angular velocity with respect to time. It is given by the derivative of angular velocity with respect to time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis3b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis3b-h1"
+        ],
+        "title": "Derivative of Angular Velocity",
+        "text": "The angular velocity is given by $$omega=25t$$. To find the angular acceleration, take the derivative of omega with respect to $$t$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis3b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$25$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis3b-h2"
+        ],
+        "title": "Calculate the Derivative",
+        "text": "What is the derivative of $$omega=25t$$ with respect to $$t$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis3b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis3b-h3"
+        ],
+        "title": "Constant Angular Acceleration",
+        "text": "Since the derivative of $$omega=25t$$ is a constant, the angular acceleration is constant over time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

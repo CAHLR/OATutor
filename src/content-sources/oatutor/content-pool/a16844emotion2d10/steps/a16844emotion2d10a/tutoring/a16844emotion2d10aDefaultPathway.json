@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a16844emotion2d10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The projectile is launched at an angle of $$30$$ degrees and lands $$20$$ seconds later at the same height. We need to find the initial speed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d10a-h1"
+        ],
+        "title": "Breaking Down the Motion",
+        "text": "The motion can be broken down into horizontal and vertical components. Use the angle to find these components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d10a-h2"
+        ],
+        "title": "Using Trigonometry",
+        "text": "The horizontal component of velocity is $$v cos\\left(30\\right)$$ and the vertical component is $$v sin\\left(30\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d10a-h3"
+        ],
+        "title": "Time of Flight",
+        "text": "The time of flight for a projectile is given by the formula: $$t=\\frac{2v sin\\left(\\theta\\right)}{g}$$, where g is the acceleration due to gravity $$(9.8$$ m/s\u00b2).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d10a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$196$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d10a-h4"
+        ],
+        "title": "Calculate Initial Speed",
+        "text": "Using the time of flight formula, solve for the initial speed v.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

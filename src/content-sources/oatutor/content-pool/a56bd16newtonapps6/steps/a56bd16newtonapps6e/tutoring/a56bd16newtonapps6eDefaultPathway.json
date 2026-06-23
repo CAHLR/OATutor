@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a56bd16newtonapps6e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the final velocity of the elevator, we need to consider the forces acting on it and any changes in its motion.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps6e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps6e-h1"
+        ],
+        "title": "Consider the Forces",
+        "text": "The elevator is subject to gravitational force and any force exerted by the cable. If the elevator is at rest or moving at constant velocity, the net force is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps6e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps6e-h2"
+        ],
+        "title": "Net Force and Acceleration",
+        "text": "If the elevator is moving at constant velocity, the acceleration is zero. This means the net force acting on the elevator is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps6e-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps6e-h3"
+        ],
+        "title": "Calculate the Final Velocity",
+        "text": "Given that the elevator is moving at constant velocity, what is the final velocity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

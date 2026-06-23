@@ -1,0 +1,87 @@
+[
+    {
+        "id": "ace918bnlaws30a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the components of the force, we need to determine the change in velocity and use the mass of the drone.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws30a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws30a-h1"
+        ],
+        "title": "Calculate Change in Velocity",
+        "text": "The initial velocity is $$3.00i$$ $$\\frac{m}{s}$$ and the final velocity is $$9i+4j$$ $$\\frac{m}{s}$$. Calculate the change in velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws30a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6i+4j$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws30a-h2"
+        ],
+        "title": "Change in Velocity",
+        "text": "What is the change in velocity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws30a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws30a-h3"
+        ],
+        "title": "Use Newton's Second Law",
+        "text": "Newton's second law states that force is equal to mass times acceleration. Use this to find the force components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws30a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.6i+0.4j$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws30a-h4"
+        ],
+        "title": "Calculate Acceleration",
+        "text": "Acceleration is the change in velocity divided by time. What is the acceleration?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws30a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.9i+0.6j$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws30a-h5"
+        ],
+        "title": "Calculate Force Components",
+        "text": "Using the mass of the drone $$(1.50$$ kg) and the acceleration, calculate the force components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,133 @@
+[
+    {
+        "id": "abaea60linmom8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To solve this problem, we need to use the principle of conservation of momentum. This principle states that the total momentum before an event is equal to the total momentum after the event, provided no external forces act on the system.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom8a-h1"
+        ],
+        "title": "Calculate Initial Momentum",
+        "text": "First, calculate the initial momentum of both skaters. The momentum of an object is given by the product of its mass and velocity.\\n\\n- Leading skater's mass: $$50$$ kg\\n- Leading skater's velocity: $$5.5$$ $$\\frac{m}{s}$$\\n- Trailing skater's mass: $$1.5$$ times the leading skater's mass\\n- Trailing skater's velocity: $$6.2$$ $$\\frac{m}{s}$$",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$75$$"
+        ],
+        "dependencies": [
+            "abaea60linmom8a-h2"
+        ],
+        "title": "Calculate Mass of Trailing Skater",
+        "text": "The trailing skater is 50% heavier than the leading skater. Calculate the mass of the trailing skater.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$275$$"
+        ],
+        "dependencies": [
+            "abaea60linmom8a-h2"
+        ],
+        "title": "Calculate Initial Momentum of Leading Skater",
+        "text": "Calculate the initial momentum of the leading skater using the formula: momentum $$=$$ mass * velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom8a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$465$$"
+        ],
+        "dependencies": [
+            "abaea60linmom8a-h3"
+        ],
+        "title": "Calculate Initial Momentum of Trailing Skater",
+        "text": "Calculate the initial momentum of the trailing skater using the formula: momentum $$=$$ mass * velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom8a-h6",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom8a-h4"
+        ],
+        "title": "Total Initial Momentum",
+        "text": "Add the initial momentum of both skaters to find the total initial momentum of the system.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom8a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$740$$"
+        ],
+        "dependencies": [
+            "abaea60linmom8a-h5"
+        ],
+        "title": "Calculate Total Initial Momentum",
+        "text": "Add the initial momentum of the leading skater and the trailing skater.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom8a-h8",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom8a-h7"
+        ],
+        "title": "Calculate Final Velocity",
+        "text": "Use the conservation of momentum to find the final velocity of the combined skaters. The total momentum before and after the event should be equal.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom8a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5.92$$"
+        ],
+        "dependencies": [
+            "abaea60linmom8a-h8"
+        ],
+        "title": "Calculate Final Velocity of Combined Skaters",
+        "text": "Use the formula: total initial momentum $$=$$ (combined mass) * (final velocity) to find the final velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

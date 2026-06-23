@@ -1,0 +1,77 @@
+[
+    {
+        "id": "aaf87e0equilibrium10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bulk Modulus",
+        "text": "The bulk modulus (B) is a measure of a substance's resistance to uniform compression. It is defined as the ratio of the change in pressure (\u0394P) to the relative change in volume $$\\frac{\\Delta V}{V}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aaf87e0equilibrium10a-h1"
+        ],
+        "title": "Relating Bulk Modulus to Volume Change",
+        "text": "The formula for bulk modulus is given by: $$B=\\frac{-\\Delta P}{\\frac{\\Delta V}{V}}$$. Rearrange this formula to find the change in volume (\u0394V).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aaf87e0equilibrium10a-h2"
+        ],
+        "title": "Calculating Change in Volume",
+        "text": "Given that $$B=2.2\\times{10}^9$$ N/m\u00b2 and $$\u0394P=200\\times{10}^6$$ N/m\u00b2, substitute these values into the formula to find $$\\frac{\\Delta V}{V}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aaf87e0equilibrium10a-h3"
+        ],
+        "title": "Finding the New Volume",
+        "text": "The initial volume (V) of the sphere can be calculated using the formula for the volume of a sphere: $$V=\\frac{4}{3} \\pi r^3$$, where $$r=0.2$$ $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium10a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aaf87e0equilibrium10a-h4"
+        ],
+        "title": "Relating Volume Change to Radius Change",
+        "text": "The change in volume (\u0394V) can be related to the change in radius (\u0394r) using the derivative of the volume formula: $$\u0394V=4\\pi r^2 \\Delta r$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium10a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.606$$"
+        ],
+        "dependencies": [
+            "aaf87e0equilibrium10a-h5"
+        ],
+        "title": "Calculate \u0394r",
+        "text": "Using the relationship $$\u0394V=4\\pi r^2 \\Delta r$$ and the calculated \u0394V, solve for \u0394r.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

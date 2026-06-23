@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ace918bnlaws29a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Forces",
+        "text": "To find the acceleration vector, we need to first determine the net force acting on the object. This can be done by adding the three given force vectors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws29a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5i+3j$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws29a-h1"
+        ],
+        "title": "Calculate the Net Force",
+        "text": "Add the three force vectors: $$F_1=-3i+2j$$, $$F_2=6.00i-4.00j$$, and $$F_3=2i+5j$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws29a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws29a-h2"
+        ],
+        "title": "Relate Force and Acceleration",
+        "text": "Use Newton's second law, $$F=ma$$, to relate the net force to the acceleration vector.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws29a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{5i+3j}{m}$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws29a-h3"
+        ],
+        "title": "Express Acceleration in Terms of Mass",
+        "text": "Given that the net force is $$5i+3j$$ and the magnitude of acceleration is $$4.23$$ $$\\frac{m}{s^2}$$, express the acceleration vector in terms of mass $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws29a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws29a-h4"
+        ],
+        "title": "Check Your Units",
+        "text": "Ensure that the units of the acceleration vector are in $$\\frac{m}{s^2}$$, which means dividing the force vector by mass $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

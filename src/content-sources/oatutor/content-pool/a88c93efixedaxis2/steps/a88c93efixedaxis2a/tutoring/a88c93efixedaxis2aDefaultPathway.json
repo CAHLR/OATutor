@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a88c93efixedaxis2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Relationship",
+        "text": "To find the angle of rotation, we need to understand the relationship between the arc length, radius, and angle in radians. The formula is: arc length $$=$$ radius * angle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis2a-h1"
+        ],
+        "title": "Using the Formula",
+        "text": "We know the arc length is $$3.0$$ $$m$$ and the radius is $$1.5$$ $$m$$. Substitute these values into the formula: $$3.0$$ $$=$$ $$1.5$$ * angle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis2a-h2"
+        ],
+        "title": "Solving for the Angle",
+        "text": "Rearrange the equation to solve for the angle: angle $$=$$ arc length / radius.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis2a-h3"
+        ],
+        "title": "Final Calculation",
+        "text": "Calculate the angle using the rearranged formula: angle $$=$$ $$3.0$$ / $$1.5$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

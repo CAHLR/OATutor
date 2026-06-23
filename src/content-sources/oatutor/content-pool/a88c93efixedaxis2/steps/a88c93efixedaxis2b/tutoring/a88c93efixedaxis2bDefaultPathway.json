@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a88c93efixedaxis2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Velocity",
+        "text": "Angular velocity is the rate of change of angular displacement and is usually measured in radians per second.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis2b-h1"
+        ],
+        "title": "Relating Linear and Angular Quantities",
+        "text": "The relationship between linear distance traveled along a circle and angular displacement is given by the formula: \\( $$\\theta$$ $$=$$ \\frac{s}{r} \\), where \\( s \\) is the arc length and \\( $$r$$ \\) is the radius.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis2b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis2b-h2"
+        ],
+        "title": "Calculating Angular Displacement",
+        "text": "Given that the particle moves $$3.0$$ $$m$$ along a circle of radius $$1.5$$ $$m$$, calculate the angular displacement \\( $$\\theta$$ \\) using the formula \\( $$\\theta$$ $$=$$ \\frac{s}{r} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis2b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis2b-h3"
+        ],
+        "title": "Calculate Angular Displacement",
+        "text": "Use the formula \\( $$\\theta$$ $$=$$ \\frac{s}{r} \\) to find the angular displacement. \\( s $$=$$ $$3.0$$ \\) $$m$$ and \\( $$r$$ $$=$$ $$1.5$$ \\) $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis2b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis2b-h4"
+        ],
+        "title": "Finding Angular Velocity",
+        "text": "Angular velocity \\( \\omega \\) is calculated using the formula \\( \\omega $$=$$ \\frac{\\theta}{t} \\), where \\( $$\\theta$$ \\) is the angular displacement and \\( $$t$$ \\) is the time taken.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis2b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis2b-h5"
+        ],
+        "title": "Calculate Angular Velocity",
+        "text": "Use the formula \\( \\omega $$=$$ \\frac{\\theta}{t} \\) to find the angular velocity. \\( $$\\theta$$ $$=$$ $$2$$ \\) radians and \\( $$t$$ $$=$$ $$1.0$$ \\) s.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

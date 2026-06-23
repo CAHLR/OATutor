@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a56bd16newtonapps1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Forces",
+        "text": "To find the magnitude of the horizontal force F, consider the forces acting on the girl. The tension in the rope and the gravitational force are also involved.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps1b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps1b-h1"
+        ],
+        "title": "Components of Tension",
+        "text": "The tension in the rope can be broken down into two components: one vertical and one horizontal. The vertical component balances the gravitational force, and the horizontal component is equal to the force F.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps1b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps1b-h2"
+        ],
+        "title": "Using Trigonometry",
+        "text": "Use trigonometric functions to find the components of the tension. The angle given is $$30$$ degrees with respect to the vertical.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps1b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$T cos\\left(30\\right)=30\\times9.8$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps1b-h3"
+        ],
+        "title": "Calculate the Vertical Component of Tension",
+        "text": "The vertical component of tension T is equal to the gravitational force. Use the equation $$T cos\\left(30\\right)=m g$$, where $$m$$ is the mass and g is the acceleration due to gravity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps1b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$T sin\\left(30\\right)=F$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps1b-h4"
+        ],
+        "title": "Calculate the Horizontal Component of Tension",
+        "text": "The horizontal component of tension T is equal to the force F. Use the equation $$T sin\\left(30\\right)=F$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps1b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$F=170$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps1b-h5"
+        ],
+        "title": "Solve for F",
+        "text": "Substitute the value of T from the vertical component equation into the horizontal component equation to solve for F.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

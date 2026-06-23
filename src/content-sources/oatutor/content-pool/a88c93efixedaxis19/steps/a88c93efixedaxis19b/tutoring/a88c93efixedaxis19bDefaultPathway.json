@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a88c93efixedaxis19b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Torque",
+        "text": "Torque is the rotational equivalent of force. It is calculated as the product of the moment of inertia and angular acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis19b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis19b-h1"
+        ],
+        "title": "Moment of Inertia for a Sphere",
+        "text": "The moment of inertia (I) for a uniform solid sphere is given by the formula $$I=\\frac{2}{5} M R^2$$, where M is the mass and R is the radius of the sphere.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis19b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis19b-h2"
+        ],
+        "title": "Angular Acceleration",
+        "text": "Angular acceleration can be found by dividing the change in angular velocity by the time over which the change occurs. Here, the change in angular velocity is from $$0$$ to $$1$$ $$\\frac{rev}{day}$$ over $$6$$ days.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis19b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9.72E+37$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis19b-h2"
+        ],
+        "title": "Calculate Moment of Inertia",
+        "text": "Using the formula $$I=\\frac{2}{5} M R^2$$, calculate the moment of inertia of the Earth.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis19b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.21E-05$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis19b-h3"
+        ],
+        "title": "Calculate Angular Acceleration",
+        "text": "Convert $$1$$ $$\\frac{rev}{day}$$ to radians per second and calculate the angular acceleration over $$6$$ days.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis19b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.36E+28$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis19b-h4"
+        ],
+        "title": "Calculate Torque",
+        "text": "Using the formula $$Torque=I angular$$ acceleration, calculate the torque applied to the Earth.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

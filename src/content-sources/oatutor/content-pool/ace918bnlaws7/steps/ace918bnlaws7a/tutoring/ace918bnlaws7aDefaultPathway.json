@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ace918bnlaws7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Forces",
+        "text": "To find the force exerted by the motorcycle, consider both the force needed to overcome resistance and the force needed to accelerate the motorcycle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws7a-h1"
+        ],
+        "title": "Calculate the Net Force",
+        "text": "Use Newton's second law to calculate the net force required to accelerate the motorcycle. The formula is $$F=ma$$, where F is the force, $$m$$ is the mass, and a is the acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$857.5$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws7a-h2"
+        ],
+        "title": "Calculate the Force for Acceleration",
+        "text": "Calculate the force needed to accelerate the motorcycle using the formula $$F=ma$$. Given: $$m=245$$ kg and $$a=3.50$$ $$\\frac{m}{s^2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws7a-h3"
+        ],
+        "title": "Total Force Exerted by the Motorcycle",
+        "text": "The total force exerted by the motorcycle is the sum of the force needed to overcome resistance and the force needed for acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws7a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1257.5$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws7a-h4"
+        ],
+        "title": "Calculate the Total Force",
+        "text": "Add the force needed to overcome resistance (400 N) to the force needed for acceleration $$(857.5$$ N).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

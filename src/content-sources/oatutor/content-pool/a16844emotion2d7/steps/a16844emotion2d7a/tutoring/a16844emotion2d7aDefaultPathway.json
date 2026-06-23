@@ -1,0 +1,130 @@
+[
+    {
+        "id": "a16844emotion2d7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Velocity",
+        "text": "To find the velocity as a function of time, we need to differentiate the position function with respect to time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d7a-h1"
+        ],
+        "title": "Differentiating the i-component",
+        "text": "The i-component of the position function is $$3t^2$$. Differentiate this with respect to $$t$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6t$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d7a-h2"
+        ],
+        "title": "Differentiating the i-component",
+        "text": "What is the derivative of $$3t^2$$ with respect to $$t$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d7a-h1"
+        ],
+        "title": "Differentiating the j-component",
+        "text": "The j-component of the position function is $$-7t^3$$. Differentiate this with respect to $$t$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d7a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-21t^2$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d7a-h4"
+        ],
+        "title": "Differentiating the j-component",
+        "text": "What is the derivative of $$-7t^3$$ with respect to $$t$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d7a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d7a-h1"
+        ],
+        "title": "Differentiating the k-component",
+        "text": "The k-component of the position function is $$-5t^{-2}$$. Differentiate this with respect to $$t$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d7a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10t^{-3}$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d7a-h6"
+        ],
+        "title": "Differentiating the k-component",
+        "text": "What is the derivative of $$-5t^{-2}$$ with respect to $$t$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d7a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d7a-h3",
+            "a16844emotion2d7a-h5",
+            "a16844emotion2d7a-h7"
+        ],
+        "title": "Combining the components",
+        "text": "Combine the derivatives of the i, j, and k components to form the velocity vector.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d7a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6t i-21t^2 j+10t^{-3} k$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d7a-h8"
+        ],
+        "title": "Velocity Function",
+        "text": "What is the velocity function as a combination of the differentiated components?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

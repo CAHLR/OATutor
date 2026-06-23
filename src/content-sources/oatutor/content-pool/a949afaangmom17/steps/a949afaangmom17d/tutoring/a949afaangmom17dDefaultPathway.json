@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a949afaangmom17d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the System",
+        "text": "The system consists of a rotating disk and a bug. Initially, the bug is at the edge of the disk, and then it moves to the center. How does this affect the system's moment of inertia?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom17d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom17d-h1"
+        ],
+        "title": "Conservation of Angular Momentum",
+        "text": "Since there are no external torques acting on the system, the angular momentum of the system is conserved. What is the initial angular momentum of the system?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom17d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom17d-h2"
+        ],
+        "title": "Initial Moment of Inertia",
+        "text": "The initial moment of inertia of the system is the sum of the moment of inertia of the disk and the bug. Calculate the initial moment of inertia.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom17d-h4",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom17d-h3"
+        ],
+        "title": "Final Moment of Inertia",
+        "text": "When the bug moves to the center, its contribution to the moment of inertia becomes zero. What is the final moment of inertia of the system?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom17d-h5",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom17d-h4"
+        ],
+        "title": "Final Angular Velocity",
+        "text": "Using the conservation of angular momentum, calculate the final angular velocity of the system.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom17d-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.035$$"
+        ],
+        "dependencies": [
+            "a949afaangmom17d-h5"
+        ],
+        "title": "Calculate New Kinetic Energy",
+        "text": "The kinetic energy of a rotating system is given by $$\\frac{1}{2} I {\\omega}^2$$. Use the final moment of inertia and angular velocity to find the new kinetic energy.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

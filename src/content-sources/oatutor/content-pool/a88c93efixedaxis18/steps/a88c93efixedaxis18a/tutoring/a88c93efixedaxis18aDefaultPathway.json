@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a88c93efixedaxis18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the frictional torque, we need to understand how the flywheel's rotational motion is being stopped by friction over a given time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis18a-h1"
+        ],
+        "title": "Convert Units",
+        "text": "First, convert the initial angular velocity from revolutions per minute to radians per second. Remember, $$1$$ revolution is $$2\\pi$$ radians.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis18a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{500\\times2 \\pi}{60}$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis18a-h2"
+        ],
+        "title": "Calculate Initial Angular Velocity",
+        "text": "Calculate the initial angular velocity in radians per second.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis18a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis18a-h3"
+        ],
+        "title": "Angular Deceleration",
+        "text": "The flywheel comes to rest, meaning its final angular velocity is $$0$$. Use the time given to find the angular deceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis18a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{0-\\frac{500\\times2 \\pi}{60}}{2\\times60}$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis18a-h4"
+        ],
+        "title": "Calculate Angular Deceleration",
+        "text": "Use the formula for angular deceleration: \\alpha $$=$$ (\u03c9_final - \u03c9_initial) / time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis18a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis18a-h5"
+        ],
+        "title": "Torque and Moment of Inertia",
+        "text": "The frictional torque can be found using the relationship between torque, moment of inertia, and angular acceleration: \u03c4 $$=$$ I * \\alpha.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis18a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$100\\left(-\\frac{\\frac{500\\times2 \\pi}{60}}{2\\times60}\\right)$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis18a-h6"
+        ],
+        "title": "Calculate Frictional Torque",
+        "text": "Use the moment of inertia (I $$=$$ $$100$$ kg*m**2) and the angular deceleration to find the frictional torque.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

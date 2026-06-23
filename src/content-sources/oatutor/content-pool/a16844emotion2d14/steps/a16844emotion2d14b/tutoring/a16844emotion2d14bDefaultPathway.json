@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a16844emotion2d14b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the range of the soccer ball on the Moon, we need to understand how gravity affects the range of a projectile. The range of a projectile is given by the formula: \\( R=\\frac{v**2\\sin(2\\theta)}{g} \\), where \\( v \\) is the initial velocity, \\( $$\\theta$$ \\) is the angle of projection, and \\( g \\) is the acceleration due to gravity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d14b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d14b-h1"
+        ],
+        "title": "Gravity on the Moon",
+        "text": "The gravity on the Moon is one-sixth that of Earth's gravity. Earth's gravity is approximately $$9.8$$ m/s\u00b2, so the Moon's gravity is \\( $$\\frac{9.8}{6$$} \\approx $$1.63$$ \\) m/s\u00b2.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d14b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d14b-h2"
+        ],
+        "title": "Calculate the Range on Mars",
+        "text": "First, calculate the range of the soccer ball on Mars using the given gravity of $$3.7$$ m/s\u00b2. Use the formula: \\( R=\\frac{v**2\\sin(2\\theta)}{g} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d14b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$60.8$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d14b-h3"
+        ],
+        "title": "Range on Mars",
+        "text": "Calculate the range of the soccer ball on Mars using the formula \\( R=\\frac{v**2\\sin(2\\theta)}{g} \\) with \\( $$v=15$$ \\) $$\\frac{m}{s}$$, \\( $$\\theta=45$$ \\) degrees, and \\( $$g=3.7$$ \\) m/s\u00b2.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d14b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d14b-h4"
+        ],
+        "title": "Calculate the Range on the Moon",
+        "text": "Now, calculate the range of the soccer ball on the Moon using the same formula, but with the Moon's gravity of $$1.63$$ m/s\u00b2.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d14b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$138$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d14b-h5"
+        ],
+        "title": "Range on the Moon",
+        "text": "Calculate the range of the soccer ball on the Moon using the formula \\( R=\\frac{v**2\\sin(2\\theta)}{g} \\) with \\( $$v=15$$ \\) $$\\frac{m}{s}$$, \\( $$\\theta=45$$ \\) degrees, and \\( $$g=1.63$$ \\) m/s\u00b2.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

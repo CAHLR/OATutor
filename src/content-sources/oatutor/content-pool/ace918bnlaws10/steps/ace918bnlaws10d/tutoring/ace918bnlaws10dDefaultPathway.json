@@ -1,0 +1,100 @@
+[
+    {
+        "id": "ace918bnlaws10d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Forces",
+        "text": "To find the angle, consider the forces acting on the passenger. The vertical force is due to gravity, and the horizontal force is due to the acceleration of the sled.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws10d-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws10d-h1"
+        ],
+        "title": "Calculate the Vertical Force",
+        "text": "The vertical force is the gravitational force acting on the passenger. Use the formula: $$F_{gravity}=m g$$, where $$m$$ is the mass and g is the acceleration due to gravity $$\\frac{9.8m}{s^2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws10d-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws10d-h1"
+        ],
+        "title": "Calculate the Horizontal Force",
+        "text": "The horizontal force is due to the acceleration of the sled. Use the formula: $$F_{horizontal}=m a$$, where $$m$$ is the mass and a is the acceleration of the sled $$\\frac{49m}{s^2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws10d-h4",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws10d-h2",
+            "ace918bnlaws10d-h3"
+        ],
+        "title": "Find the Angle",
+        "text": "The angle above the horizontal can be found using the tangent function: $$tan(theta)=\\frac{F_{vertical}}{F_{horizontal}}$$. Solve for theta.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws10d-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$735$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws10d-h2"
+        ],
+        "title": "Calculate the Vertical Force",
+        "text": "Calculate the gravitational force: $$F_{gravity}=75\\times9.8$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws10d-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3675$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws10d-h3"
+        ],
+        "title": "Calculate the Horizontal Force",
+        "text": "Calculate the horizontal force: $$F_{horizontal}=75\\times49$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws10d-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$11.3$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws10d-h4"
+        ],
+        "title": "Calculate the Angle",
+        "text": "Use the tangent function to find the angle: $$tan(theta)=\\frac{735}{3675}$$. Solve for theta.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

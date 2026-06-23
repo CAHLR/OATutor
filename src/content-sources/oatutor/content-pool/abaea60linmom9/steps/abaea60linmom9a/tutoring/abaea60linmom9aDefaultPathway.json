@@ -1,0 +1,99 @@
+[
+    {
+        "id": "abaea60linmom9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Conservation of Momentum",
+        "text": "Since the ice is frictionless, the total momentum of the system (player + puck) is conserved. Initially, both are at rest, so the total initial momentum is zero. After the puck is hit, the momentum of the puck and the player must still add up to zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom9a-h1"
+        ],
+        "title": "Calculate the Player's Velocity",
+        "text": "Use the conservation of momentum to find the player's velocity. The momentum of the puck is given by its mass times its velocity. Set this equal to the momentum of the player (mass times velocity) and solve for the player's velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom9a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.075$$"
+        ],
+        "dependencies": [
+            "abaea60linmom9a-h2"
+        ],
+        "title": "Player's Velocity Calculation",
+        "text": "The momentum of the puck is $$0.15\\times45$$. Set this equal to the player's momentum, $$90v$$, and solve for v.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom9a-h3"
+        ],
+        "title": "Time for the Puck to Reach the Goal",
+        "text": "Calculate the time it takes for the puck to travel $$15.0$$ $$m$$ to the goal. Use the formula: time $$=$$ $$\\frac{distance}{velocity}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom9a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.333$$"
+        ],
+        "dependencies": [
+            "abaea60linmom9a-h4"
+        ],
+        "title": "Time Calculation",
+        "text": "The time it takes for the puck to reach the goal is $$\\frac{15}{45}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom9a-h6",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom9a-h5"
+        ],
+        "title": "Distance the Player Recoils",
+        "text": "Use the player's velocity and the time calculated to find the distance the player recoils. Use the formula: distance $$=$$ $$velocity time$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom9a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.025$$"
+        ],
+        "dependencies": [
+            "abaea60linmom9a-h6"
+        ],
+        "title": "Distance Calculation",
+        "text": "The distance the player recoils is $$0.075\\times0.333$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

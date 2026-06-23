@@ -1,0 +1,111 @@
+[
+    {
+        "id": "abaea60linmom7b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Impulse",
+        "text": "Impulse is the change in momentum of an object when a force is applied over a period of time. It can be calculated using the formula: Impulse $$=$$ Change in Momentum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom7b-h2",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom7b-h1"
+        ],
+        "title": "Calculate Initial Momentum of the Bullet",
+        "text": "The initial momentum of the bullet can be calculated using the formula: Momentum $$=$$ mass * velocity. What is the initial momentum of the bullet?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom7b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.2\\times400$$"
+        ],
+        "dependencies": [
+            "abaea60linmom7b-h2"
+        ],
+        "title": "Initial Momentum of the Bullet",
+        "text": "Calculate the initial momentum of the bullet using its mass and velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom7b-h4",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom7b-h3"
+        ],
+        "title": "Calculate Final Momentum of the Bullet and Block",
+        "text": "After the collision, the bullet and block move together. Calculate their combined momentum using the formula: Momentum $$=$$ (mass of bullet + mass of block) * velocity after collision.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom7b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(0.2+1.5\\right) v$$"
+        ],
+        "dependencies": [
+            "abaea60linmom7b-h4"
+        ],
+        "title": "Final Momentum of the Bullet and Block",
+        "text": "Calculate the final momentum of the bullet and block using their combined mass and velocity after collision.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom7b-h6",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom7b-h5"
+        ],
+        "title": "Impulse Calculation",
+        "text": "The impulse on the bullet is equal to the change in momentum of the bullet. Use the formula: Impulse $$=$$ Final Momentum - Initial Momentum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom7b-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.7v-0.2\\times400$$"
+        ],
+        "dependencies": [
+            "abaea60linmom7b-h6"
+        ],
+        "title": "Calculate Impulse",
+        "text": "Calculate the impulse on the bullet using the change in momentum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom7b-h8",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom7b-h7"
+        ],
+        "title": "Direction of Impulse",
+        "text": "The direction of the impulse is the same as the direction of the force applied. Since the bullet is moving east, the impulse is also directed east.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

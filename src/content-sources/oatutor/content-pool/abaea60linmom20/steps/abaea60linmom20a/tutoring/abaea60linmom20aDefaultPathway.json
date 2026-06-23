@@ -1,0 +1,70 @@
+[
+    {
+        "id": "abaea60linmom20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Momentum Conservation",
+        "text": "To find the recoil velocity of the squid, we need to apply the principle of conservation of momentum. The total momentum before the ejection should equal the total momentum after the ejection.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom20a-h1"
+        ],
+        "title": "Initial Momentum",
+        "text": "Initially, the squid is at rest, so the total momentum is zero. What does this tell us about the momentum after the fluid is ejected?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom20a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom20a-h2"
+        ],
+        "title": "Momentum Equation",
+        "text": "The momentum of the fluid ejected is given by its mass times its velocity. Use this to set up the equation for conservation of momentum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom20a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.5$$"
+        ],
+        "dependencies": [
+            "abaea60linmom20a-h3"
+        ],
+        "title": "Calculate Fluid Momentum",
+        "text": "Calculate the momentum of the fluid ejected using the formula: momentum $$=$$ mass * velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom20a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.421$$"
+        ],
+        "dependencies": [
+            "abaea60linmom20a-h4"
+        ],
+        "title": "Momentum Conservation Equation",
+        "text": "Set up the equation for conservation of momentum: $$0$$ $$=$$ (mass of squid * velocity of squid) + (momentum of fluid). Solve for the velocity of the squid.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

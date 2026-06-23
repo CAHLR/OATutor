@@ -1,0 +1,41 @@
+[
+    {
+        "id": "ace918bnlaws8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Newton's Second Law",
+        "text": "Newton's second law states that the force acting on an object is equal to the mass of that object times its acceleration. This can be expressed as $$F=m a$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws8a-h1"
+        ],
+        "title": "Rearranging the Formula",
+        "text": "To find the acceleration, you need to rearrange the formula $$F=m a$$ to solve for a. What does the formula become?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws8a-h2"
+        ],
+        "title": "Calculate the Acceleration",
+        "text": "Given that the force F is $$18$$ N and the mass $$m$$ is $$2.0$$ kg, use the formula $$a=\\frac{F}{m}$$ to find the acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

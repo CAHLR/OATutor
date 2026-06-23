@@ -1,0 +1,123 @@
+[
+    {
+        "id": "a09f25fmotion18b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find out how long the kangaroo is in the air, we need to consider the motion of the kangaroo as it jumps over the object. This involves understanding the vertical motion and using the appropriate kinematic equations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion18b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion18b-h1"
+        ],
+        "title": "Identify the Known Values",
+        "text": "The kangaroo jumps over an object that is $$2.50$$ $$m$$ high. This height is the maximum height reached by the kangaroo during its jump.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion18b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion18b-h2"
+        ],
+        "title": "Using Kinematic Equations",
+        "text": "The kinematic equation for vertical motion is: $$v^2=u^2+2a s$$, where v is the final velocity, u is the initial velocity, a is the acceleration due to gravity, and s is the displacement (height in this case).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion18b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion18b-h3"
+        ],
+        "title": "Solving for Initial Velocity",
+        "text": "At the maximum height, the final velocity (v) is $$0$$ $$\\frac{m}{s}$$. Use the equation $$0=u^2+2\\left(-9.8\\right)\\times2.5$$ to solve for the initial velocity (u).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion18b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion18b-h4"
+        ],
+        "title": "Calculate Initial Velocity",
+        "text": "Calculate the initial velocity using the equation: $$0=u^2+2\\left(-9.8\\right)\\times2.5$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion18b-h6",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion18b-h5"
+        ],
+        "title": "Time to Reach Maximum Height",
+        "text": "Use the equation $$v=u+a t$$ to find the time to reach the maximum height. Here, $$v=0$$, $$u=7$$, and $$a=-9.8$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion18b-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.714$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion18b-h6"
+        ],
+        "title": "Calculate Time to Maximum Height",
+        "text": "Calculate the time to reach maximum height using the equation: $$0=7+\\left(-9.8\\right) t$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion18b-h8",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion18b-h7"
+        ],
+        "title": "Total Time in the Air",
+        "text": "The total time in the air is twice the time to reach the maximum height, as the time to ascend and descend are equal.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion18b-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.44$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion18b-h8"
+        ],
+        "title": "Calculate Total Time in the Air",
+        "text": "Multiply the time to reach maximum height by $$2$$ to find the total time in the air.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

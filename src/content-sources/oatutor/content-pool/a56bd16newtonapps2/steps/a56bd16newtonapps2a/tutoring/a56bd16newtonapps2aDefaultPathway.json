@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a56bd16newtonapps2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Constant Velocity",
+        "text": "When an object moves with constant velocity, what can we say about the net force acting on it?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps2a-h1"
+        ],
+        "title": "Net Force and Constant Velocity",
+        "text": "If an object is moving with constant velocity, the net force acting on it is zero. This means the sum of all forces acting on the object must be zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps2a-h2"
+        ],
+        "title": "Setting Up the Equation",
+        "text": "Given that the net force is zero, set up the equation: $$F1+F2+F3=0$$, where F3 is the unknown force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-7i+2j$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps2a-h3"
+        ],
+        "title": "Solving for the Third Force",
+        "text": "Rearrange the equation to solve for F3: $$F3=-\\left(F1+F2\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps2a-h4"
+        ],
+        "title": "Calculating the Components",
+        "text": "Calculate the components of F3 by substituting the given values of F1 and F2 into the equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps2a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-7i+2j$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps2a-h5"
+        ],
+        "title": "Final Calculation",
+        "text": "Substitute $$F1=3i+5j$$ and $$F2=4i-7j$$ into the equation $$F3=-\\left(F1+F2\\right)$$ to find F3.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

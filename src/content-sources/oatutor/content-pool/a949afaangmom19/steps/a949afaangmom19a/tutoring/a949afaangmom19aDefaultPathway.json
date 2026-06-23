@@ -1,0 +1,133 @@
+[
+    {
+        "id": "a949afaangmom19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Momentum Conservation",
+        "text": "The angular momentum of the system is conserved because there are no external torques acting on it. This means that the initial angular momentum equals the final angular momentum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom19a-h1"
+        ],
+        "title": "Initial Angular Momentum",
+        "text": "Calculate the initial angular momentum of the system. Use the formula for the moment of inertia of a disk and the angular velocity in radians per second.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom19a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{20\\times2 \\pi}{60}$$"
+        ],
+        "dependencies": [
+            "a949afaangmom19a-h2"
+        ],
+        "title": "Convert RPM to Radians per Second",
+        "text": "Convert the initial angular velocity from rpm to radians per second. Use the conversion factor: $$1$$ rpm $$=$$ $$\\frac{2\\pi}{60}$$ $$\\frac{rad}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom19a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$100\\frac{1}{2}\\times{1.6}^2+{1.6}^2\\left(22+28+33\\right)$$"
+        ],
+        "dependencies": [
+            "a949afaangmom19a-h3"
+        ],
+        "title": "Calculate Initial Moment of Inertia",
+        "text": "Calculate the initial moment of inertia of the system. Consider the moment of inertia of the merry-go-round and the children at the edge.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom19a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom19a-h4"
+        ],
+        "title": "Final Moment of Inertia",
+        "text": "Calculate the final moment of inertia after the child moves to the center. Only the child with mass $$28$$ kg changes position.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom19a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$100\\frac{1}{2}\\times{1.6}^2+{1.6}^2\\left(22+33\\right)$$"
+        ],
+        "dependencies": [
+            "a949afaangmom19a-h5"
+        ],
+        "title": "Calculate Final Moment of Inertia",
+        "text": "Calculate the final moment of inertia of the system. The child with mass $$28$$ kg is now at the center, so their contribution to the moment of inertia is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom19a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom19a-h6"
+        ],
+        "title": "Final Angular Velocity",
+        "text": "Use the conservation of angular momentum to find the final angular velocity. Set the initial angular momentum equal to the final angular momentum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom19a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{I_{initial} \\omega_{initial}}{I_{final}}$$"
+        ],
+        "dependencies": [
+            "a949afaangmom19a-h7"
+        ],
+        "title": "Calculate Final Angular Velocity",
+        "text": "Use the formula $$L_{initial}$$ $$=$$ $$L_{final}$$, where L $$=$$ $$I \\omega$$. Solve for the final angular velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom19a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{60\\omega_{final}}{2\\pi}$$"
+        ],
+        "dependencies": [
+            "a949afaangmom19a-h8"
+        ],
+        "title": "Convert Final Angular Velocity to RPM",
+        "text": "Convert the final angular velocity from radians per second back to rpm.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

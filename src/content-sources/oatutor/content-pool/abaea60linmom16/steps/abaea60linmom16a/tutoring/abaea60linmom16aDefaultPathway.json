@@ -1,0 +1,82 @@
+[
+    {
+        "id": "abaea60linmom16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Density Function",
+        "text": "The density of the rod is given by the function $$rho(x)=\\rho_0+\\left(\\rho_1-\\rho_0\\right) \\left(\\frac{x}{L}\\right)^2$$. This means the density changes quadratically from one end of the rod to the other.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom16a-h1"
+        ],
+        "title": "Formula for Center of Mass",
+        "text": "The center of mass for a continuous object is given by the formula x_cm=(1/M)*int{x*rho(x),0,L,x}, where M is the total mass of the rod.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom16a-h2"
+        ],
+        "title": "Finding the Total Mass",
+        "text": "To find the total mass M of the rod, integrate the density function over the length of the rod: $$M=int{rho(x), 0, L, x$$.}",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom16a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$M=\\frac{\\left(\\rho_0+\\rho_1\\right) L}{3}$$"
+        ],
+        "dependencies": [
+            "abaea60linmom16a-h3"
+        ],
+        "title": "Calculate the Total Mass",
+        "text": "Calculate the total mass M of the rod using the integral M=int{rho_0+(rho_1-rho_0)*(x/L)**2,0,L,x}.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom16a-h5",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom16a-h4"
+        ],
+        "title": "Substitute the Density Function",
+        "text": "Substitute the density function $$rho(x)=\\rho_0+\\left(\\rho_1-\\rho_0\\right) \\left(\\frac{x}{L}\\right)^2$$ into the center of mass formula.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom16a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x_{cm}=\\frac{3L \\left(\\rho_0+\\rho_1\\right)}{4\\left(2\\rho_0+\\rho_1\\right)}$$"
+        ],
+        "dependencies": [
+            "abaea60linmom16a-h5"
+        ],
+        "title": "Calculate the Center of Mass",
+        "text": "Calculate the center of mass $$x_{cm}$$ using the formula x_cm=(1/M)*int{x*(rho_0+(rho_1-rho_0)*(x/L)**2),0,L,x}.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

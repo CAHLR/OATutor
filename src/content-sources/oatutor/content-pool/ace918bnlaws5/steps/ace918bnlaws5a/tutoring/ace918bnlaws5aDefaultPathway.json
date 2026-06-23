@@ -1,0 +1,41 @@
+[
+    {
+        "id": "ace918bnlaws5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the force necessary to produce a given acceleration, we can use Newton's second law of motion.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws5a-h1"
+        ],
+        "title": "Newton's Second Law",
+        "text": "Newton's second law states that force is equal to mass times acceleration. The formula is $$F=m a$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws5a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$411600$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws5a-h2"
+        ],
+        "title": "Calculate the Force",
+        "text": "Given the mass $$m=2.1\\times{10}^3$$ kg and acceleration $$a=196$$ $$\\frac{m}{s^2}$$, calculate the force using the formula $$F=m a$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

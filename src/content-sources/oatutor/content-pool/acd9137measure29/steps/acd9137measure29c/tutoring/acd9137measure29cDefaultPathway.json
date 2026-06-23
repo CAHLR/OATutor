@@ -1,0 +1,24 @@
+[
+    {
+        "id": "acd9137measure29c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Arguments of trig functions must be dimensionless",
+        "text": "Check $$[at**2/s]$$: $$\\frac{{LT}^{\\left(-2\\right)} T^2}{L}=\\frac{L}{L}=dimensionless$$. So the sin argument is fine. But what are the dimensions of sin(...)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acd9137measure29c-h2",
+        "type": "hint",
+        "dependencies": [
+            "acd9137measure29c-h1"
+        ],
+        "title": "sin always returns dimensionless",
+        "text": "sin of any argument is dimensionless. But $$[v]={LT}^{\\left(-1\\right)}$$, not dimensionless. So the left and right sides have different dimensions - not consistent.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

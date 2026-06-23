@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a16844emotion2d23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Tangential Acceleration",
+        "text": "The tangential acceleration is the rate of change of the tangential velocity of the tip of the blade. It is given as $$3.00$$ m/s\u00b2.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d23a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d23a-h1"
+        ],
+        "title": "Finding Tangential Velocity",
+        "text": "To find the tangential velocity at $$t=5.0$$ s, use the formula: $$v=at$$, where a is the tangential acceleration and $$t$$ is the time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d23a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$15$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d23a-h2"
+        ],
+        "title": "Calculate Tangential Velocity",
+        "text": "Calculate the tangential velocity at $$t=5.0$$ s using $$v=at$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d23a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d23a-h3"
+        ],
+        "title": "Understanding Radial Acceleration",
+        "text": "Radial acceleration (also known as centripetal acceleration) is given by the formula a_r=v\u00b2/r, where v is the tangential velocity and $$r$$ is the radius.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d23a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$150$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d23a-h4"
+        ],
+        "title": "Calculate Radial Acceleration",
+        "text": "Calculate the radial acceleration using a_r=v\u00b2/r.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d23a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d23a-h5"
+        ],
+        "title": "Total Acceleration",
+        "text": "The total acceleration is the vector sum of tangential and radial accelerations. Use the formula: a_total=sqrt(a_t\u00b2+a_r\u00b2).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d23a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$150$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d23a-h6"
+        ],
+        "title": "Calculate Total Acceleration",
+        "text": "Calculate the total acceleration using a_total=sqrt(a_t\u00b2+a_r\u00b2).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ace918bnlaws25a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The body starts with an initial velocity $$v_0$$ and is acted upon by a force that first brings it to rest and then reverses its direction to $$-v_0$$. We need to find the total distance traveled during this process.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws25a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws25a-h1"
+        ],
+        "title": "Breaking Down the Motion",
+        "text": "Consider the motion in two parts:\\n$$1$$. From $$v_0$$ to $$0$$.\\n$$2$$. From $$0$$ to $$-v_0$$.\\nEach part takes time $$t$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws25a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws25a-h2"
+        ],
+        "title": "Distance in Each Part",
+        "text": "In the first part, the body travels a distance while decelerating from $$v_0$$ to $$0$$. In the second part, it travels the same distance while accelerating from $$0$$ to $$-v_0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws25a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.5v_0 t$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws25a-h3"
+        ],
+        "title": "Calculating Distance for One Part",
+        "text": "Use the formula for distance traveled under constant acceleration: distance $$=$$ initial velocity * time + $$0.5$$ * acceleration * $${time}^2$$. Since the velocity changes from $$v_0$$ to $$0$$ in time $$t$$, the acceleration is $$\\frac{-v_0}{t}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws25a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$v_0 t$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws25a-h4"
+        ],
+        "title": "Total Distance Calculation",
+        "text": "The total distance is the sum of the distances traveled in both parts of the motion. Since both parts cover the same distance, multiply the distance of one part by $$2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

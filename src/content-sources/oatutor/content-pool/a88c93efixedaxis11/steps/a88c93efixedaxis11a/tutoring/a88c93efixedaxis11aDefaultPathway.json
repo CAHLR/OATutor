@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a88c93efixedaxis11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Rotational Kinetic Energy",
+        "text": "Rotational kinetic energy is given by the formula \\( KE_{rot} $$=$$ \\frac{1}{2} I \\omega**2 \\), where \\( I \\) is the moment of inertia and \\( \\omega \\) is the angular velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis11a-h1"
+        ],
+        "title": "Relating Linear and Angular Velocity",
+        "text": "The linear velocity \\( v \\) is related to the angular velocity \\( \\omega \\) by the equation \\( v $$=$$ $$r$$ \\omega \\), where \\( $$r$$ \\) is the radius or distance from the axis of rotation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis11a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$41.67$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis11a-h2"
+        ],
+        "title": "Calculate Angular Velocity",
+        "text": "Using the relation \\( v $$=$$ $$r$$ \\omega \\), calculate \\( \\omega \\) given \\( v $$=$$ $$20.0$$ \\) $$\\frac{m}{s}$$ and \\( $$r$$ $$=$$ $$0.480$$ \\) $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis11a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$434$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis11a-h3"
+        ],
+        "title": "Calculate Rotational Kinetic Energy",
+        "text": "Now that you have \\( \\omega \\), use the formula \\( KE_{rot} $$=$$ \\frac{1}{2} I \\omega**2 \\) to find the rotational kinetic energy. Use \\( I $$=$$ $$0.500$$ \\) $$kg m^2$$ and \\( \\omega $$=$$ $$41.67$$ \\) $$\\frac{rad}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

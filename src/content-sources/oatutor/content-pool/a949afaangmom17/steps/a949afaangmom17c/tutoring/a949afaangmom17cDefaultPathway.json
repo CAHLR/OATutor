@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a949afaangmom17c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Momentum Conservation",
+        "text": "When the bug moves, the system's angular momentum is conserved. This means that the initial angular momentum of the system (disk + bug) is equal to the final angular momentum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom17c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom17c-h1"
+        ],
+        "title": "Initial Angular Momentum",
+        "text": "Calculate the initial angular momentum of the system when the bug is at the edge of the disk. Use the formula: \\( $$L_i$$ $$=$$ I_{disk} \\cdot \\omega_i + m_{bug} \\cdot $$R^2$$ \\cdot \\omega_i \\) where \\( I_{disk} $$=$$ \\frac{1}{2} \\cdot M \\cdot $$R^2$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom17c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom17c-h2"
+        ],
+        "title": "Final Angular Momentum",
+        "text": "When the bug is back at the edge, the final angular momentum \\( $$L_f$$ \\) is given by: \\( $$L_f$$ $$=$$ I_{disk} \\cdot \\omega_f + m_{bug} \\cdot $$R^2$$ \\cdot \\omega_f \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom17c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom17c-h3"
+        ],
+        "title": "Equating Initial and Final Angular Momentum",
+        "text": "Since angular momentum is conserved, set \\( $$L_i$$ $$=$$ $$L_f$$ \\). Solve for \\( \\omega_f \\) to find the final angular velocity when the bug is back at the edge.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom17c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "a949afaangmom17c-h4"
+        ],
+        "title": "Calculate \\( \\omega_f \\)",
+        "text": "Using the conservation of angular momentum, solve for \\( \\omega_f \\): \\( \\omega_f $$=$$ \\frac{I_{disk} \\cdot \\omega_i + m_{bug} \\cdot $$R^2$$ \\cdot \\omega_i}{I_{disk} + m_{bug} \\cdot $$R^2$$} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

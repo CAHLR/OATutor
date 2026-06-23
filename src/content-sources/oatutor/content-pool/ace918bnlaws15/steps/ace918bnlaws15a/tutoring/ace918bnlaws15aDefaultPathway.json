@@ -1,0 +1,145 @@
+[
+    {
+        "id": "ace918bnlaws15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Forces",
+        "text": "To find the acceleration, we need to consider the net force acting on the system. The net force is the difference between the total forces exerted by both teams.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws15a-h1"
+        ],
+        "title": "Calculating Total Force",
+        "text": "Calculate the total force exerted by each team. Multiply the average force per member by the number of members in each team.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws15a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1350\\times9$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws15a-h2"
+        ],
+        "title": "Total Force of Team $$1$$",
+        "text": "What is the total force exerted by the first team?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws15a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1365\\times9$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws15a-h2"
+        ],
+        "title": "Total Force of Team $$2$$",
+        "text": "What is the total force exerted by the second team?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws15a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws15a-h4"
+        ],
+        "title": "Net Force Calculation",
+        "text": "The net force is the difference between the total forces of the two teams. Use the formula: net force $$=$$ force of team $$2$$ - force of team $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws15a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1365\\times9-1350\\times9$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws15a-h5"
+        ],
+        "title": "Net Force",
+        "text": "Calculate the net force acting on the system.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws15a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws15a-h6"
+        ],
+        "title": "Total Mass of the System",
+        "text": "To find the acceleration, we need the total mass of both teams. Calculate the total mass by adding the mass of all members from both teams.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws15a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$68\\times9+73\\times9$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws15a-h7"
+        ],
+        "title": "Total Mass Calculation",
+        "text": "What is the total mass of both teams combined?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws15a-h9",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws15a-h8"
+        ],
+        "title": "Acceleration Formula",
+        "text": "Use Newton's second law to find the acceleration: acceleration $$=$$ net force / total mass.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws15a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1365\\times9-1350\\times9}{68\\times9+73\\times9}$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws15a-h9"
+        ],
+        "title": "Calculate Acceleration",
+        "text": "What is the magnitude of the acceleration of the two teams?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

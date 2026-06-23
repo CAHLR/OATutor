@@ -1,0 +1,111 @@
+[
+    {
+        "id": "a16844emotion2d10b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the maximum altitude of a projectile, we need to consider the vertical motion. The projectile reaches its maximum height when its vertical velocity is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d10b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d10b-h1"
+        ],
+        "title": "Vertical Motion Equation",
+        "text": "The vertical motion of the projectile can be described by the equation: $$v_y$$ $$=$$ $$v_0 y$$ - $$g t$$, where $$v_y$$ is the vertical velocity, $$v_0 y$$ is the initial vertical velocity, g is the acceleration due to gravity $$(9.8$$ m/s\u00b2), and $$t$$ is the time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d10b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d10b-h2"
+        ],
+        "title": "Initial Vertical Velocity",
+        "text": "The initial vertical velocity can be found using the equation: $$v_0 y$$ $$=$$ $$v_0 sin\\left(\\theta\\right)$$, where $$v_0$$ is the initial speed and theta is the launch angle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d10b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d10b-h3"
+        ],
+        "title": "Time to Reach Maximum Height",
+        "text": "The time to reach maximum height is when the vertical velocity is zero. Use the equation: $$0$$ $$=$$ $$v_0 y$$ - $$g t_{max}$$, solve for $$t_{max}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d10b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$v_0 y=0.5v_0$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d10b-h3"
+        ],
+        "title": "Calculate Initial Vertical Velocity",
+        "text": "Given the launch angle is $$30$$ degrees, calculate the initial vertical velocity using $$v_0 y$$ $$=$$ $$v_0 sin\\left(30\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d10b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$t_{max}=\\frac{v_0 y}{9.8}$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d10b-h5"
+        ],
+        "title": "Calculate Time to Maximum Height",
+        "text": "Using the equation $$0$$ $$=$$ $$v_0 y$$ - $$g t_{max}$$, solve for $$t_{max}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d10b-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$h_{max}=v_0 y \\frac{v_0 y}{9.8}-0.5\\times9.8 \\left(\\frac{v_0 y}{9.8}\\right)^2$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d10b-h6"
+        ],
+        "title": "Calculate Maximum Altitude",
+        "text": "Use the equation for vertical displacement: $$h_{max}$$ $$=$$ $$v_0 y t_{max}$$ - $$0.5g {t_{max}}^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d10b-h8",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d10b-h7"
+        ],
+        "title": "Final Calculation",
+        "text": "Substitute the values to find the maximum altitude.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

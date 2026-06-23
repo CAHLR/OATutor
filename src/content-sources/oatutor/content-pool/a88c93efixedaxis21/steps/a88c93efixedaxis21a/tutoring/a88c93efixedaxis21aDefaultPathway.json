@@ -1,0 +1,88 @@
+[
+    {
+        "id": "a88c93efixedaxis21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Rotational Kinetic Energy",
+        "text": "Rotational kinetic energy is given by the formula \\( KE_{rot} $$=$$ \\frac{1}{2} I \\omega**2 \\), where \\( I \\) is the moment of inertia and \\( \\omega \\) is the angular velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis21a-h1"
+        ],
+        "title": "Calculate the Moment of Inertia",
+        "text": "The moment of inertia \\( I \\) for a uniform cylindrical object is calculated using the formula \\( I $$=$$ \\frac{1}{2} M $$R^2$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis21a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.072$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis21a-h2"
+        ],
+        "title": "Calculate \\( I \\)",
+        "text": "Given that the mass \\( M \\) is $$10$$ kg and the radius \\( R \\) is $$12$$ cm (or $$0.12$$ m), calculate the moment of inertia \\( I \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis21a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis21a-h1"
+        ],
+        "title": "Convert Angular Velocity",
+        "text": "Convert the angular velocity from revolutions per minute $$\\frac{rev}{min}$$ to radians per second $$\\frac{rad}{s}$$. Use the conversion: \\( $$1$$ \\text{ rev} $$=$$ 2\\pi \\text{ rad} \\) and \\( $$1$$ \\text{ min} $$=$$ $$60$$ \\text{ s} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis21a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$157.08$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis21a-h4"
+        ],
+        "title": "Calculate \\( \\omega \\)",
+        "text": "Convert $$1.5\\times{10}^3$$ $$\\frac{rev}{min}$$ to $$\\frac{rad}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis21a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$888$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis21a-h3",
+            "a88c93efixedaxis21a-h5"
+        ],
+        "title": "Calculate Rotational Kinetic Energy",
+        "text": "Now that you have \\( I $$=$$ $$0.072$$ \\) $$kg m^2$$ and \\( \\omega $$=$$ $$157.08$$ \\) $$\\frac{rad}{s}$$, calculate the rotational kinetic energy using \\( KE_{rot} $$=$$ \\frac{1}{2} I \\omega**2 \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a56bd16newtonapps7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Forces",
+        "text": "To find the mass of the backpack, consider the forces acting on it. The spring scale measures the apparent weight, which is affected by the elevator's acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps7a-h1"
+        ],
+        "title": "Apparent Weight Equation",
+        "text": "The apparent weight (W') is given by the equation: $$W'=m \\left(g-a\\right)$$, where $$m$$ is the mass, g is the acceleration due to gravity $$(9.8$$ m/s\u00b2), and a is the acceleration of the elevator.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps7a-h2"
+        ],
+        "title": "Rearranging the Equation",
+        "text": "Rearrange the equation to solve for the mass (m): $$m=\\frac{W'}{g-a}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps7a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps7a-h3"
+        ],
+        "title": "Calculate the Mass",
+        "text": "Substitute the given values into the equation: $$W'=60$$ N, $$g=9.8$$ m/s\u00b2, $$a=3.8$$ m/s\u00b2. Calculate $$m=\\frac{60}{9.8-3.8}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

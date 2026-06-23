@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a09f25fmotion10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the muzzle velocity, we need to determine the final velocity of the bullet as it exits the barrel. We can use the formula for final velocity in uniformly accelerated motion.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion10a-h1"
+        ],
+        "title": "Identify the Known Values",
+        "text": "We know the initial velocity (u) is $$0$$ $$\\frac{m}{s}$$ because the bullet starts from rest. The acceleration (a) is $$6.2\\times{10}^5$$ $$\\frac{m}{s^2}$$, and the time (t) is $$8.1\\times{10}^{-4}$$ s.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion10a-h2"
+        ],
+        "title": "Formula for Final Velocity",
+        "text": "The formula to calculate the final velocity (v) is: v $$=$$ $$u+a t$$. Since the initial velocity (u) is $$0$$, the formula simplifies to v $$=$$ $$a t$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion10a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$502.2$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion10a-h3"
+        ],
+        "title": "Calculate the Final Velocity",
+        "text": "Substitute the known values into the formula: v $$=$$ $$6.2\\times{10}^5$$ * $$8.1\\times{10}^{-4}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

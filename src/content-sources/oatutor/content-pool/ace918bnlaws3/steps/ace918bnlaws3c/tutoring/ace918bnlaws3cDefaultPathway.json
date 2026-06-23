@@ -1,0 +1,77 @@
+[
+    {
+        "id": "ace918bnlaws3c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Forces",
+        "text": "Andrea's force is directed due north, while Jennifer's force is at an angle of $$32$$ degrees east of north. To find the resultant direction, we need to consider both the magnitude and direction of these forces.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws3c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws3c-h1"
+        ],
+        "title": "Breaking Down the Forces",
+        "text": "To find the resultant direction, break down Jennifer's force into its northward and eastward components. Use trigonometric functions to do this.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws3c-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws3c-h2"
+        ],
+        "title": "Using Trigonometry",
+        "text": "The northward component of Jennifer's force can be found using cosine: $$180cos\\left(32\\right)$$. The eastward component can be found using sine: $$180sin\\left(32\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws3c-h4",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws3c-h3"
+        ],
+        "title": "Calculating the Resultant Force",
+        "text": "Add Andrea's force to Jennifer's northward component to get the total northward force. The eastward component remains the same as Jennifer's eastward component.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws3c-h5",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws3c-h4"
+        ],
+        "title": "Finding the Direction",
+        "text": "Use the tangent function to find the angle of the resultant force: tan(theta) $$=$$ eastward component / northward component.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws3c-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$18.7$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws3c-h5"
+        ],
+        "title": "Calculate the Angle",
+        "text": "Calculate the angle using the arctangent function: theta $$=$$ arctan(eastward component / northward component).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

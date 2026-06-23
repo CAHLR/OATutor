@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a09f25fmotion15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the acceleration, we need to know the initial velocity, final velocity, and the distance over which the velocity changes. What are these values in the problem?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion15a-h1"
+        ],
+        "title": "Identify Known Values",
+        "text": "The initial velocity is $$0.600$$ $$\\frac{m}{s}$$, the final velocity is $$0$$ $$\\frac{m}{s}$$, and the stopping distance is $$2.00$$ mm. Remember to convert the distance to meters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion15a-h2"
+        ],
+        "title": "Convert Units",
+        "text": "Convert the stopping distance from millimeters to meters. $$1$$ mm $$=$$ $$0.001$$ $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion15a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-90$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion15a-h3"
+        ],
+        "title": "Calculate Acceleration",
+        "text": "Use the formula $${v_f}^2={v_i}^2+2a d$$ to find the acceleration, where $$v_f$$ is the final velocity, $$v_i$$ is the initial velocity, a is the acceleration, and $$d$$ is the distance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion15a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion15a-h4"
+        ],
+        "title": "Express Acceleration in Terms of g",
+        "text": "Once you have the acceleration, express it as a multiple of g, where $$g=9.80$$ $$\\frac{m}{s^2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion15a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9.18$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion15a-h5"
+        ],
+        "title": "Final Calculation",
+        "text": "Divide the calculated acceleration by g to express it in terms of g.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

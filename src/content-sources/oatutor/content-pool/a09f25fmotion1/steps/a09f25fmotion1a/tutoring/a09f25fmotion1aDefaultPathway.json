@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a09f25fmotion1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Position Vectors",
+        "text": "Position vectors describe the location of an object relative to a reference point. In this problem, the traffic light is the reference point.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion1a-h1"
+        ],
+        "title": "Direction Matters",
+        "text": "Remember that west of the traffic light is in the negative $$x$$ direction, while east is in the positive $$x$$ direction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x_1=-2.0$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion1a-h2"
+        ],
+        "title": "Calculate the Initial Position",
+        "text": "At $$t=0$$, the car is $$2.0$$ km west of the traffic light. What is the position vector?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x_2=5.0$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion1a-h3"
+        ],
+        "title": "Calculate the Final Position",
+        "text": "At $$t=6.0$$ min, the car is $$5.0$$ km east of the traffic light. What is the position vector?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion1a-h4"
+        ],
+        "title": "Review the Coordinate System",
+        "text": "Ensure you understand the coordinate system: negative values indicate west, and positive values indicate east.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

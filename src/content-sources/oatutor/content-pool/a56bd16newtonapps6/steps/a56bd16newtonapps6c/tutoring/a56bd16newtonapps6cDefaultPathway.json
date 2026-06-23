@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a56bd16newtonapps6c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Forces",
+        "text": "To find the tension in the cable, consider the forces acting on the elevator. The tension in the cable must overcome both the gravitational force and the force due to acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps6c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps6c-h1"
+        ],
+        "title": "Calculate Gravitational Force",
+        "text": "The gravitational force acting on the elevator can be calculated using the formula: $$F_{gravity}=m g$$, where $$m$$ is the mass of the elevator and g is the acceleration due to gravity $$(9.8$$ m/s**2).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps6c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$16660$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps6c-h2"
+        ],
+        "title": "Calculate Gravitational Force",
+        "text": "What is the gravitational force acting on the elevator? Use the formula $$F_{gravity}=m g$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps6c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps6c-h3"
+        ],
+        "title": "Calculate Net Force",
+        "text": "The net force acting on the elevator is the difference between the tension in the cable and the gravitational force. Use the formula: $$F_{net}=m a$$, where a is the acceleration of the elevator.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps6c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1020$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps6c-h4"
+        ],
+        "title": "Calculate Net Force",
+        "text": "What is the net force acting on the elevator? Use the formula $$F_{net}=m a$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps6c-h6",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps6c-h5"
+        ],
+        "title": "Calculate Tension in the Cable",
+        "text": "The tension in the cable can be found by adding the gravitational force to the net force: $$Tension=F_{gravity}+F_{net}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps6c-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$15640$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps6c-h6"
+        ],
+        "title": "Calculate Tension in the Cable",
+        "text": "What is the tension in the cable during acceleration opposite to the motion? Use the formula $$Tension=F_{gravity}+F_{net}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

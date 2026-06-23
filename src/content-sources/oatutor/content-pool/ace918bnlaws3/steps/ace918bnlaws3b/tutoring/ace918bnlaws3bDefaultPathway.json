@@ -1,0 +1,77 @@
+[
+    {
+        "id": "ace918bnlaws3b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Forces",
+        "text": "Andrea's force is directed due north, while Jennifer's force is at an angle of $$32$$ degrees east of north. We need to find the resultant force by combining these two forces.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws3b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws3b-h1"
+        ],
+        "title": "Breaking Down Jennifer's Force",
+        "text": "Jennifer's force can be broken down into two components: one in the north direction and one in the east direction. Use trigonometric functions to find these components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws3b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws3b-h2"
+        ],
+        "title": "Using Trigonometry",
+        "text": "To find the north component of Jennifer's force, use the cosine function: $$180cos\\left(32\\right)$$. For the east component, use the sine function: $$180sin\\left(32\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws3b-h4",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws3b-h3"
+        ],
+        "title": "Combining the Forces",
+        "text": "Add Andrea's force to the north component of Jennifer's force to get the total northward force. The eastward force is just Jennifer's east component.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws3b-h5",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws3b-h4"
+        ],
+        "title": "Finding the Resultant Force",
+        "text": "Use the Pythagorean theorem to find the magnitude of the resultant force: sqrt((north component)**2+(east component)**2).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws3b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$298$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws3b-h5"
+        ],
+        "title": "Calculate the Magnitude",
+        "text": "Calculate the magnitude of the resultant force using the components you found.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

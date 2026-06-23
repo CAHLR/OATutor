@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a56bd16newtonapps8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Forces",
+        "text": "To find the acceleration of the car, consider the forces acting on it. The only force causing the car to accelerate down the incline is the component of gravitational force parallel to the incline.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps8a-h1"
+        ],
+        "title": "Calculate the Parallel Component of Gravity",
+        "text": "The parallel component of the gravitational force can be calculated using the formula: $$m g sin\\left(\\theta\\right)$$, where $$m$$ is the mass of the car, g is the acceleration due to gravity $$(9.8$$ m/s**2), and theta is the angle of the incline.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps8a-h2"
+        ],
+        "title": "Using Newton's Second Law",
+        "text": "According to Newton's second law, the net force acting on the car is equal to the mass of the car times its acceleration $$(F=ma)$$. Since the only force acting along the incline is the parallel component of gravity, you can set this equal to $$m a$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$g sin\\left(\\theta\\right)$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps8a-h3"
+        ],
+        "title": "Solve for Acceleration",
+        "text": "Using the equation $$m g sin\\left(\\theta\\right)=m a$$, solve for the acceleration a.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps8a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3.35$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps8a-h4"
+        ],
+        "title": "Substitute the Values",
+        "text": "Substitute the known values into the equation $$a=g sin\\left(\\theta\\right)$$ to find the acceleration. Use $$g=9.8$$ $$\\frac{m}{s^2}$$ and $$theta=20$$ degrees.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

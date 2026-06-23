@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a56bd16newtonapps4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the time it takes for the rocket to reach a velocity of $$120$$ $$\\frac{km}{h}$$, we need to use Newton's second law of motion. This involves calculating the acceleration and then using it to find the time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps4b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps4b-h1"
+        ],
+        "title": "Convert Velocity Units",
+        "text": "First, convert the velocity from $$\\frac{km}{h}$$ to $$\\frac{m}{s}$$. Remember that $$1$$ $$\\frac{km}{h}$$ is equal to $$\\frac{1}{3.6}$$ $$\\frac{m}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps4b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$17.5$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps4b-h2"
+        ],
+        "title": "Calculate Acceleration",
+        "text": "Use the formula for acceleration: \\( $$a=\\frac{F}{m}$$ \\), where \\( F \\) is the thrust and \\( $$m$$ \\) is the mass of the rocket.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps4b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps4b-h3"
+        ],
+        "title": "Use the Acceleration to Find Time",
+        "text": "Now that you have the acceleration, use the formula \\( $$v=at$$ \\) to find the time \\( $$t$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps4b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4.33$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps4b-h4"
+        ],
+        "title": "Calculate Time",
+        "text": "Rearrange the formula \\( $$v=at$$ \\) to solve for \\( $$t$$ \\): \\( $$t=\\frac{v}{a}$$ \\). Use the converted velocity and the calculated acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

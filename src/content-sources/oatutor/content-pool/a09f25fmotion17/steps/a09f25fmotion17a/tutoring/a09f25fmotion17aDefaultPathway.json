@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a09f25fmotion17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The shot putter throws the shot straight up. We need to calculate the time it takes for the shot to reach the ground from the release point.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion17a-h1"
+        ],
+        "title": "Identify the Known Values",
+        "text": "The initial velocity of the shot is $$11.0$$ $$\\frac{m}{s}$$, the release height is $$2.20$$ $$m$$, and the shot putter's height is $$1.80$$ $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion17a-h2"
+        ],
+        "title": "Determine the Total Distance",
+        "text": "The shot needs to travel from the release height to the ground. Calculate the total distance it needs to fall.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion17a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.4$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion17a-h3"
+        ],
+        "title": "Calculate the Total Distance",
+        "text": "The total distance is the release height minus the shot putter's height. Calculate $$2.20-1.80$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion17a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion17a-h4"
+        ],
+        "title": "Use the Kinematic Equation",
+        "text": "Use the kinematic equation: $$h=v_i t+0.5a t^2$$, where $$h$$ is the height, $$v_i$$ is the initial velocity, a is the acceleration due to gravity $$(-9.8$$ m/s\u00b2), and $$t$$ is the time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion17a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.28$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion17a-h5"
+        ],
+        "title": "Solve for Time",
+        "text": "Rearrange the equation to solve for time: $$0=11t+0.5\\left(-9.8\\right) t^2-0.4$$. Solve this quadratic equation for $$t$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

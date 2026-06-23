@@ -1,0 +1,82 @@
+[
+    {
+        "id": "abaea60linmom17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Density Function",
+        "text": "The density function is given by $$rho(x,y)=\\rho_0 x y$$. This means the density varies with both $$x$$ and $$y$$ coordinates. How does this affect the calculation of the center of mass?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom17a-h1"
+        ],
+        "title": "Formula for Center of Mass",
+        "text": "The x-coordinate of the center of mass for a continuous body is given by the formula: $$x_{cm}$$ $$=$$ $$\\frac{1}{M}$$ * $$\\int_{0}^{a} x*rho(x,y) \\,dxdy$$, where M is the total mass of the rectangle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom17a-h2"
+        ],
+        "title": "Calculate the Total Mass",
+        "text": "To find the total mass M, integrate the density function over the entire area of the rectangle: M $$=$$ $$\\int_{0}^{a} rho(x,y) \\,dxdy$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom17a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\rho_0 a^2 b^2}{4}$$"
+        ],
+        "dependencies": [
+            "abaea60linmom17a-h3"
+        ],
+        "title": "Integrate the Density Function",
+        "text": "Calculate the integral of the density function over the area of the rectangle to find the total mass M.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom17a-h5",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom17a-h4"
+        ],
+        "title": "Substitute the Total Mass",
+        "text": "Substitute the expression for the total mass M into the formula for $$x_{cm}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom17a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2a}{3}$$"
+        ],
+        "dependencies": [
+            "abaea60linmom17a-h5"
+        ],
+        "title": "Calculate $$x_{cm}$$",
+        "text": "Using the formula for $$x_{cm}$$ and the expression for M, calculate the x-coordinate of the center of mass.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

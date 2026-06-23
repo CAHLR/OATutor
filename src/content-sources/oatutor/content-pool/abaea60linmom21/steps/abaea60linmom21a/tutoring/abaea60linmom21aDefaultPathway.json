@@ -1,0 +1,65 @@
+[
+    {
+        "id": "abaea60linmom21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Rocket Equation",
+        "text": "To find the initial mass of the rocket, we can use the rocket equation, which relates the change in velocity to the exhaust speed and the mass of the rocket.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom21a-h1"
+        ],
+        "title": "Rocket Equation Formula",
+        "text": "The rocket equation is given by: \\( \\Delta v $$=$$ $$v_e$$ \\cdot \\ln \\left( \\frac{m_i}{m_f} \\right) \\), where \\( \\Delta v \\) is the change in velocity, \\( $$v_e$$ \\) is the exhaust speed, \\( $$m_i$$ \\) is the initial mass, and \\( $$m_f$$ \\) is the final mass.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom21a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom21a-h2"
+        ],
+        "title": "Given Values",
+        "text": "From the problem, we know: \\( \\Delta v $$=$$ $$100$$ \\) $$\\frac{m}{s}$$, \\( $$v_e$$ $$=$$ $$1500$$ \\) $$\\frac{m}{s}$$, and the mass of fuel burned is $$100$$ kg.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom21a-h4",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom21a-h3"
+        ],
+        "title": "Final Mass Calculation",
+        "text": "The final mass \\( $$m_f$$ \\) is the initial mass \\( $$m_i$$ \\) minus the mass of the fuel burned. So, \\( $$m_f$$ $$=$$ $$m_i$$ - $$100$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom21a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1550$$"
+        ],
+        "dependencies": [
+            "abaea60linmom21a-h4"
+        ],
+        "title": "Solving for Initial Mass",
+        "text": "Using the rocket equation \\( \\Delta v $$=$$ $$v_e$$ \\cdot \\ln \\left( \\frac{m_i}{m_f} \\right) \\), substitute the known values and solve for \\( $$m_i$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

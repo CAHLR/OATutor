@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a88c93efixedaxis6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Motion",
+        "text": "To find the angle rotated, we need to use the formula for angular displacement when angular acceleration is constant.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis6b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis6b-h1"
+        ],
+        "title": "Formula for Angular Displacement",
+        "text": "The formula for angular displacement \\(\\theta\\) when starting from rest is \\(\\theta=0.5*\\alpha*t**2\\), where \\(\\alpha\\) is the angular acceleration and \\(t\\) is the time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis6b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.5\\times4\\times{10}^2$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis6b-h2"
+        ],
+        "title": "Substitute Values into the Formula",
+        "text": "Given $$\\(\\alpha=4.0\\)$$ rad/s\u00b2 and $$\\(t=10\\)$$ s, substitute these values into the formula \\(\\theta=0.5*\\alpha*t**2\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis6b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$200$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis6b-h3"
+        ],
+        "title": "Calculate the Angle Rotated",
+        "text": "Calculate \\(\\theta\\) using the substituted values: \\(\\theta=0.5*4.0*10**2\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis6b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis6b-h4"
+        ],
+        "title": "Final Calculation",
+        "text": "After calculating, you should find that the angle rotated is $$200$$ radians.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

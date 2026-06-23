@@ -1,0 +1,104 @@
+[
+    {
+        "id": "abaea60linmom17b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Density Function",
+        "text": "The density function is given by $$rho(x,y)=\\rho_0 x y$$. This means that the density varies with both $$x$$ and $$y$$ coordinates. How does this affect the calculation of the center of mass?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom17b-h2",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom17b-h1"
+        ],
+        "title": "Formula for Center of Mass",
+        "text": "The y-coordinate of the center of mass is given by the formula: $$y_{cm}$$ $$=$$ $$\\frac{1}{M}$$ * $$\\int_{0}^{b} y*rho(x,y) \\,dy$$ * $$\\int_{0}^{a} dx \\,dx$$. What does each part of this formula represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom17b-h3",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom17b-h2"
+        ],
+        "title": "Calculate the Total Mass",
+        "text": "To find the total mass M, integrate the density function over the entire area of the rectangle: M $$=$$ $$\\int_{0}^{a} rho(x,y) \\,dx$$ * $$\\int_{0}^{b} dy \\,dy$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom17b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\rho_0 x b^2}{2}$$"
+        ],
+        "dependencies": [
+            "abaea60linmom17b-h3"
+        ],
+        "title": "Integrate the Density Function",
+        "text": "Calculate the integral of the density function over the y-axis: $$\\int_{0}^{b} y*rho(x,y) \\,dy$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom17b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\rho_0 a^2 b^2}{4}$$"
+        ],
+        "dependencies": [
+            "abaea60linmom17b-h4"
+        ],
+        "title": "Integrate Over the x-axis",
+        "text": "Now, integrate the result from the previous step over the x-axis: $$\\int_{0}^{a} \\frac{\\rho_0 x b^2}{2} \\,dx$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom17b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\rho_0 a^2 b^2}{4}$$"
+        ],
+        "dependencies": [
+            "abaea60linmom17b-h5"
+        ],
+        "title": "Calculate the Total Mass",
+        "text": "Integrate the density function over the entire area to find the total mass M: $$\\int_{0}^{a} \\rho_0 x y \\,dx$$ * $$\\int_{0}^{b} dy \\,dy$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom17b-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2b}{3}$$"
+        ],
+        "dependencies": [
+            "abaea60linmom17b-h6"
+        ],
+        "title": "Find the y-coordinate of the Center of Mass",
+        "text": "Use the formula for $$y_{cm}$$ and the results from previous steps to find the y-coordinate of the center of mass.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

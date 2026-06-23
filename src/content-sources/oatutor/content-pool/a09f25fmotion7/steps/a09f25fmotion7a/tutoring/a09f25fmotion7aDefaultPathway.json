@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a09f25fmotion7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Displacement",
+        "text": "Displacement is the change in position of an object. Since the particle is moving at a constant velocity, you can calculate displacement using the formula: displacement $$=$$ velocity * time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion7a-h1"
+        ],
+        "title": "Identify the Given Values",
+        "text": "You are given the velocity of the particle as $$30$$ $$\\frac{m}{s}$$ and the time interval as $$5.0$$ s. Use these values in the displacement formula.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$150$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion7a-h2"
+        ],
+        "title": "Calculate the Displacement",
+        "text": "Using the formula displacement $$=$$ velocity * time, substitute the given values: displacement $$=$$ $$30$$ * $$5$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

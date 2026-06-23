@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a56bd16newtonapps6d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find out how high the elevator has moved, we need to consider the forces acting on it and the work done by these forces.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps6d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps6d-h1"
+        ],
+        "title": "Identify the Forces",
+        "text": "The main force acting on the elevator is gravity. The work done by the elevator's motor must overcome this gravitational force to lift the elevator.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps6d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps6d-h2"
+        ],
+        "title": "Calculate the Work Done",
+        "text": "The work done by the elevator's motor is equal to the force exerted by the motor times the distance the elevator moves. This work is also equal to the change in gravitational potential energy.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps6d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$16660$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps6d-h3"
+        ],
+        "title": "Calculate the Gravitational Force",
+        "text": "The gravitational force acting on the elevator is given by the formula: $$force=mass gravity$$. Use the mass of the elevator and the acceleration due to gravity $$\\frac{9.8m}{s^2}$$ to find the force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps6d-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$322000$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps6d-h4"
+        ],
+        "title": "Calculate the Work Done",
+        "text": "The work done by the elevator's motor is equal to the gravitational force times the height the elevator moves. Use the force calculated in the previous step and the given height to find the work done.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps6d-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$19.35$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps6d-h5"
+        ],
+        "title": "Find the Height",
+        "text": "Rearrange the work formula to solve for height: $$height=\\frac{work}{force}$$. Use the work done and the gravitational force to find the height the elevator has moved.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

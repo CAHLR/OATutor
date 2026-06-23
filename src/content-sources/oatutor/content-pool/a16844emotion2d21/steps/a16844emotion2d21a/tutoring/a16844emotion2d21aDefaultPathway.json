@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a16844emotion2d21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Centripetal Acceleration",
+        "text": "Centripetal acceleration is the acceleration required to keep an object moving in a circular path. It is directed towards the center of the circle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d21a-h1"
+        ],
+        "title": "Formula for Centripetal Acceleration",
+        "text": "The formula for centripetal acceleration is given by \\(a_c=v**2/r\\), where \\(v\\) is the velocity and \\(r\\) is the radius of the circular path.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d21a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$39.6$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d21a-h2"
+        ],
+        "title": "Substitute the Values",
+        "text": "Substitute the given values into the formula \\(a_c=v**2/r\\). Use $$\\(v=89.0\\)$$ $$\\frac{m}{s}$$ and $$\\(r=200.0\\)$$ $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

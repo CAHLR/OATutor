@@ -1,0 +1,63 @@
+[
+    {
+        "id": "a56bd16newtonapps17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Ideal Speed Formula",
+        "text": "To find the ideal speed for a banked curve, we use the formula: \\( v $$=$$ \\sqrt{r \\cdot g \\cdot \\tan(\\theta)} \\), where \\( $$r$$ \\) is the radius of the curve, \\( g \\) is the acceleration due to gravity $$(9.8$$ m/s\u00b2), and \\( $$\\theta$$ \\) is the banking angle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps17a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "tan(15)"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps17a-h1"
+        ],
+        "title": "Calculate \\( \\tan(\\theta) \\)",
+        "text": "First, calculate \\( \\tan(\\theta) \\) for \\( $$\\theta$$ $$=$$ $$15$$ \\) degrees.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps17a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$100\\times9.8 tan\\left(15\\right)$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps17a-h2"
+        ],
+        "title": "Calculate \\( $$r$$ \\cdot g \\cdot \\tan(\\theta) \\)",
+        "text": "Now, multiply the radius \\( $$r$$ $$=$$ $$100$$ \\) $$m$$, the gravitational acceleration \\( g $$=$$ $$9.8$$ \\) m/s\u00b2, and \\( \\tan(15) \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps17a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sqrt{100\\times9.8 tan\\left(15\\right)}$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps17a-h3"
+        ],
+        "title": "Find the Ideal Speed",
+        "text": "Finally, take the square root of the result from the previous step to find the ideal speed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

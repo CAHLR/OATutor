@@ -1,0 +1,82 @@
+[
+    {
+        "id": "aaf87e0equilibrium4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bulk Modulus",
+        "text": "The bulk modulus is a measure of a substance's resistance to uniform compression. It is defined as the ratio of the change in pressure to the fractional change in volume.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aaf87e0equilibrium4a-h1"
+        ],
+        "title": "Volume Change and Pressure",
+        "text": "The change in pressure can be calculated using the formula: \\( \\Delta P $$=$$ -B \\frac{\\Delta V}{V} \\), where \\( B \\) is the bulk modulus, \\( \\Delta V \\) is the change in volume, and \\( V \\) is the original volume.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aaf87e0equilibrium4a-h2"
+        ],
+        "title": "Calculating Change in Pressure",
+        "text": "Given that the volume increases by $$0.20\\%$$, \\( \\frac{\\Delta V}{V} $$=$$ $$0.002$$ \\). Use this to find \\( \\Delta P \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3600000$$"
+        ],
+        "dependencies": [
+            "aaf87e0equilibrium4a-h3"
+        ],
+        "title": "Calculate \\( \\Delta P \\)",
+        "text": "Use the formula \\( \\Delta P $$=$$ -B \\frac{\\Delta V}{V} \\) with \\( B $$=$$ $$1.8\\times{10}^9$$ \\) N/m\u00b2 and \\( \\frac{\\Delta V}{V} $$=$$ $$0.002$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aaf87e0equilibrium4a-h4"
+        ],
+        "title": "Force and Pressure Relationship",
+        "text": "The force exerted by the juice can be calculated using the formula: \\( F $$=$$ P \\times A \\), where \\( P \\) is the pressure and \\( A \\) is the area.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium4a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$360$$"
+        ],
+        "dependencies": [
+            "aaf87e0equilibrium4a-h5"
+        ],
+        "title": "Calculate Force per Square Centimeter",
+        "text": "Convert the pressure \\( \\Delta P \\) from N/m\u00b2 to N/cm\u00b2 and calculate the force per square centimeter.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

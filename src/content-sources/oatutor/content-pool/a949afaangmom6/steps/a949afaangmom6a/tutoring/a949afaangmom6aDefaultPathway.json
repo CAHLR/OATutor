@@ -1,0 +1,111 @@
+[
+    {
+        "id": "a949afaangmom6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the work required to stop the cylinder, we need to consider both its translational and rotational kinetic energy.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom6a-h1"
+        ],
+        "title": "Translational Kinetic Energy",
+        "text": "The translational kinetic energy of the cylinder is given by the formula: $$KE_{trans}$$ $$=$$ $$\\frac{1}{2} m v^2$$, where $$m$$ is the mass and v is the velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom6a-h1"
+        ],
+        "title": "Rotational Kinetic Energy",
+        "text": "The rotational kinetic energy of the cylinder is given by the formula: $$KE_{rot}$$ $$=$$ $$\\frac{1}{2} I {\\omega}^2$$, where I is the moment of inertia and omega is the angular velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom6a-h3"
+        ],
+        "title": "Moment of Inertia for a Cylinder",
+        "text": "The moment of inertia for a solid cylinder is I $$=$$ $$\\frac{1}{2} m r^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom6a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom6a-h3"
+        ],
+        "title": "Relating Linear and Angular Velocity",
+        "text": "The angular velocity omega can be related to the linear velocity v by the formula: omega $$=$$ $$\\frac{v}{r}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom6a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$720$$"
+        ],
+        "dependencies": [
+            "a949afaangmom6a-h2"
+        ],
+        "title": "Calculate Translational Kinetic Energy",
+        "text": "Using the formula $$KE_{trans}$$ $$=$$ $$\\frac{1}{2} m v^2$$, calculate the translational kinetic energy of the cylinder.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom6a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$360$$"
+        ],
+        "dependencies": [
+            "a949afaangmom6a-h5"
+        ],
+        "title": "Calculate Rotational Kinetic Energy",
+        "text": "Using the formula $$KE_{rot}$$ $$=$$ $$\\frac{1}{2} I {\\omega}^2$$ and the relation omega $$=$$ $$\\frac{v}{r}$$, calculate the rotational kinetic energy of the cylinder.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom6a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1080$$"
+        ],
+        "dependencies": [
+            "a949afaangmom6a-h6"
+        ],
+        "title": "Total Work Required",
+        "text": "The total work required to stop the cylinder is the sum of its translational and rotational kinetic energies. Calculate this total work.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a56bd16newtonapps19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Forces",
+        "text": "To find the maximum speed, consider the forces acting on the car. The frictional force provides the necessary centripetal force to keep the car moving in a circle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps19a-h1"
+        ],
+        "title": "Centripetal Force Equation",
+        "text": "The centripetal force needed to keep the car moving in a circle is given by the equation: $$F_c=\\frac{{mv}^2}{r}$$, where $$m$$ is the mass of the car, v is the speed, and $$r$$ is the radius of the curve.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps19a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps19a-h2"
+        ],
+        "title": "Frictional Force Equation",
+        "text": "The maximum static frictional force that can act on the car is given by: $$F_f=\u03bc_s N$$, where $$\u03bc_s$$ is the coefficient of static friction and N is the normal force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps19a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps19a-h3"
+        ],
+        "title": "Normal Force on a Flat Surface",
+        "text": "On a flat surface, the normal force N is equal to the gravitational force acting on the car, which is $$N=mg$$, where g is the acceleration due to gravity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps19a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$v=\\sqrt{\u03bc_s g r}$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps19a-h4"
+        ],
+        "title": "Equating Forces",
+        "text": "Set the maximum static frictional force equal to the centripetal force to find the maximum speed: $$\u03bc_s mg=\\frac{{mv}^2}{r}$$. Solve for v.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps19a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$v=\\sqrt{0.7\\times9.8\\times65}$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps19a-h5"
+        ],
+        "title": "Substitute Values",
+        "text": "Substitute the given values into the equation: $$\u03bc_s=0.70$$, $$g=\\frac{9.8m}{s^2}$$, and $$r=65m$$. Calculate the maximum speed v.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps19a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$21.1$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps19a-h6"
+        ],
+        "title": "Calculate the Maximum Speed",
+        "text": "Calculate the value of v using the equation: $$v=\\sqrt{0.7\\times9.8\\times65}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

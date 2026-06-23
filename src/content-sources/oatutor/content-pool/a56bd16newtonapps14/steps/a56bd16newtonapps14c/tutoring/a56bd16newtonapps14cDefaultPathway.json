@@ -1,0 +1,54 @@
+[
+    {
+        "id": "a56bd16newtonapps14c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the ratio of the centripetal force to the child's weight, we need to calculate both forces and then divide the centripetal force by the weight.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps14c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps14c-h1"
+        ],
+        "title": "Calculate the Centripetal Force",
+        "text": "The centripetal force can be calculated using the formula: $$F_c=\\frac{m v^2}{r}$$, where $$m$$ is the mass, v is the velocity, and $$r$$ is the radius. First, convert the rotational speed from revolutions per minute to meters per second.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps14c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps14c-h1"
+        ],
+        "title": "Calculate the Weight",
+        "text": "The weight of the child can be calculated using the formula: $$W=m g$$, where $$m$$ is the mass and g is the acceleration due to gravity $$(9.8$$ m/s\u00b2).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps14c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.24$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps14c-h2",
+            "a56bd16newtonapps14c-h3"
+        ],
+        "title": "Find the Ratio",
+        "text": "Now that you have both the centripetal force and the weight, find their ratio by dividing the centripetal force by the weight.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

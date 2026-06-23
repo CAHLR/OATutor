@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a16844emotion2d28a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Centripetal Acceleration",
+        "text": "Centripetal acceleration is the acceleration that keeps an object moving in a circular path. It is directed towards the center of the circle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d28a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d28a-h1"
+        ],
+        "title": "Formula for Centripetal Acceleration",
+        "text": "The formula for centripetal acceleration is given by $$a_c=\\frac{v^2}{r}$$, where v is the velocity of the satellite and $$r$$ is the radius of the orbit.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d28a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d28a-h2"
+        ],
+        "title": "Finding the Velocity",
+        "text": "The velocity of the satellite can be found using the formula $$v=\\frac{2\\pi r}{T}$$, where T is the period of the satellite's orbit.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d28a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3074.6$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d28a-h3"
+        ],
+        "title": "Calculate the Velocity",
+        "text": "Calculate the velocity of the satellite using the formula $$v=\\frac{2\\pi r}{T}$$. Use $$r=42250\\times{10}^3$$ $$m$$ and $$T=86400$$ s.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d28a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.223$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d28a-h4"
+        ],
+        "title": "Calculate Centripetal Acceleration",
+        "text": "Now that you have the velocity, use the formula $$a_c=\\frac{v^2}{r}$$ to find the centripetal acceleration. Use $$v=3074.6$$ $$\\frac{m}{s}$$ and $$r=42250\\times{10}^3$$ $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

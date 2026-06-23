@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a56bd16newtonapps10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Forces on the Ramp",
+        "text": "To find the acceleration of the box, consider the forces acting on it. The forces include gravity, normal force, and friction. The gravitational force can be split into components parallel and perpendicular to the ramp.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps10a-h1"
+        ],
+        "title": "Calculate the Gravitational Force Component",
+        "text": "The component of gravitational force acting down the ramp is given by $$m g sin\\left(\\theta\\right)$$, where $$m$$ is the mass of the box, g is the acceleration due to gravity $$(9.8$$ m/s**2), and theta is the angle of the ramp.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps10a-h2"
+        ],
+        "title": "Calculate the Frictional Force",
+        "text": "The frictional force opposing the motion is given by $$\\mu m g cos\\left(\\theta\\right)$$, where mu is the coefficient of friction, $$m$$ is the mass of the box, g is the acceleration due to gravity, and theta is the angle of the ramp.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps10a-h3"
+        ],
+        "title": "Net Force and Acceleration",
+        "text": "The net force acting on the box is the difference between the gravitational force component and the frictional force. Use Newton's second law, $$F=ma$$, to find the acceleration: $$a=\\frac{m g sin\\left(\\theta\\right)-\\mu m g cos\\left(\\theta\\right)}{m}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps10a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.737$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps10a-h4"
+        ],
+        "title": "Calculate the Acceleration",
+        "text": "Substitute the given values: $$g=9.8$$ $$\\frac{m}{s^2}$$, $$theta=10$$ degrees, and $$mu=0.1$$ into the equation $$a=g sin\\left(\\theta\\right)-\\mu g cos\\left(\\theta\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

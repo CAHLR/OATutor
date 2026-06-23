@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a09f25fmotion4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Instantaneous Velocity",
+        "text": "To find the instantaneous velocity of a particle at a given time, you need to determine the derivative of the position function with respect to time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion4a-h1"
+        ],
+        "title": "Derivative of the Position Function",
+        "text": "The position function is given as $$x(t)=10t-2t^2$$. Find the derivative of this function to get the velocity function v(t).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10-4t$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion4a-h2"
+        ],
+        "title": "Calculate the Derivative",
+        "text": "Differentiate $$x(t)=10t-2t^2$$ with respect to $$t$$ to find v(t).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion4a-h3"
+        ],
+        "title": "Substitute the Time Value",
+        "text": "Now that you have the velocity function $$v(t)=10-4t$$, substitute $$t=2$$ to find the instantaneous velocity at that time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion4a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion4a-h4"
+        ],
+        "title": "Calculate v(2)",
+        "text": "Substitute $$t=2$$ into $$v(t)=10-4t$$ to find v(2).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

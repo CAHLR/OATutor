@@ -1,0 +1,88 @@
+[
+    {
+        "id": "a949afaangmom12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Momentum",
+        "text": "Angular momentum (L) is given by the formula $$L=I \\omega$$, where I is the moment of inertia and \u03c9 is the angular velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom12a-h1"
+        ],
+        "title": "Moment of Inertia for a Rod",
+        "text": "For a rod rotating about its center, the moment of inertia (I) is given by $$I=\\frac{1}{12} m L^2$$, where $$m$$ is the mass and L is the length of the rod.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom12a-h1"
+        ],
+        "title": "Calculating Angular Velocity",
+        "text": "Angular velocity (\u03c9) can be calculated using $$\u03c9=2\\pi f$$, where f is the frequency in revolutions per second.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom12a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$180$$"
+        ],
+        "dependencies": [
+            "a949afaangmom12a-h2"
+        ],
+        "title": "Calculate Moment of Inertia",
+        "text": "Calculate the moment of inertia (I) for the propeller using the formula $$I=\\frac{1}{12} m L^2$$. Remember to consider the mass and length of both blades.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom12a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4\\pi$$"
+        ],
+        "dependencies": [
+            "a949afaangmom12a-h3"
+        ],
+        "title": "Determine Angular Velocity at $$t=10$$ s",
+        "text": "First, find the angular velocity at $$t=10$$ s. The propeller reaches $$1200$$ rpm in $$30$$ seconds. Use the formula $$\u03c9=2\\pi f$$, where f is the frequency in revolutions per second.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom12a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$30159$$"
+        ],
+        "dependencies": [
+            "a949afaangmom12a-h4",
+            "a949afaangmom12a-h5"
+        ],
+        "title": "Calculate Angular Momentum at $$t=10$$ s",
+        "text": "Now, use the formula $$L=I \\omega$$ to find the angular momentum at $$t=10$$ s. Use the moment of inertia and angular velocity you calculated.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

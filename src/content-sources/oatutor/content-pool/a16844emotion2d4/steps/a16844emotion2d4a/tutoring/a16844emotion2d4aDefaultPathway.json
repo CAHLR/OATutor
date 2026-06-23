@@ -1,0 +1,113 @@
+[
+    {
+        "id": "a16844emotion2d4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Velocity",
+        "text": "To find the velocity of the particle, we need to differentiate the position vector with respect to time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d4a-h1"
+        ],
+        "title": "Differentiating the Position Vector",
+        "text": "The position vector is given as $$r(t)=4t^2 i-3j+2t^3 k$$. Differentiate each component with respect to time $$t$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8t$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d4a-h2"
+        ],
+        "title": "Calculate the Derivative",
+        "text": "Differentiate the i-component: $$4t^2$$. What is the derivative?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d4a-h2"
+        ],
+        "title": "Calculate the Derivative",
+        "text": "Differentiate the j-component: $$-3.0$$. What is the derivative?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d4a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6t^2$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d4a-h2"
+        ],
+        "title": "Calculate the Derivative",
+        "text": "Differentiate the k-component: $$2t^3$$. What is the derivative?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d4a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d4a-h3",
+            "a16844emotion2d4a-h4",
+            "a16844emotion2d4a-h5"
+        ],
+        "title": "Combine the Derivatives",
+        "text": "Combine the derivatives of each component to find the velocity vector v(t).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d4a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d4a-h6"
+        ],
+        "title": "Velocity at $$t=0$$",
+        "text": "Substitute $$t=0$$ into the velocity vector v(t) to find the velocity at $$0$$ s.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$0$$",
+            "$$0$$",
+            "$$4i+2k$$",
+            "$$8i+6k$$"
+        ]
+    }
+]

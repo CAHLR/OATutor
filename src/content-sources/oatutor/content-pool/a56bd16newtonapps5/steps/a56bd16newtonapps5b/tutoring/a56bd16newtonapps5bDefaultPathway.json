@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a56bd16newtonapps5b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the average acceleration of the shell in the tube, we need to know the initial and final velocities and the distance over which the acceleration occurs.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps5b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps5b-h1"
+        ],
+        "title": "Initial and Final Velocities",
+        "text": "The initial velocity of the shell is $$0$$ $$\\frac{m}{s}$$ since it starts from rest. We need to find the final velocity as it leaves the tube.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps5b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps5b-h2"
+        ],
+        "title": "Using Kinematic Equations",
+        "text": "Use the kinematic equation v\u00b2 $$=$$ u\u00b2 + 2as to find the final velocity, where v is the final velocity, u is the initial velocity, a is the acceleration, and s is the distance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps5b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$v=\\sqrt{2\\times9.8\\times110}$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps5b-h3"
+        ],
+        "title": "Calculate Final Velocity",
+        "text": "Given that the shell reaches a height of $$110.0$$ $$m$$, use the kinematic equation to find the velocity as it leaves the tube.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps5b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps5b-h4"
+        ],
+        "title": "Finding Average Acceleration",
+        "text": "Now that you have the final velocity, use the formula a $$=$$ $$\\frac{v-u}{t}$$ to find the average acceleration, where $$t$$ is the time taken to travel the length of the tube.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps5b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2396$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps5b-h5"
+        ],
+        "title": "Calculate Average Acceleration",
+        "text": "Use the formula a $$=$$ (v\u00b2-u\u00b2)/(2s) to find the average acceleration, where s is the length of the tube.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

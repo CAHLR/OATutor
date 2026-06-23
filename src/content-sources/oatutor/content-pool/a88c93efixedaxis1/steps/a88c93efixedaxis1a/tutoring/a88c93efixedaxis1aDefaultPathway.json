@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a88c93efixedaxis1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Velocity",
+        "text": "Angular velocity is the rate of change of angular displacement and is usually measured in radians per second.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis1a-h1"
+        ],
+        "title": "Formula for Angular Velocity",
+        "text": "The formula for angular velocity (\u03c9) is given by $$\u03c9=\\frac{\\theta}{t}$$, where \u03b8 is the angular displacement in radians and $$t$$ is the time in seconds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis1a-h2"
+        ],
+        "title": "Finding Angular Displacement",
+        "text": "Since the track is circular, the angular displacement \u03b8 can be found using the formula $$\\theta=\\frac{s}{r}$$, where s is the arc length (400 m) and $$r$$ is the radius of the track.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$63.66$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis1a-h3"
+        ],
+        "title": "Calculate the Radius",
+        "text": "Assuming the track is a perfect circle, calculate the radius using the circumference formula $$C=2pir$$, where C is the circumference (400 m).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis1a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6.28$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis1a-h4"
+        ],
+        "title": "Calculate Angular Displacement",
+        "text": "Using the radius calculated, find the angular displacement $$\\theta=\\frac{s}{r}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis1a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.14$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis1a-h5"
+        ],
+        "title": "Calculate Angular Velocity",
+        "text": "Now, use the formula $$\u03c9=\\frac{\\theta}{t}$$ to find the angular velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

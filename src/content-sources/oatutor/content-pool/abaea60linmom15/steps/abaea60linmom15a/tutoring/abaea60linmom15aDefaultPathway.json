@@ -1,0 +1,111 @@
+[
+    {
+        "id": "abaea60linmom15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the final velocity of the ozone molecule, we need to use the principle of conservation of momentum. This principle states that the total momentum before the collision is equal to the total momentum after the collision.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom15a-h1"
+        ],
+        "title": "Calculate Initial Momentum",
+        "text": "Calculate the initial momentum of the oxygen atom and the oxygen molecule separately. Use the formula: \\( $$p=mv$$ \\), where \\( $$m$$ \\) is mass and \\( v \\) is velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom15a-h2"
+        ],
+        "title": "Components of Velocity",
+        "text": "Break down the velocities of the oxygen atom and molecule into their \\( \\hat{i} \\) and \\( \\hat{j} \\) components using trigonometry. For example, \\( v_x=v\\cos(\\theta) \\) and \\( v_y=v\\sin(\\theta) \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom15a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$16\\times733 cos\\left(15\\right)+32\\times528 cos\\left(128\\right)$$"
+        ],
+        "dependencies": [
+            "abaea60linmom15a-h3"
+        ],
+        "title": "Calculate \\( \\hat{i} \\) Component of Initial Momentum",
+        "text": "Calculate the \\( \\hat{i} \\) component of the initial momentum for both the oxygen atom and molecule. Add them together to get the total initial \\( \\hat{i} \\) momentum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom15a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$16\\times733 sin\\left(15\\right)+32\\times528 sin\\left(128\\right)$$"
+        ],
+        "dependencies": [
+            "abaea60linmom15a-h4"
+        ],
+        "title": "Calculate \\( \\hat{j} \\) Component of Initial Momentum",
+        "text": "Calculate the \\( \\hat{j} \\) component of the initial momentum for both the oxygen atom and molecule. Add them together to get the total initial \\( \\hat{j} \\) momentum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom15a-h6",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom15a-h5"
+        ],
+        "title": "Final Momentum and Velocity",
+        "text": "The final momentum of the system is the sum of the initial momenta. Since the masses are combined, use the total mass to find the final velocity: \\( v_f=\\frac{p_f}{m_f} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom15a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "(16*733*cos(15)+32*528*cos(128))/(16+32)\\hat{i}+(16*733*sin(15)+32*528*sin(128))/(16+32)\\hat{j}"
+        ],
+        "dependencies": [
+            "abaea60linmom15a-h6"
+        ],
+        "title": "Calculate Final Velocity",
+        "text": "Using the total initial momentum and the combined mass of the ozone molecule, calculate the final velocity components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom15a-h8",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom15a-h7"
+        ],
+        "title": "Verify Your Answer",
+        "text": "Ensure that your final velocity components match the given answer: \\( 19.3\\hat{i}+340.6\\hat{j} \\) $$\\frac{m}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

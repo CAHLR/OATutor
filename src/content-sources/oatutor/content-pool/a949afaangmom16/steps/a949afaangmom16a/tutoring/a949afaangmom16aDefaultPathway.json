@@ -1,0 +1,126 @@
+[
+    {
+        "id": "a949afaangmom16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Momentum Conservation",
+        "text": "The principle of conservation of angular momentum states that if no external torque acts on a system, the total angular momentum of the system remains constant. This means that the initial angular momentum before the tuck is equal to the angular momentum during the somersaults.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom16a-h1"
+        ],
+        "title": "Angular Momentum Formula",
+        "text": "Angular momentum (L) is given by the product of the moment of inertia (I) and the angular velocity (\u03c9): $$L=I \\omega$$. Use this formula to find the initial angular velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom16a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$L_{initial}=16.9\\omega_{initial}$$"
+        ],
+        "dependencies": [
+            "a949afaangmom16a-h2"
+        ],
+        "title": "Calculate Initial Angular Momentum",
+        "text": "Calculate the initial angular momentum using the moment of inertia before the tuck and the unknown initial angular velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom16a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$L_{somersaults}=4.2\\omega_{somersaults}$$"
+        ],
+        "dependencies": [
+            "a949afaangmom16a-h3"
+        ],
+        "title": "Calculate Angular Momentum During Somersaults",
+        "text": "Calculate the angular momentum during the somersaults using the moment of inertia after the tuck and the angular velocity during the somersaults.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom16a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$16.9\\omega_{initial}=4.2\\omega_{somersaults}$$"
+        ],
+        "dependencies": [
+            "a949afaangmom16a-h4"
+        ],
+        "title": "Relate Initial and Somersault Angular Momentum",
+        "text": "Since angular momentum is conserved, set the initial angular momentum equal to the angular momentum during the somersaults.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom16a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\omega_{somersaults}=\\frac{3\\times2 \\pi}{1.4}$$"
+        ],
+        "dependencies": [
+            "a949afaangmom16a-h5"
+        ],
+        "title": "Find Angular Velocity During Somersaults",
+        "text": "Use the time taken for the somersaults to find the angular velocity during the somersaults. The diver completes three somersaults in $$1.4$$ seconds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom16a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\omega_{initial}=\\frac{\\frac{4.2\\times3\\times2 \\pi}{1.4}}{16.9}$$"
+        ],
+        "dependencies": [
+            "a949afaangmom16a-h6"
+        ],
+        "title": "Solve for Initial Angular Velocity",
+        "text": "Substitute the expression for $$\\omega_{somersaults}$$ into the conservation equation and solve for $$\\omega_{initial}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom16a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.533$$"
+        ],
+        "dependencies": [
+            "a949afaangmom16a-h7"
+        ],
+        "title": "Calculate the Initial Rotation Rate",
+        "text": "Calculate the initial rotation rate using the expression derived.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

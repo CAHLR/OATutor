@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a56bd16newtonapps16b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Centripetal Acceleration",
+        "text": "Centripetal acceleration is the acceleration that keeps an object moving in a circular path. It is directed towards the center of the circle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps16b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps16b-h1"
+        ],
+        "title": "Formula for Centripetal Acceleration",
+        "text": "The formula for centripetal acceleration is given by $$a_c=\\frac{v^2}{r}$$, where v is the velocity and $$r$$ is the radius of the circular path.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps16b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps16b-h2"
+        ],
+        "title": "Using the Banking Angle",
+        "text": "In an ideally banked turn, the centripetal force is provided by the horizontal component of the normal force. The angle of banking helps determine the radius of the turn.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps16b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$r=\\frac{{30}^2}{9.8tan\\left(75\\right)}$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps16b-h3"
+        ],
+        "title": "Calculate the Radius of the Turn",
+        "text": "Use the formula $$tan(theta)=\\frac{v^2}{r g}$$ to find the radius $$r$$, where theta is the banking angle, v is the velocity, and g is the acceleration due to gravity $$(9.8$$ m/s**2).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps16b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$36.6$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps16b-h4"
+        ],
+        "title": "Calculate the Centripetal Acceleration",
+        "text": "Now that you have the radius, use the formula $$a_c=\\frac{v^2}{r}$$ to find the centripetal acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

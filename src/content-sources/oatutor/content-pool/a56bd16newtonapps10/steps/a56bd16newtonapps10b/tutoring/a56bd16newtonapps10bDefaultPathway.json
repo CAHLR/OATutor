@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a56bd16newtonapps10b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Constant Velocity",
+        "text": "When an object moves at a constant velocity, the net force acting on it is zero. This means that the force of gravity pulling the object down the ramp is balanced by the frictional force opposing the motion.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps10b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps10b-h1"
+        ],
+        "title": "Components of Forces on the Ramp",
+        "text": "Consider the forces acting on the box: the gravitational force can be split into two components - one parallel to the ramp and one perpendicular to it. The parallel component causes the box to slide down, while the perpendicular component is balanced by the normal force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps10b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps10b-h2"
+        ],
+        "title": "Calculating the Angle",
+        "text": "To find the angle of the slope, use the equation for the parallel component of gravity: \\(mg\\sin(\\theta)\\), where \\(m\\) is the mass of the box, \\(g\\) is the acceleration due to gravity, and \\(\\theta\\) is the angle of the slope.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps10b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5.71$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps10b-h3"
+        ],
+        "title": "Solving for the Angle",
+        "text": "Given that the box moves at a constant velocity, the frictional force \\(f\\) equals the parallel component of gravity. Use the equation \\(f=mg\\sin(\\theta)\\) and solve for \\(\\theta\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

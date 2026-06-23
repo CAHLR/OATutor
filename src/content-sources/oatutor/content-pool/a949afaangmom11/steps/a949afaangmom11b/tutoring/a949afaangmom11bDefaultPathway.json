@@ -1,0 +1,116 @@
+[
+    {
+        "id": "a949afaangmom11b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Momentum",
+        "text": "Angular momentum (L) for a rolling object is given by the formula $$L=I \\omega$$, where I is the moment of inertia and \u03c9 is the angular velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom11b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom11b-h1"
+        ],
+        "title": "Moment of Inertia for a Sphere",
+        "text": "The moment of inertia (I) for a uniform solid sphere is $$I=\\frac{2}{5} m r^2$$. Use this to calculate I for the boulder.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom11b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom11b-h2"
+        ],
+        "title": "Relating Linear and Angular Velocity",
+        "text": "The angular velocity (\u03c9) can be found using the relationship $$\u03c9=\\frac{v}{r}$$, where v is the linear velocity and $$r$$ is the radius of the sphere.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom11b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom11b-h3"
+        ],
+        "title": "Finding Linear Velocity",
+        "text": "Use energy conservation to find the linear velocity (v) at the bottom of the hill. The potential energy at the top is converted to kinetic energy at the bottom.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom11b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.6$$"
+        ],
+        "dependencies": [
+            "a949afaangmom11b-h2"
+        ],
+        "title": "Calculate Moment of Inertia",
+        "text": "Calculate the moment of inertia (I) for the boulder using $$I=\\frac{2}{5} m r^2$$, where $$m=20$$ kg and $$r=0.2$$ $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom11b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$15.5$$"
+        ],
+        "dependencies": [
+            "a949afaangmom11b-h4"
+        ],
+        "title": "Calculate Linear Velocity",
+        "text": "Use the conservation of energy: $$m g h=\\frac{1}{2} m v^2+\\frac{1}{2} I {\\omega}^2$$. Solve for v, where $$h=15$$ $$m$$, $$g=9.8$$ $$\\frac{m}{s^2}$$, and $$I=1.6$$ $$kg m^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom11b-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$77.5$$"
+        ],
+        "dependencies": [
+            "a949afaangmom11b-h6"
+        ],
+        "title": "Calculate Angular Velocity",
+        "text": "Find the angular velocity (\u03c9) using $$\u03c9=\\frac{v}{r}$$, where $$v=15.5$$ $$\\frac{m}{s}$$ and $$r=0.2$$ $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom11b-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$23.2$$"
+        ],
+        "dependencies": [
+            "a949afaangmom11b-h7"
+        ],
+        "title": "Calculate Angular Momentum",
+        "text": "Finally, calculate the angular momentum (L) using $$L=I \\omega$$, where $$I=1.6$$ $$kg m^2$$ and $$\u03c9=77.5$$ $$\\frac{rad}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

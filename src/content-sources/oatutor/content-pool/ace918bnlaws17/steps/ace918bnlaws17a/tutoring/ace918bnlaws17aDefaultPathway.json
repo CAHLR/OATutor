@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ace918bnlaws17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the tension in the telephone line, we need to consider the forces acting on the bird and the line. The bird's weight acts downward, and the tension in the line acts along the line at an angle theta with the horizontal.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws17a-h1"
+        ],
+        "title": "Components of Tension",
+        "text": "The tension in the line has two components: a vertical component that balances the bird's weight and a horizontal component. The vertical component of the tension can be expressed as $$T sin\\left(\\theta\\right)$$, where T is the tension in the line.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws17a-h2"
+        ],
+        "title": "Balancing Forces",
+        "text": "Since the bird is at rest, the vertical component of the tension must equal the bird's weight. Therefore, $$T sin\\left(\\theta\\right)=mg$$, where $$m$$ is the mass of the bird and g is the acceleration due to gravity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws17a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.46$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws17a-h3"
+        ],
+        "title": "Calculate the Tension",
+        "text": "Given that the mass of the bird is $$26$$ g $$(0.026$$ kg) and $$g=9.8$$ m/s\u00b2, calculate the tension T when $$theta=5$$ degrees.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

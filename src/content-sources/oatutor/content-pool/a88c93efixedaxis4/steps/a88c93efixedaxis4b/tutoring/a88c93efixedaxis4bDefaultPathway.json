@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a88c93efixedaxis4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Motion",
+        "text": "To find the time it takes for the wheel to turn through $$300$$ radians, we need to use the kinematic equation for angular motion. This equation relates angular displacement, initial angular velocity, angular acceleration, and time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis4b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis4b-h1"
+        ],
+        "title": "Kinematic Equation for Angular Motion",
+        "text": "The kinematic equation for angular motion is: \\( $$\\theta$$ $$=$$ \\omega_0 $$t$$ + \\frac{1}{2} \\alpha $$t^2$$ \\), where \\( $$\\theta$$ \\) is the angular displacement, \\( \\omega_0 \\) is the initial angular velocity, \\( \\alpha \\) is the angular acceleration, and \\( $$t$$ \\) is the time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis4b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis4b-h2"
+        ],
+        "title": "Initial Conditions",
+        "text": "Since the wheel starts from rest, the initial angular velocity \\( \\omega_0 \\) is $$0$$ $$\\frac{rad}{s}$$. This simplifies the equation to \\( $$\\theta$$ $$=$$ \\frac{1}{2} \\alpha $$t^2$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis4b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$t=\\sqrt{\\frac{2\\theta}{\\alpha}}$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis4b-h3"
+        ],
+        "title": "Solving for Time",
+        "text": "Given \\( $$\\theta$$ $$=$$ $$300$$ \\) rad and \\( \\alpha $$=$$ $$5.0$$ \\) rad/s\u00b2, substitute these values into the equation \\( $$\\theta$$ $$=$$ \\frac{1}{2} \\alpha $$t^2$$ \\) and solve for \\( $$t$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis4b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$t=\\sqrt{\\frac{2\\times300}{5}}$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis4b-h4"
+        ],
+        "title": "Calculate the Time",
+        "text": "Substitute \\( $$\\theta$$ $$=$$ $$300$$ \\) rad and \\( \\alpha $$=$$ $$5.0$$ \\) rad/s\u00b2 into the equation \\( $$t=\\sqrt{\\frac{2\\theta}{\\alpha}}$$ \\) to find \\( $$t$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis4b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$t=11$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis4b-h5"
+        ],
+        "title": "Final Calculation",
+        "text": "Calculate \\( $$t$$ \\) using the equation \\( $$t=\\sqrt{\\frac{2\\times300}{5}}$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

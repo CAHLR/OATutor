@@ -1,0 +1,116 @@
+[
+    {
+        "id": "abaea60linmom3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculate the Volume of Snow",
+        "text": "First, calculate the volume of the snow that moved during the avalanche. Use the formula for volume: Volume $$=$$ Area * Thickness.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom3a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20000$$"
+        ],
+        "dependencies": [
+            "abaea60linmom3a-h1"
+        ],
+        "title": "Calculate the Volume of Snow",
+        "text": "The area of the snow is $$100$$ $$m$$ by $$500$$ $$m$$, and the thickness is $$0.4$$ $$m$$. Calculate the volume.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom3a-h2"
+        ],
+        "title": "Calculate the Mass of Snow",
+        "text": "Now, calculate the mass of the snow using the density and the volume you just calculated. Use the formula: Mass $$=$$ Density * Volume.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom3a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7000000$$"
+        ],
+        "dependencies": [
+            "abaea60linmom3a-h3"
+        ],
+        "title": "Calculate the Mass of Snow",
+        "text": "The density of the snow is $$350$$ $$\\frac{kg}{m^3}$$, and the volume is $$20000$$ $$m^3$$. Calculate the mass.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom3a-h5",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom3a-h4"
+        ],
+        "title": "Calculate the Velocity of the Avalanche",
+        "text": "Next, calculate the velocity of the avalanche. Use the formula: Velocity $$=$$ Distance / Time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom3a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$181.8181818$$"
+        ],
+        "dependencies": [
+            "abaea60linmom3a-h5"
+        ],
+        "title": "Calculate the Velocity of the Avalanche",
+        "text": "The distance is $$1000$$ $$m$$, and the time is $$5.5$$ s. Calculate the velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom3a-h7",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom3a-h6"
+        ],
+        "title": "Calculate the Average Momentum",
+        "text": "Finally, calculate the average momentum of the avalanche using the formula: Momentum $$=$$ Mass * Velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom3a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1270000000$$"
+        ],
+        "dependencies": [
+            "abaea60linmom3a-h7"
+        ],
+        "title": "Calculate the Average Momentum",
+        "text": "The mass is $$7000000$$ kg, and the velocity is $$181.8181818$$ $$\\frac{m}{s}$$. Calculate the momentum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

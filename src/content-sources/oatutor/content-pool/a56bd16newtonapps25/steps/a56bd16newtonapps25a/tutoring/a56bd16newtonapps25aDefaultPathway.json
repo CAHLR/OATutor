@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a56bd16newtonapps25a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Terminal Velocity",
+        "text": "Terminal velocity is reached when the gravitational force is balanced by the frictional force. This means the net force acting on the diamond is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps25a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps25a-h1"
+        ],
+        "title": "Forces Acting on the Diamond",
+        "text": "The forces acting on the diamond are the gravitational force (weight) and the frictional force due to water resistance. At terminal velocity, these forces are equal in magnitude but opposite in direction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps25a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps25a-h2"
+        ],
+        "title": "Calculating Gravitational Force",
+        "text": "The gravitational force can be calculated using the formula: weight $$=$$ mass * gravity. Use $$9.8$$ m/s\u00b2 for gravity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps25a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.098$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps25a-h3"
+        ],
+        "title": "Calculate the Gravitational Force",
+        "text": "Given the mass of the diamond is $$10.0$$ g, convert it to kg and calculate the gravitational force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps25a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps25a-h4"
+        ],
+        "title": "Relating Frictional Force to Terminal Velocity",
+        "text": "At terminal velocity, the frictional force is equal to the gravitational force. Use the formula $$f=-b v$$ to find $$b$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps25a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.049$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps25a-h5"
+        ],
+        "title": "Calculate the Value of $$b$$",
+        "text": "Using the equation $$f=-b v$$, where f is the gravitational force and v is the terminal velocity, solve for $$b$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

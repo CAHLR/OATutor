@@ -1,0 +1,41 @@
+[
+    {
+        "id": "ace918bnlaws29c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the speed of the object after $$5$$ seconds, we need to use the formula for speed when acceleration is constant. The formula is: final speed $$=$$ initial speed + (acceleration * time).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws29c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws29c-h1"
+        ],
+        "title": "Initial Speed",
+        "text": "Since the object begins from rest, what is the initial speed?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws29c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$21.2$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws29c-h2"
+        ],
+        "title": "Calculate the Final Speed",
+        "text": "Use the formula: final speed $$=$$ initial speed + (acceleration * time). Given that the initial speed is $$0$$ $$\\frac{m}{s}$$, acceleration is $$4.23$$ $$\\frac{m}{s^2}$$, and time is $$5$$ seconds, calculate the final speed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

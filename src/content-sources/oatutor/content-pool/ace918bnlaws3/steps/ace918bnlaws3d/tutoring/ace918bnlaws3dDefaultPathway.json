@@ -1,0 +1,148 @@
+[
+    {
+        "id": "ace918bnlaws3d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Forces",
+        "text": "Andrea's force is directed due north, while Jennifer's force is at an angle of $$32$$ degrees east of north. We need to break these forces into their components along the east (i) and north (j) directions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws3d-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws3d-h1"
+        ],
+        "title": "Breaking Down Andrea's Force",
+        "text": "Since Andrea's force is directed due north, it only has a component in the north direction (j). The magnitude of this force is $$130.0$$ N.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws3d-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws3d-h1"
+        ],
+        "title": "Breaking Down Jennifer's Force",
+        "text": "Jennifer's force can be broken down into two components: one in the east direction (i) and one in the north direction (j). Use trigonometry to find these components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws3d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$180cos\\left(32\\right)$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws3d-h3"
+        ],
+        "title": "Calculating Jennifer's East Component",
+        "text": "Use the cosine function to find the east component of Jennifer's force. The formula is: east component $$=$$ magnitude * cos(angle).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws3d-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$180sin\\left(32\\right)$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws3d-h3"
+        ],
+        "title": "Calculating Jennifer's North Component",
+        "text": "Use the sine function to find the north component of Jennifer's force. The formula is: north component $$=$$ magnitude * sin(angle).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws3d-h6",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws3d-h2",
+            "ace918bnlaws3d-h4",
+            "ace918bnlaws3d-h5"
+        ],
+        "title": "Combining the Forces",
+        "text": "To find the combined force, add the components of Andrea's and Jennifer's forces in each direction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws3d-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0+180cos\\left(32\\right)$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws3d-h6"
+        ],
+        "title": "Calculating the Combined East Component",
+        "text": "Add the east components of Andrea's and Jennifer's forces. Andrea's east component is $$0$$ N.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws3d-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$130+180sin\\left(32\\right)$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws3d-h6"
+        ],
+        "title": "Calculating the Combined North Component",
+        "text": "Add the north components of Andrea's and Jennifer's forces.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws3d-h9",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws3d-h7",
+            "ace918bnlaws3d-h8"
+        ],
+        "title": "Finding the Opposing Force",
+        "text": "To prevent the couch from moving, the combined force exerted by Andrea and Jennifer must be opposed by an equal and opposite force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws3d-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-180cos\\left(32\\right) i-\\left(130+180sin\\left(32\\right)\\right) j$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws3d-h9"
+        ],
+        "title": "Calculating the Opposing Force",
+        "text": "The opposing force should be the negative of the combined force components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

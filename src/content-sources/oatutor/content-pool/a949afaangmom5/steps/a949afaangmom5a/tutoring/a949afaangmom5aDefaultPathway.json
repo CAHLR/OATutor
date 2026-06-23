@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a949afaangmom5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the angular acceleration, we need to consider both the linear and rotational motion of the cylinder. The frictional force causes both translational and rotational acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom5a-h1"
+        ],
+        "title": "Identify Forces",
+        "text": "The forces acting on the cylinder include gravity, normal force, and friction. The frictional force is responsible for the rotational motion.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom5a-h2"
+        ],
+        "title": "Calculate Frictional Force",
+        "text": "The frictional force can be calculated using the formula: $$friction=coefficient_{of,friction} normal_{force}$$. The normal force is equal to the component of the gravitational force perpendicular to the incline.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom5a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom5a-h3"
+        ],
+        "title": "Relate Linear and Angular Acceleration",
+        "text": "The linear acceleration a and angular acceleration alpha are related by the equation: $$a=\\alpha r$$, where $$r$$ is the radius of the cylinder.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom5a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$67.9$$"
+        ],
+        "dependencies": [
+            "a949afaangmom5a-h4"
+        ],
+        "title": "Calculate Angular Acceleration",
+        "text": "Using the relation between linear and angular acceleration, and knowing the frictional force, calculate the angular acceleration of the cylinder.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

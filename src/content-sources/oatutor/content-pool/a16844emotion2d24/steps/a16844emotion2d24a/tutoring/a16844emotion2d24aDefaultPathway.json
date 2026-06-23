@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a16844emotion2d24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the final position of the particle, you need to add the initial position vector to the displacement vector.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d24a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d24a-h1"
+        ],
+        "title": "Initial Position Vector",
+        "text": "The initial position of the particle is given as $$1.5j+4k$$ meters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d24a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d24a-h1"
+        ],
+        "title": "Displacement Vector",
+        "text": "The displacement of the particle is given as $$2.5i+3.2j-1.2k$$ meters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d24a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.5i+4.7j+2.8k$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d24a-h2",
+            "a16844emotion2d24a-h3"
+        ],
+        "title": "Calculate the Final Position",
+        "text": "Add the initial position vector and the displacement vector: $$1.5j+4k+2.5i+3.2j-1.2k$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d24a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d24a-h4"
+        ],
+        "title": "Final Position Vector",
+        "text": "The final position vector is the sum of the initial position vector and the displacement vector.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

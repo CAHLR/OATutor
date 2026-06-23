@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a949afaangmom1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Velocity",
+        "text": "Angular velocity is the rate of change of angular displacement and is usually measured in radians per second. To find the angular velocity of a tire, we need to relate the linear speed of the car to the rotational speed of the tire.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom1a-h1"
+        ],
+        "title": "Convert Speed to Meters per Second",
+        "text": "First, convert the speed of the automobile from kilometers per hour to meters per second. Remember that $$1$$ $$\\frac{km}{h}$$ is equal to $$\\frac{1}{3.6}$$ $$\\frac{m}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$25$$"
+        ],
+        "dependencies": [
+            "a949afaangmom1a-h2"
+        ],
+        "title": "Calculate Linear Speed in $$\\frac{m}{s}$$",
+        "text": "Convert $$90.0$$ $$\\frac{km}{h}$$ to $$\\frac{m}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom1a-h3"
+        ],
+        "title": "Relate Linear Speed to Angular Velocity",
+        "text": "The linear speed (v) of the car is related to the angular velocity (\u03c9) of the tire by the formula: $$v=r \\omega$$, where $$r$$ is the radius of the tire.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom1a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.375$$"
+        ],
+        "dependencies": [
+            "a949afaangmom1a-h4"
+        ],
+        "title": "Calculate the Radius of the Tire",
+        "text": "The diameter of the tire is $$75.0$$ cm. What is the radius in meters?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom1a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$66.7$$"
+        ],
+        "dependencies": [
+            "a949afaangmom1a-h5"
+        ],
+        "title": "Calculate Angular Velocity",
+        "text": "Using the formula $$v=r \\omega$$, calculate the angular velocity of the tire. Use $$v=25$$ $$\\frac{m}{s}$$ and $$r=0.375$$ $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a88c93efixedaxis7b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Motion",
+        "text": "To find the angle rotated through, we need to use the formula for angular displacement when angular acceleration is constant.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis7b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis7b-h1"
+        ],
+        "title": "Formula for Angular Displacement",
+        "text": "The formula for angular displacement \\( $$\\theta$$ \\) when angular acceleration \\( \\alpha \\) is constant is: \\( $$\\theta$$ $$=$$ \\omega_0*t + 0.5*\\alpha*t**2 \\), where \\( \\omega_0 \\) is the initial angular velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis7b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\theta=2\\times5+0.5\\times1 5^2$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis7b-h2"
+        ],
+        "title": "Substitute Known Values",
+        "text": "Substitute the known values into the formula: \\( \\omega_0 $$=$$ $$2.0$$ \\) $$\\frac{rad}{s}$$, \\( \\alpha $$=$$ $$1.0$$ \\) rad/s\u00b2, and \\( $$t$$ $$=$$ $$5$$ \\) s.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis7b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$22.5$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis7b-h3"
+        ],
+        "title": "Calculate the Angle",
+        "text": "Calculate \\( $$\\theta$$ \\) using the substituted values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

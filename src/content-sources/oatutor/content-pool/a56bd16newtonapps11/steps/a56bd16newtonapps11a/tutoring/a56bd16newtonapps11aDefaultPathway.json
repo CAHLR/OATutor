@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a56bd16newtonapps11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Forces on the Incline",
+        "text": "To find the force needed to move the bin down the incline at constant velocity, consider the forces acting on the bin. These include the gravitational force component along the incline, the frictional force, and the applied force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps11a-h1"
+        ],
+        "title": "Gravitational Force Component",
+        "text": "The gravitational force component acting down the incline can be calculated using the formula: $$m g sin\\left(\\theta\\right)$$, where $$m$$ is the mass of the bin, g is the acceleration due to gravity $$(9.8$$ m/s\u00b2), and theta is the angle of the incline.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps11a-h2"
+        ],
+        "title": "Frictional Force",
+        "text": "The frictional force acts up the incline when the bin is moving down. It can be calculated using the formula: $$\\mu m g cos\\left(\\theta\\right)$$, where mu is the coefficient of friction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps11a-h3"
+        ],
+        "title": "Net Force for Constant Velocity",
+        "text": "For the bin to move down the incline at constant velocity, the net force must be zero. This means the applied force must balance the sum of the gravitational force component and the frictional force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps11a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$18.9$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps11a-h4"
+        ],
+        "title": "Calculate the Gravitational Force Component",
+        "text": "Calculate the gravitational force component along the incline using the formula: $$m g sin\\left(\\theta\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps11a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7.1$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps11a-h5"
+        ],
+        "title": "Calculate the Frictional Force",
+        "text": "Assume the frictional force is equal to the difference between the applied force and the gravitational force component when moving up the incline. Calculate it using: $$F_{applied}$$ - $$m g sin\\left(\\theta\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps11a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$11.8$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps11a-h6"
+        ],
+        "title": "Determine the Required Force",
+        "text": "To find the force needed to move the bin down the incline at constant velocity, subtract the frictional force from the gravitational force component.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

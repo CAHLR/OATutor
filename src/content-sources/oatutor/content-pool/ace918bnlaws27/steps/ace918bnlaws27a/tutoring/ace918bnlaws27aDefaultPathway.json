@@ -1,0 +1,200 @@
+[
+    {
+        "id": "ace918bnlaws27a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Forces",
+        "text": "To find the acceleration, we need to first resolve the forces into their components along the east-west ($\\hat{i}$) and north-south ($\\hat{j}$) directions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws27a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws27a-h1"
+        ],
+        "title": "Resolve the First Force",
+        "text": "The first player kicks with a force of $$162$$ N at $$9$$ degrees north of west. Resolve this force into its $\\hat{i}$ and $\\hat{j}$ components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws27a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-159.8$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws27a-h2"
+        ],
+        "title": "Calculate the $\\hat{i}$ Component of the First Force",
+        "text": "Use the cosine function to find the $\\hat{i}$ component of the first force: $F_{1i}=162\\cos(9)$ N. Since it's directed west, it will be negative.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws27a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$25.3$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws27a-h2"
+        ],
+        "title": "Calculate the $\\hat{j}$ Component of the First Force",
+        "text": "Use the sine function to find the $\\hat{j}$ component of the first force: $F_{1j}=162\\sin(9)$ N.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws27a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws27a-h1"
+        ],
+        "title": "Resolve the Second Force",
+        "text": "The second player kicks with a force of $$215$$ N at $$15$$ degrees east of south. Resolve this force into its $\\hat{i}$ and $\\hat{j}$ components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws27a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$55.7$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws27a-h5"
+        ],
+        "title": "Calculate the $\\hat{i}$ Component of the Second Force",
+        "text": "Use the sine function to find the $\\hat{i}$ component of the second force: $F_{2i}=215\\sin(15)$ N.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws27a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-207.8$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws27a-h5"
+        ],
+        "title": "Calculate the $\\hat{j}$ Component of the Second Force",
+        "text": "Use the cosine function to find the $\\hat{j}$ component of the second force: $F_{2j}=215\\cos(15)$ N. Since it's directed south, it will be negative.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws27a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws27a-h3",
+            "ace918bnlaws27a-h4",
+            "ace918bnlaws27a-h6",
+            "ace918bnlaws27a-h7"
+        ],
+        "title": "Combine the Forces",
+        "text": "Add the components of the two forces to find the total force in the $\\hat{i}$ and $\\hat{j}$ directions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws27a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-104.1$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws27a-h8"
+        ],
+        "title": "Calculate the Total $\\hat{i}$ Force",
+        "text": "Add the $\\hat{i}$ components: $F_{i}=F_{1i}+F_{2i}$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws27a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-182.5$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws27a-h8"
+        ],
+        "title": "Calculate the Total $\\hat{j}$ Force",
+        "text": "Add the $\\hat{j}$ components: $F_{j}=F_{1j}+F_{2j}$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws27a-h11",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws27a-h9",
+            "ace918bnlaws27a-h10"
+        ],
+        "title": "Find the Acceleration",
+        "text": "Use Newton's second law, $$\\$F=ma\\$$$, to find the acceleration of the ball. Divide the total force by the mass of the ball.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws27a-h12",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-248.5$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws27a-h11"
+        ],
+        "title": "Calculate the Acceleration in $\\hat{i}$",
+        "text": "Divide the total $\\hat{i}$ force by the mass: $a_{i}=F_{i}/m$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws27a-h13",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-434.1$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws27a-h11"
+        ],
+        "title": "Calculate the Acceleration in $\\hat{j}$",
+        "text": "Divide the total $\\hat{j}$ force by the mass: $a_{j}=F_{j}/m$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

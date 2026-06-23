@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a16844emotion2d30a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find when the vehicles are closest, consider their positions relative to the intersection over time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d30a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d30a-h1"
+        ],
+        "title": "Position of the Truck",
+        "text": "The truck is moving east at $$80$$ $$\\frac{km}{h}$$. Its position relative to the intersection after time $$t$$ is given by the equation: $$position_{truck}=32-80t$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d30a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d30a-h1"
+        ],
+        "title": "Position of the Car",
+        "text": "The car is moving north at $$50$$ $$\\frac{km}{h}$$. Its position relative to the intersection after time $$t$$ is given by the equation: $$position_{car}=50t$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d30a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d30a-h2"
+        ],
+        "title": "Distance Between the Vehicles",
+        "text": "The distance between the truck and the car can be found using the Pythagorean theorem: $$distance=\\sqrt{\\left(32-80t\\right)^2+\\left(50t\\right)^2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d30a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d30a-h4"
+        ],
+        "title": "Minimizing the Distance",
+        "text": "To find when the vehicles are closest, minimize the distance function with respect to time $$t$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d30a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.288$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d30a-h5"
+        ],
+        "title": "Derivative of the Distance Function",
+        "text": "Find the derivative of the distance function with respect to time $$t$$ and set it to zero to find the critical points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,123 @@
+[
+    {
+        "id": "ace918bnlaws3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Forces",
+        "text": "Andrea's force is directed due north, which means it only has a component in the north direction $$(j-component)$$. Jennifer's force is at an angle, so it has both east $$(i-component)$$ and north $$(j-component)$$ components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws3a-h1"
+        ],
+        "title": "Breaking Down Jennifer's Force",
+        "text": "To find the components of Jennifer's force, use trigonometry. The east component $$(i-component)$$ is found using the cosine of the angle, and the north component $$(j-component)$$ is found using the sine of the angle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$180cos\\left(32\\right)$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws3a-h2"
+        ],
+        "title": "Calculate Jennifer's i-component",
+        "text": "Use the formula: i-component $$=$$ magnitude * cos(angle). What is Jennifer's i-component?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws3a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$180sin\\left(32\\right)$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws3a-h2"
+        ],
+        "title": "Calculate Jennifer's j-component",
+        "text": "Use the formula: j-component $$=$$ magnitude * sin(angle). What is Jennifer's j-component?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws3a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws3a-h3",
+            "ace918bnlaws3a-h4"
+        ],
+        "title": "Combine the Forces",
+        "text": "Add the i-components and j-components separately to find the net force in component form.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws3a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$180cos\\left(32\\right)$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws3a-h5"
+        ],
+        "title": "Calculate the Net i-component",
+        "text": "What is the net i-component of the force?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws3a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$130+180sin\\left(32\\right)$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws3a-h5"
+        ],
+        "title": "Calculate the Net j-component",
+        "text": "What is the net j-component of the force?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws3a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$95.4i+282.6j$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws3a-h6",
+            "ace918bnlaws3a-h7"
+        ],
+        "title": "Final Net Force",
+        "text": "Combine the net i-component and j-component to express the net force in component form.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

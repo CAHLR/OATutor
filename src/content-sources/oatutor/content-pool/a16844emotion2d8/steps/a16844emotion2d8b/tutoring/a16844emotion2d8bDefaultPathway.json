@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a16844emotion2d8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Position Function",
+        "text": "The position function is given as $$r(t)=cos\\left(1t\\right) i+sin\\left(1t\\right) j+t k$$. This represents a helical path where the particle moves in a circle in the xy-plane while moving linearly along the $$z-axis$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d8b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d8b-h1"
+        ],
+        "title": "Finding the Velocity Vector",
+        "text": "To find the velocity vector, differentiate the position function with respect to time $$t$$. Remember that the derivative of $$cos(1.0t)$$ is $$-sin(1.0t)$$ and the derivative of $$sin(1.0t)$$ is $$cos(1.0t)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d8b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$v(t)=-sin\\left(1t\\right) i+cos\\left(1t\\right) j+k$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d8b-h2"
+        ],
+        "title": "Calculate the Velocity Vector",
+        "text": "Differentiate $$r(t)=cos\\left(1t\\right) i+sin\\left(1t\\right) j+t k$$ with respect to $$t$$ to find the velocity vector v(t).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d8b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d8b-h3"
+        ],
+        "title": "Finding the Acceleration Vector",
+        "text": "To find the acceleration vector, differentiate the velocity vector with respect to time $$t$$. Remember that the derivative of $$-sin(1.0t)$$ is $$-cos(1.0t)$$ and the derivative of $$cos(1.0t)$$ is $$-sin(1.0t)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d8b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$a(t)=-cos(1.0t)i-sin(1.0t)j$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d8b-h4"
+        ],
+        "title": "Calculate the Acceleration Vector",
+        "text": "Differentiate $$v(t)=-sin\\left(1t\\right) i+cos\\left(1t\\right) j+k$$ with respect to $$t$$ to find the acceleration vector a(t).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

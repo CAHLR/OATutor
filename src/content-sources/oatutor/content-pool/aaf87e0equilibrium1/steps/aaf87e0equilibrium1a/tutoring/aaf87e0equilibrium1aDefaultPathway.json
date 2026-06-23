@@ -1,0 +1,58 @@
+[
+    {
+        "id": "aaf87e0equilibrium1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Torque",
+        "text": "To keep the door from moving, the torques exerted by the two children must be equal and opposite. Torque is calculated as the product of force and distance from the pivot point (hinges).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aaf87e0equilibrium1a-h1"
+        ],
+        "title": "Torque Equation",
+        "text": "The torque exerted by the first child is calculated as: $$Torque1=Force1 Distance1$$. Similarly, the torque exerted by the second child is: $$Torque2=Force2 Distance2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$Force2=\\frac{Force1 Distance1}{Distance2}$$"
+        ],
+        "dependencies": [
+            "aaf87e0equilibrium1a-h2"
+        ],
+        "title": "Setting Up the Equation",
+        "text": "Set the torques equal to each other: $$Force1 Distance1=Force2 Distance2$$. Solve for Force2.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$23.3$$"
+        ],
+        "dependencies": [
+            "aaf87e0equilibrium1a-h3"
+        ],
+        "title": "Substitute Known Values",
+        "text": "Substitute the known values into the equation: $$Force2=\\frac{17.5\\times0.6}{0.45}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

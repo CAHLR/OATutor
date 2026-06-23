@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a56bd16newtonapps7b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Forces in an Elevator",
+        "text": "When an elevator accelerates, the apparent weight of an object inside changes. This is because the net force acting on the object is different from when the elevator is at rest or moving at constant speed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps7b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps7b-h1"
+        ],
+        "title": "Net Force Equation",
+        "text": "The net force on the backpack can be calculated using the equation: $$F_{net}=m \\left(g+a\\right)$$, where $$m$$ is the mass of the backpack, g is the acceleration due to gravity $$(9.8$$ m/s**2), and a is the acceleration of the elevator.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps7b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps7b-h2"
+        ],
+        "title": "Finding the Mass of the Backpack",
+        "text": "To find the mass of the backpack, use the reading from the scale when the elevator is accelerating downward: $$F_{scale}=m \\left(g-a\\right)$$. Rearrange to find m: $$m=\\frac{F_{scale}}{g-a}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps7b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6.12$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps7b-h3"
+        ],
+        "title": "Calculate the Mass of the Backpack",
+        "text": "Given that the scale reads $$60$$ N when the elevator accelerates downward at $$3.8$$ $$\\frac{m}{s^2}$$, calculate the mass of the backpack.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps7b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps7b-h4"
+        ],
+        "title": "Calculate the Scale Reading for Upward Acceleration",
+        "text": "Now that you have the mass of the backpack, use the equation $$F_{net}=m \\left(g+a\\right)$$ to find the scale reading when the elevator accelerates upward at $$3.8$$ $$\\frac{m}{s^2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps7b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$136$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps7b-h5"
+        ],
+        "title": "Calculate the Scale Reading",
+        "text": "Using the mass calculated and the upward acceleration, find the new scale reading.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

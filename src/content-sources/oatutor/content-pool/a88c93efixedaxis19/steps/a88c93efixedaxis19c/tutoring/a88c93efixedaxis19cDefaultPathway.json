@@ -1,0 +1,95 @@
+[
+    {
+        "id": "a88c93efixedaxis19c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Torque",
+        "text": "Torque is the rotational equivalent of force. It is calculated as the product of force and the radius at which the force is applied, perpendicular to the axis of rotation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis19c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis19c-h1"
+        ],
+        "title": "Formula for Torque",
+        "text": "The formula for torque (\u03c4) is given by $$\u03c4=F r$$, where F is the force applied and $$r$$ is the radius of the Earth.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis19c-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Moment of Inertia of a Sphere",
+        "text": "The moment of inertia (I) for a uniform solid sphere is given by $$I=\\frac{2}{5} M R^2$$, where M is the mass and R is the radius.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis19c-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Angular Acceleration",
+        "text": "Angular acceleration (\\alpha) can be found using the formula $$\\alpha=\\frac{\\Delta omega}{\\Delta t}$$, where \u0394\u03c9 is the change in angular velocity and \u0394t is the change in time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis19c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.21E-05$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis19c-h4"
+        ],
+        "title": "Calculate Angular Acceleration",
+        "text": "Given that the Earth reaches an angular velocity of $$1$$ $$\\frac{rev}{day}$$ in $$6$$ days, calculate the angular acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis19c-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8.04E+21$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis19c-h3"
+        ],
+        "title": "Calculate Torque",
+        "text": "Using the moment of inertia and angular acceleration, calculate the torque applied to the Earth.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis19c-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.13E+21$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis19c-h6"
+        ],
+        "title": "Calculate Force",
+        "text": "Using the torque and the radius of the Earth, calculate the force applied at the equator.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

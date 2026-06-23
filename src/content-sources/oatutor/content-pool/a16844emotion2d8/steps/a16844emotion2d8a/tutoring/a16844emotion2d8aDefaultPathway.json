@@ -1,0 +1,111 @@
+[
+    {
+        "id": "a16844emotion2d8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Position Function",
+        "text": "The position function is given as $$r(t)=cos\\left(1t\\right) i+sin\\left(1t\\right) j+t k$$. This represents a helical path. The components in the i and j directions are circular, while the k component increases linearly with time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d8a-h1"
+        ],
+        "title": "Finding the Velocity Vector",
+        "text": "To find the velocity vector, differentiate the position function r(t) with respect to time $$t$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-sin(1.0t)$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d8a-h2"
+        ],
+        "title": "Differentiating the i Component",
+        "text": "Differentiate the i component of the position function: $$cos(1.0t)$$. What is the derivative?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$cos(1.0t)$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d8a-h3"
+        ],
+        "title": "Differentiating the j Component",
+        "text": "Differentiate the j component of the position function: $$sin(1.0t)$$. What is the derivative?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d8a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d8a-h4"
+        ],
+        "title": "Differentiating the k Component",
+        "text": "Differentiate the k component of the position function: $$t$$. What is the derivative?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d8a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d8a-h5"
+        ],
+        "title": "Combining the Derivatives",
+        "text": "Combine the derivatives of each component to form the velocity vector.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d8a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-sin\\left(1t\\right)$$ i+cos\\left(1t\\right) $$j+k$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d8a-h6"
+        ],
+        "title": "Velocity Vector",
+        "text": "What is the velocity vector after combining the derivatives?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-sin\\left(1t\\right)$$ i+cos\\left(1t\\right) $$j+k$$",
+            "$$-sin\\left(1t\\right) i+cos\\left(1t\\right) j$$",
+            "$$-sin\\left(1t\\right) i+cos\\left(1t\\right) j+k$$",
+            "$$cos\\left(1t\\right) i+sin\\left(1t\\right) j+k$$",
+            "$$sin\\left(1t\\right) i-cos\\left(1t\\right) j+k$$"
+        ]
+    }
+]

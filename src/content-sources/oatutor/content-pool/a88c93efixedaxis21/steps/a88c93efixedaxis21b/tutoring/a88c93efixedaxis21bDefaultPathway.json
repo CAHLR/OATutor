@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a88c93efixedaxis21b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To solve this problem, we need to determine how many turns the grindstone makes before it stops. We will use the work-energy theorem, which relates the work done by friction to the change in rotational kinetic energy.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis21b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis21b-h1"
+        ],
+        "title": "Calculate the Moment of Inertia",
+        "text": "The moment of inertia (I) for a uniform cylindrical grindstone is given by the formula $$I=\\frac{1}{2} M R^2$$. Use the given mass $$(M=10$$ kg) and radius $$(R=0.12$$ m) to calculate I.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis21b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.072$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis21b-h2"
+        ],
+        "title": "Moment of Inertia Calculation",
+        "text": "Calculate the moment of inertia using the formula $$I=\\frac{1}{2} M R^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis21b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis21b-h3"
+        ],
+        "title": "Determine the Frictional Torque",
+        "text": "The frictional force $$F_{friction}$$ is given by $$F_{friction}=coefficient_{of,friction} normal_{force}$$. The torque (\u03c4) due to this frictional force is $$\u03c4=F_{friction} R$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis21b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.48$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis21b-h4"
+        ],
+        "title": "Frictional Torque Calculation",
+        "text": "Calculate the frictional torque using $$\u03c4=F_{friction} R$$, where $$F_{friction}=0.8\\times5$$ N and $$R=0.12$$ $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis21b-h6",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis21b-h5"
+        ],
+        "title": "Apply the Work-Energy Theorem",
+        "text": "The work done by the frictional torque is equal to the change in rotational kinetic energy. Use the formula: $$work=\\tau \\theta$$, where \u03b8 is the angular displacement in radians.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis21b-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$294.5$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis21b-h6"
+        ],
+        "title": "Calculate Angular Displacement",
+        "text": "Use the work-energy theorem to find \u03b8: $$work=\\tau \\theta$$. The initial kinetic energy is $$\\frac{1}{2} I {\\omega}^2$$, where \u03c9 is the initial angular velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

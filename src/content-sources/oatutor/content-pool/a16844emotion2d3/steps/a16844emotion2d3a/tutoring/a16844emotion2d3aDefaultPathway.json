@@ -1,0 +1,94 @@
+[
+    {
+        "id": "a16844emotion2d3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The cyclist's journey can be broken down into three segments: $$5.0$$ km east, $$10.0$$ km $$20$$ degrees west of north, and $$8.0$$ km west. We need to find the resultant displacement vector from the starting point.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d3a-h1"
+        ],
+        "title": "Breaking Down the Journey",
+        "text": "Consider each segment of the journey separately and express them as vectors. The first segment is straightforward: $$5.0$$ km east is represented as $$5.0i$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d3a-h2"
+        ],
+        "title": "Second Segment Vector",
+        "text": "For the second segment, decompose the $$10.0$$ km vector into its north and west components using trigonometry. Use sine and cosine functions with the angle $$20$$ degrees west of north.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d3a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9.4j-3.4i$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d3a-h3"
+        ],
+        "title": "Calculating the Second Segment",
+        "text": "Calculate the north and west components of the $$10.0$$ km vector. Use:\\nNorth component $$=$$ $$10cos\\left(20\\right)$$\\nWest component $$=$$ $$10sin\\left(20\\right)$$",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d3a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d3a-h4"
+        ],
+        "title": "Third Segment Vector",
+        "text": "The third segment is $$8.0$$ km west, which can be represented as $$-8.0i$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d3a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-6.4i+9.4j$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d3a-h5"
+        ],
+        "title": "Combining the Vectors",
+        "text": "Add the vectors from each segment to find the total displacement:\\n$$5.0i$$ + $$(9.4j-3.4i)$$ + $$(-8.0i)$$",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d3a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d3a-h6"
+        ],
+        "title": "Final Displacement",
+        "text": "The final displacement vector is the sum of all the individual vectors. Simplify the expression to find the resultant vector.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

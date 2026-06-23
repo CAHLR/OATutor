@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a09f25fmotion11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The car starts from rest and accelerates at a constant rate. We need to find out how far it travels in $$12$$ seconds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion11a-h1"
+        ],
+        "title": "Identify the Known Values",
+        "text": "Identify the values given in the problem:\\n- Initial velocity (u) $$=$$ $$0$$ $$\\frac{m}{s}$$ (since the car starts from rest)\\n- Acceleration (a) $$=$$ $$2.40$$ $$\\frac{m}{s^2}$$\\n- Time (t) $$=$$ $$12.0$$ s",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion11a-h2"
+        ],
+        "title": "Choose the Right Equation",
+        "text": "To find the displacement (s), use the equation of motion:\\ns $$=$$ $$u t+0.5a t^2$$",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion11a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$172.8$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion11a-h3"
+        ],
+        "title": "Calculate the Displacement",
+        "text": "Substitute the known values into the equation:\\ns $$=$$ $$0\\times12+0.5\\times2.4\\times{12}^2$$",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

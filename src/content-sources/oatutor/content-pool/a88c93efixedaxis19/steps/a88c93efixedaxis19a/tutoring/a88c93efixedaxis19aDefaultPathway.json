@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a88c93efixedaxis19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Acceleration",
+        "text": "Angular acceleration is the rate of change of angular velocity over time. It can be calculated using the formula: angular acceleration $$=$$ change in angular velocity / time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis19a-h1"
+        ],
+        "title": "Change in Angular Velocity",
+        "text": "The change in angular velocity is the final angular velocity minus the initial angular velocity. Since the Earth started from rest, the initial angular velocity is $$0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis19a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis19a-h2"
+        ],
+        "title": "Final Angular Velocity",
+        "text": "The final angular velocity is given as $$1$$ revolution per day. Convert this to radians per second for calculation purposes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis19a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2\\pi}{86400}$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis19a-h3"
+        ],
+        "title": "Convert Revolutions to Radians",
+        "text": "$$1$$ revolution is equal to $$2\\pi$$ radians. Therefore, $$1$$ revolution per day is equal to $$2\\pi$$ radians per day. Convert this to radians per second.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis19a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\frac{2\\pi}{86400}}{518400}$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis19a-h4"
+        ],
+        "title": "Calculate Angular Acceleration",
+        "text": "Use the formula for angular acceleration: angular acceleration $$=$$ change in angular velocity / time. Use the converted angular velocity and the time period of $$6$$ days.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

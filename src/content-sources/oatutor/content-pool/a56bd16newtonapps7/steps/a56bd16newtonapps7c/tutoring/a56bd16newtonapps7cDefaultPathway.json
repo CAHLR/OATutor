@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a56bd16newtonapps7c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "When the elevator moves upward at a constant velocity, what does this imply about the forces acting on the backpack?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps7c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps7c-h1"
+        ],
+        "title": "Constant Velocity Implications",
+        "text": "If the elevator is moving at a constant velocity, what can we say about the net force acting on the backpack?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps7c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps7c-h2"
+        ],
+        "title": "Net Force and Weight",
+        "text": "Recall that when an object moves at constant velocity, the net force acting on it is zero. How does this relate to the weight of the backpack?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps7c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$98$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps7c-h3"
+        ],
+        "title": "Calculating the Weight",
+        "text": "Use the formula for weight: $$weight=mass gravity$$. Given that the scale reads $$60$$ N when accelerating downward, calculate the actual weight of the backpack when the elevator moves at constant velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

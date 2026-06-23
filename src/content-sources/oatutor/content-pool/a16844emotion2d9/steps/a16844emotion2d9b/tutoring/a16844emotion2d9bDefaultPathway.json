@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a16844emotion2d9b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The bullet is shot horizontally, so its vertical motion is influenced by gravity, while its horizontal motion is constant. We need to find out how far it travels horizontally before hitting the ground.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d9b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d9b-h1"
+        ],
+        "title": "Time of Flight",
+        "text": "To find the horizontal distance, we first need to determine how long the bullet is in the air. Since it falls from a height of $$1.5$$ meters, we can use the formula for the time of free fall: $$t=\\sqrt{\\frac{2h}{g}}$$, where $$h$$ is the height and g is the acceleration due to gravity $$(9.8$$ m/s\u00b2).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d9b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.553$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d9b-h2"
+        ],
+        "title": "Calculate Time of Flight",
+        "text": "Using the formula $$t=\\sqrt{\\frac{2h}{g}}$$, calculate the time it takes for the bullet to hit the ground from a height of $$1.5$$ meters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d9b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d9b-h3"
+        ],
+        "title": "Horizontal Distance Formula",
+        "text": "The horizontal distance traveled by the bullet can be calculated using the formula: $$distance=speed time$$. We have the initial speed and the time of flight.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d9b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$110$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d9b-h4"
+        ],
+        "title": "Calculate Horizontal Distance",
+        "text": "Using the formula $$distance=speed time$$, calculate the horizontal distance the bullet travels. Use the initial speed of $$200$$ $$\\frac{m}{s}$$ and the time of flight you calculated.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a09f25fmotion1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Displacement",
+        "text": "Displacement is the change in position of an object. It is a vector quantity, which means it has both magnitude and direction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion1b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion1b-h1"
+        ],
+        "title": "Initial and Final Positions",
+        "text": "Identify the initial and final positions of the car. The initial position is $$2.0$$ km west of the traffic light, and the final position is $$5.0$$ km east of the traffic light.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion1b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion1b-h2"
+        ],
+        "title": "Calculating Displacement",
+        "text": "To find the displacement, subtract the initial position from the final position. Remember to consider the direction (east or west) when calculating.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion1b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7.0$$ km east"
+        ],
+        "dependencies": [
+            "a09f25fmotion1b-h3"
+        ],
+        "title": "Calculate the Displacement",
+        "text": "Use the formula: Displacement $$=$$ Final Position - Initial Position. Substitute the values: Displacement $$=$$ $$5.0$$ km - $$(-2.0$$ km).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion1b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion1b-h4"
+        ],
+        "title": "Direction of Displacement",
+        "text": "Since the final position is east of the initial position, the displacement is in the eastward direction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

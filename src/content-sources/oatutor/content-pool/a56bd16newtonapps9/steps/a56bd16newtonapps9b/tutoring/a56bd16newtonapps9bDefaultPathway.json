@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a56bd16newtonapps9b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the maximum force of friction, we need to use the formula for static friction: \\( F_{friction} $$=$$ \\mu \\times F_{normal} \\). Here, \\( \\mu \\) is the coefficient of static friction, and \\( F_{normal} \\) is the normal force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps9b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps9b-h1"
+        ],
+        "title": "Identifying the Normal Force",
+        "text": "In this scenario, the normal force \\( F_{normal} \\) is the force exerted on the joint, which is $$10$$ times the weight being supported. If the weight is \\( W \\), then \\( F_{normal} $$=$$ $$10$$ \\times W \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps9b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.016\\times10 W$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps9b-h2"
+        ],
+        "title": "Calculating the Maximum Force of Friction",
+        "text": "Using the formula \\( F_{friction} $$=$$ \\mu \\times F_{normal} \\), substitute \\( \\mu $$=$$ $$0.016$$ \\) and \\( F_{normal} $$=$$ $$10$$ \\times W \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps9b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.016\\times10\\times64.5$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps9b-h3"
+        ],
+        "title": "Final Calculation",
+        "text": "Assuming the weight \\( W \\) is $$64.5$$ N, calculate the maximum force of friction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

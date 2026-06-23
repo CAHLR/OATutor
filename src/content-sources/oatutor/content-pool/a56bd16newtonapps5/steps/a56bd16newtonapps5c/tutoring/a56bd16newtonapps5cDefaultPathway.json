@@ -1,0 +1,111 @@
+[
+    {
+        "id": "a56bd16newtonapps5c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the average force exerted on the shell in the mortar, we need to consider the work-energy principle. The work done by the force in the mortar is equal to the change in kinetic energy of the shell.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps5c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps5c-h1"
+        ],
+        "title": "Work-Energy Principle",
+        "text": "The work done by the force is equal to the force times the distance over which it acts. This work is equal to the change in kinetic energy of the shell.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps5c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps5c-h2"
+        ],
+        "title": "Calculating Work Done",
+        "text": "The work done by the force can be calculated using the formula: $$Work=Force Distance$$. Here, the distance is the height the shell reaches, which is $$110.0$$ $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps5c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps5c-h3"
+        ],
+        "title": "Change in Kinetic Energy",
+        "text": "The change in kinetic energy is equal to the final kinetic energy minus the initial kinetic energy. Since the shell starts from rest, the initial kinetic energy is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps5c-h5",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps5c-h4"
+        ],
+        "title": "Final Kinetic Energy",
+        "text": "The final kinetic energy can be calculated using the formula: $$KE=0.5m v^2$$, where $$m$$ is the mass of the shell and v is its final velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps5c-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$v=\\sqrt{2\\times9.8\\times110}$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps5c-h5"
+        ],
+        "title": "Finding Final Velocity",
+        "text": "Use the formula $$v^2=u^2+2a s$$ to find the final velocity, where u is the initial velocity (0 m/s), a is the acceleration due to gravity $$(-9.8$$ m/s**2), and s is the height $$(110.0$$ m).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps5c-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$KE=0.5\\times2.5 {\\sqrt{2\\times9.8\\times110}}^2$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps5c-h6"
+        ],
+        "title": "Calculate Final Kinetic Energy",
+        "text": "Substitute the mass of the shell $$(2.50$$ kg) and the final velocity into the kinetic energy formula: $$KE=0.5m v^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps5c-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$Force=\\frac{KE}{110}$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps5c-h7"
+        ],
+        "title": "Calculate Average Force",
+        "text": "Use the work-energy principle: $$Work=Force Distance=Change$$ in Kinetic Energy. Solve for Force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]
