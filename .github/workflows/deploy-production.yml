@@ -21,20 +21,16 @@ jobs:
         with:
           ssh-private-key: |
             ${{ secrets.OATUTOR_CONTENT_DEPLOY_KEY }}
-
       - run: git submodule update --init --recursive
 
       - name: Save original git author and git email
         run: |
           echo "git_email=$(git log --format='%ae' HEAD^!)" >> $GITHUB_ENV
           echo "git_name=$(git log --format='%an' HEAD^!)" >> $GITHUB_ENV
-
       - uses: actions/setup-node@v2.4.1
-        with:
-            node-version: 18
 
       - name: Change homepage in package.json
-        run: sed -i 's/place-holder/OATutor/g' package.json
+        run: sed -i 's/place-holder/OATutor-DevFeature-Fork/g' package.json
 
       - name: Cache node modules
         uses: actions/cache@v3
@@ -48,14 +44,28 @@ jobs:
                 ${{ runner.os }}-build-${{ env.cache-name }}-
                 ${{ runner.os }}-build-
                 ${{ runner.os }}-
-
       - name: Run CI install
         run: npm ci
-
+        
+      - name: Create Firebase config from secret
+        run: |
+          cat > src/config/firebaseConfig.js << 'EOF'
+          import { initializeApp } from 'firebase/app';
+          import { getFirestore } from 'firebase/firestore';
+          
+          const firebaseConfig = ${{ secrets.STAGING_FIREBASE_CONFIG }};
+          
+          const app = initializeApp(firebaseConfig);
+          const db = getFirestore(app);
+          
+          export default db;
+          EOF
       - name: Run build
         run: npm run build
         env:
           REACT_APP_FIREBASE_CONFIG: ${{ secrets.STAGING_FIREBASE_CONFIG }}
+          REACT_APP_AI_AGENT_URL: ${{ secrets.REACT_APP_AI_AGENT_URL }}
+          REACT_APP_TTS_AWS_ENDPOINT: ${{ secrets.REACT_APP_TTS_AWS_ENDPOINT }}
           CI: false
           REACT_APP_BUILD_TYPE: "production"
           REACT_APP_COMMIT_HASH: ${{ github.sha }}
