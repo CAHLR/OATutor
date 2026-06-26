@@ -1,0 +1,33 @@
+{
+  "name": "@hapi/file",
+  "description": "General purpose file utilities",
+  "version": "3.0.0",
+  "repository": "git://github.com/hapijs/file",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "utilities",
+    "file"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "plugin:@hapi/module"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@hapi/code": "^9.0.0",
+    "@hapi/eslint-plugin": "*",
+    "@hapi/lab": "^25.0.1",
+    "@types/node": "^17.0.36",
+    "typescript": "~4.7.2"
+  },
+  "scripts": {
+    "test": "lab -a @hapi/code -t 100 -L -Y",
+    "test-cov-html": "lab -a @hapi/code -t 100 -L -r html -o coverage.html"
+  },
+  "license": "BSD-3-Clause"
+}

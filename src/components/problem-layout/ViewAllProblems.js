@@ -25,6 +25,12 @@ import { findLessonById, ThemeContext, SHOW_COPYRIGHT, SITE_NAME } from '../../c
 import { CONTENT_SOURCE } from '@common/global-config';
 import withTranslation from '../../util/withTranslation.js';
 
+import userIcon from "../../assets/UserThumb.svg";
+import FeedbackOutlinedIcon from "@material-ui/icons/FeedbackOutlined";
+import leftArrow from "../../assets/chevron-left.svg";
+
+import { withRouter } from 'react-router-dom';
+
 const useStyles = makeStyles(theme => ({
   root: {
     backgroundColor: theme.palette.background.default,
@@ -38,6 +44,11 @@ const useStyles = makeStyles(theme => ({
   },
   problemCard: {
     position: 'relative',  // allow absolute positioning of id badge
+    // marginBottom: theme.spacing(4),
+    display: 'flex',
+    flexDirection: 'row',
+    // alignItems: 'flex-start',
+    justifyContent: 'center',
     marginBottom: theme.spacing(4),
   },
   noFooterWrapper: {
@@ -47,6 +58,7 @@ const useStyles = makeStyles(theme => ({
     '& div[width="100%"]': {
       display: 'none',
     },
+    // paddingRight: theme.spacing(8),
   },
   loadingBox: {
     textAlign: 'center',
@@ -62,18 +74,22 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
   },
   idBadge: {
-    position: 'absolute',
-    top: theme.spacing(1),
-    right: theme.spacing(1),
-    backgroundColor: 'rgba(255,255,255,0.8)',
+    flexShrink: 0,
     padding: theme.spacing(0.5, 1),
-    borderRadius: theme.shape.borderRadius,
+    marginLeft: theme.spacing(1),
+    position: 'absolute',
+    marginTop: theme.spacing(3),
+    // right: theme.spacing(1),
+    left: 'calc(50% + 460px)',
+    backgroundColor: 'rgba(255,255,255,0.8)',
+    // padding: theme.spacing(0.5, 1),
+    // borderRadius: theme.shape.borderRadius,
   },
 }));
 
 const BATCH_SIZE = 3;
 
-const ViewAllProblems = ({ translate }) => {
+const ViewAllProblems = ({ translate, history }) => {
   const classes = useStyles();
   const { lessonID } = useParams();
   const context = useContext(ThemeContext);
@@ -84,6 +100,10 @@ const ViewAllProblems = ({ translate }) => {
   const [visibleProblems, setVisibleProblems] = useState([]);
   const [showPopup, setShowPopup] = useState(false);
   const [seed] = useState(() => Date.now().toString());
+
+  const studentNameDisplay = context.studentName
+  ? decodeURIComponent(context.studentName)
+  : translate('platform.LoggedIn');
 
   // no-op handlers for ProblemWrapper
   const displayMastery = () => {};
@@ -102,18 +122,7 @@ const ViewAllProblems = ({ translate }) => {
     if (found) setLesson(found);
   }, [lessonID]);
 
-  // // Filter by objectives
-  // const memoFiltered = useMemo(() => {
-  //   if (!lesson || problemPool.length === 0) return [];
-  //   const pool = problemPool.filter(problem =>
-  //     problem.steps.some(step =>
-  //       (context.skillModel[step.id] || []).some(kc => kc in lesson.learningObjectives)
-  //     )
-  //   );
-
-  //   return pool;
-  // }, [lesson, problemPool, context.skillModel]);
-
+  // Filter by objectives
   const memoFiltered = useMemo(() => {
     if (!lesson || problemPool.length === 0) return [];
     return problemPool.filter(problem => problem.lessonId === lesson.id);
@@ -125,8 +134,19 @@ const ViewAllProblems = ({ translate }) => {
 
   // Chunk rendering
   useEffect(() => {
-  setVisibleProblems(filteredProblems);
-}, [filteredProblems]);
+    setVisibleProblems([]);
+    if (filteredProblems.length === 0) return;
+    let idx = 0;
+    function batch() {
+      setVisibleProblems(prev => [
+        ...prev,
+        ...filteredProblems.slice(idx, idx + BATCH_SIZE)
+      ]);
+      idx += BATCH_SIZE;
+      if (idx < filteredProblems.length) setTimeout(batch, 16);
+    }
+    batch();
+  }, [filteredProblems]);
 
   // Safely build topics string
   const topicsText = lesson?.topics
@@ -135,32 +155,116 @@ const ViewAllProblems = ({ translate }) => {
       : String(lesson.topics)
     : '';
 
+  const togglePopup = () => setShowPopup(prev => !prev);
+
   return (
     <Box className={classes.root}>
-      <AppBar position="static">
+
+
+      <AppBar position="static" style = {{backgroundColor: '#FFFFFF'}}>
         <Toolbar>
-          <Grid container alignItems="center">
+          <Grid 
+            container 
+            spacing={0}
+            role={"navigation"}
+            alignItems={"center"}            
+          >
+
             <Grid item xs={3}><BrandLogoNav /></Grid>
-            <Grid item xs={6} style={{ textAlign: 'center' }}>
-              {lesson?.name}{topicsText && `: ${topicsText}`}
+            <Grid item xs={6} style={{ textAlign: 'center' }}> </Grid>
+            <Grid xs = {3} item key={3}>
+                <div
+                    style={{
+                        display: "flex",
+                        justifyContent: "flex-end",
+                        alignItems: "center", 
+                        gap: "9px",
+                        color: "#344054",
+                    }}
+                >
+                    <img src={userIcon} alt="User Icon" />
+                    <div style={{ fontWeight: 600 }}>
+                        {studentNameDisplay}
+                    </div>
+                </div>
             </Grid>
-            <Grid item xs={3} />
+
           </Grid>
         </Toolbar>
       </AppBar>
 
-      <Container maxWidth="lg" className={classes.container}>
+      <AppBar position="static" >
+          <Toolbar style={{ minHeight: '56px'}}>
+              <Grid
+                  container
+                  spacing={0}
+                  role={"secondary-navigation"}
+                  alignItems={"center"}
+              >
+                  <Grid item xs={9} key={1}>
+                    <div
+                        style={{
+                            display: "flex",
+                            justifyContent: "flex-start",
+                            alignItems: "center", 
+                            gap: "8px"
+                        }}
+                    >
+                        <IconButton 
+                          onClick = {() => history.goBack()}
+                          aria-label = "Back" 
+                        >
+                          <img src={leftArrow} alt="Back Arrow" />
+
+                        </IconButton>
+                    </div>
+                  </Grid>
+
+
+                  <Grid xs = {3} item key={3}>
+                      <div
+                          style={{
+                              display: "flex",
+                              flexGrow: 1,
+                              justifyContent: "flex-end",
+                              border: 'none'
+                          }}
+                      >
+
+                          <IconButton
+                              aria-label="about"
+                              title={`About ${SITE_NAME}`}
+                              onClick={togglePopup}
+                          >
+                              <HelpOutlineOutlinedIcon
+                                  htmlColor={"#ffffff"}
+                                  style={{
+                                      fontSize: 36,
+                                      margin: -2,
+                                  }}
+                              />
+                          </IconButton>
+
+                      </div>
+                      <Popup isOpen={showPopup} onClose={togglePopup}>
+                          <About />
+                      </Popup>
+                      
+                  </Grid>
+
+              </Grid>
+          </Toolbar>
+      </AppBar>
+
+
+      <Container maxWidth="md" className={classes.container}>
         {visibleProblems.length ? visibleProblems.map(problem => (
           <Box key={problem.id} className={classes.problemCard}>
-            {/* ID badge */}
-            <Box className={classes.idBadge}>
-              <Typography variant="caption" color="textSecondary">
-                {problem.id}
-              </Typography>
-            </Box>
-            <Box className={classes.noFooterWrapper}>
+              <Box className={classes.noFooterWrapper} style={{ flex: 1, maxWidth: 900, width: 900 }}>
               <ProblemWrapper
                 autoScroll={false}
+                compactHeader={true}
+                hideHintPanel={true}
                 problem={problem}
                 lesson={lesson}
                 seed={seed}
@@ -169,6 +273,13 @@ const ViewAllProblems = ({ translate }) => {
                 problemComplete={problemComplete}
               />
             </Box>
+            {/* ID badge */}
+            <Box className={classes.idBadge} style ={{marginRight: 40}}>
+              <Typography variant="caption" color="textSecondary">
+                {problem.id}
+              </Typography>
+            </Box>
+
           </Box>
         )) : (
           <Box className={classes.loadingBox}>
@@ -182,16 +293,16 @@ const ViewAllProblems = ({ translate }) => {
           {SHOW_COPYRIGHT && `© ${new Date().getFullYear()} ${SITE_NAME}`}
         </Box>
         <Box className={classes.spacer} />
-        <IconButton onClick={() => setShowPopup(true)} title={`About ${SITE_NAME}`}>
+        {/* <IconButton onClick={() => setShowPopup(true)} title={`About ${SITE_NAME}`}>
           <HelpOutlineOutlinedIcon />
-        </IconButton>
+        </IconButton> */}
       </Box>
 
-      <Popup isOpen={showPopup} onClose={() => setShowPopup(false)}>
+      {/* <Popup isOpen={showPopup} onClose={() => setShowPopup(false)}>
         <About />
-      </Popup>
+      </Popup> */}
     </Box>
   );
 };
 
-export default withTranslation(ViewAllProblems);
+export default withTranslation(withRouter(ViewAllProblems));

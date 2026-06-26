@@ -32,29 +32,7 @@ class ProblemInput extends React.Component {
     }
 
     componentDidMount() {
-        // document.addEventListener('click', this.handleClickOutside);
-
-
-
-        // DEBUG 
-        const mathField = this.mathFieldRef.current;
-    
-        // Diagnostic logging
-        console.log('=== MATH FIELD DIAGNOSTICS ===');
-        console.log('Math field element:', mathField);
-        console.log('Math field contentEditable:', mathField?.contentEditable);
-        console.log('Math field disabled:', mathField?.disabled);
-        console.log('Math field ariaLabel:', mathField?.ariaLabel);
-        
-        // Check if it's a web component
-        console.log('Is custom element:', mathField?.constructor.name);
-        
-        // Try to access internal state
-        if (mathField?.$) {
-            console.log('MathLive $ object:', mathField.$);
-        }
-
-        // --------------------------------
+        document.addEventListener('click', this.handleClickOutside);
 
         console.debug('problem', this.props.step, 'seed', this.props.seed)
         if (this.isMatrixInput()) {
@@ -72,14 +50,14 @@ class ProblemInput extends React.Component {
         }
     }
 
-    // componentDidUpdate(_, prevState) {
-    //     if (prevState.isMathFieldFocused !== this.state.isMathFieldFocused && !this.state.isMathFieldFocused) {
-    //         const mathField = this.mathFieldRef.current;
-    //     if (mathField) {
-    //         mathField.executeCommand('hideVirtualKeyboard');
-    //         console.log("componentDidUpdate hide keyboard")
-    //     }}
-    // }
+    componentDidUpdate(_, prevState) {
+        if (prevState.isMathFieldFocused !== this.state.isMathFieldFocused && !this.state.isMathFieldFocused) {
+            const mathField = this.mathFieldRef.current;
+        if (mathField) {
+            mathField.executeCommand('hideVirtualKeyboard');
+            console.log("componentDidUpdate hide keyboard")
+        }}
+    }
     
     componentWillUnmount() {
         document.removeEventListener('click', this.handleClickOutside);
@@ -88,19 +66,11 @@ class ProblemInput extends React.Component {
     handleFocus = () => {
         this.setState({ isMathFieldFocused: true });
         console.log('MathField is focused');
-
-        const mathField = this.mathFieldRef.current;
-        console.log('FOCUS EVENT - Math field:', mathField);
-        console.log('Focus - Can edit:', mathField?.contentEditable);
-
     };
     
     handleBlur = () => {
         this.setState({ isMathFieldFocused: false });
         console.log('MathField lost focus');
-
-        const mathField = this.mathFieldRef.current;
-        console.log('BLUR EVENT - Math field:', mathField);
     };
     
     handleClickOutside = (event) => {
@@ -126,11 +96,6 @@ class ProblemInput extends React.Component {
     }
 
     onEquationChange(eq) {
-
-        console.log('onEquationChange called with:', eq);
-        console.log('Math field ref:', this.mathFieldRef.current);
-
-
         const containerEl = this.equationRef?.current
         const eqContentEl = this.equationRef?.current?.querySelector(".mq-editable-field")
 
@@ -155,7 +120,7 @@ class ProblemInput extends React.Component {
     }
 
     render() {
-        const { classes, state, index, showCorrectness, allowRetry, variabilization } = this.props;
+        const { classes, state, index, showCorrectness, allowRetry, variabilization, textBoxLayout } = this.props;
         const { use_expanded_view, debug } = this.context;
         let { problemType, stepAnswer, hintAnswer, units } = this.props.step;
         const keepMCOrder = this.props.keepMCOrder;
@@ -175,39 +140,35 @@ class ProblemInput extends React.Component {
             window.mathVirtualKeyboard.layouts = ["default"];
         }
 
+        const defaultLayout = {
+            leftMd: 2,
+            mainMd: 6,
+            rightMd: 3,
+        };
+        const { leftMd, mainMd, rightMd } = {
+            ...defaultLayout,
+            ...(textBoxLayout || {}),
+        };
+
         return (
-            <Grid container spacing={0} justifyContent="center" alignItems="center"
+            <Grid container spacing={0} justifyContent="flex-start" alignItems="center"
                 className={clsx(disableInput && 'disable-interactions')}>
-                <Grid item xs={1} md={problemType === "TextBox" ? 4 : false}/>
-                <Grid item xs={9} md={problemType === "TextBox" ? 3 : 12}>
+                <Grid item xs={false} md={problemType === "TextBox" ? leftMd : false}/>
+                <Grid item xs={9} md={problemType === "TextBox" ? mainMd : 12}>
                     {(problemType === "TextBox" && this.props.step.answerType !== "string") && (
                         <math-field
                             ref={this.mathFieldRef}
-                            // math-virtual-keyboard-policy="sandboxed"
-
-                            math-virtual-keyboard-policy="auto" 
-                            contentEditable="true"
-
+                            math-virtual-keyboard-policy="sandboxed"
                             onFocus={this.handleFocus}
                             onBlur={this.handleBlur}
                             onInput={evt => this.props.setInputValState(evt.target.value)}
                             style={{"display": "block"}}
                             value={(use_expanded_view && debug) ? correctAnswer : state.inputVal}
                             onChange={this.onEquationChange}
-
-
-                            //DEBUG
-                            onKeyDown={(evt) => {
-                                console.log('KEY DOWN:', evt.key);
-                            }}
-                            
-
-                            // autoCommands={EQUATION_EDITOR_AUTO_COMMANDS}
-
+                            autoCommands={EQUATION_EDITOR_AUTO_COMMANDS}
                             autoOperatorNames={EQUATION_EDITOR_AUTO_OPERATORS}
                         >
-                            </math-field>
-
+                        </math-field>
                     )}               
                     {(problemType === "TextBox" && this.props.step.answerType === "string") && (
                         <TextField
@@ -298,7 +259,7 @@ class ProblemInput extends React.Component {
                         {units && renderText(units, this.context.problemID, variabilization, this.context)}
                     </div>
                 </Grid>
-                <Grid item xs={false} md={problemType === "TextBox" ? 3 : false}/>
+                <Grid item xs={false} md={problemType === "TextBox" ? rightMd : false}/>
             </Grid>
         )
     }

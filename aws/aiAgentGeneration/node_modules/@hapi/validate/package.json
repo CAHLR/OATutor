@@ -1,0 +1,30 @@
+{
+  "name": "@hapi/validate",
+  "description": "Object schema validation",
+  "version": "2.0.1",
+  "repository": "git://github.com/hapijs/validate",
+  "main": "lib/index.js",
+  "files": [
+    "lib/**/*"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "plugin:@hapi/module"
+    ]
+  },
+  "dependencies": {
+    "@hapi/hoek": "^11.0.2",
+    "@hapi/topo": "^6.0.1"
+  },
+  "devDependencies": {
+    "@hapi/bourne": "^3.0.0",
+    "@hapi/code": "^9.0.3",
+    "@hapi/eslint-plugin": "*",
+    "@hapi/lab": "^25.1.2"
+  },
+  "scripts": {
+    "test": "lab -t 100 -a @hapi/code -L",
+    "test-cov-html": "lab -r html -o coverage.html -a @hapi/code"
+  },
+  "license": "BSD-3-Clause"
+}

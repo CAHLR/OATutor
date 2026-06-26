@@ -1,0 +1,51 @@
+import { Command as $Command } from "@smithy/smithy-client";
+import { MetadataBearer as __MetadataBearer } from "@smithy/types";
+import {
+  LambdaClientResolvedConfig,
+  ServiceInputTypes,
+  ServiceOutputTypes,
+} from "../LambdaClient";
+import {
+  FunctionEventInvokeConfig,
+  UpdateFunctionEventInvokeConfigRequest,
+} from "../models/models_0";
+export { __MetadataBearer };
+export { $Command };
+export interface UpdateFunctionEventInvokeConfigCommandInput
+  extends UpdateFunctionEventInvokeConfigRequest {}
+export interface UpdateFunctionEventInvokeConfigCommandOutput
+  extends FunctionEventInvokeConfig,
+    __MetadataBearer {}
+declare const UpdateFunctionEventInvokeConfigCommand_base: {
+  new (
+    input: UpdateFunctionEventInvokeConfigCommandInput
+  ): import("@smithy/smithy-client").CommandImpl<
+    UpdateFunctionEventInvokeConfigCommandInput,
+    UpdateFunctionEventInvokeConfigCommandOutput,
+    LambdaClientResolvedConfig,
+    ServiceInputTypes,
+    ServiceOutputTypes
+  >;
+  new (
+    input: UpdateFunctionEventInvokeConfigCommandInput
+  ): import("@smithy/smithy-client").CommandImpl<
+    UpdateFunctionEventInvokeConfigCommandInput,
+    UpdateFunctionEventInvokeConfigCommandOutput,
+    LambdaClientResolvedConfig,
+    ServiceInputTypes,
+    ServiceOutputTypes
+  >;
+  getEndpointParameterInstructions(): import("@smithy/middleware-endpoint").EndpointParameterInstructions;
+};
+export declare class UpdateFunctionEventInvokeConfigCommand extends UpdateFunctionEventInvokeConfigCommand_base {
+  protected static __types: {
+    api: {
+      input: UpdateFunctionEventInvokeConfigRequest;
+      output: FunctionEventInvokeConfig;
+    };
+    sdk: {
+      input: UpdateFunctionEventInvokeConfigCommandInput;
+      output: UpdateFunctionEventInvokeConfigCommandOutput;
+    };
+  };
+}

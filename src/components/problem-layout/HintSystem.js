@@ -17,6 +17,9 @@ import { stagingProp } from "../../util/addStagingProperty";
 import ErrorBoundary from "../ErrorBoundary";
 import withTranslation from '../../util/withTranslation';
 import ReloadIcon from './ReloadIcon';
+import TTSPlayer from "../../util/ttsPlayer.js";
+import TTSButtons from "./TTSButtons.js";
+import { textToReadable } from "../../util/latexToReadable.js";
 
 class HintSystem extends React.Component {
     static contextType = ThemeContext;
@@ -40,12 +43,17 @@ class HintSystem extends React.Component {
         this.isIncorrect = props.isIncorrect;
         this.giveHintOnIncorrect = props.giveHintOnIncorrect
         this.generateHintFromGPT = props.generateHintFromGPT;
+        this.enableTTS = props.enableTTS;
+
+        this.ttsPlayers = {};
+
         this.state = {
             latestStep: 0,
-            currentExpanded: (this.unlockFirstHint || this.isIncorrect) ? 0 : -1,
+            currentExpanded: -1,
             hintAnswer: "",
             showSubHints: new Array(this.props.hints.length).fill(false),
             subHintsFinished: subHintsFinished,
+            ttsPlayingHint: -1, // index of currently playing hint, -1 = none
         };
 
         if (this.unlockFirstHint && this.props.hintStatus.length > 0) {
@@ -56,6 +64,62 @@ class HintSystem extends React.Component {
             this.props.unlockHint(0, this.props.hints[0].type);
         }
     }
+
+    componentDidMount() {
+        if (!this.enableTTS) return;
+        for (let j = 0; j < this.props.hints.length; j++) {
+            const hint = this.props.hints[j];
+            let segments = null;
+            if (hint.pacedSpeech && Array.isArray(hint.pacedSpeech) && hint.pacedSpeech.length > 0) {
+                segments = hint.pacedSpeech;
+            } else {
+                const raw = textToReadable(
+                    (hint.title && hint.title !== "nan" ? hint.title : "") + ". " + (hint.text || "")
+                );
+                if (raw && raw !== ".") segments = [raw];
+            }
+            if (segments && segments.length > 0) {
+                const player = new TTSPlayer();
+                player.onStateChange((playing) => this.setState({ ttsPlayingHint: playing ? j : -1 }));
+                player.onReady(() => this.forceUpdate());
+                this.ttsPlayers[j] = player;
+                player.fetchAudio(segments);
+            }
+        }
+    }
+
+    componentWillUnmount() {
+        Object.values(this.ttsPlayers).forEach(p => p.destroy());
+    }
+
+    toggleHintTTS = (hintIndex) => {
+        const player = this.ttsPlayers[hintIndex];
+        if (!player) return;
+        // Stop any other playing hint
+        Object.entries(this.ttsPlayers).forEach(([idx, p]) => {
+            if (parseInt(idx) !== hintIndex && p.playing) {
+                p.pause();
+            }
+        });
+        player.onStateChange((playing) => {
+            this.setState({ ttsPlayingHint: playing ? hintIndex : -1 });
+        });
+        player.togglePlayPause();
+    };
+
+    replayHintTTS = (hintIndex) => {
+        const player = this.ttsPlayers[hintIndex];
+        if (!player) return;
+        Object.entries(this.ttsPlayers).forEach(([idx, p]) => {
+            if (parseInt(idx) !== hintIndex && p.playing) {
+                p.pause();
+            }
+        });
+        player.onStateChange((playing) => {
+            this.setState({ ttsPlayingHint: playing ? hintIndex : -1 });
+        });
+        player.replay();
+    };
 
     unlockHint = (event, expanded, i) => {
         if (this.state.currentExpanded === i ) {
@@ -159,6 +223,8 @@ class HintSystem extends React.Component {
                 {hints.map((hint, i) => (
                     <Accordion
                         key={`${problemID}-${hint.id}`}
+                        className={classes.accordion}
+                        classes={{ expanded: classes.accordionExpanded }}
                         onChange={(event, expanded) =>
                             this.unlockHint(event, expanded, i)
                         }
@@ -172,8 +238,10 @@ class HintSystem extends React.Component {
                                 debug)
                         }
                         defaultExpanded={false}
+                        style={{ margin: 0, boxShadow: "none", borderBottom: "1px solid #e7e7e7ff", }}
                     >
                         <AccordionSummary
+                            className={classes.accordionSummary}
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel1a-content"
                             id="panel1a-header"
@@ -182,28 +250,43 @@ class HintSystem extends React.Component {
                             })}
                         >
                             <Typography className={classes.heading}>
-                                {translate('hintsystem.hint') + (i + 1) + ": "}
-                                {renderText(
-                                    hint.title === "nan" ? "" : hint.title,
-                                    problemID,
-                                    chooseVariables(
-                                        Object.assign(
-                                            {},
-                                            stepVars,
-                                            hint.variabilization
-                                        ),
-                                        seed
-                                    ),
-                                    this.context
+                                {translate("hintsystem.hint") + (i + 1)}
+                                {this.ttsPlayers[i] && (
+                                    <TTSButtons
+                                        playing={this.state.ttsPlayingHint === i}
+                                        onToggle={(e) => { e.stopPropagation(); this.toggleHintTTS(i); }}
+                                        onReplay={(e) => { e.stopPropagation(); this.replayHintTTS(i); }}
+                                        disabled={!this.ttsPlayers[i].isReady()}
+                                    />
                                 )}
                             </Typography>
                         </AccordionSummary>
-                        <AccordionDetails >
+                        <AccordionDetails className={classes.accordionDetails}>
                         <div style={{ width: "100%" }}>
                             <Typography
                                 component={"span"}
                                 style={{ width: "100%" }}
                             >
+                                {hint.title && hint.title !== "nan" && (
+                                    <>
+                                        <strong>
+                                            {renderText(
+                                                hint.title,
+                                                problemID,
+                                                chooseVariables(
+                                                    Object.assign(
+                                                        {},
+                                                        stepVars,
+                                                        hint.variabilization
+                                                    ),
+                                                    seed
+                                                ),
+                                                this.context
+                                            )}
+                                        </strong>
+                                        <br />
+                                    </>
+                                )}
                                 {renderText(
                                     hint.text,
                                     problemID,
@@ -317,7 +400,46 @@ const styles = (theme) => ({
     },
     heading: {
         fontSize: theme.typography.pxToRem(15),
-        fontWeight: theme.typography.fontWeightRegular,
+        fontWeight: 600,
+        color: "#3f7091",
+    },
+    accordion: {
+        backgroundColor: "#ffffff",
+        border: "1px solid #a3c5de",
+        borderRadius: 6,
+        marginBottom: 6,
+        boxShadow: "none",
+        overflow: "hidden",
+        "&:before": {
+            display: "none",
+        },
+        "&.Mui-disabled": {
+            backgroundColor: "#f5f8fb",
+            borderColor: "#d4e3ef",
+        },
+    },
+    accordionExpanded: {
+        margin: "0 0 6px 0",
+    },
+    accordionSummary: {
+        minHeight: 40,
+        backgroundColor: "#ffffff",
+        borderRadius: 6,
+        "&.Mui-expanded": {
+            minHeight: 40,
+            backgroundColor: "#eef4fa",
+            borderRadius: "6px 6px 0 0",
+        },
+        "& .MuiAccordionSummary-content": {
+            margin: "10px 0",
+        },
+    },
+    accordionDetails: {
+        backgroundColor: "#eef4fa",
+        borderTop: "1px solid #a3c5de",
+        borderRadius: "0 0 6px 6px",
+        paddingTop: theme.spacing(1.5),
+        paddingBottom: theme.spacing(1.5),
     },
 });
 
