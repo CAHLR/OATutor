@@ -1,19 +1,41 @@
 [
     {
         "id": "acd9137measure23a-h1",
-        "type": "hint",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Larger"
+        ],
         "dependencies": [],
-        "title": "Narrow down the prefix",
-        "text": "Since a kilogram is $${10}^3$$ grams, we can turn this into $$4.79\\times{10}^5\\times{10}^3=4.79\\times{10}^8$$ g.",
+        "title": "Larger or Smaller?",
+        "text": "Is this value significantly larger or significantly smaller than a kilogram?",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "choices": [
+            "Smaller",
+            "Larger",
+            "Larger"
+        ]
     },
     {
         "id": "acd9137measure23a-h2",
         "type": "hint",
         "dependencies": [
             "acd9137measure23a-h1"
+        ],
+        "title": "Narrow down the prefix",
+        "text": "Remember that $$1$$ kg $$=$$ $${10}^3$$ g",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acd9137measure23a-h3",
+        "type": "hint",
+        "dependencies": [
+            "acd9137measure23a-h2"
         ],
         "title": "Divide by the prefix factor",
         "text": "$$1$$ $$Mg={10}^6$$ g and $$1$$ $$Gg={10}^9$$ g, so $${10}^8$$ $$g={10}^2$$ $$Mg={10}^{-1}$$ Gg.",
