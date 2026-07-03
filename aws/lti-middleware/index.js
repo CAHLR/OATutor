@@ -29,7 +29,7 @@ const consumerKeySecretMap = {
   key: "secret",
 };
 
-const oatsHost = "https://cahlr.github.io/OATutor/#";
+const oatsHost = "https://cahlr.github.io/OATutor-beta/#";
 const stagingHost = "https://cahlr.github.io/OATutor-Staging/#";
 const unlinkedPage = "assignment-not-linked";
 const alreadyLinkedPage = "assignment-already-linked";
