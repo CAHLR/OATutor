@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a9bee85sqroots17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Split",
+        "text": "Rewrite $$\\sqrt{\\frac{13}{18}}$$ as $$\\frac{\\sqrt{13}}{\\sqrt{18}}$$, since $$\\sqrt{\\frac{a}{b}}=\\frac{\\sqrt{a}}{\\sqrt{b}}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9bee85sqroots17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9bee85sqroots17a-h1"
+        ],
+        "title": "Rationalize",
+        "text": "Multiply the numerator and denominator by $$\\sqrt{18}$$ to remove the radical from the denominator.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9bee85sqroots17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9bee85sqroots17a-h2"
+        ],
+        "title": "Simplify",
+        "text": "Simplify the radical and reduce the fraction if possible.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9bee85sqroots17a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9bee85sqroots17a-h3"
+        ],
+        "title": "Answer",
+        "text": "The answer is $$\\frac{\\sqrt{26}}{6}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]
