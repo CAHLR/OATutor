@@ -1,0 +1,87 @@
+[
+    {
+        "id": "ace918bnlaws16b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The spider is hanging from a web that forms an angle of $$12$$ degrees below the horizontal on each side. We need to find the tension in the web.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws16b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws16b-h1"
+        ],
+        "title": "Analyzing Forces",
+        "text": "Consider the forces acting on the spider. The weight of the spider acts downward, and the tension in the web acts along the strands at an angle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws16b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws16b-h2"
+        ],
+        "title": "Components of Tension",
+        "text": "The tension in the web has two components: a vertical component that balances the weight of the spider and a horizontal component that cancels out.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws16b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$T sin\\left(12\\right)=2\\times{10}^{-5}\\times9.8$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws16b-h3"
+        ],
+        "title": "Calculating Vertical Component",
+        "text": "The vertical component of the tension (T) can be expressed as T*sin(12 degrees). This component must equal the weight of the spider.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws16b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$T=\\frac{2\\times{10}^{-5}\\times9.8}sin^$\\left(12\\righ$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws16b-h4"
+        ],
+        "title": "Solving for Tension",
+        "text": "Rearrange the equation to solve for T.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws16b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4.71$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws16b-h5"
+        ],
+        "title": "Final Calculation",
+        "text": "Calculate the value of T using the equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

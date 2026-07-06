@@ -1,0 +1,58 @@
+[
+    {
+        "id": "ad1dfa0problem41a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Centripetal Acceleration Formula",
+        "text": "Use the centripetal acceleration formula $$a_c=\\frac{v^2}{r}$$ where v is the orbital velocity of the Sun and $$r$$ is the radius.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad1dfa0problem41a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2.18\\times{10}^4$$"
+        ],
+        "dependencies": [
+            "ad1dfa0problem41a-h1"
+        ],
+        "title": "Calculate the Orbital Velocity of the Sun",
+        "text": "The orbital velocity v of the Sun is given by the formula $$v=\\frac{2pir}{T}$$. First convert $$3.00$$ * $${10}^4$$ light years to meters and the period $$2.60$$ * $${10}^8$$ year to seconds, then substitute $$r$$ and T into the formula to get v in $$\\frac{m}{s}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$2.18\\times{10}^4$$",
+            "$$1.08\\times{10}^4$$",
+            "$$2.84\\times{10}^4$$",
+            "$$2.18\\times{10}^5$$"
+        ]
+    },
+    {
+        "id": "ad1dfa0problem41a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1.67\\times{10}^{\\left(-10\\right)}$$"
+        ],
+        "dependencies": [
+            "ad1dfa0problem41a-h2"
+        ],
+        "title": "Calculate the Centripetal Acceleration",
+        "text": "Substitute v and $$r$$ into the formula and calculate for $$a_c$$ in $$\\frac{m}{s^2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$1.67\\times{10}^{\\left(-10\\right)}$$",
+            "$$1.08\\times{10}^{\\left(-10\\right)}$$",
+            "$$1.66\\times{10}^{\\left(-9\\right)}$$",
+            "$$2.18\\times{10}^{\\left(-10\\right)}$$"
+        ]
+    }
+]

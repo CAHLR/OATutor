@@ -1,0 +1,87 @@
+[
+    {
+        "id": "ace918bnlaws15b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Forces",
+        "text": "Each team exerts a force on the ground, which is transferred to the rope. The tension in the rope is the force that each team exerts on it.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws15b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws15b-h1"
+        ],
+        "title": "Calculate Total Force Exerted by Each Team",
+        "text": "To find the total force exerted by each team, multiply the average force exerted by one member by the number of members in the team.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws15b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9\\times1350$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws15b-h2"
+        ],
+        "title": "Calculate Total Force for Team $$1$$",
+        "text": "Calculate the total force exerted by the first team: $$9$$ members each exerting $$1350$$ N.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws15b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9\\times1365$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws15b-h2"
+        ],
+        "title": "Calculate Total Force for Team $$2$$",
+        "text": "Calculate the total force exerted by the second team: $$9$$ members each exerting $$1365$$ N.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws15b-h5",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws15b-h4"
+        ],
+        "title": "Determine the Tension in the Rope",
+        "text": "The tension in the rope is equal to the force exerted by either team, as they are pulling in opposite directions with equal force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws15b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12215$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws15b-h5"
+        ],
+        "title": "Calculate the Tension in the Rope",
+        "text": "Since both teams exert equal force, the tension in the rope is equal to the force exerted by one team. Use the force calculated for either team.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

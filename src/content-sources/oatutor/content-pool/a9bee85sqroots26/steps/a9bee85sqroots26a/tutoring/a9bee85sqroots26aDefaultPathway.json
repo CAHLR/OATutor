@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a9bee85sqroots26a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Split",
+        "text": "Rewrite $$\\sqrt{\\frac{19}{48}}$$ as $$\\frac{\\sqrt{19}}{\\sqrt{48}}$$, since $$\\sqrt{\\frac{a}{b}}=\\frac{\\sqrt{a}}{\\sqrt{b}}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9bee85sqroots26a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9bee85sqroots26a-h1"
+        ],
+        "title": "Rationalize",
+        "text": "Multiply the numerator and denominator by $$\\sqrt{48}$$ to remove the radical from the denominator.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9bee85sqroots26a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9bee85sqroots26a-h2"
+        ],
+        "title": "Simplify",
+        "text": "Simplify the radical and reduce the fraction if possible.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9bee85sqroots26a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9bee85sqroots26a-h3"
+        ],
+        "title": "Answer",
+        "text": "The answer is $$\\frac{\\sqrt{57}}{12}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

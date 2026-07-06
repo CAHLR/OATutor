@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a662caelawsin31c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sum of angles in a triangle",
+        "text": "Recall that the sum of the interior angles of any triangle is $$180**{\\circ}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin31c-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A$$ $$\\approx$$ 56.4**{\\circ},$$ \\beta=35**{\\circ}$$"
+        ],
+        "dependencies": [
+            "a662caelawsin31c-h1"
+        ],
+        "title": "Identify known angles",
+        "text": "What are the known values for angles $$A$$ and $$\\beta$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$A$$ $$\\approx$$ 56.4**{\\circ},$$ \\beta=35**{\\circ}$$",
+            "$$A$$ $$\\approx$$ 35**{\\circ},$$ \\beta=56.4**{\\circ}$$",
+            "$$A$$ $$\\approx$$ $$56.4$$, $$\\beta=35$$",
+            "$$A$$ $$\\approx$$ 180**{\\circ},$$ \\beta=35**{\\circ}$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin31c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin31c-h1"
+        ],
+        "title": "Calculating C",
+        "text": "Subtract the known angles $$A$$ and $$\\beta$$ from $$180**{\\circ}$$ to find angle $$C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin31c-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "88.6**{\\circ}"
+        ],
+        "dependencies": [
+            "a662caelawsin31c-h2"
+        ],
+        "title": "Calculate C",
+        "text": "What is the value of angle $$C$$ (in degrees), rounded to the nearest tenth?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

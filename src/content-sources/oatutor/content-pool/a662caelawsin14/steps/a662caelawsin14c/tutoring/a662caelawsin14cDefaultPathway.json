@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a662caelawsin14c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply the Law of Sines",
+        "text": "The Law of Sines states that $$a/\\sin(\\alpha) $$=$$ b/\\sin(\\beta) $$=$$ c/\\sin(\\gamma)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin14c-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$10$$, 30**{\\circ},$$ 95**{\\circ}"
+        ],
+        "dependencies": [
+            "a662caelawsin14c-h1"
+        ],
+        "title": "Identify known values",
+        "text": "What are the values of $$b$$, $$\\gamma$$, $$and$$ $$\\beta$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$10$$, 30**{\\circ},$$ 95**{\\circ}",
+            "$$10$$, 95**{\\circ},$$ 30**{\\circ}",
+            "$$10$$, 55**{\\circ},$$ 95**{\\circ}",
+            "$$5.0$$, 30**{\\circ},$$ 95**{\\circ}"
+        ]
+    },
+    {
+        "id": "a662caelawsin14c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin14c-h1"
+        ],
+        "title": "Set up the proportion",
+        "text": "Which ratio involves the unknown side $$c$$ and a known side and angle?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin14c-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$c/\\sin(30**{\\circ}) $$=$$ 10/\\sin(95**{\\circ})$$"
+        ],
+        "dependencies": [
+            "a662caelawsin14c-h2"
+        ],
+        "title": "Law of Sines equation",
+        "text": "Write the Law of Sines equation to solve for $$c$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$c/\\sin(30**{\\circ}) $$=$$ 10/\\sin(95**{\\circ})$$",
+            "$$c/\\sin(95**{\\circ}) $$=$$ 10/\\sin(30**{\\circ})$$",
+            "$$c/\\sin(30**{\\circ}) $$=$$ \\sin(95**{\\circ})/10$$",
+            "$$\\frac{c}{10}$$ $$=$$ \\sin(30**{\\circ})/\\sin(95**{\\circ})$$"
+        ]
+    }
+]

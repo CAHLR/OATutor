@@ -1,0 +1,82 @@
+[
+    {
+        "id": "abfba37quadratic23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Defining Standard Vertex Form",
+        "text": "The standard vertex form of an equation is in the form $$f(x)={a\\left(x-h\\right)}^2+k$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abfba37quadratic23a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abfba37quadratic23a-h1"
+        ],
+        "title": "Completing the Square",
+        "text": "To find the value of the binomial term being squared, observe the coefficient of the $$x$$ term in the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abfba37quadratic23a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "abfba37quadratic23a-h2"
+        ],
+        "title": "Identifying Unknowns",
+        "text": "What should the value of $$h$$ be in $$f(x)={a\\left(x-h\\right)}^2$$ so we get $$2$$ as the coefficient of the $$x$$ term after expansion?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abfba37quadratic23a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "abfba37quadratic23a-h3"
+        ],
+        "title": "Identifying Unknowns",
+        "text": "What should the value of a be in $$f(x)={a\\left(x-h\\right)}^2+k$$ if the coefficient of the $$x^2$$ term is 1?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abfba37quadratic23a-h5",
+        "type": "hint",
+        "dependencies": [
+            "abfba37quadratic23a-h4"
+        ],
+        "title": "Constant in Completing the Square",
+        "text": "Add or subtract a constant outside of the binomial term being squared to equate the binomial expansion with the original equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abfba37quadratic23a-h6",
+        "type": "hint",
+        "dependencies": [
+            "abfba37quadratic23a-h5"
+        ],
+        "title": "Calculating Constant",
+        "text": "What constant do we need to add or subtract to get from $$1$$ to -3?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

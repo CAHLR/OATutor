@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a56bd16newtonapps3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the average force exerted on the dolphin, we need to use Newton's second law of motion, which relates force, mass, and acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps3a-h1"
+        ],
+        "title": "Calculate the Acceleration",
+        "text": "First, calculate the acceleration of the dolphin using the formula: \\(a=(v_f-v_i)/t\\), where \\(v_f\\) is the final velocity, \\(v_i\\) is the initial velocity, and \\(t\\) is the time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1.9565$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps3a-h2"
+        ],
+        "title": "Calculate the Acceleration",
+        "text": "Given: \\(v_f=7.5\\) $$\\frac{m}{s}$$, \\(v_i=12.0\\) $$\\frac{m}{s}$$, $$\\(t=2.3\\)$$ s. Calculate \\(a\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps3a-h3"
+        ],
+        "title": "Apply Newton's Second Law",
+        "text": "Now that you have the acceleration, use Newton's second law: \\(F=m*a\\), where \\(m\\) is the mass of the dolphin and \\(a\\) is the acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps3a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-68.5$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps3a-h4"
+        ],
+        "title": "Calculate the Force",
+        "text": "Given: $$\\(m=35.0\\)$$ kg, $$\\(a=-1.9565\\)$$ m/s\u00b2. Calculate \\(F\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "id": "aaf8369DiscreteD20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using Expected Values",
+        "text": "To calculate how many games it will take to reach ten points, we can use the equation: $$10$$ $$=$$ $$E[X] n$$, where E[X] is the expected points from one game and $$n$$ is the amount of games it will take two reach ten points. Solving for $$n$$ will give us the correct solution.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aaf8369DiscreteD20a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "aaf8369DiscreteD20a-h1"
+        ],
+        "title": "Expected Value",
+        "text": "If our player rolls three dice, how many points can we expect them to get?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aaf8369DiscreteD20a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20$$"
+        ],
+        "dependencies": [
+            "aaf8369DiscreteD20a-h2"
+        ],
+        "title": "Answer",
+        "text": "With our equation and variables in hand, we can now solve for $$n$$. What is our final answer going to be?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

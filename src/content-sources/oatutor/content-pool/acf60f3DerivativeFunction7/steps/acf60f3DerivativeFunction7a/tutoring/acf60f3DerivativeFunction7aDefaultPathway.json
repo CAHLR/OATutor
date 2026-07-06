@@ -1,0 +1,103 @@
+[
+    {
+        "id": "acf60f3DerivativeFunction7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Derivative Function",
+        "text": "Start directly with the definition of the Derivative Function. $$f\u2032(x)=\\lim_{h\\to0} \\frac{f{\\left(x+h\\right)}-f{\\left(x\\right)}}{h}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acf60f3DerivativeFunction7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "acf60f3DerivativeFunction7a-h1"
+        ],
+        "title": "Derivative Function",
+        "text": "We will get $$f'(x)=\\lim_{h\\to0} \\frac{\\frac{9}{x+h}-\\frac{9}{x}}{h}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acf60f3DerivativeFunction7a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{-9h}{x^2+xh}$$"
+        ],
+        "dependencies": [
+            "acf60f3DerivativeFunction7a-h2"
+        ],
+        "title": "Simplify Numerator",
+        "text": "What is the simplified numerator $$\\frac{9}{x+h}-\\frac{9}{x}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{-9h}{x^2+xh}$$",
+            "$$\\frac{9h}{x^2+xh}$$"
+        ]
+    },
+    {
+        "id": "acf60f3DerivativeFunction7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "acf60f3DerivativeFunction7a-h3"
+        ],
+        "title": "Simplify",
+        "text": "$$\\frac{\\left(-\\frac{9}{x^2+xh}\\right)}{h}$$ equals to $$\\frac{1}{h} \\left(-\\frac{9}{x^2+xh}\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acf60f3DerivativeFunction7a-h5",
+        "type": "hint",
+        "dependencies": [
+            "acf60f3DerivativeFunction7a-h4"
+        ],
+        "title": "Simplify",
+        "text": "Cancel the common factor $$h$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acf60f3DerivativeFunction7a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$/lim{h,0$$, $$\\frac{-9}{x^2+xh}$$}"
+        ],
+        "dependencies": [
+            "acf60f3DerivativeFunction7a-h5"
+        ],
+        "title": "Simplify",
+        "text": "What will get ?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$/lim{h,0$$, $$\\frac{-9h}{x^2+xh}$$}",
+            "$$/lim{h,0$$, $$\\frac{-9}{x^2+xh}$$}",
+            "$$/lim{h,0$$, $$\\frac{-9}{h{\\left(x^2+xh\\right)}}$$}"
+        ]
+    },
+    {
+        "id": "acf60f3DerivativeFunction7a-h7",
+        "type": "hint",
+        "dependencies": [
+            "acf60f3DerivativeFunction7a-h6"
+        ],
+        "title": "Evaluate the Limit",
+        "text": "To get a final answer, Evaluate the Limit by inserting $$h=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

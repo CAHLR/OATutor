@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a649252angle22c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify $$2x$$",
+        "text": "First, calculate the value of $$2x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle22c-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{pi}{4}$$"
+        ],
+        "dependencies": [
+            "a649252angle22c-h1"
+        ],
+        "title": "Calculate $$2x$$",
+        "text": "If $$x$$ $$=$$ $$\\frac{pi}{8}$$, $$what$$ $$is$$ $$2x$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle22c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle22c-h1"
+        ],
+        "title": "Evaluate $$\\tan(\\frac{pi}{4})$$",
+        "text": "What is the exact value of $$\\tan(\\frac{pi}{4})$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle22c-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a649252angle22c-h2"
+        ],
+        "title": "Ratio of sine and cosine",
+        "text": "Recall that $$\\tan(\\theta) $$=$$ \\frac{\\sin(\\theta)}{\\cos(\\theta)}$$. $$ \\cup se$$ $$the$$ $$values$$ $$you$$ $$found$$ $$for$$ $$\\sin(\\frac{pi}{4})$$ and $$\\cos(\\frac{pi}{4})$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

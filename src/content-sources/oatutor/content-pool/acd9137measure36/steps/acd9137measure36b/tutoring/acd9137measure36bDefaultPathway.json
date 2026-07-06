@@ -1,0 +1,24 @@
+[
+    {
+        "id": "acd9137measure36b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rule for $$\\frac{multiplication}{division}$$",
+        "text": "The result must have the same number of significant figures as the input with the fewest sig figs. Here $$r=1.2$$ $$m$$ has $$2$$ sig figs, so the answer is limited to $$2$$ sig figs.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acd9137measure36b-h2",
+        "type": "hint",
+        "dependencies": [
+            "acd9137measure36b-h1"
+        ],
+        "title": "Round $$4.5238934$$ to $$2$$ sig figs",
+        "text": "The first two significant digits are $$4$$ and $$5$$. The next digit is $$2$$, which rounds down. So $$A=4.5$$ $$m^2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

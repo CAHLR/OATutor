@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a9cf10atrig2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identity",
+        "text": "$$\\tan(\\theta)=\\frac{\\sin(\\theta)}{\\cos(\\theta)},\\ \\csc(\\theta)=\\frac{1}{\\sin(\\theta)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig2a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Substitute identities into csc(\u03b8)cos(\u03b8)tan(\u03b8).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig2a-h2"
+        ],
+        "title": "Simplify",
+        "text": "$$\\csc(\\theta)\\cos(\\theta)\\tan(\\theta)=\\frac{1}{\\sin(\\theta)}\\cdot\\cos(\\theta)\\cdot\\frac{\\sin(\\theta)}{\\cos(\\theta)}=1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

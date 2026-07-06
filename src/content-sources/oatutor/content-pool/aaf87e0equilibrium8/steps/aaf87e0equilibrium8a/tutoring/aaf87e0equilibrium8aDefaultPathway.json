@@ -1,0 +1,41 @@
+[
+    {
+        "id": "aaf87e0equilibrium8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bulk Modulus",
+        "text": "The bulk modulus (K) is a measure of a material's resistance to uniform compression. It is defined as the ratio of the applied pressure increase to the relative decrease in volume.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aaf87e0equilibrium8a-h1"
+        ],
+        "title": "Formula for Fractional Volume Change",
+        "text": "The fractional change in volume $$\\frac{\\Delta V}{V}$$ can be calculated using the formula: $$\\frac{\\Delta V}{V}=\\frac{-\\Delta P}{K}$$, where \u0394P is the change in pressure and K is the bulk modulus.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.0001$$"
+        ],
+        "dependencies": [
+            "aaf87e0equilibrium8a-h2"
+        ],
+        "title": "Calculate the Fractional Volume Change",
+        "text": "Given that the bulk modulus $$K=1\\times{10}^{11}$$ N/m\u00b2 and the pressure change $$\u0394P={10}^7$$ N/m\u00b2, use the formula $$\\frac{\\Delta V}{V}=\\frac{-\\Delta P}{K}$$ to find the fractional volume change.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

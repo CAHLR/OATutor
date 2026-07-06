@@ -1,0 +1,153 @@
+[
+    {
+        "id": "a79dde1funccomp2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substituting $$x$$",
+        "text": "For all instances of $$x$$, replace with $$4x^4$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a79dde1funccomp2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a79dde1funccomp2a-h1"
+        ],
+        "title": "Substituting $$x$$ in $$3x^2$$",
+        "text": "Replacing $$x$$ within $$3x^2$$ results in $$3\\left(4x^4\\right)^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a79dde1funccomp2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a79dde1funccomp2a-h2"
+        ],
+        "title": "Substituting $$x$$ in $$3x^2$$",
+        "text": "For a,b,c;(a*b)**c=(a**c)*(b**c)",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a79dde1funccomp2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a79dde1funccomp2a-h3"
+        ],
+        "title": "Substituting $$x$$ in $$3x^2$$",
+        "text": "Distribute the exponent to each component: $$3\\times4^2 \\left(x^4\\right)^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a79dde1funccomp2a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$48$$"
+        ],
+        "dependencies": [
+            "a79dde1funccomp2a-h4"
+        ],
+        "title": "Substituting $$x$$ in $$3x^2$$",
+        "text": "What is $$3\\times4^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a79dde1funccomp2a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x^8$$"
+        ],
+        "dependencies": [
+            "a79dde1funccomp2a-h4"
+        ],
+        "title": "Substituting $$x$$ in $$3x^2$$",
+        "text": "What is $$\\left(x^4\\right)^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a79dde1funccomp2a-h6-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Power of a Power",
+                "text": "For a,b,c;(a**b)**c=a**(b*c).",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a79dde1funccomp2a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a79dde1funccomp2a-h5",
+            "a79dde1funccomp2a-h6"
+        ],
+        "title": "Substituting $$x$$ in $$3x^2$$",
+        "text": "Multiply the two components together to get the final term: $$48x^8$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a79dde1funccomp2a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4x^4$$"
+        ],
+        "dependencies": [
+            "a79dde1funccomp2a-h7"
+        ],
+        "title": "Substituting $$x$$ in $$x$$",
+        "text": "What is $$x$$ replaced with $$4x^4$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a79dde1funccomp2a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a79dde1funccomp2a-h8"
+        ],
+        "title": "Substituting $$x$$ in $$1$$",
+        "text": "What is $$1$$ replaced with $$4x^4$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a79dde1funccomp2a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a79dde1funccomp2a-h9"
+        ],
+        "title": "Adding the Terms",
+        "text": "Add up $$48x^8$$, $$4x^4$$, and $$1$$ to get the final result.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    }
+]

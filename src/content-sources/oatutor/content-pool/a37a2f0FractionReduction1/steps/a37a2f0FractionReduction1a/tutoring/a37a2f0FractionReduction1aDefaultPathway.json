@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a37a2f0FractionReduction1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Greatest Common Divisor (GCD)",
+        "text": "To simplify a fraction, find the greatest common divisor (GCD) of the numerator and the denominator. What is the GCD of $$45$$ and 60?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a37a2f0FractionReduction1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$15$$"
+        ],
+        "dependencies": [
+            "a37a2f0FractionReduction1a-h1"
+        ],
+        "title": "Calculate the GCD",
+        "text": "List the factors of $$45$$ and $$60$$. The GCD is the largest factor they have in common.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a37a2f0FractionReduction1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a37a2f0FractionReduction1a-h2"
+        ],
+        "title": "Divide by the GCD",
+        "text": "Divide both the numerator and the denominator by their GCD to simplify the fraction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a37a2f0FractionReduction1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-3}{4}$$"
+        ],
+        "dependencies": [
+            "a37a2f0FractionReduction1a-h3"
+        ],
+        "title": "Simplify the Fraction",
+        "text": "Divide $$-45$$ by $$15$$ and $$60$$ by $$15$$ to simplify the fraction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a37a2f0FractionReduction1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a37a2f0FractionReduction1a-h4"
+        ],
+        "title": "Check Your Work",
+        "text": "Ensure that the simplified fraction cannot be reduced further by checking if the numerator and denominator have any common factors other than $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

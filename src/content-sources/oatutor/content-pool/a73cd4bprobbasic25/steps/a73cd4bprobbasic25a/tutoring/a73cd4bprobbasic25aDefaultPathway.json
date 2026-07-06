@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a73cd4bprobbasic25a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Probability Rules",
+        "text": "To find the probability of our situation, we first need to find out how many office workers we can choose from.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a73cd4bprobbasic25a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$50$$"
+        ],
+        "dependencies": [
+            "a73cd4bprobbasic25a-h1"
+        ],
+        "title": "Total Employees Not Going Out",
+        "text": "How many employees do not go to an establishment during lunch time?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a73cd4bprobbasic25a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a73cd4bprobbasic25a-h2"
+        ],
+        "title": "Probability Rules",
+        "text": "Next, we need to find the amount of employees that correspond to our initial condition.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a73cd4bprobbasic25a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$15$$"
+        ],
+        "dependencies": [
+            "a73cd4bprobbasic25a-h3"
+        ],
+        "title": "Total Non-Eaters",
+        "text": "How many employees do not eat lunch?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a73cd4bprobbasic25a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{10}$$"
+        ],
+        "dependencies": [
+            "a73cd4bprobbasic25a-h4"
+        ],
+        "title": "Answer",
+        "text": "To find our answer, we can take our first proportion and divide it by our second to get the probability. What is our final answer?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

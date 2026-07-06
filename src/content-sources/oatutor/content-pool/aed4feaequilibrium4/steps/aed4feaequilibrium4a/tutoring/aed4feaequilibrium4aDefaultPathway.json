@@ -1,0 +1,94 @@
+[
+    {
+        "id": "aed4feaequilibrium4a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [],
+        "title": "Determine the Net Torque",
+        "text": "What should the net torque be when the seesaw is balanced (in Nm)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aed4feaequilibrium4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aed4feaequilibrium4a-h1"
+        ],
+        "title": "Calculate the Forces",
+        "text": "Assume the first child pushes in the negative direction and the second child pushes in the positive direction. Notice that the forces here are the weight of the child on each side, calculated as mass\u00d7g.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aed4feaequilibrium4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-254.8$$"
+        ],
+        "dependencies": [
+            "aed4feaequilibrium4a-h2"
+        ],
+        "title": "Calculate Force from the First Child",
+        "text": "What force is exerted by the first child (in Newtons)? Take acceleration from gravity to be $$\\frac{9.8m}{s^2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aed4feaequilibrium4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$313.6$$"
+        ],
+        "dependencies": [
+            "aed4feaequilibrium4a-h2"
+        ],
+        "title": "Calculate Force from the Second Child",
+        "text": "What force is exerted by the second child (in Newtons)? Take acceleration from gravity to be $$\\frac{9.8m}{s^2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aed4feaequilibrium4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aed4feaequilibrium4a-h2"
+        ],
+        "title": "Use the Torque Formula",
+        "text": "Recall the formula for torque: T $$=$$ $$r F sin\\left(\\theta\\right)$$. Here, $$T_{Net}$$ $$=$$ $$T_1$$ - $$T_2$$ $$=$$ $$0$$. Calculate for $$r_2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aed4feaequilibrium4a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.3$$"
+        ],
+        "dependencies": [
+            "aed4feaequilibrium4a-h3",
+            "aed4feaequilibrium4a-h4",
+            "aed4feaequilibrium4a-h5"
+        ],
+        "title": "Solve for the Distance",
+        "text": "Solve for $$r$$ in meters: $$0$$ $$=$$ $$(-254.8N$$ * $$1.6m)$$ + $$(313.6N$$ * r)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a16844emotion2d1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Position Vectors",
+        "text": "A position vector describes the position of a point in space relative to an origin. It is expressed in terms of unit vectors along the coordinate axes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d1a-h1"
+        ],
+        "title": "Unit Vectors in 3D",
+        "text": "In a 3D coordinate system, the unit vectors are \\(\\hat{i}\\), \\(\\hat{j}\\), and \\(\\hat{k}\\), representing the $$x$$, $$y$$, and $$z$$ axes, respectively.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d1a-h2"
+        ],
+        "title": "Forming the Position Vector",
+        "text": "To form the position vector, multiply each coordinate by its corresponding unit vector and sum them up.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "1.0*\\hat{i}-4.0*\\hat{j}+6.0*\\hat{k}"
+        ],
+        "dependencies": [
+            "a16844emotion2d1a-h3"
+        ],
+        "title": "Calculate the Position Vector",
+        "text": "Given the coordinates $$(1.0$$, $$-4.0$$, $$6.0)$$, calculate the position vector using the unit vectors \\(\\hat{i}\\), \\(\\hat{j}\\), and \\(\\hat{k}\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

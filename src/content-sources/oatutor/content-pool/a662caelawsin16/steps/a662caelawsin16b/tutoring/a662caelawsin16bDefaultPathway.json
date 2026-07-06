@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a662caelawsin16b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply the Law of Sines",
+        "text": "The Law of Sines states that $$\\$\\$\\frac{a}{\\sin(A)$$} $$=$$ $$\\frac{b}{\\sin(B)$$} $$=$$ $$\\frac{c}{\\sin(C)}\\$\\$$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin16b-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$10$$, 132**{\\circ},$$ 25**{\\circ}"
+        ],
+        "dependencies": [
+            "a662caelawsin16b-h1"
+        ],
+        "title": "Identify known values",
+        "text": "What are the values of $$b$$, $$A$$, $$and$$ $$B$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$10$$, 132**{\\circ},$$ 25**{\\circ}",
+            "$$10$$, 25**{\\circ},$$ 132**{\\circ}",
+            "$$10$$, 23**{\\circ},$$ 25**{\\circ}",
+            "$$17.6$$, 132**{\\circ},$$ 25**{\\circ}"
+        ]
+    },
+    {
+        "id": "a662caelawsin16b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin16b-h1"
+        ],
+        "title": "Set up the proportion",
+        "text": "Which ratio involves the unknown side $$a$$ and a known side and angle?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin16b-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$a/\\sin(132**{\\circ}) $$=$$ 10/\\sin(25**{\\circ})$$"
+        ],
+        "dependencies": [
+            "a662caelawsin16b-h2"
+        ],
+        "title": "Law of Sines equation",
+        "text": "Write the Law of Sines equation to solve for $$a$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$a/\\sin(132**{\\circ}) $$=$$ 10/\\sin(25**{\\circ})$$",
+            "$$a/\\sin(25**{\\circ}) $$=$$ 10/\\sin(132**{\\circ})$$",
+            "$$a/\\sin(132**{\\circ}) $$=$$ \\sin(25**{\\circ})/10$$",
+            "$$\\frac{a}{10}$$ $$=$$ \\sin(132**{\\circ})/\\sin(25**{\\circ})$$"
+        ]
+    }
+]

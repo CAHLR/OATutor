@@ -1,0 +1,123 @@
+[
+    {
+        "id": "ace918bnlaws21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Relationship",
+        "text": "The speed of the car is given by the equation $$v=k x^2$$. To find the force, we need to relate this to acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws21a-h1"
+        ],
+        "title": "Relating Speed to Acceleration",
+        "text": "Remember that acceleration is the derivative of velocity with respect to time. However, since velocity is given as a function of position, we need to use the chain rule.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws21a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws21a-h2"
+        ],
+        "title": "Using the Chain Rule",
+        "text": "The chain rule states that $$a=\\frac{dv}{dt}=\\frac{dv}{dx} \\frac{dx}{dt}$$. Since $$\\frac{dx}{dt}$$ is the velocity v, we can express acceleration as $$a=\\frac{dv}{dx} v$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws21a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws21a-h3"
+        ],
+        "title": "Finding $$\\frac{dv}{dx}$$",
+        "text": "Differentiate $$v=k x^2$$ with respect to $$x$$ to find $$\\frac{dv}{dx}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws21a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2k x$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws21a-h4"
+        ],
+        "title": "Calculate $$\\frac{dv}{dx}$$",
+        "text": "Differentiate $$v=k x^2$$ with respect to $$x$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws21a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws21a-h5"
+        ],
+        "title": "Substitute $$\\frac{dv}{dx}$$ into the Acceleration Formula",
+        "text": "Now that you have $$\\frac{dv}{dx}$$, substitute it into the acceleration formula $$a=\\frac{dv}{dx} v$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws21a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2k^2 x^3$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws21a-h6"
+        ],
+        "title": "Calculate Acceleration",
+        "text": "Substitute $$\\frac{dv}{dx}=2k x$$ and $$v=k x^2$$ into $$a=\\frac{dv}{dx} v$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws21a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws21a-h7"
+        ],
+        "title": "Relate Acceleration to Force",
+        "text": "Use Newton's second law, $$F=m a$$, to find the force acting on the car.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws21a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2m k^2 x^3$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws21a-h8"
+        ],
+        "title": "Calculate the Force",
+        "text": "Substitute $$a=2k^2 x^3$$ into $$F=m a$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

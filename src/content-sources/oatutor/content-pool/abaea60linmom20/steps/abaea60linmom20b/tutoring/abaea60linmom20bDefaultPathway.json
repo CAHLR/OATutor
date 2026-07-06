@@ -1,0 +1,70 @@
+[
+    {
+        "id": "abaea60linmom20b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Frictional Work",
+        "text": "To find the energy lost to friction, we need to calculate the work done by the frictional force. Work done by a force is given by the formula: $$work=force distance$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom20b-h2",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom20b-h1"
+        ],
+        "title": "Finding the Distance",
+        "text": "The distance the squid travels can be found using the formula: $$distance=velocity time$$. Use the velocity of the squid and the time given to find the distance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom20b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.05$$"
+        ],
+        "dependencies": [
+            "abaea60linmom20b-h2"
+        ],
+        "title": "Calculate the Distance",
+        "text": "Given that the velocity of the squid is $$0.5$$ $$\\frac{m}{s}$$ and the time is $$0.1$$ s, calculate the distance traveled by the squid.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom20b-h4",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom20b-h3"
+        ],
+        "title": "Calculate the Work Done",
+        "text": "Now that you have the distance, use the work formula: $$work=force distance$$. The force is given as $$5.00$$ N.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom20b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.25$$"
+        ],
+        "dependencies": [
+            "abaea60linmom20b-h4"
+        ],
+        "title": "Calculate the Energy Lost",
+        "text": "Using the distance of $$0.05$$ $$m$$ and the force of $$5.00$$ N, calculate the work done against friction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

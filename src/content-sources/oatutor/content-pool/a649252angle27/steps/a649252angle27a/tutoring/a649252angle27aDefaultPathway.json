@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a649252angle27a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplify the angle",
+        "text": "Simplify the angle $$-\\frac{3\\pi}{12}$$ before evaluating the tangent.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle27a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\frac{\\pi}{4}$$"
+        ],
+        "dependencies": [
+            "a649252angle27a-h1"
+        ],
+        "title": "Simplify the angle",
+        "text": "What is $$-\\frac{3\\pi}{12}$$ in simplest form?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle27a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle27a-h1"
+        ],
+        "title": "tangent of a special angle",
+        "text": "Recall the value of $$\\tan(\\frac{\\pi}{4})$$ and the $$\\frac{odd}{even}$$ properties of tangent.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle27a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a649252angle27a-h2"
+        ],
+        "title": "Evaluate $$\\tan(\\frac{\\pi}{4})$$",
+        "text": "What is the exact value of $$\\tan(\\frac{\\pi}{4})$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle27a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle27a-h2"
+        ],
+        "title": "Odd function property",
+        "text": "Remember that tangent is an odd function, meaning $$\\tan(-x)$$ $$=$$ $$-\\tan(x)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle27a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\tan(-\\frac{\\pi}{4})$$ $$=$$ $$-\\tan(\\frac{\\pi}{4})$$"
+        ],
+        "dependencies": [
+            "a649252angle27a-h3"
+        ],
+        "title": "Apply odd function property",
+        "text": "Given $$\\tan(-\\frac{\\pi}{4})$$, $$how$$ $$does$$ $$the$$ $$odd$$ $$function$$ $$property$$ $$help$$ $$you$$ $$find$$ $$the$$ $$value$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\tan(-\\frac{\\pi}{4})$$ $$=$$ $$-\\tan(\\frac{\\pi}{4})$$",
+            "$$\\tan(-\\frac{\\pi}{4})$$ $$=$$ $$\\tan(\\frac{\\pi}{4})$$",
+            "$$\\tan(-\\frac{\\pi}{4})$$ $$=$$ $$\\frac{1}{\\tan(\\frac{\\pi}{4})}$$",
+            "$$\\tan(-\\frac{\\pi}{4})$$ $$=$$ $$-\\cot(\\frac{\\pi}{4})$$"
+        ]
+    }
+]

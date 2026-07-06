@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a3a50fepercent7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Translate into algebra",
+        "text": "Let $$p=the$$ percent. $$144=96p$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3a50fepercent7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3a50fepercent7a-h1"
+        ],
+        "title": "Multiply",
+        "text": "$$144=96p$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3a50fepercent7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.5$$"
+        ],
+        "dependencies": [
+            "a3a50fepercent7a-h2"
+        ],
+        "title": "Divide",
+        "text": "What do you get for $$p$$ when you divide by $$96$$ and simplify?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3a50fepercent7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3a50fepercent7a-h3"
+        ],
+        "title": "Convert to percent.",
+        "text": "$$150\\%=p$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

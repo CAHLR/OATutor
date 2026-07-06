@@ -1,0 +1,94 @@
+[
+    {
+        "id": "a16844emotion2d27a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The biker is launched at an angle of $$60$$ degrees and lands $$45.0$$ $$m$$ away, $$20$$ $$m$$ below the launch point. We need to find the initial speed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d27a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d27a-h1"
+        ],
+        "title": "Breaking Down the Motion",
+        "text": "The motion can be broken into horizontal and vertical components. Use trigonometry to find these components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d27a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d27a-h2"
+        ],
+        "title": "Horizontal Motion",
+        "text": "The horizontal distance covered is $$45.0$$ $$m$$. Use the formula: $$horizontal_{distance}$$ $$=$$ $$initial_{horizontal,velocity}$$ * time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d27a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d27a-h2"
+        ],
+        "title": "Vertical Motion",
+        "text": "The vertical motion is affected by gravity. Use the formula: $$vertical_{displacement}$$ $$=$$ $$initial_{vertical,velocity}$$ * time - $$0.5$$ * g * $${time}^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d27a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d27a-h3"
+        ],
+        "title": "Using Trigonometry",
+        "text": "The initial horizontal velocity is $$initial_{speed}$$ * cos(60) and the initial vertical velocity is $$initial_{speed}$$ * sin(60).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d27a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.04$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d27a-h4"
+        ],
+        "title": "Finding Time of Flight",
+        "text": "Use the vertical motion equation to solve for time: $$20$$ $$=$$ $$initial_{speed}$$ * sin(60) * time - $$0.5$$ * $$9.8$$ * $${time}^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d27a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20.1$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d27a-h6"
+        ],
+        "title": "Solving for Initial Speed",
+        "text": "Use the horizontal motion equation: $$45$$ $$=$$ $$initial_{speed}$$ * cos(60) * time. Substitute the time found in the previous step.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

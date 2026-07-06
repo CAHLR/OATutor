@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a16844emotion2d15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the distance the football travels, we need to consider the horizontal component of the velocity and the time it is in the air.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d15a-h1"
+        ],
+        "title": "Horizontal Velocity Component",
+        "text": "The horizontal component of the velocity can be found using the formula: \\(v_x=v*cos(theta)\\), where \\(v\\) is the initial velocity and \\(theta\\) is the angle of projection.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d15a-h2"
+        ],
+        "title": "Time of Flight",
+        "text": "The time the football is in the air can be found using the vertical component of the velocity and the formula: \\(t=2*v*sin(theta)/g\\), where \\(g\\) is the acceleration due to gravity $$(9.8$$ m/s\u00b2).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d15a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$18.5$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d15a-h3"
+        ],
+        "title": "Calculate Horizontal Distance",
+        "text": "Using the horizontal velocity and time of flight, calculate the horizontal distance using the formula: \\(d=v_x*t\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

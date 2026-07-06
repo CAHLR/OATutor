@@ -1,0 +1,51 @@
+[
+    {
+        "id": "ac47cfflimits19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor the Polynomial Part",
+        "text": "Start with $$x^2-1=\\left(x-1\\right) \\left(x+1\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac47cfflimits19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac47cfflimits19a-h1"
+        ],
+        "title": "Rewrite $$x-1$$",
+        "text": "Use $$x-1=(\\sqrt{x}-1)(\\sqrt{x}+1)$$ so the denominator can cancel.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac47cfflimits19a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac47cfflimits19a-h2"
+        ],
+        "title": "Substitute After Simplifying",
+        "text": "Once the common factor is canceled, evaluate the product that remains.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac47cfflimits19a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(\\sqrt{x}+1\\right) \\left(x+1\\right)$$"
+        ],
+        "dependencies": [],
+        "title": "State the Simplified Product",
+        "text": "After canceling $$\\sqrt{x}-1$$, $$what$$ $$expression$$ $$remains$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

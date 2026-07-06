@@ -1,0 +1,111 @@
+[
+    {
+        "id": "a09f25fmotion3b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The meteor exploded at an altitude of $$23.5$$ km, and the blast wave took $$2$$ minutes $$30$$ seconds to reach the ground. We need to calculate the speed of the blast wave and compare it to the speed of sound at sea level, which is $$343$$ $$\\frac{m}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion3b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion3b-h1"
+        ],
+        "title": "Convert Time to Seconds",
+        "text": "First, convert the time it took for the blast wave to reach the ground from minutes and seconds to just seconds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion3b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$150$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion3b-h2"
+        ],
+        "title": "Calculate Time in Seconds",
+        "text": "Convert $$2$$ minutes $$30$$ seconds to seconds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion3b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion3b-h3"
+        ],
+        "title": "Calculate the Speed of the Blast Wave",
+        "text": "Use the formula speed $$=$$ $$\\frac{distance}{time}$$ to calculate the speed of the blast wave. Remember to convert the altitude from kilometers to meters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion3b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$156.67$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion3b-h4"
+        ],
+        "title": "Calculate Speed",
+        "text": "Calculate the speed of the blast wave using the formula speed $$=$$ $$\\frac{distance}{time}$$, where distance is $$23.5$$ km (converted to meters) and time is $$150$$ seconds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion3b-h6",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion3b-h5"
+        ],
+        "title": "Compare with the Speed of Sound",
+        "text": "Now that you have the speed of the blast wave, compare it to the speed of sound at sea level, which is $$343$$ $$\\frac{m}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion3b-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$45.68$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion3b-h6"
+        ],
+        "title": "Calculate the Percentage of the Speed of Sound",
+        "text": "Calculate what percentage of the speed of sound the blast wave's speed is. Use the formula: (speed of blast $$\\frac{wave}{speed}$$ of sound) * 100%.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion3b-h8",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion3b-h7"
+        ],
+        "title": "Final Comparison",
+        "text": "Based on your calculations, determine how the speed of the blast wave compares to the speed of sound at sea level.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

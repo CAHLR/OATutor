@@ -1,0 +1,82 @@
+[
+    {
+        "id": "abaea60linmom5b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the net force acting on the particle, we need to use Newton's second law of motion, which states that the net force is equal to the mass of the particle times its acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom5b-h2",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom5b-h1"
+        ],
+        "title": "Finding Acceleration",
+        "text": "The velocity of the particle is given as a function of time: $$v(t)=2i+4t j$$. To find the acceleration, differentiate the velocity with respect to time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom5b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$a(t)=4j$$"
+        ],
+        "dependencies": [
+            "abaea60linmom5b-h2"
+        ],
+        "title": "Calculate the Acceleration",
+        "text": "Differentiate the velocity function $$v(t)=2i+4t j$$ with respect to time to find the acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom5b-h4",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom5b-h3"
+        ],
+        "title": "Applying Newton's Second Law",
+        "text": "Now that we have the acceleration, use Newton's second law: $$F=ma$$, where $$m$$ is the mass of the particle and a is the acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom5b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$F=20j$$"
+        ],
+        "dependencies": [
+            "abaea60linmom5b-h4"
+        ],
+        "title": "Calculate the Net Force",
+        "text": "Using the mass of the particle $$(5.0$$ kg) and the acceleration $$4j$$, calculate the net force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom5b-h6",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom5b-h5"
+        ],
+        "title": "Final Answer",
+        "text": "The net force acting on the particle is $$20j$$ N.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

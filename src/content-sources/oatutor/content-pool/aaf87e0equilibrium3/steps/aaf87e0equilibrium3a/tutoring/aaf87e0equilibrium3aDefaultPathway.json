@@ -1,0 +1,99 @@
+[
+    {
+        "id": "aaf87e0equilibrium3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find out how much the climber stretches the rope, we need to use the formula for the elongation of a material under stress. This involves the Young's modulus, the force applied, the original length of the rope, and the cross-sectional area of the rope.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aaf87e0equilibrium3a-h1"
+        ],
+        "title": "Formula for Elongation",
+        "text": "The formula for elongation (\u0394L) is given by: $$\u0394L=\\frac{F L}{A Y}$$, where F is the force applied, L is the original length, A is the cross-sectional area, and Y is the Young's modulus.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aaf87e0equilibrium3a-h2"
+        ],
+        "title": "Calculate the Force",
+        "text": "The force (F) exerted by the climber is equal to her weight, which is mass times gravity. Calculate F using $$F=m g$$, where $$m=65.0$$ kg and $$g=9.8$$ m/s\u00b2.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aaf87e0equilibrium3a-h3"
+        ],
+        "title": "Cross-sectional Area of the Rope",
+        "text": "The cross-sectional area (A) of the rope can be calculated using the formula for the area of a circle: $$A=\\pi \\left(\\frac{d}{2}\\right)^2$$, where $$d$$ is the diameter of the rope.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium3a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$637$$"
+        ],
+        "dependencies": [
+            "aaf87e0equilibrium3a-h3"
+        ],
+        "title": "Calculate the Force",
+        "text": "Calculate the force exerted by the climber using her mass and gravity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium3a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5.03E-05$$"
+        ],
+        "dependencies": [
+            "aaf87e0equilibrium3a-h4"
+        ],
+        "title": "Calculate the Cross-sectional Area",
+        "text": "Calculate the cross-sectional area of the rope using its diameter.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium3a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.0329$$"
+        ],
+        "dependencies": [
+            "aaf87e0equilibrium3a-h6"
+        ],
+        "title": "Calculate the Elongation",
+        "text": "Use the formula $$\u0394L=\\frac{F L}{A Y}$$ to find the elongation of the rope.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,100 @@
+[
+    {
+        "id": "ace918bnlaws10b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the ratio of the horizontal force to the passenger's weight, we need to calculate both the horizontal force and the weight.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws10b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws10b-h1"
+        ],
+        "title": "Calculate the Horizontal Force",
+        "text": "The horizontal force can be calculated using Newton's second law: $$F=ma$$, where $$m$$ is the mass and a is the acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws10b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3675$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws10b-h2"
+        ],
+        "title": "Calculate the Horizontal Force",
+        "text": "Given: $$m=75.0$$ kg, $$a=49.0$$ $$\\frac{m}{s^2}$$. Calculate F.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws10b-h4",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws10b-h1"
+        ],
+        "title": "Calculate the Weight",
+        "text": "The weight of the passenger can be calculated using the formula: $$W=mg$$, where g is the acceleration due to gravity $$(9.8$$ m/s**2).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws10b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$735$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws10b-h4"
+        ],
+        "title": "Calculate the Weight",
+        "text": "Given: $$m=75.0$$ kg, $$g=9.8$$ $$\\frac{m}{s^2}$$. Calculate W.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws10b-h6",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws10b-h3",
+            "ace918bnlaws10b-h5"
+        ],
+        "title": "Find the Ratio",
+        "text": "The ratio of the horizontal force to the weight is given by the formula: $$Ratio=\\frac{F}{W}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws10b-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws10b-h6"
+        ],
+        "title": "Calculate the Ratio",
+        "text": "Given: $$F=3675$$ N, $$W=735$$ N. Calculate the ratio.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

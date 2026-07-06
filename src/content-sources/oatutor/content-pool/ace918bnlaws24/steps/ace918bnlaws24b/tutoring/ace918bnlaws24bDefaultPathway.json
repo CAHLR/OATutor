@@ -1,0 +1,99 @@
+[
+    {
+        "id": "ace918bnlaws24b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the net force on the shot, we need to use the formula for force: $$F=ma$$, where F is the force, $$m$$ is the mass, and a is the acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws24b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws24b-h1"
+        ],
+        "title": "Finding Acceleration",
+        "text": "We can find the acceleration using the kinematic equation: $$v^2=u^2+2a s$$, where v is the final velocity, u is the initial velocity, a is the acceleration, and s is the distance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws24b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws24b-h2"
+        ],
+        "title": "Initial and Final Velocity",
+        "text": "Since the shot is initially at rest, the initial velocity $$u=0$$. The final velocity v can be found using the range formula for projectile motion.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws24b-h4",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws24b-h3"
+        ],
+        "title": "Projectile Motion Formula",
+        "text": "The range R of a projectile is given by $$R=\\frac{v^2 sin\\left(2\\theta\\right)}{g}$$, where v is the initial velocity, theta is the angle of projection, and g is the acceleration due to gravity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws24b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$14.8$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws24b-h4"
+        ],
+        "title": "Calculate Initial Velocity",
+        "text": "Using the range formula, solve for the initial velocity v. Given: $$R=22.22$$ $$m$$, $$theta=45$$ degrees, $$g=9.8$$ $$\\frac{m}{s^2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws24b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$91.1$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws24b-h5"
+        ],
+        "title": "Calculate Acceleration",
+        "text": "Now, use the kinematic equation $$v^2=u^2+2a s$$ to find the acceleration a. Given: $$v=14.8$$ $$\\frac{m}{s}$$, $$u=0$$, $$s=1.20$$ $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws24b-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$600$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws24b-h6"
+        ],
+        "title": "Calculate Net Force",
+        "text": "Finally, use the formula $$F=ma$$ to find the net force. Given: $$m=7.26$$ kg, $$a=91.1$$ $$\\frac{m}{s^2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

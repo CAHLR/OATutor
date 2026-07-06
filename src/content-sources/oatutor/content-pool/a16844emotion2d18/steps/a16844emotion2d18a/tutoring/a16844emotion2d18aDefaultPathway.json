@@ -1,0 +1,123 @@
+[
+    {
+        "id": "a16844emotion2d18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Centripetal Acceleration",
+        "text": "Centripetal acceleration is the acceleration that keeps an object moving in a circular path. It is directed towards the center of the circle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d18a-h1"
+        ],
+        "title": "Formula for Centripetal Acceleration",
+        "text": "The formula for centripetal acceleration \\(a_c\\) is given by \\(a_c=v**2/r\\), where \\(v\\) is the linear velocity and \\(r\\) is the radius of the circular path.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d18a-h2"
+        ],
+        "title": "Relating Centripetal Acceleration to Gravity",
+        "text": "We need the centripetal acceleration to be equal to the acceleration due to gravity \\(g\\), which is approximately \\(9.8\\,m/s**2\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d18a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d18a-h3"
+        ],
+        "title": "Finding the Linear Velocity",
+        "text": "Set \\(v**2/r=g\\) and solve for \\(v\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d18a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$v=\\sqrt{g r}$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d18a-h4"
+        ],
+        "title": "Calculate the Linear Velocity",
+        "text": "Using the equation \\(v**2/r=g\\), solve for \\(v\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d18a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d18a-h5"
+        ],
+        "title": "Convert Linear Velocity to Angular Velocity",
+        "text": "The angular velocity \\(\\omega\\) is related to the linear velocity \\(v\\) by the equation \\(v=\\omega*r\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d18a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$omega=\\frac{v}{r}$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d18a-h6"
+        ],
+        "title": "Calculate Angular Velocity",
+        "text": "Using \\(v=\\omega*r\\), solve for \\(\\omega\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d18a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d18a-h7"
+        ],
+        "title": "Convert Angular Velocity to Revolutions per Minute",
+        "text": "To convert \\(\\omega\\) from \\(rad/s\\) to \\(rev/min\\), use the conversion factor $$\\(1\\, rev=2\\pi\\, rad\\)$$ and $$\\(1\\, min=60\\, s\\)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d18a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\omega \\frac{60}{2\\pi}$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d18a-h8"
+        ],
+        "title": "Calculate Revolutions per Minute",
+        "text": "Convert \\(\\omega\\) from \\(rad/s\\) to \\(rev/min\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

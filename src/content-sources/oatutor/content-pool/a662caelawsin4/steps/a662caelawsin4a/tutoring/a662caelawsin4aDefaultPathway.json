@@ -1,0 +1,111 @@
+[
+    {
+        "id": "a662caelawsin4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the unknown angle of the triangle",
+        "text": "The three angles of any triangle add up to 180**{\\circ}. Two of the angles are 15**{\\circ} and 35**{\\circ}. What is the third angle?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin4a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "130**{\\circ}"
+        ],
+        "dependencies": [
+            "a662caelawsin4a-h1"
+        ],
+        "title": "Compute the unknown angle",
+        "text": "The two elevation angles are 15**{\\circ} and 35**{\\circ}. What is the third angle of the triangle?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin4a-h1"
+        ],
+        "title": "Set up the Law of Sines",
+        "text": "The 130**{\\circ} angle is opposite the 20-mile baseline. The 35**{\\circ} angle is opposite the side $$a$$ (from the second station to the aircraft). Use $$\\frac{\\sin(130**{\\circ})}{20} $$=$$ \\frac{\\sin(35**{\\circ})}{a}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin4a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$a$$ $$\\approx$$ $$14.98$$"
+        ],
+        "dependencies": [
+            "a662caelawsin4a-h2"
+        ],
+        "title": "Solve for side $$a$$",
+        "text": "Using $$a$$ $$=$$ \\frac{20\\sin(35**{\\circ})}{\\sin(130**{\\circ})}$$, $$what$$ $$is$$ $$the$$ $$value$$ $$of$$ $$a$$ (rounded to $$2$$ decimal places)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin4a-h2"
+        ],
+        "title": "Use right triangle relationships to find $$h$$",
+        "text": "Now that you know the distance $$a$$ $$\\approx$$ $$14.98$$ miles from one station to the aircraft, use $$\\sin(15**{\\circ}) $$=$$ $$\\frac{h}{a}$$ in the right triangle formed by the aircraft, its point directly above the ground, and the station.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin4a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$h$$ $$=$$ a\\sin(15**{\\circ})$$"
+        ],
+        "dependencies": [
+            "a662caelawsin4a-h3"
+        ],
+        "title": "Identify the correct trigonometric ratio",
+        "text": "In a right triangle where the hypotenuse is $$a$$ (the slant distance to the aircraft) and the opposite side is $$h$$ (the altitude), which ratio gives $$h$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$h$$ $$=$$ a\\sin(15**{\\circ})$$",
+            "$$h$$ $$=$$ a\\cos(15**{\\circ})$$",
+            "$$h$$ $$=$$ a\\tan(15**{\\circ})$$",
+            "$$h$$ $$=$$ a/\\sin(15**{\\circ})$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin4a-s4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$h$$ $$\\approx$$ $$3.88$$"
+        ],
+        "dependencies": [
+            "a662caelawsin4a-h3",
+            "a662caelawsin4a-s3"
+        ],
+        "title": "Compute the altitude $$h$$",
+        "text": "Using $$h$$ $$=$$ $$14.98$$ $$\\times$$ \\sin(15**{\\circ})$$, $$what$$ $$is$$ $$the$$ $$altitude$$ $$h$$ (rounded to $$2$$ decimal places)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

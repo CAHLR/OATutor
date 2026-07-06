@@ -1,0 +1,111 @@
+[
+    {
+        "id": "a09f25fmotion15b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The woodpecker's head comes to a stop from an initial velocity of $$0.600$$ $$\\frac{m}{s}$$ over a distance of $$2.00$$ mm. We need to find the time it takes to stop.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion15b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion15b-h1"
+        ],
+        "title": "Identify the Known Values",
+        "text": "We know the initial velocity $$v_i$$ is $$0.600$$ $$\\frac{m}{s}$$ and the stopping distance (d) is $$2.00$$ mm. Convert the distance to meters for consistency in units.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion15b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion15b-h2"
+        ],
+        "title": "Convert Units",
+        "text": "Convert $$2.00$$ mm to meters. Remember, $$1$$ mm $$=$$ $$0.001$$ $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion15b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.002$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion15b-h3"
+        ],
+        "title": "Calculate the Stopping Distance in Meters",
+        "text": "What is the stopping distance in meters?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion15b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion15b-h4"
+        ],
+        "title": "Use the Kinematic Equation",
+        "text": "Use the kinematic equation $${v_f}^2={v_i}^2+2a d$$ to find the acceleration (a), where $$v_f$$ is the final velocity (0 m/s).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion15b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-90$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion15b-h5"
+        ],
+        "title": "Calculate the Acceleration",
+        "text": "What is the acceleration of the woodpecker's head?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion15b-h7",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion15b-h6"
+        ],
+        "title": "Find the Stopping Time",
+        "text": "Use the equation $$v_f=v_i+a t$$ to find the time (t) it takes to stop.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion15b-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.0067$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion15b-h7"
+        ],
+        "title": "Calculate the Stopping Time",
+        "text": "What is the stopping time in seconds?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

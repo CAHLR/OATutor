@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a16844emotion2d12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gravity's Effect",
+        "text": "On the Moon, the gravitational acceleration is one-sixth of that on Earth. This means that the athlete's jump will be affected by this change in gravity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d12a-h1"
+        ],
+        "title": "Relating Jump Distance to Gravity",
+        "text": "The distance an athlete can jump is inversely proportional to the gravitational acceleration. If gravity decreases, the jump distance increases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d12a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$48$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d12a-h2"
+        ],
+        "title": "Calculating the Jump Distance on the Moon",
+        "text": "If the athlete can jump $$8.0$$ $$m$$ on Earth, and the Moon's gravity is one-sixth of Earth's, calculate the jump distance on the Moon using the formula: $$distance_{on,moon}=distance_{on,earth} \\frac{earth_{gravity}}{moon_{gravity}}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

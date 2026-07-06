@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a56bd16newtonapps9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Frictional Force",
+        "text": "The frictional force can be calculated using the formula: frictional force $$=$$ coefficient of static friction * normal force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps9a-h1"
+        ],
+        "title": "Calculate the Normal Force",
+        "text": "The normal force is equal to the weight supported by the knee. Use the formula: weight $$=$$ mass * gravitational acceleration (g $$=$$ $$9.8$$ m/s\u00b2).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps9a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$646.8$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps9a-h2"
+        ],
+        "title": "Calculate the Weight Supported by the Knee",
+        "text": "Calculate the weight supported by the knee using the mass of $$66.0$$ kg and gravitational acceleration of $$9.8$$ m/s\u00b2.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps9a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10.3$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps9a-h3"
+        ],
+        "title": "Calculate the Maximum Frictional Force",
+        "text": "Use the coefficient of static friction $$(0.016)$$ and the normal force $$(646.8$$ N) to find the maximum frictional force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

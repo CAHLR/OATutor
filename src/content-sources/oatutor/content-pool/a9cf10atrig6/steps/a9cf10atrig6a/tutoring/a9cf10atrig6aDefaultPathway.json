@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a9cf10atrig6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Intuition",
+        "text": "We could use other identities, but knowing that $$\\tan(\\theta)=\\frac{\\sin(\\theta)}{\\cos(\\theta)}$$ and seeing a $$\\sec(\\theta),$$ let\u2019s first try to simplify the expression.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig6a-h1"
+        ],
+        "title": "Identity",
+        "text": "$$\\tan(\\theta)=\\frac{\\sin(\\theta)}{\\cos(\\theta)},\\ \\sec(\\theta)=\\frac{1}{\\cos(\\theta)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig6a-h2"
+        ],
+        "title": "Substitute",
+        "text": "Substitute identity into 2tan(\u03b8)sec(\u03b8).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig6a-h3"
+        ],
+        "title": "Simplify",
+        "text": "Simplify $$2\\tan(\\theta)\\sec(\\theta)=2\\left(\\frac{\\sin(\\theta)}{\\cos(\\theta)}\\right)\\left(\\frac{1}{\\cos(\\theta)}\\right)=\\frac{2\\sin(\\theta)}{\\cos**2(\\theta)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig6a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig6a-h4"
+        ],
+        "title": "Identity",
+        "text": "How can we write $$cos^2\\left(\\theta\\right)$$ in terms of sin(\u03b8)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig6a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig6a-h5"
+        ],
+        "title": "Substitute",
+        "text": "Substitute identity into $$\\frac{2sin\\left(\\theta\\right)}{cos^2\\left(\\theta\\right)}=\\frac{2sin\\left(\\theta\\right)}{1-sin^2\\left(\\theta\\right)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,39 @@
+[
+    {
+        "id": "af564d8LimitLaw10a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$e^9$$"
+        ],
+        "dependencies": [],
+        "title": "Plug In $$x=3$$ and Solve",
+        "text": "Attempt to plug in the $$x$$ value into the equation, what do you get?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$e^3$$",
+            "$$e^9$$",
+            "$$e^6$$"
+        ]
+    },
+    {
+        "id": "af564d8LimitLaw10a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "af564d8LimitLaw10a-h1"
+        ],
+        "title": "Simplify to integer",
+        "text": "What's $$\\ln\\left(e^9\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

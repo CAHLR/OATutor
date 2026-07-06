@@ -1,0 +1,47 @@
+[
+    {
+        "id": "abc3475rational30a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determine End Behavior Using Degrees",
+        "text": "Compare the degree of the numerator and denominator to find the horizontal asymptote.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abc3475rational30a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "y-->-2"
+        ],
+        "dependencies": [
+            "abc3475rational30a-h1"
+        ],
+        "title": "Find the Horizontal Asymptote",
+        "text": "What happens to f(x) as x\u2192\u221e or x\u2192-\u221e?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$y=-2$$",
+            "y-->1",
+            "y-->-2",
+            "$$y=-2x$$"
+        ]
+    },
+    {
+        "id": "abc3475rational30a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abc3475rational30a-h2"
+        ],
+        "title": "Vertical Asymptotes and Denominators",
+        "text": "A vertical asymptote occurs where the denominator is zero and the numerator is nonzero. Solve $$x-6$$ $$=$$ $$0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

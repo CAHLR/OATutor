@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a649252angle9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpret \"Half as Steep\"",
+        "text": "Given the problem context and \\section title, \"half as steep\" refers to the angle itself being halved, not the tangent value. So, you need to find $$\\frac{\\theta}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle9a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\theta}{2}$$"
+        ],
+        "dependencies": [
+            "a649252angle9a-h1"
+        ],
+        "title": "Relationship of Angles",
+        "text": "If $$\\theta$$ is the angle for high-level competition, what is the angle for novice competition in terms of $$\\theta$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\theta}{2}$$",
+            "$$2\\theta$$",
+            "$$\\theta$$ $$-$$ $$2$$",
+            "$$\\theta$$ + $$2$$"
+        ]
+    },
+    {
+        "id": "a649252angle9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle9a-h1"
+        ],
+        "title": "Find $$\\theta$$",
+        "text": "First, find the value of $$\\theta$$ from the given $$\\tan\\theta=\\frac{5}{3}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle9a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\theta$$ $$=$$ $$arctan(\\frac{5}{3})$$"
+        ],
+        "dependencies": [
+            "a649252angle9a-h2"
+        ],
+        "title": "How to Find $$\\theta$$",
+        "text": "How can you find the angle $$\\theta$$ if you know $$\\tan\\theta$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\theta$$ $$=$$ $$arctan(\\frac{5}{3})$$",
+            "$$\\theta$$ $$=$$ $$arcsin(\\frac{5}{3})$$",
+            "$$\\theta$$ $$=$$ $$arccos(\\frac{5}{3})$$",
+            "$$\\theta$$ $$=$$ $$\\frac{1}{\\tan(\\frac{5}{3})}$$"
+        ]
+    },
+    {
+        "id": "a649252angle9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle9a-h2"
+        ],
+        "title": "Calculate $$\\frac{\\theta}{2}$$",
+        "text": "Once you have $$\\theta$$, $$calculate$$ $$\\frac{\\theta}{2}$$ and round to two decimal places.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle9a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$59.04**\\circ$$"
+        ],
+        "dependencies": [
+            "a649252angle9a-h3"
+        ],
+        "title": "Value of $$\\theta$$ in Degrees",
+        "text": "Calculate $$\\theta$$ $$=$$ $$arctan(\\frac{5}{3})$$ in degrees, rounded to two decimal places.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,82 @@
+[
+    {
+        "id": "ace918bnlaws18c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the force needed to move the block with constant velocity, consider the forces acting on the block along the ramp.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws18c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws18c-h1"
+        ],
+        "title": "Forces on the Block",
+        "text": "The block is on a smooth ramp, so the only forces acting along the ramp are the component of gravity and the applied force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws18c-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws18c-h2"
+        ],
+        "title": "Component of Gravity",
+        "text": "The component of gravity acting along the ramp is given by $$m g sin\\left(\\theta\\right)$$, where $$m$$ is the mass, g is the acceleration due to gravity, and theta is the angle of the ramp.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws18c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9.8$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws18c-h3"
+        ],
+        "title": "Calculate the Component of Gravity",
+        "text": "Calculate the component of gravity along the ramp using the formula $$m g sin\\left(\\theta\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws18c-h5",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws18c-h4"
+        ],
+        "title": "Balancing Forces",
+        "text": "For the block to move with constant velocity, the applied force must balance the component of gravity along the ramp.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws18c-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9.8$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws18c-h5"
+        ],
+        "title": "Calculate the Required Force",
+        "text": "The required force is equal to the component of gravity along the ramp, which is $$9.8$$ N.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

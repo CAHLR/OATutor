@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a88c93efixedaxis6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Velocity",
+        "text": "Angular velocity is the rate of change of angular displacement and is usually measured in radians per second $$\\frac{rad}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis6a-h1"
+        ],
+        "title": "Using the Angular Kinematics Equation",
+        "text": "To find the angular velocity after a certain time, use the equation: final angular velocity $$=$$ initial angular velocity + (angular acceleration * time).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis6a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$42$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis6a-h2"
+        ],
+        "title": "Substitute the Given Values",
+        "text": "Substitute the given values into the equation: final angular velocity $$=$$ $$2+4\\times10$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

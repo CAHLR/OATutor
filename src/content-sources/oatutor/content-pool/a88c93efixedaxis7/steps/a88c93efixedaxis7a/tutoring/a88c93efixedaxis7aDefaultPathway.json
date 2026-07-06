@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a88c93efixedaxis7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Velocity",
+        "text": "To find the angular velocity at a specific time, we can use the formula for angular velocity with constant angular acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis7a-h1"
+        ],
+        "title": "Formula for Angular Velocity",
+        "text": "The formula to calculate angular velocity at a given time is: final angular velocity $$=$$ initial angular velocity + (angular acceleration * time).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2+1\\times5$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis7a-h2"
+        ],
+        "title": "Substitute Known Values",
+        "text": "Substitute the known values into the formula: initial angular velocity $$=$$ $$2.0$$ $$\\frac{rad}{s}$$, angular acceleration $$=$$ $$1.0$$ $$\\frac{rad}{s^2}$$, and time $$=$$ $$5.0$$ s.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis7a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis7a-h3"
+        ],
+        "title": "Calculate the Angular Velocity",
+        "text": "Calculate the final angular velocity using the substituted values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

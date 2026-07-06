@@ -1,0 +1,63 @@
+[
+    {
+        "id": "a4f52d1probability15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Count Multiple Ranks",
+        "text": "Add the number of sixes and the number of sevens.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4f52d1probability15a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a4f52d1probability15a-h1"
+        ],
+        "title": "Count Sixes",
+        "text": "How many sixes are in the deck?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4f52d1probability15a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a4f52d1probability15a-h2"
+        ],
+        "title": "Count Sevens",
+        "text": "How many sevens are in the deck?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4f52d1probability15a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$52$$"
+        ],
+        "dependencies": [
+            "a4f52d1probability15a-h3"
+        ],
+        "title": "Total Outcomes",
+        "text": "How many cards are in the deck?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

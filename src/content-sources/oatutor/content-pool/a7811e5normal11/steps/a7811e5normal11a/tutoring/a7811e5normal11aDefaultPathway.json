@@ -1,0 +1,63 @@
+[
+    {
+        "id": "a7811e5normal11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "$$IQR=Q_3-Q_1$$",
+        "text": "Calculate $$Q_3=75th$$ percentile and $$Q_1=25th$$ percentile.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7811e5normal11a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$46.2754$$"
+        ],
+        "dependencies": [
+            "a7811e5normal11a-h1"
+        ],
+        "title": "Calculate $$Q_3$$",
+        "text": "$$invNorm(0.75, 36.9, 13.9)$$. Round answers to four decimal place.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7811e5normal11a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$27.5246$$"
+        ],
+        "dependencies": [
+            "a7811e5normal11a-h1"
+        ],
+        "title": "Calculate $$Q_1$$",
+        "text": "$$invNorm(0.25, 36.9, 13.9)$$. Round answers to four decimal place.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7811e5normal11a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$18.8$$"
+        ],
+        "dependencies": [
+            "a7811e5normal11a-h1"
+        ],
+        "title": "Calculate IQR",
+        "text": "$$IQR=Q_3-Q_1$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

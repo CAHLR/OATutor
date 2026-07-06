@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a949afaangmom18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Momentum Conservation",
+        "text": "The principle of conservation of angular momentum states that the total angular momentum before an event must equal the total angular momentum after the event, provided no external torques act on the system.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom18a-h1"
+        ],
+        "title": "Calculate Initial Angular Momentum",
+        "text": "The initial angular momentum of the system is the angular momentum of the boy running tangent to the merry-go-round. Use the formula: $$L=I \\omega$$, where I is the moment of inertia and \u03c9 is the angular velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom18a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$400$$"
+        ],
+        "dependencies": [
+            "a949afaangmom18a-h2"
+        ],
+        "title": "Calculate Boy's Initial Angular Momentum",
+        "text": "The boy's initial angular momentum can be calculated using $$L=m v r$$, where $$m$$ is the mass of the boy, v is his velocity, and $$r$$ is the radius of the merry-go-round.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom18a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom18a-h3"
+        ],
+        "title": "Calculate Final Angular Momentum",
+        "text": "After the boy jumps on, the total angular momentum is the sum of the angular momentum of the boy and the merry-go-round. Use the formula: $$L_{total}=I_{total} \\omega_{final}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom18a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$500$$"
+        ],
+        "dependencies": [
+            "a949afaangmom18a-h4"
+        ],
+        "title": "Calculate Total Moment of Inertia",
+        "text": "The total moment of inertia after the boy jumps on is the sum of the moment of inertia of the merry-go-round and the moment of inertia of the boy. Use $$I_{total}=I_{merry}-go-round+m r^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom18a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.8$$"
+        ],
+        "dependencies": [
+            "a949afaangmom18a-h5"
+        ],
+        "title": "Calculate Final Angular Velocity",
+        "text": "Using the conservation of angular momentum, set the initial angular momentum equal to the final angular momentum: $$L_{initial}=L_{final}$$. Solve for $$\\omega_{final}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

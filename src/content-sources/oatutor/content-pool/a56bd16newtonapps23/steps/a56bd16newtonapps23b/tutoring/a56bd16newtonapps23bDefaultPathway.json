@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a56bd16newtonapps23b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the velocity of a person hitting the ground, we need to consider the gravitational acceleration and the height from which the person falls.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps23b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps23b-h1"
+        ],
+        "title": "Gravitational Acceleration",
+        "text": "The acceleration due to gravity is approximately $$9.8$$ m/s\u00b2. This value is crucial for calculating the velocity of a falling object.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps23b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps23b-h2"
+        ],
+        "title": "Using the Kinematic Equation",
+        "text": "The kinematic equation to find the final velocity of a falling object is $$v=\\sqrt{2g h}$$, where g is the acceleration due to gravity and $$h$$ is the height.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps23b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9.9$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps23b-h3"
+        ],
+        "title": "Calculate the Velocity",
+        "text": "Substitute the values into the equation $$v=\\sqrt{2\\times9.8\\times5}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

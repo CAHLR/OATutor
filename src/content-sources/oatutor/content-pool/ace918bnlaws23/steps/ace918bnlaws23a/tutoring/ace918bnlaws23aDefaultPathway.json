@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ace918bnlaws23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the magnitude of the other force, we need to use Newton's second law of motion, which states that the net force acting on an object is equal to the mass of the object times its acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws23a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws23a-h1"
+        ],
+        "title": "Calculate the Net Force",
+        "text": "The net force can be calculated using the formula: net force $$=$$ mass * acceleration. Given that the mass is $$5.0$$ kg and the acceleration is $$2.0$$ $$\\frac{m}{s^2}$$, calculate the net force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws23a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws23a-h2"
+        ],
+        "title": "Calculate the Net Force",
+        "text": "Use the formula: net force $$=$$ mass * acceleration. Substitute the given values: net force $$=$$ $$5.0$$ * $$2.0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws23a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws23a-h3"
+        ],
+        "title": "Determine the Other Force",
+        "text": "The net force is the vector sum of all forces acting on the object. Since one force is $$12.0$$ N in the $$x-direction$$, use vector addition to find the other force in the $$y-direction$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws23a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$15.6$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws23a-h4"
+        ],
+        "title": "Calculate the Other Force",
+        "text": "The net force in the $$y-direction$$ is equal to the net force calculated minus the force in the $$x-direction$$. Use the formula: other force $$=$$ sqrt((net force)**2 - (force in x-direction)**2).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

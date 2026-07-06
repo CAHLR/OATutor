@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a949afaangmom5b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Forces",
+        "text": "To find the linear acceleration, consider the forces acting on the cylinder. The gravitational force can be split into components parallel and perpendicular to the incline.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom5b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom5b-h1"
+        ],
+        "title": "Components of Gravitational Force",
+        "text": "The component of gravitational force parallel to the incline is $$m g sin\\left(\\theta\\right)$$, where theta is the angle of the incline.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom5b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom5b-h2"
+        ],
+        "title": "Frictional Force",
+        "text": "The frictional force opposes the motion and is given by $$f_k=\\mu_k N$$, where N is the normal force and $$\\mu_k$$ is the coefficient of kinetic friction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom5b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom5b-h3"
+        ],
+        "title": "Normal Force",
+        "text": "The normal force N is equal to the component of gravitational force perpendicular to the incline, which is $$m g cos\\left(\\theta\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom5b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom5b-h4"
+        ],
+        "title": "Net Force and Acceleration",
+        "text": "The net force acting on the cylinder is the difference between the parallel component of gravitational force and the frictional force. Use $$F=ma$$ to find the linear acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom5b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.5$$"
+        ],
+        "dependencies": [
+            "a949afaangmom5b-h5"
+        ],
+        "title": "Calculate Linear Acceleration",
+        "text": "Using the equation $$a=g sin\\left(\\theta\\right)-\\mu_k g cos\\left(\\theta\\right)$$, calculate the linear acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

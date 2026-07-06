@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a9c64f0series20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Check if Geometric",
+        "text": "A geometric series has a constant ratio between consecutive terms. Here $$\\frac{9}{10}$$ $$=$$ $$0.9$$ but $$\\frac{8}{9}$$ \u2248 $$0.889$$ \u2014 the ratio is not constant. This is an arithmetic series (common difference $$d$$ $$=$$ -1).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9c64f0series20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9c64f0series20a-h1"
+        ],
+        "title": "Can an arithmetic series have an infinite sum?",
+        "text": "For the infinite sum S $$=$$ $$a_1$$ / (1 - r) to apply, the series must be geometric with |r| < $$1$$. Arithmetic series with non-zero common difference diverge.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9c64f0series20a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9c64f0series20a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "Because this is an arithmetic series, the terms do not shrink to zero. The infinite sum is not defined.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

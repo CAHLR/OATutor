@@ -1,0 +1,35 @@
+[
+    {
+        "id": "aab36429.3laketahoea-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$H_0$$: $$m \\geq 7$$ H_a:m<7"
+        ],
+        "dependencies": [],
+        "title": "Hypothesis Testing Distributions",
+        "text": "State the null hypothesis and alternative hypothesis",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$H_0$$: $$m \\geq 7$$ H_a:m<7",
+            "$$H_0$$: $$m \\leq 7$$ H_a:m>7",
+            "$$H_0$$: $$m>7$$ H_a:m<=7",
+            "$$H_0$$: $$m \\geq 7.24$$ H_a:m<7"
+        ]
+    },
+    {
+        "id": "aab36429.3laketahoea-h2",
+        "type": "hint",
+        "dependencies": [
+            "aab36429.3laketahoea-h1"
+        ],
+        "title": "Hypothesis Testing Distributions",
+        "text": "After declaring the null and alternative hypothesis, we consider the random variable $$x$$ and the distribution it will make. First, we aren't given any information on the population standard deviation, therefore the $$t-distribution$$ should be used.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

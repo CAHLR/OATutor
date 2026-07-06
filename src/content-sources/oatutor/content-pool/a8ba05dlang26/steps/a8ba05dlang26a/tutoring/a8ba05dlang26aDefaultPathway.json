@@ -1,0 +1,203 @@
+[
+    {
+        "id": "a8ba05dlang26a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use PEMDAS",
+        "text": "We must simplify operations in the following order: parentheses, exponents, $$\\frac{multiplication}{division}$$ $$(left-to-right)$$, $$\\frac{addition}{subttraction}$$ $$(left-to-right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05dlang26a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8ba05dlang26a-h1"
+        ],
+        "title": "Parentheses",
+        "text": "Start with the innermost parentheses.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05dlang26a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a8ba05dlang26a-h2"
+        ],
+        "title": "Parentheses",
+        "text": "What is $$5-3$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05dlang26a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8ba05dlang26a-h3"
+        ],
+        "title": "$$\\frac{Multiplication}{Division}$$",
+        "text": "Next multiply inside outer parenthese.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05dlang26a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a8ba05dlang26a-h4"
+        ],
+        "title": "$$\\frac{Multiplication}{Division}$$",
+        "text": "What is 2\u00d72?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05dlang26a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a8ba05dlang26a-h5"
+        ],
+        "title": "Parentheses",
+        "text": "Simplify the remaining parentheses.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05dlang26a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a8ba05dlang26a-h6"
+        ],
+        "title": "Parentheses",
+        "text": "What is $$7-4$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05dlang26a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a8ba05dlang26a-h7"
+        ],
+        "title": "$$\\frac{Multiplication}{Division}$$",
+        "text": "Next multiply.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05dlang26a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "a8ba05dlang26a-h8"
+        ],
+        "title": "$$\\frac{Multiplication}{Division}$$",
+        "text": "What is 2\u00d73?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05dlang26a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a8ba05dlang26a-h9"
+        ],
+        "title": "Exponents",
+        "text": "Evaluate the exponent.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05dlang26a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "a8ba05dlang26a-h10"
+        ],
+        "title": "Exponents",
+        "text": "What is $$3^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05dlang26a-h12",
+        "type": "hint",
+        "dependencies": [
+            "a8ba05dlang26a-h11"
+        ],
+        "title": "$$\\frac{Addition}{Subtraction}$$",
+        "text": "Finally simplify the remaining operations.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05dlang26a-h13",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$14$$"
+        ],
+        "dependencies": [
+            "a8ba05dlang26a-h12"
+        ],
+        "title": "$$\\frac{Addition}{Subtraction}$$",
+        "text": "What is $$8+6$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ba05dlang26a-h14",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a8ba05dlang26a-h13"
+        ],
+        "title": "$$\\frac{Addition}{Subtraction}$$",
+        "text": "What is $$14-9$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

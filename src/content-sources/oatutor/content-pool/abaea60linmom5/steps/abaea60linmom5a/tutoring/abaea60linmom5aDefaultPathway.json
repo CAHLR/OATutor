@@ -1,0 +1,64 @@
+[
+    {
+        "id": "abaea60linmom5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Momentum",
+        "text": "Momentum is the product of mass and velocity. To find the momentum as a function of time, multiply the mass of the particle by its velocity function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom5a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10i+20t j$$"
+        ],
+        "dependencies": [
+            "abaea60linmom5a-h1"
+        ],
+        "title": "Calculate the Momentum",
+        "text": "Given the velocity function $$v(t)=2i+4t j$$ and the mass $$m=5.0$$ kg, calculate the momentum p(t).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom5a-h2"
+        ],
+        "title": "Check Units",
+        "text": "Ensure that the units of your answer are in $$\\frac{kg m}{s}$$, which is the standard unit for momentum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom5a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$10i+20t j$$"
+        ],
+        "dependencies": [
+            "abaea60linmom5a-h2"
+        ],
+        "title": "Multiple Choice Verification",
+        "text": "Select the correct expression for the momentum from the choices below.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$10i+20t j$$",
+            "$$2i+4t j$$",
+            "$$10i+4t j$$",
+            "$$10t i+20t j$$"
+        ]
+    }
+]

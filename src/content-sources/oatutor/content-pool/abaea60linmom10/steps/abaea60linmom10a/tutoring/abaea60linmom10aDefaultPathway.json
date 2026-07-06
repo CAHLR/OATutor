@@ -1,0 +1,65 @@
+[
+    {
+        "id": "abaea60linmom10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Elastic Collisions",
+        "text": "In an elastic collision, both momentum and kinetic energy are conserved. This means that the total momentum and total kinetic energy before the collision are equal to the total momentum and total kinetic energy after the collision.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom10a-h1"
+        ],
+        "title": "Conservation of Momentum",
+        "text": "The conservation of momentum can be expressed as: $$m1 v1_{initial}+m2 v2_{initial}=m1 v1_{final}+m2 v2_{final}$$. Here, m1 and m2 are the masses of the two bumper cars, and v1 and v2 are their velocities.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom10a-h2"
+        ],
+        "title": "Identical Masses",
+        "text": "Since the bumper cars are identical, their masses are equal. This simplifies the momentum equation to: $$v1_{initial}+v2_{initial}=v1_{final}+v2_{final}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom10a-h3"
+        ],
+        "title": "Initial Velocities",
+        "text": "The initial velocity of the leading car is $$5.60$$ $$\\frac{m}{s}$$, and the initial velocity of the trailing car is $$6.00$$ $$\\frac{m}{s}$$. Substitute these values into the simplified momentum equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom10a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5.6$$"
+        ],
+        "dependencies": [
+            "abaea60linmom10a-h4"
+        ],
+        "title": "Calculate Final Velocities",
+        "text": "Using the equation $$v1_{initial}+v2_{initial}=v1_{final}+v2_{final}$$, substitute the known values: $$5.6+6=v1_{final}+v2_{final}$$. Solve for $$v2_{final}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

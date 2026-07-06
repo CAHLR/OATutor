@@ -1,0 +1,108 @@
+[
+    {
+        "id": "a2f73b1indep3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Solving for E",
+        "text": "To answer this problem, solve for E $$=$$ ((row total)(column total))/total number surveyed.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a2f73b1indep3a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8.19$$"
+        ],
+        "dependencies": [
+            "a2f73b1indep3a-h1"
+        ],
+        "title": "Applying Table to E",
+        "text": "What is E $$=$$ ((row total)(column total))/total number surveyed? Round to the nearest hundredths place.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a2f73b1indep3a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$52$$"
+                ],
+                "dependencies": [],
+                "title": "Row Total",
+                "text": "What is the row total for low need to succeed?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a2f73b1indep3a-h2-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$63$$"
+                ],
+                "dependencies": [],
+                "title": "Column Total",
+                "text": "What is the column total for med-low anxiety?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a2f73b1indep3a-h2-s3",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$400$$"
+                ],
+                "dependencies": [],
+                "title": "Total Number Surveyed",
+                "text": "What is the total number surveyed (sample size)?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a2f73b1indep3a-h2-s4",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$8.19$$"
+                ],
+                "dependencies": [],
+                "title": "Plugging Into E",
+                "text": "Plugging in the values, what is E $$=$$ $$\\frac{52\\times63}{400}$$? Round to the nearest hundredths place.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a2f73b1indep3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a2f73b1indep3a-h2"
+        ],
+        "title": "Rounding E",
+        "text": "Because we are calculating the expected number of students, your answer should be a whole number. What is E rounded down to nearest whole number?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

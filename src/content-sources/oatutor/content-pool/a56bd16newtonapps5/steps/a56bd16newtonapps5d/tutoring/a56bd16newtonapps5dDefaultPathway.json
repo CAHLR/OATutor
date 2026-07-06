@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a56bd16newtonapps5d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the average force as a ratio to the weight of the shell, we need to understand the forces acting on the shell. The weight of the shell is the force due to gravity, which can be calculated using the formula: weight $$=$$ mass * gravity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps5d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps5d-h1"
+        ],
+        "title": "Calculate the Weight of the Shell",
+        "text": "The weight of the shell can be calculated using the formula: weight $$=$$ mass * gravity. Given that the mass of the shell is $$2.50$$ kg and the acceleration due to gravity is approximately $$9.81$$ m/s\u00b2, calculate the weight of the shell.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps5d-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.5\\times9.81$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps5d-h2"
+        ],
+        "title": "Calculate the Weight",
+        "text": "Use the formula weight $$=$$ mass * gravity to find the weight of the shell.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps5d-h4",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps5d-h3"
+        ],
+        "title": "Average Force Calculation",
+        "text": "The average force exerted by the mortar can be calculated using the work-energy principle. The work done by the force is equal to the change in kinetic energy, which is also equal to the gravitational potential energy at the maximum height.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps5d-h5",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps5d-h4"
+        ],
+        "title": "Expressing Force as a Ratio",
+        "text": "To express the average force as a ratio to the weight of the shell, divide the average force by the weight of the shell.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps5d-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$245$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps5d-h5"
+        ],
+        "title": "Calculate the Ratio",
+        "text": "Divide the average force by the weight of the shell to find the ratio.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

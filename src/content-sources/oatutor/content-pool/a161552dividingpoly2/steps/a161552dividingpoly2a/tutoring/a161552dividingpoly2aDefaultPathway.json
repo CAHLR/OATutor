@@ -1,0 +1,275 @@
+[
+    {
+        "id": "a161552dividingpoly2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewriting the equation",
+        "text": "Remember to fill in missing coefficients with placeholder 0's if possible to make the equation easier to read and work with.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividingpoly2a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a161552dividingpoly2a-h1"
+        ],
+        "title": "Division",
+        "text": "What is the largest degree in the polynomial?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a161552dividingpoly2a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$1$$"
+                ],
+                "dependencies": [],
+                "title": "Division",
+                "text": "What is the largest degree in the binomial?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a161552dividingpoly2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3x^2$$"
+        ],
+        "dependencies": [
+            "a161552dividingpoly2a-h2"
+        ],
+        "title": "Multiplication",
+        "text": "What can we multiply $$x$$ by to get $$3x^3$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a161552dividingpoly2a-h3-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$3x^3+3x^2$$"
+                ],
+                "dependencies": [],
+                "title": "Multiplication",
+                "text": "What is $$3x^2 \\left(x+1\\right)$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a161552dividingpoly2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(-2x^2\\right)+4$$"
+        ],
+        "dependencies": [
+            "a161552dividingpoly2a-h3"
+        ],
+        "title": "Subtraction",
+        "text": "What is $$3x^3+x^2+4-3x^3+3x^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividingpoly2a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [],
+        "title": "Division",
+        "text": "What is the largest degree in the remainder?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividingpoly2a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-2x$$"
+        ],
+        "dependencies": [
+            "a161552dividingpoly2a-h5"
+        ],
+        "title": "Multiplication",
+        "text": "What can we multiply $$x$$ by to get $$\\left(-2x^2\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a161552dividingpoly2a-h6-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$-2x^2-2x$$"
+                ],
+                "dependencies": [],
+                "title": "Multiplication",
+                "text": "What is $$\\left(-2x\\right) \\left(x+1\\right)$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a161552dividingpoly2a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2x+4$$"
+        ],
+        "dependencies": [
+            "a161552dividingpoly2a-h6"
+        ],
+        "title": "Subtraction",
+        "text": "What is $$\\left(-2x^2+4\\right)-\\left(-2x^2-2x\\right)$$ (-2*(x**2)+4 is the remainder from the previous subtraction step.)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividingpoly2a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a161552dividingpoly2a-h7"
+        ],
+        "title": "Division",
+        "text": "What is the largest degree in the remainder?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividingpoly2a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [],
+        "title": "Multiplication",
+        "text": "What can we multiply $$x$$ by to get $$2x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a161552dividingpoly2a-h9-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$2x+2$$"
+                ],
+                "dependencies": [],
+                "title": "Multiplication",
+                "text": "What is $$2\\left(x+1\\right)$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a161552dividingpoly2a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a161552dividingpoly2a-h9"
+        ],
+        "title": "Subtraction",
+        "text": "What is $$2x+4-2x+2$$ ((2*x)+4 is the remainder from the previous subtraction step.)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividingpoly2a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2}{x+1}$$"
+        ],
+        "dependencies": [
+            "a161552dividingpoly2a-h10"
+        ],
+        "title": "Remainder",
+        "text": "What is the remainder? If there is no remainder enter $$0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividingpoly2a-h12",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3x^2-2x+2+\\frac{2}{x+1}$$"
+        ],
+        "dependencies": [
+            "a161552dividingpoly2a-h11"
+        ],
+        "title": "Combining",
+        "text": "Combine all the terms that we used to multiply the divisor by into a single expression along with the divisor.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a161552dividingpoly2a-h12-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Combining",
+                "text": "Reminder: The terms we had were, $$3x^2$$, $$-2x$$, $$2$$, and $$\\frac{2}{x+1}$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    }
+]

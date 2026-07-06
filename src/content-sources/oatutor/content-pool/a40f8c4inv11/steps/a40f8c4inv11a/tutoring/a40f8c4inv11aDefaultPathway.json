@@ -1,0 +1,35 @@
+[
+    {
+        "id": "a40f8c4inv11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Approach $$1$$",
+        "text": "We can solve for the inverse of a matrix by augmenting with the identity matrix. This works well for matrices of small and large size",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a40f8c4inv11a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Alternative approaches",
+        "text": "Other approaches that we can use for $$2$$ by $$2$$ matrices do not work well here as we have a larger matrix. So, it is recommended to take the augmented matrix and perform Gaussian elimination to get the answer",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a40f8c4inv11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a40f8c4inv11a-h1",
+            "a40f8c4inv11a-h2"
+        ],
+        "title": "Final matrix",
+        "text": "Using gaussian elimination what is the matrix inverse? You can verify that the matrix is correct by multiplying it with the original matrix A and ending up with the identity matrix. Review gaussian elimination as necessary and be careful with the intermediate steps. Remember that the left hand side of the augmented matrix has to finally be the identity matrix.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

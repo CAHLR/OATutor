@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ad16e82class22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find a Line",
+        "text": "We want to find a line that passes through $$(0, 42.3)$$ and $$(1, 48.1)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad16e82class22a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad16e82class22a-h1"
+        ],
+        "title": "Equation for Slope",
+        "text": "$$m=\\frac{y1-y2}{x1-x2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad16e82class22a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5.8$$"
+        ],
+        "dependencies": [
+            "ad16e82class22a-h2"
+        ],
+        "title": "Solve the Value",
+        "text": "Following the given equation, what is the slope of the function? Enter answer as a decimal.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "ad16e82class22a-h3-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Solve the Value",
+                "text": "What is $$\\frac{48.1-42.3}{1-0}$$?",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    }
+]

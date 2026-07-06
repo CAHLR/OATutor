@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ace918bnlaws20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the net force required to stop the car, we need to consider the car's initial kinetic energy and how it is dissipated over the stopping distance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws20a-h1"
+        ],
+        "title": "Kinetic Energy Formula",
+        "text": "Recall that the kinetic energy (KE) of an object is given by the formula $$KE=\\frac{1}{2} m v^2$$, where $$m$$ is the mass and v is the velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws20a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws20a-h2"
+        ],
+        "title": "Work-Energy Principle",
+        "text": "The work done by the net force to stop the car is equal to the initial kinetic energy of the car. This work is given by the formula $$Work=F x$$, where F is the force and $$x$$ is the stopping distance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws20a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$F=\\frac{m {v_0}^2}{2x}$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws20a-h3"
+        ],
+        "title": "Equating Work and Kinetic Energy",
+        "text": "Set the work done by the force equal to the initial kinetic energy: $$F x=\\frac{1}{2} m {v_0}^2$$. Solve for F.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

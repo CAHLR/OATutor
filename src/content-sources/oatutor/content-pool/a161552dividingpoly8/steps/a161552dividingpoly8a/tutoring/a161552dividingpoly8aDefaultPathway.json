@@ -1,0 +1,224 @@
+[
+    {
+        "id": "a161552dividingpoly8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewriting the equation",
+        "text": "Remember to fill in missing coefficients with placeholder 0's if possible to make the equation easier to read and work with.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividingpoly8a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a161552dividingpoly8a-h1"
+        ],
+        "title": "Division",
+        "text": "What is the largest degree in the polynomial?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a161552dividingpoly8a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$1$$"
+                ],
+                "dependencies": [],
+                "title": "Division",
+                "text": "What is the largest degree in the binomial?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a161552dividingpoly8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x$$"
+        ],
+        "dependencies": [
+            "a161552dividingpoly8a-h2"
+        ],
+        "title": "Multiplication",
+        "text": "What can we multiply $$x$$ by to get $$x^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a161552dividingpoly8a-h3-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$x^2-4x$$"
+                ],
+                "dependencies": [],
+                "title": "Multiplication",
+                "text": "What is $$x \\left(x-4\\right)$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a161552dividingpoly8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(-9x\\right)+36$$"
+        ],
+        "dependencies": [
+            "a161552dividingpoly8a-h3"
+        ],
+        "title": "Subtraction",
+        "text": "What is $$x^2-13x+36-x^2-4x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividingpoly8a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [],
+        "title": "Division",
+        "text": "What is the largest degree in the remainder?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividingpoly8a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-9$$"
+        ],
+        "dependencies": [
+            "a161552dividingpoly8a-h5"
+        ],
+        "title": "Multiplication",
+        "text": "What can we multiply $$x$$ by to get $$\\left(-9x\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a161552dividingpoly8a-h6-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$\\left(-9x\\right)+36$$"
+                ],
+                "dependencies": [],
+                "title": "Multiplication",
+                "text": "What is $$-9\\left(x-4\\right)$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a161552dividingpoly8a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a161552dividingpoly8a-h6"
+        ],
+        "title": "Subtraction",
+        "text": "What is $$\\left(-9x\\right)+36-\\left(-9x\\right)+36$$? ((-9*x)+36 is the remainder from the previous subtraction step.)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividingpoly8a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a161552dividingpoly8a-h7"
+        ],
+        "title": "Remainder",
+        "text": "What is the remainder? If there is no remainder enter $$0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a161552dividingpoly8a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x-9$$"
+        ],
+        "dependencies": [
+            "a161552dividingpoly8a-h8"
+        ],
+        "title": "Combining",
+        "text": "Combine all the terms that we used to multiply the divisor by into a single expression along with the divisor.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a161552dividingpoly8a-h9-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Combining",
+                "text": "Reminder: The terms we had were, $$x$$, $$-9$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a161552dividingpoly8a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-10$$"
+        ],
+        "dependencies": [],
+        "title": "Plugging it in",
+        "text": "What is $$x-9$$ when $$x=-1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

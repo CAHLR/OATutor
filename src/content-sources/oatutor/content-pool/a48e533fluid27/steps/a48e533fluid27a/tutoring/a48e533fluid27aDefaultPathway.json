@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a48e533fluid27a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula for Power",
+        "text": "$$P_{total}=P_{pressure}+P_{kinetic}+P_{potential}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a48e533fluid27a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.217$$"
+        ],
+        "dependencies": [
+            "a48e533fluid27a-h1"
+        ],
+        "title": "Calculate the Work Done to Increase Pressure",
+        "text": "What is $$P_{pressure}=\u0394P\u00d7V=110mm$$ $$\\frac{83Hg {cm}^3}{s}$$ in W? (keep three decimal places) Remember to convert the pressure from mm Hg to pascals and the volume flow rate from cm\u00b3/s to m\u00b3/s.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a48e533fluid27a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.00398$$"
+        ],
+        "dependencies": [
+            "a48e533fluid27a-h1"
+        ],
+        "title": "Calculate the Work Done to Increase Kinetic Energy",
+        "text": "What is $$P_{kinetic}=\\frac{1}{2} \u03c1 v=\\frac{1060\\frac{1}{2} kg}{m^3}$$ *30cm/s in W? (keep three significant figures) Remember to convert the speed from $$\\frac{cm}{s}$$ to $$\\frac{m}{s}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a48e533fluid27a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.0434$$"
+        ],
+        "dependencies": [
+            "a48e533fluid27a-h3"
+        ],
+        "title": "Calculate the Work Done to Increase Potential Energy",
+        "text": "What is $$P_{potential}=\u03c1Vgh=5\\frac{9.81\\frac{83\\frac{1060kg}{m^3} {cm}^3}{s} m}{s^2} cm$$ in W? (keep three decimal places) Remember to convert convert the speed from $$\\frac{cm}{s}$$ to $$\\frac{m}{s}$$ and $$h$$ from cm to $$m$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a48e533fluid27a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.26$$"
+        ],
+        "dependencies": [
+            "a48e533fluid27a-h4"
+        ],
+        "title": "Calculate the Total Power Output",
+        "text": "What is $$P_{total}=P_{pressure}+P_{kinetic}+P_{potential}$$ in W? (keep two decimal places)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

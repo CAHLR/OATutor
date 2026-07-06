@@ -1,0 +1,82 @@
+[
+    {
+        "id": "afc3761Unitcirc28a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Circle size",
+        "text": "Recall that the size of the circle does not change our reference angle. Hence, we can first find the points on the unit circle and then scale them to get our desired point.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afc3761Unitcirc28a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-\\sqrt{2}}{2}$$"
+        ],
+        "dependencies": [
+            "afc3761Unitcirc28a-h1"
+        ],
+        "title": "Sine of angle",
+        "text": "What is the sine of the angle?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afc3761Unitcirc28a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\sqrt{2}}{2}$$"
+        ],
+        "dependencies": [
+            "afc3761Unitcirc28a-h1"
+        ],
+        "title": "Cosine of angle",
+        "text": "What is the cosine of the angle?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afc3761Unitcirc28a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afc3761Unitcirc28a-h2",
+            "afc3761Unitcirc28a-h3"
+        ],
+        "title": "Unit Circle coordinates",
+        "text": "How do the sine and cosine values relate to the unit circle coordinates?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afc3761Unitcirc28a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(8\\sqrt{2},-8\\sqrt{2})$$"
+        ],
+        "dependencies": [
+            "afc3761Unitcirc28a-h4"
+        ],
+        "title": "Final coordinates",
+        "text": "What are the final coordinates?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$(\\sqrt{2},-\\sqrt{2})$$",
+            "$$(-\\sqrt{2},-\\sqrt{2})$$",
+            "$$(-8\\sqrt{2},-8\\sqrt{2})$$",
+            "$$(8\\sqrt{2},-8\\sqrt{2})$$"
+        ]
+    }
+]

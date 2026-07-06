@@ -1,0 +1,48 @@
+[
+    {
+        "id": "aa27eearational11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the LCD of the Fractions",
+        "text": "LCD of $$\\frac{x+13}{x^2-7x+10}$$, $$\\frac{6}{x-5}$$, and $$\\frac{4}{x-2}$$ is $$(x-5)(x-2)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa27eearational11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aa27eearational11a-h1"
+        ],
+        "title": "Clear All Fractions",
+        "text": "We must multiply each fraction by the LCD. We get $$x+13=6(x-2)-4(x-5)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa27eearational11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aa27eearational11a-h2"
+        ],
+        "title": "Simplify the Equation",
+        "text": "Let's simplify this equation: $$x+13=6x-12-4x+20$$. This simplifies to $$x=5$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa27eearational11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aa27eearational11a-h3"
+        ],
+        "title": "Solve the Equation",
+        "text": "$$x=5$$ is our solution, but it is extraneous since it is in the denominator of the original equation. DNE.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

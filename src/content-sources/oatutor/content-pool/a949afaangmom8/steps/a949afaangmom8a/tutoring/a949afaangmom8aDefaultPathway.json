@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a949afaangmom8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Momentum",
+        "text": "Angular momentum (L) is given by the formula $$L=r p sin\\left(\\theta\\right)$$, where $$r$$ is the radius vector, $$p$$ is the linear momentum, and theta is the angle between $$r$$ and $$p$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom8a-h1"
+        ],
+        "title": "Calculate Linear Momentum",
+        "text": "The linear momentum (p) of the bird is given by $$p=m v$$, where $$m$$ is the mass and v is the velocity of the bird.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$40$$"
+        ],
+        "dependencies": [
+            "a949afaangmom8a-h2"
+        ],
+        "title": "Calculate Linear Momentum",
+        "text": "Given the mass of the bird is $$2.0$$ kg and its velocity is $$20.0$$ $$\\frac{m}{s}$$, calculate the linear momentum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom8a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom8a-h3"
+        ],
+        "title": "Determine the Radius Vector",
+        "text": "The radius vector (r) is the distance from the point where you are standing to the bird. Given the altitude of the bird is $$300.0$$ $$m$$, use trigonometry to find $$r$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom8a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$300$$"
+        ],
+        "dependencies": [
+            "a949afaangmom8a-h4"
+        ],
+        "title": "Calculate Radius Vector",
+        "text": "Assuming the bird is directly overhead, the radius vector is equal to the altitude. Calculate $$r$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom8a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom8a-h5"
+        ],
+        "title": "Calculate Angular Momentum",
+        "text": "Use the formula $$L=r p sin\\left(\\theta\\right)$$ to calculate the angular momentum. Assume theta is $$90$$ degrees, so $$sin(theta)=1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom8a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12000$$"
+        ],
+        "dependencies": [
+            "a949afaangmom8a-h6"
+        ],
+        "title": "Final Calculation",
+        "text": "Substitute the values $$r=300$$, $$p=40$$, and $$sin(theta)=1$$ into the formula $$L=r p sin\\left(\\theta\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

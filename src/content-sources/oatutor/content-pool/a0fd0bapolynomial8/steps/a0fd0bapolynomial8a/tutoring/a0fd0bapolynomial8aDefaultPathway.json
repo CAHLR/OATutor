@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a0fd0bapolynomial8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Number of intercepts",
+        "text": "A polynomial of degree $$n$$ will have at most $$n$$ x-intercepts.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a0fd0bapolynomial8a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "a0fd0bapolynomial8a-h1"
+        ],
+        "title": "Number of intercepts",
+        "text": "What is the maximum number of $$x$$ intercepts this polynomial can have?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a0fd0bapolynomial8a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$10$$"
+                ],
+                "dependencies": [],
+                "title": "Degree of polynomial",
+                "text": "What is the degree of the polynomial?",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a0fd0bapolynomial8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a0fd0bapolynomial8a-h2"
+        ],
+        "title": "Number of turning points",
+        "text": "A polynomial of degree $$n$$ will have at most $$n-1$$ turning points.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a0fd0bapolynomial8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "a0fd0bapolynomial8a-h3"
+        ],
+        "title": "Number of turning points",
+        "text": "What is the maximum number of turning points this polynomial can have?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

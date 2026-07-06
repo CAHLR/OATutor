@@ -1,0 +1,97 @@
+[
+    {
+        "id": "a08d293Rational22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Property to use",
+        "text": "The Product Property tells us that when we multiply the same base, we add the exponents.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a08d293Rational22a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a08d293Rational22a-h1"
+        ],
+        "title": "Evaluate the base",
+        "text": "Are the bases same in our expression?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a08d293Rational22a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "x** (1/2+ 5/6)"
+        ],
+        "dependencies": [
+            "a08d293Rational22a-h2"
+        ],
+        "title": "Add the exponents",
+        "text": "What's the result if we add the exponents. Please do not simplify.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a08d293Rational22a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{8}{6}$$"
+        ],
+        "dependencies": [
+            "a08d293Rational22a-h3"
+        ],
+        "title": "Add the fractions.",
+        "text": "What's the result when you add the fractions.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a08d293Rational22a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{4}{3}$$"
+        ],
+        "dependencies": [
+            "a08d293Rational22a-h4"
+        ],
+        "title": "Simplify the fraction.",
+        "text": "What's the result when you simplify the fraction?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a08d293Rational22a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x^{\\frac{4}{3}}$$"
+        ],
+        "dependencies": [
+            "a08d293Rational22a-h5"
+        ],
+        "title": "Find the result",
+        "text": "What's the final result?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

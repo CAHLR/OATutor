@@ -1,0 +1,100 @@
+[
+    {
+        "id": "a88c93efixedaxis13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Rotational Kinetic Energy",
+        "text": "The rotational kinetic energy of a rotating object can be calculated using the formula: \\( KE_{rot} $$=$$ \\frac{1}{2} I \\omega**2 \\), where \\( I \\) is the moment of inertia and \\( \\omega \\) is the angular velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis13a-h1"
+        ],
+        "title": "Calculate the Moment of Inertia",
+        "text": "For a uniform solid sphere, the moment of inertia \\( I \\) is given by \\( I $$=$$ \\frac{2}{5} M $$R^2$$ \\). Use the given mass \\( M $$=$$ 2*10**{30} \\) kg and radius \\( R $$=$$ $${10}^4$$ \\) $$m$$ to calculate \\( I \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis13a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "8*10**{37}"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis13a-h2"
+        ],
+        "title": "Calculate the Moment of Inertia",
+        "text": "Substitute the values into the formula \\( I $$=$$ \\frac{2}{5} M $$R^2$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis13a-h1"
+        ],
+        "title": "Find the Angular Velocity",
+        "text": "The angular velocity \\( \\omega \\) can be found using the formula \\( \\omega $$=$$ \\frac{2\\pi}{T} \\), where \\( T \\) is the period of rotation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis13a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "100\\pi"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis13a-h4"
+        ],
+        "title": "Calculate the Angular Velocity",
+        "text": "Substitute the period \\( T $$=$$ $$0.02$$ \\) seconds into the formula \\( \\omega $$=$$ \\frac{2\\pi}{T} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis13a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis13a-h3",
+            "a88c93efixedaxis13a-h5"
+        ],
+        "title": "Calculate the Rotational Kinetic Energy",
+        "text": "Now that you have \\( I \\) and \\( \\omega \\), substitute them into the formula \\( KE_{rot} $$=$$ \\frac{1}{2} I \\omega**2 \\) to find the rotational kinetic energy.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis13a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3.95E+42$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis13a-h6"
+        ],
+        "title": "Final Calculation",
+        "text": "Substitute \\( I $$=$$ 8*10**{37} \\) and \\( \\omega $$=$$ 100\\pi \\) into \\( KE_{rot} $$=$$ \\frac{1}{2} I \\omega**2 \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,81 @@
+[
+    {
+        "id": "a3d3e89log27a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Solve",
+        "text": "How do you solve for $$x$$, given $${10}^x=500$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log27a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log27a-h1"
+        ],
+        "title": "Formula",
+        "text": "Recall relationship between logarithmic form and exponential form.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log27a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$b=10$$, $$x=8500$$, $$y=x$$"
+        ],
+        "dependencies": [
+            "a3d3e89log27a-h2"
+        ],
+        "title": "Identify Variables",
+        "text": "What is $$b$$? What is $$x$$? What is $$y$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$b=e$$, $$x=8500$$, $$y=3$$",
+            "$$b=10$$, $$x=8500$$, $$y=x$$"
+        ]
+    },
+    {
+        "id": "a3d3e89log27a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log27a-h3"
+        ],
+        "title": "Substitute",
+        "text": "$$x=log10(8500)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log27a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log27a-h4"
+        ],
+        "title": "Solve With Calculator",
+        "text": "$$log10(8500)=3.9294189$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3d3e89log27a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a3d3e89log27a-h5"
+        ],
+        "title": "Round",
+        "text": "To round to nearest thousandth, we check that the third decimal place is less or equal $$\\frac{to}{greater}$$ than $$5$$. If equal $$\\frac{to}{greater}$$ than $$5$$, we round up to the next thousandth.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

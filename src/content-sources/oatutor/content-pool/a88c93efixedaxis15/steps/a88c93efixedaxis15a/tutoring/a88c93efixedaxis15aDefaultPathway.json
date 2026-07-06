@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a88c93efixedaxis15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Torque",
+        "text": "Torque is a measure of the rotational force applied to an object. It is calculated as the cross product of the position vector and the force vector.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis15a-h1"
+        ],
+        "title": "Cross Product Formula",
+        "text": "The cross product of two vectors \\( \\vec{A} \\) and \\( \\vec{B} \\) is given by \\( \\vec{A} \\times \\vec{B} $$=$$ (A_yB_z - A_zB_y)\\hat{i} + (A_zB_x - A_xB_z)\\hat{j} + (A_xB_y - A_yB_x)\\hat{k} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis15a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "4.0\\hat{i}+2.0\\hat{j}-16.0\\hat{k}"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis15a-h2"
+        ],
+        "title": "Calculate the Cross Product",
+        "text": "Given \\( \\vec{r} $$=$$ $$-2.0\\hat{i$$} + $$4.0\\hat{j$$} \\) and \\( \\vec{F} $$=$$ $$5.0\\hat{i$$} - $$2.0\\hat{j$$} + $$1.0\\hat{k$$} \\), calculate \\( \\vec{r} \\times \\vec{F} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis15a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis15a-h3"
+        ],
+        "title": "Components of the Cross Product",
+        "text": "Calculate each component of the cross product separately: \\( (r_yF_z - r_zF_y)\\hat{i} \\), \\( (r_zF_x - r_xF_z)\\hat{j} \\), and \\( (r_xF_y - r_yF_x)\\hat{k} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis15a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "4.0\\hat{i}+2.0\\hat{j}-16.0\\hat{k}"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis15a-h4"
+        ],
+        "title": "Calculate Each Component",
+        "text": "Calculate the \\( \\hat{i} \\), \\( \\hat{j} \\), and \\( \\hat{k} \\) components of the torque separately.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

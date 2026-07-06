@@ -1,0 +1,111 @@
+[
+    {
+        "id": "a28722cappquad21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify what we are looking for.",
+        "text": "We are looking for the width of the lawn.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a28722cappquad21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a28722cappquad21a-h1"
+        ],
+        "title": "Name what we are looking for.",
+        "text": "Let $$x=length$$ of the lawn, $$2x-6=width$$ of the lawn.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a28722cappquad21a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a28722cappquad21a-h2"
+        ],
+        "title": "Translate into an equation.",
+        "text": "We know the area, and we could use the formula for the area of a rectangle to solve for x: $$\\left(2x-6\\right) x=140$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a28722cappquad21a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a28722cappquad21a-h3"
+        ],
+        "title": "Rewrite in standard form.",
+        "text": "$$2x^2-6x-140=0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a28722cappquad21a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a28722cappquad21a-h4"
+        ],
+        "title": "Solve the equation using the Quadratic Formula.",
+        "text": "Idenfity the a, $$b$$, c value: $$a=2$$, $$b=-6$$, $$c=-140$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a28722cappquad21a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x=\\frac{6\\pm \\sqrt{1156}}{4}$$"
+        ],
+        "dependencies": [
+            "a28722cappquad21a-h5"
+        ],
+        "title": "Solve the equation.",
+        "text": "We could solve the equation using the Quadratic Formula, $$h=\\frac{\\left(-b\\pm \\sqrt{b^2-4a c}\\right)}{2a}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a28722cappquad21a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "a28722cappquad21a-h6"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "Simplify the equation and solve for $$x$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a28722cappquad21a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$14$$"
+        ],
+        "dependencies": [
+            "a28722cappquad21a-h7"
+        ],
+        "title": "Solve for $$2x-6$$",
+        "text": "Using the value of $$x$$ to solve for $$2x-6$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

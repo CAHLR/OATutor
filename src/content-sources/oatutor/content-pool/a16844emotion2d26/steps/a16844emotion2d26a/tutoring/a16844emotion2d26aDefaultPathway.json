@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a16844emotion2d26a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The jumper's distance depends on the angle of takeoff. We need to calculate the distance at $$30$$ degrees and compare it to the distance at $$45$$ degrees.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d26a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d26a-h1"
+        ],
+        "title": "Projectile Motion Formula",
+        "text": "The range of a projectile is given by the formula: \\( R $$=$$ \\frac{v**2 \\sin(2\\theta)}{g} \\), where \\( v \\) is the initial velocity, \\( $$\\theta$$ \\) is the angle of takeoff, and \\( g \\) is the acceleration due to gravity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d26a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d26a-h2"
+        ],
+        "title": "Calculate Range at $$30$$ Degrees",
+        "text": "Use the formula \\( R $$=$$ \\frac{v**2 \\sin(2\\theta)}{g} \\) to calculate the range at $$30$$ degrees. Remember, \\( \\sin(60) $$=$$ \\sqrt{3}/2 \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d26a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d26a-h3"
+        ],
+        "title": "Calculate Range at $$45$$ Degrees",
+        "text": "Calculate the range at $$45$$ degrees using the formula \\( R $$=$$ \\frac{v**2 \\sin(2\\theta)}{g} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d26a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6.93$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d26a-h4"
+        ],
+        "title": "Calculate Range at $$30$$ Degrees",
+        "text": "Calculate the range at $$30$$ degrees using the formula \\( R $$=$$ \\frac{v**2 \\sin(2\\theta)}{g} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d26a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d26a-h5"
+        ],
+        "title": "Find the Difference",
+        "text": "Subtract the range at $$30$$ degrees from the range at $$45$$ degrees to find the distance lost.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d26a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.07$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d26a-h6"
+        ],
+        "title": "Calculate Distance Lost",
+        "text": "Subtract the range at $$30$$ degrees from the range at $$45$$ degrees: \\( $$8.0$$ - $$6.93$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

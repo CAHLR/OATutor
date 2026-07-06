@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a16844emotion2d10c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Range Formula",
+        "text": "To find the range of a projectile, you can use the formula: \\( R $$=$$ \\frac{v**2 \\sin(2\\theta)}{g} \\), where \\( v \\) is the initial velocity, \\( $$\\theta$$ \\) is the launch angle, and \\( g \\) is the acceleration due to gravity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d10c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d10c-h1"
+        ],
+        "title": "Finding Initial Velocity",
+        "text": "Since the projectile lands at the same height it was launched, you can use the time of flight formula: \\( $$t$$ $$=$$ \\frac{2v \\sin(\\theta)}{g} \\). Rearrange this to find the initial velocity \\( v \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d10c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$98$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d10c-h2"
+        ],
+        "title": "Calculate Initial Velocity",
+        "text": "Given that the time of flight \\( $$t$$ $$=$$ $$20$$ \\) seconds and \\( $$\\theta$$ $$=$$ $$30$$ \\) degrees, calculate the initial velocity \\( v \\). Use \\( g $$=$$ $$9.8$$ \\) m/s\u00b2.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d10c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d10c-h3"
+        ],
+        "title": "Using the Range Formula",
+        "text": "Now that you have the initial velocity, use the range formula \\( R $$=$$ \\frac{v**2 \\sin(2\\theta)}{g} \\) to find the range.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d10c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3395$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d10c-h4"
+        ],
+        "title": "Calculate the Range",
+        "text": "Substitute \\( v $$=$$ $$98$$ \\) $$\\frac{m}{s}$$, \\( $$\\theta$$ $$=$$ $$30$$ \\) degrees, and \\( g $$=$$ $$9.8$$ \\) m/s\u00b2 into the range formula to find \\( R \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,92 @@
+[
+    {
+        "id": "abaea60linmom13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Conservation of Momentum",
+        "text": "Remember that the total momentum before the explosion must equal the total momentum after the explosion.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom13a-h1"
+        ],
+        "title": "Initial Momentum Calculation",
+        "text": "Calculate the initial momentum of the rocket using its mass and velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom13a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-25038$$ hat{i}+17784 hat{j}"
+        ],
+        "dependencies": [
+            "abaea60linmom13a-h2"
+        ],
+        "title": "Momentum of the First Piece",
+        "text": "Calculate the momentum of the first piece using its mass and velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom13a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$896$$ hat{i}-4928 hat{j}"
+        ],
+        "dependencies": [
+            "abaea60linmom13a-h3"
+        ],
+        "title": "Momentum of the Second Piece",
+        "text": "Calculate the momentum of the second piece using its mass and velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom13a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$25142$$ hat{i}-15156 hat{j}"
+        ],
+        "dependencies": [
+            "abaea60linmom13a-h4"
+        ],
+        "title": "Momentum of the Third Piece",
+        "text": "Use the conservation of momentum to find the momentum of the third piece.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom13a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$732.5$$ $$hat{i}-79.6$$ hat{j}"
+        ],
+        "dependencies": [
+            "abaea60linmom13a-h5"
+        ],
+        "title": "Velocity of the Third Piece",
+        "text": "Divide the momentum of the third piece by its mass to find its velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

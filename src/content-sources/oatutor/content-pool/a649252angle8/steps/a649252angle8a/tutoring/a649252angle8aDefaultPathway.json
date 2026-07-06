@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a649252angle8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall Half-Angle Formula for sine",
+        "text": "Recall that $$\\sin(\\frac{\\alpha}{2})$$ $$=$$ \\pm\\sqrt{\\frac{1 $$-$$ $$\\cos(\\alpha)}{2}}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle8a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\frac{15}{17}$$"
+        ],
+        "dependencies": [
+            "a649252angle8a-h1"
+        ],
+        "title": "Determine $$\\cos(\\alpha)$$",
+        "text": "Given $$\\tan\\alpha=\\frac{8}{15}$$ and $$\\alpha$$ is in QIII, what is $$\\cos(\\alpha)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle8a-h1"
+        ],
+        "title": "Determine Quadrant of $$\\frac{\\alpha}{2}$$",
+        "text": "Determine the quadrant of $$\\frac{\\alpha}{2}$$ to choose the correct sign for the half-angle formula.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle8a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Quadrant II"
+        ],
+        "dependencies": [
+            "a649252angle8a-h2"
+        ],
+        "title": "Quadrant of $$\\frac{\\alpha}{2}$$",
+        "text": "If $$\\alpha$$ is in QIII ($$180**\\circ < \\alpha < 270**\\circ$$), in which quadrant is $$\\frac{\\alpha}{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Quadrant I",
+            "Quadrant II",
+            "Quadrant III",
+            "Quadrant IV"
+        ]
+    },
+    {
+        "id": "a649252angle8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle8a-h2"
+        ],
+        "title": "Substitute and Simplify",
+        "text": "Substitute the value of $$\\cos(\\alpha)$$ into the formula and simplify the expression.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle8a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{32}{17}$$"
+        ],
+        "dependencies": [
+            "a649252angle8a-h3"
+        ],
+        "title": "Value of $$1$$ $$-$$ $$\\cos(\\alpha)$$",
+        "text": "What is the value of $$1$$ $$-$$ $$\\cos(\\alpha)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

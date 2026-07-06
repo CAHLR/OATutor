@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a662caelawsin13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sum of angles in a triangle",
+        "text": "Recall that the sum of the angles in any triangle is 180**{\\circ}.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin13a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\alpha$$ + $$\\beta$$ + $$\\gamma$$ $$=$$ 180**\\circ$$"
+        ],
+        "dependencies": [
+            "a662caelawsin13a-h1"
+        ],
+        "title": "Formula for sum of angles",
+        "text": "What is the formula for the sum of angles in a triangle?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\alpha$$ + $$\\beta$$ + $$\\gamma$$ $$=$$ 180**\\circ$$",
+            "$$\\alpha$$ + $$\\beta$$ + $$\\gamma$$ $$=$$ 90**\\circ$$",
+            "$$\\alpha$$ + $$\\beta$$ $$=$$ 180**\\circ$$",
+            "$$\\alpha**2 + \\beta**2 $$=$$ \\gamma**2$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin13a-h1"
+        ],
+        "title": "Substitute known values",
+        "text": "Substitute the given values for $$\\alpha$$ and $$\\beta$$ into the formula.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin13a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$60**\\circ + 100**\\circ + $$\\gamma$$ $$=$$ 180**\\circ$$"
+        ],
+        "dependencies": [
+            "a662caelawsin13a-h2"
+        ],
+        "title": "Equation with known angles",
+        "text": "What is the equation after substituting the known angles?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$60**\\circ + 100**\\circ + $$\\gamma$$ $$=$$ 180**\\circ$$",
+            "$$60**\\circ + 100**\\circ + $$\\gamma$$ $$=$$ 90**\\circ$$",
+            "$$60**\\circ + 100**\\circ $$=$$ $$\\gamma$$",
+            "$$180**\\circ $$-$$ 60**\\circ $$-$$ 100**\\circ $$=$$ $$\\gamma$$"
+        ]
+    }
+]

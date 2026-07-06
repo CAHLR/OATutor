@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a949afaangmom9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Momentum",
+        "text": "Angular momentum \\( \\vec{L} \\) of a particle is given by the cross product of its position vector \\( \\vec{r} \\) and its linear momentum \\( \\vec{p} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom9a-h1"
+        ],
+        "title": "Calculate Linear Momentum",
+        "text": "The linear momentum \\( \\vec{p} \\) of a particle is calculated as the product of its mass \\( $$m$$ \\) and velocity \\( \\vec{v} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom9a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$15.0\\hat{i$$}"
+        ],
+        "dependencies": [
+            "a949afaangmom9a-h2"
+        ],
+        "title": "Compute Linear Momentum",
+        "text": "Given the mass \\( $$m=5.0$$ \\) kg and velocity \\( $$\\vec{v}=3.0\\hat{i$$} \\) $$\\frac{m}{s}$$, calculate the linear momentum \\( \\vec{p} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom9a-h3"
+        ],
+        "title": "Cross Product Calculation",
+        "text": "The cross product \\( \\vec{r} \\times \\vec{p} \\) is calculated using the determinant of a matrix formed by the unit vectors \\( \\hat{i}, \\hat{j}, \\hat{k} \\), and the components of \\( \\vec{r} \\) and \\( \\vec{p} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom9a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "45\\hat{k}"
+        ],
+        "dependencies": [
+            "a949afaangmom9a-h4"
+        ],
+        "title": "Calculate Angular Momentum",
+        "text": "Using \\( $$\\vec{r}=2.0\\hat{i}-3.0\\hat{j$$} \\) $$m$$ and \\( $$\\vec{p}=15.0\\hat{i$$} \\), compute \\( $$\\vec{L}=\\vec{r$$} \\times \\vec{p} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

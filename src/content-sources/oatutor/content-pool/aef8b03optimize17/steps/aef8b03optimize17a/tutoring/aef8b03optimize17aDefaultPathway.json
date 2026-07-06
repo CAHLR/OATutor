@@ -1,0 +1,80 @@
+[
+    {
+        "id": "aef8b03optimize17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Derive g'(v) to Find Critical Points",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize17a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "a"
+        ],
+        "dependencies": [
+            "aef8b03optimize17a-h1"
+        ],
+        "title": "Derive av from g(v)",
+        "text": "When deriving av from $$g(v)=av+\\frac{b}{v}$$, av becomes $$___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize17a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-b v^{-2}$$"
+        ],
+        "dependencies": [
+            "aef8b03optimize17a-h2"
+        ],
+        "title": "Derive $$\\frac{b}{v}$$ from g(v)",
+        "text": "When deriving $$\\frac{b}{v}$$, also written as $$b v^{-1}$$ from $$g(v)=av+\\frac{b}{v}$$, av becomes $$___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize17a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$a-b v^{-2}$$"
+        ],
+        "dependencies": [
+            "aef8b03optimize17a-h3"
+        ],
+        "title": "Find g'(v)",
+        "text": "What g'(v)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize17a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sqrt{\\frac{b}{a}}$$"
+        ],
+        "dependencies": [
+            "aef8b03optimize17a-h4"
+        ],
+        "title": "Find v at $$g'(v)=0$$",
+        "text": "When $$g'(v)=0$$, $$v=___$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

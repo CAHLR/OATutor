@@ -1,0 +1,54 @@
+[
+    {
+        "id": "a82acbdstat4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Quantitative or Qualitative?",
+        "text": "We want to determine the distance it is from your home to the nearest grocery store. We can determine if this is qualitative or quantitative since qualitative data usually uses data while quantitative involves counting or measuring numerical values.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a82acbdstat4a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Quantitative"
+        ],
+        "dependencies": [
+            "a82acbdstat4a-h1"
+        ],
+        "title": "Quantitative or Qualitative?",
+        "text": "Is the distance from your home to the nearest grocery store qualitative or quantitative data?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Quantitative",
+            "Qualitative"
+        ]
+    },
+    {
+        "id": "a82acbdstat4a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Continuous"
+        ],
+        "dependencies": [
+            "a82acbdstat4a-h2"
+        ],
+        "title": "Continuous or Discrete?",
+        "text": "Now, we know that distance is a quantitative value. Now, to decide whether it is discrete or continuous, we must decide if we can have $$\\frac{fractions}{decimals}$$ of a distance. For instance, is it valid to have a distance of $$1$$ mile? How about $$0.2$$ of a mile? If it is valid to include fractions or decimals of a $$\\frac{mile}{any}$$ distance, choose continuous, otherwise, choose discrete.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Discrete",
+            "Continuous"
+        ]
+    }
+]

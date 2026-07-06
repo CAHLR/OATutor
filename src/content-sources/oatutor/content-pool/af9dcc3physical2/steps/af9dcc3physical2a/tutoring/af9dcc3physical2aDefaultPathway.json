@@ -1,0 +1,48 @@
+[
+    {
+        "id": "af9dcc3physical2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Mass-Density Formula",
+        "text": "Let p(x) be an integrable function representing the radial density of a disk of radius $$r$$. Then the mass of the disk is given by $$m=\\int_{0}^{r} 2\\pi p\\left(x\\right) \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af9dcc3physical2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af9dcc3physical2a-h1"
+        ],
+        "title": "Set up the integral",
+        "text": "$$m=\\int_{0}^{4} 2\\pi x \\sqrt{x} \\,dx=m=\\int_{0}^{4} 2\\pi x^{\\frac{3}{2}} \\,dx$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af9dcc3physical2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af9dcc3physical2a-h2"
+        ],
+        "title": "Find the integral",
+        "text": "$$2\\pi \\frac{2}{5} x^{\\frac{5}{2}}$$ as the limits going from $$x=0$$ to $$x=4$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "af9dcc3physical2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "af9dcc3physical2a-h3"
+        ],
+        "title": "Evaluate",
+        "text": "$$\\frac{32\\times4 \\pi}{5}=\\frac{128\\pi}{5}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

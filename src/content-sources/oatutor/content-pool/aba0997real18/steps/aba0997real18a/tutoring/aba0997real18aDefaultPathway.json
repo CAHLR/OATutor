@@ -1,0 +1,70 @@
+[
+    {
+        "id": "aba0997real18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Cases",
+        "text": "We want to split up our inequality into two cases, mainly $$3x-4 \\leq 8$$ and $$3x-4 \\geq -8$$. (ask yourself how we arrived here.. reflect on previous techniques of isolating |A| $$=$$ B.)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba0997real18a-h1"
+        ],
+        "title": "Isolating $$x$$",
+        "text": "Consider $$3x-4 \\leq 8$$, add $$4$$ to both sides and divide by $$3$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real18a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "aba0997real18a-h2"
+        ],
+        "title": "Value of $$x$$",
+        "text": "What must $$x$$ be greater than or equal to?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real18a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aba0997real18a-h3"
+        ],
+        "title": "Isolating $$x$$",
+        "text": "Consider $$3x-4 \\geq -8$$, add $$4$$ to both sides and divide by $$3$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real18a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-4}{3}$$"
+        ],
+        "dependencies": [
+            "aba0997real18a-h4"
+        ],
+        "title": "Value of $$x$$",
+        "text": "What must $$x$$ be less than or equal to?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

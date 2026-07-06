@@ -1,0 +1,55 @@
+[
+    {
+        "id": "af3b50aangles1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Starting Point",
+        "text": "A full rotation (360\u00b0 or $$2\\pi$$ radians) brings you back to the starting point. So, what happens if you add or subtract full rotations from any given angle?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af3b50aangles1a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "af3b50aangles1a-h1"
+        ],
+        "title": "Terminal Side",
+        "text": "If you keep adding or subtracting full rotations, what happens to the angle? Does it still share the same terminal side?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "af3b50aangles1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Infinite"
+        ],
+        "dependencies": [
+            "af3b50aangles1a-h2"
+        ],
+        "title": "Number of Coterminal angles",
+        "text": "Considering that you can keep adding or subtracting 360\u00b0 (or 2pi) multiple times, how many coterminal angles can exist?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "One",
+            "Many",
+            "Infinite"
+        ]
+    }
+]

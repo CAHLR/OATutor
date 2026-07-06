@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a949afaangmom17b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the System",
+        "text": "The system consists of a rotating disk and a bug. Initially, the bug is at the edge of the disk, and then it moves to the center. How does this movement affect the system's kinetic energy?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom17b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom17b-h1"
+        ],
+        "title": "Conservation of Angular Momentum",
+        "text": "Since there are no external torques acting on the system, the angular momentum is conserved. How does this principle help in determining the change in kinetic energy?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom17b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom17b-h2"
+        ],
+        "title": "Initial and Final Moments of Inertia",
+        "text": "Calculate the initial and final moments of inertia of the system. Remember, the moment of inertia of the disk is $$\\frac{1}{2} M R^2$$, and the bug contributes $$m r^2$$ to the moment of inertia when it is at a distance $$r$$ from the axis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom17b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom17b-h3"
+        ],
+        "title": "Initial and Final Angular Velocities",
+        "text": "Using the conservation of angular momentum, determine the initial and final angular velocities of the system. The initial angular velocity is given as $$10.0$$ $$\\frac{rad}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom17b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom17b-h4"
+        ],
+        "title": "Calculating Kinetic Energy",
+        "text": "The kinetic energy of a rotating object is given by $$\\frac{1}{2} I {\\omega}^2$$, where I is the moment of inertia and omega is the angular velocity. Calculate the initial and final kinetic energies of the system.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom17b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.014$$"
+        ],
+        "dependencies": [
+            "a949afaangmom17b-h5"
+        ],
+        "title": "Change in Kinetic Energy",
+        "text": "Find the difference between the final and initial kinetic energies to determine the change in kinetic energy of the system.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

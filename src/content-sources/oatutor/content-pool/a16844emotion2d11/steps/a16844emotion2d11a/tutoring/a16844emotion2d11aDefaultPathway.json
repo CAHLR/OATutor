@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a16844emotion2d11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The ball is thrown horizontally from a height of $$100$$ meters. We need to find out how far it travels horizontally before hitting the ground.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d11a-h1"
+        ],
+        "title": "Time to Hit the Ground",
+        "text": "First, calculate the time it takes for the ball to hit the ground. Use the formula for the time of free fall: $$t=\\sqrt{\\frac{2h}{g}}$$, where $$h$$ is the height (100 m) and g is the acceleration due to gravity $$(9.8$$ m/s\u00b2).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d11a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4.52$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d11a-h2"
+        ],
+        "title": "Calculate Time of Fall",
+        "text": "Calculate the time it takes for the ball to fall $$100$$ meters using the formula $$t=\\sqrt{\\frac{2h}{g}}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d11a-h3"
+        ],
+        "title": "Horizontal Distance Calculation",
+        "text": "Now that you have the time, calculate the horizontal distance using the formula: $$distance=speed time$$. The initial horizontal speed is $$20$$ $$\\frac{m}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d11a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$90.4$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d11a-h4"
+        ],
+        "title": "Calculate Horizontal Distance",
+        "text": "Use the formula $$distance=speed time$$ with $$speed=20$$ $$\\frac{m}{s}$$ and $$time=4.52$$ s to find the horizontal distance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d11a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d11a-h5"
+        ],
+        "title": "Final Adjustment",
+        "text": "Consider the descent of the balloon. Since the balloon is descending at $$2$$ $$\\frac{m}{s}$$, adjust the horizontal distance accordingly.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d11a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$86$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d11a-h6"
+        ],
+        "title": "Adjust for Balloon Descent",
+        "text": "Subtract the distance covered by the balloon's descent (2 $$\\frac{m}{s}$$ * $$4.52$$ s) from the horizontal distance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

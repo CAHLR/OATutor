@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a8b65afdynamics15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calcuate $$F_{net}$$",
+        "text": "Calculate the total force in the $$x$$ direction in order to help find the coupling force.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8b65afdynamics15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8b65afdynamics15a-h1"
+        ],
+        "title": "Calcuate Frictional Force",
+        "text": "As friction is evenly distributed among all $$45$$ cars and $$2$$ engines , and there are $$8$$ cars behind the 38th car, $$F_{frictionbehind}=\\frac{8F_{friction}}{45+2}$$. Calculate the frictional force cars $$38-45$$ feel.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8b65afdynamics15a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.28\\times{10}^5$$"
+        ],
+        "dependencies": [
+            "a8b65afdynamics15a-h2"
+        ],
+        "title": "Calcuate Frictional Force",
+        "text": "What is the frictional force cars $$38-45$$ experience?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8b65afdynamics15a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8b65afdynamics15a-h3"
+        ],
+        "title": "Calcuate Acceleration Force",
+        "text": "Use Newton's Second Law $$(F=ma)$$ to find the net force required to accelerate the cars 38th-45th. Here, F $$=$$ $$8m_{car} a$$ + $$F_{friction}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8b65afdynamics15a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.2\\times{10}^4$$"
+        ],
+        "dependencies": [
+            "a8b65afdynamics15a-h4"
+        ],
+        "title": "Calcuate Acceleration Force",
+        "text": "What is the acceleration force cars $$38-45$$ experience?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8b65afdynamics15a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a8b65afdynamics15a-h5"
+        ],
+        "title": "Total Force",
+        "text": "We know the frictional force in the $$x$$ direction (which will be opposite to the coupling force) as well as the acceleration force, now we need to solve for the coupling force that cars $$38-45$$ feel. Acceleration Force $$=$$ Coupling Force - Frictional Force",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8b65afdynamics15a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.5\\times{10}^5$$"
+        ],
+        "dependencies": [
+            "a8b65afdynamics15a-h6"
+        ],
+        "title": "Calculate Coupling Force",
+        "text": "What is $$1.28\\times{10}^5+2.2\\times{10}^4$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

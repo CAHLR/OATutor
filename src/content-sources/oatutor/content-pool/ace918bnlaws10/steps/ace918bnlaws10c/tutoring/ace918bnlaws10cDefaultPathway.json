@@ -1,0 +1,41 @@
+[
+    {
+        "id": "ace918bnlaws10c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Force",
+        "text": "To find the force exerted by the seat on the passenger, we need to use Newton's second law of motion.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws10c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws10c-h1"
+        ],
+        "title": "Newton's Second Law",
+        "text": "Newton's second law states that force is equal to mass times acceleration. The formula is $$F=m a$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws10c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3748$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws10c-h2"
+        ],
+        "title": "Calculate the Force",
+        "text": "Given that the mass $$m$$ is $$75.0$$ kg and the acceleration a is $$49.0$$ $$\\frac{m}{s^2}$$, calculate the force using the formula $$F=m a$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a662caelawsin29b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Considering the ambiguous case",
+        "text": "When using the Law of Sines to find an angle, there can be two possible solutions if the side opposite the angle is shorter than the adjacent side, but longer than the height.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin29b-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "47.8**{\\circ}"
+        ],
+        "dependencies": [
+            "a662caelawsin29b-h1"
+        ],
+        "title": "Identify the acute angle",
+        "text": "What was the acute angle $$A_1$$ found in the previous step?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin29b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin29b-h1"
+        ],
+        "title": "Finding the second possible angle",
+        "text": "If $$A_1$$ is the acute angle found, the second possible angle $$A_2$$ is $$180**{\\circ} $$-$$ $$A_1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin29b-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "132.2**{\\circ}"
+        ],
+        "dependencies": [
+            "a662caelawsin29b-h2"
+        ],
+        "title": "Calculate the second angle",
+        "text": "Calculate $$180**{\\circ} $$-$$ $$A_1$$ to find the second possible value for $$A$$. $$Round$$ $$to$$ $$the$$ $$nearest$$ $$tenth$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin29b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin29b-h2"
+        ],
+        "title": "Checking validity",
+        "text": "Ensure that the sum of the angles in the triangle ($$A_2 + B$$) is less than $$180**{\\circ}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

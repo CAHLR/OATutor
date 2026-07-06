@@ -1,0 +1,60 @@
+[
+    {
+        "id": "af985e8a1cc0dcareas1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identifiera kurvorna",
+        "text": "F\u00f6rst m\u00e5ste du identifiera de tv\u00e5 kurvorna som definierar omr\u00e5det vars area du vill hitta. I detta fall \u00e4r f(x) den \u00f6vre kurvan och g(x) den nedre kurvan",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af985e8a1cc0dcareas1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af985e8a1cc0dcareas1a-h1"
+        ],
+        "title": "St\u00e4ll upp integralen",
+        "text": "$$A=\\int$$ $$(f(x)-g(x)$$ $$\\, dx$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af985e8a1cc0dcareas1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af985e8a1cc0dcareas1a-h2"
+        ],
+        "title": "St\u00e4ll upp integralen",
+        "text": "Med $$f(x)=x+4$$ och $$g(x)=3-\\frac{x}{2}$$ \u00f6ver det givna intervallet [1,4], kan vi fullborda integraluttrycket som $$A=\\int_{1}^{4} x+4-3-\\frac{x}{2} \\,dx=$$ $$\\int_{1}^{4} \\frac{3x}{2}+1 \\,dx$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af985e8a1cc0dcareas1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "af985e8a1cc0dcareas1a-h3"
+        ],
+        "title": "Best\u00e4m integralen",
+        "text": "$$\\int_{1}**{4} \\frac{3x}{2}+1 \\,dx=\\frac{3x**2}{4}+x$$ n\u00e4r gr\u00e4nserna g\u00e5r fr\u00e5n $$x=1$$ till $$x=4$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af985e8a1cc0dcareas1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "af985e8a1cc0dcareas1a-h4"
+        ],
+        "title": "Utv\u00e4rdera",
+        "text": "$$16-\\frac{7}{4}=\\frac{57}{4}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

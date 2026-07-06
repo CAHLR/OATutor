@@ -1,0 +1,70 @@
+[
+    {
+        "id": "aba0997real23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Cases",
+        "text": "We want to split up our inequality into two cases, mainly $$\\frac{3}{4} x-5 \\leq 15$$ and $$\\frac{3}{4} x-5 \\geq -15$$. (what did we do with the 1?).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real23a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba0997real23a-h1"
+        ],
+        "title": "Isolating $$x$$",
+        "text": "Consider $$\\frac{3}{4} x-5 \\leq 15$$, add $$5$$ to both sides and divide by $$\\frac{3}{4}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real23a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{80}{3}$$"
+        ],
+        "dependencies": [
+            "aba0997real23a-h2"
+        ],
+        "title": "Value of $$x$$",
+        "text": "What must $$x$$ be less than or equal to?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real23a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aba0997real23a-h3"
+        ],
+        "title": "Isolating $$x$$",
+        "text": "Consider $$\\frac{3}{4} x-5 \\geq -15$$, add $$5$$ to both sides and divide by $$\\frac{3}{4}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aba0997real23a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-40}{3}$$"
+        ],
+        "dependencies": [
+            "aba0997real23a-h4"
+        ],
+        "title": "Value of $$x$$",
+        "text": "What must $$x$$ be greater than or equal to?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

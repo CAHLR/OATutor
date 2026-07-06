@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a9cf10atrig23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Divide",
+        "text": "Divide both sides by cos(x): $$\\frac{1}{\\cos(x)}\\left(\\cos(x)-\\cos**3(x)\\right)=1-\\cos**2(x)$$ and $$\\frac{1}{\\cos(x)}\\left(\\cos(x)\\sin**2(x)\\right)=\\sin**2(x).$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig23a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig23a-h1"
+        ],
+        "title": "Identity",
+        "text": "$$cos^2\\left(x\\right)=1-sin^2\\left(x\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig23a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig23a-h2"
+        ],
+        "title": "Verify",
+        "text": "By the Pythagorean Identity, we know $$cos\\left(x\\right)-cos^3\\left(x\\right)=cos\\left(x\\right) sin^2\\left(x\\right)$$ is true.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

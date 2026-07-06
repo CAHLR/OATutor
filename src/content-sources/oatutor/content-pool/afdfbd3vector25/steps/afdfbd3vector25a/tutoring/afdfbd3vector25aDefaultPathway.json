@@ -1,0 +1,36 @@
+[
+    {
+        "id": "afdfbd3vector25a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula",
+        "text": "v=|v|cos\u03b8i+|v|sin\u03b8j",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afdfbd3vector25a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afdfbd3vector25a-h1"
+        ],
+        "title": "Substitute",
+        "text": "v=1*cos(8\u00b0)i+1*sin(8\u00b0)j",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afdfbd3vector25a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afdfbd3vector25a-h2"
+        ],
+        "title": "Simplify",
+        "text": "1*cos(8\u00b0)\u22480.99, the horizontal component and 1*sin(8\u00b0)\u22480.14, the vertical component",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

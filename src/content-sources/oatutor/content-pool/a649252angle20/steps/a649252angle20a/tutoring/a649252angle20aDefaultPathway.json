@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a649252angle20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Double Angle Formula for sine",
+        "text": "Recall that $$\\sin(2A)$$ $$=$$ $$2\\sin(A)\\cos(A)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle20a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{pi}{4}$$"
+        ],
+        "dependencies": [
+            "a649252angle20a-h1"
+        ],
+        "title": "Identify A",
+        "text": "In the expression $$2\\sin(\\frac{pi}{4})\\cos(\\frac{pi}{4})$$, $$what$$ $$is$$ $$the$$ $$value$$ $$of$$ $$A$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle20a-h1"
+        ],
+        "title": "Apply the formula",
+        "text": "Substitute $$A$$ into the double angle formula.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle20a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{pi}{2}$$"
+        ],
+        "dependencies": [
+            "a649252angle20a-h2"
+        ],
+        "title": "Simplify 2A",
+        "text": "What is $$2$$ $$\\cdot$$ $$\\frac{pi}{4}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle20a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle20a-h2"
+        ],
+        "title": "Evaluate $$\\sin(\\frac{pi}{2})$$",
+        "text": "What is the exact value of $$\\sin(\\frac{pi}{2})$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle20a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a649252angle20a-h3"
+        ],
+        "title": "Unit Circle Value",
+        "text": "What is the y-coordinate for an angle of $$\\frac{pi}{2}$$ on the unit circle?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

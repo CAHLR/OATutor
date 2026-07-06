@@ -1,0 +1,205 @@
+[
+    {
+        "id": "ac726d3location16b-h6",
+        "type": "hint",
+        "dependencies": [
+            "ac726d3location16a-h5"
+        ],
+        "title": "Formula for Finding kth Percentile",
+        "text": "Remember the formula for finding the kth Percentile. We want to know three values: $$k=the$$ kth percentile, usually given to you; $$i=the$$ index (ranking or position of the data value), what we normally want to find; $$n=the$$ total number of data. Then, we can use the formula to calculate $$i=\\frac{k}{100} \\left(n+1\\right)$$. If i is an integer, we use the data at the ith position in the ordered data. If i is not an integer, we then round i down and up to the nearest integers and take the average of these two.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac726d3location16b-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$78$$"
+        ],
+        "dependencies": [
+            "ac726d3location16b-h6"
+        ],
+        "title": "Determining k (Percentile)",
+        "text": "What is the kth percentile we want to determine?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac726d3location16b-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$29$$"
+        ],
+        "dependencies": [
+            "ac726d3location16b-h7"
+        ],
+        "title": "Determining $$n$$ (Total Number of Data)",
+        "text": "What is $$n$$, the total number of data in the set?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac726d3location16b-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$23.4$$"
+        ],
+        "dependencies": [
+            "ac726d3location16b-h8"
+        ],
+        "title": "Determining i (Desired Index)",
+        "text": "Using the Formula for Finding the kth Percentile, what is i?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "ac726d3location16b-h9-s3",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$23.4$$"
+                ],
+                "dependencies": [],
+                "title": "Determining i (Desired Index)",
+                "text": "What is $$\\frac{78}{100} \\left(29+1\\right)$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "ac726d3location16b-h10",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "ac726d3location16b-h9"
+        ],
+        "title": "Determining the position of the data",
+        "text": "Is i an integer?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ac726d3location16b-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$23$$"
+        ],
+        "dependencies": [
+            "ac726d3location16b-h10"
+        ],
+        "title": "Determining the Lower Index",
+        "text": "What is i rounded down to a whole number?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac726d3location16b-h12",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$24$$"
+        ],
+        "dependencies": [
+            "ac726d3location16b-h11"
+        ],
+        "title": "Determining the Upper Index",
+        "text": "What is i rounded up to a whole number?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac726d3location16b-h13",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$69$$"
+        ],
+        "dependencies": [
+            "ac726d3location16b-h12"
+        ],
+        "title": "Determining the Lower Index Data Point",
+        "text": "What is the data value in the 23rd position of the ordered data set?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac726d3location16b-h14",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$71$$"
+        ],
+        "dependencies": [
+            "ac726d3location16b-h13"
+        ],
+        "title": "Determining the Upper Index Data Point",
+        "text": "What is the data value in the 24th position of the ordered data set?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac726d3location16b-h15",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$70$$"
+        ],
+        "dependencies": [
+            "ac726d3location16b-h14"
+        ],
+        "title": "Calculating the 83rd Percentile",
+        "text": "What is the average between the data values at the 23rd and 24th positions? This is the 78th percentile.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "ac726d3location16b-h15-s4",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$70$$"
+                ],
+                "dependencies": [],
+                "title": "Calculating the 83rd Percentile",
+                "text": "What is $$\\frac{69+71}{2}$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    }
+]

@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a4edf7dEquation2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Assumption",
+        "text": "Assume the number of session is $$n$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4edf7dEquation2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4edf7dEquation2a-h1"
+        ],
+        "title": "Translation",
+        "text": "Converting the option A to $$25000+15n$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4edf7dEquation2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4edf7dEquation2a-h1"
+        ],
+        "title": "Translation",
+        "text": "Converting the option B to $$10000+40n$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4edf7dEquation2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4edf7dEquation2a-h2",
+            "a4edf7dEquation2a-h3"
+        ],
+        "title": "Combination",
+        "text": "Set an equation so option A $$=$$ option B, $$25000+15n$$ $$=$$ $$10000+40n$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4edf7dEquation2a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$600$$"
+        ],
+        "dependencies": [
+            "a4edf7dEquation2a-h4"
+        ],
+        "title": "Calculation",
+        "text": "What is the value of $$m$$ when $$25n=15000$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a4861c9explog3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Shared Base",
+        "text": "To solve, rewrite both $$256$$ and $$4$$ in terms of powers of $$2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog3a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a4861c9explog3a-h1"
+        ],
+        "title": "Rewriting $$256$$ in exponents of $$2$$",
+        "text": "What power of $$2$$ corresponds with 256?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a4861c9explog3a-h2"
+        ],
+        "title": "Rewriting $$4$$ in exponents of $$2$$",
+        "text": "What power of $$2$$ corresponds with 4?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4861c9explog3a-h3"
+        ],
+        "title": "Distributing Exponent",
+        "text": "Remember to distribute the exponent of $$2$$ to all terms in the original exponent of $$4$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog3a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a4861c9explog3a-h4"
+        ],
+        "title": "Shared Base",
+        "text": "When two exponents have the same base, their exponents can be equated to solve for variables in the exponent.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog3a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a4861c9explog3a-h5"
+        ],
+        "title": "Solve Equation",
+        "text": "To solve the equation, solve for $$x$$ by isolating the variable on one side of the equation with only constants on the other side of the equal sign.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

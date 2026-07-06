@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a662caelawsin31b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Applying the Law of Sines",
+        "text": "Now that you have side $$b$$, $$you$$ $$can$$ $$use$$ $$the$$ $$Law$$ $$of$$ $$Sines$$ $$to$$ $$find$$ $$angle$$ $$A$$. $$Recall$$: $$\\frac{a}{\\sin$$ $$A$$} $$=$$ $$\\frac{b}{\\sin$$ $$B}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin31b-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$a=5$$, $$b$$ $$\\approx$$ $$3.4$$, \\beta=35**{\\circ}$$"
+        ],
+        "dependencies": [
+            "a662caelawsin31b-h1"
+        ],
+        "title": "Identify known values",
+        "text": "What are the known values for $$a$$, $$b$$, $$\\text{and$$ $$$$} $$\\beta$$? $$( \\cup se$$ $$the$$ $$calculated$$ $$value$$ $$for$$ $$b\\$\\$)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$a=5$$, $$b$$ $$\\approx$$ $$3.4$$, \\beta=35**{\\circ}$$",
+            "$$a=3.4$$, $$b$$ $$\\approx$$ $$5$$, \\beta=35**{\\circ}$$",
+            "$$a=5$$, $$b$$ $$\\approx$$ $$3.4$$, $$\\beta=35$$",
+            "$$a=5$$, $$b$$ $$\\approx$$ 35**{\\circ},$$ $$\\beta=3.4$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin31b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin31b-h1"
+        ],
+        "title": "Setting up the equation",
+        "text": "Substitute the known values into the Law of Sines to find $$\\sin$$ $$A$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin31b-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.8331$$"
+        ],
+        "dependencies": [
+            "a662caelawsin31b-h2"
+        ],
+        "title": "Calculate $$\\sin$$ $$A$$",
+        "text": "Using the Law of Sines, what is the value of $$\\sin$$ $$A$$? $$Round$$ $$to$$ $$four$$ $$decimal$$ $$places$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin31b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin31b-h2"
+        ],
+        "title": "Solving for A",
+        "text": "Use the inverse sine function to find angle $$A$$. $$Since$$ $$A$$ is opposite the largest side among $$a, b$$, $$it$$ $$should$$ $$be$$ $$acute$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin31b-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "56.4**{\\circ}"
+        ],
+        "dependencies": [
+            "a662caelawsin31b-h3"
+        ],
+        "title": "Calculate A",
+        "text": "What is the value of angle $$A$$ (in degrees), rounded to the nearest tenth?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

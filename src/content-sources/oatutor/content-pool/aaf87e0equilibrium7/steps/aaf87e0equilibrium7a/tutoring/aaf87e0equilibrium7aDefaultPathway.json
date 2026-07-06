@@ -1,0 +1,82 @@
+[
+    {
+        "id": "aaf87e0equilibrium7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the weight needed to stretch the wire, we need to use the formula for Young's modulus, which relates stress and strain in a material.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aaf87e0equilibrium7a-h1"
+        ],
+        "title": "Young's Modulus Formula",
+        "text": "The formula for Young's modulus (Y) is given by: $$Y=\\frac{\\frac{F}{A}}{\\frac{\\Delta L}{L}}$$, where F is the force applied, A is the cross-sectional area, \u0394L is the change in length, and L is the original length.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aaf87e0equilibrium7a-h2"
+        ],
+        "title": "Calculate the Cross-Sectional Area",
+        "text": "The cross-sectional area (A) of the wire can be calculated using the formula for the area of a circle: $$A=\\pi \\left(\\frac{d}{2}\\right)^2$$, where $$d$$ is the diameter of the wire.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium7a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7.85\\times{10}^{-7}$$"
+        ],
+        "dependencies": [
+            "aaf87e0equilibrium7a-h3"
+        ],
+        "title": "Calculate the Cross-Sectional Area",
+        "text": "Given the diameter of the wire is $$1.0$$ mm, calculate the cross-sectional area.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium7a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aaf87e0equilibrium7a-h4"
+        ],
+        "title": "Rearrange the Young's Modulus Formula",
+        "text": "Rearrange the formula to solve for the force (F): $$F=\\frac{Y A \\Delta L}{L}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium7a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$259$$"
+        ],
+        "dependencies": [
+            "aaf87e0equilibrium7a-h5"
+        ],
+        "title": "Calculate the Force",
+        "text": "Using the rearranged formula $$F=\\frac{Y A \\Delta L}{L}$$, calculate the force needed to stretch the wire by $$3.0$$ mm.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,76 @@
+[
+    {
+        "id": "a9ef311slicing4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Representative Disk",
+        "text": "The following figure shows the function and a representative disk that can be used to estimate the volume. Notice that since we are revolving the function around the y-axis, the disks are horizontal, rather than vertical.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a9ef311slicing4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9ef311slicing4a-h1"
+        ],
+        "title": "Region and Full Solid of Revolution",
+        "text": "The region to be followed and the full solid of revolution are depicted in the following figure.\\n##figure2.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a9ef311slicing4a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$V=\\int_{0}^{4} \\pi {\\sqrt{4-y}}^2 \\,dy$$"
+        ],
+        "dependencies": [
+            "a9ef311slicing4a-h2"
+        ],
+        "title": "Set Up the Integral",
+        "text": "Select the appropriate integral for finding the volume of the solid.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$V=\\int_{0}^{4} \\pi {\\sqrt{4-y}}^2 \\,dy$$",
+            "$$V=\\int_{4}^{0} \\pi {\\sqrt{4-y}}^2 \\,dy$$",
+            "$$V=\\int_{0}^{4} \\sqrt{4-y} \\,dy$$",
+            "$$V=\\int_{4}^{0} \\sqrt{4-y} \\,dy$$"
+        ]
+    },
+    {
+        "id": "a9ef311slicing4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9ef311slicing4a-h3"
+        ],
+        "title": "Integrate the Formula",
+        "text": "Find the volume of the solid using the disk method. The volume of the solid of revolution formed by revolving R around the y-axis using the disk method is given by $$V=\\int_{a}^{b} \\pi {f{\\left(y\\right)}}^2 \\,dy$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a9ef311slicing4a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "8*pi"
+        ],
+        "dependencies": [
+            "a9ef311slicing4a-h4"
+        ],
+        "title": "Integrate the Formula",
+        "text": "What is the volume of the solid of revolution?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]
