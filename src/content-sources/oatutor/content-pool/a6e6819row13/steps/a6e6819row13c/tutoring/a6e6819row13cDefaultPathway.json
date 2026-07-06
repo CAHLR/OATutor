@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a6e6819row13c-h9",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Read the Escaped Period",
+        "text": "In regex, \\. means a literal period. It does not mean any character.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row13c-h10",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a6e6819row13c-h9"
+        ],
+        "title": "Check for a Literal Period",
+        "text": "Does $$review_3$$ contain a literal period character?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a6e6819row13c-h11",
+        "type": "hint",
+        "dependencies": [
+            "a6e6819row13c-h10"
+        ],
+        "title": "No Period Means No Match",
+        "text": "The pattern r\".*\\.\" looks for text ending at a literal period. Since $$review_3$$ has no period, re.findall returns an empty list.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

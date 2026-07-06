@@ -1,0 +1,83 @@
+[
+    {
+        "id": "a9990efrow2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "Look at the 'renovated' column. It contains the years when rooms were last renovated. Some entries might be 'None', indicating no renovation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9990efrow2a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choosing the Right Visualization",
+        "text": "Consider what kind of data you have: categorical or numerical. The 'renovated' column is numerical, representing years.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9990efrow2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Numerical"
+        ],
+        "dependencies": [],
+        "title": "Identifying the Data Type",
+        "text": "What type of data is in the 'renovated' column?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Numerical",
+            "Categorical"
+        ]
+    },
+    {
+        "id": "a9990efrow2a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Line plot"
+        ],
+        "dependencies": [
+            "a9990efrow2a-h3"
+        ],
+        "title": "Selecting a Visualization Type",
+        "text": "Which type of plot is suitable for showing trends over time?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Line plot",
+            "Bar chart",
+            "Pie chart"
+        ]
+    },
+    {
+        "id": "a9990efrow2a-h5",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Line Plots",
+        "text": "Line plots are useful for showing changes over time. They can help visualize trends in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9990efrow2a-h6",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Considering Overplotting",
+        "text": "Since the x-axis represents years, and there are no issues with overplotting, a line plot is appropriate.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

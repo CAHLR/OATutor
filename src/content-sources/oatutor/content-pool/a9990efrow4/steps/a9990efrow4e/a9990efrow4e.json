@@ -1,0 +1,19 @@
+{
+    "id": "a9990efrow4e",
+    "stepAnswer": [
+        "merge(expected_prices, $$on=\"chain\")$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Fill in blank (ii):",
+    "stepBody": "Fill in the blanks to create a DataFrame with one row per chain and a column $$avg_{price,per,nugget}$$, showing the average price of a single nugget at each chain, irrespective of shape.\\nHint: The average price per nugget for a given chain is the product of the average weight per nugget in that chain and the price per ounce of nuggets from $$expected_{prices}$$.\\n##figure5.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "merge(expected_prices, $$on=\"chain\")$$",
+    "choices": [
+        "merge(expected_prices, $$on=\"chain\")$$",
+        "join(expected_prices, $$on=\"chain\")$$",
+        "merge(expected_prices, $$on=\"weight\")$$",
+        "merge(expected_prices, $$left_{on}=\"chain\"$$, right_on=\"price_per_ounce\")",
+        "concat(expected_prices, $$on=\"chain\")$$"
+    ]
+}

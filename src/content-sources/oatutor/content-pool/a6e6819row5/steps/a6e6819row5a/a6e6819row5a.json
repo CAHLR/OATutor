@@ -1,0 +1,12 @@
+{
+    "id": "a6e6819row5a",
+    "stepAnswer": [
+        "159; ;; 555-100-5555; ;; [ ;; No Match ;; No Match ;; No Match"
+    ],
+    "problemType": "TextBox",
+    "stepTitle": "List matches in the order returned by re.findall(pattern, metadata), with the first match next to Match $$1$$. (For any unmatched slots, write No Match.)",
+    "stepBody": "Sabrina found metadata in each staff introduction to process as strings. Suppose Sabrina has already created a pattern and runs the code below. The character \"_\" represents a single space, and you may use it in your response.\\nmetadata $$=$$ \"Name: Oski; Age: 159; Courses taken: Data8, Data100, CS61A, Stat134, Data88s; Phone Number: $$555-100-5555;$$ Likes: [Bears, Strawberries, Data Science]\"\\npattern $$=$$ r\"\\w+:\\s([**A-Za-z\\s]+)\"\\nre.findall(pattern, metadata)\\nNote: You may have less than $$6$$ total matches. For any unmatched slots, write No Match instead.",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "159; ;; $$555-100-5555;$$ ;; [ ;; No Match ;; No Match ;; No Match"
+}

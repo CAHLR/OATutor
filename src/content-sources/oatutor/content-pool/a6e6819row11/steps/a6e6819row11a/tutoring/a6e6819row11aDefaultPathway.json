@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a6e6819row11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use the Desired Output",
+        "text": "The output strings should be the full soda substrings: \"Coke\", \"Coke\", and \"Coca-Cola\". A valid pattern should return those complete strings, not only pieces like \"ke\" or \"ca-Cola\".",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row11a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "\"ke\""
+        ],
+        "dependencies": [
+            "a6e6819row11a-h1"
+        ],
+        "title": "Capturing Group Output",
+        "text": "What text is captured by the group $$(ke|ca-Cola)$$ when matching \"Coke\"?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "\"ke\"",
+            "\"Coke\"",
+            "\"Co\"",
+            "$$\"Coca-Cola\"$$"
+        ]
+    },
+    {
+        "id": "a6e6819row11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6e6819row11a-h2"
+        ],
+        "title": "Check Option B",
+        "text": "The pattern r\"Co\\w{2}\\-?\\w*\" matches Co, then two word characters, then an optional dash, then more optional word characters. In the example string, this matches both \"Coke\" and \"Coca-Cola\".",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6e6819row11a-h3"
+        ],
+        "title": "Check Option C",
+        "text": "The pattern r\"Coke|Coca-Cola\" uses alternation to explicitly match either desired substring. Since there is no capturing group, re.findall returns the full matched strings.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row11a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a6e6819row11a-h4"
+        ],
+        "title": "Eliminate Partial Matches",
+        "text": "Option A uses a character class, so after Co it matches only one character from inside the brackets. Option D uses a capturing group, so re.findall would return only what is inside the parentheses, such as \"ke\" or \"ca-Cola\".",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

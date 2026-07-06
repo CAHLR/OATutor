@@ -1,0 +1,12 @@
+{
+    "id": "a6e6819row7b",
+    "stepAnswer": [
+        "cat_responses.str.replace(pat, \"dog\", regex=True)"
+    ],
+    "problemType": "TextBox",
+    "stepTitle": "Write a line of pandas code that replaces any word that matches pat with \"dog\".",
+    "stepBody": "Assume the correct answer to the previous question is stored in a raw string pat, and $$cat_{responses}$$ is a Series of string objects. Write a line of pandas code that replaces any word that matches pat with \"dog\".",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "cat_responses.str.replace(pat, \"dog\", $$regex=True)$$"
+}

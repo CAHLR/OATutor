@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a9990efrow2f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding KDE Bandwidth",
+        "text": "The bandwidth in a KDE plot controls the smoothness of the estimated distribution. A small bandwidth can lead to overfitting, making the plot look like a normal distribution even if the data is multimodal.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9990efrow2f-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Bandwidth on KDE",
+        "text": "If the bandwidth is too small, the KDE plot may not capture the true shape of the distribution, especially if the data is multimodal. Consider adjusting the bandwidth to see if the plot changes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9990efrow2f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The plot may look like a normal distribution even if the data is multimodal."
+        ],
+        "dependencies": [],
+        "title": "Identifying the Problem",
+        "text": "What happens to the KDE plot when the bandwidth is too small?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The plot may look like a normal distribution even if the data is multimodal.",
+            "The plot will show all modes clearly.",
+            "The plot will be too smooth."
+        ]
+    },
+    {
+        "id": "a9990efrow2f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase the bandwidth."
+        ],
+        "dependencies": [
+            "a9990efrow2f-h3"
+        ],
+        "title": "Adjusting Bandwidth",
+        "text": "What should Josh do to see the true distribution of room capacities?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase the bandwidth.",
+            "Decrease the bandwidth.",
+            "Keep the bandwidth the same."
+        ]
+    }
+]

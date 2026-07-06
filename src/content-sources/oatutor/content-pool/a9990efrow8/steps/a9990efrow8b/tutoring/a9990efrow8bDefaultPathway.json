@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a9990efrow8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Visualizations",
+        "text": "Consider what types of visualizations are typically used to represent numerical data like price.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9990efrow8b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9990efrow8b-h1"
+        ],
+        "title": "Common Visualizations for Numerical Data",
+        "text": "Think about histograms, box plots, and scatter plots. Which of these are suitable for visualizing a single numerical variable like price?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9990efrow8b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Histogram Explanation",
+        "text": "A histogram is a type of bar chart that represents the distribution of numerical data. Is this suitable for visualizing the price?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "False",
+            "TRUE",
+            "True"
+        ]
+    },
+    {
+        "id": "a9990efrow8b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a9990efrow8b-h3"
+        ],
+        "title": "Box Plot Explanation",
+        "text": "A box plot shows the distribution of data based on a five-number summary. Can this be used to visualize the price?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "False",
+            "TRUE",
+            "True"
+        ]
+    }
+]

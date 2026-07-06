@@ -1,0 +1,88 @@
+[
+    {
+        "id": "a741d6crow10_p1k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Probability Sampling",
+        "text": "Probability sampling involves selecting a sample in such a way that each member of the population has a known, non-zero chance of being selected. Can you identify how this applies to Zekai's proposal?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a741d6crow10_p1k-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Random Selection in Groups",
+        "text": "Consider how Zekai's method involves random selection within groups of students. How does this contribute to the probability sampling method?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a741d6crow10_p1k-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Identifying the Sampling Method",
+        "text": "Zekai's method involves selecting one student randomly from each group of seven. What type of sampling method does this represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "False",
+            "TRUE",
+            "True"
+        ]
+    },
+    {
+        "id": "a741d6crow10_p1k-h4",
+        "type": "hint",
+        "dependencies": [
+            "a741d6crow10_p1k-h3"
+        ],
+        "title": "Characteristics of Probability Sampling",
+        "text": "Probability sampling ensures that every individual has a chance of being selected. How does Zekai's method ensure this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a741d6crow10_p1k-h5",
+        "type": "hint",
+        "dependencies": [
+            "a741d6crow10_p1k-h3"
+        ],
+        "title": "Randomness in Sampling",
+        "text": "Why is randomness important in Zekai's sampling method? Consider how it affects the representativeness of the sample.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a741d6crow10_p1k-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a741d6crow10_p1k-h3"
+        ],
+        "title": "Evaluating the Sampling Process",
+        "text": "Does Zekai's method ensure that each student has an equal chance of being selected?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "False",
+            "TRUE",
+            "True"
+        ]
+    }
+]

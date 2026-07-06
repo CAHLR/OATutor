@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a6e6819row12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use the Desired Output",
+        "text": "The output should contain one full field at a time, such as $$species=tyrannosaurusrex$$, $$name=Rexy$$, and $$id=5884nngh$$. The commas are separators and should not be included in the captured output.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row12a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$species=tyrannosaurusrex$$"
+        ],
+        "dependencies": [
+            "a6e6819row12a-h1"
+        ],
+        "title": "First Field to Capture",
+        "text": "From $$rex_{string}$$, what should the first captured field be?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$species=tyrannosaurusrex$$",
+            "species",
+            "tyrannosaurusrex",
+            "$$, name=Rexy$$"
+        ]
+    },
+    {
+        "id": "a6e6819row12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6e6819row12a-h2"
+        ],
+        "title": "Allow an Optional Comma Separator",
+        "text": "After the first field, each new field starts right after a comma. The comma should be matched so the regex can move between fields, but it should stay outside the capturing group so it is not returned.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row12a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6e6819row12a-h3"
+        ],
+        "title": "Avoid Greedy or Overly Broad Matches",
+        "text": "A pattern like .* or \\S+ can capture too much because it can keep going through commas. The correct pattern should stop each match after one field-value pair.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row12a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a6e6819row12a-h4"
+        ],
+        "title": "Avoid the Character-Class Trap",
+        "text": "In [species|name|id], the brackets create a character class, not a choice between the words species, name, and id. That means it matches one character from the set, not the full field names.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

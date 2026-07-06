@@ -1,0 +1,56 @@
+[
+    {
+        "id": "abca051row4f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Calculation",
+        "text": "To find the average price per nugget, you need to multiply the average weight of a nugget by the price per ounce for each chain.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abca051row4f-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using the Merged DataFrame",
+        "text": "The merged DataFrame contains both the average weight and the price per ounce for each chain. Use these columns to calculate the average price per nugget.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abca051row4f-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$merged[\"average_weight\"]$$ and $$merged[\"price_per_ounce\"]$$"
+        ],
+        "dependencies": [
+            "abca051row4f-h1"
+        ],
+        "title": "Identify the Columns",
+        "text": "Which columns in the merged DataFrame should you use to calculate the average price per nugget?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abca051row4f-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$merged[\"average_weight\"]*merged[\"price_per_ounce\"] merged[\"average_weight\"]*merged[\"price_per_ounce\"]$$"
+        ],
+        "dependencies": [
+            "abca051row4f-h3"
+        ],
+        "title": "Perform the Calculation",
+        "text": "How do you calculate the average price per nugget using the identified columns?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

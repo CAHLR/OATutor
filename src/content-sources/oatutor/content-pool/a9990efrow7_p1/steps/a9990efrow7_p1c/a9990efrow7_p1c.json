@@ -1,0 +1,18 @@
+{
+    "id": "a9990efrow7_p1c",
+    "stepAnswer": [
+        "isna"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Fill in blank C:",
+    "stepBody": "Claire wants to impute the missing entries of $$hour_{of,visit}$$ with the mode of its same activity category. For example, if any row with activity \"grade\" has a missing value for $$hour_{of,visit}$$, the missing values should be replaced by the mode of $$hour_{of,visit}$$ for \"grade\" activities. Fill in the blanks to accomplish this.##figure5.gif## ##figure6.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "isna",
+        "notna",
+        "isnull",
+        "fillna",
+        "dropna"
+    ]
+}

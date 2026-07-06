@@ -1,0 +1,11 @@
+{
+    "id": "a6e6819row2",
+    "title": "Making room for pandas",
+    "body": "Josh samples information about various rooms in different buildings around Berkeley in preparation for the upcoming semester. He stores the information in a DataFrame called rooms. The columns of rooms are described below:\\n- id: A unique room id from Berkeley's internal database (type $$=$$ np.int64).\\n- building: Name of the building the room is in (type $$=$$ str).\\n- number: The room number listed on the door to the room (type $$=$$ str).\\n- college: The Berkeley college each building is associated with from the select options of: 'CoE', 'CDSS', 'CNR', and 'LNS' (type $$=$$ str).\\n- renovated: The year the room was last renovated (type $$=$$ str). Note: Certain rooms may never have been renovated, in which case renovated will contain a value of None.\\n\\nThe first five rows of rooms are shown below:\\nid | building | number | college | renovated\\n$$100100$$ | Evans | $$0060$$ | LNS | $$2014$$\\n$$102101$$ | Evans | $$0010$$ | LNS | None\\n$$140144$$ | Soda | $$320$$ | CDSS | $$2021$$\\n$$310523$$ | Gateway | $$101$$ | CDSS | $$2025$$\\n$$668377$$ | Cory | 540AB | CoE | $$2002$$",
+    "variabilization": {},
+    "oer": "https://ds100.org/su26/assets/exams/fa25/fa25_mt1_sol.pdf",
+    "license": "",
+    "lesson": "Regex",
+    "lessonId": "46kTNuXX-rGEg-0UV75xqETK",
+    "courseName": "Data 100 Worksheets"
+}

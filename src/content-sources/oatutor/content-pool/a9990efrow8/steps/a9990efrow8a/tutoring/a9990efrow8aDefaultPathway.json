@@ -1,0 +1,62 @@
+[
+    {
+        "id": "a9990efrow8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Visualizations",
+        "text": "Consider what types of charts are typically used to represent numerical data like price.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9990efrow8a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Types of Charts",
+        "text": "Think about charts that can display a single numerical variable effectively.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9990efrow8a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Bar Chart Explanation",
+        "text": "A bar chart is useful for comparing different categories. Can it be used for displaying prices of different drinks?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "False",
+            "TRUE",
+            "True"
+        ]
+    },
+    {
+        "id": "a9990efrow8a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [],
+        "title": "Line Chart Explanation",
+        "text": "A line chart is typically used to show trends over time. Is it suitable for displaying prices of different drinks?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "False",
+            "True"
+        ]
+    }
+]

@@ -1,0 +1,53 @@
+[
+    {
+        "id": "abca051S25FQ1Ba-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "Look at the 'renovated' column in the DataFrame. Some entries are 'None', which means those rooms have never been renovated.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abca051S25FQ1Ba-h2",
+        "type": "hint",
+        "dependencies": [
+            "abca051S25FQ1Ba-h1"
+        ],
+        "title": "Filtering Non-Renovated Rooms",
+        "text": "To focus on rooms with renovation data, you need to remove rows where 'renovated' is 'None'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abca051S25FQ1Ba-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "rooms[~rooms['renovated'].isna()]"
+        ],
+        "dependencies": [
+            "abca051S25FQ1Ba-h2"
+        ],
+        "title": "Removing Non-Renovated Rooms",
+        "text": "Use the DataFrame method to filter out rows where 'renovated' is 'None'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abca051S25FQ1Ba-h4",
+        "type": "hint",
+        "dependencies": [
+            "abca051S25FQ1Ba-h2"
+        ],
+        "title": "Using the isna() Method",
+        "text": "The 'isna()' method helps identify 'None' values in a DataFrame. Use it to filter out unwanted rows.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

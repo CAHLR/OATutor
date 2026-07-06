@@ -1,0 +1,19 @@
+{
+    "id": "abca051row4f",
+    "stepAnswer": [
+        "$$merged[\"average_weight\"]$$ * $$merged[\"price_per_ounce\"]$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Fill in blank (iii)",
+    "stepBody": "Fill in the blanks to output the chain that sold the most nuggets with weight less than $$0.6$$ ounces. Your output should be a String. There is exactly one chain with the highest count.##figure8.gif## ##figure9.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "$$merged[\"average_weight\"]$$ * $$merged[\"price_per_ounce\"]$$",
+    "choices": [
+        "$$merged[\"average_weight\"]$$ + $$merged[\"price_per_ounce\"]$$",
+        "merged[\"weight\"] * $$merged[\"price_per_ounce\"]$$",
+        "$$merged[\"average_weight\"]$$ / $$merged[\"price_per_ounce\"]$$",
+        "$$merged[\"average_weight\"]$$ * $$merged[\"price_per_ounce\"]$$",
+        "$$merged[\"price_per_ounce\"]$$ / $$merged[\"average_weight\"]$$"
+    ]
+}

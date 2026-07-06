@@ -1,0 +1,62 @@
+[
+    {
+        "id": "a741d6crow6e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Response Bias",
+        "text": "Consider how offering extra credit might influence the type of students who choose to participate in the survey.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a741d6crow6e-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sample Representation",
+        "text": "Think about whether the students who respond to the survey are representative of the entire UC Berkeley student population.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a741d6crow6e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Incentive Influence",
+        "text": "How might offering 5% midterm extra credit affect the responses?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "False",
+            "TRUE",
+            "True"
+        ]
+    },
+    {
+        "id": "a741d6crow6e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Survey Distribution Method",
+        "text": "Does distributing the survey through Data $$100$$ EdStem ensure a diverse sample of students?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "False",
+            "TRUE",
+            "True"
+        ]
+    }
+]

@@ -1,0 +1,11 @@
+{
+    "id": "a6e6819row4a",
+    "stepAnswer": [
+        "\\d+\\s([A-Za-z\\s]+)"
+    ],
+    "problemType": "TextBox",
+    "stepTitle": "Fill in the blank with the appropriate RegEx pattern:",
+    "stepBody": "Fill in the blank to extract the street name from each location in the nuggets DataFrame. Store the resulting values in a new column called street.\\nnuggets[\"street\"] $$=$$ $$nuggets[\"location\"].str.extract(r\"___\")$$\\nNote 1: Each location is formatted as: \"StreetNumber StreetName, 5DigitZIPCode\". The character \"_\" represents a single space, and you may use it in your response.\\nNote 2: StreetNumber contains only digits (i.e., no letters, $$_{}$$, punctuation, or special characters). StreetNumber can start with any digit, including $$0$$. There will always be at least one digit in every StreetNumber.\\nNote 3: StreetName only contains uppercase and lowercase letters in the English alphabet and $$_{}$$ (i.e., no numbers, punctuation, or special characters). There will always be at least one letter in every StreetName.\\nExample:\\n- location: \"123 San Pablo Ave, 94702\"\\n- street: \"San Pablo Ave\"",
+    "answerType": "string",
+    "variabilization": {}
+}

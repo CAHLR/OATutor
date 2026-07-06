@@ -1,0 +1,28 @@
+{
+    "id": "a6e6819row10_part2a",
+    "stepAnswer": [
+        "A and D: r\"Homework\\s\\d+|Lab\\s\\d+|Project\\s\\d+\" and r\"\\w+\\s\\d+\""
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Choosing Regex Patterns for Assignments",
+    "stepBody": "The professors want to analyze feedback on particular assignments (projects, labs, and homeworks) and create a RegEx pattern called $$assignment_{pattern}$$. Given the example output below, which RegEx patterns could be $$assignment_{pattern}$$? Select all that apply.##figure1.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "A and D: r\"Homework\\s\\d+",
+        "A and D: r\"Homework\\s\\d+|Lab\\s\\d+|Project\\s\\d+\" and r\"\\w+\\s\\d+\"",
+        "A only: r\"Homework\\s\\d+",
+        "B only: r\"[Homework",
+        "C only: r\"Homework",
+        "D only: r\"\\w+\\s\\d+\"",
+        "Lab",
+        "Lab",
+        "Lab\\s\\d+",
+        "Lab\\s\\d+",
+        "None of these",
+        "Project\\s\\d+\"",
+        "Project\\s\\d+\"",
+        "Project\\s\\d+\" and r\"\\w+\\s\\d+\"",
+        "Project]\\s\\d+\""
+    ]
+}

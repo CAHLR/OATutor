@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a6e6819row5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Pattern",
+        "text": "The pattern `\\w+:\\s([**A-Za-z\\s]+)` is designed to match sequences in the format of 'word: space non-alphabetic characters'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6e6819row5a-h1"
+        ],
+        "title": "Breaking Down the Pattern",
+        "text": "- `\\w+` matches one or more word characters (letters, digits, or underscores).\\n- `:` matches the colon character.\\n- `\\s` matches a single space.\\n- `([**A-Za-z\\s]+)` captures one or more characters that are not letters or spaces.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6e6819row5a-h2"
+        ],
+        "title": "Analyzing the Metadata",
+        "text": "Look at the metadata string and identify parts that match the pattern. Focus on sections after a colon followed by a space, containing non-alphabetic characters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "159; ;; $$555-100-5555;$$ ;; [ ;; No Match ;; No Match ;; No Match"
+        ],
+        "dependencies": [
+            "a6e6819row5a-h3"
+        ],
+        "title": "Identifying Matches",
+        "text": "List the matches found by the pattern in the order they appear in the metadata string.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

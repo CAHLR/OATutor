@@ -1,0 +1,83 @@
+[
+    {
+        "id": "a6e6819row10_part2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Match the Full Assignment Name",
+        "text": "Each returned match should include both the assignment type and the assignment number. For example, the match should be Project $$1$$, not just Project or $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row10_part2a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Lab $$2$$"
+        ],
+        "dependencies": [
+            "a6e6819row10_part2a-h1"
+        ],
+        "title": "Output for One Assignment",
+        "text": "Looking only at the substring Lab $$2$$, what should one correct match return?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Lab $$2$$",
+            "Lab",
+            "$$2$$",
+            "Lab\\s2"
+        ]
+    },
+    {
+        "id": "a6e6819row10_part2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6e6819row10_part2a-h2"
+        ],
+        "title": "Check Option A",
+        "text": "Option A lists the three allowed assignment words separately. Each alternative is followed by \\s\\d+, so it matches an assignment word, a space, and one or more digits.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row10_part2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6e6819row10_part2a-h3"
+        ],
+        "title": "Avoid the Character-Class Mistake",
+        "text": "In Option B, [Homework|Lab|Project] is a character class. It does not mean one of the words Homework, Lab, or Project; it matches only one character from inside the brackets.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row10_part2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a6e6819row10_part2a-h4"
+        ],
+        "title": "Check the Alternation in Option C",
+        "text": "Because | has low precedence, Option C acts like Homework or Lab or Project followed by a space and digits. That would not return all three full strings in the desired output.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row10_part2a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a6e6819row10_part2a-h5"
+        ],
+        "title": "Use the General Pattern in Option D",
+        "text": "Option D uses \\w+\\s\\d+, which matches one or more word characters, then a space, then one or more digits. With the problem's assumption that the examples cover all edge cases, this matches Project $$1$$, Lab $$2$$, and Homework $$3$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,79 @@
+[
+    {
+        "id": "a6e6819row7f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Pattern",
+        "text": "The pattern \\D*:\\w+(,\\w+)+ is designed to match strings that start with non-digit characters, followed by a colon, and then a sequence of words separated by commas.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row7f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6e6819row7f-h1"
+        ],
+        "title": "Analyzing the Match All Cases",
+        "text": "Let's break down the 'Match all of these below' cases:\\n$$1$$. \"total cats petted: 60,102,305\"\\n$$2$$. \"my cats' names are: amy,baron,carol\"\\n$$3$$. \"the current time is 20:59\"\\n\\nConsider whether the pattern \\D*:\\w+(,\\w+)+ can match all these cases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row7f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6e6819row7f-h2"
+        ],
+        "title": "Analyzing the Pattern",
+        "text": "The pattern \\D*:\\w+(,\\w+)+ expects a sequence of words separated by commas after a colon. It does not account for numbers or other characters like colons within the sequence.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row7f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a6e6819row7f-h3"
+        ],
+        "title": "Evaluating the Pattern",
+        "text": "Does the pattern \\D*:\\w+(,\\w+)+ match the string \"total cats petted: 60,102,305\"?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a6e6819row7f-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a6e6819row7f-h4"
+        ],
+        "title": "Conclusion",
+        "text": "Based on your analysis, does the pattern \\D*:\\w+(,\\w+)+ fully match all cases listed in the 'Match all of these below' column?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "False",
+            "True"
+        ]
+    }
+]

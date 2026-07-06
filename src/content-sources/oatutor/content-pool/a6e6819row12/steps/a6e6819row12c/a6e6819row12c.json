@@ -1,0 +1,17 @@
+{
+    "id": "a6e6819row12c",
+    "stepAnswer": [
+        "r'awful\\s\\w{5}\\s[a-z]*'"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Capturing a Repeated Word Substring",
+    "stepBody": "A dangerous incident occurred at the park, leading to some negative reviews. Mir is tasked with a particularly negative review called $$review_2$$, which is given below: $$review_2$$ $$=$$ \"Truly awful awful awful. All the dinosaurs escaped their enclosures.\" Which pattern would correctly capture the substring \"awful awful awful\" in $$review_2$$?",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "r'(awful\\s){3}'",
+        "r'awful\\s\\w{5}\\s[a-z]*'",
+        "r'\\w{5}\\s[a-z]+\\sawful'",
+        "r'Truly\\s([awful]{3})'"
+    ]
+}

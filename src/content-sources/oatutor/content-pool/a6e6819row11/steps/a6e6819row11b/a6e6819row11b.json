@@ -1,0 +1,20 @@
+{
+    "id": "a6e6819row11b",
+    "stepAnswer": [
+        "A and D: $$sns.countplot(data=staff_{poll}$$, $$x=\"flavor\")$$ and plt.bar(fav_flavors.index, fav_flavors.values)"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Visualizing $$value_{counts}$$ Results",
+    "stepBody": "The professors want to know which type of soda was most popular amongst all staff members, so they create a Series called $$fav_{flavors}$$ using the following line of code: $$fav_{flavors}$$ $$=$$ staff_poll[\"flavor\"].value_counts() Assume that the seaborn library is imported as sns and the matplotlib pyplot library is imported as plt. Which option contains exactly all lines of code that will visualize the data stored in $$fav_{flavors}$$?",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "A and D: $$sns.countplot(data=staff_{poll}$$, $$x=\"flavor\")$$ and plt.bar(fav_flavors.index, fav_flavors.values)",
+    "choices": [
+        "A and D: $$sns.countplot(data=staff_{poll}$$, $$x=\"flavor\")$$ and plt.bar(fav_flavors.index, fav_flavors.values)",
+        "D only: plt.bar(fav_flavors.index, fav_flavors.values)",
+        "A only: $$sns.countplot(data=staff_{poll}$$, $$x=\"flavor\")$$",
+        "B and C: plt.hist(fav_flavors) and sns.boxplot(x=fav_flavors.values)",
+        "All of these",
+        "None of these"
+    ]
+}

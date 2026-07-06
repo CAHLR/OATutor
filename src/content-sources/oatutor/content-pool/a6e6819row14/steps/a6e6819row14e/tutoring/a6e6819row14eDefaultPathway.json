@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a6e6819row14e-h16",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Match the Hashtag Word",
+        "text": "The # matches a literal hashtag, and \\w+ matches the word characters after it. Together, #\\w+ matches #famous.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row14e-h17",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "one or more spaces"
+        ],
+        "dependencies": [
+            "a6e6819row14e-h16"
+        ],
+        "title": "Effect of \\s+",
+        "text": "What does the \\s+ at the end require?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "one or more spaces",
+            "one or more digits",
+            "the end of the string",
+            "a literal s"
+        ]
+    },
+    {
+        "id": "a6e6819row14e-h18",
+        "type": "hint",
+        "dependencies": [
+            "a6e6819row14e-h17"
+        ],
+        "title": "Include the Trailing Space",
+        "text": "Because the pattern ends with \\s+, the returned match includes the space after #famous. That is why the output is '#famous ', not '#famous'.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a9990efrow2h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding KDE Plot",
+        "text": "A KDE plot is used to estimate the probability density function of a random variable. It can help visualize the distribution of data points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9990efrow2h-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Kernel Choice in KDE",
+        "text": "The choice of kernel in a KDE plot affects the smoothness and shape of the estimated distribution. Different kernels can highlight different features of the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9990efrow2h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A normal kernel might smooth out the data too much, making distinct peaks less visible."
+        ],
+        "dependencies": [],
+        "title": "Identifying the Issue",
+        "text": "Why might a normal kernel not be suitable for visualizing multimodal data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A normal kernel might smooth out the data too much, making distinct peaks less visible.",
+            "A normal kernel is always the best choice for any data.",
+            "A normal kernel highlights multimodal features effectively."
+        ]
+    },
+    {
+        "id": "a9990efrow2h-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Epanechnikov, Tophat, or Gaussian kernels can be used to better visualize multimodal data."
+        ],
+        "dependencies": [
+            "a9990efrow2h-h3"
+        ],
+        "title": "Exploring Kernel Options",
+        "text": "What are some alternative kernels that could be used to better visualize multimodal data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Epanechnikov, Tophat, or Gaussian kernels can be used to better visualize multimodal data.",
+            "Only the normal kernel can be used.",
+            "Any kernel will produce the same result."
+        ]
+    }
+]

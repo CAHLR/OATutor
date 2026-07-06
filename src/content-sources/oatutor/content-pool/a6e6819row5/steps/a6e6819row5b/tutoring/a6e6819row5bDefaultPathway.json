@@ -1,0 +1,100 @@
+[
+    {
+        "id": "a6e6819row5b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Pattern",
+        "text": "To extract the course IDs, we need to identify the pattern that follows the word 'Data'. The IDs can be either three digits or $$\\frac{one}{two}$$ digits followed by a letter from the set ['c', 's', 'x'].",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row5b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6e6819row5b-h1"
+        ],
+        "title": "Three-Digit Course IDs",
+        "text": "The first part of the pattern should match course IDs that consist of exactly three digits. How can you represent three digits in RegEx?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row5b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "\\d{3}"
+        ],
+        "dependencies": [
+            "a6e6819row5b-h2"
+        ],
+        "title": "Three-Digit Pattern",
+        "text": "Write the RegEx pattern to match exactly three digits.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row5b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6e6819row5b-h1"
+        ],
+        "title": "One or Two Digits with Optional Letter",
+        "text": "The second part of the pattern should match course IDs that consist of one or two digits, optionally followed by a letter from the set ['c', 's', 'x']. How can you represent this in RegEx?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row5b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "\\d{1,2}[csx]?"
+        ],
+        "dependencies": [
+            "a6e6819row5b-h4"
+        ],
+        "title": "One or Two Digits with Optional Letter Pattern",
+        "text": "Write the RegEx pattern to match one or two digits, optionally followed by a letter from the set ['c', 's', 'x'].",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row5b-h6",
+        "type": "hint",
+        "dependencies": [
+            "a6e6819row5b-h3",
+            "a6e6819row5b-h5"
+        ],
+        "title": "Combining Patterns",
+        "text": "Combine the patterns for three-digit course IDs and $$\\frac{one}{two}$$ digits with an optional letter to form the complete RegEx pattern.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row5b-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "\\d{3}|\\d{1,2}[csx]?"
+        ],
+        "dependencies": [
+            "a6e6819row5b-h6"
+        ],
+        "title": "Complete RegEx Pattern",
+        "text": "Combine the patterns to form the complete RegEx pattern for extracting course IDs.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

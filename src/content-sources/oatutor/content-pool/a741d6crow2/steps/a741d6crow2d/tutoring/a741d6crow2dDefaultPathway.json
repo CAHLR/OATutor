@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a741d6crow2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider the Impact of a Larger Sample Size",
+        "text": "Think about how increasing the sample size from $$100$$ to $$200$$ might affect the selection bias. Would it make the sample more representative of the entire population?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a741d6crow2d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Reminder Emails",
+        "text": "Consider how sending a reminder email to non-respondents might influence the selection bias. Would it encourage more students to respond, potentially reducing bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a741d6crow2d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The same as"
+        ],
+        "dependencies": [
+            "a741d6crow2d-h1"
+        ],
+        "title": "Analyzing the Impact of Both Changes",
+        "text": "If Josh implements both changes, how would the combination of a larger sample size and reminder emails affect the selection bias compared to the original survey?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Larger than",
+            "Smaller than",
+            "The same as",
+            "Impossible to determine",
+            "Exactly half of"
+        ]
+    },
+    {
+        "id": "a741d6crow2d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The same as"
+        ],
+        "dependencies": [
+            "a741d6crow2d-h2"
+        ],
+        "title": "Understanding Selection Bias",
+        "text": "Selection bias occurs when certain groups are overrepresented or underrepresented in a sample. How might the changes suggested by Jake address this issue?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Larger than",
+            "Smaller than",
+            "The same as",
+            "Impossible to determine",
+            "Exactly half of"
+        ]
+    }
+]

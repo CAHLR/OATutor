@@ -1,0 +1,12 @@
+[
+    {
+        "id": "af40364Q2bd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrapping",
+        "text": "Increasing the number of bootstrap samples makes the confidence interval endpoints more stable which increases precision. For example, using $$500$$ resamples might give intervals like $$[2.06$$, $$3.45]$$ or $$[2.13$$, $$3.38]$$, while using 100,000 resamples might repeatedly give intervals close to $$[2.10$$, $$3.40]$$ However, this does not make the interval much narrower. To reduce confidence interval width, we need a greater original sample size, not more bootstrap resamples.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

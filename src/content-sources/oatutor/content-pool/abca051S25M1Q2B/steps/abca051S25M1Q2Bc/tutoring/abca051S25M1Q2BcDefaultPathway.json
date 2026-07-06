@@ -1,0 +1,56 @@
+[
+    {
+        "id": "abca051S25M1Q2Bc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Code",
+        "text": "The code uses the `str.match()` function. What does this function do?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abca051S25M1Q2Bc-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Regular Expression Basics",
+        "text": "The regular expression `**510$` is used in the code. What does this pattern match?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abca051S25M1Q2Bc-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "**510-"
+        ],
+        "dependencies": [
+            "abca051S25M1Q2Bc-h2"
+        ],
+        "title": "Correct Regular Expression",
+        "text": "What regular expression should be used to match phone numbers starting with 510?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abca051S25M1Q2Bc-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "dishes[dishes['phone number'].str.match('**510-')]"
+        ],
+        "dependencies": [
+            "abca051S25M1Q2Bc-h3"
+        ],
+        "title": "Fixing the Code",
+        "text": "How would you modify the code to correctly filter phone numbers starting with 510?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

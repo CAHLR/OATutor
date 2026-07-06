@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a6e6819row8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Focus on the Capturing Group",
+        "text": "Because the regex uses parentheses around [A-Z!]+, re.findall returns only the text captured inside that group, not the entire matched substring.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6e6819row8a-h1"
+        ],
+        "title": "Interpret [A-Z!]+",
+        "text": "The character class [A-Z!] matches one uppercase letter or an exclamation mark. The + means the group captures one or more of those characters in a row.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row8a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "\"CUT\""
+        ],
+        "dependencies": [
+            "a6e6819row8a-h2"
+        ],
+        "title": "Captured Portion of CUT3",
+        "text": "In the substring CUT3, what part is captured by the group ([A-Z!]+) before the extra $$[**\\.]$$ character is matched?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "\"CUT\"",
+            "\"CUT3\"",
+            "\"3\"",
+            "None of these strings."
+        ]
+    },
+    {
+        "id": "a6e6819row8a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6e6819row8a-h3"
+        ],
+        "title": "Account for the Character Outside the Group",
+        "text": "The $$[**\\.]$$ part must match one additional character that is not a period. Since this part is outside the parentheses, that extra character is required for a match but is not returned by re.findall.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row8a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a6e6819row8a-h4"
+        ],
+        "title": "Eliminate Extra Characters",
+        "text": "Reject answer choices that include characters outside the capturing group, such as the $$3$$ in CUT3 or the space represented by $$_{}$$ in $$WORST_{}$$. Among the choices, keep only strings that exactly match captured outputs from re.findall",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

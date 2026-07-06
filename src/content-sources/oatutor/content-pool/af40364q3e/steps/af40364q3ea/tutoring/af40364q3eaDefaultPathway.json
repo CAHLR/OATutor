@@ -1,0 +1,53 @@
+[
+    {
+        "id": "af40364q3ea-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "One MSE per fold per \u03bb",
+        "text": "In K-fold CV, you compute one validation metric per fold for each candidate hyperparameter value.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af40364q3ea-h2",
+        "type": "hint",
+        "dependencies": [
+            "af40364q3ea-h1"
+        ],
+        "title": "Compute total",
+        "text": "There are $$4$$ folds, so $$4$$ MSE values per \u03bb. With $$6$$ \u03bb values, $$total=4\u00d76$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af40364q3ea-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "af40364q3ea-h1"
+        ],
+        "title": "How many MSE values per \u03bb?",
+        "text": "With 4-fold CV, how many validation MSE values do you compute for a single \u03bb?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af40364q3ea-h3",
+        "type": "hint",
+        "dependencies": [
+            "af40364q3ea-h2"
+        ],
+        "title": "Final answer",
+        "text": "$$4\\times6=24$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

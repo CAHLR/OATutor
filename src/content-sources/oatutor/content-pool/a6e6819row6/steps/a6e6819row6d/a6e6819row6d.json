@@ -1,0 +1,12 @@
+{
+    "id": "a6e6819row6d",
+    "stepAnswer": [
+        "skate_record[\"mean_Q\"]"
+    ],
+    "problemType": "TextBox",
+    "stepTitle": "Fill in blank (iv):",
+    "stepBody": "Fill in the blanks to add the two following columns to $$skate_{record}$$:\\n- $$number_{of,W}$$: The number of words where an uppercase W is surrounded by $$1$$ or more adjacent uppercase letters on each side (e.g., UWU, OWNed, SHOWDOWN) in comments.\\n- $$mean_Q$$: The average of two critics' ratings for each row.\\nYou are not allowed to use functions from the library re in this subpart (3(c)).\\n$$skate_{record[\"number_of_W\"]}$$ $$=$$ (\\n$$___i___.findall(___ii___)$$\\n$$.___iii___()$$\\n)\\n$$___iv___$$ $$=$$ $$(___v___)$$ / $$2$$",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "$$skate_{record[\"mean_Q\"]}$$"
+}
