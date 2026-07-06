@@ -3,6 +3,17 @@
 [npm history][1]
 
 [1]: https://www.npmjs.com/package/@google-cloud/projectify?activeTab=versions
+## [3.0.0](https://github.com/googleapis/nodejs-projectify/compare/v2.1.1...v3.0.0) (2022-05-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* update library to use Node 12 (#299)
+
+### Build System
+
+* update library to use Node 12 ([#299](https://github.com/googleapis/nodejs-projectify/issues/299)) ([83b63ca](https://github.com/googleapis/nodejs-projectify/commit/83b63ca8cb89086a8535a9fc8abd39e95f0cecd4))
+
 ### [2.1.1](https://www.github.com/googleapis/nodejs-projectify/compare/v2.1.0...v2.1.1) (2021-09-09)
 
 

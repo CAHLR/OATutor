@@ -44,6 +44,7 @@ var instance = {
 
         case 1:
           this._length = (octet & 0x7F) + 128 * this._length;
+          if (this._length > this._maxLength) return this.close();
 
           if (this._closing && this._length === 0) {
             return this.close();
