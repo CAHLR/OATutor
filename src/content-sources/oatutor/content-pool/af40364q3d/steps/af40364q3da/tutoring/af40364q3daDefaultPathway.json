@@ -1,0 +1,24 @@
+[
+    {
+        "id": "af40364q3da-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "What regularization does",
+        "text": "Regularization adds a penalty that discourages large coefficients, for example:\\n$$\\lambda\\left\\|\\theta\\right\\|**{2}$$\\nIt often increases training error but can improve generalization.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af40364q3da-h2",
+        "type": "hint",
+        "dependencies": [
+            "af40364q3da-h1"
+        ],
+        "title": "Bias-variance tradeoff",
+        "text": "As \u03bb increases, the model becomes simpler (more bias, less variance).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

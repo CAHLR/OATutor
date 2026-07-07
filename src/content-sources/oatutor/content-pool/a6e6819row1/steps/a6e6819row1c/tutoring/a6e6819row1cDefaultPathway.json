@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a6e6819row1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Regex",
+        "text": "The regular expression [aeiou]{2} is looking for two consecutive vowels in the sentence.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row1c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6e6819row1c-h1"
+        ],
+        "title": "Identifying Vowels",
+        "text": "The vowels in the English language are a, e, i, o, and u. Look for pairs of these letters in the sentence.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row1c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "ee"
+        ],
+        "dependencies": [
+            "a6e6819row1c-h2"
+        ],
+        "title": "Finding the First Match",
+        "text": "Look at the sentence: \"It has been $$71$$ years since the year 1954.\" Can you find the first occurrence of two consecutive vowels?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row1c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "ea"
+        ],
+        "dependencies": [
+            "a6e6819row1c-h3"
+        ],
+        "title": "Finding the Second Match",
+        "text": "After finding the first match, continue scanning the sentence for the next pair of consecutive vowels.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row1c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "ea"
+        ],
+        "dependencies": [
+            "a6e6819row1c-h4"
+        ],
+        "title": "Finding the Third Match",
+        "text": "Continue scanning the sentence for another pair of consecutive vowels after the second match.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

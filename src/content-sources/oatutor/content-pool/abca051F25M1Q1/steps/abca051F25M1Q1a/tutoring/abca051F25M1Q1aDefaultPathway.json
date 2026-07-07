@@ -1,0 +1,54 @@
+[
+    {
+        "id": "abca051F25M1Q1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding DataFrame Indexing",
+        "text": "The DataFrame has two columns: 'a' and 'b'. Each column has three rows indexed from $$0$$ to $$2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abca051F25M1Q1a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Accessing DataFrame Elements",
+        "text": "To access an element in a DataFrame, use the syntax df['column'][row].",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abca051F25M1Q1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Column 'a' Row $$1$$"
+        ],
+        "dependencies": [],
+        "title": "Identify the Column and Row",
+        "text": "Which column and row are you accessing with df['a'][1]?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abca051F25M1Q1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "abca051F25M1Q1a-h3"
+        ],
+        "title": "Find the Value",
+        "text": "What is the value in column 'a' at row 1?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

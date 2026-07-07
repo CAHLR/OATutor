@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a741d6crow3b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "Look at the columns in the DataFrame. What information does each column provide about the buildings?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a741d6crow3b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Column Details",
+        "text": "The 'renovated' column shows the year a building was renovated. How might this information be useful?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a741d6crow3b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Soda, Gateway"
+        ],
+        "dependencies": [],
+        "title": "Identifying Patterns",
+        "text": "Which buildings belong to the 'CDSS' college?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Evans, Cory",
+            "Soda, Gateway",
+            "Evans, Soda",
+            "Gateway, Cory"
+        ]
+    },
+    {
+        "id": "a741d6crow3b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Gateway"
+        ],
+        "dependencies": [],
+        "title": "Renovation Analysis",
+        "text": "Which building was renovated most recently?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Evans",
+            "Soda",
+            "Gateway",
+            "Cory"
+        ]
+    }
+]

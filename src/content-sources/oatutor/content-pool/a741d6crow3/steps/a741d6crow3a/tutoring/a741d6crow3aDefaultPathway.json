@@ -1,0 +1,56 @@
+[
+    {
+        "id": "a741d6crow3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Kernel Functions",
+        "text": "A kernel function is used in KDE to estimate the probability density function of a random variable. It has specific properties that make it suitable for this purpose.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a741d6crow3a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Properties of Kernel Functions",
+        "text": "Consider the properties of kernel functions: symmetry, non-negativity, and integration to a specific value. These are crucial for their role in KDE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a741d6crow3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a741d6crow3a-h1"
+        ],
+        "title": "Area Under the Curve",
+        "text": "What is the area under the curve of a kernel function in KDE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a741d6crow3a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "To ensure accurate density estimation."
+        ],
+        "dependencies": [
+            "a741d6crow3a-h2"
+        ],
+        "title": "Symmetry and Non-Negativity",
+        "text": "Why must a kernel function be symmetric and non-negative?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

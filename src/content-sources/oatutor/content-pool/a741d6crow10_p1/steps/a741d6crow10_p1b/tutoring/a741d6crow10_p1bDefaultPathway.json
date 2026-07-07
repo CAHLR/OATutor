@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a741d6crow10_p1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Sampling Frame",
+        "text": "The sampling frame is the list or group from which the sample is drawn. Consider who is being asked to participate in the survey.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a741d6crow10_p1b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a741d6crow10_p1b-h1"
+        ],
+        "title": "Focus on the Discussion Sections",
+        "text": "Think about the specific group of students that are being targeted in the discussion sections. Who are they?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a741d6crow10_p1b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All Data $$100$$ students that attend discussion section this week."
+        ],
+        "dependencies": [
+            "a741d6crow10_p1b-h2"
+        ],
+        "title": "Identify the Group",
+        "text": "Who are the students that attend the Data $$100$$ discussion sections this week?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "All Data $$100$$ students that attend discussion section this week.",
+            "All UC Berkeley students that spend an $$above-average$$ amount on chocolate milk.",
+            "Every fifth student in the discussion section.",
+            "All UC Berkeley students.",
+            "All Data $$100$$ teaching assistants."
+        ]
+    },
+    {
+        "id": "a741d6crow10_p1b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All Data $$100$$ students that attend discussion section this week."
+        ],
+        "dependencies": [
+            "a741d6crow10_p1b-h3"
+        ],
+        "title": "Clarifying the Sampling Frame",
+        "text": "The sampling frame includes all individuals who could potentially be selected for the survey. In this case, who are they?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "All Data $$100$$ students that attend discussion section this week.",
+            "All UC Berkeley students that spend an $$above-average$$ amount on chocolate milk.",
+            "Every fifth student in the discussion section.",
+            "All UC Berkeley students.",
+            "All Data $$100$$ teaching assistants."
+        ]
+    }
+]

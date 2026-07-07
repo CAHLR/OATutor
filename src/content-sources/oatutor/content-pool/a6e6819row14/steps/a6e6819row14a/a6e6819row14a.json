@@ -1,0 +1,17 @@
+{
+    "id": "a6e6819row14a",
+    "stepAnswer": [
+        "r\"love[A-Za-z]*\\s(\\w+\\s\\w+)\""
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Capturing Two Words After a Word Containing \"love\"",
+    "stepBody": "Samantha wants to understand what users love about her videos. To do this, she decides to write a regex pattern that will capture the next two words that appear after any word containing \u201clove\u201d in a comment. Select the regex pattern below that will achieve this goal. The correct answer should satisfy the test cases above when the regex pattern is assigned to the variable pattern.##figure1.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "r\"love\\s(\\w\\w)\"",
+        "r\"(love) [A-Za-z]+[A-Za-z]+\"",
+        "r\"love[A-Za-z]*\\s(\\w+\\s\\w+)\"",
+        "r\"love ([A-Za-z]+[A-Za-z]+)\""
+    ]
+}

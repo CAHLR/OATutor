@@ -1,0 +1,56 @@
+[
+    {
+        "id": "abca051row4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "Look at the columns of the DataFrame. Which column contains the names of the fast food chains?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abca051row4b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Filtering the Data",
+        "text": "Consider how you can filter the DataFrame to only include nuggets with a weight less than $$0.6$$ ounces.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abca051row4b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "chain"
+        ],
+        "dependencies": [
+            "abca051row4b-h1"
+        ],
+        "title": "Identify the Column for Chains",
+        "text": "Which column in the DataFrame represents the fast food chain?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abca051row4b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$nuggets[primesymbolweightprimesymbol]<0.6$$"
+        ],
+        "dependencies": [
+            "abca051row4b-h2"
+        ],
+        "title": "Filter by Weight",
+        "text": "How would you filter the DataFrame to only include rows where the weight is less than $$0.6$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a9990efrow2g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding KDE Plot",
+        "text": "A Kernel Density Estimate (KDE) plot is used to visualize the distribution of data. It can sometimes resemble a normal distribution if not properly adjusted.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9990efrow2g-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Normal Kernel in KDE",
+        "text": "Using a normal kernel in KDE can make the plot look like a normal distribution, especially if the bandwidth is not adjusted correctly.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9990efrow2g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The plot may smooth out the data too much, making it look like a normal distribution."
+        ],
+        "dependencies": [],
+        "title": "Check Bandwidth",
+        "text": "What happens if the bandwidth in a KDE plot is too large?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The plot may smooth out the data too much, making it look like a normal distribution.",
+            "The plot may become too jagged and not resemble any distribution."
+        ]
+    },
+    {
+        "id": "a9990efrow2g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "If the bandwidth is too large, it can smooth out the peaks, making the distribution appear unimodal."
+        ],
+        "dependencies": [],
+        "title": "Multimodal Distribution",
+        "text": "Why might a multimodal distribution appear unimodal in a KDE plot?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "If the bandwidth is too large, it can smooth out the peaks, making the distribution appear unimodal.",
+            "If the bandwidth is too small, it can create artificial peaks."
+        ]
+    }
+]

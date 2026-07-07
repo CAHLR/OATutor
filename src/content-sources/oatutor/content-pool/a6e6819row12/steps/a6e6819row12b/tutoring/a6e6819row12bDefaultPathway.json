@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a6e6819row12b-h6",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Read the Pattern in Pieces",
+        "text": "The pattern looks for one or more digits, exactly one space, then one or more non-space characters. It also requires an exclamation mark after that text.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row12b-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3$$ times!!"
+        ],
+        "dependencies": [
+            "a6e6819row12b-h6"
+        ],
+        "title": "Captured Text Before the Final Exclamation Mark",
+        "text": "In the substring $$3$$ times!!!, what does the capturing group return when the final ! is matched outside the group?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$3$$ times!!",
+            "$$3$$ times!!!",
+            "$$3$$",
+            "times"
+        ]
+    },
+    {
+        "id": "a6e6819row12b-h8",
+        "type": "hint",
+        "dependencies": [
+            "a6e6819row12b-h7"
+        ],
+        "title": "Remember What the Capturing Group Returns",
+        "text": "Because the parentheses do not include the final ! after the group, that last exclamation mark is required for the match but is not returned by re.findall.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6e6819row12b-h9",
+        "type": "hint",
+        "dependencies": [
+            "a6e6819row12b-h8"
+        ],
+        "title": "Check Why $$\\frac{10}{10}$$ Is Not Returned",
+        "text": "The 10/10! text does not match the pattern because after the digits $$10$$, the next character is / instead of the required single space.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

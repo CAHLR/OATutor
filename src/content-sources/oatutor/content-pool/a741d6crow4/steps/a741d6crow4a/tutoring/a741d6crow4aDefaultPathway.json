@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a741d6crow4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Sampling Frame",
+        "text": "Consider where Oski is conducting the survey and who might be included in it.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a741d6crow4a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Defining Population of Interest",
+        "text": "Think about who Oski wants to gather opinions from regarding the fruit-eating event.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a741d6crow4a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Memorial Glade"
+        ],
+        "dependencies": [],
+        "title": "Identifying the Sampling Frame",
+        "text": "Where is Oski conducting the survey?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Memorial Glade",
+            "Sproul Plaza",
+            "Doe Library",
+            "Sather Gate"
+        ]
+    },
+    {
+        "id": "a741d6crow4a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All attendees of the $$fruit-eating$$ event"
+        ],
+        "dependencies": [],
+        "title": "Identifying the Population of Interest",
+        "text": "Who does Oski want to survey about the fruit-eating event?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "All attendees of the $$fruit-eating$$ event",
+            "Only current UC Berkeley students",
+            "Only admitted applicants",
+            "All people at Memorial Glade"
+        ]
+    }
+]

@@ -1,0 +1,19 @@
+{
+    "id": "abca051S25FQ1Bb",
+    "stepAnswer": [
+        "lambda sf: (sum(sf[\"renovated\"].astype(int) $$ \\geq $$ 2003) / sf[\"renovated\"].size) $$ \\geq $$ $$0.80$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Fill in the blank (ii)",
+    "stepBody": "Josh wants to determine which colleges have the most modern buildings. A building is considered modern if at least 80% of its rooms in rooms with recorded renovations were renovated in the year $$2003$$ or later.##figure2.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "lambda sf: (sum(sf[\"renovated\"].astype(int) $$ \\geq $$ 2003) / sf[\"renovated\"].size) $$ \\geq $$ $$0.80$$",
+    "choices": [
+        "lambda sf: sf[\"renovated\"].astype(int).mean() $$ \\geq $$ $$2003$$",
+        "lambda sf: (sf[\"renovated\"].astype(int) $$ \\geq $$ 2003).all()",
+        "lambda sf: (sum(sf[\"renovated\"].astype(int) $$ \\geq $$ 2003) / sf[\"renovated\"].size) $$ \\geq $$ $$0.80$$",
+        "lambda sf: (sf[\"renovated\"].astype(int) $$ \\geq $$ 2003).sum() $$ \\geq $$ $$0.80$$",
+        "lambda sf: (sf[\"renovated\"].astype(int) > 2003).mean() $$ \\geq $$ $$0.80$$"
+    ]
+}

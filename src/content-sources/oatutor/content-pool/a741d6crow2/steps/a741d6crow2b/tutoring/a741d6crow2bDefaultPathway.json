@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a741d6crow2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider the impact of a larger sample size",
+        "text": "Think about how increasing the sample size from $$100$$ to $$200$$ might affect the response bias. Would it make the survey results more or less representative of the entire student population?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a741d6crow2b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Think about the effect of reminder emails",
+        "text": "Consider how sending a reminder email to students who didn't respond initially might influence the response rate and bias. Would this change the likelihood of getting a more representative sample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a741d6crow2b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The same as"
+        ],
+        "dependencies": [
+            "a741d6crow2b-h1"
+        ],
+        "title": "Analyzing the effect of a larger sample size",
+        "text": "If Josh increases the sample size from $$100$$ to $$200$$, how might this affect the response bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Larger than",
+            "Smaller than",
+            "The same as",
+            "Impossible to determine",
+            "Exactly half of"
+        ]
+    },
+    {
+        "id": "a741d6crow2b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The same as"
+        ],
+        "dependencies": [
+            "a741d6crow2b-h2"
+        ],
+        "title": "Evaluating the impact of reminder emails",
+        "text": "How might sending a reminder email to non-respondents affect the response bias of the survey?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Larger than",
+            "Smaller than",
+            "The same as",
+            "Impossible to determine",
+            "Exactly half of"
+        ]
+    }
+]
