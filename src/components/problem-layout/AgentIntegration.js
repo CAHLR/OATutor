@@ -25,6 +25,8 @@ class AgentIntegration extends React.Component {
             condition,
             showSuggestedQuestions,
             hintsOpen,
+            closeRequest,
+            onChatVisibilityChange,
         } = this.props;
 
         return (
@@ -44,6 +46,8 @@ class AgentIntegration extends React.Component {
                 condition={condition}
                 showSuggestedQuestions={showSuggestedQuestions}
                 hintsOpen={hintsOpen}
+                closeRequest={closeRequest}
+                onChatVisibilityChange={onChatVisibilityChange}
             />
         );
     }

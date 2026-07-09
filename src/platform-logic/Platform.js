@@ -52,6 +52,7 @@ import withWidth from "@material-ui/core/withWidth";
 
 import { ProgressTooltip, InfoTooltip } from "@components/Tooltip";
 import { LocalizationConsumer } from '../util/LocalizationContext';
+import { isMobileWidth } from "../util/responsive";
 
 let problemPool = require(`@generated/processed-content-pool/${CONTENT_SOURCE}.json`);
 
@@ -76,7 +77,9 @@ class Platform extends React.Component {
     this.isPrivileged = !!this.user.privileged;
     this.context = context;
     const saved = typeof window !== "undefined" ? localStorage.getItem(TOC_DRAWER_OPEN_KEY) : null;
-    const defaultOpenIfNoPref = Boolean(props.lessonID);
+    const isMobileInitial =
+      typeof window !== "undefined" && window.innerWidth < 960;
+    const defaultOpenIfNoPref = Boolean(props.lessonID) && !isMobileInitial;
     const initialDrawerOpen = saved === null ? defaultOpenIfNoPref : saved === "1";
 
     this.togglePopup = this.togglePopup.bind(this);
@@ -141,7 +144,7 @@ class Platform extends React.Component {
       try {
         saved = localStorage.getItem(TOC_DRAWER_OPEN_KEY);
       } catch (e) {}
-      if (saved === null && !this.state.drawerOpen) {
+      if (saved === null && !this.state.drawerOpen && !isMobileWidth(this.props.width)) {
         this.toggleDrawer(true);
       }
     }
@@ -440,46 +443,65 @@ class Platform extends React.Component {
   };
 
   render() {
-    const { translate } = this.props;
+    const { translate, width } = this.props;
     const { showPopup } = this.state;
     const { classes } = this.props;
     const drawerWidth = 340;
+    const isMobile = isMobileWidth(width);
 
     this.studentNameDisplay = this.context.studentName ? decodeURIComponent(this.context.studentName) : translate("platform.LoggedIn");
 
     const tocCourseName = this.state.selectedCourse?.courseName || findLessonById(this.props.lessonID)?.courseName;
+    const currentLesson = findLessonById(this.props.lessonID);
+    const mobileCourseTitle =
+      this.state.selectedCourse?.courseName ||
+      currentLesson?.courseName ||
+      currentLesson?.name ||
+      "";
 
     const lessonMasteryMap = this.getLessonMasteryMap(tocCourseName);
     const inLesson = Boolean(this.props.lessonID);
 
-    // Shared, centered max-width container for BOTH progress area and problem area
     const CONTAINER_MAX_WIDTH = "100vw";
     const CONTAINER_STYLE = {
       maxWidth: CONTAINER_MAX_WIDTH,
       width: "100%",
-      margin: inLesson && this.state.drawerOpen ? "0 0 0 16px" : "0 0 0 32px",
-      padding: "0 16px",
+      margin: inLesson && !isMobile
+        ? (this.state.drawerOpen ? "0 0 0 16px" : "0 0 0 32px")
+        : "0",
+      padding: isMobile ? "0 12px" : "0 16px",
       boxSizing: "border-box",
     };
     const PROGRESS_GAP = 20;
     const MAX_PROGRESS_BAR_WIDTH = 900;
-    const MIN_PROGRESS_BAR_WIDTH = 200;
+    const MIN_PROGRESS_BAR_WIDTH = isMobile ? 0 : 200;
+    const progressStickyTop = isMobile ? 56 : 120;
 
     return (
       <>
         {inLesson && (
           <Drawer
-            variant="persistent"
+            variant={isMobile ? "temporary" : "persistent"}
             anchor="left"
             open={this.state.drawerOpen}
-            classes={{ paper: this.props.classes.drawerPaper }}
-            style={{ position: "fixed", width: 320, flexShrink: 0, zIndex: this.state.drawerOpen ? 4 : 0 }}
+            onClose={isMobile ? () => this.toggleDrawer(false) : undefined}
+            classes={{
+              paper: isMobile ? classes.drawerPaperMobile : classes.drawerPaper,
+            }}
+            style={{
+              position: "fixed",
+              width: isMobile ? "min(320px, 85vw)" : 320,
+              flexShrink: 0,
+              zIndex: this.state.drawerOpen ? 4 : 0,
+            }}
             PaperProps={{ style: { padding: 0 } }}
           >
-            <div style={{ width: drawerWidth, padding: 16 }}>
+            <div style={{ width: isMobile ? "100%" : drawerWidth, padding: 16 }}>
+              {!isMobile && (
               <IconButton aria-label="Table of Contents Toggle" onClick={() => this.toggleDrawer(false)}>
                 <img src={ToCButton} alt="Table of Contents" style={{ width: 24, height: 24 }} />
               </IconButton>
+              )}
 
               <TableOfContents
                 courseName={tocCourseName}
@@ -501,35 +523,74 @@ class Platform extends React.Component {
             flexDirection: "column",
           }}
         >
-          {/* Top bar: "OATutor" logo, user icon and name */}
+          {/* Top bar */}
           <AppBar position="fixed" style={{ backgroundColor: "#FFFFFF" }}>
-            <Toolbar>
-              <Grid container spacing={0} role={"navigation"} alignItems={"center"}>
-                <Grid item xs={3} key={1}>
+            <Toolbar className={isMobile ? classes.mobileCompactToolbar : undefined}>
+              {isMobile ? (
+                <div style={{ display: "flex", alignItems: "center", width: "100%", gap: 4, minWidth: 0 }}>
+                  {inLesson && !this.state.drawerOpen && (
+                    <IconButton
+                      aria-label="Table of Contents Toggle"
+                      onClick={() => this.toggleDrawer(true)}
+                      size="small"
+                    >
+                      <img src={ToCButton} alt="Table of Contents" style={{ width: 24, height: 24 }} />
+                    </IconButton>
+                  )}
                   <BrandLogoNav isPrivileged={this.isPrivileged} />
-                </Grid>
-                <Grid item xs={5} key={2}></Grid>
-                <Grid xs={4} item key={3}>
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "flex-end",
-                      alignItems: "center",
-                      gap: "9px",
-                      color: "#344054",
-                    }}
-                  >
-                    <img src={userIcon} alt="User Icon" />
-                    <div style={{ fontWeight: 600 }}>{this.studentNameDisplay}</div>
+                  {inLesson && mobileCourseTitle && (
+                    <div
+                      className={classes.mobileCourseTitle}
+                      title={mobileCourseTitle}
+                      style={{ fontSize: 12, color: "#667085", marginLeft: 4 }}
+                    >
+                      {mobileCourseTitle}
+                    </div>
+                  )}
+                  <div style={{ display: "flex", alignItems: "center", marginLeft: "auto", flexShrink: 0 }}>
+                    <IconButton aria-label="about" title={`About ${SITE_NAME}`} onClick={this.togglePopup} size="small">
+                      <HelpOutlineOutlinedIcon htmlColor={"#344054"} style={{ fontSize: 28 }} />
+                    </IconButton>
+                    {this.state.status === "learning" && (
+                      <IconButton aria-label="report problem" onClick={this.toggleFeedback} title={"Report Problem"} size="small">
+                        <FeedbackOutlinedIcon htmlColor={"#344054"} style={{ fontSize: 26 }} />
+                      </IconButton>
+                    )}
+                    <img src={userIcon} alt="User Icon" style={{ width: 28, height: 28, marginLeft: 4 }} />
                   </div>
+                  <Popup isOpen={showPopup} onClose={this.togglePopup}>
+                    <About />
+                  </Popup>
+                </div>
+              ) : (
+                <Grid container spacing={0} role={"navigation"} alignItems={"center"}>
+                  <Grid item xs={3} key={1}>
+                    <BrandLogoNav isPrivileged={this.isPrivileged} />
+                  </Grid>
+                  <Grid item xs={5} key={2}></Grid>
+                  <Grid xs={4} item key={3}>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "flex-end",
+                        alignItems: "center",
+                        gap: "9px",
+                        color: "#344054",
+                      }}
+                    >
+                      <img src={userIcon} alt="User Icon" />
+                      <div style={{ fontWeight: 600 }}>{this.studentNameDisplay}</div>
+                    </div>
+                  </Grid>
                 </Grid>
-              </Grid>
+              )}
             </Toolbar>
           </AppBar>
 
           <div className={classes.toolbarOffset} />
-          
-          {/* Second top bar:  course name, about and report problem buttons */}
+
+          {/* Second top bar (desktop only) */}
+          {!isMobile && (
           <AppBar position="fixed" className={classes.secondBarOffset}>
             <Toolbar style={{ minHeight: "56px" }}>
               <Grid container spacing={0} role={"secondary-navigation"} alignItems={"center"}>
@@ -595,23 +656,24 @@ class Platform extends React.Component {
               </Grid>
             </Toolbar>
           </AppBar>
+          )}
 
-          <div style={{ height: 56 }} />
+          {!isMobile && <div style={{ height: 56 }} />}
 
           {/* Progress Bar */}
           <div
             style={{
-              marginLeft: inLesson && this.state.drawerOpen ? drawerWidth : 0,
+              marginLeft: inLesson && this.state.drawerOpen && !isMobile ? drawerWidth : 0,
               marginBottom: 0,
               transition: "margin 0.1s ease",
             }}
           >
             {this.state.status === "learning" ? (
-              <AppBar position="sticky" 
-                      style={{ top: 120, backgroundColor: "#F6F6F6", boxShadow: "none", zIndex: 3 }}>
-                <Toolbar disableGutters style={{ minHeight: 80, paddingLeft: "16px", paddingRight: "32px" }}>
+              <AppBar position="sticky"
+                      style={{ top: progressStickyTop, backgroundColor: "#F6F6F6", boxShadow: "none", zIndex: 3 }}>
+                <Toolbar disableGutters style={{ minHeight: isMobile ? 64 : 80, paddingLeft: isMobile ? 8 : 16, paddingRight: isMobile ? 8 : 32 }}>
                   <Grid container spacing={0} role="progress-bar" alignItems="center" style={{ width: "100%" }}>
-                    {!this.state.drawerOpen && (
+                    {!this.state.drawerOpen && !isMobile && (
                       <IconButton
                         aria-label="Table of Contents Toggle"
                         onClick={() => this.toggleDrawer(true)}
@@ -624,21 +686,21 @@ class Platform extends React.Component {
                     
                     <Grid item xs={12}>
                       <div style={CONTAINER_STYLE}>
-                        {/* One centered row, 3 columns: [label] [bar (min..max)] [info] */}
                         <div
                           style={{
                             display: "grid",
-                            // Middle column gets a real width range so it never collapses
-                            gridTemplateColumns: `auto minmax(${MIN_PROGRESS_BAR_WIDTH}px, ${MAX_PROGRESS_BAR_WIDTH}px) auto`,
+                            gridTemplateColumns: isMobile
+                              ? "1fr"
+                              : `auto minmax(${MIN_PROGRESS_BAR_WIDTH}px, ${MAX_PROGRESS_BAR_WIDTH}px) auto`,
                             alignItems: "center",
-                            justifyContent: "center",    // center the whole trio as a group
+                            justifyContent: "center",
                             columnGap: PROGRESS_GAP,
+                            rowGap: isMobile ? 8 : 0,
                             width: "100%",
                             maxWidth: "100%",
                           }}
                         >
-                          {/* Left: lightning + label */}
-                          <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                          <div style={{ display: "flex", alignItems: "center", gap: 6, justifyContent: isMobile ? "center" : "flex-start" }}>
                             <img
                               src={`${process.env.PUBLIC_URL}/static/images/icons/mastery-bolt.png`}
                               alt="Mastery Icon"
@@ -788,7 +850,8 @@ class Platform extends React.Component {
                             </ProgressTooltip>
                           </div>
 
-                          {/* Right: info icon */}
+                          {/* Right: info icon (desktop grid column) */}
+                          {!isMobile && (
                           <InfoTooltip
                             arrow
                             placement="bottom"
@@ -813,6 +876,35 @@ class Platform extends React.Component {
                               style={{ display: "block", cursor: "pointer" }}
                             />
                           </InfoTooltip>
+                          )}
+                          {isMobile && (
+                            <div style={{ display: "flex", justifyContent: "center" }}>
+                              <InfoTooltip
+                                arrow
+                                placement="bottom"
+                                enterTouchDelay={0}
+                                leaveTouchDelay={3000}
+                                title={
+                                  <div style={{ width: "100%", boxSizing: "border-box" }}>
+                                    <div style={{ fontFamily: "Inter, sans-serif", fontSize: 12, fontWeight: 600, marginBottom: 4 }}>
+                                      What is Mastery?
+                                    </div>
+                                    <div style={{ fontFamily: "Inter, sans-serif", fontSize: 12, fontWeight: 400, lineHeight: "16px" }}>
+                                      Mastery estimates your understanding based on lesson objectives completed.
+                                    </div>
+                                  </div>
+                                }
+                              >
+                                <img
+                                  src={`${process.env.PUBLIC_URL}/static/images/icons/information-icon.png`}
+                                  alt="Info"
+                                  width={20}
+                                  height={20}
+                                  style={{ display: "block", cursor: "pointer" }}
+                                />
+                              </InfoTooltip>
+                            </div>
+                          )}
                         </div>
                       </div>
                     </Grid>

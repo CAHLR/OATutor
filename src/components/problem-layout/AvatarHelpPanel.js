@@ -5,8 +5,9 @@ import AgentChatbox from './AgentChatbox';
 import AvatarHintCard from './AvatarHintCard';
 import { ReactComponent as LightbulbIcon } from '../../assets/lightbulb.svg';
 import { ReactComponent as EyeIcon } from '../../assets/eye.svg';
+import { withResponsive } from '../../util/ResponsiveContext';
 
-const styles = () => ({
+const styles = (theme) => ({
     panel: {
         width: '100%',
         overflow: 'hidden',
@@ -38,6 +39,7 @@ class AvatarHelpPanel extends React.Component {
     render() {
         const {
             classes,
+            responsive,
             onGetHint,
             problem,
             lesson,
@@ -61,6 +63,11 @@ class AvatarHelpPanel extends React.Component {
             onNextHint,
             onHideHint,
         } = this.props;
+
+        const isMobile = responsive?.isMobile ?? false;
+        const embeddedHeight = isMobile
+            ? 'min(480px, 55vh)'
+            : 'min(760px, calc(100vh - 220px))';
 
         const totalHints = avatarHintPayload?.hints?.length || 0;
         const isHintVisible = Boolean(avatarHint);
@@ -110,7 +117,7 @@ class AvatarHelpPanel extends React.Component {
                     user={user}
                     lessonMasteryMap={lessonMasteryMap}
                     hintUsageByStep={hintUsageByStep}
-                    embeddedHeight="min(760px, calc(100vh - 220px))"
+                    embeddedHeight={embeddedHeight}
                     allowEmbeddedClose
                     defaultOpen={false}
                     closedLauncherPlacement="floating"
@@ -124,4 +131,4 @@ class AvatarHelpPanel extends React.Component {
     }
 }
 
-export default withStyles(styles)(AvatarHelpPanel);
+export default withStyles(styles)(withResponsive(AvatarHelpPanel));

@@ -8,7 +8,11 @@ const styles = theme => ({
         width: '40em',
         marginLeft: 'auto',
         marginRight: 'auto',
-        marginBottom: 20
+        marginBottom: 20,
+        [theme.breakpoints.down('sm')]: {
+            width: '100%',
+            maxWidth: '100%',
+        },
     },
     bullet: {
         display: 'inline-block',
@@ -27,7 +31,10 @@ const styles = theme => ({
         marginRight: 'auto',
         paddingLeft: 10,
         paddingRight: 10,
-        width: "20%"
+        width: "20%",
+        [theme.breakpoints.down('xs')]: {
+            width: '100%',
+        },
     },
 
     stepHeader: {
@@ -59,13 +66,19 @@ const styles = theme => ({
 
     inputHintField: {
         width: '10em',
-        //marginLeft: '16em',
+        [theme.breakpoints.down('sm')]: {
+            width: '100%',
+        },
     },
 
     center: {
         marginLeft: '19em',
         marginRight: '19em',
-        marginTop: '1em'
+        marginTop: '1em',
+        [theme.breakpoints.down('sm')]: {
+            marginLeft: 16,
+            marginRight: 16,
+        },
     },
 
     checkImage: {
@@ -104,10 +117,16 @@ const styles = theme => ({
         display: 'flex',
         alignItems: 'center',
         gap: 8,
+        [theme.breakpoints.down('xs')]: {
+            fontSize: 18,
+        },
     },
     problemBody: {
         fontSize: 18,
         marginTop: 0,
+        [theme.breakpoints.down('xs')]: {
+            fontSize: 16,
+        },
     },
     problemStepHeader: {
         fontSize: 25,
@@ -122,6 +141,10 @@ const styles = theme => ({
     textBox: {
         paddingLeft: 70,
         paddingRight: 70,
+        [theme.breakpoints.down('sm')]: {
+            paddingLeft: 16,
+            paddingRight: 16,
+        },
     },
     textBoxHeader: {
         fontWeight: 'bold',
@@ -181,6 +204,25 @@ const styles = theme => ({
             height: 'calc(100vh - 120px)',
         },
         zIndex: theme.zIndex.drawer,
+    },
+    drawerPaperMobile: {
+        top: 56,
+        height: 'calc(100vh - 56px)',
+        zIndex: theme.zIndex.drawer + 1,
+    },
+    mobileCompactToolbar: {
+        minHeight: 48,
+        paddingLeft: 4,
+        paddingRight: 4,
+    },
+    mobileCourseTitle: {
+        fontWeight: 600,
+        fontSize: 14,
+        overflow: 'hidden',
+        textOverflow: 'ellipsis',
+        whiteSpace: 'nowrap',
+        flex: 1,
+        minWidth: 0,
     },
 
     content: {

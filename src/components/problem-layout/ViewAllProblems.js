@@ -14,6 +14,8 @@ import {
   Box,
   Typography,
   makeStyles,
+  useMediaQuery,
+  useTheme,
 } from '@material-ui/core';
 import HelpOutlineOutlinedIcon from '@material-ui/icons/HelpOutlineOutlined';
 
@@ -91,6 +93,8 @@ const BATCH_SIZE = 3;
 
 const ViewAllProblems = ({ translate, history }) => {
   const classes = useStyles();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const { lessonID } = useParams();
   const context = useContext(ThemeContext);
 
@@ -183,9 +187,11 @@ const ViewAllProblems = ({ translate, history }) => {
                     }}
                 >
                     <img src={userIcon} alt="User Icon" />
+                    {!isMobile && (
                     <div style={{ fontWeight: 600 }}>
                         {studentNameDisplay}
                     </div>
+                    )}
                 </div>
             </Grid>
 
@@ -260,7 +266,7 @@ const ViewAllProblems = ({ translate, history }) => {
       <Container maxWidth="md" className={classes.container}>
         {visibleProblems.length ? visibleProblems.map(problem => (
           <Box key={problem.id} className={classes.problemCard}>
-              <Box className={classes.noFooterWrapper} style={{ flex: 1, maxWidth: 900, width: 900 }}>
+              <Box className={classes.noFooterWrapper} style={{ flex: 1, width: '100%', maxWidth: 900 }}>
               <ProblemWrapper
                 autoScroll={false}
                 compactHeader={true}
@@ -274,7 +280,7 @@ const ViewAllProblems = ({ translate, history }) => {
               />
             </Box>
             {/* ID badge */}
-            <Box className={classes.idBadge} style ={{marginRight: 40}}>
+            <Box className={classes.idBadge} style={{ marginRight: isMobile ? 8 : 40 }}>
               <Typography variant="caption" color="textSecondary">
                 {problem.id}
               </Typography>
