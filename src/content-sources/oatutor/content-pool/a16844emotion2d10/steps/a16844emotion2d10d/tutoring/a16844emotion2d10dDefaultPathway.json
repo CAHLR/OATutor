@@ -1,0 +1,100 @@
+[
+    {
+        "id": "a16844emotion2d10d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Projectile Motion",
+        "text": "To solve this problem, we need to understand the motion of a projectile. The projectile follows a parabolic path due to the influence of gravity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d10d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d10d-h1"
+        ],
+        "title": "Components of Velocity",
+        "text": "The initial velocity of the projectile can be broken down into horizontal and vertical components. Use trigonometric functions to find these components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d10d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d10d-h2"
+        ],
+        "title": "Horizontal Motion",
+        "text": "The horizontal motion of the projectile is uniform, meaning it has a constant velocity. Use this to find the horizontal displacement at $$15$$ seconds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d10d-h4",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d10d-h2"
+        ],
+        "title": "Vertical Motion",
+        "text": "The vertical motion is affected by gravity. Use the kinematic equations to find the vertical displacement at $$15$$ seconds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d10d-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2598.08$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d10d-h3"
+        ],
+        "title": "Calculate Horizontal Displacement",
+        "text": "Use the formula for horizontal displacement: $$horizontal_{velocity}$$ * time. Calculate the horizontal displacement at $$15$$ seconds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d10d-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-500$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d10d-h4"
+        ],
+        "title": "Calculate Vertical Displacement",
+        "text": "Use the formula for vertical displacement: $$initial_{vertical,velocity}$$ * time - $$0.5$$ * g * $${time}^2$$. Calculate the vertical displacement at $$15$$ seconds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d10d-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2572$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d10d-h5",
+            "a16844emotion2d10d-h6"
+        ],
+        "title": "Calculate Total Displacement",
+        "text": "Use the Pythagorean theorem to find the magnitude of the total displacement: sqrt(horizontal_displacement**2 + vertical_displacement**2).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

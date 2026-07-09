@@ -1,0 +1,36 @@
+[
+    {
+        "id": "afb69a0sumprod40a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Product-to-sum formula",
+        "text": "Recall the product-to-sum formula for \\sin(A)\\cos(B): \\sin(A)\\cos(B) $$=$$ (1/2)(\\sin(A+B) + $$\\sin(A-B))$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod40a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod40a-h1"
+        ],
+        "title": "Apply the formula",
+        "text": "Substitute A and B into the product-to-sum formula to rewrite \\sin(3x)\\cos(4x).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod40a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod40a-h2"
+        ],
+        "title": "Simplify and multiply",
+        "text": "Remember that $$\\sin(-x)$$ $$=$$ $$-\\sin(x)$$. Then multiply the entire expression by the constant $$4$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

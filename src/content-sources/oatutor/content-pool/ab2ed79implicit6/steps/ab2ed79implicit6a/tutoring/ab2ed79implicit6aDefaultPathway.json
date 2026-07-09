@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ab2ed79implicit6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Implicit Differentiation",
+        "text": "Differentiate both sides of the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab2ed79implicit6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab2ed79implicit6a-h1"
+        ],
+        "title": "Derivative Rules",
+        "text": "Use the product rule and the chain rule. The product rule is: $$\\frac{d\\left(uv\\right)}{dx}=u\\left(\\frac{dv}{dx}\\right)+v\\left(\\frac{du}{dx}\\right)$$. The chain rule is: $$[f(g(x))]'=\\operatorname{f'}\\left(g{\\left(x\\right)}\\right) \\operatorname{g'}\\left(x\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab2ed79implicit6a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "ab2ed79implicit6a-h2"
+        ],
+        "title": "Finding $$\\frac{dy}{dx}$$",
+        "text": "What is $$\\frac{d\\left(y sin\\left(xy\\right)\\right)}{dx}$$? Is $$sin\\left(x y\\right) \\frac{dy}{dx}+y cos\\left(x y\\right) \\left(\\frac{x dy}{dx}+y\\right)$$ the correct answer?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ab2ed79implicit6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ab2ed79implicit6a-h3"
+        ],
+        "title": "Simplifying $$\\frac{dy}{dx}$$",
+        "text": "Simplify such that $$\\frac{dy}{dx}$$ is on one side of the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

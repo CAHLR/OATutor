@@ -1,0 +1,88 @@
+[
+    {
+        "id": "a88c93efixedaxis10b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Rotational Kinetic Energy",
+        "text": "Rotational kinetic energy is given by the formula \\( KE_{rot} $$=$$ \\frac{1}{2} I \\omega**2 \\), where \\( I \\) is the moment of inertia and \\( \\omega \\) is the angular velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis10b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis10b-h1"
+        ],
+        "title": "Moment of Inertia for a Sphere",
+        "text": "The moment of inertia \\( I \\) for a uniform solid sphere is \\( I $$=$$ \\frac{2}{5} M $$R^2$$ \\). Use the given mass and radius of the Earth to calculate \\( I \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis10b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis10b-h1"
+        ],
+        "title": "Calculating Angular Velocity",
+        "text": "The angular velocity \\( \\omega \\) can be calculated using \\( \\omega $$=$$ \\frac{2 \\pi}{T} \\), where \\( T \\) is the period of rotation. For Earth's orbit, \\( T \\) is one year.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis10b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9.72E+37$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis10b-h2"
+        ],
+        "title": "Calculate Moment of Inertia",
+        "text": "Using the formula \\( I $$=$$ \\frac{2}{5} M $$R^2$$ \\), calculate the moment of inertia of the Earth.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis10b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.99E-07$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis10b-h3"
+        ],
+        "title": "Calculate Angular Velocity",
+        "text": "Using the formula \\( \\omega $$=$$ \\frac{2 \\pi}{T} \\), calculate the angular velocity of the Earth in its orbit.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis10b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.66E+33$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis10b-h4",
+            "a88c93efixedaxis10b-h5"
+        ],
+        "title": "Calculate Rotational Kinetic Energy",
+        "text": "Now, use the formula \\( KE_{rot} $$=$$ \\frac{1}{2} I \\omega**2 \\) to find the rotational kinetic energy of the Earth in its orbit.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

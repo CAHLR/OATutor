@@ -1,0 +1,11 @@
+{
+    "id": "acd9137measure26",
+    "title": "Unit Mismatch: $$SM_{FORCES}$$ Output",
+    "body": "On September $$23$$, $$1999$$, while attempting to guide a probe into its planned orbit around Mars, NASA lost contact with it. Subsequent investigations showed a piece of software called $$SM_{FORCES}$$ (or \u201csmall forces\u201d) was recording thruster performance data in the English units of pound-force-seconds $$(lbf-s)$$. However, other pieces of software that used these values for course corrections expected them to be recorded in the SI units of newton-seconds $$(N-s)$$, as dictated in the software interface protocols. $$1$$ lbf is approximately $$4.45$$ N.",
+    "variabilization": {},
+    "oer": "https://openstax.org/books/university-physics-volume-1/pages/1-3-unit-conversion",
+    "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+    "lesson": "1. Units and Measurements",
+    "lessonId": "3m8qEP59-EMQz-N70Qsc4Oo5",
+    "courseName": "OpenStax: University Physics"
+}

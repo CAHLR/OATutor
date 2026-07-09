@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a649252angle1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Double-angle formula for tangent",
+        "text": "Recall that $$\\tan(2\\theta) $$=$$ \\frac{2\\tan\\theta}{1 $$-$$ \\tan**2\\theta}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle1c-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{2\\tan\\theta}{1 $$-$$ \\tan**2\\theta}$$"
+        ],
+        "dependencies": [
+            "a649252angle1c-h1"
+        ],
+        "title": "Identify the formula",
+        "text": "What is the double-angle formula for $$\\tan(2\\theta)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{2\\tan\\theta}{1 $$-$$ \\tan**2\\theta}$$",
+            "$$\\frac{2\\tan\\theta}{1 + \\tan**2\\theta}$$",
+            "$$\\frac{\\tan\\theta}{1 $$-$$ \\tan**2\\theta}$$",
+            "$$\\frac{2\\tan\\theta}{1 $$-$$ \\tan\\theta}$$"
+        ]
+    },
+    {
+        "id": "a649252angle1c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle1c-h1"
+        ],
+        "title": "Substitute $$\\tan\\theta$$",
+        "text": "Substitute the given value of $$\\tan\\theta$$ into the formula.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle1c-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{9}{16}$$"
+        ],
+        "dependencies": [
+            "a649252angle1c-h2"
+        ],
+        "title": "Calculate $$\\tan**2\\theta$$",
+        "text": "Given $$\\tan\\theta $$=$$ $$\\frac{-3}{4}$$, $$what$$ $$is$$ $$\\tan**2\\theta$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle1c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle1c-h1"
+        ],
+        "title": "Alternative approach",
+        "text": "Alternatively, you can use the identity $$\\tan(2\\theta) $$=$$ \\frac{\\sin(2\\theta)}{\\cos(2\\theta)}$$ and the values you found in the previous steps.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle1c-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-24}{7}$$"
+        ],
+        "dependencies": [
+            "a649252angle1c-h3"
+        ],
+        "title": "Calculate $$\\tan(2\\theta)$$",
+        "text": "Using $$\\sin(2\\theta) $$=$$ $$\\frac{-24}{25}$$ and $$\\cos(2\\theta) $$=$$ $$\\frac{7}{25}$$, $$what$$ $$is$$ $$\\tan(2\\theta)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,75 @@
+[
+    {
+        "id": "ac76c6fbay1e-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.35$$ * $$0.42$$"
+        ],
+        "dependencies": [],
+        "title": "Hint",
+        "text": "P[Salmon from Spelling Bay]",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac76c6fbay1e-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$ - $$(0.35$$ * $$0.42)$$"
+        ],
+        "dependencies": [
+            "ac76c6fbay1e-h1"
+        ],
+        "title": "Hint",
+        "text": "P[Salmon not from Spelling Bay]",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac76c6fbay1e-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac76c6fbay1e-h2"
+        ],
+        "title": "Hint",
+        "text": "P[Salmon not from Spelling Bay for all $$10$$ times] $$=$$ P[Salmon not from Spelling Bay]**10",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac76c6fbay1e-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "(1 - $$0.35$$ * $$0.42)$$ ** $$10$$"
+        ],
+        "dependencies": [
+            "ac76c6fbay1e-h3"
+        ],
+        "title": "Hint",
+        "text": "P[Salmon not from Spelling Bay]**10",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac76c6fbay1e-h5",
+        "type": "hint",
+        "dependencies": [
+            "ac76c6fbay1e-h4"
+        ],
+        "title": "Hint",
+        "text": "P[at least one Salmon from Spelling Bay] $$=$$ $$1$$ - P[Salmon not from Spelling Bay for all $$10$$ times]",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ace918bnlaws9b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Weight on the Moon",
+        "text": "The weight of an object is the force exerted on it due to gravity. On the Moon, gravity is one-sixth of that on Earth.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws9b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws9b-h1"
+        ],
+        "title": "Weight Formula",
+        "text": "The weight of an object can be calculated using the formula: weight $$=$$ mass * gravitational acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws9b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws9b-h2"
+        ],
+        "title": "Gravitational Acceleration on the Moon",
+        "text": "On the Moon, the gravitational acceleration is one-sixth of Earth's gravitational acceleration, which is approximately $$9.8$$ m/s\u00b2.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws9b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$153$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws9b-h3"
+        ],
+        "title": "Calculate Mass",
+        "text": "Given that the weight on the Moon is $$250$$ N and the gravitational acceleration on the Moon is $$\\frac{9.8}{6}$$ m/s\u00b2, use the formula weight $$=$$ mass * gravitational acceleration to find the mass.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

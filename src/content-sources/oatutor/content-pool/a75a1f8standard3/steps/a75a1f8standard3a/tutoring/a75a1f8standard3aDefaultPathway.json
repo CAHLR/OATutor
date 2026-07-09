@@ -1,0 +1,157 @@
+[
+    {
+        "id": "a75a1f8standard3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula",
+        "text": "The formula for the $$z-score$$ is $$z=\\frac{x-\u03bc}{\\sigma}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a75a1f8standard3a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-3$$"
+        ],
+        "dependencies": [
+            "a75a1f8standard3a-h1"
+        ],
+        "title": "Identify $$x$$",
+        "text": "What is $$x$$ in this scenario?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a75a1f8standard3a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$-3$$"
+                ],
+                "dependencies": [],
+                "title": "Identify $$x$$",
+                "text": "How many pounds was the weight loss?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a75a1f8standard3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a75a1f8standard3a-h2"
+        ],
+        "title": "Z-score",
+        "text": "Find the $$z-score$$ of $$x$$, when $$x=-3$$ and $$X~N(5,2)$$ as given in the question.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a75a1f8standard3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a75a1f8standard3a-h3"
+        ],
+        "title": "Identify \u03bc and \u03c3",
+        "text": "We know $$X~N(\u03bc,\u03c3)$$. In this problem, $$X~N(5,2)$$. We need to identify what is \u03bc and \u03c3.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a75a1f8standard3a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a75a1f8standard3a-h4"
+        ],
+        "title": "Identify \u03bc",
+        "text": "The first argument in $$N(5,2)$$ is \u03bc. What is \u03bc?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a75a1f8standard3a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a75a1f8standard3a-h4"
+        ],
+        "title": "Identify \u03c3",
+        "text": "The second argument in $$N(5,2)$$ is \u03c3. What is \u03c3?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a75a1f8standard3a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a75a1f8standard3a-h5",
+            "a75a1f8standard3a-h6"
+        ],
+        "title": "Calculate $$z-score$$",
+        "text": "The formula for the $$z-score$$ is $$z=\\frac{x-\u03bc}{\\sigma}$$. Substitute the variables in the formula for numerical values, and solve for $$z$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a75a1f8standard3a-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$z=\\frac{\\left(-3-5\\right)}{2}$$"
+        ],
+        "dependencies": [
+            "a75a1f8standard3a-h7"
+        ],
+        "title": "Substitution",
+        "text": "We know $$x=-3$$, $$\u03bc=5$$, and $$\u03c3=2$$. What is $$z$$ after substituting these variables?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$z=\\frac{\\left(-3-5\\right)}{2}$$",
+            "$$z=\\frac{5-3}{2}$$",
+            "$$z=\\frac{\\left(-5-2\\right)}{3}$$",
+            "$$z=\\frac{2-5}{3}$$"
+        ]
+    },
+    {
+        "id": "a75a1f8standard3a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-4$$"
+        ],
+        "dependencies": [
+            "a75a1f8standard3a-h8"
+        ],
+        "title": "Solve for $$z$$",
+        "text": "What is $$\\frac{\\left(-3-5\\right)}{2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

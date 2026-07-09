@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a912db6arithmetic10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula for Writing Arithmetic Sequences",
+        "text": "Substitute given values into $$a_n=a_1+\\left(n-1\\right) d$$ to find terms of sequence.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a912db6arithmetic10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a912db6arithmetic10a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Substitute given values into $$a_n=a_1+\\left(n-1\\right) d$$ to find terms of sequence.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a912db6arithmetic10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a912db6arithmetic10a-h2"
+        ],
+        "title": "Substitute",
+        "text": "The equation is $$a_n=6+7\\left(n-1\\right)$$ after substituting given values.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a912db6arithmetic10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a912db6arithmetic10a-h3"
+        ],
+        "title": "Substitute",
+        "text": "Substitute $$6$$ for $$n$$ in equation to find the sixth term of the sequence.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a912db6arithmetic10a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$41$$"
+        ],
+        "dependencies": [
+            "a912db6arithmetic10a-h4"
+        ],
+        "title": "Substitute",
+        "text": "What is $$a_6$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

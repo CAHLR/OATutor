@@ -1,0 +1,100 @@
+[
+    {
+        "id": "a0ec58fterminology2g-h15",
+        "type": "hint",
+        "dependencies": [
+            "a0ec58fterminology2e-h14"
+        ],
+        "title": "Determine the Outcomes",
+        "text": "To determine the probability of an event occurring, we want to first determine what the possible outcomes that represent the space are.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0ec58fterminology2g-h16",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "{$$(1,1)$$, $$(1,3)$$, $$(2,1)$$, $$(2,2)$$, $$(2,3)$$, $$(2,4)$$, $$(3,1)$$, $$(3,2)$$, $$(3,3)$$, $$(3,4)$$, $$(4,2)$$, $$(4,4)$$}"
+        ],
+        "dependencies": [
+            "a0ec58fterminology2g-h15"
+        ],
+        "title": "Determining A OR B",
+        "text": "What is the list of outcomes that exist in A OR B? Effectively, which ordered pairs have a sum that is even OR the first number is prime?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "{$$(1,1)$$, $$(1,3)$$, $$(2,1)$$, $$(2,2)$$, $$(2,3)$$, $$(2,4)$$, $$(3,1)$$, $$(3,2)$$, $$(3,3)$$, $$(3,4)$$, $$(4,2)$$, $$(4,4)$$}",
+            "{$$(2,2)$$, $$(2,4)$$, $$(3,1)$$, $$(3,3)$$}",
+            "{$$(1,1)$$, $$(1,3)$$, $$(4,2)$$, $$(4,4)$$}",
+            "{$$(2,1)$$, $$(2,3)$$, $$(3,2)$$, $$(3,4)$$}"
+        ]
+    },
+    {
+        "id": "a0ec58fterminology2g-h17",
+        "type": "hint",
+        "dependencies": [
+            "a0ec58fterminology2g-h16"
+        ],
+        "title": "Definition of Probability",
+        "text": "The probability of any outcome in the sample space occuring is the long-term relative frequency of that oucome. Effectively, to find the probability of an event, P(event), we need to find the size of that event (how many outcomes are in it) and divide that by the size of the sample space (how many outcomes are in it).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0ec58fterminology2g-h18",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "a0ec58fterminology2g-h17"
+        ],
+        "title": "Size of A OR B",
+        "text": "What is the size of A OR B? Effectively, how ordered pairs have a sum that is even OR the first number in the pair is prime?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0ec58fterminology2g-h19",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12$$"
+        ],
+        "dependencies": [
+            "a0ec58fterminology2g-h18"
+        ],
+        "title": "Size of Sample Space",
+        "text": "What is the size of the sample space? Effectively, how many total ordered pairs were there?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0ec58fterminology2g-h20",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{10}{12}$$"
+        ],
+        "dependencies": [
+            "a0ec58fterminology2g-h19"
+        ],
+        "title": "Determining P(A OR B)",
+        "text": "What is P(A OR B), or what is the size of A OR B divided by the size of the sample size?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

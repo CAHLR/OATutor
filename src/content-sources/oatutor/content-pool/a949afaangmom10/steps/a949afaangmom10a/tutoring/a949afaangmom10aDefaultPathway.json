@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a949afaangmom10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Momentum",
+        "text": "Angular momentum (L) is given by the formula L $$=$$ $$m v r$$, where $$m$$ is the mass, v is the velocity, and $$r$$ is the perpendicular distance from the axis of rotation to the line of motion.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom10a-h1"
+        ],
+        "title": "Identify the Variables",
+        "text": "In this problem, the mass (m) of the airplane is $$4\\times{10}^4$$ kg, the velocity (v) is $$250$$ $$\\frac{m}{s}$$, and the perpendicular distance (r) is the altitude of $$10$$ km.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom10a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10000$$"
+        ],
+        "dependencies": [
+            "a949afaangmom10a-h2"
+        ],
+        "title": "Convert Units",
+        "text": "Convert the altitude from kilometers to meters to use in the formula.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom10a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$100000000000$$"
+        ],
+        "dependencies": [
+            "a949afaangmom10a-h3"
+        ],
+        "title": "Calculate Angular Momentum",
+        "text": "Use the formula L $$=$$ $$m v r$$ with the values $$m$$ $$=$$ $$4\\times{10}^4$$ kg, v $$=$$ $$250$$ $$\\frac{m}{s}$$, and $$r$$ $$=$$ $$10000$$ $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

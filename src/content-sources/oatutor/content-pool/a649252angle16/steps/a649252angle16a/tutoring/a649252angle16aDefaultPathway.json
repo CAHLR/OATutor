@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a649252angle16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall the double angle formula for sine",
+        "text": "The double angle formula for sine is $$\\sin(2x)$$ $$=$$ $$2\\sin(x)\\cos(x)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle16a-h1"
+        ],
+        "title": "Find \\sin(x)",
+        "text": "Use the Pythagorean identity $$\\sin**2(x) + \\cos**2(x) $$=$$ $$1$$ and the given quadrant to find $$\\sin(x)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle16a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\frac{\\sqrt{3}}{2}$$"
+        ],
+        "dependencies": [
+            "a649252angle16a-h2"
+        ],
+        "title": "Determine \\sin(x)",
+        "text": "What is $$\\sin(x)$$ if $$\\cos$$ $$x=-\\frac{1}{2}$$ and $$x$$ is in quadrant III?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

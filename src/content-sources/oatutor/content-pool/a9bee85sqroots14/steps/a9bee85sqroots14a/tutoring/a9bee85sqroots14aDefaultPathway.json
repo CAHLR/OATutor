@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a9bee85sqroots14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Split",
+        "text": "Rewrite $$\\sqrt{\\frac{2}{3}}$$ as $$\\frac{\\sqrt{2}}{\\sqrt{3}}$$, since $$\\sqrt{\\frac{a}{b}}=\\frac{\\sqrt{a}}{\\sqrt{b}}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9bee85sqroots14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9bee85sqroots14a-h1"
+        ],
+        "title": "Rationalize",
+        "text": "Multiply the numerator and denominator by $$\\sqrt{3}$$ to remove the radical from the denominator.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9bee85sqroots14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9bee85sqroots14a-h2"
+        ],
+        "title": "Simplify",
+        "text": "Simplify the radical and reduce the fraction if possible.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9bee85sqroots14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9bee85sqroots14a-h3"
+        ],
+        "title": "Answer",
+        "text": "The answer is $$\\frac{\\sqrt{6}}{3}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

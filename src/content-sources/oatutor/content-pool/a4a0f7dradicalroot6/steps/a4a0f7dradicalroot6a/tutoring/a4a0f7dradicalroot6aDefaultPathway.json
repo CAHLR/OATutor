@@ -1,0 +1,237 @@
+[
+    {
+        "id": "a4a0f7dradicalroot6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Order of Operation",
+        "text": "Solving the square root",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot6a-h1"
+        ],
+        "title": "Calculation",
+        "text": "Square root can be removed by squaring both sides",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot6a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x+5$$"
+        ],
+        "dependencies": [
+            "a4a0f7dradicalroot6a-h2"
+        ],
+        "title": "Squaring",
+        "text": "What is the square of $$\\sqrt{x+5}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot6a-h3"
+        ],
+        "title": "Operation",
+        "text": "Apply binomial formula on $$\\left(\\sqrt{x}+3\\right)^2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot6a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot6a-h4"
+        ],
+        "title": "Substitution",
+        "text": "$$a=\\sqrt{x}$$, $$b=3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot6a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x$$"
+        ],
+        "dependencies": [
+            "a4a0f7dradicalroot6a-h5"
+        ],
+        "title": "Substitution",
+        "text": "What is $$a^2$$ when $$a=\\sqrt{x}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a4a0f7dradicalroot6a-h6-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$6\\sqrt{x}$$"
+                ],
+                "dependencies": [],
+                "title": "Substitution",
+                "text": "What is 2ab when $$a=\\sqrt{x}$$, $$b=3$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a4a0f7dradicalroot6a-h6-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$9$$"
+                ],
+                "dependencies": [],
+                "title": "Substitution",
+                "text": "What is $$b^2$$ when $$b=3$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "a4a0f7dradicalroot6a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot6a-h6"
+        ],
+        "title": "Organizing",
+        "text": "The equation becomes $$x+6\\sqrt{x}+9=x+5$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot6a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot6a-h7"
+        ],
+        "title": "Organizing",
+        "text": "Isolating the $$x$$ term to left side",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot6a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot6a-h8"
+        ],
+        "title": "Organizing",
+        "text": "The equation becomes $$x+6\\sqrt{x}-x=5-9$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot6a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6\\sqrt{x}$$"
+        ],
+        "dependencies": [
+            "a4a0f7dradicalroot6a-h9"
+        ],
+        "title": "Calculation",
+        "text": "What does $$x+6\\sqrt{x}-x=$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot6a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-4$$"
+        ],
+        "dependencies": [
+            "a4a0f7dradicalroot6a-h10"
+        ],
+        "title": "Calculation",
+        "text": "What does $$5-9=$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot6a-h12",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot6a-h11"
+        ],
+        "title": "Organizing",
+        "text": "The equation becomes $$6\\sqrt{x}=-4$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot6a-h13",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot6a-h12"
+        ],
+        "title": "Dividing",
+        "text": "Divding both side by $$6$$ to obtain $$\\sqrt{x}=\\frac{-4}{6}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot6a-h14",
+        "type": "hint",
+        "dependencies": [
+            "a4a0f7dradicalroot6a-h13"
+        ],
+        "title": "Calculation",
+        "text": "Square root can be removed by squaring both sides",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a4a0f7dradicalroot6a-h15",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{16}{36}$$"
+        ],
+        "dependencies": [
+            "a4a0f7dradicalroot6a-h14"
+        ],
+        "title": "Squaring",
+        "text": "What is $${\\left(-\\frac{4}{6}\\right)}^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a73b129counting9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "You are given three different groups of paint colors: shades of green, blue, and yellow. Each color has a different number of shades to choose from. You're asked how many ways you can pick a color, with the option to choose from any of these three groups.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73b129counting9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73b129counting9a-h1"
+        ],
+        "title": "Addition Principle",
+        "text": "Since you're picking one color from one of these groups, and these groups don't overlap (you can't pick a color from both green and blue at the same time), you should use the Addition Principle to count the total number of ways.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73b129counting9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a73b129counting9a-h2"
+        ],
+        "title": "Finding the answer",
+        "text": "Add the quantity of every shade.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

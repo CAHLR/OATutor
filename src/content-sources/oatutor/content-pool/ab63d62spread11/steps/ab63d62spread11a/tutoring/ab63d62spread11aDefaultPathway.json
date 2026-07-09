@@ -1,0 +1,101 @@
+[
+    {
+        "id": "ab63d62spread11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determine Swimmers' Standard Deviations",
+        "text": "For each swimmer, determine how many standard deviations (#ofSTDEVs) her time is away from the average, for her team. Pay careful attention to signs when comparing and interpreting the answer. Remember that faster times means negative standard deviations (faster than the mean).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab63d62spread11a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1.25$$"
+        ],
+        "dependencies": [
+            "ab63d62spread11a-h1"
+        ],
+        "title": "Angie's Standard Deviation",
+        "text": "How many standard deviations away from the mean is Angie? Pay careful attention to sign. Round to the nearest hundredth.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "ab63d62spread11a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$-1.25$$"
+                ],
+                "dependencies": [],
+                "title": "Angie's Standard Deviation",
+                "text": "What is $$\\frac{26.2-27.2}{0.8}$$? Round to the nearest hundredth.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "ab63d62spread11a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-2$$"
+        ],
+        "dependencies": [
+            "ab63d62spread11a-h2"
+        ],
+        "title": "Beth's Standard Deviation",
+        "text": "How many standard deviations away from the mean is Beth? Pay careful attention to sign. Round to the nearest hundredth.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "ab63d62spread11a-h3-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$-2$$"
+                ],
+                "dependencies": [],
+                "title": "Beth's Standard Deviation",
+                "text": "What is $$\\frac{27.3-30.1}{1.4}$$? Round to the nearest hundredth.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "ab63d62spread11a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Beth"
+        ],
+        "dependencies": [
+            "ab63d62spread11a-h3"
+        ],
+        "title": "Determining Which Swimmer's Time is Better",
+        "text": "Which swimmer had a faster time when compared to their team? Effectively, which swimmer had a lower standard deviation score?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Angie",
+            "Beth"
+        ]
+    }
+]

@@ -1,0 +1,61 @@
+[
+    {
+        "id": "a298b40expectedvalue18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "How to Calculate Standard Deviation",
+        "text": "The standard deviation of a PDF (probability density function) is the square root of variance. The value for variance is in the fourth column of the provided table since variance is the summation of all those rows, so we need to calculate standard deviation from that.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a298b40expectedvalue18a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.8$$"
+        ],
+        "dependencies": [
+            "a298b40expectedvalue18a-h1"
+        ],
+        "title": "Standard Deviation as the Square Root of Variance",
+        "text": "What is the standard deviation given that standard deviation is the square root of variance and variance is the summation of the values in the fourth column?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "a298b40expectedvalue18a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$3.24$$"
+                ],
+                "dependencies": [],
+                "title": "Finding Variance",
+                "text": "What is the variance? What is the summation of all the values in the fourth column?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "a298b40expectedvalue18a-h2-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$1.8$$"
+                ],
+                "dependencies": [],
+                "title": "Finding Standard Deviation",
+                "text": "Based on the variance found, standard deviation is the square root of variance. Therefore, what is the square root of the variance you found?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    }
+]

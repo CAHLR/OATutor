@@ -1,0 +1,115 @@
+[
+    {
+        "id": "a3ae150real9a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [],
+        "title": "Identify A, B, and C",
+        "text": "What is A",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$5$$",
+            "$$2$$",
+            "$$3$$",
+            "$$-5$$"
+        ]
+    },
+    {
+        "id": "a3ae150real9a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2\\sqrt{3}$$"
+        ],
+        "dependencies": [
+            "a3ae150real9a-h1"
+        ],
+        "title": "Identify A, B, and C",
+        "text": "What is B",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2\\sqrt{3}$$",
+            "$$\\sqrt{3}$$",
+            "$$2\\sqrt{2}$$",
+            "$$-2\\sqrt{3}$$"
+        ]
+    },
+    {
+        "id": "a3ae150real9a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$12$$"
+        ],
+        "dependencies": [
+            "a3ae150real9a-h2"
+        ],
+        "title": "Identify A, B, and C",
+        "text": "What is C",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$12$$",
+            "$$2$$",
+            "$$-12$$",
+            "$$24$$"
+        ]
+    },
+    {
+        "id": "a3ae150real9a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-228$$"
+        ],
+        "dependencies": [
+            "a3ae150real9a-h3"
+        ],
+        "title": "Discriminant",
+        "text": "Find the discriminant, $$B^2-4AC$$",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$-228$$",
+            "$$228$$",
+            "$$-12$$",
+            "$$-48$$"
+        ]
+    },
+    {
+        "id": "a3ae150real9a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "ellipse"
+        ],
+        "dependencies": [
+            "a3ae150real9a-h4"
+        ],
+        "title": "Discriminant",
+        "text": "If the discriminant is less than $$0$$, the graph will be an",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "ellipse",
+            "hyperbola",
+            "parabola",
+            "circle"
+        ]
+    }
+]

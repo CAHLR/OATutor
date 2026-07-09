@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a09f25fmotion6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Average Acceleration",
+        "text": "To find the average acceleration, you need to know the change in velocity and the time over which this change occurs. The formula for average acceleration is: \\( a $$=$$ \\frac{\\Delta v}{\\Delta t} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion6a-h1"
+        ],
+        "title": "Convert Units",
+        "text": "The speed is given in $$\\frac{km}{s}$$, but we need it in $$\\frac{m}{s}$$ for the calculation. Remember that $$1$$ km $$=$$ $$1000$$ $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion6a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6500$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion6a-h2"
+        ],
+        "title": "Calculate Change in Velocity",
+        "text": "Convert the final speed from $$\\frac{km}{s}$$ to $$\\frac{m}{s}$$. What is the final speed in $$\\frac{m}{s}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion6a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$108.33$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion6a-h3"
+        ],
+        "title": "Calculate Average Acceleration",
+        "text": "Use the formula \\( a $$=$$ \\frac{\\Delta v}{\\Delta t} \\) with \\( \\Delta v $$=$$ $$6500$$ \\) $$\\frac{m}{s}$$ and \\( \\Delta $$t$$ $$=$$ $$60$$ \\) s. What is the average acceleration?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion6a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion6a-h4"
+        ],
+        "title": "Express in Multiples of g",
+        "text": "To express the acceleration in terms of \\( g \\), divide the average acceleration by \\( $$9.80$$ \\) m/s\u00b2.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion6a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$11.1$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion6a-h5"
+        ],
+        "title": "Calculate Multiples of g",
+        "text": "Divide the average acceleration by \\( $$9.80$$ \\) m/s\u00b2. What is the acceleration in terms of \\( g \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

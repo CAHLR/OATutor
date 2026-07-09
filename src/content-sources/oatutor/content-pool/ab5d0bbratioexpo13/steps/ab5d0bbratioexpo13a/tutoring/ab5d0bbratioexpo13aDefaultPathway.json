@@ -1,0 +1,41 @@
+[
+    {
+        "id": "ab5d0bbratioexpo13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplifying",
+        "text": "We can either take the square root first or cube first. In this case, taking the square root first is better because cubing would result in a large number.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab5d0bbratioexpo13a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "ab5d0bbratioexpo13a-h1"
+        ],
+        "title": "Square Root",
+        "text": "What is the square root of 9?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ab5d0bbratioexpo13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab5d0bbratioexpo13a-h2"
+        ],
+        "title": "Squaring",
+        "text": "After taking the square root, all we have left is $$3^3$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a56bd16newtonapps16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Ideal Banking Condition",
+        "text": "In an ideally banked turn, the only forces acting on the bobsled are the gravitational force and the normal force. The frictional force is not needed to keep the bobsled on the track.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps16a-h1"
+        ],
+        "title": "Forces in a Banked Turn",
+        "text": "The gravitational force acts vertically downward, while the normal force acts perpendicular to the surface of the track. The component of the normal force provides the centripetal force needed for the turn.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps16a-h2"
+        ],
+        "title": "Centripetal Force Equation",
+        "text": "The centripetal force needed for the turn is given by the equation: centripetal force $$=$$ mass * velocity squared / radius.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps16a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps16a-h3"
+        ],
+        "title": "Normal Force Components",
+        "text": "The normal force can be broken into two components: one that balances the gravitational force and one that provides the centripetal force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps16a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$24.6$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps16a-h4"
+        ],
+        "title": "Calculate the Radius",
+        "text": "Using the equation for centripetal force and the components of the normal force, calculate the radius of the turn. Use the formula: radius $$=$$ velocity squared / (g * tan(theta)).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

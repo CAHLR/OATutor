@@ -1,0 +1,52 @@
+[
+    {
+        "id": "af4e405log7b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Convert to Exponential Form",
+        "text": "First, convert the expression to exponential form. To convert a logarithmic equation to exponential form, we need to identify the base of the exponential, a, and the exponent $$y$$ since $$y=\\log_{a}\\left(x\\right)$$ is equivalent to $$x=a^y$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af4e405log7b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$4^3=x$$"
+        ],
+        "dependencies": [
+            "af4e405log7b-h1"
+        ],
+        "title": "Determining the Exponential Form",
+        "text": "What is the exponential form of the equation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$4^3=x$$",
+            "$$3^4=x$$",
+            "$$4^x=3$$",
+            "$$3^x=4$$"
+        ]
+    },
+    {
+        "id": "af4e405log7b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$64$$"
+        ],
+        "dependencies": [
+            "af4e405log7b-h2"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "What is the solution for $$x$$ in the exponential equation you found above?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

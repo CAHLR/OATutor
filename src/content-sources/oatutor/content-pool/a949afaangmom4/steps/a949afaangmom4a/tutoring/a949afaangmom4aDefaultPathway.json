@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a949afaangmom4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Moment of Inertia",
+        "text": "The moment of inertia is a measure of an object's resistance to changes in its rotation. It depends on the mass distribution relative to the axis of rotation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom4a-h1"
+        ],
+        "title": "Formula for Moment of Inertia",
+        "text": "For a cylindrical object, the moment of inertia can be expressed as $$I=k m r^2$$, where k is a constant that depends on the shape of the object.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom4a-h2"
+        ],
+        "title": "Finding the Constant k",
+        "text": "The constant k can be determined by analyzing the motion of the object as it rolls down the incline. Consider the forces and torques acting on the object.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.656m r^2$$"
+        ],
+        "dependencies": [
+            "a949afaangmom4a-h3"
+        ],
+        "title": "Calculate the Moment of Inertia",
+        "text": "Using the given information and the formula $$I=k m r^2$$, calculate the moment of inertia of the body.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

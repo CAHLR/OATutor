@@ -1,0 +1,53 @@
+[
+    {
+        "id": "abaea60linmom1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Momentum",
+        "text": "Momentum is the product of mass and velocity. To find the momentum of an object, multiply its mass by its velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom1b-h2",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom1b-h1"
+        ],
+        "title": "Mass of the Box",
+        "text": "The mass of the box is given as $$5$$ kg.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom1b-h3",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom1b-h2"
+        ],
+        "title": "Velocity of the Box",
+        "text": "The velocity of the box is the same as the skater's velocity, which is $$5$$ $$\\frac{m}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom1b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5\\times5$$"
+        ],
+        "dependencies": [
+            "abaea60linmom1b-h3"
+        ],
+        "title": "Calculate the Momentum",
+        "text": "Use the formula for momentum: mass times velocity. What is the momentum of the box?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,104 @@
+[
+    {
+        "id": "a649252angle44a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall properties of negative angles",
+        "text": "Remember that sine is an odd function and cosine is an even function.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle44a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\sin$$ $$x$$"
+        ],
+        "dependencies": [
+            "a649252angle44a-h1"
+        ],
+        "title": "What is $$\\sin(-x)$$ equal to?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle44a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\cos$$ $$x$$"
+        ],
+        "dependencies": [
+            "a649252angle44a-h1"
+        ],
+        "title": "What is $$\\cos(-x)$$ equal to?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle44a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle44a-h1"
+        ],
+        "title": "Apply the double angle identity for sine",
+        "text": "Substitute the simplified terms and use the identity $$\\sin(2x)$$ $$=$$ $$2\\sin$$ $$x\\cos$$ $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle44a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-2(-\\sin$$ $$x)(\\cos$$ $$x)$$"
+        ],
+        "dependencies": [
+            "a649252angle44a-h2"
+        ],
+        "title": "Substitute the simplified terms back into the expression.",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$-2(-\\sin$$ $$x)(\\cos$$ $$x)$$",
+            "$$-2(\\sin$$ $$x)(\\cos$$ $$x)$$",
+            "$$2(-\\sin$$ $$x)(\\cos$$ $$x)$$",
+            "$$-2(-\\sin$$ $$x)(-\\cos$$ $$x)$$"
+        ]
+    },
+    {
+        "id": "a649252angle44a-s4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2\\sin$$ $$x\\cos$$ $$x$$ $$=$$ $$\\sin(2x)$$"
+        ],
+        "dependencies": [
+            "a649252angle44a-h2"
+        ],
+        "title": "Simplify the expression and apply the double angle identity.",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2\\sin$$ $$x\\cos$$ $$x$$ $$=$$ $$\\sin(2x)$$",
+            "$$2\\sin$$ $$x\\cos$$ $$x$$ $$=$$ $$\\cos(2x)$$",
+            "$$2\\sin$$ $$x\\cos$$ $$x$$ $$=$$ $$\\sin(x)$$",
+            "$$\\sin$$ $$x\\cos$$ $$x$$ $$=$$ $$\\sin(2x)$$"
+        ]
+    }
+]

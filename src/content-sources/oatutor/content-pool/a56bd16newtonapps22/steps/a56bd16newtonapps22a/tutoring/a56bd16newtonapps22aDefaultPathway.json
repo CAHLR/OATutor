@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a56bd16newtonapps22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Terminal Velocity",
+        "text": "Terminal velocity is reached when the force of gravity is balanced by the drag force. At this point, the net force is zero, and the object falls at a constant speed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps22a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps22a-h1"
+        ],
+        "title": "Formula for Terminal Velocity",
+        "text": "The formula for terminal velocity \\(v_t\\) is given by: \\(v_t=sqrt((2*m*g)/(C_d*\\rho*A))\\), where \\(m\\) is mass, \\(g\\) is acceleration due to gravity, \\(C_d\\) is the drag coefficient, \\(\\rho\\) is the density of air, and \\(A\\) is the cross-sectional area.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps22a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$115$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps22a-h2"
+        ],
+        "title": "Calculate the Terminal Velocity",
+        "text": "Substitute the given values into the formula: $$\\(m=80.0\\, kg\\)$$, \\(g=9.81\\,m/s**2\\), \\(C_d=0.70\\), \\(\\rho=1.21\\,kg/m**3\\), \\(A=0.140\\,m**2\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

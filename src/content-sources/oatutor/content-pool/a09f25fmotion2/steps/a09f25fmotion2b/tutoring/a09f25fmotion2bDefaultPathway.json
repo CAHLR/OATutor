@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a09f25fmotion2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Displacement",
+        "text": "Displacement is the change in position of the particle. It is calculated as the final position minus the initial position.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion2b-h1"
+        ],
+        "title": "Find Initial and Final Positions",
+        "text": "Use the position function $$x(t)=4-2t$$ to find the position of the particle at $$t=3.0s$$ and $$t=6.0s$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion2b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-2$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion2b-h2"
+        ],
+        "title": "Calculate Initial Position",
+        "text": "Substitute $$t=3.0$$ into the position function $$x(t)=4-2t$$ to find the initial position.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion2b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-8$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion2b-h3"
+        ],
+        "title": "Calculate Final Position",
+        "text": "Substitute $$t=6.0$$ into the position function $$x(t)=4-2t$$ to find the final position.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion2b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-6$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion2b-h4"
+        ],
+        "title": "Calculate Displacement",
+        "text": "Use the formula for displacement: final position minus initial position. Use your results from the previous steps.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

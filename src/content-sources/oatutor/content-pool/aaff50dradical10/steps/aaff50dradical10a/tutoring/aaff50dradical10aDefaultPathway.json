@@ -1,0 +1,75 @@
+[
+    {
+        "id": "aaff50dradical10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Finding the Largest Perfect Square",
+        "text": "You must first identify the largest perfect square factor of the variable inside the radical.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aaff50dradical10a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$25a^8$$"
+        ],
+        "dependencies": [
+            "aaff50dradical10a-h1"
+        ],
+        "title": "Finding the Largest Perfect Square",
+        "text": "What is the largest perfect square factor of the variable inside the radical?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aaff50dradical10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aaff50dradical10a-h2"
+        ],
+        "title": "Rewriting the Radical",
+        "text": "You must now rewrite the radical as the product of two radicals. One of these radicals must include the perfect square. This is possible because of the product rule.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aaff50dradical10a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sqrt{25a^8} \\sqrt{3a}$$"
+        ],
+        "dependencies": [
+            "aaff50dradical10a-h3"
+        ],
+        "title": "Rewriting the Radical",
+        "text": "What is the result?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aaff50dradical10a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5a^4 \\sqrt{3a}$$"
+        ],
+        "dependencies": [
+            "aaff50dradical10a-h4"
+        ],
+        "title": "Simplfying the Radicals",
+        "text": "What is the result after simplifying the square root with the perfect square?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

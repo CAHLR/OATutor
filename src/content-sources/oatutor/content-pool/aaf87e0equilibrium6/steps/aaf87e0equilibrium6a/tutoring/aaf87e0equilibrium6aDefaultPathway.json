@@ -1,0 +1,134 @@
+[
+    {
+        "id": "aaf87e0equilibrium6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Young's Modulus",
+        "text": "Young's modulus is a measure of the stiffness of a material. It is defined as the ratio of stress to strain.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aaf87e0equilibrium6a-h1"
+        ],
+        "title": "Formula for Young's Modulus",
+        "text": "The formula for Young's modulus (E) is given by $$E=\\frac{stress}{strain}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aaf87e0equilibrium6a-h2"
+        ],
+        "title": "Calculating Stress",
+        "text": "Stress is calculated as the force applied divided by the cross-sectional area of the rope. Use the formula $$stress=\\frac{F}{A}$$, where F is the force and A is the area.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aaf87e0equilibrium6a-h3"
+        ],
+        "title": "Calculating Strain",
+        "text": "Strain is the change in length divided by the original length. Use the formula strain=\u0394L/L\u2080, where \u0394L is the change in length and L\u2080 is the original length.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium6a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$882$$"
+        ],
+        "dependencies": [
+            "aaf87e0equilibrium6a-h3"
+        ],
+        "title": "Calculate the Force",
+        "text": "The force exerted by the climber is equal to their weight. Use the formula $$F=m g$$, where $$m$$ is the mass and g is the acceleration due to gravity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium6a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7.85E-05$$"
+        ],
+        "dependencies": [
+            "aaf87e0equilibrium6a-h5"
+        ],
+        "title": "Calculate the Cross-Sectional Area",
+        "text": "The cross-sectional area of the rope is calculated using the formula $$A=\\pi \\left(\\frac{d}{2}\\right)^2$$, where $$d$$ is the diameter of the rope.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium6a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$11242038.22$$"
+        ],
+        "dependencies": [
+            "aaf87e0equilibrium6a-h6"
+        ],
+        "title": "Calculate Stress",
+        "text": "Using the force and area calculated, find the stress using $$stress=\\frac{F}{A}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium6a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.008333$$"
+        ],
+        "dependencies": [
+            "aaf87e0equilibrium6a-h4"
+        ],
+        "title": "Calculate Strain",
+        "text": "Using the change in length and original length, find the strain using strain=\u0394L/L\u2080.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium6a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1350000000$$"
+        ],
+        "dependencies": [
+            "aaf87e0equilibrium6a-h7",
+            "aaf87e0equilibrium6a-h8"
+        ],
+        "title": "Calculate Young's Modulus",
+        "text": "Finally, calculate Young's modulus using $$E=\\frac{stress}{strain}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

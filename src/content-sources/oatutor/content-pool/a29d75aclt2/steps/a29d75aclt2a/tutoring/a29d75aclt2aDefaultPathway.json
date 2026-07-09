@@ -1,0 +1,144 @@
+[
+    {
+        "id": "a29d75aclt2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "What to Solve For",
+        "text": "Find \u2211x where $$z$$ $$=$$ $$1.5$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a29d75aclt2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a29d75aclt2a-h1"
+        ],
+        "title": "\u2211x Equation",
+        "text": "\u2211x $$=$$ (n)(\u03bc\u2093) + $$z \\sqrt{n}$$ \u03c3\u2093, where $$x$$ is one value from the original unknown population, $$n$$ is the sample size, \u03bc\u2093 is the mean of X, $$z$$ is is $$z-score$$, and \u03c3\u2093 is the standard deviation of X.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a29d75aclt2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$80$$"
+        ],
+        "dependencies": [
+            "a29d75aclt2a-h2"
+        ],
+        "title": "Sample Size",
+        "text": "What is $$n$$, the sample size?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a29d75aclt2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$90$$"
+        ],
+        "dependencies": [
+            "a29d75aclt2a-h2"
+        ],
+        "title": "Mean of X",
+        "text": "What is \u03bc\u2093, the mean of X (one value from the original unknown population)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a29d75aclt2a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.5$$"
+        ],
+        "dependencies": [
+            "a29d75aclt2a-h2"
+        ],
+        "title": "Z-Score",
+        "text": "What is $$z$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a29d75aclt2a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8.944$$"
+        ],
+        "dependencies": [
+            "a29d75aclt2a-h2"
+        ],
+        "title": "$$\\sqrt{n}$$",
+        "text": "What is $$\\sqrt{n}$$? Round to the nearest thousandths place.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a29d75aclt2a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$15$$"
+        ],
+        "dependencies": [
+            "a29d75aclt2a-h2"
+        ],
+        "title": "Standard Deviation of X",
+        "text": "What is \u03c3\u2093, the standard deviation of X (one value from the original unknown population)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a29d75aclt2a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a29d75aclt2a-h1",
+            "a29d75aclt2a-h2",
+            "a29d75aclt2a-h3",
+            "a29d75aclt2a-h4",
+            "a29d75aclt2a-h5",
+            "a29d75aclt2a-h6",
+            "a29d75aclt2a-h7"
+        ],
+        "title": "Plugging Into the \u2211x Equation",
+        "text": "Plug your values into the equation: \u2211x $$=$$ (n)(\u03bc\u2093) + $$z \\sqrt{n}$$ \u03c3\u2093. Remember to round your answer to the nearest tenths place.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a29d75aclt2a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7401.2$$"
+        ],
+        "dependencies": [
+            "a29d75aclt2a-h8"
+        ],
+        "title": "Plugged-In \u2211x Equation",
+        "text": "What is \u2211x $$=$$ (80)(90) + $$(1.5)(\u221a80)(15)$$? Round to the nearest tenths place.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

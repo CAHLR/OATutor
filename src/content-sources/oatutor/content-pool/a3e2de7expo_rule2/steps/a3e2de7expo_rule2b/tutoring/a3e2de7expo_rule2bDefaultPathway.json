@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a3e2de7expo_rule2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Product Rule",
+        "text": "The product rule of exponents states that when you multiply two powers with the same base, you add the exponents.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a3e2de7expo_rule2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3e2de7expo_rule2b-h1"
+        ],
+        "title": "Identify the Base",
+        "text": "In the expression $$\\left(\\frac{2}{y}\\right)^4 \\frac{2}{y}$$, identify the common base that is being multiplied.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a3e2de7expo_rule2b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(\\frac{2}{y}\\right)^5$$"
+        ],
+        "dependencies": [
+            "a3e2de7expo_rule2b-h2"
+        ],
+        "title": "Apply the Product Rule",
+        "text": "Using the product rule, add the exponents of the common base.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a3e2de7expo_rule2b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3e2de7expo_rule2b-h3"
+        ],
+        "title": "Simplify the Expression",
+        "text": "After applying the product rule, simplify the expression to its final form.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

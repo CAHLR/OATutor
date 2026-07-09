@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a949afaangmom21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Precession",
+        "text": "Precession is the slow movement of the axis of a spinning object around another axis due to an external force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom21a-h1"
+        ],
+        "title": "Formula for Precession Angular Velocity",
+        "text": "The precession angular velocity \\( \\omega_p \\) can be calculated using the formula: \\( \\omega_p $$=$$ \\frac{mgr}{I\\omega_s} \\), where \\( $$m$$ \\) is the mass, \\( g \\) is the acceleration due to gravity, \\( $$r$$ \\) is the distance from the pivot, \\( I \\) is the moment of inertia, and \\( \\omega_s \\) is the spin angular velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom21a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.0025$$"
+        ],
+        "dependencies": [
+            "a949afaangmom21a-h2"
+        ],
+        "title": "Calculate Moment of Inertia",
+        "text": "Calculate the moment of inertia \\( I \\) of the disk using the formula \\( I $$=$$ \\frac{1}{2}mr**2 \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom21a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "80\\pi"
+        ],
+        "dependencies": [
+            "a949afaangmom21a-h3"
+        ],
+        "title": "Calculate Spin Angular Velocity",
+        "text": "Convert the spin rate from revolutions per second to radians per second. Use the conversion \\( $$1$$ \\text{ rev} $$=$$ 2\\pi \\text{ rad} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom21a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.17$$"
+        ],
+        "dependencies": [
+            "a949afaangmom21a-h4"
+        ],
+        "title": "Calculate Precession Angular Velocity",
+        "text": "Substitute the values into the formula \\( \\omega_p $$=$$ \\frac{mgr}{I\\omega_s} \\) to find the precession angular velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ac98d98systemMat14c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "First Step",
+        "text": "First, multiply each entry of row $$2$$ by $$3$$. The result is $$\\begin{bmatrix} 4 & -6 & -3 \\\\ 9 & 6 & 3 \\end{bmatrix}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac98d98systemMat14c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac98d98systemMat14c-h1"
+        ],
+        "title": "Second Step",
+        "text": "Then, add each entry of row $$1$$ to the entry in the same column of row $$2$$. (Row $$1$$, meanwhile, remains unchanged.) The answer is $$\\begin{bmatrix} 4 & -6 & -3 \\\\ 13 & 0 & 0 \\end{bmatrix}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

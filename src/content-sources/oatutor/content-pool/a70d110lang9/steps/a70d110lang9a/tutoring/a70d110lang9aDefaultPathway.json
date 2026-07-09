@@ -1,0 +1,173 @@
+[
+    {
+        "id": "a70d110lang9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Start with the smallest prime number",
+        "text": "Begin by dividing $$784$$ by the smallest prime number, which is $$2$$. Check if $$784$$ is divisible by $$2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70d110lang9a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a70d110lang9a-h1"
+        ],
+        "title": "Is $$784$$ divisible by 2?",
+        "text": "Divide $$784$$ by $$2$$ and check if the result is a whole number.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a70d110lang9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a70d110lang9a-h1"
+        ],
+        "title": "Continue dividing by $$2$$",
+        "text": "Since $$784$$ is divisible by $$2$$, divide the result by $$2$$ again. Repeat this process until the result is no longer divisible by $$2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70d110lang9a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$49$$"
+        ],
+        "dependencies": [
+            "a70d110lang9a-h2"
+        ],
+        "title": "What is the result after dividing by $$2$$ multiple times?",
+        "text": "Keep dividing by $$2$$ until you can no longer do so. What number do you get?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70d110lang9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a70d110lang9a-h2"
+        ],
+        "title": "Move to the next smallest prime number",
+        "text": "Now that you have $$49$$, check if it is divisible by the next smallest prime number, which is $$3$$. If not, try the next prime number.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70d110lang9a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a70d110lang9a-h3"
+        ],
+        "title": "Is $$49$$ divisible by 3?",
+        "text": "Divide $$49$$ by $$3$$ and check if the result is a whole number.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a70d110lang9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a70d110lang9a-h3"
+        ],
+        "title": "Try the next prime number",
+        "text": "Since $$49$$ is not divisible by $$3$$, try dividing it by the next prime number, which is $$5$$. If not, try the next prime number.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70d110lang9a-s4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a70d110lang9a-h4"
+        ],
+        "title": "Is $$49$$ divisible by 5?",
+        "text": "Divide $$49$$ by $$5$$ and check if the result is a whole number.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a70d110lang9a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a70d110lang9a-h4"
+        ],
+        "title": "Check divisibility by $$7$$",
+        "text": "Since $$49$$ is not divisible by $$5$$, try dividing it by the next prime number, which is $$7$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70d110lang9a-s5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a70d110lang9a-h5"
+        ],
+        "title": "Is $$49$$ divisible by 7?",
+        "text": "Divide $$49$$ by $$7$$ and check if the result is a whole number.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a70d110lang9a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a70d110lang9a-h5"
+        ],
+        "title": "Complete the factorization",
+        "text": "Now that you have divided $$49$$ by $$7$$, continue dividing the result by $$7$$ until you can no longer do so. This will complete the prime factorization.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

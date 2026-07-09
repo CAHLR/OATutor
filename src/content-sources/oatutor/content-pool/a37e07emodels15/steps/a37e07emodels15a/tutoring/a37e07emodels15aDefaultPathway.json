@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a37e07emodels15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Plugging values into equation",
+        "text": "Plug in $$900$$ for P(t) in the equation and solve for $$t$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a37e07emodels15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a37e07emodels15a-h1"
+        ],
+        "title": "Rearranging equation",
+        "text": "Rearrange the equation so that $$e^{-0.6 t}$$ is isolated.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a37e07emodels15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a37e07emodels15a-h2"
+        ],
+        "title": "Natural log",
+        "text": "To get rid of e, take the natural log of both sides of the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a37e07emodels15a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7.3$$"
+        ],
+        "dependencies": [
+            "a37e07emodels15a-h3"
+        ],
+        "title": "Solving",
+        "text": "What is $$\\frac{4.4}{0.6}$$ rounded to the nearest tenth?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

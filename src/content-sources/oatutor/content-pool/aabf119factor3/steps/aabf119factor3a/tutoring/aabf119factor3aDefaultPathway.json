@@ -1,0 +1,70 @@
+[
+    {
+        "id": "aabf119factor3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor the expression",
+        "text": "A trinomial of the form $$x^2+bx+c$$ can be written in factored form as $$\\left(x+p\\right) \\left(x+q\\right)$$ where $$pq=c$$ and $$p+q=b$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aabf119factor3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aabf119factor3a-h1"
+        ],
+        "title": "Factor the expression",
+        "text": "To factor a polynomial $$x^2+bx+c$$, the first step is to find two numbers with a product of c and a sum of $$b$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aabf119factor3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-15$$"
+        ],
+        "dependencies": [
+            "aabf119factor3a-h2"
+        ],
+        "title": "Product of Numbers",
+        "text": "What is $$3\\left(-5\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aabf119factor3a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-2$$"
+        ],
+        "dependencies": [
+            "aabf119factor3a-h3"
+        ],
+        "title": "Sum of Numbers",
+        "text": "What is $$3+\\left(-5\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aabf119factor3a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aabf119factor3a-h4"
+        ],
+        "title": "In a polynomial $$x^2+bx+c$$, if $$f g=c$$ and $$f+g=b$$, then the polynomial can be factored as $$\\left(x+f\\right) \\left(x+g\\right)$$.",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

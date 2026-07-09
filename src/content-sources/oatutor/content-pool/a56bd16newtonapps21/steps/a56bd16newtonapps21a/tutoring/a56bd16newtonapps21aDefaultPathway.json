@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a56bd16newtonapps21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Lift Force",
+        "text": "The lift force is the force that acts perpendicular to the direction of motion of the airplane. It is responsible for keeping the airplane in the air.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps21a-h1"
+        ],
+        "title": "Components of Lift Force",
+        "text": "When the airplane banks, the lift force can be divided into two components: one vertical and one horizontal. The vertical component counteracts gravity, while the horizontal component provides the centripetal force for the turn.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps21a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps21a-h2"
+        ],
+        "title": "Using Trigonometry",
+        "text": "To find the magnitude of the lift force, use trigonometry. The vertical component of the lift force is equal to the weight of the airplane, and the angle of banking is given.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps21a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.5\\times{10}^3\\times9.8$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps21a-h3"
+        ],
+        "title": "Calculate the Weight of the Airplane",
+        "text": "The weight of the airplane can be calculated using the formula: weight $$=$$ mass * gravity. Use gravity as $$9.8$$ m/s\u00b2.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps21a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2.5\\times{10}^3\\times9.8}cos^$\\left(30\\righ$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps21a-h4"
+        ],
+        "title": "Find the Lift Force",
+        "text": "The vertical component of the lift force is equal to the weight of the airplane. Use the formula: lift_force*cos(30 degrees) $$=$$ weight.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps21a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$28290$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps21a-h5"
+        ],
+        "title": "Calculate the Magnitude of the Lift Force",
+        "text": "Solve for the lift force using the equation from the previous step.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

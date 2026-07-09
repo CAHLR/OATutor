@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a88c93efixedaxis16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Torque",
+        "text": "Torque is the rotational equivalent of force. It is calculated by multiplying the force applied with the radius at which the force is applied.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis16a-h1"
+        ],
+        "title": "Formula for Torque",
+        "text": "The formula for torque (\u03c4) is given by $$\u03c4=F r$$, where F is the force applied and $$r$$ is the radius.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis16a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$50.4$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis16a-h2"
+        ],
+        "title": "Calculate Torque",
+        "text": "Given that the force applied is $$180$$ N and the radius is $$0.280$$ $$m$$, calculate the torque using the formula $$\u03c4=F r$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

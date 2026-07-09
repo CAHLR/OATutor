@@ -1,0 +1,109 @@
+[
+    {
+        "id": "a912db6arithmetic5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula for Writing Arithmetic Sequences",
+        "text": "Substitute given values into $$a_n=a_1+\\left(n-1\\right) d$$ to find terms of sequence.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a912db6arithmetic5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a912db6arithmetic5a-h1"
+        ],
+        "title": "Adding Subsequent Terms",
+        "text": "Add $$d$$ to a\u2081 to get second term of sequence. Add $$d$$ to that number to get the third term. Repeat until you get $$5$$ terms of the sequence.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a912db6arithmetic5a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$14$$"
+        ],
+        "dependencies": [
+            "a912db6arithmetic5a-h2"
+        ],
+        "title": "Adding Subsequent Terms",
+        "text": "What is $$17+\\left(-3\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a912db6arithmetic5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$11$$"
+        ],
+        "dependencies": [
+            "a912db6arithmetic5a-h3"
+        ],
+        "title": "Adding Subsequent Terms",
+        "text": "What is $$14+\\left(-3\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a912db6arithmetic5a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a912db6arithmetic5a-h4"
+        ],
+        "title": "Adding Subsequent Terms",
+        "text": "What is $$11+\\left(-3\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a912db6arithmetic5a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a912db6arithmetic5a-h5"
+        ],
+        "title": "Adding Subsequent Terms",
+        "text": "What is $$8+\\left(-3\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a912db6arithmetic5a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "17,14,11,8,5 "
+        ],
+        "dependencies": [
+            "a912db6arithmetic5a-h6"
+        ],
+        "title": "Arithmetic Sequences",
+        "text": "What are the first five terms of this arithmetic sequence?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

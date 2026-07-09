@@ -1,0 +1,41 @@
+[
+    {
+        "id": "ace918bnlaws10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the force exerted by the seat on the passenger, we need to use Newton's second law of motion.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws10a-h1"
+        ],
+        "title": "Newton's Second Law",
+        "text": "Newton's second law states that force is equal to mass times acceleration. The formula is $$F=m a$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws10a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3675$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws10a-h2"
+        ],
+        "title": "Calculate the Force",
+        "text": "Use the formula $$F=m a$$, where $$m$$ is the mass of the passenger and a is the acceleration of the sled.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

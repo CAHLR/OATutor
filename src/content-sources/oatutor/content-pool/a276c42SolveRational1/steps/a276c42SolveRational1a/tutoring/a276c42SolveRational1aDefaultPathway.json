@@ -1,0 +1,202 @@
+[
+    {
+        "id": "a276c42SolveRational1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Put The Equation In The Correct Form with Zero By Itself On One Side",
+        "text": "Write the inequality as one quotient on the left and zero on the right.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a276c42SolveRational1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a276c42SolveRational1a-h1"
+        ],
+        "title": "Find The Critical Points of Equation",
+        "text": "Determine the critical points\u2014the points where the rational expression will be zero or undefined.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a276c42SolveRational1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a276c42SolveRational1a-h2"
+        ],
+        "title": "Find The Critical Points of Equation",
+        "text": "When is the equation undefine? Note that the equation is undefined when the denominator equal to zero.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a276c42SolveRational1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-4$$"
+        ],
+        "dependencies": [
+            "a276c42SolveRational1a-h3"
+        ],
+        "title": "Find The Critical Points of Equation",
+        "text": "Solve the equation $$x+4=0$$. What is the value of $$x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a276c42SolveRational1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a276c42SolveRational1a-h3"
+        ],
+        "title": "Find The Critical Points of Equation",
+        "text": "When does the equation equal zero? Note that the equation is undefined when the numerator equal to zero.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a276c42SolveRational1a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a276c42SolveRational1a-h3"
+        ],
+        "title": "Find The Critical Points of Equation",
+        "text": "Solve the equation $$x-3=0$$. What is the value of $$x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a276c42SolveRational1a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a276c42SolveRational1a-h4",
+            "a276c42SolveRational1a-h5",
+            "a276c42SolveRational1a-h6"
+        ],
+        "title": "Use the Critical Points to Divide the Number Line into Intervals.",
+        "text": "Given that the $$x=3$$ and $$x=-4$$ are the two critical points, we can divide the number line into three intervals, namely, $$(-\\infty,-4)$$, $$(-4,3)$$ and $$(3,\\infty)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a276c42SolveRational1a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a276c42SolveRational1a-h7"
+        ],
+        "title": "Test a Value in Each Interval.",
+        "text": "To find the sign of each factor in an interval, we choose any point in that interval and use it as a test point. Any point in the interval will give the expression the same sign, so we can choose any point in the interval.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a276c42SolveRational1a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a276c42SolveRational1a-h8"
+        ],
+        "title": "Test a Value in Each Interval.",
+        "text": "For the interval $$(-\\infty,-4)$$, take the point $$x=-5$$ within the interval and plug it into the original expression. What is the value of $$\\frac{x-3}{x+4}$$ after plugging in the value $$x=-5$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a276c42SolveRational1a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a276c42SolveRational1a-h9"
+        ],
+        "title": "Test a Value in Each Interval.",
+        "text": "Since $$8$$ is a positive numer greater than $$0$$, we get the sign of quotient is positive in the interval $$(-\\infty,-4)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a276c42SolveRational1a-h11",
+        "type": "hint",
+        "dependencies": [
+            "a276c42SolveRational1a-h10"
+        ],
+        "title": "Test a Value in Each Interval.",
+        "text": "For the interval $$(-4,3)$$, take the point $$x=0$$ within the interval and plug it into the original expression $$\\frac{x-3}{x+4}$$. We get $$\\frac{-3}{4}$$ after plugging in $$x=0$$ into the quotient $$\\frac{x-3}{x+4}$$. $$\\frac{-3}{4}$$ is a negative number, so we can mark the quotient negative in the interval $$(-4,3)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a276c42SolveRational1a-h12",
+        "type": "hint",
+        "dependencies": [
+            "a276c42SolveRational1a-h11"
+        ],
+        "title": "Test a Value in Each Interval.",
+        "text": "For the interval $$(3,\\infty)$$, take the point $$x=4$$ within the interval and plug it into the original expression $$\\frac{x-3}{x+4}$$. We get $$\\frac{1}{8}$$ after plugging in $$x=4$$ into the quotient $$\\frac{x-3}{x+4}$$. $$\\frac{1}{8}$$ is a positive number, so we can mark the quotient positive in the interval $$(3,\\infty)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a276c42SolveRational1a-h13",
+        "type": "hint",
+        "dependencies": [
+            "a276c42SolveRational1a-h12"
+        ],
+        "title": "Determine the Intervals Where the Inequality is Correct.",
+        "text": "We want the quotient to be greater than or equal to zero, so the numbers in the intervals $$(-\\infty,-4)$$ and $$(3,\\infty)$$ are solutions.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a276c42SolveRational1a-h14",
+        "type": "hint",
+        "dependencies": [
+            "a276c42SolveRational1a-h13"
+        ],
+        "title": "Determine the Critical Points Where the Inequality is Correct",
+        "text": "The critical point $$x=-4$$ makes the denominator $$0$$, so it must be excluded from the solution and we mark it with a parenthesis.\\nThe critical point $$x=3$$ makes the whole rational expression $$0$$. The inequality requires that the rational expression be greater than or equal to $$0$$. So, $$3$$ is part of the solution and we will mark it with a bracket.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a276c42SolveRational1a-h15",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(-inf,-4)U[3,inf)"
+        ],
+        "dependencies": [
+            "a276c42SolveRational1a-h14"
+        ],
+        "title": "Write the Final Answer in the interval Form",
+        "text": "We know that $$(-\\infty,4)$$, $$(3,\\infty)$$ and $$x=3$$ are the answer, please use \"[ ]\". \"( )\" and U to write it in a mathematical form.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

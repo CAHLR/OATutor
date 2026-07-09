@@ -1,0 +1,58 @@
+[
+    {
+        "id": "af3b50aangles5a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{7\\pi}{9}$$"
+        ],
+        "dependencies": [],
+        "title": "Converting to Radians",
+        "text": "The first step is to convert 140\u00b0 to radians. To do so, the formula is (pi/180\u00b0)*140\u00b0. What is 140\u00b0 in radians?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{5\\pi}{9}$$",
+            "$$\\frac{5\\pi}{18}$$",
+            "$$\\frac{7\\pi}{9}$$",
+            "$$\\frac{7\\pi}{18}$$"
+        ]
+    },
+    {
+        "id": "af3b50aangles5a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{7\\pi}{2}$$"
+        ],
+        "dependencies": [
+            "af3b50aangles5a-h1"
+        ],
+        "title": "Area of a sector",
+        "text": "This is the formula for the area of a sector: $$\\frac{\\theta}{2\\pi} \\pi r^2$$. Plug in the appropriate values and calculate the area of the sector.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$7\\pi$$",
+            "$$\\frac{7\\pi}{3}$$",
+            "$$\\frac{7\\pi}{2}$$",
+            "$$\\frac{7\\pi}{4}$$"
+        ]
+    },
+    {
+        "id": "af3b50aangles5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af3b50aangles5a-h2"
+        ],
+        "title": "Convert to inches",
+        "text": "Now convert the area to inches by multiplying by the decimal value of pi. $$(pi=3.14)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

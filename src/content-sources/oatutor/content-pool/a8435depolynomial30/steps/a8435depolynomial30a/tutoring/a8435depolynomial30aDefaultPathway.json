@@ -1,0 +1,127 @@
+[
+    {
+        "id": "a8435depolynomial30a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Volume of a Cylinder",
+        "text": "The volume of a cylinder is the product of pi, the radius squared, and the height: V $$=$$ $$\\pi r^2 h$$. Here, we are given the volume and the radius. To find the height, square the radius by multiplying the radius by itself, then divide the volume by that product.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8435depolynomial30a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$4x^2+20x+25$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial30a-h1"
+        ],
+        "title": "Expand",
+        "text": "We are dividing $$4x^3+12x^2-15x-50$$ by $$\\left(2x+5\\right)^2$$. Expand $$\\left(2x+5\\right)^2$$, what do you get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2x^2+10x+25$$",
+            "$$4x^2+10x+25$$",
+            "$$4x^2+20x+25$$",
+            "$$4x^2+24x+28$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial30a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial30a-h2"
+        ],
+        "title": "Setting Up the Division",
+        "text": "We are dividing $$4x^3+12x^2-15x-50$$ by $$4x^2+20x+25$$. First, divide $$4x^3$$ by $$4x^2$$. What do you get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$x$$",
+            "$$2x$$",
+            "$$3x$$",
+            "$$4x$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial30a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-8x^2-40x-50$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial30a-h3"
+        ],
+        "title": "Multiply and Subtract",
+        "text": "Now, multiply $$x$$ by $$4x^2+20x+25$$ and subtract the result from $$4x^3+12x^2-15x-50$$. What do you get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$-8x^2-20x-40$$",
+            "$$-4x^2-20x-40$$",
+            "$$-8x^2-40x-50$$",
+            "$$-4x^2-40x-50$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial30a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-2$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial30a-h4"
+        ],
+        "title": "Divide Again",
+        "text": "Now, divide $$-8x^2$$ by $$4x^2$$. What do you get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2$$",
+            "$$-2$$",
+            "$$2x$$",
+            "$$-2x$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial30a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial30a-h5"
+        ],
+        "title": "Multiply and Subtract Again",
+        "text": "Now, multiply $$-2$$ by $$4x^2+20x+25$$ and subtract the result from $$-8x^2-40x-50$$. What do you get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2x$$",
+            "$$0$$",
+            "$$1$$",
+            "$$4x$$"
+        ]
+    }
+]

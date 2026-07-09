@@ -1,0 +1,81 @@
+[
+    {
+        "id": "afc3761Unitcirc29a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Number of revolutions",
+        "text": "Count the number of times we have gone around the circle and what percentage of the circle we have traveled at the $$90$$ second mark.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afc3761Unitcirc29a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.5$$"
+        ],
+        "dependencies": [
+            "afc3761Unitcirc29a-h1"
+        ],
+        "title": "Number of revolutions",
+        "text": "How many revolutions have we made? This is the total time traveled divided by the time taken for one revolution",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afc3761Unitcirc29a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afc3761Unitcirc29a-h2"
+        ],
+        "title": "Angle",
+        "text": "Since we traveled $$1.5$$ revolutions and started facing north, what $$\\frac{angle}{direction}$$ are we now facing?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afc3761Unitcirc29a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$270$$"
+        ],
+        "dependencies": [
+            "afc3761Unitcirc29a-h3"
+        ],
+        "title": "Angle",
+        "text": "What angle are we at in degrees with respect to our normal definition of angles?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afc3761Unitcirc29a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(0,-1)$$"
+        ],
+        "dependencies": [
+            "afc3761Unitcirc29a-h4"
+        ],
+        "title": "Final point",
+        "text": "What is the location of the point that we end at?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$(0,-1)$$",
+            "$$(0,1)$$",
+            "$$(-1,0)$$",
+            "$$(1,0)$$"
+        ]
+    }
+]

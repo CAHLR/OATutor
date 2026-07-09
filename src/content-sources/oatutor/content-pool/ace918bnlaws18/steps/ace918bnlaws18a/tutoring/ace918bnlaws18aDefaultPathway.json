@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ace918bnlaws18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Forces",
+        "text": "To find the acceleration of the block down the ramp, consider the forces acting on it. The only force causing the block to accelerate is the component of gravity acting parallel to the ramp.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws18a-h1"
+        ],
+        "title": "Component of Gravity",
+        "text": "The gravitational force can be split into two components: one parallel to the ramp and one perpendicular to it. The parallel component is responsible for the block's acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws18a-h2"
+        ],
+        "title": "Calculating the Parallel Component",
+        "text": "The parallel component of the gravitational force is given by $$m g sin\\left(\\theta\\right)$$, where $$m$$ is the mass, g is the acceleration due to gravity, and theta is the angle of the ramp.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws18a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4.9$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws18a-h3"
+        ],
+        "title": "Finding the Acceleration",
+        "text": "Use the formula $$a=g sin\\left(\\theta\\right)$$ to find the acceleration of the block down the ramp. Given that $$g=\\frac{9.8m}{s^2}$$ and $$theta=30$$ degrees, calculate the acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

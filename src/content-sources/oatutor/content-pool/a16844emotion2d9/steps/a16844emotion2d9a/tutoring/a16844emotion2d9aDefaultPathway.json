@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a16844emotion2d9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The bullet is shot horizontally, so its initial vertical velocity is $$0$$ $$\\frac{m}{s}$$. The only force acting on it vertically is gravity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d9a-h1"
+        ],
+        "title": "Using the Right Equation",
+        "text": "To find the time it takes for the bullet to hit the ground, use the equation for vertical motion: \\( $$y$$ $$=$$ v_{i_y}*t + \\frac{1}{2}*g*t**2 \\), where \\( $$y$$ \\) is the vertical displacement, \\( v_{i_y} \\) is the initial vertical velocity, \\( g \\) is the acceleration due to gravity, and \\( $$t$$ \\) is the time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d9a-h2"
+        ],
+        "title": "Substitute Known Values",
+        "text": "Substitute the known values into the equation: \\( $$1.5$$ $$=$$ $$0t$$ + \\frac{1}{2}*9.8*t**2 \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d9a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.55$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d9a-h3"
+        ],
+        "title": "Solve for Time",
+        "text": "Solve the equation \\( $$1.5$$ $$=$$ \\frac{1}{2}*9.8*t**2 \\) for \\( $$t$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

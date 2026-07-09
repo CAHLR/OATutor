@@ -1,0 +1,40 @@
+[
+    {
+        "id": "afa63f8real25a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "it is $$3$$ up"
+        ],
+        "dependencies": [],
+        "title": "Guided Hint",
+        "text": "How is the graph shown different from the original (y=2**x)?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "it is $$3$$ up",
+            "it is $$3$$ down",
+            "it is $$3$$ left",
+            "it is $$3$$ right"
+        ]
+    },
+    {
+        "id": "afa63f8real25a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$y=2^x+3$$"
+        ],
+        "dependencies": [
+            "afa63f8real25a-h1"
+        ],
+        "title": "Guided Hint",
+        "text": "How is such a transformation changed in the equation?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

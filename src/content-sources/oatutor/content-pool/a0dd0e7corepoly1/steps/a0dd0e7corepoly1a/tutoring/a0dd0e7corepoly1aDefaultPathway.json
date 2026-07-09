@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a0dd0e7corepoly1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Slope of a Line",
+        "text": "The slope of a line can be determined using two points $$(x_1,y_1)$$, $$(x_2,y_2)$$ by subtracting the y-values over the x-values: $$\\frac{y_2-y_1}{x_2-x_1}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a0dd0e7corepoly1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly1a-h1"
+        ],
+        "title": "Slope of a Line",
+        "text": "Substituting the points $$(-3,2)$$, $$(5,-2)$$, the slope is equal to $$\\frac{\\left(-2-2\\right)}{5-\\left(-3\\right)}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a0dd0e7corepoly1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-4$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly1a-h2"
+        ],
+        "title": "Slope of a Line",
+        "text": "What is $$-2-2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a0dd0e7corepoly1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a0dd0e7corepoly1a-h2"
+        ],
+        "title": "Slope of a Line",
+        "text": "What is $$5-(-3)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a0dd0e7corepoly1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a0dd0e7corepoly1a-h3",
+            "a0dd0e7corepoly1a-h4"
+        ],
+        "title": "Slope of a Line",
+        "text": "$$\\frac{-4}{8}$$ can be simplified to get the slope of the line.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    }
+]

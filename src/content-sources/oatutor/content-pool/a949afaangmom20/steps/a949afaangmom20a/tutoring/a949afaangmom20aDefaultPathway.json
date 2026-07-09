@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a949afaangmom20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Momentum Conservation",
+        "text": "The gymnast's angular momentum is conserved when she transitions from cartwheels to flips in the air. This means that her initial angular momentum is equal to her angular momentum while flipping.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom20a-h1"
+        ],
+        "title": "Calculate Initial Angular Momentum",
+        "text": "Use the formula for angular momentum: \\( L $$=$$ I \\cdot \\omega \\), where \\( I \\) is the moment of inertia and \\( \\omega \\) is the angular velocity. Calculate the initial angular momentum when she is doing cartwheels.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom20a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6.75$$"
+        ],
+        "dependencies": [
+            "a949afaangmom20a-h2"
+        ],
+        "title": "Initial Angular Momentum Calculation",
+        "text": "Given: \\( I $$=$$ $$13.5$$ \\) $$kg m^2$$ and \\( \\omega $$=$$ $$0.5$$ \\) $$\\frac{rev}{s}$$. Calculate \\( L \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom20a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom20a-h3"
+        ],
+        "title": "Calculate Angular Velocity in the Air",
+        "text": "Use the conservation of angular momentum: \\( L_{initial} $$=$$ L_{final} \\). Solve for the angular velocity \\( \\omega_{final} \\) when she is in the tuck position.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom20a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.985$$"
+        ],
+        "dependencies": [
+            "a949afaangmom20a-h4"
+        ],
+        "title": "Final Angular Velocity Calculation",
+        "text": "Given: \\( L_{initial} $$=$$ $$6.75$$ \\) and \\( I_{final} $$=$$ $$3.4$$ \\) $$kg m^2$$. Calculate \\( \\omega_{final} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom20a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom20a-h5"
+        ],
+        "title": "Calculate Number of Revolutions",
+        "text": "Use the formula for the number of revolutions: \\( \\text{Revolutions} $$=$$ \\omega_{final} \\times \\text{time} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom20a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3.97$$"
+        ],
+        "dependencies": [
+            "a949afaangmom20a-h6"
+        ],
+        "title": "Revolutions Calculation",
+        "text": "Given: \\( \\omega_{final} $$=$$ $$1.985$$ \\) $$\\frac{rev}{s}$$ and \\( \\text{time} $$=$$ $$2.0$$ \\) s. Calculate the number of revolutions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ace918bnlaws18b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The block is on a smooth ramp, which means there is no friction. The only forces acting on the block are gravity and the normal force from the ramp.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws18b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws18b-h1"
+        ],
+        "title": "Components of Gravity",
+        "text": "The gravitational force acting on the block can be split into two components: one parallel to the ramp and one perpendicular to the ramp.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws18b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws18b-h2"
+        ],
+        "title": "Perpendicular Component of Gravity",
+        "text": "The component of gravity perpendicular to the ramp is what the normal force balances. This component can be calculated using the formula: $$m g cos\\left(\\theta\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws18b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$17$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws18b-h3"
+        ],
+        "title": "Calculate the Perpendicular Component",
+        "text": "Use the formula $$m g cos\\left(\\theta\\right)$$ to find the perpendicular component of gravity. Given: $$m=2.0$$ kg, $$g=9.8$$ m/s\u00b2, $$theta=30$$ degrees.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

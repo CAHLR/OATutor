@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a56bd16newtonapps23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Terminal Velocity",
+        "text": "Terminal velocity is the constant speed that a freely falling object eventually reaches when the resistance of the medium prevents further acceleration. It occurs when the force of gravity is balanced by the drag force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps23a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps23a-h1"
+        ],
+        "title": "Formula for Terminal Velocity",
+        "text": "The formula for terminal velocity \\(v_t\\) is given by: \\(v_t=sqrt((2*m*g)/(C*rho*A))\\), where \\(m\\) is mass, \\(g\\) is acceleration due to gravity, \\(C\\) is the drag coefficient, \\(rho\\) is the air density, and \\(A\\) is the surface area.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps23a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.56$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps23a-h2"
+        ],
+        "title": "Calculate the Mass in Kilograms",
+        "text": "Convert the mass of the squirrel from grams to kilograms. $$\\(m=560g\\)$$",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps23a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.065$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps23a-h3"
+        ],
+        "title": "Calculate the Surface Area in Square Meters",
+        "text": "Convert the surface area from square centimeters to square meters. \\(A=650cm**2\\)",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps23a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$11.8$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps23a-h4"
+        ],
+        "title": "Calculate Terminal Velocity",
+        "text": "Use the formula \\(v_t=sqrt((2*m*g)/(C*rho*A))\\) with $$\\(m=0.56kg\\)$$, \\(g=9.8m/s**2\\), $$\\(C=1.0\\)$$, \\(rho=1.21kg/m**3\\), and \\(A=0.065m**2\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

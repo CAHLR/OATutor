@@ -1,0 +1,99 @@
+[
+    {
+        "id": "ace918bnlaws16c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Tensions",
+        "text": "To find the ratio of the horizontal-strand tension to the vertical-strand tension, consider the forces acting on the spider. The vertical tension balances the weight of the spider, while the horizontal tension is related to the angle of the web strand.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws16c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws16c-h1"
+        ],
+        "title": "Calculate Vertical Tension",
+        "text": "The vertical tension is equal to the weight of the spider. Use the formula: weight $$=$$ mass * gravity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws16c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.96\\times{10}^{-4}$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws16c-h2"
+        ],
+        "title": "Calculate Weight of the Spider",
+        "text": "Given the mass of the spider is $$2\\times{10}^{-5}$$ kg and gravity is approximately $$9.8$$ $$\\frac{m}{s^2}$$, calculate the weight.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws16c-h4",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws16c-h3"
+        ],
+        "title": "Horizontal Tension and Angle",
+        "text": "The horizontal tension is related to the angle of the web strand. Use trigonometric relationships to find the ratio of tensions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws16c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$T_{vertical} tan\\left(\\theta\\right)$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws16c-h4"
+        ],
+        "title": "Using Trigonometry",
+        "text": "If the angle between the vertical and the web strand is \u03b8, then the horizontal tension can be expressed as $$T_{horizontal}$$ $$=$$ $$T_{vertical}$$ * tan(\u03b8).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws16c-h6",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws16c-h5"
+        ],
+        "title": "Finding the Ratio",
+        "text": "The ratio of the horizontal-strand tension to the vertical-strand tension is tan(\u03b8).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws16c-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.4$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws16c-h6"
+        ],
+        "title": "Calculate the Ratio",
+        "text": "Given that tan(\u03b8) $$=$$ $$2.4$$, find the ratio of the horizontal-strand tension to the vertical-strand tension.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

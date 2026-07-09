@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a949afaangmom2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Acceleration",
+        "text": "Angular acceleration is the rate of change of angular velocity over time. It is similar to linear acceleration but in rotational motion.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom2a-h1"
+        ],
+        "title": "Relating Linear and Angular Quantities",
+        "text": "The linear speed of the bicycle is related to the angular speed of the wheels by the formula: $$v=r \\omega$$, where v is the linear speed, $$r$$ is the radius, and \u03c9 is the angular speed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom2a-h2"
+        ],
+        "title": "Finding Angular Speed",
+        "text": "To find the angular speed (\u03c9) at the final speed, use the formula: $$\u03c9=\\frac{v}{r}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$33.33$$"
+        ],
+        "dependencies": [
+            "a949afaangmom2a-h3"
+        ],
+        "title": "Calculate Final Angular Speed",
+        "text": "Given the final linear speed $$v=10.0$$ $$\\frac{m}{s}$$ and radius $$r=0.3$$ $$m$$, calculate the final angular speed \u03c9.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom2a-h4"
+        ],
+        "title": "Using Angular Acceleration Formula",
+        "text": "Angular acceleration (\\alpha) can be calculated using the formula: $$\\alpha=\\frac{\\omega_f-\\omega_i}{t}$$, where $$\\omega_f$$ is the final angular speed, $$\\omega_i$$ is the initial angular speed (0 in this case), and $$t$$ is the time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom2a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3.33$$"
+        ],
+        "dependencies": [
+            "a949afaangmom2a-h5"
+        ],
+        "title": "Calculate Angular Acceleration",
+        "text": "Using $$\\omega_f=33.33$$ $$\\frac{rad}{s}$$, $$\\omega_i=0$$ $$\\frac{rad}{s}$$, and $$t=10$$ s, calculate the angular acceleration \\alpha.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

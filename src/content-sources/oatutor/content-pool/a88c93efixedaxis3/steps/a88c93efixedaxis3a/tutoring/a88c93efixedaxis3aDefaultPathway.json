@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a88c93efixedaxis3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Velocity",
+        "text": "Angular velocity is the rate of change of angular displacement and is usually measured in radians per second $$\\frac{rad}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis3a-h1"
+        ],
+        "title": "Given Formula for Angular Velocity",
+        "text": "The problem states that the angular velocity is given by the formula $$omega=25t$$ $$\\frac{rad}{s}$$, where $$t$$ is the time in seconds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis3a-h2"
+        ],
+        "title": "Substitute the Given Time",
+        "text": "To find the instantaneous angular velocity at $$t=2.0$$ s, substitute $$t=2.0$$ into the formula $$omega=25t$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis3a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$50$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis3a-h3"
+        ],
+        "title": "Calculate the Angular Velocity",
+        "text": "Substitute $$t=2.0$$ into the formula $$omega=25t$$ to find the angular velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

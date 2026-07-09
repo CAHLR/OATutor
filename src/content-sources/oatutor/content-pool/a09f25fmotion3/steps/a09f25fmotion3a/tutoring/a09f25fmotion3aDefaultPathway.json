@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a09f25fmotion3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the average velocity of the blast wave, we need to know the distance it traveled and the time it took.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion3a-h1"
+        ],
+        "title": "Calculate the Distance",
+        "text": "The blast wave traveled at an angle of 10\u00b0 above the horizon. Use trigonometry to find the horizontal distance traveled.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{23.5}tan^$\\left(10\\righ$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion3a-h2"
+        ],
+        "title": "Using Trigonometry",
+        "text": "The horizontal distance can be calculated using the formula: distance $$=$$ $$\\frac{altitude}tan^$\\left(angle\\righ$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion3a-h1"
+        ],
+        "title": "Calculate the Time",
+        "text": "Convert the time from minutes and seconds to seconds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion3a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$150$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion3a-h4"
+        ],
+        "title": "Time Conversion",
+        "text": "The total time in seconds is: $$2$$ minutes $$30$$ seconds $$=$$ $$2\\times60+30$$ seconds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion3a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion3a-h3"
+        ],
+        "title": "Average Velocity Formula",
+        "text": "The average velocity is calculated using the formula: velocity $$=$$ $$\\frac{distance}{time}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion3a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$902$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion3a-h6"
+        ],
+        "title": "Calculate Average Velocity",
+        "text": "Substitute the values into the formula: velocity $$=$$ $$\\frac{\\frac{23.5}tan^{150}\\left(10\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

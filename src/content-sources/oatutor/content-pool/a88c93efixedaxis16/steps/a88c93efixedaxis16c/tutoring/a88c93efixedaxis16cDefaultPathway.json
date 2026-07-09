@@ -1,0 +1,157 @@
+[
+    {
+        "id": "a88c93efixedaxis16c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Torque",
+        "text": "To find the angular acceleration, we need to calculate the net torque acting on the grindstone. Torque is given by the formula: Torque $$=$$ Force * Radius. Consider both the applied force and the frictional force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis16c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis16c-h1"
+        ],
+        "title": "Calculate Torque from Applied Force",
+        "text": "The torque due to the applied force is calculated using the formula: Torque $$=$$ Force * Radius. Use the given values: Force $$=$$ $$180$$ N and Radius $$=$$ $$0.280$$ $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis16c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$50.4$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis16c-h2"
+        ],
+        "title": "Torque from Applied Force",
+        "text": "Calculate the torque from the applied force using the formula: Torque $$=$$ Force * Radius.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis16c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis16c-h1"
+        ],
+        "title": "Calculate Torque from Frictional Force",
+        "text": "The torque due to the frictional force is calculated using the formula: Torque $$=$$ Force * Radius. Use the given values: Force $$=$$ $$20.0$$ N and Radius $$=$$ $$0.015$$ $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis16c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.3$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis16c-h4"
+        ],
+        "title": "Torque from Frictional Force",
+        "text": "Calculate the torque from the frictional force using the formula: Torque $$=$$ Force * Radius.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis16c-h6",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis16c-h3",
+            "a88c93efixedaxis16c-h5"
+        ],
+        "title": "Net Torque Calculation",
+        "text": "The net torque is the difference between the torque from the applied force and the torque from the frictional force. Use the formula: Net Torque $$=$$ $$Torque_{applied}$$ - $$Torque_{friction}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis16c-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$50.1$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis16c-h6"
+        ],
+        "title": "Net Torque",
+        "text": "Calculate the net torque using the formula: Net Torque $$=$$ $$Torque_{applied}$$ - $$Torque_{friction}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis16c-h8",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Moment of Inertia",
+        "text": "The moment of inertia for a solid disk is given by the formula: I $$=$$ $$\\frac{1}{2}$$ * M * $$R^2$$. Use the given values: M $$=$$ $$75.0$$ kg and R $$=$$ $$0.280$$ $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis16c-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.94$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis16c-h8"
+        ],
+        "title": "Calculate Moment of Inertia",
+        "text": "Calculate the moment of inertia using the formula: I $$=$$ $$\\frac{1}{2}$$ * M * $$R^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis16c-h10",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis16c-h7",
+            "a88c93efixedaxis16c-h9"
+        ],
+        "title": "Angular Acceleration Formula",
+        "text": "Angular acceleration is calculated using the formula: Angular Acceleration $$=$$ Net Torque / Moment of Inertia.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis16c-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$17$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis16c-h10"
+        ],
+        "title": "Calculate Angular Acceleration",
+        "text": "Calculate the angular acceleration using the formula: Angular Acceleration $$=$$ Net Torque / Moment of Inertia.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

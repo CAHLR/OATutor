@@ -1,0 +1,123 @@
+[
+    {
+        "id": "afb69a0sumprod6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply sum-to-product formulas",
+        "text": "Apply the appropriate sum-to-product formulas to the numerator and the denominator.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod6a-h1"
+        ],
+        "title": "Apply difference of cosines to the numerator.",
+        "text": "How can we simplify the numerator using $$\\cos$$ $$A$$ $$-$$ $$\\cos$$ $$B$$ $$=$$ $$-2$$ \\sin\\left(\\frac{A+B}{2}\\right) $$\\sin\\left(\\frac{A-B}{2}\\right)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod6a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-2\\sin(3t)\\sin(t)$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod6a-h2"
+        ],
+        "title": "What expression do we get for the numerator?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod6a-h2"
+        ],
+        "title": "Apply sum of sines to the denominator.",
+        "text": "How can we simplify the denominator using $$\\sin$$ $$A$$ + $$\\sin$$ $$B$$ $$=$$ $$2$$ \\sin\\left(\\frac{A+B}{2}\\right) $$\\cos\\left(\\frac{A-B}{2}\\right)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod6a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2\\sin(3t)\\cos(t)$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod6a-h3"
+        ],
+        "title": "What expression do we get for the denominator?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod6a-h1"
+        ],
+        "title": "Simplify the expression",
+        "text": "After applying the formulas, simplify the resulting fraction.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod6a-h2"
+        ],
+        "title": "Set up the fraction & cancel common terms.",
+        "text": "Our fraction becomes $$\\frac{-2\\sin(3t)\\sin(t)}{2\\sin(3t)\\cos(t)}$$. $$We$$ $$can$$ $$cancel$$ $$2$$ $$and$$ $$\\$sin(3t)\\$$$ $$from$$ $$the$$ $$top$$ $$and$$ $$bottom$$ $$to$$ $$get$$ $$-\\frac{\\sin(t)}{\\cos(t)}$$. $$Can$$ $$we$$ $$simplify$$ $$further$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod6a-h3"
+        ],
+        "title": "Sine over cosine identity",
+        "text": "Recall that $$\\frac{\\sin$$ $$t}{\\cos$$ $$t$$} $$=$$ $$\\tan$$ $$t$$. $$Can$$ $$we$$ $$use$$ $$this$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod6a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-tan(t)$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod6a-h4"
+        ],
+        "title": "Simplify $$-\\frac{\\sin(t)}{\\cos(t)}$$ with the previous identity.",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

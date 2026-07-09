@@ -1,0 +1,106 @@
+[
+    {
+        "id": "a16844emotion2d7c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Velocity",
+        "text": "To find the velocity of a particle, we need to differentiate the position function with respect to time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d7c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d7c-h1"
+        ],
+        "title": "Differentiate the Position Function",
+        "text": "The position function is given as $$r(t)=3t^2 i-7t^3 j-5t^{-2} k$$. Differentiate each component separately with respect to $$t$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d7c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6t$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d7c-h2"
+        ],
+        "title": "Differentiate the i Component",
+        "text": "Differentiate $$3t^2$$ with respect to $$t$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d7c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-21t^2$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d7c-h2"
+        ],
+        "title": "Differentiate the j Component",
+        "text": "Differentiate $$-7t^3$$ with respect to $$t$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d7c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10t^{-3}$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d7c-h2"
+        ],
+        "title": "Differentiate the k Component",
+        "text": "Differentiate $$-5t^{-2}$$ with respect to $$t$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d7c-h6",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d7c-h3",
+            "a16844emotion2d7c-h4",
+            "a16844emotion2d7c-h5"
+        ],
+        "title": "Combine the Components",
+        "text": "Combine the differentiated components to form the velocity vector: $$v(t)=6t i-21t^2 j+10t^{-3} k$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d7c-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12i-84j+1.25k$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d7c-h6"
+        ],
+        "title": "Evaluate at $$t=2.0$$ s",
+        "text": "Substitute $$t=2.0$$ into the velocity function $$v(t)=6t i-21t^2 j+10t^{-3} k$$ to find the velocity at $$t=2.0$$ s.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

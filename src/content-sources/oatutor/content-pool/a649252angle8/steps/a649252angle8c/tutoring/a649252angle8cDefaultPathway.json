@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a649252angle8c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall Half-Angle Formula for tangent",
+        "text": "Recall that $$\\tan(\\frac{\\alpha}{2})$$ $$=$$ $$\\frac{1$$ $$-$$ $$\\cos(\\alpha)}{\\sin(\\alpha)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle8c-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\sin(\\alpha)=-\\frac{8}{17$$,} $$\\cos(\\alpha)=-\\frac{15}{17}$$"
+        ],
+        "dependencies": [
+            "a649252angle8c-h1"
+        ],
+        "title": "Determine $$\\sin(\\alpha)$$ and $$\\cos(\\alpha)$$",
+        "text": "Given $$\\tan\\alpha=\\frac{8}{15}$$ and $$\\alpha$$ is in QIII, what are $$\\sin(\\alpha)$$ and $$\\cos(\\alpha)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\sin(\\alpha)=-\\frac{8}{17$$,} $$\\cos(\\alpha)=-\\frac{15}{17}$$",
+            "$$\\sin(\\alpha)=\\frac{8}{17$$,} $$\\cos(\\alpha)=-\\frac{15}{17}$$",
+            "$$\\sin(\\alpha)=-\\frac{8}{17$$,} $$\\cos(\\alpha)=\\frac{15}{17}$$",
+            "$$\\sin(\\alpha)=\\frac{8}{17$$,} $$\\cos(\\alpha)=\\frac{15}{17}$$"
+        ]
+    },
+    {
+        "id": "a649252angle8c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle8c-h1"
+        ],
+        "title": "Substitute and Simplify",
+        "text": "Substitute the values of $$\\sin(\\alpha)$$ and $$\\cos(\\alpha)$$ into the formula and simplify.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle8c-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{32}{17}$$"
+        ],
+        "dependencies": [
+            "a649252angle8c-h2"
+        ],
+        "title": "Value of $$1$$ $$-$$ $$\\cos(\\alpha)$$",
+        "text": "What is the value of $$1$$ $$-$$ $$\\cos(\\alpha)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle8c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle8c-h2"
+        ],
+        "title": "Alternative Method",
+        "text": "Alternatively, you can use the values found in the previous steps: $$\\tan(\\frac{\\alpha}{2})$$ $$=$$ $$\\frac{\\sin(\\frac{\\alpha}{2})}{\\cos(\\frac{\\alpha}{2})}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle8c-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-4$$"
+        ],
+        "dependencies": [
+            "a649252angle8c-h3"
+        ],
+        "title": "Calculate the Ratio",
+        "text": "Using the values $$\\sin(\\frac{\\alpha}{2})$$ $$=$$ \\frac{4\\sqrt{17}}{17}$$ and $$\\cos(\\frac{\\alpha}{2})$$ $$=$$ -\\frac{\\sqrt{17}}{17}$$, $$what$$ $$is$$ $$\\tan(\\frac{\\alpha}{2})$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

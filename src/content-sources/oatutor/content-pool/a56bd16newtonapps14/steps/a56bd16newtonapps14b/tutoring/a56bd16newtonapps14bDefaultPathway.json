@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a56bd16newtonapps14b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Centripetal Force",
+        "text": "Centripetal force is the force that keeps an object moving in a circular path. It is directed towards the center of the circle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps14b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps14b-h1"
+        ],
+        "title": "Formula for Centripetal Force",
+        "text": "The formula for centripetal force \\(F_c\\) is given by \\(F_c=m*v**2/r\\), where \\(m\\) is the mass, \\(v\\) is the velocity, and \\(r\\) is the radius of the circle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps14b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps14b-h2"
+        ],
+        "title": "Converting Revolutions per Minute to Velocity",
+        "text": "To find the velocity \\(v\\), convert the angular speed from revolutions per minute to meters per second. Use the formula \\(v=2*\\pi*r*(\\text{revolutions per second})\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps14b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.51$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps14b-h3"
+        ],
+        "title": "Calculate the Velocity",
+        "text": "Given the angular speed is $$3.00$$ $$\\frac{rev}{min}$$, convert it to meters per second using the radius $$8.00$$ $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps14b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$17.4$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps14b-h4"
+        ],
+        "title": "Calculate the Centripetal Force",
+        "text": "Now that you have the velocity, use the formula \\(F_c=m*v**2/r\\) to find the centripetal force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

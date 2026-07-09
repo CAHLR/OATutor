@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a5e282bSolvquad30a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Isolate the Quadratic term",
+        "text": "We add $$2$$ on both sides to get $$5\\left(b+2\\right)^2$$ by itself which gives $$5\\left(b+2\\right)^2=120$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5e282bSolvquad30a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a5e282bSolvquad30a-h1"
+        ],
+        "title": "Find Leading Coefficient",
+        "text": "What's the leading coefficient now?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5e282bSolvquad30a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5e282bSolvquad30a-h2"
+        ],
+        "title": "Make the Leading Coefficient \"1\"",
+        "text": "Divide by the leading coefficient on both sides which gives $$\\left(b+2\\right)^2=24$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5e282bSolvquad30a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5e282bSolvquad30a-h3"
+        ],
+        "title": "Use Square Root Property",
+        "text": "The square root property: if $$x^2$$ $$=$$ k, then $$x$$ $$=$$ $$\\sqrt{k}$$, or $$x$$ $$=$$ $$-\\sqrt{k}$$, or $$x$$ $$=\\sqrt{k}$$. $$\\left(b+2\\right)^2=24$$, we can take square root both sides and get $$b+2=\\sqrt{24}$$ or $$b+2=-\\sqrt{24}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5e282bSolvquad30a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-2\\sqrt{6}-2$$"
+        ],
+        "dependencies": [
+            "a5e282bSolvquad30a-h4"
+        ],
+        "title": "Find $$b$$ in $$b+2=-\\sqrt{24}$$",
+        "text": "What is $$b$$ when $$b+2=-\\sqrt{24}$$? Simplify the square root as much as possible.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5e282bSolvquad30a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2\\sqrt{6}-2$$"
+        ],
+        "dependencies": [
+            "a5e282bSolvquad30a-h5"
+        ],
+        "title": "Find $$b$$ in $$b+2=\\sqrt{24}$$",
+        "text": "$$b+2=\\sqrt{24}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a5e282bSolvquad30a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a5e282bSolvquad30a-h6"
+        ],
+        "title": "Final Answer",
+        "text": "Therefore, $$5\\left(b+2\\right)^2-2=118$$ has two solutions which are $$x=-2\\sqrt{6}-2$$, and $$x=2\\sqrt{6}-2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

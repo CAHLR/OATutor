@@ -1,0 +1,99 @@
+[
+    {
+        "id": "abaea60linmom12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the speed of the sled after the second child jumps on, we need to consider the conservation of momentum. The total momentum before the second child jumps on should equal the total momentum after.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom12a-h1"
+        ],
+        "title": "Initial Momentum",
+        "text": "Calculate the initial momentum of the system before the second child jumps on. Use the formula: \\(momentum=mass*velocity\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom12a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$35\\times3.5$$"
+        ],
+        "dependencies": [
+            "abaea60linmom12a-h2"
+        ],
+        "title": "Calculate Initial Momentum",
+        "text": "What is the initial momentum of the sled with the first child?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom12a-h4",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom12a-h3"
+        ],
+        "title": "Final Momentum",
+        "text": "After the second child jumps on, the total mass of the system changes. Calculate the final momentum using the same formula.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom12a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$70v$$"
+        ],
+        "dependencies": [
+            "abaea60linmom12a-h4"
+        ],
+        "title": "Calculate Final Momentum",
+        "text": "What is the final momentum of the sled with both children?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom12a-h6",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom12a-h5"
+        ],
+        "title": "Conservation of Momentum",
+        "text": "Set the initial momentum equal to the final momentum to solve for the final speed \\(v\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom12a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.75$$"
+        ],
+        "dependencies": [
+            "abaea60linmom12a-h6"
+        ],
+        "title": "Solve for Final Speed",
+        "text": "Using the equation \\(35*3.5=70*v\\), solve for \\(v\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

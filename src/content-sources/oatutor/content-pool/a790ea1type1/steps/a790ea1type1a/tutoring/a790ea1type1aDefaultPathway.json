@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a790ea1type1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The Type Error",
+        "text": "What is the definition of a Type II Error?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a790ea1type1a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The decision is not to reject $$H_0$$ when, in fact, $$H_0$$ is false."
+        ],
+        "dependencies": [
+            "a790ea1type1a-h1"
+        ],
+        "title": "Type II error",
+        "text": "Choose the best answer from the following.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "The decision is to reject $$H_0$$ when $$H_0$$ is true.",
+            "The decision is not to reject $$H_0$$ when, in fact, $$H_0$$ is false."
+        ]
+    },
+    {
+        "id": "a790ea1type1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a790ea1type1a-h2"
+        ],
+        "title": "What is the Null Hypothesis in the context?",
+        "text": "Given in the problem, the null hypothesis is that the LTCC Intermediate Algebra students get less than seven hours of sleep per night, on average.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

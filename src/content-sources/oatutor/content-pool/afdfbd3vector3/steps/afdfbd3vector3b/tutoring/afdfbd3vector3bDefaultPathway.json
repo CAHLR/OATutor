@@ -1,0 +1,93 @@
+[
+    {
+        "id": "afdfbd3vector3b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find Quadrant",
+        "text": "Which quadrant does the vector \u27e86, -6\u27e9 point to? Remember how the quadrants are labeled.\\n\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afdfbd3vector3b-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "IV"
+        ],
+        "dependencies": [
+            "afdfbd3vector3b-h1"
+        ],
+        "title": "Find Quadrant",
+        "text": "What quadrant does the vector \u27e86, -6\u27e9 point to?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "I",
+            "II",
+            "III",
+            "IV"
+        ]
+    },
+    {
+        "id": "afdfbd3vector3b-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "tan(\u03b8) $$=$$ $$\\frac{a}{b}$$"
+        ],
+        "dependencies": [
+            "afdfbd3vector3b-h1",
+            "afdfbd3vector3b-s1"
+        ],
+        "title": "Find Angle",
+        "text": "If the angle \u27e8a, b\u27e9 makes an angle \u03b8 with the x-axis, which of these must be true?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "tan(\u03b8) $$=$$ $$\\frac{a}{b}$$",
+            "tan(\u03b8) $$=$$ $$\\frac{b}{a}$$",
+            "sin(\u03b8) $$=$$ $$\\frac{a}{b}$$",
+            "cos(\u03b8) $$=$$ $$\\frac{b}{a}$$\\n\\n\\n\\n\\n"
+        ]
+    },
+    {
+        "id": "afdfbd3vector3b-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "afdfbd3vector3b-s2"
+        ],
+        "title": "Solving Trigonometric Functions",
+        "text": "Find tan(\u03b8).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afdfbd3vector3b-s4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$315$$"
+        ],
+        "dependencies": [
+            "afdfbd3vector3b-s3"
+        ],
+        "title": "Solving for the Angle",
+        "text": "Given the quadrant you're working in, what angle gives the right value for tan(\u03b8) $$=$$ $$\\frac{a}{b}$$? Give a degree measure between $$0$$ and $$360$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

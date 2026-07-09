@@ -1,0 +1,135 @@
+[
+    {
+        "id": "a16844emotion2d4c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Average Velocity",
+        "text": "To find the average velocity, you need to calculate the change in position over the change in time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d4c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d4c-h1"
+        ],
+        "title": "Calculate Position at $$t=0$$",
+        "text": "Substitute $$t=0$$ into the position function \\(\\vec{r}(t)=4.0t**2\\hat{i}-3.0\\hat{j}+2.0t**3\\hat{k}\\) to find the initial position.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d4c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0\\hat{i}-3.0\\hat{j}+0\\hat{k}"
+        ],
+        "dependencies": [
+            "a16844emotion2d4c-h2"
+        ],
+        "title": "Position at $$t=0$$",
+        "text": "What is the position of the particle at $$t=0$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d4c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d4c-h1"
+        ],
+        "title": "Calculate Position at $$t=1$$",
+        "text": "Substitute $$t=1$$ into the position function \\(\\vec{r}(t)=4.0t**2\\hat{i}-3.0\\hat{j}+2.0t**3\\hat{k}\\) to find the position at $$t=1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d4c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "4.0\\hat{i}-3.0\\hat{j}+2.0\\hat{k}"
+        ],
+        "dependencies": [
+            "a16844emotion2d4c-h4"
+        ],
+        "title": "Position at $$t=1$$",
+        "text": "What is the position of the particle at $$t=1$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d4c-h6",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d4c-h3",
+            "a16844emotion2d4c-h5"
+        ],
+        "title": "Calculate Change in Position",
+        "text": "Find the change in position by subtracting the initial position from the position at $$t=1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d4c-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "4.0\\hat{i}+2.0\\hat{k}"
+        ],
+        "dependencies": [
+            "a16844emotion2d4c-h6"
+        ],
+        "title": "Change in Position",
+        "text": "What is the change in position of the particle?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d4c-h8",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d4c-h7"
+        ],
+        "title": "Calculate Average Velocity",
+        "text": "Divide the change in position by the change in time (1 second) to find the average velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d4c-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "4.0\\hat{i}+2.0\\hat{k}"
+        ],
+        "dependencies": [
+            "a16844emotion2d4c-h8"
+        ],
+        "title": "Average Velocity",
+        "text": "What is the average velocity of the particle between $$0$$ s and $$1.0$$ s?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "4.0\\hat{i}+2.0\\hat{k}",
+            "8.0\\hat{i}+6.0\\hat{k}",
+            "4.0\\hat{i}-3.0\\hat{j}+2.0\\hat{k}",
+            "2.0\\hat{i}+4.0\\hat{k}"
+        ]
+    }
+]

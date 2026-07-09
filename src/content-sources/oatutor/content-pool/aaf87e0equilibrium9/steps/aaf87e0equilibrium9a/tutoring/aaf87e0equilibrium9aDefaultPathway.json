@@ -1,0 +1,82 @@
+[
+    {
+        "id": "aaf87e0equilibrium9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find out how much the wire stretches, we need to use the formula for linear deformation in materials, which involves Young's modulus.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aaf87e0equilibrium9a-h1"
+        ],
+        "title": "Formula for Linear Deformation",
+        "text": "The formula to calculate the stretch (\u0394L) of a wire is given by: $$\u0394L=\\frac{F L}{A Y}$$, where F is the force applied, L is the original length of the wire, A is the cross-sectional area, and Y is Young's modulus.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aaf87e0equilibrium9a-h2"
+        ],
+        "title": "Calculate the Cross-Sectional Area",
+        "text": "The cross-sectional area (A) of the wire can be calculated using the formula for the area of a circle: $$A=\\pi \\left(\\frac{d}{2}\\right)^2$$, where $$d$$ is the diameter of the wire.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium9a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.9635\\times{10}^{-5}$$"
+        ],
+        "dependencies": [
+            "aaf87e0equilibrium9a-h3"
+        ],
+        "title": "Calculate the Cross-Sectional Area",
+        "text": "Given the diameter of the wire is $$0.50$$ cm, calculate the cross-sectional area in square meters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium9a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aaf87e0equilibrium9a-h4"
+        ],
+        "title": "Substitute Values into the Formula",
+        "text": "Now that you have the cross-sectional area, substitute the values into the formula $$\u0394L=\\frac{F L}{A Y}$$ to find the stretch of the wire.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aaf87e0equilibrium9a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.5$$"
+        ],
+        "dependencies": [
+            "aaf87e0equilibrium9a-h5"
+        ],
+        "title": "Calculate the Stretch",
+        "text": "Using $$F=3.94\\times{10}^3$$ N, $$L=15.0$$ $$m$$, $$A=1.9635\\times{10}^{-5}$$ m\u00b2, and $$Y=2\\times{10}^{11}$$ N/m\u00b2, calculate the stretch of the wire.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

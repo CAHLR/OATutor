@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a8ad46flog20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use Log Rules",
+        "text": "We know that $$n*\\log_{a}\\left(b\\right)=\\log_{a}\\left(b^n\\right)$$. $$3*\\log_{3}\\left(x\\right)=\\log_{3}\\left(x^3\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a8ad46flog20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8ad46flog20a-h1"
+        ],
+        "title": "Match Bases and Solve for $$x$$",
+        "text": "Since $$3*\\log_{3}\\left(x\\right)=\\log_{3}\\left(x^3\\right)=\\log_{3}\\left(27\\right)$$ have the same bases both sides, we can take out the logarithm and get $$x^3=27$$. Solve for $$x^3=27$$ which gives $$x=3$$. Given $$\\log_{a}\\left(b\\right)$$, $$b$$ can not be negative. $$3$$ is non negative. Therefore $$x=3$$ is the only solution for this equation.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

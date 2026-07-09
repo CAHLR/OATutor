@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a342e92limit15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Functions and Graph",
+        "text": "$$\\lim_{x\\to-2} f(x)$$ is the value of f(x) as $$x$$ approaches $$-2$$ from the left.\\n$$\\lim_{x\\to-2} f(x)$$ is the value of f(x) as $$x$$ approaches $$-2$$ from the right.\\n$$\\lim_{x\\to-2} f(x)$$ is the value of f(x) as $$x$$ approaches $$-2$$ from both sides.\\nLocate $$x=-2$$ on the graph and observe the values of f(x) as it approaches that x-value.\\n##figure2.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a342e92limit15a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a342e92limit15a-h1"
+        ],
+        "title": "Finding the Limit",
+        "text": "What value is f(x) approaching as $$x$$ approaches -2?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a342e92limit15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a342e92limit15a-h2"
+        ],
+        "title": "Limit Value",
+        "text": "$$\\lim_{x\\to1} f(x)=2$$ from the right. Looking at the right side of the function as $$x$$ approaches $$1$$, we can see that the value of f(x) approaches $$3$$. Remember that there is no difference with an open or closed circle because a limit is the value the graph is approaching from the right and left sides. In this case, we are looking solely at the right side of the function.\\n##figure3.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

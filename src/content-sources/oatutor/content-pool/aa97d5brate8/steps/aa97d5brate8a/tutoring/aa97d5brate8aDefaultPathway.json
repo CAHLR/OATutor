@@ -1,0 +1,95 @@
+[
+    {
+        "id": "aa97d5brate8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "$$\\frac{Equation}{Substitute}$$",
+        "text": "The equation for calculuating the rate of change is $$\\frac{r\\left(x_1\\right)-r\\left(x_2\\right)}{x_1-x_2}$$. So to find the answer, we can start by plugging in $$2+h$$ for $$x_1$$ and $$2$$ for $$x_2$$, and we get the expression $$\\frac{{4\\left(2+h\\right)}^3-3\\times2^3}{2+h-2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa97d5brate8a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$48+24h+4h^2$$"
+        ],
+        "dependencies": [],
+        "title": "Simplify",
+        "text": "Simplify the expression $$\\frac{{4\\left(2+h\\right)}^3-3\\times2^3}{2+h-2}$$. What do you get?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "aa97d5brate8a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$8+12h+6h^2+h^3$$"
+                ],
+                "dependencies": [],
+                "title": "Simplify",
+                "text": "What is $$\\left(2+h\\right)^3$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "aa97d5brate8a-h2-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$32+48h+24h^2+4h^3$$"
+                ],
+                "dependencies": [
+                    "aa97d5brate8a-h2-s1"
+                ],
+                "title": "multiply",
+                "text": "What is $$4\\left(2+h\\right)^3$$, using the expression you get from the last part?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "aa97d5brate8a-h2-s3",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$48h+24h^2+4h^3$$"
+                ],
+                "dependencies": [
+                    "aa97d5brate8a-h2-s2"
+                ],
+                "title": "Subtract",
+                "text": "Subtract $$4\\times2^3=32$$ from $$32+48h+24h^2+4h^3$$. What do you get?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            },
+            {
+                "id": "aa97d5brate8a-h2-s4",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$48+24h+4h^2$$"
+                ],
+                "dependencies": [
+                    "aa97d5brate8a-h2-s3"
+                ],
+                "title": "Divide",
+                "text": "The last step is to divide $$48h+24h^2+4h^3$$ by $$2+h-2$$. What do you get?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    }
+]

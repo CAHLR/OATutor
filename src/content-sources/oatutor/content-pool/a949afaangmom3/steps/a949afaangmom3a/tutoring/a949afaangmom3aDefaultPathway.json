@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a949afaangmom3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the acceleration of the marble, consider the forces acting on it as it rolls down the incline. The gravitational force causes it to accelerate, while the rotational inertia of the sphere affects the acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom3a-h1"
+        ],
+        "title": "Using Newton's Second Law",
+        "text": "Apply Newton's second law for rotation and translation. The net force acting on the marble is the component of gravitational force along the incline, which is $$m g sin\\left(\\theta\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom3a-h2"
+        ],
+        "title": "Moment of Inertia for a Sphere",
+        "text": "The moment of inertia for a solid sphere is $$\\frac{2}{5} m r^2$$. This will be useful when considering the rotational motion of the marble.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom3a-h3"
+        ],
+        "title": "Relating Linear and Angular Acceleration",
+        "text": "For a rolling object, the linear acceleration a is related to the angular acceleration alpha by the equation $$a=r \\alpha$$, where $$r$$ is the radius of the sphere.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom3a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3.5$$"
+        ],
+        "dependencies": [
+            "a949afaangmom3a-h4"
+        ],
+        "title": "Calculating Acceleration",
+        "text": "Using the equations for linear and rotational motion, solve for the linear acceleration a of the marble.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

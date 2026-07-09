@@ -1,0 +1,105 @@
+[
+    {
+        "id": "a662caelawsin9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Ambiguous case conditions",
+        "text": "The ambiguous case arises when you are given certain information about a triangle that could lead to two possible triangles, one triangle, or no triangle.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin9a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "More than one possible triangle can be formed"
+        ],
+        "dependencies": [
+            "a662caelawsin9a-h1"
+        ],
+        "title": "Meaning of ambiguous case",
+        "text": "What is the primary characteristic of an ambiguous case when solving a triangle?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Only one triangle can be formed",
+            "No triangle can be formed",
+            "More than one possible triangle can be formed",
+            "The triangle must be a right triangle"
+        ]
+    },
+    {
+        "id": "a662caelawsin9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin9a-h1"
+        ],
+        "title": "Law of Sines application",
+        "text": "The Law of Sines is typically used when you have a side and its opposite angle, or two angles and a side.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin9a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "SSA"
+        ],
+        "dependencies": [
+            "a662caelawsin9a-h2"
+        ],
+        "title": "Congruence criteria",
+        "text": "Which of these is generally not a congruence postulate or theorem for triangles?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "ASA",
+            "AAS",
+            "SSS",
+            "SSA"
+        ]
+    },
+    {
+        "id": "a662caelawsin9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin9a-h2"
+        ],
+        "title": "SSA and ambiguity",
+        "text": "When you are given two sides and a non-included angle (SSA), there might be multiple ways to construct the triangle.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin9a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "SSA"
+        ],
+        "dependencies": [
+            "a662caelawsin9a-h3"
+        ],
+        "title": "Identifying SSA",
+        "text": "What abbreviation describes the situation where two sides and a non-included angle are known?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "SAS",
+            "ASA",
+            "AAS",
+            "SSA"
+        ]
+    }
+]

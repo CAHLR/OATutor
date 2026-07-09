@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a56bd16newtonapps15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the ideal banking angle, we need to consider the forces acting on a vehicle moving in a circular path. The centripetal force required for the turn is provided by the horizontal component of the normal force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps15a-h1"
+        ],
+        "title": "Centripetal Force Equation",
+        "text": "The centripetal force \\(F_c\\) needed to keep a vehicle moving in a circle of radius \\(r\\) at speed \\(v\\) is given by the equation \\(F_c=m*v**2/r\\), where \\(m\\) is the mass of the vehicle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps15a-h2"
+        ],
+        "title": "Banking Angle Equation",
+        "text": "The ideal banking angle \\(\\theta\\) can be found using the equation \\(tan(\\theta)=v**2/(r*g)\\), where \\(g\\) is the acceleration due to gravity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps15a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4.14$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps15a-h3"
+        ],
+        "title": "Calculate the Banking Angle",
+        "text": "Given $$\\(v=105\\)$$ $$\\frac{km}{h}$$ (convert to m/s), $$\\(r=1200\\)$$ $$m$$, and $$\\(g=9.8\\)$$ m/s\u00b2, calculate \\(tan(\\theta)\\) and then find \\(\\theta\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

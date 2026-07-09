@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a649252angle21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewrite for Double Angle Formula",
+        "text": "The double angle formula is $$\\sin(2A)$$ $$=$$ $$2\\sin(A)\\cos(A)$$. $$How$$ $$can$$ $$you$$ $$factor$$ $$the$$ $$given$$ $$expression$$ $$to$$ $$match$$ $$this$$ $$form$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle21a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a649252angle21a-h1"
+        ],
+        "title": "Factor the expression",
+        "text": "Rewrite $$4\\sin(\\frac{pi}{8})\\cos(\\frac{pi}{8})$$ as $$k$$ $$\\cdot$$ $$(2\\sin(\\frac{pi}{8})\\cos(\\frac{pi}{8}))$$ What is $$k$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle21a-h1"
+        ],
+        "title": "Apply Double Angle Formula",
+        "text": "Substitute $$A$$ $$=$$ $$\\frac{pi}{8}$$ into $$2\\sin(A)\\cos(A)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle21a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{pi}{4}$$"
+        ],
+        "dependencies": [
+            "a649252angle21a-h2"
+        ],
+        "title": "Simplify 2A",
+        "text": "What is $$2$$ $$\\cdot$$ $$\\frac{pi}{8}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle21a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle21a-h2"
+        ],
+        "title": "Evaluate and Multiply",
+        "text": "What is the exact value of $$\\sin(\\frac{pi}{4})$$? $$Then$$ $$multiply$$ $$by$$ $$the$$ $$constant$$ $$k$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle21a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\sqrt{2}}{2}$$"
+        ],
+        "dependencies": [
+            "a649252angle21a-h3"
+        ],
+        "title": "Unit Circle Value",
+        "text": "What is $$\\sin(\\frac{pi}{4})$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

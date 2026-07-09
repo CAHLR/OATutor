@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a73b129counting8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cards",
+        "text": "A standard deck of playing cards has $$52$$ cards, divided into $$4$$ suits: hearts, diamonds, clubs, and spades. Each suit contains $$13$$ cards. You need to count how many cards are either a red ace or a club.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73b129counting8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a73b129counting8a-h1"
+        ],
+        "title": "Number of Red Aces",
+        "text": "The red aces are the ace of hearts and the ace of diamonds. So, there are $$2$$ red aces in total.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73b129counting8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a73b129counting8a-h2"
+        ],
+        "title": "Number of Clubs",
+        "text": "The clubs are all the cards in the suit of clubs, so there are $$13$$ clubs",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a73b129counting8a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a73b129counting8a-h3"
+        ],
+        "title": "Addition Principle",
+        "text": "Since we are selecting either a red ace or a club, we should use the Addition Principle. The events are mutually exclusive (a card cannot be both a red ace and a club), so we can simply add the number of red aces and the number of clubs.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

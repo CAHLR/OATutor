@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a56bd16newtonapps4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Thrust and Weight",
+        "text": "To find the initial acceleration, consider the forces acting on the rocket. The thrust from the engines and the gravitational force (weight) are the two main forces.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps4a-h1"
+        ],
+        "title": "Calculate the Weight of the Rocket",
+        "text": "The weight of the rocket can be calculated using the formula: $$weight=mass gravity$$. Use $$\\frac{9.8m}{s^2}$$ for gravity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.54\\times{10}^7$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps4a-h2"
+        ],
+        "title": "Calculate the Net Force",
+        "text": "The net force acting on the rocket is the thrust minus the weight. Use the formula: net $$force=thrust-weight$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7.7$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps4a-h3"
+        ],
+        "title": "Find the Initial Acceleration",
+        "text": "Use Newton's second law to find the acceleration: $$acceleration=net$$ $$\\frac{force}{mass}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

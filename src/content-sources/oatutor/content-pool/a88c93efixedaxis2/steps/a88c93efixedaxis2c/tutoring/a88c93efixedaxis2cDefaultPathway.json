@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a88c93efixedaxis2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Circular Motion",
+        "text": "When a particle moves along a circular path, it experiences centripetal acceleration. This acceleration is directed towards the center of the circle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis2c-h1"
+        ],
+        "title": "Formula for Centripetal Acceleration",
+        "text": "The formula for centripetal acceleration is given by \\(a_c=v**2/r\\), where \\(v\\) is the velocity of the particle and \\(r\\) is the radius of the circle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis2c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis2c-h2"
+        ],
+        "title": "Calculate Velocity",
+        "text": "First, calculate the velocity of the particle. Use the formula \\(v=d/t\\), where \\(d\\) is the distance traveled and \\(t\\) is the time taken. Assume the time taken is $$1$$ second for simplicity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis2c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis2c-h3"
+        ],
+        "title": "Calculate Centripetal Acceleration",
+        "text": "Now, use the velocity calculated and the radius of the circle to find the centripetal acceleration using \\(a_c=v**2/r\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

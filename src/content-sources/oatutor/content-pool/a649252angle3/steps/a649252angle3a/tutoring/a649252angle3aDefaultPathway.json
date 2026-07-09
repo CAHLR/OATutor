@@ -1,0 +1,81 @@
+[
+    {
+        "id": "a649252angle3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Expand the square",
+        "text": "Begin by expanding the right side of the identity, $$(\\sin\\theta+\\cos\\theta)**{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle3a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A^2$$ + $$2AB$$ + $$B^2$$"
+        ],
+        "dependencies": [
+            "a649252angle3a-h1"
+        ],
+        "title": "Apply algebraic identity",
+        "text": "What is the expansion of $$\\left(A+B\\right)^2$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$A^2$$ + $$2AB$$ + $$B^2$$",
+            "$$A^2$$ + $$B^2$$",
+            "$$A^2$$ + $$AB$$ + $$B^2$$",
+            "$$A^2$$ $$-$$ $$2AB$$ + $$B^2$$"
+        ]
+    },
+    {
+        "id": "a649252angle3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle3a-h1"
+        ],
+        "title": "Apply trigonometric identities",
+        "text": "Look for opportunities to apply the Pythagorean identity ($$\\sin**2\\theta + \\cos**2\\theta $$=$$ 1$$) and the double-angle identity for sine ($$\\sin(2\\theta) $$=$$ 2\\sin\\theta\\cos\\theta$$).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle3a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a649252angle3a-h2"
+        ],
+        "title": "Apply Pythagorean identity",
+        "text": "What is the value of $$\\sin**2\\theta + \\cos**2\\theta$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle3a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sin(2\\theta)$$"
+        ],
+        "dependencies": [
+            "a649252angle3a-h2"
+        ],
+        "title": "Apply double-angle identity",
+        "text": "What is the double-angle identity for $$2\\sin\\theta\\cos\\theta$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

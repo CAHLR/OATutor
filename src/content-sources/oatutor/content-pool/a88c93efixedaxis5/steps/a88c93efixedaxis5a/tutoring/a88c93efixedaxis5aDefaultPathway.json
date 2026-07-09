@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a88c93efixedaxis5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Acceleration",
+        "text": "Angular acceleration is the rate of change of angular velocity over time. It is calculated using the formula: angular acceleration $$=$$ (final angular velocity - initial angular velocity) / time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis5a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$52.36$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis5a-h1"
+        ],
+        "title": "Convert Units",
+        "text": "First, convert the angular velocities from revolutions per minute to radians per second. Use the conversion factor: $$1$$ revolution $$=$$ $$2\\pi$$ radians and $$1$$ minute $$=$$ $$60$$ seconds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis5a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.873$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis5a-h2"
+        ],
+        "title": "Calculate Angular Acceleration",
+        "text": "Now, use the formula for angular acceleration: angular acceleration $$=$$ (final angular velocity - initial angular velocity) / time. Substitute the converted values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]
