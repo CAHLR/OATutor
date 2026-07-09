@@ -61,8 +61,11 @@ const useStyles = makeStyles({
         paddingTop: "2rem"
     },
     contentContainer: {
-        width: "75%",
-        maxWidth: "75ch"
+        width: "100%",
+        maxWidth: "75ch",
+        padding: "0 16px",
+        margin: "0 auto",
+        boxSizing: "border-box",
     }
 });
 

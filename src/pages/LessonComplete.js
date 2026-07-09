@@ -30,7 +30,7 @@ const LessonComplete = () => {
             alignItems="center"
             justifyContent="center"
           >
-            <Box width="75%" maxWidth={1500}>
+            <Box width="100%" maxWidth={1500} style={{ paddingLeft: 16, paddingRight: 16 }}>
               <center>
                 <h1>Lesson complete</h1>
                 <h2>You have finished lesson {lessonID}.</h2>

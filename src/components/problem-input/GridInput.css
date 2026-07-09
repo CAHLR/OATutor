@@ -3,7 +3,17 @@
 }
 
 .grid-input-notice-container .grid-input-dim-input {
-    width: min(120px, 19vw);
+    width: min(120px, 22vw);
+}
+
+@media (max-width: 599px) {
+    .grid-input-notice-container .grid-input-dim-input {
+        width: min(80px, 22vw);
+    }
+
+    .grid-cell {
+        width: min(80px, 22vw) !important;
+    }
 }
 
 .grid-cell {

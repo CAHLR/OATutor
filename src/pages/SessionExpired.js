@@ -26,7 +26,7 @@ const SessionExpired = () => {
                     alignItems="center"
                     justifyContent="center"
                 >
-                    <Box width="75%" maxWidth={1500}>
+                    <Box width="100%" maxWidth={1500} style={{ paddingLeft: 16, paddingRight: 16 }}>
                         <center>
                             <h1>Oops, something went wrong!</h1>
                             <h2>It looks like your session has expired.</h2>

@@ -96,7 +96,7 @@ class LessonSelection extends React.Component {
                         alignItems="center"
                         justifyContent="center"
                     >
-                        <Box width="75%" maxWidth={1500} role={"main"}>
+                        <Box width="100%" maxWidth={1500} style={{ paddingLeft: 16, paddingRight: 16 }} role={"main"}>
                             <center>
                                 {this.isPrivileged
                                     ? <h1>{translate('lessonSelection.welcomeInstructor')}</h1>
@@ -122,13 +122,14 @@ class LessonSelection extends React.Component {
                                                     {/* card, text, and icon scale in proportion to one another */}
                                                     <Paper className={classes.paper} style={{ fontSize: "1rem", textAlign: "center" }}>
                                                         <h2 style={{
-                                                            height: "2.5em",
+                                                            minHeight: "2.5em",
                                                             marginTop: "0.2em",
                                                             marginBottom: "0.4em",
                                                             textAlign: "center",
                                                             display: "flex",
                                                             alignItems: "center",
                                                             justifyContent: "center",
+                                                            wordBreak: "break-word",
                                                         }}>{course.courseName}</h2>
                                                         <IconButton aria-label={`View Course ${i}`}
                                                             aria-roledescription={`Navigate to course ${i}'s page to view available lessons`}

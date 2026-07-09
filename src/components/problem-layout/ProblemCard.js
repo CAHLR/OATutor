@@ -769,7 +769,7 @@ class ProblemCard extends React.Component {
         const { isCorrect } = this.state;
         const { debug, use_expanded_view } = this.context;
 
-        const isMobile = this.props.width === "xs"; 
+        const isMobile = this.props.width === "xs" || this.props.width === "sm";
 
         const problemAttempted = isCorrect != null;
         const showCardHeader = this.props.showCardHeader !== false;
@@ -965,7 +965,7 @@ class ProblemCard extends React.Component {
                                 container
                                 spacing = {2}
                                 alignItems = "center"
-                                direction={isMobile ? "column" : "row'"}
+                                direction={isMobile ? "column" : "row"}
                                 justifyContent= "space-between"
                                 style={{ 
                                     marginTop: 40, 

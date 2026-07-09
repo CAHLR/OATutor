@@ -19,6 +19,14 @@ import { ReactComponent as OskiAvatar } from '../../assets/avatar_default_state.
 import { ReactComponent as SendArrowIcon } from '../../assets/arrow.svg';
 import { ReactComponent as ChatBubble } from '../../assets/chat-bubble.svg';
 import { ThemeContext } from '../../config/config.js';
+import { withResponsive } from '../../util/ResponsiveContext';
+import { MOBILE_CHAT_SHEET_HEIGHT } from './MobileBottomSheet';
+import {
+    MOBILE_AGENT_AVATAR_HEIGHT,
+    MOBILE_AGENT_AVATAR_WIDTH,
+    MOBILE_AGENT_FAB_BOTTOM,
+    MOBILE_FAB_RIGHT,
+} from './mobileFabStyles';
 
 const CHAT_THEME = {
     primary: '#4c7d9f',
@@ -29,6 +37,19 @@ const CHAT_THEME = {
     white: '#FFFFFF',
     surface: '#eef4fa',
 };
+
+const VISION_IMAGE_MIME_TYPES = new Set([
+    'image/png',
+    'image/jpeg',
+    'image/jpg',
+    'image/gif',
+    'image/webp',
+]);
+
+function isVisionSafeImageDataUrl(dataUrl) {
+    return typeof dataUrl === 'string'
+        && /^data:image\/(png|jpe?g|gif|webp);base64,/i.test(dataUrl);
+}
 
 // Tail tip x=382 in the 520-wide chat-bubble viewBox
 const LAUNCHER_TAIL_CENTER_PERCENT = (382 / 520) * 100;
@@ -55,6 +76,27 @@ const styles = (theme) => ({
         maxWidth: '95vw',
         maxHeight: '90vh',
         fontFamily: '"Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
+    },
+    chatContainerFullscreen: {
+        position: 'fixed',
+        left: 0,
+        right: 0,
+        bottom: 0,
+        width: '100vw',
+        height: MOBILE_CHAT_SHEET_HEIGHT,
+        maxWidth: '100vw',
+        maxHeight: MOBILE_CHAT_SHEET_HEIGHT,
+        minWidth: 0,
+        minHeight: 0,
+        borderRadius: '20px 20px 0 0',
+        zIndex: 1300,
+        boxShadow: '0 -10px 40px rgba(16, 24, 40, 0.16)',
+    },
+    launcherAvatarMobile: {
+        width: MOBILE_AGENT_AVATAR_WIDTH,
+        height: MOBILE_AGENT_AVATAR_HEIGHT,
+        display: 'block',
+        filter: 'drop-shadow(0 4px 14px rgba(76, 125, 159, 0.32))',
     },
     chatHeader: {
         background: `linear-gradient(135deg, ${CHAT_THEME.primary} 0%, ${CHAT_THEME.primaryDark} 100%)`,
@@ -209,11 +251,11 @@ const styles = (theme) => ({
     },
     floatingLauncher: {
         position: 'fixed',
-        bottom: 20,
-        right: 20,
+        bottom: MOBILE_AGENT_FAB_BOTTOM,
+        right: MOBILE_FAB_RIGHT,
         zIndex: 1001,
         maxWidth: 'calc(100vw - 40px)',
-        transform: 'translateX(6px)',
+        transform: 'none',
     },
     embeddedLauncher: {
         width: '100%',
@@ -345,7 +387,6 @@ class AgentChatbox extends React.Component {
             currentMessage: '',
             isTyping: false,
             isGenerating: false,
-            agentSessionId: null,
             chatWidth: 400,
             chatHeight: 600,
             isResizing: false,
@@ -358,6 +399,7 @@ class AgentChatbox extends React.Component {
         };
         this.messagesEndRef = React.createRef();
         this.chatContainerRef = React.createRef();
+        this.activeRequestId = 0;
     }
 
     getFirebase = () => this.context?.firebase;
@@ -367,7 +409,6 @@ class AgentChatbox extends React.Component {
     componentDidMount() {
         // Use initSessionIfNeeded so Problem.js (which mounts first) wins the session ID.
         agentHelper.initSessionIfNeeded();
-        this.setState({ agentSessionId: agentHelper.getSessionId() });
         if (this.props.mode === 'embedded' && this.state.isVisible) {
             // In standalone embedded mode, greet immediately and mark chat as opened.
             this.setState((prev) => ({
@@ -383,10 +424,19 @@ class AgentChatbox extends React.Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        const currentProblemID = this.props.problem?.id;
-        const prevProblemID = prevProps.problem?.id;
-        
-        if (currentProblemID && prevProblemID && currentProblemID !== prevProblemID) {
+        const currentLessonID = this.props.lesson?.id;
+        const prevLessonID = prevProps.lesson?.id;
+
+        if (
+            this.props.closeRequest != null &&
+            this.props.closeRequest !== prevProps.closeRequest &&
+            this.state.isVisible
+        ) {
+            this.setState({ isVisible: false });
+        }
+
+        // Only reset chat when the lesson changes — not when advancing to the next problem.
+        if (currentLessonID && prevLessonID && currentLessonID !== prevLessonID) {
             this.clearConversation();
         }
         
@@ -511,14 +561,34 @@ class AgentChatbox extends React.Component {
     };
 
     renderLauncher = () => {
-        const { classes } = this.props;
+        const { classes, responsive } = this.props;
+        const isMobile = responsive?.isMobile ?? false;
         const mode = this.props.mode || 'floating';
         const launcherPlacement = this.props.closedLauncherPlacement || mode;
         const { hasChatBeenOpened, isLauncherHovered } = this.state;
         const hintsOpen = this.props.hintsOpen;
         const showBubble = this.props.showLauncherBubble !== false &&
             !hintsOpen &&
+            !isMobile &&
             (!hasChatBeenOpened || isLauncherHovered);
+
+        if (isMobile && launcherPlacement === 'floating') {
+            if (hintsOpen) {
+                return null;
+            }
+
+            return (
+                <button
+                    type="button"
+                    className={`${classes.launcherButton} ${classes.floatingLauncher}`}
+                    onClick={this.toggleChat}
+                    onKeyDown={this.handleLauncherKeyDown}
+                    aria-label="Open AI Tutor"
+                >
+                    <OskiAvatar className={classes.launcherAvatarMobile} aria-hidden="true" />
+                </button>
+            );
+        }
 
         return (
             <button
@@ -569,9 +639,11 @@ class AgentChatbox extends React.Component {
     toggleChat = () => {
         const fb = this.getFirebase();
         const sid = this.getSessionId();
+        let nextVisible = false;
 
         this.setState(prevState => {
             const opening = !prevState.isVisible;
+            nextVisible = opening;
             const needsGreeting = opening && prevState.messages.length === 0;
 
             if (fb?.logChatSession && sid) {
@@ -596,10 +668,15 @@ class AgentChatbox extends React.Component {
                 isLauncherHovered: opening ? false : prevState.isLauncherHovered,
                 messages: needsGreeting ? this.buildGreetingMessages() : prevState.messages,
             };
+        }, () => {
+            if (this.props.onChatVisibilityChange) {
+                this.props.onChatVisibilityChange(nextVisible);
+            }
         });
     };
 
     clearConversation = () => {
+        this.activeRequestId += 1;
         agentHelper.initializeSession();
         const fb = this.getFirebase();
         const sid = this.getSessionId();
@@ -608,10 +685,12 @@ class AgentChatbox extends React.Component {
         }
         this.setState({
             messages: this.buildGreetingMessages(),
-            agentSessionId: agentHelper.getSessionId(),
             suggestedQuestions: [],
             suggestionsCacheKey: '',
             firstChatActionRecorded: false,
+            isGenerating: false,
+            isTyping: false,
+            currentMessage: '',
         }, this.fetchSuggestedQuestionsIfNeeded);
     };
 
@@ -672,7 +751,9 @@ class AgentChatbox extends React.Component {
         }
 
         const userMessage = nextMessage.trim();
-        const messageId = Date.now(); // Unique ID for tracking the assistant message
+        const messageId = Date.now();
+        const requestId = this.activeRequestId + 1;
+        this.activeRequestId = requestId;
         
         // Add user message and assistant placeholder in a single setState
         this.setState(prevState => ({
@@ -744,6 +825,9 @@ class AgentChatbox extends React.Component {
                         }
                     },
                     onChunkReceived: (partialResponse) => {
+                        if (requestId !== this.activeRequestId) {
+                            return;
+                        }
                         this.setState(prevState => ({
                             messages: prevState.messages.map(msg =>
                                 msg.id === assistantMessageId
@@ -753,10 +837,15 @@ class AgentChatbox extends React.Component {
                         }));
                     },
                     onSuccessfulCompletion: (fullResponse) => {
+                        if (requestId !== this.activeRequestId) {
+                            return;
+                        }
+                        const resolvedResponse = (fullResponse || '').trim()
+                            || "Sorry, I didn't get a response. Please try again.";
                         this.setState(prevState => ({
                             messages: prevState.messages.map(msg =>
                                 msg.id === assistantMessageId
-                                    ? { ...msg, content: fullResponse, isGenerating: false }
+                                    ? { ...msg, content: resolvedResponse, isGenerating: false }
                                     : msg
                             ),
                             isGenerating: false,
@@ -768,9 +857,9 @@ class AgentChatbox extends React.Component {
                             fb.logChatMessage(sid, {
                                 turnId: agentHelper.getTurnId(),
                                 role: 'assistant',
-                                content: fullResponse,
+                                content: resolvedResponse,
                                 latencyMs: Date.now() - turnStart,
-                                responseCharCount: fullResponse.length,
+                                responseCharCount: resolvedResponse.length,
                                 timestampMs: Date.now(),
                             });
                         }
@@ -779,6 +868,9 @@ class AgentChatbox extends React.Component {
                         }
                     },
                     onError: (error) => {
+                        if (requestId !== this.activeRequestId) {
+                            return;
+                        }
                         this.setState(prevState => ({
                             messages: prevState.messages.map(msg =>
                                 msg.id === assistantMessageId
@@ -870,12 +962,13 @@ class AgentChatbox extends React.Component {
         // RenderMedia builds, so if the student can see the image the URL is resolvable.
         const figureUrls = [];
         const problemID = problemContext?.problemID;
+        const imageFilenamePattern = /\.(gif|jpe?g|png|webp)$/i;
         if (problemID) {
             const figTokenRegex = /##([^\s#\n]+)/g;
             let m;
             while ((m = figTokenRegex.exec(combined)) !== null) {
                 const filename = (m[1] || '').trim();
-                if (filename) {
+                if (filename && imageFilenamePattern.test(filename)) {
                     const base = (process.env.PUBLIC_URL || '').replace(/\/$/, '');
                     figureUrls.push(
                         `${window.location.origin}${base}/static/images/figures/${CONTENT_SOURCE}/${problemID}/${filename}`
@@ -897,13 +990,31 @@ class AgentChatbox extends React.Component {
             try {
                 const res = await fetch(url);
                 if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+                const contentType = (res.headers.get('content-type') || '')
+                    .split(';')[0]
+                    .trim()
+                    .toLowerCase();
+                if (!VISION_IMAGE_MIME_TYPES.has(contentType)) {
+                    throw new Error(`Unsupported content-type: ${contentType || 'unknown'}`);
+                }
+
                 const blob = await res.blob();
+                if (!VISION_IMAGE_MIME_TYPES.has((blob.type || '').toLowerCase())) {
+                    throw new Error(`Unsupported blob type: ${blob.type || 'unknown'}`);
+                }
+
                 const dataUrl = await new Promise((resolve, reject) => {
                     const reader = new FileReader();
                     reader.onloadend = () => resolve(reader.result);
                     reader.onerror = () => reject(new Error('read failed'));
                     reader.readAsDataURL(blob);
                 });
+
+                if (!isVisionSafeImageDataUrl(dataUrl)) {
+                    throw new Error('Generated data URL is not a supported vision image');
+                }
+
                 results.push(dataUrl);
             } catch (e) {
                 // eslint-disable-next-line no-console
@@ -1041,7 +1152,8 @@ class AgentChatbox extends React.Component {
     }
 
     render() {
-        const { classes } = this.props;
+        const { classes, responsive } = this.props;
+        const isMobile = responsive?.isMobile ?? false;
         const {
             isVisible,
             messages,
@@ -1055,7 +1167,8 @@ class AgentChatbox extends React.Component {
         const mode = this.props.mode || 'floating';
         const allowEmbeddedClose = this.props.allowEmbeddedClose === true;
         const isChatVisible = (mode === 'embedded' && !allowEmbeddedClose) || isVisible;
-        const isResizablePanel = mode === 'floating' || allowEmbeddedClose;
+        const isResizablePanel = !isMobile && (mode === 'floating' || allowEmbeddedClose);
+        const useMobileSheet = isMobile && (mode === 'floating' || (mode === 'embedded' && allowEmbeddedClose));
         const questions = this.props.suggestedQuestions || suggestedQuestions;
         const loadingSuggestions = this.props.isLoadingSuggestedQuestions ?? isLoadingSuggestedQuestions;
         const showEmbeddedHeader = mode === 'embedded' && this.props.showEmbeddedHeader !== false;
@@ -1089,34 +1202,51 @@ class AgentChatbox extends React.Component {
         }
 
         // Chat window
-        return (
+        const chatPanel = (
             <Card 
                 ref={this.chatContainerRef}
-                className={classes.chatContainer}
+                className={`${classes.chatContainer} ${useMobileSheet ? classes.chatContainerFullscreen : ''}`}
                 style={{
-                    width: mode === 'embedded'
+                    width: useMobileSheet
+                        ? '100%'
+                        : mode === 'embedded'
                         ? (allowEmbeddedClose ? chatWidth : '100%')
                         : chatWidth,
-                    height: mode === 'embedded'
+                    height: useMobileSheet
+                        ? '100%'
+                        : mode === 'embedded'
                         ? (allowEmbeddedClose ? chatHeight : embeddedHeight)
                         : chatHeight,
-                    position: mode === 'embedded'
+                    position: useMobileSheet
+                        ? 'fixed'
+                        : mode === 'embedded'
                         ? (allowEmbeddedClose ? 'fixed' : 'relative')
                         : undefined,
-                    bottom: mode === 'embedded'
+                    bottom: useMobileSheet
+                        ? 0
+                        : mode === 'embedded'
                         ? (allowEmbeddedClose ? 20 : 'auto')
                         : undefined,
-                    right: mode === 'embedded'
+                    left: useMobileSheet ? 0 : undefined,
+                    right: useMobileSheet
+                        ? 0
+                        : mode === 'embedded'
                         ? (allowEmbeddedClose ? 20 : 'auto')
                         : undefined,
-                    borderRadius: mode === 'embedded' ? 12 : undefined,
-                    boxShadow: mode === 'embedded' ? '0 8px 32px rgba(0, 0, 0, 0.12)' : undefined,
-                    minWidth: mode === 'embedded' ? 0 : undefined,
-                    minHeight: mode === 'embedded' ? 0 : undefined,
-                    maxWidth: mode === 'embedded'
+                    borderRadius: useMobileSheet ? '20px 20px 0 0' : (mode === 'embedded' ? 12 : undefined),
+                    boxShadow: useMobileSheet
+                        ? '0 -10px 40px rgba(16, 24, 40, 0.16)'
+                        : (mode === 'embedded' ? '0 8px 32px rgba(0, 0, 0, 0.12)' : undefined),
+                    minWidth: useMobileSheet || mode === 'embedded' ? 0 : undefined,
+                    minHeight: useMobileSheet || mode === 'embedded' ? 0 : undefined,
+                    maxWidth: useMobileSheet
+                        ? '100vw'
+                        : mode === 'embedded'
                         ? (allowEmbeddedClose ? '95vw' : 'none')
                         : undefined,
-                    maxHeight: mode === 'embedded'
+                    maxHeight: useMobileSheet
+                        ? MOBILE_CHAT_SHEET_HEIGHT
+                        : mode === 'embedded'
                         ? (allowEmbeddedClose ? '90vh' : 'none')
                         : undefined,
                 }}
@@ -1213,7 +1343,27 @@ class AgentChatbox extends React.Component {
                 </>
             </Card>
         );
+
+        if (useMobileSheet) {
+            return (
+                <>
+                    <div
+                        role="presentation"
+                        onClick={this.toggleChat}
+                        style={{
+                            position: 'fixed',
+                            inset: 0,
+                            backgroundColor: 'rgba(16, 24, 40, 0.35)',
+                            zIndex: 1299,
+                        }}
+                    />
+                    {chatPanel}
+                </>
+            );
+        }
+
+        return chatPanel;
     }
 }
 
-export default withStyles(styles)(AgentChatbox);
+export default withStyles(styles)(withResponsive(AgentChatbox));

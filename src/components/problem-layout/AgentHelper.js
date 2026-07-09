@@ -133,6 +133,28 @@ export class AgentHelper {
             const reader = response.body.getReader();
             const decoder = new TextDecoder();
             let fullResponse = '';
+            let lineBuffer = '';
+
+            const processStreamLine = (line) => {
+                const trimmed = line.trim();
+                if (!trimmed) {
+                    return;
+                }
+
+                const data = JSON.parse(trimmed);
+
+                if (data.type === 'content' && data.content) {
+                    fullResponse += data.content;
+                    onChunkReceived(fullResponse);
+                } else if (data.type === 'complete') {
+                    if (!fullResponse && typeof data.fullResponse === 'string' && data.fullResponse) {
+                        fullResponse = data.fullResponse;
+                        onChunkReceived(fullResponse);
+                    }
+                } else if (data.type === 'error') {
+                    throw new Error(data.error || 'Unknown error from agent');
+                }
+            };
 
             while (true) {
                 const { done, value } = await reader.read();
@@ -141,29 +163,29 @@ export class AgentHelper {
                     break;
                 }
 
-                // Decode chunk
-                const chunk = decoder.decode(value, { stream: true });
-                
-                // Parse JSON chunks (Lambda sends newline-delimited JSON)
-                const lines = chunk.split('\n').filter(line => line.trim());
-                
+                lineBuffer += decoder.decode(value, { stream: true });
+                const lines = lineBuffer.split('\n');
+                lineBuffer = lines.pop() || '';
+
                 for (const line of lines) {
                     try {
-                        const data = JSON.parse(line);
-                        
-                        if (data.type === 'content' && data.content) {
-                            // Accumulate response
-                            fullResponse += data.content;
-                            
-                            // Call chunk callback for real-time UI update
-                            onChunkReceived(fullResponse);
-                        } else if (data.type === 'complete') {
-                            // Response complete
-                        } else if (data.type === 'error') {
-                            throw new Error(data.error || 'Unknown error from agent');
-                        }
+                        processStreamLine(line);
                     } catch (parseError) {
-                        // Sometimes chunks split JSON, accumulate and try again
+                        if (parseError instanceof SyntaxError) {
+                            continue;
+                        }
+                        throw parseError;
+                    }
+                }
+            }
+
+            lineBuffer += decoder.decode();
+            if (lineBuffer.trim()) {
+                try {
+                    processStreamLine(lineBuffer);
+                } catch (parseError) {
+                    if (!(parseError instanceof SyntaxError)) {
+                        throw parseError;
                     }
                 }
             }
