@@ -422,11 +422,11 @@ const styles = (theme) => ({
         margin: "0 0 6px 0",
     },
     accordionSummary: {
-        minHeight: 40,
+        minHeight: 44,
         backgroundColor: "#ffffff",
         borderRadius: 6,
         "&.Mui-expanded": {
-            minHeight: 40,
+            minHeight: 44,
             backgroundColor: "#eef4fa",
             borderRadius: "6px 6px 0 0",
         },
@@ -440,6 +440,11 @@ const styles = (theme) => ({
         borderRadius: "0 0 6px 6px",
         paddingTop: theme.spacing(1.5),
         paddingBottom: theme.spacing(1.5),
+        overflowY: "auto",
+        maxHeight: "60vh",
+        [theme.breakpoints.down('sm')]: {
+            maxHeight: "50vh",
+        },
     },
 });
 

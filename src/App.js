@@ -37,6 +37,7 @@ import GlobalErrorBoundary from "./components/GlobalErrorBoundary";
 import { IS_STAGING_OR_DEVELOPMENT } from "./util/getBuildType";
 import TabFocusTrackerWrapper from "./components/TabFocusTrackerWrapper";
 import ViewAllProblems from "./components/problem-layout/ViewAllProblems";
+import { ResponsiveProvider } from "./util/ResponsiveContext";
 
 // ### BEGIN CUSTOMIZABLE IMPORTS ###
 import config from "./config/firebaseConfig.js";
@@ -296,6 +297,7 @@ class App extends React.Component {
                 >
                 <LocalizationProvider>
                     <GlobalErrorBoundary>
+                        <ResponsiveProvider>
                         <Router>
                             <div className="Router">
                                 <Switch>
@@ -443,6 +445,7 @@ class App extends React.Component {
                             autoClose={false}
                             closeOnClick={false}
                         />
+                        </ResponsiveProvider>
                     </GlobalErrorBoundary>
                     </LocalizationProvider>
                 </ThemeContext.Provider>

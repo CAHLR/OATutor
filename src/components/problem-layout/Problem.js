@@ -41,6 +41,15 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import AgentIntegration from './AgentIntegration';
 import StandaloneChatView from './StandaloneChatView';
 import AvatarHelpPanel from './AvatarHelpPanel';
+import { withResponsive } from '../../util/ResponsiveContext';
+import MobileBottomSheet from './MobileBottomSheet';
+import {
+    MOBILE_HINT_FAB_BOTTOM,
+    MOBILE_HINT_BADGE_SIZE,
+    MOBILE_HINT_ICON_SIZE,
+    HINT_BADGE_COLORS,
+    mobileFabButtonStyle,
+} from './mobileFabStyles';
 
 class Problem extends React.Component {
     static defaultProps = {
@@ -106,6 +115,8 @@ class Problem extends React.Component {
             avatarHintRequestId: 0,
             standaloneExited: false,
             firstHelpAction: null, // "chat" | "hint" — set once, used to write firstActionType
+            agentCloseRequest: 0,
+            isAgentChatVisible: false,
         };
 
         this.togglePopup = this.togglePopup.bind(this);
@@ -815,6 +826,7 @@ class Problem extends React.Component {
     handleHintToggleFromStep = (index, isOpen) => {
         const firebase = this.context?.firebase;
         const sessionId = agentHelper.getSessionId();
+        const isMobile = this.props.responsive?.isMobile ?? false;
 
         this.setState((prevState) => {
             const isFirst = prevState.firstHelpAction === null;
@@ -838,8 +850,32 @@ class Problem extends React.Component {
                 hintToggleIndex: isOpen ? index : null,
                 hasHintBeenOpened: isOpen ? true : prevState.hasHintBeenOpened,
                 firstHelpAction,
+                agentCloseRequest:
+                    isOpen && isMobile
+                        ? prevState.agentCloseRequest + 1
+                        : prevState.agentCloseRequest,
             };
         });
+    };
+
+    handleMobileHintClose = () => {
+        const index = this.state.hintToggleIndex;
+        if (index != null) {
+            this.handleHintToggleFromStep(index, false);
+            return;
+        }
+
+        if (this.state.isHintPortalOpen) {
+            this.setState({ isHintPortalOpen: false });
+        }
+    };
+
+    handleChatVisibilityChange = (visible) => {
+        this.setState({ isAgentChatVisible: visible });
+
+        if (visible && this.state.isHintPortalOpen) {
+            this.handleMobileHintClose();
+        }
     };
 
     handleHintHoverStart = () => {
@@ -850,20 +886,261 @@ class Problem extends React.Component {
         this.setState({ isHintHovering: false });
     };
 
+    renderMobileHintLauncher = () => {
+        const { isHintPortalOpen, isAgentChatVisible } = this.state;
+
+        if (isHintPortalOpen || isAgentChatVisible) {
+            return null;
+        }
+
+        return (
+            <button
+                type="button"
+                style={{
+                    ...mobileFabButtonStyle,
+                    bottom: MOBILE_HINT_FAB_BOTTOM,
+                }}
+                onClick={this.handleHintAvatarClick}
+                onKeyDown={this.handleHintAvatarKeyDown}
+                aria-label="Open hints"
+            >
+                <div
+                    style={{
+                        width: MOBILE_HINT_BADGE_SIZE,
+                        height: MOBILE_HINT_BADGE_SIZE,
+                        borderRadius: '50%',
+                        backgroundColor: HINT_BADGE_COLORS.accentSoft,
+                        border: `3px solid ${HINT_BADGE_COLORS.accent}`,
+                        boxShadow: '0 6px 18px rgba(239, 159, 39, 0.24)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        flexShrink: 0,
+                    }}
+                >
+                    <span
+                        aria-hidden="true"
+                        style={{
+                            width: MOBILE_HINT_ICON_SIZE,
+                            height: MOBILE_HINT_ICON_SIZE,
+                            display: 'block',
+                            backgroundColor: HINT_BADGE_COLORS.accentIcon,
+                            WebkitMask: `url(${lightbulbIcon}) center / contain no-repeat`,
+                            mask: `url(${lightbulbIcon}) center / contain no-repeat`,
+                        }}
+                    />
+                </div>
+            </button>
+        );
+    };
+
+    renderMobileHintSheet = () => (
+        <MobileBottomSheet
+            open={this.state.isHintPortalOpen}
+            keepMounted
+            onClose={this.handleMobileHintClose}
+            title="Hints"
+            badge="Affects your mastery score"
+        >
+            <div ref={this.hintPortalRef} />
+        </MobileBottomSheet>
+    );
+
+    renderStandardHintPanel = () => {
+        const {
+            isHintPortalOpen,
+            hasHintBeenOpened,
+            isHintHovering,
+        } = this.state;
+        const showHintPromoBubble =
+            !isHintPortalOpen && (!hasHintBeenOpened || isHintHovering);
+        const showHintCardChrome = isHintPortalOpen || showHintPromoBubble;
+
+        const hintThemePrimaryDark = "#3f7091";
+        const hintThemeSurface = "#eef4fa";
+        const hintThemePale = "#a3c5de";
+        const hintThemeAccent = "#EF9F27";
+        const hintThemeAccentSoft = "#FAEEDA";
+        const hintThemeAccentHover = "#F5DBA7";
+        const hintThemeAccentIcon = "#854F0B";
+
+        const hintCardMaxWidth = isHintPortalOpen
+            ? (this.props.drawerOpen ? 340 : 380)
+            : (this.props.drawerOpen ? 300 : 340);
+
+        const wrapperStyle = {
+            position: "sticky",
+            top: "calc(50vh - 120px)",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-end",
+            width: "100%",
+            maxWidth: "100%",
+            maxHeight: "70vh",
+        };
+
+        const bubbleStyle = {
+            position: "fixed",
+            top: this.state.bannerHeight + 330,
+            right: 28,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-end",
+            width: "100%",
+            pointerEvents: "none",
+        };
+
+        const cardWrapperStyle = {
+            position: "relative",
+            width: "100%",
+            maxWidth: hintCardMaxWidth,
+            paddingTop: 34,
+            boxSizing: "border-box",
+            transition: "max-width 0.35s cubic-bezier(0.4, 0, 0.2, 1)",
+            cursor: "pointer",
+            pointerEvents: "auto",
+        };
+
+        const cardStyle = {
+            background: isHintPortalOpen ? hintThemeSurface : "transparent",
+            color: "#222",
+            border: showHintCardChrome ? `1px solid #4c7d9f` : "none",
+            padding: isHintPortalOpen
+                ? "8px 10px"
+                : showHintPromoBubble
+                    ? "14px 10px 6px"
+                    : 0,
+            borderRadius: 8,
+            boxShadow: isHintPortalOpen ? "0 4px 16px rgba(76, 125, 159, 0.14)" : "none",
+            position: "relative",
+            width: "100%",
+            maxHeight: isHintPortalOpen ? 340 : "none",
+            overflowY: isHintPortalOpen ? "auto" : "visible",
+            textAlign: "left",
+            zIndex: 2,
+            fontFamily: '"Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+            boxSizing: "border-box",
+        };
+
+        const portalStyle = isHintPortalOpen
+            ? { width: "100%", boxSizing: "border-box", marginTop: 8 }
+            : { display: "none" };
+
+        const badgeStyle = {
+            width: 64,
+            height: 64,
+            borderRadius: "50%",
+            backgroundColor: isHintHovering || isHintPortalOpen
+                ? hintThemeAccentHover
+                : hintThemeAccentSoft,
+            border: `3px solid ${hintThemeAccent}`,
+            boxShadow: "0 6px 18px rgba(239, 159, 39, 0.24)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            position: "absolute",
+            top: 0,
+            right: 16,
+            flexShrink: 0,
+            zIndex: 3,
+            cursor: "pointer",
+            transition: "transform 0.16s ease, box-shadow 0.16s ease",
+            transform: isHintHovering || isHintPortalOpen ? "scale(1.04)" : "scale(1)",
+        };
+
+        return (
+            <div style={wrapperStyle}>
+                <div
+                    style={bubbleStyle}
+                    onMouseEnter={this.handleHintHoverStart}
+                    onMouseLeave={this.handleHintHoverEnd}
+                >
+                    <div
+                        style={cardWrapperStyle}
+                        {...stagingProp({
+                            "data-selenium-target": "hint-avatar-toggle",
+                        })}
+                        role="button"
+                        tabIndex={0}
+                        aria-expanded={isHintPortalOpen}
+                        aria-controls="hint-portal-content"
+                        aria-label="Toggle hints"
+                        onClick={this.handleHintAvatarClick}
+                        onKeyDown={this.handleHintAvatarKeyDown}
+                        onFocus={this.handleHintHoverStart}
+                        onBlur={this.handleHintHoverEnd}
+                    >
+                        <div style={cardStyle}>
+                            {(isHintPortalOpen || showHintPromoBubble) && (
+                                <p style={{ margin: 0, fontWeight: 700, fontSize: 15, lineHeight: 1.2, color: hintThemePrimaryDark }}>
+                                    Hints
+                                </p>
+                            )}
+                            {showHintPromoBubble && (
+                                <>
+                                    <p style={{ margin: "2px 0 0", fontSize: 12, lineHeight: 1.3, color: "#5c6b7a", whiteSpace: "nowrap" }}>
+                                        Pre-written hints to help you with the problem.
+                                    </p>
+                                    <span
+                                        style={{
+                                            display: "inline-block",
+                                            marginTop: 4,
+                                            padding: "2px 7px",
+                                            borderRadius: 9999,
+                                            border: `1px solid ${hintThemePale}`,
+                                            backgroundColor: "#ffffff",
+                                            color: hintThemePrimaryDark,
+                                            fontSize: 11,
+                                            fontWeight: 600,
+                                            lineHeight: 1.2,
+                                        }}
+                                    >
+                                        Affects your mastery score
+                                    </span>
+                                </>
+                            )}
+                            <div
+                                ref={this.hintPortalRef}
+                                id="hint-portal-content"
+                                role="region"
+                                aria-live="polite"
+                                aria-label="Hints"
+                                aria-hidden={!isHintPortalOpen}
+                                style={portalStyle}
+                            />
+                        </div>
+                        <div style={badgeStyle}>
+                            <span
+                                aria-hidden="true"
+                                style={{
+                                    width: 42,
+                                    height: 42,
+                                    display: "block",
+                                    backgroundColor: hintThemeAccentIcon,
+                                    WebkitMask: `url(${lightbulbIcon}) center / contain no-repeat`,
+                                    mask: `url(${lightbulbIcon}) center / contain no-repeat`,
+                                }}
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    };
+
     render() {
         const { translate } = this.props;
         const { classes, problem, seed, compactHeader, hideHintPanel } = this.props;
         const [oerLink, oerName, licenseLink, licenseName] =
             this.getOerLicense();
-        const { isHintPortalOpen, hasHintBeenOpened, isHintHovering } = this.state;
-        const showHintPromoBubble =
-            !isHintPortalOpen && (!hasHintBeenOpened || isHintHovering);
-        const showHintCardChrome = isHintPortalOpen || showHintPromoBubble;
         if (problem == null) {
             return <div></div>;
         }
 
         const chatDisplayMode = this.props.lesson?.chat_display_mode || 'Off';
+        const isMobile = this.props.responsive?.isMobile ?? false;
+        const showHintPanel = !hideHintPanel && chatDisplayMode !== 'Avatar';
+        const showSideHintPanel = showHintPanel && !isMobile;
         const avatarHintStepIndex = this.state.avatarHintStepIndex ?? this.getAvatarHintTargetStepIndex();
         const avatarHintPayload = this.state.avatarHintsByStep[avatarHintStepIndex];
         const avatarHints = avatarHintPayload?.hints || [];
@@ -911,88 +1188,7 @@ class Problem extends React.Component {
 
         const drawerOpen = this.props.drawerOpen;
         const layoutGap = drawerOpen ? 3 : 4;
-        // const toggleMetaCollapsed = () =>
-        //     this.setState((prevState) => ({
-        //         metaCollapsed: !prevState.metaCollapsed,
-        //     }));
         const hintStickTop = "calc(50vh - 120px)";
-        const hintDisplayStyle = {
-            position: "sticky",
-            top: hintStickTop,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-end",
-            width: "100%",
-            maxWidth: "100%",
-            maxHeight: "70vh",
-        };
-        // Yellow box
-        const bubbleContainerStyle = {
-            position: "fixed",
-            // top: metaCollapsed ? 410 : this.state.bannerHeight + 330,
-            top: this.state.bannerHeight + 330,
-            right: 28,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-end",
-            width: "100%",
-            pointerEvents: "none",
-        };
-
-        const hintThemePrimary = "#4c7d9f";
-        const hintThemePrimaryDark = "#3f7091";
-        const hintThemeSurface = "#eef4fa";
-        const hintThemePale = "#a3c5de";
-        const hintThemeAccent = "#EF9F27";
-        const hintThemeAccentSoft = "#FAEEDA";
-        const hintThemeAccentHover = "#F5DBA7";
-        const hintThemeAccentIcon = "#854F0B";
-
-        const hintCardMaxWidth = isHintPortalOpen 
-            ? (drawerOpen ? 340 : 380)  // Wider when drawer is closed
-            : (drawerOpen ? 300 : 340);
-
-        const hintCardWrapperStyle = {
-            position: "relative",
-            width: "100%",
-            // maxWidth: isHintPortalOpen ? 340 : 300,
-            maxWidth: hintCardMaxWidth,
-            paddingTop: 34,
-            boxSizing: "border-box",
-            transition: "max-width 0.35s cubic-bezier(0.4, 0, 0.2, 1)",
-            cursor: "pointer",
-            pointerEvents: "auto", 
-        };
-
-        const hintCardStyle = {
-            background: isHintPortalOpen ? hintThemeSurface : "transparent",
-            color: "#222",
-            border: showHintCardChrome ? `1px solid ${hintThemePrimary}` : "none",
-            padding: isHintPortalOpen
-                ? "8px 10px"
-                : showHintPromoBubble
-                    ? "14px 10px 6px"
-                    : 0,
-            borderRadius: 8,
-            boxShadow: isHintPortalOpen ? "0 4px 16px rgba(76, 125, 159, 0.14)" : "none",
-            position: "relative",
-            width: "100%",
-            // Natural height up to 380px, then scroll
-            maxHeight: isHintPortalOpen ? 340 : "none",
-            overflowY: isHintPortalOpen ? "auto" : "visible",
-            textAlign: "left",
-            zIndex: 2,
-            fontFamily: '"Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
-            boxSizing: "border-box",
-        };
-
-        const hintPortalStyle = isHintPortalOpen ? {
-            width: "100%",
-            boxSizing: "border-box",
-            marginTop: 8,
-        } : {
-            display: "none",
-        };
 
         return (
             <>
@@ -1005,7 +1201,7 @@ class Problem extends React.Component {
                     <Grid
                         item
                         xs={12}
-                        md={hideHintPanel ? 12 : (drawerOpen ? 8 : 7)}
+                        md={hideHintPanel || isMobile ? 12 : (drawerOpen ? 8 : 7)}
                     >
                         <div className={classes.prompt} role={"banner"}>
                             <Card className={classes.titleCard}>
@@ -1202,7 +1398,11 @@ class Problem extends React.Component {
                                                     showCardHeader={false}
                                                     hintToggleTrigger={this.state.hintToggleTrigger}
                                                     hintToggleIndex={this.state.hintToggleIndex}
-                                                    hintPortalTarget={chatDisplayMode === 'Avatar' ? null : this.hintPortalRef}
+                                                    hintPortalTarget={
+                                                        chatDisplayMode === 'Avatar'
+                                                            ? null
+                                                            : this.hintPortalRef
+                                                    }
                                                     onHintToggle={this.handleHintToggleFromStep}
                                                     onHintUsageChange={this.handleHintUsageChange}
                                                     avatarHintMode={chatDisplayMode === 'Avatar'}
@@ -1214,6 +1414,10 @@ class Problem extends React.Component {
                                 );
                             })}
                         </div>
+
+                        {showHintPanel && isMobile && this.renderMobileHintLauncher()}
+                        {showHintPanel && isMobile && this.renderMobileHintSheet()}
+
                         <div width="100%">
                             {this.context.debug ? (
                                 <Grid container spacing={0}>
@@ -1263,14 +1467,12 @@ class Problem extends React.Component {
                                 </Grid>
                             ) : (
                                 
-                                <Grid 
-                                    container 
-                                    justifyContent="flex-end"
-                                    style={{ marginTop: 32, marginBottom: 32}}
+                                <Grid
+                                    container
+                                    justifyContent={isMobile ? "stretch" : "flex-end"}
+                                    style={{ marginTop: 32, marginBottom: 32, padding: isMobile ? "0 8px" : 0 }}
                                 >
-                                    <Grid item
-                                        style={{width: 167}}
-                                    >
+                                    <Grid item xs={isMobile ? 12 : undefined} style={isMobile ? undefined : { width: 167 }}>
                                         <Button
                                             className={classes.button} 
                                             style={{ width: "100%" }}
@@ -1292,6 +1494,7 @@ class Problem extends React.Component {
                         </div>
                     </Grid>
 
+                    {showSideHintPanel && (
                     <Grid
                         item
                         xs={12}
@@ -1329,107 +1532,39 @@ class Problem extends React.Component {
                                 onHideHint={this.handleAvatarHintHide}
                             />
                         ) : (
-                        <div style={hintDisplayStyle}>
-                        <div
-                            style={bubbleContainerStyle}
-                            onMouseEnter={this.handleHintHoverStart}
-                            onMouseLeave={this.handleHintHoverEnd}
-                        >
-                        {/* Hints card */}
-                        <div
-                        style={hintCardWrapperStyle}
-                        {...stagingProp({
-                            "data-selenium-target": "hint-avatar-toggle",
-                        })}
-                        role="button"
-                        tabIndex={0}
-                        aria-expanded={this.state.isHintPortalOpen}
-                        aria-controls="hint-portal-content"
-                        aria-label="Toggle hints"
-                        onClick={this.handleHintAvatarClick}
-                        onKeyDown={this.handleHintAvatarKeyDown}
-                        onFocus={this.handleHintHoverStart}
-                        onBlur={this.handleHintHoverEnd}
-                        >
-                        {/* Hint badge: full circle is clickable (not just the icon) */}
-                        <div
-                            style={{
-                                width: 64,
-                                height: 64,
-                                borderRadius: "50%",
-                                backgroundColor: isHintHovering || isHintPortalOpen
-                                    ? hintThemeAccentHover
-                                    : hintThemeAccentSoft,
-                                border: `3px solid ${hintThemeAccent}`,
-                                boxShadow: "0 6px 18px rgba(239, 159, 39, 0.24)",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                position: "absolute",
-                                top: 0,
-                                right: 16,
-                                zIndex: 3,
-                                cursor: "pointer",
-                                transition: "transform 0.16s ease, box-shadow 0.16s ease",
-                                transform: isHintHovering || isHintPortalOpen ? "scale(1.04)" : "scale(1)",
-                            }}
-                        >
-                            <span
-                                aria-hidden="true"
-                                style={{
-                                    width: 42,
-                                    height: 42,
-                                    display: "block",
-                                    backgroundColor: hintThemeAccentIcon,
-                                    WebkitMask: `url(${lightbulbIcon}) center / contain no-repeat`,
-                                    mask: `url(${lightbulbIcon}) center / contain no-repeat`,
-                                }}
-                            />
-                        </div>
-                        <div style={hintCardStyle}>
-                        {(isHintPortalOpen || showHintPromoBubble) && (
-                        <p style={{ margin: 0, fontWeight: 700, fontSize: 15, lineHeight: 1.2, color: hintThemePrimaryDark }}>
-                            Hints
-                        </p>
+                        this.renderStandardHintPanel()
                         )}
-                        {showHintPromoBubble && (
-                            <>
-                                <p style={{ margin: "2px 0 0", fontSize: 12, lineHeight: 1.3, color: "#5c6b7a", whiteSpace: "nowrap" }}>
-                                    Pre-written hints to help you with the problem.
-                                </p>
-                                <span
-                                    style={{
-                                        display: "inline-block",
-                                        marginTop: 4,
-                                        padding: "2px 7px",
-                                        borderRadius: 9999,
-                                        border: `1px solid ${hintThemePale}`,
-                                        backgroundColor: "#ffffff",
-                                        color: hintThemePrimaryDark,
-                                        fontSize: 11,
-                                        fontWeight: 600,
-                                        lineHeight: 1.2,
-                                    }}
-                                >
-                                    Affects your mastery score
-                                </span>
-                            </>
-                        )}
-                        <div
-                            ref={this.hintPortalRef}
-                            id="hint-portal-content"
-                            role="region"
-                            aria-live="polite"
-                            aria-label="Hints"
-                            aria-hidden={!this.state.isHintPortalOpen}
-                            style={hintPortalStyle}
-                        />
-                        </div>
-                        </div>
-                        </div>
-                    </div>
-                    )}
                     </Grid>
+                    )}
+
+                    {isMobile && chatDisplayMode === 'Avatar' && (
+                    <Grid item xs={12}>
+                            <AvatarHelpPanel
+                                problem={problem}
+                                lesson={this.props.lesson}
+                                seed={seed}
+                                problemVars={this.props.problemVars}
+                                stepStates={this.state.stepStates}
+                                bktParams={this.bktParams}
+                                getActiveStepData={this.getActiveStepData}
+                                attemptHistory={this.state.attemptHistory}
+                                user={this.props.user}
+                                lessonMasteryMap={this.props.lessonMasteryMap}
+                                hintUsageByStep={this.state.hintUsageByStep}
+                                avatarHint={avatarVisibleHint}
+                                avatarHintPayload={avatarHintPayload}
+                                avatarHintIndex={this.state.avatarVisibleHintIndex}
+                                avatarHintButtonLabel={avatarHintButtonLabel}
+                                avatarHintButtonDisabled={!this.state.isAvatarHintVisible && !avatarHasHints}
+                                avatarHasPreviousHint={avatarHasPreviousHint}
+                                avatarHasNextHint={avatarHasAnotherHint}
+                                onGetHint={this.handleHintAvatarClick}
+                                onPreviousHint={this.handleAvatarHintPrevious}
+                                onNextHint={this.handleAvatarHintNext}
+                                onHideHint={this.handleAvatarHintHide}
+                            />
+                    </Grid>
+                    )}
                 </Grid>
 
                 <footer>
@@ -1713,6 +1848,8 @@ class Problem extends React.Component {
                         lessonMasteryMap={this.props.lessonMasteryMap}
                         hintUsageByStep={this.state.hintUsageByStep}
                         hintsOpen={this.state.isHintPortalOpen}
+                        closeRequest={this.state.agentCloseRequest}
+                        onChatVisibilityChange={this.handleChatVisibilityChange}
                         condition="window"
                     />
                 )}
@@ -1772,4 +1909,4 @@ class Problem extends React.Component {
     }
 }
 
-export default withTranslation(withStyles(styles)(Problem));
+export default withTranslation(withStyles(styles)(withResponsive(Problem)));

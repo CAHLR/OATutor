@@ -301,35 +301,24 @@ const TableOfContents = ({
           style={{
             display: "flex",
             alignItems: "center",
-            justifyContent: "align-left",
+            justifyContent: "space-between",
             gap: 12,
             marginLeft: 4,
+            minWidth: 0,
           }}
         >
-          <Grid item>
-            <img
-              src={GeometryIcon}
-              alt="Lesson Icon Symbol Geometry"
-              style={{ width: 40, height: 40, marginTop: 8 }}
-            />
-          </Grid>
+          <img
+            src={GeometryIcon}
+            alt="Lesson Icon Symbol Geometry"
+            style={{ width: 40, height: 40, marginTop: 8, flexShrink: 0 }}
+          />
 
-          <Grid item xs={8}>
-            <div style={{ fontWeight: 600 }}>{courseName}</div>
-          </Grid>
+          <div style={{ fontWeight: 600, flex: 1, minWidth: 0, overflow: "hidden", textOverflow: "ellipsis" }}>
+            {courseName}
+          </div>
 
-          <Grid item xs={1}></Grid>
-
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "align-right",
-            }}
-          >
-            <Grid item xs={3}>
-              <MasteryRing mastery={courseCompletionRatio} />
-            </Grid>
+          <div style={{ flexShrink: 0 }}>
+            <MasteryRing mastery={courseCompletionRatio} />
           </div>
         </div>
       </div>
@@ -347,11 +336,11 @@ const TableOfContents = ({
               expanded={expanded === groupTitle}
               onChange={handleChange(groupTitle)}
               style={{
-                marginLeft: "-16px",
-                marginRight: "-16px",
+                marginLeft: 0,
+                marginRight: 0,
                 marginBottom: 0,
                 marginTop: 0,
-                width: "calc(100% + 32px)",
+                width: "100%",
                 borderRadius: "0px",
                 boxShadow: "none",
                 "&:before": { display: "none" },

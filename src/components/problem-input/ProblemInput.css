@@ -1,4 +1,11 @@
 
+@media (max-width: 599px) {
+    body {
+        --keycap-font-size: 18px;
+        --keyboard-toolbar-font-size: 18px;
+    }
+}
+
 body {
     --keyboard-accent-color: #8C94FF;
     --keycap-background-hover: #8C94FF;
