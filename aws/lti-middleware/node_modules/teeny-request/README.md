@@ -51,7 +51,7 @@ request({uri:'http://service.com/upload', method:'POST', json: {key:'value'}}, f
 The callback argument gets 3 arguments:
 
  * An error when applicable (usually from http.ClientRequest object)
- * An response object with statusCode, a statusMessage, and a body
+ * A response object with statusCode, a statusMessage, and a body
  * The third is the response body (JSON object)
 
 ## defaults(options)
@@ -84,12 +84,12 @@ Since 4.0.0, Webpack uses `javascript/esm` for `.mjs` files which handles ESM mo
 ```
 
 ## Motivation
-`request` has a ton of options and features and is accordingly large. Requiering a module incurs load and parse time. For
+`request` has a ton of options and features and is accordingly large. Requiring a module incurs load and parse time. For
 `request`, that is around 600ms.
 
 ![Load time of request measured with require-so-slow](https://user-images.githubusercontent.com/101553/44694187-20357700-aa3a-11e8-9116-b8ae794cbc27.png)
 
-`teeny-request` doesn't have any of the bells and whistles that `request` has, but is so much faster to load. If startup time is an issue and you don't need much beyong a basic GET and POST, you can use `teeny-request`.
+`teeny-request` doesn't have any of the bells and whistles that `request` has, but is so much faster to load. If startup time is an issue and you don't need much beyond a basic GET and POST, you can use `teeny-request`.
 
 ## Thanks
 Special thanks to [billyjacobson](https://github.com/billyjacobson) for suggesting the name. Please report all bugs to them. Just kidding. Please open issues.

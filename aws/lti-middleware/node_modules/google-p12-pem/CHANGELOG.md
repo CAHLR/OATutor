@@ -4,6 +4,15 @@
 
 [1]: https://www.npmjs.com/package/google-p12-pem?activeTab=versions
 
+## [4.0.1](https://github.com/googleapis/google-p12-pem/compare/v4.0.0...v4.0.1) (2022-08-23)
+
+
+### Bug Fixes
+
+* **deps:** pin node forge at 1.3.0 ([#415](https://github.com/googleapis/google-p12-pem/issues/415)) ([70316b4](https://github.com/googleapis/google-p12-pem/commit/70316b423128dae578b0d9182df2375335c10fe1))
+* **deps:** unpin node-forge ([#417](https://github.com/googleapis/google-p12-pem/issues/417)) ([69b9066](https://github.com/googleapis/google-p12-pem/commit/69b9066d417538ebefe26127524a546aa646cd37))
+* remove pip install statements ([#1546](https://github.com/googleapis/google-p12-pem/issues/1546)) ([#420](https://github.com/googleapis/google-p12-pem/issues/420)) ([fefb866](https://github.com/googleapis/google-p12-pem/commit/fefb866764b495f67d501f894c38ef38e23578af))
+
 ## [4.0.0](https://github.com/googleapis/google-p12-pem/compare/v3.1.4...v4.0.0) (2022-05-17)
 
 

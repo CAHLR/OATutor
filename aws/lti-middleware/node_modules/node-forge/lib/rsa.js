@@ -282,7 +282,7 @@ var digestInfoValidator = {
       constructed: false,
       capture: 'algorithmIdentifier'
     }, {
-      // NULL paramters
+      // NULL parameters
       name: 'DigestInfo.DigestAlgorithm.parameters',
       tagClass: asn1.Class.UNIVERSAL,
       type: asn1.Type.NULL,
@@ -316,7 +316,7 @@ var digestInfoValidator = {
  *
  * @param md the message digest object with the hash to sign.
  *
- * @return the encoded message (ready for RSA encrytion)
+ * @return the encoded message (ready for RSA encryption)
  */
 var emsaPkcs1v15encode = function(md) {
   // get the oid for the algorithm
@@ -498,7 +498,7 @@ var _modPow = function(x, key, pub) {
  *
  * The parameter bt controls whether to put padding bytes before the
  * message passed in. Set bt to either true or false to disable padding
- * completely (in order to handle e.g. EMSA-PSS encoding seperately before),
+ * completely (in order to handle e.g. EMSA-PSS encoding separately before),
  * signaling whether the encryption operation is a public key operation
  * (i.e. encrypting data) or not, i.e. private key operation (data signing).
  *
@@ -1133,6 +1133,9 @@ pki.setRsaPublicKey = pki.rsa.setPublicKey = function(n, e) {
    *          _parseAllDigestBytes testing flag to control parsing of all
    *            digest bytes. Unsupported and not for general usage.
    *            (default: true)
+   *          _skipPaddingChecks testing flag to skip some padding checks to
+   *            test other checks. Unsupported and not for general usage.
+   *            (default: false)
    *
    * @return true if the signature was verified, false if not.
    */
@@ -1144,27 +1147,32 @@ pki.setRsaPublicKey = pki.rsa.setPublicKey = function(n, e) {
     }
     if(options === undefined) {
       options = {
-        _parseAllDigestBytes: true
+        _parseAllDigestBytes: true,
+        _skipPaddingChecks: false
       };
     }
     if(!('_parseAllDigestBytes' in options)) {
       options._parseAllDigestBytes = true;
+    }
+    if(!('_skipPaddingChecks' in options)) {
+      options._skipPaddingChecks = false;
     }
 
     if(scheme === 'RSASSA-PKCS1-V1_5') {
       scheme = {
         verify: function(digest, d) {
           // remove padding
-          d = _decodePkcs1_v1_5(d, key, true);
+          d = _decodePkcs1_v1_5(d, key, true, undefined, options);
           // d is ASN.1 BER-encoded DigestInfo
           var obj = asn1.fromDer(d, {
             parseAllBytes: options._parseAllDigestBytes
           });
 
-          // validate DigestInfo
+          // validate DigestInfo structure and element count
           var capture = {};
           var errors = [];
-          if(!asn1.validate(obj, digestInfoValidator, capture, errors)) {
+          if(!asn1.validate(obj, digestInfoValidator, capture, errors) ||
+            obj.value.length !== 2) {
             var error = new Error(
               'ASN.1 object does not contain a valid RSASSA-PKCS1-v1_5 ' +
               'DigestInfo value.');
@@ -1173,7 +1181,7 @@ pki.setRsaPublicKey = pki.rsa.setPublicKey = function(n, e) {
           }
           // check hash algorithm identifier
           // see PKCS1-v1-5DigestAlgorithms in RFC 8017
-          // FIXME: add support to vaidator for strict value choices
+          // FIXME: add support to validator for strict value choices
           var oid = asn1.derToOid(capture.algorithmIdentifier);
           if(!(oid === forge.oids.md2 ||
             oid === forge.oids.md5 ||
@@ -1196,7 +1204,7 @@ pki.setRsaPublicKey = pki.rsa.setPublicKey = function(n, e) {
               throw new Error(
                 'ASN.1 object does not contain a valid RSASSA-PKCS1-v1_5 ' +
                 'DigestInfo value. ' +
-                'Missing algorithm identifer NULL parameters.');
+                'Missing algorithm identifier NULL parameters.');
             }
           }
 
@@ -1208,7 +1216,7 @@ pki.setRsaPublicKey = pki.rsa.setPublicKey = function(n, e) {
       scheme = {
         verify: function(digest, d) {
           // remove padding
-          d = _decodePkcs1_v1_5(d, key, true);
+          d = _decodePkcs1_v1_5(d, key, true, undefined, options);
           return digest === d;
         }
       };
@@ -1626,10 +1634,11 @@ function _encodePkcs1_v1_5(m, key, bt) {
  * @param key the RSA key to use.
  * @param pub true if the key is a public key, false if it is private.
  * @param ml the message length, if specified.
+ * @param options testing options.
  *
  * @return the decoded bytes.
  */
-function _decodePkcs1_v1_5(em, key, pub, ml) {
+function _decodePkcs1_v1_5(em, key, pub, ml, options) {
   // get the length of the modulus in bytes
   var k = Math.ceil(key.n.bitLength() / 8);
 
@@ -1637,7 +1646,7 @@ function _decodePkcs1_v1_5(em, key, pub, ml) {
 
     1. The encryption block EB cannot be parsed unambiguously.
     2. The padding string PS consists of fewer than eight octets
-      or is inconsisent with the block type BT.
+      or is inconsistent with the block type BT.
     3. The decryption process is a public-key operation and the block
       type BT is not 00 or 01, or the decryption process is a
       private-key operation and the block type is not 02.
@@ -1649,7 +1658,7 @@ function _decodePkcs1_v1_5(em, key, pub, ml) {
   var bt = eb.getByte();
   if(first !== 0x00 ||
     (pub && bt !== 0x00 && bt !== 0x01) ||
-    (!pub && bt != 0x02) ||
+    (!pub && bt !== 0x02) ||
     (pub && bt === 0x00 && typeof(ml) === 'undefined')) {
     throw new Error('Encryption block is invalid.');
   }
@@ -1673,6 +1682,11 @@ function _decodePkcs1_v1_5(em, key, pub, ml) {
       }
       ++padNum;
     }
+
+    // RFC 2313 8.1 note 6
+    if(padNum < 8 && !(options ? options._skipPaddingChecks : false)) {
+      throw new Error('Encryption block is invalid.');
+    }
   } else if(bt === 0x02) {
     // look for 0x00 byte
     padNum = 0;
@@ -1682,6 +1696,11 @@ function _decodePkcs1_v1_5(em, key, pub, ml) {
         break;
       }
       ++padNum;
+    }
+
+    // RFC 2313 8.1 note 6
+    if(padNum < 8 && !(options ? options._skipPaddingChecks : false)) {
+      throw new Error('Encryption block is invalid.');
     }
   }
 

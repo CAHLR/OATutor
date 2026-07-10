@@ -452,7 +452,12 @@ var instance = {
       if (error) return this._fail('extension_error', error.message);
 
       var payload = message.data;
-      if (message.opcode === this.OPCODES.text) payload = this._encode(payload);
+
+      if (payload.length > this._maxLength)
+        return this._fail('too_large', 'WebSocket frame length too large');
+
+      if (message.opcode === this.OPCODES.text)
+        payload = this._encode(payload);
 
       if (payload === null)
         return this._fail('encoding_error', 'Could not decode a text frame as UTF-8');

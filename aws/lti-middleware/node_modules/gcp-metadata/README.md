@@ -137,14 +137,23 @@ console.log(id.toString()) // ... 4520031799277581759
 
 ### Environment variables
 
-* GCE_METADATA_HOST: provide an alternate host or IP to perform lookup against (useful, for example, you're connecting through a custom proxy server).
+* `GCE_METADATA_HOST`: provide an alternate host or IP to perform lookup against (useful, for example, you're connecting through a custom proxy server).
 
-For example:
-```
-export GCE_METADATA_HOST = '169.254.169.254'
-```
+  For example:
+  ```
+  export GCE_METADATA_HOST = '169.254.169.254'
+  ```
 
-* DETECT_GCP_RETRIES: number representing number of retries that should be attempted on metadata lookup.
+* `DETECT_GCP_RETRIES`: number representing number of retries that should be attempted on metadata lookup.
+
+* `DEBUG_AUTH`: emit debugging logs
+
+* `METADATA_SERVER_DETECTION`: configure desired metadata server availability check behavior.
+
+  * `assume-present`: don't try to ping the metadata server, but assume it's present
+  * `none`: don't try to ping the metadata server, but don't try to use it either
+  * `bios-only`: treat the result of a BIOS probe as canonical (don't fall back to pinging)
+  * `ping-only`: skip the BIOS probe, and go straight to pinging
 
 
 ## Samples

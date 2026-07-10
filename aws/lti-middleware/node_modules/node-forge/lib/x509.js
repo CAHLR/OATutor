@@ -2289,7 +2289,7 @@ function _fillMissingExtensionFields(e, options) {
  * Convert signature parameters object to ASN.1
  *
  * @param {String} oid Signature algorithm OID
- * @param params The signature parametrs object
+ * @param params The signature parameters object
  * @return ASN.1 object representing signature parameters
  */
 function _signatureParametersToAsn1(oid, params) {
@@ -3166,6 +3166,15 @@ pki.verifyCertificateChain = function(caStore, chain, options) {
             error: pki.certificateError.bad_certificate
           };
         }
+      }
+      // check for absent basicConstraints on non-leaf certificates
+      if(error === null && bcExt === null) {
+        error = {
+          message:
+            'Certificate is missing basicConstraints extension and cannot ' +
+            'be used as a CA.',
+          error: pki.certificateError.bad_certificate
+        };
       }
       // basic constraints cA flag must be set
       if(error === null && bcExt !== null && !bcExt.cA) {

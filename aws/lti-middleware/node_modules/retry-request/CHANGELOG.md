@@ -1,5 +1,13 @@
 # Changelog
 
+## [5.0.2](https://github.com/googleapis/retry-request/compare/v5.0.1...v5.0.2) (2022-09-14)
+
+
+### Bug Fixes
+
+* Delete second LICENSE ([#82](https://github.com/googleapis/retry-request/issues/82)) ([9dfaf18](https://github.com/googleapis/retry-request/commit/9dfaf1819b18b6d660924951b9cf1c509b6e9870))
+* Remove pip install statements ([#1546](https://github.com/googleapis/retry-request/issues/1546)) ([#79](https://github.com/googleapis/retry-request/issues/79)) ([cb4e15d](https://github.com/googleapis/retry-request/commit/cb4e15d6e8ae9d72855ed1071957afe9d301b12e))
+
 ## [5.0.1](https://github.com/googleapis/retry-request/compare/v5.0.0...v5.0.1) (2022-06-09)
 
 
