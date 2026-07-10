@@ -864,7 +864,7 @@ class ProblemCard extends React.Component {
                         padding: '20px',
                         marginBottom: -20
                     }}>
-                    {showCardHeader && (
+                    {/* {showCardHeader && (
                         <h2 className={classes.stepHeader}>
                             {renderText(
                                 this.step.stepTitle,
@@ -881,7 +881,7 @@ class ProblemCard extends React.Component {
                             )}
                             <hr />
                         </h2>
-                    )}
+                    )} */}
                         {showCardHeader && (
                             <div className={"classes.stepBody"}>
                                 {renderText(
@@ -899,7 +899,9 @@ class ProblemCard extends React.Component {
                                 )}
                             </div>
                         )}
-                            {inlineHints}
+                        
+                        <div style={{ marginBottom: 24 }} />
+                        {inlineHints}
 
                             <div className={classes.root}>
                                 <ProblemInput
