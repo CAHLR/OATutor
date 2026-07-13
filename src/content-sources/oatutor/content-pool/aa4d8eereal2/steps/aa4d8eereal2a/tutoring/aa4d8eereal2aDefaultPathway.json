@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Rewrite the Function in Standard Form",
-        "text": "Express the function in the general form of a secant function: $$h(x)=Asec(Bx-C)$$.",
+        "text": "Express the function in the general form of a secant function: $$f(x)=Asec(Bx-C)$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -15,7 +15,7 @@
         "problemType": "TextBox",
         "answerType": "string",
         "hintAnswer": [
-            "h(x)=2sec(\u03c0/4\u200bx+\u03c0/4\u200b)"
+            "h(x)=2sec(pi/4x+pi/4)"
         ],
         "dependencies": [
             "aa4d8eereal2a-h1"
@@ -45,7 +45,7 @@
             "aa4d8eereal2a-h3"
         ],
         "title": "Find the Horizontal Shift",
-        "text": "For the standard secant function $$f(x)=Atan(Bx-C)$$, the phase shift is $$\\frac{C}{B}$$. So $$h=\\frac{-\\left(\\frac{\\pi}{4}\\right)}{\\frac{\\pi}{4}}=-1$$",
+        "text": "For the standard secant function $$f(x)=Asec(Bx-C)$$, the phase shift is $$\\frac{C}{B}$$. So $$h=\\frac{-\\left(\\frac{\\pi}{4}\\right)}{\\frac{\\pi}{4}}=-1$$",
         "variabilization": {},
         "oer": "",
         "license": ""
