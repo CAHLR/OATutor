@@ -984,7 +984,7 @@ class Platform extends React.Component {
                 }}
               >
                 <img
-                  src={`${process.env.PUBLIC_URL}/static/images/icons/completion_avatar.png"`}
+                  src={`${process.env.PUBLIC_URL}/static/images/icons/completion_avatar.svg`}
                   alt="Completion Avatar"
                   width={120}
                 />
