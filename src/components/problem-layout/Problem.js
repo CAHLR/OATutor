@@ -1395,7 +1395,7 @@ class Problem extends React.Component {
                                                     giveStuBottomHint={this.giveStuBottomHint}
                                                     giveDynamicHint={this.giveDynamicHint}
                                                     prompt_template={this.prompt_template}
-                                                    showCardHeader={false}
+                                                    showCardHeader={true}
                                                     hintToggleTrigger={this.state.hintToggleTrigger}
                                                     hintToggleIndex={this.state.hintToggleIndex}
                                                     hintPortalTarget={
