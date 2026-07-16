@@ -8,6 +8,7 @@ import { withRouter } from "react-router-dom";
 
 import {
     coursePlans,
+    _coursePlansNoEditor,
     findLessonById,
     LESSON_PROGRESS_STORAGE_KEY,
     MIDDLEWARE_URL,
@@ -167,6 +168,22 @@ class Platform extends React.Component {
   handleLessonClick = (lesson) => {
     if (lesson && lesson.id) {
       this.props.history.push(`/lessons/${lesson.id}`);
+    }
+  };
+
+  handleHierarchyBack = () => {
+    if (this.props.lessonID) {
+      const lesson = findLessonById(this.props.lessonID);
+      const courseIndex = _coursePlansNoEditor.findIndex(
+        (course) => course.courseName === lesson?.courseName
+      );
+
+      this.props.history.push(courseIndex >= 0 ? `/courses/${courseIndex}` : "/");
+      return;
+    }
+
+    if (this.props.courseNum != null) {
+      this.props.history.push("/");
     }
   };
 
@@ -604,7 +621,7 @@ class Platform extends React.Component {
                         gap: "8xpx",
                       }}
                     >
-                      <IconButton onClick={() => this.props.history.goBack()} aria-label="Back" style={{ padding: 2 }}>
+                      <IconButton onClick={this.handleHierarchyBack} aria-label="Back" style={{ padding: 2 }}>
                         <img src={leftArrow} alt="Back Arrow" />
                       </IconButton>
 
@@ -619,7 +636,7 @@ class Platform extends React.Component {
                         gap: "8px",
                       }}
                     >
-                      <IconButton onClick={() => this.props.history.goBack()} aria-label="Back" style={{ padding: 2 }}>
+                      <IconButton onClick={this.handleHierarchyBack} aria-label="Back" style={{ padding: 2 }}>
                         <img src={leftArrow} alt="Back Arrow" />
                       </IconButton>
 
