@@ -18,6 +18,7 @@ import Popup from '../Popup/Popup.js';
 import About from '../../pages/Posts/About.js';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
 import { LocalizationConsumer } from '../../util/LocalizationContext';
+import { withResponsive } from '../../util/ResponsiveContext';
 
 class LessonSelection extends React.Component {
     static contextType = ThemeContext;
@@ -77,6 +78,7 @@ class LessonSelection extends React.Component {
     render() {
         const { translate } = this.props;
         const { classes, courseNum } = this.props;
+        const isMobile = this.props.responsive?.isMobile ?? false;
         const selectionMode = courseNum == null ? "course" : "lesson"
         const { showPopup } = this.state;
 
@@ -96,7 +98,12 @@ class LessonSelection extends React.Component {
                         alignItems="center"
                         justifyContent="center"
                     >
-                        <Box width="100%" maxWidth={1500} style={{ paddingLeft: 16, paddingRight: 16 }} role={"main"}>
+                        <Box
+                            width={isMobile ? "100%" : "75%"}
+                            maxWidth={1500}
+                            style={isMobile ? { paddingLeft: 16, paddingRight: 16 } : undefined}
+                            role={"main"}
+                        >
                             <center>
                                 {this.isPrivileged
                                     ? <h1>{translate('lessonSelection.welcomeInstructor')}</h1>
@@ -281,7 +288,7 @@ class LessonSelection extends React.Component {
 
 // export default withStyles(styles)(withTranslation(LessonSelection));
 
-export default withStyles(styles)(withTranslation((props) => (
+export default withStyles(styles)(withResponsive(withTranslation((props) => (
     <LocalizationConsumer>
         {({ language, platformLanguage }) => (
             <LessonSelection
@@ -291,4 +298,4 @@ export default withStyles(styles)(withTranslation((props) => (
             />
         )}
     </LocalizationConsumer>
-)));
+))));
