@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a132811electro3e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Oxidation and Reduction",
+        "text": "First, identify which element is being oxidized and which is being reduced. Remember, oxidation involves the loss of electrons, while reduction involves the gain of electrons.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro3e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro3e-h1"
+        ],
+        "title": "Determine the Oxidation States",
+        "text": "Determine the oxidation states of aluminum and silver in the reactants and products. This will help you see how many electrons are transferred.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro3e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro3e-h2"
+        ],
+        "title": "Balance the Electrons",
+        "text": "Ensure that the number of electrons lost in the oxidation process equals the number of electrons gained in the reduction process. This is crucial for balancing the redox reaction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro3e-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Al\u2192Al3++3e-;3Ag++3e-\u21923Ag"
+        ],
+        "dependencies": [
+            "a132811electro3e-h3"
+        ],
+        "title": "Write the Half-Reactions",
+        "text": "Write the half-reactions for the oxidation and reduction processes separately. This will help you balance the electrons more easily.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro3e-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Al+3Ag+\u2192Al3++3Ag"
+        ],
+        "dependencies": [
+            "a132811electro3e-h4"
+        ],
+        "title": "Combine the Half-Reactions",
+        "text": "Combine the balanced half-reactions to form the overall balanced redox reaction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

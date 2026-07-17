@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a132811electro5b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Cathode Reaction",
+        "text": "In a galvanic cell, the cathode is where reduction occurs. Identify which species is being reduced in the copper half-cell.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro5b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro5b-h1"
+        ],
+        "title": "Identify the Species at the Cathode",
+        "text": "Look at the copper half-cell. Which ion is present in the solution and can gain electrons?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro5b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro5b-h2"
+        ],
+        "title": "Write the Reduction Reaction",
+        "text": "Write the equation for the reduction of copper ions to solid copper. Remember to include the phase symbols.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro5b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Cu2+(aq)+2e\u2192Cu(s)"
+        ],
+        "dependencies": [
+            "a132811electro5b-h3"
+        ],
+        "title": "Cathode Half-Reaction",
+        "text": "Combine the information to write the half-reaction at the cathode.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]
