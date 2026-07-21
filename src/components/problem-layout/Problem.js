@@ -18,7 +18,6 @@ import { agentHelper } from "./AgentHelper";
 import { increment } from "../Firebase";
 import withTranslation from "../../util/withTranslation.js"
 import lightbulbIcon from "../../assets/lightbulb.svg";
-import avatar from "../../assets/avatar_default_state.svg";
 import TTSPlayer from "../../util/ttsPlayer.js";
 import TTSButtons from "./TTSButtons.js";
 import { textToReadable } from "../../util/latexToReadable.js";
@@ -36,7 +35,7 @@ import Spacer from "../Spacer";
 import { stagingProp } from "../../util/addStagingProperty";
 import { cleanArray } from "../../util/cleanObject";
 
-import {Accordion, AccordionSummary, AccordionDetails, Typography} from "@material-ui/core";
+import {Accordion, AccordionSummary, Typography} from "@material-ui/core";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import AgentIntegration from './AgentIntegration';
 import StandaloneChatView from './StandaloneChatView';
@@ -49,6 +48,8 @@ import {
     MOBILE_HINT_ICON_SIZE,
     HINT_BADGE_COLORS,
     mobileFabButtonStyle,
+    DESKTOP_TOOLTIP_RIGHT,
+    PAGE_BG,
 } from './mobileFabStyles';
 
 class Problem extends React.Component {
@@ -96,10 +97,8 @@ class Problem extends React.Component {
             stepStates: {},
             firstAttempts: {},
             problemFinished: false,
-            showFeedback: false,
             feedback: "",
             feedbackSubmitted: false,
-            showPopup: false,
             expandedAccordion: 0,
             hintToggleTrigger: 0,
             hintToggleIndex: null,
@@ -119,7 +118,6 @@ class Problem extends React.Component {
             isAgentChatVisible: false,
         };
 
-        this.togglePopup = this.togglePopup.bind(this);
         this.hintPortalRef = React.createRef();
         this.stepTTSPlayers = {};
 
@@ -593,20 +591,6 @@ class Problem extends React.Component {
         this.setState({ feedback: "", feedbackSubmitted: true });
     };
 
-    toggleFeedback = () => {
-        scroll.scrollToBottom({ duration: 500, smooth: true });
-        this.setState((prevState) => ({
-            showFeedback: !prevState.showFeedback,
-        }));
-    };
-    
-    togglePopup = () => {
-        console.log("Toggling popup visibility");
-        this.setState((prevState) => ({
-          showPopup: !prevState.showPopup,
-        }));
-    };
-
     _getNextDebug = (offset) => {
         return (
             this.context.problemIDs[
@@ -982,7 +966,7 @@ class Problem extends React.Component {
         const bubbleStyle = {
             position: "fixed",
             top: this.state.bannerHeight + 330,
-            right: 28,
+            right: DESKTOP_TOOLTIP_RIGHT,
             display: "flex",
             flexDirection: "column",
             alignItems: "flex-end",
@@ -1002,7 +986,7 @@ class Problem extends React.Component {
         };
 
         const cardStyle = {
-            background: isHintPortalOpen ? hintThemeSurface : "transparent",
+            background: isHintPortalOpen ? hintThemeSurface : PAGE_BG,
             color: "#222",
             border: showHintCardChrome ? `1px solid #4c7d9f` : "none",
             padding: isHintPortalOpen
@@ -1130,7 +1114,7 @@ class Problem extends React.Component {
 
     render() {
         const { translate } = this.props;
-        const { classes, problem, seed, compactHeader, hideHintPanel } = this.props;
+        const { classes, problem, seed, hideHintPanel } = this.props;
         const [oerLink, oerName, licenseLink, licenseName] =
             this.getOerLicense();
         if (problem == null) {
@@ -1614,45 +1598,6 @@ class Problem extends React.Component {
                             </div>
                             )}
                         </div>
-
-
-                        {/* <div
-                            style={{
-                                display: "flex",
-                                flexGrow: 1,
-                                marginRight: 20,
-                                justifyContent: "flex-end",
-                            }}
-                        >
-                            <IconButton
-                                aria-label="about"
-                                title={`About ${SITE_NAME}`}
-                                onClick={this.togglePopup}
-                            >
-                                <HelpOutlineOutlinedIcon
-                                    htmlColor={"#000"}
-                                    style={{
-                                        fontSize: 36,
-                                        margin: -2,
-                                    }}
-                                />
-                            </IconButton>
-                            <IconButton
-                                aria-label="report problem"
-                                onClick={this.toggleFeedback}
-                                title={"Report Problem"}
-                            >
-                                <FeedbackOutlinedIcon
-                                    htmlColor={"#000"}
-                                    style={{
-                                        fontSize: 32,
-                                    }}
-                                />
-                            </IconButton>
-                        </div>
-                        <Popup isOpen={showPopup} onClose={this.togglePopup}>
-                            <About />
-                        </Popup> */}
                     </div>
 
                     {this.props.showFeedback && (
@@ -1722,114 +1667,7 @@ class Problem extends React.Component {
                     )}
 
 
-                    {/* {this.state.showFeedback ? (
-                        <div className="Feedback" 
-                            style={{
-                                marginTop: 0,
-                                paddingTop: 0,
-                                paddingBottom: 690,
-                                backgroundColor: "#F6F6F6",
-                            }}
-                        
-                        >
-                            <center>
-                                <h1>{translate('problem.Feedback')}</h1>
-                            </center>
-                            <div className={classes.textBox}>
-                                <div className={classes.textBoxHeader}>
-                                    <center>
-                                        {this.state.feedbackSubmitted
-                                            ? translate('problem.Thanks')
-                                            : translate('problem.Description')}
-                                    </center>
-                                </div>
-                                {this.state.feedbackSubmitted ? (
-                                    <Spacer />
-                                ) : (
-                                    <Grid container spacing={0}>
-                                        <Grid
-                                            item
-                                            xs={1}
-                                            sm={2}
-                                            md={2}
-                                            key={1}
-                                        />
-                                        <Grid
-                                            item
-                                            xs={10}
-                                            sm={8}
-                                            md={8}
-                                            key={2}
-                                        >
-                                            <TextField
-                                                id="outlined-multiline-flexible"
-                                                label={translate('problem.Response')}
-                                                multiline
-                                                fullWidth
-                                                minRows="6"
-                                                maxRows="20"
-                                                value={this.state.feedback}
-                                                onChange={(event) =>
-                                                    this.setState({
-                                                        feedback:
-                                                            event.target.value,
-                                                    })
-                                                }
-                                                className={classes.textField}
-                                                margin="normal"
-                                                variant="outlined"
-                                            />{" "}
-                                        </Grid>
-                                        <Grid
-                                            item
-                                            xs={1}
-                                            sm={2}
-                                            md={2}
-                                            key={3}
-                                        />
-                                    </Grid>
-                                )}
-                            </div>
-                            {this.state.feedbackSubmitted ? (
-                                ""
-                            ) : (
-                                <div className="submitFeedback">
-                                    <Grid container spacing={0}>
-                                        <Grid
-                                            item
-                                            xs={3}
-                                            sm={3}
-                                            md={5}
-                                            key={1}
-                                        />
-                                        <Grid item xs={6} sm={6} md={2} key={2}>
-                                            <Button
-                                                className={classes.button}
-                                                style={{ width: "100%" }}
-                                                size="small"
-                                                onClick={this.submitFeedback}
-                                                disabled={
-                                                    this.state.feedback === ""
-                                                }
-                                            >
-                                                {translate('problem.Submit')}
-                                            </Button>
-                                        </Grid>
-                                        <Grid
-                                            item
-                                            xs={3}
-                                            sm={3}
-                                            md={5}
-                                            key={3}
-                                        />
-                                    </Grid>
-                                    <Spacer />
-                                </div>
-                            )}
-                        </div>
-                    ) : (
-                        ""
-                    )} */}
+}
                     
                 </footer>
 

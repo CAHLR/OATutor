@@ -1,6 +1,10 @@
 /** Shared positioning for stacked mobile hint + agent FABs (bottom-right). */
 
 export const MOBILE_FAB_RIGHT = 16;
+/** Desktop Hint / AI Tutor promo tooltips share this viewport right inset. */
+export const DESKTOP_TOOLTIP_RIGHT = 28;
+/** Page chrome background — solid tooltip fill that reads as “transparent”. */
+export const PAGE_BG = '#F6F6F6';
 export const MOBILE_AGENT_FAB_BOTTOM = 20;
 export const MOBILE_AGENT_BUTTON_SIZE = 64;
 export const MOBILE_AGENT_AVATAR_WIDTH = MOBILE_AGENT_BUTTON_SIZE;

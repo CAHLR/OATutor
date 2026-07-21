@@ -1,6 +1,5 @@
 import React from "react";
 import { AppBar, Toolbar } from "@material-ui/core";
-import LinearProgress from "@material-ui/core/LinearProgress";
 import Grid from "@material-ui/core/Grid";
 import ProblemWrapper from "@components/problem-layout/ProblemWrapper.js";
 import LessonSelectionWrapper from "@components/problem-layout/LessonSelectionWrapper.js";
@@ -14,8 +13,6 @@ import {
     SITE_NAME,
     ThemeContext,
     MASTERY_THRESHOLD,
-    SHOW_NOT_CANVAS_WARNING,
-    CANVAS_WARNING_STORAGE_KEY,
 } from "../config/config.js";
 import to from "await-to-js";
 import { toast } from "react-toastify";
@@ -51,7 +48,6 @@ import TableOfContents from "../components/tableOfContents.js";
 import withWidth from "@material-ui/core/withWidth";
 
 import { ProgressTooltip, InfoTooltip } from "@components/Tooltip";
-import { LocalizationConsumer } from '../util/LocalizationContext';
 import { isMobileWidth } from "../util/responsive";
 
 let problemPool = require(`@generated/processed-content-pool/${CONTENT_SOURCE}.json`);
@@ -99,7 +95,6 @@ class Platform extends React.Component {
       feedback: "",
       feedbackSubmitted: false,
       drawerOpen: initialDrawerOpen,
-      hasAutoClosedDrawer: false,
       metaCollapsed: false,
       currProblem: null,
       status: this.props.lessonID ? "loading" : "courseSelection",
@@ -113,7 +108,7 @@ class Platform extends React.Component {
       const lesson = findLessonById(this.props.lessonID);
       this.selectLesson(lesson).then((_) => {});
       const { setLanguage } = this.props;
-      if (lesson.courseName == "Matematik 4") {
+      if (lesson.courseName === "Matematik 4") {
         setLanguage("se");
       } else {
         const defaultLocale = localStorage.getItem("defaultLocale");
@@ -247,7 +242,7 @@ class Platform extends React.Component {
             toastId: ToastID.set_lesson_success.toString(),
           });
           const responseText = await response.text();
-          let [message, ...addInfo] = responseText.split("|");
+          let [, ...addInfo] = responseText.split("|");
           this.props.history.push(`/assignment-already-linked?to=${addInfo.to}`);
         }
       }
@@ -413,7 +408,7 @@ class Platform extends React.Component {
     try {
       localStorage.setItem(TOC_DRAWER_OPEN_KEY, open ? "1" : "0");
     } catch (e) {}
-    this.setState({ drawerOpen: open, hasAutoClosedDrawer: false });
+    this.setState({ drawerOpen: open });
   };
 
   getLessonMasteryMap = (courseName) => {
@@ -528,10 +523,10 @@ class Platform extends React.Component {
             <Toolbar className={isMobile ? classes.mobileCompactToolbar : undefined}>
               {isMobile ? (
                 <div style={{ display: "flex", alignItems: "center", width: "100%", gap: 4, minWidth: 0 }}>
-                  {inLesson && !this.state.drawerOpen && (
+                  {inLesson && (
                     <IconButton
                       aria-label="Table of Contents Toggle"
-                      onClick={() => this.toggleDrawer(true)}
+                      onClick={() => this.toggleDrawer(!this.state.drawerOpen)}
                       size="small"
                     >
                       <img src={ToCButton} alt="Table of Contents" style={{ width: 24, height: 24 }} />

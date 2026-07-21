@@ -26,15 +26,15 @@ import {
     MOBILE_AGENT_AVATAR_WIDTH,
     MOBILE_AGENT_FAB_BOTTOM,
     MOBILE_FAB_RIGHT,
+    DESKTOP_TOOLTIP_RIGHT,
+    PAGE_BG,
 } from './mobileFabStyles';
 
 const CHAT_THEME = {
     primary: '#4c7d9f',
     primaryDark: '#3f7091',
     accent: '#ffc300',
-    light: '#7ba9f3',
     pale: '#a3c5de',
-    white: '#FFFFFF',
     surface: '#eef4fa',
 };
 
@@ -77,7 +77,7 @@ const styles = (theme) => ({
         maxHeight: '90vh',
         fontFamily: '"Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
     },
-    chatContainerFullscreen: {
+    chatContainerSheet: {
         position: 'fixed',
         left: 0,
         right: 0,
@@ -256,6 +256,9 @@ const styles = (theme) => ({
         zIndex: 1001,
         maxWidth: 'calc(100vw - 40px)',
         transform: 'none',
+        [theme.breakpoints.up('md')]: {
+            right: DESKTOP_TOOLTIP_RIGHT,
+        },
     },
     embeddedLauncher: {
         width: '100%',
@@ -282,9 +285,8 @@ const styles = (theme) => ({
     launcherBubbleWrap: {
         position: 'relative',
         width: '100%',
-        padding: 1,
         boxSizing: 'border-box',
-        overflow: 'hidden',
+        overflow: 'visible',
         transition: 'max-height 0.25s ease, opacity 0.2s ease, margin-bottom 0.2s ease',
     },
     launcherBubbleWrapHidden: {
@@ -293,6 +295,7 @@ const styles = (theme) => ({
         marginBottom: 0,
         padding: 0,
         pointerEvents: 'none',
+        overflow: 'hidden',
     },
     launcherBubbleWrapVisible: {
         maxHeight: 200,
@@ -301,15 +304,15 @@ const styles = (theme) => ({
     },
     launcherBubbleShape: {
         position: 'absolute',
-        top: 1,
-        left: 1,
-        width: 'calc(100% - 2px)',
-        height: 'calc(100% - 2px)',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
         display: 'block',
         overflow: 'visible',
         pointerEvents: 'none',
         '& path': {
-            fill: 'transparent',
+            fill: PAGE_BG,
             stroke: CHAT_THEME.primary,
             vectorEffect: 'non-scaling-stroke',
         },
@@ -440,9 +443,15 @@ class AgentChatbox extends React.Component {
             this.clearConversation();
         }
         
-        // Only scroll when a new message is added, not when content is updated
-        if (this.state.messages.length > prevState.messages.length) {
-            this.scrollToBottom();
+        // Scroll to latest when chat is reopened, or when a new message is added
+        if (!prevState.isVisible && this.state.isVisible) {
+            // Double rAF: wait until remounted chat has finished layout
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => this.scrollToBottom(true));
+            });
+        } else if (this.state.messages.length > prevState.messages.length) {
+            // New user/assistant turn — always stick to the latest message
+            this.scrollToBottom(true);
         }
 
         if (this.props.showSuggestedQuestions) {
@@ -450,18 +459,24 @@ class AgentChatbox extends React.Component {
         }
     }
     
-    scrollToBottom = () => {
-        if (this.messagesEndRef.current) {
-            const messagesContainer = this.messagesEndRef.current.parentElement;
-            if (messagesContainer) {
-                // Check if user is already near the bottom (within 100px threshold)
-                const isNearBottom = messagesContainer.scrollHeight - messagesContainer.scrollTop - messagesContainer.clientHeight < 100;
-                
-                // Only auto-scroll if user hasn't manually scrolled up
-                if (isNearBottom) {
-                    this.messagesEndRef.current.scrollIntoView({ behavior: 'auto' });
-                }
-            }
+    scrollToBottom = (force = false) => {
+        if (!this.messagesEndRef.current) {
+            return;
+        }
+        const messagesContainer = this.messagesEndRef.current.parentElement;
+        if (!messagesContainer) {
+            return;
+        }
+
+        const distanceFromBottom =
+            messagesContainer.scrollHeight -
+            messagesContainer.scrollTop -
+            messagesContainer.clientHeight;
+        const isNearBottom = distanceFromBottom < 120;
+
+        // Scroll only the messages pane (not scrollIntoView — that moves page/flex ancestors).
+        if (force || isNearBottom) {
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
         }
     };
 
@@ -834,7 +849,10 @@ class AgentChatbox extends React.Component {
                                     ? { ...msg, content: partialResponse }
                                     : msg
                             )
-                        }));
+                        }), () => {
+                            // Follow the streaming reply to the bottom (ChatGPT-style)
+                            this.scrollToBottom(true);
+                        });
                     },
                     onSuccessfulCompletion: (fullResponse) => {
                         if (requestId !== this.activeRequestId) {
@@ -850,7 +868,9 @@ class AgentChatbox extends React.Component {
                             ),
                             isGenerating: false,
                             isTyping: false
-                        }));
+                        }), () => {
+                            this.scrollToBottom(true);
+                        });
                         const fb = this.getFirebase();
                         const sid = this.getSessionId();
                         if (fb?.logChatMessage && sid) {
@@ -884,7 +904,9 @@ class AgentChatbox extends React.Component {
                             ),
                             isGenerating: false,
                             isTyping: false
-                        }));
+                        }), () => {
+                            this.scrollToBottom(true);
+                        });
                         const fb = this.getFirebase();
                         const sid = this.getSessionId();
                         if (fb?.logChatSession && sid) {
@@ -1205,7 +1227,7 @@ class AgentChatbox extends React.Component {
         const chatPanel = (
             <Card 
                 ref={this.chatContainerRef}
-                className={`${classes.chatContainer} ${useMobileSheet ? classes.chatContainerFullscreen : ''}`}
+                className={`${classes.chatContainer} ${useMobileSheet ? classes.chatContainerSheet : ''}`}
                 style={{
                     width: useMobileSheet
                         ? '100%'
