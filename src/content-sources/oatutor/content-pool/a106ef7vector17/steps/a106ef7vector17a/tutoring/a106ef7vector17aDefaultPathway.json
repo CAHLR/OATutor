@@ -4,7 +4,19 @@
         "type": "hint",
         "dependencies": [],
         "title": "Direction angle convention",
-        "text": "With $$east=+x$$ and $$north=+y$$, \"55\u00b0 south of east\" means 55\u00b0 below the $$+x$$ axis, so $$\\theta A=-55\\degree$$. Then $$Ax=160.0$$ $$cos(-55\\degree)=+91.8$$ N and $$Ay=160.0$$ $$sin(-55\\degree)=-131.1$$ N.",
+        "text": "With east $$=$$ $$+x$$ and north $$=$$ $$+y$$, $$\"55\\degree$$ $$south$$ $$of$$ $$east\"$$ $$means$$ $$55\\degree$$ $$below$$ $$the$$ $$+x$$ axis, so $$\\theta_A=-55**\\circ$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a106ef7vector17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a106ef7vector17a-h1"
+        ],
+        "title": "Draw a triangle",
+        "text": "Draw a right triangle with hypotenuse $$\\vec{A}$$ and the two legs the $$x-$$ and $$y-$$ components. Label the angle and use trigonometry to find the components.",
         "variabilization": {},
         "oer": "",
         "license": ""

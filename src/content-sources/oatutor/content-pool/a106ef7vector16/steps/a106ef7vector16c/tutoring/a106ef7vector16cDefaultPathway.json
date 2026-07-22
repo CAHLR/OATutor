@@ -1,12 +1,42 @@
 [
     {
         "id": "a106ef7vector16c-h1",
-        "type": "hint",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "East"
+        ],
         "dependencies": [],
-        "title": "Read the signs of each component",
-        "text": "$$-4.0i$$ means westward (negative east), $$-3.0j$$ means southward (negative north), and $$-0.1k$$ means descending (negative altitude). The convoy retreats toward the west-southwest while losing altitude.",
+        "title": "East or west?",
+        "text": "Given the $$\\hat{i}$$ component, does the velocity vector point to the east or to the west?",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "choices": [
+            "East",
+            "West"
+        ]
+    },
+    {
+        "id": "a106ef7vector16c-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "North"
+        ],
+        "dependencies": [
+            "a106ef7vector16c-h1"
+        ],
+        "title": "North or south?",
+        "text": "Given the $$\\hat{j}$$ component, does the velocity vector point to the north or to the south?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "North",
+            "South"
+        ]
     }
 ]
