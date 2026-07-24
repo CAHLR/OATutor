@@ -1,0 +1,11 @@
+{
+    "id": "a33adf6row3",
+    "title": "Welcome to the Olympics",
+    "body": "DATA C100 staff are hosting a Winter Olympics event. All attendees and their tickets are described in the DataFrame named ticket. Each attendee has one ticket. If attendees bought jackets in the event shop, the number of jackets they bought is recorded in the DataFrame named jacket. Each row of jacket describes one unique attendee.\\n\\nThe columns of ticket are as described below:\\n\\n\u2022 passport\\_id: The attendee\u2019s passport ID. (type $$=$$ str)\\n\u2022 name: The attendee\u2019s name. Attendees with different passport IDs may have the same name. (type $$=$$ str)\\n\u2022 ticket\\_type: The attendee\u2019s ticket type. Values can be either \"Economy\", \"Standard\", or \"VIP\", listed in order of increasing price. (type $$=$$ str)\\n\\nThe columns of jacket are as described below:\\n\\n\u2022 passport\\_id: The attendee\u2019s passport ID. (type $$=$$ str)\\n\u2022 name: The attendee\u2019s name. Attendees with different passport IDs may have the same name. (type $$=$$ str)\\n\u2022 collar\\_size: The attendee\u2019s jacket collar size. (type $$=$$ np.float32)\\n\u2022 num\\_jacket\\_bought: The number of jackets the attendee bought. (type $$=$$ np.int64)\\n##figure1.gif",
+    "variabilization": {},
+    "oer": "https://ds100.org/sp26/assets/exams/fa25/fa25_final_sol.pdf",
+    "license": "",
+    "lesson": "Sampling A",
+    "lessonId": "5g42kVSj-cv4g-80TtPUaauz",
+    "courseName": "Data 100 Worksheets"
+}

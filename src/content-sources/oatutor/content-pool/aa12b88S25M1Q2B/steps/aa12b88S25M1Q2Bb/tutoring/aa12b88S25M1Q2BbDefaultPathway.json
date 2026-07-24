@@ -1,0 +1,64 @@
+[
+    {
+        "id": "aa12b88S25M1Q2Bb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Code",
+        "text": "The code snippet `dishes[dishes[\"phone number\"].str[:3] $$==$$ \"510\"]` is used to filter rows. What part of the phone number is being checked?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa12b88S25M1Q2Bb-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Checking the Condition",
+        "text": "The condition `dishes[\"phone number\"].str[:3] $$==$$ \"510\"` checks if the first three characters of the phone number are '510'. What does this imply about the phone numbers being selected?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa12b88S25M1Q2Bb-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Rows $$0$$ and $$1$$"
+        ],
+        "dependencies": [],
+        "title": "Analyzing the DataFrame",
+        "text": "Look at the DataFrame. Which rows have phone numbers starting with '510'?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Rows $$0$$ and $$1$$",
+            "Rows $$2$$ and $$3$$",
+            "Rows $$3$$ and $$4$$"
+        ]
+    },
+    {
+        "id": "aa12b88S25M1Q2Bb-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "aa12b88S25M1Q2Bb-h3"
+        ],
+        "title": "Evaluating the Code",
+        "text": "Does the code correctly filter the DataFrame to include only rows with phone numbers starting with '510'?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "False",
+            "TRUE",
+            "True"
+        ]
+    }
+]

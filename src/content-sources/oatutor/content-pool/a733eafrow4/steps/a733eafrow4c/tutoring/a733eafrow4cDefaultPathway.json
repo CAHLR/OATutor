@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a733eafrow4c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "Look at the DataFrame provided. Identify which column contains the weight of the nuggets.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a733eafrow4c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a733eafrow4c-h1"
+        ],
+        "title": "Filtering the Data",
+        "text": "Consider how you can filter the DataFrame to only include nuggets with a weight less than $$0.6$$ ounces.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a733eafrow4c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "nuggets[nuggets['weight']<0.6]"
+        ],
+        "dependencies": [
+            "a733eafrow4c-h2"
+        ],
+        "title": "Applying the Filter",
+        "text": "What code would you use to filter the DataFrame for nuggets with weight less than $$0.6$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a733eafrow4c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a733eafrow4c-h3"
+        ],
+        "title": "Counting the Chains",
+        "text": "After filtering, think about how you can count the occurrences of each chain in the filtered DataFrame.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a733eafrow4c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "value\\_counts()"
+        ],
+        "dependencies": [
+            "a733eafrow4c-h4"
+        ],
+        "title": "Using value\\_counts()",
+        "text": "What function can you use to count the number of occurrences of each chain in the filtered DataFrame?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a733eafrow4c-h6",
+        "type": "hint",
+        "dependencies": [
+            "a733eafrow4c-h5"
+        ],
+        "title": "Finding the Maximum",
+        "text": "Once you have the counts, consider how you can find which chain has the highest count.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a733eafrow4c-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            ".idxmax()"
+        ],
+        "dependencies": [
+            "a733eafrow4c-h6"
+        ],
+        "title": "Using idxmax()",
+        "text": "What function can you use to find the index of the maximum value in the counts?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

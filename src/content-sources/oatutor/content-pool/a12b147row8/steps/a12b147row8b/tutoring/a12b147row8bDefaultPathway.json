@@ -1,0 +1,94 @@
+[
+    {
+        "id": "a12b147row8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Sampling Frame",
+        "text": "Consider what the sampling frame represents in this context. It includes all UC Berkeley students who received the survey.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a12b147row8b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Population",
+        "text": "The population in this context is all UC Berkeley students, as the survey was distributed to them.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a12b147row8b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes, it represents the situation."
+        ],
+        "dependencies": [],
+        "title": "Analyzing Picture A",
+        "text": "In Picture A, the sampling frame and the population overlap. Does this represent the situation where the survey was distributed to all UC Berkeley students?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "No",
+            "Yes",
+            "Yes, it represents the situation."
+        ]
+    },
+    {
+        "id": "a12b147row8b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No, it does not represent the situation."
+        ],
+        "dependencies": [],
+        "title": "Analyzing Picture B",
+        "text": "In Picture B, the sampling frame and the population are separate. Does this represent the situation where the survey was distributed to all UC Berkeley students?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "No",
+            "No, it does not represent the situation.",
+            "Yes"
+        ]
+    },
+    {
+        "id": "a12b147row8b-h5",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Analyzing Picture C",
+        "text": "In Picture C, the sampling frame is larger than the population. Consider if this matches the scenario where the survey was distributed to all UC Berkeley students.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a12b147row8b-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Picture A"
+        ],
+        "dependencies": [
+            "a12b147row8b-h3"
+        ],
+        "title": "Choosing the Correct Picture",
+        "text": "Based on your analysis, which picture best represents the relationship between the sampling frame and the population?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Picture A",
+            "Picture B",
+            "Picture C"
+        ]
+    }
+]

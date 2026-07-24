@@ -1,0 +1,48 @@
+[
+    {
+        "id": "af40364Q5da-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Threshold Changes vs. ROC Shape",
+        "text": "Think about what the ROC curve represents. Does changing the threshold change the model itself, or just which point you move to on the same ROC curve?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af40364Q5da-h2",
+        "type": "hint",
+        "dependencies": [
+            "af40364Q5da-h1"
+        ],
+        "title": "Threshold Extremes",
+        "text": "What happens when the decision threshold is very high or very low? Which case labels almost everything positive, and which labels almost everything negative?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af40364Q5da-h3",
+        "type": "hint",
+        "dependencies": [
+            "af40364Q5da-h2"
+        ],
+        "title": "Raising the Threshold",
+        "text": "As the threshold rises, fewer points are predicted positive. If no predictions switch sides, is it possible for both the FPR and the TPR to remain unchanged?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af40364Q5da-h4",
+        "type": "hint",
+        "dependencies": [
+            "af40364Q5da-h3"
+        ],
+        "title": "Lowering the Threshold and Recall",
+        "text": "Lowering the threshold makes the model predict the positive class more easily. Since recall looks only at the actual positive cases and measures how many of them are predicted as positive, think about whether lowering the threshold would make that proportion smaller or larger.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

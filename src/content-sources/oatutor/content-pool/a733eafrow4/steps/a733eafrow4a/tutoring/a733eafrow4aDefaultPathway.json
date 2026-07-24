@@ -1,0 +1,88 @@
+[
+    {
+        "id": "a733eafrow4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Condition",
+        "text": "To find the chain that sold the most nuggets with weight less than $$0.6$$ ounces, you need to filter the DataFrame based on the weight condition.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a733eafrow4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a733eafrow4a-h1"
+        ],
+        "title": "Filtering the DataFrame",
+        "text": "Use the condition $$nuggets[\"weight\"]<0.6$$ to filter the DataFrame for nuggets weighing less than $$0.6$$ ounces.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a733eafrow4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$nuggets[\"weight\"]<0.6$$"
+        ],
+        "dependencies": [],
+        "title": "Applying the Condition",
+        "text": "What condition would you use to filter the DataFrame for nuggets weighing less than $$0.6$$ ounces?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$nuggets[\"weight\"]<0.6$$",
+            "$$nuggets[\"weight\"]<0.6$$",
+            "$$nuggets[\"weight\"] \\leq 0.6$$",
+            "$$nuggets[\"weight\"]>0.6$$",
+            "nuggets[nuggets[\"weight\"]<0.6]",
+            "$$nuggets[weight]<0.6$$"
+        ]
+    },
+    {
+        "id": "a733eafrow4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a733eafrow4a-h3"
+        ],
+        "title": "Selecting the Column",
+        "text": "After filtering, select the 'chain' column to count the occurrences of each chain.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a733eafrow4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a733eafrow4a-h4"
+        ],
+        "title": "Counting Occurrences",
+        "text": "Use the value\\_counts() function to count how many times each chain appears in the filtered DataFrame.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a733eafrow4a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "nuggets[nuggets[\"weight\"]<0.6][\"chain\"].value\\_counts()"
+        ],
+        "dependencies": [
+            "a733eafrow4a-h4"
+        ],
+        "title": "Counting Chains",
+        "text": "How do you count the occurrences of each chain in the filtered DataFrame?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

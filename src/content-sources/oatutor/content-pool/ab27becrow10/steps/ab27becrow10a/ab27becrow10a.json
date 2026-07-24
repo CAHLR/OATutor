@@ -1,0 +1,20 @@
+{
+    "id": "ab27becrow10a",
+    "stepAnswer": [
+        "A and D: $$orders[\"item\"].str.split().str[-1]$$ and orders[\"item\"].str.extract(r\"(\\w+)$\")"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Creating a Main Ingredient Column",
+    "stepBody": "Milad determines that the main ingredient of each item is its last word (i.e., the main ingredient of \"Orange Chicken\" is \"Chicken\"). He wishes to store each main ingredient in a new column in orders called main, as seen below. Which of the following options will correctly fill in the blank to create the main column? orders[\"main\"] $$=$$ \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\n",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "A and D: $$orders[\"item\"].str.split().str[-1]$$ and orders[\"item\"].str.extract(r\"(\\w+)$\")",
+    "choices": [
+        "A and D: $$orders[\"item\"].str.split().str[-1]$$ and orders[\"item\"].str.extract(r\"(\\w+)$\")",
+        "A only: $$orders[\"item\"].str.split().str[-1]$$",
+        "B only: $$orders[\"item\"].str[-1]$$",
+        "C only: orders[\"item\"].str.contains(r\"\\s*(\\w+)\")",
+        "B and C: $$orders[\"item\"].str[-1]$$ and orders[\"item\"].str.contains(r\"\\s*(\\w+)\")",
+        "None of these"
+    ]
+}

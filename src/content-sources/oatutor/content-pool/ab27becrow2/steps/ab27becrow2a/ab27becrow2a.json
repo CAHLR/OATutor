@@ -1,0 +1,11 @@
+{
+    "id": "ab27becrow2a",
+    "stepAnswer": [
+        "`0*([\\dA-z]+)`"
+    ],
+    "problemType": "TextBox",
+    "stepTitle": "Fill in blank (i):",
+    "stepBody": "Some of the values in the number column have leading zeroes (e.g., \"06A\"). Write a regular expression to remove all leading zeroes from the entries in the number column. Every string in number starts with a non-negative count of leading zeroes, followed by a combination of numbers and/or letters. No room number consists of only zeroes. The table below provides test cases and expected outputs for your code.\\nnumber | extracted\\n$$0060$$ | $$60$$\\n$$320$$ | $$320$$\\n00000B12 | B12\\n\\nFill in the regex pattern below to accomplish this.\\nrooms['numbe`r'] $$=$$ rooms['`numbe`r'].str.extract(r'`\\_\\_\\_\\_i\\_\\_\\_\\_')",
+    "answerType": "string",
+    "variabilization": {}
+}

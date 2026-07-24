@@ -1,0 +1,88 @@
+[
+    {
+        "id": "aa71372row2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "Look at the columns in the DataFrame. Which column contains the year of renovation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa71372row2d-h2",
+        "type": "hint",
+        "dependencies": [
+            "aa71372row2d-h1"
+        ],
+        "title": "Identifying Relevant Columns",
+        "text": "The 'renovated' column contains the year each room was last renovated. This is crucial for visualizing renovations by year.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa71372row2d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Box plot"
+        ],
+        "dependencies": [],
+        "title": "Choosing the Right Visualization",
+        "text": "What type of plot is suitable for showing the distribution of a numerical variable across different categories?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Box plot",
+            "Line plot",
+            "Scatter plot",
+            "Bar chart"
+        ]
+    },
+    {
+        "id": "aa71372row2d-h4",
+        "type": "hint",
+        "dependencies": [
+            "aa71372row2d-h3"
+        ],
+        "title": "Box Plot Characteristics",
+        "text": "Box plots are useful for visualizing the distribution of data and identifying outliers. They show the median, quartiles, and potential outliers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa71372row2d-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [],
+        "title": "Evaluating Overplotting",
+        "text": "Is overplotting a concern when using box plots to visualize data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "aa71372row2d-h6",
+        "type": "hint",
+        "dependencies": [
+            "aa71372row2d-h5"
+        ],
+        "title": "Understanding Overplotting",
+        "text": "Overplotting occurs when too many data points overlap, making it difficult to see individual points. Box plots summarize data, reducing this issue.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

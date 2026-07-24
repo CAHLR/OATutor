@@ -1,0 +1,65 @@
+[
+    {
+        "id": "ab27becrow7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To solve this problem, you need to create a regular expression (RegEx) pattern that matches words containing the substring \"cat\" without any uppercase letters or spaces.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ab27becrow7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab27becrow7a-h1"
+        ],
+        "title": "Identifying the Requirements",
+        "text": "The pattern should match words like \"cats\", \"concatenate\", and \"10cats10\". It should not match words like \"Cat\", \"CA Tacoma\", or \"CATcatCAT\".",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ab27becrow7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab27becrow7a-h2"
+        ],
+        "title": "Using Character Classes",
+        "text": "Consider using character classes to specify which characters are allowed or disallowed in the pattern. For example, you can use $$[**A-Z]$$ to exclude uppercase letters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ab27becrow7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ab27becrow7a-h3"
+        ],
+        "title": "Handling Spaces",
+        "text": "To ensure that spaces are not included in the match, you can use [**\\s] to exclude any whitespace characters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ab27becrow7a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "`[**\\sA-Z]*cat[**\\sA-Z]*`"
+        ],
+        "dependencies": [
+            "ab27becrow7a-h4"
+        ],
+        "title": "Constructing the Pattern",
+        "text": "Combine the character classes to form a pattern that matches the requirements. Remember to include \"cat\" in the pattern.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

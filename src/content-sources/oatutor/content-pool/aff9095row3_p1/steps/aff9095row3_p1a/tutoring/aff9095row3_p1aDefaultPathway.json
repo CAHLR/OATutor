@@ -1,0 +1,58 @@
+[
+    {
+        "id": "aff9095row3_p1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Granularity",
+        "text": "Granularity refers to the level of detail in the data. Consider what unique combinations of columns define a single entry in the DataFrame.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aff9095row3_p1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aff9095row3_p1a-h1"
+        ],
+        "title": "Identifying Unique Combinations",
+        "text": "Look at the columns that can uniquely identify each row. Which columns, when combined, make each row distinct?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aff9095row3_p1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "address and item"
+        ],
+        "dependencies": [
+            "aff9095row3_p1a-h2"
+        ],
+        "title": "Analyzing Columns",
+        "text": "Which columns in the DataFrame are necessary to uniquely identify each fruit at a specific location?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aff9095row3_p1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Each unique combination of address and item."
+        ],
+        "dependencies": [
+            "aff9095row3_p1a-h3"
+        ],
+        "title": "Combining Columns",
+        "text": "Combine the columns that uniquely identify each entry. What is the result?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

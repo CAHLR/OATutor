@@ -1,0 +1,58 @@
+[
+    {
+        "id": "ab27becrow1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Regex Pattern",
+        "text": "The regular expression [A-Z][a-z] is looking for a pattern where a capital letter is followed by a lowercase letter. Can you identify such a pattern in the sentence?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ab27becrow1b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "It"
+        ],
+        "dependencies": [
+            "ab27becrow1b-h1"
+        ],
+        "title": "Identify the First Match",
+        "text": "Look at the beginning of the sentence. Do you see a capital letter followed by a lowercase letter?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ab27becrow1b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab27becrow1b-h2"
+        ],
+        "title": "Check for Additional Matches",
+        "text": "After identifying the first match, continue scanning the sentence to see if there are any more occurrences of a capital letter followed by a lowercase letter.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ab27becrow1b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "It, NA, NA"
+        ],
+        "dependencies": [
+            "ab27becrow1b-h3"
+        ],
+        "title": "Conclude the Matches",
+        "text": "Based on your scan of the sentence, how many matches did you find?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

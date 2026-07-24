@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a9831a6row7g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Pattern",
+        "text": "The pattern `\\w?$` is used to match a word character at the end of the string. The `\\w` matches any word character (alphanumeric & underscore), and `?` makes it optional. The `$` asserts position at the end of the string.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9831a6row7g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9831a6row7g-h1"
+        ],
+        "title": "Analyzing the Case String",
+        "text": "The case string is \"Can you let the mouse go, Jordan?\". Consider what character is at the end of this string.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9831a6row7g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "?"
+        ],
+        "dependencies": [
+            "a9831a6row7g-h2"
+        ],
+        "title": "Identifying the Last Character",
+        "text": "What is the last character in the string \"Can you let the mouse go, Jordan?\"?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Jordan",
+            "$$n$$",
+            "$$n$$?",
+            "?"
+        ]
+    },
+    {
+        "id": "a9831a6row7g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$n$$"
+        ],
+        "dependencies": [
+            "a9831a6row7g-h3"
+        ],
+        "title": "Matching the Pattern",
+        "text": "Given the pattern `\\w?$`, what does it match in the string \"Can you let the mouse go, Jordan?\"?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Jordan",
+            "$$n$$",
+            "$$n$$?",
+            "?"
+        ]
+    }
+]

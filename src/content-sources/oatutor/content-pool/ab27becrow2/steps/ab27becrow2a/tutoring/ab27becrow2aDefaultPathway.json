@@ -1,0 +1,65 @@
+[
+    {
+        "id": "ab27becrow2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The task is to remove leading zeroes from the room numbers in the 'number' column. Each room number starts with zero or more zeroes, followed by a combination of numbers and/or letters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ab27becrow2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab27becrow2a-h1"
+        ],
+        "title": "Regular Expression Basics",
+        "text": "A regular expression (regex) is a sequence of characters that define a search pattern. In this case, we need a pattern that matches leading zeroes and captures the rest of the string.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ab27becrow2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab27becrow2a-h2"
+        ],
+        "title": "Capturing Groups",
+        "text": "In regex, parentheses are used to create capturing groups. These groups allow us to extract specific parts of the matched string. We need to capture the part of the string after the leading zeroes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ab27becrow2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ab27becrow2a-h3"
+        ],
+        "title": "Matching Leading Zeroes",
+        "text": "The pattern $$'0 '$$ matches zero or more zeroes at the start of the string. We need to follow this with a capturing group for the rest of the string.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ab27becrow2a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0*([\\dA-z]+)"
+        ],
+        "dependencies": [
+            "ab27becrow2a-h4"
+        ],
+        "title": "Constructing the Regex Pattern",
+        "text": "Combine the pattern for matching leading zeroes with a capturing group for the rest of the string. Use $$'0 '$$ to match leading zeroes and '([\\dA-z]+)' to capture the rest.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

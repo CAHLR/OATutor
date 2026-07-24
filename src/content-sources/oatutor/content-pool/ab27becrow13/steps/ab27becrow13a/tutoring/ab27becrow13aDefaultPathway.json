@@ -1,0 +1,71 @@
+[
+    {
+        "id": "ab27becrow13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use Both Test Cases",
+        "text": "A correct pattern must return ['5 star'] for review\\_1 and [] for review\\_2. Any pattern that returns part of \"100 star\" does not satisfy the second test case.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab27becrow13a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$ star"
+        ],
+        "dependencies": [
+            "ab27becrow13a-h1"
+        ],
+        "title": "Testing a Simple Capturing Group",
+        "text": "What would $$r\"([0-5]$$ star)\" return from the text \"Over $$100$$ star celebrities came on opening night.\"?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$0$$ star",
+            "$$100$$ star",
+            "[]",
+            "$$5$$ star"
+        ]
+    },
+    {
+        "id": "ab27becrow13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab27becrow13a-h2"
+        ],
+        "title": "Remember Capturing Group Behavior",
+        "text": "When a regex has a capturing group, re.findall returns only the text inside the parentheses. Without a capturing group, re.findall returns the whole matched substring.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab27becrow13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ab27becrow13a-h3"
+        ],
+        "title": "Why Option B Is Not Enough",
+        "text": "The pattern `r\"\\D+[0-5] star\"` has no capturing group, so it returns the full matched text instead of just the rating. For review\\_1, that includes the earlier non-numeric characters before $$5$$ star.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab27becrow13a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ab27becrow13a-h4"
+        ],
+        "title": "Why Options C and D Work",
+        "text": "Both correct options use a capturing group around $$[0-5]$$ star and require a non-digit boundary before the rating. That prevents $$100$$ star from being treated as a valid $$0$$ star rating.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

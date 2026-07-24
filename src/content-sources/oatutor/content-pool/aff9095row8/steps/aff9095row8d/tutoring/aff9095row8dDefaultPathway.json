@@ -1,0 +1,84 @@
+[
+    {
+        "id": "aff9095row8d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Visualizations",
+        "text": "Consider what types of plots are typically used to visualize a single numerical variable like price.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aff9095row8d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Types of Plots",
+        "text": "Think about common plots such as histograms, line plots, and scatter plots. Which ones are suitable for showing the distribution or trend of a single variable?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aff9095row8d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [],
+        "title": "Line Plot Suitability",
+        "text": "Is a line plot suitable for visualizing the price of drinks?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "aff9095row8d-h4",
+        "type": "hint",
+        "dependencies": [
+            "aff9095row8d-h3"
+        ],
+        "title": "Line Plot Characteristics",
+        "text": "Line plots are typically used to show trends over time. Does the price data have a time component?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aff9095row8d-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Histogram Suitability",
+        "text": "Would a histogram be a suitable visualization for the price data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "aff9095row8d-h6",
+        "type": "hint",
+        "dependencies": [
+            "aff9095row8d-h5"
+        ],
+        "title": "Histogram Characteristics",
+        "text": "Histograms are used to show the distribution of a single numerical variable. Does this apply to the price data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

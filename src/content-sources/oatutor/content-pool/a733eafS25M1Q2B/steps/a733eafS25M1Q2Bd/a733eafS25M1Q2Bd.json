@@ -1,0 +1,15 @@
+{
+    "id": "a733eafS25M1Q2Bd",
+    "stepAnswer": [
+        "TRUE"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Cristina wants to extract only rows with phone numbers that begin with $$510$$ (Berkeley\u2019s area code). Does the following line of code successfully return the DataFrame of interest?\\n\\ndishes[dishes[\"phone $$number\"].str.split(\"-\").str[0]$$ $$==$$ \"510\"]",
+    "stepBody": "Cristina reformats the information into a DataFrame called dishes. All entries in dishes are of the str datatype. The first $$5$$ rows of dishes are below:##figure4.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "TRUE",
+        "FALSE"
+    ]
+}

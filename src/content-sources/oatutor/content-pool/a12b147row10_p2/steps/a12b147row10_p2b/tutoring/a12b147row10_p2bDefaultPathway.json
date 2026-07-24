@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a12b147row10_p2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variable Types",
+        "text": "Consider what kind of data the 'price' column represents. Is it a number that can take any value within a range?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a12b147row10_p2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a12b147row10_p2b-h1"
+        ],
+        "title": "Continuous vs. Discrete",
+        "text": "Think about whether the 'price' can have decimal values or if it is restricted to whole numbers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a12b147row10_p2b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Quantitative Continuous"
+        ],
+        "dependencies": [],
+        "title": "Identifying 'price' as Quantitative",
+        "text": "The 'price' column contains numerical values that can have decimals. What type of variable does this suggest?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Qualitative Nominal",
+            "Qualitative Ordinal",
+            "Quantitative Continuous",
+            "Quantitative Discrete"
+        ]
+    },
+    {
+        "id": "a12b147row10_p2b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Quantitative Continuous"
+        ],
+        "dependencies": [
+            "a12b147row10_p2b-h3"
+        ],
+        "title": "Continuous Nature of 'price'",
+        "text": "Since 'price' can take any value within a range and is not limited to whole numbers, what is the best variable type?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Qualitative Nominal",
+            "Qualitative Ordinal",
+            "Quantitative Continuous",
+            "Quantitative Discrete"
+        ]
+    }
+]

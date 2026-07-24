@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a33adf6row6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Sampling Frame",
+        "text": "The sampling frame is the list or database from which a sample is drawn. It should include all individuals who could potentially be selected for the study.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a33adf6row6b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a33adf6row6b-h1"
+        ],
+        "title": "Identifying the Sampling Frame",
+        "text": "Consider the group of individuals Rachel had access to when selecting participants for the study. This group should represent the entire population she is interested in studying.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a33adf6row6b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All UC Berkeley students currently enrolled."
+        ],
+        "dependencies": [],
+        "title": "Defining the Population",
+        "text": "Who are the individuals that Rachel is interested in studying for the BayPass Program?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "All UC Berkeley students currently enrolled.",
+            "The 12,000 students who received a BayPass card.",
+            "All people who use Bay Area transit services.",
+            "All BayPass card holders in the Bay Area.",
+            "UC Berkeley students who responded to the survey."
+        ]
+    },
+    {
+        "id": "a33adf6row6b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All UC Berkeley students currently enrolled."
+        ],
+        "dependencies": [
+            "a33adf6row6b-h3"
+        ],
+        "title": "Linking Sampling Frame to Population",
+        "text": "The sampling frame should include all individuals who are part of the population Rachel wants to study. What is this population?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "All UC Berkeley students currently enrolled.",
+            "The 12,000 students who received a BayPass card.",
+            "All people who use Bay Area transit services.",
+            "All BayPass card holders in the Bay Area.",
+            "UC Berkeley students who responded to the survey."
+        ]
+    }
+]

@@ -1,0 +1,11 @@
+{
+    "id": "ab27becrow5b",
+    "stepAnswer": [
+        "`\\d{3}`"
+    ],
+    "problemType": "TextBox",
+    "stepTitle": "Fill in blank (i):",
+    "stepBody": "Help Sabrina create a RegEx pattern to extract the course IDs for all Data Science courses when running the code below. The IDs appear immediately after the subject name \"Data\" (with no spaces), and they follow these rules:\\n- They consist of exactly three digits, or\\n- They consist of one or two digits, optionally followed by a letter from the set [\"c\", \"s\", \"x\"].\\nFor example, the output of running the following code block should be ['8', '100', '88s'].\\nmetadata $$=$$ \"Name: Oski; Age: 159; Courses taken: Data8, Data100, CS61A, Stat134, Data88s; Phone Number: $$555-100-5555;$$ Likes: [Bears, Strawberries, Data Science]\"\\npattern $$=$$ $$`r\"Data(___i___|___ii___)\"`$$\\nre.findall(pattern, metadata)",
+    "answerType": "string",
+    "variabilization": {}
+}

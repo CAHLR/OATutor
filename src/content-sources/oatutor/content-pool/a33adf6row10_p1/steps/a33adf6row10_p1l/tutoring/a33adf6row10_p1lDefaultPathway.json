@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a33adf6row10_p1l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Simple Random Sampling",
+        "text": "In a simple random sample, each member of the population has an equal chance of being selected. Does Zekai's method ensure this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a33adf6row10_p1l-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Evaluating the Sampling Method",
+        "text": "Consider if the method of selecting one student from every group of seven ensures that every student has an equal chance of being selected.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a33adf6row10_p1l-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a33adf6row10_p1l-h1"
+        ],
+        "title": "Analyzing Equal Probability",
+        "text": "Does each student in the entire population have an equal probability of being selected in Zekai's method?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a33adf6row10_p1l-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a33adf6row10_p1l-h2"
+        ],
+        "title": "Comparing with Simple Random Sampling",
+        "text": "In simple random sampling, every student should have an equal chance of being selected. Does Zekai's method achieve this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]
