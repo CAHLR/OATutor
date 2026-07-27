@@ -1,0 +1,16 @@
+{
+    "id": "a58945drow6p",
+    "stepAnswer": [
+        "$$\\vec{\\theta}**{(b)}$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "The optimal parameter from training without regularization is most likely:",
+    "stepBody": "Sam trains three versions of $$\\widehat{\\text{attendance\\_rate}} $$=$$ \\hat{\\theta}_0 + \\hat{\\theta}_1 (\\text{dist\\_from\\_bell}) + \\hat{\\theta}_2 (\\text{section\\_no})$$ -- one without regularization, one with L1, and one with L2 -- obtaining $$\\vec{\\theta}**{(a)} $$=$$ $$\\begin{bmatrix$$} $$0$$ $$\\\\$$ $$0.1$$ $$\\\\$$ $$0$$ $$\\end{bmatrix}$$, $$\\vec{\\theta}**{(b)} $$=$$ $$\\begin{bmatrix$$} $$1$$ $$\\\\$$ $$0.5$$ $$\\\\$$ $$2$$ $$\\end{bmatrix}$$, $$\\vec{\\theta}**{(c)} $$=$$ $$\\begin{bmatrix$$} $$0.05$$ $$\\\\$$ $$0.08$$ $$\\\\$$ $$0.03$$ $$\\end{bmatrix}$$.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "$$\\vec{\\theta}**{(a)}$$",
+        "$$\\vec{\\theta}**{(b)}$$",
+        "$$\\vec{\\theta}**{(c)}$$"
+    ]
+}

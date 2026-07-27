@@ -1,0 +1,12 @@
+[
+    {
+        "id": "aac10b4ds100-fa25-mt2-Q1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "",
+        "text": "**Hint 1:** In 8-fold cross-validation, the dataset is divided into $$8$$ parts. For each value of the hyperparameter, a model is trained $$8$$ times, each time using a different part of the data as the validation set and the remaining parts as the training set.\\n\\n**Hint 2:** Since there are $$11$$ different values of the hyperparameter to test, and each requires $$8$$ models to be fit (one for each fold), you need to calculate the total number of models by multiplying the number of folds by the number of hyperparameter values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

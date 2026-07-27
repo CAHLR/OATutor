@@ -1,0 +1,15 @@
+{
+    "id": "a58945drow6e",
+    "stepAnswer": [
+        "True"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "In our subset, $$\\text{critic\\_2}$$ is a more helpful predictor variable than $$\\text{critic\\_1}$$.",
+    "stepBody": "We use a subset of $$\\text{skate\\_record}$$ to train $$\\widehat{\\text{self\\_rating}} $$=$$ \\hat{\\theta}_0 + \\hat{\\theta}_1 $$\\times$$ \\text{critic\\_1} + \\hat{\\theta}_2 $$\\times$$ \\text{critic\\_2}$$. $$The$$ $$correlation$$ $$matrix$$ $$for$$ $$the$$ $$predictors$$ $$and$$ $$response$$ $$in$$ $$this$$ $$subset$$ $$is$$ $$\\begin{array}{c|ccc$$} $$&$$ \\text{critic\\_1} $$&$$ \\text{critic\\_2} $$&$$ \\text{self\\_rating} $$\\\\$$ $$\\hline$$ \\text{critic\\_1} $$&$$ $$1.00$$ $$&$$ $$-0.70$$ $$&$$ $$0.10$$ $$\\\\$$ \\text{critic\\_2} $$&$$ $$-0.70$$ $$&$$ $$1.00$$ $$&$$ $$-0.75$$ $$\\\\$$ \\text{self\\_rating} $$&$$ $$0.10$$ $$&$$ $$-0.75$$ $$&$$ $$1.00$$ $$\\end{array}$$. $$Based$$ $$on$$ $$this$$ $$correlation$$ $$matrix$$, $$evaluate$$ $$the$$ $$following$$ $$statement$$ $$about$$ $$our$$ $$model$$:",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "True",
+        "False"
+    ]
+}

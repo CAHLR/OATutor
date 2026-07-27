@@ -1,0 +1,12 @@
+[
+    {
+        "id": "a2a4544ds100-su21-final-Q8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "",
+        "text": "Sure, here are two hints for the given step:\\n\\nHint 1: Consider what it means for a matrix to be full column rank. A matrix is full column rank if its columns are linearly independent. In the context of one-hot encoding, think about whether the columns $$sex_{male}$$ and $$sex_{female}$$ can be linearly dependent.\\n\\nHint 2: Recall that in one-hot encoding, each row will have exactly one '1' and the rest '0's for the encoded categories. For the sex column, if a passenger is male, $$sex_{male}$$ will be $$1$$ and $$sex_{female}$$ will be $$0$$, and vice versa for female. Consider how this affects the linear independence of the columns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

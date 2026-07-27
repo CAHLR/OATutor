@@ -1,0 +1,18 @@
+{
+    "id": "ae2b70ads100-su21-final-Q8j",
+    "stepAnswer": [
+        "Linear dependence due to $$one-hot$$ encoded columns with an intercept term"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Suppose we one-hot encode all the categorical columns (sex, class, and embark_town) and compute the following nonlinear transformations for the quantitative columns age and fare:\\n\u2022 $$x^2$$\\n\u2022 $$x^3$$\\n\u2022 $$\\ln\\left(x\\right)$$\\n\u2022 sin(x)\\n\u2022 cos(x)\\n\\nAdditionally, we include an intercept term in the model. This results in a design matrix $$\\Phi_4$$. $$\\n$$ $$\\n$$ $$We$$ $$cannot$$ $$use$$ $$the$$ $$normal$$ $$equations$$ $$to$$ $$minimize$$ $$the$$ $$MSE$$ $$loss$$ $$and$$ $$solve$$ $$for$$ $$\\hat{\\theta}$$ because $$\\Phi_4$$ is not full rank. Identify one reason why $$\\Phi_4$$ is not full rank.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "Linear dependence due to $$one-hot$$ encoded columns with an intercept term",
+        "More features than data points (20 data points, $$21$$ features)",
+        "The nonlinear transformations create duplicate columns",
+        "The intercept term is always zero",
+        "The design matrix has more rows than columns"
+    ]
+}

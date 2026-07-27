@@ -1,0 +1,19 @@
+{
+    "id": "ac4698eds100-fa23-mt-Q5aa",
+    "stepAnswer": [
+        "$$\\theta_{hat}$$ $$=$$ $$\\operatorname{\\Sigma}\\left(y_i \\ln\\left({x_i}^2\\right)\\right)$$ / $${\\operatorname{\\Sigma}\\left(\\ln\\left({x_i}^2\\right)\\right)}^2$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Calculate the value of $$\\hat{\\theta}$$, $$which$$ $$minimizes$$ $$the$$ $$Mean$$ $$Squared$$ $$Error$$ $$(MSE)$$ $$of$$ $$Rohan's$$ $$model$$. $$This$$ $$loss$$ $$is$$ $$a$$ $$convex$$ $$function$$. $$Please$$ $$simplify$$ $$and$$ $$leave$$ $$your$$ $$answer$$ $$in$$ $$terms$$ $$of$$ $$x_i$$, $$y_i$$ and $$n$$.",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "$$\\theta_{hat}$$ $$=$$ $$\\operatorname{\\Sigma}\\left(y_i \\ln\\left({x_i}^2\\right)\\right)$$ / $${\\operatorname{\\Sigma}\\left(\\ln\\left({x_i}^2\\right)\\right)}^2$$",
+    "choices": [
+        "$$\\theta_{hat}$$ $$=$$ $$\\operatorname{\\Sigma}\\left(y_i \\ln\\left({x_i}^2\\right)\\right)$$ / $${\\operatorname{\\Sigma}\\left(\\ln\\left({x_i}^2\\right)\\right)}^2$$",
+        "$$\\theta_{hat}$$ $$=$$ $$\\operatorname{\\Sigma}\\left(y_i \\ln\\left({x_i}^2\\right)\\right)$$ / $$n$$",
+        "$$\\theta_{hat}$$ $$=$$ $$\\frac{1}{n} \\operatorname{\\Sigma}\\left(y_i\\right)$$ / $$\\frac{1}{n} \\operatorname{\\Sigma}\\left(\\ln\\left({x_i}^2\\right)\\right)$$",
+        "$$\\theta_{hat}$$ $$=$$ $$\\operatorname{\\Sigma}\\left(y_i\\right)$$ / $$\\operatorname{\\Sigma}\\left(\\ln\\left({x_i}^2\\right)\\right)$$",
+        "$$\\theta_{hat}$$ $$=$$ $$\\operatorname{\\Sigma}\\left(y_i \\ln\\left(x_i\\right)\\right)$$ / $${\\operatorname{\\Sigma}\\left(\\ln\\left(x_i\\right)\\right)}^2$$"
+    ]
+}

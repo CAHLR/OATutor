@@ -1,0 +1,12 @@
+[
+    {
+        "id": "a407fe0ds100-su25-final-Q2j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "",
+        "text": "Certainly! Here are two hints for the given step:\\n\\nHint 1: Consider the properties of Ridge regression (L2 regularization) and how it affects the uniqueness of the solution. Remember that Ridge regression adds a penalty term to the loss function, which can help in dealing with multicollinearity and ensuring a unique solution even when the number of features is less than the number of data points.\\n\\nHint 2: Think about the number of parameters in Wesley's model compared to the number of data points. With $$30$$ unique data points and only $$2$$ features, the model is likely to have a unique solution. The addition of L2 regularization further ensures that the solution is unique by penalizing large coefficients, thus stabilizing the solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

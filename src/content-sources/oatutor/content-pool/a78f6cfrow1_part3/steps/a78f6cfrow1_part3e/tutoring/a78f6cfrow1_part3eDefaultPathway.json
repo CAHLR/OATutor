@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a78f6cfrow1_part3e-h13",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Model Change",
+        "text": "Removing a feature makes the model class less flexible.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a78f6cfrow1_part3e-h14",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Less flexible"
+        ],
+        "dependencies": [
+            "a78f6cfrow1_part3e-h13"
+        ],
+        "title": "Classify the Change",
+        "text": "Does this change generally make the model more flexible, less flexible, or more regularized?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "More flexible",
+            "Less flexible",
+            "More regularized"
+        ]
+    },
+    {
+        "id": "a78f6cfrow1_part3e-h15",
+        "type": "hint",
+        "dependencies": [
+            "a78f6cfrow1_part3e-h14"
+        ],
+        "title": "Connect to the Measure",
+        "text": "If the removed feature captured real signal, the model $${bias}^2$$ can increase.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

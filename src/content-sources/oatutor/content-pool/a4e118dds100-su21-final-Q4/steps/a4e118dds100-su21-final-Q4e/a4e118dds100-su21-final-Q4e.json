@@ -1,0 +1,19 @@
+{
+    "id": "a4e118dds100-su21-final-Q4e",
+    "stepAnswer": [
+        "$$4.215$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Mr. Bean increases the number of trained models to $$100$$ and evaluates the models on the point $$(x_i, y_i)$$. $$ \\cup sing$$ $$historical$$ $$data$$, $$he$$ $$assumes$$ $$that$$ $$measurement$$ $$errors$$ $$follow$$ $$a$$ $$normal$$ $$distribution$$ $$with$$ $$mean$$ $$0$$ $$and$$ $$standard$$ $$deviation$$ $$\\sigma$$ $$=$$ $$4$$ mm. Given the statistics from pd.describe on the predictions and loss for these models (preds mean $$=$$ $$104.130417$$, preds std $$=$$ $$8.255889$$, MSE mean $$=$$ $$101.930101)$$, estimate the magnitude of the empirical bias. Round to $$3$$ decimal places.\\n\\nHint: Think of how bias is calculated in our bias-variance decomposition: $$E[(y$$ $$-$$ f_{\\theta}(x))**{2}] $$=$$ \\sigma**{2} + Var[f_{\\theta}(x)] + (E[f_{\\theta}(x)] $$-$$ g(x))**{2}$$##figure5.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "$$4.215$$",
+    "choices": [
+        "$$4.215$$",
+        "$$2.850$$",
+        "$$8.256$$",
+        "$$17.730$$",
+        "$$6.103$$"
+    ]
+}

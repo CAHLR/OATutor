@@ -1,0 +1,18 @@
+{
+    "id": "ae2b70ads100-su20-mt2-Q4c",
+    "stepAnswer": [
+        "$$One-hot$$ encode it"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Suppose we divide our sampling frame into three clusters of people, numbered $$1$$, $$2$$, and $$3$$. After we survey people, along with our survey results, we save their cluster number as a new feature in our design matrix. Before training a model, what should we do with the cluster column? (Note: This part is independent of parts a and b.)",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "Leave as is",
+        "$$One-hot$$ encode it",
+        "Normalize it",
+        "Use bag of words",
+        "Drop it entirely"
+    ]
+}

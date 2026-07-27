@@ -1,0 +1,18 @@
+{
+    "id": "ac4698eds100-su25-mt-Q4b,Q4cd",
+    "stepAnswer": [
+        "np.sum(3 $$-$$ (tip/theta0))"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Michael then decides to use the following objective function: $$\\sum_{i=1}**{N}[3\\theta_0 $$-$$ \\text{tip}_i * \\log(\\theta_0)]$$ where log refers to the natural logarithm (i.e., ln). We will refer to this objective function as \"the new objective (TNO)\".\\n\\nIn the code cell below, complete the $$\\operatorname{tno_{derivative}}\\left(\\right)$$ function. $$\\operatorname{tno_{derivative}}\\left(\\right)$$ takes $$2$$ inputs:\\n\u2022 theta0: A number between $$0$$ and $$\\infty$$. (type: np.float64)\\n\u2022 tip: A Series containing the values in the tip column of the original data. (type: Series)\\n\\nThe function should compute the value of $$\\frac{d}{dtheta}$$ of the sum above in terms of tip and theta0.\\n\\nNote: You must not use a for loop in your solution. You may find it helpful to recall that $$\\frac{d}{dx}$$ $$\\ln\\left(x\\right)$$ $$=$$ $$\\frac{1}{x}$$.\\n\\ndef tno_derivative(theta0, tip):\\nreturn ... # Your response here",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "np.sum(3 $$-$$ (tip/theta0))",
+        "np.sum(3*theta0 $$-$$ tip)",
+        "$$sum\\left(-\\frac{tip}{theta0}\\right)$$",
+        "np.sum(3 + (tip/theta0))",
+        "np.sum(3 $$-$$ tip*theta0)"
+    ]
+}

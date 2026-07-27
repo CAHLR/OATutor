@@ -1,0 +1,12 @@
+[
+    {
+        "id": "a407fe0ds100-sp25-final-Q2o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "",
+        "text": "Sure, here are two hints for the given problem:\\n\\n**Hint 1:** To perform a batch gradient descent step, you need to compute the gradient of the objective function \\( L(\\theta_0, \\theta_1) \\) with respect to \\( $$\\theta_0$$ \\). Remember that the gradient is the vector of partial derivatives. Focus on the terms in the objective function that involve \\( $$\\theta_0$$ \\).\\n\\n**Hint 2:** After computing the gradient, update \\( $$\\theta_0$$ \\) using the formula:\\n\\[ \\theta_0**{(t+1)} $$=$$ \\theta_0**{(t)} - \\alpha \\cdot \\frac{\\partial L}{\\partial $$\\theta_0$$} \\]\\nwhere \\( \\alpha \\) is the learning rate. Substitute the initial value \\( \\theta_0**{(0)} $$=$$ $$1$$ \\) and the computed gradient to find the new value of \\( $$\\theta_0$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

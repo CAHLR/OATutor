@@ -1,0 +1,12 @@
+[
+    {
+        "id": "aac10b4ds100-fa24-final-Q4a,Q4b,Q4ch-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "",
+        "text": "Certainly! Here are two hints for the given step:\\n\\n**Step: blank (ii): The optimal parameter from training with L1 regularization is most likely:**\\n\\n**Hint 1:** L1 regularization, also known as Lasso, tends to produce sparse solutions, meaning it often results in some coefficients being exactly zero. This is because L1 regularization adds a penalty equal to the absolute value of the magnitude of coefficients, encouraging the model to reduce some coefficients to zero to minimize the penalty.\\n\\n**Hint 2:** Compare the given parameter vectors to identify which one has the most zero coefficients. The vector with the most zero coefficients is likely the result of L1 regularization, as it encourages sparsity in the model parameters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

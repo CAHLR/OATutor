@@ -1,0 +1,22 @@
+{
+    "id": "ac4698eds100-sp25-final-Q2j",
+    "stepAnswer": [
+        "g(\u03b8) $$=$$ \u03a3|\u03b8_i| for $$i=1$$ to $$p$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "To reduce model complexity, the owner computes the optimal \u03b8 by minimizing the following regularized loss function:\\n$$L(\\vec{\\theta}) $$=$$ $$(||Y$$ $$-$$ X\\vec{\\theta}||_2)**{2} + $$\\lambda$$ g(\\vec{\\theta})$$\\nwhere $$g(\\vec{\\theta})$$ is a non-constant function of $$\\vec{\\theta}$$ and $$\\lambda$$ $$\\geq$$ $$0$$. $$If$$ $$the$$ $$magnitude$$ $$of$$ $$any$$ $$\\theta_i$$ increases, $$g(\\vec{\\theta})$$ will also increase.\\nNote: $$p$$ is the total number of parameters in $$\\vec{\\theta}$$. $$\\n$$ $$Which$$ $$g(\\vec{\\theta})$$ is best for feature selection (i.e., eliminating irrelevant features and keeping useful ones)?",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "g(\u03b8) $$=$$ \u03a3|\u03b8_i| for $$i=1$$ to $$p$$",
+    "choices": [
+        "for $$i=1$$ to $$p$$",
+        "g(\u03b8) $$=$$ $$\\operatorname{max}\\left(\\theta_i\\right)$$ for $$i=1$$ to $$p$$",
+        "g(\u03b8) $$=$$ \u03a3",
+        "g(\u03b8) $$=$$ $$\\operatorname{Sigmalog}\\left(\\theta_i\\right)$$ for $$i=1$$ to $$p$$",
+        "g(\u03b8) $$=$$ \u03a3|\u03b8_i| for $$i=1$$ to $$p$$",
+        "g(\u03b8) $$=$$ $$Sigmatheta_i$$ for $$i=1$$ to $$p$$",
+        "g(\u03b8) $$=$$ $${Sigmatheta_i}^2$$ for $$i=1$$ to $$p$$",
+        "$$\\theta_i$$"
+    ]
+}

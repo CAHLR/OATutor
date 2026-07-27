@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a58945drow1b-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the All-Ones Vector",
+        "text": "The setup says the model includes an intercept, and the bias column is the first column of X.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a58945drow1b-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "In the span of"
+        ],
+        "dependencies": [
+            "a58945drow1b-h4"
+        ],
+        "title": "Column Space Meaning",
+        "text": "If a vector is literally one of the columns of X, what relationship does it have to X?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Orthogonal to",
+            "In the span of",
+            "NOT orthogonal to and NOT in the span of"
+        ]
+    },
+    {
+        "id": "a58945drow1b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a58945drow1b-s2"
+        ],
+        "title": "Apply to $$1$$",
+        "text": "Because the all-ones vector $$1$$ is the first column of X, it is in the span of X.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

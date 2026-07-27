@@ -1,0 +1,12 @@
+[
+    {
+        "id": "aac10b4ds100-fa21-mt-Q1n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "",
+        "text": "Certainly! Here are two hints for each statement in the problem:\\n\\n$$1$$. **Statement: Increasing k in k-fold cross validation decreases the bias of the model.**\\n- Hint 1: Consider how increasing the number of folds affects the size of the training and validation sets in each iteration.\\n- Hint 2: Think about the relationship between the number of folds and the variance of the model's performance estimates.\\n\\n$$2$$. **Statement: We use cross validation because it is less computationally intensive than regular validation.**\\n- Hint 1: Compare the computational requirements of running multiple training and validation cycles in cross-validation versus a single split in regular validation.\\n- Hint 2: Consider the number of times the model is trained in cross-validation compared to regular validation.\\n\\n$$3$$. **Statement: We use cross validation over regular validation because cross validation allows us to use the entire training data set to test the model.**\\n- Hint 1: Think about how cross-validation divides the dataset and how it utilizes different parts of the data for training and validation.\\n- Hint 2: Consider whether cross-validation provides a more comprehensive evaluation of the model compared to a single train-test split.\\n\\n$$4$$. **Statement: Cross-validation cannot be used in production, as the model is cheating by looking at validation samples.**\\n- Hint 1: Reflect on the purpose of cross-validation during the model development phase versus its role in a production environment.\\n- Hint 2: Consider the difference between model evaluation during development and the final model deployment in production.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

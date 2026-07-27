@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a58945drow5b-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply the Chain Rule",
+        "text": "Treat $$x_i$$ and $$y_i$$ as constants. Differentiate the squared term $$\\left(y_i-\\theta_1 x_i\\right)^2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a58945drow5b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a58945drow5b-h3"
+        ],
+        "title": "Differentiate the Inner Expression",
+        "text": "The derivative of $$y_i-\\theta_1 x_i$$ with respect to $$\\theta_1$$ is $$-x_i$$, creating a second factor of $$x_i$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a58945drow5b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a58945drow5b-h4"
+        ],
+        "title": "Combine the Factors",
+        "text": "Each summand contributes $$-2{x_i}^2 \\left(y_i-\\theta_1 x_i\\right)$$ then multiply the sum by $$\\frac{1}{n}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

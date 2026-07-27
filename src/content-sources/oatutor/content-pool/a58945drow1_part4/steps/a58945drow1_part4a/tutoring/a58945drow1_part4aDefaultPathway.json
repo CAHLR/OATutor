@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a58945drow1_part4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set Predictors to Zero",
+        "text": "The intercept is the prediction when every feature in the model is set to $$0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a58945drow1_part4a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\theta_0$$"
+        ],
+        "dependencies": [
+            "a58945drow1_part4a-h1"
+        ],
+        "title": "Evaluate the Feature Values",
+        "text": "When $$hours_{sleep}$$ $$=$$ $$0$$ and $$is_{cdss}$$ $$=$$ $$0$$, what does the model predict?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\theta_0$$",
+            "$$\\theta_1$$",
+            "$$\\theta_2$$",
+            "$$\\theta_1$$ + $$\\theta_2$$"
+        ]
+    },
+    {
+        "id": "a58945drow1_part4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a58945drow1_part4a-h1"
+        ],
+        "title": "Interpret $$is_{cdss}$$ $$=$$ $$0$$",
+        "text": "Since $$is_{cdss}$$ $$=$$ $$0$$ means the student does not have a CDSS-affiliated major, $$\\theta_0$$ is the predicted GPA for that baseline student.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

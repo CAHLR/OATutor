@@ -1,0 +1,12 @@
+[
+    {
+        "id": "ae2b70ads100-su21-final-Q8h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "",
+        "text": "Certainly! Here are two hints for the given step:\\n\\n**Hint 1:** Consider the concept of one-hot encoding. When you one-hot encode a categorical variable with \\( $$n$$ \\) categories, you create \\( $$n$$ \\) binary columns, each representing one category. However, if you include all \\( $$n$$ \\) columns, they will be linearly dependent because the sum of these columns will always equal $$1$$ for each observation.\\n\\n**Hint 2:** Think about the rank of a matrix. A matrix is full column rank if its columns are linearly independent. When you one-hot encode a categorical variable and include all categories, the columns are not linearly independent. This is because one column can be expressed as a linear combination of the others.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "id": "a2a4544ds100-su21-final-Q8i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "",
+        "text": "Certainly! Here are two hints for the given step:\\n\\nHint 1: Consider the implications of one-hot encoding categorical variables. When you one-hot encode a categorical variable with \\( $$n$$ \\) categories, you typically create \\( $$n-1$$ \\) binary columns to avoid multicollinearity. Think about how this affects the rank of the design matrix.\\n\\nHint 2: Recall that for a matrix to be invertible, it must be square and have full rank. Analyze the structure of the design matrix \\(\\Phi_3\\) after one-hot encoding the categorical variables and determine if it meets these criteria.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

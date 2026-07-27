@@ -1,0 +1,12 @@
+[
+    {
+        "id": "ae2b70ads100-fa25-mt2-Q2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "",
+        "text": "Certainly! Here are two hints for the given problem:\\n\\n**Hint 1:** Consider the properties of the OLS model. The predicted values $\\hat{Y}$ are obtained by projecting the true outcomes $Y$ onto the column space of the design matrix $\\mathbb{X}$. Think about what this implies for the relationship between $Y$ and $\\hat{Y}$.\\n\\n**Hint 2:** Recall that the residuals, which are the differences between the true outcomes $Y$ and the predicted values $\\hat{Y}$, are orthogonal to the column space of $\\mathbb{X}$. This means that $Y$ itself cannot be orthogonal to $\\hat{Y}$, nor can it be entirely within the span of $\\hat{Y}$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

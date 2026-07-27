@@ -1,0 +1,12 @@
+[
+    {
+        "id": "ac4698eds100-fa23-final-Q2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "",
+        "text": "**Hint 1:** To find the updated value of $\\theta_0**{(1)}$, you need to compute the gradient of the loss function $\\tilde{L}(\\theta)$ with respect to $\\theta_0$ at the initial point $(\\theta_0**{(0)}, \\theta_1**{(0)}) $$=$$ $$(1,2)\\$$$.\\n\\n**Hint 2:** The gradient descent update rule for $\\theta_0$ is given by $\\theta_0**{(1)} $$=$$ \\theta_0**{(0)} - \\alpha \\frac{\\partial \\tilde{L}}{\\partial $$\\theta_0$$} \\bigg|_{(\\theta_0**{(0)}, \\theta_1**{(0)})}$. Calculate the partial derivative $\\frac{\\partial \\tilde{L}}{\\partial \\theta_0}$ and substitute the values to find $\\theta_0**{(1)}$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "id": "ac4698eds100-sp24-mt-Q5h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "",
+        "text": "**Hint 1:** Consider the behavior of the Mean Cubed Error loss function. How does the sign of the error term $(y_i - \\hat{y}_i)$ affect the overall loss? Think about how cubing a positive number versus a negative number impacts the result.\\n\\n**Hint 2:** Reflect on the implications of using a cubic function in the loss calculation. How does the loss function respond to overpredictions (where $\\hat{y}_i > y_i$) compared to underpredictions (where $\\hat{y}_i < y_i$)? Consider the symmetry or asymmetry in the penalization of errors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

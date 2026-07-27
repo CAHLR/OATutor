@@ -1,0 +1,15 @@
+{
+    "id": "a2a4544ds100-sp24-final-Q3b,Q3c,Q3dd",
+    "stepAnswer": [
+        "TRUE"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "The sum of the residuals for Milad's model is $$0$$.",
+    "stepBody": "Milad creates a DataFrame called features and a Series called target using the code snippet below. Assume that there is no value in genre called \"genre\".\\n\\nfrom sklearn.linear_model import LinearRegression\\ntarget $$=$$ $$song_{sample[\"streams\"]}$$\\nfeatures $$=$$ song_sample[[\"genre\"]]\\n\\nfor $$curr_g$$ in features[\"genre\"].unique():\\n$$features[curr_g]$$ $$=$$ (features[\"genre\"] $$==$$ curr_g).astype(int)\\n\\nfeatures $$=$$ features.drop(\"genre\", $$axis=1)$$\\n\\nmodel $$=$$ LinearRegression(fit_intercept=False)\\nmodel.fit(features, target)\\n\\n(i) Which of the following statements are true for this model? Select all that apply.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "TRUE",
+        "FALSE"
+    ]
+}

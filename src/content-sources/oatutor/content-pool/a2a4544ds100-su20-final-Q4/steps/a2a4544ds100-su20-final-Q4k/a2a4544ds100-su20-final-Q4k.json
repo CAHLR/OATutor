@@ -1,0 +1,18 @@
+{
+    "id": "a2a4544ds100-su20-final-Q4k",
+    "stepAnswer": [
+        "Always true"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "In the remaining subparts of this question, we explore the models that result from ridge regression, depending on whether or not we regularize the intercept term ($$\\theta_0$$) of our model.\\n\\n$$\\hat{\\theta}_A $$=$$ \\arg\\min_{\\theta} \\frac{1}{n}\\sum_{i=1}**{n}\\left(y_i $$-$$ \\mathbb{X}_i**{T}\\theta\\right)**{2} + \\lambda\\sum_{k=0}**{p}\\theta_k**{2}$$\\n\\n$$\\hat{\\theta}_B $$=$$ \\arg\\min_{\\theta} \\frac{1}{n}\\sum_{i=1}**{n}\\left(y_i $$-$$ \\mathbb{X}_i**{T}\\theta\\right)**{2} + \\lambda\\sum_{k=1}**{p}\\theta_k**{2}$$\\n\\nNote that the only difference between $$\\hat{\\theta}_A$$ and $$\\hat{\\theta}_B$$ is that to determine $$\\hat{\\theta}_A$$, $$we$$ $$regularize$$ $$the$$ $$intercept$$ $$term$$, $$and$$ $$in$$ $$\\hat{\\theta}_B$$ we do not.\\n\\nAssume we fix $$\\lambda$$ $$=$$ $$2$$ in both models. If we use $$\\dot{\\mathbb{X}}$$ instead of $$\\mathbb{X}$$ above (i.e. if all columns of our design matrix, other than the intercept column, are centered), then $$\\hat{\\theta}_A $$=$$ \\hat{\\theta}_B$$. $$Is$$ $$this$$ $$always$$ $$true$$, $$sometimes$$ $$true$$, $$or$$ $$never$$ $$true$$?",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "Always true",
+        "Sometimes true",
+        "Never true",
+        "Depends on the value of lambda",
+        "Cannot be determined"
+    ]
+}

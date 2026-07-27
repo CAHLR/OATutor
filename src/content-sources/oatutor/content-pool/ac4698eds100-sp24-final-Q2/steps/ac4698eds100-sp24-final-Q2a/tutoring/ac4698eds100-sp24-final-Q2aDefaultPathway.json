@@ -1,0 +1,12 @@
+[
+    {
+        "id": "ac4698eds100-sp24-final-Q2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "",
+        "text": "**Hint 1:** To find the learning rate $\\alpha$, recall the update rule for stochastic gradient descent: $\\theta**{(t+1)} $$=$$ \\theta**{(t)} - \\alpha \\nabla_{\\theta}L(\\theta**{(t)})$. You need to calculate the gradient at the given point and use the change in $\\theta_1$ to solve for $\\alpha$.\\n\\n**Hint 2:** Start by calculating the gradient component for $\\theta_1$ using the given data point $x_i $$=$$ 2$. Substitute $\\theta_0**{(0)} $$=$$ 4$ and $\\theta_1**{(0)} $$=$$ 1$ into the gradient expression for $\\theta_1$. Then, use the change from $\\theta_1**{(0)} $$=$$ 1$ to $\\theta_1**{(1)} $$=$$ -5$ to find $\\alpha$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

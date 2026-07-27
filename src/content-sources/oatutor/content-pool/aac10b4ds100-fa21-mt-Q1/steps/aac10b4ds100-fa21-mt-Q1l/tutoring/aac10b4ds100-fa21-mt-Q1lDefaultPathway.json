@@ -1,0 +1,12 @@
+[
+    {
+        "id": "aac10b4ds100-fa21-mt-Q1l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "",
+        "text": "Certainly! Here are two hints for the given problem step:\\n\\n**Hint 1:** Consider the nature of the data and the problem of overfitting. Overfitting occurs when a model learns noise in the training data rather than the actual signal. Regularization techniques can help mitigate this by adding a penalty to the model's complexity. Think about which regularization technique is more effective in handling redundant features.\\n\\n**Hint 2:** L1 regularization, also known as Lasso, tends to produce sparse models by driving some coefficients to zero, effectively selecting a subset of features. This can be particularly useful when dealing with redundant features, such as codons that map to the same amino acid. Consider how this property might help in reducing overfitting in Connie's model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

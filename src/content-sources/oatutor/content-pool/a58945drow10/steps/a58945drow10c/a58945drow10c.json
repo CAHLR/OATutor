@@ -1,0 +1,17 @@
+{
+    "id": "a58945drow10c",
+    "stepAnswer": [
+        "$$\\frac{\\sum_{i=1}**n \\ln(x_i) y_i}{\\sum_{i=1}**n (\\ln(x_i))**2}$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "What is the minimizer $$\\hat{\\theta}_1$$ that minimizes the MSE $$\\frac{1}{n}\\sum_{i=1}**n (y_i $$-$$ f_{\\theta_1}(x_i))**2$$?",
+    "stepBody": "We have a dataset $$\\{(x_i, y_i)\\}_{i=1}**n$$ and model some observation $$y_i$$ as $$\\hat{y}_i $$=$$ f_{\\theta_1}(x_i) $$=$$ $$\\theta_1$$ \\ln(x_i)$$.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "$$\\frac{\\sum_{i=1}**n $$x_i$$ y_i}{\\sum_{i=1}**n x_i**2}$$",
+        "$$\\frac{\\sum_{i=1}**n \\ln(x_i) y_i}{\\sum_{i=1}**n \\ln(x_i**2)}$$",
+        "$$\\frac{\\sum_{i=1}**n \\ln(x_i) y_i}{\\sum_{i=1}**n (\\ln(x_i))**2}$$",
+        "$$\\frac{\\sum_{i=1}**n \\frac{y_i}{x_i}}{\\sum_{i=1}**n x_i**2}$$"
+    ]
+}

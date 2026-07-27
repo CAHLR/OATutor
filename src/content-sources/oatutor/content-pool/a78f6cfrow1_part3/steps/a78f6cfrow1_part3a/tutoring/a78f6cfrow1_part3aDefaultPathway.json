@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a78f6cfrow1_part3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Model Change",
+        "text": "Adding a feature makes the model class more flexible. If the true pattern has a squared relationship, the new feature can reduce approximation error.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a78f6cfrow1_part3a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "More flexible"
+        ],
+        "dependencies": [
+            "a78f6cfrow1_part3a-h1"
+        ],
+        "title": "Classify the Change",
+        "text": "Does this change generally make the model more flexible, less flexible, or more regularized?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "More flexible",
+            "Less flexible",
+            "More regularized"
+        ]
+    },
+    {
+        "id": "a78f6cfrow1_part3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a78f6cfrow1_part3a-h2"
+        ],
+        "title": "Connect to the Measure",
+        "text": "Because lower approximation error means lower $${bias}^2$$, a decrease is possible.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

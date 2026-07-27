@@ -1,0 +1,12 @@
+[
+    {
+        "id": "a2a4544ds100-su21-final-Q8e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "",
+        "text": "Certainly! Here are two hints for the given step:\\n\\n**Hint 1:** Consider the concept of one-hot encoding. When you one-hot encode a categorical variable with \\( $$n$$ \\) categories, you typically create \\( $$n-1$$ \\) binary columns to avoid multicollinearity. Think about how this applies to the 'sex' and $$'embark_{town'}$$ columns.\\n\\n**Hint 2:** Remember that including an intercept term in a design matrix means adding a column of ones. To determine if the matrix is full column rank, consider if any columns can be expressed as a linear combination of others.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

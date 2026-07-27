@@ -1,0 +1,12 @@
+[
+    {
+        "id": "a4e118dds100-su21-final-Q4e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "",
+        "text": "Certainly! Here are two hints for the given problem step:\\n\\n**Hint 1:** Recall the bias-variance decomposition formula: $E[(y - f_{\\theta}(x))**{2}] $$=$$ \\sigma**{2} + Var[f_{\\theta}(x)] + (E[f_{\\theta}(x)] - g(x))**{2}$. You are given the variance of the predictions and the mean squared error (MSE). Use these to isolate and solve for the bias term.\\n\\n**Hint 2:** The variance of the predictions is given by the square of the standard deviation of the predictions. Use this to calculate the variance term in the bias-variance decomposition. Then, rearrange the formula to solve for the bias squared, and take the square root to find the magnitude of the empirical bias.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

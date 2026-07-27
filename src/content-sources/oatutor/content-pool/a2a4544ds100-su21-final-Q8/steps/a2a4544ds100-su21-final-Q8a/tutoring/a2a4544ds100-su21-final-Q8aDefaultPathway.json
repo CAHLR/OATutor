@@ -1,0 +1,12 @@
+[
+    {
+        "id": "a2a4544ds100-su21-final-Q8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "",
+        "text": "Sure, here are two hints for the given step:\\n\\nHint 1: Consider what one-hot encoding does to categorical variables. It creates binary columns for each category, where a '1' indicates the presence of that category and a '0' indicates its absence.\\n\\nHint 2: Since the sex column has two categories (male and female), one-hot encoding will result in two new columns: $$sex_{male}$$ and $$sex_{female}$$. Each row will have a '1' in one of these columns and a '0' in the other, depending on the value in the original sex column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

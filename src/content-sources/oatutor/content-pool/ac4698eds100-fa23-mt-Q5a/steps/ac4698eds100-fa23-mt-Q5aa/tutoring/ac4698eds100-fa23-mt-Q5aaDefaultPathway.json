@@ -1,0 +1,12 @@
+[
+    {
+        "id": "ac4698eds100-fa23-mt-Q5aa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "",
+        "text": "Hint 1: To find the value of $\\hat{\\theta}$ that minimizes the Mean Squared Error (MSE), consider the formula for MSE: $\\text{MSE} $$=$$ \\frac{1}{n} \\sum_{i=1}**{n} (y_i - \\hat{y}_i)**2$. Substitute $\\hat{y}_i $$=$$ $$\\theta$$ \\ln(x_i**2)$ into this formula.\\n\\nHint 2: Remember that the MSE is a convex function with respect to $\\theta$. To find the minimum, take the derivative of the MSE with respect to $\\theta$, set it to zero, and solve for $\\theta$. This will give you the expression for $\\hat{\\theta}$ in terms of $x_i$, $y_i$, and $n$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

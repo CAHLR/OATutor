@@ -1,0 +1,15 @@
+{
+    "id": "aac10b4ds100-fa24-final-Q4a,Q4b,Q4ce",
+    "stepAnswer": [
+        "FALSE"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "If Sam adds any one of the three one-hot encoded features to his current model, the model bias squared will increase.",
+    "stepBody": "Sam uses the following model to predict $$attendance_{rate}$$:\\n$$\\hat{\\text{attendance\\_rate}} $$=$$ \\hat{\\theta}_0 + \\hat{\\theta}_1 $$\\times$$ (\\text{dist\\_from\\_bell}) + \\hat{\\theta}_2 $$\\times$$ (\\text{section\\_no})$$\\nSam one-hot encoded weather into three new features. Evaluate the following statements.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "TRUE",
+        "FALSE"
+    ]
+}

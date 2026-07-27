@@ -1,0 +1,19 @@
+{
+    "id": "ae2b70ads100-sp24-final-Q3b,Q3c,Q3db",
+    "stepAnswer": [
+        "song_sample[\"artist\"].str.split(\",\").str.len() * $$song_{sample[\"has_feat\"]}$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "blank (ii): Fill in the blank to add $$num_{feats}$$ to $$song_{sample}$$.",
+    "stepBody": "Milad adds two columns: $$has_{feat}$$ and $$num_{feats}$$ to $$song_{sample}$$.\\n\\n(ii) Fill in the blank in the box below to add the column $$num_{feats}$$ to $$song_{sample}$$. This column contains the number of featured artists on each song, where each featured artist is listed after the word \"feat.\" and separated by commas (\",\"). You may assume commas are never used for any other purpose.\\n\\n$$song_{sample[\"num_feats\"]}$$ $$=$$ $$___$$\\n\\nHint: Songs that don't have any featured artists should have a value of $$0$$. You should use $$has_{feat}$$ and can assume it was implemented correctly.##figure2.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "song_sample[\"artist\"].str.split(\",\").str.len() * $$song_{sample[\"has_feat\"]}$$",
+    "choices": [
+        "song_sample[\"artist\"].str.split(\",\").str.len() * $$song_{sample[\"has_feat\"]}$$",
+        "song_sample[\"artist\"].str.count(\",\") + $$song_{sample[\"has_feat\"]}$$",
+        "song_sample[\"artist\"].str.split(\",\").str.len()",
+        "song_sample[\"artist\"].str.count(\",\") * $$song_{sample[\"has_feat\"]}$$",
+        "song_sample[\"artist\"].str.split(\"feat.\").str.len() * $$song_{sample[\"has_feat\"]}$$"
+    ]
+}

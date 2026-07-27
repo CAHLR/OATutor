@@ -1,0 +1,12 @@
+[
+    {
+        "id": "a2a4544ds100-sp24-final-Q3b,Q3c,Q3db-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "",
+        "text": "Certainly! Here are two hints for each step of the problem:\\n\\n**Step: blank (ii): Fill in the blank to add $$num_{feats}$$ to song_sample.**\\n\\n*Hint 1:* Consider how you can determine the number of featured artists by examining the structure of the \"artist\" string. Each featured artist is listed after \"feat.\" and separated by commas. Think about how you can use string operations to count these occurrences.\\n\\n*Hint 2:* Remember that the column \"has_feat\" indicates whether a song has featured artists. You can use this column to ensure that songs without featured artists have a value of $$0$$ in the \"num_feats\" column. Consider how you can use this information in combination with string operations to achieve the desired result.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "id": "aac10b4ds100-sp22-mt2-Q5c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "",
+        "text": "**Hint 1:** Consider how the exponential regularization term affects the optimization problem. The presence of the term $\\lambda\\sum_{i=1}**{p}10**{\\theta_i}$ means that the solution will not be the same as the least squares estimate, which does not include this regularization term.\\n\\n**Hint 2:** Recall that the least squares estimate is derived from minimizing the $L_2$ loss without any regularization. The addition of the exponential regularization term changes the nature of the optimization problem, and thus the solution will differ from the standard least squares estimate.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

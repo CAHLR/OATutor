@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a78f6cfrow1_part2d-h10",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Gradient Is Not the Same as Loss",
+        "text": "A gradient at a point tells you the slope of the loss function there, not the actual value of the loss at that point.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a78f6cfrow1_part2d-h11",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a78f6cfrow1_part2d-h10"
+        ],
+        "title": "Check What Is Missing",
+        "text": "Does knowing the gradient at theta $$=$$ $$11$$ uniquely determine L(theta $$=$$ 11)?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a78f6cfrow1_part2d-h12",
+        "type": "hint",
+        "dependencies": [
+            "a78f6cfrow1_part2d-h11"
+        ],
+        "title": "Use NA When the Value Is Ambiguous",
+        "text": "Without the full loss function or enough constraints, multiple loss values at $${\\theta}^1$$ could be possible, so the entry is NA.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

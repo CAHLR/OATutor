@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a78f6cfrow2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use the Intercept and Uniqueness Assumptions",
+        "text": "Because the model includes an intercept, the residuals sum to exactly $$0$$. Also, a unique OLS parameter solution means the current design matrix has full column rank.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a78f6cfrow2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a78f6cfrow2a-h1"
+        ],
+        "title": "Distinguish Outcomes from the Column Space",
+        "text": "OLS predictions lie in the column space of X, but Y itself may also contain a residual component outside that space. The guaranteed relationship is $$Y_{hat}$$ in col(X), not Y in col(X) or $$Y_{hat}$$ in span{Y}.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a78f6cfrow2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a78f6cfrow2a-h2"
+        ],
+        "title": "Consider the Added Sixth-Power Feature",
+        "text": "Adding $${x_{i1}}^6$$ does not automatically create linear dependence with the intercept, $${x_{i1}}^3$$, and $$\\ln\\left(x_{i2}\\right)$$. The enlarged design matrix could still have full column rank.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a78f6cfrow2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a78f6cfrow2a-h3"
+        ],
+        "title": "Use the Ridge Objective",
+        "text": "Because the original OLS solution is unique, X has full column rank and $$X^T$$ X is positive definite. Adding a positive L2 penalty preserves uniqueness, so Ridge with lambda $$=$$ $$1$$ also has a unique solution.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

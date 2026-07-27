@@ -1,0 +1,12 @@
+[
+    {
+        "id": "a407fe0ds100-su25-mt-Q4b,Q4cf-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "",
+        "text": "Certainly! Here are two hints for the given problem:\\n\\n**Hint 1:**\\nTo calculate the Mean Squared Error (MSE) of the fitted model, you need to find the difference between the actual tip values and the predicted tip values from the regression line for each of the three sampled observations. Then, square each of these differences.\\n\\n**Hint 2:**\\nAfter squaring the differences between the actual and predicted tip values, sum these squared differences. Finally, divide the sum by the number of observations (which is $$3$$ in this case) to get the MSE. Remember, the formula for MSE is:\\n\\n\\[ \\text{MSE} $$=$$ \\frac{1}{N} \\sum_{i=1}**{N} (y_i - \\hat{y}_i)**2 \\]\\n\\nwhere \\( $$y_i$$ \\) is the actual tip, \\( \\hat{y}_i \\) is the predicted tip, and \\( N \\) is the number of observations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

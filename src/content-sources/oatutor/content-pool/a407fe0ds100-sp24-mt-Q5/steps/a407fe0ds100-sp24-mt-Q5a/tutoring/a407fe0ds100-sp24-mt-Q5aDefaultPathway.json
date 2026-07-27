@@ -1,0 +1,12 @@
+[
+    {
+        "id": "a407fe0ds100-sp24-mt-Q5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "",
+        "text": "Sure, here are two hints for the given step:\\n\\nHint 1: Start by writing down the formula for the Mean Squared Error (MSE) for Angela's model. Remember that MSE is the average of the squared differences between the observed values ($y_i$) and the predicted values ($\\hat{y}_i$). In this case, $\\hat{y}_i $$=$$ \\frac{1}{\\theta_1} x_i$.\\n\\nHint 2: Once you have the MSE expression, differentiate it with respect to $\\theta_1$. Pay attention to the chain rule and the power rule when differentiating terms like $\\frac{1}{\\theta_1}$ and $\\frac{1}{\\theta_1**2}$. Simplify your expression to find the derivative in terms of $x_i$, $y_i$, $\\theta_1$, and $n$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

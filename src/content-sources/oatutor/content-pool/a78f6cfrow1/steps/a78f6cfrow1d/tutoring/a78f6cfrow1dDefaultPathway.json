@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a78f6cfrow1d-h8",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Connect $$1$$ to X",
+        "text": "The intercept means the all-ones vector $$1$$ is a column of X.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a78f6cfrow1d-h9",
+        "type": "hint",
+        "dependencies": [
+            "a78f6cfrow1d-h8"
+        ],
+        "title": "Use Residual Orthogonality",
+        "text": "The residual Y - $$Y_{hat}$$ is orthogonal to every column of X, including the intercept column.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a78f6cfrow1d-s4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Orthogonal to"
+        ],
+        "dependencies": [
+            "a78f6cfrow1d-h9"
+        ],
+        "title": "Reverse Orthogonality",
+        "text": "If residual $$r$$ is orthogonal to $$1$$, then $$1$$ is $$___$$ $$r$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Orthogonal to",
+            "In the span of",
+            "NOT orthogonal to and NOT in the span of"
+        ]
+    }
+]

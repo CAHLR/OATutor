@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a58945drow1_part4b-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Feature for $$\\theta_1$$",
+        "text": "$$\\theta_1$$ is the coefficient multiplying $$hours_{sleep}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a58945drow1_part4b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Hold it constant"
+        ],
+        "dependencies": [
+            "a58945drow1_part4b-h4"
+        ],
+        "title": "Hold Other Features Constant",
+        "text": "When interpreting one slope in multiple regression, what should happen to the other feature, $$is_{cdss}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Hold it constant",
+            "Increase it by $$1$$",
+            "Set it to $$0$$",
+            "Ignore it completely"
+        ]
+    },
+    {
+        "id": "a58945drow1_part4b-h6",
+        "type": "hint",
+        "dependencies": [
+            "a58945drow1_part4b-h5"
+        ],
+        "title": "Use the Coefficient Value",
+        "text": "Because $$\\theta_1$$ $$=$$ $$0.23$$, one additional hour of sleep is associated with a predicted $$0.23$$ increase in GPA, holding CDSS-major status constant.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

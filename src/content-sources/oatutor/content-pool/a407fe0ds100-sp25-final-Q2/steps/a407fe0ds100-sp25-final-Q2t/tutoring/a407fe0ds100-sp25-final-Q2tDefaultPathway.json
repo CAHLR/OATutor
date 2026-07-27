@@ -1,0 +1,12 @@
+[
+    {
+        "id": "a407fe0ds100-sp25-final-Q2t-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "",
+        "text": "Sure, here are two hints for the given problem:\\n\\nHint 1: Consider how many gradient computations are performed in each epoch for each paradigm. Remember that in Batch Gradient Descent, the entire dataset is used to compute the gradient once per epoch.\\n\\nHint 2: For Mini-batch Gradient Descent, the dataset is divided into smaller batches, and each batch results in a separate gradient computation. For Stochastic Gradient Descent, each data point results in a separate gradient computation. Calculate the total number of gradient computations for each paradigm over all epochs.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

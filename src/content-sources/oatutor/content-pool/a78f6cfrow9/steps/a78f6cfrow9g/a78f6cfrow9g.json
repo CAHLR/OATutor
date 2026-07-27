@@ -1,0 +1,19 @@
+{
+    "id": "a78f6cfrow9g",
+    "stepAnswer": [
+        "$$H$$ is unchanged when multiplied by itself, that is, $$HH$$ $$=$$ $$H\\$\\$.|\\$\\$(I$$ $$-$$ $$H)Y$$ is orthogonal to the column space of $$X\\$\\$.|If$$ $$a$$ $$non-zero$$ $$vector$$ $$v$$ is in the column space of $$X$$, $$then$$ $$Hv$$ $$=$$ $$v$$."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Which of the following are true about the hat matrix $$H$$? $$Select$$ $$all$$ $$that$$ $$apply$$.",
+    "stepBody": "When making predictions, Kippa computes $$\\hat{Y$$} $$=$$ X\\hat{\\theta} $$=$$ X(X**TX)**{-1}X**TY$$. $$Let$$ $$H$$ $$=$$ X(X**TX)**{-1}X**T$$ be the projection ('hat') matrix, so $$\\hat{Y$$} $$=$$ $$HY$$. $$Let$$ $$I$$ be the identity matrix with the same shape as $$H$$.",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "$$H$$ is unchanged when multiplied by itself, that is, $$HH$$ $$=$$ $$H\\$\\$.|\\$\\$(I$$ $$-$$ $$H)Y$$ is orthogonal to the column space of $$X\\$\\$.|If$$ $$a$$ $$non-zero$$ $$vector$$ $$v$$ is in the column space of $$X$$, $$then$$ $$Hv$$ $$=$$ $$v$$.",
+    "choices": [
+        "$$(I$$ $$-$$ $$H)Y$$ is orthogonal to the column space of $$X$$.",
+        "$$H$$ is unchanged when multiplied by itself, that is, $$HH$$ $$=$$ $$H$$.",
+        "$$H$$ is unchanged when multiplied by itself, that is, $$HH$$ $$=$$ $$H\\$\\$.|\\$\\$(I$$ $$-$$ $$H)Y$$ is orthogonal to the column space of $$X\\$\\$.|If$$ $$a$$ $$non-zero$$ $$vector$$ $$v$$ is in the column space of $$X$$, $$then$$ $$Hv$$ $$=$$ $$v$$.",
+        "If a $$non-zero$$ vector $$v$$ is in the column space of $$X$$, $$then$$ $$Hv$$ $$=$$ $$v$$.",
+        "If a $$non-zero$$ vector $$w$$ is orthogonal to the column space of $$X$$, $$then$$ $$Hw$$ $$=$$ $$w$$."
+    ]
+}

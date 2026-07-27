@@ -1,0 +1,11 @@
+{
+    "id": "a4e118dds100-su20-final-Q5",
+    "title": "GPA Descent",
+    "body": "Consider the following non-linear model with two parameters:\\n$$f_{\\theta}(x) $$=$$ $$\\theta_0$$ $$\\cdot$$ $$0.5$$ + $$\\theta_0$$ $$\\cdot$$ $$\\theta_1$$ $$\\cdot$$ $$x_1$$ + \\sin(\\theta_1) $$\\cdot$$ $$x_2$$\\n\\nFor some nonsensical reason, we decide to use the residuals of our model as the loss function. That is, the loss for a single observation is\\n$$L\\left(\\theta\\right)$$ $$=$$ $$y_i$$ $$-$$ f_{\\theta}(x_i)$$\\n\\nWe want to use gradient descent to determine the optimal model parameters, $$\\hat{\\theta}_0$$ and $$\\hat{\\theta}_1$$.",
+    "variabilization": {},
+    "oer": "https://ds100.org/su26/past-exams/",
+    "license": "",
+    "lesson": "Regularization and Cross Validation",
+    "lessonId": "4ZBD6zhq-MYri-eDYfserIfs",
+    "courseName": "Data100 Midterm 2 Staging Sheet"
+}

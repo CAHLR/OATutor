@@ -1,0 +1,12 @@
+[
+    {
+        "id": "a2a4544ds100-fa25-mt2-Q4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "",
+        "text": "Certainly! Here are two hints for the problem:\\n\\n**Hint 1:** Consider the structure of the design matrix. The first column $$col_0$$ is the intercept, which is always $$1$$ for all rows. The remaining columns (col_1 to col_5) represent the one-hot encoded categorical feature. Each row can only have one of these columns set to $$1$$, except for rows $$5$$ and $$6$$, which have all zeros in these columns.\\n\\n**Hint 2:** One-hot encoding creates a separate column for each unique value of a categorical feature. Since rows $$0-4$$ each have exactly one of $$col_1$$ through $$col_5$$ equal to $$1$$, these columns represent unique categories. Rows $$5$$ and $$6$$, with all zeros in $$col_1$$ through $$col_5$$, indicate an additional category. Consider how many unique categories this setup implies.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

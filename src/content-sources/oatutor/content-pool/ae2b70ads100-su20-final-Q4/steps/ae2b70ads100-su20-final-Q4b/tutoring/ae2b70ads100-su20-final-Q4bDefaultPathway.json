@@ -1,0 +1,12 @@
+[
+    {
+        "id": "ae2b70ads100-su20-final-Q4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "",
+        "text": "Certainly! Here are two hints for the given step:\\n\\n**Hint 1:** Consider the properties of mean-centering in linear regression. When you mean-center the design matrix $\\mathbb{X}$ to obtain $\\dot{\\mathbb{X}}$, the intercept term (first column) remains unchanged, while the other columns are adjusted to have a mean of zero. How does this affect the coefficients of the linear model?\\n\\n**Hint 2:** Think about the relationship between the coefficients obtained from the original design matrix $\\mathbb{X}$ and the mean-centered design matrix $\\dot{\\mathbb{X}}$. Specifically, focus on how mean-centering impacts the estimation of the slope coefficients, particularly $\\hat{\\beta}_1$ and $\\hat{\\gamma}_1$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

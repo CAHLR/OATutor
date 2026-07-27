@@ -1,0 +1,12 @@
+[
+    {
+        "id": "a407fe0ds100-su25-final-Q2u-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "",
+        "text": "Certainly! Here are two hints for the given step:\\n\\n**Hint 1:** Consider how stochastic gradient descent (SGD) works. In SGD, the gradient is estimated using a single or a small batch of data points, which introduces some randomness. Think about how this randomness might affect the average of the estimated gradients over one epoch.\\n\\n**Hint 2:** Recall that the true gradient of the loss surface is calculated using the entire dataset. In contrast, stochastic gradient descent uses subsets of the data. Reflect on whether the average of these estimated gradients can exactly match the true gradient at the initial parameter values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,18 @@
+{
+    "id": "aac10b4ds100-sp21-final-Q13h",
+    "stepAnswer": [
+        "Weight in mg"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Consider a simple setting in which we are predicting the height of a person in centimeters based on their weight. Suppose we include the weight measured in kilograms (kg) and milligrams (mg) as two separate features and we tune the coefficient of the L1 regularization to include only one feature.\\nWithout normalizing the data before training, which feature would be selected after the model is trained?",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "Weight in kg",
+        "Weight in mg",
+        "Both features would be selected",
+        "Neither feature would be selected",
+        "Cannot be determined"
+    ]
+}
