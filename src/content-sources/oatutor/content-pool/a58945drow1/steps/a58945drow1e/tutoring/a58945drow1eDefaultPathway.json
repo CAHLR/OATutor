@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a58945drow1e-h10",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Prediction Space",
+        "text": "The prediction vector $$Y_{hat}$$ is in the column space of X because it is the projection of Y onto col(X).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a58945drow1e-h11",
+        "type": "hint",
+        "dependencies": [
+            "a58945drow1e-h10"
+        ],
+        "title": "Residual Sign",
+        "text": "$$Y_{hat}$$ - Y is the negative of the residual Y - $$Y_{hat}$$, so it has the same orthogonality relationships.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a58945drow1e-s5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Orthogonal to"
+        ],
+        "dependencies": [
+            "a58945drow1e-h11"
+        ],
+        "title": "Column Space Check",
+        "text": "If $$Y_{hat}$$ is in col(X) and $$Y_{hat}$$ - Y is orthogonal to col(X), what is the relationship between $$Y_{hat}$$ - Y and $$Y_{hat}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Orthogonal to",
+            "In the span of",
+            "NOT orthogonal to and NOT in the span of"
+        ]
+    },
+    {
+        "id": "a58945drow1e-h12",
+        "type": "hint",
+        "dependencies": [
+            "a58945drow1e-s5"
+        ],
+        "title": "Apply to $$Y_{hat}$$",
+        "text": "Because $$Y_{hat}$$ lies in col(X), and $$Y_{hat}$$ - Y is orthogonal to col(X), $$Y_{hat}$$ - Y is orthogonal to $$Y_{hat}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
