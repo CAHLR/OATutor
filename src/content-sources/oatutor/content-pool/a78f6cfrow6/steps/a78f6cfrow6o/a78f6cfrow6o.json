@@ -1,15 +1,15 @@
 {
     "id": "a78f6cfrow6o",
     "stepAnswer": [
-        "True"
+        "TRUE"
     ],
     "problemType": "MultipleChoice",
     "stepTitle": "With the same training set, adding more features to Sam's model will not result in higher training loss.",
-    "stepBody": "Sam uses $$\\widehat{\\text{attendance\\_rate}} $$=$$ \\hat{\\theta}_0 + \\hat{\\theta}_1 (\\text{dist\\_from\\_bell}) + \\hat{\\theta}_2 (\\text{section\\_no})$$, $$then$$ $$one-hot$$ $$encodes$$ $$\\text{weather}$$ (sunny, cloudy, or rainy) into three new features. Evaluate the following statement:",
+    "stepBody": "Sam uses $$\\hat{\\text{attendance\\_rate}} $$=$$ \\hat{\\theta}_0 + \\hat{\\theta}_1 (\\text{dist\\_from\\_bell}) + \\hat{\\theta}_2 (\\text{section\\_no})$$, $$then$$ $$one-hot$$ $$encodes$$ $$\\text{weather}$$ (sunny, cloudy, or rainy) into three new features. Evaluate the following statement:",
     "answerType": "string",
     "variabilization": {},
     "choices": [
-        "True",
-        "False"
+        "TRUE",
+        "FALSE"
     ]
 }

@@ -5,7 +5,7 @@
     ],
     "problemType": "MultipleChoice",
     "stepTitle": "",
-    "stepBody": "After some experimentation, Michael decides to go with yet another objective function (different from TNO). He calls this objective function \"the ultimate objective\" (TUO). Here is the expression for the derivative of TUO with respect to $$\\theta_0$$: $$\\n$$ $$\\n$$ $$\\frac{d}{d\\theta_0}\\text{TUO} $$=$$ \\sum_{i=1}**{N}\\left(\\frac{3}{\\text{tip}_i} $$-$$ \\frac{1}{\\theta_0}\\right)$$\\n\\nSelect the option with the $$\\hat{\\theta}_0$$ that minimizes the TUO. You can assume that the TUO is convex and is defined for all positive $$\\theta_0$$. $$You$$ $$may$$ $$find$$ $$it$$ $$helpful$$ $$to$$ $$recall$$ $$that$$ $$x**{-1} $$=$$ $$\\frac{1}{x}$$.",
+    "stepBody": "After some experimentation, Michael decides to go with yet another objective function (different from TNO). He calls this objective function \"the ultimate objective\" (TUO). Here is the expression for the derivative of TUO with respect to $$\\theta_0$$: $$\\n$$ $$\\n$$ $$\\frac{d}{d\\theta_0}\\text{TUO} $$=$$ \\sum_{i=1}**{N}(\\frac{3}{\\text{tip}_i} $$-$$ \\frac{1}{\\theta_0})$$\\n\\nSelect the option with the $$\\hat{\\theta}_0$$ that minimizes the TUO. You can assume that the TUO is convex and is defined for all positive $$\\theta_0$$. $$You$$ $$may$$ $$find$$ $$it$$ $$helpful$$ $$to$$ $$recall$$ $$that$$ $$x**{-1} $$=$$ $$\\frac{1}{x}$$.",
     "answerType": "string",
     "variabilization": {},
     "answerLatex": "$$N {\\Sigma}\\left(\\frac{3}{tip_i}\\right)}^{\\operatorname{\\left(-1\\right)}$$",

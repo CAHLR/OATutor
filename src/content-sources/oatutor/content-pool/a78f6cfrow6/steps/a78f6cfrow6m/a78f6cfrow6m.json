@@ -1,15 +1,15 @@
 {
     "id": "a78f6cfrow6m",
     "stepAnswer": [
-        "True"
+        "TRUE"
     ],
     "problemType": "MultipleChoice",
     "stepTitle": "If Sam adds all three one-hot encoded features to his current model, a unique OLS solution will not exist.",
-    "stepBody": "Sam uses $$\\widehat{\\text{attendance\\_rate}} $$=$$ \\hat{\\theta}_0 + \\hat{\\theta}_1 (\\text{dist\\_from\\_bell}) + \\hat{\\theta}_2 (\\text{section\\_no})$$, $$then$$ $$one-hot$$ $$encodes$$ $$\\text{weather}$$ (sunny, cloudy, or rainy) into three new features. Evaluate the following statement:",
+    "stepBody": "Sam uses $$\\hat{\\text{attendance\\_rate}} $$=$$ \\hat{\\theta}_0 + \\hat{\\theta}_1 (\\text{dist\\_from\\_bell}) + \\hat{\\theta}_2 (\\text{section\\_no})$$, $$then$$ $$one-hot$$ $$encodes$$ $$\\text{weather}$$ (sunny, cloudy, or rainy) into three new features. Evaluate the following statement:",
     "answerType": "string",
     "variabilization": {},
     "choices": [
-        "True",
-        "False"
+        "TRUE",
+        "FALSE"
     ]
 }

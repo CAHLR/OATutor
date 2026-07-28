@@ -5,7 +5,7 @@
     ],
     "problemType": "MultipleChoice",
     "stepTitle": "",
-    "stepBody": "To reduce model complexity, the owner computes the optimal \u03b8 by minimizing the following regularized loss function:\\n$$L(\\vec{\\theta}) $$=$$ $$(||Y$$ $$-$$ X\\vec{\\theta}||_2)**{2} + $$\\lambda$$ g(\\vec{\\theta})$$\\nwhere $$g(\\vec{\\theta})$$ is a non-constant function of $$\\vec{\\theta}$$ and $$\\lambda$$ $$\\geq$$ $$0$$. $$If$$ $$the$$ $$magnitude$$ $$of$$ $$any$$ $$\\theta_i$$ increases, $$g(\\vec{\\theta})$$ will also increase.\\nNote: $$p$$ is the total number of parameters in $$\\vec{\\theta}$$. $$\\n$$ $$Which$$ $$g(\\vec{\\theta})$$ is best for feature selection (i.e., eliminating irrelevant features and keeping useful ones)?",
+    "stepBody": "To reduce model complexity, the owner computes the optimal \u03b8 by minimizing the following regularized loss function:\\n$$L\\left(\\theta\\right)$$ $$=$$ $$(||Y$$ $$-$$ X\\theta||_2)**{2} + $$\\lambda$$ $$g{\\left(\\theta\\right)}$$\\nwhere $$g{\\left(\\theta\\right)}$$ is a non-constant function of $$\\theta$$ and $$\\lambda$$ $$\\geq$$ $$0$$. $$If$$ $$the$$ $$magnitude$$ $$of$$ $$any$$ $$\\theta_i$$ increases, $$g{\\left(\\theta\\right)}$$ will also increase.\\nNote: $$p$$ is the total number of parameters in $$\\theta$$. $$\\n$$ $$Which$$ $$g{\\left(\\theta\\right)}$$ is best for feature selection (i.e., eliminating irrelevant features and keeping useful ones)?",
     "answerType": "string",
     "variabilization": {},
     "answerLatex": "g(\u03b8) $$=$$ \u03a3|\u03b8_i| for $$i=1$$ to $$p$$",

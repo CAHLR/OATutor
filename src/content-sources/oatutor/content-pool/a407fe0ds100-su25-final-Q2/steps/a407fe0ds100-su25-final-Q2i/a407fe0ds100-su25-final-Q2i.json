@@ -4,8 +4,8 @@
         "FALSE"
     ],
     "problemType": "MultipleChoice",
-    "stepTitle": "If Wesley refit the same model with $$(x_1)**{6}$$ as an additional feature, a unique solution will no longer exist.",
-    "stepBody": "Wesley has $$n$$ $$=$$ $$30$$ unique data points and $$2$$ features. He fits the following OLS model: $$\\hat{y}_i $$=$$ \\hat{\\theta}_0 + \\hat{\\theta}_1(x_{i1})**{3} + \\hat{\\theta}_2 $$\\ln$$ x_{i2}$$\\n\\nWesley correctly calculates a unique optimal solution for his OLS model. Select all statements about Wesley's fitted model (which uses the optimal parameters) that must be true.",
+    "stepTitle": "If Wesley refit the same model with $$(x_{i1})**{6}$$ as an additional feature, a unique solution will no longer exist.",
+    "stepBody": "Wesley has $$n$$ $$=$$ $$30$$ unique data points and $$2$$ features. He fits the following OLS model:\\n$$\\hat{y}_i $$=$$ \\hat{\\theta}_0 + \\hat{\\theta}_1(x_{i1})**{3} + \\hat{\\theta}_2\\log(x_{i2})$$\\nWesley correctly calculates a unique optimal solution for his OLS model. Select all statements about Wesley's fitted model (which uses the optimal parameters) that must be true.",
     "answerType": "string",
     "variabilization": {},
     "choices": [

@@ -5,7 +5,7 @@
     ],
     "problemType": "MultipleChoice",
     "stepTitle": "Remove the intercept from this model.",
-    "stepBody": "Malavikha trains the following model without regularization:\\n$$\\hat{\\text{attendance\\_rate}} $$=$$ \\hat{\\theta}_0 + \\hat{\\theta}_1 $$\\times$$ (\\text{dist\\_from\\_bell})**{2} + \\hat{\\theta}_2 $$\\times$$ \\sqrt{\\text{section\\_no}}$$\\nAfter applying bootstrapping to this model, Malavikha observed a high model bias squared. Evaluate whether the following suggestions can reduce model bias squared.",
+    "stepBody": "Malavikha trains the following model without regularization:\\n$$\\hat{\\text{attendance\\_rate}} $$=$$ \\hat{\\theta}_0 + \\hat{\\theta}_1(\\text{dist\\_from\\_bell})**{2} + \\hat{\\theta}_2\\sqrt{\\text{section\\_no}}$$\\nAfter applying bootstrapping to this model, Malavikha observed a high model bias squared. Evaluate whether the following suggestions can reduce model bias squared.",
     "answerType": "string",
     "variabilization": {},
     "choices": [

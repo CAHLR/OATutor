@@ -5,7 +5,7 @@
     ],
     "problemType": "MultipleChoice",
     "stepTitle": "blank (i): The optimal parameter from training without regularization is most likely:",
-    "stepBody": "Sam uses the following model to predict $$attendance_{rate}$$:\\n$$\\hat{\\text{attendance\\_rate}} $$=$$ \\hat{\\theta}_0 + \\hat{\\theta}_1 $$\\times$$ (\\text{dist\\_from\\_bell}) + \\hat{\\theta}_2 $$\\times$$ (\\text{section\\_no})$$\\nHe trains three versions of this model: one without regularization, one with L1 regularization, and one with L2 regularization. He finds different optimal parameters from each version of training: $${\\theta_{vec}}^a$$ $$=$$ [0, $$0.1$$, 0], $${\\theta_{vec}}^b$$ $$=$$ [1, $$0.5$$, 2], $${\\theta_{vec}}^c$$ $$=$$ $$[0.05$$, $$0.08$$, $$0.03]$$.",
+    "stepBody": "Sam uses the following model to predict $$attendance_{rate}$$:\\n$$\\hat{\\text{attendance\\_rate}} $$=$$ \\hat{\\theta}_0 + \\hat{\\theta}_1(\\text{dist\\_from\\_bell}) + \\hat{\\theta}_2(\\text{section\\_no})$$\\nHe trains three versions of this model: one without regularization, one with L1 regularization, and one with L2 regularization. He finds different optimal parameters from each version of training: $${\\theta_{vec}}^a$$ $$=$$ [0, $$0.1$$, 0], $${\\theta_{vec}}^b$$ $$=$$ [1, $$0.5$$, 2], $${\\theta_{vec}}^c$$ $$=$$ $$[0.05$$, $$0.08$$, $$0.03]$$.",
     "answerType": "string",
     "variabilization": {},
     "answerLatex": "$${\\theta_{vec}}^b$$ $$=$$ [1, $$0.5$$, 2]",

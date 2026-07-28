@@ -1,19 +1,18 @@
 {
     "id": "a407fe0ds100-su25-final-Q2k",
     "stepAnswer": [
-        "$$\\theta_0$$ $$=$$ (4*\u03b8_1/n)*\u03a3(y_i + \u03b8_1*x_i)"
+        "$$\\frac{4\\theta_1}{n}\\sum_{i=1}**{n}(y_i+\\theta_1x_i)$$"
     ],
     "problemType": "MultipleChoice",
-    "stepTitle": "blank (i): Find the value of $$\\theta_0$$ that minimizes $$L(\\theta_0, \\theta_1)$$.",
-    "stepBody": "Sammie wants to find the optimal solution for $$\\theta_0$$ with respect to the objective function below.\\n$$L(\\theta_0, \\theta_1) $$=$$ \\frac{1}{n}\\sum_{i=1}**{n}\\left(y_i $$-$$ \\left(\\frac{\\theta_0}{4\\theta_1} $$-$$ $$\\theta_1$$ x_i\\right)\\right)**{2}$$\\nFind the value of $$\\theta_0$$ that minimizes $$L(\\theta_0, \\theta_1)$$.",
+    "stepTitle": "blank (i): Find the value of $$\\theta_0$$ that minimizes the objective function.",
+    "stepBody": "Sammie wants to find the optimal solution for $$\\theta_0$$ with respect to the objective function below.\\n$$L(\\theta_0,\\theta_1)=\\frac{1}{n}\\sum_{i=1}**{n}(y_i-\\frac{\\theta_0}{4\\theta_1}+\\theta_1x_i)**{2}$$",
     "answerType": "string",
     "variabilization": {},
-    "answerLatex": "$$\\theta_0$$ $$=$$ (4*\u03b8_1/n)*\u03a3(y_i + \u03b8_1*x_i)",
     "choices": [
-        "$$\\theta_0$$ $$=$$ (4*\u03b8_1/n)*\u03a3(y_i + \u03b8_1*x_i)",
-        "$$\\theta_0$$ $$=$$ (1/n)*\u03a3(y_i + \u03b8_1*x_i)",
-        "$$\\theta_0$$ $$=$$ (4*\u03b8_1/n)*\u03a3(y_i $$-$$ \u03b8_1*x_i)",
-        "$$\\theta_0$$ $$=$$ (1/(4*\u03b8_1*n))*\u03a3(y_i + \u03b8_1*x_i)",
-        "$$\\theta_0$$ $$=$$ $$\\frac{4\\theta_1}{n} \\operatorname{\\Sigma}\\left(y_i\\right)$$"
+        "$$\\frac{4\\theta_1}{n}\\sum_{i=1}**{n}(y_i+\\theta_1x_i)$$",
+        "$$\\frac{1}{n}\\sum_{i=1}**{n}(y_i+\\theta_1x_i)$$",
+        "$$\\frac{4\\theta_1}{n}\\sum_{i=1}**{n}(y_i-\\theta_1x_i)$$",
+        "$$\\frac{1}{4\\theta_1n}\\sum_{i=1}**{n}(y_i+\\theta_1x_i)$$",
+        "$$\\frac{4\\theta_1}{n}\\sum_{i=1}**{n}y_i$$"
     ]
 }

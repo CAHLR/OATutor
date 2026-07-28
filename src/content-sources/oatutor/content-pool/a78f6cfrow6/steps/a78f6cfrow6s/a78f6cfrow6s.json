@@ -1,15 +1,15 @@
 {
     "id": "a78f6cfrow6s",
     "stepAnswer": [
-        "False"
+        "FALSE"
     ],
     "problemType": "MultipleChoice",
     "stepTitle": "Remove the intercept from this model.",
-    "stepBody": "Malavikha trains $$\\widehat{\\text{attendance\\_rate}} $$=$$ \\hat{\\theta}_0 + \\hat{\\theta}_1 (\\text{dist\\_from\\_bell})**2 + \\hat{\\theta}_2 \\sqrt{\\text{section\\_no}}$$ without regularization. After applying bootstrapping, she observes a high model bias squared. Can the following suggestion reduce model bias squared?",
+    "stepBody": "Malavikha trains $$\\hat{\\text{attendance\\_rate}} $$=$$ \\hat{\\theta}_0 + \\hat{\\theta}_1 (\\text{dist\\_from\\_bell})**2 + \\hat{\\theta}_2 \\sqrt{\\text{section\\_no}}$$ without regularization. After applying bootstrapping, she observes a high model bias squared. Can the following suggestion reduce model bias squared?",
     "answerType": "string",
     "variabilization": {},
     "choices": [
-        "True",
-        "False"
+        "TRUE",
+        "FALSE"
     ]
 }
