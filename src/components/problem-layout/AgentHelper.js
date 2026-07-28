@@ -13,6 +13,9 @@ export class AgentHelper {
         this.agentEndpoint = process.env.REACT_APP_AI_AGENT_URL || "";
         this.sessionId = null;
         this.turnId = 0;
+        // True until Problem/AgentChatbox writes the chatSessions create payload once.
+        // Prevents remounts from merge-writing messageCount*: 0 over live counters.
+        this._needsSessionMetaWrite = false;
     }
 
     /**
@@ -22,6 +25,7 @@ export class AgentHelper {
     initializeSession() {
         this.sessionId = `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
         this.turnId = 0;
+        this._needsSessionMetaWrite = true;
         return this.sessionId;
     }
 
@@ -36,10 +40,21 @@ export class AgentHelper {
         return this.sessionId;
     }
 
+    /** Whether chatSessions create metadata still needs to be written for this sessionId. */
+    needsSessionMetaWrite() {
+        return Boolean(this.sessionId && this._needsSessionMetaWrite);
+    }
+
+    markSessionMetaWritten() {
+        this._needsSessionMetaWrite = false;
+    }
+
     /**
      * Build request payload from Problem.js and ProblemCard.js
+     * @param {Array<{role: string, content: string}>} conversationHistory
+     *   Prior turns only (exclude the current userMessage — Lambda appends it).
      */
-    buildAgentRequest(userMessage, problemContext, studentState, extracted, chatPrompt, chatDisplayMode) {
+    buildAgentRequest(userMessage, problemContext, studentState, extracted, chatPrompt, chatDisplayMode, conversationHistory = []) {
         const safeUserMessage = typeof userMessage === 'string' ? userMessage : '';
         const request = {
             sessionId: this.sessionId,
@@ -50,7 +65,8 @@ export class AgentHelper {
             extracted: extracted || {},
             chatPrompt: chatPrompt || 'PROMPTv2.txt',
             chatDisplayMode: chatDisplayMode || 'Off',
-            conversationHistory: []  // Lambda loads from DynamoDB
+            // Client transcript is the source of truth; DynamoDB is a backup.
+            conversationHistory: Array.isArray(conversationHistory) ? conversationHistory : [],
         };
 
         return request;
@@ -92,7 +108,7 @@ export class AgentHelper {
      * @param {object} extracted - Optional extracted input (e.g., { text, images }) for vision
      * @param {object} callbacks - { onChunkReceived, onSuccessfulCompletion, onError }
      */
-    async sendMessage(userMessage, problemContext, studentState, extracted = {}, chatPrompt = 'PROMPTv2.txt', chatDisplayMode = 'Off', callbacks = {}) {
+    async sendMessage(userMessage, problemContext, studentState, extracted = {}, chatPrompt = 'PROMPTv2.txt', chatDisplayMode = 'Off', callbacks = {}, conversationHistory = []) {
         const {
             onTurnStarted = () => {},
             onChunkReceived = () => {},
@@ -114,7 +130,15 @@ export class AgentHelper {
             }
 
             // Build request
-            const agentRequest = this.buildAgentRequest(userMessage, problemContext, studentState, extracted, chatPrompt, chatDisplayMode);
+            const agentRequest = this.buildAgentRequest(
+                userMessage,
+                problemContext,
+                studentState,
+                extracted,
+                chatPrompt,
+                chatDisplayMode,
+                conversationHistory
+            );
 
             // Send POST request with streaming
             const response = await fetch(this.agentEndpoint, {
@@ -262,6 +286,7 @@ export class AgentHelper {
      */
     clearSession() {
         this.sessionId = null;
+        this._needsSessionMetaWrite = false;
     }
 }
 

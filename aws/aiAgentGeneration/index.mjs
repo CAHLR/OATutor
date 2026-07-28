@@ -156,8 +156,13 @@ export const handler = awslambda.streamifyResponse(
 
             httpResponseStream = awslambda.HttpResponseStream.from(responseStream, metadata);
 
+            // Prefer client transcript when present (UI is authoritative). DynamoDB
+            // is a fallback for older clients that still send conversationHistory: [].
             const existingConversation = await loadConversationHistory(sessionId);
-            const fullConversationHistory = [...existingConversation, ...conversationHistory];
+            const clientHistory = Array.isArray(conversationHistory) ? conversationHistory : [];
+            const fullConversationHistory = clientHistory.length > 0
+                ? clientHistory
+                : existingConversation;
             
             const agentPrompt = buildAgentPrompt({
                 userMessage: safeUserMessage,
@@ -181,9 +186,42 @@ export const handler = awslambda.streamifyResponse(
             const userIdHash = requestBody.userIdHash ?? undefined;
             const startedAt = nowMs();
 
-            // Optional emergency debug: log full prompt when explicitly enabled.
+            // Optional emergency debug: full LLM payload (system + history + latest user).
+            // Set LOG_FULL_PROMPT=true in the Lambda/.env used by the running agent.
             if (process.env.LOG_FULL_PROMPT === "true") {
-                logEvent({ eventType: "debug_prompt_full", sessionId, turnId, promptHash, prompt: promptText });
+                const messagesForLog = (agentPrompt || []).map((msg, index) => {
+                    let content = msg?.content;
+                    if (Array.isArray(content)) {
+                        // Multimodal: keep text, note images without dumping base64.
+                        content = content.map((part) => {
+                            if (part?.type === "text") return part;
+                            if (part?.type === "image_url") {
+                                return { type: "image_url", image_url: "[omitted base64]" };
+                            }
+                            return part;
+                        });
+                    } else if (typeof content === "string" && content.length > 20000) {
+                        content = `${content.slice(0, 20000)}…[truncated ${content.length} chars]`;
+                    }
+                    return {
+                        index,
+                        role: msg?.role,
+                        content,
+                    };
+                });
+                logEvent({
+                    eventType: "debug_prompt_full",
+                    sessionId,
+                    turnId,
+                    promptHash,
+                    chatPrompt,
+                    historyMessageCount: fullConversationHistory.length,
+                    llmMessageCount: messagesForLog.length,
+                    // Exact roles/order OpenAI sees: system, then prior turns, then latest user.
+                    messages: messagesForLog,
+                    // Kept for older log queries that only look at `prompt`.
+                    prompt: promptText,
+                });
             }
 
             logEvent({
@@ -194,6 +232,7 @@ export const handler = awslambda.streamifyResponse(
                 promptHash,
                 model: process.env.OPENAI_MODEL || "gpt-4o",
                 imagesCount,
+                historyMessageCount: fullConversationHistory.length,
                 condition,
                 lessonId,
                 chatPrompt,

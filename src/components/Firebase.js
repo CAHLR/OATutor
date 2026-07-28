@@ -478,8 +478,8 @@ class Firebase {
 
     /**
      * Write one lean chatHistory document for a single user/assistant message.
-     * Only stores session-linking fields + message content; all other metadata
-     * lives in chatSessions and is NOT duplicated here.
+     * Links to chatSessions via sessionId. Per-turn context (problemId, stepId)
+     * should be provided in messageData by the caller.
      */
     async logChatMessage(sessionId, messageData) {
         if (!DO_LOG_DATA) return;

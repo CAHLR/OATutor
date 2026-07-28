@@ -52,6 +52,8 @@ class AvatarHelpPanel extends React.Component {
             user,
             lessonMasteryMap,
             hintUsageByStep,
+            drawerOpen,
+            mathKeyboardOpen,
             avatarHint,
             avatarHintPayload,
             avatarHintIndex,
@@ -122,6 +124,9 @@ class AvatarHelpPanel extends React.Component {
                     defaultOpen={false}
                     closedLauncherPlacement="floating"
                     showLauncherBubble={false}
+                    hintsOpen={false}
+                    drawerOpen={drawerOpen}
+                    mathKeyboardOpen={mathKeyboardOpen}
                     afterMessagesContent={hintCard}
                     beforeInputContent={hintButton}
                     showSuggestedQuestions

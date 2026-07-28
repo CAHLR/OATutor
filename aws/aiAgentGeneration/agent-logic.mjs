@@ -1,6 +1,6 @@
-import { readFileSync } from 'fs';
+import { readFileSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
+import { basename, dirname, extname, join } from 'path';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -12,16 +12,87 @@ export const DEFAULT_CHAT_PROMPT = 'PROMPTv2.txt';
 // const ALLOWED_CHAT_PROMPTS = new Set([
 //     'PROMPTv1.txt',
 //     'PROMPTv2.txt',
+//     'PROMPTv2a.py',
 // ]);
 
 const promptTemplateCache = new Map();
 
 function resolveChatPromptFile(chatPrompt) {
     const name = String(chatPrompt || DEFAULT_CHAT_PROMPT).trim();
-    // if (!ALLOWED_CHAT_PROMPTS.has(name)) {
+    // Basename-only: block path traversal (e.g. ../secrets).
+    const safeName = basename(name);
+    if (!safeName || safeName !== name) {
+        return DEFAULT_CHAT_PROMPT;
+    }
+    // if (!ALLOWED_CHAT_PROMPTS.has(safeName)) {
     //     return DEFAULT_CHAT_PROMPT;
     // }
-    return name;
+    return safeName;
+}
+
+/**
+ * Extract `system_prompt` from a prompt Python module.
+ * Supports:
+ *   - system_prompt = """..."""
+ *   - named triple-quoted parts composed via:
+ *       system_prompt = (role + answer_definition + ...)
+ */
+function extractSystemPromptFromPython(source, fileLabel = 'prompt.py') {
+    const vars = Object.create(null);
+    const assignRe =
+        /^([A-Za-z_][\w]*)\s*=\s*r?(?:"""([\s\S]*?)"""|'''([\s\S]*?)''')/gm;
+
+    let match;
+    while ((match = assignRe.exec(source)) !== null) {
+        vars[match[1]] = match[2] ?? match[3] ?? '';
+    }
+
+    const concatMatch = source.match(
+        /system_prompt\s*=\s*\(\s*([\s\S]*?)\s*\)\s*$/m
+    );
+    if (concatMatch) {
+        const parts = concatMatch[1]
+            .split('+')
+            .map((part) => part.trim())
+            .filter(Boolean);
+        if (parts.length === 0) {
+            throw new Error(`${fileLabel}: system_prompt composition is empty`);
+        }
+        return parts
+            .map((name) => {
+                if (!(name in vars)) {
+                    throw new Error(
+                        `${fileLabel}: system_prompt references missing variable "${name}"`
+                    );
+                }
+                return vars[name];
+            })
+            .join('');
+    }
+
+    if (typeof vars.system_prompt === 'string') {
+        return vars.system_prompt;
+    }
+
+    throw new Error(
+        `${fileLabel}: could not find system_prompt (assign a string or (a + b + ...))`
+    );
+}
+
+function loadPromptFileContents(file) {
+    const fullPath = join(__dirname, file);
+    if (!existsSync(fullPath)) {
+        throw new Error(`Prompt file not found: ${file}`);
+    }
+
+    const ext = extname(file).toLowerCase();
+    if (ext === '.py') {
+        const source = readFileSync(fullPath, 'utf-8');
+        return extractSystemPromptFromPython(source, file);
+    }
+
+    // Default: plain-text prompt templates (.txt and anything else)
+    return readFileSync(fullPath, 'utf-8');
 }
 
 export function loadPromptTemplate(chatPrompt) {
@@ -29,7 +100,7 @@ export function loadPromptTemplate(chatPrompt) {
     if (promptTemplateCache.has(file)) {
         return { template: promptTemplateCache.get(file), file };
     }
-    const template = readFileSync(join(__dirname, file), 'utf-8');
+    const template = loadPromptFileContents(file);
     promptTemplateCache.set(file, template);
     return { template, file };
 }

@@ -51,6 +51,11 @@ import {
     DESKTOP_TOOLTIP_RIGHT,
     PAGE_BG,
 } from './mobileFabStyles';
+import {
+    bindMathKeyboardDismissDrag,
+    ensureMathKeyboardShowGuard,
+    hideMathKeyboardAnimated,
+} from '../problem-input/mathKeyboardGestures';
 
 class Problem extends React.Component {
     static defaultProps = {
@@ -116,6 +121,7 @@ class Problem extends React.Component {
             firstHelpAction: null, // "chat" | "hint" — set once, used to write firstActionType
             agentCloseRequest: 0,
             isAgentChatVisible: false,
+            isMathKeyboardVisible: false,
         };
 
         this.hintPortalRef = React.createRef();
@@ -143,49 +149,55 @@ class Problem extends React.Component {
             annotation.ariaLabel = annotation.textContent;
         }
 
-        // Initialize shared agent session (idempotent — AgentChatbox also calls this)
-        const sessionId = agentHelper.initSessionIfNeeded();
+        // Book/view-all mode: no agent UI and no chat session logging
+        if (!this.props.disableAgent) {
+            // Initialize shared agent session (idempotent — AgentChatbox also calls this)
+            const sessionId = agentHelper.initSessionIfNeeded();
 
-        // Write the static session metadata doc once per problem load
-        const firebase = this.context?.firebase;
-        if (firebase?.logChatSession && sessionId) {
-            const { problem } = this.props;
-            const chatDisplayMode = lesson?.chat_display_mode || 'Off';
-            firebase.logChatSession(sessionId, {
-                sessionId,
-                oats_user_id: this.context?.userID || null,
-                lms_user_id: this.context?.user?.user_id || null,
-                course_id: this.context?.user?.course_id || null,
-                course_name: this.context?.user?.course_name || lesson?.courseName || null,
-                course_code: this.context?.user?.course_code || null,
-                semester: firebase.addMetaData({}).semester || null,
-                treatment: this.context?.getTreatment?.() ?? null,
-                siteVersion: firebase.siteVersion || null,
-                siteCommitHash: process.env.REACT_APP_COMMIT_HASH || null,
-                problemId: problem?.id || null,
-                lessonId: lesson?.id || null,
-                chatDisplayMode,
-                condition: chatDisplayMode === 'Window' ? 'window'
-                    : chatDisplayMode === 'Avatar' ? 'avatar'
-                    : chatDisplayMode === 'Full' ? 'full'
-                    : 'off',
-                chatPrompt: lesson?.chat_prompt || 'PROMPTv2.txt',
-                startedAt: Date.now(),
-                lastActivityAt: Date.now(),
-                greetingShown: false,
-                firstActionType: null,
-                firstActionTimestampMs: null,
-                chatOpenCount: 0,
-                chatCloseCount: 0,
-                hintOpenCount: 0,
-                hintCloseCount: 0,
-                messageCountUser: 0,
-                messageCountAssistant: 0,
-                errorCount: 0,
-                clearedCount: 0,
-            });
+            // Write chatSessions create payload once per sessionId.
+            // Re-writing messageCount*: 0 on remount would wipe live increments (merge setDoc).
+            const firebase = this.context?.firebase;
+            if (firebase?.logChatSession && sessionId && agentHelper.needsSessionMetaWrite()) {
+                const chatDisplayMode = lesson?.chat_display_mode || 'Off';
+                // LTI fields are only present when launched via Canvas/LMS JWT.
+                // Standalone local/dev (and many direct production visits) correctly have null.
+                firebase.logChatSession(sessionId, {
+                    sessionId,
+                    oats_user_id: this.context?.userID || null,
+                    lms_user_id: this.context?.user?.user_id || null,
+                    course_id: this.context?.user?.course_id || null,
+                    course_name: this.context?.user?.course_name || lesson?.courseName || null,
+                    course_code: this.context?.user?.course_code || null,
+                    semester: firebase.addMetaData({}).semester || null,
+                    treatment: this.context?.getTreatment?.() ?? null,
+                    siteVersion: firebase.siteVersion || null,
+                    siteCommitHash: process.env.REACT_APP_COMMIT_HASH || null,
+                    lessonId: lesson?.id || null,
+                    chatDisplayMode,
+                    condition: chatDisplayMode === 'Window' ? 'window'
+                        : chatDisplayMode === 'Avatar' ? 'avatar'
+                        : chatDisplayMode === 'Full' ? 'full'
+                        : 'off',
+                    chatPrompt: lesson?.chat_prompt || 'PROMPTv2.txt',
+                    startedAt: Date.now(),
+                    lastActivityAt: Date.now(),
+                    greetingShown: false,
+                    firstActionType: null,
+                    firstActionTimestampMs: null,
+                    chatOpenCount: 0,
+                    chatCloseCount: 0,
+                    hintOpenCount: 0,
+                    hintCloseCount: 0,
+                    messageCountUser: 0,
+                    messageCountAssistant: 0,
+                    errorCount: 0,
+                    clearedCount: 0,
+                });
+                agentHelper.markSessionMetaWritten();
+            }
         }
         if (this.enableTTS) this._loadTTSAudio(this.props.problem);
+        this._bindMathKeyboardVisibility();
     }
 
     componentDidUpdate(prevProps) {
@@ -193,6 +205,84 @@ class Problem extends React.Component {
             this._loadTTSAudio(this.props.problem);
         }
     }
+
+    _syncMathKeyboardVisibility = (evt) => {
+        let visible;
+        if (evt?.detail && typeof evt.detail.visible === "boolean") {
+            visible = evt.detail.visible;
+        } else {
+            visible = Boolean(
+                typeof window !== "undefined" &&
+                    window.mathVirtualKeyboard?.visible
+            );
+        }
+        this.setState((prev) =>
+            prev.isMathKeyboardVisible === visible
+                ? null
+                : { isMathKeyboardVisible: visible }
+        );
+        if (visible) {
+            // Keyboard mounts asynchronously; bind drag handle after paint.
+            requestAnimationFrame(() => {
+                bindMathKeyboardDismissDrag();
+                setTimeout(bindMathKeyboardDismissDrag, 50);
+            });
+        }
+    };
+
+    _bindMathKeyboardVisibility = () => {
+        if (typeof window === "undefined") return;
+        if (this._mathKeyboardBound) return;
+
+        const tryBind = () => {
+            const kb = window.mathVirtualKeyboard;
+            if (!kb) return false;
+            this._mathKeyboardBound = true;
+            ensureMathKeyboardShowGuard();
+            kb.addEventListener(
+                "geometrychange",
+                this._syncMathKeyboardVisibility
+            );
+            kb.addEventListener(
+                "before-virtual-keyboard-toggle",
+                this._syncMathKeyboardVisibility
+            );
+            this._syncMathKeyboardVisibility();
+            return true;
+        };
+
+        if (tryBind()) return;
+
+        // mathlive may load with the first ProblemInput; retry briefly.
+        let attempts = 0;
+        this._mathKeyboardBindTimer = setInterval(() => {
+            attempts += 1;
+            if (tryBind() || attempts >= 40) {
+                clearInterval(this._mathKeyboardBindTimer);
+                this._mathKeyboardBindTimer = null;
+            }
+        }, 250);
+    };
+
+    _unbindMathKeyboardVisibility = () => {
+        if (this._mathKeyboardBindTimer) {
+            clearInterval(this._mathKeyboardBindTimer);
+            this._mathKeyboardBindTimer = null;
+        }
+        if (typeof window === "undefined" || !this._mathKeyboardBound) return;
+        const kb = window.mathVirtualKeyboard;
+        if (kb) {
+            kb.removeEventListener(
+                "geometrychange",
+                this._syncMathKeyboardVisibility
+            );
+            kb.removeEventListener(
+                "before-virtual-keyboard-toggle",
+                this._syncMathKeyboardVisibility
+            );
+        }
+        this._mathKeyboardBound = false;
+    };
 
     _loadTTSAudio(problem) {
         if (!problem) return;
@@ -258,6 +348,7 @@ class Problem extends React.Component {
     componentWillUnmount() {
         document["oats-meta-courseName"] = "";
         document["oats-meta-textbookName"] = "";
+        this._unbindMathKeyboardVisibility();
         if (this.ttsPlayer) this.ttsPlayer.destroy();
         Object.values(this.stepTTSPlayers).forEach(p => p.destroy());
     }
@@ -639,6 +730,11 @@ class Problem extends React.Component {
     };
 
     accordionChange = (panel) => (event, isExpanded) => {
+        // Collapsing (or switching steps) while the math keyboard is open must
+        // dismiss it here — accordion re-render used to rebuild the keyboard mid-hide.
+        if (typeof window !== 'undefined' && window.mathVirtualKeyboard?.visible) {
+            hideMathKeyboardAnimated();
+        }
         this.setState(() => ({
             expandedAccordion: isExpanded ? panel : null,
             hintToggleIndex: null,
@@ -871,9 +967,17 @@ class Problem extends React.Component {
     };
 
     renderMobileHintLauncher = () => {
-        const { isHintPortalOpen, isAgentChatVisible } = this.state;
+        const { isHintPortalOpen, isAgentChatVisible, isMathKeyboardVisible } =
+            this.state;
+        const drawerOpen = Boolean(this.props.drawerOpen);
 
-        if (isHintPortalOpen || isAgentChatVisible) {
+        // Mobile FABs sit above TOC / math keyboard; hide while those are open.
+        if (
+            isHintPortalOpen ||
+            isAgentChatVisible ||
+            drawerOpen ||
+            isMathKeyboardVisible
+        ) {
             return null;
         }
 
@@ -1121,7 +1225,9 @@ class Problem extends React.Component {
             return <div></div>;
         }
 
-        const chatDisplayMode = this.props.lesson?.chat_display_mode || 'Off';
+        const chatDisplayMode = this.props.disableAgent
+            ? 'Off'
+            : (this.props.lesson?.chat_display_mode || 'Off');
         const isMobile = this.props.responsive?.isMobile ?? false;
         const showHintPanel = !hideHintPanel && chatDisplayMode !== 'Avatar';
         const showSideHintPanel = showHintPanel && !isMobile;
@@ -1503,6 +1609,8 @@ class Problem extends React.Component {
                                 user={this.props.user}
                                 lessonMasteryMap={this.props.lessonMasteryMap}
                                 hintUsageByStep={this.state.hintUsageByStep}
+                                drawerOpen={Boolean(this.props.drawerOpen)}
+                                mathKeyboardOpen={this.state.isMathKeyboardVisible}
                                 avatarHint={avatarVisibleHint}
                                 avatarHintPayload={avatarHintPayload}
                                 avatarHintIndex={this.state.avatarVisibleHintIndex}
@@ -1535,6 +1643,8 @@ class Problem extends React.Component {
                                 user={this.props.user}
                                 lessonMasteryMap={this.props.lessonMasteryMap}
                                 hintUsageByStep={this.state.hintUsageByStep}
+                                drawerOpen={Boolean(this.props.drawerOpen)}
+                                mathKeyboardOpen={this.state.isMathKeyboardVisible}
                                 avatarHint={avatarVisibleHint}
                                 avatarHintPayload={avatarHintPayload}
                                 avatarHintIndex={this.state.avatarVisibleHintIndex}
@@ -1666,9 +1776,6 @@ class Problem extends React.Component {
                         </div>
                     )}
 
-
-}
-                    
                 </footer>
 
                 {/* AI Agent Chatbot */}
@@ -1686,6 +1793,8 @@ class Problem extends React.Component {
                         lessonMasteryMap={this.props.lessonMasteryMap}
                         hintUsageByStep={this.state.hintUsageByStep}
                         hintsOpen={this.state.isHintPortalOpen}
+                        drawerOpen={Boolean(this.props.drawerOpen)}
+                        mathKeyboardOpen={this.state.isMathKeyboardVisible}
                         closeRequest={this.state.agentCloseRequest}
                         onChatVisibilityChange={this.handleChatVisibilityChange}
                         condition="window"

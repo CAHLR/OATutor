@@ -43,6 +43,7 @@ import { withStyles } from "@material-ui/core/styles";
 import styles from "../components/problem-layout/common-styles.js";
 
 import Drawer from "@material-ui/core/Drawer";
+import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
 import TableOfContents from "../components/tableOfContents.js";
 
 import withWidth from "@material-ui/core/withWidth";
@@ -475,28 +476,55 @@ class Platform extends React.Component {
     return (
       <>
         {inLesson && (
-          <Drawer
-            variant={isMobile ? "temporary" : "persistent"}
+          isMobile ? (
+          <SwipeableDrawer
             anchor="left"
             open={this.state.drawerOpen}
-            onClose={isMobile ? () => this.toggleDrawer(false) : undefined}
+            onClose={() => this.toggleDrawer(false)}
+            onOpen={() => this.toggleDrawer(true)}
             classes={{
-              paper: isMobile ? classes.drawerPaperMobile : classes.drawerPaper,
+              paper: classes.drawerPaperMobile,
             }}
             style={{
               position: "fixed",
-              width: isMobile ? "min(320px, 85vw)" : 320,
+              width: "min(320px, 85vw)",
+              flexShrink: 0,
+              zIndex: this.state.drawerOpen ? 4 : 0,
+            }}
+            PaperProps={{ style: { padding: 0, width: "min(320px, 85vw)" } }}
+            ModalProps={{ keepMounted: true }}
+          >
+            <div style={{ width: "100%", padding: 16 }}>
+              <TableOfContents
+                courseName={tocCourseName}
+                courseMastery={this.state.mastery || 0}
+                mastery={lessonMasteryMap}
+                onLessonClick={this.handleLessonClick}
+                selectedLessonId={this.props.lessonID}
+                drawerOpen={this.state.drawerOpen}
+              />
+            </div>
+          </SwipeableDrawer>
+          ) : (
+          <Drawer
+            variant="persistent"
+            anchor="left"
+            open={this.state.drawerOpen}
+            classes={{
+              paper: classes.drawerPaper,
+            }}
+            style={{
+              position: "fixed",
+              width: 320,
               flexShrink: 0,
               zIndex: this.state.drawerOpen ? 4 : 0,
             }}
             PaperProps={{ style: { padding: 0 } }}
           >
-            <div style={{ width: isMobile ? "100%" : drawerWidth, padding: 16 }}>
-              {!isMobile && (
+            <div style={{ width: drawerWidth, padding: 16 }}>
               <IconButton aria-label="Table of Contents Toggle" onClick={() => this.toggleDrawer(false)}>
                 <img src={ToCButton} alt="Table of Contents" style={{ width: 24, height: 24 }} />
               </IconButton>
-              )}
 
               <TableOfContents
                 courseName={tocCourseName}
@@ -508,6 +536,7 @@ class Platform extends React.Component {
               />
             </div>
           </Drawer>
+          )
         )}
 
         <div

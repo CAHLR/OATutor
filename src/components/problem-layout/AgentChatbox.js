@@ -21,6 +21,7 @@ import { ReactComponent as ChatBubble } from '../../assets/chat-bubble.svg';
 import { ThemeContext } from '../../config/config.js';
 import { withResponsive } from '../../util/ResponsiveContext';
 import { MOBILE_CHAT_SHEET_HEIGHT } from './MobileBottomSheet';
+import MobileBottomSheet from './MobileBottomSheet';
 import {
     MOBILE_AGENT_AVATAR_HEIGHT,
     MOBILE_AGENT_AVATAR_WIDTH,
@@ -403,6 +404,10 @@ class AgentChatbox extends React.Component {
         this.messagesEndRef = React.createRef();
         this.chatContainerRef = React.createRef();
         this.activeRequestId = 0;
+        // Last problemId whose context was already reflected in an LLM turn.
+        // Used to inject a role:user switch notice when the ITS advances problems
+        // without clearing the chat thread (lesson change still clears).
+        this._lastPromptedProblemId = null;
     }
 
     getFirebase = () => this.context?.firebase;
@@ -588,7 +593,7 @@ class AgentChatbox extends React.Component {
             (!hasChatBeenOpened || isLauncherHovered);
 
         if (isMobile && launcherPlacement === 'floating') {
-            if (hintsOpen) {
+            if (hintsOpen || this.props.drawerOpen || this.props.mathKeyboardOpen) {
                 return null;
             }
 
@@ -692,11 +697,51 @@ class AgentChatbox extends React.Component {
 
     clearConversation = () => {
         this.activeRequestId += 1;
-        agentHelper.initializeSession();
         const fb = this.getFirebase();
+        const oldSid = this.getSessionId();
+        // Attribute clear to the session that was active, then start a fresh one.
+        if (fb?.logChatSession && oldSid) {
+            fb.logChatSession(oldSid, { clearedCount: increment(1), lastActivityAt: Date.now() });
+        }
+        agentHelper.initializeSession();
+        // Problem will not remount, so write create metadata for the new session here.
         const sid = this.getSessionId();
-        if (fb?.logChatSession && sid) {
-            fb.logChatSession(sid, { clearedCount: increment(1), lastActivityAt: Date.now() });
+        const lesson = this.props.lesson;
+        if (fb?.logChatSession && sid && agentHelper.needsSessionMetaWrite()) {
+            const chatDisplayMode = lesson?.chat_display_mode || 'Off';
+            fb.logChatSession(sid, {
+                sessionId: sid,
+                oats_user_id: this.context?.userID || null,
+                lms_user_id: this.context?.user?.user_id || null,
+                course_id: this.context?.user?.course_id || null,
+                course_name: this.context?.user?.course_name || lesson?.courseName || null,
+                course_code: this.context?.user?.course_code || null,
+                semester: fb.addMetaData?.({})?.semester || null,
+                treatment: this.context?.getTreatment?.() ?? null,
+                siteVersion: fb.siteVersion || null,
+                siteCommitHash: process.env.REACT_APP_COMMIT_HASH || null,
+                lessonId: lesson?.id || null,
+                chatDisplayMode,
+                condition: chatDisplayMode === 'Window' ? 'window'
+                    : chatDisplayMode === 'Avatar' ? 'avatar'
+                    : chatDisplayMode === 'Full' ? 'full'
+                    : 'off',
+                chatPrompt: lesson?.chat_prompt || 'PROMPTv2.txt',
+                startedAt: Date.now(),
+                lastActivityAt: Date.now(),
+                greetingShown: false,
+                firstActionType: null,
+                firstActionTimestampMs: null,
+                chatOpenCount: 0,
+                chatCloseCount: 0,
+                hintOpenCount: 0,
+                hintCloseCount: 0,
+                messageCountUser: 0,
+                messageCountAssistant: 0,
+                errorCount: 0,
+                clearedCount: 0,
+            });
+            agentHelper.markSessionMetaWritten();
         }
         this.setState({
             messages: this.buildGreetingMessages(),
@@ -707,6 +752,7 @@ class AgentChatbox extends React.Component {
             isTyping: false,
             currentMessage: '',
         }, this.fetchSuggestedQuestionsIfNeeded);
+        this._lastPromptedProblemId = null;
     };
 
     handleResizeStart = (event) => {
@@ -769,6 +815,38 @@ class AgentChatbox extends React.Component {
         const messageId = Date.now();
         const requestId = this.activeRequestId + 1;
         this.activeRequestId = requestId;
+
+        // Snapshot prior turns before we append this turn's placeholders.
+        // This is a copy for the LLM payload — UI state is updated separately below.
+        const conversationHistory = (this.state.messages || [])
+            .filter((msg) => msg?.role === 'user' || msg?.role === 'assistant')
+            .map((msg) => ({
+                role: msg.role,
+                content: typeof msg.content === 'string' ? msg.content : '',
+            }))
+            .filter((msg) => msg.content.trim().length > 0);
+
+        // Context switch: system prompt already reflects the new ITS problem, but
+        // recency bias favors the old thread. Insert a role:user notice at the end
+        // of history (before the new question) so the model sees the switch.
+        const nextProblemId = this.props.problem?.id || null;
+        const nextProblemTitle = this.props.problem?.title || nextProblemId || 'a new problem';
+        if (
+            this._lastPromptedProblemId &&
+            nextProblemId &&
+            this._lastPromptedProblemId !== nextProblemId
+        ) {
+            conversationHistory.push({
+                role: 'user',
+                content:
+                    `We have switched to a new problem: ${nextProblemTitle}. ` +
+                    `Earlier messages in this chat were about a different problem — ` +
+                    `treat this as a fresh problem context going forward.`,
+            });
+        }
+        if (nextProblemId) {
+            this._lastPromptedProblemId = nextProblemId;
+        }
         
         // Add user message and assistant placeholder in a single setState
         this.setState(prevState => ({
@@ -795,6 +873,10 @@ class AgentChatbox extends React.Component {
 
         // Get context from props
         const problemContext = this.getProblemContext();
+        // Snapshot once at turn start so user + assistant history rows stay aligned
+        // even if the student changes step while the reply streams.
+        const turnProblemId = problemContext?.problemID || null;
+        const turnStepId = problemContext?.currentStep?.id || null;
         const studentState = this.getStudentState();
         const { text, figureUrls } = this.extractConceptExplorationInput(userMessage, problemContext);
         const images = await this.fetchFiguresAsBase64(figureUrls);
@@ -832,6 +914,8 @@ class AgentChatbox extends React.Component {
                                 role: 'user',
                                 content: userMessage,
                                 imagesCount: images.length,
+                                problemId: turnProblemId,
+                                stepId: turnStepId,
                                 timestampMs: Date.now(),
                             });
                         }
@@ -880,6 +964,8 @@ class AgentChatbox extends React.Component {
                                 content: resolvedResponse,
                                 latencyMs: Date.now() - turnStart,
                                 responseCharCount: resolvedResponse.length,
+                                problemId: turnProblemId,
+                                stepId: turnStepId,
                                 timestampMs: Date.now(),
                             });
                         }
@@ -913,7 +999,8 @@ class AgentChatbox extends React.Component {
                             fb.logChatSession(sid, { errorCount: increment(1), lastActivityAt: Date.now() });
                         }
                     }
-                }
+                },
+                conversationHistory
             );
         } catch (error) {
             // Error already handled in callbacks
@@ -1056,7 +1143,8 @@ class AgentChatbox extends React.Component {
         // Get the step student is currently working on
         const activeStepData = getActiveStepData ? getActiveStepData() : null;
         const currentStep = activeStepData ? {
-            id: activeStepData.step.stepId,
+            // Step docs use `id` (e.g. aaac80bvis1a), not `stepId`
+            id: activeStepData.step?.id || null,
             title: activeStepData.step.stepTitle,
             body: activeStepData.step.stepBody,
             correctAnswer: activeStepData.step.correctAnswer,
@@ -1199,7 +1287,10 @@ class AgentChatbox extends React.Component {
         const beforeInputContent = this.props.beforeInputContent || null;
         const embeddedHeight = this.props.embeddedHeight || '100%';
         const header = (
-            <div className={classes.chatHeader}>
+            <div
+                className={classes.chatHeader}
+                {...(useMobileSheet ? { 'data-sheet-drag-handle': true } : {})}
+            >
                 <div className={classes.chatTitle}>
                     <OskiAvatar className={classes.avatarIcon} aria-label="Oski" />
                     <Typography variant="subtitle1">Oski • AI Tutor</Typography>
@@ -1218,6 +1309,118 @@ class AgentChatbox extends React.Component {
                 </div>
             </div>
         );
+
+        if (useMobileSheet) {
+            return (
+                <>
+                    {!isChatVisible && this.renderLauncher()}
+                    <MobileBottomSheet
+                        open={isChatVisible}
+                        onClose={this.toggleChat}
+                        height={MOBILE_CHAT_SHEET_HEIGHT}
+                        showHeader={false}
+                        handleMode="content"
+                    >
+                        <Card
+                            ref={this.chatContainerRef}
+                            className={`${classes.chatContainer} ${classes.chatContainerSheet}`}
+                            style={{
+                                width: '100%',
+                                height: '100%',
+                                maxWidth: 'none',
+                                maxHeight: 'none',
+                                minWidth: 0,
+                                minHeight: 0,
+                                position: 'relative',
+                                borderRadius: 0,
+                                boxShadow: 'none',
+                                display: 'flex',
+                                flexDirection: 'column',
+                            }}
+                        >
+                            {showEmbeddedHeader && header}
+                            {topContent}
+                            {mode === 'floating' && header}
+                            <>
+                                <div className={classes.chatMessages}>
+                                    {messages.map((message) => (
+                                        <div
+                                            key={message.id}
+                                            className={`${classes.message} ${message.role === 'user' ? classes.userMessage : classes.assistantMessage}`}
+                                        >
+                                            {message.role === 'user' ? (
+                                                <Paper
+                                                    className={`${classes.messageBubble} ${classes.userBubble}`}
+                                                    elevation={1}
+                                                >
+                                                    {message.content ? (
+                                                        <Typography variant="body2" style={{ fontSize: 14, lineHeight: 1.4, fontWeight: 400 }}>
+                                                            {message.content}
+                                                        </Typography>
+                                                    ) : (
+                                                        <Typography variant="body2" style={{ fontSize: 14, lineHeight: 1.4, fontWeight: 400 }}>
+                                                            {message.isGenerating ? 'Thinking...' : ''}
+                                                        </Typography>
+                                                    )}
+                                                    {message.isGenerating && (
+                                                        <CircularProgress size={16} style={{ marginLeft: 8 }} />
+                                                    )}
+                                                </Paper>
+                                            ) : (
+                                                <div className={classes.assistantContent}>
+                                                    {message.content ? (
+                                                        <div style={{ fontSize: 15, lineHeight: 1.6, fontWeight: 500, color: '#1f2933' }}>
+                                                            <MessageRenderer content={message.content} />
+                                                        </div>
+                                                    ) : (
+                                                        <Typography variant="body2" style={{ fontSize: 15, lineHeight: 1.6, fontWeight: 500, color: '#1f2933' }}>
+                                                            {message.isGenerating ? 'Thinking...' : ''}
+                                                        </Typography>
+                                                    )}
+                                                    {message.isGenerating && (
+                                                        <CircularProgress size={16} style={{ marginLeft: 8 }} />
+                                                    )}
+                                                </div>
+                                            )}
+                                        </div>
+                                    ))}
+                                    {afterMessagesContent}
+                                    <div ref={this.messagesEndRef} />
+                                </div>
+
+                                <div className={classes.chatInput}>
+                                    {beforeInputContent}
+                                    <div className={classes.inputContainer}>
+                                        <TextField
+                                            className={classes.messageInput}
+                                            variant="outlined"
+                                            size="small"
+                                            placeholder="Ask me anything..."
+                                            value={currentMessage}
+                                            onChange={this.handleInputChange}
+                                            onKeyPress={this.handleKeyPress}
+                                            disabled={isGenerating}
+                                            multiline
+                                            maxRows={3}
+                                        />
+                                        <IconButton
+                                            className={classes.sendButton}
+                                            onClick={this.handleSendMessage}
+                                            disabled={!currentMessage.trim() || isGenerating}
+                                            disableRipple
+                                            disableFocusRipple
+                                        >
+                                            <SendArrowIcon className={classes.sendIcon} aria-label="Send" />
+                                        </IconButton>
+                                    </div>
+                                    {this.renderSuggestedQuestions(questions, loadingSuggestions)}
+                                </div>
+                            </>
+                        </Card>
+                    </MobileBottomSheet>
+                </>
+            );
+        }
 
         if (!isChatVisible) {
             return this.renderLauncher();
@@ -1365,24 +1568,6 @@ class AgentChatbox extends React.Component {
                 </>
             </Card>
         );
-
-        if (useMobileSheet) {
-            return (
-                <>
-                    <div
-                        role="presentation"
-                        onClick={this.toggleChat}
-                        style={{
-                            position: 'fixed',
-                            inset: 0,
-                            backgroundColor: 'rgba(16, 24, 40, 0.35)',
-                            zIndex: 1299,
-                        }}
-                    />
-                    {chatPanel}
-                </>
-            );
-        }
 
         return chatPanel;
     }
