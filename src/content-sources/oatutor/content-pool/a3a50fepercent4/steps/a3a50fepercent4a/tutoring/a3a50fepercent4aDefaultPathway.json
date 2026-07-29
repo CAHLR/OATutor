@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a3a50fepercent4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Translate.",
+        "text": "Let $$n=the$$ number. $$0.065n=1.17$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3a50fepercent4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3a50fepercent4a-h1"
+        ],
+        "title": "Multiply",
+        "text": "$$0.065n=1.17$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3a50fepercent4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$18$$"
+        ],
+        "dependencies": [
+            "a3a50fepercent4a-h2"
+        ],
+        "title": "Divide",
+        "text": "What do you get for $$n$$ when you divide both sides by $$0.065$$ and simplify?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

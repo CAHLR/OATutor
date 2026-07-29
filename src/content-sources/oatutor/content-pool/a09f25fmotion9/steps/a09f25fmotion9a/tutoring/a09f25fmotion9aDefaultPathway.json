@@ -1,0 +1,111 @@
+[
+    {
+        "id": "a09f25fmotion9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand the Problem",
+        "text": "The particle changes direction, indicating a change in velocity. We need to find the acceleration, which is the rate of change of velocity over time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion9a-h1"
+        ],
+        "title": "Identify Initial and Final Velocities",
+        "text": "At $$t=10s$$, the velocity is $$\\frac{5m}{s}$$ (right). At $$t=20s$$, the velocity is $$\\frac{-8m}{s}$$ (left). Remember, direction matters!",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion9a-h2"
+        ],
+        "title": "Calculate Change in Velocity",
+        "text": "The change in velocity is the final velocity minus the initial velocity. Use the formula: $$v_f-v_i$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion9a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-13$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion9a-h3"
+        ],
+        "title": "Compute Change in Velocity",
+        "text": "Calculate the change in velocity using $$v_f=\\frac{-8m}{s}$$ and $$v_i=\\frac{5m}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion9a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion9a-h4"
+        ],
+        "title": "Determine Time Interval",
+        "text": "The time interval is the difference between the final and initial times: $$t_f-t_i$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion9a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion9a-h5"
+        ],
+        "title": "Calculate Time Interval",
+        "text": "Calculate the time interval using $$t_f=20s$$ and $$t_i=10s$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion9a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion9a-h6"
+        ],
+        "title": "Use the Acceleration Formula",
+        "text": "Acceleration is the change in velocity divided by the time interval: $$a=\\frac{v_f-v_i}{t_f-t_i}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion9a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1.3$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion9a-h7"
+        ],
+        "title": "Calculate Acceleration",
+        "text": "Use the formula $$a=\\frac{v_f-v_i}{t_f-t_i}$$ with $$v_f=\\frac{-8m}{s}$$, $$v_i=\\frac{5m}{s}$$, and $$t_f-t_i=10s$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

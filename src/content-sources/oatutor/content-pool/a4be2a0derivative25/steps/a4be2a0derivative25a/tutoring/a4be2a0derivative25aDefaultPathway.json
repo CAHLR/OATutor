@@ -1,0 +1,96 @@
+[
+    {
+        "id": "a4be2a0derivative25a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of Derivative",
+        "text": "lim h\u21920 $$\\frac{f{\\left(x+h\\right)}-f{\\left(x\\right)}}{h}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4be2a0derivative25a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4be2a0derivative25a-h1"
+        ],
+        "title": "Substitute",
+        "text": "lim h\u21920 $$\\frac{f{\\left(x+h\\right)}-f{\\left(x\\right)}}{h}$$ $$=$$ lim h\u21920 $$\\frac{{2\\left(x+h\\right)}^2+\\operatorname{10}\\left(x+h\\right)-2x^2+10x}{h}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4be2a0derivative25a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4be2a0derivative25a-h2"
+        ],
+        "title": "Distribute",
+        "text": "lim h\u21920 $$\\frac{{2\\left(x+h\\right)}^2+\\operatorname{10}\\left(x+h\\right)-2x^2+10x}{h}$$ $$=$$ lim h\u21920 $$\\frac{2x^2+4xh+h^2+10x+10h-2x^2-10x}{h}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4be2a0derivative25a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4be2a0derivative25a-h3"
+        ],
+        "title": "Simplify",
+        "text": "lim h\u21920 $$\\frac{2x^2+4xh+h^2+10x+10h-2x^2-10x}{h}$$ $$=$$ lim h\u21920 $$4x+h+10$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4be2a0derivative25a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a4be2a0derivative25a-h4"
+        ],
+        "title": "Apply Limit",
+        "text": "lim h\u21920 $$4x+h+10$$ $$=$$ $$4x+0+10$$ $$=$$ $$4x+10$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4be2a0derivative25a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a4be2a0derivative25a-h5"
+        ],
+        "title": "Substitute",
+        "text": "$$R'(15)=4\\times15+10=70$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4be2a0derivative25a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a4be2a0derivative25a-h6"
+        ],
+        "title": "Interpret",
+        "text": "By selling $$15$$ items, the revenue increases by $$70$$ revenue per item.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4be2a0derivative25a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a4be2a0derivative25a-h7"
+        ],
+        "title": "Comparison",
+        "text": "$$R'(10)=4\\times10+10=50$$: By selling $$10$$ items, the revenue increases by $$50$$ revenue per item, while when you sell $$15$$ items, the revenue increases by $$70$$ revenue per item.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

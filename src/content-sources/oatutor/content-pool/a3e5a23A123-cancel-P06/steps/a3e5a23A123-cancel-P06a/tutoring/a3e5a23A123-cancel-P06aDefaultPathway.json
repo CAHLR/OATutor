@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a3e5a23A123-cancel-P06a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Cancel the common nonzero factor",
+        "text": "Cancel a factor of $$3$$ from both sides: \\n $$3\\frac{1}{3} x^3=\\frac{1}{3} \\left(-3\\right) x$$ \\n $$x^3=-x$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3e5a23A123-cancel-P06a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3e5a23A123-cancel-P06a-h1"
+        ],
+        "title": "Do not lose solutions",
+        "text": "We cannot cancel an $$x$$ because we cannot guarantee that it is nonzero. In fact, we can see that zero is a solution. \\n $$0^3=-0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3e5a23A123-cancel-P06a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3e5a23A123-cancel-P06a-h2"
+        ],
+        "title": "Move all terms to the LHS",
+        "text": "Rewrite as $$x^3+x=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3e5a23A123-cancel-P06a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3e5a23A123-cancel-P06a-h3"
+        ],
+        "title": "Factor the LHS",
+        "text": "$$x^3+x=x\\left(x^2+1\\right)=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3e5a23A123-cancel-P06a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3e5a23A123-cancel-P06a-h4"
+        ],
+        "title": "Zero product property",
+        "text": "$$x\\left(x^2+1\\right)=0$$ if and only if $$x=0$$ or $$x^2+1=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3e5a23A123-cancel-P06a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a3e5a23A123-cancel-P06a-h5"
+        ],
+        "title": "Solve for the unknown",
+        "text": "Since $$x^2+1>1$$ for all real numbers, the only solution is $$x=0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

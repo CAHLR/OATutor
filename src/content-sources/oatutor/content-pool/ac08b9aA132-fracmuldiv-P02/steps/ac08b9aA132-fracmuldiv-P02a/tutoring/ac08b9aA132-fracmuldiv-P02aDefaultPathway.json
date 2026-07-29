@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ac08b9aA132-fracmuldiv-P02a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor difference of squares",
+        "text": "Factor $$x^2-1=\\left(x-1\\right) \\left(x+1\\right)$$ by recognizing a difference of squares.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac08b9aA132-fracmuldiv-P02a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac08b9aA132-fracmuldiv-P02a-h1"
+        ],
+        "title": "Cancel common factors",
+        "text": "Notice the common factors of $$x$$ and $$x+1$$, which we can factor because we are given that these quantities are nonzero.\\n\\n$$\\frac{x^2-1}{x} \\frac{x}{x+1}=\\frac{\\left(x-1\\right) \\left(x+1\\right)}{x} \\frac{x}{x+1}=\\frac{x-1}{1}=x-1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a56bd16newtonapps8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the time it takes for the roller coaster car to reach the bottom, we need to consider the forces acting on it and use the equations of motion.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps8b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps8b-h1"
+        ],
+        "title": "Identify the Forces",
+        "text": "Since friction is ignored, the only force acting on the car along the incline is the component of gravitational force. This force can be calculated using the formula: $$F=m g sin\\left(\\theta\\right)$$, where $$m$$ is the mass, g is the acceleration due to gravity, and theta is the angle of the incline.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps8b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps8b-h2"
+        ],
+        "title": "Calculate the Acceleration",
+        "text": "The acceleration of the car can be found using the formula: $$a=g sin\\left(\\theta\\right)$$. This is because the net force is $$m g sin\\left(\\theta\\right)$$ and $$F=ma$$, so $$a=g sin\\left(\\theta\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps8b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps8b-h3"
+        ],
+        "title": "Use the Equation of Motion",
+        "text": "To find the time, use the equation of motion: $$s=ut+0.5a t^2$$, where s is the distance, u is the initial velocity, a is the acceleration, and $$t$$ is the time. Since the car starts from rest, $$u=0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps8b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4.23$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps8b-h4"
+        ],
+        "title": "Solve for Time",
+        "text": "Rearrange the equation $$s=0.5a t^2$$ to solve for t: $$t=\\sqrt{\\frac{2s}{a}}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

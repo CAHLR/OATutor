@@ -1,0 +1,65 @@
+[
+    {
+        "id": "ac549dbA252-solveexpeqns-P02a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply the law of exponents for powers",
+        "text": "$$(a**b)**c=a**{bc}$$ \\n Observe that $$\\left(x**3\\right)**{\\log_x(2)}=x**{3\\log_x(2)}=\\left(x**{\\log_x(2)}\\right)**3$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac549dbA252-solveexpeqns-P02a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "ac549dbA252-solveexpeqns-P02a-h1"
+        ],
+        "title": "Simplify using cancellation",
+        "text": "Given that $$b**{\\log_b(a)}=a,$$ what is $$\\left(x**{\\log_x(2)}\\right)**3$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac549dbA252-solveexpeqns-P02a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac549dbA252-solveexpeqns-P02a-h2"
+        ],
+        "title": "Plug into original equation",
+        "text": "The original equation has been reduced to $$8(2**{\\log_2(x)})=32$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac549dbA252-solveexpeqns-P02a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ac549dbA252-solveexpeqns-P02a-h3"
+        ],
+        "title": "Divide both sides by $$8$$.",
+        "text": "$$\\dfrac{8(2**{\\log_2(x)})}{8}=\\frac{32}{8}$$ \\n $$2**{\\log_2(x)}=4$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac549dbA252-solveexpeqns-P02a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ac549dbA252-solveexpeqns-P02a-h4"
+        ],
+        "title": "Apply cancellation again",
+        "text": "Exponentiation undoes logarithms: $$b**{\\log_b(a)}=a.$$ \\n $$2**{\\log_2(x)}=x=4$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

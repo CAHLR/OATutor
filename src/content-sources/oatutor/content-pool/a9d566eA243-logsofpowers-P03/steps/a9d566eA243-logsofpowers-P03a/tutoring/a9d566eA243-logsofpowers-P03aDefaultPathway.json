@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a9d566eA243-logsofpowers-P03a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understand the true statement",
+        "text": "$$\\log_2(3**4)=4\\log_2(3)$$ is the law of logarithms for powers",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9d566eA243-logsofpowers-P03a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9d566eA243-logsofpowers-P03a-h1"
+        ],
+        "title": "Understand the true statement",
+        "text": "$$\\log_b(\\sqrt{x})=\\log_b(x**{1/2})=\\frac{1}{2}\\log_b(x)$$ is an example of the law of logarithms for powers where the power is $$\\frac{1}{2}$$. This makes sense as long as the input $$x>0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9d566eA243-logsofpowers-P03a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9d566eA243-logsofpowers-P03a-h2"
+        ],
+        "title": "Understand the true statement",
+        "text": "$$\\log_b(1)=\\log_b(b**0)=0$$ for any valid base. A base is valid if $$b>0$$ and $$b\\neq$$ $$1.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9d566eA243-logsofpowers-P03a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9d566eA243-logsofpowers-P03a-h3"
+        ],
+        "title": "A common error",
+        "text": "A common error is to assume the law of logarithms applies to an expression of the form $$(\\log_2(3))**4.$$ It does not! The power must be inside the parentheses! This has no simplified form.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "id": "af1f9dfbin22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Binomial Theorem",
+        "text": "Recollect the definition of the binomial theorem which gives us sum{k\\=0}{n}{nCk*x**{n-k}*y**k} for the binomial expansion $$\\left(x+y\\right)^n$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af1f9dfbin22a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af1f9dfbin22a-h1"
+        ],
+        "title": "Relevant term",
+        "text": "How can we use the summation formula for the binomial expansion to find the term required in the given expansion. Observe that the powers of $$x$$ decrease from $$n$$ to and the powers of $$y$$ increase from $$0$$ to $$n$$ as we go from the first to last term of the binomial expansion. Using this observation, what is the number of the term are we looking for?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af1f9dfbin22a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af1f9dfbin22a-h2"
+        ],
+        "title": "nCr",
+        "text": "Recollect the definition of choosing a combination of $$r$$ objects out of $$n$$ objects. This is denoted nCr $$=$$ n!/((n-r)!*r!)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af1f9dfbin22a-h4",
+        "type": "hint",
+        "dependencies": [
+            "af1f9dfbin22a-h3"
+        ],
+        "title": "Factorial",
+        "text": "Recollect the definition of a factorial, $$n!$$ $$=$$ $$n \\left(n-1\\right) ...1$$, so we have $$n!$$ $$=$$ n*(n-1)!",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af1f9dfbin22a-h5",
+        "type": "hint",
+        "dependencies": [
+            "af1f9dfbin22a-h2",
+            "af1f9dfbin22a-h3",
+            "af1f9dfbin22a-h4"
+        ],
+        "title": "Final answer",
+        "text": "Using the formula for a combination and the properties of factorial what is the final answer?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

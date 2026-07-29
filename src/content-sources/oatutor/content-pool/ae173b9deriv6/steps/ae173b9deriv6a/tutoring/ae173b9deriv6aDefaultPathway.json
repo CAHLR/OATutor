@@ -1,0 +1,41 @@
+[
+    {
+        "id": "ae173b9deriv6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "v(t) Equation",
+        "text": "v(t) $$=$$ s'(t), where s'(t) is the derivative of s(t). Solve for s'(t).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ae173b9deriv6a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3t^2$$ - $$18t$$ + $$24$$"
+        ],
+        "dependencies": [
+            "ae173b9deriv6a-h1"
+        ],
+        "title": "Solving for s'(t)",
+        "text": "What is s'(t), the velocity of the particle?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ae173b9deriv6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae173b9deriv6a-h2"
+        ],
+        "title": "Taking the Derivative of s(t)",
+        "text": "To determine v(t), we must take the derivative of s(t) $$=$$ $$t^3$$ - $$9t^2$$ + $$24t$$ + $$4$$, $$t$$ $$ \\geq $$ $$0$$.\\ns(t) $$=$$ $$t^3$$ - $$9t^2$$ + $$24t$$ + $$4$$\\ns'(t) $$=$$ $$3t^{3-1}$$ - $$2\\left(9\\right) t^{2-1}$$ + $$24$$\\ns'(t) $$=$$ $$3t^2$$ - $$18t$$ + $$24$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

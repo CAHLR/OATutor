@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a8274f3A231-lawsexpproduct-P07b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Adding fraction",
+        "text": "To add $$\\frac{1}{4}+\\frac{1}{1}$$ you must have a common denominator",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8274f3A231-lawsexpproduct-P07b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a8274f3A231-lawsexpproduct-P07b-h1"
+        ],
+        "title": "Find the common denominator",
+        "text": "What is the common denominator between $$\\frac{1}{4}$$ and $$\\frac{1}{1}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a8274f3A231-lawsexpproduct-P07b-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Rewrite with common denominator",
+                "text": "$$\\dfrac14+\\dfrac11=\\dfrac14+\\dfrac44=\\dfrac{1+4}{4}$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a8274f3A231-lawsexpproduct-P07b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8274f3A231-lawsexpproduct-P07b-h2"
+        ],
+        "title": "Order of operations",
+        "text": "Add numerators when all fractions have the same \"units\", i.e. denominator. $$\\dfrac{1+4}{4}=\\dfrac{5}{4}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

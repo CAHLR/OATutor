@@ -1,0 +1,78 @@
+[
+    {
+        "id": "ad54ce5A212-explogdomain-P06a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [],
+        "title": "Inverse question",
+        "text": "Is there a number $$n$$ so that $$\\left(\\frac{1}{2}\\right)^n=-4$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ad54ce5A212-explogdomain-P06a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad54ce5A212-explogdomain-P06a-h1"
+        ],
+        "title": "Powers of positive bases are positive",
+        "text": "For any real number a, the number $$\\left(\\frac{1}{2}\\right)^a>0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad54ce5A212-explogdomain-P06a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad54ce5A212-explogdomain-P06a-h2"
+        ],
+        "title": "The power of any positive number is positive.",
+        "text": "The logarithm is only defined for positive values.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad54ce5A212-explogdomain-P06a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "ad54ce5A212-explogdomain-P06a-h3"
+        ],
+        "title": "Test it",
+        "text": "Is $$\\log_{1/2}\\left(-4\\right)$$ a real number? (Try it on a calculator! But note that an experiment is not a proof.)",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ad54ce5A212-explogdomain-P06a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ad54ce5A212-explogdomain-P06a-h4"
+        ],
+        "title": "Conclusion",
+        "text": "The logarithm is only defined on positive numbers. The base $$\\frac{1}{2}$$ is fine, but $$\\log_{1/2}\\left(-4\\right)$$ is not a real number because $$-4$$ is negative.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a7b98f9composition19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Addition",
+        "text": "Remember that $$f+g$$ is the same as $$\\left(f+g\\right) x$$. All we have to do is add the two functions.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7b98f9composition19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7b98f9composition19a-h1"
+        ],
+        "title": "Addition",
+        "text": "First, because these functions are fractions, we need to find a common denominator. Our common denominator is the product of the two existing denominators: $$(x-4)(6-x)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7b98f9composition19a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7b98f9composition19a-h2"
+        ],
+        "title": "Addition",
+        "text": "Now we need to multiply the fractions by a factor of $$1$$ to get them to have the common denominator. (1/(x-4))*((6-x)(6-x))=(6-x)/((x-4)(6-x), and (1/(6-x))*((x-4)(x-4))=(x-4)/((x-4)(6-x). Now, we need to add these new fractions together.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7b98f9composition19a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7b98f9composition19a-h3"
+        ],
+        "title": "Addition",
+        "text": "Our last step is to add the numerators. By adding the $$x$$ terms and the constants, $$\\frac{x-4+6-x}{\\left(x-4\\right) \\left(6-x\\right)}$$ becomes our final solution: $$\\frac{2}{\\left(x-4\\right) \\left(6-x\\right)}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a949afaangmom3b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find out how far the marble travels in $$3.0$$ seconds, we need to consider the motion of the marble as it rolls down the incline. Since it starts from rest, we can use the equations of motion to determine the distance traveled.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom3b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom3b-h1"
+        ],
+        "title": "Equation of Motion",
+        "text": "The equation of motion for an object starting from rest is: \\(d=\\frac{1}{2}at**2\\), where \\(d\\) is the distance, \\(a\\) is the acceleration, and \\(t\\) is the time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom3b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom3b-h2"
+        ],
+        "title": "Finding the Acceleration",
+        "text": "The acceleration \\(a\\) of the marble can be found using the formula for acceleration down an incline: \\(a=g\\sin(\\theta)\\), where $$\\(g=9.8\\)$$ m/s\u00b2 and \\(\\theta=30\\) degrees.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom3b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4.9$$"
+        ],
+        "dependencies": [
+            "a949afaangmom3b-h3"
+        ],
+        "title": "Calculate the Acceleration",
+        "text": "Calculate the acceleration of the marble using \\(a=g\\sin(\\theta)\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom3b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$15.75$$"
+        ],
+        "dependencies": [
+            "a949afaangmom3b-h4"
+        ],
+        "title": "Calculate the Distance",
+        "text": "Now that you have the acceleration, use the equation \\(d=\\frac{1}{2}at**2\\) to find the distance traveled in $$3.0$$ seconds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

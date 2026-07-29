@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a6c1cc5T311-invtrigdef-P05a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding $$\\tan(x)$$",
+        "text": "Consider the ratio $$\\tan(x)=\\frac{\\sin(x)}{\\cos(x)}.$$ What happens to this fraction when the denominator is zero?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6c1cc5T311-invtrigdef-P05a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6c1cc5T311-invtrigdef-P05a-h1"
+        ],
+        "title": "Graph the function",
+        "text": "Look at the behavior of the graph as $$x$$ approaches $$\\frac{\\pi}{2}$$. The graph does not approach any specific value, rather it has a vertical asymptote.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6c1cc5T311-invtrigdef-P05a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6c1cc5T311-invtrigdef-P05a-h2"
+        ],
+        "title": "Check the endpoints and the behavior in between",
+        "text": "A domain can only include points where the function actually produces a real number output. Since $$\\cos\\left(\\pm\\frac{\\pi}{2}\\right)=0, $$ the tangent is undefined there, so those points cannot be part of the domain.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

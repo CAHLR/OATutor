@@ -1,0 +1,41 @@
+[
+    {
+        "id": "acad659A221-radicalnotation-P04a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Write as a radical",
+        "text": "$${64}^{\\frac{1}{6}}=\\sqrt[6]{64}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acad659A221-radicalnotation-P04a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "acad659A221-radicalnotation-P04a-h1"
+        ],
+        "title": "Write $$64$$ as a 6th power",
+        "text": "$$64=b^6$$. What is $$b$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acad659A221-radicalnotation-P04a-h3",
+        "type": "hint",
+        "dependencies": [
+            "acad659A221-radicalnotation-P04a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "$$64=2^6$$ implies that $${64}^{\\frac{1}{6}}=2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

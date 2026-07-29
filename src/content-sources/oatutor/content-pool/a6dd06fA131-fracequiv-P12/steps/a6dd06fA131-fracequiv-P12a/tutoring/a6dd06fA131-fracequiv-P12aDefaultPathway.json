@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a6dd06fA131-fracequiv-P12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Equivalent fractions",
+        "text": "Fractional equivalence tells us that $$\\frac{a}{b}=\\frac{c}{d}$$ if and only if $$b$$ and $$d$$ are nonzero and $$ad=bc$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dd06fA131-fracequiv-P12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6dd06fA131-fracequiv-P12a-h1"
+        ],
+        "title": "Equivalent fractions",
+        "text": "Here we get \\n $$\\frac{x-1}{2}=\\frac{2}{x+2}$$ \\n if and only if $$\\left(x-1\\right) \\left(x+2\\right)=4$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dd06fA131-fracequiv-P12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6dd06fA131-fracequiv-P12a-h2"
+        ],
+        "title": "Expand LHS",
+        "text": "$$x^2+x-2=4$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dd06fA131-fracequiv-P12a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6dd06fA131-fracequiv-P12a-h3"
+        ],
+        "title": "Move all terms to LHS",
+        "text": "$$x^2+x-2-4=4-4=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dd06fA131-fracequiv-P12a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a6dd06fA131-fracequiv-P12a-h4"
+        ],
+        "title": "Zero product property",
+        "text": "$$\\left(x+3\\right) \\left(x-2\\right)=0$$ if and only if $$x+3=0$$ or $$x-2=0$$. This means $$x=-3$$ or $$x=2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dd06fA131-fracequiv-P12a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a6dd06fA131-fracequiv-P12a-h5"
+        ],
+        "title": "Check against allowable values",
+        "text": "Notice that the value that is not allowed for this equation is $$x=-2$$, so both solutions $$x=2$$ and $$x=-3$$ are valid.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

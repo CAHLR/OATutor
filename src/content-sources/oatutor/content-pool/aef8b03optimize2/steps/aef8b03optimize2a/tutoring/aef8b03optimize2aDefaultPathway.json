@@ -1,0 +1,60 @@
+[
+    {
+        "id": "aef8b03optimize2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Let $$x$$ Be the Side Length",
+        "text": "The first step is to let $$x$$ be the side length of the square to be removed from each corner. Then, the remaining four flaps can be folded up to form an open-top box. Let V be the volume of the resulting box.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aef8b03optimize2a-h1"
+        ],
+        "title": "Find the Equation for Volume",
+        "text": "The next step is to find the equation for the volume of the box.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aef8b03optimize2a-h2"
+        ],
+        "title": "Representing volume",
+        "text": "The new length becomes $$24-2x$$, width becomes $$36-2x$$, and height is $$x$$. Multiplying these three will give the expression for volume.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aef8b03optimize2a-h3"
+        ],
+        "title": "Determine the Domain",
+        "text": "Next, determine the domain of consideration.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aef8b03optimize2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aef8b03optimize2a-h4"
+        ],
+        "title": "Find the $$x$$ Value",
+        "text": "Lastly, find the $$x$$ value for the maximum by setting the $$dV=0$$ and testing the endpoints.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

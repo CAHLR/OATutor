@@ -1,0 +1,39 @@
+[
+    {
+        "id": "ac47cfflimits22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Break the Expression Apart",
+        "text": "Evaluate the numerator and denominator separately using the power, constant multiple, and difference laws.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac47cfflimits22a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac47cfflimits22a-h1"
+        ],
+        "title": "Keep the Order Clear",
+        "text": "Compute $$[f(x)]**2$$ first, then subtract $$3g(x)$$, $$and$$ $$finally$$ $$divide$$ $$by$$ $$the$$ $$limit$$ $$of$$ $$h(x)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac47cfflimits22a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-11$$"
+        ],
+        "dependencies": [],
+        "title": "Evaluate the Numerator",
+        "text": "What number does $$[f(x)]**2-3g(x)$$ approach?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

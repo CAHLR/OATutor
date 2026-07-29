@@ -1,0 +1,36 @@
+[
+    {
+        "id": "aaf274fA113-algconseq-P05a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply FOIL distribution to the product",
+        "text": "$$\\left(3x-1\\right) \\left(4y+2\\right)$$ expands the first term is 12xy, the outer term is $$6x$$, the inner term is $$-4y$$, and the last term is $$-2$$. Note that this is equivalent to $$12xy+6x-4y-2$$ which appears in the options.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaf274fA113-algconseq-P05a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aaf274fA113-algconseq-P05a-h1"
+        ],
+        "title": "Factor out a common multiple",
+        "text": "Observe that we can factor out the term $$(3x-1)$$ from the expression $$4y\\left(3x-1\\right)+2\\left(3x-1\\right)$$ to give $$\\left(3x-1\\right) \\left(4y+2\\right)$$ which also appears as one of the terms.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaf274fA113-algconseq-P05a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aaf274fA113-algconseq-P05a-h2"
+        ],
+        "title": "Expand out with distribution",
+        "text": "Expand out $$6x\\left(y-1\\right)-4y+2$$ to get $$6xy-6x-4y+2$$, which is not equivalent to the expression $$12xy+6x-4y-2$$ that appears as a choice. This must be the incorrect expression!",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

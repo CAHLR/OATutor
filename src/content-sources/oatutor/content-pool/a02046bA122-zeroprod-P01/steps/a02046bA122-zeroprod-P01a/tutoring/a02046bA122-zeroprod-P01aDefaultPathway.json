@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a02046bA122-zeroprod-P01a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor the LHS",
+        "text": "Factor $$x^2+4x+3$$ by finding two numbers whose product is $$3$$ and whose sum is $$4$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a02046bA122-zeroprod-P01a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a02046bA122-zeroprod-P01a-h1"
+        ],
+        "title": "Factor the LHS",
+        "text": "Those numbers are $$3$$ and $$1$$. \\n $$x^2+4x+3=\\left(x+3\\right) \\left(x+1\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a02046bA122-zeroprod-P01a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a02046bA122-zeroprod-P01a-h2"
+        ],
+        "title": "Zero product property",
+        "text": "$$\\left(x+3\\right) \\left(x+1\\right)=0$$ if $$x+3=0$$ or $$x+1=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a02046bA122-zeroprod-P01a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a02046bA122-zeroprod-P01a-h3"
+        ],
+        "title": "Conclusion",
+        "text": "$$x+3=0$$ if and only if $$x=-3;$$ $$x+1=0$$ if and only if $$x=-1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a88c93efixedaxis6d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Tangential Acceleration",
+        "text": "Tangential acceleration is the linear acceleration of a point on the rim of a rotating object. It is directly related to the angular acceleration and the radius of the wheel.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis6d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis6d-h1"
+        ],
+        "title": "Formula for Tangential Acceleration",
+        "text": "The formula to calculate tangential acceleration $$a_t$$ is: $$a_t=\\alpha r$$, where alpha is the angular acceleration and $$r$$ is the radius of the wheel.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis6d-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis6d-h2"
+        ],
+        "title": "Calculate Tangential Acceleration",
+        "text": "Given that the angular acceleration (alpha) is $$4.0$$ $$\\frac{rad}{s^2}$$ and the radius (r) is $$1.0$$ $$m$$, calculate the tangential acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

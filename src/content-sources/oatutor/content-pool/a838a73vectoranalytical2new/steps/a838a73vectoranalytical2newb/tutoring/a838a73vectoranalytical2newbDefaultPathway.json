@@ -1,0 +1,35 @@
+[
+    {
+        "id": "a838a73vectoranalytical2newb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Triangle Angle",
+        "text": "We have a west component (30m) and a south component (40m). The resultant points into the southwest quadrant.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a838a73vectoranalytical2newb-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$216.9$$"
+        ],
+        "dependencies": [
+            "a838a73vectoranalytical2newb-h1"
+        ],
+        "title": "Apply Arctan Function",
+        "text": "The vector ends $$30m$$ west and $$40m$$ south of start. The compass bearing from north (clockwise) is $$180+\\arctan\\left(\\frac{30}{40}\\right)$$. What is this value?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$216.9$$",
+            "$$36.9$$",
+            "$$143.1$$",
+            "$$306.9$$"
+        ]
+    }
+]

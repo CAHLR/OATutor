@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a82e37dA232-lawsexpquotient-P03a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\left(\\frac{8}{2}\\right)**2$$"
+        ],
+        "dependencies": [],
+        "title": "Apply the law of exponents",
+        "text": "Which expression is equivalent to $$\\frac{8**2}{2**2}$$ ?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\left(\\frac{8}{2}\\right)**2$$",
+            "$$\\left(8-2\\right)^2$$",
+            "$$8^2-2^2$$",
+            "$$8^0$$"
+        ]
+    },
+    {
+        "id": "a82e37dA232-lawsexpquotient-P03a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a82e37dA232-lawsexpquotient-P03a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "Evaluate the expression inside the parentheses first. What is $$\\frac{8}{2}$$ ?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a82e37dA232-lawsexpquotient-P03a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a82e37dA232-lawsexpquotient-P03a-h2"
+        ],
+        "title": "Now apply the power",
+        "text": "Evaluate $$4^2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a82e37dA232-lawsexpquotient-P03a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a82e37dA232-lawsexpquotient-P03a-h3"
+        ],
+        "title": "Worked solution",
+        "text": "$$\\frac{8**2}{2**2}=\\left(\\frac{8}{2}\\right)**2=4**2=16$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

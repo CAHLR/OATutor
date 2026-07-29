@@ -1,0 +1,82 @@
+[
+    {
+        "id": "ace918bnlaws16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The spider is hanging motionless, which means it is in equilibrium. The forces acting on it are balanced.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws16a-h1"
+        ],
+        "title": "Identify the Forces",
+        "text": "The only forces acting on the spider are its weight and the tension in the web strand.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws16a-h2"
+        ],
+        "title": "Calculate the Weight",
+        "text": "The weight of the spider can be calculated using the formula: weight $$=$$ mass * gravitational acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws16a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.96\\times{10}^{-4}$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws16a-h3"
+        ],
+        "title": "Calculate the Weight of the Spider",
+        "text": "Use the formula weight $$=$$ mass * gravitational acceleration, where mass $$=$$ $$2\\times{10}^{-5}$$ kg and gravitational acceleration $$=$$ $$9.8$$ $$\\frac{m}{s^2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws16a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws16a-h4"
+        ],
+        "title": "Equilibrium Condition",
+        "text": "Since the spider is in equilibrium, the tension in the strand is equal to the weight of the spider.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws16a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.96$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws16a-h5"
+        ],
+        "title": "Determine the Tension",
+        "text": "The tension in the strand is equal to the weight of the spider, which is $$1.96\\times{10}^{-4}$$ N.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

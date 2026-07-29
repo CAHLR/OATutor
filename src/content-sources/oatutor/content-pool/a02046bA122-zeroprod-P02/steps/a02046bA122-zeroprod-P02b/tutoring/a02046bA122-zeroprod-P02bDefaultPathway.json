@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a02046bA122-zeroprod-P02b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Expand RHS",
+        "text": "$$x^2=2\\left(x+4\\right)$$ \\n $$x^2=2x+8$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a02046bA122-zeroprod-P02b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a02046bA122-zeroprod-P02b-h1"
+        ],
+        "title": "Move all terms to LHS",
+        "text": "$$x^2=2x+8$$ \\n $$x^2-2x-8=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a02046bA122-zeroprod-P02b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a02046bA122-zeroprod-P02b-h2"
+        ],
+        "title": "Factor the LHS",
+        "text": "$$x^2-2x-8=\\left(x-4\\right) \\left(x+2\\right)=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a02046bA122-zeroprod-P02b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a02046bA122-zeroprod-P02b-h3"
+        ],
+        "title": "Zero product property",
+        "text": "$$\\left(x-4\\right) \\left(x+2\\right)=0$$ if $$x-4=0$$ or $$x+2=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a02046bA122-zeroprod-P02b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a02046bA122-zeroprod-P02b-h4"
+        ],
+        "title": "Conclusion",
+        "text": "$$x-4=0$$ if and only if $$x=4;$$ $$x+2=0$$ if and only if $$x=-2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,140 @@
+[
+    {
+        "id": "a3abd22AddRational10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determine if the Expression Have a Common Denominator",
+        "text": "The expression does not have a common denominator, so we need to find the common denominator.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3abd22AddRational10a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(x-3\\right) \\left(x-2\\right)$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational10a-h1"
+        ],
+        "title": "Find the Common Denominator",
+        "text": "Since both $$(x-3)$$ and $$(x-2)$$ are linear factors and they are not multiple of each other. What is the least common denominator for $$\\frac{3}{x-3}+\\frac{2}{x-2}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3abd22AddRational10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational10a-h2"
+        ],
+        "title": "Rewrite the Expression",
+        "text": "Rewrite each rational expression as an equivalent rational expression with the LCD.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3abd22AddRational10a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3\\left(x-2\\right)}{\\left(x-3\\right) \\left(x-2\\right)}$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational10a-h3"
+        ],
+        "title": "Rewrite the Expression",
+        "text": "What is the equivalent rational expression with the LCD $$\\left(x-2\\right) \\left(x-3\\right)$$ for $$\\frac{3}{x-3}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3abd22AddRational10a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational10a-h4"
+        ],
+        "title": "Rewrite the Expression",
+        "text": "Since $$\\frac{x-2}{x-2}=1$$ and $$1\\frac{3}{x-3}=\\frac{3}{x-3}$$ We can rewrite $$\\frac{3}{x-3}$$ as $$\\frac{3\\left(x-2\\right)}{\\left(x-3\\right) \\left(x-2\\right)}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3abd22AddRational10a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2\\left(x-3\\right)}{\\left(x-2\\right) \\left(x-3\\right)}$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational10a-h5"
+        ],
+        "title": "Rewrite the Expression",
+        "text": "What is the equivalent rational expression with the LCD $$\\left(x-2\\right) \\left(x-3\\right)$$ for $$\\frac{2}{x-2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3abd22AddRational10a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational10a-h6"
+        ],
+        "title": "Add the Numerators for Expression",
+        "text": "Add the numerators and place the sum over the common denominator.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3abd22AddRational10a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5x-12$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational10a-h7"
+        ],
+        "title": "Add the Numerators for Expression",
+        "text": "What is the sum of numerators for $$\\frac{3\\left(x-2\\right)}{\\left(x-3\\right) \\left(x-2\\right)}+\\frac{2\\left(x-3\\right)}{\\left(x-2\\right) \\left(x-3\\right)}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3abd22AddRational10a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational10a-h8"
+        ],
+        "title": "Simplify the Expression",
+        "text": "According to the above steps, we can rewrite $$\\frac{3}{x-3}+\\frac{2}{x-2}$$ as $$\\frac{5x-12}{\\left(x-3\\right) \\left(x-2\\right)}$$, are there any ways to simplify the new expression?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3abd22AddRational10a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational10a-h9"
+        ],
+        "title": "Simplify the Expression",
+        "text": "The answer of $$\\frac{5x-12}{\\left(x-3\\right) \\left(x-2\\right)}$$ is simplified because $$5x-12$$ cannot be factored.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

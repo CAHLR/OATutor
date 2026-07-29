@@ -1,0 +1,59 @@
+[
+    {
+        "id": "ae379baFassumption2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Test of Two Variances",
+        "text": "Another of the uses of the F distribution is testing two variances. It is often desirable to compare two variances rather than two averages. For instance, college administrators would like two college professors grading exams to have the same variation in their grading. In order for a lid to fit a container, the variation in the lid and the container should be the same. A supermarket might be interested in the variability of check-out times for two checkers.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae379baFassumption2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae379baFassumption2a-h1"
+        ],
+        "title": "Test of Two Variances",
+        "text": "When performing a test of two variances (or frankly most tests), we don't want our results to be affected by any other confounding variables.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae379baFassumption2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The two populations are independent of each other."
+        ],
+        "dependencies": [
+            "ae379baFassumption2a-h2"
+        ],
+        "title": "Test of Two Variances",
+        "text": "Since we don't want to get our results messed up by external factors or data relation to each other, what would be a good assumption to ensure an efficient test of two variances?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "The two populations are independent of each other.",
+            "At least one of the populations from which the two samples are drawn have an $$n$$ population greater than or equal to $$29$$.",
+            "One of the group statistics aren't equal to each other.",
+            "The two populations are independent of each other."
+        ]
+    },
+    {
+        "id": "ae379baFassumption2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae379baFassumption2a-h2"
+        ],
+        "title": "Test of Two Variances",
+        "text": "Given the options listed, the best way to reduce confounding factors is to ensure that the two populations are independent of each other so that misleading correlations are avoided.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

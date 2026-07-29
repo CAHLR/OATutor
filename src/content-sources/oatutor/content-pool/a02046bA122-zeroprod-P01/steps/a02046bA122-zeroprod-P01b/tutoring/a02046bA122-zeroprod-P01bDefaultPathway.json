@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a02046bA122-zeroprod-P01b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Move all terms to LHS",
+        "text": "$$x\\left(x+1\\right)=-3\\left(x+1\\right)$$ \\n $$x\\left(x+1\\right)+3\\left(x+1\\right)=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a02046bA122-zeroprod-P01b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a02046bA122-zeroprod-P01b-h1"
+        ],
+        "title": "Distributive property",
+        "text": "$$x\\left(x+1\\right)+3\\left(x+1\\right)=\\left(x+3\\right) \\left(x+1\\right)=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a02046bA122-zeroprod-P01b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a02046bA122-zeroprod-P01b-h2"
+        ],
+        "title": "Zero product property",
+        "text": "$$\\left(x+3\\right) \\left(x+1\\right)=0$$ if $$x+3=0$$ or $$x+1=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a02046bA122-zeroprod-P01b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a02046bA122-zeroprod-P01b-h3"
+        ],
+        "title": "Conclusion",
+        "text": "$$x+3=0$$ if and only if $$x=-3;$$ $$x+1=0$$ if and only if $$x=-1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

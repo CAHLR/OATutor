@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a666a84A213-exploginverse-P13a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$100$$"
+        ],
+        "dependencies": [],
+        "title": "A related question",
+        "text": "What is $${10}^2$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P13a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1000$$"
+        ],
+        "dependencies": [
+            "a666a84A213-exploginverse-P13a-h1"
+        ],
+        "title": "A related question",
+        "text": "What is $${10}^3$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P13a-h2"
+        ],
+        "title": "Reframe the question",
+        "text": "$$2<\\log_{10}\\left(x\\right)<3$$ is equivalent to $${10}^2<x<{10}^3$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P13a-h3"
+        ],
+        "title": "Identify $$x$$",
+        "text": "Identify which of the multiple choice options satisfy $${10}^2<x<{10}^3$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P13a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P13a-h4"
+        ],
+        "title": "Conclusion",
+        "text": "The number $$x$$ can be any number so that $$100<x<1000$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

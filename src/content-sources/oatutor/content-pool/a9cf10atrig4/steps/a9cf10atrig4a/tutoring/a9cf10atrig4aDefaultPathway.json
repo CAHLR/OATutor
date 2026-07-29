@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a9cf10atrig4a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$tan^2\\left(\\theta\\right)={\\operatorname{sec}\\left(\\theta\\right)}^2-1$$"
+        ],
+        "dependencies": [],
+        "title": "Identity",
+        "text": "What Pythagorean Identity could help us simplify $${\\operatorname{sec}\\left(\\theta\\right)}^2-1$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig4a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Substitute identity into $$\\frac{{\\operatorname{sec}\\left(\\theta\\right)}^2-1}{{\\operatorname{sec}\\left(\\theta\\right)}^2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig4a-h2"
+        ],
+        "title": "Simplify",
+        "text": "Simplify $$\\frac{tan^2\\left(\\theta\\right)}{{\\operatorname{sec}\\left(\\theta\\right)}^2}=\\frac{sin^2\\left(\\theta\\right)}{cos^2\\left(\\theta\\right)} {ccos^2eft(\\theta\\right)=sin^2\\left(\\theta\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

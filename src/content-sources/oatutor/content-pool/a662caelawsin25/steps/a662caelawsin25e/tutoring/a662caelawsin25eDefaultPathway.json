@@ -1,0 +1,52 @@
+[
+    {
+        "id": "a662caelawsin25e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sum of angles in a triangle",
+        "text": "The sum of the angles in any triangle is $$180**{\\circ}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin25e-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\u03b3=10**{\\circ},$$ \u03b2_2=153.2**{\\circ}$$"
+        ],
+        "dependencies": [
+            "a662caelawsin25e-h1"
+        ],
+        "title": "Identify known angles",
+        "text": "What are the measures of angles $$\u03b3$$ and $$\\beta_2$$ for the second triangle?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\u03b3=10**{\\circ},$$ \u03b2_2=153.2**{\\circ}$$",
+            "$$\u03b3=153.2**{\\circ},$$ \u03b2_2=10**{\\circ}$$",
+            "$$\u03b3=10**{\\circ},$$ \u03b2_2=26.8**{\\circ}$$",
+            "$$\u03b3=10**{\\circ},$$ \u03b2_2=160**{\\circ}$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin25e-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "16.8**{\\circ}"
+        ],
+        "dependencies": [
+            "a662caelawsin25e-h1"
+        ],
+        "title": "Calculate $$\\alpha_2$$",
+        "text": "What is $$180**{\\circ} $$-$$ $$\u03b3$$ $$-$$ $$\\beta_2$$? $$Round$$ $$to$$ $$the$$ $$nearest$$ $$tenth$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

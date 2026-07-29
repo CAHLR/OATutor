@@ -1,0 +1,48 @@
+[
+    {
+        "id": "afe03cdT223-dblhalf-P13b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Split the exponent",
+        "text": "Start by rewriting the cube as a product of a linear term and a squared term: $$\\cos**3(x)=\\cos(x)\\cos**2(x).$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P13b-h2",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P13b-h1"
+        ],
+        "title": "Apply the power-reducing formula",
+        "text": "Substitute the power-reducing formula for the squared term: $$\\cos**2(x)=\\frac{1+\\cos(2x)}{2}.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P13b-h3",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P13b-h2"
+        ],
+        "title": "Substitute and distribute",
+        "text": "Substitute this into our product: $$\\cos(x)\\left(\\frac{1+\\cos(2x)}{2}\\right).$$ Distribute the linear term $$\\cos(x)$$ into the numerator.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P13b-h4",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P13b-h3"
+        ],
+        "title": "Final Expression",
+        "text": "Distributing gives the equivalent expression: $$\\frac{\\cos(x)+\\cos(x)\\cos(2x)}{2}.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

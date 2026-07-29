@@ -1,0 +1,84 @@
+[
+    {
+        "id": "a6cf981T222-identanglesum-P03a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Write in terms of sine and cosine",
+        "text": "$$\\frac{\\tan(3x)-\\tan(x)}{1+\\tan(3x)\\tan(x)}=\\frac{\\frac{\\sin(3x)}{\\cos(3x)}-\\frac{\\sin(x)}{\\cos(x)}}{1+\\frac{\\sin(3x)\\sin(x)}{\\cos(3x)\\cos(x)}}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6cf981T222-identanglesum-P03a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6cf981T222-identanglesum-P03a-h1"
+        ],
+        "title": "Find common denominators in numerator and denominator",
+        "text": "$$\\frac{\\frac{\\sin(3x)}{\\cos(3x)}-\\frac{\\sin(x)}{\\cos(x)}}{1+\\frac{\\sin(3x)\\sin(x)}{\\cos(3x)\\cos(x)}}=\\frac{\\frac{\\sin(3x)\\cos(x)}{\\cos(3x)\\cos(x)}-\\frac{\\sin(x)\\cos(3x)}{\\cos(3x)\\cos(x)}}{\\frac{\\cos(3x)\\cos(x)}{\\cos(3x)\\cos(x)}+\\frac{\\sin(3x)\\sin(x)}{\\cos(3x)\\cos(x)}}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6cf981T222-identanglesum-P03a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6cf981T222-identanglesum-P03a-h2"
+        ],
+        "title": "Simplify",
+        "text": "$$\\frac{\\frac{\\sin(3x)\\cos(x)}{\\cos(3x)\\cos(x)}-\\frac{\\sin(x)\\cos(3x)}{\\cos(3x)\\cos(x)}}{\\frac{\\cos(3x)\\cos(x)}{\\cos(3x)\\cos(x)}+\\frac{\\sin(3x)\\sin(x)}{\\cos(3x)\\cos(x)}}=\\frac{\\frac{\\sin(3x)\\cos(x)-\\cos(3x)\\sin(x)}{\\cos(3x)\\cos(x)}}{\\frac{\\cos(3x)\\cos(x)+\\sin(3x)\\sin(x)}{\\cos(3x)\\cos(x)}}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6cf981T222-identanglesum-P03a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6cf981T222-identanglesum-P03a-h3"
+        ],
+        "title": "Divide fractions",
+        "text": "$$\\frac{\\frac{a}{b}}{\\frac{c}{d}}=\\frac{ad}{bc}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6cf981T222-identanglesum-P03a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a6cf981T222-identanglesum-P03a-h4"
+        ],
+        "title": "Divide fractions",
+        "text": "$$\\frac{\\frac{\\sin(3x)\\cos(x)-\\cos(3x)\\sin(x)}{\\cos(3x)\\cos(x)}}{\\frac{\\cos(3x)\\cos(x)+\\sin(3x)\\sin(x)}{\\cos(3x)\\cos(x)}}=\\frac{\\sin(3x)\\cos(x)-\\cos(3x)\\sin(x)}{\\cos(3x)\\cos(x)+\\sin(3x)\\sin(x)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6cf981T222-identanglesum-P03a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a6cf981T222-identanglesum-P03a-h5"
+        ],
+        "title": "Trig angle sum formulas",
+        "text": "$$\\sin(A-B)=\\sin(A)\\cos(B)-\\cos(A)\\sin(B)$$ \\n $$\\cos(A-B)=\\cos(A)\\cos(B)+\\sin(A)\\sin(B)$$ \\n here $$A=3x$$ and $$B=x$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6cf981T222-identanglesum-P03a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a6cf981T222-identanglesum-P03a-h6"
+        ],
+        "title": "Simplify",
+        "text": "$$\\frac{\\sin(3x)\\cos(x)-\\cos(3x)\\sin(x)}{\\cos(3x)\\cos(x)+\\sin(3x)\\sin(x)}=\\frac{\\sin(2x)}{\\cos(2x)}=\\tan(2x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

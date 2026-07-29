@@ -1,0 +1,111 @@
+[
+    {
+        "id": "abaea60linmom7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Conservation of Momentum",
+        "text": "In a collision where two objects stick together, the total momentum before the collision is equal to the total momentum after the collision. This is due to the conservation of momentum principle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom7a-h1"
+        ],
+        "title": "Calculate Initial Momentum",
+        "text": "Calculate the initial momentum of the bullet before the collision. Use the formula: momentum $$=$$ mass * velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$80$$"
+        ],
+        "dependencies": [
+            "abaea60linmom7a-h2"
+        ],
+        "title": "Initial Momentum of Bullet",
+        "text": "What is the initial momentum of the bullet? (Use mass $$=$$ $$0.2$$ kg and velocity $$=$$ $$400$$ m/s)",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom7a-h3"
+        ],
+        "title": "Calculate Total Mass After Collision",
+        "text": "After the collision, the bullet and block move together as one unit. Calculate the total mass of this combination.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom7a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.7$$"
+        ],
+        "dependencies": [
+            "abaea60linmom7a-h4"
+        ],
+        "title": "Total Mass of Block and Bullet",
+        "text": "What is the total mass of the block and bullet combination? (Use mass of block $$=$$ $$1.5$$ kg and mass of bullet $$=$$ $$0.2$$ kg)",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom7a-h6",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom7a-h5"
+        ],
+        "title": "Calculate Final Velocity",
+        "text": "Use the conservation of momentum to find the final velocity of the $$\\frac{block}{bullet}$$ combination. The formula is: (initial momentum of bullet) $$=$$ (total mass) * (final velocity).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom7a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$47.1$$"
+        ],
+        "dependencies": [
+            "abaea60linmom7a-h6"
+        ],
+        "title": "Final Velocity Calculation",
+        "text": "Solve for the final velocity using the equation: $$80$$ $$=$$ $$1.7$$ * velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom7a-h8",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom7a-h7"
+        ],
+        "title": "Direction of Velocity",
+        "text": "Since the bullet was initially moving towards the east, the direction of the velocity of the $$\\frac{block}{bullet}$$ combination after the collision will also be towards the east.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

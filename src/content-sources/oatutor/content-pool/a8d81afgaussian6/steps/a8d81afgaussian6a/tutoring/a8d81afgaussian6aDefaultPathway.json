@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a8d81afgaussian6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "First Step",
+        "text": "Write down the coefficients of the variables $$x$$ and $$y$$ for each equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8d81afgaussian6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8d81afgaussian6a-h1"
+        ],
+        "title": "Second Step",
+        "text": "Include the constants (the numbers on the right-hand side of the equations) in an additional column.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8d81afgaussian6a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\begin{bmatrix} 8 & -37 & 8 \\end{bmatrix}$$"
+        ],
+        "dependencies": [
+            "a8d81afgaussian6a-h2"
+        ],
+        "title": "First Row",
+        "text": "What would the first row look like if it is the coefficients of the first equation with the constant on the right side?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\begin{bmatrix} -37 & 8 & -8 \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} 0 & 37 & 8 \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} 8 & -37 & 8 \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} -8 & -37 & 8 \\end{bmatrix}$$"
+        ]
+    },
+    {
+        "id": "a8d81afgaussian6a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\begin{bmatrix} 2 & 12 & 3 \\end{bmatrix}$$"
+        ],
+        "dependencies": [
+            "a8d81afgaussian6a-h3"
+        ],
+        "title": "Second Row",
+        "text": "What would the first row look like if it is the coefficients of the first equation with the constant on the right side?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\begin{bmatrix} 12 & 2 & 3 \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} -2 & 12 & 3 \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} 2 & -12 & 3 \\end{bmatrix}$$",
+            "$$\\begin{bmatrix} 2 & 12 & 3 \\end{bmatrix}$$"
+        ]
+    },
+    {
+        "id": "a8d81afgaussian6a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a8d81afgaussian6a-h4"
+        ],
+        "title": "Combine",
+        "text": "Combine the two rows to form the matrix.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

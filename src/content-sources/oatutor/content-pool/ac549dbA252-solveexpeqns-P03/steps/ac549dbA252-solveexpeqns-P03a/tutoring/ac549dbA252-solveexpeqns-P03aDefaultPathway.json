@@ -1,0 +1,69 @@
+[
+    {
+        "id": "ac549dbA252-solveexpeqns-P03a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply cancellation property",
+        "text": "The key here is that logs and exponentiation undo each other $$b**{\\log_b(a)}=a,$$ even when the base contains an $$x.$$ Here the base is $$(x+1).$$ \\n Just a heads up: at the end, we have to check that $$x+1>0$$ and $$\\neq$$ $$1$$ since bases have to be positive and not equal to $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac549dbA252-solveexpeqns-P03a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac549dbA252-solveexpeqns-P03a-h1"
+        ],
+        "title": "Apply cancellation property",
+        "text": "$$b**{\\log_b(a)}=a,$$ so $$\\left(x+1\\right)**{\\log_{x+1}(x**2-1)}=x**2-1=48$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac549dbA252-solveexpeqns-P03a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac549dbA252-solveexpeqns-P03a-h2"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "$$x^2-1+1=48+1$$ \\n $$x^2=49$$ \\n The solutions are $$x=\\pm 7$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac549dbA252-solveexpeqns-P03a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "ac549dbA252-solveexpeqns-P03a-h3"
+        ],
+        "title": "Check the domain",
+        "text": "Do both solutions make sense in the original equation?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ac549dbA252-solveexpeqns-P03a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ac549dbA252-solveexpeqns-P03a-h4"
+        ],
+        "title": "Conclusion",
+        "text": "Wait a second, $$\\log_{-7+1}=\\log_{-6}$$ is not defined. Logarithms must have a positive base, so we must discard the value $$x=-7$$. The only valid solution is $$x=7, $$ which gives a base of $$8$$, and $$8>0$$, $$8\\neq$$ $$1, $$ so it works.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

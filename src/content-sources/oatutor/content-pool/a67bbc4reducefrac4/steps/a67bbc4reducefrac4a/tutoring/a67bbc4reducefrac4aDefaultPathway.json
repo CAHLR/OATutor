@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a67bbc4reducefrac4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Ratios",
+        "text": "A ratio is a comparison between two quantities. It tells us how much of one thing there is compared to another.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a67bbc4reducefrac4a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Rates",
+        "text": "A rate is a specific type of ratio where the two quantities have different units, such as miles per hour or cost per item.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a67bbc4reducefrac4a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Proportions",
+        "text": "A proportion is an equation that states that two ratios are equal. For example, if $$\\frac{1}{2}$$ $$=$$ $$\\frac{2}{4}$$, then these two ratios form a proportion.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a67bbc4reducefrac4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$14$$"
+        ],
+        "dependencies": [],
+        "title": "Finding the GCD",
+        "text": "To simplify a fraction, find the greatest common divisor (GCD) of the numerator and the denominator. What is the GCD of $$14$$ and 28?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a67bbc4reducefrac4a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a67bbc4reducefrac4a-h4"
+        ],
+        "title": "Simplifying the Fraction",
+        "text": "Divide both the numerator and the denominator by their GCD to simplify the fraction. What is $$\\frac{14}{28}$$ simplified?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

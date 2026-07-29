@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a02046bA122-zeroprod-P03a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor the LHS",
+        "text": "Factor $$2x^2+x-6$$ by finding two numbers whose product is $$-6$$ and whose sum is $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a02046bA122-zeroprod-P03a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a02046bA122-zeroprod-P03a-h1"
+        ],
+        "title": "Factor the LHS",
+        "text": "Those numbers are $$3$$ and $$-2$$. \\n $$2x^2+x-6=\\left(2x-3\\right) \\left(x+2\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a02046bA122-zeroprod-P03a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a02046bA122-zeroprod-P03a-h2"
+        ],
+        "title": "Zero product property",
+        "text": "$$\\left(2x-3\\right) \\left(x+2\\right)=0$$ if $$2x-3=0$$ or $$x+2=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a02046bA122-zeroprod-P03a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a02046bA122-zeroprod-P03a-h3"
+        ],
+        "title": "Conclusion",
+        "text": "$$2x-3=0$$ if and only if $$x=\\frac{3}{2}$$ $$x+2=0$$ if and only if $$x=-2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

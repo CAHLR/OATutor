@@ -1,0 +1,116 @@
+[
+    {
+        "id": "a949afaangmom11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Momentum",
+        "text": "Angular momentum (L) for a rolling object is given by the formula $$L=I \\omega$$, where I is the moment of inertia and \u03c9 is the angular velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom11a-h1"
+        ],
+        "title": "Moment of Inertia for a Sphere",
+        "text": "The moment of inertia (I) for a uniform solid sphere is $$I=\\frac{2}{5} m r^2$$. Use this to calculate I for the boulder.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom11a-h2"
+        ],
+        "title": "Relating Linear and Angular Velocity",
+        "text": "The angular velocity (\u03c9) can be found using the relation $$v=r \\omega$$, where v is the linear velocity and $$r$$ is the radius of the sphere.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom11a-h3"
+        ],
+        "title": "Finding Linear Velocity",
+        "text": "Use energy conservation to find the linear velocity halfway down the hill. The potential energy at the top is converted into kinetic energy (both translational and rotational) halfway down.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom11a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.6$$"
+        ],
+        "dependencies": [
+            "a949afaangmom11a-h2"
+        ],
+        "title": "Calculate Moment of Inertia",
+        "text": "Calculate the moment of inertia (I) for the boulder using $$I=\\frac{2}{5} m r^2$$, where $$m=20$$ kg and $$r=0.2$$ $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom11a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8.94$$"
+        ],
+        "dependencies": [
+            "a949afaangmom11a-h4"
+        ],
+        "title": "Calculate Linear Velocity",
+        "text": "Use energy conservation: $$m g h=\\frac{1}{2} m v^2+\\frac{1}{2} I {\\omega}^2$$. Solve for v halfway down the hill.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom11a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$44.7$$"
+        ],
+        "dependencies": [
+            "a949afaangmom11a-h6"
+        ],
+        "title": "Calculate Angular Velocity",
+        "text": "Use the relation $$v=r \\omega$$ to find \u03c9, where $$v=8.94$$ $$\\frac{m}{s}$$ and $$r=0.2$$ $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom11a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$16.4$$"
+        ],
+        "dependencies": [
+            "a949afaangmom11a-h7"
+        ],
+        "title": "Calculate Angular Momentum",
+        "text": "Finally, calculate the angular momentum $$L=I \\omega$$ using $$I=1.6$$ $$kg m^2$$ and $$\u03c9=44.7$$ $$\\frac{rad}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

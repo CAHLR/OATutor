@@ -1,0 +1,82 @@
+[
+    {
+        "id": "abaea60linmom4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Momentum Change",
+        "text": "To find the force exerted on the wall, consider the change in momentum of the water as it hits the wall.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom4a-h1"
+        ],
+        "title": "Momentum Formula",
+        "text": "The momentum of an object is given by the formula: momentum $$=$$ mass * velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom4a-h2"
+        ],
+        "title": "Change in Momentum",
+        "text": "Since the water's horizontal momentum is reduced to zero, the change in momentum is equal to the initial momentum of the water.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom4a-h3"
+        ],
+        "title": "Force and Momentum Change",
+        "text": "The force exerted on the wall can be calculated using the formula: force $$=$$ change in momentum / time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom4a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$50\\times42$$"
+        ],
+        "dependencies": [
+            "abaea60linmom4a-h4"
+        ],
+        "title": "Calculate Initial Momentum",
+        "text": "Calculate the initial momentum of the water using the formula: momentum $$=$$ mass * velocity. Use the given mass flow rate and velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom4a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{50\\times42}{1}$$"
+        ],
+        "dependencies": [
+            "abaea60linmom4a-h5"
+        ],
+        "title": "Calculate Force",
+        "text": "Using the change in momentum and the time interval, calculate the force exerted on the wall.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

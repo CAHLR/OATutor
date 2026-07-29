@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a4d5812T121-trigraph-P04b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Where is the first peak?",
+        "text": "To find where our new peak is, set that entire argument to zero: $$2\\left(x-\\frac{\\pi}{2}\\right)=0$$. Solve for $$x.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4d5812T121-trigraph-P04b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4d5812T121-trigraph-P04b-h1"
+        ],
+        "title": "Zero product property",
+        "text": "By the zero product property, the argument is zero if $$2=0$$ (not possible) or $$x-\\frac{\\pi}{2}=0$$, which means $$x=\\frac{\\pi}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4d5812T121-trigraph-P04b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4d5812T121-trigraph-P04b-h2"
+        ],
+        "title": "Phase shift",
+        "text": "The phase shift is $$\\frac{\\pi}{2}$$ to the right.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4d5812T121-trigraph-P04b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4d5812T121-trigraph-P04b-h3"
+        ],
+        "title": "Compare graphs",
+        "text": "Compare the graph of $$\\cos(2x-\\frac{\\pi}{2})$$ in gold and $$\\cos\\left(2\\left(x-\\frac{\\pi}{2}\\right)\\right)$$ in blue. \\n Both cosine graphs have period $$\\pi.$$ The blue graph, $$\\cos(2x-\\pi/2),$$ has a peak at $$x=\\frac{\\pi}{4}$$. The gold graph, $$\\cos(2(x-\\pi/2)),$$ has a peak at $$x=\\frac{\\pi}{2}$$.\\n##figure2.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

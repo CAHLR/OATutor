@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a6ec5faothertrig23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of Even Function",
+        "text": "Recall that if $$f(-x)$$ $$=$$ f(x), it is an even function.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6ec5faothertrig23a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6ec5faothertrig23a-h1"
+        ],
+        "title": "Definition of Odd Function",
+        "text": "Recall that if $$f(-x)$$ $$=$$ $$-f(x)$$, it is an odd function.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6ec5faothertrig23a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-2sin\\left(x\\right) cos\\left(x\\right)$$"
+        ],
+        "dependencies": [
+            "a6ec5faothertrig23a-h2"
+        ],
+        "title": "Substitute $$-x$$ into the function. What is $$f(-x)$$?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2sin\\left(x\\right) cos\\left(x\\right)$$",
+            "$$-2sin\\left(x\\right) cos\\left(x\\right)$$",
+            "neither"
+        ]
+    }
+]

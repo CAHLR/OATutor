@@ -1,0 +1,48 @@
+[
+    {
+        "id": "ad30139T312-invtrigeval-P03a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of the arctan",
+        "text": "There is an angle $$\\frac{-\\pi}{2}$$ $$\\leq$$ $$\\theta$$ $$\\leq$$ $$\\frac{\\pi}{2}$$ such that $$\\arctan(1/\\sqrt{3})=\\theta$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad30139T312-invtrigeval-P03a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad30139T312-invtrigeval-P03a-h1"
+        ],
+        "title": "Definition of the tangent",
+        "text": "$$\\arctan(1/\\sqrt{3})=\\theta$$ if and only if $$\\tan(\\theta)=1/\\sqrt{3}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad30139T312-invtrigeval-P03a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad30139T312-invtrigeval-P03a-h2"
+        ],
+        "title": "SOHCAHTOA",
+        "text": "$$\\tan(\\theta)$$ is the ratio of the opposite side to the adjacent side of a right triangle with angle $$\\theta$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad30139T312-invtrigeval-P03a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad30139T312-invtrigeval-P03a-h3"
+        ],
+        "title": "Important right triangles",
+        "text": "The right triangle with opposite side length $$1$$ and adjacent side length $$\\sqrt{3}$$ is similar to the right triangle with opposite side length $$\\frac{1}{2}$$ and adjacent side length $$\\sqrt{3}/2.$$ This is the $$30-60-90$$ triangle where the angle $$\\theta$$ $$=\\frac{\\pi}{6}$$\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

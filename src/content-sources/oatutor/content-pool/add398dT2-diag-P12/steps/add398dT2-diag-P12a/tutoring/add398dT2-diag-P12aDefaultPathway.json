@@ -1,0 +1,60 @@
+[
+    {
+        "id": "add398dT2-diag-P12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use a substitution",
+        "text": "Let $$u=3\\theta.$$ First, find the general solution for the simpler equation $$\\tan(u)=\\sqrt{3}.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "add398dT2-diag-P12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "add398dT2-diag-P12a-h1"
+        ],
+        "title": "Find the general solution for u",
+        "text": "The reference angle where tangent equals $$\\sqrt{3}$$ is $$\\frac{\\pi}{3}.$$ Since the tangent function has a period of $$\\pi, $$ the general solution for $$u$$ is $$u=\\frac{\\pi}{3}+n\\pi.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "add398dT2-diag-P12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "add398dT2-diag-P12a-h2"
+        ],
+        "title": "Substitute back",
+        "text": "Now substitute $$3\\theta$$ back in for $$u$$ to get $$3\\theta=\\frac{\\pi}{3}+n\\pi.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "add398dT2-diag-P12a-h4",
+        "type": "hint",
+        "dependencies": [
+            "add398dT2-diag-P12a-h3"
+        ],
+        "title": "Isolate theta",
+        "text": "To solve for $$\\theta$$ you must divide the entire equation by $$3$$. Be careful to divide both the reference angle AND the period term.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "add398dT2-diag-P12a-h5",
+        "type": "hint",
+        "dependencies": [
+            "add398dT2-diag-P12a-h4"
+        ],
+        "title": "Final calculation",
+        "text": "Dividing both terms by $$3$$ yields $$\\theta=\\frac{\\pi}{9}+\\frac{n\\pi}{3}.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

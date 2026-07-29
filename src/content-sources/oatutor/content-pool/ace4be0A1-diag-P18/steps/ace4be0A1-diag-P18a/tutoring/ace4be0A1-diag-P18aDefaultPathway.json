@@ -1,0 +1,60 @@
+[
+    {
+        "id": "ace4be0A1-diag-P18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Move terms to LHS",
+        "text": "$$3\\left(x^2+\\frac{1}{2}\\right)-x^2+3x-\\frac{x^2+3}{2}=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P18a-h1"
+        ],
+        "title": "Expand and combine like terms",
+        "text": "$$3x^2+\\frac{3}{2}-x^2+3x-\\frac{x^2}{2}-\\frac{3}{2}=\\frac{3}{2} x^2+3x=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P18a-h2"
+        ],
+        "title": "Factor",
+        "text": "$$\\frac{3}{2} x\\left(x+2\\right)=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P18a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P18a-h3"
+        ],
+        "title": "Zero product property",
+        "text": "$$\\frac{3}{2} x\\left(x+2\\right)=0$$ means that $$\\frac{3}{2} x=0$$ or $$x+2=0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P18a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P18a-h4"
+        ],
+        "title": "Conclusion",
+        "text": "$$\\frac{3}{2} x=0$$ is equivalent to $$x=0;$$ $$x+2=0$$ is equivalent to $$x=-2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

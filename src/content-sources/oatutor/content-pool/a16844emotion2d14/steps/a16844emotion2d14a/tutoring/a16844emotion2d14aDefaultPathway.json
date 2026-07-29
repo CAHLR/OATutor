@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a16844emotion2d14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Range Formula",
+        "text": "To find the range of a projectile, you can use the formula: \\( R $$=$$ \\frac{v**2 \\sin(2\\theta)}{g} \\), where \\( v \\) is the initial velocity, \\( $$\\theta$$ \\) is the angle of projection, and \\( g \\) is the acceleration due to gravity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d14a-h1"
+        ],
+        "title": "Substitute the Known Values",
+        "text": "Given that the initial velocity \\( v $$=$$ $$15$$ \\) $$\\frac{m}{s}$$, the angle \\( $$\\theta$$ $$=$$ $$45$$ \\) degrees, and the acceleration due to gravity on Mars \\( g $$=$$ $$3.7$$ \\) m/s\u00b2, substitute these values into the range formula.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d14a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$60.8$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d14a-h2"
+        ],
+        "title": "Calculate the Range",
+        "text": "Using the formula \\( R $$=$$ \\frac{v**2 \\sin(2\\theta)}{g} \\), calculate the range of the soccer kick.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,54 @@
+[
+    {
+        "id": "a8274f3A231-lawsexpproduct-P03a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of exponents",
+        "text": "Recall that $$5^3 2^3=$$ $$5\\cdot$$ $$5\\cdot$$ $$5\\cdot$$ $$2\\cdot$$ $$2\\cdot$$ $$2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8274f3A231-lawsexpproduct-P03a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Commutativity $$ab=ba$$ and associativity $$(ab)c=a(bc)$$"
+        ],
+        "dependencies": [
+            "a8274f3A231-lawsexpproduct-P03a-h1"
+        ],
+        "title": "Identify the rule",
+        "text": "Which basic algebra properties are needed to explain why $$5\\cdot$$ $$5\\cdot$$ $$5\\cdot$$ $$2\\cdot$$ $$2\\cdot$$ $$2$$ $$=$$ $$(5\\cdot$$ $$2)\\cdot$$ $$(5\\cdot$$ $$2)\\cdot$$ $$(5\\cdot$$ $$2)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Commutativity $$ab=ba$$",
+            "Associativity $$(ab)c=a(bc)$$",
+            "Distributivity $$a\\left(b+c\\right)=ab+ac$$",
+            "Commutativity $$ab=ba$$ and associativity $$(ab)c=a(bc)$$",
+            "Commutativity $$ab=ba$$ and distributivity $$a\\left(b+c\\right)=ab+ac$$",
+            "Associativity $$(ab)c=a(bc)$$ and distributivity $$a\\left(b+c\\right)=ab+ac$$"
+        ]
+    },
+    {
+        "id": "a8274f3A231-lawsexpproduct-P03a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a8274f3A231-lawsexpproduct-P03a-h2"
+        ],
+        "title": "Rewrite with exponents",
+        "text": "$$(5\\cdot$$ $$2)\\cdot$$ $$(5\\cdot$$ $$2)\\cdot$$ $$(5\\cdot$$ $$2)=10\\cdot$$ $$10\\cdot$$ $$10={10}^n$$ $$$$ What is $$n$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

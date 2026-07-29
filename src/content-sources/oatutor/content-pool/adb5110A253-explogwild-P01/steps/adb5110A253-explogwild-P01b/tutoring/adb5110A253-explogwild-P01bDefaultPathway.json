@@ -1,0 +1,70 @@
+[
+    {
+        "id": "adb5110A253-explogwild-P01b-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3200=\\operatorname{100}\\left(2^t\\right)$$"
+        ],
+        "dependencies": [],
+        "title": "Identify the equation",
+        "text": "What is the equation you must solve?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$P(t)=100(2**{3200})$$",
+            "$$3200=\\operatorname{100}\\left(2^t\\right)$$",
+            "$$100=3200(2**{t})$$"
+        ]
+    },
+    {
+        "id": "adb5110A253-explogwild-P01b-h2",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P01b-h1"
+        ],
+        "title": "Isolate the variable",
+        "text": "Divide both sides by $$100$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P01b-h3",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P01b-h2"
+        ],
+        "title": "Isolate the variable",
+        "text": "After dividing by $$100$$, the equation becomes $$32=2^t$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P01b-h4",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P01b-h3"
+        ],
+        "title": "Solve for $$t$$",
+        "text": "Solve $$32=2^t$$ for $$t$$ by applying a logarithm $$\\log_2(32)=\\log_2(2**t),$$ or by inspection.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P01b-h5",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P01b-h4"
+        ],
+        "title": "Conclusion",
+        "text": "After $$5$$ days, the population is $$\\operatorname{100}\\left(2^5\\right)=100(32)=3200$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

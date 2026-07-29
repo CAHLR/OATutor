@@ -1,0 +1,65 @@
+[
+    {
+        "id": "aeba74cA222-lawsexpsamebase-P12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Focus on the input.",
+        "text": "Rewrite the input as a power of $$2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aeba74cA222-lawsexpsamebase-P12a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2^{x+1}$$"
+        ],
+        "dependencies": [
+            "aeba74cA222-lawsexpsamebase-P12a-h1"
+        ],
+        "title": "Change the base.",
+        "text": "Write $$4^{\\frac{x+1}{2}}$$ as a power of $$2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "aeba74cA222-lawsexpsamebase-P12a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Apply the power rule",
+                "text": "$$4^{\\frac{x+1}{2}}=\\left(2^2\\right)^{\\frac{x+1}{2}}=2^{\\frac{2\\left(x+1\\right)}{2}}=2^{x+1}$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "aeba74cA222-lawsexpsamebase-P12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aeba74cA222-lawsexpsamebase-P12a-h2"
+        ],
+        "title": "Apply power rule",
+        "text": "Simplify expression using laws of exponents \\n $$\\log_{2}\\left(\\left(2^2\\right)^{\\frac{x+1}{2}}\\right)=\\log_{2}\\left(2^{\\frac{2\\left(x+1\\right)}{2}}\\right)=\\log_{2}\\left(2^{x+1}\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aeba74cA222-lawsexpsamebase-P12a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aeba74cA222-lawsexpsamebase-P12a-h3"
+        ],
+        "title": "Logs undo exponents",
+        "text": "Logs reverse what an exponential does.\\n\\n That means if you take the log base $$2$$ of an exponential with base $$2$$, you get back the power (the exponent).\\n $$\\log_{2}\\left(2^{x+1}\\right)=x+1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

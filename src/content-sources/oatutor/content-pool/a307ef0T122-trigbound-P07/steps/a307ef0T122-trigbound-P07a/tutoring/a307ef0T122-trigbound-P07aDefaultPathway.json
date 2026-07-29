@@ -1,0 +1,62 @@
+[
+    {
+        "id": "a307ef0T122-trigbound-P07a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "negative"
+        ],
+        "dependencies": [],
+        "title": "Consider the difference",
+        "text": "To make $$12-4\\cos(\\theta)$$ as large as possible, do we want to subtract a positive number or a negative number?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "positive",
+            "negative"
+        ],
+        "subHints": [
+            {
+                "id": "a307ef0T122-trigbound-P07a-h1-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Subtracting a negative",
+                "text": "Subtracting a negative is the same as adding! To get the maximum, we want to subtract the smallest possible value of $$4\\cos(\\theta).$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a307ef0T122-trigbound-P07a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-4$$"
+        ],
+        "dependencies": [
+            "a307ef0T122-trigbound-P07a-h1"
+        ],
+        "title": "What is the minimum value $$4\\cos(\\theta)$$ can take?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a307ef0T122-trigbound-P07a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a307ef0T122-trigbound-P07a-h2"
+        ],
+        "title": "Put it all together",
+        "text": "The largest possible value is $$12-(-4)=16$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a2101f5T332-trigcomp-P02a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Name the angle",
+        "text": "Let $$\\theta$$ be the angle $$\\theta=\\arctan(x/2)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2101f5T332-trigcomp-P02a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2101f5T332-trigcomp-P02a-h1"
+        ],
+        "title": "Definition of the inverse",
+        "text": "If $$\\theta=\\arctan(x/2),$$ then $$\\tan(\\theta)=x/2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2101f5T332-trigcomp-P02a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a2101f5T332-trigcomp-P02a-h2"
+        ],
+        "title": "SOHCAHTOA",
+        "text": "Tangent of $$\\theta$$ is the ratio of opposite over adjacent for a right triangle with angle $$\\theta$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2101f5T332-trigcomp-P02a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a2101f5T332-trigcomp-P02a-h3"
+        ],
+        "title": "Construct a right triangle",
+        "text": "Construct a right triangle with angle $$\\theta$$ so that $$\\tan(\\theta)=x/2.$$ \\n Assume a triangle with opposite side length $$x$$ and adjacent side $$2$$.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2101f5T332-trigcomp-P02a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a2101f5T332-trigcomp-P02a-h4"
+        ],
+        "title": "Find the hypotenuse of the right triangle",
+        "text": "Use the pythagorean theorem Adj $$**2$$ + Opp $$**2$$ $$=$$ Hyp $$**2$$ to find the length of the hypotenuse.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2101f5T332-trigcomp-P02a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a2101f5T332-trigcomp-P02a-h5"
+        ],
+        "title": "SOHCAHTOA",
+        "text": "$$\\text{Hypotenuse}$$ $$=\\sqrt{2^2+x^2}=\\sqrt{4+x^2}$$. Since $$\\sec(\\theta)=\\text{Hyp/Adj},$$ divide your result by $$2$$.\\n##figure2.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

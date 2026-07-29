@@ -1,0 +1,104 @@
+[
+    {
+        "id": "a09f25fmotion14b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Known Variables",
+        "text": "Start by identifying the known variables in the problem. What is the initial velocity, final velocity, and distance traveled?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion14b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion14b-h1"
+        ],
+        "title": "Choose the Right Equation",
+        "text": "Which kinematic equation relates initial velocity, final velocity, acceleration, and distance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion14b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$a=\\frac{v^2-u^2}{2s}$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion14b-h2"
+        ],
+        "title": "Apply the Kinematic Equation",
+        "text": "Use the equation $$v^2$$ $$=$$ $$u^2$$ + 2as to find the acceleration. Here, v is the final velocity, u is the initial velocity, a is the acceleration, and s is the distance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion14b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$a=\\frac{{65}^2-0^2}{2\\times0.25}$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion14b-h3"
+        ],
+        "title": "Calculate the Acceleration",
+        "text": "Substitute the known values into the equation to find the acceleration. v $$=$$ $$65.0$$ $$\\frac{m}{s}$$, u $$=$$ $$0$$ $$\\frac{m}{s}$$, s $$=$$ $$0.250$$ $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion14b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion14b-h4"
+        ],
+        "title": "Find the Time of Acceleration",
+        "text": "Now that you have the acceleration, use another kinematic equation to find the time. Which equation relates velocity, acceleration, and time?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion14b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$t=\\frac{v-u}{a}$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion14b-h5"
+        ],
+        "title": "Use the Equation for Time",
+        "text": "Use the equation v $$=$$ u + at to solve for time $$t$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion14b-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$t=\\frac{65-0}{8450}$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion14b-h6"
+        ],
+        "title": "Calculate the Time",
+        "text": "Substitute the known values into the equation to find the time. v $$=$$ $$65.0$$ $$\\frac{m}{s}$$, u $$=$$ $$0$$ $$\\frac{m}{s}$$, a $$=$$ $$8450$$ $$\\frac{m}{s^2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

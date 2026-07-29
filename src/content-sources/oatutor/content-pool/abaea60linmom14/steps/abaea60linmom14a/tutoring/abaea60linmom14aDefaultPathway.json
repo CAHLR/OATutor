@@ -1,0 +1,145 @@
+[
+    {
+        "id": "abaea60linmom14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the velocity of the rock, we need to apply the principle of conservation of momentum. The total momentum before the deer scatter must equal the total momentum after they scatter.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom14a-h1"
+        ],
+        "title": "Initial Momentum",
+        "text": "Initially, the rock and the deer are at rest, so the total initial momentum is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom14a-h2"
+        ],
+        "title": "Momentum of the Deer",
+        "text": "Calculate the momentum of each deer using the formula: momentum $$=$$ mass * velocity. Remember to consider both the i and j components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom14a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1050i+350j$$"
+        ],
+        "dependencies": [
+            "abaea60linmom14a-h3"
+        ],
+        "title": "Momentum of Deer A",
+        "text": "Calculate the momentum of deer A: mass $$=$$ $$70$$ kg, velocity $$=$$ $$15i+5j$$ $$\\frac{m}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom14a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-840i+560j$$"
+        ],
+        "dependencies": [
+            "abaea60linmom14a-h4"
+        ],
+        "title": "Momentum of Deer B",
+        "text": "Calculate the momentum of deer B: mass $$=$$ $$70$$ kg, velocity $$=$$ $$-12i+8j$$ $$\\frac{m}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom14a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "84i-1260j"
+        ],
+        "dependencies": [
+            "abaea60linmom14a-h5"
+        ],
+        "title": "Momentum of Deer C",
+        "text": "Calculate the momentum of deer C: mass $$=$$ $$70$$ kg, velocity $$=$$ $$1.2i-18j$$ $$\\frac{m}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom14a-h7",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom14a-h6"
+        ],
+        "title": "Total Momentum of the Deer",
+        "text": "Add the momentum vectors of all three deer to find the total momentum of the deer.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom14a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "294i-350j"
+        ],
+        "dependencies": [
+            "abaea60linmom14a-h7"
+        ],
+        "title": "Total Momentum Calculation",
+        "text": "Add the momentum vectors: $$1050i+350j$$ + $$\\left(-840i+560j\\right)$$ + $$(84i-1260j)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom14a-h9",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom14a-h8"
+        ],
+        "title": "Conservation of Momentum",
+        "text": "According to the conservation of momentum, the total momentum of the system (deer + rock) must remain zero. Therefore, the momentum of the rock must be equal and opposite to the total momentum of the deer.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom14a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1.47i+1.75j$$"
+        ],
+        "dependencies": [
+            "abaea60linmom14a-h9"
+        ],
+        "title": "Velocity of the Rock",
+        "text": "Use the formula: momentum $$=$$ mass * velocity. The mass of the rock is $$200$$ kg. Set the momentum of the rock equal to $$-294i+350j$$ and solve for velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

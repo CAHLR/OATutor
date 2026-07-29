@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a3e5a23A123-cancel-P05b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Move all terms to LHS",
+        "text": "Apply the first step from the previous part of the problem: \\n $$\\left(x+3\\right) \\left(x-1\\right)-2\\left(x-1\\right)=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3e5a23A123-cancel-P05b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3e5a23A123-cancel-P05b-h1"
+        ],
+        "title": "Factor out the $$(x-1)$$ term",
+        "text": "$$\\left(x+3-2\\right) \\left(x-1\\right)=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3e5a23A123-cancel-P05b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3e5a23A123-cancel-P05b-h2"
+        ],
+        "title": "Combine like terms",
+        "text": "$$\\left(x+1\\right) \\left(x-1\\right)=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3e5a23A123-cancel-P05b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3e5a23A123-cancel-P05b-h3"
+        ],
+        "title": "Zero product property",
+        "text": "$$\\left(x+1\\right) \\left(x-1\\right)=0$$ if and only if $$x+1=0$$ or $$x-1=0$$. In other words, if $$x=\\pm 1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

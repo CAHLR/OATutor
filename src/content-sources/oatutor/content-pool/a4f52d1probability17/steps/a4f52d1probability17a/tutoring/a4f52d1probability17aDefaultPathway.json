@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a4f52d1probability17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Probability of a Union of Events",
+        "text": "P(E U F) $$=$$ P(E) + P(F) - P(E \u2229 F).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4f52d1probability17a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a4f52d1probability17a-h1"
+        ],
+        "title": "Count Intersection",
+        "text": "How many cards are both aces and diamonds?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4f52d1probability17a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a4f52d1probability17a-h2"
+        ],
+        "title": "Count Aces",
+        "text": "How many aces are in the deck?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4f52d1probability17a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$13$$"
+        ],
+        "dependencies": [
+            "a4f52d1probability17a-h3"
+        ],
+        "title": "Count Diamonds",
+        "text": "How many diamonds are in the deck?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4f52d1probability17a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$52$$"
+        ],
+        "dependencies": [
+            "a4f52d1probability17a-h4"
+        ],
+        "title": "Total Outcomes",
+        "text": "How many cards are in the deck?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

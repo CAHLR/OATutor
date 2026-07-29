@@ -1,0 +1,52 @@
+[
+    {
+        "id": "ae45a45int30a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Phrase",
+        "text": "First, write the problem as an algebraice phrase to solve. The problem is asking for the DIFFERENCE between $$-6$$ degrees (the luncthime temperature) and $$-15$$ degrees (the sunset temperature)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae45a45int30a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(-6-(-15))$$"
+        ],
+        "dependencies": [
+            "ae45a45int30a-h1"
+        ],
+        "title": "Phrase",
+        "text": "What is the difference between $$-6$$ degrees and $$-15$$ degrees, represented as an equation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$\\left(-6+\\left(-15\\right)\\right)$$",
+            "$$(-6-(-15))$$",
+            "$$\\left(-6\\left(-15\\right)\\right)$$",
+            "$$\\left(-\\frac{6}{\\left(-15\\right)}\\right)$$"
+        ]
+    },
+    {
+        "id": "ae45a45int30a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "ae45a45int30a-h2"
+        ],
+        "title": "Phrase",
+        "text": "What does $$(-6-(-15))$$ evaluate to?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

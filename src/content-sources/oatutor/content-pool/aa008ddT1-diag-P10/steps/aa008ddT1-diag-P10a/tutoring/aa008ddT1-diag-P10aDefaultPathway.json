@@ -1,0 +1,72 @@
+[
+    {
+        "id": "aa008ddT1-diag-P10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Meaning of $$\\sin(\\theta)$$ in terms of the unit circle.",
+        "text": "Recall that $$\\sin(\\theta)$$ is the $$y$$ coordinate of the point on the unit circle with radian angle $$\\theta.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aa008ddT1-diag-P10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aa008ddT1-diag-P10a-h1"
+        ],
+        "title": "Find the location where $$y=-1$$",
+        "text": "First we find the point on the circle whose $$y$$ coordinate is $$-1$$. That only happens at the lowest point on the circle, where the negative $$y-$$ axis intersects the unit circle.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aa008ddT1-diag-P10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aa008ddT1-diag-P10a-h2"
+        ],
+        "title": "Find an angle",
+        "text": "That location is $$\\frac{-\\pi}{2}.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aa008ddT1-diag-P10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aa008ddT1-diag-P10a-h3"
+        ],
+        "title": "Find all angles in $$(-3\\pi, 3\\pi).$$",
+        "text": "We can add or subtract $$2\\pi$$ from $$\\frac{-\\pi}{2}$$ and will be back at the same point.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aa008ddT1-diag-P10a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aa008ddT1-diag-P10a-h4"
+        ],
+        "title": "Find all angles in $$(-3\\pi, 3\\pi).$$",
+        "text": "$$\\frac{-\\pi}{2}-2\\pi=\\frac{-\\pi}{2}-\\frac{4\\pi}{2}=\\frac{-5\\pi}{2}$$ \\n $$\\frac{-\\pi}{2}+2\\pi=\\frac{-\\pi}{2}+\\frac{4\\pi}{2}=\\frac{3\\pi}{2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aa008ddT1-diag-P10a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aa008ddT1-diag-P10a-h5"
+        ],
+        "title": "Is that all of the angles?",
+        "text": "If we add or subtract another $$2\\pi$$ we will end up outside of the domain $$(-3\\pi, 3\\pi)$$ since $$\\frac{-\\pi}{2}-4\\pi=\\frac{-9\\pi}{2}<-3\\pi$$ and $$\\frac{-\\pi}{2}+4\\pi=\\frac{7\\pi}{2}>3\\pi.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

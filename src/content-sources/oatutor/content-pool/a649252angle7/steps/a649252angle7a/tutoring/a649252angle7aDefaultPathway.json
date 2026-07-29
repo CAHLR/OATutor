@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a649252angle7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall Half-Angle Formula for sine",
+        "text": "Recall that $$sin\\left(\\frac{\\alpha}{2}\\right)$$ $$=$$ +/-sqrt((1 - cos(alpha))/2).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle7a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$30$$ degrees"
+        ],
+        "dependencies": [
+            "a649252angle7a-h1"
+        ],
+        "title": "Identify alpha",
+        "text": "To use the half-angle formula for sin(15 degrees), what value should alpha be?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle7a-h1"
+        ],
+        "title": "Determine the Sign",
+        "text": "Determine whether sin(15 degrees) is positive or negative based on its quadrant.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle7a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Quadrant I"
+        ],
+        "dependencies": [
+            "a649252angle7a-h2"
+        ],
+        "title": "Quadrant of $$15$$ degrees",
+        "text": "In which quadrant does $$15$$ degrees lie?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Quadrant I",
+            "Quadrant II",
+            "Quadrant III",
+            "Quadrant IV"
+        ]
+    },
+    {
+        "id": "a649252angle7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle7a-h2"
+        ],
+        "title": "Evaluate cos(alpha)",
+        "text": "Evaluate cos(30 degrees).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle7a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\sqrt{3}}{2}$$"
+        ],
+        "dependencies": [
+            "a649252angle7a-h3"
+        ],
+        "title": "Value of cos(30 degrees)",
+        "text": "What is the exact value of cos(30 degrees)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

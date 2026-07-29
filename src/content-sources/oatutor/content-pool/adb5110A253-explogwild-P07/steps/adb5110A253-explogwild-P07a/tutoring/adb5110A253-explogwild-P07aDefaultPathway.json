@@ -1,0 +1,84 @@
+[
+    {
+        "id": "adb5110A253-explogwild-P07a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the equation",
+        "text": "$$95={\\operatorname{85}\\left(1.02\\right)}^n$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P07a-h2",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P07a-h1"
+        ],
+        "title": "Isolate the exponential",
+        "text": "Divide both sides of the equation by $$85$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P07a-h3",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P07a-h2"
+        ],
+        "title": "After dividing",
+        "text": "$${1.02}^n=\\frac{95}{85}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P07a-h4",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P07a-h3"
+        ],
+        "title": "Isolate $$n$$",
+        "text": "Logarithms cancel exponents. Apply a logarithm to both sides to bring down the $$n.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P07a-h5",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P07a-h4"
+        ],
+        "title": "Isolate $$n$$",
+        "text": "$$\\log_{1.02}\\left({1.02}^n\\right)=\\log_{1.02}\\left(\\frac{95}{85}\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P07a-h6",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P07a-h5"
+        ],
+        "title": "Evaluate",
+        "text": "$$n=\\log_{1.02}\\left(\\frac{95}{85}\\right)$$ is approximately $$5.6$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P07a-h7",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P07a-h6"
+        ],
+        "title": "Interpret result",
+        "text": "To interpret $$5.6$$ as a number of iterations, or discrete steps, we should round up to $$6$$ since after $$5$$ iterations the model will be less than 95% accurate, but by $$6$$ iterations it will be at least 95% accurate.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

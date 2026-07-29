@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a09f25fmotion16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the acceleration, we need to consider the change in velocity and the distance over which this change occurs. The care package starts with a speed of $$54$$ $$\\frac{m}{s}$$ and comes to a stop over a distance of $$3.0$$ $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion16a-h1"
+        ],
+        "title": "Using the Kinematic Equation",
+        "text": "Recall the kinematic equation: $${v_f}^2={v_i}^2+2a d$$, where $$v_f$$ is the final velocity, $$v_i$$ is the initial velocity, a is the acceleration, and $$d$$ is the distance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion16a-h2"
+        ],
+        "title": "Identifying Known Values",
+        "text": "In this problem, the final velocity $$v_f$$ is $$0$$ $$\\frac{m}{s}$$ (since the package stops), the initial velocity $$v_i$$ is $$54$$ $$\\frac{m}{s}$$, and the distance $$d$$ is $$3.0$$ $$m$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion16a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-486$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion16a-h3"
+        ],
+        "title": "Solving for Acceleration",
+        "text": "Rearrange the kinematic equation to solve for acceleration: $$a=\\frac{{v_f}^2-{v_i}^2}{2d}$$. Substitute the known values into the equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

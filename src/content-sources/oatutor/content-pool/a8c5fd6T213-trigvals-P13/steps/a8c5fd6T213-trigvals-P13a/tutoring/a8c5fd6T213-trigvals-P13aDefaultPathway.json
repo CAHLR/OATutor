@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a8c5fd6T213-trigvals-P13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find another angle with same position",
+        "text": "Notice that $$\\frac{13\\pi}{6}$$ is larger than one full rotation of $$2\\pi.$$ We can subtract $$2\\pi$$ (which is equivalent to $$\\frac{12\\pi}{6}\\$\\$)$$ $$to$$ $$find$$ $$a$$ $$simpler$$ $$angle$$ $$on$$ $$the$$ $$primary$$ $$unit$$ $$circle$$ $$that$$ $$is$$ $$at$$ $$the$$ $$same$$ $$position$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8c5fd6T213-trigvals-P13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c5fd6T213-trigvals-P13a-h1"
+        ],
+        "title": "Calculate the angle",
+        "text": "$$\\frac{13\\pi}{6}-\\frac{12\\pi}{6}=\\frac{\\pi}{6}.$$ Since the angles correspond to the same point on the unit circle, they have the same $$y$$ coordinate. Meaning $$\\sin\\left(\\frac{13\\pi}{6}\\right)=\\sin\\left(\\frac{\\pi}{6}\\right).$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8c5fd6T213-trigvals-P13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8c5fd6T213-trigvals-P13a-h2"
+        ],
+        "title": "Evaluate the special value",
+        "text": "Recall your unit circle. The angle $$\\frac{\\pi}{6}$$ is in the first quadrant, where the $$y-$$ coordinate is positive. The $$y-$$ coordinate (sine) at this angle is $$\\frac{1}{2}.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

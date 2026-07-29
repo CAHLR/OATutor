@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a03ad6fT214-trigeq-P02a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use a substitution",
+        "text": "Let $$u$$ $$=$$ 3\\theta$$. $$First$$, $$find$$ $$the$$ $$general$$ $$solution$$ $$for$$ $$the$$ $$simpler$$ $$equation$$ $$\\sin(u)$$ $$=$$ $$\\frac{1}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a03ad6fT214-trigeq-P02a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a03ad6fT214-trigeq-P02a-h1"
+        ],
+        "title": "Find the general solution for u",
+        "text": "Sine is $$\\frac{1}{2}$$ at $$\\frac{\\pi}{6}$$ (Quadrant I) and $$\\frac{5\\pi}{6}$$ (Quadrant II). The general solution for $$u$$ is $$u$$ $$=$$ $$\\frac{\\pi}{6$$} + $$2n\\pi$$ and $$u$$ $$=$$ $$\\frac{5\\pi}{6$$} + $$2n\\pi$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a03ad6fT214-trigeq-P02a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a03ad6fT214-trigeq-P02a-h2"
+        ],
+        "title": "Substitute back",
+        "text": "Substitute $$3\\theta$$ back in: $$3\\theta $$=$$ $$\\frac{\\pi}{6$$} + $$2n\\pi$$ and $$3\\theta $$=$$ $$\\frac{5\\pi}{6$$} + $$2n\\pi$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a03ad6fT214-trigeq-P02a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a03ad6fT214-trigeq-P02a-h3"
+        ],
+        "title": "Isolate theta",
+        "text": "Divide the equations by $$3$$. Ensure you divide the reference angles and the $$2n\\pi$$ period.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a03ad6fT214-trigeq-P02a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a03ad6fT214-trigeq-P02a-h4"
+        ],
+        "title": "Final calculation",
+        "text": "Dividing by $$3$$ yields $$\\theta$$ $$=$$ $$\\frac{\\pi}{18$$} + $$\\frac{2n\\pi}{3}$$ and $$\\theta$$ $$=$$ $$\\frac{5\\pi}{18$$} + $$\\frac{2n\\pi}{3}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

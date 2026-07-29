@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a88c93efixedaxis17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Torque",
+        "text": "Torque is the rotational equivalent of force. It causes an object to rotate around an axis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis17a-h1"
+        ],
+        "title": "Formula for Torque",
+        "text": "The formula for torque (\u03c4) is given by \u03c4=I*\\alpha, where I is the moment of inertia and \\alpha is the angular acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis17a-h2"
+        ],
+        "title": "Finding Angular Acceleration",
+        "text": "Angular acceleration (\\alpha) can be calculated using the formula $$\\alpha=\\frac{\\omega_f-\\omega_i}{t}$$, where $$\\omega_f$$ is the final angular velocity, $$\\omega_i$$ is the initial angular velocity, and $$t$$ is the time taken.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis17a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis17a-h3"
+        ],
+        "title": "Calculate Angular Acceleration",
+        "text": "Given that the initial angular velocity $$\\omega_i$$ is $$0$$ $$\\frac{rad}{s}$$, the final angular velocity $$\\omega_f$$ is $$20$$ $$\\frac{rad}{s}$$, and the time (t) is $$10$$ s, calculate the angular acceleration (\\alpha).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis17a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis17a-h4"
+        ],
+        "title": "Calculate Torque",
+        "text": "Now that you have the angular acceleration (\\alpha) and the moment of inertia (I) is $$4$$ $$kg m^2$$, use the formula \u03c4=I*\\alpha to find the torque.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

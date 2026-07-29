@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ace918bnlaws8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Force",
+        "text": "The force acting on the particle is given as $$18$$ N in the i direction. This means the force is constant and acts in a straight line.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws8b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws8b-h1"
+        ],
+        "title": "Using Newton's Second Law",
+        "text": "According to Newton's second law, the acceleration can be calculated using the formula: $$F=ma$$. Here, F is the force, $$m$$ is the mass, and a is the acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws8b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws8b-h2"
+        ],
+        "title": "Calculate the Acceleration",
+        "text": "Use the formula $$F=ma$$ to find the acceleration of the particle. Given $$F=18$$ N and $$m=2$$ kg, calculate a.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws8b-h4",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws8b-h3"
+        ],
+        "title": "Kinematic Equation for Distance",
+        "text": "To find the distance traveled, use the kinematic equation: $$d=ut+0.5{at}^2$$, where u is the initial velocity, a is the acceleration, and $$t$$ is the time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws8b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$112.5$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws8b-h4"
+        ],
+        "title": "Calculate the Distance",
+        "text": "Given that the initial velocity $$u=0$$, acceleration $$a=9$$ $$\\frac{m}{s^2}$$, and time $$t=5$$ s, calculate the distance using the formula $$d=ut+0.5{at}^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

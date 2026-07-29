@@ -1,0 +1,48 @@
+[
+    {
+        "id": "ad30139T312-invtrigeval-P02a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of the arccos",
+        "text": "There is an angle $$0$$ $$\\leq$$ $$\\theta$$ $$\\leq$$ pi such that $$\\arccos(1/2)=\\theta$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad30139T312-invtrigeval-P02a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad30139T312-invtrigeval-P02a-h1"
+        ],
+        "title": "Definition of the cosine",
+        "text": "$$\\arccos(1/2)=\\theta$$ if and only if $$\\cos(\\theta)=1/2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad30139T312-invtrigeval-P02a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad30139T312-invtrigeval-P02a-h2"
+        ],
+        "title": "SOHCAHTOA",
+        "text": "$$\\cos(\\theta)$$ is the ratio of the adjacent side to the hypotenuse of a right triangle with angle $$\\theta$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad30139T312-invtrigeval-P02a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad30139T312-invtrigeval-P02a-h3"
+        ],
+        "title": "Important right triangles",
+        "text": "The right triangle with adjacent side length $$\\frac{1}{2}$$ and hypotenuse $$1$$ is the $$30-60-90$$ triangle where the angle $$\\theta$$ $$=\\frac{\\pi}{3}$$\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,111 @@
+[
+    {
+        "id": "ae2513baca1a7dderivative2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Potensregeln",
+        "text": "Om $$f(x)=x^n$$, $$d\u00e5$$ $$f'(x)={nx}**{n-1}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ae2513baca1a7dderivative2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae2513baca1a7dderivative2a-h1"
+        ],
+        "title": "Till\u00e4mpning av potensregeln $$1$$",
+        "text": "F\u00f6r att f\u00e5 derivatan av $$5x^3$$, $$multiplicerar$$ $$vi$$ $$v\u00e5r$$ $$konstant$$ $$(5)$$ $$med$$ $$v\u00e5r$$ $$exponent$$ $$(3)$$ $$och$$ $$subtraherar$$ $$exponentens$$ $$potens$$ $$med$$ $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ae2513baca1a7dderivative2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$15x^2$$"
+        ],
+        "dependencies": [
+            "ae2513baca1a7dderivative2a-h2"
+        ],
+        "title": "Till\u00e4mpning av potensregeln $$2$$",
+        "text": "Vad \u00e4r derivatan av $$5x^3$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ae2513baca1a7dderivative2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae2513baca1a7dderivative2a-h3"
+        ],
+        "title": "Till\u00e4mpning av potensregeln $$3$$",
+        "text": "F\u00f6r att f\u00e5 derivatan av $$-x$$, $$multiplicerar$$ $$vi$$ $$v\u00e5r$$ $$konstant$$ $$(-1)$$ med v\u00e5r exponent (1) och subtraherar exponentens potens med $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ae2513baca1a7dderivative2a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "ae2513baca1a7dderivative2a-h4"
+        ],
+        "title": "Till\u00e4mpning av potensregeln $$2$$",
+        "text": "Vad \u00e4r derivatan av $$-x$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ae2513baca1a7dderivative2a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ae2513baca1a7dderivative2a-h5"
+        ],
+        "title": "Konstanteregeln",
+        "text": "Om f(x) \u00e4r en konstant c, $$f'(x)=0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ae2513baca1a7dderivative2a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "ae2513baca1a7dderivative2a-h6"
+        ],
+        "title": "Till\u00e4mpning av konstantregeln",
+        "text": "Vad \u00e4r derivatan av 1?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ae2513baca1a7dderivative2a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ae2513baca1a7dderivative2a-h7"
+        ],
+        "title": "Summaregeln",
+        "text": "Du kan l\u00e4gga ihop de tv\u00e5 separata derivatorna som vi just hittade f\u00f6r att hitta v\u00e5rt svar.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

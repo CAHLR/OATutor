@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a66decea2d77b8chainrule1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Kedjeregeln",
+        "text": "Kom ih\u00e5g, kedjeregeln i Leibniz notation s\u00e4ger oss att $$\\frac{dy}{dx}=\\frac{dy}{du$$} $$\\frac{du}{dx}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a66decea2d77b8chainrule1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a66decea2d77b8chainrule1a-h1"
+        ],
+        "title": "Hitta derivatan",
+        "text": "F\u00f6rst, f\u00f6rs\u00f6k att hitta derivatan av $$y$$ med avseende p\u00e5 u. Best\u00e4m sedan derivatan av u med avseende p\u00e5 $$x$$. $$Att$$ $$multiplicera$$ $$de$$ $$tv\u00e5$$ $$borde$$ $$ge$$ $$det$$ $$r\u00e4tta$$ $$svaret!$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a66decea2d77b8chainrule1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a66decea2d77b8chainrule1a-h2"
+        ],
+        "title": "Hitta $$\\frac{dy}{du}$$",
+        "text": "Vad \u00e4r $$\\frac{dy}{du}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a66decea2d77b8chainrule1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4x$$"
+        ],
+        "dependencies": [
+            "a66decea2d77b8chainrule1a-h3"
+        ],
+        "title": "Hitta $$\\frac{du}{dx}$$",
+        "text": "Vad \u00e4r $$\\frac{du}{dx}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a66decea2d77b8chainrule1a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a66decea2d77b8chainrule1a-h4"
+        ],
+        "title": "S\u00e4tt in",
+        "text": "Gl\u00f6m inte att s\u00e4tta in vad vi har f\u00f6r u i termer av $$x$$ f\u00f6r att ge v\u00e5rt slutgiltiga svar i termer av $$x!$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

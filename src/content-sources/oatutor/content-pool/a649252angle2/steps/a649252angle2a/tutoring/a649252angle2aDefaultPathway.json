@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a649252angle2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Double-angle formula for cosine",
+        "text": "Recall one of the double-angle formulas for cosine: cos(2A) $$=$$ $$2cos^2\\left(A\\right)$$ - $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle2a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2cos^2\\left(A\\right)-1$$"
+        ],
+        "dependencies": [
+            "a649252angle2a-h1"
+        ],
+        "title": "Choose the correct formula",
+        "text": "Which double-angle formula for cosine expresses cos(2A) in terms of cos(A) only?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2cos^2\\left(A\\right)-1$$",
+            "$$1-2sin^2\\left(A\\right)$$",
+            "$$cos^2\\left(A\\right)-sin^2\\left(A\\right)$$",
+            "$$2cos(A)-1$$"
+        ]
+    },
+    {
+        "id": "a649252angle2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle2a-h1"
+        ],
+        "title": "Identify the angle",
+        "text": "In the expression cos(6x), if we consider it as cos(2A), what would A be?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle2a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3x$$"
+        ],
+        "dependencies": [
+            "a649252angle2a-h2"
+        ],
+        "title": "Determine A",
+        "text": "If cos(6x) is written as cos(2A), what is A?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

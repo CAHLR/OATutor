@@ -1,0 +1,70 @@
+[
+    {
+        "id": "afb69a0sumprod7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose a side to simplify",
+        "text": "It is often easier to start with the more complex side of the identity and simplify it to match the simpler side.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod7a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\fraccos^s\\left(2\\theta\\right)in^2\\left(\\theta\\right)}$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod7a-h1"
+        ],
+        "title": "Identify the more complex side",
+        "text": "Which side of the identity, $${\\operatorname{csc}\\left(\\theta\\right)}^2-2$$ or $$\\fraccos^s\\left(2\\theta\\right)in^2\\left(\\theta\\right)}$$ appears more complex and might be easier to simplify?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod7a-h1"
+        ],
+        "title": "Apply a double-angle identity",
+        "text": "Recall the double-angle identities for cosine. Which one involves sine squared?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod7a-h2"
+        ],
+        "title": "Simplify the expression",
+        "text": "Split the fraction and use a reciprocal identity to simplify the expression to match the other side of the identity.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod7a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$${\\operatorname{csc}\\left(\\theta\\right)}^2-2$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod7a-h3"
+        ],
+        "title": "Final simplification",
+        "text": "Simplify $$\\frac{1-2sin^2\\left(\\theta\\right)}{{ssin^2eft(\\theta\\right)}$$ by splitting the fraction and applying the reciprocal identity for $$\\frac{1}{sin^2\\left(\\theta\\right)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

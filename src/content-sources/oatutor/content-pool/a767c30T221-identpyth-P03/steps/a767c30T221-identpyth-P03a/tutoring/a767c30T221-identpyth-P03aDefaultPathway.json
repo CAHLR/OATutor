@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a767c30T221-identpyth-P03a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor out the $$10$$",
+        "text": "$$10\\sin**2(\\pi/15)+10\\cos**2(\\pi/15)=10\\left(\\sin**2(\\pi/15)+\\cos**2(\\pi/15)\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a767c30T221-identpyth-P03a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a767c30T221-identpyth-P03a-h1"
+        ],
+        "title": "Apply the trig identity",
+        "text": "$$\\sin**2(\\pi/15)+\\cos**2(\\pi/15)=1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a767c30T221-identpyth-P03a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a767c30T221-identpyth-P03a-h2"
+        ],
+        "title": "Put it together",
+        "text": "$$10\\left(\\sin**2(\\pi/15)+\\cos**2(\\pi/15)\\right)=10$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a56bd16newtonapps26a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Position Function",
+        "text": "The position function is given by $$x(t)=p t^3+q t^2$$. To find the force, we need to first find the acceleration. How can we find acceleration from the position function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps26a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps26a-h1"
+        ],
+        "title": "Finding Velocity",
+        "text": "To find the velocity, differentiate the position function $$x(t)=p t^3+q t^2$$ with respect to time $$t$$. What is the expression for velocity v(t)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps26a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3p t^2+2q t$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps26a-h2"
+        ],
+        "title": "Velocity Expression",
+        "text": "Differentiate $$x(t)=p t^3+q t^2$$ with respect to $$t$$ to find v(t).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps26a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps26a-h3"
+        ],
+        "title": "Finding Acceleration",
+        "text": "Now, differentiate the velocity function $$v(t)=3p t^2+2q t$$ with respect to time $$t$$ to find the acceleration a(t).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps26a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6p t+2q$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps26a-h4"
+        ],
+        "title": "Acceleration Expression",
+        "text": "Differentiate $$v(t)=3p t^2+2q t$$ with respect to $$t$$ to find a(t).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps26a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps26a-h5"
+        ],
+        "title": "Using Newton's Second Law",
+        "text": "According to Newton's second law, the net force F on an object is given by $$F=m a$$, where $$m$$ is the mass and a is the acceleration. Use this to find the net force on the object.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps26a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6m p t+2m q$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps26a-h6"
+        ],
+        "title": "Net Force Expression",
+        "text": "Using $$F=m a$$ and the expression for a(t), find the net force F(t).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

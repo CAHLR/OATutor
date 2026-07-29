@@ -1,0 +1,113 @@
+[
+    {
+        "id": "ad220b3GraphQuadratic30a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpret the Meaning of A(x)",
+        "text": "We can find the maximum area of the patio by finding the maximum point of the function A(x).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad220b3GraphQuadratic30a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad220b3GraphQuadratic30a-h1"
+        ],
+        "title": "Put The Parabola Into Standard Form",
+        "text": "We need to foil out the function A(x) and put it into standard form before finding the maximum. $$A(x)=x \\left(80-2x\\right)=-2x^2+80x$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad220b3GraphQuadratic30a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad220b3GraphQuadratic30a-h2"
+        ],
+        "title": "Decide the Shape of Parabola",
+        "text": "Given any parabola in the form $${ax}^2+bx+c$$, a is called the leading coefficient of the parabola. If a is negative, the parabola opens downward. If a is positive, the parabola opens upward.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad220b3GraphQuadratic30a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad220b3GraphQuadratic30a-h3"
+        ],
+        "title": "Decide the Shape of Parabola",
+        "text": "Since a is negative, the parabola opens downward. So the quadratic equation has a maximum.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad220b3GraphQuadratic30a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ad220b3GraphQuadratic30a-h4"
+        ],
+        "title": "Find the Equation For Axis of Symmetry",
+        "text": "Given $${ax}^2+bx+c$$, the axis of symmetry for the parabola is $$x=\\frac{-b}{2a}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad220b3GraphQuadratic30a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ad220b3GraphQuadratic30a-h5"
+        ],
+        "title": "Find the Equation For Axis of Symmetry",
+        "text": "In the given parabola, $$a=-2$$, $$b=80$$. The axis of symmetry is $$x=20$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad220b3GraphQuadratic30a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ad220b3GraphQuadratic30a-h6"
+        ],
+        "title": "Find the $$y$$ coordinate of Vertex",
+        "text": "The maximum or minimum point of the parabola is located on the axis of symmetry. Given that $$x=a$$ is the axis of symmetry, we can find the $$y$$ coordinate of the maximum or minimum point by computing f(a).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad220b3GraphQuadratic30a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$800$$"
+        ],
+        "dependencies": [
+            "ad220b3GraphQuadratic30a-h7"
+        ],
+        "title": "Find the $$y$$ coordinate of Vertex",
+        "text": "Subsitute $$x=20$$ into $$A(x)=-2x^2+80x$$ , $$A(20)=$$? Please enter your answer in decimal form and round it to nearest tenth.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad220b3GraphQuadratic30a-h9",
+        "type": "hint",
+        "dependencies": [
+            "ad220b3GraphQuadratic30a-h8"
+        ],
+        "title": "Put The Answer Into (x,y)",
+        "text": "We know the maximum point of the parabola exists at $$x=20$$ and $$A(20)=800$$. So the maximum area of the patio is $$800$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

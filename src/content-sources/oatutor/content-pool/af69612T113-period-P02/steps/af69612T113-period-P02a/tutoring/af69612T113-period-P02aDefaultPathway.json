@@ -1,0 +1,36 @@
+[
+    {
+        "id": "af69612T113-period-P02a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of period",
+        "text": "A function has period $$w$$ if $$p\\left(x+kw\\right)=p(x)$$ for all $$x, $$ where $$k$$ is an integer.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af69612T113-period-P02a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af69612T113-period-P02a-h1"
+        ],
+        "title": "Multiple periods",
+        "text": "$$\\sin(\\theta)$$ is $$2\\pi$$ periodic, because you return to the original position on the circle when you have traveled $$2\\pi$$ radians. But you also travel back to the same position after $$4\\pi$$ or $$6\\pi$$ or $$100\\pi$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af69612T113-period-P02a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af69612T113-period-P02a-h2"
+        ],
+        "title": "Not a period",
+        "text": "$$\\sin(\\theta)$$ is not $$3\\pi$$ periodic. For example, $$\\sin(\\pi/2)=1$$ but $$\\sin(\\pi/2+3\\pi)=\\sin(3\\pi/2+2\\pi)=-1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

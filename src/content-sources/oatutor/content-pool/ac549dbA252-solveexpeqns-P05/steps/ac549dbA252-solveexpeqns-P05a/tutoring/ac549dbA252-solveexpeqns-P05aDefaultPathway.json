@@ -1,0 +1,81 @@
+[
+    {
+        "id": "ac549dbA252-solveexpeqns-P05a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply laws of exponents",
+        "text": "We apply the law of exponents to write everything in base 2: $$a**{bc}=(a**b)**c.$$ \\n $$4**{\\log_2(x)}-2**{\\log_2(x)}=2**{2\\log_2(x)}-2**{\\log_2(x)}=12$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac549dbA252-solveexpeqns-P05a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac549dbA252-solveexpeqns-P05a-h1"
+        ],
+        "title": "Apply the laws of logarithms for powers to the first term",
+        "text": "$$c\\log_b(a)=\\log_b(a**c),$$ so \\n $$2**{2\\log_2(x)}-2**{\\log_2(x)}=2**{\\log_2(x**2)}-2**{\\log_2(x)}=12$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac549dbA252-solveexpeqns-P05a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac549dbA252-solveexpeqns-P05a-h2"
+        ],
+        "title": "Apply cancellation property",
+        "text": "Exponentiation undoes logarithms: $$b**{\\log_b(a)}=a.$$ \\n\\n$$2**{\\log_2(x**2)}-2**{\\log_2(x)}=x**2-x=12$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac549dbA252-solveexpeqns-P05a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ac549dbA252-solveexpeqns-P05a-h3"
+        ],
+        "title": "Solve for $$x$$ (algebra).",
+        "text": "In the end, it is always algebra. $$x^2-x=12$$ becomes $$x^2-x-12=0$$ which factors as $$\\left(x-4\\right) \\left(x+3\\right)=0.$$ The solutions to this equation are $$x=4$$ and $$-3.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac549dbA252-solveexpeqns-P05a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "ac549dbA252-solveexpeqns-P05a-h4"
+        ],
+        "title": "Check the domain",
+        "text": "Do both solutions make sense?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ac549dbA252-solveexpeqns-P05a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ac549dbA252-solveexpeqns-P05a-h5"
+        ],
+        "title": "Conclusion",
+        "text": "Only $$x=4$$ makes sense since we cannot input negative values into logarithms.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

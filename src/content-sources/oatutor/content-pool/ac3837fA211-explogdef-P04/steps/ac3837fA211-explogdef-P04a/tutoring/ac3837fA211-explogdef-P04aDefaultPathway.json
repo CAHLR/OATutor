@@ -1,0 +1,39 @@
+[
+    {
+        "id": "ac3837fA211-explogdef-P04a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The power that $$9$$ is raised to to get $$81$$."
+        ],
+        "dependencies": [],
+        "title": "Interpret the logarithm",
+        "text": "What number is $$\\log_{9}\\left(81\\right)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "The power that $$9$$ is raised to to get $$81$$.",
+            "The number raised to the 9th power that gives $$81$$.",
+            "The 9th root of $$81$$."
+        ]
+    },
+    {
+        "id": "ac3837fA211-explogdef-P04a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "ac3837fA211-explogdef-P04a-h1"
+        ],
+        "title": "How many 9's",
+        "text": "How many copies of $$9$$ are multiplied together to get 81?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

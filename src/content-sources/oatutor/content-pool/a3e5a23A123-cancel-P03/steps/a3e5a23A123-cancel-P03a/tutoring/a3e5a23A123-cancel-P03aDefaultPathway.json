@@ -1,0 +1,84 @@
+[
+    {
+        "id": "a3e5a23A123-cancel-P03a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Cancel the common nonzero factor",
+        "text": "Cancel a factor of $$5$$ from both sides: \\n $$5\\frac{1}{5} x^2=20\\frac{1}{5} x^4$$ \\n $$x^2=4x^4$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3e5a23A123-cancel-P03a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3e5a23A123-cancel-P03a-h1"
+        ],
+        "title": "Do not lose solutions",
+        "text": "We cannot cancel the $$x^2$$ because we cannot guarantee that it is nonzero. In fact, we can see that zero is a solution. \\n $$4\\left(0^4\\right)=0^2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3e5a23A123-cancel-P03a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3e5a23A123-cancel-P03a-h2"
+        ],
+        "title": "Move all terms to the RHS",
+        "text": "$$0=4x^4-x^2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3e5a23A123-cancel-P03a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3e5a23A123-cancel-P03a-h3"
+        ],
+        "title": "Factor out the $$x^2$$ from both terms",
+        "text": "$$0=4x^4-x^2=x^2 \\left(4x^2-1\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3e5a23A123-cancel-P03a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3e5a23A123-cancel-P03a-h4"
+        ],
+        "title": "Recognize the difference of squares",
+        "text": "$$4x^2-1$$ is a difference of squares, so the equation factors further as \\n $$0=x^2 \\left(2x+1\\right) \\left(2x-1\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3e5a23A123-cancel-P03a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a3e5a23A123-cancel-P03a-h5"
+        ],
+        "title": "Zero product property",
+        "text": "$$0=x^2 \\left(2x+1\\right) \\left(2x-1\\right)$$ if and only if $$x^2=0$$ or $$2x+1=0$$ or $$2x-1=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3e5a23A123-cancel-P03a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a3e5a23A123-cancel-P03a-h6"
+        ],
+        "title": "Solve for the unknown",
+        "text": "The solutions are $$x=0$$ or $$x=\\frac{-1}{2}$$ or $$x=\\frac{1}{2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

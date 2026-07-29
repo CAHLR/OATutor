@@ -1,0 +1,105 @@
+[
+    {
+        "id": "afb69a0sumprod35a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall sum-to-product formula",
+        "text": "Recall the sum-to-product formula for cos(A) - cos(B).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod35a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$cos(A)-cos(B)=-2$$ $$sin\\left(\\frac{A+B}{2}\\right)$$ $$sin\\left(\\frac{A-B}{2}\\right)$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod35a-h1"
+        ],
+        "title": "Identify the correct formula",
+        "text": "Which formula should be used to rewrite cos(A) - cos(B) as a product?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$cos(A)-cos(B)=-2$$ $$sin\\left(\\frac{A+B}{2}\\right)$$ $$sin\\left(\\frac{A-B}{2}\\right)$$",
+            "$$cos(A)-cos(B)=2$$ $$sin\\left(\\frac{A+B}{2}\\right)$$ $$sin\\left(\\frac{A-B}{2}\\right)$$",
+            "$$cos(A)-cos(B)=-2$$ $$cos\\left(\\frac{A+B}{2}\\right)$$ $$cos\\left(\\frac{A-B}{2}\\right)$$",
+            "$$cos(A)-cos(B)=-2$$ $$cos\\left(\\frac{A+B}{2}\\right)$$ $$sin\\left(\\frac{A-B}{2}\\right)$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod35a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod35a-h1"
+        ],
+        "title": "Identify A and B",
+        "text": "Identify the values of A and B from the given expression.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod35a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A=58$$ $$degrees, B=12$$ degrees"
+        ],
+        "dependencies": [
+            "afb69a0sumprod35a-h2"
+        ],
+        "title": "What are A and B?",
+        "text": "In cos(58 degrees) - cos(12 degrees), what are the values of A and B?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$A=58$$ $$degrees, B=12$$ degrees",
+            "$$A=12$$ $$degrees, B=58$$ degrees",
+            "$$A=35$$ $$degrees, B=23$$ degrees",
+            "$$A=58$$ $$degrees, B=58$$ degrees"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod35a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod35a-h2"
+        ],
+        "title": "Calculate the arguments for the product",
+        "text": "Calculate the values for $$\\frac{A+B}{2}$$ and $$\\frac{A-B}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod35a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{A+B}{2}=35$$ $$\\frac{\\operatorname{degrees}\\left(A-B\\right)}{2}=23$$ degrees"
+        ],
+        "dependencies": [
+            "afb69a0sumprod35a-h3"
+        ],
+        "title": "Calculate the sum and difference arguments",
+        "text": "What are the values of $$\\frac{A+B}{2}$$ and $$\\frac{A-B}{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{A+B}{2}=35$$ $$\\frac{\\operatorname{degrees}\\left(A-B\\right)}{2}=23$$ degrees",
+            "$$\\frac{A+B}{2}=23$$ $$\\frac{\\operatorname{degrees}\\left(A-B\\right)}{2}=35$$ degrees",
+            "$$\\frac{A+B}{2}=70$$ $$\\frac{\\operatorname{degrees}\\left(A-B\\right)}{2}=46$$ degrees",
+            "$$\\frac{A+B}{2}=35$$ $$\\frac{\\operatorname{degrees}\\left(A-B\\right)}{2}=12$$ degrees"
+        ]
+    }
+]

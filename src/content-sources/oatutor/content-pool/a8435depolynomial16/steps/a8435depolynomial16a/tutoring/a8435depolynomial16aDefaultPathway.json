@@ -1,0 +1,162 @@
+[
+    {
+        "id": "a8435depolynomial16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up Divison",
+        "text": "To check whether $$x-2$$ is a factor of $$4x^3-3x^2-8x+4$$, perform synthetic division. Set up the division using $$x-2$$, which corresponds to $$k=2$$, and write the coefficients of the polynomial 4,-3,-8,4.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8435depolynomial16a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial16a-h1"
+        ],
+        "title": "Synthetic Division",
+        "text": "What should the value of k be if we are dividing by $$x-2$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2$$",
+            "$$-2$$",
+            "$$1$$",
+            "$$-1$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial16a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial16a-h2"
+        ],
+        "title": "Synthetic Division",
+        "text": "Start by bringing down the first coefficient $$4$$. What do you do get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$-8$$",
+            "$$-16$$",
+            "$$4$$",
+            "$$8$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial16a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial16a-h3"
+        ],
+        "title": "Synthetic Division",
+        "text": "What do you get when you add $$8$$ to -3?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$12$$",
+            "$$5$$",
+            "$$16$$",
+            "$$0$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial16a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial16a-h4"
+        ],
+        "title": "Synthetic Division",
+        "text": "Now, multiply $$5$$ by $$k=2$$. What do you get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$-10$$",
+            "$$12$$",
+            "$$10$$",
+            "$$5$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial16a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial16a-h5"
+        ],
+        "title": "Synthetic Division",
+        "text": "What do you get when you add $$10$$ to the next coefficient -8?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2$$",
+            "$$-2$$",
+            "$$8$$",
+            "$$5$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial16a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial16a-h6"
+        ],
+        "title": "Synthetic Division",
+        "text": "Now, multiply $$2$$ by $$k=2$$. What do you get?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$-4$$",
+            "$$4$$",
+            "$$8$$",
+            "$$2$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial16a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a8435depolynomial16a-h7"
+        ],
+        "title": "Remainder",
+        "text": "What does it mean if the remainder is not zero?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

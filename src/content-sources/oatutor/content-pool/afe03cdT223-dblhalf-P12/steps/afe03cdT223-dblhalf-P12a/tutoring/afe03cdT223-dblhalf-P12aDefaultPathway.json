@@ -1,0 +1,36 @@
+[
+    {
+        "id": "afe03cdT223-dblhalf-P12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Half-angle formula",
+        "text": "$$\\sin(x/2)=\\sqrt{\\frac{1-\\cos(x)}{2}}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P12a-h1"
+        ],
+        "title": "Apply formula",
+        "text": "$$\\sin(\\pi/8)=\\sqrt{\\frac{1-\\cos(\\pi/4)}{2}}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P12a-h2"
+        ],
+        "title": "Substitute known values",
+        "text": "$$\\sin(\\pi/8)=\\sqrt{\\frac{1-\\frac{\\sqrt{2}}{2}}{2}}=\\frac12\\sqrt{2-\\sqrt{2}}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a70ee94pythagorean10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Start with the theorem",
+        "text": "Use $$a^2+b^2=c^2$$, where c is the hypotenuse.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70ee94pythagorean10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a70ee94pythagorean10a-h1"
+        ],
+        "title": "Substitute the known values",
+        "text": "Since $$c=13$$ and one leg is $$5$$, write $$5^2+b^2={13}^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70ee94pythagorean10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a70ee94pythagorean10a-h2"
+        ],
+        "title": "Isolate the missing square",
+        "text": "Compute $$5^2=25$$ and $${13}^2=169$$, then subtract $$25$$ from both sides to get $$b^2=144$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70ee94pythagorean10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a70ee94pythagorean10a-h3"
+        ],
+        "title": "Solve for the leg",
+        "text": "Take the square root of both sides. Since $$b^2=144$$, the missing leg is $$12$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

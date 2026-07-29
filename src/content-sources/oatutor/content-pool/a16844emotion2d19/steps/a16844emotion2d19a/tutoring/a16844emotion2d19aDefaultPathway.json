@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a16844emotion2d19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Rotational Motion",
+        "text": "To find the acceleration of a point on a rotating object, we need to consider the centripetal acceleration formula.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d19a-h1"
+        ],
+        "title": "Centripetal Acceleration Formula",
+        "text": "The formula for centripetal acceleration is given by $$a=r {\\omega}^2$$, where $$r$$ is the radius and omega is the angular velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d19a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d19a-h2"
+        ],
+        "title": "Convert Angular Velocity",
+        "text": "The angular velocity omega in radians per second can be found by converting the given revolutions per minute $$\\frac{rev}{min}$$ to radians per second $$\\frac{rad}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d19a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$37.7$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d19a-h3"
+        ],
+        "title": "Calculate Angular Velocity",
+        "text": "Convert $$360.0$$ $$\\frac{rev}{min}$$ to $$\\frac{rad}{s}$$. Use the conversion factor: $$1$$ rev $$=$$ $$2\\pi$$ rad and $$1$$ min $$=$$ $$60$$ s.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d19a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$142$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d19a-h4"
+        ],
+        "title": "Calculate Centripetal Acceleration",
+        "text": "Use the formula $$a=r {\\omega}^2$$ with $$r=0.1$$ $$m$$ and $$omega=37.7$$ $$\\frac{rad}{s}$$ to find the acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

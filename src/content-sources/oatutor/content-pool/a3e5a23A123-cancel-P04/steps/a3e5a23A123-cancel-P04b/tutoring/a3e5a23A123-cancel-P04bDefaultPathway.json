@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a3e5a23A123-cancel-P04b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply step from above",
+        "text": "Subtract $$x^2$$ from both sides: \\n $$x^4-x^2=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3e5a23A123-cancel-P04b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3e5a23A123-cancel-P04b-h1"
+        ],
+        "title": "Factor out common $$x^2$$ term",
+        "text": "$$x^2 \\left(x^2-1\\right)=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3e5a23A123-cancel-P04b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3e5a23A123-cancel-P04b-h2"
+        ],
+        "title": "Difference of squares",
+        "text": "Continue to factor: $$x^2 \\left(x-1\\right) \\left(x+1\\right)=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3e5a23A123-cancel-P04b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3e5a23A123-cancel-P04b-h3"
+        ],
+        "title": "Zero product property",
+        "text": "$$x^2 \\left(x-1\\right) \\left(x+1\\right)=0$$ if and only if $$x^2=0$$, $$x-1=0$$, or $$x+1=0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

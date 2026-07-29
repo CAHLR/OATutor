@@ -1,0 +1,44 @@
+[
+    {
+        "id": "aeb11eedomain14a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [],
+        "title": "Restrictions",
+        "text": "Are there any restrictions on the values we can subsitute for $$x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "aeb11eedomain14a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "all real numbers"
+        ],
+        "dependencies": [
+            "aeb11eedomain14a-h1"
+        ],
+        "title": "Domain",
+        "text": "If there are no restrictions, then what is the domain?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$x \\geq 0$$",
+            "$$x<0$$",
+            "$$x<5$$ and $$x>5$$",
+            "all real numbers"
+        ]
+    }
+]

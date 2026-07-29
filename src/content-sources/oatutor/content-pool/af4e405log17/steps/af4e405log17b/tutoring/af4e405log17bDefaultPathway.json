@@ -1,0 +1,56 @@
+[
+    {
+        "id": "af4e405log17b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Convert to Exponential Form",
+        "text": "We know that we're trying to solve $$ln(x)=9$$. Rewrite this expression first into exponential form. Remember that the base for ln functions is e.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "af4e405log17b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$e^9=x$$"
+        ],
+        "dependencies": [
+            "af4e405log17b-h1"
+        ],
+        "title": "Determing the Exponential Form",
+        "text": "What is the exponential form of $$ln(x)=9$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$e^9=x$$",
+            "$$9^e=x$$",
+            "$$x^9=e$$",
+            "$$9^x=e$$"
+        ]
+    },
+    {
+        "id": "af4e405log17b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$e^9$$"
+        ],
+        "dependencies": [
+            "af4e405log17b-h2"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "What is the solution for $$x$$ in the exponential equation $$e^9=x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$e^9$$",
+            "$$9^e$$"
+        ]
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a16844emotion2d7d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Position Function",
+        "text": "The position function is given as $$r(t)=3t^2 i-7t^3 j-5t^{\\left(-2\\right)} k$$. To find the speed, we need to first find the velocity by differentiating the position function with respect to time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d7d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d7d-h1"
+        ],
+        "title": "Differentiating the Position Function",
+        "text": "Differentiate each component of the position function with respect to time $$t$$. Remember that the derivative of $$t^n$$ is $$n t^{n-1}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d7d-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6t i-21t^2 j+10t^{\\left(-3\\right)} k$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d7d-h2"
+        ],
+        "title": "Calculate the Velocity Components",
+        "text": "Differentiate each component:\\n- For the i component: $$3t^2$$ becomes $$6t$$\\n- For the j component: $$-7t^3$$ becomes $$-21t^2$$\\n- For the k component: $$-5t^{\\left(-2\\right)}$$ becomes $$10t^{\\left(-3\\right)}$$",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d7d-h4",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d7d-h3"
+        ],
+        "title": "Finding the Speed",
+        "text": "The speed is the magnitude of the velocity vector. Use the formula: speed $$=$$ $$\\sqrt{{v_x}^2+{v_y}^2+{v_z}^2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d7d-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$24$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d7d-h4"
+        ],
+        "title": "Calculate the Speed at $$t=1.0$$ s",
+        "text": "Substitute $$t=1.0$$ into the velocity components and calculate the magnitude:\\n- $$v_x$$ $$=$$ $$6\\times1$$\\n- $$v_y$$ $$=$$ $$-21\\times1^2$$\\n- $$v_z$$ $$=$$ $$10\\times1^{\\left(-3\\right)}$$\\nThen, calculate the speed: $$\\sqrt{6^2+{\\left(-21\\right)}^2+{10}^2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

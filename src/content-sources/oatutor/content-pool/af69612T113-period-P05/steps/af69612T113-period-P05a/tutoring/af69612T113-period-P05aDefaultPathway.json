@@ -1,0 +1,60 @@
+[
+    {
+        "id": "af69612T113-period-P05a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The minimum period of $$\\sin(\\theta)$$",
+        "text": "The minimum period of $$\\sin(\\theta)$$ is $$2\\pi$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af69612T113-period-P05a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af69612T113-period-P05a-h1"
+        ],
+        "title": "Relate $$x$$ and $$\\theta$$",
+        "text": "To find the period of $$\\sin(\\pi{x}), $$ determine the values of $$x$$ for which the argument $$\\pi{x}$$ spans from $$0$$ to $$2\\pi, $$ since $$\\sin(\\theta)$$ completes one period over that interval.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af69612T113-period-P05a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af69612T113-period-P05a-h2"
+        ],
+        "title": "Relate $$x$$ and $$\\theta$$",
+        "text": "Set $$\\pi$$ $$x\\$\\$=$$ $$\\theta$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af69612T113-period-P05a-h4",
+        "type": "hint",
+        "dependencies": [
+            "af69612T113-period-P05a-h3"
+        ],
+        "title": "Substitute",
+        "text": "Substitute $$\\theta$$ with pix in the interval for a single period ( $$0<\\theta<2\\pi$$ ): \\n $$0$$ < $$\\pi$$ $$x$$ < $$2\\pi$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af69612T113-period-P05a-h5",
+        "type": "hint",
+        "dependencies": [
+            "af69612T113-period-P05a-h4"
+        ],
+        "title": "Solve for the interval of $$x$$",
+        "text": "Dividing the entire inequality $$0$$ < $$\\pi$$ $$x$$ < $$2\\pi$$ by $$\\pi, $$ we get $$0<x<2$$. Thus, the period is $$2-0=2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

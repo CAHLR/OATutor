@@ -1,0 +1,126 @@
+[
+    {
+        "id": "ac3837fA211-explogdef-P03a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x$$"
+        ],
+        "dependencies": [],
+        "title": "Base of a logarithm",
+        "text": "Which variable is the base of the logarithm in the equation $$\\log_{x}\\left(y\\right)=z$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$y$$",
+            "$$z$$",
+            "$$x$$",
+            "$$x$$"
+        ]
+    },
+    {
+        "id": "ac3837fA211-explogdef-P03a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac3837fA211-explogdef-P03a-h1"
+        ],
+        "title": "Definition connection",
+        "text": "The base is the number that\u2019s repeatedly multiplied to get the argument of the logarithm.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac3837fA211-explogdef-P03a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x^z=y$$"
+        ],
+        "dependencies": [
+            "ac3837fA211-explogdef-P03a-h2"
+        ],
+        "title": "Log-exponent equivalence",
+        "text": "The equation $$\\log_{x}\\left(y\\right)=z$$ is the same as which exponential equation?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$x^y=z$$",
+            "$$x^z=y$$",
+            "$$z^x=y$$"
+        ]
+    },
+    {
+        "id": "ac3837fA211-explogdef-P03a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ac3837fA211-explogdef-P03a-h3"
+        ],
+        "title": "Connecting logs and exponentials",
+        "text": "$$\\log_{x}\\left(y\\right)=z$$ is saying that $$x^z=y$$. It asks which power of the base gives the argument.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac3837fA211-explogdef-P03a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ac3837fA211-explogdef-P03a-h4"
+        ],
+        "title": "Eliminate a base",
+        "text": "We can eliminate any choices involving log base $$4$$, because $$4$$ cannot be the base of any equation, since the number $$4$$ raised to an integer power will never be odd. And both $$3$$ and $$81$$ are odd numbers.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac3837fA211-explogdef-P03a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\log_{3}\\left(81\\right)=4$$"
+        ],
+        "dependencies": [
+            "ac3837fA211-explogdef-P03a-h5"
+        ],
+        "title": "What it means",
+        "text": "Which equation is true?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\log_{3}\\left(81\\right)=4$$",
+            "$$\\log_{3}\\left(4\\right)=81$$"
+        ]
+    },
+    {
+        "id": "ac3837fA211-explogdef-P03a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ac3837fA211-explogdef-P03a-h6"
+        ],
+        "title": "Rephrase",
+        "text": "$$\\log_{3}\\left(81\\right)$$ is asking which power of $$3$$ gives $$81$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac3837fA211-explogdef-P03a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ac3837fA211-explogdef-P03a-h7"
+        ],
+        "title": "Conclusion",
+        "text": "Rewriting the input in terms of powers of $$3$$ we see that $$\\log_{3}\\left(81\\right)=\\log_{3}\\left(3^4\\right)=4$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

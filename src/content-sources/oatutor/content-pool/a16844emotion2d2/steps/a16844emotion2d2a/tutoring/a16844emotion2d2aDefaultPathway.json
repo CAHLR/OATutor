@@ -1,0 +1,94 @@
+[
+    {
+        "id": "a16844emotion2d2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Displacement",
+        "text": "Displacement is a vector quantity that has both magnitude and direction. It represents the change in position of an object.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d2a-h1"
+        ],
+        "title": "Adding Vectors",
+        "text": "To find the final displacement, you need to add the two displacement vectors together. Remember to add the components separately.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$472$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d2a-h2"
+        ],
+        "title": "Calculate the $$x-component$$",
+        "text": "Add the $$x-components$$ of the two displacement vectors: $$300+172$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$80.3$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d2a-h3"
+        ],
+        "title": "Calculate the $$y-component$$",
+        "text": "Add the $$y-components$$ of the two displacement vectors: $$0+80.3$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d2a-h4"
+        ],
+        "title": "Final Displacement Vector",
+        "text": "Combine the $$x$$ and $$y$$ components to form the final displacement vector.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d2a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$472i+80.3j$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d2a-h5"
+        ],
+        "title": "Final Displacement",
+        "text": "What is the final displacement of the golf ball from where it started?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$472i+80.3j$$",
+            "$$128i+80.3j$$",
+            "$$472i+80.3j$$",
+            "$$472.0i-80.3j$$",
+            "$$80.3i+472j$$"
+        ]
+    }
+]

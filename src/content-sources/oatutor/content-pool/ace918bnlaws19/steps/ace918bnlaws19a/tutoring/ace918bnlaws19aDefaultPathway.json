@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ace918bnlaws19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the mass of the object, we need to use Newton's second law of motion, which states that the net force acting on an object is equal to the mass of the object times its acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws19a-h1"
+        ],
+        "title": "Calculate the Net Force",
+        "text": "The net force can be calculated using the formula for the resultant of two forces acting at an angle: \\( F_{net} $$=$$ \\sqrt{F_1**2 + $${F_2}^2$$ + $$2F_1 F_2 cos\\left(\\theta\\right)$$} \\), where \\( $$F_1$$ $$=$$ $$25$$ \\) N, \\( $$F_2$$ $$=$$ $$45$$ \\) N, and \\( $$\\theta$$ $$=$$ $$70$$ \\) degrees.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws19a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$58.78$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws19a-h2"
+        ],
+        "title": "Calculate the Net Force",
+        "text": "Using the formula \\( F_{net} $$=$$ \\sqrt{25**2 + $${45}^2$$ + $$2\\times25\\times45 cos\\left(70\\right)$$} \\), calculate the net force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws19a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws19a-h3"
+        ],
+        "title": "Use Newton's Second Law",
+        "text": "Now that you have the net force, use Newton's second law \\( F_{net} $$=$$ $$m a$$ \\) to find the mass \\( $$m$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws19a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5.85$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws19a-h4"
+        ],
+        "title": "Calculate the Mass",
+        "text": "Using the formula \\( $$m$$ $$=$$ F_{net}/a \\), where \\( F_{net} $$=$$ $$58.78$$ \\) N and \\( a $$=$$ $$10$$ \\) $$\\frac{m}{s^2}$$, calculate the mass.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

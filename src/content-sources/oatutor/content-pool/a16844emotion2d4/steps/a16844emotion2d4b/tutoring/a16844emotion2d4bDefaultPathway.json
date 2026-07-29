@@ -1,0 +1,106 @@
+[
+    {
+        "id": "a16844emotion2d4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Velocity",
+        "text": "To find the velocity of the particle, we need to differentiate the position vector with respect to time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d4b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d4b-h1"
+        ],
+        "title": "Differentiating the Position Vector",
+        "text": "The position vector is given as $$r(t)=4t^2 i-3j+2t^3 k$$. Differentiate each component with respect to time $$t$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d4b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8t$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d4b-h2"
+        ],
+        "title": "Differentiating the i Component",
+        "text": "Differentiate $$4t^2$$ with respect to $$t$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d4b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d4b-h2"
+        ],
+        "title": "Differentiating the j Component",
+        "text": "Differentiate $$-3.0$$ with respect to $$t$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d4b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6t^2$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d4b-h2"
+        ],
+        "title": "Differentiating the k Component",
+        "text": "Differentiate $$2t^3$$ with respect to $$t$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d4b-h6",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d4b-h3",
+            "a16844emotion2d4b-h4",
+            "a16844emotion2d4b-h5"
+        ],
+        "title": "Combining the Components",
+        "text": "Combine the differentiated components to form the velocity vector v(t).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d4b-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8i+6k$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d4b-h6"
+        ],
+        "title": "Velocity at $$t=1.0$$ s",
+        "text": "Substitute $$t=1.0$$ into the velocity vector $$v(t)=8t i+6t^2 k$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

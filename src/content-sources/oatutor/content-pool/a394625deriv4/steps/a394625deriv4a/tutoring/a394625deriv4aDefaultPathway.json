@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a394625deriv4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Breaking Down the Question",
+        "text": "We can separate the hard functions into $$x^3$$ and $$3sin\\left(x\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a394625deriv4a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3x^2$$"
+        ],
+        "dependencies": [
+            "a394625deriv4a-h1"
+        ],
+        "title": "Find the Derivative of $$x^3$$",
+        "text": "What's the derivative of $$x^3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$3x^2$$",
+            "$$3x$$",
+            "$$3$$"
+        ]
+    },
+    {
+        "id": "a394625deriv4a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "cos(x)"
+        ],
+        "dependencies": [
+            "a394625deriv4a-h2"
+        ],
+        "title": "Find the Derivative of sin(x)",
+        "text": "What's the derivative of sin(x)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "cos(x)",
+            "tan(x)",
+            "sin(x)"
+        ]
+    },
+    {
+        "id": "a394625deriv4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a394625deriv4a-h3"
+        ],
+        "title": "Apply Derivatives' Rule",
+        "text": "Apply the derivative rule of composed functions to find the final solution",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

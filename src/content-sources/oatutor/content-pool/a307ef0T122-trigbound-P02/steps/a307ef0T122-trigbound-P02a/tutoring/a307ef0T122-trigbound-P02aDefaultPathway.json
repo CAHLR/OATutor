@@ -1,0 +1,103 @@
+[
+    {
+        "id": "a307ef0T122-trigbound-P02a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [],
+        "title": "What is the maximum value $$3\\sin**2(\\theta)$$ can attain?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a307ef0T122-trigbound-P02a-h1-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Scaling functions",
+                "text": "Since $$\\sin**2(\\theta)\\leq{1},$$ then $$3\\sin**2(\\theta)\\leq{3}$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a307ef0T122-trigbound-P02a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [],
+        "title": "What is the minimum value $$3\\sin**2(\\theta)$$ can attain?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a307ef0T122-trigbound-P02a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Squares are positive",
+                "text": "Since $$3\\sin**2(\\theta)$$ $$ \\geq 0$$ because it is a square, the minimum value possible is $$0$$.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a307ef0T122-trigbound-P02a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-4$$ and $$-7$$"
+        ],
+        "dependencies": [
+            "a307ef0T122-trigbound-P02a-h1"
+        ],
+        "title": "If $$3\\sin**2(\\theta)$$ is between $$0$$ and $$3$$, what are the possible values of $$3\\sin**2(\\theta)-7?$$",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$-4$$ and $$-7$$",
+            "$$4$$ and $$7$$",
+            "$$\\pm 4$$",
+            "$$\\pm 7$$"
+        ],
+        "subHints": [
+            {
+                "id": "a307ef0T122-trigbound-P02a-h3-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Subtract $$7$$ from endpoints of range",
+                "text": "Subtract $$7$$ from the boundaries: $$0-7=-7$$ and $$3-7=-4$$.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a307ef0T122-trigbound-P02a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a307ef0T122-trigbound-P02a-h3"
+        ],
+        "title": "Find largest in absolute value",
+        "text": "The values range from $$-7$$ to $$-4$$. The largest absolute value (distance from zero) is $$7$$. So, $$k=7.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

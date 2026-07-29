@@ -1,0 +1,46 @@
+[
+    {
+        "id": "ab19046LimitlLaw22a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [],
+        "title": "Plug In $$x=6$$ and Solve for f(x)",
+        "text": "What is $$\\lim_{x\\to6} f(x)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab19046LimitlLaw22a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "ab19046LimitlLaw22a-h1"
+        ],
+        "title": "Plug In $$x=6$$ and Solve for $$g(x)-1$$",
+        "text": "What is $$\\lim_{x\\to6} g(x)-1$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab19046LimitlLaw22a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab19046LimitlLaw22a-h2"
+        ],
+        "title": "Multiply the Limit Values Together",
+        "text": "The limit of functions at same point commute and can be directly divided.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

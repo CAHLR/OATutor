@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a7b6395A141-algprac-P03a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$u^2+4u-5$$"
+        ],
+        "dependencies": [],
+        "title": "Hidden quadratic",
+        "text": "This equation looks like a quadratic equation $${au}^2+bu+c=0$$, where $$u=\\frac{x}{x+1}$$. Rewrite the left-hand side of the equation in terms of $$u.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a7b6395A141-algprac-P03a-h1-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Substitute u",
+                "text": "Substitute u for $$\\frac{x}{x+1}$$ everywhere to get $$u^2+4u-5=0$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a7b6395A141-algprac-P03a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7b6395A141-algprac-P03a-h1"
+        ],
+        "title": "Factor equation",
+        "text": "$$u^2+4u-5=\\left(u+5\\right) \\left(u-1\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7b6395A141-algprac-P03a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7b6395A141-algprac-P03a-h2"
+        ],
+        "title": "Zero product property",
+        "text": "$$\\left(u+5\\right) \\left(u-1\\right)=0$$ if and only if $$u+5=0$$ or $$u-1=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7b6395A141-algprac-P03a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7b6395A141-algprac-P03a-h3"
+        ],
+        "title": "Substitute $$x$$",
+        "text": "Replace u with $$\\frac{x}{x+1}$$ and solve for $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7b6395A141-algprac-P03a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a7b6395A141-algprac-P03a-h4"
+        ],
+        "title": "Substitute",
+        "text": "$$u+5=0$$ becomes $$\\frac{x}{x+1}+5=0$$, which is true if and only if $$x+5\\left(x+1\\right)=0$$ or $$x=\\frac{-5}{6}$$. \\n $$u-1=0$$ becomes $$\\frac{x}{x+1}-1=0$$ if and only if $$x-x+1=0$$ or $$-1=0$$, which doesn't make sense. So the only solution is $$x=\\frac{-5}{6}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

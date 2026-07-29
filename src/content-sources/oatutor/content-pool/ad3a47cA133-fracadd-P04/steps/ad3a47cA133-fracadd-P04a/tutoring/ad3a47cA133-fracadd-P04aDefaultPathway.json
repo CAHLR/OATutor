@@ -1,0 +1,48 @@
+[
+    {
+        "id": "ad3a47cA133-fracadd-P04a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Observe denominators",
+        "text": "Notice that the denominators are in fact almost equal, but differ by a negative sign. $$2-x=-(x-2)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad3a47cA133-fracadd-P04a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad3a47cA133-fracadd-P04a-h1"
+        ],
+        "title": "Pull out negative",
+        "text": "Pull out the negative sign to write as having a common denominator. \\n $$\\frac{3}{x-2}+\\frac{5}{2-x}=\\frac{3}{x-2}+\\frac{5}{\\left(-x-2\\right)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad3a47cA133-fracadd-P04a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad3a47cA133-fracadd-P04a-h2"
+        ],
+        "title": "Pull negative from denominator to numerator",
+        "text": "$$\\frac{3}{x-2}+\\frac{5}{\\left(-x-2\\right)}=\\frac{3}{x-2}+\\frac{\\left(-5\\right)}{x-2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad3a47cA133-fracadd-P04a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad3a47cA133-fracadd-P04a-h3"
+        ],
+        "title": "Add fractions with the same denominator",
+        "text": "$$\\frac{3}{x-2}+\\frac{\\left(-5\\right)}{x-2}=\\frac{3-5}{x-2}=\\frac{-2}{x-2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

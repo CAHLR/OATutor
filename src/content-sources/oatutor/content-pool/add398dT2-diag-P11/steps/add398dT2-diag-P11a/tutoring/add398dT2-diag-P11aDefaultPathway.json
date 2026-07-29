@@ -1,0 +1,72 @@
+[
+    {
+        "id": "add398dT2-diag-P11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewrite the exponent",
+        "text": "Start by rewriting the power as a square of a square: $$\\cos**4(\\theta)=(\\cos**2(\\theta))**2.$$ Then apply the power-reducing formula for cosine.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "add398dT2-diag-P11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "add398dT2-diag-P11a-h1"
+        ],
+        "title": "First power reduction",
+        "text": "The power-reducing formula is $$\\cos**2(\\theta)=\\frac{1+\\cos(2\\theta)}{2}.$$ Substituting this in gives $$\\left(\\frac{1+\\cos(2\\theta)}{2}\\right)**2.$$ Expand this squared expression.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "add398dT2-diag-P11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "add398dT2-diag-P11a-h2"
+        ],
+        "title": "Expand the square",
+        "text": "Expanding the binomial yields $$\\frac{1+2\\cos(2\\theta)+\\cos**2(2\\theta)}{4}.$$ We still have a squared trigonometric term, so we must apply the power-reducing formula a second time to the $$\\cos**2(2\\theta)$$ term.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "add398dT2-diag-P11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "add398dT2-diag-P11a-h3"
+        ],
+        "title": "Second power reduction",
+        "text": "Be careful with the angle multiplier. Applying the formula to $$2\\theta$$ yields $$\\cos**2(2\\theta)=\\frac{1+\\cos(4\\theta)}{2}.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "add398dT2-diag-P11a-h5",
+        "type": "hint",
+        "dependencies": [
+            "add398dT2-diag-P11a-h4"
+        ],
+        "title": "Substitute and simplify",
+        "text": "Substitute this back into our expanded fraction: $$\\frac{1+2\\cos(2\\theta)+\\frac{1+\\cos(4\\theta)}{2}}{4}.$$ To clear the nested fraction, multiply the top and bottom of the main fraction by $$2$$ to get $$\\frac{2+4\\cos(2\\theta)+1+\\cos(4\\theta)}{8}.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "add398dT2-diag-P11a-h6",
+        "type": "hint",
+        "dependencies": [
+            "add398dT2-diag-P11a-h5"
+        ],
+        "title": "Combine like terms",
+        "text": "Combine the constants in the numerator to get your final equivalent expression: $$\\frac{3$$ + 4\\cos(2\\theta) + \\cos(4\\theta)}{8}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

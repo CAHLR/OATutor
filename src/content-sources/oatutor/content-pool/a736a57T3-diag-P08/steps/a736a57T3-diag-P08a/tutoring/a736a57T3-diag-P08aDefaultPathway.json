@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a736a57T3-diag-P08a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$[0, \\pi]$$"
+        ],
+        "dependencies": [],
+        "title": "Identify the restricted domain of cosine",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$[0, \\pi]$$",
+            "$$\\left[\\frac{-\\pi}{2}, \\frac{\\pi}{2}\\right]$$",
+            "$$\\left(\\frac{-\\pi}{2}, \\frac{\\pi}{2}\\right)$$",
+            "$$(0, \\pi)$$"
+        ]
+    },
+    {
+        "id": "a736a57T3-diag-P08a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "yes"
+        ],
+        "dependencies": [
+            "a736a57T3-diag-P08a-h1"
+        ],
+        "title": "Is $$\\frac{4\\pi}{7}$$ in the restricted domain?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "yes",
+            "no"
+        ]
+    },
+    {
+        "id": "a736a57T3-diag-P08a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a736a57T3-diag-P08a-h2"
+        ],
+        "title": "Cancellation and the restricted domain",
+        "text": "Note that $$\\frac{4\\pi}{7}$$ is in the restricted domain of cosine. Thus cancellation applies.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a736a57T3-diag-P08a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a736a57T3-diag-P08a-h3"
+        ],
+        "title": "Definition of inverse",
+        "text": "Thus for the given angle, the inverse identity holds and we have $$\\arccos(\\cos(\\theta))=\\theta.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

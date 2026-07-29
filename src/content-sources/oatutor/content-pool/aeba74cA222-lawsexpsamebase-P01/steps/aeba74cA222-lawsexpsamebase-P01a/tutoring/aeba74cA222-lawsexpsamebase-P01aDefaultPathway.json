@@ -1,0 +1,35 @@
+[
+    {
+        "id": "aeba74cA222-lawsexpsamebase-P01a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "What does it mean?",
+        "text": "The expression $$b^a b^c$$ means the product of ( $$a$$ copies of $$b$$ multiplied together ) with ( $$c$$ copies of $$b$$ multiplied together )",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aeba74cA222-lawsexpsamebase-P01a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$a+c$$"
+        ],
+        "dependencies": [
+            "aeba74cA222-lawsexpsamebase-P01a-h1"
+        ],
+        "title": "Count the b's",
+        "text": "How many $$b$$ s are in the product of ( $$a$$ copies of $$b$$ multiplied together ) with ( $$c$$ copies of $$b$$ multiplied together )?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$a+c$$",
+            "ac",
+            "$$ba+bc$$"
+        ]
+    }
+]

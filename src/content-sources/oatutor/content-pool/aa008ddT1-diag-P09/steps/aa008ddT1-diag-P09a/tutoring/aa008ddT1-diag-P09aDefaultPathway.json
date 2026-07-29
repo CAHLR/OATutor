@@ -1,0 +1,48 @@
+[
+    {
+        "id": "aa008ddT1-diag-P09a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply the triangle inequality",
+        "text": "$$\\left|4\\cos**2(x)-5\\sin(3x)\\right| $$\\leq$$ \\left|4\\cos**2(x)\\right|+\\left|-5\\sin(3x)\\right|$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aa008ddT1-diag-P09a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aa008ddT1-diag-P09a-h1"
+        ],
+        "title": "Find a bound for the right term",
+        "text": "$$\\left|-5\\sin(3x)\\right|\\leq{5}$$ since $$\\left|\\sin(3x)\\right|\\leq{1}.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aa008ddT1-diag-P09a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aa008ddT1-diag-P09a-h2"
+        ],
+        "title": "Find a bound for the left term",
+        "text": "$$\\left|4\\cos**2(x)\\right|\\leq{4}$$ since $$\\cos**2(x)\\leq{1}.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aa008ddT1-diag-P09a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aa008ddT1-diag-P09a-h3"
+        ],
+        "title": "Calculate the final bound",
+        "text": "By the triangle inequality, $$\\left|4\\cos**2(x)-5\\sin(3x)\\right|\\leq{4}+5=9.$$ Our valid upper bound is $$9$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

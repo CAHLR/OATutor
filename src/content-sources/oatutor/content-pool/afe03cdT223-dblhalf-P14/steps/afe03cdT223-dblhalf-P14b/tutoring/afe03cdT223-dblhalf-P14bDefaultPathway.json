@@ -1,0 +1,48 @@
+[
+    {
+        "id": "afe03cdT223-dblhalf-P14b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Split the exponent",
+        "text": "Start by rewriting the cube as a product of a linear term and a squared term: $$\\sin**3(x)=\\sin(x)\\sin**2(x).$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P14b-h2",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P14b-h1"
+        ],
+        "title": "Apply the power-reducing formula",
+        "text": "Substitute the power-reducing formula for the squared term: $$\\sin**2(x)=\\frac{1-\\cos(2x)}{2}.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P14b-h3",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P14b-h2"
+        ],
+        "title": "Substitute and distribute",
+        "text": "Substitute this into our product: $$\\sin(x)\\left(\\frac{1-\\cos(2x)}{2}\\right).$$ Distribute the linear term $$\\sin(x)$$ into the numerator.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P14b-h4",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P14b-h3"
+        ],
+        "title": "Final Expression",
+        "text": "Distributing gives the equivalent expression: $$\\frac{\\sin(x)-\\sin(x)\\cos(2x)}{2}.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a56bd16newtonapps12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The box is dropped onto a moving conveyor belt. Due to friction, the box will eventually move at the same speed as the belt. We need to find out how long this process takes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps12a-h1"
+        ],
+        "title": "Identify the Forces",
+        "text": "The force of friction is what causes the box to accelerate until it matches the speed of the conveyor belt. Use the formula for frictional force: $$F_{friction}=\\mu m g$$, where mu is the coefficient of friction, $$m$$ is the mass of the box, and g is the acceleration due to gravity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps12a-h2"
+        ],
+        "title": "Calculate the Acceleration",
+        "text": "The acceleration of the box can be calculated using Newton's second law: $$F=ma$$. Here, F is the frictional force, and a is the acceleration. Rearrange the formula to find a: $$a=\\frac{F_{friction}}{m}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps12a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps12a-h3"
+        ],
+        "title": "Determine the Time",
+        "text": "Use the formula $$v=at$$ to find the time it takes for the box to reach the speed of the conveyor belt. Here, v is the final velocity $$(3.4$$ m/s), a is the acceleration, and $$t$$ is the time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps12a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.27m\\times9.8$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps12a-h2"
+        ],
+        "title": "Calculate the Frictional Force",
+        "text": "Given $$mu=0.27$$ and $$g=9.8$$ $$\\frac{m}{s^2}$$, calculate the frictional force: $$F_{friction}=\\mu m g$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps12a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.27\\times9.8$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps12a-h5"
+        ],
+        "title": "Find the Acceleration",
+        "text": "Using the frictional force calculated, find the acceleration: $$a=\\frac{F_{friction}}{m}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps12a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3.4}{0.27\\times9.8}$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps12a-h6"
+        ],
+        "title": "Calculate the Time",
+        "text": "Using the acceleration found, calculate the time: $$t=\\frac{v}{a}$$, where $$v=3.4$$ $$\\frac{m}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

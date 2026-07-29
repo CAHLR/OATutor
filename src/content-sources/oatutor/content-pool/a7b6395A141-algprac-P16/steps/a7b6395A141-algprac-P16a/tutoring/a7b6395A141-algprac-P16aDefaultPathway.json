@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a7b6395A141-algprac-P16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find Common Denominator",
+        "text": "Apply $$\\frac{a}{b}+\\frac{c}{d}=\\frac{ad+bc}{bd}$$ to combine the fractions.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7b6395A141-algprac-P16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7b6395A141-algprac-P16a-h1"
+        ],
+        "title": "Cross Multiply Numerator",
+        "text": "The numerator becomes $$\\left(x+2\\right) \\left(x+4\\right)+\\left(x-1\\right) \\left(x-2\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7b6395A141-algprac-P16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7b6395A141-algprac-P16a-h2"
+        ],
+        "title": "Apply FOIL",
+        "text": "Expand both sets of parentheses: $$x^2+6x+8+x^2-3x+2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7b6395A141-algprac-P16a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7b6395A141-algprac-P16a-h3"
+        ],
+        "title": "Combine Like Terms",
+        "text": "Combine the $$x^2$$, $$x, $$ and constant terms to get $$2x^2+3x+10$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

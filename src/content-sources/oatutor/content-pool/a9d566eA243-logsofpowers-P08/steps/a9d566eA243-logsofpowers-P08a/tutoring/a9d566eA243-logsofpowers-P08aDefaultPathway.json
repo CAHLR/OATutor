@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a9d566eA243-logsofpowers-P08a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply the laws of logarithms.",
+        "text": "First apply the law of logarithms for powers to each term.\\n $$2\\log_4(3)+\\frac{1}{2}\\log_4(9)-3\\log_4(3) $$=$$ \\log_4(3**2)+\\log_4(\\sqrt{9})+\\log_4(3**3)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9d566eA243-logsofpowers-P08a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9d566eA243-logsofpowers-P08a-h1"
+        ],
+        "title": "Apply the laws of logarithms.",
+        "text": "$$\\log_{4}\\left(3^2\\right)+$$ $$\\log_4(\\sqrt{9})$$ $$+\\log_{4}\\left(3^3\\right)=$$ $$\\log_4\\left(\\frac{3**2\\cdot 3}{3**3}\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9d566eA243-logsofpowers-P08a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9d566eA243-logsofpowers-P08a-h2"
+        ],
+        "title": "Simplify and solve for $$x.$$",
+        "text": "$$\\log_4\\left(\\frac{3**2\\cdot 3}{3**3}\\right)$$ $$=\\log_{4}\\left(1\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

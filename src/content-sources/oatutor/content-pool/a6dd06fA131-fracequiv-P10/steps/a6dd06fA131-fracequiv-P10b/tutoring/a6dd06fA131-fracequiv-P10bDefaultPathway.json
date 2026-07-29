@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a6dd06fA131-fracequiv-P10b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Equivalent fractions",
+        "text": "Fractional equivalence tells us that $$\\frac{a}{b}=\\frac{c}{d}$$ if and only if $$b$$ and $$d$$ are nonzero and $$ad=bc$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dd06fA131-fracequiv-P10b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6dd06fA131-fracequiv-P10b-h1"
+        ],
+        "title": "Equivalent fractions",
+        "text": "Here we get \\n $$\\frac{3}{x}=\\frac{x}{3}$$ \\n if and only if $$9=x^2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dd06fA131-fracequiv-P10b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6dd06fA131-fracequiv-P10b-h2"
+        ],
+        "title": "Subtract $$9$$ from both sides",
+        "text": "$$0=x^2-9$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dd06fA131-fracequiv-P10b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6dd06fA131-fracequiv-P10b-h3"
+        ],
+        "title": "Difference of squares",
+        "text": "The right hand side is a difference of squares and can be factored as $$\\left(x-3\\right) \\left(x+3\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dd06fA131-fracequiv-P10b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a6dd06fA131-fracequiv-P10b-h4"
+        ],
+        "title": "Zero product property",
+        "text": "The zero product property says that $$x^2-9=\\left(x-3\\right) \\left(x+3\\right)=0$$ if and only if $$x-3=0$$ or $$x+3=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dd06fA131-fracequiv-P10b-h6",
+        "type": "hint",
+        "dependencies": [
+            "a6dd06fA131-fracequiv-P10b-h5"
+        ],
+        "title": "Solve the equations",
+        "text": "$$x-3=0$$ or $$x+3=0$$ if $$x=\\pm 3$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

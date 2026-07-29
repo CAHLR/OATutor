@@ -1,0 +1,82 @@
+[
+    {
+        "id": "ace918bnlaws26a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the force on the rider by the sled, we need to consider the components of acceleration and the mass of the astronaut.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws26a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws26a-h1"
+        ],
+        "title": "Using Newton's Second Law",
+        "text": "Newton's second law states that force is the product of mass and acceleration. We need to find the net acceleration first.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws26a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws26a-h2"
+        ],
+        "title": "Calculating Net Acceleration",
+        "text": "The net acceleration can be found using the Pythagorean theorem since the accelerations are perpendicular: $$a_{net}=\\sqrt{5^2+{3.8}^2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws26a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6.3$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws26a-h3"
+        ],
+        "title": "Calculate Net Acceleration",
+        "text": "Calculate the net acceleration using the formula: $$a_{net}=\\sqrt{5^2+{3.8}^2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws26a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws26a-h4"
+        ],
+        "title": "Finding the Force",
+        "text": "Now that we have the net acceleration, use $$F=m a$$ to find the force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws26a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$756$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws26a-h5"
+        ],
+        "title": "Calculate the Force",
+        "text": "Use the formula $$F=m a$$ with $$m=120$$ and $$a=6.3$$ to find the force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

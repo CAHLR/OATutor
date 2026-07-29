@@ -1,0 +1,72 @@
+[
+    {
+        "id": "ad3a47cA133-fracadd-P05a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Common denominators",
+        "text": "These fractions have unequal denominators. To create equal denominators, multiply the first term by $$\\frac{x}{x}$$ and the second term by $$\\frac{x+h}{x+h}$$. Remember, multiplying a fraction by $$1$$ doesn't change the term, even if that $$1$$ looks complicated. :)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad3a47cA133-fracadd-P05a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad3a47cA133-fracadd-P05a-h1"
+        ],
+        "title": "Common denominators carried out",
+        "text": "$$\\frac{1}{x+h}-\\frac{1}{x}=\\frac{1}{x+h} \\frac{x}{x}-\\frac{1}{x} \\frac{x+h}{x+h}=\\frac{x}{x\\left(x+h\\right)}-\\frac{x+h}{x\\left(x+h\\right)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad3a47cA133-fracadd-P05a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad3a47cA133-fracadd-P05a-h2"
+        ],
+        "title": "Add fractions with same denominator",
+        "text": "Applying $$\\frac{a}{c}-\\frac{b}{c}=\\frac{a-b}{c}$$ we get \\n $$\\frac{x}{x\\left(x+h\\right)}-\\frac{x+h}{x\\left(x+h\\right)}=$$ $$\\frac{x-(x+h)}{x(x+h)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad3a47cA133-fracadd-P05a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad3a47cA133-fracadd-P05a-h3"
+        ],
+        "title": "Distribute negative sign",
+        "text": "Don't forget to distribute the negative sign, which is really multiplication by $$(-1)$$ to both terms!",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad3a47cA133-fracadd-P05a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ad3a47cA133-fracadd-P05a-h4"
+        ],
+        "title": "Distribute negative sign",
+        "text": "$$\\frac{x-(x+h)}{x(x+h)}=\\frac{x-x-h}{x(x+h)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad3a47cA133-fracadd-P05a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ad3a47cA133-fracadd-P05a-h5"
+        ],
+        "title": "Combine like terms",
+        "text": "Recall that $$x-x=0$$, so $$\\frac{x-x-h}{x\\left(x+h\\right)}=\\frac{\\left(-h\\right)}{x\\left(x+h\\right)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

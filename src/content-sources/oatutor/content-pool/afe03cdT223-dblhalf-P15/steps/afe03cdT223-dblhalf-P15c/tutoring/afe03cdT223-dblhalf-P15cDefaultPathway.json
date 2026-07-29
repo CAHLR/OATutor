@@ -1,0 +1,72 @@
+[
+    {
+        "id": "afe03cdT223-dblhalf-P15c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply formulas to both terms",
+        "text": "Apply the power-reducing formulas to both squared terms: $$\\sin**2(x)=\\frac{1-\\cos(2x)}{2}$$ and $$\\cos**2(x)=\\frac{1+\\cos(2x)}{2}.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P15c-h2",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P15c-h1"
+        ],
+        "title": "Multiply the fractions",
+        "text": "Multiply the two fractions together: $$\\left(\\frac{1-\\cos(2x)}{2}\\right)\\left(\\frac{1+\\cos(2x)}{2}\\right).$$ Notice the numerator is a difference of squares.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P15c-h3",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P15c-h2"
+        ],
+        "title": "Expand the numerator",
+        "text": "Expanding yields $$\\frac{1-\\cos**2(2x)}{4}.$$ We still have a squared trigonometric term, so we must apply the power-reducing formula again to $$\\cos**2(2x).$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P15c-h4",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P15c-h3"
+        ],
+        "title": "Second power reduction",
+        "text": "Applying the formula to $$2x$$ yields $$\\cos**2(2x)=\\frac{1+\\cos(4x)}{2}.$$ Substitute this back in: $$\\frac{1-\\left(\\frac{1+\\cos(4x)}{2}\\right)}{4}.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P15c-h5",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P15c-h4"
+        ],
+        "title": "Simplify the complex fraction",
+        "text": "Multiply the top and bottom of the main fraction by $$2$$ to clear the nested denominator: $$\\frac{2-(1+\\cos(4x))}{8}.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P15c-h6",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P15c-h5"
+        ],
+        "title": "Final Expression",
+        "text": "Distribute the negative and combine like terms to get the equivalent expression: $$\\frac{1-\\cos(4x)}{8}.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

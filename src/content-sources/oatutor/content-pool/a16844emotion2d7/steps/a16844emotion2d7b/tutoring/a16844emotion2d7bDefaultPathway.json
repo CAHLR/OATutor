@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a16844emotion2d7b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the acceleration as a function of time, we need to differentiate the position function twice with respect to time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d7b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d7b-h1"
+        ],
+        "title": "First Derivative: Velocity",
+        "text": "The velocity function is the first derivative of the position function with respect to time. Differentiate each component of the position vector.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d7b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$v(t)=6t i-21t^2 j+10t^{\\left(-3\\right)} k$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d7b-h2"
+        ],
+        "title": "Calculate the Velocity Function",
+        "text": "Differentiate the position function: $$r(t)=3t^2 i-7t^3 j-5t^{\\left(-2\\right)} k$$. What is the velocity function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d7b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d7b-h3"
+        ],
+        "title": "Second Derivative: Acceleration",
+        "text": "The acceleration function is the derivative of the velocity function with respect to time. Differentiate each component of the velocity vector.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d7b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$a(t)=6i-42t j-30t^{\\left(-4\\right)} k$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d7b-h4"
+        ],
+        "title": "Calculate the Acceleration Function",
+        "text": "Differentiate the velocity function: $$v(t)=6t i-21t^2 j+10t^{\\left(-3\\right)} k$$. What is the acceleration function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

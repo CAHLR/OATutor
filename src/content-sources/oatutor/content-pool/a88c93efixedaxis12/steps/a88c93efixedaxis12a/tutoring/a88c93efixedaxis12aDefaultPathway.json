@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a88c93efixedaxis12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the translational velocity at impact, we need to consider both the horizontal and vertical components of the velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis12a-h1"
+        ],
+        "title": "Horizontal Velocity",
+        "text": "The horizontal velocity of the propeller remains constant as it falls. What is the horizontal velocity of the aircraft?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis12a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$40$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis12a-h2"
+        ],
+        "title": "Calculate Horizontal Velocity",
+        "text": "The horizontal velocity of the propeller is the same as the aircraft's horizontal velocity, which is $$40.0$$ $$\\frac{m}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis12a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis12a-h1"
+        ],
+        "title": "Vertical Velocity",
+        "text": "To find the vertical velocity at impact, use the formula for the final velocity of an object in free fall: v $$=$$ $$\\sqrt{2g h}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis12a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$76.68$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis12a-h4"
+        ],
+        "title": "Calculate Vertical Velocity",
+        "text": "Using the formula $$v=\\sqrt{2g h}$$, where $$g=9.8$$ $$\\frac{m}{s^2}$$ and $$h=300$$ $$m$$, calculate the vertical velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis12a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis12a-h5"
+        ],
+        "title": "Combine Velocities",
+        "text": "The translational velocity at impact is the vector sum of the horizontal and vertical velocities. Use the Pythagorean theorem to find the resultant velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis12a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$86.5$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis12a-h6"
+        ],
+        "title": "Calculate Resultant Velocity",
+        "text": "Using the Pythagorean theorem, $$v=\\sqrt{{v_{horizontal}}^2+{v_{vertical}}^2}$$, where $$v_{horizontal}=40.0$$ $$\\frac{m}{s}$$ and $$v_{vertical}=76.68$$ $$\\frac{m}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

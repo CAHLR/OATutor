@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a16844emotion2d16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the launch angle, we need to consider the horizontal and vertical components of the motion. The horizontal distance covered is $$69.0$$ $$m$$, and the initial speed is $$35.8$$ $$\\frac{m}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d16a-h1"
+        ],
+        "title": "Breaking Down the Motion",
+        "text": "The horizontal component of the velocity can be expressed as \\(v_x=v*cos(\\theta)\\), where \\(v\\) is the initial speed and \\(\\theta\\) is the launch angle.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d16a-h2"
+        ],
+        "title": "Time of Flight",
+        "text": "The time of flight can be calculated using the horizontal motion equation: \\(d=v_x*t\\), where \\(d\\) is the horizontal distance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d16a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d16a-h3"
+        ],
+        "title": "Vertical Motion Equation",
+        "text": "The vertical component of the velocity is \\(v_y=v*sin(\\theta)\\). Use the vertical motion equation \\(y=v_y*t-0.5*g*t**2\\) to find the time of flight.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d16a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$15.9$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d16a-h4"
+        ],
+        "title": "Calculate the Launch Angle",
+        "text": "Using the equations for horizontal and vertical motion, solve for the launch angle \\(\\theta\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$15.9$$",
+            "$$15.9$$ degrees",
+            "$$31.8$$ degrees",
+            "$$7.95$$ degrees",
+            "$$74.1$$ degrees"
+        ]
+    }
+]

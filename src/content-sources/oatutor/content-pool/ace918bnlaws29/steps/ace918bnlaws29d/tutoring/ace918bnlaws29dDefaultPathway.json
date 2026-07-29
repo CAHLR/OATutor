@@ -1,0 +1,87 @@
+[
+    {
+        "id": "ace918bnlaws29d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculate the Net Force",
+        "text": "To find the net force acting on the object, sum up the three given forces: $$F_1$$, $$F_2$$, and $$F_3$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws29d-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5i+3j$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws29d-h1"
+        ],
+        "title": "Sum the Forces",
+        "text": "Calculate the net force by adding the components of $$F_1$$, $$F_2$$, and $$F_3$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws29d-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws29d-h2"
+        ],
+        "title": "Use Newton's Second Law",
+        "text": "Use the formula $$F=ma$$ to find the acceleration vector, where F is the net force and $$m$$ is the mass of the object.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws29d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$m=1.18$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws29d-h3"
+        ],
+        "title": "Find the Mass",
+        "text": "Given the magnitude of acceleration is $$4.23$$ $$\\frac{m}{s^2}$$, use the net force to find the mass of the object.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws29d-h5",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws29d-h4"
+        ],
+        "title": "Calculate the Velocity Components",
+        "text": "Use the formula $$v=at$$ to find the velocity components after $$5.00$$ s, where a is the acceleration vector and $$t$$ is the time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws29d-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$18.1i+10.9j$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws29d-h5"
+        ],
+        "title": "Compute the Velocity",
+        "text": "Calculate the velocity components using the acceleration vector and the time of $$5.00$$ s.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

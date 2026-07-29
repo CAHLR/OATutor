@@ -1,0 +1,58 @@
+[
+    {
+        "id": "aefa26bnormal11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Difference",
+        "text": "Calculate the difference between the upper and lower bounds.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aefa26bnormal11a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.64$$"
+        ],
+        "dependencies": [
+            "aefa26bnormal11a-h1"
+        ],
+        "title": "Difference",
+        "text": "What is $$68.82-67.18$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aefa26bnormal11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aefa26bnormal11a-h2"
+        ],
+        "title": "Divide by $$2$$",
+        "text": "Divide this difference by $$2$$ since the error is on both sides of the mean.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aefa26bnormal11a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.82$$"
+        ],
+        "dependencies": [
+            "aefa26bnormal11a-h3"
+        ],
+        "title": "Divide by $$2$$",
+        "text": "What is $$\\frac{1.64}{2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

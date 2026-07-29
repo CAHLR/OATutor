@@ -1,0 +1,162 @@
+[
+    {
+        "id": "afda852A2-diag-P05a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "LHS",
+        "text": "$$a^{b+c}=a^b a^c$$, so $$3^{2x+2}=3^2 3^{2x}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afda852A2-diag-P05a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afda852A2-diag-P05a-h1"
+        ],
+        "title": "LHS",
+        "text": "$$a^{b c}=\\left(a^b\\right)^c$$, so $$3^{2x}=\\left(3^2\\right)^x=9^x$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afda852A2-diag-P05a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afda852A2-diag-P05a-h2"
+        ],
+        "title": "LHS",
+        "text": "Therefore, $$3^{2x+2}$$ + $$9^x=3^2 3^{2x}+9^x=9\\left(3^2\\right)^x+9x=9\\times9^x+9^x=\\left(9+1\\right) 9^x=10\\times9^x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afda852A2-diag-P05a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afda852A2-diag-P05a-h3"
+        ],
+        "title": "RHS",
+        "text": "$${81}^x=\\left(9^2\\right)^x=9^{2x}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afda852A2-diag-P05a-h5",
+        "type": "hint",
+        "dependencies": [
+            "afda852A2-diag-P05a-h4"
+        ],
+        "title": "$$LHS=RHS$$",
+        "text": "$$10\\times9^x=9^{2x}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afda852A2-diag-P05a-h6",
+        "type": "hint",
+        "dependencies": [
+            "afda852A2-diag-P05a-h5"
+        ],
+        "title": "Log Property",
+        "text": "If a, $$b$$, $$c>0$$, $$a=b$$ implies $$\\log_{c}\\left(a\\right)=\\log_{c}\\left(b\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afda852A2-diag-P05a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "afda852A2-diag-P05a-h6"
+        ],
+        "title": "Log Property",
+        "text": "Can $$10\\times9^x=9^{2x}$$ imply $$\\log_{9}\\left(10\\times9^x\\right)=\\log_{9}\\left(9^{2x}\\right)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "afda852A2-diag-P05a-h8",
+        "type": "hint",
+        "dependencies": [
+            "afda852A2-diag-P05a-h7"
+        ],
+        "title": "Log Property",
+        "text": "$$\\log_{c}\\left(a b\\right)=\\log_{c}\\left(a\\right)+\\log_{c}\\left(b\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afda852A2-diag-P05a-h9",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "afda852A2-diag-P05a-h8"
+        ],
+        "title": "Log Property",
+        "text": "Is $$\\log_{9}\\left(10\\times9^x\\right)$$ equivalent to $$\\log_{9}\\left(10\\right)+\\log_{9}\\left(9^x\\right)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "afda852A2-diag-P05a-h10",
+        "type": "hint",
+        "dependencies": [
+            "afda852A2-diag-P05a-h9"
+        ],
+        "title": "Log Property",
+        "text": "$$\\log_{b}\\left(b^a\\right)=a$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afda852A2-diag-P05a-h11",
+        "type": "hint",
+        "dependencies": [
+            "afda852A2-diag-P05a-h10"
+        ],
+        "title": "Log Property",
+        "text": "Therefore, $$\\log_{9}\\left(9^x\\right)=x$$, $$\\log_{9}\\left(9^{2x}\\right)=2x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afda852A2-diag-P05a-h12",
+        "type": "hint",
+        "dependencies": [
+            "afda852A2-diag-P05a-h11"
+        ],
+        "title": "Simplification",
+        "text": "Solve $$\\log_{9}\\left(10\\right)+x=2x$$ for $$x.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

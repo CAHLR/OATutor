@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a4d5812T121-trigraph-P11c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the remaining unknown",
+        "text": "The previous parts of the problem identified $$A=3$$ and $$D=-2$$. All that is left is to find B in the expression $$A\\sin(Bx)+D$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4d5812T121-trigraph-P11c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4d5812T121-trigraph-P11c-h1"
+        ],
+        "title": "Identify $$B$$",
+        "text": "The sine function completes one full cycle when its input (the part inside the parentheses) goes from $$0$$ to $$2\\pi.$$ If the period is $$\\pi, $$ it means that by the time $$x$$ reaches $$\\pi, $$ the expression $$Bx$$ must have already reached $$2\\pi.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4d5812T121-trigraph-P11c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a4d5812T121-trigraph-P11c-h2"
+        ],
+        "title": "Identify $$B$$",
+        "text": "What value of $$B$$ ensures that $$B\\pi=2\\pi?$$",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a4d5812T121-trigraph-P11c-h3-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Identify $$B$$",
+                "text": "This implies that $$\\frac{2\\pi}{B}=pi$$ or $$B=2$$.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    }
+]

@@ -1,0 +1,86 @@
+[
+    {
+        "id": "a307ef0T122-trigbound-P03a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "small"
+        ],
+        "dependencies": [],
+        "title": "Thinking about denominators",
+        "text": "To make a fraction as large as possible, do we want the denominator to be large or small?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "large",
+            "small"
+        ],
+        "subHints": [
+            {
+                "id": "a307ef0T122-trigbound-P03a-h1-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Comparing smaller and larger denominators",
+                "text": "A smaller denominator creates a larger overall value; for example, $$\\frac{1}{2}>\\frac{1}{10}$$.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a307ef0T122-trigbound-P03a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a307ef0T122-trigbound-P03a-h1"
+        ],
+        "title": "Find a lower bound",
+        "text": "What is the smallest possible value for $$2+\\cos**2(\\theta)?$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a307ef0T122-trigbound-P03a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a307ef0T122-trigbound-P03a-h2"
+        ],
+        "title": "Bounding $$\\cos**2(\\theta)$$",
+        "text": "The smallest $$\\cos**2(\\theta)$$ can be is $$0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a307ef0T122-trigbound-P03a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a307ef0T122-trigbound-P03a-h3"
+        ],
+        "title": "Bounding $$2+\\cos**2(\\theta)?$$",
+        "text": "2+ $$\\cos**2(\\theta)$$ $$ \\leq 2+0=2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a307ef0T122-trigbound-P03a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a307ef0T122-trigbound-P03a-h4"
+        ],
+        "title": "Maximum value",
+        "text": "$$\\frac{10}{2+\\cos**2(\\theta)}$$ $$ \\leq \\frac{10}{2}=5$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

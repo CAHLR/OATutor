@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a7077a0A111-algdef-P06a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Ask AI",
+        "text": "As of yet, this does not constitute proof! AI can hallucinate or lie to you. \\n A proof is a logically airtight reason that something is true.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7077a0A111-algdef-P06a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7077a0A111-algdef-P06a-h1"
+        ],
+        "title": "Plug into a calculator",
+        "text": "This isn't really a proof. You can't offload the thinking to a machine.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7077a0A111-algdef-P06a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7077a0A111-algdef-P06a-h2"
+        ],
+        "title": "Plug in several numbers",
+        "text": "If you can show that the general expression is true for many specific cases, this is gathering evidence that the general equation may be true. However, it is not a proof. You cannot plug in ever single case, which would be necessary with this plug in approach.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7077a0A111-algdef-P06a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7077a0A111-algdef-P06a-h3"
+        ],
+        "title": "Apply what is known",
+        "text": "Yes, if you can apply a sequence of known true rearrangements of an algebraic expression to obtain the other side of an equation, and you can verify each step carefully along the way, you have shown that it is a true general equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

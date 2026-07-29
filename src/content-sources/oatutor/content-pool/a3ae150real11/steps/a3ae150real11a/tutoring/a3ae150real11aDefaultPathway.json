@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a3ae150real11a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [],
+        "title": "Identify A and B",
+        "text": "What is A",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$4$$",
+            "$$1$$",
+            "$$-4$$",
+            "$$8$$"
+        ]
+    },
+    {
+        "id": "a3ae150real11a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "a3ae150real11a-h1"
+        ],
+        "title": "Identify A and B",
+        "text": "What is B",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$-1$$",
+            "$$1$$",
+            "$$0$$",
+            "$$4$$"
+        ]
+    },
+    {
+        "id": "a3ae150real11a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "hyperbola"
+        ],
+        "dependencies": [
+            "a3ae150real11a-h2"
+        ],
+        "title": "$$AB<0$$",
+        "text": "Notice that $$AB=-4<0$$, so the conic section is a",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "hyperbola",
+            "parabola",
+            "ellipse",
+            "circle"
+        ]
+    }
+]

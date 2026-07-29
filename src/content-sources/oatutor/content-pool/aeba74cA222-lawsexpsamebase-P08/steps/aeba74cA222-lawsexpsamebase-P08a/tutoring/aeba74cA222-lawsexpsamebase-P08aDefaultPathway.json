@@ -1,0 +1,53 @@
+[
+    {
+        "id": "aeba74cA222-lawsexpsamebase-P08a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply the laws of exponents to the power or powers first",
+        "text": "$$(p**{5/2})**2=p**{(5/2)(2)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aeba74cA222-lawsexpsamebase-P08a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "aeba74cA222-lawsexpsamebase-P08a-h1"
+        ],
+        "title": "Multiply fractions",
+        "text": "What is $$\\frac{5}{2}$$ $$\\cdot$$ 2?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aeba74cA222-lawsexpsamebase-P08a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aeba74cA222-lawsexpsamebase-P08a-h2"
+        ],
+        "title": "Apply the law of exponents for quotients",
+        "text": "$$\\frac{(p**{5/2})**2}{p**3}=\\frac{p**5}{p**3}=p**{5-3}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aeba74cA222-lawsexpsamebase-P08a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aeba74cA222-lawsexpsamebase-P08a-h3"
+        ],
+        "title": "Evaluate the power",
+        "text": "$$p**{5-3}=p**n$$ \\n Evalaute $$5-3$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

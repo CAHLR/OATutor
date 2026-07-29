@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a736a57T3-diag-P12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Verify invertibility",
+        "text": "We check that $$f(x)$$ is invertible on the domain $$[\\pi, 2\\pi].$$ We note that the function achieves its minumum value at $$\\pi$$ and achieves its maximum value at $$2\\pi$$ and is strictly increasing inbetween. The function is one-to-one on this interval, therefore it is invertible on this interval.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a736a57T3-diag-P12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a736a57T3-diag-P12a-h1"
+        ],
+        "title": "Find range of the inverse",
+        "text": "Recall that the inputs of the original function become the ouputs of the inverse function. That means that the domain of the restricted function is the range of its inverse. Therefore the range is $$[\\pi, 2\\pi].$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a736a57T3-diag-P12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a736a57T3-diag-P12a-h2"
+        ],
+        "title": "Eliminate choices.",
+        "text": "The fact that the function is invertible and its range is $$[\\pi, 2\\pi]$$ eliminates the choices that there is no inverse and the function A, whose range is $$[0, \\pi].$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a736a57T3-diag-P12a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a736a57T3-diag-P12a-h3"
+        ],
+        "title": "Check the endpoints",
+        "text": "Observe that $$f(\\pi)=-1.$$ This means that $$f**{-1}(-1}=\\pi.$$ \\n Similarly, since $$f(2\\pi)=1, $$ it follows that $$f**{-1}(1)=2\\pi.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a736a57T3-diag-P12a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a736a57T3-diag-P12a-h4"
+        ],
+        "title": "Compare with graphs",
+        "text": "The only graph that has the correct range, and is equal to $$\\pi$$ at $$-1$$, and is equal to $$2\\pi$$ at $$1$$, is option B.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

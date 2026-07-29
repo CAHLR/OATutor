@@ -1,0 +1,72 @@
+[
+    {
+        "id": "add398dT2-diag-P13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply the triangle inequality",
+        "text": "$$\\left|3\\sin(x)\\cos(x)-2\\sin(3x)\\right|\\leq\\left|3\\sin(x)\\cos(x)\\right|+\\left|-2\\sin(3x)\\right|$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "add398dT2-diag-P13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "add398dT2-diag-P13a-h1"
+        ],
+        "title": "Find a bound for the right term",
+        "text": "$$\\left|-2\\sin(3x)\\right|\\leq{2}$$ since $$\\left|\\sin(3x)\\right|\\leq{1}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "add398dT2-diag-P13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "add398dT2-diag-P13a-h2"
+        ],
+        "title": "Combine the sine and cosine in the left term",
+        "text": "$$\\left|3\\sin(x)\\cos(x)\\right|=\\left|\\frac{3}{2}\\sin(2x)\\right|$$ by the double angle formula",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "add398dT2-diag-P13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "add398dT2-diag-P13a-h3"
+        ],
+        "title": "Find a bound for the left term",
+        "text": "$$\\left|\\frac{3}{2}\\sin(2x)\\right|\\leq{\\frac{3}{2}}$$ since $$\\sin(2x)\\leq{1}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "add398dT2-diag-P13a-h5",
+        "type": "hint",
+        "dependencies": [
+            "add398dT2-diag-P13a-h4"
+        ],
+        "title": "Triangle inequality",
+        "text": "$$\\left|3\\sin(x)\\cos(x)-2\\sin(3x)\\right|\\leq\\left|3\\sin(x)\\cos(x)\\right|+\\left|-2\\sin(3x)\\right|\\leq{\\frac{3}{2}}+2=3.5.$$ Since $$3.5\\leq{4}, $$ our valid upper bound is $$4$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "add398dT2-diag-P13a-h6",
+        "type": "hint",
+        "dependencies": [
+            "add398dT2-diag-P13a-h5"
+        ],
+        "title": "Upper bound defined",
+        "text": "Recall that an upper bound doesn't have to be the best upper bound. It just has to be an upper bound.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

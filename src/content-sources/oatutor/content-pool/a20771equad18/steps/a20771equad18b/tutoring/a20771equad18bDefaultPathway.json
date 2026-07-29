@@ -1,0 +1,92 @@
+[
+    {
+        "id": "a20771equad18b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Nature of a Quadratic Equation Definition",
+        "text": "The nature of a quadratic equation is whether the solutions are real of complex numbers, and how many solutions of each type to expect.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a20771equad18b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a20771equad18b-h1"
+        ],
+        "title": "Discriminant Definition",
+        "text": "For $${ax}^2+bx+c=0$$, where a, $$b$$, and c are real numbers, the discriminant is the expression under the radical in the quadratic formula: $$b^2-4ac$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a20771equad18b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a20771equad18b-h2"
+        ],
+        "title": "Interpreting Discriminant Values",
+        "text": "If the discriminant is $$0$$, there is one rational solution (double solution.) If the discriminant is greater than $$0$$, if has two rational values if it is a perfect square, and two irrational values if it is not. If the discriminant is less than $$0$$, it has two complex solutions.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a20771equad18b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$196$$"
+        ],
+        "dependencies": [
+            "a20771equad18b-h1",
+            "a20771equad18b-h2",
+            "a20771equad18b-h3"
+        ],
+        "title": "Identity of $$b^2$$",
+        "text": "Using the equation, which is given in the form $${ax}^2+bx+c=0$$, what is $$b^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a20771equad18b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$96$$"
+        ],
+        "dependencies": [
+            "a20771equad18b-h1",
+            "a20771equad18b-h2",
+            "a20771equad18b-h3"
+        ],
+        "title": "Identity of 4ac",
+        "text": "Using the equation, which is given in the form $${ax}^2+bx+c=0$$, what is 4ac?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a20771equad18b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$100$$"
+        ],
+        "dependencies": [
+            "a20771equad18b-h4",
+            "a20771equad18b-h5"
+        ],
+        "title": "Value of the Discriminant",
+        "text": "What is the value of the discriminant, $$b^2-4ac$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

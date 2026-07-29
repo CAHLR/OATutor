@@ -1,0 +1,41 @@
+[
+    {
+        "id": "ace918bnlaws14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Net Force",
+        "text": "To find the net external force exerted on the shell, you need to use Newton's second law of motion, which states that force equals mass times acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws14a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$26400000$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws14a-h1"
+        ],
+        "title": "Calculate the Force",
+        "text": "Use the formula $$F=m a$$, where F is the force, $$m$$ is the mass, and a is the acceleration. Substitute the given values: $$m=1100.0$$ kg and $$a=2.4\\times{10}^4$$ $$\\frac{m}{s^2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws14a-h1"
+        ],
+        "title": "Check Your Units",
+        "text": "Ensure that the units for mass and acceleration are in kilograms and meters per second squared, respectively, to get the force in Newtons.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

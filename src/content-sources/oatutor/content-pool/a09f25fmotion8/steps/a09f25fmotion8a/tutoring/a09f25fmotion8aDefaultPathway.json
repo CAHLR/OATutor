@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a09f25fmotion8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the displacement of a particle moving with constant acceleration, we can use the kinematic equation: s $$=$$ ut + $$0.5{at}^2$$, where s is the displacement, u is the initial velocity, a is the acceleration, and $$t$$ is the time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion8a-h1"
+        ],
+        "title": "Identify the Given Values",
+        "text": "From the problem, we know the initial velocity (u) is $$30$$ $$\\frac{m}{s}$$, the acceleration (a) is $$30$$ $$\\frac{m}{s^2}$$, and the time (t) is $$5$$ seconds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion8a-h2"
+        ],
+        "title": "Substitute the Values into the Equation",
+        "text": "Substitute the known values into the equation: s $$=$$ $$30\\times5$$ + $$0.5\\times30 5^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$150$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion8a-h3"
+        ],
+        "title": "Calculate the First Term",
+        "text": "Calculate the first term of the equation: $$30\\times5$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion8a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$375$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion8a-h4"
+        ],
+        "title": "Calculate the Second Term",
+        "text": "Calculate the second term of the equation: $$0.5\\times30 5^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion8a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$525$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion8a-h5"
+        ],
+        "title": "Add the Two Terms Together",
+        "text": "Add the results of the two terms to find the displacement: $$150+375$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

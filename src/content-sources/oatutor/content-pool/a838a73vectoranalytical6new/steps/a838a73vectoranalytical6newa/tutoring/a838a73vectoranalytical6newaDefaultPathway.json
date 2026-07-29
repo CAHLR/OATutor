@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a838a73vectoranalytical6newa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Draw",
+        "text": "Draw vectors representing the path taken, lining the vectors up from tip to tail",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a838a73vectoranalytical6newa-h2",
+        "type": "hint",
+        "dependencies": [
+            "a838a73vectoranalytical6newa-h1"
+        ],
+        "title": "Pythagorean Theorem",
+        "text": "In a right-angled triangle, the square of the hypotenuse side is equal to the sum of squares of the other two sides",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a838a73vectoranalytical6newa-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$100$$"
+        ],
+        "dependencies": [
+            "a838a73vectoranalytical6newa-h2"
+        ],
+        "title": "Apply the Pythagorean Theorem",
+        "text": "By the Pythagorean theorem, $${60}^2+{80}^2=c^2$$, solve for c, the hypotenuse side.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$100$$",
+            "$$100.0$$",
+            "$$140.0$$",
+            "$$70.0$$",
+            "$$90.0$$"
+        ]
+    }
+]

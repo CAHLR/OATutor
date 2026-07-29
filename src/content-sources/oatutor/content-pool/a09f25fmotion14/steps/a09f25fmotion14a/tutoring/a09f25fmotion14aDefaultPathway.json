@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a09f25fmotion14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Known Values",
+        "text": "Start by identifying the known values from the problem statement. What is the initial velocity, final velocity, and distance traveled?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion14a-h1"
+        ],
+        "title": "Use the Kinematic Equation",
+        "text": "Recall the kinematic equation that relates initial velocity, final velocity, acceleration, and distance: $${v_f}^2={v_i}^2+2a d$$. Which values do you need to substitute into this equation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion14a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8450$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion14a-h2"
+        ],
+        "title": "Substitute Known Values",
+        "text": "Substitute the known values into the equation: $${65}^2=0^2+2a\\times0.25$$. Solve for acceleration (a).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion14a-h3"
+        ],
+        "title": "Solve for Acceleration",
+        "text": "Rearrange the equation to solve for acceleration: $$a=\\frac{{v_f}^2-{v_i}^2}{2d}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

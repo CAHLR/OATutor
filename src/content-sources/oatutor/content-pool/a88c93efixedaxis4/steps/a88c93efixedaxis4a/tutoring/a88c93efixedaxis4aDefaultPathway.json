@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a88c93efixedaxis4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Motion",
+        "text": "To find the final angular velocity, we need to use the kinematic equation for rotational motion. This is similar to the equations used in linear motion but adapted for rotation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis4a-h1"
+        ],
+        "title": "Identify the Known Values",
+        "text": "We know the following:\\n- Initial angular velocity (\u03c9\u2080) $$=$$ $$0$$ $$\\frac{rad}{s}$$ (since it starts from rest)\\n- Angular displacement (\u03b8) $$=$$ $$300$$ rad\\n- Angular acceleration (\\alpha) $$=$$ $$5.0$$ rad/s\u00b2",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis4a-h2"
+        ],
+        "title": "Choose the Right Equation",
+        "text": "The equation that relates angular displacement, initial angular velocity, angular acceleration, and final angular velocity is:\\n\u03c9\u00b2 $$=$$ \u03c9\u2080\u00b2 + 2\\alpha\u03b8",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\u03c9\u00b2=3000$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis4a-h3"
+        ],
+        "title": "Substitute the Known Values",
+        "text": "Substitute the known values into the equation:\\n\u03c9\u00b2 $$=$$ 0\u00b2 + $$2\\times5\\times300$$",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis4a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\u03c9=54.8$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis4a-h4"
+        ],
+        "title": "Solve for Final Angular Velocity",
+        "text": "To find \u03c9, take the square root of both sides:\\n\u03c9 $$=$$ $$\\sqrt{3000}$$",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

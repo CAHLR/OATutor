@@ -1,0 +1,36 @@
+[
+    {
+        "id": "aaf274fA113-algconseq-P08a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor",
+        "text": "We need to find a pair of numbers so that $$\\left(x+a\\right) \\left(x+b\\right)=x^2+6x+8$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaf274fA113-algconseq-P08a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aaf274fA113-algconseq-P08a-h1"
+        ],
+        "title": "Rules for coefficients",
+        "text": "We find coefficients such that $$ab=8$$ and $$a+b=6$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaf274fA113-algconseq-P08a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aaf274fA113-algconseq-P08a-h2"
+        ],
+        "title": "Rules for coefficients",
+        "text": "This works for $$a=2$$ and $$b=4$$ since the product is $$8$$ and the sum is $$6$$. One way to find this is to consider all interger factors of $$8$$ and then try the sums: 1,8 and 2,4 are the only possible factors. $$1+8=9$$ and $$2+4=6$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

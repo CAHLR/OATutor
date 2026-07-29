@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a767c30T221-identpyth-P01a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Break into smaller pieces",
+        "text": "Write $$5\\cos**2(\\theta)$$ as $$\\cos**2(\\theta)+4\\cos**2(\\theta)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a767c30T221-identpyth-P01a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a767c30T221-identpyth-P01a-h1"
+        ],
+        "title": "Apply the pythagorean identity",
+        "text": "$$\\left(\\sin**2(\\theta)+\\cos**2(\\theta)\\right)+4\\cos**2(\\theta)=1+4\\cos**2(x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a767c30T221-identpyth-P01a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a767c30T221-identpyth-P01a-h2"
+        ],
+        "title": "Bound the cosine term",
+        "text": "$$4\\cos**2(x)\\leq{4}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

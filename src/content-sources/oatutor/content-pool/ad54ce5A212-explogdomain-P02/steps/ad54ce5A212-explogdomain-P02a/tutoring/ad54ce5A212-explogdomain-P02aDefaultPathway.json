@@ -1,0 +1,62 @@
+[
+    {
+        "id": "ad54ce5A212-explogdomain-P02a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [],
+        "title": "Find the base",
+        "text": "What is the base?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad54ce5A212-explogdomain-P02a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad54ce5A212-explogdomain-P02a-h1"
+        ],
+        "title": "The base is greater than zero",
+        "text": "When the base is greater than zero, you can raise it to any real number power, even irrational ones like $$\\pi$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad54ce5A212-explogdomain-P02a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "ad54ce5A212-explogdomain-P02a-h2"
+        ],
+        "title": "Test it",
+        "text": "Is $$3**{\\pi}$$ a real number? (Try it on a calculator! But note that an experiment is not a proof.)",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ad54ce5A212-explogdomain-P02a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad54ce5A212-explogdomain-P02a-h3"
+        ],
+        "title": "Conclusion",
+        "text": "$$3**{\\pi}$$ is a real number between $$3^3=27$$ and $$3^4=81$$, since 3< $$\\pi$$ <4.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

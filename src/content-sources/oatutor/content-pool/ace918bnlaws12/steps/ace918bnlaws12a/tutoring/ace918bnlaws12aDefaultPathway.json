@@ -1,0 +1,41 @@
+[
+    {
+        "id": "ace918bnlaws12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Net Force",
+        "text": "The net force on an object is the total force acting on it. If there are no other external forces, the net force is due to gravity alone.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws12a-h1"
+        ],
+        "title": "Calculate Gravitational Force",
+        "text": "The gravitational force can be calculated using the formula: $$force=mass acceleration_{due,to,gravity}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws12a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$98$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws12a-h2"
+        ],
+        "title": "Substitute Values",
+        "text": "Substitute the given values into the formula: $$mass=10.0$$ kg and $$acceleration_{due,to,gravity}=9.80$$ $$\\frac{m}{s^2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

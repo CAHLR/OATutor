@@ -1,0 +1,157 @@
+[
+    {
+        "id": "ae173b9deriv12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Actual Revenue",
+        "text": "The actual revenue obtained from the sale of the 101st dinner is R(101) - R(100).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ae173b9deriv12a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.97$$"
+        ],
+        "dependencies": [
+            "ae173b9deriv12a-h1"
+        ],
+        "title": "Solving for the Actural Revenue",
+        "text": "What is R(101) - R(100)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ae173b9deriv12a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$602.97$$"
+        ],
+        "dependencies": [
+            "ae173b9deriv12a-h2"
+        ],
+        "title": "R(101)",
+        "text": "What is R(101)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ae173b9deriv12a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae173b9deriv12a-h3"
+        ],
+        "title": "Substituting $$x$$ $$=$$ $$101$$",
+        "text": "Plug $$x$$ $$=$$ $$101$$ into R(x) $$=$$ $$-0.03x^2$$ + $$9x$$ to solve for R(101).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ae173b9deriv12a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ae173b9deriv12a-h4"
+        ],
+        "title": "Calculating R(101)",
+        "text": "R(x) $$=$$ $$-0.03x^2$$ + $$9x$$\\nR(101) $$=$$ $$-{\\operatorname{0.03}\\left(101\\right)}^2$$ + 9(101)\\nR(101) $$=$$ $$-306.03$$ + $$909$$\\nR(101) $$=$$ $$602.97$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ae173b9deriv12a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$600$$"
+        ],
+        "dependencies": [
+            "ae173b9deriv12a-h5"
+        ],
+        "title": "R(100)",
+        "text": "What is R(100)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ae173b9deriv12a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ae173b9deriv12a-h6"
+        ],
+        "title": "Substituting $$x$$ $$=$$ $$100$$",
+        "text": "Plug $$x$$ $$=$$ $$100$$ into R(x) $$=$$ $$-0.03x^2$$ + $$9x$$ to solve for R(100).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ae173b9deriv12a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ae173b9deriv12a-h7"
+        ],
+        "title": "Calculating R(100)",
+        "text": "R(x) $$=$$ $$-0.03x^2$$ + $$9x$$\\nR(100) $$=$$ $$-{\\operatorname{0.03}\\left(100\\right)}^2$$ + 9(100)\\nR(100) $$=$$ $$-300$$ + $$900$$\\nR(100) $$=$$ $$600$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ae173b9deriv12a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.97$$"
+        ],
+        "dependencies": [
+            "ae173b9deriv12a-h8"
+        ],
+        "title": "Subtracting the Calculations",
+        "text": "Now that you have determined that R(101) $$=$$ $$602.97$$ and R(100) $$=$$ $$600$$, what is R(101) - R(100)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ae173b9deriv12a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.97$$"
+        ],
+        "dependencies": [
+            "ae173b9deriv12a-h9"
+        ],
+        "title": "Final Calculations",
+        "text": "R(101) - R(100) $$=$$ $$602.97$$ - $$600$$. What is the actual revenue obtained from the sale of the 101st dinner?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ae173b9deriv12a-h11",
+        "type": "hint",
+        "dependencies": [
+            "ae173b9deriv12a-h10"
+        ],
+        "title": "Interpretation of the Answer",
+        "text": "Since the estimated revenue obtained from the sale of the 101st dinner is approximately $3, and the actual revenue was $$\\$2.97$$, the marginal revenue is a fairly good estimate in this case and has the advantage of being easy to compute.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

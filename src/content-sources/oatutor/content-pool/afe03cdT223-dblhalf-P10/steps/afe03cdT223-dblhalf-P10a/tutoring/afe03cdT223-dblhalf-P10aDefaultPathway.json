@@ -1,0 +1,84 @@
+[
+    {
+        "id": "afe03cdT223-dblhalf-P10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Half angle formula",
+        "text": "$$\\cos(\\theta/2)=\\sqrt{\\frac{1+\\cos(\\theta)}{2}}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P10a-h1"
+        ],
+        "title": "Square the half angle formula",
+        "text": "$$\\cos**2(\\theta/2)=\\frac{1+\\cos(\\theta)}{2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P10a-h2"
+        ],
+        "title": "Multiply by $$2$$",
+        "text": "$$2\\cos**2(\\theta/2)=1+\\cos(\\theta)$$ \\n Now we have rearranged the half angle formula to match the structure that we see in our problem.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P10a-h3"
+        ],
+        "title": "Substitute $$\\theta=8x$$",
+        "text": "$$2\\cos**2(4x)=1+\\cos(8x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P10a-h5",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P10a-h4"
+        ],
+        "title": "Hlaf angle formula",
+        "text": "Recall that $$\\sin(8x)=2\\sin(4x)\\cos(4x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P10a-h6",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P10a-h5"
+        ],
+        "title": "Putting it together",
+        "text": "$$\\frac{\\sin(8x)}{1+\\cos(8x)}=\\frac{2\\sin(4x)\\cos(4x)}{2\\cos**2(4x)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P10a-h7",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P10a-h6"
+        ],
+        "title": "Cancel common factors",
+        "text": "$$\\frac{2\\sin(4x)\\cos(4x)}{2\\cos**2(4x)}=\\frac{\\sin(4x)}{\\cos(4x)}=\\tan(4x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

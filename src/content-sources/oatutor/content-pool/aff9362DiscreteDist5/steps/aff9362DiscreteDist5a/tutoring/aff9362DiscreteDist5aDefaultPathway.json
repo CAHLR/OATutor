@@ -1,0 +1,92 @@
+[
+    {
+        "id": "aff9362DiscreteDist5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Probability",
+        "text": "The first step is calculating the probability of flipping a red card in one turn. To calculate the probability, we divide the number of cards with the desired outcome by the total number of possible outcomes.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aff9362DiscreteDist5a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$52$$"
+        ],
+        "dependencies": [
+            "aff9362DiscreteDist5a-h1"
+        ],
+        "title": "Possible Outcomes",
+        "text": "How many total cards are there in the deck?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aff9362DiscreteDist5a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$13$$"
+        ],
+        "dependencies": [
+            "aff9362DiscreteDist5a-h2"
+        ],
+        "title": "Desired Outcome",
+        "text": "How many cards are red? This is the number of cards with the desired outcome.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aff9362DiscreteDist5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "aff9362DiscreteDist5a-h3"
+        ],
+        "title": "Divide",
+        "text": "What is $$\\frac{26}{52}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aff9362DiscreteDist5a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aff9362DiscreteDist5a-h4"
+        ],
+        "title": "$$2$$ In A Row",
+        "text": "To calculate the probability that $$2$$ cards in a row are both red, we can multiply the individual probabilities together since we need to flip a red card AND another red card. The AND keyword hints at the idea that the probabilities need to be multiplied together. Essentially, we would multiply the probability of flipping a red with itself.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aff9362DiscreteDist5a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{4}$$"
+        ],
+        "dependencies": [
+            "aff9362DiscreteDist5a-h5"
+        ],
+        "title": "Calculation",
+        "text": "What is $$\\frac{1}{2} \\frac{1}{2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

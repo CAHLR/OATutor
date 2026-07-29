@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a767c30T221-identpyth-P05a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor the $$-5$$ expression",
+        "text": "$$12-5\\sin**2(x)-5\\cos**2(x)=12-5(\\sin**2(x)+\\cos**2(x))$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a767c30T221-identpyth-P05a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a767c30T221-identpyth-P05a-h1"
+        ],
+        "title": "Trig identity",
+        "text": "$$\\sin**2(x)+\\cos**2(x)=1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a767c30T221-identpyth-P05a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a767c30T221-identpyth-P05a-h2"
+        ],
+        "title": "Put it together",
+        "text": "$$12-5(\\sin**2(x)+\\cos**2(x))=7$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

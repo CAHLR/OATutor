@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a02046bA122-zeroprod-P03b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Expand LHS",
+        "text": "$$x\\left(2x+1\\right)=6$$ \\n $$2x^2+x=6$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a02046bA122-zeroprod-P03b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a02046bA122-zeroprod-P03b-h1"
+        ],
+        "title": "Move all terms to LHS",
+        "text": "$$2x^2+x=6$$ \\n $$2x^2+x-6=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a02046bA122-zeroprod-P03b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a02046bA122-zeroprod-P03b-h2"
+        ],
+        "title": "Factor the LHS",
+        "text": "$$2x^2+x-6=\\left(2x-3\\right) \\left(x+2\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a02046bA122-zeroprod-P03b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a02046bA122-zeroprod-P03b-h3"
+        ],
+        "title": "Zero product property",
+        "text": "$$\\left(2x-3\\right) \\left(x+2\\right)=0$$ if $$2x-3=0$$ or $$x+2=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a02046bA122-zeroprod-P03b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a02046bA122-zeroprod-P03b-h4"
+        ],
+        "title": "Conclusion",
+        "text": "$$2x-3=0$$ if and only if $$x=\\frac{3}{2}$$ $$x+2=0$$ if and only if $$x=-2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

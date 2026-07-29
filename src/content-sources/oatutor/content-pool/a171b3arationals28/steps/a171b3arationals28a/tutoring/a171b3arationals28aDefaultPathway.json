@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a171b3arationals28a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor",
+        "text": "Find the largest factor of both the numerator and denominator that are equal",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a171b3arationals28a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [
+            "a171b3arationals28a-h1"
+        ],
+        "title": "Largest Common Factor",
+        "text": "What is the largest common factor of the numerator and denominator?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a171b3arationals28a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a171b3arationals28a-h2"
+        ],
+        "title": "Divide",
+        "text": "Divide both numerator and denominator with the largest common factor",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

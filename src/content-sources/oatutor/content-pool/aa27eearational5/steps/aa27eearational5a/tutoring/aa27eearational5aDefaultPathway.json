@@ -1,0 +1,36 @@
+[
+    {
+        "id": "aa27eearational5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the LCD of the Fractions",
+        "text": "The LCD of $$1$$, $$\\frac{2}{x}$$, and $$\\frac{15}{x^2}$$ is $$x^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa27eearational5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aa27eearational5a-h1"
+        ],
+        "title": "Clear All Fractions",
+        "text": "We must multiply each fraction by the LCD. We get $$x^2-2x=15$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa27eearational5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aa27eearational5a-h2"
+        ],
+        "title": "Solve The Equation",
+        "text": "$$x^2-2x-15=0$$ becomes $$\\left(x-5\\right) \\left(x+3\\right)$$. Our solutions are thus $$x=5$$ and $$x=-3$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

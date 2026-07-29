@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ace918bnlaws24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the initial velocity of the shot put, we need to consider the physics of projectile motion. The shot was released at a height of $$2.20$$ $$m$$ with a projection angle of $$45$$ degrees.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws24a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws24a-h1"
+        ],
+        "title": "Using the Projectile Motion Formula",
+        "text": "The formula for the range of a projectile is given by: \\( R $$=$$ \\frac{v**2 \\sin(2\\theta)}{g} \\), where \\( R \\) is the range, \\( v \\) is the initial velocity, \\( $$\\theta$$ \\) is the angle of projection, and \\( g \\) is the acceleration due to gravity $$(9.8$$ m/s\u00b2).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws24a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws24a-h2"
+        ],
+        "title": "Solving for Initial Velocity",
+        "text": "Rearrange the formula to solve for \\( v \\): \\( v $$=$$ \\sqrt{\\frac{R \\cdot g}{\\sin(2\\theta)}} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws24a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$14.1$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws24a-h3"
+        ],
+        "title": "Calculate Initial Velocity",
+        "text": "Substitute the known values into the formula: \\( R $$=$$ $$22.22$$ \\) $$m$$, \\( $$\\theta$$ $$=$$ $$45$$ \\) degrees, and \\( g $$=$$ $$9.8$$ \\) m/s\u00b2. Calculate \\( v \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

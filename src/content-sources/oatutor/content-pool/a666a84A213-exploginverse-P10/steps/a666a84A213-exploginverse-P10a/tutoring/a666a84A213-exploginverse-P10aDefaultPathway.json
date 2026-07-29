@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a666a84A213-exploginverse-P10a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [],
+        "title": "Break into simpler pieces",
+        "text": "What is $$\\log_{2}\\left(1\\right)$$ equal to?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a666a84A213-exploginverse-P10a-h1-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Express as an exponential",
+                "text": "$$\\log_{2}\\left(1\\right)$$ is asking for the power $$y$$ so that $$2^y=1$$. The solution is $$y=0$$.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a666a84A213-exploginverse-P10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P10a-h1"
+        ],
+        "title": "Simplified equation",
+        "text": "We have reduced to solving $$2**{\\log_{2}(x-4)}$$ $$=16$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P10a-h2"
+        ],
+        "title": "Apply the cancellation principle to LHS",
+        "text": "$$2**{\\log_{2}(x-4)}=x-4$$ by cancellation property! logs undo exponents, and exponents undo logs. \\n This reduces $$2**{\\log_{2}(x-4)}$$ $$=16$$ to solving $$x-4=16$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P10a-h3"
+        ],
+        "title": "Isolate $$x$$",
+        "text": "Solve $$x-4=16$$ for $$x$$. Adding $$4$$ to both sides, we get $$x=20$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

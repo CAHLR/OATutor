@@ -1,0 +1,92 @@
+[
+    {
+        "id": "a9c64f0series7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Types of Series",
+        "text": "We know how to sum arithmetic and geometric series. Arithmetic series have a common difference between terms. Geometric series have a common ratio between terms.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9c64f0series7a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Arithmetic"
+        ],
+        "dependencies": [
+            "a9c64f0series7a-h1"
+        ],
+        "title": "What type of series is this?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Arithmetic",
+            "Geometric",
+            "None of the Above"
+        ]
+    },
+    {
+        "id": "a9c64f0series7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9c64f0series7a-h1"
+        ],
+        "title": "Use Sum of Arithmetic Series formula",
+        "text": "Remember: $$S_n$$ $$=$$ $$n$$ * (a_1 + a_n) / $$2$$. We know $$a_1$$ $$=$$ $$13$$ and $$a_n$$ $$=$$ $$69$$, but first we need to find $$n$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9c64f0series7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9c64f0series7a-h2"
+        ],
+        "title": "Find $$d$$ and use $$a_n$$ formula",
+        "text": "The common difference is $$d$$ $$=$$ $$21$$ - $$13$$ $$=$$ $$8$$. Use $$a_n$$ $$=$$ $$a_1$$ + $$\\left(n-1\\right) d$$ to solve for $$n$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9c64f0series7a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a9c64f0series7a-h3"
+        ],
+        "title": "Find $$n$$",
+        "text": "Solve for n: $$69$$ $$=$$ $$13$$ + $$8\\left(n-1\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9c64f0series7a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$328$$"
+        ],
+        "dependencies": [
+            "a9c64f0series7a-h3"
+        ],
+        "title": "Find the Sum",
+        "text": "Evaluate $$S_8$$ $$=$$ $$8$$ * (13 + 69) / $$2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

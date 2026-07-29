@@ -1,0 +1,164 @@
+[
+    {
+        "id": "a4d5812T121-trigraph-P17a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [],
+        "title": "Find the minimal period from the equation $$h(t)=3\\sin({\\pi}t-\\pi/4)+1.$$",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a4d5812T121-trigraph-P17a-h1-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Substitute into inequality defining period",
+                "text": "Find the minimal period by solving $$0$$ $$\\leq$$ $$\\pi$$ $$t-\\frac{\\pi}{4}$$ $$\\leq$$ $$2\\pi.$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            },
+            {
+                "id": "a4d5812T121-trigraph-P17a-h1-s2",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Solve for defining period",
+                "text": "$$\\leq$$ $$\\pi$$ $$t-\\frac{\\pi}{4}$$ $$\\leq$$ $$2\\pi$$ \\n $$\\frac{\\pi}{4}$$ $$\\leq$$ $$\\pi$$ $$t\\leq$$ $$\\frac{9\\pi}{4}$$ \\n $$\\frac{1}{4} \\leq t \\leq \\frac{9}{4}$$ \\n The period is $$\\frac{9}{4}-\\frac{1}{4}=\\frac{8}{4}=2$$.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a4d5812T121-trigraph-P17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4d5812T121-trigraph-P17a-h1"
+        ],
+        "title": "Find period from maxima",
+        "text": "The period is also the distance between two successive maxima.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4d5812T121-trigraph-P17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4d5812T121-trigraph-P17a-h2"
+        ],
+        "title": "Find periods of given functions",
+        "text": "Function A: period is $$0.25-(-1.75)=2$$ \\n Function B: period is $$0.75-(-1.25)=2$$ \\n Function C: period is $$1.5-0.5=1$$ \\n Function D: period is $$1.75-0.75=1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4d5812T121-trigraph-P17a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4d5812T121-trigraph-P17a-h3"
+        ],
+        "title": "Eliminate options with incorrect period",
+        "text": "We can narrow our search to A and B since C and D have the wrong period.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4d5812T121-trigraph-P17a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{4}$$"
+        ],
+        "dependencies": [
+            "a4d5812T121-trigraph-P17a-h4"
+        ],
+        "title": "Find the phase shift from the equation $$h(t)=3\\sin({\\pi}t-\\pi/4)+1.$$",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a4d5812T121-trigraph-P17a-h5-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Set argument to $$0$$",
+                "text": "Determine when the argument $$\\pi$$ $$t-\\frac{\\pi}{4}=0$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a4d5812T121-trigraph-P17a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a4d5812T121-trigraph-P17a-h5"
+        ],
+        "title": "Find first maximum value",
+        "text": "The first maximum occurs when $$\\pi$$ $$t-\\frac{\\pi}{4}=\\frac{\\pi}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4d5812T121-trigraph-P17a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a4d5812T121-trigraph-P17a-h6"
+        ],
+        "title": "Solve for $$t$$",
+        "text": "$$\\pi$$ $$t-\\frac{\\pi}{4}=\\frac{\\pi}{2}$$ (divide by $$\\pi$$ ) \\n\\n$$t-\\frac{1}{4}=\\frac{1}{2}$$ (add $$\\frac{1}{4}$$ to both sides) \\n\\n$$t=\\frac{3}{4}=0.75$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4d5812T121-trigraph-P17a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a4d5812T121-trigraph-P17a-h7"
+        ],
+        "title": "Find the first minimum value",
+        "text": "The first minimum value occurs when when $$\\pi$$ $$t-\\frac{\\pi}{4}=\\frac{\\left(-\\pi\\right)}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4d5812T121-trigraph-P17a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a4d5812T121-trigraph-P17a-h8"
+        ],
+        "title": "Solve for $$t$$",
+        "text": "$$\\pi$$ $$t-\\frac{\\pi}{4}=\\frac{\\left(-\\pi\\right)}{2}$$ (divide by pi) \\n\\n$$t-\\frac{1}{4}=\\frac{\\left(-1\\right)}{2}$$ (add $$\\frac{1}{4}$$ to both sides) \\n\\n$$t=\\frac{\\left(-1\\right)}{4}=-0.25$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4d5812T121-trigraph-P17a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a4d5812T121-trigraph-P17a-h9"
+        ],
+        "title": "Extrapolate to all maxima and minima using period",
+        "text": "Since the maxima are separated by a period of $$2$$, they occur at $$0.75$$ and $$-1.25$$. The minima will occur at $$-0.25$$ and $$1.75$$. The midpoint of the sine wave is shifted right by $$0.25$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

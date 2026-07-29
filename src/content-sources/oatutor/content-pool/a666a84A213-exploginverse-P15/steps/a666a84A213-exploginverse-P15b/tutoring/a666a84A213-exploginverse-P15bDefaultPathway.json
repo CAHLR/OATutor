@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a666a84A213-exploginverse-P15b-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$16$$"
+        ],
+        "dependencies": [],
+        "title": "A related question",
+        "text": "What is $$2^4$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P15b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P15b-h1"
+        ],
+        "title": "Relate to original problem",
+        "text": "Observe that $$10<2^4=16$$. So $$\\log_{2}\\left(10\\right)<\\log_{2}\\left(2^4\\right)$$ (because logs are increasing functions).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P15b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P15b-h2"
+        ],
+        "title": "A related question",
+        "text": "What is $$\\log_{2}\\left(16\\right)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P15b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P15b-h3"
+        ],
+        "title": "Simplified further",
+        "text": "$$\\log_{2}\\left(16\\right)=\\log_{2}\\left(2^4\\right)=4$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P15b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P15b-h4"
+        ],
+        "title": "Conclusion",
+        "text": "Since $$8<10<16$$, it follows that $$3<\\log_{2}\\left(10\\right)<4$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

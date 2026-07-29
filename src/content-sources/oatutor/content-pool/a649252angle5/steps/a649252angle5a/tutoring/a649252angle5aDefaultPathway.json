@@ -1,0 +1,105 @@
+[
+    {
+        "id": "a649252angle5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use power-reducing formulas",
+        "text": "Recall the power-reducing formula for $$cos^2\\left(x\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle5a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$cos^2\\left(x\\right)=\\frac{1+cos\\left(2x\\right)}{2}$$"
+        ],
+        "dependencies": [
+            "a649252angle5a-h1"
+        ],
+        "title": "Power-reducing formula for cosine squared",
+        "text": "What is the power-reducing formula for $$cos^2\\left(x\\right)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$cos^2\\left(x\\right)=\\frac{1+cos\\left(2x\\right)}{2}$$",
+            "$$cos^2\\left(x\\right)=\\frac{1-cos\\left(2x\\right)}{2}$$",
+            "$$cos^2\\left(x\\right)=\\frac{1+cos\\left(x\\right)}{2}$$",
+            "$$cos^2\\left(x\\right)=1+cos\\left(2x\\right)$$"
+        ]
+    },
+    {
+        "id": "a649252angle5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle5a-h1"
+        ],
+        "title": "Rewrite the expression",
+        "text": "Rewrite $$cos^4\\left(x\\right)$$ as $$\\left(cos^2\\left(x\\right)\\right)^2$$ and substitute the power-reducing formula.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle5a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\left(\\frac{1+cos\\left(2x\\right)}{2}\\right)^2=\\frac{1+2cos\\left(2x\\right)+cos^2\\left(2x\\right)}{4}$$"
+        ],
+        "dependencies": [
+            "a649252angle5a-h2"
+        ],
+        "title": "Substitute and expand",
+        "text": "Substitute the formula into $$\\left(cos^2\\left(x\\right)\\right)^2$$ and expand the expression.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\left(\\frac{1+cos\\left(2x\\right)}{2}\\right)^2=\\frac{1+2cos\\left(2x\\right)+cos^2\\left(2x\\right)}{4}$$",
+            "$$\\left(\\frac{1+cos\\left(2x\\right)}{2}\\right)^2=\\frac{1+cos^2\\left(2x\\right)}{4}$$",
+            "$$\\left(\\frac{1+cos\\left(2x\\right)}{2}\\right)^2=\\frac{1+2cos\\left(2x\\right)+cos^2\\left(2x\\right)}{2}$$",
+            "$$\\left(\\frac{1+cos\\left(2x\\right)}{2}\\right)^2=\\frac{1+cos\\left(2x\\right)+cos^2\\left(2x\\right)}{4}$$"
+        ]
+    },
+    {
+        "id": "a649252angle5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle5a-h2"
+        ],
+        "title": "Apply power-reducing again",
+        "text": "You will need to apply the power-reducing formula again for the $$cos^2\\left(2x\\right)$$ term. Remember to adjust the angle.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle5a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$cos^2\\left(2x\\right)=\\frac{1+cos\\left(4x\\right)}{2}$$"
+        ],
+        "dependencies": [
+            "a649252angle5a-h3"
+        ],
+        "title": "Power-reducing for $$cos^2\\left(2x\\right)$$",
+        "text": "What is the power-reducing formula for $$cos^2\\left(2x\\right)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$cos^2\\left(2x\\right)=\\frac{1+cos\\left(4x\\right)}{2}$$",
+            "$$cos^2\\left(2x\\right)=\\frac{1-cos\\left(4x\\right)}{2}$$",
+            "$$cos^2\\left(2x\\right)=\\frac{1+cos\\left(2x\\right)}{2}$$",
+            "$$cos^2\\left(2x\\right)=1+cos\\left(4x\\right)$$"
+        ]
+    }
+]

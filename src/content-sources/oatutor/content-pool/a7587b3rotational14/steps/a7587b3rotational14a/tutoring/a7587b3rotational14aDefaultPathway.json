@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a7587b3rotational14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rotational Kinetic Energy",
+        "text": "The rotational kinetic energy can be calculated using the following formula: $$E_{rot}=\\frac{1}{2} I {\\omega}^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7587b3rotational14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7587b3rotational14a-h1"
+        ],
+        "title": "Formula for the Kinetic Energy of the Bus",
+        "text": "The kinetic energy (KE) of the bus is given by: $$KE=\\frac{1}{2} m v^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7587b3rotational14a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2222222$$"
+        ],
+        "dependencies": [
+            "a7587b3rotational14a-h2"
+        ],
+        "title": "Calculate the Rotational Kinetic Energy of the Flywheel",
+        "text": "We know that 90% of the flywheel\u2019s rotational kinetic energy is used to accelerate the bus, so $$E_{rot}=\\frac{KE}{0.9}=\\frac{\\frac{1}{2} m v^2}{0.9}$$. Solve for $$E_{rot}$$ in J.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$2000000$$",
+            "$$2222222$$",
+            "$$2200000$$",
+            "$$1800000$$"
+        ]
+    },
+    {
+        "id": "a7587b3rotational14a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$270$$"
+        ],
+        "dependencies": [
+            "a7587b3rotational14a-h3"
+        ],
+        "title": "Calculate the Moment of Inertia of the Flywheel",
+        "text": "The flywheel is a disk, so its moment of inertia is $$I=\\frac{1}{2} m r^2=1500\\frac{1}{2}\\times{0.6}^2=$$? (in kg*m**2)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a7587b3rotational14a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$128$$"
+        ],
+        "dependencies": [
+            "a7587b3rotational14a-h3",
+            "a7587b3rotational14a-h4"
+        ],
+        "title": "Solve for the Angular Velocity",
+        "text": "As $$E_{rot}=\\frac{1}{2} I {\\omega}^2$$, plug in the values and solve for \u03c9 in $$\\frac{rad}{s}$$ (round into the nearest integer).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a16844emotion2d29b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the time it takes for the ball to reach the green, we need to consider the vertical motion of the ball. The ball is dropped from a height of $$400$$ $$m$$. We can use the kinematic equation for vertical motion to find the time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d29b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d29b-h1"
+        ],
+        "title": "Kinematic Equation for Vertical Motion",
+        "text": "The kinematic equation for vertical motion is:\\n\\n$$h$$ $$=$$ $$v_0 t$$ + $$0.5g t^2$$\\n\\nwhere:\\n- $$h$$ is the height (400 m)\\n- $$v_0$$ is the initial vertical velocity (0 $$\\frac{m}{s}$$, since the ball is dropped)\\n- g is the acceleration due to gravity $$(9.8$$ m/s**2)\\n- $$t$$ is the time in seconds",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d29b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d29b-h2"
+        ],
+        "title": "Solving for Time",
+        "text": "Rearrange the kinematic equation to solve for time (t):\\n\\n$$0$$ $$=$$ $$0.5g t^2$$ - $$h$$\\n\\nSolve for $$t$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

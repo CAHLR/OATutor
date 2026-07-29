@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a63563bnewton1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Derivative of f(x)",
+        "text": "The derivative of f(x) would be needed approximate a root of f(x) using Newton's method.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a63563bnewton1a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$f'(x)=3x^2-3$$"
+        ],
+        "dependencies": [
+            "a63563bnewton1a-h1"
+        ],
+        "title": "Find the Derivative of f(x)",
+        "text": "What is the derivative of f(x)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$f'(x)=3x^2-3$$",
+            "$$f'(x)=3x-3$$",
+            "$$f'(x)=x^3-3$$",
+            "$$f'(x)=3x-3x+1$$"
+        ]
+    },
+    {
+        "id": "a63563bnewton1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a63563bnewton1a-h2"
+        ],
+        "title": "Newton's Method With $$n=1$$",
+        "text": "To find $$x_1$$, use the equation $$x_n=x_n-1-\\frac{f{\\left(x_n-1\\right)}}{\\operatorname{f'}\\left(x_n-1\\right)}$$ with $$n=1$$ and $$x_0=2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

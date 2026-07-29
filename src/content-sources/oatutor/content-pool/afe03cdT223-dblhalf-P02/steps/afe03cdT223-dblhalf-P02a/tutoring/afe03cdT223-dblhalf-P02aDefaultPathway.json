@@ -1,0 +1,48 @@
+[
+    {
+        "id": "afe03cdT223-dblhalf-P02a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Laws of exponents with different bases",
+        "text": "$$8\\sin**2(x)\\cos**2(x)=2\\left(2\\sin(x)\\cos(x)\\right)**2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P02a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P02a-h1"
+        ],
+        "title": "Double angle formula",
+        "text": "$$2\\sin(x)\\cos(x)=\\sin(2x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P02a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P02a-h2"
+        ],
+        "title": "Substitute",
+        "text": "$$2\\left(2\\sin(x)\\cos(x)\\right)**2=2\\left(\\sin(2x)\\right)**2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P02a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P02a-h3"
+        ],
+        "title": "Bound the sine",
+        "text": "$$2\\left(\\sin(2x)\\right)**2\\leq{2}$$ since $$\\sin(2x)\\leq{1}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

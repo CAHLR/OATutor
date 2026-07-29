@@ -1,0 +1,84 @@
+[
+    {
+        "id": "afe03cdT223-dblhalf-P08a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Half angle formula for $$\\cos(\\theta)$$",
+        "text": "$$\\cos(\\theta/2)=\\sqrt{\\frac{1+\\cos\\theta}{2}}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P08a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P08a-h1"
+        ],
+        "title": "Match the structure",
+        "text": "Try to factor the expression under the radical so it matches the structure of the identity.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P08a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P08a-h2"
+        ],
+        "title": "Multiply by $$\\frac{2}{2}$$",
+        "text": "To get a factor of $$2$$ in the denominator, multiply by $$\\frac{2}{2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P08a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P08a-h3"
+        ],
+        "title": "Multiply by $$\\frac{2}{2}$$",
+        "text": "$$\\sqrt{2+2\\cos(10x)}=\\sqrt{\\frac{4+4\\cos(10x)}{2}}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P08a-h5",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P08a-h4"
+        ],
+        "title": "Factor out the $$4$$",
+        "text": "$$\\sqrt{\\frac{4+4\\cos(10x)}{2}}=\\sqrt{4\\frac{1+\\cos(10x)}{2}}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P08a-h6",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P08a-h5"
+        ],
+        "title": "Laws of exponents (radicals)",
+        "text": "Pull the $$4$$ out of the square root as a 2: \\n $$\\sqrt{4\\frac{1+\\cos(10x)}{2}}=2\\sqrt{\\frac{1+\\cos(10x)}{2}}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P08a-h7",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P08a-h6"
+        ],
+        "title": "Substitute half angle formula",
+        "text": "$$2\\sqrt{\\frac{1+\\cos(10x)}{2}}=2\\cos(5x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

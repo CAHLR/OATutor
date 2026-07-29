@@ -1,0 +1,48 @@
+[
+    {
+        "id": "ac549dbA252-solveexpeqns-P04a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Write in terms of $$y=2^x$$",
+        "text": "First express each term in terms of $$2^x$$ using laws of exponents: $$a**{bc}=(a**b)**c$$ and $$a**{b+c}=a**b a**c.$$ \\n\\n$$2**{3x}-2**{x+2}=(2**x)**3-(2**x)(2**2)=48$$ \\n Next substitute $$y$$ in for $$2^x$$ everywhere: \\n\\n$$\\left(2^x\\right)^3-2^x 2^2=y^3-4y=48$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac549dbA252-solveexpeqns-P04a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac549dbA252-solveexpeqns-P04a-h1"
+        ],
+        "title": "Solve for $$y$$",
+        "text": "Apply difference of squares $$a^2-b^2=\\left(a-b\\right) \\left(a+b\\right)$$ \\n $$y^3-4y=y\\left(y^2-4\\right)=\\left(y-2\\right) y\\left(y+2\\right)=48$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac549dbA252-solveexpeqns-P04a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac549dbA252-solveexpeqns-P04a-h2"
+        ],
+        "title": "Find a clever solution",
+        "text": "Solving cubics by hand is tricky! In this case, the algebra is telling us we can factor $$48$$ into a product of $$3$$ numbers that differ by $$2$$. That factorization is $$(2)(4)(6)=48$$. $$So$$ $$\\left(y-2\\right) y\\left(y+2\\right)=(2)(4)(6), $$ or $$y=4$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac549dbA252-solveexpeqns-P04a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ac549dbA252-solveexpeqns-P04a-h3"
+        ],
+        "title": "Don't forget to solve for $$x$$",
+        "text": "Since $$y=4$$, and $$y=2^x$$, we have $$x=2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

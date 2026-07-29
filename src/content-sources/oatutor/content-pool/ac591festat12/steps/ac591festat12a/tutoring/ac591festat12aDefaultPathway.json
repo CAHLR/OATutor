@@ -1,0 +1,75 @@
+[
+    {
+        "id": "ac591festat12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Figure Out the Rows to Use",
+        "text": "First, determine which rows from the table to look at. Since we want heights that are less than $$65.95$$ inches, we note that we want to only look at the first three rows because everything past that will have a larger height.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac591festat12a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$23$$"
+        ],
+        "dependencies": [
+            "ac591festat12a-h1"
+        ],
+        "title": "Add Up the Data from Chosen Rows",
+        "text": "Now, knowing the frequency of each row, we can add up the first three rows. What is the sum?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "ac591festat12a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$23$$"
+                ],
+                "dependencies": [],
+                "title": "Add Up the Data from Chosen Rows",
+                "text": "What is $$5+3+15$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "ac591festat12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac591festat12a-h2"
+        ],
+        "title": "Definition of Percentages",
+        "text": "The definition of a percentage is the proportion out of 100%. Since we know that there are $$23$$ players out of a total of $$100$$ players (the total of the frequency column) that are less than $$65.95$$ inches tall, we can determine the percentage of players that is less than $$65.95$$ inches tall.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac591festat12a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$23$$"
+        ],
+        "dependencies": [
+            "ac591festat12a-h3"
+        ],
+        "title": "Find the Overall Percentage of Heights",
+        "text": "What is $$23$$ / $$100$$ written as a percentage?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

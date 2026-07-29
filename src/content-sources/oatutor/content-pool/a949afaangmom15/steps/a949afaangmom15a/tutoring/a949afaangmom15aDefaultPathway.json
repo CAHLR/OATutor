@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a949afaangmom15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Momentum Conservation",
+        "text": "The angular momentum of a rotating object is conserved if no external torques act on it. This means that the initial angular momentum of the Sun must equal the final angular momentum of the white dwarf.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom15a-h1"
+        ],
+        "title": "Angular Momentum Formula",
+        "text": "The angular momentum L of a sphere is given by $$L=I \\omega$$, where I is the moment of inertia and \u03c9 is the angular velocity. For a sphere, $$I=\\frac{2}{5} M R^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom15a-h2"
+        ],
+        "title": "Relating Angular Velocity and Period",
+        "text": "The angular velocity \u03c9 is related to the period T by the formula $$\u03c9=\\frac{2\\pi}{T}$$. Use this to find the initial and final angular velocities.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom15a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2\\pi}{28\\times24\\times60\\times60}$$"
+        ],
+        "dependencies": [
+            "a949afaangmom15a-h3"
+        ],
+        "title": "Calculate Initial Angular Velocity",
+        "text": "Calculate the initial angular velocity of the Sun using $$\u03c9=\\frac{2\\pi}{T}$$, where T is the initial period in seconds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom15a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2}{5} M \\left(7\\times{10}^5\\right)^2 \\frac{2\\pi}{28\\times24\\times60\\times60}=\\frac{2}{5} M \\left(3.5\\times{10}^3\\right)^2 \\omega_{final}$$"
+        ],
+        "dependencies": [
+            "a949afaangmom15a-h4"
+        ],
+        "title": "Calculate Final Angular Velocity",
+        "text": "Using the conservation of angular momentum, set the initial angular momentum equal to the final angular momentum and solve for the final angular velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom15a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$60.5$$"
+        ],
+        "dependencies": [
+            "a949afaangmom15a-h5"
+        ],
+        "title": "Solve for Final Period",
+        "text": "Use the relation $$\u03c9=\\frac{2\\pi}{T}$$ to solve for the final period T in seconds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

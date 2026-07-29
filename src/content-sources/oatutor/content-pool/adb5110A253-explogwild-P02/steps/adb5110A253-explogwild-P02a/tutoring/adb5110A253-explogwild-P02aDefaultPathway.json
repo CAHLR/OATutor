@@ -1,0 +1,52 @@
+[
+    {
+        "id": "adb5110A253-explogwild-P02a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [],
+        "title": "After one hour $$(t=1)$$",
+        "text": "If $$5$$ people see the post initially, $$t=0$$, how many people have seen the post one hour later?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$1$$",
+            "$$5$$",
+            "$$10$$"
+        ]
+    },
+    {
+        "id": "adb5110A253-explogwild-P02a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20$$"
+        ],
+        "dependencies": [
+            "adb5110A253-explogwild-P02a-h1"
+        ],
+        "title": "After two hours $$(t=2)$$",
+        "text": "If $$10$$ people have seen the post after one hour, how many will see the post after $$2$$ hours?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P02a-h3",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P02a-h2"
+        ],
+        "title": "After $$t$$ hours",
+        "text": "We see that initially, $$5$$ people have seen the post. When $$t=1$$, $$10=5(2)$$ people have seen the viral post. After two hours, $$5(2)(2)=5\\left(2^2\\right)$$ people have seen the post. To model this exponentially, we see that after $$t$$ hours, $$5\\left(2^t\\right)$$ people will have seen the post.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

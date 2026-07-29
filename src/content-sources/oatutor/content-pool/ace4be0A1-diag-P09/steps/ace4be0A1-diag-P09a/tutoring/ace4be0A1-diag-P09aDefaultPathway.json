@@ -1,0 +1,96 @@
+[
+    {
+        "id": "ace4be0A1-diag-P09a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Multiply both sides by denominator",
+        "text": "Apply $$\\frac{a}{b}=c$$ if and only if $$a=bc$$: \\n $$\\frac{x^3-2x+1}{x^2+1}=x-1$$ iff $$x^3-2x+1=\\left(x-1\\right) \\left(x^2+1\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P09a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P09a-h1"
+        ],
+        "title": "Apply FOIL on the RHS",
+        "text": "Apply $$\\left(a+b\\right) \\left(c+d\\right)=ac+ad+bc+bd$$ \\n $$\\left(x-1\\right) \\left(x^2+1\\right)=x^3+x-x^2-1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P09a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P09a-h2"
+        ],
+        "title": "Move all terms to the LHS",
+        "text": "$$x^3-2x+1=x^3+x-x^2-1$$ so we subtract $$x^3+x-x^2-1$$ from both sides. This is an application of $$a=b+c$$ iff $$a-c=b$$ with $$b=0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P09a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P09a-h3"
+        ],
+        "title": "Move all terms to the LHS",
+        "text": "$$x^3-2x+1-x^3-x-\\left(-x^2\\right)-\\left(-1\\right)=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P09a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P09a-h4"
+        ],
+        "title": "Combine like terms on LHS",
+        "text": "$$x^3-x^3+x^2-3x+1-\\left(-1\\right)=0$$ \\n $$x^2-3x-2=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P09a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P09a-h5"
+        ],
+        "title": "Factor the LHS",
+        "text": "$$x^2-3x-2=(x-2)(x-1)=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P09a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P09a-h6"
+        ],
+        "title": "Zero product property",
+        "text": "$$ab=0$$ if and only if $$a=0$$ or $$b=0$$. \\n $$(x-2)(x-1)=0$$ if and only if $$x-1=0$$ or $$x-2=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P09a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P09a-h7"
+        ],
+        "title": "Solve for $$x.$$",
+        "text": "Apply $$a+b=c$$ if and only if $$a=c-b$$. \\n $$x-1=0$$ or $$x-2=0$$ if and only if $$x=1$$ or $$x=2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

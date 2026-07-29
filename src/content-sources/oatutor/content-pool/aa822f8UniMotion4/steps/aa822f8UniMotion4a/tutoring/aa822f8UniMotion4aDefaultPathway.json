@@ -1,0 +1,70 @@
+[
+    {
+        "id": "aa822f8UniMotion4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Setting up the Equation",
+        "text": "Set up the equation by setting the speed of Stu's running to $$r$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa822f8UniMotion4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aa822f8UniMotion4a-h1"
+        ],
+        "title": "Relating the Numbers",
+        "text": "We know that distance $$=$$ $$rate time$$ since we are told two different distances and rates have related time, we can set these two expressions such that $$\\frac{distance1}{rate1}$$ + $$\\frac{distance2}{rate2}$$ $$=$$ $$3$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa822f8UniMotion4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{14}{r}+\\frac{40}{r+6}=3$$"
+        ],
+        "dependencies": [
+            "aa822f8UniMotion4a-h2"
+        ],
+        "title": "Relating the Numbers",
+        "text": "What is the relationship between the two distances and rates?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa822f8UniMotion4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$14$$"
+        ],
+        "dependencies": [
+            "aa822f8UniMotion4a-h3"
+        ],
+        "title": "Relating the Numbers",
+        "text": "What is $$r$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aa822f8UniMotion4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aa822f8UniMotion4a-h4"
+        ],
+        "title": "Making Sense",
+        "text": "It's possible that, algebraically, you arrive at two different numbers for r; make sure that the answer you choose is reasonable (i.e. you can't have negative time).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

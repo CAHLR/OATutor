@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a09f25fmotion13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Average Acceleration",
+        "text": "To find the average acceleration, you need to know the change in velocity and the time over which this change occurs.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion13a-h1"
+        ],
+        "title": "Formula for Average Acceleration",
+        "text": "The formula for average acceleration is given by: $$a=\\frac{v_f-v_i}{t}$$, where $$v_f$$ is the final velocity, $$v_i$$ is the initial velocity, and $$t$$ is the time taken.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a09f25fmotion13a-h2"
+        ],
+        "title": "Initial and Final Velocities",
+        "text": "Since the motorcycle starts from rest, the initial velocity $$v_i$$ is $$0$$ $$\\frac{m}{s}$$. The final velocity $$v_f$$ is given as $$26.8$$ $$\\frac{m}{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion13a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$26.8$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion13a-h3"
+        ],
+        "title": "Calculate the Change in Velocity",
+        "text": "Calculate the change in velocity using the formula: $$v_f-v_i$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a09f25fmotion13a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6.87$$"
+        ],
+        "dependencies": [
+            "a09f25fmotion13a-h4"
+        ],
+        "title": "Calculate the Average Acceleration",
+        "text": "Now, use the formula $$a=\\frac{v_f-v_i}{t}$$ to find the average acceleration. Substitute $$v_f=26.8$$ $$\\frac{m}{s}$$, $$v_i=0$$ $$\\frac{m}{s}$$, and $$t=3.90$$ s.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

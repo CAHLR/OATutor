@@ -1,0 +1,74 @@
+[
+    {
+        "id": "a666a84A213-exploginverse-P01a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [],
+        "title": "A simpler question",
+        "text": "What is $$3^2$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P01a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P01a-h1"
+        ],
+        "title": "Relate to original problem",
+        "text": "Observe that $$3^2=9<21$$. So $$\\log_{3}\\left(9\\right)<\\log_{3}\\left(21\\right)$$ (because logs are increasing functions).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P01a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P01a-h2"
+        ],
+        "title": "Simplified further",
+        "text": "Evaluate $$\\log_{3}\\left(9\\right)=\\log_{3}\\left(3^2\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P01a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P01a-h3"
+        ],
+        "title": "Definition of logarithm",
+        "text": "Recall that $$\\log_{3}\\left(3^2\\right)$$ is asking for the power c so that $$3^c=3^2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P01a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a666a84A213-exploginverse-P01a-h3"
+        ],
+        "title": "Is there another integer power of $$3$$ between $$9$$ and 21?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

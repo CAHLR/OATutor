@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a03ad6fT214-trigeq-P03a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use a substitution",
+        "text": "Let $$u=4\\theta.$$ Solve the simpler equation $$\\tan(u)=1.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a03ad6fT214-trigeq-P03a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a03ad6fT214-trigeq-P03a-h1"
+        ],
+        "title": "Find the general solution for u",
+        "text": "Tangent equals $$1$$ at $$\\frac{\\pi}{4}.$$ Since tangent has a period of $$\\pi, $$ the general solution for $$u$$ is $$u=\\frac{\\pi}{4}+n\\pi.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a03ad6fT214-trigeq-P03a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a03ad6fT214-trigeq-P03a-h2"
+        ],
+        "title": "Substitute back",
+        "text": "Substitute $$4\\theta$$ back in: $$4\\theta=\\frac{\\pi}{4}+n\\pi.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a03ad6fT214-trigeq-P03a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a03ad6fT214-trigeq-P03a-h3"
+        ],
+        "title": "Isolate theta",
+        "text": "Divide the equation by $$4$$. Remember to divide the angle and the $$n\\pi$$ period term.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a03ad6fT214-trigeq-P03a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a03ad6fT214-trigeq-P03a-h4"
+        ],
+        "title": "Final calculation",
+        "text": "Dividing by $$4$$ yields $$\\theta=\\frac{\\pi}{16}+\\frac{n\\pi}{4}.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
