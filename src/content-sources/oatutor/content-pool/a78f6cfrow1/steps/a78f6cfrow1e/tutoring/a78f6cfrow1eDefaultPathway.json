@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Prediction Space",
-        "text": "The prediction vector $$Y_{hat}$$ is in the column space of X because it is the projection of Y onto col(X).",
+        "text": "The prediction vector $$\\hat{Y}$$ is in the column space of X because it is the projection of Y onto col(X).",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -16,7 +16,7 @@
             "a78f6cfrow1e-h10"
         ],
         "title": "Residual Sign",
-        "text": "$$Y_{hat}$$ - Y is the negative of the residual Y - $$Y_{hat}$$, so it has the same orthogonality relationships.",
+        "text": "$$\\hat{Y}$$ - Y is the negative of the residual Y - $$\\hat{Y}$$, $$so$$ $$it$$ $$has$$ $$the$$ $$same$$ $$orthogonality$$ $$relationships$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -33,7 +33,7 @@
             "a78f6cfrow1e-h11"
         ],
         "title": "Column Space Check",
-        "text": "If $$Y_{hat}$$ is in col(X) and $$Y_{hat}$$ - Y is orthogonal to col(X), what is the relationship between $$Y_{hat}$$ - Y and $$Y_{hat}$$?",
+        "text": "If $$\\hat{Y}$$ is in col(X) and $$\\hat{Y}$$ - Y is orthogonal to col(X), what is the relationship between $$\\hat{Y}$$ - Y and $$\\hat{Y}$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
@@ -49,8 +49,8 @@
         "dependencies": [
             "a78f6cfrow1e-s5"
         ],
-        "title": "Apply to $$Y_{hat}$$",
-        "text": "Because $$Y_{hat}$$ lies in col(X), and $$Y_{hat}$$ - Y is orthogonal to col(X), $$Y_{hat}$$ - Y is orthogonal to $$Y_{hat}$$.",
+        "title": "Apply to $$\\hat{Y}$$",
+        "text": "Because $$\\hat{Y}$$ lies in col(X), and $$\\hat{Y}$$ - Y is orthogonal to col(X), $$\\hat{Y}$$ - Y is orthogonal to $$\\hat{Y}$$.",
         "variabilization": {},
         "oer": "",
         "license": ""

@@ -16,7 +16,7 @@
             "a78f6cfrow2a-h1"
         ],
         "title": "Distinguish Outcomes from the Column Space",
-        "text": "OLS predictions lie in the column space of X, but Y itself may also contain a residual component outside that space. The guaranteed relationship is $$Y_{hat}$$ in col(X), not Y in col(X) or $$Y_{hat}$$ in span{Y}.",
+        "text": "OLS predictions lie in the column space of X, but Y itself may also contain a residual component outside that space. The guaranteed relationship is $$\\hat{Y}$$ in col(X), not Y in col(X) or $$\\hat{Y}$$ in span{Y}.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -40,7 +40,7 @@
             "a78f6cfrow2a-h3"
         ],
         "title": "Use the Ridge Objective",
-        "text": "Because the original OLS solution is unique, X has full column rank and $$X^T$$ X is positive definite. Adding a positive L2 penalty preserves uniqueness, so Ridge with lambda $$=$$ $$1$$ also has a unique solution.",
+        "text": "Because the original OLS solution is unique, X has full column rank and $$X^T$$ X is positive definite. Adding a positive L2 penalty preserves uniqueness, so Ridge with $$\\lambda$$ $$=$$ $$1$$ also has a unique solution.",
         "variabilization": {},
         "oer": "",
         "license": ""

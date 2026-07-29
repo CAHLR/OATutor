@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Residual Orthogonality",
-        "text": "For OLS, the residual vector Y - $$Y_{hat}$$ is orthogonal to every column of the design matrix X.",
+        "text": "For OLS, the residual vector Y - $$\\hat{Y}$$ is orthogonal to every column of the design matrix X.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -21,7 +21,7 @@
             "a78f6cfrow1c-h6"
         ],
         "title": "Identify the Vector",
-        "text": "Is X_{:,p} one of the $$\\frac{columns}{features}$$ in X?",
+        "text": "Is $$X_{:,p}$$ one of the $$\\frac{columns}{features}$$ in X?",
         "variabilization": {},
         "oer": "",
         "license": "",
@@ -37,7 +37,7 @@
             "a78f6cfrow1c-s3"
         ],
         "title": "Apply to a Feature Column",
-        "text": "Since X_{:,p} is a column of X, the residual Y - $$Y_{hat}$$ is orthogonal to X_{:,p}.",
+        "text": "Since $$X_{:,p}$$ is a column of X, the residual Y - $$\\hat{Y}$$ is orthogonal to $$X_{:,p}$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
