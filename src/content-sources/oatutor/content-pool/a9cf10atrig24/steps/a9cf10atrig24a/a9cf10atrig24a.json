@@ -1,15 +1,12 @@
 {
     "id": "a9cf10atrig24a",
     "stepAnswer": [
-        "yes"
+        "$$1+2sin\\left(x\\right) cos\\left(x\\right)$$"
     ],
-    "problemType": "MultipleChoice",
-    "stepTitle": "Verify $$\\left(sin\\left(x\\right)+cos\\left(x\\right)\\right)^2=1+2sin\\left(x\\right) cos\\left(x\\right)$$.",
+    "problemType": "TextBox",
+    "stepTitle": "Expand and simplify $$\\left(sin\\left(x\\right)+cos\\left(x\\right)\\right)^2$$.",
     "stepBody": "",
-    "answerType": "string",
+    "answerType": "arithmetic",
     "variabilization": {},
-    "choices": [
-        "yes",
-        "no"
-    ]
+    "answerLatex": "$$1+2sin\\left(x\\right) cos\\left(x\\right)$$"
 }

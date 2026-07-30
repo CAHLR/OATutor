@@ -3,8 +3,8 @@
         "id": "afc3761Unitcirc30a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Number of revolutions",
-        "text": "The carousel starts at $$(0,1)$$ (due north) and rotates counterclockwise. The target point is $$(\\frac{\\sqrt{2}}{2},\\frac{-\\sqrt{2}}{2})$$. Think about where this point is on the unit circle: what angle does it correspond to in standard position?",
+        "title": "First Revolution",
+        "text": "The carousel repeats its position every $$60$$ seconds. Because the question asks for the smallest positive time, first consider only the initial revolution. What is the maximum number of revolutions needed?",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -56,7 +56,7 @@
         "license": ""
     },
     {
-        "id": "afc3761Unitcirc30a-h4",
+        "id": "afc3761Unitcirc30a-h5",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -64,7 +64,7 @@
             "$$37.5$$"
         ],
         "dependencies": [
-            "afc3761Unitcirc30a-h3"
+            "afc3761Unitcirc30a-h4"
         ],
         "title": "Final point",
         "text": "What is the final amount of time we take to reach this point? (Keep in mind we start north or at $$90$$ degrees or $$\\frac{\\pi}{2}$$ radians)",

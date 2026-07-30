@@ -1,0 +1,122 @@
+[
+    {
+        "id": "aae56detrig31b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall the difference identity for cosine",
+        "text": "What is the formula for $$cos(A-B)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig31b-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$cos\\left(A\\right) cos\\left(B\\right)+sinAsinB$$"
+        ],
+        "dependencies": [
+            "aae56detrig31b-h1"
+        ],
+        "title": "Cosine difference identity",
+        "text": "What is $$cos(A-B)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$cos\\left(A\\right) cos\\left(B\\right)+sinAsinB$$",
+            "$$cos\\left(A\\right) cos\\left(B\\right)-sinAsinB$$",
+            "$$sin\\left(A\\right) cos\\left(B\\right)+cosAsinB$$",
+            "$$sin\\left(A\\right) cos\\left(B\\right)-cosAsinB$$"
+        ]
+    },
+    {
+        "id": "aae56detrig31b-h2",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig31b-s1"
+        ],
+        "title": "Use previously found values",
+        "text": "You already have sin(a), cos(a), sin(b), cos(b) from the previous part.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig31b-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "sin(a)=2/3,cos(a)=-sqrt(5)/3,sin(b)=sqrt(15)/4,cos(b)=-1/4"
+        ],
+        "dependencies": [
+            "aae56detrig31b-h2"
+        ],
+        "title": "Recall values",
+        "text": "What are sin(a), cos(a), sin(b), cos(b)?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "sin(a)=2/3,cos(a)=-sqrt(5)/3,sin(b)=sqrt(15)/4,cos(b)=-1/4",
+            "sin(a)=2/3,cos(a)=sqrt(5)/3,sin(b)=sqrt(15)/4,cos(b)=-1/4",
+            "sin(a)=2/3,cos(a)=-sqrt(5)/3,sin(b)=-sqrt(15)/4,cos(b)=-1/4",
+            "sin(a)=2/3,cos(a)=-sqrt(5)/3,sin(b)=sqrt(15)/4,cos(b)=1/4"
+        ]
+    },
+    {
+        "id": "aae56detrig31b-h3",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig31b-s2"
+        ],
+        "title": "Substitute and simplify",
+        "text": "Substitute all known values into the $$cos(a-b)$$ formula and simplify the expression.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig31b-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\left(-\\frac{\\sqrt{5}}{3}\\right) \\left(-\\frac{1}{4}\\right)+\\frac{2}{3} \\frac{\\sqrt{15}}{4}$$"
+        ],
+        "dependencies": [
+            "aae56detrig31b-h3"
+        ],
+        "title": "Substitute values",
+        "text": "Substitute these values into $$cos(a-b)$$ formula.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\left(-\\frac{\\sqrt{5}}{3}\\right) \\left(-\\frac{1}{4}\\right)+\\frac{2}{3} \\frac{\\sqrt{15}}{4}$$",
+            "$$\\left(-\\frac{\\sqrt{5}}{3}\\right) \\left(-\\frac{1}{4}\\right)-\\frac{2}{3} \\frac{\\sqrt{15}}{4}$$",
+            "$$\\frac{2}{3} \\left(-\\frac{1}{4}\\right)+\\left(-\\frac{\\sqrt{5}}{3}\\right) \\frac{\\sqrt{15}}{4}$$",
+            "$$\\frac{\\sqrt{5}}{3} \\frac{1}{4}+\\frac{2}{3} \\frac{\\sqrt{15}}{4}$$"
+        ]
+    },
+    {
+        "id": "aae56detrig31b-s4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\sqrt{5}+2\\sqrt{15}}{12}$$"
+        ],
+        "dependencies": [
+            "aae56detrig31b-s3"
+        ],
+        "title": "Simplify the expression",
+        "text": "Simplify $$\\frac{\\sqrt{5}}{12}$$ + $$\\frac{2\\sqrt{15}}{12}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

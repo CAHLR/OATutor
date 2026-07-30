@@ -1,0 +1,41 @@
+[
+    {
+        "id": "aae56detrig6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use the sum identity for sine",
+        "text": "Recall $$sin\\left(\\alpha+\\beta\\right)=sin\\left(\\alpha\\right) cos\\left(\\beta\\right)+cos\\left(\\alpha\\right) sin\\left(\\beta\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig6a-h1"
+        ],
+        "title": "Substitute and simplify",
+        "text": "Substitute the values of sin(alpha), cos(beta), cos(alpha), and sin(beta) into the sum identity and simplify.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig6a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-63}{65}$$"
+        ],
+        "dependencies": [
+            "aae56detrig6a-h2"
+        ],
+        "title": "Calculate $$sin\\left(\\alpha+\\beta\\right)$$",
+        "text": "Using $$sin(alpha)=\\frac{3}{5}$$, $$cos(alpha)=\\frac{4}{5}$$, $$sin(beta)=\\frac{-12}{13}$$, and $$cos(beta)=\\frac{-5}{13}$$, find $$sin\\left(\\alpha+\\beta\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

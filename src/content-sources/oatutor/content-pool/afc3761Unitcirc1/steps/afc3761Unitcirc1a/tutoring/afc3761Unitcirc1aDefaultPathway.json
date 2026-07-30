@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Triangles in Unit Circle",
-        "text": "Try to a draw triangle in the unit circle to get the side lengths",
+        "text": "Draw a $$30-60-90$$ triangle inside the unit circle to identify the side lengths.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -30,11 +30,10 @@
         "id": "afc3761Unitcirc1a-h3",
         "type": "hint",
         "dependencies": [
-            "afc3761Unitcirc1a-h1",
             "afc3761Unitcirc1a-h2"
         ],
         "title": "Sides of Triangle",
-        "text": "What are the side lengths of the triangle? (Hint: an equilateral triangle has all sides equal and all angles equal to $$60$$ degrees. If the hypotenuse is $$1$$, you can derive the other sides.)",
+        "text": "A $$30-60-90$$ triangle with hypotenuse $$1$$ has side lengths 1/2,sqrt(3)/2,1. Which side is opposite the 60-degree angle?",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -60,8 +59,7 @@
             "$$\\frac{\\sqrt{3}}{2}$$"
         ],
         "dependencies": [
-            "afc3761Unitcirc1a-h4",
-            "afc3761Unitcirc1a-h3"
+            "afc3761Unitcirc1a-h4"
         ],
         "title": "",
         "text": "What is the final value?",

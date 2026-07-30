@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Properties of Sine and Cosine",
-        "text": "Is there any value we can pass into sine or cosine that would make it undefined. Recall that we can shift any angle by $$360$$ degrees or $$2\\pi$$ radians to get the same sine and cosine values.",
+        "text": "Is there any input value that makes sin(x) or cos(x) undefined? Recall that adding $$360$$ degrees or $$2\\pi$$ radians gives the same sine and cosine values.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -27,7 +27,8 @@
         "license": "",
         "choices": [
             "$$(-\\infty,\\infty)$$",
-            "$$(-1,1),(0,\\infty)$$",
+            "$$[-1,1]$$",
+            "$$(0,\\infty)$$",
             "$$(-2\\pi,2\\pi)$$"
         ]
     }
