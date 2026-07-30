@@ -36,7 +36,7 @@
         "id": "afb69a0sumprod29a-h2",
         "type": "hint",
         "dependencies": [
-            "afb69a0sumprod29a-h1"
+            "afb69a0sumprod29a-s1"
         ],
         "title": "Identify A and B",
         "text": "Determine the values of A and B from the given expression.",
@@ -62,7 +62,7 @@
         "license": ""
     },
     {
-        "id": "afb69a0sumprod29a-s2",
+        "id": "afb69a0sumprod29a-s3",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -70,7 +70,7 @@
             "$$17$$ degrees"
         ],
         "dependencies": [
-            "afb69a0sumprod29a-h2"
+            "afb69a0sumprod29a-s2"
         ],
         "title": "What is B?",
         "text": "In cos(23 degrees)sin(17 degrees), what is B?",
@@ -82,7 +82,7 @@
         "id": "afb69a0sumprod29a-h3",
         "type": "hint",
         "dependencies": [
-            "afb69a0sumprod29a-h2"
+            "afb69a0sumprod29a-s3"
         ],
         "title": "Calculate sums and differences",
         "text": "Compute $$A+B$$ and A-B.",
@@ -91,7 +91,7 @@
         "license": ""
     },
     {
-        "id": "afb69a0sumprod29a-s3",
+        "id": "afb69a0sumprod29a-s4",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -108,7 +108,7 @@
         "license": ""
     },
     {
-        "id": "afb69a0sumprod29a-s3",
+        "id": "afb69a0sumprod29a-s5",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -116,7 +116,7 @@
             "$$6$$ degrees"
         ],
         "dependencies": [
-            "afb69a0sumprod29a-h3"
+            "afb69a0sumprod29a-s4"
         ],
         "title": "What is A-B?",
         "text": "Calculate $$23$$ degrees - $$17$$ degrees.",

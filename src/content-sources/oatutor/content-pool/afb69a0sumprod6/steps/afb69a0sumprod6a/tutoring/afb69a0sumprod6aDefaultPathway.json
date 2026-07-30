@@ -42,7 +42,7 @@
         "id": "afb69a0sumprod6a-h3",
         "type": "hint",
         "dependencies": [
-            "afb69a0sumprod6a-h2"
+            "afb69a0sumprod6a-s1"
         ],
         "title": "Apply sum of sines to the denominator.",
         "text": "How can we simplify the denominator using sin(A) + sin(B) $$=$$ $$2$$ $$sin\\left(\\frac{A+B}{2}\\right)$$ $$cos\\left(\\frac{A-B}{2}\\right)$$?",
@@ -68,10 +68,10 @@
         "license": ""
     },
     {
-        "id": "afb69a0sumprod6a-h2",
+        "id": "afb69a0sumprod6a-h4",
         "type": "hint",
         "dependencies": [
-            "afb69a0sumprod6a-h1"
+            "afb69a0sumprod6a-s2"
         ],
         "title": "Simplify the expression",
         "text": "After applying the formulas, simplify the resulting fraction.",
@@ -80,10 +80,10 @@
         "license": ""
     },
     {
-        "id": "afb69a0sumprod6a-h3",
+        "id": "afb69a0sumprod6a-h5",
         "type": "hint",
         "dependencies": [
-            "afb69a0sumprod6a-h2"
+            "afb69a0sumprod6a-h4"
         ],
         "title": "Set up the fraction & cancel common terms.",
         "text": "Our fraction becomes $$\\frac{\\left(-2sin\\left(3t\\right) sin\\left(t\\right)\\right)}{2sin\\left(3t\\right) cos\\left(t\\right)}$$. We can cancel $$2$$ and sin(3t) from the top and bottom to get $$\\frac{-sin\\left(t\\right)}cos^$\\left(t\\righ$$. Can we simplify further?",
@@ -92,10 +92,10 @@
         "license": ""
     },
     {
-        "id": "afb69a0sumprod6a-h4",
+        "id": "afb69a0sumprod6a-h6",
         "type": "hint",
         "dependencies": [
-            "afb69a0sumprod6a-h3"
+            "afb69a0sumprod6a-h5"
         ],
         "title": "Sine over cosine identity",
         "text": "Recall that $$\\fracsin^c\\left(t\\right)os\\left(t\\right)}$$ $$=$$ tan(t). Can we use this?",
@@ -104,7 +104,7 @@
         "license": ""
     },
     {
-        "id": "afb69a0sumprod6a-s2",
+        "id": "afb69a0sumprod6a-s3",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -112,7 +112,7 @@
             "$$-tan(t)$$"
         ],
         "dependencies": [
-            "afb69a0sumprod6a-h4"
+            "afb69a0sumprod6a-h6"
         ],
         "title": "Simplify $$\\frac{-sin\\left(t\\right)}cos^$\\left(t\\righ$$ with the previous identity.",
         "text": "",

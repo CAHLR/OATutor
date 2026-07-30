@@ -20,5 +20,85 @@
         "variabilization": {},
         "oer": "",
         "license": ""
+    },
+    {
+        "id": "afb69a0sumprod4a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "4theta"
+        ],
+        "dependencies": [
+            "afb69a0sumprod4a-h2"
+        ],
+        "title": "Identify A.",
+        "text": "Find the value of A.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod4a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2theta"
+        ],
+        "dependencies": [
+            "afb69a0sumprod4a-s1"
+        ],
+        "title": "Identify B.",
+        "text": "Find the value of B.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod4a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "2theta"
+        ],
+        "dependencies": [
+            "afb69a0sumprod4a-s2"
+        ],
+        "title": "Calculate A-B",
+        "text": "What is A-B?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod4a-s4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "6theta"
+        ],
+        "dependencies": [
+            "afb69a0sumprod4a-s3"
+        ],
+        "title": "Calculate $$A+B$$",
+        "text": "What is $$A+B$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod4a-s4"
+        ],
+        "title": "Substitute into the formula",
+        "text": "Substitute the calculated values of A-B and $$A+B$$ into the product-to-sum formula.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
     }
 ]

@@ -1,0 +1,121 @@
+[
+    {
+        "id": "afb69a0sumprod3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall the product-to-sum formula for cosine",
+        "text": "The product-to-sum formula for two cosines is cos(A)cos(B) $$=$$ 1/2(cos(A-B) + cos(A+B)).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod3a-h1"
+        ],
+        "title": "Identify A and B. Calculate their sum and difference.",
+        "text": "Determine the sum and difference of the angles A and B.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod3a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "3theta"
+        ],
+        "dependencies": [
+            "afb69a0sumprod3a-h2"
+        ],
+        "title": "Identify A.",
+        "text": "Find the value of A.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod3a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "5theta"
+        ],
+        "dependencies": [
+            "afb69a0sumprod3a-s1"
+        ],
+        "title": "Identify B.",
+        "text": "Find the value of B.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod3a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-2theta"
+        ],
+        "dependencies": [
+            "afb69a0sumprod3a-s2"
+        ],
+        "title": "Calculate A-B",
+        "text": "What is A-B?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod3a-s4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "8theta"
+        ],
+        "dependencies": [
+            "afb69a0sumprod3a-s3"
+        ],
+        "title": "Calculate $$A+B$$",
+        "text": "What is $$A+B$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod3a-s4"
+        ],
+        "title": "Substitute into the formula",
+        "text": "Substitute the calculated values of A-B and $$A+B$$ into the product-to-sum formula.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod3a-s5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "cos(2theta)"
+        ],
+        "dependencies": [
+            "afb69a0sumprod3a-h3"
+        ],
+        "title": "Even Property of Cosine",
+        "text": "Simplify $$cos(-2theta)$$ given that cosine is even.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
