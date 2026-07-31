@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Recall the double angle formula for sine.",
-        "text": "sin(2x) $$=$$ 2sin(x)cos(x)",
+        "text": "$$\\sin(2x)$$ $$=$$ $$2\\sin(x)\\cos(x)$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -20,7 +20,7 @@
         "dependencies": [
             "a649252angle31a-h1"
         ],
-        "title": "What is sin(x) given csc(x) $$=$$ 7?",
+        "title": "What is $$\\sin(x)$$ given $$\\csc(x)=7$$?",
         "text": "",
         "variabilization": {},
         "oer": "",
@@ -30,10 +30,10 @@
         "id": "a649252angle31a-h2",
         "type": "hint",
         "dependencies": [
-            "a649252angle31a-s1"
+            "a649252angle31a-h1"
         ],
-        "title": "Determine cos(x).",
-        "text": "Use the Pythagorean identity $$sin^2\\left(x\\right)$$ + $$cos^2\\left(x\\right)$$ $$=$$ $$1$$ and the quadrant information.",
+        "title": "Determine $$\\cos(x)$$.",
+        "text": "Use the Pythagorean identity $$\\sin**2(x) + \\cos**2(x) $$=$$ $$1$$ and the quadrant information.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -49,7 +49,7 @@
         "dependencies": [
             "a649252angle31a-h2"
         ],
-        "title": "What is $$cos^2\\left(x\\right)$$?",
+        "title": "What is $$\\cos**2(x)$$?",
         "text": "",
         "variabilization": {},
         "oer": "",
@@ -61,21 +61,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\frac{-\\left(4\\sqrt{3}\\right)}{7}$$"
+            "$$-\\frac{4\\sqrt{3}}{7}$$"
         ],
         "dependencies": [
             "a649252angle31a-h2"
         ],
-        "title": "What is cos(x) considering $$x$$ is in quadrant II?",
+        "title": "What is $$\\cos(x)$$ considering $$x$$ is in quadrant II?",
         "text": "",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
             "$$\\frac{4\\sqrt{3}}{7}$$",
-            "$$\\frac{-4}{7}$$",
-            "$$\\frac{-\\left(3\\sqrt{3}\\right)}{7}$$",
-            "$$\\frac{-\\left(4\\sqrt{3}\\right)}{7}$$"
+            "$$-\\frac{4}{7}$$",
+            "$$-\\frac{3\\sqrt{3}}{7}$$",
+            "$$-\\frac{4\\sqrt{3}}{7}$$"
         ]
     }
 ]

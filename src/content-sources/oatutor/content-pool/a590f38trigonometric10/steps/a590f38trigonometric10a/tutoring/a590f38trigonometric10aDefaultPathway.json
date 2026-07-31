@@ -15,7 +15,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$x$$ $$=$$ \\cos(\\theta)$$"
+            "$$x=\\cos(\\theta)$$"
         ],
         "dependencies": [
             "a590f38trigonometric10a-h1"
@@ -26,10 +26,10 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$x$$ $$=$$ \\cos(\\theta)$$",
-            "$$x$$ $$=$$ \\sin(\\theta)$$",
-            "$$x$$ $$=$$ \\cos**{2} $$\\theta$$",
-            "$$x$$ $$=$$ $$\\theta$$"
+            "$$x=\\cos(\\theta)$$",
+            "$$x=\\sin(\\theta)$$",
+            "$$x=\\cos**{2} $$\\theta$$",
+            "$$x=\\theta$$"
         ]
     },
     {
@@ -39,7 +39,7 @@
             "a590f38trigonometric10a-h1"
         ],
         "title": "Apply quadratic formula",
-        "text": "Use the quadratic formula $$x$$ $$=$$ $$(-b$$ \u00b1 sqrt(b**2-4ac))/(2a) to solve for $$\\cos(\\theta)$$",
+        "text": "Use the quadratic formula $$x$$ $$=$$ $$(-b$$ +/- sqrt(b**2-4ac))/(2a) to solve for $$\\cos(\\theta)$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -85,7 +85,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\frac{-3$$ + \\sqrt{13}}{2}$$"
+            "$$\\frac{-3+\\sqrt{13}}{2}$$"
         ],
         "dependencies": [
             "a590f38trigonometric10a-h3"
@@ -96,10 +96,10 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\frac{-3$$ + \\sqrt{13}}{2}$$",
-            "$$\\frac{-3$$ $$-$$ \\sqrt{13}}{2}$$",
-            "$$\\frac{3$$ + \\sqrt{13}}{2}$$",
-            "$$\\frac{-3$$ + \\sqrt{13}}{4}$$"
+            "$$\\frac{-3+\\sqrt{13}}{2}$$",
+            "$$\\frac{-3-\\sqrt{13}}{2}$$",
+            "$$\\frac{3+\\sqrt{13}}{2}$$",
+            "$$\\frac{-3+\\sqrt{13}}{4}$$"
         ]
     },
     {
@@ -108,21 +108,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\arccos(\\frac{-3$$ + \\sqrt{13}}{2}), $$2\\pi$$ $$-$$ $$\\arccos(\\frac{-3$$ + \\sqrt{13}}{2})$$"
+            "$$\\arccos(\\frac{-3+\\sqrt{13}}{2}),\\ 2\\pi-\\arccos(\\frac{-3+\\sqrt{13}}{2})$$"
         ],
         "dependencies": [
             "a590f38trigonometric10a-h3"
         ],
         "title": "Find angles",
-        "text": "What are the angles $$\\theta$$ in the interval $$(0$$, $$2\\pi)$$ for which $$\\cos(\\theta) $$=$$ $$\\frac{-3$$ + \\sqrt{13}}{2}$$?",
+        "text": "What are the angles $$\\theta$$ $$$$ in the interval $$(0, \\$$ $$2\\pi)$$ for which $$\\cos(\\theta)=\\frac{-3+\\sqrt{13}}{2}$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\arccos(\\frac{-3$$ + \\sqrt{13}}{2}), $$2\\pi$$ $$-$$ $$\\arccos(\\frac{-3$$ + \\sqrt{13}}{2})$$",
-            "$$\\arccos(\\frac{-3$$ + \\sqrt{13}}{2}), $$\\pi$$ $$-$$ $$\\arccos(\\frac{-3$$ + \\sqrt{13}}{2})$$",
-            "$$\\arccos(\\frac{-3$$ + \\sqrt{13}}{2}), $$\\pi$$ + $$\\arccos(\\frac{-3$$ + \\sqrt{13}}{2})$$",
-            "$$\\arccos(\\frac{-3$$ + \\sqrt{13}}{2})$$"
+            "$$\\arccos(\\frac{-3+\\sqrt{13}}{2}),\\ 2\\pi-\\arccos(\\frac{-3+\\sqrt{13}}{2})$$",
+            "$$\\arccos(\\frac{-3+\\sqrt{13}}{2}),\\ \\pi-\\arccos(\\frac{-3+\\sqrt{13}}{2})$$",
+            "$$\\arccos(\\frac{-3+\\sqrt{13}}{2}),\\ \\pi+\\arccos(\\frac{-3+\\sqrt{13}}{2})$$",
+            "$$\\arccos(\\frac{-3+\\sqrt{13}}{2})$$"
         ]
     }
 ]

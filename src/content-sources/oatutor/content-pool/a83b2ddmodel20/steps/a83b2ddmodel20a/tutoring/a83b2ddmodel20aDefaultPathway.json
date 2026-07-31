@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a83b2ddmodel20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Writing a Linear Model",
+        "text": "Translate the given information into $$2$$ linear models.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a83b2ddmodel20a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Set the equations equal to each other."
+        ],
+        "dependencies": [
+            "a83b2ddmodel20a-h1"
+        ],
+        "title": "Compare Models",
+        "text": "To answer this problem, we need to find when our $$2$$ models intersect. What should I do if I want to find when (what amount of minutes) one model equals the other?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Set the equations equal to each other.",
+            "Set the equations equal to $$0$$."
+        ]
+    },
+    {
+        "id": "a83b2ddmodel20a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a83b2ddmodel20a-h2"
+        ],
+        "title": "Simply",
+        "text": "Solve for $$x$$ in 14,000 + 0.10*x=19,000+0.04*x",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a83b2ddmodel20a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a83b2ddmodel20a-h3"
+        ],
+        "title": "Interpret",
+        "text": "Interpret each model. Because the slope is larger in y=14,000+ $$0.1x$$, the line is steeper and the slope in y=19,000+0.04*x is less steep, but starts at 19,000 instead of 14,000. Therefore, y=14,000+ $$0.1x$$ will be a higher pay option for a large enough $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a83b2ddmodel20a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a83b2ddmodel20a-h4"
+        ],
+        "title": "Interpret",
+        "text": "So, when the lines intersect is when 14,000+0.10*x surpasses 19,000+0.04*x and is the larger income. $$x$$ is our answer (the value in electronics we need to sell to produce a larger income).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

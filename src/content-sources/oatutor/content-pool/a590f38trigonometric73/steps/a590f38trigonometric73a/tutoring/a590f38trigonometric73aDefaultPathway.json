@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Simplify the right side",
-        "text": "Recall the Pythagorean identity $$\\sin**{2}(x)$$ + $$\\cos**{2}(x) $$=$$ $$1.$$",
+        "text": "Recall the Pythagorean identity $$\\sin**{2}(x)$$+$$\\cos**{2}(x)=1. $$$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -21,7 +21,7 @@
             "a590f38trigonometric73a-h1"
         ],
         "title": "Simplify the right side",
-        "text": "What is $$\\sin**{2}(x)$$ + $$\\cos**{2}(x)$$?",
+        "text": "What is $$\\sin**{2}(x)$$+$$\\cos**{2}(x)$$?",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -29,9 +29,11 @@
     {
         "id": "a590f38trigonometric73a-h2",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a590f38trigonometric73a-h1"
+        ],
         "title": "Simplify the denominator",
-        "text": "Recall the identity $$\\sec**{2}(x) $$=$$ $$1$$ + \\tan**{2}(x).$$",
+        "text": "Recall the identity $$\\sec**{2}(x)=1+\\tan**{2}(x). $$$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -42,7 +44,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$1$$ + \\tan**{2}(x)$$"
+            "$$1+\\tan**{2}(x)$$"
         ],
         "dependencies": [
             "a590f38trigonometric73a-h2"
@@ -53,10 +55,10 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$1$$ + \\tan**{2}(x)$$",
-            "$$1$$ $$-$$ \\tan**{2}(x)$$",
-            "$$\\tan**{2}(x) $$-$$ $$1$$",
-            "$$\\cot**{2}(x) + $$1$$"
+            "$$1+\\tan**{2}(x)$$",
+            "$$1-\\tan**{2}(x)$$",
+            "$$\\tan**{2}(x)-1$$",
+            "$$\\cot**{2}(x)+1$$"
         ]
     },
     {
@@ -65,27 +67,29 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$1$$ $$-$$ \\tan**{2}(x)$$"
+            "$$1-\\tan**{2}(x)$$"
         ],
         "dependencies": [
             "a590f38trigonometric73a-h2"
         ],
         "title": "Simplify the denominator",
-        "text": "What does $$2$$ - $$\\sec**{2}(x)$$ simplify to?",
+        "text": "What does $$2$$ -$$\\sec**{2}(x)$$ simplify to?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$1$$ $$-$$ \\tan**{2}(x)$$",
-            "$$1$$ + \\tan**{2}(x)$$",
-            "$$\\tan**{2}(x) $$-$$ $$1$$",
-            "$$2$$ + \\tan**{2}(x)$$"
+            "$$1-\\tan**{2}(x)$$",
+            "$$1+\\tan**{2}(x)$$",
+            "$$\\tan**{2}(x)-1$$",
+            "$$2+\\tan**{2}(x)$$"
         ]
     },
     {
         "id": "a590f38trigonometric73a-h3",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a590f38trigonometric73a-h2"
+        ],
         "title": "Recognize a double angle identity",
         "text": "The simplified left side matches the double angle identity for tangent.",
         "variabilization": {},
@@ -104,7 +108,7 @@
             "a590f38trigonometric73a-h3"
         ],
         "title": "Identify the identity",
-        "text": "What trigonometric identity does (2$$\\tan(x)$$)/(1-$$\\tan**{2} x$$) represent?",
+        "text": "What trigonometric identity does (2 $$\\tan(x)$$)/(1-$$\\tan**{2} $$x$$ $$)$$ $$represent$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
@@ -118,9 +122,11 @@
     {
         "id": "a590f38trigonometric73a-h4",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a590f38trigonometric73a-h3"
+        ],
         "title": "Solve for $$2x$$",
-        "text": "Find all values for $$2x$$ on the interval $$(0$$, $$4\\pi)$$ where $$\\tan(2x)$$ $$=$$ $$1.$$",
+        "text": "Find all values for $$2x$$ on the interval $$(0, \\$$ $$4\\pi)$$ where $$\\tan(2x)=1$$. $$$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -131,29 +137,31 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\frac{\\pi}{4$$,} $$\\frac{5\\pi}{4$$,} $$\\frac{9\\pi}{4$$,} $$\\frac{13\\pi}{4}$$"
+            "$$\\frac{\\pi}{4}, \\$$ $$\\frac{5\\pi}{4}, \\$$ $$\\frac{9\\pi}{4}, \\$$ $$\\frac{13\\pi}{4}$$"
         ],
         "dependencies": [
             "a590f38trigonometric73a-h4"
         ],
-        "title": "Solve $$\\tan(u)$$ $$=$$ $$1$$",
-        "text": "If u $$=$$ $$2x$$, what are the solutions for u on $$(0$$, $$4\\pi)$$?",
+        "title": "Solve $$\\tan(u)=1$$ $$$$",
+        "text": "If u $$=$$ $$2x$$, what are the solutions for u on $$(0, \\$$ $$4\\pi)$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\frac{\\pi}{4$$,} $$\\frac{5\\pi}{4$$,} $$\\frac{9\\pi}{4$$,} $$\\frac{13\\pi}{4}$$",
-            "$$\\frac{\\pi}{4$$,} $$\\frac{5\\pi}{4}$$",
-            "$$\\frac{\\pi}{4$$,} $$\\frac{3\\pi}{4$$,} $$\\frac{5\\pi}{4$$,} $$\\frac{7\\pi}{4}$$",
-            "$$\\frac{\\pi}{4$$,} $$\\frac{3\\pi}{4$$,} $$\\frac{9\\pi}{4$$,} $$\\frac{11\\pi}{4}$$"
+            "$$\\frac{\\pi}{4}, \\$$ $$\\frac{5\\pi}{4}, \\$$ $$\\frac{9\\pi}{4}, \\$$ $$\\frac{13\\pi}{4}$$",
+            "$$\\frac{\\pi}{4}, \\$$ $$\\frac{5\\pi}{4}$$",
+            "$$\\frac{\\pi}{4}, \\$$ $$\\frac{3\\pi}{4}, \\$$ $$\\frac{5\\pi}{4}, \\$$ $$\\frac{7\\pi}{4}$$",
+            "$$\\frac{\\pi}{4}, \\$$ $$\\frac{3\\pi}{4}, \\$$ $$\\frac{9\\pi}{4}, \\$$ $$\\frac{11\\pi}{4}$$"
         ]
     },
     {
         "id": "a590f38trigonometric73a-h5",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a590f38trigonometric73a-h4"
+        ],
         "title": "Solve for $$x$$",
-        "text": "Divide the solutions for $$2x$$ by $$2$$ to find the solutions for $$x$$ on $$(0$$, $$2\\pi)$$.",
+        "text": "Divide the solutions for $$2x$$ by $$2$$ to find the solutions for $$x$$ on $$(0, \\$$ $$2\\pi)$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -164,21 +172,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\frac{\\pi}{8$$,} $$\\frac{5\\pi}{8$$,} $$\\frac{9\\pi}{8$$,} $$\\frac{13\\pi}{8}$$"
+            "$$\\frac{\\pi}{8}, \\$$ $$\\frac{5\\pi}{8}, \\$$ $$\\frac{9\\pi}{8}, \\$$ $$\\frac{13\\pi}{8}$$"
         ],
         "dependencies": [
             "a590f38trigonometric73a-h5"
         ],
         "title": "Find $$x$$ values",
-        "text": "Divide the solutions for $$2x$$ by $$2$$. What are the solutions for $$x$$ on $$(0$$, $$2\\pi)$$?",
+        "text": "Divide the solutions for $$2x$$ by $$2$$. What are the solutions for $$x$$ on $$(0, \\$$ $$2\\pi)$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\frac{\\pi}{8$$,} $$\\frac{5\\pi}{8$$,} $$\\frac{9\\pi}{8$$,} $$\\frac{13\\pi}{8}$$",
-            "$$\\frac{\\pi}{4$$,} $$\\frac{5\\pi}{4}$$",
-            "$$\\frac{\\pi}{8$$,} $$\\frac{3\\pi}{8$$,} $$\\frac{5\\pi}{8$$,} $$\\frac{7\\pi}{8}$$",
-            "$$\\frac{\\pi}{8$$,} $$\\frac{5\\pi}{8}$$"
+            "$$\\frac{\\pi}{8}, \\$$ $$\\frac{5\\pi}{8}, \\$$ $$\\frac{9\\pi}{8}, \\$$ $$\\frac{13\\pi}{8}$$",
+            "$$\\frac{\\pi}{4}, \\$$ $$\\frac{5\\pi}{4}$$",
+            "$$\\frac{\\pi}{8}, \\$$ $$\\frac{3\\pi}{8}, \\$$ $$\\frac{5\\pi}{8}, \\$$ $$\\frac{7\\pi}{8}$$",
+            "$$\\frac{\\pi}{8}, \\$$ $$\\frac{5\\pi}{8}$$"
         ]
     }
 ]

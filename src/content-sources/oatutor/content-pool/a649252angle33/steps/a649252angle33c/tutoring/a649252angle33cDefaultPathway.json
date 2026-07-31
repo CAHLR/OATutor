@@ -4,30 +4,32 @@
         "type": "hint",
         "dependencies": [],
         "title": "Recall the double angle identity for tangent.",
-        "text": "The double angle formula for tan(2theta) is expressed in terms of tan(theta).",
+        "text": "The double angle formula for $$\\tan(2\\theta)$$ is expressed in terms of $$\\tan(\\theta)$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
     },
     {
-        "id": "a649252angle33c-h1",
+        "id": "a649252angle33c-s1",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\frac{2tan\\left(\\theta\\right)}{1-tan^2\\left(\\theta\\right)}$$"
+            "$$\\frac{2\\tan(\\theta)}{1-\\tan**2(\\theta)}$$"
         ],
-        "dependencies": [],
-        "title": "Which of these is the correct double angle formula for tan(2theta)?",
+        "dependencies": [
+            "a649252angle33c-h1"
+        ],
+        "title": "Which of these is the correct double angle formula for $$\\tan(2\\theta)$$?",
         "text": "",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\fracsin^c\\left(2\\theta\\right)os\\left(2\\theta\\right)}$$",
-            "2tan(theta)",
-            "$$\\frac{2tan\\left(\\theta\\right)}{1-tan^2\\left(\\theta\\right)}$$",
-            "$$tan^2\\left(\\theta\\right)-1$$"
+            "$$\\frac{\\sin(2\\theta)}{\\cos(2\\theta)}$$",
+            "$$2\\tan(\\theta)$$",
+            "$$\\frac{2\\tan(\\theta)}{1-\\tan**2(\\theta)}$$",
+            "$$\\tan**2(\\theta)-1$$"
         ]
     }
 ]

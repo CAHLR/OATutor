@@ -4,30 +4,32 @@
         "type": "hint",
         "dependencies": [],
         "title": "Recall the double angle identity for sine.",
-        "text": "The double angle formula expresses sin(2theta) in terms of sin(theta) and cos(theta).",
+        "text": "The double angle formula expresses $$\\sin(2\\theta)$$ in terms of $$\\sin(\\theta)$$ and $$\\cos(\\theta)$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
     },
     {
-        "id": "a649252angle33a-h1",
+        "id": "a649252angle33a-s1",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "2sin(theta)cos(theta)"
+            "$$2\\sin(\\theta)\\cos(\\theta)$$"
         ],
-        "dependencies": [],
-        "title": "Which of these is the correct double angle formula for sin(2theta)?",
+        "dependencies": [
+            "a649252angle33a-h1"
+        ],
+        "title": "Which of these is the correct double angle formula for $$\\sin(2\\theta)$$?",
         "text": "",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$sin^2\\left(\\theta\\right)-cos^2\\left(\\theta\\right)$$",
-            "2sin(theta)cos(theta)",
-            "$$1-2sin^2\\left(\\theta\\right)$$",
-            "$$\\frac{2tan\\left(\\theta\\right)}{1-tan^2\\left(\\theta\\right)}$$"
+            "$$\\sin**2(\\theta)-\\cos**2(\\theta)$$",
+            "$$2\\sin(\\theta)\\cos(\\theta)$$",
+            "$$1-2\\sin**2(\\theta)$$",
+            "$$\\frac{2\\tan(\\theta)}{1-\\tan**2(\\theta)}$$"
         ]
     }
 ]

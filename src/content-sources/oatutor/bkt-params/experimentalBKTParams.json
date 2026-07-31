@@ -5,6 +5,24 @@
         "probSlip": 0.1,
         "probGuess": 0.1
     },
+    "intervals_for_prediction_&_knn_classification": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
+    "residuals": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
+    "correlation_&_regression": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
     "review": {
         "probMastery": 0.1,
         "probTransit": 0.1,
@@ -18,6 +36,30 @@
         "probGuess": 0.1
     },
     "models": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
+    "chance": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
+    "conditionals": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
+    "iteration": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
+    "table_methods": {
         "probMastery": 0.1,
         "probTransit": 0.1,
         "probSlip": 0.1,
@@ -647,6 +689,12 @@
         "probSlip": 0.1,
         "probGuess": 0.1
     },
+    "graph_logarithmic_functions": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
     "solve_exponential_equations": {
         "probMastery": 0.1,
         "probTransit": 0.1,
@@ -1145,6 +1193,12 @@
         "probSlip": 0.1,
         "probGuess": 0.1
     },
+    "frequency": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
     "mean": {
         "probMastery": 0.1,
         "probTransit": 0.1,
@@ -1157,13 +1211,67 @@
         "probSlip": 0.1,
         "probGuess": 0.1
     },
+    "and_bar_graphs": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
+    "bar_graphs": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
+    "identifying_concentrations_and_outliers": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
+    "line_graphs": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
+    "stem_and_leaf_graphs": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
+    "stem_and_leaf_graphs_(stemplots)": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
     "histograms": {
         "probMastery": 0.1,
         "probTransit": 0.1,
         "probSlip": 0.1,
         "probGuess": 0.1
     },
+    "box_plot": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
     "interquartile_range": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
+    "median": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
+    "percentages_of_data": {
         "probMastery": 0.1,
         "probTransit": 0.1,
         "probSlip": 0.1,
@@ -1182,6 +1290,18 @@
         "probGuess": 0.1
     },
     "box_plots": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
+    "outliers": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
+    "calculating_the_mean_of_grouped_frequency_tables": {
         "probMastery": 0.1,
         "probTransit": 0.1,
         "probSlip": 0.1,
@@ -1218,12 +1338,6 @@
         "probGuess": 0.1
     },
     "mean_median_and_mode": {
-        "probMastery": 0.1,
-        "probTransit": 0.1,
-        "probSlip": 0.1,
-        "probGuess": 0.1
-    },
-    "median": {
         "probMastery": 0.1,
         "probTransit": 0.1,
         "probSlip": 0.1,
@@ -1577,6 +1691,18 @@
         "probSlip": 0.1,
         "probGuess": 0.1
     },
+    "": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
+    "degrees_of_freedom": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
     "two_population_means_with_known_standard_deviations": {
         "probMastery": 0.1,
         "probTransit": 0.1,
@@ -1643,13 +1769,31 @@
         "probSlip": 0.1,
         "probGuess": 0.1
     },
+    "testing_the_significance_of_the_correlation_coefficient": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
     "prediction": {
         "probMastery": 0.1,
         "probTransit": 0.1,
         "probSlip": 0.1,
         "probGuess": 0.1
     },
+    "f_distribution": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
     "f_ratio": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
+    "the_f_distribution": {
         "probMastery": 0.1,
         "probTransit": 0.1,
         "probSlip": 0.1,
@@ -1674,6 +1818,18 @@
         "probGuess": 0.1
     },
     "goodness_of_fit_test": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
+    "test_of_independence": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
+    "test_for_homogeneity": {
         "probMastery": 0.1,
         "probTransit": 0.1,
         "probSlip": 0.1,
@@ -1721,6 +1877,12 @@
         "probSlip": 0.1,
         "probGuess": 0.1
     },
+    "6.1_omr\u00e5den_av_sammansatta_regioner": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
     "algebra_with_absolute_values": {
         "probMastery": 0.1,
         "probTransit": 0.1,
@@ -1734,6 +1896,12 @@
         "probGuess": 0.1
     },
     "geometry_and_algebra": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
+    "trigonometric_functions": {
         "probMastery": 0.1,
         "probTransit": 0.1,
         "probSlip": 0.1,
@@ -2045,7 +2213,25 @@
         "probSlip": 0.1,
         "probGuess": 0.1
     },
+    "one_sided_limits": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
+    "the_existence_of_a_limit": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
     "limit_of_a_composite_cosine_function": {
+        "probMastery": 0.1,
+        "probTransit": 0.1,
+        "probSlip": 0.1,
+        "probGuess": 0.1
+    },
+    "the_intermediate_value_theorem": {
         "probMastery": 0.1,
         "probTransit": 0.1,
         "probSlip": 0.1,
@@ -4127,12 +4313,6 @@
         "probSlip": 0.1,
         "probGuess": 0.1
     },
-    "graph_logarithmic_functions": {
-        "probMastery": 0.1,
-        "probTransit": 0.1,
-        "probSlip": 0.1,
-        "probGuess": 0.1
-    },
     "use_logarithmic_models_in_applications": {
         "probMastery": 0.1,
         "probTransit": 0.1,
@@ -5819,72 +5999,6 @@
         "probSlip": 0.1,
         "probGuess": 0.1
     },
-    "frequency": {
-        "probMastery": 0.1,
-        "probTransit": 0.1,
-        "probSlip": 0.1,
-        "probGuess": 0.1
-    },
-    "and_bar_graphs": {
-        "probMastery": 0.1,
-        "probTransit": 0.1,
-        "probSlip": 0.1,
-        "probGuess": 0.1
-    },
-    "bar_graphs": {
-        "probMastery": 0.1,
-        "probTransit": 0.1,
-        "probSlip": 0.1,
-        "probGuess": 0.1
-    },
-    "identifying_concentrations_and_outliers": {
-        "probMastery": 0.1,
-        "probTransit": 0.1,
-        "probSlip": 0.1,
-        "probGuess": 0.1
-    },
-    "line_graphs": {
-        "probMastery": 0.1,
-        "probTransit": 0.1,
-        "probSlip": 0.1,
-        "probGuess": 0.1
-    },
-    "stem_and_leaf_graphs": {
-        "probMastery": 0.1,
-        "probTransit": 0.1,
-        "probSlip": 0.1,
-        "probGuess": 0.1
-    },
-    "stem_and_leaf_graphs_(stemplots)": {
-        "probMastery": 0.1,
-        "probTransit": 0.1,
-        "probSlip": 0.1,
-        "probGuess": 0.1
-    },
-    "box_plot": {
-        "probMastery": 0.1,
-        "probTransit": 0.1,
-        "probSlip": 0.1,
-        "probGuess": 0.1
-    },
-    "percentages_of_data": {
-        "probMastery": 0.1,
-        "probTransit": 0.1,
-        "probSlip": 0.1,
-        "probGuess": 0.1
-    },
-    "outliers": {
-        "probMastery": 0.1,
-        "probTransit": 0.1,
-        "probSlip": 0.1,
-        "probGuess": 0.1
-    },
-    "calculating_the_mean_of_grouped_frequency_tables": {
-        "probMastery": 0.1,
-        "probTransit": 0.1,
-        "probSlip": 0.1,
-        "probGuess": 0.1
-    },
     "continuous_distribution": {
         "probMastery": 0.1,
         "probTransit": 0.1,
@@ -5898,48 +6012,6 @@
         "probGuess": 0.1
     },
     "theoretical_and_empirical_probability": {
-        "probMastery": 0.1,
-        "probTransit": 0.1,
-        "probSlip": 0.1,
-        "probGuess": 0.1
-    },
-    "": {
-        "probMastery": 0.1,
-        "probTransit": 0.1,
-        "probSlip": 0.1,
-        "probGuess": 0.1
-    },
-    "degrees_of_freedom": {
-        "probMastery": 0.1,
-        "probTransit": 0.1,
-        "probSlip": 0.1,
-        "probGuess": 0.1
-    },
-    "test_of_independence": {
-        "probMastery": 0.1,
-        "probTransit": 0.1,
-        "probSlip": 0.1,
-        "probGuess": 0.1
-    },
-    "test_for_homogeneity": {
-        "probMastery": 0.1,
-        "probTransit": 0.1,
-        "probSlip": 0.1,
-        "probGuess": 0.1
-    },
-    "testing_the_significance_of_the_correlation_coefficient": {
-        "probMastery": 0.1,
-        "probTransit": 0.1,
-        "probSlip": 0.1,
-        "probGuess": 0.1
-    },
-    "the_f_distribution": {
-        "probMastery": 0.1,
-        "probTransit": 0.1,
-        "probSlip": 0.1,
-        "probGuess": 0.1
-    },
-    "f_distribution": {
         "probMastery": 0.1,
         "probTransit": 0.1,
         "probSlip": 0.1,

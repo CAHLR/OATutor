@@ -15,21 +15,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\fraccos^i\\left(x\\right)n^$\\left(x\\righ$$"
+            "$$\\frac{\\cos$$ $$x}{\\sin$$ $$x}$$"
         ],
         "dependencies": [
             "a649252angle45a-h1"
         ],
-        "title": "Rewrite cot(x) in terms of sine and cosine.",
+        "title": "Rewrite $$\\cot(x)$$ in terms of sine and cosine.",
         "text": "",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\fraccos^i\\left(x\\right)n^$\\left(x\\righ$$",
-            "$$\\fracsin^c\\left(x\\right)os\\left(x\\right)}$$",
-            "$$\\frac{1}sin^$\\left(x\\righ$$",
-            "$$\\frac{1}cos^$\\left(x\\righ$$"
+            "$$\\frac{\\cos$$ $$x}{\\sin$$ $$x}$$",
+            "$$\\frac{\\sin$$ $$x}{\\cos$$ $$x}$$",
+            "$$\\frac{1}{\\sin$$ $$x}$$",
+            "$$\\frac{1}{\\cos$$ $$x}$$"
         ]
     },
     {
@@ -38,21 +38,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\fracsin^c\\left(x\\right)os\\left(x\\right)}$$"
+            "$$\\frac{\\sin$$ $$x}{\\cos$$ $$x}$$"
         ],
         "dependencies": [
             "a649252angle45a-h1"
         ],
-        "title": "Rewrite tan(x) in terms of sine and cosine.",
+        "title": "Rewrite $$\\tan(x)$$ in terms of sine and cosine.",
         "text": "",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\fracsin^c\\left(x\\right)os\\left(x\\right)}$$",
-            "$$\\fraccos^i\\left(x\\right)n^$\\left(x\\righ$$",
-            "$$\\frac{1}sin^$\\left(x\\righ$$",
-            "$$\\frac{1}cos^$\\left(x\\righ$$"
+            "$$\\frac{\\sin$$ $$x}{\\cos$$ $$x}$$",
+            "$$\\frac{\\cos$$ $$x}{\\sin$$ $$x}$$",
+            "$$\\frac{1}{\\sin$$ $$x}$$",
+            "$$\\frac{1}{\\cos$$ $$x}$$"
         ]
     },
     {
@@ -73,21 +73,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "(cos(x)**2-sin(x)**2)/(sin xcos x)"
+            "$$\\frac{\\cos**2x-\\sin**2x}{\\sin $$x\\cos$$ $$x}$$"
         ],
         "dependencies": [
             "a649252angle45a-h2"
         ],
-        "title": "Combine $$\\fraccos^i\\left(x\\right)n^$\\left(x\\righ$$ - $$\\fracsin^c\\left(x\\right)os\\left(x\\right)}$$ into a single fraction.",
+        "title": "Combine $$\\frac{\\cos$$ $$x}{\\sin$$ $$x$$} $$-$$ $$\\frac{\\sin$$ $$x}{\\cos$$ $$x}$$ into a single fraction.",
         "text": "",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "(cos(x)**2-sin(x)**2)/(sin xcos x)",
-            "(cos(x)**2+sin(x)**2)/(sin xcos x)",
-            "(cos(x)-sin(x))/(sin xcos x)",
-            "$$\\frac{cos^2\\left(x\\right)-sin^2\\left(x\\right)}{{ssin^2eft(x\\right) {ccos^2eft(x\\right)}$$"
+            "$$\\frac{\\cos**2x-\\sin**2x}{\\sin $$x\\cos$$ $$x}$$",
+            "$$\\frac{\\cos**2x+\\sin**2x}{\\sin $$x\\cos$$ $$x}$$",
+            "$$\\frac{\\cos$$ $$x-\\sin$$ $$x}{\\sin$$ $$x\\cos$$ $$x}$$",
+            "$$\\frac{\\cos**2x-\\sin**2x}{\\sin**2x\\cos**2x}$$"
         ]
     },
     {
@@ -101,7 +101,7 @@
         "dependencies": [
             "a649252angle45a-h2"
         ],
-        "title": "What is $$cos^2\\left(x\\right)$$ - $$sin^2\\left(x\\right)$$ equal to?",
+        "title": "What is $$\\cos**2x $$-$$ \\sin**2x$$ equal to?",
         "text": "",
         "variabilization": {},
         "oer": "",
@@ -113,21 +113,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\frac{1}{2} sin\\left(2x\\right)$$"
+            "$$\\frac{1}{2}\\sin(2x)$$"
         ],
         "dependencies": [
             "a649252angle45a-h2"
         ],
-        "title": "How can you relate sin xcos $$x$$ to sin(2x)?",
+        "title": "How can you relate $$\\sin$$ $$x\\cos$$ $$x$$ to $$\\sin(2x)$$?",
         "text": "",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\frac{1}{2} sin\\left(2x\\right)$$",
-            "2sin(2x)",
-            "sin(2x)",
-            "cos(2x)"
+            "$$\\frac{1}{2}\\sin(2x)$$",
+            "$$2\\sin(2x)$$",
+            "$$\\sin(2x)$$",
+            "$$\\cos(2x)$$"
         ]
     },
     {
@@ -136,7 +136,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\fraccos^\\\\left(2x\\right)frac{1}{2} sin\\left(2x\\right)}=\\frac{2\\left(cos\\left(2x\\right)\\right)}sin^$\\left(2x\\righ=2cot(2x)$$"
+            "$$\\frac{\\cos(2x)}{\\frac{1}{2}\\sin(2x)}=2\\frac{\\cos(2x)}{\\sin(2x)}=2\\cot(2x)$$"
         ],
         "dependencies": [
             "a649252angle45a-h2"
@@ -147,10 +147,10 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\fraccos^\\\\left(2x\\right)frac{1}{2} sin\\left(2x\\right)}=\\frac{2\\left(cos\\left(2x\\right)\\right)}sin^$\\left(2x\\righ=2cot(2x)$$",
-            "2tan(2x)",
-            "cot(2x)",
-            "2cot(x)"
+            "$$\\frac{\\cos(2x)}{\\frac{1}{2}\\sin(2x)}=2\\frac{\\cos(2x)}{\\sin(2x)}=2\\cot(2x)$$",
+            "$$2\\tan(2x)$$",
+            "$$\\cot(2x)$$",
+            "$$2\\cot(x)$$"
         ]
     }
 ]

@@ -15,7 +15,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\tan**{2}(t) + $$1$$ $$=$$ \\sec**{2}(t)$$"
+            "$$\\tan**{2}(t)+1=\\sec**{2}(t)$$"
         ],
         "dependencies": [
             "a590f38trigonometric45a-h1"
@@ -26,10 +26,10 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\tan**{2}(t) + $$1$$ $$=$$ \\sec**{2}(t)$$",
-            "$$\\tan**{2}(t) $$-$$ $$1$$ $$=$$ \\sec**{2}(t)$$",
-            "$$\\sin**{2}(t) + \\cos**{2}(t) $$=$$ $$1$$",
-            "$$1$$ + \\cot**{2}(t) $$=$$ \\csc**{2}(t)$$"
+            "$$\\tan**{2}(t)+1=\\sec**{2}(t)$$",
+            "$$\\tan**{2}(t)-1=\\sec**{2}(t)$$",
+            "$$\\sin**{2}(t)+\\cos**{2}(t)=1$$",
+            "$$1+\\cot**{2}(t)=\\csc**{2}(t)$$"
         ]
     },
     {
@@ -39,7 +39,7 @@
             "a590f38trigonometric45a-h1"
         ],
         "title": "Substitute and form a quadratic",
-        "text": "Substitute $$\\tan**{2}(t) $$=$$ \\sec**{2}(t) $$-$$ $$1$$ $$into$$ $$the$$ $$original$$ $$equation$$ $$and$$ $$rearrange$$ $$it$$ $$into$$ $$a$$ $$quadratic$$ $$form.$$",
+        "text": "Substitute $$\\tan**{2}(t)=\\sec**{2}(t)-1 $$into$$ $$the$$ $$original$$ $$equation\\text{$$ $$and$$ $$}rearrange$$ $$it$$ $$into$$ $$a$$ $$quadratic$$ $$form$$. $$$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -50,7 +50,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$2\\sec**{2}(t) $$-$$ $$3\\sec(t)$$ $$-$$ $$2$$ $$=$$ $$0$$"
+            "$$2\\sec**{2}(t)-3\\sec(t)-2=0$$"
         ],
         "dependencies": [
             "a590f38trigonometric45a-h2"
@@ -61,10 +61,10 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$2\\sec**{2}(t) $$-$$ $$3\\sec(t)$$ $$-$$ $$2$$ $$=$$ $$0$$",
-            "$$2\\sec**{2}(t) + $$3\\sec(t)$$ $$-$$ $$2$$ $$=$$ $$0$$",
-            "$$2\\sec**{2}(t) $$-$$ $$3\\sec(t)$$ + $$2$$ $$=$$ $$0$$",
-            "$$2\\sec**{2}(t) $$-$$ $$3\\sec(t)$$ $$=$$ $$0$$"
+            "$$2\\sec**{2}(t)-3\\sec(t)-2=0$$",
+            "$$2\\sec**{2}(t)+3\\sec(t)-2=0$$",
+            "$$2\\sec**{2}(t)-3\\sec(t)+2=0$$",
+            "$$2\\sec**{2}(t)-3\\sec(t)=0$$"
         ]
     },
     {
@@ -85,21 +85,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\sec(t)$$ $$=$$ $$-\\frac{1}{2$$,} $$\\sec(t)$$ $$=$$ $$2$$"
+            "$$\\sec(t)=-\\frac{1}{2}, \\$$ $$\\sec(t)=2$$"
         ],
         "dependencies": [
             "a590f38trigonometric45a-h3"
         ],
         "title": "Find values for $$\\sec(t)$$",
-        "text": "Solve $$2u^2$$ - 3u - $$2$$ $$=$$ $$0$$ for u where u $$=$$ $$\\sec(t)$$.",
+        "text": "Solve $$2u^2$$ - 3u - $$2$$ $$=$$ $$0$$ for u where u $$=\\$\\$\\sec(t)$$.",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\sec(t)$$ $$=$$ $$-\\frac{1}{2$$,} $$\\sec(t)$$ $$=$$ $$2$$",
-            "$$\\sec(t)$$ $$=$$ $$\\frac{1}{2$$,} $$\\sec(t)$$ $$=$$ $$-2$$",
-            "$$\\sec(t)$$ $$=$$ $$1$$, $$\\sec(t)$$ $$=$$ $$-2$$",
-            "$$\\sec(t)$$ $$=$$ $$-\\frac{1}{2$$,} $$\\sec(t)$$ $$=$$ $$-2$$"
+            "$$\\sec(t)=-\\frac{1}{2}, \\$$ $$\\sec(t)=2$$",
+            "$$\\sec(t)=\\frac{1}{2}, \\$$ $$\\sec(t)=-2$$",
+            "$$\\sec(t)=1, \\$$ $$\\sec(t)=-2$$",
+            "$$\\sec(t)=-\\frac{1}{2}, \\$$ $$\\sec(t)=-2$$"
         ]
     },
     {
@@ -108,7 +108,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\sec(t)$$ $$=$$ $$2$$"
+            "$$\\sec(t)=2$$"
         ],
         "dependencies": [
             "a590f38trigonometric45a-h3"
@@ -119,9 +119,9 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\sec(t)$$ $$=$$ $$2$$",
-            "$$\\sec(t)$$ $$=$$ $$-\\frac{1}{2}$$",
-            "$$\\sec(t)$$ $$=$$ $$-\\frac{1}{2$$,} $$\\sec(t)$$ $$=$$ $$2$$",
+            "$$\\sec(t)=2$$",
+            "$$\\sec(t)=-\\frac{1}{2}$$",
+            "$$\\sec(t)=-\\frac{1}{2}, \\$$ $$\\sec(t)=2$$",
             "No valid values"
         ]
     },
@@ -131,20 +131,20 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\frac{\\pi}{3$$,} $$\\frac{5\\pi}{3}$$"
+            "$$\\frac{\\pi}{3}, \\$$ $$\\frac{5\\pi}{3}$$"
         ],
         "dependencies": [
             "a590f38trigonometric45a-h3"
         ],
         "title": "Solve for $$t$$",
-        "text": "For what values of $$t$$ in $$0$$ $$\\leq$$ $$\\theta$$ < $$2\\pi$$ is $$\\sec(t)$$ $$=$$ $$2$$?",
+        "text": "For what values of $$t$$ in $$$$ $$0$$ \\leq \\theta<2\\pi $$$$ is $$\\sec(t)=2$$ $$$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\frac{\\pi}{3$$,} $$\\frac{5\\pi}{3}$$",
-            "$$\\frac{2\\pi}{3$$,} $$\\frac{4\\pi}{3}$$",
-            "$$\\frac{\\pi}{6$$,} $$\\frac{11\\pi}{6}$$",
+            "$$\\frac{\\pi}{3}, \\$$ $$\\frac{5\\pi}{3}$$",
+            "$$\\frac{2\\pi}{3}, \\$$ $$\\frac{4\\pi}{3}$$",
+            "$$\\frac{\\pi}{6}, \\$$ $$\\frac{11\\pi}{6}$$",
             "$$\\frac{\\pi}{3}$$"
         ]
     }

@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Recall Double Angle Formulas",
-        "text": "Recall the double angle formulas for cosine and sine: cos(2theta) $$=$$ $$2cos^2\\left(\\theta\\right)$$ - $$1$$ or $$1$$ - $$2sin^2\\left(\\theta\\right)$$ or $$cos^2\\left(\\theta\\right)$$ - $$sin^2\\left(\\theta\\right)$$ and sin(2theta) $$=$$ 2sin(theta)cos(theta). Also recall tan(theta) $$=$$ $$\\fracsin^c\\left(\\theta\\right)os\\left(\\theta\\right)}$$.",
+        "text": "Recall the double angle formulas for cosine and sine: $$\\cos(2\\theta) $$=$$ 2\\cos**2(\\theta) $$-$$ $$1$$ or $$1$$ $$-$$ 2\\sin**2(\\theta)$$ or $$\\cos**2(\\theta) $$-$$ \\sin**2(\\theta)$$ and $$\\sin(2\\theta) $$=$$ 2\\sin(\\theta)\\cos(\\theta)$$. $$Also$$ $$recall$$ $$\\tan(\\theta) $$=$$ \\frac{\\sin(\\theta)}{\\cos(\\theta)}$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -15,21 +15,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$2cos^2\\left(\\theta\\right)-1$$"
+            "$$2\\cos**2(\\theta)-1$$"
         ],
         "dependencies": [
             "a649252angle46a-h1"
         ],
         "title": "Apply double angle formula for cosine",
-        "text": "Which form of the double angle formula for cos(2theta) is most useful for simplifying $$1+cos\\left(2\\theta\\right)$$?",
+        "text": "Which form of the double angle formula for $$\\cos(2\\theta)$$ is most useful for simplifying $$1+\\cos(2\\theta)$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$2cos^2\\left(\\theta\\right)-1$$",
-            "$$1-2sin^2\\left(\\theta\\right)$$",
-            "$$cos^2\\left(\\theta\\right)-sin^2\\left(\\theta\\right)$$",
-            "$$2sin^2\\left(\\theta\\right)-1$$"
+            "$$2\\cos**2(\\theta)-1$$",
+            "$$1-2\\sin**2(\\theta)$$",
+            "$$\\cos**2(\\theta)-\\sin**2(\\theta)$$",
+            "$$2\\sin**2(\\theta)-1$$"
         ]
     },
     {
@@ -39,7 +39,7 @@
             "a649252angle46a-h1"
         ],
         "title": "Simplify the numerator",
-        "text": "Substitute the appropriate double angle formula for cos(2theta) into the numerator $$1+cos\\left(2\\theta\\right)$$ to simplify it.",
+        "text": "Substitute the appropriate double angle formula for $$\\cos(2\\theta)$$ into the numerator $$1+\\cos(2\\theta)$$ to simplify it.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -50,21 +50,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$2cos^2\\left(\\theta\\right)$$"
+            "$$2\\cos**2(\\theta)$$"
         ],
         "dependencies": [
             "a649252angle46a-h2"
         ],
         "title": "Simplify the numerator",
-        "text": "What does $$1+cos\\left(2\\theta\\right)$$ simplify to after substitution?",
+        "text": "What does $$1+\\cos(2\\theta)$$ simplify to after substitution?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$2cos^2\\left(\\theta\\right)$$",
-            "$$2sin^2\\left(\\theta\\right)$$",
-            "2cos(theta)",
-            "$$1+2cos^2\\left(\\theta\\right)$$"
+            "$$2\\cos**2(\\theta)$$",
+            "$$2\\sin**2(\\theta)$$",
+            "$$2\\cos(\\theta)$$",
+            "$$1+2\\cos**2(\\theta)$$"
         ]
     },
     {
@@ -74,7 +74,7 @@
             "a649252angle46a-h2"
         ],
         "title": "Simplify the expression",
-        "text": "After substituting and simplifying, try to express the entire left side in terms of sin(theta) and cos(theta).",
+        "text": "After substituting and simplifying, try to express the entire left side in terms of $$\\sin(\\theta)$$ and $$\\cos(\\theta)$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -85,20 +85,20 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "tan(theta)"
+            "$$\\tan(\\theta)$$"
         ],
         "dependencies": [
             "a649252angle46a-h3"
         ],
         "title": "Final simplification",
-        "text": "After simplifying the fraction to cot(theta), what is $$\\operatorname{cot}\\left(\\theta\\right) tan^2\\left(\\theta\\right)$$?",
+        "text": "After simplifying the fraction to $$\\cot(\\theta)$$, $$what$$ $$is$$ $$\\cot(\\theta)\\tan**2(\\theta)$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "tan(theta)",
-            "cot(theta)",
-            "$$tan^3\\left(\\theta\\right)$$",
+            "$$\\tan(\\theta)$$",
+            "$$\\cot(\\theta)$$",
+            "$$\\tan**3(\\theta)$$",
             "$$1$$"
         ]
     }

@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Double-angle formula for tangent",
-        "text": "Recall that tan(2theta) $$=$$ (2tan(theta))/(1 - tan(theta)**2).",
+        "text": "Recall that $$\\tan(2\\theta) $$=$$ \\frac{2\\tan(\\theta)}{1 $$-$$ \\tan**2\\theta}$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -15,21 +15,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\frac{2tan\\left(\\theta\\right)}{1-tan^2\\left(\\theta\\right)}$$"
+            "$$\\frac{2\\tan(\\theta)}{1-\\tan**2\\theta}$$"
         ],
         "dependencies": [
             "a649252angle1c-h1"
         ],
         "title": "Identify the formula",
-        "text": "What is the double-angle formula for tan(2theta)?",
+        "text": "What is the double-angle formula for $$\\tan(2\\theta)$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\frac{2tan\\left(\\theta\\right)}{1-tan^2\\left(\\theta\\right)}$$",
-            "$$\\frac{2tan\\left(\\theta\\right)}{1+tan^2\\left(\\theta\\right)}$$",
-            "$$\\fractan^1\\left(\\theta\\right)-{ttan^2eft(\\theta\\right)}$$",
-            "$$\\frac{2tan\\left(\\theta\\right)}{1-tan\\left(\\theta\\right)}$$"
+            "$$\\frac{2\\tan(\\theta)}{1-\\tan**2\\theta}$$",
+            "$$\\frac{2\\tan(\\theta)}{1+\\tan**2\\theta}$$",
+            "$$\\frac{\\tan(\\theta)}{1-\\tan**2\\theta}$$",
+            "$$\\frac{2\\tan(\\theta)}{1-\\tan(\\theta)}$$"
         ]
     },
     {
@@ -38,8 +38,8 @@
         "dependencies": [
             "a649252angle1c-h1"
         ],
-        "title": "Substitute tan(theta)",
-        "text": "Substitute the given value of tan(theta) into the formula.",
+        "title": "Substitute $$\\tan(\\theta)$$",
+        "text": "Substitute the given value of $$\\tan(\\theta)$$ into the formula.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -55,8 +55,8 @@
         "dependencies": [
             "a649252angle1c-h2"
         ],
-        "title": "Calculate $$tan^2\\left(\\theta\\right)$$",
-        "text": "Given tan(theta) $$=$$ $$\\frac{-3}{4}$$, what is $$tan^2\\left(\\theta\\right)$$?",
+        "title": "Calculate $$\\tan**2\\theta$$",
+        "text": "Given $$\\tan(\\theta) $$=$$ $$-\\frac{3}{4}$$, $$what$$ $$is$$ $$\\tan**2\\theta$$?",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -65,10 +65,10 @@
         "id": "a649252angle1c-h3",
         "type": "hint",
         "dependencies": [
-            "a649252angle1c-h1"
+            "a649252angle1c-h2"
         ],
         "title": "Alternative approach",
-        "text": "Alternatively, you can use the identity tan(2theta) $$=$$ $$\\fracsin^c\\left(2\\theta\\right)os\\left(2\\theta\\right)}$$ and the values you found in the previous steps.",
+        "text": "Alternatively, you can use the identity $$\\tan(2\\theta) $$=$$ \\frac{\\sin(2\\theta)}{\\cos(2\\theta)}$$ and the values you found in the previous steps.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -84,8 +84,8 @@
         "dependencies": [
             "a649252angle1c-h3"
         ],
-        "title": "Calculate tan(2theta)",
-        "text": "Using sin(2theta) $$=$$ $$\\frac{-24}{25}$$ and cos(2theta) $$=$$ $$\\frac{7}{25}$$, what is tan(2theta)?",
+        "title": "Calculate $$\\tan(2\\theta)$$",
+        "text": "Using $$\\sin(2\\theta) $$=$$ $$-\\frac{24}{25}$$ and $$\\cos(2\\theta) $$=$$ $$\\frac{7}{25}$$, $$what$$ $$is$$ $$\\tan(2\\theta)$$?",
         "variabilization": {},
         "oer": "",
         "license": ""

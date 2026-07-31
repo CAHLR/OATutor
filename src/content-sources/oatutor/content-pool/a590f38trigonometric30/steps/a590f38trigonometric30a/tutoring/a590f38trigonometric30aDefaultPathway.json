@@ -12,7 +12,9 @@
     {
         "id": "a590f38trigonometric30a-h2",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a590f38trigonometric30a-h1"
+        ],
         "title": "Take the square root",
         "text": "Remember to consider both positive and negative roots when taking the square root of both sides.",
         "variabilization": {},
@@ -20,12 +22,12 @@
         "license": ""
     },
     {
-        "id": "a590f38trigonometric30a-s2",
+        "id": "a590f38trigonometric30a-s1",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\frac{\\sqrt{2}}{2}, \\frac{-\\sqrt{2}}{2}$$"
+            "$$\\frac{\\sqrt{2}}{2},\\ \\frac{-\\sqrt{2}}{2}$$"
         ],
         "dependencies": [
             "a590f38trigonometric30a-h2"
@@ -36,7 +38,7 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\frac{\\sqrt{2}}{2}, \\frac{-\\sqrt{2}}{2}$$",
+            "$$\\frac{\\sqrt{2}}{2},\\ \\frac{-\\sqrt{2}}{2}$$",
             "$$\\frac{1}{2}$$, $$\\frac{-1}{2}$$",
             "$$1$$, $$-1$$",
             "$$0$$, $$1$$"
@@ -45,7 +47,9 @@
     {
         "id": "a590f38trigonometric30a-h3",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a590f38trigonometric30a-h2"
+        ],
         "title": "Identify angles on unit circle",
         "text": "Find the angles on the unit circle where sin $$x$$ has these values.",
         "variabilization": {},

@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Recall the formula",
-        "text": "Recall a common form of the half-angle formula for $$tan\\left(\\frac{x}{2}\\right)$$ that involves cos(x) in the denominator.",
+        "text": "Recall a common form of the half-angle formula for $$\\tan(\\frac{x}{2})$$ that involves $$\\cos$$ $$x$$ in the denominator.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -15,21 +15,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\fracsin^1\\left(x\\right)+cos\\left(x\\right)}$$"
+            "$$\\frac{\\sin$$ x}{1+\\cos $$x}$$"
         ],
         "dependencies": [
             "a649252angle13a-h1"
         ],
         "title": "Identify the formula",
-        "text": "What is one common form of the half-angle formula for $$tan\\left(\\frac{x}{2}\\right)$$ that has cos(x) in the denominator?",
+        "text": "What is one common form of the half-angle formula for $$\\tan(\\frac{x}{2})$$ that has $$\\cos$$ $$x$$ in the denominator?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\fracsin^1\\left(x\\right)+cos\\left(x\\right)}$$",
-            "$$\\fracsin^1\\left(x\\right)-cos\\left(x\\right)}$$",
-            "$$\\frac{1+cos\\left(x\\right)}sin^$\\left(x\\righ$$",
-            "$$\\fraccos^1\\left(x\\right)+sin\\left(x\\right)}$$"
+            "$$\\frac{\\sin$$ x}{1+\\cos $$x}$$",
+            "$$\\frac{\\sin$$ $$x}{1-\\cos$$ $$x}$$",
+            "$$\\frac{1+\\cos $$x}{\\sin$$ $$x}$$",
+            "$$\\frac{\\cos$$ x}{1+\\sin $$x}$$"
         ]
     },
     {
@@ -55,8 +55,8 @@
         "dependencies": [
             "a649252angle13a-h2"
         ],
-        "title": "Value of cos(x)",
-        "text": "For the formula (sin(x))/(1 + cos(x)), what value of cos(x) makes the denominator zero?",
+        "title": "Value of $$\\cos$$ $$x$$",
+        "text": "For the formula $$\\frac{\\sin$$ $$x}{1$$ + $$\\cos$$ $$x}$$, $$what$$ $$value$$ $$of$$ $$\\cos$$ $$x$$ makes the denominator zero?",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -67,8 +67,8 @@
         "dependencies": [
             "a649252angle13a-h2"
         ],
-        "title": "Consider $$tan\\left(\\frac{x}{2}\\right)$$ at these values",
-        "text": "Consider what happens to $$tan\\left(\\frac{x}{2}\\right)$$ at these values of $$x$$.",
+        "title": "Consider $$\\tan(\\frac{x}{2})$$ at these values",
+        "text": "Consider what happens to $$\\tan(\\frac{x}{2})$$ at these values of $$x$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -79,21 +79,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\frac{\\pi}{2}+k \\pi$$"
+            "$$\\frac{\\pi}{2}+k\\pi$$"
         ],
         "dependencies": [
             "a649252angle13a-h3"
         ],
         "title": "Values of $$\\frac{x}{2}$$",
-        "text": "If cos(x) $$=$$ $$-1$$, what are the corresponding values of $$\\frac{x}{2}$$?",
+        "text": "If $$\\cos$$ $$x$$ $$=$$ $$-1$$, $$what$$ $$are$$ $$the$$ $$corresponding$$ $$values$$ $$of$$ $$\\frac{x}{2}$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\frac{\\pi}{2}+k \\pi$$",
-            "$$k \\pi$$",
-            "$$\\frac{\\pi}{2}+2k \\pi$$",
-            "$$\\pi+2k \\pi$$"
+            "$$\\frac{\\pi}{2}+k\\pi$$",
+            "$$k\\pi$$",
+            "$$\\frac{\\pi}{2}+2k\\pi$$",
+            "$$\\pi+2k\\pi$$"
         ]
     }
 ]

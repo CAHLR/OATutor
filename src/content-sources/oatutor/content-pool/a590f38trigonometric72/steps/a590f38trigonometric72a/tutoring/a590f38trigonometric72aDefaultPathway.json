@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Use double angle identity",
-        "text": "Recall the double angle identity for cosine: $$\\cos(2x)$$ $$=$$ 2\\cos**{2}(x) $$-$$ $$1.$$",
+        "text": "Recall the double angle identity for cosine: $$\\cos(2x)=2\\cos**{2}(x)-1. $$$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -15,7 +15,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$2\\cos**{2}(x) $$-$$ $$1$$"
+            "$$2\\cos**{2}(x)-1$$"
         ],
         "dependencies": [
             "a590f38trigonometric72a-h1"
@@ -26,16 +26,18 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$2\\cos**{2}(x) $$-$$ $$1$$",
-            "$$2\\cos(x)$$ $$-$$ $$1$$",
-            "$$\\cos**{2}(x) + $$1$$",
-            "$$\\cos(x)$$ $$-$$ $$1$$"
+            "$$2\\cos**{2}(x)-1$$",
+            "$$2\\cos(x)-1$$",
+            "$$\\cos**{2}(x)+1$$",
+            "$$\\cos(x)-1$$"
         ]
     },
     {
         "id": "a590f38trigonometric72a-h2",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a590f38trigonometric72a-h1"
+        ],
         "title": "Form a quadratic equation",
         "text": "Rewrite the equation in terms of $$\\cos(x)$$ and solve the resulting quadratic equation.",
         "variabilization": {},
@@ -48,7 +50,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$2\\cos**{2}(x) $$-$$ $$\\cos(x)$$ $$-$$ $$1$$ $$=$$ $$0$$"
+            "$$2\\cos**{2}(x)-\\cos(x)-1=0$$"
         ],
         "dependencies": [
             "a590f38trigonometric72a-h2"
@@ -59,10 +61,10 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$2\\cos**{2}(x) $$-$$ $$\\cos(x)$$ $$-$$ $$1$$ $$=$$ $$0$$",
-            "$$2\\cos**{2}(x) + $$\\cos(x)$$ $$-$$ $$1$$ $$=$$ $$0$$",
-            "$$2\\cos**{2}(x) $$-$$ $$\\cos(x)$$ + $$1$$ $$=$$ $$0$$",
-            "$$\\cos**{2}(x) $$-$$ $$\\cos(x)$$ $$-$$ $$1$$ $$=$$ $$0$$"
+            "$$2\\cos**{2}(x)-\\cos(x)-1=0$$",
+            "$$2\\cos**{2}(x)+\\cos(x)-1=0$$",
+            "$$2\\cos**{2}(x)-\\cos(x)+1=0$$",
+            "$$\\cos**{2}(x)-\\cos(x)-1=0$$"
         ]
     },
     {
@@ -77,7 +79,7 @@
             "a590f38trigonometric72a-h2"
         ],
         "title": "Factor the quadratic",
-        "text": "Factor the quadratic equation $$2u^2$$ - u - $$1$$ $$=$$ $$0$$ where u $$=$$ $$\\cos(x)$$.",
+        "text": "Factor the quadratic equation $$2u^2$$ - u - $$1$$ $$=$$ $$0$$ where u $$=\\$\\$\\cos(x)$$.",
         "variabilization": {},
         "oer": "",
         "license": "",
@@ -91,7 +93,9 @@
     {
         "id": "a590f38trigonometric72a-h3",
         "type": "hint",
-        "dependencies": [],
+        "dependencies": [
+            "a590f38trigonometric72a-h2"
+        ],
         "title": "Solve for each factor",
         "text": "Set each factor equal to zero and solve for $$x$$ on the given interval.",
         "variabilization": {},
@@ -104,21 +108,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\frac{2\\pi}{3$$,} $$\\frac{4\\pi}{3}$$"
+            "$$\\frac{2\\pi}{3}, \\$$ $$\\frac{4\\pi}{3}$$"
         ],
         "dependencies": [
             "a590f38trigonometric72a-h3"
         ],
-        "title": "Solve $$\\cos(x)$$ $$=$$ $$\\frac{-1}{2}$$",
-        "text": "What are the solutions for $$\\cos(x)$$ $$=$$ $$\\frac{-1}{2$$} $$on$$ $$(0$$, 2pi)?",
+        "title": "Solve $$\\cos(x)=\\frac{-1}{2}$$",
+        "text": "What are the solutions for $$\\cos(x)=\\frac{-1}{2$$} $$on$$ $$(0$$ $$$$, 2pi)?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\frac{2\\pi}{3$$,} $$\\frac{4\\pi}{3}$$",
-            "$$\\frac{\\pi}{3$$,} $$\\frac{5\\pi}{3}$$",
-            "$$\\frac{\\pi}{6$$,} $$\\frac{5\\pi}{6}$$",
-            "$$\\frac{\\pi}{3$$,} $$\\frac{2\\pi}{3$$,} $$\\frac{4\\pi}{3$$,} $$\\frac{5\\pi}{3}$$"
+            "$$\\frac{2\\pi}{3}, \\$$ $$\\frac{4\\pi}{3}$$",
+            "$$\\frac{\\pi}{3}, \\$$ $$\\frac{5\\pi}{3}$$",
+            "$$\\frac{\\pi}{6}, \\$$ $$\\frac{5\\pi}{6}$$",
+            "$$\\frac{\\pi}{3}, \\$$ $$\\frac{2\\pi}{3}, \\$$ $$\\frac{4\\pi}{3}, \\$$ $$\\frac{5\\pi}{3}$$"
         ]
     },
     {
@@ -132,8 +136,8 @@
         "dependencies": [
             "a590f38trigonometric72a-h3"
         ],
-        "title": "Solve $$\\cos(x)$$ $$=$$ $$1$$",
-        "text": "What are the solutions for $$\\cos(x)$$ $$=$$ $$1$$ $$on$$ $$(0$$, 2pi)?",
+        "title": "Solve $$\\cos(x)=1$$ $$$$",
+        "text": "What are the solutions for $$\\cos(x)=1$$ $$on$$ $$(0$$ $$$$, 2pi)?",
         "variabilization": {},
         "oer": "",
         "license": ""

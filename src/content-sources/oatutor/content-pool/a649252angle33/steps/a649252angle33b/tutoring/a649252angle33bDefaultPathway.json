@@ -4,30 +4,32 @@
         "type": "hint",
         "dependencies": [],
         "title": "Recall the double angle identity for cosine.",
-        "text": "There are three common forms for the double angle formula for cos(2theta).",
+        "text": "There are three common forms for the double angle formula for $$\\cos(2\\theta)$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
     },
     {
-        "id": "a649252angle33b-h1",
+        "id": "a649252angle33b-s1",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$cos^2\\left(\\theta\\right)-sin^2\\left(\\theta\\right)$$"
+            "$$\\cos**2(\\theta)-\\sin**2(\\theta)$$"
         ],
-        "dependencies": [],
-        "title": "Which of these is a correct double angle formula for cos(2theta)?",
+        "dependencies": [
+            "a649252angle33b-h1"
+        ],
+        "title": "Which of these is a correct double angle formula for $$\\cos(2\\theta)$$?",
         "text": "",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "2sin(theta)cos(theta)",
-            "$$cos^2\\left(\\theta\\right)-sin^2\\left(\\theta\\right)$$",
-            "2tan(theta)",
-            "sin(theta)cos(theta)"
+            "$$2\\sin(\\theta)\\cos(\\theta)$$",
+            "$$\\cos**2(\\theta)-\\sin**2(\\theta)$$",
+            "$$2\\tan(\\theta)$$",
+            "$$\\sin(\\theta)\\cos(\\theta)$$"
         ]
     }
 ]

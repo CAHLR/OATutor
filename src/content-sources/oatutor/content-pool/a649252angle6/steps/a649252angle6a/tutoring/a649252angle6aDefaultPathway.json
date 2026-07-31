@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Rewrite the left side",
-        "text": "Start by rewriting $$sin^3\\left(2x\\right)$$ as sin(2x) * $$sin^2\\left(2x\\right)$$.",
+        "text": "Start by rewriting $$\\sin**3(2x)$$ as $$\\sin(2x)$$ $$\\cdot$$ \\sin**2(2x)$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -15,21 +15,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$sin\\left(2x\\right) sin^2\\left(2x\\right)$$"
+            "$$\\sin(2x)$$ $$\\cdot$$ \\sin**2(2x)$$"
         ],
         "dependencies": [
             "a649252angle6a-h1"
         ],
         "title": "Factor the expression",
-        "text": "How can you factor $$sin^3\\left(2x\\right)$$ to isolate a squared term?",
+        "text": "How can you factor $$\\sin**3(2x)$$ to isolate a squared term?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$sin\\left(2x\\right) sin^2\\left(2x\\right)$$",
-            "$$sin^2\\left(2x\\right) cos\\left(2x\\right)$$",
-            "$$sin\\left(2x\\right) \\left(1-cos\\left(2x\\right)\\right)$$",
-            "$$sin\\left(2x\\right) sin\\left(x\\right)$$"
+            "$$\\sin(2x)$$ $$\\cdot$$ \\sin**2(2x)$$",
+            "$$\\sin**2(2x) $$\\cdot$$ $$\\cos(2x)$$",
+            "$$\\sin(2x)$$ $$\\cdot$$ $$(1-\\cos(2x))$$",
+            "$$\\sin(2x)$$ $$\\cdot$$ $$\\sin(x)$$"
         ]
     },
     {
@@ -39,7 +39,7 @@
             "a649252angle6a-h1"
         ],
         "title": "Apply power-reducing formula",
-        "text": "Use the power-reducing formula for $$sin^2\\left(u\\right)$$ on the $$sin^2\\left(2x\\right)$$ term.",
+        "text": "Use the power-reducing formula for $$\\sin**2(u)$$ on the $$\\sin**2(2x)$$ term.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -50,21 +50,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$sin^2\\left(u\\right)=\\frac{1-cos\\left(2u\\right)}{2}$$"
+            "$$\\sin**2(u)=\\frac{1-\\cos(2u)}{2}$$"
         ],
         "dependencies": [
             "a649252angle6a-h2"
         ],
         "title": "Power-reducing for sine squared",
-        "text": "What is the power-reducing formula for $$sin^2\\left(u\\right)$$?",
+        "text": "What is the power-reducing formula for $$\\sin**2(u)$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$sin^2\\left(u\\right)=\\frac{1-cos\\left(2u\\right)}{2}$$",
-            "$$sin^2\\left(u\\right)=\\frac{1+cos\\left(2u\\right)}{2}$$",
-            "$$sin^2\\left(u\\right)=\\frac{1-cos\\left(u\\right)}{2}$$",
-            "$$sin^2\\left(u\\right)=1-cos(2u)$$"
+            "$$\\sin**2(u)=\\frac{1-\\cos(2u)}{2}$$",
+            "$$\\sin**2(u)=\\frac{1+\\cos(2u)}{2}$$",
+            "$$\\sin**2(u)=\\frac{1-\\cos(u)}{2}$$",
+            "$$\\sin**2(u)=1-\\cos(2u)$$"
         ]
     },
     {
@@ -85,21 +85,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\fracsin^2\\left(2x\\right) \\left(1-cos\\left(4x\\right)\\right)}=\\frac{1}{2} sin\\left(2x\\right) \\left(1-cos\\left(4x\\right)\\right)$$"
+            "$$\\sin(2x)$$ $$\\cdot$$ $$\\frac{1-\\cos(4x)}{2}=(\\frac{1}{2}\\sin(2x))(1-\\cos(4x))$$"
         ],
         "dependencies": [
             "a649252angle6a-h3"
         ],
         "title": "Substitute and match",
-        "text": "Substitute the formula for $$sin^2\\left(2x\\right)$$ into sin(2x) * $$sin^2\\left(2x\\right)$$ and simplify.",
+        "text": "Substitute the formula for $$\\sin**2(2x)$$ into $$\\sin(2x)$$ $$\\cdot$$ \\sin**2(2x)$$ and simplify.",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\fracsin^2\\left(2x\\right) \\left(1-cos\\left(4x\\right)\\right)}=\\frac{1}{2} sin\\left(2x\\right) \\left(1-cos\\left(4x\\right)\\right)$$",
-            "$$\\fracsin^2\\left(2x\\right) \\left(1+cos\\left(4x\\right)\\right)}=\\frac{1}{2} sin\\left(2x\\right) \\left(1+cos\\left(4x\\right)\\right)$$",
-            "$$\\fracsin^2\\left(2x\\right) \\left(1-cos\\left(2x\\right)\\right)}=\\frac{1}{2} sin\\left(2x\\right) \\left(1-cos\\left(2x\\right)\\right)$$",
-            "$$sin\\left(2x\\right) \\left(1-cos\\left(4x\\right)\\right)=sin(2x)(1-cos(4x))$$"
+            "$$\\sin(2x)$$ $$\\cdot$$ $$\\frac{1-\\cos(4x)}{2}=(\\frac{1}{2}\\sin(2x))(1-\\cos(4x))$$",
+            "$$\\sin(2x)$$ $$\\cdot$$ \\frac{1+\\cos(4x)}{2}=(\\frac{1}{2}\\sin(2x))(1+\\cos(4x))$$",
+            "$$\\sin(2x)$$ $$\\cdot$$ $$\\frac{1-\\cos(2x)}{2}=(\\frac{1}{2}\\sin(2x))(1-\\cos(2x))$$",
+            "$$\\sin(2x)$$ $$\\cdot$$ $$(1-\\cos(4x))=\\sin(2x)(1-\\cos(4x))$$"
         ]
     }
 ]
