@@ -49,6 +49,7 @@ import {
     HINT_BADGE_COLORS,
     mobileFabButtonStyle,
     DESKTOP_TOOLTIP_RIGHT,
+    MOBILE_AGENT_FAB_BOTTOM,
     PAGE_BG,
 } from './mobileFabStyles';
 import {
@@ -56,6 +57,10 @@ import {
     ensureMathKeyboardShowGuard,
     hideMathKeyboardAnimated,
 } from '../problem-input/mathKeyboardGestures';
+import {
+    getHelpPenaltyMode,
+    getHelpPenaltyBadgeText,
+} from '../../util/helpPenaltyMode.js';
 
 class Problem extends React.Component {
     static defaultProps = {
@@ -96,11 +101,14 @@ class Problem extends React.Component {
         this.prompt_template = this.props.lesson?.prompt_template
             ? this.props.lesson?.prompt_template
             : "";
+        this.helpPenaltyMode = getHelpPenaltyMode(this.props.lesson);
 
         this.state = {
             // metaCollapsed: false,
             stepStates: {},
             firstAttempts: {},
+            // Help used on a step; BKT “no credit” applied on next graded submit.
+            helpPenaltyPendingByStep: {},
             problemFinished: false,
             feedback: "",
             feedbackSubmitted: false,
@@ -122,6 +130,12 @@ class Problem extends React.Component {
             agentCloseRequest: 0,
             isAgentChatVisible: false,
             isMathKeyboardVisible: false,
+            // Desktop Hint + AI Tutor promo bubbles: per-side hide when they would overlap.
+            hideHintPromoDueToOverlap: false,
+            hideAgentPromoDueToOverlap: false,
+            agentPromoAllowed: false,
+            agentPromoHasBeenOpened: false,
+            agentPromoHovering: false,
         };
 
         this.hintPortalRef = React.createRef();
@@ -158,53 +172,211 @@ class Problem extends React.Component {
             // Re-writing messageCount*: 0 on remount would wipe live increments (merge setDoc).
             const firebase = this.context?.firebase;
             if (firebase?.logChatSession && sessionId && agentHelper.needsSessionMetaWrite()) {
-                const chatDisplayMode = lesson?.chat_display_mode || 'Off';
                 // LTI fields are only present when launched via Canvas/LMS JWT.
-                // Standalone local/dev (and many direct production visits) correctly have null.
-                firebase.logChatSession(sessionId, {
+                firebase.logChatSession(
                     sessionId,
-                    oats_user_id: this.context?.userID || null,
-                    lms_user_id: this.context?.user?.user_id || null,
-                    course_id: this.context?.user?.course_id || null,
-                    course_name: this.context?.user?.course_name || lesson?.courseName || null,
-                    course_code: this.context?.user?.course_code || null,
-                    semester: firebase.addMetaData({}).semester || null,
-                    treatment: this.context?.getTreatment?.() ?? null,
-                    siteVersion: firebase.siteVersion || null,
-                    siteCommitHash: process.env.REACT_APP_COMMIT_HASH || null,
-                    lessonId: lesson?.id || null,
-                    chatDisplayMode,
-                    condition: chatDisplayMode === 'Window' ? 'window'
-                        : chatDisplayMode === 'Avatar' ? 'avatar'
-                        : chatDisplayMode === 'Full' ? 'full'
-                        : 'off',
-                    chatPrompt: lesson?.chat_prompt || 'PROMPTv2.txt',
-                    startedAt: Date.now(),
-                    lastActivityAt: Date.now(),
-                    greetingShown: false,
-                    firstActionType: null,
-                    firstActionTimestampMs: null,
-                    chatOpenCount: 0,
-                    chatCloseCount: 0,
-                    hintOpenCount: 0,
-                    hintCloseCount: 0,
-                    messageCountUser: 0,
-                    messageCountAssistant: 0,
-                    errorCount: 0,
-                    clearedCount: 0,
-                });
+                    agentHelper.buildChatSessionCreatePayload({
+                        sessionId,
+                        lesson,
+                        oats_user_id: this.context?.userID || null,
+                        lms_user_id: this.context?.user?.user_id || null,
+                        course_id: this.context?.user?.course_id || null,
+                        course_name: this.context?.user?.course_name || lesson?.courseName || null,
+                        course_code: this.context?.user?.course_code || null,
+                        semester: firebase.addMetaData({}).semester || null,
+                        treatment: this.context?.getTreatment?.() ?? null,
+                        siteVersion: firebase.siteVersion || null,
+                        siteCommitHash: process.env.REACT_APP_COMMIT_HASH || null,
+                        helpPenaltyMode: getHelpPenaltyMode(lesson),
+                    })
+                );
                 agentHelper.markSessionMetaWritten();
             }
         }
         if (this.enableTTS) this._loadTTSAudio(this.props.problem);
         this._bindMathKeyboardVisibility();
+        this._bindDesktopFabPromoOverlapWatch();
+        this._scheduleDesktopFabPromoOverlapCheck();
     }
 
-    componentDidUpdate(prevProps) {
+    componentDidUpdate(prevProps, prevState) {
         if (this.enableTTS && prevProps.problem?.id !== this.props.problem?.id) {
             this._loadTTSAudio(this.props.problem);
         }
+        if (
+            prevState.isHintPortalOpen !== this.state.isHintPortalOpen ||
+            prevState.hasHintBeenOpened !== this.state.hasHintBeenOpened ||
+            prevState.isHintHovering !== this.state.isHintHovering ||
+            prevState.isAgentChatVisible !== this.state.isAgentChatVisible ||
+            prevState.bannerHeight !== this.state.bannerHeight ||
+            prevState.hideHintPromoDueToOverlap !==
+                this.state.hideHintPromoDueToOverlap ||
+            prevState.hideAgentPromoDueToOverlap !==
+                this.state.hideAgentPromoDueToOverlap ||
+            prevState.agentPromoAllowed !== this.state.agentPromoAllowed ||
+            prevState.agentPromoHasBeenOpened !==
+                this.state.agentPromoHasBeenOpened ||
+            prevState.agentPromoHovering !== this.state.agentPromoHovering ||
+            prevProps.drawerOpen !== this.props.drawerOpen ||
+            prevProps.responsive?.isMobile !== this.props.responsive?.isMobile
+        ) {
+            this._scheduleDesktopFabPromoOverlapCheck();
+        }
     }
+
+    /**
+     * Estimate whether desktop Hint + AI Tutor promo cards would collide.
+     * Uses layout constants (not live boxes) so we can fully collapse both
+     * tooltips without measurement oscillation.
+     */
+    _estimateDesktopFabPromosOverlap = () => {
+        if (typeof window === "undefined") return false;
+        const viewportH =
+            window.visualViewport?.height ?? window.innerHeight ?? 0;
+        const hintTop = (this.state.bannerHeight || 0) + 330;
+        // Approx rendered promo card heights (title + copy + pill + padding).
+        const hintPromoHeight = 92;
+        const agentPromoHeight = 118;
+        const agentFabBottom = MOBILE_AGENT_FAB_BOTTOM;
+        const agentFabHeight = 74;
+        const clearPad = 8;
+        const hintPromoBottom = hintTop + hintPromoHeight;
+        const agentPromoTop =
+            viewportH - agentFabBottom - agentFabHeight - agentPromoHeight;
+        return hintPromoBottom + clearPad > agentPromoTop;
+    };
+
+    /** @returns {'none'|'default'|'hover'} */
+    _hintPromoMode = () => {
+        if (this.state.isHintPortalOpen) return "none";
+        if (!this.state.hasHintBeenOpened) return "default";
+        if (this.state.isHintHovering) return "hover";
+        return "none";
+    };
+
+    /** @returns {'none'|'default'|'hover'} */
+    _agentPromoMode = () => {
+        if (!this.state.agentPromoAllowed) return "none";
+        if (!this.state.agentPromoHasBeenOpened) return "default";
+        if (this.state.agentPromoHovering) return "hover";
+        return "none";
+    };
+
+    /**
+     * When both promos want to show and would overlap:
+     * - both default (or both hover) → hide both
+     * - one default + one hover → keep default, suppress hover
+     */
+    _resolveOverlappingPromoVisibility = (hintMode, agentMode) => {
+        const hintWants = hintMode !== "none";
+        const agentWants = agentMode !== "none";
+        if (!hintWants || !agentWants) {
+            return { hideHint: false, hideAgent: false };
+        }
+        if (hintMode === "default" && agentMode === "hover") {
+            return { hideHint: false, hideAgent: true };
+        }
+        if (hintMode === "hover" && agentMode === "default") {
+            return { hideHint: true, hideAgent: false };
+        }
+        return { hideHint: true, hideAgent: true };
+    };
+
+    _syncDesktopFabPromoOverlap = () => {
+        if (typeof window === "undefined") return;
+        if (this.props.responsive?.isMobile) {
+            if (
+                this.state.hideHintPromoDueToOverlap ||
+                this.state.hideAgentPromoDueToOverlap
+            ) {
+                this.setState({
+                    hideHintPromoDueToOverlap: false,
+                    hideAgentPromoDueToOverlap: false,
+                });
+            }
+            return;
+        }
+
+        const hintMode = this._hintPromoMode();
+        const agentMode = this._agentPromoMode();
+        const wouldOverlap =
+            hintMode !== "none" &&
+            agentMode !== "none" &&
+            this._estimateDesktopFabPromosOverlap();
+
+        const { hideHint, hideAgent } = wouldOverlap
+            ? this._resolveOverlappingPromoVisibility(hintMode, agentMode)
+            : { hideHint: false, hideAgent: false };
+
+        if (
+            hideHint !== this.state.hideHintPromoDueToOverlap ||
+            hideAgent !== this.state.hideAgentPromoDueToOverlap
+        ) {
+            this.setState({
+                hideHintPromoDueToOverlap: hideHint,
+                hideAgentPromoDueToOverlap: hideAgent,
+            });
+        }
+    };
+
+    handleAgentPromoEligibilityChange = (meta) => {
+        const next = {
+            agentPromoAllowed: Boolean(meta?.allowed),
+            agentPromoHasBeenOpened: Boolean(meta?.hasBeenOpened),
+            agentPromoHovering: Boolean(meta?.isHovering),
+        };
+        if (
+            next.agentPromoAllowed === this.state.agentPromoAllowed &&
+            next.agentPromoHasBeenOpened === this.state.agentPromoHasBeenOpened &&
+            next.agentPromoHovering === this.state.agentPromoHovering
+        ) {
+            this._scheduleDesktopFabPromoOverlapCheck();
+            return;
+        }
+        this.setState(next, () => {
+            this._scheduleDesktopFabPromoOverlapCheck();
+        });
+    };
+
+    _scheduleDesktopFabPromoOverlapCheck = () => {
+        if (typeof window === "undefined") return;
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => this._syncDesktopFabPromoOverlap());
+        });
+    };
+
+    _bindDesktopFabPromoOverlapWatch = () => {
+        if (typeof window === "undefined") return;
+        if (this._desktopFabPromoOverlapBound) return;
+        this._desktopFabPromoOverlapBound = true;
+        this._onDesktopFabPromoLayout = () =>
+            this._scheduleDesktopFabPromoOverlapCheck();
+        window.addEventListener("resize", this._onDesktopFabPromoLayout);
+        window.visualViewport?.addEventListener(
+            "resize",
+            this._onDesktopFabPromoLayout
+        );
+        window.visualViewport?.addEventListener(
+            "scroll",
+            this._onDesktopFabPromoLayout
+        );
+    };
+
+    _unbindDesktopFabPromoOverlapWatch = () => {
+        if (typeof window === "undefined" || !this._desktopFabPromoOverlapBound) {
+            return;
+        }
+        window.removeEventListener("resize", this._onDesktopFabPromoLayout);
+        window.visualViewport?.removeEventListener(
+            "resize",
+            this._onDesktopFabPromoLayout
+        );
+        window.visualViewport?.removeEventListener(
+            "scroll",
+            this._onDesktopFabPromoLayout
+        );
+        this._desktopFabPromoOverlapBound = false;
+    };
 
     _syncMathKeyboardVisibility = (evt) => {
         let visible;
@@ -349,6 +521,7 @@ class Problem extends React.Component {
         document["oats-meta-courseName"] = "";
         document["oats-meta-textbookName"] = "";
         this._unbindMathKeyboardVisibility();
+        this._unbindDesktopFabPromoOverlapWatch();
         if (this.ttsPlayer) this.ttsPlayer.destroy();
         Object.values(this.stepTTSPlayers).forEach(p => p.destroy());
     }
@@ -475,8 +648,37 @@ class Problem extends React.Component {
         }
     };
 
+    /**
+     * Record that help was used on a step. Does NOT update BKT yet.
+     * On the student's next graded submit for that step, mastery is treated as
+     * incorrect (no clean credit) even if the typed answer is right. UI still
+     * shows real correctness so they can proceed.
+     */
+    applyHelpPenalty = (stepIndex = null) => {
+        const { problem } = this.props;
+        if (!problem?.steps?.length) return;
+
+        let index = stepIndex;
+        if (!Number.isInteger(index)) {
+            const active = this.getActiveStepData?.();
+            index = Number.isInteger(active?.stepIndex) ? active.stepIndex : 0;
+        }
+        if (!problem.steps[index]) return;
+        if (this.state.stepStates[index] === true) return;
+
+        if (this.state.helpPenaltyPendingByStep[index]) return;
+
+        this.setState((prev) => ({
+            helpPenaltyPendingByStep: {
+                ...prev.helpPenaltyPendingByStep,
+                [index]: true,
+            },
+        }));
+    };
+
     answerMade = (cardIndex, kcArray, isCorrect, attemptedAnswer, questionText) => {
-        const { stepStates, firstAttempts, attemptHistory } = this.state;
+        const { stepStates, firstAttempts, attemptHistory, helpPenaltyPendingByStep } =
+            this.state;
         const { lesson, problem } = this.props;
 
         console.debug(`answer made and is correct: ${isCorrect}`);
@@ -503,6 +705,10 @@ class Problem extends React.Component {
             return;
         }
 
+        const helpPending = Boolean(helpPenaltyPendingByStep?.[cardIndex]);
+        // Deferred help penalty: first graded attempt gets no mastery credit.
+        const bktIsCorrect = helpPending ? false : isCorrect;
+
         if (stepStates[cardIndex] == null) {
             if (kcArray == null) {
                 kcArray = [];
@@ -524,9 +730,17 @@ class Problem extends React.Component {
                 }
                 if (this.doMasteryUpdate && (firstAttempts[cardIndex] === undefined || firstAttempts[cardIndex] === false)) {
                     firstAttempts[cardIndex] = true;
-                    update(this.bktParams[kc], isCorrect);
+                    update(this.bktParams[kc], bktIsCorrect);
                 }
             }
+        }
+
+        if (helpPending) {
+            this.setState((prev) => {
+                const next = { ...prev.helpPenaltyPendingByStep };
+                delete next[cardIndex];
+                return { helpPenaltyPendingByStep: next };
+            });
         }
 
         if (!this.context.debug) {
@@ -559,9 +773,6 @@ class Problem extends React.Component {
             const numAttempted = Object.values(nextStepStates).filter(
                 (stepState) => stepState != null
             ).length;
-            // console.log("num attempted: ", numAttempted);
-            // console.log("num steps: ", numSteps);
-            // console.log("step states: ", Object.values(nextStepStates));
             if (isCorrect && cardIndex + 1 < numSteps) {
                 if (this.props.autoScroll) {
                     scroller.scrollTo((cardIndex + 1).toString(), {
@@ -660,6 +871,7 @@ class Problem extends React.Component {
         this.setState({
             stepStates: {},
             firstAttempts: {},
+            helpPenaltyPendingByStep: {},
             problemFinished: false,
             feedback: "",
             feedbackSubmitted: false,
@@ -1028,7 +1240,7 @@ class Problem extends React.Component {
             keepMounted
             onClose={this.handleMobileHintClose}
             title="Hints"
-            badge="Affects your mastery score"
+            badge={getHelpPenaltyBadgeText(this.helpPenaltyMode, "hint")}
         >
             <div ref={this.hintPortalRef} />
         </MobileBottomSheet>
@@ -1039,10 +1251,14 @@ class Problem extends React.Component {
             isHintPortalOpen,
             hasHintBeenOpened,
             isHintHovering,
+            hideHintPromoDueToOverlap,
         } = this.state;
-        const showHintPromoBubble =
+        // Eligible under existing rules; fully collapsed when this side is overlap-suppressed.
+        const hintPromoEligible =
             !isHintPortalOpen && (!hasHintBeenOpened || isHintHovering);
-        const showHintCardChrome = isHintPortalOpen || showHintPromoBubble;
+        const hintPromoVisible =
+            hintPromoEligible && !hideHintPromoDueToOverlap;
+        const showHintCardChrome = isHintPortalOpen || hintPromoVisible;
 
         const hintThemePrimaryDark = "#3f7091";
         const hintThemeSurface = "#eef4fa";
@@ -1095,7 +1311,7 @@ class Problem extends React.Component {
             border: showHintCardChrome ? `1px solid #4c7d9f` : "none",
             padding: isHintPortalOpen
                 ? "8px 10px"
-                : showHintPromoBubble
+                : hintPromoVisible
                     ? "14px 10px 6px"
                     : 0,
             borderRadius: 8,
@@ -1159,12 +1375,20 @@ class Problem extends React.Component {
                         onBlur={this.handleHintHoverEnd}
                     >
                         <div style={cardStyle}>
-                            {(isHintPortalOpen || showHintPromoBubble) && (
-                                <p style={{ margin: 0, fontWeight: 700, fontSize: 15, lineHeight: 1.2, color: hintThemePrimaryDark }}>
+                            {(isHintPortalOpen || hintPromoVisible) && (
+                                <p
+                                    style={{
+                                        margin: 0,
+                                        fontWeight: 700,
+                                        fontSize: 15,
+                                        lineHeight: 1.2,
+                                        color: hintThemePrimaryDark,
+                                    }}
+                                >
                                     Hints
                                 </p>
                             )}
-                            {showHintPromoBubble && (
+                            {hintPromoVisible && (
                                 <>
                                     <p style={{ margin: "2px 0 0", fontSize: 12, lineHeight: 1.3, color: "#5c6b7a", whiteSpace: "nowrap" }}>
                                         Pre-written hints to help you with the problem.
@@ -1183,7 +1407,7 @@ class Problem extends React.Component {
                                             lineHeight: 1.2,
                                         }}
                                     >
-                                        Affects your mastery score
+                                        {getHelpPenaltyBadgeText(this.helpPenaltyMode, "hint")}
                                     </span>
                                 </>
                             )}
@@ -1271,6 +1495,8 @@ class Problem extends React.Component {
                     lessonMasteryMap={this.props.lessonMasteryMap}
                     hintUsageByStep={this.state.hintUsageByStep}
                     condition="standalone_gpt_only"
+                    applyHelpPenalty={this.applyHelpPenalty}
+                    helpPenaltyMode={this.helpPenaltyMode}
                     onExit={() => this.setState({ standaloneExited: true })}
                 />
             );
@@ -1469,9 +1695,11 @@ class Problem extends React.Component {
                                                     step={step}
                                                     index={idx}
                                                     answerMade={this.answerMade}
+                                                    applyHelpPenalty={this.applyHelpPenalty}
                                                     seed={seed}
                                                     problemVars={problem.variabilization}
                                                     lesson={problem.lesson}
+                                                    helpPenaltyMode={this.helpPenaltyMode}
                                                     courseName={problem.courseName}
                                                     getMasteryData={this.getMasteryData}
                                                     problemTitle={problem.title}
@@ -1622,6 +1850,8 @@ class Problem extends React.Component {
                                 onPreviousHint={this.handleAvatarHintPrevious}
                                 onNextHint={this.handleAvatarHintNext}
                                 onHideHint={this.handleAvatarHintHide}
+                                applyHelpPenalty={this.applyHelpPenalty}
+                                helpPenaltyMode={this.helpPenaltyMode}
                             />
                         ) : (
                         this.renderStandardHintPanel()
@@ -1656,6 +1886,8 @@ class Problem extends React.Component {
                                 onPreviousHint={this.handleAvatarHintPrevious}
                                 onNextHint={this.handleAvatarHintNext}
                                 onHideHint={this.handleAvatarHintHide}
+                                applyHelpPenalty={this.applyHelpPenalty}
+                                helpPenaltyMode={this.helpPenaltyMode}
                             />
                     </Grid>
                     )}
@@ -1797,6 +2029,11 @@ class Problem extends React.Component {
                         mathKeyboardOpen={this.state.isMathKeyboardVisible}
                         closeRequest={this.state.agentCloseRequest}
                         onChatVisibilityChange={this.handleChatVisibilityChange}
+                        hidePromoDueToOverlap={this.state.hideAgentPromoDueToOverlap}
+                        onPromoLayoutChange={this._scheduleDesktopFabPromoOverlapCheck}
+                        onPromoEligibilityChange={this.handleAgentPromoEligibilityChange}
+                        applyHelpPenalty={this.applyHelpPenalty}
+                        helpPenaltyMode={this.helpPenaltyMode}
                         condition="window"
                     />
                 )}

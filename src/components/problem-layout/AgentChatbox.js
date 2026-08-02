@@ -30,6 +30,13 @@ import {
     DESKTOP_TOOLTIP_RIGHT,
     PAGE_BG,
 } from './mobileFabStyles';
+import {
+    getHelpPenaltyBadgeText,
+    getHelpPenaltyMode,
+    shouldJudgeAgentAnswerReveal,
+    shouldPenalizeAgentOnOpen,
+} from '../../util/helpPenaltyMode.js';
+import { chooseVariables, variabilize } from '../../platform-logic/variabilize.js';
 
 const CHAT_THEME = {
     primary: '#4c7d9f',
@@ -429,9 +436,108 @@ class AgentChatbox extends React.Component {
             }
         }
         this.fetchSuggestedQuestionsIfNeeded();
+        this._notifyPromoEligibility();
+        this.props.onPromoLayoutChange?.();
     }
 
+    _getHelpPenaltyMode = () =>
+        this.props.helpPenaltyMode || getHelpPenaltyMode(this.props.lesson);
+
+    _maybePenalizeAgentOnFirstQuery = () => {
+        if (!shouldPenalizeAgentOnOpen({ mode: this._getHelpPenaltyMode() })) {
+            return;
+        }
+        this.props.applyHelpPenalty?.();
+    };
+
+    _resolveStepAnswers = (step) => {
+        if (!step) return [];
+        const chosenVars = chooseVariables(
+            Object.assign(
+                {},
+                this.props.problemVars || {},
+                this.props.problem?.variabilization || {},
+                step.variabilization || {}
+            ),
+            this.props.seed
+        );
+        const raw = step.stepAnswer;
+        const list = Array.isArray(raw) ? raw : raw != null && raw !== '' ? [raw] : [];
+        return list
+            .map((ans) => String(variabilize(ans, chosenVars) ?? ans))
+            .filter(Boolean);
+    };
+
+    _maybeJudgeAgentAnswerReveal = async (assistantText) => {
+        if (!shouldJudgeAgentAnswerReveal({ mode: this._getHelpPenaltyMode() })) {
+            return;
+        }
+        const text = (assistantText || '').trim();
+        if (!text) return;
+
+        const active = this.props.getActiveStepData?.();
+        const step = active?.step;
+        const stepIndex = active?.stepIndex;
+        const answers = this._resolveStepAnswers(step);
+        if (!answers.length) return;
+
+        try {
+            const result = await agentHelper.judgeAnswerReveal({
+                assistantMessage: text,
+                stepAnswers: answers,
+                problemContext: this.getProblemContext(),
+                stepId: step?.id || null,
+                chatPrompt: this.props.lesson?.chat_prompt || 'PROMPTv2.txt',
+                chatDisplayMode: this.props.lesson?.chat_display_mode ?? 'Off',
+                helpPenaltyMode: this._getHelpPenaltyMode(),
+                lessonId: this.props.lesson?.id || null,
+                condition: this.props.condition,
+            });
+            if (result?.answerRevealed) {
+                this.props.applyHelpPenalty?.(stepIndex);
+            }
+        } catch (err) {
+            console.warn('Answer-reveal judge failed; skipping help penalty', err);
+        }
+    };
+
+    _getPromoAllowed = () => {
+        const isMobile = this.props.responsive?.isMobile ?? false;
+        return (
+            this.props.showLauncherBubble !== false &&
+            !this.props.hintsOpen &&
+            !isMobile
+        );
+    };
+
+    _getPromoEligible = () => {
+        if (!this._getPromoAllowed()) return false;
+        return (
+            !this.state.hasChatBeenOpened || this.state.isLauncherHovered
+        );
+    };
+
+    _notifyPromoEligibility = () => {
+        const meta = {
+            allowed: this._getPromoAllowed(),
+            hasBeenOpened: Boolean(this.state.hasChatBeenOpened),
+            isHovering: Boolean(this.state.isLauncherHovered),
+        };
+        const prev = this._lastReportedPromoMeta;
+        if (
+            prev &&
+            prev.allowed === meta.allowed &&
+            prev.hasBeenOpened === meta.hasBeenOpened &&
+            prev.isHovering === meta.isHovering
+        ) {
+            return;
+        }
+        this._lastReportedPromoMeta = meta;
+        this.props.onPromoEligibilityChange?.(meta);
+    };
+
     componentDidUpdate(prevProps, prevState) {
+        this._notifyPromoEligibility();
         const currentLessonID = this.props.lesson?.id;
         const prevLessonID = prevProps.lesson?.id;
 
@@ -551,6 +657,7 @@ class AgentChatbox extends React.Component {
                 },
                 this.props.lesson?.chat_prompt || 'PROMPTv2.txt',
                 this.props.lesson?.chat_display_mode ?? 'Off',
+                this._getHelpPenaltyMode(),
             );
 
             this.setState({
@@ -566,11 +673,15 @@ class AgentChatbox extends React.Component {
     };
 
     handleLauncherPointerIn = () => {
-        this.setState({ isLauncherHovered: true });
+        this.setState({ isLauncherHovered: true }, () => {
+            this.props.onPromoLayoutChange?.();
+        });
     };
 
     handleLauncherPointerOut = () => {
-        this.setState({ isLauncherHovered: false });
+        this.setState({ isLauncherHovered: false }, () => {
+            this.props.onPromoLayoutChange?.();
+        });
     };
 
     handleLauncherKeyDown = (event) => {
@@ -585,12 +696,13 @@ class AgentChatbox extends React.Component {
         const isMobile = responsive?.isMobile ?? false;
         const mode = this.props.mode || 'floating';
         const launcherPlacement = this.props.closedLauncherPlacement || mode;
-        const { hasChatBeenOpened, isLauncherHovered } = this.state;
         const hintsOpen = this.props.hintsOpen;
-        const showBubble = this.props.showLauncherBubble !== false &&
-            !hintsOpen &&
-            !isMobile &&
-            (!hasChatBeenOpened || isLauncherHovered);
+        const hidePromoDueToOverlap = Boolean(this.props.hidePromoDueToOverlap);
+        const promoEligible = this._getPromoEligible();
+        const promoVisible = promoEligible && !hidePromoDueToOverlap;
+        const bubbleWrapClass = promoVisible
+            ? classes.launcherBubbleWrapVisible
+            : classes.launcherBubbleWrapHidden;
 
         if (isMobile && launcherPlacement === 'floating') {
             if (hintsOpen || this.props.drawerOpen || this.props.mathKeyboardOpen) {
@@ -626,12 +738,8 @@ class AgentChatbox extends React.Component {
             >
                 <div className={classes.launcherStack}>
                     <div
-                        className={`${classes.launcherBubbleWrap} ${
-                            showBubble
-                                ? classes.launcherBubbleWrapVisible
-                                : classes.launcherBubbleWrapHidden
-                        }`}
-                        aria-hidden={!showBubble}
+                        className={`${classes.launcherBubbleWrap} ${bubbleWrapClass}`}
+                        aria-hidden={!promoVisible}
                     >
                         <ChatBubble
                             className={classes.launcherBubbleShape}
@@ -643,8 +751,8 @@ class AgentChatbox extends React.Component {
                             <p className={classes.launcherDescription}>
                                 Ask me any question about this problem or topic.
                             </p>
-                            <span className={classes.launcherPill}>
-                                Won&apos;t affect your mastery score
+            <span className={classes.launcherPill}>
+                                {getHelpPenaltyBadgeText(this._getHelpPenaltyMode(), 'agent')}
                             </span>
                         </div>
                     </div>
@@ -692,6 +800,7 @@ class AgentChatbox extends React.Component {
             if (this.props.onChatVisibilityChange) {
                 this.props.onChatVisibilityChange(nextVisible);
             }
+            this.props.onPromoLayoutChange?.();
         });
     };
 
@@ -708,39 +817,23 @@ class AgentChatbox extends React.Component {
         const sid = this.getSessionId();
         const lesson = this.props.lesson;
         if (fb?.logChatSession && sid && agentHelper.needsSessionMetaWrite()) {
-            const chatDisplayMode = lesson?.chat_display_mode || 'Off';
-            fb.logChatSession(sid, {
-                sessionId: sid,
-                oats_user_id: this.context?.userID || null,
-                lms_user_id: this.context?.user?.user_id || null,
-                course_id: this.context?.user?.course_id || null,
-                course_name: this.context?.user?.course_name || lesson?.courseName || null,
-                course_code: this.context?.user?.course_code || null,
-                semester: fb.addMetaData?.({})?.semester || null,
-                treatment: this.context?.getTreatment?.() ?? null,
-                siteVersion: fb.siteVersion || null,
-                siteCommitHash: process.env.REACT_APP_COMMIT_HASH || null,
-                lessonId: lesson?.id || null,
-                chatDisplayMode,
-                condition: chatDisplayMode === 'Window' ? 'window'
-                    : chatDisplayMode === 'Avatar' ? 'avatar'
-                    : chatDisplayMode === 'Full' ? 'full'
-                    : 'off',
-                chatPrompt: lesson?.chat_prompt || 'PROMPTv2.txt',
-                startedAt: Date.now(),
-                lastActivityAt: Date.now(),
-                greetingShown: false,
-                firstActionType: null,
-                firstActionTimestampMs: null,
-                chatOpenCount: 0,
-                chatCloseCount: 0,
-                hintOpenCount: 0,
-                hintCloseCount: 0,
-                messageCountUser: 0,
-                messageCountAssistant: 0,
-                errorCount: 0,
-                clearedCount: 0,
-            });
+            fb.logChatSession(
+                sid,
+                agentHelper.buildChatSessionCreatePayload({
+                    sessionId: sid,
+                    lesson,
+                    oats_user_id: this.context?.userID || null,
+                    lms_user_id: this.context?.user?.user_id || null,
+                    course_id: this.context?.user?.course_id || null,
+                    course_name: this.context?.user?.course_name || lesson?.courseName || null,
+                    course_code: this.context?.user?.course_code || null,
+                    semester: fb.addMetaData?.({})?.semester || null,
+                    treatment: this.context?.getTreatment?.() ?? null,
+                    siteVersion: fb.siteVersion || null,
+                    siteCommitHash: process.env.REACT_APP_COMMIT_HASH || null,
+                    helpPenaltyMode: this._getHelpPenaltyMode(),
+                })
+            );
             agentHelper.markSessionMetaWritten();
         }
         this.setState({
@@ -815,6 +908,9 @@ class AgentChatbox extends React.Component {
         const messageId = Date.now();
         const requestId = this.activeRequestId + 1;
         this.activeRequestId = requestId;
+
+        // OnOpen: penalize only when the student actually sends a query.
+        this._maybePenalizeAgentOnFirstQuery();
 
         // Snapshot prior turns before we append this turn's placeholders.
         // This is a copy for the LLM payload — UI state is updated separately below.
@@ -891,6 +987,7 @@ class AgentChatbox extends React.Component {
 
         const chatPrompt = this.props.lesson?.chat_prompt || 'PROMPTv2.txt';
         const chatDisplayMode = this.props.lesson?.chat_display_mode ?? 'Off';
+        const helpPenaltyMode = this._getHelpPenaltyMode();
 
         const assistantMessageId = `assistant-${messageId}`;
         const turnStart = Date.now();
@@ -904,6 +1001,7 @@ class AgentChatbox extends React.Component {
                 extracted,
                 chatPrompt,
                 chatDisplayMode,
+                helpPenaltyMode,
                 {
                     onTurnStarted: (turnId) => {
                         const fb = this.getFirebase();
@@ -916,6 +1014,17 @@ class AgentChatbox extends React.Component {
                                 imagesCount: images.length,
                                 problemId: turnProblemId,
                                 stepId: turnStepId,
+                                // Same hints that were sent in studentState for the prompt.
+                                hintStepId: studentState?.hintStepId || turnStepId,
+                                hintsUsed: Array.isArray(studentState?.hintsUsed)
+                                    ? studentState.hintsUsed
+                                    : [],
+                                hintsUsedCount: Array.isArray(studentState?.hintsUsed)
+                                    ? studentState.hintsUsed.length
+                                    : 0,
+                                chatPrompt,
+                                chatDisplayMode,
+                                helpPenaltyMode,
                                 timestampMs: Date.now(),
                             });
                         }
@@ -966,12 +1075,16 @@ class AgentChatbox extends React.Component {
                                 responseCharCount: resolvedResponse.length,
                                 problemId: turnProblemId,
                                 stepId: turnStepId,
+                                chatPrompt,
+                                chatDisplayMode,
+                                helpPenaltyMode,
                                 timestampMs: Date.now(),
                             });
                         }
                         if (fb?.logChatSession && sid) {
                             fb.logChatSession(sid, { messageCountAssistant: increment(1), lastActivityAt: Date.now() });
                         }
+                        this._maybeJudgeAgentAnswerReveal(resolvedResponse);
                     },
                     onError: (error) => {
                         if (requestId !== this.activeRequestId) {
@@ -1174,10 +1287,15 @@ class AgentChatbox extends React.Component {
         const stepIndex = activeStepData ? activeStepData.stepIndex : 0;
         const isCorrect = stepStates ? stepStates[stepIndex] : null;
 
-        // Derive hints used for the active step (manual hints only)
+        // Derive hints used for the active step (manual hints only).
+        // This is the same payload agent-logic formats into {hintsUsed} in the prompt.
         let hintsUsed = [];
+        let hintStepId = activeStepData?.step?.id || null;
         if (hintUsageByStep && Number.isInteger(stepIndex)) {
             const usage = hintUsageByStep[stepIndex];
+            if (usage?.stepId) {
+                hintStepId = usage.stepId;
+            }
             if (usage && Array.isArray(usage.hints)) {
                 hintsUsed = usage.hints
                     .filter(h => {
@@ -1214,6 +1332,7 @@ class AgentChatbox extends React.Component {
             attemptHistory: attemptHistory || {},
             currentLessonMastery: currentLessonMastery,
             hintsUsed,
+            hintStepId,
         };
     }
 

@@ -20,6 +20,10 @@ import ReloadIcon from './ReloadIcon';
 import TTSPlayer from "../../util/ttsPlayer.js";
 import TTSButtons from "./TTSButtons.js";
 import { textToReadable } from "../../util/latexToReadable.js";
+import {
+    shouldPenalizeSubHintPanelOpen,
+    shouldPenalizeSubHintUnlock,
+} from "../../util/helpPenaltyMode.js";
 
 class HintSystem extends React.Component {
     static contextType = ThemeContext;
@@ -144,38 +148,47 @@ class HintSystem extends React.Component {
         return !isSatisfied;
     };
 
-    
-
     toggleSubHints = (event, i) => {
+        const opening = !this.state.showSubHints[i];
         this.setState(
             (prevState) => {
-                var displayHints = prevState.showSubHints;
-                displayHints[i] = !displayHints[i];
-                return {
-                    showSubHints: displayHints,
-                };
+                const displayHints = [...prevState.showSubHints];
+                displayHints[i] = opening;
+                return { showSubHints: displayHints };
             },
             () => {
-                this.props.answerMade(
-                    this.index,
-                    this?.step?.knowledgeComponents,
-                    false
-                );
+                if (
+                    opening &&
+                    shouldPenalizeSubHintPanelOpen({
+                        mode: this.props.helpPenaltyMode,
+                    })
+                ) {
+                    this.props.applyHelpPenalty?.(this.props.index);
+                }
             }
         );
     };
 
     unlockSubHint = (hintNum, i, isScaffold) => {
+        const subHint = this.props.hints?.[i]?.subHints?.[hintNum];
         this.setState(
             (prevState) => {
                 prevState.subHintsFinished[i][hintNum] = !isScaffold ? 1 : 0.5;
                 return { subHintsFinished: prevState.subHintsFinished };
             },
             () => {
+                if (
+                    shouldPenalizeSubHintUnlock({
+                        mode: this.props.helpPenaltyMode,
+                        hintType: subHint?.type,
+                    })
+                ) {
+                    this.props.applyHelpPenalty?.(this.props.index);
+                }
                 this.context.firebase.log(
                     null,
                     this.props.problemID,
-                    this.step,
+                    this.props.step,
                     null,
                     null,
                     this.state.subHintsFinished,
@@ -198,7 +211,7 @@ class HintSystem extends React.Component {
         this.context.firebase.hintLog(
             parsed,
             this.props.problemID,
-            this.step,
+            this.props.step,
             hint,
             isCorrect,
             this.state.hintsFinished,
@@ -325,9 +338,11 @@ class HintSystem extends React.Component {
                                 ) : (
                                     ""
                                 )}
-                                {(showSubHints[i] ||
-                                    (use_expanded_view && debug)) &&
-                                hint.subHints !== undefined ? (
+                                {(hint.subHints !== undefined &&
+                                    hint.subHints.length > 0 &&
+                                    (hint.type === "scaffold" ||
+                                        showSubHints[i] ||
+                                        (use_expanded_view && debug))) ? (
                                     <div className="SubHints">
                                         <Spacer />
                                         <ErrorBoundary

@@ -4,8 +4,10 @@ import AWS from "aws-sdk";
 import {
     buildAgentPrompt,
     buildSuggestedQuestionsPrompt,
+    buildAnswerRevealJudgePrompt,
     generateAgentResponse,
     generateSuggestedQuestions,
+    judgeAnswerReveal,
 } from "./agent-logic.mjs";
 import crypto from "crypto";
 
@@ -82,6 +84,10 @@ export const handler = awslambda.streamifyResponse(
             const lessonId = requestBody.lessonId ?? extracted?.lessonId;
             const chatPrompt = requestBody.chatPrompt ?? problemContext?.chatPrompt;
             const chatDisplayMode = requestBody.chatDisplayMode ?? extracted?.chatDisplayMode;
+            const helpPenaltyMode =
+                requestBody.helpPenaltyMode ??
+                extracted?.helpPenaltyMode ??
+                problemContext?.helpPenaltyMode;
 
             if (requestBody?.requestType === "suggestedQuestions") {
                 const metadata = {
@@ -105,6 +111,7 @@ export const handler = awslambda.streamifyResponse(
                     lessonId,
                     chatPrompt,
                     chatDisplayMode,
+                    helpPenaltyMode,
                     problemId: problemContext?.problemID,
                     stepId: problemContext?.currentStep?.id,
                     courseName: problemContext?.courseName,
@@ -128,6 +135,7 @@ export const handler = awslambda.streamifyResponse(
                     lessonId,
                     chatPrompt,
                     chatDisplayMode,
+                    helpPenaltyMode,
                     problemId: problemContext?.problemID,
                     stepId: problemContext?.currentStep?.id,
                     courseName: problemContext?.courseName,
@@ -136,6 +144,81 @@ export const handler = awslambda.streamifyResponse(
                 httpResponseStream.write(JSON.stringify({
                     type: "suggestions",
                     questions,
+                    timestamp: nowMs(),
+                }) + "\n");
+                httpResponseStream.end();
+                return;
+            }
+
+            if (requestBody?.requestType === "judgeAnswerReveal") {
+                const metadata = {
+                    statusCode: 200,
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Access-Control-Allow-Origin": "*",
+                        "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
+                        "Access-Control-Allow-Headers": "Origin,Content-Type,Authorization",
+                    },
+                };
+                httpResponseStream = awslambda.HttpResponseStream.from(responseStream, metadata);
+
+                const startedAt = nowMs();
+                const judgeModel =
+                    process.env.ANSWER_REVEAL_JUDGE_MODEL ||
+                    process.env.SUGGESTIONS_MODEL ||
+                    "gpt-4o-mini";
+                const assistantMessage =
+                    typeof requestBody.assistantMessage === "string"
+                        ? requestBody.assistantMessage
+                        : "";
+                const stepAnswers = Array.isArray(requestBody.stepAnswers)
+                    ? requestBody.stepAnswers
+                    : [];
+
+                logEvent({
+                    eventType: "answer_reveal_judge_started",
+                    sessionId,
+                    model: judgeModel,
+                    condition,
+                    lessonId,
+                    chatPrompt,
+                    chatDisplayMode,
+                    helpPenaltyMode,
+                    problemId: problemContext?.problemID,
+                    stepId: requestBody.stepId || problemContext?.currentStep?.id,
+                    courseName: problemContext?.courseName,
+                });
+
+                const judgePrompt = buildAnswerRevealJudgePrompt({
+                    assistantMessage,
+                    stepAnswers,
+                    problemContext,
+                });
+                const judgment = await judgeAnswerReveal(openai, judgePrompt, {
+                    model: judgeModel,
+                });
+
+                logEvent({
+                    eventType: "answer_reveal_judge_completed",
+                    sessionId,
+                    model: judgeModel,
+                    latencyMs: nowMs() - startedAt,
+                    answerRevealed: judgment.answerRevealed,
+                    reason: judgment.reason,
+                    condition,
+                    lessonId,
+                    chatPrompt,
+                    chatDisplayMode,
+                    helpPenaltyMode,
+                    problemId: problemContext?.problemID,
+                    stepId: requestBody.stepId || problemContext?.currentStep?.id,
+                    courseName: problemContext?.courseName,
+                });
+
+                httpResponseStream.write(JSON.stringify({
+                    type: "judgeAnswerReveal",
+                    answerRevealed: judgment.answerRevealed,
+                    reason: judgment.reason,
                     timestamp: nowMs(),
                 }) + "\n");
                 httpResponseStream.end();
@@ -215,6 +298,8 @@ export const handler = awslambda.streamifyResponse(
                     turnId,
                     promptHash,
                     chatPrompt,
+                    chatDisplayMode,
+                    helpPenaltyMode,
                     historyMessageCount: fullConversationHistory.length,
                     llmMessageCount: messagesForLog.length,
                     // Exact roles/order OpenAI sees: system, then prior turns, then latest user.
@@ -223,6 +308,15 @@ export const handler = awslambda.streamifyResponse(
                     prompt: promptText,
                 });
             }
+
+            // Same hint payload that agent-logic formats into {hintsUsed} in the system prompt.
+            const hintsUsed = Array.isArray(studentState?.hintsUsed)
+                ? studentState.hintsUsed
+                : [];
+            const hintStepId =
+                studentState?.hintStepId ||
+                problemContext?.currentStep?.id ||
+                null;
 
             logEvent({
                 eventType: "turn_started",
@@ -237,10 +331,14 @@ export const handler = awslambda.streamifyResponse(
                 lessonId,
                 chatPrompt,
                 chatDisplayMode,
+                helpPenaltyMode,
                 problemId: problemContext?.problemID,
                 stepId: problemContext?.currentStep?.id,
                 courseName: problemContext?.courseName,
                 userMessagePreview: String(lastPreview || "").slice(0, 200),
+                hintStepId,
+                hintsUsedCount: hintsUsed.length,
+                hintsUsed,
             });
 
             const response = await generateAgentResponse(openai, agentPrompt, httpResponseStream, {
@@ -306,9 +404,13 @@ export const handler = awslambda.streamifyResponse(
                 lessonId,
                 chatPrompt,
                 chatDisplayMode,
+                helpPenaltyMode,
                 problemId: problemContext?.problemID,
                 stepId: problemContext?.currentStep?.id,
                 courseName: problemContext?.courseName,
+                hintStepId,
+                hintsUsedCount: hintsUsed.length,
+                hintsUsed,
             });
 
         } catch (error) {
@@ -318,7 +420,9 @@ export const handler = awslambda.streamifyResponse(
                 message: error?.message,
                 stack: process.env.LOG_ERROR_STACK === "true" ? String(error?.stack || "") : undefined,
                 sessionId: requestBody?.sessionId,
+                chatPrompt: requestBody?.chatPrompt,
                 chatDisplayMode: requestBody?.chatDisplayMode,
+                helpPenaltyMode: requestBody?.helpPenaltyMode,
                 lessonId: requestBody?.lessonId ?? requestBody?.extracted?.lessonId,
                 problemId: requestBody?.problemContext?.problemID,
                 stepId: requestBody?.problemContext?.currentStep?.id,

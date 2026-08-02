@@ -187,30 +187,70 @@ export function buildAgentPrompt({ userMessage, problemContext, studentState, co
         .replace('{skillMastery}', skillMasteryText)
         .replace('{userMessage}', safeUserMessage);
 
-    // Build message array with conversation history
+    // Build message array with conversation history.
+    // Client history is text-only, so problem figures must be re-sent each turn for
+    // vision — but NOT glued to the student's utterance (that triggers "thanks for
+    // sharing"). Send figures as a separate platform-context message instead.
     const messages = [
         { role: "system", content: systemPrompt }
     ];
 
-    // Add conversation history if it exists
+    const images = Array.isArray(extracted?.images) ? extracted.images : [];
+    const visionImages = images.filter(isVisionSafeImageDataUrl);
+    if (visionImages.length > 0) {
+        const figureParts = [
+            {
+                type: "text",
+                text:
+                    "OATutor platform problem figure(s) for this step. " +
+                    "These are tutoring-system context, NOT uploaded or shared by the student. " +
+                    "Use them silently as problem reference. " +
+                    "Never thank the student for sharing a table/figure, and do not acknowledge receiving an image.",
+            },
+        ];
+        for (const img of visionImages) {
+            figureParts.push({
+                type: "image_url",
+                image_url: { url: img, detail: "auto" },
+            });
+        }
+        messages.push({ role: "user", content: figureParts });
+        messages.push({
+            role: "assistant",
+            content:
+                "Understood — I'll treat those as platform problem figures already on the page, not as something the student shared.",
+        });
+    }
+
     if (conversationHistory && conversationHistory.length > 0) {
         messages.push(...conversationHistory);
     }
 
-    // Build the last user message.
-    // If the problem has figures (sent as base64 data URLs from the browser), attach them
-    // as multimodal image_url parts so the vision model can see them.
-    const images = Array.isArray(extracted?.images) ? extracted.images : [];
-    const visionImages = images.filter(isVisionSafeImageDataUrl);
-    if (visionImages.length > 0) {
-        const parts = [{ type: "text", text: safeUserMessage }];
-        for (const img of visionImages) {
-            parts.push({ type: "image_url", image_url: { url: img, detail: "auto" } });
-        }
-        messages.push({ role: "user", content: parts });
-    } else {
-        messages.push({ role: "user", content: safeUserMessage });
+    // Sticky current problem/step reminder (LLM payload only — not stored in UI history).
+    // Puts ground truth in the recency window so chat history doesn't bury it.
+    // Include problem body: many steps only have a short label; constraints live in the statement.
+    const problemTitle = problemContext?.problemTitle || 'Unknown problem';
+    const problemBody = (problemContext?.problemBody || '').toString().trim();
+    const stepTitle = problemContext?.currentStep?.title || 'Unknown step';
+    const stepBody = (problemContext?.currentStep?.body || '').toString().trim();
+    const stickyLines = [
+        '[Platform] Current problem and step for this turn (authoritative; if the student contradicts this, gently correct using this text):',
+        `Problem: ${problemTitle}`,
+    ];
+    if (problemBody) {
+        stickyLines.push(`Problem statement: ${problemBody}`);
     }
+    stickyLines.push(`Step: ${stepTitle}`);
+    if (stepBody) {
+        stickyLines.push(`Step details: ${stepBody}`);
+    }
+    messages.push({ role: 'user', content: stickyLines.join('\n') });
+    messages.push({
+        role: 'assistant',
+        content: 'Understood — I will treat that problem/step text as the source of truth for this turn.',
+    });
+
+    messages.push({ role: "user", content: safeUserMessage });
 
     return messages;
 }
@@ -315,6 +355,78 @@ export async function generateSuggestedQuestions(openai, prompt, config = {}) {
         parsed = {};
     }
     return sanitizeSuggestedQuestions(parsed.questions);
+}
+
+/**
+ * Build a judge prompt: did the tutor message reveal the step answer?
+ * Intentionally semantic (not substring match) to avoid false positives
+ * when a number appears in both context and the key.
+ */
+export function buildAnswerRevealJudgePrompt({
+    assistantMessage,
+    stepAnswers = [],
+    problemContext = {},
+} = {}) {
+    const stepTitle = problemContext?.currentStep?.title || '';
+    const stepBody = problemContext?.currentStep?.body || '';
+    const answersList = (Array.isArray(stepAnswers) ? stepAnswers : [])
+        .map((a) => String(a))
+        .filter(Boolean)
+        .join(' | ');
+
+    return [
+        {
+            role: 'system',
+            content:
+                'You are a strict grader for an intelligent tutoring system. ' +
+                'Decide whether a tutor assistant message reveals or gives away the step answer ' +
+                'to the student. Do NOT treat mere mention of a number/token that happens to equal ' +
+                'the answer as a reveal if it is used in a different role (e.g. a given quantity in ' +
+                'the problem statement, a counterexample, or unrelated arithmetic). ' +
+                'Answer YES only if a student could take the answer from the message with little ' +
+                'or no further work (direct statement, filled-in final value, or clearly labeled answer). ' +
+                'Respond with JSON only: {"answerRevealed": boolean, "reason": "short explanation"}.',
+        },
+        {
+            role: 'user',
+            content:
+                `Step title: ${stepTitle}\n` +
+                `Step body: ${stepBody}\n` +
+                `Accepted answer(s) for this step: ${answersList || '(none)'}\n\n` +
+                `Tutor assistant message:\n"""\n${assistantMessage || ''}\n"""\n\n` +
+                'Did this message reveal the step answer?',
+        },
+    ];
+}
+
+export async function judgeAnswerReveal(openai, prompt, config = {}) {
+    const {
+        model = 'gpt-4o-mini',
+        temperature = 0,
+        max_tokens = 120,
+    } = config;
+
+    const completion = await openai.chat.completions.create({
+        model,
+        messages: prompt,
+        stream: false,
+        temperature,
+        max_tokens,
+        response_format: { type: 'json_object' },
+    });
+
+    const content = completion.choices?.[0]?.message?.content || '{}';
+    let parsed = {};
+    try {
+        parsed = JSON.parse(content);
+    } catch (_error) {
+        parsed = {};
+    }
+
+    return {
+        answerRevealed: Boolean(parsed.answerRevealed),
+        reason: typeof parsed.reason === 'string' ? parsed.reason : '',
+    };
 }
 
 export async function generateAgentResponse(openai, prompt, responseStream = null, config = {}) {
