@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a977a7fds100-fa18-final-Q13f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Components",
+        "text": "The expected squared error can be broken down into three main components: variance, bias squared, and irreducible error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q13f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q13f-h1"
+        ],
+        "title": "Irreducible Error",
+        "text": "The term $${\\sigma}^2$$ represents the irreducible error, which is the variance of the noise in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q13f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q13f-h2"
+        ],
+        "title": "Fixed or Variable?",
+        "text": "Consider whether the irreducible error, represented by $${\\sigma}^2$$, changes with different models or datasets.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q13f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q13f-h3"
+        ],
+        "title": "Is $${\\sigma}^2$$ fixed?",
+        "text": "Determine if $${\\sigma}^2$$ is a fixed value or if it varies with different models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a5dd512ds100-su20-final-Q6e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Code",
+        "text": "The code `consoles[consoles['generation'] $$==$$ 7].shape[0]` is used to filter the DataFrame for consoles of a specific generation. What generation is being filtered here?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-final-Q6e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su20-final-Q6e-h1"
+        ],
+        "title": "Checking the Condition",
+        "text": "The condition `consoles['generation'] $$==$$ 7` is checking for consoles that belong to the 7th generation. Is this the correct generation we are interested in?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-final-Q6e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su20-final-Q6e-h2"
+        ],
+        "title": "Correct Generation",
+        "text": "The problem asks for sixth generation consoles. What should the condition be to filter for sixth generation consoles?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-final-Q6e-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su20-final-Q6e-h3"
+        ],
+        "title": "Filtering by Year",
+        "text": "The code does not include a condition to filter consoles released before the year $$2000$$. How can you add this condition?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-final-Q6e-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "consoles[(consoles['generation'] $$==$$ 6) & (consoles['year'] < 2000)].shape[0]"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su20-final-Q6e-h4"
+        ],
+        "title": "Correcting the Code",
+        "text": "Modify the code to correctly find the names of all sixth generation consoles released before the year $$2000$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

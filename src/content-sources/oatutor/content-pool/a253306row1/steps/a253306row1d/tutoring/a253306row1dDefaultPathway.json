@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a253306row1d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Orthogonality",
+        "text": "In linear algebra, two vectors are orthogonal if their dot product is zero. This means they are perpendicular to each other in the vector space.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row1d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row1d-h1"
+        ],
+        "title": "Intercept Vector",
+        "text": "The intercept vector is a vector of ones, denoted as $$1$$, which is often used in regression models to account for the bias term.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row1d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row1d-h2"
+        ],
+        "title": "Residuals in OLS",
+        "text": "The residuals in an OLS model are the differences between the true outcomes Y and the predicted outcomes \\hat{Y}.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row1d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a253306row1d-h3"
+        ],
+        "title": "Dot Product of Intercept and Residuals",
+        "text": "Calculate the dot product of the intercept vector $$1$$ and the residuals Y-\\hat{Y}. What should this value be for them to be orthogonal?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row1d-h5",
+        "type": "hint",
+        "dependencies": [
+            "a253306row1d-h4"
+        ],
+        "title": "Conclusion",
+        "text": "If the dot product of two vectors is zero, they are orthogonal. Therefore, the intercept vector $$1$$ is orthogonal to the residuals Y-\\hat{Y}.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

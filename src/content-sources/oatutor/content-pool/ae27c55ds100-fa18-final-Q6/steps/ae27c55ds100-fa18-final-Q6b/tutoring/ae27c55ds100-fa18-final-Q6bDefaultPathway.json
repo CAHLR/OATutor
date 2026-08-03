@@ -1,0 +1,77 @@
+[
+    {
+        "id": "ae27c55ds100-fa18-final-Q6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Sampling Distribution",
+        "text": "To plot the sampling distribution of the sample mean, consider what the sample mean represents in this context. What values can the sample mean take when drawing from the box?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa18-final-Q6b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa18-final-Q6b-h1"
+        ],
+        "title": "Possible Values of the Sample Mean",
+        "text": "Since you are drawing a sample of size $$3$$ with replacement, the sample mean can be calculated as the average of the values drawn. What are the possible values for the sample mean?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa18-final-Q6b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "0, 1, 2, 3"
+        ],
+        "dependencies": [
+            "ae27c55ds100-fa18-final-Q6b-h2"
+        ],
+        "title": "Calculating the Sample Mean",
+        "text": "If you draw three tickets, each worth either $$0$$ or $$3$$ dollars, what are the possible combinations of ticket values? Calculate the sample mean for each combination.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa18-final-Q6b-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa18-final-Q6b-h3"
+        ],
+        "title": "Plotting the Distribution",
+        "text": "Once you have the possible sample means, think about how to represent their probabilities on a plot. What should the axes represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa18-final-Q6b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The horizontal axis is the sample mean and the vertical axis is probability."
+        ],
+        "dependencies": [
+            "ae27c55ds100-fa18-final-Q6b-h4"
+        ],
+        "title": "Axes Titles for the Plot",
+        "text": "For the plot of the sampling distribution of the sample mean, what should the horizontal and vertical axes represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The horizontal axis is probability and the vertical axis is the sample mean.",
+            "The horizontal axis is the ticket value and the vertical axis is the count of tickets.",
+            "The horizontal axis is the sample mean and the vertical axis is probability.",
+            "The horizontal axis is the sample size and the vertical axis is the sample mean.",
+            "The horizontal axis is the sample mean and the vertical axis is the number of samples drawn."
+        ]
+    }
+]

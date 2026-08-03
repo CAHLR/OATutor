@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a91f150ds100-su25-final-Q2dh-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "Gradient descent is an optimization algorithm used to minimize the cost function in machine learning models. It iteratively adjusts the parameters to find the minimum value of the cost function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su25-final-Q2dh-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su25-final-Q2dh-h1"
+        ],
+        "title": "Convex vs Non-Convex Functions",
+        "text": "A convex function has a single global minimum, while a non-convex function can have multiple local minima. Gradient descent can be used on both types of functions, but it may not find the global minimum in non-convex functions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su25-final-Q2dh-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a91f150ds100-su25-final-Q2dh-h2"
+        ],
+        "title": "Gradient Descent and Convex Functions",
+        "text": "Is it true that gradient descent can find the global minimum of a convex function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a91f150ds100-su25-final-Q2dh-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a91f150ds100-su25-final-Q2dh-h3"
+        ],
+        "title": "Gradient Descent and Non-Convex Functions",
+        "text": "Can gradient descent find the global minimum of a non-convex function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a91f150ds100-su25-final-Q2dh-h5",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su25-final-Q2dh-h4"
+        ],
+        "title": "Local Minima in Non-Convex Functions",
+        "text": "In non-convex functions, gradient descent may converge to a local minimum instead of the global minimum. This is because the algorithm follows the steepest descent path, which may lead to a local minimum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

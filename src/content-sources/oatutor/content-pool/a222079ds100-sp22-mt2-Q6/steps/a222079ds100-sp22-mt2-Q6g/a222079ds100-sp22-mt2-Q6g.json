@@ -1,0 +1,19 @@
+{
+    "id": "a222079ds100-sp22-mt2-Q6g",
+    "stepAnswer": [
+        "$$0$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "blank (ii): model.coef_ index",
+    "stepBody": "Suppose we have a DataFrame $$\\texttt{lunch\\_mat}$$ with columns: person, $$\\texttt{calories\\_1d\\_ago,}$$ $$\\texttt{calories\\_2d\\_ago,}$$ calories. Jennie wants to predict the number of calories eaten for lunch today (calories) using the number of calories for the two previous days' lunches. The linear model has $$3$$ parameters $$\\theta$$ $$=$$ $$\\texttt{(theta\\_0,}$$ $$\\texttt{theta\\_1,}$$ $$\\texttt{theta\\_2),}$$ respectively corresponding to an intercept term and calories from $$1$$ and $$2$$ days ago, respectively. Complete the code below:\\n\\ndef $$\\texttt{get\\_param1(X,}$$ y):\\nmodel $$=$$ $$\\texttt{LinearRegression(fit\\_intercept}$$ $$=$$ (i))\\nmodel.fit(X, y)\\n$$\\texttt{theta1\\_estimate}$$ $$=$$ $$\\texttt{model.coef\\_[(ii)]}$$\\nreturn $$\\texttt{theta1\\_estimate}$$",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "$$0$$",
+    "choices": [
+        "$$0$$",
+        "$$1$$",
+        "$$2$$",
+        "$$-1$$",
+        "$$\\theta_1$$"
+    ]
+}

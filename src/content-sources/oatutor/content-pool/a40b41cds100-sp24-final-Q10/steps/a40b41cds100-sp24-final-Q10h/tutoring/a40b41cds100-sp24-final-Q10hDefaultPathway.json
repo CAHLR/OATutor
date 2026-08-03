@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a40b41cds100-sp24-final-Q10h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linkage Types",
+        "text": "Linkage types in agglomerative clustering determine how the distance between clusters is calculated. Common types include single, complete, and average linkage.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp24-final-Q10h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp24-final-Q10h-h1"
+        ],
+        "title": "Single Linkage",
+        "text": "Single linkage considers the shortest distance between points in different clusters. It can lead to chaining effects where clusters are elongated.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp24-final-Q10h-h3",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp24-final-Q10h-h1"
+        ],
+        "title": "Complete Linkage",
+        "text": "Complete linkage considers the longest distance between points in different clusters. It tends to create more compact clusters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp24-final-Q10h-h4",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp24-final-Q10h-h1"
+        ],
+        "title": "Average Linkage",
+        "text": "Average linkage calculates the average distance between all pairs of points in different clusters. It balances between single and complete linkage.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp24-final-Q10h-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a40b41cds100-sp24-final-Q10h-h1"
+        ],
+        "title": "Impact of Linkage Type",
+        "text": "Consider how the choice of linkage type might affect the shape and size of the clusters formed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

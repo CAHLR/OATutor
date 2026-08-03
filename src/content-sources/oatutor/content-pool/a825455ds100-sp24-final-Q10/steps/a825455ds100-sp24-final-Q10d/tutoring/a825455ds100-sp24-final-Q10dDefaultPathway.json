@@ -1,0 +1,61 @@
+[
+    {
+        "id": "a825455ds100-sp24-final-Q10d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding k-Medians",
+        "text": "In k-Medians clustering, the cluster centers are located at the median of their data points instead of the mean. This means that the center of a cluster is the middle value when the data points are sorted.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp24-final-Q10d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-sp24-final-Q10d-h1"
+        ],
+        "title": "Initial Cluster Centers",
+        "text": "The professors have initialized $$2$$ clusters centered at $$2$$ and $$7$$. Consider how the data points might be grouped around these centers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp24-final-Q10d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-sp24-final-Q10d-h2"
+        ],
+        "title": "Calculating Distances",
+        "text": "Calculate the distance of each data point from the initial cluster centers (2 and 7). Which points are closest to each center?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp24-final-Q10d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$ and $$1$$"
+        ],
+        "dependencies": [
+            "a825455ds100-sp24-final-Q10d-h3"
+        ],
+        "title": "Finding the First Merge",
+        "text": "Identify the two closest data points that will form the first cluster. Consider the distances calculated from the initial centers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$ and $$1$$",
+            "$$1$$ and $$1$$",
+            "$$1$$ and $$3$$",
+            "$$1$$, $$1$$, and $$1$$",
+            "$$3$$ and $$4$$",
+            "$$5$$ and $$6$$"
+        ]
+    }
+]

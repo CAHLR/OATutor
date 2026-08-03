@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a91f150ds100-su20-final-Q4k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean-Centering",
+        "text": "Mean-centering involves subtracting the mean of each column from the respective column values, except for the intercept column. This ensures that the mean of each column is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su20-final-Q4k-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Regularizing the Intercept",
+        "text": "Regularizing the intercept term means adding a penalty to the intercept in the ridge regression formula. This can affect the model's bias and variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su20-final-Q4k-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su20-final-Q4k-h1"
+        ],
+        "title": "Comparing Models with and without Regularized Intercept",
+        "text": "When the data is mean-centered, the intercept term does not contribute to the prediction error, as the mean of the centered data is zero. This can lead to the models being equivalent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su20-final-Q4k-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Mean-centering makes the intercept term irrelevant in terms of regularization as it does not affect the prediction error."
+        ],
+        "dependencies": [
+            "a91f150ds100-su20-final-Q4k-h3"
+        ],
+        "title": "Analyzing the Impact of Mean-Centering",
+        "text": "Consider the effect of mean-centering on the intercept term. How does this affect the regularization of the intercept?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su20-final-Q4k-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The models are always equivalent when mean-centering is applied as the intercept term does not affect the prediction error."
+        ],
+        "dependencies": [
+            "a91f150ds100-su20-final-Q4k-h4"
+        ],
+        "title": "Conclusion on Model Equivalence",
+        "text": "Given that mean-centering nullifies the effect of the intercept term, what can we conclude about the equivalence of the models?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

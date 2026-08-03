@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a5dd512ds100-fa19-final-Q5m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Function",
+        "text": "The function $$f(x)=\\frac{1}{\\pi} \\arctan\\left(x\\right)+\\frac{1}{2}$$ is a scaled inverse tangent function. It is important to understand how this function behaves compared to the logistic function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5m-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5m-h1"
+        ],
+        "title": "Behavior of the Function",
+        "text": "The function $$f(x)=\\frac{1}{\\pi} \\arctan\\left(x\\right)+\\frac{1}{2}$$ is always between $$0$$ and $$1$$, similar to the logistic function. This is because the arctan function has horizontal asymptotes at $$\\frac{-\\pi}{2}$$ and $$\\frac{\\pi}{2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5m-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5m-h2"
+        ],
+        "title": "Comparing Tail-End Behavior",
+        "text": "Both the logistic function and the scaled inverse tangent function have similar tail-end behavior, meaning they approach $$0$$ and $$1$$ as $$x$$ approaches negative and positive $$\\infty$$, respectively.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5m-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5m-h3"
+        ],
+        "title": "Confirming the Statement",
+        "text": "Given the behavior of the scaled inverse tangent function, is it true that it behaves similarly to the logistic function in terms of being between $$0$$ and 1?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

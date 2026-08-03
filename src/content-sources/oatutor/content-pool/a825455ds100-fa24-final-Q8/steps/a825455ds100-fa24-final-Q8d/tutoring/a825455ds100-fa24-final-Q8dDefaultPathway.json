@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a825455ds100-fa24-final-Q8d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding k-Means Clustering",
+        "text": "In k-Means clustering, the algorithm assigns each point to the nearest cluster center and then recalculates the cluster centers based on the mean of the points assigned to each cluster.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa24-final-Q8d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-fa24-final-Q8d-h1"
+        ],
+        "title": "Initial Cluster Centers",
+        "text": "Initially, cluster A has a center at $$(0,5)$$ and cluster B has a center at $$(6,0)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa24-final-Q8d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-fa24-final-Q8d-h2"
+        ],
+        "title": "Assigning Points to Clusters",
+        "text": "Calculate the distance of each team from the initial cluster centers to determine which cluster they belong to.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa24-final-Q8d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "Distance to (0,5): sqrt((1-0)**2+(1-5)**2)=sqrt(17), Distance to (6,0): sqrt((1-6)**2+(1-0)**2)=sqrt(26)"
+        ],
+        "dependencies": [
+            "a825455ds100-fa24-final-Q8d-h3"
+        ],
+        "title": "Calculate Distances",
+        "text": "Calculate the distance of Team O-Ski $$(1,1)$$ from the initial cluster centers $$(0,5)$$ and $$(6,0)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa24-final-Q8d-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(4,2.5)"
+        ],
+        "dependencies": [
+            "a825455ds100-fa24-final-Q8d-h4"
+        ],
+        "title": "Recalculate Cluster Centers",
+        "text": "After assigning points to clusters, recalculate the center of cluster B based on the mean of the points assigned to it.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

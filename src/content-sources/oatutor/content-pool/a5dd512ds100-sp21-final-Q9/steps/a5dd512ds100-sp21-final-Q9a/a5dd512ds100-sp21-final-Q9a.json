@@ -1,0 +1,18 @@
+{
+    "id": "a5dd512ds100-sp21-final-Q9a",
+    "stepAnswer": [
+        "$$1-\\sigma(\\theta**{T}x_{test})$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Given a new tweet transformed into a numpy array containing the same set of features, and the array is assigned to the variable $$x_{test}$$ which of the following expressions computes the quantity below under the logistic regression model (note the label Sad is the same as Not isHappy here)?\\n$$P(\\text{Sad}|x_{test})=P(Y=0|X=x_{test})$$\\nNote: $$\\theta$$ is the vector containing the trained parameters from the logistic regression model, $$\\sigma$$ is the sigmoid function, and $$\\mathbf{1}\\{x\\}$$ is a function that returns $$1$$ if $$x$$ is true and $$0$$ otherwise.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "$$\\sigma(\\theta**{T}x_{test})$$",
+        "$$1-\\sigma(\\theta**{T}x_{test})$$",
+        "$$\\sigma(1-\\theta**{T}x_{test})$$",
+        "$$\\mathbf{1}\\{\\sigma(\\theta**{T}x_{test})>0.5\\}$$",
+        "$$\\mathbf{1}\\{\\sigma(\\theta**{T}x_{test})<0.5\\}$$"
+    ]
+}

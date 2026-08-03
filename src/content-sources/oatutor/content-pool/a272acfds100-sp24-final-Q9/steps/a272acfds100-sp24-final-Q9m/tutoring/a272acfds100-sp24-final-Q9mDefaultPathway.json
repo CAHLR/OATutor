@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a272acfds100-sp24-final-Q9m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD",
+        "text": "Singular Value Decomposition (SVD) is a method of decomposing a matrix into three other matrices: $X=USV**{T}$. Here, $U$ and $V$ are orthogonal matrices, and $S$ is a diagonal matrix containing singular values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp24-final-Q9m-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp24-final-Q9m-h1"
+        ],
+        "title": "Rank and Singular Values",
+        "text": "The rank of a matrix is the number of non-zero singular values in its SVD. If $rank(X)<d$, what does this imply about the diagonal matrix $S$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp24-final-Q9m-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "There must be at least one $$0$$ along the diagonal of $S$."
+        ],
+        "dependencies": [
+            "a272acfds100-sp24-final-Q9m-h2"
+        ],
+        "title": "Diagonal of $S$",
+        "text": "Given that $rank(X)<d$, what can we say about the diagonal elements of $S$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "TRUE",
+            "There must be at least one $$0$$ along the diagonal of $S$."
+        ]
+    }
+]

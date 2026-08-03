@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a8cec5cds100-su25-final-Q2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MAE and MSE",
+        "text": "Mean Absolute Error (MAE) and Mean Squared Error (MSE) are both measures of prediction accuracy. MAE is the average of absolute differences between predicted and actual values, while MSE is the average of squared differences.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-su25-final-Q2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-su25-final-Q2a-h1"
+        ],
+        "title": "Gradient Descent and MAE",
+        "text": "Gradient descent is an optimization algorithm used to minimize a function by iteratively moving towards the steepest descent. When minimizing MAE, the gradient descent approach can be less straightforward due to the non-differentiability at zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-su25-final-Q2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "MSE"
+        ],
+        "dependencies": [
+            "a8cec5cds100-su25-final-Q2a-h2"
+        ],
+        "title": "Choosing Between MAE and MSE",
+        "text": "Consider the impact of outliers on MAE and MSE. Which one is more sensitive to outliers?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "MAE",
+            "MSE"
+        ]
+    },
+    {
+        "id": "a8cec5cds100-su25-final-Q2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-su25-final-Q2a-h3"
+        ],
+        "title": "Sensitivity to Outliers",
+        "text": "MSE is more sensitive to outliers because it squares the errors, giving more weight to larger errors. MAE, on the other hand, treats all errors equally.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-su25-final-Q2a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a8cec5cds100-su25-final-Q2a-h4"
+        ],
+        "title": "Gradient Descent for MAE",
+        "text": "Can gradient descent be used effectively to minimize MAE? Consider the differentiability of the MAE function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

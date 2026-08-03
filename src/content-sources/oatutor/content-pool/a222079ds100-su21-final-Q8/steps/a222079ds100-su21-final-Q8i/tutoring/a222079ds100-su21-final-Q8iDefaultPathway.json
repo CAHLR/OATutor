@@ -1,0 +1,105 @@
+[
+    {
+        "id": "a222079ds100-su21-final-Q8i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "When you one-hot encode a categorical variable, each category becomes a separate column with binary values (0 or 1).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su21-final-Q8i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su21-final-Q8i-h1"
+        ],
+        "title": "Columns in the Design Matrix",
+        "text": "The dataset has two categorical variables: 'sex' and $$'embark_{town'}$$. After one-hot encoding, how many columns will each variable contribute to the design matrix?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su21-final-Q8i-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su21-final-Q8i-h2"
+        ],
+        "title": "One-Hot Encoding 'sex'",
+        "text": "The 'sex' column has two categories: 'male' and 'female'. One-hot encoding this column will result in two new columns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su21-final-Q8i-h4",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su21-final-Q8i-h3"
+        ],
+        "title": "One-Hot Encoding $$'embark_{town'}$$",
+        "text": "The $$'embark_{town'}$$ column has five categories: 'Southampton', 'Cherbourg', 'Queenstown', 'London', and 'Oxford'. One-hot encoding this column will result in five new columns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su21-final-Q8i-h5",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su21-final-Q8i-h4"
+        ],
+        "title": "Total Columns in the Design Matrix",
+        "text": "After one-hot encoding 'sex' and $$'embark_{town'}$$, the design matrix will have $$2$$ (for 'sex') + $$5$$ (for 'embark_town') $$=$$ $$7$$ columns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su21-final-Q8i-h6",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su21-final-Q8i-h5"
+        ],
+        "title": "Invertibility of a Matrix",
+        "text": "A matrix is invertible if it is square and has full rank. The rank of a matrix is the number of linearly independent columns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su21-final-Q8i-h7",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su21-final-Q8i-h6"
+        ],
+        "title": "Checking Full Rank",
+        "text": "To check if the matrix is full rank, ensure that the columns are linearly independent. If any column can be expressed as a linear combination of others, the matrix is not full rank.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su21-final-Q8i-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a222079ds100-su21-final-Q8i-h7"
+        ],
+        "title": "Determine Invertibility",
+        "text": "Given that the design matrix has $$7$$ columns, is it possible for it to be full rank with only $$20$$ rows?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

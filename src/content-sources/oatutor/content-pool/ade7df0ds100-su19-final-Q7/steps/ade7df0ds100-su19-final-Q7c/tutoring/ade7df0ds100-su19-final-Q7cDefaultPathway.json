@@ -1,0 +1,71 @@
+[
+    {
+        "id": "ade7df0ds100-su19-final-Q7c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Expression",
+        "text": "The expression $y_i-\\sigma(X_{i}\\cdot{\\theta}**{(t)})$ involves a subtraction operation. Let's break it down to understand its components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su19-final-Q7c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su19-final-Q7c-h1"
+        ],
+        "title": "Components of the Expression",
+        "text": "In the expression $y_i-\\sigma(X_{i}\\cdot{\\theta}**{(t)})$, $y_i$ is a scalar value representing a single outcome (either $$0$$ or 1).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su19-final-Q7c-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su19-final-Q7c-h2"
+        ],
+        "title": "Understanding the Sigma Function",
+        "text": "The function $\\sigma(X_{i}\\cdot{\\theta}**{(t)})$ is the sigmoid function applied to the dot product of $X_i$ and $\\theta**{(t)}$. This results in a scalar value between $$0$$ and $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su19-final-Q7c-h4",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su19-final-Q7c-h3"
+        ],
+        "title": "Dimensions of the Dot Product",
+        "text": "The dot product $X_{i}\\cdot{\\theta}**{(t)}$ results in a scalar because $X_i$ is a row vector and $\\theta**{(t)}$ is a column vector.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su19-final-Q7c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Scalar"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su19-final-Q7c-h4"
+        ],
+        "title": "Final Dimension of the Expression",
+        "text": "Since both $y_i$ and $\\sigma(X_{i}\\cdot{\\theta}**{(t)})$ are scalars, the expression $y_i-\\sigma(X_{i}\\cdot{\\theta}**{(t)})$ is also a scalar.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Scalar",
+            "Length $$n$$ vector",
+            "Length $$p$$ vector",
+            "$$n$$ by $$p$$ matrix"
+        ]
+    }
+]

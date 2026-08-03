@@ -1,0 +1,46 @@
+[
+    {
+        "id": "ae27c55ds100-sp18-final-Q2a,Q2c,Q2d,Q2ea-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Task",
+        "text": "When filtering emails to determine if they are spam, think about what the main goal is. Are you trying to predict something, estimate a value, or understand a cause-and-effect relationship?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-sp18-final-Q2a,Q2c,Q2d,Q2ea-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-sp18-final-Q2a,Q2c,Q2d,Q2ea-h1"
+        ],
+        "title": "Defining Prediction",
+        "text": "Prediction involves using data to forecast or classify future outcomes. In the context of emails, it means determining whether an email is spam or not based on its features.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-sp18-final-Q2a,Q2c,Q2d,Q2ea-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Prediction"
+        ],
+        "dependencies": [
+            "ae27c55ds100-sp18-final-Q2a,Q2c,Q2d,Q2ea-h2"
+        ],
+        "title": "Identifying the Statistical Problem",
+        "text": "Given the task of filtering emails as spam or not, which statistical problem does this represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Estimation",
+            "Prediction",
+            "Causal Inference"
+        ]
+    }
+]

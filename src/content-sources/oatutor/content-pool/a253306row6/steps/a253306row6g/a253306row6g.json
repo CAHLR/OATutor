@@ -1,0 +1,15 @@
+{
+    "id": "a253306row6g",
+    "stepAnswer": [
+        "FALSE"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "There needs to be at least $$2$$ distinct data points for having a unique model solution.",
+    "stepBody": "We use a subset of $$\\text{skate\\_record}$$ to train the model\\n$$\\hat{y}=\\hat{\\theta}_0+\\hat{\\theta}_1x_1+\\hat{\\theta}_2x_2$$\\nwhere $$y$$ is self rating, $$x_1$$ is critic $$1$$ and $$x_2$$ is critic $$2$$.\\nThe correlation matrix for the predictors and the response in this subset gives the following correlations:\\n\u2022 critic $$1$$ with critic 2: $$-0.70$$\\n\u2022 critic $$1$$ with self rating: $$0.10$$\\n\u2022 critic $$2$$ with self rating: $$-0.75$$\\nEach variable has a correlation of $$1.00$$ with itself.\\nBased on this correlation matrix, evaluate the following statement about our model:##figure5.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "TRUE",
+        "FALSE"
+    ]
+}

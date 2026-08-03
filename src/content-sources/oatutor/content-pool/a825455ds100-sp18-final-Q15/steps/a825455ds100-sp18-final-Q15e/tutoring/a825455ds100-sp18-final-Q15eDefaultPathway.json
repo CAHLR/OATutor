@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a825455ds100-sp18-final-Q15e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MapReduce",
+        "text": "MapReduce is a programming model used for processing large data sets with a distributed algorithm on a cluster. It involves two main tasks: Map and Reduce.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp18-final-Q15e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-sp18-final-Q15e-h1"
+        ],
+        "title": "Memory Buffer in MapReduce",
+        "text": "Consider how MapReduce processes data. Does it require loading all data into memory at once?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp18-final-Q15e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a825455ds100-sp18-final-Q15e-h2"
+        ],
+        "title": "Data Processing in MapReduce",
+        "text": "MapReduce processes data in chunks, not all at once. Therefore, it does not require a memory buffer large enough to load all data from disk to memory.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3cf-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the minimum and maximum possible values of the threshold, consider the probabilities where the prediction changes from $$0$$ to $$1$$ or vice versa.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3cf-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su25-final-Q3a,Q3b,Q3cf-h1"
+        ],
+        "title": "Analyzing Predictions",
+        "text": "Look at the probabilities where the true label and prediction differ. These are the points where the threshold could be set to change the prediction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3cf-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su25-final-Q3a,Q3b,Q3cf-h2"
+        ],
+        "title": "Identifying Thresholds",
+        "text": "The threshold must be between the highest probability of a false prediction and the lowest probability of a true prediction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3cf-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.4$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su25-final-Q3a,Q3b,Q3cf-h3"
+        ],
+        "title": "Calculating Minimum Threshold",
+        "text": "What is the highest probability where the prediction is $$0$$ but the true label is 1?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3cf-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.75$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su25-final-Q3a,Q3b,Q3cf-h4"
+        ],
+        "title": "Calculating Maximum Threshold",
+        "text": "What is the lowest probability where the prediction is $$1$$ and the true label is 1?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

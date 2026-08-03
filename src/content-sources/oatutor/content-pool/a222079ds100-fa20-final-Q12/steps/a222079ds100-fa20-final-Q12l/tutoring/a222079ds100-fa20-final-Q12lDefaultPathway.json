@@ -1,0 +1,51 @@
+[
+    {
+        "id": "a222079ds100-fa20-final-Q12l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Models",
+        "text": "Model A includes height in inches and centimeters, and weight in pounds and kilograms. Model B includes only height in centimeters and weight in kilograms. Consider how these variables might affect the confidence intervals.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa20-final-Q12l-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Confidence Intervals and Multicollinearity",
+        "text": "Think about how multicollinearity might affect the confidence intervals of the parameters in Model A compared to Model B.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa20-final-Q12l-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Multicollinearity",
+        "text": "Multicollinearity can inflate the variance of the parameter estimates, leading to wider confidence intervals. This makes it more likely for the intervals to contain zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa20-final-Q12l-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Final Conclusion",
+        "text": "Considering the effect of multicollinearity, are the confidence intervals for Model A's parameters likely to contain zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

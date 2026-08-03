@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a977a7fds100-fa21-mt-Q2e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Age Data",
+        "text": "Consider how age data can be used in a linear model. Think about transformations or normalizations that might be applied to age data to make it more suitable for modeling.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2e-h1"
+        ],
+        "title": "Transformations of Age Data",
+        "text": "Age data can be used in its raw form, but sometimes transformations like scaling or normalizing can help improve model performance. Consider if these transformations are applicable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2e-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2e-h2"
+        ],
+        "title": "Scaling Age Data",
+        "text": "One way to use age data is to scale it. For example, you could divide each age by the maximum age in the dataset to get a value between $$0$$ and $$1$$. Is this a reasonable approach?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2e-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2e-h2"
+        ],
+        "title": "Normalizing Age Data",
+        "text": "Another approach is to normalize the age data. This could involve subtracting the mean age and dividing by the standard deviation. Would this method correctly capture the meaning of age?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2e-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2e-h2"
+        ],
+        "title": "Using Age Data Directly",
+        "text": "Consider using the age data directly without any transformation. Is this a reasonable way to use age data in the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

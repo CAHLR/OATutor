@@ -1,0 +1,19 @@
+{
+    "id": "a5dd512ds100-fa19-final-Q6a",
+    "stepAnswer": [
+        "$$-\\frac{2}{3}$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Give the value of $$m$$",
+    "stepBody": "Suppose we fit a logistic regression model with two features $$x_1$$ and $$x_2$$ and find that with classification threshold $$T=0.75$$ and $$\\hat{\\beta}=(\\hat{\\beta}_1,\\hat{\\beta}_2)=(2,3)$$ we achieve 100% training accuracy.\\nLet $$x_2=mx_1+b$$ be the equation for the line that separates the two classes. Give $$m$$ and $$b$$ (you may leave your answers in terms of log). Hint: You might find the following fact useful:\\n$$\\sigma(\\log(3))=0.75$$",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "$$-\\frac{2}{3}$$",
+    "choices": [
+        "$$\\frac{2}{3}$$",
+        "$$-\\frac{2}{3}$$",
+        "$$-\\frac{3}{2}$$",
+        "$$\\frac{3}{2}$$",
+        "$$-\\frac{\\log(3)}{3}$$"
+    ]
+}

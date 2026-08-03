@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a222079ds100-fa20-final-Q12b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Independence",
+        "text": "To determine if the columns are linearly independent, consider if any column can be expressed as a linear combination of the others.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa20-final-Q12b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa20-final-Q12b-h1"
+        ],
+        "title": "Checking for Linear Combinations",
+        "text": "Check if the new columns (height in inches and weight in pounds) can be expressed as linear combinations of the original columns (height in cm, weight in kg, and BMI).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa20-final-Q12b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa20-final-Q12b-h2"
+        ],
+        "title": "Conversion Formulas",
+        "text": "Remember the conversion formulas: height (in) $$=$$ height (cm) / $$2.54$$ and weight (lb) $$=$$ weight (kg) * $$2.2$$. Use these to check for linear dependence.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa20-final-Q12b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa20-final-Q12b-h3"
+        ],
+        "title": "Conclusion on Linear Independence",
+        "text": "Since height (in) and weight (lb) can be expressed as linear combinations of height (cm) and weight (kg), the columns are not linearly independent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa20-final-Q12b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa20-final-Q12b-h4"
+        ],
+        "title": "Span of the Columns",
+        "text": "The span of the columns of humans is the same as the span of the original columns because the new columns are linear combinations of the original ones.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

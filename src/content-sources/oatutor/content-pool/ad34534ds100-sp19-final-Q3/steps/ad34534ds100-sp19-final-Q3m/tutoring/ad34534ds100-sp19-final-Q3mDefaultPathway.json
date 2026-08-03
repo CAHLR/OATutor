@@ -1,0 +1,45 @@
+[
+    {
+        "id": "ad34534ds100-sp19-final-Q3m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatterplot",
+        "text": "Observe the scatterplot carefully. Notice the pattern of the data points. How do they relate to the functions provided?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp19-final-Q3m-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp19-final-Q3m-h1"
+        ],
+        "title": "Analyzing Function Options",
+        "text": "Consider each function: $$\\(f(x)=-x\\)$$, $$\\(f(x)=x\\)$$, \\(f(x)=x**2\\), \\(f(x)=abs(x)\\). Which one can transform the x-values to fit the y-values in the scatterplot?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp19-final-Q3m-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp19-final-Q3m-h2"
+        ],
+        "title": "Testing Function \\(f(x)=x**2\\)",
+        "text": "If \\(f(x)=x**2\\), can you find \\(\\beta_0\\), \\(\\beta_1\\), and \\(\\beta_2\\) such that \\(y_i=\\beta_0+x_i*\\beta_1+f(x_i)*\\beta_2\\) fits the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

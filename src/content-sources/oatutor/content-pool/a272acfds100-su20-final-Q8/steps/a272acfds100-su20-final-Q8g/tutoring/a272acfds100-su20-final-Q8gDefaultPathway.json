@@ -1,0 +1,61 @@
+[
+    {
+        "id": "a272acfds100-su20-final-Q8g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Singular Values",
+        "text": "The singular values of a matrix are related to the variance of its features. The largest singular value is often associated with the feature having the highest variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su20-final-Q8g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-su20-final-Q8g-h1"
+        ],
+        "title": "Relation Between Variance and Singular Values",
+        "text": "The singular values of a matrix are the square roots of the eigenvalues of the matrix's covariance matrix. The variance of a feature is directly related to these eigenvalues.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su20-final-Q8g-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-su20-final-Q8g-h2"
+        ],
+        "title": "Finding the Largest Singular Value",
+        "text": "To find the largest singular value, consider the feature with the highest variance. The largest singular value is the square root of this variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su20-final-Q8g-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sigma_1 $$\\geq$$ $$50$$"
+        ],
+        "dependencies": [
+            "a272acfds100-su20-final-Q8g-h3"
+        ],
+        "title": "Calculate the Largest Singular Value",
+        "text": "Given the variances $$125$$, $$20$$, and $$5$$, calculate the largest singular value by taking the square root of the largest variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\sigma_1 $$\\geq$$ $$50$$",
+            "$$\\sigma_1 \\geq 0$$",
+            "$$\\sigma_1 \\geq 125$$",
+            "$$\\sigma_1 \\geq 20$$",
+            "$$\\sigma_1 \\geq 5$$",
+            "$$\\sigma_1 \\geq 50$$"
+        ]
+    }
+]

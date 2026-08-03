@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a410fc9row9p2f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding OLS",
+        "text": "The ordinary least squares (OLS) method aims to minimize the sum of the squared differences between the observed and predicted values. This is known as minimizing the residual sum of squares.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row9p2f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row9p2f-h1"
+        ],
+        "title": "OLS and Prediction Vector",
+        "text": "OLS does not directly minimize the length of the prediction vector. Instead, it minimizes the error between the predicted and actual values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

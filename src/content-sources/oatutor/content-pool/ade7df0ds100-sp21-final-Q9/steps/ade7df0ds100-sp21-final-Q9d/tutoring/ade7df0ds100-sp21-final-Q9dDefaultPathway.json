@@ -1,0 +1,115 @@
+[
+    {
+        "id": "ade7df0ds100-sp21-final-Q9d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Data",
+        "text": "Look at the table provided. It shows tweets with counts of happy and sad emojis, along with whether the tweet is happy or not.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q9d-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q9d-h1"
+        ],
+        "title": "Logistic Regression Basics",
+        "text": "Logistic regression is used to predict binary outcomes. It uses a linear combination of input features to make predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q9d-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q9d-h2"
+        ],
+        "title": "Decision Boundary",
+        "text": "The decision boundary is the line that separates the classes in the feature space. It is determined by the coefficients of the logistic regression model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q9d-h4",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q9d-h3"
+        ],
+        "title": "Effect of Regularization",
+        "text": "L2 regularization adds a penalty to the loss function based on the size of the coefficients. A large lambda value will shrink the coefficients towards zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q9d-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The slope becomes less steep."
+        ],
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q9d-h4"
+        ],
+        "title": "Analyzing the Effect of Large Lambda",
+        "text": "What happens to the slope of the decision boundary when lambda is large?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The slope becomes steeper.",
+            "The slope becomes less steep.",
+            "The slope remains unchanged."
+        ]
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q9d-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The training error increases."
+        ],
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q9d-h5"
+        ],
+        "title": "Training Error with Large Lambda",
+        "text": "What happens to the training error when lambda is large?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The training error decreases.",
+            "The training error increases.",
+            "The training error remains unchanged."
+        ]
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q9d-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Figure A"
+        ],
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q9d-h6"
+        ],
+        "title": "Matching with Figures",
+        "text": "Which figure best represents the decision boundary with a large lambda value?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Figure A",
+            "Figure B",
+            "Figure C",
+            "None of these"
+        ]
+    }
+]

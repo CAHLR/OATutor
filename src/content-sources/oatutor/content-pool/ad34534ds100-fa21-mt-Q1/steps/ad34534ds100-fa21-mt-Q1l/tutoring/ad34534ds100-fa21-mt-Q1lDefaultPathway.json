@@ -1,0 +1,36 @@
+[
+    {
+        "id": "ad34534ds100-fa21-mt-Q1l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting by adding a penalty to the model's complexity. It helps in simplifying the model and improving its generalization to new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa21-mt-Q1l-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa21-mt-Q1l-h1"
+        ],
+        "title": "L1 vs L2 Regularization",
+        "text": "L1 regularization, also known as Lasso, tends to produce sparse models by driving some coefficients to zero. L2 regularization, also known as Ridge, tends to shrink coefficients but usually keeps them non-zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa21-mt-Q1l-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa21-mt-Q1l-h2"
+        ],
+        "title": "Choosing the Right Regularization",
+        "text": "Consider the nature of the data and the problem. If there are many redundant features or if you want to encourage sparsity in the model, L1 regularization might be more suitable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,15 @@
+{
+    "id": "a253306row9p2i",
+    "stepAnswer": [
+        "TRUE"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "$$H$$ is unchanged when multiplied by itself, that is, $$HH=H.$$",
+    "stepBody": "When making predictions, Kippa computes $$\\hat{Y}=X\\hat{\\theta}=X(X**{T}X)**{-1}X**{T}Y.$$ Let $$H=X(X**{T}X)**{-1}X**T$$ be the projection ('hat') matrix, so $$\\hat{Y}=HY.$$ Let $$I$$ be the identity matrix with the same shape as $$H.$$\\n\\nIs this true about hat matrix $$H?$$ Select all that apply.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "TRUE",
+        "FALSE"
+    ]
+}

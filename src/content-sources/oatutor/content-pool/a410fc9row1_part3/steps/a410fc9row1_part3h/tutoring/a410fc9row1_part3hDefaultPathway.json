@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a410fc9row1_part3h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE on Test Data",
+        "text": "When you remove a feature from a model, it can affect the model's ability to generalize to new data. Consider how this might impact the MSE on held-out test data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row1_part3h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row1_part3h-h1"
+        ],
+        "title": "Effect of Removing a Feature",
+        "text": "Removing a feature can lead to a simpler model, which might reduce overfitting. However, it can also lead to underfitting if the feature was important. How might these changes affect the test MSE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row1_part3h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase and Decrease"
+        ],
+        "dependencies": [
+            "a410fc9row1_part3h-h2"
+        ],
+        "title": "Analyzing Test MSE Changes",
+        "text": "Consider both scenarios: 1) The removed feature was not important, leading to reduced overfitting. 2) The removed feature was important, leading to underfitting. What are the possible effects on test MSE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Increase and Decrease"
+        ]
+    }
+]

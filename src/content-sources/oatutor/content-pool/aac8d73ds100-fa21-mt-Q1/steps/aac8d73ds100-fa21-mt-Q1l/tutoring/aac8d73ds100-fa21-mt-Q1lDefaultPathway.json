@@ -1,0 +1,59 @@
+[
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting in models by adding a penalty term to the loss function. This penalty discourages complex models that fit the training data too closely.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1l-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa21-mt-Q1l-h1"
+        ],
+        "title": "L1 vs L2 Regularization",
+        "text": "L1 regularization, also known as Lasso, adds a penalty equal to the absolute value of the magnitude of coefficients. It can lead to sparse models where some feature weights are zero. L2 regularization, or Ridge, adds a penalty equal to the square of the magnitude of coefficients, which tends to shrink coefficients evenly.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1l-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa21-mt-Q1l-h2"
+        ],
+        "title": "Choosing the Right Regularization",
+        "text": "Consider the nature of the data and the problem. If there are many features but only a few are expected to be important, L1 regularization might be more suitable as it can zero out less important features.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1l-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Apply L1 regularization, due to the redundancies in codon meaning."
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa21-mt-Q1l-h3"
+        ],
+        "title": "Applying Regularization",
+        "text": "Given the redundancies in codon meaning, which regularization technique would help in reducing the model complexity by potentially eliminating some features?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Apply L2 regularization, due to the redundancies in codon meaning.",
+            "Apply L1 regularization, due to the redundancies in codon meaning.",
+            "Apply L2 regularization, due to the high dimensionality of the samples.",
+            "Apply L1 regularization, due to the high dimensionality of the samples."
+        ]
+    }
+]

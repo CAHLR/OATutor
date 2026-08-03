@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a613447ds100-sp24-final-Q6g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Risk",
+        "text": "Model risk is the sum of bias squared, variance, and observational variance. When Ishani adds more features, the model risk decreases. This suggests a change in bias and/or variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp24-final-Q6g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp24-final-Q6g-h1"
+        ],
+        "title": "Effect of Adding Features",
+        "text": "Adding more features to a model can reduce bias but may increase variance. Consider how this tradeoff affects the model risk.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp24-final-Q6g-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$21$$"
+        ],
+        "dependencies": [
+            "a613447ds100-sp24-final-Q6g-h2"
+        ],
+        "title": "Calculate New Bias",
+        "text": "Given the initial model risk of $$32$$, model variance of $$8$$, and observational variance of $$3$$, calculate the initial bias squared.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp24-final-Q6g-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$14$$"
+        ],
+        "dependencies": [
+            "a613447ds100-sp24-final-Q6g-h3"
+        ],
+        "title": "New Model Risk Components",
+        "text": "With the new model risk of $$17$$ and observational variance of $$3$$, calculate the sum of the new bias squared and variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp24-final-Q6g-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "a613447ds100-sp24-final-Q6g-h4"
+        ],
+        "title": "Determine New Variance",
+        "text": "If the new model variance is $$15$$, what is the new bias squared?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp24-final-Q6g-h6",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp24-final-Q6g-h5"
+        ],
+        "title": "Check Reasonableness",
+        "text": "Consider if a negative bias squared is reasonable. What does this imply about the new variance value?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

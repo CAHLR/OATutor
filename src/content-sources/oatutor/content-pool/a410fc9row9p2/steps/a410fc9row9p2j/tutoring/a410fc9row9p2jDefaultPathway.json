@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a410fc9row9p2j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Hat Matrix",
+        "text": "The hat matrix $H$ is used in linear regression to project the observed values $Y$ onto the space spanned by the columns of $X$. It is defined as $H=X(X**TX)**{-1}X**T$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row9p2j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row9p2j-h1"
+        ],
+        "title": "Properties of the Hat Matrix",
+        "text": "The hat matrix $H$ is symmetric and idempotent. This means $H=H**T$ and $H**2=H$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row9p2j-h3",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row9p2j-h2"
+        ],
+        "title": "Orthogonality of $$\\$(I-H)Y\\$$$",
+        "text": "The vector $$\\$(I-H)Y\\$$$ is orthogonal to the column space of $X$. This is because $H$ projects $Y$ onto the column space of $X$, and $$\\$(I-H)\\$$$ projects $Y$ onto the orthogonal complement of the column space of $X$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row9p2j-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a410fc9row9p2j-h3"
+        ],
+        "title": "Checking Orthogonality",
+        "text": "To check if $$\\$(I-H)Y\\$$$ is orthogonal to the column space of $X$, consider the product $X**T(I-H)Y$. What should this product equal if $$\\$(I-H)Y\\$$$ is orthogonal to the column space of $X$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

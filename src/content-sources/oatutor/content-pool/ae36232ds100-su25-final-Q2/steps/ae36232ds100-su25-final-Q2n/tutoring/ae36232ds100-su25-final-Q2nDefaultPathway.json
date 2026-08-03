@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ae36232ds100-su25-final-Q2n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L1 Regularization",
+        "text": "L1 regularization, also known as Lasso, adds a penalty equal to the absolute value of the magnitude of coefficients. This can lead to some coefficients being exactly zero, effectively selecting a simpler model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2n-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2n-h1"
+        ],
+        "title": "Effect on Model Bias",
+        "text": "Regularization techniques like L1 regularization can increase model bias because they simplify the model by reducing the number of features or the magnitude of coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2n-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2n-h2"
+        ],
+        "title": "Trade-off in Regularization",
+        "text": "Regularization introduces a trade-off between bias and variance. While it can increase bias by simplifying the model, it often reduces variance, leading to better generalization on unseen data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2n-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2n-h3"
+        ],
+        "title": "True or False: L1 Regularization",
+        "text": "L1 regularization typically increases model bias.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

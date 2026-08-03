@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a613447ds100-sp24-final-Q6e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Risk",
+        "text": "Model risk is the sum of bias squared, variance, and observational variance. When Ishani adds more features, the model risk decreases. This suggests changes in bias and variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp24-final-Q6e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp24-final-Q6e-h1"
+        ],
+        "title": "Effect of Adding Features",
+        "text": "Adding more features to a model typically decreases bias but can increase variance. Consider how this affects the model risk.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp24-final-Q6e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp24-final-Q6e-h2"
+        ],
+        "title": "Calculating New Model Risk",
+        "text": "The new model risk is $$17$$. Use the formula: Model Risk $$=$$ $${Bias}^2$$ + Variance + Observational Variance to find possible values for bias and variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp24-final-Q6e-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$${Bias}^2+Variance=14$$"
+        ],
+        "dependencies": [
+            "a613447ds100-sp24-final-Q6e-h3"
+        ],
+        "title": "Determine New Bias and Variance",
+        "text": "Given the new model risk is $$17$$, and the observational variance is $$3$$, calculate possible values for bias squared and variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp24-final-Q6e-h5",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp24-final-Q6e-h4"
+        ],
+        "title": "Possible Values for Bias and Variance",
+        "text": "Consider combinations of bias squared and variance that sum to $$14$$. Remember, both values must be non-negative.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

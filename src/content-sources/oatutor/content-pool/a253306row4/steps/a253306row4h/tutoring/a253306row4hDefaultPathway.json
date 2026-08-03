@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a253306row4h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "When the training error increases but the validation error decreases, it suggests a change in the model's complexity. Consider what happens to bias and variance in this scenario.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row4h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row4h-h1"
+        ],
+        "title": "Bias-Variance Tradeoff",
+        "text": "The bias-variance tradeoff is a fundamental concept in machine learning. Increasing the number of features can affect both bias and variance. Think about how reducing the number of features might impact these two components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row4h-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row4h-h2"
+        ],
+        "title": "Effect of Reducing Features",
+        "text": "Reducing the number of features typically increases bias but decreases variance. This can lead to a model that generalizes better to unseen data, hence reducing validation error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row4h-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a253306row4h-h3"
+        ],
+        "title": "Conclusion on Model Variance",
+        "text": "Given the scenario where the training error increases and the validation error decreases, what can we conclude about the model's variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,105 @@
+[
+    {
+        "id": "a825455ds100-su21-final-Q9c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Agglomerative Clustering",
+        "text": "Agglomerative clustering starts with each point as its own cluster and merges the closest clusters step by step until the desired number of clusters is reached.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su21-final-Q9c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-su21-final-Q9c-h1"
+        ],
+        "title": "Initial Step",
+        "text": "Identify the pair of points with the smallest distance to merge first.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su21-final-Q9c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-su21-final-Q9c-h2"
+        ],
+        "title": "First Merge",
+        "text": "The smallest distance is between points A and E $$(0.9)$$. Merge these two points into a new cluster.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su21-final-Q9c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-su21-final-Q9c-h3"
+        ],
+        "title": "Next Step",
+        "text": "After merging A and E, find the next smallest distance between clusters to merge.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su21-final-Q9c-h5",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-su21-final-Q9c-h4"
+        ],
+        "title": "Second Merge",
+        "text": "The next smallest distance is between B and D $$(1.6)$$. Merge these two points into a new cluster.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su21-final-Q9c-h6",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-su21-final-Q9c-h5"
+        ],
+        "title": "Final Merge",
+        "text": "Now, find the next smallest distance between the remaining clusters to merge.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su21-final-Q9c-h7",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-su21-final-Q9c-h6"
+        ],
+        "title": "Completing the Clustering",
+        "text": "The remaining clusters are (A,E), (B,D), and C. The smallest distance is between (A,E) and (B,D) $$(3.5)$$. Merge these to form the final cluster.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su21-final-Q9c-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a825455ds100-su21-final-Q9c-h7"
+        ],
+        "title": "Final Check",
+        "text": "Have we completed the algorithm?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

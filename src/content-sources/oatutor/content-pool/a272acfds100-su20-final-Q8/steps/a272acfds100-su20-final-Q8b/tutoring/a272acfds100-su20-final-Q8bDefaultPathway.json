@@ -1,0 +1,92 @@
+[
+    {
+        "id": "a272acfds100-su20-final-Q8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Matrix Columns",
+        "text": "The vectors $u_1$ and $u_2$ are columns of the matrix $U$ from the Singular Value Decomposition (SVD). Each column in $U$ is an orthonormal vector.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su20-final-Q8b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-su20-final-Q8b-h1"
+        ],
+        "title": "Properties of Orthonormal Vectors",
+        "text": "Orthonormal vectors have a magnitude of $$1$$ and are orthogonal to each other. This means that the dot product of any two different columns in $U$ is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su20-final-Q8b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-su20-final-Q8b-h2"
+        ],
+        "title": "Checking Validity of $u_1$ and $u_2$",
+        "text": "To determine if the combination of $u_1$ and $u_2$ is valid, check if they are orthonormal. Calculate their magnitudes and dot product.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su20-final-Q8b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes, both have a magnitude of $$1$$."
+        ],
+        "dependencies": [
+            "a272acfds100-su20-final-Q8b-h3"
+        ],
+        "title": "Magnitude of $u_1$ and $u_2$",
+        "text": "Calculate the magnitude of $u_1$ and $u_2$. Are they equal to 1?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "No",
+            "Yes",
+            "Yes, both have a magnitude of $$1$$."
+        ]
+    },
+    {
+        "id": "a272acfds100-su20-final-Q8b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes, the dot product is zero."
+        ],
+        "dependencies": [
+            "a272acfds100-su20-final-Q8b-h4"
+        ],
+        "title": "Dot Product of $u_1$ and $u_2$",
+        "text": "Calculate the dot product of $u_1$ and $u_2$. Is it zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "No",
+            "Yes",
+            "Yes, the dot product is zero."
+        ]
+    },
+    {
+        "id": "a272acfds100-su20-final-Q8b-h6",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-su20-final-Q8b-h5"
+        ],
+        "title": "Conclusion on Validity",
+        "text": "Since $u_1$ and $u_2$ are orthonormal, the combination is valid. Therefore, the statement is FALSE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

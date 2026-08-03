@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a253306row1_part3c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE on Training Data",
+        "text": "When you add a new feature to a model, especially one that is a transformation of an existing feature, how does it typically affect the model's ability to fit the training data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row1_part3c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row1_part3c-h1"
+        ],
+        "title": "Effect of Adding Features",
+        "text": "Adding a feature, such as the square of an existing feature, can increase the model's flexibility. What does this mean for the model's fit on the training data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row1_part3c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a253306row1_part3c-h2"
+        ],
+        "title": "Analyzing Training MSE",
+        "text": "Consider how adding a squared feature might allow the model to capture more complex patterns in the training data. What effect does this have on the MSE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Increase and Decrease"
+        ]
+    }
+]

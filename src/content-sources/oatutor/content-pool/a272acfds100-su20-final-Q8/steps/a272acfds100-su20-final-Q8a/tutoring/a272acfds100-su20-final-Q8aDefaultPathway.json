@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a272acfds100-su20-final-Q8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Principal Components",
+        "text": "Principal components are derived from the singular value decomposition (SVD) of the centered design matrix X. The SVD of X is given by X=U*\u03a3*V**T, where U and V are orthogonal matrices and \u03a3 is a diagonal matrix containing singular values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su20-final-Q8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-su20-final-Q8a-h1"
+        ],
+        "title": "Role of \u03a3 in SVD",
+        "text": "The \u03a3 matrix in the SVD contains the singular values, which are crucial for determining the principal components. However, the principal components themselves are linear combinations of the original variables, represented by the columns of V.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su20-final-Q8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-su20-final-Q8a-h2"
+        ],
+        "title": "Using U and $$V^T$$",
+        "text": "Even if the \u03a3 matrix is lost, the matrices U and $$V^T$$ can still provide valuable information. The columns of V (or rows of V**T) represent the directions of the principal components in the original feature space.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su20-final-Q8a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a272acfds100-su20-final-Q8a-h3"
+        ],
+        "title": "Finding Principal Components Without \u03a3",
+        "text": "Given that you have X, U, and $$V^T$$, can you determine the principal components?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

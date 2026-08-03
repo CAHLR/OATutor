@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a410fc9row5_part2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Residuals",
+        "text": "Residuals are the differences between the observed values and the predicted values from a model. In this case, the residuals are calculated as $$e=Y-\\hat{Y$$.}",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row5_part2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row5_part2b-h1"
+        ],
+        "title": "OLS Property",
+        "text": "One of the properties of the Ordinary Least Squares (OLS) method is that the sum of the residuals is zero. This means that the average of the residuals is also zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row5_part2b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row5_part2b-h2"
+        ],
+        "title": "Effect of $$\\theta_0$$ on Residuals",
+        "text": "The intercept $$\\theta_0$$ does not affect the average of the residuals. The average of the residuals is always zero, regardless of the value of $$\\theta_0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row5_part2b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a410fc9row5_part2b-h3"
+        ],
+        "title": "Checking the Statement",
+        "text": "Given the property of OLS that the average of the residuals is zero, is the statement 'If $$\\theta_0$$ is positive, the average of the residuals is also positive' true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

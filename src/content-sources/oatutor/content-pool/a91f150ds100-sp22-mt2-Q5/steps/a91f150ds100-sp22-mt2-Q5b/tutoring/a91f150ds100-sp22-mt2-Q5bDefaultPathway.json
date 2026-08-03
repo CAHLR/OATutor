@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a91f150ds100-sp22-mt2-Q5b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Regularization Function",
+        "text": "The regularization function is given by Pow(theta)=lambda*sum{i\\=1}{p}{10**theta_i}. This function adds a penalty to the objective function to prevent overfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp22-mt2-Q5b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp22-mt2-Q5b-h1"
+        ],
+        "title": "Objective Function Components",
+        "text": "The objective function consists of two parts: the L2 loss and the regularization term. The L2 loss is given by (1/n)*||Y-X*theta||_2**2, and the regularization term is lambda*sum{i\\=1}{p}{10**theta_i}.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp22-mt2-Q5b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp22-mt2-Q5b-h2"
+        ],
+        "title": "Role of Lambda",
+        "text": "The lambda parameter controls the strength of the regularization. A larger lambda increases the penalty on larger theta values, encouraging smaller coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp22-mt2-Q5b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a91f150ds100-sp22-mt2-Q5b-h3"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Given the objective function (1/n)*||Y-X*theta||_2**2+lambda*sum{i\\=1}{p}{10**theta_i}, determine if the statement about the function being minimized is true.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

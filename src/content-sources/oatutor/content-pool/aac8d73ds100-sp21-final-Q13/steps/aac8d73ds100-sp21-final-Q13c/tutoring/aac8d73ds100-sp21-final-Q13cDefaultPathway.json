@@ -1,0 +1,60 @@
+[
+    {
+        "id": "aac8d73ds100-sp21-final-Q13c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting by adding a penalty term to the loss function. Different types of regularization can help achieve different goals.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp21-final-Q13c-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-sp21-final-Q13c-h1"
+        ],
+        "title": "Types of Regularization",
+        "text": "There are several types of regularization, including L1, L2, Elastic Net, and Dropout. Each has its own characteristics and use cases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp21-final-Q13c-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-sp21-final-Q13c-h2"
+        ],
+        "title": "L1 Regularization",
+        "text": "L1 regularization, also known as Lasso, adds a penalty equal to the absolute value of the magnitude of coefficients. It can lead to sparse solutions, effectively selecting a minimal set of features.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp21-final-Q13c-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "L1 regularization."
+        ],
+        "dependencies": [
+            "aac8d73ds100-sp21-final-Q13c-h3"
+        ],
+        "title": "Choosing the Right Regularization",
+        "text": "If you want to find the minimal set of explanatory features, which regularization technique should you choose?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "L2 regularization.",
+            "No regularization.",
+            "L1 regularization.",
+            "Elastic net regularization.",
+            "Dropout regularization."
+        ]
+    }
+]

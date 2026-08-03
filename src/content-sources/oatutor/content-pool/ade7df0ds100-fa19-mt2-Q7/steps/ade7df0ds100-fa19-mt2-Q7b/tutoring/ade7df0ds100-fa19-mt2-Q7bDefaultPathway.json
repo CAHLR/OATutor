@@ -1,0 +1,99 @@
+[
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Precision",
+        "text": "Precision is the ratio of true positive predictions to the total number of positive predictions made by the classifier.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-mt2-Q7b-h1"
+        ],
+        "title": "Identify True Positives",
+        "text": "A true positive is when the classifier predicts a positive outcome (1) and the true label is also positive (1).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa19-mt2-Q7b-h2"
+        ],
+        "title": "Count True Positives",
+        "text": "How many true positives are there in the given predictions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7b-h4",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-mt2-Q7b-h3"
+        ],
+        "title": "Identify Predicted Positives",
+        "text": "Predicted positives are all the instances where the classifier predicts a positive outcome (1), regardless of the true label.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa19-mt2-Q7b-h4"
+        ],
+        "title": "Count Predicted Positives",
+        "text": "How many predicted positives are there in the given predictions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7b-h6",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-mt2-Q7b-h5"
+        ],
+        "title": "Calculate Precision",
+        "text": "Use the formula for precision: true positives divided by predicted positives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7b-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2}{3}$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa19-mt2-Q7b-h6"
+        ],
+        "title": "Compute Precision",
+        "text": "What is the precision of the classifier based on the given predictions and true labels?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,104 @@
+[
+    {
+        "id": "acab12dds100-fa17-mt-Q27b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrapping",
+        "text": "Bootstrapping involves resampling with replacement from the sample data to create 'new' samples. This helps in estimating the sampling distribution of a statistic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-mt-Q27b-h2",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa17-mt-Q27b-h1"
+        ],
+        "title": "Sample Size for Bootstrapping",
+        "text": "When bootstrapping, the size of each resample should be the same as the original sample size.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-mt-Q27b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$400$$"
+        ],
+        "dependencies": [
+            "acab12dds100-fa17-mt-Q27b-h2"
+        ],
+        "title": "Determine the Sample Size",
+        "text": "What is the size of the original sample, theSample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-mt-Q27b-h4",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa17-mt-Q27b-h3"
+        ],
+        "title": "Replacement in Bootstrapping",
+        "text": "In bootstrapping, each resample is drawn with replacement from the original sample.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-mt-Q27b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "acab12dds100-fa17-mt-Q27b-h4"
+        ],
+        "title": "Replacement Parameter",
+        "text": "Should the 'replace' parameter be set to True or False when bootstrapping?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "False",
+            "TRUE",
+            "True"
+        ]
+    },
+    {
+        "id": "acab12dds100-fa17-mt-Q27b-h6",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa17-mt-Q27b-h5"
+        ],
+        "title": "Number of Bootstrapped Estimates",
+        "text": "The number of bootstrapped estimates is determined by how many times you repeat the resampling process.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-mt-Q27b-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10000$$"
+        ],
+        "dependencies": [
+            "acab12dds100-fa17-mt-Q27b-h6"
+        ],
+        "title": "Determine the Number of Resamples",
+        "text": "How many bootstrapped estimates are we constructing?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

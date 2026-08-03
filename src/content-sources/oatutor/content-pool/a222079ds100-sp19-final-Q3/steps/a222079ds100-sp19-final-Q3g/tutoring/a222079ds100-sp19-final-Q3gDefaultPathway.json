@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a222079ds100-sp19-final-Q3g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatterplot",
+        "text": "Observe the scatterplot carefully. Notice the pattern of the data points. Does it resemble any common function shape, such as linear, quadratic, or absolute value?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp19-final-Q3g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-sp19-final-Q3g-h1"
+        ],
+        "title": "Quadratic Function",
+        "text": "A quadratic function has the form of a parabola. Check if the data points can be fitted by a parabola, which would suggest a quadratic relationship.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp19-final-Q3g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a222079ds100-sp19-final-Q3g-h2"
+        ],
+        "title": "Checking for Quadratic Fit",
+        "text": "Does the scatterplot resemble a parabolic shape, indicating a quadratic relationship?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

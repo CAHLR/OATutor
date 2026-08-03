@@ -1,0 +1,81 @@
+[
+    {
+        "id": "ae27c55ds100-fa17-final-Q10g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Diagram",
+        "text": "The diagram represents the bootstrap process, which involves taking samples from a population, calculating statistics, and using these to estimate the sampling distribution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-final-Q10g-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa17-final-Q10g-h1"
+        ],
+        "title": "Identifying the Population",
+        "text": "The first step in the diagram involves the entire population. Which label corresponds to the population?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-final-Q10g-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa17-final-Q10g-h2"
+        ],
+        "title": "Sample from the Population",
+        "text": "After identifying the population, the next step is to take a sample from it. Which label corresponds to the observed sample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-final-Q10g-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa17-final-Q10g-h3"
+        ],
+        "title": "Bootstrap Process",
+        "text": "The bootstrap process involves resampling from the observed sample to create bootstrap samples. Which label corresponds to the bootstrap sample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-final-Q10g-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Bootstrap sample"
+        ],
+        "dependencies": [
+            "ae27c55ds100-fa17-final-Q10g-h4"
+        ],
+        "title": "Blank (7)",
+        "text": "What is the label for the process of creating multiple samples from the observed sample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Population",
+            "Bootstrap population",
+            "Observed sample",
+            "Expected sample",
+            "Bootstrap sample",
+            "Sampling distribution",
+            "Sampling",
+            "Bootstrapping",
+            "Bootstrap sampling distribution",
+            "Empirical distribution",
+            "True distribution",
+            "Population parameter",
+            "Sample Statistic",
+            "Bootstrap Statistic"
+        ]
+    }
+]

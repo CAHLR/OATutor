@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ae36232ds100-su25-final-Q2p-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L1 Regularization",
+        "text": "L1 regularization, also known as Lasso, tends to produce sparse models by driving some coefficients to zero. This can help in feature selection.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2p-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2p-h1"
+        ],
+        "title": "Comparing L1 and L2 Regularization",
+        "text": "While L1 regularization can help in identifying the most predictive features, it often results in a higher average loss compared to L2 regularization.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2p-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2p-h2"
+        ],
+        "title": "Evaluating Statements about L1 Regularization",
+        "text": "Consider the statement: 'L1 regularization will generally result in higher average loss.' Is this statement true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2p-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2p-h3"
+        ],
+        "title": "Feature Selection with L1 Regularization",
+        "text": "L1 regularization is particularly useful when you want to reduce the number of features in your model, as it can set some coefficients to zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

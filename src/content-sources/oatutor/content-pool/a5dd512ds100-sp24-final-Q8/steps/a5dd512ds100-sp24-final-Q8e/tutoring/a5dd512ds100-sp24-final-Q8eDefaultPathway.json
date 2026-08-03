@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a5dd512ds100-sp24-final-Q8e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Recall and Accuracy",
+        "text": "Recall is the ratio of true positives to the sum of true positives and false negatives. Accuracy is the ratio of correctly predicted instances to the total instances.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp24-final-Q8e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp24-final-Q8e-h1"
+        ],
+        "title": "Calculating True Positives and False Negatives",
+        "text": "To calculate recall, identify the true positives (correctly predicted 1s) and false negatives (actual 1s predicted as 0s).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp24-final-Q8e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp24-final-Q8e-h2"
+        ],
+        "title": "Threshold Impact on Predictions",
+        "text": "Changing the threshold affects which predicted probabilities are classified as $$1$$. A lower threshold increases recall but may decrease accuracy.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp24-final-Q8e-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$Recall=1$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-sp24-final-Q8e-h3"
+        ],
+        "title": "Calculate Recall for Threshold $$0.7$$",
+        "text": "For a threshold of $$0.7$$, calculate the recall. How many true positives and false negatives are there?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp24-final-Q8e-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$Accuracy=0.8$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-sp24-final-Q8e-h4"
+        ],
+        "title": "Calculate Accuracy for Threshold $$0.7$$",
+        "text": "For a threshold of $$0.7$$, calculate the accuracy. How many predictions are correct out of the total?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp24-final-Q8e-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(0.7,0.8]"
+        ],
+        "dependencies": [
+            "a5dd512ds100-sp24-final-Q8e-h5"
+        ],
+        "title": "Determine Threshold Range",
+        "text": "What is the range of thresholds that maintains an accuracy above $$0.75$$ while maximizing recall?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

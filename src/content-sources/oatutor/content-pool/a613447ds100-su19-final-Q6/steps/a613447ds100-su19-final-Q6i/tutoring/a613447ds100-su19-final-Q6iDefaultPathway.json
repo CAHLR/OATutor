@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a613447ds100-su19-final-Q6i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "In one-hot encoding, each category is represented by a binary vector. For the 'meat' variable, 'beef', 'chicken', and 'fish' are encoded as separate binary variables. Only one of these variables can be $$1$$ at a time, while the others are $$0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6i-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting the Box Plot",
+        "text": "The box plot shows the distribution of total costs for each type of meat. Compare the median and spread of the costs for 'beef', 'chicken', and 'fish'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6i-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Analyzing the Model Weights",
+        "text": "The weight $$\\theta_2$$ corresponds to the $$'meat=chicken'$$ variable. Consider how the cost of chicken compares to the other meats based on the box plot.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6i-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Lower"
+        ],
+        "dependencies": [
+            "a613447ds100-su19-final-Q6i-h3"
+        ],
+        "title": "Comparing Costs",
+        "text": "Based on the box plot, is the cost of chicken generally higher, lower, or about the same as beef and fish?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Higher",
+            "Lower",
+            "About the same"
+        ]
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6i-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Negative"
+        ],
+        "dependencies": [
+            "a613447ds100-su19-final-Q6i-h4"
+        ],
+        "title": "Determining the Sign of $$\\theta_2$$",
+        "text": "If the cost of chicken is generally lower than the other meats, what does this imply about the sign of $$\\theta_2$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Positive",
+            "Negative",
+            "Exactly $$0$$",
+            "Not enough info"
+        ]
+    }
+]

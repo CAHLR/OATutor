@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Logistic Regression Model",
+        "text": "The logistic regression model predicts the probability that a student prefers Kendrick $$(y=1)$$ over Drake $$(y=0)$$. The model uses the parameter vector $$\\theta=(-2, 2, 1)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fc-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp25-final-Q3e,Q3fc-h1"
+        ],
+        "title": "Formulating the Logistic Regression Equation",
+        "text": "The logistic regression equation is given by: $$\\ln\\left(\\frac{p}{1-p}\\right)=\\theta_0+\\theta_1 X_1+\\theta_2 X_2$$, where $$p$$ is the probability that $$y=1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fc-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp25-final-Q3e,Q3fc-h2"
+        ],
+        "title": "Setting the Probability Threshold",
+        "text": "To find the decision boundary, set the probability $$p$$ to $$0.5$$. This means $$\\ln\\left(\\frac{p}{1-p}\\right)=0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fc-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2X_1+X_2=2$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-sp25-final-Q3e,Q3fc-h3"
+        ],
+        "title": "Solving for the Decision Boundary",
+        "text": "Substitute the parameter values and set $$\\ln\\left(\\frac{p}{1-p}\\right)=0$$ to find the decision boundary equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

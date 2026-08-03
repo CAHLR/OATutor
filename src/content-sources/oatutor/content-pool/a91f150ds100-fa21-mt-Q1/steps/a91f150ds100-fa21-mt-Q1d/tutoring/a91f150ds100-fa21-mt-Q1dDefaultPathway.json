@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a91f150ds100-fa21-mt-Q1d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-hot Encoding",
+        "text": "One-hot encoding is a way to represent categorical data as binary vectors. Each unique category is represented by a vector where one element is '1' (hot) and all others are '0'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa21-mt-Q1d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-fa21-mt-Q1d-h1"
+        ],
+        "title": "Calculate the Number of 6-letter Combos",
+        "text": "To find the number of possible 6-letter combinations, consider that each position in the 6-letter sequence can be one of $$4$$ letters (T, G, C, A).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa21-mt-Q1d-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4^6$$"
+        ],
+        "dependencies": [
+            "a91f150ds100-fa21-mt-Q1d-h2"
+        ],
+        "title": "Compute the Total Number of 6-letter Combos",
+        "text": "Calculate the total number of possible 6-letter combinations using the formula for permutations with repetition.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa21-mt-Q1d-h4",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-fa21-mt-Q1d-h3"
+        ],
+        "title": "Determine the Dimensionality",
+        "text": "Each 6-letter combination is represented by a unique dimension in the one-hot encoding. Multiply the number of 6-letter combinations by the number of positions in the DNA string where a 6-letter combo can start.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa21-mt-Q1d-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3000-6+1$$"
+        ],
+        "dependencies": [
+            "a91f150ds100-fa21-mt-Q1d-h4"
+        ],
+        "title": "Calculate the Number of Starting Positions",
+        "text": "Determine how many positions a 6-letter combo can start in a 3000-letter DNA string.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa21-mt-Q1d-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4^6 \\left(3000-6+1\\right)$$"
+        ],
+        "dependencies": [
+            "a91f150ds100-fa21-mt-Q1d-h5"
+        ],
+        "title": "Compute the Total Dimensionality",
+        "text": "Multiply the number of 6-letter combinations by the number of starting positions to find the total dimensionality.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa21-mt-Q1d-h7",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-fa21-mt-Q1d-h6"
+        ],
+        "title": "Final Calculation",
+        "text": "Calculate the final number of dimensions using the formula derived from previous steps.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

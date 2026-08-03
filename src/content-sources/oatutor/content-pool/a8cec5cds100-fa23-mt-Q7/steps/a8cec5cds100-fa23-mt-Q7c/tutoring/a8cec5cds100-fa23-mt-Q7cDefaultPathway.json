@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a8cec5cds100-fa23-mt-Q7c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "Gradient descent is an optimization algorithm used to minimize a function by iteratively moving towards the steepest descent direction. The starting point can significantly affect the convergence and the solution found.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q7c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q7c-h1"
+        ],
+        "title": "Local Minima and Starting Points",
+        "text": "The choice of starting point can determine whether gradient descent converges to a local minimum or the global minimum. Different starting points can lead to different solutions, especially in non-convex functions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q7c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q7c-h2"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Consider the impact of starting points on the convergence of gradient descent. Does the starting point affect the final solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

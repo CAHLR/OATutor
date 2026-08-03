@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a410fc9row9p2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variable Types",
+        "text": "In Kippa's dataset, identify the types of variables present. Consider the nature of each column: 'Dis', 'League', and 'Goals'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row9p2d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row9p2d-h1"
+        ],
+        "title": "Types of Variables",
+        "text": "The variable 'Dis' is a quantitative variable, while 'League' is a qualitative variable. 'Goals' is also a quantitative variable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row9p2d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row9p2d-h2"
+        ],
+        "title": "Qualitative Nominal Variables",
+        "text": "A qualitative nominal variable is a categorical variable without a natural order. Check if 'League' fits this description.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row9p2d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a410fc9row9p2d-h3"
+        ],
+        "title": "Identifying Qualitative Nominal Variables",
+        "text": "Does the 'League' column represent a qualitative nominal variable?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a410fc9row9p2d-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a410fc9row9p2d-h4"
+        ],
+        "title": "Presence of Qualitative Nominal Variables",
+        "text": "Is there a qualitative nominal variable in Kippa's DataFrame?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

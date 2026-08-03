@@ -1,0 +1,18 @@
+{
+    "id": "aac8d73ds100-su20-final-Q11c",
+    "stepAnswer": [
+        "$$\\texttt{np.sqrt(np.mean((model.predict(X[valid\\_idx])}$$ $$-$$ $$\\texttt{y[valid\\_idx])**2))}$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "blank (iii)",
+    "stepBody": "Now, fill in the blank to complete the implementation of $$\\texttt{k\\_fold\\_ridge\\_CV,}$$ which takes in a value k and a list of $$\\texttt{lambda\\_choices,}$$ and returns the value in $$\\texttt{lambda\\_choices}$$ that minimizes cross-validation RMSE for a ridge regression model, trained on X and $$y$$.\\n\\n$$\\texttt{lambda\\_choices}$$ $$=$$ [1000, $$100$$, $$10$$, $$1$$, $$0.1$$, $$0.01$$, $$0.001]$$\\n\\ndef $$\\texttt{k\\_fold\\_ridge\\_CV(k,}$$ $$\\texttt{lambda\\_choices):}$$\\n$$\\texttt{train\\_folds,}$$ $$\\texttt{valid\\_folds}$$ $$=$$ $$\\texttt{create\\_folds(k)}$$\\n$$\\texttt{all\\_errors}$$ $$=$$ []\\nfor lamb in $$\\texttt{lambda\\_choices:}$$\\n$$\\texttt{lambda\\_errors}$$ $$=$$ []\\nfor $$\\texttt{train\\_idx,}$$ $$\\texttt{valid\\_idx}$$ in $$\\texttt{zip(train\\_folds,}$$ $$\\texttt{valid\\_folds):}$$\\nmodel $$=$$ lm.Ridge(alpha $$=$$ lamb)\\n$$\\texttt{model.fit(X[train\\_idx],}$$ $$\\texttt{y[train\\_idx])}$$\\nrmse $$=$$ [blank](iii)[blank]\\n$$\\texttt{lambda\\_errors.append(rmse)}$$\\n$$\\texttt{all\\_errors.append(np.mean(lambda\\_errors))}$$\\nreturn $$\\texttt{lambda\\_choices[np.argmin(errors)]}$$\\n\\nWhat goes in blank (iii)?",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "$$\\texttt{np.sqrt(np.mean((model.predict(X[valid\\_idx])}$$ $$-$$ $$\\texttt{y[valid\\_idx])**2))}$$",
+        "$$\\texttt{np.mean((model.predict(X[valid\\_idx])}$$ $$-$$ $$\\texttt{y[valid\\_idx])**2)}$$",
+        "$$\\texttt{np.sqrt(np.mean((model.predict(X[train\\_idx])}$$ $$-$$ $$\\texttt{y[train\\_idx])**2))}$$",
+        "$$\\texttt{np.sqrt(np.mean((y[valid\\_idx]}$$ $$-$$ $$\\texttt{X[valid\\_idx]}$$ @ $$\\texttt{lm.coef\\_}$$ $$-$$ $$\\texttt{lm.intercept\\_)**2)}$$ + lamb times $$\\texttt{np.sum(lm.coef\\_**2))}$$",
+        "$$\\texttt{np.mean(np.abs(model.predict(X[valid\\_idx])}$$ $$-$$ $$\\texttt{y[valid\\_idx]))}$$"
+    ]
+}

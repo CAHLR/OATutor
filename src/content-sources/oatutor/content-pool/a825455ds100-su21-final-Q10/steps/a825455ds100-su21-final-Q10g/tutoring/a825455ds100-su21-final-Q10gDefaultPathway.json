@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a825455ds100-su21-final-Q10g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Spectral Clustering",
+        "text": "Spectral clustering involves transforming the data into a new space using eigenvectors of a matrix derived from the data. Once in this new space, a clustering algorithm is applied to group the data points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su21-final-Q10g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-su21-final-Q10g-h1"
+        ],
+        "title": "Choosing the Right Clustering Algorithm",
+        "text": "After transforming the data into spectral coordinates, we need a clustering algorithm that can effectively partition the data into distinct groups. Consider algorithms that are commonly used for partitioning data into a specified number of clusters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su21-final-Q10g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "k means clustering"
+        ],
+        "dependencies": [
+            "a825455ds100-su21-final-Q10g-h2"
+        ],
+        "title": "Applying Clustering to Spectral Coordinates",
+        "text": "Which clustering algorithm is typically used after calculating spectral coordinates to determine the clusters?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "agglomerative clustering",
+            "k means clustering"
+        ]
+    }
+]

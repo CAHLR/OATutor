@@ -1,0 +1,104 @@
+[
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Logistic Regression Model",
+        "text": "The logistic regression model predicts the probability that a student prefers Kendrick $$(y=1)$$ or Drake $$(y=0)$$ using the formula: $$P(y=1|X)=\\frac{1}{1+e^{-\\left(\\theta_0+\\theta_1 X_1+\\theta_2 X_2\\right)}}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fb-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp25-final-Q3e,Q3fb-h1"
+        ],
+        "title": "Calculate the Linear Combination",
+        "text": "Substitute the given values into the linear combination: $$\\theta_0+\\theta_1 X_1+\\theta_2 X_2$$. Use $$theta=(-2, 2, 1)$$, $$X_1=1$$, and $$X_2=0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fb-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-sp25-final-Q3e,Q3fb-h2"
+        ],
+        "title": "Compute the Linear Combination",
+        "text": "Calculate the linear combination using the formula: $$-2+2\\times1+1\\times0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fb-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp25-final-Q3e,Q3fb-h3"
+        ],
+        "title": "Calculate the Probability",
+        "text": "Use the logistic function to calculate the probability: $$P(y=1|X)=\\frac{1}{1+e^{-0}}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fb-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.5$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-sp25-final-Q3e,Q3fb-h4"
+        ],
+        "title": "Compute the Probability",
+        "text": "Calculate the probability using the formula: $$\\frac{1}{1+e^0}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fb-h6",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp25-final-Q3e,Q3fb-h5"
+        ],
+        "title": "Compare with the Threshold",
+        "text": "Compare the calculated probability with the threshold of $$0.3$$ to determine the classification.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fb-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Kendrick"
+        ],
+        "dependencies": [
+            "a5dd512ds100-sp25-final-Q3e,Q3fb-h6"
+        ],
+        "title": "Determine the Classification",
+        "text": "Since $$0.5$$ is greater than $$0.3$$, the student is classified as preferring Kendrick.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Drake",
+            "Kendrick",
+            "On the boundary"
+        ]
+    }
+]

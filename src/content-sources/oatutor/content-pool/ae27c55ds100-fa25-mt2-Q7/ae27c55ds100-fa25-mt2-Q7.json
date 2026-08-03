@@ -1,0 +1,11 @@
+{
+    "id": "ae27c55ds100-fa25-mt2-Q7",
+    "title": "Sleep Now, Predict Later",
+    "body": "The Data $$100$$ team decides to explore the relationship between hours of sleep, whether or not the student has a major affiliated with CDSS, and GPA. The team collected the following data for $$100$$ UC Berkeley undergraduates:\\n\u2022 $$\\text{hours\\_sleep}:$$ The average amount of sleep the student gets every night. (type: np.float)\\n\u2022 $$\\text{is\\_cdss}:$$ An indicator of whether the individual has a major affiliated with CDSS. A value of $$1$$ indicates that the major is affiliated with CDSS, and $$0$$ indicates that it is not. (type: int)\\n\u2022 $$\\text{gpa}:$$ The GPA of the student. (type: np.float)\\nThe team fits the following multiple regression model to the collected data:\\n$$\\hat{y}=\\theta_0+\\theta_1 x_1+\\theta_2 x_2$$\\nwhere $$y$$ is gpa, $$x_1$$ is hours sleep and $$x_2$$ is is cdss.\\nSuppose the optimal estimated parameters are $$\\hat{\\theta}_0=1.2$$ and $$\\hat{\\theta}_1=0.23$$ and $$\\hat{\\theta}_2=0.5.$$",
+    "variabilization": {},
+    "oer": "https://ds100.org/su26/past-exams/",
+    "license": "",
+    "lesson": "Inference B",
+    "lessonId": "1MrItcsx-pXEF-1iIvO33bSW",
+    "courseName": "Midterm 3 Worksheets"
+}

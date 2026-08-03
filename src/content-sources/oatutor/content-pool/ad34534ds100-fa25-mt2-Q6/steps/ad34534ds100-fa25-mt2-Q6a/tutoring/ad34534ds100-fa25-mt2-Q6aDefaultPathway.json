@@ -1,0 +1,48 @@
+[
+    {
+        "id": "ad34534ds100-fa25-mt2-Q6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias in Model A",
+        "text": "Adding a new feature that is the square of an existing feature can potentially capture more complex relationships in the data. How might this affect the bias of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q6a-h1"
+        ],
+        "title": "Effect of Adding Features on Bias",
+        "text": "When you add a feature to a model, especially one that captures non-linear relationships, it can reduce the bias. Why might this be the case?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q6a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease only"
+        ],
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q6a-h2"
+        ],
+        "title": "Analyzing the Effect on (Model Bias)**2",
+        "text": "Consider how adding a feature that is the square of an existing feature might allow the model to fit the data more closely. What is the possible effect on (Model Bias)**2?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase only",
+            "Decrease only",
+            "Increase and Decrease",
+            "Neither Increase nor Decrease",
+            "Cannot be determined"
+        ]
+    }
+]

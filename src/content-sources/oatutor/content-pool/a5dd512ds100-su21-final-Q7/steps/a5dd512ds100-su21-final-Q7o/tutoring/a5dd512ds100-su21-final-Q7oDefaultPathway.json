@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a5dd512ds100-su21-final-Q7o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Data Distribution",
+        "text": "Observe the distribution of the data points. The orange points belong to class $$1$$, and the blue points belong to class $$0$$. Notice the pattern they form.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q7o-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q7o-h1"
+        ],
+        "title": "Nature of the Decision Boundary",
+        "text": "Consider the shape of the decision boundary that would separate the two classes effectively. Is it linear or non-linear?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q7o-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q7o-h2"
+        ],
+        "title": "Logistic Regression Capabilities",
+        "text": "Logistic regression is a linear classifier. Can it create non-linear decision boundaries?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q7o-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q7o-h3"
+        ],
+        "title": "Decision Boundary Analysis",
+        "text": "Given that logistic regression is a linear classifier, can it generate a circular decision boundary like the one needed here?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

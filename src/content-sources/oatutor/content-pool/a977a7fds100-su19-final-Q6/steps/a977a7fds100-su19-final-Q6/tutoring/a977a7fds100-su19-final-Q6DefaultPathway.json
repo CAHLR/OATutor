@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a977a7fds100-su19-final-Q6\u007f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plots",
+        "text": "Look at how the mean squared error (MSE) changes with the degree of the polynomial. Consider both training and validation errors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6\u007f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6\u007f-h1"
+        ],
+        "title": "Identifying Overfitting",
+        "text": "Overfitting occurs when the model performs well on training data but poorly on validation data. Which plot shows this behavior?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6\u007f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6\u007f-h1"
+        ],
+        "title": "Identifying Underfitting",
+        "text": "Underfitting occurs when the model performs poorly on both training and validation data. Which plot shows this behavior?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6\u007f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The MSE decreases initially and then increases, indicating a balance between underfitting and overfitting."
+        ],
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6\u007f-h1"
+        ],
+        "title": "Analyzing Plot B",
+        "text": "In Plot B, how does the MSE change as the degree increases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The MSE decreases initially and then increases",
+            "The MSE decreases initially and then increases, indicating a balance between underfitting and overfitting.",
+            "The MSE increases steadily",
+            "The MSE remains constant"
+        ]
+    }
+]

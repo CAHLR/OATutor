@@ -1,0 +1,55 @@
+[
+    {
+        "id": "ade7df0ds100-sp21-final-Q9g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Data",
+        "text": "The table shows tweets with counts of happy and sad emojis, along with a label indicating if the tweet is happy (1) or sad (0).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q9g-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Logistic Regression Basics",
+        "text": "Logistic regression is used for binary classification. It predicts the probability that a given input point belongs to a certain class.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q9g-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "ROC Curve",
+        "text": "The ROC curve is a graphical plot that illustrates the diagnostic ability of a binary classifier system as its discrimination threshold is varied.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q9g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A"
+        ],
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q9g-h3"
+        ],
+        "title": "Analyzing ROC Curves",
+        "text": "Which model has the lowest area under the ROC curve?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "Cannot be determined"
+        ]
+    }
+]

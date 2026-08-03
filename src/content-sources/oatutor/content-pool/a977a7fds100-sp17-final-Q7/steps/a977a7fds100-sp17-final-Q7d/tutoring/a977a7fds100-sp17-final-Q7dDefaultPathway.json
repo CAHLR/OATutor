@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a977a7fds100-sp17-final-Q7d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bernoulli Sampling",
+        "text": "Bernoulli sampling is a probabilistic method where each row in the table is included in the sample with a specified probability. This method is useful when you want a random sample of the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp17-final-Q7d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-sp17-final-Q7d-h1"
+        ],
+        "title": "Why LIMIT might not be suitable",
+        "text": "Using LIMIT in a SQL query retrieves a fixed number of rows from the top of the result set. This does not provide a random sample and can lead to biased results if the data is ordered.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp17-final-Q7d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a977a7fds100-sp17-final-Q7d-h2"
+        ],
+        "title": "Evaluating Emily's Suggestion",
+        "text": "Consider the implications of using LIMIT instead of a sampling method. Would it provide a representative sample of the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,87 @@
+[
+    {
+        "id": "ade7df0ds100-sp24-final-Q8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Dataset",
+        "text": "The dataset consists of $$5$$ data points with two features, $$x_1$$ and $$x_2$$, and a label $$y$$. The goal is to determine the maximum accuracy a logistic regression model can achieve.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp24-final-Q8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp24-final-Q8a-h1"
+        ],
+        "title": "Analyzing the Labels",
+        "text": "Count how many times each label (0 or 1) appears in the dataset. This will help in understanding the distribution of the labels.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp24-final-Q8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp24-final-Q8a-h2"
+        ],
+        "title": "Calculating Maximum Accuracy",
+        "text": "To achieve maximum accuracy, the model should predict the most frequent label for all data points. Determine which label is more frequent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp24-final-Q8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-sp24-final-Q8a-h2"
+        ],
+        "title": "Count the Labels",
+        "text": "How many times does the label $$1$$ appear in the dataset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp24-final-Q8a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-sp24-final-Q8a-h4"
+        ],
+        "title": "Determine the Most Frequent Label",
+        "text": "Which label is more frequent in the dataset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp24-final-Q8a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.8$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-sp24-final-Q8a-h5"
+        ],
+        "title": "Calculate Maximum Accuracy",
+        "text": "What is the maximum accuracy if the model predicts the most frequent label for all data points?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

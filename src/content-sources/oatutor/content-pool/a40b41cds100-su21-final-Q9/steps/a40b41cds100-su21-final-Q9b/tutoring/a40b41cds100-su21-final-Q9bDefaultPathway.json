@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a40b41cds100-su21-final-Q9b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Agglomerative Clustering",
+        "text": "Agglomerative clustering starts with each point as its own cluster and merges the closest clusters step by step until the desired number of clusters is reached.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-su21-final-Q9b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-su21-final-Q9b-h1"
+        ],
+        "title": "Distance Criterion",
+        "text": "The distance between clusters is determined by the maximum distance between points from each cluster. This is known as complete linkage.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-su21-final-Q9b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-su21-final-Q9b-h2"
+        ],
+        "title": "Finding the Closest Clusters",
+        "text": "Look at the distance matrix. Identify the pair of clusters with the smallest distance between them.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-su21-final-Q9b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "AE"
+        ],
+        "dependencies": [
+            "a40b41cds100-su21-final-Q9b-h3"
+        ],
+        "title": "Identify the Closest Pair",
+        "text": "Which pair of points has the smallest distance between them?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "AB",
+            "AC",
+            "AD",
+            "AE",
+            "BC"
+        ]
+    },
+    {
+        "id": "a40b41cds100-su21-final-Q9b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-su21-final-Q9b-h4"
+        ],
+        "title": "Merging Clusters",
+        "text": "After identifying the closest pair, merge them into a single cluster. The new cluster is named after the lowest letter in the pair.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

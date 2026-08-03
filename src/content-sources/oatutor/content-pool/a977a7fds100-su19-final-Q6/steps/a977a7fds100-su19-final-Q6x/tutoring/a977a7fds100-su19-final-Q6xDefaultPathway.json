@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a977a7fds100-su19-final-Q6x-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variance",
+        "text": "What happens to the variance of a model when more data points are added?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6x-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6x-h1"
+        ],
+        "title": "Effect of More Data",
+        "text": "Adding more data points generally provides more information about the underlying distribution. How does this affect the variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6x-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6x-h2"
+        ],
+        "title": "Bias vs. Variance Trade-off",
+        "text": "Consider the bias-variance trade-off. Does adding more data points typically increase or decrease variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6x-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6x-h3"
+        ],
+        "title": "Analyzing the Statement",
+        "text": "Does collecting more data points increase the variance of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

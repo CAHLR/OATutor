@@ -1,0 +1,78 @@
+[
+    {
+        "id": "ae36232ds100-su25-final-Q2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE and MAE",
+        "text": "Mean Squared Error (MSE) and Mean Absolute Error (MAE) are both measures of prediction accuracy. MSE squares the errors before averaging, while MAE takes the absolute value of errors before averaging.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2c-h1"
+        ],
+        "title": "Properties of MSE",
+        "text": "MSE is sensitive to outliers because it squares the errors, which can disproportionately increase the error measure if there are large deviations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2c-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2c-h1"
+        ],
+        "title": "Properties of MAE",
+        "text": "MAE is less sensitive to outliers compared to MSE because it only considers the absolute value of errors, not their square.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "MAE"
+        ],
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2c-h2"
+        ],
+        "title": "Choosing Between MSE and MAE",
+        "text": "If Jake wants to minimize the impact of outliers, which error measure should he choose?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "MSE",
+            "MAE"
+        ]
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "There is a single global minimum."
+        ],
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2c-h2"
+        ],
+        "title": "Impact of Convexity",
+        "text": "Since the MSE loss surface is always convex, what does this imply about the optimization process?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "There is a single global minimum.",
+            "There are multiple local minima."
+        ]
+    }
+]

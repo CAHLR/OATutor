@@ -1,0 +1,74 @@
+[
+    {
+        "id": "ae27c55ds100-sp25-final-Q3a,Q3b,Q3cd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Bootstrap Distribution",
+        "text": "The bootstrap distribution is used to estimate the variability of a statistic by resampling with replacement from the original data. In this case, it helps us understand the variability of the difference in sample means, \\( \\bar{K}-\\bar{D} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-sp25-final-Q3a,Q3b,Q3cd-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-sp25-final-Q3a,Q3b,Q3cd-h1"
+        ],
+        "title": "Interpreting the Null Hypothesis",
+        "text": "The null hypothesis \\( \\mu_K=\\mu_D \\) suggests that the mean listening times for Kendrick and Drake are equal. If the bootstrap distribution is centered around zero, it supports the null hypothesis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-sp25-final-Q3a,Q3b,Q3cd-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "\\hat{\\delta}_{obs}=\\bar{K}-\\bar{D}"
+        ],
+        "dependencies": [
+            "ae27c55ds100-sp25-final-Q3a,Q3b,Q3cd-h2"
+        ],
+        "title": "Calculating the Observed Difference",
+        "text": "Calculate the observed difference in sample means: \\( \\hat{\\delta}_{obs}=\\bar{K}-\\bar{D} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-sp25-final-Q3a,Q3b,Q3cd-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-sp25-final-Q3a,Q3b,Q3cd-h3"
+        ],
+        "title": "Analyzing the Bootstrap Distribution",
+        "text": "Look at the spread and center of the bootstrap distribution. If it is centered around zero, it suggests that the observed difference could be due to random sampling variability.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-sp25-final-Q3a,Q3b,Q3cd-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ae27c55ds100-sp25-final-Q3a,Q3b,Q3cd-h4"
+        ],
+        "title": "Conclusion from the Bootstrap Distribution",
+        "text": "Based on the bootstrap distribution, determine if the observed difference \\( \\hat{\\delta}_{obs} \\) is likely under the null hypothesis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

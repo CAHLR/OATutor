@@ -1,0 +1,45 @@
+[
+    {
+        "id": "ad34534ds100-sp19-final-Q3e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatterplot",
+        "text": "Observe the scatterplot carefully. Notice the pattern of the data points. Consider how the function f(x) might transform the x-values to fit the y-values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp19-final-Q3e-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp19-final-Q3e-h1"
+        ],
+        "title": "Considering $$f(x)=-x$$",
+        "text": "Think about how the function $$f(x)=-x$$ would transform the x-values. Would this transformation allow the model to fit the data points?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp19-final-Q3e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp19-final-Q3e-h2"
+        ],
+        "title": "Applying $$f(x)=-x$$",
+        "text": "If $$f(x)=-x$$, then the model becomes $$y_i=\\beta_0+x_i \\beta_1-x_i \\beta_2$$. Can you choose $$\\beta_0$$, $$\\beta_1$$, and $$\\beta_2$$ to fit the data points?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "id": "ad34534ds100-fa21-mt-Q1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding is a method to convert categorical data into a numerical format. Each category is represented by a binary vector, where only one element is '1' and the rest are '0'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa21-mt-Q1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa21-mt-Q1a-h1"
+        ],
+        "title": "Why One-Hot Encode Codons?",
+        "text": "Each codon is a sequence of $$3$$ letters, and there are $$64$$ possible codons. By one-hot encoding each codon, we can capture the unique information each codon provides, which is crucial for understanding the DNA sequence.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa21-mt-Q1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa21-mt-Q1a-h2"
+        ],
+        "title": "Compact Representation",
+        "text": "A compact representation means using the least amount of data to capture the necessary information. One-hot encoding each codon is compact because it uses a fixed size for each codon, regardless of the DNA string length.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

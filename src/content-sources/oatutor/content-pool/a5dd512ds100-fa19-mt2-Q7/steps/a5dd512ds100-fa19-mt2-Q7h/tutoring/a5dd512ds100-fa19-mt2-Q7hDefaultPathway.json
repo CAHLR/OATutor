@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Thresholds",
+        "text": "When you increase the threshold in a classification model, you are essentially making it harder for the model to classify a positive instance. This can affect precision, recall, and accuracy.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-mt2-Q7h-h1"
+        ],
+        "title": "Effect on Precision",
+        "text": "Precision is the ratio of true positive predictions to the total positive predictions. Increasing the threshold can lead to fewer positive predictions, which might increase precision if the false positives decrease more than the true positives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7h-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-mt2-Q7h-h1"
+        ],
+        "title": "Effect on Recall",
+        "text": "Recall is the ratio of true positive predictions to the total actual positives. Increasing the threshold usually decreases recall because fewer true positives are predicted.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7h-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-mt2-Q7h-h1"
+        ],
+        "title": "Effect on Accuracy",
+        "text": "Accuracy is the ratio of correctly predicted instances to the total instances. Increasing the threshold can increase accuracy if the increase in true negatives outweighs the decrease in true positives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7h-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-mt2-Q7h-h4"
+        ],
+        "title": "Analyzing the Effects",
+        "text": "Consider how increasing the threshold affects the number of true positives, false positives, true negatives, and false negatives. How do these changes impact precision, recall, and accuracy?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

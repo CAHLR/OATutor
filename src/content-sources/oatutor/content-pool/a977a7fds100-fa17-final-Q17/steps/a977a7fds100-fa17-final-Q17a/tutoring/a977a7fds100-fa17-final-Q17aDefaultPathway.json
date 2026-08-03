@@ -1,0 +1,96 @@
+[
+    {
+        "id": "a977a7fds100-fa17-final-Q17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Graph",
+        "text": "The graph shows two curves labeled A and B. The horizontal axis represents the regularization parameter lambda, and the vertical axis represents error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa17-final-Q17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa17-final-Q17a-h1"
+        ],
+        "title": "Interpreting Curve A",
+        "text": "As lambda increases, curve A decreases. What does this suggest about the relationship between lambda and the error represented by curve A?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa17-final-Q17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa17-final-Q17a-h1"
+        ],
+        "title": "Interpreting Curve B",
+        "text": "As lambda increases, curve B increases. What does this suggest about the relationship between lambda and the error represented by curve B?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa17-final-Q17a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa17-final-Q17a-h2"
+        ],
+        "title": "Bias and Variance",
+        "text": "In the context of regularization, increasing lambda typically reduces model complexity. How does this affect bias and variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa17-final-Q17a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(A) is the error due to $${Bias}^2$$"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa17-final-Q17a-h4"
+        ],
+        "title": "Identifying Curve A",
+        "text": "Based on the behavior of curve A as lambda increases, what type of error does it represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "(A) is the Test Error and (B) is the error due to $${Bias}^2$$.",
+            "(A) is the error due to $${Bias}^2$$",
+            "(A) is the error due to $${Bias}^2$$ and (B) is the error due to Model Variance.",
+            "(A) is the error due to Model Variance and (B) is the Training Error",
+            "(A) is the error due to Model Variance and (B) is the error due to $${Bias}^2$$."
+        ]
+    },
+    {
+        "id": "a977a7fds100-fa17-final-Q17a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(B) is the error due to Model Variance"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa17-final-Q17a-h5"
+        ],
+        "title": "Identifying Curve B",
+        "text": "Based on the behavior of curve B as lambda increases, what type of error does it represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "(A) is the Test Error and (B) is the error due to $${Bias}^2$$.",
+            "(A) is the error due to $${Bias}^2$$ and (B) is the error due to Model Variance.",
+            "(A) is the error due to Model Variance and (B) is the Training Error",
+            "(A) is the error due to Model Variance and (B) is the error due to $${Bias}^2$$.",
+            "(B) is the error due to Model Variance"
+        ]
+    }
+]

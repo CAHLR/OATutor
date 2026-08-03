@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ade7df0ds100-su21-final-Q6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding is a process of converting categorical data variables so they can be provided to machine learning algorithms to improve predictions. Each category is transformed into a binary vector.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q6b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q6b-h1"
+        ],
+        "title": "Alphabetical Order of Colors",
+        "text": "The colors in the list are blue, green, pink, purple, and red. Arrange them alphabetically to determine the order of columns in the design matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q6b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q6b-h2"
+        ],
+        "title": "Structure of the Design Matrix",
+        "text": "Each color will have its own column in the design matrix. For each data point, the column corresponding to the color will have a $$1$$, and all other columns will have 0s.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q6b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q6b-h3"
+        ],
+        "title": "Calculate the Number of Zeros",
+        "text": "Given that there are $$5$$ colors and $$5$$ data points, calculate the total number of entries in the design matrix. Then, determine how many of these entries are zeros.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

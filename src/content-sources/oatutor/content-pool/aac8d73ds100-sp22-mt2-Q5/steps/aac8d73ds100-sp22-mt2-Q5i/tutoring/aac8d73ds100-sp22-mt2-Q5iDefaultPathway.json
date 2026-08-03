@@ -1,0 +1,48 @@
+[
+    {
+        "id": "aac8d73ds100-sp22-mt2-Q5i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Exponential Regularization",
+        "text": "Exponential regularization involves the term $${10}^{\\theta_i}$$. How does this affect the penalty on coefficients compared to L1 and L2 regularization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp22-mt2-Q5i-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-sp22-mt2-Q5i-h1"
+        ],
+        "title": "Comparing Penalties on Positive Coefficients",
+        "text": "Consider a large positive coefficient $$\\theta_i$$. How does $${10}^{\\theta_i}$$ compare to $${\\theta_i}^2$$ (L2) and $$|\\theta_i|$$ (L1)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp22-mt2-Q5i-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-sp22-mt2-Q5i-h2"
+        ],
+        "title": "Comparing Penalties on Negative Coefficients",
+        "text": "For a large negative coefficient $$\\theta_i$$, how does $${10}^{\\theta_i}$$ compare to $${\\theta_i}^2$$ (L2) and $$|\\theta_i|$$ (L1)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp22-mt2-Q5i-h4",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-sp22-mt2-Q5i-h3"
+        ],
+        "title": "Effectiveness in Driving Parameters to Zero",
+        "text": "Which regularization method is more effective in driving parameters close to zero? Consider the nature of each regularization term.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

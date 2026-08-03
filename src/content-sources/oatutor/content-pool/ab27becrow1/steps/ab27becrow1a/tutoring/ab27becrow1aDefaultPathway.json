@@ -1,0 +1,41 @@
+[
+    {
+        "id": "ab27becrow1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Regex",
+        "text": "The regular expression \\d+ is used to match one or more digits in a sequence. In the sentence, look for any numbers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ab27becrow1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "71, 1954, NA"
+        ],
+        "dependencies": [
+            "ab27becrow1a-h1"
+        ],
+        "title": "Identify the Matches",
+        "text": "Identify the numbers in the sentence \"It has been $$71$$ years since the year 1954.\" that match the regex \\d+.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ab27becrow1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab27becrow1a-h2"
+        ],
+        "title": "Order of Matches",
+        "text": "Remember to list the matches in the order they appear in the sentence. If there are no more matches, fill the remaining boxes with NA.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

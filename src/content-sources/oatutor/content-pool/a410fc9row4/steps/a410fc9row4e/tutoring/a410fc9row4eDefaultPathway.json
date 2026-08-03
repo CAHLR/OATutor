@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a410fc9row4e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L1 Regularization",
+        "text": "L1 regularization, also known as Lasso, adds a penalty equal to the absolute value of the magnitude of coefficients to the loss function. This can lead to some coefficients being exactly zero, effectively selecting a simpler model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row4e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row4e-h1"
+        ],
+        "title": "Uniqueness of OLS Solution",
+        "text": "In the context of linear regression, the Ordinary Least Squares (OLS) solution is unique if the matrix of features (X) is full rank, meaning all columns are linearly independent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row4e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row4e-h2"
+        ],
+        "title": "Effect of L1 Regularization on Uniqueness",
+        "text": "L1 regularization can lead to a unique solution even when the feature matrix is not full rank, as it introduces a penalty that can help in selecting a unique set of coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row4e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a410fc9row4e-h3"
+        ],
+        "title": "Analyzing the Given Statement",
+        "text": "Given the statement: 'With L1 regularization $$\\lambda>0$$, the OLS solution is guaranteed to be unique.' Is this statement always true?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

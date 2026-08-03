@@ -1,0 +1,82 @@
+[
+    {
+        "id": "acab12dds100-fa18-final-Q6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "You have a box with tickets worth $$0$$ and $$3$$ dollars. You draw $$3$$ tickets with replacement. Think about the possible outcomes and their probabilities.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa18-final-Q6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa18-final-Q6a-h1"
+        ],
+        "title": "Possible Outcomes",
+        "text": "Consider the possible sums of the values of the tickets you draw. What are the possible sums and how do they relate to the sample mean?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa18-final-Q6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa18-final-Q6a-h2"
+        ],
+        "title": "Calculating Probabilities",
+        "text": "Calculate the probability of each possible sample mean. Remember, you are drawing with replacement.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa18-final-Q6a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "0,1,2,3"
+        ],
+        "dependencies": [
+            "acab12dds100-fa18-final-Q6a-h3"
+        ],
+        "title": "Sample Mean Values",
+        "text": "List the possible values for the sample mean when drawing $$3$$ tickets.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa18-final-Q6a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "1/8,3/8,3/8,1/8"
+        ],
+        "dependencies": [
+            "acab12dds100-fa18-final-Q6a-h4"
+        ],
+        "title": "Probability of Sample Mean",
+        "text": "Calculate the probability for each sample mean value: $$0$$, $$1$$, $$2$$, and $$3$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa18-final-Q6a-h6",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa18-final-Q6a-h5"
+        ],
+        "title": "Plotting the Distribution",
+        "text": "Use the sample mean values and their probabilities to plot the sampling distribution. Label the axes appropriately.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

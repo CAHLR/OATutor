@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ae36232ds100-sp24-mt-Q5i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean Cubed Error",
+        "text": "The Mean Cubed Error is calculated as the average of the cubed differences between the actual and predicted values. This means that the error is raised to the power of $$3$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp24-mt-Q5i-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp24-mt-Q5i-h1"
+        ],
+        "title": "Impact of Cubing the Error",
+        "text": "Cubing the error means that the sign of the error (whether positive or negative) will affect the result. Consider how this impacts underpredictions and overpredictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp24-mt-Q5i-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp24-mt-Q5i-h2"
+        ],
+        "title": "Comparing Underpredictions and Overpredictions",
+        "text": "When the error is negative (underprediction), cubing it will result in a larger negative value compared to a positive error (overprediction) of the same magnitude.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp24-mt-Q5i-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Underpredictions result in larger negative values."
+        ],
+        "dependencies": [
+            "ae36232ds100-sp24-mt-Q5i-h3"
+        ],
+        "title": "Analyzing the Loss Function",
+        "text": "Consider the expression (y_i-hat{y}_i)**3. What happens when $$y_i$$ is less than hat{y}_i compared to when $$y_i$$ is greater than hat{y}_i?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

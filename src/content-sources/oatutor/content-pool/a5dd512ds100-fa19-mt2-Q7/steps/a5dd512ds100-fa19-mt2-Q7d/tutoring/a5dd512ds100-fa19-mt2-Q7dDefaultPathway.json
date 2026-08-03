@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Precision",
+        "text": "Precision is the ratio of true positive predictions to the total number of positive predictions (true positives + false positives).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-mt2-Q7d-h1"
+        ],
+        "title": "Effect of Increasing Threshold",
+        "text": "Increasing the threshold generally means that fewer instances are classified as positive. This can affect precision, recall, and accuracy.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-mt2-Q7d-h2"
+        ],
+        "title": "Precision and Threshold Relationship",
+        "text": "When the threshold is increased, the number of false positives usually decreases, which can lead to an increase in precision.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7d-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.8$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-mt2-Q7d-h3"
+        ],
+        "title": "Precision Calculation",
+        "text": "If the number of true positives is $$80$$ and false positives is $$20$$, what is the precision?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7d-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-mt2-Q7d-h3"
+        ],
+        "title": "Recall and Threshold Relationship",
+        "text": "Increasing the threshold can decrease recall because fewer true positives are identified.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7d-h5",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-mt2-Q7d-h4"
+        ],
+        "title": "Accuracy and Threshold Relationship",
+        "text": "Accuracy can either increase or decrease depending on how the true positives, false positives, true negatives, and false negatives change.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

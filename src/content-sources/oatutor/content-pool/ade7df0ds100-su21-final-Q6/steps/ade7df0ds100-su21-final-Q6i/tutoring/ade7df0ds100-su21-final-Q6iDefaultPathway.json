@@ -1,0 +1,82 @@
+[
+    {
+        "id": "ade7df0ds100-su21-final-Q6i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Methods",
+        "text": "Gradient methods are used to optimize the parameters of a model by minimizing the loss function. They iteratively update the parameters in the direction that reduces the loss.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q6i-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q6i-h1"
+        ],
+        "title": "Types of Gradient Descent",
+        "text": "There are three main types of gradient descent: batch gradient descent, stochastic gradient descent, and mini-batch gradient descent. Each has its own advantages and disadvantages.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q6i-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q6i-h2"
+        ],
+        "title": "Batch Gradient Descent",
+        "text": "Batch gradient descent uses the entire dataset to compute the gradient of the loss function. This can be computationally expensive for large datasets.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q6i-h4",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q6i-h2"
+        ],
+        "title": "Stochastic Gradient Descent",
+        "text": "Stochastic gradient descent (SGD) updates the model parameters for each training example. This can lead to faster convergence but may introduce more noise in the updates.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q6i-h5",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q6i-h2"
+        ],
+        "title": "Mini-Batch Gradient Descent",
+        "text": "Mini-batch gradient descent is a compromise between batch and stochastic gradient descent. It updates the model parameters using a small subset of the data, called a mini-batch.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q6i-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Stochastic gradient descent (batch $$size=32)$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q6i-h5"
+        ],
+        "title": "Choosing the Right Gradient Method",
+        "text": "Given the large dataset size, which gradient method would be most efficient and effective?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Stochastic gradient descent (batch $$size=1)$$",
+            "Gradient descent, on the complete dataset",
+            "Stochastic gradient descent (batch $$size=32)$$"
+        ]
+    }
+]

@@ -1,0 +1,104 @@
+[
+    {
+        "id": "ade7df0ds100-su19-final-Q8d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The problem involves assigning probabilities to two sets of points and determining the correct ROC curve.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su19-final-Q8d-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su19-final-Q8d-h1"
+        ],
+        "title": "What is an ROC Curve?",
+        "text": "An ROC curve is a graphical plot that illustrates the diagnostic ability of a binary classifier system as its discrimination threshold is varied.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su19-final-Q8d-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su19-final-Q8d-h2"
+        ],
+        "title": "Probability Assignment",
+        "text": "The first $$50$$ points have a probability of $$0.3$$ for $$Y=1$$, and the second $$50$$ points have a probability of $$0.4$$ for $$Y=1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su19-final-Q8d-h4",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su19-final-Q8d-h3"
+        ],
+        "title": "Interpreting the ROC Curve",
+        "text": "Consider how the probabilities assigned to the points affect the true positive rate and false positive rate.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su19-final-Q8d-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.35$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su19-final-Q8d-h4"
+        ],
+        "title": "Calculate True Positive Rate",
+        "text": "Calculate the true positive rate for the given probabilities.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su19-final-Q8d-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.3$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su19-final-Q8d-h5"
+        ],
+        "title": "Calculate False Positive Rate",
+        "text": "Calculate the false positive rate for the given probabilities.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su19-final-Q8d-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "ROC A"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su19-final-Q8d-h6"
+        ],
+        "title": "Determine the Correct ROC Curve",
+        "text": "Based on the true positive rate and false positive rate, determine which ROC curve is correct.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "ROC A",
+            "ROC B",
+            "ROC C"
+        ]
+    }
+]

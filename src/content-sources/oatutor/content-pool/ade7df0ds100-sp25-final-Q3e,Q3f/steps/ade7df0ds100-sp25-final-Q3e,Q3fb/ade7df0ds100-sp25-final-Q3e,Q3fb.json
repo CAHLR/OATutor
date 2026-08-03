@@ -1,0 +1,16 @@
+{
+    "id": "ade7df0ds100-sp25-final-Q3e,Q3fb",
+    "stepAnswer": [
+        "Kendrick"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Using a probability threshold of $$0.3$$, which rapper would student $$s$$ be classified as preferring?",
+    "stepBody": "You build a logistic regression model using $$X_1$$ and $$X_2$$ to predict whether a student prefers Kendrick, coded as $$y_i=1, $$ or Drake, coded as $$y_i=0$$\\nThe model uses the following parameter vector\\n$$\\theta=(-2, 2, 1)$$\\nand follows the standard logistic regression form.\\nSuppose that for a particular student $$s$$ we have $$X_{s1}=1$$ and $$X_{s2}=0$$",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "Drake",
+        "Kendrick",
+        "On the boundary"
+    ]
+}

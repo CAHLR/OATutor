@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a91f150ds100-sp21-final-Q13g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting by adding a penalty term to the loss function. This penalty term is controlled by the regularization coefficient, lambda.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp21-final-Q13g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp21-final-Q13g-h1"
+        ],
+        "title": "Effect of Increasing Lambda",
+        "text": "As the regularization coefficient lambda increases, the penalty on large coefficients in the model increases, which can lead to a reduction in model complexity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp21-final-Q13g-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp21-final-Q13g-h2"
+        ],
+        "title": "Impact on Variance",
+        "text": "Increasing lambda typically reduces the variance of the model because it discourages the model from fitting the noise in the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp21-final-Q13g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a91f150ds100-sp21-final-Q13g-h3"
+        ],
+        "title": "Selecting the Correct Statements",
+        "text": "Which of the following statements are true when lambda is increased?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

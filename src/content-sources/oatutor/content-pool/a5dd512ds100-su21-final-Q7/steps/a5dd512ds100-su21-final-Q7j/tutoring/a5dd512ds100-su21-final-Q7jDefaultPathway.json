@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a5dd512ds100-su21-final-Q7j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Decision Boundary",
+        "text": "Consider how decision trees create boundaries. They split the feature space into regions using axis-aligned cuts. Can such splits form a circular boundary?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q7j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q7j-h1"
+        ],
+        "title": "Visualizing the Boundary",
+        "text": "Look at the distribution of the points. The orange points form a ring around the blue points. What kind of boundary would separate these two classes?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q7j-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q7j-h2"
+        ],
+        "title": "Decision Tree Limitations",
+        "text": "Decision trees make splits parallel to the axes. Think about whether such splits can create a circular boundary.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q7j-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q7j-h3"
+        ],
+        "title": "Analyzing the Boundary",
+        "text": "Can a decision tree create a circular boundary using axis-aligned splits?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

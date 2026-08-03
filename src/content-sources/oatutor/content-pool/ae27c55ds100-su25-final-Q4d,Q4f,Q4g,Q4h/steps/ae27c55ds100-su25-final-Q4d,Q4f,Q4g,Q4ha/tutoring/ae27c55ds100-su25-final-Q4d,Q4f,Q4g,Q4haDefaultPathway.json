@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4ha-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Histogram",
+        "text": "The histogram shows the distribution of the bootstrap sample proportions. The dashed lines indicate the 95% confidence interval for the true proportion $$p$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4ha-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4ha-h1"
+        ],
+        "title": "Position of the Original Sample Proportion",
+        "text": "The original sample proportion \\( \\hat{\\alpha} $$=$$ $$0.67$$ \\) is located within the 95% confidence interval shown in the histogram.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4ha-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4ha-h2"
+        ],
+        "title": "Interpreting the Confidence Interval",
+        "text": "A 95% confidence interval means that if we were to take many samples and build a confidence interval from each of them, 95% of those intervals would contain the true proportion $$p$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4ha-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4ha-h3"
+        ],
+        "title": "Conclusion from the Histogram",
+        "text": "Given that \\( \\hat{\\alpha} $$=$$ $$0.67$$ \\) is within the 95% confidence interval, what can we conclude about the true proportion $$p$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,111 @@
+[
+    {
+        "id": "a253306row9p2m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Residual Plots",
+        "text": "A residual plot shows the residuals on the vertical axis and the predicted values on the horizontal axis. It helps to assess the fit of a regression model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row9p2m-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row9p2m-h1"
+        ],
+        "title": "Interpreting Residual Plots",
+        "text": "In a good fit, the residuals should be randomly scattered around the horizontal axis. This indicates that the model captures the data well.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row9p2m-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row9p2m-h2"
+        ],
+        "title": "Identifying Patterns",
+        "text": "If there is a pattern in the residual plot, such as a curve or a trend, it suggests that the model is not capturing some aspect of the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row9p2m-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a253306row9p2m-h3"
+        ],
+        "title": "Analyzing Plot A",
+        "text": "Does plot A show a random scatter of residuals around the horizontal axis?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a253306row9p2m-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a253306row9p2m-h4"
+        ],
+        "title": "Analyzing Plot B",
+        "text": "Does plot B show a random scatter of residuals around the horizontal axis?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a253306row9p2m-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a253306row9p2m-h5"
+        ],
+        "title": "Analyzing Plot C",
+        "text": "Does plot C show a random scatter of residuals around the horizontal axis?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a253306row9p2m-h7",
+        "type": "hint",
+        "dependencies": [
+            "a253306row9p2m-h6"
+        ],
+        "title": "Choosing the Best Fit",
+        "text": "The best fit is indicated by the plot with residuals randomly scattered around the horizontal axis, showing no clear pattern.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

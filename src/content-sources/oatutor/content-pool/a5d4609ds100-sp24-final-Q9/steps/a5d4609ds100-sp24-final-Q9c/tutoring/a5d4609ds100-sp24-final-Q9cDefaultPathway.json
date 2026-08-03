@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a5d4609ds100-sp24-final-Q9c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It does this by transforming the data into a new coordinate system where the greatest variance by any projection of the data comes to lie on the first coordinate (called the first principal component), the second greatest variance on the second coordinate, and so on.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp24-final-Q9c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp24-final-Q9c-h1"
+        ],
+        "title": "Direction of the First Principal Component",
+        "text": "The first principal component is the direction in which the data varies the most. It is the eigenvector corresponding to the largest eigenvalue of the covariance matrix of the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp24-final-Q9c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp24-final-Q9c-h2"
+        ],
+        "title": "Visualizing the Principal Component",
+        "text": "When you plot the data, the first principal component is often the line that best fits the data, minimizing the perpendicular distances from the data points to the line.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp24-final-Q9c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(1,1)$$"
+        ],
+        "dependencies": [
+            "a5d4609ds100-sp24-final-Q9c-h3"
+        ],
+        "title": "Identifying the Direction",
+        "text": "Look at the plot for pair B. Which vector direction seems to capture the most variance in the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$(0,1)$$",
+            "$$(1,0)$$",
+            "$$(0,0)$$",
+            "$$(1,1)$$"
+        ]
+    }
+]

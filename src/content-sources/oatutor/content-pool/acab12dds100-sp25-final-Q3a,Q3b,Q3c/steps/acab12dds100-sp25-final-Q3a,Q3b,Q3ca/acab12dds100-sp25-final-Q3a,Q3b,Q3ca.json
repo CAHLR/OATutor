@@ -1,0 +1,18 @@
+{
+    "id": "acab12dds100-sp25-final-Q3a,Q3b,Q3ca",
+    "stepAnswer": [
+        "$$E[\\hat{\\delta}]=E[\\bar{K}-\\bar{D}]=E[\\bar{K}]-E[\\bar{D}]=\\mu_K-\\mu_D=\\delta$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Show that $$\\hat{\\delta}$$ is an unbiased estimator for $$\\delta$$\\nIn other words, prove that $$E[\\hat{\\delta}]=\\delta$$\\nNote: $$\\bar{K}$$ is an unbiased estimator of $$\\mu_K$$ and $$\\bar{D}$$ is an unbiased estimator of $$\\mu_D$$\\nThis result may be used directly in your calculations - you do not need to prove it.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "$$E[\\hat{\\delta}]=E[\\bar{K}]+E[\\bar{D}]=\\mu_K+\\mu_D=\\delta$$",
+        "$$E[\\hat{\\delta}]=E[\\bar{K}-\\bar{D}]=E[\\bar{K}]-E[\\bar{D}]=\\mu_K-\\mu_D=\\delta$$",
+        "$$E[\\hat{\\delta}]=E[\\bar{K}]-E[\\bar{D}]=\\mu_D-\\mu_K=-\\delta$$",
+        "$$E[\\hat{\\delta}]=\\frac{\\mu_K}{n}-\\frac{\\mu_D}{m}=\\delta$$",
+        "$$E[\\hat{\\delta}]=\\frac{\\sigma_K**{2}}{n}+\\frac{\\sigma_D**{2}}{m}=\\delta$$"
+    ]
+}

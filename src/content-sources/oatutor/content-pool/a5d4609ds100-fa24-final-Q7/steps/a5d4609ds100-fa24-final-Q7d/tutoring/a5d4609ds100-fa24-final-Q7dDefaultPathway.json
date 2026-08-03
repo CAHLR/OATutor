@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a5d4609ds100-fa24-final-Q7d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD",
+        "text": "The singular value decomposition (SVD) of a matrix X is given by X=U*S*V**T. Here, U and V are orthogonal matrices, and S is a diagonal matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa24-final-Q7d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-fa24-final-Q7d-h1"
+        ],
+        "title": "Properties of U, S, and V",
+        "text": "In the SVD, the columns of U are the left singular vectors, the columns of V are the right singular vectors, and the diagonal entries of S are the singular values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa24-final-Q7d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-fa24-final-Q7d-h2"
+        ],
+        "title": "Eigenvectors and SVD",
+        "text": "The columns of V (not U) are the eigenvectors of $$X^T X$$. The columns of U are the eigenvectors of $$X X^T$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

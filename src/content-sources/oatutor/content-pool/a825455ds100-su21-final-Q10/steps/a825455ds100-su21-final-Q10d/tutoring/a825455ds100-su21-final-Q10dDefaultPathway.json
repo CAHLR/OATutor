@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a825455ds100-su21-final-Q10d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Silhouette Score",
+        "text": "The silhouette score measures how similar an object is to its own cluster compared to other clusters. A higher score indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su21-final-Q10d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-su21-final-Q10d-h1"
+        ],
+        "title": "Choosing the Right k",
+        "text": "When selecting the number of clusters (k) in k-means clustering, we aim to maximize the average silhouette score. This helps ensure that the clusters are well-defined and distinct from each other.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su21-final-Q10d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The clusters are $$well-defined$$ and distinct from each other."
+        ],
+        "dependencies": [
+            "a825455ds100-su21-final-Q10d-h2"
+        ],
+        "title": "Evaluating Silhouette Score",
+        "text": "What does a larger silhouette score indicate about the clustering?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The clusters are $$well-defined$$ and distinct from each other.",
+            "The clusters are overlapping and not distinct."
+        ]
+    },
+    {
+        "id": "a825455ds100-su21-final-Q10d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "larger"
+        ],
+        "dependencies": [
+            "a825455ds100-su21-final-Q10d-h3"
+        ],
+        "title": "Final Answer",
+        "text": "When choosing k for k-means clustering, we want to pick a k with a [blank] average silhouette score.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "smaller",
+            "larger"
+        ]
+    }
+]

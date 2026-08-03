@@ -1,0 +1,45 @@
+[
+    {
+        "id": "ad34534ds100-sp19-final-Q3h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatterplot",
+        "text": "Observe the scatterplot carefully. Notice the symmetry of the points around the y-axis. This symmetry can give you a clue about which function might fit the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp19-final-Q3h-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp19-final-Q3h-h1"
+        ],
+        "title": "Considering Absolute Value",
+        "text": "The function $$f(x)=|x|$$, or absolute value, creates a V-shape which can fit data that is symmetric around the y-axis. Does this match the pattern you see in the scatterplot?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp19-final-Q3h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp19-final-Q3h-h2"
+        ],
+        "title": "Checking the Fit",
+        "text": "Would the function $$f(x)=|x|$$ allow you to choose scalars \u03b20, \u03b21, and \u03b22 such that the model $$y_i=beta0+x_i beta1+f{\\left(x_i\\right)} beta2$$ holds for every data pair in the dataset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

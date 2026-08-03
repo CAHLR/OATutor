@@ -1,0 +1,57 @@
+[
+    {
+        "id": "acab12dds100-fa18-final-Q5j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrap Replicates",
+        "text": "Bootstrap replicates are samples drawn with replacement from the original data. In this problem, each row represents a bootstrap replicate.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa18-final-Q5j-h2",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa18-final-Q5j-h1"
+        ],
+        "title": "Interpreting the Table",
+        "text": "The table shows bootstrap replicates in rows. Each row represents a different replicate, and the columns show the values drawn in each replicate.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa18-final-Q5j-h3",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa18-final-Q5j-h2"
+        ],
+        "title": "Confidence Intervals and True Population Variance",
+        "text": "A 50% confidence interval means that if you were to draw many samples and calculate the interval each time, about 50% of those intervals would contain the true population parameter.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa18-final-Q5j-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "acab12dds100-fa18-final-Q5j-h3"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Does drawing more bootstrap replicates increase the probability that the confidence intervals contain the true population variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

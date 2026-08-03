@@ -1,0 +1,60 @@
+[
+    {
+        "id": "aac8d73ds100-su20-final-Q5e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "Gradient descent is an optimization algorithm used to minimize a function by iteratively moving towards the steepest descent direction. In this problem, we are using it to find the optimal parameters for our model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q5e-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q5e-h1"
+        ],
+        "title": "Analyzing the Loss Function",
+        "text": "The loss function is defined as the residuals of the model: $$L(theta)=y_i-\\operatorname{f_{\\theta}}\\left(x_i\\right)$$. This means we are trying to minimize the difference between the observed value $$y_i$$ and the predicted value $$\\operatorname{f_{\\theta}}\\left(x_i\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q5e-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q5e-h2"
+        ],
+        "title": "Effect of Gradient Descent on Parameters",
+        "text": "As we run more iterations of gradient descent, the parameters $$\\theta_0$$ and $$\\theta_1$$ are updated to minimize the loss function. Consider how the updates affect $$\\theta_0$$ over time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q5e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\theta_0$$ approaches $$\\infty$$"
+        ],
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q5e-h3"
+        ],
+        "title": "Predicting the Behavior of $$\\theta_0$$",
+        "text": "Given the nature of the loss function and the updates in gradient descent, what do you expect will happen to $$\\theta_0$$ as the number of iterations increases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\theta_0$$ approaches $$\\infty$$",
+            "$$\\theta_0$$ approaches $$0$$",
+            "$$\\theta_0$$ approaches $$-\\infty$$",
+            "$$\\theta_0$$ converges to a finite positive value",
+            "$$\\theta_0$$ oscillates and never converges"
+        ]
+    }
+]

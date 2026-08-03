@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a410fc9row1_part4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Intercept",
+        "text": "The intercept \\( $$\\theta_0$$ \\) in a regression model represents the predicted value of the dependent variable when all independent variables are zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row1_part4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row1_part4a-h1"
+        ],
+        "title": "Variables in the Model",
+        "text": "In the given model, the independent variables are $$'hours_{sleep'}$$ and $$'is_{cdss'}$$. Consider what happens when both are zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row1_part4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row1_part4a-h2"
+        ],
+        "title": "Interpreting Zero Values",
+        "text": "If $$'hours_{sleep'}$$ is zero, it means the student gets no sleep. If $$'is_{cdss'}$$ is zero, it means the student does not have a CDSS affiliated major.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row1_part4a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Predicted GPA for a student who gets $$0$$ hours of sleep and does not have a CDSS affiliated major."
+        ],
+        "dependencies": [
+            "a410fc9row1_part4a-h3"
+        ],
+        "title": "Predicting GPA with Zero Values",
+        "text": "What is the predicted GPA when $$'hours_{sleep'}$$ is $$0$$ and $$'is_{cdss'}$$ is 0?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Predicted GPA for a student who gets $$0$$ hours of sleep and does not have a CDSS affiliated major.",
+            "Predicted increase in GPA for one additional hour of sleep, holding CDSS major status constant.",
+            "Predicted GPA difference between CDSS affiliated and non CDSS affiliated majors, holding sleep constant.",
+            "Average GPA of all students in the dataset."
+        ]
+    }
+]

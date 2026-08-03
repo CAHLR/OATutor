@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a272acfds100-fa20-final-Q10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It identifies the directions (principal components) in which the data varies the most.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa20-final-Q10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-fa20-final-Q10a-h1"
+        ],
+        "title": "Identifying PC $$1$$",
+        "text": "The first principal component (PC 1) is the direction in which the data varies the most. It is the line that best fits the data in the least squares sense.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa20-final-Q10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-fa20-final-Q10a-h2"
+        ],
+        "title": "Slope of PC $$1$$",
+        "text": "Look at the scatter plot. The slope of PC $$1$$ should match the general trend of the data points. It should be a line that goes through the center of the data cloud.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa20-final-Q10a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x_2=\\frac{2}{3} x_1$$"
+        ],
+        "dependencies": [
+            "a272acfds100-fa20-final-Q10a-h3"
+        ],
+        "title": "Equation of PC $$1$$",
+        "text": "Based on the scatter plot, which equation best represents the line that fits the data trend?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$x_2=\\frac{11}{3} x_1-9$$",
+            "$$x_2=3x_1$$",
+            "$$x_2=\\frac{-20}{3} x_1+5$$",
+            "$$x_2=\\frac{2}{3} x_1$$",
+            "$$x_2=-3x_1$$"
+        ]
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a977a7fds100-fa18-final-Q13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Bias-Variance Tradeoff",
+        "text": "The bias-variance tradeoff is a fundamental concept in machine learning that helps us understand the sources of error in our models. It involves decomposing the expected squared error into three components: variance, bias squared, and irreducible error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q13a-h1"
+        ],
+        "title": "Sources of Randomness",
+        "text": "When considering the bias-variance tradeoff, we account for different sources of randomness. These include the randomness in the data, the randomness in the model selection, and the randomness in the feature selection.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q13a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q13a-h2"
+        ],
+        "title": "Feature Engineering and Randomness",
+        "text": "Consider whether the arbitrary choice of features during feature engineering contributes to the randomness we account for in the bias-variance tradeoff.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

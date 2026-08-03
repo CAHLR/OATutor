@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a5d4609ds100-fa19-mt2-Q1p-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatterplot",
+        "text": "Look at the scatterplot of the first two principal components. Notice how the points are grouped into three distinct clusters. Each cluster represents a different type of visitor behavior.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa19-mt2-Q1p-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-fa19-mt2-Q1p-h1"
+        ],
+        "title": "Analyzing the First Row of $$V^T$$",
+        "text": "The first row of $$V^T$$ shows the contribution of each exhibit to the first principal component. Look at which exhibits have the highest positive or negative values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa19-mt2-Q1p-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-fa19-mt2-Q1p-h2"
+        ],
+        "title": "Analyzing the Second Row of $$V^T$$",
+        "text": "The second row of $$V^T$$ shows the contribution of each exhibit to the second principal component. Identify which exhibits have the highest positive or negative values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa19-mt2-Q1p-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "These visitors spend a lot of time at the reptile exhibits (turtle, iguana, and alligator)."
+        ],
+        "dependencies": [
+            "a5d4609ds100-fa19-mt2-Q1p-h3"
+        ],
+        "title": "Characteristics of the Bottom-Right Group",
+        "text": "Based on the plots of $$V^T$$, which exhibits do the bottom-right group of visitors spend the most time at?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "These visitors spend a lot of time at the mammal exhibits (cheetah, tiger, and lion).",
+            "These visitors spend a lot of time at the activities (train and playground).",
+            "These visitors spend a lot of time at the reptile exhibits (turtle, iguana, and alligator).",
+            "These visitors spend very little time at any of the $$8$$ exhibits.",
+            "These visitors spend about the same amount of time at every exhibit."
+        ]
+    }
+]

@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a410fc9row8p2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Design Matrix",
+        "text": "The design matrix $X$ includes all the features used in the model, plus an additional column for the intercept. How does this affect the number of features?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row8p2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row8p2a-h1"
+        ],
+        "title": "Counting the Features",
+        "text": "If the design matrix $X$ has $n$ columns, and one of these columns is for the intercept, how many columns represent the actual features?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row8p2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$n-1$$"
+        ],
+        "dependencies": [
+            "a410fc9row8p2a-h2"
+        ],
+        "title": "Calculating the Number of Features",
+        "text": "Given that the design matrix $X$ has $n$ columns, and one column is for the intercept, calculate the number of features in the original data set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

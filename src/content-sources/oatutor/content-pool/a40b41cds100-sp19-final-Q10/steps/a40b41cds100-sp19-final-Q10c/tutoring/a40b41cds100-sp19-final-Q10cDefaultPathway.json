@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a40b41cds100-sp19-final-Q10c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The file is divided into $$8$$ blocks, each replicated twice. Each block is stored on $$2$$ out of $$4$$ machines. We need to determine the probability that the file can still be read if $$2$$ machines fail.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp19-final-Q10c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp19-final-Q10c-h1"
+        ],
+        "title": "Analyzing Block Storage",
+        "text": "Each block is stored on $$2$$ machines. If $$2$$ machines fail, a block can still be read if at least one of its replicas is on one of the remaining machines.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp19-final-Q10c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp19-final-Q10c-h2"
+        ],
+        "title": "Calculating Probability for One Block",
+        "text": "For a single block, calculate the probability that at least one replica is on the remaining machines. Consider the combinations of machine selections.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp19-final-Q10c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{5}{6}$$"
+        ],
+        "dependencies": [
+            "a40b41cds100-sp19-final-Q10c-h3"
+        ],
+        "title": "Probability of Block Being Readable",
+        "text": "Calculate the probability that a block is still readable if $$2$$ machines fail. Use the fact that each block is stored on $$2$$ machines.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp19-final-Q10c-h5",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp19-final-Q10c-h4"
+        ],
+        "title": "Extending to All Blocks",
+        "text": "Since there are $$8$$ blocks, and each block's readability is independent, use the probability for one block to find the probability for all blocks.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp19-final-Q10c-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(\\frac{5}{6}\\right)^8$$"
+        ],
+        "dependencies": [
+            "a40b41cds100-sp19-final-Q10c-h5"
+        ],
+        "title": "Final Probability Calculation",
+        "text": "Calculate the probability that all $$8$$ blocks are readable, given the probability for one block.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

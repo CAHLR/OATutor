@@ -1,0 +1,116 @@
+[
+    {
+        "id": "aac8d73ds100-su20-final-Q5c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Loss Function",
+        "text": "The loss function is given by $$L(theta)=y_i-\\operatorname{f_{\\theta}}\\left(x_i\\right)$$. This means the loss is the difference between the actual value $$y_i$$ and the predicted value $$\\operatorname{f_{\\theta}}\\left(x_i\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q5c-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q5c-h1"
+        ],
+        "title": "Gradient Descent Basics",
+        "text": "Gradient descent is an optimization algorithm used to minimize a function by iteratively moving towards the steepest descent direction. In this case, we want to minimize the loss function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q5c-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q5c-h2"
+        ],
+        "title": "Partial Derivatives",
+        "text": "To perform gradient descent, we need to compute the partial derivatives of the loss function with respect to each parameter, $$\\theta_0$$ and $$\\theta_1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q5c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-0.5$$"
+        ],
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q5c-h3"
+        ],
+        "title": "Compute Partial Derivative with Respect to $$\\theta_0$$",
+        "text": "Calculate the partial derivative of the loss function L(theta) with respect to $$\\theta_0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q5c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-x_1$$"
+        ],
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q5c-h3"
+        ],
+        "title": "Compute Partial Derivative with Respect to $$\\theta_1$$",
+        "text": "Calculate the partial derivative of the loss function L(theta) with respect to $$\\theta_1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q5c-h6",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q5c-h5"
+        ],
+        "title": "Update Rule for Gradient Descent",
+        "text": "The update rule for gradient descent is $$\\theta_{new}=\\theta_{old}-\\alpha gradient$$, where alpha is the learning rate.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q5c-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.05$$"
+        ],
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q5c-h6"
+        ],
+        "title": "Update $$\\theta_0$$",
+        "text": "Using the update rule, calculate $${\\theta_0}^1$$ given that $${\\theta_0}^0=0$$ and the learning rate $$alpha=0.1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q5c-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.1x_1$$"
+        ],
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q5c-h7"
+        ],
+        "title": "Update $$\\theta_1$$",
+        "text": "Using the update rule, calculate $${\\theta_1}^1$$ given that $${\\theta_1}^0=0$$ and the learning rate $$alpha=0.1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

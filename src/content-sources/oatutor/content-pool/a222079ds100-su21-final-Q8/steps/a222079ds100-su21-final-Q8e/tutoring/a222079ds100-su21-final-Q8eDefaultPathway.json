@@ -1,0 +1,86 @@
+[
+    {
+        "id": "a222079ds100-su21-final-Q8e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "When you one-hot encode a categorical variable, you create a new binary column for each category. For example, if you one-hot encode the 'sex' column, you will create two new columns: one for 'male' and one for 'female'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su21-final-Q8e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su21-final-Q8e-h1"
+        ],
+        "title": "Columns in the Design Matrix",
+        "text": "The design matrix \\( \\Phi_2 \\) includes one-hot encoded columns for 'sex' and $$'embark_{town'}$$, as well as an intercept term. How many columns does this result in?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su21-final-Q8e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su21-final-Q8e-h2"
+        ],
+        "title": "Counting One-Hot Encoded Columns",
+        "text": "The 'sex' column has $$2$$ categories, and the $$'embark_{town'}$$ column has $$5$$ categories. How many one-hot encoded columns will these produce?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su21-final-Q8e-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a222079ds100-su21-final-Q8e-h3"
+        ],
+        "title": "Calculating Total Columns",
+        "text": "Calculate the total number of columns in \\( \\Phi_2 \\) by adding the number of one-hot encoded columns and the intercept term.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su21-final-Q8e-h5",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su21-final-Q8e-h4"
+        ],
+        "title": "Full Column Rank",
+        "text": "A matrix is full column rank if all its columns are linearly independent. Consider if the columns in \\( \\Phi_2 \\) are linearly independent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su21-final-Q8e-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a222079ds100-su21-final-Q8e-h5"
+        ],
+        "title": "Checking Linear Independence",
+        "text": "Are there any columns in \\( \\Phi_2 \\) that can be expressed as a linear combination of other columns?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

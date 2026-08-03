@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a91f150ds100-fa21-mt-Q1q-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding k-fold Cross-Validation",
+        "text": "In k-fold cross-validation, the dataset is divided into k subsets, and the model is trained k times, each time using a different subset as the validation set and the remaining as the training set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa21-mt-Q1q-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-fa21-mt-Q1q-h1"
+        ],
+        "title": "Bias in k-fold Cross-Validation",
+        "text": "Increasing k in k-fold cross-validation means that each model is trained on a larger portion of the data, which can reduce the bias of the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa21-mt-Q1q-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-fa21-mt-Q1q-h1"
+        ],
+        "title": "Computational Intensity of Cross-Validation",
+        "text": "Cross-validation is generally more computationally intensive than regular validation because it involves training the model multiple times.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa21-mt-Q1q-h4",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-fa21-mt-Q1q-h1"
+        ],
+        "title": "Using Entire Dataset in Cross-Validation",
+        "text": "One advantage of cross-validation is that it allows the model to be tested on the entire dataset, providing a more comprehensive evaluation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

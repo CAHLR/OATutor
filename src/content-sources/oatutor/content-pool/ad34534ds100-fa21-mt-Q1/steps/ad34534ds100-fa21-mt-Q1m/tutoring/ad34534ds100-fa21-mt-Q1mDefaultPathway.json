@@ -1,0 +1,78 @@
+[
+    {
+        "id": "ad34534ds100-fa21-mt-Q1m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Validation",
+        "text": "Cross-validation is used to evaluate the performance of a model by dividing the data into training and validation sets. Each fold uses a different part of the data for validation and the rest for training.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa21-mt-Q1m-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa21-mt-Q1m-h1"
+        ],
+        "title": "Analyzing the Errors",
+        "text": "Look at the errors for each value of lambda across the folds. The goal is to choose the lambda that minimizes the error across all folds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa21-mt-Q1m-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa21-mt-Q1m-h2"
+        ],
+        "title": "Comparing Lambda Values",
+        "text": "For $$lambda=1$$, the errors are $$1$$ and $$3$$. For $$lambda=2$$, the errors are $$0.5$$ and $$1.5$$. For $$lambda=3$$, the errors are $$9$$ and $$1$$. Which lambda has the lowest average error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa21-mt-Q1m-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "ad34534ds100-fa21-mt-Q1m-h3"
+        ],
+        "title": "Calculating Average Errors",
+        "text": "Calculate the average error for each lambda value. What is the average error for $$lambda=2$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa21-mt-Q1m-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "ad34534ds100-fa21-mt-Q1m-h4"
+        ],
+        "title": "Choosing the Best Lambda",
+        "text": "Based on the average errors, which lambda value should be chosen?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$2$$",
+            "$$1$$",
+            "$$1$$ and $$3$$ are tied",
+            "$$2$$",
+            "$$3$$",
+            "None of these"
+        ]
+    }
+]

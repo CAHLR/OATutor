@@ -1,0 +1,48 @@
+[
+    {
+        "id": "aff9095row7_p1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Groupby",
+        "text": "To fill in blank A, think about how you can group the data by a specific column to calculate the mode for each group.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aff9095row7_p1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aff9095row7_p1a-h1"
+        ],
+        "title": "Choosing the Correct Column",
+        "text": "Consider which column you need to group by to calculate the mode of hour\\_of\\_visit for each activity type.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aff9095row7_p1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "(\"activity\")"
+        ],
+        "dependencies": [
+            "aff9095row7_p1a-h2"
+        ],
+        "title": "Fill in Blank A",
+        "text": "What column should you use to group the data to calculate the mode of hour\\_of\\_visit for each activity type?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "(\"activity\")",
+            "(\"hour\\_of\\_visit\")",
+            "(\"activity\")",
+            "(\"hour\\_of\\_visit\")",
+            "([\"activity\", \"hour\\_of\\_visit\"])"
+        ]
+    }
+]

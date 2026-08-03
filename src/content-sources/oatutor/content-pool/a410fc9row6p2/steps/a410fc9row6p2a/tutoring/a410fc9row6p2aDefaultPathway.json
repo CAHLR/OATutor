@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a410fc9row6p2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Ridge Regression",
+        "text": "Ridge regression is a type of linear regression that includes a regularization term. This term is controlled by the hyper-parameter lambda (\u03bb).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row6p2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row6p2a-h1"
+        ],
+        "title": "Effect of Lambda on Variance",
+        "text": "As the regularization parameter lambda (\u03bb) increases, the penalty on large coefficients increases, which tends to reduce the model's variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row6p2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row6p2a-h2"
+        ],
+        "title": "Variance and Bias Trade-off",
+        "text": "Increasing lambda (\u03bb) reduces variance but may increase bias. However, the statement focuses on variance, which tends to zero as lambda increases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row6p2a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a410fc9row6p2a-h3"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Given the effect of lambda on variance, is the statement 'As \u03bb increases, model variance tends to 0' true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

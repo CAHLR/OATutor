@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a272acfds100-fa24-final-Q7e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD",
+        "text": "The singular value decomposition (SVD) of a matrix X is given by X=U*S*V**T. Here, U and V are orthogonal matrices, and S is a diagonal matrix containing the singular values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa24-final-Q7e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-fa24-final-Q7e-h1"
+        ],
+        "title": "Properties of U, S, and V",
+        "text": "Matrix U is an orthogonal matrix, meaning its columns are orthonormal vectors. Matrix S is a diagonal matrix with non-negative real numbers on the diagonal. Matrix V is also an orthogonal matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

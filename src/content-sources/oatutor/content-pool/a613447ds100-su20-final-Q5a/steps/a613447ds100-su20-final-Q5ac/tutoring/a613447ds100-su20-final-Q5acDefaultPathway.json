@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a613447ds100-su20-final-Q5ac-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Role of \u03c3\u00b2",
+        "text": "In the context of the true linear model, \u03c3\u00b2 represents the variance of the error term $$\\epsilon_i$$. This variance is a fixed quantity that characterizes the distribution of the error terms.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su20-final-Q5ac-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su20-final-Q5ac-h1"
+        ],
+        "title": "Fixed Quantities in the Model",
+        "text": "Consider what aspects of the model are predetermined and do not change. The variance of the error term, \u03c3\u00b2, is one such aspect.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su20-final-Q5ac-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a613447ds100-su20-final-Q5ac-h2"
+        ],
+        "title": "Identifying Fixed Quantities",
+        "text": "Is \u03c3\u00b2 a fixed quantity in the true model used to generate X and Y?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

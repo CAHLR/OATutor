@@ -1,0 +1,18 @@
+{
+    "id": "a5dd512ds100-sp21-final-Q4a,Q4b,Q4ci",
+    "stepAnswer": [
+        "Counting the frequency of all words does not capture the order of the words, so 'I am happy that it does not rain today' and 'I am not happy that it does rain today' produce exactly the same frequency vector and the model must make a false prediction on one of them."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "One way to transform textual data into features is to count the frequencies for all of the words in the text.\\nConsider the following preprocessing steps:\\n\u2022 Remove all punctuations (such as periods, commas and colons).\\n\u2022 Remove all stopwords (did, the, and so on). Note that stopwords do not include words that negate things such as no, not, and so on.\\n\u2022 Lower case the sentence, and keep words that only consist of letters a to $$z$$.\\n\u2022 Encode the sentence as a vector containing the frequencies for all the unique words in the text.\\nSuppose we use the frequency vector from the steps above as our feature to train a logistic regression model that predicts the sentiment of a sentence (positive, negative). In $$1-2$$ sentences, describe a case where our model would fail and make a false prediction. Your answer must be specific to the preprocessing steps and include an example sentence.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "Removing all stopwords deletes the word not, so 'I am not happy today' is encoded exactly like 'I am happy today' and one of the two must be misclassified.",
+        "Counting the frequency of all words does not capture the order of the words, so 'I am happy that it does not rain today' and 'I am not happy that it does rain today' produce exactly the same frequency vector and the model must make a false prediction on one of them.",
+        "Lower casing merges 'Data' and 'data' into a single feature, so a sentence such as 'Data science is clearly science' loses its proper noun and is always predicted negative.",
+        "The frequency vector has one entry per unique word in the text, so the design matrix is too dense for logistic regression to converge on any sentence.",
+        "Logistic regression returns a probability rather than a label, so it can never produce a correct sentiment prediction for a sentence such as 'I love this poem'."
+    ]
+}

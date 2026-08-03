@@ -1,0 +1,45 @@
+[
+    {
+        "id": "ae36232ds100-fa23-mt-Q7g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Stochastic Gradient Descent",
+        "text": "Stochastic gradient descent (SGD) is a variant of gradient descent where the gradient is estimated using a single data point or a small batch of data points. This can lead to noisy updates, which might not always point directly towards the true minimum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-mt-Q7g-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-fa23-mt-Q7g-h1"
+        ],
+        "title": "Characteristics of SGD",
+        "text": "SGD is known for its ability to escape local minima due to its noisy updates. This characteristic can be beneficial in finding a global minimum in non-convex optimization problems.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-mt-Q7g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ae36232ds100-fa23-mt-Q7g-h2"
+        ],
+        "title": "Identifying the Correct Gradient Descent Type",
+        "text": "Based on the description provided, which type of gradient descent matches the characteristic of approximating the gradient at each iteration?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

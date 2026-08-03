@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a222079ds100-su25-mt-Q3ca-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatterplot",
+        "text": "Observe the scatterplot. It shows a non-linear relationship between the amount of antibiotic and the number of colonies. The relationship appears to be decreasing rapidly at first and then leveling off.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su25-mt-Q3ca-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su25-mt-Q3ca-h1"
+        ],
+        "title": "Possible Transformations",
+        "text": "Consider transformations that can linearize a decreasing curve. Common transformations include taking the logarithm or square root of the dependent variable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su25-mt-Q3ca-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\ln\\left(Y\\right)$$"
+        ],
+        "dependencies": [
+            "a222079ds100-su25-mt-Q3ca-h2"
+        ],
+        "title": "Logarithmic Transformation",
+        "text": "One possible transformation is to take the logarithm of the Colonies. This can help linearize the relationship if the data follows an exponential decay.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su25-mt-Q3ca-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sqrt{Y}$$"
+        ],
+        "dependencies": [
+            "a222079ds100-su25-mt-Q3ca-h2"
+        ],
+        "title": "Square Root Transformation",
+        "text": "Another transformation is to take the square root of the Colonies. This can help if the relationship is a power function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su25-mt-Q3ca-h5",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su25-mt-Q3ca-h2"
+        ],
+        "title": "Choosing the Right Transformation",
+        "text": "Consider the shape of the curve. If it resembles an exponential decay, a logarithmic transformation might be more suitable. If it resembles a power function, a square root transformation might work better.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a977a7fds100-fa20-final-Q6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Bias-Variance Decomposition",
+        "text": "The bias-variance decomposition is a way to express the error of a model in terms of three components: the variance of the noise, the bias of the model, and the variance of the model. This decomposition is particularly useful for understanding the trade-offs between bias and variance in model selection.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa20-final-Q6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa20-final-Q6a-h1"
+        ],
+        "title": "Conditions for Bias-Variance Decomposition",
+        "text": "The bias-variance decomposition holds under certain conditions, such as when the model is linear and the loss function is squared error. These conditions ensure that the decomposition accurately reflects the contributions of bias and variance to the model's error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa20-final-Q6a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa20-final-Q6a-h2"
+        ],
+        "title": "Applying the Decomposition to Linear Models",
+        "text": "Consider a linear model where the relationship between the input and output is linear, and the loss function is squared error. Does the bias-variance decomposition hold in this scenario?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

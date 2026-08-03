@@ -1,0 +1,45 @@
+[
+    {
+        "id": "ad34534ds100-sp19-final-Q3n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatterplot",
+        "text": "Observe the scatterplot carefully. Notice the pattern of the data points. Consider how the function $$f(x)=x$$ might fit this pattern.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp19-final-Q3n-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp19-final-Q3n-h1"
+        ],
+        "title": "Linear Relationship",
+        "text": "The function $$f(x)=x$$ represents a linear relationship. Check if the data points in the scatterplot can be aligned with a straight line when using this function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp19-final-Q3n-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp19-final-Q3n-h2"
+        ],
+        "title": "Checking the Fit",
+        "text": "Does the function $$f(x)=x$$ allow the data points to be expressed as a linear combination in the form $$y_i=\\beta_0+x_i \\beta_1+f{\\left(x_i\\right)} \\beta_2$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

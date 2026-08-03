@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Logistic Regression Model",
+        "text": "In logistic regression, the probability of an event is modeled using the logistic function, which is defined as \\( \\sigma(z) $$=$$ \\frac{1}{1+e**{-z}} \\). The value of \\( $$z$$ \\) is calculated as a linear combination of the input features and their corresponding coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-mt2-Q7j-h1"
+        ],
+        "title": "Calculate the Linear Combination",
+        "text": "To find the value of \\( $$z$$ \\), use the formula \\( $$z$$ $$=$$ \\beta_0 + \\beta_1 \\times \\text{age} + \\beta_2 \\times \\text{sex} \\). Substitute the given values: \\( \\beta_0 $$=$$ $$-1.2$$ \\), \\( \\beta_1 $$=$$ $$-0.005$$ \\), \\( \\beta_2 $$=$$ $$2.5$$ \\), \\( \\text{age} $$=$$ $$20$$ \\), and \\( \\text{sex} $$=$$ $$1$$ \\) for female.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7j-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.2$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-mt2-Q7j-h2"
+        ],
+        "title": "Substitute the Values",
+        "text": "Substitute the values into the equation: \\( $$z$$ $$=$$ $$-1.2$$ + $$(-0.005)$$ \\times $$20$$ + $$2.5$$ \\times $$1$$ \\). Calculate \\( $$z$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7j-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-mt2-Q7j-h3"
+        ],
+        "title": "Calculate the Probability",
+        "text": "Once you have the value of \\( $$z$$ \\), use the logistic function \\( \\sigma(z) $$=$$ \\frac{1}{1+e**{-z}} \\) to calculate the probability of survival.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7j-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$sigma(1.2)$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-mt2-Q7j-h4"
+        ],
+        "title": "Final Probability",
+        "text": "Using the logistic function, calculate the probability: \\( $$\\sigma(1.2)$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

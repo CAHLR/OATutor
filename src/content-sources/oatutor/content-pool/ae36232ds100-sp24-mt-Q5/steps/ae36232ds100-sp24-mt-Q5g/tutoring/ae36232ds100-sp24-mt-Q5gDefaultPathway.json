@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ae36232ds100-sp24-mt-Q5g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE Minimization",
+        "text": "To minimize the Mean Squared Error (MSE) using a constant model, you need to find a value for $$\\theta_0$$ that minimizes the sum of squared differences between the predicted and actual values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp24-mt-Q5g-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp24-mt-Q5g-h1"
+        ],
+        "title": "Using Derivatives",
+        "text": "Consider using calculus to find the minimum of a function. What does taking the derivative of the MSE with respect to $$\\theta_0$$ and setting it to zero tell you?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp24-mt-Q5g-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-2*sum{i extbackslash=1}{n}{(y_i-theta_0)}"
+        ],
+        "dependencies": [
+            "ae36232ds100-sp24-mt-Q5g-h2"
+        ],
+        "title": "Derivative of MSE",
+        "text": "The MSE is given by sum{i extbackslash=1}{n}{(y_i-theta_0)**2}. Find the derivative of this expression with respect to $$\\theta_0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp24-mt-Q5g-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "theta_0=sum{i extbackslash=1}{n}{y_i}/n"
+        ],
+        "dependencies": [
+            "ae36232ds100-sp24-mt-Q5g-h3"
+        ],
+        "title": "Setting the Derivative to Zero",
+        "text": "Set the derivative you found to zero and solve for $$\\theta_0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp24-mt-Q5g-h5",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp24-mt-Q5g-h4"
+        ],
+        "title": "Interpreting the Result",
+        "text": "The solution theta_0=sum{i extbackslash=1}{n}{y_i}/n represents the mean of the target values. Why does this make sense for minimizing MSE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

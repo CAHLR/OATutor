@@ -1,0 +1,56 @@
+[
+    {
+        "id": "a977a7fds100-sp21-final-Q12b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias in the Model",
+        "text": "The bias of a model is the difference between the expected prediction of the model and the true value of the function. In this case, the true function is $$g(z)=A z^2$$ and the model is $$\\operatorname{f_{\\theta}}\\left(z\\right)=\\theta z$$. What happens to the bias when the model is trained with $$x=1$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp21-final-Q12b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variance in the Model",
+        "text": "The variance of a model is the variability of the model prediction for different training sets. Since the model is trained with a single data point and epsilon is normally distributed with variance $${\\sigma}^2$$, how does this affect the variance of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp21-final-Q12b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a977a7fds100-sp21-final-Q12b-h1"
+        ],
+        "title": "Calculating Bias",
+        "text": "Given that the model is trained with $$x=1$$, calculate the bias of the model $$f_{\\theta}$$ at $$z=1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp21-final-Q12b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$${\\sigma}^2$$"
+        ],
+        "dependencies": [
+            "a977a7fds100-sp21-final-Q12b-h2"
+        ],
+        "title": "Calculating Variance",
+        "text": "Given that epsilon is normally distributed with variance $${\\sigma}^2$$, calculate the variance of the model $$f_{\\theta}$$ at $$z=1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

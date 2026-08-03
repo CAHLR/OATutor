@@ -1,0 +1,109 @@
+[
+    {
+        "id": "a825455ds100-fa24-final-Q8h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Complete Linkage",
+        "text": "Complete linkage clustering considers the maximum distance between elements of two clusters. This means that the distance between two clusters is defined by the distance between the farthest pair of elements, one from each cluster.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa24-final-Q8h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-fa24-final-Q8h-h1"
+        ],
+        "title": "Calculate Distances",
+        "text": "Calculate the distances between Team O-Ski and the other teams using the Euclidean distance formula: distance $$=$$ $$\\sqrt{\\left(x2-x1\\right)^2+\\left(y2-y1\\right)^2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa24-final-Q8h-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a825455ds100-fa24-final-Q8h-h2"
+        ],
+        "title": "Distance from Team O-Ski to Team SantaQlaus",
+        "text": "Calculate the distance between Team O-Ski $$(1,1)$$ and Team SantaQlaus $$(3,1)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa24-final-Q8h-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a825455ds100-fa24-final-Q8h-h2"
+        ],
+        "title": "Distance from Team O-Ski to Team Pandas",
+        "text": "Calculate the distance between Team O-Ski $$(1,1)$$ and Team Pandas $$(5,4)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa24-final-Q8h-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a825455ds100-fa24-final-Q8h-h2"
+        ],
+        "title": "Distance from Team O-Ski to Team Ice-berk",
+        "text": "Calculate the distance between Team O-Ski $$(1,1)$$ and Team Ice-berk $$(1,5)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa24-final-Q8h-h6",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-fa24-final-Q8h-h5"
+        ],
+        "title": "Determine the Closest Teams",
+        "text": "Based on the calculated distances, determine which team is closest to Team O-Ski using complete linkage.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa24-final-Q8h-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Team SantaQlaus"
+        ],
+        "dependencies": [
+            "a825455ds100-fa24-final-Q8h-h6"
+        ],
+        "title": "Cluster Formation",
+        "text": "Using complete linkage, which teams form a cluster with Team O-Ski when there are two clusters left?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Team SantaQlaus",
+            "Team Pandas",
+            "Team $$Ice-berk$$"
+        ]
+    }
+]

@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a8cec5cds100-sp25-final-Q2i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting by adding a penalty term to the loss function. This penalty term is often a function of the model parameters, theta.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2i-h1"
+        ],
+        "title": "Role of Lambda",
+        "text": "The parameter lambda controls the strength of the penalty term. A larger lambda increases the penalty for large theta values, which can lead to simpler models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2i-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2i-h2"
+        ],
+        "title": "Effect of Increasing Lambda",
+        "text": "Increasing lambda will increase the penalty on the magnitude of theta, encouraging smaller theta values and thus reducing model complexity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2i-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increasing lambda."
+        ],
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2i-h3"
+        ],
+        "title": "Choosing the Correct Option",
+        "text": "Which option correctly describes the effect of increasing lambda on model complexity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Decreasing lambda.",
+            "Increasing lambda.",
+            "Changing lambda has no effect on model complexity.",
+            "Both increasing and decreasing lambda reduce complexity.",
+            "The effect depends on the choice of g(theta)."
+        ]
+    }
+]

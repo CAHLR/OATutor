@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a410fc9row5_part2j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Condition",
+        "text": "To ensure a unique solution in an OLS model, the matrix involved in the calculations must meet a specific condition. Think about the properties of matrices that allow for unique solutions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row5_part2j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row5_part2j-h1"
+        ],
+        "title": "Matrix Invertibility",
+        "text": "Consider the role of the matrix $$X^T$$ X in the OLS solution. What does it mean for a matrix to be invertible, and why is this important for finding a unique solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row5_part2j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$X^T$$ X must be invertible."
+        ],
+        "dependencies": [
+            "a410fc9row5_part2j-h2"
+        ],
+        "title": "Matrix Properties",
+        "text": "What property must the matrix $$X^T$$ X have to ensure it is invertible?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "X must not be full column rank.",
+            "X must be a square matrix.",
+            "$$X^T$$ X must be invertible.",
+            "X must have fewer rows than columns."
+        ]
+    }
+]

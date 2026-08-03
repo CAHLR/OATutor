@@ -1,0 +1,61 @@
+[
+    {
+        "id": "ae27c55ds100-sp19-final-Q9b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "You need to select the histogram that best visualizes the distribution of the sample median from $$10$$ random samples.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-sp19-final-Q9b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-sp19-final-Q9b-h1"
+        ],
+        "title": "Characteristics of the Sample Median",
+        "text": "The sample median is less affected by extreme values and tends to be more stable than the mean. Consider how this affects the shape of the distribution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-sp19-final-Q9b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-sp19-final-Q9b-h2"
+        ],
+        "title": "Comparing Distributions",
+        "text": "Look at the shape of the original distribution and compare it to the options. Which histogram reflects a similar shape but with less variability?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-sp19-final-Q9b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "B"
+        ],
+        "dependencies": [
+            "ae27c55ds100-sp19-final-Q9b-h3"
+        ],
+        "title": "Selecting the Correct Histogram",
+        "text": "Which histogram best represents the distribution of the sample median from $$10$$ samples?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+        ]
+    }
+]

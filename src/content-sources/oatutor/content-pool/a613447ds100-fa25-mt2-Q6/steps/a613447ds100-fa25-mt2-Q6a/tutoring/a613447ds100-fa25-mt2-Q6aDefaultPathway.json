@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a613447ds100-fa25-mt2-Q6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Bias",
+        "text": "Adding a new feature to a model can affect its bias. Consider how adding a feature that is a transformation of an existing feature might impact the model's ability to fit the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa25-mt2-Q6a-h1"
+        ],
+        "title": "Effect on Model Bias",
+        "text": "Adding a feature that is a transformation of an existing feature can potentially decrease the model bias if it captures additional information about the data. However, it might also increase bias if it introduces noise.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "both"
+        ],
+        "dependencies": [
+            "a613447ds100-fa25-mt2-Q6a-h2"
+        ],
+        "title": "Analyzing the Impact",
+        "text": "Consider the effect of adding a feature that is the square of an existing feature on the model bias. Is it possible for the model bias to increase, decrease, or both?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Both",
+            "Decrease",
+            "Increase",
+            "both"
+        ]
+    }
+]

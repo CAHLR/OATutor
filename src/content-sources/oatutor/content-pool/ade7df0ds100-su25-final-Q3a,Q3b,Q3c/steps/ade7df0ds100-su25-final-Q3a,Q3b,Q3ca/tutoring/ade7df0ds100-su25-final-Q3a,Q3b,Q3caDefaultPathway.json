@@ -1,0 +1,69 @@
+[
+    {
+        "id": "ade7df0ds100-su25-final-Q3a,Q3b,Q3ca-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Design Matrix",
+        "text": "The design matrix $X$ is constructed from the features of the dataset. Each row corresponds to an observation, and each column corresponds to a feature.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su25-final-Q3a,Q3b,Q3ca-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su25-final-Q3a,Q3b,Q3ca-h1"
+        ],
+        "title": "Features in the Design Matrix",
+        "text": "The features in the design matrix $X$ are 'length', 'likes', and $$'response_{time'}$$. The 'bot' column is the target variable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su25-final-Q3a,Q3b,Q3ca-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su25-final-Q3a,Q3b,Q3ca-h2"
+        ],
+        "title": "Invertibility of $X**TX$",
+        "text": "For $X**TX$ to be invertible, the columns of $X$ must be linearly independent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su25-final-Q3a,Q3b,Q3ca-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su25-final-Q3a,Q3b,Q3ca-h3"
+        ],
+        "title": "Checking Linear Independence",
+        "text": "Are the columns 'length', 'likes', and $$'response_{time'}$$ linearly independent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ade7df0ds100-su25-final-Q3a,Q3b,Q3ca-h5",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su25-final-Q3a,Q3b,Q3ca-h4"
+        ],
+        "title": "Conclusion on Invertibility",
+        "text": "If the columns are linearly independent, then $X**TX$ is invertible.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

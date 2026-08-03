@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a253306row10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MAE and MSE",
+        "text": "Mean Absolute Error (MAE) and Mean Squared Error (MSE) are both metrics used to evaluate the accuracy of a model. MAE calculates the average of the absolute differences between predicted and actual values, while MSE calculates the average of the squared differences.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row10a-h1"
+        ],
+        "title": "Sensitivity to Outliers",
+        "text": "Outliers are data points that are significantly different from other observations. Consider how squaring the differences in MSE might affect its sensitivity to these outliers compared to MAE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row10a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "MSE"
+        ],
+        "dependencies": [
+            "a253306row10a-h2"
+        ],
+        "title": "Comparing MAE and MSE",
+        "text": "Which error metric, MAE or MSE, is more affected by large errors?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "MAE",
+            "MSE"
+        ]
+    },
+    {
+        "id": "a253306row10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a253306row10a-h3"
+        ],
+        "title": "Conclusion on Sensitivity",
+        "text": "Since MSE squares the errors, it gives more weight to larger errors compared to MAE, which only takes the absolute value. Therefore, MSE is more sensitive to outliers than MAE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

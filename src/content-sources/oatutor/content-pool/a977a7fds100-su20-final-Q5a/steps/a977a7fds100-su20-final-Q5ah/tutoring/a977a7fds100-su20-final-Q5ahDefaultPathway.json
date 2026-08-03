@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a977a7fds100-su20-final-Q5ah-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Ridge Regression",
+        "text": "Ridge regression is a type of linear regression that includes a regularization term. This term helps prevent overfitting by penalizing large coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su20-final-Q5ah-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su20-final-Q5ah-h1"
+        ],
+        "title": "Effect of Increasing Lambda",
+        "text": "Increasing the regularization parameter lambda in ridge regression affects the estimated parameters. Consider how the penalty term impacts the coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su20-final-Q5ah-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a977a7fds100-su20-final-Q5ah-h2"
+        ],
+        "title": "Analyzing the Impact of Lambda",
+        "text": "As lambda increases, the penalty on large coefficients becomes stronger. This typically results in smaller coefficient estimates.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a253306row3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Correlation",
+        "text": "A correlation of $$0$$ indicates that there is no linear relationship between the two variables. This means that changes in temperature do not predict changes in tip size.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row3a-h1"
+        ],
+        "title": "Scatterplot Interpretation",
+        "text": "If the correlation is $$0$$, the scatterplot of tip against temperature would not show any discernible pattern. The points would appear randomly scattered.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row3a-h1"
+        ],
+        "title": "Linear Regression Coefficients",
+        "text": "In a linear regression model, if the correlation between the independent and dependent variable is $$0$$, the slope of the line $$\\theta_1$$ will be $$0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row3a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a253306row3a-h3"
+        ],
+        "title": "Understanding $$\\Theta_1$$",
+        "text": "What will be the value of $$\\theta_1$$ if the correlation is 0?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row3a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a253306row3a-h3"
+        ],
+        "title": "$$\\Theta_0$$ in Regression",
+        "text": "$$\\Theta_0$$ represents the intercept of the regression line. It is not necessarily $$0$$ even if the correlation is $$0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

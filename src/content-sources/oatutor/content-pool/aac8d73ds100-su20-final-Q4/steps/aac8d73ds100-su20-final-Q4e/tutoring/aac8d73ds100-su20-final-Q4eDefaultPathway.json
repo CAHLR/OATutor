@@ -1,0 +1,68 @@
+[
+    {
+        "id": "aac8d73ds100-su20-final-Q4e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean-Centering",
+        "text": "Mean-centering involves subtracting the mean of each column from the respective column values, except for the intercept column. This ensures that the mean of each column is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q4e-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q4e-h1"
+        ],
+        "title": "Effect of Mean-Centering on Intercept",
+        "text": "When you mean-center the data, the intercept term in the linear regression model becomes zero. This is because the mean of the response variable is subtracted from each observation, effectively centering the data around zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q4e-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Full Column Rank",
+        "text": "A matrix has full column rank if all its columns are linearly independent. This means there are no redundant columns, and the matrix can be inverted if it is square.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q4e-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The intercept term is zero."
+        ],
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q4e-h2"
+        ],
+        "title": "Analyzing the Intercept Term",
+        "text": "Given that the data is mean-centered, what can we say about the intercept term in the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q4e-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The solutions are unique."
+        ],
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q4e-h3"
+        ],
+        "title": "Checking the Conditions",
+        "text": "If both matrices have full column rank, what does this imply about the solutions to the linear regression problems?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

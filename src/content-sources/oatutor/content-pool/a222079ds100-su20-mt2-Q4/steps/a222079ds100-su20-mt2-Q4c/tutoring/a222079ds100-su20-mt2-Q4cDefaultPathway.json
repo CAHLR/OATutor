@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a222079ds100-su20-mt2-Q4c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Clusters",
+        "text": "Clusters are groups of similar data points. When you have a cluster number as a feature, it represents a categorical variable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-mt2-Q4c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su20-mt2-Q4c-h1"
+        ],
+        "title": "Handling Categorical Variables",
+        "text": "Categorical variables often need to be transformed into a numerical format that a model can understand. One common method is one-hot encoding.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-mt2-Q4c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su20-mt2-Q4c-h2"
+        ],
+        "title": "Why One-Hot Encode?",
+        "text": "One-hot encoding transforms categorical variables into a format that can be provided to ML algorithms to do a better job in prediction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-mt2-Q4c-h5",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su20-mt2-Q4b-h4"
+        ],
+        "title": "Final Decision",
+        "text": "To prepare the cluster column for model training, you should one-hot encode it to ensure the model treats each cluster as a separate category.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,80 @@
+[
+    {
+        "id": "aac8d73ds100-su21-final-Q4c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plot",
+        "text": "Observe how the predictions of the models compare to the true observed values. Are the predictions close to the observed values?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su21-final-Q4c-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su21-final-Q4c-h1"
+        ],
+        "title": "Model Bias",
+        "text": "Consider whether the models are consistently overestimating or underestimating the precipitation values. What does this indicate about bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su21-final-Q4c-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su21-final-Q4c-h2"
+        ],
+        "title": "Model Variance",
+        "text": "Look at the spread of the predictions from different models. Are they similar or do they vary widely? What does this tell you about variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su21-final-Q4c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes, the models show a consistent pattern of error, indicating high bias."
+        ],
+        "dependencies": [
+            "aac8d73ds100-su21-final-Q4c-h3"
+        ],
+        "title": "Analyzing Model Predictions",
+        "text": "Do the models' predictions show a consistent pattern of error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "No",
+            "Yes",
+            "Yes, the models show a consistent pattern of error, indicating high bias."
+        ]
+    },
+    {
+        "id": "aac8d73ds100-su21-final-Q4c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No, the models' predictions are not close to the true observed values, indicating high bias."
+        ],
+        "dependencies": [
+            "aac8d73ds100-su21-final-Q4c-h4"
+        ],
+        "title": "Evaluating Model Performance",
+        "text": "Are the models' predictions close to the true observed values?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "No",
+            "No, the models' predictions are not close to the true observed values, indicating high bias.",
+            "Yes"
+        ]
+    }
+]

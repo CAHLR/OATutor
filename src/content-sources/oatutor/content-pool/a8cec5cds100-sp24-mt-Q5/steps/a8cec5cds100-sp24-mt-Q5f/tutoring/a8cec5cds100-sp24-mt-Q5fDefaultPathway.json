@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE Minimization",
+        "text": "To minimize the Mean Squared Error (MSE) using a constant model, consider what value of $$\\theta_0$$ would make the predicted values closest to the actual $$y$$ values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp24-mt-Q5f-h1"
+        ],
+        "title": "Exploring the Mode",
+        "text": "The mode is the value that appears most frequently in a dataset. Consider how using the mode as $$\\theta_0$$ might affect the MSE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp24-mt-Q5f-h1"
+        ],
+        "title": "Considering the Mean",
+        "text": "The mean is the average of all $$y$$ values. Think about how using the mean as $$\\theta_0$$ could influence the MSE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5f-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp24-mt-Q5f-h1"
+        ],
+        "title": "Analyzing the Median",
+        "text": "The median is the middle value when the $$y$$ values are sorted. Reflect on how using the median as $$\\theta_0$$ might impact the MSE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5f-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "mean(y)"
+        ],
+        "dependencies": [
+            "a8cec5cds100-sp24-mt-Q5f-h3"
+        ],
+        "title": "Calculating MSE for a Constant Model",
+        "text": "If $$\\theta_0$$ is set to a constant value, the predicted value for each data point is the same. The MSE is calculated as $$\\frac{\\sum \\left(y_i-\\theta_0\\right)^2}{n}$$. Which value of $$\\theta_0$$ minimizes this expression?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

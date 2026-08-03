@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a8cec5cds100-su25-mt-Q4b,Q4ce-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Derivative",
+        "text": "The derivative of TUO with respect to $$\\theta_0$$ is given by the expression: sum{i ext{=}1}{N}{(3/tip_i-1/theta_0)}. To find the value of $$\\theta_0$$ that minimizes TUO, we need to set this derivative to zero and solve for $$\\theta_0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-su25-mt-Q4b,Q4ce-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-su25-mt-Q4b,Q4ce-h1"
+        ],
+        "title": "Setting the Derivative to Zero",
+        "text": "To find the minimum, set the derivative equal to zero: sum{i ext{=}1}{N}{(3/tip_i-1/theta_0)}=0. This equation will help us solve for the optimal $$\\theta_0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-su25-mt-Q4b,Q4ce-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-su25-mt-Q4b,Q4ce-h2"
+        ],
+        "title": "Solving for $$\\Theta_0$$",
+        "text": "Rearrange the equation sum{i ext{=}1}{N}{(3/tip_i-1/theta_0)}=0 to solve for $$\\theta_0$$. This involves isolating $$\\theta_0$$ on one side of the equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-su25-mt-Q4b,Q4ce-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "N*(sum{i ext{=}1}{N}{3/tip_i})**(-1)"
+        ],
+        "dependencies": [
+            "a8cec5cds100-su25-mt-Q4b,Q4ce-h3"
+        ],
+        "title": "Expression for $$\\Theta_0$$",
+        "text": "After rearranging the equation, you should find that $$\\theta_0$$ is equal to N*(sum{i ext{=}1}{N}{3/tip_i})**(-1).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-su25-mt-Q4b,Q4ce-h5",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-su25-mt-Q4b,Q4ce-h4"
+        ],
+        "title": "Choosing the Correct Option",
+        "text": "Look at the multiple-choice options and identify which one matches the expression for $$\\theta_0$$ that minimizes TUO: N*(sum{i ext{=}1}{N}{3/tip_i})**(-1).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

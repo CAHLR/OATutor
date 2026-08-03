@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ad34534ds100-sp19-final-Q3i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model is given by $$y_i=\\beta_0+x_i \\beta_1+f{\\left(x_i\\right)} \\beta_2$$. We need to determine if $$f(x)=-x$$ can fit the data in the scatterplot.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp19-final-Q3i-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp19-final-Q3i-h1"
+        ],
+        "title": "Analyzing the Scatterplot",
+        "text": "Observe the trend in the scatterplot. Does the data appear to follow a linear, quadratic, or some other pattern?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp19-final-Q3i-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp19-final-Q3i-h2"
+        ],
+        "title": "Effect of $$f(x)=-x$$",
+        "text": "If $$f(x)=-x$$, then the term $$f{\\left(x_i\\right)} \\beta_2$$ becomes $$-x_i \\beta_2$$. Consider how this affects the linearity of the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp19-final-Q3i-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp19-final-Q3i-h3"
+        ],
+        "title": "Checking Linearity",
+        "text": "Does the function $$f(x)=-x$$ allow the model to remain linear with respect to the parameters?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

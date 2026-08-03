@@ -1,0 +1,18 @@
+{
+    "id": "acab12dds100-su20-final-Q8g",
+    "stepAnswer": [
+        "$$\\sigma_{1}\\geq50$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "We have some centered design matrix $$X$$ with $$20$$ observations and $$3$$ features. The variance of the three features are $$125$$, $$20$$, and $$5$$ respectively. Suppose we use the SVD on $$X$$ to get $$ \\cup , $$ $$\\Sigma$$ and $$V**{T}.$$ Which of the following is the tightest possible lower bound for $$\\sigma_1$$ (the largest singular value)?\\nNote: For example, if $$x=5, $$ then $$x\\geq4$$ is a tighter lower bound than $$x\\geq0, $$ since $$4$$ is closer to $$5$$ than $$0$$ is.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "$$\\sigma_{1}\\geq125$$",
+        "$$\\sigma_{1}\\geq50$$",
+        "$$\\sigma_{1}\\geq20$$",
+        "$$\\sigma_{1}\\geq5$$",
+        "$$\\sigma_{1}\\geq0$$"
+    ]
+}

@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3db-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Task",
+        "text": "You need to calculate the number of featured artists for each song. This is indicated by the word 'feat.' in the artist column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3db-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp24-final-Q3b,Q3c,Q3db-h1"
+        ],
+        "title": "Using the $$'has_{feat'}$$ Column",
+        "text": "The $$'has_{feat'}$$ column indicates whether a song has featured artists. Use this to determine if you need to count the featured artists.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3db-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp24-final-Q3b,Q3c,Q3db-h2"
+        ],
+        "title": "Counting Featured Artists",
+        "text": "To count the number of featured artists, split the artist string by commas and count the parts. Subtract one if there is a main artist.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3db-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "song_sample[\"artist\"].str.split(\",\").str.len()*song_sample[\"has_feat\"]"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp24-final-Q3b,Q3c,Q3db-h3"
+        ],
+        "title": "Calculate $$num_{feats}$$",
+        "text": "Use the 'artist' column to calculate the number of featured artists. Consider using string operations to split and count.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

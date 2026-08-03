@@ -1,0 +1,42 @@
+[
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias in Model A",
+        "text": "When you remove a feature from a model, it can lead to an increase in bias. This is because the model has less information to work with, which might make it less flexible in capturing the underlying patterns in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6i-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Impact on Variance",
+        "text": "Removing a feature can decrease the model's variance. With fewer features, the model is simpler and less likely to overfit the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6i-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Training Data MSE",
+        "text": "Consider how removing a feature might affect the Mean Squared Error (MSE) on the training data. With fewer features, the model might not fit the training data as closely, potentially increasing the MSE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6i-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Test Data MSE",
+        "text": "Think about the effect on the MSE for held-out test data. A simpler model with fewer features might generalize better to unseen data, potentially decreasing the MSE on test data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

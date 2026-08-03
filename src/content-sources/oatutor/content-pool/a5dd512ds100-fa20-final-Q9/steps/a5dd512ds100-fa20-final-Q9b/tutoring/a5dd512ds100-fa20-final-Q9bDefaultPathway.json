@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a5dd512ds100-fa20-final-Q9b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logistic Regression Coefficients",
+        "text": "In logistic regression, the sign of a coefficient indicates the direction of the relationship between the feature and the probability of the outcome. A negative coefficient suggests that as the feature increases, the probability of the outcome decreases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9b-h1"
+        ],
+        "title": "Standardized Features",
+        "text": "Since the features are standardized, they have a mean of $$0$$ and a standard deviation of $$1$$. This means that the coefficients directly reflect the change in the log-odds of the outcome for a one standard deviation change in the feature.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9b-h2"
+        ],
+        "title": "Interpreting the abv Coefficient",
+        "text": "If the weight for the abv feature is negative, it implies that higher alcohol by volume is associated with a lower probability of the wine being type $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9b-h3"
+        ],
+        "title": "Determine the Sign of the abv Coefficient",
+        "text": "Given that the weight for the abv feature is negative, what does this imply about the relationship between abv and the probability of the wine being type 1?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

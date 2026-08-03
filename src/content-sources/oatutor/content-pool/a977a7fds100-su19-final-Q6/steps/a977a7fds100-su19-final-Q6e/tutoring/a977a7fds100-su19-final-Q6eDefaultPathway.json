@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a977a7fds100-su19-final-Q6e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "In the context of one-hot encoding, the variable $$'meat=beef'$$ is $$1$$ if the meat is beef and $$0$$ otherwise. This helps in distinguishing between different categories of meat in the regression model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6e-h1"
+        ],
+        "title": "Interpreting the Box Plot",
+        "text": "Look at the box plot to compare the total cost associated with different types of meat. Which type of meat tends to have a higher total cost?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6e-h2"
+        ],
+        "title": "Comparing Costs for Different Meats",
+        "text": "The box plot shows that beef tends to have a lower total cost compared to fish. This suggests that the presence of beef might decrease the total cost, leading to a negative weight for $$'meat=beef'$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Negative"
+        ],
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6e-h3"
+        ],
+        "title": "Determining the Sign of \u03b81",
+        "text": "Based on the box plot, does the presence of beef increase or decrease the total cost compared to other meats?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Positive",
+            "Negative",
+            "Exactly $$0$$",
+            "Not enough info"
+        ]
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a5d4609ds100-fa20-final-Q10f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD and Variance",
+        "text": "The Singular Value Decomposition (SVD) of a matrix X is given by X $$=$$ U*S*V**T. Here, U and V are orthogonal matrices, and S is a diagonal matrix containing the singular values. The variance of the projection of X onto the principal components is related to these singular values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa20-final-Q10f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-fa20-final-Q10f-h1"
+        ],
+        "title": "Variance of Projected Data",
+        "text": "When you project the data X onto the principal components using $$V^T$$, the variance of each component is given by the square of the corresponding singular value divided by the number of observations. This is because the singular values represent the standard deviation of the data along the principal components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa20-final-Q10f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a5d4609ds100-fa20-final-Q10f-h2"
+        ],
+        "title": "Relating Variance and Singular Values",
+        "text": "Given the expression $$np.var((X@vt.T)[:, i])==\\frac{{s[i]}^2}{\\operatorname{len}\\left(X\\right)}$$, verify if this holds true for all i.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "False",
+            "Impossible to tell",
+            "TRUE",
+            "True"
+        ]
+    }
+]

@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a977a7fds100-su19-final-Q6l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model is given by f_theta(x)=theta_0+theta_1*veg+theta_2*(meat=beef)+theta_3*(meat=fish). Identify the values of theta from the fitted model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6l-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6l-h1"
+        ],
+        "title": "Identify the Variables",
+        "text": "For the second data point, $$veg=3$$ and $$meat=fish$$. Substitute these values into the model equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6l-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6l-h2"
+        ],
+        "title": "Calculate the Predicted Total",
+        "text": "Substitute the values into the model: f_theta(x)=-3+5*3+8*(meat=beef)+12*(meat=fish). Since $$meat=fish$$, set $$(meat=fish)=1$$ and $$(meat=beef)=0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6l-h4",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6l-h3"
+        ],
+        "title": "Compute the Squared Error Loss",
+        "text": "The squared error loss is given by (predicted_total - actual_total)**2. Use the predicted total from the model and the actual total from the dataset.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6l-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$24$$"
+        ],
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6l-h3"
+        ],
+        "title": "Calculate the Predicted Total",
+        "text": "Calculate the predicted total using the model: $$\\operatorname{f_{\\theta}}\\left(x\\right)=-3+5\\times3+8\\times0+12\\times1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6l-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$25$$"
+        ],
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6l-h5"
+        ],
+        "title": "Compute the Squared Error Loss",
+        "text": "Calculate the squared error loss: $$\\left(24-19\\right)^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

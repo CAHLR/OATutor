@@ -1,0 +1,58 @@
+[
+    {
+        "id": "ab27becrow7e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Pattern",
+        "text": "The pattern .*:\\w+(,\\w+)+ is designed to match strings that have a colon followed by one or more words separated by commas. Let's break it down:\\n\\n- .*: matches any character (except for a newline) zero or more times, followed by a colon.\\n- \\w+ matches one or more word characters (letters, digits, or underscores).\\n- (,\\w+)+ matches one or more occurrences of a comma followed by one or more word characters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ab27becrow7e-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab27becrow7e-h1"
+        ],
+        "title": "Analyzing the Match All Cases",
+        "text": "Let's analyze the strings in the 'Match all of these below' column:\\n\\n$$1$$. \"total cats petted: 60,102,305\"\\n$$2$$. \"my cats' names are: amy,baron,carol\"\\n$$3$$. \"the current time is 20:59\"\\n\\nDoes the pattern .*:\\w+(,\\w+)+ match all these strings?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ab27becrow7e-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab27becrow7e-h2"
+        ],
+        "title": "Checking the Pattern Against Each Case",
+        "text": "Let's check the pattern against each case:\\n\\n$$1$$. \"total cats petted: 60,102,305\" - The pattern matches because it has a colon followed by numbers separated by commas.\\n$$2$$. \"my cats' names are: amy,baron,carol\" - The pattern matches because it has a colon followed by words separated by commas.\\n$$3$$. \"the current time is 20:59\" - The pattern does not match because it has a colon followed by a time format, not words separated by commas.\\n\\nDoes the pattern fully match all cases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ab27becrow7e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ab27becrow7e-h3"
+        ],
+        "title": "Conclusion",
+        "text": "Based on the analysis, does the pattern .*:\\w+(,\\w+)+ fully match all the cases in the 'Match all of these below' column?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "False",
+            "True"
+        ]
+    }
+]

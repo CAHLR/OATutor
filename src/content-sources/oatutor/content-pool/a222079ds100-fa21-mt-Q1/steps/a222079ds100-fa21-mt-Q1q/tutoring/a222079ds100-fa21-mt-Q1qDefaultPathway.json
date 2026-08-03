@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a222079ds100-fa21-mt-Q1q-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding k-fold Cross-Validation",
+        "text": "In k-fold cross-validation, the dataset is divided into k subsets, and the model is trained k times, each time using a different subset as the validation set and the remaining as the training set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1q-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa21-mt-Q1q-h1"
+        ],
+        "title": "Bias and Variance in Cross-Validation",
+        "text": "Increasing k in k-fold cross-validation generally decreases the bias of the model because it allows the model to be trained on more data. However, it may increase variance because the training sets are more similar to each other.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1q-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa21-mt-Q1q-h1"
+        ],
+        "title": "Computational Intensity of Cross-Validation",
+        "text": "Cross-validation is generally more computationally intensive than regular validation because it involves training the model multiple times (k times in k-fold cross-validation).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1q-h4",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa21-mt-Q1q-h1"
+        ],
+        "title": "Using Entire Dataset in Cross-Validation",
+        "text": "One of the advantages of cross-validation is that it allows the model to be tested on the entire dataset, as each data point is used in both training and validation across different folds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

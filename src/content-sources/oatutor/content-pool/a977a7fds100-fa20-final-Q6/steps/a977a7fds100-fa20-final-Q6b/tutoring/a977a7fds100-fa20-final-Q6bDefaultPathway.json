@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a977a7fds100-fa20-final-Q6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias-Variance Decomposition",
+        "text": "The bias-variance decomposition is a way to express the error of a model in terms of bias, variance, and irreducible error (noise). It helps in understanding how different factors contribute to the overall error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa20-final-Q6b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa20-final-Q6b-h1"
+        ],
+        "title": "Conditions for Bias-Variance Decomposition",
+        "text": "The decomposition holds under certain conditions, such as when the model is linear and the loss function is squared error. Consider whether these conditions apply to non-linear models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa20-final-Q6b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa20-final-Q6b-h2"
+        ],
+        "title": "Non-linear Models and Squared Loss",
+        "text": "Non-linear models can still use the bias-variance decomposition if the loss function is squared error. The decomposition is not limited to linear models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa20-final-Q6b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa20-final-Q6b-h3"
+        ],
+        "title": "Applying Bias-Variance Decomposition to Non-linear Models",
+        "text": "Given that the bias-variance decomposition can apply to non-linear models with squared loss, does this decomposition hold true for non-linear models and squared loss?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

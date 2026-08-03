@@ -1,0 +1,82 @@
+[
+    {
+        "id": "acab12dds100-su25-final-Q4d,Q4f,Q4g,Q4hb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Null Hypothesis",
+        "text": "The null hypothesis states that the proportion of adults in Berkeley that consume at least $$1$$ soda every day is 72%. This means we assume $$p=0.72$$ unless proven otherwise.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-su25-final-Q4d,Q4f,Q4g,Q4hb-h2",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-su25-final-Q4d,Q4f,Q4g,Q4hb-h1"
+        ],
+        "title": "Significance Level and Rejection",
+        "text": "A 5% significance level means that we are willing to accept a 5% chance of incorrectly rejecting the null hypothesis. If the null hypothesis is rejected, it suggests that the true proportion is significantly different from 72%.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-su25-final-Q4d,Q4f,Q4g,Q4hb-h3",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-su25-final-Q4d,Q4f,Q4g,Q4hb-h2"
+        ],
+        "title": "Sample Proportion and Decision",
+        "text": "The sample proportion, denoted as \\( \\hat{\\alpha} \\), is $$0.67$$. Compare this with the hypothesized proportion of $$0.72$$ to determine if the null hypothesis should be rejected.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-su25-final-Q4d,Q4f,Q4g,Q4hb-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$z=\\frac{0.67-0.72}{\\sqrt{\\frac{0.72\\left(1-0.72\\right)}{1000}}}$$"
+        ],
+        "dependencies": [
+            "acab12dds100-su25-final-Q4d,Q4f,Q4g,Q4hb-h3"
+        ],
+        "title": "Calculating the Test Statistic",
+        "text": "To determine if the null hypothesis should be rejected, calculate the test statistic using the formula: \\( z=(\\hat{\\alpha}-p)/(sqrt(p*(1-p)/n)) \\), where \\( $$\\hat{\\alpha}=0.67$$ \\), \\( $$p=0.72$$ \\), and \\( $$n=1000$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-su25-final-Q4d,Q4f,Q4g,Q4hb-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$z<-1.96$$ or $$z>1.96$$"
+        ],
+        "dependencies": [
+            "acab12dds100-su25-final-Q4d,Q4f,Q4g,Q4hb-h4"
+        ],
+        "title": "Interpreting the Test Statistic",
+        "text": "Once you have calculated the test statistic, compare it to the critical value for a 5% significance level. If the test statistic falls outside the critical value range, the null hypothesis is rejected.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-su25-final-Q4d,Q4f,Q4g,Q4hb-h6",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-su25-final-Q4d,Q4f,Q4g,Q4hb-h5"
+        ],
+        "title": "Conclusion Based on the Test",
+        "text": "If the test statistic indicates rejection of the null hypothesis, it means the sample provides sufficient evidence to conclude that the true proportion of adults in Berkeley consuming at least $$1$$ soda every day is not 72%.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

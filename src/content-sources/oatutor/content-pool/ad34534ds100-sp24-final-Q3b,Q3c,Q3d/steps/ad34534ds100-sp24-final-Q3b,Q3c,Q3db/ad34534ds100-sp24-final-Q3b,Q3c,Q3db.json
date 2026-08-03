@@ -1,0 +1,18 @@
+{
+    "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3db",
+    "stepAnswer": [
+        "$$\\texttt{song\\_sample[\"artist\"].str.split(\",\").str.len()}$$ times $$\\text{song\\_sample}[\"\\text{has\\_feat}\"]$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "blank (ii): Fill in the blank to add $$\\text{num\\_feats}$$ to $$\\text{song\\_sample}.$$",
+    "stepBody": "Milad adds two columns: $$\\text{has\\_feat}$$ and $$\\text{num\\_feats}$$ to $$\\text{song\\_sample}.$$\\n\\n(ii) Fill in the blank in the box below to add the column $$\\text{num\\_feats}$$ to $$\\text{song\\_sample}.$$ This column contains the number of featured artists on each song, where each featured artist is listed after the word \"feat.\" and separated by commas (\",\"). You may assume commas are never used for any other purpose.\\n\\n$$\\text{song\\_sample}[\"\\text{num\\_feats}\"]$$ $$=$$ [blank]\\n\\nHint: Songs that don't have any featured artists should have a value of $$0$$. You should use $$\\text{has\\_feat}$$ and can assume it was implemented correctly.##figure2.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "$$\\texttt{song\\_sample[\"artist\"].str.split(\",\").str.len()}$$ times $$\\text{song\\_sample}[\"\\text{has\\_feat}\"]$$",
+        "$$\\texttt{song\\_sample[\"artist\"].str.count(\",\")}$$ + $$\\text{song\\_sample}[\"\\text{has\\_feat}\"]$$",
+        "$$\\texttt{song\\_sample[\"artist\"].str.split(\",\").str.len()}$$",
+        "$$\\texttt{song\\_sample[\"artist\"].str.count(\",\")}$$ times $$\\text{song\\_sample}[\"\\text{has\\_feat}\"]$$",
+        "$$\\texttt{song\\_sample[\"artist\"].str.split(\"feat.\").str.len()}$$ times $$\\text{song\\_sample}[\"\\text{has\\_feat}\"]$$"
+    ]
+}

@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a222079ds100-fa20-final-Q12j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Models",
+        "text": "Model A includes height in inches and centimeters, and weight in pounds and kilograms. Model B includes only height in centimeters and weight in kilograms. Consider how these variables might affect the confidence intervals.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa20-final-Q12j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa20-final-Q12j-h1"
+        ],
+        "title": "Confidence Intervals and Multicollinearity",
+        "text": "Think about how multicollinearity might affect the confidence intervals of the parameters in Model A. Multicollinearity occurs when two or more predictors in a model are correlated, potentially inflating the standard errors of the coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa20-final-Q12j-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa20-final-Q12j-h2"
+        ],
+        "title": "Effect of Multicollinearity on Confidence Intervals",
+        "text": "Multicollinearity can lead to wider confidence intervals, making it more likely for them to include zero. Consider how this might apply to Model A compared to Model B.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

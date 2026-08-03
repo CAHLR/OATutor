@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a91f150ds100-sp21-final-Q13h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Feature Selection with L1 Regularization",
+        "text": "L1 regularization, also known as Lasso, tends to select only one feature when two features are highly correlated. This is because it adds a penalty equal to the absolute value of the magnitude of coefficients, encouraging sparsity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp21-final-Q13h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp21-final-Q13h-h1"
+        ],
+        "title": "Impact of Feature Scale on L1 Regularization",
+        "text": "When features are on different scales, L1 regularization tends to select the feature with the larger scale. This is because the penalty term is applied equally to all coefficients, making it easier to shrink smaller coefficients to zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp21-final-Q13h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Weight in mg"
+        ],
+        "dependencies": [
+            "a91f150ds100-sp21-final-Q13h-h2"
+        ],
+        "title": "Identifying the Feature with Larger Scale",
+        "text": "Which feature has a larger scale: weight in kilograms or weight in milligrams?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Weight in kg",
+            "Weight in mg"
+        ]
+    },
+    {
+        "id": "a91f150ds100-sp21-final-Q13h-h4",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp21-final-Q13h-h3"
+        ],
+        "title": "Conclusion on Feature Selection",
+        "text": "Given that L1 regularization tends to select features with larger scales, and weight in milligrams has a larger scale than weight in kilograms, which feature will be selected?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

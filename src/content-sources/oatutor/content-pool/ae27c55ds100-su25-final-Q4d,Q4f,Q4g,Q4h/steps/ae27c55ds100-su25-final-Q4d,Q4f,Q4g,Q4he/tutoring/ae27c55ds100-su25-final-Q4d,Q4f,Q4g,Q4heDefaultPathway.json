@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4he-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Regression Coefficient",
+        "text": "In a linear regression model, each coefficient represents the change in the dependent variable for a one-unit change in the corresponding independent variable, holding all other variables constant.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4he-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4he-h1"
+        ],
+        "title": "Focus on the Soda Consumption Variable",
+        "text": "The coefficient \\(\\hat{\\theta}_1\\) is associated with the variable \\(x_1\\), which represents whether an individual drinks soda. Consider how this affects blood sugar levels.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4he-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4he-h2"
+        ],
+        "title": "Holding Other Variables Constant",
+        "text": "Remember that in a regression model, the interpretation of a coefficient involves holding other variables constant. How does this apply to \\(\\hat{\\theta}_1\\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4he-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "\\hat{\\theta}_1 is the predicted increase in blood sugar for someone who drinks soda relative to someone who does not drink soda holding type $$2$$ diabetes status constant."
+        ],
+        "dependencies": [
+            "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4he-h3"
+        ],
+        "title": "Interpreting \\(\\hat{\\theta}_1\\)",
+        "text": "What does \\(\\hat{\\theta}_1\\) tell us about the relationship between soda consumption and blood sugar levels?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

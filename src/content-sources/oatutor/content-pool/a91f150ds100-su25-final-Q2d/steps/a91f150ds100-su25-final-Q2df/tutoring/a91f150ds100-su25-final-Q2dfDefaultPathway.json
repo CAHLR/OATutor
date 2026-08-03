@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a91f150ds100-su25-final-Q2df-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "Gradient descent is an optimization algorithm used to minimize a function by iteratively moving towards the steepest descent direction. It is commonly used in machine learning to find the optimal parameters of a model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su25-final-Q2df-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su25-final-Q2df-h1"
+        ],
+        "title": "Global vs. Local Minimum",
+        "text": "A global minimum is the lowest point in the entire domain of a function, while a local minimum is the lowest point in a specific region. Gradient descent can converge to a local minimum, which may not be the global minimum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su25-final-Q2df-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su25-final-Q2df-h2"
+        ],
+        "title": "Role of Learning Rate",
+        "text": "The learning rate determines the size of the steps taken towards the minimum. A fixed learning rate can lead to overshooting or slow convergence, affecting the ability to reach the global minimum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su25-final-Q2df-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a91f150ds100-su25-final-Q2df-h3"
+        ],
+        "title": "Convergence of Gradient Descent",
+        "text": "Consider the role of the learning rate and the nature of the function being optimized. Does a fixed learning rate guarantee convergence to a global minimum?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

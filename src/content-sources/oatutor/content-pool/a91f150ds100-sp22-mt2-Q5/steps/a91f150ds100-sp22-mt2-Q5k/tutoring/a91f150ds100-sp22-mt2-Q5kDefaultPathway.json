@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a91f150ds100-sp22-mt2-Q5k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Validation",
+        "text": "Cross-validation is a technique used to assess the performance of a model by dividing the data into multiple subsets. Each subset is used as a test set while the remaining data is used for training. This process is repeated multiple times, and the results are averaged to provide a more accurate estimate of the model's performance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp22-mt2-Q5k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp22-mt2-Q5k-h1"
+        ],
+        "title": "Choosing the Best Lambda",
+        "text": "The goal is to choose the lambda value that minimizes the cross-validation error. Look at the root-mean square error for each lambda and select the one with the lowest error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp22-mt2-Q5k-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$lambda=0.01$$"
+        ],
+        "dependencies": [
+            "a91f150ds100-sp22-mt2-Q5k-h2"
+        ],
+        "title": "Analyzing the Errors",
+        "text": "Suppose the root-mean square errors for each lambda are as follows:\\n- $$lambda=0.001$$: $$0.15$$\\n- $$lambda=0.01$$: $$0.12$$\\n- $$lambda=0.1$$: $$0.14$$\\n- $$lambda=1$$: $$0.18$$\\n- $$lambda=10$$: $$0.20$$\\nWhich lambda has the lowest error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$lambda=0.001$$",
+            "$$lambda=0.01$$",
+            "$$lambda=0.1$$",
+            "$$lambda=1$$",
+            "$$lambda=10$$"
+        ]
+    }
+]

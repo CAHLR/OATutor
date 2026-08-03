@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a253306row9b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model given is hat{y}_i=f_{theta}(x_i)=theta*e**(sqrt(abs(x_i))). This means that the prediction for each observation is based on the parameter theta and the exponential function of the square root of the absolute value of $$x_i$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row9b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row9b-h1"
+        ],
+        "title": "Ordinary Least Squares (OLS)",
+        "text": "OLS is a method used to estimate the parameters in a linear regression model by minimizing the sum of the squared differences between the observed and predicted values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row9b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row9b-h2"
+        ],
+        "title": "Sum of Residuals",
+        "text": "The sum of residuals in a linear regression model is the sum of the differences between the observed values and the predicted values. In OLS, this sum is always zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row9b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a253306row9b-h3"
+        ],
+        "title": "Model Predictions",
+        "text": "Consider the form of the model: hat{y}_i=theta*e**(sqrt(abs(x_i))). Since $$e^{\\sqrt{|x_i|}}$$ is always positive, the sign of hat{y}_i depends on theta.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row9b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "We can use ordinary least squares (OLS) to estimate the optimal hat{theta}."
+        ],
+        "dependencies": [
+            "a253306row9b-h4"
+        ],
+        "title": "Applying OLS",
+        "text": "Given the model hat{y}_i=theta*e**(sqrt(abs(x_i))), can we apply OLS to estimate theta?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The sum of residuals of our model will always be $$0$$.",
+            "The predictions of our model can never be negative.",
+            "We can use ordinary least squares (OLS) to estimate the optimal hat{theta}."
+        ]
+    }
+]

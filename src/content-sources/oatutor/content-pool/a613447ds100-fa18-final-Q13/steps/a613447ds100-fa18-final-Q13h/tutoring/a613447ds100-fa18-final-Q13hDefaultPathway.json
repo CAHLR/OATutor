@@ -1,0 +1,67 @@
+[
+    {
+        "id": "a613447ds100-fa18-final-Q13h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Complexity",
+        "text": "Model complexity refers to the number of parameters or the flexibility of a model. A more complex model can fit the training data more closely.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa18-final-Q13h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa18-final-Q13h-h1"
+        ],
+        "title": "Impact of Model Complexity on Variance",
+        "text": "As model complexity increases, the model can fit the training data more closely, which can lead to higher variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa18-final-Q13h-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Sigma Squared",
+        "text": "Sigma squared (\u03c3\u00b2) represents the variance of the irreducible error, which is the noise inherent in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa18-final-Q13h-h4",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa18-final-Q13h-h3"
+        ],
+        "title": "Effect of Model Complexity on Sigma Squared",
+        "text": "Model complexity does not affect the irreducible error (\u03c3\u00b2) because this error is inherent in the data and cannot be reduced by changing the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa18-final-Q13h-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a613447ds100-fa18-final-Q13h-h4"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Consider whether decreasing model complexity can reduce the irreducible error (\u03c3\u00b2).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

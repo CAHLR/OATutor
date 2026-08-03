@@ -1,0 +1,108 @@
+[
+    {
+        "id": "a5d4609ds100-su19-final-Q2bc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatter Plot",
+        "text": "The scatter plot shows a negative correlation between age and mpg. As age increases, mpg decreases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su19-final-Q2bc-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su19-final-Q2bc-h1"
+        ],
+        "title": "Analyzing Plot (a)",
+        "text": "Plot (a) is a KDE plot with multiple peaks. Does this match the distribution of age or mpg?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su19-final-Q2bc-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su19-final-Q2bc-h1"
+        ],
+        "title": "Analyzing Plot (b)",
+        "text": "Plot (b) is a KDE plot with a single peak. Consider whether this matches the distribution of age or mpg.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su19-final-Q2bc-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su19-final-Q2bc-h1"
+        ],
+        "title": "Analyzing Plot (c)",
+        "text": "Plot (c) is a histogram with a uniform distribution. Does this match the distribution of age or mpg?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su19-final-Q2bc-h5",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su19-final-Q2bc-h1"
+        ],
+        "title": "Analyzing Plot (d)",
+        "text": "Plot (d) is a histogram with a skewed distribution. Consider whether this matches the distribution of age or mpg.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su19-final-Q2bc-h6",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su19-final-Q2bc-h1"
+        ],
+        "title": "Analyzing Plot (e.i) and (e.ii)",
+        "text": "These are point plots showing means and confidence intervals. Consider the relationship between age and mpg.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su19-final-Q2bc-h7",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su19-final-Q2bc-h1"
+        ],
+        "title": "Analyzing Plot (f.i) and (f.ii)",
+        "text": "These are point plots similar to (e.i) and (e.ii). Consider the relationship between age and mpg.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su19-final-Q2bc-h8",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su19-final-Q2bc-h1"
+        ],
+        "title": "Analyzing Plot (g.i) and (g.ii)",
+        "text": "These are scatter plots. Compare them with the labeled scatter plot to determine consistency.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su19-final-Q2bc-h9",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su19-final-Q2bc-h1"
+        ],
+        "title": "Analyzing Plot (h.i) and (h.ii)",
+        "text": "These are scatter plots with a perfect linear relationship. Consider if this matches the relationship between age and mpg.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

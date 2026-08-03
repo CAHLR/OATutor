@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a91f150ds100-sp21-final-Q13b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting in machine learning models. It adds a penalty to the loss function to discourage complex models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp21-final-Q13b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp21-final-Q13b-h1"
+        ],
+        "title": "Identifying Overfitting",
+        "text": "If the training error is decreasing but the validation error is increasing, it indicates that the model is overfitting to the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp21-final-Q13b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp21-final-Q13b-h2"
+        ],
+        "title": "Effect of Regularization",
+        "text": "Increasing regularization can help reduce overfitting by simplifying the model, which may improve validation error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp21-final-Q13b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase regularization."
+        ],
+        "dependencies": [
+            "a91f150ds100-sp21-final-Q13b-h3"
+        ],
+        "title": "Choosing the Right Action",
+        "text": "Given that the model is overfitting, what action should Alice take to improve her model's performance on validation data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Decrease regularization.",
+            "No additional regularization changes are needed.",
+            "Add more training data only.",
+            "Increase regularization.",
+            "Increase the learning rate."
+        ]
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a977a7fds100-fa21-mt-Q2w-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Ridge vs LASSO",
+        "text": "Ridge regression and LASSO regression are both regularization techniques used to prevent overfitting. However, they handle coefficients differently. Ridge regression tends to shrink coefficients evenly, while LASSO can shrink some coefficients to zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2w-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2w-h1"
+        ],
+        "title": "Effect on Model Bias",
+        "text": "Consider how the change from ridge to LASSO might affect the model's ability to fit the data. LASSO can lead to simpler models by setting some coefficients to zero, which might affect bias.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2w-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Model bias decreases."
+        ],
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2w-h2"
+        ],
+        "title": "Comparing Bias",
+        "text": "If LASSO sets some coefficients to zero, how does this affect the model's complexity and bias compared to ridge regression?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Model bias increases.",
+            "Model bias decreases.",
+            "Model bias stays the same."
+        ]
+    }
+]

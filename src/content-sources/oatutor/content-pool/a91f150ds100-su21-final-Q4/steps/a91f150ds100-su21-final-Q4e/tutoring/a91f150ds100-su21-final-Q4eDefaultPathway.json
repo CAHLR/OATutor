@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a91f150ds100-su21-final-Q4e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias-Variance Decomposition",
+        "text": "Recall the bias-variance decomposition formula: E[(y-f(x))**2]=sigma**2+Var[f(x)]+(E[f(x)]-g(x))**2. Here, sigma is the standard deviation of the measurement errors, Var[f(x)] is the variance of the predictions, and (E[f(x)]-g(x))**2 is the squared bias.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4e-h1"
+        ],
+        "title": "Identify Given Values",
+        "text": "From the problem, we know: $$sigma=4$$, preds $$mean=104.130417$$, preds $$std=8.255889$$, and MSE $$mean=101.930101$$. Use these values in the bias-variance decomposition formula.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4e-h2"
+        ],
+        "title": "Calculate Variance of Predictions",
+        "text": "The variance of the predictions is the square of the standard deviation of the predictions. Calculate $$Var[f(x)]={8.255889}^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4e-h4",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4e-h3"
+        ],
+        "title": "Calculate Squared Bias",
+        "text": "Use the formula for MSE: MSE=sigma**2+Var[f(x)]+(E[f(x)]-g(x))**2. Rearrange to find the squared bias: (E[f(x)]-g(x))**2=MSE-sigma**2-Var[f(x)].",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4e-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$68.168$$"
+        ],
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4e-h3"
+        ],
+        "title": "Compute Variance of Predictions",
+        "text": "Calculate the variance of the predictions: $$Var[f(x)]={8.255889}^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4e-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$17.770101$$"
+        ],
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4e-h5"
+        ],
+        "title": "Compute Squared Bias",
+        "text": "Calculate the squared bias using the formula: (E[f(x)]-g(x))**2=101.930101-4**2-68.168.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4e-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4.215$$"
+        ],
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4e-h6"
+        ],
+        "title": "Estimate Empirical Bias",
+        "text": "The empirical bias is the square root of the squared bias. Calculate $$\\sqrt{17.770101}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

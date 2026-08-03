@@ -1,0 +1,18 @@
+{
+    "id": "a40b41cds100-su25-final-Q3e,Q3f,Q3ga",
+    "stepAnswer": [
+        "One cluster contains the two upper left points, one cluster contains the single right hand point, and one cluster contains the two lower points."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Justin uses a sampling of the points from $$\\text{ed\\_replies}$$ and projects the points onto the first two principal components, where there are five data points represented by dots. Justin instantiates K-Means clustering with $$K=3$$, where a triangle shape indicates a centroid. Note that the K-Means algorithm is run using the two principal components, not the original features.\\nRun the K-means algorithm until the cluster centers (i.e., centroids) no longer change. Which of the following describes the final clusters?##figure1.gif## ##figure2.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "One cluster contains the two upper left points, one cluster contains the single right hand point, and one cluster contains the two lower points.",
+        "Each of the three initial centroids keeps exactly the point it started on, and the remaining two points are left unassigned.",
+        "One cluster contains all three upper points, one cluster contains the two lower points, and one cluster remains empty.",
+        "One cluster contains one upper left point, one cluster contains the other upper left point, and one cluster contains the remaining three points.",
+        "The algorithm does not converge, so the clusters keep changing with every iteration."
+    ]
+}

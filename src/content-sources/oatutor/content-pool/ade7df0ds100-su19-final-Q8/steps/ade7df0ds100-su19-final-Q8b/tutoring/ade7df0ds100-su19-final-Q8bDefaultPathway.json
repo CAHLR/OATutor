@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ade7df0ds100-su19-final-Q8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Recall",
+        "text": "Recall is a measure of a model's ability to identify all relevant instances. It is calculated as the number of true positives divided by the sum of true positives and false negatives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su19-final-Q8b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su19-final-Q8b-h1"
+        ],
+        "title": "Comparing Models",
+        "text": "To determine which model has the highest recall, compare the recall values of Model A, Model B, and Model C.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su19-final-Q8b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.8$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su19-final-Q8b-h2"
+        ],
+        "title": "Recall Calculation for Model B",
+        "text": "If Model B has $$80$$ true positives and $$20$$ false negatives, calculate its recall.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su19-final-Q8b-h4",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su19-final-Q8b-h3"
+        ],
+        "title": "Final Decision",
+        "text": "After calculating the recall for each model, choose the one with the highest value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

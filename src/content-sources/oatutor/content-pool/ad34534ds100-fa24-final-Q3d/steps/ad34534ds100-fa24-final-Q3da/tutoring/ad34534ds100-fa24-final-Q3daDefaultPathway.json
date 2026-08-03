@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ad34534ds100-fa24-final-Q3da-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model Equation",
+        "text": "The model equation is $$self_{rating}=\\theta_0+\\theta_1 critic_1$$. This equation predicts $$self_{rating}$$ based on $$critic_{1's}$$ rating.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa24-final-Q3da-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa24-final-Q3da-h1"
+        ],
+        "title": "Effect of Subtracting the Median",
+        "text": "Subtracting the median from $$critic_1$$ will shift all values of $$critic_1$$ by a constant. Consider how this affects the slope $$\\theta_1$$ in the equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa24-final-Q3da-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa24-final-Q3da-h2"
+        ],
+        "title": "Impact on $$\\theta_1$$",
+        "text": "The slope $$\\theta_1$$ represents the change in $$self_{rating}$$ for a unit change in $$critic_1$$. Shifting $$critic_1$$ by a constant does not change the slope.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa24-final-Q3da-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ad34534ds100-fa24-final-Q3da-h3"
+        ],
+        "title": "Conclusion on $$\\theta_1$$",
+        "text": "Does subtracting the median of $$critic_1$$ change the value of $$\\theta_1$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

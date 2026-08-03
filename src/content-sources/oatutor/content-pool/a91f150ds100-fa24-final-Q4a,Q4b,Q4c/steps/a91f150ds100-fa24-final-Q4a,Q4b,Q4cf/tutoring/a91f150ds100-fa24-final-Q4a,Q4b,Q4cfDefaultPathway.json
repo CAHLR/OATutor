@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a91f150ds100-fa24-final-Q4a,Q4b,Q4cf-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "Sam's model uses two features: $$dist_{from,bell}$$ and $$section_{no}$$. He then adds three more features by one-hot encoding the weather column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa24-final-Q4a,Q4b,Q4cf-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-fa24-final-Q4a,Q4b,Q4cf-h1"
+        ],
+        "title": "Effect of Adding Features",
+        "text": "Adding more features to a model can increase its complexity. However, it does not necessarily increase the training loss. In fact, it often decreases the training loss because the model can fit the training data better.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa24-final-Q4a,Q4b,Q4cf-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-fa24-final-Q4a,Q4b,Q4cf-h2"
+        ],
+        "title": "Training Loss and Overfitting",
+        "text": "While adding features can reduce training loss, it might lead to overfitting, where the model performs well on training data but poorly on unseen data. However, the question is about training loss, not generalization.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa24-final-Q4a,Q4b,Q4cf-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a91f150ds100-fa24-final-Q4a,Q4b,Q4cf-h3"
+        ],
+        "title": "Conclusion on Training Loss",
+        "text": "Given that adding features allows the model to fit the training data better, will the training loss increase or decrease?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

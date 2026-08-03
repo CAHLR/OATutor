@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a825455ds100-su25-final-Q3e,Q3f,Q3gb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Agglomerative Clustering",
+        "text": "Agglomerative clustering starts with each point as its own cluster and merges the closest clusters step by step. Complete linkage considers the maximum distance between points in different clusters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su25-final-Q3e,Q3f,Q3gb-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-su25-final-Q3e,Q3f,Q3gb-h1"
+        ],
+        "title": "First Step of Clustering",
+        "text": "Identify the two closest points on the PC1 axis. These will be merged first.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su25-final-Q3e,Q3f,Q3gb-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "{4,5}"
+        ],
+        "dependencies": [
+            "a825455ds100-su25-final-Q3e,Q3f,Q3gb-h2"
+        ],
+        "title": "First Merge",
+        "text": "Which two points are closest to each other on the PC1 axis?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su25-final-Q3e,Q3f,Q3gb-h4",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-su25-final-Q3e,Q3f,Q3gb-h3"
+        ],
+        "title": "Second Step of Clustering",
+        "text": "After merging the closest points, identify the next closest pair of clusters or points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su25-final-Q3e,Q3f,Q3gb-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "{3,4,5}"
+        ],
+        "dependencies": [
+            "a825455ds100-su25-final-Q3e,Q3f,Q3gb-h4"
+        ],
+        "title": "Second Merge",
+        "text": "After merging {4,5}, which cluster or point is closest to another?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su25-final-Q3e,Q3f,Q3gb-h6",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-su25-final-Q3e,Q3f,Q3gb-h5"
+        ],
+        "title": "Third Step of Clustering",
+        "text": "Now, find the next closest pair of clusters or points to merge.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su25-final-Q3e,Q3f,Q3gb-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "{1,2}"
+        ],
+        "dependencies": [
+            "a825455ds100-su25-final-Q3e,Q3f,Q3gb-h6"
+        ],
+        "title": "Third Merge",
+        "text": "After merging {3,4,5}, which cluster or point is closest to another?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

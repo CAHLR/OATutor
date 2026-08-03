@@ -1,0 +1,74 @@
+[
+    {
+        "id": "a825455ds100-sp18-final-Q15d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Distributed File Systems",
+        "text": "Distributed file systems are designed to handle large amounts of data by spreading it across multiple machines. This can lead to faster data access and redundancy, but it also introduces some complexities.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp18-final-Q15d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-sp18-final-Q15d-h1"
+        ],
+        "title": "Comparing Read Speeds",
+        "text": "Consider the factors that affect read speeds in distributed systems versus single drives. Think about network latency, parallel processing, and data locality.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp18-final-Q15d-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Parallel processing and data redundancy can lead to faster read speeds in distributed systems."
+        ],
+        "dependencies": [
+            "a825455ds100-sp18-final-Q15d-h2"
+        ],
+        "title": "Analyzing Read Speed Factors",
+        "text": "What are some reasons why reading from a distributed file system might be faster than from a single drive?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp18-final-Q15d-h4",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-sp18-final-Q15d-h3"
+        ],
+        "title": "Network Latency Considerations",
+        "text": "While distributed systems can be faster due to parallel processing, network latency can sometimes slow down data retrieval. Consider how this might affect overall read speeds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp18-final-Q15d-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a825455ds100-sp18-final-Q15d-h4"
+        ],
+        "title": "Final Decision",
+        "text": "Based on the factors discussed, is the statement 'reading a large file from a distributed file system is usually slower than reading the same large file from a single drive' true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

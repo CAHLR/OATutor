@@ -1,0 +1,29 @@
+[
+    {
+        "id": "ab27becrow6d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding mean\\_Q",
+        "text": "To calculate the mean of two numbers, you add them together and then divide by $$2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ab27becrow6d-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "skate\\_record[\"mean\\_Q\"]"
+        ],
+        "dependencies": [
+            "ab27becrow6d-h1"
+        ],
+        "title": "Calculate mean\\_Q",
+        "text": "Use the ratings from critic\\_1 and critic\\_2 to calculate the mean rating for each performance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

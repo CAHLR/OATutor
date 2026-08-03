@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a40b41cds100-sp24-final-Q10b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding k-Medians",
+        "text": "In k-Medians, the cluster center is the median of the data points in the cluster. This is different from k-Means, where the center is the mean of the data points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp24-final-Q10b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp24-final-Q10b-h1"
+        ],
+        "title": "Initial Cluster Centers",
+        "text": "The initial cluster centers are given as $$2$$ and $$7$$. We need to determine the new cluster centers after the first reassignment.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp24-final-Q10b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp24-final-Q10b-h2"
+        ],
+        "title": "Assign Data Points to Clusters",
+        "text": "Assign each data point to the nearest cluster center. Calculate the distance of each data point from the cluster centers $$2$$ and $$7$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp24-final-Q10b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$ and $$6$$"
+        ],
+        "dependencies": [
+            "a40b41cds100-sp24-final-Q10b-h3"
+        ],
+        "title": "Calculate New Cluster Centers",
+        "text": "After assigning data points to clusters, calculate the median of each cluster to find the new cluster centers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp24-final-Q10b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp24-final-Q10b-h4"
+        ],
+        "title": "Verify the New Cluster Centers",
+        "text": "Check if the calculated medians are indeed the new cluster centers by verifying the data points in each cluster.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

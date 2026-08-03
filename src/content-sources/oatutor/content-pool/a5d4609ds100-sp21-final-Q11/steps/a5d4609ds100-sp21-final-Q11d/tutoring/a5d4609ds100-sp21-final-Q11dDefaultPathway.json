@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a5d4609ds100-sp21-final-Q11d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It reduces the dimensionality of the data while preserving as much variance as possible.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp21-final-Q11d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp21-final-Q11d-h1"
+        ],
+        "title": "Reconstruction Error in PCA",
+        "text": "Reconstruction error in PCA is the difference between the original data and the data reconstructed from the principal components. Lower reconstruction error means the principal components capture more of the data's variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp21-final-Q11d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp21-final-Q11d-h2"
+        ],
+        "title": "Analyzing Plot A",
+        "text": "Look at the spread of the data in Plot A. Consider how well the first two principal components can capture the variance in this dataset.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp21-final-Q11d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a5d4609ds100-sp21-final-Q11d-h3"
+        ],
+        "title": "Variance in Plot A",
+        "text": "Does Plot A have a clear direction of maximum variance that can be captured by the first principal component?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a5d4609ds100-sp21-final-Q11d-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a5d4609ds100-sp21-final-Q11d-h4"
+        ],
+        "title": "Reconstruction Error for Plot A",
+        "text": "If the first two principal components capture most of the variance in Plot A, will the reconstruction error be low?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a5d4609ds100-sp21-final-Q11d-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a5d4609ds100-sp21-final-Q11d-h5"
+        ],
+        "title": "Conclusion for Dataset A",
+        "text": "Based on the analysis, if we applied PCA to dataset A and used only the two first principal components, would the dataset have the lowest reconstruction error or be tied for the lowest reconstruction error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

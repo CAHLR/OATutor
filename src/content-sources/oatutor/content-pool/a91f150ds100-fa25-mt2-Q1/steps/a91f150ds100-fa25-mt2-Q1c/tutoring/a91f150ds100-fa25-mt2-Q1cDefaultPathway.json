@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a91f150ds100-fa25-mt2-Q1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross Validation",
+        "text": "In 8-fold cross-validation, the dataset is divided into $$8$$ parts. Each part is used once as a validation set while the remaining $$7$$ parts form the training set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa25-mt2-Q1c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-fa25-mt2-Q1c-h1"
+        ],
+        "title": "Regularization Hyperparameter",
+        "text": "The regularization hyperparameter is a value that controls the amount of regularization applied to the model. In this problem, we are testing $$11$$ different values of this hyperparameter.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa25-mt2-Q1c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-fa25-mt2-Q1c-h2"
+        ],
+        "title": "Calculating the Number of Training Sets",
+        "text": "For each value of the hyperparameter, we perform 8-fold cross-validation. This means we train the model $$8$$ times for each hyperparameter value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa25-mt2-Q1c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$11\\left(8-1\\right)$$"
+        ],
+        "dependencies": [
+            "a91f150ds100-fa25-mt2-Q1c-h3"
+        ],
+        "title": "Determine the Total Number of Training Sets",
+        "text": "How many times is the model trained in total when using 8-fold cross-validation for $$11$$ hyperparameter values?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa25-mt2-Q1c-h5",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-fa25-mt2-Q1c-h4"
+        ],
+        "title": "Understanding the Formula",
+        "text": "The formula $$11\\left(8-1\\right)$$ represents the number of times each data point is used in the training dataset across all hyperparameter values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

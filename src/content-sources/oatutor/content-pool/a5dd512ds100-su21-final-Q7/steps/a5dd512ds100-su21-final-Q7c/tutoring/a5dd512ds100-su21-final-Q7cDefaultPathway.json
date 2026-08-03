@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a5dd512ds100-su21-final-Q7c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Classifier",
+        "text": "Look at how the decision boundary separates the orange and blue points. Does it correctly classify all the points in the training set?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q7c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q7c-h1"
+        ],
+        "title": "Analyzing the Decision Boundary",
+        "text": "Check if there are any points that are misclassified by the boundary. Are all orange points in the orange region and all blue points in the blue region?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q7c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q7c-h2"
+        ],
+        "title": "Checking Misclassifications",
+        "text": "Count the number of orange points in the blue region and blue points in the orange region. Are there any?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q7c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q7c-h3"
+        ],
+        "title": "Conclusion on Accuracy",
+        "text": "Based on your analysis, does the classifier have perfect accuracy on the training set?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

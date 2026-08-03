@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ad34534ds100-fa25-mt2-Q2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Role of the Vector $$1$$",
+        "text": "Consider the role of the vector $$1$$ in the context of the design matrix X. What does it mean for a vector to be in the span of a matrix?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q2b-h1"
+        ],
+        "title": "Span of a Matrix",
+        "text": "The span of a matrix consists of all possible linear combinations of its columns. If a vector is in the span of a matrix, it can be expressed as a linear combination of the matrix's columns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q2b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q2b-h2"
+        ],
+        "title": "The Role of the Intercept",
+        "text": "The intercept column in the design matrix X is a column of ones. How does this relate to the vector 1?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q2b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes, because the intercept column is a column of ones."
+        ],
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q2b-h3"
+        ],
+        "title": "Expressing $$1$$ as a Linear Combination",
+        "text": "Can the vector $$1$$ be expressed as a linear combination of the columns of X?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "No",
+            "Yes",
+            "Yes, because the intercept column is a column of ones."
+        ]
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q2b-h5",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q2b-h4"
+        ],
+        "title": "Conclusion",
+        "text": "Since the vector $$1$$ can be expressed as a linear combination of the columns of X, it is in the span of X.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

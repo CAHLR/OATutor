@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a253306row6c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Hypothesis",
+        "text": "The null hypothesis states that $$\\theta_0$$ equals $$0$$. This means we are testing if the intercept of the model is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row6c-h1"
+        ],
+        "title": "Bootstrap Confidence Interval",
+        "text": "A 95% confidence interval that includes $$0$$ suggests that there is not enough evidence to reject the null hypothesis that $$\\theta_0$$ equals $$0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row6c-h2"
+        ],
+        "title": "Interpreting the Confidence Interval",
+        "text": "If the confidence interval includes $$0$$, it does not necessarily mean the true value of $$\\theta_0$$ is $$0$$. It means we cannot rule out $$0$$ as a possible value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a253306row6c-h3"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Based on the confidence interval interpretation, is the statement 'If the 95% confidence interval of $$\\theta_0$$ from the bootstrapped samples includes $$0$$, then the true value of $$\\theta_0$$ is 0' true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

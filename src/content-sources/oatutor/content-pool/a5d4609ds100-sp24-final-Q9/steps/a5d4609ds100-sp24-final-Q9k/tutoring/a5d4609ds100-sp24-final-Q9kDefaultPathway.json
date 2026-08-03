@@ -1,0 +1,62 @@
+[
+    {
+        "id": "a5d4609ds100-sp24-final-Q9k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Principal Components",
+        "text": "Principal components are orthogonal to each other. This means that the dot product of any two different principal components should be zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp24-final-Q9k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp24-final-Q9k-h1"
+        ],
+        "title": "Orthogonality of Principal Components",
+        "text": "Since principal components are orthogonal, their dot product is zero. If the dot product is greater than zero, it indicates that they are not orthogonal.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp24-final-Q9k-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a5d4609ds100-sp24-final-Q9k-h2"
+        ],
+        "title": "Evaluating the Dot Product",
+        "text": "Given that PC \\alpha and PC \u03b2 are principal components, what should their dot product be?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp24-final-Q9k-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a5d4609ds100-sp24-final-Q9k-h3"
+        ],
+        "title": "Conclusion on the Statement",
+        "text": "Based on the orthogonality of principal components, is the statement 'The dot product of PC \\alpha and PC \u03b2 is greater than 0' true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

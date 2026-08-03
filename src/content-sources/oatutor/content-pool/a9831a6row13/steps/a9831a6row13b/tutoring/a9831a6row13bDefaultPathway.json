@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a9831a6row13b-h6",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpret the Anchor",
+        "text": "The caret ** anchors the match to the beginning of the string, so the regex starts checking from the first character of review\\_3.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9831a6row13b-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It's"
+        ],
+        "dependencies": [
+            "a9831a6row13b-h6"
+        ],
+        "title": "First Four Characters",
+        "text": "What are the first four characters of review\\_3?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "It's",
+            "pink",
+            "$$1000$$",
+            "It"
+        ]
+    },
+    {
+        "id": "a9831a6row13b-h8",
+        "type": "hint",
+        "dependencies": [
+            "a9831a6row13b-h7"
+        ],
+        "title": "Apply \\D{4}",
+        "text": "\\D means a non-digit character, and {4} means exactly four of them. The first four characters are I, $$t$$, ', and s, so the returned list is [\"It's\"].",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fg-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding ROC-AUC",
+        "text": "The ROC-AUC (Receiver Operating Characteristic - Area Under Curve) is a performance measurement for classification problems at various thresholds settings. It tells how much the model is capable of distinguishing between classes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fg-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp25-final-Q3e,Q3fg-h1"
+        ],
+        "title": "Effect of Lowering the Threshold",
+        "text": "Lowering the decision threshold means that the model will classify more instances as 'Kendrick'. This can affect the true positive rate and false positive rate.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fg-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp25-final-Q3e,Q3fg-h2"
+        ],
+        "title": "Impact on ROC-AUC",
+        "text": "The ROC-AUC is a measure of the model's ability to distinguish between classes, independent of the threshold. Changing the threshold does not affect the ROC-AUC value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fg-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a5dd512ds100-sp25-final-Q3e,Q3fg-h3"
+        ],
+        "title": "Threshold and ROC-AUC",
+        "text": "If you lower the threshold to $$0.3$$, will the ROC-AUC change?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

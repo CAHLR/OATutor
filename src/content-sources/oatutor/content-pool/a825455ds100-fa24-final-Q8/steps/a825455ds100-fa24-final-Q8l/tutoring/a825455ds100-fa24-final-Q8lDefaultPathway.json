@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a825455ds100-fa24-final-Q8l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Silhouette Score",
+        "text": "The silhouette score measures how similar a data point is to its own cluster compared to other clusters. A high silhouette score indicates that the data point is well matched to its own cluster and poorly matched to neighboring clusters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa24-final-Q8l-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-fa24-final-Q8l-h1"
+        ],
+        "title": "Evaluating Clustering Outcomes",
+        "text": "When evaluating clustering outcomes, consider both the compactness of clusters and the separation between different clusters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa24-final-Q8l-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a825455ds100-fa24-final-Q8l-h2"
+        ],
+        "title": "Analyzing the Statement",
+        "text": "Consider whether a high silhouette score implies that a data point is far from other points in its cluster.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

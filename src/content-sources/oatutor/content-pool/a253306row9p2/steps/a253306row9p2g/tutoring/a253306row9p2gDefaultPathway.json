@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a253306row9p2g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Ordinary Least Squares",
+        "text": "Ordinary Least Squares (OLS) is a method for estimating the parameters in a linear regression model. It minimizes the sum of the squared differences between the observed values and the values predicted by the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row9p2g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row9p2g-h1"
+        ],
+        "title": "OLS and Predictions",
+        "text": "The OLS estimate \\( \\hat{\\theta} \\) is chosen to minimize the sum of squared differences between the actual values \\( Y \\) and the predicted values \\( \\hat{Y} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row9p2g-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row9p2g-h2"
+        ],
+        "title": "Objective of OLS",
+        "text": "The objective of OLS is to find the parameter estimates that minimize the residual sum of squares (RSS), which is the sum of squared differences between the observed and predicted values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

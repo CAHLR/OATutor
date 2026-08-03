@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a410fc9row8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatterplot",
+        "text": "Observe the scatterplot of $$z$$ vs $$y$$. Notice the pattern of the data points. Does it resemble a linear, quadratic, or another type of relationship?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row8b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row8b-h1"
+        ],
+        "title": "Identifying the Pattern",
+        "text": "The scatterplot shows a curve that appears to be quadratic. This suggests that $$y$$ might be related to $$z$$ in a quadratic manner.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row8b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row8b-h2"
+        ],
+        "title": "Formulating the Relationship",
+        "text": "If the relationship is quadratic, consider the form $$y=\\left(mz+b\\right)^2$$. This matches the pattern seen in the scatterplot.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row8b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$y_i=\\left(m z_i+b\\right)^2$$"
+        ],
+        "dependencies": [
+            "a410fc9row8b-h3"
+        ],
+        "title": "Choosing the Correct Expression",
+        "text": "Based on the scatterplot, which expression correctly represents $$y$$ as a function of $$z$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$y_i=\\left(m z_i+b\\right)^2$$",
+            "$$y_i=\\left(m z_i+b\\right)^3$$",
+            "$$y_i=m z_i$$",
+            "$$y_i=m z_i+b$$"
+        ]
+    }
+]

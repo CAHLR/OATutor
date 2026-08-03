@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ade7df0ds100-sp21-final-Q4a,Q4b,Q4ch-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Separability",
+        "text": "Linear separability means that you can draw a straight line (or hyperplane in higher dimensions) to separate the classes in your dataset. Consider how transformations can help achieve this.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q4a,Q4b,Q4ch-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q4a,Q4b,Q4ch-h1"
+        ],
+        "title": "Effect of Transformation",
+        "text": "Think about how the transformation $$(x_1,x_2)$$ to $$({x_2}^2,{x_1}^2)$$ affects the data points. Does it make it easier to separate the classes with a straight line?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q4a,Q4b,Q4ch-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The points become linearly separable."
+        ],
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q4a,Q4b,Q4ch-h2"
+        ],
+        "title": "Analyzing the Transformation",
+        "text": "Consider a simple dataset where points are not linearly separable. Apply the transformation $$(x_1,x_2)$$ to $$({x_2}^2,{x_1}^2)$$. What happens to the points?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q4a,Q4b,Q4ch-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The transformed points form a parabolic shape making them easier to separate with a line."
+        ],
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q4a,Q4b,Q4ch-h3"
+        ],
+        "title": "Visualizing the Transformation",
+        "text": "Imagine plotting the original points and then plotting the transformed points. How does the shape of the data change?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q4a,Q4b,Q4ch-h5",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q4a,Q4b,Q4ch-h4"
+        ],
+        "title": "Conclusion on Linear Separability",
+        "text": "After applying the transformation, can you draw a straight line to separate the classes?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

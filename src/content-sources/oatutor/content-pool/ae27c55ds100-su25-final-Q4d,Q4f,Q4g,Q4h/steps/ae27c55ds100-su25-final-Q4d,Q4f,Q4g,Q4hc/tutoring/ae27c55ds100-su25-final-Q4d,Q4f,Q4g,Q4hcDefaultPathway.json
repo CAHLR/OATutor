@@ -1,0 +1,94 @@
+[
+    {
+        "id": "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4hc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Null Hypothesis",
+        "text": "The null hypothesis states that the proportion of adults in Berkeley that consume at least $$1$$ soda every day is 72%. This is represented as $$p=0.72$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4hc-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4hc-h1"
+        ],
+        "title": "Sample Proportion",
+        "text": "The sample proportion, denoted as \\( \\hat{\\alpha} \\), is the proportion of the sample that consumes at least $$1$$ soda every day. In this case, \\( $$\\hat{\\alpha}=0.67$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4hc-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4hc-h2"
+        ],
+        "title": "Significance Level",
+        "text": "The significance level is the probability of rejecting the null hypothesis when it is true. Here, the significance level is 10%, or $$0.10$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4hc-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4hc-h3"
+        ],
+        "title": "Decision Rule",
+        "text": "To reject the null hypothesis, the sample proportion \\( \\hat{\\alpha} \\) must be significantly different from the hypothesized proportion $$(0.72)$$ at the 10% significance level.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4hc-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$z=-2.58$$"
+        ],
+        "dependencies": [
+            "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4hc-h4"
+        ],
+        "title": "Calculate the Test Statistic",
+        "text": "Calculate the test statistic using the formula: \\( z=\\frac{\\hat{\\alpha}-p}{\\sqrt{\\frac{p(1-p)}{n}}} \\), where \\( $$\\hat{\\alpha}=0.67$$ \\), \\( $$p=0.72$$ \\), and \\( $$n=1000$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4hc-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$z<-1.645$$ or $$z>1.645$$"
+        ],
+        "dependencies": [
+            "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4hc-h5"
+        ],
+        "title": "Compare with Critical Value",
+        "text": "Compare the calculated test statistic with the critical value for a two-tailed test at the 10% significance level.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4hc-h7",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4hc-h6"
+        ],
+        "title": "Conclusion",
+        "text": "Since the calculated test statistic is less than the critical value, we reject the null hypothesis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a253306row1_part3k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LASSO Regularization",
+        "text": "LASSO regularization adds a penalty to the loss function based on the absolute values of the coefficients. This can lead to some coefficients being reduced to zero, effectively selecting a simpler model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row1_part3k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row1_part3k-h1"
+        ],
+        "title": "Effect on Training MSE",
+        "text": "Consider how adding a penalty term to the loss function might affect the model's fit to the training data. Will it always fit the training data better, worse, or could it vary?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row1_part3k-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "a253306row1_part3k-h2"
+        ],
+        "title": "Analyzing Training MSE with LASSO",
+        "text": "When LASSO regularization is applied, the model may not fit the training data as closely as an unregularized model. What does this imply about the training MSE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Increase and Decrease"
+        ]
+    }
+]

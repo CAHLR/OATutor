@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a825455ds100-sp25-final-Q4c,Q4dg-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Clustering",
+        "text": "Clustering is a method of grouping a set of objects in such a way that objects in the same group (called a cluster) are more similar to each other than to those in other groups.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp25-final-Q4c,Q4dg-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-sp25-final-Q4c,Q4dg-h1"
+        ],
+        "title": "Silhouette Score",
+        "text": "The silhouette score is a measure of how similar an object is to its own cluster compared to other clusters. It ranges from $$-1$$ to $$1$$, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp25-final-Q4c,Q4dg-h3",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-sp25-final-Q4c,Q4dg-h2"
+        ],
+        "title": "K-Means Clustering",
+        "text": "K-Means is a popular clustering algorithm that partitions data into K clusters, where each data point belongs to the cluster with the nearest mean.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp25-final-Q4c,Q4dg-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a825455ds100-sp25-final-Q4c,Q4dg-h3"
+        ],
+        "title": "Evaluating Clustering",
+        "text": "Does K-Means always optimize the silhouette score?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

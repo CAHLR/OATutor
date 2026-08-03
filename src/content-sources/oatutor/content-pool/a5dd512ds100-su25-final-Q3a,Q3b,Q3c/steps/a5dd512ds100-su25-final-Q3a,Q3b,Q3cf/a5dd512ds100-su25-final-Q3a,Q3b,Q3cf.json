@@ -1,0 +1,19 @@
+{
+    "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3cf",
+    "stepAnswer": [
+        "$$(0.54, 0.75)$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Justin fits a different classification model on the training data. He applies this model to a test set and gets the following results, one bullet per test point:\\n\u2022 true label $$1$$, prediction $$1$$, outputted probability of $$y=1$$ equal to $$0.88$$\\n\u2022 true label $$1$$, prediction $$0$$, outputted probability of $$y=1$$ equal to $$0.4$$\\n\u2022 true label $$1$$, prediction $$1$$, outputted probability of $$y=1$$ equal to $$0.75$$\\n\u2022 true label $$0$$, prediction $$0$$, outputted probability of $$y=1$$ equal to $$0.3$$\\n\u2022 true label $$0$$, prediction $$0$$, outputted probability of $$y=1$$ equal to $$0.54$$\\nGiven the values above, what are the minimum and maximum possible values of Justin's chosen threshold? For full credit, your answer does not need to address whether the bounds are inclusive or exclusive.",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "$$(0.54, 0.75)$$",
+    "choices": [
+        "$$(0.3, 0.4)$$",
+        "$$(0.4, 0.54)$$",
+        "$$(0.54, 0.75)$$",
+        "$$(0.75, 0.88)$$",
+        "$$(0.4, 0.75)$$"
+    ]
+}

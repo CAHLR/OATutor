@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a272acfds100-sp24-final-Q9b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Principal Components",
+        "text": "Principal Component Analysis (PCA) aims to find the directions (principal components) that maximize the variance in the data. The first principal component is the direction of maximum variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp24-final-Q9b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp24-final-Q9b-h1"
+        ],
+        "title": "Visualizing Principal Components",
+        "text": "When you plot two columns of data, the principal component that captures the most variance will align with the axis where the data is most spread out.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp24-final-Q9b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp24-final-Q9b-h2"
+        ],
+        "title": "Identifying the Vertical Component",
+        "text": "Look for the pair of columns where the data points are spread out more vertically than horizontally. This indicates that the first principal component is likely pointing along the vertical axis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp24-final-Q9b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Pair C"
+        ],
+        "dependencies": [
+            "a272acfds100-sp24-final-Q9b-h3"
+        ],
+        "title": "Analyzing Pair C",
+        "text": "Examine Pair C. Does the spread of data points suggest that the first principal component is aligned vertically?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Pair A",
+            "Pair B",
+            "Pair C",
+            "Not enough information"
+        ]
+    }
+]

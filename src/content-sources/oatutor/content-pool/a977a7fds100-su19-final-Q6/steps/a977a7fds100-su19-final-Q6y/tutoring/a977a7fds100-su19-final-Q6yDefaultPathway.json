@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a977a7fds100-su19-final-Q6y-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variance",
+        "text": "What happens to the variance of a model when you increase the number of data points?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6y-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6y-h1"
+        ],
+        "title": "Effect of More Data",
+        "text": "Increasing the number of data points generally leads to a decrease in variance. This is because the model has more information to learn from, reducing the impact of any single data point.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6y-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6y-h2"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Given that increasing the number of data points decreases variance, does collecting $$100$$ more sample points decrease variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

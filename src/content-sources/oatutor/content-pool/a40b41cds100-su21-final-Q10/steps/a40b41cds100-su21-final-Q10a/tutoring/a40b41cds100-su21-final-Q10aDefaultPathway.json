@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a40b41cds100-su21-final-Q10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Clustering Algorithms",
+        "text": "Clustering algorithms are unsupervised learning methods. What does this imply about the data labels?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-su21-final-Q10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-su21-final-Q10a-h1"
+        ],
+        "title": "Data Labels in Clustering",
+        "text": "Consider whether clustering algorithms require labeled data to form clusters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-su21-final-Q10a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "never"
+        ],
+        "dependencies": [
+            "a40b41cds100-su21-final-Q10a-h2"
+        ],
+        "title": "Clustering and Data Labels",
+        "text": "When clustering, the algorithm [blank] sees data labels.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "always",
+            "sometimes",
+            "never"
+        ]
+    }
+]

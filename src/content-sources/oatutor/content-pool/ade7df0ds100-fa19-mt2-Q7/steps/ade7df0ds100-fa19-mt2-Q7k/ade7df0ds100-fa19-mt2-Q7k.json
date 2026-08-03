@@ -1,0 +1,18 @@
+{
+    "id": "ade7df0ds100-fa19-mt2-Q7k",
+    "stepAnswer": [
+        "$$-\\log(\\sigma(1.2))$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Suppose after training our model we get\\n$$\\beta=(-1.2, -0.005, 2.5)$$\\nwhere $$-1.2$$ is an intercept term, $$-0.005$$ is the parameter corresponding to passenger's age, and $$2.5$$ is the parameter corresponding to sex.\\nThe $$20$$ year old female passenger considered in the previous part actually survived. What is the cross-entropy loss for our prediction in that part? If there is not enough information, choose not enough information.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "$$\\log(\\sigma(1.2))$$",
+        "$$-\\log(1-\\sigma(1.2))$$",
+        "$$-\\log(\\sigma(1.2))$$",
+        "$$-\\log(\\sigma(1.2))-\\log(1-\\sigma(1.2))$$",
+        "Not enough information"
+    ]
+}

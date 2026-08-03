@@ -1,0 +1,95 @@
+[
+    {
+        "id": "ae36232ds100-sp25-final-Q2n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Objective Function",
+        "text": "The objective function is a mathematical expression that helps in optimizing the predicted monthly profits. It involves parameters $$\\theta_0$$ and $$\\theta_1$$, which need to be adjusted to minimize the function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2n-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2n-h1"
+        ],
+        "title": "Partial Derivative with Respect to $$\\Theta_1$$",
+        "text": "To find the partial derivative with respect to $$\\theta_1$$, focus on the terms in the objective function that include $$\\theta_1$$. Differentiate these terms while treating $$\\theta_0$$ as a constant.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2n-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-x_i$$"
+        ],
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2n-h2"
+        ],
+        "title": "Calculate the Derivative of Each Term",
+        "text": "Consider the term $$-\\theta_1 x_i$$ in the objective function. What is its derivative with respect to $$\\theta_1$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2n-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\theta_0$$"
+        ],
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2n-h3"
+        ],
+        "title": "Derivative of the $$\\Theta_0 \\Theta_1$$ Term",
+        "text": "Now, consider the term $$\\theta_0 \\theta_1$$ in the objective function. What is its derivative with respect to $$\\theta_1$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2n-h5",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2n-h4"
+        ],
+        "title": "Combine the Derivatives",
+        "text": "Combine the derivatives of the terms $$-\\theta_1 x_i$$ and $$\\theta_0 \\theta_1$$ to complete the gradient vector.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2n-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-x_i+\\theta_0$$"
+        ],
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2n-h5"
+        ],
+        "title": "Final Expression for the Gradient",
+        "text": "What is the final expression for the gradient vector with respect to $$\\theta_1$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-x_i+\\theta_0$$",
+            "$$-x_i+\\theta_0$$",
+            "$$-x_i+\\theta_1$$",
+            "$$-x_i-\\theta_0$$",
+            "$$x_i+\\theta_0$$",
+            "$$x_i-\\theta_0$$"
+        ]
+    }
+]

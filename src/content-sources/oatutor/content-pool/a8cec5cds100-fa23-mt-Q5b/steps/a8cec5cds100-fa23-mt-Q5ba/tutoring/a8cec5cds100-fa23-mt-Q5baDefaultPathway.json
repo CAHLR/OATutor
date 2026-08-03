@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a8cec5cds100-fa23-mt-Q5ba-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "Rohan's model is given by \\( \\hat{y}_i=\\theta\\log(x_i**{2}) \\). This means that for each data point \\( $$x_i$$ \\), the predicted value \\( \\hat{y}_i \\) is a linear function of \\( \\log(x_i**{2}) \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q5ba-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q5ba-h1"
+        ],
+        "title": "Mean Squared Error (MSE)",
+        "text": "The Mean Squared Error (MSE) is defined as \\( \\frac{1}{n}\\sum{i\\=1}{n}{(y_i-\\hat{y}_i)**{2}} \\). To minimize this, we need to find the value of \\( $$\\theta$$ \\) that minimizes the sum of squared differences between the actual \\( $$y_i$$ \\) and predicted \\( \\hat{y}_i \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q5ba-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q5ba-h2"
+        ],
+        "title": "Simplifying the Expression",
+        "text": "Substitute \\( \\hat{y}_i=\\theta\\log(x_i**{2}) \\) into the MSE formula. This gives \\( \\frac{1}{n}\\sum{i\\=1}{n}{(y_i-\\theta\\log(x_i**{2}))**{2}} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q5ba-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q5ba-h3"
+        ],
+        "title": "Taking the Derivative",
+        "text": "To find the value of \\( $$\\theta$$ \\) that minimizes the MSE, take the derivative of the MSE with respect to \\( $$\\theta$$ \\) and set it to zero. This will give you the optimal \\( \\hat{\\theta} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a40b41cds100-sp25-final-Q4c,Q4dc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Agglomerative Clustering",
+        "text": "Agglomerative clustering starts with each data point as its own cluster and merges the closest clusters step by step. In single linkage, the distance between two clusters is defined as the shortest distance between any two points in the clusters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp25-final-Q4c,Q4dc-h2",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp25-final-Q4c,Q4dc-h1"
+        ],
+        "title": "Visualizing the Clustering Process",
+        "text": "Imagine each panda as a point in a 2D space. As you perform agglomerative clustering, you merge the closest points (or clusters) together. After $$3$$ steps, check if Panda $$4$$ is in the same cluster as the panda in question.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp25-final-Q4c,Q4dc-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a40b41cds100-sp25-final-Q4c,Q4dc-h2"
+        ],
+        "title": "Step-by-Step Clustering",
+        "text": "Start with each panda as its own cluster. After the first step, two pandas are merged into one cluster. After the second step, another two pandas are merged. After the third step, check if Panda $$4$$ is in the same cluster as the panda in question.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a613447ds100-su19-final-Q6g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model uses one-hot encoding for the meat type. This means that for each type of meat, a binary variable is created that is $$1$$ if the meat is of that type and $$0$$ otherwise.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6g-h1"
+        ],
+        "title": "Interpreting the Coefficients",
+        "text": "The coefficients (theta values) in the model represent the change in the total bill when the corresponding variable changes by one unit, holding all other variables constant.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6g-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6g-h2"
+        ],
+        "title": "Analyzing the Box Plot",
+        "text": "The box plot shows the distribution of total bills for each type of meat. Compare the medians and ranges to understand the impact of each meat type on the total bill.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Not enough info"
+        ],
+        "dependencies": [
+            "a613447ds100-su19-final-Q6g-h3"
+        ],
+        "title": "Determining $$\\Theta_0$$",
+        "text": "Based on the data and visualizations, what can you infer about $$\\theta_0$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Positive",
+            "Negative",
+            "Exactly $$0$$",
+            "Not enough info"
+        ]
+    }
+]

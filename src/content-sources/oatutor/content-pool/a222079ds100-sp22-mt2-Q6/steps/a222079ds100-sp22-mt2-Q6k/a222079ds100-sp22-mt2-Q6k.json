@@ -1,0 +1,18 @@
+{
+    "id": "a222079ds100-sp22-mt2-Q6k",
+    "stepAnswer": [
+        "\"calories\""
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "blank (vi): $$\\text{boot\\_y}$$ column selection",
+    "stepBody": "Complete the bootstrap code below:\\n\\nestimates $$=$$ []\\n$$\\texttt{num\\_rows,}$$ $$\\texttt{num\\_cols}$$ $$=$$ $$\\texttt{lunch\\_mat.shape}$$\\nfor i in range(5000):\\n$$\\texttt{boot\\_sample}$$ $$=$$ $$\\texttt{lunch\\_mat.sample((iii),}$$ (iv))\\n$$\\texttt{boot\\_X}$$ $$=$$ $$\\texttt{boot\\_sample[(v)]}$$\\n$$\\texttt{boot\\_y}$$ $$=$$ $$\\texttt{boot\\_sample[(vi)]}$$\\n$$\\texttt{boot\\_param1}$$ $$=$$ $$\\texttt{get\\_param1(boot\\_X,}$$ $$\\texttt{boot\\_y)}$$\\n$$\\texttt{estimates.append(boot\\_param1)}$$\\nlower $$=$$ np.percentile(estimates, (vii))\\nupper $$=$$ np.percentile(estimates, (viii))\\n$$\\texttt{confidence\\_interval}$$ $$=$$ (lower, upper)",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "\"calories\"",
+        "$$\\texttt{\"calories\\_1d\\_ago\"}$$",
+        "$$\\texttt{\"calories\\_2d\\_ago\"}$$",
+        "$$\\texttt{[\"calories\\_1d\\_ago\",}$$ $$\\texttt{\"calories\\_2d\\_ago\"]}$$",
+        "\"person\""
+    ]
+}

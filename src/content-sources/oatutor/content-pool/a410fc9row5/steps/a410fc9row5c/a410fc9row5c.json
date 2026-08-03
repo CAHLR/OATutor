@@ -1,0 +1,17 @@
+{
+    "id": "a410fc9row5c",
+    "stepAnswer": [
+        "$$\\frac{\\sum_{i=1}**{n}x_i**{2}y_i}{\\sum_{i=1}**{n}x_i**{3}}$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Find $$\\theta_1$$ that minimizes the objective function. Your answer should be in terms of $$x_i$$ $$y_i$$ and $$n.$$ Assume the objective function is convex.",
+    "stepBody": "Rachel continues analyzing the number of rides $$y_i$$ based on the hours $$x_i$$\\nShe models the relationship using SLR without an intercept:\\n$$\\text{rides}=\\theta_{1}\\text{hours}$$\\nInstead of using MSE, she decides to minimize the following custom objective function:\\n$$R(\\theta_1)=\\frac{1}{n}\\sum_{i=1}**{n}x_i(y_i-\\theta_1x_i)**{2}$$",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "$$\\frac{\\sum_{i=1}**{n}x_i**{2}y_i}{\\sum_{i=1}**{n}x_i**{3}}$$",
+        "$$\\frac{\\sum_{i=1}**{n}x_iy_i}{\\sum_{i=1}**{n}x_i**{2}}$$",
+        "$$\\frac{\\sum_{i=1}**{n}x_i**{3}}{\\sum_{i=1}**{n}x_i**{2}y_i}$$",
+        "$$\\frac{\\sum_{i=1}**{n}x_i**{2}y_i}{\\sum_{i=1}**{n}x_i**{2}}$$"
+    ]
+}

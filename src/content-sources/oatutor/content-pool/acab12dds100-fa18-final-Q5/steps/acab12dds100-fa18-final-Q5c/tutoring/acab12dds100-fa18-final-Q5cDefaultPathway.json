@@ -1,0 +1,58 @@
+[
+    {
+        "id": "acab12dds100-fa18-final-Q5c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrap Replicates",
+        "text": "Bootstrap replicates are used to estimate the sampling distribution of a statistic by resampling with replacement from the original data. In this table, each row represents a bootstrap sample.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa18-final-Q5c-h2",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa18-final-Q5c-h1"
+        ],
+        "title": "Analyzing the Table",
+        "text": "The table shows replicates in rows and columns. The rowmeans, rowvars, and rowmedians are calculated for each row, while colmeans, colvars, and colmedians are calculated for each column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa18-final-Q5c-h3",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa18-final-Q5c-h2"
+        ],
+        "title": "Effect of Sample Size on Variance",
+        "text": "Increasing the sample size generally decreases the variance of the sample mean. This is because a larger sample size provides more information about the population, leading to more stable estimates.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa18-final-Q5c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increasing the sample size"
+        ],
+        "dependencies": [
+            "acab12dds100-fa18-final-Q5c-h3"
+        ],
+        "title": "Identifying Changes to Decrease Variance",
+        "text": "Which change would decrease the variance of the sample mean?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increasing the sample size",
+            "Decreasing the sample size",
+            "Keeping the sample size the same"
+        ]
+    }
+]

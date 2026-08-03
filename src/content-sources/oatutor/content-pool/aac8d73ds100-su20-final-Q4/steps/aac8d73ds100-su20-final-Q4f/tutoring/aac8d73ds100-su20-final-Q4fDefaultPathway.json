@@ -1,0 +1,78 @@
+[
+    {
+        "id": "aac8d73ds100-su20-final-Q4f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean-Centering",
+        "text": "Mean-centering involves subtracting the mean of each column from the respective column values, except for the intercept column. This process ensures that the mean of each column is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q4f-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q4f-h1"
+        ],
+        "title": "Effect of Mean-Centering on Linear Regression",
+        "text": "When you mean-center the data, the intercept term in the linear regression model becomes zero. This is because the mean of the centered data is zero, and the intercept represents the mean of the response variable when all predictors are zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q4f-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q4f-h2"
+        ],
+        "title": "Comparing MSE of Original and Centered Models",
+        "text": "The Mean Squared Error (MSE) measures the average squared difference between the observed actual outcomes and the outcomes predicted by the model. When both the original and centered models have full column rank, their MSEs are equivalent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q4f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q4f-h3"
+        ],
+        "title": "Checking Full Column Rank",
+        "text": "Verify that both the original matrix X and the centered matrix X~ have full column rank. This means that none of the columns can be expressed as a linear combination of the others.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q4f-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q4f-h4"
+        ],
+        "title": "Understanding the Impact of Centering on MSE",
+        "text": "Explain why the MSE of the original model on the original data equals the MSE of the new model on the centered data when both matrices have full column rank.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

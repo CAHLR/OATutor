@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a5d4609ds100-sp24-final-Q9f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It helps in reducing the dimensionality of the data while preserving as much variance as possible.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp24-final-Q9f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp24-final-Q9f-h1"
+        ],
+        "title": "What is a Scree Plot?",
+        "text": "A scree plot is a line plot of the eigenvalues of factors or principal components in an analysis. It helps in determining the number of factors to retain in a dataset.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp24-final-Q9f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp24-final-Q9f-h2"
+        ],
+        "title": "Interpreting the Scree Plot",
+        "text": "In a scree plot, the eigenvalues are plotted in descending order. The point where the plot levels off (the 'elbow') indicates the number of components that explain most of the variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp24-final-Q9f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a5d4609ds100-sp24-final-Q9f-h3"
+        ],
+        "title": "Analyzing the Scree Plot",
+        "text": "Look at the scree plot and identify the point where the plot starts to level off. This point indicates the number of principal components that explain the majority of the variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a5dd512ds100-fa19-final-Q5c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Entropy Loss",
+        "text": "Cross-entropy loss is often preferred over squared loss in classification problems. Can you think of why this might be the case?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5c-h1"
+        ],
+        "title": "Properties of Cross-Entropy Loss",
+        "text": "Cross-entropy loss is particularly useful for binary classification problems. It measures the difference between two probability distributions - the true distribution and the predicted distribution. How does this relate to logistic regression?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5c-h2"
+        ],
+        "title": "Squared Loss in Classification",
+        "text": "Squared loss is more commonly used in regression problems where the output is continuous. Why might it not be suitable for classification problems?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$Cross-entropy$$ loss"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5c-h3"
+        ],
+        "title": "Comparing Loss Functions",
+        "text": "Consider the behavior of squared loss and cross-entropy loss when the predicted probability is close to $$0$$ or $$1$$. Which loss function is more sensitive to these predictions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$Cross-entropy$$ loss",
+            "Squared loss"
+        ]
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It helps in better distinguishing between classes."
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5c-h4"
+        ],
+        "title": "Sensitivity to Predictions",
+        "text": "Cross-entropy loss is more sensitive to predictions that are close to $$0$$ or $$1$$. This sensitivity helps in adjusting the model parameters more effectively. Why is this important in classification tasks?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It helps in better distinguishing between classes.",
+            "It does not affect classification."
+        ]
+    }
+]

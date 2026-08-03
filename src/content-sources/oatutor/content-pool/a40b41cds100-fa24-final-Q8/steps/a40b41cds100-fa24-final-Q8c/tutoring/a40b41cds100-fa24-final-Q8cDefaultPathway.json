@@ -1,0 +1,162 @@
+[
+    {
+        "id": "a40b41cds100-fa24-final-Q8c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding k-Means Clustering",
+        "text": "In k-Means clustering, the algorithm assigns each point to the nearest cluster center and then recalculates the cluster centers based on the mean of the points assigned to each cluster.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-fa24-final-Q8c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-fa24-final-Q8c-h1"
+        ],
+        "title": "Initial Cluster Centers",
+        "text": "Initially, cluster A has a center at $$(0,5)$$ and cluster B has a center at $$(6,0)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-fa24-final-Q8c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-fa24-final-Q8c-h2"
+        ],
+        "title": "Assigning Teams to Clusters",
+        "text": "Calculate the distance of each team from the initial cluster centers to determine which cluster they belong to.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-fa24-final-Q8c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sqrt{\\left(1-0\\right)^2+\\left(1-5\\right)^2}$$"
+        ],
+        "dependencies": [
+            "a40b41cds100-fa24-final-Q8c-h3"
+        ],
+        "title": "Calculate Distance for Team O-Ski",
+        "text": "Calculate the distance of Team O-Ski $$(1,1)$$ from the initial cluster centers $$(0,5)$$ and $$(6,0)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-fa24-final-Q8c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sqrt{\\left(3-0\\right)^2+\\left(1-5\\right)^2}$$"
+        ],
+        "dependencies": [
+            "a40b41cds100-fa24-final-Q8c-h3"
+        ],
+        "title": "Calculate Distance for Team SantaQlaus",
+        "text": "Calculate the distance of Team SantaQlaus $$(3,1)$$ from the initial cluster centers $$(0,5)$$ and $$(6,0)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-fa24-final-Q8c-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sqrt{\\left(5-0\\right)^2+\\left(4-5\\right)^2}$$"
+        ],
+        "dependencies": [
+            "a40b41cds100-fa24-final-Q8c-h3"
+        ],
+        "title": "Calculate Distance for Team Pandas",
+        "text": "Calculate the distance of Team Pandas $$(5,4)$$ from the initial cluster centers $$(0,5)$$ and $$(6,0)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-fa24-final-Q8c-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sqrt{\\left(1-0\\right)^2+\\left(5-5\\right)^2}$$"
+        ],
+        "dependencies": [
+            "a40b41cds100-fa24-final-Q8c-h3"
+        ],
+        "title": "Calculate Distance for Team Ice-berk",
+        "text": "Calculate the distance of Team Ice-berk $$(1,5)$$ from the initial cluster centers $$(0,5)$$ and $$(6,0)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-fa24-final-Q8c-h8",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-fa24-final-Q8c-h7"
+        ],
+        "title": "Recalculate Cluster Centers",
+        "text": "After assigning teams to clusters based on the shortest distance, recalculate the cluster centers by finding the mean of the points in each cluster.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-fa24-final-Q8c-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(1+1)/2,(1+5)/2"
+        ],
+        "dependencies": [
+            "a40b41cds100-fa24-final-Q8c-h8"
+        ],
+        "title": "Calculate New Center for Cluster A",
+        "text": "Assuming teams O-Ski and Ice-berk are in cluster A, calculate the new center by averaging their coordinates.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-fa24-final-Q8c-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(3+5)/2,(1+4)/2"
+        ],
+        "dependencies": [
+            "a40b41cds100-fa24-final-Q8c-h8"
+        ],
+        "title": "Calculate New Center for Cluster B",
+        "text": "Assuming teams SantaQlaus and Pandas are in cluster B, calculate the new center by averaging their coordinates.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-fa24-final-Q8c-h11",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-fa24-final-Q8c-h10"
+        ],
+        "title": "Converged Cluster Centers",
+        "text": "The algorithm converges when the cluster centers no longer change significantly. Calculate the final centers for clusters A and B.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

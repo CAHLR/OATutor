@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ae36232ds100-su25-mt-Q4b,Q4cc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MAE and Outliers",
+        "text": "The Mean Absolute Error (MAE) is calculated as the average of the absolute differences between the predicted values and the actual values. It is less sensitive to large errors compared to other loss functions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-mt-Q4b,Q4cc-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-mt-Q4b,Q4cc-h1"
+        ],
+        "title": "Exploring the 4th Power Error",
+        "text": "The 'mean 4th power error' loss function is calculated as (1/N)*sum{i extbackslash=1}{N}{(tip_i- heta_0)**4}. This function penalizes larger errors more heavily than the MAE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-mt-Q4b,Q4cc-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-mt-Q4b,Q4cc-h2"
+        ],
+        "title": "Comparing Sensitivity to Outliers",
+        "text": "Consider how each loss function reacts to a single large error. The 4th power error will increase significantly more than the MAE when an outlier is present.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-mt-Q4b,Q4cc-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ae36232ds100-su25-mt-Q4b,Q4cc-h3"
+        ],
+        "title": "Evaluating Robustness",
+        "text": "Given that the MAE is less sensitive to large errors, it is considered more robust to outliers compared to the 4th power error. Is this statement true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

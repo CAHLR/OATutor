@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE Minimization",
+        "text": "To minimize the Mean Squared Error (MSE) using a constant model, consider what value of $$\\theta_0$$ would make the predicted values closest to the actual $$y$$ values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp24-mt-Q5d-h1"
+        ],
+        "title": "Mean as a Minimizer",
+        "text": "Recall that the mean of a set of numbers is the value that minimizes the sum of squared deviations from the numbers. How does this relate to minimizing MSE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5d-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "sum{i\\=1}{n}{y_i}/n"
+        ],
+        "dependencies": [
+            "a8cec5cds100-sp24-mt-Q5d-h2"
+        ],
+        "title": "Calculating the Mean",
+        "text": "Calculate the mean of the target outputs $$y_i$$. This mean is the value of $$\\theta_0$$ that minimizes the MSE for a constant model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5d-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp24-mt-Q5d-h3"
+        ],
+        "title": "Why the Mean?",
+        "text": "The mean minimizes the sum of squared differences because it balances the positive and negative deviations from the data points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

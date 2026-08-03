@@ -1,0 +1,78 @@
+[
+    {
+        "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3df-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding transforms categorical variables into a format that can be provided to ML algorithms to do a better job in prediction. Each category value is converted into a new categorical column and assigned a $$1$$ or $$0$$ (True/False).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3df-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp24-final-Q3b,Q3c,Q3df-h1"
+        ],
+        "title": "Interpreting the Code",
+        "text": "The code snippet provided creates a new column for each unique genre in the dataset. Each row in these new columns will have a $$1$$ if the song belongs to that genre and $$0$$ otherwise.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3df-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp24-final-Q3b,Q3c,Q3df-h2"
+        ],
+        "title": "Effect of $$fit_{intercept}=False$$",
+        "text": "Setting $$fit_{intercept}=False$$ in LinearRegression means that the model will not calculate the intercept term. The regression line will pass through the origin.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3df-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The regression line will pass through the origin."
+        ],
+        "dependencies": [
+            "ad34534ds100-sp24-final-Q3b,Q3c,Q3df-h3"
+        ],
+        "title": "Analyzing the Model",
+        "text": "What does setting $$fit_{intercept}=False$$ imply for the regression model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The regression line will pass through the origin.",
+            "The regression line will have an intercept."
+        ]
+    },
+    {
+        "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3df-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It creates a binary column for each category in the genre."
+        ],
+        "dependencies": [
+            "ad34534ds100-sp24-final-Q3b,Q3c,Q3df-h4"
+        ],
+        "title": "Understanding One-Hot Encoding Impact",
+        "text": "How does one-hot encoding affect the features used in the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It creates a binary column for each category in the genre.",
+            "It combines all categories into a single column."
+        ]
+    }
+]

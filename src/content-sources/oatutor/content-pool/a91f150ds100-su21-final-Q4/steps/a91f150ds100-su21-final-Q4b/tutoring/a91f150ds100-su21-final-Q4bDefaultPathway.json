@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a91f150ds100-su21-final-Q4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plot",
+        "text": "Observe how each model's prediction line behaves in relation to the true observed values (the scatter points).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4b-h1"
+        ],
+        "title": "Model Variance",
+        "text": "Consider what it means for a model to have low variance. How do the predictions of each model compare to each other?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4b-h2"
+        ],
+        "title": "Average Prediction Line",
+        "text": "Look at the dotted line representing the average prediction. How does it relate to the individual model predictions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4b-h3"
+        ],
+        "title": "Interpreting the Average Prediction",
+        "text": "Does the average prediction line closely follow the trend of the true observed values?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

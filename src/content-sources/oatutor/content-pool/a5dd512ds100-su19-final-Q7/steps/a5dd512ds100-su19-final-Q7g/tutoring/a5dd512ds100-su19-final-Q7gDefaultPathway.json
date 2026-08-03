@@ -1,0 +1,122 @@
+[
+    {
+        "id": "a5dd512ds100-su19-final-Q7g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Update Rule",
+        "text": "The update rule for logistic regression with L2 regularization is given by:\\n\\n$${\\theta}^{t+1}$$ $$=$$ (1-2\u03bb)\u03b8**(t) + \\alpha[(y_i - \u03c3(X_i * \u03b8**(t))) * X_i]\\n\\nHere, \u03c3(z) is the sigmoid function, which is defined as:\\n\\n\u03c3(z) $$=$$ $$1$$ / (1 + e**(-z))\\n\\nThis function outputs a value between $$0$$ and $$1$$, representing the probability that the output is $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q7g-h1"
+        ],
+        "title": "Calculate the Sigmoid Function",
+        "text": "Given $${\\theta}^t$$ $$=$$ $$-1$$ and $$X_i$$ $$=$$ $$5$$, calculate the value of the sigmoid function \u03c3(X_i * \u03b8**(t)).\\n\\n\u03c3(X_i * \u03b8**(t)) $$=$$ $$1$$ / (1 + e**(-X_i * \u03b8**(t)))\\n\\nSubstitute the given values to find \u03c3.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7g-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.0067$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q7g-h2"
+        ],
+        "title": "Calculate \u03c3(X_i * \u03b8**(t))",
+        "text": "Substitute $${\\theta}^t$$ $$=$$ $$-1$$ and $$X_i$$ $$=$$ $$5$$ into the sigmoid function:\\n\\n\u03c3(5 * -1) $$=$$ $$1$$ / (1 + e**(5))\\n\\nCalculate the value of \u03c3.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7g-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q7g-h3"
+        ],
+        "title": "Determine the Impact of $$y_i$$",
+        "text": "The term (y_i - \u03c3(X_i * \u03b8**(t))) in the update rule affects the direction and magnitude of the update. Consider how different values of $$y_i$$ (0 or 1) will impact this term.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7g-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3.9665-2\\lambda$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q7g-h4"
+        ],
+        "title": "Calculate the Update for $$y_i$$ $$=$$ $$1$$",
+        "text": "Substitute $$y_i$$ $$=$$ $$1$$ into the update rule:\\n\\n$${\\theta}^{t+1}$$ $$=$$ $$(1-2\\lambda)(-1)$$ + 1[(1 - $$0.0067)$$ * 5]\\n\\nCalculate $${\\theta}^{t+1}$$ for $$y_i$$ $$=$$ $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7g-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1.0335-2\\lambda$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q7g-h4"
+        ],
+        "title": "Calculate the Update for $$y_i$$ $$=$$ $$0$$",
+        "text": "Substitute $$y_i$$ $$=$$ $$0$$ into the update rule:\\n\\n$${\\theta}^{t+1}$$ $$=$$ $$(1-2\\lambda)(-1)$$ + 1[(0 - $$0.0067)$$ * 5]\\n\\nCalculate $${\\theta}^{t+1}$$ for $$y_i$$ $$=$$ $$0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7g-h7",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q7g-h5"
+        ],
+        "title": "Compare the Updates",
+        "text": "Compare the calculated values of $${\\theta}^{t+1}$$ for $$y_i$$ $$=$$ $$1$$ and $$y_i$$ $$=$$ $$0$$. Determine which value is more positive, considering the effect of \u03bb.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7g-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q7g-h7"
+        ],
+        "title": "Final Decision",
+        "text": "Based on the calculations, which value of $$y_i$$ results in the most positive $${\\theta}^{t+1}$$? Consider the impact of \u03bb and whether it affects the decision.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$1$$",
+            "Tie",
+            "Need Info"
+        ]
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ae36232ds100-fa23-mt-Q7l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "Gradient descent is an optimization algorithm used to minimize a function by iteratively moving towards the steepest descent direction. There are different types of gradient descent methods, each with its own characteristics.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-mt-Q7l-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-fa23-mt-Q7l-h1"
+        ],
+        "title": "Types of Gradient Descent",
+        "text": "There are three main types of gradient descent: batch gradient descent, stochastic gradient descent, and mini-batch gradient descent. Each type has its own way of updating the weights during the optimization process.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-mt-Q7l-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-fa23-mt-Q7l-h2"
+        ],
+        "title": "Characteristics of Mini-batch Gradient Descent",
+        "text": "Mini-batch gradient descent uses a small random subset of the data to compute the gradient at each step. This method balances the efficiency of batch gradient descent and the robustness of stochastic gradient descent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-mt-Q7l-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ae36232ds100-fa23-mt-Q7l-h3"
+        ],
+        "title": "Convergence of Mini-batch Gradient Descent",
+        "text": "Does mini-batch gradient descent guarantee convergence to the global minima for convex functions for all values of the learning rate?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

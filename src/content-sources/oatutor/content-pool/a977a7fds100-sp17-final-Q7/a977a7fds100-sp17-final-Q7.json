@@ -1,0 +1,11 @@
+{
+    "id": "a977a7fds100-sp17-final-Q7",
+    "title": "SQL Sampling",
+    "body": "The transactions table has $$30$$ million $$(30\\cdot10**{6})$$ rows. It is too large to load into the memory of our laptop. We will extract a sample from the database server to process on our laptop in Python.\\nSELECT *\\nFROM transactions TABLESAMPLE $$Bernoulli(.0001);$$",
+    "variabilization": {},
+    "oer": "https://ds100.org/su26/past-exams/",
+    "license": "",
+    "lesson": "Bias and Variance B",
+    "lessonId": "13C273QV-BcgI-C1fPx1TrFn",
+    "courseName": "Midterm 3 Worksheets"
+}

@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a5dd512ds100-su20-final-Q6j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "We need to filter the DataFrame to include only those manufacturers who have sold at least $$10$$ million units of each of their consoles. This means we need to group the data by manufacturer and check the sales for each console.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-final-Q6j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su20-final-Q6j-h1"
+        ],
+        "title": "Using GroupBy and Filter",
+        "text": "The `groupby` method in pandas allows us to group data based on a specific column. In this case, we will group by the 'manufacturer' column. After grouping, we can use the `filter` method to apply a condition to each group.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-final-Q6j-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su20-final-Q6j-h2"
+        ],
+        "title": "Applying the Condition",
+        "text": "The condition we need to apply is that the minimum sales for each manufacturer's consoles should be at least $$10$$ million. We can use a lambda function to check this condition for each group.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-final-Q6j-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "consoles.groupby(\"manufacturer\").filter(lambda x: $$min(x[\"sales\"]) \\geq 10)$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su20-final-Q6j-h3"
+        ],
+        "title": "Writing the Code",
+        "text": "Use the `groupby` method to group by 'manufacturer', then apply the `filter` method with a lambda function to check if the minimum sales in each group is at least $$10$$ million.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

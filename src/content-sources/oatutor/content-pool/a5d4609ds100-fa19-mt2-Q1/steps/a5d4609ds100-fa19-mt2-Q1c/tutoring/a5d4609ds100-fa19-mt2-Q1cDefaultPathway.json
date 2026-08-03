@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a5d4609ds100-fa19-mt2-Q1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Data",
+        "text": "The dataframe shows the time spent by visitors at different exhibits. Each column represents an exhibit, and the values are the time spent in minutes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa19-mt2-Q1c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-fa19-mt2-Q1c-h1"
+        ],
+        "title": "Identifying the Exhibits",
+        "text": "The exhibits include $$6$$ animals: lion, tiger, cheetah, alligator, iguana, and turtle, and $$2$$ activities: train and playground.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa19-mt2-Q1c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-fa19-mt2-Q1c-h2"
+        ],
+        "title": "Analyzing the Data",
+        "text": "Consider how the data might be used in PCA to reduce dimensions or find patterns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

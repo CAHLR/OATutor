@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a8cec5cds100-sp24-final-Q2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Gradient Descent Update",
+        "text": "In stochastic gradient descent, the update rule for a parameter \\( $$\\theta$$ \\) is given by:\\n\\n\\( \\theta**{(t+1)} $$=$$ \\theta**{(t)} - \\alpha \\cdot \\nabla L(\\theta**{(t)}) \\)\\n\\nwhere \\( \\alpha \\) is the learning rate and \\( \\nabla L(\\theta**{(t)}) \\) is the gradient of the loss function with respect to \\( $$\\theta$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-final-Q2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp24-final-Q2a-h1"
+        ],
+        "title": "Calculate the Gradient for \\( $$\\theta_1$$ \\)",
+        "text": "To find the gradient for \\( $$\\theta_1$$ \\), substitute \\( $$x_i=2$$ \\), \\( $$\\theta_0=4$$ \\), and \\( $$\\theta_1=1$$ \\) into the gradient expression:\\n\\n\\( \\frac{\\partial L}{\\partial $$\\theta_1$$} $$=$$ \\frac{1}{n} \\sum_{i=1}**{n} \\left(-\\frac{x_i}{\\theta_1} + $$\\theta_0$$ $${x_i}^2$$ + $$\\theta_0$$ \\right) \\)\\n\\nCalculate this value for the given \\( $$x_i$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-final-Q2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp24-final-Q2a-h2"
+        ],
+        "title": "Substitute Values into the Gradient Expression",
+        "text": "Substitute \\( $$x_i=2$$ \\), \\( $$\\theta_0=4$$ \\), and \\( $$\\theta_1=1$$ \\) into the gradient expression for \\( $$\\theta_1$$ \\):\\n\\n\\( \\frac{\\partial L}{\\partial $$\\theta_1$$} $$=$$ -\\frac{2}{1} + $$4$$ \\cdot $$2^2$$ + $$4$$ \\)\\n\\nCalculate this expression to find the gradient value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-final-Q2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$18$$"
+        ],
+        "dependencies": [
+            "a8cec5cds100-sp24-final-Q2a-h3"
+        ],
+        "title": "Calculate the Gradient Value",
+        "text": "Calculate the gradient value using the expression:\\n\\n\\( $$-2$$ + $$4$$ \\cdot $$4$$ + $$4$$ \\)",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-final-Q2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp24-final-Q2a-h4"
+        ],
+        "title": "Determine the Learning Rate",
+        "text": "Using the update rule for \\( $$\\theta_1$$ \\):\\n\\n\\( \\theta_1**{(1)} $$=$$ \\theta_1**{(0)} - \\alpha \\cdot \\nabla L(\\theta_1**{(0)}) \\)\\n\\nSubstitute \\( \\theta_1**{(1)} $$=$$ $$-5$$ \\), \\( \\theta_1**{(0)} $$=$$ $$1$$ \\), and \\( \\nabla L(\\theta_1**{(0)}) $$=$$ $$18$$ \\) to solve for \\( \\alpha \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-final-Q2a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{3}$$"
+        ],
+        "dependencies": [
+            "a8cec5cds100-sp24-final-Q2a-h5"
+        ],
+        "title": "Solve for the Learning Rate",
+        "text": "Solve the equation:\\n\\n\\( $$-5$$ $$=$$ $$1$$ - \\alpha \\cdot $$18$$ \\)\\n\\nWhat is \\( \\alpha \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

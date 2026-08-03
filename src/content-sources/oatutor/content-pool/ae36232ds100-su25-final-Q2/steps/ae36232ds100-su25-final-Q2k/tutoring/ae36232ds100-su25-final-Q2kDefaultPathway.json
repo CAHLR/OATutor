@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ae36232ds100-su25-final-Q2k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Objective Function",
+        "text": "The objective function is given as L(theta_0,theta_1)=1/n*sum{i=1}{n}{(y_i-theta_0/(4*theta_1)+theta_1*x_i)**2}. To find the value of $$\\theta_0$$ that minimizes this function, consider how $$\\theta_0$$ appears in the equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2k-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2k-h1"
+        ],
+        "title": "Partial Derivative with Respect to $$\\theta_0$$",
+        "text": "To find the optimal $$\\theta_0$$, take the partial derivative of the objective function with respect to $$\\theta_0$$ and set it to zero. This will help you find the critical points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2k-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-2/n*sum{i=1}{n}{(y_i-theta_0/(4*theta_1)+theta_1*x_i)*(1/(4*theta_1))}"
+        ],
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2k-h2"
+        ],
+        "title": "Calculate the Partial Derivative",
+        "text": "Calculate the partial derivative of $$L(\\theta_0,\\theta_1)$$ with respect to $$\\theta_0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2k-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "theta_0=4*theta_1/n*sum{i=1}{n}{(y_i+theta_1*x_i)}"
+        ],
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2k-h3"
+        ],
+        "title": "Set the Derivative to Zero",
+        "text": "Set the partial derivative you calculated to zero and solve for $$\\theta_0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2k-h5",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2k-h4"
+        ],
+        "title": "Final Expression for $$\\theta_0$$",
+        "text": "After setting the derivative to zero and solving for $$\\theta_0$$, you should find that theta_0=4*theta_1/n*sum{i=1}{n}{(y_i+theta_1*x_i)}. This is the value that minimizes the objective function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

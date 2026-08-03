@@ -1,0 +1,19 @@
+{
+    "id": "ab27becrow9a",
+    "stepAnswer": [
+        "A and D: `r\":([a-zA-Z_]+):\"` and `r\":(\\w+):\"`"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Fill in the blank A by choosing the RegEx patterns which could be emoji\\_pattern. Select all that apply.",
+    "stepBody": "In each comment\\_text, emojis are represented by combinations of alphabet characters and underscores (\"\\_\") in between two colons (i.e., \":laughing\\_face:\"). Angela creates a RegEx pattern called emoji\\_pattern, which she uses in the following code snippet to generate the given output:##figure1.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "A and D: `r\":([a-zA-Z_]+):\"` and `r\":(\\w+):\"`",
+        "A only: `r\":([a-zA-Z_]+):\"`",
+        "B only: `r\":(.*):\"`",
+        "C only: `r\":(\\w)+:\"`",
+        "C and D: `r\":(\\w)+:\"` and `r\":(\\w+):\"`",
+        "None of these"
+    ]
+}

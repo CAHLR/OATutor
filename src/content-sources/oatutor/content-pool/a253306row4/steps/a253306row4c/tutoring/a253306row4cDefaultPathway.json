@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a253306row4c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding OLS",
+        "text": "The Ordinary Least Squares (OLS) method is used to estimate the parameters in a linear regression model. It minimizes the sum of the squared differences between the observed and predicted values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row4c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row4c-h1"
+        ],
+        "title": "Number of Parameters vs. Observations",
+        "text": "In a linear regression model, having more parameters than observations can lead to overfitting and a lack of a unique solution. Consider the relationship between the number of observations and parameters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row4c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row4c-h2"
+        ],
+        "title": "Unique Solution in OLS",
+        "text": "For a unique OLS solution, the number of observations should be greater than the number of parameters. This ensures that the matrix used in calculations is invertible.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row4c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a253306row4c-h3"
+        ],
+        "title": "Checking the Condition",
+        "text": "Given that there are $$30$$ observations and $$30$$ parameters (including the intercept), does this satisfy the condition for a unique OLS solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,18 @@
+{
+    "id": "ade7df0ds100-fa19-final-Q5g",
+    "stepAnswer": [
+        "$$1$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Our true labels are $$y=(0, 0, 1), $$ our predicted probabilities of being in class $$1$$ are $$(0.1, 0.6, 0.9), $$ and our threshold is $$T=0.5.$$\\nA third loss function we might consider is the zero-one loss, given by\\n$$L_{ZO}(y,\\hat{y})=I(y\\neq\\hat{y})$$\\nIn other words, the loss is $$1$$ if the label is incorrect, and $$0$$ if it is correct. For these same values, what is the total zero-one loss?",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "$$1$$",
+    "choices": [
+        "$$0$$",
+        "$$1$$",
+        "$$2$$",
+        "$$3$$"
+    ]
+}

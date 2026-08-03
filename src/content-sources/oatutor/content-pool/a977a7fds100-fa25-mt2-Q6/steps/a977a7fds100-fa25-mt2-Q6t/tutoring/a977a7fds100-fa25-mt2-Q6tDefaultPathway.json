@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6t-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LASSO Regularization",
+        "text": "LASSO (Least Absolute Shrinkage and Selection Operator) is a type of linear regression that includes a penalty term. This penalty term is proportional to the absolute value of the coefficients. The main purpose of LASSO is to prevent overfitting by shrinking some coefficients to zero, effectively selecting a simpler model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6t-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6t-h1"
+        ],
+        "title": "Effect of LASSO on Model Variance",
+        "text": "When LASSO regularization is applied, it tends to reduce the complexity of the model by shrinking some coefficients to zero. This can lead to a decrease in model variance because the model becomes less sensitive to fluctuations in the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6t-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6t-h2"
+        ],
+        "title": "Possible Effects on Model Variance",
+        "text": "Consider how reducing the complexity of a model might affect its variance. A simpler model is generally less sensitive to changes in the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    }
+]

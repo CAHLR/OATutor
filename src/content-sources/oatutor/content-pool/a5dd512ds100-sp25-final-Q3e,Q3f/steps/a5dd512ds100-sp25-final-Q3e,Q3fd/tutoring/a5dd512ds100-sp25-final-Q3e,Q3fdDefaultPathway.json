@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Precision",
+        "text": "Precision is the ratio of true positive predictions to the total number of positive predictions made by the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fd-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp25-final-Q3e,Q3fd-h1"
+        ],
+        "title": "Identify True Positives",
+        "text": "A true positive is when the model predicts a $$1$$ and the actual value is also $$1$$. Count the number of true positives in the given data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fd-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp25-final-Q3e,Q3fd-h2"
+        ],
+        "title": "Identify False Positives",
+        "text": "A false positive is when the model predicts a $$1$$ but the actual value is $$0$$. Count the number of false positives in the given data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fd-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2}{3}$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-sp25-final-Q3e,Q3fd-h3"
+        ],
+        "title": "Calculate Precision",
+        "text": "Use the formula for precision: $$precision=true$$ positives/(true $$positives+false$$ positives).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

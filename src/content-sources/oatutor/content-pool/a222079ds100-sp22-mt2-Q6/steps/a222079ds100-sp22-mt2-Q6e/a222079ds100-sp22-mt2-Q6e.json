@@ -1,0 +1,18 @@
+{
+    "id": "a222079ds100-sp22-mt2-Q6e",
+    "stepAnswer": [
+        "Typical calories consumed through food j per serving size"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Jennie modifies the featurization slightly; instead of setting all dummy features of all foods eaten by an individual on that day to $$1$$ and not eaten to $$0$$, we set the dummy features of all foods eaten to the number of servings they ate. We construct a design matrix X of shape $${10}^6$$ by $$4$$ that contains only this featurization to predict the total calories in an individual's lunch using ordinary least squares. What does the optimal coefficient $$\\hat{\\theta}_j$$ represent?\\n\\nA. Typical calories consumed through food j per day\\nB. Typical calories consumed through food j per serving size\\nC. Typical calories consumed by person j per day\\nD. Typical calories consumed by person j per serving size",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "Typical calories consumed through food j per day",
+        "Typical calories consumed through food j per serving size",
+        "Typical calories consumed by person j per day",
+        "Typical calories consumed by person j per serving size",
+        "Typical total calories consumed per day across all foods"
+    ]
+}

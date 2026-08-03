@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a253306row6p2j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Bias",
+        "text": "Model bias refers to the error introduced by approximating a real-world problem by a simplified model. High bias can cause an algorithm to miss the relevant relations between features and target outputs.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6p2j-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Intercept in a Model",
+        "text": "The intercept in a model represents the expected mean value of the dependent variable when all independent variables are zero. Removing it can sometimes lead to a better fit if the data naturally passes through the origin.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6p2j-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Removing Intercept",
+        "text": "Removing the intercept forces the regression line to pass through the origin. This can increase bias if the true relationship does not pass through the origin.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6p2j-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The model is forced to pass through the origin which may not fit the data well."
+        ],
+        "dependencies": [
+            "a253306row6p2j-h3"
+        ],
+        "title": "Analyzing the Model",
+        "text": "Consider the model: $$y=\\theta_0+\\theta_1 {x_1}^2+\\theta_2 \\sqrt{x_2}$$. What happens if $$\\theta_0$$ is removed?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6p2j-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "No it can increase the bias if the true relationship does not pass through the origin."
+        ],
+        "dependencies": [
+            "a253306row6p2j-h4"
+        ],
+        "title": "Impact on Bias",
+        "text": "Does removing the intercept reduce the bias squared of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

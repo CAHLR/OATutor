@@ -1,0 +1,11 @@
+{
+    "id": "a5dd512ds100-su20-mt2-Q8",
+    "title": "Evaluating Classifiers",
+    "body": "Suppose we trained a logistic regression classifier for some binary classification task. The true labels $$y$$ and predicted probabilities $$P(Y=1|x)$$ are given below, one bullet per observation:\\n\u2022 true label $$1$$, predicted probability $$0.9$$\\n\u2022 true label $$1$$, predicted probability $$0.6$$\\n\u2022 true label $$0$$, predicted probability $$0.6$$\\n\u2022 true label $$0$$, predicted probability $$0.55$$\\n\u2022 true label $$1$$, predicted probability $$0.4$$\\n\u2022 true label $$0$$, predicted probability $$0.3$$\\nIn order to make predictions, we need to threshold $$P(Y=1|x).$$ We use our thresholds as follows: the prediction $$\\hat{Y}$$ is $$1$$ when $$P(Y=1|x)\\geq{T}$$ and $$0$$ when $$P(Y=1|x)<T$$\\nWe want to decide between three possible thresholds for $$P(Y=1|x)$$\\n\u2022 Model A uses a threshold of $$T=0.25$$\\n\u2022 Model B uses a threshold of $$T=0.5$$\\n\u2022 Model C uses a threshold of $$T=0.75$$",
+    "variabilization": {},
+    "oer": "https://ds100.org/su26/past-exams/",
+    "license": "",
+    "lesson": "Logistic Regression and Classification A",
+    "lessonId": "12br4D60-LD86-5FdJ1CoLfC",
+    "courseName": "Midterm 3 Worksheets"
+}

@@ -1,0 +1,53 @@
+[
+    {
+        "id": "aac8d73ds100-fa24-final-Q4a,Q4b,Q4cd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding transforms categorical variables into a set of binary variables. For the 'weather' column, which has three categories ('sunny', 'cloudy', 'rainy'), one-hot encoding will create three new binary columns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa24-final-Q4a,Q4b,Q4cd-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa24-final-Q4a,Q4b,Q4cd-h1"
+        ],
+        "title": "Impact of One-Hot Encoding on Model",
+        "text": "When you add all one-hot encoded features to a model, it can lead to multicollinearity if the original categorical variable is not removed. This is because the sum of the one-hot encoded columns will always equal one, introducing perfect multicollinearity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa24-final-Q4a,Q4b,Q4cd-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The matrix becomes singular leading to no unique OLS solution."
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa24-final-Q4a,Q4b,Q4cd-h2"
+        ],
+        "title": "Evaluating the Model",
+        "text": "Consider the impact of adding all three one-hot encoded features to the model. What happens to the matrix of features?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa24-final-Q4a,Q4b,Q4cd-h4",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa24-final-Q4a,Q4b,Q4cd-h3"
+        ],
+        "title": "Understanding Multicollinearity",
+        "text": "Multicollinearity occurs when two or more predictors in a regression model are correlated, meaning that one can be linearly predicted from the others with a substantial degree of accuracy. This can cause issues in estimating the coefficients of the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

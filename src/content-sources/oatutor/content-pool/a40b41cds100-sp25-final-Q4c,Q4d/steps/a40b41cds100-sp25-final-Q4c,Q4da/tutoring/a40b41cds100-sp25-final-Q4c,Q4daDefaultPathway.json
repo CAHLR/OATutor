@@ -1,0 +1,116 @@
+[
+    {
+        "id": "a40b41cds100-sp25-final-Q4c,Q4da-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Hierarchical Clustering",
+        "text": "Hierarchical clustering involves grouping data points based on their similarity. In agglomerative clustering, each data point starts in its own cluster, and pairs of clusters are merged as one moves up the hierarchy.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp25-final-Q4c,Q4da-h2",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp25-final-Q4c,Q4da-h1"
+        ],
+        "title": "What is Single Linkage?",
+        "text": "Single linkage clustering, also known as the nearest neighbor technique, measures the distance between two clusters as the shortest distance between points in the two clusters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp25-final-Q4c,Q4da-h3",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp25-final-Q4c,Q4da-h2"
+        ],
+        "title": "Steps in Agglomerative Clustering",
+        "text": "In each step of agglomerative clustering, the two clusters with the smallest distance between them are merged. This process continues until the desired number of clusters is achieved.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp25-final-Q4c,Q4da-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "a40b41cds100-sp25-final-Q4c,Q4da-h3"
+        ],
+        "title": "Determine the Initial Clusters",
+        "text": "Start by identifying the initial clusters. Each panda is its own cluster initially. How many clusters do you have at the beginning?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp25-final-Q4c,Q4da-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Panda1 and Panda2"
+        ],
+        "dependencies": [
+            "a40b41cds100-sp25-final-Q4c,Q4da-h4"
+        ],
+        "title": "First Step of Clustering",
+        "text": "In the first step, find the two pandas that are closest to each other and merge them into a single cluster. Which pandas are merged first?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp25-final-Q4c,Q4da-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Panda3 and Panda4"
+        ],
+        "dependencies": [
+            "a40b41cds100-sp25-final-Q4c,Q4da-h5"
+        ],
+        "title": "Second Step of Clustering",
+        "text": "After the first merge, identify the next closest pair of clusters or pandas. Which pandas or clusters are merged in the second step?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp25-final-Q4c,Q4da-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "Cluster(Panda1,Panda2) and Panda5"
+        ],
+        "dependencies": [
+            "a40b41cds100-sp25-final-Q4c,Q4da-h6"
+        ],
+        "title": "Third Step of Clustering",
+        "text": "In the third step, determine the next closest pair of clusters or pandas. Which pandas or clusters are merged in this step?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp25-final-Q4c,Q4da-h8",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp25-final-Q4c,Q4da-h7"
+        ],
+        "title": "Check Panda 4's Cluster",
+        "text": "After three steps, check if Panda $$4$$ is in the same cluster as Panda $$5$$. Use the results from the previous steps to determine this.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

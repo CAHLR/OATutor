@@ -1,0 +1,91 @@
+[
+    {
+        "id": "a253306row6i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Correlation",
+        "text": "The correlation matrix shows how each pair of variables is related. A correlation of $$1$$ means perfect positive correlation, $$-1$$ means perfect negative correlation, and $$0$$ means no correlation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row6i-h1"
+        ],
+        "title": "Correlation with Self Rating",
+        "text": "Look at the correlations between $$critic_1$$, $$critic_2$$, and $$self_{rating}$$. How do these correlations affect the model's predictions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6i-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row6i-h2"
+        ],
+        "title": "Effect of Standardization",
+        "text": "Standardizing a variable means subtracting the mean and dividing by the standard deviation. Does this affect the correlation between variables?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6i-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.1$$"
+        ],
+        "dependencies": [
+            "a253306row6i-h3"
+        ],
+        "title": "Analyzing the Correlation Matrix",
+        "text": "What is the correlation between $$critic_1$$ and $$self_{rating}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6i-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-0.75$$"
+        ],
+        "dependencies": [
+            "a253306row6i-h4"
+        ],
+        "title": "Analyzing the Correlation Matrix",
+        "text": "What is the correlation between $$critic_2$$ and $$self_{rating}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6i-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a253306row6i-h5"
+        ],
+        "title": "Model's Solution Uniqueness",
+        "text": "Given the correlations, does standardizing $$critic_1$$ and $$critic_2$$ result in different values for $$self_{rating}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

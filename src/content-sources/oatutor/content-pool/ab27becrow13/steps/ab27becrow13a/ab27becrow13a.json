@@ -1,0 +1,18 @@
+{
+    "id": "ab27becrow13a",
+    "stepAnswer": [
+        "C and D: r\".*\\D([0-5] star)\" and r\"[**0-9]+([0-5] star)\""
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Choosing Regex Patterns for Star Ratings",
+    "stepBody": "Many critics rate films on a scale of $$0$$ to $$5$$ stars. Christopher wants to write a regex pattern that will capture star-based ratings, between $$0$$ and $$5$$, mentioned in a review. Assume that any star-based rating will take the form \u201c# star\u201d, where # is a numeric digit between $$0$$ and $$5$$. If a review contains no star-based rating, no text should be returned. The correct answer(s) should satisfy the test cases above when the regex pattern is assigned to the variable pattern\\_a. Select all that apply.##figure1.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "C and D: r\".*\\D([0-5] star)\" and r\"[**0-9]+([0-5] star)\"",
+        "A only: $$r\"([0-5]$$ star)\"",
+        "B only: r\"\\D+[0-5] star\"",
+        "A and B: $$r\"([0-5]$$ star)\" and r\"\\D+[0-5] star\"",
+        "A and C: $$r\"([0-5]$$ star)\" and r\".*\\D([0-5] star)\""
+    ]
+}

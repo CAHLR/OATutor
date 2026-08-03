@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a91f150ds100-su21-final-Q4d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plot",
+        "text": "Observe how the predictions of each model compare to the true observed values. Are the predictions close to the observed values?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4d-h1"
+        ],
+        "title": "Model Predictions",
+        "text": "Look at the lines representing each model. Do they follow the trend of the observed data points?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4d-h2"
+        ],
+        "title": "Average Prediction Line",
+        "text": "Consider the dotted line representing the average prediction. How does it compare to the observed data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4d-h3"
+        ],
+        "title": "Model Bias",
+        "text": "Do the models show high or low bias based on their predictions compared to the observed values?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

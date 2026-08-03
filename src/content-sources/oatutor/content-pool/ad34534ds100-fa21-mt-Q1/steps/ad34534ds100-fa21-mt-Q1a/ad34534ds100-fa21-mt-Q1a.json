@@ -1,0 +1,17 @@
+{
+    "id": "ad34534ds100-fa21-mt-Q1a",
+    "stepAnswer": [
+        "One hot encode each of the 1,000 disjoint codons, per sample."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Encoding your Data: We can't naively feed letters, non-numerical data, into our linear regression model. As a result, we need to decide on a way to convert non-numerical letters into a numerical representation. Given your domain knowledge above, pick the \"best\" encoding strategy for the data. Here, we define \"best\" as the most compact representation that preserves the meaning in your data. More compact representations that lose meaning are invalid.\\n\\n\u2022 Apply one one-hot encoding to the entire DNA string. (The resulting encoding would only have one entry with value 1)\\n\u2022 One-hot encode each of the 1,000 disjoint codons, per sample.\\n\u2022 One-hot encode each of the $$500$$ disjoint 6-letter combinations, per sample.\\n\u2022 Bag-of-words encoding, where each \"word\" is a codon",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "Apply one one hot encoding to the entire DNA string.",
+        "One hot encode each of the 1,000 disjoint codons, per sample.",
+        "One hot encode each of the $$500$$ disjoint $$6$$ letter combinations, per sample.",
+        "Bag of words encoding, where each \"word\" is a codon"
+    ]
+}

@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a91f150ds100-fa24-final-Q4a,Q4b,Q4cb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Ridge Regression",
+        "text": "Ridge regression is a type of linear regression that includes a regularization term. This term is controlled by the hyper-parameter lambda (\u03bb).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa24-final-Q4a,Q4b,Q4cb-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-fa24-final-Q4a,Q4b,Q4cb-h1"
+        ],
+        "title": "Effect of Lambda on Variance",
+        "text": "As lambda (\u03bb) increases, the penalty on large coefficients increases, which can reduce the variance of the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa24-final-Q4a,Q4b,Q4cb-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-fa24-final-Q4a,Q4b,Q4cb-h2"
+        ],
+        "title": "Lambda Approaching Zero",
+        "text": "When lambda (\u03bb) approaches zero, the regularization term becomes negligible, and ridge regression behaves more like ordinary least squares regression.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa24-final-Q4a,Q4b,Q4cb-h4",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-fa24-final-Q4a,Q4b,Q4cb-h3"
+        ],
+        "title": "Observational Variance",
+        "text": "Observational variance refers to the variability in the data that the model tries to capture. Consider how lambda affects this variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa24-final-Q4a,Q4b,Q4cb-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a91f150ds100-fa24-final-Q4a,Q4b,Q4cb-h4"
+        ],
+        "title": "Conclusion on Variance",
+        "text": "Does decreasing lambda to zero reduce the observational variance to zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

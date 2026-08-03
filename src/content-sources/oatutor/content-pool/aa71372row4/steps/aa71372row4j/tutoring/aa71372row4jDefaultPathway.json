@@ -1,0 +1,68 @@
+[
+    {
+        "id": "aa71372row4j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bimodal Distribution",
+        "text": "A bimodal distribution has two different modes or peaks. Consider what kind of plot would help you identify these peaks in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa71372row4j-h2",
+        "type": "hint",
+        "dependencies": [
+            "aa71372row4j-h1"
+        ],
+        "title": "Alternative Plot Types",
+        "text": "Think about plots that show the frequency of data points, such as histograms or density plots. These can help identify multiple peaks in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa71372row4j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Histogram"
+        ],
+        "dependencies": [],
+        "title": "Identifying Plot Types",
+        "text": "Which plot type is commonly used to show the frequency distribution of a dataset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Histogram",
+            "Boxplot",
+            "Scatter plot",
+            "Line plot"
+        ]
+    },
+    {
+        "id": "aa71372row4j-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Two peaks"
+        ],
+        "dependencies": [
+            "aa71372row4j-h3"
+        ],
+        "title": "Analyzing Distribution",
+        "text": "What feature of a histogram would indicate a bimodal distribution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "One peak",
+            "Two peaks",
+            "No peaks",
+            "Flat distribution"
+        ]
+    }
+]

@@ -1,0 +1,81 @@
+[
+    {
+        "id": "ae27c55ds100-fa17-mt-Q26a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Sampling Distributions",
+        "text": "Consider what happens when you take multiple samples from a population and calculate the mean of each sample.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-mt-Q26a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa17-mt-Q26a-h1"
+        ],
+        "title": "Central Limit Theorem",
+        "text": "The Central Limit Theorem states that the distribution of sample means will approximate a normal distribution as the sample size increases, regardless of the population's distribution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-mt-Q26a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The distribution becomes more normal as the sample size increases."
+        ],
+        "dependencies": [
+            "ae27c55ds100-fa17-mt-Q26a-h2"
+        ],
+        "title": "Sample Size and Distribution",
+        "text": "What effect does increasing the sample size have on the distribution of sample means?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The distribution becomes more normal as the sample size increases.",
+            "The distribution becomes less normal as the sample size increases.",
+            "The distribution does not change with sample size."
+        ]
+    },
+    {
+        "id": "ae27c55ds100-fa17-mt-Q26a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa17-mt-Q26a-h3"
+        ],
+        "title": "Comparing Histograms",
+        "text": "Think about how the histogram of sample means differs from a histogram of individual data points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-mt-Q26a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A histogram of $$10000$$ sample means from samples of size $$n=1000$$."
+        ],
+        "dependencies": [
+            "ae27c55ds100-fa17-mt-Q26a-h4"
+        ],
+        "title": "Identifying the Normal Distribution",
+        "text": "Which histogram would most closely resemble a normal distribution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A histogram of $$10000$$ sample means from samples of size $$n=1000$$.",
+            "A histogram of incomes from a SRS of $$n=10000$$ households.",
+            "A histogram of incomes from the entire census.",
+            "None of these would resemble a normal distribution."
+        ]
+    }
+]

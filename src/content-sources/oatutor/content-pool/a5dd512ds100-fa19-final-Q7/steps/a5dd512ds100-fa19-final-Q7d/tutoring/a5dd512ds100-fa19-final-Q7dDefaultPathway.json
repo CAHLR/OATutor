@@ -1,0 +1,83 @@
+[
+    {
+        "id": "a5dd512ds100-fa19-final-Q7d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding ROC Curves",
+        "text": "A ROC curve is a graphical representation of the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings. It helps in evaluating the performance of a classification model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q7d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q7d-h1"
+        ],
+        "title": "Thresholds in ROC Curves",
+        "text": "The thresholds are used to convert predicted probabilities into binary classifications. By varying the threshold, you can plot different points on the ROC curve.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q7d-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "0,1"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q7d-h2"
+        ],
+        "title": "Determine Threshold Range",
+        "text": "What should be the range of thresholds to consider for generating the ROC curve?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q7d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "thresholds"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q7d-h3"
+        ],
+        "title": "Iterating Over Thresholds",
+        "text": "What should be the loop variable to iterate over the thresholds?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q7d-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1\\left(predicted_{probs}>t\\right)$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q7d-h4"
+        ],
+        "title": "Binary Classification from Probabilities",
+        "text": "How do you convert predicted probabilities into binary predictions using a threshold?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1\\left(predicted_{probs}>t\\right)$$",
+            "(predicted_probs>t).sum()",
+            "$$1\\left(predicted_{probs}<t\\right)$$",
+            "1*(predicted_probs>=y_actual)",
+            "$$1\\left(predicted_{probs}>t\\right)$$",
+            "$$1\\left(y_{actual}>t\\right)$$"
+        ]
+    }
+]

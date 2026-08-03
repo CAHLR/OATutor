@@ -1,0 +1,61 @@
+[
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Dataset",
+        "text": "The dataset contains information about what students ate for lunch, including the foods, servings, and total calories. Each row represents a student's lunch on a specific day.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6m-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6m-h1"
+        ],
+        "title": "Bootstrap Sampling",
+        "text": "Bootstrap sampling involves repeatedly sampling with replacement from the dataset to create 'bootstrap samples'. These samples are used to estimate the distribution of a statistic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6m-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6m-h2"
+        ],
+        "title": "Percentile Calculation",
+        "text": "To find the upper percentile, you need to determine the value below which a given percentage of observations fall. In this case, you are looking for the $$97.5th$$ percentile.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6m-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$97.5$$"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6m-h3"
+        ],
+        "title": "Determine the Upper Percentile",
+        "text": "What is the value of the upper percentile (viii) in the bootstrap code?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$97.5$$",
+            "$$0.975$$",
+            "$$2.5$$",
+            "$$95$$",
+            "$$97.5$$",
+            "$$99$$"
+        ]
+    }
+]

@@ -1,0 +1,19 @@
+{
+    "id": "a272acfds100-fa20-final-Q10d",
+    "stepAnswer": [
+        "$$6$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Say we perform the SVD on F using the following code:\\nX $$=$$ (F - np.mean(F, axis $$=$$ 0))\\nu, s, vt $$=$$ np.linalg.svd(X, $$\\texttt{full\\_matrices=False)}$$\\nSuppose we know that $$\\sum s^2$$ evaluates to $$121$$. Which of the following is closest to s[1]?",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "$$6$$",
+    "choices": [
+        "$$0.3$$",
+        "$$3.3$$",
+        "$$6$$",
+        "$$8$$",
+        "$$36$$"
+    ]
+}

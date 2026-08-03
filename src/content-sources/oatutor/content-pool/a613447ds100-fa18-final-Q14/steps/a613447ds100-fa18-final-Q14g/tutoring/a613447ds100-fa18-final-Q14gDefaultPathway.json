@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a613447ds100-fa18-final-Q14g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plot",
+        "text": "The plot shows a U-shaped curve. This suggests that the y-axis could represent a measure that decreases to a minimum and then increases as $$d$$ changes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa18-final-Q14g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa18-final-Q14g-h1"
+        ],
+        "title": "Possible Y-Axis Labels",
+        "text": "Consider what metrics in machine learning might have a U-shaped relationship with the number of features or data points. Common metrics include error, variance, and bias.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa18-final-Q14g-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa18-final-Q14g-h2"
+        ],
+        "title": "Bias-Variance Tradeoff",
+        "text": "In the context of the bias-variance tradeoff, both bias and variance can be related to the number of features. As the number of features increases, bias typically decreases and variance increases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa18-final-Q14g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Error"
+        ],
+        "dependencies": [
+            "a613447ds100-fa18-final-Q14g-h3"
+        ],
+        "title": "Identifying the Y-Axis",
+        "text": "Given the U-shaped curve, which metric is likely represented on the y-axis?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Error",
+            "Bias",
+            "Variance",
+            "Accuracy"
+        ]
+    }
+]

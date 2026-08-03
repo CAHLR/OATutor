@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a5d4609ds100-fa20-final-Q10b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PC $$2$$",
+        "text": "Principal Component $$2$$ (PC 2) is orthogonal to Principal Component $$1$$ (PC 1). This means that the line representing PC $$2$$ should be perpendicular to the line representing PC $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa20-final-Q10b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-fa20-final-Q10b-h1"
+        ],
+        "title": "Slope of Perpendicular Lines",
+        "text": "If two lines are perpendicular, the product of their slopes is $$-1$$. If the slope of PC $$1$$ is $$m$$, then the slope of PC $$2$$ should be $$\\frac{-1}{m}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa20-final-Q10b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-3}{2}$$"
+        ],
+        "dependencies": [
+            "a5d4609ds100-fa20-final-Q10b-h2"
+        ],
+        "title": "Calculate the Slope of PC $$2$$",
+        "text": "Given that the slope of PC $$1$$ is $$\\frac{2}{3}$$, what is the slope of PC 2?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa20-final-Q10b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-fa20-final-Q10b-h3"
+        ],
+        "title": "Equation of PC $$2$$",
+        "text": "The equation of a line can be written in the form $$y=mx$$, where $$m$$ is the slope. Use the slope you calculated for PC $$2$$ to find its equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa20-final-Q10b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x_2=\\frac{-3}{2} x_1$$"
+        ],
+        "dependencies": [
+            "a5d4609ds100-fa20-final-Q10b-h4"
+        ],
+        "title": "Select the Correct Equation",
+        "text": "Which of the following equations represents PC 2?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$x_2=-3x_1$$",
+            "$$x_2=\\frac{1}{3} x_1+5$$",
+            "$$x_2=-4x_1+10$$",
+            "$$x_2=3x_1$$",
+            "$$x_2=\\frac{-3}{2} x_1$$"
+        ]
+    }
+]

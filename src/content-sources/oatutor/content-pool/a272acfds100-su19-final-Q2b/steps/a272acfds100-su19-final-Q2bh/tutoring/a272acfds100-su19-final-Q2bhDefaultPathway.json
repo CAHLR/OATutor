@@ -1,0 +1,54 @@
+[
+    {
+        "id": "a272acfds100-su19-final-Q2bh-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It projects data onto new axes, called principal components, which are linear combinations of the original variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su19-final-Q2bh-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting the Scatter Plot",
+        "text": "The scatter plot shows a negative correlation between 'mpg' and 'age'. This means as 'age' increases, 'mpg' decreases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su19-final-Q2bh-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Analyzing Plot (g.i)",
+        "text": "Plot (g.i) shows a similar pattern to the original scatter plot with two clusters. This suggests it might be related to the same data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su19-final-Q2bh-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "pc1"
+        ],
+        "dependencies": [
+            "a272acfds100-su19-final-Q2bh-h3"
+        ],
+        "title": "Choosing the Correct Axis Label for (g.i)",
+        "text": "Based on the pattern in plot (g.i), which principal component is likely represented on the x-axis?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "pc1",
+            "pc2",
+            "Neither"
+        ]
+    }
+]

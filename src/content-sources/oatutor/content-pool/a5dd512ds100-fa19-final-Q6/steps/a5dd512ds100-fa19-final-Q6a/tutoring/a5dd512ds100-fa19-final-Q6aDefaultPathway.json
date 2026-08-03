@@ -1,0 +1,49 @@
+[
+    {
+        "id": "a5dd512ds100-fa19-final-Q6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Logistic Regression Model",
+        "text": "In logistic regression, the decision boundary is determined by the equation of the form: \\( \\beta_0 + \\beta_1 $$x_1$$ + \\beta_2 $$x_2$$ $$=$$ $$0$$ \\). Given that the threshold \\( T $$=$$ $$0.75$$ \\) corresponds to \\( \\sigma(\\log(3)) \\), we can use this information to find the line equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q6a-h1"
+        ],
+        "title": "Relating the Threshold to the Decision Boundary",
+        "text": "The threshold \\( T $$=$$ $$0.75$$ \\) implies that the probability of the positive class is $$0.75$$ when the linear combination of features equals \\( \\log(3) \\). This means that \\( $$2x_1$$ + $$3x_2$$ $$=$$ \\log(3) \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q6a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-2}{3}$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q6a-h2"
+        ],
+        "title": "Finding the Slope \\( $$m$$ \\)",
+        "text": "To find the slope \\( $$m$$ \\) of the line \\( $$x_2$$ $$=$$ $$mx_1$$ + $$b$$ \\), rearrange the equation \\( $$2x_1$$ + $$3x_2$$ $$=$$ \\log(3) \\) to the form \\( $$x_2$$ $$=$$ $$mx_1$$ + $$b$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{-2}{3}$$",
+            "$$\\frac{-2}{3}$$",
+            "$$\\frac{-3}{2}$$",
+            "-log{3}/3",
+            "$$\\frac{2}{3}$$",
+            "$$\\frac{3}{2}$$"
+        ]
+    }
+]

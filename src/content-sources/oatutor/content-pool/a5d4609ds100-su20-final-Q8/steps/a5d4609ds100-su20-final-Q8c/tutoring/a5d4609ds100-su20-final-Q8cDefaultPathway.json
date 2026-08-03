@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a5d4609ds100-su20-final-Q8c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The problem asks if the combination of values of $$u_1$$ and $$u_2$$ is invalid. Consider what it means for a combination of vectors to be invalid.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su20-final-Q8c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su20-final-Q8c-h1"
+        ],
+        "title": "Properties of $$u_1$$ and $$u_2$$",
+        "text": "$$u_1$$ and $$u_2$$ are columns of a matrix U from the SVD. What properties do these columns have?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su20-final-Q8c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su20-final-Q8c-h2"
+        ],
+        "title": "Orthogonality of Columns",
+        "text": "In the SVD, the columns of U are orthogonal. Does this affect the validity of the combination of $$u_1$$ and $$u_2$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su20-final-Q8c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a5d4609ds100-su20-final-Q8c-h3"
+        ],
+        "title": "Checking Orthogonality",
+        "text": "Are $$u_1$$ and $$u_2$$ orthogonal?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a5d4609ds100-su20-final-Q8c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a5d4609ds100-su20-final-Q8c-h4"
+        ],
+        "title": "Conclusion on Validity",
+        "text": "Given that $$u_1$$ and $$u_2$$ are orthogonal, is the combination of their values invalid?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

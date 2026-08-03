@@ -1,0 +1,18 @@
+{
+    "id": "ade7df0ds100-fa19-final-Q5b",
+    "stepAnswer": [
+        "$$0.1**{2}+0.6**{2}+0.1**{2}$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "In this part, we'll consider various loss functions.\\nOur true labels are $$y=(0, 0, 1), $$ our predicted probabilities of being in class $$1$$ are $$(0.1, 0.6, 0.9), $$ and our threshold is $$T=0.5.$$ For these same values, give the total squared loss. Do not simplify your answer.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "$$0.1**{2}+0.6**{2}+0.9**{2}$$",
+        "$$0.9**{2}+0.4**{2}+0.9**{2}$$",
+        "$$0.1**{2}+0.6**{2}+0.1**{2}$$",
+        "$$\\frac{1}{3}(0.1**{2}+0.6**{2}+0.1**{2})$$",
+        "$$0.1+0.6+0.1$$"
+    ]
+}

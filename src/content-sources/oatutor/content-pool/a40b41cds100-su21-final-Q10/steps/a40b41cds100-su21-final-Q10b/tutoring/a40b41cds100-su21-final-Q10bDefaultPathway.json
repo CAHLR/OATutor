@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a40b41cds100-su21-final-Q10b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Representation",
+        "text": "When data is represented by its relationship to other data points, it often involves a structure that can capture these relationships effectively. Think about how connections or links between data points can be visualized.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-su21-final-Q10b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-su21-final-Q10b-h1"
+        ],
+        "title": "Visualizing Relationships",
+        "text": "Consider a structure that is commonly used in computer science to represent relationships or connections between entities. This structure is often used in network analysis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-su21-final-Q10b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "graph"
+        ],
+        "dependencies": [
+            "a40b41cds100-su21-final-Q10b-h2"
+        ],
+        "title": "Identifying the Structure",
+        "text": "What is the term for a structure that represents data through nodes and edges, often used to depict relationships?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "graph",
+            "design matrix",
+            "relational database"
+        ]
+    }
+]

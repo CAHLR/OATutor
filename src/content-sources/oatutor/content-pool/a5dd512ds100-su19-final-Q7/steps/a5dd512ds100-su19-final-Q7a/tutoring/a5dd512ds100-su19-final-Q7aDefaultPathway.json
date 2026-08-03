@@ -1,0 +1,100 @@
+[
+    {
+        "id": "a5dd512ds100-su19-final-Q7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Loss Function",
+        "text": "The loss function given is a combination of the logistic loss and a regularization term. The logistic loss is used for binary classification problems and is defined as:\\n\\n$$-\\ln\\left(y \\operatorname{f_{\\theta}}\\left(x\\right)\\right)-\\left(1-y\\right) \\ln\\left(1-\\operatorname{f_{\\theta}}\\left(x\\right)\\right)$$\\n\\nThe regularization term is $$\\frac{1}{2} {\\theta}^2$$, which helps prevent overfitting by penalizing large values of theta.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sigmoid Function",
+        "text": "The sigmoid function, denoted as sigma, is defined as:\\n\\n$$sigma(z)=\\frac{1}{1+exp\\left(-z\\right)}$$\\n\\nIt maps any real-valued number into the range $$(0,1)$$, making it suitable for binary classification.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Gradient of the Loss Function",
+        "text": "To derive the stochastic gradient descent update rule, we need to compute the gradient of the loss function with respect to theta. This involves differentiating the loss function with respect to theta.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-y \\left(1-\\operatorname{\\sigma}\\left(\\theta-2\\right)\\right)+\\left(1-y\\right) \\operatorname{\\sigma}\\left(\\theta-2\\right)+\\theta$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q7a-h3"
+        ],
+        "title": "Compute the Gradient",
+        "text": "Differentiate the loss function with respect to theta:\\n\\n$$l(theta, x, y)=-y \\ln\\left(\\operatorname{f_{\\theta}}\\left(x\\right)\\right)-\\left(1-y\\right) \\ln\\left(1-\\operatorname{f_{\\theta}}\\left(x\\right)\\right)+\\frac{1}{2} {\\theta}^2$$\\n\\nFind the derivative of each term with respect to theta.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\operatorname{\\sigma}\\left(\\theta-2\\right)-y+\\theta$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q7a-h4"
+        ],
+        "title": "Simplify the Gradient",
+        "text": "Simplify the expression obtained from the differentiation:\\n\\n$$-y \\left(1-\\operatorname{\\sigma}\\left(\\theta-2\\right)\\right)+\\left(1-y\\right) \\operatorname{\\sigma}\\left(\\theta-2\\right)+\\theta$$\\n\\nCombine like terms and simplify.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$${\\theta}^{t+1}={\\theta}^t-\\operatorname{\\sigma}\\left({\\theta}^t-2\\right)-y+{\\theta}^t$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q7a-h5"
+        ],
+        "title": "Update Rule",
+        "text": "Using the gradient computed, apply the stochastic gradient descent update rule:\\n\\n$${\\theta}^{t+1}={\\theta}^t-\\alpha gradient$$\\n\\nGiven $$alpha=1$$, substitute the gradient and simplify.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$${\\theta}^{t+1}=y-\\operatorname{\\sigma}\\left({\\theta}^t-2\\right)$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q7a-h6"
+        ],
+        "title": "Final Update Rule",
+        "text": "Simplify the update rule obtained:\\n\\n$${\\theta}^{t+1}={\\theta}^t-\\operatorname{\\sigma}\\left({\\theta}^t-2\\right)-y+{\\theta}^t$$\\n\\nCombine like terms to get the final update rule.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,64 @@
+[
+    {
+        "id": "aa71372row9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Missing Data",
+        "text": "Consider the impact of missing data on your analysis. How might missing dates affect your ability to analyze trends over time?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa71372row9a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Options for Handling Missing Data",
+        "text": "Think about the different methods available for handling missing data. What are the pros and cons of each method?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa71372row9a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Dropping rows reduces the dataset size, potentially losing valuable information."
+        ],
+        "dependencies": [],
+        "title": "Evaluating the Impact of Dropping Rows",
+        "text": "What happens if you drop all rows with missing values? How does this affect the size of your dataset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Dropping rows reduces the dataset size, potentially losing valuable information.",
+            "It has no effect on the dataset size.",
+            "It increases the dataset size.",
+            "It reduces the dataset size."
+        ]
+    },
+    {
+        "id": "aa71372row9a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Interpolation uses existing data to estimate missing values, maintaining trends."
+        ],
+        "dependencies": [],
+        "title": "Considering Interpolation",
+        "text": "How does interpolation help in estimating missing values? What information does it use?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Interpolation uses existing data to estimate missing values, maintaining trends.",
+            "It leaves missing values unchanged.",
+            "It randomly fills missing values.",
+            "It uses existing data to estimate missing values."
+        ]
+    }
+]

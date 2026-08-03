@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a253306row1_part2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Update Rule",
+        "text": "The update rule for gradient descent is given by: \\( \\theta**{(t+1)} $$=$$ \\theta**{(t)} - \\alpha \\frac{d}{d\\theta}L(\\theta**{(t)}) \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row1_part2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row1_part2c-h1"
+        ],
+        "title": "Substitute Known Values",
+        "text": "Substitute the known values into the update rule: \\( \\theta**{(2)} $$=$$ \\theta**{(1)} - \\alpha \\frac{d}{d\\theta}L(\\theta**{(1)}) \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row1_part2c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row1_part2c-h2"
+        ],
+        "title": "Calculate the Update",
+        "text": "Given \\( \\theta**{(1)} $$=$$ $$11$$ \\), \\( \\alpha $$=$$ $$1$$ \\), and \\( \\frac{d}{d\\theta}L(\\theta**{(1)}) $$=$$ $$4$$ \\), calculate \\( \\theta**{(2)} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row1_part2c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [
+            "a253306row1_part2c-h3"
+        ],
+        "title": "Perform the Calculation",
+        "text": "Calculate \\( \\theta**{(2)} $$=$$ $$11$$ - $$1\\times4$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

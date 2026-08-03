@@ -1,0 +1,45 @@
+[
+    {
+        "id": "ad34534ds100-sp19-final-Q3o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatterplot",
+        "text": "Observe the scatterplot carefully. Notice the pattern of the data points. Consider how the function $$f(x)=x^2$$ might fit this pattern.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp19-final-Q3o-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp19-final-Q3o-h1"
+        ],
+        "title": "Analyzing the Function",
+        "text": "The function $$f(x)=x^2$$ is a quadratic function. It creates a parabolic shape. Check if the data points in the scatterplot follow a parabolic pattern.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp19-final-Q3o-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp19-final-Q3o-h2"
+        ],
+        "title": "Checking the Fit",
+        "text": "Does the scatterplot show a parabolic pattern that can be modeled by $$f(x)=x^2$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

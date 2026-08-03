@@ -1,0 +1,57 @@
+[
+    {
+        "id": "aac8d73ds100-fa20-final-Q7d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Standardization",
+        "text": "Standardization is a preprocessing step where we adjust the features of the training data to have a mean of $$0$$ and a variance of $$1$$. This is done to ensure that each feature contributes equally to the model's learning process.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa20-final-Q7d-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa20-final-Q7d-h1"
+        ],
+        "title": "Effect of Standardization on Overfitting",
+        "text": "Overfitting occurs when a model learns the noise in the training data rather than the actual signal. Consider whether standardizing the training data would cause the model to learn noise instead of the underlying patterns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa20-final-Q7d-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa20-final-Q7d-h2"
+        ],
+        "title": "Impact of Standardization on Cross-Validation",
+        "text": "In k-fold cross-validation, the model is trained and validated on different subsets of the data. Standardizing the training data ensures that each fold is on the same scale, which helps in consistent model evaluation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa20-final-Q7d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa20-final-Q7d-h3"
+        ],
+        "title": "Analyzing the Modification",
+        "text": "Does standardizing the training data after the train-test split introduce any bias or variance that could lead to overfitting?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

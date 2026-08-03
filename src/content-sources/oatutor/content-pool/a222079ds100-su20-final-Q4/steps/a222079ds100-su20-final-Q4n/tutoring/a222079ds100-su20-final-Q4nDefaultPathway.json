@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a222079ds100-su20-final-Q4n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Models",
+        "text": "The first model uses the original design matrix X, while the second model uses the mean-centered design matrix X\u0307. This affects the predictions as \u03bb approaches $$\\infty$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-final-Q4n-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su20-final-Q4n-h1"
+        ],
+        "title": "Effect of Regularization",
+        "text": "As \u03bb approaches $$\\infty$$, the regularization term dominates the cost function, pushing the coefficients towards zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-final-Q4n-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su20-final-Q4n-h2"
+        ],
+        "title": "Predictions with Large \u03bb",
+        "text": "With large \u03bb, the coefficients \u03b8 shrink towards zero, leading the predictions to also approach zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-final-Q4n-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a222079ds100-su20-final-Q4n-h3"
+        ],
+        "title": "Final Prediction Value",
+        "text": "What value do the predictions of the first model approach as \u03bb approaches positive $$\\infty$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "the mean of the true $$y$$ values",
+            "$$\\frac{1}{\\lambda}$$",
+            "$$p+1$$",
+            "Impossible to tell"
+        ]
+    }
+]

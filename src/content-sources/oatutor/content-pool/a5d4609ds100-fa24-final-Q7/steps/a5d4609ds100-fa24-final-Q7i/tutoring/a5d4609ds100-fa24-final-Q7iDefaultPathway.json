@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a5d4609ds100-fa24-final-Q7i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Reconstruction Loss",
+        "text": "Reconstruction loss measures how much information is lost when reducing the dimensionality of the data. It is calculated using the singular values in the matrix S.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa24-final-Q7i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-fa24-final-Q7i-h1"
+        ],
+        "title": "Using Singular Values",
+        "text": "The singular values in matrix S indicate the amount of variance captured by each principal component. The reconstruction loss is related to the singular values that are not used.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa24-final-Q7i-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-fa24-final-Q7i-h2"
+        ],
+        "title": "Calculating Reconstruction Loss",
+        "text": "The reconstruction loss is the sum of the squares of the singular values that are not used in the reduced dimensionality. In this case, consider the singular values in S that correspond to the unused principal components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

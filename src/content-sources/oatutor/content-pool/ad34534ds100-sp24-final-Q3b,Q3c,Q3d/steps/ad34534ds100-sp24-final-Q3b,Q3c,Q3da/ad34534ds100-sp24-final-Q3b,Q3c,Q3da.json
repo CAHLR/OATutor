@@ -1,0 +1,18 @@
+{
+    "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3da",
+    "stepAnswer": [
+        "$$\\texttt{song\\_sample[\"artist\"].str.contains(\"feat.\").astype(int)}$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "blank (i): Fill in the blank to add $$\\text{has\\_feat}$$ to $$\\text{song\\_sample}.$$",
+    "stepBody": "Milad adds two columns: $$\\text{has\\_feat}$$ and $$\\text{num\\_feats}$$ to $$\\text{song\\_sample}.$$\\n\\n(i) Fill in the blank in the box below to add the column $$\\text{has\\_feat}$$ to $$\\text{song\\_sample}.$$ A row has a value of $$1$$ in $$\\text{has\\_feat}$$ if the artist has the substring \"feat.\" and $$0$$ otherwise.\\n\\n$$\\text{song\\_sample}[\"\\text{has\\_feat}\"]$$ $$=$$ [blank]##figure1.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "$$\\texttt{song\\_sample[\"artist\"].str.contains(\"feat.\").astype(int)}$$",
+        "$$\\texttt{song\\_sample[\"artist\"].str.match(\"feat.\").astype(int)}$$",
+        "$$\\texttt{song\\_sample[\"artist\"].str.startswith(\"feat.\").astype(int)}$$",
+        "$$\\texttt{song\\_sample[\"artist\"].str.count(\"feat.\").astype(int)}$$",
+        "$$\\texttt{song\\_sample[\"artist\"].str.find(\"feat.\").astype(int)}$$"
+    ]
+}

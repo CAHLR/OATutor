@@ -1,0 +1,113 @@
+[
+    {
+        "id": "ae36232ds100-sp25-final-Q2t-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Computations",
+        "text": "Each paradigm involves a different number of gradient computations per epoch. Consider how many data points are processed in each paradigm and how often gradients are computed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2t-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2t-h1"
+        ],
+        "title": "Batch Gradient Descent",
+        "text": "In Batch Gradient Descent, the gradient is computed once per epoch using all data points. How many computations are there in total for $$5$$ epochs?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2t-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2t-h2"
+        ],
+        "title": "Batch Gradient Descent Calculations",
+        "text": "Calculate the total number of gradient computations for Paradigm $$1$$ over $$5$$ epochs.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2t-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2t-h1"
+        ],
+        "title": "Mini-batch Gradient Descent",
+        "text": "In Mini-batch Gradient Descent, the gradient is computed for each mini-batch. How many mini-batches are there per epoch?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2t-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$25$$"
+        ],
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2t-h4"
+        ],
+        "title": "Mini-batch Gradient Descent Calculations",
+        "text": "Calculate the total number of gradient computations for Paradigm $$2$$ over $$5$$ epochs.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2t-h6",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2t-h1"
+        ],
+        "title": "Stochastic Gradient Descent",
+        "text": "In Stochastic Gradient Descent, the gradient is computed for each data point. How many computations are there per epoch?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2t-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$50$$"
+        ],
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2t-h6"
+        ],
+        "title": "Stochastic Gradient Descent Calculations",
+        "text": "Calculate the total number of gradient computations for Paradigm $$3$$ over $$5$$ epochs.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2t-h8",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2t-h3",
+            "ae36232ds100-sp25-final-Q2t-h5",
+            "ae36232ds100-sp25-final-Q2t-h7"
+        ],
+        "title": "Comparing Paradigms",
+        "text": "Now that you have the total number of gradient computations for each paradigm, order them from least to greatest.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

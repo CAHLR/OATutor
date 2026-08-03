@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a410fc9row10p2h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Residuals in OLS",
+        "text": "In an Ordinary Least Squares (OLS) regression, the residuals are the differences between the observed values and the predicted values. These residuals have a special property in relation to the predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row10p2h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row10p2h-h1"
+        ],
+        "title": "Orthogonality in OLS",
+        "text": "One key property of the residuals in OLS regression is that they are orthogonal to the vector of predictions. This means that the dot product of the residuals and the predictions is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row10p2h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a410fc9row10p2h-h2"
+        ],
+        "title": "Checking Orthogonality",
+        "text": "To check if the residuals are orthogonal to the predictions, consider the dot product of the residual vector and the prediction vector. If this dot product is zero, they are orthogonal.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

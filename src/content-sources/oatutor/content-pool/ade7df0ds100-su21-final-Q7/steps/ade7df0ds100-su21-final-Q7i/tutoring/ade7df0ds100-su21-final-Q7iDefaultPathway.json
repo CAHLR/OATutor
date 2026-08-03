@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ade7df0ds100-su21-final-Q7i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Data Distribution",
+        "text": "Observe the distribution of the orange and blue points. What shape do they form?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q7i-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q7i-h1"
+        ],
+        "title": "Boundary Type",
+        "text": "Consider the type of boundary that logistic regression can create. Is it linear or non-linear?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q7i-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q7i-h2"
+        ],
+        "title": "Logistic Regression Limitations",
+        "text": "Logistic regression is best suited for linear boundaries. Can it handle circular or donut-shaped boundaries?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q7i-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q7i-h3"
+        ],
+        "title": "Analyzing the Boundary",
+        "text": "Given that logistic regression creates linear boundaries, can it generate a boundary that separates the inner blue points from the outer orange points?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

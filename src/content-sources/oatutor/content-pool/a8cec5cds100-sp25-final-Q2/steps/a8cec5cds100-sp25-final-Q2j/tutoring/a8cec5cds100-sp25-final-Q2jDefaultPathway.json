@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a8cec5cds100-sp25-final-Q2j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting by adding a penalty term to the loss function. This penalty term is a function of the model parameters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2j-h1"
+        ],
+        "title": "Types of Regularization",
+        "text": "There are two common types of regularization: L1 and L2. L1 regularization adds the absolute value of the coefficients as a penalty term, while L2 regularization adds the square of the coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2j-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2j-h2"
+        ],
+        "title": "Feature Selection with L1 Regularization",
+        "text": "L1 regularization, also known as Lasso, is particularly useful for feature selection because it can shrink some coefficients to zero, effectively removing them from the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2j-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "g(theta)=sum{i\u00001}{p}{abs(theta_i)}"
+        ],
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2j-h3"
+        ],
+        "title": "Choosing the Right g(theta)",
+        "text": "Given the options for g(theta), which one corresponds to L1 regularization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "g(theta)=sum{i\u00001}{p}{log(theta_i)}",
+            "g(theta)=sum{i\u00001}{p}{theta_i}",
+            "g(theta)=sum{i\u00001}{p}{abs(theta_i)}",
+            "g(theta)=sum{i\u00001}{p}{theta_i**2}",
+            "$$g(theta)=\\operatorname{max_i}\\left(\\theta_i\\right)$$"
+        ]
+    }
+]

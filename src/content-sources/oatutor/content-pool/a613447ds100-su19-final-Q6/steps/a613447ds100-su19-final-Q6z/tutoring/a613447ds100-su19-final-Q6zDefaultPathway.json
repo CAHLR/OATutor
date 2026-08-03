@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a613447ds100-su19-final-Q6z-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "Bias refers to the error introduced by approximating a real-world problem, which may be complex, by a simplified model. Variance refers to the model's sensitivity to fluctuations in the training set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6z-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6z-h1"
+        ],
+        "title": "Impact of Removing a Feature",
+        "text": "When you remove a feature from a model, it can lead to an increase in bias because the model has less information to make accurate predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6z-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6z-h2"
+        ],
+        "title": "Effect on Variance",
+        "text": "Removing a feature can decrease variance because the model becomes simpler and less sensitive to the specific data points in the training set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6z-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a613447ds100-su19-final-Q6z-h3"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Given that removing the 'veg' column reduces the model's complexity, how does this affect bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

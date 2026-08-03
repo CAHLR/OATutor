@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a222079ds100-su21-final-Q8j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "When you one-hot encode a categorical variable, you create a binary column for each category. For example, if you have a column 'class' with values {First, Second, Third}, you will create three new columns: $$'class_{First'}$$, $$'class_{Second'}$$, and $$'class_{Third'}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su21-final-Q8j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su21-final-Q8j-h1"
+        ],
+        "title": "Intercept Term and One-Hot Encoding",
+        "text": "Including an intercept term in a model with one-hot encoded variables can lead to linear dependence. This is because the intercept can be represented as a combination of the one-hot encoded columns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su21-final-Q8j-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su21-final-Q8j-h2"
+        ],
+        "title": "Full Rank Matrix",
+        "text": "A matrix is full rank if all its columns are linearly independent. If there is a linear dependence among the columns, the matrix is not full rank.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su21-final-Q8j-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Linear dependence due to one hot encoded columns with an intercept term"
+        ],
+        "dependencies": [
+            "a222079ds100-su21-final-Q8j-h3"
+        ],
+        "title": "Identify the Linear Dependence",
+        "text": "Consider the one-hot encoded columns and the intercept term. How might they be linearly dependent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Linear dependence due to one hot encoded columns with an intercept term",
+            "More features than data points (20 data points, $$21$$ features)",
+            "The nonlinear transformations create duplicate columns",
+            "The intercept term is always zero",
+            "The design matrix has more rows than columns"
+        ]
+    }
+]

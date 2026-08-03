@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a5d4609ds100-sp24-final-Q9i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Principal Components",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It does this by transforming the data into a set of orthogonal (uncorrelated) variables called principal components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp24-final-Q9i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp24-final-Q9i-h1"
+        ],
+        "title": "Singular Values and Principal Components",
+        "text": "The singular values in PCA represent the amount of variance captured by each principal component. The larger the singular value, the more variance that component captures.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp24-final-Q9i-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp24-final-Q9i-h2"
+        ],
+        "title": "Identifying the First Principal Component",
+        "text": "The first principal component is the one with the largest singular value. It captures the most variance in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp24-final-Q9i-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "PC \\alpha"
+        ],
+        "dependencies": [
+            "a5d4609ds100-sp24-final-Q9i-h3"
+        ],
+        "title": "Determine the First Principal Component",
+        "text": "Given that PC \\alpha has a singular value of $$48.42$$ and PC \u03b2 has a singular value of $$36.31$$, which principal component captures more variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "PC \\alpha",
+            "PC \u03b2"
+        ]
+    },
+    {
+        "id": "a5d4609ds100-sp24-final-Q9i-h5",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp24-final-Q9i-h4"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Since PC \\alpha has a larger singular value than PC \u03b2, it captures more variance and is the first principal component. Therefore, the statement that PC \\alpha is the first principal component is true.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

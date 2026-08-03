@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a613447ds100-su19-final-Q6|-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model includes the variable 'veg' and dummy variables for 'meat'. Removing 'veg' will affect the model's ability to predict the total based on the amount of vegetables bought.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6|-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6|-h1"
+        ],
+        "title": "Impact on Variance",
+        "text": "Variance refers to how much the model's predictions will change with different training data. Removing a variable like 'veg' can increase variance because the model has less information to base its predictions on.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6|-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6|-h2"
+        ],
+        "title": "Impact on Bias",
+        "text": "Bias refers to the error introduced by approximating a real-world problem with a simplified model. Removing 'veg' might increase bias because the model loses a predictor that helps explain the variation in the total bill.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6|-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a613447ds100-su19-final-Q6|-h3"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Does removing the 'veg' column increase the variance of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

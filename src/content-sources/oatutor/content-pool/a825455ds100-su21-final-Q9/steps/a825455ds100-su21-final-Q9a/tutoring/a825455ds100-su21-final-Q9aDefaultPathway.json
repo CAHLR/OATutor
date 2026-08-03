@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a825455ds100-su21-final-Q9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Agglomerative Clustering",
+        "text": "Agglomerative clustering starts with each point as its own cluster and merges the closest clusters step by step until the desired number of clusters is reached.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su21-final-Q9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-su21-final-Q9a-h1"
+        ],
+        "title": "Identifying the Closest Clusters",
+        "text": "Look at the distance matrix. The smallest distance between any two points indicates the first pair of clusters to merge.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su21-final-Q9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-su21-final-Q9a-h2"
+        ],
+        "title": "Finding the Minimum Distance",
+        "text": "In the distance matrix, find the smallest non-zero value. This will tell you which two points are closest.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su21-final-Q9a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "AE"
+        ],
+        "dependencies": [
+            "a825455ds100-su21-final-Q9a-h3"
+        ],
+        "title": "Determine the First Merge",
+        "text": "Which two points have the smallest distance between them?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

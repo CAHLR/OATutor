@@ -1,0 +1,59 @@
+[
+    {
+        "id": "ade7df0ds100-sp21-final-Q9b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization in logistic regression is used to prevent overfitting by penalizing large coefficients. When the regularization parameter \\( \\lambda \\) is set to a large value, it forces the coefficients to be smaller.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q9b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q9b-h1"
+        ],
+        "title": "Effect of Large \\( \\lambda \\) on Decision Boundary",
+        "text": "With a large \\( \\lambda \\), the model will have smaller coefficients, which can lead to a more vertical or horizontal decision boundary, depending on which coefficient is being regularized more.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q9b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q9b-h2"
+        ],
+        "title": "Analyzing the Figures",
+        "text": "Look at the figures and identify which one has a decision boundary that is more vertical. This would indicate a smaller coefficient for the sad emoji count, which is affected by a large \\( \\lambda \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q9b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Figure C"
+        ],
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q9b-h3"
+        ],
+        "title": "Choosing the Correct Figure",
+        "text": "Which figure shows a more vertical decision boundary, indicating a smaller coefficient for the sad emoji count due to large \\( \\lambda \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Figure A",
+            "Figure B",
+            "Figure C",
+            "None of these"
+        ]
+    }
+]

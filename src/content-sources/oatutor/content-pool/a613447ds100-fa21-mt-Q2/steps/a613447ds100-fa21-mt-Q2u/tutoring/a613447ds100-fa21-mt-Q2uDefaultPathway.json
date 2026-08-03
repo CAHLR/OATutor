@@ -1,0 +1,61 @@
+[
+    {
+        "id": "a613447ds100-fa21-mt-Q2u-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "When you average predictions from multiple models, how does it affect the bias and variance of the ensemble model compared to a single model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2u-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2u-h1"
+        ],
+        "title": "Effect on Bias",
+        "text": "Averaging predictions from multiple models tends to reduce the bias of the ensemble model. This is because the ensemble can capture more patterns from the data than a single model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2u-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2u-h1"
+        ],
+        "title": "Effect on Variance",
+        "text": "Averaging predictions from multiple models generally reduces the variance of the ensemble model. This is because the errors from individual models tend to cancel each other out.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2u-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Bias decreases, Variance decreases"
+        ],
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2u-h2",
+            "a613447ds100-fa21-mt-Q2u-h3"
+        ],
+        "title": "Analyzing Bias and Variance",
+        "text": "Consider the effects of averaging predictions on bias and variance. What happens to each when you combine multiple models?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Bias decreases",
+            "Bias decreases, Variance decreases",
+            "Bias increases",
+            "Variance decreases",
+            "Variance increases"
+        ]
+    }
+]

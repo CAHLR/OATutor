@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a410fc9row5_part2g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Matrix Dimensions",
+        "text": "In an OLS model, the matrix X is an $$n$$ by $$p+1$$ matrix, where $$n$$ is the number of observations and $$p+1$$ is the number of features including the intercept. The matrix $$X^T$$ is the transpose of X, making it a $$p+1$$ by $$n$$ matrix. Therefore, $$X^T$$ X results in a $$p+1$$ by $$p+1$$ matrix. Does this match the dimensions given in the problem?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row5_part2g-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$p+1$$ by $$n$$"
+        ],
+        "dependencies": [
+            "a410fc9row5_part2g-h1"
+        ],
+        "title": "Matrix Multiplication Dimensions",
+        "text": "To determine the dimensions of $$X^T$$ X, consider the dimensions of X and $$X^T$$. If X is an $$n$$ by $$p+1$$ matrix, what are the dimensions of $$X^T$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row5_part2g-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$p+1$$ by $$p+1$$"
+        ],
+        "dependencies": [
+            "a410fc9row5_part2g-h2"
+        ],
+        "title": "Resulting Matrix Dimensions",
+        "text": "Given that $$X^T$$ is a $$p+1$$ by $$n$$ matrix and X is an $$n$$ by $$p+1$$ matrix, what are the dimensions of the resulting matrix when you multiply $$X^T$$ by X?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row5_part2g-h4",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row5_part2g-h3"
+        ],
+        "title": "Final Check",
+        "text": "Now that you know the dimensions of $$X^T$$ X are $$p+1$$ by $$p+1$$, compare this with the statement in the problem. Is the statement correct?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

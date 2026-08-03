@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a272acfds100-fa24-final-Q7g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA Components",
+        "text": "To find the component score of the first principal component, you need to use the matrices U, S, and V from the PCA results.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa24-final-Q7g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-fa24-final-Q7g-h1"
+        ],
+        "title": "Matrix Multiplication",
+        "text": "The component scores are calculated by multiplying the matrices U, S, and V. Specifically, you need to focus on the first column of the resulting matrix from U*S.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa24-final-Q7g-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-fa24-final-Q7g-h2"
+        ],
+        "title": "Calculating the First Component Score",
+        "text": "Multiply the first row of U by the first value in S (which is 4) to get the first component score.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

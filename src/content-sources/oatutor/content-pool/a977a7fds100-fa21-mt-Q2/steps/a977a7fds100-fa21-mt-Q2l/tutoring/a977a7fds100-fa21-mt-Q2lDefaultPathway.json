@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a977a7fds100-fa21-mt-Q2l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Overfitting",
+        "text": "Overfitting occurs when a model learns the training data too well, capturing noise along with the underlying pattern. This results in poor performance on new, unseen data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2l-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2l-h1"
+        ],
+        "title": "Strategies to Reduce Overfitting",
+        "text": "To reduce overfitting, you can try techniques such as reducing model complexity, increasing training data, or using regularization methods.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2l-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2l-h2"
+        ],
+        "title": "Regularization Techniques",
+        "text": "Regularization techniques like L1 (Lasso) and L2 (Ridge) add a penalty to the loss function to discourage overly complex models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2l-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2l-h3"
+        ],
+        "title": "Adding an Intercept Term",
+        "text": "Consider adding an intercept term to the model. This can help in capturing the baseline level of the response variable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

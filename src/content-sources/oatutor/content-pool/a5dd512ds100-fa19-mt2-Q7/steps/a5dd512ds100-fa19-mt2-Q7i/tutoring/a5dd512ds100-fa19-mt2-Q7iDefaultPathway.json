@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Thresholds",
+        "text": "When you increase the threshold in a classification model, you are essentially making it harder for the model to classify a positive instance. This can affect precision, recall, and accuracy.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-mt2-Q7i-h1"
+        ],
+        "title": "Effect on Precision",
+        "text": "Precision is the ratio of true positive predictions to the total positive predictions (true positives + false positives). Increasing the threshold can reduce false positives, potentially increasing precision.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7i-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-mt2-Q7i-h1"
+        ],
+        "title": "Effect on Recall",
+        "text": "Recall is the ratio of true positive predictions to the total actual positives (true positives + false negatives). Increasing the threshold can increase false negatives, potentially decreasing recall.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7i-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-mt2-Q7i-h1"
+        ],
+        "title": "Effect on Accuracy",
+        "text": "Accuracy is the ratio of correct predictions (true positives + true negatives) to the total number of predictions. Increasing the threshold can affect both false positives and false negatives, impacting accuracy.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7i-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-mt2-Q7i-h4"
+        ],
+        "title": "Analyzing Accuracy",
+        "text": "Consider how changes in false positives and false negatives affect the overall accuracy of the model. Can accuracy decrease when the threshold is increased?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

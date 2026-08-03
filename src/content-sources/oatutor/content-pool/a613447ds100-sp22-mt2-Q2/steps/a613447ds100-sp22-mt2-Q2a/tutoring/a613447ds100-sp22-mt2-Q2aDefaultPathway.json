@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a613447ds100-sp22-mt2-Q2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the expected total purchase value, we need to calculate the expected value of purchases for each customer and then sum it up for $$10$$ customers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp22-mt2-Q2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp22-mt2-Q2a-h1"
+        ],
+        "title": "Expected Value for One Customer",
+        "text": "For one customer, calculate the expected value of their purchase. Consider the probability and cost of each item.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp22-mt2-Q2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a613447ds100-sp22-mt2-Q2a-h2"
+        ],
+        "title": "Calculate Expected Value for Pencil",
+        "text": "The expected value for a pencil is calculated by multiplying the probability of purchase by the price of the pencil.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp22-mt2-Q2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a613447ds100-sp22-mt2-Q2a-h2"
+        ],
+        "title": "Calculate Expected Value for Wax Head",
+        "text": "The expected value for a wax head is calculated by multiplying the probability of purchase by the price of the wax head.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp22-mt2-Q2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp22-mt2-Q2a-h4"
+        ],
+        "title": "Total Expected Value for One Customer",
+        "text": "Add the expected values of the pencil and wax head to get the total expected value for one customer.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp22-mt2-Q2a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20$$"
+        ],
+        "dependencies": [
+            "a613447ds100-sp22-mt2-Q2a-h5"
+        ],
+        "title": "Calculate Total Expected Value for $$10$$ Customers",
+        "text": "Multiply the total expected value for one customer by $$10$$ to get the expected total purchase value for $$10$$ customers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

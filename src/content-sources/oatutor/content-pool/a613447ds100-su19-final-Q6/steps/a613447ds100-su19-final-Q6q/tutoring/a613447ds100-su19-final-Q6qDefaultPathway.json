@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a613447ds100-su19-final-Q6q-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Polynomial Features",
+        "text": "Adding polynomial features to a model can increase its complexity. This can affect both bias and variance. Consider how adding a degree $$3$$ polynomial feature might change the model's ability to fit the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6q-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6q-h1"
+        ],
+        "title": "Effect on Variance",
+        "text": "Increasing the degree of polynomial features generally increases the model's flexibility. How does this affect the variance of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6q-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6q-h1"
+        ],
+        "title": "Effect on Bias",
+        "text": "Consider how adding more complex features might affect the bias of the model. Does it increase or decrease?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6q-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "increase"
+        ],
+        "dependencies": [
+            "a613447ds100-su19-final-Q6q-h2"
+        ],
+        "title": "Analyzing Variance",
+        "text": "Does adding degree $$3$$ polynomial features increase or decrease the variance of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "increase",
+            "decrease"
+        ]
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6q-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "decrease"
+        ],
+        "dependencies": [
+            "a613447ds100-su19-final-Q6q-h3"
+        ],
+        "title": "Analyzing Bias",
+        "text": "Does adding degree $$3$$ polynomial features increase or decrease the bias of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "increase",
+            "decrease"
+        ]
+    }
+]

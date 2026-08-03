@@ -1,0 +1,16 @@
+{
+    "id": "a5d4609ds100-sp21-final-Q11g",
+    "stepAnswer": [
+        "Dataset B"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Suppose we are taking the SVD of one of the three datasets, which we will name dataset X. We run the the following piece of code:\\n$$\\texttt{X\\_bar}$$ $$=$$ X - np.mean(X, $$axis=0)$$\\nU, Sigma, $$\\texttt{V\\_T}$$ $$=$$ np.linalg.$$\\text{svd}(\\texttt{X\\_bar})$$\\nWe get the following output for Sigma:\\n$$array([15.59204498$$, $$3.85871854])$$\\nand the following output for $$\\text{V\\_T}:$$\\narray([[ $$0.89238775$$, $$-0.45126944]$$,\\n[ $$0.45126944$$, $$0.89238775]])$$\\nBased on the given plots and the SVD, which of the following datasets does dataset X most closely resemble:",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "Dataset A",
+        "Dataset B",
+        "Dataset C"
+    ]
+}

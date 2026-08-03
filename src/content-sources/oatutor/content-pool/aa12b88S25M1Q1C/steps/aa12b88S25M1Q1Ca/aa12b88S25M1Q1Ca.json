@@ -1,0 +1,17 @@
+{
+    "id": "aa12b88S25M1Q1Ca",
+    "stepAnswer": [
+        "fruit[\"item\"].value\\_counts().index[0]"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Select the option below that returns the name of the item that appears in the most rows in fruit.",
+    "stepBody": "The return value must be a single String. You can assume that no two items appear the same number of times in fruit.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "fruit[\"item\"].value\\_counts().index[0]",
+        "fruit.value\\_counts().iloc[0]",
+        "fruit[\"item\"].value\\_counts().loc[0, 0]",
+        "fruit.groupby(\"item\").count().iloc[0, :]"
+    ]
+}

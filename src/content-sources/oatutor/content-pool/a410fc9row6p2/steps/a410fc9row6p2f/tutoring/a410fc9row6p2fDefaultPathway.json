@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a410fc9row6p2f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "Sam's model is a linear regression model with two features: $$dist_{from,bell}$$ and $$section_{no}$$. The model is represented as: $$y_{hat}=\\theta_0+\\theta_1 x_1+\\theta_2 x_2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row6p2f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row6p2f-h1"
+        ],
+        "title": "Adding Features",
+        "text": "One-hot encoding the weather variable adds three new features to the model. This means the model now has five features in total.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row6p2f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row6p2f-h2"
+        ],
+        "title": "Effect on Training Loss",
+        "text": "Adding more features to a model can increase its complexity, but it does not necessarily increase the training loss. In fact, it can decrease the training loss or keep it the same.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row6p2f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a410fc9row6p2f-h3"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "With the same training set, adding more features to Sam's model will not result in higher training loss. Is this statement true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

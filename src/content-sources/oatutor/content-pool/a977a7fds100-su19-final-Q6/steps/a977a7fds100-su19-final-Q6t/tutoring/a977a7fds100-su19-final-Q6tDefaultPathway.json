@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a977a7fds100-su19-final-Q6t-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model uses a linear regression approach with features for vegetables and types of meat. Adding a random feature can affect the model's variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6t-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6t-h1"
+        ],
+        "title": "Effect of Random Features",
+        "text": "Adding a feature of random numbers between $$0$$ and $$1$$ can increase the model's variance because it introduces additional complexity without providing meaningful information.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6t-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It increases the variance."
+        ],
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6t-h2"
+        ],
+        "title": "Analyzing Variance",
+        "text": "How does adding a random feature affect the variance of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It increases the variance.",
+            "It decreases the variance.",
+            "It has no effect on the variance."
+        ]
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6t-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It does not significantly affect the bias."
+        ],
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6t-h3"
+        ],
+        "title": "Analyzing Bias",
+        "text": "How does adding a random feature affect the bias of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It increases the bias.",
+            "It decreases the bias.",
+            "It does not significantly affect the bias."
+        ]
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6t-h5",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6t-h4"
+        ],
+        "title": "Conclusion on Bias and Variance",
+        "text": "Adding a random feature increases variance but does not significantly affect bias. This is because the random feature adds complexity without improving the model's ability to generalize.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

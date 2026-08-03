@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a91f150ds100-su25-final-Q2dj-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mini-Batch Gradient Descent",
+        "text": "Mini-batch gradient descent involves dividing the dataset into smaller batches and updating the model parameters for each batch. This is done to speed up the training process and reduce memory usage.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su25-final-Q2dj-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su25-final-Q2dj-h1"
+        ],
+        "title": "Calculating Total Gradients",
+        "text": "Milena calculated a total of $$125$$ gradients after $$5$$ epochs. This means that in each epoch, a certain number of gradients were calculated. Can you determine how many gradients were calculated per epoch?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su25-final-Q2dj-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{125}{5}$$"
+        ],
+        "dependencies": [
+            "a91f150ds100-su25-final-Q2dj-h2"
+        ],
+        "title": "Gradients Per Epoch",
+        "text": "To find the number of gradients calculated per epoch, divide the total number of gradients by the number of epochs.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su25-final-Q2dj-h4",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su25-final-Q2dj-h3"
+        ],
+        "title": "Relating Gradients to Mini-Batches",
+        "text": "The number of gradients calculated per epoch is equal to the number of mini-batches processed per epoch. Use this information to find the size of each mini-batch.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su25-final-Q2dj-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{500}{25}$$"
+        ],
+        "dependencies": [
+            "a91f150ds100-su25-final-Q2dj-h4"
+        ],
+        "title": "Mini-Batch Size Calculation",
+        "text": "If there are $$25$$ mini-batches per epoch and the dataset contains $$500$$ data points, how many data points are in each mini-batch?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3dl-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Models",
+        "text": "A linear model is one where the parameters (like theta) appear linearly. This means they are not multiplied together, raised to a power, or involved in any non-linear operations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3dl-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp24-final-Q3b,Q3c,Q3dl-h1"
+        ],
+        "title": "Identifying Linear Models",
+        "text": "Check if the model can be expressed in the form of a linear combination of parameters. If the parameters are only multiplied by constants or variables, it is linear.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3dl-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp24-final-Q3b,Q3c,Q3dl-h2"
+        ],
+        "title": "Analyzing the Given Model",
+        "text": "Consider the model \\( $$\\hat{y}=\\theta_0+\\theta_{0theta,1} x_1$$ \\). Is this a linear model with respect to \\( $$\\theta$$ \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

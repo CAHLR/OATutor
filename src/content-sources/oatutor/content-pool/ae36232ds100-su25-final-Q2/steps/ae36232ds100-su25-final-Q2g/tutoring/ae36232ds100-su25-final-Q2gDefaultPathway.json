@@ -1,0 +1,69 @@
+[
+    {
+        "id": "ae36232ds100-su25-final-Q2g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "Wesley's model is a linear regression model with transformations applied to the features. The model is given by:\\n\\n\\( \\hat{y}_i=\\hat{\\theta}_0+\\hat{\\theta}_1(x_{i1})**{3}+\\hat{\\theta}_{2}\\log(x_{i2}) \\)\\n\\nThis means that the model is linear in the parameters \\( \\hat{\\theta}_0, \\hat{\\theta}_1, \\hat{\\theta}_2 \\), but not necessarily in the features.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2g-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2g-h1"
+        ],
+        "title": "Span of X",
+        "text": "The span of a matrix \\( X \\) refers to all possible linear combinations of its columns. For the vector of outcomes \\( Y \\) to be in the span of \\( X \\), it means that \\( Y \\) can be expressed as a linear combination of the columns of \\( X \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2g-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2g-h2"
+        ],
+        "title": "Unique Optimal Solution",
+        "text": "A unique optimal solution in the context of OLS implies that the matrix \\( $$X^{TX}$$ \\) is invertible. This is typically the case when the columns of \\( X \\) are linearly independent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2g-h3"
+        ],
+        "title": "Checking Linear Independence",
+        "text": "Given that Wesley has $$30$$ unique data points and $$2$$ features, can we assume that the columns of \\( X \\) are linearly independent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2g-h5",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2g-h4"
+        ],
+        "title": "Conclusion on the Span",
+        "text": "Since the columns of \\( X \\) are linearly independent, \\( $$X^{TX}$$ \\) is invertible, and thus \\( Y \\) is in the span of \\( X \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

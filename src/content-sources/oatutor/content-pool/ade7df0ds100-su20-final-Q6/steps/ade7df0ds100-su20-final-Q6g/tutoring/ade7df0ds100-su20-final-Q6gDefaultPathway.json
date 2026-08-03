@@ -1,0 +1,41 @@
+[
+    {
+        "id": "ade7df0ds100-su20-final-Q6g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Code",
+        "text": "The code `consoles.groupby('generation').size().iloc[7]` is attempting to find the number of consoles in the seventh generation. Let's break it down:\\n\\n- `consoles.groupby('generation')`: Groups the DataFrame by the 'generation' column.\\n- `.size()`: Returns the size of each group.\\n- `.iloc[7]`: Attempts to access the eighth element (index 7) of the resulting Series.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su20-final-Q6g-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su20-final-Q6g-h1"
+        ],
+        "title": "Checking the Index",
+        "text": "The `.iloc[7]` part of the code is trying to access the eighth element of the Series. However, the index of the Series is based on the unique values in the 'generation' column.\\n\\n- Does the index $$7$$ correspond to the seventh generation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su20-final-Q6g-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "consoles.groupby('generation').size().loc[7]"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su20-final-Q6g-h2"
+        ],
+        "title": "Correcting the Code",
+        "text": "To correctly find the number of seventh generation consoles, you should access the Series using the generation number as the index.\\n\\n- What is the correct way to access the seventh generation consoles?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

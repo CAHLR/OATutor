@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a613447ds100-fa21-mt-Q2o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "Model variance refers to how much the model's predictions change when it is trained on different datasets. Reducing variance can lead to more stable predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2o-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2o-h1"
+        ],
+        "title": "Feature Transformation",
+        "text": "Transforming features can help in reducing model variance. Consider how different transformations might affect the spread and distribution of the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2o-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2o-h2"
+        ],
+        "title": "Floor Function",
+        "text": "The floor function, $$\\operatorname{floor}\\left(\\frac{x}{5}\\right)$$, rounds down the value of $$\\frac{x}{5}$$ to the nearest integer. This can reduce the number of unique values in the dataset, potentially reducing variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2o-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2o-h3"
+        ],
+        "title": "Applying the Floor Function",
+        "text": "Consider how applying the floor function to the age variable might affect the model's variance. Would it lead to fewer unique values and thus potentially reduce variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

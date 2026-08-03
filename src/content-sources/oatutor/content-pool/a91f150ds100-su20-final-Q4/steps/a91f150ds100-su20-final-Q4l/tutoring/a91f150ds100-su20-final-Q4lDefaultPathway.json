@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a91f150ds100-su20-final-Q4l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE in Regularized Models",
+        "text": "When comparing the training MSE of two models, consider how regularization affects the model's complexity and fit to the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su20-final-Q4l-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su20-final-Q4l-h1"
+        ],
+        "title": "Effect of Regularization Parameter",
+        "text": "The regularization parameter, lambda, influences the penalty applied to the model's coefficients. A higher lambda typically results in a simpler model with potentially higher bias but lower variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su20-final-Q4l-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su20-final-Q4l-h2"
+        ],
+        "title": "Comparing $$MSE_A$$ and $$MSE_B$$",
+        "text": "Consider how the regularization parameter affects the training MSE for both models. Does the regularization always lead to a higher MSE for one model compared to the other?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su20-final-Q4l-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Always true"
+        ],
+        "dependencies": [
+            "a91f150ds100-su20-final-Q4l-h3"
+        ],
+        "title": "Analyzing the Impact of Regularization",
+        "text": "Given that both models use the same regularization parameter, $$lambda=2$$, and assuming the design matrix is not mean-centered, analyze the impact on $$MSE_A$$ and $$MSE_B$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Always true",
+            "Sometimes true",
+            "Never true",
+            "Depends on the dataset",
+            "Cannot be determined"
+        ]
+    }
+]

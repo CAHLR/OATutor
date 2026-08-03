@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a222079ds100-fa20-final-Q12h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Models",
+        "text": "Model A includes height in both inches and centimeters, and weight in both pounds and kilograms. Model B includes only height in centimeters and weight in kilograms.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa20-final-Q12h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa20-final-Q12h-h1"
+        ],
+        "title": "Confidence Intervals and Zero",
+        "text": "A confidence interval that includes zero suggests that the parameter might not be significantly different from zero. Consider the redundancy in Model A due to the inclusion of both metric and imperial units.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

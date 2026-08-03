@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ae36232ds100-su25-final-Q2l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Objective Function",
+        "text": "The objective function Sammie is using is a mean squared error function. It measures the average of the squares of the errors, which are the differences between the observed values and the model's predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2l-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2l-h1"
+        ],
+        "title": "Gradient of the Objective Function",
+        "text": "The gradient of the objective function with respect to $$\\theta_0$$ is given by the expression: -2/n*sum{i o1}{n}{y_i-theta_0}. This gradient helps in updating the parameter $$\\theta_0$$ to minimize the error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2l-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2l-h2"
+        ],
+        "title": "Using the Gradient Descent Update Rule",
+        "text": "The update rule for $$\\theta_0$$ using gradient descent is: theta_0**{(t+1)}=theta_0**{(t)}-alpha*gradient. Here, alpha is the learning rate, and the gradient is the derivative of the loss function with respect to $$\\theta_0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2l-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-6$$"
+        ],
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2l-h3"
+        ],
+        "title": "Calculate the Gradient",
+        "text": "Calculate the gradient using the given values: $$y_1=1$$, $$y_2=2$$, theta_0**{(1)}=5, and $$n=2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2l-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-2$$"
+        ],
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2l-h4"
+        ],
+        "title": "Apply the Update Rule",
+        "text": "Using the calculated gradient and the update rule, find theta_0**{(0)}. Remember that $$alpha=1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

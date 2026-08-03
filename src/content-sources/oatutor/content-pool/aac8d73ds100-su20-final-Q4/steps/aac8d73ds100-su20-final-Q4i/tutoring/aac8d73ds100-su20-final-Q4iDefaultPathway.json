@@ -1,0 +1,53 @@
+[
+    {
+        "id": "aac8d73ds100-su20-final-Q4i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Intercept Term",
+        "text": "In a linear regression model, the intercept term represents the expected value of the response variable when all predictors are zero. Consider how centering the data affects this term.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q4i-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q4i-h1"
+        ],
+        "title": "Effect of Centering on the Intercept",
+        "text": "When data is mean-centered, the intercept term in the regression model represents the mean of the response variable. How does this affect the weight of the intercept term?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q4i-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q4i-h2"
+        ],
+        "title": "Analyzing the Intercept Weight",
+        "text": "If the data is mean-centered, what is the expected value of the intercept term in the regression model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q4i-h4",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q4i-h3"
+        ],
+        "title": "Conclusion on the Intercept Term",
+        "text": "Given that the intercept term represents the mean of the response variable when data is mean-centered, is it guaranteed to be positive?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "aac8d73ds100-fa24-final-Q4a,Q4b,Q4ce-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding is a process of converting categorical variables into a form that could be provided to ML algorithms to do a better job in prediction. Each category is converted into a new binary column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa24-final-Q4a,Q4b,Q4ce-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa24-final-Q4a,Q4b,Q4ce-h1"
+        ],
+        "title": "Effect of Adding Features",
+        "text": "Adding more features to a model can increase its complexity. Consider how this affects bias and variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa24-final-Q4a,Q4b,Q4ce-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa24-final-Q4a,Q4b,Q4ce-h2"
+        ],
+        "title": "Bias-Variance Tradeoff",
+        "text": "Adding more features can reduce bias but increase variance. Think about how this tradeoff affects the model's performance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa24-final-Q4a,Q4b,Q4ce-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa24-final-Q4a,Q4b,Q4ce-h3"
+        ],
+        "title": "Analyzing the Impact of One-Hot Encoding",
+        "text": "If Sam adds one-hot encoded features for weather, will the model's bias squared increase? Consider the bias-variance tradeoff.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

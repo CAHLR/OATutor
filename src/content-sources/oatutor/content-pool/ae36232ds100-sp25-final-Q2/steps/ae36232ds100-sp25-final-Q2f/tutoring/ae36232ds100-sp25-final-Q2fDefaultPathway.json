@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ae36232ds100-sp25-final-Q2f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Training and Validation Error",
+        "text": "When the training error increases but the validation error decreases, it suggests that the model is generalizing better to unseen data. This often happens when the model is less complex, reducing overfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2f-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2f-h1"
+        ],
+        "title": "Model Complexity and Error",
+        "text": "A decrease in validation error with an increase in training error can indicate that the model complexity has been reduced, leading to better generalization.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2f-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2f-h2"
+        ],
+        "title": "Feature Selection Impact",
+        "text": "By selecting fewer features, the model might become less complex, which can help in reducing overfitting and improving validation performance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2f-h3"
+        ],
+        "title": "Analyzing the Statement",
+        "text": "Given that the training error increases and the validation error decreases, is it true that the observational variance is lower relative to the model in part (a)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

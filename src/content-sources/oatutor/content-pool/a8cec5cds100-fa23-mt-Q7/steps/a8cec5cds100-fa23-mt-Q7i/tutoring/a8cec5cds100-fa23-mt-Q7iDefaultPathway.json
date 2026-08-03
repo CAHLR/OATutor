@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a8cec5cds100-fa23-mt-Q7i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mini-batch Gradient Descent",
+        "text": "Mini-batch gradient descent is a compromise between stochastic gradient descent and batch gradient descent. It updates the model parameters more frequently than batch gradient descent but less frequently than stochastic gradient descent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q7i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q7i-h1"
+        ],
+        "title": "Behavior of Mini-batch Gradient Descent",
+        "text": "In mini-batch gradient descent, the updates to the parameters can sometimes overshoot the optimal value, causing the parameters to oscillate around the optimal solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q7i-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q7i-h2"
+        ],
+        "title": "Identifying the Correct Gradient Descent Type",
+        "text": "Does mini-batch gradient descent match the description of updates jumping back and forth between two sides of the optimal value?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

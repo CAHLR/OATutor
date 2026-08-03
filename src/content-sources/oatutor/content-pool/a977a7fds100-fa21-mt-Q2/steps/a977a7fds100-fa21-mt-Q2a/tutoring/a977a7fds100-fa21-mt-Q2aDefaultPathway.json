@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a977a7fds100-fa21-mt-Q2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Risk",
+        "text": "The risk of a model is calculated as the sum of the squared bias, the variance, and the squared standard deviation of the noise.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2a-h1"
+        ],
+        "title": "Formula for Model Risk",
+        "text": "The formula for model risk is: Risk $$=$$ $${Bias}^2$$ + Variance + $${Noise}^2$$. Use this formula to find the maximum acceptable noise.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2a-h2"
+        ],
+        "title": "Substitute Known Values",
+        "text": "Substitute the known values into the formula: $$38$$ $$=$$ $$5^2$$ + $$4$$ + $${Noise}^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2a-h3"
+        ],
+        "title": "Solve for Noise",
+        "text": "Solve the equation $$38$$ $$=$$ $$5^2$$ + $$4$$ + $${Noise}^2$$ to find the maximum acceptable noise.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

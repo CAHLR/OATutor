@@ -1,0 +1,90 @@
+[
+    {
+        "id": "aa71372row7_p1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Grouping",
+        "text": "To fill in blank A, think about how you can group the data to calculate the mode for each activity type. Which column should you use for grouping?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa71372row7_p1b-h2",
+        "type": "hint",
+        "dependencies": [
+            "aa71372row7_p1b-h1"
+        ],
+        "title": "Using the Groupby Function",
+        "text": "The groupby function is used to split the data into groups based on some criteria. In this case, you want to group by the 'activity' column to calculate the mode for each activity type.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa71372row7_p1b-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identifying Missing Values",
+        "text": "For blank B, consider which column you need to check for missing values. Which column are you trying to impute?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa71372row7_p1b-h4",
+        "type": "hint",
+        "dependencies": [
+            "aa71372row7_p1b-h3"
+        ],
+        "title": "Using the isna() Function",
+        "text": "The isna() function is used to identify missing values in a DataFrame. You need to apply this function to the 'hour\\_of\\_visit' column to find the rows with missing values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa71372row7_p1b-h5",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Selecting the Correct Column",
+        "text": "For blank C, think about which method you need to use to select the rows with missing values. How do you filter a DataFrame based on a condition?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa71372row7_p1b-h6",
+        "type": "hint",
+        "dependencies": [
+            "aa71372row7_p1b-h5"
+        ],
+        "title": "Using the loc Method",
+        "text": "The loc method is used to access a group of rows and columns by labels or a boolean array. You need to use this method to select the rows where 'hour\\_of\\_visit' is missing.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa71372row7_p1b-h7",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Assigning Replacement Values",
+        "text": "For blank D, consider which column you need to update with the replacement values. Which column are you imputing?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa71372row7_p1b-h8",
+        "type": "hint",
+        "dependencies": [
+            "aa71372row7_p1b-h7"
+        ],
+        "title": "Updating the DataFrame",
+        "text": "You need to update the 'hour\\_of\\_visit' column with the replacement values for the rows where it is missing.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

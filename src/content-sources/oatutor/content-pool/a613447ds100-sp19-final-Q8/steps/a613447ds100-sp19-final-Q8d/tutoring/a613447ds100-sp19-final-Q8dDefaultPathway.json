@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a613447ds100-sp19-final-Q8d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Estimator",
+        "text": "To estimate the maximum possible outcome of rolling a fair 6-sided die, consider the possible outcomes of a single roll. What are the possible values?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp19-final-Q8d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp19-final-Q8d-h1"
+        ],
+        "title": "Expected Value of a Die Roll",
+        "text": "The expected value of a single roll of a fair 6-sided die is the average of all possible outcomes. Calculate this value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp19-final-Q8d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp19-final-Q8d-h2"
+        ],
+        "title": "Variance of a Die Roll",
+        "text": "The variance of a single roll of a fair 6-sided die can be calculated using the formula for variance. What is the variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp19-final-Q8d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{55}{6}$$"
+        ],
+        "dependencies": [
+            "a613447ds100-sp19-final-Q8d-h3"
+        ],
+        "title": "Calculate the Mean Squared Error",
+        "text": "Use the formula for mean squared error (MSE) to calculate the MSE of the estimator. The formula is MSE $$=$$ Variance + $${Bias}^2$$. What is the MSE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

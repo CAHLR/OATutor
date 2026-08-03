@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a253306row6p2i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L2 Regularization",
+        "text": "L2 regularization, also known as ridge regression, adds a penalty equal to the square of the magnitude of coefficients to the loss function. This helps prevent overfitting by discouraging overly complex models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6p2i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row6p2i-h1"
+        ],
+        "title": "Effect of L2 Regularization",
+        "text": "The effect of L2 regularization is to shrink the coefficients of less important features towards zero, but not exactly zero. This helps in reducing model complexity and multicollinearity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6p2i-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row6p2i-h2"
+        ],
+        "title": "Choosing the Optimal Parameter",
+        "text": "The optimal parameter in the context of L2 regularization is the one that balances the trade-off between fitting the training data well and keeping the model simple.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6p2i-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$${\\theta}^c$$"
+        ],
+        "dependencies": [
+            "a253306row6p2i-h3"
+        ],
+        "title": "Identify the Optimal Parameter",
+        "text": "Given the choices for the optimal parameter, which one is most likely to be chosen when using L2 regularization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$${\\theta}^a$$",
+            "$${\\theta}^b$$",
+            "$${\\theta}^c$$"
+        ]
+    }
+]

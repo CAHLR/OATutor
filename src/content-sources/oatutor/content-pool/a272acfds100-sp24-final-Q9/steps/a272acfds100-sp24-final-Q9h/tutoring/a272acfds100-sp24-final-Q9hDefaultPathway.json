@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a272acfds100-sp24-final-Q9h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It does this by transforming the data into a new coordinate system where the greatest variance by any projection of the data comes to lie on the first coordinate (called the first principal component), the second greatest variance on the second coordinate, and so on.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp24-final-Q9h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp24-final-Q9h-h1"
+        ],
+        "title": "Effect of Adding Data Points",
+        "text": "Consider how adding more data points might affect the principal components. Would the directions of the principal components remain the same if the data distribution changes?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp24-final-Q9h-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp24-final-Q9h-h2"
+        ],
+        "title": "Singular Values and Variance",
+        "text": "The singular values in PCA represent the amount of variance captured by each principal component. If more data points are added, the variance captured by each component might change, affecting the singular values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp24-final-Q9h-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a272acfds100-sp24-final-Q9h-h3"
+        ],
+        "title": "Analyzing the Statement",
+        "text": "If more data points were added, would the directions of the principal components and their singular values remain unchanged?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

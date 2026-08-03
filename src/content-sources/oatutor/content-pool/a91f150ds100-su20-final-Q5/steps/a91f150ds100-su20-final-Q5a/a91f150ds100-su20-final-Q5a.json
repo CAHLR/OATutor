@@ -1,0 +1,18 @@
+{
+    "id": "a91f150ds100-su20-final-Q5a",
+    "stepAnswer": [
+        "$$-0.5-\\theta_1**{(t)}$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "blank A",
+    "stepBody": "Suppose we have just one observation in our training data, $$(x_1=1,x_2=2,y=4).$$ Assume that we set the learning rate $$\\alpha$$ to $$1$$.\\n\\nAn incomplete version of the gradient descent update equation for $$\\theta$$ is shown below. $$\\theta_0**{(t)}$$ and $$\\theta_1**{(t)}$$ denote the guesses for $$\\theta_0$$ and $$\\theta_1$$ at timestep $$t$$, respectively.\\n$$(\\theta_0**{(t+1)},\\theta_1**{(t+1)})=(\\theta_0**{(t)},\\theta_1**{(t)})-(A,B)$$\\n\\nExpress A in terms of $$\\theta_0**{(t)},$$ $$\\theta_1**{(t)},$$ and any necessary constants.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "$$-0.5-\\theta_1**{(t)}$$",
+        "$$0.5+\\theta_1**{(t)}$$",
+        "$$-0.5-\\theta_0**{(t)}$$",
+        "$$\\theta_1**{(t)}-0.5$$",
+        "$$-\\theta_0**{(t)}-2\\cos(\\theta_1**{(t)})$$"
+    ]
+}

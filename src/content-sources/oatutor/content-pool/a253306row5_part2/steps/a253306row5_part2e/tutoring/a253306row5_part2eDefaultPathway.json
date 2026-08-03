@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a253306row5_part2e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Graph",
+        "text": "Observe the graph carefully. It shows a non-linear relationship between humidity and the number of students. The curve appears to be logarithmic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row5_part2e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row5_part2e-h1"
+        ],
+        "title": "Choosing the Right Transformation",
+        "text": "To linearize a logarithmic curve, consider using a logarithmic transformation on the x-axis variable, which is humidity in this case.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row5_part2e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$h_i=\\ln\\left(x_i\\right)$$"
+        ],
+        "dependencies": [
+            "a253306row5_part2e-h2"
+        ],
+        "title": "Applying the Transformation",
+        "text": "Which transformation should be applied to the humidity level to linearize the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$h_i=\\ln\\left(x_i\\right)$$",
+            "$$\\ln\\left(h_i\\right)=x_i$$",
+            "$$h_i={x_i}^2$$",
+            "$$h_i={x_i}^3$$",
+            "$$h_i=\\sqrt{x_i}$$"
+        ]
+    }
+]

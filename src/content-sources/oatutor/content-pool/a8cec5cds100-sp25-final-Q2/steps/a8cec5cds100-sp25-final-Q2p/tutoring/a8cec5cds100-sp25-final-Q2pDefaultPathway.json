@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a8cec5cds100-sp25-final-Q2p-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "Gradient Descent (GD) is an optimization algorithm used to minimize a function by iteratively moving towards the steepest descent direction. The learning rate determines the size of the steps taken towards the minimum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2p-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2p-h1"
+        ],
+        "title": "Effect of Increasing Learning Rate",
+        "text": "Increasing the learning rate in Gradient Descent can lead to larger steps. This might cause the algorithm to converge faster, but it also risks overshooting the minimum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2p-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2p-h2"
+        ],
+        "title": "Possible Outcomes of Increasing Learning Rate",
+        "text": "If the learning rate is too high, the algorithm might diverge instead of converging. However, if it's increased moderately, it might still converge but with fewer steps.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2p-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2p-h3"
+        ],
+        "title": "Analyzing the Plot",
+        "text": "Observe the plot and consider what happens if the learning rate increases. Would the steps become larger, and how might that affect convergence?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

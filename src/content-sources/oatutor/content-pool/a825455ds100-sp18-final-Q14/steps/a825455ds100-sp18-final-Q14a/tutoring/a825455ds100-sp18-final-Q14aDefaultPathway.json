@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a825455ds100-sp18-final-Q14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The file is divided into $$800$$ fragments, and each fragment is replicated $$4$$ times. This means each fragment will be stored on $$4$$ different nodes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp18-final-Q14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-sp18-final-Q14a-h1"
+        ],
+        "title": "Calculate Total Fragments",
+        "text": "Since each of the $$800$$ fragments is replicated $$4$$ times, calculate the total number of fragments that need to be stored.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp18-final-Q14a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$800\\times4$$"
+        ],
+        "dependencies": [
+            "a825455ds100-sp18-final-Q14a-h2"
+        ],
+        "title": "Total Fragments Calculation",
+        "text": "Calculate the total number of fragments by multiplying the number of fragments by the replication factor.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp18-final-Q14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-sp18-final-Q14a-h3"
+        ],
+        "title": "Distribute Fragments Across Nodes",
+        "text": "Now that you know the total number of fragments, distribute them evenly across the $$8$$ nodes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp18-final-Q14a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3200}{8}$$"
+        ],
+        "dependencies": [
+            "a825455ds100-sp18-final-Q14a-h4"
+        ],
+        "title": "Fragments Per Node Calculation",
+        "text": "Divide the total number of fragments by the number of nodes to find out how many fragments each node will store.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp18-final-Q14a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$400$$"
+        ],
+        "dependencies": [
+            "a825455ds100-sp18-final-Q14a-h5"
+        ],
+        "title": "Final Answer",
+        "text": "Each node will store $$400$$ fragments.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

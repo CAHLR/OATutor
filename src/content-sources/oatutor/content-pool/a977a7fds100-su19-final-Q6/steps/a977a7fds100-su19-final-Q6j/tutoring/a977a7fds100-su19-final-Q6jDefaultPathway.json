@@ -1,0 +1,81 @@
+[
+    {
+        "id": "a977a7fds100-su19-final-Q6j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model uses one-hot encoding for the meat type. This means that for each type of meat, a separate variable is used, which is $$1$$ if the meat type is present and $$0$$ otherwise.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6j-h1"
+        ],
+        "title": "Interpreting the Box Plot",
+        "text": "The box plot shows the distribution of total costs for each type of meat. Compare the medians and ranges to understand the impact of each meat type on the total cost.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6j-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6j-h2"
+        ],
+        "title": "Analyzing the Data",
+        "text": "Look at the table and the scatter plot to see how the total cost changes with different amounts of vegetables and types of meat. This can help you infer the sign of the weights.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6j-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "fish"
+        ],
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6j-h3"
+        ],
+        "title": "Determining the Sign of \u03b83",
+        "text": "Based on the box plot, which meat type has the highest median total cost?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "beef",
+            "chicken",
+            "fish"
+        ]
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6j-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Positive"
+        ],
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6j-h4"
+        ],
+        "title": "Impact of Fish on Total Cost",
+        "text": "Given that fish has the highest median total cost, what can you infer about the sign of \u03b83?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Positive",
+            "Negative",
+            "Exactly $$0$$",
+            "Not enough info"
+        ]
+    }
+]

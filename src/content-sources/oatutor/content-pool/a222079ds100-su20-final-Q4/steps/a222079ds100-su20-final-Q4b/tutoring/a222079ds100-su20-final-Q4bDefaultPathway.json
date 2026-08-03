@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a222079ds100-su20-final-Q4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The problem involves comparing two linear regression models: one using the original design matrix X and the other using the mean-centered design matrix X\u0303. Both models aim to minimize the sum of squared errors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-final-Q4b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su20-final-Q4b-h1"
+        ],
+        "title": "Mean-Centering Effect",
+        "text": "Mean-centering affects the intercept term in the regression model. When the data is mean-centered, the intercept term becomes zero, but the slopes (coefficients) remain unchanged.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-final-Q4b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su20-final-Q4b-h2"
+        ],
+        "title": "Comparing Coefficients",
+        "text": "Since mean-centering does not affect the slopes, the coefficients for the predictors (excluding the intercept) remain the same in both models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-final-Q4b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a222079ds100-su20-final-Q4b-h3"
+        ],
+        "title": "Conclusion on Coefficients",
+        "text": "Given that mean-centering does not change the slopes, are the coefficients for the predictors in both models equal?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a410fc9row10p2f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Residuals in OLS",
+        "text": "In an Ordinary Least Squares (OLS) regression, the residuals are the differences between the observed values and the predicted values. The sum of these residuals is always zero, but does this mean their sum is equal to the mean squared error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row10p2f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row10p2f-h1"
+        ],
+        "title": "Mean Squared Error (MSE)",
+        "text": "The mean squared error (MSE) is calculated as the average of the squares of the residuals. It measures the average squared difference between the observed actual outcomes and the outcomes predicted by the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row10p2f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row10p2f-h2"
+        ],
+        "title": "Sum of Residuals vs. MSE",
+        "text": "While the sum of residuals in OLS is zero, the mean squared error is a positive value representing the average of the squared residuals. Therefore, the sum of residuals is not equal to the mean squared error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row10p2f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a410fc9row10p2f-h3"
+        ],
+        "title": "Final Answer",
+        "text": "Based on the understanding of residuals and mean squared error, is the statement 'Their sum is equal to the mean squared error' true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

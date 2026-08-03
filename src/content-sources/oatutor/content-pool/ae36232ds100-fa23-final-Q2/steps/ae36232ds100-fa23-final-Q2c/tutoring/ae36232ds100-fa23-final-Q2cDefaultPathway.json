@@ -1,0 +1,48 @@
+[
+    {
+        "id": "ae36232ds100-fa23-final-Q2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Convex Functions",
+        "text": "A convex function has a unique global minimum. This means that the optimal value of a parameter in a convex function is the point where the function reaches its lowest value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-final-Q2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-fa23-final-Q2c-h1"
+        ],
+        "title": "Gradient Descent Insight",
+        "text": "In gradient descent, the parameter is updated in the direction that reduces the function value. If the function is convex, this means moving towards the minimum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-final-Q2c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\operatorname{hat}\\left(\\theta\\right) _0<{\\theta_0}^0$$"
+        ],
+        "dependencies": [
+            "ae36232ds100-fa23-final-Q2c-h2"
+        ],
+        "title": "Comparing Values",
+        "text": "Given that the function is convex and the parameter is updated to minimize the function, how does the new parameter value compare to the initial one?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\operatorname{hat}\\left(\\theta\\right) _0<{\\theta_0}^0$$",
+            "$$\\operatorname{hat}\\left(\\theta\\right) _0={\\theta_0}^0$$",
+            "$$\\operatorname{hat}\\left(\\theta\\right) _0>{\\theta_0}^0$$",
+            "Not enough information",
+            "Cannot be determined without knowing $$\\theta_1$$"
+        ]
+    }
+]

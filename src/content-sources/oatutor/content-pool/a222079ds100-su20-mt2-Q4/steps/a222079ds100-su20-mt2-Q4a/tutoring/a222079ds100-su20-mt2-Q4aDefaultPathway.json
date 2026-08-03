@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a222079ds100-su20-mt2-Q4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding is a process of converting categorical data variables so they can be provided to machine learning algorithms to improve predictions. Each category value is converted into a new categorical column and assigned a $$1$$ or $$0$$ $$\\frac{true}{false}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-mt2-Q4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su20-mt2-Q4a-h1"
+        ],
+        "title": "Effect of Changing Values in One-Hot Encoding",
+        "text": "When you change the values in a one-hot encoded column, you are essentially changing the scale of that feature. This can affect the coefficients of the linear model but not necessarily the average squared loss.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-mt2-Q4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su20-mt2-Q4a-h2"
+        ],
+        "title": "Comparing Models m1 and m2",
+        "text": "Both models m1 and m2 are trained on the same data, but with different scales for the features. The average squared loss is a measure of how well the model predicts the data. Consider how scaling affects the predictions and the loss.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-mt2-Q4a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "equal to"
+        ],
+        "dependencies": [
+            "a222079ds100-su20-mt2-Q4a-h3"
+        ],
+        "title": "Analyzing the Effect of Scaling on Loss",
+        "text": "If you scale a feature in a linear model, the coefficients will adjust to compensate for the change in scale. However, the predictions and thus the average squared loss remain the same. Why is this the case?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "greater than",
+            "less than",
+            "equal to",
+            "impossible to tell",
+            "depends on the data"
+        ]
+    }
+]

@@ -1,0 +1,20 @@
+{
+    "id": "a410fc9row2a",
+    "stepAnswer": [
+        "If Wesley refits the same model using L2 (Ridge) regularization with $$\\lambda$$ $$=$$ $$1$$, a unique solution will still exist."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Evaluating OLS and Ridge Statements",
+    "stepBody": "Wesley has $$n$$ $$=$$ $$30$$ unique data points and $$2$$ features. He fits the following OLS model. Wesley correctly calculates a unique optimal solution for his OLS model. Select all statements about Wesley's fitted model (which uses the optimal parameters) that must be true:",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "If Wesley refits the same model using L2 (Ridge) regularization with $$\\lambda$$ $$=$$ $$1$$, a unique solution will still exist.",
+    "choices": [
+        "It is highly likely, but not guaranteed, that the sum of the residuals is $$0$$.",
+        "The rank of the design matrix X must be less than $$3$$.",
+        "The vector of outcomes Y must be in the span of X.",
+        "The vector of predictions $$\\hat{Y}$$ must be a linear combination of the outcomes Y.",
+        "If Wesley refits the same model with $$(x_{i1})**{6}$$ as an additional feature, a unique solution will no longer exist.",
+        "If Wesley refits the same model using L2 (Ridge) regularization with $$\\lambda$$ $$=$$ $$1$$, a unique solution will still exist."
+    ]
+}

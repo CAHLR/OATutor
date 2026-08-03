@@ -1,0 +1,16 @@
+{
+    "id": "a410fc9row6p2g",
+    "stepAnswer": [
+        "$$\\theta**{(b)}$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "The optimal parameter from training without regularization is most likely:",
+    "stepBody": "Sam trains three versions of the model\\n$$\\hat{y}=\\hat{\\theta}_0+\\hat{\\theta}_1x_1+\\hat{\\theta}_2x_2$$\\nwhere $$y$$ is attendance rate, $$x_1$$ is dist from bell and $$x_2$$ is section no.\\nOne version uses no regularization, one uses L1 and one uses L2. Each fitted parameter vector below lists the intercept first, then the coefficient on dist from bell, then the coefficient on section no.##figure1.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "$$\\theta**{(a)}$$",
+        "$$\\theta**{(b)}$$",
+        "$$\\theta**{(c)}$$"
+    ]
+}

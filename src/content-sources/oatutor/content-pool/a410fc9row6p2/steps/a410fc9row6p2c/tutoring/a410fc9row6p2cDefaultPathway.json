@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a410fc9row6p2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Ridge Regression",
+        "text": "Ridge regression is a type of linear regression that includes a regularization term. This term is controlled by the hyper-parameter lambda (\u03bb).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row6p2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row6p2c-h1"
+        ],
+        "title": "Role of Lambda in Ridge Regression",
+        "text": "The regularization parameter lambda (\u03bb) in ridge regression helps to prevent overfitting by adding a penalty to the size of coefficients. When $$\\lambda=0$$, the penalty term is removed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row6p2c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row6p2c-h2"
+        ],
+        "title": "Effect of $$Lambda=0$$",
+        "text": "When $$\\lambda=0$$, ridge regression becomes ordinary least squares regression. In this case, the model may not have a unique solution if the data is not full rank.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row6p2c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a410fc9row6p2c-h3"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Does setting $$\\lambda=0$$ guarantee a unique solution in ridge regression?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

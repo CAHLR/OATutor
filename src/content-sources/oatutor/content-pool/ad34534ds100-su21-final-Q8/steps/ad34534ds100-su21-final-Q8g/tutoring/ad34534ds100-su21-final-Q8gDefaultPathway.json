@@ -1,0 +1,65 @@
+[
+    {
+        "id": "ad34534ds100-su21-final-Q8g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding transforms categorical variables into binary vectors. Each category becomes a column, and a row has a $$1$$ in the column corresponding to its category and 0s elsewhere.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su21-final-Q8g-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-su21-final-Q8g-h1"
+        ],
+        "title": "Columns After One-Hot Encoding",
+        "text": "Consider how many unique values are in the 'sex' and $$'embark_{town'}$$ columns. Each unique value will become a separate column in the one-hot encoded matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su21-final-Q8g-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-su21-final-Q8g-h2"
+        ],
+        "title": "Counting Unique Values",
+        "text": "The 'sex' column has $$2$$ unique values: male and female. The $$'embark_{town'}$$ column has $$4$$ unique values: Southampton, Cherbourg, Queenstown, London, and Oxford.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su21-final-Q8g-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-su21-final-Q8g-h3"
+        ],
+        "title": "Total Columns in Design Matrix",
+        "text": "After one-hot encoding, the 'sex' column contributes $$2$$ columns, and the $$'embark_{town'}$$ column contributes $$4$$ columns. Adding these to the original columns gives the total number of columns in the design matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su21-final-Q8g-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [
+            "ad34534ds100-su21-final-Q8g-h4"
+        ],
+        "title": "Calculating Total Columns",
+        "text": "Calculate the total number of columns in the design matrix after one-hot encoding the 'sex' and $$'embark_{town'}$$ columns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

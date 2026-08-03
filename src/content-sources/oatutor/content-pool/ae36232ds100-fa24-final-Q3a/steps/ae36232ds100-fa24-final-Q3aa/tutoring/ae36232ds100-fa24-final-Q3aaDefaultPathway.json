@@ -1,0 +1,41 @@
+[
+    {
+        "id": "ae36232ds100-fa24-final-Q3aa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L1 Loss",
+        "text": "L1 loss, also known as least absolute deviations, is minimized by the median of the data. This is because the median minimizes the sum of absolute deviations from the central value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa24-final-Q3aa-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-fa24-final-Q3aa-h1"
+        ],
+        "title": "Identifying the Median",
+        "text": "The median is the middle value of a data set when it is ordered. For the given statistics, the median of $$critic_1$$ is provided as $$82$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa24-final-Q3aa-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$82$$"
+        ],
+        "dependencies": [
+            "ae36232ds100-fa24-final-Q3aa-h2"
+        ],
+        "title": "Optimal Predicted Value",
+        "text": "What is the optimal predicted value for $$critic_1$$ using a constant model with L1 loss?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

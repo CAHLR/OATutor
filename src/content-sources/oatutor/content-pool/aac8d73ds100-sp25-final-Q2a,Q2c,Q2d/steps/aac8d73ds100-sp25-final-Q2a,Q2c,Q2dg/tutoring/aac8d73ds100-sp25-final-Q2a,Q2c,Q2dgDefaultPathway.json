@@ -1,0 +1,59 @@
+[
+    {
+        "id": "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dg-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Feature Selection",
+        "text": "Feature selection involves choosing the most relevant features for your model. This helps in reducing overfitting and improving model interpretability.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dg-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dg-h1"
+        ],
+        "title": "Regularization Techniques",
+        "text": "Regularization techniques like L1 and L2 are used to prevent overfitting by adding a penalty to the loss function. L1 regularization can lead to sparse solutions, effectively selecting features.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dg-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dg-h2"
+        ],
+        "title": "L1 Regularization",
+        "text": "L1 regularization, also known as Lasso, adds a penalty equal to the absolute value of the magnitude of coefficients. It can shrink some coefficients to zero, effectively selecting a simpler model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dg-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "g(theta)=sum{i=1}{p}{abs(theta_i)}"
+        ],
+        "dependencies": [
+            "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dg-h3"
+        ],
+        "title": "Identify the Best g(theta)",
+        "text": "Which function of theta is associated with L1 regularization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "g(theta)=sum{i=1}{p}{log(theta_i)}",
+            "g(theta)=sum{i=1}{p}{theta_i}",
+            "g(theta)=sum{i=1}{p}{abs(theta_i)}",
+            "g(theta)=sum{i=1}{p}{theta_i**2}"
+        ]
+    }
+]

@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a825455ds100-sp25-final-Q4c,Q4dd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Agglomerative Clustering",
+        "text": "Agglomerative clustering starts with each data point as its own cluster and iteratively merges the closest clusters until all points are in a single cluster.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp25-final-Q4c,Q4dd-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-sp25-final-Q4c,Q4dd-h1"
+        ],
+        "title": "What is Average Linkage?",
+        "text": "Average linkage calculates the average distance between all pairs of points in two clusters. This average distance is used to determine which clusters to merge.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp25-final-Q4c,Q4dd-h3",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-sp25-final-Q4c,Q4dd-h2"
+        ],
+        "title": "Counting Iterations",
+        "text": "In agglomerative clustering, the number of iterations needed to merge all points into one cluster is equal to the number of points minus one.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp25-final-Q4c,Q4dd-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a825455ds100-sp25-final-Q4c,Q4dd-h3"
+        ],
+        "title": "Calculate the Number of Iterations",
+        "text": "Given that there are $$6$$ pandas, calculate the number of iterations needed to merge them all into one cluster using the formula: number of points minus one.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

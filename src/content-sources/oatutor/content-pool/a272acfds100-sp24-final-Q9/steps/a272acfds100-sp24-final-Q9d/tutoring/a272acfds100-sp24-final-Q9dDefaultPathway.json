@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a272acfds100-sp24-final-Q9d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scree Plot",
+        "text": "The scree plot shows the proportion of variance captured by each principal component. Look for the point where the plot starts to level off.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp24-final-Q9d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp24-final-Q9d-h1"
+        ],
+        "title": "Identifying the Elbow",
+        "text": "The 'elbow' in the scree plot indicates the number of principal components that capture most of the variance. How many components are before the plot levels off?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp24-final-Q9d-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a272acfds100-sp24-final-Q9d-h2"
+        ],
+        "title": "Counting the Principal Components",
+        "text": "Count the number of principal components before the plot levels off. This is the intrinsic dimension of the dataset.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,60 @@
+[
+    {
+        "id": "ad34534ds100-su20-final-Q4o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "As the regularization parameter \\( \\lambda \\) approaches $$\\infty$$, the regularization term dominates the objective function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su20-final-Q4o-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-su20-final-Q4o-h1"
+        ],
+        "title": "Effect of Large \\( \\lambda \\)",
+        "text": "With a very large \\( \\lambda \\), the regularization term forces the coefficients to shrink towards zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su20-final-Q4o-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-su20-final-Q4o-h2"
+        ],
+        "title": "Centered Data Impact",
+        "text": "When data is centered, the intercept term is the mean of the response variable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su20-final-Q4o-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "the mean of the true $$y$$ values"
+        ],
+        "dependencies": [
+            "ad34534ds100-su20-final-Q4o-h3"
+        ],
+        "title": "Final Prediction Value",
+        "text": "What value do the predictions approach when the coefficients shrink to zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "the mean of the true $$y$$ values",
+            "$$\\frac{1}{\\lambda}$$",
+            "$$p+1$$",
+            "Impossible to tell"
+        ]
+    }
+]

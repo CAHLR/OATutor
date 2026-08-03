@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a222079ds100-su21-final-Q8d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding transforms categorical variables into a set of binary variables. Each category becomes a column, and a row has a $$1$$ in the column corresponding to its category and 0s elsewhere.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su21-final-Q8d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su21-final-Q8d-h1"
+        ],
+        "title": "Columns After One-Hot Encoding",
+        "text": "The 'sex' column has two categories: 'male' and 'female'. The $$'embark_{town'}$$ column has five categories: 'Southampton', 'Cherbourg', 'Queenstown', 'London', 'Oxford'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su21-final-Q8d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su21-final-Q8d-h2"
+        ],
+        "title": "Calculating Total Columns",
+        "text": "After one-hot encoding, the 'sex' column will have $$1$$ column (since one category can be inferred), and the $$'embark_{town'}$$ column will have $$4$$ columns (since one category can be inferred).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su21-final-Q8d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a222079ds100-su21-final-Q8d-h3"
+        ],
+        "title": "Total Columns in Design Matrix",
+        "text": "How many columns are there in total after one-hot encoding and including the intercept term?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

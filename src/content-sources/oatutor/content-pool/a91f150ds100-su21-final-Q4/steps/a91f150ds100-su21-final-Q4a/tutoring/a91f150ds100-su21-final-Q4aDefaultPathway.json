@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a91f150ds100-su21-final-Q4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plot",
+        "text": "Observe how each model's prediction line behaves in relation to the true observed values. Consider the spread and direction of these lines.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4a-h1"
+        ],
+        "title": "Model Variance",
+        "text": "Notice the differences in the slopes of the lines for each model. What does this tell you about the variance among the models?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4a-h2"
+        ],
+        "title": "Average Prediction Line",
+        "text": "The dotted line represents the average prediction across all models. How does this line compare to the individual model predictions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4a-h3"
+        ],
+        "title": "Interpreting Model Behavior",
+        "text": "Based on the plot, do the models show high variance in their predictions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

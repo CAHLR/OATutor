@@ -1,0 +1,80 @@
+[
+    {
+        "id": "aac8d73ds100-sp25-final-Q2a,Q2c,Q2de-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L1 Regularization",
+        "text": "L1 regularization, also known as Lasso, adds a penalty equal to the absolute value of the magnitude of coefficients to the loss function. This can lead to sparse solutions where some coefficients are exactly zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp25-final-Q2a,Q2c,Q2de-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-sp25-final-Q2a,Q2c,Q2de-h1"
+        ],
+        "title": "Uniqueness of L1 Regularization Solution",
+        "text": "The uniqueness of the solution in L1 regularization depends on the properties of the design matrix. If the design matrix is not full rank, the solution may not be unique.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp25-final-Q2a,Q2c,Q2de-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-sp25-final-Q2a,Q2c,Q2de-h2"
+        ],
+        "title": "Full Rank Design Matrix",
+        "text": "A design matrix is full rank if all its columns are linearly independent. This is a key condition for the uniqueness of solutions in linear models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp25-final-Q2a,Q2c,Q2de-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes, the design matrix is full rank because the number of observations is greater than the number of features."
+        ],
+        "dependencies": [
+            "aac8d73ds100-sp25-final-Q2a,Q2c,Q2de-h3"
+        ],
+        "title": "Checking the Rank of the Design Matrix",
+        "text": "Given that there are $$30$$ observations and $$29$$ features, is the design matrix full rank?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "No",
+            "Yes",
+            "Yes, the design matrix is full rank because the number of observations is greater than the number of features."
+        ]
+    },
+    {
+        "id": "aac8d73ds100-sp25-final-Q2a,Q2c,Q2de-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No, the solution is not guaranteed to be unique because L1 regularization can lead to multiple solutions even if the design matrix is full rank."
+        ],
+        "dependencies": [
+            "aac8d73ds100-sp25-final-Q2a,Q2c,Q2de-h4"
+        ],
+        "title": "Conclusion on Uniqueness",
+        "text": "Based on the rank of the design matrix, is the solution to the L1 regularization problem guaranteed to be unique?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "No",
+            "No, the solution is not guaranteed to be unique because L1 regularization can lead to multiple solutions even if the design matrix is full rank.",
+            "Yes"
+        ]
+    }
+]

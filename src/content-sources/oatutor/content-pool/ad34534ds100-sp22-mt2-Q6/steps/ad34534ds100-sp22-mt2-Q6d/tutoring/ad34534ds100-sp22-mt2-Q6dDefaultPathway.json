@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Design Matrix",
+        "text": "The design matrix X is constructed using boolean featurization. Each column represents a food item, and each row represents a person's lunch on a particular day. A value of $$1$$ indicates the food was eaten, and $$0$$ indicates it was not.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6d-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6d-h1"
+        ],
+        "title": "Interpreting the Matrix",
+        "text": "In the design matrix, each row sums up to the number of unique foods eaten by a person for a particular lunch. For example, if a row has values [1, $$1$$, $$0$$, 0], the sum is $$2$$, indicating two unique foods were eaten.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6d-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6d-h2"
+        ],
+        "title": "Calculating the Sum of a Row",
+        "text": "Given a row in the design matrix [1, $$0$$, $$1$$, 0], calculate the sum to find the number of unique foods eaten.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6d-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6d-h2"
+        ],
+        "title": "Predicting Calories",
+        "text": "The design matrix is used to predict the total calories in an individual's lunch using ordinary least squares. The sum of each row vector helps in understanding the diversity of the diet, which can be a factor in calorie prediction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

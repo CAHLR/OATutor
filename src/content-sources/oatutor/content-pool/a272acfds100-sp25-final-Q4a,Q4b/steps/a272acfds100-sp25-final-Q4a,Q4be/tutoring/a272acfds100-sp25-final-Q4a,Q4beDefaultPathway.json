@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a272acfds100-sp25-final-Q4a,Q4be-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Singular Value Matrix",
+        "text": "The matrix S is a diagonal matrix with singular values on the diagonal. The rank of a matrix is determined by the number of non-zero singular values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp25-final-Q4a,Q4be-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp25-final-Q4a,Q4be-h1"
+        ],
+        "title": "Counting Non-Zero Singular Values",
+        "text": "Look at the diagonal of the matrix S. How many non-zero values do you see?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp25-final-Q4a,Q4be-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a272acfds100-sp25-final-Q4a,Q4be-h2"
+        ],
+        "title": "Determine the Rank",
+        "text": "The rank of the matrix X is equal to the number of non-zero singular values in S. How many non-zero singular values are there?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

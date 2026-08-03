@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Mean Squared Error (MSE)",
+        "text": "The Mean Squared Error (MSE) is a common measure used to evaluate the accuracy of a model. It is calculated as the average of the squares of the differences between the observed and predicted values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp24-mt-Q5a-h1"
+        ],
+        "title": "Formulating the MSE for Angela's Model",
+        "text": "For Angela's model, the predicted value is given by \\( \\hat{y}_i=1/\\theta_1*x_i \\). The MSE can be expressed as: \\( MSE=1/n*sum{i\\=1}{n}{(y_i-\\hat{y}_i)**2} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp24-mt-Q5a-h2"
+        ],
+        "title": "Substitute the Predicted Value",
+        "text": "Substitute \\( \\hat{y}_i=1/\\theta_1*x_i \\) into the MSE formula: \\( MSE=1/n*sum{i\\=1}{n}{(y_i-1/\\theta_1*x_i)**2} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp24-mt-Q5a-h3"
+        ],
+        "title": "Differentiate the MSE with Respect to \\( $$\\theta_1$$ \\)",
+        "text": "To find the derivative of the MSE with respect to \\( $$\\theta_1$$ \\), apply the chain rule and simplify the expression.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "1/n*sum{i\\=1}{n}{(2*y_i*x_i/\\theta_1**2-2*x_i**2/\\theta_1**3)}"
+        ],
+        "dependencies": [
+            "a8cec5cds100-sp24-mt-Q5a-h4"
+        ],
+        "title": "Calculate the Derivative",
+        "text": "Differentiate \\( MSE=1/n*sum{i\\=1}{n}{(y_i-1/\\theta_1*x_i)**2} \\) with respect to \\( $$\\theta_1$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

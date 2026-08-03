@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a253306row7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Weight Vector",
+        "text": "The weight vector \\(\\hat{\\theta}\\) represents the coefficients for each feature in the design matrix \\(X'\\). The first element is the intercept, the second is the coefficient for the number of food portions, and the third is the coefficient for the number of astronauts.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row7a-h1"
+        ],
+        "title": "Identifying the Relevant Coefficient",
+        "text": "To find out how many more sols the mission would last for each additional astronaut, look at the coefficient corresponding to the number of astronauts in the weight vector \\(\\hat{\\theta}\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a253306row7a-h2"
+        ],
+        "title": "Extracting the Coefficient",
+        "text": "What is the coefficient for the number of astronauts in the weight vector \\(\\hat{\\theta}=[-3,0.25,2]**T\\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a253306row7a-h3"
+        ],
+        "title": "Interpreting the Coefficient",
+        "text": "The coefficient for the number of astronauts indicates how many additional sols the mission can last for each additional astronaut, holding all other variables constant.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

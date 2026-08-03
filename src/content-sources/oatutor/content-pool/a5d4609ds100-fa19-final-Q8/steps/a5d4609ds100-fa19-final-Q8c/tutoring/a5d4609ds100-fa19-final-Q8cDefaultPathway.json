@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a5d4609ds100-fa19-final-Q8c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Principal Component Matrix",
+        "text": "The principal component matrix $P$ is derived from the original matrix $X$ using singular value decomposition (SVD).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa19-final-Q8c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-fa19-final-Q8c-h1"
+        ],
+        "title": "Decomposing the Principal Component Matrix",
+        "text": "When decomposing $P$ into its principal components, we use the formula $P=U_P*Sigma_P*V_P**T$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa19-final-Q8c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-fa19-final-Q8c-h2"
+        ],
+        "title": "Understanding $V_P**T$",
+        "text": "In the context of PCA, $V_P**T$ represents the rotation matrix that aligns the principal components with the original axes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa19-final-Q8c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix}$$"
+        ],
+        "dependencies": [
+            "a5d4609ds100-fa19-final-Q8c-h3"
+        ],
+        "title": "Identifying $V_P**T$",
+        "text": "Given that $P$ is already aligned with the principal components, what would $V_P**T$ be?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

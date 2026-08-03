@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a253306row1e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Orthogonality",
+        "text": "In linear algebra, two vectors are orthogonal if their dot product is zero. This means they are perpendicular to each other in the vector space.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row1e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row1e-h1"
+        ],
+        "title": "OLS Predictions and Residuals",
+        "text": "The residuals in an OLS model are the differences between the observed values and the predicted values. Mathematically, this is represented as Y-hat minus Y.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row1e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row1e-h2"
+        ],
+        "title": "Properties of OLS Residuals",
+        "text": "One key property of OLS residuals is that they are orthogonal to the predicted values. This means the dot product of the residuals and the predictions is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row1e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Orthogonal to"
+        ],
+        "dependencies": [
+            "a253306row1e-h3"
+        ],
+        "title": "Filling in the Blank",
+        "text": "Based on the properties of OLS residuals, fill in the blank: Y-hat minus Y is [blank] Y-hat.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Orthogonal to",
+            "In the span of",
+            "NOT orthogonal to and NOT in the span of"
+        ]
+    }
+]

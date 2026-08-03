@@ -1,0 +1,41 @@
+[
+    {
+        "id": "ade7df0ds100-sp21-final-Q4a,Q4b,Q4ci-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Preprocessing Steps",
+        "text": "Consider how each preprocessing step affects the sentence structure and meaning. Removing stopwords and punctuation, and converting to lowercase, can alter the sentence's original sentiment.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q4a,Q4b,Q4ci-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q4a,Q4b,Q4ci-h1"
+        ],
+        "title": "Impact of Word Order",
+        "text": "Think about how the order of words in a sentence can change its meaning. Does the frequency vector capture this aspect?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q4a,Q4b,Q4ci-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "Counting the frequency of all words does not capture the order of the words, so 'I am happy that it does not rain today' and 'I am not happy that it does rain today' produce exactly the same frequency vector and the model must make a false prediction on one of them."
+        ],
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q4a,Q4b,Q4ci-h2"
+        ],
+        "title": "Example of Misclassification",
+        "text": "Provide an example sentence where the preprocessing steps lead to a loss of important information, causing a misclassification.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

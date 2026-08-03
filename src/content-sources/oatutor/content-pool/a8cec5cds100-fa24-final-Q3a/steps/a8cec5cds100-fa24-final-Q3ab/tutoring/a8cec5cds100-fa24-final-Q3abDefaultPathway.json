@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a8cec5cds100-fa24-final-Q3ab-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L2 Loss",
+        "text": "The L2 loss, also known as the mean squared error, is minimized when the predicted value is the mean of the observed values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa24-final-Q3ab-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa24-final-Q3ab-h1"
+        ],
+        "title": "Mean of Critic 1's Ratings",
+        "text": "The mean of $$critic_{1's}$$ ratings is given as $$85$$. This is the value that minimizes the L2 loss for a constant prediction model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa24-final-Q3ab-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$85$$"
+        ],
+        "dependencies": [
+            "a8cec5cds100-fa24-final-Q3ab-h2"
+        ],
+        "title": "Optimal Predicted Value",
+        "text": "What is the optimal predicted value for $$critic_1$$ using a constant model with L2 loss?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

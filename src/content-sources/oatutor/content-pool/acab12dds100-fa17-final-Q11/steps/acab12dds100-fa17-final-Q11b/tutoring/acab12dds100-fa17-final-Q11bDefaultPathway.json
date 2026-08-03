@@ -1,0 +1,59 @@
+[
+    {
+        "id": "acab12dds100-fa17-final-Q11b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Bootstrap Confidence Interval",
+        "text": "To construct a 95% bootstrap confidence interval, we need to use the percentiles of the bootstrap distribution and the standard error of the sample mean.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-final-Q11b-h2",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa17-final-Q11b-h1"
+        ],
+        "title": "Calculate the Standard Error",
+        "text": "The standard error of the sample mean is calculated as the sample standard deviation divided by the square root of the sample size. Use the formula SE(\\hat{\\theta})=\\frac{2}{\\sqrt{100}}.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-final-Q11b-h3",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa17-final-Q11b-h2"
+        ],
+        "title": "Apply the Percentiles",
+        "text": "The $$2.5th$$ and $$97.5th$$ percentiles of the bootstrap distribution are $$-2.2$$ and $$1.9$$, respectively. Use these values to adjust the sample mean \\hat{\\theta}=8.4.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-final-Q11b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(8.4-1.9*2/sqrt(100),8.4+2.2*2/sqrt(100))"
+        ],
+        "dependencies": [
+            "acab12dds100-fa17-final-Q11b-h3"
+        ],
+        "title": "Calculate the Confidence Interval",
+        "text": "Use the formula for the confidence interval: (\\hat{\\theta}-1.9*SE(\\hat{\\theta}), \\hat{\\theta}+2.2*SE(\\hat{\\theta})).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "(8.4-1.9*2/sqrt(100),8.4+2.2*2/sqrt(100))",
+            "(8.4-2.2*2/sqrt(100),8.4+1.9*2/sqrt(100))",
+            "$$(-1.9, 2.2)$$",
+            "(7.7-2.2*2/sqrt(100),9.1+1.9*2/sqrt(100))"
+        ]
+    }
+]

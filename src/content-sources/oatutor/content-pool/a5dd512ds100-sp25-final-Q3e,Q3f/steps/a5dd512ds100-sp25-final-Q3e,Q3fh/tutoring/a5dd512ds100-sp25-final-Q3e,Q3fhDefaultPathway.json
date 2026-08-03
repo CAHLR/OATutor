@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fh-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Decision Thresholds",
+        "text": "The decision threshold in a logistic regression model determines the point at which you classify an observation as one class or another. Lowering the threshold means you are more likely to classify observations as the positive class.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fh-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp25-final-Q3e,Q3fh-h1"
+        ],
+        "title": "Effect on Precision",
+        "text": "Precision is the ratio of true positive predictions to the total number of positive predictions. Lowering the threshold can increase the number of positive predictions, but it may also increase the number of false positives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fh-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp25-final-Q3e,Q3fh-h2"
+        ],
+        "title": "Analyzing the Impact",
+        "text": "Consider how lowering the threshold affects the balance between true positives and false positives. If false positives increase significantly, precision may decrease.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fh-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{10}{15}$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-sp25-final-Q3e,Q3fh-h3"
+        ],
+        "title": "Calculating Precision",
+        "text": "If you have $$10$$ true positives and $$5$$ false positives, what is the precision?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fh-h5",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp25-final-Q3e,Q3fh-h4"
+        ],
+        "title": "Conclusion on Precision",
+        "text": "Lowering the threshold increases the number of positive predictions, which can lead to more false positives. This can decrease precision unless the increase in true positives is proportionally larger.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

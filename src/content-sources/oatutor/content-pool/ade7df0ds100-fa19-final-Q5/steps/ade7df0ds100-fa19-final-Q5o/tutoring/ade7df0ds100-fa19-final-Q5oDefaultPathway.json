@@ -1,0 +1,45 @@
+[
+    {
+        "id": "ade7df0ds100-fa19-final-Q5o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Log-Odds",
+        "text": "Recall that the log-odds is the logarithm of the odds ratio, which is the ratio of the probability of an event occurring to the probability of it not occurring.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-final-Q5o-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-final-Q5o-h1"
+        ],
+        "title": "Linear Relationship in Logistic Regression",
+        "text": "In logistic regression, we assume that the log-odds of the probability is a linear function of the input features.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-final-Q5o-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa19-final-Q5o-h2"
+        ],
+        "title": "Log-Odds Linear Assumption",
+        "text": "Is the assumption that the log-odds is linear always true in logistic regression?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

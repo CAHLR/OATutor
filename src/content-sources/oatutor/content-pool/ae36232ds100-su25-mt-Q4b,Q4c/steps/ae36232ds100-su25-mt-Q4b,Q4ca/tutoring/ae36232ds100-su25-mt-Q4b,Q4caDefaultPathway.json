@@ -1,0 +1,74 @@
+[
+    {
+        "id": "ae36232ds100-su25-mt-Q4b,Q4ca-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MAE",
+        "text": "The Mean Absolute Error (MAE) is a measure of errors between paired observations expressing the same phenomenon. It is calculated as the average of the absolute differences between predicted values and observed values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-mt-Q4b,Q4ca-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-mt-Q4b,Q4ca-h1"
+        ],
+        "title": "Effect of Shuffling Data",
+        "text": "Consider how shuffling the data might affect the calculation of the MAE. Does the order of the data impact the mean absolute error when using a constant model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-mt-Q4b,Q4ca-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The MAE is calculated as the average of the absolute differences between the constant predicted value and the actual values."
+        ],
+        "dependencies": [
+            "ae36232ds100-su25-mt-Q4b,Q4ca-h2"
+        ],
+        "title": "Constant Model and MAE",
+        "text": "When using a constant model, the predicted value is the same for all observations. How does this affect the calculation of the MAE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-mt-Q4b,Q4ca-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-mt-Q4b,Q4ca-h3"
+        ],
+        "title": "Impact of Shuffling on MAE",
+        "text": "Since the MAE is based on the absolute differences between the predicted and actual values, and the predicted value is constant, shuffling the data does not change the MAE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-mt-Q4b,Q4ca-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ae36232ds100-su25-mt-Q4b,Q4ca-h4"
+        ],
+        "title": "Conclusion on Shuffling and MAE",
+        "text": "Given that the MAE is calculated using a constant predicted value, does shuffling the data change the minimum value of the MAE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

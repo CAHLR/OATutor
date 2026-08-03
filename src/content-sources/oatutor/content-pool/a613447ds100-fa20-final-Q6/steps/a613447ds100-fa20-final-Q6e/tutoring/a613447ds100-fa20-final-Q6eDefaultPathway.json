@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a613447ds100-fa20-final-Q6e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Pruning",
+        "text": "Pruning a decision tree involves removing branches that have little importance. This can help in simplifying the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa20-final-Q6e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa20-final-Q6e-h1"
+        ],
+        "title": "Effect on Bias",
+        "text": "Consider how removing branches might affect the model's ability to fit the training data. Does it make the model more or less flexible?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa20-final-Q6e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increases it"
+        ],
+        "dependencies": [
+            "a613447ds100-fa20-final-Q6e-h2"
+        ],
+        "title": "Bias and Flexibility",
+        "text": "When a model is less flexible, it tends to have higher bias. Does pruning increase or decrease the model's flexibility?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increases it",
+            "Decreases it"
+        ]
+    }
+]

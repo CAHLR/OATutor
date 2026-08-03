@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ae27c55ds100-fa18-final-Q5g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Table",
+        "text": "The table shows bootstrap replicates of the sample. Each row represents a different bootstrap sample, and the columns represent the values in each sample. The rowmeans, rowvars, and rowmedians are the means, variances, and medians of each row, respectively.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa18-final-Q5g-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa18-final-Q5g-h1"
+        ],
+        "title": "Identifying the Sampling Distribution",
+        "text": "The sampling distribution of a statistic is the distribution of that statistic over many samples. In this case, you need to identify the distribution of the sample median from the bootstrap replicates.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa18-final-Q5g-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "11, 92, 11, 34"
+        ],
+        "dependencies": [
+            "ae27c55ds100-fa18-final-Q5g-h2"
+        ],
+        "title": "Analyzing Row Medians",
+        "text": "Look at the rowmedians in the table. What are the values?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa18-final-Q5g-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "11, 11, 11, 34, 34"
+        ],
+        "dependencies": [
+            "ae27c55ds100-fa18-final-Q5g-h3"
+        ],
+        "title": "Analyzing Column Medians",
+        "text": "Look at the colmedians in the table. What are the values?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa18-final-Q5g-h5",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa18-final-Q5g-h4"
+        ],
+        "title": "Choosing the Correct Plot",
+        "text": "The correct plot will show the distribution of the sample medians from the bootstrap replicates. Compare the rowmedians and colmedians to the plots provided.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

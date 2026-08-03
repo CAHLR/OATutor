@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE on Training Data",
+        "text": "When you remove a feature from a model, it can affect the Mean Squared Error (MSE) on the training data. Consider how the model's complexity and fit to the training data might change.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6m-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6m-h1"
+        ],
+        "title": "Effect of Removing a Feature",
+        "text": "Removing a feature can lead to a simpler model. Think about how this simplification might impact the model's ability to fit the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6m-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6m-h2"
+        ],
+        "title": "Simplification and Overfitting",
+        "text": "A simpler model is less likely to overfit the training data. How does this affect the MSE on the training data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6m-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6m-h2"
+        ],
+        "title": "Model Fit and MSE",
+        "text": "If the model fits the training data less well due to the removal of a feature, what is a possible effect on the MSE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6m-h5",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6m-h4"
+        ],
+        "title": "Balancing Complexity and Fit",
+        "text": "Consider the trade-off between model complexity and fit. Removing a feature reduces complexity but might also reduce the model's ability to capture patterns in the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

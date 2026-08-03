@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ae36232ds100-sp24-mt-Q5j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean Cubed Error",
+        "text": "The Mean Cubed Error is calculated as the average of the cubed differences between the actual and predicted values. This means that the error is raised to the power of $$3$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp24-mt-Q5j-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp24-mt-Q5j-h1"
+        ],
+        "title": "Effect of Cubing the Error",
+        "text": "Cubing the error means that larger errors will have a disproportionately larger impact on the loss compared to smaller errors. This is because cubing a number increases its magnitude significantly if the number is greater than $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp24-mt-Q5j-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp24-mt-Q5j-h2"
+        ],
+        "title": "Comparing Mean Squared Error and Mean Cubed Error",
+        "text": "Unlike Mean Squared Error, which penalizes errors quadratically, Mean Cubed Error penalizes errors cubically. This means that the penalty for larger errors is even more severe in Mean Cubed Error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp24-mt-Q5j-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Cubing amplifies both positive and negative errors leading to a larger overall loss for larger errors."
+        ],
+        "dependencies": [
+            "ae36232ds100-sp24-mt-Q5j-h3"
+        ],
+        "title": "Analyzing the Impact of Cubing",
+        "text": "Consider the impact of cubing on both positive and negative errors. How does this affect the overall loss?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp24-mt-Q5j-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The model will be more sensitive to larger errors potentially leading to overfitting if not managed properly."
+        ],
+        "dependencies": [
+            "ae36232ds100-sp24-mt-Q5j-s1"
+        ],
+        "title": "Implications for Model Training",
+        "text": "What implications does the Mean Cubed Error have for training a linear model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

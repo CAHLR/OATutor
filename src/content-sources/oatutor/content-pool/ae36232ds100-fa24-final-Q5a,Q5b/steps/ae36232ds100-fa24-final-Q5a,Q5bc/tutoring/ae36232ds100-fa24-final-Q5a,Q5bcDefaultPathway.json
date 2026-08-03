@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ae36232ds100-fa24-final-Q5a,Q5bc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model Shreya uses is given by the equation: $$hat{y}=\\theta_2 \\theta_1 x$$. This is a simple linear model where hat{y} is the predicted value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa24-final-Q5a,Q5bc-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-fa24-final-Q5a,Q5bc-h1"
+        ],
+        "title": "Loss Function Explanation",
+        "text": "The loss function is defined as L(hat{y},y)=hat{y}-theta_2*y. This function measures the difference between the predicted value hat{y} and the scaled actual value $$\\theta_2 y$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa24-final-Q5a,Q5bc-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-fa24-final-Q5a,Q5bc-h2"
+        ],
+        "title": "Gradient Descent Step",
+        "text": "To perform one iteration of stochastic gradient descent, we need to compute the gradient of the loss function with respect to $$\\theta_1$$ and update $$\\theta_1$$ using the learning rate alpha.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa24-final-Q5a,Q5bc-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2\\pi$$"
+        ],
+        "dependencies": [
+            "ae36232ds100-fa24-final-Q5a,Q5bc-h3"
+        ],
+        "title": "Compute the Gradient",
+        "text": "Calculate the gradient of the loss function with respect to $$\\theta_1$$. Use the given values: theta_1**{(t)}=3, theta_2**{(t)}=pi, $$(x,y)=(2,1)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa24-final-Q5a,Q5bc-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "3-pi"
+        ],
+        "dependencies": [
+            "ae36232ds100-fa24-final-Q5a,Q5bc-h4"
+        ],
+        "title": "Update $$\\theta_1$$",
+        "text": "Use the gradient and the learning rate $$alpha=0.5$$ to update $$\\theta_1$$. The update rule is: theta_1**{(t+1)}=theta_1**{(t)}-alpha*gradient.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

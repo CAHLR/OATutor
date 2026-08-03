@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a410fc9row9p2e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Normal Equation",
+        "text": "The normal equation for ordinary least squares is given by \\( \\hat{\\theta} $$=$$ (X**TX)**{-1}X**Ty \\). What does it mean for a matrix to be invertible?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row9p2e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row9p2e-h1"
+        ],
+        "title": "Invertibility of a Matrix",
+        "text": "A matrix is invertible if it is square and has full rank. What does full rank mean in terms of the columns of the matrix?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row9p2e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row9p2e-h2"
+        ],
+        "title": "Full Rank Matrix",
+        "text": "A matrix has full rank if its columns are linearly independent. Why is this important for the normal equation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

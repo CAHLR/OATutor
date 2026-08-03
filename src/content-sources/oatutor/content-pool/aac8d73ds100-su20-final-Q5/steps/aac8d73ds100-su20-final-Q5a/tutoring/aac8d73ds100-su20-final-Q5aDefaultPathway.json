@@ -1,0 +1,61 @@
+[
+    {
+        "id": "aac8d73ds100-su20-final-Q5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Loss Function",
+        "text": "The loss function is defined as the residuals of the model. For a single observation, it is given by:\\n\\n$$L(theta)=y_i-\\operatorname{f_{\\theta}}\\left(x_i\\right)$$\\n\\nThis means the loss is the difference between the actual value $$y_i$$ and the predicted value $$\\operatorname{f_{\\theta}}\\left(x_i\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q5a-h1"
+        ],
+        "title": "Model Function",
+        "text": "The model function is given by:\\n\\n$$\\operatorname{f_{\\theta}}\\left(x\\right)=0.5\\theta_0+\\theta_0 \\theta_1 x_1+sin\\left(\\theta_1\\right) x_2$$\\n\\nThis function is used to predict the value based on the parameters $$\\theta_0$$ and $$\\theta_1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q5a-h2"
+        ],
+        "title": "Gradient Descent Update Rule",
+        "text": "The gradient descent update rule for parameters is:\\n\\n(theta_0**(t+1),theta_1**(t+1))=(theta_0**(t),theta_1**(t))-(A,B)\\n\\nWhere A and B are the partial derivatives of the loss function with respect to $$\\theta_0$$ and $$\\theta_1$$, respectively.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-0.5-{\\theta_1}**t$$"
+        ],
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q5a-h3"
+        ],
+        "title": "Calculate A",
+        "text": "To find A, we need to calculate the partial derivative of the loss function with respect to $$\\theta_0$$. Start by substituting the model function into the loss function and then differentiate with respect to $$\\theta_0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-0.5-{\\theta_1}**t$$",
+            "$$-0.5-{\\theta_0}^t$$",
+            "$$-0.5-{\\theta_1}^t$$",
+            "$$-{\\theta_0}^t-2cos\\left({\\theta_1}^t\\right)$$",
+            "$$0.5+{\\theta_1}^t$$",
+            "$${\\theta_1}^t-0.5$$"
+        ]
+    }
+]

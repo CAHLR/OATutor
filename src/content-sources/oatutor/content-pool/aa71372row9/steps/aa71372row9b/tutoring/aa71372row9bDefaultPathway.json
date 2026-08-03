@@ -1,0 +1,70 @@
+[
+    {
+        "id": "aa71372row9b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Granularity",
+        "text": "Granularity refers to the level of detail represented by each row in a dataset.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa71372row9b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Analyzing the DataFrame",
+        "text": "Look at the columns and think about what each row in the DataFrame represents.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa71372row9b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Each row represents one $$\\frac{post}{picture}$$."
+        ],
+        "dependencies": [
+            "aa71372row9b-h1"
+        ],
+        "title": "Identifying the Key Element",
+        "text": "What does each row in the DataFrame correspond to in terms of Angela's social media activity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Each row represents one $$\\frac{post}{picture}$$.",
+            "Each row represents one day of the week.",
+            "Each row represents one number of likes.",
+            "Each row represents one user.",
+            "Each row represents one month of posts."
+        ]
+    },
+    {
+        "id": "aa71372row9b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Each row represents one $$\\frac{post}{picture}$$."
+        ],
+        "dependencies": [
+            "aa71372row9b-h2"
+        ],
+        "title": "Connecting Columns to Granularity",
+        "text": "Consider how the columns like 'post\\_id', 'date', and 'likes' relate to the granularity of the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Each row represents one $$\\frac{post}{picture}$$.",
+            "Each row represents one day of the week.",
+            "Each row represents one number of likes.",
+            "Each row represents one user.",
+            "Each row represents one month of posts."
+        ]
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ae36232ds100-fa23-mt-Q5bh-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Loss Functions",
+        "text": "Loss functions are used to measure how well a model's predictions match the actual data. They help in optimizing the model parameters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-mt-Q5bh-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-fa23-mt-Q5bh-h1"
+        ],
+        "title": "Mean Squared Error (MSE)",
+        "text": "MSE is a common loss function that calculates the average of the squares of the errors. It is sensitive to outliers because squaring the errors increases the penalty for larger errors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-mt-Q5bh-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-fa23-mt-Q5bh-h2"
+        ],
+        "title": "Penalizing Outliers",
+        "text": "To penalize outliers more harshly than MSE, consider using loss functions that involve higher powers or absolute values of the errors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-mt-Q5bh-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Options with powers greater than $$2$$ or absolute values of powers greater than $$2$$ will penalize outliers more harshly."
+        ],
+        "dependencies": [
+            "ae36232ds100-fa23-mt-Q5bh-h3"
+        ],
+        "title": "Analyzing the Options",
+        "text": "Evaluate each option to determine if it penalizes outliers more harshly than MSE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "(y_i-hat{y}_i), (y_i-hat{y}_i)**3, abs(y_i-hat{y}_i)**3, (y_i-hat{y}_i)**4, (y_i-hat{y}_i)**5, abs((y_i-hat{y}_i)**5)",
+            "Options with powers greater than $$2$$ or absolute values of powers greater than $$2$$ will penalize outliers more harshly."
+        ]
+    }
+]

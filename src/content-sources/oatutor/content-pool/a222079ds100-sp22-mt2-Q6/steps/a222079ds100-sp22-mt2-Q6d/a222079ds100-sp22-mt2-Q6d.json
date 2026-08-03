@@ -1,0 +1,15 @@
+{
+    "id": "a222079ds100-sp22-mt2-Q6d",
+    "stepAnswer": [
+        "TRUE"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "The sum of each row vector represents the number of unique foods eaten by a person for a particular lunch.",
+    "stepBody": "Suppose Crossroads uses a boolean featurization for encoding an individual's lunch, where they create dummy features corresponding to all foods. They set these dummy features of all foods for an individual's lunch on a particular day to $$1$$ if eaten and $$0$$ if not eaten. We construct a design matrix X of shape (10**6, 4) that contains only the featurization to predict the total calories in an individual's lunch using ordinary least squares. Is the following is true? Select all that apply.\\n\\n\\nD.##figure4.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "TRUE",
+        "FALSE"
+    ]
+}

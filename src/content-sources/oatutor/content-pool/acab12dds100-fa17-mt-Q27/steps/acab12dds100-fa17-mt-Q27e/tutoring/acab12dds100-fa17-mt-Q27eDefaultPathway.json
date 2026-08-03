@@ -1,0 +1,133 @@
+[
+    {
+        "id": "acab12dds100-fa17-mt-Q27e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrapping",
+        "text": "Bootstrapping involves resampling with replacement from the sample data to create 'new' samples. This helps in estimating the sampling distribution of a statistic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-mt-Q27e-h2",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa17-mt-Q27e-h1"
+        ],
+        "title": "Choosing the Sample Size",
+        "text": "The sample size for each bootstrap sample should be the same as the original sample size. What is the size of the original sample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-mt-Q27e-h3",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa17-mt-Q27e-h2"
+        ],
+        "title": "Replacement in Bootstrapping",
+        "text": "In bootstrapping, we sample with replacement. This means that each individual can be selected more than once in a bootstrap sample.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-mt-Q27e-h4",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa17-mt-Q27e-h3"
+        ],
+        "title": "Number of Bootstrap Samples",
+        "text": "The number of bootstrap samples determines how many times we repeat the resampling process. This is often a large number to ensure accuracy.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-mt-Q27e-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "theSample"
+        ],
+        "dependencies": [
+            "acab12dds100-fa17-mt-Q27e-h4"
+        ],
+        "title": "Fill in the Code: Part (i)",
+        "text": "What should replace (i) in the code?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-mt-Q27e-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$400$$"
+        ],
+        "dependencies": [
+            "acab12dds100-fa17-mt-Q27e-h5"
+        ],
+        "title": "Fill in the Code: Part (ii)",
+        "text": "What should replace (ii) in the code?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-mt-Q27e-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "acab12dds100-fa17-mt-Q27e-h6"
+        ],
+        "title": "Fill in the Code: Part (iii)",
+        "text": "What should replace (iii) in the code?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-mt-Q27e-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "median"
+        ],
+        "dependencies": [
+            "acab12dds100-fa17-mt-Q27e-h7"
+        ],
+        "title": "Fill in the Code: Part (iv)",
+        "text": "What should replace (iv) in the code?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-mt-Q27e-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10000$$"
+        ],
+        "dependencies": [
+            "acab12dds100-fa17-mt-Q27e-h8"
+        ],
+        "title": "Fill in the Code: Part (v)",
+        "text": "What should replace (v) in the code?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

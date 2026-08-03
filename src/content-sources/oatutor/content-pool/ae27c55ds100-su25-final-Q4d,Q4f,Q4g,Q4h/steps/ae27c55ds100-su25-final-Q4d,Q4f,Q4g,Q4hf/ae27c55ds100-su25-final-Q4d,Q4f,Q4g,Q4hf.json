@@ -1,0 +1,19 @@
+{
+    "id": "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4hf",
+    "stepAnswer": [
+        "$$\\hat{\\theta}_2$$ is the predicted increase in blood sugar for someone who has type $$2$$ diabetes relative to someone who does not have type $$2$$ diabetes, holding soda drinking status constant."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "After this background study, the team goes on to explore the relationship between consumption of sugary drinks and blood sugar level. When the team collected the data on $$\\text{drink\\_soda},$$ it also collected the following data on the same individuals.\\n\u2022 $$\\text{blood\\_sugar}:$$ The pre-breakfast blood sugar level measured by the research team in the unit of millimoles per liter. (type: np.float)\\n\u2022 $$\\text{t2d}:$$ An indicator of whether the individual has type $$2$$ diabetes, where a value of $$1$$ indicates type $$2$$ diabetes, and $$0$$ indicates no type $$2$$ diabetes. (type: int)\\nTo study the relationship, the team fit the following linear regression model over the data\\n$$\\hat{y}=\\theta_0+\\theta_1 x_1+\\theta_2 x_2$$\\nwhere $$y$$ is blood sugar, $$x_1$$ is drink soda and $$x_2$$ is t2d.\\nSuppose the optimal estimated parameters are $$\\hat{\\theta}_0=5.1$$ and $$\\hat{\\theta}_1=2.8$$ and $$\\hat{\\theta}_2=3.8$$\\nWhat is the interpretation of $$\\hat{\\theta}_2?$$ Explain in one sentence.",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "$$\\hat{\\theta}_2$$ is the predicted increase in blood sugar for someone who has type $$2$$ diabetes relative to someone who does not have type $$2$$ diabetes, holding soda drinking status constant.",
+    "choices": [
+        "$$\\hat{\\theta}_2$$ is the predicted increase in blood sugar for someone who has type $$2$$ diabetes relative to someone who does not have type $$2$$ diabetes, holding soda drinking status constant.",
+        "$$\\hat{\\theta}_2$$ is the predicted increase in blood sugar for someone who drinks soda relative to someone who does not drink soda, holding type $$2$$ diabetes status constant.",
+        "$$\\hat{\\theta}_2$$ is the predicted blood sugar for someone who has type $$2$$ diabetes and drinks soda.",
+        "$$\\hat{\\theta}_2$$ is the predicted probability that an individual has type $$2$$ diabetes given their blood sugar level.",
+        "$$\\hat{\\theta}_2$$ is the average blood sugar level among the surveyed adults who have type $$2$$ diabetes."
+    ]
+}

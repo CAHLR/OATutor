@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a8cec5cds100-fa23-final-Q2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Loss Function",
+        "text": "The loss function is given by \\( \\tilde{L}(\\theta)=2\\theta_0+\\theta_0**{4}\\theta_1-e**{2\\theta_1} \\). We need to find the partial derivative with respect to \\( $$\\theta_0$$ \\) to update \\( $$\\theta_0$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-final-Q2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa23-final-Q2b-h1"
+        ],
+        "title": "Partial Derivative with Respect to \\( $$\\theta_0$$ \\)",
+        "text": "To find the partial derivative of \\( \\tilde{L}(\\theta) \\) with respect to \\( $$\\theta_0$$ \\), differentiate each term involving \\( $$\\theta_0$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-final-Q2b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2+4{\\theta_0}^3 \\theta_1$$"
+        ],
+        "dependencies": [
+            "a8cec5cds100-fa23-final-Q2b-h2"
+        ],
+        "title": "Calculate \\( \\frac{\\partial \\tilde{L}}{\\partial $$\\theta_0$$} \\)",
+        "text": "Differentiate \\( 2\\theta_0 \\) and \\( \\theta_0**{4}\\theta_1 \\) with respect to \\( $$\\theta_0$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-final-Q2b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa23-final-Q2b-h3"
+        ],
+        "title": "Gradient Descent Update Rule",
+        "text": "The update rule for gradient descent is \\( \\theta_0**{(1)} $$=$$ \\theta_0**{(0)} - \\alpha \\cdot \\frac{\\partial \\tilde{L}}{\\partial $$\\theta_0$$} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-final-Q2b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1-0.5\\left(2+4\\times1^3\\times2\\right)$$"
+        ],
+        "dependencies": [
+            "a8cec5cds100-fa23-final-Q2b-h4"
+        ],
+        "title": "Substitute Values into the Update Rule",
+        "text": "Substitute \\( \\theta_0**{(0)}=1 \\), \\( \\theta_1**{(0)}=2 \\), and \\( $$\\alpha=0.5$$ \\) into the update rule.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-final-Q2b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-4$$"
+        ],
+        "dependencies": [
+            "a8cec5cds100-fa23-final-Q2b-h5"
+        ],
+        "title": "Simplify the Expression",
+        "text": "Simplify the expression \\( $$1-0.5\\left(2+4\\times1^3\\times2\\right)$$ \\) to find \\( \\theta_0**{(1)} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,17 @@
+{
+    "id": "a5dd512ds100-su19-final-Q7c",
+    "stepAnswer": [
+        "Scalar"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "$$y_i-\\sigma(X_{i}\\cdot{\\theta}**{(t)})$$",
+    "stepBody": "Recall that in lecture we derived the following batch gradient descent (BGD) and stochastic gradient descent (SGD) update rules for logistic regression with $$L_2$$ regularization. This expression uses the same notation used in class where $$X$$ is the $$n$$ by $$p$$ design matrix, $$X_i$$ is a vector containing the values in the $$i'\\text{th}$$ row of $$X, $$ $$y$$ is the length $$n$$ vector of outcomes, $$y_i$$ is a single outcome (either $$0$$ or 1), and $$\\theta$$ is a vector containing the model weights.\\nBatch Gradient Descent:\\n$$\\theta**{(t+1)}=(1-2\\lambda)\\theta**{(t)}+\\alpha[\\frac{1}{n}\\sum_{i=1}**{n}(y_i-\\sigma(X_{i}\\cdot{\\theta}**{(t)}))X_i]$$\\nStochastic Gradient Descent:\\n$$\\theta**{(t+1)}=(1-2\\lambda)\\theta**{(t)}+\\alpha[(y_i-\\sigma(X_{i}\\cdot{\\theta}**{(t)}))X_i]$$\\nWhat are the dimensions of the expression below?",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "Scalar",
+        "Length $$n$$ vector",
+        "Length $$p$$ vector",
+        "$$n$$ by $$p$$ matrix"
+    ]
+}

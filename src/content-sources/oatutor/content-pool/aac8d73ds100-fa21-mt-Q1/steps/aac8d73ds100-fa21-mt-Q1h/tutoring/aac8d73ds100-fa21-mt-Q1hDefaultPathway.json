@@ -1,0 +1,79 @@
+[
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding N-gram Encoding",
+        "text": "N-gram encoding involves breaking down sequences into smaller overlapping segments. Consider how this might affect the representation of DNA sequences.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1h-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Consider the Nature of DNA Sequences",
+        "text": "DNA sequences are linear and do not wrap around. Think about how N-gram encoding might misinterpret this structure.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Analyzing Overlapping Segments",
+        "text": "When using N-gram encoding, overlapping segments are created. For example, the sequence ATGCA would be broken into ATG, TGC, and GCA. Why might this be problematic?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1h-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Non-Consecutive Segments",
+        "text": "N-gram encoding might capture non-consecutive segments as words. For instance, ATGCA could suggest AGA. Why is this a concern?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1h-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Wrap-Around Segments",
+        "text": "Consider how N-gram encoding might incorrectly capture wrap-around segments, such as TGG from GGTT. Why is this an issue?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

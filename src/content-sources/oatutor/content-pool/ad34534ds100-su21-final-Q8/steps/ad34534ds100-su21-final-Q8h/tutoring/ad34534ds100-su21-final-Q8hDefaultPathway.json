@@ -1,0 +1,74 @@
+[
+    {
+        "id": "ad34534ds100-su21-final-Q8h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "When you one-hot encode a categorical variable, each category becomes a separate binary column. For example, if you one-hot encode the 'sex' column, you will have two new columns: $$'sex_{male'}$$ and $$'sex_{female'}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su21-final-Q8h-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-su21-final-Q8h-h1"
+        ],
+        "title": "Columns in the Design Matrix",
+        "text": "After one-hot encoding 'sex' and $$'embark_{town'}$$, how many columns will you have in total? Remember, each category in a column becomes a separate column in the design matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su21-final-Q8h-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-su21-final-Q8h-h2"
+        ],
+        "title": "Checking Full Column Rank",
+        "text": "A matrix is full column rank if all its columns are linearly independent. Consider if any column can be expressed as a linear combination of others.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su21-final-Q8h-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [
+            "ad34534ds100-su21-final-Q8h-h2"
+        ],
+        "title": "Calculating the Number of Columns",
+        "text": "How many columns will the design matrix have after one-hot encoding 'sex' and $$'embark_{town'}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su21-final-Q8h-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "ad34534ds100-su21-final-Q8h-h3"
+        ],
+        "title": "Determining Linear Independence",
+        "text": "Are there any columns in the design matrix that can be expressed as a linear combination of others?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Accuracy",
+        "text": "Accuracy is the ratio of correctly predicted observations to the total observations. It is a measure of how often the classifier is correct.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-mt2-Q7a-h1"
+        ],
+        "title": "Identify Correct Predictions",
+        "text": "Compare each prediction with the true label. Count how many predictions match the true labels.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-mt2-Q7a-h2"
+        ],
+        "title": "Count Correct Predictions",
+        "text": "How many predictions match the true labels?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{7}{10}$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-mt2-Q7a-h3"
+        ],
+        "title": "Calculate Accuracy",
+        "text": "Use the formula: Accuracy $$=$$ (Number of Correct Predictions) / (Total Number of Predictions). What is the accuracy?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-mt2-Q7a-h4"
+        ],
+        "title": "Choose the Correct Answer",
+        "text": "Select the correct accuracy from the given choices.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

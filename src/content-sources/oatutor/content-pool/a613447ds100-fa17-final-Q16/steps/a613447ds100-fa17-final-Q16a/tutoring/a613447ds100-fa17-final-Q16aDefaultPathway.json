@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a613447ds100-fa17-final-Q16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "Model variance refers to how much the model's predictions change when it is trained on different subsets of the data. High variance models tend to overfit the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa17-final-Q16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa17-final-Q16a-h1"
+        ],
+        "title": "Identifying Overfitting",
+        "text": "Overfitting occurs when a model captures noise in the data rather than the underlying pattern. This is often indicated by a model that fits the training data very closely.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa17-final-Q16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa17-final-Q16a-h2"
+        ],
+        "title": "Analyzing the Plots",
+        "text": "Look at the complexity of the models in each plot. A model with high variance will have a complex curve that fits the training data very closely.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa17-final-Q16a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(c)"
+        ],
+        "dependencies": [
+            "a613447ds100-fa17-final-Q16a-h3"
+        ],
+        "title": "Choosing the Correct Plot",
+        "text": "Which plot shows a model that fits the training data very closely, indicating high variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "(a)",
+            "(b)",
+            "(c)"
+        ]
+    }
+]

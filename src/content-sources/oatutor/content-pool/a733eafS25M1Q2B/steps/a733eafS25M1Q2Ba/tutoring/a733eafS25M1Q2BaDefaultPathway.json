@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a733eafS25M1Q2Ba-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Code",
+        "text": "The code uses the `str.startswith()` method. What does this method do when applied to a string column in a DataFrame?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a733eafS25M1Q2Ba-h2",
+        "type": "hint",
+        "dependencies": [
+            "a733eafS25M1Q2Ba-h1"
+        ],
+        "title": "Filtering Rows",
+        "text": "Consider what the condition `dishes['phone number'].str.startswith('510')` is checking for each row in the DataFrame.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a733eafS25M1Q2Ba-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Checking the Method",
+        "text": "What does the `str.startswith('510')` method return for each phone number in the DataFrame?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a733eafS25M1Q2Ba-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a733eafS25M1Q2Ba-h3"
+        ],
+        "title": "Evaluating the Code",
+        "text": "Does the code correctly filter the DataFrame to include only rows where the phone number starts with '510'?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

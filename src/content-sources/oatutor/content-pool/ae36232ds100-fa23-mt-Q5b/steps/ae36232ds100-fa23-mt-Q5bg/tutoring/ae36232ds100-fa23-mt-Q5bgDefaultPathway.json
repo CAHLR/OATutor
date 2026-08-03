@@ -1,0 +1,62 @@
+[
+    {
+        "id": "ae36232ds100-fa23-mt-Q5bg-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Loss Functions",
+        "text": "Loss functions are used to measure how well a model's predictions match the actual data. They help in optimizing the model parameters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-mt-Q5bg-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-fa23-mt-Q5bg-h1"
+        ],
+        "title": "Mean Squared Error (MSE)",
+        "text": "MSE is a common loss function that calculates the average of the squares of the errors. It is sensitive to outliers because squaring the errors increases the penalty for larger errors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-mt-Q5bg-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-fa23-mt-Q5bg-h2"
+        ],
+        "title": "Penalizing Outliers",
+        "text": "To penalize outliers more harshly than MSE, consider using loss functions where the error term is raised to a power greater than $$2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-mt-Q5bg-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(1/n)*sum{i extbackslash=1}{n}{(y_i- extbackslashhat{y}_i)**3}, (1/n)*sum{i extbackslash=1}{n}{abs(y_i- extbackslashhat{y}_i)**3}, (1/n)*sum{i extbackslash=1}{n}{(y_i- extbackslashhat{y}_i)**4}, (1/n)*sum{i extbackslash=1}{n}{(y_i- extbackslashhat{y}_i)**5}, (1/n)*sum{i extbackslash=1}{n}{abs((y_i- extbackslashhat{y}_i)**5)}"
+        ],
+        "dependencies": [
+            "ae36232ds100-fa23-mt-Q5bf-h4"
+        ],
+        "title": "Identifying Suitable Loss Functions",
+        "text": "Select the loss functions that raise the error term to a power greater than $$2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "(1/n)*sum{i extbackslash=1}{n}{(y_i- extbackslashhat{y}_i)**3}",
+            "(1/n)*sum{i extbackslash=1}{n}{(y_i- extbackslashhat{y}_i)**3}, (1/n)*sum{i extbackslash=1}{n}{abs(y_i- extbackslashhat{y}_i)**3}, (1/n)*sum{i extbackslash=1}{n}{(y_i- extbackslashhat{y}_i)**4}, (1/n)*sum{i extbackslash=1}{n}{(y_i- extbackslashhat{y}_i)**5}, (1/n)*sum{i extbackslash=1}{n}{abs((y_i- extbackslashhat{y}_i)**5)}",
+            "(1/n)*sum{i extbackslash=1}{n}{(y_i- extbackslashhat{y}_i)**4}",
+            "(1/n)*sum{i extbackslash=1}{n}{(y_i- extbackslashhat{y}_i)**5}",
+            "(1/n)*sum{i extbackslash=1}{n}{abs((y_i- extbackslashhat{y}_i)**5)}",
+            "(1/n)*sum{i extbackslash=1}{n}{abs(y_i- extbackslashhat{y}_i)**3}",
+            "(1/n)*sum{i extbackslash=1}{n}{y_i- extbackslashhat{y}_i}"
+        ]
+    }
+]

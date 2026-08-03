@@ -1,0 +1,58 @@
+[
+    {
+        "id": "ade7df0ds100-sp19-final-Q5aa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logistic Regression",
+        "text": "In logistic regression, the probability of the binary outcome Y given the input vector X is modeled using the logistic function. This function is defined as \\( \\sigma(z) $$=$$ \\frac{1}{1+e**{-z}} \\), where \\( $$z$$ $$=$$ X**{T}\\beta \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp19-final-Q5aa-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp19-final-Q5aa-h1"
+        ],
+        "title": "Interpreting the Logistic Function",
+        "text": "The logistic function \\( \\sigma(X**{T}\\beta) \\) maps any real-valued number into the $$(0,1)$$ interval, which represents the probability of Y being $$1$$ given X.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp19-final-Q5aa-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp19-final-Q5aa-h2"
+        ],
+        "title": "When is \\( $$P(Y=1|X)$$ > X**{T}\\beta \\)?",
+        "text": "Consider the range of values that \\( \\sigma(X**{T}\\beta) \\) can take. Since \\( \\sigma(X**{T}\\beta) \\) is always between $$0$$ and $$1$$, think about when it might be greater than \\( X**{T}\\beta \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp19-final-Q5aa-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Sometimes"
+        ],
+        "dependencies": [
+            "ade7df0ds100-sp19-final-Q5aa-h3"
+        ],
+        "title": "Comparing \\( \\sigma(X**{T}\\beta) \\) and \\( X**{T}\\beta \\)",
+        "text": "Given that \\( \\sigma(X**{T}\\beta) \\) is always between $$0$$ and $$1$$, and \\( X**{T}\\beta \\) can be any real number, under what conditions is \\( \\sigma(X**{T}\\beta) > X**{T}\\beta \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Always",
+            "Sometimes",
+            "Never"
+        ]
+    }
+]

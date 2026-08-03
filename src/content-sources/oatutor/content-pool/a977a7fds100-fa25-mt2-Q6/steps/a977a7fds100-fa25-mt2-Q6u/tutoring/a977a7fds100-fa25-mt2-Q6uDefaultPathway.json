@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6u-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LASSO Regularization",
+        "text": "LASSO (Least Absolute Shrinkage and Selection Operator) is a type of linear regression that uses shrinkage. Shrinkage is where data values are shrunk towards a central point, like the mean. The LASSO procedure encourages simple, sparse models (i.e., models with fewer parameters).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6u-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6u-h1"
+        ],
+        "title": "Effect of LASSO on Training MSE",
+        "text": "When LASSO regularization is applied, it adds a penalty equal to the absolute value of the magnitude of coefficients. This can lead to some coefficients being reduced to zero, effectively removing some features from the model. How might this affect the MSE on the training data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6u-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6u-h2"
+        ],
+        "title": "Analyzing Training MSE with LASSO",
+        "text": "Consider the effect of LASSO regularization on the training data. Since LASSO can reduce the complexity of the model by setting some coefficients to zero, what is a possible effect on the MSE of the training data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    }
+]

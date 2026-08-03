@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a5dd512ds100-fa20-final-Q9d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Separability",
+        "text": "Linear separability means that you can draw a straight line (or hyperplane in higher dimensions) that separates the two classes without any overlap. Consider the features hue and abv. Can a straight line separate the two wine types based on these features?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9d-h1"
+        ],
+        "title": "Standardized Features",
+        "text": "Since the features are standardized, they have a mean of $$0$$ and a standard deviation of $$1$$. This means they are on the same scale. Does this affect the linear separability?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9d-h2"
+        ],
+        "title": "Logistic Regression Model",
+        "text": "The logistic regression model is given by $$P(Y=1|x)=\\operatorname{\\sigma}\\left(\\theta_1 hue+\\theta_2 abv\\right)$$. This model assumes a linear relationship between the features and the log-odds of the outcome. Does this imply linear separability?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9d-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9d-h3"
+        ],
+        "title": "Evaluating Linear Separability",
+        "text": "Given the standardized features and the logistic regression model, determine if the data is linearly separable without any feature transformations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

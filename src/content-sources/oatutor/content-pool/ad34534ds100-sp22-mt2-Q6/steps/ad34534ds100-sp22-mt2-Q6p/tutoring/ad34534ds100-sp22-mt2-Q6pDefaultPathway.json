@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6p-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Confidence Intervals",
+        "text": "Confidence intervals provide a range of values that likely contain the true parameter value. If a confidence interval for a parameter includes zero, it suggests that the parameter might not have a significant effect.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6p-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6p-h1"
+        ],
+        "title": "Interpreting $$\\Theta_0$$",
+        "text": "The confidence interval for \\( $$\\theta_0$$ \\) is $$[44.808$$, $$45.013]$$. Since this interval does not include zero, \\( $$\\theta_0$$ \\) is likely to have a significant effect.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6p-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6p-h1"
+        ],
+        "title": "Interpreting $$\\Theta_1$$",
+        "text": "The confidence interval for \\( $$\\theta_1$$ \\) is $$[-0.026$$, $$0.342]$$. Since this interval includes zero, \\( $$\\theta_1$$ \\) might not have a significant effect.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6p-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6p-h1"
+        ],
+        "title": "Interpreting $$\\Theta_2$$",
+        "text": "The confidence interval for \\( $$\\theta_2$$ \\) is $$[-0.142$$, $$1.324]$$. Since this interval includes zero, \\( $$\\theta_2$$ \\) might not have a significant effect.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6p-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\Theta_0$$"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6p-h2"
+        ],
+        "title": "Conclusion from Confidence Intervals",
+        "text": "Based on the confidence intervals, which parameters are likely to have a significant effect?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\Theta_0$$",
+            "$$\\Theta_1$$",
+            "$$\\Theta_2$$"
+        ]
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a613447ds100-su19-final-Q6v-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "Bias refers to the error introduced by approximating a real-world problem, which may be complex, by a simplified model. Variance refers to how much the model's predictions would change if we used a different training dataset.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6v-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6v-h1"
+        ],
+        "title": "Effect of More Data on Bias",
+        "text": "Adding more data points generally helps in reducing variance but does not necessarily affect bias. Bias is more related to the model's assumptions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6v-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6v-h2"
+        ],
+        "title": "Model Complexity and Bias",
+        "text": "A more complex model can capture more patterns in the data, potentially reducing bias. However, the given model's complexity is fixed, and adding more data does not change this.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6v-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a613447ds100-su19-final-Q6v-h3"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Does collecting more data points change the model's assumptions or complexity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

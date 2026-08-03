@@ -1,0 +1,78 @@
+[
+    {
+        "id": "ae36232ds100-su25-final-Q2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE and MAE",
+        "text": "Mean Squared Error (MSE) and Mean Absolute Error (MAE) are two different metrics used to evaluate the accuracy of a model. MSE is sensitive to outliers because it squares the errors, while MAE is more robust to outliers as it takes the absolute value of errors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2d-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2d-h1"
+        ],
+        "title": "Constant Model and Optimization",
+        "text": "A constant model predicts the same value for all inputs. When optimizing a constant model, the choice between MSE and MAE can lead to different optimal predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2d-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2d-h2"
+        ],
+        "title": "Median vs Mean in Optimization",
+        "text": "When optimizing for MAE, the optimal constant prediction is the median of the data. For MSE, the optimal constant prediction is the mean of the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "MAE"
+        ],
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2d-h3"
+        ],
+        "title": "Comparing Training Loss",
+        "text": "Consider a dataset with outliers. Which metric, MSE or MAE, would result in a lower training loss when using the median as the constant prediction?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "MSE",
+            "MAE"
+        ]
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2d-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "MSE"
+        ],
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2d-h4"
+        ],
+        "title": "Effect of Outliers on MSE and MAE",
+        "text": "If a dataset has significant outliers, which metric, MSE or MAE, is more likely to be affected by these outliers?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "MSE",
+            "MAE"
+        ]
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a5dd512ds100-fa19-final-Q5l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Function",
+        "text": "The function given is $$f(x)=\\frac{1}{\\pi} \\arctan\\left(x\\right)+\\frac{1}{2}$$. This function is similar to the logistic function in terms of its behavior at the tails.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5l-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5l-h1"
+        ],
+        "title": "Behavior of the Function",
+        "text": "Observe the graph. The function approaches $$0$$ as $$x$$ approaches negative infinity and approaches $$1$$ as $$x$$ approaches positive $$\\infty$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5l-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5l-h2"
+        ],
+        "title": "Comparison with Logistic Function",
+        "text": "Both the logistic function and the given function have similar asymptotic behavior, meaning they both approach $$0$$ and $$1$$ at the extremes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5l-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5l-h3"
+        ],
+        "title": "Conclusion",
+        "text": "Based on the behavior of the function, is it true that the scaled inverse tangent function behaves similarly to the logistic function at the tails?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

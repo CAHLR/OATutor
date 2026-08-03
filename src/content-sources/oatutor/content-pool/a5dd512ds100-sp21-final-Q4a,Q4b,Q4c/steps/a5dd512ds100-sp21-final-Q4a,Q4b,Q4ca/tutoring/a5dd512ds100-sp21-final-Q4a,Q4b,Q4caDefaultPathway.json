@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a5dd512ds100-sp21-final-Q4a,Q4b,Q4ca-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Feature Encoding",
+        "text": "Consider how the time of day is represented in the code. Is it correctly capturing the range from $$0.0$$ to $$24.0$$, exclusive of both ends?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp21-final-Q4a,Q4b,Q4ca-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp21-final-Q4a,Q4b,Q4ca-h1"
+        ],
+        "title": "Checking the Range",
+        "text": "The time of day should be a continuous variable ranging from $$0.0$$ to $$24.0$$. Does the code ensure that both $$0.0$$ and $$24.0$$ are excluded?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp21-final-Q4a,Q4b,Q4ca-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a5dd512ds100-sp21-final-Q4a,Q4b,Q4ca-h2"
+        ],
+        "title": "Evaluating the Code Logic",
+        "text": "Review the logic used in the code to determine if it correctly excludes the endpoints $$0.0$$ and $$24.0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

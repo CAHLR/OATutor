@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a5dd512ds100-su19-final-Q7d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Expression",
+        "text": "The expression $$\\left(y_i-\\operatorname{\\sigma}\\left(X_i {\\theta}^t\\right)\\right) X_i$$ is part of the gradient descent update rule. It involves the difference between the actual outcome $$y_i$$ and the predicted probability $$\\operatorname{\\sigma}\\left(X_i {\\theta}^t\\right)$$, multiplied by the feature vector $$X_i$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q7d-h1"
+        ],
+        "title": "Dimensions of Components",
+        "text": "To determine the dimensions of the expression, consider the dimensions of each component:\\n- $$y_i$$ is a scalar.\\n- $$\\operatorname{\\sigma}\\left(X_i {\\theta}^t\\right)$$ is a scalar (since it's a probability).\\n- $$X_i$$ is a vector with length $$p$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Length $$p$$ vector"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q7d-h2"
+        ],
+        "title": "Combining Dimensions",
+        "text": "Since $$y_i$$ and $$\\operatorname{\\sigma}\\left(X_i {\\theta}^t\\right)$$ are scalars, their difference is also a scalar. When you multiply this scalar by the vector $$X_i$$, what is the resulting dimension?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Scalar",
+            "Length $$n$$ vector",
+            "Length $$p$$ vector",
+            "$$n$$ by $$p$$ matrix"
+        ]
+    }
+]

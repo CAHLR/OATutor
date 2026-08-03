@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a410fc9row5_part2f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Matrix Dimensions",
+        "text": "In an OLS model, the matrix $X$ represents the design matrix, which includes all the features and the intercept term. The number of rows in $X$ corresponds to the number of observations, $n$, and the number of columns corresponds to the number of features plus one (for the intercept), $p+1$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row5_part2f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row5_part2f-h1"
+        ],
+        "title": "Matrix $X$ Dimensions",
+        "text": "The matrix $X$ should have dimensions $n$ by $p+1$. This means that for each observation, there is a row in the matrix, and for each feature (including the intercept), there is a column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row5_part2f-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$n$$ by $$p+1$$"
+        ],
+        "dependencies": [
+            "a410fc9row5_part2f-h2"
+        ],
+        "title": "Checking Matrix Dimensions",
+        "text": "Given that $X$ has $n$ observations and $p+1$ features, what should be the dimensions of $X$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row5_part2f-h4",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row5_part2f-h3"
+        ],
+        "title": "True or False?",
+        "text": "Based on the understanding of matrix dimensions in OLS, determine if the statement about the dimensions of $X$ being $n$ by $p+1$ is true or false.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

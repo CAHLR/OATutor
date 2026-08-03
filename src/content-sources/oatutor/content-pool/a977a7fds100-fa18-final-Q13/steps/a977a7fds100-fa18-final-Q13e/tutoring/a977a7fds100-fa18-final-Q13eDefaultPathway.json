@@ -1,0 +1,130 @@
+[
+    {
+        "id": "a977a7fds100-fa18-final-Q13e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Bias-Variance Decomposition",
+        "text": "The expected squared error can be broken down into three components: variance, bias squared, and irreducible error. Can you identify which part of the equation corresponds to each component?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q13e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q13e-h1"
+        ],
+        "title": "Identifying the Components",
+        "text": "In the equation E[(Y-f_hat_theta(x))**2]=sigma**2+(h(x)-E[f_hat_theta(x)])**2+E[(E[f_hat_theta(x)]-f_hat_theta(x))**2], which term represents the variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q13e-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "E[(E[f_hat_theta(x)]-f_hat_theta(x))**2]"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q13e-h2"
+        ],
+        "title": "Variance Component",
+        "text": "The variance component is the expected value of the squared difference between the expected prediction and the actual prediction. Which term in the equation represents this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q13e-h4",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q13e-h3"
+        ],
+        "title": "Bias Component",
+        "text": "Which term in the equation represents the bias squared?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q13e-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "(h(x)-E[f_hat_theta(x)])**2"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q13e-h4"
+        ],
+        "title": "Bias Squared Component",
+        "text": "The bias squared component is the squared difference between the true function and the expected prediction. Which term in the equation represents this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q13e-h6",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q13e-h5"
+        ],
+        "title": "Irreducible Error",
+        "text": "What is the irreducible error in the equation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q13e-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$${\\sigma}^2$$"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q13e-h6"
+        ],
+        "title": "Irreducible Error Component",
+        "text": "The irreducible error is the variance of the noise in the data. Which term in the equation represents this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q13e-h8",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Fixed or Not?",
+        "text": "Consider the parameter theta. Is it treated as fixed or not in the context of this problem?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q13e-h9",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q13e-h8"
+        ],
+        "title": "Theta as a Random Variable",
+        "text": "In the context of this problem, theta is not treated as fixed because it is estimated from the data. What is the correct answer?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

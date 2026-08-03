@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a40b41cds100-sp18-final-Q15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Star Schema",
+        "text": "In a star schema, the dimension tables are used to store attributes related to the facts in the fact table. They do not contain relationships between different facts.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp18-final-Q15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp18-final-Q15a-h1"
+        ],
+        "title": "Role of Dimension Tables",
+        "text": "Dimension tables provide descriptive information for the facts in the fact table, such as time, location, or product details.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp18-final-Q15a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a40b41cds100-sp18-final-Q15a-h2"
+        ],
+        "title": "Correct Statement Identification",
+        "text": "Based on the role of dimension tables in a star schema, is the statement 'In the star schema, the dimension table contains the relationships between different facts in the separate fact tables' true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

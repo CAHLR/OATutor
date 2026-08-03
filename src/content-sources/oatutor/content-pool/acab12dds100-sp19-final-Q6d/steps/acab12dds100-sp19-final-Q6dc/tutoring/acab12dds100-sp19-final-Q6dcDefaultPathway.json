@@ -1,0 +1,57 @@
+[
+    {
+        "id": "acab12dds100-sp19-final-Q6dc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrapping",
+        "text": "Bootstrapping is a statistical method that involves resampling with replacement from a dataset to estimate the distribution of a statistic. It is often used to estimate the variance or confidence intervals of a sample statistic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp19-final-Q6dc-h2",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-sp19-final-Q6dc-h1"
+        ],
+        "title": "Sample Size Consideration",
+        "text": "When using bootstrapping, the sample size for each resample is typically the same as the original sample size. In this case, each bootstrap sample would consist of $$500$$ trips.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp19-final-Q6dc-h3",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-sp19-final-Q6dc-h2"
+        ],
+        "title": "Population vs. Sample",
+        "text": "The original dataset contains all taxi trips in $$2018$$, while the sample from May $$1$$ contains only $$500$$ trips. Bootstrapping focuses on the sample to estimate the variance of the average duration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp19-final-Q6dc-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "acab12dds100-sp19-final-Q6dc-h3"
+        ],
+        "title": "Bootstrapping Process",
+        "text": "To perform bootstrapping, you would repeatedly draw samples of $$500$$ trips with replacement from the May $$1$$ sample and calculate the average duration for each resample. Then, compute the variance of these averages.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

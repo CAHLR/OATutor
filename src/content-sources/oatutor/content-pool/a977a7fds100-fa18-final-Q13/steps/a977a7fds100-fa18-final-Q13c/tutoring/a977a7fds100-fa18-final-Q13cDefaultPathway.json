@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a977a7fds100-fa18-final-Q13c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Noise in Observations",
+        "text": "In the context of the bias-variance tradeoff, noise refers to the inherent randomness in the data generation process. This randomness is captured by the variance term in the decomposition of the expected squared error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q13c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q13c-h1"
+        ],
+        "title": "Role of Expectation in Bias-Variance Tradeoff",
+        "text": "The expectation is taken to average out the randomness in the data, which includes the noise in the observations. This helps in understanding the systematic error (bias) and the variability (variance) in the model's predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q13c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$${\\sigma}^2$$"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q13c-h2"
+        ],
+        "title": "Identifying Sources of Randomness",
+        "text": "Consider the equation: E[(Y-f_hat_theta(x))**2]=sigma**2+(h(x)-E[f_hat_theta(x)])**2+E[(E[f_hat_theta(x)]-f_hat_theta(x))**2]. Which term represents the noise in the observations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q13c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q13c-h3"
+        ],
+        "title": "Noise as a Source of Randomness",
+        "text": "The term $${\\sigma}^2$$ in the equation represents the variance of the noise in the observations. This is one of the sources of randomness considered in the bias-variance tradeoff.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

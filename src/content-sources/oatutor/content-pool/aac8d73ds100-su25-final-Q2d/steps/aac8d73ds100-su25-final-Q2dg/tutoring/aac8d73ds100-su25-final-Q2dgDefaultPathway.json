@@ -1,0 +1,57 @@
+[
+    {
+        "id": "aac8d73ds100-su25-final-Q2dg-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "Gradient descent is an optimization algorithm used to minimize a function by iteratively moving towards the steepest descent direction. It is commonly used in machine learning to find the optimal parameters of a model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su25-final-Q2dg-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su25-final-Q2dg-h1"
+        ],
+        "title": "Convergence of Gradient Descent",
+        "text": "For gradient descent to converge to a local minimum, certain conditions must be met, such as a sufficiently small learning rate and a convex loss function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su25-final-Q2dg-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su25-final-Q2dg-h2"
+        ],
+        "title": "Role of Learning Rate",
+        "text": "The learning rate determines the size of the steps taken towards the minimum. If the learning rate is too large, the algorithm may overshoot the minimum and fail to converge.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su25-final-Q2dg-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aac8d73ds100-su25-final-Q2dg-h3"
+        ],
+        "title": "Analyzing the Statement",
+        "text": "Consider the statement: \"With an infinite number of updates and a fixed learning rate, gradient descent will always converge to a local minimum.\" Is this statement true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

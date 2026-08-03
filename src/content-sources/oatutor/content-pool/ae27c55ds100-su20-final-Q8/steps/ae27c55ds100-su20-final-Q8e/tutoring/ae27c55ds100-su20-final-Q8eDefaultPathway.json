@@ -1,0 +1,99 @@
+[
+    {
+        "id": "ae27c55ds100-su20-final-Q8e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "We need to determine if the combination of values for the vectors $$u_1$$ and $$u_2$$ is invalid. This involves checking if these vectors are orthogonal and normalized.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su20-final-Q8e-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-su20-final-Q8e-h1"
+        ],
+        "title": "Orthogonality Check",
+        "text": "To check if $$u_1$$ and $$u_2$$ are orthogonal, calculate their dot product. If the dot product is zero, they are orthogonal.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su20-final-Q8e-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "ae27c55ds100-su20-final-Q8e-h2"
+        ],
+        "title": "Calculate Dot Product",
+        "text": "Calculate the dot product of $$u_1$$ and $$u_2$$: $$\\frac{1\\times1}{2}+\\frac{0\\times1}{2}+0\\times0+0\\times0+0\\times0+0\\times0$$. What is the result?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su20-final-Q8e-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-su20-final-Q8e-h3"
+        ],
+        "title": "Normalization Check",
+        "text": "Check if each vector is normalized. A vector is normalized if its magnitude is $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su20-final-Q8e-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "ae27c55ds100-su20-final-Q8e-h4"
+        ],
+        "title": "Calculate Magnitude of $$u_1$$",
+        "text": "Calculate the magnitude of $$u_1$$: $$\\sqrt{1^2+0^2+0^2+0^2+0^2+0^2}$$. What is the result?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su20-final-Q8e-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{\\sqrt{2}}$$"
+        ],
+        "dependencies": [
+            "ae27c55ds100-su20-final-Q8e-h5"
+        ],
+        "title": "Calculate Magnitude of $$u_2$$",
+        "text": "Calculate the magnitude of $$u_2$$: $$\\sqrt{\\frac{1}{2^2}+\\frac{1}{2^2}+0^2+0^2+0^2+0^2}$$. What is the result?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su20-final-Q8e-h7",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-su20-final-Q8e-h6"
+        ],
+        "title": "Conclusion",
+        "text": "Based on the orthogonality and normalization checks, determine if the combination of $$u_1$$ and $$u_2$$ is invalid.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

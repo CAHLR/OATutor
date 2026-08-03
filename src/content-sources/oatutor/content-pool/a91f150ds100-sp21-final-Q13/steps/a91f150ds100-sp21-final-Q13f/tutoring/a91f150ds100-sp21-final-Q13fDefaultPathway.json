@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a91f150ds100-sp21-final-Q13f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting by adding a penalty term to the loss function. This penalty term is controlled by the regularization coefficient, lambda.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp21-final-Q13f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp21-final-Q13f-h1"
+        ],
+        "title": "Effect of Increasing Lambda",
+        "text": "As the regularization coefficient lambda increases, the penalty for large weights in the model also increases. This can lead to a reduction in model complexity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp21-final-Q13f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp21-final-Q13f-h2"
+        ],
+        "title": "Impact on Variance",
+        "text": "Increasing lambda typically reduces the variance of the model because it discourages the model from fitting the noise in the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp21-final-Q13f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a91f150ds100-sp21-final-Q13f-h3"
+        ],
+        "title": "True or False: Variance Increases",
+        "text": "Does increasing the regularization coefficient lambda increase the variance of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

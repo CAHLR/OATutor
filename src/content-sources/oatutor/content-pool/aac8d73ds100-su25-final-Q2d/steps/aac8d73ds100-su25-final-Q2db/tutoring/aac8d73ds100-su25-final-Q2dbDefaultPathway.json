@@ -1,0 +1,67 @@
+[
+    {
+        "id": "aac8d73ds100-su25-final-Q2db-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L1 Regularization",
+        "text": "L1 regularization, also known as Lasso, adds a penalty equal to the absolute value of the magnitude of coefficients. This can lead to some coefficients being exactly zero, effectively selecting a simpler model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su25-final-Q2db-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su25-final-Q2db-h1"
+        ],
+        "title": "Bias-Variance Tradeoff",
+        "text": "Regularization techniques like L1 regularization can increase bias in the model. This is part of the bias-variance tradeoff, where reducing variance can lead to an increase in bias.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su25-final-Q2db-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "decrease"
+        ],
+        "dependencies": [
+            "aac8d73ds100-su25-final-Q2db-h2"
+        ],
+        "title": "Effect of L1 Regularization on Model Complexity",
+        "text": "Does L1 regularization tend to increase or decrease model complexity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "increase",
+            "decrease"
+        ]
+    },
+    {
+        "id": "aac8d73ds100-su25-final-Q2db-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Some coefficients become zero"
+        ],
+        "dependencies": [
+            "aac8d73ds100-su25-final-Q2db-h3"
+        ],
+        "title": "Impact on Coefficients",
+        "text": "What happens to some of the coefficients in a model when L1 regularization is applied?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Some coefficients become zero",
+            "All coefficients increase",
+            "All coefficients decrease"
+        ]
+    }
+]

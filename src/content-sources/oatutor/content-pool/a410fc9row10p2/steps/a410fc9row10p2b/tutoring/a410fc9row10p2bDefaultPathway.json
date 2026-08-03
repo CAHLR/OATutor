@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a410fc9row10p2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Parameter Vector",
+        "text": "The parameter vector \\( $$\\theta$$ \\) in a linear regression model represents the coefficients for each feature in the dataset, including the intercept.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row10p2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row10p2b-h1"
+        ],
+        "title": "Dimensions of the Design Matrix",
+        "text": "The design matrix \\( X \\) includes all the features and the intercept. If there are $$400$$ flight records and $$9$$ features, what would be the dimensions of \\( X \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row10p2b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row10p2b-h2"
+        ],
+        "title": "Including the Intercept",
+        "text": "Remember that the design matrix \\( X \\) includes an intercept term, which adds an additional column to the matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

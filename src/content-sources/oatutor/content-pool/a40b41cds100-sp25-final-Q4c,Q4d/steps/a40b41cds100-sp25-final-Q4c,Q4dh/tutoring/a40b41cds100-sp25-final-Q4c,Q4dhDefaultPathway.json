@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a40b41cds100-sp25-final-Q4c,Q4dh-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Clustering",
+        "text": "Clustering is a method of unsupervised learning where the goal is to group similar data points together. It is often used when the data does not have predefined labels.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp25-final-Q4c,Q4dh-h2",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp25-final-Q4c,Q4dh-h1"
+        ],
+        "title": "K-Means Clustering",
+        "text": "K-Means is a popular clustering algorithm that requires the user to specify the number of clusters (k) in advance. The algorithm then partitions the data into k clusters by minimizing the variance within each cluster.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp25-final-Q4c,Q4dh-h3",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp25-final-Q4c,Q4dh-h2"
+        ],
+        "title": "Choosing the Number of Clusters",
+        "text": "Choosing the right number of clusters is crucial for the performance of K-Means. Techniques like the Elbow Method or Silhouette Analysis can help determine the optimal number of clusters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp25-final-Q4c,Q4dh-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a40b41cds100-sp25-final-Q4c,Q4dh-h3"
+        ],
+        "title": "True or False: K-Means requires specifying the number of clusters in advance.",
+        "text": "Does the K-Means algorithm require you to specify the number of clusters before running the algorithm?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

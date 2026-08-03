@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a5dd512ds100-fa20-final-Q9f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Confusion Matrix",
+        "text": "The confusion matrix shows the counts of true positives, true negatives, false positives, and false negatives. We need to find the missing values using the given accuracy and precision.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9f-h1"
+        ],
+        "title": "Using Accuracy to Find Missing Values",
+        "text": "Accuracy is calculated as (True Positives + True Negatives) / Total Predictions. We know the accuracy is $$\\frac{119}{130}$$. Use this to find the sum of true positives and true negatives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9f-h2"
+        ],
+        "title": "Using Precision to Find Missing Values",
+        "text": "Precision is calculated as True Positives / (True Positives + False Positives). We know the precision is $$\\frac{31}{32}$$. Use this to find the number of false positives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9f-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$119$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9f-h2"
+        ],
+        "title": "Calculate True Positives and True Negatives",
+        "text": "Given the accuracy $$\\frac{119}{130}$$, calculate the sum of true positives and true negatives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9f-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9f-h3"
+        ],
+        "title": "Calculate False Positives",
+        "text": "Given the precision $$\\frac{31}{32}$$, calculate the number of false positives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9f-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9f-h4"
+        ],
+        "title": "Calculate False Negatives",
+        "text": "Use the total number of predictions and the values found to calculate the number of false negatives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9f-h7",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9f-h6"
+        ],
+        "title": "Calculate Recall",
+        "text": "Recall is calculated as True Positives / (True Positives + False Negatives). Use the values found to calculate recall.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

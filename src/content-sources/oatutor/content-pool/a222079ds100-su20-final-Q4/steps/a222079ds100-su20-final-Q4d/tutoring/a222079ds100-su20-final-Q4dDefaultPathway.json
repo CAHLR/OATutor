@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a222079ds100-su20-final-Q4d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The problem involves comparing two linear regression models: one using the original design matrix X and the other using the mean-centered design matrix X\u0303. The goal is to determine under what conditions the coefficients from these models are equal.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-final-Q4d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su20-final-Q4d-h1"
+        ],
+        "title": "Mean-Centering Effect",
+        "text": "Mean-centering affects the intercept term in a linear regression model. However, it does not affect the other coefficients if the design matrix has full column rank.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-final-Q4d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su20-final-Q4d-h2"
+        ],
+        "title": "Intercept Term",
+        "text": "When you mean-center the data, the intercept term is adjusted to account for the mean of the response variable. This adjustment does not affect the other coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-final-Q4d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a222079ds100-su20-final-Q4d-h3"
+        ],
+        "title": "Comparing Coefficients",
+        "text": "Given that mean-centering affects only the intercept, are the coefficients for the other variables in the models using X and X\u0303 the same?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

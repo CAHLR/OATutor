@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a9831a6row3b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Pattern",
+        "text": "The pattern is used to extract specific parts of the string. In this case, we want to extract the servings and the course type.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9831a6row3b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9831a6row3b-h1"
+        ],
+        "title": "Identifying the Servings",
+        "text": "The servings are enclosed in square brackets, e.g., [24]. We need a pattern that can match any number inside these brackets.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9831a6row3b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9831a6row3b-h1"
+        ],
+        "title": "Identifying the Course Type",
+        "text": "The course type is represented by a single letter (M, S, A, D) following the word 'Course:'. We need a pattern that can match any of these letters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9831a6row3b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "`\\d+`"
+        ],
+        "dependencies": [
+            "a9831a6row3b-h2"
+        ],
+        "title": "Pattern for Servings",
+        "text": "What pattern can we use to match any number inside square brackets?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9831a6row3b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "[MSAD]"
+        ],
+        "dependencies": [
+            "a9831a6row3b-h3"
+        ],
+        "title": "Pattern for Course Type",
+        "text": "What pattern can we use to match a single letter representing the course type?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

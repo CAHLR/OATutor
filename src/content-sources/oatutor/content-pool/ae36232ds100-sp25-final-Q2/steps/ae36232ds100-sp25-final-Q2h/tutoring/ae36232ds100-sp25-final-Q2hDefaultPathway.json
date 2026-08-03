@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ae36232ds100-sp25-final-Q2h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "When the training error increases but the validation error decreases, it suggests a change in the model's complexity. Consider how reducing the number of features might affect the model's ability to generalize.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2h-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2h-h1"
+        ],
+        "title": "Feature Selection Impact",
+        "text": "By selecting only $$10$$ features, the model becomes simpler. A simpler model might not fit the training data as well, leading to increased training error. However, it might generalize better to unseen data, reducing validation error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2h-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2h-h2"
+        ],
+        "title": "Bias-Variance Tradeoff",
+        "text": "The increase in training error and decrease in validation error is indicative of the bias-variance tradeoff. A simpler model has higher bias but lower variance, which can lead to better generalization.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2h-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2h-h3"
+        ],
+        "title": "Conclusion on Model Variance",
+        "text": "Given the changes in training and validation errors, what can we conclude about the model's variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

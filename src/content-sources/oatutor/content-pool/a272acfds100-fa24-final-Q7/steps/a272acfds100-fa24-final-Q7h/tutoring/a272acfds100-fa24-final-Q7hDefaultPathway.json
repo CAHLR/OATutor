@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a272acfds100-fa24-final-Q7h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the S Matrix",
+        "text": "The matrix S contains the singular values of the dataset. These values are crucial for determining the variance captured by each principal component.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa24-final-Q7h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-fa24-final-Q7h-h1"
+        ],
+        "title": "Variance and Singular Values",
+        "text": "The singular values in the S matrix represent the square roots of the eigenvalues of the covariance matrix. The variance captured by each principal component is proportional to the square of these singular values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa24-final-Q7h-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-fa24-final-Q7h-h2"
+        ],
+        "title": "Calculating Variance for Each Component",
+        "text": "To find the variance captured by the second principal component, square the second singular value and divide it by the sum of the squares of all singular values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

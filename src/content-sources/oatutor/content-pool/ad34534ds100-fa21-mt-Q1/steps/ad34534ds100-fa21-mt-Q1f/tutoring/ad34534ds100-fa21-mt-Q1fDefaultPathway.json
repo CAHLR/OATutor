@@ -1,0 +1,60 @@
+[
+    {
+        "id": "ad34534ds100-fa21-mt-Q1f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding N-gram Limitations",
+        "text": "Consider how N-grams treat sequences of letters. What happens when you have segments that don't align with the natural structure of the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa21-mt-Q1f-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa21-mt-Q1f-h1"
+        ],
+        "title": "Non-Consecutive Segments",
+        "text": "Think about how N-grams might mistakenly group non-consecutive letters together. How could this affect the interpretation of the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa21-mt-Q1f-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa21-mt-Q1f-h1"
+        ],
+        "title": "Meaningless Segments",
+        "text": "Segments with $$1$$ or $$2$$ letters don't have biological meaning in DNA. How does this impact the usefulness of N-grams?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa21-mt-Q1f-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa21-mt-Q1f-h1"
+        ],
+        "title": "Overlapping Segments",
+        "text": "Consider how overlapping segments might be created by N-grams. What issues could arise from this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa21-mt-Q1f-h5",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa21-mt-Q1f-h1"
+        ],
+        "title": "Wrap-Around Segments",
+        "text": "DNA sequences don't wrap around, but N-grams might treat them as if they do. What problems could this cause?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

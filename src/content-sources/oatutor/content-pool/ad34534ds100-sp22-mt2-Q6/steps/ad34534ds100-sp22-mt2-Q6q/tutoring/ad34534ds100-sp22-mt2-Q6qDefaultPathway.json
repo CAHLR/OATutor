@@ -1,0 +1,60 @@
+[
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6q-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Confidence Intervals",
+        "text": "Confidence intervals provide a range of values that likely contain the true parameter value. A 95% confidence interval means we are 95% confident that the true parameter lies within this range.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6q-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6q-h1"
+        ],
+        "title": "Interpreting Theta Intervals",
+        "text": "The confidence intervals for theta parameters indicate the range of possible values for each parameter. If zero is within the interval, it suggests that the parameter might not have a significant effect.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6q-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6q-h2"
+        ],
+        "title": "$$\\Theta_0$$ Interval",
+        "text": "The confidence interval for $$\\theta_0$$ is $$[44.808$$, $$45.013]$$. Since zero is not within this interval, $$\\theta_0$$ is likely to have a significant effect.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6q-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6q-h2"
+        ],
+        "title": "$$\\Theta_1$$ Interval",
+        "text": "The confidence interval for $$\\theta_1$$ is $$[-0.026$$, $$0.342]$$. Since zero is within this interval, $$\\theta_1$$ might not have a significant effect.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6q-h5",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6q-h2"
+        ],
+        "title": "$$\\Theta_2$$ Interval",
+        "text": "The confidence interval for $$\\theta_2$$ is $$[-0.142$$, $$1.324]$$. Since zero is within this interval, $$\\theta_2$$ might not have a significant effect.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

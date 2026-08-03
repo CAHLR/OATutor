@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a8cec5cds100-sp25-final-Q2e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L1 Regularization",
+        "text": "L1 regularization, also known as Lasso, adds a penalty equal to the absolute value of the magnitude of coefficients. This can lead to some coefficients being exactly zero, effectively selecting a simpler model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2e-h1"
+        ],
+        "title": "Uniqueness of OLS Solution",
+        "text": "The uniqueness of the OLS solution depends on the properties of the design matrix. If the matrix is full rank, the solution is unique. However, with more features than observations, the matrix is not full rank.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2e-h2"
+        ],
+        "title": "Effect of Regularization on Uniqueness",
+        "text": "Regularization can help in obtaining a unique solution by adding constraints to the optimization problem. However, the uniqueness is not guaranteed solely by the presence of regularization.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2e-h3"
+        ],
+        "title": "Analyzing the Given Model",
+        "text": "Consider the number of observations and features. With $$n=30$$ observations and $$29$$ features, the design matrix is not full rank. Does this affect the uniqueness of the solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

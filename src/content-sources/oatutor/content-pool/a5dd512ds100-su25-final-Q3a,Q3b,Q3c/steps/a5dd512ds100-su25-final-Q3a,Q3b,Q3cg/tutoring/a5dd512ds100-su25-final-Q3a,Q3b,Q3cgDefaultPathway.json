@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3cg-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Recall",
+        "text": "Recall is the ratio of true positive predictions to the total actual positives. It measures how well the model identifies positive instances.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3cg-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su25-final-Q3a,Q3b,Q3cg-h1"
+        ],
+        "title": "Identify True Positives",
+        "text": "True positives are instances where the true label is $$1$$ and the prediction is also $$1$$. Count these instances from the test results.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3cg-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su25-final-Q3a,Q3b,Q3cg-h2"
+        ],
+        "title": "Identify Actual Positives",
+        "text": "Actual positives are instances where the true label is $$1$$, regardless of the prediction. Count these instances from the test results.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3cg-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su25-final-Q3a,Q3b,Q3cg-h2"
+        ],
+        "title": "Calculate True Positives",
+        "text": "How many true positives are there in the test results?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3cg-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su25-final-Q3a,Q3b,Q3cg-h3"
+        ],
+        "title": "Calculate Actual Positives",
+        "text": "How many actual positives are there in the test results?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3cg-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2}{3}$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su25-final-Q3a,Q3b,Q3cg-h4"
+        ],
+        "title": "Compute Recall",
+        "text": "Use the formula for recall: true positives divided by actual positives. What is the recall?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

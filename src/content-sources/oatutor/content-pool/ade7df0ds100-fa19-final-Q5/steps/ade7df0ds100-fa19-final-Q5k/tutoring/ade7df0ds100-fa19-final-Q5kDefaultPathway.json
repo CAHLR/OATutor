@@ -1,0 +1,82 @@
+[
+    {
+        "id": "ade7df0ds100-fa19-final-Q5k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Zero-One Loss",
+        "text": "Zero-one loss is a non-differentiable function. What does this imply about its gradient?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-final-Q5k-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-final-Q5k-h1"
+        ],
+        "title": "Gradient Descent and Differentiability",
+        "text": "For gradient descent to work, the function must be differentiable. Is zero-one loss differentiable?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-final-Q5k-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-final-Q5k-h2"
+        ],
+        "title": "Gradient of Zero-One Loss",
+        "text": "What is the gradient of a non-differentiable function like zero-one loss?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-final-Q5k-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa19-final-Q5k-h3"
+        ],
+        "title": "Zero-One Loss Gradient",
+        "text": "Calculate the gradient of zero-one loss.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-final-Q5k-h5",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-final-Q5k-h4"
+        ],
+        "title": "Why Gradient Descent Fails",
+        "text": "If the gradient is always zero, what happens to the updates in gradient descent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-final-Q5k-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The gradient is always $$0$$ so gradient descent never moves."
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa19-final-Q5k-h5"
+        ],
+        "title": "Gradient Descent Updates",
+        "text": "Explain why gradient descent never moves when the gradient is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

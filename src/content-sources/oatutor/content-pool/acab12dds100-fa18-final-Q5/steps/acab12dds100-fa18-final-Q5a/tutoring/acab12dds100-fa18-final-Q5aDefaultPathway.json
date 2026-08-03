@@ -1,0 +1,53 @@
+[
+    {
+        "id": "acab12dds100-fa18-final-Q5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Table",
+        "text": "The table shows bootstrap replicates of the sample data. Each row represents a different bootstrap sample, and the columns represent the values in each sample.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa18-final-Q5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa18-final-Q5a-h1"
+        ],
+        "title": "Row and Column Statistics",
+        "text": "The table provides row means, variances, and medians (rowmeans, rowvars, rowmedians) for each bootstrap sample. Similarly, it provides column means, variances, and medians (colmeans, colvars, colmedians) for each position across all bootstrap samples.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa18-final-Q5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa18-final-Q5a-h2"
+        ],
+        "title": "Sample Mean Calculation",
+        "text": "The sample mean is calculated by taking the average of the observed values: $$\\frac{11+11+92+34+53}{5}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa18-final-Q5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$40.2$$"
+        ],
+        "dependencies": [
+            "acab12dds100-fa18-final-Q5a-h3"
+        ],
+        "title": "Calculate the Sample Mean",
+        "text": "Calculate the sample mean using the formula: $$\\frac{11+11+92+34+53}{5}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

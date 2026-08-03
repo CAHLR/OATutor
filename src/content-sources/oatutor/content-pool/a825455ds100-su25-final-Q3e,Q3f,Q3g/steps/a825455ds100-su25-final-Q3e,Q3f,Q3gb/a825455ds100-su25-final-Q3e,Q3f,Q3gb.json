@@ -1,0 +1,19 @@
+{
+    "id": "a825455ds100-su25-final-Q3e,Q3f,Q3gb",
+    "stepAnswer": [
+        "{1, 2}{3, $$4$$, 5}{6}"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Justin projects a different sampling of points onto the first principal component.\\nProvide the state of the clusters after $$3$$ steps of agglomerative clustering using complete linkage. Use curly braces to denote the clusters. For example, if all points except points $$5$$ and $$6$$ are in one cluster, with $$5$$ and $$6$$ in their own cluster, respond with {1, $$2$$, $$3$$, 4}{5, 6}.\\nNote: The clustering algorithm is run using the first principal component, not the original features.##figure3.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "{1, 2}{3, $$4$$, 5}{6}",
+    "choices": [
+        "{1, 2}{3, $$4$$, 5}{6}",
+        "{1, 2}{3}{4, $$5$$, 6}",
+        "{1, $$2$$, 3}{4, 5}{6}",
+        "{1, 2}{3, 4}{5, 6}",
+        "{1}{2, 3}{4, $$5$$, 6}"
+    ]
+}

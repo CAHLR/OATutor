@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a253306row10p2i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Residuals in OLS",
+        "text": "In an Ordinary Least Squares (OLS) regression, the residuals have specific properties related to the design matrix and the predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row10p2i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row10p2i-h1"
+        ],
+        "title": "Residuals and the Design Matrix",
+        "text": "Consider the relationship between the residuals and the columns of the design matrix. What does it mean for them to be orthogonal?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row10p2i-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row10p2i-h1"
+        ],
+        "title": "Sum of Residuals",
+        "text": "Think about the sum of the residuals in the context of the regression model. What is a common property of this sum?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row10p2i-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "They are orthogonal to the column space of the design matrix (X)."
+        ],
+        "dependencies": [
+            "a253306row10p2i-h2"
+        ],
+        "title": "Orthogonality of Residuals",
+        "text": "The residuals are orthogonal to the column space of the design matrix (X). This means that the dot product of the residuals and any column of X is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "They are orthogonal to the column space of the design matrix (X).",
+            "Their sum is equal to the mean squared error.",
+            "Their sum is equal to zero.",
+            "They are orthogonal to the vector of predictions (hat{Y})."
+        ]
+    }
+]

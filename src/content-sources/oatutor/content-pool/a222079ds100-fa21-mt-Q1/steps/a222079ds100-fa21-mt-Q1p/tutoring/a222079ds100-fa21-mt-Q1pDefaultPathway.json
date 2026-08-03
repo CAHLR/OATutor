@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a222079ds100-fa21-mt-Q1p-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Validation",
+        "text": "Cross-validation is a technique used to assess the performance of a model by partitioning the original sample into a training set to train the model, and a test set to evaluate it. It helps in understanding how the model will generalize to an independent dataset.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1p-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa21-mt-Q1p-h1"
+        ],
+        "title": "Bias and Variance in Cross-Validation",
+        "text": "Increasing the number of folds (k) in k-fold cross-validation generally reduces the bias of the model because it allows the model to be trained on a larger portion of the dataset each time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1p-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa21-mt-Q1p-h1"
+        ],
+        "title": "Computational Intensity of Cross-Validation",
+        "text": "Cross-validation is typically more computationally intensive than regular validation because it involves training and validating the model multiple times (once for each fold).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1p-h4",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa21-mt-Q1p-h1"
+        ],
+        "title": "Using the Entire Dataset",
+        "text": "One of the advantages of cross-validation is that it allows the model to be trained and validated on different subsets of the data, ensuring that every data point is used for both training and validation at some point.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1p-h5",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa21-mt-Q1p-h1"
+        ],
+        "title": "Cross-Validation in Production",
+        "text": "In production, cross-validation is not typically used because it involves multiple training processes, which can be computationally expensive and time-consuming. Instead, a single model is usually trained on the entire dataset.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

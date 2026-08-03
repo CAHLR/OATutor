@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a222079ds100-su21-final-Q8c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding transforms categorical variables into a set of binary variables. For the 'sex' column, this means creating two new columns: $$'sex_{male'}$$ and $$'sex_{female'}$$. Each row will have a $$1$$ in one of these columns and a $$0$$ in the other.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su21-final-Q8c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su21-final-Q8c-h1"
+        ],
+        "title": "Properties of the Design Matrix",
+        "text": "The design matrix \\( \\Phi_1 \\) will have two columns corresponding to $$'sex_{male'}$$ and $$'sex_{female'}$$. Each row will have a $$1$$ in one column and a $$0$$ in the other, ensuring that the sum of each row is $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su21-final-Q8c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su21-final-Q8c-h2"
+        ],
+        "title": "Invertibility of a Matrix",
+        "text": "A matrix is invertible if it is square and has full rank. For \\( \\Phi_1**T \\Phi_1 \\) to be invertible, \\( \\Phi_1 \\) must have full column rank.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su21-final-Q8c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes, \\( \\Phi_1 \\) has full column rank because the columns are linearly independent."
+        ],
+        "dependencies": [
+            "a222079ds100-su21-final-Q8c-h3"
+        ],
+        "title": "Checking Full Column Rank",
+        "text": "Does the design matrix \\( \\Phi_1 \\) have full column rank? Consider the columns $$'sex_{male'}$$ and $$'sex_{female'}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "No",
+            "Yes",
+            "Yes, \\( \\Phi_1 \\) has full column rank because the columns are linearly independent."
+        ]
+    },
+    {
+        "id": "a222079ds100-su21-final-Q8c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "\\( \\Phi_1**T \\Phi_1 \\) is invertible because \\( \\Phi_1 \\) has full column rank."
+        ],
+        "dependencies": [
+            "a222079ds100-su21-final-Q8c-h4"
+        ],
+        "title": "Conclusion on Invertibility",
+        "text": "Given that \\( \\Phi_1 \\) has full column rank, what can we conclude about \\( \\Phi_1**T \\Phi_1 \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Invertible",
+            "Not Invertible",
+            "\\( \\Phi_1**T \\Phi_1 \\) is invertible because \\( \\Phi_1 \\) has full column rank."
+        ]
+    }
+]

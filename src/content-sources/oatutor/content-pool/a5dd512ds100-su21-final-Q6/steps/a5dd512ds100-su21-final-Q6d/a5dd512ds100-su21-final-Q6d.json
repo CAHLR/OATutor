@@ -1,0 +1,19 @@
+{
+    "id": "a5dd512ds100-su21-final-Q6d",
+    "stepAnswer": [
+        "$$1$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Suriya and Meghna decide to use logistic regression with no intercept term, where the predicted probabilities are rounded to the nearest whole number. Suriya decides to try L0 regularization for their logistic regression model. Unlike L1 and L2 regularization, L0 regularization does not add a term to the loss function. Instead, it specifies a constraint that only some $$k$$ elements in our parameter $$\\theta$$ for the model can be non-zero.\\nHint: $$\\sigma(0)=.5$$\\nSuppose he applies L0 regularization where $$k=1$$ and find the optimal $$\\theta$$ for $$X'$$ and $$y$$ using logistic regression. How many points does he misclassify?",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "$$1$$",
+    "choices": [
+        "$$0$$",
+        "$$1$$",
+        "$$2$$",
+        "$$3$$",
+        "$$5$$"
+    ]
+}

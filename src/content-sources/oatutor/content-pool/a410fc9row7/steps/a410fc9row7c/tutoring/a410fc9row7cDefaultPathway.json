@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a410fc9row7c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding OLS",
+        "text": "In an Ordinary Least Squares (OLS) model, the goal is to minimize the sum of the squared differences between the observed values and the values predicted by the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row7c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row7c-h1"
+        ],
+        "title": "Residuals in OLS",
+        "text": "The residual vector, often denoted as $e$, represents the difference between the observed values and the predicted values in the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row7c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row7c-h2"
+        ],
+        "title": "Orthogonality in OLS",
+        "text": "In the context of OLS, orthogonality refers to the residual vector being perpendicular to the span of the design matrix $X$. This is a key property of the OLS solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row7c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The residual vector e is orthogonal to the span of X."
+        ],
+        "dependencies": [
+            "a410fc9row7c-h3"
+        ],
+        "title": "Identifying True Statements",
+        "text": "Which statement about the residual vector $e$ is true in the context of OLS?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Y and hat{theta} have the same dimensionality.",
+            "The residual vector e is orthogonal to the span of X.",
+            "The prediction vector hat{Y} is orthogonal to the span of X.",
+            "hat{Y} has a shape of $$n$$ by $$1$$"
+        ]
+    }
+]

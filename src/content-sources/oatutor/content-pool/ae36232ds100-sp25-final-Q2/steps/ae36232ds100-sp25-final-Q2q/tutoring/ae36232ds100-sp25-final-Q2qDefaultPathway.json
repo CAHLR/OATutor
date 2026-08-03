@@ -1,0 +1,58 @@
+[
+    {
+        "id": "ae36232ds100-sp25-final-Q2q-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "Gradient Descent (GD) is an optimization algorithm used to minimize a function by iteratively moving towards the steepest descent direction. The learning rate determines the size of the steps taken towards the minimum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2q-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2q-h1"
+        ],
+        "title": "Effect of Increasing Learning Rate",
+        "text": "Increasing the learning rate can lead to larger steps in the parameter space. This can affect the convergence behavior of the algorithm.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2q-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2q-h2"
+        ],
+        "title": "Possible Outcomes of Increasing Learning Rate",
+        "text": "Consider what happens if the learning rate is too high. The algorithm might overshoot the minimum, leading to divergence or oscillation around the minimum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2q-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The path might overshoot or oscillate around the minimum."
+        ],
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2q-h3"
+        ],
+        "title": "Analyzing the Plot",
+        "text": "Look at the plot. If the learning rate increases, what might happen to the path of the GD?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "TRUE",
+            "The path might overshoot or oscillate around the minimum."
+        ]
+    }
+]

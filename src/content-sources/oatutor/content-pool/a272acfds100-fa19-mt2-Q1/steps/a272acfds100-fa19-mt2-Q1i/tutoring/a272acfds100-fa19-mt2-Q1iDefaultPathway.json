@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a272acfds100-fa19-mt2-Q1i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Data",
+        "text": "The table shows the time spent by a visitor at each exhibit. Each column represents a different exhibit.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa19-mt2-Q1i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-fa19-mt2-Q1i-h1"
+        ],
+        "title": "Identifying the Exhibits",
+        "text": "The exhibits include animals like lion, tiger, cheetah, alligator, iguana, and turtle, as well as activities like train and playground.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa19-mt2-Q1i-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-fa19-mt2-Q1i-h2"
+        ],
+        "title": "Analyzing the Data",
+        "text": "Consider how the data might be used to perform PCA. Each row represents a visitor's time spent at each exhibit.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa19-mt2-Q1i-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a272acfds100-fa19-mt2-Q1i-h3"
+        ],
+        "title": "Expression for P",
+        "text": "Which of the following expressions are equal to P?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

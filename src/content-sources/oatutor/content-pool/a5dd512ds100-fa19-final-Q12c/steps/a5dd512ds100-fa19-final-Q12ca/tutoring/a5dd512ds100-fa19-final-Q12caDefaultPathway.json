@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a5dd512ds100-fa19-final-Q12ca-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Separability",
+        "text": "When a dataset is linearly separable, it means that there exists a straight line (or hyperplane in higher dimensions) that can perfectly separate the classes in the dataset. This is a key concept in understanding why a logistic regression model might achieve 100% accuracy.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q12ca-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q12ca-h1"
+        ],
+        "title": "Logistic Regression and Linear Separability",
+        "text": "Logistic regression is a linear model, which means it tries to find a linear boundary to separate different classes. If the data is linearly separable, logistic regression can achieve perfect accuracy.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q12ca-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Always True"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q12ca-h2"
+        ],
+        "title": "Analyzing Training Accuracy",
+        "text": "Consider a scenario where a logistic regression model achieves 100% training accuracy. What does this imply about the nature of the dataset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Always True",
+            "Sometimes True",
+            "Never True"
+        ]
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a5dd512ds100-su21-final-Q7d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Classifier",
+        "text": "Look at how the decision boundary separates the orange and blue points. Does it correctly classify all the points?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q7d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q7d-h1"
+        ],
+        "title": "Analyzing the Decision Boundary",
+        "text": "Check if there are any points that are misclassified by the boundary. Are there any blue points in the orange region or vice versa?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q7d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes, there are misclassified points."
+        ],
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q7d-h2"
+        ],
+        "title": "Checking Misclassifications",
+        "text": "Count the number of misclassified points. Are there any points that are not in their respective colored regions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "No",
+            "Yes",
+            "Yes, there are misclassified points."
+        ]
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q7d-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q7d-h3"
+        ],
+        "title": "Conclusion on Accuracy",
+        "text": "Based on the misclassifications, can we say the classifier has perfect accuracy?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

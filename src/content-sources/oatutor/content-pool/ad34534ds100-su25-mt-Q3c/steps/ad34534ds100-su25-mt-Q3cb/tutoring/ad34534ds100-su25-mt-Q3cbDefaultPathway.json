@@ -1,0 +1,87 @@
+[
+    {
+        "id": "ad34534ds100-su25-mt-Q3cb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatterplot",
+        "text": "The scatterplot shows a non-linear relationship between the amount of antibiotic and the number of colonies. The relationship appears to be decreasing as the amount of antibiotic increases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su25-mt-Q3cb-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-su25-mt-Q3cb-h1"
+        ],
+        "title": "Considering Transformations",
+        "text": "To linearize a non-linear relationship, consider transformations such as logarithmic, square root, or reciprocal transformations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su25-mt-Q3cb-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ad34534ds100-su25-mt-Q3cb-h2"
+        ],
+        "title": "Logarithmic Transformation",
+        "text": "Would applying a logarithmic transformation to the Colonies (Y) help in linearizing the relationship?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "ad34534ds100-su25-mt-Q3cb-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ad34534ds100-su25-mt-Q3cb-h2"
+        ],
+        "title": "Reciprocal Transformation",
+        "text": "Would applying a reciprocal transformation to the Colonies (Y) help in linearizing the relationship?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "ad34534ds100-su25-mt-Q3cb-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ad34534ds100-su25-mt-Q3cb-h2"
+        ],
+        "title": "Square Root Transformation",
+        "text": "Would applying a square root transformation to the Colonies (Y) help in linearizing the relationship?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

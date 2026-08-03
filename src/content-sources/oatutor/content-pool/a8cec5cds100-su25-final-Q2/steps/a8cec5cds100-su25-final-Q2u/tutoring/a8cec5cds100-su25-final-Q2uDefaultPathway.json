@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a8cec5cds100-su25-final-Q2u-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "Gradient descent is an optimization algorithm used to minimize the loss function by iteratively moving towards the steepest descent direction. It updates the model parameters in the opposite direction of the gradient of the loss function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-su25-final-Q2u-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-su25-final-Q2u-h1"
+        ],
+        "title": "Stochastic Gradient Descent (SGD)",
+        "text": "SGD is a variant of gradient descent where the gradient is estimated using a single data point or a small batch of data points, rather than the entire dataset. This introduces noise into the gradient estimation, which can help escape local minima.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-su25-final-Q2u-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-su25-final-Q2u-h2"
+        ],
+        "title": "True Gradient vs. Estimated Gradient",
+        "text": "The true gradient is calculated using the entire dataset, while the estimated gradient in SGD is calculated using a subset of the data. Over one epoch, the average of the estimated gradients can approximate the true gradient, but it is not guaranteed to be equal to the true gradient at the initial parameter values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-su25-final-Q2u-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a8cec5cds100-su25-final-Q2u-h3"
+        ],
+        "title": "Analyzing the Statement",
+        "text": "Consider the statement: 'The average of the estimated gradients computed over one epoch of stochastic gradient descent is always equal to the true gradient of the loss surface at the initial values of the model parameters.' Is this statement true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

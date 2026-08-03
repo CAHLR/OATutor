@@ -1,0 +1,111 @@
+[
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Confidence Intervals",
+        "text": "Confidence intervals provide a range of values within which we expect the true parameter to lie with a certain level of confidence. In this case, we have 95% confidence intervals for the parameters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6n-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6n-h1"
+        ],
+        "title": "Interpreting Confidence Intervals",
+        "text": "If a confidence interval for a parameter includes zero, it suggests that the parameter might not be significantly different from zero. This means the corresponding variable might not have a significant effect.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6n-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6n-h2"
+        ],
+        "title": "Analyzing the Given Intervals",
+        "text": "Look at the confidence intervals for each parameter: \\(\\theta_0\\), \\(\\theta_1\\), and \\(\\theta_2\\). Determine if any of these intervals include zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6n-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6n-h3"
+        ],
+        "title": "Checking \\(\\theta_0\\)",
+        "text": "Does the confidence interval for \\(\\theta_0\\) include zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6n-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6n-h3"
+        ],
+        "title": "Checking \\(\\theta_1\\)",
+        "text": "Does the confidence interval for \\(\\theta_1\\) include zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6n-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6n-h3"
+        ],
+        "title": "Checking \\(\\theta_2\\)",
+        "text": "Does the confidence interval for \\(\\theta_2\\) include zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6n-h7",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6n-h5"
+        ],
+        "title": "Conclusion from Confidence Intervals",
+        "text": "Based on the confidence intervals, \\(\\theta_1\\) might not be significantly different from zero, suggesting that the corresponding variable might not have a significant effect.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

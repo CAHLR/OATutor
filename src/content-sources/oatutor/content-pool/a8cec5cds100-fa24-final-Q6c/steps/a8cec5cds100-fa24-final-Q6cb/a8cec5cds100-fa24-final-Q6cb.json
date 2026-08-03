@@ -1,0 +1,15 @@
+{
+    "id": "a8cec5cds100-fa24-final-Q6cb",
+    "stepAnswer": [
+        "FALSE"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Jessica designed the following loss function to optimize her logistic regression model: $$\\mathcal{L}(\\theta)=-[y\\log(p)+(1-y)\\log((1-p)**{3})]$$ where $$p$$ is the probability that the corresponding datapoint belongs to class $$1$$.",
+    "stepBody": "Evaluate the following statements about $$\\mathcal{L}$$ and cross-entropy loss.\\n\\nWhenever a logistic regression model classifies a datapoint into class $$0$$, the loss component $$y\\log(p)$$ is equal to $$0$$.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "TRUE",
+        "FALSE"
+    ]
+}

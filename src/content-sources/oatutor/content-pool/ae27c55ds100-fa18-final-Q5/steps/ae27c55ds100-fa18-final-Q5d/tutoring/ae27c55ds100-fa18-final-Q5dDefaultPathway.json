@@ -1,0 +1,58 @@
+[
+    {
+        "id": "ae27c55ds100-fa18-final-Q5d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrap Replicates",
+        "text": "Bootstrap replicates are samples drawn with replacement from the original data. Each replicate is used to calculate statistics like mean, variance, and median.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa18-final-Q5d-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa18-final-Q5d-h1"
+        ],
+        "title": "Effect of Increasing Sample Size",
+        "text": "Increasing the size of each bootstrap replicate generally leads to a decrease in the variance of the sample mean. This is because larger samples tend to provide more stable estimates of the population parameters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa18-final-Q5d-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa18-final-Q5d-h2"
+        ],
+        "title": "Analyzing the Table",
+        "text": "Look at the row and column statistics provided in the table. Notice how the row means and variances are calculated from the replicates. Consider how these might change if the sample size increases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa18-final-Q5d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The variance of the sample mean decreases."
+        ],
+        "dependencies": [
+            "ae27c55ds100-fa18-final-Q5d-h3"
+        ],
+        "title": "Impact of Larger Sample Size",
+        "text": "If you increase the size of each bootstrap replicate, what happens to the variance of the sample mean?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "TRUE",
+            "The variance of the sample mean decreases."
+        ]
+    }
+]

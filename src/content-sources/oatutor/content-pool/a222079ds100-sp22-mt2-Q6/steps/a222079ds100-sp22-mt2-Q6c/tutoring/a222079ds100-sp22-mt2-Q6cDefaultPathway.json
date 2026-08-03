@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a222079ds100-sp22-mt2-Q6c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Design Matrix",
+        "text": "The design matrix X is constructed using boolean featurization. Each column represents a food item, and each row represents whether that food was eaten (1) or not (0) for a particular lunch.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp22-mt2-Q6c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-sp22-mt2-Q6c-h1"
+        ],
+        "title": "Interpreting the Matrix",
+        "text": "In the design matrix, a row like (1, $$0$$, $$1$$, 0) indicates that the individual ate Rice and Orange Juice but not Pizza or Sushi.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp22-mt2-Q6c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a222079ds100-sp22-mt2-Q6c-h2"
+        ],
+        "title": "Analyzing the Statement",
+        "text": "Given the boolean featurization, does the sum of each feature vector represent the number of servings eaten of each food?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

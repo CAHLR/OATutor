@@ -1,0 +1,111 @@
+[
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding N-gram Limitations",
+        "text": "N-grams are useful for capturing sequences, but they can also capture unintended patterns. Consider how DNA sequences are structured and how N-grams might misinterpret these structures.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1i-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa21-mt-Q1i-h1"
+        ],
+        "title": "Non-Consecutive Segments",
+        "text": "Think about how N-grams might mistakenly identify non-consecutive segments as meaningful sequences. How might this affect the interpretation of DNA sequences?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1i-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa21-mt-Q1i-h1"
+        ],
+        "title": "Meaningless Segments",
+        "text": "Consider the significance of segments with fewer than $$3$$ letters in DNA. Why might capturing these as 'words' be problematic?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1i-h4",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa21-mt-Q1i-h1"
+        ],
+        "title": "Overlapping Segments",
+        "text": "N-grams can capture overlapping sequences. How might this lead to incorrect interpretations of DNA sequences?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1i-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa21-mt-Q1i-h2"
+        ],
+        "title": "Evaluating N-gram Strategy",
+        "text": "Evaluate the statement: 'Segments of non-consecutive letters would be included, meaning ATGCA could suggest the word AGA.' Is this a valid concern for using N-grams in DNA sequences?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1i-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa21-mt-Q1i-h3"
+        ],
+        "title": "Assessing Meaningless Segments",
+        "text": "Evaluate the statement: 'Segments with $$1$$ or $$2$$ letters have no meaning, which N-gram would capture as \"words\".' Is this a valid concern for using N-grams in DNA sequences?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1i-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa21-mt-Q1i-h4"
+        ],
+        "title": "Understanding Overlapping Segments",
+        "text": "Evaluate the statement: 'Overlapping segments would be included, meaning ATGCA is broken up into $$3$$ overlapping words.' Is this a valid concern for using N-grams in DNA sequences?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

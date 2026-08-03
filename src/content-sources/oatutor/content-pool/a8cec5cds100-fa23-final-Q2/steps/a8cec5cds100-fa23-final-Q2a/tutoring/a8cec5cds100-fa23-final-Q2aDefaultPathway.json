@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a8cec5cds100-fa23-final-Q2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model given is: \\( \\hat{y}=2\\theta_0+\\theta_0**{4}\\theta_1x-e**{2\\theta_1}x**{2} \\). This is a non-linear model with respect to \\( $$\\theta_0$$ \\) and \\( $$\\theta_1$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-final-Q2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa23-final-Q2a-h1"
+        ],
+        "title": "Mean Squared Error (MSE)",
+        "text": "The Mean Squared Error (MSE) is defined as \\( L=\\frac{1}{n}\\sum_{i=1}**{n}(y_i-\\hat{y_i})**2 \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-final-Q2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa23-final-Q2a-h2"
+        ],
+        "title": "Gradient Vector",
+        "text": "The gradient vector is the vector of partial derivatives of the loss function \\( L \\) with respect to the parameters \\( $$\\theta_0$$ \\) and \\( $$\\theta_1$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-final-Q2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "\\frac{1}{n}\\sum_{i=1}**{n}2(y_i-2\\theta_0-\\theta_0**{4}\\theta_1x_i+e**{2\\theta_1}x_i**{2})(-2-4\\theta_0**{3}\\theta_1x_i)"
+        ],
+        "dependencies": [
+            "a8cec5cds100-fa23-final-Q2a-h3"
+        ],
+        "title": "Partial Derivative with respect to \\( $$\\theta_0$$ \\)",
+        "text": "Find the partial derivative of \\( L \\) with respect to \\( $$\\theta_0$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-final-Q2a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "\\frac{1}{n}\\sum_{i=1}**{n}2(y_i-2\\theta_0-\\theta_0**{4}\\theta_1x_i+e**{2\\theta_1}x_i**{2})(-\\theta_0**{4}x_i+2e**{2\\theta_1}x_i**{2})"
+        ],
+        "dependencies": [
+            "a8cec5cds100-fa23-final-Q2a-h4"
+        ],
+        "title": "Partial Derivative with respect to \\( $$\\theta_1$$ \\)",
+        "text": "Find the partial derivative of \\( L \\) with respect to \\( $$\\theta_1$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-final-Q2a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa23-final-Q2a-h5"
+        ],
+        "title": "Combine the Partial Derivatives",
+        "text": "Combine the partial derivatives to form the gradient vector: \\( \\frac{\\partial{L}}{\\partial{\\theta}}=(\\frac{1}{n}\\sum_{i=1}**{n}2(y_i-2\\theta_0-\\theta_0**{4}\\theta_1x_i+e**{2\\theta_1}x_i**{2})(-2-4\\theta_0**{3}\\theta_1x_i),\\frac{1}{n}\\sum_{i=1}**{n}2(y_i-2\\theta_0-\\theta_0**{4}\\theta_1x_i+e**{2\\theta_1}x_i**{2})(-\\theta_0**{4}x_i+2e**{2\\theta_1}x_i**{2})) \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

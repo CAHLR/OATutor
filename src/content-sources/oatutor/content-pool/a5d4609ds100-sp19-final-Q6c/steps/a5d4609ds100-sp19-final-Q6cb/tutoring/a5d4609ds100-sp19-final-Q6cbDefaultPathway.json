@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a5d4609ds100-sp19-final-Q6cb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Singular Values",
+        "text": "Singular values are the square roots of the eigenvalues of the matrix $X**TX$. They are always non-negative.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp19-final-Q6cb-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp19-final-Q6cb-h1"
+        ],
+        "title": "Centered Matrix",
+        "text": "The matrix $X$ is centered, meaning each column has a mean of zero. This affects the singular values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp19-final-Q6cb-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp19-final-Q6cb-h2"
+        ],
+        "title": "Rank of the Matrix",
+        "text": "Consider the rank of the matrix $X$. The rank determines the number of non-zero singular values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp19-final-Q6cb-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp19-final-Q6cb-h3"
+        ],
+        "title": "Implication of Rank on Singular Values",
+        "text": "If the rank of the matrix is less than the number of columns, some singular values will be zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

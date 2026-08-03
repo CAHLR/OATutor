@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a8cec5cds100-fa24-final-Q5a,Q5ba-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Stochastic Gradient Descent",
+        "text": "Stochastic Gradient Descent (SGD) updates the model parameters more frequently than Batch Gradient Descent. This frequent update can help in escaping local minima and finding a better global minimum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa24-final-Q5a,Q5ba-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa24-final-Q5a,Q5ba-h1"
+        ],
+        "title": "Advantages of SGD",
+        "text": "SGD can be more efficient than Batch Gradient Descent because it processes one training example per iteration, which can lead to faster convergence.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa24-final-Q5a,Q5ba-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a8cec5cds100-fa24-final-Q5a,Q5ba-h2"
+        ],
+        "title": "Comparing Loss Functions",
+        "text": "Consider how the loss function behaves when using SGD versus Batch Gradient Descent. Which one is more likely to find a lower loss?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

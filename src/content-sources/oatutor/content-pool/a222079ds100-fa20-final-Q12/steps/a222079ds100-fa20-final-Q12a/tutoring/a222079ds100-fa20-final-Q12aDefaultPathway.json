@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a222079ds100-fa20-final-Q12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Correlation",
+        "text": "Correlation measures the strength and direction of a linear relationship between two variables. If two variables are uncorrelated, their correlation coefficient is $$0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa20-final-Q12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa20-final-Q12a-h1"
+        ],
+        "title": "Relationship Between Height and BMI",
+        "text": "BMI is calculated using height and weight. If height and weight are uncorrelated, consider how BMI, which depends on both, might relate to height.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa20-final-Q12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa20-final-Q12a-h2"
+        ],
+        "title": "Effect of Height on BMI",
+        "text": "Since BMI is inversely proportional to the square of height, an increase in height with constant weight leads to a decrease in BMI.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

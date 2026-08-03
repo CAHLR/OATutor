@@ -1,0 +1,18 @@
+{
+    "id": "ae36232ds100-sp25-final-Q2j",
+    "stepAnswer": [
+        "$$g(\\theta)=\\sum_{i=1}**{p}abs(\\theta_i)$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "To reduce model complexity, the owner computes the optimal $$\\theta$$ by minimizing the following regularized loss function:\\n$$L(\\theta)=(||Y-X{\\theta}||_2)**{2}+\\lambda{g}(\\theta)$$\\nwhere $$g{\\left(\\theta\\right)}$$ is a non-constant function of $$\\theta$$ and $$\\lambda$$ is at least $$0.$$ If the magnitude of any $$\\theta_i$$ increases, $$g{\\left(\\theta\\right)}$$ will also increase.\\nNote: $$p$$ is the total number of parameters in $$\\theta.$$\\nWhich $$g{\\left(\\theta\\right)}$$ is best for feature selection (i.e., eliminating irrelevant features and keeping useful ones)?",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "$$g(\\theta)=\\sum_{i=1}**{p}\\log(\\theta_i)$$",
+        "$$g(\\theta)=\\sum_{i=1}**{p}\\theta_i$$",
+        "$$g(\\theta)=\\sum_{i=1}**{p}abs(\\theta_i)$$",
+        "$$g(\\theta)=\\sum_{i=1}**{p}\\theta_i**{2}$$",
+        "$$g(\\theta)=\\max_i(\\theta_i)$$"
+    ]
+}

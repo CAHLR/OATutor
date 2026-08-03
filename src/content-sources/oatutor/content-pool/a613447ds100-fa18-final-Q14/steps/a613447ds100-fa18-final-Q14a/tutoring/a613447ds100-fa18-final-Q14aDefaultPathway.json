@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a613447ds100-fa18-final-Q14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plot",
+        "text": "The plot shows a decreasing trend as the value of $$d$$ increases. This suggests that the y-axis could represent a metric that decreases with more data or features.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa18-final-Q14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa18-final-Q14a-h1"
+        ],
+        "title": "Possible Metrics",
+        "text": "Consider metrics that typically decrease as the model complexity or the amount of data increases. What are some common metrics in machine learning that behave this way?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa18-final-Q14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa18-final-Q14a-h2"
+        ],
+        "title": "Training Error",
+        "text": "Training error is a metric that often decreases as the model complexity increases, because the model can fit the training data better.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa18-final-Q14a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Training Error"
+        ],
+        "dependencies": [
+            "a613447ds100-fa18-final-Q14a-h3"
+        ],
+        "title": "Identify the Metric",
+        "text": "Based on the decreasing trend in the plot, which metric could the y-axis represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Training Error",
+            "Validation Error",
+            "Test Error",
+            "Bias"
+        ]
+    }
+]

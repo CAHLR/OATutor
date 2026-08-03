@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a222079ds100-su20-final-Q4g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Equations",
+        "text": "The equations represent the optimization problems for finding the coefficients in linear regression. The first equation uses the original design matrix, while the second uses the mean-centered design matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-final-Q4g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su20-final-Q4g-h1"
+        ],
+        "title": "Mean of Residuals",
+        "text": "In ordinary least squares regression, the mean of the residuals is always zero when an intercept is included in the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-final-Q4g-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su20-final-Q4g-h2"
+        ],
+        "title": "Effect of Centering",
+        "text": "Centering the data does not affect the mean of the residuals. It only affects the interpretation of the intercept term.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-final-Q4g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a222079ds100-su20-final-Q4g-h3"
+        ],
+        "title": "Conclusion",
+        "text": "Based on the properties of ordinary least squares regression, what can we conclude about the mean of the residuals?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

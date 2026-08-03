@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a253306row10e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MAE and MSE",
+        "text": "Mean Absolute Error (MAE) and Mean Squared Error (MSE) are both measures of prediction accuracy. However, they have different properties and implications for model parameters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row10e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row10e-h1"
+        ],
+        "title": "Unique Solutions in Linear Regression",
+        "text": "In linear regression, the uniqueness of the solution depends on the properties of the data and the error metric used. Consider how MAE and MSE might affect this.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row10e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No, MAE does not always lead to a unique solution."
+        ],
+        "dependencies": [
+            "a253306row10e-h2"
+        ],
+        "title": "Properties of MAE",
+        "text": "Does MAE always lead to a unique solution for the parameters in linear regression?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "No",
+            "No, MAE does not always lead to a unique solution.",
+            "Yes"
+        ]
+    },
+    {
+        "id": "a253306row10e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes, MSE typically leads to a unique solution when the design matrix is full rank."
+        ],
+        "dependencies": [
+            "a253306row10e-h3"
+        ],
+        "title": "Properties of MSE",
+        "text": "Does MSE always lead to a unique solution for the parameters in linear regression?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "No",
+            "Yes",
+            "Yes, MSE typically leads to a unique solution when the design matrix is full rank."
+        ]
+    },
+    {
+        "id": "a253306row10e-h5",
+        "type": "hint",
+        "dependencies": [
+            "a253306row10e-h4"
+        ],
+        "title": "Conclusion on Uniqueness",
+        "text": "Given the properties of MAE and MSE, can we conclude that there is never a unique solution to the optimal parameters that minimize MAE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

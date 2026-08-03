@@ -1,0 +1,69 @@
+[
+    {
+        "id": "ae36232ds100-su25-final-Q2m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting in models by adding a penalty term to the loss function. The two most common types are L1 (Lasso) and L2 (Ridge) regularization.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2m-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2m-h1"
+        ],
+        "title": "L1 vs L2 Regularization",
+        "text": "L1 regularization adds the absolute value of the coefficients as a penalty term, while L2 regularization adds the square of the coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2m-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2m-h2"
+        ],
+        "title": "Effect of Lambda on Regularization",
+        "text": "The lambda (\u03bb) hyperparameter controls the strength of the penalty term in regularization. A higher \u03bb increases the penalty, leading to simpler models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2m-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2m-h3"
+        ],
+        "title": "Optimal Lambda for L1 and L2",
+        "text": "The optimal \u03bb for L1 and L2 regularization may differ because they penalize the coefficients differently. L1 tends to produce sparse models, while L2 tends to shrink coefficients evenly.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2m-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2m-h4"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Given the differences in how L1 and L2 regularization work, is it true that the optimal \u03bb is always the same for both?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

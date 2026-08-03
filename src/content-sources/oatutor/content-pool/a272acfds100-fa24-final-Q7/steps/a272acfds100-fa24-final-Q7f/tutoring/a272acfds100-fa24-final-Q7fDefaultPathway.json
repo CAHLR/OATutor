@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a272acfds100-fa24-final-Q7f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD",
+        "text": "The singular value decomposition (SVD) of a matrix X is given by X=U*S*V**T. Here, U and V are orthogonal matrices, and S is a diagonal matrix with non-negative real numbers on the diagonal.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa24-final-Q7f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-fa24-final-Q7f-h1"
+        ],
+        "title": "Properties of V",
+        "text": "The columns of V are the right singular vectors of X. They are orthogonal and represent the directions of maximum variance in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa24-final-Q7f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-fa24-final-Q7f-h2"
+        ],
+        "title": "Direction of Maximum Variance",
+        "text": "The first column of V corresponds to the direction of maximum variance in the data. This is because the singular values in S are sorted in descending order, and the first singular value corresponds to the largest variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

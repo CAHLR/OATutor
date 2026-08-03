@@ -1,0 +1,41 @@
+[
+    {
+        "id": "acab12dds100-fa25-mt2-Q7b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Coefficient",
+        "text": "The coefficient $$\\theta_1$$ represents the change in the dependent variable (GPA) for a one-unit change in the independent variable $$hours_{sleep}$$, holding other variables constant.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa25-mt2-Q7b-h2",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa25-mt2-Q7b-h1"
+        ],
+        "title": "Focus on the Variable",
+        "text": "Consider what happens to the GPA when the hours of sleep increases by one hour, assuming the CDSS major status does not change.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa25-mt2-Q7b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\theta_1$$ is the predicted increase in GPA for a student who sleeps one additional hour per night relative to a student who sleeps one fewer hour per night holding CDSS major status constant."
+        ],
+        "dependencies": [
+            "acab12dds100-fa25-mt2-Q7b-h2"
+        ],
+        "title": "Interpreting $$\\theta_1$$",
+        "text": "What does $$\\theta_1=0.23$$ imply about the relationship between hours of sleep and GPA?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

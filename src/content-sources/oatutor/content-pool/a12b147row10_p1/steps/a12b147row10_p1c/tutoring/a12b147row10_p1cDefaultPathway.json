@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a12b147row10_p1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Probability Sampling",
+        "text": "In probability sampling, each member of the population has a known, non-zero chance of being selected. Does the method described ensure this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a12b147row10_p1c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Systematic Sampling",
+        "text": "Systematic sampling involves selecting every nth member from a list or sequence. Is this method being used here?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a12b147row10_p1c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a12b147row10_p1c-h1"
+        ],
+        "title": "Probability of Selection",
+        "text": "Does every student have the same probability of being selected if only every fifth student is chosen?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a12b147row10_p1c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a12b147row10_p1c-h2"
+        ],
+        "title": "Characteristics of Systematic Sampling",
+        "text": "In systematic sampling, is it necessary for the starting point to be random?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

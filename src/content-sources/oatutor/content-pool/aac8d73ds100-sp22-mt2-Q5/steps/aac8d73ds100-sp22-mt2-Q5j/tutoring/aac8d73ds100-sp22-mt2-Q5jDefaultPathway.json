@@ -1,0 +1,60 @@
+[
+    {
+        "id": "aac8d73ds100-sp22-mt2-Q5j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Exponential Regularization",
+        "text": "Exponential regularization tends to increase the penalty on larger parameter values as lambda increases. This can lead to increased bias in the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp22-mt2-Q5j-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-sp22-mt2-Q5j-h1"
+        ],
+        "title": "Effect of Lambda on Bias",
+        "text": "As lambda increases, the regularization term becomes more dominant, which can cause the model to underfit the data, leading to increased bias.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp22-mt2-Q5j-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-sp22-mt2-Q5j-h2"
+        ],
+        "title": "Identifying the Correct Plot",
+        "text": "Look for a plot where the bias increases as lambda increases. The increase should be steep and unbounded, reflecting the exponential nature of the regularization.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp22-mt2-Q5j-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "B: bias increases as lambda increases, growing steeply and unboundedly"
+        ],
+        "dependencies": [
+            "aac8d73ds100-sp22-mt2-Q5j-h3"
+        ],
+        "title": "Choosing the Correct Plot",
+        "text": "Which plot shows bias increasing steeply and unboundedly as lambda increases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A: bias decreases then levels off as lambda increases",
+            "B: bias increases as lambda increases, growing steeply and unboundedly",
+            "C: bias decreases monotonically as lambda increases",
+            "D: bias increases then decreases as lambda increases",
+            "E: bias remains constant as lambda increases"
+        ]
+    }
+]

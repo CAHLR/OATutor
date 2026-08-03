@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a222079ds100-fa21-mt-Q1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-hot Encoding",
+        "text": "One-hot encoding is a way to represent categorical data as binary vectors. Each category is represented by a vector with a single high (1) bit and all other bits low (0).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa21-mt-Q1c-h1"
+        ],
+        "title": "How Many Codons?",
+        "text": "Each DNA string is made up of 3,000 letters. Since a codon consists of $$3$$ letters, how many codons are there in a single DNA string?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3000}{3}$$"
+        ],
+        "dependencies": [
+            "a222079ds100-fa21-mt-Q1c-h2"
+        ],
+        "title": "Calculate Number of Codons",
+        "text": "Calculate the number of codons in a DNA string with 3,000 letters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa21-mt-Q1c-h3"
+        ],
+        "title": "Possible Codons",
+        "text": "There are $$4$$ possible letters (T, G, C, A) and each codon is made up of $$3$$ letters. How many possible codons can be formed?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4^3$$"
+        ],
+        "dependencies": [
+            "a222079ds100-fa21-mt-Q1c-h4"
+        ],
+        "title": "Calculate Possible Codons",
+        "text": "Calculate the number of possible codons using the formula for permutations with repetition: $$4^3$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1c-h6",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa21-mt-Q1c-h5"
+        ],
+        "title": "One-hot Encoding Dimensions",
+        "text": "To find the number of dimensions for one-hot encoding, multiply the number of codons in a DNA string by the number of possible codons.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1c-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$64000$$"
+        ],
+        "dependencies": [
+            "a222079ds100-fa21-mt-Q1c-h6"
+        ],
+        "title": "Calculate Dimensions for One-hot Encoding",
+        "text": "Calculate the total number of dimensions for one-hot encoding by multiplying the number of codons by the number of possible codons: $$\\frac{3000}{3} 4^3$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a253306row5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Slope in SLR",
+        "text": "In a Simple Linear Regression model, the slope $$\\theta_1$$ represents the change in the response variable for a one-unit change in the predictor variable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row5a-h1"
+        ],
+        "title": "Relating Slope to the Context",
+        "text": "Think about what the predictor variable (hours) and the response variable (rides) represent in this context.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row5a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Estimated average ride increase per additional hour on campus."
+        ],
+        "dependencies": [
+            "a253306row5a-h2"
+        ],
+        "title": "Interpreting $$\\theta_1$$",
+        "text": "If $$\\theta_1$$ is the slope, what does it tell us about the relationship between hours spent on campus and the number of rides taken?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Estimated number of rides taken when no hours are spent on campus.",
+            "Estimated average ride increase per additional hour on campus.",
+            "Estimated average rides taken by students.",
+            "Estimated total number of rides by students in the dataset."
+        ]
+    }
+]

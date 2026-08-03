@@ -1,0 +1,55 @@
+[
+    {
+        "id": "ade7df0ds100-sp21-final-Q9e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Data",
+        "text": "The table shows tweets with counts of happy and sad emojis, along with a label indicating if the tweet is happy (1) or sad (0).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q9e-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Logistic Regression and Regularization",
+        "text": "Logistic regression with L2 regularization adds a penalty to the loss function to prevent overfitting. This penalty is proportional to the square of the coefficient values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q9e-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Large Lambda",
+        "text": "A large lambda value in L2 regularization will shrink the coefficients towards zero, affecting the decision boundary's slope.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q9e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q9e-h3"
+        ],
+        "title": "Impact on Training Error",
+        "text": "With a large lambda, the model becomes less flexible. How does this affect the training error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Remain the same",
+            "Cannot be determined"
+        ]
+    }
+]

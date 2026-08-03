@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a825455ds100-su20-final-Q2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding K-means Convergence",
+        "text": "In K-means clustering, convergence is achieved when the cluster centers no longer change significantly between iterations. This usually means that the labels assigned to each data point remain the same.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su20-final-Q2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-su20-final-Q2b-h1"
+        ],
+        "title": "Cluster Centers and Labels",
+        "text": "If the cluster centers change but the labels do not, it indicates that the data points are still closest to the same centers as before. This is a sign of convergence.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su20-final-Q2b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Always"
+        ],
+        "dependencies": [
+            "a825455ds100-su20-final-Q2b-h2"
+        ],
+        "title": "Analyzing the Situation",
+        "text": "Given that the cluster centers have changed but the labels have not, what can we infer about the convergence of the algorithm?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Always",
+            "Sometimes",
+            "Never"
+        ]
+    }
+]

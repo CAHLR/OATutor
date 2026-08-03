@@ -1,0 +1,19 @@
+{
+    "id": "a5d4609ds100-fa20-final-Q10e",
+    "stepAnswer": [
+        "(u @ np.diag(s)).shape $$==$$ $$(940,7)$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Say we perform the SVD on F using the following code:\\nX $$=$$ (F - np.mean(F, axis $$=$$ 0))\\nu, s, vt $$=$$ np.linalg.svd(X, $$\\texttt{full\\_matrices=False)}$$\\nWhich of the following statements evaluates to True?",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "(u @ np.diag(s)).shape $$==$$ $$(940,7)$$",
+    "choices": [
+        "(u @ np.diag(s)).shape $$==$$ $$(940,7)$$",
+        "(u @ np.diag(s)).shape $$==$$ $$(7,7)$$",
+        "(u @ np.diag(s)).shape $$==$$ $$(940,940)$$",
+        "(u @ np.diag(s)).shape $$==$$ $$(7,940)$$",
+        "None of these"
+    ]
+}

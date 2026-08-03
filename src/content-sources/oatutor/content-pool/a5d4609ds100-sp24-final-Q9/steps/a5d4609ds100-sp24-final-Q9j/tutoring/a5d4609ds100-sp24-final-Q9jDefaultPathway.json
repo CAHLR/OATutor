@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a5d4609ds100-sp24-final-Q9j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Singular Values",
+        "text": "Singular values in PCA represent the amount of variance captured by each principal component. The larger the singular value, the more variance that component captures.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp24-final-Q9j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp24-final-Q9j-h1"
+        ],
+        "title": "Comparing Singular Values",
+        "text": "Compare the singular values of PC \\alpha and PC \u03b2. Which one is larger?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp24-final-Q9j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "\\alpha"
+        ],
+        "dependencies": [
+            "a5d4609ds100-sp24-final-Q9j-h2"
+        ],
+        "title": "Determine the Principal Component with Higher Score",
+        "text": "Given that PC \\alpha has a singular value of $$48.42$$ and PC \u03b2 has a singular value of $$36.31$$, which principal component has a higher component score?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "\\alpha",
+            "\u03b2"
+        ]
+    },
+    {
+        "id": "a5d4609ds100-sp24-final-Q9j-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp24-final-Q9j-h3"
+        ],
+        "title": "Conclusion on the Statement",
+        "text": "If PC \\alpha has a higher singular value than PC \u03b2, does it mean that \\alpha has a higher component score than \u03b2?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

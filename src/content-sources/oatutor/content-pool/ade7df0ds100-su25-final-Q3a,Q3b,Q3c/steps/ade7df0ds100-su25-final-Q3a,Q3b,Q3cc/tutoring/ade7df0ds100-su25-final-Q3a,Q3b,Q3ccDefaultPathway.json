@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ade7df0ds100-su25-final-Q3a,Q3b,Q3cc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logistic Regression",
+        "text": "Logistic regression is used for binary classification problems. It predicts the probability that a given input point belongs to a certain class.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su25-final-Q3a,Q3b,Q3cc-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su25-final-Q3a,Q3b,Q3cc-h1"
+        ],
+        "title": "Logistic Function",
+        "text": "The logistic function is a nonlinear function that maps any real-valued number into the $$(0,1)$$ interval, making it suitable for probability predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su25-final-Q3a,Q3b,Q3cc-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su25-final-Q3a,Q3b,Q3cc-h2"
+        ],
+        "title": "Features in the Model",
+        "text": "Consider how each feature (length, likes, response time) might influence whether a reply is from a bot or a human.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su25-final-Q3a,Q3b,Q3cc-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\ln\\left(odds\\right)=b0+b1 x1+b2 x2+...+bn xn$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su25-final-Q3a,Q3b,Q3cc-h3"
+        ],
+        "title": "Logistic Regression Equation",
+        "text": "The logistic regression model uses the equation: $$\\ln\\left(odds\\right)$$ $$=$$ b0 + $$b1 x1$$ + $$b2 x2$$ + ... + $$bn xn$$, where odds $$=$$ $$\\frac{p}{1-p}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su25-final-Q3a,Q3b,Q3cc-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$p=\\frac{1}{1+e^{\\left(-z\\right)}}$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su25-final-Q3a,Q3b,Q3cc-h4"
+        ],
+        "title": "Probability Prediction",
+        "text": "The probability that a reply is from a bot can be calculated using the logistic function: $$p$$ $$=$$ $$\\frac{1}{1+e^{\\left(-z\\right)}}$$, where $$z$$ $$=$$ b0 + $$b1 x1$$ + $$b2 x2$$ + ... + $$bn xn$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

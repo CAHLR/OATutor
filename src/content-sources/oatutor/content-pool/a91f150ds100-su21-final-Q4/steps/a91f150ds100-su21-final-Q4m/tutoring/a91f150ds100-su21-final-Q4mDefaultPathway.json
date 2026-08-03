@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a91f150ds100-su21-final-Q4m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Bias",
+        "text": "Model bias refers to the error introduced by approximating a real-world problem, which may be complex, by a simplified model. High bias can cause an algorithm to miss the relevant relations between features and target outputs.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4m-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4m-h1"
+        ],
+        "title": "Regularization and Bias",
+        "text": "Regularization is a technique used to prevent overfitting by adding a penalty term to the loss function. However, it can sometimes increase bias by oversimplifying the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4m-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4m-h2"
+        ],
+        "title": "Reducing Model Bias",
+        "text": "To reduce model bias, consider using more complex models, increasing the number of features, or reducing regularization strength.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4m-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4m-h3"
+        ],
+        "title": "Solution Options",
+        "text": "Which of these solutions helps reduce the model bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Add more features",
+            "All of the above",
+            "Increase model complexity",
+            "Reduce regularization strength",
+            "TRUE"
+        ]
+    }
+]

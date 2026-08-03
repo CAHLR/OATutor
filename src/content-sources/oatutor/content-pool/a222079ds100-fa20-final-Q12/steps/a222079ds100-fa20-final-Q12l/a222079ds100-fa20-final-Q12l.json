@@ -1,0 +1,15 @@
+{
+    "id": "a222079ds100-fa20-final-Q12l",
+    "stepAnswer": [
+        "FALSE"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "$$\\beta_{kg}$$",
+    "stepBody": "Now suppose we fit two linear models on the humans data.\\nModel A:\\n$$\\hat{b}=\\theta_0+\\theta_{in}h_{in}+\\theta_{cm}h_{cm}+\\theta_{lb}w_{lb}+\\theta_{kg}w_{kg}$$\\nModel B:\\n$$\\hat{b}=\\beta_0+\\beta_{cm}h_{cm}+\\beta_{kg}w_{kg}$$\\nHere $$\\hat{b}$$ is predicted bmi, $$h_{in}$$ and $$h_{cm}$$ are height in inches and centimeters, and $$w_{lb}$$ and $$w_{kg}$$ are weight in pounds and kilograms.\\nSuppose we create 95% confidence intervals for each of these non-intercept parameters using the bootstrap method. Are the parameters' confidence interval likely to contain the value 0? Select all that apply.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "TRUE",
+        "FALSE"
+    ]
+}

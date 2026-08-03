@@ -1,0 +1,83 @@
+[
+    {
+        "id": "ade7df0ds100-sp24-final-Q8d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Recall",
+        "text": "Recall is the ratio of true positive predictions to the total actual positives. It measures how many of the actual positive cases were correctly predicted.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp24-final-Q8d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculating Accuracy",
+        "text": "Accuracy is the ratio of correctly predicted instances to the total instances. To maintain accuracy above $$0.75$$, calculate the number of correct predictions needed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp24-final-Q8d-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Threshold and Predictions",
+        "text": "The threshold determines whether a predicted probability is classified as $$1$$ or $$0$$. Adjust the threshold to maximize recall while maintaining accuracy.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp24-final-Q8d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-sp24-final-Q8d-h1"
+        ],
+        "title": "Calculate True Positives",
+        "text": "Identify the true positive cases based on the threshold. Which predicted probabilities should be classified as $$1$$ to maximize recall?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp24-final-Q8d-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-sp24-final-Q8d-h2"
+        ],
+        "title": "Calculate Accuracy",
+        "text": "Determine the number of correct predictions needed to maintain accuracy above $$0.75$$. How many predictions must be correct out of 5?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp24-final-Q8d-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.4$$ to $$0.7$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-sp24-final-Q8d-h3"
+        ],
+        "title": "Determine Threshold Range",
+        "text": "Find the range of thresholds that allow for maximum recall while maintaining the required accuracy. What is the range of thresholds?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

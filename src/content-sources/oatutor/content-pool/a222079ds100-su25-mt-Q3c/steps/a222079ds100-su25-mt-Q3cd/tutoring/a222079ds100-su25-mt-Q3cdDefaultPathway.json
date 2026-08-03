@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a222079ds100-su25-mt-Q3cd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatterplot",
+        "text": "Observe the scatterplot. Notice how the number of colonies decreases as the amount of antibiotic increases. This suggests a non-linear relationship.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su25-mt-Q3cd-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su25-mt-Q3cd-h1"
+        ],
+        "title": "Considering Transformations",
+        "text": "To linearize a non-linear relationship, consider transformations like logarithmic, square root, or reciprocal transformations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su25-mt-Q3cd-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su25-mt-Q3cd-h2"
+        ],
+        "title": "Logarithmic Transformation",
+        "text": "A logarithmic transformation can help linearize relationships where one variable grows exponentially compared to another.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su25-mt-Q3cd-h4",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su25-mt-Q3cd-h2"
+        ],
+        "title": "Reciprocal Transformation",
+        "text": "A reciprocal transformation $$\\frac{1}{X}$$ can be useful when the relationship is hyperbolic, as it can help straighten the curve.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su25-mt-Q3cd-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\ln\\left(X\\right)$$, $$\\frac{1}{X}$$"
+        ],
+        "dependencies": [
+            "a222079ds100-su25-mt-Q3cd-h4"
+        ],
+        "title": "Choosing the Right Transformation",
+        "text": "Which transformations could potentially help to linearize the relationship between the Antibiotic (X) and Colonies (Y)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{1}{X}$$",
+            "$$X^2$$",
+            "$$\\ln\\left(X\\right)$$",
+            "$$\\ln\\left(X\\right)$$, $$\\frac{1}{X}$$",
+            "$$\\sqrt{X}$$"
+        ]
+    }
+]

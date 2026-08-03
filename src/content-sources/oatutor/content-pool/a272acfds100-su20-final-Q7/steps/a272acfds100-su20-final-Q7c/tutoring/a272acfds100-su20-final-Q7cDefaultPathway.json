@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a272acfds100-su20-final-Q7c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean Squared Error",
+        "text": "Mean squared error (MSE) is calculated as the average of the squares of the errors. The error is the difference between the predicted value and the actual value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su20-final-Q7c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-su20-final-Q7c-h1"
+        ],
+        "title": "Calculate the Error for Each Group",
+        "text": "For the first group of $$250$$ inputs, the error is $$1$$. For the second group of $$500$$ inputs, the error is $$-0.5$$. Calculate the squared error for each group.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su20-final-Q7c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-su20-final-Q7c-h2"
+        ],
+        "title": "Calculate the Total Squared Error",
+        "text": "Multiply the squared error by the number of observations in each group to find the total squared error for each group.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su20-final-Q7c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-su20-final-Q7c-h3"
+        ],
+        "title": "Find the Mean Squared Error",
+        "text": "Add the total squared errors from each group and divide by the total number of observations (900) to find the mean squared error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su20-final-Q7c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "1, 0.25"
+        ],
+        "dependencies": [
+            "a272acfds100-su20-final-Q7c-h2"
+        ],
+        "title": "Calculate Squared Errors",
+        "text": "Calculate the squared error for the first group: $$1^2$$ and for the second group: $${\\left(-0.5\\right)}^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su20-final-Q7c-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "250, 125"
+        ],
+        "dependencies": [
+            "a272acfds100-su20-final-Q7c-h5"
+        ],
+        "title": "Calculate Total Squared Error",
+        "text": "Calculate the total squared error for the first group: $$250\\times1^2$$ and for the second group: $$500{\\left(-0.5\\right)}^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su20-final-Q7c-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.42$$"
+        ],
+        "dependencies": [
+            "a272acfds100-su20-final-Q7c-h6"
+        ],
+        "title": "Calculate Mean Squared Error",
+        "text": "Add the total squared errors: $$250+125$$ and divide by the total number of observations: $$900$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a40b41cds100-sp18-final-Q15c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Reduce Phase",
+        "text": "In the reduce phase of MapReduce, the goal is to aggregate or summarize the data. Each reducer processes all records associated with a particular key.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp18-final-Q15c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp18-final-Q15c-h1"
+        ],
+        "title": "Key-Value Pair Distribution",
+        "text": "During the reduce phase, all records with the same key are sent to the same reducer. This ensures that all related data is processed together.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp18-final-Q15c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a40b41cds100-sp18-final-Q15c-h2"
+        ],
+        "title": "Confirming the Statement",
+        "text": "Is it true that during the reduce phase of MapReduce, all records associated with a given key are sent to the same machine?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a272acfds100-sp24-final-Q9n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD",
+        "text": "Singular Value Decomposition (SVD) is a method of decomposing a matrix into three other matrices: $U$, $S$, and $V**{T}$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp24-final-Q9n-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp24-final-Q9n-h1"
+        ],
+        "title": "Properties of SVD",
+        "text": "In SVD, $U$ and $V$ are orthogonal matrices, and $S$ is a diagonal matrix containing the singular values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp24-final-Q9n-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp24-final-Q9n-h2"
+        ],
+        "title": "Diagonal Matrices",
+        "text": "A diagonal matrix is a matrix in which the entries outside the main diagonal are all zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp24-final-Q9n-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$V**{T}$ is not necessarily a diagonal matrix."
+        ],
+        "dependencies": [
+            "a272acfds100-sp24-final-Q9n-h3"
+        ],
+        "title": "Analyzing $S$ and $V**{T}$",
+        "text": "Given that $S$ is a diagonal matrix, what can we say about $V**{T}$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$V**{T}$ is diagonal",
+            "$V**{T}$ is not necessarily a diagonal matrix.",
+            "$V**{T}$ is not necessarily diagonal"
+        ]
+    }
+]

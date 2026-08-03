@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a8cec5cds100-fa23-mt-Q7b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "In gradient descent, the learning rate is a positive scalar that determines the step size at each iteration while moving toward a minimum of a function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q7b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q7b-h1"
+        ],
+        "title": "Role of the Learning Rate",
+        "text": "The learning rate is used to scale the gradient, which is a vector pointing in the direction of the steepest increase of the function. A negative learning rate would imply moving in the opposite direction, which is not the purpose of gradient descent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q7b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q7b-h2"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Consider the purpose of the learning rate in gradient descent. Is it ever updated to be negative?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

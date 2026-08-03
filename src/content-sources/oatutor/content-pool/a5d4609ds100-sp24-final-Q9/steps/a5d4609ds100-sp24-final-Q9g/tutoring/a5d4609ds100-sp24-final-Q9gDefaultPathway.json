@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a5d4609ds100-sp24-final-Q9g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Principal Components",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It reduces the dimensionality of the data while preserving as much variance as possible.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp24-final-Q9g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp24-final-Q9g-h1"
+        ],
+        "title": "Interpreting the Scree Plot",
+        "text": "A scree plot displays the eigenvalues associated with each principal component. The x-axis represents the principal component number, and the y-axis represents the eigenvalue size.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp24-final-Q9g-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp24-final-Q9g-h2"
+        ],
+        "title": "Eigenvalues and Variance",
+        "text": "The eigenvalue of a principal component indicates the amount of variance captured by that component. A higher eigenvalue means more variance is captured.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp24-final-Q9g-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp24-final-Q9g-h3"
+        ],
+        "title": "Number of Principal Components",
+        "text": "The number of principal components is equal to the rank of the matrix, which is less than the number of columns if the rank is less than the number of columns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp24-final-Q9g-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a5d4609ds100-sp24-final-Q9g-h4"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Given that the rank of X is less than $$d$$, can there be a 36th principal component?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

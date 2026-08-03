@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a5dd512ds100-su21-final-Q7h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Random Forests",
+        "text": "Random forests are an ensemble method that uses multiple decision trees to make predictions. They can capture complex patterns by combining the outputs of individual trees.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q7h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q7h-h1"
+        ],
+        "title": "Decision Boundaries in Random Forests",
+        "text": "Random forests can create complex decision boundaries by aggregating the outputs of multiple decision trees. However, each individual tree in the forest creates axis-aligned splits.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q7h-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q7h-h2"
+        ],
+        "title": "Analyzing the Boundary",
+        "text": "Look at the shape of boundary A. Consider whether it can be formed by combining axis-aligned splits from multiple decision trees.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q7h-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q7h-h3"
+        ],
+        "title": "Can Random Forests Create Circular Boundaries?",
+        "text": "Random forests are made up of decision trees that create axis-aligned splits. Can these splits form a circular boundary like boundary A?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

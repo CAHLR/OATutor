@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a977a7fds100-sp25-final-Q2ba-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Complexity",
+        "text": "When you reduce the number of features in a model, what happens to the model's complexity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp25-final-Q2ba-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-sp25-final-Q2ba-h1"
+        ],
+        "title": "Training Error vs. Validation Error",
+        "text": "Consider how training error and validation error are affected by model complexity. What does an increase in training error and a decrease in validation error suggest?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp25-final-Q2ba-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-sp25-final-Q2ba-h2"
+        ],
+        "title": "Bias-Variance Tradeoff",
+        "text": "Think about the bias-variance tradeoff. How does reducing the number of features affect bias and variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp25-final-Q2ba-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a977a7fds100-sp25-final-Q2ba-h3"
+        ],
+        "title": "Analyzing the Effects of Feature Reduction",
+        "text": "Reducing the number of features typically increases bias and decreases variance. This can lead to an increase in training error but a decrease in validation error. Is this consistent with the observations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

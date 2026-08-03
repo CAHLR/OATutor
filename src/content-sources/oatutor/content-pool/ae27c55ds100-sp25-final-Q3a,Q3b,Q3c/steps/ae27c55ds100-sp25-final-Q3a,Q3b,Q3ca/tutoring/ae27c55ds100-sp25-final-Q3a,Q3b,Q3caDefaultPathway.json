@@ -1,0 +1,65 @@
+[
+    {
+        "id": "ae27c55ds100-sp25-final-Q3a,Q3b,Q3ca-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Unbiased Estimators",
+        "text": "An estimator is unbiased if its expected value equals the parameter it estimates. In this case, we need to show that the expected value of \\( \\hat{\\delta} \\) equals \\( \\delta \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-sp25-final-Q3a,Q3b,Q3ca-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-sp25-final-Q3a,Q3b,Q3ca-h1"
+        ],
+        "title": "Breaking Down the Estimator",
+        "text": "The estimator \\( \\hat{\\delta} \\) is defined as \\( \\bar{K}-\\bar{D} \\). We need to find the expected value of this expression.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-sp25-final-Q3a,Q3b,Q3ca-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-sp25-final-Q3a,Q3b,Q3ca-h2"
+        ],
+        "title": "Using Linearity of Expectation",
+        "text": "The expectation of a difference is the difference of the expectations. Therefore, \\( E[\\hat{\\delta}] $$=$$ E[\\bar{K}] - E[\\bar{D}] \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-sp25-final-Q3a,Q3b,Q3ca-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-sp25-final-Q3a,Q3b,Q3ca-h3"
+        ],
+        "title": "Substituting Known Values",
+        "text": "We know that \\( \\bar{K} \\) is an unbiased estimator of \\( \\mu_K \\) and \\( \\bar{D} \\) is an unbiased estimator of \\( \\mu_D \\). Therefore, \\( E[\\bar{K}] $$=$$ \\mu_K \\) and \\( E[\\bar{D}] $$=$$ \\mu_D \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-sp25-final-Q3a,Q3b,Q3ca-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "E[\\hat{\\delta}]=E[\\bar{K}-\\bar{D}]=E[\\bar{K}]-E[\\bar{D}]=\\mu_K-\\mu_D=\\delta"
+        ],
+        "dependencies": [
+            "ae27c55ds100-sp25-final-Q3a,Q3b,Q3ca-h4"
+        ],
+        "title": "Final Calculation",
+        "text": "Substitute the known expectations into the expression for \\( E[\\hat{\\delta}] \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

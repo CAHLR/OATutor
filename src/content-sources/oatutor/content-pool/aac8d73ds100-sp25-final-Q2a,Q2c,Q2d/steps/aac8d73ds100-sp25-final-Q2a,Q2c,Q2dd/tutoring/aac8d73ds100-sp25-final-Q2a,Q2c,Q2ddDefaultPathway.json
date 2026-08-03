@@ -1,0 +1,70 @@
+[
+    {
+        "id": "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L2 Regularization",
+        "text": "L2 regularization, also known as Ridge Regression, adds a penalty equal to the square of the magnitude of coefficients to the loss function. This helps in preventing overfitting and ensures a unique solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dd-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dd-h1"
+        ],
+        "title": "Why is the Solution Unique?",
+        "text": "The addition of the L2 penalty term makes the optimization problem strictly convex. A strictly convex function has a unique minimum, which guarantees a unique solution for the coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dd-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Strict convexity"
+        ],
+        "dependencies": [
+            "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dd-h2"
+        ],
+        "title": "Convexity and Uniqueness",
+        "text": "What property of the L2 regularization ensures the uniqueness of the solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dd-h4",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dd-h2"
+        ],
+        "title": "Role of Lambda in L2 Regularization",
+        "text": "The parameter lambda (\u03bb) controls the strength of the penalty. A positive \u03bb ensures that the penalty term is active, contributing to the convexity of the loss function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dd-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The solution is unique due to the convexity of the loss function."
+        ],
+        "dependencies": [
+            "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dd-h4"
+        ],
+        "title": "Effect of Positive Lambda",
+        "text": "What happens when \u03bb is greater than $$0$$ in L2 regularization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

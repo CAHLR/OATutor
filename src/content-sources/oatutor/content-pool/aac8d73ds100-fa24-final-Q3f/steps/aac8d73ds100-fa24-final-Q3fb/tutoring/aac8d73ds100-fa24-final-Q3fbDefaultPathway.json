@@ -1,0 +1,74 @@
+[
+    {
+        "id": "aac8d73ds100-fa24-final-Q3fb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model we are using is \\( \\hat{y}=\\hat{\\theta}_1x_1+\\hat{\\theta}_2x_1**{2} \\). This is a polynomial regression model where \\( $$x_1$$ \\) is critic 1's rating.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa24-final-Q3fb-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa24-final-Q3fb-h1"
+        ],
+        "title": "Regularization Term",
+        "text": "The regularization term added to the objective function is \\( \\lambda(\\hat{\\theta}_1+\\hat{\\theta}_2) \\). This is an L1 regularization term, which encourages sparsity in the coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa24-final-Q3fb-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa24-final-Q3fb-h2"
+        ],
+        "title": "Effect of L1 Regularization",
+        "text": "L1 regularization can lead to some coefficients being exactly zero, effectively selecting a simpler model by removing some features.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa24-final-Q3fb-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa24-final-Q3fb-h3"
+        ],
+        "title": "Evaluating Statements",
+        "text": "Consider the effect of L1 regularization on the coefficients \\( \\hat{\\theta}_1 \\) and \\( \\hat{\\theta}_2 \\). Does it encourage sparsity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "aac8d73ds100-fa24-final-Q3fb-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "ObjectiveFunction+\\lambda(\\hat{\\theta}_1+\\hat{\\theta}_2)"
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa24-final-Q3fb-h4"
+        ],
+        "title": "Objective Function with Regularization",
+        "text": "Write the objective function with the regularization term included.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

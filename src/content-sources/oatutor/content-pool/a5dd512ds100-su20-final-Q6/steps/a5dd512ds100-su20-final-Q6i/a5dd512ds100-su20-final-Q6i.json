@@ -1,0 +1,19 @@
+{
+    "id": "a5dd512ds100-su20-final-Q6i",
+    "stepAnswer": [
+        "consoles[\"manufacturer\"] $$==$$ company"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "the blank",
+    "stepBody": "Fill in the blank to find the latest generation that company participated in. Write Pandas code. Your code should return only the latest generation.\\n$$\\texttt{latest\\_gen}$$ $$=$$ consoles[[blank]][\"generation\"].max()",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "consoles[\"manufacturer\"] $$==$$ company",
+    "choices": [
+        "consoles[\"manufacturer\"] $$==$$ \"company\"",
+        "consoles[\"manufacturer\"] $$==$$ company",
+        "consoles[consoles[\"manufacturer\"] $$==$$ company]",
+        "consoles[\"generation\"] $$==$$ company",
+        "consoles[\"manufacturer\"].isin(company)"
+    ]
+}

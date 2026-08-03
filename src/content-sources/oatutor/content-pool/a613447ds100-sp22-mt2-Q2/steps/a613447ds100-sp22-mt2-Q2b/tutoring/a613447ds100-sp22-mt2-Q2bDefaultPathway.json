@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a613447ds100-sp22-mt2-Q2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the standard deviation of the total purchase value, we need to first understand the expected value and variance of the purchases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp22-mt2-Q2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp22-mt2-Q2b-h1"
+        ],
+        "title": "Calculate Expected Value",
+        "text": "Calculate the expected value of the purchase for one customer. Use the formula: E(X)=sum{p_i*x_i}, where $$p_i$$ is the probability and $$x_i$$ is the value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp22-mt2-Q2b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp22-mt2-Q2b-h2"
+        ],
+        "title": "Calculate Variance for One Customer",
+        "text": "Calculate the variance for one customer using the formula: Var(X)=sum{p_i*(x_i-E(X))**2}.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp22-mt2-Q2b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp22-mt2-Q2b-h3"
+        ],
+        "title": "Variance for $$10$$ Customers",
+        "text": "Since the purchases are independent, the variance for $$10$$ customers is $$10$$ times the variance for one customer.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp22-mt2-Q2b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "a613447ds100-sp22-mt2-Q2b-h4"
+        ],
+        "title": "Calculate Standard Deviation",
+        "text": "The standard deviation is the square root of the variance. Calculate SD(X) for $$10$$ customers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

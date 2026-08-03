@@ -1,0 +1,116 @@
+[
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model Shiny uses is given by the equation: \\( \\hat{y}_i=\\frac{1}{\\theta_1}x_i \\). With \\( $$\\theta_1=\\frac{1}{3$$} \\), what does this equation simplify to?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp24-mt-Q5c-h1"
+        ],
+        "title": "Calculate Predicted Values",
+        "text": "Using the simplified model equation, calculate the predicted \\( \\hat{y}_i \\) for each data point: \\( $$x=1$$ \\), \\( $$x=2$$ \\), and \\( $$x=4$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp24-mt-Q5c-h2"
+        ],
+        "title": "Find Absolute Errors",
+        "text": "For each data point, find the absolute error by calculating \\( |y_i-\\hat{y}_i| \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp24-mt-Q5c-h3"
+        ],
+        "title": "Calculate Mean Absolute Error",
+        "text": "The Mean Absolute Error (MAE) is the average of the absolute errors. Sum the absolute errors and divide by the number of data points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5c-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "\\hat{y}_i=3x_i"
+        ],
+        "dependencies": [
+            "a8cec5cds100-sp24-mt-Q5c-h1"
+        ],
+        "title": "Simplify the Model Equation",
+        "text": "Simplify \\( \\hat{y}_i=\\frac{1}{\\theta_1}x_i \\) with \\( $$\\theta_1=\\frac{1}{3$$} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5c-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "3,6,12"
+        ],
+        "dependencies": [
+            "a8cec5cds100-sp24-mt-Q5c-s1"
+        ],
+        "title": "Calculate Predicted Values",
+        "text": "Calculate \\( \\hat{y}_i \\) for each data point: \\( $$x=1$$ \\), \\( $$x=2$$ \\), and \\( $$x=4$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5c-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "2,4,3"
+        ],
+        "dependencies": [
+            "a8cec5cds100-sp24-mt-Q5c-s2"
+        ],
+        "title": "Find Absolute Errors",
+        "text": "Calculate \\( |y_i-\\hat{y}_i| \\) for each data point.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5c-s4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a8cec5cds100-sp24-mt-Q5c-s3"
+        ],
+        "title": "Calculate Mean Absolute Error",
+        "text": "Sum the absolute errors and divide by the number of data points to find the MAE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

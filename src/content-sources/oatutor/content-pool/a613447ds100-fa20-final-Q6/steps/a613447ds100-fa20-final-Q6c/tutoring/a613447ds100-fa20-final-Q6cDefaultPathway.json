@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a613447ds100-fa20-final-Q6c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias-Variance Decomposition",
+        "text": "The bias-variance decomposition is a way to express the expected error of a model in terms of three components: the variance of the noise, the bias of the model, and the variance of the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa20-final-Q6c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa20-final-Q6c-h1"
+        ],
+        "title": "Conditions for Bias-Variance Decomposition",
+        "text": "The decomposition holds under certain conditions, such as when the loss function is squared error and the model is linear.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa20-final-Q6c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa20-final-Q6c-h2"
+        ],
+        "title": "Loss Function Consideration",
+        "text": "Consider whether the absolute loss function satisfies the conditions required for the bias-variance decomposition.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa20-final-Q6c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a613447ds100-fa20-final-Q6c-h3"
+        ],
+        "title": "Analyzing Linear Models with Absolute Loss",
+        "text": "Does the bias-variance decomposition hold for linear models when using absolute loss?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

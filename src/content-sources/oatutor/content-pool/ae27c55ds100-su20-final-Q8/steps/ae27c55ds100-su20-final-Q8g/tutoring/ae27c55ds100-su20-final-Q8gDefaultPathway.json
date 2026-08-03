@@ -1,0 +1,61 @@
+[
+    {
+        "id": "ae27c55ds100-su20-final-Q8g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Singular Values",
+        "text": "The singular values of a matrix are related to the variance of its features. The largest singular value is often associated with the feature having the highest variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su20-final-Q8g-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-su20-final-Q8g-h1"
+        ],
+        "title": "Relation Between Variance and Singular Values",
+        "text": "The singular values of a matrix are the square roots of the eigenvalues of the matrix's covariance matrix. The variance of a feature is related to the eigenvalue of the covariance matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su20-final-Q8g-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-su20-final-Q8g-h2"
+        ],
+        "title": "Finding the Largest Singular Value",
+        "text": "The largest singular value is the square root of the largest variance. In this case, the largest variance is $$125$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su20-final-Q8g-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sigma_1 $$\\geq$$ $$50$$"
+        ],
+        "dependencies": [
+            "ae27c55ds100-su20-final-Q8g-h3"
+        ],
+        "title": "Calculate the Largest Singular Value",
+        "text": "Calculate the square root of the largest variance to find the largest singular value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\sigma_1 $$\\geq$$ $$50$$",
+            "$$\\sigma_1 \\geq 0$$",
+            "$$\\sigma_1 \\geq 125$$",
+            "$$\\sigma_1 \\geq 20$$",
+            "$$\\sigma_1 \\geq 5$$",
+            "$$\\sigma_1 \\geq 50$$"
+        ]
+    }
+]

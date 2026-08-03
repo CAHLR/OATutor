@@ -1,0 +1,82 @@
+[
+    {
+        "id": "ade7df0ds100-fa20-final-Q9i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Logistic Function",
+        "text": "The logistic function, denoted as \\( \\sigma(z) \\), is defined as \\( \\sigma(z) $$=$$ \\frac{1}{1+e**{-z}} \\). It maps any real-valued number into the range $$(0,1)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa20-final-Q9i-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa20-final-Q9i-h1"
+        ],
+        "title": "Calculate the Linear Combination",
+        "text": "To find \\( $$z$$ \\), calculate the linear combination of the features and the parameters: \\( $$z$$ $$=$$ $$\\theta_1$$ \\cdot \\text{hue} + $$\\theta_2$$ \\cdot \\text{abv} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa20-final-Q9i-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1.5$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa20-final-Q9i-h2"
+        ],
+        "title": "Substitute the Values",
+        "text": "Substitute the given values into the linear combination: \\( $$z$$ $$=$$ $$2$$ \\cdot \\frac{1}{4} + $$1$$ \\cdot $$(-2)$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa20-final-Q9i-h4",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa20-final-Q9i-h3"
+        ],
+        "title": "Apply the Logistic Function",
+        "text": "Now that you have \\( $$z$$ $$=$$ $$-1.5$$ \\), apply the logistic function: \\( \\gamma $$=$$ $$\\sigma(-1.5)$$ $$=$$ \\frac{1}{1+e**{1.5}} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa20-final-Q9i-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.1824$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa20-final-Q9i-h4"
+        ],
+        "title": "Calculate the Probability",
+        "text": "Calculate \\( \\gamma \\) using the logistic function: \\( \\gamma $$=$$ \\frac{1}{1+e**{1.5}} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa20-final-Q9i-h6",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa20-final-Q9i-h5"
+        ],
+        "title": "Interpret the Result",
+        "text": "The value of \\( \\gamma \\) represents the probability that Billywine is a type $$1$$ wine. If \\( \\gamma \\) is closer to $$1$$, it is more likely to be type 1; if closer to $$0$$, it is more likely to be type $$0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

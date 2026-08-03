@@ -1,0 +1,11 @@
+{
+    "id": "a977a7fds100-su20-final-Q5a",
+    "title": "",
+    "body": "Suppose we have a design matrix $$X$$ and observed response vector $$Y$$ that we assume are generated from some true linear model. Specifically, we assume\\n$$Y_i=f_{\\theta**{*}}(X_i)+\\epsilon_i$$\\nwhere\\n\u2022 $$X_i$$ represents the ith row of our design matrix, and $$Y_i$$ represents the ith true response value\\n\u2022 $$f_{\\theta**{*}}(x)$$ represents the underlying true linear model, parametrized by $$\\theta**{*}$$\\n\u2022 Each $$\\epsilon_i$$ is a random variable with $$E[\\epsilon_i]=0$$ and $$Var[\\epsilon_i]=\\sigma**{2}$$\\nWe want to use a linear model $$\\hat{Y}=X{\\theta}$$ to fit our data.\\nAssume that $$X$$ and $$Y$$ refer to our entire dataset. After performing a train-test split, we use squared loss and $$L_2$$ regularization with a positive regularization hyperparameter $$\\lambda$$ (i.e. ridge regression) to determine our parameter estimate $$\\hat{\\theta}$$ using just our training data.\\nFor each of following questions, select all options that are true.",
+    "variabilization": {},
+    "oer": "https://ds100.org/su26/past-exams/",
+    "license": "",
+    "lesson": "Bias and Variance B",
+    "lessonId": "13C273QV-BcgI-C1fPx1TrFn",
+    "courseName": "Midterm 3 Worksheets"
+}

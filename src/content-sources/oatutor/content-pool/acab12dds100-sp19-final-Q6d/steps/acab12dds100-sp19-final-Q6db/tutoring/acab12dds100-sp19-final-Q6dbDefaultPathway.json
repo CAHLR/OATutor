@@ -1,0 +1,69 @@
+[
+    {
+        "id": "acab12dds100-sp19-final-Q6db-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrapping",
+        "text": "Bootstrapping is a statistical method that involves resampling with replacement from a dataset to estimate the sampling distribution of a statistic. It is often used to estimate confidence intervals.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp19-final-Q6db-h2",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-sp19-final-Q6db-h1"
+        ],
+        "title": "Data Requirements for Bootstrapping",
+        "text": "To perform bootstrapping, you need a sample that is representative of the population. The sample should be large enough to capture the variability in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp19-final-Q6db-h3",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-sp19-final-Q6db-h2"
+        ],
+        "title": "Using the 4-Column Sample",
+        "text": "The 4-column sample from May $$1$$, $$2018$$, includes additional information (trip duration) that is not present in the original 3-column dataset for $$2018$$. Consider whether this affects the reliability of bootstrapping.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp19-final-Q6db-h4",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-sp19-final-Q6db-h3"
+        ],
+        "title": "Population vs. Sample Data",
+        "text": "The original dataset for $$2018$$ does not include trip duration, which is necessary for calculating the mean trip duration. Without this information in the population data, bootstrapping may not provide reliable estimates.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp19-final-Q6db-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "acab12dds100-sp19-final-Q6db-h4"
+        ],
+        "title": "Conclusion on Bootstrapping",
+        "text": "Given the lack of trip duration data in the original $$2018$$ dataset, can you reliably compute the mean trip duration for $$2019$$ using bootstrapping?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a977a7fds100-su19-final-Q6c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model given is $$\\operatorname{f_{\\theta}}\\left(x\\right)=\\theta_0+\\theta_1 {veg}^2$$. We need to determine the sign of $$\\theta_1$$ based on the data and visualizations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6c-h1"
+        ],
+        "title": "Analyzing the Scatter Plot",
+        "text": "Look at the scatter plot of total vs. veg. Does the total increase as veg increases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6c-h2"
+        ],
+        "title": "Relationship Between Veg and Total",
+        "text": "The scatter plot shows a positive trend between veg and total. This suggests that as veg increases, the total bill also increases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Positive"
+        ],
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6c-h3"
+        ],
+        "title": "Determining the Sign of $$\\theta_1$$",
+        "text": "Given the positive trend between veg and total, what can we infer about the sign of $$\\theta_1$$ in the model $$\\operatorname{f_{\\theta}}\\left(x\\right)=\\theta_0+\\theta_1 {veg}^2$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Positive",
+            "Negative",
+            "Exactly $$0$$",
+            "Not enough info"
+        ]
+    }
+]

@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a5dd512ds100-su21-final-Q6g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the mean squared error (MSE), we need to understand the relationship between the input colors and the output predictions. The task is to predict whether someone is a night owl (0) or an early bird (1) based on their favorite color.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q6g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q6g-h1"
+        ],
+        "title": "Optimal Value of Theta",
+        "text": "The optimal value of theta minimizes the mean squared error between the predicted values and the actual values. In this case, theta represents the parameter that best fits the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q6g-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q6g-h2"
+        ],
+        "title": "Calculating Mean Squared Error",
+        "text": "The mean squared error is calculated as the average of the squares of the differences between the predicted values and the actual values. Use the formula: $$MSE=\\frac{\\sum \\left(y_{pred}-y_{actual}\\right)^2}{n}$$, where $$n$$ is the number of data points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q6g-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "0,1,1,1,0"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q6g-h3"
+        ],
+        "title": "Compute the Predictions",
+        "text": "Assume the optimal theta gives predictions that perfectly match the actual values. What would the predictions be for the given data points?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q6g-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "0,0,0,0,0"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q6g-s1"
+        ],
+        "title": "Calculate the Squared Differences",
+        "text": "Calculate the squared differences between the predicted values and the actual values for each data point.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q6g-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q6g-s2"
+        ],
+        "title": "Compute the Mean Squared Error",
+        "text": "Using the squared differences, compute the mean squared error by averaging them.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

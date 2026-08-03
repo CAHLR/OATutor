@@ -1,0 +1,49 @@
+[
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "The DataFrame $$`lunch_{mat}`$$ contains columns for `person`, $$`calories_1 d_{ago}`$$, $$`calories_2 d_{ago}`$$, and `calories`. These represent the person, calories consumed $$1$$ day ago, calories consumed $$2$$ days ago, and calories consumed today, respectively.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6g-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6g-h1"
+        ],
+        "title": "Linear Regression Coefficients",
+        "text": "In linear regression, `model.coef_` contains the coefficients for the features used in the model. The index `(ii)` refers to the position of the coefficient you want to extract.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6g-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6g-h2"
+        ],
+        "title": "Identify the Coefficient Index",
+        "text": "Which index in `model.coef_` corresponds to $$`\\theta_1`$$, the coefficient for $$`calories_1 d_{ago}`$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$-1$$",
+            "$$0$$",
+            "$$1$$",
+            "$$2$$",
+            "$$\\theta_1$$"
+        ]
+    }
+]

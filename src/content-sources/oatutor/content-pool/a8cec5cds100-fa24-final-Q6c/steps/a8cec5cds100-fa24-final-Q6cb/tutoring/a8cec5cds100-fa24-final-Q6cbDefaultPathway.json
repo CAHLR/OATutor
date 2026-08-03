@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a8cec5cds100-fa24-final-Q6cb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Loss Function",
+        "text": "The loss function given is L(theta)=-[y*log(p)+(1-y)*log((1-p)**3)]. This is a modified version of the cross-entropy loss function used in logistic regression.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa24-final-Q6cb-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa24-final-Q6cb-h1"
+        ],
+        "title": "Analyzing the Term $$y \\ln\\left(p\\right)$$",
+        "text": "In the loss function, the term $$y \\ln\\left(p\\right)$$ is part of the calculation when the actual class label $$y$$ is $$1$$. If the model predicts class $$0$$, what happens to this term?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa24-final-Q6cb-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a8cec5cds100-fa24-final-Q6cb-h2"
+        ],
+        "title": "Evaluating $$y \\ln\\left(p\\right)$$ when $$y=0$$",
+        "text": "Consider the scenario when the actual class label $$y$$ is $$0$$. What is the value of $$y \\ln\\left(p\\right)$$ in this case?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa24-final-Q6cb-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa24-final-Q6cb-h3"
+        ],
+        "title": "Conclusion on the Statement",
+        "text": "The statement claims that whenever a logistic regression model classifies a datapoint into class $$0$$, the loss component $$y \\ln\\left(p\\right)$$ is equal to $$0$$. Is this true based on your analysis?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

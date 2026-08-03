@@ -1,0 +1,63 @@
+[
+    {
+        "id": "a977a7fds100-su20-final-Q5an-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Bias-Variance Decomposition",
+        "text": "The bias-variance decomposition is a way to express the expected error of a model as the sum of three components: bias, variance, and irreducible error. In this context, we are interested in understanding what $E[Y-f_{\\hat{\\theta}}(x)]$ represents.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su20-final-Q5an-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su20-final-Q5an-h1"
+        ],
+        "title": "What is Model Bias?",
+        "text": "Model bias refers to the error introduced by approximating a real-world problem, which may be complex, by a simplified model. It is the difference between the expected prediction of our model and the true value we are trying to predict.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su20-final-Q5an-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su20-final-Q5an-h2"
+        ],
+        "title": "Relating Bias to the Expression",
+        "text": "In the bias-variance decomposition, the term $E[Y-f_{\\hat{\\theta}}(x)]$ is related to the bias of the model. Consider how the expected prediction of the model compares to the true value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su20-final-Q5an-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The negative of model bias"
+        ],
+        "dependencies": [
+            "a977a7fds100-su20-final-Q5an-h3"
+        ],
+        "title": "Identify the Expression",
+        "text": "Given the definition of model bias, what does $E[Y-f_{\\hat{\\theta}}(x)]$ represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "The negative of model bias",
+            "Model bias",
+            "Model bias squared",
+            "Model variance",
+            "Model standard deviation",
+            "Observation variance",
+            "None of these"
+        ]
+    }
+]

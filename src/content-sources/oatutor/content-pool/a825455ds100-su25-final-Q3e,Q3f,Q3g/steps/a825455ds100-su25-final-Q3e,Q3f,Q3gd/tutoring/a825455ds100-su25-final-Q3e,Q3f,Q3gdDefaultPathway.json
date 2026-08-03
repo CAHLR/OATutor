@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a825455ds100-su25-final-Q3e,Q3f,Q3gd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Agglomerative Clustering",
+        "text": "Agglomerative clustering is a type of hierarchical clustering that builds nested clusters by merging or splitting them successively. It is a bottom-up approach where each observation starts in its own cluster, and pairs of clusters are merged as one moves up the hierarchy.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su25-final-Q3e,Q3f,Q3gd-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-su25-final-Q3e,Q3f,Q3gd-h1"
+        ],
+        "title": "Deterministic Nature of Agglomerative Clustering",
+        "text": "Agglomerative clustering is deterministic when the distance metric and linkage criteria are fixed. This means that given the same data and parameters, the algorithm will always produce the same clustering result.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su25-final-Q3e,Q3f,Q3gd-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a825455ds100-su25-final-Q3e,Q3f,Q3gd-h2"
+        ],
+        "title": "Linkage Criteria in Agglomerative Clustering",
+        "text": "The linkage criteria determine how the distance between clusters is calculated. Common linkage criteria include single, complete, and average linkage. Each of these criteria will affect the clustering outcome.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a825455ds100-su25-final-Q3e,Q3f,Q3gd-h4",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-su25-final-Q3e,Q3f,Q3gd-h3"
+        ],
+        "title": "Impact of Ties in Distances",
+        "text": "In the context of this problem, assume there are no exact ties in distances between clusters. This assumption ensures that the clustering process is not affected by ties, which could otherwise lead to different clustering outcomes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su25-final-Q3e,Q3f,Q3gd-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a825455ds100-su25-final-Q3e,Q3f,Q3gd-h4"
+        ],
+        "title": "Conclusion on Convergence",
+        "text": "Given the deterministic nature of agglomerative clustering with fixed parameters and no ties in distances, the algorithm will always converge to the same solution when re-run under the same conditions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

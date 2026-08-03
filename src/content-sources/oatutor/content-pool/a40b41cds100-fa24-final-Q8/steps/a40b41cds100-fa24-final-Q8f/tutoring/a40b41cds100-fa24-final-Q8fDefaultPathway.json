@@ -1,0 +1,109 @@
+[
+    {
+        "id": "a40b41cds100-fa24-final-Q8f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Single Linkage",
+        "text": "Single linkage clustering, also known as nearest neighbor clustering, merges clusters based on the shortest distance between any two points in the clusters. Consider how this might affect the clustering of Team Pandas.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-fa24-final-Q8f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-fa24-final-Q8f-h1"
+        ],
+        "title": "Calculate Distances",
+        "text": "Calculate the Euclidean distance between Team Pandas and each of the other teams. Use the formula: $$distance=\\sqrt{\\left(x2-x1\\right)^2+\\left(y2-y1\\right)^2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-fa24-final-Q8f-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a40b41cds100-fa24-final-Q8f-h2"
+        ],
+        "title": "Distance to Team O-Ski",
+        "text": "Calculate the distance between Team Pandas $$(5,4)$$ and Team O-Ski $$(1,1)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-fa24-final-Q8f-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3.605551275$$"
+        ],
+        "dependencies": [
+            "a40b41cds100-fa24-final-Q8f-h2"
+        ],
+        "title": "Distance to Team SantaQlaus",
+        "text": "Calculate the distance between Team Pandas $$(5,4)$$ and Team SantaQlaus $$(3,1)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-fa24-final-Q8f-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4.123105625$$"
+        ],
+        "dependencies": [
+            "a40b41cds100-fa24-final-Q8f-h2"
+        ],
+        "title": "Distance to Team Ice-berk",
+        "text": "Calculate the distance between Team Pandas $$(5,4)$$ and Team Ice-berk $$(1,5)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-fa24-final-Q8f-h6",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-fa24-final-Q8f-h5"
+        ],
+        "title": "Identify the Closest Team",
+        "text": "Based on the calculated distances, identify which team is closest to Team Pandas using single linkage.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-fa24-final-Q8f-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Team SantaQlaus"
+        ],
+        "dependencies": [
+            "a40b41cds100-fa24-final-Q8f-h6"
+        ],
+        "title": "Forming Clusters",
+        "text": "Using single linkage, which team will Team Pandas cluster with first?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Team $$O-Ski$$",
+            "Team SantaQlaus",
+            "Team $$Ice-berk$$"
+        ]
+    }
+]

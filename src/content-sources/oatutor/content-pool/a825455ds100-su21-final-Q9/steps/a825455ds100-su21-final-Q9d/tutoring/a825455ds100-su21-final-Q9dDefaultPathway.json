@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a825455ds100-su21-final-Q9d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Graph and Table",
+        "text": "The graph shows the positions of points A, B, C, D, and E in a 2D space. The table provides the Euclidean distances between each pair of points. Use these distances to determine the smallest weight for the spectral clustering graph.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su21-final-Q9d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-su21-final-Q9d-h1"
+        ],
+        "title": "Identifying the Smallest Distance",
+        "text": "Look at the distance table. Identify the pair of points with the smallest distance. This will correspond to the edge with the smallest weight in the graph.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su21-final-Q9d-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.9$$"
+        ],
+        "dependencies": [
+            "a825455ds100-su21-final-Q9d-h2"
+        ],
+        "title": "Finding the Smallest Distance",
+        "text": "What is the smallest distance between any two points in the table?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su21-final-Q9d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "AE"
+        ],
+        "dependencies": [
+            "a825455ds100-su21-final-Q9d-h3"
+        ],
+        "title": "Determining the Edge with Smallest Weight",
+        "text": "Which pair of points corresponds to the smallest distance you found?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "AE",
+            "CD",
+            "BC",
+            "AB",
+            "CE"
+        ]
+    }
+]

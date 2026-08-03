@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a253306row10g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model for the observation is given by \\( \\hat{y}_i=f_{\\theta_1}(x_i)=\\theta_{1}\\log(x_i) \\). This means that each predicted value \\( \\hat{y}_i \\) is a function of \\( $$x_i$$ \\) and the parameter \\( $$\\theta_1$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row10g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row10g-h1"
+        ],
+        "title": "Mean Squared Error (MSE)",
+        "text": "The Mean Squared Error (MSE) is defined as \\( \\frac{1}{n}\\sum_{i=1}**n(y_i-f_{\\theta_1}(x_i))**2 \\). This is the quantity we want to minimize with respect to \\( $$\\theta_1$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row10g-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row10g-h2"
+        ],
+        "title": "Setting Up the Derivative",
+        "text": "To find the minimizer \\( \\hat{\\theta}_1 \\), take the derivative of the MSE with respect to \\( $$\\theta_1$$ \\) and set it to zero. This will give you the condition for the minimum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

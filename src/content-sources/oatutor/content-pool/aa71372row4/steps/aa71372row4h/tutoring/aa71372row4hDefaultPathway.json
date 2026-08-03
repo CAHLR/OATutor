@@ -1,0 +1,63 @@
+[
+    {
+        "id": "aa71372row4h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bimodal Distribution",
+        "text": "A bimodal distribution has two different modes or peaks. Consider what kind of plot would help you identify these peaks in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa71372row4h-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Alternative Plot Types",
+        "text": "Think about plots that show the frequency of data points, such as histograms or density plots. These can help identify multiple peaks in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa71372row4h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Histogram"
+        ],
+        "dependencies": [],
+        "title": "Identifying Plot Types",
+        "text": "Which plot type is typically used to show the frequency distribution of a dataset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Histogram",
+            "Bar Chart",
+            "Line Plot",
+            "Scatter Plot"
+        ]
+    },
+    {
+        "id": "aa71372row4h-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It shows the spread of weights for each shape but not the frequency distribution."
+        ],
+        "dependencies": [],
+        "title": "Analyzing the Current Plot",
+        "text": "What does the current plot show about the distribution of nugget weights by shape?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It shows the spread of weights for each shape but not the frequency distribution.",
+            "It shows the frequency distribution of weights for each shape.",
+            "It shows the average weight for each shape."
+        ]
+    }
+]

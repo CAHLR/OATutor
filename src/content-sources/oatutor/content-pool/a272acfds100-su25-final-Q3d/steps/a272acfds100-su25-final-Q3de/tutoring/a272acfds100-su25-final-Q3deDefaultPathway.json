@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a272acfds100-su25-final-Q3de-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA and SVD",
+        "text": "PCA (Principal Component Analysis) is a technique used to emphasize variation and bring out strong patterns in a dataset. It uses SVD (Singular Value Decomposition) to decompose the data matrix into three matrices: U, S, and $$V^T$$. The matrix S contains the singular values, which are crucial for determining the principal components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su25-final-Q3de-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-su25-final-Q3de-h1"
+        ],
+        "title": "Properties of V Matrix",
+        "text": "The matrix V in SVD is an orthogonal matrix, meaning its columns are orthonormal vectors. This means each column vector has a norm of $$1$$, and the dot product between any two different columns is $$0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su25-final-Q3de-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-su25-final-Q3de-h2"
+        ],
+        "title": "Analyzing the Norms and Dot Products",
+        "text": "Given the norms and dot products of the vectors v1, v2, v3, and v4, identify which vectors are orthonormal. Remember, orthonormal vectors have a norm of $$1$$ and a dot product of $$0$$ with each other.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su25-final-Q3de-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$v_1$$ and $$v_4$$"
+        ],
+        "dependencies": [
+            "a272acfds100-su25-final-Q3de-h3"
+        ],
+        "title": "Identifying Orthonormal Vectors",
+        "text": "Which vectors have a norm of $$1$$ and a dot product of $$0$$ with each other?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

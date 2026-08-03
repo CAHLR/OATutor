@@ -1,0 +1,18 @@
+{
+    "id": "ade7df0ds100-su25-final-Q3a,Q3b,Q3ce",
+    "stepAnswer": [
+        "$$e**{-71}$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Justin fits the following logistic regression model to predict the probability that a reply was made by an Ed bot:\\n$$P(y=1|x)=\\sigma(\\hat{\\theta}_1x_1+\\hat{\\theta}_2x_2)$$\\nwhere $$x_1$$ is likes and $$x_2$$ is response time, with $$\\hat{\\theta}_1=1$$ and $$\\hat{\\theta}_2=2$$\\nBased on the fitted model above, what are the estimated odds that a reply with likes $$=$$ $$3$$ and response time $$=$$ $$34$$ was made by a human? If preferred, feel free to use $$\\sigma$$ in your solution. You do not need to simplify algebra.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "$$e**{71}$$",
+        "$$e**{-71}$$",
+        "$$\\sigma(-71)$$",
+        "$$\\frac{e**{-71}}{1+e**{-71}}$$",
+        "$$-71$$"
+    ]
+}

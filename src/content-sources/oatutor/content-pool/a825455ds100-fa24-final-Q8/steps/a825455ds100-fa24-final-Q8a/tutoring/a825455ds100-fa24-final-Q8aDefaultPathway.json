@@ -1,0 +1,92 @@
+[
+    {
+        "id": "a825455ds100-fa24-final-Q8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding k-Means Clustering",
+        "text": "In k-Means clustering, each point is assigned to the cluster whose center (centroid) is closest to it. The distance is usually measured using the Euclidean distance formula.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa24-final-Q8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-fa24-final-Q8a-h1"
+        ],
+        "title": "Calculating Euclidean Distance",
+        "text": "The Euclidean distance between two points (x1,y1) and (x2,y2) is calculated as: $$\\sqrt{\\left(x2-x1\\right)^2+\\left(y2-y1\\right)^2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa24-final-Q8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a825455ds100-fa24-final-Q8a-h2"
+        ],
+        "title": "Distance from Team SantaQlaus to Cluster A",
+        "text": "Calculate the distance from Team SantaQlaus $$(3,1)$$ to the center of Cluster A $$(0,5)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa24-final-Q8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3.162$$"
+        ],
+        "dependencies": [
+            "a825455ds100-fa24-final-Q8a-h2"
+        ],
+        "title": "Distance from Team SantaQlaus to Cluster B",
+        "text": "Calculate the distance from Team SantaQlaus $$(3,1)$$ to the center of Cluster B $$(6,0)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa24-final-Q8a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-fa24-final-Q8a-h3",
+            "a825455ds100-fa24-final-Q8a-h4"
+        ],
+        "title": "Comparing Distances",
+        "text": "Compare the distances calculated to determine which cluster Team SantaQlaus is closer to.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa24-final-Q8a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Cluster B"
+        ],
+        "dependencies": [
+            "a825455ds100-fa24-final-Q8a-h5"
+        ],
+        "title": "Assigning Team SantaQlaus to a Cluster",
+        "text": "Based on the distances calculated, which cluster is Team SantaQlaus assigned to?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Cluster A",
+            "Cluster B"
+        ]
+    }
+]

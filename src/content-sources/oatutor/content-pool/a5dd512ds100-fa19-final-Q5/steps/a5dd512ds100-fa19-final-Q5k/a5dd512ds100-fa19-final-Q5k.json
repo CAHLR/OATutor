@@ -1,0 +1,19 @@
+{
+    "id": "a5dd512ds100-fa19-final-Q5k",
+    "stepAnswer": [
+        "The gradient is always $$0$$, so gradient descent never moves."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "A DS100 student wants to run gradient descent on the total zero-one loss to find optimal $$\\hat{\\beta}_{ZO}$$ and $$\\hat{T}_{ZO}.$$ Give the very specific reason that this will always fail. Answer in $$10$$ words or less. Vague answers will be given no credit.",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "The gradient is always $$0$$, so gradient descent never moves.",
+    "choices": [
+        "The zero one loss is not convex, so it has local minima.",
+        "The gradient is always $$0$$, so gradient descent never moves.",
+        "The zero one loss is unbounded below, so the updates diverge.",
+        "No learning rate is small enough for the updates to converge.",
+        "The zero one loss has no closed form solution for its optimum."
+    ]
+}

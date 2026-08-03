@@ -1,0 +1,110 @@
+[
+    {
+        "id": "aa71372row7_p1d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Grouping",
+        "text": "To fill in blank A, think about how you can group the data to calculate the mode for each activity type. Which column should you use to group the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa71372row7_p1d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using the Mode",
+        "text": "The mode is the most frequently occurring value in a dataset. For each activity type, you need to find the mode of the hour\\_of\\_visit. How can you achieve this using the groupby function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa71372row7_p1d-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "activity"
+        ],
+        "dependencies": [
+            "aa71372row7_p1d-h1"
+        ],
+        "title": "Filling Blank A",
+        "text": "Which column should you use to group the data to calculate the mode for each activity type?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa71372row7_p1d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "portal\\_traffic"
+        ],
+        "dependencies": [],
+        "title": "Filling Blank B",
+        "text": "To fill in blank B, consider which column you need to check for missing values. Which column are you imputing?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa71372row7_p1d-h5",
+        "type": "hint",
+        "dependencies": [
+            "aa71372row7_p1d-h4"
+        ],
+        "title": "Identifying Missing Values",
+        "text": "To identify missing values, you need to check which entries in the hour\\_of\\_visit column are NaN. How can you do this using pandas?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa71372row7_p1d-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "isna"
+        ],
+        "dependencies": [
+            "aa71372row7_p1d-h5"
+        ],
+        "title": "Filling Blank C",
+        "text": "Which function can you use to identify missing values in pandas?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa71372row7_p1d-h7",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Locating the Correct Column",
+        "text": "For blank D, consider which column you are updating with the replacement values. Which column are you imputing?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa71372row7_p1d-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "hour\\_of\\_visit"
+        ],
+        "dependencies": [
+            "aa71372row7_p1d-h7"
+        ],
+        "title": "Filling Blank D",
+        "text": "Which column are you updating with the replacement values?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

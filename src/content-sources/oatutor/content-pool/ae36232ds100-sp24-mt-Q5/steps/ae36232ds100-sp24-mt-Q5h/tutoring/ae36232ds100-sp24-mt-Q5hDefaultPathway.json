@@ -1,0 +1,65 @@
+[
+    {
+        "id": "ae36232ds100-sp24-mt-Q5h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean Cubed Error",
+        "text": "The Mean Cubed Error (MCE) is calculated as the average of the cubed differences between the actual and predicted values. This means that for each data point, you take the difference between the actual value $$y_i$$ and the predicted value (hat{y}_i), cube it, and then average these values over all data points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp24-mt-Q5h-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp24-mt-Q5h-h1"
+        ],
+        "title": "Effect of Cubing the Error",
+        "text": "Cubing the error means that both positive and negative errors are amplified, but in different ways. Positive errors (overpredictions) become more positive, while negative errors (underpredictions) become more negative. Consider how this affects the overall loss.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp24-mt-Q5h-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp24-mt-Q5h-h2"
+        ],
+        "title": "Comparing Overpredictions and Underpredictions",
+        "text": "Since the error is cubed, overpredictions (where hat{y}_i > y_i) result in a positive cubed error, while underpredictions (where hat{y}_i < y_i) result in a negative cubed error. Which type of error contributes more to the loss function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp24-mt-Q5h-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Cubing a positive number results in a larger absolute value compared to cubing a negative number of the same magnitude."
+        ],
+        "dependencies": [
+            "ae36232ds100-sp24-mt-Q5h-h3"
+        ],
+        "title": "Analyzing the Impact of Cubing",
+        "text": "Consider the impact of cubing a positive number versus a negative number. Which one results in a larger absolute value?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp24-mt-Q5h-h5",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp24-mt-Q5h-h4"
+        ],
+        "title": "Conclusion on Overpredictions vs. Underpredictions",
+        "text": "Given that cubing amplifies positive errors more than negative errors, overpredictions are penalized more heavily than underpredictions in the Mean Cubed Error loss function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a222079ds100-su20-final-Q4m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Models",
+        "text": "The first image shows two different models for linear regression. The first model uses the original design matrix, while the second uses the mean-centered design matrix. Consider how centering affects the regression coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-final-Q4m-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su20-final-Q4m-h1"
+        ],
+        "title": "Analyzing the Scatter Plot",
+        "text": "The scatter plot shows a clear negative linear trend. This indicates that as the feature value increases, the response value decreases. Consider how this trend affects the choice of parameter for minimizing test MSE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-final-Q4m-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su20-final-Q4m-h2"
+        ],
+        "title": "Effect of Centering on Coefficients",
+        "text": "Centering the data can affect the intercept but not the slope of the regression line. Since the scatter plot shows a linear trend, focus on how centering impacts the slope and test MSE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-final-Q4m-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\theta_B$$"
+        ],
+        "dependencies": [
+            "a222079ds100-su20-final-Q4m-h3"
+        ],
+        "title": "Choosing the Parameter",
+        "text": "Given the negative linear trend in the scatter plot, which parameter (theta_A or theta_B) is likely to achieve a lower test MSE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\theta_A$$",
+            "$$\\theta_B$$",
+            "Both achieve the same test MSE",
+            "Cannot be determined without seeing the plot",
+            "Neither, both are equally poor"
+        ]
+    }
+]

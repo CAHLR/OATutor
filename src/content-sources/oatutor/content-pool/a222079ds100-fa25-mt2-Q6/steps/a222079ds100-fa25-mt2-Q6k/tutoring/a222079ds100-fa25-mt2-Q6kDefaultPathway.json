@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a222079ds100-fa25-mt2-Q6k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LASSO Regularization",
+        "text": "LASSO regularization adds a penalty equal to the absolute value of the magnitude of coefficients to the loss function. This can lead to some coefficients being exactly zero, effectively selecting a simpler model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa25-mt2-Q6k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa25-mt2-Q6k-h1"
+        ],
+        "title": "Effect on Training MSE",
+        "text": "When LASSO regularization is applied, the model complexity is reduced, which can lead to an increase in training error because the model may not fit the training data as closely.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa25-mt2-Q6k-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa25-mt2-Q6k-h2"
+        ],
+        "title": "Possible Outcomes",
+        "text": "Consider how reducing model complexity with LASSO affects the fit on training data. Does it generally lead to an increase or decrease in training error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa25-mt2-Q6k-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase only"
+        ],
+        "dependencies": [
+            "a222079ds100-fa25-mt2-Q6k-h3"
+        ],
+        "title": "Determine the Effect",
+        "text": "What is the effect of using LASSO regularization on the MSE of training data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase only",
+            "Decrease only",
+            "Increase and Decrease",
+            "Neither Increase nor Decrease",
+            "Cannot be determined"
+        ]
+    }
+]

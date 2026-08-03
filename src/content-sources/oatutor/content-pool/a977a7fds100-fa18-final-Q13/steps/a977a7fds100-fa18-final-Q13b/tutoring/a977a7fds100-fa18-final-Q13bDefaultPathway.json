@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a977a7fds100-fa18-final-Q13b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Expectation",
+        "text": "The expectation is taken over the randomness in the data. When we draw random samples from a population, each sample can be different, leading to different model outcomes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q13b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q13b-h1"
+        ],
+        "title": "Sources of Randomness",
+        "text": "Consider the sources of randomness in the bias-variance tradeoff. One source is the randomness in the data due to sampling from a population.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q13b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q13b-h2"
+        ],
+        "title": "Reason for Expectation",
+        "text": "Why do we take an expectation in the bias-variance tradeoff? Is it because we draw random samples from a population?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

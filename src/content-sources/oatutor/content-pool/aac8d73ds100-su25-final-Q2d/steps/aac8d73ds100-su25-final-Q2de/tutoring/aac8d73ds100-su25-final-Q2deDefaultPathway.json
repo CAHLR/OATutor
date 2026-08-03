@@ -1,0 +1,70 @@
+[
+    {
+        "id": "aac8d73ds100-su25-final-Q2de-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross Validation",
+        "text": "In 7-fold cross-validation, the dataset is divided into $$7$$ parts. Each part is used as a validation set once, while the remaining $$6$$ parts are used for training.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su25-final-Q2de-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su25-final-Q2de-h1"
+        ],
+        "title": "Calculating Total Model Fits",
+        "text": "Milena tests $$2$$ values of \u03bb and $$5$$ values of \u03c1. For each combination of \u03bb and \u03c1, she performs 7-fold cross-validation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su25-final-Q2de-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2\\times5\\times7$$"
+        ],
+        "dependencies": [
+            "aac8d73ds100-su25-final-Q2de-h2"
+        ],
+        "title": "Determine the Number of Model Fits",
+        "text": "Calculate the total number of model fits by multiplying the number of \u03bb values, \u03c1 values, and the number of folds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su25-final-Q2de-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6\\times2\\times5\\times7$$"
+        ],
+        "dependencies": [
+            "aac8d73ds100-su25-final-Q2de-h3"
+        ],
+        "title": "Determine the Usage of Each Data Point",
+        "text": "Each data point is used in the training set for $$6$$ out of the $$7$$ folds. Multiply this by the total number of model fits.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su25-final-Q2de-h5",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su25-final-Q2de-h4"
+        ],
+        "title": "Final Calculation",
+        "text": "Each data point is used in the training set $$6$$ times per fold. Multiply this by the total number of model fits to find the total usage of each data point.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

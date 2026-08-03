@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a222079ds100-su20-final-Q4f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Equations",
+        "text": "The equations represent the optimization problems for finding the coefficients in linear regression. The first equation is for the original data, and the second is for the mean-centered data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-final-Q4f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su20-final-Q4f-h1"
+        ],
+        "title": "Mean-Centering Effect",
+        "text": "Mean-centering the data affects the intercept term but not the other coefficients. This is because centering the data shifts it to have a mean of zero, which changes the intercept but not the slope.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-final-Q4f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su20-final-Q4f-h2"
+        ],
+        "title": "MSE Comparison",
+        "text": "The mean squared error (MSE) measures the average squared difference between the observed actual outcomes and the outcomes predicted by the model. When data is mean-centered, the MSE remains the same because the centering does not affect the variance of the errors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

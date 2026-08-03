@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a613447ds100-fa19-mt2-Q3e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "Model variance refers to how much the predictions of a model will change if we use a different training dataset. It is influenced by the complexity of the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa19-mt2-Q3e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa19-mt2-Q3e-h1"
+        ],
+        "title": "Factors Affecting Model Variance",
+        "text": "Consider how the complexity of the model and the amount of data used for training might affect the variance of the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa19-mt2-Q3e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa19-mt2-Q3e-h2"
+        ],
+        "title": "Impact of Model Complexity",
+        "text": "As model complexity increases, the model variance tends to increase. This is because more complex models can fit the training data more closely, leading to higher sensitivity to changes in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa19-mt2-Q3e-h4",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa19-mt2-Q3e-h3"
+        ],
+        "title": "Role of Training Data",
+        "text": "The amount of training data can also impact model variance. More data can help reduce variance by providing a more comprehensive view of the underlying distribution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a222079ds100-fa25-mt2-Q4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding is a process used to convert categorical data into a binary matrix. Each category is represented by a column, and a row has a $$1$$ in the column corresponding to its category and 0s elsewhere.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa25-mt2-Q4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa25-mt2-Q4a-h1"
+        ],
+        "title": "Analyzing the Design Matrix",
+        "text": "Look at the design matrix. Each row represents a data point, and each column (except the intercept) represents a category of the categorical feature.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa25-mt2-Q4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa25-mt2-Q4a-h2"
+        ],
+        "title": "Counting Unique Categories",
+        "text": "Count the number of columns (excluding the intercept) that have a $$1$$ in at least one row. This will give you the number of unique categories.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa25-mt2-Q4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a222079ds100-fa25-mt2-Q4a-h3"
+        ],
+        "title": "Determine the Number of Unique Categories",
+        "text": "How many columns (excluding the intercept) have a $$1$$ in at least one row?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa25-mt2-Q4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa25-mt2-Q4a-h4"
+        ],
+        "title": "Considering the Zero Rows",
+        "text": "Rows $$5$$ and $$6$$ have all zeros in the one-hot encoded columns. This indicates an additional category not represented by a specific column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa25-mt2-Q4a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "a222079ds100-fa25-mt2-Q4a-h5"
+        ],
+        "title": "Final Count of Unique Categories",
+        "text": "Add the number of columns with a $$1$$ to account for the category represented by the zero rows.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

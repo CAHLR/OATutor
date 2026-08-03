@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3dg-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To determine the dimensionality of \\( \\hat{\\theta} \\), consider how many parameters are needed for the model. Each genre will have its own parameter.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3dg-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp24-final-Q3b,Q3c,Q3dg-h1"
+        ],
+        "title": "One-Hot Encoding",
+        "text": "When using one-hot encoding for categorical variables like genre, each genre gets its own column. How does this affect the number of parameters?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3dg-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp24-final-Q3b,Q3c,Q3dg-h2"
+        ],
+        "title": "Dimensionality of Parameters",
+        "text": "If there are \\( $$m$$ \\) genres, and each genre is represented by a parameter, what is the dimensionality of the parameter vector?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3dg-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$m$$"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp24-final-Q3b,Q3c,Q3dg-h3"
+        ],
+        "title": "Calculate Dimensionality",
+        "text": "Given \\( $$m$$ \\) genres, what is the dimensionality of \\( \\hat{\\theta} \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

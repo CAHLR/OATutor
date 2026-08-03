@@ -1,0 +1,60 @@
+[
+    {
+        "id": "aac8d73ds100-su21-final-Q4n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting by adding a penalty to the model's complexity. However, if the regularization is too strong, it can lead to high bias.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su21-final-Q4n-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su21-final-Q4n-h1"
+        ],
+        "title": "Effect of High Bias",
+        "text": "High bias in a model indicates that the model is too simple and is not capturing the underlying patterns in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su21-final-Q4n-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su21-final-Q4n-h2"
+        ],
+        "title": "Reducing Model Bias",
+        "text": "To reduce model bias, consider using a more complex model or reducing the regularization strength.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su21-final-Q4n-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aac8d73ds100-su21-final-Q4n-h3"
+        ],
+        "title": "Solution to High Bias",
+        "text": "Which of the following actions can help reduce model bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "Increase model complexity",
+            "Increase regularization strength",
+            "Reduce regularization strength",
+            "Use more data"
+        ]
+    }
+]

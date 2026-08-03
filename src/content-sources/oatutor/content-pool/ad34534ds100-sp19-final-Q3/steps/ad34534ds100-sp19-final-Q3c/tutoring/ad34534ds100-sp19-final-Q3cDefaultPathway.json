@@ -1,0 +1,60 @@
+[
+    {
+        "id": "ad34534ds100-sp19-final-Q3c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model is given by the equation: $$y_i=\\beta_0+x_i \\beta_1+f{\\left(x_i\\right)} \\beta_2$$. We need to determine which function f(x) allows us to fit the data points in the scatterplot.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp19-final-Q3c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp19-final-Q3c-h1"
+        ],
+        "title": "Analyzing the Scatterplot",
+        "text": "Observe the scatterplot. The data points appear to follow a quadratic pattern. Consider which function f(x) would allow the model to fit this pattern.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp19-final-Q3c-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp19-final-Q3c-h2"
+        ],
+        "title": "Choosing the Function",
+        "text": "Given the quadratic pattern in the scatterplot, which function f(x) would allow the model to fit the data? Consider $$f(x)=x^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp19-final-Q3c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "C"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp19-final-Q3c-h3"
+        ],
+        "title": "Selecting the Correct Function",
+        "text": "Based on the quadratic pattern, select the function f(x) that allows the model to fit the data: (A) $$f(x)=-x$$, (B) $$f(x)=x$$, (C) $$f(x)=x^2$$, (D) $$f(x)=|x|$$, (E) None of these.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+        ]
+    }
+]

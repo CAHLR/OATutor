@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a9831a6row14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Look for a Word Containing love",
+        "text": "The target word can be love or a longer word like loved. A useful pattern should match love and then allow additional letters before the space.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9831a6row14a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "the animations"
+        ],
+        "dependencies": [
+            "a9831a6row14a-h1"
+        ],
+        "title": "Words After love",
+        "text": "In \"I love the animations\", which two words should be captured?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "the animations",
+            "love the",
+            "animations and",
+            "the"
+        ]
+    },
+    {
+        "id": "a9831a6row14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9831a6row14a-h2"
+        ],
+        "title": "Capture Only the Desired Output",
+        "text": "Because re.findall returns the contents of a capturing group when parentheses are present, the group should surround the two words after the love-containing word, not the word love itself.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9831a6row14a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9831a6row14a-h3"
+        ],
+        "title": "Why the Correct Pattern Works",
+        "text": "The pattern r\"love[A-Za-z]*\\s(\\w+\\s\\w+)\" matches love plus optional letters, then a space, and captures the next two words inside the group.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

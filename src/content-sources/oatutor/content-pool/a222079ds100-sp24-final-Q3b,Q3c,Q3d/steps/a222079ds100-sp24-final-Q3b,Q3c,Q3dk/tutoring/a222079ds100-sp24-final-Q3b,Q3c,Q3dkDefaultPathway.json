@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a222079ds100-sp24-final-Q3b,Q3c,Q3dk-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Models",
+        "text": "A model is considered linear with respect to its parameters if the parameters appear linearly in the equation. This means that the parameters are not multiplied together, raised to a power, or involved in any non-linear operations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp24-final-Q3b,Q3c,Q3dk-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-sp24-final-Q3b,Q3c,Q3dk-h1"
+        ],
+        "title": "Analyzing the Given Model",
+        "text": "In the model \\( \\hat{y}=\\theta_1+\\theta_1**{2}x_1 \\), check how the parameter \\( $$\\theta_1$$ \\) is used. Is it linear with respect to \\( $$\\theta_1$$ \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp24-final-Q3b,Q3c,Q3dk-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "\\theta_1**{2}x_1"
+        ],
+        "dependencies": [
+            "a222079ds100-sp24-final-Q3b,Q3c,Q3dk-h2"
+        ],
+        "title": "Identifying Non-linear Terms",
+        "text": "In the expression \\( \\theta_1+\\theta_1**{2}x_1 \\), identify which term makes the model non-linear with respect to \\( $$\\theta_1$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp24-final-Q3b,Q3c,Q3dk-h4",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-sp24-final-Q3b,Q3c,Q3dk-h3"
+        ],
+        "title": "Conclusion on Linearity",
+        "text": "If any parameter is raised to a power other than $$1$$, the model is not linear with respect to that parameter.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

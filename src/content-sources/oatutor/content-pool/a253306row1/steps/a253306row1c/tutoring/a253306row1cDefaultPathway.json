@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a253306row1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Orthogonality",
+        "text": "In linear algebra, two vectors are orthogonal if their dot product is zero. This means they are perpendicular to each other in the vector space.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row1c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row1c-h1"
+        ],
+        "title": "Residuals in OLS",
+        "text": "The residuals in an OLS model, represented by Y-\\hat{Y}, are the differences between the observed values and the predicted values. These residuals have a special relationship with the design matrix X.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row1c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row1c-h2"
+        ],
+        "title": "Properties of Residuals",
+        "text": "In an OLS model, the residuals are orthogonal to the columns of the design matrix X. This is a key property that ensures the best fit line minimizes the sum of squared residuals.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row1c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Orthogonal to"
+        ],
+        "dependencies": [
+            "a253306row1c-h3"
+        ],
+        "title": "Orthogonality Check",
+        "text": "Given the property of residuals in OLS, what can we say about the relationship between Y-\\hat{Y} and $$X_p$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Orthogonal to",
+            "In the span of",
+            "NOT orthogonal to and NOT in the span of"
+        ]
+    }
+]

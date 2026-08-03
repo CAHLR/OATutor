@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a977a7fds100-fa21-mt-Q2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Normalization",
+        "text": "Normalization is a technique often used in data preprocessing to scale the data to a specific range, usually between $$0$$ and $$1$$. This helps in improving the performance and stability of the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2c-h1"
+        ],
+        "title": "Why Normalize Age?",
+        "text": "Normalizing age values between $$0$$ and $$1$$ ensures that the age feature has the same scale as other features, preventing it from dominating the model due to its larger range.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$normalized_{age}=\\frac{age-min_{age}}{max_{age}-min_{age}}$$"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2c-h2"
+        ],
+        "title": "How to Normalize Age",
+        "text": "To normalize age values between $$0$$ and $$1$$, use the formula: $$normalized_{age}=\\frac{age-min_{age}}{max_{age}-min_{age}}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2c-h3"
+        ],
+        "title": "Using Normalized Age in the Model",
+        "text": "Once age is normalized, it can be used as a feature in the model. This ensures that the model treats age on the same scale as other features, improving model performance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

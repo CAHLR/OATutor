@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a272acfds100-su25-final-Q3db-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA and SVD",
+        "text": "PCA (Principal Component Analysis) is a technique used to emphasize variation and bring out strong patterns in a dataset. It is often used to make data easy to explore and visualize. SVD (Singular Value Decomposition) is a method used in PCA to decompose a matrix into three other matrices.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su25-final-Q3db-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-su25-final-Q3db-h1"
+        ],
+        "title": "Matrix Decomposition in SVD",
+        "text": "In SVD, a matrix X is decomposed into three matrices: U, S, and $$V^T$$. The matrix S contains the singular values, which are the square roots of the eigenvalues of $$X^T$$ X.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su25-final-Q3db-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-su25-final-Q3db-h2"
+        ],
+        "title": "Role of Singular Values",
+        "text": "The singular values in matrix S indicate the amount of variance captured by each principal component. Larger singular values correspond to components that capture more variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su25-final-Q3db-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The first component captures the most variance followed by the second and then the third."
+        ],
+        "dependencies": [
+            "a272acfds100-su25-final-Q3db-h3"
+        ],
+        "title": "Understanding the Matrix S",
+        "text": "Given that S is a 3x3 diagonal matrix with diagonal entries (100, $$88$$, 8), what does this tell us about the variance captured by each component?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su25-final-Q3db-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Yes because the first two rows of V correspond to the first two principal components."
+        ],
+        "dependencies": [
+            "a272acfds100-su25-final-Q3db-h4"
+        ],
+        "title": "Using SVD to Compute Latent Features",
+        "text": "If Justin has the matrix S and the first two rows of V, can he compute the first two latent features for all observations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

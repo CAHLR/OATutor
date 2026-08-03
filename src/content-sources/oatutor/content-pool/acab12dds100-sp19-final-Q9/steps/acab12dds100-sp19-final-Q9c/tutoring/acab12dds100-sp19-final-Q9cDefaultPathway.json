@@ -1,0 +1,61 @@
+[
+    {
+        "id": "acab12dds100-sp19-final-Q9c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "You need to select the histogram that best visualizes the distribution of the sample standard deviation from the given options.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp19-final-Q9c-h2",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-sp19-final-Q9c-h1"
+        ],
+        "title": "Characteristics of the Sampling Distribution",
+        "text": "The sampling distribution of the sample standard deviation is typically bell-shaped and symmetric, especially with a larger sample size.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp19-final-Q9c-h3",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-sp19-final-Q9c-h2"
+        ],
+        "title": "Analyzing the Options",
+        "text": "Look for a histogram that is symmetric and bell-shaped, which is characteristic of a normal distribution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp19-final-Q9c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "D"
+        ],
+        "dependencies": [
+            "acab12dds100-sp19-final-Q9c-h3"
+        ],
+        "title": "Selecting the Correct Histogram",
+        "text": "Which histogram is symmetric and bell-shaped?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+        ]
+    }
+]

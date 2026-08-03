@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a8cec5cds100-sp25-mt-Q3eb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Objective Function",
+        "text": "The objective function is given as R(\u03b8)=1/1000*sum{i=1}{3}{abs(x_i-\u03b8)}. This is a sum of absolute differences between each data point and \u03b8, scaled by $$\\frac{1}{1000}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-mt-Q3eb-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp25-mt-Q3eb-h1"
+        ],
+        "title": "Median Minimizes Absolute Differences",
+        "text": "The value of \u03b8 that minimizes the sum of absolute differences is the median of the data points. This is because the median minimizes the sum of absolute deviations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-mt-Q3eb-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "a8cec5cds100-sp25-mt-Q3eb-h2"
+        ],
+        "title": "Finding the Median",
+        "text": "Given the data points {1, $$6$$, 17}, what is the median?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-mt-Q3eb-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp25-mt-Q3eb-h3"
+        ],
+        "title": "Verify the Median",
+        "text": "To verify, calculate the absolute differences for each data point with $$\\theta=6$$: $$|1-6|$$, $$|6-6|$$, $$|17-6|$$. Sum these differences and compare with other potential \u03b8 values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

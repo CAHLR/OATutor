@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ae27c55ds100-fa18-final-Q5h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrap Replicates",
+        "text": "Bootstrap replicates are used to estimate the sampling distribution of a statistic by resampling with replacement from the original data. In this problem, the replicates are given in rows, and their statistics are calculated.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa18-final-Q5h-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa18-final-Q5h-h1"
+        ],
+        "title": "Identifying the Correct Statistics",
+        "text": "The rowvars column in the table represents the variances of each bootstrap replicate. Use these values to construct the confidence interval for the population variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa18-final-Q5h-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa18-final-Q5h-h2"
+        ],
+        "title": "Calculating the Confidence Interval",
+        "text": "To construct a 50% confidence interval, find the 25th and 75th percentiles of the rowvars. These percentiles will give you the endpoints of the interval.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa18-final-Q5h-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$243$$"
+        ],
+        "dependencies": [
+            "ae27c55ds100-fa18-final-Q5h-h3"
+        ],
+        "title": "Finding the 25th Percentile",
+        "text": "The 25th percentile of the rowvars is the value at the first quartile. What is this value?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

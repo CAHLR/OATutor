@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a253306row10d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MAE and MSE",
+        "text": "Mean Absolute Error (MAE) and Mean Squared Error (MSE) are both measures of prediction accuracy. However, they have different properties when it comes to optimization. Consider how each error measure affects the optimization landscape.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row10d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row10d-h1"
+        ],
+        "title": "Unique Solution for MAE",
+        "text": "For a linear regression model, the Mean Absolute Error (MAE) does not always guarantee a unique solution for the optimal parameters. This is because the MAE optimization problem can have multiple solutions, especially when the data points are symmetrically distributed around the median.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row10d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row10d-h2"
+        ],
+        "title": "Comparing MAE and MSE",
+        "text": "While MSE is differentiable and convex, leading to a unique solution, MAE is not differentiable at zero and can have multiple solutions. This is a key difference between the two error measures.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,80 @@
+[
+    {
+        "id": "acab12dds100-fa18-final-Q5f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrap Replicates",
+        "text": "Bootstrap replicates are used to estimate the sampling distribution of a statistic by resampling with replacement from the original data. In this table, each row represents a bootstrap sample, and each column represents a replicate.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa18-final-Q5f-h2",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa18-final-Q5f-h1"
+        ],
+        "title": "Analyzing the Table",
+        "text": "The table shows replicates in columns and bootstrap samples in rows. The rowmeans, rowvars, and rowmedians are calculated for each row, while colmeans, colvars, and colmedians are calculated for each column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa18-final-Q5f-h3",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa18-final-Q5f-h2"
+        ],
+        "title": "Decreasing Variance of Sample Mean",
+        "text": "To decrease the variance of the sample mean, consider increasing the sample size or the number of bootstrap replicates. Both actions can lead to a more stable estimate of the mean.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa18-final-Q5f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The variance decreases."
+        ],
+        "dependencies": [
+            "acab12dds100-fa18-final-Q5f-h3"
+        ],
+        "title": "Effect of Increasing Sample Size",
+        "text": "What happens to the variance of the sample mean if you increase the sample size?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The variance decreases.",
+            "The variance increases.",
+            "The variance stays the same."
+        ]
+    },
+    {
+        "id": "acab12dds100-fa18-final-Q5f-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The variance decreases."
+        ],
+        "dependencies": [
+            "acab12dds100-fa18-final-Q5f-h4"
+        ],
+        "title": "Effect of Increasing Bootstrap Replicates",
+        "text": "What happens to the variance of the sample mean if you increase the number of bootstrap replicates?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The variance decreases.",
+            "The variance increases.",
+            "The variance stays the same."
+        ]
+    }
+]

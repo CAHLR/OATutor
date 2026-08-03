@@ -1,0 +1,48 @@
+[
+    {
+        "id": "aac8d73ds100-su20-final-Q4n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Effect of Regularization",
+        "text": "As the regularization parameter lambda approaches positive $$\\infty$$, the model's complexity is heavily penalized. What does this imply for the coefficients of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q4n-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q4n-h1"
+        ],
+        "title": "Impact on Coefficients",
+        "text": "When lambda is very large, the penalty term in the regularization becomes dominant. How does this affect the values of the coefficients in the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q4n-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q4n-h2"
+        ],
+        "title": "Predictions with Large Lambda",
+        "text": "Consider the effect of a large lambda on the predictions of the model. What happens to the predictions when the coefficients are driven towards zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "the mean of the true $$y$$ values",
+            "$$\\frac{1}{\\lambda}$$",
+            "$$p+1$$",
+            "Impossible to tell"
+        ]
+    }
+]

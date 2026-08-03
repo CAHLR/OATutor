@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a613447ds100-sp24-final-Q6d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "When the testing error increases while the training error decreases, it often indicates a problem with the model's complexity. Consider how bias and variance play a role in this scenario.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp24-final-Q6d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp24-final-Q6d-h1"
+        ],
+        "title": "Model Complexity and Overfitting",
+        "text": "Adding more features can increase the model's complexity. This might lead to overfitting, where the model performs well on training data but poorly on unseen data. Think about how this affects bias and variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp24-final-Q6d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Bias decreases, variance increases"
+        ],
+        "dependencies": [
+            "a613447ds100-sp24-final-Q6d-h2"
+        ],
+        "title": "Identifying Overfitting",
+        "text": "What happens to the bias and variance when a model becomes too complex?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Bias increases, variance decreases",
+            "Bias decreases, variance increases",
+            "Both bias and variance increase",
+            "Both bias and variance decrease"
+        ]
+    },
+    {
+        "id": "a613447ds100-sp24-final-Q6d-h4",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp24-final-Q6d-h3"
+        ],
+        "title": "Impact of Overfitting on Errors",
+        "text": "In the context of overfitting, why does the testing error increase while the training error decreases? Consider the model's ability to generalize to new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp24-final-Q6d-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The model fits the training data too closely and fails to generalize well to new data, leading to higher testing error."
+        ],
+        "dependencies": [
+            "a613447ds100-sp24-final-Q6d-h4"
+        ],
+        "title": "Generalization and Error Rates",
+        "text": "How does overfitting affect a model's ability to generalize to new data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The model fits the training data too closely and fails to generalize well to new data, leading to higher testing error",
+            "The model fits the training data too closely and fails to generalize well to new data, leading to higher testing error.",
+            "The model generalizes well, leading to lower testing error",
+            "The model's performance on new data is unaffected by overfitting"
+        ]
+    }
+]

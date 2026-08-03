@@ -1,0 +1,18 @@
+{
+    "id": "a5dd512ds100-su19-final-Q7g",
+    "stepAnswer": [
+        "$$1$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "blank (c.ii): given $$\\theta**{(t)}=-1$$ and $$X_i=5$$ and $$\\lambda\\in{R}$$ and $$\\alpha=1$$ find $$y_i.$$",
+    "stepBody": "Suppose we use SGD to fit a logistic regression model with $$L_2$$ regularization with one model weight and no intercept term, using the update rule\\n$$\\theta**{(t+1)}=(1-2\\lambda)\\theta**{(t)}+\\alpha[(y_i-\\sigma(X_{i}\\cdot{\\theta}**{(t)}))X_i]$$\\nCombinations of $$\\theta**{(t)}$$ and $$X_i$$ and $$y_i$$ and $$\\lambda$$ and $$\\alpha$$ are listed below. Complete the combination such that $$\\theta**{(t+1)}$$ will be the most positive after one iteration of SGD among the choices provided.\\nThe notation $$\\lambda\\in{R}$$ means that $$\\lambda$$ is a fixed, unknown real number (which can be either positive, zero, or negative). If more than one choice produces the most positive value, select Tie. If you need more information on unknown variables to solve the problem, select Need Info.",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "$$1$$",
+    "choices": [
+        "$$0$$",
+        "$$1$$",
+        "Tie",
+        "Need Info"
+    ]
+}

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ae36232ds100-su25-final-Q2i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "Wesley is using a linear model with two features: $${x_{i1}}^3$$ and $$\\ln\\left(x_{i2}\\right)$$. He has $$30$$ unique data points. What does this imply about the model's ability to find a unique solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2i-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2i-h1"
+        ],
+        "title": "Adding a New Feature",
+        "text": "If Wesley adds $${x_{i1}}^6$$ as a new feature, how does this affect the model? Consider the relationship between the new feature and the existing feature $${x_{i1}}^3$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2i-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2i-h2"
+        ],
+        "title": "Linear Dependence",
+        "text": "Think about the relationship between $${x_{i1}}^3$$ and $${x_{i1}}^6$$. Are they linearly independent? What does this mean for the model's ability to find a unique solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2i-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2i-h3"
+        ],
+        "title": "Checking for Linear Independence",
+        "text": "Determine if $${x_{i1}}^3$$ and $${x_{i1}}^6$$ are linearly independent. If they are not, what does this imply about the model's ability to find a unique solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

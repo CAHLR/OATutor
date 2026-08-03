@@ -1,0 +1,57 @@
+[
+    {
+        "id": "aac8d73ds100-fa20-final-Q7b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Overfitting",
+        "text": "Overfitting occurs when a model learns the training data too well, including its noise and outliers, which can negatively impact its performance on new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa20-final-Q7b-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa20-final-Q7b-h1"
+        ],
+        "title": "Role of Validation Set",
+        "text": "The validation set is used to evaluate the model's performance during training. It helps in tuning the model's parameters to avoid overfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa20-final-Q7b-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa20-final-Q7b-h2"
+        ],
+        "title": "Effect of Using Half the Validation Set",
+        "text": "Consider how using only half of the validation set might affect the model's ability to generalize. Does it increase the risk of overfitting?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa20-final-Q7b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa20-final-Q7b-h3"
+        ],
+        "title": "Analyzing the Impact",
+        "text": "If we use only half of the validation set, does it provide enough data to accurately evaluate the model's performance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

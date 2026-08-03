@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a613447ds100-sp19-final-Q8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias",
+        "text": "Bias is the difference between the expected value of the estimator and the true value of the parameter being estimated. In this case, the true value is the maximum number of dots on a die face.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp19-final-Q8b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp19-final-Q8b-h1"
+        ],
+        "title": "Expected Value of the Estimator",
+        "text": "Consider the expected value of the outcome when rolling a fair 6-sided die. What is the average number of dots you expect to see?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp19-final-Q8b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp19-final-Q8b-h2"
+        ],
+        "title": "True Maximum Value",
+        "text": "The true maximum value of a 6-sided die is the number of dots on the face with the most dots. What is this value?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp19-final-Q8b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-2.5$$"
+        ],
+        "dependencies": [
+            "a613447ds100-sp19-final-Q8b-h3"
+        ],
+        "title": "Calculate the Bias",
+        "text": "Calculate the bias using the formula: Bias $$=$$ Expected Value of Estimator - True Maximum Value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

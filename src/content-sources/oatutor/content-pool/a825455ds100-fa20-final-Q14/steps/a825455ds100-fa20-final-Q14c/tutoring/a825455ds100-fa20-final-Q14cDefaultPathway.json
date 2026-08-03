@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a825455ds100-fa20-final-Q14c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Origins",
+        "text": "Consider where each of these tools was developed. Were they all created at the same institution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa20-final-Q14c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-fa20-final-Q14c-h1"
+        ],
+        "title": "Hadoop's Origin",
+        "text": "Hadoop was initially developed by Doug Cutting and Mike Cafarella. Was it at Berkeley?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa20-final-Q14c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-fa20-final-Q14c-h1"
+        ],
+        "title": "Spark's Origin",
+        "text": "Apache Spark was developed at UC Berkeley's AMPLab. Does this align with the statement?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa20-final-Q14c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-fa20-final-Q14c-h1"
+        ],
+        "title": "Modin's Origin",
+        "text": "Modin was developed at UC Berkeley's RISELab. Does this support the statement?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa20-final-Q14c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a825455ds100-fa20-final-Q14c-h2",
+            "a825455ds100-fa20-final-Q14c-h3",
+            "a825455ds100-fa20-final-Q14c-h4"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Based on the origins of Hadoop, Spark, and Modin, is the statement true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

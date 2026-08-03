@@ -1,0 +1,17 @@
+{
+    "id": "a253306row5b",
+    "stepAnswer": [
+        "$$-\\frac{2}{n}\\sum_{i=1}**{n}x_i**{2}(y_i-\\theta_1x_i)$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Find the derivative of $$R\\left(\\theta_1\\right)$$ in terms of $$x_i$$ $$y_i$$ $$\\theta_1$$ and $$n.$$",
+    "stepBody": "Rachel continues analyzing the number of rides $$y_i$$ based on the hours $$x_i.$$ She models the relationship using SLR without an intercept:\\n$$\\text{rides}=\\theta_{1}\\text{hours}$$\\nInstead of using MSE, she decides to minimize the following custom objective function:\\n$$R(\\theta_1)=\\frac{1}{n}\\sum_{i=1}**{n}x_i(y_i-\\theta_1x_i)**{2}$$",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "$$-\\frac{2}{n}\\sum_{i=1}**{n}x_i**{2}(y_i-\\theta_1x_i)$$",
+        "$$-\\frac{2}{n}\\sum_{i=1}**{n}x_i(y_i-\\theta_1x_i)$$",
+        "$$\\frac{2}{n}\\sum_{i=1}**{n}x_i**{2}(y_i-\\theta_1x_i)$$",
+        "$$-\\frac{2}{n}\\sum_{i=1}**{n}x_i**{2}$$"
+    ]
+}

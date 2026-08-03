@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a977a7fds100-su19-final-Q6{-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model includes the variable 'veg' and dummy variables for the type of meat. Removing 'veg' would mean the model only uses the type of meat to predict the total bill.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6{-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6{-h1"
+        ],
+        "title": "Impact on Bias",
+        "text": "Bias refers to the error introduced by approximating a real-world problem by a simplified model. Removing 'veg' might increase bias if 'veg' is a significant predictor of the total bill.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6{-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6{-h1"
+        ],
+        "title": "Impact on Variance",
+        "text": "Variance refers to the model's sensitivity to fluctuations in the training data. Removing 'veg' could decrease variance because the model becomes simpler with fewer parameters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6{-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6{-h2"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Given that removing 'veg' might increase bias and decrease variance, does this support the statement that removing 'veg' decreases bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

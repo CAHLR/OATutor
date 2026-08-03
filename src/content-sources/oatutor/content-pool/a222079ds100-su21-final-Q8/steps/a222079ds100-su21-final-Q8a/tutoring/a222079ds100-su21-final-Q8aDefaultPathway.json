@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a222079ds100-su21-final-Q8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding transforms categorical variables into a binary matrix. Each category becomes a column, and rows are filled with 0s and 1s indicating the presence of a category.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su21-final-Q8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su21-final-Q8a-h1"
+        ],
+        "title": "Columns in the Design Matrix",
+        "text": "When you one-hot encode the 'sex' column, you create two new columns: $$'sex_{male'}$$ and $$'sex_{female'}$$. Each row will have a $$1$$ in one of these columns and a $$0$$ in the other.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su21-final-Q8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su21-final-Q8a-h2"
+        ],
+        "title": "Number of Rows in the Design Matrix",
+        "text": "The number of rows in the design matrix remains the same as the original dataset. Since the dataset has $$20$$ rows, the design matrix will also have $$20$$ rows.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su21-final-Q8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20$$"
+        ],
+        "dependencies": [
+            "a222079ds100-su21-final-Q8a-h3"
+        ],
+        "title": "Verifying the Number of Rows",
+        "text": "How many rows will the design matrix have after one-hot encoding the 'sex' column?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

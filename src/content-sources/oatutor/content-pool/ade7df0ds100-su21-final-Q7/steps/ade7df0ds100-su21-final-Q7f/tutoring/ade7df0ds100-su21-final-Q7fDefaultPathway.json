@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ade7df0ds100-su21-final-Q7f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Data Distribution",
+        "text": "Observe the distribution of the points. The orange points form a ring around the blue points. This suggests a non-linear boundary between the classes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q7f-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q7f-h1"
+        ],
+        "title": "Logistic Regression Capabilities",
+        "text": "Logistic regression is a linear classifier. It can separate classes with a linear boundary. Consider whether a linear boundary can separate the classes in the image.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q7f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q7f-h2"
+        ],
+        "title": "Analyzing the Boundary",
+        "text": "Can a linear boundary separate the inner blue points from the outer orange points?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q7f-h4",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q7f-h3"
+        ],
+        "title": "Conclusion for Logistic Regression",
+        "text": "Since logistic regression can only create linear boundaries, it cannot generate the circular boundary needed to separate these classes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,130 @@
+[
+    {
+        "id": "a613447ds100-fa25-mt2-Q6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Bias",
+        "text": "Adding a new feature to a model can affect the bias. Consider how introducing a squared term might change the model's ability to fit the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Impact on Model Variance",
+        "text": "Think about how adding a new feature, especially a transformation of an existing one, might influence the model's flexibility and variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6b-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Training Data MSE",
+        "text": "Consider how the addition of a new feature could affect the model's performance on the training data. Will it always improve, or could it potentially worsen?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6b-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Test Data MSE",
+        "text": "Reflect on how adding a new feature might impact the model's performance on unseen data. Could it lead to overfitting?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6b-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a613447ds100-fa25-mt2-Q6b-h1"
+        ],
+        "title": "Effect on Model Bias",
+        "text": "Adding a new feature, especially a squared term, can potentially decrease the model bias as it allows the model to capture more complex relationships.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6b-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "a613447ds100-fa25-mt2-Q6b-h2"
+        ],
+        "title": "Effect on Model Variance",
+        "text": "Introducing a new feature can increase the model's flexibility, potentially increasing its variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6b-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a613447ds100-fa25-mt2-Q6b-h3"
+        ],
+        "title": "Effect on Training Data MSE",
+        "text": "Adding a feature often decreases the MSE on training data as the model can fit the data more closely.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6b-s4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "a613447ds100-fa25-mt2-Q6b-h4"
+        ],
+        "title": "Effect on Test Data MSE",
+        "text": "While adding a feature can improve training performance, it might increase the MSE on test data due to overfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    }
+]

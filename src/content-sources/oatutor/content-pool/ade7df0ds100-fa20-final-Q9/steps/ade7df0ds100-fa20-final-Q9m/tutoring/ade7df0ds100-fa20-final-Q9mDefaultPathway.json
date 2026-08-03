@@ -1,0 +1,63 @@
+[
+    {
+        "id": "ade7df0ds100-fa20-final-Q9m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Decision Boundary",
+        "text": "The decision boundary is given by the equation $$2hue+abv=\\frac{3}{2}$$. This equation helps us determine the threshold T for classifying the wine type.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa20-final-Q9m-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa20-final-Q9m-h1"
+        ],
+        "title": "Relating the Decision Boundary to the Threshold",
+        "text": "The decision boundary equation $$2hue+abv=\\frac{3}{2}$$ is derived from the logistic regression model. The threshold T is related to the decision boundary equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa20-final-Q9m-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa20-final-Q9m-h2"
+        ],
+        "title": "Expressing the Decision Boundary in Terms of T",
+        "text": "The decision boundary equation can be expressed in terms of the threshold T as $$2hue+abv=\\ln\\left(\\frac{T}{1-T}\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa20-final-Q9m-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$T=1-gamma$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa20-final-Q9m-h3"
+        ],
+        "title": "Solving for T",
+        "text": "Given the decision boundary equation $$2hue+abv=\\frac{3}{2}$$, solve for T using the relationship $$2hue+abv=\\ln\\left(\\frac{T}{1-T}\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$T=1-gamma$$",
+            "$$T=-beta$$",
+            "$$T=1-beta$$",
+            "$$T=1-gamma$$",
+            "$$T=beta$$",
+            "$$T=e^{\\left(-\\gamma\\right)}$$",
+            "$$T=gamma$$",
+            "$$T=\\ln\\left(\\frac{\\gamma}{1-\\gamma}\\right)$$"
+        ]
+    }
+]

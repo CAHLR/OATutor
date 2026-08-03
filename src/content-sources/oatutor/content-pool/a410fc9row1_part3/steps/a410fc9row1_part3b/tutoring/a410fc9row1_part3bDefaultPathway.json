@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a410fc9row1_part3b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "Model variance refers to how much the model's predictions would change if we used a different training dataset. Adding a new feature can increase the complexity of the model, which might affect variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row1_part3b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row1_part3b-h1"
+        ],
+        "title": "Effect of Adding a Squared Feature",
+        "text": "When you add a squared feature, it can increase the model's flexibility, allowing it to fit the training data more closely. This can lead to an increase in variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row1_part3b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "a410fc9row1_part3b-h2"
+        ],
+        "title": "Possible Effects on Variance",
+        "text": "What is a possible effect of adding a squared feature on model variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Increase and Decrease"
+        ]
+    }
+]

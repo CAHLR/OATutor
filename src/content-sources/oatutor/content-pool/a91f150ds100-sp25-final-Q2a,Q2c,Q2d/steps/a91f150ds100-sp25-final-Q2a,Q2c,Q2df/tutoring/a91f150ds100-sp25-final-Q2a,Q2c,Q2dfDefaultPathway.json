@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a91f150ds100-sp25-final-Q2a,Q2c,Q2df-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Complexity",
+        "text": "Model complexity in linear regression can be influenced by regularization techniques. Regularization involves adding a penalty term to the loss function to prevent overfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp25-final-Q2a,Q2c,Q2df-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp25-final-Q2a,Q2c,Q2df-h1"
+        ],
+        "title": "Role of Lambda (\u03bb) in Regularization",
+        "text": "In regularization, lambda (\u03bb) is a parameter that controls the strength of the penalty. A higher \u03bb increases the penalty on large coefficients, which can reduce model complexity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp25-final-Q2a,Q2c,Q2df-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp25-final-Q2a,Q2c,Q2df-h2"
+        ],
+        "title": "Effect of Increasing Lambda",
+        "text": "Increasing \u03bb in regularization methods like Ridge or Lasso regression tends to shrink the coefficients, leading to a simpler model with potentially less overfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp25-final-Q2a,Q2c,Q2df-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increasing lambda"
+        ],
+        "dependencies": [
+            "a91f150ds100-sp25-final-Q2a,Q2c,Q2df-h3"
+        ],
+        "title": "Choosing the Correct Option",
+        "text": "Which option correctly describes the effect of increasing \u03bb on model complexity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Decreasing lambda",
+            "Increasing lambda",
+            "Changing lambda has no effect on model complexity",
+            "Both increasing and decreasing lambda reduce complexity equally",
+            "The effect of lambda depends on the choice of g(theta)"
+        ]
+    }
+]

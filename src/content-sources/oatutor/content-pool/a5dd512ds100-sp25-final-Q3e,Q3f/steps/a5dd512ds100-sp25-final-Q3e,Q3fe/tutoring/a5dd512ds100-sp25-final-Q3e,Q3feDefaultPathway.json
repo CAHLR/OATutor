@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fe-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Decision Threshold",
+        "text": "The decision threshold in a logistic regression model determines the cutoff point for classifying an observation into one of two categories. By default, this threshold is often set at $$0.5$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fe-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp25-final-Q3e,Q3fe-h1"
+        ],
+        "title": "Effect of Lowering the Threshold",
+        "text": "Lowering the decision threshold means that the model will classify more observations as 'Kendrick' because it requires a lower probability to make that classification.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fe-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp25-final-Q3e,Q3fe-h2"
+        ],
+        "title": "Impact on False Positives and False Negatives",
+        "text": "Consider how lowering the threshold affects the number of false positives and false negatives. A lower threshold may increase false positives for 'Kendrick'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp25-final-Q3e,Q3fe-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a5dd512ds100-sp25-final-Q3e,Q3fe-h3"
+        ],
+        "title": "Analyzing the Statement",
+        "text": "If you lower the threshold to $$0.3$$, will the model predict 'Kendrick' less often?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

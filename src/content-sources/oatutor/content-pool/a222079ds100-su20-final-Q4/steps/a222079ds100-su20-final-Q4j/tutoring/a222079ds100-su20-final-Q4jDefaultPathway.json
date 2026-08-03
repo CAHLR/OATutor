@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a222079ds100-su20-final-Q4j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Normal Equations",
+        "text": "The normal equations are derived from setting the gradient of the loss function to zero. This is a necessary condition for finding the minimum of the loss function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-final-Q4j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su20-final-Q4j-h1"
+        ],
+        "title": "Role of the Intercept Term",
+        "text": "The intercept term in linear regression allows the model to fit data that does not pass through the origin. It is important for capturing the mean of the response variable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-final-Q4j-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su20-final-Q4j-h2"
+        ],
+        "title": "Mean-Centering the Data",
+        "text": "Mean-centering the data involves subtracting the mean of each feature from the data points. This can affect the interpretation of the intercept term but does not change the fit of the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

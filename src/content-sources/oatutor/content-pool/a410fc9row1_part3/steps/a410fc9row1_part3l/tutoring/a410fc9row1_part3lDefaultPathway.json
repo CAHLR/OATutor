@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a410fc9row1_part3l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LASSO Regularization",
+        "text": "LASSO regularization adds a penalty term to the loss function, which can shrink some coefficients to zero. This can lead to a simpler model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row1_part3l-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row1_part3l-h1"
+        ],
+        "title": "Effect on Test MSE",
+        "text": "Consider how reducing model complexity with LASSO might affect the model's performance on unseen data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row1_part3l-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase and Decrease"
+        ],
+        "dependencies": [
+            "a410fc9row1_part3l-h2"
+        ],
+        "title": "Analyzing Test MSE Changes",
+        "text": "When LASSO regularization is applied, the model might become less complex. How could this affect the MSE on held-out test data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Increase and Decrease"
+        ]
+    }
+]

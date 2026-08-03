@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a5d4609ds100-fa19-final-Q8d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA Components",
+        "text": "In PCA, we often refer to the principal components. These are essentially the directions in which the data varies the most. When plotting, we usually focus on the first few components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa19-final-Q8d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-fa19-final-Q8d-h1"
+        ],
+        "title": "Identifying the Correct Term",
+        "text": "Think about the structure of a dataset. It consists of rows and columns. Which of these do you think represents the principal components in PCA?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa19-final-Q8d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "columns"
+        ],
+        "dependencies": [
+            "a5d4609ds100-fa19-final-Q8d-h2"
+        ],
+        "title": "Choosing Between Rows and Columns",
+        "text": "In the context of PCA, the principal components are derived from the features of the dataset. Features are typically represented as what in a dataset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "rows",
+            "columns"
+        ]
+    }
+]

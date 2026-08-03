@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a222079ds100-fa21-mt-Q1j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Codons and Amino Acids",
+        "text": "Each DNA string is made up of codons, which are sequences of $$3$$ letters. These codons are translated into amino acids. There are $$64$$ possible codons but only $$20$$ amino acids. How can this information help in creating a more compact encoding?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa21-mt-Q1j-h1"
+        ],
+        "title": "Using Amino Acids for Encoding",
+        "text": "Instead of encoding each letter or codon, consider encoding the amino acids directly. Since there are only $$20$$ amino acids, this can significantly reduce the dimensionality of your data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1j-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20$$"
+        ],
+        "dependencies": [
+            "a222079ds100-fa21-mt-Q1j-h2"
+        ],
+        "title": "Calculating Dimensionality",
+        "text": "If you encode using 3-grams of amino acids, how many possible combinations are there?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1j-h4",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa21-mt-Q1j-h3"
+        ],
+        "title": "Dimensionality of 3-grams",
+        "text": "When using 3-grams of amino acids, the dimensionality is determined by the number of possible combinations of $$3$$ amino acids. Since there are $$20$$ amino acids, the dimensionality is $$20$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

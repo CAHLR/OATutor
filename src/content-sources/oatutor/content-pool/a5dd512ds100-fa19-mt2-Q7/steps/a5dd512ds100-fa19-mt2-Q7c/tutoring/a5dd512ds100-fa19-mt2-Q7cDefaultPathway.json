@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Recall",
+        "text": "Recall is the ratio of true positive predictions to the total actual positives. It measures how well the classifier identifies positive instances.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-mt2-Q7c-h1"
+        ],
+        "title": "Identify True Positives",
+        "text": "True positives are the cases where the prediction is $$1$$ and the true label is also $$1$$. Count these instances from the given data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-mt2-Q7c-h2"
+        ],
+        "title": "Identify Actual Positives",
+        "text": "Actual positives are the cases where the true label is $$1$$, regardless of the prediction. Count these instances from the given data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-mt2-Q7c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-mt2-Q7c-h3"
+        ],
+        "title": "Calculate Recall",
+        "text": "Use the formula for recall: true positives divided by actual positives. Calculate this using the counts from the previous hints.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$\\frac{2}{3}$$",
+            "$$\\frac{6}{7}$$",
+            "$$1$$",
+            "$$\\frac{6}{10}$$"
+        ]
+    }
+]

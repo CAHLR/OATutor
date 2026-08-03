@@ -1,0 +1,60 @@
+[
+    {
+        "id": "ade7df0ds100-su19-final-Q7f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Update Rule",
+        "text": "The update rule for logistic regression with L2 regularization is given by:\\n\\n$${\\theta}^{t+1}$$ $$=$$ (1-2\u03bb)\u03b8**(t) + \\alpha[(y_i - \u03c3(X_i * \u03b8**(t))) * X_i]\\n\\nHere, \u03c3(z) is the sigmoid function, which is defined as \u03c3(z) $$=$$ $$\\frac{1}{1+e^{\\left(-z\\right)}}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su19-final-Q7f-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su19-final-Q7f-h1"
+        ],
+        "title": "Calculate the Sigmoid Function",
+        "text": "Given $${\\theta}^t$$ $$=$$ $$1$$ and $$X_i$$ $$=$$ $$5$$, calculate \u03c3(X_i * \u03b8**(t)).\\n\\n\u03c3(5 * 1) $$=$$ \u03c3(5) $$=$$ $$\\frac{1}{1+e^{\\left(-5\\right)}}$$",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su19-final-Q7f-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su19-final-Q7f-h2"
+        ],
+        "title": "Evaluate the Update Rule",
+        "text": "Substitute the values into the update rule:\\n\\n$${\\theta}^{t+1}$$ $$=$$ $$1\\left(1-2\\times1\\right)$$ + \\alpha[(0 - \u03c3(5)) * 5]\\n\\nSimplify the expression to find $${\\theta}^{t+1}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su19-final-Q7f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su19-final-Q7f-h3"
+        ],
+        "title": "Calculate $${\\theta}^{t+1}$$",
+        "text": "Using the simplified expression from the previous hint, calculate $${\\theta}^{t+1}$$ for different values of \\alpha to determine which produces the most positive value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-1$$",
+            "$$0$$",
+            "$$1$$",
+            "Tie",
+            "Need Info"
+        ]
+    }
+]

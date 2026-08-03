@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a5dd512ds100-sp21-final-Q9c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting by adding a penalty to the loss function. In L2 regularization, this penalty is proportional to the square of the magnitude of the coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp21-final-Q9c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp21-final-Q9c-h1"
+        ],
+        "title": "Effect of Large Lambda",
+        "text": "When lambda is set to a very large value, the regularization term dominates the loss function. This forces the coefficients to be very small, effectively reducing their impact on the decision boundary.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp21-final-Q9c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp21-final-Q9c-h2"
+        ],
+        "title": "Impact on Decision Boundary",
+        "text": "With a large lambda, the decision boundary becomes less sensitive to the features. This can lead to a more horizontal or vertical boundary, depending on which coefficient is regularized.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp21-final-Q9c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "a5dd512ds100-sp21-final-Q9c-h3"
+        ],
+        "title": "Training Error with Large Lambda",
+        "text": "Consider how a less sensitive decision boundary affects the classification of points. Would this increase or decrease the training error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Remain the same",
+            "Cannot be determined"
+        ]
+    }
+]

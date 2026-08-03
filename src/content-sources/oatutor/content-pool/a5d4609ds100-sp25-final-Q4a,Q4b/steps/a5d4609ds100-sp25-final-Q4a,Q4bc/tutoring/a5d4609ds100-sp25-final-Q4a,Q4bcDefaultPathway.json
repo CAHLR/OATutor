@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a5d4609ds100-sp25-final-Q4a,Q4bc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It is often used to make data easy to explore and visualize.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp25-final-Q4a,Q4bc-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp25-final-Q4a,Q4bc-h1"
+        ],
+        "title": "PCA and Variance",
+        "text": "PCA works by identifying the directions (principal components) in which the variance of the data is maximized. The first principal component is the direction of maximum variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp25-final-Q4a,Q4bc-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp25-final-Q4a,Q4bc-h2"
+        ],
+        "title": "SVD and PCA",
+        "text": "Singular Value Decomposition (SVD) is a mathematical technique that can be used to perform PCA. The SVD of a matrix decomposes it into three other matrices, U, \u03a3, and V.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp25-final-Q4a,Q4bc-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$${\\sigma_1}^2$$"
+        ],
+        "dependencies": [
+            "a5d4609ds100-sp25-final-Q4a,Q4bc-h3"
+        ],
+        "title": "Computing Variance in PC1 Direction",
+        "text": "To compute the variance of the data in the PC1 direction using the U and V matrices from SVD, you need to consider the singular values in \u03a3. The variance in the PC1 direction is given by the square of the first singular value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

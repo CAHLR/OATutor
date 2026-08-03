@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a253306row5_part2k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding OLS Prediction Vector",
+        "text": "The OLS prediction vector, denoted as hat{Y}, is a key concept in linear regression. It represents the predicted values of the dependent variable based on the independent variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row5_part2k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row5_part2k-h1"
+        ],
+        "title": "Orthogonal Projection",
+        "text": "In the context of linear regression, the orthogonal projection of a vector Y onto the span of another vector X is a way to find the closest point in the span of X to the vector Y.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row5_part2k-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "hat{Y} is the orthogonal projection of Y onto the span of X."
+        ],
+        "dependencies": [
+            "a253306row5_part2k-h2"
+        ],
+        "title": "Identifying the Correct Interpretation",
+        "text": "Consider the relationship between the vectors Y and X in the context of OLS. What does it mean for hat{Y} to be the orthogonal projection of Y onto the span of X?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "hat{Y} is the difference between Y and the orthogonal projection of Y onto the span of X.",
+            "hat{Y} is the orthogonal projection of Y onto the span of X.",
+            "When X is not full column rank, hat{Y} is still uniquely determined because the normal equation always has a single solution.",
+            "hat{Y} is the orthogonal projection of X onto the span of Y."
+        ]
+    }
+]

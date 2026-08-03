@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ad34534ds100-su20-final-Q4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "We need to compare the intercept terms from two linear regression models: one using the original design matrix X and the other using the mean-centered design matrix X\u0303.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su20-final-Q4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-su20-final-Q4a-h1"
+        ],
+        "title": "Intercept in Linear Regression",
+        "text": "In linear regression, the intercept term is the value of the response variable when all predictors are zero. How does centering affect this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su20-final-Q4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-su20-final-Q4a-h2"
+        ],
+        "title": "Effect of Centering on Intercept",
+        "text": "When data is mean-centered, the intercept term represents the mean of the response variable. This is because the predictors are centered around zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su20-final-Q4a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ad34534ds100-su20-final-Q4a-h3"
+        ],
+        "title": "Comparing Intercepts",
+        "text": "Given that centering affects the intercept, are the intercepts from the two models equal?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

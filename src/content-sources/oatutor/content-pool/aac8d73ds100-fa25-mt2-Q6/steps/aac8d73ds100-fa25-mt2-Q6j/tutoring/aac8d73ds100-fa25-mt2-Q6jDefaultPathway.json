@@ -1,0 +1,48 @@
+[
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q6j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LASSO Regularization",
+        "text": "LASSO regularization adds a penalty equal to the absolute value of the magnitude of coefficients to the loss function. This can lead to some coefficients being exactly zero, effectively selecting a simpler model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q6j-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa25-mt2-Q6j-h1"
+        ],
+        "title": "Effect of LASSO on Model Variance",
+        "text": "LASSO tends to reduce model complexity by shrinking some coefficients to zero. How does reducing model complexity affect variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q6j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease only"
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa25-mt2-Q6j-h2"
+        ],
+        "title": "Impact of Reduced Complexity",
+        "text": "When model complexity is reduced, what typically happens to the model variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase only",
+            "Decrease only",
+            "Increase and Decrease",
+            "Neither Increase nor Decrease",
+            "Cannot be determined"
+        ]
+    }
+]

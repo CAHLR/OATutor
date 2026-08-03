@@ -1,0 +1,74 @@
+[
+    {
+        "id": "a5dd512ds100-su21-final-Q7g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Decision Trees",
+        "text": "Decision trees create boundaries by splitting the feature space into rectangles. They use axis-aligned splits, meaning they can only create vertical or horizontal lines in the feature space.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q7g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q7g-h1"
+        ],
+        "title": "Analyzing the Boundary",
+        "text": "Look at the shape of the boundary in the image. Is it a straight line or a more complex shape? Decision trees can only create straight lines parallel to the axes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q7g-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The boundary is circular or non-linear."
+        ],
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q7g-h2"
+        ],
+        "title": "Boundary Shape",
+        "text": "What shape does the boundary in the image have?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q7g-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q7g-h3"
+        ],
+        "title": "Decision Tree Limitations",
+        "text": "Since decision trees can only create axis-aligned splits, they cannot form circular or complex boundaries. They are limited to creating rectangular regions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q7g-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q7g-h4"
+        ],
+        "title": "Can Decision Trees Create This Boundary?",
+        "text": "Given the shape of the boundary, can a decision tree create such a boundary?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

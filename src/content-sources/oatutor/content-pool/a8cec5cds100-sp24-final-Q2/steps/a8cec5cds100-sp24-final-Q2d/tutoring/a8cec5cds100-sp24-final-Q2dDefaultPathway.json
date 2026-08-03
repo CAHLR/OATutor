@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a8cec5cds100-sp24-final-Q2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Loss Function",
+        "text": "The loss function is a measure of how well the model's predictions match the actual outcomes. It is important to understand each component of the loss function to determine its impact on the model's performance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-final-Q2d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp24-final-Q2d-h1"
+        ],
+        "title": "Analyzing the Gradient Vector",
+        "text": "The gradient vector provides the direction and rate of change of the loss function with respect to the parameters. Analyzing the gradient can help in understanding how the parameters should be adjusted to minimize the loss.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-final-Q2d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a8cec5cds100-sp24-final-Q2d-h2"
+        ],
+        "title": "Impact of the Loss Function on Convergence",
+        "text": "Consider how the choice of loss function affects the convergence of gradient descent. Does it always lead to the true optimal weights?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

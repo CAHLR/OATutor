@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a40b41cds100-sp19-final-Q10b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The file is divided into $$8$$ blocks, and each block is stored on $$2$$ out of $$4$$ machines. If one machine fails, we need to determine if the file can still be read.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp19-final-Q10b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp19-final-Q10b-h1"
+        ],
+        "title": "Block Replication",
+        "text": "Each block is replicated on $$2$$ machines. If one machine fails, consider how many machines are still available to store each block.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp19-final-Q10b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp19-final-Q10b-h2"
+        ],
+        "title": "Machine Failure Impact",
+        "text": "If a block is stored on $$2$$ machines, and one machine fails, the block is still available on the other machine. Consider this for all blocks.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp19-final-Q10b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a40b41cds100-sp19-final-Q10b-h3"
+        ],
+        "title": "Calculating the Probability",
+        "text": "What is the probability that at least one replica of each block is still available after one machine fails?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

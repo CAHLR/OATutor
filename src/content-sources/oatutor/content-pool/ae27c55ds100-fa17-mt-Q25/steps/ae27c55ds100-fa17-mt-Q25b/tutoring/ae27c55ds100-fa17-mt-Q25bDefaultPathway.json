@@ -1,0 +1,45 @@
+[
+    {
+        "id": "ae27c55ds100-fa17-mt-Q25b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Law of Large Numbers",
+        "text": "The law of large numbers states that as the number of trials increases, the sample mean will converge to the expected value (population mean).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-mt-Q25b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa17-mt-Q25b-h1"
+        ],
+        "title": "Sample Size and Population Average",
+        "text": "Consider how increasing the sample size affects the accuracy of the sample mean in estimating the population mean.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-mt-Q25b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ae27c55ds100-fa17-mt-Q25b-h2"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Does the statement align with the law of large numbers?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

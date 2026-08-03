@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a5dd512ds100-fa19-final-Q5e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Entropy Loss",
+        "text": "Cross-entropy loss is often preferred over squared loss in classification problems. Can you think of why this might be the case?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5e-h1"
+        ],
+        "title": "Properties of Cross-Entropy Loss",
+        "text": "Cross-entropy loss is more sensitive to the differences between predicted probabilities and actual labels. How does this property help in classification tasks?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5e-h2"
+        ],
+        "title": "Gradient Descent and Loss Functions",
+        "text": "Consider how the choice of loss function affects the convergence of gradient descent. Why might cross-entropy loss lead to better convergence properties?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5e-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$Cross-entropy$$ loss is preferred because it is more sensitive to the differences between predicted probabilities and actual labels, leading to better convergence properties in gradient descent."
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5e-h3"
+        ],
+        "title": "Comparing Loss Functions",
+        "text": "Why is cross-entropy loss preferred over squared loss for classification problems?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$Cross-entropy$$ loss is preferred because it is more sensitive to the differences between predicted probabilities and actual labels, leading to better convergence properties in gradient descent.",
+            "FALSE",
+            "TRUE"
+        ]
+    }
+]

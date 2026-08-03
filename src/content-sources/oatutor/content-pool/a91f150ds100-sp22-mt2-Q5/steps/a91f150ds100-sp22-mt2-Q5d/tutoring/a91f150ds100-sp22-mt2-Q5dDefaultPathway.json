@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a91f150ds100-sp22-mt2-Q5d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Objective Function",
+        "text": "The objective function combines the $L_2$ loss with the exponential regularization term. Can you identify the components of this function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp22-mt2-Q5d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp22-mt2-Q5d-h1"
+        ],
+        "title": "Components of the Objective Function",
+        "text": "The objective function is given by $1/n*abs(Y-X*theta)**2+lambda*sum{i\\=1}{p}{10**theta_i}$. The first part is the $L_2$ loss, and the second part is the regularization term.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp22-mt2-Q5d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp22-mt2-Q5d-h2"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "The statement claims that the optimal solution is $(X**-1+lambda*I)*X**T*Y$. Consider how the regularization term affects the solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp22-mt2-Q5d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The regularization term is not quadratic so the solution is not simply $(X**-1+lambda*I)*X**T*Y$."
+        ],
+        "dependencies": [
+            "a91f150ds100-sp22-mt2-Q5d-h3"
+        ],
+        "title": "Analyzing the Regularization Term",
+        "text": "The regularization term $lambda*sum{i\\=1}{p}{10**theta_i}$ is not quadratic in $theta$. How does this affect the solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp22-mt2-Q5d-h5",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp22-mt2-Q5d-h4"
+        ],
+        "title": "Conclusion",
+        "text": "Given the non-quadratic nature of the regularization term, the statement is false.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

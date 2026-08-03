@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a5dd512ds100-fa20-final-Q9k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Logistic Function",
+        "text": "The logistic function is defined as \\( \\sigma(z) $$=$$ \\frac{1}{1+e**{-z}} \\). In this problem, \\( $$z$$ $$=$$ $$\\theta_1$$ \\cdot \\text{hue} + $$\\theta_2$$ \\cdot \\text{abv} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9k-h1"
+        ],
+        "title": "Calculate $$z$$",
+        "text": "Given \\( \\hat{\\theta} $$=$$ $$(2,1)T**$$ \\), hue $$=$$ $$\\frac{1}{4}$$, and abv $$=$$ $$-2$$, calculate \\( $$z$$ $$=$$ $$2$$ \\cdot $$\\frac{1}{4}$$ + $$1$$ \\cdot $$(-2)$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9k-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1.5$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9k-h2"
+        ],
+        "title": "Compute $$z$$",
+        "text": "Compute \\( $$z$$ $$=$$ $$2$$ \\cdot $$\\frac{1}{4}$$ + $$1$$ \\cdot $$(-2)$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9k-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9k-h3"
+        ],
+        "title": "Calculate the Probability",
+        "text": "Now that you have \\( $$z$$ $$=$$ $$-1.5$$ \\), use the logistic function to find \\( \\gamma $$=$$ \\sigma(z) \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9k-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.1824$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9k-h4"
+        ],
+        "title": "Compute \\( \\gamma \\)",
+        "text": "Compute \\( \\gamma $$=$$ \\frac{1}{1+e**{1.5}} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9k-h6",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9k-h5"
+        ],
+        "title": "Interpret \\( \\gamma \\)",
+        "text": "The value of \\( \\gamma \\) represents the probability that Billywine is a type $$1$$ wine. If \\( \\gamma \\) is less than $$0.5$$, it is more likely to be type $$0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

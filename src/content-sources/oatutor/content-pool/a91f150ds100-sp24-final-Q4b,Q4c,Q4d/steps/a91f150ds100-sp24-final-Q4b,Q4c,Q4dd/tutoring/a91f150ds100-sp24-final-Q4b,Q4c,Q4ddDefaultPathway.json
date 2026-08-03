@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a91f150ds100-sp24-final-Q4b,Q4c,Q4dd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Validation",
+        "text": "Cross-validation is a technique used to assess how the results of a statistical analysis will generalize to an independent data set. It is mainly used in scenarios where we want to evaluate the performance of a model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp24-final-Q4b,Q4c,Q4dd-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp24-final-Q4b,Q4c,Q4dd-h1"
+        ],
+        "title": "Common Uses of Cross-Validation",
+        "text": "Cross-validation is commonly used for hyperparameter tuning, model selection, and assessing model generalization. It helps in comparing different models and selecting the best one based on their performance on unseen data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp24-final-Q4b,Q4c,Q4dd-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp24-final-Q4b,Q4c,Q4dd-h2"
+        ],
+        "title": "Limitations of Cross-Validation",
+        "text": "Cross-validation is not typically used to find solutions when the design matrix is not full column rank. This is more related to issues of multicollinearity and matrix algebra rather than model evaluation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp24-final-Q4b,Q4c,Q4dd-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Find an optimal solution when the design matrix is not full column rank."
+        ],
+        "dependencies": [
+            "a91f150ds100-sp24-final-Q4b,Q4c,Q4dd-h3"
+        ],
+        "title": "Identifying the Odd Use Case",
+        "text": "Which of the following is NOT a typical use case for cross-validation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Determining how well a model generalizes.",
+            "Hyperparameter tuning.",
+            "Selecting the degree of polynomial models.",
+            "Find an optimal solution when the design matrix is not full column rank.",
+            "Comparing multiple model architectures."
+        ]
+    }
+]

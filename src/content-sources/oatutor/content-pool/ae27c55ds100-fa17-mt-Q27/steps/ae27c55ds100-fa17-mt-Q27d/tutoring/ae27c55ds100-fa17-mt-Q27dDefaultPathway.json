@@ -1,0 +1,48 @@
+[
+    {
+        "id": "ae27c55ds100-fa17-mt-Q27d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrapping",
+        "text": "Bootstrapping involves resampling with replacement from the sample data to create 'new' samples. This helps in estimating the sampling distribution of a statistic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-mt-Q27d-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa17-mt-Q27d-h1"
+        ],
+        "title": "Choosing the Statistic",
+        "text": "When constructing bootstrapped estimates, you need to decide which statistic you want to estimate. In this case, it's the median.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-mt-Q27d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "median"
+        ],
+        "dependencies": [
+            "ae27c55ds100-fa17-mt-Q27d-h2"
+        ],
+        "title": "Filling in the Code",
+        "text": "What function should be used to calculate the statistic of interest in the bootstrapped samples?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "mean",
+            "median",
+            "sum",
+            "quantile",
+            "sample"
+        ]
+    }
+]

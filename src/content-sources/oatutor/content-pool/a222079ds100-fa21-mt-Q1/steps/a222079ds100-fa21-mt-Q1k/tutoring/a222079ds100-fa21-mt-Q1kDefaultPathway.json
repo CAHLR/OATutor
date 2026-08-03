@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a222079ds100-fa21-mt-Q1k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Instability",
+        "text": "Model instability in validation accuracy can often be attributed to the variability in the data used for training and validation. This can lead to overfitting or underfitting, depending on the model's complexity and the data distribution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa21-mt-Q1k-h1"
+        ],
+        "title": "Exploring Cross-Validation",
+        "text": "Cross-validation is a technique used to assess how the results of a statistical analysis will generalize to an independent data set. It is mainly used in settings where the goal is prediction, and one wants to estimate how accurately a predictive model will perform in practice.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

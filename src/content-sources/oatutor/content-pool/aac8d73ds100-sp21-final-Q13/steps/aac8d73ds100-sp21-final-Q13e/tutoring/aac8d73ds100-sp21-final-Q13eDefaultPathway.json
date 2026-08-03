@@ -1,0 +1,57 @@
+[
+    {
+        "id": "aac8d73ds100-sp21-final-Q13e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting by adding a penalty term to the loss function. This penalty term is controlled by the regularization coefficient, lambda.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp21-final-Q13e-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-sp21-final-Q13e-h1"
+        ],
+        "title": "Effect of Increasing Lambda",
+        "text": "As lambda increases, the penalty for large weights in the model increases, which can lead to a simpler model with smaller weights.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp21-final-Q13e-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-sp21-final-Q13e-h2"
+        ],
+        "title": "Bias and Variance Trade-off",
+        "text": "Increasing lambda typically increases bias but decreases variance. This is because the model becomes less flexible and more generalized.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp21-final-Q13e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aac8d73ds100-sp21-final-Q13e-h3"
+        ],
+        "title": "Analyzing the Statement",
+        "text": "Does increasing lambda decrease bias in the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

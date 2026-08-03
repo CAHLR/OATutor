@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a613447ds100-fa21-mt-Q2k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Overfitting",
+        "text": "Overfitting occurs when a model learns the training data too well, capturing noise and fluctuations that do not generalize to new data. This results in high variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2k-h1"
+        ],
+        "title": "Reducing Model Complexity",
+        "text": "One way to reduce overfitting is to simplify the model by removing some features. This can help the model generalize better to unseen data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2k-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2k-h1"
+        ],
+        "title": "Regularization Techniques",
+        "text": "Using regularization techniques like L1 or L2 can help reduce overfitting by penalizing large coefficients in the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2k-h4",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2k-h1"
+        ],
+        "title": "Cross-Validation",
+        "text": "Implementing cross-validation can help in assessing how the model performs on different subsets of the data, providing a better estimate of its performance on unseen data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2k-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Demographic features that are not strongly correlated with the target variable."
+        ],
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2k-h2"
+        ],
+        "title": "Feature Selection",
+        "text": "Parth can reduce the number of features in his model to decrease variance. Which features should he consider removing?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2k-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "L2 regularization (Ridge regression)"
+        ],
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2k-h3"
+        ],
+        "title": "Applying Regularization",
+        "text": "What type of regularization can Parth apply to his model to reduce overfitting?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2k-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "By providing a more reliable estimate of the model's performance on unseen data."
+        ],
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2k-h4"
+        ],
+        "title": "Using Cross-Validation",
+        "text": "How can cross-validation help Parth in evaluating his model's performance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

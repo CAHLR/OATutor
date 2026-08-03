@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a613447ds100-fa21-mt-Q2f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bag-of-Words Encoding",
+        "text": "Bag-of-words encoding is typically used for text data. It involves creating a vector representation of text by counting the frequency of each word in a document. How might this apply to numerical data like age?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2f-h1"
+        ],
+        "title": "Consider the Nature of Age Data",
+        "text": "Age is a continuous numerical variable. Think about how you can transform or encode this type of data to be useful in a linear model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2f-h2"
+        ],
+        "title": "Possible Transformations for Age",
+        "text": "Consider transformations such as normalization, standardization, or binning. How might these help in capturing the meaning of age in the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2f-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{age-\\operatorname{min}\\left(age\\right)}{\\operatorname{max}\\left(age\\right)-\\operatorname{min}\\left(age\\right)}$$"
+        ],
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2f-h3"
+        ],
+        "title": "Encoding Age for Linear Models",
+        "text": "One way to encode age is by normalizing it to a range between $$0$$ and $$1$$. This can be done using the formula: $$\\frac{age-\\operatorname{min}\\left(age\\right)}{\\operatorname{max}\\left(age\\right)-\\operatorname{min}\\left(age\\right)}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2f-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Categorical bins"
+        ],
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2f-h3"
+        ],
+        "title": "Binning Age Data",
+        "text": "Another approach is to bin the age data into categories, such as $$'18-25'$$, $$'26-35'$$, etc. This can be useful if age has a non-linear relationship with the target variable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

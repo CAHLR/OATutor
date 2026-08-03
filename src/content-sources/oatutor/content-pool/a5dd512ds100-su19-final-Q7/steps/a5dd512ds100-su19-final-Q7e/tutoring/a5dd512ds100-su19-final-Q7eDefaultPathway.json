@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a5dd512ds100-su19-final-Q7e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Expression",
+        "text": "The expression \\( \\alpha[\\frac{1}{n}\\sum_{i=1}**{n}(y_i-\\sigma(X_{i}\\cdot{\\theta}**{(t)}))X_i] \\) involves several components. Let's break it down:",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q7e-h1"
+        ],
+        "title": "Components of the Expression",
+        "text": "$$1$$. \\( \\alpha \\) is a scalar (learning rate).\\n$$2$$. \\( \\frac{1}{n}\\sum_{i=1}**{n}(y_i-\\sigma(X_{i}\\cdot{\\theta}**{(t)}))X_i \\) is a summation over all data points.\\n$$3$$. \\( $$X_i$$ \\) is a vector of length \\( $$p$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q7e-h2"
+        ],
+        "title": "Dimensions of the Summation",
+        "text": "The summation \\( \\frac{1}{n}\\sum_{i=1}**{n}(y_i-\\sigma(X_{i}\\cdot{\\theta}**{(t)}))X_i \\) results in a vector. Since \\( $$X_i$$ \\) is a vector of length \\( $$p$$ \\), the summation also results in a vector of length \\( $$p$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Length $$p$$ vector"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q7e-h3"
+        ],
+        "title": "Final Dimension of the Expression",
+        "text": "Given that \\( \\alpha \\) is a scalar and the summation results in a vector of length \\( $$p$$ \\), what is the dimension of the entire expression?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Scalar",
+            "Length $$n$$ vector",
+            "Length $$p$$ vector",
+            "$$n$$ by $$p$$ matrix"
+        ]
+    }
+]

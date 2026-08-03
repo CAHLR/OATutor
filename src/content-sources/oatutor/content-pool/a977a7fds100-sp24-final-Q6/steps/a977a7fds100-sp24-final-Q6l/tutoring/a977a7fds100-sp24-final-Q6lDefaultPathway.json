@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a977a7fds100-sp24-final-Q6l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "Bias refers to the error introduced by approximating a real-world problem, which may be complex, by a simplified model. Variance refers to the model's sensitivity to fluctuations in the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp24-final-Q6l-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-sp24-final-Q6l-h1"
+        ],
+        "title": "Comparing Bias and Variance",
+        "text": "Model A has a bias squared of $$2$$ and a variance of $$12$$, while Model B has a bias squared of $$4$$ and a variance of $$1$$. Consider how these values affect the overall error of each model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp24-final-Q6l-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-sp24-final-Q6l-h2"
+        ],
+        "title": "Total Error Calculation",
+        "text": "The total error of a model can be calculated as the sum of its bias squared and variance. Calculate the total error for both models to compare them.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp24-final-Q6l-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2+12$$"
+        ],
+        "dependencies": [
+            "a977a7fds100-sp24-final-Q6l-h3"
+        ],
+        "title": "Calculate Total Error for Model A",
+        "text": "Calculate the total error for Model A using the formula: bias squared + variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp24-final-Q6l-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4+1$$"
+        ],
+        "dependencies": [
+            "a977a7fds100-sp24-final-Q6l-h4"
+        ],
+        "title": "Calculate Total Error for Model B",
+        "text": "Calculate the total error for Model B using the formula: bias squared + variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp24-final-Q6l-h6",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-sp24-final-Q6l-h5"
+        ],
+        "title": "Comparing Total Errors",
+        "text": "Compare the total errors calculated for Model A and Model B to determine which model has a larger total error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

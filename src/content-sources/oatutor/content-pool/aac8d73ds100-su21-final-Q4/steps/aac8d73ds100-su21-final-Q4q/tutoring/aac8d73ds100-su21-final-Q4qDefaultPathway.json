@@ -1,0 +1,70 @@
+[
+    {
+        "id": "aac8d73ds100-su21-final-Q4q-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "When the model variance decreases, it means that the model's predictions are more consistent across different datasets. This can happen due to changes in the model or the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su21-final-Q4q-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su21-final-Q4q-h1"
+        ],
+        "title": "Impact of Regularization",
+        "text": "Regularization techniques, such as Lasso or Ridge, can help reduce model variance by penalizing large coefficients, leading to a more stable model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su21-final-Q4q-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su21-final-Q4q-h1"
+        ],
+        "title": "Bootstrap Sampling Effect",
+        "text": "Bootstrap sampling involves creating multiple datasets by sampling with replacement from the original data. This can help in understanding the variability of the model's predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su21-final-Q4q-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The variance could increase if the model becomes too complex but regularization can help control this."
+        ],
+        "dependencies": [
+            "aac8d73ds100-su21-final-Q4q-h2"
+        ],
+        "title": "Analyzing Bias and Variance Tradeoff",
+        "text": "If the model bias decreased, it means the model is fitting the training data better. What could be the impact on variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su21-final-Q4q-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The variance increases as the model becomes too complex potentially leading to overfitting."
+        ],
+        "dependencies": [
+            "aac8d73ds100-su21-final-Q4q-h4"
+        ],
+        "title": "Model Complexity and Variance",
+        "text": "Consider how changing the model complexity affects variance. What happens if the model becomes too complex?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

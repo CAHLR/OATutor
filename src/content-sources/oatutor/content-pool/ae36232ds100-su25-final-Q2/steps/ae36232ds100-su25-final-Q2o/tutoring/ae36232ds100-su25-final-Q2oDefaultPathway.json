@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ae36232ds100-su25-final-Q2o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting in models by adding a penalty term to the loss function. This penalty discourages overly complex models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2o-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2o-h1"
+        ],
+        "title": "Effect of L2 Regularization",
+        "text": "L2 regularization, also known as Ridge regression, adds a penalty equal to the square of the magnitude of coefficients. This tends to shrink the coefficients of less important features towards zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2o-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2o-h2"
+        ],
+        "title": "Variance and Regularization",
+        "text": "Regularization techniques like L2 are generally used to reduce model variance, not increase it. They help in making the model more robust to new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2o-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2o-h3"
+        ],
+        "title": "True or False: L2 Regularization Increases Variance",
+        "text": "Based on the understanding of L2 regularization, determine if the statement 'L2 regularization typically increases model variance' is true or false.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

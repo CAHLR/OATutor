@@ -1,0 +1,56 @@
+[
+    {
+        "id": "aa12b88S25FQ1Bc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Task",
+        "text": "To determine which colleges have the most modern buildings, we need to identify buildings where at least 80% of rooms were renovated in $$2003$$ or later.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa12b88S25FQ1Bc-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Grouping by College",
+        "text": "We need to group the data by 'college' to analyze the number of modern buildings in each college.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa12b88S25FQ1Bc-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            ".groupby(\"college\").size()"
+        ],
+        "dependencies": [
+            "aa12b88S25FQ1Bc-h1"
+        ],
+        "title": "Using Groupby",
+        "text": "How can we group the data by 'college' to count the number of modern buildings?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aa12b88S25FQ1Bc-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            ".groupby(\"college\").size()"
+        ],
+        "dependencies": [
+            "aa12b88S25FQ1Bc-h2"
+        ],
+        "title": "Counting Modern Buildings",
+        "text": "What method can we use to count the number of modern buildings after grouping by 'college'?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

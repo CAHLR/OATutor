@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a253306row6p2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Ridge Regression",
+        "text": "Ridge regression is a type of linear regression that includes a regularization term. This term is controlled by the hyper-parameter lambda (\u03bb).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6p2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row6p2b-h1"
+        ],
+        "title": "Effect of Lambda on Variance",
+        "text": "As lambda (\u03bb) increases, the regularization term becomes more significant, which can reduce the variance of the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6p2b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row6p2b-h2"
+        ],
+        "title": "Lambda and Observational Variance",
+        "text": "Consider what happens to the variance of the model's predictions as lambda decreases. Does it tend to zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6p2b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a253306row6p2b-h3"
+        ],
+        "title": "Analyzing the Statement",
+        "text": "Evaluate the statement: As lambda decreases, observational variance tends to $$0$$. Is this true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

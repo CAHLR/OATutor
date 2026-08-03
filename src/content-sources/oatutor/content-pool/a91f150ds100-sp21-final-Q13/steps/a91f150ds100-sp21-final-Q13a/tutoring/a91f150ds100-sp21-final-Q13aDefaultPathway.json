@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a91f150ds100-sp21-final-Q13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting in machine learning models. It adds a penalty to the loss function to discourage complex models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp21-final-Q13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp21-final-Q13a-h1"
+        ],
+        "title": "Training vs. Validation Error",
+        "text": "If both training and validation errors are decreasing, it indicates that the model is learning well and generalizing to unseen data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp21-final-Q13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp21-final-Q13a-h2"
+        ],
+        "title": "When to Adjust Regularization",
+        "text": "Regularization should be adjusted if the model is overfitting or underfitting. Overfitting occurs when the training error is low, but the validation error is high.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp21-final-Q13a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No additional regularization changes are needed."
+        ],
+        "dependencies": [
+            "a91f150ds100-sp21-final-Q13a-h3"
+        ],
+        "title": "Decision on Regularization",
+        "text": "Given that both training and validation errors are decreasing, what should Alice do regarding regularization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase regularization.",
+            "No additional regularization changes are needed.",
+            "Decrease regularization.",
+            "Remove some features.",
+            "Increase the learning rate."
+        ]
+    }
+]

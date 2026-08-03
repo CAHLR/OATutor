@@ -1,0 +1,15 @@
+{
+    "id": "ad34534ds100-sp22-mt2-Q6b",
+    "stepAnswer": [
+        "FALSE"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "The optimal coefficients must be zero.",
+    "stepBody": "Suppose Crossroads uses a boolean featurization for encoding an individual's lunch, where they create dummy features corresponding to all foods. They set these dummy features of all foods for an individual's lunch on a particular day to $$1$$ if eaten and $$0$$ if not eaten. We construct a design matrix X of shape (10**6, 4) that contains only the featurization to predict the total calories in an individual's lunch using ordinary least squares. Is the following is true? Select all that apply.\\n\\nB. The design matrix X must be full column rank.\\n##figure2.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "TRUE",
+        "FALSE"
+    ]
+}

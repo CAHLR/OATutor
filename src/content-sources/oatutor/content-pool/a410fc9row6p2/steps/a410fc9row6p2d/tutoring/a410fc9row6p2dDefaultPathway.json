@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a410fc9row6p2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding transforms categorical variables into a form that could be provided to ML algorithms to do a better job in prediction. Each category value is converted into a new categorical column and assigned a $$1$$ or $$0$$ (True/False).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row6p2d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row6p2d-h1"
+        ],
+        "title": "One-Hot Encoding Weather",
+        "text": "If you one-hot encode the 'weather' column, you will create three new columns: 'sunny', 'cloudy', and 'rainy'. Each row will have a $$1$$ in the column corresponding to its weather and $$0$$ in the others.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row6p2d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row6p2d-h2"
+        ],
+        "title": "Understanding Multicollinearity",
+        "text": "Multicollinearity occurs when two or more independent variables are highly correlated. This can cause problems in estimating the coefficients of the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row6p2d-h4",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row6p2d-h3"
+        ],
+        "title": "Checking for Multicollinearity",
+        "text": "When you one-hot encode a categorical variable with $$n$$ categories, you create $$n$$ binary variables. Including all $$n$$ variables in a regression model along with an intercept can lead to multicollinearity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row6p2d-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a410fc9row6p2d-h4"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "If Sam adds all three one-hot encoded features to his current model, will a unique OLS solution exist?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

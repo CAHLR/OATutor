@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ade7df0ds100-su21-final-Q6d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L0 Regularization",
+        "text": "L0 regularization limits the number of non-zero parameters in the model. In this case, only one parameter in the vector \\( $$\\theta$$ \\) can be non-zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q6d-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q6d-h1"
+        ],
+        "title": "Logistic Regression Basics",
+        "text": "Logistic regression predicts probabilities using the logistic function \\( \\sigma(z)=1/(1+e**{-z}) \\). The predicted class is $$1$$ if the probability is greater than $$0.5$$, and $$0$$ otherwise.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q6d-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q6d-h2"
+        ],
+        "title": "Applying L0 Regularization",
+        "text": "With \\( $$k=1$$ \\), only one feature can have a non-zero weight. Consider each feature individually to determine which one minimizes the misclassification error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q6d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q6d-h3"
+        ],
+        "title": "Calculate Predictions",
+        "text": "Calculate the predicted probabilities for each color using the logistic function with each feature having a non-zero weight one at a time. Which feature results in the least misclassification?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

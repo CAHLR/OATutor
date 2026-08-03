@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a253306row9p2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variable Types",
+        "text": "Consider the types of variables present in the dataset. Are there any variables that can be considered qualitative ordinal?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row9p2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row9p2b-h1"
+        ],
+        "title": "Qualitative Ordinal Variables",
+        "text": "Qualitative ordinal variables are categorical variables with a clear ordering. Check if any of the variables in the dataset fit this description.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row9p2b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a253306row9p2b-h2"
+        ],
+        "title": "Identifying Variable Types",
+        "text": "Look at the 'League' variable. Is it a qualitative ordinal variable?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a253306row9p2b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a253306row9p2b-h3"
+        ],
+        "title": "Conclusion on Variable Types",
+        "text": "Based on your analysis, is there a qualitative ordinal variable in the dataset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

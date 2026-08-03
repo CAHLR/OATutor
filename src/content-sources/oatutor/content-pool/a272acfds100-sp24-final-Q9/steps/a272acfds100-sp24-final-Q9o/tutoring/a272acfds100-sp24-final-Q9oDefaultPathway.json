@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a272acfds100-sp24-final-Q9o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD",
+        "text": "Singular Value Decomposition (SVD) is a method of decomposing a matrix into three other matrices. It is often used in Principal Component Analysis (PCA).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp24-final-Q9o-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp24-final-Q9o-h1"
+        ],
+        "title": "Matrix Dimensions in SVD",
+        "text": "In SVD, the matrix $X$ is decomposed into $U$, $S$, and $V**T$. What are the dimensions of these matrices?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp24-final-Q9o-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "U is n by n, S is n by d, V^T is d by d"
+        ],
+        "dependencies": [
+            "a272acfds100-sp24-final-Q9o-h2"
+        ],
+        "title": "Dimensions of $U$, $S$, and $V**T$",
+        "text": "Given $X$ is an $n$ by $d$ matrix, what are the dimensions of $U$, $S$, and $V**T$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp24-final-Q9o-h4",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp24-final-Q9o-h3"
+        ],
+        "title": "Rank and Singular Values",
+        "text": "The rank of a matrix is equal to the number of its non-zero singular values. How does this relate to the rank of $X$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp24-final-Q9o-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "There are fewer than $$d$$ non-zero singular values."
+        ],
+        "dependencies": [
+            "a272acfds100-sp24-final-Q9o-h4"
+        ],
+        "title": "Non-zero Singular Values",
+        "text": "If $rank(X)<d$, what can we say about the singular values of $X$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp24-final-Q9o-h6",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp24-final-Q9o-h5"
+        ],
+        "title": "Order of Singular Values",
+        "text": "Singular values in $S$ are arranged in non-increasing order. What does this imply about the structure of $S$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp24-final-Q9o-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The diagonal of $S$ starts with the largest singular value and decreases or remains the same."
+        ],
+        "dependencies": [
+            "a272acfds100-sp24-final-Q9o-h6"
+        ],
+        "title": "Structure of $S$",
+        "text": "Given that singular values are arranged in non-increasing order, what can we say about the diagonal of $S$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

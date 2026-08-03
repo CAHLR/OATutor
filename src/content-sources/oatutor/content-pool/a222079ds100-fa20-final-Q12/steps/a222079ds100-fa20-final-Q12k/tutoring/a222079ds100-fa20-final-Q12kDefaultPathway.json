@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a222079ds100-fa20-final-Q12k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Models",
+        "text": "Model A includes height in both inches and centimeters, and weight in both pounds and kilograms. Model B includes only height in centimeters and weight in kilograms. Consider how these differences might affect the confidence intervals.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa20-final-Q12k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa20-final-Q12k-h1"
+        ],
+        "title": "Confidence Intervals and Multicollinearity",
+        "text": "When multiple variables are highly correlated, it can lead to multicollinearity, which affects the confidence intervals of the coefficients. Consider how the inclusion of both inches and centimeters for height, and pounds and kilograms for weight, might introduce multicollinearity in Model A.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa20-final-Q12k-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa20-final-Q12k-h2"
+        ],
+        "title": "Impact of Multicollinearity",
+        "text": "Multicollinearity can inflate the standard errors of the coefficients, making it more likely for the confidence intervals to include zero. This is more likely to happen in Model A due to the inclusion of both units for height and weight.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

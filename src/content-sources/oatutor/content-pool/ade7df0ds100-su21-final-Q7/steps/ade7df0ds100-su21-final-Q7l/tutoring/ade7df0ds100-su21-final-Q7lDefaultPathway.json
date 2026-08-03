@@ -1,0 +1,45 @@
+[
+    {
+        "id": "ade7df0ds100-su21-final-Q7l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Data Distribution",
+        "text": "Observe the distribution of the orange and blue points. What kind of boundary would separate these two classes effectively?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q7l-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q7l-h1"
+        ],
+        "title": "Nature of Logistic Regression Boundaries",
+        "text": "Logistic regression creates linear decision boundaries. Consider whether a linear boundary can separate the classes in this dataset.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q7l-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q7l-h2"
+        ],
+        "title": "Analyzing the Boundary",
+        "text": "Given that logistic regression creates linear boundaries, can it form a circular boundary like C?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a977a7fds100-fa21-mt-Q2m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Overfitting",
+        "text": "Overfitting occurs when a model learns the training data too well, including its noise and outliers, leading to poor generalization to new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2m-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2m-h1"
+        ],
+        "title": "Strategies to Reduce Variance",
+        "text": "To reduce model variance, consider strategies that simplify the model or increase the amount of training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2m-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2m-h2"
+        ],
+        "title": "Increase Training Data",
+        "text": "One way to reduce variance is to increase the amount of training data. This helps the model generalize better.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2m-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2m-h2"
+        ],
+        "title": "Regularization Techniques",
+        "text": "Applying regularization techniques like L2 regularization (ridge regression) can help reduce variance by penalizing large coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2m-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2m-h2"
+        ],
+        "title": "Simplifying the Model",
+        "text": "Simplifying the model by reducing the number of features or using a simpler model can also help reduce variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a91f150ds100-su21-final-Q4f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L2 Regularization",
+        "text": "L2 regularization, also known as Ridge Regression, adds a penalty equal to the square of the magnitude of coefficients to the loss function. This helps in reducing overfitting by discouraging overly complex models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4f-h1"
+        ],
+        "title": "Effect on Model Complexity",
+        "text": "Adding L2 regularization tends to shrink the coefficients of the model, which can lead to a simpler model. How might this affect the bias of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4f-h2"
+        ],
+        "title": "Bias-Variance Tradeoff",
+        "text": "Consider the bias-variance tradeoff. Regularization typically increases bias but decreases variance. How does this tradeoff affect the model's performance on the training set?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4f-h3"
+        ],
+        "title": "Impact on Training Set",
+        "text": "With L2 regularization, the model's complexity is reduced, leading to an increase in bias. What is the expected behavior in the training set?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

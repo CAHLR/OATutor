@@ -1,0 +1,90 @@
+[
+    {
+        "id": "ae36232ds100-sp24-final-Q2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Learning Rate",
+        "text": "The learning rate, often denoted as alpha, is a crucial parameter in gradient descent. It determines the size of the steps taken towards the minimum of the loss function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp24-final-Q2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp24-final-Q2c-h1"
+        ],
+        "title": "Effects of a Large Learning Rate",
+        "text": "If the learning rate is too large, what might happen to the gradient descent process?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp24-final-Q2c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ae36232ds100-sp24-final-Q2c-h2"
+        ],
+        "title": "Consequences of a Large Learning Rate",
+        "text": "A large learning rate can cause the algorithm to overshoot the minimum, leading to divergence.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "ae36232ds100-sp24-final-Q2c-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp24-final-Q2c-h1"
+        ],
+        "title": "Effects of a Small Learning Rate",
+        "text": "Consider what happens if the learning rate is too small. How does it affect the convergence of gradient descent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp24-final-Q2c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ae36232ds100-sp24-final-Q2c-h4"
+        ],
+        "title": "Consequences of a Small Learning Rate",
+        "text": "A small learning rate can make the convergence process very slow, potentially taking a long time to reach the minimum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "ae36232ds100-sp24-final-Q2c-h6",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp24-final-Q2c-h1"
+        ],
+        "title": "Optimal Learning Rate",
+        "text": "The optimal learning rate balances the speed of convergence with the stability of the algorithm. It should be neither too large nor too small.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

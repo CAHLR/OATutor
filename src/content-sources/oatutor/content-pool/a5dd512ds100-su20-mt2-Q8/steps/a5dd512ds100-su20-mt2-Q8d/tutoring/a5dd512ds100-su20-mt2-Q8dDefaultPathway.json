@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a5dd512ds100-su20-mt2-Q8d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Precision and Recall",
+        "text": "Precision is the ratio of true positive predictions to the total number of positive predictions made by the model. Recall is the ratio of true positive predictions to the total number of actual positive cases. To find a threshold where precision equals recall, consider how these ratios change with different thresholds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-mt2-Q8d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su20-mt2-Q8d-h1"
+        ],
+        "title": "Calculate Precision and Recall for Different Thresholds",
+        "text": "Try calculating precision and recall for each threshold: $$0.25$$, $$0.5$$, and $$0.75$$. Compare the values to see if any threshold results in equal precision and recall.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-mt2-Q8d-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "Precision=2/3, Recall=2/3"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su20-mt2-Q8d-h2"
+        ],
+        "title": "Calculate Precision and Recall for $$T=0.6$$",
+        "text": "For threshold $$T=0.6$$, calculate the precision and recall. Use the given true labels and predicted probabilities to determine the number of true positives, false positives, and false negatives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-mt2-Q8d-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su20-mt2-Q8d-h3"
+        ],
+        "title": "Evaluate the Thresholds",
+        "text": "After calculating precision and recall for $$T=0.6$$, observe that both precision and recall are equal. This indicates that $$T=0.6$$ is a possible value for T* where precision equals recall.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

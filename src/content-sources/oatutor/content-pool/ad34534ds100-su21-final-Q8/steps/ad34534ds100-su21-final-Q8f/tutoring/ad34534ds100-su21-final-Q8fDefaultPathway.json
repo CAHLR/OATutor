@@ -1,0 +1,87 @@
+[
+    {
+        "id": "ad34534ds100-su21-final-Q8f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "When we one-hot encode a categorical variable, we create a binary column for each category. For example, if we one-hot encode the 'sex' column, we will have two new columns: $$'sex_{male'}$$ and $$'sex_{female'}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su21-final-Q8f-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-su21-final-Q8f-h1"
+        ],
+        "title": "Columns in the Design Matrix",
+        "text": "The design matrix \\( \\Phi_2 \\) includes one-hot encoded columns for 'sex' and $$'embark_{town'}$$, as well as an intercept term. How many columns does this result in?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su21-final-Q8f-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "ad34534ds100-su21-final-Q8f-h2"
+        ],
+        "title": "Counting One-Hot Encoded Columns",
+        "text": "How many columns are created by one-hot encoding the 'sex' column?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su21-final-Q8f-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "ad34534ds100-su21-final-Q8f-h3"
+        ],
+        "title": "Counting One-Hot Encoded Columns for $$'embark_{town'}$$",
+        "text": "How many columns are created by one-hot encoding the $$'embark_{town'}$$ column?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su21-final-Q8f-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "ad34534ds100-su21-final-Q8f-h4"
+        ],
+        "title": "Total Columns in \\( \\Phi_2 \\)",
+        "text": "Including the intercept term, how many columns are there in total in \\( \\Phi_2 \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su21-final-Q8f-h6",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-su21-final-Q8f-h5"
+        ],
+        "title": "Invertibility of \\( \\Phi_2**{T}\\Phi_2 \\)",
+        "text": "For a matrix to be invertible, it must be square and have full rank. Consider the number of rows and columns in \\( \\Phi_2 \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

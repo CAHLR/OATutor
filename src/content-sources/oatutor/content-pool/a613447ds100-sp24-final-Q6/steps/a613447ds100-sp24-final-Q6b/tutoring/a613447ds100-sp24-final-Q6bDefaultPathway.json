@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a613447ds100-sp24-final-Q6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "When adding more features to a model, it can lead to overfitting. Overfitting occurs when a model learns the training data too well, capturing noise along with the underlying pattern. This results in a low training error but a high testing error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp24-final-Q6b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp24-final-Q6b-h1"
+        ],
+        "title": "Effect of Regularization",
+        "text": "Regularization techniques, such as increasing the regularizer parameter \\(\\lambda\\), can help reduce overfitting by penalizing large coefficients in the model. This can lead to a more generalized model with better performance on unseen data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp24-final-Q6b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Training error decreases, testing error increases."
+        ],
+        "dependencies": [
+            "a613447ds100-sp24-final-Q6b-h1"
+        ],
+        "title": "Identifying Overfitting",
+        "text": "What happens to the training and testing errors when a model is overfitting?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Training error decreases, testing error increases.",
+            "Training error increases, testing error decreases.",
+            "Both errors decrease.",
+            "Both errors increase."
+        ]
+    },
+    {
+        "id": "a613447ds100-sp24-final-Q6b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It reduces overfitting by penalizing large coefficients."
+        ],
+        "dependencies": [
+            "a613447ds100-sp24-final-Q6b-h2"
+        ],
+        "title": "Role of Regularization",
+        "text": "How does increasing the regularizer parameter \\(\\lambda\\) affect the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It reduces overfitting by penalizing large coefficients.",
+            "It increases overfitting by allowing larger coefficients.",
+            "It has no effect on overfitting.",
+            "It only affects the training error."
+        ]
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a91f150ds100-sp25-final-Q2a,Q2c,Q2dj-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Validation",
+        "text": "In 4-fold cross-validation, the dataset is divided into $$4$$ parts. Each part is used as a validation set once, while the remaining $$3$$ parts are used for training.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp25-final-Q2a,Q2c,Q2dj-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp25-final-Q2a,Q2c,Q2dj-h1"
+        ],
+        "title": "Training and Validation in Cross-Validation",
+        "text": "Each data point is used in the training set multiple times, specifically in all folds except the one where it is used as a validation set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp25-final-Q2a,Q2c,Q2dj-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp25-final-Q2a,Q2c,Q2dj-h2"
+        ],
+        "title": "Number of Times Each Data Point is Used for Training",
+        "text": "In 4-fold cross-validation, each data point is used for training $$3$$ times and for validation once.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp25-final-Q2a,Q2c,Q2dj-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a91f150ds100-sp25-final-Q2a,Q2c,Q2dj-h3"
+        ],
+        "title": "Conclusion on the Statement",
+        "text": "Given the explanation of 4-fold cross-validation, is the statement 'With $$4$$ folds, each data point is used for training exactly $$4$$ times' true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

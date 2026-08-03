@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a977a7fds100-fa21-mt-Q2t-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "When you average predictions from multiple models, how does it affect the bias and variance of the ensemble model compared to a single model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2t-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2t-h1"
+        ],
+        "title": "Effect on Bias",
+        "text": "Averaging predictions from multiple models tends to reduce the bias of the ensemble model. This is because the ensemble model can capture more patterns from the data by combining different perspectives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2t-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2t-h1"
+        ],
+        "title": "Effect on Variance",
+        "text": "Averaging predictions from multiple models generally reduces the variance of the ensemble model. This is because the errors from individual models tend to cancel each other out, leading to more stable predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2t-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Bias decreases, Variance decreases"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2t-h2",
+            "a977a7fds100-fa21-mt-Q2t-h3"
+        ],
+        "title": "Analyzing Bias and Variance",
+        "text": "Consider the effects of averaging predictions from multiple models on bias and variance. Does it increase, decrease, or have no effect on each?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Bias increases, Variance increases",
+            "Bias decreases, Variance decreases",
+            "Bias increases, Variance decreases",
+            "Bias decreases, Variance increases"
+        ]
+    }
+]

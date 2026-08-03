@@ -1,0 +1,69 @@
+[
+    {
+        "id": "ae36232ds100-su25-final-Q2f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Design Matrix",
+        "text": "The design matrix $X$ is constructed using the features of the data. In this case, the features are $(x_{i1})**{3}$ and $\\log(x_{i2})$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2f-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2f-h1"
+        ],
+        "title": "Rank of the Design Matrix",
+        "text": "The rank of a matrix is the maximum number of linearly independent column vectors in the matrix. For Wesley's model, the rank of the design matrix $X$ should be less than or equal to the number of features.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2f-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2f-h2"
+        ],
+        "title": "Unique Solution in OLS",
+        "text": "For a unique solution in Ordinary Least Squares (OLS), the design matrix $X$ must have full column rank. This means the columns of $X$ should be linearly independent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2f-h3"
+        ],
+        "title": "Checking Linear Independence",
+        "text": "Given $$\\$n=30\\$$$ data points and $$2$$ features, check if the columns of the design matrix $X$ are linearly independent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2f-h5",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2f-h4"
+        ],
+        "title": "Conclusion on Rank",
+        "text": "Since Wesley has $$2$$ features and $$30$$ data points, the rank of the design matrix $X$ is $$2$$, which is less than $$3$$. Therefore, the statement about the rank being less than $$3$$ is true.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

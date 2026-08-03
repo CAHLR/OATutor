@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a222079ds100-sp24-final-Q3b,Q3c,Q3dd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "The DataFrame $$'song_{sample'}$$ contains columns for song title, artist, genre, and streams. The 'streams' column is the target variable for the regression model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp24-final-Q3b,Q3c,Q3dd-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-sp24-final-Q3b,Q3c,Q3dd-h1"
+        ],
+        "title": "Feature Engineering",
+        "text": "The code snippet creates dummy variables for each unique genre in the 'genre' column. This is a common technique in feature engineering for categorical variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp24-final-Q3b,Q3c,Q3dd-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-sp24-final-Q3b,Q3c,Q3dd-h2"
+        ],
+        "title": "Linear Regression Model",
+        "text": "The LinearRegression model is fitted without an intercept. This means the sum of the residuals will be zero, as the model passes through the origin.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp24-final-Q3b,Q3c,Q3dd-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "To convert categorical data into a numerical format that can be used in regression models."
+        ],
+        "dependencies": [
+            "a222079ds100-sp24-final-Q3b,Q3c,Q3dd-h2"
+        ],
+        "title": "Dummy Variables",
+        "text": "What is the purpose of creating dummy variables for the 'genre' column?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "To convert categorical data into a numerical format",
+            "To convert categorical data into a numerical format that can be used in regression models.",
+            "To create a new target variable",
+            "To remove the 'genre' column"
+        ]
+    }
+]

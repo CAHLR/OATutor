@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ae27c55ds100-fa17-mt-Q25c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Pseudo-Random Number Generators",
+        "text": "A pseudo-random number generator (PRNG) is an algorithm that uses mathematical formulas to produce sequences of numbers that appear random. Why might controlling the seed be beneficial in simulations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-mt-Q25c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa17-mt-Q25c-h1"
+        ],
+        "title": "Reproducibility in Simulations",
+        "text": "Consider the importance of being able to reproduce results in scientific experiments and simulations. How does controlling the seed in a PRNG contribute to this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-mt-Q25c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The seed initializes the PRNG allowing it to produce a specific sequence of numbers."
+        ],
+        "dependencies": [
+            "ae27c55ds100-fa17-mt-Q25c-h2"
+        ],
+        "title": "Defining the Seed",
+        "text": "What is the role of a seed in a pseudo-random number generator?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-mt-Q25c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Controlling the seed allows for the exact reproduction of the sequence of numbers generated ensuring that simulations can be replicated accurately."
+        ],
+        "dependencies": [
+            "ae27c55ds100-fa17-mt-Q25c-h3"
+        ],
+        "title": "Benefits of Controlling the Seed",
+        "text": "Why is it beneficial to control the seed in simulations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-mt-Q25c-h5",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa17-mt-Q25c-h4"
+        ],
+        "title": "Final Decision",
+        "text": "Based on your understanding of PRNGs and the importance of reproducibility, decide whether the statement is true or false.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

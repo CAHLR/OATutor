@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a8cec5cds100-sp25-final-Q2m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Validation",
+        "text": "In k-fold cross-validation, the dataset is divided into k subsets. Each subset is used once as a test set while the k-1 remaining subsets form the training set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2m-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2m-h1"
+        ],
+        "title": "Training and Testing in Cross-Validation",
+        "text": "In 4-fold cross-validation, each data point is used in the test set exactly once. How many times is each data point used in the training set?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2m-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2m-h2"
+        ],
+        "title": "Calculating Training Usage",
+        "text": "If each data point is used in the test set once, how many times is it used in the training set in 4-fold cross-validation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2m-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2m-h3"
+        ],
+        "title": "Verifying the Statement",
+        "text": "The statement claims that each data point is used for training exactly $$4$$ times. Is this consistent with your calculation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

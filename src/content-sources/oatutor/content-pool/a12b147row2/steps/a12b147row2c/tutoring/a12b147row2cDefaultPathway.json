@@ -1,0 +1,92 @@
+[
+    {
+        "id": "a12b147row2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Non-Response Bias",
+        "text": "Non-response bias occurs when the individuals who do not respond to a survey differ in meaningful ways from those who do respond. Consider how increasing the sample size and sending reminders might affect this bias.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a12b147row2c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Increasing Sample Size",
+        "text": "Increasing the sample size from $$100$$ to $$200$$ can potentially reduce the non-response bias. Think about how a larger sample size might provide a more representative view of the population.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a12b147row2c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Smaller than"
+        ],
+        "dependencies": [],
+        "title": "Impact of Reminder Emails",
+        "text": "Sending reminder emails to those who did not open the initial email can increase the response rate. How might this affect the non-response bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Larger than",
+            "Smaller than",
+            "The same as",
+            "Impossible to determine",
+            "Exactly double"
+        ]
+    },
+    {
+        "id": "a12b147row2c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a12b147row2c-h3"
+        ],
+        "title": "Combining Both Strategies",
+        "text": "Consider the combined effect of both increasing the sample size and sending reminder emails. How do these strategies together influence the non-response bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a12b147row2c-h5",
+        "type": "hint",
+        "dependencies": [
+            "a12b147row2c-h4"
+        ],
+        "title": "Comparing Bias Levels",
+        "text": "Think about how the original survey's non-response bias compares to the updated survey's bias after implementing both strategies.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a12b147row2c-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Smaller than"
+        ],
+        "dependencies": [
+            "a12b147row2c-h5"
+        ],
+        "title": "Final Conclusion on Bias",
+        "text": "With both strategies implemented, the non-response bias of the updated survey is likely $$___$$ the non-response bias of the original survey.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Larger than",
+            "Smaller than",
+            "The same as",
+            "Impossible to determine",
+            "Exactly double"
+        ]
+    }
+]

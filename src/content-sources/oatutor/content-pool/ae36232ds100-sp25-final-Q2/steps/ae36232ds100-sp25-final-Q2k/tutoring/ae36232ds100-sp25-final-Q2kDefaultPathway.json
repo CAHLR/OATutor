@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ae36232ds100-sp25-final-Q2k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Validation",
+        "text": "Cross-validation is a technique used to assess the performance of a model by dividing the data into subsets. Each subset is used as a test set at some point, while the remaining data is used for training.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2k-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2k-h1"
+        ],
+        "title": "Sampling with Replacement",
+        "text": "Sampling with replacement means that each data point can be selected more than once in the sample. This is different from sampling without replacement, where each data point can only be selected once.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2k-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2k-h2"
+        ],
+        "title": "4-Fold Cross-Validation",
+        "text": "In 4-fold cross-validation, the data is divided into $$4$$ subsets. Each subset is used as a test set once, while the remaining $$3$$ subsets are used for training.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2k-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2k-h3"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Consider whether sampling with replacement is a necessary condition for cross-validation. Is it always true that cross-validation folds are created by sampling with replacement?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

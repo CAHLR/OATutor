@@ -1,0 +1,115 @@
+[
+    {
+        "id": "a40b41cds100-sp25-final-Q4c,Q4df-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding K-Means Clustering",
+        "text": "K-Means clustering is an iterative algorithm that aims to partition a dataset into K distinct, non-overlapping subsets (clusters).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp25-final-Q4c,Q4df-h2",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp25-final-Q4c,Q4df-h1"
+        ],
+        "title": "Convergence of K-Means",
+        "text": "K-Means clustering always converges to a solution, but is it always the global optimum?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp25-final-Q4c,Q4df-h3",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp25-final-Q4c,Q4df-h2"
+        ],
+        "title": "Local vs Global Optimum",
+        "text": "Consider the possibility of K-Means converging to a local optimum rather than a global one. What factors might influence this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp25-final-Q4c,Q4df-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Initialization of centroids number of clusters and dataset distribution."
+        ],
+        "dependencies": [
+            "a40b41cds100-sp25-final-Q4c,Q4df-h3"
+        ],
+        "title": "Factors Affecting K-Means Convergence",
+        "text": "What factors can affect whether K-Means converges to a local or global optimum?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp25-final-Q4c,Q4df-h5",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp25-final-Q4c,Q4df-h4"
+        ],
+        "title": "Initialization of Centroids",
+        "text": "The initial placement of centroids can significantly affect the final clusters formed by K-Means. Why might this be the case?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp25-final-Q4c,Q4df-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Different initial centroids can lead to different convergence paths potentially resulting in different local optima."
+        ],
+        "dependencies": [
+            "a40b41cds100-sp25-final-Q4c,Q4df-h5"
+        ],
+        "title": "Impact of Initial Centroids",
+        "text": "Explain how different initial centroid placements can lead to different clustering results.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp25-final-Q4c,Q4df-h7",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp25-final-Q4c,Q4df-h6"
+        ],
+        "title": "Conclusion on K-Means Convergence",
+        "text": "Given the factors discussed, does K-Means always converge to the global optimum?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp25-final-Q4c,Q4df-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a40b41cds100-sp25-final-Q4c,Q4df-h7"
+        ],
+        "title": "Final Answer",
+        "text": "Based on your understanding, does K-Means clustering always converge to the global optimum solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a613447ds100-su19-final-Q6\u0081-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Ridge Regression",
+        "text": "Ridge regression is used to prevent overfitting by adding a penalty term to the loss function. This penalty term is controlled by the parameter lambda (\u03bb).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6\u0081-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6\u0081-h1"
+        ],
+        "title": "Effect of Lambda on Errors",
+        "text": "As lambda increases, the model complexity decreases, which can affect both training and validation errors. Consider how these errors change with different values of lambda.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6\u0081-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6\u0081-h2"
+        ],
+        "title": "Identifying Training and Validation Errors",
+        "text": "Training error typically decreases with increasing model complexity, while validation error decreases up to a point and then increases due to overfitting. Which plot shows this behavior?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6\u0081-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The error decreases initially and then increases."
+        ],
+        "dependencies": [
+            "a613447ds100-su19-final-Q6\u0081-h3"
+        ],
+        "title": "Analyzing Plot B",
+        "text": "Look at Plot B. How does the error change as lambda increases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The error decreases initially and then increases.",
+            "The error increases initially and then decreases.",
+            "The error remains constant.",
+            "The error increases steadily."
+        ]
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6\u0081-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Plot B"
+        ],
+        "dependencies": [
+            "a613447ds100-su19-final-Q6\u0081-h4"
+        ],
+        "title": "Choosing the Correct Plot",
+        "text": "Based on the behavior of training and validation errors with respect to lambda, which plot represents these errors?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Plot A",
+            "Plot B",
+            "Plot C",
+            "Plot D"
+        ]
+    }
+]

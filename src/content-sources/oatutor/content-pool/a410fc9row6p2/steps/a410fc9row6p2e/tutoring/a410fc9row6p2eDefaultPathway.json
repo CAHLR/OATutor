@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a410fc9row6p2e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding transforms categorical variables into a form that could be provided to ML algorithms to do a better job in prediction. Each category is converted into a new binary column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row6p2e-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Adding Features",
+        "text": "Adding more features to a model can increase its complexity. This can lead to overfitting, where the model fits the training data too closely and may not generalize well to new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row6p2e-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Bias-Variance Tradeoff",
+        "text": "Adding more features can increase the variance of the model, potentially increasing the model's bias squared. However, it can also decrease bias if the features are relevant.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row6p2e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a410fc9row6p2e-h3"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Consider whether adding one-hot encoded weather features would increase or decrease the model's bias squared.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

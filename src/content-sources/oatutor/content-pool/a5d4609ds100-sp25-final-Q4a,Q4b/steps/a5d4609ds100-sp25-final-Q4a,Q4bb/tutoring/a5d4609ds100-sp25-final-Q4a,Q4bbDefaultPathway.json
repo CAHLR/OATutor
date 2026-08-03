@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a5d4609ds100-sp25-final-Q4a,Q4bb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It is often used to make data easy to explore and visualize.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp25-final-Q4a,Q4bb-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp25-final-Q4a,Q4bb-h1"
+        ],
+        "title": "Linear Combinations in PCA",
+        "text": "In PCA, the principal components are linear combinations of the original features. This means each principal component is a weighted sum of the original variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp25-final-Q4a,Q4bb-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp25-final-Q4a,Q4bb-h2"
+        ],
+        "title": "Dimensionality Reduction",
+        "text": "PCA is commonly used for dimensionality reduction, which helps in reducing the number of variables in a dataset while preserving as much information as possible.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp25-final-Q4a,Q4bb-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a5d4609ds100-sp25-final-Q4a,Q4bb-h3"
+        ],
+        "title": "True or False: PCA Constructs Latent Features",
+        "text": "The latent features constructed by PCA are linear combinations of the original features. Is this statement true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

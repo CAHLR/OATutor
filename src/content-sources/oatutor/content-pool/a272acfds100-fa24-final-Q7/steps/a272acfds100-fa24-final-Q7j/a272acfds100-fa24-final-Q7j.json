@@ -1,0 +1,19 @@
+{
+    "id": "a272acfds100-fa24-final-Q7j",
+    "stepAnswer": [
+        "$$(2.4, 2)$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Angela collected a dataset of $$3$$ data points. Upon applying PCA to this dataset, Angela obtains matrices $$ \\cup , $$ $$S, $$ and $$V.$$\\nFor your convenience, matrices $$ \\cup $$ and $$V$$ have been rounded. The rows of $$ \\cup $$ are:\\n\u2022 $$(0.8, 0.6, 0)$$\\n\u2022 $$(-0.4, 0.6, -0.7)$$\\n\u2022 $$(-0.4, 0.6, 0.7)$$\\nThe rows of $$S$$ are:\\n\u2022 $$(4, 0, 0)$$\\n\u2022 $$(0, 1, 0)$$\\n\u2022 $$(0, 0, 0)$$\\nThe rows of $$V$$ are:\\n\u2022 $$(0.8, -0.3, -0.3)$$\\n\u2022 $$(0.4, 0.6, 0.6)$$\\n\u2022 $$(0, 0.7, -0.7)$$\\nThe dataset Angela used to compute the above PCA gives, for each contestant, the values of num stores and avg ratings and num points:\\n\u2022 Contestant A has num stores $$3$$ and avg ratings $$0$$ and num points $$0$$\\n\u2022 Contestant B has num stores $$0$$ and avg ratings $$1$$ and num points $$1$$\\n\u2022 Contestant C has num stores $$0$$ and avg ratings $$1$$ and num points $$1$$\\nAngela receives a new contestant D's performance:\\n\u2022 Contestant D has num stores $$3$$ and avg ratings $$\\frac{8}{3}$$ and num points $$\\frac{8}{3}$$\\nWhat is this contestant's coordinate $$(x,y)$$ on a PCA plot based on Angela's PCA results?##figure5.gif## ##figure6.gif## ##figure7.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "$$(2.4, 2)$$",
+    "choices": [
+        "$$(3.6, 2.7)$$",
+        "$$(2, 2.4)$$",
+        "$$(2.4, 2)$$",
+        "$$(2.4, -2)$$",
+        "$$(1.6, 1.4)$$"
+    ]
+}

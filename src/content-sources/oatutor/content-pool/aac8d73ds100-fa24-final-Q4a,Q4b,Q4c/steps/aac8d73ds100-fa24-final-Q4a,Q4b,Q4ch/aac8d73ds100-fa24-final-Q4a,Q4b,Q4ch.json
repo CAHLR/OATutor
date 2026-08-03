@@ -1,0 +1,18 @@
+{
+    "id": "aac8d73ds100-fa24-final-Q4a,Q4b,Q4ch",
+    "stepAnswer": [
+        "$$\\theta**{(a)}=[0,0.1,0]$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "blank (ii): The optimal parameter from training with L1 regularization is most likely:",
+    "stepBody": "Sam uses the following model to predict attendance rate:\\n$$\\hat{y}=\\hat{\\theta}_0+\\hat{\\theta}_1x_1+\\hat{\\theta}_2x_2$$\\nwhere $$y$$ is attendance rate, $$x_1$$ is dist from bell and $$x_2$$ is section no.\\nHe trains three versions of this model: one without regularization, one with L1 regularization, and one with L2 regularization. He finds different optimal parameters from each version. Each vector below lists the intercept first, then the coefficient on dist from bell, then the coefficient on section no.\\n\u2022 version (a): $$0$$, $$0.1$$, $$0$$\\n\u2022 version (b): $$1$$, $$0.5$$, $$2$$\\n\u2022 version (c): $$0.05$$, $$0.08$$, $$0.03$$",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "$$\\theta**{(a)}=[0,0.1,0]$$",
+        "$$\\theta**{(b)}=[1,0.5,2]$$",
+        "$$\\theta**{(c)}=[0.05,0.08,0.03]$$",
+        "$$\\theta**{(b)}$$ and $$\\theta**{(c)}$$ are equally likely",
+        "None of these"
+    ]
+}

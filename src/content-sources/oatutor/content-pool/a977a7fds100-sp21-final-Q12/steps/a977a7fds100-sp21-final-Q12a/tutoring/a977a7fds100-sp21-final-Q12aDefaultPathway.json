@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a977a7fds100-sp21-final-Q12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model we are using is $f_theta(z)=theta*z$. Since we are given $$\\$x=1\\$$$, we need to find the optimal $theta$ for this scenario.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp21-final-Q12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-sp21-final-Q12a-h1"
+        ],
+        "title": "Optimal Theta Calculation",
+        "text": "To find the optimal $theta$, consider the training data point $(x,y)$ where $$\\$x=1\\$$$ and $y=g(x)=A*x**2$. Substitute these into the model equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp21-final-Q12a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-sp21-final-Q12a-h2"
+        ],
+        "title": "Substitute and Solve",
+        "text": "Substitute $$\\$x=1\\$$$ and $$\\$y=A 1^2=A\\$$$ into the model equation $f_theta(x)=theta*x$. This gives $theta*1=A$. Solve for $theta$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp21-final-Q12a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$theta=A$$"
+        ],
+        "dependencies": [
+            "a977a7fds100-sp21-final-Q12a-h3"
+        ],
+        "title": "Calculate Theta",
+        "text": "Solve the equation $theta*1=A$ for $theta$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp21-final-Q12a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-sp21-final-Q12a-h4"
+        ],
+        "title": "Bias and Variance at Test Point",
+        "text": "Now that we have $$\\$theta=A\\$$$, evaluate the bias and variance of the model $f_theta$ at the test point $$\\$z=1\\$$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp21-final-Q12a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$bias=0$$"
+        ],
+        "dependencies": [
+            "a977a7fds100-sp21-final-Q12a-h5"
+        ],
+        "title": "Bias Calculation",
+        "text": "The bias is the difference between the expected prediction of the model and the true function value at $$\\$z=1\\$$$. Calculate $f_theta(1)$ and compare it to $g(1)$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp21-final-Q12a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$variance=0$$"
+        ],
+        "dependencies": [
+            "a977a7fds100-sp21-final-Q12a-h6"
+        ],
+        "title": "Variance Calculation",
+        "text": "Since there is no noise ($sigma**2=0$), the variance of the model's prediction at $$\\$z=1\\$$$ is zero. Confirm this by considering the variance of $f_theta(1)$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

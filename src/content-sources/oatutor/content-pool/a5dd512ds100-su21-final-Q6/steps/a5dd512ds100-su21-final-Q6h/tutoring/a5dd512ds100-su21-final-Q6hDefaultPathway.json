@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a5dd512ds100-su21-final-Q6h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding is a process used to convert categorical data into a numerical format that can be used in machine learning models. Each category is represented by a binary vector.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q6h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q6h-h1"
+        ],
+        "title": "Column Rank in One-Hot Encoding",
+        "text": "The column rank of a one-hot encoded dataset is equal to the number of unique categories in the original categorical variable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q6h-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q6h-h2"
+        ],
+        "title": "Identifying Unique Categories",
+        "text": "How many unique colors are there in the dataset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q6h-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q6h-h3"
+        ],
+        "title": "Determining Column Rank",
+        "text": "Given that each unique color corresponds to a column in the one-hot encoded dataset, what is the column rank?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

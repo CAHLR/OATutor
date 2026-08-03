@@ -1,0 +1,88 @@
+[
+    {
+        "id": "a5dd512ds100-su20-mt2-Q8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Recall",
+        "text": "Recall is the ratio of true positive predictions to the total actual positives. It measures how well the model identifies positive instances.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-mt2-Q8b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su20-mt2-Q8b-h1"
+        ],
+        "title": "Identify True Positives",
+        "text": "For Model C, a true positive occurs when the true label is $$1$$ and the predicted probability is greater than or equal to $$0.75$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-mt2-Q8b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su20-mt2-Q8b-h1"
+        ],
+        "title": "Calculate Total Positives",
+        "text": "Count the number of instances where the true label is $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-mt2-Q8b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su20-mt2-Q8b-h2"
+        ],
+        "title": "Calculate True Positives for Model C",
+        "text": "How many instances have a true label of $$1$$ and a predicted probability greater than or equal to $$0.75$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-mt2-Q8b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su20-mt2-Q8b-h3"
+        ],
+        "title": "Calculate Total Positives",
+        "text": "How many instances have a true label of 1?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-mt2-Q8b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{3}$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su20-mt2-Q8b-h4",
+            "a5dd512ds100-su20-mt2-Q8b-h5"
+        ],
+        "title": "Compute Recall for Model C",
+        "text": "Use the formula for recall: true positives divided by total positives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,11 @@
+{
+    "id": "aac8d73ds100-su20-final-Q11",
+    "title": "Cross-Validation Folds",
+    "body": "Fill in the blanks below to complete the implementation of $$\\texttt{create\\_folds,}$$ a function that takes in a value k and returns $$\\texttt{train\\_folds}$$ and $$\\texttt{valid\\_folds}$$ that we can use for cross-validation. Assume that X is a design matrix already defined in our notebook environment.\\n\\ndef $$\\texttt{create\\_folds(k):}$$\\n$$\\texttt{fold\\_size}$$ $$=$$ [blank](i)[blank]\\n$$\\texttt{shuffled\\_idx}$$ $$=$$ np.random.permutation(X.shape[0])\\n$$\\texttt{train\\_folds}$$ $$=$$ []\\n$$\\texttt{valid\\_folds}$$ $$=$$ []\\nfor i in range(k):\\n$$\\texttt{train\\_idx}$$ $$=$$ $$\\texttt{np.append(shuffled\\_idx[0}$$ : $$\\texttt{i*fold\\_size],}$$ $$\\texttt{shuffled\\_idx[(i}$$ + $$\\texttt{1)*fold\\_size}$$ :])\\n$$\\texttt{valid\\_idx}$$ $$=$$ [blank](ii)[blank]\\n$$\\texttt{train\\_folds.append(train\\_idx)}$$\\n$$\\texttt{valid\\_folds.append(valid\\_idx)}$$\\nreturn $$\\texttt{train\\_folds,}$$ $$\\texttt{valid\\_folds}$$",
+    "variabilization": {},
+    "oer": "https://ds100.org/su26/past-exams/",
+    "license": "",
+    "lesson": "Regularization and Cross Validation A",
+    "lessonId": "2WGys9Yi-r1t0-zhIWrJIPvU",
+    "courseName": "Midterm 2 Worksheets"
+}

@@ -1,0 +1,54 @@
+[
+    {
+        "id": "a222079ds100-fa25-mt2-Q2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Orthogonality",
+        "text": "Orthogonality in linear algebra refers to vectors being perpendicular to each other. If two vectors are orthogonal, their dot product is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa25-mt2-Q2d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Vector of Ones",
+        "text": "The vector \\( \\mathbf{1} \\) is a special vector where all elements are $$1$$. It is often used in linear algebra to represent constant terms or to check orthogonality with other vectors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa25-mt2-Q2d-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Residuals in OLS",
+        "text": "In an OLS model, the residuals are the differences between the true outcomes \\( Y \\) and the predicted outcomes \\( \\hat{Y} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa25-mt2-Q2d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Orthogonal to"
+        ],
+        "dependencies": [
+            "a222079ds100-fa25-mt2-Q2d-h1"
+        ],
+        "title": "Checking Orthogonality",
+        "text": "To determine if \\( \\mathbf{1} \\) is orthogonal to \\( Y-\\hat{Y} \\), consider the dot product of \\( \\mathbf{1} \\) and \\( Y-\\hat{Y} \\). If the dot product is zero, they are orthogonal.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Orthogonal to",
+            "In the span of",
+            "NOT orthogonal to and NOT in the span of"
+        ]
+    }
+]

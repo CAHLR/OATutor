@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a8cec5cds100-su25-final-Q2e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Residuals in OLS",
+        "text": "In an Ordinary Least Squares (OLS) regression, the residuals are the differences between the observed values and the predicted values. The sum of these residuals is often zero, but there are conditions that must be met for this to be true.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-su25-final-Q2e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-su25-final-Q2e-h1"
+        ],
+        "title": "Conditions for Sum of Residuals to be Zero",
+        "text": "For the sum of residuals to be zero in an OLS model, the model must include an intercept term. This is because the intercept adjusts the model to ensure that the average of the residuals is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-su25-final-Q2e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-su25-final-Q2e-h2"
+        ],
+        "title": "Checking the Model's Intercept",
+        "text": "Examine Wesley's model: \\(\\hat{y}_i=\\hat{\\theta}_0+\\hat{\\theta}_1(x_{i1})**{3}+\\hat{\\theta}_{2}\\log(x_{i2})\\). Does it include an intercept term?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-su25-final-Q2e-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Yes \\(\\hat{\\theta}_0\\) is the intercept term."
+        ],
+        "dependencies": [
+            "a8cec5cds100-su25-final-Q2e-h3"
+        ],
+        "title": "Analyzing the Model Structure",
+        "text": "Identify the components of Wesley's model. Does it have an intercept term?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-su25-final-Q2e-h5",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-su25-final-Q2e-h4"
+        ],
+        "title": "Conclusion on Residuals",
+        "text": "Since Wesley's model includes an intercept term, the sum of the residuals is expected to be zero, assuming the model is correctly specified and fitted.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

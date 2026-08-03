@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a253306row6p2g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization techniques like L1 and L2 are used to prevent overfitting by penalizing large coefficients. This often results in smaller coefficients compared to models without regularization.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6p2g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row6p2g-h1"
+        ],
+        "title": "Comparing Coefficients",
+        "text": "Look at the coefficients in each parameter vector. Which one has the largest values? This is likely the model without regularization.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6p2g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$${\\theta}^b$$"
+        ],
+        "dependencies": [
+            "a253306row6p2g-h2"
+        ],
+        "title": "Identifying the Model Without Regularization",
+        "text": "Which parameter vector has the largest coefficients?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$${\\theta}^a$$",
+            "$${\\theta}^b$$",
+            "$${\\theta}^c$$"
+        ]
+    }
+]

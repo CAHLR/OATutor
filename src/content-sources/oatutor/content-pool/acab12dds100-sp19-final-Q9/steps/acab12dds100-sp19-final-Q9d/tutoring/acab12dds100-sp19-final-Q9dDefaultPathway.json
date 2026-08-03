@@ -1,0 +1,73 @@
+[
+    {
+        "id": "acab12dds100-sp19-final-Q9d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "You need to select the histogram that best visualizes the distribution of the sample median from a bootstrap sample of $$10$$ differences.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp19-final-Q9d-h2",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-sp19-final-Q9d-h1"
+        ],
+        "title": "Bootstrap Distribution",
+        "text": "The bootstrap distribution of a statistic (like the median) is created by resampling with replacement from the original data and calculating the statistic for each resample.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp19-final-Q9d-h3",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-sp19-final-Q9d-h2"
+        ],
+        "title": "Characteristics of the Median",
+        "text": "The median is less sensitive to extreme values compared to the mean. This affects the shape of its bootstrap distribution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp19-final-Q9d-h4",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-sp19-final-Q9d-h3"
+        ],
+        "title": "Analyzing the Histograms",
+        "text": "Look for a histogram that represents a distribution of medians from resampled data. It should be less variable and more centered compared to the original distribution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp19-final-Q9d-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "F"
+        ],
+        "dependencies": [
+            "acab12dds100-sp19-final-Q9d-h4"
+        ],
+        "title": "Selecting the Correct Histogram",
+        "text": "Which histogram best represents the distribution of the sample median from the bootstrap samples?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+        ]
+    }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "id": "ae36232ds100-sp24-final-Q2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Loss Function",
+        "text": "The loss function is a measure of how well the model's predictions match the actual outcomes. It is given by:\\n\\nL(theta_0,theta_1)=1/n*sum{i=1}{n}{(y_i-theta_0/x_i-log{theta_1}x_i+theta_0*theta_1*(x_i**2+1))}",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp24-final-Q2b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Gradient Vector Components",
+        "text": "The gradient vector provides the direction and rate of change of the loss function with respect to the parameters $$\\theta_0$$ and $$\\theta_1$$. It is given by:\\n\\npartial{L}/partial{theta}=(1/n*sum{i=1}{n}{(-1/x_i+theta_1*x_i**2+theta_1)},1/n*sum{i=1}{n}{(-x_i/theta_1+theta_0*x_i**2+theta_0)})",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp24-final-Q2b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Initial weights can affect convergence speed and whether the algorithm finds the global minimum."
+        ],
+        "dependencies": [
+            "ae36232ds100-sp24-final-Q2b-h1"
+        ],
+        "title": "Impact of Initial Weights",
+        "text": "Consider how the initial values of $$\\theta_0$$ and $$\\theta_1$$ might affect the convergence of the gradient descent algorithm. What happens if they are too large or too small?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp24-final-Q2b-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp24-final-Q2b-h3"
+        ],
+        "title": "Convergence to Optimal Weights",
+        "text": "The choice of initial weights can determine if the gradient descent algorithm converges to the true optimal weights or gets stuck in a local minimum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp24-final-Q2b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ae36232ds100-sp24-final-Q2b-h4"
+        ],
+        "title": "True or False Statements",
+        "text": "Evaluate the following statement: \"The initial weights chosen for gradient descent can impact whether it converges to the true optimal weights.\"",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

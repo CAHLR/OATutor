@@ -1,0 +1,17 @@
+{
+    "id": "a5dd512ds100-sp21-final-Q9b",
+    "stepAnswer": [
+        "Figure C"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Let $$\\theta_i$$ be the coefficient for the sad emoji count. Which of the figures best depict the decision boundary in this case?",
+    "stepBody": "Consider a small subset of tweets scattered as points (HappyEmojiCount, SadEmojiCount) in the $$2$$ dimensional plane. We will use the shape and color of a point to indicate whether the tweet is actually happy or sad.\\nSuppose for the following subset of tweets, we want to train a logistic regression model (intercept included) with L2 regularization on one of its parameters.\\nRecall that a logistic regression model with L2 regularization has the loss function of the following form:\\n$$Loss(Y,\\hat{Y},\\theta)=CrossEntropyLoss(Y,\\hat{Y})+\\lambda\\theta_i**{2}$$\\nwhere $$\\theta_i$$ is some parameter from the model.\\nConsider the figures depicting three possible decision boundaries applied on the dataset, labelled Figure A, Figure B and Figure C.\\nFor the parameter, explain, by matching with one of the figures, when compared to a model with no regularization, what would happen to the slope of the decision boundary that divides the two classes and the training error if we set $$\\lambda$$ to be a really large value.##figure1.gif## ##figure2.gif## ##figure3.gif## ##figure4.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "Figure A",
+        "Figure B",
+        "Figure C",
+        "None of these"
+    ]
+}

@@ -1,0 +1,66 @@
+[
+    {
+        "id": "ae36232ds100-su25-final-Q2t-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "Gradient descent is an optimization algorithm used to minimize a function by iteratively moving towards the steepest descent direction. It can be applied to both convex and non-convex functions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2t-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2t-h1"
+        ],
+        "title": "Convex vs Non-Convex Functions",
+        "text": "A convex function has a single global minimum, while a non-convex function may have multiple local minima. Gradient descent can be used on both types of functions, but it may get stuck in local minima for non-convex functions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2t-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2t-h2"
+        ],
+        "title": "Gradient Descent on Convex Functions",
+        "text": "When using gradient descent on a convex function, the algorithm is guaranteed to converge to the global minimum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2t-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2t-h2"
+        ],
+        "title": "Gradient Descent on Non-Convex Functions",
+        "text": "When using gradient descent on a non-convex function, the algorithm may converge to a local minimum instead of the global minimum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

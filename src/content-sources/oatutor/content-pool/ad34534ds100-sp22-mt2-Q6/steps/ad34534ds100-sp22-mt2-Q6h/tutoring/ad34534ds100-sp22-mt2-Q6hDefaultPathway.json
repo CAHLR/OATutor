@@ -1,0 +1,49 @@
+[
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Dataset",
+        "text": "The dataset contains information about what students ate for lunch, including the foods, servings, and total calories. Each row represents a single lunch entry for a student.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6h-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6h-h1"
+        ],
+        "title": "Bootstrap Sampling",
+        "text": "In bootstrap sampling, we typically sample with replacement from the dataset. The first argument to the sample function is usually the number of rows to sample.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6h-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$num_{rows}$$"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6h-h2"
+        ],
+        "title": "Determine the Number of Rows",
+        "text": "What is the number of rows in the dataset that should be used as the first argument in the sample function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$num_{rows}$$",
+            "$$1$$",
+            "$$5000$$",
+            "$$num_{cols}$$",
+            "$$num_{rows}$$",
+            "$$num_{rows}-1$$"
+        ]
+    }
+]

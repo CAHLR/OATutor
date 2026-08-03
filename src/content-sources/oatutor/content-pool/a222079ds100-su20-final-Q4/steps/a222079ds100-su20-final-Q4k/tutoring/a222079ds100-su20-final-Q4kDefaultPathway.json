@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a222079ds100-su20-final-Q4k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The problem involves comparing two ridge regression models, \\( \\hat{\\theta}_A \\) and \\( \\hat{\\theta}_B \\), where the difference lies in whether the intercept term is regularized. We need to determine if \\( \\hat{\\theta}_A $$=$$ \\hat{\\theta}_B \\) when using a mean-centered design matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-final-Q4k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su20-final-Q4k-h1"
+        ],
+        "title": "Mean-Centering Effect",
+        "text": "Mean-centering the design matrix \\( \\tilde{\\mathbb{X}} \\) implies that all columns except the intercept have a mean of zero. This affects the regularization of the intercept term.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-final-Q4k-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su20-final-Q4k-h2"
+        ],
+        "title": "Impact of Regularizing the Intercept",
+        "text": "When the design matrix is mean-centered, the intercept term does not affect the mean of the predictors. Therefore, regularizing the intercept term has no impact on the solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-final-Q4k-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Always true"
+        ],
+        "dependencies": [
+            "a222079ds100-su20-final-Q4k-h3"
+        ],
+        "title": "Conclusion",
+        "text": "Given that mean-centering nullifies the effect of regularizing the intercept, what can we conclude about \\( \\hat{\\theta}_A \\) and \\( \\hat{\\theta}_B \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Always true",
+            "Sometimes true",
+            "Never true",
+            "Depends on the value of \\( \\lambda \\)",
+            "Cannot be determined"
+        ]
+    }
+]

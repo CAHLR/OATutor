@@ -1,0 +1,33 @@
+[
+    {
+        "id": "a40b41cds100-su21-final-Q10e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Spectral Clustering",
+        "text": "In spectral clustering, the number of clusters is not determined by the algorithm itself. Instead, it is a parameter that you need to specify before running the algorithm.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-su21-final-Q10e-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "predetermined"
+        ],
+        "dependencies": [
+            "a40b41cds100-su21-final-Q10e-h1"
+        ],
+        "title": "Determining the Number of Clusters",
+        "text": "Before running spectral clustering, you need to decide how many clusters you want to find. This means the number of clusters is...",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "predetermined",
+            "returned by the algorithm"
+        ]
+    }
+]

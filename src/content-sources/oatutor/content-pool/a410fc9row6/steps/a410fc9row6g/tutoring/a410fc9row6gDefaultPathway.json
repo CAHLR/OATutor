@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a410fc9row6g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Correlation",
+        "text": "Correlation measures the strength and direction of a linear relationship between two variables. A correlation of $$1$$ means a perfect positive relationship, $$-1$$ means a perfect negative relationship, and $$0$$ means no linear relationship.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row6g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row6g-h1"
+        ],
+        "title": "Correlation Matrix Analysis",
+        "text": "In the correlation matrix, $$critic_1$$ and $$critic_2$$ have a strong negative correlation $$(-0.70)$$, indicating that as one increases, the other tends to decrease. $$Critic_2$$ and $$self_{rating}$$ also have a strong negative correlation $$(-0.75)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row6g-h3",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row6g-h2"
+        ],
+        "title": "Model Implications",
+        "text": "The model aims to predict $$self_{rating}$$ using $$critic_1$$ and $$critic_2$$. A strong correlation between predictors and the response variable is generally desired for a reliable model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row6g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a410fc9row6g-h3"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Given the correlation matrix, does the model have strong predictors for $$self_{rating}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

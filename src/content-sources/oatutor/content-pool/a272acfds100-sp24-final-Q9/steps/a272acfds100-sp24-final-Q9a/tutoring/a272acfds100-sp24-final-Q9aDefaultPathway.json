@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a272acfds100-sp24-final-Q9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Reconstruction Error",
+        "text": "Reconstruction error in PCA is minimized when the data points are closely aligned with the first principal component. This means that the variance along the first principal component is maximized.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp24-final-Q9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp24-final-Q9a-h1"
+        ],
+        "title": "Analyzing Pair A",
+        "text": "In Pair A, the data points are spread horizontally with very little vertical spread. This suggests that the first principal component will capture most of the variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp24-final-Q9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp24-final-Q9a-h1"
+        ],
+        "title": "Analyzing Pair B",
+        "text": "In Pair B, the data points are spread diagonally, indicating a strong linear relationship. The first principal component will capture a significant amount of variance, but there is still some spread perpendicular to it.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp24-final-Q9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp24-final-Q9a-h1"
+        ],
+        "title": "Analyzing Pair C",
+        "text": "In Pair C, the data points are spread vertically with little horizontal spread. This suggests that the first principal component will capture less variance compared to Pair A.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp24-final-Q9a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Pair A"
+        ],
+        "dependencies": [
+            "a272acfds100-sp24-final-Q9a-h2"
+        ],
+        "title": "Choosing the Pair with Lowest Reconstruction Error",
+        "text": "Based on the analysis of the pairs, which pair has the data points most closely aligned with the first principal component?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Pair A",
+            "Pair B",
+            "Pair C",
+            "Not enough information"
+        ]
+    }
+]

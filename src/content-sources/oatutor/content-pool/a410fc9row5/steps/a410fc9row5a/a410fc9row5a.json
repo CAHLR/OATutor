@@ -1,0 +1,17 @@
+{
+    "id": "a410fc9row5a",
+    "stepAnswer": [
+        "Estimated average ride increase per additional hour on campus."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Interpreting the SLR Slope",
+    "stepBody": "Rachel fits a Simple Linear Regression (SLR) model to predict the number of rides taken by UC Berkeley students using their BayPass. She uses the hours spent on campus (hours) as a predictor and the number of rides taken (rides) as a response. The equation for the SLR model is given by: $$\\hat{y}=\\theta_0+\\theta_{1}\\text{hours}.$$ What is the interpretation of $$\\theta_1$$ in this model?",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "Estimated number of rides taken when no hours are spent on campus.",
+        "Estimated average ride increase per additional hour on campus.",
+        "Estimated average rides taken by students.",
+        "Estimated total number of rides by students in the dataset."
+    ]
+}

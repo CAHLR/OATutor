@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a977a7fds100-fa18-final-Q13d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Expectation",
+        "text": "The expectation in the bias-variance decomposition is taken over the randomness in the data and the randomness in the model fitting process. Consider what sources of randomness are involved in these processes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q13d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q13d-h1"
+        ],
+        "title": "Sources of Randomness",
+        "text": "Think about the different sources of randomness that can affect the outcome of a model. Are errors in data collection one of these sources?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q13d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q13d-h2"
+        ],
+        "title": "Identifying the Correct Source",
+        "text": "Consider whether the expectation is taken over the randomness in the data collection process or the randomness in the model fitting process.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,157 @@
+[
+    {
+        "id": "a5dd512ds100-fa19-final-Q7c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding ROC Curves",
+        "text": "A ROC curve is a graphical plot that illustrates the diagnostic ability of a binary classifier system as its discrimination threshold is varied. It is created by plotting the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q7c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q7c-h1"
+        ],
+        "title": "Thresholds in ROC Curves",
+        "text": "The thresholds are used to determine the point at which the predicted probabilities are classified as positive or negative. By varying these thresholds, you can plot different points on the ROC curve.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q7c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "0,1"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q7c-h2"
+        ],
+        "title": "Setting Thresholds",
+        "text": "What should be the range of thresholds to consider for generating the ROC curve?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q7c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q7c-h3"
+        ],
+        "title": "Iterating Over Thresholds",
+        "text": "To generate the ROC curve, iterate over the thresholds and calculate the true positive rate and false positive rate for each threshold.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q7c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "thresholds"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q7c-h4"
+        ],
+        "title": "Looping Through Thresholds",
+        "text": "What should be the loop variable to iterate over the thresholds?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q7c-h6",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q7c-h5"
+        ],
+        "title": "Calculating Predictions",
+        "text": "For each threshold, calculate the predicted labels by comparing the predicted probabilities to the threshold.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q7c-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$predicted_{probs} \\geq t$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q7c-h6"
+        ],
+        "title": "Generating Predictions",
+        "text": "How do you calculate the predicted labels for a given threshold?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q7c-h8",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q7c-h7"
+        ],
+        "title": "True Positive Rate (TPR)",
+        "text": "The true positive rate is calculated as the number of true positives divided by the sum of true positives and false negatives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q7c-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{a}{a+c}$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q7c-h8"
+        ],
+        "title": "Calculating TPR",
+        "text": "What is the formula for calculating the true positive rate?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q7c-h10",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q7c-h9"
+        ],
+        "title": "False Positive Rate (FPR)",
+        "text": "The false positive rate is calculated as the number of false positives divided by the sum of false positives and true negatives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q7c-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{c}{b+d}$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q7c-h10"
+        ],
+        "title": "Calculating FPR",
+        "text": "What is the formula for calculating the false positive rate?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

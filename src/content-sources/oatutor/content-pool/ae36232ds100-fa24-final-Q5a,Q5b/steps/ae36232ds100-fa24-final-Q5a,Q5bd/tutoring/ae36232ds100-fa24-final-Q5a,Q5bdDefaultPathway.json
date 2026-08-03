@@ -1,0 +1,66 @@
+[
+    {
+        "id": "ae36232ds100-fa24-final-Q5a,Q5bd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Loss Function",
+        "text": "The loss function given is $$L(hat_y,y)=hat_y-\\theta_2 y$$. This function measures the difference between the predicted value $$hat_y$$ and the actual value $$y$$, scaled by $$\\theta_2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa24-final-Q5a,Q5bd-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-fa24-final-Q5a,Q5bd-h1"
+        ],
+        "title": "Calculate the Predicted Value",
+        "text": "Using the model $$hat_y=\\theta_2 \\theta_1 x$$, calculate the predicted value $$hat_y$$ using the given values: $$\\theta_1=3$$, $$\\theta_2=pi$$, and $$x=2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa24-final-Q5a,Q5bd-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2\\theta_1 x-\\theta_2 y$$"
+        ],
+        "dependencies": [
+            "ae36232ds100-fa24-final-Q5a,Q5bd-h2"
+        ],
+        "title": "Compute the Gradient with Respect to $$\\theta_2$$",
+        "text": "To perform gradient descent, compute the gradient of the loss function with respect to $$\\theta_2$$. Use the formula: $$gradient_{\\theta,2}=partial_derivative(L,\\theta_2)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa24-final-Q5a,Q5bd-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\pi-\\frac{5}{2}$$"
+        ],
+        "dependencies": [
+            "ae36232ds100-fa24-final-Q5a,Q5bd-h3"
+        ],
+        "title": "Update $$\\theta_2$$",
+        "text": "Using the gradient computed, update $$\\theta_2$$ using the formula: $${\\theta_2}^{t+1}={\\theta_2}^t-\\alpha gradient_{\\theta,2}$$. Use $$alpha=0.5$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\pi-\\frac{5}{2}$$",
+            "$$3-pi$$",
+            "$$\\pi+\\frac{5}{2}$$",
+            "$$\\pi-\\frac{1}{2}$$",
+            "$$pi-5$$",
+            "$$\\pi-\\frac{5}{2}$$"
+        ]
+    }
+]

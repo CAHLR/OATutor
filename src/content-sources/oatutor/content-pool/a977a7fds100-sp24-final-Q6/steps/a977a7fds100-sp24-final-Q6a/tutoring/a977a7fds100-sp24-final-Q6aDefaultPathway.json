@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a977a7fds100-sp24-final-Q6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "When adding more features to a model, it's important to understand how bias and variance are affected. Bias refers to the error due to overly simplistic assumptions in the learning algorithm, while variance refers to the error due to excessive sensitivity to small fluctuations in the training set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp24-final-Q6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-sp24-final-Q6a-h1"
+        ],
+        "title": "Training vs. Testing Error",
+        "text": "If the training error decreases but the testing error increases, it suggests that the model is fitting the training data too closely. This is often a sign of overfitting, where the model captures noise in the training data as if it were a true pattern.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp24-final-Q6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-sp24-final-Q6a-h2"
+        ],
+        "title": "Impact of Adding Features",
+        "text": "Adding more features can increase the complexity of the model. While this might reduce bias by allowing the model to capture more patterns, it can also increase variance, making the model more sensitive to the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp24-final-Q6a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The model has low bias and high variance."
+        ],
+        "dependencies": [
+            "a977a7fds100-sp24-final-Q6a-h3"
+        ],
+        "title": "Analyzing the Scenario",
+        "text": "Given that the testing error increases while the training error decreases, what can we infer about the bias and variance of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The model has low bias and high variance.",
+            "The model has high bias and low variance.",
+            "The model has low bias and low variance.",
+            "The model has high bias and high variance."
+        ]
+    }
+]

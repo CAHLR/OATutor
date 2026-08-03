@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a5dd512ds100-fa19-final-Q7g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding ROC Curves",
+        "text": "An ROC curve plots the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings. The point marked with an 'X' represents a specific threshold.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q7g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q7g-h1"
+        ],
+        "title": "Interpreting the ROC Curve",
+        "text": "The closer the point is to the top-left corner, the better the performance of the classification model at that threshold. The point 'X' is near the top of the curve.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q7g-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q7g-h2"
+        ],
+        "title": "Threshold and ROC Curve",
+        "text": "A lower threshold typically results in a higher true positive rate but also a higher false positive rate. Consider where 'X' is located on the curve.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q7g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0.1$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q7g-h3"
+        ],
+        "title": "Choosing the Threshold",
+        "text": "Given the position of 'X' on the ROC curve, which threshold value is most likely?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0.1$$",
+            "$$0.65$$",
+            "$$0.9$$",
+            "$$1.0$$"
+        ]
+    }
+]

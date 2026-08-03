@@ -1,0 +1,41 @@
+[
+    {
+        "id": "aac8d73ds100-su20-final-Q11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Fold Size",
+        "text": "To determine the size of each fold, consider how many data points you have and how many folds you want to create.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q11a-h1"
+        ],
+        "title": "Calculating Fold Size",
+        "text": "The fold size is calculated by dividing the total number of data points by the number of folds (k).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q11a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "X.shape[0]/k"
+        ],
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q11a-h2"
+        ],
+        "title": "Fill in the Blank for Fold Size",
+        "text": "What expression represents the fold size in terms of the total number of data points and the number of folds?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

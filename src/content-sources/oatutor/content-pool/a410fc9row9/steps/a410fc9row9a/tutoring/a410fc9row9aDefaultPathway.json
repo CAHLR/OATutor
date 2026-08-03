@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a410fc9row9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Mean Squared Error (MSE)",
+        "text": "The Mean Squared Error (MSE) is a common measure used to evaluate the accuracy of a model. It is calculated as the average of the squares of the differences between the observed and predicted values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row9a-h1"
+        ],
+        "title": "Expressing MSE for this Model",
+        "text": "For this problem, the MSE can be expressed as: MSE $$=$$ (1/n)*sum{i\\=1}{n}{(y_i-f_theta(x_i))**2}.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row9a-h2"
+        ],
+        "title": "Substitute the Model into MSE",
+        "text": "Substitute the given model $$\\operatorname{f_{\\theta}}\\left(x_i\\right)=\\theta e^{\\sqrt{|x_i|}}$$ into the MSE expression.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row9a-h3"
+        ],
+        "title": "Differentiate MSE with Respect to Theta",
+        "text": "To find the optimal theta, differentiate the MSE with respect to theta and set the derivative equal to zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row9a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "sum{i\\=1}{n}{y_i*e**(sqrt(abs(x_i)))}/sum{i\\=1}{n}{e**(2*sqrt(abs(x_i)))}"
+        ],
+        "dependencies": [
+            "a410fc9row9a-h4"
+        ],
+        "title": "Solve for Theta",
+        "text": "Solve the equation obtained from setting the derivative of MSE with respect to theta to zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

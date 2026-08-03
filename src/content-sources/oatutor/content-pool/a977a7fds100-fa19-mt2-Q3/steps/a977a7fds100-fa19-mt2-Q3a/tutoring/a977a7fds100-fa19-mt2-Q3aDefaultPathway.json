@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a977a7fds100-fa19-mt2-Q3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE Components",
+        "text": "The Mean Squared Error (MSE) is composed of three parts: the squared bias, the variance, and the irreducible error. Each of these components contributes to the overall error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa19-mt2-Q3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa19-mt2-Q3a-h1"
+        ],
+        "title": "Shape of the MSE Curve",
+        "text": "The MSE curve is typically U-shaped because as model complexity increases, the bias decreases while the variance increases. The irreducible error remains constant.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa19-mt2-Q3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa19-mt2-Q3a-h2"
+        ],
+        "title": "Finding the Minimum of the MSE",
+        "text": "The minimum of the MSE occurs where the sum of the squared bias, variance, and irreducible error is the smallest. This is typically at a moderate level of model complexity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa19-mt2-Q3a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The MSE is the sum of the squared model bias the model variance and the irreducible error; it is approximately U shaped and its minimum occurs at the minimum of that curve."
+        ],
+        "dependencies": [
+            "a977a7fds100-fa19-mt2-Q3a-h3"
+        ],
+        "title": "Calculating MSE",
+        "text": "Calculate the MSE by adding the squared bias, variance, and irreducible error. What is the general shape of this curve?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

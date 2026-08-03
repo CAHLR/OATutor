@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE on Training Data",
+        "text": "When you add a new feature to a model, especially one that is a transformation of an existing feature, it can affect the model's ability to fit the training data. Consider how this might change the model's complexity and its fit to the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6f-h1"
+        ],
+        "title": "Effect of Adding Features",
+        "text": "Adding a feature to a model can increase its flexibility, allowing it to fit the training data more closely. However, this can also lead to overfitting. Think about how this might impact the MSE on the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6f-h2"
+        ],
+        "title": "Analyzing MSE on Training Data",
+        "text": "Consider the effect of adding a feature that is the square of an existing feature. How might this affect the model's fit to the training data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    }
+]

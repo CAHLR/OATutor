@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a91f150ds100-su20-final-Q5d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model is given by the equation: $$\\operatorname{f_{\\theta}}\\left(x\\right)=0.5\\theta_0+\\theta_0 \\theta_1 x_1+sin\\left(\\theta_1\\right) x_2$$. This is a non-linear model with two parameters, $$\\theta_0$$ and $$\\theta_1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su20-final-Q5d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su20-final-Q5d-h1"
+        ],
+        "title": "Loss Function",
+        "text": "The loss function for a single observation is given by: $$L(theta)=y_i-\\operatorname{f_{\\theta}}\\left(x_i\\right)$$. This means the loss is the difference between the actual value $$y_i$$ and the predicted value $$\\operatorname{f_{\\theta}}\\left(x_i\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su20-final-Q5d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su20-final-Q5d-h2"
+        ],
+        "title": "Gradient Descent",
+        "text": "Gradient descent is an optimization algorithm used to minimize the loss function. It updates the parameters $$\\theta_0$$ and $$\\theta_1$$ iteratively to find the optimal values that minimize the loss.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su20-final-Q5d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a91f150ds100-su20-final-Q5d-h3"
+        ],
+        "title": "Initial Values",
+        "text": "We start with initial values $${\\theta_0}^0=0$$ and $${\\theta_1}^0=0$$. What are the initial guesses for $$\\theta_0$$ and $$\\theta_1$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su20-final-Q5d-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a91f150ds100-su20-final-Q5d-h4"
+        ],
+        "title": "First Iteration Update",
+        "text": "After the first iteration of gradient descent, we update the parameters. Use the gradient of the loss function to determine the new values for $${\\theta_0}^1$$ and $${\\theta_1}^1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$2$$",
+            "$$-2$$",
+            "$$0$$",
+            "$$0.5$$",
+            "$$1$$",
+            "$$2$$"
+        ]
+    }
+]

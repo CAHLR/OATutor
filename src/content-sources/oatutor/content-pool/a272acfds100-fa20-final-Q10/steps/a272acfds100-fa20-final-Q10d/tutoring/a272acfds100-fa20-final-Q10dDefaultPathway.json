@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a272acfds100-fa20-final-Q10d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD",
+        "text": "The Singular Value Decomposition (SVD) of a matrix X is given by X $$=$$ U*S*V**T, where U and V are orthogonal matrices, and S is a diagonal matrix containing the singular values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa20-final-Q10d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-fa20-final-Q10d-h1"
+        ],
+        "title": "Relation to Variance",
+        "text": "The sum of the squares of the singular values (s) is equal to the total variance of the data matrix X. In this case, $$\\sum s^2$$ $$=$$ $$121$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa20-final-Q10d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-fa20-final-Q10d-h2"
+        ],
+        "title": "Finding s[1]",
+        "text": "To find s[1], consider that the singular values are typically ordered from largest to smallest. You need to find the value of s[1] that, when squared and added to the squares of the other singular values, equals $$121$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa20-final-Q10d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "a272acfds100-fa20-final-Q10d-h3"
+        ],
+        "title": "Calculate s[1]",
+        "text": "Given that $$\\sum s^2$$ $$=$$ $$121$$, and assuming s[0] is the largest singular value, estimate s[1] using the provided choices.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0.3$$",
+            "$$3.3$$",
+            "$$6$$",
+            "$$8$$",
+            "$$36$$"
+        ]
+    }
+]

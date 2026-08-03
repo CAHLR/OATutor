@@ -1,0 +1,55 @@
+[
+    {
+        "id": "a977a7fds100-sp17-final-Q7b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bernoulli Sampling",
+        "text": "Bernoulli sampling involves selecting each row independently with a certain probability. This can lead to a sample that is not representative of the entire dataset.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp17-final-Q7b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Limit Clause in SQL",
+        "text": "The LIMIT clause in SQL is used to specify the number of records to return. It can be used to extract a fixed number of rows from a table.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp17-final-Q7b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-sp17-final-Q7b-h1"
+        ],
+        "title": "Comparing Sampling Methods",
+        "text": "Consider how Bernoulli sampling and using a LIMIT clause might affect the representativeness of the sample. Which method is more likely to produce a biased sample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp17-final-Q7b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a977a7fds100-sp17-final-Q7b-h3"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Based on the characteristics of Bernoulli sampling and the LIMIT clause, determine if Emily's statement about bias is true or false.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

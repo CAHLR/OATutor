@@ -1,0 +1,81 @@
+[
+    {
+        "id": "ade7df0ds100-su20-mt2-Q8c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Task",
+        "text": "When predicting a disease, it's crucial to minimize false negatives. A false negative occurs when the model predicts a person does not have the disease when they actually do. This can lead to missed diagnoses and lack of treatment.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su20-mt2-Q8c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su20-mt2-Q8c-h1"
+        ],
+        "title": "Evaluating Thresholds",
+        "text": "Consider how each threshold affects the number of false negatives. A lower threshold means more people are predicted to have the disease, reducing the chance of missing someone who actually has it.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su20-mt2-Q8c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Model A minimizes false negatives because it predicts positive for lower probabilities, reducing the chance of missing a true positive."
+        ],
+        "dependencies": [
+            "ade7df0ds100-su20-mt2-Q8c-h2"
+        ],
+        "title": "Analyzing Model A",
+        "text": "Model A uses a threshold of $$T=0.25$$. This means any predicted probability of $$0.25$$ or higher will result in a positive prediction. How does this affect false negatives?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Model A minimizes false negatives because it predicts positive for lower probabilities, reducing the chance of missing a true positive.",
+            "Model A increases false negatives because it predicts positive for higher probabilities, increasing the chance of missing a true positive."
+        ]
+    },
+    {
+        "id": "ade7df0ds100-su20-mt2-Q8c-h4",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su20-mt2-Q8c-h3"
+        ],
+        "title": "Comparing Models",
+        "text": "Compare the thresholds of Models B and C with Model A. Which model is more likely to predict a positive result for a given probability?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su20-mt2-Q8c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Model A, since we want to minimize false negatives."
+        ],
+        "dependencies": [
+            "ade7df0ds100-su20-mt2-Q8c-h4"
+        ],
+        "title": "Choosing the Best Model",
+        "text": "Given the need to minimize false negatives, which model is best suited for predicting disease presence?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Model A, since we want to minimize false positives.",
+            "Model A, since we want to minimize false negatives.",
+            "Model B, since it balances precision and recall.",
+            "Model C, since we want to minimize false negatives.",
+            "Model C, since we want to maximize precision."
+        ]
+    }
+]

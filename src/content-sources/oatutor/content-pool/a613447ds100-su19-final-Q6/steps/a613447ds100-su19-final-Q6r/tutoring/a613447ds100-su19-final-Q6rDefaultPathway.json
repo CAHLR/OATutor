@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a613447ds100-su19-final-Q6r-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "Adding a feature of random numbers between $$0$$ and $$1$$ to a model can affect its bias and variance. Consider how this might impact the model's ability to generalize to new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6r-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6r-h1"
+        ],
+        "title": "Effect on Bias",
+        "text": "Bias refers to the error introduced by approximating a real-world problem, which may be complex, by a simplified model. Adding random noise as a feature does not help the model capture the true underlying pattern.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6r-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6r-h2"
+        ],
+        "title": "Effect on Variance",
+        "text": "Variance refers to how much the model's predictions would change if we used a different training dataset. Adding random noise can increase variance because the model might try to fit this noise.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6r-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a613447ds100-su19-final-Q6r-h3"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Does adding a feature of random numbers between $$0$$ and $$1$$ increase the model's bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6r-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a613447ds100-su19-final-Q6r-h4"
+        ],
+        "title": "Final Conclusion",
+        "text": "Based on your understanding of bias and variance, evaluate the statement: Adding a feature of random numbers between $$0$$ and $$1$$ increases bias.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

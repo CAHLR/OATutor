@@ -1,0 +1,19 @@
+{
+    "id": "ade7df0ds100-fa20-final-Q9f",
+    "stepAnswer": [
+        "$$\\frac{62}{71}$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "After thresholding $$\\hat{y}$$ we compute a confusion matrix for our model's predictions. As a reminder, type $$0$$ and type $$1$$ refer to wine types. The confusion matrix contains the following counts:\\n\u2022 Actual type $$0$$, predicted type 0: $$57$$\\n\u2022 Actual type $$0$$, predicted type 1: unknown\\n\u2022 Actual type $$1$$, predicted type 0: unknown\\n\u2022 Actual type $$1$$, predicted type 1: $$62$$\\nFor some reason, our confusion matrix is corrupted, and doesn't contain the information on the off-diagonals. However, we somehow know that our model's accuracy is $$\\frac{119}{130}$$ and our model's precision is $$\\frac{31}{32}.$$\\nWhat is our model's recall?##figure3.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "$$\\frac{62}{71}$$",
+    "choices": [
+        "$$\\frac{62}{64}$$",
+        "$$\\frac{62}{71}$$",
+        "$$\\frac{57}{59}$$",
+        "$$\\frac{57}{71}$$",
+        "$$\\frac{62}{119}$$"
+    ]
+}

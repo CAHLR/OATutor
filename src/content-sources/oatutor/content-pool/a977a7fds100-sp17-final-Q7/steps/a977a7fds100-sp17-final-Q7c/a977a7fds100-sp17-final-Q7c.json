@@ -1,0 +1,15 @@
+{
+    "id": "a977a7fds100-sp17-final-Q7c",
+    "stepAnswer": [
+        "TRUE"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "The output of the TABLESAMPLE query provides a hint about how many rows there are in the transactions table while Emily's LIMIT query does not.",
+    "stepBody": "Your friend Emily Engineer tells you to avoid Bernoulli sampling, and use the following query instead:\\nSELECT *\\nFROM transactions\\nLIMIT XX;\\n(where XX is replaced by the correct answer to the previous question). Evaluate the following statement:",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "TRUE",
+        "FALSE"
+    ]
+}

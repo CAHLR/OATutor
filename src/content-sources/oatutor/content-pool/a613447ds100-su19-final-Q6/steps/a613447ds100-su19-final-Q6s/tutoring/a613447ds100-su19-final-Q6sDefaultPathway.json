@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a613447ds100-su19-final-Q6s-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model uses a linear regression approach with features for vegetables and types of meat. Adding a random feature can affect the model's bias and variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6s-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6s-h1"
+        ],
+        "title": "Effect of Random Features",
+        "text": "Adding a feature of random numbers between $$0$$ and $$1$$ does not provide meaningful information related to the prediction task. Consider how this affects the model's ability to generalize.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6s-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6s-h2"
+        ],
+        "title": "Bias and Variance Trade-off",
+        "text": "Adding irrelevant features can increase the model's complexity, potentially increasing variance without reducing bias. Think about how this impacts the model's performance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,111 @@
+[
+    {
+        "id": "a5dd512ds100-su19-final-Q8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Precision",
+        "text": "Precision is calculated as the number of true positives divided by the total number of predicted positives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q8a-h1"
+        ],
+        "title": "Calculate Precision for Model A",
+        "text": "For Model A, calculate precision using the formula: true positives / (true positives + false positives).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{40}{40+10}$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q8a-h2"
+        ],
+        "title": "Precision for Model A",
+        "text": "What is the precision for Model A?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q8a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q8a-h1"
+        ],
+        "title": "Calculate Precision for Model B",
+        "text": "For Model B, calculate precision using the formula: true positives / (true positives + false positives).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q8a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{80}{80+10}$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q8a-h4"
+        ],
+        "title": "Precision for Model B",
+        "text": "What is the precision for Model B?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q8a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q8a-h1"
+        ],
+        "title": "Calculate Precision for Model C",
+        "text": "For Model C, calculate precision using the formula: true positives / (true positives + false positives).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q8a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{80}{80+5}$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q8a-h6"
+        ],
+        "title": "Precision for Model C",
+        "text": "What is the precision for Model C?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q8a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q8a-h3"
+        ],
+        "title": "Compare Precisions",
+        "text": "Compare the precision values calculated for Models A, B, and C to determine which model has the highest precision.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

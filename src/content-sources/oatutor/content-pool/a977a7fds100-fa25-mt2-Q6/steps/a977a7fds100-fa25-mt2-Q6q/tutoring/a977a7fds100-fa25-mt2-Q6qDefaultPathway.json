@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6q-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LASSO Regularization",
+        "text": "LASSO (Least Absolute Shrinkage and Selection Operator) regularization adds a penalty equal to the absolute value of the magnitude of coefficients to the loss function. This can lead to some coefficients being exactly zero, effectively selecting a simpler model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6q-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6q-h1"
+        ],
+        "title": "Effect on Model Bias",
+        "text": "When LASSO regularization is applied, the model tends to become simpler by reducing the magnitude of coefficients. This can lead to an increase in model bias because the model might not fit the training data as closely as before.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6q-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6q-h1"
+        ],
+        "title": "Effect on Model Variance",
+        "text": "LASSO regularization can decrease model variance because it reduces the complexity of the model, making it less sensitive to fluctuations in the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6q-h4",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6q-h1"
+        ],
+        "title": "Effect on MSE (Training Data)",
+        "text": "The Mean Squared Error (MSE) on the training data might increase with LASSO regularization because the model is not fitting the training data as closely due to the penalty on large coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6q-h5",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6q-h1"
+        ],
+        "title": "Effect on MSE (Test Data)",
+        "text": "The MSE on held-out test data might decrease with LASSO regularization because the model is less likely to overfit the training data, potentially improving generalization to unseen data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

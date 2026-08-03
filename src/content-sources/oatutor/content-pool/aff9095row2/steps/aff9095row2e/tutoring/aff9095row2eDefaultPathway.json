@@ -1,0 +1,60 @@
+[
+    {
+        "id": "aff9095row2e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding KDE Bandwidth",
+        "text": "The bandwidth in a KDE plot controls the smoothness of the estimated distribution. A larger bandwidth can oversmooth the data, making distinct peaks less visible.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aff9095row2e-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Bandwidth on Distribution",
+        "text": "If the bandwidth is too large, the KDE plot may not accurately reflect the true distribution of the data, potentially masking multiple modes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aff9095row2e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The plot becomes oversmoothed, resembling a normal distribution."
+        ],
+        "dependencies": [],
+        "title": "Identifying the Problem",
+        "text": "What happens to the KDE plot when the bandwidth is too large?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The plot becomes oversmoothed, resembling a normal distribution.",
+            "The plot becomes too jagged, showing too many peaks."
+        ]
+    },
+    {
+        "id": "aff9095row2e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease the bandwidth to capture more details of the distribution."
+        ],
+        "dependencies": [],
+        "title": "Choosing the Correct Bandwidth",
+        "text": "How can you adjust the bandwidth to better reflect a multimodal distribution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase the bandwidth to smooth out the distribution.",
+            "Decrease the bandwidth to capture more details of the distribution."
+        ]
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "id": "ad34534ds100-fa25-mt2-Q6e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "When you remove a feature from a model, it can lead to an increase in bias because the model has less information to work with. This can make the model less flexible and less able to capture the underlying patterns in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q6e-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q6e-h1"
+        ],
+        "title": "Effect of Removing a Feature",
+        "text": "Removing a feature generally increases the bias of the model because it reduces the model's complexity. With fewer features, the model might not capture all the nuances of the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q6e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase only"
+        ],
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q6e-h2"
+        ],
+        "title": "Impact on (Model Bias)**2",
+        "text": "What happens to (Model Bias)**2 when you remove a feature from the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase only",
+            "Decrease only",
+            "Increase and Decrease",
+            "Neither Increase nor Decrease",
+            "Cannot be determined"
+        ]
+    }
+]

@@ -1,0 +1,19 @@
+{
+    "id": "a8cec5cds100-sp25-final-Q2n",
+    "stepAnswer": [
+        "$$-x_i+\\theta_0$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "blank (A)",
+    "stepBody": "As part of a market expansion, Raising Cane's tests a custom profit forecasting model for Berkeley, using a custom objective function to optimize predicted monthly profits.\\nThe objective function is defined as:\\n$$L(\\theta_0,\\theta_1)=\\frac{1}{n}\\sum_{i=1}**{n}(y_i-\\frac{\\log(\\theta_0)}{\\theta_0}-\\theta_1x_i+\\theta_{0}\\theta_1)$$\\n$$\\frac{\\partial{L}}{\\partial{\\theta}}(\\theta_0,\\theta_1)=\\frac{1}{n}\\sum_{i=1}**{n}(-\\frac{1-\\log(\\theta_0)}{\\theta_0**{2}}+\\theta_1,(A))$$\\nComplete the gradient vector by calculating blank (A).",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "$$-x_i+\\theta_0$$",
+    "choices": [
+        "$$-x_i+\\theta_0$$",
+        "$$-x_i-\\theta_0$$",
+        "$$x_i+\\theta_0$$",
+        "$$x_i-\\theta_0$$",
+        "$$-x_i+\\theta_1$$"
+    ]
+}

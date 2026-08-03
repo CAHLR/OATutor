@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a91f150ds100-sp22-mt2-Q5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Objective Function",
+        "text": "The objective function combines the $L_2$ loss and the exponential regularization term. The $L_2$ loss is given by $1/n*||Y-X*theta||_2**2$, and the regularization term is $lambda*sum{i=1}{p}{10**theta_i}$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp22-mt2-Q5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp22-mt2-Q5a-h1"
+        ],
+        "title": "Gradient Descent and Regularization",
+        "text": "Gradient descent is an optimization algorithm used to minimize the objective function. It iteratively updates the parameters $theta$ to find the optimal solution. The regularization term affects the gradient and thus the update rule for $theta$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp22-mt2-Q5a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-2/n*X**T*(Y-X*theta)+lambda*sum{i=1}{p}{10**theta_i*log{10}}"
+        ],
+        "dependencies": [
+            "a91f150ds100-sp22-mt2-Q5a-h2"
+        ],
+        "title": "Formulating the Gradient",
+        "text": "To apply gradient descent, we need to compute the gradient of the objective function with respect to $theta$. The gradient of the $L_2$ loss is $-2/n*X**T*(Y-X*theta)$, and the gradient of the regularization term is $lambda*sum{i=1}{p}{10**theta_i*log{10}}$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp22-mt2-Q5a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp22-mt2-Q5a-h3"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "The statement is asking whether gradient descent can be used to solve for the optimal solution with the given exponential regularization. Consider how the regularization term affects the gradient and the convergence of the algorithm.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

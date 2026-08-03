@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a253306row10p2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Prediction Vector",
+        "text": "The prediction vector \\( \\hat{Y} \\) is the result of applying the linear regression model to the dataset. It represents the predicted delay times for each flight record.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row10p2d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row10p2d-h1"
+        ],
+        "title": "Dimensions of the Design Matrix",
+        "text": "The design matrix \\( X \\) includes an intercept and has dimensions corresponding to the number of records and features. In this case, it has $$400$$ rows (one for each flight record) and $$10$$ columns (9 features plus the intercept).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row10p2d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row10p2d-h2"
+        ],
+        "title": "Dimensions of the Coefficient Vector",
+        "text": "The coefficient vector \\( \\hat{\\theta} \\) has dimensions that match the number of columns in the design matrix \\( X \\). Since \\( X \\) has $$10$$ columns, \\( \\hat{\\theta} \\) is a $$10$$ by $$1$$ vector.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row10p2d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$400\\times1$$"
+        ],
+        "dependencies": [
+            "a253306row10p2d-h3"
+        ],
+        "title": "Calculating the Shape of \\( \\hat{Y} \\)",
+        "text": "To find the shape of the prediction vector \\( \\hat{Y} \\), consider the multiplication of the design matrix \\( X \\) with the coefficient vector \\( \\hat{\\theta} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

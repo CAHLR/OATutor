@@ -1,0 +1,52 @@
+[
+    {
+        "id": "a613447ds100-fa24-final-Q3ba-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Risk",
+        "text": "The model risk is the sum of the model bias squared, model variance, and observational variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa24-final-Q3ba-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula for Observational Variance",
+        "text": "Observational variance can be calculated using the formula: \\( \\text{Model Risk} $$=$$ \\text{Bias}**2 + \\text{Variance} + \\text{Observational Variance} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa24-final-Q3ba-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [],
+        "title": "Calculate Bias Squared",
+        "text": "Given the model bias is $$3$$, calculate the bias squared.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa24-final-Q3ba-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [],
+        "title": "Solve for Observational Variance",
+        "text": "Rearrange the equation to solve for the observational variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,64 @@
+[
+    {
+        "id": "aff9095row2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding KDE Plot",
+        "text": "A KDE plot is used to estimate the probability density function of a continuous random variable. It is useful for visualizing the distribution of data over a continuous interval or time period.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aff9095row2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "aff9095row2c-h1"
+        ],
+        "title": "KDE Plot Suitability",
+        "text": "Consider whether a KDE plot is suitable for visualizing discrete data like the number of renovations per year.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aff9095row2c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Discrete"
+        ],
+        "dependencies": [],
+        "title": "Analyzing Data Type",
+        "text": "What type of data are you dealing with when considering the number of renovations per year?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Continuous",
+            "Discrete"
+        ]
+    },
+    {
+        "id": "aff9095row2c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aff9095row2c-h3"
+        ],
+        "title": "Choosing the Right Plot",
+        "text": "Given that the data is discrete, is a KDE plot appropriate for visualizing the number of renovations per year?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

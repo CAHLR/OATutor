@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE Minimization",
+        "text": "To minimize the Mean Squared Error (MSE) using a constant model, consider what value of $$\\theta_0$$ would make the predicted values closest to the actual $$y$$ values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp24-mt-Q5e-h1"
+        ],
+        "title": "Median vs. Mean",
+        "text": "Think about the properties of the median and mean. Which one is more robust to outliers? Which one minimizes the sum of squared deviations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5e-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "sum{i\\=1}{n}{(y_i-theta_0)**2}/n"
+        ],
+        "dependencies": [
+            "a8cec5cds100-sp24-mt-Q5e-h2"
+        ],
+        "title": "Calculating MSE for a Constant Model",
+        "text": "If $$\\theta_0$$ is set to the mean of $$y$$, what is the formula for MSE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5e-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The mean minimizes the sum of squared deviations from the data points."
+        ],
+        "dependencies": [
+            "a8cec5cds100-sp24-mt-Q5e-h3"
+        ],
+        "title": "Properties of the Mean",
+        "text": "What is the property of the mean in relation to minimizing squared deviations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-mt-Q5e-h5",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp24-mt-Q5e-h4"
+        ],
+        "title": "Choosing the Correct Method",
+        "text": "Based on the properties of the mean, which method should Angela use to find $$\\theta_0$$ that minimizes MSE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

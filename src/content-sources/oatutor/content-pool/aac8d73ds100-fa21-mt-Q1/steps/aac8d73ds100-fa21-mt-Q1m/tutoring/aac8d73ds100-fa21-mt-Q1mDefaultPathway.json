@@ -1,0 +1,87 @@
+[
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Table",
+        "text": "The table shows the errors for different values of lambda (\u03bb) across two folds. Your goal is to choose the \u03bb that minimizes the error across all folds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1m-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa21-mt-Q1m-h1"
+        ],
+        "title": "Comparing Errors for Each \u03bb",
+        "text": "For $$\\lambda=1$$, the errors are $$1$$ and $$3$$. For $$\\lambda=2$$, the errors are $$0.5$$ and $$1.5$$. For $$\\lambda=3$$, the errors are $$9$$ and $$1$$. Which \u03bb has the lowest total error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1m-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa21-mt-Q1m-h2"
+        ],
+        "title": "Calculating Total Error for $$\\lambda=1$$",
+        "text": "Calculate the total error for $$\\lambda=1$$ by adding the errors from both folds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1m-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa21-mt-Q1m-h2"
+        ],
+        "title": "Calculating Total Error for $$\\lambda=2$$",
+        "text": "Calculate the total error for $$\\lambda=2$$ by adding the errors from both folds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1m-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa21-mt-Q1m-h2"
+        ],
+        "title": "Calculating Total Error for $$\\lambda=3$$",
+        "text": "Calculate the total error for $$\\lambda=3$$ by adding the errors from both folds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1m-h6",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa21-mt-Q1m-h3"
+        ],
+        "title": "Choosing the Best \u03bb",
+        "text": "Compare the total errors for each \u03bb. The \u03bb with the smallest total error is the best choice.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

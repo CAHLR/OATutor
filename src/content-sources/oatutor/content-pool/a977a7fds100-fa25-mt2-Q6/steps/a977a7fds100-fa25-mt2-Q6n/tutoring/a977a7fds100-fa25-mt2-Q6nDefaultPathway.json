@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE on Training Data",
+        "text": "When you remove a feature from a model, it can affect the model's ability to fit the training data. Consider how this might impact the Mean Squared Error (MSE) on the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6n-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6n-h1"
+        ],
+        "title": "Effect of Removing a Feature",
+        "text": "Removing a feature can lead to a simpler model. Think about how this simplification might affect the model's performance on the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6n-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6n-h2"
+        ],
+        "title": "Impact on Training MSE",
+        "text": "If a feature is removed, the model might not fit the training data as closely. What could be a possible effect on the MSE on the training data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    }
+]

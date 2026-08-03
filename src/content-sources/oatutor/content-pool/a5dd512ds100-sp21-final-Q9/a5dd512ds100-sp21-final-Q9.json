@@ -1,0 +1,11 @@
+{
+    "id": "a5dd512ds100-sp21-final-Q9",
+    "title": "Predicting Happy and Sad Tweets",
+    "body": "In this question we will be focusing on predicting whether a tweet is happy (1) or sad (0) using logistic regression. Rather than using a bag of words featurization, we will simply count the number of positive emojis and negative emojis.\\nAssume you are given a training dataframe training with the columns Tweet, HappyEmojiCount, SadEmojiCount and isHappy.\\nYou fit a logistic regression model using the following block of codes:\\nfrom $$\\texttt{sklearn.linear\\_models}$$ import LogisticRegression\\nlr $$=$$ $$LogisticRegression(intercept=True)$$\\nlr.fit(training[[\"HappyEmojiCount\", \"SadEmojiCount\"]], training[\"isHappy\"])\\n##figure6.gif",
+    "variabilization": {},
+    "oer": "https://ds100.org/su26/past-exams/",
+    "license": "",
+    "lesson": "Logistic Regression and Classification A",
+    "lessonId": "12br4D60-LD86-5FdJ1CoLfC",
+    "courseName": "Midterm 3 Worksheets"
+}

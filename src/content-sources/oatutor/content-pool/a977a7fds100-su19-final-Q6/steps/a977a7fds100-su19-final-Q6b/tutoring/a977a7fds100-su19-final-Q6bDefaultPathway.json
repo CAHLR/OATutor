@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a977a7fds100-su19-final-Q6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model is a linear regression where the total cost is predicted based on the amount of vegetables and the type of meat. The intercept, $$\\theta_0$$, represents the baseline cost when no vegetables are bought and the meat type is not specified.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6b-h1"
+        ],
+        "title": "Interpreting $$\\theta_0$$",
+        "text": "$$\\Theta_0$$ is the intercept of the model. It represents the expected total cost when the amount of vegetables is zero and the meat type is not specified.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6b-h2"
+        ],
+        "title": "Analyzing the Data",
+        "text": "Look at the data provided. When no vegetables are bought $$(veg=0)$$, the total cost varies depending on the type of meat. This suggests that $$\\theta_0$$ is influenced by the baseline cost of meat.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Positive"
+        ],
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6b-h3"
+        ],
+        "title": "Determining the Sign of $$\\theta_0$$",
+        "text": "Based on the data, when $$veg=0$$, the total cost is $$9$$ for chicken, $$13$$ for beef, and $$19$$ for fish. What does this suggest about the baseline cost represented by $$\\theta_0$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Positive",
+            "Negative",
+            "Exactly $$0$$",
+            "Not enough info"
+        ]
+    }
+]

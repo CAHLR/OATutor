@@ -1,0 +1,61 @@
+[
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding N-gram Limitations",
+        "text": "Consider how N-grams treat sequences of letters. What happens when you have segments that are not exactly $$3$$ letters long?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1f-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Non-Consecutive Segments",
+        "text": "Think about how N-grams might mistakenly group non-consecutive letters together. How could this affect the interpretation of DNA sequences?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1f-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Overlapping Segments",
+        "text": "N-grams can create overlapping segments. How might this be problematic when analyzing DNA sequences?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1f-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Wrap-Around Segments",
+        "text": "Consider how N-grams might incorrectly interpret the end of a sequence as wrapping around to the beginning. Why is this an issue for DNA sequences?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1f-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Identifying N-gram Issues",
+        "text": "Identify which of the following are true about the limitations of using N-grams for DNA sequences:\\n$$1$$. Segments of non-consecutive letters would be included.\\n$$2$$. Segments with $$1$$ or $$2$$ letters have no meaning.\\n$$3$$. Overlapping segments would be included.\\n$$4$$. DNA does not \"wrap around\", but N-gram would capture \"wrap-around\" segments.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

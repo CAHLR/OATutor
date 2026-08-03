@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a410fc9row8p2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Residual Plots",
+        "text": "A residual plot shows the residuals on the vertical axis and the independent variable on the horizontal axis. It helps to assess the fit of a regression model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row8p2d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row8p2d-h1"
+        ],
+        "title": "Interpreting the Residual Plot",
+        "text": "Look for patterns in the residual plot. A random scatter of points suggests a good fit, while patterns indicate potential issues with the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row8p2d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row8p2d-h2"
+        ],
+        "title": "Identifying Patterns",
+        "text": "In the residual plot, if the residuals are consistently above or below the horizontal line, it indicates that the model is consistently underpredicting or overpredicting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row8p2d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The residuals are mostly above the horizontal line."
+        ],
+        "dependencies": [
+            "a410fc9row8p2d-h3"
+        ],
+        "title": "Analyzing the Residual Plot",
+        "text": "Based on the residual plot, are the residuals mostly above or below the horizontal line?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The residuals are mostly above the horizontal line.",
+            "The residuals are mostly below the horizontal line.",
+            "The residuals are randomly scattered."
+        ]
+    },
+    {
+        "id": "a410fc9row8p2d-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The model is consistently underpredicting."
+        ],
+        "dependencies": [
+            "a410fc9row8p2d-h4"
+        ],
+        "title": "Conclusion from the Residual Plot",
+        "text": "What does it mean if the residuals are mostly above the horizontal line?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The model is consistently underpredicting.",
+            "The model is consistently overpredicting.",
+            "The model is a good fit."
+        ]
+    }
+]

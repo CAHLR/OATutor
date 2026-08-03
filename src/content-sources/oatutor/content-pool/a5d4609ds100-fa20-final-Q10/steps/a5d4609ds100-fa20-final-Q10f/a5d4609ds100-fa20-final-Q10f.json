@@ -1,0 +1,17 @@
+{
+    "id": "a5d4609ds100-fa20-final-Q10f",
+    "stepAnswer": [
+        "TRUE"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Say we perform the SVD on F using the following code:\\nX $$=$$ (F - np.mean(F, axis $$=$$ 0))\\nu, s, vt $$=$$ np.linalg.svd(X, $$\\texttt{full\\_matrices=False)}$$\\nTrue or False: Ignoring numerical precision issues, the expression\\nnp.var((X @ vt.T)[:, i]) $$==$$ $${s[i]}^2$$ / len(X)\\nevaluates to True for all integers i between $$0$$ and X.shape[1] - $$1$$.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "False",
+        "Impossible to tell",
+        "TRUE",
+        "True"
+    ]
+}

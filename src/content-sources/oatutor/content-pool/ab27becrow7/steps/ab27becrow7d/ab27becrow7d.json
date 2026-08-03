@@ -1,0 +1,16 @@
+{
+    "id": "ab27becrow7d",
+    "stepAnswer": [
+        "TRUE"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "True or False: .*:[A-Za-z\\d]+(,[A-Za-z\\d]+)* fully matches all \"Match all\" cases.",
+    "stepBody": "Here is the provided table.\\nMatch all of these below: \"total cats petted: 60,102,305\", \"my cats' names are: amy,baron,carol\", \"the current time is 20:59\".\\nFor each of the following RegEx patterns, determine if it is true that they fully match all cases listed in the \"Match all of these below\" column.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "False",
+        "TRUE",
+        "True"
+    ]
+}

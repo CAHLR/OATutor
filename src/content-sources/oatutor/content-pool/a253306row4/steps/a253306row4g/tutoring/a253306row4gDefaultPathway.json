@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a253306row4g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "In machine learning, bias refers to the error due to overly simplistic assumptions in the learning algorithm. Variance refers to the error due to excessive sensitivity to small fluctuations in the training set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row4g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row4g-h1"
+        ],
+        "title": "Effect of Reducing Features",
+        "text": "When you reduce the number of features in a model, it can lead to a simpler model. This often results in increased bias but decreased variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row4g-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row4g-h2"
+        ],
+        "title": "Training vs. Validation Error",
+        "text": "If the training error increases but the validation error decreases, it suggests that the model is generalizing better to unseen data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row4g-h4",
+        "type": "hint",
+        "dependencies": [
+            "a253306row4g-h3"
+        ],
+        "title": "Conclusion",
+        "text": "The statement that the model's bias squared is lower relative to the model in part (a) is false because reducing features typically increases bias.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

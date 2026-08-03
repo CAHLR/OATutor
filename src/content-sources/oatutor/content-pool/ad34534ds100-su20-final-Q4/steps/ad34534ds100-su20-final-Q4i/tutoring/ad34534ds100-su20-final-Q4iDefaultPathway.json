@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ad34534ds100-su20-final-Q4i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Equations",
+        "text": "The equations represent the optimization problems for finding the coefficients in linear regression. The first equation is for the un-centered data, and the second is for the mean-centered data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su20-final-Q4i-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-su20-final-Q4i-h1"
+        ],
+        "title": "Intercept Term in Linear Regression",
+        "text": "In linear regression, the intercept term represents the expected mean value of the dependent variable when all independent variables are zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su20-final-Q4i-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-su20-final-Q4i-h2"
+        ],
+        "title": "Effect of Centering on Intercept",
+        "text": "When data is mean-centered, the intercept term in the regression model represents the mean of the dependent variable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su20-final-Q4i-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ad34534ds100-su20-final-Q4i-h3"
+        ],
+        "title": "Analyzing the Intercept Term",
+        "text": "Consider how centering the data affects the intercept term in the regression model. Is the intercept term guaranteed to be positive?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

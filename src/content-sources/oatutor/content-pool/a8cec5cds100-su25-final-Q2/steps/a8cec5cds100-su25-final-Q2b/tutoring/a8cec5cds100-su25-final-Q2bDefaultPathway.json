@@ -1,0 +1,54 @@
+[
+    {
+        "id": "a8cec5cds100-su25-final-Q2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Constant Models",
+        "text": "A constant model predicts the same value for all inputs. This means that the prediction does not change regardless of the input data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-su25-final-Q2b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Mean Absolute Error (MAE)",
+        "text": "MAE is calculated as the average of the absolute differences between the predicted values and the actual values. It is less sensitive to outliers compared to MSE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-su25-final-Q2b-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Mean Squared Error (MSE)",
+        "text": "MSE is calculated as the average of the squared differences between the predicted values and the actual values. It is more sensitive to outliers compared to MAE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-su25-final-Q2b-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Optimal MAE with Constant Models",
+        "text": "When using a constant model, the optimal MAE is achieved when the constant prediction is the median of the actual values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-su25-final-Q2b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-su25-final-Q2b-h4"
+        ],
+        "title": "Multiple Optimal MAE Values",
+        "text": "If the dataset has an even number of observations, there can be two different constant predictions (the two middle values) that both result in the optimal MAE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

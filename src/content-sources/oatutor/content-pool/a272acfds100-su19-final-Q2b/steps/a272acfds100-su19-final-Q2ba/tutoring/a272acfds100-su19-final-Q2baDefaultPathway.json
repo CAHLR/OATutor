@@ -1,0 +1,148 @@
+[
+    {
+        "id": "a272acfds100-su19-final-Q2ba-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatter Plot",
+        "text": "The scatter plot shows a negative correlation between age and mpg. As age increases, mpg decreases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su19-final-Q2ba-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-su19-final-Q2ba-h1"
+        ],
+        "title": "Analyzing Plot (a)",
+        "text": "Plot (a) shows a bimodal distribution. Consider which variable might have such a distribution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su19-final-Q2ba-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "pc1"
+        ],
+        "dependencies": [
+            "a272acfds100-su19-final-Q2ba-h2"
+        ],
+        "title": "Label for Plot (a)",
+        "text": "Based on the scatter plot and the distribution in plot (a), which variable is more likely to have a bimodal distribution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "pc1",
+            "pc2",
+            "Neither"
+        ]
+    },
+    {
+        "id": "a272acfds100-su19-final-Q2ba-h4",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-su19-final-Q2ba-h1"
+        ],
+        "title": "Analyzing Plot (b)",
+        "text": "Plot (b) shows a unimodal distribution. Consider which variable might have such a distribution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su19-final-Q2ba-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "pc2"
+        ],
+        "dependencies": [
+            "a272acfds100-su19-final-Q2ba-h4"
+        ],
+        "title": "Label for Plot (b)",
+        "text": "Based on the scatter plot and the distribution in plot (b), which variable is more likely to have a unimodal distribution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "pc1",
+            "pc2",
+            "Neither"
+        ]
+    },
+    {
+        "id": "a272acfds100-su19-final-Q2ba-h6",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-su19-final-Q2ba-h1"
+        ],
+        "title": "Analyzing Plot (c)",
+        "text": "Plot (c) shows a uniform distribution. Consider which variable might have such a distribution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su19-final-Q2ba-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Neither"
+        ],
+        "dependencies": [
+            "a272acfds100-su19-final-Q2ba-h6"
+        ],
+        "title": "Label for Plot (c)",
+        "text": "Based on the scatter plot and the distribution in plot (c), which variable is more likely to have a uniform distribution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "pc1",
+            "pc2",
+            "Neither"
+        ]
+    },
+    {
+        "id": "a272acfds100-su19-final-Q2ba-h8",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-su19-final-Q2ba-h1"
+        ],
+        "title": "Analyzing Plot (d)",
+        "text": "Plot (d) shows a skewed distribution. Consider which variable might have such a distribution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su19-final-Q2ba-h9",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Neither"
+        ],
+        "dependencies": [
+            "a272acfds100-su19-final-Q2ba-h8"
+        ],
+        "title": "Label for Plot (d)",
+        "text": "Based on the scatter plot and the distribution in plot (d), which variable is more likely to have a skewed distribution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "pc1",
+            "pc2",
+            "Neither"
+        ]
+    }
+]

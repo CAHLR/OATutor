@@ -1,0 +1,70 @@
+[
+    {
+        "id": "acab12dds100-sp19-final-Q6da-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrapping",
+        "text": "Bootstrapping is a statistical method that involves resampling with replacement from a dataset to estimate the sampling distribution of a statistic. It is often used to estimate confidence intervals.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp19-final-Q6da-h2",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-sp19-final-Q6da-h1"
+        ],
+        "title": "Population vs. Sample",
+        "text": "Consider the difference between the population dataset (all 200,000 trips) and the sample dataset (500 trips from May 1). Bootstrapping typically uses the sample data to make inferences about the population.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp19-final-Q6da-h3",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-sp19-final-Q6da-h2"
+        ],
+        "title": "Data Requirements for Bootstrapping",
+        "text": "To perform bootstrapping, you need a representative sample from the population. The sample should reflect the variability and characteristics of the entire population.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp19-final-Q6da-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No, it does not."
+        ],
+        "dependencies": [
+            "acab12dds100-sp19-final-Q6da-h3"
+        ],
+        "title": "Evaluating the Sample",
+        "text": "Does the sample of $$500$$ trips from May $$1$$ represent the entire year's data accurately?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "No",
+            "No, it does not.",
+            "Yes"
+        ]
+    },
+    {
+        "id": "acab12dds100-sp19-final-Q6da-h5",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-sp19-final-Q6da-h4"
+        ],
+        "title": "Conclusion on Bootstrapping",
+        "text": "Since the sample is not representative of the entire year's data, bootstrapping using this sample would not provide a reliable estimate for the mean trip duration for all of $$2018$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

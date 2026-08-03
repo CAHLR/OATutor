@@ -1,0 +1,60 @@
+[
+    {
+        "id": "aac8d73ds100-su20-final-Q4m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plot",
+        "text": "Observe the scatter plot. It shows a clear negative linear trend. This means that as the x-values increase, the y-values decrease.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q4m-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q4m-h1"
+        ],
+        "title": "Effect of Regularization",
+        "text": "Regularization can help prevent overfitting by penalizing large coefficients. In this case, we are using a fixed lambda value of $$2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q4m-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q4m-h2"
+        ],
+        "title": "Comparing Parameters",
+        "text": "Consider how regularization affects the parameters in the context of a negative linear trend. Which parameter is likely to fit the trend better?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q4m-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\theta_B$$"
+        ],
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q4m-h3"
+        ],
+        "title": "Choosing the Parameter",
+        "text": "Given the negative linear trend and the effect of regularization, which parameter is likely to achieve a lower test MSE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\theta_A$$",
+            "$$\\theta_B$$",
+            "Both achieve the same test MSE",
+            "Cannot be determined without seeing the plot",
+            "Neither, both are equally poor"
+        ]
+    }
+]

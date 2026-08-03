@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a9831a6row10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Desired Output",
+        "text": "The main column should contain the last word of each item name. For example, Orange Chicken should become Chicken, not the full item name and not just the last character.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9831a6row10a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Chicken"
+        ],
+        "dependencies": [
+            "a9831a6row10a-h1"
+        ],
+        "title": "Last Word of an Item",
+        "text": "For the item Orange Chicken, what should the main ingredient be?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Chicken",
+            "Orange",
+            "Orange Chicken",
+            "$$n$$"
+        ]
+    },
+    {
+        "id": "a9831a6row10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9831a6row10a-h2"
+        ],
+        "title": "Check Option A",
+        "text": "orders[\"item\"].str.split() splits each item string into a list of words. The final .str[-1] then selects the last word from each list, so this creates the desired main ingredients.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9831a6row10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9831a6row10a-h3"
+        ],
+        "title": "Eliminate Options B and C",
+        "text": "orders[\"item\"].str[-1] selects only the last character of each string, such as $$n$$ from Orange Chicken. str.contains checks whether a pattern exists and returns True or False values, not the extracted ingredient names.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9831a6row10a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a9831a6row10a-h4"
+        ],
+        "title": "Check Option D",
+        "text": "In r\"(\\w+)$\", \\w+ matches one or more word characters, and $ anchors the match to the end of the string. Because the word characters are inside a capturing group, .str.extract(...) extracts the final word from each item name.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

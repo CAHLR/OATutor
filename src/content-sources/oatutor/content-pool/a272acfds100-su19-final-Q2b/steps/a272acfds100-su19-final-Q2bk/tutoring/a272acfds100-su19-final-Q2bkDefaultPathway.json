@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a272acfds100-su19-final-Q2bk-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It projects data onto principal component axes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su19-final-Q2bk-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-su19-final-Q2bk-h1"
+        ],
+        "title": "Interpreting the Scatter Plot",
+        "text": "The scatter plot shows a linear relationship between two variables. Consider how PCA might affect this relationship.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su19-final-Q2bk-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-su19-final-Q2bk-h2"
+        ],
+        "title": "Analyzing the Projections",
+        "text": "When data is projected onto the first principal component (pc1), it captures the most variance. The second principal component (pc2) captures the remaining variance orthogonal to pc1.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su19-final-Q2bk-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "pc1"
+        ],
+        "dependencies": [
+            "a272acfds100-su19-final-Q2bk-h3"
+        ],
+        "title": "Choosing the Correct Axis Label",
+        "text": "Based on the scatter plot and the concept of PCA, which principal component is likely represented on the x-axis of plot (h.ii)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "pc1",
+            "pc2",
+            "Neither"
+        ]
+    }
+]

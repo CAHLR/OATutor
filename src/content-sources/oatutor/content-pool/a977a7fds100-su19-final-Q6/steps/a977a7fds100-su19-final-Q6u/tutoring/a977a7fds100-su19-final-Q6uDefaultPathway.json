@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a977a7fds100-su19-final-Q6u-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model uses a linear regression approach with features for vegetables and types of meat. Adding a random feature can affect the model's variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6u-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6u-h1"
+        ],
+        "title": "Effect of Random Features",
+        "text": "Adding a feature of random numbers between $$0$$ and $$1$$ introduces noise. This can increase the model's complexity without adding meaningful information.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6u-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6u-h2"
+        ],
+        "title": "Variance and Bias",
+        "text": "Increasing the number of features, especially random ones, typically increases the model's variance. It can lead to overfitting, where the model captures noise instead of the underlying pattern.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6u-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6u-h3"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Does adding a random feature decrease the model's variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

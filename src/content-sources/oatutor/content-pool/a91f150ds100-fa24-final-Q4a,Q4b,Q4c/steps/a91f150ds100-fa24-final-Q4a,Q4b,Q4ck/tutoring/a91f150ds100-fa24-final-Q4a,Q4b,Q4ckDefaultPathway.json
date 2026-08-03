@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a91f150ds100-fa24-final-Q4a,Q4b,Q4ck-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting by adding a penalty term to the loss function. This penalty discourages overly complex models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa24-final-Q4a,Q4b,Q4ck-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-fa24-final-Q4a,Q4b,Q4ck-h1"
+        ],
+        "title": "Effect of Regularization on Bias",
+        "text": "Regularization can help reduce variance but may increase bias. Consider how this affects the model's performance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa24-final-Q4a,Q4b,Q4ck-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-fa24-final-Q4a,Q4b,Q4ck-h2"
+        ],
+        "title": "Model Complexity and Bias",
+        "text": "A model with high complexity might have low bias but high variance. Regularization simplifies the model, potentially increasing bias but reducing variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa24-final-Q4a,Q4b,Q4ck-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a91f150ds100-fa24-final-Q4a,Q4b,Q4ck-h3"
+        ],
+        "title": "Evaluating Regularization Impact",
+        "text": "Does adding regularization to the model reduce the model bias squared?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

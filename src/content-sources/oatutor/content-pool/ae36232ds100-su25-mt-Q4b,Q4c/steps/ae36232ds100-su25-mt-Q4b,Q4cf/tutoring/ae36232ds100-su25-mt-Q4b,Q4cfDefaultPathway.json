@@ -1,0 +1,65 @@
+[
+    {
+        "id": "ae36232ds100-su25-mt-Q4b,Q4cf-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE",
+        "text": "The Mean Squared Error (MSE) is calculated by taking the average of the squares of the differences between the observed and predicted values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-mt-Q4b,Q4cf-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-mt-Q4b,Q4cf-h1"
+        ],
+        "title": "Identify Observed Values",
+        "text": "From the graph, identify the observed tip values for the given temperatures.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-mt-Q4b,Q4cf-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-mt-Q4b,Q4cf-h2"
+        ],
+        "title": "Identify Predicted Values",
+        "text": "Use the regression line to find the predicted tip values for the given temperatures.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-mt-Q4b,Q4cf-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-mt-Q4b,Q4cf-h3"
+        ],
+        "title": "Calculate Squared Differences",
+        "text": "Calculate the squared differences between the observed and predicted values for each data point.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-mt-Q4b,Q4cf-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "ae36232ds100-su25-mt-Q4b,Q4cf-h4"
+        ],
+        "title": "Calculate MSE",
+        "text": "Sum the squared differences and divide by the number of observations to find the MSE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

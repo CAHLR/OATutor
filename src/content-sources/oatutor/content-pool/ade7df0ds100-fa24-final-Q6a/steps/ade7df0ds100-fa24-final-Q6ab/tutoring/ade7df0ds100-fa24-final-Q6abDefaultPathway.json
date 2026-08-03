@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ade7df0ds100-fa24-final-Q6ab-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linearly Separable Datasets",
+        "text": "A linearly separable dataset is one where a linear boundary can perfectly separate the classes. This means there exists a hyperplane that can classify all the data points correctly.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa24-final-Q6ab-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa24-final-Q6ab-h1"
+        ],
+        "title": "Logistic Regression and Linearly Separable Data",
+        "text": "When training a logistic regression model on a linearly separable dataset, the model can find a decision boundary that perfectly separates the classes. However, this does not imply a finite number of optimal solutions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa24-final-Q6ab-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa24-final-Q6ab-h2"
+        ],
+        "title": "Infinite Solutions in Logistic Regression",
+        "text": "In logistic regression, if the dataset is linearly separable, there can be infinitely many hyperplanes that separate the data perfectly. This is because any hyperplane that lies between the classes can be considered optimal.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa24-final-Q6ab-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa24-final-Q6ab-h3"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Given the nature of logistic regression and linearly separable datasets, is the statement 'For all linearly separable datasets, there exists a finite number of optimal solutions for model parameters' true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

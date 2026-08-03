@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3cj-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding AUC-ROC",
+        "text": "AUC-ROC is a performance measurement for classification problems at various thresholds settings. It tells how much the model is capable of distinguishing between classes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3cj-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su25-final-Q3a,Q3b,Q3cj-h1"
+        ],
+        "title": "Effect of Threshold on AUC-ROC",
+        "text": "Changing the threshold affects the True Positive Rate (TPR) and False Positive Rate (FPR), but AUC-ROC is calculated over all possible thresholds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3cj-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su25-final-Q3a,Q3b,Q3cj-h2"
+        ],
+        "title": "AUC-ROC Calculation",
+        "text": "AUC-ROC is the area under the ROC curve, which plots TPR against FPR at various threshold settings. It is not dependent on a single threshold.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3cj-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su25-final-Q3a,Q3b,Q3cj-h3"
+        ],
+        "title": "Determine if AUC-ROC Changes",
+        "text": "Does changing the threshold affect the AUC-ROC value?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

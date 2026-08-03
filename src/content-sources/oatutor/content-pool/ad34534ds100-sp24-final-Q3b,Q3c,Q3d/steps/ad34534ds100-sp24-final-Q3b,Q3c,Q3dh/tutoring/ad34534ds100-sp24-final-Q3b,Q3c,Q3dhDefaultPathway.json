@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3dh-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "In Milad's model, each genre is represented as a separate feature. This means that for each genre, there is a corresponding coefficient in the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3dh-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp24-final-Q3b,Q3c,Q3dh-h1"
+        ],
+        "title": "One-Hot Encoding",
+        "text": "When using one-hot encoding for categorical variables like genre, each genre is represented by a binary variable. If there are $$m$$ genres, how many binary variables do you need?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3dh-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp24-final-Q3b,Q3c,Q3dh-h2"
+        ],
+        "title": "Dimensionality of Theta",
+        "text": "The dimensionality of theta is determined by the number of features in the model. Consider the intercept term and the number of binary variables for the genres.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3dh-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$m-1$$"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp24-final-Q3b,Q3c,Q3dh-h3"
+        ],
+        "title": "Calculate Dimensionality",
+        "text": "If there are $$m$$ genres, how many binary variables are needed for one-hot encoding?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3dh-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$m$$"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp24-final-Q3b,Q3c,Q3dh-h4"
+        ],
+        "title": "Final Dimensionality of Theta",
+        "text": "Considering the intercept term, what is the dimensionality of theta?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

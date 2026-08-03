@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ade7df0ds100-fa19-final-Q5h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Zero-One Loss",
+        "text": "The zero-one loss is a measure of accuracy. It counts the number of incorrect predictions made by the model. Unlike cross-entropy loss, which focuses on probabilities, zero-one loss directly evaluates the model's predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-final-Q5h-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-final-Q5h-h1"
+        ],
+        "title": "Parameters in Zero-One Loss",
+        "text": "In zero-one loss, both the parameters beta and T are adjusted to minimize the number of incorrect predictions. This is different from cross-entropy loss, where only beta is adjusted.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-final-Q5h-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Zero-one loss optimizes both beta and T while cross-entropy loss optimizes only beta."
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa19-final-Q5h-h2"
+        ],
+        "title": "Comparing Loss Functions",
+        "text": "Consider how zero-one loss and cross-entropy loss differ in terms of the parameters they affect. Which parameters are optimized in each case?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-final-Q5h-h4",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-final-Q5h-h3"
+        ],
+        "title": "True or False Statement",
+        "text": "Given that zero-one loss involves both beta and T, is it true that the parameters $$hat_{\\beta,ZO}$$ and $$hat_{T,ZO}$$ minimize the zero-one loss?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a272acfds100-sp19-final-Q6ca-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA and SVD",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It uses Singular Value Decomposition (SVD) to achieve this. The singular values in SVD represent the amount of variance captured by each principal component.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp19-final-Q6ca-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp19-final-Q6ca-h1"
+        ],
+        "title": "Total Variance in PCA",
+        "text": "In PCA, the total variance of the dataset is equal to the sum of the variances of all the principal components. This is equivalent to the sum of the squares of the singular values in the SVD.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp19-final-Q6ca-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp19-final-Q6ca-h2"
+        ],
+        "title": "Interpreting the Statement",
+        "text": "The statement suggests that the sum of the singular values (not their squares) will be the total variance of the dataset. Consider whether this aligns with the properties of PCA and SVD.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

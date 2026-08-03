@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a613447ds100-fa20-final-Q6d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias-Variance Decomposition",
+        "text": "The bias-variance decomposition is a way to understand the error in a model's predictions. It breaks down the error into three components: the variance of the noise, the bias of the model, and the variance of the model's predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa20-final-Q6d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa20-final-Q6d-h1"
+        ],
+        "title": "Conditions for Bias-Variance Decomposition",
+        "text": "The decomposition holds under certain conditions, such as when the model is trained on data with a known underlying function and noise is independent and identically distributed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa20-final-Q6d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa20-final-Q6d-h2"
+        ],
+        "title": "Classification Decision Trees and Zero-One Loss",
+        "text": "Consider how classification decision trees work and how zero-one loss is calculated. Does the bias-variance decomposition apply in this context?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa20-final-Q6d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a613447ds100-fa20-final-Q6d-h3"
+        ],
+        "title": "Analyzing Zero-One Loss",
+        "text": "Zero-one loss is a binary loss function that assigns a loss of $$1$$ for incorrect predictions and $$0$$ for correct predictions. How does this affect the bias-variance decomposition?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

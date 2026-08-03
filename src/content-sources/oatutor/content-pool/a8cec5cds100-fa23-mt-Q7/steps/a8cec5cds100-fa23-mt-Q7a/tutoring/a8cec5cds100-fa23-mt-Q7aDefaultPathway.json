@@ -1,0 +1,90 @@
+[
+    {
+        "id": "a8cec5cds100-fa23-mt-Q7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent Types",
+        "text": "Gradient descent is an optimization algorithm used to minimize a function by iteratively moving towards the minimum value of the function. There are different types of gradient descent methods, including batch gradient descent and stochastic gradient descent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q7a-h1"
+        ],
+        "title": "Batch Gradient Descent",
+        "text": "Batch gradient descent calculates the gradient of the cost function with respect to the parameters for the entire training dataset. It updates the parameters after computing the gradient for all examples.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q7a-h2"
+        ],
+        "title": "Stochastic Gradient Descent",
+        "text": "Stochastic gradient descent (SGD) updates the parameters for each training example, one at a time. This means it performs more updates per iteration compared to batch gradient descent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q7a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Stochastic Gradient Descent"
+        ],
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q7a-h3"
+        ],
+        "title": "Comparing Iteration Speeds",
+        "text": "Consider the number of updates each method performs per iteration. Which method performs more updates per iteration?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Batch Gradient Descent",
+            "Stochastic Gradient Descent"
+        ]
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q7a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q7a-h4"
+        ],
+        "title": "Iteration Speed Analysis",
+        "text": "Since stochastic gradient descent updates the parameters for each training example, it performs more updates per iteration compared to batch gradient descent, which updates only once per iteration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q7a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q7a-h5"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Given that stochastic gradient descent performs more updates per iteration, is it slower than batch gradient descent for one iteration?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

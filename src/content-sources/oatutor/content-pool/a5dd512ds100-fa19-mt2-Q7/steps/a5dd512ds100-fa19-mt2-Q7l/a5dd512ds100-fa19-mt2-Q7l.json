@@ -1,0 +1,18 @@
+{
+    "id": "a5dd512ds100-fa19-mt2-Q7l",
+    "stepAnswer": [
+        "$$f=me**{2.5}$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Suppose after training our model we get\\n$$\\beta=(-1.2, -0.005, 2.5)$$\\nwhere $$-1.2$$ is an intercept term, $$-0.005$$ is the parameter corresponding to passenger's age, and $$2.5$$ is the parameter corresponding to sex.\\nLet $$m$$ be the odds of a given male passenger's survival according to our model, i.e. if the passenger had an $$80$$ percent chance of survival, $$m$$ would be $$4$$, since their odds of survival are $$0.8$$ divided by $$0.2$$, which is $$4$$. It turns out we can compute $$f, $$ the odds of survival for a female of the same age, even if we don't know the age of the two people. What is this relationship?",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "$$f=me**{-2.5}$$",
+        "$$f=m+e**{2.5}$$",
+        "$$f=me**{2.5}$$",
+        "$$f=2.5m$$",
+        "$$f=m+2.5$$"
+    ]
+}

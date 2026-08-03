@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a410fc9row8p2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Dimensions of Y",
+        "text": "The vector $Y$ represents the dependent variable in the OLS regression. It contains the values of the variable you are trying to predict.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row8p2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row8p2b-h1"
+        ],
+        "title": "Relation Between X and Y",
+        "text": "The design matrix $X$ has $m$ rows, each corresponding to an observation. The vector $Y$ should have the same number of rows as $X$ to match each observation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row8p2b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row8p2b-h2"
+        ],
+        "title": "Column Count of Y",
+        "text": "Since $Y$ is a vector, it has only one column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row8p2b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1m$$"
+        ],
+        "dependencies": [
+            "a410fc9row8p2b-h3"
+        ],
+        "title": "Determine the Dimensions of Y",
+        "text": "Given that $Y$ is a vector with $m$ rows and $$1$$ column, what are its dimensions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

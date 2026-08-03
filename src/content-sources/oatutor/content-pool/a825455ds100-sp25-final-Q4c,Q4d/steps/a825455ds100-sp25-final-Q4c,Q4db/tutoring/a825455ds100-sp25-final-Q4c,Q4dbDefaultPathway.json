@@ -1,0 +1,102 @@
+[
+    {
+        "id": "a825455ds100-sp25-final-Q4c,Q4db-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Agglomerative Clustering",
+        "text": "Agglomerative clustering starts with each data point as its own cluster and merges the closest clusters step by step. In single linkage, the distance between two clusters is defined as the shortest distance between any two points in the clusters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp25-final-Q4c,Q4db-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-sp25-final-Q4c,Q4db-h1"
+        ],
+        "title": "Single Linkage Clustering",
+        "text": "In single linkage clustering, the distance between two clusters is the minimum distance between any single point in one cluster and any single point in the other cluster. This can lead to elongated clusters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp25-final-Q4c,Q4db-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Panda1 and Panda2"
+        ],
+        "dependencies": [
+            "a825455ds100-sp25-final-Q4c,Q4db-h2"
+        ],
+        "title": "Step $$1$$ of Clustering",
+        "text": "Identify the two pandas that are closest to each other in the initial step. Which pandas are merged first?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Panda1 and Panda2",
+            "Panda3 and Panda4",
+            "Panda5 and Panda6"
+        ]
+    },
+    {
+        "id": "a825455ds100-sp25-final-Q4c,Q4db-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Panda3 and Panda4"
+        ],
+        "dependencies": [
+            "a825455ds100-sp25-final-Q4c,Q4db-h3"
+        ],
+        "title": "Step $$2$$ of Clustering",
+        "text": "After the first merge, identify the next two closest clusters or pandas. Which pandas or clusters are merged next?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Panda1 and Panda3",
+            "Panda3 and Panda4",
+            "Panda5 and Panda6"
+        ]
+    },
+    {
+        "id": "a825455ds100-sp25-final-Q4c,Q4db-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Cluster(Panda1,Panda2) and Panda5"
+        ],
+        "dependencies": [
+            "a825455ds100-sp25-final-Q4c,Q4db-h4"
+        ],
+        "title": "Step $$3$$ of Clustering",
+        "text": "After the second merge, identify the next two closest clusters or pandas. Which pandas or clusters are merged next?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Cluster(Panda1,Panda2) and Panda5",
+            "Cluster(Panda3,Panda4) and Panda6",
+            "Panda5 and Panda6"
+        ]
+    },
+    {
+        "id": "a825455ds100-sp25-final-Q4c,Q4db-h6",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-sp25-final-Q4c,Q4db-h5"
+        ],
+        "title": "Checking Panda 4's Cluster",
+        "text": "After three steps of clustering, check if Panda $$4$$ is in the same cluster as Panda $$5$$. Remember, Panda $$4$$ was initially merged with Panda $$3$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

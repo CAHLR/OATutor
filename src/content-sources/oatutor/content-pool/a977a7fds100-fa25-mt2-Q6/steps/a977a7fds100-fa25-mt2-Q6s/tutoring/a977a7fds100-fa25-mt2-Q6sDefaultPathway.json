@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6s-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LASSO Regularization",
+        "text": "LASSO (Least Absolute Shrinkage and Selection Operator) is a type of linear regression that uses shrinkage. Shrinkage is where data values are shrunk towards a central point, like the mean. The LASSO procedure encourages simple, sparse models (i.e., models with fewer parameters).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6s-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6s-h1"
+        ],
+        "title": "Effect of LASSO on Model Variance",
+        "text": "LASSO regularization adds a penalty equal to the absolute value of the magnitude of coefficients. This can lead to some coefficients being exactly zero, effectively reducing the number of features. Consider how this might affect the model's variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6s-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6s-h2"
+        ],
+        "title": "Analyzing Variance with LASSO",
+        "text": "When LASSO regularization is applied, the model complexity is reduced. How does this reduction in complexity affect the variance of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6s-h4",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6s-h3"
+        ],
+        "title": "Variance and Model Complexity",
+        "text": "Model variance is often associated with the complexity of the model. A more complex model tends to have higher variance. LASSO regularization reduces model complexity by shrinking some coefficients to zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a253306row9p2i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Hat Matrix",
+        "text": "The hat matrix $H$ is defined as $H=X(X**TX)**{-1}X**T$. It is used in linear regression to project the observed values onto the fitted values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row9p2i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row9p2i-h1"
+        ],
+        "title": "Properties of the Hat Matrix",
+        "text": "One key property of the hat matrix $H$ is that it is idempotent, meaning $H**2=H$. This means that applying the hat matrix twice is the same as applying it once.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row9p2i-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row9p2i-h2"
+        ],
+        "title": "Idempotent Matrices",
+        "text": "An idempotent matrix is a matrix which, when multiplied by itself, yields itself. This is a characteristic property of the hat matrix in linear regression.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row9p2i-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a253306row9p2i-h3"
+        ],
+        "title": "Checking Idempotency",
+        "text": "To check if $H$ is idempotent, compute $H**2$ and see if it equals $H$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

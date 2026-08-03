@@ -1,0 +1,11 @@
+{
+    "id": "ab27becrow7a",
+    "stepAnswer": [
+        "`[^\\sA-Z]*cat[^\\sA-Z]*`"
+    ],
+    "problemType": "TextBox",
+    "stepTitle": "In the following blank, write a RegEx pattern that only matches words that contain the substring \"cat\" and does not contain any uppercase letters or space characters.",
+    "stepBody": "Aneesh decides to do the following RegEx exercises before processing feedback.\\nFill in the blank with only the RegEx pattern; do not make your solution a raw string (a raw string is in the format $$`r\"___\"`)$$.\\nMatch all of these below (pattern MUST match): cats, concatenate, 10cats10\\nMatch none of these below (pattern must NOT match): Cat, CA Tacoma, CATcatCAT",
+    "answerType": "string",
+    "variabilization": {}
+}

@@ -1,0 +1,15 @@
+{
+    "id": "a410fc9row6p2j",
+    "stepAnswer": [
+        "FALSE"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Remove the intercept from this model.",
+    "stepBody": "Malavikha trains the model\\n$$\\hat{y}=\\hat{\\theta}_0+\\hat{\\theta}_1x_1**{2}+\\hat{\\theta}_{2}\\sqrt{x_2}$$\\nwhere $$y$$ is attendance rate, $$x_1$$ is dist from bell and $$x_2$$ is section no.\\nShe trains without regularization. After applying bootstrapping, she observes a high model bias squared.\\nCan the above suggestion reduce model bias squared?",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "TRUE",
+        "FALSE"
+    ]
+}

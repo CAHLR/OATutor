@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a977a7fds100-su19-final-Q6~-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plots",
+        "text": "Look at how the mean squared error (MSE) changes with the degree of the polynomial. Consider how training and validation errors typically behave as model complexity increases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6~-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6~-h1"
+        ],
+        "title": "Training vs. Validation Error",
+        "text": "Remember that training error usually decreases as model complexity increases, while validation error decreases up to a point and then increases due to overfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6~-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Plot C"
+        ],
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6~-h2"
+        ],
+        "title": "Identifying the Correct Plot",
+        "text": "Which plot shows a decrease in training error with increasing polynomial degree, while validation error decreases and then increases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Plot A",
+            "Plot B",
+            "Plot C",
+            "Plot D"
+        ]
+    }
+]

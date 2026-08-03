@@ -1,0 +1,46 @@
+[
+    {
+        "id": "acab12dds100-sp18-final-Q2a,Q2c,Q2d,Q2ec-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Task",
+        "text": "When building a recommendation system, what is the primary goal? Are we trying to predict future behavior, estimate a parameter, or determine causality?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp18-final-Q2a,Q2c,Q2d,Q2ec-h2",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-sp18-final-Q2a,Q2c,Q2d,Q2ec-h1"
+        ],
+        "title": "Focus on the Outcome",
+        "text": "Consider what the recommendation system aims to achieve. Is it trying to predict what a user might like based on past data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp18-final-Q2a,Q2c,Q2d,Q2ec-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Prediction"
+        ],
+        "dependencies": [
+            "acab12dds100-sp18-final-Q2a,Q2c,Q2d,Q2ec-h2"
+        ],
+        "title": "Identifying the Statistical Problem",
+        "text": "Given the task of building a recommendation system from historical ratings, what kind of statistical problem does this represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Estimation",
+            "Prediction",
+            "Causal Inference"
+        ]
+    }
+]

@@ -1,0 +1,140 @@
+[
+    {
+        "id": "ae27c55ds100-fa17-mt-Q27a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrapping",
+        "text": "Bootstrapping involves resampling with replacement from the sample data to create 'new' samples. This helps in estimating the sampling distribution of a statistic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-mt-Q27a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa17-mt-Q27a-h1"
+        ],
+        "title": "Choosing the Correct Sample",
+        "text": "When performing bootstrapping, we resample from the original sample, not the entire population.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-mt-Q27a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "theSample"
+        ],
+        "dependencies": [
+            "ae27c55ds100-fa17-mt-Q27a-h2"
+        ],
+        "title": "Identify the Sample",
+        "text": "Which series should be used for resampling in the bootstrapping process?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "thePop",
+            "theSample",
+            "$$boot_{stats}$$",
+            "thePop.median",
+            "theSample.sample"
+        ]
+    },
+    {
+        "id": "ae27c55ds100-fa17-mt-Q27a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa17-mt-Q27a-h3"
+        ],
+        "title": "Number of Resamples",
+        "text": "In bootstrapping, we typically perform a large number of resamples to estimate the distribution of the statistic. Here, we need $$10000$$ resamples.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-mt-Q27a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10000$$"
+        ],
+        "dependencies": [
+            "ae27c55ds100-fa17-mt-Q27a-h4"
+        ],
+        "title": "Determine the Number of Resamples",
+        "text": "How many bootstrapped samples should be created?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-mt-Q27a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa17-mt-Q27a-h5"
+        ],
+        "title": "Replacement in Sampling",
+        "text": "In bootstrapping, each resample is drawn with replacement from the original sample.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-mt-Q27a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ae27c55ds100-fa17-mt-Q27a-h6"
+        ],
+        "title": "Sampling with Replacement",
+        "text": "Should the resampling be done with or without replacement?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "False",
+            "TRUE",
+            "True"
+        ]
+    },
+    {
+        "id": "ae27c55ds100-fa17-mt-Q27a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa17-mt-Q27a-h7"
+        ],
+        "title": "Statistic to Estimate",
+        "text": "The problem asks for bootstrapped estimates of the median. Ensure the correct function is used to calculate the median from each resample.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-mt-Q27a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "median"
+        ],
+        "dependencies": [
+            "ae27c55ds100-fa17-mt-Q27a-h8"
+        ],
+        "title": "Calculate the Median",
+        "text": "Which function should be used to calculate the median of each resample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

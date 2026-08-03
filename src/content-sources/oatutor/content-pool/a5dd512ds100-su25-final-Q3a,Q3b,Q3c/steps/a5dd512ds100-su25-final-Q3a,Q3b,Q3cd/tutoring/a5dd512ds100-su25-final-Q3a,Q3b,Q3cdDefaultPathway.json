@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3cd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Separability",
+        "text": "Linear separability means that you can draw a straight line (or hyperplane in higher dimensions) that separates the data points of different classes without any errors. In the context of logistic regression, this can lead to issues with convergence.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3cd-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su25-final-Q3a,Q3b,Q3cd-h1"
+        ],
+        "title": "Gradient Descent and Convergence",
+        "text": "When the data is linearly separable, the logistic regression model can keep increasing the weights to achieve perfect separation, which can prevent convergence to a unique solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3cd-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su25-final-Q3a,Q3b,Q3cd-h2"
+        ],
+        "title": "Implications for Logistic Regression",
+        "text": "In cases of linear separability, logistic regression models may not converge to a unique optimal solution because the cost function does not have a minimum. Instead, the weights can grow indefinitely.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3cd-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The dataset is not linearly separable based on the features provided."
+        ],
+        "dependencies": [
+            "a5dd512ds100-su25-final-Q3a,Q3b,Q3cd-h3"
+        ],
+        "title": "Analyzing the Dataset",
+        "text": "Look at the dataset provided. Can you determine if the data is linearly separable based on the features provided?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "TRUE",
+            "The dataset is not linearly separable based on the features provided."
+        ]
+    }
+]

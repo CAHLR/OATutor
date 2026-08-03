@@ -1,0 +1,68 @@
+[
+    {
+        "id": "aff9095row3_p1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variable Types",
+        "text": "Consider what kind of data the 'item' column represents. Is it a number, a category, or something else?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aff9095row3_p1b-h2",
+        "type": "hint",
+        "dependencies": [
+            "aff9095row3_p1b-h1"
+        ],
+        "title": "Nature of 'item' Column",
+        "text": "The 'item' column contains names of fruits. Think about whether these names have a natural order or ranking.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aff9095row3_p1b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Qualitative nominal"
+        ],
+        "dependencies": [
+            "aff9095row3_p1b-h2"
+        ],
+        "title": "Identifying the Type",
+        "text": "Does the 'item' column represent categories that can be named but not ordered?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Qualitative ordinal",
+            "Qualitative nominal",
+            "Quantitative"
+        ]
+    },
+    {
+        "id": "aff9095row3_p1b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Qualitative nominal"
+        ],
+        "dependencies": [
+            "aff9095row3_p1b-h3"
+        ],
+        "title": "Final Decision",
+        "text": "Based on your understanding, what is the most representative variable type for the 'item' column?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Qualitative ordinal",
+            "Qualitative nominal",
+            "Quantitative"
+        ]
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a5dd512ds100-su19-final-Q8e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding ROC Curves",
+        "text": "The ROC curve is a graphical representation of a classifier's performance. It plots the true positive rate against the false positive rate at various threshold settings.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q8e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q8e-h1"
+        ],
+        "title": "Interpreting the ROC Curve",
+        "text": "A point on the ROC curve represents a specific trade-off between the true positive rate and the false positive rate. The closer the curve follows the left-hand border and then the top border of the ROC space, the more accurate the test.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q8e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q8e-h2"
+        ],
+        "title": "Comparing ROC Curves",
+        "text": "When comparing ROC curves, the curve that is closer to the top-left corner indicates a better performance. This is because it suggests a higher true positive rate and a lower false positive rate.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q8e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "ROC C"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q8e-h3"
+        ],
+        "title": "Analyzing the Given Probabilities",
+        "text": "Given that $$\\$P(Y=1|X)=0.8\\$$$ for the first $$50$$ points and $$\\$P(Y=1|X)=0.6\\$$$ for the second $$50$$ points, consider how these probabilities affect the true positive and false positive rates.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "ROC A",
+            "ROC B",
+            "ROC C"
+        ]
+    }
+]

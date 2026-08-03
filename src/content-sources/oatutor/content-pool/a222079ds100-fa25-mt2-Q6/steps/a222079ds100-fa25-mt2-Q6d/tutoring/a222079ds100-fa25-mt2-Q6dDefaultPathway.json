@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a222079ds100-fa25-mt2-Q6d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Effect of Adding a Feature",
+        "text": "When you add a new feature to a model, especially one that is a transformation of an existing feature, it can affect the model's complexity. How might this change impact the model's ability to generalize to new data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa25-mt2-Q6d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa25-mt2-Q6d-h1"
+        ],
+        "title": "Bias-Variance Tradeoff",
+        "text": "Adding a new feature can increase the model's flexibility, potentially reducing bias but increasing variance. How does this tradeoff affect the MSE on held-out test data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa25-mt2-Q6d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase and Decrease"
+        ],
+        "dependencies": [
+            "a222079ds100-fa25-mt2-Q6d-h2"
+        ],
+        "title": "Analyzing MSE on Test Data",
+        "text": "Consider how adding a feature affects the model's complexity and its ability to fit the training data versus new data. What are the possible effects on the MSE on held-out test data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase only",
+            "Decrease only",
+            "Increase and Decrease",
+            "Neither Increase nor Decrease",
+            "Cannot be determined"
+        ]
+    }
+]

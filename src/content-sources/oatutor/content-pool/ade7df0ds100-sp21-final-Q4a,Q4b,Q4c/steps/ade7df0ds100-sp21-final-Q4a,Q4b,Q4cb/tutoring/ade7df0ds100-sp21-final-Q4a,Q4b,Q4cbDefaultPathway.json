@@ -1,0 +1,45 @@
+[
+    {
+        "id": "ade7df0ds100-sp21-final-Q4a,Q4b,Q4cb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Feature Encoding",
+        "text": "The feature encoding should represent the time of day in a way that captures the cyclical nature of time. Consider how time is typically represented in a 24-hour format.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q4a,Q4b,Q4cb-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q4a,Q4b,Q4cb-h1"
+        ],
+        "title": "Logarithmic Transformation",
+        "text": "The logarithmic transformation is often used to handle skewed data. However, consider whether it is appropriate for encoding time of day, which is inherently cyclical.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q4a,Q4b,Q4cb-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q4a,Q4b,Q4cb-h2"
+        ],
+        "title": "Evaluating the Code",
+        "text": "Evaluate the expression $$\\ln\\left(12time_{of,day}\\right)$$. Does this expression correctly encode the cyclical nature of time?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a253306row7f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Residuals",
+        "text": "Residuals are the differences between observed and predicted values. A residual plot helps us understand how well a model fits the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row7f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row7f-h1"
+        ],
+        "title": "Analyzing the Residual Plot",
+        "text": "Look at the pattern of the residuals. If they show a clear pattern, it might indicate a problem with the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row7f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row7f-h2"
+        ],
+        "title": "Pattern in Residuals",
+        "text": "The residuals seem to increase as $$x$$ increases. This suggests that the model is consistently underpredicting as $$x$$ increases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row7f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The model is consistently underpredicting."
+        ],
+        "dependencies": [
+            "a253306row7f-h3"
+        ],
+        "title": "Conclusion from Residual Plot",
+        "text": "Based on the residual plot, what can you conclude about the model's predictions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The model is consistently overpredicting.",
+            "The model is consistently underpredicting.",
+            "As $$x$$ increases, the model performs worse.",
+            "A linear model works well for this data."
+        ]
+    }
+]

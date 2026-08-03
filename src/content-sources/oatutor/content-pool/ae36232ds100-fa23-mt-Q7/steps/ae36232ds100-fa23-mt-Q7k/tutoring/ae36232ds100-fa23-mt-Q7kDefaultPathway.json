@@ -1,0 +1,90 @@
+[
+    {
+        "id": "ae36232ds100-fa23-mt-Q7k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "Gradient descent is an optimization algorithm used to minimize a function by iteratively moving towards the steepest descent direction. There are different types of gradient descent methods, each with its own characteristics.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-mt-Q7k-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-fa23-mt-Q7k-h1"
+        ],
+        "title": "Types of Gradient Descent",
+        "text": "The main types of gradient descent are batch gradient descent, stochastic gradient descent, and mini-batch gradient descent. Each type has its own way of updating the parameters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-mt-Q7k-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-fa23-mt-Q7k-h2"
+        ],
+        "title": "Batch Gradient Descent Characteristics",
+        "text": "Batch gradient descent uses the entire dataset to compute the gradient of the cost function. It is computationally expensive for large datasets but guarantees convergence to the global minimum for convex functions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-mt-Q7k-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ae36232ds100-fa23-mt-Q7k-h3"
+        ],
+        "title": "Identifying Batch Gradient Descent",
+        "text": "Does batch gradient descent use the entire dataset to compute the gradient?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "ae36232ds100-fa23-mt-Q7k-h5",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-fa23-mt-Q7k-h4"
+        ],
+        "title": "Convergence of Gradient Descent",
+        "text": "For convex functions, gradient descent methods are guaranteed to converge to the global minimum. However, the convergence depends on the learning rate and the type of gradient descent used.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-mt-Q7k-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ae36232ds100-fa23-mt-Q7k-h5"
+        ],
+        "title": "Matching Description",
+        "text": "Does the description of batch gradient descent match the statement about convergence for all learning rates?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

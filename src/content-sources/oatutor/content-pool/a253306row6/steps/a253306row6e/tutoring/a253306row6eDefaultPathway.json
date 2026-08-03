@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a253306row6e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Correlation",
+        "text": "Correlation measures the strength and direction of a linear relationship between two variables. A correlation close to $$1$$ or $$-1$$ indicates a strong relationship, while a correlation close to $$0$$ indicates a weak relationship.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row6e-h1"
+        ],
+        "title": "Correlation with Self Rating",
+        "text": "Look at the correlation values between each critic's rating and the self rating. Which critic has a stronger correlation with the self rating?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row6e-h2"
+        ],
+        "title": "Comparing Correlations",
+        "text": "Critic $$1$$ has a correlation of $$0.10$$ with self rating, while Critic $$2$$ has a correlation of $$-0.75$$ with self rating. Which correlation is stronger in magnitude?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6e-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-0.75$$"
+        ],
+        "dependencies": [
+            "a253306row6e-h3"
+        ],
+        "title": "Magnitude of Correlation",
+        "text": "Which correlation is stronger in magnitude: $$0.10$$ or $$-0.75$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6e-h5",
+        "type": "hint",
+        "dependencies": [
+            "a253306row6e-h4"
+        ],
+        "title": "Conclusion",
+        "text": "Since Critic $$2$$ has a stronger correlation with self rating, it is a more helpful predictor variable than Critic $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,59 @@
+[
+    {
+        "id": "ae36232ds100-sp25-final-Q2r-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "Gradient Descent (GD) is an optimization algorithm used to minimize a function by iteratively moving towards the steepest descent direction. The learning rate determines the size of the steps taken towards the minimum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2r-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2r-h1"
+        ],
+        "title": "Effect of Learning Rate",
+        "text": "A higher learning rate can cause the algorithm to overshoot the minimum, leading to divergence or oscillation around the minimum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2r-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2r-h2"
+        ],
+        "title": "Observing the Plot",
+        "text": "In the plot, the GD path oscillates and does not converge to the minimum. This indicates that the learning rate might be too high.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2r-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The GD path could diverge further or oscillate more widely."
+        ],
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2r-h3"
+        ],
+        "title": "Possible Outcomes of Increasing Learning Rate",
+        "text": "What could happen if the learning rate is increased further?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The GD path could converge faster",
+            "The GD path could diverge further or oscillate more widely",
+            "The GD path could diverge further or oscillate more widely.",
+            "The GD path could remain unchanged"
+        ]
+    }
+]

@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a613447ds100-fa21-mt-Q2q-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "Model variance refers to how much the model's predictions change when it is trained on different datasets. High variance models are sensitive to the specific data they are trained on.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2q-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2q-h1"
+        ],
+        "title": "Effect of Feature Transformation",
+        "text": "Transforming features can help reduce model variance by simplifying the model or making it less sensitive to fluctuations in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2q-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2q-h2"
+        ],
+        "title": "Consider Polynomial Features",
+        "text": "Adding polynomial features can increase model complexity, which might increase variance. Consider transformations that simplify the model instead.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2q-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes, it can reduce variance by compressing the range of the data."
+        ],
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2q-h3"
+        ],
+        "title": "Logarithmic Transformation",
+        "text": "Would applying a logarithmic transformation to the age variable reduce model variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "No",
+            "Yes",
+            "Yes, it can reduce variance by compressing the range of the data."
+        ]
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2q-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes, standardization can help in reducing variance by normalizing the scale of the data."
+        ],
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2q-h3"
+        ],
+        "title": "Standardization",
+        "text": "Would standardizing the age variable (subtracting the mean and dividing by the standard deviation) help in reducing model variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "No",
+            "Yes",
+            "Yes, standardization can help in reducing variance by normalizing the scale of the data."
+        ]
+    }
+]

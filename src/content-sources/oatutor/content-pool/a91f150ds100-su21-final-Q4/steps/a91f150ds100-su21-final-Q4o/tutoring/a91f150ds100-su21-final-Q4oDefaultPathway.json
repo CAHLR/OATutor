@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a91f150ds100-su21-final-Q4o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting by adding a penalty to the model's complexity. However, if the regularization parameter is too high, it can lead to underfitting, increasing the model's bias.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4o-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4o-h1"
+        ],
+        "title": "Effect of Decreasing Regularization",
+        "text": "Decreasing the regularization hyperparameter reduces the penalty on model complexity, allowing the model to fit the training data more closely. This can help reduce bias but may increase variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4o-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The model bias decreases."
+        ],
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4o-h2"
+        ],
+        "title": "Impact on Model Bias",
+        "text": "What happens to the model bias when you decrease the regularization hyperparameter?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The model bias decreases.",
+            "The model bias increases.",
+            "The model bias remains the same."
+        ]
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4o-h4",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4o-h3"
+        ],
+        "title": "Balancing Bias and Variance",
+        "text": "While decreasing regularization can reduce bias, it's important to monitor the model's variance. A balance between bias and variance is crucial for optimal model performance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

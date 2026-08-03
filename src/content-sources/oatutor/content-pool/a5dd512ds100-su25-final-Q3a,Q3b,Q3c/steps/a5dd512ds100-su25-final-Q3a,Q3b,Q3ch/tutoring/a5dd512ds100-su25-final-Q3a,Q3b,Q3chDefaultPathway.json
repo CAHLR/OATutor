@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3ch-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding True Positive Rate",
+        "text": "The true positive rate (TPR) is the proportion of actual positives that are correctly identified by the model. It is also known as sensitivity or recall.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3ch-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su25-final-Q3a,Q3b,Q3ch-h1"
+        ],
+        "title": "Effect of Lowering the Threshold",
+        "text": "Lowering the classification threshold generally increases the number of positive predictions, which can increase the true positive rate if more actual positives are correctly identified.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3ch-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su25-final-Q3a,Q3b,Q3ch-h2"
+        ],
+        "title": "Analyzing the Predictions",
+        "text": "Look at the predictions and the outputted probabilities. Consider how changing the threshold from $$0.9$$ to $$0.1$$ affects which predictions are classified as positive.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3ch-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su25-final-Q3a,Q3b,Q3ch-h3"
+        ],
+        "title": "Calculate True Positives",
+        "text": "Count the number of true positives when the threshold is $$0.9$$ and when it is $$0.1$$. Compare the counts.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

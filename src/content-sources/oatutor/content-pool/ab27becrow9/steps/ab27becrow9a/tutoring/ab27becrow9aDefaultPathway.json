@@ -1,0 +1,71 @@
+[
+    {
+        "id": "ab27becrow9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find What Should Be Captured",
+        "text": "The output contains open\\_mouth and camera, so the regex should capture the emoji name inside the two colons, not the colons themselves.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab27becrow9a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "open\\_mouth"
+        ],
+        "dependencies": [
+            "ab27becrow9a-h1"
+        ],
+        "title": "Captured Text from One Emoji",
+        "text": "For the emoji :open\\_mouth:, what should the capturing group return?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "open\\_mouth",
+            ":open\\_mouth:",
+            "mouth",
+            "None of these"
+        ]
+    },
+    {
+        "id": "ab27becrow9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab27becrow9a-h2"
+        ],
+        "title": "Make the Repetition Part of the Capture",
+        "text": "The + should apply inside the capturing group so the entire emoji name is captured. In r\":(\\w)+:\", the group is repeated one character at a time, so it does not return the full emoji name.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab27becrow9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ab27becrow9a-h3"
+        ],
+        "title": "Avoid Greedy Dot-Star",
+        "text": "The pattern r\":(.*):\" uses .*, which can match any characters greedily. With multiple emojis, it can capture everything from the first colon to the last colon instead of separating the emojis.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab27becrow9a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ab27becrow9a-h4"
+        ],
+        "title": "Compare the Correct Patterns",
+        "text": "The pattern `r\":([a-zA-Z_]+):\"` explicitly captures one or more letters or underscores between colons. The pattern `r\":(\\w+):\"` also captures the full emoji names in these examples because \\w includes letters and underscores.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

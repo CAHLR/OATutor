@@ -1,0 +1,79 @@
+[
+    {
+        "id": "ae36232ds100-fa24-final-Q5a,Q5bb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Stochastic Gradient Descent",
+        "text": "Stochastic gradient descent (SGD) updates the model parameters more frequently than batch gradient descent. Consider how this affects computational cost per update.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa24-final-Q5a,Q5bb-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-fa24-final-Q5a,Q5bb-h1"
+        ],
+        "title": "Frequency of Updates",
+        "text": "In stochastic gradient descent, the model parameters are updated after each training example, whereas in batch gradient descent, updates occur after processing the entire dataset. How does this impact the computational cost per update?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa24-final-Q5a,Q5bb-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Stochastic gradient descent requires fewer operations per update compared to batch gradient descent."
+        ],
+        "dependencies": [
+            "ae36232ds100-fa24-final-Q5a,Q5bb-h2"
+        ],
+        "title": "Comparing Computational Costs",
+        "text": "Consider the number of operations required for a single update in both stochastic and batch gradient descent. Which one requires more operations per update?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Batch gradient descent",
+            "Stochastic gradient descent",
+            "Stochastic gradient descent requires fewer operations per update compared to batch gradient descent."
+        ]
+    },
+    {
+        "id": "ae36232ds100-fa24-final-Q5a,Q5bb-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-fa24-final-Q5a,Q5bb-h3"
+        ],
+        "title": "Batch Size and Computational Cost",
+        "text": "Think about how the size of the dataset affects the computational cost per update in batch gradient descent compared to stochastic gradient descent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa24-final-Q5a,Q5bb-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ae36232ds100-fa24-final-Q5a,Q5bb-h4"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Given that stochastic gradient descent updates parameters more frequently but with fewer operations per update, is it more computationally expensive per update than batch gradient descent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

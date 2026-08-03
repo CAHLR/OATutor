@@ -1,0 +1,15 @@
+{
+    "id": "a253306row6d",
+    "stepAnswer": [
+        "TRUE"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "The selected features make our model prone to collinearity.",
+    "stepBody": "We use a subset of $$\\text{skate\\_record}$$ to train the model\\n$$\\hat{y}=\\hat{\\theta}_0+\\hat{\\theta}_1x_1+\\hat{\\theta}_2x_2$$\\nwhere $$y$$ is self rating, $$x_1$$ is critic $$1$$ and $$x_2$$ is critic $$2$$.\\nThe correlation matrix for the predictors and the response in this subset gives the following correlations:\\nEach variable has a correlation of $$1.00$$ with itself.\\nBased on this correlation matrix, evaluate the following statement about our model:##figure2.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "TRUE",
+        "FALSE"
+    ]
+}

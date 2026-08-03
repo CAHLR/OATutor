@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a222079ds100-sp19-final-Q3d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatterplot",
+        "text": "Observe the scatterplot carefully. Notice the pattern of the data points. Consider how the function $$f(x)=|x|$$ might fit this pattern.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp19-final-Q3d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-sp19-final-Q3d-h1"
+        ],
+        "title": "Considering Absolute Value",
+        "text": "The function $$f(x)=|x|$$ represents the absolute value of $$x$$. Think about how this transformation affects both positive and negative values of $$x$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp19-final-Q3d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-sp19-final-Q3d-h2"
+        ],
+        "title": "Linear Relationship",
+        "text": "Check if the data points can be aligned linearly by using the absolute value transformation. This would mean that the model can fit the data using $$f(x)=|x|$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp19-final-Q3d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a222079ds100-sp19-final-Q3d-h3"
+        ],
+        "title": "Evaluating the Fit",
+        "text": "Does the transformation $$f(x)=|x|$$ allow the data points to be represented linearly in the form $$y_i=\\beta_0+x_i \\beta_1+f{\\left(x_i\\right)} \\beta_2$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

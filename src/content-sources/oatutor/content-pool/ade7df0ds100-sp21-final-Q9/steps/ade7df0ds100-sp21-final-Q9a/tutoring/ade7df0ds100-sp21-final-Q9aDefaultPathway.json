@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ade7df0ds100-sp21-final-Q9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logistic Regression Output",
+        "text": "In logistic regression, the output of the model is a probability that the given input belongs to a particular class. The sigmoid function is used to map any real-valued number into the range of $$0$$ to $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q9a-h1"
+        ],
+        "title": "Sigmoid Function",
+        "text": "The sigmoid function, denoted as \\( \\sigma \\), is defined as \\( \\sigma(z) $$=$$ \\frac{1}{1+e**{-z}} \\). It outputs a value between $$0$$ and $$1$$, which can be interpreted as a probability.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q9a-h2"
+        ],
+        "title": "Probability of Sad Tweet",
+        "text": "To find the probability that a tweet is sad, you need to compute \\( P(Y=0|X=x_{test}) \\). This is equivalent to \\( $$1$$ - P(Y=1|X=x_{test}) \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q9a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1-\\operatorname{\\sigma}\\left({\\theta}^T x_{test}\\right)$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q9a-h3"
+        ],
+        "title": "Computing Probability of Sad Tweet",
+        "text": "Given the logistic regression model, the probability of a tweet being happy is \\( \\sigma(\\theta**{T}x_{test}) \\). Therefore, the probability of it being sad is \\( $$1$$ - \\sigma(\\theta**{T}x_{test}) \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,17 @@
+{
+    "id": "ae36232ds100-fa23-final-Q2a",
+    "stepAnswer": [
+        "$$\\frac{\\partial{L}}{\\partial{\\theta}}=(\\frac{1}{n}\\sum_{i=1}**{n}2(y_i-2\\theta_0-\\theta_0**{4}\\theta_1x_i+e**{2\\theta_1}x_i**{2})(-2-4\\theta_0**{3}\\theta_1x_i),\\frac{1}{n}\\sum_{i=1}**{n}2(y_i-2\\theta_0-\\theta_0**{4}\\theta_1x_i+e**{2\\theta_1}x_i**{2})(-\\theta_0**{4}x_i+2e**{2\\theta_1}x_i**{2}))$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Suppose Tina has the following model:\\n$$\\hat{y}=2\\theta_0+\\theta_0**{4}\\theta_1x-e**{2\\theta_1}x**{2}$$\\nTina uses Mean Squared Error (MSE) as the loss function $$L$$ to select the optimal choice of $$\\theta_0$$ and $$\\theta_1$$\\nWhich of the following expressions represents the gradient vector?",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "$$\\frac{\\partial{L}}{\\partial{\\theta}}=(\\frac{1}{n}\\sum_{i=1}**{n}2(y_i-2\\theta_0-\\theta_0**{4}\\theta_1x_i+e**{2\\theta_1}x_i**{2})(-2-4\\theta_0**{3}\\theta_1x_i),\\frac{1}{n}\\sum_{i=1}**{n}2(y_i-2\\theta_0-\\theta_0**{4}\\theta_1x_i+e**{2\\theta_1}x_i**{2})(-\\theta_0**{4}x_i+2e**{2\\theta_1}x_i**{2}))$$",
+        "$$\\frac{\\partial{L}}{\\partial{\\theta}}=(\\frac{1}{n}\\sum_{i=1}**{n}2(y_i-2\\theta_0-\\theta_0**{4}\\theta_1x_i+e**{2\\theta_1}x_i**{2})(2+4\\theta_0**{3}\\theta_1x_i),\\frac{1}{n}\\sum_{i=1}**{n}2(y_i-2\\theta_0-\\theta_0**{4}\\theta_1x_i+e**{2\\theta_1}x_i**{2})(\\theta_0**{4}x_i-2e**{2\\theta_1}x_i**{2}))$$",
+        "$$\\frac{\\partial{L}}{\\partial{\\theta}}=(\\frac{1}{n}\\sum_{i=1}**{n}2(y_i-2\\theta_0-\\theta_0**{4}\\theta_1x_i+e**{2\\theta_1}x_i**{2})(-4\\theta_0**{3}\\theta_1x_i),\\frac{1}{n}\\sum_{i=1}**{n}2(y_i-2\\theta_0-\\theta_0**{4}\\theta_1x_i+e**{2\\theta_1}x_i**{2})(2e**{2\\theta_1}x_i))$$",
+        "$$\\frac{\\partial{L}}{\\partial{\\theta}}=(\\frac{1}{n}\\sum_{i=1}**{n}2(y_i-2\\theta_0-\\theta_0**{4}\\theta_1x_i+e**{2\\theta_1}x_i**{2})(4\\theta_0**{3}\\theta_1x_i-2e**{2\\theta_1}x_i),\\frac{1}{n}\\sum_{i=1}**{n}2(y_i-2\\theta_0-\\theta_0**{4}\\theta_1x_i+e**{2\\theta_1}x_i**{2})(-2-4\\theta_0**{3}\\theta_1x_i))$$"
+    ]
+}

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a8cec5cds100-fa23-mt-Q7j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Stochastic Gradient Descent",
+        "text": "Stochastic gradient descent (SGD) updates the parameters for each training example, which can cause the updates to fluctuate around the optimal solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q7j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q7j-h1"
+        ],
+        "title": "Characteristics of SGD",
+        "text": "SGD is known for its high variance in updates, which can lead to oscillations around the minimum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q7j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q7j-h2"
+        ],
+        "title": "Identifying the Correct Gradient Descent Type",
+        "text": "Does the description of jumping back and forth between two sides of the optimal solution match the behavior of stochastic gradient descent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

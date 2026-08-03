@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a613447ds100-fa25-mt2-Q6p-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE on Test Data",
+        "text": "When you remove a feature from a model, it can affect the model's ability to generalize to new data. Consider how this might impact the Mean Squared Error (MSE) on held-out test data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6p-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa25-mt2-Q6p-h1"
+        ],
+        "title": "Effect of Feature Removal on Bias and Variance",
+        "text": "Removing a feature can increase the bias of the model because it might lose some information that was useful for prediction. However, it can also decrease the variance because the model becomes simpler. Think about how these changes might affect the MSE on test data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6p-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a613447ds100-fa25-mt2-Q6p-h2"
+        ],
+        "title": "Analyzing MSE on Test Data",
+        "text": "Consider the formula for MSE: MSE $$=$$ $${Bias}^2$$ + Variance + Irreducible Error. Removing a feature can increase bias and decrease variance. How might these changes affect the MSE on test data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

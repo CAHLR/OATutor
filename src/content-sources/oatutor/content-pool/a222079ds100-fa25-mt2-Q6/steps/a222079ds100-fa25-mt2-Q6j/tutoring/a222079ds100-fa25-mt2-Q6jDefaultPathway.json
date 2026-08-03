@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a222079ds100-fa25-mt2-Q6j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LASSO Regularization",
+        "text": "LASSO regularization adds a penalty equal to the absolute value of the magnitude of coefficients to the loss function. This can lead to some coefficients being exactly zero, effectively removing some features from the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa25-mt2-Q6j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa25-mt2-Q6j-h1"
+        ],
+        "title": "Effect of LASSO on Model Variance",
+        "text": "LASSO regularization tends to reduce model complexity by shrinking some coefficients to zero. How does this affect the model's variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa25-mt2-Q6j-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa25-mt2-Q6j-h2"
+        ],
+        "title": "Variance and Model Complexity",
+        "text": "Reducing model complexity generally leads to a decrease in variance. LASSO regularization, by potentially reducing the number of features, can decrease the model's variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa25-mt2-Q6j-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease only"
+        ],
+        "dependencies": [
+            "a222079ds100-fa25-mt2-Q6j-h3"
+        ],
+        "title": "Final Answer",
+        "text": "Based on the effect of LASSO regularization on model complexity, what is the possible effect on model variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase only",
+            "Decrease only",
+            "Increase and Decrease",
+            "Neither Increase nor Decrease",
+            "Cannot be determined"
+        ]
+    }
+]

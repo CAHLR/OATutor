@@ -1,0 +1,74 @@
+[
+    {
+        "id": "a5dd512ds100-su21-final-Q6c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L0 Regularization",
+        "text": "L0 regularization limits the number of non-zero parameters in the model. In this case, it allows all $$5$$ parameters to be non-zero. This means the model can use all features without any penalty.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q6c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Logistic Regression Basics",
+        "text": "Logistic regression predicts probabilities that are then rounded to $$0$$ or $$1$$. The sigmoid function, \\(\\sigma(z)\\), is used to map any real-valued number into the \\(0,1\\) range.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q6c-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sigmoid Function Insight",
+        "text": "The sigmoid function \\(\\sigma(z)\\) is defined as \\(1/(1+e**{-z})\\). When $$\\(z=0\\)$$, $$\\(\\sigma(0)=0.5\\)$$. This is the threshold for classifying predictions as $$0$$ or $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q6c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q6c-h1"
+        ],
+        "title": "Applying L0 Regularization",
+        "text": "Since $$\\(k=5\\)$$, all parameters can be non-zero. This means the model can perfectly fit the training data without any regularization penalty.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q6c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q6c-h4"
+        ],
+        "title": "Misclassification Count",
+        "text": "With all parameters available and no penalty, the model can perfectly classify the training data. How many points are misclassified?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$0$$",
+            "$$1$$",
+            "$$2$$",
+            "$$3$$",
+            "$$5$$"
+        ]
+    }
+]

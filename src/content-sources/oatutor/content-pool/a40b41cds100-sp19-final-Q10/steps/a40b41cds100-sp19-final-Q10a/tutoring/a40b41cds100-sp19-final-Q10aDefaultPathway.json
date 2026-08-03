@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a40b41cds100-sp19-final-Q10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The problem involves distributing $$8$$ blocks across $$4$$ machines, with each block being replicated twice. Each block is stored on $$2$$ different machines.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp19-final-Q10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp19-final-Q10a-h1"
+        ],
+        "title": "Calculate Total Replicas",
+        "text": "Since each of the $$8$$ blocks is replicated $$2$$ times, calculate the total number of replicas that need to be stored across the machines.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp19-final-Q10a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$16$$"
+        ],
+        "dependencies": [
+            "a40b41cds100-sp19-final-Q10a-h2"
+        ],
+        "title": "Total Replicas Calculation",
+        "text": "Calculate the total number of replicas by multiplying the number of blocks by the number of replicas per block.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp19-final-Q10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp19-final-Q10a-h3"
+        ],
+        "title": "Distribute Replicas Evenly",
+        "text": "The total number of replicas (16) needs to be distributed evenly across $$4$$ machines. How many replicas will each machine store?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp19-final-Q10a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a40b41cds100-sp19-final-Q10a-h4"
+        ],
+        "title": "Calculate Replicas per Machine",
+        "text": "Divide the total number of replicas by the number of machines to find out how many replicas each machine will store.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

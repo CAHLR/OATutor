@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a8cec5cds100-sp25-final-Q2o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Objective Function",
+        "text": "The objective function is given as: L(theta_0,theta_1)=1/n*sum{i=1}{n}(y_i-log(theta_0)/theta_0-theta_1*x_i+theta_0*theta_1). This function is used to optimize the predicted monthly profits.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2o-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2o-h1"
+        ],
+        "title": "Initial Values and Learning Rate",
+        "text": "The initial values are $${\\theta_0}^0=1$$ and $${\\theta_1}^0=2$$. The learning rate alpha is set to $$0.5$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2o-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2o-h2"
+        ],
+        "title": "Gradient Descent Step",
+        "text": "In gradient descent, the parameters are updated using the formula: $$\\theta_{new}=\\theta_{old}-\\alpha gradient$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2o-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-0.5$$"
+        ],
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2o-h3"
+        ],
+        "title": "Calculate the Gradient for $$\\theta_0$$",
+        "text": "To find the gradient of L with respect to $$\\theta_0$$, differentiate the objective function with respect to $$\\theta_0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2o-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.5$$"
+        ],
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2o-h4"
+        ],
+        "title": "Update $$\\theta_0$$",
+        "text": "Using the gradient descent formula, update $$\\theta_0$$: $$\\theta_{0,new}=\\theta_{0,old}-\\alpha gradient$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

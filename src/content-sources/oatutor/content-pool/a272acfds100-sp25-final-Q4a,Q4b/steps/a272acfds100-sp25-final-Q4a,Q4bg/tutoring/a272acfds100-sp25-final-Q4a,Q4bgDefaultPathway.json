@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a272acfds100-sp25-final-Q4a,Q4bg-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD",
+        "text": "The matrix S in Singular Value Decomposition (SVD) contains the singular values of the original matrix X. These values are related to the variance in the data along the principal components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp25-final-Q4a,Q4bg-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp25-final-Q4a,Q4bg-h1"
+        ],
+        "title": "Variance and Singular Values",
+        "text": "The variance in the direction of a principal component is given by the square of the corresponding singular value divided by the number of observations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp25-final-Q4a,Q4bg-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{4}{6}$$"
+        ],
+        "dependencies": [
+            "a272acfds100-sp25-final-Q4a,Q4bg-h2"
+        ],
+        "title": "Calculate Variance for PC2",
+        "text": "The singular value for PC2 is $$2$$. Calculate the variance by squaring this value and dividing by the number of observations (6).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

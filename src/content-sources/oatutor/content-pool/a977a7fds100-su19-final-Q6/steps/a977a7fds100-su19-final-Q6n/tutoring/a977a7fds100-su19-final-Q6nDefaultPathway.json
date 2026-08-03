@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a977a7fds100-su19-final-Q6n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "Adding polynomial features to a model can affect both bias and variance. Consider how increasing the complexity of the model might impact these two aspects.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6n-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6n-h1"
+        ],
+        "title": "Effect of Polynomial Features",
+        "text": "Adding degree $$3$$ polynomial features increases the complexity of the model. Think about how this affects the model's ability to fit the training data and generalize to new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6n-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6n-h2"
+        ],
+        "title": "Bias in Complex Models",
+        "text": "A more complex model, such as one with polynomial features, tends to have lower bias because it can fit the training data more closely. However, consider the trade-off with variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6n-h4",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6n-h3"
+        ],
+        "title": "Variance in Complex Models",
+        "text": "While a complex model can fit the training data well, it may not generalize well to new data, leading to higher variance. This is the trade-off between bias and variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6n-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6n-h4"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Given the trade-off between bias and variance, does adding degree $$3$$ polynomial features increase bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

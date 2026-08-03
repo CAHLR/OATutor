@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a272acfds100-sp21-final-Q11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It reduces the dimensionality of the data while preserving as much variance as possible.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp21-final-Q11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp21-final-Q11a-h1"
+        ],
+        "title": "Reconstruction Error in PCA",
+        "text": "The reconstruction error in PCA is the error between the original data and the data reconstructed from the principal components. Using more principal components generally reduces the reconstruction error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp21-final-Q11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp21-final-Q11a-h2"
+        ],
+        "title": "Analyzing Plot A",
+        "text": "Look at the spread of the data in Plot A. Consider how much variance is captured by the first principal component compared to the second.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

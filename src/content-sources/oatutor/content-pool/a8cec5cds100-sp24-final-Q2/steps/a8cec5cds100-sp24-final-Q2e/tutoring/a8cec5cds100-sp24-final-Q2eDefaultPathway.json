@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a8cec5cds100-sp24-final-Q2e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "Gradient descent is an optimization algorithm used to minimize a function by iteratively moving towards the steepest descent direction. It updates parameters to reduce the loss function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-final-Q2e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp24-final-Q2e-h1"
+        ],
+        "title": "Batch vs Stochastic Gradient Descent",
+        "text": "Batch gradient descent computes the gradient using the entire dataset, while stochastic gradient descent uses a single data point at each iteration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-final-Q2e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp24-final-Q2e-h2"
+        ],
+        "title": "True Gradient in Gradient Descent",
+        "text": "In batch gradient descent, the true gradient of the loss function is computed using all data points. In stochastic gradient descent, the gradient is an approximation based on a single data point.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp24-final-Q2e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a8cec5cds100-sp24-final-Q2e-h3"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Does stochastic gradient descent compute the true gradient of the loss surface during each iteration?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

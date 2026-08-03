@@ -1,0 +1,15 @@
+{
+    "id": "a91f150ds100-sp22-mt2-Q5h",
+    "stepAnswer": [
+        "TRUE"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "L2 regularization is more effective than exponential regularization when we want parameters close to zero.",
+    "stepBody": "Which of the following are true if we compare our exponential regularization with L1 and L2 regularization if we use the same $$\\lambda$$ for all three? Select all that apply.\\n\\nA. Exponential regularization always penalizes large positive coefficients more than L2 regularization.\\nB. Exponential regularization always penalizes large negative coefficients more than L2 regularization.\\nC. L2 regularization is more effective than exponential regularization when we want parameters close to zero.\\nD. L1 regularization often performs feature selection by setting parameters corresponding to non-contributing features to $$0$$, but exponential regularization cannot be used for feature selection.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "TRUE",
+        "FALSE"
+    ]
+}

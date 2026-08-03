@@ -1,0 +1,45 @@
+[
+    {
+        "id": "acab12dds100-fa17-mt-Q25a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Confidence Intervals",
+        "text": "A confidence interval gives a range of values that is likely to contain the population parameter with a certain level of confidence. In this case, a 95% confidence interval means that if we were to take many samples and construct a confidence interval from each sample, we expect 95% of those intervals to contain the true population mean.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-mt-Q25a-h2",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa17-mt-Q25a-h1"
+        ],
+        "title": "Sample Mean vs. Population Mean",
+        "text": "The statement refers to the sample mean, not the population mean. Remember, a confidence interval is constructed to estimate the population mean, not the sample mean.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-mt-Q25a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "acab12dds100-fa17-mt-Q25a-h2"
+        ],
+        "title": "Clarifying the Statement",
+        "text": "The statement suggests that $$95$$ out of $$100$$ confidence intervals will include the sample mean. Is this true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

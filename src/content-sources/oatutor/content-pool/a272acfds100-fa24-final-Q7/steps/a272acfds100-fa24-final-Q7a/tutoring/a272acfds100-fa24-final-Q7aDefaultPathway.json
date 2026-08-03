@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a272acfds100-fa24-final-Q7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scree Plot",
+        "text": "The scree plot shows the explained variance ratio for each principal component. The goal is to choose the number of components that capture the most variance while keeping the model simple.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa24-final-Q7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-fa24-final-Q7a-h1"
+        ],
+        "title": "Interpreting the Scree Plot",
+        "text": "Look for an 'elbow' in the scree plot, where the explained variance ratio starts to level off. This point indicates the optimal number of components to use.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Effect of Adding a Feature",
+        "text": "When you add a new feature to a model, especially one that is a transformation of an existing feature, it can affect the model's complexity. Consider how this might impact the model's ability to generalize to new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6h-h1"
+        ],
+        "title": "Impact on Model Bias",
+        "text": "Adding a new feature, such as the square of an existing feature, can potentially decrease the bias of the model. This is because the model can now capture more complex relationships in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6h-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6h-h1"
+        ],
+        "title": "Impact on Model Variance",
+        "text": "Consider how adding a new feature might increase the model's variance. With more features, the model might fit the training data more closely, which can lead to overfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6h-h4",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6h-h1"
+        ],
+        "title": "Impact on MSE on Training Data",
+        "text": "Adding a new feature can decrease the Mean Squared Error (MSE) on the training data because the model can fit the training data more closely.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6h-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6h-h1"
+        ],
+        "title": "Impact on MSE on Held-out Test Data",
+        "text": "Adding a new feature can potentially increase the MSE on held-out test data if the model overfits the training data. However, it might also decrease if the new feature captures a true relationship in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Decrease",
+            "Increase",
+            "TRUE"
+        ]
+    }
+]

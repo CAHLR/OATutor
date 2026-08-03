@@ -1,0 +1,55 @@
+[
+    {
+        "id": "a613447ds100-su19-final-Q6d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model uses one-hot encoding for the meat type. This means that for each type of meat, a separate variable is created that is $$1$$ if the meat is of that type and $$0$$ otherwise.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting the Box Plot",
+        "text": "The box plot shows the distribution of total costs for each type of meat. Compare the medians and ranges to understand the impact of each meat type on the total cost.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6d-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Analyzing the Scatter Plot",
+        "text": "The scatter plot shows the relationship between the amount of vegetables and the total cost. Consider how this relationship might affect the intercept term in the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Positive"
+        ],
+        "dependencies": [
+            "a613447ds100-su19-final-Q6d-h1"
+        ],
+        "title": "Determining the Sign of \u03b8\u2080",
+        "text": "Based on the data and visualizations, what can you infer about the baseline cost when no vegetables are bought and the meat type is not specified?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Positive",
+            "Negative",
+            "Exactly $$0$$",
+            "Not enough info"
+        ]
+    }
+]

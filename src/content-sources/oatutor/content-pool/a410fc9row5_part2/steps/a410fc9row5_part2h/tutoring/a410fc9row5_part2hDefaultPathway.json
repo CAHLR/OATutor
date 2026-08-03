@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a410fc9row5_part2h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Matrix Dimensions",
+        "text": "In an OLS model, the design matrix X typically has dimensions $$n$$ by $$p+1$$, where $$n$$ is the number of observations and $$p+1$$ accounts for the intercept and $$p$$ features.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row5_part2h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row5_part2h-h1"
+        ],
+        "title": "Dimensions of Theta",
+        "text": "The parameter vector theta (\u03b8) in an OLS model should have dimensions $$p+1$$ by $$1$$, corresponding to the $$p+1$$ features including the intercept.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row5_part2h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a410fc9row5_part2h-h2"
+        ],
+        "title": "Checking Matrix Multiplication Compatibility",
+        "text": "For matrix multiplication to be valid, the number of columns in the first matrix must equal the number of rows in the second matrix. Given X is $$n$$ by $$p+1$$ and \u03b8 is $$p+1$$ by $$1$$, is the multiplication X\u03b8 valid?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a410fc9row5_part2h-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$n$$ by $$1$$"
+        ],
+        "dependencies": [
+            "a410fc9row5_part2h-h3"
+        ],
+        "title": "Verifying the Output Dimensions",
+        "text": "After multiplying X (n by (p+1)) with \u03b8 ((p+1) by 1), what should be the dimensions of the resulting matrix?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$n$$ by $$1$$",
+            "$$p$$ by $$1$$",
+            "$$p+1$$ by $$1$$",
+            "$$n$$ by $$p+1$$"
+        ]
+    },
+    {
+        "id": "a410fc9row5_part2h-h5",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row5_part2h-h4"
+        ],
+        "title": "Conclusion on Matrix Dimensions",
+        "text": "Given the dimensions of X and \u03b8, the resulting matrix from X\u03b8 should have dimensions $$n$$ by $$1$$, representing the predicted values for each observation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,41 @@
+[
+    {
+        "id": "ad34534ds100-fa19-mt2-Q6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "In one-hot encoding, each category is represented by a binary vector. For the $$job_{type}$$ variable, we have three categories: blue collar, white collar, and managerial. How would you represent a white collar worker using one-hot encoding?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa19-mt2-Q6b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa19-mt2-Q6b-h1"
+        ],
+        "title": "Substitute Values into the Model",
+        "text": "Once you have the one-hot encoded values for a white collar worker, substitute them into the model equation: $$y=-8+3x_{edu}+6x_m-3x_b$$. Remember, $$x_{edu}$$ is the years of education.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa19-mt2-Q6b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$22$$"
+        ],
+        "dependencies": [
+            "ad34534ds100-fa19-mt2-Q6b-h2"
+        ],
+        "title": "Calculate the Predicted Wage",
+        "text": "For a white collar worker with $$10$$ years of education, substitute the values into the equation: $$y=-8+3\\times10+6\\times0-3\\times0$$. What is the predicted wage?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

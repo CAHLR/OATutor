@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a825455ds100-su21-final-Q10c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding K-means Clustering",
+        "text": "K-means clustering is an iterative algorithm that aims to partition a dataset into K distinct, non-overlapping subgroups (clusters).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su21-final-Q10c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-su21-final-Q10c-h1"
+        ],
+        "title": "What is Inertia in Clustering?",
+        "text": "Inertia is a measure of how well the clusters are formed. It is the sum of squared distances of samples to their closest cluster center.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su21-final-Q10c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-su21-final-Q10c-h2"
+        ],
+        "title": "Convergence of K-means",
+        "text": "K-means clustering can converge to a local minimum, which may not be the global minimum of inertia.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su21-final-Q10c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "sometimes"
+        ],
+        "dependencies": [
+            "a825455ds100-su21-final-Q10c-h3"
+        ],
+        "title": "Evaluating K-means Clustering",
+        "text": "Given that K-means can converge to a local minimum, it will [blank] find the optimal clustering in terms of inertia.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "always",
+            "sometimes",
+            "never"
+        ]
+    }
+]

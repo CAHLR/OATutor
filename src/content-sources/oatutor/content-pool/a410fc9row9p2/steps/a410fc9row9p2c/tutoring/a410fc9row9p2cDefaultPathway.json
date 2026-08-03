@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a410fc9row9p2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "Look at the columns in the DataFrame. What types of data do they represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row9p2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row9p2c-h1"
+        ],
+        "title": "Identifying Variable Types",
+        "text": "Consider the types of data in the columns: 'Dis', 'League', and 'Goals'. Are any of these quantitative discrete variables?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row9p2c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a410fc9row9p2c-h2"
+        ],
+        "title": "Analyzing 'Dis' Column",
+        "text": "The 'Dis' column represents the total distance moved by the player. Is this a quantitative discrete variable?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a410fc9row9p2c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a410fc9row9p2c-h2"
+        ],
+        "title": "Analyzing 'League' Column",
+        "text": "The 'League' column represents the soccer league of the player's squad. Is this a quantitative discrete variable?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a410fc9row9p2c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a410fc9row9p2c-h2"
+        ],
+        "title": "Analyzing 'Goals' Column",
+        "text": "The 'Goals' column represents the average number of goals scored by the player per match. Is this a quantitative discrete variable?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a410fc9row9p2c-h6",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row9p2c-h5"
+        ],
+        "title": "Conclusion on Variable Types",
+        "text": "Based on the analysis, does the DataFrame contain any quantitative discrete variables?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

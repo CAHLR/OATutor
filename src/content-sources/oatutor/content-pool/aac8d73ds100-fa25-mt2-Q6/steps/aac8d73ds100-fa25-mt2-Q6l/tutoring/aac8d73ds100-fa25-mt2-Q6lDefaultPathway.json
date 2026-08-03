@@ -1,0 +1,60 @@
+[
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q6l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LASSO Regularization",
+        "text": "LASSO regularization adds a penalty equal to the absolute value of the magnitude of coefficients to the loss function. This can lead to some coefficients being exactly zero, effectively selecting a simpler model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q6l-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa25-mt2-Q6l-h1"
+        ],
+        "title": "Effect on Model Complexity",
+        "text": "Using LASSO regularization can reduce model complexity by shrinking some coefficients to zero. How might this affect the model's performance on unseen data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q6l-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa25-mt2-Q6l-h2"
+        ],
+        "title": "Bias-Variance Tradeoff",
+        "text": "Consider how LASSO affects the bias-variance tradeoff. Increasing regularization can increase bias but decrease variance. How does this tradeoff impact MSE on held-out test data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q6l-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase and Decrease"
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa25-mt2-Q6l-h3"
+        ],
+        "title": "Analyzing MSE on Test Data",
+        "text": "When using LASSO regularization, how does the change in model complexity affect the MSE on held-out test data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase only",
+            "Decrease only",
+            "Increase and Decrease",
+            "Neither Increase nor Decrease",
+            "Cannot be determined"
+        ]
+    }
+]

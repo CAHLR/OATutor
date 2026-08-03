@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ad34534ds100-sp19-final-Q3k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model given is: $$y_i=\\beta_0+x_i \\beta_1+f{\\left(x_i\\right)} \\beta_2$$. We need to determine if $$f(x)=x^2$$ can fit the data in the scatterplot.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp19-final-Q3k-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp19-final-Q3k-h1"
+        ],
+        "title": "Analyzing the Scatterplot",
+        "text": "Observe the scatterplot. Does the data appear to follow a quadratic pattern?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp19-final-Q3k-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp19-final-Q3k-h2"
+        ],
+        "title": "Quadratic Function",
+        "text": "A quadratic function has the form $$y={ax}^2+bx+c$$. Does the scatterplot resemble this form?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp19-final-Q3k-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp19-final-Q3k-h3"
+        ],
+        "title": "Conclusion",
+        "text": "Based on the scatterplot, does $$f(x)=x^2$$ fit the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

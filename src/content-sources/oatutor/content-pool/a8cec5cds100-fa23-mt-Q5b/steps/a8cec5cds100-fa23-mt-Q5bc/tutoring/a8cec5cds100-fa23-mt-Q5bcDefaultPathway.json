@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a8cec5cds100-fa23-mt-Q5bc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Loss Functions",
+        "text": "Loss functions are used to measure how well a model's predictions match the actual data. They help in optimizing the model parameters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q5bc-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q5bc-h1"
+        ],
+        "title": "Mean Squared Error (MSE)",
+        "text": "The Mean Squared Error (MSE) is a common loss function that calculates the average of the squares of the errors. It is sensitive to outliers because squaring the errors increases the penalty for larger errors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q5bc-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q5bc-h2"
+        ],
+        "title": "Higher Power Loss Functions",
+        "text": "Loss functions that involve higher powers of the error term, such as cubing or raising to the fourth power, penalize larger errors more harshly than MSE. This is because the effect of larger errors is amplified when raised to a higher power.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q5bc-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q5bc-h3"
+        ],
+        "title": "Absolute Value in Loss Functions",
+        "text": "Using absolute values in loss functions can also affect how errors are penalized. However, raising the absolute value of errors to a power greater than $$2$$ can still penalize outliers more harshly than MSE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q5bc-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "\\frac{1}{n}sum_{i=1}**{n}(y_i-\\hat{y}_i)**{3}, \\frac{1}{n}sum_{i=1}**{n}|y_i-\\hat{y}_i|**{3}, \\frac{1}{n}sum_{i=1}**{n}(y_i-\\hat{y}_i)**{4}, \\frac{1}{n}sum_{i=1}**{n}(y_i-\\hat{y}_i)**{5}, \\frac{1}{n}sum_{i=1}**{n}|(y_i-\\hat{y}_i)**{5}|"
+        ],
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q5bc-h4"
+        ],
+        "title": "Identifying Appropriate Loss Functions",
+        "text": "Which of the following loss functions penalize outliers more harshly than MSE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "(y_i-\\hat{y}_i)**{5}",
+            "\\frac{1}{n}sum_{i=1}**{n}(y_i-\\hat{y}_i), \\frac{1}{n}sum_{i=1}**{n}(y_i-\\hat{y}_i)**{3}, \\frac{1}{n}sum_{i=1}**{n}",
+            "\\frac{1}{n}sum_{i=1}**{n}(y_i-\\hat{y}_i)**{3}, \\frac{1}{n}sum_{i=1}**{n}|y_i-\\hat{y}_i|**{3}, \\frac{1}{n}sum_{i=1}**{n}(y_i-\\hat{y}_i)**{4}, \\frac{1}{n}sum_{i=1}**{n}(y_i-\\hat{y}_i)**{5}, \\frac{1}{n}sum_{i=1}**{n}|(y_i-\\hat{y}_i)**{5}|",
+            "**{3}, \\frac{1}{n}sum_{i=1}**{n}(y_i-\\hat{y}_i)**{4}, \\frac{1}{n}sum_{i=1}**{n}(y_i-\\hat{y}_i)**{5}, \\frac{1}{n}sum_{i=1}**{n}",
+            "y_i-\\hat{y}_i"
+        ]
+    }
+]

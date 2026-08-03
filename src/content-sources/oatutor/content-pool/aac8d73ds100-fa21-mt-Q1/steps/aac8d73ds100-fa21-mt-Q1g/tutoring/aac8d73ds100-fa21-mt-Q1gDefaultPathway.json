@@ -1,0 +1,60 @@
+[
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding N-gram Limitations",
+        "text": "Consider how N-grams capture sequences. They don't account for the biological significance of codons, which are specific sequences of three consecutive letters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1g-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa21-mt-Q1g-h1"
+        ],
+        "title": "Non-consecutive Segments",
+        "text": "N-grams can mistakenly capture non-consecutive sequences as valid segments, which is not biologically meaningful in DNA analysis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1g-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa21-mt-Q1g-h1"
+        ],
+        "title": "Meaningless Short Segments",
+        "text": "Segments with $$1$$ or $$2$$ letters don't correspond to any meaningful biological unit, yet N-grams would treat them as valid features.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1g-h4",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa21-mt-Q1g-h1"
+        ],
+        "title": "Overlapping Segments",
+        "text": "N-grams can create overlapping segments, which might not align with the distinct codon structure in DNA.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1g-h5",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa21-mt-Q1g-h1"
+        ],
+        "title": "Wrap-around Segments",
+        "text": "DNA sequences don't wrap around, but N-grams might capture segments as if they do, leading to incorrect feature representation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

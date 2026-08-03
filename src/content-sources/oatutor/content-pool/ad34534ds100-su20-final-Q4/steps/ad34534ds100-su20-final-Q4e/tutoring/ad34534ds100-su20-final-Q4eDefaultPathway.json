@@ -1,0 +1,65 @@
+[
+    {
+        "id": "ad34534ds100-su20-final-Q4e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The problem involves comparing two linear regression models: one using the original design matrix X and the other using the mean-centered design matrix X\u0303. Both models aim to minimize the sum of squared errors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su20-final-Q4e-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-su20-final-Q4e-h1"
+        ],
+        "title": "Mean-Centering Effect",
+        "text": "Mean-centering the design matrix affects the intercept term in the linear regression model. Consider how this impacts the coefficients, especially the intercept.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su20-final-Q4e-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-su20-final-Q4e-h2"
+        ],
+        "title": "Intercept in Mean-Centered Model",
+        "text": "In a mean-centered model, the intercept term is typically zero because the mean of the predictors is zero. This is a key difference from the non-centered model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su20-final-Q4e-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "ad34534ds100-su20-final-Q4e-h3"
+        ],
+        "title": "Comparing Intercepts",
+        "text": "What is the intercept term in the mean-centered model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su20-final-Q4e-h5",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-su20-final-Q4e-h4"
+        ],
+        "title": "Conclusion",
+        "text": "Given that the intercept in the mean-centered model is zero, consider how this affects the statement about \\( \\hat{\\gamma}_0 \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a8cec5cds100-su25-mt-Q4b,Q4cb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MAE",
+        "text": "The Mean Absolute Error (MAE) is calculated as the average of the absolute differences between the predicted values and the actual values. It is given by the formula: MAE=sum{i\\=1}{N}{abs(y_i-\\hat{y})}/N, where $$y_i$$ is the actual value and \\hat{y} is the predicted value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-su25-mt-Q4b,Q4cb-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-su25-mt-Q4b,Q4cb-h1"
+        ],
+        "title": "Constant Model",
+        "text": "In a constant model, the predicted value \\hat{y} is the same for all observations. This means $$\\hat{y}=\\theta_0$$ for every data point.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-su25-mt-Q4b,Q4cb-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-su25-mt-Q4b,Q4cb-h2"
+        ],
+        "title": "Minimizing MAE with a Constant Model",
+        "text": "To minimize the MAE in a constant model, $$\\theta_0$$ should be chosen such that the sum of the absolute differences between $$\\theta_0$$ and the actual values is minimized.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-su25-mt-Q4b,Q4cb-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "median(y)"
+        ],
+        "dependencies": [
+            "a8cec5cds100-su25-mt-Q4b,Q4cb-h3"
+        ],
+        "title": "Finding the Optimal $$\\theta_0$$",
+        "text": "The value of $$\\theta_0$$ that minimizes the MAE is the median of the actual values. This is because the median minimizes the sum of absolute deviations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

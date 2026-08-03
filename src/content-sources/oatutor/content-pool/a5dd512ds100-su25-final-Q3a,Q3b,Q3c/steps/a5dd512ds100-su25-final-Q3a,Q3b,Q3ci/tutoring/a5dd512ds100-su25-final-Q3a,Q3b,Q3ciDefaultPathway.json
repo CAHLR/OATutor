@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3ci-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding F1 Score",
+        "text": "The F1 score is a measure of a test's accuracy. It considers both precision and recall to compute the score. The F1 score is the harmonic mean of precision and recall.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3ci-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su25-final-Q3a,Q3b,Q3ci-h1"
+        ],
+        "title": "Effect of Threshold on Classification",
+        "text": "Changing the threshold in a classification model can affect which instances are classified as positive or negative, thus affecting precision and recall.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3ci-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su25-final-Q3a,Q3b,Q3ci-h2"
+        ],
+        "title": "Calculating Precision and Recall",
+        "text": "Precision is the number of true positive results divided by the number of all positive results, including those not identified correctly. Recall is the number of true positive results divided by the number of positives that should have been retrieved.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3ci-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "True Positives: $$2$$ False Positives: $$0$$ False Negatives: $$1$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su25-final-Q3a,Q3b,Q3ci-h3"
+        ],
+        "title": "Determine True Positives, False Positives, and False Negatives",
+        "text": "Based on the given predictions and true labels, identify the true positives, false positives, and false negatives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3ci-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "Precision: 1, Recall: 2/3"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su25-final-Q3a,Q3b,Q3ci-h4"
+        ],
+        "title": "Calculate Precision and Recall",
+        "text": "Using the identified true positives, false positives, and false negatives, calculate precision and recall.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3ci-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "F1 Score: $$\\frac{4}{5}$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su25-final-Q3a,Q3b,Q3ci-h5"
+        ],
+        "title": "Calculate F1 Score",
+        "text": "Use the precision and recall to calculate the F1 score.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

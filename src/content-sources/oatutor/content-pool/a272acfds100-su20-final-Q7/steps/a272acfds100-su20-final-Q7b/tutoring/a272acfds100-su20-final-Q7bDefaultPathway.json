@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a272acfds100-su20-final-Q7b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean Nearest Squared Error",
+        "text": "The mean nearest squared error (MNSE) is calculated by taking the average of the squared distances from each data point to the nearest point on the regression line. This involves squaring the differences between observed values and predicted values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su20-final-Q7b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean Absolute Error",
+        "text": "The mean absolute error (MAE) is calculated by taking the average of the absolute differences between observed values and predicted values. It measures the average magnitude of errors in a set of predictions, without considering their direction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su20-final-Q7b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-su20-final-Q7b-h1",
+            "a272acfds100-su20-final-Q7b-h2"
+        ],
+        "title": "Comparing MNSE and MAE",
+        "text": "To compare MNSE and MAE, consider that squaring the differences in MNSE tends to amplify larger errors more than smaller ones, whereas MAE treats all errors equally by taking their absolute values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su20-final-Q7b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "not enough information"
+        ],
+        "dependencies": [
+            "a272acfds100-su20-final-Q7b-h3"
+        ],
+        "title": "Analyzing the Relationship",
+        "text": "Given that MNSE squares the errors and MAE takes the absolute value, can we determine if MNSE is always less than, equal to, or greater than MAE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "less than",
+            "equal to",
+            "greater than",
+            "not enough information"
+        ]
+    }
+]

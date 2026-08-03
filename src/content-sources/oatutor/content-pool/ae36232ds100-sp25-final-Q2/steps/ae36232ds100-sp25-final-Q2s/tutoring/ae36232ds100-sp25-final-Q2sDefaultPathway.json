@@ -1,0 +1,60 @@
+[
+    {
+        "id": "ae36232ds100-sp25-final-Q2s-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "Gradient Descent (GD) is an optimization algorithm used to minimize a function by iteratively moving towards the minimum value of the function. It uses the gradient of the function to determine the direction of the steepest descent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2s-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2s-h1"
+        ],
+        "title": "Effect of Learning Rate",
+        "text": "The learning rate in Gradient Descent determines the size of the steps taken towards the minimum. A larger learning rate means larger steps, while a smaller learning rate means smaller steps.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2s-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2s-h2"
+        ],
+        "title": "Increasing the Learning Rate",
+        "text": "If the learning rate is increased, the steps taken by Gradient Descent will be larger. This can lead to faster convergence, but it also increases the risk of overshooting the minimum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2s-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The algorithm might converge faster, but it could also overshoot the minimum or even diverge."
+        ],
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2s-h3"
+        ],
+        "title": "Possible Outcomes of Increasing Learning Rate",
+        "text": "What could happen if the learning rate is increased?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The algorithm converges faster",
+            "The algorithm converges slower",
+            "The algorithm diverges",
+            "The algorithm might converge faster, but it could also overshoot the minimum or even diverge.",
+            "The algorithm overshoots the minimum"
+        ]
+    }
+]

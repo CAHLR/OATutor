@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a91f150ds100-su21-final-Q4p-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "When the model variance increases, it means the model's predictions are more sensitive to changes in the training data. This can happen if the model becomes more complex.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4p-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4p-h1"
+        ],
+        "title": "Impact of Decreased Bias",
+        "text": "Decreasing bias often involves making the model more flexible, which can lead to an increase in variance. This is because the model can now fit the training data more closely, capturing more of its noise.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4p-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Variance increases"
+        ],
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4p-h2"
+        ],
+        "title": "Tradeoff Between Bias and Variance",
+        "text": "Consider the bias-variance tradeoff. If bias decreases, what typically happens to variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Variance increases",
+            "Variance decreases",
+            "Variance stays the same"
+        ]
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4p-h4",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4p-h3"
+        ],
+        "title": "Regularization Effects",
+        "text": "Regularization techniques like Lasso or Ridge can help control model variance by penalizing large coefficients, thus reducing overfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

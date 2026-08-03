@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a613447ds100-fa25-mt2-Q6x-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LASSO Regularization",
+        "text": "LASSO (Least Absolute Shrinkage and Selection Operator) is a type of linear regression that includes a penalty term. This penalty term is proportional to the absolute value of the coefficients. The main purpose of LASSO is to prevent overfitting by shrinking some coefficients to zero, effectively selecting a simpler model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6x-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa25-mt2-Q6x-h1"
+        ],
+        "title": "Effect of LASSO on Model Complexity",
+        "text": "By using LASSO regularization, the model complexity is reduced because some coefficients are shrunk to zero. This can lead to a simpler model with fewer features.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6x-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa25-mt2-Q6x-h2"
+        ],
+        "title": "Impact on MSE on Held-out Test Data",
+        "text": "When model complexity is reduced, it can lead to a decrease in overfitting. This often results in a decrease in the Mean Squared Error (MSE) on held-out test data, as the model generalizes better to unseen data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6x-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a613447ds100-fa25-mt2-Q6x-h3"
+        ],
+        "title": "Possible Effects on MSE",
+        "text": "Consider the effect of using LASSO regularization on the MSE of held-out test data. Could it potentially increase, decrease, or both?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    }
+]

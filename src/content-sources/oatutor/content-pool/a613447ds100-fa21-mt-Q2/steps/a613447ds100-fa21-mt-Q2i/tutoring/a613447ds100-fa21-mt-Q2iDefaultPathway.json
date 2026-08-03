@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a613447ds100-fa21-mt-Q2i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Overfitting",
+        "text": "Overfitting occurs when a model learns the training data too well, capturing noise along with the underlying pattern. This results in poor performance on new, unseen data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2i-h1"
+        ],
+        "title": "What is Model Variance?",
+        "text": "Model variance refers to the variability of model predictions for different training data sets. High variance models are sensitive to the specific data they are trained on.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2i-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2i-h2"
+        ],
+        "title": "Effect of Decreasing Lambda",
+        "text": "In ridge regression, decreasing the regularization parameter lambda (\u03bb) reduces the penalty on large coefficients, potentially increasing model variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2i-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Model variance increases."
+        ],
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2i-h3"
+        ],
+        "title": "Impact of Lambda on Variance",
+        "text": "If Parth decreases \u03bb, what happens to the model variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Model variance increases.",
+            "Model variance decreases."
+        ]
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2i-h4",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2i-s1"
+        ],
+        "title": "Strategies to Reduce Variance",
+        "text": "To reduce model variance, consider increasing \u03bb, using more data, or simplifying the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

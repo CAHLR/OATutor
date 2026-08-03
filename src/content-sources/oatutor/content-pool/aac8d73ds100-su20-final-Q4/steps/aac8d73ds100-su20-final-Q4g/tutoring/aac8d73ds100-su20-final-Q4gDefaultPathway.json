@@ -1,0 +1,53 @@
+[
+    {
+        "id": "aac8d73ds100-su20-final-Q4g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Mean of Residuals",
+        "text": "In ordinary least squares (OLS) regression, the residuals are the differences between the observed values and the predicted values. The mean of these residuals is always zero when an intercept is included in the model. This is because the intercept term adjusts the model to ensure that the sum of the residuals is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q4g-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q4g-h1"
+        ],
+        "title": "Centered Data and Residuals",
+        "text": "When the data is mean-centered, the intercept term in the regression model becomes zero. However, the property that the mean of the residuals is zero still holds true. This is because the centering of data does not affect the fundamental property of OLS regression regarding residuals.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q4g-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The sum of the residuals is zero."
+        ],
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q4g-h2"
+        ],
+        "title": "Checking the Mean of Residuals",
+        "text": "Given that the mean of the residuals is zero in OLS regression with an intercept, what can we conclude about the sum of the residuals?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q4g-h4",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q4g-h3"
+        ],
+        "title": "Effect of Regularization",
+        "text": "Regularization techniques like Lasso or Ridge regression add a penalty term to the loss function. This can affect the coefficients of the model but does not change the property that the mean of the residuals is zero in the context of OLS regression with an intercept.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

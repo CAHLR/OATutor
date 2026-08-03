@@ -1,0 +1,60 @@
+[
+    {
+        "id": "ad34534ds100-fa21-mt-Q1n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding k-fold Cross Validation",
+        "text": "In k-fold cross-validation, the dataset is divided into k subsets, and the model is trained and validated k times, each time using a different subset as the validation set and the remaining as the training set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa21-mt-Q1n-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa21-mt-Q1n-h1"
+        ],
+        "title": "Bias and Variance in Cross Validation",
+        "text": "Increasing k in k-fold cross-validation generally reduces the variance of the model's performance estimate, but how does it affect the bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa21-mt-Q1n-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa21-mt-Q1n-h1"
+        ],
+        "title": "Computational Intensity of Cross Validation",
+        "text": "Consider the computational cost of running k-fold cross-validation compared to a single train-test split. Is cross-validation more or less computationally intensive?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa21-mt-Q1n-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa21-mt-Q1n-h1"
+        ],
+        "title": "Using Entire Dataset in Cross Validation",
+        "text": "In cross-validation, each data point gets to be in a validation set exactly once and gets to be in a training set k-1 times. How does this compare to using a single train-test split?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa21-mt-Q1n-h5",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa21-mt-Q1n-h1"
+        ],
+        "title": "Cross Validation in Production",
+        "text": "Think about the purpose of cross-validation during model development. Why might it not be suitable for use in a production environment?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

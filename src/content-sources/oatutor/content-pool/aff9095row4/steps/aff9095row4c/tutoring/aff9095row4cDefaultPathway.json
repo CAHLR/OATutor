@@ -1,0 +1,78 @@
+[
+    {
+        "id": "aff9095row4c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "Look at the columns of the 'nuggets' DataFrame. Which column would help you identify the chain that sold the most nuggets?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aff9095row4c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Filtering the Data",
+        "text": "Consider how you can filter the DataFrame to only include nuggets with a weight less than $$0.6$$ ounces.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aff9095row4c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "nuggets[nuggets['weight']<0.6]"
+        ],
+        "dependencies": [],
+        "title": "Step 1: Filter by Weight",
+        "text": "Filter the 'nuggets' DataFrame to include only rows where the weight is less than $$0.6$$ ounces. What code would you use?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aff9095row4c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "nuggets[nuggets['weight']<0.6]['chain'].value\\_counts()"
+        ],
+        "dependencies": [
+            "aff9095row4c-h3"
+        ],
+        "title": "Step 2: Count the Chains",
+        "text": "After filtering, count the occurrences of each chain in the filtered DataFrame. What code would you use?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aff9095row4c-h5",
+        "type": "hint",
+        "dependencies": [
+            "aff9095row4c-h4"
+        ],
+        "title": "Finding the Maximum",
+        "text": "Once you have the counts of each chain, how can you find the chain with the highest count?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aff9095row4c-h6",
+        "type": "hint",
+        "dependencies": [
+            "aff9095row4c-h5"
+        ],
+        "title": "Using idxmax()",
+        "text": "The function '.idxmax()' can be used to find the index of the maximum value in a Series. How would you apply it here?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

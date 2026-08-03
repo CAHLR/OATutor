@@ -1,0 +1,53 @@
+[
+    {
+        "id": "acab12dds100-sp25-final-Q3a,Q3b,Q3cb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Variance of the Estimator",
+        "text": "To find the variance of the estimator \\( \\hat{\\delta} $$=$$ \\bar{K} - \\bar{D} \\), we need to consider the properties of variance for independent random variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp25-final-Q3a,Q3b,Q3cb-h2",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-sp25-final-Q3a,Q3b,Q3cb-h1"
+        ],
+        "title": "Variance of a Difference",
+        "text": "Recall that if \\( X \\) and \\( Y \\) are independent random variables, then \\( $$Var(X-Y)$$ $$=$$ Var(X) + Var(Y) \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp25-final-Q3a,Q3b,Q3cb-h3",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-sp25-final-Q3a,Q3b,Q3cb-h2"
+        ],
+        "title": "Variance of Sample Means",
+        "text": "The variance of a sample mean \\( \\bar{X} \\) from a sample of size \\( $$n$$ \\) with variance \\( \\sigma**2 \\) is \\( \\frac{\\sigma**2}{n} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp25-final-Q3a,Q3b,Q3cb-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Var(\\hat{\\delta})=\\frac{\\sigma_K**2}{n}+\\frac{\\sigma_D**2}{m}"
+        ],
+        "dependencies": [
+            "acab12dds100-sp25-final-Q3a,Q3b,Q3cb-h3"
+        ],
+        "title": "Applying the Variance Formula",
+        "text": "Using the formula for the variance of a difference and the variance of sample means, compute \\( Var(\\hat{\\delta}) \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

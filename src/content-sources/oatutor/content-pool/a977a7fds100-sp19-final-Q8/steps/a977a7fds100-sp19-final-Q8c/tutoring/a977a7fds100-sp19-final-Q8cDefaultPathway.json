@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a977a7fds100-sp19-final-Q8c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Estimator",
+        "text": "To find the variance of the estimator, consider how the maximum outcome of a single roll of a die is determined. What are the possible outcomes?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp19-final-Q8c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-sp19-final-Q8c-h1"
+        ],
+        "title": "Possible Outcomes",
+        "text": "The possible outcomes of a single roll of a fair 6-sided die are $$1$$, $$2$$, $$3$$, $$4$$, $$5$$, and $$6$$. The maximum outcome is the highest number rolled.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp19-final-Q8c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-sp19-final-Q8c-h2"
+        ],
+        "title": "Calculating the Variance",
+        "text": "The variance of an estimator is calculated as the expected value of the squared deviation of the estimator from its expected value. Can you express this mathematically?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp19-final-Q8c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{7}{2}$$"
+        ],
+        "dependencies": [
+            "a977a7fds100-sp19-final-Q8c-h3"
+        ],
+        "title": "Expected Value of the Estimator",
+        "text": "Calculate the expected value of the maximum outcome when rolling a fair 6-sided die once.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp19-final-Q8c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{35}{12}$$"
+        ],
+        "dependencies": [
+            "a977a7fds100-sp19-final-Q8c-h4"
+        ],
+        "title": "Variance Formula",
+        "text": "Use the formula for variance: E[(X-E[X])**2], where X is the estimator. Substitute the expected value you calculated.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp19-final-Q8c-h6",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-sp19-final-Q8c-h5"
+        ],
+        "title": "Multiple Choice Verification",
+        "text": "Verify your calculated variance with the given multiple choice options.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

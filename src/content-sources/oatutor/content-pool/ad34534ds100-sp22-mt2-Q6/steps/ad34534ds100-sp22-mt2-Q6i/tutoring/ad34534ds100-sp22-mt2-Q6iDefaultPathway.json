@@ -1,0 +1,49 @@
+[
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Bootstrap Code",
+        "text": "The bootstrap method involves resampling with replacement from the dataset. The second argument in the `sample()` function specifies whether sampling is done with replacement.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6i-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6i-h1"
+        ],
+        "title": "Sampling with Replacement",
+        "text": "In the context of bootstrapping, we typically sample with replacement to create new datasets. This allows us to estimate the sampling distribution of a statistic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6i-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$replace=True$$"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6i-h2"
+        ],
+        "title": "Determine the Second Argument",
+        "text": "What should the second argument to `lunch_mat.sample()` be to ensure sampling with replacement?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "False",
+            "None",
+            "True",
+            "$$replace=False$$",
+            "$$replace=True$$"
+        ]
+    }
+]

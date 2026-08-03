@@ -1,0 +1,58 @@
+[
+    {
+        "id": "ade7df0ds100-sp25-final-Q3e,Q3ff-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Decision Thresholds",
+        "text": "The decision threshold in a logistic regression model determines the cutoff point for classifying an observation into one of two categories. By default, this threshold is often set at $$0.5$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp25-final-Q3e,Q3ff-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp25-final-Q3e,Q3ff-h1"
+        ],
+        "title": "Effect of Lowering the Threshold",
+        "text": "Lowering the decision threshold means that the model will classify more observations as 'Kendrick' because the requirement for the model output to be considered 'Kendrick' is reduced.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp25-final-Q3e,Q3ff-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp25-final-Q3e,Q3ff-h2"
+        ],
+        "title": "Recall and Thresholds",
+        "text": "Recall measures the proportion of actual positive cases (students who prefer Kendrick) that are correctly identified by the model. Lowering the threshold can increase recall because more true positives are likely to be captured.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp25-final-Q3e,Q3ff-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "ade7df0ds100-sp25-final-Q3e,Q3ff-h3"
+        ],
+        "title": "Analyzing Recall",
+        "text": "If the threshold is lowered from $$0.5$$ to $$0.3$$, will the recall increase, decrease, or stay the same?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Stay the same"
+        ]
+    }
+]

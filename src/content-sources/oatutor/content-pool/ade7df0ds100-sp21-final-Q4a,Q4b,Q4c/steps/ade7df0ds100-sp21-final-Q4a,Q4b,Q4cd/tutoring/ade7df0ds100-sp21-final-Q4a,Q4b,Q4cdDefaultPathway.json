@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ade7df0ds100-sp21-final-Q4a,Q4b,Q4cd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Code",
+        "text": "The code snippet $$`exp\\left(-\\left(time_{of,day}-12\\right)^2\\right)`$$ is used to create a feature encoding based on the time of day. It uses the exponential function to model the likelihood of calls around a specific time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q4a,Q4b,Q4cd-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q4a,Q4b,Q4cd-h1"
+        ],
+        "title": "Analyzing the Exponential Function",
+        "text": "The expression $$`-\\left(time_{of,day}-12\\right)^2`$$ is inside the exponential function. This creates a bell-shaped curve centered around $$12$$, which represents noon.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q4a,Q4b,Q4cd-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q4a,Q4b,Q4cd-h2"
+        ],
+        "title": "Effect of Squaring the Difference",
+        "text": "The term $$`\\left(time_{of,day}-12\\right)^2`$$ ensures that the values are symmetric around $$12$$. This means that times equally distant from noon will have the same feature encoding value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q4a,Q4b,Q4cd-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q4a,Q4b,Q4cd-h3"
+        ],
+        "title": "Evaluating the Code's Purpose",
+        "text": "Given the code $$`exp\\left(-\\left(time_{of,day}-12\\right)^2\\right)`$$, does it correctly model the likelihood of calls peaking around noon?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,15 @@
+{
+    "id": "a410fc9row9p2j",
+    "stepAnswer": [
+        "FALSE"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "$$(I-H)Y$$ is orthogonal to the column space of $$X$$",
+    "stepBody": "When making predictions, Kippa computes $$\\hat{Y}=X\\hat{\\theta}=X(X**{T}X)**{-1}X**{T}Y.$$ Let $$H=X(X**{T}X)**{-1}X**T$$ be the projection ('hat') matrix, so $$\\hat{Y}=HY.$$ Let $$I$$ be the identity matrix with the same shape as $$H.$$\\n\\nIs this true about hat matrix $$H?$$ Select all that apply.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "TRUE",
+        "FALSE"
+    ]
+}

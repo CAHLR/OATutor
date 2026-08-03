@@ -1,0 +1,75 @@
+[
+    {
+        "id": "ade7df0ds100-su20-mt2-Q8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Precision",
+        "text": "Precision is the ratio of true positive predictions to the total number of positive predictions (true positives + false positives).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su20-mt2-Q8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su20-mt2-Q8a-h1"
+        ],
+        "title": "Identify True Positives and False Positives",
+        "text": "For Model C, a prediction is positive (1) if the predicted probability is greater than or equal to $$0.75$$. Identify which observations meet this criterion and check their true labels.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su20-mt2-Q8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su20-mt2-Q8a-h2"
+        ],
+        "title": "Calculate True Positives",
+        "text": "How many observations have a predicted probability greater than or equal to $$0.75$$ and a true label of 1?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su20-mt2-Q8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su20-mt2-Q8a-h3"
+        ],
+        "title": "Calculate False Positives",
+        "text": "How many observations have a predicted probability greater than or equal to $$0.75$$ and a true label of 0?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su20-mt2-Q8a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su20-mt2-Q8a-h4"
+        ],
+        "title": "Compute Precision",
+        "text": "Use the formula for precision: true positives divided by the sum of true positives and false positives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

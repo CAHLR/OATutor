@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a91f150ds100-su20-final-Q4c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean-Centering",
+        "text": "Mean-centering involves subtracting the mean of each column from the respective column values, except for the intercept column. This process ensures that the mean of each column is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su20-final-Q4c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su20-final-Q4c-h1"
+        ],
+        "title": "Effect of Mean-Centering on Coefficients",
+        "text": "When you mean-center the data, the intercept term is not affected, but the other coefficients might change. Consider how this affects the relationship between the coefficients in the original and mean-centered models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su20-final-Q4c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su20-final-Q4c-h2"
+        ],
+        "title": "Comparing Coefficients",
+        "text": "The coefficients of the mean-centered model, \\(\\hat{\\gamma}\\), are related to the coefficients of the original model, \\(\\hat{\\beta}\\), by a transformation that involves the means of the original predictors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su20-final-Q4c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a91f150ds100-su20-final-Q4c-h3"
+        ],
+        "title": "Relationship Between \\(\\hat{\\beta}_2\\) and \\(\\hat{\\gamma}_2\\)",
+        "text": "Given that both \\(\\mathbb{X}\\) and \\(\\tilde{\\mathbb{X}}\\) have full column rank, what can we say about the relationship between \\(\\hat{\\beta}_2\\) and \\(\\hat{\\gamma}_2\\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

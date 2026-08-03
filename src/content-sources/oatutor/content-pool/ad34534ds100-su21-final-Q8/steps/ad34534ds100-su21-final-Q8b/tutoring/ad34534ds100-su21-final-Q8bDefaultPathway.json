@@ -1,0 +1,79 @@
+[
+    {
+        "id": "ad34534ds100-su21-final-Q8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding transforms categorical variables into a form that could be provided to ML algorithms to do a better job in prediction. Each category value is converted into a new categorical column and assigned a $$1$$ or $$0$$ (True/False).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su21-final-Q8b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-su21-final-Q8b-h1"
+        ],
+        "title": "Column Rank of One-Hot Encoded Matrix",
+        "text": "A matrix is full column rank if its columns are linearly independent. For a one-hot encoded matrix, this means that no column can be expressed as a linear combination of the others.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su21-final-Q8b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "ad34534ds100-su21-final-Q8b-h2"
+        ],
+        "title": "Analyzing the Columns",
+        "text": "How many unique values are there in the 'sex' column?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su21-final-Q8b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "ad34534ds100-su21-final-Q8b-h3"
+        ],
+        "title": "Understanding Linear Independence",
+        "text": "If there are $$2$$ unique values in the 'sex' column, how many columns will the one-hot encoded matrix have?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su21-final-Q8b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "ad34534ds100-su21-final-Q8b-h4"
+        ],
+        "title": "Checking for Full Column Rank",
+        "text": "For the one-hot encoded matrix with $$2$$ columns, are the columns linearly independent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

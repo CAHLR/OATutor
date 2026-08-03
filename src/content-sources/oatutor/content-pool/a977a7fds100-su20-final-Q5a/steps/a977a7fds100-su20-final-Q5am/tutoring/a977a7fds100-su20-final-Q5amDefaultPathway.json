@@ -1,0 +1,74 @@
+[
+    {
+        "id": "a977a7fds100-su20-final-Q5am-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Ridge Regression",
+        "text": "Ridge regression is a type of linear regression that includes a regularization term. This term helps prevent overfitting by penalizing large coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su20-final-Q5am-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su20-final-Q5am-h1"
+        ],
+        "title": "Effect of Increasing Lambda",
+        "text": "Increasing the regularization parameter lambda in ridge regression affects the estimated parameters. Consider how the penalty term in the loss function changes with lambda.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su20-final-Q5am-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The second term increases leading to smaller values of theta."
+        ],
+        "dependencies": [
+            "a977a7fds100-su20-final-Q5am-h2"
+        ],
+        "title": "Analyzing the Loss Function",
+        "text": "The loss function in ridge regression is given by: loss=sum{i extbackslash=1}{n}{(Y_i-(X_i* heta))**2}+ extbackslash lambda*sum{j $$extbackslash=1}{p}{$$ $${heta_j}^2$$.} How does increasing lambda affect the second term?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su20-final-Q5am-h4",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su20-final-Q5am-h3"
+        ],
+        "title": "Impact on Estimated Parameters",
+        "text": "As lambda increases, the penalty on large coefficients becomes stronger. This typically results in smaller estimated coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su20-final-Q5am-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a977a7fds100-su20-final-Q5am-h4"
+        ],
+        "title": "Conclusion on Parameter Change",
+        "text": "Given the effect of lambda on the penalty term, does the estimated parameter theta change as lambda increases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

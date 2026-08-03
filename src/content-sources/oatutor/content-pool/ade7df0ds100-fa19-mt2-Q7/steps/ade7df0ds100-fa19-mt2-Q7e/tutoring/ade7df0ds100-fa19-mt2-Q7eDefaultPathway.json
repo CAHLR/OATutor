@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Precision",
+        "text": "Precision is the ratio of true positive predictions to the total number of positive predictions (true positives + false positives).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7e-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-mt2-Q7e-h1"
+        ],
+        "title": "Effect of Increasing Threshold",
+        "text": "Increasing the threshold generally means that fewer instances are classified as positive. This can affect precision, recall, and accuracy.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7e-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-mt2-Q7e-h2"
+        ],
+        "title": "Precision and False Positives",
+        "text": "If the threshold is increased, the number of false positives may decrease, potentially increasing precision.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7e-h4",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-mt2-Q7e-h3"
+        ],
+        "title": "Precision and True Positives",
+        "text": "However, increasing the threshold might also decrease the number of true positives, which can decrease precision.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7e-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Precision decreases"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa19-mt2-Q7e-h4"
+        ],
+        "title": "Precision Calculation",
+        "text": "Consider the formula for precision: $$precision=true$$ positives/(true $$positives+false$$ positives). If true positives decrease more than false positives, what happens to precision?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Precision increases",
+            "Precision decreases",
+            "Precision stays the same"
+        ]
+    }
+]

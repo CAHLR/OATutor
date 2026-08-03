@@ -1,0 +1,48 @@
+[
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Dataset",
+        "text": "The dataset contains columns for 'name', 'day', 'foods', 'servings', and $$'total_{calories'}$$. Each row represents a student's lunch data for a specific day.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6k-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6k-h1"
+        ],
+        "title": "Identifying the Target Variable",
+        "text": "The target variable for the bootstrap process is the one we want to predict or estimate. In this case, it is related to the calories consumed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6k-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "calories"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6k-h2"
+        ],
+        "title": "Selecting the Target Column",
+        "text": "Which column in the dataset represents the target variable for the bootstrap process?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "calories",
+            "$$calories_1 d_{ago}$$",
+            "$$calories_2 d_{ago}$$",
+            "$$[calories_1 d_{ago},calories_2 d_{ago}]$$",
+            "person"
+        ]
+    }
+]

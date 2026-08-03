@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6w-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LASSO Regularization",
+        "text": "LASSO (Least Absolute Shrinkage and Selection Operator) is a type of linear regression that uses shrinkage. Shrinkage is where data values are shrunk towards a central point, like the mean. The LASSO procedure encourages simple, sparse models (i.e., models with fewer parameters).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6w-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6w-h1"
+        ],
+        "title": "Effect of LASSO on Model Complexity",
+        "text": "LASSO regularization can reduce the complexity of a model by setting some coefficients to zero, effectively selecting a simpler model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6w-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6w-h2"
+        ],
+        "title": "Impact on MSE on Held-out Test Data",
+        "text": "Consider how reducing model complexity with LASSO might affect the model's performance on unseen data. A simpler model might generalize better, potentially reducing the MSE on held-out test data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6w-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6w-h3"
+        ],
+        "title": "Possible Effects on MSE",
+        "text": "When using LASSO regularization, what are the possible effects on the MSE of held-out test data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    }
+]

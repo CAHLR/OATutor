@@ -1,0 +1,60 @@
+[
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q6h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE on Test Data",
+        "text": "Mean Squared Error (MSE) on held-out test data measures how well the model generalizes to unseen data. Consider how removing a feature might affect this generalization.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q6h-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa25-mt2-Q6h-h1"
+        ],
+        "title": "Effect of Removing a Feature",
+        "text": "Removing a feature can reduce model complexity, which might decrease variance but increase bias. Consider how these changes might affect the MSE on test data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q6h-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa25-mt2-Q6h-h2"
+        ],
+        "title": "Bias-Variance Tradeoff",
+        "text": "The bias-variance tradeoff is crucial in understanding the effects on MSE. Removing a feature might increase bias but decrease variance. How does this tradeoff affect the MSE on test data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q6h-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase and Decrease"
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa25-mt2-Q6h-h3"
+        ],
+        "title": "Analyzing Effects on MSE",
+        "text": "Consider both possible outcomes: Removing a feature might lead to an increase in bias, potentially increasing MSE, but it might also reduce variance, potentially decreasing MSE. What are the possible effects?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase only",
+            "Decrease only",
+            "Increase and Decrease",
+            "Neither Increase nor Decrease",
+            "Cannot be determined"
+        ]
+    }
+]

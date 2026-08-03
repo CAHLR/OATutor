@@ -1,0 +1,82 @@
+[
+    {
+        "id": "ade7df0ds100-su25-final-Q3a,Q3b,Q3ce-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Logistic Regression Model",
+        "text": "The logistic regression model is given by $$P(y=1|x)=\\operatorname{\\sigma}\\left(\\theta_1 x_1+\\theta_2 x_2\\right)$$. Here, $$\\theta_1=1$$ and $$\\theta_2=2$$. You need to substitute the values of likes and response time into this equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su25-final-Q3a,Q3b,Q3ce-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su25-final-Q3a,Q3b,Q3ce-h1"
+        ],
+        "title": "Calculate the Linear Combination",
+        "text": "Substitute $$likes=3$$ and $$response_{time}=34$$ into the equation $$\\theta_1 x_1+\\theta_2 x_2$$. What do you get?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su25-final-Q3a,Q3b,Q3ce-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$71$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su25-final-Q3a,Q3b,Q3ce-h2"
+        ],
+        "title": "Compute the Linear Combination",
+        "text": "Calculate $$1\\times3+2\\times34$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su25-final-Q3a,Q3b,Q3ce-h4",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su25-final-Q3a,Q3b,Q3ce-h3"
+        ],
+        "title": "Calculate the Probability",
+        "text": "The probability that a reply was made by an Ed bot is given by \u03c3(71).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su25-final-Q3a,Q3b,Q3ce-h5",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su25-final-Q3a,Q3b,Q3ce-h4"
+        ],
+        "title": "Calculate the Odds",
+        "text": "The odds are given by $$e^{71}$$. However, you need the odds for a human reply, which is the inverse.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su25-final-Q3a,Q3b,Q3ce-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$e^{-71}$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su25-final-Q3a,Q3b,Q3ce-h5"
+        ],
+        "title": "Compute the Odds for a Human Reply",
+        "text": "Calculate $$e^{\\left(-71\\right)}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

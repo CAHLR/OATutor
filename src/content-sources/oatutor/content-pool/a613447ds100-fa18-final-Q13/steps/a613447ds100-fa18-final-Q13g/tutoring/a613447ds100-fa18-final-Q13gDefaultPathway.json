@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a613447ds100-fa18-final-Q13g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding $h(x)$",
+        "text": "In the context of the bias-variance tradeoff, $h(x)$ represents the true function that we are trying to estimate. It is considered fixed because it does not change with different samples or models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa18-final-Q13g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa18-final-Q13g-h1"
+        ],
+        "title": "Fixed or Variable?",
+        "text": "When we say something is 'fixed', it means that it does not change with different samples or models. Consider whether $h(x)$ changes when you use different datasets or models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa18-final-Q13g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a613447ds100-fa18-final-Q13g-h2"
+        ],
+        "title": "Is $h(x)$ Fixed?",
+        "text": "Based on the definition of $h(x)$ as the true function, do we treat it as fixed?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

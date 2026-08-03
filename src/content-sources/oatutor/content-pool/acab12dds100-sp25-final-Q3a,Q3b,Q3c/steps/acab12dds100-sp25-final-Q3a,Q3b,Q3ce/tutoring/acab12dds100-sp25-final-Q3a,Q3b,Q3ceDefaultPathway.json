@@ -1,0 +1,74 @@
+[
+    {
+        "id": "acab12dds100-sp25-final-Q3a,Q3b,Q3ce-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Null Hypothesis",
+        "text": "The null hypothesis states that the mean listening times for Kendrick and Drake are equal, i.e., $$\\mu_K=\\mu_D$$. This implies that the difference in means, delta, is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp25-final-Q3a,Q3b,Q3ce-h2",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-sp25-final-Q3a,Q3b,Q3ce-h1"
+        ],
+        "title": "Interpreting the Confidence Interval",
+        "text": "A 95% confidence interval provides a range of values within which we expect the true difference in means, delta, to lie with 95% confidence. If zero is not within this interval, it suggests that there is a significant difference between the means.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp25-final-Q3a,Q3b,Q3ce-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\delta_{obs}=K-D$$"
+        ],
+        "dependencies": [
+            "acab12dds100-sp25-final-Q3a,Q3b,Q3ce-h2"
+        ],
+        "title": "Calculating the Observed Difference",
+        "text": "To find the observed difference in sample means, calculate $$\\delta_{obs}=K-D$$, where K is the average listening time for Kendrick fans and D is the average listening time for Drake fans.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp25-final-Q3a,Q3b,Q3ce-h4",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-sp25-final-Q3a,Q3b,Q3ce-h3"
+        ],
+        "title": "Bootstrap Distribution",
+        "text": "The bootstrap distribution is created by repeatedly resampling the data with replacement and calculating the difference in means for each resample. This distribution helps estimate the variability of the observed difference.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp25-final-Q3a,Q3b,Q3ce-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "We reject the null hypothesis."
+        ],
+        "dependencies": [
+            "acab12dds100-sp25-final-Q3a,Q3b,Q3ce-h4"
+        ],
+        "title": "Evaluating the Null Hypothesis",
+        "text": "If the 95% confidence interval for the difference in means does not include zero, what does this imply about the null hypothesis?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "We reject the null hypothesis.",
+            "We fail to reject the null hypothesis."
+        ]
+    }
+]

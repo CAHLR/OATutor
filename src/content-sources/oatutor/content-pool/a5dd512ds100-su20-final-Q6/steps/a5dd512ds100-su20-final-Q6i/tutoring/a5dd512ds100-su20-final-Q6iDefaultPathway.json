@@ -1,0 +1,61 @@
+[
+    {
+        "id": "a5dd512ds100-su20-final-Q6i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "The DataFrame 'consoles' contains information about video game consoles, including their manufacturer, generation, type, year, and sales.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-final-Q6i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su20-final-Q6i-h1"
+        ],
+        "title": "Identifying the Task",
+        "text": "We need to find the latest generation a specific company participated in. This involves filtering the DataFrame based on the manufacturer and then finding the maximum generation value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-final-Q6i-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su20-final-Q6i-h2"
+        ],
+        "title": "Filtering the DataFrame",
+        "text": "To filter the DataFrame for a specific manufacturer, we use a condition that checks if the 'manufacturer' column matches the given company name.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-final-Q6i-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$consoles[\"manufacturer\"]==company$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su20-final-Q6i-h3"
+        ],
+        "title": "Writing the Filter Condition",
+        "text": "Write the condition to filter the DataFrame for the given company.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$consoles[\"manufacturer\"]==company$$",
+            "$$consoles[\"generation\"]==company$$",
+            "consoles[\"manufacturer\"].isin(company)",
+            "$$consoles[\"manufacturer\"]==\"company\"$$",
+            "$$consoles[\"manufacturer\"]==company$$",
+            "$$consoles[consoles[\"manufacturer\"]==company]$$"
+        ]
+    }
+]

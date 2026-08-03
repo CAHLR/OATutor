@@ -1,0 +1,18 @@
+{
+    "id": "a272acfds100-su25-final-Q3dd",
+    "stepAnswer": [
+        "$$\\frac{8**{2}}{100**{2}+88**{2}+8**{2}}$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Justin would like to perform PCA analysis on the $$\\text{ed\\_replies}$$ dataset. He asks Hannah to provide him the necessary data. She first subsets the DataFrame to only the features using the following code:\\n$$\\texttt{ed\\_subset}$$ $$=$$ $$\\texttt{ed\\_replies[['length',}$$ $$\\texttt{'likes','response\\_time']]}$$\\nThen, Hannah randomly samples a number of rows of $$\\text{ed\\_subset}$$ and converts the resulting DataFrame into a matrix denoted by $$X$$\\nHannah performs SVD on $$X$$\\nRecall that in SVD, $$X$$ is decomposed into the product of $$3$$ matrices, denoted $$ \\cup , S$$ and $$V**{T}$$ (using the same naming convention as lecture). Hannah only sends Justin the complete matrix $$S$$ (the singular values).\\n$$S$$ is a $$3$$ by $$3$$ diagonal matrix with diagonal entries $$(100, 88, 8)$$\\nJustin now wants to produce a scree plot using $$S$$\\nCalculate the proportion of variance captured by the third principal component. You do not need to simplify algebra.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "$$\\frac{8}{100+88+8}$$",
+        "$$\\frac{8**{2}}{100**{2}+88**{2}+8**{2}}$$",
+        "$$\\frac{100**{2}}{100**{2}+88**{2}+8**{2}}$$",
+        "$$\\frac{8**{2}}{(100**{2}+88**{2}+8**{2})**{2}}$$",
+        "$$\\frac{100**{2}+88**{2}}{100**{2}+88**{2}+8**{2}}$$"
+    ]
+}

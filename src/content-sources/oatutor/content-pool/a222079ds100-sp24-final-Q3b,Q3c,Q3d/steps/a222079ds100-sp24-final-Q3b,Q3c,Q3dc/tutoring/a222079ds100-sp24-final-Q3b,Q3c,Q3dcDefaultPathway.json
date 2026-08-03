@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a222079ds100-sp24-final-Q3b,Q3c,Q3dc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "The DataFrame $$'song_{sample'}$$ contains columns for song title, artist, genre, and streams. The 'streams' column is the target variable, and 'genre' is used to create features.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp24-final-Q3b,Q3c,Q3dc-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-sp24-final-Q3b,Q3c,Q3dc-h1"
+        ],
+        "title": "Feature Engineering Process",
+        "text": "The code snippet creates binary features for each unique genre in the 'genre' column. This is a common technique called one-hot encoding.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp24-final-Q3b,Q3c,Q3dc-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-sp24-final-Q3b,Q3c,Q3dc-h2"
+        ],
+        "title": "Model Fitting",
+        "text": "The LinearRegression model is fitted without an intercept. This means the solution is unique if the feature matrix is full rank.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp24-final-Q3b,Q3c,Q3dc-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The feature matrix is full rank if all columns are linearly independent."
+        ],
+        "dependencies": [
+            "a222079ds100-sp24-final-Q3b,Q3c,Q3dc-h3"
+        ],
+        "title": "Checking Full Rank",
+        "text": "How can you determine if the feature matrix is full rank?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp24-final-Q3b,Q3c,Q3dc-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The feature matrix must be full rank for the OLS solution to be unique."
+        ],
+        "dependencies": [
+            "a222079ds100-sp24-final-Q3b,Q3c,Q3dc-h4"
+        ],
+        "title": "Unique Solution Condition",
+        "text": "What condition must be met for the OLS solution to be unique?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

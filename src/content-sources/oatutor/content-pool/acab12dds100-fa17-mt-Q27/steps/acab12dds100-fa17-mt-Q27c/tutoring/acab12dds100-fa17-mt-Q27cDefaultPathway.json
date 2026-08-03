@@ -1,0 +1,114 @@
+[
+    {
+        "id": "acab12dds100-fa17-mt-Q27c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrapping",
+        "text": "Bootstrapping involves resampling with replacement from the sample data to create 'new' samples. This helps in estimating the sampling distribution of a statistic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-mt-Q27c-h2",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa17-mt-Q27c-h1"
+        ],
+        "title": "Setting Up the Loop",
+        "text": "To create $$10000$$ bootstrapped estimates, you need a loop that runs $$10000$$ times. This loop will generate a new sample each time and calculate the statistic of interest.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-mt-Q27c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "theSample"
+        ],
+        "dependencies": [
+            "acab12dds100-fa17-mt-Q27c-h2"
+        ],
+        "title": "Filling in the Code: Part (i)",
+        "text": "What should be the first part of the code to start the bootstrapping process?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-mt-Q27c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$400$$"
+        ],
+        "dependencies": [
+            "acab12dds100-fa17-mt-Q27c-h3"
+        ],
+        "title": "Filling in the Code: Part (ii)",
+        "text": "What should be the sample size for each bootstrap sample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-mt-Q27c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "acab12dds100-fa17-mt-Q27c-h4"
+        ],
+        "title": "Filling in the Code: Part (iii)",
+        "text": "Should the sampling be done with or without replacement?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "False",
+            "TRUE",
+            "True"
+        ]
+    },
+    {
+        "id": "acab12dds100-fa17-mt-Q27c-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "median"
+        ],
+        "dependencies": [
+            "acab12dds100-fa17-mt-Q27c-h5"
+        ],
+        "title": "Filling in the Code: Part (iv)",
+        "text": "What function should be used to calculate the statistic of interest from the bootstrap sample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-mt-Q27c-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10000$$"
+        ],
+        "dependencies": [
+            "acab12dds100-fa17-mt-Q27c-h6"
+        ],
+        "title": "Filling in the Code: Part (v)",
+        "text": "How many times should the loop run to generate the bootstrapped estimates?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

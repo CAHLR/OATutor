@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a5dd512ds100-fa20-final-Q9l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Logistic Regression Model",
+        "text": "The logistic regression model is given by the equation $$P(Y=1|x)=\\operatorname{\\sigma}\\left(\\theta_1 hue+\\theta_2 abv\\right)$$. Here, sigma represents the sigmoid function, which is defined as $$sigma(z)=\\frac{1}{1+e^{\\left(-z\\right)}}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9l-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9l-h1"
+        ],
+        "title": "Calculate the Linear Combination",
+        "text": "Substitute the values of hue and abv into the linear combination $$\\theta_1 hue+\\theta_2 abv$$. Given that $$hat_{\\theta}=(2,1)T**$$, $$hue=\\frac{1}{4}$$, and $$abv=-2$$, calculate the expression $$2\\frac{1}{4}+1\\left(-2\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9l-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1.5$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9l-h2"
+        ],
+        "title": "Evaluate the Linear Combination",
+        "text": "Calculate the value of the linear combination $$2\\frac{1}{4}+1\\left(-2\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9l-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9l-h3"
+        ],
+        "title": "Apply the Sigmoid Function",
+        "text": "Now that you have the linear combination value, apply the sigmoid function to find the probability. Use the formula $$sigma(z)=\\frac{1}{1+e^{\\left(-z\\right)}}$$ where $$z$$ is the linear combination you calculated.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9l-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.1824$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9l-h4"
+        ],
+        "title": "Calculate the Probability",
+        "text": "Using the linear combination value $$z=-1.5$$, calculate the probability gamma using the sigmoid function: $$gamma=\\frac{1}{1+e^{\\left(-\\left(-1.5\\right)\\right)}}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9l-h6",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9l-h5"
+        ],
+        "title": "Select the Correct Probability",
+        "text": "Based on your calculation, select the correct probability value for gamma from the given choices.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a253306row4d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L2 Regularization",
+        "text": "L2 regularization, also known as Ridge Regression, adds a penalty equal to the square of the magnitude of coefficients to the loss function. This helps in reducing overfitting and ensures a unique solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row4d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row4d-h1"
+        ],
+        "title": "Why is the solution unique?",
+        "text": "The addition of the L2 penalty term makes the optimization problem strictly convex, which guarantees a unique solution for the coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row4d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a253306row4d-h2"
+        ],
+        "title": "Understanding the Model",
+        "text": "The model has $$30$$ parameters, including the intercept. With L2 regularization, the solution is unique because the optimization problem becomes strictly convex.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

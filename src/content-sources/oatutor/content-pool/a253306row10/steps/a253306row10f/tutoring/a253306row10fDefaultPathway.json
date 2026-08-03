@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a253306row10f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model given is $$hat{y}=\\operatorname{f_{\\theta}}\\left(x\\right)=\\theta_0+\\theta_1 x_1+\\theta_2 \\left(8x_1-1\\right)+\\theta_3 \\left(3x_2+5\\right)$$. Try to identify the structure of this model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row10f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row10f-h1"
+        ],
+        "title": "Linear Combination",
+        "text": "Notice that the model is a linear combination of the parameters $$\\theta_0$$, $$\\theta_1$$, $$\\theta_2$$, and $$\\theta_3$$. What does this imply about the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row10f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row10f-h2"
+        ],
+        "title": "Unique Solution Conditions",
+        "text": "For a linear model, when does a unique solution exist for the parameters that minimize the mean squared error (MSE)? Consider the conditions on the dataset.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

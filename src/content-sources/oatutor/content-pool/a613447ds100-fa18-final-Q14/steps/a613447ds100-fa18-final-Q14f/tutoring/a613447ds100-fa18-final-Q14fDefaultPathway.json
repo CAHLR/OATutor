@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a613447ds100-fa18-final-Q14f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plot",
+        "text": "The plot shows a U-shaped curve. This suggests that as the value of $$d$$ increases, the y-axis value decreases to a minimum point and then increases again. This is typical of a bias-variance tradeoff.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa18-final-Q14f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa18-final-Q14f-h1"
+        ],
+        "title": "Possible Y-Axis Labels",
+        "text": "Consider what the y-axis could represent in the context of machine learning models. Common metrics include training error, validation error, test error, bias, and variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa18-final-Q14f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa18-final-Q14f-h2"
+        ],
+        "title": "Validation Error",
+        "text": "The U-shaped curve is characteristic of validation error in relation to model complexity. As complexity increases, validation error typically decreases to a point and then increases due to overfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa18-final-Q14f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Validation Error"
+        ],
+        "dependencies": [
+            "a613447ds100-fa18-final-Q14f-h3"
+        ],
+        "title": "Identify the Y-Axis",
+        "text": "Based on the U-shaped curve, what is the most likely label for the y-axis?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Validation Error",
+            "Training Error",
+            "Bias",
+            "Variance"
+        ]
+    }
+]

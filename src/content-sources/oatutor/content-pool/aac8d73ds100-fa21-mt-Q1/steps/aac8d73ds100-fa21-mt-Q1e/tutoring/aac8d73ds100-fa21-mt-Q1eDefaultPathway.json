@@ -1,0 +1,122 @@
+[
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-hot Encoding",
+        "text": "One-hot encoding is a way of representing categorical data as binary vectors. Each category is represented by a vector with a single high (1) bit and all other bits low (0).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1e-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa21-mt-Q1e-h1"
+        ],
+        "title": "One-hot Encoding of Whole DNA Strings",
+        "text": "Consider the number of possible DNA strings of length $$3000$$. Each position in the string can be one of $$4$$ letters (T, G, C, A).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1e-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4^{3000}$$"
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa21-mt-Q1e-h2"
+        ],
+        "title": "Calculate Dimensions for Whole DNA Strings",
+        "text": "Calculate the number of possible DNA strings of length $$3000$$ using one-hot encoding.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1e-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "One-hot Encoding of Codons",
+        "text": "A codon is a sequence of $$3$$ DNA letters. How many possible codons are there?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1e-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$64$$"
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa21-mt-Q1e-h4"
+        ],
+        "title": "Calculate Dimensions for Codons",
+        "text": "Calculate the number of possible codons using one-hot encoding.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1e-h6",
+        "type": "hint",
+        "dependencies": [],
+        "title": "One-hot Encoding of 6-letter Combos",
+        "text": "Consider the number of possible 6-letter combinations in a DNA string. Each position can be one of $$4$$ letters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1e-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4^6$$"
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa21-mt-Q1e-h6"
+        ],
+        "title": "Calculate Dimensions for 6-letter Combos",
+        "text": "Calculate the number of possible 6-letter combinations using one-hot encoding.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1e-h8",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bags-of-words",
+        "text": "Bags-of-words encoding involves counting the frequency of each word (or $$n-gram)$$ in a document. In this case, consider the DNA string as a sequence of codons.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa21-mt-Q1e-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$64$$"
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa21-mt-Q1e-h8"
+        ],
+        "title": "Calculate Dimensions for Bags-of-words",
+        "text": "Calculate the number of dimensions for a bags-of-words encoding of codons.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

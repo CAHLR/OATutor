@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a825455ds100-sp24-final-Q10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding k-Medians",
+        "text": "In k-Medians clustering, the center of each cluster is the median of the points in that cluster, not the mean. This means that the center is the middle value when the points are sorted.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp24-final-Q10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-sp24-final-Q10a-h1"
+        ],
+        "title": "Initial Cluster Centers",
+        "text": "The initial cluster centers are given as $$2$$ and $$7$$. You need to assign each point to the nearest cluster center.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp24-final-Q10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-sp24-final-Q10a-h2"
+        ],
+        "title": "Assign Points to Clusters",
+        "text": "Calculate the distance of each point from the cluster centers $$2$$ and $$7$$. Assign each point to the cluster with the nearest center.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp24-final-Q10a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "1,1,1,4,3,2,1,1"
+        ],
+        "dependencies": [
+            "a825455ds100-sp24-final-Q10a-h3"
+        ],
+        "title": "Calculate Distances",
+        "text": "What is the distance of each point from the cluster center at 7?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp24-final-Q10a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "5,6,8"
+        ],
+        "dependencies": [
+            "a825455ds100-sp24-final-Q10a-h4"
+        ],
+        "title": "Assign to Cluster Centered at $$7$$",
+        "text": "Which points are closer to the cluster center at $$7$$ than to the center at 2?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

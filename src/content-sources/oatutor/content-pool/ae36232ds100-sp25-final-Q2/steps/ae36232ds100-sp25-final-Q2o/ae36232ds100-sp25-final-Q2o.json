@@ -1,0 +1,19 @@
+{
+    "id": "ae36232ds100-sp25-final-Q2o",
+    "stepAnswer": [
+        "$$0.5$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "As part of a market expansion, Raising Cane's tests a custom profit forecasting model for Berkeley, using a custom objective function to optimize predicted monthly profits.\\nThe objective function is defined as:\\n$$L(\\theta_0,\\theta_1)=\\frac{1}{n}\\sum_{i=1}**{n}(y_i-\\frac{\\log(\\theta_0)}{\\theta_0}-\\theta_1x_i+\\theta_{0}\\theta_1)$$\\nThe owner initializes $$\\theta_0**{(0)}=1$$ and $$\\theta_1**{(0)}=2,$$ and sets $$\\alpha=0.5.$$ Given this information, what is $$\\theta_0$$ after one batch gradient descent step?",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "$$0.5$$",
+    "choices": [
+        "$$0.5$$",
+        "$$1.5$$",
+        "$$1.0$$",
+        "$$0.0$$",
+        "$$2.0$$"
+    ]
+}

@@ -1,0 +1,58 @@
+[
+    {
+        "id": "ade7df0ds100-fa19-final-Q5d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Loss Functions",
+        "text": "The average squared loss is often used in regression problems, but it might not be suitable for classification tasks. Consider how the nature of classification differs from regression.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-final-Q5d-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-final-Q5d-h1"
+        ],
+        "title": "Properties of Cross-Entropy Loss",
+        "text": "Cross-entropy loss is particularly useful for classification problems because it measures the difference between two probability distributions. Think about how this property might be advantageous.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-final-Q5d-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-final-Q5d-h2"
+        ],
+        "title": "Gradient Descent and Loss Functions",
+        "text": "Consider how the choice of loss function affects the optimization process, particularly when using gradient descent. How might the properties of cross-entropy loss facilitate this process?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-final-Q5d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$Cross-entropy$$ loss is preferred because it provides a smoother gradient for optimization and better captures the probabilistic nature of classification."
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa19-final-Q5d-h3"
+        ],
+        "title": "Comparing Loss Functions",
+        "text": "Why might cross-entropy loss be preferred over squared loss for binary classification?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$Cross-entropy$$ loss is preferred because it provides a smoother gradient for optimization and better captures the probabilistic nature of classification.",
+            "FALSE",
+            "TRUE"
+        ]
+    }
+]

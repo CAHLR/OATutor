@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a253306row7b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Residual",
+        "text": "The residual is the difference between the actual observed value and the predicted value from the model. In this case, it's the difference between the actual mission duration and the predicted duration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row7b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row7b-h1"
+        ],
+        "title": "Calculate the Predicted Duration",
+        "text": "Use the weight vector \\([-3,0.25,2]**T\\) and the feature vector for the mission \\([1,20,3]**T\\) to calculate the predicted duration. The formula is: \\(\\hat{Y}=X'\\hat{\\theta}\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row7b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-3+0.25\\times20+2\\times3$$"
+        ],
+        "dependencies": [
+            "a253306row7b-h2"
+        ],
+        "title": "Compute the Dot Product",
+        "text": "Calculate the dot product of the weight vector \\([-3,0.25,2]**T\\) and the feature vector \\([1,20,3]**T\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row7b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a253306row7b-h3"
+        ],
+        "title": "Find the Predicted Duration",
+        "text": "Evaluate the expression \\(-3+0.25*20+2*3\\) to find the predicted duration in sols.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row7b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a253306row7b-h4"
+        ],
+        "title": "Calculate the Residual",
+        "text": "Subtract the predicted duration from the actual duration to find the residual: $$\\(5-4\\)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,74 @@
+[
+    {
+        "id": "ae36232ds100-sp25-final-Q2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Independence",
+        "text": "Linear independence of columns in a design matrix ensures that no column can be expressed as a linear combination of the others. This is crucial for the uniqueness of the OLS solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2a-h1"
+        ],
+        "title": "Number of Observations vs. Parameters",
+        "text": "In this problem, you have $$30$$ observations and $$30$$ parameters (including the intercept). Consider how this affects the linear independence of the design matrix columns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The columns are linearly independent if the rank of the matrix is $$30$$."
+        ],
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2a-h2"
+        ],
+        "title": "Checking for Linear Independence",
+        "text": "Given that there are $$30$$ observations and $$30$$ parameters, what can you infer about the linear independence of the design matrix columns?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2a-h3"
+        ],
+        "title": "OLS Solution Uniqueness",
+        "text": "The OLS solution is unique if the design matrix has full column rank, meaning all columns are linearly independent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2a-h4"
+        ],
+        "title": "Conclusion on OLS Solution",
+        "text": "Based on the linear independence of the design matrix columns, what can you conclude about the uniqueness of the OLS solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

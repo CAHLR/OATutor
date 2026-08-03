@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a613447ds100-sp24-final-Q6f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Risk",
+        "text": "Model risk is the sum of the model variance and the observational variance. It represents the total error in the model's predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp24-final-Q6f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp24-final-Q6f-h1"
+        ],
+        "title": "Effect of Adding Features",
+        "text": "Adding more features to a model can reduce bias but may increase variance. Consider how this affects the model risk.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp24-final-Q6f-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$14$$"
+        ],
+        "dependencies": [
+            "a613447ds100-sp24-final-Q6f-h2"
+        ],
+        "title": "Calculate New Model Variance",
+        "text": "Given the new model risk is $$17$$ and the observational variance remains $$3$$, calculate the new model variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp24-final-Q6f-h4",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp24-final-Q6f-h3"
+        ],
+        "title": "Reasonable Values for New Model",
+        "text": "With the new model variance calculated, consider how adding features might affect the bias and variance tradeoff.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

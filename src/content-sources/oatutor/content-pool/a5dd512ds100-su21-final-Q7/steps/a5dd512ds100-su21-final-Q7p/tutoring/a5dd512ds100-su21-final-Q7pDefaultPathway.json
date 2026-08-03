@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a5dd512ds100-su21-final-Q7p-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Decision Boundary",
+        "text": "Consider the shape of the decision boundary that a decision tree can create. Is it capable of forming circular or complex shapes?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q7p-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q7p-h1"
+        ],
+        "title": "Decision Tree Boundaries",
+        "text": "Decision trees create boundaries that are parallel to the axes. Can such boundaries form a circular shape?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q7p-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q7p-h2"
+        ],
+        "title": "Analyzing the Image",
+        "text": "Look at the distribution of the points. The orange points form a ring around the blue points. Can a decision tree create a boundary that separates these classes?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

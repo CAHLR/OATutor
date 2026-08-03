@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a5d4609ds100-su25-final-Q3dc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD and PCA",
+        "text": "In Singular Value Decomposition (SVD), a matrix X is decomposed into three matrices: U, S, and $$V^T$$. The matrix S contains the singular values, which are crucial for understanding the variance captured by each principal component in PCA.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su25-final-Q3dc-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su25-final-Q3dc-h1"
+        ],
+        "title": "Role of Singular Values",
+        "text": "The singular values in matrix S indicate the amount of variance captured by each principal component. Larger singular values mean more variance is captured.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su25-final-Q3dc-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su25-final-Q3dc-h2"
+        ],
+        "title": "Reconstruction with Principal Components",
+        "text": "When reconstructing a matrix using principal components, the number of components used determines the accuracy of the reconstruction. Using all components results in no reconstruction loss.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su25-final-Q3dc-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a5d4609ds100-su25-final-Q3dc-h3"
+        ],
+        "title": "Analyzing the Singular Values",
+        "text": "Given the singular values (100, $$88$$, 8), how many principal components are needed to capture all the variance in the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su25-final-Q3dc-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a5d4609ds100-su25-final-Q3dc-h4"
+        ],
+        "title": "Reconstruction Loss",
+        "text": "If all singular values are used in the reconstruction, what is the reconstruction loss?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

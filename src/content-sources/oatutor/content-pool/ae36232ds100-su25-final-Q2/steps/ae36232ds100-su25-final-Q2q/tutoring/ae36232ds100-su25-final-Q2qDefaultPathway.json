@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ae36232ds100-su25-final-Q2q-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross Validation",
+        "text": "In 7-fold cross-validation, the dataset is divided into $$7$$ parts. Each part is used as a validation set once, while the remaining $$6$$ parts are used for training.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2q-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2q-h1"
+        ],
+        "title": "Calculating Model Fits",
+        "text": "For each combination of hyperparameters, a model is trained using $$6$$ parts of the data and validated on the 7th part. This process is repeated for each fold.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2q-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2q-h2"
+        ],
+        "title": "Total Combinations",
+        "text": "Milena tests $$2$$ values of lambda and $$5$$ values of rho, resulting in $$2\\times5=10$$ combinations of hyperparameters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2q-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$60$$"
+        ],
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2q-h3"
+        ],
+        "title": "Calculating Total Model Fits",
+        "text": "Each data point is used in the training set $$6$$ times for each fold. With $$10$$ combinations of hyperparameters, how many times is each data point used to fit a model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

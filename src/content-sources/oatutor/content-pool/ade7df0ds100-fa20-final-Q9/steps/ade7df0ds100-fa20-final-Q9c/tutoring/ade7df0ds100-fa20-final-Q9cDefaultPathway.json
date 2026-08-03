@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ade7df0ds100-fa20-final-Q9c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Feature Weights",
+        "text": "In logistic regression, the magnitude of a feature's weight indicates its influence on the prediction. A higher magnitude means the feature has a stronger impact.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa20-final-Q9c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa20-final-Q9c-h1"
+        ],
+        "title": "Standardized Features",
+        "text": "Since the features are standardized, they have a mean of $$0$$ and a standard deviation of $$1$$. This allows us to directly compare the magnitudes of the weights.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa20-final-Q9c-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa20-final-Q9c-h2"
+        ],
+        "title": "Interpreting Weight Magnitudes",
+        "text": "If the abv feature has a higher magnitude weight than the hue feature, it suggests that abv is more influential in determining the wine type.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa20-final-Q9c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa20-final-Q9c-h3"
+        ],
+        "title": "Comparing Feature Influence",
+        "text": "Given that both features are standardized, which feature is likely to have a higher magnitude weight based on its influence on the wine type?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

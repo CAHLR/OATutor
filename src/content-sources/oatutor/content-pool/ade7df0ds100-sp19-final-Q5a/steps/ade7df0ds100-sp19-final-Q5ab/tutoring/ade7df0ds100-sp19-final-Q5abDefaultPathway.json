@@ -1,0 +1,58 @@
+[
+    {
+        "id": "ade7df0ds100-sp19-final-Q5ab-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logistic Regression",
+        "text": "In logistic regression, the probability of the binary outcome is modeled using the logistic function, which is also known as the sigmoid function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp19-final-Q5ab-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp19-final-Q5ab-h1"
+        ],
+        "title": "Logistic Function Properties",
+        "text": "The logistic function, denoted as sigma, is defined as $$sigma(x)=\\frac{1}{1+e^{\\left(-x\\right)}}$$. It maps any real-valued number into the $$(0,1)$$ interval.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp19-final-Q5ab-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp19-final-Q5ab-h2"
+        ],
+        "title": "Symmetry of the Logistic Function",
+        "text": "The logistic function is symmetric around the point $$x=0$$. This means that $$sigma(x)=1-sigma(-x)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp19-final-Q5ab-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Always"
+        ],
+        "dependencies": [
+            "ade7df0ds100-sp19-final-Q5ab-h3"
+        ],
+        "title": "Applying Symmetry to the Problem",
+        "text": "Given the symmetry property of the logistic function, can you determine when $$P(Y=1|X)=P(Y=0|-X)$$ holds true?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Always",
+            "Sometimes",
+            "Never"
+        ]
+    }
+]

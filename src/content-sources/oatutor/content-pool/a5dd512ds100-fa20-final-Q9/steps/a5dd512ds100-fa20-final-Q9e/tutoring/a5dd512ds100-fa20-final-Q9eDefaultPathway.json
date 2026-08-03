@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a5dd512ds100-fa20-final-Q9e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Entropy Loss",
+        "text": "Cross-entropy loss is used to measure the performance of a classification model whose output is a probability value between $$0$$ and $$1$$. It increases as the predicted probability diverges from the actual label.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9e-h1"
+        ],
+        "title": "Formula for Cross-Entropy Loss",
+        "text": "The formula for cross-entropy loss for a single data point is:\\n\\n- For $$y=1$$: $$-\\ln\\left(\u0177\\right)$$\\n- For $$y=0$$: $$-\\ln\\left(1-\u0177\\right)$$",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9e-h2"
+        ],
+        "title": "Calculate Individual Losses",
+        "text": "Calculate the cross-entropy loss for each row using the formula:\\n\\n- Row 1: $$y=0$$, $$\u0177=0.45$$\\n- Row 2: $$y=0$$, $$\u0177=0.19$$\\n- Row 3: $$y=1$$, $$\u0177=0.80$$",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9e-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\ln\\left(0.55\\right)$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9e-h3"
+        ],
+        "title": "Calculate Loss for Row $$1$$",
+        "text": "For Row $$1$$, where $$y=0$$ and $$\u0177=0.45$$, the loss is calculated as: $$-\\ln\\left(1-0.45\\right)$$. What is the value?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9e-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\ln\\left(0.81\\right)$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9e-h3"
+        ],
+        "title": "Calculate Loss for Row $$2$$",
+        "text": "For Row $$2$$, where $$y=0$$ and $$\u0177=0.19$$, the loss is calculated as: $$-\\ln\\left(1-0.19\\right)$$. What is the value?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9e-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\ln\\left(0.8\\right)$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9e-h3"
+        ],
+        "title": "Calculate Loss for Row $$3$$",
+        "text": "For Row $$3$$, where $$y=1$$ and $$\u0177=0.80$$, the loss is calculated as: $$-\\ln\\left(0.8\\right)$$. What is the value?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9e-h7",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9e-h6"
+        ],
+        "title": "Mean Cross-Entropy Loss",
+        "text": "The mean cross-entropy loss is the average of the individual losses. Add the losses from each row and divide by the number of rows.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

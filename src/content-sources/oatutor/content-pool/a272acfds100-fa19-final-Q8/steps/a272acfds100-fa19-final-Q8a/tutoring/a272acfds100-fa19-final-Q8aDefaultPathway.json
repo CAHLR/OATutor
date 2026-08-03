@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a272acfds100-fa19-final-Q8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Dimensions of $$V^T$$",
+        "text": "The matrix $$V^T$$ is part of the decomposition of X in PCA. It is important to understand the role of $$V^T$$ in this decomposition.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa19-final-Q8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-fa19-final-Q8a-h1"
+        ],
+        "title": "Role of $$V^T$$ in PCA",
+        "text": "In PCA, $$V^T$$ is the matrix of eigenvectors of the covariance matrix of X. It is used to transform the data into the principal component space.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa19-final-Q8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-fa19-final-Q8a-h2"
+        ],
+        "title": "Dimensions of $$V^T$$",
+        "text": "The dimensions of $$V^T$$ are determined by the number of features in the original data matrix X.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa19-final-Q8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a272acfds100-fa19-final-Q8a-h3"
+        ],
+        "title": "Determine the Number of Features",
+        "text": "How many features (columns) does the original matrix X have?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa19-final-Q8a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-fa19-final-Q8a-h4"
+        ],
+        "title": "Conclusion on Dimensions of $$V^T$$",
+        "text": "Since the original matrix X has $$3$$ features, the dimensions of $$V^T$$ will be $$3$$ by $$3$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

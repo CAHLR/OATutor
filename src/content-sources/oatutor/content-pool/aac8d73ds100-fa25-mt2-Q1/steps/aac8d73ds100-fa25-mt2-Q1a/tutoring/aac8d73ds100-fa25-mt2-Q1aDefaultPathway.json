@@ -1,0 +1,82 @@
+[
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross Validation",
+        "text": "In 8-fold cross-validation, the dataset is divided into $$8$$ parts. For each fold, one part is used as the validation set, and the remaining $$7$$ parts are used for training.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa25-mt2-Q1a-h1"
+        ],
+        "title": "Hyperparameter Tuning",
+        "text": "When tuning a hyperparameter, you test multiple values to find the best one. In this case, you are testing $$11$$ different values of the hyperparameter.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$11$$"
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa25-mt2-Q1a-h2"
+        ],
+        "title": "Calculating Total Models",
+        "text": "For each fold in the cross-validation, you need to fit a model for each hyperparameter value. How many models do you fit per fold?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8\\times11$$"
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa25-mt2-Q1a-h3"
+        ],
+        "title": "Total Models Across All Folds",
+        "text": "If you fit $$11$$ models per fold, and there are $$8$$ folds, how many models do you fit in total?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q1a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$8\\times11$$"
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa25-mt2-Q1a-h4"
+        ],
+        "title": "Final Answer",
+        "text": "The total number of models you need to fit is the product of the number of folds and the number of hyperparameter values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$8\\times11$$",
+            "$$1\\left(3+1\\right)\\times11$$",
+            "$$11\\left(3+1\\right) \\left(8-1\\right)$$",
+            "$$8\\left(3+1\\right)\\times11$$",
+            "$$11\\left(8-1\\right)$$"
+        ]
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "id": "ab27becrow14c-h10",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Question Mark Is a Quantifier",
+        "text": "In regex, ? does not automatically mean a literal question mark. It makes the previous token optional, meaning it appears zero or one time.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab27becrow14c-h11",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "`\\?`"
+        ],
+        "dependencies": [
+            "ab27becrow14c-h10"
+        ],
+        "title": "Literal Question Mark",
+        "text": "Which escape sequence would match a literal question mark?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "`\\?`",
+            "`\\*`",
+            "`\\+`",
+            "`\\s`"
+        ]
+    },
+    {
+        "id": "ab27becrow14c-h12",
+        "type": "hint",
+        "dependencies": [
+            "ab27becrow14c-h11"
+        ],
+        "title": "Apply 2023?",
+        "text": "The pattern r\"2023?\" means $$202$$ followed by zero or one $$3$$. In the string, it matches $$2023$$, but it does not include the literal question mark after $$2023$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

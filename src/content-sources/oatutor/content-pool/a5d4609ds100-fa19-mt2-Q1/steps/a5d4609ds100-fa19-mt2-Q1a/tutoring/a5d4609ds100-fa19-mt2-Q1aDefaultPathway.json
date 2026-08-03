@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a5d4609ds100-fa19-mt2-Q1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD",
+        "text": "The Singular Value Decomposition (SVD) of a matrix X is given by X $$=$$ $$ \\cup {SigmaV}^T$$. Here, U and V are orthogonal matrices, and \u03a3 is a diagonal matrix containing the singular values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa19-mt2-Q1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-fa19-mt2-Q1a-h1"
+        ],
+        "title": "Principal Component Matrix",
+        "text": "The principal component matrix P is obtained by multiplying the matrix U by the diagonal matrix \u03a3.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa19-mt2-Q1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-fa19-mt2-Q1a-h2"
+        ],
+        "title": "Expression for P",
+        "text": "The expression for the principal component matrix P is P $$=$$ U\u03a3.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa19-mt2-Q1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "U*\u03a3"
+        ],
+        "dependencies": [
+            "a5d4609ds100-fa19-mt2-Q1a-h3"
+        ],
+        "title": "Calculate P",
+        "text": "Using the expression for P, calculate the principal component matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

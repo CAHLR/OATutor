@@ -1,0 +1,60 @@
+[
+    {
+        "id": "ad34534ds100-fa25-mt2-Q6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "Model variance refers to how much the predictions of a model will change if we use a different training dataset. Adding a new feature can affect this variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q6b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q6b-h1"
+        ],
+        "title": "Effect of Adding Features",
+        "text": "When you add a new feature to a model, especially a polynomial feature like the square of an existing feature, it can increase the model's complexity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q6b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q6b-h2"
+        ],
+        "title": "Complexity and Variance",
+        "text": "Increasing the complexity of a model by adding features generally increases the model variance. This is because the model can fit the training data more closely, but may not generalize well to new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q6b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase only"
+        ],
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q6b-h3"
+        ],
+        "title": "Determine the Effect on Model Variance",
+        "text": "Given that adding a new feature increases model complexity, what is the likely effect on model variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase only",
+            "Decrease only",
+            "Increase and Decrease",
+            "Neither Increase nor Decrease",
+            "Cannot be determined"
+        ]
+    }
+]

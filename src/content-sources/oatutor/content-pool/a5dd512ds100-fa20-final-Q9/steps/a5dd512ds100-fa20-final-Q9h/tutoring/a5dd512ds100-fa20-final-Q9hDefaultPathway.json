@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a5dd512ds100-fa20-final-Q9h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Logistic Function",
+        "text": "The logistic function is defined as \\( \\sigma(z) $$=$$ \\frac{1}{1+e**{-z}} \\). In this problem, \\( $$z$$ $$=$$ $$\\theta_1$$ \\cdot \\text{hue} + $$\\theta_2$$ \\cdot \\text{abv} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9h-h1"
+        ],
+        "title": "Calculate the Linear Combination",
+        "text": "Substitute the given values into the linear combination: \\( $$z$$ $$=$$ $$2$$ \\cdot \\frac{1}{4} + $$1$$ \\cdot $$(-2)$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9h-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1.5$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9h-h2"
+        ],
+        "title": "Compute the Linear Combination",
+        "text": "What is the value of \\( $$z$$ \\) when you substitute the given values?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9h-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9h-h3"
+        ],
+        "title": "Apply the Logistic Function",
+        "text": "Now that you have \\( $$z$$ $$=$$ $$-1.5$$ \\), apply the logistic function: \\( \\sigma(z) $$=$$ \\frac{1}{1+e**{-(-1.5)}} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9h-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.1824$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9h-h4"
+        ],
+        "title": "Calculate the Probability",
+        "text": "Calculate \\( $$\\sigma(-1.5)$$ \\) to find the probability that Billywine is a type $$1$$ wine.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa20-final-Q9h-h6",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa20-final-Q9h-h5"
+        ],
+        "title": "Select the Correct Probability",
+        "text": "Based on your calculation, which of the given options correctly represents the probability that Billywine is a type $$1$$ wine?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

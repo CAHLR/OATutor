@@ -1,0 +1,87 @@
+[
+    {
+        "id": "ade7df0ds100-fa20-final-Q9g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Logistic Regression Model",
+        "text": "In logistic regression, the odds of an event occurring is given by the exponential of the linear combination of the features and their respective coefficients. In this case, the odds that a wine is of type $$1$$ is given by the exponential of the linear combination of hue and abv with their coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa20-final-Q9g-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa20-final-Q9g-h1"
+        ],
+        "title": "Calculate the Linear Combination",
+        "text": "To find the linear combination, substitute the values of hue and abv into the equation with the given coefficients: $$2hue+1abv$$. What do you get?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa20-final-Q9g-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2\\frac{1}{4}+1\\left(-2\\right)$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa20-final-Q9g-h2"
+        ],
+        "title": "Substitute the Values",
+        "text": "Substitute $$hue=\\frac{1}{4}$$ and $$abv=-2$$ into the equation $$2hue+1abv$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa20-final-Q9g-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-3}{2}$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa20-final-Q9g-h3"
+        ],
+        "title": "Simplify the Expression",
+        "text": "Simplify the expression $$2\\frac{1}{4}+1\\left(-2\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa20-final-Q9g-h5",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa20-final-Q9g-h4"
+        ],
+        "title": "Calculate the Odds",
+        "text": "The odds, beta, is the exponential of the linear combination. Use the simplified expression to find beta.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa20-final-Q9g-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$e^{\\left(-\\frac{3}{2}\\right)}$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa20-final-Q9g-h5"
+        ],
+        "title": "Find the Exponential",
+        "text": "Calculate e to the power of the simplified expression.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

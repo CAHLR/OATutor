@@ -1,0 +1,62 @@
+[
+    {
+        "id": "a222079ds100-fa21-mt-Q1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-hot Encoding",
+        "text": "One-hot encoding is a method of representing categorical data as binary vectors. Each category is represented by a vector with a single high (1) bit and all other bits low (0).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculating Dimensions for One-hot Encoding",
+        "text": "To calculate the dimensions for one-hot encoding, consider the number of unique categories you need to represent. For DNA strings, each letter (T, G, C, A) is a category.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [],
+        "title": "Determine the Number of Unique Categories",
+        "text": "How many unique categories (letters) are there in a DNA string?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4^{3000}$$"
+        ],
+        "dependencies": [],
+        "title": "Calculate the Total Number of Dimensions",
+        "text": "If each DNA string has $$3000$$ letters and each letter can be one of $$4$$ categories, how many dimensions will the one-hot encoded vector have?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1b-h5",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Exponential Growth",
+        "text": "The number of dimensions grows exponentially with the length of the DNA string when using one-hot encoding. This is because each position in the string can independently be one of $$4$$ categories.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

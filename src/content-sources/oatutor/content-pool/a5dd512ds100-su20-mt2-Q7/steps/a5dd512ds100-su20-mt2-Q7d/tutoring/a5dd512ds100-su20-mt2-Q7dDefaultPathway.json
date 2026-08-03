@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a5dd512ds100-su20-mt2-Q7d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Separability",
+        "text": "Linear separability means that you can draw a straight line (in two dimensions) that separates the data points of different classes without any errors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-mt2-Q7d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su20-mt2-Q7d-h1"
+        ],
+        "title": "Analyzing the Scatter Plot",
+        "text": "Look at the scatter plot. Are there two distinct groups of points that can be separated by a straight line?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-mt2-Q7d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su20-mt2-Q7d-h2"
+        ],
+        "title": "Identifying Linear Separability",
+        "text": "Based on the scatter plot, can you draw a straight line that separates the points with $$y=0$$ from those with $$y=1$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No",
+            "Impossible to tell"
+        ]
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a91f150ds100-su21-final-Q4s-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "When the bias of a model decreases, it means the model is fitting the training data more closely. However, this can have implications on the variance of the model. Consider how bias and variance are related in the context of model complexity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4s-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4s-h1"
+        ],
+        "title": "Bias-Variance Tradeoff",
+        "text": "The bias-variance tradeoff is a fundamental concept in machine learning. As bias decreases, variance often increases, and vice versa. Think about how this tradeoff might affect the observational variance when bias decreases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su21-final-Q4s-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The variance is likely to increase."
+        ],
+        "dependencies": [
+            "a91f150ds100-su21-final-Q4s-h2"
+        ],
+        "title": "Impact on Variance",
+        "text": "If the model bias decreases, what is the likely impact on the variance of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The variance decreases",
+            "The variance increases",
+            "The variance is likely to increase.",
+            "The variance remains the same"
+        ]
+    }
+]

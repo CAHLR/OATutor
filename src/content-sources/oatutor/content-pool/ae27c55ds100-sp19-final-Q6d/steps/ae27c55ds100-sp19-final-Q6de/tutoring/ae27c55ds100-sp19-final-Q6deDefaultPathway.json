@@ -1,0 +1,69 @@
+[
+    {
+        "id": "ae27c55ds100-sp19-final-Q6de-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrapping",
+        "text": "Bootstrapping is a statistical method that involves resampling with replacement from a dataset to create many simulated samples. This technique is often used to estimate the sampling distribution of a statistic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-sp19-final-Q6de-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-sp19-final-Q6de-h1"
+        ],
+        "title": "Why Use Bootstrapping?",
+        "text": "Bootstrapping is useful when the theoretical distribution of a statistic is complex or unknown. It allows us to approximate the distribution by using the data itself.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-sp19-final-Q6de-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-sp19-final-Q6de-h2"
+        ],
+        "title": "Sample Size Consideration",
+        "text": "The sample size of $$500$$ trips on May $$1$$ is relatively large, which is beneficial for bootstrapping as it provides a good approximation of the population distribution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-sp19-final-Q6de-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-sp19-final-Q6de-h3"
+        ],
+        "title": "Comparing Two Means",
+        "text": "To compare the average trip distance on May $$1$$ with the average for all of $$2018$$, we can use bootstrapping to estimate the confidence interval for the difference between these two means.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-sp19-final-Q6de-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ae27c55ds100-sp19-final-Q6de-h4"
+        ],
+        "title": "Setting Up the Bootstrap",
+        "text": "To perform bootstrapping, repeatedly resample the May $$1$$ dataset and calculate the mean trip distance for each resample. Then, compare these means to the overall mean for $$2018$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

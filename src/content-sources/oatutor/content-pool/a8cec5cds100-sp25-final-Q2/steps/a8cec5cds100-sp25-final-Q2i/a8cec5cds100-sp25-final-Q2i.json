@@ -1,0 +1,19 @@
+{
+    "id": "a8cec5cds100-sp25-final-Q2i",
+    "stepAnswer": [
+        "Increasing $$\\lambda.$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "To reduce model complexity, the owner computes the optimal $$\\theta$$ by minimizing the following regularized loss function:\\n$$L(\\theta)=(||Y-X{\\theta}||_2)**{2}+\\lambda{g}(\\theta)$$\\nwhere $$g{\\left(\\theta\\right)}$$ is a non-constant function of $$\\theta$$ and $$\\lambda$$ is at least $$0.$$ If the magnitude of any $$\\theta_i$$ increases, $$g{\\left(\\theta\\right)}$$ will also increase.\\nWhich of the following options reduces model complexity?",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "Increasing $$\\lambda.$$",
+    "choices": [
+        "Decreasing $$\\lambda.$$",
+        "Increasing $$\\lambda.$$",
+        "Changing $$\\lambda$$ has no effect on model complexity.",
+        "Both increasing and decreasing $$\\lambda$$ reduce complexity.",
+        "The effect depends on the choice of $$\\text{g}(\\theta).$$"
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "id": "a5dd512ds100-su25-final-Q3a,Q3b,Q3cj",
+    "stepAnswer": [
+        "FALSE"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "It is possible for AUC-ROC to change after changing the threshold.",
+    "stepBody": "Justin fits a different classification model on the training data. He applies this model to a test set and gets the following results, one bullet per test point:\\n\u2022 true label $$1$$, prediction $$1$$, outputted probability of $$y=1$$ equal to $$0.88$$\\n\u2022 true label $$1$$, prediction $$0$$, outputted probability of $$y=1$$ equal to $$0.4$$\\n\u2022 true label $$1$$, prediction $$1$$, outputted probability of $$y=1$$ equal to $$0.75$$\\n\u2022 true label $$0$$, prediction $$0$$, outputted probability of $$y=1$$ equal to $$0.3$$\\n\u2022 true label $$0$$, prediction $$0$$, outputted probability of $$y=1$$ equal to $$0.54$$\\nSelect all statements below that are true.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "TRUE",
+        "FALSE"
+    ]
+}

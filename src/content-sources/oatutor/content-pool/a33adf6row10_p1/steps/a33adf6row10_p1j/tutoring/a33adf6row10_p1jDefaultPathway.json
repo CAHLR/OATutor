@@ -1,0 +1,56 @@
+[
+    {
+        "id": "a33adf6row10_p1j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Sampling Scheme",
+        "text": "In this sampling scheme, the TA selects one student from every group of seven students. How many groups of seven students can be formed from $$35$$ students?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a33adf6row10_p1j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a33adf6row10_p1j-h1"
+        ],
+        "title": "Calculating the Probability",
+        "text": "Once you know how many groups of seven there are, think about the probability of a student being selected from one group. What is the probability of being chosen from a group of seven?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a33adf6row10_p1j-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [],
+        "title": "Determine the Number of Groups",
+        "text": "Divide the total number of students by the group size: $$35$$ students divided by $$7$$ students per group.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a33adf6row10_p1j-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{7}$$"
+        ],
+        "dependencies": [
+            "a33adf6row10_p1j-h3"
+        ],
+        "title": "Calculate the Probability for One Group",
+        "text": "The probability of selecting one student from a group of seven is $$1$$ divided by $$7$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

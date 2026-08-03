@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a5d4609ds100-fa24-final-Q7j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA Components",
+        "text": "PCA involves transforming the data into a new coordinate system. The transformation is defined by the matrices U, S, and V. The matrix V contains the principal components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa24-final-Q7j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-fa24-final-Q7j-h1"
+        ],
+        "title": "Using the V Matrix",
+        "text": "The matrix V contains the principal components. To find the coordinates of a new data point in the PCA space, you need to multiply the data point by the V matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa24-final-Q7j-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-fa24-final-Q7j-h2"
+        ],
+        "title": "Data Point for Contestant D",
+        "text": "Contestant D has the data point (3, $$\\frac{8}{3}$$, 8/3). Use this data point to find the PCA coordinates by multiplying it with the V matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

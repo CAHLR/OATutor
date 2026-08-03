@@ -1,0 +1,61 @@
+[
+    {
+        "id": "ade7df0ds100-sp21-final-Q9f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding ROC Curves",
+        "text": "The ROC curve plots the True Positive Rate (TPR) against the False Positive Rate (FPR) for different threshold values. A model with a curve closer to the top-left corner indicates better performance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q9f-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q9f-h1"
+        ],
+        "title": "Interpreting the ROC Curves",
+        "text": "Look at the ROC curves for models A, B, and C. Which model's curve is closest to the top-left corner? This model will have the highest TPR for a given FPR.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q9f-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q9f-h2"
+        ],
+        "title": "Comparing Models",
+        "text": "Model C's ROC curve is closest to the top-left corner, followed by Model B, and then Model A. This means Model C has the best performance, followed by B, then A.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q9f-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$C>B>A$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q9f-h3"
+        ],
+        "title": "Ranking the Models",
+        "text": "Based on the ROC curves, rank the models from most to least preferred.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$C>B>A$$",
+            "$$B>A>C$$",
+            "$$B>C>A$$",
+            "$$C>A>B$$",
+            "$$C>B>A$$",
+            "Cannot be determined"
+        ]
+    }
+]

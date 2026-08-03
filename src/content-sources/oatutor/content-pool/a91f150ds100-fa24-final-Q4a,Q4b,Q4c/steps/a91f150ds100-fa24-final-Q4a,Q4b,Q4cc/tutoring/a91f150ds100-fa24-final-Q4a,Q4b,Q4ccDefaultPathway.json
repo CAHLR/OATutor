@@ -1,0 +1,79 @@
+[
+    {
+        "id": "a91f150ds100-fa24-final-Q4a,Q4b,Q4cc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Ridge Regression",
+        "text": "Ridge regression is a type of linear regression that includes a regularization term. This term is controlled by the hyper-parameter lambda (\u03bb).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa24-final-Q4a,Q4b,Q4cc-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-fa24-final-Q4a,Q4b,Q4cc-h1"
+        ],
+        "title": "Effect of Lambda on Ridge Regression",
+        "text": "When lambda (\u03bb) is set to $$0$$, ridge regression becomes equivalent to ordinary least squares regression, which always has a unique solution if the design matrix has full column rank.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa24-final-Q4a,Q4b,Q4cc-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-fa24-final-Q4a,Q4b,Q4cc-h2"
+        ],
+        "title": "Unique Solution in Linear Regression",
+        "text": "In linear regression, a unique solution exists if the design matrix has full column rank, meaning its columns are linearly independent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa24-final-Q4a,Q4b,Q4cc-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes if the columns are linearly independent."
+        ],
+        "dependencies": [
+            "a91f150ds100-fa24-final-Q4a,Q4b,Q4cc-h3"
+        ],
+        "title": "Checking Full Column Rank",
+        "text": "Does the design matrix in this problem have full column rank?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "No",
+            "Yes",
+            "Yes if the columns are linearly independent."
+        ]
+    },
+    {
+        "id": "a91f150ds100-fa24-final-Q4a,Q4b,Q4cc-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a91f150ds100-fa24-final-Q4a,Q4b,Q4cc-h4"
+        ],
+        "title": "Conclusion on Unique Solution",
+        "text": "Given that lambda (\u03bb) is $$0$$ and the design matrix has full column rank, does a unique solution exist?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

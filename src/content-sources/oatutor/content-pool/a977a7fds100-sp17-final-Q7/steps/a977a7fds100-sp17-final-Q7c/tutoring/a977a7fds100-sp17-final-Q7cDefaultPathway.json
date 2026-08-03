@@ -1,0 +1,55 @@
+[
+    {
+        "id": "a977a7fds100-sp17-final-Q7c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bernoulli Sampling",
+        "text": "Bernoulli sampling is a probabilistic method where each row in the table has a fixed probability of being included in the sample. This means that the number of rows in the sample can vary each time you run the query.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp17-final-Q7c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LIMIT Clause",
+        "text": "The LIMIT clause in SQL is used to specify the number of rows to return. It does not provide any probabilistic sampling and will always return the same number of rows if the same query is executed multiple times.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp17-final-Q7c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Bernoulli sampling"
+        ],
+        "dependencies": [
+            "a977a7fds100-sp17-final-Q7c-h1"
+        ],
+        "title": "Comparing Bernoulli Sampling and LIMIT",
+        "text": "Consider the differences between Bernoulli sampling and using a LIMIT clause. Which method provides more information about the total number of rows in the table?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Bernoulli sampling",
+            "LIMIT clause"
+        ]
+    },
+    {
+        "id": "a977a7fds100-sp17-final-Q7c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-sp17-final-Q7c-h3"
+        ],
+        "title": "Why Bernoulli Sampling Provides More Information",
+        "text": "Since Bernoulli sampling selects rows based on a probability, the number of rows returned can give an estimate of the total number of rows in the table. In contrast, the LIMIT clause simply returns a fixed number of rows, providing no information about the total number of rows.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

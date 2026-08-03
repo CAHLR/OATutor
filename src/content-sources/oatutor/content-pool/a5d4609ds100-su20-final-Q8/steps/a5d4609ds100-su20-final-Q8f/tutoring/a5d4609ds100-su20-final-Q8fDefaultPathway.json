@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a5d4609ds100-su20-final-Q8f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Vectors",
+        "text": "The vectors $$u_1$$ and $$u_2$$ are columns of a matrix U. They are orthogonal unit vectors, meaning they are perpendicular to each other and have a magnitude of $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su20-final-Q8f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su20-final-Q8f-h1"
+        ],
+        "title": "Checking Orthogonality",
+        "text": "To check if $$u_1$$ and $$u_2$$ are orthogonal, calculate their dot product. If the dot product is zero, they are orthogonal.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su20-final-Q8f-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a5d4609ds100-su20-final-Q8f-h2"
+        ],
+        "title": "Calculate the Dot Product",
+        "text": "Calculate the dot product of $$u_1$$ and $$u_2$$: $$0.8\\times0.6+\\left(-0.6\\times0.8\\right)+0\\times0+0\\times0+0\\times0+0\\times0$$. What is the result?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su20-final-Q8f-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su20-final-Q8f-h3"
+        ],
+        "title": "Magnitude of Vectors",
+        "text": "The magnitude of a vector u is calculated as $$\\sqrt{{u_1}^2+{u_2}^2+{u_3}^2+{u_4}^2+{u_5}^2+{u_6}^2}$$. Check if both $$u_1$$ and $$u_2$$ have a magnitude of $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su20-final-Q8f-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a5d4609ds100-su20-final-Q8f-h4"
+        ],
+        "title": "Calculate Magnitude of $$u_1$$",
+        "text": "Calculate the magnitude of $$u_1$$: $$\\sqrt{{0.8}^2+{\\left(-0.6\\right)}^2+0^2+0^2+0^2+0^2}$$. What is the result?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su20-final-Q8f-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a5d4609ds100-su20-final-Q8f-h5"
+        ],
+        "title": "Calculate Magnitude of $$u_2$$",
+        "text": "Calculate the magnitude of $$u_2$$: $$\\sqrt{{0.6}^2+{0.8}^2+0^2+0^2+0^2+0^2}$$. What is the result?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su20-final-Q8f-h7",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su20-final-Q8f-h6"
+        ],
+        "title": "Conclusion",
+        "text": "Since the dot product of $$u_1$$ and $$u_2$$ is zero and both vectors have a magnitude of $$1$$, they are valid orthogonal unit vectors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

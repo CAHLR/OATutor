@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a613447ds100-fa21-mt-Q2s-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "When combining multiple models, consider how each model's predictions contribute to the overall prediction. Think about how averaging predictions might affect the bias and variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2s-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2s-h1"
+        ],
+        "title": "Effect on Bias",
+        "text": "Averaging predictions from multiple models can help reduce the variance of the predictions. However, consider whether this process affects the bias of the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2s-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2s-h1"
+        ],
+        "title": "Effect on Variance",
+        "text": "When you average predictions from multiple models, the variance of the predictions tends to decrease. This is because the averaging process smooths out the fluctuations in individual model predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2s-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Averaging predictions does not inherently change the bias of the model."
+        ],
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2s-h2"
+        ],
+        "title": "Analyzing Bias",
+        "text": "Consider the definition of bias in the context of model predictions. Bias refers to the error introduced by approximating a real-world problem, which may be complex, by a simplified model. Does averaging predictions from multiple models change this approximation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Averaging predictions does not inherently change the bias of the model.",
+            "FALSE",
+            "TRUE"
+        ]
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2s-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Averaging predictions reduces the variance of the model."
+        ],
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2s-h3"
+        ],
+        "title": "Analyzing Variance",
+        "text": "Variance refers to the variability of model predictions for a given data point. When you average predictions from multiple models, how does this affect the variability of the predictions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Averaging predictions reduces the variance of the model.",
+            "FALSE",
+            "TRUE"
+        ]
+    }
+]

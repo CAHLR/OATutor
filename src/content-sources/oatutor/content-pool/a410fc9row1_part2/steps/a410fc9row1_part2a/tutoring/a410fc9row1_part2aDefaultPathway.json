@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a410fc9row1_part2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Table",
+        "text": "The table represents several iterations of batch gradient descent. Each row corresponds to a time step $$t$$, and the columns represent different values at that step.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row1_part2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row1_part2a-h1"
+        ],
+        "title": "Gradient Descent Formula",
+        "text": "The update rule for gradient descent is given by: $$\\operatorname{\\theta}\\left(t+1\\right)$$ $$=$$ \u03b8(t) - \\alpha * $$\\frac{dL}{dtheta} \\operatorname{\\theta}\\left(t\\right)$$. Here, \\alpha is the learning rate.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row1_part2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row1_part2a-h2"
+        ],
+        "title": "Using the Learning Rate",
+        "text": "The learning rate \\alpha is given as $$1$$. This simplifies the update rule to: $$\\operatorname{\\theta}\\left(t+1\\right)$$ $$=$$ \u03b8(t) - $$\\frac{dL}{dtheta} \\operatorname{\\theta}\\left(t\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row1_part2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$11$$"
+        ],
+        "dependencies": [
+            "a410fc9row1_part2a-h3"
+        ],
+        "title": "Calculate $$\\operatorname{\\theta}\\left(t+1\\right)$$ for $$t=0$$",
+        "text": "Given \u03b8(t) $$=$$ $$10$$ and $$\\frac{dL}{dtheta} \\operatorname{\\theta}\\left(t\\right)$$ $$=$$ (b), use the update rule to find $$\\operatorname{\\theta}\\left(t+1\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

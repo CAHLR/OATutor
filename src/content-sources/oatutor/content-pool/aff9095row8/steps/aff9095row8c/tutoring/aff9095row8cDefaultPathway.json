@@ -1,0 +1,64 @@
+[
+    {
+        "id": "aff9095row8c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Box Plots",
+        "text": "A box plot is a graphical representation of data that shows the distribution through their quartiles. It can help visualize the spread and identify outliers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aff9095row8c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Visualizing Price Data",
+        "text": "When considering visualizations for price data, think about how you can represent the distribution and spread of the prices.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aff9095row8c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Box plot"
+        ],
+        "dependencies": [],
+        "title": "Identifying Suitable Visualizations",
+        "text": "Which visualization method can show the distribution of prices effectively?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Box plot",
+            "Line graph",
+            "Pie chart"
+        ]
+    },
+    {
+        "id": "aff9095row8c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Box plot"
+        ],
+        "dependencies": [
+            "aff9095row8c-h3"
+        ],
+        "title": "Choosing the Right Plot",
+        "text": "What type of plot is best for showing the spread and quartiles of a dataset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Box plot",
+            "Bar chart",
+            "Histogram"
+        ]
+    }
+]

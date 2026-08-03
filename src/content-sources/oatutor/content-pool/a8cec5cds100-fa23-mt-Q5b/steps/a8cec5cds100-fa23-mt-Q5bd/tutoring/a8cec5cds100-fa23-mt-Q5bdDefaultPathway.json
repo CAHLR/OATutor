@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a8cec5cds100-fa23-mt-Q5bd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Loss Functions",
+        "text": "Loss functions are used to measure how well a model's predictions match the actual data. They help in optimizing the model parameters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q5bd-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q5bd-h1"
+        ],
+        "title": "Mean Squared Error (MSE)",
+        "text": "MSE is a common loss function that calculates the average of the squares of the errors. It is sensitive to outliers because squaring the errors increases the penalty for larger errors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q5bd-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q5bd-h2"
+        ],
+        "title": "Penalizing Outliers",
+        "text": "To penalize outliers more harshly than MSE, consider using loss functions that involve higher powers or absolute values of the errors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

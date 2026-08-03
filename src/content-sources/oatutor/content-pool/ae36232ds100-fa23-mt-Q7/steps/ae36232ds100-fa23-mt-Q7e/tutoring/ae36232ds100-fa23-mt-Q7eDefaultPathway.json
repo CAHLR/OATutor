@@ -1,0 +1,45 @@
+[
+    {
+        "id": "ae36232ds100-fa23-mt-Q7e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Batch Gradient Descent",
+        "text": "Batch gradient descent uses the entire dataset to compute the gradient at each step. This means it always moves in the direction of the true gradient, not an approximation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-mt-Q7e-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-fa23-mt-Q7e-h1"
+        ],
+        "title": "Characteristics of Batch Gradient Descent",
+        "text": "Since batch gradient descent uses the entire dataset, it tends to be more stable and accurate in finding the minimum compared to other types of gradient descent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-mt-Q7e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ae36232ds100-fa23-mt-Q7e-h2"
+        ],
+        "title": "Evaluating the Description",
+        "text": "Does the description 'the gradient is approximated and may not descend towards the true minimum' apply to batch gradient descent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

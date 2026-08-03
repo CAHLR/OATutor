@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a5dd512ds100-su19-final-Q7i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Update Rule",
+        "text": "The update rule for logistic regression with L2 regularization is given by:\\n\\n$${\\theta}^{t+1}$$ $$=$$ (1-2\u03bb)\u03b8**(t) + \\alpha[(y_i - \u03c3(X_i * \u03b8**(t))) * X_i]\\n\\nHere, \u03c3(z) is the sigmoid function, which is defined as \u03c3(z) $$=$$ $$\\frac{1}{1+e^{\\left(-z\\right)}}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q7i-h1"
+        ],
+        "title": "Initial Conditions",
+        "text": "We are given that $${\\theta}^t$$ $$=$$ $$0$$. This simplifies the update rule significantly. Consider how this affects the terms in the equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7i-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q7i-h2"
+        ],
+        "title": "Simplifying the Update Rule",
+        "text": "With $${\\theta}^t$$ $$=$$ $$0$$, the term \u03c3(X_i * \u03b8**(t)) becomes \u03c3(0), which is $$0.5$$. Substitute this into the update rule to simplify it further.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7i-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q7i-h3"
+        ],
+        "title": "Evaluating the Update Rule",
+        "text": "After substituting \u03c3(0) $$=$$ $$0.5$$, the update rule becomes:\\n\\n$${\\theta}^{t+1}$$ $$=$$ $$(1-2\\lambda)$$ * $$0$$ + \\alpha[(y_i - $$0.5)$$ * X_i]\\n\\nThis simplifies to:\\n\\n$${\\theta}^{t+1}$$ $$=$$ \\alpha(y_i - $$0.5)$$ * $$X_i$$",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7i-h5",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q7i-h4"
+        ],
+        "title": "Maximizing $${\\theta}^{t+1}$$",
+        "text": "To make $${\\theta}^{t+1}$$ as positive as possible, consider the values of $$y_i$$ and $$X_i$$. Since \\alpha $$=$$ $$1$$, focus on maximizing (y_i - $$0.5)$$ * $$X_i$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7i-h6",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q7i-h5"
+        ],
+        "title": "Considering $$y_i$$ and $$X_i$$",
+        "text": "To maximize (y_i - $$0.5)$$ * $$X_i$$, consider the following:\\n- If $$y_i$$ $$=$$ $$1$$, (y_i - $$0.5)$$ is positive.\\n- If $$y_i$$ $$=$$ $$0$$, (y_i - $$0.5)$$ is negative.\\n\\nChoose the combination of $$y_i$$ and $$X_i$$ that results in the largest positive product.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

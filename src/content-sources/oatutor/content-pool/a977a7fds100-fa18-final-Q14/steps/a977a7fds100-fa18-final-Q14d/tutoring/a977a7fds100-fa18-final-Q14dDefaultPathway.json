@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a977a7fds100-fa18-final-Q14d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plot",
+        "text": "The plot shows a decreasing trend as the value of $$d$$ increases. This suggests that the y-axis could represent a quantity that decreases with more data or features.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q14d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q14d-h1"
+        ],
+        "title": "Possible Y-Axis Labels",
+        "text": "Consider what metrics in machine learning might decrease as the number of features or data points increases. Think about variance, bias, error, etc.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q14d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Variance"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q14d-h2"
+        ],
+        "title": "Variance Explanation",
+        "text": "Variance in a model typically decreases as the amount of data increases. Could the y-axis represent variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Variance",
+            "Bias",
+            "Error",
+            "Accuracy"
+        ]
+    }
+]

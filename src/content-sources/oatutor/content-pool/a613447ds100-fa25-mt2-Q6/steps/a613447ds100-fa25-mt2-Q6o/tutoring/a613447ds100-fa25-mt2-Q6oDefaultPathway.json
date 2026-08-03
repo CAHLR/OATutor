@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a613447ds100-fa25-mt2-Q6o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE on Test Data",
+        "text": "When you remove a feature from a model, it can affect the model's ability to generalize to new data. Consider how this might impact the Mean Squared Error (MSE) on held-out test data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6o-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa25-mt2-Q6o-h1"
+        ],
+        "title": "Effect of Feature Removal on Bias",
+        "text": "Removing a feature can increase the bias of the model because the model might lose some information that was useful for making predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6o-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa25-mt2-Q6o-h2"
+        ],
+        "title": "Effect of Feature Removal on Variance",
+        "text": "Removing a feature can decrease the variance of the model because the model becomes simpler and less sensitive to fluctuations in the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6o-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "a613447ds100-fa25-mt2-Q6o-h3"
+        ],
+        "title": "Possible Effects on MSE",
+        "text": "Consider the trade-off between bias and variance when a feature is removed. How might this trade-off affect the MSE on held-out test data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    }
+]

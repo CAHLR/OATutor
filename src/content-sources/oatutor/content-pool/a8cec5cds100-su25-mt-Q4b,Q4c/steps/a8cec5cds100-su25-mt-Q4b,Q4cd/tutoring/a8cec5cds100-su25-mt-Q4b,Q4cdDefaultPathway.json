@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a8cec5cds100-su25-mt-Q4b,Q4cd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Objective Function",
+        "text": "The objective function is given as sum{i ext{=1}}{N}{3*theta_0-tip_i*log{theta_0}}. Your task is to find the derivative of this function with respect to $$\\theta_0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-su25-mt-Q4b,Q4cd-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-su25-mt-Q4b,Q4cd-h1"
+        ],
+        "title": "Derivative of Logarithm",
+        "text": "Recall that the derivative of log{x} with respect to $$x$$ is $$\\frac{1}{x}$$. This will be useful when differentiating the term involving log{theta_0}.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-su25-mt-Q4b,Q4cd-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-su25-mt-Q4b,Q4cd-h2"
+        ],
+        "title": "Differentiating the Objective Function",
+        "text": "Differentiate each term in the objective function with respect to $$\\theta_0$$. The derivative of $$3\\theta_0$$ is $$3$$, and the derivative of -tip_i*log{theta_0} is $$\\frac{-tip_i}{\\theta_0}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-su25-mt-Q4b,Q4cd-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sum 3-\\frac{tip}{theta0}$$"
+        ],
+        "dependencies": [
+            "a8cec5cds100-su25-mt-Q4b,Q4cd-h3"
+        ],
+        "title": "Compute the Derivative",
+        "text": "Combine the derivatives of each term to find the overall derivative of the objective function with respect to $$\\theta_0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "acab12dds100-su20-final-Q8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD Components",
+        "text": "The Singular Value Decomposition (SVD) of a matrix X is given by X=U*\u03a3*V**T. Here, U and $$V^T$$ are orthogonal matrices, and \u03a3 is a diagonal matrix containing the singular values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-su20-final-Q8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-su20-final-Q8a-h1"
+        ],
+        "title": "Role of \u03a3 in SVD",
+        "text": "The \u03a3 matrix contains the singular values, which are crucial for determining the principal components. However, the principal components themselves are derived from the columns of U.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-su20-final-Q8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-su20-final-Q8a-h2"
+        ],
+        "title": "Principal Components from U",
+        "text": "The columns of the U matrix in the SVD represent the principal components of the data. Even without \u03a3, U still contains the directions of maximum variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-su20-final-Q8a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "acab12dds100-su20-final-Q8a-h3"
+        ],
+        "title": "Can we find the principal components?",
+        "text": "Given that U contains the principal components, can we still find them without \u03a3?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

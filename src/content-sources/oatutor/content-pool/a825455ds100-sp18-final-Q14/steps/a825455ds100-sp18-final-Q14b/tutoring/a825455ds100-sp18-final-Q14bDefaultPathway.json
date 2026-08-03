@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a825455ds100-sp18-final-Q14b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding 4-way Replication",
+        "text": "In a 4-way replication system, each fragment of the file is stored on $$4$$ different machines. This means that even if some machines fail, the file can still be reconstructed as long as at least one copy of each fragment is available.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp18-final-Q14b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-sp18-final-Q14b-h1"
+        ],
+        "title": "Calculating Machine Failures",
+        "text": "To determine the maximum number of machines that can fail, consider how many machines are storing each fragment. Since each fragment is stored on $$4$$ machines, think about how many machines can fail while still having at least one copy of each fragment available.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp18-final-Q14b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a825455ds100-sp18-final-Q14b-h2"
+        ],
+        "title": "Determine the Maximum Failures",
+        "text": "If each fragment is stored on $$4$$ machines, how many machines can fail while still ensuring that at least one copy of each fragment is available?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,85 @@
+[
+    {
+        "id": "a977a7fds100-fa21-mt-Q2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-hot Encoding",
+        "text": "One-hot encoding is a method used to convert categorical data into a numerical format that can be used in machine learning models. It involves creating binary columns for each category.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using Age as a Feature",
+        "text": "Consider how age can be represented in a model. It can be used as a continuous variable or transformed into categorical data for one-hot encoding.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2d-h2"
+        ],
+        "title": "Continuous Representation of Age",
+        "text": "One way to use age data is to treat it as a continuous variable. This means using the actual age values directly in the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2d-h2"
+        ],
+        "title": "Categorical Representation of Age",
+        "text": "Another way to use age data is to categorize it into groups (e.g., $$18-25$$, $$26-35)$$ and then apply one-hot encoding to these categories.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2d-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2d-h2"
+        ],
+        "title": "Incorrect Representation of Age",
+        "text": "Using age as a binary variable (e.g., $$0$$ for under $$30$$, $$1$$ for $$30$$ and above) without considering the distribution and impact on the model might not capture the full information.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

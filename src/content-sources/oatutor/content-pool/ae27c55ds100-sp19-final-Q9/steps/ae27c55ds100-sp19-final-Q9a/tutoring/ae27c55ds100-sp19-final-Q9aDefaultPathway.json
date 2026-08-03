@@ -1,0 +1,61 @@
+[
+    {
+        "id": "ae27c55ds100-sp19-final-Q9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Sampling Distribution",
+        "text": "Consider what the sampling distribution of the 90th percentile would look like when sampling from a skewed distribution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-sp19-final-Q9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-sp19-final-Q9a-h1"
+        ],
+        "title": "Characteristics of the Original Distribution",
+        "text": "The original distribution is skewed to the left. How does this affect the sampling distribution of the 90th percentile?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-sp19-final-Q9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-sp19-final-Q9a-h2"
+        ],
+        "title": "Shape of the Sampling Distribution",
+        "text": "The sampling distribution of a percentile from a skewed distribution is often less skewed than the original distribution. Which histogram reflects this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-sp19-final-Q9a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "E"
+        ],
+        "dependencies": [
+            "ae27c55ds100-sp19-final-Q9a-h3"
+        ],
+        "title": "Selecting the Correct Histogram",
+        "text": "Based on the characteristics of the sampling distribution, which histogram best represents the distribution of the sample 90th percentile?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+        ]
+    }
+]

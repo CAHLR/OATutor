@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a253306row10p2e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Residuals",
+        "text": "In an Ordinary Least Squares (OLS) regression, the residuals are the differences between the observed values and the predicted values. They represent the error in the predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row10p2e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row10p2e-h1"
+        ],
+        "title": "Orthogonality in OLS",
+        "text": "Orthogonality in the context of OLS regression means that the residuals are perpendicular to the column space of the design matrix. This is a key property of the least squares solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row10p2e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row10p2e-h2"
+        ],
+        "title": "Geometric Interpretation",
+        "text": "Think of the design matrix as a plane in a high-dimensional space. The residuals being orthogonal means they are at a right angle to this plane, minimizing the distance from the observed data points to the plane.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row10p2e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a253306row10p2e-h3"
+        ],
+        "title": "Confirming Orthogonality",
+        "text": "Given the properties of OLS, are the residuals orthogonal to the column space of the design matrix?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

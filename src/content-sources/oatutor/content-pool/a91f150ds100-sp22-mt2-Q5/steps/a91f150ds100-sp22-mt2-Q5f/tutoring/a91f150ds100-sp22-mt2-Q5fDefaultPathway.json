@@ -1,0 +1,102 @@
+[
+    {
+        "id": "a91f150ds100-sp22-mt2-Q5f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Exponential Regularization",
+        "text": "Exponential regularization uses the function Pow(theta)=lambda*sum{i\u00001}{p}{10**theta_i}. This means that the penalty increases exponentially with the value of $$\\theta_i$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp22-mt2-Q5f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp22-mt2-Q5f-h1"
+        ],
+        "title": "Comparing with L2 Regularization",
+        "text": "L2 regularization uses the function lambda*sum{i\u00001}{p}{theta_i**2}. Consider how the penalty changes as $$\\theta_i$$ becomes large.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp22-mt2-Q5f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp22-mt2-Q5f-h1"
+        ],
+        "title": "Comparing with L1 Regularization",
+        "text": "L1 regularization uses the function lambda*sum{i\u00001}{p}{abs(theta_i)}. Think about how this affects feature selection compared to exponential regularization.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp22-mt2-Q5f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Exponential regularization grows faster."
+        ],
+        "dependencies": [
+            "a91f150ds100-sp22-mt2-Q5f-h2"
+        ],
+        "title": "Analyzing Large Positive Coefficients",
+        "text": "For large positive values of $$\\theta_i$$, compare the penalties from exponential and L2 regularization. Which one grows faster?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Exponential",
+            "Exponential regularization grows faster.",
+            "L2"
+        ]
+    },
+    {
+        "id": "a91f150ds100-sp22-mt2-Q5f-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "L2 regularization grows faster."
+        ],
+        "dependencies": [
+            "a91f150ds100-sp22-mt2-Q5f-h2"
+        ],
+        "title": "Analyzing Large Negative Coefficients",
+        "text": "For large negative values of $$\\theta_i$$, compare the penalties from exponential and L2 regularization. Which one grows faster?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Exponential",
+            "L2",
+            "L2 regularization grows faster."
+        ]
+    },
+    {
+        "id": "a91f150ds100-sp22-mt2-Q5f-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "L1 regularization can set parameters to zero, performing feature selection."
+        ],
+        "dependencies": [
+            "a91f150ds100-sp22-mt2-Q5f-h3"
+        ],
+        "title": "Feature Selection with L1 Regularization",
+        "text": "How does L1 regularization perform feature selection compared to exponential regularization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Exponential",
+            "L1",
+            "L1 regularization can set parameters to zero, performing feature selection."
+        ]
+    }
+]

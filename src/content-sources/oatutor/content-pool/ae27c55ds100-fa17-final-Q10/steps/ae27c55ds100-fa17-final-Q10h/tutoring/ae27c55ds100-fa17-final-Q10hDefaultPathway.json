@@ -1,0 +1,192 @@
+[
+    {
+        "id": "ae27c55ds100-fa17-final-Q10h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Diagram",
+        "text": "The diagram represents the bootstrap process, which involves taking samples from a population, calculating statistics, and using these to estimate the sampling distribution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-final-Q10h-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa17-final-Q10h-h1"
+        ],
+        "title": "Identifying the Population",
+        "text": "The first step in the diagram involves the entire population. Which label corresponds to the population?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-final-Q10h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Population"
+        ],
+        "dependencies": [
+            "ae27c55ds100-fa17-final-Q10h-h2"
+        ],
+        "title": "Label for Population",
+        "text": "What is the label for the population in the diagram?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Population",
+            "Bootstrap population",
+            "Observed sample",
+            "Expected sample",
+            "Bootstrap sample",
+            "Sampling distribution",
+            "Sampling",
+            "Bootstrapping",
+            "Bootstrap sampling distribution",
+            "Empirical distribution",
+            "True distribution",
+            "Population parameter",
+            "Sample Statistic",
+            "Bootstrap Statistic"
+        ]
+    },
+    {
+        "id": "ae27c55ds100-fa17-final-Q10h-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa17-final-Q10h-h3"
+        ],
+        "title": "Identifying the Observed Sample",
+        "text": "After identifying the population, the next step involves taking a sample from it. Which label corresponds to the observed sample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-final-Q10h-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Observed sample"
+        ],
+        "dependencies": [
+            "ae27c55ds100-fa17-final-Q10h-h4"
+        ],
+        "title": "Label for Observed Sample",
+        "text": "What is the label for the observed sample in the diagram?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Population",
+            "Bootstrap population",
+            "Observed sample",
+            "Expected sample",
+            "Bootstrap sample",
+            "Sampling distribution",
+            "Sampling",
+            "Bootstrapping",
+            "Bootstrap sampling distribution",
+            "Empirical distribution",
+            "True distribution",
+            "Population parameter",
+            "Sample Statistic",
+            "Bootstrap Statistic"
+        ]
+    },
+    {
+        "id": "ae27c55ds100-fa17-final-Q10h-h6",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa17-final-Q10h-h5"
+        ],
+        "title": "Identifying the Bootstrap Sample",
+        "text": "The bootstrap sample is taken from the observed sample. Which label corresponds to the bootstrap sample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-final-Q10h-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Bootstrap sample"
+        ],
+        "dependencies": [
+            "ae27c55ds100-fa17-final-Q10h-h6"
+        ],
+        "title": "Label for Bootstrap Sample",
+        "text": "What is the label for the bootstrap sample in the diagram?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Population",
+            "Bootstrap population",
+            "Observed sample",
+            "Expected sample",
+            "Bootstrap sample",
+            "Sampling distribution",
+            "Sampling",
+            "Bootstrapping",
+            "Bootstrap sampling distribution",
+            "Empirical distribution",
+            "True distribution",
+            "Population parameter",
+            "Sample Statistic",
+            "Bootstrap Statistic"
+        ]
+    },
+    {
+        "id": "ae27c55ds100-fa17-final-Q10h-h8",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa17-final-Q10h-h7"
+        ],
+        "title": "Identifying the Bootstrap Statistic",
+        "text": "The bootstrap statistic is calculated from the bootstrap sample. Which label corresponds to the bootstrap statistic?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-final-Q10h-h9",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Bootstrap Statistic"
+        ],
+        "dependencies": [
+            "ae27c55ds100-fa17-final-Q10h-h8"
+        ],
+        "title": "Label for Bootstrap Statistic",
+        "text": "What is the label for the bootstrap statistic in the diagram?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Population",
+            "Bootstrap population",
+            "Observed sample",
+            "Expected sample",
+            "Bootstrap sample",
+            "Sampling distribution",
+            "Sampling",
+            "Bootstrapping",
+            "Bootstrap sampling distribution",
+            "Empirical distribution",
+            "True distribution",
+            "Population parameter",
+            "Sample Statistic",
+            "Bootstrap Statistic"
+        ]
+    }
+]

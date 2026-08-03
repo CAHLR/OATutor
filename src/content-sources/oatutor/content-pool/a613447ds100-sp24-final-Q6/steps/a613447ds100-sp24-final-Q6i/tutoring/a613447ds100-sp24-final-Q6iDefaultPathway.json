@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a613447ds100-sp24-final-Q6i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "Bias refers to the error introduced by approximating a real-world problem, which may be complex, by a simplified model. Variance refers to the model's sensitivity to fluctuations in the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp24-final-Q6i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp24-final-Q6i-h1"
+        ],
+        "title": "Comparing Bias and Variance",
+        "text": "Model A has a bias squared of $$2$$ and a variance of $$12$$, while Model B has a bias squared of $$4$$ and a variance of $$1$$. Which model has higher variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp24-final-Q6i-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp24-final-Q6i-h2"
+        ],
+        "title": "Impact of High Variance",
+        "text": "A model with high variance is more likely to overfit the training data. Overfitting occurs when a model captures noise in the training data rather than the intended outputs.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp24-final-Q6i-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "Model A: 2+12=14, Model B: 4+1=5"
+        ],
+        "dependencies": [
+            "a613447ds100-sp24-final-Q6i-h3"
+        ],
+        "title": "Calculating Total Error",
+        "text": "The total error of a model can be calculated as the sum of bias squared and variance. Calculate the total error for both models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp24-final-Q6i-h5",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp24-final-Q6i-h4"
+        ],
+        "title": "Conclusion on Overfitting",
+        "text": "Based on the total error calculated, which model is more likely to overfit the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

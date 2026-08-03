@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a253306row3b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Graph",
+        "text": "The graph shows the relationship between temperature and tip amount. The line represents the fitted least squares regression model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row3b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row3b-h1"
+        ],
+        "title": "Identifying Data Points",
+        "text": "Identify the three data points on the graph. These are the actual observations used to fit the regression line.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row3b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row3b-h2"
+        ],
+        "title": "Calculating Residuals",
+        "text": "For each data point, calculate the residual, which is the difference between the observed tip and the predicted tip from the regression line.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row3b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a253306row3b-h3"
+        ],
+        "title": "Formula for MSE",
+        "text": "The Mean Squared Error (MSE) is calculated as the average of the squared residuals.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row3b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a253306row3b-h3"
+        ],
+        "title": "Compute Residuals",
+        "text": "Calculate the residuals for each data point. If the observed tip is $$30$$ and the predicted tip is $$28$$, the residual is $$30-28$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row3b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a253306row3b-h5"
+        ],
+        "title": "Calculate Squared Residuals",
+        "text": "Square each residual. If the residual is $$2$$, the squared residual is $$2^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row3b-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a253306row3b-h6"
+        ],
+        "title": "Compute MSE",
+        "text": "Sum the squared residuals and divide by the number of observations to find the MSE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

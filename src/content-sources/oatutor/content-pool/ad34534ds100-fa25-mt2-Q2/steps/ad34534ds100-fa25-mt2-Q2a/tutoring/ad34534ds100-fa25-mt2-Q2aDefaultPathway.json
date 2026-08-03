@@ -1,0 +1,58 @@
+[
+    {
+        "id": "ad34534ds100-fa25-mt2-Q2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Orthogonality and Span",
+        "text": "To determine the relationship between $Y$ and $\u007f{Y}$, consider the properties of the OLS model. Recall that the residuals are orthogonal to the fitted values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q2a-h1"
+        ],
+        "title": "Orthogonality in OLS",
+        "text": "In an OLS model, the residuals (the difference between the true outcomes $Y$ and the predictions $\u007f{Y}$) are orthogonal to the columns of the design matrix $\u007f{X}$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q2a-h2"
+        ],
+        "title": "Span of the Design Matrix",
+        "text": "The predictions $\u007f{Y}$ are in the span of the columns of the design matrix $\u007f{X}$. This means that $\u007f{Y}$ can be expressed as a linear combination of the columns of $\u007f{X}$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q2a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "NOT orthogonal to and NOT in the span of"
+        ],
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q2a-h3"
+        ],
+        "title": "Relationship Between $Y$ and $\u007f{Y}$",
+        "text": "Given that the residuals are orthogonal to the columns of $\u007f{X}$ and $\u007f{Y}$ is in the span of $\u007f{X}$, what can we conclude about the relationship between $Y$ and $\u007f{Y}$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Orthogonal to",
+            "In the span of",
+            "NOT orthogonal to and NOT in the span of"
+        ]
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "ae27c55ds100-sp18-final-Q41a,Q41cb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Confidence Intervals",
+        "text": "A 95% confidence interval means that if we were to take many samples and construct a confidence interval from each sample, we expect 95% of those intervals to contain the true population mean.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-sp18-final-Q41a,Q41cb-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-sp18-final-Q41a,Q41cb-h1"
+        ],
+        "title": "Interpreting the 95% Confidence Level",
+        "text": "The 95% confidence level does not guarantee that $$95$$ out of $$100$$ intervals will contain the population mean. It means that if we repeated the sampling process many times, 95% of the intervals would contain the mean.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-sp18-final-Q41a,Q41cb-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ae27c55ds100-sp18-final-Q41a,Q41cb-h2"
+        ],
+        "title": "Clarifying the Misconception",
+        "text": "If we construct $$100$$ confidence intervals, is it guaranteed that exactly $$95$$ of them will contain the population mean?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

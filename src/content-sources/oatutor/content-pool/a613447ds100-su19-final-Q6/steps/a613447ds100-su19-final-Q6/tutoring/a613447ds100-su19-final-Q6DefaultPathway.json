@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a613447ds100-su19-final-Q6\u0080-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plots",
+        "text": "The plots show the Mean Squared Error (MSE) on the y-axis against different values on the x-axis. The x-axis represents the regularization parameter lambda.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6\u0080-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6\u0080-h1"
+        ],
+        "title": "Training Error Behavior",
+        "text": "Training error typically decreases as the model complexity increases (or as lambda decreases in ridge regression).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6\u0080-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6\u0080-h2"
+        ],
+        "title": "Validation Error Behavior",
+        "text": "Validation error usually decreases initially with increasing model complexity, but then increases due to overfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6\u0080-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Plot A"
+        ],
+        "dependencies": [
+            "a613447ds100-su19-final-Q6\u0080-h2"
+        ],
+        "title": "Identify the Training Error Plot",
+        "text": "Which plot shows a consistent decrease in error as lambda decreases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Plot A",
+            "Plot B",
+            "Plot C",
+            "Plot D"
+        ]
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6\u0080-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Plot B"
+        ],
+        "dependencies": [
+            "a613447ds100-su19-final-Q6\u0080-h3"
+        ],
+        "title": "Identify the Validation Error Plot",
+        "text": "Which plot shows a U-shaped curve, indicating initial decrease and then increase in error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Plot A",
+            "Plot B",
+            "Plot C",
+            "Plot D"
+        ]
+    }
+]

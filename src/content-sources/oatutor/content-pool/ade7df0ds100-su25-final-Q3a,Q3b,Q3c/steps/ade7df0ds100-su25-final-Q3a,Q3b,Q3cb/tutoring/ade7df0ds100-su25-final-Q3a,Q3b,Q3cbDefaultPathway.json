@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ade7df0ds100-su25-final-Q3a,Q3b,Q3cb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Sigmoid Function",
+        "text": "The sigmoid function, often used in logistic regression, outputs values between $$0$$ and $$1$$. It is defined as \\( \\sigma(z) $$=$$ \\frac{1}{1+e**{-z}} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su25-final-Q3a,Q3b,Q3cb-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su25-final-Q3a,Q3b,Q3cb-h1"
+        ],
+        "title": "Sigmoid Function Output",
+        "text": "The sigmoid function can never output exactly $$0$$ or $$1$$ for any finite input. It approaches these values asymptotically as the input goes to negative or positive $$\\infty$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su25-final-Q3a,Q3b,Q3cb-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su25-final-Q3a,Q3b,Q3cb-h2"
+        ],
+        "title": "Logistic Regression and Sigmoid Function",
+        "text": "In logistic regression, the output of the sigmoid function represents the probability of the target variable being $$1$$. This probability is never exactly $$0$$ or $$1$$ for finite inputs.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su25-final-Q3a,Q3b,Q3cb-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su25-final-Q3a,Q3b,Q3cb-h3"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Given the properties of the sigmoid function, is it possible for it to output exactly $$1$$ for any finite input?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,17 @@
+{
+    "id": "a410fc9row7e",
+    "stepAnswer": [
+        "The model does not have an intercept term."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Mir runs OLS but finds all his residuals are negative. What is most likely the issue here?",
+    "stepBody": "Mir creates a new dataset; the new $$n$$ by $$p$$ design matrix is denoted $$X$$ and the targets are stored in $$Y.$$ Assume each scenario happens independently of the others.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "One or more of the features is a linear combination of other features.",
+        "$$\\hat{Y}$$ is not a linear combination of the columns of $$X.$$",
+        "The prediction vector $$\\hat{Y}$$ is not in the span of the design matrix.",
+        "The model does not have an intercept term."
+    ]
+}

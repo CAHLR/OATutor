@@ -1,0 +1,11 @@
+{
+    "id": "a40b41cds100-su21-final-Q9",
+    "title": "Agg(ravating) Clustering",
+    "body": "Below is a dataset of $$5$$ points, which we want to group into $$k=3$$ clusters.\\nWe will use agglomerative clustering. Our criterion for the distance between clusters is the maximum distance between points from each cluster, as used in lecture.\\nThe Euclidean distances between the points are:\\n\u2022 A and B: $$3.3$$\\n\u2022 A and C: $$5.2$$\\n\u2022 A and D: $$3.6$$\\n\u2022 A and E: $$0.9$$\\n\u2022 B and C: $$6.2$$\\n\u2022 B and D: $$1.6$$\\n\u2022 B and E: $$2.8$$\\n\u2022 C and D: $$4.9$$\\n\u2022 C and E: $$5.9$$\\n\u2022 D and E: $$3.5$$\\nEach point has a distance of $$0.0$$ from itself.\\nIn this question, we will walk through each step of the agglomerative clustering algorithm. When two clusters are merged together, the name of the new cluster should be the lowest letter in the cluster. For example, if we merge clusters Y and Z together, the new cluster should be called Y.\\n##figure1.gif",
+    "variabilization": {},
+    "oer": "https://ds100.org/su26/past-exams/",
+    "license": "",
+    "lesson": "Clustering and Big Data A",
+    "lessonId": "3utzCRWK-lLoP-hUPMUQCPXP",
+    "courseName": "Midterm 3 Worksheets"
+}

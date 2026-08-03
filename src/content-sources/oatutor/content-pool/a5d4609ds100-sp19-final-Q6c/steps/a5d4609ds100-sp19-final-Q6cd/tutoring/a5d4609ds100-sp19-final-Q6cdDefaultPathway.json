@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a5d4609ds100-sp19-final-Q6cd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA and SVD",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It involves the Singular Value Decomposition (SVD) of a centered matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp19-final-Q6cd-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp19-final-Q6cd-h1"
+        ],
+        "title": "Matrix Centering",
+        "text": "Centering a matrix involves subtracting the mean of each column from the respective column values. This ensures that each column has a mean of zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp19-final-Q6cd-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp19-final-Q6cd-h2"
+        ],
+        "title": "SVD Components",
+        "text": "The SVD of a matrix X is given by X=U*Sigma*V**T, where U and V are orthogonal matrices, and Sigma is a diagonal matrix containing singular values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp19-final-Q6cd-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp19-final-Q6cd-h3"
+        ],
+        "title": "Interpreting U*Sigma",
+        "text": "The product U*Sigma represents the projection of the original data onto the principal component space. The first two columns of U*Sigma correspond to the first two principal components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

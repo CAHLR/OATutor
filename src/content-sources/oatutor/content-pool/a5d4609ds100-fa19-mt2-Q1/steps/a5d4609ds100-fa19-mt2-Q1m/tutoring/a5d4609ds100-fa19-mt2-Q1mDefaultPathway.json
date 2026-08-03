@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a5d4609ds100-fa19-mt2-Q1m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Singular Values",
+        "text": "The singular values represent the square roots of the eigenvalues of the covariance matrix. They are used to determine the variance captured by each principal component.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa19-mt2-Q1m-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-fa19-mt2-Q1m-h1"
+        ],
+        "title": "Calculating Variance from Singular Values",
+        "text": "The variance captured by a principal component is proportional to the square of its singular value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa19-mt2-Q1m-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-fa19-mt2-Q1m-h2"
+        ],
+        "title": "Fraction of Variance",
+        "text": "To find the fraction of variance captured by the first two principal components, calculate the sum of the squares of the first two singular values and divide by the sum of the squares of all singular values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa19-mt2-Q1m-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{{56}^2+{53}^2}{1000V}$$"
+        ],
+        "dependencies": [
+            "a5d4609ds100-fa19-mt2-Q1m-h3"
+        ],
+        "title": "Expression for Variance Fraction",
+        "text": "Write the expression for the fraction of variance captured by the first two principal components using the given singular values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

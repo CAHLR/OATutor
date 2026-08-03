@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ae36232ds100-su25-final-Q2s-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "Gradient descent is an optimization algorithm used to minimize a function by iteratively moving towards the steepest descent direction. It is commonly used in machine learning to find the optimal parameters for a model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2s-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2s-h1"
+        ],
+        "title": "Convergence of Gradient Descent",
+        "text": "Gradient descent can converge to a local minimum, but this depends on several factors such as the learning rate, the nature of the function, and the starting point. It does not guarantee convergence to a global minimum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2s-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2s-h1"
+        ],
+        "title": "Role of Learning Rate",
+        "text": "The learning rate is a crucial hyperparameter in gradient descent. If it's too large, the algorithm may overshoot the minimum. If it's too small, the convergence can be very slow.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2s-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2s-h2"
+        ],
+        "title": "Analyzing the Statement",
+        "text": "Consider the statement: 'With an infinite number of updates and a fixed learning rate, gradient descent will always converge to a local minimum.' Is this statement true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

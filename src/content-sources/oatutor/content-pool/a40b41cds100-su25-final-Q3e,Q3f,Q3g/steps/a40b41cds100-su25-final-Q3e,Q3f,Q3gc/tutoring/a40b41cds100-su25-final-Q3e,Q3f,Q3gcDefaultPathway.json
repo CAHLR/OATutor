@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a40b41cds100-su25-final-Q3e,Q3f,Q3gc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Silhouette Scores",
+        "text": "A silhouette score measures how similar an object is to its own cluster compared to other clusters. A negative silhouette score indicates that the object is closer to a neighboring cluster than to its own cluster.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-su25-final-Q3e,Q3f,Q3gc-h2",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-su25-final-Q3e,Q3f,Q3gc-h1"
+        ],
+        "title": "Interpreting Negative Silhouette Scores",
+        "text": "If a point has a negative silhouette score, it suggests that the point might be misclassified or that the clusters are not well-separated.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-su25-final-Q3e,Q3f,Q3gc-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It is closer to the nearest cluster than to its own cluster."
+        ],
+        "dependencies": [
+            "a40b41cds100-su25-final-Q3e,Q3f,Q3gc-h2"
+        ],
+        "title": "Analyzing Cluster Proximity",
+        "text": "Consider a point with a negative silhouette score. What does this imply about its proximity to other clusters?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It is closer to the nearest cluster than to its own cluster.",
+            "It is equidistant from all clusters.",
+            "It is far from all clusters."
+        ]
+    },
+    {
+        "id": "a40b41cds100-su25-final-Q3e,Q3f,Q3gc-h4",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-su25-final-Q3e,Q3f,Q3gc-h3"
+        ],
+        "title": "Cluster Separation",
+        "text": "A negative silhouette score often indicates poor cluster separation. This can happen when clusters overlap or are not distinct.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

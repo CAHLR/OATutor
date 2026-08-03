@@ -1,0 +1,111 @@
+[
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Cross-Entropy Loss",
+        "text": "Cross-entropy loss is used to measure the performance of a classification model whose output is a probability value between $$0$$ and $$1$$. It increases as the predicted probability diverges from the actual label.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7k-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-mt2-Q7k-h1"
+        ],
+        "title": "Logistic Function",
+        "text": "The logistic function, also known as the sigmoid function, is defined as \\( \\sigma(x) $$=$$ \\frac{1}{1+e**{-x}} \\). It outputs a value between $$0$$ and $$1$$, which can be interpreted as a probability.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7k-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-mt2-Q7k-h2"
+        ],
+        "title": "Calculate the Linear Combination",
+        "text": "For the given passenger, calculate the linear combination of the features and parameters: \\( $$z$$ $$=$$ $$-1.2$$ + $$(-0.005$$ \\times 20) + $$(2.5$$ \\times 1) \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7k-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.2$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa19-mt2-Q7k-h3"
+        ],
+        "title": "Compute the Linear Combination",
+        "text": "Calculate \\( $$z$$ $$=$$ $$-1.2$$ + $$(-0.005$$ \\times 20) + $$(2.5$$ \\times 1) \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7k-h5",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-mt2-Q7k-h4"
+        ],
+        "title": "Apply the Sigmoid Function",
+        "text": "Use the logistic function to find the predicted probability: \\( \\sigma(z) $$=$$ \\frac{1}{1+e**{-z}} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7k-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.7685$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa19-mt2-Q7k-h5"
+        ],
+        "title": "Calculate the Predicted Probability",
+        "text": "Compute \\( $$\\sigma(1.2)$$ $$=$$ \\frac{1}{1+e**{-1.2}} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7k-h7",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-mt2-Q7k-h6"
+        ],
+        "title": "Cross-Entropy Loss Formula",
+        "text": "The cross-entropy loss for a true label \\( $$y$$ \\) and predicted probability \\( \\hat{y} \\) is given by \\( -[y \\cdot \\log(\\hat{y}) + $$(1-y)$$ \\cdot \\log(1-\\hat{y})] \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7k-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\ln\\left(0.7685\\right)$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa19-mt2-Q7k-h7"
+        ],
+        "title": "Calculate the Cross-Entropy Loss",
+        "text": "Since the passenger survived, \\( $$y$$ $$=$$ $$1$$ \\). Compute the loss: \\( -\\log(\\sigma(1.2)) \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "ade7df0ds100-sp21-final-Q4a,Q4b,Q4ce-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Transformation",
+        "text": "Consider how the transformation \\((x_1,x_2)\\to(x_1**2,x_2)\\) affects the data points. What happens to the values of \\(x_1\\) when they are squared?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q4a,Q4b,Q4ce-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q4a,Q4b,Q4ce-h1"
+        ],
+        "title": "Effect of Squaring on Linear Separability",
+        "text": "Squaring \\(x_1\\) changes the distribution of the data points. How does this affect the ability to draw a linear boundary between the classes?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp21-final-Q4a,Q4b,Q4ce-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ade7df0ds100-sp21-final-Q4a,Q4b,Q4ce-h2"
+        ],
+        "title": "Analyzing the Transformed Data",
+        "text": "After applying the transformation \\((x_1,x_2)\\to(x_1**2,x_2)\\), can you draw a straight line that separates the two classes?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

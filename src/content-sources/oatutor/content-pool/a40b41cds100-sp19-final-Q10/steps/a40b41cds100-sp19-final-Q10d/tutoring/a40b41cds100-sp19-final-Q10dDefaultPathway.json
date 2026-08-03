@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a40b41cds100-sp19-final-Q10d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The file is divided into $$8$$ blocks, each replicated twice. Each block is stored on $$2$$ out of $$4$$ machines. If $$3$$ machines fail, can any block still be read?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp19-final-Q10d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp19-final-Q10d-h1"
+        ],
+        "title": "Analyzing Block Storage",
+        "text": "Each block is stored on $$2$$ machines. If $$3$$ machines fail, what is the probability that a block is still accessible?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp19-final-Q10d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp19-final-Q10d-h2"
+        ],
+        "title": "Probability of Block Accessibility",
+        "text": "For a block to be accessible, at least one of the two machines storing it must be operational. What is the probability of this happening?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp19-final-Q10d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a40b41cds100-sp19-final-Q10d-h3"
+        ],
+        "title": "Calculating Probability for One Block",
+        "text": "Calculate the probability that at least one of the two machines storing a block is operational when $$3$$ machines fail.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp19-final-Q10d-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(\\frac{1}{2}\\right)^8$$"
+        ],
+        "dependencies": [
+            "a40b41cds100-sp19-final-Q10d-h4"
+        ],
+        "title": "Probability for All Blocks",
+        "text": "What is the probability that all $$8$$ blocks are accessible?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

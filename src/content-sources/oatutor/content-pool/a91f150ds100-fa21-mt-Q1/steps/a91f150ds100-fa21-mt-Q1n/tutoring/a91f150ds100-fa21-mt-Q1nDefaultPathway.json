@@ -1,0 +1,110 @@
+[
+    {
+        "id": "a91f150ds100-fa21-mt-Q1n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding k-fold Cross Validation",
+        "text": "In k-fold cross-validation, the dataset is divided into k subsets, and the model is trained and validated k times, each time using a different subset as the validation set and the remaining as the training set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa21-mt-Q1n-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-fa21-mt-Q1n-h1"
+        ],
+        "title": "Bias and Variance in Cross Validation",
+        "text": "Increasing k in k-fold cross-validation generally reduces the variance of the model's performance estimate, but how does it affect bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa21-mt-Q1n-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increasing k decreases the bias of the model."
+        ],
+        "dependencies": [
+            "a91f150ds100-fa21-mt-Q1n-h2"
+        ],
+        "title": "Effect of Increasing k on Bias",
+        "text": "Consider how using more folds (increasing k) affects the amount of data used for training in each iteration. Does this lead to a more or less biased model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "Increasing k decreases the bias of the model.",
+            "TRUE"
+        ]
+    },
+    {
+        "id": "a91f150ds100-fa21-mt-Q1n-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Computational Intensity of Cross Validation",
+        "text": "Cross-validation is generally more computationally intensive than regular validation because it involves training the model multiple times.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa21-mt-Q1n-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$Cross-validation$$ allows us to use the entire training dataset to test the model, providing a more reliable estimate of model performance."
+        ],
+        "dependencies": [
+            "a91f150ds100-fa21-mt-Q1n-h4"
+        ],
+        "title": "Why Use Cross Validation?",
+        "text": "Why might we prefer cross-validation over regular validation despite its computational cost?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$Cross-validation$$ allows us to use the entire training dataset to test the model, providing a more reliable estimate of model performance.",
+            "FALSE",
+            "TRUE"
+        ]
+    },
+    {
+        "id": "a91f150ds100-fa21-mt-Q1n-h6",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Cross Validation in Production",
+        "text": "Consider whether cross-validation is suitable for use in a production environment, where the model should not have access to validation samples.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa21-mt-Q1n-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$Cross-validation$$ is not suitable for production because the model is evaluated on data it has already seen during training, which can lead to overfitting."
+        ],
+        "dependencies": [
+            "a91f150ds100-fa21-mt-Q1n-h6"
+        ],
+        "title": "Cross Validation and Model Cheating",
+        "text": "Why might cross-validation be considered 'cheating' if used in production?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$Cross-validation$$ is not suitable for production because the model is evaluated on data it has already seen during training, which can lead to overfitting.",
+            "FALSE",
+            "TRUE"
+        ]
+    }
+]

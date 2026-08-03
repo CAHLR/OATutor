@@ -1,0 +1,99 @@
+[
+    {
+        "id": "ade7df0ds100-sp24-final-Q8f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding ROC Curves",
+        "text": "ROC curves plot the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings. A point on the ROC curve represents a specific threshold.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp24-final-Q8f-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp24-final-Q8f-h1"
+        ],
+        "title": "Thresholds and Predictions",
+        "text": "Consider how the predicted probabilities relate to the thresholds. For each threshold, determine which predictions are classified as positive (1) and which as negative (0).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp24-final-Q8f-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp24-final-Q8f-h2"
+        ],
+        "title": "Calculating TPR and FPR",
+        "text": "For each threshold, calculate the true positive rate (TPR) and false positive rate (FPR). TPR is the ratio of correctly predicted positive observations to all actual positives. FPR is the ratio of incorrectly predicted positive observations to all actual negatives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp24-final-Q8f-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "TPR=1, FPR=0.33"
+        ],
+        "dependencies": [
+            "ade7df0ds100-sp24-final-Q8f-h3"
+        ],
+        "title": "Threshold $$0.25$$",
+        "text": "At threshold $$0.25$$, which predictions are classified as positive? Calculate the TPR and FPR.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp24-final-Q8f-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "TPR=0.5, FPR=0.33"
+        ],
+        "dependencies": [
+            "ade7df0ds100-sp24-final-Q8f-h4"
+        ],
+        "title": "Threshold $$0.5$$",
+        "text": "At threshold $$0.5$$, which predictions are classified as positive? Calculate the TPR and FPR.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp24-final-Q8f-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "TPR=0.5, FPR=0"
+        ],
+        "dependencies": [
+            "ade7df0ds100-sp24-final-Q8f-h5"
+        ],
+        "title": "Threshold $$0.75$$",
+        "text": "At threshold $$0.75$$, which predictions are classified as positive? Calculate the TPR and FPR.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-sp24-final-Q8f-h7",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-sp24-final-Q8f-h6"
+        ],
+        "title": "Matching ROC Curve",
+        "text": "Compare the calculated TPR and FPR values for each threshold with the ROC curves provided. Identify which curve matches the calculated points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

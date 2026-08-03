@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a613447ds100-fa25-mt2-Q6d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "When you add a new feature to a model, especially one that is a transformation of an existing feature, it can affect the model's variance. Consider how adding a feature might increase the model's flexibility and how that could impact variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa25-mt2-Q6d-h1"
+        ],
+        "title": "Effect of Adding Features",
+        "text": "Adding a new feature, such as the square of an existing feature, can increase the model's complexity. Think about how this complexity might affect the model's ability to fit the training data and how it might generalize to new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "a613447ds100-fa25-mt2-Q6d-h2"
+        ],
+        "title": "Analyzing Variance",
+        "text": "Consider the impact of adding a feature on the model's variance. Does increasing the number of features generally increase or decrease variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease"
+        ]
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6d-h4",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa25-mt2-Q6d-h3"
+        ],
+        "title": "Variance and Flexibility",
+        "text": "Increasing the number of features typically increases the model's flexibility. More flexibility can lead to higher variance because the model might fit the noise in the training data more closely.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

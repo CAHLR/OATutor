@@ -1,0 +1,372 @@
+[
+    {
+        "id": "acab12dds100-fa17-final-Q10i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Diagram",
+        "text": "The diagram represents the bootstrap process, which involves taking samples from a population, calculating statistics, and using these to estimate the sampling distribution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-final-Q10i-h2",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa17-final-Q10i-h1"
+        ],
+        "title": "Identifying the Population",
+        "text": "The first step in the diagram involves the entire population. Which label corresponds to the population?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-final-Q10i-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A"
+        ],
+        "dependencies": [
+            "acab12dds100-fa17-final-Q10i-h2"
+        ],
+        "title": "Labeling the Population",
+        "text": "What is the label for the population in the diagram?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N"
+        ]
+    },
+    {
+        "id": "acab12dds100-fa17-final-Q10i-h4",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa17-final-Q10i-h3"
+        ],
+        "title": "Population Parameter",
+        "text": "The population parameter is a value that describes a characteristic of the entire population. Which label corresponds to the population parameter?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-final-Q10i-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "L"
+        ],
+        "dependencies": [
+            "acab12dds100-fa17-final-Q10i-h4"
+        ],
+        "title": "Labeling the Population Parameter",
+        "text": "What is the label for the population parameter in the diagram?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N"
+        ]
+    },
+    {
+        "id": "acab12dds100-fa17-final-Q10i-h6",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa17-final-Q10i-h5"
+        ],
+        "title": "Observed Sample",
+        "text": "The observed sample is a subset of the population that is actually collected and analyzed. Which label corresponds to the observed sample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-final-Q10i-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "C"
+        ],
+        "dependencies": [
+            "acab12dds100-fa17-final-Q10i-h6"
+        ],
+        "title": "Labeling the Observed Sample",
+        "text": "What is the label for the observed sample in the diagram?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N"
+        ]
+    },
+    {
+        "id": "acab12dds100-fa17-final-Q10i-h8",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa17-final-Q10i-h7"
+        ],
+        "title": "Sample Statistic",
+        "text": "The sample statistic is a value calculated from the observed sample. Which label corresponds to the sample statistic?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-final-Q10i-h9",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "M"
+        ],
+        "dependencies": [
+            "acab12dds100-fa17-final-Q10i-h8"
+        ],
+        "title": "Labeling the Sample Statistic",
+        "text": "What is the label for the sample statistic in the diagram?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N"
+        ]
+    },
+    {
+        "id": "acab12dds100-fa17-final-Q10i-h10",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa17-final-Q10i-h9"
+        ],
+        "title": "Bootstrap Population",
+        "text": "The bootstrap population is created by resampling with replacement from the observed sample. Which label corresponds to the bootstrap population?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-final-Q10i-h11",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "B"
+        ],
+        "dependencies": [
+            "acab12dds100-fa17-final-Q10i-h10"
+        ],
+        "title": "Labeling the Bootstrap Population",
+        "text": "What is the label for the bootstrap population in the diagram?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N"
+        ]
+    },
+    {
+        "id": "acab12dds100-fa17-final-Q10i-h12",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa17-final-Q10i-h11"
+        ],
+        "title": "Bootstrap Sample",
+        "text": "The bootstrap sample is a sample taken from the bootstrap population. Which label corresponds to the bootstrap sample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-final-Q10i-h13",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "E"
+        ],
+        "dependencies": [
+            "acab12dds100-fa17-final-Q10i-h12"
+        ],
+        "title": "Labeling the Bootstrap Sample",
+        "text": "What is the label for the bootstrap sample in the diagram?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N"
+        ]
+    },
+    {
+        "id": "acab12dds100-fa17-final-Q10i-h14",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa17-final-Q10i-h13"
+        ],
+        "title": "Bootstrap Statistic",
+        "text": "The bootstrap statistic is calculated from the bootstrap sample. Which label corresponds to the bootstrap statistic?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-final-Q10i-h15",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "N"
+        ],
+        "dependencies": [
+            "acab12dds100-fa17-final-Q10i-h14"
+        ],
+        "title": "Labeling the Bootstrap Statistic",
+        "text": "What is the label for the bootstrap statistic in the diagram?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N"
+        ]
+    },
+    {
+        "id": "acab12dds100-fa17-final-Q10i-h16",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa17-final-Q10i-h15"
+        ],
+        "title": "Bootstrap Sampling Distribution",
+        "text": "The bootstrap sampling distribution is the distribution of the bootstrap statistics. Which label corresponds to the bootstrap sampling distribution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa17-final-Q10i-h17",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "I"
+        ],
+        "dependencies": [
+            "acab12dds100-fa17-final-Q10i-h16"
+        ],
+        "title": "Labeling the Bootstrap Sampling Distribution",
+        "text": "What is the label for the bootstrap sampling distribution in the diagram?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N"
+        ]
+    }
+]

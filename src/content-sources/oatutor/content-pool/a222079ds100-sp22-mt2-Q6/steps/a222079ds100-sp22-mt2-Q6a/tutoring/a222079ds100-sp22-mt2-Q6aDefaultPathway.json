@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a222079ds100-sp22-mt2-Q6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Full Column Rank",
+        "text": "A matrix is full column rank if all its columns are linearly independent. This means no column can be written as a linear combination of the others.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp22-mt2-Q6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-sp22-mt2-Q6a-h1"
+        ],
+        "title": "Boolean Featurization",
+        "text": "In the context of this problem, boolean featurization means representing the presence or absence of each food item with $$1$$ or $$0$$, respectively.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp22-mt2-Q6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-sp22-mt2-Q6a-h2"
+        ],
+        "title": "Analyzing the Design Matrix",
+        "text": "The design matrix X has columns representing each food item. If a student eats a particular food, the corresponding column has a 1; otherwise, it has a $$0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp22-mt2-Q6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-sp22-mt2-Q6a-h3"
+        ],
+        "title": "Checking for Linear Independence",
+        "text": "Consider if any column in the design matrix can be expressed as a combination of the others. If not, the matrix is full column rank.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp22-mt2-Q6a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a222079ds100-sp22-mt2-Q6a-h4"
+        ],
+        "title": "Conclusion on Full Column Rank",
+        "text": "Based on the boolean featurization, can any column be expressed as a linear combination of the others?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

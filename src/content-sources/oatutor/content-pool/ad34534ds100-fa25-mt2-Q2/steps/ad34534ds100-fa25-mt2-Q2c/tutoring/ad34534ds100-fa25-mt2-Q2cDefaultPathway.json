@@ -1,0 +1,46 @@
+[
+    {
+        "id": "ad34534ds100-fa25-mt2-Q2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Orthogonality",
+        "text": "In linear algebra, two vectors are orthogonal if their dot product is zero. This means they are perpendicular to each other in the vector space.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q2c-h1"
+        ],
+        "title": "Projection in OLS",
+        "text": "In the context of OLS, the residual vector $$(Y-\\hat{Y})$$ is orthogonal to the column space of the design matrix \\mathbb{X}. This is a key property of the least squares solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q2c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Orthogonal to"
+        ],
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q2c-h2"
+        ],
+        "title": "Orthogonality of Residuals",
+        "text": "Given that \\hat{Y} is the projection of Y onto the column space of \\mathbb{X}, what can we say about the vector Y-\\hat{Y}?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Orthogonal to",
+            "In the span of",
+            "NOT orthogonal to and NOT in the span of"
+        ]
+    }
+]

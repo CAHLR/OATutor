@@ -1,0 +1,19 @@
+{
+    "id": "a5dd512ds100-su20-final-Q6j",
+    "stepAnswer": [
+        "consoles.groupby(\"manufacturer\").filter(lambda x: min(x[\"sales\"]) $$ \\geq $$ 10)"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Create a DataFrame containing data only for those consoles whose manufacturers have sold at least $$10$$ million units of each of their consoles. Write Pandas code. The resulting DataFrame must have the same structure and format as consoles. You may only use one line of code. The resulting DataFrame should be assigned to the variable df.\\ndf $$=$$ [blank]",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "consoles.groupby(\"manufacturer\").filter(lambda x: min(x[\"sales\"]) $$ \\geq $$ 10)",
+    "choices": [
+        "consoles.groupby(\"manufacturer\").filter(lambda x: max(x[\"sales\"]) $$ \\geq $$ 10)",
+        "consoles.groupby(\"manufacturer\").filter(lambda x: sum(x[\"sales\"]) $$ \\geq $$ 10)",
+        "consoles.groupby(\"manufacturer\").filter(lambda x: min(x[\"sales\"]) $$ \\geq $$ 10)",
+        "consoles.groupby(\"manufacturer\").agg(lambda x: min(x[\"sales\"]) $$ \\geq $$ 10)",
+        "consoles[consoles[\"sales\"] $$ \\geq $$ 10]"
+    ]
+}

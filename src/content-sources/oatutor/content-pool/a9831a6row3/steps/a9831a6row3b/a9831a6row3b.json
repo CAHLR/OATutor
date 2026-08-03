@@ -1,0 +1,18 @@
+{
+    "id": "a9831a6row3b",
+    "stepAnswer": [
+        "`D|M|A|S` ;; `\\w{,5}` ;; `[SAMD]`"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Select successful patterns for (ii):",
+    "stepBody": "Cristina wants to compile a list of each type of course along with the total number of servings for that course. She writes the code below:\\npattern $$=$$ $$`r'\\[(___i___)\\], \\sCourse:\\s(___ii___)'`$$\\nre.findall(pattern, data)\\nSelect all options for blanks (i) and (ii) that will result in the list below.\\n[('24', 'D'), ('15', 'M'), ('15', 'S'), ('23', 'A'), ('18', 'M')].",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "A",
+        "M",
+        "S` ;; `\\w{,5}` ;; `[SAMD]`",
+        "`D",
+        "`D|M|A|S` ;; `\\w{,5}` ;; `[SAMD]`"
+    ]
+}

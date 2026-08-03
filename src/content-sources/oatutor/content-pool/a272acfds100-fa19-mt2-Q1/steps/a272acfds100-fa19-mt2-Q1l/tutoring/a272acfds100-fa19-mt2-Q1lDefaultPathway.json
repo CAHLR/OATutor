@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a272acfds100-fa19-mt2-Q1l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Total Variance",
+        "text": "The total variance of a centered and scaled design matrix is equal to the number of features (columns) in the matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa19-mt2-Q1l-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-fa19-mt2-Q1l-h1"
+        ],
+        "title": "Counting the Features",
+        "text": "Look at the number of columns in the dataframe. Each column represents a feature.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa19-mt2-Q1l-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a272acfds100-fa19-mt2-Q1l-h2"
+        ],
+        "title": "Number of Features",
+        "text": "How many columns are there in the dataframe?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa19-mt2-Q1l-h4",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-fa19-mt2-Q1l-h3"
+        ],
+        "title": "Conclusion on Total Variance",
+        "text": "The total variance is equal to the number of features, which is the number of columns in the dataframe.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

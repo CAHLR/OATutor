@@ -1,0 +1,18 @@
+{
+    "id": "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dg",
+    "stepAnswer": [
+        "$$g(\\theta)=\\sum_{i=1}**{p}abs(\\theta_i)$$ (L1 regularization)"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Which $$g{\\left(\\theta\\right)}$$ is best for feature selection (i.e., eliminating irrelevant features and keeping useful ones)? Note: $$p$$ is the total number of parameters in $$\\theta.$$\\n\\n\u2022 $$g(\\theta)=\\sum_{i=1}**{p}\\log(\\theta_i)$$\\n\u2022 $$g(\\theta)=\\sum_{i=1}**{p}\\theta_i$$\\n\u2022 $$g(\\theta)=\\sum_{i=1}**{p}|\\theta_i|$$\\n\u2022 $$g(\\theta)=\\sum_{i=1}**{p}\\theta_i**{2}$$",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "$$g(\\theta)=\\sum_{i=1}**{p}\\log(\\theta_i)$$",
+        "$$g(\\theta)=\\sum_{i=1}**{p}\\theta_i$$",
+        "$$g(\\theta)=\\sum_{i=1}**{p}abs(\\theta_i)$$ (L1 regularization)",
+        "$$g(\\theta)=\\sum_{i=1}**{p}\\theta_i**{2}$$ (L2 regularization)",
+        "$$g(\\theta)=\\sum_{i=1}**{p}\\theta_i**{2}+\\sum_{i=1}**{p}abs(\\theta_i)$$"
+    ]
+}

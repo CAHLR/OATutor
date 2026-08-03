@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a91f150ds100-su25-final-Q2dc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting in models by adding a penalty term to the loss function. This penalty discourages complex models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su25-final-Q2dc-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su25-final-Q2dc-h1"
+        ],
+        "title": "Types of Regularization",
+        "text": "There are two common types of regularization: L1 (Lasso) and L2 (Ridge). L1 regularization adds the absolute value of the coefficients as a penalty term, while L2 adds the square of the coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su25-final-Q2dc-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su25-final-Q2dc-h2"
+        ],
+        "title": "Effect of L2 Regularization",
+        "text": "L2 regularization tends to shrink the coefficients of the model, which can help reduce variance but may not necessarily increase it.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su25-final-Q2dc-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a91f150ds100-su25-final-Q2dc-h3"
+        ],
+        "title": "Analyzing Variance with L2 Regularization",
+        "text": "Consider how L2 regularization affects the model's complexity and variance. Does it typically increase or decrease variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

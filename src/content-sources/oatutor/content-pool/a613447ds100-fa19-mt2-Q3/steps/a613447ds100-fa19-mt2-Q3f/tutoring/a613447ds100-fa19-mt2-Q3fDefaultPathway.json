@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a613447ds100-fa19-mt2-Q3f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "Model variance refers to how much the predictions for a given point vary between different realizations of the model. It is influenced by the complexity of the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa19-mt2-Q3f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa19-mt2-Q3f-h1"
+        ],
+        "title": "Factors Affecting Model Variance",
+        "text": "Consider how the size of the training set might affect the variance of the model. A larger training set can provide more information, potentially reducing variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa19-mt2-Q3f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa19-mt2-Q3f-h2"
+        ],
+        "title": "Model Complexity and Variance",
+        "text": "As model complexity increases, variance tends to increase. This is because more complex models can fit the training data more closely, leading to higher variability.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa19-mt2-Q3f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a613447ds100-fa19-mt2-Q3f-h3"
+        ],
+        "title": "Impact of Training Set Size",
+        "text": "Does increasing the size of the training set generally increase or decrease model variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease"
+        ]
+    }
+]

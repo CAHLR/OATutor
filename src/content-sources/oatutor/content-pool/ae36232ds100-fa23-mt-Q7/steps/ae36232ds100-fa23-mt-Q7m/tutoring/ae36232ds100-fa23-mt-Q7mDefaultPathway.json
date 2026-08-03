@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ae36232ds100-fa23-mt-Q7m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "Gradient descent is an optimization algorithm used to minimize a function by iteratively moving towards the steepest descent direction. There are different types of gradient descent, each with its own characteristics.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-mt-Q7m-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-fa23-mt-Q7m-h1"
+        ],
+        "title": "Types of Gradient Descent",
+        "text": "The main types of gradient descent are batch gradient descent, stochastic gradient descent, and mini-batch gradient descent. Each type has different convergence properties.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-mt-Q7m-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-fa23-mt-Q7m-h2"
+        ],
+        "title": "Convergence of Gradient Descent",
+        "text": "For convex functions, gradient descent is guaranteed to converge to the global minimum if the learning rate is chosen appropriately. However, the type of gradient descent can affect the convergence behavior.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-mt-Q7m-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ae36232ds100-fa23-mt-Q7m-h3"
+        ],
+        "title": "Stochastic Gradient Descent Characteristics",
+        "text": "Stochastic gradient descent (SGD) updates the parameters for each training example, which introduces noise into the optimization process. This noise can help escape local minima but may also prevent convergence to the exact global minimum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

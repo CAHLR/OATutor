@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a977a7fds100-fa18-final-Q14h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plot",
+        "text": "The plot shows a U-shaped curve as the value of $$d$$ increases. This suggests that the y-axis could represent a measure that decreases to a minimum and then increases again.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q14h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q14h-h1"
+        ],
+        "title": "Possible Y-Axis Labels",
+        "text": "Consider what measures in machine learning might have a U-shaped relationship with the number of features or complexity. Common examples include error rates, bias, variance, or a combination of these.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q14h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "2|4"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q14h-h2"
+        ],
+        "title": "Identifying the Y-Axis",
+        "text": "Given the U-shaped curve, which of the following could the y-axis represent? Select all that apply: 1) Training error, 2) Test error, 3) Model complexity, 4) Variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "1) Training error",
+            "2) Test error",
+            "2|4",
+            "3) Model complexity",
+            "4) Variance"
+        ]
+    }
+]

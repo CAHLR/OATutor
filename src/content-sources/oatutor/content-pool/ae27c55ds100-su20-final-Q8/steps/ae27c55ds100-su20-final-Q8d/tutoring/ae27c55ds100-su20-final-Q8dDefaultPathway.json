@@ -1,0 +1,82 @@
+[
+    {
+        "id": "ae27c55ds100-su20-final-Q8d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Vectors",
+        "text": "The vectors $u_1$ and $u_2$ are given as columns of a matrix $U$. Consider what properties these vectors should have in the context of the SVD.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su20-final-Q8d-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-su20-final-Q8d-h1"
+        ],
+        "title": "Orthogonality Check",
+        "text": "In the context of SVD, the columns of the matrix $U$ should be orthogonal. Check if $u_1$ and $u_2$ are orthogonal.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su20-final-Q8d-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "ae27c55ds100-su20-final-Q8d-h2"
+        ],
+        "title": "Calculate the Dot Product",
+        "text": "Calculate the dot product of $u_1$ and $u_2$. If the dot product is zero, the vectors are orthogonal.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su20-final-Q8d-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-su20-final-Q8d-h3"
+        ],
+        "title": "Normalization Check",
+        "text": "Each column vector in the matrix $U$ should be a unit vector. Check if $u_1$ and $u_2$ are unit vectors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su20-final-Q8d-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "ae27c55ds100-su20-final-Q8d-h4"
+        ],
+        "title": "Calculate the Norm",
+        "text": "Calculate the norm of $u_1$ and $u_2$. If the norm is $$1$$, the vector is a unit vector.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su20-final-Q8d-h6",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-su20-final-Q8d-h5"
+        ],
+        "title": "Conclusion",
+        "text": "Based on the orthogonality and normalization checks, determine if the combination of $u_1$ and $u_2$ is valid.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

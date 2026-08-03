@@ -1,0 +1,81 @@
+[
+    {
+        "id": "a613447ds100-su19-final-Q6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding $\\theta_0$",
+        "text": "In the model $f_{\\theta}(x)=\\theta_0$, $\\theta_0$ represents the intercept of the model. It is the predicted total when no vegetables are bought and the type of meat is not considered.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6a-h1"
+        ],
+        "title": "Interpreting the Data",
+        "text": "Look at the table and the box plot. The box plot shows the distribution of total costs for different types of meat. Consider how the intercept $\\theta_0$ might relate to these distributions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6a-h2"
+        ],
+        "title": "Analyzing the Box Plot",
+        "text": "The box plot shows that the total cost is generally higher for fish compared to beef and chicken. This suggests that the intercept $\\theta_0$ might be influenced by the average cost of the meat types.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Fish"
+        ],
+        "dependencies": [
+            "a613447ds100-su19-final-Q6a-h3"
+        ],
+        "title": "Determining $\\theta_0$",
+        "text": "Based on the box plot, which type of meat has the highest average total cost?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Beef",
+            "Chicken",
+            "Fish"
+        ]
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Positive"
+        ],
+        "dependencies": [
+            "a613447ds100-su19-final-Q6a-h4"
+        ],
+        "title": "Conclusion about $\\theta_0$",
+        "text": "Given that fish has the highest average total cost, what can we infer about the value of $\\theta_0$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Positive",
+            "Negative",
+            "Exactly $$0$$",
+            "Not enough info"
+        ]
+    }
+]

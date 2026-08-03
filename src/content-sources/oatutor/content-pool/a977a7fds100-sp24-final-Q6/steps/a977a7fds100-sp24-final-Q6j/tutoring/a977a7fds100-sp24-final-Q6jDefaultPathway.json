@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a977a7fds100-sp24-final-Q6j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LASSO Regression",
+        "text": "LASSO (Least Absolute Shrinkage and Selection Operator) regression is a type of linear regression that uses shrinkage. Shrinkage is where data values are shrunk towards a central point, like the mean. The LASSO procedure encourages simple, sparse models (i.e., models with fewer parameters).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp24-final-Q6j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-sp24-final-Q6j-h1"
+        ],
+        "title": "Effect of Lambda in LASSO",
+        "text": "In LASSO regression, the parameter lambda (\u03bb) controls the amount of shrinkage applied to the coefficients. A higher \u03bb results in more shrinkage, which can lead to higher bias and lower variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp24-final-Q6j-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-sp24-final-Q6j-h2"
+        ],
+        "title": "Comparing Bias and Variance",
+        "text": "Model A has a bias squared of $$2$$ and a variance of $$12$$, while Model B has a bias squared of $$4$$ and a variance of $$1$$. Consider how the bias and variance are affected by the value of \u03bb in LASSO regression.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp24-final-Q6j-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Model B had a higher \u03bb value."
+        ],
+        "dependencies": [
+            "a977a7fds100-sp24-final-Q6j-h3"
+        ],
+        "title": "Analyzing Model B",
+        "text": "Given that Model B has a higher bias squared and lower variance compared to Model A, what can you infer about the \u03bb value used in Model B?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Model B had a higher \u03bb value.",
+            "Model B had a lower \u03bb value."
+        ]
+    }
+]

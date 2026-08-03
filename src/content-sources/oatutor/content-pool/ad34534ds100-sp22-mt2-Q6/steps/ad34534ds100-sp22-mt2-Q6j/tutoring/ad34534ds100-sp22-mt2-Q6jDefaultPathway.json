@@ -1,0 +1,48 @@
+[
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Dataset",
+        "text": "The dataset contains information about what students ate for lunch, including the foods, servings, and total calories. Each row represents a student's lunch on a specific day.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6j-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6j-h1"
+        ],
+        "title": "Identifying Relevant Columns",
+        "text": "To complete the bootstrap code, identify which columns are relevant for the analysis. Consider what data is needed to calculate the parameter of interest.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp22-mt2-Q6j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$[\"calories_1*d_ago\" \"calories_2*d_ago\"]$$"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp22-mt2-Q6j-h2"
+        ],
+        "title": "Selecting Columns for $$boot_X$$",
+        "text": "Which columns should be selected for $$boot_X$$ in the bootstrap code?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$[\"calories_1*d_ago\" \"calories_2*d_ago\"]$$",
+            "[\"calories\"]",
+            "$$[\"calories_1*d_ago\"]$$",
+            "$$[\"person\" \"calories_1*d_ago\" \"calories_2*d_ago\"]$$",
+            "$$[\"calories_1*d_ago\" \"calories_2*d_ago\" \"calories\"]$$"
+        ]
+    }
+]

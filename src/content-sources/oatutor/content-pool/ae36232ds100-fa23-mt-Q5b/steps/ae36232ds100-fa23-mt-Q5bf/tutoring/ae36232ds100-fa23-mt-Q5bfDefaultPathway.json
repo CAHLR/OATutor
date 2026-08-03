@@ -1,0 +1,62 @@
+[
+    {
+        "id": "ae36232ds100-fa23-mt-Q5bf-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Loss Functions",
+        "text": "Loss functions are used to measure how well a model's predictions match the actual data. They help in optimizing the model parameters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-mt-Q5bf-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-fa23-mt-Q5bf-h1"
+        ],
+        "title": "Mean Squared Error (MSE)",
+        "text": "MSE is a common loss function that calculates the average of the squares of the errors. It is given by sum{i\\=1}{n}{(y_i-hat{y}_i)**2}/n.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-mt-Q5bf-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-fa23-mt-Q5bf-h2"
+        ],
+        "title": "Penalizing Outliers",
+        "text": "Loss functions that use higher powers of the error term (e.g., $$3$$, $$4$$, 5) penalize larger errors more harshly than MSE, which uses a power of $$2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-mt-Q5bf-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "sum{i\\=1}{n}{(y_i-hat{y}_i)**4}/n, sum{i\\=1}{n}{(y_i-hat{y}_i)**5}/n, sum{i\\=1}{n}{abs((y_i-hat{y}_i)**5)}/n"
+        ],
+        "dependencies": [
+            "ae36232ds100-fa23-mt-Q5bf-h3"
+        ],
+        "title": "Identifying Suitable Loss Functions",
+        "text": "Which loss functions from the list penalize outliers more harshly than MSE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "sum{i\\=1}{n}{(y_i-hat{y}_i)**3}/n",
+            "sum{i\\=1}{n}{(y_i-hat{y}_i)**4}/n",
+            "sum{i\\=1}{n}{(y_i-hat{y}_i)**4}/n, sum{i\\=1}{n}{(y_i-hat{y}_i)**5}/n, sum{i\\=1}{n}{abs((y_i-hat{y}_i)**5)}/n",
+            "sum{i\\=1}{n}{(y_i-hat{y}_i)**5}/n",
+            "sum{i\\=1}{n}{(y_i-hat{y}_i)}/n",
+            "sum{i\\=1}{n}{abs((y_i-hat{y}_i)**5)}/n",
+            "sum{i\\=1}{n}{abs(y_i-hat{y}_i)**3}/n"
+        ]
+    }
+]

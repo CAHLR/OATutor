@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Odds",
+        "text": "The odds of survival for a male passenger is given by the model as $$m$$. This is calculated based on the logistic regression equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7l-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-mt2-Q7l-h1"
+        ],
+        "title": "Logistic Regression Equation",
+        "text": "The logistic regression equation is given by: $$\\ln\\left(odds\\right)=intercept+beta1 age+beta2 sex$$. Here, sex is a binary variable (0 for female, $$1$$ for male).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7l-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-mt2-Q7l-h2"
+        ],
+        "title": "Calculating Odds for Females",
+        "text": "For a female passenger, the sex variable is $$0$$. Substitute this into the logistic regression equation to find the odds for females.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7l-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\ln\\left(f\\right)=-1.2-0.005age$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa19-mt2-Q7l-h3"
+        ],
+        "title": "Substitute Values",
+        "text": "Substitute the values into the logistic regression equation: $$\\ln\\left(f\\right)=intercept+beta1 age+0beta2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7l-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$f={me}^{2.5}$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa19-mt2-Q7l-h4"
+        ],
+        "title": "Relate Male and Female Odds",
+        "text": "Use the relationship between male and female odds: $$f={me}^{beta2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

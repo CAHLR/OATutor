@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a5d4609ds100-su25-final-Q3da-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA and SVD",
+        "text": "PCA (Principal Component Analysis) is a technique used to emphasize variation and bring out strong patterns in a dataset. It is often used to make data easy to explore and visualize. PCA uses SVD (Singular Value Decomposition) to decompose the data matrix into three matrices: U, S, and $$V^T$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su25-final-Q3da-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su25-final-Q3da-h1"
+        ],
+        "title": "Role of the S Matrix",
+        "text": "The S matrix in SVD contains the singular values, which are the square roots of the eigenvalues of the covariance matrix of the data. These values indicate the amount of variance captured by each principal component.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su25-final-Q3da-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su25-final-Q3da-h2"
+        ],
+        "title": "Interpreting Singular Values",
+        "text": "The singular values in the S matrix are $$100$$, $$88$$, and $$8$$. These values suggest the amount of variance captured by each of the principal components. The first component captures the most variance, followed by the second, and then the third.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su25-final-Q3da-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{100}{100+88+8}$$"
+        ],
+        "dependencies": [
+            "a5d4609ds100-su25-final-Q3da-h3"
+        ],
+        "title": "Calculating Variance Explained",
+        "text": "To find the proportion of variance explained by each component, divide each singular value by the sum of all singular values. What is the proportion of variance explained by the first component?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su25-final-Q3da-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{100}{196}$$"
+        ],
+        "dependencies": [
+            "a5d4609ds100-su25-final-Q3da-h4"
+        ],
+        "title": "Proportion of Variance Explained by the First Component",
+        "text": "Calculate the proportion of variance explained by the first component using the singular values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

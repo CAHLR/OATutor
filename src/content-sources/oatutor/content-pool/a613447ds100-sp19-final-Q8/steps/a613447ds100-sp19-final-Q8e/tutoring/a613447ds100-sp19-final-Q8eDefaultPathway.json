@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a613447ds100-sp19-final-Q8e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias in Estimators",
+        "text": "Bias in an estimator refers to the difference between the expected value of the estimator and the true value of the parameter being estimated. Consider how increasing the number of observations might affect this difference.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp19-final-Q8e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp19-final-Q8e-h1"
+        ],
+        "title": "Effect of More Observations",
+        "text": "When you increase the number of observations, you generally get a better estimate of the true parameter. Think about how this might affect the bias of the estimator.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp19-final-Q8e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It would decrease"
+        ],
+        "dependencies": [
+            "a613447ds100-sp19-final-Q8e-h2"
+        ],
+        "title": "Comparing One Roll to $$100$$ Rolls",
+        "text": "Consider the difference in the maximum outcome when rolling a die once versus rolling it $$100$$ times. How does this affect the bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It would increase",
+            "It would decrease",
+            "It would stay the same"
+        ]
+    }
+]

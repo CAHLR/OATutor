@@ -1,0 +1,46 @@
+[
+    {
+        "id": "acab12dds100-sp18-final-Q2a,Q2c,Q2d,Q2ed-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Task",
+        "text": "To determine the growth rate of yeast cells, we need to estimate a parameter based on observed data. This involves using statistical methods to infer the growth rate from the data collected.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp18-final-Q2a,Q2c,Q2d,Q2ed-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Estimation"
+        ],
+        "dependencies": [
+            "acab12dds100-sp18-final-Q2a,Q2c,Q2d,Q2ed-h1"
+        ],
+        "title": "Identifying the Statistical Problem",
+        "text": "What statistical method would you use to infer a parameter from observed data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Estimation",
+            "Prediction",
+            "Causal Inference"
+        ]
+    },
+    {
+        "id": "acab12dds100-sp18-final-Q2a,Q2c,Q2d,Q2ed-h3",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-sp18-final-Q2a,Q2c,Q2d,Q2ed-h2"
+        ],
+        "title": "Differentiating Between Statistical Problems",
+        "text": "Estimation involves determining a parameter's value based on sample data. Prediction involves forecasting future outcomes based on current data. Causal inference involves determining the cause-and-effect relationship between variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

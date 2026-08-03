@@ -1,0 +1,82 @@
+[
+    {
+        "id": "ae27c55ds100-su20-final-Q8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Matrix Columns",
+        "text": "The vectors $u_1$ and $u_2$ are columns of the matrix $U$ from the Singular Value Decomposition (SVD). Each column in $U$ is an orthonormal vector.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su20-final-Q8b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-su20-final-Q8b-h1"
+        ],
+        "title": "Orthonormal Vectors",
+        "text": "Orthonormal vectors are vectors that are both orthogonal (perpendicular) to each other and have a unit length (magnitude of 1).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su20-final-Q8b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-su20-final-Q8b-h2"
+        ],
+        "title": "Checking Validity",
+        "text": "To determine if the combination of $u_1$ and $u_2$ is valid, check if they are orthonormal. This means checking if their dot product is zero and if each vector has a magnitude of $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su20-final-Q8b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "ae27c55ds100-su20-final-Q8b-h3"
+        ],
+        "title": "Dot Product of $u_1$ and $u_2$",
+        "text": "Calculate the dot product of $u_1$ and $u_2$. If the dot product is zero, they are orthogonal.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su20-final-Q8b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "ae27c55ds100-su20-final-Q8b-h4"
+        ],
+        "title": "Magnitude of $u_1$ and $u_2$",
+        "text": "Calculate the magnitude of $u_1$ and $u_2$. If both have a magnitude of $$1$$, they are unit vectors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su20-final-Q8b-h6",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-su20-final-Q8b-h5"
+        ],
+        "title": "Conclusion on Validity",
+        "text": "If $u_1$ and $u_2$ are orthonormal, then the combination of values is valid. Otherwise, it is not.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "id": "a8cec5cds100-fa23-mt-Q5bb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Loss Functions",
+        "text": "Loss functions are used to measure how well a model's predictions match the actual data. Some loss functions penalize outliers more harshly than others. Consider how the power of the difference between actual and predicted values affects the penalty on outliers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q5bb-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q5bb-h1"
+        ],
+        "title": "Mean Squared Error (MSE)",
+        "text": "The Mean Squared Error (MSE) is calculated as sum{i extbackslash=n}{1}{n}{(y_i- extbackslash hat{y}_i)**2}. It penalizes larger errors more than smaller ones, but there are other functions that penalize even more harshly.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q5bb-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q5bb-h1"
+        ],
+        "title": "Higher Powers and Absolute Values",
+        "text": "Consider how using higher powers or absolute values in the loss function affects the penalty on outliers. Functions with higher powers or absolute values tend to penalize outliers more harshly.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q5bb-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "\u2022 sum{i extbackslash=n}{1}{n}{(y_i- extbackslash hat{y}_i)**4}\\n\u2022 sum{i extbackslash=n}{1}{n}{(y_i- extbackslash hat{y}_i)**5}\\n\u2022 sum{i extbackslash=n}{1}{n}{abs((y_i- extbackslash hat{y}_i)**5)}"
+        ],
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q5bb-h3"
+        ],
+        "title": "Analyzing Each Option",
+        "text": "Evaluate each option to determine if it penalizes outliers more harshly than MSE. Consider the power of the difference term in each function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            ">\u2022 sum{i extbackslash=n}{1}{n}{(y_i- extbackslash hat{y}_i)**3}",
+            ">\u2022 sum{i extbackslash=n}{1}{n}{(y_i- extbackslash hat{y}_i)**4}",
+            ">\u2022 sum{i extbackslash=n}{1}{n}{(y_i- extbackslash hat{y}_i)**5}",
+            ">\u2022 sum{i extbackslash=n}{1}{n}{abs((y_i- extbackslash hat{y}_i)**5)}",
+            ">\u2022 sum{i extbackslash=n}{1}{n}{abs(y_i- extbackslash hat{y}_i)**3}",
+            "\u2022 sum{i extbackslash=n}{1}{n}{(y_i- extbackslash hat{y}_i)**4}\\n\u2022 sum{i extbackslash=n}{1}{n}{(y_i- extbackslash hat{y}_i)**5}\\n\u2022 sum{i extbackslash=n}{1}{n}{abs((y_i- extbackslash hat{y}_i)**5)}",
+            "\u2022 sum{i extbackslash=n}{1}{n}{(y_i- extbackslash hat{y}_i)}"
+        ]
+    }
+]

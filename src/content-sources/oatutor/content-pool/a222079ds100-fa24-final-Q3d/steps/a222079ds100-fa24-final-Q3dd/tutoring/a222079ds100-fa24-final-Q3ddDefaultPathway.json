@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a222079ds100-fa24-final-Q3dd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model Equation",
+        "text": "The model equation given is $$self_{rating}=\\theta_0+\\theta_1 critic_1$$. This equation is used to predict the $$self_{rating}$$ based on $$critic_{1's}$$ rating.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa24-final-Q3dd-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa24-final-Q3dd-h1"
+        ],
+        "title": "Effect of Subtracting the Mean",
+        "text": "Subtracting the mean from $$self_{rating}$$ will change the values of $$self_{rating}$$ but will not affect the relationship between $$self_{rating}$$ and $$critic_1$$ in the model equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa24-final-Q3dd-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa24-final-Q3dd-h2"
+        ],
+        "title": "Impact on $$\\theta_1$$",
+        "text": "The parameter $$\\theta_1$$ represents the change in $$self_{rating}$$ for a one-unit change in $$critic_1$$. Subtracting the mean from $$self_{rating}$$ does not change this relationship.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa24-final-Q3dd-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a222079ds100-fa24-final-Q3dd-h3"
+        ],
+        "title": "Conclusion on $$\\theta_1$$",
+        "text": "Does subtracting the mean of $$self_{rating}$$ affect the value of $$\\theta_1$$ in the model equation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

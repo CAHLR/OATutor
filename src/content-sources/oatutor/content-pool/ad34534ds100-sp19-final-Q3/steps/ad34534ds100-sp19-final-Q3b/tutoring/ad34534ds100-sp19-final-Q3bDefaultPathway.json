@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ad34534ds100-sp19-final-Q3b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model is given by $$y_i=\\beta_0+x_i \\beta_1+f{\\left(x_i\\right)} \\beta_2$$. We need to determine if $$f(x)=x$$ can fit the data points in the scatterplot.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp19-final-Q3b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp19-final-Q3b-h1"
+        ],
+        "title": "Analyzing the Scatterplot",
+        "text": "Observe the scatterplot. Does the relationship between $$x$$ and $$y$$ appear linear? If so, $$f(x)=x$$ might be a suitable choice.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp19-final-Q3b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp19-final-Q3b-h2"
+        ],
+        "title": "Checking Linearity",
+        "text": "Does the scatterplot show a linear relationship between $$x$$ and $$y$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "ad34534ds100-sp19-final-Q3b-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp19-final-Q3b-h3"
+        ],
+        "title": "Conclusion",
+        "text": "If the relationship is linear, then $$f(x)=x$$ can be used to fit the data using the given model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a91f150ds100-sp22-mt2-Q5e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Exponential Regularization Function",
+        "text": "The regularization function is defined as Pow(theta)=lambda*sum{i=1}{p}{10**theta_i}. As lambda increases, the regularization term becomes more significant in the optimization problem.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp22-mt2-Q5e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp22-mt2-Q5e-h1"
+        ],
+        "title": "Effect of Large Lambda on Theta",
+        "text": "Consider what happens to the value of $${10}^{\\theta_i}$$ as $$\\theta_i$$ becomes very negative. How does this affect the regularization term?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp22-mt2-Q5e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp22-mt2-Q5e-h2"
+        ],
+        "title": "Minimizing the Regularization Term",
+        "text": "To minimize the regularization term, the values of $$\\theta_i$$ should be adjusted such that $${10}^{\\theta_i}$$ is minimized. What happens to $${10}^{\\theta_i}$$ as $$\\theta_i$$ approaches negative $$\\infty$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp22-mt2-Q5e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "hat{theta}->-inf"
+        ],
+        "dependencies": [
+            "a91f150ds100-sp22-mt2-Q5e-h3"
+        ],
+        "title": "Conclusion on Optimal Theta",
+        "text": "Based on the behavior of $${10}^{\\theta_i}$$ as $$\\theta_i$$ approaches negative $$\\infty$$, what can we conclude about the entries of the optimal hat{theta} vector as lambda approaches positive $$\\infty$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "hat{theta}->-inf",
+            "hat{theta}->0",
+            "hat{theta}->inf",
+            "hat{theta} stays constant",
+            "hat{theta} approaches the OLS estimate"
+        ]
+    }
+]

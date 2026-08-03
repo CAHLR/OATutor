@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a272acfds100-sp19-final-Q6cc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Matrix $X$",
+        "text": "The matrix $X$ is a four-column matrix where each column represents a different variable: number of blocks, total distance, fare, and a column of all ones. This matrix is centered before applying PCA.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp19-final-Q6cc-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp19-final-Q6cc-h1"
+        ],
+        "title": "Singular Value Decomposition (SVD)",
+        "text": "The singular value decomposition of a matrix $X$ is given by $X=U*Sigma*V**T$. Here, $U$ and $V$ are orthogonal matrices, and $Sigma$ is a diagonal matrix containing the singular values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp19-final-Q6cc-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp19-final-Q6cc-h2"
+        ],
+        "title": "Dot Product of Columns",
+        "text": "The dot product of two columns in a matrix is the sum of the products of their corresponding entries. If the dot product of the first and second columns of $V$ is equal to $$1$$, it implies a specific relationship between these columns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp19-final-Q6cc-h4",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp19-final-Q6cc-h3"
+        ],
+        "title": "Conclusion on the Dot Product",
+        "text": "Given that $V$ is orthogonal, the dot product of any two different columns of $V$ should be $$0$$, not $$1$$. Therefore, the statement is false.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

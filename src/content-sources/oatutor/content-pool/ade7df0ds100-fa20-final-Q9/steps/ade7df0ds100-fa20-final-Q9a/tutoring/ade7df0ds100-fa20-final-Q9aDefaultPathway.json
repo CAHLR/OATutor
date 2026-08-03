@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ade7df0ds100-fa20-final-Q9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatter Plot",
+        "text": "Observe the distribution of the two types of wine in the scatter plot. Notice how the points for type $$0$$ and type $$1$$ are distributed along the hue and abv axes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa20-final-Q9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa20-final-Q9a-h1"
+        ],
+        "title": "Analyzing the Hue Feature",
+        "text": "Look at how the hue values are distributed for each wine type. Does one type tend to have higher or lower hue values compared to the other?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa20-final-Q9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa20-final-Q9a-h2"
+        ],
+        "title": "Impact of Hue on Classification",
+        "text": "If one type of wine generally has higher hue values, what sign would you expect the weight for the hue feature to have in the logistic regression model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa20-final-Q9a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Negative"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa20-final-Q9a-h3"
+        ],
+        "title": "Determining the Sign of the Hue Weight",
+        "text": "Based on the scatter plot, if type $$1$$ wines generally have lower hue values than type $$0$$ wines, what sign should the weight for hue have?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Positive",
+            "Negative"
+        ]
+    }
+]

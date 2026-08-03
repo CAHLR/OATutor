@@ -1,0 +1,88 @@
+[
+    {
+        "id": "a410fc9row10c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Sensitivity to Outliers",
+        "text": "Consider how outliers affect the Mean Squared Error (MSE) and Mean Absolute Error (MAE). Which one is more sensitive to large deviations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row10c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row10c-h1"
+        ],
+        "title": "Impact of Dataset Size",
+        "text": "Think about how the size of the dataset might influence the sensitivity of MSE and MAE to outliers. Does a larger dataset reduce the impact of outliers?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row10c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "MSE"
+        ],
+        "dependencies": [
+            "a410fc9row10c-h2"
+        ],
+        "title": "Comparing MSE and MAE",
+        "text": "Which error metric, MSE or MAE, squares the error terms, making it more sensitive to larger errors?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "MSE",
+            "MAE"
+        ]
+    },
+    {
+        "id": "a410fc9row10c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "MSE is more affected"
+        ],
+        "dependencies": [
+            "a410fc9row10c-h3"
+        ],
+        "title": "Effect of Outliers on MSE",
+        "text": "If an outlier is present in the dataset, how does it affect the MSE compared to the MAE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "MSE is more affected",
+            "MAE is more affected",
+            "Both are equally affected"
+        ]
+    },
+    {
+        "id": "a410fc9row10c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a410fc9row10c-h4"
+        ],
+        "title": "Dataset Size and Error Metrics",
+        "text": "Does increasing the dataset size generally reduce the impact of outliers on both MSE and MAE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

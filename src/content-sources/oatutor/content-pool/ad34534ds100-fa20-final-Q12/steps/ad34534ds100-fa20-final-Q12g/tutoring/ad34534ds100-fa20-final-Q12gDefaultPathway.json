@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ad34534ds100-fa20-final-Q12g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Models",
+        "text": "Model A includes height in inches $$h_{in}$$, height in centimeters $$h_{cm}$$, weight in pounds $$w_{lb}$$, and weight in kilograms $$w_{kg}$$. Model B includes only height in centimeters $$h_{cm}$$ and weight in kilograms $$w_{kg}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa20-final-Q12g-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa20-final-Q12g-h1"
+        ],
+        "title": "Confidence Intervals and Zero",
+        "text": "A confidence interval that includes zero suggests that the parameter might not be significantly different from zero. Consider the variables included in each model and their potential impact on the prediction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

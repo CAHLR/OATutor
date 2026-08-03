@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a8cec5cds100-sp25-final-Q2l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Validation",
+        "text": "In 4-fold cross-validation, the dataset is divided into $$4$$ equal parts. Each part is used as a validation set once, while the remaining parts are used for training.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2l-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2l-h1"
+        ],
+        "title": "Data Point Usage in Cross-Validation",
+        "text": "Consider how each data point is used in the training and validation process across the folds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2l-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2l-h2"
+        ],
+        "title": "Data Point Inclusion",
+        "text": "In 4-fold cross-validation, how many times is each data point included in the training set?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2l-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2l-h3"
+        ],
+        "title": "Validation Set Usage",
+        "text": "In 4-fold cross-validation, how many times is each data point included in the validation set?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2l-h5",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2l-h4"
+        ],
+        "title": "Conclusion on Data Point Usage",
+        "text": "Since each data point is used exactly once in the validation set across the $$4$$ folds, this statement is always true.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

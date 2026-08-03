@@ -1,0 +1,18 @@
+{
+    "id": "a5dd512ds100-su19-final-Q7a",
+    "stepAnswer": [
+        "$$\\theta**{(t+1)}=y-\\sigma(\\theta**{(t)}-2)$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Suppose we use the following regression model with a single model weight $$\\theta$$ and loss function:\\n$$f_{\\theta}(x)=\\sigma(\\theta-2)$$\\n$$l(\\theta,x,y)=-y\\log{f_{\\theta}(x)}-(1-y)\\log(1-f_{\\theta}(x))+\\frac{1}{2}\\theta**{2}$$\\nDerive the stochastic gradient descent update rule for this model and loss function, assuming that the learning rate $$\\alpha=1$$\\nYour answer may only use the variables $$\\theta**{(t+1)}$$ and $$\\theta**{(t)}$$ and $$y$$ and the sigmoid function $$\\sigma.$$",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "$$\\theta**{(t+1)}=\\theta**{(t)}+(y-\\sigma(\\theta**{(t)}-2))$$",
+        "$$\\theta**{(t+1)}=y-\\sigma(\\theta**{(t)}-2)$$",
+        "$$\\theta**{(t+1)}=\\sigma(\\theta**{(t)}-2)-y$$",
+        "$$\\theta**{(t+1)}=2\\theta**{(t)}-y+\\sigma(\\theta**{(t)}-2)$$",
+        "$$\\theta**{(t+1)}=\\theta**{(t)}-(y-\\sigma(\\theta**{(t)}-2))$$"
+    ]
+}

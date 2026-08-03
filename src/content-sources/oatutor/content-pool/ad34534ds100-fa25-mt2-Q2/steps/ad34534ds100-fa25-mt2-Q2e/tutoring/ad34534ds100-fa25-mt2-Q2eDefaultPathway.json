@@ -1,0 +1,75 @@
+[
+    {
+        "id": "ad34534ds100-fa25-mt2-Q2e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Orthogonality",
+        "text": "In the context of linear regression, the residuals $$(Y-\\hat{Y})$$ are orthogonal to the fitted values (\\hat{Y}). This means that the dot product of the residuals and the fitted values is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q2e-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q2e-h1"
+        ],
+        "title": "Geometric Interpretation",
+        "text": "Think of the residuals as the component of Y that is not explained by the model. The orthogonality implies that this component is perpendicular to the plane formed by the fitted values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q2e-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q2e-h2"
+        ],
+        "title": "Dot Product Calculation",
+        "text": "Calculate the dot product of $$(Y-\\hat{Y})$$ and \\hat{Y}. What should this value be if they are orthogonal?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q2e-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q2e-h3"
+        ],
+        "title": "Residuals and Fitted Values",
+        "text": "The residuals are the differences between the observed values and the predicted values. In OLS, these residuals are orthogonal to the space spanned by the columns of the design matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q2e-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Orthogonal to"
+        ],
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q2e-h4"
+        ],
+        "title": "Orthogonality Check",
+        "text": "If $$(Y-\\hat{Y})$$ is orthogonal to \\hat{Y}, what does this imply about their relationship?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Orthogonal to",
+            "In the span of",
+            "NOT orthogonal to and NOT in the span of"
+        ]
+    }
+]

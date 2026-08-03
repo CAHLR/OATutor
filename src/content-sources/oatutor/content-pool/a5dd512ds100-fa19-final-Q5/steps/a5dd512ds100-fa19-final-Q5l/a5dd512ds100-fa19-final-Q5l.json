@@ -1,0 +1,15 @@
+{
+    "id": "a5dd512ds100-fa19-final-Q5l",
+    "stepAnswer": [
+        "TRUE"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "The cross entropy loss is still well defined for all possible outputs of our model.",
+    "stepBody": "In this part, we'll consider an alternative to the logistic function.\\nInstead of using the logistic function as our choice of $$f, $$ let's say we instead use a scaled inverse tangent function\\n$$f(x)=\\frac{1}{\\pi}\\operatorname{arctan}(x)+\\frac{1}{2}$$\\nThis choice of $$f$$ has the exact same tail-end behavior as $$\\sigma(x).$$ In other words, it is always between $$0$$ and $$1$$.\\nIs the above true?##figure1.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "TRUE",
+        "FALSE"
+    ]
+}

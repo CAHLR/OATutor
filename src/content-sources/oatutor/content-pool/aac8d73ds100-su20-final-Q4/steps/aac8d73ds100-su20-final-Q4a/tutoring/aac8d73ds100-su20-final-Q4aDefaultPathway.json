@@ -1,0 +1,57 @@
+[
+    {
+        "id": "aac8d73ds100-su20-final-Q4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean-Centering",
+        "text": "Mean-centering involves subtracting the mean of each column from the respective column values, except for the intercept column. This process ensures that the mean of each column is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q4a-h1"
+        ],
+        "title": "Effect of Mean-Centering on Intercept",
+        "text": "When you mean-center the data, the intercept term in the linear regression model represents the mean of the response variable. This is because the mean of the predictors is zero, so the intercept captures the average value of the response.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q4a-h2"
+        ],
+        "title": "Comparing Intercepts in Centered and Uncentered Models",
+        "text": "In both centered and uncentered models, the intercept term is calculated differently. In the centered model, the intercept is the mean of the response variable, while in the uncentered model, it is calculated based on the original data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q4a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q4a-h3"
+        ],
+        "title": "Analyzing the Intercept Terms",
+        "text": "Given that mean-centering affects the intercept term, consider how this impacts the equality of the intercepts in the two models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

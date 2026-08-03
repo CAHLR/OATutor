@@ -1,0 +1,15 @@
+{
+    "id": "acab12dds100-su25-final-Q4d,Q4f,Q4g,Q4ha",
+    "stepAnswer": [
+        "FALSE"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "This histogram is an approximation of the distribution of $$X_1$$ (or any one of $$X_1,...,X_{1000}$$ since they are i.i.d.).",
+    "stepBody": "The team then draws 100,000 bootstrap samples and computes $$\\hat{\\alpha}$$ on each sample. The sample proportions are plotted in the histogram. The two dashed lines represent the lower and upper bounds of the 95% confidence interval for $$p$$ computed on the bootstrap samples.\\nSuppose $$\\hat{\\alpha}=0.67$$ for the original sample. Using this information and the histogram, which of the following must be true?##figure1.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "TRUE",
+        "FALSE"
+    ]
+}

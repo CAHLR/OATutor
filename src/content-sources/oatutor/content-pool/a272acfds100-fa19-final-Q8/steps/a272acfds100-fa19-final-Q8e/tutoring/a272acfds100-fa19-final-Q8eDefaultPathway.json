@@ -1,0 +1,50 @@
+[
+    {
+        "id": "a272acfds100-fa19-final-Q8e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA Components",
+        "text": "In PCA, we often deal with matrices derived from the Singular Value Decomposition (SVD) of a data matrix. The SVD of a matrix X is given by X=U*\u03a3*V**T. Each component in this decomposition has a specific role in PCA.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa19-final-Q8e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-fa19-final-Q8e-h1"
+        ],
+        "title": "Identifying the Correct Matrix",
+        "text": "When creating 2D PCA scatter plots, we typically plot the first two principal components. These components are derived from the matrices obtained in the SVD. Consider which matrices are involved in forming these components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa19-final-Q8e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "U*\u03a3"
+        ],
+        "dependencies": [
+            "a272acfds100-fa19-final-Q8e-h2"
+        ],
+        "title": "Selecting the Correct Object",
+        "text": "From the SVD, the matrix U contains the left singular vectors, and \u03a3 contains the singular values. The product U*\u03a3 gives us the principal components. Which object should be used for plotting the first two principal components?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "X",
+            "U",
+            "\u03a3",
+            "$$V^T$$",
+            "U*\u03a3",
+            "$$\\Sigma V^T$$",
+            "U*\u03a3*V**T"
+        ]
+    }
+]

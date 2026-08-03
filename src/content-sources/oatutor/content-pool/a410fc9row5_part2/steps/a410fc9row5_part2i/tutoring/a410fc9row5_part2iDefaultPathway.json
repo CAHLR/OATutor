@@ -1,0 +1,79 @@
+[
+    {
+        "id": "a410fc9row5_part2i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Matrix Dimensions",
+        "text": "In an OLS model, the response variable Y is a column vector with $$n$$ observations. This means it has $$n$$ rows and $$1$$ column. The design matrix X, which includes the intercept, has $$n$$ rows and $$p+1$$ columns. Make sure to consider these dimensions when evaluating the statement.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row5_part2i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row5_part2i-h1"
+        ],
+        "title": "Matrix Multiplication in OLS",
+        "text": "Recall that in OLS, the matrix multiplication X'X results in a square matrix with dimensions $$p+1$$ by $$p+1$$. This is because X has dimensions $$n$$ by $$p+1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row5_part2i-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$n$$ by $$1$$"
+        ],
+        "dependencies": [
+            "a410fc9row5_part2i-h1"
+        ],
+        "title": "Checking Dimensions of Y",
+        "text": "Given that Y is a column vector with $$n$$ observations, what should its dimensions be?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row5_part2i-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$n$$ by $$p+1$$"
+        ],
+        "dependencies": [
+            "a410fc9row5_part2i-h3"
+        ],
+        "title": "Dimensions of the Design Matrix X",
+        "text": "If X includes an intercept and $$p$$ features, what are the dimensions of X?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row5_part2i-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a410fc9row5_part2i-h4"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Based on the dimensions of Y and X, is the statement about Y's dimensions being $$n$$ by $$1$$ correct?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

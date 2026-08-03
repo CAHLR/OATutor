@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a410fc9row9p2h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Ordinary Least Squares",
+        "text": "Ordinary Least Squares (OLS) is a method for estimating the parameters in a linear regression model. It minimizes the sum of the squared differences between the observed and predicted values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row9p2h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row9p2h-h1"
+        ],
+        "title": "Mean Squared Error (MSE)",
+        "text": "Mean Squared Error is a measure of the average of the squares of the errors. It is used to evaluate the accuracy of a model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row9p2h-h3",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row9p2h-h2"
+        ],
+        "title": "OLS and MSE Relationship",
+        "text": "The OLS estimate minimizes the Mean Squared Error (MSE) by finding the best-fitting line through the data points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row9p2h-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a410fc9row9p2h-h3"
+        ],
+        "title": "Conclusion about OLS and MSE",
+        "text": "Based on the relationship between OLS and MSE, does the OLS estimate minimize the MSE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

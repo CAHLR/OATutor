@@ -1,0 +1,74 @@
+[
+    {
+        "id": "a272acfds100-sp25-final-Q4a,Q4ba-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It is often used to make data easy to explore and visualize.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp25-final-Q4a,Q4ba-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp25-final-Q4a,Q4ba-h1"
+        ],
+        "title": "Orthogonality in PCA",
+        "text": "In PCA, the principal components are orthogonal to each other. This means that the dot product of any two different principal components is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp25-final-Q4a,Q4ba-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a272acfds100-sp25-final-Q4a,Q4ba-h2"
+        ],
+        "title": "Orthogonality of PC1 and PC2",
+        "text": "If PC1 and PC2 are orthogonal, what is the dot product of PC1 and PC2?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp25-final-Q4a,Q4ba-h4",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp25-final-Q4a,Q4ba-h1"
+        ],
+        "title": "Variance in PCA",
+        "text": "Each principal component in PCA captures the maximum possible variance in the data, given the constraint that it is orthogonal to the preceding components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp25-final-Q4a,Q4ba-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "PC1"
+        ],
+        "dependencies": [
+            "a272acfds100-sp25-final-Q4a,Q4ba-h4"
+        ],
+        "title": "Variance of PC1 and PC2",
+        "text": "Which principal component captures more variance, PC1 or PC2?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "PC1",
+            "PC2"
+        ]
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a5dd512ds100-su20-final-Q6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Code",
+        "text": "The line of code is using a pandas DataFrame to filter out specific rows based on conditions. Let's break it down:\\n- `consoles['generation'] $$==$$ 6` filters for consoles that belong to the sixth generation.\\n- `consoles['year'] < 2000` filters for consoles released before the year $$2000$$.\\n- The `&` operator is used to combine these two conditions.\\n- `['name']` selects the 'name' column of the filtered DataFrame.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-final-Q6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su20-final-Q6a-h1"
+        ],
+        "title": "Checking the Conditions",
+        "text": "To determine if the code is correct, check if the conditions match the problem statement:\\n- Are we looking for sixth generation consoles?\\n- Are we filtering for consoles released before 2000?\\n- Are we selecting the correct column ('name')?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-final-Q6a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su20-final-Q6a-h2"
+        ],
+        "title": "Evaluating the Code",
+        "text": "Based on the problem statement, the code should find the names of all sixth generation consoles released before $$2000$$. Does the code achieve this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

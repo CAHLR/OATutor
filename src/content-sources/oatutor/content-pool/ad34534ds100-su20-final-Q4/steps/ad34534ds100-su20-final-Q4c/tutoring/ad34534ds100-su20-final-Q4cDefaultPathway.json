@@ -1,0 +1,69 @@
+[
+    {
+        "id": "ad34534ds100-su20-final-Q4c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The problem involves comparing two linear regression models: one using the original design matrix X and the other using the mean-centered design matrix X\u0303. Both models aim to minimize the sum of squared errors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su20-final-Q4c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-su20-final-Q4c-h1"
+        ],
+        "title": "Mean-Centering Effect",
+        "text": "Mean-centering the design matrix affects the intercept term but not the slope coefficients. This is because mean-centering shifts the data but does not change the relationships between variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su20-final-Q4c-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-su20-final-Q4c-h2"
+        ],
+        "title": "Intercept Term",
+        "text": "When the data is mean-centered, the intercept term in the regression model becomes zero. This is because the mean of each predictor variable is subtracted from the data, aligning the data around the origin.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su20-final-Q4c-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-su20-final-Q4c-h3"
+        ],
+        "title": "Slope Coefficients",
+        "text": "The slope coefficients (\u03b2) in the original model and (\u03b3) in the mean-centered model are the same. This is because mean-centering does not affect the relationships between the variables, only the intercept.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-su20-final-Q4c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ad34534ds100-su20-final-Q4c-h4"
+        ],
+        "title": "Conclusion",
+        "text": "Based on the properties of mean-centering, are the slope coefficients \u03b2 and \u03b3 the same?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a825455ds100-sp24-final-Q10g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding k-Means Clustering",
+        "text": "In k-Means clustering, the algorithm aims to minimize the distortion, which is the sum of squared distances between each point and its assigned cluster center. The algorithm iteratively updates the cluster centers and reassigns points to the nearest center.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp24-final-Q10g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-sp24-final-Q10g-h1"
+        ],
+        "title": "Convergence in k-Means",
+        "text": "The convergence of k-Means depends on the initial placement of cluster centers. It may converge to a local minimum rather than the global minimum of distortion.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp24-final-Q10g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a825455ds100-sp24-final-Q10g-h2"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Consider whether k-Means always finds the global minimum of distortion regardless of the starting configuration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

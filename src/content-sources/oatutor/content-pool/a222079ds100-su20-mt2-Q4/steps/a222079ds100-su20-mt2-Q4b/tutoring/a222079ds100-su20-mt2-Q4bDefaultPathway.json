@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a222079ds100-su20-mt2-Q4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding transforms a categorical variable into a binary matrix. Each category is represented by a column, and a row has a '1' in the column corresponding to its category and '0' elsewhere.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-mt2-Q4b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su20-mt2-Q4b-h1"
+        ],
+        "title": "Adding an Intercept Term",
+        "text": "When adding an intercept term to a design matrix, you add a column of ones. This column does not affect the rank of the matrix if the other columns are linearly independent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-mt2-Q4b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su20-mt2-Q4b-h2"
+        ],
+        "title": "Understanding Matrix Rank",
+        "text": "The rank of a matrix is the maximum number of linearly independent column vectors in the matrix. It is also the dimension of the column space.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-mt2-Q4b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No, they are not linear combinations of each other."
+        ],
+        "dependencies": [
+            "a222079ds100-su20-mt2-Q4b-h3"
+        ],
+        "title": "Checking Linear Independence",
+        "text": "Consider the columns of the matrix: a, $$b$$, c, and the intercept column. Are any of these columns linear combinations of the others?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "No",
+            "No, they are not linear combinations of each other.",
+            "Yes"
+        ]
+    },
+    {
+        "id": "a222079ds100-su20-mt2-Q4b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a222079ds100-su20-mt2-Q4b-h4"
+        ],
+        "title": "Calculating the Rank",
+        "text": "Given that the columns are linearly independent, what is the rank of the matrix?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "id": "ade7df0ds100-su21-final-Q7e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Classifier",
+        "text": "Look at the decision boundary in the image. Does it separate the orange and blue points correctly?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q7e-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q7e-h1"
+        ],
+        "title": "Analyzing the Decision Boundary",
+        "text": "The decision boundary should perfectly separate the orange points from the blue points. Check if any points are misclassified.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q7e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No, all points are correctly classified."
+        ],
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q7e-h2"
+        ],
+        "title": "Checking for Misclassification",
+        "text": "Are there any orange points in the blue region or blue points in the orange region?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "No",
+            "No, all points are correctly classified.",
+            "Yes"
+        ]
+    }
+]

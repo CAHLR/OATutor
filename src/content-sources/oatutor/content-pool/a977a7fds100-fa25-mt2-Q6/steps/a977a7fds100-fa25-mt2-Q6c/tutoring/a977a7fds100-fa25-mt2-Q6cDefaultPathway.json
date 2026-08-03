@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "When you add a new feature to a model, especially one that is a transformation of an existing feature, it can affect the model's variance. Consider how adding complexity to a model might influence its sensitivity to the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6c-h1"
+        ],
+        "title": "Effect of Adding Features",
+        "text": "Adding a new feature, such as the square of an existing feature, increases the model's complexity. Think about how this complexity might affect the model's ability to generalize to new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6c-h2"
+        ],
+        "title": "Model Variance and Complexity",
+        "text": "Consider the relationship between model complexity and variance. Does increasing the number of features generally increase or decrease the model's variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease"
+        ]
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6c-h3"
+        ],
+        "title": "Variance and Overfitting",
+        "text": "A model with high variance is often more sensitive to the training data, which can lead to overfitting. How might adding a feature that is a transformation of an existing feature contribute to this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6c-h4"
+        ],
+        "title": "Impact on Model Variance",
+        "text": "Adding a feature that is the square of an existing feature can increase the model's variance. This is because the model becomes more complex and may fit the training data more closely, potentially at the expense of generalization.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

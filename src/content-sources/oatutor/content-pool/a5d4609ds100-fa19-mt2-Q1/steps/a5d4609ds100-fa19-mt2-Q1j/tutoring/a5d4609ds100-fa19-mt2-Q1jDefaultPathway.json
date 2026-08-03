@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a5d4609ds100-fa19-mt2-Q1j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Principal Component Matrix",
+        "text": "The principal component matrix $P$ is derived from the original data matrix. It has the same number of rows as the original data matrix, which corresponds to the number of observations or samples.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa19-mt2-Q1j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-fa19-mt2-Q1j-h1"
+        ],
+        "title": "Number of Rows in the Original Data",
+        "text": "The original data matrix has $$1000$$ rows, as it represents the data collected from $$1000$$ visitors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa19-mt2-Q1j-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1000$$"
+        ],
+        "dependencies": [
+            "a5d4609ds100-fa19-mt2-Q1j-h2"
+        ],
+        "title": "Determine the Number of Rows in $P$",
+        "text": "How many rows are in the principal component matrix $P$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

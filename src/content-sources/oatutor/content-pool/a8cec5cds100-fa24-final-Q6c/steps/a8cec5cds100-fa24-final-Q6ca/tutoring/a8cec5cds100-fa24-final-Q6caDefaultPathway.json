@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a8cec5cds100-fa24-final-Q6ca-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Loss Function",
+        "text": "The loss function \\( \\mathcal{L}(\\theta) \\) is designed to penalize incorrect predictions. It is important to understand how the terms in the loss function contribute to the overall cost.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa24-final-Q6ca-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa24-final-Q6ca-h1"
+        ],
+        "title": "Comparing with Cross-Entropy Loss",
+        "text": "The standard cross-entropy loss is given by \\( -[y\\log(p)+(1-y)\\log(1-p)] \\). Compare this with the given loss function to see how they differ.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa24-final-Q6ca-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa24-final-Q6ca-h2"
+        ],
+        "title": "Analyzing the False Positive Penalty",
+        "text": "In the given loss function, the term \\((1-y)\\log((1-p)**3)\\) is used instead of \\((1-y)\\log(1-p)\\). This increases the penalty for false positives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa24-final-Q6ca-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a8cec5cds100-fa24-final-Q6ca-h3"
+        ],
+        "title": "Conclusion on False Positives",
+        "text": "Given the modification in the loss function, does it incur more cost on false positives compared to the standard cross-entropy loss?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

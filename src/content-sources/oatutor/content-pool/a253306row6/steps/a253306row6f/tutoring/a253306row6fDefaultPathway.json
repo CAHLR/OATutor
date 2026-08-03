@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a253306row6f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Correlation",
+        "text": "The correlation matrix shows how each pair of variables is related. A correlation of $$1$$ means perfect positive correlation, $$-1$$ means perfect negative correlation, and $$0$$ means no correlation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row6f-h1"
+        ],
+        "title": "Correlation Between Critic $$1$$ and Critic $$2$$",
+        "text": "The correlation between critic $$1$$ and critic $$2$$ is $$-0.70$$. This indicates a strong negative correlation, meaning as one increases, the other tends to decrease.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row6f-h2"
+        ],
+        "title": "Correlation and Scalar Multiples",
+        "text": "For critic $$1$$ to be a scalar multiple of critic $$2$$, their correlation should be either $$1$$ or $$-1$$, indicating a perfect linear relationship.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a253306row6f-h3"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Given the correlation of $$-0.70$$ between critic $$1$$ and critic $$2$$, is it possible for critic $$1$$ to be a scalar multiple of critic 2?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

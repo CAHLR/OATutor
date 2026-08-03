@@ -1,0 +1,57 @@
+[
+    {
+        "id": "aac8d73ds100-sp22-mt2-Q5c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Objective Function",
+        "text": "The objective function combines the $L_2$ loss with the exponential regularization term. The $L_2$ loss is given by $1/n*||Y-X*theta||_2**2$, and the regularization term is $lambda*sum{i\\=1}{p}{10**theta_i}$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp22-mt2-Q5c-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-sp22-mt2-Q5c-h1"
+        ],
+        "title": "Analyzing the Regularization Term",
+        "text": "The regularization term $lambda*sum{i\\=1}{p}{10**theta_i}$ is exponential in nature. This means that small changes in $theta_i$ can lead to large changes in the regularization penalty.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp22-mt2-Q5c-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-sp22-mt2-Q5c-h2"
+        ],
+        "title": "Comparing with Least Squares",
+        "text": "The least squares estimate minimizes only the $L_2$ loss without any regularization. In this problem, the objective function includes an additional exponential regularization term.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp22-mt2-Q5c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aac8d73ds100-sp22-mt2-Q5c-h3"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Given the objective function $1/n*||Y-X*theta||_2**2+lambda*sum{i\\=1}{p}{10**theta_i}$, does it reduce to the least squares estimate when $lambda>0$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a613447ds100-fa19-mt2-Q3c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "Model variance refers to how much the predictions of a model will change if we use a different training dataset. It is influenced by the complexity of the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa19-mt2-Q3c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa19-mt2-Q3c-h1"
+        ],
+        "title": "Impact of Regularization",
+        "text": "Regularization techniques, such as Lasso or Ridge, can impact model variance by penalizing large coefficients, which can reduce overfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa19-mt2-Q3c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa19-mt2-Q3c-h2"
+        ],
+        "title": "Role of Model Complexity",
+        "text": "Increasing model complexity generally increases model variance because the model can fit the training data more closely, potentially capturing noise as well.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa19-mt2-Q3c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Model complexity and lack of regularization can increase model variance."
+        ],
+        "dependencies": [
+            "a613447ds100-fa19-mt2-Q3c-h3"
+        ],
+        "title": "Factors Affecting Model Variance",
+        "text": "Which factors can increase model variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Irreducible error",
+            "Model complexity",
+            "Model complexity and lack of regularization can increase model variance.",
+            "Noise level",
+            "Regularization"
+        ]
+    }
+]

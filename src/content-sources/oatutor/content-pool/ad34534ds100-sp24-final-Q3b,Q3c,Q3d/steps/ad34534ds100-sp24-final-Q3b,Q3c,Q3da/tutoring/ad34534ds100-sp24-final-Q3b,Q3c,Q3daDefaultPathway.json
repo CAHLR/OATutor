@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3da-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Task",
+        "text": "You need to add a column $$`has_{feat}`$$ to the DataFrame $$`song_{sample}`$$. This column should indicate whether the artist string contains the substring \"feat.\"",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3da-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp24-final-Q3b,Q3c,Q3da-h1"
+        ],
+        "title": "Using String Methods",
+        "text": "Consider using the `str.contains()` method to check if the artist string contains \"feat.\".",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3da-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp24-final-Q3b,Q3c,Q3da-h2"
+        ],
+        "title": "Converting Boolean to Integer",
+        "text": "The `str.contains()` method returns a boolean value. You can convert this to an integer using `astype(int)`.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp24-final-Q3b,Q3c,Q3da-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "song_sample[\"artist\"].str.contains(\"feat.\").astype(int)"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp24-final-Q3b,Q3c,Q3da-h3"
+        ],
+        "title": "Constructing the Expression",
+        "text": "Write the expression to create the $$`has_{feat}`$$ column using `str.contains()` and `astype(int)`.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

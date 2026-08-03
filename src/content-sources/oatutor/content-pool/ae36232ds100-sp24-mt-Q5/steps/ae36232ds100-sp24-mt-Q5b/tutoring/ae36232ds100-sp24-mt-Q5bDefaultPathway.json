@@ -1,0 +1,65 @@
+[
+    {
+        "id": "ae36232ds100-sp24-mt-Q5b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE",
+        "text": "The Mean Squared Error (MSE) is calculated as the average of the squares of the errors. The error for each observation is the difference between the actual value and the predicted value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp24-mt-Q5b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp24-mt-Q5b-h1"
+        ],
+        "title": "Expression for MSE",
+        "text": "The MSE can be expressed as: MSE $$=$$ $$\\frac{1}{n}$$ * sum{i\\=1}{n}{(y_i - \\hat{y}_i)**2}. Substitute \\hat{y}_i with $$\\frac{1}{\\theta_1}$$ * $$x_i$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp24-mt-Q5b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp24-mt-Q5b-h2"
+        ],
+        "title": "Simplifying the Expression",
+        "text": "Substitute \\hat{y}_i $$=$$ $$\\frac{1}{\\theta_1}$$ * $$x_i$$ into the MSE formula and simplify the expression.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp24-mt-Q5b-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp24-mt-Q5b-h3"
+        ],
+        "title": "Finding the Derivative",
+        "text": "To find the value of $$\\theta_1$$ that minimizes the MSE, take the derivative of the MSE with respect to $$\\theta_1$$ and set it to zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp24-mt-Q5b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "sum{i\\=1}{n}{x_i**2}/sum{i\\=1}{n}{y_i*x_i}"
+        ],
+        "dependencies": [
+            "ae36232ds100-sp24-mt-Q5b-h4"
+        ],
+        "title": "Solving for $$\\theta_1$$",
+        "text": "Solve the equation obtained by setting the derivative to zero to find the value of $$\\theta_1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,41 @@
+[
+    {
+        "id": "acab12dds100-fa18-final-Q5b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrap Estimates",
+        "text": "Bootstrap estimates are used to approximate the sampling distribution of a statistic by resampling with replacement from the original data. In this problem, we are interested in the variance of the sample mean.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa18-final-Q5b-h2",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-fa18-final-Q5b-h1"
+        ],
+        "title": "Identifying the Correct Statistic",
+        "text": "To find the bootstrap estimate for the variance of the sample mean, you need to look at the variance of the row means. This is because the row means represent the sample means from each bootstrap sample.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-fa18-final-Q5b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "np.var(rowmeans)"
+        ],
+        "dependencies": [
+            "acab12dds100-fa18-final-Q5b-h2"
+        ],
+        "title": "Calculate the Variance of Row Means",
+        "text": "Use the row means provided in the table to calculate the variance. The row means are $$32$$, $$84$$, $$24$$, and $$40$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

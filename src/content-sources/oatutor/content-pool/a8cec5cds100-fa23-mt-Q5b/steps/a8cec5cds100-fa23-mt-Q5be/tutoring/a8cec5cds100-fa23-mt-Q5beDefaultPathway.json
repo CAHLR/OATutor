@@ -1,0 +1,62 @@
+[
+    {
+        "id": "a8cec5cds100-fa23-mt-Q5be-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Loss Functions",
+        "text": "Loss functions are used to measure how well a model's predictions match the actual data. They help in optimizing the model parameters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q5be-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q5be-h1"
+        ],
+        "title": "Mean Squared Error (MSE)",
+        "text": "MSE is a common loss function that calculates the average of the squares of the errors. It is given by 1/n*sum{i o n}{(y_i-\u007fy_i)**2}.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q5be-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q5be-h2"
+        ],
+        "title": "Penalizing Outliers",
+        "text": "Loss functions that use higher powers or absolute values of errors tend to penalize outliers more harshly than MSE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-fa23-mt-Q5be-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "\u2022 1/n*sum{i o n}{abs(y_i-\u007fy_i)**3}\\n\u2022 1/n*sum{i o n}{(y_i-\u007fy_i)**4}\\n\u2022 1/n*sum{i o n}{abs((y_i-\u007fy_i)**5)}"
+        ],
+        "dependencies": [
+            "a8cec5cds100-fa23-mt-Q5be-h3"
+        ],
+        "title": "Analyzing the Options",
+        "text": "Evaluate each option to determine if it penalizes outliers more harshly than MSE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "1/n*sum{i o n}{(y_i-\u007fy_i)**3}",
+            "1/n*sum{i o n}{(y_i-\u007fy_i)**4}",
+            "1/n*sum{i o n}{(y_i-\u007fy_i)**5}",
+            "1/n*sum{i o n}{(y_i-\u007fy_i)}",
+            "1/n*sum{i o n}{abs((y_i-\u007fy_i)**5)}",
+            "1/n*sum{i o n}{abs(y_i-\u007fy_i)**3}",
+            "\u2022 1/n*sum{i o n}{abs(y_i-\u007fy_i)**3}\\n\u2022 1/n*sum{i o n}{(y_i-\u007fy_i)**4}\\n\u2022 1/n*sum{i o n}{abs((y_i-\u007fy_i)**5)}"
+        ]
+    }
+]

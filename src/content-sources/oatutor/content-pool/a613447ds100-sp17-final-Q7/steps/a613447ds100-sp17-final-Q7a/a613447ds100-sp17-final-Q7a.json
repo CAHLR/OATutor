@@ -1,0 +1,15 @@
+{
+    "id": "a613447ds100-sp17-final-Q7a",
+    "stepAnswer": [
+        "TRUE"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Emily's LIMIT query will probably run faster than the TABLESAMPLE query. For Emily's query, the database engine can simply access the first XX rows it finds in the table, and skip the rest.",
+    "stepBody": "Your friend Emily Engineer tells you to avoid Bernoulli sampling, and use the following query instead:\\nSELECT *\\nFROM transactions\\nLIMIT XX;\\n(where XX is replaced by the correct answer to the previous question). Evaluate the following statement:",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "TRUE",
+        "FALSE"
+    ]
+}

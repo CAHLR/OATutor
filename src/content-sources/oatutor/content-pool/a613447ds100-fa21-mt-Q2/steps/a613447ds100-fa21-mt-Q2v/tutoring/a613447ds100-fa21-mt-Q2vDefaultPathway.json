@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a613447ds100-fa21-mt-Q2v-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "When you average predictions from multiple models, how does it affect the bias and variance of the ensemble model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2v-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2v-h1"
+        ],
+        "title": "Effect on Bias",
+        "text": "Averaging predictions from multiple models tends to smooth out individual model errors. How does this affect the bias of the ensemble model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2v-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2v-h1"
+        ],
+        "title": "Effect on Variance",
+        "text": "Consider how combining predictions from multiple models affects the variability of the predictions. What happens to the variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2v-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Bias decreases"
+        ],
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2v-h2"
+        ],
+        "title": "Analyzing Bias",
+        "text": "When you average predictions from multiple models, the bias of the ensemble model is generally...",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Bias increases",
+            "Bias decreases"
+        ]
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2v-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Variance decreases"
+        ],
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2v-h3"
+        ],
+        "title": "Analyzing Variance",
+        "text": "When you average predictions from multiple models, the variance of the ensemble model is generally...",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Variance increases",
+            "Variance decreases"
+        ]
+    }
+]

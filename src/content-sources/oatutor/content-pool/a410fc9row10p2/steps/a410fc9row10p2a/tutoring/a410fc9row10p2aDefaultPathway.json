@@ -1,0 +1,54 @@
+[
+    {
+        "id": "a410fc9row10p2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Design Matrix",
+        "text": "The design matrix $X$ includes all the features and the intercept term for each flight record. Consider how many records and features are present.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row10p2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row10p2a-h1"
+        ],
+        "title": "Number of Rows in $X$",
+        "text": "The number of rows in the design matrix corresponds to the number of flight records. How many records are there?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row10p2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row10p2a-h1"
+        ],
+        "title": "Number of Columns in $X$",
+        "text": "The number of columns in the design matrix corresponds to the number of features plus one for the intercept. How many features are there?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row10p2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "(400\u00d710)"
+        ],
+        "dependencies": [
+            "a410fc9row10p2a-h2",
+            "a410fc9row10p2a-h3"
+        ],
+        "title": "Calculate the Shape of $X$",
+        "text": "Combine the number of rows and columns to determine the shape of the design matrix $X$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

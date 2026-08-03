@@ -1,0 +1,129 @@
+[
+    {
+        "id": "a253306row9c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Relationships",
+        "text": "To determine if a relationship is linear, consider if the equation can be expressed in the form $$y=mx+b$$, where $$m$$ and $$b$$ are constants.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row9c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row9c-h1"
+        ],
+        "title": "Analyzing the Options",
+        "text": "Look at each option and see if it can be rearranged or simplified to fit the linear form $$y=mx+b$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row9c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a253306row9c-h2"
+        ],
+        "title": "Option 1: $$y=\\theta_0+\\theta_1 x_1$$",
+        "text": "Is this equation in the form of $$y=mx+b$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a253306row9c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a253306row9c-h2"
+        ],
+        "title": "Option 2: y=theta_0+theta_1*log{x}_1",
+        "text": "Can this equation be considered linear in terms of $$y$$ and $$x$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a253306row9c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a253306row9c-h2"
+        ],
+        "title": "Option 3: y=theta_0+theta_1*log{x}_2",
+        "text": "Is this equation linear in terms of $$y$$ and $$x$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a253306row9c-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a253306row9c-h2"
+        ],
+        "title": "Option 4: $$\\sqrt{y}=\\theta_0+\\theta_1 \\sqrt{x_2}$$",
+        "text": "Does this equation fit the linear form $$y=mx+b$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a253306row9c-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a253306row9c-h2"
+        ],
+        "title": "Option 5: log{x}_2=theta_0+theta_1*sqrt(x_1)",
+        "text": "Is this equation linear in terms of $$y$$ and $$x$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

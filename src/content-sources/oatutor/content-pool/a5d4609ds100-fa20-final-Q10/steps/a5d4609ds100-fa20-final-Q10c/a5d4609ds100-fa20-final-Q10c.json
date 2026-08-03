@@ -1,0 +1,18 @@
+{
+    "id": "a5d4609ds100-fa20-final-Q10c",
+    "stepAnswer": [
+        "plt.plot(np.arange(1, F.shape[1]+1), s**2/np.sum(s**2))"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "In this part of this question, we will look at emotion ratings of images for a psychology experiment. Each row of the DataFrame F represents an image, and each column represents an emotion. There are $$940$$ images and $$7$$ emotions. An example row of F, for the image img1, has the following values:\\n\u2022 Happy: $$2$$\\n\u2022 Sad: $$2$$\\n\u2022 Afraid: $$2$$\\n\u2022 Anger: $$3$$\\n\u2022 Disgusted: $$4$$\\n\u2022 Surprised: $$2$$\\n\u2022 Neutral: $$6$$\\nSay we perform the SVD on F using the following code:\\nX $$=$$ (F - np.mean(F, axis $$=$$ 0))\\nu, s, vt $$=$$ np.linalg.svd(X, $$\\texttt{full\\_matrices=False)}$$\\nA scree plot depicts the proportion of variance captured by each PC. Ignoring the plot's title, which of the following lines of code could have created that plot?##figure2.gif## ##figure3.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "plt.plot(s**2/np.sum(s**2), u)",
+        "plt.plot(F[:, :7]), s**2/np.sum(s))",
+        "plt.plot(np.arange(1, F.shape[1]+1), s**2/np.sum(s**2))",
+        "plt.plot(np.arange(1, F.shape[1]+1), s**2/np.sum(s))",
+        "plt.plot(u@s, s**2/np.sum(s**2))"
+    ]
+}

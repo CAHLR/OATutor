@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a613447ds100-sp25-final-Q2bb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "When the owner selects fewer features, the model complexity decreases. This often leads to a decrease in variance but an increase in bias. Can you think about how this affects the training and validation errors?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp25-final-Q2bb-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp25-final-Q2bb-h1"
+        ],
+        "title": "Training Error vs. Validation Error",
+        "text": "The training error increases because the model is less flexible with fewer features. However, the validation error decreases, indicating that the model generalizes better to unseen data. What does this suggest about the bias and variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp25-final-Q2bb-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a613447ds100-sp25-final-Q2bb-h2"
+        ],
+        "title": "Analyzing the Effect on Bias",
+        "text": "With fewer features, the model is simpler. This simplicity increases the bias because the model might not capture all the complexities of the data. Is this statement true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a613447ds100-sp25-final-Q2bb-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a613447ds100-sp25-final-Q2bb-h3"
+        ],
+        "title": "Analyzing the Effect on Variance",
+        "text": "A simpler model with fewer features tends to have lower variance because it is less sensitive to fluctuations in the training data. Is this statement true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a613447ds100-sp25-final-Q2bb-h5",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp25-final-Q2bb-h4"
+        ],
+        "title": "Conclusion on Bias and Variance",
+        "text": "The decrease in validation error suggests that the reduction in variance outweighs the increase in bias, leading to better generalization. Therefore, the statement that the model's bias is lower is false.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

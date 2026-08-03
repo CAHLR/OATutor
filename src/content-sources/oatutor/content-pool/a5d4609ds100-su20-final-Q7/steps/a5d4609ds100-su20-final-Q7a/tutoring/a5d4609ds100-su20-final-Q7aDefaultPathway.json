@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a5d4609ds100-su20-final-Q7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean Nearest Squared Error",
+        "text": "The mean nearest squared error (MNSE) is calculated by finding the squared distance from each data point to the nearest point on the regression line, then averaging these squared distances.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su20-final-Q7a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean Squared Error",
+        "text": "The mean squared error (MSE) is calculated by finding the squared distance from each data point to the predicted value on the regression line, then averaging these squared distances.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su20-final-Q7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su20-final-Q7a-h1",
+            "a5d4609ds100-su20-final-Q7a-h2"
+        ],
+        "title": "Comparing MNSE and MSE",
+        "text": "Consider how the MNSE and MSE are calculated. The MNSE uses the nearest point on the regression line, while the MSE uses the predicted point on the regression line. How might this affect their values?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su20-final-Q7a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "less than"
+        ],
+        "dependencies": [
+            "a5d4609ds100-su20-final-Q7a-h3"
+        ],
+        "title": "Analyzing the Relationship",
+        "text": "Given that the MNSE uses the nearest point on the regression line, while the MSE uses the predicted point, which one is likely to be smaller?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "less than",
+            "equal to",
+            "greater than",
+            "not enough information"
+        ]
+    }
+]

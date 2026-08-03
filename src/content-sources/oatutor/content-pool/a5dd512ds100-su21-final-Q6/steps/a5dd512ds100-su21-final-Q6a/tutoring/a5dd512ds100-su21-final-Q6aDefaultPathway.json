@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a5dd512ds100-su21-final-Q6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variable Types",
+        "text": "Consider the nature of the data in $X$. Are the colors numerical values or categories?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q6a-h1"
+        ],
+        "title": "Categories or Numbers?",
+        "text": "Think about whether the colors can be ordered or ranked, or if they simply represent different categories.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q6a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Qualitative nominal"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q6a-h2"
+        ],
+        "title": "Identifying the Variable Type",
+        "text": "The colors in $X$ are not numbers and do not have a natural order. What type of variable does this suggest?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Quantitative continuous",
+            "Quantitative discrete",
+            "Qualitative discrete",
+            "Qualitative nominal",
+            "Qualitative ordinal"
+        ]
+    }
+]

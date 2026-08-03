@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a40b41cds100-fa20-final-Q13b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Inertia and Distortion",
+        "text": "Inertia is the sum of squared distances from each point to its assigned cluster center. Distortion is the average of these squared distances. How are these two related?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-fa20-final-Q13b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-fa20-final-Q13b-h1"
+        ],
+        "title": "Relation Between Inertia and Distortion",
+        "text": "If inertia is the sum of squared distances and distortion is the average, what mathematical operation relates them?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-fa20-final-Q13b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$inertia=n distortion$$"
+        ],
+        "dependencies": [
+            "a40b41cds100-fa20-final-Q13b-h2"
+        ],
+        "title": "Calculating Inertia and Distortion",
+        "text": "If there are $$n$$ points in the dataset, how would you express inertia in terms of distortion?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-fa20-final-Q13b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-fa20-final-Q13b-h3"
+        ],
+        "title": "Applying the Formula",
+        "text": "Given that inertia is $$n$$ times distortion, is the statement true for clustering B?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

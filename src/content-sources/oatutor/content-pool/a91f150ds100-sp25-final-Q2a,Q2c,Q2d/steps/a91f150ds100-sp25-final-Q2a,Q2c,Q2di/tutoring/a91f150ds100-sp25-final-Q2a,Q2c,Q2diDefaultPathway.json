@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a91f150ds100-sp25-final-Q2a,Q2c,Q2di-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Validation",
+        "text": "In 4-fold cross-validation, the dataset is divided into $$4$$ parts. Each part is used as a validation set once, while the other $$3$$ parts are used for training.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp25-final-Q2a,Q2c,Q2di-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp25-final-Q2a,Q2c,Q2di-h1"
+        ],
+        "title": "Number of Observations and Features",
+        "text": "The model has $$30$$ observations and $$29$$ features plus an intercept. This means each fold will have $$7$$ or $$8$$ observations in the validation set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp25-final-Q2a,Q2c,Q2di-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp25-final-Q2a,Q2c,Q2di-h2"
+        ],
+        "title": "Properties of Cross-Validation",
+        "text": "In cross-validation, each data point is used for validation exactly once. This ensures that the model is tested on all data points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp25-final-Q2a,Q2c,Q2di-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a91f150ds100-sp25-final-Q2a,Q2c,Q2di-h3"
+        ],
+        "title": "Conclusion on Cross-Validation",
+        "text": "Based on the properties of 4-fold cross-validation, what can we conclude about the use of data points in the validation set?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a5dd512ds100-sp21-final-Q4a,Q4b,Q4cc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Feature Encoding",
+        "text": "The feature encoding aims to capture the cyclical nature of time throughout the day. Consider how the cosine function behaves over a 24-hour period.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp21-final-Q4a,Q4b,Q4cc-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp21-final-Q4a,Q4b,Q4cc-h1"
+        ],
+        "title": "Cosine Function Properties",
+        "text": "Recall that the cosine function has a period of $$2\\pi$$. How does this relate to the 24-hour cycle of a day?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp21-final-Q4a,Q4b,Q4cc-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The division by $$12$$ scales the $$time_{of,day}$$ to fit within the period of the cosine function which is $$2\\pi$$."
+        ],
+        "dependencies": [
+            "a5dd512ds100-sp21-final-Q4a,Q4b,Q4cc-h2"
+        ],
+        "title": "Adjusting the Cosine Function",
+        "text": "To adjust the cosine function to fit a 24-hour cycle, we use the expression $$cos\\left(\\frac{\\pi time_{of,day}}{12}\\right)$$. Why is the division by $$12$$ necessary?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp21-final-Q4a,Q4b,Q4cc-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp21-final-Q4a,Q4b,Q4cc-h3"
+        ],
+        "title": "Interpreting the Expression",
+        "text": "The expression $$1-cos\\left(\\frac{\\pi time_{of,day}}{12}\\right)$$ is used to create a feature that peaks at certain times of the day. What does the subtraction from $$1$$ achieve?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp21-final-Q4a,Q4b,Q4cc-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The subtraction from $$1$$ inverts the cosine wave creating a peak at times when the cosine value is at its minimum."
+        ],
+        "dependencies": [
+            "a5dd512ds100-sp21-final-Q4a,Q4b,Q4cc-h4"
+        ],
+        "title": "Purpose of Subtraction",
+        "text": "Subtracting from $$1$$ inverts the cosine wave, creating a feature that peaks at times when the cosine value is at its minimum. This aligns with the expected increase in calls around lunch time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

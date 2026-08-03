@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a253306row10b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MAE and MSE",
+        "text": "Mean Absolute Error (MAE) and Mean Squared Error (MSE) are both used to measure the accuracy of a model. However, they react differently to outliers. Consider how each metric calculates error and how they might be affected by large deviations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row10b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row10b-h1"
+        ],
+        "title": "MAE Calculation",
+        "text": "MAE is calculated as the average of the absolute differences between predicted and actual values. It is given by the formula: $$MAE=\\frac{\\sum |y_i-y_{i,hat}|}{n}$$, where $$y_i$$ is the actual value, $$y_{i,hat}$$ is the predicted value, and $$n$$ is the number of observations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row10b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row10b-h2"
+        ],
+        "title": "MSE Calculation",
+        "text": "MSE is calculated as the average of the squared differences between predicted and actual values. It is given by the formula: $$MSE=\\frac{\\sum \\left(y_i-y_{i,hat}\\right)^2}{n}$$. Consider how squaring the differences might affect sensitivity to outliers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row10b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a253306row10b-h3"
+        ],
+        "title": "Sensitivity to Outliers",
+        "text": "Outliers are data points that deviate significantly from other observations. Squaring the differences in MSE amplifies the impact of larger errors, making MSE more sensitive to outliers compared to MAE, which only takes the absolute value of differences.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row10b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "MSE"
+        ],
+        "dependencies": [
+            "a253306row10b-h4"
+        ],
+        "title": "Comparing Sensitivity",
+        "text": "Given that MSE squares the differences and MAE takes the absolute value, which metric is more sensitive to outliers?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "MAE",
+            "MSE"
+        ]
+    }
+]

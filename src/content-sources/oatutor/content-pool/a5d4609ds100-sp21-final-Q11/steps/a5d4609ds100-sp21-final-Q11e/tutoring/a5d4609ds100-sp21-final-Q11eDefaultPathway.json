@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a5d4609ds100-sp21-final-Q11e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It reduces the dimensionality of the data while preserving as much variance as possible.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp21-final-Q11e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp21-final-Q11e-h1"
+        ],
+        "title": "Reconstruction Error in PCA",
+        "text": "Reconstruction error in PCA is the difference between the original data and the data reconstructed from the principal components. Lower reconstruction error means the principal components capture more variance of the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp21-final-Q11e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp21-final-Q11e-h2"
+        ],
+        "title": "Analyzing Plot A",
+        "text": "Look at Plot A. Consider how the data is spread and how PCA would capture the variance. Would using two principal components capture most of the variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp21-final-Q11e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a5d4609ds100-sp21-final-Q11e-h3"
+        ],
+        "title": "Variance in Plot A",
+        "text": "Does Plot A show a spread that would be well captured by two principal components?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

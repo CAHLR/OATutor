@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a8cec5cds100-sp25-final-Q2g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "When the training error increases but the validation error decreases, it suggests a change in the model's bias and variance. Consider how reducing the number of features might affect these two components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2g-h1"
+        ],
+        "title": "Effect of Reducing Features",
+        "text": "Reducing the number of features in a model can lead to an increase in bias because the model becomes simpler and may not capture all the complexities of the data. However, it can also reduce variance, as the model is less likely to overfit the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2g-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2g-h2"
+        ],
+        "title": "Training vs. Validation Error",
+        "text": "If the training error increases, it indicates that the model is not fitting the training data as well as before. However, if the validation error decreases, it suggests that the model is generalizing better to unseen data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2g-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The bias is likely higher and the variance is likely lower in the new model."
+        ],
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2g-h3"
+        ],
+        "title": "Analyzing the Scenario",
+        "text": "Given that the training error increases and the validation error decreases, what can we infer about the bias and variance of the new model compared to the old one?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-final-Q2g-h5",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp25-final-Q2g-h4"
+        ],
+        "title": "Conclusion on Bias and Variance",
+        "text": "The scenario suggests that the new model has a higher bias but lower variance compared to the model in part (a). This is consistent with the observed increase in training error and decrease in validation error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

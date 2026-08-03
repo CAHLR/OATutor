@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a410fc9row1_part2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Update Rule",
+        "text": "The update rule for gradient descent is given by: \\( \\theta**{(t+1)} $$=$$ \\theta**{(t)} - \\alpha \\cdot \\frac{d}{d\\theta}L(\\theta**{(t)}) \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row1_part2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row1_part2b-h1"
+        ],
+        "title": "Substitute Known Values",
+        "text": "Substitute \\( \\theta**{(0)} $$=$$ $$10$$ \\), \\( \\theta**{(1)} $$=$$ $$11$$ \\), and \\( \\alpha $$=$$ $$1$$ \\) into the update rule.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row1_part2b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "a410fc9row1_part2b-h2"
+        ],
+        "title": "Calculate the Gradient",
+        "text": "Using the update rule \\( \\theta**{(t+1)} $$=$$ \\theta**{(t)} - \\alpha \\cdot \\frac{d}{d\\theta}L(\\theta**{(t)}) \\), calculate \\( \\frac{d}{d\\theta}L(\\theta**{(0)}) \\) when \\( \\theta**{(0)} $$=$$ $$10$$ \\), \\( \\theta**{(1)} $$=$$ $$11$$ \\), and \\( \\alpha $$=$$ $$1$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

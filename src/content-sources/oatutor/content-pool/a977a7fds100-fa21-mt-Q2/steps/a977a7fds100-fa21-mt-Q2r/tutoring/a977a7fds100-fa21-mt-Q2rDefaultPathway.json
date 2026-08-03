@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a977a7fds100-fa21-mt-Q2r-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "When a feature is removed from a model, it can affect the model's bias and variance. Consider how removing a feature might simplify the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2r-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2r-h1"
+        ],
+        "title": "Impact on Model Complexity",
+        "text": "Removing a feature generally reduces the complexity of the model. How does this change affect the model's ability to fit the training data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2r-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2r-h2"
+        ],
+        "title": "Bias and Variance Trade-off",
+        "text": "Consider the trade-off between bias and variance. When a model becomes simpler, what typically happens to bias and variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2r-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Model bias increases."
+        ],
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2r-h3"
+        ],
+        "title": "Effect of Removing a Feature",
+        "text": "When Parth removed the 'Avg Hours Watched Per Day' feature, the model became simpler. A simpler model often has higher bias because it cannot capture the complexity of the data as well. What is the most likely consequence of this change?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Model bias increases.",
+            "Model bias decreases.",
+            "Model variance increases.",
+            "Model variance decreases."
+        ]
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "acab12dds100-sp25-final-Q3a,Q3b,Q3cc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Bootstrap Distribution",
+        "text": "The bootstrap distribution shows the variability of the difference in means, \\( \\hat{\\delta} $$=$$ \\bar{K} - \\bar{D} \\). It is used to estimate the sampling distribution of the statistic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp25-final-Q3a,Q3b,Q3cc-h2",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-sp25-final-Q3a,Q3b,Q3cc-h1"
+        ],
+        "title": "Interpreting the Percentiles",
+        "text": "The $$2.5th$$ and $$97.5th$$ percentiles mark the boundaries of the middle 95% of the bootstrap distribution. If \\( \\hat{\\delta}_{obs} \\) lies within these boundaries, it suggests that the observed difference is not statistically significant at the $$0.05$$ level.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp25-final-Q3a,Q3b,Q3cc-h3",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-sp25-final-Q3a,Q3b,Q3cc-h2"
+        ],
+        "title": "Position of \\( \\hat{\\delta}_{obs} \\)",
+        "text": "Check where the observed difference \\( \\hat{\\delta}_{obs} \\) lies in relation to the $$2.5th$$ and $$97.5th$$ percentiles. If it is within these percentiles, we fail to reject the null hypothesis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-sp25-final-Q3a,Q3b,Q3cc-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "acab12dds100-sp25-final-Q3a,Q3b,Q3cc-h3"
+        ],
+        "title": "Conclusion Based on the Plot",
+        "text": "Does \\( \\hat{\\delta}_{obs} \\) lie within the $$2.5th$$ and $$97.5th$$ percentiles of the bootstrap distribution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

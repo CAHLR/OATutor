@@ -1,0 +1,19 @@
+{
+    "id": "ae27c55ds100-fa17-mt-Q27b",
+    "stepAnswer": [
+        "$$400$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "blank (ii)",
+    "stepBody": "Suppose we have a Pandas Series called thePop which contains a census of $$25000$$ subjects. We also have a simple random sample of $$400$$ individuals saved in the Series theSample. We are interested in studying the behavior of the bootstrap procedure on the simple random sample. Fill in the blanks in the code below to construct $$10000$$ bootstrapped estimates for the median.\\n$$\\text{boot\\_stats}$$ $$=$$ [\\n(i).\\nsample(n $$=$$ (ii), replace $$=$$ (iii)).\\n(iv)()\\nfor j in range((v))\\n]",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "$$400$$",
+    "choices": [
+        "$$1$$",
+        "$$399$$",
+        "$$400$$",
+        "$$10000$$",
+        "$$25000$$"
+    ]
+}

@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a613447ds100-su19-final-Q6k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model is given by f_theta(x)=theta_0+theta_1*veg+theta_2*(meat=beef)+theta_3*(meat=fish). Identify the values of theta from the fitted model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6k-h1"
+        ],
+        "title": "Substituting Values",
+        "text": "For the first data point, $$veg=1$$ and $$meat=beef$$. Substitute these values into the model equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6k-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6k-h2"
+        ],
+        "title": "Calculating the Prediction",
+        "text": "Use the values $$\\theta_0=-3$$, $$\\theta_1=5$$, $$\\theta_2=8$$, and $$\\theta_3=12$$. Calculate the prediction using the equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

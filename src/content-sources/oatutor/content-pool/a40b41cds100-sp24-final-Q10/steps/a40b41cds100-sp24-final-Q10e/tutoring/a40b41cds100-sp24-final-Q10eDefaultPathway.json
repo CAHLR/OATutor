@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a40b41cds100-sp24-final-Q10e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding k-Means Clustering",
+        "text": "k-Means clustering is a method used to partition a dataset into k distinct, non-overlapping subsets (clusters). Each cluster is represented by its center, which is the mean of the points in the cluster.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp24-final-Q10e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp24-final-Q10e-h1"
+        ],
+        "title": "Impact of Initialization",
+        "text": "The initial placement of cluster centers can significantly affect the final clustering result. Poor initialization can lead to suboptimal clustering.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp24-final-Q10e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp24-final-Q10e-h2"
+        ],
+        "title": "Convergence of k-Means",
+        "text": "k-Means clustering iteratively refines the positions of the cluster centers until convergence, which is when the centers no longer change significantly.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp24-final-Q10e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a40b41cds100-sp24-final-Q10e-h3"
+        ],
+        "title": "Evaluating Statements",
+        "text": "Consider the statement: 'The initial placement of cluster centers does not affect the final result of k-Means clustering.' Is this statement true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

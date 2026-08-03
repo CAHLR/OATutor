@@ -1,0 +1,90 @@
+[
+    {
+        "id": "a825455ds100-fa20-final-Q14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Star Schema",
+        "text": "In a star schema, the fact table is central and connects to various dimension tables. The fact table stores quantitative data and references other tables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa20-final-Q14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-fa20-final-Q14a-h1"
+        ],
+        "title": "Role of Foreign Keys",
+        "text": "Foreign keys in the fact table are used to link to primary keys in dimension tables. This relationship helps in organizing and retrieving data efficiently.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa20-final-Q14a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "foreign keys"
+        ],
+        "dependencies": [
+            "a825455ds100-fa20-final-Q14a-h2"
+        ],
+        "title": "Identify the Components",
+        "text": "What are the keys in the fact table that refer to keys in dimension tables?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "primary keys",
+            "foreign keys",
+            "dimension tables"
+        ]
+    },
+    {
+        "id": "a825455ds100-fa20-final-Q14a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "primary keys"
+        ],
+        "dependencies": [
+            "a825455ds100-fa20-final-Q14a-h3"
+        ],
+        "title": "Linking Fact and Dimension Tables",
+        "text": "What type of keys in dimension tables are referred to by the fact table's foreign keys?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "primary keys",
+            "foreign keys",
+            "dimension tables"
+        ]
+    },
+    {
+        "id": "a825455ds100-fa20-final-Q14a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "dimension tables"
+        ],
+        "dependencies": [
+            "a825455ds100-fa20-final-Q14a-h4"
+        ],
+        "title": "Understanding Dimension Tables",
+        "text": "What type of tables do the foreign keys in the fact table refer to?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "fact tables",
+            "dimension tables",
+            "primary tables"
+        ]
+    }
+]

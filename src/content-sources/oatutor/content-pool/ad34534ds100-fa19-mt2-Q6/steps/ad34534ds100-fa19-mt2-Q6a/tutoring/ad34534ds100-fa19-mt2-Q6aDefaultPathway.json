@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ad34534ds100-fa19-mt2-Q6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model Equation",
+        "text": "The model equation is given as:\\n\\( \\hat{y}=-8+3x_{edu}+6x_{m}-3x_{b} \\)\\nHere, \\( x_{edu} \\) is the years of education, \\( x_{m} \\) is the dummy variable for managerial workers, and \\( x_{b} \\) is the dummy variable for blue collar workers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa19-mt2-Q6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa19-mt2-Q6a-h1"
+        ],
+        "title": "Identifying the Variables",
+        "text": "For a blue collar worker with $$10$$ years of education:\\n- \\( x_{edu} $$=$$ $$10$$ \\)\\n- \\( x_{m} $$=$$ $$0$$ \\) (since the worker is not managerial)\\n- \\( x_{b} $$=$$ $$1$$ \\) (since the worker is blue collar)",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa19-mt2-Q6a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$19$$"
+        ],
+        "dependencies": [
+            "ad34534ds100-fa19-mt2-Q6a-h2"
+        ],
+        "title": "Substitute the Values",
+        "text": "Substitute the values into the model equation:\\n\\( $$\\hat{y}=-8+3\\left(10\\right)+6\\left(0\\right)-3\\left(1\\right)$$ \\)",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa19-mt2-Q6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa19-mt2-Q6a-h3"
+        ],
+        "title": "Calculate the Predicted Wage",
+        "text": "Calculate the expression:\\n\\( $$\\hat{y}=-8+30+0-3$$ \\)",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa19-mt2-Q6a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$19$$"
+        ],
+        "dependencies": [
+            "ad34534ds100-fa19-mt2-Q6a-h4"
+        ],
+        "title": "Final Calculation",
+        "text": "Simplify the expression to find the predicted wage:\\n\\( $$\\hat{y}=19$$ \\)",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a613447ds100-fa25-mt2-Q6e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE on Training Data",
+        "text": "When you add a new feature to a model, it can potentially fit the training data better. However, this is not always guaranteed. Consider how adding a feature might affect the model's ability to capture the training data's patterns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa25-mt2-Q6e-h1"
+        ],
+        "title": "Effect of Adding a Feature",
+        "text": "Adding a feature, especially one that is a transformation of an existing feature, can lead to overfitting. Overfitting occurs when the model captures noise in the training data as if it were a true pattern.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa25-mt2-Q6e-h2"
+        ],
+        "title": "Impact on MSE",
+        "text": "Consider how overfitting might affect the Mean Squared Error (MSE) on the training data. Does it increase or decrease?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6e-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a613447ds100-fa25-mt2-Q6e-h3"
+        ],
+        "title": "Analyzing MSE on Training Data",
+        "text": "If the model fits the training data better due to the new feature, what happens to the MSE on the training data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    }
+]

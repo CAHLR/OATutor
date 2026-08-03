@@ -1,0 +1,41 @@
+[
+    {
+        "id": "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4hf-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Role of Coefficients in Linear Regression",
+        "text": "In a linear regression model, each coefficient represents the change in the dependent variable for a one-unit change in the corresponding independent variable, holding all other variables constant.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4hf-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4hf-h1"
+        ],
+        "title": "Focus on the Coefficient of t2d",
+        "text": "The coefficient \\(\\hat{\\theta}_2\\) is associated with the variable \\(x_2\\), which represents whether an individual has type $$2$$ diabetes. Consider what a change in \\(x_2\\) from $$0$$ to $$1$$ implies.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4hf-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "\\hat{\\theta}_2 is the predicted increase in blood sugar for someone who has type $$2$$ diabetes relative to someone who does not have type $$2$$ diabetes holding soda drinking status constant."
+        ],
+        "dependencies": [
+            "ae27c55ds100-su25-final-Q4d,Q4f,Q4g,Q4hf-h2"
+        ],
+        "title": "Interpreting \\(\\hat{\\theta}_2\\)",
+        "text": "What does \\(\\hat{\\theta}_2\\) tell us about the relationship between type $$2$$ diabetes and blood sugar levels?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

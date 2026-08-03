@@ -1,0 +1,15 @@
+{
+    "id": "a222079ds100-fa20-final-Q12m",
+    "stepAnswer": [
+        "TRUE"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Suppose we add random noise to all columns in humans except for bmi. Assume that our random noise is drawn from the Normal distribution with mean $$0$$ and variance $$2$$, and that the noise for each element in the DataFrame is independent. We call this new DataFrame $$\\text{noisy\\_humans}.$$\\n\\nSuppose we fit Model A and Model B on $$\\text{noisy\\_humans}$$ and create bootstrapped confidence intervals for each of the above six parameters. True or False: our answer to the previous part remains the same.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "TRUE",
+        "FALSE"
+    ]
+}

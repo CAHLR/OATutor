@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a5dd512ds100-su21-final-Q7q-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Data Distribution",
+        "text": "Observe the distribution of the orange and blue points. Notice how they form concentric circles.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q7q-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q7q-h1"
+        ],
+        "title": "Random Forest Capabilities",
+        "text": "Consider how a random forest classifier works. It uses multiple decision trees to create a boundary. Can it handle non-linear boundaries?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q7q-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q7q-h2"
+        ],
+        "title": "Boundary D Characteristics",
+        "text": "Think about the shape of boundary D. Is it linear or non-linear?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su21-final-Q7q-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su21-final-Q7q-h3"
+        ],
+        "title": "Analyzing Boundary D",
+        "text": "Given the concentric circles, would a linear boundary be effective?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

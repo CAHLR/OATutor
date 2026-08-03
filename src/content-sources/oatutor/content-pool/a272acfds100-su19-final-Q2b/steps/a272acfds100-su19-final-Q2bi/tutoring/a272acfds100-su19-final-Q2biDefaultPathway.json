@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a272acfds100-su19-final-Q2bi-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It projects data onto principal component axes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su19-final-Q2bi-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-su19-final-Q2bi-h1"
+        ],
+        "title": "Interpreting the Scatter Plot",
+        "text": "The scatter plot shows a clear separation between two clusters. This suggests that the data might be well represented by the first two principal components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su19-final-Q2bi-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-su19-final-Q2bi-h2"
+        ],
+        "title": "Analyzing Plot (g.ii)",
+        "text": "Plot (g.ii) shows a scatter plot with two distinct clusters. This is similar to the original scatter plot, suggesting it might represent projections onto the principal components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su19-final-Q2bi-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "pc2"
+        ],
+        "dependencies": [
+            "a272acfds100-su19-final-Q2bi-h3"
+        ],
+        "title": "Choosing the Correct Axis Label for (g.ii)",
+        "text": "Based on the scatter plot in (g.ii), which principal component does it likely represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "pc1",
+            "pc2",
+            "Neither"
+        ]
+    }
+]

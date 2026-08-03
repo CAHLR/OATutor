@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a222079ds100-fa21-mt-Q1i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding N-gram Encoding",
+        "text": "N-gram encoding captures sequences of letters in a string. Consider how this might affect the representation of DNA sequences.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa21-mt-Q1i-h1"
+        ],
+        "title": "Non-consecutive Segments",
+        "text": "Think about whether N-gram encoding includes non-consecutive segments of letters and how that might affect the data representation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1i-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa21-mt-Q1i-h1"
+        ],
+        "title": "Meaningless Segments",
+        "text": "Consider if N-gram encoding captures segments that are too short to have biological meaning.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1i-h4",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa21-mt-Q1i-h1"
+        ],
+        "title": "Overlapping Segments",
+        "text": "Reflect on whether overlapping segments are included in N-gram encoding and how this might affect the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1i-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a222079ds100-fa21-mt-Q1i-h1"
+        ],
+        "title": "Evaluating N-gram Encoding",
+        "text": "Which of the following statements are true about the limitations of N-gram encoding for DNA sequences?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            ">Overlapping segments would be included, meaning ATGCA is broken up into $$3$$ overlapping words.",
+            ">Segments with $$1$$ or $$2$$ letters have no meaning, which $$N-gram$$ would capture as 'words'.",
+            "FALSE",
+            "Segments of $$non-consecutive$$ letters would be included, meaning ATGCA could suggest the word AGA."
+        ]
+    }
+]

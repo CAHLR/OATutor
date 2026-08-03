@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a825455ds100-fa20-final-Q13d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Silhouette Score",
+        "text": "The silhouette score measures how similar a point is to its own cluster compared to other clusters. A negative score indicates that a point is closer to a neighboring cluster than to its own cluster.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa20-final-Q13d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-fa20-final-Q13d-h1"
+        ],
+        "title": "Analyzing Clustering A",
+        "text": "Look at the distribution of points in Clustering A. Are there any points that seem closer to a different cluster than their own?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa20-final-Q13d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a825455ds100-fa20-final-Q13d-h2"
+        ],
+        "title": "Checking Point Proximity",
+        "text": "In Clustering A, are any orange circles closer to the blue crosses or green stars than to other orange circles?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

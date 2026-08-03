@@ -1,0 +1,58 @@
+[
+    {
+        "id": "acab12dds100-su25-final-Q4d,Q4f,Q4g,Q4hd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Regression Model",
+        "text": "In the given linear regression model, each parameter has a specific interpretation. The model is used to predict the blood sugar level based on whether an individual drinks soda and whether they have type $$2$$ diabetes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-su25-final-Q4d,Q4f,Q4g,Q4hd-h2",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-su25-final-Q4d,Q4f,Q4g,Q4hd-h1"
+        ],
+        "title": "Interpreting the Intercept",
+        "text": "The intercept, represented by $$\\theta_0$$, is the predicted value of the dependent variable (blood sugar) when all independent variables (drink_soda and t2d) are zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-su25-final-Q4d,Q4f,Q4g,Q4hd-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "It means the individual does not drink soda and does not have type $$2$$ diabetes."
+        ],
+        "dependencies": [
+            "acab12dds100-su25-final-Q4d,Q4f,Q4g,Q4hd-h2"
+        ],
+        "title": "Identifying the Conditions",
+        "text": "What does it mean for $$drink_{soda}$$ and t2d to be zero in this context?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-su25-final-Q4d,Q4f,Q4g,Q4hd-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\theta_0$$ is the predicted blood sugar for someone who does not drink soda and does not have type $$2$$ diabetes."
+        ],
+        "dependencies": [
+            "acab12dds100-su25-final-Q4d,Q4f,Q4g,Q4hd-h3"
+        ],
+        "title": "Final Interpretation of $$\\theta_0$$",
+        "text": "Based on the conditions identified, what does $$\\theta_0$$ represent in terms of blood sugar level?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

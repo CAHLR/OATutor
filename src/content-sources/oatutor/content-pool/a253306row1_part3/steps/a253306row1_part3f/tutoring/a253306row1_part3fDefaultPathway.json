@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a253306row1_part3f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "Model variance refers to how much the predictions of a model will change if we use a different training dataset. High variance indicates that the model is sensitive to the specific data it was trained on.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row1_part3f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row1_part3f-h1"
+        ],
+        "title": "Effect of Removing a Feature",
+        "text": "When you remove a feature from a model, you are simplifying the model. This can lead to a decrease in model variance because the model becomes less complex and less sensitive to fluctuations in the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row1_part3f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a253306row1_part3f-h2"
+        ],
+        "title": "Possible Effects on Model Variance",
+        "text": "What happens to model variance when you remove a feature from the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Increase and Decrease"
+        ]
+    }
+]

@@ -1,0 +1,18 @@
+{
+    "id": "ade7df0ds100-fa19-final-Q5a",
+    "stepAnswer": [
+        "$$-(\\log(0.9)+\\log(0.4)+\\log(0.9))$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "In this part, we'll consider various loss functions.\\nSuppose our true labels are $$y=(0, 0, 1), $$ our predicted probabilities of being in class $$1$$ are $$(0.1, 0.6, 0.9), $$ and our threshold is $$T=0.5.$$ Give the total (not average) cross-entropy loss. Do not simplify your answer.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "$$-(\\log(0.1)+\\log(0.6)+\\log(0.9))$$",
+        "$$-(\\log(0.9)+\\log(0.4)+\\log(0.9))$$",
+        "$$\\log(0.9)+\\log(0.4)+\\log(0.9)$$",
+        "$$-\\frac{1}{3}(\\log(0.9)+\\log(0.4)+\\log(0.9))$$",
+        "$$-(\\log(0.9)+\\log(0.6)+\\log(0.1))$$"
+    ]
+}

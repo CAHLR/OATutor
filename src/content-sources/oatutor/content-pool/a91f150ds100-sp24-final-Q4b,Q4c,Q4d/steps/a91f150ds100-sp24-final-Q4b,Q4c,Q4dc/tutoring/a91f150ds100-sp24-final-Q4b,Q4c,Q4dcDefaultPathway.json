@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a91f150ds100-sp24-final-Q4b,Q4c,Q4dc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LASSO Regression",
+        "text": "LASSO regression is a type of linear regression that includes a regularization term. This term helps prevent overfitting by penalizing large coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp24-final-Q4b,Q4c,Q4dc-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp24-final-Q4b,Q4c,Q4dc-h1"
+        ],
+        "title": "High Validation Error",
+        "text": "A high validation error compared to a low training error often indicates overfitting. This means the model is too complex and fits the training data too closely.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp24-final-Q4b,Q4c,Q4dc-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp24-final-Q4b,Q4c,Q4dc-h2"
+        ],
+        "title": "Role of Lambda in LASSO",
+        "text": "In LASSO regression, lambda (\u03bb) is the regularization parameter. Increasing \u03bb increases the penalty on large coefficients, which can help reduce overfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp24-final-Q4b,Q4c,Q4dc-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase lambda."
+        ],
+        "dependencies": [
+            "a91f150ds100-sp24-final-Q4b,Q4c,Q4dc-h3"
+        ],
+        "title": "Adjusting Lambda",
+        "text": "Given that the validation error is high, what should Jessica do with the lambda parameter to reduce overfitting?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase lambda.",
+            "Decrease lambda.",
+            "Set $$lambda=0$$.",
+            "Add more training data.",
+            "Remove all regularization."
+        ]
+    }
+]

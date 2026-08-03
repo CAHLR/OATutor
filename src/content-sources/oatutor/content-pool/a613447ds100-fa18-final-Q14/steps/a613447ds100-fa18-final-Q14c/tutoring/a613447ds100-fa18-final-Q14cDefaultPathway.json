@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a613447ds100-fa18-final-Q14c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plot",
+        "text": "The plot shows a decreasing trend as the value of $$d$$ increases. This suggests that the y-axis could represent a quantity that decreases with more data or features.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa18-final-Q14c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa18-final-Q14c-h1"
+        ],
+        "title": "Possible Y-Axis Labels",
+        "text": "Consider what metrics in machine learning might decrease as the number of features or data points increases. Think about bias, variance, error, etc.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa18-final-Q14c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Bias decreases"
+        ],
+        "dependencies": [
+            "a613447ds100-fa18-final-Q14c-h2"
+        ],
+        "title": "Bias and Features",
+        "text": "What happens to bias as the number of features increases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa18-final-Q14c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Variance increases"
+        ],
+        "dependencies": [
+            "a613447ds100-fa18-final-Q14c-h2"
+        ],
+        "title": "Variance and Features",
+        "text": "What happens to variance as the number of features increases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa18-final-Q14c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Error decreases initially then may increase"
+        ],
+        "dependencies": [
+            "a613447ds100-fa18-final-Q14c-h2"
+        ],
+        "title": "Error and Features",
+        "text": "How does the error change as the number of features increases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

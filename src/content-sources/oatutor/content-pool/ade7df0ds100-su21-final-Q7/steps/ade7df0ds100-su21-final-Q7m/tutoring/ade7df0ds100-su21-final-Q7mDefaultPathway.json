@@ -1,0 +1,78 @@
+[
+    {
+        "id": "ade7df0ds100-su21-final-Q7m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Decision Boundaries",
+        "text": "Consider how decision trees create boundaries. They typically use axis-aligned splits, meaning they create vertical or horizontal lines to separate classes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q7m-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q7m-h1"
+        ],
+        "title": "Analyzing the Data Distribution",
+        "text": "Look at the distribution of the orange and blue points. Notice the circular pattern. How might this affect the ability of a decision tree to create a boundary?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q7m-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q7m-h2"
+        ],
+        "title": "Decision Tree Limitations",
+        "text": "Can a decision tree create a circular boundary?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q7m-h4",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q7m-h3"
+        ],
+        "title": "Boundary C Analysis",
+        "text": "If boundary C is circular, can a decision tree generate it given its limitations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q7m-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q7m-h4"
+        ],
+        "title": "Final Decision",
+        "text": "Based on the analysis, could the model have generated boundary C?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

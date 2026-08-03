@@ -1,0 +1,65 @@
+[
+    {
+        "id": "ade7df0ds100-su20-final-Q6c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Code",
+        "text": "The code snippet is trying to filter the DataFrame to find consoles from the sixth generation released before the year $$2000$$. Let's break down the code to see if it achieves this.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su20-final-Q6c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su20-final-Q6c-h1"
+        ],
+        "title": "Filtering by Year",
+        "text": "The code uses `consoles[consoles['year']<2000]` to filter consoles released before the year $$2000$$. This part of the code is correct for filtering by year.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su20-final-Q6c-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su20-final-Q6c-h2"
+        ],
+        "title": "Grouping by Generation",
+        "text": "The code uses `.groupby('generation')` to group the consoles by their generation. This is correct for grouping by generation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su20-final-Q6c-h4",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su20-final-Q6c-h3"
+        ],
+        "title": "Accessing the Sixth Generation",
+        "text": "The code attempts to access the sixth generation consoles using `.loc[6]`. However, `.loc` is used for label-based indexing, and the groupby object does not have a label '6'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su20-final-Q6c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "consoles[(consoles['year']<2000)&(consoles['generation']==6)]['name']"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su20-final-Q6c-h4"
+        ],
+        "title": "Correcting the Code",
+        "text": "To correctly find the names of all sixth generation consoles released before the year $$2000$$, you should first filter by year, then filter by generation, and finally select the 'name' column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

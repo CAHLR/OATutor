@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a253306row7d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding OLS and MSE",
+        "text": "Ordinary Least Squares (OLS) is a method used to estimate the parameters in a linear regression model. The goal is to minimize the Mean Squared Error (MSE), which measures the average of the squares of the errors between the observed and predicted values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row7d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row7d-h1"
+        ],
+        "title": "Exploring the Design Matrix",
+        "text": "The design matrix, denoted as X, contains the features or independent variables of the dataset. Each row represents an observation, and each column represents a feature.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row7d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row7d-h2"
+        ],
+        "title": "Linear Dependence in Features",
+        "text": "If one or more features in the design matrix X are linear combinations of other features, it can lead to issues in estimating the parameters accurately. This is known as multicollinearity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row7d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "One or more of the features is a linear combination of other features."
+        ],
+        "dependencies": [
+            "a253306row7d-h3"
+        ],
+        "title": "Identifying the Issue",
+        "text": "Given that Mir finds a different weight vector that yields the same MSE, what could be the reason for this occurrence?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "One or more of the features is a linear combination of other features.",
+            "hat{Y} is not a linear combination of the columns of X.",
+            "The prediction vector hat{Y} is not in the span of the design matrix.",
+            "The model does not have an intercept term."
+        ]
+    }
+]

@@ -1,0 +1,24 @@
+{
+    "id": "a9831a6row11a",
+    "stepAnswer": [
+        "B and C: r\"Co\\w{2}\\-?\\w*\" and $$r\"Coke|Coca-Cola\"$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Identifying Coca-Cola Regex Patterns",
+    "stepBody": "The professors want to identify which sodas are a sub-type of Coca-Cola. Sodas that fit this category either contain the sub-strings \"Coke\" or \"Coca-Cola\". The professors store a RegEx pattern in the variable soda\\_pattern which extracts the following substrings in the example below. Which of the following RegEx patterns could be soda\\_pattern? You only need to worry about the example text above and do not need to consider cases that are not present in the example. Select all that apply.##figure1.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "A and D: r\"Co[ke",
+        "All of these",
+        "B and C: r\"Co\\w{2}\\-?\\w*\" and r\"Coke",
+        "B and C: r\"Co\\w{2}\\-?\\w*\" and $$r\"Coke|Coca-Cola\"$$",
+        "B only: r\"Co\\w{2}\\-?\\w*\"",
+        "C only: r\"Coke",
+        "$$Coca-Cola\"$$",
+        "$$Coca-Cola\"$$",
+        "None of these",
+        "$$ca-Cola)\"$$",
+        "$$ca\\-Cola]\"$$ and r\"Co(ke"
+    ]
+}

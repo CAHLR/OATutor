@@ -1,0 +1,83 @@
+[
+    {
+        "id": "a91f150ds100-su20-final-Q11c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Fold Size",
+        "text": "To determine the size of each fold, consider how you would divide the total number of samples by the number of folds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su20-final-Q11c-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "X.shape[0]/k"
+        ],
+        "dependencies": [
+            "a91f150ds100-su20-final-Q11c-h1"
+        ],
+        "title": "Calculate Fold Size",
+        "text": "What is the expression to calculate the size of each fold?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su20-final-Q11c-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Valid Index Calculation",
+        "text": "To get the validation indices, think about which part of the shuffled indices should be used for validation in each iteration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su20-final-Q11c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "shuffled_idx[i*fold_size:(i+1)*fold_size]"
+        ],
+        "dependencies": [
+            "a91f150ds100-su20-final-Q11c-h3"
+        ],
+        "title": "Determine Valid Indices",
+        "text": "What is the expression to get the validation indices for each fold?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su20-final-Q11c-h5",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculate RMSE",
+        "text": "To calculate the RMSE, consider the difference between the predicted and actual values, then find the mean squared error and take the square root.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su20-final-Q11c-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "np.sqrt(np.mean((model.predict(X[valid_idx])-y[valid_idx])**2))"
+        ],
+        "dependencies": [
+            "a91f150ds100-su20-final-Q11c-h5"
+        ],
+        "title": "RMSE Calculation",
+        "text": "What is the expression to calculate the RMSE for the validation set?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

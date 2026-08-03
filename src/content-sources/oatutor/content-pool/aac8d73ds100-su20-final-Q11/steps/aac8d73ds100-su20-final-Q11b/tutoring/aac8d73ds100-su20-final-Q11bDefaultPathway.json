@@ -1,0 +1,41 @@
+[
+    {
+        "id": "aac8d73ds100-su20-final-Q11b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Valid Index",
+        "text": "To determine the valid index, consider which part of the shuffled indices should be used for validation in each fold.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q11b-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q11b-h1"
+        ],
+        "title": "Using Fold Size",
+        "text": "The valid index should be a slice of the shuffled indices that corresponds to the current fold. Use the fold size to determine the start and end of this slice.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q11b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "shuffled_idx[i*fold_size:(i+1)*fold_size]"
+        ],
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q11b-h2"
+        ],
+        "title": "Calculate Valid Index",
+        "text": "Use the fold size and the current fold number (i) to calculate the valid index.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "id": "ae27c55ds100-sp18-final-Q2a,Q2c,Q2d,Q2eb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Task",
+        "text": "To determine the type of statistical problem, consider what the task is trying to achieve. Is it trying to predict, estimate, or determine a cause-and-effect relationship?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-sp18-final-Q2a,Q2c,Q2d,Q2eb-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-sp18-final-Q2a,Q2c,Q2d,Q2eb-h1"
+        ],
+        "title": "Identifying Causal Inference",
+        "text": "Causal inference is used when you want to determine if one variable causes a change in another. Think about whether the task is trying to establish a cause-and-effect relationship.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-sp18-final-Q2a,Q2c,Q2d,Q2eb-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Causal Inference"
+        ],
+        "dependencies": [
+            "ae27c55ds100-sp18-final-Q2a,Q2c,Q2d,Q2eb-h2"
+        ],
+        "title": "Analyzing the Task",
+        "text": "The task is investigating whether perceived gender affects student teaching evaluations. What kind of statistical problem does this represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Estimation",
+            "Prediction",
+            "Causal Inference"
+        ]
+    }
+]

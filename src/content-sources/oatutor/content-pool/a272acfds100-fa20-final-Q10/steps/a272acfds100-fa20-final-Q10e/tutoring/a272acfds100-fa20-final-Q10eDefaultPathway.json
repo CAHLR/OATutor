@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a272acfds100-fa20-final-Q10e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD Output Dimensions",
+        "text": "When performing Singular Value Decomposition (SVD) on a matrix, the dimensions of the resulting matrices are determined by the dimensions of the original matrix. Consider the shape of the original matrix and how SVD decomposes it.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa20-final-Q10e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-fa20-final-Q10e-h1"
+        ],
+        "title": "Matrix X Dimensions",
+        "text": "The matrix X is obtained by subtracting the mean of F from F itself. This operation does not change the number of rows or columns of F. What are the dimensions of X?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa20-final-Q10e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-fa20-final-Q10e-h2"
+        ],
+        "title": "SVD Decomposition",
+        "text": "The SVD of a matrix X with dimensions (m,n) results in three matrices: U, S, and Vt. U has dimensions (m,m), S is a diagonal matrix with dimensions (m,n), and Vt has dimensions (n,n). However, when $$full_{matrices}=False$$, the dimensions of U and Vt are reduced. How does this affect their dimensions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa20-final-Q10e-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "U.shape==(940,7) and S.shape==(7,7)"
+        ],
+        "dependencies": [
+            "a272acfds100-fa20-final-Q10e-h3"
+        ],
+        "title": "Calculate the Dimensions of U and S",
+        "text": "Given that X has dimensions $$(940,7)$$, and $$full_{matrices}=False$$, what are the dimensions of U and S?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa20-final-Q10e-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "(u@np.diag(s)).shape==(940,7)"
+        ],
+        "dependencies": [
+            "a272acfds100-fa20-final-Q10e-h4"
+        ],
+        "title": "Determine the Shape of the Product",
+        "text": "Now that you know the dimensions of U and S, calculate the shape of the product (U @ np.diag(S)).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a825455ds100-su20-final-Q2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Agglomerative Clustering",
+        "text": "Agglomerative clustering is a type of hierarchical clustering that starts with each point as its own cluster and merges them step by step based on a linkage criterion.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su20-final-Q2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-su20-final-Q2a-h1"
+        ],
+        "title": "Linkage Criteria",
+        "text": "In average linkage clustering, the distance between two clusters is defined as the average distance between each point in one cluster and each point in the other cluster.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su20-final-Q2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-su20-final-Q2a-h2"
+        ],
+        "title": "Effect of Random Tie-breaking",
+        "text": "Since tie-breaking is done randomly, the clustering result can vary if there are ties in the distances between clusters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su20-final-Q2a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Sometimes"
+        ],
+        "dependencies": [
+            "a825455ds100-su20-final-Q2a-h3"
+        ],
+        "title": "Considering Randomness in Clustering",
+        "text": "Given that tie-breaking is random and no two points have the same distance, will the clustering result always be the same?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Always",
+            "Sometimes",
+            "Never"
+        ]
+    }
+]

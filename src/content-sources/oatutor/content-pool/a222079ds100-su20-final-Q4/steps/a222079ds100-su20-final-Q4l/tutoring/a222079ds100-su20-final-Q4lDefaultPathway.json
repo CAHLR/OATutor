@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a222079ds100-su20-final-Q4l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "We are comparing two models: one using the original design matrix X and the other using the mean-centered design matrix X\u0303. The goal is to determine if the training MSE for the model using X is always at least as large as the training MSE for the model using X\u0303.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-final-Q4l-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su20-final-Q4l-h1"
+        ],
+        "title": "Effect of Mean-Centering",
+        "text": "Mean-centering the design matrix can affect the intercept term but does not change the slopes of the other coefficients. This can lead to differences in the training MSE between the two models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-final-Q4l-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-su20-final-Q4l-h2"
+        ],
+        "title": "Regularization Impact",
+        "text": "Regularization can affect the coefficients differently depending on whether the data is mean-centered or not. Consider how this might impact the training MSE for each model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-su20-final-Q4l-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Always true"
+        ],
+        "dependencies": [
+            "a222079ds100-su20-final-Q4l-h3"
+        ],
+        "title": "Comparing MSEs",
+        "text": "Given that regularization is applied equally to both models, and mean-centering affects only the intercept, is it possible for the training MSE of the model using X to be less than the model using X\u0303?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Always true",
+            "Sometimes true",
+            "Never true",
+            "Depends on the dataset",
+            "Cannot be determined"
+        ]
+    }
+]

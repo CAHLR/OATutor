@@ -1,0 +1,74 @@
+[
+    {
+        "id": "a825455ds100-fa24-final-Q8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding k-Means Clustering",
+        "text": "In k-Means clustering, each data point is assigned to the cluster whose center is closest to it. The distance is usually measured using the Euclidean distance formula.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa24-final-Q8b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-fa24-final-Q8b-h1"
+        ],
+        "title": "Calculating Euclidean Distance",
+        "text": "The Euclidean distance between two points (x1,y1) and (x2,y2) is calculated as $$\\sqrt{\\left(x2-x1\\right)^2+\\left(y2-y1\\right)^2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa24-final-Q8b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "Distance to A: sqrt((5-0)**2+(4-5)**2)=sqrt(26), Distance to B: sqrt((5-6)**2+(4-0)**2)=sqrt(17)"
+        ],
+        "dependencies": [
+            "a825455ds100-fa24-final-Q8b-h2"
+        ],
+        "title": "Distance from Team Pandas to Cluster Centers",
+        "text": "Calculate the distance from Team Pandas $$(5,4)$$ to the initial cluster centers: A $$(0,5)$$ and B $$(6,0)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa24-final-Q8b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-fa24-final-Q8b-h3"
+        ],
+        "title": "Assigning Team Pandas to a Cluster",
+        "text": "Compare the distances calculated to determine which cluster Team Pandas is closer to.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa24-final-Q8b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Cluster B"
+        ],
+        "dependencies": [
+            "a825455ds100-fa24-final-Q8b-h4"
+        ],
+        "title": "Cluster Assignment for Team Pandas",
+        "text": "Based on the distances calculated, which cluster is Team Pandas assigned to?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Cluster A",
+            "Cluster B"
+        ]
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a91f150ds100-sp25-final-Q2a,Q2c,Q2db-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Linear Model",
+        "text": "The equation shown is a linear regression model with an intercept and $$29$$ features. It predicts the value of \\( \\hat{y}_i \\) based on the features \\( x_{i1}, x_{i2}, \\ldots, x_{i29} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp25-final-Q2a,Q2c,Q2db-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-sp25-final-Q2a,Q2c,Q2db-h1"
+        ],
+        "title": "OLS Property",
+        "text": "One of the properties of the Ordinary Least Squares (OLS) regression is that the sum of the residuals (differences between observed and predicted values) is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-sp25-final-Q2a,Q2c,Q2db-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a91f150ds100-sp25-final-Q2a,Q2c,Q2db-h2"
+        ],
+        "title": "Sum of Residuals",
+        "text": "Given the OLS property, what can we say about the sum of the residuals in this model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

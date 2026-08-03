@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a613447ds100-sp19-final-Q8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias",
+        "text": "Bias in an estimator is a measure of how far off the estimator is from the true parameter value on average.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp19-final-Q8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp19-final-Q8a-h1"
+        ],
+        "title": "Bias vs. Variance",
+        "text": "Remember that bias is different from variance. Bias refers to the systematic error, while variance refers to the variability of the estimator.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp19-final-Q8a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The average difference between theta and hat{theta} over all possible simple random samples from the population."
+        ],
+        "dependencies": [
+            "a613447ds100-sp19-final-Q8a-h2"
+        ],
+        "title": "Defining Bias",
+        "text": "What is the definition of bias in the context of an estimator?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The difference between theta and the value of hat{theta} for a particular sample.",
+            "The average difference between theta and hat{theta} computed for each element of the sample.",
+            "The average difference between theta and hat{theta} over all possible simple random samples from the population.",
+            "The difference between the expected value of theta and the value of hat{theta} for a particular sample."
+        ]
+    }
+]

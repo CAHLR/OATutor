@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a5d4609ds100-su25-final-Q3dd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA and SVD",
+        "text": "PCA (Principal Component Analysis) is a technique used to emphasize variation and bring out strong patterns in a dataset. It uses SVD (Singular Value Decomposition) to decompose the data matrix into three matrices: U, S, and $$V^T$$. The matrix S contains the singular values, which are used to calculate the variance captured by each principal component.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su25-final-Q3dd-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su25-final-Q3dd-h1"
+        ],
+        "title": "What is a Scree Plot?",
+        "text": "A scree plot is a line plot of the singular values or the eigenvalues of factors in an analysis. It helps in determining the number of factors to retain in a model by showing the proportion of variance captured by each principal component.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su25-final-Q3dd-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su25-final-Q3dd-h2"
+        ],
+        "title": "Calculating Proportion of Variance",
+        "text": "The proportion of variance captured by a principal component is calculated by dividing the square of its singular value by the sum of squares of all singular values. For the third principal component, use the third singular value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su25-final-Q3dd-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$${100}^2+{88}^2+8^2$$"
+        ],
+        "dependencies": [
+            "a5d4609ds100-su25-final-Q3dd-h3"
+        ],
+        "title": "Calculate the Sum of Squares of Singular Values",
+        "text": "Calculate the sum of squares of the singular values: $${100}^2$$ + $${88}^2$$ + $$8^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su25-final-Q3dd-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8^2$$"
+        ],
+        "dependencies": [
+            "a5d4609ds100-su25-final-Q3dd-h4"
+        ],
+        "title": "Calculate the Square of the Third Singular Value",
+        "text": "Calculate the square of the third singular value: $$8^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su25-final-Q3dd-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{8^2}{{100}^2+{88}^2+8^2}$$"
+        ],
+        "dependencies": [
+            "a5d4609ds100-su25-final-Q3dd-h5"
+        ],
+        "title": "Calculate the Proportion of Variance",
+        "text": "Divide the square of the third singular value by the sum of squares of all singular values to find the proportion of variance captured by the third principal component.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

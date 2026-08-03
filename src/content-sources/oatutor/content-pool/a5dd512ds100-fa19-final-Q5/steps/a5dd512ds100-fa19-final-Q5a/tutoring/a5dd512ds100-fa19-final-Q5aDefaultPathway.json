@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a5dd512ds100-fa19-final-Q5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Entropy Loss",
+        "text": "Cross-entropy loss is a measure of the difference between two probability distributions. In binary classification, it is used to measure the difference between the true labels and the predicted probabilities.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5a-h1"
+        ],
+        "title": "Formula for Cross-Entropy Loss",
+        "text": "The cross-entropy loss for a single data point is given by:\\n- For true label 1: -log(predicted probability)\\n- For true label 0: -log(1-predicted probability)",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5a-h2"
+        ],
+        "title": "Calculate Individual Losses",
+        "text": "Calculate the cross-entropy loss for each data point using the formula:\\n- For the first data point (true label $$0$$, predicted probability $$0.1)$$: $$-\\ln\\left(1-0.1\\right)$$\\n- For the second data point (true label $$0$$, predicted probability $$0.6)$$: $$-\\ln\\left(1-0.6\\right)$$\\n- For the third data point (true label $$1$$, predicted probability $$0.9)$$: $$-\\ln\\left(0.9\\right)$$",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\left(\\ln\\left(0.9\\right)+\\ln\\left(0.4\\right)+\\ln\\left(0.9\\right)\\right)$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5a-h3"
+        ],
+        "title": "Sum the Losses",
+        "text": "Add the individual cross-entropy losses to get the total loss.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

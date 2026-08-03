@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a613447ds100-fa21-mt-Q2n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "Model variance refers to how much the model's predictions change when it is trained on different datasets. Reducing variance often involves simplifying the model or using techniques that prevent overfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2n-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2n-h1"
+        ],
+        "title": "Feature Transformation",
+        "text": "Transforming features can help in reducing model variance. Consider transformations that simplify the relationship between the feature and the target variable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2n-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2n-h2"
+        ],
+        "title": "Consider Non-linear Transformations",
+        "text": "Non-linear transformations, such as taking the logarithm or square root of a feature, can sometimes help in reducing variance by stabilizing variance across different levels of the feature.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2n-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\ln\\left(x\\right)|\\sqrt{x}$$"
+        ],
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2n-h3"
+        ],
+        "title": "Evaluating Transformations",
+        "text": "Which of the following transformations could potentially reduce model variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{1}{x}$$",
+            "$$\\ln\\left(x\\right)$$",
+            "$$\\ln\\left(x\\right)|\\sqrt{x}$$",
+            "$$\\sqrt{x}$$",
+            "$$x$$"
+        ]
+    }
+]

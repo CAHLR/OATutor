@@ -1,0 +1,48 @@
+[
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q6c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE on Training Data",
+        "text": "When you add a new feature to a model, especially one that is a transformation of an existing feature, how does it typically affect the model's ability to fit the training data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q6c-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa25-mt2-Q6c-h1"
+        ],
+        "title": "Effect of Adding Features",
+        "text": "Adding features to a model generally increases its flexibility. What impact does this have on the model's performance on the training data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q6c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease only"
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa25-mt2-Q6c-h2"
+        ],
+        "title": "Impact on Training MSE",
+        "text": "Consider how adding a feature affects the model's fit to the training data. Does it typically lead to a better fit or a worse fit?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase only",
+            "Decrease only",
+            "Increase and Decrease",
+            "Neither Increase nor Decrease",
+            "Cannot be determined"
+        ]
+    }
+]

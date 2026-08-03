@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a5d4609ds100-sp25-final-Q4a,Q4bf-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD",
+        "text": "In Singular Value Decomposition (SVD), the matrix $S$ contains the singular values. These values are related to the variance captured by each principal component.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp25-final-Q4a,Q4bf-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp25-final-Q4a,Q4bf-h1"
+        ],
+        "title": "Total Variance",
+        "text": "The total variance is the sum of the squares of the singular values in $S$. Calculate this sum to find the total variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp25-final-Q4a,Q4bf-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$104.01$$"
+        ],
+        "dependencies": [
+            "a5d4609ds100-sp25-final-Q4a,Q4bf-h2"
+        ],
+        "title": "Calculate Total Variance",
+        "text": "Calculate the total variance by summing the squares of the singular values: $10**2$, $2**2$, and $0.1**2$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp25-final-Q4a,Q4bf-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp25-final-Q4a,Q4bf-h3"
+        ],
+        "title": "Variance Captured by PC1",
+        "text": "The variance captured by the first principal component (PC1) is the square of the first singular value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp25-final-Q4a,Q4bf-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$100$$"
+        ],
+        "dependencies": [
+            "a5d4609ds100-sp25-final-Q4a,Q4bf-h4"
+        ],
+        "title": "Calculate Variance for PC1",
+        "text": "Calculate the variance captured by PC1 using the first singular value: $10**2$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp25-final-Q4a,Q4bf-h6",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-sp25-final-Q4a,Q4bf-h5"
+        ],
+        "title": "Proportion of Variance",
+        "text": "The proportion of variance captured by PC1 is the variance of PC1 divided by the total variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp25-final-Q4a,Q4bf-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{100}{104.01}$$"
+        ],
+        "dependencies": [
+            "a5d4609ds100-sp25-final-Q4a,Q4bf-h6"
+        ],
+        "title": "Calculate Proportion of Variance",
+        "text": "Calculate the proportion of variance captured by PC1: $100/104.01$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a8cec5cds100-sp25-mt-Q3ea-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Objective Function",
+        "text": "The objective function $R(\\theta)=1/3*sum{i\\=1}{3}{(x_i-\\theta)**2}$ is a measure of how far the data points are from the value $\\theta$. To minimize this function, we need to find a $\\theta$ that makes the sum of squared differences as small as possible.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-mt-Q3ea-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp25-mt-Q3ea-h1"
+        ],
+        "title": "Mean as a Minimizer",
+        "text": "The mean of a dataset is often used to minimize the sum of squared differences. Calculate the mean of the data points {1, $$6$$, 17} to see if it minimizes the objective function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-mt-Q3ea-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a8cec5cds100-sp25-mt-Q3ea-h2"
+        ],
+        "title": "Calculate the Mean",
+        "text": "Find the mean of the data points {1, $$6$$, 17}.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8cec5cds100-sp25-mt-Q3ea-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8cec5cds100-sp25-mt-Q3ea-h3"
+        ],
+        "title": "Verify the Minimization",
+        "text": "Substitute $\\theta=8$ into the objective function $R(\\theta)=1/3*sum{i\\=1}{3}{(x_i-\\theta)**2}$ and calculate the value to verify that it is minimized.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

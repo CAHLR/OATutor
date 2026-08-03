@@ -1,0 +1,78 @@
+[
+    {
+        "id": "ade7df0ds100-fa19-final-Q5i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Zero-One Loss",
+        "text": "Zero-one loss is a type of loss function used in classification problems. It counts the number of incorrect predictions made by the model. Unlike cross-entropy loss, which is continuous and differentiable, zero-one loss is discrete and non-differentiable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-final-Q5i-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-final-Q5i-h1"
+        ],
+        "title": "Parameters in Zero-One Loss",
+        "text": "In the context of zero-one loss, the parameters beta and T are adjusted to minimize the number of incorrect predictions. This is different from cross-entropy loss, where only beta is adjusted to minimize the loss.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-final-Q5i-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$Zero-one$$ loss"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa19-final-Q5i-h2"
+        ],
+        "title": "Comparing Loss Functions",
+        "text": "Consider how zero-one loss and cross-entropy loss differ in terms of their dependency on beta and T. Which loss function depends on both parameters?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$Zero-one$$ loss",
+            "$$Cross-entropy$$ loss"
+        ]
+    },
+    {
+        "id": "ade7df0ds100-fa19-final-Q5i-h4",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-final-Q5i-h3"
+        ],
+        "title": "Minimizing Zero-One Loss",
+        "text": "To minimize zero-one loss, both beta and T need to be optimized. This is because zero-one loss is a function of both parameters, unlike cross-entropy loss, which only depends on beta.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-final-Q5i-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa19-final-Q5i-h4"
+        ],
+        "title": "True or False Statement",
+        "text": "Given that zero-one loss depends on both beta and T, is it true that the parameters $$hat_{\\beta,ZO}$$ and $$hat_{T,ZO}$$ minimize the zero-one loss?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

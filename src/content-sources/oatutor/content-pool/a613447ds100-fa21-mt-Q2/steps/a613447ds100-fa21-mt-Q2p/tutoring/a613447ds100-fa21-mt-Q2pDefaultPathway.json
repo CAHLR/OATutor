@@ -1,0 +1,90 @@
+[
+    {
+        "id": "a613447ds100-fa21-mt-Q2p-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "Model variance refers to how much the model's predictions change when it is trained on different datasets. Reducing variance often involves simplifying the model or using techniques that prevent overfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2p-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2p-h1"
+        ],
+        "title": "Feature Transformation",
+        "text": "Transforming features can help in reducing model variance. Consider transformations that simplify the relationship between the feature and the target variable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2p-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes, polynomial transformations can help in capturing $$non-linear$$ relationships, potentially reducing variance."
+        ],
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2p-h2"
+        ],
+        "title": "Consider Polynomial Transformations",
+        "text": "Would transforming the age variable using a polynomial function, such as $x**2$, help in reducing model variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "No",
+            "Yes",
+            "Yes, polynomial transformations can help in capturing $$non-linear$$ relationships, potentially reducing variance."
+        ]
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2p-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes, logarithmic transformations can stabilize variance and make the data more normal $$distribution-like$$."
+        ],
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2p-h2"
+        ],
+        "title": "Logarithmic Transformation",
+        "text": "Would applying a logarithmic transformation, such as log{x}, to the age variable help in reducing model variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "No",
+            "Yes",
+            "Yes, logarithmic transformations can stabilize variance and make the data more normal $$distribution-like$$."
+        ]
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2p-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes, standardization can help in reducing variance by ensuring that the feature has a mean of $$0$$ and a standard deviation of $$1$$."
+        ],
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2p-h2"
+        ],
+        "title": "Standardization",
+        "text": "Would standardizing the age variable, i.e., subtracting the mean and dividing by the standard deviation, help in reducing model variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "No",
+            "Yes",
+            "Yes, standardization can help in reducing variance by ensuring that the feature has a mean of $$0$$ and a standard deviation of $$1$$."
+        ]
+    }
+]

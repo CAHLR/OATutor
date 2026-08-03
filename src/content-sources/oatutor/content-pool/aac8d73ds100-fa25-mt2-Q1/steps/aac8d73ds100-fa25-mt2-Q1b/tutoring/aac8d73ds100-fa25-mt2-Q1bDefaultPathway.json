@@ -1,0 +1,63 @@
+[
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross Validation",
+        "text": "In 8-fold cross-validation, the dataset is divided into $$8$$ parts. Each part is used once as a validation set while the remaining $$7$$ parts form the training set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q1b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Regularization Hyperparameter",
+        "text": "The regularization hyperparameter is a value that controls the amount of regularization applied to the model. We need to test different values to find the best one.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q1b-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa25-mt2-Q1b-h1"
+        ],
+        "title": "Calculating the Number of Evaluations",
+        "text": "For each value of the hyperparameter, we perform $$8$$ evaluations (one for each fold).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q1b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8\\times11$$"
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa25-mt2-Q1b-h3"
+        ],
+        "title": "Determine the Total Evaluations",
+        "text": "If there are $$11$$ different hyperparameter values and each requires $$8$$ evaluations, how many total evaluations are needed?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q1b-h5",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa25-mt2-Q1b-h4"
+        ],
+        "title": "Final Answer",
+        "text": "The total number of evaluations is the product of the number of folds and the number of hyperparameter values. $$8\\times11$$",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

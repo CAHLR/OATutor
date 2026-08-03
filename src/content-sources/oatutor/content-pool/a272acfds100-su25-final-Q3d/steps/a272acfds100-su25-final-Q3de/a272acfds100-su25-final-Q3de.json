@@ -1,0 +1,19 @@
+{
+    "id": "a272acfds100-su25-final-Q3de",
+    "stepAnswer": [
+        "$$v_1$$ and $$v_4$$ because the columns of $$V$$ must be orthonormal"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Justin would like to perform PCA analysis on the $$\\text{ed\\_replies}$$ dataset. He asks Hannah to provide him the necessary data. She first subsets the DataFrame to only the features using the following code:\\n$$\\texttt{ed\\_subset}$$ $$=$$ $$\\texttt{ed\\_replies[['length',}$$ $$\\texttt{'likes','response\\_time']]}$$\\nThen, Hannah randomly samples a number of rows of $$\\text{ed\\_subset}$$ and converts the resulting DataFrame into a matrix denoted by $$X$$\\nHannah performs SVD on $$X$$\\nRecall that in SVD, $$X$$ is decomposed into the product of $$3$$ matrices, denoted $$ \\cup , S$$ and $$V**{T}$$ (using the same naming convention as lecture). Hannah only sends Justin the complete matrix $$S$$ (the singular values).\\n$$S$$ is a $$3$$ by $$3$$ diagonal matrix with diagonal entries $$(100, 88, 8)$$\\nHannah sends four mystery vectors $$v_1$$ $$v_2$$ $$v_3$$ and $$v_4$$ to Justin, two of which are columns of $$V$$\\nShe also sends over two tables containing information about the vectors. The first table reports the L2 norm of each vector:\\n\u2022 the norm of $$v_1$$ is $$1$$\\n\u2022 the norm of $$v_2$$ is $$1$$\\n\u2022 the norm of $$v_3$$ is $$2$$\\n\u2022 the norm of $$v_4$$ is $$1$$\\nThe second table reports the pairwise dot product between the vectors:\\n\u2022 the dot product of $$v_1$$ and $$v_2$$ is $$1$$\\n\u2022 the dot product of $$v_1$$ and $$v_3$$ is $$0$$\\n\u2022 the dot product of $$v_1$$ and $$v_4$$ is $$0$$\\n\u2022 the dot product of $$v_2$$ and $$v_3$$ is $$0$$\\n\u2022 the dot product of $$v_2$$ and $$v_4$$ is $$8$$\\n\u2022 the dot product of $$v_3$$ and $$v_4$$ is $$100$$\\nIdentify which two of the four vectors are the columns of $$V$$ along with the correct justification.",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "$$v_1$$ and $$v_4$$ because the columns of $$V$$ must be orthonormal",
+    "choices": [
+        "$$v_1$$ and $$v_2$$ because they both have norm $$1$$",
+        "$$v_2$$ and $$v_3$$ because their dot product is $$0$$",
+        "$$v_1$$ and $$v_4$$ because the columns of $$V$$ must be orthonormal",
+        "$$v_3$$ and $$v_4$$ because their dot product equals the largest singular value",
+        "$$v_2$$ and $$v_4$$ because they have norm $$1$$ and a nonzero dot product"
+    ]
+}

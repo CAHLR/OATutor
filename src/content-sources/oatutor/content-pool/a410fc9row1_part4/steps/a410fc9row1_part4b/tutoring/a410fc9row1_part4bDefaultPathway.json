@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a410fc9row1_part4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Coefficient",
+        "text": "The coefficient \\( $$\\theta_1$$ \\) represents the change in the predicted GPA for each additional hour of sleep, assuming all other variables are held constant.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row1_part4b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row1_part4b-h1"
+        ],
+        "title": "Holding Variables Constant",
+        "text": "When interpreting a coefficient in a multiple regression model, it is important to consider that the interpretation assumes all other variables are held constant.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row1_part4b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Predicted increase of $$0.23$$ GPA points for one additional hour of sleep, holding CDSS major status constant."
+        ],
+        "dependencies": [
+            "a410fc9row1_part4b-h2"
+        ],
+        "title": "Interpreting \\( $$\\theta_1$$ \\)",
+        "text": "What does \\( $$\\theta_1$$ $$=$$ $$0.23$$ \\) indicate in the context of the regression model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Predicted increase of $$0.23$$ GPA points for one additional hour of sleep, holding CDSS major status constant.",
+            "Predicted GPA for a student who gets $$0$$ hours of sleep and does not have a CDSS affiliated major.",
+            "Predicted increase of $$0.5$$ GPA points for having a CDSS affiliated major, holding sleep constant.",
+            "Predicted number of hours of sleep for a student with GPA $$0.23$$."
+        ]
+    }
+]

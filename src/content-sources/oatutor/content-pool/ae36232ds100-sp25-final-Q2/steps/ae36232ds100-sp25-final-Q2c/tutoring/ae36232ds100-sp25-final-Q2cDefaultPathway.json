@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ae36232ds100-sp25-final-Q2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding OLS Solutions",
+        "text": "To determine if adding more features yields a unique OLS solution, consider the relationship between the number of observations and the number of parameters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2c-h1"
+        ],
+        "title": "Number of Parameters vs. Observations",
+        "text": "In a linear regression model, the number of parameters (including the intercept) should not exceed the number of observations to ensure a unique solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2c-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2c-h2"
+        ],
+        "title": "Unique Solution Condition",
+        "text": "A unique OLS solution exists when the design matrix has full column rank, which occurs when the number of observations is greater than the number of parameters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-sp25-final-Q2c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ae36232ds100-sp25-final-Q2c-h3"
+        ],
+        "title": "Checking the Condition",
+        "text": "Given $$n=30$$ observations and $$30$$ parameters, does the design matrix have full column rank?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

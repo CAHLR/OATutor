@@ -1,0 +1,11 @@
+{
+    "id": "a5dd512ds100-fa19-final-Q5",
+    "title": "Alternate Classification Techniques",
+    "body": "The primary technique for binary classification in our course was logistic regression, where we first calculated\\n$$P(Y=1|x)=\\sigma(x**{T}{\\beta})$$\\nthen applied a threshold $$T$$ to compute a label (either $$0$$ or 1). In other words, we predict\\n$$\\hat{y}=f(x)=I(\\sigma(x**{T}{\\beta})>T)$$\\nwhere $$I$$ is an indicator function (i.e. returns $$1$$ if the argument is true, $$0$$ otherwise).\\nWe trained such a model by finding the $$\\beta$$ that minimizes the cross entropy loss between our predicted probabilities and the true labels.\\nIn this problem we'll explore some variants on this idea.",
+    "variabilization": {},
+    "oer": "https://ds100.org/su26/past-exams/",
+    "license": "",
+    "lesson": "Logistic Regression and Classification A",
+    "lessonId": "12br4D60-LD86-5FdJ1CoLfC",
+    "courseName": "Midterm 3 Worksheets"
+}

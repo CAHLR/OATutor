@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a253306row6p2h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L1 Regularization",
+        "text": "L1 regularization, also known as Lasso, tends to produce sparse models by driving some coefficients to zero. This means it selects only the most important features.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6p2h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row6p2h-h1"
+        ],
+        "title": "Effect of L1 Regularization",
+        "text": "L1 regularization adds a penalty equal to the absolute value of the magnitude of coefficients. This can lead to some coefficients being exactly zero, effectively selecting a simpler model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6p2h-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row6p2h-h2"
+        ],
+        "title": "Choosing the Optimal Parameter",
+        "text": "The optimal parameter with L1 regularization is often the one that results in the simplest model with the least number of non-zero coefficients while still fitting the data well.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6p2h-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$${\\theta}^a$$"
+        ],
+        "dependencies": [
+            "a253306row6p2h-h3"
+        ],
+        "title": "Identify the Optimal Parameter",
+        "text": "Based on the properties of L1 regularization, which parameter is most likely to be optimal?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$${\\theta}^a$$",
+            "$${\\theta}^b$$",
+            "$${\\theta}^c$$"
+        ]
+    }
+]

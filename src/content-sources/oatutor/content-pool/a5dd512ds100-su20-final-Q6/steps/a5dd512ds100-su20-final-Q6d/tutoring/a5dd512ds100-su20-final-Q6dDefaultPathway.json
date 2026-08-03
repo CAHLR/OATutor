@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a5dd512ds100-su20-final-Q6d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Code",
+        "text": "The code snippet is trying to filter consoles released before the year $$2000$$ and then group them by generation. It then attempts to sum the values and access the 'name' column for generation $$6$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-final-Q6d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su20-final-Q6d-h1"
+        ],
+        "title": "Checking the DataFrame Structure",
+        "text": "Remember that the 'name' column contains string data, which cannot be summed. The sum() function is typically used for numerical data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-final-Q6d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su20-final-Q6d-h2"
+        ],
+        "title": "Correcting the Code",
+        "text": "To find the names of sixth generation consoles released before $$2000$$, consider using a different approach that doesn't involve summing the 'name' column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-final-Q6d-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "consoles[consoles['year']<2000].groupby('generation').get_group(6)"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su20-final-Q6d-h3"
+        ],
+        "title": "Filtering and Grouping",
+        "text": "Filter the DataFrame for consoles released before $$2000$$ and group by generation. Then, select the sixth generation group.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-final-Q6d-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "consoles[consoles['year']<2000].groupby('generation').get_group(6)['name']"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su20-final-Q6d-s1"
+        ],
+        "title": "Extracting Names",
+        "text": "After filtering and grouping, extract the 'name' column to get the list of console names.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

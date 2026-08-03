@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ad34534ds100-sp19-final-Q3j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model is given by the equation: $$y_i=\\beta_0+x_i \\beta_1+f{\\left(x_i\\right)} \\beta_2$$. We need to determine if $$f(x)=x$$ can fit the data in the scatterplot.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp19-final-Q3j-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp19-final-Q3j-h1"
+        ],
+        "title": "Analyzing the Scatterplot",
+        "text": "Observe the scatterplot. Does the data appear to follow a linear trend? If so, $$f(x)=x$$ might be a suitable function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp19-final-Q3j-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-sp19-final-Q3j-h2"
+        ],
+        "title": "Linear Relationship",
+        "text": "If the data points form a straight line or can be approximated by a straight line, then $$f(x)=x$$ is likely a good fit.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-sp19-final-Q3j-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ad34534ds100-sp19-final-Q3j-h3"
+        ],
+        "title": "Conclusion",
+        "text": "Based on the scatterplot, does $$f(x)=x$$ allow the model to fit the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

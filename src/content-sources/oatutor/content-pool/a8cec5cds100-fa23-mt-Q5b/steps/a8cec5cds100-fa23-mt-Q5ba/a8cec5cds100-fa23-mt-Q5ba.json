@@ -1,0 +1,18 @@
+{
+    "id": "a8cec5cds100-fa23-mt-Q5ba",
+    "stepAnswer": [
+        "$$\\hat{\\theta}=\\frac{\\sum_{i=1}**{n}y_{i}\\log(x_i**{2})}{\\sum_{i=1}**{n}(\\log(x_i**{2}))**{2}}$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Calculate the value of $$\\hat{\\theta},$$ which minimizes the Mean Squared Error (MSE) of Rohan's model. This loss is a convex function. Please simplify and leave your answer in terms of $$x_i$$ $$y_i$$ and $$n.$$",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "$$\\hat{\\theta}=\\frac{\\sum_{i=1}**{n}y_{i}\\log(x_i**{2})}{\\sum_{i=1}**{n}(\\log(x_i**{2}))**{2}}$$",
+        "$$\\hat{\\theta}=\\frac{\\sum_{i=1}**{n}y_{i}\\log(x_i**{2})}{n}$$",
+        "$$\\hat{\\theta}=\\frac{\\sum_{i=1}**{n}y_i}{\\sum_{i=1}**{n}\\log(x_i**{2})}$$",
+        "$$\\hat{\\theta}=\\frac{\\frac{1}{n}\\sum_{i=1}**{n}y_i}{\\frac{1}{n}\\sum_{i=1}**{n}\\log(x_i**{2})}$$",
+        "$$\\hat{\\theta}=\\frac{\\sum_{i=1}**{n}y_{i}\\log(x_i)}{\\sum_{i=1}**{n}(\\log(x_i))**{2}}$$"
+    ]
+}

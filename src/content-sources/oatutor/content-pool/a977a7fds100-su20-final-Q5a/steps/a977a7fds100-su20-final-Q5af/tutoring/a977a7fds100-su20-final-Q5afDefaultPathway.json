@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a977a7fds100-su20-final-Q5af-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Role of \u03bb",
+        "text": "In the context of ridge regression, the regularization parameter \u03bb is used to control the complexity of the model. It is not a fixed quantity in the true model that generates X and Y.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su20-final-Q5af-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su20-final-Q5af-h1"
+        ],
+        "title": "\u03bb in Ridge Regression",
+        "text": "The regularization parameter \u03bb is chosen during the model training process to prevent overfitting. It is not a part of the true model that generates the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su20-final-Q5af-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a977a7fds100-su20-final-Q5af-h2"
+        ],
+        "title": "Determine if \u03bb is Fixed",
+        "text": "Consider whether \u03bb is a parameter that is set before the data is generated or if it is chosen during the model fitting process.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

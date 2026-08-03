@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a5dd512ds100-fa19-final-Q5f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Entropy Loss",
+        "text": "Cross-entropy loss is often preferred over squared loss in classification problems. Think about how each loss function penalizes errors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5f-h1"
+        ],
+        "title": "Penalty for Wrong Predictions",
+        "text": "Consider how cross-entropy loss penalizes predictions that are very confident but incorrect compared to squared loss.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5f-h2"
+        ],
+        "title": "Sensitivity to Probability Estimates",
+        "text": "Cross-entropy loss is sensitive to the predicted probabilities, especially when they are close to $$0$$ or $$1$$. How does this affect the learning process?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$Cross-entropy$$ loss gives a higher penalty to very wrong probabilities, encouraging the model to be more accurate in its probability estimates."
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5f-h3"
+        ],
+        "title": "Comparing Loss Functions",
+        "text": "Why might cross-entropy loss be more suitable for classification tasks than squared loss?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$Cross-entropy$$ loss gives a higher penalty to very wrong probabilities, encouraging the model to be more accurate in its probability estimates.",
+            "FALSE",
+            "TRUE"
+        ]
+    }
+]

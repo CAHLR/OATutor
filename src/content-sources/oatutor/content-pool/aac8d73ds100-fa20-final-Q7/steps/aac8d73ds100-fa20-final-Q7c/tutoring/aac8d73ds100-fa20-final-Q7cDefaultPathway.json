@@ -1,0 +1,57 @@
+[
+    {
+        "id": "aac8d73ds100-fa20-final-Q7c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding k-fold Cross-Validation",
+        "text": "In k-fold cross-validation, the dataset is divided into k subsets, and the model is trained k times, each time using a different subset as the validation set and the remaining subsets as the training set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa20-final-Q7c-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa20-final-Q7c-h1"
+        ],
+        "title": "Effect of Using Entire Training Set",
+        "text": "Consider what happens when you use the entire training set for training in each fold. Does this align with the purpose of cross-validation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa20-final-Q7c-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa20-final-Q7c-h2"
+        ],
+        "title": "Purpose of Cross-Validation",
+        "text": "The purpose of cross-validation is to assess how the results of a statistical analysis will generalize to an independent data set. It helps in detecting overfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa20-final-Q7c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa20-final-Q7c-h3"
+        ],
+        "title": "Analyzing the Modification",
+        "text": "If you use the entire training set for training in each fold, are you still validating the model's performance on unseen data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

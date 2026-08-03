@@ -1,0 +1,74 @@
+[
+    {
+        "id": "a222079ds100-fa24-final-Q3dc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model Equation",
+        "text": "The model equation given is $$self_{rating}=\\theta_0+\\theta_1 critic_1$$. This equation is used to predict the $$self_{rating}$$ based on the value of $$critic_1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa24-final-Q3dc-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa24-final-Q3dc-h1"
+        ],
+        "title": "Effect of Squaring $$critic_1$$",
+        "text": "If we use the square of $$critic_1$$ as the predictor variable, the model equation becomes $$self_{rating}=\\theta_0+\\theta_1 {critic_1}^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa24-final-Q3dc-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa24-final-Q3dc-h2"
+        ],
+        "title": "Impact on $$\\theta_1$$",
+        "text": "Changing the predictor variable from $$critic_1$$ to $${critic_1}^2$$ will affect the value of $$\\theta_1$$ because the relationship between the predictor and the response variable changes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa24-final-Q3dc-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The model equation becomes $$self_{rating}=\\theta_0+\\theta_1 {critic_1}^2$$."
+        ],
+        "dependencies": [
+            "a222079ds100-fa24-final-Q3dc-h3"
+        ],
+        "title": "Predictor Variable Change",
+        "text": "What happens to the model equation if we change the predictor variable to the square of $$critic_1$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa24-final-Q3dc-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a222079ds100-fa24-final-Q3dc-h4"
+        ],
+        "title": "Effect on $$\\theta_1$$",
+        "text": "Does changing the predictor variable to $${critic_1}^2$$ change the value of $$\\theta_1$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

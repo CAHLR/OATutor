@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a977a7fds100-su20-final-Q5ad-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Role of \\( \\hat{\\theta} \\)",
+        "text": "In the context of the problem, \\( \\hat{\\theta} \\) is the parameter estimate obtained from the training data using ridge regression. It is not a fixed quantity in the true model but rather a result of the estimation process.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su20-final-Q5ad-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su20-final-Q5ad-h1"
+        ],
+        "title": "True Model vs. Estimated Model",
+        "text": "The true model is represented by \\( f_{\\theta**{*}}(X_i) \\), where \\( \\theta**{*} \\) is the true parameter. \\( \\hat{\\theta} \\) is an estimate derived from the data, not a fixed parameter in the true model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su20-final-Q5ad-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a977a7fds100-su20-final-Q5ad-h2"
+        ],
+        "title": "Comparing \\( \\theta**{*} \\) and \\( \\hat{\\theta} \\)",
+        "text": "Is \\( \\hat{\\theta} \\) a fixed parameter in the true model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

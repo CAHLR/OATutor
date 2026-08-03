@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a91f150ds100-fa24-final-Q3fa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model is predicting $$self_{rating}$$ using a linear combination of $$critic_1$$ and its square. This is a polynomial regression model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa24-final-Q3fa-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-fa24-final-Q3fa-h1"
+        ],
+        "title": "Role of L1 Regularization",
+        "text": "L1 regularization, also known as Lasso, adds a penalty equal to the absolute value of the magnitude of coefficients. It can lead to sparse solutions where some coefficients are exactly zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa24-final-Q3fa-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-fa24-final-Q3fa-h2"
+        ],
+        "title": "Effect of L1 Regularization on Coefficients",
+        "text": "Consider how L1 regularization might affect the coefficients $$\\theta_1$$ and $$\\theta_2$$. It tends to shrink some coefficients to zero, effectively selecting a simpler model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa24-final-Q3fa-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a91f150ds100-fa24-final-Q3fa-h3"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Does L1 regularization always lead to a unique solution for the coefficients in this model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

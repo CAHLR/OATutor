@@ -1,0 +1,60 @@
+[
+    {
+        "id": "aac8d73ds100-fa24-final-Q4a,Q4b,Q4ci-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L2 Regularization",
+        "text": "L2 regularization, also known as ridge regression, tends to shrink the coefficients of less important features towards zero, but not exactly zero. It helps in reducing model complexity and multicollinearity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa24-final-Q4a,Q4b,Q4ci-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa24-final-Q4a,Q4b,Q4ci-h1"
+        ],
+        "title": "Comparing the Versions",
+        "text": "Look at the coefficients in each version. L2 regularization usually results in smaller coefficients compared to no regularization and L1 regularization.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa24-final-Q4a,Q4b,Q4ci-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa24-final-Q4a,Q4b,Q4ci-h2"
+        ],
+        "title": "Identifying the Optimal Parameters",
+        "text": "Which version has coefficients that are small but not zero? This is a characteristic of L2 regularization.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa24-final-Q4a,Q4b,Q4ci-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$${\\theta}^c$$ which is $$[0.05, 0.08, 0.03]$$"
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa24-final-Q4a,Q4b,Q4ci-h3"
+        ],
+        "title": "Choosing the Correct Version",
+        "text": "Based on the characteristics of L2 regularization, which version has the most likely optimal parameters?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$${\\theta}^a$$ which is $$[0, 0.1, 0]$$",
+            "$${\\theta}^b$$ which is $$[1, 0.5, 2]$$",
+            "$${\\theta}^c$$ which is $$[0.05, 0.08, 0.03]$$",
+            "$${\\theta}^a$$ and $${\\theta}^b$$ are equally likely",
+            "None of these"
+        ]
+    }
+]

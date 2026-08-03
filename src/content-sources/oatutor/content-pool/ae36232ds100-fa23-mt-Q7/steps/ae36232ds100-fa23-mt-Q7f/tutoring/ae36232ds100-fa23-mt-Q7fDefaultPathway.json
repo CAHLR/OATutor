@@ -1,0 +1,45 @@
+[
+    {
+        "id": "ae36232ds100-fa23-mt-Q7f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mini-batch Gradient Descent",
+        "text": "Mini-batch gradient descent is a compromise between stochastic gradient descent and batch gradient descent. It uses a subset of the data to compute the gradient at each step.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-mt-Q7f-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-fa23-mt-Q7f-h1"
+        ],
+        "title": "Gradient Approximation",
+        "text": "In mini-batch gradient descent, the gradient is calculated using a small random subset of the data, which may not represent the entire dataset accurately.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-fa23-mt-Q7f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "ae36232ds100-fa23-mt-Q7f-h2"
+        ],
+        "title": "Evaluating the Description",
+        "text": "Does the description 'the gradient is approximated and may not descend towards the true minimum' apply to mini-batch gradient descent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

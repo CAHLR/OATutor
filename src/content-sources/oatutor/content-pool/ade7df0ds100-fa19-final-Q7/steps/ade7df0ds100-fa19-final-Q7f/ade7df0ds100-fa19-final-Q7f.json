@@ -1,0 +1,18 @@
+{
+    "id": "ade7df0ds100-fa19-final-Q7f",
+    "stepAnswer": [
+        "c / (b + c)"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "blank (vi)",
+    "stepBody": "Fill in the pseudocode below to generate a ROC Curve. (Ignore the \"X\" above.)\\nHint: You can convert a boolean array to an array of 1's and 0's by multiplying the array by 1:\\n>>> $$y$$\\narray([False, False, True, True], $$dtype=bool)$$\\n>>> $$1$$ * $$y$$\\narray([0, $$0$$, $$1$$, 1])\\n$$\\texttt{predicted\\_probs}$$ $$=$$ $$np.array([0.37$$, $$0.1$$, ...])\\n$$\\texttt{y\\_actual}$$ $$=$$ np.array([1, $$0$$, ...])\\nthresholds $$=$$ np.linspace( (i) , (ii) , 1000)\\ntprs, fprs $$=$$ [], []\\nfor $$t$$ in (iii) :\\n$$\\text{y\\_pred}$$ $$=$$ (iv)\\na $$=$$ $$\\texttt{np.sum((y\\_pred}$$ $$==$$ $$\\texttt{y\\_actual})$$ & $$\\texttt{(y\\_pred}$$ $$==$$ 1))\\n$$b$$ $$=$$ $$\\texttt{np.sum((y\\_pred}$$ $$==$$ $$\\texttt{y\\_actual})$$ & $$\\texttt{(y\\_pred}$$ $$==$$ 0))\\nc $$=$$ $$\\texttt{np.sum((y\\_pred}$$ $$ \\neq $$ $$\\texttt{y\\_actual})$$ & $$\\texttt{(y\\_pred}$$ $$==$$ 1))\\n$$d$$ $$=$$ $$\\texttt{np.sum((y\\_pred}$$ $$ \\neq $$ $$\\texttt{y\\_actual})$$ & $$\\texttt{(y\\_pred}$$ $$==$$ 0))\\ntprs.append( (v) )\\nfprs.append( (vi) )\\nplt.plot(fprs, tprs)",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "c / (a + c)",
+        "$$b$$ / (b + c)",
+        "c / (c + d)",
+        "c / (b + c)",
+        "a / (a + d)"
+    ]
+}

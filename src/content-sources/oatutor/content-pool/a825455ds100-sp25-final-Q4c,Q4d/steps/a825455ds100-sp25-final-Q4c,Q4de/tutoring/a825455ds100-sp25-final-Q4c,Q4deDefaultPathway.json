@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a825455ds100-sp25-final-Q4c,Q4de-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding K-means Clustering",
+        "text": "K-means clustering is an iterative algorithm that aims to partition a dataset into K distinct, non-overlapping subsets (clusters).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp25-final-Q4c,Q4de-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-sp25-final-Q4c,Q4de-h1"
+        ],
+        "title": "Initial Placement of Centroids",
+        "text": "The initial placement of centroids can significantly affect the final cluster assignments in K-means clustering.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp25-final-Q4c,Q4de-h3",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-sp25-final-Q4c,Q4de-h2"
+        ],
+        "title": "Convergence in K-means",
+        "text": "K-means clustering converges to a local minimum, which may not be the global minimum, depending on the initial placement of centroids.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp25-final-Q4c,Q4de-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a825455ds100-sp25-final-Q4c,Q4de-h3"
+        ],
+        "title": "Effect of Initial Centroids",
+        "text": "Consider how different initial placements of centroids might lead to different clustering results.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

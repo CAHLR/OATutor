@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a825455ds100-fa24-final-Q8k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Elbow Method",
+        "text": "The elbow method is a technique used to determine the optimal number of clusters (k) in k-Means clustering. It involves plotting the sum of squared distances from each point to its assigned cluster center as a function of the number of clusters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa24-final-Q8k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-fa24-final-Q8k-h1"
+        ],
+        "title": "Interpreting the Elbow Plot",
+        "text": "In the elbow plot, the x-axis represents the number of clusters (k), and the y-axis represents the sum of squared distances. The 'elbow' point is where the rate of decrease sharply changes, indicating the optimal k.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa24-final-Q8k-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a825455ds100-fa24-final-Q8k-h2"
+        ],
+        "title": "Identifying the Elbow Point",
+        "text": "If the elbow point is at $$k=3$$, what does this suggest about the number of clusters?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa24-final-Q8k-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Evaluating Clustering Outcomes",
+        "text": "When evaluating clustering outcomes, consider both the compactness of clusters and the separation between them. Compact clusters have points close to their center, while well-separated clusters have distinct boundaries.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa24-final-Q8k-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a825455ds100-fa24-final-Q8k-h4"
+        ],
+        "title": "Assessing Compactness and Separation",
+        "text": "Which of the following statements is true regarding clustering outcomes?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

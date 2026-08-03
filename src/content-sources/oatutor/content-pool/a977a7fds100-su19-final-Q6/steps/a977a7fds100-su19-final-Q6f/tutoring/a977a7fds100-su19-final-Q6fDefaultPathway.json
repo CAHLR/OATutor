@@ -1,0 +1,55 @@
+[
+    {
+        "id": "a977a7fds100-su19-final-Q6f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "In the context of one-hot encoding, each category of a categorical variable is represented by a binary variable. For example, if the meat is chicken, then the variable $$'meat=chicken'$$ will be $$1$$, and all other meat variables will be $$0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6f-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting the Box Plot",
+        "text": "Look at the box plot to compare the total cost associated with each type of meat. Which type of meat tends to have a lower total cost?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6f-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Analyzing the Data",
+        "text": "From the data, observe the total cost when different types of meat are purchased. How does the cost change when chicken is bought compared to beef or fish?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su19-final-Q6f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Negative"
+        ],
+        "dependencies": [
+            "a977a7fds100-su19-final-Q6f-h3"
+        ],
+        "title": "Determining the Sign of \u03b8\u2082",
+        "text": "Based on the box plot and the data, does buying chicken generally result in a higher or lower total cost compared to other meats?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Positive",
+            "Negative",
+            "Exactly $$0$$",
+            "Not enough info"
+        ]
+    }
+]

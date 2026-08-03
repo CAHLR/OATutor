@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a5dd512ds100-su19-final-Q7h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Update Rule",
+        "text": "The update rule for logistic regression with L2 regularization is given by:\\n\\n$${\\theta}^{t+1}$$ $$=$$ (1-2\u03bb)\u03b8**(t) + \\alpha[(y_i - \u03c3(X_i * \u03b8**(t)))X_i]\\n\\nHere, \u03c3(z) is the sigmoid function, which is defined as \u03c3(z) $$=$$ $$\\frac{1}{1+e^{\\left(-z\\right)}}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q7h-h1"
+        ],
+        "title": "Analyzing the Update Rule",
+        "text": "To determine which combination of $${\\theta}^t$$, $$X_i$$, $$y_i$$, and \u03bb results in the most positive $${\\theta}^{t+1}$$, consider the impact of each term in the update rule:\\n\\n$$1$$. (1-2\u03bb)\u03b8**(t): This term scales the current weight $${\\theta}^t$$ by a factor dependent on \u03bb.\\n$$2$$. \\alpha[(y_i - \u03c3(X_i * \u03b8**(t)))X_i]: This term adjusts the weight based on the difference between the actual and predicted values, scaled by $$X_i$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7h-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q7h-h2"
+        ],
+        "title": "Effect of \u03bb on the Update",
+        "text": "The term (1-2\u03bb)\u03b8**(t) indicates that:\\n- If \u03bb > $$0$$, the term reduces the magnitude of $${\\theta}^t$$.\\n- If \u03bb < $$0$$, the term increases the magnitude of $${\\theta}^t$$.\\n- If \u03bb $$=$$ $$0$$, the term does not affect the magnitude of $${\\theta}^t$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7h-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q7h-h3"
+        ],
+        "title": "Effect of $$y_i$$ and $$X_i$$ on the Update",
+        "text": "The term \\alpha[(y_i - \u03c3(X_i * \u03b8**(t)))X_i] depends on:\\n- $$y_i$$: The actual label, which can be $$0$$ or $$1$$.\\n- \u03c3(X_i * \u03b8**(t)): The predicted probability.\\n- $$X_i$$: The feature value, which is $$0$$ in this case.\\n\\nSince $$X_i$$ $$=$$ $$0$$, this term becomes zero, meaning it does not contribute to the update.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q7h-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Tie"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q7h-h4"
+        ],
+        "title": "Determining the Most Positive $${\\theta}^{t+1}$$",
+        "text": "Given that $$X_i$$ $$=$$ $$0$$, the update rule simplifies to:\\n\\n$${\\theta}^{t+1}$$ $$=$$ (1-2\u03bb)\u03b8**(t)\\n\\nTo maximize $${\\theta}^{t+1}$$, consider the effect of \u03bb on $${\\theta}^t$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$1$$",
+            "Tie",
+            "Need Info"
+        ]
+    }
+]

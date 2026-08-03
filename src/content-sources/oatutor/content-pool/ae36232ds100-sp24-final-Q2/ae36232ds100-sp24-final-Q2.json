@@ -1,0 +1,11 @@
+{
+    "id": "ae36232ds100-sp24-final-Q2",
+    "title": "Graduate Descent",
+    "body": "Mir wants to build a model to predict the probability that he will get into each graduate school he applies to. He comes up with the following loss function with the corresponding gradient vector:\\n\\n$$L(\\theta_0,\\theta_1)=\\frac{1}{n}\\sum_{i=1}**{n}(y_i-\\frac{\\theta_0}{x_i}-\\log(\\theta_1)x_i+\\theta_{0}\\theta_1(x_i**{2}+1))$$\\n\\n$$\\frac{\\partial{L}}{\\partial{\\theta}}=(\\frac{1}{n}\\sum_{i=1}**{n}(-\\frac{1}{x_i}+\\theta_1x_i**{2}+\\theta_1),\\frac{1}{n}\\sum_{i=1}**{n}(-\\frac{x_i}{\\theta_1}+\\theta_0x_i**{2}+\\theta_0))$$",
+    "variabilization": {},
+    "oer": "https://ds100.org/su26/past-exams/",
+    "license": "",
+    "lesson": "Loss Functions and Gradient Descent A",
+    "lessonId": "2Pb13WOW-4ZM3-q5InzFY4FQ",
+    "courseName": "Midterm 2 Worksheets"
+}

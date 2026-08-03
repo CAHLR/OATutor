@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ae36232ds100-su25-final-Q2h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "Wesley's model is a linear regression model with transformations applied to the features. The model is given by:\\n\\n\\( \\hat{y}_i=\\hat{\\theta}_0+\\hat{\\theta}_1(x_{i1})**{3}+\\hat{\\theta}_{2}\\log(x_{i2}) \\)\\n\\nThis means that the predictions are based on a linear combination of the transformed features.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2h-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2h-h1"
+        ],
+        "title": "Linear Combination of Outcomes",
+        "text": "A linear combination of outcomes means that the predicted values \\( \\hat{Y} \\) can be expressed as a sum of the outcomes \\( Y \\) multiplied by some coefficients. In this context, the model's predictions are based on the transformed features, not directly on the outcomes \\( Y \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2h-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2h-h2"
+        ],
+        "title": "Optimal Solution in OLS",
+        "text": "In Ordinary Least Squares (OLS), the optimal solution refers to the set of parameters \\( \\hat{\\theta}_0, \\hat{\\theta}_1, \\hat{\\theta}_2 \\) that minimize the sum of squared differences between the observed outcomes \\( Y \\) and the predicted values \\( \\hat{Y} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae36232ds100-su25-final-Q2h-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "ae36232ds100-su25-final-Q2h-h3"
+        ],
+        "title": "Checking the Statement",
+        "text": "Given the model and the definition of a linear combination, does the vector of predictions \\( \\hat{Y} \\) have to be a linear combination of the outcomes \\( Y \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

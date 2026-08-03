@@ -1,0 +1,74 @@
+[
+    {
+        "id": "a825455ds100-fa20-final-Q13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Inertia and Distortion",
+        "text": "Inertia is the sum of squared distances from each point to its assigned cluster center. Distortion is the average of these squared distances. How are they related?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa20-final-Q13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-fa20-final-Q13a-h1"
+        ],
+        "title": "Relation Between Inertia and Distortion",
+        "text": "If inertia is the sum of squared distances and distortion is the average, what would be the relationship between them?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa20-final-Q13a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$inertia=n distortion$$"
+        ],
+        "dependencies": [
+            "a825455ds100-fa20-final-Q13a-h2"
+        ],
+        "title": "Calculating Inertia and Distortion",
+        "text": "If there are $$n$$ points in a cluster, how would you express inertia in terms of distortion?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa20-final-Q13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-fa20-final-Q13a-h3"
+        ],
+        "title": "Checking the Condition",
+        "text": "For clustering A, check if the condition $$inertia=n distortion$$ holds true. Consider the number of points and their distribution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-fa20-final-Q13a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a825455ds100-fa20-final-Q13a-h4"
+        ],
+        "title": "Verifying the Statement",
+        "text": "Does the relationship $$inertia=n distortion$$ hold for clustering A?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

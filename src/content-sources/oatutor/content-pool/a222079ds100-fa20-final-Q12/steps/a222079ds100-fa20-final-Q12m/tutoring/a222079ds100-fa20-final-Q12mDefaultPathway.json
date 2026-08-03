@@ -1,0 +1,32 @@
+[
+    {
+        "id": "a222079ds100-fa20-final-Q12m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "We are adding random noise to the height and weight columns but not to the BMI column. The noise is drawn from a Normal distribution with mean $$0$$ and variance $$2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa20-final-Q12m-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Noise on Parameters",
+        "text": "Consider how adding noise to the height and weight columns might affect the parameters of the models. The BMI column remains unchanged.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa20-final-Q12m-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Bootstrapped Confidence Intervals",
+        "text": "Bootstrapped confidence intervals are used to estimate the uncertainty of model parameters. Consider whether the added noise affects these intervals.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

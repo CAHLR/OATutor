@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a977a7fds100-fa18-final-Q14b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plot",
+        "text": "The plot shows a decreasing trend as the value of $$d$$ increases. This suggests that the y-axis could represent a metric that decreases with more data or features.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q14b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q14b-h1"
+        ],
+        "title": "Possible Metrics",
+        "text": "Consider metrics in machine learning that typically decrease as the model complexity or the amount of data increases. These could include training error, validation error, or bias.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q14b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q14b-h2"
+        ],
+        "title": "Validation Error",
+        "text": "Validation error often decreases as more data is used, up to a certain point. Could this be what the y-axis represents?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

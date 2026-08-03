@@ -1,0 +1,11 @@
+{
+    "id": "acab12dds100-sp25-final-Q3a,Q3b,Q3c",
+    "title": "Drake vs. Kendrick",
+    "body": "After the Kendrick vs. Drake feud, you want to answer: Who do UC Berkeley students listen to more? You collect two independent random samples of UC Berkeley students using their Spotify Data $$100$$ playlist listening data:\\n\u2022 A sample of $$m$$ students who listened to Drake more than Kendrick (Drake fans). For each student, we record their weekly hours listening to Drake as $$D_i$$ for observations $$i=1$$ through $$m$$\\n\u2022 A sample of $$n$$ students who listened to Kendrick more than Drake (Kendrick fans). For each student, we record their weekly hours listening to Kendrick as $$K_j$$ for observations $$j=1$$ through $$n$$\\nNote: Each sampled student listens more to Kendrick or Drake. They never listen to both equally. Assume the following:\\n\u2022 The Drake listening times (in hours), $$D_i$$ are independent and identically distributed (i.i.d.) with mean $$\\mu_D$$ and variance $$\\sigma_D**{2}$$\\n\u2022 The Kendrick listening times (in hours), $$K_j$$ are i.i.d. with mean $$\\mu_K$$ and variance $$\\sigma_K**{2}$$\\n\u2022 The two samples are independent of each other.\\nYou're interested in whether UC Berkeley students listen to Kendrick and Drake equally, so you decide to estimate the difference in their mean listening times:\\n$$\\delta=\\mu_K-\\mu_D$$\\nand use the estimator:\\n$$\\hat{\\delta}=\\bar{K}-\\bar{D}$$\\nwhere $$\\bar{K}=\\frac{1}{n}\\sum_{j=1}**{n}K_j$$ and $$\\bar{D}=\\frac{1}{m}\\sum_{i=1}**{m}D_i$$",
+    "variabilization": {},
+    "oer": "https://ds100.org/su26/past-exams/",
+    "license": "",
+    "lesson": "Inference A",
+    "lessonId": "1MrItcsx-pXEF-1iIvO33bSW",
+    "courseName": "Midterm 3 Worksheets"
+}

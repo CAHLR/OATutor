@@ -1,0 +1,15 @@
+{
+    "id": "a613447ds100-fa20-final-Q6b",
+    "stepAnswer": [
+        "Yes"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Does this decomposition hold true for non-linear models and squared loss?",
+    "stepBody": "In class, we derived the following bias-variance decomposition under a specific set of conditions.\\nmodel risk $$=$$ $$\\sigma**{2}+(\\text{bias})**{2}+\\text{variance}$$\\nWe assume that there is an unknown underlying function $$g(x)$$ that generates the points we observe. Specifically, we observe $$Y_i=g(x_i)+\\epsilon_i$$ where $$\\epsilon_i$$ is a zero-mean noise term with variance $$\\sigma**{2}$$ that is independent for each observation. Our model's goal is to approximate $$g(x)$$ as best as possible.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "Yes",
+        "No"
+    ]
+}

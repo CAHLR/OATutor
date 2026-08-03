@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a5dd512ds100-fa19-final-Q5j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Zero-One Loss",
+        "text": "Zero-one loss is a type of loss function used in classification problems. It counts the number of incorrect predictions made by the model. Unlike cross-entropy loss, which is differentiable and depends only on the model parameters (beta), zero-one loss also depends on the threshold (T) used for classification.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5j-h1"
+        ],
+        "title": "Role of Threshold in Zero-One Loss",
+        "text": "In zero-one loss, the threshold T plays a crucial role because it determines the point at which the predicted probability is converted into a class label. This means that both beta and T are involved in minimizing the zero-one loss.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5j-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Yes adjusting T changes the classification outcome affecting the zero-one loss."
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5j-h2"
+        ],
+        "title": "Analyzing the Dependency",
+        "text": "Consider how the threshold T affects the classification outcome. If T is adjusted, does it change the number of correct or incorrect predictions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5j-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Zero-one loss is affected by changes in T while cross-entropy loss is not."
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5j-h3"
+        ],
+        "title": "Comparing Loss Functions",
+        "text": "Compare how cross-entropy loss and zero-one loss depend on the parameters beta and T. Which one is affected by changes in T?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5j-h5",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5j-h4"
+        ],
+        "title": "Conclusion on Parameters",
+        "text": "Since zero-one loss depends on both beta and T, the parameters that minimize this loss, $$\\beta_{ZO}$$ and $$T_{ZO}$$, are influenced by both. This makes the statement about them being only dependent on beta false.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

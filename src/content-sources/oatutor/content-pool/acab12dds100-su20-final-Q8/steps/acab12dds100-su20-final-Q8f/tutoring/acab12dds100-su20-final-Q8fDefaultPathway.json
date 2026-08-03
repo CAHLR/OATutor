@@ -1,0 +1,45 @@
+[
+    {
+        "id": "acab12dds100-su20-final-Q8f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Vectors",
+        "text": "The vectors $$u_1$$ and $$u_2$$ are columns of a matrix U. They are orthogonal unit vectors. What does this imply about their combination?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-su20-final-Q8f-h2",
+        "type": "hint",
+        "dependencies": [
+            "acab12dds100-su20-final-Q8f-h1"
+        ],
+        "title": "Orthogonality and Unit Vectors",
+        "text": "Orthogonal unit vectors are linearly independent. This means that no vector can be written as a linear combination of the others. How does this affect the validity of their combination?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "acab12dds100-su20-final-Q8f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "acab12dds100-su20-final-Q8f-h2"
+        ],
+        "title": "Checking Linear Independence",
+        "text": "Since $$u_1$$ and $$u_2$$ are orthogonal unit vectors, they are linearly independent. Therefore, any combination of these vectors is valid. Is the combination of values of $$u_1$$ and $$u_2$$ invalid?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

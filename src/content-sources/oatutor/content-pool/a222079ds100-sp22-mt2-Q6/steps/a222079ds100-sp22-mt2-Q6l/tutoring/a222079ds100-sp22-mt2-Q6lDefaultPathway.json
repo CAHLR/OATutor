@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a222079ds100-sp22-mt2-Q6l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Dataset",
+        "text": "The dataset contains information about what students ate for lunch, including the foods, servings, and total calories. Each row represents a single lunch entry for a student.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp22-mt2-Q6l-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-sp22-mt2-Q6l-h1"
+        ],
+        "title": "Bootstrap Sampling",
+        "text": "Bootstrap sampling involves repeatedly sampling with replacement from the dataset to create 'bootstrap samples'. These samples are used to estimate the distribution of a statistic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp22-mt2-Q6l-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-sp22-mt2-Q6l-h2"
+        ],
+        "title": "Percentile Calculation",
+        "text": "To find the lower percentile, you need to calculate the $$2.5th$$ percentile of the bootstrap estimates. This is often used to determine the lower bound of a confidence interval.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp22-mt2-Q6l-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.5$$"
+        ],
+        "dependencies": [
+            "a222079ds100-sp22-mt2-Q6l-h3"
+        ],
+        "title": "Calculate the Lower Percentile",
+        "text": "Use the numpy function to calculate the lower percentile of the estimates. What is the value of the lower percentile?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

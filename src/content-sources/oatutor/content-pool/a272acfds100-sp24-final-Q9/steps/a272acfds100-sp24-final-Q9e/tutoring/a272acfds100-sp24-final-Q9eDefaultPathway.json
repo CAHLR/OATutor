@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a272acfds100-sp24-final-Q9e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Principal Components",
+        "text": "Principal components are the directions in which the data varies the most. In PCA, we aim to capture as much variance as possible with the fewest components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp24-final-Q9e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp24-final-Q9e-h1"
+        ],
+        "title": "Explained Variance in PCA",
+        "text": "The explained variance indicates how much information (variance) is captured by each principal component. As you add more components, the cumulative explained variance increases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp24-final-Q9e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp24-final-Q9e-h2"
+        ],
+        "title": "Interpreting the Scree Plot",
+        "text": "A scree plot shows the explained variance for each principal component. Typically, the plot will show a sharp decline followed by a plateau. The point where the plot levels off is often used to determine the number of components to keep.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp24-final-Q9e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a272acfds100-sp24-final-Q9e-h3"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Based on the scree plot, determine if adding more components continues to significantly increase the explained variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

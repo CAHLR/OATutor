@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a40b41cds100-su25-final-Q3e,Q3f,Q3ga-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Initial Setup",
+        "text": "The first image shows the initial positions of the data points. The second image shows the initial positions of the centroids. Notice how the centroids are placed near the data points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-su25-final-Q3e,Q3f,Q3ga-h2",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-su25-final-Q3e,Q3f,Q3ga-h1"
+        ],
+        "title": "K-Means Clustering Process",
+        "text": "K-Means clustering involves assigning each data point to the nearest centroid and then recalculating the centroids based on the assigned points. This process repeats until the centroids no longer change.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-su25-final-Q3e,Q3f,Q3ga-h3",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-su25-final-Q3e,Q3f,Q3ga-h2"
+        ],
+        "title": "Analyzing the Final Clusters",
+        "text": "Look at the final positions of the centroids and the data points. Which points are closest to each centroid? This will help you determine the final clusters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-su25-final-Q3e,Q3f,Q3ga-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "One cluster contains the two upper left points, one cluster contains the single right hand point, and one cluster contains the two lower points."
+        ],
+        "dependencies": [
+            "a40b41cds100-su25-final-Q3e,Q3f,Q3ga-h3"
+        ],
+        "title": "Identifying the Clusters",
+        "text": "Based on the final positions, which points are grouped together?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "One cluster contains the two upper left points, one cluster contains the single right hand point, and one cluster contains the two lower points.",
+            "Each of the three initial centroids keeps exactly the point it started on, and the remaining two points are left unassigned.",
+            "One cluster contains all three upper points, one cluster contains the two lower points, and one cluster remains empty.",
+            "One cluster contains one upper left point, one cluster contains the other upper left point, and one cluster contains the remaining three points.",
+            "The algorithm does not converge, so the clusters keep changing with every iteration."
+        ]
+    }
+]

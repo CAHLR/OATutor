@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a91f150ds100-fa24-final-Q4a,Q4b,Q4cj-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model is given by $$y=\\theta_0+\\theta_1 {x_1}^2+\\theta_2 \\sqrt{x_2}$$. Here, $$y$$ is the attendance rate, $$x_1$$ is $$dist_{from,bell}$$, and $$x_2$$ is $$section_{no}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa24-final-Q4a,Q4b,Q4cj-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-fa24-final-Q4a,Q4b,Q4cj-h1"
+        ],
+        "title": "Effect of Removing the Intercept",
+        "text": "Removing the intercept $$\\theta_0$$ means the model will pass through the origin. This can lead to a higher bias if the true relationship does not pass through the origin.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa24-final-Q4a,Q4b,Q4cj-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-fa24-final-Q4a,Q4b,Q4cj-h2"
+        ],
+        "title": "Impact on Bias",
+        "text": "Consider how removing the intercept affects the flexibility of the model. Does it allow the model to fit the data better or worse?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-fa24-final-Q4a,Q4b,Q4cj-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a91f150ds100-fa24-final-Q4a,Q4b,Q4cj-h3"
+        ],
+        "title": "Evaluating the Suggestion",
+        "text": "Does removing the intercept reduce the model's ability to fit the data accurately?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a272acfds100-sp21-final-Q11b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It reduces the dimensionality of the data while preserving as much variance as possible.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp21-final-Q11b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp21-final-Q11b-h1"
+        ],
+        "title": "First Principal Component",
+        "text": "The first principal component is the direction in which the data varies the most. It is the line that best fits the data in the least squares sense.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp21-final-Q11b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp21-final-Q11b-h2"
+        ],
+        "title": "Reconstruction Error",
+        "text": "Reconstruction error is the difference between the original data and the data reconstructed from the principal components. Lower reconstruction error indicates a better representation of the original data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-sp21-final-Q11b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-sp21-final-Q11b-h3"
+        ],
+        "title": "Analyzing Plot A",
+        "text": "Look at Plot A. The data points are scattered around a line with a positive slope. This suggests that the first principal component will capture most of the variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

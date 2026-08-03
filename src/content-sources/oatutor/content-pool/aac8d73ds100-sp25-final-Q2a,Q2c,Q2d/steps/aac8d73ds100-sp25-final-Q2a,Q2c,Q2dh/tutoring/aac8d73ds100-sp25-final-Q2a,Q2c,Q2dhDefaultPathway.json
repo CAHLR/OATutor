@@ -1,0 +1,57 @@
+[
+    {
+        "id": "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dh-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Validation",
+        "text": "Cross-validation is a technique used to assess the performance of a model by dividing the data into subsets. The model is trained on some subsets and tested on others.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dh-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dh-h1"
+        ],
+        "title": "Sampling with Replacement",
+        "text": "When sampling with replacement, each observation can be selected multiple times in different folds. This is different from sampling without replacement, where each observation is used exactly once in each fold.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dh-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dh-h2"
+        ],
+        "title": "Properties of Cross-Validation",
+        "text": "In k-fold cross-validation, the data is divided into k subsets. The model is trained on k-1 subsets and tested on the remaining subset. This process is repeated k times.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dh-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dh-h3"
+        ],
+        "title": "Analyzing the Statement",
+        "text": "Consider whether sampling with replacement affects the independence of the folds in cross-validation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

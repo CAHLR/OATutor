@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a5d4609ds100-fa19-mt2-Q1k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Principal Component Matrix",
+        "text": "The principal component matrix $P$ is derived from the original data matrix. It represents the data in terms of principal components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa19-mt2-Q1k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-fa19-mt2-Q1k-h1"
+        ],
+        "title": "Dimensions of the Original Data",
+        "text": "The original data matrix has dimensions based on the number of visitors and the number of exhibits. How many exhibits are there?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa19-mt2-Q1k-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-fa19-mt2-Q1k-h2"
+        ],
+        "title": "Principal Components and Exhibits",
+        "text": "The number of columns in the principal component matrix $P$ is equal to the number of original features (exhibits) in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-fa19-mt2-Q1k-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a5d4609ds100-fa19-mt2-Q1k-h3"
+        ],
+        "title": "Counting the Exhibits",
+        "text": "Count the number of exhibits listed in the data. These are the columns in the original data matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

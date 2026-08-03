@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a977a7fds100-sp24-final-Q6h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Risk",
+        "text": "Model risk is the sum of bias squared, variance, and observational variance. Can you use this information to find the bias squared for the initial model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp24-final-Q6h-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$21$$"
+        ],
+        "dependencies": [
+            "a977a7fds100-sp24-final-Q6h-h1"
+        ],
+        "title": "Calculate Initial Bias Squared",
+        "text": "Given the initial model risk is $$32$$, model variance is $$8$$, and observational variance is $$3$$, calculate the bias squared.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp24-final-Q6h-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-sp24-final-Q6h-h2"
+        ],
+        "title": "New Model Risk",
+        "text": "The new model risk is $$17$$. How does this affect the bias squared, variance, and observational variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp24-final-Q6h-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "a977a7fds100-sp24-final-Q6h-h3"
+        ],
+        "title": "Calculate New Bias Squared",
+        "text": "With the new model risk of $$17$$, model variance of $$15$$, and observational variance of $$3$$, calculate the new bias squared.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp24-final-Q6h-h5",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-sp24-final-Q6h-h4"
+        ],
+        "title": "Interpreting Negative Bias Squared",
+        "text": "A negative bias squared is not possible. What does this imply about the assumptions or calculations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-sp24-final-Q6h-h6",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-sp24-final-Q6h-h5"
+        ],
+        "title": "Re-evaluating Model Variance",
+        "text": "If the bias squared cannot be negative, consider if the model variance or observational variance might have been miscalculated or changed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

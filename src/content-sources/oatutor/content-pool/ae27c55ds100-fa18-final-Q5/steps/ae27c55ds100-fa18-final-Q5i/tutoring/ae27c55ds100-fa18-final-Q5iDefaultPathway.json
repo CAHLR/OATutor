@@ -1,0 +1,41 @@
+[
+    {
+        "id": "ae27c55ds100-fa18-final-Q5i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Bootstrap Table",
+        "text": "The table shows bootstrap replicates and their summary statistics. Each row represents a bootstrap sample, and the columns show the values drawn in each sample. The row means, variances, and medians are calculated for each sample.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa18-final-Q5i-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa18-final-Q5i-h1"
+        ],
+        "title": "Identifying the Right Endpoint",
+        "text": "To find the right endpoint of the 50% confidence interval for the population variance, look at the row variances (rowvars) and identify the value that corresponds to the 75th percentile.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa18-final-Q5i-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$918$$"
+        ],
+        "dependencies": [
+            "ae27c55ds100-fa18-final-Q5i-h2"
+        ],
+        "title": "Calculating the 75th Percentile",
+        "text": "The row variances are $$985$$, $$243$$, $$290$$, and $$918$$. Arrange these values in ascending order and find the 75th percentile.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

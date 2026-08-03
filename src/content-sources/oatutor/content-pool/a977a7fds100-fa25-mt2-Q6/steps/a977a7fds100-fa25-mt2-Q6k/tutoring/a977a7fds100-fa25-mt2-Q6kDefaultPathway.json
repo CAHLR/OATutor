@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "Model variance refers to how much the model's predictions would change if we used a different training dataset. It is often influenced by the complexity of the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6k-h1"
+        ],
+        "title": "Effect of Removing a Feature",
+        "text": "When you remove a feature from a model, you are essentially reducing the model's complexity. This can have various effects on the model's performance metrics.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6k-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6k-h2"
+        ],
+        "title": "Variance and Model Complexity",
+        "text": "Reducing the number of features typically decreases the model's variance because there are fewer parameters to estimate, which reduces the model's sensitivity to the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa25-mt2-Q6k-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa25-mt2-Q6k-h3"
+        ],
+        "title": "Possible Effects on Model Variance",
+        "text": "Given that removing a feature reduces model complexity, what is the possible effect on model variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease"
+        ]
+    }
+]

@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a613447ds100-sp24-final-Q6c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "When adding more features to a model, it can lead to overfitting. Overfitting occurs when a model learns the training data too well, including its noise and outliers, which may not generalize well to new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp24-final-Q6c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp24-final-Q6c-h1"
+        ],
+        "title": "Training vs. Testing Error",
+        "text": "If the training error decreases but the testing error increases, it suggests that the model is fitting the training data too closely and not generalizing well to unseen data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp24-final-Q6c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-sp24-final-Q6c-h2"
+        ],
+        "title": "Bias-Variance Tradeoff",
+        "text": "The bias-variance tradeoff is a fundamental concept in machine learning. High variance models tend to overfit the training data, while high bias models tend to underfit.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-sp24-final-Q6c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The model is likely too complex and overfitting the training data."
+        ],
+        "dependencies": [
+            "a613447ds100-sp24-final-Q6c-h3"
+        ],
+        "title": "Identifying Overfitting",
+        "text": "Given that the testing error increases while the training error decreases, what can you infer about the model's complexity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The model is likely too complex and overfitting the training data.",
+            "The model is perfectly balanced",
+            "The model is too complex and overfitting",
+            "The model is too simple"
+        ]
+    }
+]

@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a5dd512ds100-su20-final-Q6k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "The DataFrame 'consoles' contains information about video game consoles, including their type, sales, and other attributes. We need to find the best-selling console for each type: home and handheld.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-final-Q6k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su20-final-Q6k-h1"
+        ],
+        "title": "Sorting the DataFrame",
+        "text": "To find the best-selling consoles, we need to sort the DataFrame by the 'sales' column. This will help us identify the console with the highest sales for each type.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-final-Q6k-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su20-final-Q6k-h2"
+        ],
+        "title": "Grouping by Console Type",
+        "text": "After sorting, we need to group the DataFrame by the 'type' column. This will allow us to separate the home consoles from the handheld consoles.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-final-Q6k-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su20-final-Q6k-h3"
+        ],
+        "title": "Selecting the Best-Selling Console",
+        "text": "Once the DataFrame is sorted and grouped, we can select the last entry in each group to get the best-selling console for each type.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-final-Q6k-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "consoles.sort_values(\"sales\").groupby(\"type\").last()"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su20-final-Q6k-h4"
+        ],
+        "title": "Write the Code",
+        "text": "Combine the steps to write a single line of code that sorts the DataFrame by sales, groups by type, and selects the last entry in each group.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q6f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "Model variance refers to how much the model's predictions would change if we used a different training dataset. It is related to the complexity of the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q6f-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-fa25-mt2-Q6f-h1"
+        ],
+        "title": "Effect of Removing a Feature",
+        "text": "When you remove a feature from a model, you are simplifying the model. How does this simplification affect the model's variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-fa25-mt2-Q6f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease only"
+        ],
+        "dependencies": [
+            "aac8d73ds100-fa25-mt2-Q6f-h2"
+        ],
+        "title": "Simplifying the Model",
+        "text": "What happens to the model variance when the model is simplified by removing a feature?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase only",
+            "Decrease only",
+            "Increase and Decrease",
+            "Neither Increase nor Decrease",
+            "Cannot be determined"
+        ]
+    }
+]

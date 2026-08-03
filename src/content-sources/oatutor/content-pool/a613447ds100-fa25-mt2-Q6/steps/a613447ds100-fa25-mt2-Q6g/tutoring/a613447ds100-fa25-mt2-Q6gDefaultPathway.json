@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a613447ds100-fa25-mt2-Q6g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE on Test Data",
+        "text": "When you add a new feature to a model, it can affect the Mean Squared Error (MSE) on held-out test data in different ways. Consider how adding a feature might increase the model's complexity and how that could impact the model's performance on unseen data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa25-mt2-Q6g-h1"
+        ],
+        "title": "Impact of Adding Features",
+        "text": "Adding a new feature, especially one that is a transformation of an existing feature, can lead to overfitting. Overfitting occurs when a model learns the noise in the training data rather than the underlying pattern. How might this affect the MSE on test data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "a613447ds100-fa25-mt2-Q6g-h2"
+        ],
+        "title": "Analyzing Overfitting",
+        "text": "If a model becomes too complex by adding more features, it might perform very well on training data but poorly on test data. This is because the model captures noise rather than the true signal. What is a possible effect on the MSE on test data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6g-h4",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa25-mt2-Q6g-h3"
+        ],
+        "title": "Consider the Bias-Variance Tradeoff",
+        "text": "Adding a feature can decrease bias but increase variance. The bias-variance tradeoff is crucial in understanding how model complexity affects performance. How might this tradeoff influence the MSE on test data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6g-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Both"
+        ],
+        "dependencies": [
+            "a613447ds100-fa25-mt2-Q6g-h4"
+        ],
+        "title": "Evaluating the Tradeoff",
+        "text": "When a model's complexity increases, variance tends to increase, which can lead to higher MSE on test data. However, if the new feature captures a true pattern, it might decrease MSE. What are the possible effects on MSE on test data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    }
+]

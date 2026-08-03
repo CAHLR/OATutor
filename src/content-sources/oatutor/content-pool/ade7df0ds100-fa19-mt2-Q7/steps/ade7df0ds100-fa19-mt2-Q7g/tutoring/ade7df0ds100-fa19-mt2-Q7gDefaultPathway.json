@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Thresholds",
+        "text": "When you increase the threshold in a classification model, you are making it harder for the model to classify a positive instance. This can affect precision, recall, and accuracy.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7g-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-mt2-Q7g-h1"
+        ],
+        "title": "Effect on Precision",
+        "text": "Precision is the ratio of true positive predictions to the total positive predictions (true positives + false positives). Increasing the threshold can reduce false positives, potentially increasing precision.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7g-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-mt2-Q7g-h1"
+        ],
+        "title": "Effect on Recall",
+        "text": "Recall is the ratio of true positive predictions to the total actual positives (true positives + false negatives). Increasing the threshold can increase false negatives, potentially decreasing recall.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7g-h4",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-mt2-Q7g-h1"
+        ],
+        "title": "Effect on Accuracy",
+        "text": "Accuracy is the ratio of correct predictions (true positives + true negatives) to the total number of predictions. The effect on accuracy depends on the balance between true positives, true negatives, false positives, and false negatives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-mt2-Q7g-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Recall decreases"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa19-mt2-Q7g-h3"
+        ],
+        "title": "Recall Decreases",
+        "text": "If we increase the threshold, what happens to recall?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Recall increases",
+            "Recall decreases",
+            "Recall stays the same"
+        ]
+    }
+]

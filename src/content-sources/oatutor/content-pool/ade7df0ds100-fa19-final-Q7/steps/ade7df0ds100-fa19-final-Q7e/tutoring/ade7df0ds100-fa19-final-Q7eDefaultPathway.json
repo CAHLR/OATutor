@@ -1,0 +1,109 @@
+[
+    {
+        "id": "ade7df0ds100-fa19-final-Q7e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding ROC Curves",
+        "text": "A ROC curve is a graphical representation of the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings. It helps in evaluating the performance of a classification model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-final-Q7e-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-final-Q7e-h1"
+        ],
+        "title": "Thresholds in ROC Curves",
+        "text": "The thresholds are used to convert predicted probabilities into binary classifications. By varying the threshold, you can calculate different TPR and FPR values to plot the ROC curve.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-final-Q7e-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "0,1"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa19-final-Q7e-h2"
+        ],
+        "title": "Define Thresholds",
+        "text": "What should be the start and end values for the thresholds?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-final-Q7e-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "thresholds"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa19-final-Q7e-h3"
+        ],
+        "title": "Iterating Over Thresholds",
+        "text": "What should be the range for iterating over thresholds?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-final-Q7e-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$predicted_{probs} \\geq t$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa19-final-Q7e-h4"
+        ],
+        "title": "Predicting Labels",
+        "text": "How do you convert predicted probabilities to binary predictions using a threshold?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-final-Q7e-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{a}{a+c}$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa19-final-Q7e-h5"
+        ],
+        "title": "Calculating TPR",
+        "text": "How do you calculate the true positive rate (TPR)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-final-Q7e-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{c}{c+d}$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa19-final-Q7e-h6"
+        ],
+        "title": "Calculating FPR",
+        "text": "How do you calculate the false positive rate (FPR)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

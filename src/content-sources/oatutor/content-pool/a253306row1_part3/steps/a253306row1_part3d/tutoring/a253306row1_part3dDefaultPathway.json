@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a253306row1_part3d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Test MSE",
+        "text": "Test MSE is a measure of how well the model generalizes to unseen data. It can be affected by changes in model complexity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row1_part3d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row1_part3d-h1"
+        ],
+        "title": "Effect of Adding Features",
+        "text": "Adding a new feature, such as the square of an existing feature, can increase model complexity. This might lead to overfitting or better capturing the data pattern.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row1_part3d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row1_part3d-h2"
+        ],
+        "title": "Overfitting and Underfitting",
+        "text": "Overfitting occurs when a model is too complex and captures noise in the training data, leading to higher test MSE. Underfitting occurs when a model is too simple and cannot capture the underlying pattern, also potentially increasing test MSE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row1_part3d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase and Decrease"
+        ],
+        "dependencies": [
+            "a253306row1_part3d-h3"
+        ],
+        "title": "Analyzing the Effect",
+        "text": "Consider how adding a squared feature might affect the model's ability to generalize. Could it lead to overfitting or better fit the data pattern?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Increase and Decrease"
+        ]
+    }
+]

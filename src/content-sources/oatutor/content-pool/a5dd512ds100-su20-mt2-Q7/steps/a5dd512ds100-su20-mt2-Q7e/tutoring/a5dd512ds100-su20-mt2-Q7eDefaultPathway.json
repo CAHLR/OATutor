@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a5dd512ds100-su20-mt2-Q7e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logistic Regression",
+        "text": "Logistic regression is used to model the probability of a binary outcome based on one or more predictor variables. In this case, we are using a single predictor variable, $x$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-mt2-Q7e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su20-mt2-Q7e-h1"
+        ],
+        "title": "Logistic Function",
+        "text": "The logistic function is given by $P(Y=1|x)=1/(1+e**(-z))$, where $z$ is a linear combination of the predictors. In this case, $z=\\beta_0+\\beta_1*x$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-mt2-Q7e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su20-mt2-Q7e-h2"
+        ],
+        "title": "Interpreting the Probability",
+        "text": "The probability $$\\$P(Y=1|x=4)\\$$$ is the likelihood that the response variable $Y$ equals $$1$$ given that the predictor variable $x$ is $$4$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-mt2-Q7e-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su20-mt2-Q7e-h3"
+        ],
+        "title": "Calculating the Probability",
+        "text": "Assume that the logistic regression model has been fitted and the coefficients are such that $$\\$P(Y=1|x=4)\\$$$ is closest to one of the given options. Calculate the probability using the logistic function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$\\frac{1}{4}$$",
+            "$$\\frac{1}{2}$$",
+            "$$\\frac{3}{4}$$",
+            "$$1$$"
+        ]
+    }
+]

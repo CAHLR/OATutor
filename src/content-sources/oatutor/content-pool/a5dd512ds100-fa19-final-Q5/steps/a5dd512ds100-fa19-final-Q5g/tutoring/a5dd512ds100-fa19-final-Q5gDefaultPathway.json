@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a5dd512ds100-fa19-final-Q5g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Zero-One Loss",
+        "text": "The zero-one loss function is used to measure the accuracy of predictions. It assigns a loss of $$1$$ for each incorrect prediction and $$0$$ for each correct prediction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5g-h1"
+        ],
+        "title": "Calculate Predicted Labels",
+        "text": "Given the predicted probabilities $$(0.1$$, $$0.6$$, $$0.9)$$ and the threshold $$T=0.5$$, determine the predicted labels (0 or 1) for each instance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5g-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "string",
+        "hintAnswer": [
+            "0,1,1"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5g-h2"
+        ],
+        "title": "Determine Predicted Labels",
+        "text": "For each predicted probability, compare it to the threshold $$T=0.5$$. If the probability is greater than T, the predicted label is 1; otherwise, it is $$0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5g-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5g-h3"
+        ],
+        "title": "Compare True and Predicted Labels",
+        "text": "Now that you have the predicted labels, compare them with the true labels (0,0,1) to determine if each prediction is correct or incorrect.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5g-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5g-h4"
+        ],
+        "title": "Calculate Zero-One Loss",
+        "text": "For each instance, check if the true label matches the predicted label. If they do not match, assign a loss of $$1$$. Sum the losses to get the total zero-one loss.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$0$$",
+            "$$1$$",
+            "$$2$$",
+            "$$3$$"
+        ]
+    }
+]

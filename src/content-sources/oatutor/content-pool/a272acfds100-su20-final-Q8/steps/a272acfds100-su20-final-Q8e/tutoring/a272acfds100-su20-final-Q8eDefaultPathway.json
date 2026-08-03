@@ -1,0 +1,74 @@
+[
+    {
+        "id": "a272acfds100-su20-final-Q8e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "We need to determine if the combination of values for the vectors $$u_1$$ and $$u_2$$ is invalid. This involves checking if these vectors can form a valid basis for the matrix U.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su20-final-Q8e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-su20-final-Q8e-h1"
+        ],
+        "title": "Check Orthogonality",
+        "text": "For the vectors $$u_1$$ and $$u_2$$ to form a valid basis, they must be orthogonal. Check if the dot product of $$u_1$$ and $$u_2$$ is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su20-final-Q8e-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a272acfds100-su20-final-Q8e-h2"
+        ],
+        "title": "Calculate the Dot Product",
+        "text": "Calculate the dot product of $$u_1$$ and $$u_2$$: (1,0,0,0,0,0) dot (1/2,1/2,0,0,0,0).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su20-final-Q8e-h4",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-su20-final-Q8e-h3"
+        ],
+        "title": "Interpret the Result",
+        "text": "If the dot product is not zero, the vectors are not orthogonal, indicating an invalid combination for forming a basis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su20-final-Q8e-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a272acfds100-su20-final-Q8e-h4"
+        ],
+        "title": "Final Conclusion",
+        "text": "Based on the orthogonality check, is the combination of $$u_1$$ and $$u_2$$ invalid?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

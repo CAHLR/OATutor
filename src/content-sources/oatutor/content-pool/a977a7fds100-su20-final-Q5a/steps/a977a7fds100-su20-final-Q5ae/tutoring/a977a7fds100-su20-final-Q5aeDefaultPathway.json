@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a977a7fds100-su20-final-Q5ae-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the True Model",
+        "text": "In the context of the problem, the true model is represented by the function $$f_{\\theta} x$$. This model is used to generate the observed response vector Y from the design matrix X.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su20-final-Q5ae-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su20-final-Q5ae-h1"
+        ],
+        "title": "Role of Theta*",
+        "text": "Theta* is a parameter in the true linear model $$f_{\\theta} x$$. It is used to generate the true response values Y from the design matrix X.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su20-final-Q5ae-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-su20-final-Q5ae-h2"
+        ],
+        "title": "Fixed or Variable?",
+        "text": "Consider whether theta* changes during the generation of X and Y, or if it remains constant throughout the process.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-su20-final-Q5ae-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a977a7fds100-su20-final-Q5ae-h3"
+        ],
+        "title": "Theta* in the True Model",
+        "text": "Is theta* a fixed quantity in the true model used to generate X and Y?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a825455ds100-su21-final-Q10f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Spectral Clustering",
+        "text": "Spectral clustering involves using a specific type of matrix to find clusters in data. This matrix is derived from the graph representation of the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su21-final-Q10f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-su21-final-Q10f-h1"
+        ],
+        "title": "Types of Matrices in Graphs",
+        "text": "In graph theory, there are several matrices associated with a graph, such as the adjacency matrix, the distance matrix, and the Laplacian matrix. Each serves a different purpose.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su21-final-Q10f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-su21-final-Q10f-h2"
+        ],
+        "title": "Role of the Laplacian Matrix",
+        "text": "The Laplacian matrix is crucial in spectral clustering because it helps in finding the eigenvalues and eigenvectors that are used to partition the graph into clusters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-su21-final-Q10f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Laplacian"
+        ],
+        "dependencies": [
+            "a825455ds100-su21-final-Q10f-h3"
+        ],
+        "title": "Identifying the Correct Matrix",
+        "text": "Which matrix is used in spectral clustering to find the eigenvalues and eigenvectors?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "distance",
+            "adjacency",
+            "Laplacian"
+        ]
+    }
+]

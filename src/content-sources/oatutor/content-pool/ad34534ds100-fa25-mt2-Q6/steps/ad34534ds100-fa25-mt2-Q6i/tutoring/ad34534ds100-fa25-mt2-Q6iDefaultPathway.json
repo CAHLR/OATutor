@@ -1,0 +1,72 @@
+[
+    {
+        "id": "ad34534ds100-fa25-mt2-Q6i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LASSO Regularization",
+        "text": "LASSO regularization adds a penalty equal to the absolute value of the magnitude of coefficients to the loss function. This can lead to some coefficients being exactly zero, effectively selecting a simpler model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q6i-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q6i-h1"
+        ],
+        "title": "Effect of LASSO on Bias",
+        "text": "When LASSO regularization is applied, it tends to increase the bias of the model because it simplifies the model by reducing the number of features.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q6i-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q6i-h1"
+        ],
+        "title": "Effect of LASSO on Variance",
+        "text": "LASSO regularization reduces the variance of the model by simplifying it, which can lead to more stable predictions on new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q6i-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q6i-h1"
+        ],
+        "title": "Effect of LASSO on MSE",
+        "text": "The Mean Squared Error (MSE) on training data might increase due to the added bias, but the MSE on test data might decrease due to reduced variance and overfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q6i-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase only"
+        ],
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q6i-h2"
+        ],
+        "title": "Determine the Effect on (Model Bias)**2",
+        "text": "Given the use of LASSO regularization with lambda greater than zero, what is the effect on (Model Bias)**2?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase only",
+            "Decrease only",
+            "Increase and Decrease",
+            "Neither Increase nor Decrease",
+            "Cannot be determined"
+        ]
+    }
+]

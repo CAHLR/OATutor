@@ -1,0 +1,70 @@
+[
+    {
+        "id": "aac8d73ds100-su20-final-Q4j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Normal Equations",
+        "text": "The normal equations for linear regression are derived from setting the gradient of the loss function to zero. This results in a system of equations that can be solved for the coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q4j-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q4j-h1"
+        ],
+        "title": "Checking for Unique Solutions",
+        "text": "A unique solution to the normal equations exists if the design matrix X has full column rank. This means that the columns of X are linearly independent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q4j-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q4j-h2"
+        ],
+        "title": "Role of the Intercept Term",
+        "text": "Including an intercept term in the model ensures that the mean of the residuals is zero, which is a key assumption in linear regression.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q4j-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "X must have full column rank meaning its columns are linearly independent."
+        ],
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q4j-h3"
+        ],
+        "title": "Determining Full Column Rank",
+        "text": "Given that $$p$$ $$ \\geq $$ $$5$$, what condition must the design matrix X satisfy to ensure a unique solution to the normal equations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su20-final-Q4j-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Centering the data does not affect the existence of a unique solution but it can simplify the interpretation of the coefficients."
+        ],
+        "dependencies": [
+            "aac8d73ds100-su20-final-Q4j-h4"
+        ],
+        "title": "Effect of Centering the Data",
+        "text": "How does centering the data affect the solution to the normal equations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a272acfds100-fa20-final-Q10c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD and Scree Plot",
+        "text": "The scree plot is used to show the proportion of variance captured by each principal component (PC). The singular values obtained from SVD are related to the variance captured by each PC.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa20-final-Q10c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-fa20-final-Q10c-h1"
+        ],
+        "title": "Singular Values and Variance",
+        "text": "The singular values (s) from the SVD are used to calculate the variance captured by each PC. The variance for each PC is proportional to the square of the singular values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa20-final-Q10c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a272acfds100-fa20-final-Q10c-h2"
+        ],
+        "title": "Proportion of Variance",
+        "text": "To find the proportion of variance captured by each PC, you need to square the singular values and then divide by the sum of all squared singular values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-fa20-final-Q10c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "plt.plot(np.arange(1,F.shape[1]+1),s**2/np.sum(s**2))"
+        ],
+        "dependencies": [
+            "a272acfds100-fa20-final-Q10c-h3"
+        ],
+        "title": "Code for Scree Plot",
+        "text": "Which line of code correctly plots the proportion of variance captured by each PC?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$plt.plot(\\frac{s^2}{\\sum s^2},u)$$",
+            "plt.plot(F[:,:7]),s**2/np.sum(s))",
+            "plt.plot(np.arange(1,F.shape[1]+1),s**2/np.sum(s**2))",
+            "plt.plot(np.arange(1,F.shape[1]+1),s**2/np.sum(s))",
+            "plt.plot(u@s,s**2/np.sum(s**2))"
+        ]
+    }
+]

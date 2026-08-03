@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ade7df0ds100-su21-final-Q6e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Invertibility",
+        "text": "To determine if a matrix is invertible, we need to check if its determinant is non-zero. If the determinant is zero, the matrix is not invertible.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q6e-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q6e-h1"
+        ],
+        "title": "Matrix $X'$",
+        "text": "The matrix $X'$ is formed by adding a column of ones to the original matrix $X$. This is done to account for the intercept in the linear regression model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q6e-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q6e-h2"
+        ],
+        "title": "Checking Determinant",
+        "text": "Calculate the determinant of $X'**T*X'$. If the determinant is non-zero, then $X'**T*X'$ is invertible.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su21-final-Q6e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su21-final-Q6e-h3"
+        ],
+        "title": "Calculate $X'**T*X'$",
+        "text": "Compute the product $X'**T*X'$ and find its determinant.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

@@ -1,0 +1,152 @@
+[
+    {
+        "id": "a613447ds100-su19-final-Q6m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model is given by f_theta(x)=theta_0+theta_1*veg+theta_2*(meat=beef)+theta_3*(meat=fish).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6m-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6m-h1"
+        ],
+        "title": "Identify the Third Data Point",
+        "text": "The third data point in the dataset is $$veg=2$$, $$meat=beef$$, $$total=16$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6m-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6m-h2"
+        ],
+        "title": "Substitute Values into the Model",
+        "text": "For the third data point, substitute $$veg=2$$ and $$meat=beef$$ into the model: f_theta(x)=-3+5*veg+8*(meat=beef)+12*(meat=fish).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6m-h4",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6m-h3"
+        ],
+        "title": "Calculate the Predicted Total",
+        "text": "Since $$meat=beef$$, the indicator $$(meat=beef)=1$$ and $$(meat=fish)=0$$. Substitute these into the model to find the predicted total.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6m-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$15$$"
+        ],
+        "dependencies": [
+            "a613447ds100-su19-final-Q6m-h4"
+        ],
+        "title": "Compute the Predicted Total",
+        "text": "Calculate $$\\operatorname{f_{\\theta}}\\left(x\\right)=-3+5\\times2+8\\times1+12\\times0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6m-h6",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6m-h5"
+        ],
+        "title": "Calculate the Absolute Loss",
+        "text": "The absolute loss is the absolute value of the difference between the actual total and the predicted total.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6m-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a613447ds100-su19-final-Q6m-h6"
+        ],
+        "title": "Compute the Absolute Loss",
+        "text": "Calculate $$|16-15|$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6m-h8",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6m-h7"
+        ],
+        "title": "Understand L1 Regularization",
+        "text": "L1 regularization adds the sum of the absolute values of the coefficients multiplied by lambda to the loss.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6m-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$25$$"
+        ],
+        "dependencies": [
+            "a613447ds100-su19-final-Q6m-h8"
+        ],
+        "title": "Compute L1 Regularization Term",
+        "text": "Calculate $$\\lambda \\left(|\\theta_0|+|\\theta_1|+|\\theta_2|+|\\theta_3|\\right)$$ with $$lambda=1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6m-h10",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6m-h9"
+        ],
+        "title": "Combine Loss and Regularization",
+        "text": "Add the absolute loss and the L1 regularization term to find the total loss.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6m-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$26$$"
+        ],
+        "dependencies": [
+            "a613447ds100-su19-final-Q6m-h10"
+        ],
+        "title": "Compute Total Loss",
+        "text": "Calculate $$1+25$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

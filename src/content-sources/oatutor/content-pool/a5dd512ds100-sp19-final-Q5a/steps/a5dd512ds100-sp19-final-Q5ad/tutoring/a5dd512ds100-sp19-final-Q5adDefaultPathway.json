@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a5dd512ds100-sp19-final-Q5ad-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logistic Regression",
+        "text": "In logistic regression, the probability of the binary outcome is modeled using the logistic function, which is denoted as \u03c3. This function maps any real-valued number into the $$(0,1)$$ interval, making it suitable for probability estimation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp19-final-Q5ad-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp19-final-Q5ad-h1"
+        ],
+        "title": "Comparing Logistic Functions",
+        "text": "Consider the properties of the logistic function \u03c3. How does the function behave when the input to the function is doubled?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp19-final-Q5ad-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp19-final-Q5ad-h2"
+        ],
+        "title": "Behavior of the Logistic Function",
+        "text": "The logistic function \u03c3(x) is defined as $$\\frac{1}{1+e^{\\left(-x\\right)}}$$. As $$x$$ increases, \u03c3(x) approaches $$1$$, and as $$x$$ decreases, \u03c3(x) approaches $$0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp19-final-Q5ad-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Sometimes"
+        ],
+        "dependencies": [
+            "a5dd512ds100-sp19-final-Q5ad-h3"
+        ],
+        "title": "Analyzing the Inequality",
+        "text": "Given the inequality $$\\operatorname{\\sigma}\\left(X^T \\beta\\right) \\leq \\operatorname{\\sigma}\\left(X^T 2\\beta\\right)$$, consider the behavior of the logistic function when the input is doubled. Is the inequality always true, sometimes true, or never true?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Always",
+            "Sometimes",
+            "Never"
+        ]
+    }
+]

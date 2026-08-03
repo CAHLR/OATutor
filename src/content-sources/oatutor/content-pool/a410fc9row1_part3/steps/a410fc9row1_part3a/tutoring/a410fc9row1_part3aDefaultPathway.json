@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a410fc9row1_part3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias in Model A",
+        "text": "When you add a squared feature to a model, it can capture more complex relationships in the data. How might this affect the bias of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row1_part3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row1_part3a-h1"
+        ],
+        "title": "Effect of Adding Features",
+        "text": "Adding a new feature, especially a non-linear one like a squared term, can potentially decrease bias because the model can fit the data more closely. However, it might also increase variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row1_part3a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a410fc9row1_part3a-h2"
+        ],
+        "title": "Possible Effects on Bias",
+        "text": "What is the possible effect on model $${bias}^2$$ when adding a squared feature?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Increase and Decrease"
+        ]
+    }
+]

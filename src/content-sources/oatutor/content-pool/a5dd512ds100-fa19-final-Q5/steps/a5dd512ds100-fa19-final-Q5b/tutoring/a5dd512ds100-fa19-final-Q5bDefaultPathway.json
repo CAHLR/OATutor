@@ -1,0 +1,130 @@
+[
+    {
+        "id": "a5dd512ds100-fa19-final-Q5b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Squared Loss",
+        "text": "Squared loss is calculated as the square of the difference between the predicted probability and the true label. For each data point, compute this difference and square it.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5b-h1"
+        ],
+        "title": "Calculate for Each Data Point",
+        "text": "For the first data point, the true label is $$0$$ and the predicted probability is $$0.1$$. Calculate the squared loss for this data point.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(0.1-0\\right)^2$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5b-h2"
+        ],
+        "title": "First Data Point Calculation",
+        "text": "Calculate the squared loss for the first data point where the true label is $$0$$ and the predicted probability is $$0.1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5b-h1"
+        ],
+        "title": "Calculate for the Second Data Point",
+        "text": "For the second data point, the true label is $$0$$ and the predicted probability is $$0.6$$. Calculate the squared loss for this data point.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(0.6-0\\right)^2$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5b-h4"
+        ],
+        "title": "Second Data Point Calculation",
+        "text": "Calculate the squared loss for the second data point where the true label is $$0$$ and the predicted probability is $$0.6$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5b-h6",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5b-h1"
+        ],
+        "title": "Calculate for the Third Data Point",
+        "text": "For the third data point, the true label is $$1$$ and the predicted probability is $$0.9$$. Calculate the squared loss for this data point.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5b-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(0.9-1\\right)^2$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5b-h6"
+        ],
+        "title": "Third Data Point Calculation",
+        "text": "Calculate the squared loss for the third data point where the true label is $$1$$ and the predicted probability is $$0.9$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5b-h8",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5b-h3",
+            "a5dd512ds100-fa19-final-Q5b-h5",
+            "a5dd512ds100-fa19-final-Q5b-h7"
+        ],
+        "title": "Sum the Squared Losses",
+        "text": "Add the squared losses from each data point to get the total squared loss.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-fa19-final-Q5b-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$${0.1}^2+{0.6}^2+{0.1}^2$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-fa19-final-Q5b-h8"
+        ],
+        "title": "Total Squared Loss Calculation",
+        "text": "Sum the squared losses: $$\\left(0.1-0\\right)^2+\\left(0.6-0\\right)^2+\\left(0.9-1\\right)^2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

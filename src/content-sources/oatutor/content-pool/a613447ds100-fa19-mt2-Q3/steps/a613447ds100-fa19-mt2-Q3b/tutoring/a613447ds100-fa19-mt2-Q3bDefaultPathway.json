@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a613447ds100-fa19-mt2-Q3b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Graph",
+        "text": "The graph shows the relationship between model complexity and the components of error: bias squared, variance, and irreducible error. As model complexity increases, bias squared decreases and variance increases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa19-mt2-Q3b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa19-mt2-Q3b-h1"
+        ],
+        "title": "Ridge Penalty and Lambda",
+        "text": "The Ridge penalty term is controlled by lambda (\u03bb). A larger \u03bb penalizes the coefficients more, leading to simpler models with higher bias and lower variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa19-mt2-Q3b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa19-mt2-Q3b-h2"
+        ],
+        "title": "Interpreting Lambda on the Graph",
+        "text": "On the graph, the left side represents high bias and low variance, which corresponds to a large \u03bb. The right side represents low bias and high variance, corresponding to a small \u03bb.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa19-mt2-Q3b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The right side of the graph represents small \u03bb."
+        ],
+        "dependencies": [
+            "a613447ds100-fa19-mt2-Q3b-h3"
+        ],
+        "title": "Determine the Side for Small Lambda",
+        "text": "Based on the graph and the effect of \u03bb, which side of the graph represents small \u03bb?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The left side of the graph represents small \u03bb.",
+            "The right side of the graph represents small \u03bb."
+        ]
+    }
+]

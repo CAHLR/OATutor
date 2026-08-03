@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a613447ds100-fa25-mt2-Q6j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Bias",
+        "text": "When you remove a feature from a model, think about how it affects the model's ability to capture the true relationship between the input features and the output. Does removing a feature make the model more or less accurate in representing the true data-generating process?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa25-mt2-Q6j-h1"
+        ],
+        "title": "Impact on Model Bias",
+        "text": "Removing a feature can potentially increase the model bias because the model might lose some information that was useful in predicting the output. This means the model might not fit the training data as well as before.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa25-mt2-Q6j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "a613447ds100-fa25-mt2-Q6j-h2"
+        ],
+        "title": "Effect on Model Bias",
+        "text": "Given that removing a feature can increase the model bias, what is the possible effect on (model bias) squared?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    }
+]

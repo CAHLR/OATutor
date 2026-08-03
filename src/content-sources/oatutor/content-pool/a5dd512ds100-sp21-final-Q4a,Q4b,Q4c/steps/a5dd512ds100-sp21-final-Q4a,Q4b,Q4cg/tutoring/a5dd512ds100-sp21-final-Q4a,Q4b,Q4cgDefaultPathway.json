@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a5dd512ds100-sp21-final-Q4a,Q4b,Q4cg-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Separability",
+        "text": "Linear separability means that you can draw a straight line (or hyperplane in higher dimensions) to separate the classes in your dataset. Consider how transformations can help achieve this.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp21-final-Q4a,Q4b,Q4cg-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp21-final-Q4a,Q4b,Q4cg-h1"
+        ],
+        "title": "Effect of Squaring Features",
+        "text": "Squaring features can change the shape of the data distribution. Think about how this might affect the separability of the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp21-final-Q4a,Q4b,Q4cg-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a5dd512ds100-sp21-final-Q4a,Q4b,Q4cg-h2"
+        ],
+        "title": "Transformation Impact",
+        "text": "Consider the transformation $$(x_1,x_2)$$ to $$({x_1}^2,{x_2}^2)$$. How does this transformation affect the data's linear separability?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

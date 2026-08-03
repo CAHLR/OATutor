@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a5d4609ds100-sp21-final-Q11g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD Output",
+        "text": "The singular values in Sigma represent the variance captured by each principal component. The larger the singular value, the more variance that component captures.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp21-final-Q11g-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting $$V_T$$",
+        "text": "The matrix $$V_T$$ contains the principal components. Each row of $$V_T$$ represents a principal component direction in the original feature space.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp21-final-Q11g-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Analyzing the Plots",
+        "text": "Look at the orientation and spread of the data in each plot. Which plot seems to have a primary direction that matches the principal component directions given by $$V_T$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp21-final-Q11g-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The first principal component captures significantly more variance than the second."
+        ],
+        "dependencies": [
+            "a5d4609ds100-sp21-final-Q11g-h1"
+        ],
+        "title": "Comparing Singular Values",
+        "text": "Compare the singular values: $$15.59204498$$ and $$3.85871854$$. What does this tell you about the spread of the data in the principal component directions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-sp21-final-Q11g-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Plot B"
+        ],
+        "dependencies": [
+            "a5d4609ds100-sp21-final-Q11g-h2"
+        ],
+        "title": "Matching $$V_T$$ with Plots",
+        "text": "The first row of $$V_T$$ is $$[0.89238775$$, $$-0.45126944]$$. Which plot has a primary direction that aligns with this vector?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Plot A",
+            "Plot B",
+            "Plot C"
+        ]
+    }
+]

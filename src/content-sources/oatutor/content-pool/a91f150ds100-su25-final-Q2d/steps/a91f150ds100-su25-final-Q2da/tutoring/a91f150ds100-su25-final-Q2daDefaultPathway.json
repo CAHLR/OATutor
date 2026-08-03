@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a91f150ds100-su25-final-Q2da-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting by adding a penalty term to the loss function. The two most common types are L1 (Lasso) and L2 (Ridge) regularization.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su25-final-Q2da-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su25-final-Q2da-h1"
+        ],
+        "title": "L1 vs L2 Regularization",
+        "text": "L1 regularization adds the absolute value of the coefficients as a penalty term, while L2 regularization adds the square of the coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su25-final-Q2da-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su25-final-Q2da-h2"
+        ],
+        "title": "Effect of Lambda",
+        "text": "The lambda (\u03bb) hyperparameter controls the strength of the penalty term. A higher \u03bb means more regularization, which can lead to simpler models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su25-final-Q2da-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The optimal \u03bb is not always the same for L1 and L2 regularization because they penalize coefficients differently."
+        ],
+        "dependencies": [
+            "a91f150ds100-su25-final-Q2da-h3"
+        ],
+        "title": "Comparing L1 and L2",
+        "text": "Consider how the penalty terms differ between L1 and L2 regularization. How might this affect the choice of \u03bb?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "TRUE",
+            "The optimal \u03bb is not always the same for L1 and L2 regularization because they penalize coefficients differently."
+        ]
+    }
+]

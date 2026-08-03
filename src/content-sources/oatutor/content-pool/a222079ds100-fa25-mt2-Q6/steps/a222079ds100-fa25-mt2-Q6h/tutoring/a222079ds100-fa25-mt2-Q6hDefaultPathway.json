@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a222079ds100-fa25-mt2-Q6h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE on Test Data",
+        "text": "Mean Squared Error (MSE) on held-out test data measures how well the model generalizes to unseen data. It is affected by both bias and variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa25-mt2-Q6h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa25-mt2-Q6h-h1"
+        ],
+        "title": "Effect of Removing a Feature",
+        "text": "Removing a feature can potentially increase bias because the model has less information to work with. However, it can also decrease variance by simplifying the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa25-mt2-Q6h-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa25-mt2-Q6h-h2"
+        ],
+        "title": "Balancing Bias and Variance",
+        "text": "The trade-off between bias and variance is crucial. Removing a feature might increase bias but decrease variance, affecting the MSE on test data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa25-mt2-Q6h-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase and Decrease"
+        ],
+        "dependencies": [
+            "a222079ds100-fa25-mt2-Q6h-h3"
+        ],
+        "title": "Possible Effects on MSE",
+        "text": "Consider how removing a feature affects both bias and variance. What are the possible effects on MSE on held-out test data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase only",
+            "Decrease only",
+            "Increase and Decrease",
+            "Neither Increase nor Decrease",
+            "Cannot be determined"
+        ]
+    }
+]

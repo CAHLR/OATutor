@@ -1,0 +1,76 @@
+[
+    {
+        "id": "a5dd512ds100-su20-mt2-Q7b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Logistic Regression Model",
+        "text": "The logistic regression model is given by the equation: \\( \\hat{y}=\\sigma(\\theta_0+\\theta_1x) \\). Here, \\( \\sigma \\) is the sigmoid function, which transforms the linear combination of features into a probability.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-mt2-Q7b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su20-mt2-Q7b-h1"
+        ],
+        "title": "Interpreting the Scale Parameter",
+        "text": "The scale parameter \\( $$\\theta_1$$ \\) in the logistic regression model affects the steepness of the curve. A larger absolute value of \\( $$\\theta_1$$ \\) results in a steeper curve.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-mt2-Q7b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su20-mt2-Q7b-h2"
+        ],
+        "title": "Estimating \\( $$\\theta_1$$ \\)",
+        "text": "To estimate \\( $$\\theta_1$$ \\), consider the change in the log-odds of the response variable \\( $$y$$ \\) with respect to the feature \\( $$x$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-mt2-Q7b-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\theta_1$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su20-mt2-Q7b-h3"
+        ],
+        "title": "Calculating the Log-Odds",
+        "text": "The log-odds of the response variable \\( $$y$$ \\) is given by \\( \\log(\\frac{P(y=1|x)}{P(y=0|x)})=\\theta_0+\\theta_1x \\). What is the change in log-odds when \\( $$x$$ \\) changes by $$1$$ unit?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su20-mt2-Q7b-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su20-mt2-Q7b-s1"
+        ],
+        "title": "Finding the Closest Value",
+        "text": "Given the options $$\\(-100\\)$$, $$\\(-1\\)$$, \\(1\\), and \\(100\\), which value is closest to the estimated \\( $$\\theta_1$$ \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-100$$",
+            "$$-1$$",
+            "$$1$$",
+            "$$100$$"
+        ]
+    }
+]

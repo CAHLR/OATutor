@@ -1,0 +1,54 @@
+[
+    {
+        "id": "a272acfds100-su19-final-Q2be-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It projects data onto principal component axes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su19-final-Q2be-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting the Scatter Plot",
+        "text": "The scatter plot shows a negative correlation between 'mpg' and 'age'. This means as 'age' increases, 'mpg' decreases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su19-final-Q2be-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Analyzing the Point Plots",
+        "text": "Point plots show the means of two columns with confidence intervals. Consider how these might relate to the principal components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a272acfds100-su19-final-Q2be-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Neither"
+        ],
+        "dependencies": [
+            "a272acfds100-su19-final-Q2be-h3"
+        ],
+        "title": "Identifying Axis Labels for (e.i) and (e.ii)",
+        "text": "Based on the scatter plot and the nature of PCA, which axis labels would be appropriate for (e.i) and (e.ii)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "pc1",
+            "pc2",
+            "Neither"
+        ]
+    }
+]

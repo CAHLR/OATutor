@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a222079ds100-sp22-mt2-Q6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Full Column Rank",
+        "text": "A matrix is full column rank if its columns are linearly independent. This means no column can be written as a linear combination of the others.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp22-mt2-Q6b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-sp22-mt2-Q6b-h1"
+        ],
+        "title": "Dummy Variables and Linear Independence",
+        "text": "When using dummy variables for categorical data, each variable represents a category. If one category can be perfectly predicted by the others, the matrix is not full column rank.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp22-mt2-Q6b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-sp22-mt2-Q6b-h2"
+        ],
+        "title": "Analyzing the Design Matrix",
+        "text": "In the design matrix X, each column represents a food item. If a student eats all four foods, the sum of the columns for that row will be $$4$$. Can any column be expressed as a combination of the others?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-sp22-mt2-Q6b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes, if one column can be expressed as a sum of others, the matrix is not full column rank."
+        ],
+        "dependencies": [
+            "a222079ds100-sp22-mt2-Q6b-h3"
+        ],
+        "title": "Checking Linear Independence",
+        "text": "Consider the columns of the design matrix X. Are there any columns that can be expressed as a linear combination of the others?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "No",
+            "Yes",
+            "Yes, if one column can be expressed as a sum of others, the matrix is not full column rank."
+        ]
+    }
+]

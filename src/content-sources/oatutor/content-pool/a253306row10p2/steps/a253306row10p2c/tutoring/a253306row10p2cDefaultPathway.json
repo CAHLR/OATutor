@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a253306row10p2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Output Vector",
+        "text": "The true output vector $Y$ represents the observed delay in minutes for each flight record. How many flight records are there?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row10p2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row10p2c-h1"
+        ],
+        "title": "Dimensions of the Output Vector",
+        "text": "Since $Y$ is a vector containing the observed delay for each flight, its shape is determined by the number of flight records. What does this imply about the number of rows in $Y$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

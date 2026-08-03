@@ -1,0 +1,18 @@
+{
+    "id": "aff9095row7_p1a",
+    "stepAnswer": [
+        "(\"activity\")[\"hour\\_of\\_visit\"]"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Fill in blank A:",
+    "stepBody": "Claire wants to impute the missing entries of hour\\_of\\_visit with the mode of its same activity category. For example, if any row with activity \"grade\" has a missing value for hour\\_of\\_visit, the missing values should be replaced by the mode of hour\\_of\\_visit for \"grade\" activities. Fill in the blanks to accomplish this.##figure1.gif## ##figure2.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "(\"activity\")[\"hour\\_of\\_visit\"]",
+        "(\"hour\\_of\\_visit\")[\"activity\"]",
+        "(\"activity\")",
+        "(\"hour\\_of\\_visit\")",
+        "([\"activity\", \"hour\\_of\\_visit\"])"
+    ]
+}

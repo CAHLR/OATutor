@@ -1,0 +1,65 @@
+[
+    {
+        "id": "ade7df0ds100-su20-mt2-Q7c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logistic Regression",
+        "text": "Logistic regression models the probability that a binary response variable equals $$1$$ as a function of a continuous predictor variable. The model is represented by the logistic function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su20-mt2-Q7c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su20-mt2-Q7c-h1"
+        ],
+        "title": "Logistic Function Formula",
+        "text": "The logistic function is given by the formula: $$P(Y=1|x)=\\frac{1}{1+e^{\\left(-b0-b1 x\\right)}}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su20-mt2-Q7c-h3",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su20-mt2-Q7c-h2"
+        ],
+        "title": "Sketching the Logistic Curve",
+        "text": "Sketch the logistic curve to visualize how the probability changes with different values of $$x$$. The curve is S-shaped, starting near $$0$$, increasing, and leveling off near $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su20-mt2-Q7c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{4}$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-su20-mt2-Q7c-h3"
+        ],
+        "title": "Calculating $$P(Y=1|x=1)$$",
+        "text": "Substitute $$x=1$$ into the logistic function formula to find $$P(Y=1|x=1)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-su20-mt2-Q7c-h5",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-su20-mt2-Q7c-h4"
+        ],
+        "title": "Interpreting the Result",
+        "text": "The value you calculated represents the probability that the response variable equals $$1$$ when the predictor variable is $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

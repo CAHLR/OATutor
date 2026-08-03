@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a613447ds100-su19-final-Q6o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Polynomial Features",
+        "text": "Adding polynomial features, such as degree $$3$$, can capture more complex relationships in the data. This can potentially reduce bias by fitting the data more closely.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6o-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6o-h1"
+        ],
+        "title": "Effect on Bias",
+        "text": "Bias refers to the error introduced by approximating a real-world problem, which may be complex, by a simplified model. Adding polynomial features can decrease bias by allowing the model to fit the data more closely.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6o-h3",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-su19-final-Q6o-h2"
+        ],
+        "title": "Effect on Variance",
+        "text": "Variance refers to the model's sensitivity to fluctuations in the training data. Adding more features, such as polynomial terms, can increase variance because the model may fit the noise in the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-su19-final-Q6o-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a613447ds100-su19-final-Q6o-h3"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Given that adding degree $$3$$ polynomial features can decrease bias by fitting the data more closely, does this statement hold true?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

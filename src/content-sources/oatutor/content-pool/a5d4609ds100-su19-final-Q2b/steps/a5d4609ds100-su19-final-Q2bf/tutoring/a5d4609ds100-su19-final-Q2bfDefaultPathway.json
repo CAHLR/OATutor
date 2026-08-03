@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a5d4609ds100-su19-final-Q2bf-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatter Plot",
+        "text": "The scatter plot shows a negative correlation between 'mpg' and 'age'. As 'age' increases, 'mpg' decreases. This pattern is important for identifying consistent plots.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su19-final-Q2bf-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su19-final-Q2bf-h1"
+        ],
+        "title": "Analyzing KDE Plots",
+        "text": "KDE plots (a) and (b) show the distribution of a single variable. Look for a distribution that matches the spread of 'age' or 'mpg' from the scatter plot.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su19-final-Q2bf-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su19-final-Q2bf-h2"
+        ],
+        "title": "Interpreting Histograms",
+        "text": "Histograms (c) and (d) represent the frequency distribution of a variable. Consider which variable's distribution would appear more uniform or skewed based on the scatter plot.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su19-final-Q2bf-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su19-final-Q2bf-h3"
+        ],
+        "title": "Point Plots Analysis",
+        "text": "Point plots (e.i), (e.ii), (f.i), and (f.ii) show means and confidence intervals. Determine which variable's mean would be more spread out or clustered based on the scatter plot.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su19-final-Q2bf-h5",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su19-final-Q2bf-h4"
+        ],
+        "title": "Scatter Plots Comparison",
+        "text": "Scatter plots (g.i), (g.ii), (h.i), and (h.ii) should be compared to the original scatter plot. Look for similar patterns of correlation and clustering.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

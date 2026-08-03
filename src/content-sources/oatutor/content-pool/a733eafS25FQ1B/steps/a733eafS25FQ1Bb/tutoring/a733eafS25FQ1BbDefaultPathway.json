@@ -1,0 +1,56 @@
+[
+    {
+        "id": "a733eafS25FQ1Bb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Filter Condition",
+        "text": "To determine if a building is modern, we need to check if at least 80% of its rooms were renovated in $$2003$$ or later. How can you express this condition using a lambda function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a733eafS25FQ1Bb-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using the Renovated Column",
+        "text": "Consider how you can use the 'renovated' column to filter rooms. What operation can you perform to check if the renovation year is $$2003$$ or later?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a733eafS25FQ1Bb-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "sum(sf['renovated'].astype(int)>=2003)/sf['renovated'].size"
+        ],
+        "dependencies": [
+            "a733eafS25FQ1Bb-h1"
+        ],
+        "title": "Calculate the Proportion of Modern Rooms",
+        "text": "How can you calculate the proportion of rooms renovated in $$2003$$ or later? Use the sum of rooms renovated in $$2003$$ or later divided by the total number of rooms with recorded renovations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a733eafS25FQ1Bb-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "(sum(sf['renovated'].astype(int)>=2003)/sf['renovated'].size)>=0.80"
+        ],
+        "dependencies": [
+            "a733eafS25FQ1Bb-h3"
+        ],
+        "title": "Check the Modern Condition",
+        "text": "How can you check if the proportion of modern rooms is at least 80%?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

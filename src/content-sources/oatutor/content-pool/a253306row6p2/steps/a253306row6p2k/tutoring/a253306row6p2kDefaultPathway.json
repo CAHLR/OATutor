@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a253306row6p2k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting by adding a penalty term to the loss function. It helps in reducing the variance of the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6p2k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row6p2k-h1"
+        ],
+        "title": "Bias-Variance Tradeoff",
+        "text": "The bias-variance tradeoff is a fundamental concept in machine learning. Regularization primarily affects the variance of the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row6p2k-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "increase"
+        ],
+        "dependencies": [
+            "a253306row6p2k-h2"
+        ],
+        "title": "Effect of Regularization on Bias",
+        "text": "Does regularization increase or decrease the bias of a model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "increase",
+            "decrease"
+        ]
+    },
+    {
+        "id": "a253306row6p2k-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "decrease"
+        ],
+        "dependencies": [
+            "a253306row6p2k-h3"
+        ],
+        "title": "Effect of Regularization on Variance",
+        "text": "Does regularization increase or decrease the variance of a model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "increase",
+            "decrease"
+        ]
+    },
+    {
+        "id": "a253306row6p2k-h5",
+        "type": "hint",
+        "dependencies": [
+            "a253306row6p2k-h4"
+        ],
+        "title": "Conclusion on Bias Squared",
+        "text": "Since regularization increases bias and decreases variance, it does not reduce the bias squared of the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a5dd512ds100-su19-final-Q8c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding ROC Curves",
+        "text": "ROC curves plot the true positive rate against the false positive rate. A perfect classifier will have a curve that goes straight up the y-axis and then across the top, indicating a true positive rate of $$1$$ with a false positive rate of $$0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q8c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q8c-h1"
+        ],
+        "title": "Interpreting ROC A",
+        "text": "ROC A shows a perfect classifier. It goes straight up to $$1$$ on the y-axis and then across, indicating it perfectly separates the classes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q8c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q8c-h1"
+        ],
+        "title": "Interpreting ROC B",
+        "text": "ROC B is a diagonal line from $$(0,0)$$ to $$(1,1)$$, which indicates a random classifier. It performs no better than random guessing.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q8c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q8c-h1"
+        ],
+        "title": "Interpreting ROC C",
+        "text": "ROC C shows a curve that goes along the x-axis and then up, indicating a classifier that predicts all negatives until the threshold is very high.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-su19-final-Q8c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "ROC B"
+        ],
+        "dependencies": [
+            "a5dd512ds100-su19-final-Q8c-h3"
+        ],
+        "title": "Identify the Classifier for ROC B",
+        "text": "Which classifier corresponds to ROC B, the diagonal line?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "ROC A",
+            "ROC B",
+            "ROC C"
+        ]
+    }
+]

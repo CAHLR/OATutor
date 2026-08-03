@@ -1,0 +1,60 @@
+[
+    {
+        "id": "ad34534ds100-fa25-mt2-Q6g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE on Training Data",
+        "text": "Mean Squared Error (MSE) on training data measures how well the model fits the training data. Removing a feature can affect this fit.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q6g-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q6g-h1"
+        ],
+        "title": "Effect of Removing a Feature",
+        "text": "When you remove a feature from a model, it can lead to a worse fit on the training data because the model has less information to work with.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q6g-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q6g-h2"
+        ],
+        "title": "Possible Outcomes",
+        "text": "Consider how removing a feature might increase the error on the training data because the model might not capture all the patterns as effectively.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ad34534ds100-fa25-mt2-Q6g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase only"
+        ],
+        "dependencies": [
+            "ad34534ds100-fa25-mt2-Q6g-h3"
+        ],
+        "title": "Conclusion on MSE for Training Data",
+        "text": "What is the most likely effect on MSE on training data when a feature is removed?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase only",
+            "Decrease only",
+            "Increase and Decrease",
+            "Neither Increase nor Decrease",
+            "Cannot be determined"
+        ]
+    }
+]

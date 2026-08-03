@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a977a7fds100-fa18-final-Q14e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plot",
+        "text": "The plot shows a U-shaped curve as the value of $$d$$ increases. This suggests that the y-axis could represent a measure that decreases to a minimum and then increases again.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q14e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q14e-h1"
+        ],
+        "title": "Possible Y-Axis Labels",
+        "text": "Consider what measures in machine learning might decrease and then increase as the complexity of the model changes. Think about training error, validation error, and model complexity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q14e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q14e-h2"
+        ],
+        "title": "Training Error",
+        "text": "Could the y-axis represent training error? Training error typically decreases as model complexity increases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q14e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q14e-h2"
+        ],
+        "title": "Validation Error",
+        "text": "Could the y-axis represent validation error? Validation error typically decreases to a point and then increases as model complexity increases, due to overfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a977a7fds100-fa18-final-Q14e-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa18-final-Q14e-h2"
+        ],
+        "title": "Model Complexity",
+        "text": "Could the y-axis represent model complexity? Model complexity typically increases as the number of features or parameters increases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

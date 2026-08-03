@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a5d4609ds100-su20-final-Q8d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Vectors",
+        "text": "The vectors $u_1$ and $u_2$ are given as $u_1=(1/2,1/2,0,0,0,0)**T$ and $u_2=(1/2,-1/2,0,0,0,0)**T$. What do these vectors represent in the context of the problem?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su20-final-Q8d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su20-final-Q8d-h1"
+        ],
+        "title": "Orthogonality Check",
+        "text": "Check if the vectors $u_1$ and $u_2$ are orthogonal. What does it mean for two vectors to be orthogonal?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su20-final-Q8d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su20-final-Q8d-h2"
+        ],
+        "title": "Dot Product Calculation",
+        "text": "Calculate the dot product of $u_1$ and $u_2$. If the dot product is zero, the vectors are orthogonal.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su20-final-Q8d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a5d4609ds100-su20-final-Q8d-h3"
+        ],
+        "title": "Calculate Dot Product",
+        "text": "Compute the dot product of $u_1$ and $u_2$: $(1/2)*(1/2)+(1/2)*(-1/2)+0*0+0*0+0*0+0*0$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su20-final-Q8d-h5",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su20-final-Q8d-h4"
+        ],
+        "title": "Conclusion on Orthogonality",
+        "text": "Since the dot product of $u_1$ and $u_2$ is zero, what can you conclude about their orthogonality?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5d4609ds100-su20-final-Q8d-h6",
+        "type": "hint",
+        "dependencies": [
+            "a5d4609ds100-su20-final-Q8d-h5"
+        ],
+        "title": "Validity of Combination",
+        "text": "Given that $u_1$ and $u_2$ are orthogonal, is the combination of these vectors valid or invalid?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

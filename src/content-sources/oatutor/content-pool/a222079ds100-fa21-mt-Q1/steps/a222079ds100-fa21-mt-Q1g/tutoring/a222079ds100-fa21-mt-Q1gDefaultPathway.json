@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a222079ds100-fa21-mt-Q1g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding N-gram Limitations",
+        "text": "Consider how N-grams capture sequences. They don't account for the biological significance of codons, which are specific sequences of three consecutive letters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa21-mt-Q1g-h1"
+        ],
+        "title": "Non-consecutive Segments",
+        "text": "N-grams can capture sequences that are not biologically relevant, such as non-consecutive letters forming a 'word'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1g-h3",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa21-mt-Q1g-h1"
+        ],
+        "title": "Meaningless Segments",
+        "text": "Segments with fewer than three letters do not correspond to any meaningful biological unit, yet N-grams would still treat them as valid 'words'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1g-h4",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa21-mt-Q1g-h1"
+        ],
+        "title": "Overlapping Segments",
+        "text": "N-grams can create overlapping segments, which may not align with the biological interpretation of codons.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a222079ds100-fa21-mt-Q1g-h5",
+        "type": "hint",
+        "dependencies": [
+            "a222079ds100-fa21-mt-Q1g-h1"
+        ],
+        "title": "Wrap-around Segments",
+        "text": "N-grams might incorrectly capture sequences that 'wrap around' the end of a string, which is not possible in DNA sequences.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a410fc9row5_part2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Normal Equation",
+        "text": "The normal equation is used to find the optimal parameters in an OLS regression model. It is given by: $$\\theta_{hat}=\\left(X^T X\\right)^{\\left(-1\\right)} X^T Y$$. This equation helps minimize the sum of squared residuals.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row5_part2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row5_part2c-h1"
+        ],
+        "title": "Residuals in OLS",
+        "text": "Residuals are the differences between the observed values and the predicted values. In OLS, the residual vector is calculated as $$e=Y-Y_{hat}$$, where Y is the actual number of students and $$Y_{hat}$$ is the predicted number of students.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row5_part2c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row5_part2c-h2"
+        ],
+        "title": "Properties of Residuals",
+        "text": "In an OLS model, the sum of the residuals is zero, and the residuals are orthogonal to the predictors. This means that the dot product of the residual vector and the predictor matrix is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row5_part2c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a410fc9row5_part2c-h3"
+        ],
+        "title": "Checking Full Column Rank",
+        "text": "For the normal equation to provide a unique solution, the matrix X must be of full column rank. This means that the columns of X are linearly independent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

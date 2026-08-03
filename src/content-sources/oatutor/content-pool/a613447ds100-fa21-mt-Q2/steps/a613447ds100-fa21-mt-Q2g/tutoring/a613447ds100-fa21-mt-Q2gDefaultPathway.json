@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a613447ds100-fa21-mt-Q2g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Relationship",
+        "text": "Consider how the relationship between age and Netflix watch time might be transformed to a linear one. Think about common transformations like logarithms or square roots.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2g-h1"
+        ],
+        "title": "Logarithmic Transformation",
+        "text": "A logarithmic transformation can help linearize relationships where one variable grows exponentially compared to another. Consider applying a logarithm to the age variable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a613447ds100-fa21-mt-Q2g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "x'=log(x),y'=y"
+        ],
+        "dependencies": [
+            "a613447ds100-fa21-mt-Q2g-h2"
+        ],
+        "title": "Transforming the Variables",
+        "text": "If you apply a logarithmic transformation to the age variable, what would the new variables look like?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$x'=x, y'=e^y$$",
+            "x'=log(x),y'=y",
+            "$$x'=x, y'=y^2$$",
+            "x'=sqrt(x),y'=log(y)"
+        ]
+    }
+]

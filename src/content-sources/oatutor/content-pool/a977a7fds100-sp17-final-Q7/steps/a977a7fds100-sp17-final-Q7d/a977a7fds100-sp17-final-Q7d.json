@@ -1,0 +1,15 @@
+{
+    "id": "a977a7fds100-sp17-final-Q7d",
+    "stepAnswer": [
+        "FALSE"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Emily's LIMIT query may run fast, but it will swamp the memory on your laptop, since it doesn't sample the database.",
+    "stepBody": "Your friend Emily Engineer tells you to avoid Bernoulli sampling, and use the following query instead:\\nSELECT *\\nFROM transactions\\nLIMIT XX;\\n(where XX is replaced by the correct answer to the previous question). Evaluate the following statement:",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "TRUE",
+        "FALSE"
+    ]
+}

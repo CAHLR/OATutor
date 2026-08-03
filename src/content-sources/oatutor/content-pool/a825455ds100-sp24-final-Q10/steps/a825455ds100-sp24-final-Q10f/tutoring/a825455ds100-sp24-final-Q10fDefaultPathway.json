@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a825455ds100-sp24-final-Q10f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding k-Means Clustering",
+        "text": "In k-Means clustering, the algorithm aims to partition the data into k clusters by minimizing the sum of squared distances between data points and their respective cluster centroids.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp24-final-Q10f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a825455ds100-sp24-final-Q10f-h1"
+        ],
+        "title": "Convergence in k-Means",
+        "text": "The convergence of k-Means depends on the initial placement of centroids. It may not always reach the global minimum, but it will converge to a local minimum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a825455ds100-sp24-final-Q10f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a825455ds100-sp24-final-Q10f-h2"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Consider whether k-Means can always find the true minimum inertia regardless of the starting configuration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

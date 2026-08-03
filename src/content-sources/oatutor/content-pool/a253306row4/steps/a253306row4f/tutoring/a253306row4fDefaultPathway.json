@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a253306row4f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Training and Validation Errors",
+        "text": "When the training error increases but the validation error decreases, it suggests a change in the model's complexity or feature selection. Consider what this implies about overfitting and underfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row4f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a253306row4f-h1"
+        ],
+        "title": "Model Complexity and Error",
+        "text": "If the training error increases, it might indicate that the model is less complex or has fewer parameters. However, if the validation error decreases, it suggests that the model generalizes better to unseen data. What does this tell you about the model's performance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row4f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a253306row4f-h2"
+        ],
+        "title": "Feature Selection Impact",
+        "text": "By selecting $$10$$ features, the owner might have reduced the model's complexity, potentially addressing overfitting. How does this affect the training and validation errors?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a253306row4f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The model is likely less overfitted and generalizes better to new data."
+        ],
+        "dependencies": [
+            "a253306row4f-h3"
+        ],
+        "title": "Analyzing Error Changes",
+        "text": "Given that the training error increases and the validation error decreases, what can you infer about the model's ability to generalize?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "TRUE",
+            "The model is likely less overfitted and generalizes better to new data."
+        ]
+    }
+]

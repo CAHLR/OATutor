@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a5dd512ds100-sp19-final-Q5ac-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logistic Regression",
+        "text": "In logistic regression, the probability of the binary outcome is modeled using the logistic function. This function maps any real-valued number into the $$(0,1)$$ interval.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp19-final-Q5ac-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp19-final-Q5ac-h1"
+        ],
+        "title": "Properties of the Logistic Function",
+        "text": "The logistic function, denoted as sigma, is defined as $$sigma(z)=\\frac{1}{1+e^{\\left(-z\\right)}}$$. It always outputs a value between $$0$$ and $$1$$, exclusive of $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp19-final-Q5ac-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp19-final-Q5ac-h2"
+        ],
+        "title": "Evaluating $$P(Y=1|X)$$",
+        "text": "Since $$P(Y=1|X)=\\operatorname{\\sigma}\\left(X^T \\beta\\right)$$, and sigma(z) is always less than $$1$$, $$P(Y=1|X)$$ is always less than $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp19-final-Q5ac-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Always"
+        ],
+        "dependencies": [
+            "a5dd512ds100-sp19-final-Q5ac-h3"
+        ],
+        "title": "Conclusion",
+        "text": "Based on the properties of the logistic function, when is P(Y=1|X)<1 true?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Always",
+            "Sometimes",
+            "Never"
+        ]
+    }
+]

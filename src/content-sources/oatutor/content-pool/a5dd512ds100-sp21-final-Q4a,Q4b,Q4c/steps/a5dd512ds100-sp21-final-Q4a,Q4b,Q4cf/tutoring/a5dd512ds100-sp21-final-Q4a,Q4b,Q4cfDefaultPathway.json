@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a5dd512ds100-sp21-final-Q4a,Q4b,Q4cf-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Separability",
+        "text": "Linear separability means that you can draw a straight line (or hyperplane in higher dimensions) to separate the classes in your dataset. Consider whether the transformation $(x_1,x_2)\\to(x_1,x_2**{2})$ can help achieve this.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp21-final-Q4a,Q4b,Q4cf-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5dd512ds100-sp21-final-Q4a,Q4b,Q4cf-h1"
+        ],
+        "title": "Effect of Squaring a Feature",
+        "text": "Think about how squaring a feature, like $x_2$, affects its values. Does this transformation make it easier or harder to separate the data with a straight line?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a5dd512ds100-sp21-final-Q4a,Q4b,Q4cf-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a5dd512ds100-sp21-final-Q4a,Q4b,Q4cf-h2"
+        ],
+        "title": "Analyzing the Transformation",
+        "text": "Consider the transformation $(x_1,x_2)\\to(x_1,x_2**{2})$. If $x_2$ is negative, what happens to $x_2**{2}$? Does this help in making the data linearly separable?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

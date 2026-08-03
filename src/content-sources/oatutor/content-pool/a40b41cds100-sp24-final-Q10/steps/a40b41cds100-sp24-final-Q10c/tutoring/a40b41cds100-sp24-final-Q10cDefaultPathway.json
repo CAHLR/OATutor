@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a40b41cds100-sp24-final-Q10c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding k-Medians Clustering",
+        "text": "In k-Medians clustering, the center of each cluster is the median of the data points in that cluster, not the mean. This can affect how clusters are formed and whether they converge.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp24-final-Q10c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp24-final-Q10c-h1"
+        ],
+        "title": "Initial Cluster Centers",
+        "text": "The initial cluster centers are set at $$2$$ and $$7$$. Consider how the data points might be assigned to these clusters based on their proximity to these centers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp24-final-Q10c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp24-final-Q10c-h2"
+        ],
+        "title": "Assigning Data Points to Clusters",
+        "text": "Data points are assigned to the cluster whose center is closest to them. Calculate the distance of each data point from the initial centers $$2$$ and $$7$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp24-final-Q10c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a40b41cds100-sp24-final-Q10c-h3"
+        ],
+        "title": "Calculating New Medians",
+        "text": "Once data points are assigned to clusters, calculate the median of each cluster to determine the new cluster centers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a40b41cds100-sp24-final-Q10c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a40b41cds100-sp24-final-Q10c-h4"
+        ],
+        "title": "Checking for Convergence",
+        "text": "After calculating the new medians, compare them to the initial centers. If they are the same, the clustering has converged.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No",
+            "Impossible to tell"
+        ]
+    }
+]

@@ -1,0 +1,102 @@
+[
+    {
+        "id": "ae27c55ds100-fa17-final-Q10b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Diagram",
+        "text": "The diagram represents the bootstrap process, which involves taking samples from a population, calculating statistics, and using these to estimate the sampling distribution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-final-Q10b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa17-final-Q10b-h1"
+        ],
+        "title": "Identifying the Population",
+        "text": "The first step in the diagram involves the entire population. Which label corresponds to the population?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-final-Q10b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Population"
+        ],
+        "dependencies": [
+            "ae27c55ds100-fa17-final-Q10b-h2"
+        ],
+        "title": "Label for Step $$1$$",
+        "text": "What is the label for the entire population in the diagram?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Population",
+            "Bootstrap population",
+            "Observed sample",
+            "Expected sample",
+            "Bootstrap sample",
+            "Sampling distribution",
+            "Sampling",
+            "Bootstrapping",
+            "Bootstrap sampling distribution",
+            "Empirical distribution",
+            "True distribution",
+            "Population parameter",
+            "Sample Statistic",
+            "Bootstrap Statistic"
+        ]
+    },
+    {
+        "id": "ae27c55ds100-fa17-final-Q10b-h4",
+        "type": "hint",
+        "dependencies": [
+            "ae27c55ds100-fa17-final-Q10b-h3"
+        ],
+        "title": "Identifying the Population Parameter",
+        "text": "The population parameter is a value that describes a characteristic of the entire population. Which label corresponds to this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ae27c55ds100-fa17-final-Q10b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Population parameter"
+        ],
+        "dependencies": [
+            "ae27c55ds100-fa17-final-Q10b-h4"
+        ],
+        "title": "Label for Step $$2$$",
+        "text": "What is the label for the population parameter in the diagram?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Population",
+            "Bootstrap population",
+            "Observed sample",
+            "Expected sample",
+            "Bootstrap sample",
+            "Sampling distribution",
+            "Sampling",
+            "Bootstrapping",
+            "Bootstrap sampling distribution",
+            "Empirical distribution",
+            "True distribution",
+            "Population parameter",
+            "Sample Statistic",
+            "Bootstrap Statistic"
+        ]
+    }
+]

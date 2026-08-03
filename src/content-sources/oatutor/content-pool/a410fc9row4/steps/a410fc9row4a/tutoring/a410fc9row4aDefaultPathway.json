@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a410fc9row4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Independence",
+        "text": "To determine if the OLS solution is unique, consider the concept of linear independence. If the columns of the design matrix are linearly independent, what does this imply about the matrix?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row4a-h1"
+        ],
+        "title": "Full Rank Matrix",
+        "text": "A matrix with linearly independent columns is said to be of full rank. What does this mean for the invertibility of the matrix?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a410fc9row4a-h2"
+        ],
+        "title": "Invertibility and Uniqueness",
+        "text": "If a matrix is of full rank, it is invertible. How does this relate to the uniqueness of the OLS solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row4a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The matrix is invertible."
+        ],
+        "dependencies": [
+            "a410fc9row4a-h3"
+        ],
+        "title": "Matrix Invertibility",
+        "text": "Given that the design matrix is of full rank, what can we say about its invertibility?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The matrix is invertible.",
+            "The matrix is not invertible."
+        ]
+    },
+    {
+        "id": "a410fc9row4a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The OLS solution is unique."
+        ],
+        "dependencies": [
+            "a410fc9row4a-h4"
+        ],
+        "title": "Unique OLS Solution",
+        "text": "If the design matrix is invertible, what can we conclude about the OLS solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The OLS solution is unique.",
+            "The OLS solution is not unique."
+        ]
+    }
+]

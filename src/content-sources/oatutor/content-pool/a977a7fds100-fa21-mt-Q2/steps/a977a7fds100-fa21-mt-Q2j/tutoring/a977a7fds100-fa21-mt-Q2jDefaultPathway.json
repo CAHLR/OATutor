@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a977a7fds100-fa21-mt-Q2j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Overfitting",
+        "text": "Overfitting occurs when a model learns the training data too well, capturing noise and fluctuations that do not generalize to new data. This often results in high variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2j-h1"
+        ],
+        "title": "Strategies to Reduce Variance",
+        "text": "To reduce variance, consider simplifying the model, using regularization techniques, or increasing the amount of training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2j-h3",
+        "type": "hint",
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2j-h2"
+        ],
+        "title": "Regularization Techniques",
+        "text": "Regularization techniques like L1 (Lasso) and L2 (Ridge) add a penalty to the loss function to discourage overly complex models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a977a7fds100-fa21-mt-Q2j-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a977a7fds100-fa21-mt-Q2j-h3"
+        ],
+        "title": "Adding New Features",
+        "text": "Adding new features can sometimes increase model complexity and variance. Consider whether the new features are relevant and necessary.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

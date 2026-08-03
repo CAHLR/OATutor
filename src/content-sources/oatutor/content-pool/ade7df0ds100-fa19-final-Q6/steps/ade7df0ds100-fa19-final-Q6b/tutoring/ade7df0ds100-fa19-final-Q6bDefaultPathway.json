@@ -1,0 +1,49 @@
+[
+    {
+        "id": "ade7df0ds100-fa19-final-Q6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Logistic Regression Model",
+        "text": "In logistic regression, the decision boundary is determined by the equation of the form: \\( \\hat{\\beta}_1*x_1 + \\hat{\\beta}_2*x_2 $$=$$ \\log(T/(1-T)) \\). Here, \\( T \\) is the threshold, and \\( \\hat{\\beta} \\) are the coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-final-Q6b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ade7df0ds100-fa19-final-Q6b-h1"
+        ],
+        "title": "Relating the Decision Boundary to the Line Equation",
+        "text": "The decision boundary can be rewritten in the form of a line equation: \\( $$x_2$$ $$=$$ $$m x_1$$ + $$b$$ \\). Here, \\( $$m$$ \\) is the slope and \\( $$b$$ \\) is the y-intercept.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ade7df0ds100-fa19-final-Q6b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\ln\\left(3\\right)}{3}$$"
+        ],
+        "dependencies": [
+            "ade7df0ds100-fa19-final-Q6b-h2"
+        ],
+        "title": "Finding the Value of \\( $$b$$ \\)",
+        "text": "Given the equation \\( $$2x_1$$ + $$3x_2$$ $$=$$ \\log(3) \\), rearrange it to find \\( $$b$$ \\) in the form \\( $$x_2$$ $$=$$ $$m x_1$$ + $$b$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\ln\\left(3\\right)}{3}$$",
+            "$$\\frac{-\\ln\\left(3\\right)}{3}$$",
+            "$$\\frac{3}{\\ln\\left(3\\right)}$$",
+            "$$\\ln\\left(3\\right)$$",
+            "$$\\frac{\\ln\\left(3\\right)}{2}$$",
+            "$$\\frac{\\ln\\left(3\\right)}{3}$$"
+        ]
+    }
+]

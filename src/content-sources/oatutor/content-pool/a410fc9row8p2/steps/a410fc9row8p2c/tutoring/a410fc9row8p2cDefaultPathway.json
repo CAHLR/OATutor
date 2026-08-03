@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a410fc9row8p2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Parameter Vector",
+        "text": "The parameter vector \\(\\hat{\\theta}\\) is derived from the design matrix \\(X\\). Consider how the dimensions of \\(X\\) influence the length of \\(\\hat{\\theta}\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row8p2c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Invertibility of X",
+        "text": "For a unique solution in OLS, \\(X\\) does not need to be invertible. Instead, \\(X**TX\\) should be invertible. Consider why this is the case.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row8p2c-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Loss Function Options",
+        "text": "OLS typically uses the Mean Squared Error (MSE) as the loss function. However, consider if Mean Absolute Error (MAE) could also be used in this context.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row8p2c-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Minimizing Residuals",
+        "text": "OLS minimizes the sum of squared residuals, not just the sum of residuals. Think about the difference between these two concepts.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a410fc9row8p2c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The length of the parameter vector \\(\\hat{\\theta}\\) is equal to \\(n\\)."
+        ],
+        "dependencies": [
+            "a410fc9row8p2c-h1"
+        ],
+        "title": "Determining the Length of \\(\\hat{\\theta}\\)",
+        "text": "Given that \\(X\\) is an \\(m\\) by \\(n\\) matrix, what is the length of the parameter vector \\(\\hat{\\theta}\\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a91f150ds100-su20-final-Q4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean-Centering",
+        "text": "Mean-centering involves subtracting the mean of each column from the respective column values, except for the intercept column. This process ensures that the mean of each column is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su20-final-Q4b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su20-final-Q4b-h1"
+        ],
+        "title": "Effect of Mean-Centering on Regression Coefficients",
+        "text": "When data is mean-centered, the intercept term in the regression model becomes zero. This is because the mean of the response variable is subtracted from each observation, aligning the data around the origin.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su20-final-Q4b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a91f150ds100-su20-final-Q4b-h2"
+        ],
+        "title": "Comparing Coefficients: Centered vs. Uncentered",
+        "text": "The coefficients for the non-intercept terms (slopes) remain the same whether the data is centered or not. This is because mean-centering does not affect the relationships between the variables, only the intercept.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su20-final-Q4b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The intercept term in the centered model is zero."
+        ],
+        "dependencies": [
+            "a91f150ds100-su20-final-Q4b-h3"
+        ],
+        "title": "Analyzing the Intercept Term",
+        "text": "Given that mean-centering affects the intercept, what can we say about the intercept term in the centered model compared to the uncentered model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a91f150ds100-su20-final-Q4b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "The coefficients for the non-intercept terms are the same in both models."
+        ],
+        "dependencies": [
+            "a91f150ds100-su20-final-Q4b-h4"
+        ],
+        "title": "Conclusion on Coefficients",
+        "text": "Based on the understanding of mean-centering, what can we conclude about the relationship between the coefficients of the centered and uncentered models?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

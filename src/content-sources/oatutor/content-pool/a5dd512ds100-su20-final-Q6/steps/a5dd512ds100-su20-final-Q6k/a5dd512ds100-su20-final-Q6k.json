@@ -1,0 +1,18 @@
+{
+    "id": "a5dd512ds100-su20-final-Q6k",
+    "stepAnswer": [
+        "$$\\texttt{consoles.sort\\_values(\"sales\").groupby(\"type\").last()}$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Find the best-selling home console and the best-selling handheld console of all time. Write Pandas code. The result can have any number of columns, but it must only have two rows corresponding to the best-selling home console and the best-selling handheld console. Assume that are no ties. You may only use one line of code. The resulting DataFrame must be assigned to the variable $$\\text{best\\_selling}.$$\\n$$\\text{best\\_selling}$$ $$=$$ [blank]",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "$$\\texttt{consoles.sort\\_values(\"sales\").groupby(\"type\").first()}$$",
+        "consoles.groupby(\"type\").last()",
+        "$$\\texttt{consoles.sort\\_values(\"sales\").groupby(\"type\").last()}$$",
+        "$$\\texttt{consoles.sort\\_values(\"sales\",}$$ $$ascending=False).groupby(\"type\").last()$$",
+        "$$\\texttt{consoles.sort\\_values(\"type\").groupby(\"sales\").last()}$$"
+    ]
+}

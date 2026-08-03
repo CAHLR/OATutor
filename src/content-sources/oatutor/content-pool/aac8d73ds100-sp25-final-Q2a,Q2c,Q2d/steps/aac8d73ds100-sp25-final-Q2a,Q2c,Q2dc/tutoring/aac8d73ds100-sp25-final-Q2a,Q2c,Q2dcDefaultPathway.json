@@ -1,0 +1,57 @@
+[
+    {
+        "id": "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model shown is a linear regression model with $$30$$ parameters (including the intercept).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dc-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dc-h1"
+        ],
+        "title": "Degrees of Freedom",
+        "text": "In a linear regression model, the degrees of freedom are calculated as the number of observations minus the number of parameters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dc-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dc-h2"
+        ],
+        "title": "Unique Solution Condition",
+        "text": "For a unique OLS solution, the number of observations must be greater than the number of parameters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dc-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aac8d73ds100-sp25-final-Q2a,Q2c,Q2dc-h3"
+        ],
+        "title": "Checking the Condition",
+        "text": "Given $$n=30$$ observations and $$30$$ parameters, does the model have a unique solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]
