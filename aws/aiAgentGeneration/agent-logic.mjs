@@ -105,7 +105,15 @@ export function loadPromptTemplate(chatPrompt) {
     return { template, file };
 }
 
-export function buildAgentPrompt({ userMessage, problemContext, studentState, conversationHistory, extracted = {}, chatPrompt }) {
+export function buildAgentPrompt({
+    userMessage,
+    problemContext,
+    studentState,
+    conversationHistory,
+    extracted = {},
+    chatPrompt,
+    documentContextSection = null,
+}) {
     const { template: promptTemplate } = loadPromptTemplate(chatPrompt);
     const safeUserMessage = typeof userMessage === 'string' ? userMessage : '';
     
@@ -194,6 +202,17 @@ export function buildAgentPrompt({ userMessage, problemContext, studentState, co
     const messages = [
         { role: "system", content: systemPrompt }
     ];
+
+    // Private course-document reference (server-only; never stored in client history).
+    if (
+        typeof documentContextSection === 'string' &&
+        documentContextSection.trim()
+    ) {
+        messages.push({
+            role: 'system',
+            content: documentContextSection.trim(),
+        });
+    }
 
     const images = Array.isArray(extracted?.images) ? extracted.images : [];
     const visionImages = images.filter(isVisionSafeImageDataUrl);

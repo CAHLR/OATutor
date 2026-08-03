@@ -5,17 +5,33 @@
   "main": "index.mjs",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node scripts/test-data100-disc02-regression.mjs && node scripts/test-document-context.mjs",
+    "test:disc02": "node scripts/test-data100-disc02-regression.mjs",
+    "test:document-context": "node scripts/test-document-context.mjs",
     "dev": "node index.mjs",
-    "deploy": "echo 'Deploy to AWS Lambda'"
+    "deploy": "echo 'Deploy to AWS Lambda'",
+    "compile-docs": "node scripts/compile-documents.mjs",
+    "validate-docs": "node scripts/validate-compiled.mjs",
+    "publish-docs": "node scripts/publish-docs.mjs"
   },
-  "keywords": ["oatutor", "ai", "agent", "chatbot", "tutoring"],
+  "keywords": [
+    "oatutor",
+    "ai",
+    "agent",
+    "chatbot",
+    "tutoring"
+  ],
   "license": "ISC",
   "dependencies": {
+    "@aws-sdk/client-bedrock-data-automation-runtime": "^3.1101.0",
+    "@aws-sdk/client-bedrock-runtime": "^3.1101.0",
     "@aws-sdk/client-dynamodb": "^3.0.0",
+    "@aws-sdk/client-s3": "^3.1101.0",
     "@aws-sdk/lib-dynamodb": "^3.0.0",
     "@hapi/validate": "^2.0.1",
     "@types/node": "^22.8.7",
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
     "aws-lambda": "^1.0.7",
     "aws-sdk": "^2.1692.0",
     "dotenv": "^16.4.5",

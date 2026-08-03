@@ -9,6 +9,10 @@ import {
     generateSuggestedQuestions,
     judgeAnswerReveal,
 } from "./agent-logic.mjs";
+import {
+    buildDocumentContext,
+    getDefaultDocumentContextRuntime,
+} from "./document-context.mjs";
 import crypto from "crypto";
 
 dotenv.config();
@@ -246,14 +250,70 @@ export const handler = awslambda.streamifyResponse(
             const fullConversationHistory = clientHistory.length > 0
                 ? clientHistory
                 : existingConversation;
+
+            const docCtxStarted = nowMs();
+            const docCtx = await buildDocumentContext({
+                lessonId,
+                userMessage: safeUserMessage,
+                problemContext,
+                // Client authority fields are ignored inside the loader.
+                clientHints: {
+                    chat_documents: requestBody.chat_documents,
+                    documentId: requestBody.documentId,
+                    s3Key: requestBody.s3Key,
+                },
+            });
+            if (docCtx?.meta || docCtx?.error) {
+                logEvent({
+                    eventType: docCtx?.error
+                        ? "document_context_failed"
+                        : "document_context_loaded",
+                    sessionId,
+                    lessonId,
+                    allowedDocumentIds:
+                        docCtx?.allowedDocumentIds ||
+                        docCtx?.meta?.allowedDocumentIds ||
+                        [],
+                    selectedContexts:
+                        docCtx?.selectedContexts ||
+                        docCtx?.meta?.selectedContexts ||
+                        [],
+                    cacheHits: docCtx?.meta?.cacheHits || null,
+                    durationMs:
+                        docCtx?.meta?.durationMs ?? nowMs() - docCtxStarted,
+                    errorCode: docCtx?.meta?.errorCode || null,
+                });
+            }
+
+            // Optional figure bytes for figure-dependent turns (soft-fail).
+            let documentImages = [];
+            if (docCtx?.assetHints?.length) {
+                const runtime = getDefaultDocumentContextRuntime();
+                for (const hint of docCtx.assetHints.slice(0, 1)) {
+                    const dataUrl = await runtime.tryFetchAssetDataUrl(
+                        hint.path,
+                        logEvent
+                    );
+                    if (dataUrl) documentImages.push(dataUrl);
+                }
+            }
+
+            const extractedWithDocs = {
+                ...(extracted || {}),
+                images: [
+                    ...(Array.isArray(extracted?.images) ? extracted.images : []),
+                    ...documentImages,
+                ],
+            };
             
             const agentPrompt = buildAgentPrompt({
                 userMessage: safeUserMessage,
                 problemContext,
                 studentState,
                 conversationHistory: fullConversationHistory,
-                extracted,
+                extracted: extractedWithDocs,
                 chatPrompt,
+                documentContextSection: docCtx?.privatePromptSection || null,
             });
 
             const lastMsg = agentPrompt[agentPrompt.length - 1];
