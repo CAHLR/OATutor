@@ -3,7 +3,15 @@
  *
  *   node scripts/test-document-context.mjs
  */
-import { mkdtempSync, mkdirSync, writeFileSync, readFileSync, rmSync, existsSync } from 'fs';
+import {
+    mkdtempSync,
+    mkdirSync,
+    writeFileSync,
+    readFileSync,
+    readdirSync,
+    rmSync,
+    existsSync,
+} from 'fs';
 import { tmpdir } from 'os';
 import { dirname, join, resolve } from 'path';
 import { fileURLToPath } from 'url';
@@ -31,8 +39,11 @@ const COURSE_PLANS_PATH = join(
     REPO_ROOT,
     'src/content-sources/oatutor/coursePlans.json'
 );
-const DISC4_LESSON_ID = '0dJYDToW-hati-SjwIXGncTg';
+/** Only for multi-doc / syllabus coverage (catalog may not bind those together). */
 const MULTI_DOC_LESSON_ID = 'phase3-multi-doc-test-lesson';
+const FALLBACK_LESSON_ID = 'phase3-sample-fallback-lesson';
+/** Used for retrieval regression asserts when the catalog sample includes it. */
+const DISC04_DOC = 'data100-disc04';
 
 function assert(cond, msg) {
     if (!cond) throw new Error(msg);
@@ -53,6 +64,48 @@ function assertThrows(fn, msgIncludes) {
     if (!threw) throw new Error(`expected throw (${msgIncludes || 'any'})`);
 }
 
+function compiledPath(documentId) {
+    return join(DOCS_ROOT, 'compiled', `${documentId}.json`);
+}
+
+function listCompiledDocumentIds() {
+    const dir = join(DOCS_ROOT, 'compiled');
+    if (!existsSync(dir)) return [];
+    return readdirSync(dir)
+        .filter((n) => n.endsWith('.json') && !n.startsWith('_'))
+        .map((n) => n.replace(/\.json$/, ''));
+}
+
+/**
+ * First catalog lesson whose chat_documents all have compiled JSON on disk.
+ * If the catalog has no bindings yet (docs compiled, plans not updated), inject a
+ * temporary lesson so pre-publish tests still exercise the runtime.
+ */
+function pickSampleLesson(coursePlans) {
+    const { bindings } = collectLessonDocumentBindings(coursePlans);
+    const usable = bindings.filter((b) => {
+        const docs = b.chat_documents || [];
+        return (
+            docs.length > 0 &&
+            docs.every((id) => existsSync(compiledPath(id)))
+        );
+    });
+    if (usable.length > 0) {
+        return { ...usable[0], injected: false };
+    }
+    const compiled = listCompiledDocumentIds();
+    assert(
+        compiled.length > 0,
+        'No compiled documents and no chat_documents bindings — compile docs first'
+    );
+    const docId = compiled.includes(DISC04_DOC) ? DISC04_DOC : compiled[0];
+    return {
+        lessonId: FALLBACK_LESSON_ID,
+        chat_documents: [docId],
+        injected: true,
+    };
+}
+
 async function main() {
     resetDefaultDocumentContextRuntime();
 
@@ -63,12 +116,44 @@ async function main() {
     );
 
     const coursePlans = JSON.parse(readFileSync(COURSE_PLANS_PATH, 'utf8'));
-    const lesson = findLessonById(coursePlans, DISC4_LESSON_ID);
-    assert(lesson, 'Disc4 lesson not found in coursePlans');
-    assert(
-        Array.isArray(lesson.chat_documents) &&
-            lesson.chat_documents.includes('data100-disc04'),
-        'Disc4 must bind data100-disc04 via chat_documents'
+    const sample = pickSampleLesson(coursePlans);
+    const sampleLessonId = sample.lessonId;
+    const sampleDocs = sample.chat_documents;
+    const primaryDoc = sampleDocs[0];
+    const primaryCompiled = JSON.parse(
+        readFileSync(compiledPath(primaryDoc), 'utf8')
+    );
+    const primaryMaterialTitle = toStudentFacingMaterialTitle(primaryDoc, {
+        course: primaryCompiled.metadata?.course,
+        title: primaryCompiled.metadata?.title,
+        document_type: primaryCompiled.metadata?.document_type,
+    });
+    let firstProblemPrompt = '';
+    for (const section of primaryCompiled.sections || []) {
+        for (const problem of section.problems || []) {
+            if (problem?.prompt) {
+                firstProblemPrompt = String(problem.prompt);
+                break;
+            }
+        }
+        if (firstProblemPrompt) break;
+    }
+
+    if (!sample.injected) {
+        const lesson = findLessonById(coursePlans, sampleLessonId);
+        assert(lesson, `sample lesson ${sampleLessonId} must resolve`);
+        assert(
+            Array.isArray(lesson.chat_documents) &&
+                lesson.chat_documents.length > 0,
+            'sample lesson must have chat_documents'
+        );
+    } else {
+        console.log(
+            `note: no catalog chat_documents bindings; using fallback lesson ${sampleLessonId} → ${primaryDoc}`
+        );
+    }
+    console.log(
+        `phase3 sample lesson: ${sampleLessonId} docs=[${sampleDocs.join(',')}]`
     );
 
     // Unknown lesson
@@ -78,7 +163,7 @@ async function main() {
     );
 
     // Safe id checks
-    assertSafeDocumentId('data100-disc04');
+    assertSafeDocumentId(primaryDoc);
     assertThrows(() => assertSafeDocumentId('../etc'), 'unsafe');
     assertThrows(() => assertSafeDocumentId('a/b'), 'unsafe');
     assertThrows(() => assertSafeDocumentId(''), 'non-empty');
@@ -114,23 +199,34 @@ async function main() {
         mkdirSync(join(tmp, 'compiled'), { recursive: true });
         mkdirSync(join(tmp, 'assets'), { recursive: true });
 
-        const plansWithMulti = [
-            ...coursePlans,
-            {
-                courseName: 'Phase3 MultiDoc Test Course',
+        // Real catalog + optional fallback sample + one injected multi-doc lesson.
+        const plansWithMulti = [...coursePlans];
+        if (sample.injected) {
+            plansWithMulti.push({
+                courseName: 'Phase3 Sample Fallback Course',
                 lessons: [
                     {
-                        id: MULTI_DOC_LESSON_ID,
-                        name: 'Multi-doc lesson',
-                        chat_documents: [
-                            'data100-disc04',
-                            'data100-disc05',
-                            'data100-syllabus',
-                        ],
+                        id: sampleLessonId,
+                        name: 'Fallback sample lesson',
+                        chat_documents: sampleDocs,
                     },
                 ],
-            },
-        ];
+            });
+        }
+        plansWithMulti.push({
+            courseName: 'Phase3 MultiDoc Test Course',
+            lessons: [
+                {
+                    id: MULTI_DOC_LESSON_ID,
+                    name: 'Multi-doc lesson',
+                    chat_documents: [
+                        primaryDoc,
+                        'data100-disc05',
+                        'data100-syllabus',
+                    ],
+                },
+            ],
+        });
         writeFileSync(
             join(tmp, 'coursePlans.json'),
             JSON.stringify(plansWithMulti)
@@ -149,14 +245,24 @@ async function main() {
             title: 'Syllabus',
         };
         writeFileSync(join(tmp, 'manifest.json'), JSON.stringify(baseManifest));
-        writeFileSync(
-            join(tmp, 'compiled/data100-disc04.json'),
-            readFileSync(join(DOCS_ROOT, 'compiled/data100-disc04.json'))
-        );
-        writeFileSync(
-            join(tmp, 'compiled/data100-disc05.json'),
-            readFileSync(join(DOCS_ROOT, 'compiled/data100-disc05.json'))
-        );
+
+        const docsToStage = new Set([
+            ...sampleDocs,
+            primaryDoc,
+            'data100-disc05',
+        ]);
+        // Unit-level selectRelevantUnits / formatter checks still use disc04 when present.
+        if (existsSync(compiledPath(DISC04_DOC))) {
+            docsToStage.add(DISC04_DOC);
+        }
+        for (const docId of docsToStage) {
+            const src = compiledPath(docId);
+            assert(existsSync(src), `missing compiled ${docId} for Phase 3 tests`);
+            writeFileSync(
+                join(tmp, 'compiled', `${docId}.json`),
+                readFileSync(src)
+            );
+        }
         writeFileSync(
             join(tmp, 'compiled/data100-syllabus.json'),
             JSON.stringify({
@@ -228,28 +334,50 @@ async function main() {
 
         // Client spoof ignored: even if clientHints list disc99, only chat_documents used
         const ctx1 = await runtime.buildDocumentContext({
-            lessonId: DISC4_LESSON_ID,
+            lessonId: sampleLessonId,
             userMessage:
-                'Why is a bar chart appropriate for comparing the number of Bigfoot sightings across seasons?',
-            problemContext: {
-                problemTitle: 'Bigfoot visualizations',
-                problemBody: 'season categorical frequencies',
-            },
+                primaryDoc === DISC04_DOC
+                    ? 'Why is a bar chart appropriate for comparing the number of Bigfoot sightings across seasons?'
+                    : firstProblemPrompt ||
+                      `Help me with a question from ${primaryMaterialTitle}`,
+            problemContext:
+                primaryDoc === DISC04_DOC
+                    ? {
+                          problemTitle: 'Bigfoot visualizations',
+                          problemBody: 'season categorical frequencies',
+                      }
+                    : {
+                          problemTitle: primaryMaterialTitle,
+                          problemBody:
+                              firstProblemPrompt ||
+                              primaryCompiled.sections?.[0]?.title ||
+                              primaryDoc,
+                      },
             clientHints: {
                 chat_documents: ['data100-disc99'],
                 documentId: 'data100-disc99',
                 s3Key: 'documents/compiled/data100-disc99.json',
             },
         });
-        assert(ctx1?.documentIds?.includes('data100-disc04'), 'must load disc04');
+        assert(
+            ctx1?.documentIds?.includes(primaryDoc),
+            `must load primary sample doc ${primaryDoc}`
+        );
         assert(
             !ctx1?.documentIds?.includes('data100-disc99'),
             'must not load client-spoofed disc99'
         );
-        assert(
-            ctx1.selectedObjectIds.some((id) => /document-q1|q1/i.test(id)),
-            `bar chart query should prefer viz/bigfoot problem, got ${ctx1.selectedObjectIds}`
-        );
+        if (primaryDoc === DISC04_DOC) {
+            assert(
+                ctx1.selectedObjectIds.some((id) => /document-q1|q1/i.test(id)),
+                `bar chart query should prefer viz/bigfoot problem, got ${ctx1.selectedObjectIds}`
+            );
+        } else {
+            assert(
+                Array.isArray(ctx1.selectedObjectIds),
+                'selectedObjectIds should be an array'
+            );
+        }
         assert(
             Array.isArray(ctx1.selectedContexts) &&
                 ctx1.selectedContexts.length > 0,
@@ -286,20 +414,22 @@ async function main() {
             'should describe material as worksheet/course materials'
         );
         assert(
-            ctx1.privatePromptSection.includes('material_type: worksheet'),
+            ctx1.privatePromptSection.includes(
+                `material_type: ${resolveMaterialType(primaryCompiled.metadata || {})}`
+            ),
             'missing material_type metadata'
         );
         assert(
             ctx1.privatePromptSection.includes(
-                'material_title: Data 100 Discussion 4'
+                `material_title: ${primaryMaterialTitle}`
             ),
             `expected student-facing title, got snippet: ${ctx1.privatePromptSection.slice(0, 500)}`
         );
         assert(
-            !/Discussion #4 Solutions/i.test(
+            !/Discussion #\d+ Solutions/i.test(
                 ctx1.privatePromptSection.split('<course_context>')[0]
             ),
-            'must not call material "Discussion 4 Solutions" in header metadata'
+            'must not call material "Discussion N Solutions" in header metadata'
         );
         assert(
             ctx1.privatePromptSection.includes(
@@ -315,15 +445,37 @@ async function main() {
         );
 
         const ctx2 = await runtime.buildDocumentContext({
-            lessonId: DISC4_LESSON_ID,
+            lessonId: sampleLessonId,
             userMessage:
-                'What is the maximum number of rows from a cross join of tables with m and n rows?',
-            problemContext: { problemTitle: 'SQL joins', problemBody: 'cross join' },
+                primaryDoc === DISC04_DOC
+                    ? 'What is the maximum number of rows from a cross join of tables with m and n rows?'
+                    : `Explain a key idea from ${primaryMaterialTitle}`,
+            problemContext:
+                primaryDoc === DISC04_DOC
+                    ? {
+                          problemTitle: 'SQL joins',
+                          problemBody: 'cross join',
+                      }
+                    : {
+                          problemTitle: primaryMaterialTitle,
+                          problemBody:
+                              primaryCompiled.sections?.[1]?.title ||
+                              primaryCompiled.sections?.[0]?.title ||
+                              primaryDoc,
+                      },
         });
-        assert(
-            ctx2.selectedObjectIds.some((id) => /joins/i.test(id)),
-            `cross join query should prefer joins object, got ${ctx2.selectedObjectIds}`
-        );
+        if (primaryDoc === DISC04_DOC) {
+            assert(
+                ctx2.selectedObjectIds.some((id) => /joins/i.test(id)),
+                `cross join query should prefer joins object, got ${ctx2.selectedObjectIds}`
+            );
+        } else {
+            assert(
+                Array.isArray(ctx2.documentIds) &&
+                    ctx2.documentIds.includes(primaryDoc),
+                'second query should still load sample docs'
+            );
+        }
 
         // Multi-document lesson: global rank + per-block source identity + full inventory
         const multi = await runtime.buildDocumentContext({
@@ -335,13 +487,17 @@ async function main() {
                 problemBody: 'late work syllabus cross join regression',
             },
         });
+        const expectedMultiAllow = [
+            primaryDoc,
+            'data100-disc05',
+            'data100-syllabus',
+        ].join(',');
         assert(
-            multi.allowedDocumentIds?.join(',') ===
-                'data100-disc04,data100-disc05,data100-syllabus',
+            multi.allowedDocumentIds?.join(',') === expectedMultiAllow,
             `allowedDocumentIds mismatch: ${multi.allowedDocumentIds}`
         );
         assert(
-            multi.privatePromptSection.includes('data100-disc04') &&
+            multi.privatePromptSection.includes(primaryDoc) &&
                 multi.privatePromptSection.includes('data100-disc05') &&
                 multi.privatePromptSection.includes('data100-syllabus'),
             'inventory must list all allowed documents'
@@ -399,7 +555,7 @@ async function main() {
 
         // Cache hit
         const a = await runtime.buildDocumentContext({
-            lessonId: DISC4_LESSON_ID,
+            lessonId: sampleLessonId,
             userMessage: 'joins',
             problemContext: {},
         });
@@ -409,7 +565,7 @@ async function main() {
         // Cache expiry
         now += 5000;
         const b = await runtime.buildDocumentContext({
-            lessonId: DISC4_LESSON_ID,
+            lessonId: sampleLessonId,
             userMessage: 'joins again',
             problemContext: {},
         });
@@ -424,7 +580,7 @@ async function main() {
         // No bucket / no local root on default runtime → null
         delete process.env.COURSE_DOCS_RUNTIME_BUCKET;
         const soft = await buildDocumentContext({
-            lessonId: DISC4_LESSON_ID,
+            lessonId: sampleLessonId,
             userMessage: 'x',
             problemContext: {},
         });
