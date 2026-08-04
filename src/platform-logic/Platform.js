@@ -72,12 +72,20 @@ class Platform extends React.Component {
 
     this.user = context.user || {};
     this.isPrivileged = !!this.user.privileged;
+    this.isFromCanvas =
+      String(this.user.tool_consumer_info_product_family_code || "")
+        .toLowerCase() === "canvas";
     this.context = context;
     const saved = typeof window !== "undefined" ? localStorage.getItem(TOC_DRAWER_OPEN_KEY) : null;
     const isMobileInitial =
       typeof window !== "undefined" && window.innerWidth < 960;
     const defaultOpenIfNoPref = Boolean(props.lessonID) && !isMobileInitial;
-    const initialDrawerOpen = saved === null ? defaultOpenIfNoPref : saved === "1";
+    // Canvas launches are one lesson at a time — never show TOC.
+    const initialDrawerOpen = this.isFromCanvas
+      ? false
+      : saved === null
+        ? defaultOpenIfNoPref
+        : saved === "1";
 
     this.togglePopup = this.togglePopup.bind(this);
     this.toggleFeedback = this.toggleFeedback.bind(this);
@@ -135,7 +143,7 @@ class Platform extends React.Component {
         this.selectLesson(lesson).then(() => {});
       }
     }
-    if (movedIntoLesson) {
+    if (movedIntoLesson && !this.isFromCanvas) {
       let saved = null;
       try {
         saved = localStorage.getItem(TOC_DRAWER_OPEN_KEY);
@@ -457,12 +465,13 @@ class Platform extends React.Component {
 
     const lessonMasteryMap = this.getLessonMasteryMap(tocCourseName);
     const inLesson = Boolean(this.props.lessonID);
+    const showToc = inLesson && !this.isFromCanvas;
 
     const CONTAINER_MAX_WIDTH = "100vw";
     const CONTAINER_STYLE = {
       maxWidth: CONTAINER_MAX_WIDTH,
       width: "100%",
-      margin: inLesson && !isMobile
+      margin: showToc && !isMobile
         ? (this.state.drawerOpen ? "0 0 0 16px" : "0 0 0 32px")
         : "0",
       padding: isMobile ? "0 12px" : "0 16px",
@@ -475,7 +484,7 @@ class Platform extends React.Component {
 
     return (
       <>
-        {inLesson && (
+        {showToc && (
           isMobile ? (
           <SwipeableDrawer
             anchor="left"
@@ -552,7 +561,7 @@ class Platform extends React.Component {
             <Toolbar className={isMobile ? classes.mobileCompactToolbar : undefined}>
               {isMobile ? (
                 <div style={{ display: "flex", alignItems: "center", width: "100%", gap: 4, minWidth: 0 }}>
-                  {inLesson && (
+                  {showToc && (
                     <IconButton
                       aria-label="Table of Contents Toggle"
                       onClick={() => this.toggleDrawer(!this.state.drawerOpen)}
@@ -687,7 +696,7 @@ class Platform extends React.Component {
           {/* Progress Bar */}
           <div
             style={{
-              marginLeft: inLesson && this.state.drawerOpen && !isMobile ? drawerWidth : 0,
+              marginLeft: showToc && this.state.drawerOpen && !isMobile ? drawerWidth : 0,
               marginBottom: 0,
               transition: "margin 0.1s ease",
             }}
@@ -697,7 +706,7 @@ class Platform extends React.Component {
                       style={{ top: progressStickyTop, backgroundColor: "#F6F6F6", boxShadow: "none", zIndex: 3 }}>
                 <Toolbar disableGutters style={{ minHeight: isMobile ? 64 : 80, paddingLeft: isMobile ? 8 : 16, paddingRight: isMobile ? 8 : 32 }}>
                   <Grid container spacing={0} role="progress-bar" alignItems="center" style={{ width: "100%" }}>
-                    {!this.state.drawerOpen && !isMobile && (
+                    {showToc && !this.state.drawerOpen && !isMobile && (
                       <IconButton
                         aria-label="Table of Contents Toggle"
                         onClick={() => this.toggleDrawer(true)}
@@ -969,7 +978,7 @@ class Platform extends React.Component {
                     seed={this.state.seed}
                     lessonID={this.props.lessonID}
                     displayMastery={this.displayMastery}
-                    drawerOpen={this.state.drawerOpen}
+                    drawerOpen={showToc && this.state.drawerOpen}
                     showFeedback={this.state.showFeedback}
                     feedback={this.state.feedback}
                     feedbackSubmitted={this.state.feedbackSubmitted}

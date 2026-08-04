@@ -10,7 +10,7 @@ const coursePlansPath = path.join(
   "coursePlans.json"
 );
 
-const DEFAULT_CHAT_PROMPT = "PROMPTv2.txt";
+const DEFAULT_CHAT_PROMPT = "PROMPT-data-100.txt";
 
 function main() {
   const raw = fs.readFileSync(coursePlansPath, "utf8");

@@ -10,7 +10,7 @@ const coursePlansPath = path.join(
   "coursePlans.json"
 );
 
-const DEFAULT_HELP_PENALTY_MODE = "OnOpen";
+const DEFAULT_HELP_PENALTY_MODE = "AnswerReveal";
 const VALID_HELP_PENALTY_MODES = new Set(["Never", "AnswerReveal", "OnOpen"]);
 
 function main() {
