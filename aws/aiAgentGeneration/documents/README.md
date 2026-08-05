@@ -135,10 +135,24 @@ Use this ID in compiler commands and later in `coursePlans.json`.
 
 ## 4. Compile a new or changed PDF
 
-For the first compile of a document, run:
+Compile **one** document:
 
 ```bash
 npm run compile-docs -- --doc data100-disc01
+```
+
+Compile **every** key in `manifest.json` (same default as `validate-docs`):
+
+```bash
+npm run compile-docs
+```
+
+Useful batch flags:
+
+```bash
+npm run compile-docs -- --skip-bda              # all ids, reuse bda-raw/
+npm run compile-docs -- --from data100-disc06  # resume mid-manifest
+npm run compile-docs -- --only-missing         # skip ids that already have compiled JSON
 ```
 
 This performs the complete pipeline:
@@ -365,8 +379,13 @@ read -s "OPENAI_API_KEY?OpenAI API key: "
 export OPENAI_API_KEY
 echo
 
+# one document
 npm run compile-docs -- --doc data100-disc01
 npm run validate-docs -- --doc data100-disc01
+
+# or every key in manifest.json
+npm run compile-docs
+npm run validate-docs
 ```
 
 ## Compiler or schema changes only
@@ -378,8 +397,13 @@ read -s "OPENAI_API_KEY?OpenAI API key: "
 export OPENAI_API_KEY
 echo
 
+# one document
 npm run compile-docs -- --doc data100-disc01 --skip-bda
 npm run validate-docs -- --doc data100-disc01
+
+# or every key (reuse existing bda-raw/)
+npm run compile-docs -- --skip-bda
+npm run validate-docs
 ```
 
 ---

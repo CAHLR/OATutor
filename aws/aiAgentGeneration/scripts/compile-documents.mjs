@@ -3,8 +3,12 @@
  * Offline course-document compiler:
  *   raw PDF → (temp S3 + BDA) → semantic compiler → compiled JSON + assets → validate
  *
- * Usage:
- *   node scripts/compile-documents.mjs [--doc data8-disc04] [--skip-bda] [--provider openai|bedrock] [--no-validate] [--keep-s3]
+ * Usage (from aws/aiAgentGeneration):
+ *   npm run compile-docs                         # every key in documents/manifest.json
+ *   npm run compile-docs -- --doc data100-disc01 # one document
+ *   npm run compile-docs -- --skip-bda           # all keys, reuse bda-raw/
+ *   npm run compile-docs -- --from data100-disc06
+ *   npm run compile-docs -- --only-missing
  */
 import dotenv from 'dotenv';
 import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'fs';
@@ -23,15 +27,20 @@ const DOCS_ROOT = join(PACKAGE_ROOT, 'documents');
 function parseArgs(argv) {
     const args = {
         doc: null,
+        from: null,
+        onlyMissing: false,
         skipBda: false,
         provider: null,
         validate: true,
         keepS3: false,
         dryRun: false,
+        help: false,
     };
     for (let i = 0; i < argv.length; i++) {
         const a = argv[i];
         if (a === '--doc') args.doc = argv[++i];
+        else if (a === '--from') args.from = argv[++i];
+        else if (a === '--only-missing') args.onlyMissing = true;
         else if (a === '--skip-bda') args.skipBda = true;
         else if (a === '--provider') args.provider = argv[++i];
         else if (a === '--no-validate') args.validate = false;
@@ -50,22 +59,68 @@ function loadManifest() {
 function printHelp() {
     console.log(`compile-documents.mjs
 
+Compiles documents listed in documents/manifest.json into:
+  documents/bda-raw/<id>/
+  documents/compiled/<id>.json
+  documents/assets/…
+
+Omit --doc to loop every manifest key (same pattern as validate-docs).
+
 Options:
   --doc <id>              Compile one manifest document_id
+  --from <id>             When compiling all, start at this id (inclusive)
+  --only-missing          Skip ids that already have compiled JSON on disk
   --skip-bda              Reuse documents/bda-raw/<id>/ (no Bedrock call)
   --provider openai|bedrock
   --dry-run               Skip LLM; rule-based structure only (COMPILER_DRY_RUN)
   --no-validate           Skip schema/relationship validation
   --keep-s3               Do not delete temp S3 prefix after BDA
   --help
+
+Examples:
+  npm run compile-docs
+  npm run compile-docs -- --skip-bda
+  npm run compile-docs -- --doc data100-disc01
+  npm run compile-docs -- --from data100-disc06 --skip-bda
+  npm run compile-docs -- --only-missing
 `);
+}
+
+function resolveCompileIds(manifest, args) {
+    const allIds = Object.keys(manifest);
+
+    if (args.doc) {
+        if (!manifest[args.doc]) {
+            throw new Error(`document_id not in manifest: ${args.doc}`);
+        }
+        return [args.doc];
+    }
+
+    let ids = allIds;
+    if (args.from) {
+        const idx = ids.indexOf(args.from);
+        if (idx < 0) {
+            throw new Error(
+                `--from document_id not in manifest: ${args.from}`
+            );
+        }
+        ids = ids.slice(idx);
+    }
+
+    if (args.onlyMissing) {
+        ids = ids.filter((id) => {
+            const compiledRel =
+                manifest[id].compiled || `compiled/${id}.json`;
+            return !existsSync(join(DOCS_ROOT, compiledRel));
+        });
+    }
+
+    return ids;
 }
 
 async function compileOne(documentId, entry, args) {
     const pdfPath = join(DOCS_ROOT, entry.source);
     const bdaRawDir = join(DOCS_ROOT, 'bda-raw', documentId);
-
-    console.log(`\n=== ${documentId} ===`);
 
     if (!args.skipBda) {
         if (!existsSync(pdfPath)) {
@@ -129,14 +184,32 @@ async function main() {
     }
 
     const manifest = loadManifest();
-    const ids = args.doc ? [args.doc] : Object.keys(manifest);
+    const ids = resolveCompileIds(manifest, args);
 
-    if (args.doc && !manifest[args.doc]) {
-        throw new Error(`document_id not in manifest: ${args.doc}`);
+    if (ids.length === 0) {
+        console.log(
+            args.onlyMissing
+                ? 'Nothing to do: every selected manifest id already has compiled JSON.'
+                : 'Nothing to do: no document ids selected.'
+        );
+        return;
     }
 
+    const mode = args.doc
+        ? `single doc ${args.doc}`
+        : `all selected manifest keys (${ids.length})`;
+    console.log(
+        `Compiling ${ids.length} document(s) — ${mode}` +
+            (args.skipBda ? ' [skip-bda]' : '') +
+            (args.dryRun ? ' [dry-run]' : '') +
+            (args.onlyMissing ? ' [only-missing]' : '')
+    );
+    console.log(`Queue: ${ids.join(', ')}`);
+
     const summary = [];
-    for (const id of ids) {
+    for (let i = 0; i < ids.length; i++) {
+        const id = ids[i];
+        console.log(`\n=== [${i + 1}/${ids.length}] ${id} ===`);
         try {
             const result = await compileOne(id, manifest[id], args);
             summary.push({
@@ -148,7 +221,8 @@ async function main() {
                     result.compiled.questionIndex?.length ??
                     null,
                 detected_sections:
-                    result.compiled.compiled?.metadata?.detected_sections ?? null,
+                    result.compiled.compiled?.metadata?.detected_sections ??
+                    null,
                 unresolved_assets: result.compiled.unresolvedAssets || [],
                 errors: result.validation?.errors || [],
                 warnings: result.validation?.warnings || [],
@@ -176,7 +250,14 @@ async function main() {
             2
         ) + '\n'
     );
+
+    const passed = summary.filter((r) => r.ok).length;
+    const failed = summary.length - passed;
     console.log(`\nCompile report: ${reportPath}`);
+    console.log(`Summary: ${passed} ok, ${failed} failed (of ${summary.length})`);
+    for (const r of summary) {
+        console.log(`  ${r.ok ? 'PASS' : 'FAIL'}  ${r.document_id}`);
+    }
 
     if (summary.some((r) => !r.ok)) process.exitCode = 1;
 }
