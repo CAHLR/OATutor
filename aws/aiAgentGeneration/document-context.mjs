@@ -329,6 +329,7 @@ export function resolveMaterialType(manifestEntry = {}, compiled = {}) {
             ''
     ).toLowerCase();
     if (!raw) return 'worksheet';
+    if (raw === 'textbook') return 'textbook';
     if (raw.includes('syllabus')) return 'syllabus';
     if (raw.includes('lecture') || raw.includes('slide')) return 'lecture';
     if (raw.includes('lab')) return 'lab';
@@ -354,9 +355,11 @@ export function toStudentFacingMaterialTitle(documentId, manifestEntry = {}) {
         '';
     const courseLabel = /^data(\d+)$/i.test(course)
         ? `Data ${course.match(/\d+/)[0]}`
-        : course
-          ? String(course)
-          : '';
+        : /^physics7a$/i.test(course)
+          ? 'Physics 7A'
+          : course
+            ? String(course)
+            : '';
 
     let title = String(manifestEntry.title || documentId || 'course materials')
         .replace(/\s*Solutions?\s*$/i, '')

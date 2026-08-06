@@ -89,13 +89,20 @@ async function putFile(s3, bucket, key, localPath) {
     );
 }
 
+const PUBLISH_EXCLUDE_NAMES = new Set([
+    '.DS_Store',
+    '.gitkeep',
+    '_compile-report.json',
+    '_validation-report.json',
+]);
+
 async function syncDir({
     s3,
     bucket,
     prefix,
     localDir,
     remoteSubdir,
-    excludeNames = new Set(),
+    excludeNames = PUBLISH_EXCLUDE_NAMES,
     dryRun,
 }) {
     const files = walkFiles(localDir, excludeNames);
@@ -200,10 +207,6 @@ async function main() {
         prefix,
         localDir: join(DOCS_ROOT, 'compiled'),
         remoteSubdir: 'compiled',
-        excludeNames: new Set([
-            '_compile-report.json',
-            '_validation-report.json',
-        ]),
         dryRun: args.dryRun,
     });
 

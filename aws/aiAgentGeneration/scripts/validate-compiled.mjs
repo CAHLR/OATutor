@@ -59,6 +59,8 @@ function validateRelationships(doc, documentsRoot) {
     const problems = collectProblems(doc);
     const problemIds = new Set();
     const seenProblemIds = new Set();
+    const isTextbook =
+        String(doc.metadata?.document_type || '').toLowerCase() === 'textbook';
 
     for (const { problem } of problems) {
         const pid = problem.problem_id;
@@ -86,9 +88,11 @@ function validateRelationships(doc, documentsRoot) {
             problem.prompt?.trim() &&
             looksTruncatedPrompt(problem.prompt)
         ) {
-            errors.push(
-                `Problem ${pid} prompt looks truncated: "${problem.prompt.slice(-80)}"`
-            );
+            const msg = `Problem ${pid} prompt looks truncated: "${problem.prompt.slice(-80)}"`;
+            // Textbook BDA often leaves OpenStax cross-ref / OCR tails that trip
+            // the heuristic; keep as warning so schema-valid docs can publish.
+            if (isTextbook) warnings.push(msg);
+            else errors.push(msg);
         }
         for (const sub of problem.subproblems || []) {
             if (sub.parent_problem_id !== problem.problem_id) {

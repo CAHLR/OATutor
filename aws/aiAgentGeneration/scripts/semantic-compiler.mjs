@@ -18,7 +18,15 @@ import { basename, dirname, join } from 'path';
 import { findBdaResultJsonFiles } from './bda-client.mjs';
 import { createLlmProvider } from './providers/llm-provider.mjs';
 
-export const PARSER_VERSION = 'course-doc-compiler-0.2.2';
+export const PARSER_VERSION = 'course-doc-compiler-0.2.5';
+
+/** @typedef {'discussion' | 'textbook'} CompileMode */
+
+/** @returns {CompileMode} */
+export function getCompileMode(manifestEntry = {}) {
+    const raw = String(manifestEntry.document_type || '').toLowerCase();
+    return raw === 'textbook' ? 'textbook' : 'discussion';
+}
 
 const SUBPART_RE = /(?:^|\n)\s*\(([a-z])\)\s+/gi;
 const SOLUTION_RE = /(?:^|\n)\s*Solution\s*:?\s*/i;
@@ -47,15 +55,41 @@ function stripRunningHeaderNoise(text) {
 
 /**
  * True when a prompt looks cut off mid-phrase (e.g. ends with "the empty").
+ * OpenStax cross-refs often become "... Motion.) Newton's Laws of" after
+ * markdown links are stripped — those are not mid-sentence cuts.
  */
 export function looksTruncatedPrompt(prompt) {
     const p = String(prompt || '').trim();
     if (!p) return true;
     if (/[.?!]["']?$/.test(p)) return false;
     if (/\$$/.test(p)) return false; // regex / math endings
-    if (/\b(the|a|an|and|or|of|with|to|for|from|by|in|on|at|empty|only|all|any)$/i.test(p)) {
-        return true;
+
+    // Stripped chapter/section link: "... .) Newton's Laws of" / "... Waves. Interference of"
+    if (
+        /(?:[.!?]|[.!?]\)|\))\s+[A-Z][\w']*(?:(?:\s+[A-Z][\w']*)+)?\s+(?:of|and)$/.test(
+            p
+        )
+    ) {
+        return false;
     }
+    // Title-case phrase ending in of/and (cross-ref with no trailing punctuation)
+    if (/[A-Z][\w']*(?:\s+[A-Z][\w']*)+\s+(?:of|and)$/.test(p)) {
+        return false;
+    }
+    // Link-cleaning residue: "... Elasticity.) and"
+    if (/\)\s+and$/i.test(p)) return false;
+
+    // OCR/layout leftover after a question mark, e.g. "deuteron = ? OF"
+    if (/\?\s*[A-Z]{1,3}$/.test(p)) return false;
+
+    // Trailing function word: only count as truncated when it is lowercase
+    // (mid-sentence). Title-case/ALL-CAPS tokens like "At" / "OF" are ignored here
+    // via the checks above or by requiring lowercase match text.
+    const trailing = p.match(
+        /\b(the|a|an|and|or|of|with|to|for|from|by|in|on|at|empty|only|all|any)$/
+    );
+    if (trailing) return true;
+
     // Ends mid-hyphenation like "char-" from PDF line break without continuation
     if (/[A-Za-z]-$/.test(p)) return true;
     return false;
@@ -166,6 +200,121 @@ export function buildQuestionIndex(bdaResult, documentId) {
     }
 
     return questions;
+}
+
+const TEXTBOOK_HEADING_RE = /^(#{2,3})\s+(.+)$/gm;
+
+function isIgnoredTextbookHeading(heading) {
+    const h = String(heading || '').toLowerCase().trim();
+    if (!h) return true;
+    if (/^chapter\s+outline$/i.test(h)) return true;
+    if (/^openstax$/i.test(h)) return true;
+    if (/^\d+\/\d+$/.test(h)) return true;
+    if (/^\d{1,2}\/\d{1,2}\/\d{2}/.test(h)) return true;
+    if (
+        /university physics volume/i.test(h) &&
+        /openstax/i.test(h) &&
+        h.length < 100
+    ) {
+        return true;
+    }
+    return false;
+}
+
+function cleanTextbookBody(body) {
+    return String(body || '')
+        .replace(/!\[[^\]]*\]\([^)]*\)/g, ' ')
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+        .replace(/^#{1,6}\s+.*$/gm, ' ')
+        .replace(/https?:\/\/\S+/g, ' ')
+        .replace(/^\d{1,2}\/\d{1,2}\/\d{2}.*$/gm, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+}
+
+function cleanTextbookMarkdown(markdown) {
+    return String(markdown || '')
+        .replace(/!\[[^\]]*\]\([^)]*\)/g, ' ')
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+        .replace(/^#{1}\s+.*$/gm, ' ')
+        .replace(/^\d{1,2}\/\d{1,2}\/\d{2}.*$/gm, ' ')
+        .replace(/\n{3,}/g, '\n\n')
+        .trim();
+}
+
+function fallbackTextbookChunk(markdown, documentId, manifestTitle) {
+    const cleaned = cleanTextbookMarkdown(markdown);
+    const body = cleaned || String(markdown || '').trim();
+    const prompt = [manifestTitle, body].filter(Boolean).join('\n\n').trim();
+    const id = `${documentId}::content`;
+    return [
+        {
+            id,
+            problem_id: id,
+            section: manifestTitle,
+            number: '1',
+            heading: manifestTitle,
+            prompt: prompt.slice(0, 50000),
+            pageIndices: [],
+            sourceElementId: null,
+        },
+    ];
+}
+
+/**
+ * Deterministic textbook chunk index from BDA markdown (## / ### headings).
+ * Falls back to one document-level chunk when no usable headings exist.
+ */
+export function buildTextbookChunkIndex(markdown, documentId, manifestTitle) {
+    const md = String(markdown || '');
+    const title = manifestTitle || documentId;
+    const matches = [...md.matchAll(TEXTBOOK_HEADING_RE)];
+
+    if (!matches.length) {
+        return fallbackTextbookChunk(md, documentId, title);
+    }
+
+    const chunks = [];
+    const seenIds = new Set();
+    let chunkNum = 0;
+
+    for (let i = 0; i < matches.length; i++) {
+        const match = matches[i];
+        const heading = stripMarkdown(match[2]);
+        if (isIgnoredTextbookHeading(heading)) continue;
+
+        const bodyStart = match.index + match[0].length;
+        const bodyEnd =
+            i + 1 < matches.length ? matches[i + 1].index : md.length;
+        const body = cleanTextbookBody(md.slice(bodyStart, bodyEnd));
+        const prompt = body
+            ? `${heading}\n\n${body}`.trim()
+            : heading.trim();
+
+        if (!prompt || prompt.length < 8) continue;
+
+        chunkNum += 1;
+        const slug = slugify(heading) || `chunk-${chunkNum}`;
+        const id = `${documentId}::${slug}`;
+        if (seenIds.has(id)) continue;
+        seenIds.add(id);
+
+        chunks.push({
+            id,
+            problem_id: id,
+            section: title,
+            number: String(chunkNum),
+            heading,
+            prompt: stripRunningHeaderNoise(prompt) || prompt,
+            pageIndices: [],
+            sourceElementId: null,
+        });
+    }
+
+    if (!chunks.length) {
+        return fallbackTextbookChunk(md, documentId, title);
+    }
+    return chunks;
 }
 
 function loadPrimaryBdaDocument(outputDir, preferredInvocationId = null) {
@@ -393,6 +542,93 @@ CRITICAL RULES:
 - If a solution association is uncertain, still emit the problem and list the issue in uncertainties.
 - Return a single JSON object only.`;
 
+const TEXTBOOK_SCHEMA_HINT = `{
+  "sections": [
+    {
+      "section_id": "string",
+      "title": "string|null",
+      "concepts": ["string"],
+      "definitions": [],
+      "notes": [{ "note_id": "string", "text": "string", "visibility": "student" }],
+      "examples": [],
+      "problems": [
+        {
+          "problem_id": "MUST match AUTHORITATIVE CHUNK INDEX id exactly",
+          "number": "string",
+          "title": "short heading title only",
+          "question_type": "other",
+          "equations": [],
+          "code_blocks": [],
+          "assets": [],
+          "knowledge_components": ["string"],
+          "visibility": "student",
+          "source": { "pages": [0], "confidence": 0.9 }
+        }
+      ],
+      "visibility": "student"
+    }
+  ],
+  "uncertainties": ["string"]
+}`;
+
+const TEXTBOOK_SYSTEM_PROMPT = `You are an educational textbook semantic compiler for OATutor.
+You enrich deterministically indexed textbook chunks into structured learning objects.
+
+CRITICAL RULES:
+- EXTRACT; do not rewrite, paraphrase, or invent content.
+- Preserve math, code, and figure references.
+- This is textbook material — do NOT invent solutions or answer keys.
+- NEVER invent chunk IDs — use the AUTHORITATIVE CHUNK INDEX only.
+- Produce exactly one problem object for every chunk-index entry.
+- Do NOT include prompt fields. Authoritative prompts are filled later by the compiler.
+- Keep problem objects small: problem_id, number, title, knowledge_components, equations, assets, source.
+- Put shared prose enrichment in section-level concepts, notes, and examples — not by echoing full chunk text.
+- Student-visible content uses visibility "student".
+- Return a single compact JSON object only.`;
+
+function buildTextbookUserPrompt({
+    documentId,
+    manifestEntry,
+    markdown,
+    chunkIndex,
+}) {
+    // Compact index: omit full prompts so the model does not echo them
+    // (reconcileTextbookChunks keeps authoritative prompts from chunkIndex).
+    const compactIndex = chunkIndex.map((chunk) => ({
+        id: chunk.id,
+        problem_id: chunk.problem_id || chunk.id,
+        number: chunk.number,
+        heading: chunk.heading || null,
+        section: chunk.section,
+    }));
+
+    return [
+        `document_id: ${documentId}`,
+        `title: ${manifestEntry.title || ''}`,
+        `course: ${manifestEntry.course || ''}`,
+        `document_type: ${manifestEntry.document_type || ''}`,
+        '',
+        'AUTHORITATIVE CHUNK INDEX (compact — do not echo prompts)',
+        'The following chunks were detected deterministically from the source document.',
+        '',
+        JSON.stringify(compactIndex, null, 2),
+        '',
+        'Rules for the index:',
+        '1. Produce exactly one problem object for every chunk-index entry.',
+        '2. Use the supplied id / problem_id exactly as problem_id.',
+        '3. Set title to the supplied heading (or a short equivalent). Do NOT include a prompt field.',
+        '4. Do not create additional chunk IDs.',
+        '5. Use the document content to populate section concepts, notes, examples, and per-chunk knowledge_components / assets.',
+        '6. Do not add solution blocks for textbook chunks.',
+        '7. Keep the JSON compact — do not paste long body text into problem fields.',
+        '',
+        'Extracted document markdown/text from Bedrock Data Automation:',
+        '"""',
+        markdown.slice(0, 120000),
+        '"""',
+    ].join('\n');
+}
+
 function buildUserPrompt({
     documentId,
     manifestEntry,
@@ -570,19 +806,32 @@ export function reconcileProblems(questionIndex, modelProblems) {
                     sub.choices,
                     sub.subproblem_id || `${question.id}-sub`
                 ),
+                equations: sanitizeEquations(
+                    sub.equations,
+                    sub.subproblem_id || `${question.id}-sub`
+                ),
             })),
             choices: sanitizeChoices(rest.choices, question.id),
-            equations: rest.equations || [],
+            equations: sanitizeEquations(rest.equations, question.id),
             code_blocks: rest.code_blocks || [],
             assets: rest.assets || [],
             knowledge_components: rest.knowledge_components || [],
-            solution: rest.solution || {
-                text: null,
-                analysis_plan: [],
-                code_blocks: [],
-                visibility: 'private_tutor',
-                disclosure_policy: 'never_verbatim',
-            },
+            solution: (() => {
+                const sol = rest.solution || {
+                    text: null,
+                    analysis_plan: [],
+                    code_blocks: [],
+                    visibility: 'private_tutor',
+                    disclosure_policy: 'never_verbatim',
+                };
+                return {
+                    ...sol,
+                    equations: sanitizeEquations(
+                        sol.equations,
+                        `${question.id}-sol`
+                    ),
+                };
+            })(),
             source: {
                 ...(modelSource || {}),
                 pages,
@@ -594,6 +843,99 @@ export function reconcileProblems(questionIndex, modelProblems) {
             },
         };
     });
+}
+
+/**
+ * Textbook chunks: keep authoritative IDs/prompts; allow enrichment without solutions.
+ */
+export function reconcileTextbookChunks(chunkIndex, modelProblems) {
+    return reconcileProblems(chunkIndex, modelProblems).map((problem) => ({
+        ...problem,
+        question_type: problem.question_type || 'other',
+        // Empty stub — private_tutor avoids validator noise; no answer key content.
+        solution: {
+            text: null,
+            analysis_plan: [],
+            code_blocks: [],
+            equations: [],
+            visibility: 'private_tutor',
+            disclosure_policy: 'never_verbatim',
+        },
+    }));
+}
+
+/**
+ * Normalize textbook compile output (single document section, chunk problems).
+ */
+function normalizeTextbookCompiled({
+    documentId,
+    manifestEntry,
+    sourcePdfRel,
+    contentHash,
+    llmResult,
+    chunkIndex,
+    bdaJobId,
+    uncertaintiesExtra = [],
+}) {
+    const modelProblems = flattenModelProblems(llmResult);
+    const reconciled = reconcileTextbookChunks(chunkIndex, modelProblems);
+    const sectionMeta = (llmResult.sections || [])[0] || {};
+    const docTitle = manifestEntry.title || documentId;
+
+    const problems = reconciled.map((problem) => {
+        const { section: _section, ...body } = problem;
+        return body;
+    });
+
+    const sections = [
+        {
+            section_id:
+                sectionMeta.section_id ||
+                `${documentId}-${slugify(docTitle) || 'document'}`,
+            title: sectionMeta.title || docTitle,
+            concepts: sectionMeta.concepts || [],
+            definitions: sectionMeta.definitions || [],
+            notes: sectionMeta.notes || [],
+            examples: sectionMeta.examples || [],
+            problems,
+            visibility: sectionMeta.visibility || 'student',
+            source: sectionMeta.source || undefined,
+        },
+    ];
+
+    const uncertainties = [
+        ...(Array.isArray(llmResult.uncertainties) ? llmResult.uncertainties : []),
+        ...uncertaintiesExtra,
+    ];
+
+    const inventory = chunkIndex.map((q) => ({
+        problem_id: q.id,
+        number: q.number,
+        title: q.heading || q.prompt.slice(0, 200),
+        section: q.section,
+        question_type: 'other',
+    }));
+
+    return {
+        document_id: documentId,
+        metadata: {
+            course: manifestEntry.course,
+            term: manifestEntry.term || null,
+            document_type: manifestEntry.document_type || 'textbook',
+            visibility: manifestEntry.visibility || 'student',
+            title: manifestEntry.title || null,
+            parser_version: PARSER_VERSION,
+            content_hash: contentHash,
+            source_pdf: sourcePdfRel,
+            compiled_at: new Date().toISOString(),
+            bda_job_id: bdaJobId || null,
+            expected_problem_count: chunkIndex.length,
+            detected_sections: { document: chunkIndex.length },
+            uncertainties,
+        },
+        sections,
+        question_inventory: inventory,
+    };
 }
 
 /**
@@ -635,6 +977,68 @@ export function sanitizeChoices(choices, ownerId) {
                 null,
         };
     });
+}
+
+/**
+ * Normalize provenance / source fields to schema objects.
+ */
+export function sanitizeProvenance(source) {
+    if (!source || typeof source !== 'object' || Array.isArray(source)) {
+        return { pages: [], confidence: null };
+    }
+    return {
+        ...source,
+        pages: Array.isArray(source.pages) ? source.pages : [],
+        confidence:
+            typeof source.confidence === 'number' || source.confidence === null
+                ? source.confidence
+                : null,
+    };
+}
+
+/**
+ * Normalize LLM equation strings/objects into schema { equation_id, ... }.
+ */
+export function sanitizeEquations(equations, ownerId) {
+    return (equations ?? [])
+        .map((eq, index) => {
+            const fallbackId = `${ownerId}-eq-${index + 1}`;
+            if (typeof eq === 'string') {
+                const text = eq.trim();
+                if (!text) return null;
+                return {
+                    equation_id: fallbackId,
+                    latex: null,
+                    plain_text: text,
+                    crop_path: null,
+                    visibility: 'student',
+                    source: { pages: [], confidence: null },
+                };
+            }
+            if (!eq || typeof eq !== 'object') return null;
+            const plain =
+                eq.plain_text ?? eq.text ?? eq.equation ?? eq.latex ?? null;
+            const plainText =
+                typeof plain === 'string' && plain.trim() ? plain.trim() : null;
+            const latex =
+                typeof eq.latex === 'string' && eq.latex.trim()
+                    ? eq.latex.trim()
+                    : null;
+            return {
+                ...eq,
+                equation_id: eq.equation_id || fallbackId,
+                latex,
+                plain_text: plainText,
+                crop_path: eq.crop_path ?? null,
+                visibility: eq.visibility || 'student',
+                source: sanitizeProvenance(eq.source),
+            };
+        })
+        .filter(Boolean);
+}
+
+function isHttpUrl(value) {
+    return /^https?:\/\//i.test(String(value || '').trim());
 }
 
 function groupProblemsIntoSections(documentId, reconciledProblems, llmResult) {
@@ -751,20 +1155,30 @@ function mapAssetType(rawType) {
  * Normalize LLM asset shapes into schema fields.
  * Never hide broken refs: unresolved URLs become a concrete local path that
  * the validator will fail on if the file was not copied from BDA output.
+ * External http(s) links are caption-only (not treated as local file paths).
  */
 function resolveLocalAssetPath(ref, copiedByBasename, documentId) {
     if (typeof ref !== 'string' || !ref.trim()) {
-        return { path: null, unresolved: null };
+        return { path: null, unresolved: null, externalUrl: null };
     }
     const trimmed = ref.trim();
+
+    if (isHttpUrl(trimmed)) {
+        return { path: null, unresolved: null, externalUrl: trimmed };
+    }
+
     const base = basename(trimmed.split('?')[0].replace(/^\.\//, ''));
 
     if (base && copiedByBasename.has(base)) {
-        return { path: copiedByBasename.get(base), unresolved: null };
+        return {
+            path: copiedByBasename.get(base),
+            unresolved: null,
+            externalUrl: null,
+        };
     }
 
     if (trimmed.startsWith('assets/')) {
-        return { path: trimmed, unresolved: null };
+        return { path: trimmed, unresolved: null, externalUrl: null };
     }
 
     if (base && /\.(png|jpe?g|gif|webp|csv)$/i.test(base)) {
@@ -772,10 +1186,11 @@ function resolveLocalAssetPath(ref, copiedByBasename, documentId) {
         return {
             path: `assets/${kind}/${documentId}/${base}`,
             unresolved: trimmed,
+            externalUrl: null,
         };
     }
 
-    return { path: trimmed, unresolved: trimmed };
+    return { path: trimmed, unresolved: trimmed, externalUrl: null };
 }
 
 function sanitizeAssetList(
@@ -797,6 +1212,7 @@ function sanitizeAssetList(
 
         let path = null;
         let unresolved_source_url = null;
+        let externalUrl = null;
 
         if (rawPath) {
             const resolved = resolveLocalAssetPath(
@@ -806,6 +1222,7 @@ function sanitizeAssetList(
             );
             path = resolved.path;
             unresolved_source_url = resolved.unresolved;
+            externalUrl = resolved.externalUrl;
         } else if (typeof url === 'string' && url.trim()) {
             const resolved = resolveLocalAssetPath(
                 url,
@@ -814,24 +1231,33 @@ function sanitizeAssetList(
             );
             path = resolved.path;
             unresolved_source_url = resolved.unresolved;
+            externalUrl = resolved.externalUrl;
         }
 
-        // Caption-only assets (no file claim) are allowed without path
-        const claimsFile = Boolean(rawPath || url);
+        // External http(s) links are not local files — keep as caption-only refs.
+        const claimsFile = Boolean(
+            (rawPath && !isHttpUrl(rawPath)) ||
+                (typeof url === 'string' && url.trim() && !isHttpUrl(url))
+        );
+
+        const caption =
+            raw.caption ||
+            raw.description ||
+            (externalUrl ? `External resource: ${externalUrl}` : null);
 
         out.push({
             asset_id: raw.asset_id || `${problemId}-asset-${i + 1}`,
             asset_type: mapAssetType(raw.asset_type || raw.type),
             path: claimsFile ? path : null,
             csv_path: raw.csv_path || null,
-            caption: raw.caption || raw.description || null,
+            caption,
             title: raw.title || null,
             visual_observations: Array.isArray(raw.visual_observations)
                 ? raw.visual_observations
                 : [],
             visibility: raw.visibility || 'student',
-            unresolved_source_url,
-            source: raw.source || { pages: [], confidence: null },
+            unresolved_source_url: claimsFile ? unresolved_source_url : null,
+            source: sanitizeProvenance(raw.source),
         });
     }
     return out;
@@ -1041,6 +1467,7 @@ export async function compileDocument({
     providerName,
     bdaJobId = null,
 }) {
+    const compileMode = getCompileMode(manifestEntry);
     const preferredInvocationId = preferredInvocationFromJobMeta(bdaOutputDir);
     const { file: bdaJsonFile, data: bdaData } = loadPrimaryBdaDocument(
         bdaOutputDir,
@@ -1054,26 +1481,52 @@ export async function compileDocument({
         );
     }
 
-    const questionIndex = buildQuestionIndex(bdaData, documentId);
-    const detected_sections = buildDetectedSections(questionIndex);
-    console.log(
-        `Detected: ${questionIndex.length} questions`,
-        detected_sections
-    );
-    console.log(
-        'Question inventory:',
-        questionIndex.map((q) => ({
-            id: q.id,
-            section: q.section,
-            number: q.number,
-            prompt: q.prompt,
-        }))
-    );
+    const manifestTitle = manifestEntry.title || documentId;
+    let questionIndex = [];
+    let chunkIndex = [];
 
-    if (questionIndex.length === 0) {
-        throw new Error(
-            `[semantic-compiler] No questions detected deterministically for ${documentId}. Fix index parsing before calling the LLM.`
+    if (compileMode === 'textbook') {
+        chunkIndex = buildTextbookChunkIndex(markdown, documentId, manifestTitle);
+        console.log(
+            `Detected: ${chunkIndex.length} textbook chunks (mode=textbook)`,
+            { document: chunkIndex.length }
         );
+        console.log(
+            'Chunk inventory:',
+            chunkIndex.map((q) => ({
+                id: q.id,
+                section: q.section,
+                number: q.number,
+                heading: q.heading,
+                prompt: q.prompt.slice(0, 120),
+            }))
+        );
+        if (chunkIndex.length === 0) {
+            throw new Error(
+                `[semantic-compiler] No textbook chunks detected for ${documentId}. Fix chunk indexing before calling the LLM.`
+            );
+        }
+    } else {
+        questionIndex = buildQuestionIndex(bdaData, documentId);
+        const detected_sections = buildDetectedSections(questionIndex);
+        console.log(
+            `Detected: ${questionIndex.length} questions (mode=discussion)`,
+            detected_sections
+        );
+        console.log(
+            'Question inventory:',
+            questionIndex.map((q) => ({
+                id: q.id,
+                section: q.section,
+                number: q.number,
+                prompt: q.prompt,
+            }))
+        );
+        if (questionIndex.length === 0) {
+            throw new Error(
+                `[semantic-compiler] No questions detected deterministically for ${documentId}. Fix index parsing before calling the LLM.`
+            );
+        }
     }
 
     const contentHash = createHash('sha256')
@@ -1086,53 +1539,104 @@ export async function compileDocument({
     let providerUsed = null;
 
     if (process.env.COMPILER_DRY_RUN === '1') {
-        llmResult = buildDryRunStructure({
-            documentId,
-            markdown,
-            questionIndex,
-            ruleSignals,
-        });
+        llmResult =
+            compileMode === 'textbook'
+                ? buildTextbookDryRunStructure({
+                      documentId,
+                      manifestTitle,
+                      markdown,
+                      chunkIndex,
+                  })
+                : buildDryRunStructure({
+                      documentId,
+                      markdown,
+                      questionIndex,
+                      ruleSignals,
+                  });
         providerUsed = 'dry-run';
     } else {
         const provider = await createLlmProvider(providerName);
         providerUsed = provider.name;
-        const user = buildUserPrompt({
-            documentId,
-            manifestEntry,
-            markdown,
-            ruleSignals,
-            questionIndex,
-        });
-        try {
-            llmResult = await provider.completeJson({
-                system: SYSTEM_PROMPT,
-                user,
-                schemaHint: SCHEMA_HINT,
+        if (compileMode === 'textbook') {
+            const user = buildTextbookUserPrompt({
+                documentId,
+                manifestEntry,
+                markdown,
+                chunkIndex,
             });
-        } catch (err) {
-            console.warn(
-                `[semantic-compiler] LLM pass failed, retrying once: ${err.message}`
-            );
-            llmResult = await provider.completeJson({
-                system: SYSTEM_PROMPT,
-                user,
-                schemaHint: SCHEMA_HINT,
+            try {
+                llmResult = await provider.completeJson({
+                    system: TEXTBOOK_SYSTEM_PROMPT,
+                    user,
+                    schemaHint: TEXTBOOK_SCHEMA_HINT,
+                });
+            } catch (err) {
+                console.warn(
+                    `[semantic-compiler] LLM pass failed, retrying once: ${err.message}`
+                );
+                llmResult = await provider.completeJson({
+                    system: TEXTBOOK_SYSTEM_PROMPT,
+                    user,
+                    schemaHint: TEXTBOOK_SCHEMA_HINT,
+                });
+            }
+        } else {
+            const user = buildUserPrompt({
+                documentId,
+                manifestEntry,
+                markdown,
+                ruleSignals,
+                questionIndex,
             });
+            try {
+                llmResult = await provider.completeJson({
+                    system: SYSTEM_PROMPT,
+                    user,
+                    schemaHint: SCHEMA_HINT,
+                });
+            } catch (err) {
+                console.warn(
+                    `[semantic-compiler] LLM pass failed, retrying once: ${err.message}`
+                );
+                llmResult = await provider.completeJson({
+                    system: SYSTEM_PROMPT,
+                    user,
+                    schemaHint: SCHEMA_HINT,
+                });
+            }
         }
     }
 
-    const compiled = normalizeCompiled({
-        documentId,
-        manifestEntry,
-        sourcePdfRel: manifestEntry.source,
-        contentHash,
-        llmResult,
-        questionIndex,
-        bdaJobId,
-        uncertaintiesExtra: bdaJsonFile
-            ? []
-            : ['No BDA JSON payload found under bda-raw output; markdown may be empty.'],
-    });
+    const compiled =
+        compileMode === 'textbook'
+            ? normalizeTextbookCompiled({
+                  documentId,
+                  manifestEntry,
+                  sourcePdfRel: manifestEntry.source,
+                  contentHash,
+                  llmResult,
+                  chunkIndex,
+                  bdaJobId,
+                  uncertaintiesExtra: bdaJsonFile
+                      ? []
+                      : [
+                            'No BDA JSON payload found under bda-raw output; markdown may be empty.',
+                        ],
+              })
+            : normalizeCompiled({
+                  documentId,
+                  manifestEntry,
+                  sourcePdfRel: manifestEntry.source,
+                  contentHash,
+                  llmResult,
+                  questionIndex,
+                  bdaJobId,
+                  uncertaintiesExtra: bdaJsonFile
+                      ? []
+                      : [
+                            'No BDA JSON payload found under bda-raw output; markdown may be empty.',
+                        ],
+              });
 
     const assetsRoot = join(documentsRoot, 'assets');
     materializeAssets({
@@ -1152,14 +1656,75 @@ export async function compileDocument({
     mkdirSync(dirname(compiledPath), { recursive: true });
     writeFileSync(compiledPath, JSON.stringify(compiled, null, 2) + '\n');
 
+    const inventory = compileMode === 'textbook' ? chunkIndex : questionIndex;
+
     return {
         compiled,
         compiledPath,
         providerUsed,
         questionIndex,
-        inventory: questionIndex,
+        chunkIndex,
+        inventory,
         unresolvedAssets,
         markdownChars: markdown.length,
+        compileMode,
+    };
+}
+
+function buildTextbookDryRunStructure({
+    documentId,
+    manifestTitle,
+    markdown,
+    chunkIndex,
+}) {
+    const title = manifestTitle || documentId;
+    return {
+        sections: [
+            {
+                section_id: `${documentId}-${slugify(title) || 'document'}`,
+                title,
+                concepts: [],
+                definitions: [],
+                notes: [
+                    {
+                        note_id: `${documentId}-note-preview`,
+                        text: markdown.slice(0, 500),
+                        visibility: 'student',
+                    },
+                ],
+                examples: [],
+                problems: chunkIndex.map((q) => ({
+                    problem_id: q.id,
+                    number: q.number,
+                    title: q.heading || q.prompt.slice(0, 200),
+                    prompt: q.prompt,
+                    question_type: 'other',
+                    subproblems: [],
+                    choices: [],
+                    equations: [],
+                    code_blocks: [],
+                    assets: [],
+                    solution: {
+                        text: null,
+                        analysis_plan: [],
+                        code_blocks: [],
+                        visibility: 'private_tutor',
+                        disclosure_policy: 'never_verbatim',
+                    },
+                    knowledge_components: [],
+                    visibility: 'student',
+                    source: {
+                        pages: (q.pageIndices || []).map((p) => p + 1),
+                        elementIds: q.sourceElementId ? [q.sourceElementId] : [],
+                        confidence: 0.2,
+                    },
+                })),
+                visibility: 'student',
+            },
+        ],
+        uncertainties: [
+            'COMPILER_DRY_RUN=1: LLM semantic pass skipped; structure is rule/heuristic only.',
+        ],
     };
 }
 

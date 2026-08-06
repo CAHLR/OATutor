@@ -12,10 +12,11 @@ export function createOpenAiProvider() {
         name: 'openai',
         model,
         async completeJson({ system, user, schemaHint }) {
+            const maxTokens = Number(process.env.OPENAI_COMPILER_MAX_TOKENS) || 16000;
             const completion = await client.chat.completions.create({
                 model,
                 temperature: 0.1,
-                max_tokens: 8000,
+                max_tokens: maxTokens,
                 response_format: { type: 'json_object' },
                 messages: [
                     {
@@ -29,8 +30,21 @@ export function createOpenAiProvider() {
                     { role: 'user', content: user },
                 ],
             });
-            const text = completion.choices?.[0]?.message?.content || '{}';
-            return JSON.parse(text);
+            const choice = completion.choices?.[0];
+            const text = choice?.message?.content || '{}';
+            if (choice?.finish_reason === 'length') {
+                throw new Error(
+                    `OpenAI compiler response truncated (finish_reason=length, max_tokens=${maxTokens}). ` +
+                        'Raise OPENAI_COMPILER_MAX_TOKENS or reduce prompt output size.'
+                );
+            }
+            try {
+                return JSON.parse(text);
+            } catch (err) {
+                throw new Error(
+                    `OpenAI compiler returned invalid JSON: ${err.message}`
+                );
+            }
         },
     };
 }

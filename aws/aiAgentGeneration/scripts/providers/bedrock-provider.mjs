@@ -36,7 +36,7 @@ export function createBedrockProvider() {
                 ],
                 inferenceConfig: {
                     temperature: 0.1,
-                    maxTokens: 8000,
+                    maxTokens: Number(process.env.BEDROCK_COMPILER_MAX_TOKENS) || 16000,
                 },
             });
             const response = await client.send(command);

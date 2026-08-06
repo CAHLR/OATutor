@@ -82,6 +82,18 @@ echo
 
 Do not commit API keys to the repository or place them in `course-docs-env.sh`.
 
+### Textbook mode
+
+Set `document_type` to `textbook` in `manifest.json` for OpenStax-style textbook PDFs (for example `physics7a-1.1`).
+
+The semantic compiler then:
+
+- splits BDA markdown into section chunks from `##` / `###` headings (with a single-chunk fallback for chapter intros)
+- runs one LLM enrichment pass (no solution extraction)
+- emits the same compiled JSON + chat metadata shape as discussion worksheets
+
+Discussion compiles (`document_type: discussion_solutions`) are unchanged.
+
 ---
 
 ## 2. Add a PDF

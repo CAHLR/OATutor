@@ -5,8 +5,9 @@
   "main": "index.mjs",
   "type": "module",
   "scripts": {
-    "test": "node scripts/test-data100-disc02-regression.mjs && node scripts/test-document-context.mjs",
+    "test": "node scripts/test-data100-disc02-regression.mjs && node scripts/test-physics7a-textbook.mjs && node scripts/test-document-context.mjs",
     "test:disc02": "node scripts/test-data100-disc02-regression.mjs",
+    "test:physics7a": "node scripts/test-physics7a-textbook.mjs",
     "test:document-context": "node scripts/test-document-context.mjs",
     "dev": "node index.mjs",
     "deploy": "echo 'Deploy to AWS Lambda'",
