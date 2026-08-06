@@ -45,15 +45,16 @@ export.py
 public/static/images/figures/oatutor/
 
 # Course-document compiler caches / large BDA outputs (keep .gitkeep + fixtures)
-aws/aiAgentGeneration/documents/bda-raw/*
+aws/aiAgentGeneration/documents/bda-raw/**
 !aws/aiAgentGeneration/documents/bda-raw/.gitkeep
 !aws/aiAgentGeneration/documents/bda-raw/_fixtures/
 !aws/aiAgentGeneration/documents/bda-raw/_fixtures/**
-aws/aiAgentGeneration/documents/compiled/*
+aws/aiAgentGeneration/documents/compiled/**
 !aws/aiAgentGeneration/documents/compiled/.gitkeep
-aws/aiAgentGeneration/documents/assets/figures/*
+aws/aiAgentGeneration/documents/assets/figures/**
 !aws/aiAgentGeneration/documents/assets/figures/.gitkeep
-aws/aiAgentGeneration/documents/assets/tables/*
+aws/aiAgentGeneration/documents/assets/tables/**
 !aws/aiAgentGeneration/documents/assets/tables/.gitkeep
-# Keep raw PDFs out of git by default (large); use git-lfs or local drop-in
-aws/aiAgentGeneration/documents/raw/*.pdf
+# Keep all raw PDFs / nested course folders out of git (local drop-in only)
+aws/aiAgentGeneration/documents/raw/**
+!aws/aiAgentGeneration/documents/raw/.gitkeep
