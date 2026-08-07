@@ -148,6 +148,21 @@ const getJWT = (
   );
 };
 
+/**
+ * Checks whether the user is considered privileged (e.g. an instructor).
+ * 
+ * @param {lti.Provider} provider The provider of the LTI platform.
+ * @returns {boolean} Whether the user is considered privileged.
+ */
+function isPrivileged(provider) {
+  // Checks:
+  // - Teacher Assistant (TA)
+  // - Adminstrator
+  // - Instructor
+  // - Content Developer (Designer)
+  return provider.ta || provider.admin || provider.instructor || provider.content_developer;
+}
+
 app.post("/launch", async (req, res) => {
   console.log("launch called");
   console.log(req);
@@ -162,7 +177,7 @@ app.post("/launch", async (req, res) => {
   console.log("lti provider initialized, populated");
 
 
-  const privileged = provider.ta || provider.admin || provider.instructor;
+  const privileged = isPrivileged(provider);
   console.log("privileged: ", privileged);
 
   let linkedLesson;
@@ -635,7 +650,7 @@ app.post("/auth", async (req, res) => {
       linkedLesson = await catchLegacyLessonID(linkedLesson, provider);
     }
 
-    const privileged = provider.ta || provider.admin || provider.instructor;
+    const privileged = isPrivileged(provider);
 
     const token = getJWT(
       provider,
