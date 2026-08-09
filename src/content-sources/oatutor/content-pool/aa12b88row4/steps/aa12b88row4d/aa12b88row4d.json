@@ -1,0 +1,18 @@
+{
+    "id": "aa12b88row4d",
+    "stepAnswer": [
+        ".groupby(\"chain\")"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Fill in blank (i)",
+    "stepBody": "Fill in the blanks to create a DataFrame with one row per chain and a column avg\\_price\\_per\\_nugget, showing the average price of a single nugget at each chain, irrespective of shape.\\n\\nHint: The average price per nugget for a given chain is the product of the average weight per nugget in that chain and the price per ounce of nuggets from expected\\_prices.\\n\\nThe ANA (American Nugget Association) releases the expected price\\_per\\_ounce of chicken nuggets sold at each fast food chain in a DataFrame called expected\\_prices. This df is shown and will be helpful in your solution##figure4.gif## ##figure5.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        ".groupby(\"chain\")",
+        ".groupby([\"chain\"])",
+        ".groupby(\"shape\")",
+        ".groupby(chain)",
+        ".group\\_by(\"chain\")"
+    ]
+}
