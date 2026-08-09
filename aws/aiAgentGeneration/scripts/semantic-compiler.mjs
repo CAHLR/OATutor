@@ -18,7 +18,7 @@ import { basename, dirname, join } from 'path';
 import { findBdaResultJsonFiles } from './bda-client.mjs';
 import { createLlmProvider } from './providers/llm-provider.mjs';
 
-export const PARSER_VERSION = 'course-doc-compiler-0.2.5';
+export const PARSER_VERSION = 'course-doc-compiler-0.2.6';
 
 /** @typedef {'discussion' | 'textbook'} CompileMode */
 
@@ -261,8 +261,39 @@ function fallbackTextbookChunk(markdown, documentId, manifestTitle) {
     ];
 }
 
+function pushTextbookChunk(chunks, seenIds, {
+    documentId,
+    title,
+    chunkNum,
+    heading,
+    prompt,
+    slugHint = null,
+}) {
+    const cleanedPrompt = stripRunningHeaderNoise(prompt) || prompt;
+    if (!cleanedPrompt || cleanedPrompt.trim().length < 8) return chunkNum;
+
+    const slug = slugify(slugHint || heading) || `chunk-${chunkNum + 1}`;
+    const id = `${documentId}::${slug}`;
+    if (seenIds.has(id)) return chunkNum;
+    seenIds.add(id);
+
+    const nextNum = chunkNum + 1;
+    chunks.push({
+        id,
+        problem_id: id,
+        section: title,
+        number: String(nextNum),
+        heading,
+        prompt: cleanedPrompt,
+        pageIndices: [],
+        sourceElementId: null,
+    });
+    return nextNum;
+}
+
 /**
  * Deterministic textbook chunk index from BDA markdown (## / ### headings).
+ * Preserves lead-in text before the first usable heading as a preamble chunk.
  * Falls back to one document-level chunk when no usable headings exist.
  */
 export function buildTextbookChunkIndex(markdown, documentId, manifestTitle) {
@@ -274,40 +305,57 @@ export function buildTextbookChunkIndex(markdown, documentId, manifestTitle) {
         return fallbackTextbookChunk(md, documentId, title);
     }
 
-    const chunks = [];
-    const seenIds = new Set();
-    let chunkNum = 0;
-
+    const usable = [];
     for (let i = 0; i < matches.length; i++) {
         const match = matches[i];
         const heading = stripMarkdown(match[2]);
         if (isIgnoredTextbookHeading(heading)) continue;
+        usable.push({ match, heading });
+    }
 
+    if (!usable.length) {
+        return fallbackTextbookChunk(md, documentId, title);
+    }
+
+    const chunks = [];
+    const seenIds = new Set();
+    let chunkNum = 0;
+
+    // Text before the first usable ##/### (and any ignored headings in that span).
+    const firstUsable = usable[0];
+    const preambleRaw = md.slice(0, firstUsable.match.index);
+    const preambleBody = cleanTextbookBody(preambleRaw);
+    if (preambleBody) {
+        const prompt = `${title}\n\n${preambleBody}`.trim();
+        chunkNum = pushTextbookChunk(chunks, seenIds, {
+            documentId,
+            title,
+            chunkNum,
+            heading: title,
+            prompt,
+            slugHint: 'preamble',
+        });
+    }
+
+    for (let u = 0; u < usable.length; u++) {
+        const { match, heading } = usable[u];
         const bodyStart = match.index + match[0].length;
-        const bodyEnd =
-            i + 1 < matches.length ? matches[i + 1].index : md.length;
+        // Include bodies of ignored headings until the next usable heading.
+        const nextUsable = usable[u + 1];
+        const bodyEnd = nextUsable
+            ? nextUsable.match.index
+            : md.length;
         const body = cleanTextbookBody(md.slice(bodyStart, bodyEnd));
         const prompt = body
             ? `${heading}\n\n${body}`.trim()
             : heading.trim();
 
-        if (!prompt || prompt.length < 8) continue;
-
-        chunkNum += 1;
-        const slug = slugify(heading) || `chunk-${chunkNum}`;
-        const id = `${documentId}::${slug}`;
-        if (seenIds.has(id)) continue;
-        seenIds.add(id);
-
-        chunks.push({
-            id,
-            problem_id: id,
-            section: title,
-            number: String(chunkNum),
+        chunkNum = pushTextbookChunk(chunks, seenIds, {
+            documentId,
+            title,
+            chunkNum,
             heading,
-            prompt: stripRunningHeaderNoise(prompt) || prompt,
-            pageIndices: [],
-            sourceElementId: null,
+            prompt,
         });
     }
 

@@ -9,7 +9,11 @@ import { mkdtempSync, rmSync } from 'fs';
 import { tmpdir } from 'os';
 import { dirname, join, resolve } from 'path';
 import { fileURLToPath } from 'url';
-import { compileDocument, getCompileMode } from './semantic-compiler.mjs';
+import {
+    buildTextbookChunkIndex,
+    compileDocument,
+    getCompileMode,
+} from './semantic-compiler.mjs';
 import { validateCompiledDocument } from './validate-compiled.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -20,6 +24,43 @@ const FIXTURE_OUTPUT = resolve(
 
 function assert(condition, message) {
     if (!condition) throw new Error(message);
+}
+
+function testPreamblePreserved() {
+    const md = [
+        'Opening prose that appears before any section heading.',
+        '',
+        '## Learning Objectives',
+        '',
+        'By the end of this section, you will be able to describe the scope of physics.',
+        '',
+        '## The Scope of Physics',
+        '',
+        'Physics describes the universe at every scale.',
+    ].join('\n');
+
+    const chunks = buildTextbookChunkIndex(
+        md,
+        'physics7a-demo',
+        '1.1 Demo Section'
+    );
+    assert(chunks.length === 3, `expected 3 chunks, got ${chunks.length}`);
+    assert(
+        chunks[0].id === 'physics7a-demo::preamble',
+        `expected preamble id, got ${chunks[0].id}`
+    );
+    assert(
+        chunks[0].prompt.includes('Opening prose'),
+        'preamble should keep lead-in text'
+    );
+    assert(
+        chunks[1].id === 'physics7a-demo::learning-objectives',
+        `unexpected second chunk ${chunks[1].id}`
+    );
+    assert(
+        chunks[2].prompt.includes('every scale'),
+        'later section body should remain'
+    );
 }
 
 function collectProblems(doc) {
@@ -33,6 +74,8 @@ function collectProblems(doc) {
 }
 
 async function main() {
+    testPreamblePreserved();
+
     const manifestEntry = {
         source: 'raw/physics/physics7a-ch01-intro.pdf',
         compiled: 'compiled/physics/physics7a-ch01-intro.json',

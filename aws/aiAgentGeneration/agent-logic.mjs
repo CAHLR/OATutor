@@ -5,7 +5,7 @@ import { basename, dirname, extname, join } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-export const DEFAULT_CHAT_PROMPT = 'PROMPTv2.txt';
+export const DEFAULT_CHAT_PROMPT = 'PROMPTv2a.txt';
 
 // Temporarily disabled for prompt A/B testing (seminar demos).
 // Re-enable before production to restrict Lambda to known prompt files.
