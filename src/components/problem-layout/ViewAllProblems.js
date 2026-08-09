@@ -91,6 +91,11 @@ const useStyles = makeStyles(theme => ({
 
 const BATCH_SIZE = 3;
 
+const getProblemNumber = problemId => {
+  const match = String(problemId || '').match(/(\d+)$/);
+  return match ? Number(match[1]) : Number.POSITIVE_INFINITY;
+};
+
 const ViewAllProblems = ({ translate, history }) => {
   const classes = useStyles();
   const theme = useTheme();
@@ -129,7 +134,14 @@ const ViewAllProblems = ({ translate, history }) => {
   // Filter by objectives
   const memoFiltered = useMemo(() => {
     if (!lesson || problemPool.length === 0) return [];
-    return problemPool.filter(problem => problem.lessonId === lesson.id);
+    return problemPool
+      .filter(problem => problem.lessonId === lesson.id)
+      .sort((problemA, problemB) => {
+        const numberA = getProblemNumber(problemA.id);
+        const numberB = getProblemNumber(problemB.id);
+
+        return numberA === numberB ? 0 : numberA - numberB;
+      });
   }, [lesson, problemPool]);
 
   useEffect(() => {
