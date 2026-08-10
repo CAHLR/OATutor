@@ -1,0 +1,45 @@
+[
+    {
+        "id": "aac8d73ds100-su21-final-Q4i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L2 Regularization",
+        "text": "L2 regularization, also known as ridge regression, adds a penalty equal to the square of the magnitude of coefficients to the loss function. This helps in reducing overfitting by discouraging overly complex models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su21-final-Q4i-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su21-final-Q4i-h1"
+        ],
+        "title": "Effect on Model Variance",
+        "text": "Consider how adding L2 regularization affects the variance of the model. Does it increase or decrease the variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su21-final-Q4i-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aac8d73ds100-su21-final-Q4i-h2"
+        ],
+        "title": "Impact on Training Set",
+        "text": "When L2 regularization is applied, the model complexity is reduced. How does this affect the variance of the model on the training set?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

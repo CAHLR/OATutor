@@ -1,0 +1,58 @@
+[
+    {
+        "id": "aac8d73ds100-su21-final-Q4j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L2 Regularization",
+        "text": "L2 regularization, also known as Ridge Regression, adds a penalty equal to the square of the magnitude of coefficients to the loss function. This helps in reducing overfitting by discouraging overly complex models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su21-final-Q4j-h2",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su21-final-Q4j-h1"
+        ],
+        "title": "Effect on Training Set",
+        "text": "When L2 regularization is applied, the model's complexity is reduced. This can lead to a decrease in the variance of the model's predictions on the training set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su21-final-Q4j-h3",
+        "type": "hint",
+        "dependencies": [
+            "aac8d73ds100-su21-final-Q4j-h2"
+        ],
+        "title": "Bias-Variance Tradeoff",
+        "text": "Regularization introduces a bias into the model, which can help in reducing variance. However, it might also lead to a slight increase in bias.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aac8d73ds100-su21-final-Q4j-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The observational variance decreases."
+        ],
+        "dependencies": [
+            "aac8d73ds100-su21-final-Q4j-h3"
+        ],
+        "title": "Observational Variance",
+        "text": "What happens to the observational variance when L2 regularization is applied?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "TRUE",
+            "The observational variance decreases."
+        ]
+    }
+]
