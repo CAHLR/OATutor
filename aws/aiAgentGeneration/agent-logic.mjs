@@ -12,7 +12,7 @@ export const DEFAULT_CHAT_PROMPT = 'PROMPTv2a.txt';
 // const ALLOWED_CHAT_PROMPTS = new Set([
 //     'PROMPTv1.txt',
 //     'PROMPTv2.txt',
-//     'PROMPTv2a.py',
+//     'PROMPTv2a.txt',
 // ]);
 
 const promptTemplateCache = new Map();
