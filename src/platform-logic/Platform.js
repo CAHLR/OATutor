@@ -1,5 +1,6 @@
 import React from "react";
 import { AppBar, Toolbar } from "@material-ui/core";
+import LinearProgress from "@material-ui/core/LinearProgress";
 import Grid from "@material-ui/core/Grid";
 import ProblemWrapper from "@components/problem-layout/ProblemWrapper.js";
 import LessonSelectionWrapper from "@components/problem-layout/LessonSelectionWrapper.js";
@@ -7,6 +8,7 @@ import { withRouter } from "react-router-dom";
 
 import {
     coursePlans,
+    _coursePlansNoEditor,
     findLessonById,
     LESSON_PROGRESS_STORAGE_KEY,
     MIDDLEWARE_URL,
@@ -171,6 +173,22 @@ class Platform extends React.Component {
   handleLessonClick = (lesson) => {
     if (lesson && lesson.id) {
       this.props.history.push(`/lessons/${lesson.id}`);
+    }
+  };
+
+  handleHierarchyBack = () => {
+    if (this.props.lessonID) {
+      const lesson = findLessonById(this.props.lessonID);
+      const courseIndex = _coursePlansNoEditor.findIndex(
+        (course) => course.courseName === lesson?.courseName
+      );
+
+      this.props.history.push(courseIndex >= 0 ? `/courses/${courseIndex}` : "/");
+      return;
+    }
+
+    if (this.props.courseNum != null) {
+      this.props.history.push("/");
     }
   };
 
@@ -367,16 +385,121 @@ class Platform extends React.Component {
         this.state.currProblem.id
       );
     });
-    this._nextProblem(context);
+
+    if (this.lesson.enableCompletionMode) {
+        const relevantKc = {};
+        Object.keys(this.lesson.learningObjectives).forEach((x) => {
+            relevantKc[x] = context.bktParams[x]?.probMastery ?? 0;
+        });
+
+        const progressData = this.getProgressBarData();
+        const progressPercent = progressData.percent / 100;
+        const allProblemsCompleted = progressData.completed === progressData.total;
+
+        this.updateCanvas(progressPercent, relevantKc);
+
+        if (allProblemsCompleted) {
+            console.debug("Lesson complete; showing completion screen");
+            this.setState({ status: "completed" });
+        } else {
+            this._nextProblem(context);
+        }
+    } else {
+        this._nextProblem(context);
+    }
+
+
+    // this._nextProblem(context);
   };
 
   displayMastery = (mastery) => {
     this.setState({ mastery: mastery });
-    if (mastery >= MASTERY_THRESHOLD) {
+    if (!this.lesson?.enableCompletionMode && mastery >= MASTERY_THRESHOLD) {
       // toast.success("You've successfully completed this assignment!", {
       //   toastId: ToastID.successfully_completed_lesson.toString(),
       // });
       this.setState({ status: "completed" });
+    }
+  };
+
+  updateCanvas = async (mastery, components) => {
+    if (!this.context.jwt) return;
+
+    console.debug("updating canvas with score", mastery);
+    const [err, response] = await to(
+      fetch(`${MIDDLEWARE_URL}/postScore`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          token: this.context?.jwt || "",
+          mastery,
+          components,
+        }),
+      })
+    );
+
+    if (err || !response) {
+      toast.error(
+        `An unknown error occurred trying to submit this problem. If reloading does not work, please contact us.`,
+        { toastId: ToastID.submit_grade_unknown_error.toString() }
+      );
+      console.debug(err, response);
+      return;
+    }
+
+    if (response.status === 200) {
+      console.debug("successfully submitted grade to Canvas");
+      return;
+    }
+
+    let responseText = "";
+    try {
+      responseText = await response.text();
+    } catch (_) {}
+
+    switch (response.status) {
+      case 400: {
+        let [message, ...addInfo] = responseText.split("|");
+        if (Array.isArray(addInfo) && addInfo.length > 0 && addInfo[0]) {
+          try {
+            addInfo = JSON.parse(addInfo[0]);
+          } catch (_) {}
+        }
+        switch (message) {
+          case "lost_link_to_lms":
+            toast.error(
+              "It seems like the link back to your LMS has been lost. Please re-open the assignment to make sure your score is saved.",
+              { toastId: ToastID.submit_grade_link_lost.toString() }
+            );
+            break;
+          case "unable_to_handle_score":
+            toast.warn(
+              "Something went wrong and we can't update your score right now. Your progress will be saved locally so you may continue working.",
+              { toastId: ToastID.submit_grade_unable.toString(), closeOnClick: true }
+            );
+            break;
+          default:
+            toast.error(`Error: ${responseText}`, { closeOnClick: true });
+        }
+        break;
+      }
+      case 401:
+        toast.error(
+          `Your session has either expired or been invalidated, please reload the page to try again.`,
+          { toastId: ToastID.expired_session.toString() }
+        );
+        break;
+      case 403:
+        toast.error(
+          `You are not authorized to make this action. (Are you a registered student?)`,
+          { toastId: ToastID.not_authorized.toString() }
+        );
+        break;
+      default:
+        toast.error(
+          `An unknown error occurred trying to submit this problem. If reloading does not work, please contact us.`,
+          { toastId: ToastID.set_lesson_unknown_error.toString() }
+        );
     }
   };
 
@@ -446,6 +569,18 @@ class Platform extends React.Component {
     return map;
   };
 
+  getProgressBarData = () => {
+    if (!this.lesson) return { completed: 0, total: 0, percent: 0 };
+
+    const problems = this.problemIndex.problems.filter(
+      ({ lesson }) => String(lesson).includes(this.lesson.topics)
+    );
+    const completed = this.completedProbs.size;
+    const total = problems.length;
+    const percent = total > 0 ? Math.round((completed / total) * 100) : 0;
+    return { completed, total, percent };
+  };
+
   render() {
     const { translate, width } = this.props;
     const { showPopup } = this.state;
@@ -466,6 +601,11 @@ class Platform extends React.Component {
     const lessonMasteryMap = this.getLessonMasteryMap(tocCourseName);
     const inLesson = Boolean(this.props.lessonID);
     const showToc = inLesson && !this.isFromCanvas;
+    const progressData = this.getProgressBarData();
+    const isCompletionMode = this.lesson?.enableCompletionMode;
+    const barPercent = isCompletionMode
+      ? progressData.percent
+      : Math.round((this.state.mastery || 0) * 100);
 
     const CONTAINER_MAX_WIDTH = "100vw";
     const CONTAINER_STYLE = {
@@ -637,7 +777,7 @@ class Platform extends React.Component {
                         gap: "8xpx",
                       }}
                     >
-                      <IconButton onClick={() => this.props.history.goBack()} aria-label="Back" style={{ padding: 2 }}>
+                      <IconButton onClick={this.handleHierarchyBack} aria-label="Back" style={{ padding: 2 }}>
                         <img src={leftArrow} alt="Back Arrow" />
                       </IconButton>
 
@@ -652,7 +792,7 @@ class Platform extends React.Component {
                         gap: "8px",
                       }}
                     >
-                      <IconButton onClick={() => this.props.history.goBack()} aria-label="Back" style={{ padding: 2 }}>
+                      <IconButton onClick={this.handleHierarchyBack} aria-label="Back" style={{ padding: 2 }}>
                         <img src={leftArrow} alt="Back Arrow" />
                       </IconButton>
 
@@ -742,7 +882,9 @@ class Platform extends React.Component {
                               style={{ display: "block" }}
                             />
                             <span style={{ fontFamily: "Inter, sans-serif", fontSize: 16, fontWeight: 500, color: "#000" }}>
-                              Lesson Mastery: {Math.round((this.state.mastery || 0) * 100)}%
+                              {isCompletionMode
+                                ? `Lesson Completion: ${barPercent}%`
+                                : `Lesson Mastery: ${barPercent}%`}
                             </span>
                           </div>
 
@@ -763,24 +905,35 @@ class Platform extends React.Component {
                                       lineHeight: "28px",
                                     }}
                                   >
-                                    <div style={{ fontFamily: "Inter, sans-serif", fontSize: 14, fontWeight: 600 }}>Learning Objectives:</div>
-                                    {(() => {
-                                      const keys = Object.keys(this.lesson?.learningObjectives || {});
-                                      const mastered = keys.filter(
-                                        (k) => (this.context.bktParams[k]?.probMastery ?? 0) >= MASTERY_THRESHOLD
-                                      ).length;
-                                      return (
-                                        <div style={{ display: "flex", alignItems: "center", gap: 4, whiteSpace: "nowrap" }}>
-                                          <img src={`${process.env.PUBLIC_URL}/static/images/icons/mastery-bolt.png`} alt="" width={20} height={20} />
-                                          <div style={{ fontFamily: "Inter, sans-serif", fontSize: 14, fontWeight: 500 }}>
-                                            {mastered}/{keys.length}
-                                          </div>
+                                    <div style={{ fontFamily: "Inter, sans-serif", fontSize: 14, fontWeight: 600 }}>
+                                      {isCompletionMode ? "Progress" : "Learning Objectives:"}
+                                    </div>
+                                    {isCompletionMode ? (
+                                      <div style={{ display: "flex", alignItems: "center", gap: 4, whiteSpace: "nowrap" }}>
+                                        <img src={`${process.env.PUBLIC_URL}/static/images/icons/mastery-bolt.png`} alt="" width={20} height={20} />
+                                        <div style={{ fontFamily: "Inter, sans-serif", fontSize: 14, fontWeight: 500 }}>
+                                          {progressData.completed}/{progressData.total}
                                         </div>
-                                      );
-                                    })()}
+                                      </div>
+                                    ) : (
+                                      (() => {
+                                        const keys = Object.keys(this.lesson?.learningObjectives || {});
+                                        const mastered = keys.filter(
+                                          (k) => (this.context.bktParams[k]?.probMastery ?? 0) >= MASTERY_THRESHOLD
+                                        ).length;
+                                        return (
+                                          <div style={{ display: "flex", alignItems: "center", gap: 4, whiteSpace: "nowrap" }}>
+                                            <img src={`${process.env.PUBLIC_URL}/static/images/icons/mastery-bolt.png`} alt="" width={20} height={20} />
+                                            <div style={{ fontFamily: "Inter, sans-serif", fontSize: 14, fontWeight: 500 }}>
+                                              {mastered}/{keys.length}
+                                            </div>
+                                          </div>
+                                        );
+                                      })()
+                                    )}
                                   </div>
 
-                                  {Object.entries(this.lesson?.learningObjectives || {}).map(([kc]) => {
+                                  {!isCompletionMode && Object.entries(this.lesson?.learningObjectives || {}).map(([kc]) => {
                                     const mastery = this.context.bktParams[kc]?.probMastery ?? 0;
                                     const pct = Math.round(mastery * 100);
                                     const label = kc.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
@@ -840,7 +993,7 @@ class Platform extends React.Component {
                               {/* Track fills the minmax column width (never 0, never > MAX) */}
                               <div
                                 role="progressbar"
-                                aria-valuenow={Math.round((this.state.mastery || 0) * 100)}
+                                aria-valuenow={barPercent}
                                 aria-valuemin={0}
                                 aria-valuemax={100}
                                 style={{
@@ -857,7 +1010,7 @@ class Platform extends React.Component {
                                 {/* Filled progress */}
                                 <div
                                   style={{
-                                    width: `${Math.round((this.state.mastery || 0) * 100)}%`,
+                                    width: `${barPercent}%`,
                                     height: "100%",
                                     backgroundColor: "#FFFFFF",
                                     borderRadius: 24,
@@ -867,12 +1020,12 @@ class Platform extends React.Component {
 
                                 {/* Avatar rider on progress bar */}
                                 <img
-                                  src={`${process.env.PUBLIC_URL}/static/images/icons/avatar_progress_bar.svg`} 
-                                  alt=""    
+                                  src={`${process.env.PUBLIC_URL}/static/images/icons/avatar_progress_bar.svg`}
+                                  alt=""
                                   style={{
                                     position: "absolute",
                                     top: "50%",
-                                    left: `${Math.round((this.state.mastery || 0) * 100)}%`,
+                                    left: `${barPercent}%`,
                                     transform: "translate(-110%, -50%)",
                                     height: 24,
                                     width: 24,
@@ -948,6 +1101,7 @@ class Platform extends React.Component {
               ""
             )}
 
+
             {this.state.status === "courseSelection" ? (
               <LessonSelectionWrapper
                 selectLesson={this.selectLesson}
@@ -1017,7 +1171,7 @@ class Platform extends React.Component {
                 }}
               >
                 <img
-                  src={`${process.env.PUBLIC_URL}/static/images/icons/completion_avatar.png"`}
+                  src={`${process.env.PUBLIC_URL}/static/images/icons/completion_avatar.svg`}
                   alt="Completion Avatar"
                   width={120}
                 />

@@ -758,7 +758,11 @@ class Problem extends React.Component {
                 relevantKc[x] = this.bktParams[x].probMastery;
             });
 
-            this.updateCanvas(score, relevantKc);
+            // In completion mode, Platform.js posts the completion percentage
+            // after each problem is finished to avoid double-posting.
+            if (!this.props.lesson?.enableCompletionMode) {
+                this.updateCanvas(score, relevantKc);
+            }
         }
 
         const nextStepStates = {
@@ -1713,7 +1717,7 @@ class Problem extends React.Component {
                                                     giveStuBottomHint={this.giveStuBottomHint}
                                                     giveDynamicHint={this.giveDynamicHint}
                                                     prompt_template={this.prompt_template}
-                                                    showCardHeader={false}
+                                                    showCardHeader={true}
                                                     hintToggleTrigger={this.state.hintToggleTrigger}
                                                     hintToggleIndex={this.state.hintToggleIndex}
                                                     hintPortalTarget={
