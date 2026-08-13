@@ -420,10 +420,6 @@ class ProblemCard extends React.Component {
             activeHintType: togglingOn ? "normal" : "none",
         };
 
-        if (togglingOn && !this.giveDynamicHint && !this.state.displayHints) {
-            stateUpdates.enableHintGeneration = false;
-        }
-
         this.setState(stateUpdates, () => {
             if (this.props.onHintToggle) {
                 this.props.onHintToggle(
@@ -933,8 +929,13 @@ class ProblemCard extends React.Component {
                                     <center>
                                         <IconButton
                                             aria-label="hints"
+                                            aria-expanded={this.state.activeHintType === "normal"}
                                             onClick={this.toggleHints}
-                                            title="View available hints"
+                                            title={
+                                                this.state.activeHintType === "normal"
+                                                    ? "Hide hints"
+                                                    : "View available hints"
+                                            }
                                             disabled={
                                                 !this.state.enableHintGeneration
                                             }

@@ -283,7 +283,7 @@ const ViewAllProblems = ({ translate, history }) => {
                 autoScroll={false}
                 compactHeader={true}
                 hideHintPanel={true}
-                disableAgent={true}
+                hideAiTutor={true}
                 problem={problem}
                 lesson={lesson}
                 seed={seed}

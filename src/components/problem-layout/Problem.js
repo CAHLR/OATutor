@@ -1453,9 +1453,9 @@ class Problem extends React.Component {
             return <div></div>;
         }
 
-        const chatDisplayMode = this.props.disableAgent
+        const chatDisplayMode = this.props.hideAiTutor
             ? 'Off'
-            : (this.props.lesson?.chat_display_mode || 'Off');
+            : this.props.lesson?.chat_display_mode || 'Off';
         const isMobile = this.props.responsive?.isMobile ?? false;
         const showHintPanel = !hideHintPanel && chatDisplayMode !== 'Avatar';
         const showSideHintPanel = showHintPanel && !isMobile;
@@ -1721,7 +1721,7 @@ class Problem extends React.Component {
                                                     hintToggleTrigger={this.state.hintToggleTrigger}
                                                     hintToggleIndex={this.state.hintToggleIndex}
                                                     hintPortalTarget={
-                                                        chatDisplayMode === 'Avatar'
+                                                        hideHintPanel || chatDisplayMode === 'Avatar'
                                                             ? null
                                                             : this.hintPortalRef
                                                     }
