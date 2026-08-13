@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
@@ -9,13 +9,10 @@ import styles from './common-styles.js';
 import IconButton from '@material-ui/core/IconButton';
 import { _coursePlansNoEditor, ThemeContext, SITE_NAME, SHOW_COPYRIGHT } from '../../config/config.js';
 import Spacer from "../Spacer";
-import HelpOutlineOutlinedIcon from "@material-ui/icons/HelpOutlineOutlined";
 import { Typography } from "@material-ui/core";
 import { IS_STAGING_OR_DEVELOPMENT } from "../../util/getBuildType";
 import BuildTimeIndicator from "@components/BuildTimeIndicator";
 import withTranslation from "../../util/withTranslation.js";
-import Popup from '../Popup/Popup.js';
-import About from '../../pages/Posts/About.js';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
 import { LocalizationConsumer } from '../../util/LocalizationContext';
 import { withResponsive } from '../../util/ResponsiveContext';
@@ -25,39 +22,17 @@ class LessonSelection extends React.Component {
 
     constructor(props, context) {
         super(props);
-        // const { courseNum, setLanguage } = this.props;
-
-        // if (courseNum != null) {
-        //     const course = _coursePlansNoEditor[parseInt(courseNum)];
-        //     if (course && course.language) {
-        //         setLanguage(course.language);
-        //     }
-        // }
-        
-        // if (props.history.location.pathname == '/') {
-        //     const defaultLocale = localStorage.getItem('platformLanguage');
-        //     setLanguage(defaultLocale)
-        // }
 
         this.user = context.user || {}
         this.isPrivileged = !!this.user.privileged
 
         this.coursePlans = _coursePlansNoEditor;
-        this.togglePopup = this.togglePopup.bind(this);
 
         this.state = {
             preparedRemoveProgress: false,
             removedProgress: false,
-            showPopup: false
         }
     }
-
-    togglePopup = () => {
-        console.log("Toggling popup visibility");
-        this.setState((prevState) => ({
-          showPopup: !prevState.showPopup,
-        }));
-      };
       
     removeProgress = () => {
         this.setState({ removedProgress: true });
@@ -80,7 +55,6 @@ class LessonSelection extends React.Component {
         const { classes, courseNum } = this.props;
         const isMobile = this.props.responsive?.isMobile ?? false;
         const selectionMode = courseNum == null ? "course" : "lesson"
-        const { showPopup } = this.state;
 
         if (selectionMode === "lesson" && courseNum >= this.coursePlans.length) {
             return <Box width={'100%'} textAlign={'center'} pt={4} pb={4}>
@@ -260,21 +234,6 @@ class LessonSelection extends React.Component {
                         <div style={{ marginLeft: 20, fontSize: 16 }}>
                             {SHOW_COPYRIGHT && <>© {new Date().getFullYear()} {SITE_NAME}</>}
                         </div>
-
-
-                        {/* <div style={{ display: "flex", flexGrow: 1, marginRight: 20, justifyContent: "flex-end" }}>
-                            <IconButton aria-label="about" title={`About ${SITE_NAME}`}
-                                onClick={this.togglePopup}>
-                                <HelpOutlineOutlinedIcon htmlColor={"#000"} style={{
-                                    fontSize: 36,
-                                    margin: -2
-                                }}/>
-                            </IconButton>
-                        </div>
-                        <Popup isOpen={showPopup} onClose={this.togglePopup}>
-                            <About />
-                        </Popup> */}
-
                     </div>
                 </footer>
 

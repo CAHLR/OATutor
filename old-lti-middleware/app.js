@@ -105,7 +105,11 @@ const getJWT = (provider, consumer_secret, consumer_key, linkedLesson, privilege
         linkedLesson,
 
         // indicates if user is able to edit the linkage
-        privileged
+        privileged,
+
+        // LMS platform (e.g. "canvas") — used by the SPA to adjust UI
+        tool_consumer_info_product_family_code:
+            provider.body.tool_consumer_info_product_family_code || null,
     }, consumer_secret, {
         algorithm: jwtAlgorithm,
         issuer: consumer_key,

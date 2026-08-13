@@ -10,7 +10,7 @@ const coursePlansPath = path.join(
   "coursePlans.json"
 );
 
-const DEFAULT_CHAT_DISPLAY_MODE = "Off";
+const DEFAULT_CHAT_DISPLAY_MODE = "Window";
 const VALID_CHAT_DISPLAY_MODES = new Set(["Off", "Window", "Full", "Avatar"]);
 
 function main() {

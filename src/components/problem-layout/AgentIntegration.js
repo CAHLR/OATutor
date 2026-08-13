@@ -25,8 +25,15 @@ class AgentIntegration extends React.Component {
             condition,
             showSuggestedQuestions,
             hintsOpen,
+            drawerOpen,
+            mathKeyboardOpen,
             closeRequest,
             onChatVisibilityChange,
+            hidePromoDueToOverlap,
+            onPromoLayoutChange,
+            onPromoEligibilityChange,
+            applyHelpPenalty,
+            helpPenaltyMode,
         } = this.props;
 
         return (
@@ -46,8 +53,15 @@ class AgentIntegration extends React.Component {
                 condition={condition}
                 showSuggestedQuestions={showSuggestedQuestions}
                 hintsOpen={hintsOpen}
+                drawerOpen={drawerOpen}
+                mathKeyboardOpen={mathKeyboardOpen}
                 closeRequest={closeRequest}
                 onChatVisibilityChange={onChatVisibilityChange}
+                hidePromoDueToOverlap={hidePromoDueToOverlap}
+                onPromoLayoutChange={onPromoLayoutChange}
+                onPromoEligibilityChange={onPromoEligibilityChange}
+                applyHelpPenalty={applyHelpPenalty}
+                helpPenaltyMode={helpPenaltyMode}
             />
         );
     }
