@@ -153,15 +153,18 @@ const ViewAllProblems = ({ translate, history }) => {
     setVisibleProblems([]);
     if (filteredProblems.length === 0) return;
     let idx = 0;
+    let timeoutId;
     function batch() {
+      const nextBatch = filteredProblems.slice(idx, idx + BATCH_SIZE);
+      idx += BATCH_SIZE;
       setVisibleProblems(prev => [
         ...prev,
-        ...filteredProblems.slice(idx, idx + BATCH_SIZE)
+        ...nextBatch
       ]);
-      idx += BATCH_SIZE;
-      if (idx < filteredProblems.length) setTimeout(batch, 16);
+      if (idx < filteredProblems.length) timeoutId = setTimeout(batch, 16);
     }
     batch();
+    return () => clearTimeout(timeoutId);
   }, [filteredProblems]);
 
   // Safely build topics string
