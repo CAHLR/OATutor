@@ -1405,7 +1405,7 @@ class Problem extends React.Component {
                                                     hintToggleTrigger={this.state.hintToggleTrigger}
                                                     hintToggleIndex={this.state.hintToggleIndex}
                                                     hintPortalTarget={
-                                                        chatDisplayMode === 'Avatar'
+                                                        hideHintPanel || chatDisplayMode === 'Avatar'
                                                             ? null
                                                             : this.hintPortalRef
                                                     }
