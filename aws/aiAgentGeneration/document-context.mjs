@@ -357,9 +357,13 @@ export function toStudentFacingMaterialTitle(documentId, manifestEntry = {}) {
         ? `Data ${course.match(/\d+/)[0]}`
         : /^physics7a$/i.test(course)
           ? 'Physics 7A'
-          : course
-            ? String(course)
-            : '';
+          : /^chem1a$/i.test(course)
+            ? 'Chemistry 1A'
+            : /^math1b$/i.test(course)
+              ? 'Math 1B'
+              : course
+                ? String(course)
+                : '';
 
     let title = String(manifestEntry.title || documentId || 'course materials')
         .replace(/\s*Solutions?\s*$/i, '')
