@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a590f38trigonometric63a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recognize quadratic form",
+        "text": "This equation resembles a quadratic equation. Consider a substitution to simplify it.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric63a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$u=cos(x)$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric63a-h1"
+        ],
+        "title": "Identify substitution",
+        "text": "What substitution can you make to transform 5$$\\cos**2(x)$$+3$$\\cos(x)$$-1=0 into a standard quadratic equation?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric63a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric63a-h1"
+        ],
+        "title": "Solve the quadratic equation",
+        "text": "After substitution, solve the resulting quadratic equation for u using the quadratic formula.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric63a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$u=\\frac{-3$$ $$\\pm$$ \\sqrt{29}}{10}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric63a-h2"
+        ],
+        "title": "Find solutions for u",
+        "text": "What are the solutions for u in $$5u^2$$ + 3u - $$1$$ $$=$$ 0?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$u=\\frac{-3$$ $$\\pm$$ \\sqrt{29}}{10}$$",
+            "$$u=\\frac{3$$ $$\\pm$$ \\sqrt{29}}{10}$$",
+            "$$u=\\frac{-3$$ $$\\pm$$ \\sqrt{19}}{10}$$",
+            "$$u=\\frac{-3$$ $$\\pm$$ \\sqrt{29}}{5}$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric63a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric63a-h2"
+        ],
+        "title": "Find the principal value",
+        "text": "Consider the positive value for u. Use the inverse cosine function to find the principal value for $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric63a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x=\\arccos(\\frac{-3+\\sqrt{29}}{10})$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric63a-h3"
+        ],
+        "title": "Express $$x$$ using arccos",
+        "text": "If $$\\cos(x)=\\frac{-3+\\sqrt{29}}{10}$$, $$how$$ $$do$$ $$you$$ $$express$$ $$x$$ $$using$$ $$the$$ $$inverse$$ $$cosine$$ $$function$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$x=\\arccos(\\frac{-3+\\sqrt{29}}{10})$$",
+            "$$x=\\arccos(\\frac{3+\\sqrt{29}}{10})$$",
+            "$$x=\\arcsin(\\frac{-3+\\sqrt{29}}{10})$$",
+            "$$x=\\frac{-3+\\sqrt{29}}{10}$$"
+        ]
+    }
+]

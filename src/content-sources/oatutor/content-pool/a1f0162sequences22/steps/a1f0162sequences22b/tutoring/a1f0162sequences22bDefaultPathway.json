@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a1f0162sequences22b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitution",
+        "text": "Substitute $$n=2$$ into the formula",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1f0162sequences22b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1f0162sequences22b-h1"
+        ],
+        "title": "Simplification",
+        "text": "Calculate the expression a_2=(5*2)/((2+2)!)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1f0162sequences22b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "a1f0162sequences22b-h2"
+        ],
+        "title": "Calculate the numerator",
+        "text": "What is $$5\\times2$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1f0162sequences22b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$24$$"
+        ],
+        "dependencies": [
+            "a1f0162sequences22b-h3"
+        ],
+        "title": "Calculate the denominator",
+        "text": "((2+2)!) is equal to 4! What is $$4\\times3\\times2\\times1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a1f0162sequences22b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a1f0162sequences22b-h4"
+        ],
+        "title": "Putting It Together",
+        "text": "Put the numerator and denominator together to create a fraction",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

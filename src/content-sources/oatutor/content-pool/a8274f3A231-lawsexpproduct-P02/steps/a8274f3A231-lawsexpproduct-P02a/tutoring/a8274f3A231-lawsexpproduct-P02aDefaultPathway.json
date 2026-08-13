@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a8274f3A231-lawsexpproduct-P02a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$a**{1/n}\\cdot b**{1/n}=\\left(ab\\right)**{1/n}$$"
+        ],
+        "dependencies": [],
+        "title": "Substitute the power",
+        "text": "Substitute the power $$\\frac{1}{n}$$ into $$a^c b^c=$$ $$\\left(ab\\right)**c$$",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$a**{1/n}\\cdot b**{1/m}=ab**{1/mn}$$",
+            "$$a**{1/n}\\cdot b**{1/n}=\\left(ab\\right)**{1/n}$$",
+            "$$a**{1/n}\\cdot a**{1/m}=a**{\\frac{1}{n+m}}$$",
+            "$$a**{1/n}\\cdot b**{1/n}=\\left(a+b\\right)**{1/n}$$"
+        ]
+    },
+    {
+        "id": "a8274f3A231-lawsexpproduct-P02a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Same exponent, different bases"
+        ],
+        "dependencies": [
+            "a8274f3A231-lawsexpproduct-P02a-h1"
+        ],
+        "title": "Different bases, same exponent",
+        "text": "You can combine products of exponents that have the same base and different exponents, or the same exponent and different bases. Which case do we have here?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Same base, different exponents",
+            "Same exponent, different bases"
+        ]
+    },
+    {
+        "id": "a8274f3A231-lawsexpproduct-P02a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8274f3A231-lawsexpproduct-P02a-h2"
+        ],
+        "title": "Rewrite in radical format",
+        "text": "Recall that $$\\sqrt[n]{b}=b^{\\frac{1}{n}}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8274f3A231-lawsexpproduct-P02a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8274f3A231-lawsexpproduct-P02a-h3"
+        ],
+        "title": "Make the substitutions",
+        "text": "$$a**{1/n}\\cdot b**{1/n}=\\sqrt[n]{a}\\sqrt[n]{b}$$ \\n $$\\left(ab\\right)**{1/n}=\\sqrt[n]{ab}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

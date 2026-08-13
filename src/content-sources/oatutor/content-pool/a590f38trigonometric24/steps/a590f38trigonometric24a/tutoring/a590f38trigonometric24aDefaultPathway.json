@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a590f38trigonometric24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Isolate the trigonometric function",
+        "text": "The first step to solving a trigonometric equation is to isolate the trigonometric function (e.g., $$\\sin(\\theta)$$, $$\\cos(\\theta)$$, $$\\tan(\\theta)$$).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric24a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\sqrt{3}}{2}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric24a-h1"
+        ],
+        "title": "Isolate $$\\sin(\\theta)$$",
+        "text": "What is the value of $$\\sin(\\theta)$$ after isolating it?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\sqrt{3}}{2}$$",
+            "$$-\\frac{\\sqrt{3}}{2}$$",
+            "$$\\frac{\\sqrt{2}}{2}$$",
+            "$$\\frac{1}{2}$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric24a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric24a-h1"
+        ],
+        "title": "Reference angle",
+        "text": "Recall the reference angle for $$\\sin(\\theta)=\\frac{\\sqrt{3}}{2}$$ from the unit circle.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric24a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{3}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric24a-h2"
+        ],
+        "title": "Find the reference angle",
+        "text": "What is the reference angle $$\\alpha$$ such that $$\\sin(\\alpha)=\\frac{\\sqrt{3}}{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric24a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric24a-h2"
+        ],
+        "title": "Identify quadrants",
+        "text": "Determine the quadrants where the sine function is positive.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric24a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "I, II"
+        ],
+        "dependencies": [
+            "a590f38trigonometric24a-h3"
+        ],
+        "title": "Quadrants for positive sine",
+        "text": "In which quadrants is the sine function positive?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "I, II",
+            "II, III",
+            "III, IV",
+            "I, IV"
+        ]
+    }
+]

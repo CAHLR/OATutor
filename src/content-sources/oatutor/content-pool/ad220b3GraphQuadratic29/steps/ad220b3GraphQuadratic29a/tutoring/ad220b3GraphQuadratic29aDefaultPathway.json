@@ -1,0 +1,101 @@
+[
+    {
+        "id": "ad220b3GraphQuadratic29a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpret the Meaning of h(t)",
+        "text": "The given h(t) describes the relationship between time (t) and height. At time $$t$$, the ball will be h(t) feet above the ground. So finding the maximum height and the time that the ball reach the maximum height is the same as finding the maximum point of the function h(t).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad220b3GraphQuadratic29a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad220b3GraphQuadratic29a-h1"
+        ],
+        "title": "Decide the Shape of Parabola",
+        "text": "Given any parabola in the form $${ax}^2+bx+c$$, a is called the leading coefficient of the parabola. If a is negative, the parabola opens downward. If a is positive, the parabola opens upward.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad220b3GraphQuadratic29a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad220b3GraphQuadratic29a-h2"
+        ],
+        "title": "Decide the Shape of Parabola",
+        "text": "Since a is negative, the parabola opens downward. So the quadratic equation has a maximum.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad220b3GraphQuadratic29a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad220b3GraphQuadratic29a-h3"
+        ],
+        "title": "Find the Equation For Axis of Symmetry",
+        "text": "Given $${ax}^2+bx+c$$, the axis of symmetry for the parabola is $$x=\\frac{-b}{2a}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad220b3GraphQuadratic29a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ad220b3GraphQuadratic29a-h4"
+        ],
+        "title": "Find the Equation For Axis of Symmetry",
+        "text": "In the given parabola, $$a=-16$$, $$b=122$$. The axis of symmetry is $$t=3.813$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad220b3GraphQuadratic29a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ad220b3GraphQuadratic29a-h5"
+        ],
+        "title": "Find the $$y$$ coordinate of Vertex",
+        "text": "The maximum or minimum point of the parabola is located on the axis of symmetry. Given that $$x=a$$ is the axis of symmetry, we can find the $$y$$ coordinate of the maximum or minimum point by computing f(a).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad220b3GraphQuadratic29a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$232.6$$"
+        ],
+        "dependencies": [
+            "ad220b3GraphQuadratic29a-h6"
+        ],
+        "title": "Find the $$y$$ coordinate of Vertex",
+        "text": "Subsitute $$t=3.813$$ into $$h(t)=-16t^2+122t$$ , $$h(3.813)=$$? Please enter your answer in decimal form and round it to nearest tenth.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad220b3GraphQuadratic29a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ad220b3GraphQuadratic29a-h7"
+        ],
+        "title": "Put The Answer Into (x,y)",
+        "text": "We know the maximum point of the parabola exists at $$t=3.813$$ and $$h(3.813)=232.6$$. $$t=3.813$$ is the time that the arrow reaches it maximum height of $$h(3.813)=232.6$$. We need to around the answer to nearest tenth. So we have the final answer as $$(3.8$$, $$232.6)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

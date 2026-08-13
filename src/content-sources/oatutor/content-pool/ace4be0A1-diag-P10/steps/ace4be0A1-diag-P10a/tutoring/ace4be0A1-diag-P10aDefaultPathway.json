@@ -1,0 +1,84 @@
+[
+    {
+        "id": "ace4be0A1-diag-P10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find a common denominator",
+        "text": "To perform the operation $$\\frac{1}{x+h}-\\frac{1}{x}$$, we find a common denominator. That common denominator is the product of the two denominators $$x\\left(x+h\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P10a-h1"
+        ],
+        "title": "Find a common denominator",
+        "text": "To create an expression with common denominators, we multiply the first term by $$\\frac{x}{x}$$ and the second term by $$\\frac{x+h}{x+h}$$. \\n $$\\frac{1}{x+h} \\frac{x}{x}-\\frac{1}{x} \\frac{x+h}{x+h}=\\frac{x}{x\\left(x+h\\right)}-\\frac{x+h}{x\\left(x+h\\right)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P10a-h2"
+        ],
+        "title": "Add numerators",
+        "text": "Apply the rule for adding or subracting fraction with a common denominator: \\n $$\\frac{a}{c}\\pm \\frac{b}{c}=\\frac{a\\pm b}{c}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P10a-h3"
+        ],
+        "title": "Add numerators",
+        "text": "$$\\frac{x}{x\\left(x+h\\right)}-\\frac{x+h}{x\\left(x+h\\right)}=$$ $$\\frac{x-(x+h)}{x(x+h)}$$ $$=\\frac{\\left(-h\\right)}{x\\left(x+h\\right)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P10a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P10a-h4"
+        ],
+        "title": "Turn denominator into a fraction",
+        "text": "Write $$\\frac{\\frac{1}{x+h}-\\frac{1}{x}}{h}=\\frac{\\frac{-h}{x(x+h)}}{h}=\\frac{\\frac{-h}{x(x+h)}}{\\frac{h}{1}}.$$ Here, we used the fact tha $$h=\\frac{h}{1}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P10a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P10a-h5"
+        ],
+        "title": "Divide fractions",
+        "text": "To divide by a fraction, we multiply by the reciprocal.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P10a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P10a-h6"
+        ],
+        "title": "Divide fractions",
+        "text": "$$\\frac{\\frac{-h}{x(x+h)}}{\\frac{h}{1}}=\\frac{-h}{x(x+h)}\\left(\\frac1{h}\\right)=\\frac{-1}{x(x+h)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

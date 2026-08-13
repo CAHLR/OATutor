@@ -1,0 +1,41 @@
+[
+    {
+        "id": "ae45a45int12b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Order of Operation",
+        "text": "Operate the exponential before nigative sign",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae45a45int12b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$64$$"
+        ],
+        "dependencies": [
+            "ae45a45int12b-h1"
+        ],
+        "title": "Exponential",
+        "text": "What is $$2^6$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae45a45int12b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ae45a45int12b-h2"
+        ],
+        "title": "Order of Operation",
+        "text": "Multiply by the negative sign in front",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

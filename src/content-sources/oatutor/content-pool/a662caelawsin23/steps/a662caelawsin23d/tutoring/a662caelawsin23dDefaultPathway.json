@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a662caelawsin23d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Ambiguous case for SSA",
+        "text": "If $$\\sin$$ $$\u03b3$$ is positive, there are two possible angles for $$\\gamma$$: $$an$$ $$acute$$ $$angle$$ $$and$$ $$an$$ $$obtuse$$ $$angle$$ ($$180**{\\circ} $$-$$ $$\\text{acute$$ $$angle}\\$\\$)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin23d-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "118.8**{\\circ}"
+        ],
+        "dependencies": [
+            "a662caelawsin23d-h1"
+        ],
+        "title": "Obtuse angle calculation",
+        "text": "Given the acute angle $$\\gamma_1 $$=$$ 61.2**{\\circ}$$, $$what$$ $$is$$ $$the$$ $$obtuse$$ $$angle$$ $$\\gamma_2$$? $$Round$$ $$to$$ $$the$$ $$nearest$$ $$tenth$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin23d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin23d-h1"
+        ],
+        "title": "Checking validity",
+        "text": "Ensure that $$\\alpha$$ + $$\\gamma_2$$ < 180**{\\circ}$$ for the second triangle to be valid.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

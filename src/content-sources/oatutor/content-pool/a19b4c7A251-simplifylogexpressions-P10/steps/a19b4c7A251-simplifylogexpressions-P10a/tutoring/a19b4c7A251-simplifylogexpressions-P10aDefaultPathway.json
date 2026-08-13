@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Expand the cubic",
+        "text": "Notice that the argument in the first logarithm is a perfect cube. We can apply repeated distribution in two steps: $$\\left(x-2\\right)^2=x^2-4x+4$$ \\n $$\\left(x^2-4x+4\\right) \\left(x-2\\right)=x^3-4x^2+4x+\\left(-2x^2+8x-8\\right)=x^3-6x^2+12x-8$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P10a-h1"
+        ],
+        "title": "Substitute the factored form",
+        "text": "Substitute this factored form back into the expression: $$\\log_5((x-2)**3)-\\log_5(x-2)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P10a-h2"
+        ],
+        "title": "Apply the law of logarithms for quotients",
+        "text": "Use the law for quotients $$\\log_b(a)-\\log_b(c)=\\log_b(a/c)$$ to combine the terms: $$\\log_5\\left(\\frac{(x-2)**3}{x-2}\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P10a-h3"
+        ],
+        "title": "Cancel common factors",
+        "text": "Cancel the common factor of $$(x-2)$$ in the numerator and denominator to simplify the fraction: $$\\log_5((x-2)**2).$$ Therefore, $$P(x)=\\left(x-2\\right)^2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

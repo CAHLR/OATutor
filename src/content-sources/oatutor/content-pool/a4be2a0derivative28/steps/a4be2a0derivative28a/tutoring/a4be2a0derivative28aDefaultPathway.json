@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a4be2a0derivative28a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpret",
+        "text": "C(20) is the cost of producing $$15$$ cellphones. C(21) is the cost of producing $$16$$ cellphones. To find the cost of the 21st cellphone, we need to subtract them.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4be2a0derivative28a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4be2a0derivative28a-h1"
+        ],
+        "title": "C(20)",
+        "text": "$$C(20)={20}^2-4\\times20+1000=1320$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4be2a0derivative28a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4be2a0derivative28a-h2"
+        ],
+        "title": "C(21)",
+        "text": "$$C(21)={21}^2-4\\times21+1000=1357$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4be2a0derivative28a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4be2a0derivative28a-h3"
+        ],
+        "title": "Difference",
+        "text": "$$C(21)-C(20)=1357-1320=37$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

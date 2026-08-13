@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a7b6395A141-algprac-P07a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor numerators",
+        "text": "$$\\frac{(x+3)(x+2)}{x+2}+\\frac{(x+3)(x-3)}{x-3}=2x+k$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7b6395A141-algprac-P07a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7b6395A141-algprac-P07a-h1"
+        ],
+        "title": "Interpret denominators",
+        "text": "Observe that the equation is undefined if $$x+2=0$$ or $$x-3=0$$, so we assume both are nonzero to see if we can make sense of the answer.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7b6395A141-algprac-P07a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7b6395A141-algprac-P07a-h2"
+        ],
+        "title": "Cancel nonzero factors",
+        "text": "If $$x+2$$ is not zero and $$x-3$$ is not zero, then $$2\\left(x+3\\right)=2x+k$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7b6395A141-algprac-P07a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7b6395A141-algprac-P07a-h3"
+        ],
+        "title": "Distribute",
+        "text": "$$2x+6=2x+k$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7b6395A141-algprac-P07a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a7b6395A141-algprac-P07a-h4"
+        ],
+        "title": "Solve for k",
+        "text": "$$k=6$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

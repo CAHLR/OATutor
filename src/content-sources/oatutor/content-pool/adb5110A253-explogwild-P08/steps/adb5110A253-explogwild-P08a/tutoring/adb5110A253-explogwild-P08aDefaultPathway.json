@@ -1,0 +1,36 @@
+[
+    {
+        "id": "adb5110A253-explogwild-P08a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determine the new debt after one month.",
+        "text": "After one month, you pay 5% of the current debt, which means that your debt decreases: \\n\\n$$1000-(0.05)(1000)=1000(1-0.05)=1000(0.95).$$ \\n\\nBut your debt also increases by 18% of the current debt owed. \\n\\n$$\\operatorname{1000}\\left(0.95\\right)+0.18\\operatorname{1000}\\left(0.95\\right)=1000(0.95)(1.18)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P08a-h2",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P08a-h1"
+        ],
+        "title": "Determine the new debt after two months.",
+        "text": "The debt after $$2$$ months is $$1000(0.95)**{2}(1.18)**{2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P08a-h3",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P08a-h2"
+        ],
+        "title": "The model after $$t$$ months.",
+        "text": "After $$t$$ months, you owe $$1000(0.95)**{t}(1.18)**{t}.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

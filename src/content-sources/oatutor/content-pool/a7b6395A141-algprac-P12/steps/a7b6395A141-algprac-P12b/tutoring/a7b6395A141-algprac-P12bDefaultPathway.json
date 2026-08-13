@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a7b6395A141-algprac-P12b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Finding an equation",
+        "text": "$$\\frac{2x}{4x^2+\\frac{1}{4}}=1=\\frac{1}{1}$$ if and only if $$2x=4x^2+\\frac{1}{4}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7b6395A141-algprac-P12b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7b6395A141-algprac-P12b-h1"
+        ],
+        "title": "Subtract $$2x$$ from both sides",
+        "text": "$$2x-2x=4x^2+\\frac{1}{4}$$ $$-2x$$ \\n $$0=4x^2-2x+\\frac{1}{4}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7b6395A141-algprac-P12b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7b6395A141-algprac-P12b-h2"
+        ],
+        "title": "Factor RHS",
+        "text": "$$4x^2-2x+\\frac{1}{4}=\\left(2x-\\frac{1}{2}\\right)^2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7b6395A141-algprac-P12b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7b6395A141-algprac-P12b-h3"
+        ],
+        "title": "Zero product property",
+        "text": "$$\\left(2x-\\frac{1}{2}\\right)^2=0$$ if and only if $$2x-\\frac{1}{2}=0$$ or $$x=\\frac{1}{4}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7b6395A141-algprac-P12b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a7b6395A141-algprac-P12b-h4"
+        ],
+        "title": "Interpret",
+        "text": "$$x=\\frac{1}{4}$$ makes the fraction $$\\frac{2x}{4x^2+\\frac{1}{4}}=1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

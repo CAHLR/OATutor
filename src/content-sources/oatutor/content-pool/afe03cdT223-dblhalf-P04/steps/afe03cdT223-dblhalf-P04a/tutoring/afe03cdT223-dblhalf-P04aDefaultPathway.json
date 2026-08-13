@@ -1,0 +1,48 @@
+[
+    {
+        "id": "afe03cdT223-dblhalf-P04a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Expand",
+        "text": "$$\\left(\\sin(x)+\\cos(x)\\right)**2=\\sin**2(x)+2\\sin(x)\\cos(x)+\\cos**2(x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P04a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P04a-h1"
+        ],
+        "title": "Apply commutativity of addition",
+        "text": "$$\\sin**2(x)+2\\sin(x)\\cos(x)+\\cos**2(x)=\\sin**2(x)+\\cos**2(x)+2\\sin(x)\\cos(x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P04a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P04a-h2"
+        ],
+        "title": "Apply Pythagorean identity",
+        "text": "$$\\left(\\sin**2(x)+\\cos**2(x)\\right)+2\\sin(x)\\cos(x)=1+2\\sin(x)\\cos(x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P04a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P04a-h3"
+        ],
+        "title": "Apply the double angle formula",
+        "text": "$$1+2\\sin(x)\\cos(x)=1+\\sin(2x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

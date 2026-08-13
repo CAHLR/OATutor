@@ -1,0 +1,109 @@
+[
+    {
+        "id": "aaa317eLinIneq7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "We can leave the compound inequality intact, and perform solving procedures on the three parts at the same time.",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aaa317eLinIneq7a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-2$$"
+        ],
+        "dependencies": [
+            "aaa317eLinIneq7a-h1"
+        ],
+        "title": "Applying the Addition Property",
+        "text": "What number should we add to all three parts to isolate the variable term?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aaa317eLinIneq7a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1 \\leq 2x<4$$"
+        ],
+        "dependencies": [
+            "aaa317eLinIneq7a-h2"
+        ],
+        "title": "Applying the Addition Property",
+        "text": "What does the compound inequality become?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$5 \\leq 2x<4$$",
+            "$$1 \\leq 2x<4$$"
+        ]
+    },
+    {
+        "id": "aaa317eLinIneq7a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "aaa317eLinIneq7a-h3"
+        ],
+        "title": "Applying the Multiplication Property",
+        "text": "What number should we multiply to all three parts to eliminate the coefficient of $$x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "aaa317eLinIneq7a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{1}{2} \\leq x<2$$"
+        ],
+        "dependencies": [
+            "aaa317eLinIneq7a-h4"
+        ],
+        "title": "Applying the Multiplication Property",
+        "text": "What does the compound inequality become?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$\\frac{1}{2} \\leq x<2$$",
+            "$$2 \\leq x<8$$"
+        ]
+    },
+    {
+        "id": "aaa317eLinIneq7a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$[\\frac{1}{2},2)$$"
+        ],
+        "dependencies": [
+            "aaa317eLinIneq7a-h5"
+        ],
+        "title": "Interval Notation",
+        "text": "What is this inequality written in the interval notation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$[\\frac{1}{2},2)$$",
+            "$$(\\frac{1}{2},2]$$"
+        ]
+    }
+]

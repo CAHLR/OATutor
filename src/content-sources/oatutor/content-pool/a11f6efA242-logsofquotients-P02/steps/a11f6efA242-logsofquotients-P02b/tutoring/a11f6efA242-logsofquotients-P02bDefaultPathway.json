@@ -1,0 +1,106 @@
+[
+    {
+        "id": "a11f6efA242-logsofquotients-P02b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Domains of sums",
+        "text": "The input of both summands must be greater than $$0$$ at the same time.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a11f6efA242-logsofquotients-P02b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x>3$$ or $$x<-3$$"
+        ],
+        "dependencies": [
+            "a11f6efA242-logsofquotients-P02b-h1"
+        ],
+        "title": "The left summand",
+        "text": "For which $$x$$ is $$x^2-9>0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$x>3$$",
+            "$$x>-3$$",
+            "$$x<3$$",
+            "$$-3<x<3$$",
+            "$$x>3$$ or $$x<-3$$"
+        ],
+        "subHints": [
+            {
+                "id": "a11f6efA242-logsofquotients-P02b-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Analyze each term in the product",
+                "text": "$$x^2-9=\\left(x+3\\right) \\left(x-3\\right)>0$$ if both terms in the product are positive or both terms are negative.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a11f6efA242-logsofquotients-P02b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x-3>0$$"
+        ],
+        "dependencies": [
+            "a11f6efA242-logsofquotients-P02b-h2"
+        ],
+        "title": "The right summand",
+        "text": "For which $$x$$ does $$\\log_2(x-3)$$ make sense?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$x-3>0$$",
+            "$$x-3<0$$",
+            "$$x>0$$"
+        ]
+    },
+    {
+        "id": "a11f6efA242-logsofquotients-P02b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x>3$$"
+        ],
+        "dependencies": [
+            "a11f6efA242-logsofquotients-P02b-h3"
+        ],
+        "title": "The right summand",
+        "text": "For which $$x$$ is $$x-3>0$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$x>3$$",
+            "$$x>-3$$",
+            "$$x<3$$",
+            "$$-3<x<3$$",
+            "$$x>3$$ or $$x<-3$$"
+        ]
+    },
+    {
+        "id": "a11f6efA242-logsofquotients-P02b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a11f6efA242-logsofquotients-P02b-h4"
+        ],
+        "title": "Conclusion",
+        "text": "$$\\log_2(x**2-9)-\\log_2(x-3)$$ makes sense when both summands make sense, which is only true if $$x>3$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

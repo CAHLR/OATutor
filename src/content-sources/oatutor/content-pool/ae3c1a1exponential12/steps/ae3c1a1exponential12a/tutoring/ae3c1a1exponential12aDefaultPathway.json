@@ -1,0 +1,51 @@
+[
+    {
+        "id": "ae3c1a1exponential12a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$${\\left(-4\\right)}^{2\\left(-1\\right)+3}$$"
+        ],
+        "dependencies": [],
+        "title": "Using Substitution",
+        "text": "Substitute $$x=-1$$ into f(x). What is the expression?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae3c1a1exponential12a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "ae3c1a1exponential12a-h1"
+        ],
+        "title": "Add the Exponent",
+        "text": "What is the sum of the exponent?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae3c1a1exponential12a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-4$$"
+        ],
+        "dependencies": [
+            "ae3c1a1exponential12a-h2"
+        ],
+        "title": "Using Simplification",
+        "text": "Simplify the power. What is the value?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

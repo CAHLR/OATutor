@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a16844emotion2d20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Reference Frames",
+        "text": "To find the velocity of the particle in reference frame C, we need to consider the velocities of the particle and the reference frames relative to each other.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d20a-h1"
+        ],
+        "title": "Velocity Addition",
+        "text": "The velocity of the particle in reference frame C can be found by adding the velocity of the particle in reference frame A to the velocities of the reference frames relative to each other.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d20a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2i+3j+4k$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d20a-h2"
+        ],
+        "title": "Calculate Velocity in Frame B",
+        "text": "First, find the velocity of the particle in reference frame B. Use the velocity of the particle in reference frame A and the velocity of frame A with respect to frame B.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d20a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2i+5j+4k$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d20a-h3"
+        ],
+        "title": "Calculate Velocity in Frame C",
+        "text": "Now, find the velocity of the particle in reference frame C by adding the velocity of frame B with respect to frame C.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d20a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d20a-h4"
+        ],
+        "title": "Final Velocity",
+        "text": "The final velocity of the particle in reference frame C is the sum of the velocities calculated in the previous steps.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

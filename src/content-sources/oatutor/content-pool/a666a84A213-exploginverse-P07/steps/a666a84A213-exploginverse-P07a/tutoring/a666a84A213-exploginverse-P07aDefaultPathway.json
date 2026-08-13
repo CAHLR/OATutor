@@ -1,0 +1,88 @@
+[
+    {
+        "id": "a666a84A213-exploginverse-P07a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewrite as an exponent.",
+        "text": "This is equivalent to the expoential equation $$3^0=x^2-8$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P07a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a666a84A213-exploginverse-P07a-h1"
+        ],
+        "title": "LHS",
+        "text": "What is $$3^0$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P07a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P07a-h2"
+        ],
+        "title": "RHS",
+        "text": "This reduces the problem to solving $$x^2-8=1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P07a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\pm 3$$"
+        ],
+        "dependencies": [
+            "a666a84A213-exploginverse-P07a-h3"
+        ],
+        "title": "Solve for $$x$$.",
+        "text": "Solve $$x^2-8=1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$3$$",
+            "$$-3$$",
+            "$$\\pm 3$$",
+            "$$2\\sqrt{2}$$",
+            "$$-2\\sqrt{2}$$",
+            "$$\\pm 2 \\sqrt{2}$$"
+        ],
+        "subHints": [
+            {
+                "id": "a666a84A213-exploginverse-P07a-h4-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Isolate $$x$$.",
+                "text": "Add $$8$$ to both sides: $$x^2=9$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            },
+            {
+                "id": "a666a84A213-exploginverse-P07a-h4-s2",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Isolate $$x$$.",
+                "text": "There are two possible soliutions: $$x=\\pm \\sqrt{9}$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    }
+]

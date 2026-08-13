@@ -1,0 +1,91 @@
+[
+    {
+        "id": "a83b2ddmodel4a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Set the formulas of each line equal to each other."
+        ],
+        "dependencies": [],
+        "title": "Intersection",
+        "text": "How do we find the point at which $$2$$ lines meet?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Set the formulas of each line equal to each other.",
+            "Multiply the formulas",
+            "Add the formulas"
+        ]
+    },
+    {
+        "id": "a83b2ddmodel4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a83b2ddmodel4a-h1"
+        ],
+        "title": "Writing a Linear Model",
+        "text": "We need to write an equation for each line: the line from Westborough to Agritown and the line from the junction to Eastborough.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a83b2ddmodel4a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Agritown is then located at $$(30,10)$$ and Eastborough is at $$(20,0)$$."
+        ],
+        "dependencies": [
+            "a83b2ddmodel4a-h2"
+        ],
+        "title": "Determining Coordinates",
+        "text": "Let Westborough be the origin, so what does that make Agritown and Eastborough?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Agritown is then located at $$(30,10)$$ and Eastborough is at $$(20,0)$$.",
+            "Agritown is then located at $$(20,0)$$ and Eastborough is at $$(30,10)$$."
+        ]
+    },
+    {
+        "id": "a83b2ddmodel4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a83b2ddmodel4a-h3"
+        ],
+        "title": "Finding Slope",
+        "text": "Use $$\\frac{y2-y1}{x2-x1}$$ to find the slope of the Westborough to Agritown line. The junction to Eastborough line is perpendicular to this, so this slope is the negative reciprocal.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a83b2ddmodel4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a83b2ddmodel4a-h4"
+        ],
+        "title": "Writing a Linear Model",
+        "text": "Using the slope, write the equation for each line. (Extra hint: use point-slope form for the junction to Eastborough line!)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a83b2ddmodel4a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a83b2ddmodel4a-h5"
+        ],
+        "title": "Solve",
+        "text": "Set both equations equal to each other and solve.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a949afaangmom12c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Torque",
+        "text": "Torque is the rotational equivalent of linear force. It is calculated as the product of the moment of inertia and the angular acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom12c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom12c-h1"
+        ],
+        "title": "Moment of Inertia for a Rod",
+        "text": "The moment of inertia for a rod rotating about its center is given by the formula $$I=(1/12)ml**{2}$$, $$where$$ $$\\, \\text{m$$} $$is$$ $$the$$ $$mass$$ $$and$$ $$l$$ is the length of the rod.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom12c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom12c-h2"
+        ],
+        "title": "Angular Acceleration",
+        "text": "Angular acceleration can be found using the formula $$\\alpha$$=($$\\omega_{f}-\\omega_{i}$$)/t, $$where$$ $$\\omega_{f}$$ is the final angular velocity, $$\\omega_{i}$$ is the initial angular velocity, and $$t$$ is the time taken.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom12c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$180$$"
+        ],
+        "dependencies": [
+            "a949afaangmom12c-h3"
+        ],
+        "title": "Calculate Moment of Inertia",
+        "text": "Calculate the moment of inertia for the propeller using the formula $$I=(1/12)ml**{2}$$. $$Remember$$ $$to$$ $$consider$$ $$the$$ $$mass$$ $$and$$ $$length$$ $$of$$ $$both$$ $$blades$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

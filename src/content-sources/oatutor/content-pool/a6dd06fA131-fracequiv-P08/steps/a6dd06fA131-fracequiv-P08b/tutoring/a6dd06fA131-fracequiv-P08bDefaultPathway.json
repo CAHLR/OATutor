@@ -1,0 +1,88 @@
+[
+    {
+        "id": "a6dd06fA131-fracequiv-P08b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Both sides must make sense",
+        "text": "You must make sure that both sides make sense.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dd06fA131-fracequiv-P08b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "a6dd06fA131-fracequiv-P08b-h1"
+        ],
+        "title": "LHS",
+        "text": "For which values of $$x$$ is the left-hand side $$\\frac{x}{x+1}$$ undefined?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a6dd06fA131-fracequiv-P08b-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "LHS",
+                "text": "$$\\frac{x}{x+1}$$ is undefined when the denominator is zero: $$x+1=0$$. That is, it is undefined when $$x=-1$$.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a6dd06fA131-fracequiv-P08b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x=0$$ and $$x=-1$$"
+        ],
+        "dependencies": [
+            "a6dd06fA131-fracequiv-P08b-h2"
+        ],
+        "title": "RHS",
+        "text": "For which values of $$x$$ is the right-hand side $$\\frac{1}{1+\\frac{1}{x}}$$ undefined?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$x=0$$",
+            "$$x=0$$ and $$x=1$$",
+            "$$x=0$$ and $$x=-1$$",
+            "No such values exist."
+        ],
+        "subHints": [
+            {
+                "id": "a6dd06fA131-fracequiv-P08b-h3-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "RHS",
+                "text": "$$\\frac{1}{1+\\frac{1}{x}}$$ is undefined when $$\\frac{1}{x}$$ is undefined and when $$1+\\frac{1}{x}=0$$. This happens when $$x=0$$ or when $$x=-1$$.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a6dd06fA131-fracequiv-P08b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6dd06fA131-fracequiv-P08b-h3"
+        ],
+        "title": "Conclusion",
+        "text": "An equation cannot be true at any value where either side is undefined. \\n - The left hand side is undefined for $$x=-1$$ \\n - The right hand side is undefined when $$x=0$$ and $$x=-1$$. \\n \\n Ruling out every value that causes a problem on either side, we see that the equivalence fails when $$x=0$$ and $$x=-1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

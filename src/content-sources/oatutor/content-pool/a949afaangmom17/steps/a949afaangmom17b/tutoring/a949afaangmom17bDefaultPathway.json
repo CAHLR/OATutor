@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a949afaangmom17b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the System",
+        "text": "The system consists of a rotating disk and a bug. Initially, the bug is at the edge of the disk, and then it moves to the center. How does this movement affect the system's kinetic energy?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom17b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom17b-h1"
+        ],
+        "title": "Conservation of Angular Momentum",
+        "text": "Since there are no external torques acting on the system, the angular momentum is conserved. How does this principle help in determining the change in kinetic energy?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom17b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom17b-h2"
+        ],
+        "title": "Initial and Final Moments of Inertia",
+        "text": "Calculate the initial and final moments of inertia of the system. Remember, the moment of inertia of the disk is $$\\frac{1}{2} M R^2$$, and the bug contributes $$m r^2$$ to the moment of inertia when it is at a distance $$r$$ from the axis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom17b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom17b-h3"
+        ],
+        "title": "Initial and Final Angular Velocities",
+        "text": "Using the conservation of angular momentum, determine the initial and final angular velocities of the system. The initial angular velocity is given as $$10.0\\, \\tfrac{\\text{rad}}{\\text{s}}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

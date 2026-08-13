@@ -1,0 +1,48 @@
+[
+    {
+        "id": "ace4be0A1-diag-P20b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Finding an equation",
+        "text": "$$\\frac{x}{x^2+\\frac{1}{4}}=1=\\frac{1}{1}$$ if and only if $$x=x^2+\\frac{1}{4}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P20b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P20b-h1"
+        ],
+        "title": "Subtract $$x$$",
+        "text": "$$0=x^2-x+\\frac{1}{4}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P20b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P20b-h2"
+        ],
+        "title": "Factor",
+        "text": "$$0=\\left(x-\\frac{1}{2}\\right)^2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P20b-h4",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P20b-h3"
+        ],
+        "title": "Interpret",
+        "text": "$$x=\\frac{1}{2}$$ makes the fraction $$\\frac{x}{x^2+\\frac{1}{4}}=1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

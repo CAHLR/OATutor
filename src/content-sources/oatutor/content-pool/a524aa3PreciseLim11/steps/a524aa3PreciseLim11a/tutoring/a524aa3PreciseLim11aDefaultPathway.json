@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a524aa3PreciseLim11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using the Precise Definition of a Limit",
+        "text": "First, we need to compare the given statement to the conditional statement portion of the precise defintion of a limit form (e.g. if $$|x-a|<\\delta$$, then $$|f{\\left(x\\right)}-L|<\\epsilon$$ for the limit $$\\lim_{x\\toa} f(x)=L)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a524aa3PreciseLim11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a524aa3PreciseLim11a-h1"
+        ],
+        "title": "Using Information from the Statement",
+        "text": "After comparing the statement to the conditional statement portion of the precise defintion of a limit, we gain the following key information: f(x) $$=$$ $$\\sqrt{x-4}$$, epsilon $$=$$ $$0.1$$, and our limit is $$\\lim_{x\\to8} f(x)=2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a524aa3PreciseLim11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a524aa3PreciseLim11a-h2"
+        ],
+        "title": "Graphing the Function",
+        "text": "Graph the function $$f(x)=\\sqrt{x-4}$$ on your graphing calculator",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a524aa3PreciseLim11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a524aa3PreciseLim11a-h3"
+        ],
+        "title": "Solving for Delta",
+        "text": "We need to find how close to $$8$$ must $$x$$ be, if $$y$$ is within $$epsilon=0.1$$ units of $$2$$ on the graph. We can find this by drawing boundary lines on the graph that fulfill these conditions and making delta the distance from $$x=8$$ to the closer of the $$2$$ $$x-boundary$$ lines.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

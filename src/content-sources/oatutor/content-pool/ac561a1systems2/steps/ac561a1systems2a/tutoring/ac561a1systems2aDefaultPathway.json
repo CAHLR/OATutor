@@ -1,0 +1,199 @@
+[
+    {
+        "id": "ac561a1systems2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Eliminating Variables",
+        "text": "When both equations in the system have like variables of the second degree, solving them using elimination by addition is often easier than substitution. Generally, elimination is a far simpler method when the system involves only two equations in two variables (a two-by-two system), rather than a three-by-three system, as there are fewer steps.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac561a1systems2a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2x^2=26$$"
+        ],
+        "dependencies": [
+            "ac561a1systems2a-h1"
+        ],
+        "title": "Adding Equations",
+        "text": "We observe that by adding the two equations together, we can remove the $$y^2$$ term. What is the equation obtained after adding the two equations?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$2x^2=26$$",
+            "$$2x^2=24$$",
+            "$$2y^2=26$$"
+        ]
+    },
+    {
+        "id": "ac561a1systems2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac561a1systems2a-h2"
+        ],
+        "title": "Solving for $$x$$",
+        "text": "With the equation $$2x^2=26$$, we can solve for $$x$$. The x-coordinate found indicates a possible solution where an intersection may occur if the system of equations yield a feasible solution later on.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac561a1systems2a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ac561a1systems2a-h3"
+        ],
+        "title": "Solving for $$x$$",
+        "text": "Divide $$2$$ on boths sides",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac561a1systems2a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "-sqrt(13),sqrt(13)"
+        ],
+        "dependencies": [
+            "ac561a1systems2a-h4"
+        ],
+        "title": "Solving for $$x$$",
+        "text": "Take the square root on both sides. What are all the possible $$x$$ coordinates?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "-sqrt(13),sqrt(13)",
+            "$$-13, 13$$",
+            "-sqrt(12),sqrt(12)"
+        ]
+    },
+    {
+        "id": "ac561a1systems2a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ac561a1systems2a-h5"
+        ],
+        "title": "Substitution",
+        "text": "We substitute all possible $$x$$ coordinates back into one of the two equations to find the corresponding $$y$$ coordinate to each $$x$$ coordinate. Using any of the two equations work because the $$x$$ coordinate found is a solution to the system of equations. We usually use the equation that is easier to calculate the other coordinate with.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac561a1systems2a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ac561a1systems2a-h6"
+        ],
+        "title": "Substitution #1",
+        "text": "Substituting $$x=-\\sqrt{13}$$ into $$x^2+y^2=25$$. Find all possible corresponding $$y$$ coordinates.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac561a1systems2a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ac561a1systems2a-h7"
+        ],
+        "title": "Substitution #1",
+        "text": "After substituting in $$-\\sqrt{13}$$ and squaring it, subtract $$13$$ from both sides.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac561a1systems2a-h9",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "-sqrt(12),sqrt(12)"
+        ],
+        "dependencies": [
+            "ac561a1systems2a-h8"
+        ],
+        "title": "Substitution #1",
+        "text": "Take the square root on both sides. What are all the possible $$y$$ coordinates?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "-sqrt(12),sqrt(12)",
+            "$$-12, 12$$"
+        ]
+    },
+    {
+        "id": "ac561a1systems2a-h10",
+        "type": "hint",
+        "dependencies": [
+            "ac561a1systems2a-h9"
+        ],
+        "title": "Substitution #2",
+        "text": "Substituting $$x=\\sqrt{13}$$ into $$x^2+y^2=25$$. Find all possible corresponding $$y$$ coordinates.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac561a1systems2a-h11",
+        "type": "hint",
+        "dependencies": [
+            "ac561a1systems2a-h10"
+        ],
+        "title": "Substitution #2",
+        "text": "After substituting in $$\\sqrt{13}$$ and squaring it, subtract $$13$$ from both sides.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ac561a1systems2a-h12",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "-sqrt(12),sqrt(12)"
+        ],
+        "dependencies": [
+            "ac561a1systems2a-h11"
+        ],
+        "title": "Substitution #2",
+        "text": "Take the square root on both sides. What are all the possible $$y$$ coordinates?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "-sqrt(12),sqrt(12)",
+            "$$-12, 12$$"
+        ]
+    },
+    {
+        "id": "ac561a1systems2a-h13",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "ac561a1systems2a-h12"
+        ],
+        "title": "Verifying the Number Of Intersections",
+        "text": "We have found the coordinates of all intersections. How many are there?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

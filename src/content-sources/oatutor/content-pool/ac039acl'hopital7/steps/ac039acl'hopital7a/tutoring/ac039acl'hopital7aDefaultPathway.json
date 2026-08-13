@@ -1,0 +1,182 @@
+[
+    {
+        "id": "ac039acl'hopital7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Indeterminate form",
+        "text": "Substitute $$x$$ with the value $$x$$ approaches to. If the function results in one of these indeterminate form: $$\\frac{0}{0}$$, $$\\frac{\\infty}{\\infty}$$ or $$\\frac{-\\infty}{\\infty}$$, we apply L\u2019H\u00f4pital\u2019s Rule.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ac039acl'hopital7a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\lim_{x\\to0} \\frac{\\ln\\left(x^4\\right)}{\\frac{1}{x}}$$"
+        ],
+        "dependencies": [],
+        "title": "Rearrange the expression",
+        "text": "The purpose of rearranging the expression is to make it fit the indeterminate form and from there we can apply L\u2019H\u00f4pital\u2019s Rule. Using the Negative Exponents Law, how can we rearrange the expression so that it could fit the indeterminate form?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\lim_{x\\to0} \\frac{\\ln\\left(x^4\\right)}{\\frac{1}{x}}$$",
+            "$$\\lim_{x\\to0} \\frac{x}{\\frac{1}{\\ln\\left(x^4\\right)}}$$"
+        ],
+        "subHints": [
+            {
+                "id": "ac039acl'hopital7a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Rearrange the expression",
+                "text": "$$\\lim_{x\\to0} \\frac{\\ln\\left(x^4\\right)}{x^{\\left(-1\\right)}}=\\lim_{x\\to0} \\frac{\\ln\\left(x^4\\right)}{\\frac{1}{x}}$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            },
+            {
+                "id": "ac039acl'hopital7a-h2-s2",
+                "type": "hint",
+                "dependencies": [
+                    "ac039acl'hopital7a-h2-s1"
+                ],
+                "title": "Rearrange the expression",
+                "text": "The other way of rearrangement does not give us a proper indeterminate form.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            },
+            {
+                "id": "ac039acl'hopital7a-h2-s3",
+                "type": "hint",
+                "dependencies": [
+                    "ac039acl'hopital7a-h2-s1"
+                ],
+                "title": "Substitute the limit",
+                "text": "$$\\frac{\\ln\\left(0^4\\right)}{\\frac{1}{0}}=\\frac{\\ln\\left(0\\right)}{\\frac{1}{0}}=\\frac{-\\infty}{\\infty}$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "ac039acl'hopital7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac039acl'hopital7a-h2"
+        ],
+        "title": "Apply L\u2019H\u00f4pital\u2019s Rule",
+        "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to0} \\frac{\\frac{\\frac{d}{\\operatorname{dx}\\left(\\ln\\left(x^4\\right)\\right)}}{d}}{\\operatorname{dx}\\left(\\frac{1}{x}\\right)}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ac039acl'hopital7a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\lim_{x\\to0} \\frac{\\frac{4}{x}}{-\\left(\\frac{1}{x^2}\\right)}$$"
+        ],
+        "dependencies": [
+            "ac039acl'hopital7a-h3"
+        ],
+        "title": "Find the derivative",
+        "text": "What is the answer of the function after L\u2019H\u00f4pital\u2019s Rule is applied?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\lim_{x\\to0} \\frac{4x}{-\\left(\\frac{1}{x^2}\\right)}$$",
+            "$$\\lim_{x\\to0} \\frac{\\frac{4}{x}}{\\frac{1}{x^2}}$$",
+            "$$\\lim_{x\\to0} \\frac{\\frac{4x^2}{x}}{-\\left(\\frac{1}{x^2}\\right)}$$",
+            "$$\\lim_{x\\to0} \\frac{\\frac{4}{x}}{-\\left(\\frac{1}{x^2}\\right)}$$"
+        ],
+        "subHints": [
+            {
+                "id": "ac039acl'hopital7a-h4-s1",
+                "type": "scaffold",
+                "problemType": "MultipleChoice",
+                "answerType": "string",
+                "hintAnswer": [
+                    "$$\\frac{4}{x}$$"
+                ],
+                "dependencies": [],
+                "title": "Chain Rule",
+                "text": "What is the derivative of $$\\ln\\left(x^4\\right)$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "",
+                "choices": [
+                    "$$\\frac{4}{x}$$",
+                    "$$4x^2$$",
+                    "$$\\frac{1}{x^4}$$",
+                    "$$4x$$"
+                ]
+            },
+            {
+                "id": "ac039acl'hopital7a-h4-s2",
+                "type": "hint",
+                "dependencies": [
+                    "ac039acl'hopital7a-h4-s1"
+                ],
+                "title": "Chain Rule",
+                "text": "$$\\frac{d}{\\operatorname{dx}\\left(\\ln\\left(x^4\\right)\\right)}=\\frac{4x^3}{x^4}=\\frac{4}{x}$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            },
+            {
+                "id": "ac039acl'hopital7a-h4-s3",
+                "type": "scaffold",
+                "problemType": "MultipleChoice",
+                "answerType": "string",
+                "hintAnswer": [
+                    "$$\\frac{-1}{x^2}$$"
+                ],
+                "dependencies": [],
+                "title": "Power Rule",
+                "text": "What is the derivative of $$\\frac{1}{x}$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "",
+                "choices": [
+                    "$$\\frac{1}{x^2}$$",
+                    "$$1$$",
+                    "$$\\frac{-1}{x^2}$$",
+                    "$$x$$"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ac039acl'hopital7a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ac039acl'hopital7a-h4"
+        ],
+        "title": "Simplify",
+        "text": "/lim{x,0**+,(4/x)/-(1/x**2)}=/lim{x,0**+,-(4*x**2)/x}=/lim{x,0**+,-4*x}=-4*x",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "ac039acl'hopital7a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ac039acl'hopital7a-h5"
+        ],
+        "title": "Evaluate the limit",
+        "text": "$$-4(0)=0$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

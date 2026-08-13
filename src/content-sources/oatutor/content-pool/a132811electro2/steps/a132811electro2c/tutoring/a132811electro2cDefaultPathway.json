@@ -1,0 +1,110 @@
+[
+    {
+        "id": "a132811electro2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Oxidized Substance",
+        "text": "In a redox reaction, the oxidized substance loses electrons. Look at the changes in oxidation states to determine which substance is oxidized.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro2c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Reduced Substance",
+        "text": "The reduced substance gains electrons. Check the changes in oxidation states to find out which substance is reduced.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro2c-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determine the Oxidizing Agent",
+        "text": "The oxidizing agent is the substance that gets reduced. It gains electrons from the oxidized substance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro2c-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determine the Reducing Agent",
+        "text": "The reducing agent is the substance that gets oxidized. It donates electrons to the reduced substance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro2c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Mg"
+        ],
+        "dependencies": [
+            "a132811electro2c-h1"
+        ],
+        "title": "Identify the Oxidized Substance",
+        "text": "Which substance loses electrons in the reaction?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro2c-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Br2"
+        ],
+        "dependencies": [
+            "a132811electro2c-h2"
+        ],
+        "title": "Identify the Reduced Substance",
+        "text": "Which substance gains electrons in the reaction?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro2c-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Br2"
+        ],
+        "dependencies": [
+            "a132811electro2c-h3"
+        ],
+        "title": "Determine the Oxidizing Agent",
+        "text": "Which substance is reduced in the reaction?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro2c-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Mg"
+        ],
+        "dependencies": [
+            "a132811electro2c-h4"
+        ],
+        "title": "Determine the Reducing Agent",
+        "text": "Which substance is oxidized in the reaction?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

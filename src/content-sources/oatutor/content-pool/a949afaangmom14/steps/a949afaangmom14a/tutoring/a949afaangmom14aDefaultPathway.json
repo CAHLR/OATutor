@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a949afaangmom14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Momentum",
+        "text": "Angular momentum $$L$$ for a hoop is calculated using the formula $$L=I\\omega$$, $$where$$ $$I$$ $$is$$ $$the$$ $$moment$$ $$of$$ $$inertia$$ $$and$$ $$\\omega$$ is the angular velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom14a-h1"
+        ],
+        "title": "Moment of Inertia for a Hoop",
+        "text": "The moment of inertia $$I$$ for a hoop is given by $$I=mr**{2}$$, $$where$$ $$\\, \\text{m$$} $$is$$ $$the$$ $$mass$$ $$and$$ $$r$$ is the radius of the hoop.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom14a-h2"
+        ],
+        "title": "Calculating Angular Velocity",
+        "text": "Angular velocity $$\\omega$$ can be calculated using the formula $$\\omega=\\frac{v}{r}$$, $$where$$ $$v$$ $$is$$ $$the$$ $$linear$$ $$velocity$$ $$and$$ $$r$$ is the radius.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom14a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.091875$$"
+        ],
+        "dependencies": [
+            "a949afaangmom14a-h3"
+        ],
+        "title": "Calculate Moment of Inertia",
+        "text": "Using the formula $$I=mr**{2}$$, $$calculate$$ $$the$$ $$moment$$ $$of$$ $$inertia$$ $$of$$ $$the$$ $$wheel$$. $$Given$$: $$\\, \\text{m}=0\\$\\$.75$$ kg, $$r=0.35\\, \\text{m}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

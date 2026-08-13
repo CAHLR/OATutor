@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a767c30T221-identpyth-P02a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Write numerator in terms of sines and cosines",
+        "text": "$$\\sec**2(x)-1=\\frac{1}{\\cos**2(x)}-1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a767c30T221-identpyth-P02a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a767c30T221-identpyth-P02a-h1"
+        ],
+        "title": "Combine into a single term",
+        "text": "$$\\frac{1}{\\cos**2(x)}-1=\\frac{1}{\\cos**2(x)}-\\frac{\\cos**2(x)}{\\cos**2(x)}=\\frac{1-\\cos**2(x)}{\\cos**2(x)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a767c30T221-identpyth-P02a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a767c30T221-identpyth-P02a-h2"
+        ],
+        "title": "Apply a trig identity",
+        "text": "Recall that $$\\sin**2(x)+\\cos**2(x)=1,$$ which means that $$1-\\cos**2(x)=\\sin**2(x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a767c30T221-identpyth-P02a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a767c30T221-identpyth-P02a-h3"
+        ],
+        "title": "Apply a trig identity",
+        "text": "$$\\frac{1-\\cos**2(x)}{\\cos**2(x)}=\\frac{\\sin**2(x)}{\\cos**2(x)}=\\tan**2(x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a767c30T221-identpyth-P02a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a767c30T221-identpyth-P02a-h4"
+        ],
+        "title": "Consider the entire expression",
+        "text": "$$\\frac{\\sec**2(x)-1}{\\tan(x)}=\\frac{\\tan**2(x)}{\\tan(x)}=\\tan(x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

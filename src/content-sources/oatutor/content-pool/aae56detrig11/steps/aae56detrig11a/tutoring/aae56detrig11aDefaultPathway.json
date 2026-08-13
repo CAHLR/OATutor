@@ -1,0 +1,99 @@
+[
+    {
+        "id": "aae56detrig11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify relevant triangles and angles",
+        "text": "Draw the two right triangles. Let thetaR and thetaS be the angles wires R and S make with the ground.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig11a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$Opposite=47, Adjacent=50$$"
+        ],
+        "dependencies": [
+            "aae56detrig11a-h1"
+        ],
+        "title": "Identify the sides for wire R",
+        "text": "For angle thetaR, what are the opposite and adjacent side lengths?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$Opposite=47, Adjacent=50$$",
+            "$$Opposite=50, Adjacent=47$$",
+            "$$Opposite=47, Adjacent=40$$",
+            "$$Opposite=50, Adjacent=40$$"
+        ]
+    },
+    {
+        "id": "aae56detrig11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig11a-s1"
+        ],
+        "title": "Relate angles to tangent",
+        "text": "Use tangent to find tan(thetaR) and tan(thetaS).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig11a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "tan(thetaR)=47/50,tan(thetaS)=40/50"
+        ],
+        "dependencies": [
+            "aae56detrig11a-h2"
+        ],
+        "title": "Calculate tan(thetaR) and tan(thetaS)",
+        "text": "What are tan(thetaR) and tan(thetaS)?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "tan(thetaR)=47/50,tan(thetaS)=40/50",
+            "tan(thetaR)=40/50,tan(thetaS)=47/50",
+            "tan(thetaR)=50/47,tan(thetaS)=50/40",
+            "tan(thetaR)=47/50,tan(thetaS)=50/40"
+        ]
+    },
+    {
+        "id": "aae56detrig11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig11a-s2"
+        ],
+        "title": "Apply the tangent difference formula",
+        "text": "The angle alpha is thetaR-thetaS. Use $$tan(thetaR-thetaS)=\\fractan^1\\left(thetaR\\right)-tan\\left(thetaS\\right)+tan\\left(thetaR\\right) tan\\left(thetaS\\right)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig11a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{35}{438}$$"
+        ],
+        "dependencies": [
+            "aae56detrig11a-h3"
+        ],
+        "title": "Calculate tan(alpha)",
+        "text": "Substitute into $$tan(alpha)=\\fractan^1\\left(thetaR\\right)-tan\\left(thetaS\\right)+tan\\left(thetaR\\right) tan\\left(thetaS\\right)}$$ and simplify.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

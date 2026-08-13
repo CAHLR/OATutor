@@ -1,0 +1,125 @@
+[
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P05a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply the laws of logarithms",
+        "text": "Before we can apply the law of logarithms for turning a difference into a quotient, we must handle the coefficient $$\\frac{1}{2}$$. One way to handle this is to use the law of logarithms for powers: \\n $$c\\log_b(a)=\\log_b(a**c)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P05a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P05a-h1"
+        ],
+        "title": "Apply the laws of logarithms",
+        "text": "$$\\log_5(x-1)-\\frac12\\log_5(x+1)=\\log_5(x-1)-\\log_5\\left((x+1)**{1/2}\\right)=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P05a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P05a-h2"
+        ],
+        "title": "Apply the laws of logarithms",
+        "text": "Next apply the law of logarithms for quotients: $$\\log_b(a)-\\log_b(c)=\\log_b(a/c).$$ \\n $$\\log_5(x-1)-\\log_5\\left((x+1)**{1/2}\\right)=\\log_5\\left(\\frac{x-1}{(x+1)**{1/2}}\\right)=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P05a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P05a-h3"
+        ],
+        "title": "What input $$m$$ gives $$\\log_5(m)=0?$$",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P05a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P05a-h4"
+        ],
+        "title": "The input is $$1$$.",
+        "text": "If $$\\log_5\\left(\\frac{x-1}{(x+1)**{1/2}}\\right)=0,$$ this means that the input $$\\frac{x-1}{(x+1)**{1/2}}=1.$$ Now we must solve this algebraic problem.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P05a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P05a-h5"
+        ],
+        "title": "Square both sides",
+        "text": "Let's get rid of the fractional exponent by squaring both sides. Then apply $$\\left(a**{1/2}\\right)**2=a$$ and $$\\frac{b**a}{c**a}=(b/c)**a$$ \\n $$\\left(\\frac{x-1}{(x+1)**{1/2}}\\right)**2=1**2$$ \\n $$\\frac{(x-1)**2}{(x+1)}=1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P05a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P05a-h6"
+        ],
+        "title": "Clear the denominator",
+        "text": "This step might seem counterintuitive, but to solve for $$x, $$ it will be helpful to clear the denominator by multiplying both sides by $$(x+1).$$ \\n\\n$$\\left(\\frac{(x-1)**2}{(x+1)}\\right)\\cdot{(x+1)}=1\\cdot{(x+1)}$$ \\n\\n$$\\left(x-1\\right)^2=x+1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P05a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P05a-h7"
+        ],
+        "title": "Expand the left hand side",
+        "text": "$$\\left(x-1\\right)^2=x^2-2x+1=x+1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P05a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P05a-h8"
+        ],
+        "title": "Subtract $$x+1$$ from both sides",
+        "text": "$$x^2-2x+1-x+1=x+1-x+1=0$$ \\n\\n$$x^2-3x=0$$ \\n\\n$$x(x-3)=0$$ \\n",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P05a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P05a-h9"
+        ],
+        "title": "Interpret solutions based on domain",
+        "text": "The two solutions are $$x=0$$ and $$x=3$$. However, the solution $$x=0$$ does not make sense because it would make the input of $$\\log_5(x-1)$$ negative. So the only solution in the domain is $$x=3$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

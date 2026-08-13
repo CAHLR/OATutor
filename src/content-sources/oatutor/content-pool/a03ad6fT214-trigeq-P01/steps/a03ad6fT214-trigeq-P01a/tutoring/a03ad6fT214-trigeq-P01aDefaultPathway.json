@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a03ad6fT214-trigeq-P01a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use a substitution",
+        "text": "Let $$u=1\\theta.$$ First, find the general solution for the simpler equation $$\\cos(u)=\\frac{\\sqrt{3}}{2}.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a03ad6fT214-trigeq-P01a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a03ad6fT214-trigeq-P01a-h1"
+        ],
+        "title": "Find the general solution for u",
+        "text": "On the unit circle, cosine is positive $$\\frac{\\sqrt{3}}{2}$$ at $$\\frac{\\pi}{6}$$ and $$-\\frac{\\pi}{6}$$. $$Since$$ $$cosine$$ $$has$$ $$a$$ $$period$$ $$of$$ $$2\\pi, $$ the general solution for $$u$$ is $$u=\\pm\\frac{\\pi}{6}+2n\\pi.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a03ad6fT214-trigeq-P01a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a03ad6fT214-trigeq-P01a-h2"
+        ],
+        "title": "Substitute back",
+        "text": "Now substitute $$2\\theta$$ back in for $$u$$ to get $$2\\theta=\\pm\\frac{\\pi}{6}+2n\\pi.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a03ad6fT214-trigeq-P01a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a03ad6fT214-trigeq-P01a-h3"
+        ],
+        "title": "Isolate theta",
+        "text": "To solve for $$\\theta$$ divide the entire equation by $$2$$. You must divide the angles AND the period term ( $$2n\\pi$$ ).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a03ad6fT214-trigeq-P01a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a03ad6fT214-trigeq-P01a-h4"
+        ],
+        "title": "Final calculation",
+        "text": "Dividing by $$2$$ yields $$\\theta=\\pm\\frac{\\pi}{12}+n\\pi.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

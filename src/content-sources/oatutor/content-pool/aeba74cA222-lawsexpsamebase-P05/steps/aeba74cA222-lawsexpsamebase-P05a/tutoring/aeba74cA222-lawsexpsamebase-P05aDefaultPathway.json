@@ -1,0 +1,75 @@
+[
+    {
+        "id": "aeba74cA222-lawsexpsamebase-P05a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply the laws of exponents to the product",
+        "text": "$$m^{\\frac{1}{2}} m^{\\frac{1}{3}}=m^{\\frac{1}{2}+\\frac{1}{3}}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aeba74cA222-lawsexpsamebase-P05a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{5}{6}$$"
+        ],
+        "dependencies": [
+            "aeba74cA222-lawsexpsamebase-P05a-h1"
+        ],
+        "title": "Evaluate the power",
+        "text": "$$m^{\\frac{1}{2}+\\frac{1}{3}}=m^n$$. \\n What is $$\\frac{1}{2}+\\frac{1}{3}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "aeba74cA222-lawsexpsamebase-P05a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Adding fractions",
+                "text": "To add fractions, you must find a common denominator. The common denominator for $$\\frac{1}{2}$$ and $$\\frac{1}{3}$$ is $$6$$ since the least common multiple of $$2$$ and $$3$$ is $$6$$.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            },
+            {
+                "id": "aeba74cA222-lawsexpsamebase-P05a-h2-s2",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Adding fractions",
+                "text": "We find \\n $$\\frac{1}{2}+\\frac{1}{3}=\\frac{3}{6}+\\frac{2}{6}=\\frac{2+3}{6}=\\frac{5}{6}$$.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "aeba74cA222-lawsexpsamebase-P05a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aeba74cA222-lawsexpsamebase-P05a-h2"
+        ],
+        "title": "Apply the law of exponents for powers",
+        "text": "$$\\left(m**{5/6}\\right)**6=m**{(5/6)6}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aeba74cA222-lawsexpsamebase-P05a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aeba74cA222-lawsexpsamebase-P05a-h3"
+        ],
+        "title": "Multiply fractions",
+        "text": "Evaluate $$6\\frac{5}{6}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

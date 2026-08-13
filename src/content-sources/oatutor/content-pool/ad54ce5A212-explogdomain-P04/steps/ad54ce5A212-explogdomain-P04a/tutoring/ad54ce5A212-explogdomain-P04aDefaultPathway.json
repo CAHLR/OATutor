@@ -1,0 +1,62 @@
+[
+    {
+        "id": "ad54ce5A212-explogdomain-P04a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [],
+        "title": "Find the base",
+        "text": "What is the base?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad54ce5A212-explogdomain-P04a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad54ce5A212-explogdomain-P04a-h1"
+        ],
+        "title": "The base is greater than zero",
+        "text": "When the base is greater than zero, you can make sense of a number raised to any real number, even irrational ones like $$\\pi$$ .",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad54ce5A212-explogdomain-P04a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "ad54ce5A212-explogdomain-P04a-h2"
+        ],
+        "title": "Test it",
+        "text": "Is $$7^{1.13}$$ a real number? (Try it on a calculator! But note that an experiment is not a proof.)",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ad54ce5A212-explogdomain-P04a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad54ce5A212-explogdomain-P04a-h3"
+        ],
+        "title": "Conclusion",
+        "text": "$$7^{1.13}$$ is a real number between $$7^1=7$$ and $$7^2=49$$, since $$1<1.13<2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

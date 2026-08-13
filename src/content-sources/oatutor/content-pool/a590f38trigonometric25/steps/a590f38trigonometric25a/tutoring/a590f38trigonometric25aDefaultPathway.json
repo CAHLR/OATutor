@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a590f38trigonometric25a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Isolate the trigonometric function",
+        "text": "The first step to solving a trigonometric equation is to isolate the trigonometric function (e.g., $$\\sin(\\theta)$$, $$\\cos(\\theta)$$, $$\\tan(\\theta)$$).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric25a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric25a-h1"
+        ],
+        "title": "Isolate $$\\cos(\\theta)$$",
+        "text": "What is the value of $$\\cos(\\theta)$$ after isolating it?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric25a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric25a-h1"
+        ],
+        "title": "Reference angle",
+        "text": "Recall the reference angle for $$\\cos(\\theta)=\\frac{1}{2}$$ from the unit circle.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric25a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{3}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric25a-h2"
+        ],
+        "title": "Find the reference angle",
+        "text": "What is the reference angle $$\\alpha$$ such that $$\\cos(\\alpha)=\\frac{1}{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric25a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric25a-h2"
+        ],
+        "title": "Identify quadrants",
+        "text": "Determine the quadrants where the cosine function is positive.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric25a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "I, IV"
+        ],
+        "dependencies": [
+            "a590f38trigonometric25a-h3"
+        ],
+        "title": "Quadrants for positive cosine",
+        "text": "In which quadrants is the cosine function positive?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "I, II",
+            "II, III",
+            "III, IV",
+            "I, IV"
+        ]
+    }
+]

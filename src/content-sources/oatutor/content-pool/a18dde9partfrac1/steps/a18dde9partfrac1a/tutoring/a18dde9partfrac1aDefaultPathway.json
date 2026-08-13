@@ -1,0 +1,126 @@
+[
+    {
+        "id": "a18dde9partfrac1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using the definition of partial fraction decomposition",
+        "text": "The first step is to separate the denominator factors and give each numerator a symbolic label, like A, B, or C.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a18dde9partfrac1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a18dde9partfrac1a-h1"
+        ],
+        "title": "Removing denominator",
+        "text": "The next step is to multiply both sides of the equation by the common denominator to eliminate the fractions.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a18dde9partfrac1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3x=A\\left(x-1\\right)+B\\left(x+2\\right)$$"
+        ],
+        "dependencies": [
+            "a18dde9partfrac1a-h2"
+        ],
+        "title": "Setting up the system of equations",
+        "text": "What is the resulting equation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$3x=A\\left(x-1\\right)+B\\left(x+2\\right)$$",
+            "$$3x=A\\left(x-3\\right)+B\\left(x+1\\right)$$",
+            "$$3x=A\\left(x+1\\right)+B\\left(x+2\\right)$$"
+        ]
+    },
+    {
+        "id": "a18dde9partfrac1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a18dde9partfrac1a-h3"
+        ],
+        "title": "Simplifying the equation",
+        "text": "The next step is to expand the right side of the equation and combine like terms",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a18dde9partfrac1a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3x=\\left(A+B\\right) x-A+2B$$"
+        ],
+        "dependencies": [
+            "a18dde9partfrac1a-h4"
+        ],
+        "title": "Simplifying the equation",
+        "text": "What is the simplified equation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$3x=\\left(A-B\\right) x-A+2B$$",
+            "$$3x=\\left(A+B\\right) x-A+2B$$",
+            "$$3x=\\left(A+1\\right) x-A+2B$$"
+        ]
+    },
+    {
+        "id": "a18dde9partfrac1a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a18dde9partfrac1a-h5"
+        ],
+        "title": "Setting up the system of equations",
+        "text": "Set up a system of equations associating corresponding coefficients.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a18dde9partfrac1a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a18dde9partfrac1a-h6"
+        ],
+        "title": "Equating the coefficients to the terms",
+        "text": "What coefficient does $$A+B$$ correspond to?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a18dde9partfrac1a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a18dde9partfrac1a-h7"
+        ],
+        "title": "Equating the coefficients to the terms",
+        "text": "What coefficient does $$-A+2B$$ correspond to?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

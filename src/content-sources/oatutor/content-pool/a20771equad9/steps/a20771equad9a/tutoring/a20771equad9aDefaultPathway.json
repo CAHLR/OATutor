@@ -1,0 +1,152 @@
+[
+    {
+        "id": "a20771equad9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factoring Out Terms",
+        "text": "Since all of the terms inclue $$-x$$, we can factor it out of the equation: $$-x \\left(3x^2+5x+2\\right)=0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a20771equad9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a20771equad9a-h1"
+        ],
+        "title": "Grouping",
+        "text": "Now we can factor by grouping. $$2\\times3=6$$, so we should look for two numbers that multiply to $$6$$ and add to $$5$$. $$2$$ and $$3$$ satisfy this.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a20771equad9a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(x+1\\right) \\left(3x+2\\right)$$"
+        ],
+        "dependencies": [
+            "a20771equad9a-h2"
+        ],
+        "title": "Grouping",
+        "text": "What is the factored expression?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a20771equad9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a20771equad9a-h3"
+        ],
+        "title": "Grouping",
+        "text": "We can rewrite the expression as $$3x^2+3x+2x+2$$ or $$3x^2+3x+2x+2$$. Let's factor $$3x^2+3x$$. $$3x$$ goes into both expressions, so let's rewrite this as $$3x \\left(x+1\\right)$$. Now, factor $$2x+2$$. $$2$$ goes into both terms, so it is rewritten as $$2\\left(x+1\\right)$$. Because both $$3x \\left(x+1\\right)$$ and $$2\\left(x+1\\right)$$ are multiplied by $$x+1$$, we can use the distributive property to rewrite the expression as $$\\left(x+1\\right) \\left(3x+2\\right)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a20771equad9a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a20771equad9a-h4"
+        ],
+        "title": "Zero Product Property",
+        "text": "Now, we can bring back the $$-x$$, making our equation $$-x \\left(x+1\\right) \\left(3x+2\\right)$$. Using the Zero Product Property, we can set all the terms equal to zero and solve for $$x$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a20771equad9a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a20771equad9a-h5"
+        ],
+        "title": "Zero Product Property",
+        "text": "What what value of $$x$$ makes $$-x=0$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a20771equad9a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "a20771equad9a-h6"
+        ],
+        "title": "Zero Product Property",
+        "text": "What what value of $$x$$ makes $$x+1=0$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a20771equad9a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a20771equad9a-h7"
+        ],
+        "title": "Zero Product Property",
+        "text": "Subtract $$1$$ from both sides of the equation to get $$x=-1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a20771equad9a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-2}{3}$$"
+        ],
+        "dependencies": [
+            "a20771equad9a-h8"
+        ],
+        "title": "Zero Product Property",
+        "text": "What what value of $$x$$ makes $$3x+2=0$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a20771equad9a-h10",
+        "type": "hint",
+        "dependencies": [
+            "a20771equad9a-h9"
+        ],
+        "title": "Zero Product Property",
+        "text": "Subtract $$2$$ from both sides of the equation, then divide by three to get $$x=\\frac{-2}{3}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a20771equad9a-h11",
+        "type": "hint",
+        "dependencies": [
+            "a20771equad9a-h10"
+        ],
+        "title": "Final Answer",
+        "text": "So, our factors are $$x=0$$, $$\\frac{-2}{3}$$, $$-1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

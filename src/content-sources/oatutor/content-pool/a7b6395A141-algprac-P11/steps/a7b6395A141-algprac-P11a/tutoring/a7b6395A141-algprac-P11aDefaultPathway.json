@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a7b6395A141-algprac-P11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rearrange expression",
+        "text": "$$\\frac{x+5}{x^4+2}=\\frac{x\\left(x+5\\right)}{\\left(x^2+\\frac{1}{4}\\right) \\left(x^4+2\\right)}=\\frac{x}{x^2+\\frac{1}{4}} \\frac{x+5}{x^4+2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7b6395A141-algprac-P11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7b6395A141-algprac-P11a-h1"
+        ],
+        "title": "Equivalent fractions general rule",
+        "text": "Recall that $$\\frac{ab}{ac}=\\frac{b}{c}$$ because $$\\frac{a}{a}=1$$. Thus $$\\frac{x}{x^2+\\frac{1}{4}}=1$$ for this to hold. Or both sides must be zero. Since x\\neq $$-5$$, the two sides are well defined and nonzero.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

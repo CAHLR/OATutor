@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a394625deriv16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Breaking Down the Question",
+        "text": "Find the derivative value and that will be the slope",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a394625deriv16a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-5{\\operatorname{csc}\\left(x\\right)}^2$$"
+        ],
+        "dependencies": [
+            "a394625deriv16a-h1"
+        ],
+        "title": "Find the Derivative of $$5\\operatorname{cot}\\left(x\\right)$$",
+        "text": "What's the derivative of $$5\\operatorname{cot}\\left(x\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$5{\\operatorname{csc}\\left(x\\right)}^2$$",
+            "$$-5{\\operatorname{csc}\\left(x\\right)}^2$$",
+            "$$-5\\operatorname{csc}\\left(x\\right)$$"
+        ]
+    },
+    {
+        "id": "a394625deriv16a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-10$$"
+        ],
+        "dependencies": [
+            "a394625deriv16a-h2"
+        ],
+        "title": "Find the Derivative Value at $$x$$",
+        "text": "What's the derivative value at $$x$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a394625deriv16a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a394625deriv16a-h3"
+        ],
+        "title": "Find the Function Value at $$x$$",
+        "text": "What's the function value at $$x$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a394625deriv16a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a394625deriv16a-h4"
+        ],
+        "title": "One fixed point and determined slope determines the line",
+        "text": "We got the line passed the tangent point and we got its slope to be the derivative value, so we can determine the line",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

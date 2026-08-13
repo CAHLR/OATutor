@@ -1,0 +1,36 @@
+[
+    {
+        "id": "af69612T113-period-P03a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of period",
+        "text": "A function has period $$w$$ if $$p\\left(x+kw\\right)=p(x)$$ for all $$x, $$ where $$k$$ is an integer.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af69612T113-period-P03a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af69612T113-period-P03a-h1"
+        ],
+        "title": "Multiple periods",
+        "text": "$$\\tan(\\theta)$$ is $$2\\pi$$ periodic. It is also $$4\\pi$$ periodic. Its minimum period is $$\\pi.$$ Thus, $$\\tan(\\theta)$$ is also $$3\\pi$$ periodic as well.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af69612T113-period-P03a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af69612T113-period-P03a-h2"
+        ],
+        "title": "Not a period",
+        "text": "It is not $$\\frac{\\pi}{2}$$ periodic. $$\\tan(-\\pi/4)=-1$$ and $$\\tan(-\\pi/4+\\pi/2)=\\tan(\\pi/4)=1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

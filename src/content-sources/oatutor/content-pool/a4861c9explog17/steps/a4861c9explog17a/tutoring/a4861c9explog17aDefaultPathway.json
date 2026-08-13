@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a4861c9explog17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Isolate term with $$x$$",
+        "text": "To solve, first isolate the term with the $$x$$ to be alone on one side of the equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4861c9explog17a-h1"
+        ],
+        "title": "Isolating $$x$$",
+        "text": "Divide both sides by the coefficient of the e term, which is $$4$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog17a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{7}{4}$$"
+        ],
+        "dependencies": [
+            "a4861c9explog17a-h2"
+        ],
+        "title": "Dividing by Coefficient",
+        "text": "What is the value of the right hand side when dividing both sides of the equation by 4?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog17a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4861c9explog17a-h3"
+        ],
+        "title": "Variable in Exponent",
+        "text": "To get the variable out of the exponent, take the natural log of both sides.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog17a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a4861c9explog17a-h4"
+        ],
+        "title": "Inverse Functions",
+        "text": "Since ln(x) and $$e^x$$ are inverse functions, taking the natural log of a term with e leaves only the exponent left.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog17a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a4861c9explog17a-h5"
+        ],
+        "title": "Isolate $$t$$",
+        "text": "To isolate $$t$$ by itself, divide both sides by the coefficient of $$t$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

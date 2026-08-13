@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a48e533fluid45a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Poiseuille's Law",
+        "text": "To solve for the factor by which the average radii of the runner\u2019s blood vessels have increased, we use Poiseuille's Law: $$Q=\\frac{\\Delta P \\pi r^4}{8\\eta L}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a48e533fluid45a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a48e533fluid45a-h1"
+        ],
+        "title": "Set Up the Ratio Using Poiseuille\u2019s Law",
+        "text": "$$\\frac{Q_2}{Q_1}=\\frac{\\Delta P_2}{\\Delta P_1} \\frac{\\eta_1}{\\eta_2} \\left(\\frac{r_2}{r_1}\\right)^4$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a48e533fluid45a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.58$$"
+        ],
+        "dependencies": [
+            "a48e533fluid45a-h2"
+        ],
+        "title": "Substitute the Given Values and Solve for $$\\frac{r_2}{r_1}$$",
+        "text": "As we know $$Q_2=10Q_1$$, $$\\Delta P_2=1.5\\Delta P_1$$, and $$\\eta_2=0.95\\eta_1$$, what is $$\\frac{r_2}{r_1}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

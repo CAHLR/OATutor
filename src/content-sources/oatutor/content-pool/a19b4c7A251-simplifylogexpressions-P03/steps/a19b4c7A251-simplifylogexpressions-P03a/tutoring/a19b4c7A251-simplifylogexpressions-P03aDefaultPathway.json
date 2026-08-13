@@ -1,0 +1,84 @@
+[
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P03a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply the law of logarithms for powers",
+        "text": "$$c\\log_b(a)=\\log_b(a**c)$$ \\n $$\\log_3(x+1)-\\frac{1}{2}\\log_3(x**2-1)=\\log_3(x+1)-\\log_3\\left((x**2-1)**{1/2}\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P03a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P03a-h1"
+        ],
+        "title": "Apply the law of logarithms for quotients",
+        "text": "$$\\log_b(a)-\\log_b(c)=\\log_b(a/c)$$ \\n $$\\log_3(x+1)-\\log_3\\left((x**2-1)**{1/2}\\right)=\\log_3\\left(\\frac{(x+1)}{(x**2-1)**{1/2}}\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P03a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P03a-h2"
+        ],
+        "title": "Decompose the denominator",
+        "text": "$$\\log_3\\left(\\frac{(x+1)}{(x**2-1)**{1/2}}\\right)=\\log_3\\left(\\frac{(x+1)}{\\left((x+1)(x-1)\\right)**{1/2}}\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P03a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P03a-h3"
+        ],
+        "title": "Create a common power of $$\\frac{1}{2}$$ in the numerator (trick!)",
+        "text": "$$\\frac{b**a}{c**a}=\\left(\\frac{b}{c}\\right)**a$$ and $$b=(b**2)**{1/2}$$ \\n $$\\log_3\\left(\\frac{(x+1)}{\\left((x+1)(x-1)\\right)**{1/2}}\\right)=\\log_3\\left(\\dfrac{\\left((x+1)**{2}\\right)**{1/2}}{\\left((x+1)(x-1)\\right)**{1/2}}\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P03a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P03a-h4"
+        ],
+        "title": "Apply exponential laws for powers",
+        "text": "$$(a**b)**c=a**{bc}$$ \\n $$\\log_3\\left(\\dfrac{\\left((x+1)**{2}\\right)**{1/2}}{\\left((x+1)(x-1)\\right)**{1/2}}\\right)=\\log_3\\left(\\dfrac{(x+1)**{2}}{(x+1)(x-1)}\\right)**{1/2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P03a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P03a-h5"
+        ],
+        "title": "Convert fractional power to radical",
+        "text": "$$\\sqrt[n]{a}=a**{1/n}$$ \\n $$\\log_3\\left(\\dfrac{(x+1)**{2}}{(x+1)(x-1)}\\right)**{1/2}=\\log_3\\sqrt{\\dfrac{(x+1)**{2}}{(x+1)(x-1)}}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P03a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P03a-h6"
+        ],
+        "title": "Identify $$\\frac{P\\left(x\\right)}{Q\\left(x\\right)}$$ in the expression $$\\log_3\\left(\\sqrt{\\dfrac{P(x)}{Q(x)}}\\right)$$",
+        "text": "We have arrived at an expression $$\\log_3\\sqrt{\\dfrac{(x+1)**{2}}{(x+1)(x-1)}}=\\log_3\\sqrt{\\frac{P(x)}{Q(x)}}.$$ Thus we have $$P(x)/Q(x)=\\dfrac{(x+1)**{2}}{(x+1)(x-1)}=\\dfrac{(x+1)}{(x-1)}$$ when we cancel like terms.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

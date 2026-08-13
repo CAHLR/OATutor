@@ -1,0 +1,90 @@
+[
+    {
+        "id": "a394625deriv19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Breaking Down the Question",
+        "text": "Write csc(x) as an expression of sin(x) and cos(x)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a394625deriv19a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{1}sin^$\\left(x\\righ$$"
+        ],
+        "dependencies": [
+            "a394625deriv19a-h1"
+        ],
+        "title": "Transform sec(x)",
+        "text": "What's sec(x)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\frac{1}cos^$\\left(x\\righ$$",
+            "$$\\frac{1}sin^$\\left(x\\righ$$",
+            "$$\\frac{1}tan^$\\left(x\\righ$$"
+        ]
+    },
+    {
+        "id": "a394625deriv19a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "cos(x)"
+        ],
+        "dependencies": [
+            "a394625deriv19a-h2"
+        ],
+        "title": "Find the Derivative of sin(x)",
+        "text": "What's the derivative of sin(x)",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "cos(x)",
+            "sin(x)",
+            "$$-sin(x)$$"
+        ]
+    },
+    {
+        "id": "a394625deriv19a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{-cos\\left(x\\right)}{sin^2\\left(x\\right)}$$"
+        ],
+        "dependencies": [
+            "a394625deriv19a-h3"
+        ],
+        "title": "Find the Derivative of $$\\frac{1}sin^$\\left(x\\righ$$",
+        "text": "What's the derivative of $$\\frac{1}sin^$\\left(x\\righ$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\frac{-sin\\left(x\\right)}cos^$\\left(x\\righ$$",
+            "$$\\frac{-cos\\left(x\\right)}{sin^2\\left(x\\right)}$$",
+            "$$\\frac{sin^2\\left(x\\right)}cos^$\\left(x\\righ$$"
+        ]
+    },
+    {
+        "id": "a394625deriv19a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a394625deriv19a-h4"
+        ],
+        "title": "Change Representations",
+        "text": "Change sin and cos to tan and sec",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

@@ -1,0 +1,118 @@
+[
+    {
+        "id": "a666a84A213-exploginverse-P11a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [],
+        "title": "Break into simpler pieces",
+        "text": "What is $$\\log_{b}\\left(1\\right)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a666a84A213-exploginverse-P11a-h1-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Express as an exponential",
+                "text": "$$\\log_{b}\\left(1\\right)$$ is asking for the power $$y$$ so that $$b^y=1$$.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a666a84A213-exploginverse-P11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P11a-h1"
+        ],
+        "title": "Simplified equation",
+        "text": "We have reduced the question to solving $$b**{\\log_{b}(\\sqrt{y**2+16})}=5$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P11a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sqrt{y^2+16}$$"
+        ],
+        "dependencies": [
+            "a666a84A213-exploginverse-P11a-h2"
+        ],
+        "title": "Apply the cancellation principle to LHS",
+        "text": "Simplify $$b**{\\log_{b}(\\sqrt{y**2+16})}$$ by canceling logs and exponents.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a666a84A213-exploginverse-P11a-h3-s2",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Inverse property",
+                "text": "$$b**{\\log_{b}(\\sqrt{y**2+16})}$$ $$=\\sqrt{y^2+16}$$ by the cancellation property! Logs undo exponents, and exponents undo logs.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a666a84A213-exploginverse-P11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P11a-h3"
+        ],
+        "title": "Reduced problem",
+        "text": "We have reduced $$b**{\\log_{b}(\\sqrt{y**2+16})}=5$$ to solving the radical equation $$\\sqrt{y^2+16}=5$$ for $$y$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P11a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P11a-h4"
+        ],
+        "title": "Isolate $$y$$",
+        "text": "Squaring both sides, we get $$y^2+16=25$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P11a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P11a-h5"
+        ],
+        "title": "Solve for $$y$$.",
+        "text": "Solve $$y^2+16=25$$. Subtract $$16$$ from both sides to get $$y^2=9$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P11a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P11a-h6"
+        ],
+        "title": "Take the square root.",
+        "text": "Taking a square root, we find two solutions, $$y=\\pm 3$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

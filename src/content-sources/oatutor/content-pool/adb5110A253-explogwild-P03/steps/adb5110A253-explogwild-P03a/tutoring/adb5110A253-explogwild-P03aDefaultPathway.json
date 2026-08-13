@@ -1,0 +1,216 @@
+[
+    {
+        "id": "adb5110A253-explogwild-P03a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the constants",
+        "text": "Determine the constants $$K, $$ $$A, $$ and $$N_0$$ from the problem statement.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P03a-h2",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P03a-h1"
+        ],
+        "title": "K",
+        "text": "K is the total population of the town, which is 10,000",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P03a-h3",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P03a-h2"
+        ],
+        "title": "$$N_0$$",
+        "text": "$$N_0$$ is the initial number of people who have heard the rumor, which is $$10$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P03a-h4",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P03a-h3"
+        ],
+        "title": "Estimate A",
+        "text": "$$A=\\frac{K-N_0}{N_0}=$$ $$\\frac{10, 000-10}{10}$$ which is approximately 1,000 since $$10, 000-10$$ is approximately 10,000.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P03a-h5",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P03a-h4"
+        ],
+        "title": "What are we looking for",
+        "text": "We want to know for which $$t$$ we get $$N(t)=\\frac{K}{1+{A10}^{\\left(-rt\\right)}}=9, 000$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P03a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$r$$"
+        ],
+        "dependencies": [
+            "adb5110A253-explogwild-P03a-h5"
+        ],
+        "title": "Which constant is unknown?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$A$$",
+            "$$K$$",
+            "$$N_0$$",
+            "$$r$$",
+            "$$r$$"
+        ]
+    },
+    {
+        "id": "adb5110A253-explogwild-P03a-h7",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P03a-h6"
+        ],
+        "title": "Solve for the growth rate",
+        "text": "Use the fact that after $$3$$ hours 5,000 have heard the rumor to find $$r.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P03a-h8",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P03a-h7"
+        ],
+        "title": "Write an equation for $$r$$",
+        "text": "$$5, 000=$$ $$\\frac{10,000}{1+1000\\cdot 10**{-3r}}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P03a-h9",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P03a-h8"
+        ],
+        "title": "Multiply both sides by the denominator",
+        "text": "$$5, 000=$$ $$\\frac{10,000}{1+1000\\cdot 10**{-3r}}$$ \\n\\n$$5000$$ $$\\left(1+1000\\cdot 10**{-3r}\\right)$$ $$=10, 000$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P03a-h10",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P03a-h9"
+        ],
+        "title": "Divide both sides by 5,000",
+        "text": "$$\\left(1+1000\\cdot 10**{-3r}\\right)$$ $$=2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P03a-h11",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P03a-h10"
+        ],
+        "title": "Isolate $$r$$ (more algebra)",
+        "text": "$$1000$$ $$\\cdot$$ $${10}^{\\left(-3r\\right)}=1$$ \\n\\n$${10}^{\\left(-3r\\right)}=\\frac{1}{1000}$$ \\n\\n$$-3r=\\log_{10}\\left(\\frac{1}{1000}\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P03a-h12",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P03a-h11"
+        ],
+        "title": "Apply law of logarithm",
+        "text": "$$-3r=\\log_{10}\\left(\\frac{1}{1000}\\right)=\\log_{10}\\left(1\\right)-\\log_{10}\\left(1000\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P03a-h13",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P03a-h12"
+        ],
+        "title": "Solve for $$r$$",
+        "text": "This tells us that \\n $$3r=\\log_{10}\\left(1000\\right)=\\log_{10}\\left({10}^3\\right)=3$$, or $$r=1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P03a-h14",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P03a-h13"
+        ],
+        "title": "Back to the problem",
+        "text": "Now find $$t$$ so that $$N(t)=9, 000$$ given that $$r=1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P03a-h15",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P03a-h14"
+        ],
+        "title": "Find the equation",
+        "text": "Approximate to find $$t$$ \\n $$9, 000=$$ $$\\frac{10,000}{1+1000\\cdot 10**{-t}}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P03a-h16",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P03a-h15"
+        ],
+        "title": "Solve for $$t$$",
+        "text": "$$1000$$ $$(10**{-t})$$ $$=\\frac{1}{9}$$ \\n\\n$$\\frac{1000}{{10}^t}$$ $$=\\frac{1}{9}$$ \\n\\n$$9000={10}^t$$ \\n\\n$$t=\\log_{10}\\left(9000\\right)$$ $$\\approx$$ $$3.954$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P03a-h17",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P03a-h16"
+        ],
+        "title": "Round answer",
+        "text": "To the nearest hour, this is approximately $$4$$ hours before 9,000 people have heard the rumor.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

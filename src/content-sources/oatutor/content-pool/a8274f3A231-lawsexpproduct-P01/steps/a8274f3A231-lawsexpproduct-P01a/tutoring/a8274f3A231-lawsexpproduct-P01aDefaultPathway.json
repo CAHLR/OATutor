@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a8274f3A231-lawsexpproduct-P01a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Eliminate a choice",
+        "text": "A counterexample shows the statement that $$a^c+b^c$$ can always be rewritten as $$\\left(a+b\\right)^c$$ to be false: $$2^2+1^2=5$$ but $$\\left(2+1\\right)^2=9$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8274f3A231-lawsexpproduct-P01a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8274f3A231-lawsexpproduct-P01a-h1"
+        ],
+        "title": "True for a special case",
+        "text": "It is true that $$a^1$$ $$\\cdot$$ $$b^1=$$ $${ab}^1$$ $$=ab$$. But is that really the only time this holds? How can you be sure?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8274f3A231-lawsexpproduct-P01a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8274f3A231-lawsexpproduct-P01a-h2"
+        ],
+        "title": "Try a test case",
+        "text": "Try writing it out for a test case when $$c=2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

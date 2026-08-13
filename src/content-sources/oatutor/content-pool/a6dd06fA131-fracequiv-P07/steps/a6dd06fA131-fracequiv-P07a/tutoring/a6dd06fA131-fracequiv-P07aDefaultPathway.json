@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a6dd06fA131-fracequiv-P07a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find common factors",
+        "text": "Rewrite the fraction in terms of common factors in the numerator and denominator. \\n $$\\frac{9x}{6-6x}=\\frac{3(3x)}{3(2-2x)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dd06fA131-fracequiv-P07a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6dd06fA131-fracequiv-P07a-h1"
+        ],
+        "title": "Cancellation",
+        "text": "We can cancel the common factor of $$3$$ in the numerator and denominator because it is nonzero. \\n $$\\frac{3(3x)}{3(2-2x)}=\\frac{3x}{2-2x}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dd06fA131-fracequiv-P07a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6dd06fA131-fracequiv-P07a-h2"
+        ],
+        "title": "Move negative from the denominator to the numerator",
+        "text": "$$\\frac{3x}{2-2x}=\\frac{3x}{-(-2+2x)}=\\frac{-3x}{-2+2x}=\\frac{-3x}{2x-2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

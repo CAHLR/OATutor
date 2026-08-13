@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a9d566eA243-logsofpowers-P11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Write radicals as powers",
+        "text": "$$\\log_2\\left(\\frac{\\sqrt[3]{x**4}}{y**{1/2}z}\\right)=\\log_2\\left(\\frac{(x**4)**{1/3}}{y**{1/2}z}\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9d566eA243-logsofpowers-P11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9d566eA243-logsofpowers-P11a-h1"
+        ],
+        "title": "Apply laws of logarithms for quotients.",
+        "text": "$$\\log_2\\left(\\frac{(x**4)**{1/3}}{y**{1/2}z}\\right)=\\log_2(x**{4/3})-\\log_2(y**{1/2}z)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9d566eA243-logsofpowers-P11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9d566eA243-logsofpowers-P11a-h2"
+        ],
+        "title": "Apply the laws of logarithms for products to the last term.",
+        "text": "$$\\log_2(x**{4/3})-\\log_2(y**{1/2}z)=\\log_2(x**{4/3})-\\left(\\log_2(y**{1/2})+\\log_2(z)\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9d566eA243-logsofpowers-P11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9d566eA243-logsofpowers-P11a-h3"
+        ],
+        "title": "Apply laws of logarithms for powers.",
+        "text": "$$\\log_2(x**{4/3})-\\left(\\log_2(y**{1/2})+\\log_2(z) \\right)=4/3\\log_2(x)-1/2\\log_2(y)-\\log_2(z)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

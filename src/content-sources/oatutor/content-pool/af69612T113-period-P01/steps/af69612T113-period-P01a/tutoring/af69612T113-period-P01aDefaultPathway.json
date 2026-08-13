@@ -1,0 +1,36 @@
+[
+    {
+        "id": "af69612T113-period-P01a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of period",
+        "text": "A function has period $$w$$ if $$p\\left(x+kw\\right)=p(x)$$ for all $$x, $$ where $$k$$ is an integer.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af69612T113-period-P01a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af69612T113-period-P01a-h1"
+        ],
+        "title": "Multiple periods",
+        "text": "$$\\cos(\\theta)$$ is $$2\\pi$$ periodic, because you return to the original position on the circle when you have traveled $$2\\pi$$ radians. But you also travel back to the same position after $$4\\pi$$ or $$6\\pi$$ or $$100\\pi$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af69612T113-period-P01a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af69612T113-period-P01a-h2"
+        ],
+        "title": "Not a period",
+        "text": "$$\\cos(\\theta)$$ is not $$3\\pi$$ periodic. For example, $$\\cos(0)=1$$ but $$\\cos(3\\pi)=-1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,75 @@
+[
+    {
+        "id": "ad1dfa0problem10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Centripetal Acceleration Formula",
+        "text": "Centripetal acceleration is related to the velocity of an object moving in a circle and the radius of the circular path by the formula: $$a_c=\\frac{v^2}{r}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad1dfa0problem10a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10.85$$"
+        ],
+        "dependencies": [
+            "ad1dfa0problem10a-h1"
+        ],
+        "title": "Solve for the Velocity",
+        "text": "As we know $$a_c=1.5g$$ and $$r=8.00m$$, solve for v using centripetal acceleration formula.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad1dfa0problem10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad1dfa0problem10a-h2"
+        ],
+        "title": "Angular Velocity Formula",
+        "text": "Use formula $$v=\\omega r$$ to calculate angular velocity in this context.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad1dfa0problem10a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.36$$"
+        ],
+        "dependencies": [
+            "ad1dfa0problem10a-h3"
+        ],
+        "title": "Solve for Angular Velocity",
+        "text": "What is $$\u03c9=\\frac{v}{r}=(10.85$$ m/s)/(8.00 m) in $$\\frac{rad}{s}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ad1dfa0problem10a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12.9$$"
+        ],
+        "dependencies": [
+            "ad1dfa0problem10a-h4"
+        ],
+        "title": "Unit Conversion",
+        "text": "Since $$1$$ revolution is equal to $$2\\pi$$ radians and $$1$$ minute is $$60$$ seconds, $$\\frac{rev}{min}=$$ $$\\frac{60\\frac{rad}{s}}{2} \\pi$$. Now convert $$1.36$$ $$\\frac{rad}{s}$$ to $$\\frac{rev}{min}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

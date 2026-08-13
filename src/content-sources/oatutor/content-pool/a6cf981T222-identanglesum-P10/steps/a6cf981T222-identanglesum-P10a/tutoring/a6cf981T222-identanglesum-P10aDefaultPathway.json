@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a6cf981T222-identanglesum-P10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply sum formula",
+        "text": "Appealing to the suggestion, \\n $$\\sin(2x+x)=\\sin(2x)\\cos(x)+\\cos(2x)\\sin(x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6cf981T222-identanglesum-P10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6cf981T222-identanglesum-P10a-h1"
+        ],
+        "title": "Apply sum formula again",
+        "text": "Repeat with $$\\sin(2x)=\\sin(x+x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6cf981T222-identanglesum-P10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6cf981T222-identanglesum-P10a-h2"
+        ],
+        "title": "Apply sum formula again",
+        "text": "$$\\sin(2x)\\cos(x)+\\cos(2x)\\sin(x)=2\\sin(x)\\cos(x)\\cos(x)+\\cos(2x)\\sin(x)$$ \\n $$=2\\sin(x)\\cos**2(x)+\\cos(2x)\\sin(x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

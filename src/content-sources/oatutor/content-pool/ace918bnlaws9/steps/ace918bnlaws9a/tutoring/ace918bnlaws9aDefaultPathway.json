@@ -1,0 +1,41 @@
+[
+    {
+        "id": "ace918bnlaws9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Weight on the Moon",
+        "text": "The gravitational force on the Moon is one-sixth of that on Earth. This means that the weight of an object on the Moon is one-sixth of its weight on Earth.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws9a-h1"
+        ],
+        "title": "Relating Moon Weight to Earth Weight",
+        "text": "If the weight on the Moon is $$250$$ N, then the weight on Earth can be calculated by multiplying the Moon weight by $$6$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws9a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1500$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws9a-h2"
+        ],
+        "title": "Calculate Earth Weight",
+        "text": "Use the relationship between Moon weight and Earth weight to find the weight of the astronaut on Earth. Multiply the Moon weight by $$6$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

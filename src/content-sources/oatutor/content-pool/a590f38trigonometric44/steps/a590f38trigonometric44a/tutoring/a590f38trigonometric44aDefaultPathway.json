@@ -1,0 +1,122 @@
+[
+    {
+        "id": "a590f38trigonometric44a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recognize the quadratic form",
+        "text": "This equation resembles a quadratic equation. Consider a substitution to simplify it.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric44a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2u^2+u-1=0$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric44a-h1"
+        ],
+        "title": "Identify the substitution",
+        "text": "Let u $$=$$ $$\\cos(t)$$. $$Rewrite$$ $$the$$ $$equation$$ $$in$$ $$terms$$ $$of$$ $$u$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$2u^2+u-1=0$$",
+            "$$2u^2-u-1=0$$",
+            "$$2u^2+u+1=0$$",
+            "$$2u^2+u=1$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric44a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric44a-h1"
+        ],
+        "title": "Solve the quadratic equation",
+        "text": "Solve the quadratic equation for u. You can use factoring or the quadratic formula.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric44a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$u=\\frac{1}{2}$$, $$u=-1$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric44a-h2"
+        ],
+        "title": "Find values for u",
+        "text": "What are the values of u that satisfy $$2u^2+u-1=0$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$u=\\frac{1}{2}$$, $$u=-1$$",
+            "$$u=\\frac{-1}{2}$$, $$u=1$$",
+            "$$u=1$$, $$u=-2$$",
+            "$$u=\\frac{1}{2}$$, $$u=1$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric44a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric44a-h2"
+        ],
+        "title": "Solve for $$t$$",
+        "text": "Now substitute back u $$=$$ $$\\cos(t)$$ and solve for $$t$$ in the given interval $$0$$ $$\\leq$$ \\theta<2\\pi$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric44a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{3$$,} $$\\frac{5\\pi}{3}$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric44a-h3"
+        ],
+        "title": "Solve for $$t$$ when $$\\cos(t)=\\frac{1}{2}$$",
+        "text": "For what values of $$t$$ in $$0$$ $$\\leq$$ \\theta<2\\pi$$ is $$\\cos(t)=\\frac{1}{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\pi}{3$$,} $$\\frac{5\\pi}{3}$$",
+            "$$\\frac{2\\pi}{3$$,} $$\\frac{4\\pi}{3}$$",
+            "$$\\frac{\\pi}{6$$,} $$\\frac{11\\pi}{6}$$",
+            "$$\\frac{\\pi}{3}$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric44a-s4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\pi$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric44a-h3"
+        ],
+        "title": "Solve for $$t$$ when $$\\cos(t)=-1$$",
+        "text": "For what values of $$t$$ in $$0$$ $$\\leq$$ \\theta<2\\pi$$ is $$\\cos(t)=-1$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

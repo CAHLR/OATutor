@@ -1,0 +1,73 @@
+[
+    {
+        "id": "a970b2ahypergeometric13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determining All Possible Values of X",
+        "text": "We want to know all the total possible values of X, not just the values we want. Also, note that we have $$8$$ students that in the first demonstration total and $$6$$ Tae Kwon Do students and $$7$$ Shotokan Karate students.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a970b2ahypergeometric13a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a970b2ahypergeometric13a-h1"
+        ],
+        "title": "Determining Possibilities",
+        "text": "Is it possible to have $$0$$ Shotokan Karate students in the first demonstration?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a970b2ahypergeometric13a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a970b2ahypergeometric13a-h2"
+        ],
+        "title": "Having all $$6$$ Tae Kwon Do",
+        "text": "If we have all $$6$$ Tae Kwon Do students be part of the first demonstration, we still need $$8-6=2$$ students to be part of the first demonstration. Therefore, what is the minimum number of Shotokan Karate that must be part of the group?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a970b2ahypergeometric13a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$X=2$$, $$3$$, $$4$$, $$5$$, $$6$$, $$7$$"
+        ],
+        "dependencies": [
+            "a970b2ahypergeometric13a-h3"
+        ],
+        "title": "Determining All Possible Values of X",
+        "text": "Understanding that the values that X takes on includes the entire set of possible number of Shotokan Karate students in the sample of $$8$$, what values does X take on? In other words, what are the possible number of Shotokan Karate students in the first demonstration?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$X=2$$, $$3$$, $$4$$, $$5$$, $$6$$, $$7$$",
+            "$$X=0$$, $$1$$, $$2$$, $$3$$, $$4$$, $$5$$, $$6$$, $$7$$",
+            "$$X=1$$, $$2$$, $$3$$, $$4$$, $$5$$, $$6$$, $$7$$, $$8$$",
+            "$$X=0$$, $$1$$, $$2$$, $$3$$, $$4$$, $$5$$, $$6$$, $$7$$, $$8$$"
+        ]
+    }
+]

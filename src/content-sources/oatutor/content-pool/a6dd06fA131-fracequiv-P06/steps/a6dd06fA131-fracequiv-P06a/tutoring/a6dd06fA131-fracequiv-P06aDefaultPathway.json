@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a6dd06fA131-fracequiv-P06a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Equivalent fractions",
+        "text": "Two fractions are equivalent if we can recognize one of two relationships: \\n - $$\\frac{a}{b}=\\frac{c}{d}$$ and $$ad=bc$$ \\n - $$\\frac{b}{c}=\\frac{ab}{ac}$$ if a\\neq $$0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dd06fA131-fracequiv-P06a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6dd06fA131-fracequiv-P06a-h1"
+        ],
+        "title": "Example $$1$$",
+        "text": "$$x+\\frac{1}{x}$$ is not equivalent to $$\\frac{x+1}{x}$$. One way to see this is to plug in values. When $$x=2$$, $$x+\\frac{1}{x}$$ is $$2.5$$, but $$\\frac{x+1}{x}=1.5$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dd06fA131-fracequiv-P06a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6dd06fA131-fracequiv-P06a-h2"
+        ],
+        "title": "Example $$2$$",
+        "text": "$$1-x$$ is not equivalent to $$\\frac{x+1}{x}$$. One way to see this is to plug in values. When $$x=1$$, $$1-x=0$$, but $$\\frac{x+1}{x}=2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dd06fA131-fracequiv-P06a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6dd06fA131-fracequiv-P06a-h3"
+        ],
+        "title": "Example $$3$$",
+        "text": "$$\\frac{x^2-1}{x^2-x}$$ is not equivalent to $$\\frac{x+1}{x}$$. Note that $$\\frac{x^2-1}{x^2-x}=\\frac{\\left(x-1\\right) \\left(x+1\\right)}{\\left(x-1\\right) x}$$. While this is of the form $$\\frac{ab}{ac}$$, the issue here is that the multiple $$x-1$$ is not necessarily nonzero. So this expression is equivalent to $$\\frac{x+1}{x}$$ only when $$x-1$$ is not zero.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dd06fA131-fracequiv-P06a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a6dd06fA131-fracequiv-P06a-h4"
+        ],
+        "title": "Example $$4$$",
+        "text": "$$\\frac{2\\left(x+1\\right)}{2x}$$ is equivalent to $$\\frac{x+1}{x}$$ since the numerator and denominator are both multiplied by the nonzero constant $$2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

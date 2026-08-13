@@ -1,0 +1,52 @@
+[
+    {
+        "id": "aae56detrig13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall Unit Circle Values",
+        "text": "What is $$cos\\left(\\frac{5\\pi}{4}\\right)$$ on the unit circle?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig13a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-\\sqrt{2}}{2}$$"
+        ],
+        "dependencies": [
+            "aae56detrig13a-h1"
+        ],
+        "title": "Direct Evaluation",
+        "text": "What is $$cos\\left(\\frac{5\\pi}{4}\\right)$$ using the unit circle?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig13a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\pi+\\frac{\\pi}{4}$$"
+        ],
+        "dependencies": [
+            "aae56detrig13a-h2"
+        ],
+        "title": "Alternative Setup",
+        "text": "Which expression equals $$\\frac{5\\pi}{4}$$ and is useful with a sum or difference identity?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\pi+\\frac{\\pi}{4}$$",
+            "$$\\frac{\\pi}{2}+\\frac{3\\pi}{4}$$",
+            "$$2\\pi-\\frac{3\\pi}{4}$$",
+            "$$\\frac{5\\pi}{2}-\\pi$$"
+        ]
+    }
+]

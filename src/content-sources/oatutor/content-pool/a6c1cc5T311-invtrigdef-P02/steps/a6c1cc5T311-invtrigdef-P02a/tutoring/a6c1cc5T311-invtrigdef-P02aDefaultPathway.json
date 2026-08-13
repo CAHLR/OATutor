@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a6c1cc5T311-invtrigdef-P02a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\sin(x)$$ decreases toward both $$x=\\frac{\\pi}{4}$$ and $$x=\\frac{3\\pi}{4}$$, so $$\\sin(x)$$ fails the horizontal line test as there is a peak at $$\\frac{\\pi}{2}$$"
+        ],
+        "dependencies": [],
+        "title": "Increasing or decreasing",
+        "text": "A \"one-to-one\" function must assign a unique output to every unique input. On the interval $$[\\pi/4,3\\pi/4],$$ what happens to $$\\sin(x)$$ as you move away from $$x=\\frac{\\pi}{2}$$ toward either endpoint? What does this imply about output values?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\sin(x)$$ decreases toward both $$x=\\frac{\\pi}{4}$$ and $$x=\\frac{3\\pi}{4}$$, so $$\\sin(x)$$ fails the horizontal line test as there is a peak at $$\\frac{\\pi}{2}$$",
+            "$$\\sin(x)$$ increases toward both $$x=\\frac{\\pi}{4}$$ and $$x=\\frac{3\\pi}{4}$$, so $$\\sin(x)$$ fails the horizontal line test as there is a valley at $$x=\\frac{\\pi}{2}$$",
+            "\\n$$\\sin(x)$$ decreases toward $$x=\\frac{\\pi}{4}$$ and increases toward $$x=\\frac{3\\pi}{4}$$, so outputs are all unique",
+            "$$\\sin(x)$$ increases toward $$x=\\frac{\\pi}{4}$$ and decreases toward $$x=\\frac{3\\pi}{4}$$, so outputs are all unique"
+        ]
+    },
+    {
+        "id": "a6c1cc5T311-invtrigdef-P02a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6c1cc5T311-invtrigdef-P02a-h1"
+        ],
+        "title": "Test midpoints and end points",
+        "text": "Calculate $$\\sin(\\pi/3)$$ and $$\\sin(2\\pi/3).$$ If these values are identical, the function has \"doubled back\" on itself.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6c1cc5T311-invtrigdef-P02a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6c1cc5T311-invtrigdef-P02a-h2"
+        ],
+        "title": "Graph the function",
+        "text": "Visualize the graph. The function increases from $$x=\\frac{\\pi}{4}$$ up to $$x=\\frac{\\pi}{2}$$, then decreases to $$x=\\frac{3\\pi}{4}$$, meaning it doubles back through the same output values.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

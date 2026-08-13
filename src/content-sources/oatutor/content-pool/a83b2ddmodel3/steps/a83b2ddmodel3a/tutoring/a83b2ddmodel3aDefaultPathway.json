@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a83b2ddmodel3a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Pythagorean Theorem"
+        ],
+        "dependencies": [],
+        "title": "Finding a Formula",
+        "text": "What formula do we use to calculate distance between $$2$$ perpendicular lines?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Pythagorean Theorem",
+            "Binomial Theorem",
+            "Fundamental Theorem of Algebra"
+        ]
+    },
+    {
+        "id": "a83b2ddmodel3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a83b2ddmodel3a-h1"
+        ],
+        "title": "Setting Up an Equation",
+        "text": "Plug in what we know into the Pythagorean Theorem, in miles: $$\\left(\\frac{4mi}{hr} t\\right)^2$$ + $$\\left(\\frac{3mi}{hr} t\\right)^2$$ $$=$$ $$2^2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a83b2ddmodel3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a83b2ddmodel3a-h2"
+        ],
+        "title": "Solve",
+        "text": "$$16t^2+9t^2=4$$. $$t^2=\\frac{4}{25}$$ and $$t=\\frac{2}{5}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a83b2ddmodel3a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a83b2ddmodel3a-h3"
+        ],
+        "title": "Units",
+        "text": "$$\\frac{2}{5}$$ hours is better written as minutes.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

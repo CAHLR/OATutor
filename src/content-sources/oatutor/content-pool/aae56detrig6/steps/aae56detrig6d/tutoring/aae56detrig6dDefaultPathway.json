@@ -1,0 +1,41 @@
+[
+    {
+        "id": "aae56detrig6d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use the tangent difference identity",
+        "text": "Recall $$tan(alpha-beta)=\\fractan^1\\left(\\alpha\\right)-tan\\left(\\beta\\right)+tan\\left(\\alpha\\right) tan\\left(\\beta\\right)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig6d-h2",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig6d-h1"
+        ],
+        "title": "Substitute and simplify",
+        "text": "Substitute the tangent values into the difference identity and simplify.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig6d-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-33}{56}$$"
+        ],
+        "dependencies": [
+            "aae56detrig6d-h2"
+        ],
+        "title": "Calculate $$tan(alpha-beta)$$",
+        "text": "Using the values, what is $$tan(alpha-beta)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

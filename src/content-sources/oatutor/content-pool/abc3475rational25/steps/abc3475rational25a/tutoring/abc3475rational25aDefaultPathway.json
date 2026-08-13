@@ -1,0 +1,63 @@
+[
+    {
+        "id": "abc3475rational25a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Check the Highest Degree Term",
+        "text": "Note that the highest degree term is in the denominator, so the denominator grows faster than the numerator as $$t$$ approaches $$infinitity$$, for the most of the function. Are there any range of points of the denominator, where this increasing behavior might not be true?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abc3475rational25a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "abc3475rational25a-h1"
+        ],
+        "title": "Apply $$t=1$$",
+        "text": "What concentration do you get if you apply $$t=1$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abc3475rational25a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{4}{7}$$"
+        ],
+        "dependencies": [
+            "abc3475rational25a-h2"
+        ],
+        "title": "Apply $$t=2$$",
+        "text": "What concentration do you get if you apply $$t=2$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abc3475rational25a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{20}{103}$$"
+        ],
+        "dependencies": [
+            "abc3475rational25a-h3"
+        ],
+        "title": "Apply $$t=10$$",
+        "text": "What concentration do you get if you apply $$t=10$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

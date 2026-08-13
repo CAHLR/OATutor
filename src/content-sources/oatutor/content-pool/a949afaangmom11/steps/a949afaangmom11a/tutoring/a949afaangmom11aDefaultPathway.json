@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a949afaangmom11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Momentum",
+        "text": "Angular momentum $$L$$ for a rolling object is given by the formula $$L=I\\omega$$, $$where$$ $$I$$ $$is$$ $$the$$ $$moment$$ $$of$$ $$inertia$$ $$and$$ $$\\omega$$ is the angular velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom11a-h1"
+        ],
+        "title": "Moment of Inertia for a Sphere",
+        "text": "The moment of inertia $$I$$ for a uniform solid sphere is $$I=(2/5)mr**{2}$$. $$ \\cup se$$ $$this$$ $$to$$ $$calculate$$ $$I$$ $$for$$ $$the$$ $$boulder$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom11a-h2"
+        ],
+        "title": "Relating Linear and Angular Velocity",
+        "text": "The angular velocity $$\\omega$$ can be found using the relation $$v=r\\omega$$, $$where$$ $$v$$ $$is$$ $$the$$ $$linear$$ $$velocity$$ $$and$$ $$r$$ is the radius of the sphere.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom11a-h3"
+        ],
+        "title": "Finding Linear Velocity",
+        "text": "Use energy conservation to find the linear velocity halfway down the hill. The potential energy at the top is converted into kinetic energy (both translational and rotational) halfway down.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom11a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.6$$"
+        ],
+        "dependencies": [
+            "a949afaangmom11a-h4"
+        ],
+        "title": "Calculate Moment of Inertia",
+        "text": "Calculate the moment of inertia $$I$$ for the boulder using $$I=(2/5)mr**{2}$$, $$where$$ $$\\, \\text{m}\\$\\$=20$$ kg and $$r=0.2\\, \\text{m}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom11a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8.94$$"
+        ],
+        "dependencies": [
+            "a949afaangmom11a-h5"
+        ],
+        "title": "Calculate Linear Velocity",
+        "text": "Use energy conservation: $$mgh=(1/2)mv**{2}+(1/2)I\\omega$$**2. $$Solve$$ $$for$$ $$v$$ $$halfway$$ $$down$$ $$the$$ $$hill$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

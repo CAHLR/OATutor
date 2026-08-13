@@ -1,0 +1,169 @@
+[
+    {
+        "id": "a3abd22AddRational3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the Common Denominator",
+        "text": "Do all the terms in the expression have common denominator?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3abd22AddRational3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational3a-h1"
+        ],
+        "title": "Find the Common Denominator",
+        "text": "Yes, $$\\frac{x^2+8x}{x+5}$$ and $$\\frac{15}{x+5}$$ shared the same common denominator of $$x+5$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3abd22AddRational3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational3a-h2"
+        ],
+        "title": "Add Numerators",
+        "text": "Since all of fractions in the expression have common denominator, we can add the numerators and place the sum over the common denominator.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3abd22AddRational3a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x^2+8x+15$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational3a-h3"
+        ],
+        "title": "Add Numerators",
+        "text": "What is the sum of numerators for $$\\frac{x^2+8x}{x+5}$$ and $$\\frac{15}{x+5}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3abd22AddRational3a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational3a-h4"
+        ],
+        "title": "Factor the Numerator",
+        "text": "We can factor the sum of numerator we yield from step above to check if we can simplify the expression.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3abd22AddRational3a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(x+2\\right) \\left(x+7\\right)$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational3a-h5"
+        ],
+        "title": "Factor the Numerator",
+        "text": "Factor $$x^2+8x+15$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3abd22AddRational3a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(x+2\\right) \\left(x+7\\right)$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational3a-h6"
+        ],
+        "title": "Factor the Numerator",
+        "text": "In order to factor $$x^2+8x+15$$, you can use reverse foiling, completing square or quadratic formula. In here we can use reverse-foiling. $$\\left(x+a\\right) \\left(x+b\\right)=x^2+\\left(a+b\\right) x+ab$$. In this case, we get $$a b=15$$ and $$a+b=8$$. Assume both a and $$b$$ are integers, $$a=3$$ and $$b=5$$ is only one possible combination that satisfies $$a b=15$$ and $$a+b=8$$. So you can factor $$x^2+8x+15$$ as ?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3abd22AddRational3a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational3a-h7"
+        ],
+        "title": "Rewrite the expression",
+        "text": "From above steps, we get the sum of numerator is $$\\left(x+3\\right) \\left(x+5\\right)$$ and the denominator is $$x+5$$. So we can rewrite((x**2+8*x)/(x+5))+((15)/(x+5))as $$\\frac{\\left(x+3\\right) \\left(x+5\\right)}{x+5}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3abd22AddRational3a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational3a-h8"
+        ],
+        "title": "Simplify expression by Canceling out Terms",
+        "text": "Are there any ways to simplify $$\\frac{\\left(x+3\\right) \\left(x+5\\right)}{x+5}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3abd22AddRational3a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x+5$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational3a-h9"
+        ],
+        "title": "Simplify expression by Canceling out Terms",
+        "text": "What is the greatest common factor shared by the numerator and denominator in $$\\frac{\\left(x+3\\right) \\left(x+5\\right)}{x+5}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3abd22AddRational3a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$x+3$$"
+        ],
+        "dependencies": [
+            "a3abd22AddRational3a-h10"
+        ],
+        "title": "Simplify expression by Canceling out Terms",
+        "text": "As the final step, we cancel out $$x+5$$ on both numerator and denominator, what is the simplified form of $$\\frac{\\left(x+3\\right) \\left(x+5\\right)}{x+5}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a3abd22AddRational3a-h12",
+        "type": "hint",
+        "dependencies": [
+            "a3abd22AddRational3a-h11"
+        ],
+        "title": "Final Remark",
+        "text": "Note that the expression $$\\frac{x^2+8x}{x+5}+\\frac{15}{x+5}$$ and $$x+3$$ are different because the domain of ((x**2+8*x)/(x+5))+((15)/(x+5))) does not include $$x=-5$$. The domain of $$x+3$$ does not exclude $$x=-5$$. Strictly $$\\operatorname{speaking}\\left(\\frac{x^2+8x}{x+5}\\right)+\\frac{15}{x+5}$$ equals $$x+3$$ excluding the domain $$x=-5$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

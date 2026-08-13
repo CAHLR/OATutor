@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a767c30T221-identpyth-P04a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor the expression",
+        "text": "Rewrite the expression as the square of a simpler expression",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a767c30T221-identpyth-P04a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a767c30T221-identpyth-P04a-h1"
+        ],
+        "title": "A general rule",
+        "text": "Apply the rule $$\\left(a^2+b^2\\right)^2=a^4+2a^2 b^2+b^4$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a767c30T221-identpyth-P04a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a767c30T221-identpyth-P04a-h2"
+        ],
+        "title": "Factor the expression",
+        "text": "$$\\sin**4(x)+2\\sin**2(x)\\cos**2(x)+\\cos**4(x)=(\\sin**2(x)+\\cos**2(x))**2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a767c30T221-identpyth-P04a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a767c30T221-identpyth-P04a-h3"
+        ],
+        "title": "Trig identity",
+        "text": "$$(\\sin**2(x)+\\cos**2(x))**2=1**2=1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

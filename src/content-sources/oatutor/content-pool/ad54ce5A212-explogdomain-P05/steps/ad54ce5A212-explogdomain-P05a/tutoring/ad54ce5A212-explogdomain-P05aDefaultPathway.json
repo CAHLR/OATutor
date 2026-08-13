@@ -1,0 +1,83 @@
+[
+    {
+        "id": "ad54ce5A212-explogdomain-P05a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.13$$"
+        ],
+        "dependencies": [],
+        "title": "Find the base",
+        "text": "What is the base?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad54ce5A212-explogdomain-P05a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "ad54ce5A212-explogdomain-P05a-h1"
+        ],
+        "title": "Logs are only defined for positive input",
+        "text": "Is the input positive?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ad54ce5A212-explogdomain-P05a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad54ce5A212-explogdomain-P05a-h2"
+        ],
+        "title": "Inverse question",
+        "text": "For any positive number, like $$4$$, we can find a number $$n$$ so that $${1.13}^n=4$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad54ce5A212-explogdomain-P05a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "ad54ce5A212-explogdomain-P05a-h3"
+        ],
+        "title": "Test it",
+        "text": "Is $$\\log_{1.13}\\left(4\\right)$$ a real number? (Try it on a calculator! But note that an experiment is not a proof.)",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "ad54ce5A212-explogdomain-P05a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ad54ce5A212-explogdomain-P05a-h4"
+        ],
+        "title": "Conclusion",
+        "text": "Yes! Any positive base not equal to $$1$$ is valid. There is some number $$n$$ so that $${1.13}^n=4;$$ that number is $$\\log_{1.13}\\left(4\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

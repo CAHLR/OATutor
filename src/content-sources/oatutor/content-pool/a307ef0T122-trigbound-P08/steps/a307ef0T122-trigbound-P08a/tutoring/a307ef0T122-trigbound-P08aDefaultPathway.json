@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a307ef0T122-trigbound-P08a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Break into smaller pieces",
+        "text": "First find the range of values of $$\\left|5\\cos(\\theta)\\right|$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a307ef0T122-trigbound-P08a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a307ef0T122-trigbound-P08a-h1"
+        ],
+        "title": "Reduce complexity",
+        "text": "Since $$-5\\leq\\cos(\\theta)\\leq5,$$ the absolute values means that $$0\\leq\\left|5\\cos(\\theta)\\right|\\leq5$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a307ef0T122-trigbound-P08a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "between $$-10$$ and $$-5$$"
+        ],
+        "dependencies": [
+            "a307ef0T122-trigbound-P08a-h2"
+        ],
+        "title": "Add another term",
+        "text": "If $$|5\\cos(\\theta)|$$ is between $$0$$ and $$5$$, find the range of possible values of $$|5\\cos(\\theta)|-10$$",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "between $$-10$$ and $$-5$$",
+            "between $$10$$ and $$5$$",
+            "between $$5$$ and $$-5$$",
+            "between $$10$$ and $$-10$$"
+        ],
+        "subHints": [
+            {
+                "id": "a307ef0T122-trigbound-P08a-h3-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Subtract $$10$$ from both end points",
+                "text": "$$0-10=-10$$ and $$5-10=-5$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a307ef0T122-trigbound-P08a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a307ef0T122-trigbound-P08a-h3"
+        ],
+        "title": "Conclusion",
+        "text": "The values inside the outer absolute value are between $$-10$$ and $$-5$$. Take the absolute value, the largest value is $$10$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

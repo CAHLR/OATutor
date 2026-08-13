@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a949afaangmom17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Momentum Conservation",
+        "text": "The angular momentum of the system is conserved because there are no external torques acting on it. This means that the initial angular momentum of the system is equal to the final angular momentum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom17a-h1"
+        ],
+        "title": "Initial Angular Momentum",
+        "text": "Calculate the initial angular momentum of the system. Use the formula for angular momentum: $$L=I\\omega$$, $$where$$ $$I$$ $$is$$ $$the$$ $$moment$$ $$of$$ $$inertia$$ $$and$$ $$\\omega$$ is the angular velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom17a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.0006$$"
+        ],
+        "dependencies": [
+            "a949afaangmom17a-h2"
+        ],
+        "title": "Calculate Initial Moment of Inertia",
+        "text": "The initial moment of inertia of the system is the sum of the moment of inertia of the disk and the bug. Use the formula $$I_{\\text{disk}}$$=(1/2)*M*R**2 $$and$$ $$I_{\\text{bug}}=m*R$$**2.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom17a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.006$$"
+        ],
+        "dependencies": [
+            "a949afaangmom17a-h3"
+        ],
+        "title": "Calculate Initial Angular Momentum",
+        "text": "Using the initial moment of inertia and the initial angular velocity, calculate the initial angular momentum: $$L_{\\text{initial}}=I_{\\text{initial}}*\\omega_{\\text{initial}}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

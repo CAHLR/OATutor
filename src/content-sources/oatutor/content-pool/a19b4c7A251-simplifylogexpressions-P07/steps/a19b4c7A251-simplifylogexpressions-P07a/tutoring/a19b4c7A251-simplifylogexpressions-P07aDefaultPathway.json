@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P07a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "What to do with scary equations",
+        "text": "Look at the equation. It looks scary because there are too many logs! Think to yourself: what operation can I apply to this equation to get rid of one of them?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P07a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P07a-h1"
+        ],
+        "title": "Exponentiate both sides",
+        "text": "If $$a=b$$, $$2^a=2^b$$. \\n $$2**{\\log_2(\\log_2(x))}=2**2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P07a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P07a-h2"
+        ],
+        "title": "Apply cancellation property",
+        "text": "Exponentiation cancels logarithms: $$b**{\\log_b(a)}=a.$$ \\n $$2**{\\log_2(\\log_2(x))}=\\log_2(x)=2**2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P07a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P07a-h3"
+        ],
+        "title": "Rewrite in terms of exponents",
+        "text": "$$\\operatorname{log_2}\\left(x\\right)=4$$ means $$2^4=x$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

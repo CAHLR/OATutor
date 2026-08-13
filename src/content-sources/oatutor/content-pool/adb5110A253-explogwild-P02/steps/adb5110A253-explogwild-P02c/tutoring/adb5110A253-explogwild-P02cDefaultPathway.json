@@ -1,0 +1,48 @@
+[
+    {
+        "id": "adb5110A253-explogwild-P02c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Reframe the question",
+        "text": "The question is asking to find the number of hours $$t$$ such that $$5(2**t)>10,000$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P02c-h2",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P02c-h1"
+        ],
+        "title": "Solve for $$t$$",
+        "text": "Divide both sides by $$5$$ to get $$2^t>2000$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P02c-h3",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P02c-h2"
+        ],
+        "title": "Take the logarithm of both sides",
+        "text": "$$\\log_{2}\\left(2^t\\right)>\\log_{2}\\left(2, 000\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P02c-h4",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P02c-h3"
+        ],
+        "title": "Simplify and compute",
+        "text": "Cancellation on the left gives us $$t>\\log_{2}\\left(2, 000\\right)=10.9$$ hours.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

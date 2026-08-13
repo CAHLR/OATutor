@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a005bd5real5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "Start from inside and build out: what is g(h(x))?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a005bd5real5a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Plug in h(x) for $$x$$ in g(x): $$g(h(x))=\\sqrt{x}-6$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a005bd5real5a-h2"
+        ],
+        "title": "Substitute",
+        "text": "Now plug in $$g(h(x))=\\sqrt{x}-6$$ for $$x$$ in f(x): $$f(g(h(x)))=\\left(\\sqrt{x}-6\\right)^4+6$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real5a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a005bd5real5a-h3"
+        ],
+        "title": "Simplify",
+        "text": "$$\\left(\\sqrt{x}-6\\right)^4+6$$ is a good enough final answer (distributing is messy), so $$f(g(h(x)))=\\left(\\sqrt{x}-6\\right)^4+6$$ is our final answer.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

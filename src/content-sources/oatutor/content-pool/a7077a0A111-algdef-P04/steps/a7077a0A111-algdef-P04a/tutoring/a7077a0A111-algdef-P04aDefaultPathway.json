@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a7077a0A111-algdef-P04a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Plug in numbers to see if it holds",
+        "text": "If it is false, it won't hold for some numbers. We can try to search for a counter example. In this case, if we take $$a=1$$ and $$b=2$$, we get $$2\\left(1+2\\right)=2+4=6$$ which is true. Trying other easy numbers, we find all the examples are true. So maybe it is true.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7077a0A111-algdef-P04a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7077a0A111-algdef-P04a-h1"
+        ],
+        "title": "Relate to another rule",
+        "text": "This looks like the distributive property but from the left side. Let's apply known rules to see if we can generate this new rule.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7077a0A111-algdef-P04a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7077a0A111-algdef-P04a-h2"
+        ],
+        "title": "Apply commutativity",
+        "text": "$$\\left(a+b\\right) b=b\\left(a+b\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7077a0A111-algdef-P04a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a7077a0A111-algdef-P04a-h3"
+        ],
+        "title": "Apply distributivity",
+        "text": "$$b\\left(a+b\\right)=ba+b^2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7077a0A111-algdef-P04a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a7077a0A111-algdef-P04a-h4"
+        ],
+        "title": "Apply commutativity again",
+        "text": "$$ba+b^2=ab+b^2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7077a0A111-algdef-P04a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a7077a0A111-algdef-P04a-h5"
+        ],
+        "title": "Conclusion",
+        "text": "Applying known algebraic properties, we were able to deduce that this statement is true.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

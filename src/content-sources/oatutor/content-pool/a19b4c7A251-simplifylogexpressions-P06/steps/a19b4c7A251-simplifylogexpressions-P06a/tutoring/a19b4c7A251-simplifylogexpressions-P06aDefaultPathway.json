@@ -1,0 +1,84 @@
+[
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P06a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Define a new variable.",
+        "text": "Let $$y=\\log_{@{n}}\\left(x\\right)=\\log_{x}\\left(@{n}\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P06a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P06a-h1"
+        ],
+        "title": "Rewrite as exponential equations.",
+        "text": "Write the corresponding exponential relationships involving $$y.$$ \\n $$y=\\log_{@{n}}\\left(x\\right)$$ implies $${@{n}}^y=x$$ \\n $$y=\\log_{x}\\left(@{n}\\right)$$ implies $$x^y=@{n}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P06a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P06a-h2"
+        ],
+        "title": "Substitute an expression for $$x.$$",
+        "text": "Substitute your expression for $$x$$ into the second equation to obtain the equation: \\n $$\\left({@{n}}^y\\right)^y=@{n}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P06a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P06a-h3"
+        ],
+        "title": "Apply the laws of exponents to simplify",
+        "text": "$$(a**b)**c=a**{bc}$$ \\n $$\\left({@{n}}^y\\right)^y={@{n}}^{y^2}=@{n}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P06a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P06a-h4"
+        ],
+        "title": "What must be true about $$y?$$",
+        "text": "Look at $${@{n}}^{y^2}=@{n}={@{n}}^1$$. This equation implies that $$y^2=1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P06a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P06a-h5"
+        ],
+        "title": "Solve for $$y.$$",
+        "text": "We have two solutions, $$y=\\pm$$ $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P06a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P06a-h6"
+        ],
+        "title": "Substitute to solve for $$x.$$",
+        "text": "Plugging back into our equation for $$x, $$ we get two solutions. $$x={@{n}}^1=@{n}$$ and $$x={@{n}}^{\\left(-1\\right)}=\\frac{1}{@{n}}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

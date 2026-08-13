@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a82e37dA232-lawsexpquotient-P01a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the error",
+        "text": "You cannot cancel exponents! $$\\frac{a**c}{b**c}\\neq$$ $$\\frac{a}{b}$$. For example, $$\\frac{1^2}{2^2}=\\frac{1}{4}$$ is not equal to $$\\frac{1}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a82e37dA232-lawsexpquotient-P01a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a82e37dA232-lawsexpquotient-P01a-h1"
+        ],
+        "title": "Understanding the error",
+        "text": "Numbers in bases cannot move into exponents. $$\\frac{a**c}{b**c}\\neq a**{c-b},$$ For example, $$\\frac14=\\frac{1**2}{2**2}\\neq 1**{2-2}=1**0=1.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a82e37dA232-lawsexpquotient-P01a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a82e37dA232-lawsexpquotient-P01a-h2"
+        ],
+        "title": "Understanding the error",
+        "text": "$$\\frac{\\sqrt[n]{a}}{\\sqrt[n]{b}}=\\sqrt[n]{a}-\\sqrt[n]{b}$$ is mixing up laws of exponents and laws of logarithms. For example, consider $$\\frac{\\sqrt{1}}{\\sqrt{4}}=\\frac{1}{2},$$ but $$\\sqrt{1}-\\sqrt{4}=-1.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a82e37dA232-lawsexpquotient-P01a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a82e37dA232-lawsexpquotient-P01a-h3"
+        ],
+        "title": "Understanding the correct choice",
+        "text": "$$\\frac{a**c}{b**c}=\\left(\\frac{a}{b}\\right)**c$$ is the law of exponents for quotients with the same exponent and different bases.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

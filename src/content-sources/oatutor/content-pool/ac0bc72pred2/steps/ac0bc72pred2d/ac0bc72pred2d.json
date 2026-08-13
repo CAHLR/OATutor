@@ -1,0 +1,16 @@
+{
+    "id": "ac0bc72pred2d",
+    "stepAnswer": [
+        "100% accuracy because every point's nearest neighbor is itself, so it always predicts correctly. However, this is misleading for how well the classifier will perform on new data."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "d) Suppose Dagny obtains a training set of labeled tumors and builds a nearest neighbor classifier with k $$=$$ $$1$$. She then applies the classifier to predict the class of each point in the same training set. She notices something interesting about the results. What might she observe and why?",
+    "stepBody": "",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "High but not perfect accuracy because the nearest neighbor is always close, but not always the same class.",
+        "100% accuracy because every point's nearest neighbor is itself, so it always predicts correctly. However, this is misleading for how well the classifier will perform on new data.",
+        "Around 50% accuracy because with k $$=$$ $$1$$ the classifier is basically guessing randomly."
+    ]
+}

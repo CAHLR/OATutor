@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a88c93efixedaxis12b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "The propeller falls off the aircraft and continues to rotate at the same rate as it falls. Since air resistance is neglected, the rotation rate remains constant. What does this imply about the rotation rate at impact?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis12b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis12b-h1"
+        ],
+        "title": "Constant Rotation Rate",
+        "text": "The problem states that the rotation rate does not change as the propeller falls. What does this mean for the rotation rate when it hits the ground?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis12b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis12b-h2"
+        ],
+        "title": "Rotation Rate Calculation",
+        "text": "Since the rotation rate remains constant during the fall, the rotation rate at impact is the same as the initial rotation rate. What is the initial rotation rate of the propeller?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

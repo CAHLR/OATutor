@@ -1,0 +1,127 @@
+[
+    {
+        "id": "a8435depolynomial19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Plugging in values",
+        "text": "Using CAS, you need to compute the values of $$k=1$$, $$k=2$$, and $$k=3$$. Do this by inputting the equation into your calculator and plugging in the value for k.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a8435depolynomial19a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial19a-h1"
+        ],
+        "title": "Finding $$k=1$$",
+        "text": "What do you get when you plug in $$k=1$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$0$$",
+            "$$x$$",
+            "$$x-1$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial19a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x+1$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial19a-h2"
+        ],
+        "title": "Finding $$k=2$$",
+        "text": "What do you get when you plug in $$k=2$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$x$$",
+            "$$x+1$$",
+            "$$x-1$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial19a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x^2+x+1$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial19a-h3"
+        ],
+        "title": "Finding $$k=3$$",
+        "text": "What do you get when you plug in $$k=3$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$x+1$$",
+            "$$x$$",
+            "$$x^3-1$$",
+            "$$x^2+x+1$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial19a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$k-1$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial19a-h4"
+        ],
+        "title": "Polynomial Degree",
+        "text": "Based on the previous computations, what would be the predicted degree of the resulting polynomial?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "k",
+            "$$k+1$$",
+            "$$k-1$$",
+            "$$k-2$$"
+        ]
+    },
+    {
+        "id": "a8435depolynomial19a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x^3+x^2+x+1$$"
+        ],
+        "dependencies": [
+            "a8435depolynomial19a-h5"
+        ],
+        "title": "Finding $$k=4$$",
+        "text": "What is the result if you plug in $$k=4$$ into the calculator using CAS?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$x+1$$",
+            "$$x^4-1$$",
+            "$$x^2+x+1$$",
+            "$$x^3+x^2+x+1$$"
+        ]
+    }
+]

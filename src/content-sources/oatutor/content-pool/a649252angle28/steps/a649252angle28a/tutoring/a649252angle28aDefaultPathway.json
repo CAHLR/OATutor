@@ -1,0 +1,121 @@
+[
+    {
+        "id": "a649252angle28a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall the half-angle formula for tangent",
+        "text": "Recall that $$tan\\left(\\frac{\\theta}{2}\\right)$$ $$=$$ (1 - cos(theta))/(sin(theta)) or $$tan\\left(\\frac{\\theta}{2}\\right)$$ $$=$$ (sin(theta))/(1 + cos(theta)).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle28a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-\\left(3\\pi\\right)}{4}$$"
+        ],
+        "dependencies": [
+            "a649252angle28a-h1"
+        ],
+        "title": "Identify theta",
+        "text": "In the expression $$tan\\left(-\\frac{3\\pi}{8}\\right)$$, if we use the half-angle formula $$tan\\left(\\frac{\\theta}{2}\\right)$$, what is theta?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle28a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle28a-h2"
+        ],
+        "title": "Evaluate trigonometric values for theta",
+        "text": "Find the values of sin(theta) and cos(theta) for theta $$=$$ $$\\frac{-\\left(3\\pi\\right)}{4}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle28a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-\\sqrt{2}}{2}$$"
+        ],
+        "dependencies": [
+            "a649252angle28a-h3"
+        ],
+        "title": "Find $$cos\\left(-\\frac{3\\pi}{4}\\right)$$",
+        "text": "What is the exact value of $$cos\\left(-\\frac{3\\pi}{4}\\right)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle28a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-\\sqrt{2}}{2}$$"
+        ],
+        "dependencies": [
+            "a649252angle28a-h4"
+        ],
+        "title": "Find $$sin\\left(-\\frac{3\\pi}{4}\\right)$$",
+        "text": "What is the exact value of $$sin\\left(-\\frac{3\\pi}{4}\\right)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle28a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a649252angle28a-h5"
+        ],
+        "title": "Substitute and simplify",
+        "text": "Substitute the values of sin(theta) and cos(theta) into the half-angle formula and simplify the expression.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle28a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1+\\frac{\\sqrt{2}}{2}$$"
+        ],
+        "dependencies": [
+            "a649252angle28a-h6"
+        ],
+        "title": "Calculate the numerator",
+        "text": "Using $$tan\\left(\\frac{\\theta}{2}\\right)$$ $$=$$ (1 - cos(theta))/(sin(theta)), what is the value of $$1$$ - $$cos\\left(-\\frac{3\\pi}{4}\\right)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a649252angle28a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\left(1+\\sqrt{2}\\right)$$"
+        ],
+        "dependencies": [
+            "a649252angle28a-h7"
+        ],
+        "title": "Final calculation",
+        "text": "Now, calculate (1 + sqrt(2)/2)/(-sqrt(2)/2) and simplify.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

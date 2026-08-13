@@ -1,0 +1,117 @@
+[
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P04a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply the law of logarithms to the left hand side (LHS)",
+        "text": "Apply the law of logarithms for powers: $$c\\log_b(a)=\\log_b(a**c).$$ \\n $$\\frac{1}{2}\\log_2(x)+\\frac{1}{2}\\log_2(x-3)=\\log_2\\left(x**{1/2}\\right)+\\log_2\\left((x-3)**{1/2}\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P04a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P04a-h1"
+        ],
+        "title": "Apply the law of logarithms to the left hand side (LHS)",
+        "text": "Apply the law of logarithms for products: $$\\log_b(a)+\\log_b(c)=\\log_b(ac).$$ \\n $$\\log_2\\left(x**{1/2}\\right)+\\log_2\\left((x-3)**{1/2}\\right)=\\log_2\\left(x**{1/2}(x-3)**{1/2}\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P04a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Same exponents, different base"
+        ],
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P04a-h2"
+        ],
+        "title": "Which laws of exponents to the argument of the logarithm? \\n $$\\log_2\\left(x**{1/2}(x-3)**{1/2}\\right)$$",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Same base, different exponents",
+            "Same exponents, different base"
+        ]
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P04a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P04a-h3"
+        ],
+        "title": "Recall the law of exponents",
+        "text": "Recall the law of exponents for products with different bases and the same exponent: $$(a**b)(c**b)=(ac)**b.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P04a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P04a-h4"
+        ],
+        "title": "Apply the law of exponents",
+        "text": "$$\\log_2\\left(x**{1/2}(x-3)**{1/2}\\right)=\\log_2\\left(x(x-3)\\right)**{1/2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P04a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P04a-h5"
+        ],
+        "title": "Exponentiate both sides with base $$2$$. If $$a=b$$, $$then$$ $$c**a=c**b.$$",
+        "text": "Exponentiate both sides of $$\\log_2\\left(x(x-3)\\right)**{1/2}=1,$$ which gives $$2**{\\log_2\\left(x(x-3)\\right)**{1/2}}=2**1.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P04a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P04a-h6"
+        ],
+        "title": "Apply cancelation property",
+        "text": "Exponentiation cancels logarithms: $$b**{\\log_b(a)}=a.$$ $$2**{\\log_2\\left(x(x-3)\\right)**{1/2}}=\\left(x(x-3)\\right)**{1/2}=2**1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P04a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P04a-h7"
+        ],
+        "title": "Sqare both sides and solve for $$x$$",
+        "text": "$$\\left(x(x-3)\\right)**{{1/2}**2}=2**2$$ \\n $$x(x-3)=4$$ \\n $$x^2-3x-4=0$$ \\n $$\\left(x-4\\right) \\left(x+1\\right)=0$$ \\n This implies that $$x=4$$, $$x=-1$$ are solutions.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P04a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P04a-h8"
+        ],
+        "title": "Find solutions in domain of original equation",
+        "text": "Now we must ask, are both solutions possible inputs for the original equation? Recall the original formulation: \\n $$\\frac{1}{2}\\log_2(x)+\\frac{1}{2}\\log_2(x-3)=1.$$ The function $$\\log_2(x)$$ cannot take negative-valued input. So the only answer that makes sense for this equation is $$x=4$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

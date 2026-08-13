@@ -1,0 +1,70 @@
+[
+    {
+        "id": "afc3761Unitcirc1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Triangles in Unit Circle",
+        "text": "Draw a $$30-60-90$$ triangle inside the unit circle to identify the side lengths.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afc3761Unitcirc1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$60$$"
+        ],
+        "dependencies": [
+            "afc3761Unitcirc1a-h1"
+        ],
+        "title": "Angle in Degrees",
+        "text": "What is the given angle in degrees?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afc3761Unitcirc1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afc3761Unitcirc1a-h2"
+        ],
+        "title": "Sides of Triangle",
+        "text": "A $$30-60-90$$ triangle with hypotenuse $$1$$ has side lengths 1/2,sqrt(3)/2,1. Which side is opposite the 60-degree angle?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afc3761Unitcirc1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afc3761Unitcirc1a-h3"
+        ],
+        "title": "Coordinates of Unit Circle",
+        "text": "What is the relationship between sine and the point on the unit circle?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afc3761Unitcirc1a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\sqrt{3}}{2}$$"
+        ],
+        "dependencies": [
+            "afc3761Unitcirc1a-h4"
+        ],
+        "title": "",
+        "text": "What is the final value?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

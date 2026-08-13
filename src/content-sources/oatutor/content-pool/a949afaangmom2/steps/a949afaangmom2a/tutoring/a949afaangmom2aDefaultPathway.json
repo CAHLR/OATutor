@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a949afaangmom2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Acceleration",
+        "text": "Angular acceleration is the rate of change of angular velocity over time. It is similar to linear acceleration but in rotational motion.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom2a-h1"
+        ],
+        "title": "Relating Linear and Angular Quantities",
+        "text": "The linear speed of the bicycle is related to the angular speed of the wheels by the formula: $$v=r\\omega$$, $$where$$ $$v$$ $$is$$ $$the$$ $$linear$$ $$speed$$, $$r$$ is the radius, and $$\\omega$$ is the angular speed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom2a-h2"
+        ],
+        "title": "Finding Angular Speed",
+        "text": "To find the angular speed $$\\omega$$ at the final speed, use the formula: $$\\omega=\\frac{v}{r}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$33.33$$"
+        ],
+        "dependencies": [
+            "a949afaangmom2a-h3"
+        ],
+        "title": "Calculate Final Angular Speed",
+        "text": "Given the final linear speed $$v=10.0\\, \\tfrac{\\text{m}}{\\text{s}}$$ and radius $$r=0.3\\, \\text{m}$$, $$calculate$$ $$the$$ $$final$$ $$angular$$ $$speed$$ $$\\omega$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

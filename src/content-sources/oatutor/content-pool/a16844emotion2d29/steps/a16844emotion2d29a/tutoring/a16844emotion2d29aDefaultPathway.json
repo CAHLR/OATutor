@@ -1,0 +1,145 @@
+[
+    {
+        "id": "a16844emotion2d29a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find the initial speed, we need to consider the projectile motion of the golf ball. The ball is launched at an angle of $$40**\\circ$$ with respect to the horizontal, and we need to find the speed that allows it to travel the given horizontal and vertical distances.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d29a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d29a-h1"
+        ],
+        "title": "Breaking Down the Motion",
+        "text": "The motion can be broken down into horizontal and vertical components. Use trigonometry to find these components based on the launch angle and initial speed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d29a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$v cos\\left(40\\right)$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d29a-h2"
+        ],
+        "title": "Horizontal Component of Velocity",
+        "text": "The horizontal component of the velocity can be found using the formula: $$v_{x}=v\\cos(\\theta)$$. $$What$$ $$is$$ $$v_{x}$$ in terms of $$v$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d29a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$v sin\\left(40\\right)$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d29a-h2"
+        ],
+        "title": "Vertical Component of Velocity",
+        "text": "The vertical component of the velocity can be found using the formula: $$v_{y}=v\\sin(\\theta)$$. $$What$$ $$is$$ $$v_{y}$$ in terms of $$v$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d29a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d29a-h4"
+        ],
+        "title": "Using Kinematic Equations",
+        "text": "Use the kinematic equations to relate the vertical motion to the initial vertical velocity, the height, and the acceleration due to gravity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d29a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$t=(v\\sin(40)+sqrt((v\\sin(40))**{2}+2g400))/g$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d29a-h5"
+        ],
+        "title": "Vertical Motion Equation",
+        "text": "The vertical motion can be described by the equation: $$y=v_{y}t-0.5gt**{2}$$. $$ \\cup se$$ $$this$$ $$to$$ $$find$$ $$the$$ $$time$$ $$of$$ $$flight$$ $$in$$ $$terms$$ $$of$$ $$v$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d29a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d29a-h6"
+        ],
+        "title": "Relating Horizontal Motion",
+        "text": "The horizontal distance traveled is related to the horizontal velocity and the time of flight. Use this to find the initial speed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d29a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$v=359/(\\cos(40)((v\\sin(40)+sqrt((v\\sin(40))**{2}+2g400))/g))$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d29a-h7"
+        ],
+        "title": "Horizontal Motion Equation",
+        "text": "The horizontal motion can be described by the equation: $$x=v_{x}t$$. $$ \\cup se$$ $$this$$ $$to$$ $$solve$$ $$for$$ $$v$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d29a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a16844emotion2d29a-h8"
+        ],
+        "title": "Solving for Initial Speed",
+        "text": "Substitute the known values and solve the equation to find the initial speed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a16844emotion2d29a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$39.2$$"
+        ],
+        "dependencies": [
+            "a16844emotion2d29a-h9"
+        ],
+        "title": "Final Calculation",
+        "text": "Calculate the initial speed using the equation derived. Remember to use $$g=9.8m/s**{2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

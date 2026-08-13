@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a767c30T221-identpyth-P06a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Write in terms of sine and cosine",
+        "text": "$$\\frac{1}{\\cos**2(x)}-\\tan**2(x)+4\\cos(x)=\\frac{1}{\\cos**2(x)}-\\frac{\\sin**2(x)}{\\cos**2(x)}+4\\cos(x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a767c30T221-identpyth-P06a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a767c30T221-identpyth-P06a-h1"
+        ],
+        "title": "Combine numerators",
+        "text": "$$\\frac{1-\\sin**2(x)}{\\cos**2(x)}+4\\cos(x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a767c30T221-identpyth-P06a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a767c30T221-identpyth-P06a-h2"
+        ],
+        "title": "Apply Pythagorean identity to write sines as cosines",
+        "text": "$$\\frac{\\cos**2(x)}{\\cos**2(x)}+4\\cos(x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a767c30T221-identpyth-P06a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a767c30T221-identpyth-P06a-h3"
+        ],
+        "title": "Simplify and bound",
+        "text": "$$\\frac{\\cos**2(x)}{\\cos**2(x)}+4\\cos(x)=1+4\\cos(x)\\leq{5}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

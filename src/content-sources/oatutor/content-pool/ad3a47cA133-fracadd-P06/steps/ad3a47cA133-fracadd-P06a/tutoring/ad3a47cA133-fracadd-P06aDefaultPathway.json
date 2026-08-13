@@ -1,0 +1,108 @@
+[
+    {
+        "id": "ad3a47cA133-fracadd-P06a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Physics style approach",
+        "text": "$$\\frac{1}{z}-\\frac{1}{y}=\\frac{1}{x}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad3a47cA133-fracadd-P06a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad3a47cA133-fracadd-P06a-h1"
+        ],
+        "title": "Combine terms on the LHS",
+        "text": "$$\\frac{1}{z} \\frac{y}{y}-\\frac{1}{y} \\frac{z}{z}=\\frac{y}{yz}-\\frac{z}{yz}=\\frac{y-z}{yz}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad3a47cA133-fracadd-P06a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad3a47cA133-fracadd-P06a-h2"
+        ],
+        "title": "Reciprocal trick",
+        "text": "$$\\frac{y-z}{yz}=\\frac{1}{x}$$ then we can take the reciprocal of both sides, and they will still be equal! Caveat - need to know everything is nonzero, which we are given. Then \\n\\n$$\\frac{yz}{y-z}=\\frac{x}{1}=x$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad3a47cA133-fracadd-P06a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad3a47cA133-fracadd-P06a-h3"
+        ],
+        "title": "Traditional approach",
+        "text": "Find the least common denominator is $$xyz.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad3a47cA133-fracadd-P06a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ad3a47cA133-fracadd-P06a-h4"
+        ],
+        "title": "Common denominator",
+        "text": "Multiply the entire equation by the least common denominator to eliminate denominators: \\n $$\\frac{xyz}{z}=\\frac{xyz}{x}+\\frac{xyz}{y}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad3a47cA133-fracadd-P06a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ad3a47cA133-fracadd-P06a-h5"
+        ],
+        "title": "Cancel nonzero common factors",
+        "text": "$$xy=yz+xz$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad3a47cA133-fracadd-P06a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ad3a47cA133-fracadd-P06a-h6"
+        ],
+        "title": "Move all $$x$$ terms to LHS",
+        "text": "$$xy-xz=yz$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad3a47cA133-fracadd-P06a-h8",
+        "type": "hint",
+        "dependencies": [
+            "ad3a47cA133-fracadd-P06a-h7"
+        ],
+        "title": "Factor $$x$$",
+        "text": "$$xy-xz=x(y-z)=yz$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad3a47cA133-fracadd-P06a-h9",
+        "type": "hint",
+        "dependencies": [
+            "ad3a47cA133-fracadd-P06a-h8"
+        ],
+        "title": "Isolate $$x$$",
+        "text": "$$x=\\frac{yz}{y-z}$$. Note that this forces $$y-z$$ to be nonzero.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

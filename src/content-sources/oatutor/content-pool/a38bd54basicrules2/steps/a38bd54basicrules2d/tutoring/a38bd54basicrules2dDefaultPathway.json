@@ -1,0 +1,50 @@
+[
+    {
+        "id": "a38bd54basicrules2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of Mutual Independence",
+        "text": "If A and B are mutually exclusive, then P(A AND $$B)=0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a38bd54basicrules2d-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.585$$"
+        ],
+        "dependencies": [
+            "a38bd54basicrules2d-h1"
+        ],
+        "title": "Application of Mutual Independence",
+        "text": "What is P(A AND B), which was solved for above?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a38bd54basicrules2d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a38bd54basicrules2d-h2"
+        ],
+        "title": "Application of Mutual Independence",
+        "text": "Is P(A AND $$B)=0$$? If yes, then they are mutually exclusive; if not, then they are not mutually exclusive.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

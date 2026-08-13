@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a6dd06fA131-fracequiv-P08a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Multiply by $$\\frac{x}{x}$$",
+        "text": "To see that the two expressions are equivalent for most values of $$x$$, we multiply the right-hand side by $$\\frac{x}{x}$$. This gives $$\\frac{x}{x+\\frac{x}{x}}=\\frac{x}{x+1}$$, which is equal to the left-hand side.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dd06fA131-fracequiv-P08a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6dd06fA131-fracequiv-P08a-h1"
+        ],
+        "title": "Interpret equivalence",
+        "text": "We multiplied the left-hand side by $$\\frac{x}{x}$$, which is undefined when $$x=0$$, so this forces the equivalence to fail at least when $$x=0$$. So whenever both the LHS and RHS are defined, they are equivalent.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

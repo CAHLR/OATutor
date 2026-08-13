@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a70ee94pythagorean11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use the theorem",
+        "text": "For a right triangle, $$a^2+b^2=c^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70ee94pythagorean11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a70ee94pythagorean11a-h1"
+        ],
+        "title": "Substitute the leg lengths",
+        "text": "Replace a and $$b$$ with $$5$$ and $$5$$, so $$5^2+5^2=c^2$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70ee94pythagorean11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a70ee94pythagorean11a-h2"
+        ],
+        "title": "Combine like terms",
+        "text": "Compute $$5^2=25$$, so $$c^2=25+25=50$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70ee94pythagorean11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a70ee94pythagorean11a-h3"
+        ],
+        "title": "Write the exact answer",
+        "text": "Take the square root of both sides: $$c=\\sqrt{50}$$. Since $$\\sqrt{50}=5\\sqrt{2}$$, the exact answer is $$5\\sqrt{2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

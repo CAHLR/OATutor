@@ -1,0 +1,39 @@
+[
+    {
+        "id": "ac47cfflimits13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find a Common Denominator",
+        "text": "Combine the two fractions in the numerator before working with the outer denominator.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac47cfflimits13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac47cfflimits13a-h1"
+        ],
+        "title": "Factor Out the Negative",
+        "text": "Once the numerator is simplified, use $$4-x=-(x-4)$$ to cancel the matching factor.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac47cfflimits13a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{4-x}{3\\left(x-1\\right)}$$"
+        ],
+        "dependencies": [],
+        "title": "Combine the Inner Fractions",
+        "text": "What single fraction is equivalent to $$\\frac{1}{x-1}-\\frac{1}{3}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

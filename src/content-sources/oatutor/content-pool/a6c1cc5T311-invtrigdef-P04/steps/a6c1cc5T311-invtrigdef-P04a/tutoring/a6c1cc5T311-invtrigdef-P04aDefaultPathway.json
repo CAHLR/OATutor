@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a6c1cc5T311-invtrigdef-P04a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\cos(x)$$ decreases toward both $$x=\\frac{\\pi}{2}$$ and $$x=\\frac{-\\pi}{2}$$, so $$\\cos(x)$$ fails the horizontal line test as there is a peak at $$x=0$$"
+        ],
+        "dependencies": [],
+        "title": "Increasing or decreasing",
+        "text": "A \"one-to-one\" function must assign a unique output to every unique input. What happens to the outputs as you move from $$x=0$$ toward the endpoints?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\cos(x)$$ decreases toward both $$x=\\frac{\\pi}{2}$$ and $$x=\\frac{-\\pi}{2}$$, so $$\\cos(x)$$ fails the horizontal line test as there is a peak at $$x=0$$",
+            "$$\\cos(x)$$ increases toward both $$x=\\frac{\\pi}{2}$$ and $$x=\\frac{-\\pi}{2}$$, so $$\\cos(x)$$ fails the horizontal line test as there is a valley at $$x=0$$",
+            "\\n$$\\cos(x)$$ decreases toward $$x=\\frac{-\\pi}{2}$$ and increases toward $$x=\\frac{\\pi}{2}$$, so outputs are all unique",
+            "$$\\cos(x)$$ increases toward $$x=\\frac{-\\pi}{2}$$ and decreases toward $$x=\\frac{\\pi}{2}$$, so outputs are all unique"
+        ]
+    },
+    {
+        "id": "a6c1cc5T311-invtrigdef-P04a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6c1cc5T311-invtrigdef-P04a-h1"
+        ],
+        "title": "Test midpoints and end points",
+        "text": "Calculate $$\\cos(-\\pi/2)$$ and $$\\cos(\\pi/2).$$ If these values are identical, the function has \"doubled back\" on itself.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6c1cc5T311-invtrigdef-P04a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6c1cc5T311-invtrigdef-P04a-h2"
+        ],
+        "title": "Graph the function",
+        "text": "The function increases from $$x=\\frac{-\\pi}{2}$$ up to $$x=0$$, then decreases to $$x=\\frac{\\pi}{2}$$, meaning it doubles back through the same output values.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

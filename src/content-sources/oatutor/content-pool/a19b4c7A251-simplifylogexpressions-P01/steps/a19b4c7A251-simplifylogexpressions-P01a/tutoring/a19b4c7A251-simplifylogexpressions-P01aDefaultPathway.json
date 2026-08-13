@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P01a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply laws of logarithms for powers",
+        "text": "Move the coefficients inside using the laws of logarithms: $$c\\log_b(a)=\\log_b(a**c)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P01a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P01a-h1"
+        ],
+        "title": "Apply laws of logarithms for powers",
+        "text": "$$5\\log_2(x+1)-2\\log_2(x-2)=\\log_2\\left((x+1)**5\\right)-\\log_2\\left((x-2)**2\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P01a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P01a-h2"
+        ],
+        "title": "Apply the laws of logarithms for quotients",
+        "text": "Observe the negative sign! Apply the law of logarithms for quotients to combine these two terms into a single term: $$\\log_b(a)-\\log_b(c)=\\log_b(a/c)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P01a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P01a-h3"
+        ],
+        "title": "Apply the laws of logarithms for quotients",
+        "text": "$$\\log_2\\left((x+1)**5\\right)-\\log_2\\left((x-2)**2\\right)=\\log_2\\left(\\frac{(x+1)**5}{(x-2)**2}\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a19b4c7A251-simplifylogexpressions-P01a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a19b4c7A251-simplifylogexpressions-P01a-h4"
+        ],
+        "title": "Decompose into $$P(x)$$ and $$Q(x)$$.",
+        "text": "To express $$\\log_2\\left(\\frac{(x+1)**5}{(x-2)**2}\\right)$$ in the form $$\\log_2\\left(\\dfrac{P(x)}{Q(x)}\\right)$$ , we have $$P(x)=\\left(x+1\\right)^5$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

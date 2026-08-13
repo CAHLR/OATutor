@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a150a865.3intro1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exponential Distributions",
+        "text": "This is an exponential distribution with a given average. Use $$y=m e^{\\left(-m\\right) x}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a150a865.3intro1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a150a865.3intro1a-h1"
+        ],
+        "title": "Exponential Distributions",
+        "text": "In $$y=m e^{\\left(-m\\right) x}$$, $$m$$, the decay parameter is equal to $$\\frac{1}{mean}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a150a865.3intro1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{1}{8}$$"
+        ],
+        "dependencies": [
+            "a150a865.3intro1a-h2"
+        ],
+        "title": "$$\\frac{1}{mean}=$$?",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$\\frac{1}{8}$$",
+            "$$\\frac{8}{1}$$",
+            "$$\\frac{8}{2}$$",
+            "$$\\frac{6}{6}$$"
+        ]
+    }
+]

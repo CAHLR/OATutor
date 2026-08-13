@@ -1,0 +1,96 @@
+[
+    {
+        "id": "a6614c6sol23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify What We Are Looking For",
+        "text": "We are looking for the amount of sodium in a hot dog. We also do not know how much sodium is in a cup of cottage cheese.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6614c6sol23a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6614c6sol23a-h1"
+        ],
+        "title": "Name What We Are Looking For",
+        "text": "Choose a variable to represent that quantity. Let $$h=the$$ amount of sodium in hot dog. Let $$c=the$$ amount of sodium in cottage cheese.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6614c6sol23a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6614c6sol23a-h2"
+        ],
+        "title": "Translate into a System of Equations",
+        "text": "The total amount of sodium in $$2$$ hot dogs and $$3$$ cups of cottage cheese is $$4720$$ mg: $$2h+3c=4720$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6614c6sol23a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6614c6sol23a-h3"
+        ],
+        "title": "Translate into a System of Equations",
+        "text": "The total amount of sodium in $$5$$ hot dogs and $$2$$ cups of cottage cheese is $$6300$$ mg: $$5h+2c=6300$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6614c6sol23a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a6614c6sol23a-h4"
+        ],
+        "title": "Solve the System of Equations",
+        "text": "To solve the system of equations, use elimination. The equations are in standard form. To get opposite coefficients of c, multiply the first equation by $$-2$$ and the second equation by $$3$$.\\n(2*h+3*c=4720)*-2\\n(5*h+2*c=6300)*3",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6614c6sol23a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a6614c6sol23a-h5"
+        ],
+        "title": "Eliminate a Variable",
+        "text": "Add the two equations.\\n$$-4h-6c=-9440$$\\n$$15h+6c=18900$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6614c6sol23a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a6614c6sol23a-h6"
+        ],
+        "title": "Solve for $$h$$",
+        "text": "c will be eliminated and then solve for $$h$$.\\n$$11h=9460$$\\n$$h=860$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a6614c6sol23a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a6614c6sol23a-h7"
+        ],
+        "title": "Amount of Sodium",
+        "text": "There is $$860$$ mg of sodium in the hotdog.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

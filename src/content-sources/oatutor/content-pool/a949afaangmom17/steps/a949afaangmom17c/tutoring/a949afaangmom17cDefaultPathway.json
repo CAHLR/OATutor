@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a949afaangmom17c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Momentum Conservation",
+        "text": "When the bug moves, the system's angular momentum is conserved. This means that the initial angular momentum of the system (disk + bug) is equal to the final angular momentum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom17c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom17c-h1"
+        ],
+        "title": "Initial Angular Momentum",
+        "text": "Calculate the initial angular momentum of the system when the bug is at the edge of the disk. Use the formula: $$L_i=I_{\\text{disk}}\\cdot\\omega_i+m_{\\text{bug}}\\cdot{}R**{2}\\cdot\\omega_i$$ where $$I_{\\text{disk}}=\\frac{1}{2}\\cdot{}M\\cdot{}R**{2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom17c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom17c-h2"
+        ],
+        "title": "Final Angular Momentum",
+        "text": "When the bug is back at the edge, the final angular momentum $$L_f$$ is given by: $$L_f=I_{\\text{disk}}\\cdot\\omega_f+m_{\\text{bug}}\\cdot{}R**{2}\\cdot\\omega_f$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

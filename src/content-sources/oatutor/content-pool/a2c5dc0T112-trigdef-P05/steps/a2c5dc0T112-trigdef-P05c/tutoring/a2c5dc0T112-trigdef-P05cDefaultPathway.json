@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a2c5dc0T112-trigdef-P05c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the goal",
+        "text": "We need to find values of $$\\frac{2\\pi}{3}+2\\pi{k}$$ that fall between $$-4\\pi$$ and $$0.$$ Since the interval is entirely negative, we only need to test negative integers for $$k.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2c5dc0T112-trigdef-P05c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2c5dc0T112-trigdef-P05c-h1"
+        ],
+        "title": "Check $$k=-1$$",
+        "text": "When $$k=-1, $$ $$\\theta=\\frac{2\\pi}{3}-2\\pi=\\frac{2\\pi}{3}-\\frac{6\\pi}{3}=\\frac{-4\\pi}{3}.$$ This is between $$-4\\pi$$ and $$0, $$ so it is in the interval.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2c5dc0T112-trigdef-P05c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a2c5dc0T112-trigdef-P05c-h2"
+        ],
+        "title": "Check $$k=-2$$",
+        "text": "When $$k=-2, $$ $$\\theta=\\frac{2\\pi}{3}-4\\pi=\\frac{2\\pi}{3}-\\frac{12\\pi}{3}=\\frac{-10\\pi}{3}.$$ This is also greater than $$-4\\pi, $$ so it is in the interval.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2c5dc0T112-trigdef-P05c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a2c5dc0T112-trigdef-P05c-h3"
+        ],
+        "title": "Check $$k=-3$$",
+        "text": "When $$k=-3, $$ $$\\theta=\\frac{2\\pi}{3}-6\\pi=\\frac{-16\\pi}{3}.$$ This is less than $$-4\\pi, $$ so it falls completely outside our boundary.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2c5dc0T112-trigdef-P05c-h5",
+        "type": "hint",
+        "dependencies": [
+            "a2c5dc0T112-trigdef-P05c-h4"
+        ],
+        "title": "Compile the list",
+        "text": "The only angles that fall inside the interval are $$\\frac{-10\\pi}{3}$$ and $$\\frac{-4\\pi}{3}.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

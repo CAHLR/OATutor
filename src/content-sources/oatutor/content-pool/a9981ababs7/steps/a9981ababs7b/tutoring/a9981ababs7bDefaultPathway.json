@@ -1,0 +1,51 @@
+[
+    {
+        "id": "a9981ababs7b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "Substitute $$0$$ for $$x$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9981ababs7b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$f(x)=-9+16$$"
+        ],
+        "dependencies": [
+            "a9981ababs7b-h1"
+        ],
+        "title": "Substitute",
+        "text": "What do we get after the substitution?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$f(x)=0$$",
+            "$$f(x)=9+16$$",
+            "$$f(x)=-9+16$$"
+        ]
+    },
+    {
+        "id": "a9981ababs7b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [
+            "a9981ababs7b-h2"
+        ],
+        "title": "Solve the Equation",
+        "text": "What do we get for $$y$$ after solving the above equation?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

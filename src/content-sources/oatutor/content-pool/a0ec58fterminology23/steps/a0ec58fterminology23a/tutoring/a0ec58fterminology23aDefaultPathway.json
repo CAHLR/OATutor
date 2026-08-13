@@ -1,0 +1,63 @@
+[
+    {
+        "id": "a0ec58fterminology23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of Probability",
+        "text": "The probability of any outcome in the sample space occuring is the long-term relative frequency of that oucome. Effectively, to find the probability of an event, P(event), we need to find the size of that event (how many outcomes are in it) and divide that by the size of the sample space (how many outcomes are in it).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0ec58fterminology23a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a0ec58fterminology23a-h1"
+        ],
+        "title": "Number of Faces with Even Number of Dots",
+        "text": "How many faces of a fair, six-sided die has an even number of dots? In other words, how many numbers in the range one through six inclusive, are even?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0ec58fterminology23a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "a0ec58fterminology23a-h2"
+        ],
+        "title": "Number of Total Faces",
+        "text": "How many faces does a fair, six-sided die have?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a0ec58fterminology23a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{6}$$"
+        ],
+        "dependencies": [
+            "a0ec58fterminology23a-h3"
+        ],
+        "title": "Determining Probability of Even Number of Dots",
+        "text": "What is the probability of rolling an even number of dots with a fair, six-sided die? In other words, what is the number of faces with an even number of dots divided by the total number of faces on the die?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

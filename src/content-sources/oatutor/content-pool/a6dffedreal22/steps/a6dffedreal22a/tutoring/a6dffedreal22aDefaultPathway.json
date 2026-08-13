@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a6dffedreal22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute the Value",
+        "text": "Substitute $$x=3$$ into the function, we get $$f(3)={\\operatorname{1.2}\\left(e\\right)}^{2\\times3}-0.3$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dffedreal22a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$403.428793$$"
+        ],
+        "dependencies": [
+            "a6dffedreal22a-h1"
+        ],
+        "title": "Simplify the Exponent",
+        "text": "What is the value of $$e^{2\\times3}$$? (Round to the $$6$$ decimal places)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dffedreal22a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6dffedreal22a-h2"
+        ],
+        "title": "Multiply by the Coefficient",
+        "text": "Multiply by the coefficient, we get $$1.2\\times403.428793=484.114552$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6dffedreal22a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a6dffedreal22a-h3"
+        ],
+        "title": "Add the Constant Term",
+        "text": "Add the constant term, we get $$f(3)=484.114552-0.3=483.814552$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

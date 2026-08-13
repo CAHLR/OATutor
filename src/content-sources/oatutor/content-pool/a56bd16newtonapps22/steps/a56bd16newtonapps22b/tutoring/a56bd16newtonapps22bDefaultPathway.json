@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a56bd16newtonapps22b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Terminal Velocity",
+        "text": "Terminal velocity is the constant speed that a freely falling object eventually reaches when the resistance of the medium prevents further acceleration. It can be calculated using the formula: $$v=sqrt((2mg)/(C_{d}pA))$$, $$where$$ $$m$$ $$is$$ $$mass$$, $$g$$ $$is$$ $$acceleration$$ $$due$$ $$to$$ $$gravity$$, $$C_{d}$$ is the drag coefficient, $$p$$ is the density of the fluid, and A is the cross-sectional area.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps22b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps22b-h1"
+        ],
+        "title": "Substitute the Known Values",
+        "text": "Substitute the given values into the formula: $$m=80.0\\, \\text{kg}$$, $$g=9.81\\,\\tfrac{\\text{m}}{\\text{s}**2}$$, $$C_{d}=0.70$$, $$p=1.21$$ $$\\frac{kg}{m^3}$$, and $$A=0.140\\,\\text{m}$$**2.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps22b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$56.5$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps22b-h2"
+        ],
+        "title": "Calculate Terminal Velocity",
+        "text": "Calculate the terminal velocity using the formula: $$v=sqrt((2\\cdot80\\cdot9.81)/(0.70\\cdot1.21\\cdot0.140))$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps22b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps22b-h3"
+        ],
+        "title": "Convert to Kilometers per Hour",
+        "text": "To convert the velocity from meters per second to kilometers per hour, multiply by $$3.6$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps22b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$203.4$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps22b-h4"
+        ],
+        "title": "Final Conversion",
+        "text": "Convert the calculated velocity to kilometers per hour: $$56.5\\times3.6$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

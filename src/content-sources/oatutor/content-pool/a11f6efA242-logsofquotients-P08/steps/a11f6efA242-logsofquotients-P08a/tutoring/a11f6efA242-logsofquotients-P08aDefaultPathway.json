@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a11f6efA242-logsofquotients-P08a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply the law of logarithms for quotients",
+        "text": "$$\\log_3\\!\\left(\\dfrac{z}{9}\\right)=\\log_3(z)-\\log_3(9)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a11f6efA242-logsofquotients-P08a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a11f6efA242-logsofquotients-P08a-h1"
+        ],
+        "title": "Write the input as a power of $$3$$",
+        "text": "$$\\log_3(9)=\\log_3(9**2)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a11f6efA242-logsofquotients-P08a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a11f6efA242-logsofquotients-P08a-h2"
+        ],
+        "title": "Put it all together",
+        "text": "$$\\log_3(z)-\\log_3(9)=\\log_3(z)-2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

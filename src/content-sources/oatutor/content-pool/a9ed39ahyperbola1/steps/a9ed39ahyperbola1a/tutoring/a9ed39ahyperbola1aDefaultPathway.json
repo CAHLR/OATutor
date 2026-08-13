@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a9ed39ahyperbola1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Standard Form of Hyperbola with Center $$(0,0)$$",
+        "text": "The standard form of the equation of a hyperbola with center $$(0,0)$$ and transverse axis on the x-axis is\\n$$\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1$$\\nwhere\\nthe length of the transverse axis is 2a\\nthe coordinates of the vertices are $$(a,0),(-a,0)$$\\nthe length of the conjugate axis is $$2b$$\\nthe coordinates of the co-vertices are (0,b),(0,b)\\nthe distance between the foci is 2c, where $$c^2=a^2+b^2$$\\nthe coordinates of the foci are $$(c,0),(-c,0)$$\\nthe equations of the asymptotes are $$y=\\frac{b}{a} x$$, $$y=-\\left(\\frac{b}{a}\\right) x$$\\n(See the left image)\\n\\nThe standard form of the equation of a hyperbola with center $$(0,0)$$ and transverse axis on the y-axis is\\n$$\\frac{y^2}{a^2}-\\frac{x^2}{b^2}=1$$\\nwhere\\nthe length of the transverse axis is 2a\\nthe coordinates of the vertices are $$(0,a),(0,-a)$$\\nthe length of the conjugate axis is $$2b$$\\nthe coordinates of the co-vertices are $$(b,0),(-b,0)$$\\nthe distance between the foci is 2c, where $$c^2=a^2+b^2$$\\nthe coordinates of the foci are $$(0,c),(0,-c)$$\\nthe equations of the asymptotes are y=(a/b)*x,y=-(a/b)*x\\n(See the right image)\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9ed39ahyperbola1a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$y$$"
+        ],
+        "dependencies": [
+            "a9ed39ahyperbola1a-h1"
+        ],
+        "title": "Transverse Axis",
+        "text": "Which axis is transverse axis on?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$x$$",
+            "$$y$$"
+        ]
+    },
+    {
+        "id": "a9ed39ahyperbola1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [
+            "a9ed39ahyperbola1a-h2"
+        ],
+        "title": "Finding the Vertices",
+        "text": "From the standard equation $$\\frac{y^2}{a^2}-\\frac{x^2}{b^2}=1$$, the vertices are a units away from the center of the hyperbola. What is a?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9ed39ahyperbola1a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(0,7),(0,-7)$$"
+        ],
+        "dependencies": [
+            "a9ed39ahyperbola1a-h3"
+        ],
+        "title": "Finding the Vertices",
+        "text": "We add and subtract $$7$$ units to the center of the hyperbola along the transverse axis to find the two vertices. Given the center is $$(0,0)$$. What are the vertices?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$(0,7),(0,-7)$$",
+            "(sqrt(32),0),(-sqrt(32),0)"
+        ]
+    }
+]

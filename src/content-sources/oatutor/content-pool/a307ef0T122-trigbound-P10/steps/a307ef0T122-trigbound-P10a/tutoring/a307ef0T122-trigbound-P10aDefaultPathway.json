@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a307ef0T122-trigbound-P10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the largest value of $$\\cos(\\theta)$$",
+        "text": "$$\\cos(\\theta)\\leq{1}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a307ef0T122-trigbound-P10a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "no"
+        ],
+        "dependencies": [
+            "a307ef0T122-trigbound-P10a-h1"
+        ],
+        "title": "Will $$\\sin(\\cos(\\theta))$$ ever equal 1?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "yes",
+            "no"
+        ],
+        "subHints": [
+            {
+                "id": "a307ef0T122-trigbound-P10a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Understanding the range",
+                "text": "We know $$\\sin(\\pi/2)=1,$$ but what about $$\\sin(1)?$$ Since $$1<\\frac{\\pi}{2}$$, we know that it will never achieve the value $$1$$.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a307ef0T122-trigbound-P10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a307ef0T122-trigbound-P10a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "The maximum value of $$\\sin(\\cos(\\theta))$$ is $$\\sin(1), $$ so the maximum value of $$10\\sin(\\cos(\\theta))$$ is $$10\\sin(1).$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

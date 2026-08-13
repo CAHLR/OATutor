@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a883d8f5.3computer1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exponential Distribution",
+        "text": "To do any calculations, you must know $$m$$, the decay parameter. $$m=\\frac{1}{mean}$$. It is given that the mean amount of years that the certain computer lasts is ten years.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a883d8f5.3computer1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{10}$$"
+        ],
+        "dependencies": [
+            "a883d8f5.3computer1a-h1"
+        ],
+        "title": "Exponential Distribution",
+        "text": "What is the decay parameter value $$m$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a883d8f5.3computer1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exponential Distribution",
+        "text": "$$\\frac{1}{mean}=decay$$ parameter. The mean is $$10$$ years.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a883d8f5.3computer1a-h1",
+        "type": "hint",
+        "dependencies": [
+            "a883d8f5.3computer1a-h2"
+        ],
+        "title": "Finding Probability",
+        "text": "Find the $$P\\left(X>7\\right)=1-P\\left(X<7\\right)$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a883d8f5.3computer1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a883d8f5.3computer1a-h1"
+        ],
+        "title": "Finding Probability",
+        "text": "Since $$P\\left(X<x\\right)$$ $$=$$ $$1-e^{\\left(-m x\\right)}$$, then we can use $$P\\left(X>x\\right)=1-1-e^{\\left(-m x\\right)}$$ $$=$$ $$e^{\\left(-m x\\right)}$$. Remember that $$m$$ is our decay parameter respective to the problem that we are facing.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a883d8f5.3computer1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a883d8f5.3computer1a-h2"
+        ],
+        "title": "Finding Probability",
+        "text": "$$P\\left(X>7\\right)=e^{7\\left(-0.1\\right)}$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

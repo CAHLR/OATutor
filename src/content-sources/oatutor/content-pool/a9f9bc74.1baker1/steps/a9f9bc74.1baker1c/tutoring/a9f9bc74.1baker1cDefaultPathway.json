@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a9f9bc74.1baker1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Probability Sum",
+        "text": "Get the sum of the products of all x's and their respective P(x) to get the average number of batches that the baker sells.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9f9bc74.1baker1c-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.45$$"
+        ],
+        "dependencies": [
+            "a9f9bc74.1baker1c-h1"
+        ],
+        "title": "Probability Sum",
+        "text": "$$1\\left(0.15\\right)+2\\left(0.35\\right)+3\\left(0.4\\right)+4\\left(0.1\\right)=0.15+0.7+1.2+0.4=$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a9f9bc74.1baker1c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9f9bc74.1baker1c-h2"
+        ],
+        "title": "Interpretation",
+        "text": "$$2.45$$ is the value of the average number of batches that the baker sells according to the table",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

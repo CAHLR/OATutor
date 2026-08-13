@@ -1,0 +1,184 @@
+[
+    {
+        "id": "ab2e2b210.4hypnotisma-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using Technology",
+        "text": "For the TI-83+ and TI-84 calculators, you can either calculate the differences ahead of time (after - before) and put the differences into a list or you can put the after data into a first list and the before data into a second list. Then go to a third list and arrow up to the name. Enter 1st list name - 2nd list name. The calculator will do the subtraction, and you will have the differences in the third list.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab2e2b210.4hypnotisma-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab2e2b210.4hypnotisma-h1"
+        ],
+        "title": "Use your list of differences as the data. On your calculator go to the STATS section and $$2$$ sample T-test. Arrow over to Data and press ENTER. Enter $$0$$ for \\mu_0, the name of the list where you put the data, and $$1$$ for frequency. Go to \\mu and arrow over to <\\mu_0. Calculate the differences.",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab2e2b210.4hypnotisma-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab2e2b210.4hypnotisma-h2"
+        ],
+        "title": "Average Difference",
+        "text": "We are testing if the measurements, on average, are lower after hypnotism.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab2e2b210.4hypnotisma-h4",
+        "type": "hint",
+        "dependencies": [
+            "ab2e2b210.4hypnotisma-h3"
+        ],
+        "title": "Hypothesis Testing with Two Samples",
+        "text": "We can now start formulating the claims. We have before and after data and have a null assumption that there is a mean zero difference between the data, therefore we are conducting a paired two sample test.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab2e2b210.4hypnotisma-h5",
+        "type": "hint",
+        "dependencies": [
+            "ab2e2b210.4hypnotisma-h4"
+        ],
+        "title": "Hypothesis Testing with Two Samples",
+        "text": "We must assume that there are no effects post hypnotism. Let $$\\mu_d$$ denote the difference in before and after pain measurements.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab2e2b210.4hypnotisma-h6",
+        "type": "hint",
+        "dependencies": [
+            "ab2e2b210.4hypnotisma-h5"
+        ],
+        "title": "Hypothesis Testing with Two Samples",
+        "text": "Let $$\u03bc_d$$ denote the difference in pain measurements.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab2e2b210.4hypnotisma-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$H_0$$: $$\\mu_d$$>=0, $$H_a$$: $$\\mu_d$$<0"
+        ],
+        "dependencies": [
+            "ab2e2b210.4hypnotisma-h6"
+        ],
+        "title": "Hypothesis Testing with Two Samples",
+        "text": "Which of the following claim pairs matches the situation described?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$H_0$$: $$\\mu_d$$>=0, $$H_a$$: $$\\mu_d$$<0",
+            "$$H_0$$: $$\\mu_d$$<=0, $$H_a$$: $$\\mu_d$$<0",
+            "$$H_0$$: $$\\mu_d$$<0, $$H_a$$: $$\\mu_d$$<0",
+            "$$H_0$$: $$\\mu_d$$>0, $$H_a$$: $$\\mu_d$$<=0"
+        ]
+    },
+    {
+        "id": "ab2e2b210.4hypnotisma-h8",
+        "type": "hint",
+        "dependencies": [
+            "ab2e2b210.4hypnotisma-h7"
+        ],
+        "title": "Hypothesis Testing with Two Samples",
+        "text": "We must assume that the treatment offered is worse for pain or has no effect, therefore the mean differences in pain measurements by default is greater than or equal to zero.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab2e2b210.4hypnotisma-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3.0359$$"
+        ],
+        "dependencies": [
+            "ab2e2b210.4hypnotisma-h8"
+        ],
+        "title": "Compute the test statistic. Round to the nearest four decimal places.",
+        "text": "",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab2e2b210.4hypnotisma-h10",
+        "type": "hint",
+        "dependencies": [
+            "ab2e2b210.4hypnotisma-h8"
+        ],
+        "title": "Test statistic",
+        "text": "test statistic $$t=x_d-\\mu_d/(s_d/sqrt(n))$$, $$otherwise$$ $$known$$ $$as$$ $$the$$ $$quantity$$ $$mean$$ $$sample$$ $$difference$$ $$subtracted$$ $$by$$ $$the$$ $$population$$ $$mean$$ $$for$$ $$the$$ $$differences$$ $$divided$$ $$by$$ $$the$$ $$sample$$ $$standard$$ $$deviation$$ $$divided$$ $$by$$ $$the$$ $$square$$ $$root$$ $$of$$ $$n$$. $$Note$$ $$that$$ $$this$$ $$is$$ $$a$$ $$t$$ $$distribution$$ $$with$$ $$degrees$$ $$of$$ $$freedom$$ $$n-1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab2e2b210.4hypnotisma-h11",
+        "type": "hint",
+        "dependencies": [
+            "ab2e2b210.4hypnotisma-h10"
+        ],
+        "title": "Hypothesis Testing with Two Samples",
+        "text": "We must know the mean ($$\\bar x_d$$) and standard deviation differences($$s_d$$). Using a graphing calculator, the mean differences and the standard deviation of differences can be found in the STAT menu. The mean difference is found to be $$3.125$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab2e2b210.4hypnotisma-h12",
+        "type": "hint",
+        "dependencies": [
+            "ab2e2b210.4hypnotisma-h11"
+        ],
+        "title": "Hypothesis Testing with Two Samples",
+        "text": "With mean difference equalling $$3.125$$, $$s_d$$=2.91143 $$(the$$ $$standard$$ $$deviation$$ $$of$$ $$differences)$$, $$and$$ $$n=8$$, $$test$$ $$statistic$$ $$t=3.03591$$. $$Round$$ $$to$$ $$four$$ $$decimal$$ $$places$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab2e2b210.4hypnotisma-h13",
+        "type": "hint",
+        "dependencies": [
+            "ab2e2b210.4hypnotisma-h12"
+        ],
+        "title": "P-value",
+        "text": "Under the P-value table associated with $$t=3.0359$$ and degrees of freedom equaling $$8+8-2=14$$, the $$p-value$$ is found to be $$0.00948$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ab2e2b210.4hypnotisma-h14",
+        "type": "hint",
+        "dependencies": [
+            "ab2e2b210.4hypnotisma-h13"
+        ],
+        "title": "Hypothesis Testing with Two Samples",
+        "text": "Since $$0.00948$$, the $$p-value$$, is less than our significance level of $$0.05$$, the result is significant and we reject the null hypothesis that there is no difference.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

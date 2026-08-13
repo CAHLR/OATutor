@@ -1,0 +1,60 @@
+[
+    {
+        "id": "ace4be0A1-diag-P07a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Divide fractions",
+        "text": "Apply $$\\frac{\\frac{a}{b}}{\\frac{c}{d}}=\\frac{ad}{bc}$$ where $$a=2$$, $$b=7x+1$$, $$c=x$$, and $$d=4x+1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P07a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P07a-h1"
+        ],
+        "title": "Carry out the multiplication",
+        "text": "$$\\frac{\\frac{2}{7x+1}}{\\frac{x}{4x+1}}=\\frac{2\\left(4x+1\\right)}{x\\left(7x+1\\right)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P07a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P07a-h2"
+        ],
+        "title": "Apply distributive property",
+        "text": "Apply the distributive property, $$a\\left(b+c\\right)=ab+ac$$ in both the numerator and denominator.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P07a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P07a-h3"
+        ],
+        "title": "Carry out distribution",
+        "text": "$$\\frac{2\\left(4x+1\\right)}{x\\left(7x+1\\right)}=\\frac{8x+2}{7x^2+x}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P07a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P07a-h4"
+        ],
+        "title": "Identify the denominator",
+        "text": "The coefficient of F in the denominator is $$F=0$$. The answer is $$7x^2+x+0=7x^2+x$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

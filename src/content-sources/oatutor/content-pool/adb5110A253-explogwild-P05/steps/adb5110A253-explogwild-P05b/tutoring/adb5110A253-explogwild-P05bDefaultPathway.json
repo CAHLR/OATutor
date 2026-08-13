@@ -1,0 +1,63 @@
+[
+    {
+        "id": "adb5110A253-explogwild-P05b-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.1\\times{10}^{11}$$"
+        ],
+        "dependencies": [],
+        "title": "Convert to scientific notation",
+        "text": "Before calculating the time, use your calculator to find $${26}^8$$, $$then$$ $$write$$ $$it$$ $$in$$ $$scientific$$ $$notation$$ $$rounded$$ $$to$$ $$one$$ $$decimal$$ $$place$$ $$(e.g.$$, $$a.b\\times10**c$$ ).",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "adb5110A253-explogwild-P05b-h1-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Calculator output",
+                "text": "Your calculator will show something like 208,827,064,576.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            },
+            {
+                "id": "adb5110A253-explogwild-P05b-h1-s2",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Move the decimal",
+                "text": "To write this in scientific notation, move the decimal point $$11$$ spaces to the left to get a number between $$1$$ and $$10$$. This gives approximately $$2.1\\times10**{11}.$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "adb5110A253-explogwild-P05b-h2",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P05b-h1"
+        ],
+        "title": "Divide by one million",
+        "text": "One million is $${10}^6$$ so checking $$2.1\\times10**{11}$$ passwords at $${10}^6$$ passwords per second gives $$(2.1\\times10**{11})/(10**6) $$=$$ $$2.1$$ $$\\cdot$$ $${10}^5$$ seconds.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P05b-h3",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P05b-h2"
+        ],
+        "title": "Convert seconds to hours",
+        "text": "There are $$3600={60}^2$$ seconds per hour, so $$(2.1\\times10**5)/3600=58.33$$ hours. Rounding to the nearest whole hour gives $$58$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

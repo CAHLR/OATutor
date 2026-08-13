@@ -1,0 +1,36 @@
+[
+    {
+        "id": "afe03cdT223-dblhalf-P05a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Double angle formula",
+        "text": "Recall that $$2\\sin(y)\\cos(y)=\\sin(2y)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P05a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P05a-h1"
+        ],
+        "title": "Substitute $$2x$$",
+        "text": "This means $$2\\sin(2x)\\cos(2x)=\\sin(4x)$$ by substituting $$y=2x$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P05a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P05a-h2"
+        ],
+        "title": "Factor the constant",
+        "text": "$$12\\sin(2x)\\cos(2x)=6(2\\sin(2x)\\cos(2x))=6\\sin(4x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a3e5a23A123-cancel-P07a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Move all terms to LHS",
+        "text": "Subtract $$2x\\left(x+5\\right)$$ from both sides: \\n $$2x\\left(x-3\\right)-2x\\left(x+5\\right)=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3e5a23A123-cancel-P07a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3e5a23A123-cancel-P07a-h1"
+        ],
+        "title": "Factor out $$2x$$",
+        "text": "$$2x(\\left(x-3\\right)-\\left(x+5\\right))=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3e5a23A123-cancel-P07a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3e5a23A123-cancel-P07a-h2"
+        ],
+        "title": "Rules for addition",
+        "text": "$$2x(\\left(x-3\\right)-\\left(x+5\\right))=2x(x-3-x-5)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3e5a23A123-cancel-P07a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3e5a23A123-cancel-P07a-h3"
+        ],
+        "title": "Combine like terms",
+        "text": "$$2x(x-3-x-5)=2x(\\left(x-x\\right)-\\left(3+5\\right))$$ \\n $$=2x(-8)=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3e5a23A123-cancel-P07a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a3e5a23A123-cancel-P07a-h4"
+        ],
+        "title": "Zero product property",
+        "text": "Since $$2x(-8)=0$$ either $$x^2=0$$ or $$-8=0$$. Since the second is impossible, it must be that $$x^2=0$$ or $$x=0$$ is the only solution.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a1cc0dcareas5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Express the function",
+        "text": "We must first express the graphs as functions of $$y$$. The curve on the left can be represented by the function $$x=\\sqrt{y}$$. The curve on the right can be represented by the funcgion $$x=2-y$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1cc0dcareas5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1cc0dcareas5a-h1"
+        ],
+        "title": "Change the limits",
+        "text": "Now we have to determine the limits of integration. The region is bounded below by the x-axis, so the lower limit of integration is $$y=0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1cc0dcareas5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1cc0dcareas5a-h2"
+        ],
+        "title": "Change the limits",
+        "text": "The region is bounded below by the x-axis, so the lower limit of integration is $$y=0$$. The upper limit of integration is determined by the point where the two graphs intersect, which is the point $$(1,1)$$ so the upper limit of integration is $$y=1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1cc0dcareas5a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1cc0dcareas5a-h3"
+        ],
+        "title": "Find the area",
+        "text": "The area of the region $$A=\\int_{0}^{1} 2-y-\\sqrt{y} \\,dy$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1cc0dcareas5a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a1cc0dcareas5a-h4"
+        ],
+        "title": "Compute the integral",
+        "text": "$$2y-\\frac{y^2}{2}-\\frac{\\frac{2}{3} y^3}{2}$$ with the limits go from $$y=0$$ to $$y=1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1cc0dcareas5a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a1cc0dcareas5a-h5"
+        ],
+        "title": "Evaluate",
+        "text": "$$2\\times1-\\frac{1^2}{2}-\\frac{\\frac{2}{3} 1^3}{2}-2\\times0-\\frac{0^2}{2}-\\frac{\\frac{2}{3} 0^3}{2}=\\frac{5}{6}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

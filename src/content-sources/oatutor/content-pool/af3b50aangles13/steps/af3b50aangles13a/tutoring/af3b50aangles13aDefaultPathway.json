@@ -1,0 +1,35 @@
+[
+    {
+        "id": "af3b50aangles13a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "divide by $$180$$ degrees"
+        ],
+        "dependencies": [],
+        "title": "Converting to Radians",
+        "text": "If you have to multipy the radians by (180 degrees/pi) to convert to degrees, what do you need to do to convert from degrees to radians?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "add by $$180$$ degrees",
+            "subtract by $$180$$ degrees",
+            "multiply by $$180$$ degrees",
+            "divide by $$180$$ degrees"
+        ]
+    },
+    {
+        "id": "af3b50aangles13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "af3b50aangles13a-h1"
+        ],
+        "title": "Conversion Formula",
+        "text": "The formula for converting degrees to radians is (pi/180 degrees)*degrees.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

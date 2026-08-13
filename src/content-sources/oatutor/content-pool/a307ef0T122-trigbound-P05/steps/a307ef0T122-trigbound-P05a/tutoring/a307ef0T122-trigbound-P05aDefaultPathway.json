@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a307ef0T122-trigbound-P05a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [],
+        "title": "Inside the square root",
+        "text": "What is the largest value of the expression inside of the square root $$7+2\\cos(\\theta)?$$",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a307ef0T122-trigbound-P05a-h1-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Bounding the cosine",
+                "text": "Since $$\\cos(\\theta)\\leq{1},$$ $$7+2\\cos(\\theta)\\leq{9}$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a307ef0T122-trigbound-P05a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a307ef0T122-trigbound-P05a-h1"
+        ],
+        "title": "Include the square root",
+        "text": "If the maximum value inside the root is $$9$$, what is the maximum value of the whole function?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a307ef0T122-trigbound-P05a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Include the square root",
+                "text": "$$\\sqrt{9}=3$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    }
+]

@@ -1,0 +1,89 @@
+[
+    {
+        "id": "abaea60linmom10b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Elastic Collisions",
+        "text": "In an elastic collision, both momentum and kinetic energy are conserved. This means that the total momentum and total kinetic energy before the collision are equal to the total momentum and total kinetic energy after the collision.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom10b-h2",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom10b-h1"
+        ],
+        "title": "Conservation of Momentum",
+        "text": "The conservation of momentum can be expressed as: $$m_{1}v_{1i}+m_{2}v_{2i}=m_{1}v_{1f}+m_{2}v_{2f}$$, $$where$$ $$m_{1}$$ and $$m_{2}$$ are the masses of the cars, $$v_{1i}$$ and $$v_{2i}$$ are the initial velocities, and $$v_{1f}$$ and $$v_{2f}$$ are the final velocities.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom10b-h3",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom10b-h1"
+        ],
+        "title": "Conservation of Kinetic Energy",
+        "text": "The conservation of kinetic energy can be expressed as: $$0.5m_{1}v_{1i}**{2}+0.5m_{2}v_{2i}**{2}=0.5m_{1}v_{1f}**{2}+0.5m_{2}v_{2f}**{2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom10b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$v_1 f=6$$"
+        ],
+        "dependencies": [
+            "abaea60linmom10b-h2"
+        ],
+        "title": "Solving for Final Velocities",
+        "text": "Using the conservation equations, solve for the final velocities of both cars. Start by solving the momentum equation for one of the final velocities.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom10b-h5",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom10b-h4"
+        ],
+        "title": "Substitute Known Values",
+        "text": "Substitute the known values into the momentum equation: $$400\\cdot5.6+400\\cdot6=400v_{1f}+400v_{2f}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom10b-h6",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom10b-h5"
+        ],
+        "title": "Simplify the Equation",
+        "text": "Simplify the equation to find $$v_{1f}$$: $$2240+2400=400v_{1f}+400v_{2f}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abaea60linmom10b-h7",
+        "type": "hint",
+        "dependencies": [
+            "abaea60linmom10b-h6"
+        ],
+        "title": "Solve for $$v_{1f}$$",
+        "text": "Rearrange the equation to solve for $$v_{1f}$$: $$v_{1f}=6$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

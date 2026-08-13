@@ -1,0 +1,105 @@
+[
+    {
+        "id": "afb69a0sumprod24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall product-to-sum formulas.",
+        "text": "Which product-to-sum formula applies to cos(A) cos(B)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod24a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{1}{2\\left(cos\\left(A-B\\right)+cos\\left(A+B\\right)\\right)}$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod24a-h1"
+        ],
+        "title": "Identify the correct formula.",
+        "text": "The product cos(A) cos(B) can be rewritten as:",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{1}{2\\left(cos\\left(A-B\\right)+cos\\left(A+B\\right)\\right)}$$",
+            "$$\\frac{1}{2\\left(cos\\left(A+B\\right)-cos\\left(A-B\\right)\\right)}$$",
+            "$$\\frac{1}{2\\left(sin\\left(A+B\\right)+sin\\left(A-B\\right)\\right)}$$",
+            "$$\\frac{1}{2\\left(cos\\left(A-B\\right)-cos\\left(A+B\\right)\\right)}$$"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod24a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod24a-s1"
+        ],
+        "title": "Identify A and B.",
+        "text": "What are the values of A and B in cos(45 degrees)cos(15 degrees)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod24a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A=45$$ $$degrees, B=15$$ degrees"
+        ],
+        "dependencies": [
+            "afb69a0sumprod24a-h2"
+        ],
+        "title": "State A and B.",
+        "text": "In cos(45 degrees)cos(15 degrees) what are A and B?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$A=45$$ $$degrees, B=15$$ degrees",
+            "$$A=15$$ $$degrees, B=45$$ degrees",
+            "$$A=45$$ $$degrees, B=45$$ degrees",
+            "$$A=15$$ $$degrees, B=15$$ degrees"
+        ]
+    },
+    {
+        "id": "afb69a0sumprod24a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod24a-s2"
+        ],
+        "title": "Apply the formula and evaluate.",
+        "text": "Substitute A and B into the product-to-sum formula and evaluate the cosine values.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod24a-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "cos(30 degrees)=sqrt(3)/2,cos(60 $$degrees)=\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod24a-h3"
+        ],
+        "title": "Evaluate the cosine terms.",
+        "text": "What are cos(30 degrees) and cos(60 degrees)?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "cos(30 degrees)=sqrt(3)/2,cos(60 $$degrees)=\\frac{1}{2}$$",
+            "cos(30 degrees)=1/2,cos(60 $$degrees)=\\frac{\\sqrt{3}}{2}$$",
+            "cos(30 degrees)=sqrt(2)/2,cos(60 $$degrees)=\\frac{1}{2}$$",
+            "cos(30 degrees)=sqrt(3)/2,cos(60 $$degrees)=\\frac{\\sqrt{3}}{2}$$"
+        ]
+    }
+]

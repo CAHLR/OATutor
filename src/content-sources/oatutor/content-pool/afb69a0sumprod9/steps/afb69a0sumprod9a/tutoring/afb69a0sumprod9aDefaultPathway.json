@@ -1,0 +1,53 @@
+[
+    {
+        "id": "afb69a0sumprod9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall product-to-sum formulas",
+        "text": "Which product-to-sum formula applies to cos(alpha)cos(beta)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod9a-h1"
+        ],
+        "title": "Recall angle Sum or Difference formulas",
+        "text": "How can you express cos(195 degrees) and cos(105 degrees) using sums or differences of common angles?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afb69a0sumprod9a-h2"
+        ],
+        "title": "Evaluate and compare",
+        "text": "Calculate the value using both methods and then consider which required fewer complex calculations.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afb69a0sumprod9a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{4}$$"
+        ],
+        "dependencies": [
+            "afb69a0sumprod9a-h3"
+        ],
+        "title": "Calculate using product-to-sum",
+        "text": "Using the product-to-sum formula, what is the value of cos(195 degrees)cos(105 degrees)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

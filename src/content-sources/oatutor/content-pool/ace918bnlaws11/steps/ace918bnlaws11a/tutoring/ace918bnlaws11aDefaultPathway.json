@@ -1,0 +1,58 @@
+[
+    {
+        "id": "ace918bnlaws11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Forces",
+        "text": "To find the acceleration, consider the forces acting on the body. The upward force is $$25.0$$ N, and the downward force is the weight of the body.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws11a-h1"
+        ],
+        "title": "Calculate the Weight",
+        "text": "The weight of the body can be calculated using the formula: weight $$=$$ mass times gravitational acceleration (g $$=$$ $$9.8$$ m/s**2).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws11a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5.6$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws11a-h2"
+        ],
+        "title": "Calculate the Net Force",
+        "text": "The net force is the difference between the upward force and the weight of the body. Calculate the net force.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws11a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.7$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws11a-h3"
+        ],
+        "title": "Find the Acceleration",
+        "text": "Use Newton's second law: net force $$=$$ mass times acceleration. Solve for acceleration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

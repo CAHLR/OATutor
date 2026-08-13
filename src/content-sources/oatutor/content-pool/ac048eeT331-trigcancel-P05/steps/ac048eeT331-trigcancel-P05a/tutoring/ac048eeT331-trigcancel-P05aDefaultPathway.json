@@ -1,0 +1,94 @@
+[
+    {
+        "id": "ac048eeT331-trigcancel-P05a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-\\sqrt{3}}{2}$$"
+        ],
+        "dependencies": [],
+        "title": "Evaluate the inner value",
+        "text": "First, calculate the inner value: what is $$\\sin\\left(\\frac{4\\pi}{3}\\right)?$$",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "ac048eeT331-trigcancel-P05a-h1-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Identify the quadrant",
+                "text": "Observe that $$\\frac{4\\pi}{3}=\\pi+\\frac{\\pi}{3},$$ which is in the third quadrant.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "ac048eeT331-trigcancel-P05a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\left(-\\pi\\right)}{3}$$"
+        ],
+        "dependencies": [
+            "ac048eeT331-trigcancel-P05a-h1"
+        ],
+        "title": "Evaluate the outer value",
+        "text": "$$\\sin\\left(\\frac{4\\pi}{3}\\right)=\\frac{-\\sqrt{3}}{2}.$$ Now, what is $$\\arcsin\\left(-\\frac{\\sqrt{3}}{2}\\right)?$$",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{4\\pi}{3}$$",
+            "$$\\frac{2\\pi}{3}$$",
+            "$$\\frac{\\left(-\\pi\\right)}{3}$$",
+            "$$\\frac{\\pi}{3}$$"
+        ],
+        "subHints": [
+            {
+                "id": "ac048eeT331-trigcancel-P05a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Remember the range",
+                "text": "The output of $$\\arcsin$$ must be in the principal range $$\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right].$$ $$\\frac{4\\pi}{3}$$ is outside this range.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            },
+            {
+                "id": "ac048eeT331-trigcancel-P05a-h2-s2",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Connection to the unit circle",
+                "text": "Recall that $$\\sin\\left(\\frac{4\\pi}{3}\\right)$$ represents the $$y-$$ coordinate of the point on the unit circle at the angle $$\\frac{4\\pi}{3}.$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            },
+            {
+                "id": "ac048eeT331-trigcancel-P05a-h2-s3",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Find equivalent angle geometrically",
+                "text": "The principal range of $$\\arcsin$$ is $$\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right], $$ which is the right half of the unit circle. To find an angle in this range with the same $$y-$$ coordinate as $$\\frac{4\\pi}{3}, $$ imagine drawing a horizontal line straight across from Quadrant III into Quadrant IV. This line hits the right half of the circle at $$\\frac{-\\pi}{3}.$$\\n##figure1.gif##",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            },
+            {
+                "id": "ac048eeT331-trigcancel-P05a-h2-s4",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Find equivalent angle algebraically",
+                "text": "We can also solve this algebraically. The angle $$\\frac{4\\pi}{3}$$ has a reference angle of $$\\frac{\\pi}{3}$$ and lies in Quadrant III, where sine is negative. In our principal range, sine is only negative in Quadrant IV. The corresponding angle in Quadrant IV is $$-\\frac{\\pi}{3}.$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a3a417cdiscontinuity2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor Denominator",
+        "text": "$$x^2-1$$ $$=$$ $$\\left(x-1\\right) \\left(x+1\\right)$$. Function undefined at $$x=1$$ and $$x=-1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3a417cdiscontinuity2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3a417cdiscontinuity2a-h1"
+        ],
+        "title": "Check $$x=-1$$",
+        "text": "Cancel $$x+1$$: simplifies to $$\\frac{1}{x-1}$$. Limit at $$x=-1$$ is $$\\frac{1}{\\left(-2\\right)}$$ $$=$$ $$\\frac{-1}{2}$$. Hole $$=$$ removable.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3a417cdiscontinuity2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3a417cdiscontinuity2a-h2"
+        ],
+        "title": "Check $$x=1$$",
+        "text": "No cancellation. As x\u21921, denom\u21920 and numer\u21922. Blows up $$=$$ $$infinite$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

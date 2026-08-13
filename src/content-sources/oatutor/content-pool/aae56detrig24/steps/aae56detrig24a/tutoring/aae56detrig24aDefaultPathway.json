@@ -1,0 +1,58 @@
+[
+    {
+        "id": "aae56detrig24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Applying the cosine sum formula",
+        "text": "Recall $$cos\\left(A+B\\right)=cos\\left(A\\right) cos\\left(B\\right)-sin\\left(A\\right) sin\\left(B\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig24a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig24a-h1"
+        ],
+        "title": "Evaluate the trigonometric values",
+        "text": "Find $$cos\\left(\\frac{2\\pi}{3}\\right)$$ and $$sin\\left(\\frac{2\\pi}{3}\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig24a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-1}{2}$$"
+        ],
+        "dependencies": [
+            "aae56detrig24a-h2"
+        ],
+        "title": "Value of $$cos\\left(\\frac{2\\pi}{3}\\right)$$",
+        "text": "What is $$cos\\left(\\frac{2\\pi}{3}\\right)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig24a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\sqrt{3}}{2}$$"
+        ],
+        "dependencies": [
+            "aae56detrig24a-s2"
+        ],
+        "title": "Value of $$sin\\left(\\frac{2\\pi}{3}\\right)$$",
+        "text": "What is $$sin\\left(\\frac{2\\pi}{3}\\right)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

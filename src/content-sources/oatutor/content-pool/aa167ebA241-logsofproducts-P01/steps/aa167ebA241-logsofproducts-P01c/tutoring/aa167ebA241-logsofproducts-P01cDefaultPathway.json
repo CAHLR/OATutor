@@ -1,0 +1,58 @@
+[
+    {
+        "id": "aa167ebA241-logsofproducts-P01c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Name the process",
+        "text": "In this step, we take the logarithm of both sides of the equation from step $$2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aa167ebA241-logsofproducts-P01c-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$b>0$$"
+        ],
+        "dependencies": [
+            "aa167ebA241-logsofproducts-P01c-h1"
+        ],
+        "title": "What is needed?",
+        "text": "What must be true about $$b$$ to be able to apply the logarithm to both sides of an equation?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$b>0$$",
+            "$$b<0$$",
+            "No restriction needed"
+        ]
+    },
+    {
+        "id": "aa167ebA241-logsofproducts-P01c-h3",
+        "type": "hint",
+        "dependencies": [
+            "aa167ebA241-logsofproducts-P01c-h2"
+        ],
+        "title": "Domain of logarithm",
+        "text": "The logarithm is only defined for positive inputs, which means that we must have $$b>0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aa167ebA241-logsofproducts-P01c-h4",
+        "type": "hint",
+        "dependencies": [
+            "aa167ebA241-logsofproducts-P01c-h3"
+        ],
+        "title": "Law of exponents",
+        "text": "We did not apply the law of exponents in this step. We used that in the previous step!",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

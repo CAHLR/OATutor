@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ace918bnlaws6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Convert Speed to $$\\frac{m}{s}$$",
+        "text": "First, convert the initial speed from $$\\frac{km}{h}$$ to $$\\frac{m}{s}$$. Remember that $$1\\, \\tfrac{\\text{km}}{\\text{hr}}$$ is equal to 1/$$3.6\\,\\tfrac{\\text{m}}{\\text{s}}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws6a-h1"
+        ],
+        "title": "Calculate Initial Speed in $$\\frac{m}{s}$$",
+        "text": "Use the conversion factor to find the initial speed in $$\\frac{m}{s}$$. What is $$1000\\, \\tfrac{\\text{km}}{\\text{hr}}$$ in $$\\frac{m}{s}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws6a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$277.78$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws6a-h2"
+        ],
+        "title": "Initial Speed in $$\\frac{m}{s}$$",
+        "text": "Calculate the initial speed in $$\\frac{m}{s}$$ using the conversion factor.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ace918bnlaws6a-h3"
+        ],
+        "title": "Use the Formula for Acceleration",
+        "text": "The formula for acceleration is $$a=(v_{f}-v_{i})/t$$, $$where$$ $$v_{f}$$ is the final velocity, $$v_{i}$$ is the initial velocity, and $$t$$ is the time.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "ace918bnlaws6a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$252.5$$"
+        ],
+        "dependencies": [
+            "ace918bnlaws6a-h4"
+        ],
+        "title": "Calculate Acceleration",
+        "text": "Substitute the values into the formula: $$v_{f}=0\\,\\tfrac{\\text{m}}{\\text{s}}$$, $$v_{i}=277.78\\,\\tfrac{\\text{m}}{\\text{s}}$$, $$and$$ $$t=1.10\\, \\text{s}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

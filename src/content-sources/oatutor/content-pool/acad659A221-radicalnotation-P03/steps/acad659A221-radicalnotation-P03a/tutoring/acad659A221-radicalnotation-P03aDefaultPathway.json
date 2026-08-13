@@ -1,0 +1,41 @@
+[
+    {
+        "id": "acad659A221-radicalnotation-P03a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Write as a radical",
+        "text": "$${81}^{\\frac{1}{4}}=\\sqrt[4]{81}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acad659A221-radicalnotation-P03a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "acad659A221-radicalnotation-P03a-h1"
+        ],
+        "title": "Write $$81$$ as a 4th power",
+        "text": "$$81=b^4$$. What is $$b$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acad659A221-radicalnotation-P03a-h3",
+        "type": "hint",
+        "dependencies": [
+            "acad659A221-radicalnotation-P03a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "$$81=3^4$$ implies that $${81}^{\\frac{1}{4}}=3$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

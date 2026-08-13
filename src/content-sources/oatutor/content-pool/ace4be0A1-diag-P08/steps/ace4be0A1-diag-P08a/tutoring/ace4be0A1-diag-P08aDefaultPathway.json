@@ -1,0 +1,84 @@
+[
+    {
+        "id": "ace4be0A1-diag-P08a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Difference of squares in numerator",
+        "text": "Apply $$a^2-b^2=\\left(a+b\\right) \\left(a-b\\right)$$ in the numerator with $$a=x^2$$ and $$b=1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P08a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P08a-h1"
+        ],
+        "title": "Difference of squares in numerator",
+        "text": "$$x^4-1=\\left(x^2\\right)^2-1=\\left(x^2+1\\right) \\left(x^2-1\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P08a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P08a-h2"
+        ],
+        "title": "Find common factors in numerator and denominator.",
+        "text": "$$\\frac{x^4-1}{\\left(x^2+1\\right)^2}=\\frac{\\left(x^2+1\\right) \\left(x^2-1\\right)}{\\left(x^2+1\\right)^2}$$ \\n Both numerator and denominator contain a factor of $$x^2+1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P08a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P08a-h3"
+        ],
+        "title": "Recall $$a^2=aa$$",
+        "text": "$$\\frac{\\left(x^2+1\\right) \\left(x^2-1\\right)}{\\left(x^2+1\\right)^2}=\\frac{\\left(x^2+1\\right) \\left(x^2-1\\right)}{\\left(x^2+1\\right) \\left(x^2+1\\right)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P08a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P08a-h4"
+        ],
+        "title": "Apply cancellation",
+        "text": "Apply cancellation $$\\frac{ab}{ac}=\\frac{b}{c}$$ with $$a=c=x^2+1$$ and $$b=x^2-1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P08a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P08a-h5"
+        ],
+        "title": "Apply cancellation",
+        "text": "$$\\frac{\\left(x^2+1\\right) \\left(x^2-1\\right)}{\\left(x^2+1\\right) \\left(x^2+1\\right)}=\\frac{x^2-1}{x^2+1}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P08a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P08a-h6"
+        ],
+        "title": "Identify the coefficient A.",
+        "text": "The coefficient of $$x$$ in the numerator is $$B=0$$, so the answer is \\n $$x^2+Bx+C=x^2+0x-1=x^2-1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

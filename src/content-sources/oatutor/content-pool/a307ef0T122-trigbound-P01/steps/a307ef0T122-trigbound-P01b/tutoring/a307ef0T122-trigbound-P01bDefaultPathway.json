@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a307ef0T122-trigbound-P01b-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [],
+        "title": "What is the smallest value of $$\\sin**2(\\theta)$$ for all $$\\theta?$$",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a307ef0T122-trigbound-P01b-h1-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Squared function values",
+                "text": "A function that is squared is always greater than zero, so the smallest possible value of $$\\sin**2(\\theta)$$ is $$0$$.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a307ef0T122-trigbound-P01b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-5$$"
+        ],
+        "dependencies": [
+            "a307ef0T122-trigbound-P01b-h1"
+        ],
+        "title": "What is the smallest value $$5\\cos(\\theta)$$ can take?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

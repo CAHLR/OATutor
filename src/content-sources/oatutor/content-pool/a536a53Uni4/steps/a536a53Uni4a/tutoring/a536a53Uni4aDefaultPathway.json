@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a536a53Uni4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Probability Function",
+        "text": "We know that we are looking at a uniform distribution, and also that we are looking at a continuous probability function. What would this probability function look like? As it turns out, this function will look like a straight line from $$0$$ to $$23$$. We can calculate the area under this function to get our desired probability.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a536a53Uni4a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$23$$"
+        ],
+        "dependencies": [
+            "a536a53Uni4a-h1"
+        ],
+        "title": "Interval",
+        "text": "If the baby can smile from anywhere between $$0$$ and $$23$$ seconds, how long is the interval (in seconds) in which a baby can smile?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a536a53Uni4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a536a53Uni4a-h2"
+        ],
+        "title": "Chances",
+        "text": "There is a $$\\frac{1}{23}$$ chance that the baby smiles between $$2$$ and $$3$$ seconds long.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a536a53Uni4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a536a53Uni4a-h3"
+        ],
+        "title": "Chances",
+        "text": "There is a $$\\frac{2}{23}$$ chance that the baby smiles between $$2$$ and $$4$$ seconds long. Starting to see a pattern? We can count the total number of seconds in the interval we want (2 to $$4$$ seconds has a $$2$$ second interval), and divide that by our total interval (0 to $$23$$ seconds has a $$23$$ second interval) to get our answer.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a536a53Uni4a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{19}{23}$$"
+        ],
+        "dependencies": [
+            "a536a53Uni4a-h4"
+        ],
+        "title": "Combining",
+        "text": "Knowing how to calculate the probability, what will our answer be?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

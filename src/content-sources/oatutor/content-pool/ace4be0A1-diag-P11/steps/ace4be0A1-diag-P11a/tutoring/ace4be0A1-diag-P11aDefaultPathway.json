@@ -1,0 +1,36 @@
+[
+    {
+        "id": "ace4be0A1-diag-P11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Combine terms with same denominator",
+        "text": "$$\\frac{x}{x-3}-\\frac{3}{x-3}-2=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P11a-h1"
+        ],
+        "title": "Rearrange",
+        "text": "Moving the constant term to the right-hand side, we have \\n $$\\frac{x-3}{x-3}=2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace4be0A1-diag-P11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace4be0A1-diag-P11a-h2"
+        ],
+        "title": "Interpret equation",
+        "text": "If $$x=3$$, the left-hand side of $$\\frac{x-3}{x-3}=2$$ is undefined. \\n If $$x\\neq$$ $$3, $$ then we can cancel the common factor and we get $$\\frac{x-3}{x-3}=1=2$$, which does not make sense. Therefore, there is no solution.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

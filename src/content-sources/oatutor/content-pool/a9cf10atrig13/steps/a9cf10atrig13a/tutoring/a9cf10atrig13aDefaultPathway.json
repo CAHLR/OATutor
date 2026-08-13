@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a9cf10atrig13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find $$x$$",
+        "text": "Use the Pythagorean identity $${\\operatorname{csc}\\left(\\theta\\right)}^2=1+{\\operatorname{cot}\\left(\\theta\\right)}^2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig13a-h1"
+        ],
+        "title": "Factor",
+        "text": "Rewrite $${\\operatorname{csc}\\left(\\theta\\right)}^2-{\\operatorname{cot}\\left(\\theta\\right)}^2$$ as $$1+{\\operatorname{cot}\\left(\\theta\\right)}^2-{\\operatorname{cot}\\left(\\theta\\right)}^2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig13a-h2"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "Combine like terms.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig13a-h3"
+        ],
+        "title": "Substitute $$x=sin(theta)$$",
+        "text": "The $${\\operatorname{cot}\\left(\\theta\\right)}^2$$ terms cancel.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9cf10atrig13a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a9cf10atrig13a-h4"
+        ],
+        "title": "Solve for (theta)",
+        "text": "The expression simplifies to $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

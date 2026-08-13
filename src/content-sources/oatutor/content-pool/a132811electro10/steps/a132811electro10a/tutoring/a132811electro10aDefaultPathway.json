@@ -1,0 +1,94 @@
+[
+    {
+        "id": "a132811electro10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Reaction",
+        "text": "Identify the oxidation and reduction half-reactions from the given overall reaction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro10a-h1"
+        ],
+        "title": "Oxidation and Reduction Potentials",
+        "text": "Use the standard reduction potentials to find the standard cell potential (E\u00b0cell) for the reaction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro10a-h2"
+        ],
+        "title": "Calculate E\u00b0cell",
+        "text": "E\u00b0cell $$=$$ E\u00b0red (cathode) - E\u00b0red (anode). Determine which species is oxidized and which is reduced.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro10a-h3"
+        ],
+        "title": "Using Faraday's Constant",
+        "text": "Use the formula \u0394G\u00b0 $$=$$ -nFE\u00b0cell, where $$n$$ is the number of moles of electrons transferred, F is Faraday's constant, and E\u00b0cell is the standard cell potential.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro10a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1314000$$"
+        ],
+        "dependencies": [
+            "a132811electro10a-h4"
+        ],
+        "title": "Calculate \u0394G\u00b0",
+        "text": "Substitute the values: $$n$$ $$=$$ $$3$$, F $$=$$ $$96485$$ $$\\frac{C}{mol}$$, and E\u00b0cell from previous steps into the formula \u0394G\u00b0 $$=$$ -nFE\u00b0cell.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro10a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro10a-h5"
+        ],
+        "title": "Convert to kJ",
+        "text": "Convert the result from Joules to kilojoules by dividing by $$1000$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro10a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1314$$"
+        ],
+        "dependencies": [
+            "a132811electro10a-h6"
+        ],
+        "title": "Final Answer",
+        "text": "What is the Gibbs free energy change in kJ?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

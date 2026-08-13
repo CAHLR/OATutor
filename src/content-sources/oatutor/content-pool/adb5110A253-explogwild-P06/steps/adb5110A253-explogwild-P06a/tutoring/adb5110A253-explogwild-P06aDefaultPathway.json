@@ -1,0 +1,96 @@
+[
+    {
+        "id": "adb5110A253-explogwild-P06a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Write the equation",
+        "text": "Want to solve $${10}^6\\times2^{\\left(-\\frac{n}{10}\\right)}=24$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P06a-h2",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P06a-h1"
+        ],
+        "title": "Isolate $$n$$",
+        "text": "Divide both sides by $${10}^6$$: \\n\\n$$2^{\\left(-\\frac{n}{10}\\right)}=\\frac{24}{{10}^6}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P06a-h3",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P06a-h2"
+        ],
+        "title": "Isolate $$n$$",
+        "text": "To cancel exponentials, apply a logarithm to both sides.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P06a-h4",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P06a-h3"
+        ],
+        "title": "After applying the logarithm",
+        "text": "Apply log base $$2$$ to both sides of the equation. \\n\\n$$\\log_{2}\\left(2^{\\left(-\\frac{n}{10}\\right)}\\right)=\\log_{2}\\left(\\frac{24}{{10}^6}\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P06a-h5",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P06a-h4"
+        ],
+        "title": "LHS",
+        "text": "Cancel the exponent on the left: \\n\\n$$\\frac{-n}{10}=\\log_{2}\\left(\\frac{24}{{10}^6}\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P06a-h6",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P06a-h5"
+        ],
+        "title": "RHS",
+        "text": "Apply law of logarithms for quotients:\\n\\n$$\\frac{-n}{10}=\\log_{2}\\left(24\\right)-\\log_{2}\\left({10}^6\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P06a-h7",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P06a-h6"
+        ],
+        "title": "Eliminate negative signs",
+        "text": "$$\\frac{-n}{10}=\\log_{2}\\left(24\\right)-\\log_{2}\\left({10}^6\\right)$$ is the same as $$\\frac{n}{10}=\\log_{2}\\left({10}^6\\right)-\\log_{2}\\left(24\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "adb5110A253-explogwild-P06a-h8",
+        "type": "hint",
+        "dependencies": [
+            "adb5110A253-explogwild-P06a-h7"
+        ],
+        "title": "Evaluate",
+        "text": "$$n=10(\\log_{2}\\left({10}^6\\right)-\\log_{2}\\left(24\\right))$$ which is approximately $$153$$ steps",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a949afaangmom7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Problem",
+        "text": "To find out how far the cylinder travels up the incline, we need to consider both its initial kinetic energy and the potential energy it gains as it moves up the incline.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom7a-h1"
+        ],
+        "title": "Kinetic Energy at the Start",
+        "text": "The initial kinetic energy of the cylinder is given by the formula for rotational kinetic energy: $$KE=\\frac{1}{2} I {\\omega}^2$$. Since the cylinder is rolling without slipping, we can relate omega to the linear velocity v using the relation $$v=\\omega{}r$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom7a-h2"
+        ],
+        "title": "Potential Energy at the Highest Point",
+        "text": "As the cylinder rolls up the incline, it gains potential energy. The potential energy at the highest point is given by $$PE=m g h$$, where $$h$$ is the height it reaches.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom7a-h3"
+        ],
+        "title": "Relating Height to Distance on the Incline",
+        "text": "The height $$h$$ can be related to the distance $$d$$ traveled up the incline using the angle of the incline: $$h=d\\sin(\\theta)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom7a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$h=(v**{2})/(2g)$$"
+        ],
+        "dependencies": [
+            "a949afaangmom7a-h4"
+        ],
+        "title": "Energy Conservation Equation",
+        "text": "Using the conservation of energy, set the initial kinetic energy equal to the potential energy at the highest point: $$(1/2)mv**{2}=(1/2)I\\omega**{2}+mgh$$. $$Solve$$ $$for$$ $$h$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

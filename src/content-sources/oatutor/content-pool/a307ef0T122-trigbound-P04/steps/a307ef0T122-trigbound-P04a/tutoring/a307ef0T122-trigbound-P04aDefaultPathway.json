@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a307ef0T122-trigbound-P04a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply laws of exponents",
+        "text": "Rewrite the expression as a single fraction raised to the power of $$5.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a307ef0T122-trigbound-P04a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a307ef0T122-trigbound-P04a-h1"
+        ],
+        "title": "Apply laws of exponents",
+        "text": "$$\\left|\\frac{(2\\cos(\\theta))**5}{3**5}\\right|=\\left|\\frac{2\\cos(\\theta)}{3}\\right|**5$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a307ef0T122-trigbound-P04a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2}{3}$$"
+        ],
+        "dependencies": [
+            "a307ef0T122-trigbound-P04a-h2"
+        ],
+        "title": "Bounding inner expression",
+        "text": "What is the largest value of $$\\left|\\frac{2\\cos(\\theta)}{3}\\right|?$$",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a307ef0T122-trigbound-P04a-h3-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Bounding inner expression",
+                "text": "Since $$|\\cos(\\theta)|$$ $$ \\leq 1$$, the largest the inside can be is $$\\frac{2(1)}{3}$$ $$=\\frac{2}{3}$$.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a307ef0T122-trigbound-P04a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a307ef0T122-trigbound-P04a-h3"
+        ],
+        "title": "Putting it all together",
+        "text": "The upper bound is $$k=(\\frac{2}{3})**5$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

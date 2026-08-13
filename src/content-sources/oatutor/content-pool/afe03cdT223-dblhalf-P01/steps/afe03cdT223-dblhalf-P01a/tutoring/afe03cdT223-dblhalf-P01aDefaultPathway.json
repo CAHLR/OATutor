@@ -1,0 +1,84 @@
+[
+    {
+        "id": "afe03cdT223-dblhalf-P01a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor the expression",
+        "text": "Factor the expression as a difference of squares",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P01a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P01a-h1"
+        ],
+        "title": "Difference of squares with squares",
+        "text": "$$a^4-b^4=\\left(a^2-b^2\\right) \\left(a^2+b^2\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P01a-h3",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P01a-h2"
+        ],
+        "title": "Substitute",
+        "text": "$$\\cos**4(x)-\\sin**4(x)=(\\cos**2(x)-\\sin**2(x))(\\cos**2(x)+\\sin**2(x))$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P01a-h4",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P01a-h3"
+        ],
+        "title": "Apply a trig identity",
+        "text": "Apply the Pythagorean identity to simplify one of the factors",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P01a-h5",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P01a-h4"
+        ],
+        "title": "Apply a trig identity",
+        "text": "Recall that $$\\cos**2(x)+\\sin**2(x)=1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P01a-h6",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P01a-h5"
+        ],
+        "title": "Simplify",
+        "text": "$$(\\cos**2(x)-\\sin**2(x))(\\cos**2(x)+\\sin**2(x))=(\\cos**2(x)-\\sin**2(x))$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afe03cdT223-dblhalf-P01a-h7",
+        "type": "hint",
+        "dependencies": [
+            "afe03cdT223-dblhalf-P01a-h6"
+        ],
+        "title": "Standard double angle identity for cosine",
+        "text": "Note this is the standard double identity for cosine: \\n $$(\\cos**2(x)-\\sin**2(x))=\\cos(2x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

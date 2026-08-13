@@ -1,0 +1,89 @@
+[
+    {
+        "id": "a666a84A213-exploginverse-P08a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [],
+        "title": "Break into simpler pieces",
+        "text": "What is $$\\log_{5}\\left(1\\right)$$ equal to?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a666a84A213-exploginverse-P08a-h1-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Express as an exponential",
+                "text": "$$\\log_{5}\\left(1\\right)$$ is asking for the power $$y$$ so that $$5^y=1$$. The solution is $$y=0$$.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a666a84A213-exploginverse-P08a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P08a-h1"
+        ],
+        "title": "Simplified equation",
+        "text": "We have reduced the question to solving $$\\log_{5}\\left(x^3-7\\right)=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P08a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P08a-h2"
+        ],
+        "title": "Re-express as an exponential equation",
+        "text": "Recall that $$\\log_{5}\\left(x^3-7\\right)=0$$ is equivalent to the exponential equation $$5^0=x^3-7$$, where $$5^0=1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P08a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P08a-h3"
+        ],
+        "title": "Substitute and solve",
+        "text": "This reduces $$\\log_{5}\\left(x^3-7\\right)=0$$ to solving $$x^3-7=1$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P08a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P08a-h4"
+        ],
+        "title": "Solve for $$x$$.",
+        "text": "Solve $$x^3-7=1$$ for $$x$$. Add $$7$$ to both sides to get $$x^3=8$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P08a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P08a-h5"
+        ],
+        "title": "Isolate $$x$$.",
+        "text": "Taking the cube root, you find $$x=2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

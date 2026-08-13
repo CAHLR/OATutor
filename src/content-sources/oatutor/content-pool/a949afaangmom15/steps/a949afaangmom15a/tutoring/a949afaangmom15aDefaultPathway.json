@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a949afaangmom15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Momentum Conservation",
+        "text": "The angular momentum of a rotating object is conserved if no external torques act on it. This means that the initial angular momentum of the Sun must equal the final angular momentum of the white dwarf.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom15a-h1"
+        ],
+        "title": "Angular Momentum Formula",
+        "text": "The angular momentum L of a sphere is given by $$L=I\\omega$$, $$where$$ $$I$$ $$is$$ $$the$$ $$moment$$ $$of$$ $$inertia$$ $$and$$ $$\\omega$$ is the angular velocity. For a sphere, $$I=(2/5)MR**{2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom15a-h2"
+        ],
+        "title": "Relating Angular Velocity and Period",
+        "text": "The angular velocity $$\\omega$$ is related to the period $$T$$ by the formula $$\\omega=2*\\pi/T$$. $$ \\cup se$$ $$this$$ $$to$$ $$find$$ $$the$$ $$initial$$ $$and$$ $$final$$ $$angular$$ $$velocities$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom15a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2\\pi}{28\\times24\\times60\\times60}$$"
+        ],
+        "dependencies": [
+            "a949afaangmom15a-h3"
+        ],
+        "title": "Calculate Initial Angular Velocity",
+        "text": "Calculate the initial angular velocity of the Sun using $$\\omega=2*\\pi/T$$, $$where$$ $$T$$ $$is$$ $$the$$ $$initial$$ $$period$$ $$in$$ $$seconds$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

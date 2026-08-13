@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a83b2ddmodel18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Writing a Linear Model",
+        "text": "Translate the given information into $$2$$ linear models.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a83b2ddmodel18a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Set the equations equal to each other."
+        ],
+        "dependencies": [
+            "a83b2ddmodel18a-h1"
+        ],
+        "title": "Compare Models",
+        "text": "To answer this problem, we need to find when our $$2$$ models intersect. What should I do if I want to find when (what amount of minutes) one model equals the other?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Set the equations equal to each other.",
+            "Set the equations equal to $$0$$."
+        ]
+    },
+    {
+        "id": "a83b2ddmodel18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a83b2ddmodel18a-h2"
+        ],
+        "title": "Simply",
+        "text": "Solve for $$x$$ in $$5x=3x+40$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a83b2ddmodel18a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a83b2ddmodel18a-h3"
+        ],
+        "title": "Interpret",
+        "text": "Interpret each model. Because the slope is larger in $$y=5x$$, the line is steeper and the slope in $$y=3x+40$$ is less steep, but starts at $$40$$ instead of $$0$$. Therefore, $$y=5x$$ will be more expensive for a large enough $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a83b2ddmodel18a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a83b2ddmodel18a-h4"
+        ],
+        "title": "Interpret",
+        "text": "We are interested in the cheapest model and the value of $$x$$ is when $$y=3x+40$$ is the better choice. $$x$$ is our answer.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

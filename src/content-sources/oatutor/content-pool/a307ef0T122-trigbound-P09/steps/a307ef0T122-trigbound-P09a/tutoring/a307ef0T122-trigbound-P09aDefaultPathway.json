@@ -1,0 +1,84 @@
+[
+    {
+        "id": "a307ef0T122-trigbound-P09a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "as small as possible"
+        ],
+        "dependencies": [],
+        "title": "Consider the quotient",
+        "text": "To make $$\\frac{20}{7-2\\cos(n\\theta)}$$ as large as possible, do we the denominator to be as large as possible or as small as possible?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "as small as possible",
+            "as large as possible"
+        ],
+        "subHints": [
+            {
+                "id": "a307ef0T122-trigbound-P09a-h1-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Subtracting a negative",
+                "text": "Since the denominator is always positive, to get the maximum value of the quotient, we want to divide by the smallest value.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a307ef0T122-trigbound-P09a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a307ef0T122-trigbound-P09a-h1"
+        ],
+        "title": "What is the minimum value $$7-2\\cos(n\\theta)$$ can take?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a307ef0T122-trigbound-P09a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Bound cosine",
+                "text": "$$-1\\leq\\cos(n\\theta)\\leq1$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            },
+            {
+                "id": "a307ef0T122-trigbound-P09a-h2-s2",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Subtract the largest maximum value",
+                "text": "To make $$7-2\\cos(n\\theta)$$ as small as possible, we need $$\\cos(n\\theta)$$ as large as possible. The max of $$\\cos(n\\theta)$$ is $$1$$, so the smallest value is $$7-2(1)=5$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a307ef0T122-trigbound-P09a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a307ef0T122-trigbound-P09a-h2"
+        ],
+        "title": "Putting it together",
+        "text": "The largest possible value of $$\\frac{20}{7-2\\cos(n\\theta)}$$ occurs when the denominator is $$5$$, which gives $$\\frac{20}{5}=4$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

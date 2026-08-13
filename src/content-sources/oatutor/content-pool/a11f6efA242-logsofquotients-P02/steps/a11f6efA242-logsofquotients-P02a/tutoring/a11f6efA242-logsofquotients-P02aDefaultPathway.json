@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a11f6efA242-logsofquotients-P02a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The input must be greater than zero",
+        "text": "For this logarithm to make sense we must have $$\\!\\big(\\frac{x**2-9}{x-3}\\big)>0$$ and well defined.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a11f6efA242-logsofquotients-P02a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a11f6efA242-logsofquotients-P02a-h1"
+        ],
+        "title": "Rearrange to make sense of product",
+        "text": "$$\\frac{x**2-9}{x-3}=(x+3)$$ if $$x\\neq$$ $$3$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a11f6efA242-logsofquotients-P02a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x>-3$$"
+        ],
+        "dependencies": [
+            "a11f6efA242-logsofquotients-P02a-h2"
+        ],
+        "title": "Find $$x$$ to make the input positive",
+        "text": "Which values of $$x$$ make $$x+3>0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$x>3$$",
+            "$$x>-3$$",
+            "$$x<3$$",
+            "$$-3<x<3$$",
+            "$$x>-3$$ and $$x\\neq$$ $$3$$"
+        ],
+        "subHints": [
+            {
+                "id": "a11f6efA242-logsofquotients-P02a-h3-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Analyze each term in the product",
+                "text": "$$\\!\\big(\\frac{x**2-9}{x-3}\\big)>0$$ as long as $$x>-3$$ and $$x\\neq$$ $$0$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    }
+]

@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a132811electro3c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the Oxidation Process",
+        "text": "In a redox reaction, oxidation refers to the loss of electrons. Look at the reactants and products to determine which element is losing electrons.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro3c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro3c-h1"
+        ],
+        "title": "Determine the Change in Oxidation State",
+        "text": "Consider the change in oxidation state for aluminum (Al) from the reactants to the products. What is the oxidation state of Al in Al(s) and $$Al3+aq$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro3c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro3c-h2"
+        ],
+        "title": "Write the Oxidation Half-Reaction",
+        "text": "Once you have identified the element being oxidized and the change in its oxidation state, write the half-reaction showing the loss of electrons.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro3c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Al\u2192Al3++3e"
+        ],
+        "dependencies": [
+            "a132811electro3c-h3"
+        ],
+        "title": "Complete the Oxidation Half-Reaction",
+        "text": "Write the oxidation half-reaction for aluminum (Al) as it loses electrons to form Al3+.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

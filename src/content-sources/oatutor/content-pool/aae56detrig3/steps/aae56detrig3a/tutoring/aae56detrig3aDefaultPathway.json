@@ -1,0 +1,99 @@
+[
+    {
+        "id": "aae56detrig3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Applying the sine difference formula",
+        "text": "Recall that $$sin(A-B)$$ $$=$$ sin(A)cos(B) - cos(A)sin(B).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig3a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$sin(A-B)=sin\\left(A\\right) cos\\left(B\\right)-cos\\left(A\\right) sin\\left(B\\right)$$"
+        ],
+        "dependencies": [
+            "aae56detrig3a-h1"
+        ],
+        "title": "State the formula",
+        "text": "What is the formula for sin(A - B)?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$sin(A-B)=sin\\left(A\\right) cos\\left(B\\right)-cos\\left(A\\right) sin\\left(B\\right)$$",
+            "$$sin(A-B)=sin\\left(A\\right) cos\\left(B\\right)+cos\\left(A\\right) sin\\left(B\\right)$$",
+            "$$sin(A-B)=cos\\left(A\\right) cos\\left(B\\right)-sin\\left(A\\right) sin\\left(B\\right)$$",
+            "$$sin(A-B)=cos\\left(A\\right) cos\\left(B\\right)+sin\\left(A\\right) sin\\left(B\\right)$$"
+        ]
+    },
+    {
+        "id": "aae56detrig3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig3a-s1"
+        ],
+        "title": "Identify A and B",
+        "text": "What are the values of A and B in the expression sin(45 degrees-30 degrees)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig3a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$A=45$$ degrees, $$B=30$$ degrees"
+        ],
+        "dependencies": [
+            "aae56detrig3a-h2"
+        ],
+        "title": "Identify A and B",
+        "text": "In sin(45 degrees-30 degrees), what are A and B?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$A=45$$ degrees, $$B=30$$ degrees",
+            "$$A=30$$ degrees, $$B=45$$ degrees",
+            "$$A=45$$ degrees, $$B=-30$$ degrees",
+            "$$A=60$$ degrees, $$B=30$$ degrees"
+        ]
+    },
+    {
+        "id": "aae56detrig3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aae56detrig3a-s2"
+        ],
+        "title": "Evaluate trig values",
+        "text": "Find the sine and cosine values for A $$=$$ $$45$$ degrees and B $$=$$ $$30$$ degrees.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aae56detrig3a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\sqrt{2}}{2}$$"
+        ],
+        "dependencies": [
+            "aae56detrig3a-h3"
+        ],
+        "title": "Evaluate sin(45 degrees)",
+        "text": "What is sin(45 degrees)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

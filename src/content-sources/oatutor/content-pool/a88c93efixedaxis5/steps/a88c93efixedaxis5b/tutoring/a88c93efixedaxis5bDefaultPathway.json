@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a88c93efixedaxis5b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Motion",
+        "text": "To find the angle turned through, we need to understand the relationship between angular velocity, time, and angle. The angle turned through is the product of the average angular velocity and the time interval.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis5b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis5b-h1"
+        ],
+        "title": "Average Angular Velocity",
+        "text": "The average angular velocity can be calculated by taking the sum of the initial and final angular velocities and dividing by $$2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis5b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$104.72$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis5b-h2"
+        ],
+        "title": "Calculate Average Angular Velocity",
+        "text": "Calculate the average angular velocity using the formula: (initial angular velocity + final angular velocity) / $$2$$. Remember to convert the angular velocities from revolutions per minute to radians per second.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis5b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a88c93efixedaxis5b-h3"
+        ],
+        "title": "Convert Units",
+        "text": "To convert from revolutions per minute to radians per second, use the conversion factor: $$1$$ revolution $$=$$ $$2\\pi$$ radians and $$1$$ minute $$=$$ $$60$$ seconds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a88c93efixedaxis5b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$12566$$"
+        ],
+        "dependencies": [
+            "a88c93efixedaxis5b-h3"
+        ],
+        "title": "Calculate Angle Turned Through",
+        "text": "Use the formula: angle $$=$$ average angular velocity * time. Make sure the time is in seconds and the angular velocity is in radians per second.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

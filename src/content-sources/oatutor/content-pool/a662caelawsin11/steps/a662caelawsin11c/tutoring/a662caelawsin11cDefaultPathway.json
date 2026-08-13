@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a662caelawsin11c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Law of Sines",
+        "text": "Recall the Law of Sines: $$$$ \\frac{a}{\\sin \\alpha} $$=$$ \\frac{b}{\\sin \\beta} $$=$$ \\frac{c}{\\sin \\gamma} $$$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin11c-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$$$ \\frac{b}{\\sin \\beta} $$=$$ \\frac{c}{\\sin \\gamma} $$$$"
+        ],
+        "dependencies": [
+            "a662caelawsin11c-h1"
+        ],
+        "title": "Choose appropriate Law of Sines ratio",
+        "text": "Which part of the Law of Sines should you use to find $$b$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$$$ \\frac{b}{\\sin \\beta} $$=$$ \\frac{c}{\\sin \\gamma} $$$$",
+            "$$$$ \\frac{b}{\\sin \\gamma} $$=$$ \\frac{c}{\\sin \\beta} $$$$",
+            "$$$$ \\frac{b}{\\sin \\beta} $$=$$ \\frac{a}{\\sin \\alpha} $$$$",
+            "$$$$ \\frac{\\sin \\beta}{b} $$=$$ \\frac{\\sin \\gamma}{c} $$$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin11c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin11c-h1"
+        ],
+        "title": "Substitute known values",
+        "text": "Substitute the known values into the chosen Law of Sines equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin11c-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$$$ \\frac{b}{\\sin 72**\\circ} $$=$$ \\frac{20}{\\sin 73**\\circ} $$$$"
+        ],
+        "dependencies": [
+            "a662caelawsin11c-h2"
+        ],
+        "title": "Equation with known values",
+        "text": "What is the equation after substituting the known values?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$$$ \\frac{b}{\\sin 72**\\circ} $$=$$ \\frac{20}{\\sin 73**\\circ} $$$$",
+            "$$$$ \\frac{b}{\\sin 73**\\circ} $$=$$ \\frac{20}{\\sin 72**\\circ} $$$$",
+            "$$$$ \\frac{b}{\\cos 72**\\circ} $$=$$ \\frac{20}{\\cos 73**\\circ} $$$$",
+            "$$$$ \\frac{\\sin 72**\\circ}{b} $$=$$ \\frac{\\sin 73**\\circ}{20} $$$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin11c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin11c-h2"
+        ],
+        "title": "Solve for $$b$$",
+        "text": "Isolate $$b$$ and calculate its value, rounding to the nearest tenth.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin11c-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$19.9$$"
+        ],
+        "dependencies": [
+            "a662caelawsin11c-h3"
+        ],
+        "title": "Calculate $$b$$",
+        "text": "What is the value of $$b$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a4861c9explog28a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Quotient Rule",
+        "text": "Apply the quotient rule, that $$\\ln\\left(\\frac{x}{y}\\right)=\\ln\\left(x\\right)-\\ln\\left(y\\right)$$ to the left hand side of the equation to simplify.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog28a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\ln\\left(\\frac{3x-2}{2}\\right)$$"
+        ],
+        "dependencies": [
+            "a4861c9explog28a-h1"
+        ],
+        "title": "Simplifying Quotient Rule",
+        "text": "What is the left hand side equal to when simplifying using the quotient rule?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog28a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4861c9explog28a-h2"
+        ],
+        "title": "One-to-One Property",
+        "text": "When two logarithms share the same base, their arguments must be equal to each other.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog28a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4861c9explog28a-h3"
+        ],
+        "title": "Set Arguments Equal",
+        "text": "Set the arguments of the two logarithms with the same base equal to each other to solve for $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4861c9explog28a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a4861c9explog28a-h4"
+        ],
+        "title": "To isolate $$x$$, move all the terms with $$x$$ to one side of the equation and all the other terms without the variable to the other.",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

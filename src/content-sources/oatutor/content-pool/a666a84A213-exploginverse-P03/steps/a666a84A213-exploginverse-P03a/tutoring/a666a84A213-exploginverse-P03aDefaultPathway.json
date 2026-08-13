@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a666a84A213-exploginverse-P03a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpret the logarithm",
+        "text": "The $$\\log_{@{b}}\\left(\\frac{1}{@{b}}\\right)$$ is that power that @{b} is raised to to get $$\\frac{1}{@{b}}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P03a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P03a-h1"
+        ],
+        "title": "Find the relationship",
+        "text": "Find a power k so that $${@{b}}^k=\\frac{1}{@{b}}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P03a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P03a-h2"
+        ],
+        "title": "Full solution",
+        "text": "$$\\log_{@{b}}\\left(\\frac{1}{@{b}}\\right)=k$$ is equivalent to $${@{b}}^k=\\frac{1}{@{b}}$$. And the number that makes that true is $$k=-1$$. \\n We can check that this makes sense since $${@{b}}^{\\left(-1\\right)} {@{b}}^1={@{b}}^0=1=\\frac{@{b}}{@{b}}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

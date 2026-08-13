@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a150a865.3store1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exponential Distribution",
+        "text": "By part a, we know that the average is $$2$$ minutes between each customer. $$\\frac{1}{mean}=decay$$ parameter. The mean is $$2$$ minutes.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a150a865.3store1c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a150a865.3store1c-h1"
+        ],
+        "title": "Exponential Distribution",
+        "text": "$$P\\left(X<x\\right)$$ $$=$$ $$1-e^{\\left(-m x\\right)}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a150a865.3store1c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a150a865.3store1c-h2"
+        ],
+        "title": "Exponential Distribution",
+        "text": "The cumulative distribution function is $$P\\left(X<x\\right)=1-e^{-0.5 x}$$, we are finding the area under the curve where X is less than $$1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a150a865.3store1c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a150a865.3store1c-h3"
+        ],
+        "title": "Exponential Distribution",
+        "text": "The expression to compute the probability is $$P\\left(X<1\\right)=1-e^{1-0.5}$$.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]

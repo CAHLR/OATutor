@@ -1,0 +1,48 @@
+[
+    {
+        "id": "add398dT2-diag-P01a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Form a right triangle",
+        "text": "We can compute $$\\sin(\\theta)$$ as the ratio of side lengths of the right triangle formed by dropping a vertical line from the point down to the horizontal axis. It does not need to be inscribed inside of the unit circle as similar triangles have the same side ratios. \\n In the image below: A coordinate plane showing a point in the first quadrant at $$4$$ comma $$3$$. A diagonal line segment connects the origin to this point. A unit circle is centered at the origin. The angle between the positive x-axis and this line segment is labeled theta. A dashed line drops vertically from the point $$4$$ comma $$3$$ down to the horizontal axis to make the right triangle with angle theta more apparent.\\n##figure2.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "add398dT2-diag-P01a-h2",
+        "type": "hint",
+        "dependencies": [
+            "add398dT2-diag-P01a-h1"
+        ],
+        "title": "SOHCAHTOA",
+        "text": "Recall that sin is the opposite over the hypotenuse",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "add398dT2-diag-P01a-h3",
+        "type": "hint",
+        "dependencies": [
+            "add398dT2-diag-P01a-h2"
+        ],
+        "title": "Compute the hypotenuse length",
+        "text": "Apply the Pythagorean theorem. Obtain the hypotenuse length as \\n $$\\sqrt{3**2+4**2}=\\sqrt{9+16}=\\sqrt{25}=5$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "add398dT2-diag-P01a-h4",
+        "type": "hint",
+        "dependencies": [
+            "add398dT2-diag-P01a-h3"
+        ],
+        "title": "Compute the ratio",
+        "text": "Opposite over hypotenuse is $$\\frac{3}{5}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

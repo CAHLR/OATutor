@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a590f38trigonometric63c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use the second u value",
+        "text": "Recall the second solution for u from the quadratic equation: u $$=$$ (-3-$$\\sqrt{29})/(10)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a590f38trigonometric63c-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x=\\arccos(\\frac{-3-\\sqrt{29}}{10})$$"
+        ],
+        "dependencies": [
+            "a590f38trigonometric63c-h1"
+        ],
+        "title": "Express $$x$$ using arccos",
+        "text": "If $$\\cos(x)=\\frac{-3-\\sqrt{29}}{10}$$, $$how$$ $$do$$ $$you$$ $$express$$ $$x$$ $$using$$ $$the$$ $$inverse$$ $$cosine$$ $$function$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$x=\\arccos(\\frac{-3-\\sqrt{29}}{10})$$",
+            "$$x=\\arccos(\\frac{3-\\sqrt{29}}{10})$$",
+            "$$x=\\arcsin(\\frac{-3-\\sqrt{29}}{10})$$",
+            "$$x=\\frac{-3-\\sqrt{29}}{10}$$"
+        ]
+    },
+    {
+        "id": "a590f38trigonometric63c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a590f38trigonometric63c-h1"
+        ],
+        "title": "Identify quadrant",
+        "text": "Since $$\\cos(x)$$ is negative, in which quadrant will the principal value of $$\\arccos((-3-\\sqrt{29}$$)/(10)) $$lie$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

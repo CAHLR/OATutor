@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a949afaangmom12b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Angular Momentum",
+        "text": "Angular momentum $$L$$ is given by the formula $$L=I\\omega$$, $$where$$ $$I$$ $$is$$ $$the$$ $$moment$$ $$of$$ $$inertia$$ $$and$$ $$\\omega$$ is the angular velocity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom12b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom12b-h1"
+        ],
+        "title": "Moment of Inertia for a Rod",
+        "text": "The moment of inertia $$I$$ for a rod rotating about its center is given by $$I=(1/12)mL**{2}$$, $$where$$ $$\\, \\text{m$$} $$is$$ $$the$$ $$mass$$ $$and$$ $$L$$ is the length of the rod.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom12b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a949afaangmom12b-h2"
+        ],
+        "title": "Calculating Angular Velocity",
+        "text": "Angular velocity $$\\omega$$ can be calculated using $$\\omega=2*\\pi*f$$, $$where$$ $$f$$ is the frequency in revolutions per second.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a949afaangmom12b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$180$$"
+        ],
+        "dependencies": [
+            "a949afaangmom12b-h3"
+        ],
+        "title": "Calculate the Moment of Inertia",
+        "text": "Calculate the moment of inertia for the propeller using the formula $$I=(1/12)mL**{2}$$. $$Remember$$ $$to$$ $$consider$$ $$the$$ $$mass$$ $$and$$ $$length$$ $$of$$ $$both$$ $$blades$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

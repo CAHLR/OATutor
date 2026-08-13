@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a11f6efA242-logsofquotients-P01a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Apply the law of logarithms for quotients",
+        "text": "$$\\log_3\\!\\left(\\dfrac{27}{x}\\right)=\\log_3(27)-\\log_3(x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a11f6efA242-logsofquotients-P01a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a11f6efA242-logsofquotients-P01a-h1"
+        ],
+        "title": "Write $$27$$ as a power of $$3$$",
+        "text": "$$\\log_3(27)-\\log_3(x)=\\log_3(3**3)-\\log_3(x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a11f6efA242-logsofquotients-P01a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a11f6efA242-logsofquotients-P01a-h2"
+        ],
+        "title": "Apply cancellation law",
+        "text": "What is $$\\log_3(3**3)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a11f6efA242-logsofquotients-P01a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a11f6efA242-logsofquotients-P01a-h3"
+        ],
+        "title": "Worked solution",
+        "text": "$$\\log_3(3**3)-\\log_3(x)=3-\\log_3(x)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

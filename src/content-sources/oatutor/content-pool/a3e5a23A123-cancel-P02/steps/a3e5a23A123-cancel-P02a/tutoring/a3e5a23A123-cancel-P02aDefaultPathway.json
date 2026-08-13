@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a3e5a23A123-cancel-P02a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Move terms to one side",
+        "text": "$$\\left(x+1\\right)^2-x+1=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3e5a23A123-cancel-P02a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a3e5a23A123-cancel-P02a-h1"
+        ],
+        "title": "Factor common term",
+        "text": "$$\\left(x+1\\right) \\left(x+1-1\\right)=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3e5a23A123-cancel-P02a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3e5a23A123-cancel-P02a-h2"
+        ],
+        "title": "Combine like terms",
+        "text": "$$\\left(x+1\\right) \\left(x+1-1\\right)=\\left(x+1\\right) x=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3e5a23A123-cancel-P02a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a3e5a23A123-cancel-P02a-h3"
+        ],
+        "title": "Zero product property",
+        "text": "$$\\left(x+1\\right) x=0$$ if and only if $$x+1=0$$ or $$x=0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

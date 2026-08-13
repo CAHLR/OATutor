@@ -1,0 +1,74 @@
+[
+    {
+        "id": "a666a84A213-exploginverse-P15a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [],
+        "title": "A related question",
+        "text": "What is $$2^3$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P15a-h1"
+        ],
+        "title": "Relate to original problem",
+        "text": "Observe that $$2^3=8<10$$. So $$\\log_{2}\\left(2^3\\right)<\\log_{2}\\left(10\\right)$$ (because logs are increasing functions).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P15a-h2"
+        ],
+        "title": "Simplified further",
+        "text": "Evaluate $$\\log_{2}\\left(8\\right)=\\log_{2}\\left(2^3\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P15a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a666a84A213-exploginverse-P15a-h3"
+        ],
+        "title": "Definition of logarithm",
+        "text": "Recall that $$\\log_{2}\\left(2^3\\right)$$ is asking for the power c so that $$3^c=2^3$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a666a84A213-exploginverse-P15a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a666a84A213-exploginverse-P15a-h4"
+        ],
+        "title": "Is there another integer power of $$2$$ between $$8$$ and 10?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]
