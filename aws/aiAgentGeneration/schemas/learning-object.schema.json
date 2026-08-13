@@ -1,0 +1,308 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://oatutor.local/schemas/learning-object.schema.json",
+  "title": "OATutorCanonicalLearningDocument",
+  "type": "object",
+  "required": ["document_id", "metadata", "sections"],
+  "additionalProperties": false,
+  "properties": {
+    "document_id": { "type": "string", "minLength": 1 },
+    "metadata": {
+      "type": "object",
+      "required": [
+        "course",
+        "document_type",
+        "visibility",
+        "parser_version",
+        "content_hash",
+        "source_pdf"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "course": { "type": "string" },
+        "term": { "type": ["string", "null"] },
+        "document_type": { "type": "string" },
+        "visibility": { "enum": ["student", "private_tutor"] },
+        "title": { "type": ["string", "null"] },
+        "parser_version": { "type": "string" },
+        "content_hash": { "type": "string" },
+        "source_pdf": { "type": "string" },
+        "compiled_at": { "type": ["string", "null"] },
+        "bda_job_id": { "type": ["string", "null"] },
+        "expected_problem_count": { "type": "integer", "minimum": 0 },
+        "detected_sections": {
+          "type": "object",
+          "additionalProperties": { "type": "integer", "minimum": 0 }
+        },
+        "uncertainties": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "sections": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/section" }
+    },
+    "question_inventory": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["problem_id", "number"],
+        "properties": {
+          "problem_id": { "type": "string" },
+          "number": { "type": "string" },
+          "title": { "type": ["string", "null"] },
+          "section": { "type": ["string", "null"] },
+          "question_type": { "type": ["string", "null"] }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "provenance": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "pages": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 0 }
+        },
+        "bounding_boxes": {
+          "type": "array",
+          "items": { "type": "object" }
+        },
+        "confidence": { "type": ["number", "null"] },
+        "extraction_notes": { "type": ["string", "null"] }
+      }
+    },
+    "visibilityField": {
+      "enum": ["student", "private_tutor"]
+    },
+    "equation": {
+      "type": "object",
+      "required": ["equation_id"],
+      "properties": {
+        "equation_id": { "type": "string" },
+        "latex": { "type": ["string", "null"] },
+        "plain_text": { "type": ["string", "null"] },
+        "crop_path": { "type": ["string", "null"] },
+        "visibility": { "$ref": "#/$defs/visibilityField" },
+        "source": { "$ref": "#/$defs/provenance" }
+      }
+    },
+    "codeBlock": {
+      "type": "object",
+      "required": ["code_id", "code"],
+      "properties": {
+        "code_id": { "type": "string" },
+        "language": { "type": ["string", "null"] },
+        "code": { "type": "string" },
+        "explanation": { "type": ["string", "null"] },
+        "syntax_valid": { "type": ["boolean", "null"] },
+        "visibility": { "$ref": "#/$defs/visibilityField" },
+        "source": { "$ref": "#/$defs/provenance" }
+      }
+    },
+    "assetRef": {
+      "type": "object",
+      "required": ["asset_id", "asset_type"],
+      "properties": {
+        "asset_id": { "type": "string" },
+        "asset_type": { "enum": ["figure", "table", "graph", "diagram", "other"] },
+        "path": { "type": ["string", "null"] },
+        "caption": { "type": ["string", "null"] },
+        "title": { "type": ["string", "null"] },
+        "visual_observations": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "csv_path": { "type": ["string", "null"] },
+        "unresolved_source_url": {
+          "type": ["string", "null"],
+          "description": "Build-time only; stripped from shipping compiled JSON. Temporary BDA/S3 URLs belong in compile reports."
+        },
+        "visibility": { "$ref": "#/$defs/visibilityField" },
+        "source": { "$ref": "#/$defs/provenance" }
+      }
+    },
+    "answerChoice": {
+      "type": "object",
+      "required": ["choice_id", "text"],
+      "properties": {
+        "choice_id": { "type": "string" },
+        "label": { "type": ["string", "null"] },
+        "text": { "type": "string" },
+        "selected_in_source": { "type": ["boolean", "null"] },
+        "is_correct": { "type": ["boolean", "null"] },
+        "visibility": { "$ref": "#/$defs/visibilityField" },
+        "source": { "$ref": "#/$defs/provenance" }
+      }
+    },
+    "solution": {
+      "type": "object",
+      "properties": {
+        "text": { "type": ["string", "null"] },
+        "analysis_plan": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "code_blocks": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/codeBlock" }
+        },
+        "equations": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/equation" }
+        },
+        "assets": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/assetRef" }
+        },
+        "visibility": { "$ref": "#/$defs/visibilityField" },
+        "disclosure_policy": {
+          "enum": ["never_verbatim", "hint_only", "student"]
+        },
+        "source": { "$ref": "#/$defs/provenance" }
+      }
+    },
+    "subproblem": {
+      "type": "object",
+      "required": ["subproblem_id", "parent_problem_id"],
+      "properties": {
+        "subproblem_id": { "type": "string" },
+        "parent_problem_id": { "type": "string" },
+        "label": { "type": ["string", "null"] },
+        "prompt": { "type": ["string", "null"] },
+        "question_type": { "type": ["string", "null"] },
+        "choices": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/answerChoice" }
+        },
+        "equations": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/equation" }
+        },
+        "code_blocks": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/codeBlock" }
+        },
+        "assets": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/assetRef" }
+        },
+        "solution": { "$ref": "#/$defs/solution" },
+        "knowledge_components": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "visibility": { "$ref": "#/$defs/visibilityField" },
+        "source": { "$ref": "#/$defs/provenance" }
+      }
+    },
+    "problem": {
+      "type": "object",
+      "required": ["problem_id", "number"],
+      "properties": {
+        "problem_id": { "type": "string" },
+        "number": { "type": "string" },
+        "title": { "type": ["string", "null"] },
+        "prompt": { "type": ["string", "null"] },
+        "question_type": { "type": ["string", "null"] },
+        "subproblems": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/subproblem" }
+        },
+        "choices": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/answerChoice" }
+        },
+        "equations": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/equation" }
+        },
+        "code_blocks": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/codeBlock" }
+        },
+        "assets": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/assetRef" }
+        },
+        "solution": { "$ref": "#/$defs/solution" },
+        "knowledge_components": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "visibility": { "$ref": "#/$defs/visibilityField" },
+        "source": { "$ref": "#/$defs/provenance" }
+      }
+    },
+    "definition": {
+      "type": "object",
+      "required": ["definition_id", "text"],
+      "properties": {
+        "definition_id": { "type": "string" },
+        "title": { "type": ["string", "null"] },
+        "text": { "type": "string" },
+        "equations": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/equation" }
+        },
+        "visibility": { "$ref": "#/$defs/visibilityField" },
+        "source": { "$ref": "#/$defs/provenance" }
+      }
+    },
+    "note": {
+      "type": "object",
+      "required": ["note_id", "text"],
+      "properties": {
+        "note_id": { "type": "string" },
+        "text": { "type": "string" },
+        "visibility": { "$ref": "#/$defs/visibilityField" },
+        "source": { "$ref": "#/$defs/provenance" }
+      }
+    },
+    "example": {
+      "type": "object",
+      "required": ["example_id", "text"],
+      "properties": {
+        "example_id": { "type": "string" },
+        "title": { "type": ["string", "null"] },
+        "text": { "type": "string" },
+        "visibility": { "$ref": "#/$defs/visibilityField" },
+        "source": { "$ref": "#/$defs/provenance" }
+      }
+    },
+    "section": {
+      "type": "object",
+      "required": ["section_id"],
+      "properties": {
+        "section_id": { "type": "string" },
+        "title": { "type": ["string", "null"] },
+        "concepts": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "definitions": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/definition" }
+        },
+        "notes": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/note" }
+        },
+        "examples": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/example" }
+        },
+        "problems": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/problem" }
+        },
+        "visibility": { "$ref": "#/$defs/visibilityField" },
+        "source": { "$ref": "#/$defs/provenance" }
+      }
+    }
+  }
+}

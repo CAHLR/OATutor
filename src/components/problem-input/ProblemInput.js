@@ -14,6 +14,7 @@ import { stagingProp } from "../../util/addStagingProperty";
 import { parseMatrixTex } from "../../util/parseMatrixTex";
 import withWidth from "@material-ui/core/withWidth";
 import { isMobileWidth } from "../../util/responsive";
+import { showMathKeyboardAnimated, hideMathKeyboardAnimated, isMathKeyboardShowSuppressed } from "./mathKeyboardGestures";
 
 class ProblemInput extends React.Component {
     static contextType = ThemeContext;
@@ -34,7 +35,8 @@ class ProblemInput extends React.Component {
     }
 
     componentDidMount() {
-        document.addEventListener('click', this.handleClickOutside);
+        document.addEventListener('pointerdown', this.handleClickOutside, true);
+        this.applyKeyboardLayout();
 
         console.debug('problem', this.props.step, 'seed', this.props.seed)
         if (this.isMatrixInput()) {
@@ -52,37 +54,108 @@ class ProblemInput extends React.Component {
         }
     }
 
-    componentDidUpdate(_, prevState) {
-        if (prevState.isMathFieldFocused !== this.state.isMathFieldFocused && !this.state.isMathFieldFocused) {
-            const mathField = this.mathFieldRef.current;
-        if (mathField) {
-            mathField.executeCommand('hideVirtualKeyboard');
-            console.log("componentDidUpdate hide keyboard")
-        }}
+    componentDidUpdate(prevProps) {
+        if (prevProps.keyboardType !== this.props.keyboardType) {
+            this.applyKeyboardLayout();
+        }
     }
-    
+
     componentWillUnmount() {
-        document.removeEventListener('click', this.handleClickOutside);
+        document.removeEventListener('pointerdown', this.handleClickOutside, true);
+        if (this._blurHideTimer) {
+            clearTimeout(this._blurHideTimer);
+            this._blurHideTimer = null;
+        }
     }
-    
-    handleFocus = () => {
-        this.setState({ isMathFieldFocused: true });
-        console.log('MathField is focused');
+
+    /**
+     * Setting layouts rebuilds the MathLive keyboard DOM. Never do that from
+     * render() (accordion collapse re-renders mid-dismiss and causes slide-up).
+     */
+    applyKeyboardLayout = () => {
+        if (typeof window === 'undefined') return;
+        if (isMathKeyboardShowSuppressed()) return;
+        const kb = window.mathVirtualKeyboard;
+        if (!kb) return;
+        const keyboardType = this.props.keyboardType;
+        try {
+            kb.layouts = keyboardType ? [keyboardType] : ["default"];
+        } catch {
+            try {
+                kb.layouts = ["default"];
+            } catch (_) {
+                // ignore
+            }
+        }
     };
-    
+
+    /** Mobile: open MathLive keyboard when the field is interacted with and it's hidden. */
+    showMobileKeyboardIfNeeded = () => {
+        if (!isMobileWidth(this.props.width)) return;
+        if (isMathKeyboardShowSuppressed()) return;
+        const mathField = this.mathFieldRef.current;
+        if (!mathField) return;
+        if (window.mathVirtualKeyboard?.visible) return;
+        try {
+            mathField.focus?.();
+        } catch (e) {
+            // ignore
+        }
+        showMathKeyboardAnimated();
+    };
+
+    handleFocus = () => {
+        if (this._blurHideTimer) {
+            clearTimeout(this._blurHideTimer);
+            this._blurHideTimer = null;
+        }
+        this.setState({ isMathFieldFocused: true });
+        // manual policy: we open explicitly; still guard against dismiss races
+        if (!isMathKeyboardShowSuppressed()) {
+            this.showMobileKeyboardIfNeeded();
+        }
+    };
+
     handleBlur = () => {
         this.setState({ isMathFieldFocused: false });
-        console.log('MathField lost focus');
     };
-    
+
+    handleMathFieldPointerUp = (event) => {
+        const path = typeof event.composedPath === 'function' ? event.composedPath() : [];
+        const isKeyboardToggle = path.some(
+            (el) =>
+                el?.classList?.contains?.('ML__virtual-keyboard-toggle') ||
+                el?.getAttribute?.('part') === 'virtual-keyboard-toggle'
+        );
+        if (isKeyboardToggle) {
+            if (window.mathVirtualKeyboard?.visible) {
+                event.preventDefault();
+                event.stopPropagation();
+                hideMathKeyboardAnimated();
+            } else if (!isMathKeyboardShowSuppressed()) {
+                showMathKeyboardAnimated();
+            }
+            return;
+        }
+        this.showMobileKeyboardIfNeeded();
+    };
+
     handleClickOutside = (event) => {
+        if (!isMobileWidth(this.props.width)) return;
+        if (!window.mathVirtualKeyboard?.visible) return;
+
         const mathField = this.mathFieldRef.current;
-        if (
-          mathField &&
-          !mathField.contains(event.target) &&
-          this.state.isMathFieldFocused
-        ) {
-          console.log('Clicked outside keyboard');
+        const kbRoot = document.querySelector('.ML__keyboard');
+        const path = typeof event.composedPath === 'function' ? event.composedPath() : [];
+        const inKeyboard = path.some(
+            (el) => el?.classList?.contains?.('ML__keyboard') || el?.classList?.contains?.('oat-math-kb-drag')
+        ) || (kbRoot && kbRoot.contains(event.target));
+        const inField = mathField && (mathField === event.target || mathField.contains?.(event.target));
+
+        if (!inKeyboard && !inField) {
+            // Block later document listeners (MathLive) without killing the tap target's click.
+            event.stopImmediatePropagation?.();
+            hideMathKeyboardAnimated();
         }
     };
 
@@ -127,7 +200,6 @@ class ProblemInput extends React.Component {
         const { use_expanded_view, debug } = this.context;
         let { problemType, stepAnswer, hintAnswer, units } = this.props.step;
         const keepMCOrder = this.props.keepMCOrder;
-        const keyboardType = this.props.keyboardType;
 
         const problemAttempted = state.isCorrect != null
         const correctAnswer = Array.isArray(stepAnswer) ? stepAnswer[0] : hintAnswer[0]
@@ -135,12 +207,6 @@ class ProblemInput extends React.Component {
 
         if (this.isMatrixInput()) {
             problemType = "MatrixInput"
-        }
-        
-        try {
-            window.mathVirtualKeyboard.layouts = [keyboardType];
-        } catch {
-            window.mathVirtualKeyboard.layouts = ["default"];
         }
 
         const defaultLayout = {
@@ -161,9 +227,10 @@ class ProblemInput extends React.Component {
                     {(problemType === "TextBox" && this.props.step.answerType !== "string") && (
                         <math-field
                             ref={this.mathFieldRef}
-                            math-virtual-keyboard-policy="sandboxed"
+                            math-virtual-keyboard-policy={isMobile ? "manual" : "sandboxed"}
                             onFocus={this.handleFocus}
                             onBlur={this.handleBlur}
+                            onPointerUp={this.handleMathFieldPointerUp}
                             onInput={evt => this.props.setInputValState(evt.target.value)}
                             style={{"display": "block"}}
                             value={(use_expanded_view && debug) ? correctAnswer : state.inputVal}

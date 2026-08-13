@@ -4,9 +4,15 @@ import AWS from "aws-sdk";
 import {
     buildAgentPrompt,
     buildSuggestedQuestionsPrompt,
+    buildAnswerRevealJudgePrompt,
     generateAgentResponse,
     generateSuggestedQuestions,
+    judgeAnswerReveal,
 } from "./agent-logic.mjs";
+import {
+    buildDocumentContext,
+    getDefaultDocumentContextRuntime,
+} from "./document-context.mjs";
 import crypto from "crypto";
 
 dotenv.config();
@@ -82,6 +88,10 @@ export const handler = awslambda.streamifyResponse(
             const lessonId = requestBody.lessonId ?? extracted?.lessonId;
             const chatPrompt = requestBody.chatPrompt ?? problemContext?.chatPrompt;
             const chatDisplayMode = requestBody.chatDisplayMode ?? extracted?.chatDisplayMode;
+            const helpPenaltyMode =
+                requestBody.helpPenaltyMode ??
+                extracted?.helpPenaltyMode ??
+                problemContext?.helpPenaltyMode;
 
             if (requestBody?.requestType === "suggestedQuestions") {
                 const metadata = {
@@ -105,6 +115,7 @@ export const handler = awslambda.streamifyResponse(
                     lessonId,
                     chatPrompt,
                     chatDisplayMode,
+                    helpPenaltyMode,
                     problemId: problemContext?.problemID,
                     stepId: problemContext?.currentStep?.id,
                     courseName: problemContext?.courseName,
@@ -128,6 +139,7 @@ export const handler = awslambda.streamifyResponse(
                     lessonId,
                     chatPrompt,
                     chatDisplayMode,
+                    helpPenaltyMode,
                     problemId: problemContext?.problemID,
                     stepId: problemContext?.currentStep?.id,
                     courseName: problemContext?.courseName,
@@ -136,6 +148,81 @@ export const handler = awslambda.streamifyResponse(
                 httpResponseStream.write(JSON.stringify({
                     type: "suggestions",
                     questions,
+                    timestamp: nowMs(),
+                }) + "\n");
+                httpResponseStream.end();
+                return;
+            }
+
+            if (requestBody?.requestType === "judgeAnswerReveal") {
+                const metadata = {
+                    statusCode: 200,
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Access-Control-Allow-Origin": "*",
+                        "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
+                        "Access-Control-Allow-Headers": "Origin,Content-Type,Authorization",
+                    },
+                };
+                httpResponseStream = awslambda.HttpResponseStream.from(responseStream, metadata);
+
+                const startedAt = nowMs();
+                const judgeModel =
+                    process.env.ANSWER_REVEAL_JUDGE_MODEL ||
+                    process.env.SUGGESTIONS_MODEL ||
+                    "gpt-4o-mini";
+                const assistantMessage =
+                    typeof requestBody.assistantMessage === "string"
+                        ? requestBody.assistantMessage
+                        : "";
+                const stepAnswers = Array.isArray(requestBody.stepAnswers)
+                    ? requestBody.stepAnswers
+                    : [];
+
+                logEvent({
+                    eventType: "answer_reveal_judge_started",
+                    sessionId,
+                    model: judgeModel,
+                    condition,
+                    lessonId,
+                    chatPrompt,
+                    chatDisplayMode,
+                    helpPenaltyMode,
+                    problemId: problemContext?.problemID,
+                    stepId: requestBody.stepId || problemContext?.currentStep?.id,
+                    courseName: problemContext?.courseName,
+                });
+
+                const judgePrompt = buildAnswerRevealJudgePrompt({
+                    assistantMessage,
+                    stepAnswers,
+                    problemContext,
+                });
+                const judgment = await judgeAnswerReveal(openai, judgePrompt, {
+                    model: judgeModel,
+                });
+
+                logEvent({
+                    eventType: "answer_reveal_judge_completed",
+                    sessionId,
+                    model: judgeModel,
+                    latencyMs: nowMs() - startedAt,
+                    answerRevealed: judgment.answerRevealed,
+                    reason: judgment.reason,
+                    condition,
+                    lessonId,
+                    chatPrompt,
+                    chatDisplayMode,
+                    helpPenaltyMode,
+                    problemId: problemContext?.problemID,
+                    stepId: requestBody.stepId || problemContext?.currentStep?.id,
+                    courseName: problemContext?.courseName,
+                });
+
+                httpResponseStream.write(JSON.stringify({
+                    type: "judgeAnswerReveal",
+                    answerRevealed: judgment.answerRevealed,
+                    reason: judgment.reason,
                     timestamp: nowMs(),
                 }) + "\n");
                 httpResponseStream.end();
@@ -156,16 +243,77 @@ export const handler = awslambda.streamifyResponse(
 
             httpResponseStream = awslambda.HttpResponseStream.from(responseStream, metadata);
 
+            // Prefer client transcript when present (UI is authoritative). DynamoDB
+            // is a fallback for older clients that still send conversationHistory: [].
             const existingConversation = await loadConversationHistory(sessionId);
-            const fullConversationHistory = [...existingConversation, ...conversationHistory];
+            const clientHistory = Array.isArray(conversationHistory) ? conversationHistory : [];
+            const fullConversationHistory = clientHistory.length > 0
+                ? clientHistory
+                : existingConversation;
+
+            const docCtxStarted = nowMs();
+            const docCtx = await buildDocumentContext({
+                lessonId,
+                userMessage: safeUserMessage,
+                problemContext,
+                // Client authority fields are ignored inside the loader.
+                clientHints: {
+                    chat_documents: requestBody.chat_documents,
+                    documentId: requestBody.documentId,
+                    s3Key: requestBody.s3Key,
+                },
+            });
+            if (docCtx?.meta || docCtx?.error) {
+                logEvent({
+                    eventType: docCtx?.error
+                        ? "document_context_failed"
+                        : "document_context_loaded",
+                    sessionId,
+                    lessonId,
+                    allowedDocumentIds:
+                        docCtx?.allowedDocumentIds ||
+                        docCtx?.meta?.allowedDocumentIds ||
+                        [],
+                    selectedContexts:
+                        docCtx?.selectedContexts ||
+                        docCtx?.meta?.selectedContexts ||
+                        [],
+                    cacheHits: docCtx?.meta?.cacheHits || null,
+                    durationMs:
+                        docCtx?.meta?.durationMs ?? nowMs() - docCtxStarted,
+                    errorCode: docCtx?.meta?.errorCode || null,
+                });
+            }
+
+            // Optional figure bytes for figure-dependent turns (soft-fail).
+            let documentImages = [];
+            if (docCtx?.assetHints?.length) {
+                const runtime = getDefaultDocumentContextRuntime();
+                for (const hint of docCtx.assetHints.slice(0, 1)) {
+                    const dataUrl = await runtime.tryFetchAssetDataUrl(
+                        hint.path,
+                        logEvent
+                    );
+                    if (dataUrl) documentImages.push(dataUrl);
+                }
+            }
+
+            const extractedWithDocs = {
+                ...(extracted || {}),
+                images: [
+                    ...(Array.isArray(extracted?.images) ? extracted.images : []),
+                    ...documentImages,
+                ],
+            };
             
             const agentPrompt = buildAgentPrompt({
                 userMessage: safeUserMessage,
                 problemContext,
                 studentState,
                 conversationHistory: fullConversationHistory,
-                extracted,
+                extracted: extractedWithDocs,
                 chatPrompt,
+                documentContextSection: docCtx?.privatePromptSection || null,
             });
 
             const lastMsg = agentPrompt[agentPrompt.length - 1];
@@ -181,10 +329,54 @@ export const handler = awslambda.streamifyResponse(
             const userIdHash = requestBody.userIdHash ?? undefined;
             const startedAt = nowMs();
 
-            // Optional emergency debug: log full prompt when explicitly enabled.
+            // Optional emergency debug: full LLM payload (system + history + latest user).
+            // Set LOG_FULL_PROMPT=true in the Lambda/.env used by the running agent.
             if (process.env.LOG_FULL_PROMPT === "true") {
-                logEvent({ eventType: "debug_prompt_full", sessionId, turnId, promptHash, prompt: promptText });
+                const messagesForLog = (agentPrompt || []).map((msg, index) => {
+                    let content = msg?.content;
+                    if (Array.isArray(content)) {
+                        // Multimodal: keep text, note images without dumping base64.
+                        content = content.map((part) => {
+                            if (part?.type === "text") return part;
+                            if (part?.type === "image_url") {
+                                return { type: "image_url", image_url: "[omitted base64]" };
+                            }
+                            return part;
+                        });
+                    } else if (typeof content === "string" && content.length > 20000) {
+                        content = `${content.slice(0, 20000)}…[truncated ${content.length} chars]`;
+                    }
+                    return {
+                        index,
+                        role: msg?.role,
+                        content,
+                    };
+                });
+                logEvent({
+                    eventType: "debug_prompt_full",
+                    sessionId,
+                    turnId,
+                    promptHash,
+                    chatPrompt,
+                    chatDisplayMode,
+                    helpPenaltyMode,
+                    historyMessageCount: fullConversationHistory.length,
+                    llmMessageCount: messagesForLog.length,
+                    // Exact roles/order OpenAI sees: system, then prior turns, then latest user.
+                    messages: messagesForLog,
+                    // Kept for older log queries that only look at `prompt`.
+                    prompt: promptText,
+                });
             }
+
+            // Same hint payload that agent-logic formats into {hintsUsed} in the system prompt.
+            const hintsUsed = Array.isArray(studentState?.hintsUsed)
+                ? studentState.hintsUsed
+                : [];
+            const hintStepId =
+                studentState?.hintStepId ||
+                problemContext?.currentStep?.id ||
+                null;
 
             logEvent({
                 eventType: "turn_started",
@@ -194,14 +386,19 @@ export const handler = awslambda.streamifyResponse(
                 promptHash,
                 model: process.env.OPENAI_MODEL || "gpt-4o",
                 imagesCount,
+                historyMessageCount: fullConversationHistory.length,
                 condition,
                 lessonId,
                 chatPrompt,
                 chatDisplayMode,
+                helpPenaltyMode,
                 problemId: problemContext?.problemID,
                 stepId: problemContext?.currentStep?.id,
                 courseName: problemContext?.courseName,
                 userMessagePreview: String(lastPreview || "").slice(0, 200),
+                hintStepId,
+                hintsUsedCount: hintsUsed.length,
+                hintsUsed,
             });
 
             const response = await generateAgentResponse(openai, agentPrompt, httpResponseStream, {
@@ -267,9 +464,13 @@ export const handler = awslambda.streamifyResponse(
                 lessonId,
                 chatPrompt,
                 chatDisplayMode,
+                helpPenaltyMode,
                 problemId: problemContext?.problemID,
                 stepId: problemContext?.currentStep?.id,
                 courseName: problemContext?.courseName,
+                hintStepId,
+                hintsUsedCount: hintsUsed.length,
+                hintsUsed,
             });
 
         } catch (error) {
@@ -279,7 +480,9 @@ export const handler = awslambda.streamifyResponse(
                 message: error?.message,
                 stack: process.env.LOG_ERROR_STACK === "true" ? String(error?.stack || "") : undefined,
                 sessionId: requestBody?.sessionId,
+                chatPrompt: requestBody?.chatPrompt,
                 chatDisplayMode: requestBody?.chatDisplayMode,
+                helpPenaltyMode: requestBody?.helpPenaltyMode,
                 lessonId: requestBody?.lessonId ?? requestBody?.extracted?.lessonId,
                 problemId: requestBody?.problemContext?.problemID,
                 stepId: requestBody?.problemContext?.currentStep?.id,

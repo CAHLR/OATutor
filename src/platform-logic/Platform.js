@@ -1,5 +1,6 @@
 import React from "react";
 import { AppBar, Toolbar } from "@material-ui/core";
+import LinearProgress from "@material-ui/core/LinearProgress";
 import Grid from "@material-ui/core/Grid";
 import ProblemWrapper from "@components/problem-layout/ProblemWrapper.js";
 import LessonSelectionWrapper from "@components/problem-layout/LessonSelectionWrapper.js";
@@ -14,8 +15,6 @@ import {
     SITE_NAME,
     ThemeContext,
     MASTERY_THRESHOLD,
-    SHOW_NOT_CANVAS_WARNING,
-    CANVAS_WARNING_STORAGE_KEY,
 } from "../config/config.js";
 import to from "await-to-js";
 import { toast } from "react-toastify";
@@ -46,12 +45,12 @@ import { withStyles } from "@material-ui/core/styles";
 import styles from "../components/problem-layout/common-styles.js";
 
 import Drawer from "@material-ui/core/Drawer";
+import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
 import TableOfContents from "../components/tableOfContents.js";
 
 import withWidth from "@material-ui/core/withWidth";
 
 import { ProgressTooltip, InfoTooltip } from "@components/Tooltip";
-import { LocalizationConsumer } from '../util/LocalizationContext';
 import { isMobileWidth } from "../util/responsive";
 
 let problemPool = require(`@generated/processed-content-pool/${CONTENT_SOURCE}.json`);
@@ -75,12 +74,20 @@ class Platform extends React.Component {
 
     this.user = context.user || {};
     this.isPrivileged = !!this.user.privileged;
+    this.isFromCanvas =
+      String(this.user.tool_consumer_info_product_family_code || "")
+        .toLowerCase() === "canvas";
     this.context = context;
     const saved = typeof window !== "undefined" ? localStorage.getItem(TOC_DRAWER_OPEN_KEY) : null;
     const isMobileInitial =
       typeof window !== "undefined" && window.innerWidth < 960;
     const defaultOpenIfNoPref = Boolean(props.lessonID) && !isMobileInitial;
-    const initialDrawerOpen = saved === null ? defaultOpenIfNoPref : saved === "1";
+    // Canvas launches are one lesson at a time — never show TOC.
+    const initialDrawerOpen = this.isFromCanvas
+      ? false
+      : saved === null
+        ? defaultOpenIfNoPref
+        : saved === "1";
 
     this.togglePopup = this.togglePopup.bind(this);
     this.toggleFeedback = this.toggleFeedback.bind(this);
@@ -99,7 +106,6 @@ class Platform extends React.Component {
       feedback: "",
       feedbackSubmitted: false,
       drawerOpen: initialDrawerOpen,
-      hasAutoClosedDrawer: false,
       metaCollapsed: false,
       currProblem: null,
       status: this.props.lessonID ? "loading" : "courseSelection",
@@ -113,7 +119,7 @@ class Platform extends React.Component {
       const lesson = findLessonById(this.props.lessonID);
       this.selectLesson(lesson).then((_) => {});
       const { setLanguage } = this.props;
-      if (lesson.courseName == "Matematik 4") {
+      if (lesson.courseName === "Matematik 4") {
         setLanguage("se");
       } else {
         const defaultLocale = localStorage.getItem("defaultLocale");
@@ -139,7 +145,7 @@ class Platform extends React.Component {
         this.selectLesson(lesson).then(() => {});
       }
     }
-    if (movedIntoLesson) {
+    if (movedIntoLesson && !this.isFromCanvas) {
       let saved = null;
       try {
         saved = localStorage.getItem(TOC_DRAWER_OPEN_KEY);
@@ -263,7 +269,7 @@ class Platform extends React.Component {
             toastId: ToastID.set_lesson_success.toString(),
           });
           const responseText = await response.text();
-          let [message, ...addInfo] = responseText.split("|");
+          let [, ...addInfo] = responseText.split("|");
           this.props.history.push(`/assignment-already-linked?to=${addInfo.to}`);
         }
       }
@@ -534,7 +540,7 @@ class Platform extends React.Component {
     try {
       localStorage.setItem(TOC_DRAWER_OPEN_KEY, open ? "1" : "0");
     } catch (e) {}
-    this.setState({ drawerOpen: open, hasAutoClosedDrawer: false });
+    this.setState({ drawerOpen: open });
   };
 
   getLessonMasteryMap = (courseName) => {
@@ -594,6 +600,7 @@ class Platform extends React.Component {
 
     const lessonMasteryMap = this.getLessonMasteryMap(tocCourseName);
     const inLesson = Boolean(this.props.lessonID);
+    const showToc = inLesson && !this.isFromCanvas;
     const progressData = this.getProgressBarData();
     const isCompletionMode = this.lesson?.enableCompletionMode;
     const barPercent = isCompletionMode
@@ -604,7 +611,7 @@ class Platform extends React.Component {
     const CONTAINER_STYLE = {
       maxWidth: CONTAINER_MAX_WIDTH,
       width: "100%",
-      margin: inLesson && !isMobile
+      margin: showToc && !isMobile
         ? (this.state.drawerOpen ? "0 0 0 16px" : "0 0 0 32px")
         : "0",
       padding: isMobile ? "0 12px" : "0 16px",
@@ -617,29 +624,56 @@ class Platform extends React.Component {
 
     return (
       <>
-        {inLesson && (
-          <Drawer
-            variant={isMobile ? "temporary" : "persistent"}
+        {showToc && (
+          isMobile ? (
+          <SwipeableDrawer
             anchor="left"
             open={this.state.drawerOpen}
-            onClose={isMobile ? () => this.toggleDrawer(false) : undefined}
+            onClose={() => this.toggleDrawer(false)}
+            onOpen={() => this.toggleDrawer(true)}
             classes={{
-              paper: isMobile ? classes.drawerPaperMobile : classes.drawerPaper,
+              paper: classes.drawerPaperMobile,
             }}
             style={{
               position: "fixed",
-              width: isMobile ? "min(320px, 85vw)" : 320,
+              width: "min(320px, 85vw)",
+              flexShrink: 0,
+              zIndex: this.state.drawerOpen ? 4 : 0,
+            }}
+            PaperProps={{ style: { padding: 0, width: "min(320px, 85vw)" } }}
+            ModalProps={{ keepMounted: true }}
+          >
+            <div style={{ width: "100%", padding: 16 }}>
+              <TableOfContents
+                courseName={tocCourseName}
+                courseMastery={this.state.mastery || 0}
+                mastery={lessonMasteryMap}
+                onLessonClick={this.handleLessonClick}
+                selectedLessonId={this.props.lessonID}
+                drawerOpen={this.state.drawerOpen}
+              />
+            </div>
+          </SwipeableDrawer>
+          ) : (
+          <Drawer
+            variant="persistent"
+            anchor="left"
+            open={this.state.drawerOpen}
+            classes={{
+              paper: classes.drawerPaper,
+            }}
+            style={{
+              position: "fixed",
+              width: 320,
               flexShrink: 0,
               zIndex: this.state.drawerOpen ? 4 : 0,
             }}
             PaperProps={{ style: { padding: 0 } }}
           >
-            <div style={{ width: isMobile ? "100%" : drawerWidth, padding: 16 }}>
-              {!isMobile && (
+            <div style={{ width: drawerWidth, padding: 16 }}>
               <IconButton aria-label="Table of Contents Toggle" onClick={() => this.toggleDrawer(false)}>
                 <img src={ToCButton} alt="Table of Contents" style={{ width: 24, height: 24 }} />
               </IconButton>
-              )}
 
               <TableOfContents
                 courseName={tocCourseName}
@@ -651,6 +685,7 @@ class Platform extends React.Component {
               />
             </div>
           </Drawer>
+          )
         )}
 
         <div
@@ -666,10 +701,10 @@ class Platform extends React.Component {
             <Toolbar className={isMobile ? classes.mobileCompactToolbar : undefined}>
               {isMobile ? (
                 <div style={{ display: "flex", alignItems: "center", width: "100%", gap: 4, minWidth: 0 }}>
-                  {inLesson && !this.state.drawerOpen && (
+                  {showToc && (
                     <IconButton
                       aria-label="Table of Contents Toggle"
-                      onClick={() => this.toggleDrawer(true)}
+                      onClick={() => this.toggleDrawer(!this.state.drawerOpen)}
                       size="small"
                     >
                       <img src={ToCButton} alt="Table of Contents" style={{ width: 24, height: 24 }} />
@@ -801,7 +836,7 @@ class Platform extends React.Component {
           {/* Progress Bar */}
           <div
             style={{
-              marginLeft: inLesson && this.state.drawerOpen && !isMobile ? drawerWidth : 0,
+              marginLeft: showToc && this.state.drawerOpen && !isMobile ? drawerWidth : 0,
               marginBottom: 0,
               transition: "margin 0.1s ease",
             }}
@@ -811,7 +846,7 @@ class Platform extends React.Component {
                       style={{ top: progressStickyTop, backgroundColor: "#F6F6F6", boxShadow: "none", zIndex: 3 }}>
                 <Toolbar disableGutters style={{ minHeight: isMobile ? 64 : 80, paddingLeft: isMobile ? 8 : 16, paddingRight: isMobile ? 8 : 32 }}>
                   <Grid container spacing={0} role="progress-bar" alignItems="center" style={{ width: "100%" }}>
-                    {!this.state.drawerOpen && !isMobile && (
+                    {showToc && !this.state.drawerOpen && !isMobile && (
                       <IconButton
                         aria-label="Table of Contents Toggle"
                         onClick={() => this.toggleDrawer(true)}
@@ -1097,7 +1132,7 @@ class Platform extends React.Component {
                     seed={this.state.seed}
                     lessonID={this.props.lessonID}
                     displayMastery={this.displayMastery}
-                    drawerOpen={this.state.drawerOpen}
+                    drawerOpen={showToc && this.state.drawerOpen}
                     showFeedback={this.state.showFeedback}
                     feedback={this.state.feedback}
                     feedbackSubmitted={this.state.feedbackSubmitted}

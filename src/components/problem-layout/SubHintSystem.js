@@ -70,8 +70,25 @@ class SubHintSystem extends React.Component {
                                 id="panel1a-header"
                             >
                                 <Typography className={classes.heading}>
-                                {translate('hintsystem.hint') + (i + 1) + ": "} {renderText(hint.title, problemID,
-                                    chooseVariables(Object.assign({}, hintVars, hint.variabilization), seed), this.context)} </Typography>
+                                {hint.type === "bottomOut"
+                                    ? renderText(
+                                        hint.title,
+                                        problemID,
+                                        chooseVariables(Object.assign({}, hintVars, hint.variabilization), seed),
+                                        this.context
+                                    )
+                                    : (
+                                        <>
+                                            {translate('hintsystem.hint') + (i + 1) + ": "}
+                                            {renderText(
+                                                hint.title,
+                                                problemID,
+                                                chooseVariables(Object.assign({}, hintVars, hint.variabilization), seed),
+                                                this.context
+                                            )}
+                                        </>
+                                    )}
+                                </Typography>
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography component={'span'} style={{ width: "100%" }}>

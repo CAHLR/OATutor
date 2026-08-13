@@ -22,6 +22,7 @@ import {
     ENABLE_BOTTOM_OUT_HINTS,
     ThemeContext,
 } from "../../config/config.js";
+import { shouldPenalizeTopLevelHintUnlock } from "../../util/helpPenaltyMode.js";
 
 import "./ProblemCard.css";
 import ProblemInput from "../problem-input/ProblemInput";
@@ -101,41 +102,20 @@ class ProblemCard extends React.Component {
             }
         }
 
-        // Bottom out hints option
+        // Scaffold (textbox) hints always get an "Answer" sub-hint dropdown.
+        this.ensureScaffoldAnswerSubHints(this.hints);
+
+        // Step-level bottom-out answer (last hint) — still lesson-gated.
         if (
             this.giveStuBottomHint &&
             !(context.debug && context["use_expanded_view"])
         ) {
-            // Bottom out hints
             this.hints.push({
                 id: this.step.id + "-h" + (this.hints.length + 1),
                 title: this.translate('hintsystem.answer'),
                 text: this.translate('hintsystem.answerIs') + this.step.stepAnswer,
                 type: "bottomOut",
                 dependencies: Array.from(Array(this.hints.length).keys()),
-            });
-            // Bottom out sub hints
-            this.hints.map((hint, i) => {
-                if (hint.type === "scaffold") {
-                    if (hint.subHints == null) {
-                        hint.subHints = [];
-                    }
-                    hint.subHints.push({
-                        id:
-                            this.step.id +
-                            "-h" +
-                            i +
-                            "-s" +
-                            (hint.subHints.length + 1),
-                        title: this.translate('hintsystem.answer'),
-                        text: this.translate('hintsystem.answerIs') + hint.hintAnswer[0],
-                        type: "bottomOut",
-                        dependencies: Array.from(
-                            Array(hint.subHints.length).keys()
-                        ),
-                    });
-                }
-                return null;
             });
         }
 
@@ -175,6 +155,36 @@ class ProblemCard extends React.Component {
 
     hashAnswer = (answer) => {
         return CryptoJS.SHA256(answer).toString();
+    };
+
+    /**
+     * Every scaffold (hint with a textbox) gets a bottom-out "Answer" sub-hint
+     * so students can open a dropdown to reveal the scaffold answer.
+     */
+    ensureScaffoldAnswerSubHints = (hints) => {
+        if (!Array.isArray(hints)) return;
+        hints.forEach((hint, i) => {
+            if (hint?.type !== "scaffold") return;
+            const answer =
+                Array.isArray(hint.hintAnswer) && hint.hintAnswer.length > 0
+                    ? hint.hintAnswer[0]
+                    : null;
+            if (answer == null || answer === "") return;
+            if (!Array.isArray(hint.subHints)) {
+                hint.subHints = [];
+            }
+            const alreadyHasAnswer = hint.subHints.some(
+                (subHint) => subHint?.type === "bottomOut"
+            );
+            if (alreadyHasAnswer) return;
+            hint.subHints.push({
+                id: `${this.step.id}-h${i}-s${hint.subHints.length + 1}`,
+                title: this.translate("hintsystem.answer"),
+                text: this.translate("hintsystem.answerIs") + answer,
+                type: "bottomOut",
+                dependencies: Array.from(Array(hint.subHints.length).keys()),
+            });
+        });
     };
 
     _findHintId = (hints, targetId) => {
@@ -417,12 +427,7 @@ class ProblemCard extends React.Component {
                     this.state.activeHintType === "normal"
                 );
             }
-
-            this.props.answerMade(
-                this.index,
-                this.step.knowledgeComponents,
-                false
-            );
+            // Penalty only on hint dropdown unlock (unlockHint), not panel open.
         });
     };
 
@@ -451,15 +456,23 @@ class ProblemCard extends React.Component {
     };
 
     unlockHint = (hintNum, hintType) => {
-        // Mark question as wrong if hints are used (on the first time)
-        const { seed, problemVars, problemID, courseName, answerMade, lesson, getMasteryData } =
+        const { seed, problemVars, problemID, courseName, lesson, getMasteryData, helpPenaltyMode } =
             this.props;
         const { isCorrect, hintsFinished } = this.state;
         const { knowledgeComponents, variabilization } = this.step;
 
-        if (hintsFinished.reduce((a, b) => a + b) === 0 && isCorrect !== true) {
+        if (
+            isCorrect !== true &&
+            shouldPenalizeTopLevelHintUnlock({
+                mode: helpPenaltyMode,
+                hintIndex: hintNum,
+                hintCount: this.hints?.length || 0,
+                hintType,
+                hintsFinished,
+            })
+        ) {
             this.setState({ usedHints: true });
-            answerMade(this.index, knowledgeComponents, false);
+            this.props.applyHelpPenalty?.(this.index);
         }
 
         // If the user has not opened a scaffold before, mark it as in-progress.
@@ -671,30 +684,9 @@ class ProblemCard extends React.Component {
                     type: "bottomOut",
                     dependencies: Array.from(Array(this.hints.length).keys()),
                 });
-                // Bottom out sub hints
-                this.hints.map((hint, i) => {
-                    if (hint.type === "scaffold") {
-                        if (hint.subHints == null) {
-                            hint.subHints = [];
-                        }
-                        hint.subHints.push({
-                            id:
-                                this.step.id +
-                                "-h" +
-                                i +
-                                "-s" +
-                                (hint.subHints.length + 1),
-                            title: this.translate('hintsystem.answer'),
-                            text: this.translate('hintsystem.answerIs') + hint.hintAnswer[0],
-                            type: "bottomOut",
-                            dependencies: Array.from(
-                                Array(hint.subHints.length).keys()
-                            ),
-                        });
-                    }
-                    return null;
-                });
             }
+            // Scaffold answer sub-hints always (textbox hints need an Answer dropdown).
+            this.ensureScaffoldAnswerSubHints(this.hints);
         
             this.setState({
                 hints: this.hints,
@@ -805,7 +797,9 @@ class ProblemCard extends React.Component {
                                             this.step.variabilization
                                         )}
                                         answerMade={this.props.answerMade}
+                                        applyHelpPenalty={this.props.applyHelpPenalty}
                                         lesson={this.props.lesson}
+                                        helpPenaltyMode={this.props.helpPenaltyMode}
                                         courseName={this.props.courseName}
                                         isIncorrect={this.expandFirstIncorrect}
                                         generateHintFromGPT={this.generateHintFromGPT}

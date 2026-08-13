@@ -21,20 +21,28 @@ import { ReactComponent as ChatBubble } from '../../assets/chat-bubble.svg';
 import { ThemeContext } from '../../config/config.js';
 import { withResponsive } from '../../util/ResponsiveContext';
 import { MOBILE_CHAT_SHEET_HEIGHT } from './MobileBottomSheet';
+import MobileBottomSheet from './MobileBottomSheet';
 import {
     MOBILE_AGENT_AVATAR_HEIGHT,
     MOBILE_AGENT_AVATAR_WIDTH,
     MOBILE_AGENT_FAB_BOTTOM,
     MOBILE_FAB_RIGHT,
+    DESKTOP_TOOLTIP_RIGHT,
+    PAGE_BG,
 } from './mobileFabStyles';
+import {
+    getHelpPenaltyBadgeText,
+    getHelpPenaltyMode,
+    shouldJudgeAgentAnswerReveal,
+    shouldPenalizeAgentOnOpen,
+} from '../../util/helpPenaltyMode.js';
+import { chooseVariables, variabilize } from '../../platform-logic/variabilize.js';
 
 const CHAT_THEME = {
     primary: '#4c7d9f',
     primaryDark: '#3f7091',
     accent: '#ffc300',
-    light: '#7ba9f3',
     pale: '#a3c5de',
-    white: '#FFFFFF',
     surface: '#eef4fa',
 };
 
@@ -77,7 +85,7 @@ const styles = (theme) => ({
         maxHeight: '90vh',
         fontFamily: '"Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
     },
-    chatContainerFullscreen: {
+    chatContainerSheet: {
         position: 'fixed',
         left: 0,
         right: 0,
@@ -256,6 +264,9 @@ const styles = (theme) => ({
         zIndex: 1001,
         maxWidth: 'calc(100vw - 40px)',
         transform: 'none',
+        [theme.breakpoints.up('md')]: {
+            right: DESKTOP_TOOLTIP_RIGHT,
+        },
     },
     embeddedLauncher: {
         width: '100%',
@@ -282,9 +293,8 @@ const styles = (theme) => ({
     launcherBubbleWrap: {
         position: 'relative',
         width: '100%',
-        padding: 1,
         boxSizing: 'border-box',
-        overflow: 'hidden',
+        overflow: 'visible',
         transition: 'max-height 0.25s ease, opacity 0.2s ease, margin-bottom 0.2s ease',
     },
     launcherBubbleWrapHidden: {
@@ -293,6 +303,7 @@ const styles = (theme) => ({
         marginBottom: 0,
         padding: 0,
         pointerEvents: 'none',
+        overflow: 'hidden',
     },
     launcherBubbleWrapVisible: {
         maxHeight: 200,
@@ -301,15 +312,15 @@ const styles = (theme) => ({
     },
     launcherBubbleShape: {
         position: 'absolute',
-        top: 1,
-        left: 1,
-        width: 'calc(100% - 2px)',
-        height: 'calc(100% - 2px)',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
         display: 'block',
         overflow: 'visible',
         pointerEvents: 'none',
         '& path': {
-            fill: 'transparent',
+            fill: PAGE_BG,
             stroke: CHAT_THEME.primary,
             vectorEffect: 'non-scaling-stroke',
         },
@@ -400,6 +411,10 @@ class AgentChatbox extends React.Component {
         this.messagesEndRef = React.createRef();
         this.chatContainerRef = React.createRef();
         this.activeRequestId = 0;
+        // Last problemId whose context was already reflected in an LLM turn.
+        // Used to inject a role:user switch notice when the ITS advances problems
+        // without clearing the chat thread (lesson change still clears).
+        this._lastPromptedProblemId = null;
     }
 
     getFirebase = () => this.context?.firebase;
@@ -421,9 +436,108 @@ class AgentChatbox extends React.Component {
             }
         }
         this.fetchSuggestedQuestionsIfNeeded();
+        this._notifyPromoEligibility();
+        this.props.onPromoLayoutChange?.();
     }
 
+    _getHelpPenaltyMode = () =>
+        this.props.helpPenaltyMode || getHelpPenaltyMode(this.props.lesson);
+
+    _maybePenalizeAgentOnFirstQuery = () => {
+        if (!shouldPenalizeAgentOnOpen({ mode: this._getHelpPenaltyMode() })) {
+            return;
+        }
+        this.props.applyHelpPenalty?.();
+    };
+
+    _resolveStepAnswers = (step) => {
+        if (!step) return [];
+        const chosenVars = chooseVariables(
+            Object.assign(
+                {},
+                this.props.problemVars || {},
+                this.props.problem?.variabilization || {},
+                step.variabilization || {}
+            ),
+            this.props.seed
+        );
+        const raw = step.stepAnswer;
+        const list = Array.isArray(raw) ? raw : raw != null && raw !== '' ? [raw] : [];
+        return list
+            .map((ans) => String(variabilize(ans, chosenVars) ?? ans))
+            .filter(Boolean);
+    };
+
+    _maybeJudgeAgentAnswerReveal = async (assistantText) => {
+        if (!shouldJudgeAgentAnswerReveal({ mode: this._getHelpPenaltyMode() })) {
+            return;
+        }
+        const text = (assistantText || '').trim();
+        if (!text) return;
+
+        const active = this.props.getActiveStepData?.();
+        const step = active?.step;
+        const stepIndex = active?.stepIndex;
+        const answers = this._resolveStepAnswers(step);
+        if (!answers.length) return;
+
+        try {
+            const result = await agentHelper.judgeAnswerReveal({
+                assistantMessage: text,
+                stepAnswers: answers,
+                problemContext: this.getProblemContext(),
+                stepId: step?.id || null,
+                chatPrompt: this.props.lesson?.chat_prompt || 'PROMPTv2.txt',
+                chatDisplayMode: this.props.lesson?.chat_display_mode ?? 'Off',
+                helpPenaltyMode: this._getHelpPenaltyMode(),
+                lessonId: this.props.lesson?.id || null,
+                condition: this.props.condition,
+            });
+            if (result?.answerRevealed) {
+                this.props.applyHelpPenalty?.(stepIndex);
+            }
+        } catch (err) {
+            console.warn('Answer-reveal judge failed; skipping help penalty', err);
+        }
+    };
+
+    _getPromoAllowed = () => {
+        const isMobile = this.props.responsive?.isMobile ?? false;
+        return (
+            this.props.showLauncherBubble !== false &&
+            !this.props.hintsOpen &&
+            !isMobile
+        );
+    };
+
+    _getPromoEligible = () => {
+        if (!this._getPromoAllowed()) return false;
+        return (
+            !this.state.hasChatBeenOpened || this.state.isLauncherHovered
+        );
+    };
+
+    _notifyPromoEligibility = () => {
+        const meta = {
+            allowed: this._getPromoAllowed(),
+            hasBeenOpened: Boolean(this.state.hasChatBeenOpened),
+            isHovering: Boolean(this.state.isLauncherHovered),
+        };
+        const prev = this._lastReportedPromoMeta;
+        if (
+            prev &&
+            prev.allowed === meta.allowed &&
+            prev.hasBeenOpened === meta.hasBeenOpened &&
+            prev.isHovering === meta.isHovering
+        ) {
+            return;
+        }
+        this._lastReportedPromoMeta = meta;
+        this.props.onPromoEligibilityChange?.(meta);
+    };
+
     componentDidUpdate(prevProps, prevState) {
+        this._notifyPromoEligibility();
         const currentLessonID = this.props.lesson?.id;
         const prevLessonID = prevProps.lesson?.id;
 
@@ -440,9 +554,15 @@ class AgentChatbox extends React.Component {
             this.clearConversation();
         }
         
-        // Only scroll when a new message is added, not when content is updated
-        if (this.state.messages.length > prevState.messages.length) {
-            this.scrollToBottom();
+        // Scroll to latest when chat is reopened, or when a new message is added
+        if (!prevState.isVisible && this.state.isVisible) {
+            // Double rAF: wait until remounted chat has finished layout
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => this.scrollToBottom(true));
+            });
+        } else if (this.state.messages.length > prevState.messages.length) {
+            // New user/assistant turn — always stick to the latest message
+            this.scrollToBottom(true);
         }
 
         if (this.props.showSuggestedQuestions) {
@@ -450,18 +570,24 @@ class AgentChatbox extends React.Component {
         }
     }
     
-    scrollToBottom = () => {
-        if (this.messagesEndRef.current) {
-            const messagesContainer = this.messagesEndRef.current.parentElement;
-            if (messagesContainer) {
-                // Check if user is already near the bottom (within 100px threshold)
-                const isNearBottom = messagesContainer.scrollHeight - messagesContainer.scrollTop - messagesContainer.clientHeight < 100;
-                
-                // Only auto-scroll if user hasn't manually scrolled up
-                if (isNearBottom) {
-                    this.messagesEndRef.current.scrollIntoView({ behavior: 'auto' });
-                }
-            }
+    scrollToBottom = (force = false) => {
+        if (!this.messagesEndRef.current) {
+            return;
+        }
+        const messagesContainer = this.messagesEndRef.current.parentElement;
+        if (!messagesContainer) {
+            return;
+        }
+
+        const distanceFromBottom =
+            messagesContainer.scrollHeight -
+            messagesContainer.scrollTop -
+            messagesContainer.clientHeight;
+        const isNearBottom = distanceFromBottom < 120;
+
+        // Scroll only the messages pane (not scrollIntoView — that moves page/flex ancestors).
+        if (force || isNearBottom) {
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
         }
     };
 
@@ -531,6 +657,7 @@ class AgentChatbox extends React.Component {
                 },
                 this.props.lesson?.chat_prompt || 'PROMPTv2.txt',
                 this.props.lesson?.chat_display_mode ?? 'Off',
+                this._getHelpPenaltyMode(),
             );
 
             this.setState({
@@ -546,11 +673,15 @@ class AgentChatbox extends React.Component {
     };
 
     handleLauncherPointerIn = () => {
-        this.setState({ isLauncherHovered: true });
+        this.setState({ isLauncherHovered: true }, () => {
+            this.props.onPromoLayoutChange?.();
+        });
     };
 
     handleLauncherPointerOut = () => {
-        this.setState({ isLauncherHovered: false });
+        this.setState({ isLauncherHovered: false }, () => {
+            this.props.onPromoLayoutChange?.();
+        });
     };
 
     handleLauncherKeyDown = (event) => {
@@ -565,15 +696,16 @@ class AgentChatbox extends React.Component {
         const isMobile = responsive?.isMobile ?? false;
         const mode = this.props.mode || 'floating';
         const launcherPlacement = this.props.closedLauncherPlacement || mode;
-        const { hasChatBeenOpened, isLauncherHovered } = this.state;
         const hintsOpen = this.props.hintsOpen;
-        const showBubble = this.props.showLauncherBubble !== false &&
-            !hintsOpen &&
-            !isMobile &&
-            (!hasChatBeenOpened || isLauncherHovered);
+        const hidePromoDueToOverlap = Boolean(this.props.hidePromoDueToOverlap);
+        const promoEligible = this._getPromoEligible();
+        const promoVisible = promoEligible && !hidePromoDueToOverlap;
+        const bubbleWrapClass = promoVisible
+            ? classes.launcherBubbleWrapVisible
+            : classes.launcherBubbleWrapHidden;
 
         if (isMobile && launcherPlacement === 'floating') {
-            if (hintsOpen) {
+            if (hintsOpen || this.props.drawerOpen || this.props.mathKeyboardOpen) {
                 return null;
             }
 
@@ -606,12 +738,8 @@ class AgentChatbox extends React.Component {
             >
                 <div className={classes.launcherStack}>
                     <div
-                        className={`${classes.launcherBubbleWrap} ${
-                            showBubble
-                                ? classes.launcherBubbleWrapVisible
-                                : classes.launcherBubbleWrapHidden
-                        }`}
-                        aria-hidden={!showBubble}
+                        className={`${classes.launcherBubbleWrap} ${bubbleWrapClass}`}
+                        aria-hidden={!promoVisible}
                     >
                         <ChatBubble
                             className={classes.launcherBubbleShape}
@@ -623,8 +751,8 @@ class AgentChatbox extends React.Component {
                             <p className={classes.launcherDescription}>
                                 Ask me any question about this problem or topic.
                             </p>
-                            <span className={classes.launcherPill}>
-                                Won&apos;t affect your mastery score
+            <span className={classes.launcherPill}>
+                                {getHelpPenaltyBadgeText(this._getHelpPenaltyMode(), 'agent')}
                             </span>
                         </div>
                     </div>
@@ -672,16 +800,41 @@ class AgentChatbox extends React.Component {
             if (this.props.onChatVisibilityChange) {
                 this.props.onChatVisibilityChange(nextVisible);
             }
+            this.props.onPromoLayoutChange?.();
         });
     };
 
     clearConversation = () => {
         this.activeRequestId += 1;
-        agentHelper.initializeSession();
         const fb = this.getFirebase();
+        const oldSid = this.getSessionId();
+        // Attribute clear to the session that was active, then start a fresh one.
+        if (fb?.logChatSession && oldSid) {
+            fb.logChatSession(oldSid, { clearedCount: increment(1), lastActivityAt: Date.now() });
+        }
+        agentHelper.initializeSession();
+        // Problem will not remount, so write create metadata for the new session here.
         const sid = this.getSessionId();
-        if (fb?.logChatSession && sid) {
-            fb.logChatSession(sid, { clearedCount: increment(1), lastActivityAt: Date.now() });
+        const lesson = this.props.lesson;
+        if (fb?.logChatSession && sid && agentHelper.needsSessionMetaWrite()) {
+            fb.logChatSession(
+                sid,
+                agentHelper.buildChatSessionCreatePayload({
+                    sessionId: sid,
+                    lesson,
+                    oats_user_id: this.context?.userID || null,
+                    lms_user_id: this.context?.user?.user_id || null,
+                    course_id: this.context?.user?.course_id || null,
+                    course_name: this.context?.user?.course_name || lesson?.courseName || null,
+                    course_code: this.context?.user?.course_code || null,
+                    semester: fb.addMetaData?.({})?.semester || null,
+                    treatment: this.context?.getTreatment?.() ?? null,
+                    siteVersion: fb.siteVersion || null,
+                    siteCommitHash: process.env.REACT_APP_COMMIT_HASH || null,
+                    helpPenaltyMode: this._getHelpPenaltyMode(),
+                })
+            );
+            agentHelper.markSessionMetaWritten();
         }
         this.setState({
             messages: this.buildGreetingMessages(),
@@ -692,6 +845,7 @@ class AgentChatbox extends React.Component {
             isTyping: false,
             currentMessage: '',
         }, this.fetchSuggestedQuestionsIfNeeded);
+        this._lastPromptedProblemId = null;
     };
 
     handleResizeStart = (event) => {
@@ -754,6 +908,41 @@ class AgentChatbox extends React.Component {
         const messageId = Date.now();
         const requestId = this.activeRequestId + 1;
         this.activeRequestId = requestId;
+
+        // OnOpen: penalize only when the student actually sends a query.
+        this._maybePenalizeAgentOnFirstQuery();
+
+        // Snapshot prior turns before we append this turn's placeholders.
+        // This is a copy for the LLM payload — UI state is updated separately below.
+        const conversationHistory = (this.state.messages || [])
+            .filter((msg) => msg?.role === 'user' || msg?.role === 'assistant')
+            .map((msg) => ({
+                role: msg.role,
+                content: typeof msg.content === 'string' ? msg.content : '',
+            }))
+            .filter((msg) => msg.content.trim().length > 0);
+
+        // Context switch: system prompt already reflects the new ITS problem, but
+        // recency bias favors the old thread. Insert a role:user notice at the end
+        // of history (before the new question) so the model sees the switch.
+        const nextProblemId = this.props.problem?.id || null;
+        const nextProblemTitle = this.props.problem?.title || nextProblemId || 'a new problem';
+        if (
+            this._lastPromptedProblemId &&
+            nextProblemId &&
+            this._lastPromptedProblemId !== nextProblemId
+        ) {
+            conversationHistory.push({
+                role: 'user',
+                content:
+                    `We have switched to a new problem: ${nextProblemTitle}. ` +
+                    `Earlier messages in this chat were about a different problem — ` +
+                    `treat this as a fresh problem context going forward.`,
+            });
+        }
+        if (nextProblemId) {
+            this._lastPromptedProblemId = nextProblemId;
+        }
         
         // Add user message and assistant placeholder in a single setState
         this.setState(prevState => ({
@@ -780,6 +969,10 @@ class AgentChatbox extends React.Component {
 
         // Get context from props
         const problemContext = this.getProblemContext();
+        // Snapshot once at turn start so user + assistant history rows stay aligned
+        // even if the student changes step while the reply streams.
+        const turnProblemId = problemContext?.problemID || null;
+        const turnStepId = problemContext?.currentStep?.id || null;
         const studentState = this.getStudentState();
         const { text, figureUrls } = this.extractConceptExplorationInput(userMessage, problemContext);
         const images = await this.fetchFiguresAsBase64(figureUrls);
@@ -794,6 +987,7 @@ class AgentChatbox extends React.Component {
 
         const chatPrompt = this.props.lesson?.chat_prompt || 'PROMPTv2.txt';
         const chatDisplayMode = this.props.lesson?.chat_display_mode ?? 'Off';
+        const helpPenaltyMode = this._getHelpPenaltyMode();
 
         const assistantMessageId = `assistant-${messageId}`;
         const turnStart = Date.now();
@@ -807,6 +1001,7 @@ class AgentChatbox extends React.Component {
                 extracted,
                 chatPrompt,
                 chatDisplayMode,
+                helpPenaltyMode,
                 {
                     onTurnStarted: (turnId) => {
                         const fb = this.getFirebase();
@@ -817,6 +1012,19 @@ class AgentChatbox extends React.Component {
                                 role: 'user',
                                 content: userMessage,
                                 imagesCount: images.length,
+                                problemId: turnProblemId,
+                                stepId: turnStepId,
+                                // Same hints that were sent in studentState for the prompt.
+                                hintStepId: studentState?.hintStepId || turnStepId,
+                                hintsUsed: Array.isArray(studentState?.hintsUsed)
+                                    ? studentState.hintsUsed
+                                    : [],
+                                hintsUsedCount: Array.isArray(studentState?.hintsUsed)
+                                    ? studentState.hintsUsed.length
+                                    : 0,
+                                chatPrompt,
+                                chatDisplayMode,
+                                helpPenaltyMode,
                                 timestampMs: Date.now(),
                             });
                         }
@@ -834,7 +1042,10 @@ class AgentChatbox extends React.Component {
                                     ? { ...msg, content: partialResponse }
                                     : msg
                             )
-                        }));
+                        }), () => {
+                            // Follow the streaming reply to the bottom (ChatGPT-style)
+                            this.scrollToBottom(true);
+                        });
                     },
                     onSuccessfulCompletion: (fullResponse) => {
                         if (requestId !== this.activeRequestId) {
@@ -850,7 +1061,9 @@ class AgentChatbox extends React.Component {
                             ),
                             isGenerating: false,
                             isTyping: false
-                        }));
+                        }), () => {
+                            this.scrollToBottom(true);
+                        });
                         const fb = this.getFirebase();
                         const sid = this.getSessionId();
                         if (fb?.logChatMessage && sid) {
@@ -860,12 +1073,18 @@ class AgentChatbox extends React.Component {
                                 content: resolvedResponse,
                                 latencyMs: Date.now() - turnStart,
                                 responseCharCount: resolvedResponse.length,
+                                problemId: turnProblemId,
+                                stepId: turnStepId,
+                                chatPrompt,
+                                chatDisplayMode,
+                                helpPenaltyMode,
                                 timestampMs: Date.now(),
                             });
                         }
                         if (fb?.logChatSession && sid) {
                             fb.logChatSession(sid, { messageCountAssistant: increment(1), lastActivityAt: Date.now() });
                         }
+                        this._maybeJudgeAgentAnswerReveal(resolvedResponse);
                     },
                     onError: (error) => {
                         if (requestId !== this.activeRequestId) {
@@ -884,14 +1103,17 @@ class AgentChatbox extends React.Component {
                             ),
                             isGenerating: false,
                             isTyping: false
-                        }));
+                        }), () => {
+                            this.scrollToBottom(true);
+                        });
                         const fb = this.getFirebase();
                         const sid = this.getSessionId();
                         if (fb?.logChatSession && sid) {
                             fb.logChatSession(sid, { errorCount: increment(1), lastActivityAt: Date.now() });
                         }
                     }
-                }
+                },
+                conversationHistory
             );
         } catch (error) {
             // Error already handled in callbacks
@@ -1034,7 +1256,8 @@ class AgentChatbox extends React.Component {
         // Get the step student is currently working on
         const activeStepData = getActiveStepData ? getActiveStepData() : null;
         const currentStep = activeStepData ? {
-            id: activeStepData.step.stepId,
+            // Step docs use `id` (e.g. aaac80bvis1a), not `stepId`
+            id: activeStepData.step?.id || null,
             title: activeStepData.step.stepTitle,
             body: activeStepData.step.stepBody,
             correctAnswer: activeStepData.step.correctAnswer,
@@ -1064,10 +1287,15 @@ class AgentChatbox extends React.Component {
         const stepIndex = activeStepData ? activeStepData.stepIndex : 0;
         const isCorrect = stepStates ? stepStates[stepIndex] : null;
 
-        // Derive hints used for the active step (manual hints only)
+        // Derive hints used for the active step (manual hints only).
+        // This is the same payload agent-logic formats into {hintsUsed} in the prompt.
         let hintsUsed = [];
+        let hintStepId = activeStepData?.step?.id || null;
         if (hintUsageByStep && Number.isInteger(stepIndex)) {
             const usage = hintUsageByStep[stepIndex];
+            if (usage?.stepId) {
+                hintStepId = usage.stepId;
+            }
             if (usage && Array.isArray(usage.hints)) {
                 hintsUsed = usage.hints
                     .filter(h => {
@@ -1104,6 +1332,7 @@ class AgentChatbox extends React.Component {
             attemptHistory: attemptHistory || {},
             currentLessonMastery: currentLessonMastery,
             hintsUsed,
+            hintStepId,
         };
     }
 
@@ -1177,7 +1406,10 @@ class AgentChatbox extends React.Component {
         const beforeInputContent = this.props.beforeInputContent || null;
         const embeddedHeight = this.props.embeddedHeight || '100%';
         const header = (
-            <div className={classes.chatHeader}>
+            <div
+                className={classes.chatHeader}
+                {...(useMobileSheet ? { 'data-sheet-drag-handle': true } : {})}
+            >
                 <div className={classes.chatTitle}>
                     <OskiAvatar className={classes.avatarIcon} aria-label="Oski" />
                     <Typography variant="subtitle1">Oski • AI Tutor</Typography>
@@ -1197,6 +1429,118 @@ class AgentChatbox extends React.Component {
             </div>
         );
 
+        if (useMobileSheet) {
+            return (
+                <>
+                    {!isChatVisible && this.renderLauncher()}
+                    <MobileBottomSheet
+                        open={isChatVisible}
+                        onClose={this.toggleChat}
+                        height={MOBILE_CHAT_SHEET_HEIGHT}
+                        showHeader={false}
+                        handleMode="content"
+                    >
+                        <Card
+                            ref={this.chatContainerRef}
+                            className={`${classes.chatContainer} ${classes.chatContainerSheet}`}
+                            style={{
+                                width: '100%',
+                                height: '100%',
+                                maxWidth: 'none',
+                                maxHeight: 'none',
+                                minWidth: 0,
+                                minHeight: 0,
+                                position: 'relative',
+                                borderRadius: 0,
+                                boxShadow: 'none',
+                                display: 'flex',
+                                flexDirection: 'column',
+                            }}
+                        >
+                            {showEmbeddedHeader && header}
+                            {topContent}
+                            {mode === 'floating' && header}
+                            <>
+                                <div className={classes.chatMessages}>
+                                    {messages.map((message) => (
+                                        <div
+                                            key={message.id}
+                                            className={`${classes.message} ${message.role === 'user' ? classes.userMessage : classes.assistantMessage}`}
+                                        >
+                                            {message.role === 'user' ? (
+                                                <Paper
+                                                    className={`${classes.messageBubble} ${classes.userBubble}`}
+                                                    elevation={1}
+                                                >
+                                                    {message.content ? (
+                                                        <Typography variant="body2" style={{ fontSize: 14, lineHeight: 1.4, fontWeight: 400 }}>
+                                                            {message.content}
+                                                        </Typography>
+                                                    ) : (
+                                                        <Typography variant="body2" style={{ fontSize: 14, lineHeight: 1.4, fontWeight: 400 }}>
+                                                            {message.isGenerating ? 'Thinking...' : ''}
+                                                        </Typography>
+                                                    )}
+                                                    {message.isGenerating && (
+                                                        <CircularProgress size={16} style={{ marginLeft: 8 }} />
+                                                    )}
+                                                </Paper>
+                                            ) : (
+                                                <div className={classes.assistantContent}>
+                                                    {message.content ? (
+                                                        <div style={{ fontSize: 15, lineHeight: 1.6, fontWeight: 500, color: '#1f2933' }}>
+                                                            <MessageRenderer content={message.content} />
+                                                        </div>
+                                                    ) : (
+                                                        <Typography variant="body2" style={{ fontSize: 15, lineHeight: 1.6, fontWeight: 500, color: '#1f2933' }}>
+                                                            {message.isGenerating ? 'Thinking...' : ''}
+                                                        </Typography>
+                                                    )}
+                                                    {message.isGenerating && (
+                                                        <CircularProgress size={16} style={{ marginLeft: 8 }} />
+                                                    )}
+                                                </div>
+                                            )}
+                                        </div>
+                                    ))}
+                                    {afterMessagesContent}
+                                    <div ref={this.messagesEndRef} />
+                                </div>
+
+                                <div className={classes.chatInput}>
+                                    {beforeInputContent}
+                                    <div className={classes.inputContainer}>
+                                        <TextField
+                                            className={classes.messageInput}
+                                            variant="outlined"
+                                            size="small"
+                                            placeholder="Ask me anything..."
+                                            value={currentMessage}
+                                            onChange={this.handleInputChange}
+                                            onKeyPress={this.handleKeyPress}
+                                            disabled={isGenerating}
+                                            multiline
+                                            maxRows={3}
+                                        />
+                                        <IconButton
+                                            className={classes.sendButton}
+                                            onClick={this.handleSendMessage}
+                                            disabled={!currentMessage.trim() || isGenerating}
+                                            disableRipple
+                                            disableFocusRipple
+                                        >
+                                            <SendArrowIcon className={classes.sendIcon} aria-label="Send" />
+                                        </IconButton>
+                                    </div>
+                                    {this.renderSuggestedQuestions(questions, loadingSuggestions)}
+                                </div>
+                            </>
+                        </Card>
+                    </MobileBottomSheet>
+                </>
+            );
+        }
+
         if (!isChatVisible) {
             return this.renderLauncher();
         }
@@ -1205,7 +1549,7 @@ class AgentChatbox extends React.Component {
         const chatPanel = (
             <Card 
                 ref={this.chatContainerRef}
-                className={`${classes.chatContainer} ${useMobileSheet ? classes.chatContainerFullscreen : ''}`}
+                className={`${classes.chatContainer} ${useMobileSheet ? classes.chatContainerSheet : ''}`}
                 style={{
                     width: useMobileSheet
                         ? '100%'
@@ -1343,24 +1687,6 @@ class AgentChatbox extends React.Component {
                 </>
             </Card>
         );
-
-        if (useMobileSheet) {
-            return (
-                <>
-                    <div
-                        role="presentation"
-                        onClick={this.toggleChat}
-                        style={{
-                            position: 'fixed',
-                            inset: 0,
-                            backgroundColor: 'rgba(16, 24, 40, 0.35)',
-                            zIndex: 1299,
-                        }}
-                    />
-                    {chatPanel}
-                </>
-            );
-        }
 
         return chatPanel;
     }
