@@ -20,8 +20,8 @@
         "dependencies": [
             "aea0f93trigmodel4a-h1"
         ],
-        "title": "What is the midline (D) of the data?",
-        "text": "(Max + Min) / $$2$$",
+        "title": "What is the midline (D) of the data, rounded to the nearest tenth?",
+        "text": "Use the average of the maximum and minimum: $$D=\\frac{69+42.5}{2}$$. $$Round$$ $$to$$ $$the$$ $$nearest$$ $$tenth$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -37,8 +37,8 @@
         "dependencies": [
             "aea0f93trigmodel4a-h1"
         ],
-        "title": "What is the amplitude (A) of the data?",
-        "text": "(Max - Min) / $$2$$",
+        "title": "What is the amplitude (A) of the data, rounded to the nearest tenth?",
+        "text": "Use half the difference between the maximum and minimum: $$A=\\frac{69-42.5}{2}$$. $$Round$$ $$to$$ $$the$$ $$nearest$$ $$tenth$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -48,7 +48,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Determine the period and B value.",
-        "text": "The period is the length of one full cycle. For a function of the form $$y=A\\sin(Bt-C)+D$$, $$the$$ $$period$$ $$is$$ $$2\\pi/B$$.",
+        "text": "One full cycle is $$12$$ months. For $$y=A\\sin(Bt-C)+D$$, $$P=\\frac{2\\pi}{B}$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -82,7 +82,7 @@
             "aea0f93trigmodel4a-h2"
         ],
         "title": "Use the period to find B.",
-        "text": "$$B$$ $$=$$ $$2\\pi$$ / $$\\text{Period}$$",
+        "text": "Using $$P=12$$, $$calculate$$ $$B=\\frac{2\\pi}{P}$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -92,7 +92,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Determine the phase shift (C).",
-        "text": "For a sine function $$y=A\\sin(B(t-t_{shift}))+D$$, $$t_{shift}$$ is the time when the function crosses the midline going upwards. Then $$C$$ $$=$$ $$B$$ $$\\cdot$$ t_{shift}$$.",
+        "text": "For $$y=A\\sin(B(t-t_0))+D$$, $$the$$ $$graph$$ $$crosses$$ $$the$$ $$midline$$ $$going$$ $$upward$$ $$at$$ $$t=t_0$$, $$and$$ $$C=Bt_0$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -103,13 +103,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$5$$"
+            "$$4$$"
         ],
         "dependencies": [
             "aea0f93trigmodel4a-h3"
         ],
-        "title": "Identify the time (t) when the function crosses the midline going upwards.",
-        "text": "The minimum is at $$t=2$$ (February) and the maximum is at $$t=8$$ (August). The midline crossing going up occurs $$\\frac{1}{4}$$ of a period after the minimum.",
+        "title": "Identify the upward midline-crossing time $$t_0$$.",
+        "text": "January corresponds to $$t=1$$ and is modeled as the minimum. The upward midline crossing occurs one-fourth of a 12-month period later, at $$t=4$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -120,13 +120,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$5\\frac{\\pi}{6}$$"
+            "$$\\frac{2\\pi}{3}$$"
         ],
         "dependencies": [
             "aea0f93trigmodel4a-h3"
         ],
-        "title": "Use the phase shift time to find C in the form $$y=A\\sin(Bt-C)+D$$.",
-        "text": "If the function is $$y=A\\sin(B(t-t_{shift}))+D$$, $$then$$ $$C$$ $$=$$ $$B$$ $$\\cdot$$ t_{shift}$$. $$Substitute$$ $$the$$ $$value$$ $$of$$ $$B$$ $$and$$ $$the$$ $$identified$$ $$t_{shift}$$.",
+        "title": "Use the phase-shift time to find C in $$y=A\\sin(Bt-C)+D$$.",
+        "text": "With $$B=\\frac{\\pi}{6}$$ and $$t_0=4$$, $$calculate$$ $$C=Bt_0$$.",
         "variabilization": {},
         "oer": "",
         "license": ""

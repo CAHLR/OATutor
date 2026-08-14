@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Identify the general form",
-        "text": "The problem describes damped harmonic motion. Recall the general form for such a function, typically $$y=ae**{-ct}\\cos(\\omega $$t)$$ or $$y=ae**{-ct}\\sin(\\omega $$t)$$. $$Since$$ $$the$$ $$spring$$ $$is$$ $$compressed$$ $$and$$ $$released$$, $$it$$ $$starts$$ $$at$$ $$maximum$$ $$displacement$$, $$suggesting$$ $$a$$ $$cosine$$ $$function$$.",
+        "text": "Use damped harmonic motion. The natural length, $$y=10$$, $$is$$ $$the$$ $$midline$$. $$Because$$ $$the$$ $$spring$$ $$begins$$ $$compressed$$ $$by$$ $$5$$ $$inches$$, $$use$$ $$a$$ $$negative$$ $$cosine$$ $$term$$ $$with$$ $$amplitude$$ $$5$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -21,7 +21,7 @@
             "aea0f93trigmodel12a-h1"
         ],
         "title": "What is the initial amplitude?",
-        "text": "What is the initial displacement (amplitude) A when the spring is released?",
+        "text": "What is the magnitude of the initial displacement when the spring is released?",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -44,7 +44,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$2\\frac{\\pi}{3}$$"
+            "$$\\frac{2\\pi}{3}$$"
         ],
         "dependencies": [
             "aea0f93trigmodel12a-h2"
@@ -62,7 +62,7 @@
             "aea0f93trigmodel12a-h2"
         ],
         "title": "Determine the damping constant",
-        "text": "The amplitude decreases by 30% every second. This information helps determine the damping constant $$c$$ in the $$e**{-ct}$$ term.",
+        "text": "The amplitude retains 70% each second, so $$0.7**t=e**{\\ln(0.7)t}\\approx e**{-0.357t}$$. $$ \\cup se$$ $$this$$ $$damping$$ $$factor$$ $$with$$ $$the$$ $$midline$$ $$y=10$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
