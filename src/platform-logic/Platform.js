@@ -619,7 +619,9 @@ class Platform extends React.Component {
     this.displayMastery(score);
 
     const allMastered = !Object.keys(context.bktParams).some((skill) => context.bktParams[skill].probMastery <= MASTERY_THRESHOLD);
-    console.log("[NextProblem TEST] allMasteredGlobally:", allMastered, "| chosenProblem:", chosenProblem, "| isPartOfMetaLesson:", this.lesson?.isPartOfMetaLesson, "| hasMetaLesson:", !!this.metaLesson);
+    if (this.lesson?.isPartOfMetaLesson) {
+      console.log("[NextProblem TEST] allMasteredGlobally:", allMastered, "| chosenProblem:", chosenProblem, "| isPartOfMetaLesson:", this.lesson?.isPartOfMetaLesson, "| hasMetaLesson:", !!this.metaLesson);
+    }
 
     if (!Object.keys(context.bktParams).some((skill) => context.bktParams[skill].probMastery <= MASTERY_THRESHOLD)) {
       if (this.lesson?.isPartOfMetaLesson && this.metaLesson) {
