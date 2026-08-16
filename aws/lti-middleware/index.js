@@ -257,6 +257,62 @@ const getToken = (req) => {
   return null;
 };
 
+const loadCoursePlansNoEditor = () => {
+  const coursePlans = require("./coursePlans.json");
+  return coursePlans.filter(({ editor }) => !!!editor);
+};
+
+/**
+ * Runs a Firestore query against the dev submissions bucket first, and falls back
+ * to the prod bucket if the dev bucket comes back empty. This mirrors the
+ * REACT_APP_BUILD_TYPE-driven dev/prod split the frontend already writes with
+ * (see Firebase.js -> getCollectionName()), which the Lambda's reads never accounted for.
+ * @param {(collectionRef: FirebaseFirestore.CollectionReference) => FirebaseFirestore.Query} buildQuery
+ * @return {Promise<FirebaseFirestore.QuerySnapshot>}
+ */
+const queryDevThenProd = async (buildQuery) => {
+  const devResult = await buildQuery(
+    firestoredb.collection("development_problemSubmissions")
+  ).get();
+  if (!devResult.empty) {
+    return devResult;
+  }
+  return await buildQuery(firestoredb.collection("problemSubmissions")).get();
+};
+
+const findLessonOrMetaLessonById = (id, coursePlansNoEditor) => {
+  for (const course of coursePlansNoEditor) {
+    const lessons = course.lessons || [];
+    const metaLessons = course.metaLessons || [];
+    const lesson = lessons.find((entry) => entry.id === id);
+    /* the logic is to first search the regular lessons list for a lesson with matching id because a meta lesson might be stored directly inside course.lessons with type: "meta_lesson"
+    instead of in course.metaLessons
+    Then if we don't find a lesson in regular lessons list, we search the separate metaLessons array for a meta lesson with matching id */
+    if (lesson) { 
+      return { type: lesson.type === "meta_lesson" ? "meta_lesson" : "lesson", lesson, course };
+    }
+
+    const metaLesson = metaLessons.find((entry) => entry.id === id);
+    if (metaLesson) {
+      return { type: "meta_lesson", lesson: metaLesson, course };
+    }
+  }
+  return null; // returns null if no lesson or meta lesson is found with the given id
+};
+
+const getLessonOrMetaLessonLabel = (id, coursePlansNoEditor) => {
+  const found = findLessonOrMetaLessonById(id, coursePlansNoEditor);
+  if (!found) {
+    return null;
+  }
+
+  if (found.type === "meta_lesson") {
+    return found.lesson.name || found.lesson.id;
+  }
+
+  return found.lesson.name.split(" ")[1] + " " + found.lesson.topics;
+};
+
 /**
  * Meant for instructors to assign a lesson to a Canvas assignment
  */
@@ -345,23 +401,22 @@ app.post(
       return;
     }
 
-    // TODO: check if this works properly
-    const coursePlans = require("coursePlans.json");
-    const _coursePlansNoEditor = coursePlans.filter(({ editor }) => !!!editor);
-    let lessonName = null;
+    // TODO: define richer grade/reporting semantics for multi-lesson meta lessons.
+    const _coursePlansNoEditor = loadCoursePlansNoEditor();
+    const linkedLessonEntry = findLessonOrMetaLessonById(
+      linkedLesson,
+      _coursePlansNoEditor
+    );
+    const lessonName = getLessonOrMetaLessonLabel(
+      linkedLesson,
+      _coursePlansNoEditor
+    );
 
-    for (const course of _coursePlansNoEditor) {
-      const { lessons = [] } = course;
-      const idxOfFind = lessons.findIndex(
-        (lesson) => lesson.id === linkedLesson
+    if (linkedLessonEntry?.type === "meta_lesson") {
+      console.log(
+        "[LTI Meta postScore TEST] meta lesson label:",
+        lessonName || linkedLesson
       );
-      if (idxOfFind > -1) {
-        lessonName =
-          lessons[idxOfFind].name.split(" ")[1] +
-          " " +
-          lessons[idxOfFind].topics;
-        break;
-      }
     }
 
     const provider = new lti.Provider(consumer_key, consumer_secret);
@@ -397,16 +452,59 @@ app.post(
     let semester = calculateSemester(Date.now());
     let lmsUserId = user_id;
     let lesson = lessonName;
-    const submissionsRef = firestoredb.collection("problemSubmissions");
-    // const submissionsRef = firestoredb.collection('development_problemSubmissions');
+    const isMetaLesson = linkedLessonEntry?.type === "meta_lesson";
 
-    const queryRef = submissionsRef
-      .where("semester", "==", semester)
-      .where("lms_user_id", "==", lmsUserId)
-      .where("lesson", "==", lesson)
-      .orderBy("time_stamp", "asc")
-      .orderBy("problemID", "asc");
-    const result = await queryRef.get();
+    let actionDocs = [];
+    try {
+      if (isMetaLesson) {
+        // Meta-lessons span multiple real lessons with their own component keys, so we
+        // can't filter by an exact "lesson" field match like standard lessons do (that was
+        // the "God Mode" bug -- it returned every submission the student ever made for the
+        // semester). Instead, pull the semester's submissions for this user and keep only
+        // the ones whose knowledgeComponents overlap with the score breakdown the frontend
+        // just sent us. This intentionally does NOT fuzzy-match on the "lesson" string field
+        // -- lessons with many fine-grained KCs (e.g. multi-KC lessons) don't reliably share
+        // any text with the meta-lesson's display name.
+        // Note: deliberately no .orderBy() here. Firestore can serve a query with only
+        // equality filters (semester, lms_user_id) using its automatic per-field indexes --
+        // no composite index needed. Adding .orderBy() on top of these would require a new
+        // composite index (confirmed: this exact shape with .orderBy() hit a
+        // FAILED_PRECONDITION "requires an index" error), and the actually-tested 1.7 version
+        // never sorted in the query either -- it sorts in JS afterward instead.
+        const componentKeys = Object.keys(components || {});
+        const metaResult = await queryDevThenProd((ref) =>
+          ref
+            .where("semester", "==", semester)
+            .where("lms_user_id", "==", lmsUserId)
+        );
+        actionDocs = metaResult.docs.filter((doc) => {
+          const kcs = doc.data().knowledgeComponents || [];
+          return kcs.some((kc) => componentKeys.includes(kc));
+        });
+        actionDocs.sort((a, b) => (a.data().time_stamp || 0) - (b.data().time_stamp || 0));
+        console.log(
+          "[Meta Lesson postScore] componentKeys:",
+          componentKeys,
+          "| matched docs:",
+          actionDocs.length,
+          "/",
+          metaResult.docs.length
+        );
+      } else {
+        const result = await queryDevThenProd((ref) =>
+          ref
+            .where("semester", "==", semester)
+            .where("lms_user_id", "==", lmsUserId)
+            .where("lesson", "==", lesson)
+            .orderBy("time_stamp", "asc")
+            .orderBy("problemID", "asc")
+        );
+        actionDocs = result.docs;
+      }
+    } catch (err) {
+      console.error("Error fetching student records:", err);
+      actionDocs = [];
+    }
 
     var formattedText = `
         <style>
@@ -430,39 +528,58 @@ app.post(
     var lastStepID = "";
     var lastTime = -1;
 
-    // get time of first action
-    const firstQueryRef = submissionsRef
-      .where("semester", "==", semester)
-      .where("lms_user_id", "==", lmsUserId)
-      .where("lesson", "==", lesson)
-      .orderBy("time_stamp", "asc")
-      .orderBy("problemID", "asc")
-      .limit(1);
-    const firstResult = await firstQueryRef.get();
+    try {
+      // get time of first action
+      if (isMetaLesson) {
+        // actionDocs is already the KC-filtered, chronologically-sorted result set for
+        // this meta lesson, so its first entry IS the first action -- no separate query
+        // needed (and no separate query is possible here: Firestore can't filter by
+        // KC-array membership server-side, so there's no way to combine that with
+        // .limit(1) the way the standard-lesson branch below does. Filtering by the
+        // meta-lesson's own display name, like the standard branch does, would silently
+        // match nothing -- submissions are tagged with the real sub-lesson's name, never
+        // the meta-lesson's name -- which would leave lastTime stuck at -1 for the first
+        // report-table row).
+        lastTime = actionDocs.length > 0 ? actionDocs[0].data()["time_stamp"] : -1;
+      } else {
+        const firstResult = await queryDevThenProd((ref) =>
+          ref
+            .where("semester", "==", semester)
+            .where("lms_user_id", "==", lmsUserId)
+            .where("lesson", "==", lesson)
+            .orderBy("time_stamp", "asc")
+            .orderBy("problemID", "asc")
+            .limit(1)
+        );
+        firstResult.forEach((action) => {
+          let data = action.data();
+          lastTime = data["time_stamp"];
+        });
+      }
 
-    firstResult.forEach((action) => {
-      let data = action.data();
-      lastTime = data["time_stamp"];
-    });
+      // get time of last action before this lesson (across any lesson/meta-lesson)
+      const prevResult = await queryDevThenProd((ref) =>
+        ref
+          .where("lms_user_id", "==", lmsUserId)
+          .where("time_stamp", "<", lastTime)
+          .orderBy("time_stamp", "desc")
+          .limit(1)
+      );
 
-    // get time of last action before this lesson
-    const prevQueryRef = submissionsRef
-      .where("lms_user_id", "==", lmsUserId)
-      .where("time_stamp", "<", lastTime)
-      .orderBy("time_stamp", "desc")
-      .limit(1);
-    const prevResult = await prevQueryRef.get();
-
-    if (prevResult.size == 0) {
+      if (prevResult.size == 0) {
+        lastTime = -1;
+      } else {
+        prevResult.forEach((action) => {
+          let data = action.data();
+          lastTime = data["time_stamp"];
+        });
+      }
+    } catch (err) {
+      console.error("Error fetching first/prev action timestamps:", err);
       lastTime = -1;
-    } else {
-      prevResult.forEach((action) => {
-        let data = action.data();
-        lastTime = data["time_stamp"];
-      });
     }
 
-    result.forEach((action) => {
+    actionDocs.forEach((action) => {
       let data = action.data();
       var problemID = "";
       if (data["problemID"] != lastProblemID) {
@@ -522,8 +639,10 @@ app.post(
             </table>
             `;
 
-    if (result.size == 0) {
-      formattedText = "No student activity found for this lesson.";
+    if (actionDocs.length === 0) {
+      formattedText = isMetaLesson
+        ? "No student activity found for this meta lesson."
+        : "No student activity found for this lesson.";
     }
 
     const text = `

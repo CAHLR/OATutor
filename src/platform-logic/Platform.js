@@ -16,6 +16,12 @@ import {
     ThemeContext,
     MASTERY_THRESHOLD,
 } from "../config/config.js";
+import {
+    resolveMetaLesson,
+    resolveMetaLessonBranchAware,
+    resolveMetaLessonDeterministic,
+    applyMetaLessonLogic,
+} from "../util/metaLessonUtils.js";
 import to from "await-to-js";
 import { toast } from "react-toastify";
 import ToastID from "../util/toastIds";
@@ -59,6 +65,25 @@ let seed = Date.now().toString();
 console.log("Generated seed");
 
 const TOC_DRAWER_OPEN_KEY = "toc:drawer-open:v1";
+
+const findMetaLessonById = (ID) => {
+    for (const course of coursePlans) {
+        if (course.editor) {
+            continue;
+        }
+        const metaLessons = course.metaLessons || [];
+        const foundInMetaLessons = metaLessons.find((metaLesson) => metaLesson.id === ID);
+        if (foundInMetaLessons) {
+            return foundInMetaLessons;
+        }
+        const foundInLessons = (course.lessons || []).find(
+            (lesson) => lesson.id === ID && lesson.type === "meta_lesson"
+        );
+        if (foundInLessons) {
+            return foundInLessons;
+        }
+    }
+};
 
 class Platform extends React.Component {
   static contextType = ThemeContext;
@@ -116,7 +141,7 @@ class Platform extends React.Component {
   componentDidMount() {
     this._isMounted = true;
     if (this.props.lessonID != null) {
-      const lesson = findLessonById(this.props.lessonID);
+      const lesson = findLessonById(this.props.lessonID) || findMetaLessonById(this.props.lessonID);
       this.selectLesson(lesson).then((_) => {});
       const { setLanguage } = this.props;
       if (lesson.courseName === "Matematik 4") {
@@ -140,7 +165,7 @@ class Platform extends React.Component {
     const lessonIdChanged = this.props.lessonID !== prevProps.lessonID && this.props.lessonID != null;
     const movedIntoLesson = !Boolean(prevProps.lessonID) && Boolean(this.props.lessonID);
     if (lessonIdChanged) {
-      const lesson = findLessonById(this.props.lessonID);
+      const lesson = findLessonById(this.props.lessonID) || findMetaLessonById(this.props.lessonID);
       if (lesson) {
         this.selectLesson(lesson).then(() => {});
       }
@@ -201,77 +226,96 @@ class Platform extends React.Component {
     }
   }
 
+  async linkPrivilegedAssignment(lesson) {
+    const context = this.context;
+    let err, response;
+    [err, response] = await to(
+      fetch(`${MIDDLEWARE_URL}/setLesson`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          token: context?.jwt || this.context?.jwt || "",
+          lesson,
+        }),
+      })
+    );
+    if (err || !response) {
+      toast.error(`Error setting lesson for assignment "${this.user.resource_link_title}"`);
+      return false;
+    }
+    if (response.status !== 200) {
+      switch (response.status) {
+        case 400: {
+          const responseText = await response.text();
+          let [message, ...addInfo] = responseText.split("|");
+          if (Array.isArray(addInfo) && addInfo[0].length > 1) {
+            addInfo = JSON.parse(addInfo[0]);
+          }
+          switch (message) {
+            case "resource_already_linked":
+              toast.error(`${addInfo.from} has already been linked to lesson ${addInfo.to}. Please create a new assignment.`, {
+                toastId: ToastID.set_lesson_duplicate_error.toString(),
+              });
+              return false;
+            default:
+              toast.error(`Error: ${responseText}`, {
+                toastId: ToastID.expired_session.toString(),
+                closeOnClick: true,
+              });
+              return false;
+          }
+        }
+        case 401:
+          toast.error(`Your session has either expired or been invalidated, please reload the page to try again.`, {
+            toastId: ToastID.expired_session.toString(),
+          });
+          this.props.history.push("/session-expired");
+          return false;
+        case 403:
+          toast.error(`You are not authorized to make this action. (Are you an instructor?)`, {
+            toastId: ToastID.not_authorized.toString(),
+          });
+          return false;
+        default:
+          toast.error(
+            `Error setting lesson for assignment "${this.user.resource_link_title}." If reloading does not work, please contact us.`,
+            {
+              toastId: ToastID.set_lesson_unknown_error.toString(),
+            }
+          );
+          return false;
+      }
+    }
+    const lessonLabel = lesson.topics || lesson.name || lesson.id;
+    toast.success(`Successfully linked assignment "${this.user.resource_link_title}" to lesson ${lesson.id} "${lessonLabel}"`, {
+      toastId: ToastID.set_lesson_success.toString(),
+    });
+    const responseText = await response.text();
+    let [, ...addInfo] = responseText.split("|");
+    this.props.history.push(`/assignment-already-linked?to=${addInfo.to}`);
+    return true;
+  }
+
   async selectLesson(lesson, updateServer = true) {
+    if (lesson && lesson.type === "meta_lesson") {
+      if (this.isPrivileged && updateServer) {
+        if (!this._isMounted) {
+          return;
+        }
+        await this.linkPrivilegedAssignment(lesson);
+        return;
+      }
+      return this.selectMetaLesson(lesson, updateServer);
+    }
+
     const context = this.context;
     if (!this._isMounted) return;
     if (this.isPrivileged) {
-      let err, response;
-      [err, response] = await to(
-        fetch(`${MIDDLEWARE_URL}/setLesson`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            token: context?.jwt || this.context?.jwt || "",
-            lesson,
-          }),
-        })
-      );
-      if (err || !response) {
-        toast.error(`Error setting lesson for assignment "${this.user.resource_link_title}"`);
+      const linked = await this.linkPrivilegedAssignment(lesson);
+      if (!linked) {
         return;
-      } else {
-        if (response.status !== 200) {
-          switch (response.status) {
-            case 400: {
-              const responseText = await response.text();
-              let [message, ...addInfo] = responseText.split("|");
-              if (Array.isArray(addInfo) && addInfo[0].length > 1) {
-                addInfo = JSON.parse(addInfo[0]);
-              }
-              switch (message) {
-                case "resource_already_linked":
-                  toast.error(`${addInfo.from} has already been linked to lesson ${addInfo.to}. Please create a new assignment.`, {
-                    toastId: ToastID.set_lesson_duplicate_error.toString(),
-                  });
-                  return;
-                default:
-                  toast.error(`Error: ${responseText}`, {
-                    toastId: ToastID.expired_session.toString(),
-                    closeOnClick: true,
-                  });
-                  return;
-              }
-            }
-            case 401:
-              toast.error(`Your session has either expired or been invalidated, please reload the page to try again.`, {
-                toastId: ToastID.expired_session.toString(),
-              });
-              this.props.history.push("/session-expired");
-              return;
-            case 403:
-              toast.error(`You are not authorized to make this action. (Are you an instructor?)`, {
-                toastId: ToastID.not_authorized.toString(),
-              });
-              return;
-            default:
-              toast.error(
-                `Error setting lesson for assignment "${this.user.resource_link_title}." If reloading does not work, please contact us.`,
-                {
-                  toastId: ToastID.set_lesson_unknown_error.toString(),
-                }
-              );
-              return;
-          }
-        } else {
-          toast.success(`Successfully linked assignment "${this.user.resource_link_title}" to lesson ${lesson.id} "${lesson.topics}"`, {
-            toastId: ToastID.set_lesson_success.toString(),
-          });
-          const responseText = await response.text();
-          let [, ...addInfo] = responseText.split("|");
-          this.props.history.push(`/assignment-already-linked?to=${addInfo.to}`);
-        }
       }
     }
 
@@ -290,6 +334,236 @@ class Platform extends React.Component {
     this.setState({
       currProblem: this._nextProblem(this.context ? this.context : context),
     });
+  }
+
+  async selectMetaLesson(metaLesson, updateServer = true) {
+    const order = metaLesson.order || "sequence";
+    const choose = metaLesson.choose || "all";
+
+    const stableUserId = this.user?.user_id;
+    const useDeterministicAssignment = Boolean(stableUserId);
+
+    const resolvedLessonIds = useDeterministicAssignment
+      ? resolveMetaLessonDeterministic(metaLesson, stableUserId, findLessonById, findMetaLessonById)
+      : resolveMetaLessonBranchAware(metaLesson, findLessonById, findMetaLessonById);
+
+    if (resolvedLessonIds.length === 0) {
+      console.error("Meta lesson contains no valid lessons:", metaLesson);
+      toast.error("Meta lesson contains no valid lessons.");
+      this.props.history.push("/");
+      return;
+    }
+
+    this.metaLesson = metaLesson;
+    this.completedMetaLessonLessons = new Set();
+
+    const META_LESSON_PATH_KEY = `meta_lesson_path_${metaLesson.id}`;
+    const { getByKey, setByKey } = this.context.browserStorage;
+
+    const loadMetaLessonProgress = async () => {
+      return await getByKey(LESSON_PROGRESS_STORAGE_KEY(metaLesson.id)).catch(() => {});
+    };
+
+    const loadSavedMetaLessonPath = async () => {
+      return await getByKey(META_LESSON_PATH_KEY).catch(() => {});
+    };
+
+    const [, prevMetaLessonProgress, savedPathRaw] = await Promise.all([
+      this.props.loadBktProgress(),
+      loadMetaLessonProgress(),
+      loadSavedMetaLessonPath(),
+    ]);
+
+    if (prevMetaLessonProgress) {
+      this.completedMetaLessonLessons = new Set(prevMetaLessonProgress);
+    }
+
+    const getValidRandomChoose1Paths = (targetMetaLesson) => {
+      const validPaths = [];
+      const childLessonIds = Array.isArray(targetMetaLesson.lessons) ? targetMetaLesson.lessons : [];
+
+      for (const childId of childLessonIds) {
+        const lesson = findLessonById(childId);
+        if (lesson && !lesson.type) {
+          validPaths.push([childId]);
+          continue;
+        }
+
+        const nestedMetaLesson = findMetaLessonById(childId);
+        if (nestedMetaLesson && nestedMetaLesson.type === "meta_lesson") {
+          const nestedPath = resolveMetaLesson(nestedMetaLesson, findLessonById, findMetaLessonById);
+          if (nestedPath.length > 0) {
+            validPaths.push(nestedPath);
+          }
+        }
+      }
+
+      return validPaths;
+    };
+
+    const isValidRandomChoose1Path = (path, targetMetaLesson) => {
+      if (!Array.isArray(path) || path.length === 0) {
+        return false;
+      }
+      if (!path.every((id) => typeof id === "string" && findLessonById(id))) {
+        return false;
+      }
+
+      const validPaths = getValidRandomChoose1Paths(targetMetaLesson);
+      return validPaths.some(
+        (validPath) =>
+          validPath.length === path.length &&
+          validPath.every((id, index) => id === path[index])
+      );
+    };
+
+    const isValidSequenceAllPath = (path, resolvedIds) => {
+      if (!Array.isArray(path) || path.length !== resolvedIds.length) {
+        return false;
+      }
+      const sortedPath = [...path].sort();
+      const sortedResolved = [...resolvedIds].sort();
+      const sameElements = sortedPath.every((id, i) => id === sortedResolved[i]);
+      const allExist = path.every((id) => findLessonById(id));
+      return sameElements && allExist;
+    };
+
+    let lessonsToShow;
+
+    if (order === "random" && choose === "all") {
+      lessonsToShow = applyMetaLessonLogic(resolvedLessonIds, order, choose);
+    } else if (order === "random" && choose === "1") {
+      if (useDeterministicAssignment) {
+        // The branch is a pure function of the student's stable LMS id, so it
+        // recomputes identically on every launch -- persisting it adds nothing.
+        // Skipping the saved path also avoids a real bug: META_LESSON_PATH_KEY is
+        // not user-scoped, so on a shared browser (or after a Canvas "Reset
+        // Student") a previous user's saved branch would override the correct
+        // deterministic assignment for the next user.
+        lessonsToShow = [...resolvedLessonIds];
+      } else if (isValidRandomChoose1Path(savedPathRaw, metaLesson)) {
+        lessonsToShow = [...savedPathRaw];
+      } else {
+        lessonsToShow = [...resolvedLessonIds];
+        await setByKey(META_LESSON_PATH_KEY, lessonsToShow).catch(() => {});
+      }
+    } else if (order === "sequence" && choose === "all") {
+      if (isValidSequenceAllPath(savedPathRaw, resolvedLessonIds)) {
+        lessonsToShow = [...savedPathRaw];
+      } else {
+        lessonsToShow = applyMetaLessonLogic(resolvedLessonIds, order, choose);
+        await setByKey(META_LESSON_PATH_KEY, lessonsToShow).catch(() => {});
+      }
+    } else {
+      lessonsToShow = applyMetaLessonLogic(resolvedLessonIds, order, choose);
+    }
+
+    console.log("[selectMetaLesson TEST] rootMetaLessonId:", metaLesson.id);
+    console.log("[selectMetaLesson TEST] order:", order);
+    console.log("[selectMetaLesson TEST] choose:", choose);
+    console.log("[selectMetaLesson TEST] resolvedLessonIds:", resolvedLessonIds);
+    console.log("[selectMetaLesson TEST] finalSelectedLessonPath:", lessonsToShow);
+
+    this.metaLessonLessons = lessonsToShow;
+    this.currentMetaLessonIndex = 0;
+
+    if (this.completedMetaLessonLessons.size > 0) {
+      for (let i = 0; i < this.metaLessonLessons.length; i++) {
+        if (!this.completedMetaLessonLessons.has(this.metaLessonLessons[i])) {
+          this.currentMetaLessonIndex = i;
+          break;
+        }
+      }
+    }
+
+    if (this.currentMetaLessonIndex < this.metaLessonLessons.length) {
+      const firstLessonId = this.metaLessonLessons[this.currentMetaLessonIndex];
+      const firstLesson = findLessonById(firstLessonId);
+      console.log("[FindLesson TEST] firstLessonId:", firstLessonId, "| firstLesson found:", !!firstLesson, "| firstLesson:", firstLesson);
+      if (firstLesson) {
+        return this.selectLesson(
+          {
+            ...firstLesson,
+            isPartOfMetaLesson: true,
+            metaLessonId: metaLesson.id,
+            metaLessonName: metaLesson.name,
+          },
+          updateServer
+        );
+      }
+    }
+
+    this.setState({ status: "graduated" });
+  }
+
+  hasRemainingMetaLessonLessons() {
+    return (
+      this.metaLesson &&
+      this.metaLessonLessons.length > 0 &&
+      this.currentMetaLessonIndex < this.metaLessonLessons.length - 1
+    );
+  }
+
+  handleMetaSubLessonComplete = async () => {
+    const currentLessonId = this.metaLessonLessons[this.currentMetaLessonIndex];
+    this.completedMetaLessonLessons.add(currentLessonId);
+    const { setByKey } = this.context.browserStorage;
+    await setByKey(
+      LESSON_PROGRESS_STORAGE_KEY(this.metaLesson.id),
+      Array.from(this.completedMetaLessonLessons)
+    ).catch(() => {});
+
+    if (this.hasRemainingMetaLessonLessons()) {
+      this.setState({ status: "metaLessonProgress", currProblem: null });
+      return;
+    }
+
+    this.setState({ status: "graduated", currProblem: null });
+    this.metaLesson = null;
+    this.metaLessonLessons = [];
+    this.currentMetaLessonIndex = -1;
+    this.completedMetaLessonLessons = new Set();
+  };
+
+  continueMetaLesson = async () => {
+    await this.nextMetaLessonLesson();
+  };
+
+  async nextMetaLessonLesson() {
+    if (!this.metaLesson || this.metaLessonLessons.length === 0) return;
+
+    this.currentMetaLessonIndex++;
+
+    while (this.currentMetaLessonIndex < this.metaLessonLessons.length) {
+      const nextLessonId = this.metaLessonLessons[this.currentMetaLessonIndex];
+      const nextLesson = findLessonById(nextLessonId);
+
+      if (nextLesson) {
+        this.completedProbs = new Set();
+
+        await this.selectLesson(
+          {
+            ...nextLesson,
+            isPartOfMetaLesson: true,
+            metaLessonId: this.metaLesson.id,
+            metaLessonName: this.metaLesson.name,
+          },
+          false
+        );
+
+        if (this._isMounted) {
+          this.setState({ status: "learning" });
+        }
+        return;
+      }
+      this.currentMetaLessonIndex++;
+    }
+
+    this.setState({ status: "graduated", currProblem: null });
+    this.metaLesson = null;
+    this.metaLessonLessons = [];
+    this.currentMetaLessonIndex = -1;
+    this.completedMetaLessonLessons = new Set();
   }
 
   selectCourse = (course, context) => {
@@ -344,7 +618,16 @@ class Platform extends React.Component {
     score /= objectives.length;
     this.displayMastery(score);
 
+    const allMastered = !Object.keys(context.bktParams).some((skill) => context.bktParams[skill].probMastery <= MASTERY_THRESHOLD);
+    if (this.lesson?.isPartOfMetaLesson) {
+      console.log("[NextProblem TEST] allMasteredGlobally:", allMastered, "| chosenProblem:", chosenProblem, "| isPartOfMetaLesson:", this.lesson?.isPartOfMetaLesson, "| hasMetaLesson:", !!this.metaLesson);
+    }
+
     if (!Object.keys(context.bktParams).some((skill) => context.bktParams[skill].probMastery <= MASTERY_THRESHOLD)) {
+      if (this.lesson?.isPartOfMetaLesson && this.metaLesson) {
+        console.log("[NextProblem TEST] EXIT: meta-lesson guard, no status set");
+        return null;
+      }
       this.setState({ status: "graduated" });
       return null;
     } else if (chosenProblem == null) {
@@ -402,10 +685,16 @@ class Platform extends React.Component {
             console.debug("Lesson complete; showing completion screen");
             this.setState({ status: "completed" });
         } else {
-            this._nextProblem(context);
+            const nextProblem = this._nextProblem(context);
+            if (!nextProblem && this.lesson?.isPartOfMetaLesson && this.metaLesson) {
+              await this.handleMetaSubLessonComplete();
+            }
         }
     } else {
-        this._nextProblem(context);
+        const nextProblem = this._nextProblem(context);
+        if (!nextProblem && this.lesson?.isPartOfMetaLesson && this.metaLesson) {
+          await this.handleMetaSubLessonComplete();
+        }
     }
 
 
@@ -415,6 +704,9 @@ class Platform extends React.Component {
   displayMastery = (mastery) => {
     this.setState({ mastery: mastery });
     if (!this.lesson?.enableCompletionMode && mastery >= MASTERY_THRESHOLD) {
+      if (this.lesson?.isPartOfMetaLesson && this.metaLesson) {
+        return;
+      }
       // toast.success("You've successfully completed this assignment!", {
       //   toastId: ToastID.successfully_completed_lesson.toString(),
       // });
@@ -579,6 +871,195 @@ class Platform extends React.Component {
     const total = problems.length;
     const percent = total > 0 ? Math.round((completed / total) * 100) : 0;
     return { completed, total, percent };
+  };
+
+  isMetaLessonSidebarMode() {
+    return Boolean(
+      this.metaLesson &&
+      this.metaLessonLessons.length > 0 &&
+      (this.lesson?.isPartOfMetaLesson ||
+        findMetaLessonById(this.props.lessonID)?.id === this.metaLesson.id ||
+        this.state.status === "metaLessonProgress")
+    );
+  }
+
+  renderMetaLessonSidebar() {
+    const metaName = this.metaLesson?.name || "Meta lesson";
+    const totalCount = this.metaLessonLessons.length;
+    const currentIndex = this.currentMetaLessonIndex;
+    // Match the width of the problem column below (Problem.js renders the problem in
+    // a Grid item of md={drawerOpen ? 8 : 7} out of 12, with the hints panel beside it),
+    // so this header doesn't stretch the full container width and look detached.
+    const isMobileWidthView = isMobileWidth(this.props.width);
+    const headerWidth = isMobileWidthView ? "100%" : `${((this.state.drawerOpen ? 8 : 7) / 12) * 100}%`;
+    // Progress counts are intentionally hidden from students during the study.
+    // The per-lesson chips are also hidden when the resolved path is a single
+    // lesson (as in the Data 100 A/B meta-lessons), where they add no information.
+    const showLessonChips = totalCount > 1;
+
+    return (
+      <div
+        style={{
+          backgroundColor: "#FFFFFF",
+          border: "1px solid #EBEFF2",
+          borderRadius: 8,
+          padding: "12px 16px",
+          marginBottom: 16,
+          width: headerWidth,
+          boxSizing: "border-box",
+        }}
+      >
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 8 }}>
+          <div style={{ fontWeight: 600, fontSize: 15 }}>{metaName}</div>
+        </div>
+        <div style={{ display: showLessonChips ? "flex" : "none", gap: 8, marginTop: 10, flexWrap: "wrap" }}>
+          {this.metaLessonLessons.map((lessonId, index) => {
+            const lesson = findLessonById(lessonId);
+            const label = lesson?.name || lesson?.topics || (lesson ? lesson.id : null) || "Unavailable lesson";
+            const isCompleted = this.completedMetaLessonLessons.has(lessonId);
+            const isCurrent = index === currentIndex;
+            const borderColor = isCurrent ? "#0B9B8A" : isCompleted ? "#0B9B8A" : "#EBEFF2";
+            const backgroundColor = isCurrent ? "#F0FAF8" : "#FFFFFF";
+            const opacity = isCompleted && !isCurrent ? 0.75 : 1;
+
+            return (
+              <div
+                key={lessonId}
+                style={{
+                  backgroundColor,
+                  padding: "6px 12px",
+                  borderRadius: 16,
+                  border: `1.5px solid ${borderColor}`,
+                  opacity,
+                  fontSize: 13,
+                  fontWeight: isCurrent ? 600 : 400,
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 6,
+                }}
+              >
+                {label}
+                {isCompleted && <span style={{ color: "#0B9B8A", fontSize: 12 }}>&#10003;</span>}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+
+  renderMetaLessonProgressScreen() {
+    const completedCount = this.completedMetaLessonLessons.size;
+    const totalCount = this.metaLessonLessons.length;
+    const metaName = this.metaLesson?.name || "Meta lesson";
+
+    return (
+      <div
+        style={{
+          minHeight: "60vh",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          textAlign: "center",
+        }}
+      >
+        <h1>Sub-lesson complete</h1>
+        <p>{metaName}</p>
+        <p>{completedCount} of {totalCount} lessons completed</p>
+        <div style={{ display: "flex", gap: 20, marginTop: 36 }}>
+          <Button variant="contained" color="primary" onClick={this.continueMetaLesson}>
+            Continue to Next Lesson
+          </Button>
+          <Button variant="outlined" color="primary" onClick={() => this.props.history.push("/")}>
+            Back to Home
+          </Button>
+        </div>
+      </div>
+    );
+  }
+
+  isMetaLessonGradingContext() {
+    return Boolean(
+      this.lesson?.isPartOfMetaLesson &&
+        this.metaLesson &&
+        Array.isArray(this.metaLessonLessons) &&
+        this.metaLessonLessons.length > 0
+    );
+  }
+
+  getMetaLessonMasteryScore(context, fallbackScore) {
+    if (!this.isMetaLessonGradingContext()) {
+      return fallbackScore;
+    }
+
+    const objectiveKeys = new Set();
+    for (const subLessonId of this.metaLessonLessons) {
+      const lesson = findLessonById(subLessonId);
+      if (!lesson?.learningObjectives) {
+        continue;
+      }
+      Object.keys(lesson.learningObjectives).forEach((kc) => objectiveKeys.add(kc));
+    }
+
+    if (objectiveKeys.size === 0) {
+      return fallbackScore;
+    }
+
+    let sum = 0;
+    let count = 0;
+    for (const kc of objectiveKeys) {
+      const probMastery = context?.bktParams?.[kc]?.probMastery;
+      if (typeof probMastery === "number") {
+        sum += probMastery;
+        count += 1;
+      }
+    }
+
+    if (count === 0) {
+      return fallbackScore;
+    }
+
+    return sum / count;
+  }
+
+  getMetaLessonComponents(context, fallbackComponents) {
+    if (!this.isMetaLessonGradingContext()) {
+      return fallbackComponents;
+    }
+
+    const objectiveKeys = new Set();
+    for (const subLessonId of this.metaLessonLessons) {
+      const lesson = findLessonById(subLessonId);
+      if (!lesson?.learningObjectives) {
+        continue;
+      }
+      Object.keys(lesson.learningObjectives).forEach((kc) => objectiveKeys.add(kc));
+    }
+
+    const components = {};
+    for (const kc of objectiveKeys) {
+      const probMastery = context?.bktParams?.[kc]?.probMastery;
+      if (typeof probMastery === "number") {
+        components[kc] = probMastery;
+      }
+    }
+
+    if (Object.keys(components).length === 0) {
+      return fallbackComponents;
+    }
+
+    return components;
+  }
+
+  getMetaLessonAdjustedScore = (mastery, components) => {
+    if (!this.isMetaLessonGradingContext()) {
+      return { mastery, components };
+    }
+    return {
+      mastery: this.getMetaLessonMasteryScore(this.context, mastery),
+      components: this.getMetaLessonComponents(this.context, components),
+    };
   };
 
   render() {
@@ -1102,6 +1583,11 @@ class Platform extends React.Component {
             )}
 
 
+            {this.isMetaLessonSidebarMode() &&
+            (this.state.status === "learning" || this.state.status === "metaLessonProgress") ? (
+              <div style={CONTAINER_STYLE}>{this.renderMetaLessonSidebar()}</div>
+            ) : null}
+
             {this.state.status === "courseSelection" ? (
               <LessonSelectionWrapper
                 selectLesson={this.selectLesson}
@@ -1132,6 +1618,7 @@ class Platform extends React.Component {
                     seed={this.state.seed}
                     lessonID={this.props.lessonID}
                     displayMastery={this.displayMastery}
+                    getMetaLessonAdjustedScore={this.getMetaLessonAdjustedScore}
                     drawerOpen={showToc && this.state.drawerOpen}
                     showFeedback={this.state.showFeedback}
                     feedback={this.state.feedback}
@@ -1141,6 +1628,11 @@ class Platform extends React.Component {
                   />
                 </div>
               </ErrorBoundary>
+            ) : (
+              ""
+            )}
+            {this.state.status === "metaLessonProgress" ? (
+              this.renderMetaLessonProgressScreen()
             ) : (
               ""
             )}
