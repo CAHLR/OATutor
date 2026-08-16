@@ -929,6 +929,7 @@ class ProblemCard extends React.Component {
                                     <center>
                                         <IconButton
                                             aria-label="hints"
+                                            style={{ transform: "translateY(8px)" }}
                                             aria-expanded={this.state.activeHintType === "normal"}
                                             onClick={this.toggleHints}
                                             title={
