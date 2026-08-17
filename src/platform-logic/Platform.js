@@ -1670,31 +1670,33 @@ class Platform extends React.Component {
                 />
                 <h1>Well done! You've completed the lesson!</h1>
                 <p>You've taken a big step forward in mastering this topic. Keep up with the great work!</p>
-                <div style={{ display: "flex", gap: 20, marginTop: 36 }}>
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    onClick={() => {
-                      const curr = findLessonById(this.props.lessonID);
-                      const course = coursePlans.find((c) => c.courseName === curr?.courseName);
-                      const lessons = course?.lessons || [];
-                      const idx = lessons.findIndex((l) => l.id === curr?.id);
-                      const nextLesson = idx >= 0 ? lessons[idx + 1] : null;
-                      if (nextLesson?.id) {
-                        this.props.history.push(`/lessons/${nextLesson.id}`);
-                      }
-                    }}
-                  >
-                    Next Lesson
-                  </Button>
-                  <Button
-                    variant="outlined"
-                    color="primary"
-                    onClick={() => this.props.history.push("/")}
-                  >
-                    Back to Home
-                  </Button>
-                </div>
+                {!this.isFromCanvas && (
+                  <div style={{ display: "flex", gap: 20, marginTop: 36 }}>
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      onClick={() => {
+                        const curr = findLessonById(this.props.lessonID);
+                        const course = coursePlans.find((c) => c.courseName === curr?.courseName);
+                        const lessons = course?.lessons || [];
+                        const idx = lessons.findIndex((l) => l.id === curr?.id);
+                        const nextLesson = idx >= 0 ? lessons[idx + 1] : null;
+                        if (nextLesson?.id) {
+                          this.props.history.push(`/lessons/${nextLesson.id}`);
+                        }
+                      }}
+                    >
+                      Next Lesson
+                    </Button>
+                    <Button
+                      variant="outlined"
+                      color="primary"
+                      onClick={() => this.props.history.push("/")}
+                    >
+                      Back to Home
+                    </Button>
+                  </div>
+                )}
               </div>
               
             ) : (
