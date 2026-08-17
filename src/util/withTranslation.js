@@ -6,12 +6,12 @@ const withTranslation = (WrappedComponent) => {
     const { translate, setLanguage, enterCourse, exitCourse, language } = useTranslation();
     return (
       <WrappedComponent
+        {...props}
         translate={translate}
         setLanguage={setLanguage}
         enterCourse={enterCourse}
         exitCourse={exitCourse}
         language={language}
-        {...props}
       />
     );
   };

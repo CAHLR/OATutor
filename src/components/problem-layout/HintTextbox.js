@@ -152,7 +152,7 @@ class HintTextbox extends React.Component {
                             </Button>
                         </center>
                     </Grid>
-                    <Grid item xs={4} sm={3} md={1}>
+                    <Grid item xs={4} sm={3} md={1} style={{ marginLeft: "16px" }}>
                         <div style={{
                             display: "flex",
                             flexDirection: "row",
