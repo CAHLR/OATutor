@@ -27,6 +27,7 @@ import {
     MIDDLEWARE_URL,
     SHOW_NOT_CANVAS_WARNING,
     ThemeContext,
+    getNormalizedMastery,
 } from "../../config/config.js";
 import { toast } from "react-toastify";
 import to from "await-to-js";
@@ -749,7 +750,7 @@ class Problem extends React.Component {
             let score = objectives.reduce((x, y) => {
                 return x + this.bktParams[y].probMastery;
             });
-            score /= objectives.length - 1;
+            score = getNormalizedMastery(score / (objectives.length - 1), lesson);
             //console.log(this.context.studentName + " " + score);
             this.props.displayMastery(score);
 
