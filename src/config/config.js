@@ -110,7 +110,14 @@ const DYNAMIC_HINT_TEMPLATE =
 
 const TTS_API_URL = process.env.REACT_APP_TTS_AWS_ENDPOINT;
 
-const MASTERY_THRESHOLD = 0.95;
+const MASTERY_THRESHOLD = 0.85;
+
+const getNormalizedMastery = (mastery, lesson) => {
+    const threshold = Object.values(lesson?.learningObjectives || {}).find(
+        (value) => typeof value === "number" && value > 0
+    ) || MASTERY_THRESHOLD;
+    return Math.min(Math.max(mastery / threshold, 0), 1);
+};
 // const coursePlans = courses.sort((a, b) => a.courseName.localeCompare(b.courseName));
 const coursePlans = courses;
 const _coursePlansNoEditor = coursePlans.filter(({ editor }) => !!!editor);
@@ -163,6 +170,7 @@ export {
     DYNAMIC_HINT_URL,
     DYNAMIC_HINT_TEMPLATE,
     MASTERY_THRESHOLD,
+    getNormalizedMastery,
     USER_ID_STORAGE_KEY,
     PROGRESS_STORAGE_KEY,
     SITE_NAME,

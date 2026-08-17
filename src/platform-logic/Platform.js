@@ -15,7 +15,7 @@ import {
     SITE_NAME,
     ThemeContext,
     MASTERY_THRESHOLD,
-    DEFAULT_LANGUAGE,
+    getNormalizedMastery,
 } from "../config/config.js";
 import {
     resolveMetaLesson,
@@ -646,20 +646,20 @@ class Platform extends React.Component {
     let score = objectives.reduce((x, y) => {
       return x + context.bktParams[y].probMastery;
     }, 0);
-    score /= objectives.length;
+    score = getNormalizedMastery(score / objectives.length, this.lesson);
     this.displayMastery(score);
 
-    const allMastered = !Object.keys(context.bktParams).some((skill) => context.bktParams[skill].probMastery <= MASTERY_THRESHOLD);
+    const allMastered = score >= 1;
     if (this.lesson?.isPartOfMetaLesson) {
-      console.log("[NextProblem TEST] allMasteredGlobally:", allMastered, "| chosenProblem:", chosenProblem, "| isPartOfMetaLesson:", this.lesson?.isPartOfMetaLesson, "| hasMetaLesson:", !!this.metaLesson);
+      console.log("[NextProblem TEST] allMastered:", allMastered, "| chosenProblem:", chosenProblem, "| isPartOfMetaLesson:", this.lesson?.isPartOfMetaLesson, "| hasMetaLesson:", !!this.metaLesson);
     }
 
-    if (!Object.keys(context.bktParams).some((skill) => context.bktParams[skill].probMastery <= MASTERY_THRESHOLD)) {
+    if (allMastered) {
       if (this.lesson?.isPartOfMetaLesson && this.metaLesson) {
         console.log("[NextProblem TEST] EXIT: meta-lesson guard, no status set");
         return null;
       }
-      this.setState({ status: "graduated" });
+      this.setState({ status: "completed" });
       return null;
     } else if (chosenProblem == null) {
       if (this.lesson && !this.lesson.allowRecycle) {
@@ -734,7 +734,7 @@ class Platform extends React.Component {
 
   displayMastery = (mastery) => {
     this.setState({ mastery: mastery });
-    if (!this.lesson?.enableCompletionMode && mastery >= MASTERY_THRESHOLD) {
+    if (!this.lesson?.enableCompletionMode && mastery >= 1) {
       if (this.lesson?.isPartOfMetaLesson && this.metaLesson) {
         return;
       }
@@ -1704,31 +1704,33 @@ class Platform extends React.Component {
                 />
                 <h1>Well done! You've completed the lesson!</h1>
                 <p>You've taken a big step forward in mastering this topic. Keep up with the great work!</p>
-                <div style={{ display: "flex", gap: 20, marginTop: 36 }}>
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    onClick={() => {
-                      const curr = findLessonById(this.props.lessonID);
-                      const course = coursePlans.find((c) => c.courseName === curr?.courseName);
-                      const lessons = course?.lessons || [];
-                      const idx = lessons.findIndex((l) => l.id === curr?.id);
-                      const nextLesson = idx >= 0 ? lessons[idx + 1] : null;
-                      if (nextLesson?.id) {
-                        this.props.history.push(`/lessons/${nextLesson.id}`);
-                      }
-                    }}
-                  >
-                    Next Lesson
-                  </Button>
-                  <Button
-                    variant="outlined"
-                    color="primary"
-                    onClick={() => this.props.history.push("/")}
-                  >
-                    Back to Home
-                  </Button>
-                </div>
+                {!this.isFromCanvas && (
+                  <div style={{ display: "flex", gap: 20, marginTop: 36 }}>
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      onClick={() => {
+                        const curr = findLessonById(this.props.lessonID);
+                        const course = coursePlans.find((c) => c.courseName === curr?.courseName);
+                        const lessons = course?.lessons || [];
+                        const idx = lessons.findIndex((l) => l.id === curr?.id);
+                        const nextLesson = idx >= 0 ? lessons[idx + 1] : null;
+                        if (nextLesson?.id) {
+                          this.props.history.push(`/lessons/${nextLesson.id}`);
+                        }
+                      }}
+                    >
+                      Next Lesson
+                    </Button>
+                    <Button
+                      variant="outlined"
+                      color="primary"
+                      onClick={() => this.props.history.push("/")}
+                    >
+                      Back to Home
+                    </Button>
+                  </div>
+                )}
               </div>
               
             ) : (
