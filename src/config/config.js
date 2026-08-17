@@ -149,6 +149,7 @@ const _lessonPlansNoEditor = lessonPlans.filter(
 );
 
 const findLessonById = (ID) => {
+    if (ID == null) return undefined;
     return _lessonPlansNoEditor.find(
         (lessonPlan) => lessonPlan.id === ID || lessonPlan.metaId === ID
     );

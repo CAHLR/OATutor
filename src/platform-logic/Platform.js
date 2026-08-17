@@ -32,6 +32,9 @@ import { cleanArray } from "../util/cleanObject";
 import ErrorBoundary from "@components/ErrorBoundary";
 import { CONTENT_SOURCE } from "@common/global-config";
 import withTranslation from "../util/withTranslation";
+
+import { LocalizationConsumer } from "../util/LocalizationContext.js";
+
 import confetti from "canvas-confetti";
 
 import userIcon from "../assets/UserThumb.svg";
@@ -1780,4 +1783,19 @@ class Platform extends React.Component {
 //         )}
 //     </LocalizationConsumer>
 // )));
-export default withWidth()(withStyles(styles)(withRouter(withTranslation(Platform))));
+// export default withWidth()(withStyles(styles)(withRouter(withTranslation(Platform))));
+
+const StyledPlatform = withWidth()(withStyles(styles)(withRouter(withTranslation(Platform))));
+
+export default (props) => (
+    <LocalizationConsumer>
+        {({ language, enterCourse, exitCourse }) => (
+            <StyledPlatform
+                {...props}
+                language={language}
+                enterCourse={enterCourse}
+                exitCourse={exitCourse}
+            />
+        )}
+    </LocalizationConsumer>
+);
