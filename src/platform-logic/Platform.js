@@ -777,9 +777,11 @@ class Platform extends React.Component {
                         gap: "8xpx",
                       }}
                     >
+                      {!this.isFromCanvas && (
                       <IconButton onClick={this.handleHierarchyBack} aria-label="Back" style={{ padding: 2 }}>
                         <img src={leftArrow} alt="Back Arrow" />
                       </IconButton>
+                      )}
 
                       <div style={{ fontWeight: 600 }}> {this.state.selectedCourse.courseName} </div>
                     </div>
@@ -792,9 +794,11 @@ class Platform extends React.Component {
                         gap: "8px",
                       }}
                     >
+                      {!this.isFromCanvas && (
                       <IconButton onClick={this.handleHierarchyBack} aria-label="Back" style={{ padding: 2 }}>
                         <img src={leftArrow} alt="Back Arrow" />
                       </IconButton>
+                      )}
 
                       <div style={{ fontWeight: 600 }}> {findLessonById(this.props.lessonID).courseName} </div>
                     </div>
