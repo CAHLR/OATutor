@@ -156,12 +156,12 @@ class HintTextbox extends React.Component {
                         <div style={{
                             display: "flex",
                             flexDirection: "row",
-                            alignContent: "center",
-                            justifyContent: "center"
+                            alignItems: "center",
+                            justifyContent: "flex-start"
                         }}>
                             {(!this.showCorrectness || !this.allowRetry) &&
-                                <img className={classes.checkImage}
-                                    style={{ opacity: this.state.isCorrect == null ? 0 : 1, width: "45%" }}
+                                <img className={classes.hintCheckImage}
+                                    style={{ opacity: this.state.isCorrect == null ? 0 : 1 }}
                                     alt="Exclamation Mark Icon"
                                     title={`The instructor has elected to ${joinList(!this.showCorrectness && 'hide correctness', !this.allowRetry && "disallow retries")}`}
                                     {...stagingProp({
@@ -170,8 +170,8 @@ class HintTextbox extends React.Component {
                                     src={`${process.env.PUBLIC_URL}/static/images/icons/exclamation.svg`}/>
                             }
                             {this.state.isCorrect && this.showCorrectness && this.allowRetry &&
-                                <img className={classes.checkImage}
-                                    style={{ opacity: this.state.checkMarkOpacity, width: "45%" }}
+                                <img className={classes.hintCheckImage}
+                                    style={{ opacity: this.state.checkMarkOpacity }}
                                     alt="Green Checkmark Icon"
                                     {...stagingProp({
                                         "data-selenium-target": `step-correct-img-${hintIndex}`
@@ -179,8 +179,8 @@ class HintTextbox extends React.Component {
                                     src={`${process.env.PUBLIC_URL}/static/images/icons/green_check.svg`}/>
                             }
                             {this.state.isCorrect === false && this.showCorrectness && this.allowRetry &&
-                                <img className={classes.checkImage}
-                                    style={{ opacity: 100 - this.state.checkMarkOpacity, width: "45%" }}
+                                <img className={classes.hintCheckImage}
+                                    style={{ opacity: 100 - this.state.checkMarkOpacity }}
                                     alt="Red X Icon"
                                     {...stagingProp({
                                         "data-selenium-target": `step-correct-img-${hintIndex}`

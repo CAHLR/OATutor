@@ -86,6 +86,17 @@ const styles = theme => ({
         marginLeft: '0.5em',
     },
 
+    hintCheckImage: {
+        width: 32,
+        height: 32,
+        marginLeft: '0.3em',
+        [theme.breakpoints.up('sm')]: {
+            width: 32,
+            height: 32,
+            marginLeft: 22,
+        },
+    },
+
     root: {
         flexGrow: 1,
     },
