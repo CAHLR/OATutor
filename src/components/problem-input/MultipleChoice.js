@@ -47,7 +47,7 @@ class MultipleChoice extends React.Component {
                                     control={<Radio color="primary" />}
                                     label={renderText(choice, null, variabilization, this.context)}
                                     key={choice}
-                                    style={{ minHeight: 44, alignItems: "flex-start", marginRight: 0 }}
+                                    style={{ minHeight: 44, alignItems: "center", marginRight: 0 }}
                                     classes={{ label: this.props.classes?.mcLabel }}
                                 />)
                             : "Error: This problem has no answer choices. Please submit feedback."}

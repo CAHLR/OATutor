@@ -230,6 +230,7 @@ class Firebase {
                       course_code: this.ltiContext.course_code,
 
                       lms_user_id: this.ltiContext.user_id,
+                      lis_result_sourcedid: this.ltiContext.lis_result_sourcedid,
                   }
                 : {
                       course_id: "n/a",
@@ -237,6 +238,7 @@ class Firebase {
                       course_code: "n/a",
 
                       lms_user_id: "n/a",
+                      lis_result_sourcedid: "n/a",
                   }),
 
             ...data,

@@ -234,6 +234,53 @@ function preprocessChatGPTResponse(input) {
     return input;
 }
 
+
+/**
+ * Convert markdown links ([label](url)) into clickable anchors.
+ * Only allows explicit external links and mailto links.
+ * @param {string} str
+ * @return {(string | JSX.Element)[]}
+ */
+function parseForHyperlinks(str) {
+    if (typeof str !== "string" || str.length === 0) {
+        return [str];
+    }
+
+    const linkRegex = /\[([^\]]+)\]\((https?:\/\/[^\s)]+|mailto:[^\s)]+)\)/g;
+    const result = [];
+    let lastIndex = 0;
+    let match;
+
+    while ((match = linkRegex.exec(str)) !== null) {
+        const [fullMatch, label, url] = match;
+        const start = match.index;
+
+        if (start > lastIndex) {
+            result.push(str.slice(lastIndex, start));
+        }
+
+        result.push(
+            <a
+                key={Math.random() * 2 ** 16}
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                {label}
+            </a>
+        );
+
+        lastIndex = start + fullMatch.length;
+    }
+
+    if (lastIndex < str.length) {
+        result.push(str.slice(lastIndex));
+    }
+
+    return result.length > 0 ? result : [str];
+}
+
+
 /**
  * Takes in a string and iff there is 3+ underscores in a row, convert it into a fill-in-the-blank box.
  * @param {(string)} str
@@ -273,7 +320,7 @@ function parseForFillInQuestions(str) {
                 </span>
             );
         }
-        result.push(part);
+        result.push(...parseForHyperlinks(part));
     });
     return result;
 }

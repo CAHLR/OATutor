@@ -56,31 +56,38 @@ export const LocalizationProvider = ({ children }) => {
     }
   }, [platformLanguage, currentCourseName]);
 
-  /**
-   * Called when entering a course
-   * @param courseName 
-   * @param courseLanguage 
-   */
+
+  // /**
+  //  * Called when entering a course
+  //  * @param courseName 
+  //  * @param courseLanguage 
+  //  */
+  // const enterCourse = (courseName, courseLanguage) => {
+  //   setCurrentCourseName(courseName);
+  //   const savedLang = sessionStorage.getItem(`course_lang_${courseName}`);
+    
+  //   if (savedLang && AVAILABLE_LANGUAGES.includes(savedLang)) {
+  //     setActiveLanguage(savedLang);
+  //   } else if (courseLanguage && AVAILABLE_LANGUAGES.includes(courseLanguage)) {
+  //     setActiveLanguage(courseLanguage);
+  //     sessionStorage.setItem(`course_lang_${courseName}`, courseLanguage);
+  //   } else {
+  //     setActiveLanguage(platformLanguage);
+  //   }
+  // };
+
   const enterCourse = (courseName, courseLanguage) => {
     setCurrentCourseName(courseName);
-    const savedLang = sessionStorage.getItem(`course_lang_${courseName}`);
-    
-    if (savedLang && AVAILABLE_LANGUAGES.includes(savedLang)) {
-      setActiveLanguage(savedLang);
-    } else if (courseLanguage && AVAILABLE_LANGUAGES.includes(courseLanguage)) {
-      setActiveLanguage(courseLanguage);
-      sessionStorage.setItem(`course_lang_${courseName}`, courseLanguage);
-    } else {
-      setActiveLanguage(platformLanguage);
-    }
+    setActiveLanguage(
+      courseLanguage && AVAILABLE_LANGUAGES.includes(courseLanguage)
+        ? courseLanguage
+        : platformLanguage
+    );
   };
 
-  /**
-   * Called when leaving a course (going to home)
-   */
   const exitCourse = () => {
     setCurrentCourseName(null);
-    setActiveLanguage(platformLanguage);
+    setActiveLanguage(platformLanguage); // platformLanguage already comes from config/localStorage default
   };
 
   const setLanguage = (lang) => {

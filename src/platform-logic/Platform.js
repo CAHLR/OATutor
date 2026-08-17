@@ -15,6 +15,7 @@ import {
     SITE_NAME,
     ThemeContext,
     MASTERY_THRESHOLD,
+    DEFAULT_LANGUAGE,
 } from "../config/config.js";
 import {
     resolveMetaLesson,
@@ -97,6 +98,12 @@ class Platform extends React.Component {
     this.completedProbs = new Set();
     this.lesson = null;
 
+    // Tracks the platform-level language captured just before we override it
+    // for a course/lesson. `null` means "not currently inside a course" —
+    // used both to know what to restore to, and to guard against re-capturing
+    // an already-overridden value on lesson-to-lesson navigation.
+    this._originalLanguage = null;
+
     this.user = context.user || {};
     this.isPrivileged = !!this.user.privileged;
     this.isFromCanvas =
@@ -138,18 +145,29 @@ class Platform extends React.Component {
     }
   }
 
+
+
+
+  
+
+  // Resolves the language a given lesson should be shown in.
+  _resolveLessonLanguage(lesson) {
+    if (lesson?.language) {
+      return lesson.language;
+    }
+    return lesson?.language || null; // null -> enterCourse falls back to platformLanguage
+  }
+
+
+
+
+
   componentDidMount() {
     this._isMounted = true;
     if (this.props.lessonID != null) {
       const lesson = findLessonById(this.props.lessonID) || findMetaLessonById(this.props.lessonID);
       this.selectLesson(lesson).then((_) => {});
-      const { setLanguage } = this.props;
-      if (lesson.courseName === "Matematik 4") {
-        setLanguage("se");
-      } else {
-        const defaultLocale = localStorage.getItem("defaultLocale");
-        setLanguage(defaultLocale);
-      }
+      this.props.enterCourse?.(lesson?.courseName, this._resolveLessonLanguage(lesson));
     } else if (this.props.courseNum != null) {
       this.selectCourse(coursePlans[parseInt(this.props.courseNum)]);
     }
@@ -159,17 +177,33 @@ class Platform extends React.Component {
   componentWillUnmount() {
     this._isMounted = false;
     this.context.problemID = "n/a";
+    // Safety net for genuine unmounts (full page nav, etc). The more common
+    // "back to home" case is handled in componentDidUpdate below, since this
+    // component is usually kept mounted across route changes with lessonID
+    // simply changing to null as a prop.
+
+    // this._restorePlatformLanguage();
+    this.props.exitCourse?.();
   }
+
 
   componentDidUpdate(prevProps, prevState, snapshot) {
     const lessonIdChanged = this.props.lessonID !== prevProps.lessonID && this.props.lessonID != null;
     const movedIntoLesson = !Boolean(prevProps.lessonID) && Boolean(this.props.lessonID);
+    const leftLesson = Boolean(prevProps.lessonID) && !Boolean(this.props.lessonID);
+
     if (lessonIdChanged) {
       const lesson = findLessonById(this.props.lessonID) || findMetaLessonById(this.props.lessonID);
       if (lesson) {
         this.selectLesson(lesson).then(() => {});
+        this.props.enterCourse?.(lesson.courseName, this._resolveLessonLanguage(lesson));
       }
     }
+
+    if (leftLesson) {
+      this.props.exitCourse?.();
+    }
+
     if (movedIntoLesson && !this.isFromCanvas) {
       let saved = null;
       try {
@@ -184,6 +218,7 @@ class Platform extends React.Component {
     }
     this.onComponentUpdate(prevProps, prevState, snapshot);
   }
+
 
   fireConfetti = () => {
     try {

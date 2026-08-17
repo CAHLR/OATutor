@@ -872,7 +872,7 @@ class ProblemCard extends React.Component {
                             <hr />
                         </h2>
                     )} */}
-                        {showCardHeader && (
+                        {this.step.stepBody && this.step.stepBody.trim() !== "" && (
                             <div className={"classes.stepBody"}>
                                 {renderText(
                                     this.step.stepBody,
