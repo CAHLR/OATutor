@@ -374,6 +374,8 @@ class Platform extends React.Component {
     }
 
     this.lesson = lesson;
+    const resolvedLessonLanguage = this._resolveLessonLanguage(lesson);
+    this.props.enterCourse?.(lesson?.courseName, resolvedLessonLanguage || null);
 
     const loadLessonProgress = async () => {
       const { getByKey } = this.context.browserStorage;
@@ -626,7 +628,7 @@ class Platform extends React.Component {
       status: "lessonSelection",
       selectedCourse: course,
     });
-    this.props.enterCourse?.(course.courseName, course?.language || null);
+    this.props.enterCourse?.(course?.courseName, course?.language || null);
   };
 
   _nextProblem = (context) => {

@@ -22,6 +22,7 @@ export const LocalizationProvider = ({ children }) => {
 
   const [activeLanguage, setActiveLanguage] = useState(platformLanguage);
   const [currentCourseName, setCurrentCourseName] = useState(null);
+  const [currentCourseLanguage, setCurrentCourseLanguage] = useState(null);
 
   useEffect(() => {
 
@@ -48,13 +49,15 @@ export const LocalizationProvider = ({ children }) => {
 
 
   useEffect(() => {
-    // if (['en', 'es', 'se'].includes(language)) {
-    //   localStorage.setItem('locale', language);
-    // }
-    if (!currentCourseName) {
+    if (!currentCourseName || !currentCourseLanguage) {
       setActiveLanguage(platformLanguage);
+      return;
     }
-  }, [platformLanguage, currentCourseName]);
+
+    if (AVAILABLE_LANGUAGES.includes(currentCourseLanguage)) {
+      setActiveLanguage(currentCourseLanguage);
+    }
+  }, [platformLanguage, currentCourseName, currentCourseLanguage]);
 
 
   // /**
@@ -77,17 +80,20 @@ export const LocalizationProvider = ({ children }) => {
   // };
 
   const enterCourse = (courseName, courseLanguage) => {
-    setCurrentCourseName(courseName);
-    setActiveLanguage(
+    const normalizedCourseLanguage =
       courseLanguage && AVAILABLE_LANGUAGES.includes(courseLanguage)
         ? courseLanguage
-        : platformLanguage
-    );
+        : null;
+
+    setCurrentCourseName(courseName);
+    setCurrentCourseLanguage(normalizedCourseLanguage);
+    setActiveLanguage(normalizedCourseLanguage || platformLanguage);
   };
 
   const exitCourse = () => {
     setCurrentCourseName(null);
-    setActiveLanguage(platformLanguage); // platformLanguage already comes from config/localStorage default
+    setCurrentCourseLanguage(null);
+    setActiveLanguage(platformLanguage);
   };
 
   const setLanguage = (lang) => {
