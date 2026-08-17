@@ -126,13 +126,18 @@ const lessonPlans = [];
 for (let i = 0; i < coursePlans.length; i++) {
     const course = coursePlans[i];
     for (let j = 0; j < course.lessons.length; j++) {
-        course.lessons[j].learningObjectives = cleanObjectKeys(
-            course.lessons[j].learningObjectives
+        const lesson = course.lessons[j];
+        const lessonLanguage = course.language ?? null;
+
+        lesson.learningObjectives = cleanObjectKeys(
+            lesson.learningObjectives
         );
+        lesson.language = lessonLanguage;
+
         lessonPlans.push({
-            ...course.lessons[j],
+            ...lesson,
             courseName: course.courseName,
-            language: course.language,
+            language: lessonLanguage,
             courseOER: course.courseOER != null ? course.courseOER : "",
             courseLicense:
                 course.courseLicense != null ? course.courseLicense : "",

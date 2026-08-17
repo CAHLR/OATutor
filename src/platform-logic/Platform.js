@@ -15,6 +15,7 @@ import {
     SITE_NAME,
     ThemeContext,
     MASTERY_THRESHOLD,
+    DEFAULT_LANGUAGE,
     getNormalizedMastery,
 } from "../config/config.js";
 import {
@@ -148,9 +149,20 @@ class Platform extends React.Component {
 
 
   // Resolves the language a given lesson should be shown in.
-  // language resolution 
+  // Course language is the source of truth for the course/lesson flow.
   _resolveLessonLanguage(lesson) {
-      return lesson?.language || null;
+      if (lesson?.language) {
+          return lesson.language;
+      }
+
+      if (lesson?.courseName) {
+          const course = coursePlans.find((c) => c.courseName === lesson.courseName);
+          if (course?.language) {
+              return course.language;
+          }
+      }
+
+      return null;
   }
 
   componentDidMount() {
@@ -181,9 +193,18 @@ class Platform extends React.Component {
 
   componentDidUpdate(prevProps, prevState, snapshot) {
       const lessonIdChanged = this.props.lessonID !== prevProps.lessonID && this.props.lessonID != null;
+      const courseNumChanged = this.props.courseNum !== prevProps.courseNum && this.props.courseNum != null;
       const movedIntoLesson = !Boolean(prevProps.lessonID) && Boolean(this.props.lessonID);
       const leftLesson = Boolean(prevProps.lessonID) && !Boolean(this.props.lessonID);
       const leftCourseSelection = Boolean(prevProps.courseNum != null) && this.props.courseNum == null && this.props.lessonID == null;
+
+      if (courseNumChanged) {
+        const course = coursePlans[parseInt(this.props.courseNum, 10)];
+        if (course) {
+          this.selectCourse(course);
+          this.props.enterCourse?.(course.courseName, course.language || null);
+        }
+      }
 
       if (lessonIdChanged) {
         const lesson = findLessonById(this.props.lessonID) || findMetaLessonById(this.props.lessonID);

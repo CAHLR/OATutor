@@ -40,7 +40,11 @@ export function getHelpPenaltyBadgeText(mode, channel) {
             : "Affects mastery only if the final answer hint is opened";
     }
     // OnOpen — deferred: help tags the attempt; credit resolved on submit
-    return "Using help may reduce mastery credit";
+    // return "Using help may reduce mastery credit";
+
+    return channel === "agent"
+        ? "Using the AI tutor will not affect mastery credit"
+        : "Using hints will not increase mastery credit";
 }
 
 /**
