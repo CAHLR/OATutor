@@ -602,6 +602,7 @@ class Platform extends React.Component {
       status: "lessonSelection",
       selectedCourse: course,
     });
+    this.props.enterCourse?.(course.courseName, course?.language || null);
   };
 
   _nextProblem = (context) => {
