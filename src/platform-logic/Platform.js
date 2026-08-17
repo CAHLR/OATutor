@@ -102,7 +102,7 @@ class Platform extends React.Component {
     // for a course/lesson. `null` means "not currently inside a course" —
     // used both to know what to restore to, and to guard against re-capturing
     // an already-overridden value on lesson-to-lesson navigation.
-    this._originalLanguage = null;
+    // this._originalLanguage = null;
 
     this.user = context.user || {};
     this.isPrivileged = !!this.user.privileged;
@@ -147,20 +147,11 @@ class Platform extends React.Component {
 
 
 
-
-  
-
   // Resolves the language a given lesson should be shown in.
+  // language resolution 
   _resolveLessonLanguage(lesson) {
-    if (lesson?.language) {
-      return lesson.language;
-    }
-    return lesson?.language || null; // null -> enterCourse falls back to platformLanguage
+      return lesson?.language || null;
   }
-
-
-
-
 
   componentDidMount() {
     this._isMounted = true;
@@ -184,39 +175,43 @@ class Platform extends React.Component {
 
     // this._restorePlatformLanguage();
     this.props.exitCourse?.();
+    this.course = null;
   }
 
 
   componentDidUpdate(prevProps, prevState, snapshot) {
-    const lessonIdChanged = this.props.lessonID !== prevProps.lessonID && this.props.lessonID != null;
-    const movedIntoLesson = !Boolean(prevProps.lessonID) && Boolean(this.props.lessonID);
-    const leftLesson = Boolean(prevProps.lessonID) && !Boolean(this.props.lessonID);
+      const lessonIdChanged = this.props.lessonID !== prevProps.lessonID && this.props.lessonID != null;
+      const movedIntoLesson = !Boolean(prevProps.lessonID) && Boolean(this.props.lessonID);
+      const leftLesson = Boolean(prevProps.lessonID) && !Boolean(this.props.lessonID);
+      const leftCourseSelection = Boolean(prevProps.courseNum != null) && this.props.courseNum == null && this.props.lessonID == null;
 
-    if (lessonIdChanged) {
-      const lesson = findLessonById(this.props.lessonID) || findMetaLessonById(this.props.lessonID);
-      if (lesson) {
-        this.selectLesson(lesson).then(() => {});
-        this.props.enterCourse?.(lesson.courseName, this._resolveLessonLanguage(lesson));
+      if (lessonIdChanged) {
+        const lesson = findLessonById(this.props.lessonID) || findMetaLessonById(this.props.lessonID);
+        if (lesson) {
+          this.selectLesson(lesson).then(() => {});
+          this.props.enterCourse?.(lesson.courseName, this._resolveLessonLanguage(lesson));
+        }
       }
-    }
 
-    if (leftLesson) {
-      this.props.exitCourse?.();
-    }
-
-    if (movedIntoLesson && !this.isFromCanvas) {
-      let saved = null;
-      try {
-        saved = localStorage.getItem(TOC_DRAWER_OPEN_KEY);
-      } catch (e) {}
-      if (saved === null && !this.state.drawerOpen && !isMobileWidth(this.props.width)) {
-        this.toggleDrawer(true);
+      if (leftLesson || leftCourseSelection) {
+        this.props.exitCourse?.();
+        this.course = null;
+        this.setState({ selectedCourse: null });
       }
-    }
-    if (prevState.status !== "completed" && this.state.status === "completed") {
-      this.fireConfetti();
-    }
-    this.onComponentUpdate(prevProps, prevState, snapshot);
+
+      if (movedIntoLesson && !this.isFromCanvas) {
+        let saved = null;
+        try {
+          saved = localStorage.getItem(TOC_DRAWER_OPEN_KEY);
+        } catch (e) {}
+        if (saved === null && !this.state.drawerOpen && !isMobileWidth(this.props.width)) {
+          this.toggleDrawer(true);
+        }
+      }
+      if (prevState.status !== "completed" && this.state.status === "completed") {
+        this.fireConfetti();
+      }
+      this.onComponentUpdate(prevProps, prevState, snapshot);
   }
 
 

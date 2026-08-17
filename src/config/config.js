@@ -125,6 +125,7 @@ for (let i = 0; i < coursePlans.length; i++) {
         lessonPlans.push({
             ...course.lessons[j],
             courseName: course.courseName,
+            language: course.language,
             courseOER: course.courseOER != null ? course.courseOER : "",
             courseLicense:
                 course.courseLicense != null ? course.courseLicense : "",
