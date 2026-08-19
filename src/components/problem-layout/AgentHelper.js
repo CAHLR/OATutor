@@ -7,6 +7,11 @@
  * - Streaming response handling
  */
 
+import {
+    DEFAULT_CHAT_PENALTY_MODE,
+    DEFAULT_HINT_PENALTY_MODE,
+} from '../../util/helpPenaltyMode.js';
+
 export class AgentHelper {
     constructor() {
         // AWS Lambda Function URL from environment
@@ -65,7 +70,8 @@ export class AgentHelper {
         treatment = null,
         siteVersion = null,
         siteCommitHash = null,
-        helpPenaltyMode = null,
+        hintPenaltyMode = null,
+        chatPenaltyMode = null,
     } = {}) {
         const chatDisplayMode = lesson?.chat_display_mode || 'Off';
         const condition =
@@ -89,7 +95,8 @@ export class AgentHelper {
             chatDisplayMode,
             condition,
             chatPrompt: lesson?.chat_prompt || 'PROMPTv2.txt',
-            helpPenaltyMode: helpPenaltyMode || 'OnOpen',
+            hintPenaltyMode: hintPenaltyMode || DEFAULT_HINT_PENALTY_MODE,
+            chatPenaltyMode: chatPenaltyMode || DEFAULT_CHAT_PENALTY_MODE,
             startedAt: now,
             lastActivityAt: now,
             greetingShown: false,
@@ -111,7 +118,7 @@ export class AgentHelper {
      * @param {Array<{role: string, content: string}>} conversationHistory
      *   Prior turns only (exclude the current userMessage — Lambda appends it).
      */
-    buildAgentRequest(userMessage, problemContext, studentState, extracted, chatPrompt, chatDisplayMode, conversationHistory = [], helpPenaltyMode = 'OnOpen') {
+    buildAgentRequest(userMessage, problemContext, studentState, extracted, chatPrompt, chatDisplayMode, conversationHistory = [], chatPenaltyMode = DEFAULT_CHAT_PENALTY_MODE) {
         const safeUserMessage = typeof userMessage === 'string' ? userMessage : '';
         const request = {
             sessionId: this.sessionId,
@@ -123,7 +130,7 @@ export class AgentHelper {
             extracted: extracted || {},
             chatPrompt: chatPrompt || 'PROMPTv2.txt',
             chatDisplayMode: chatDisplayMode || 'Off',
-            helpPenaltyMode: helpPenaltyMode || 'OnOpen',
+            chatPenaltyMode: chatPenaltyMode || DEFAULT_CHAT_PENALTY_MODE,
             // Client transcript is the source of truth; DynamoDB is a backup.
             conversationHistory: Array.isArray(conversationHistory) ? conversationHistory : [],
         };
@@ -167,7 +174,7 @@ export class AgentHelper {
      * @param {object} extracted - Optional extracted input (e.g., { text, images }) for vision
      * @param {object} callbacks - { onChunkReceived, onSuccessfulCompletion, onError }
      */
-    async sendMessage(userMessage, problemContext, studentState, extracted = {}, chatPrompt = 'PROMPTv2.txt', chatDisplayMode = 'Off', helpPenaltyMode = 'OnOpen', callbacks = {}, conversationHistory = []) {
+    async sendMessage(userMessage, problemContext, studentState, extracted = {}, chatPrompt = 'PROMPTv2.txt', chatDisplayMode = 'Off', chatPenaltyMode = DEFAULT_CHAT_PENALTY_MODE, callbacks = {}, conversationHistory = []) {
         const {
             onTurnStarted = () => {},
             onChunkReceived = () => {},
@@ -197,7 +204,7 @@ export class AgentHelper {
                 chatPrompt,
                 chatDisplayMode,
                 conversationHistory,
-                helpPenaltyMode
+                chatPenaltyMode
             );
 
             // Send POST request with streaming
@@ -289,7 +296,7 @@ export class AgentHelper {
      * This is intentionally separate from chat turns so it does not mutate
      * conversation history or advance the visible chat transcript.
      */
-    async fetchSuggestedQuestions(problemContext, studentState, extracted = {}, chatPrompt = 'PROMPTv2.txt', chatDisplayMode = 'Off', helpPenaltyMode = 'OnOpen') {
+    async fetchSuggestedQuestions(problemContext, studentState, extracted = {}, chatPrompt = 'PROMPTv2.txt', chatDisplayMode = 'Off', chatPenaltyMode = DEFAULT_CHAT_PENALTY_MODE) {
         if (!this.sessionId) {
             this.initializeSession();
         }
@@ -311,7 +318,7 @@ export class AgentHelper {
                 extracted,
                 chatPrompt: chatPrompt || 'PROMPTv2.txt',
                 chatDisplayMode: chatDisplayMode || 'Off',
-                helpPenaltyMode: helpPenaltyMode || 'OnOpen',
+                chatPenaltyMode: chatPenaltyMode || DEFAULT_CHAT_PENALTY_MODE,
             }),
         });
 
@@ -337,7 +344,7 @@ export class AgentHelper {
 
     /**
      * Ask an SLM whether an assistant message revealed the step answer.
-     * Used for help_penalty_mode === "AnswerReveal".
+     * Used for chat_penalty_mode === "AnswerReveal".
      */
     async judgeAnswerReveal({
         assistantMessage,
@@ -346,7 +353,7 @@ export class AgentHelper {
         stepId = null,
         chatPrompt = 'PROMPTv2.txt',
         chatDisplayMode = 'Off',
-        helpPenaltyMode = 'OnOpen',
+        chatPenaltyMode = DEFAULT_CHAT_PENALTY_MODE,
         lessonId = null,
         condition = null,
     } = {}) {
@@ -371,7 +378,7 @@ export class AgentHelper {
                 stepId,
                 chatPrompt: chatPrompt || 'PROMPTv2.txt',
                 chatDisplayMode: chatDisplayMode || 'Off',
-                helpPenaltyMode: helpPenaltyMode || 'OnOpen',
+                chatPenaltyMode: chatPenaltyMode || DEFAULT_CHAT_PENALTY_MODE,
                 lessonId,
                 condition,
             }),

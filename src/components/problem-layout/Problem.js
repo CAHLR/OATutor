@@ -58,7 +58,8 @@ import {
     hideMathKeyboardAnimated,
 } from '../problem-input/mathKeyboardGestures';
 import {
-    getHelpPenaltyMode,
+    getChatPenaltyMode,
+    getHintPenaltyMode,
     getHelpPenaltyBadgeText,
 } from '../../util/helpPenaltyMode.js';
 
@@ -101,7 +102,8 @@ class Problem extends React.Component {
         this.prompt_template = this.props.lesson?.prompt_template
             ? this.props.lesson?.prompt_template
             : "";
-        this.helpPenaltyMode = getHelpPenaltyMode(this.props.lesson);
+        this.hintPenaltyMode = getHintPenaltyMode(this.props.lesson);
+        this.chatPenaltyMode = getChatPenaltyMode(this.props.lesson);
 
         this.state = {
             // metaCollapsed: false,
@@ -187,7 +189,8 @@ class Problem extends React.Component {
                         treatment: this.context?.getTreatment?.() ?? null,
                         siteVersion: firebase.siteVersion || null,
                         siteCommitHash: process.env.REACT_APP_COMMIT_HASH || null,
-                        helpPenaltyMode: getHelpPenaltyMode(lesson),
+                        hintPenaltyMode: getHintPenaltyMode(lesson),
+                        chatPenaltyMode: getChatPenaltyMode(lesson),
                     })
                 );
                 agentHelper.markSessionMetaWritten();
@@ -1244,7 +1247,7 @@ class Problem extends React.Component {
             keepMounted
             onClose={this.handleMobileHintClose}
             title="Hints"
-            badge={getHelpPenaltyBadgeText(this.helpPenaltyMode, "hint")}
+            badge={getHelpPenaltyBadgeText(this.hintPenaltyMode, "hint")}
         >
             <div ref={this.hintPortalRef} />
         </MobileBottomSheet>
@@ -1411,7 +1414,7 @@ class Problem extends React.Component {
                                             lineHeight: 1.2,
                                         }}
                                     >
-                                        {getHelpPenaltyBadgeText(this.helpPenaltyMode, "hint")}
+                                        {getHelpPenaltyBadgeText(this.hintPenaltyMode, "hint")}
                                     </span>
                                 </>
                             )}
@@ -1500,7 +1503,7 @@ class Problem extends React.Component {
                     hintUsageByStep={this.state.hintUsageByStep}
                     condition="standalone_gpt_only"
                     applyHelpPenalty={this.applyHelpPenalty}
-                    helpPenaltyMode={this.helpPenaltyMode}
+                    chatPenaltyMode={this.chatPenaltyMode}
                     onExit={() => this.setState({ standaloneExited: true })}
                 />
             );
@@ -1703,7 +1706,7 @@ class Problem extends React.Component {
                                                     seed={seed}
                                                     problemVars={problem.variabilization}
                                                     lesson={problem.lesson}
-                                                    helpPenaltyMode={this.helpPenaltyMode}
+                                                    hintPenaltyMode={this.hintPenaltyMode}
                                                     courseName={problem.courseName}
                                                     getMasteryData={this.getMasteryData}
                                                     problemTitle={problem.title}
@@ -1855,7 +1858,8 @@ class Problem extends React.Component {
                                 onNextHint={this.handleAvatarHintNext}
                                 onHideHint={this.handleAvatarHintHide}
                                 applyHelpPenalty={this.applyHelpPenalty}
-                                helpPenaltyMode={this.helpPenaltyMode}
+                                hintPenaltyMode={this.hintPenaltyMode}
+                                chatPenaltyMode={this.chatPenaltyMode}
                             />
                         ) : (
                         this.renderStandardHintPanel()
@@ -1891,7 +1895,8 @@ class Problem extends React.Component {
                                 onNextHint={this.handleAvatarHintNext}
                                 onHideHint={this.handleAvatarHintHide}
                                 applyHelpPenalty={this.applyHelpPenalty}
-                                helpPenaltyMode={this.helpPenaltyMode}
+                                hintPenaltyMode={this.hintPenaltyMode}
+                                chatPenaltyMode={this.chatPenaltyMode}
                             />
                     </Grid>
                     )}
@@ -2037,7 +2042,7 @@ class Problem extends React.Component {
                         onPromoLayoutChange={this._scheduleDesktopFabPromoOverlapCheck}
                         onPromoEligibilityChange={this.handleAgentPromoEligibilityChange}
                         applyHelpPenalty={this.applyHelpPenalty}
-                        helpPenaltyMode={this.helpPenaltyMode}
+                        chatPenaltyMode={this.chatPenaltyMode}
                         condition="window"
                     />
                 )}

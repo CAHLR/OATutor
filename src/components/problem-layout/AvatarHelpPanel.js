@@ -55,7 +55,7 @@ class AvatarHelpPanel extends React.Component {
             drawerOpen,
             mathKeyboardOpen,
             applyHelpPenalty,
-            helpPenaltyMode,
+            chatPenaltyMode,
             avatarHint,
             avatarHintPayload,
             avatarHintIndex,
@@ -130,7 +130,7 @@ class AvatarHelpPanel extends React.Component {
                     drawerOpen={drawerOpen}
                     mathKeyboardOpen={mathKeyboardOpen}
                     applyHelpPenalty={applyHelpPenalty}
-                    helpPenaltyMode={helpPenaltyMode}
+                    chatPenaltyMode={chatPenaltyMode}
                     afterMessagesContent={hintCard}
                     beforeInputContent={hintButton}
                     showSuggestedQuestions

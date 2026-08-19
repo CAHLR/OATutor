@@ -160,7 +160,7 @@ class HintSystem extends React.Component {
                 if (
                     opening &&
                     shouldPenalizeSubHintPanelOpen({
-                        mode: this.props.helpPenaltyMode,
+                        mode: this.props.hintPenaltyMode,
                     })
                 ) {
                     this.props.applyHelpPenalty?.(this.props.index);
@@ -179,7 +179,7 @@ class HintSystem extends React.Component {
             () => {
                 if (
                     shouldPenalizeSubHintUnlock({
-                        mode: this.props.helpPenaltyMode,
+                        mode: this.props.hintPenaltyMode,
                         hintType: subHint?.type,
                     })
                 ) {
