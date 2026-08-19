@@ -3,6 +3,10 @@
  * AnswerReveal  — hints: last / bottom-out only; agent: SLM judge if answer revealed
  * OnOpen        — first hint unlock or first agent query tags the step; BKT “no credit”
  *                 is applied on the student’s next graded submit (UI may still show correct)
+ *
+ * Lesson / course fields (mix and match independently):
+ *   hint_penalty_mode  — authored hints (default OnOpen)
+ *   chat_penalty_mode  — AI tutor (default Never)
  */
 
 export const HELP_PENALTY_MODES = Object.freeze({
@@ -11,26 +15,40 @@ export const HELP_PENALTY_MODES = Object.freeze({
     ON_OPEN: "OnOpen",
 });
 
-export const DEFAULT_HELP_PENALTY_MODE = HELP_PENALTY_MODES.ON_OPEN;
+export const DEFAULT_CHAT_PENALTY_MODE = HELP_PENALTY_MODES.NEVER;
+export const DEFAULT_HINT_PENALTY_MODE = HELP_PENALTY_MODES.ON_OPEN;
 
 export const VALID_HELP_PENALTY_MODES = new Set(
     Object.values(HELP_PENALTY_MODES)
 );
 
-export function normalizeHelpPenaltyMode(mode) {
+export function normalizeHelpPenaltyMode(mode, fallback) {
     if (VALID_HELP_PENALTY_MODES.has(mode)) {
         return mode;
     }
-    return DEFAULT_HELP_PENALTY_MODE;
+    return fallback;
 }
 
-export function getHelpPenaltyMode(lesson) {
-    return normalizeHelpPenaltyMode(lesson?.help_penalty_mode);
+export function getHintPenaltyMode(lesson) {
+    return normalizeHelpPenaltyMode(
+        lesson?.hint_penalty_mode,
+        DEFAULT_HINT_PENALTY_MODE
+    );
+}
+
+export function getChatPenaltyMode(lesson) {
+    return normalizeHelpPenaltyMode(
+        lesson?.chat_penalty_mode,
+        DEFAULT_CHAT_PENALTY_MODE
+    );
 }
 
 /** UI badge under Hint / AI Tutor promo. */
 export function getHelpPenaltyBadgeText(mode, channel) {
-    const normalized = normalizeHelpPenaltyMode(mode);
+    const fallback = channel === "agent"
+        ? DEFAULT_CHAT_PENALTY_MODE
+        : DEFAULT_HINT_PENALTY_MODE;
+    const normalized = normalizeHelpPenaltyMode(mode, fallback);
     if (normalized === HELP_PENALTY_MODES.NEVER) {
         return "Won't affect your mastery score";
     }
@@ -63,7 +81,7 @@ export function shouldPenalizeTopLevelHintUnlock({
     hintType,
     hintsFinished = [],
 }) {
-    const normalized = normalizeHelpPenaltyMode(mode);
+    const normalized = normalizeHelpPenaltyMode(mode, DEFAULT_HINT_PENALTY_MODE);
     if (normalized === HELP_PENALTY_MODES.NEVER) {
         return false;
     }
@@ -88,7 +106,7 @@ export function shouldPenalizeTopLevelHintUnlock({
  * Whether unlocking a sub-hint should mark the step wrong.
  */
 export function shouldPenalizeSubHintUnlock({ mode, hintType }) {
-    const normalized = normalizeHelpPenaltyMode(mode);
+    const normalized = normalizeHelpPenaltyMode(mode, DEFAULT_HINT_PENALTY_MODE);
     if (normalized === HELP_PENALTY_MODES.NEVER) {
         return false;
     }
@@ -104,14 +122,14 @@ export function shouldPenalizeSubHintUnlock({ mode, hintType }) {
  * Only OnOpen; AnswerReveal waits for bottom-out unlock.
  */
 export function shouldPenalizeSubHintPanelOpen({ mode }) {
-    return normalizeHelpPenaltyMode(mode) === HELP_PENALTY_MODES.ON_OPEN;
+    return normalizeHelpPenaltyMode(mode, DEFAULT_HINT_PENALTY_MODE) === HELP_PENALTY_MODES.ON_OPEN;
 }
 
 export function shouldPenalizeAgentOnOpen({ mode }) {
     // OnOpen for agent = first sent query (not merely opening the chat UI).
-    return normalizeHelpPenaltyMode(mode) === HELP_PENALTY_MODES.ON_OPEN;
+    return normalizeHelpPenaltyMode(mode, DEFAULT_CHAT_PENALTY_MODE) === HELP_PENALTY_MODES.ON_OPEN;
 }
 
 export function shouldJudgeAgentAnswerReveal({ mode }) {
-    return normalizeHelpPenaltyMode(mode) === HELP_PENALTY_MODES.ANSWER_REVEAL;
+    return normalizeHelpPenaltyMode(mode, DEFAULT_CHAT_PENALTY_MODE) === HELP_PENALTY_MODES.ANSWER_REVEAL;
 }

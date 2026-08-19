@@ -88,10 +88,10 @@ export const handler = awslambda.streamifyResponse(
             const lessonId = requestBody.lessonId ?? extracted?.lessonId;
             const chatPrompt = requestBody.chatPrompt ?? problemContext?.chatPrompt;
             const chatDisplayMode = requestBody.chatDisplayMode ?? extracted?.chatDisplayMode;
-            const helpPenaltyMode =
-                requestBody.helpPenaltyMode ??
-                extracted?.helpPenaltyMode ??
-                problemContext?.helpPenaltyMode;
+            const chatPenaltyMode =
+                requestBody.chatPenaltyMode ??
+                extracted?.chatPenaltyMode ??
+                problemContext?.chatPenaltyMode;
 
             if (requestBody?.requestType === "suggestedQuestions") {
                 const metadata = {
@@ -115,7 +115,7 @@ export const handler = awslambda.streamifyResponse(
                     lessonId,
                     chatPrompt,
                     chatDisplayMode,
-                    helpPenaltyMode,
+                    chatPenaltyMode,
                     problemId: problemContext?.problemID,
                     stepId: problemContext?.currentStep?.id,
                     courseName: problemContext?.courseName,
@@ -139,7 +139,7 @@ export const handler = awslambda.streamifyResponse(
                     lessonId,
                     chatPrompt,
                     chatDisplayMode,
-                    helpPenaltyMode,
+                    chatPenaltyMode,
                     problemId: problemContext?.problemID,
                     stepId: problemContext?.currentStep?.id,
                     courseName: problemContext?.courseName,
@@ -187,7 +187,7 @@ export const handler = awslambda.streamifyResponse(
                     lessonId,
                     chatPrompt,
                     chatDisplayMode,
-                    helpPenaltyMode,
+                    chatPenaltyMode,
                     problemId: problemContext?.problemID,
                     stepId: requestBody.stepId || problemContext?.currentStep?.id,
                     courseName: problemContext?.courseName,
@@ -213,7 +213,7 @@ export const handler = awslambda.streamifyResponse(
                     lessonId,
                     chatPrompt,
                     chatDisplayMode,
-                    helpPenaltyMode,
+                    chatPenaltyMode,
                     problemId: problemContext?.problemID,
                     stepId: requestBody.stepId || problemContext?.currentStep?.id,
                     courseName: problemContext?.courseName,
@@ -359,7 +359,7 @@ export const handler = awslambda.streamifyResponse(
                     promptHash,
                     chatPrompt,
                     chatDisplayMode,
-                    helpPenaltyMode,
+                    chatPenaltyMode,
                     historyMessageCount: fullConversationHistory.length,
                     llmMessageCount: messagesForLog.length,
                     // Exact roles/order OpenAI sees: system, then prior turns, then latest user.
@@ -391,7 +391,7 @@ export const handler = awslambda.streamifyResponse(
                 lessonId,
                 chatPrompt,
                 chatDisplayMode,
-                helpPenaltyMode,
+                chatPenaltyMode,
                 problemId: problemContext?.problemID,
                 stepId: problemContext?.currentStep?.id,
                 courseName: problemContext?.courseName,
@@ -464,7 +464,7 @@ export const handler = awslambda.streamifyResponse(
                 lessonId,
                 chatPrompt,
                 chatDisplayMode,
-                helpPenaltyMode,
+                chatPenaltyMode,
                 problemId: problemContext?.problemID,
                 stepId: problemContext?.currentStep?.id,
                 courseName: problemContext?.courseName,
@@ -482,7 +482,7 @@ export const handler = awslambda.streamifyResponse(
                 sessionId: requestBody?.sessionId,
                 chatPrompt: requestBody?.chatPrompt,
                 chatDisplayMode: requestBody?.chatDisplayMode,
-                helpPenaltyMode: requestBody?.helpPenaltyMode,
+                chatPenaltyMode: requestBody?.chatPenaltyMode,
                 lessonId: requestBody?.lessonId ?? requestBody?.extracted?.lessonId,
                 problemId: requestBody?.problemContext?.problemID,
                 stepId: requestBody?.problemContext?.currentStep?.id,

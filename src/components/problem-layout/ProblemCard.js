@@ -456,15 +456,16 @@ class ProblemCard extends React.Component {
     };
 
     unlockHint = (hintNum, hintType) => {
-        const { seed, problemVars, problemID, courseName, lesson, getMasteryData, helpPenaltyMode } =
+        const { seed, problemVars, problemID, courseName, lesson, getMasteryData } =
             this.props;
+        const hintPenaltyMode = this.props.hintPenaltyMode;
         const { isCorrect, hintsFinished } = this.state;
         const { knowledgeComponents, variabilization } = this.step;
 
         if (
             isCorrect !== true &&
             shouldPenalizeTopLevelHintUnlock({
-                mode: helpPenaltyMode,
+                mode: hintPenaltyMode,
                 hintIndex: hintNum,
                 hintCount: this.hints?.length || 0,
                 hintType,
@@ -799,7 +800,7 @@ class ProblemCard extends React.Component {
                                         answerMade={this.props.answerMade}
                                         applyHelpPenalty={this.props.applyHelpPenalty}
                                         lesson={this.props.lesson}
-                                        helpPenaltyMode={this.props.helpPenaltyMode}
+                                        hintPenaltyMode={this.props.hintPenaltyMode}
                                         courseName={this.props.courseName}
                                         isIncorrect={this.expandFirstIncorrect}
                                         generateHintFromGPT={this.generateHintFromGPT}

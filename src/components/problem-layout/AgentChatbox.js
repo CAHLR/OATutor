@@ -32,7 +32,8 @@ import {
 } from './mobileFabStyles';
 import {
     getHelpPenaltyBadgeText,
-    getHelpPenaltyMode,
+    getChatPenaltyMode,
+    getHintPenaltyMode,
     shouldJudgeAgentAnswerReveal,
     shouldPenalizeAgentOnOpen,
 } from '../../util/helpPenaltyMode.js';
@@ -440,11 +441,11 @@ class AgentChatbox extends React.Component {
         this.props.onPromoLayoutChange?.();
     }
 
-    _getHelpPenaltyMode = () =>
-        this.props.helpPenaltyMode || getHelpPenaltyMode(this.props.lesson);
+    _getChatPenaltyMode = () =>
+        this.props.chatPenaltyMode || getChatPenaltyMode(this.props.lesson);
 
     _maybePenalizeAgentOnFirstQuery = () => {
-        if (!shouldPenalizeAgentOnOpen({ mode: this._getHelpPenaltyMode() })) {
+        if (!shouldPenalizeAgentOnOpen({ mode: this._getChatPenaltyMode() })) {
             return;
         }
         this.props.applyHelpPenalty?.();
@@ -469,7 +470,7 @@ class AgentChatbox extends React.Component {
     };
 
     _maybeJudgeAgentAnswerReveal = async (assistantText) => {
-        if (!shouldJudgeAgentAnswerReveal({ mode: this._getHelpPenaltyMode() })) {
+        if (!shouldJudgeAgentAnswerReveal({ mode: this._getChatPenaltyMode() })) {
             return;
         }
         const text = (assistantText || '').trim();
@@ -489,7 +490,7 @@ class AgentChatbox extends React.Component {
                 stepId: step?.id || null,
                 chatPrompt: this.props.lesson?.chat_prompt || 'PROMPTv2.txt',
                 chatDisplayMode: this.props.lesson?.chat_display_mode ?? 'Off',
-                helpPenaltyMode: this._getHelpPenaltyMode(),
+                chatPenaltyMode: this._getChatPenaltyMode(),
                 lessonId: this.props.lesson?.id || null,
                 condition: this.props.condition,
             });
@@ -657,7 +658,7 @@ class AgentChatbox extends React.Component {
                 },
                 this.props.lesson?.chat_prompt || 'PROMPTv2.txt',
                 this.props.lesson?.chat_display_mode ?? 'Off',
-                this._getHelpPenaltyMode(),
+                this._getChatPenaltyMode(),
             );
 
             this.setState({
@@ -752,7 +753,7 @@ class AgentChatbox extends React.Component {
                                 Ask me any question about this problem or topic.
                             </p>
             <span className={classes.launcherPill}>
-                                {getHelpPenaltyBadgeText(this._getHelpPenaltyMode(), 'agent')}
+                                {getHelpPenaltyBadgeText(this._getChatPenaltyMode(), 'agent')}
                             </span>
                         </div>
                     </div>
@@ -831,7 +832,8 @@ class AgentChatbox extends React.Component {
                     treatment: this.context?.getTreatment?.() ?? null,
                     siteVersion: fb.siteVersion || null,
                     siteCommitHash: process.env.REACT_APP_COMMIT_HASH || null,
-                    helpPenaltyMode: this._getHelpPenaltyMode(),
+                    hintPenaltyMode: getHintPenaltyMode(lesson),
+                    chatPenaltyMode: this._getChatPenaltyMode(),
                 })
             );
             agentHelper.markSessionMetaWritten();
@@ -987,7 +989,7 @@ class AgentChatbox extends React.Component {
 
         const chatPrompt = this.props.lesson?.chat_prompt || 'PROMPTv2.txt';
         const chatDisplayMode = this.props.lesson?.chat_display_mode ?? 'Off';
-        const helpPenaltyMode = this._getHelpPenaltyMode();
+        const chatPenaltyMode = this._getChatPenaltyMode();
 
         const assistantMessageId = `assistant-${messageId}`;
         const turnStart = Date.now();
@@ -1001,7 +1003,7 @@ class AgentChatbox extends React.Component {
                 extracted,
                 chatPrompt,
                 chatDisplayMode,
-                helpPenaltyMode,
+                chatPenaltyMode,
                 {
                     onTurnStarted: (turnId) => {
                         const fb = this.getFirebase();
@@ -1024,7 +1026,7 @@ class AgentChatbox extends React.Component {
                                     : 0,
                                 chatPrompt,
                                 chatDisplayMode,
-                                helpPenaltyMode,
+                                chatPenaltyMode,
                                 timestampMs: Date.now(),
                             });
                         }
@@ -1077,7 +1079,7 @@ class AgentChatbox extends React.Component {
                                 stepId: turnStepId,
                                 chatPrompt,
                                 chatDisplayMode,
-                                helpPenaltyMode,
+                                chatPenaltyMode,
                                 timestampMs: Date.now(),
                             });
                         }
