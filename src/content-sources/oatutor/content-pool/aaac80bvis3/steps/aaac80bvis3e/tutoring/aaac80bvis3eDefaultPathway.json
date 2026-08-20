@@ -1,0 +1,24 @@
+[
+    {
+        "id": "aaac80bvis3e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Code Error",
+        "text": "The function will print the value of squareroot but will not return it, which means we will not have access to the value of squareroot anymore.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaac80bvis3e-h2",
+        "type": "hint",
+        "dependencies": [
+            "aaac80bvis3e-h1"
+        ],
+        "title": "Code Error Explained",
+        "text": "We will not be able to assign it to any values or use it as the argument to any functions! In this case, C will not be equal to anything (it will actually be None)!",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
