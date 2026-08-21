@@ -98,21 +98,26 @@ function gte(i, y) {
 function expand(str, max, isTop) {
   var expansions = [];
 
-  var m = balanced('{', '}', str);
-  if (!m) return [str];
+  // The `{a},b}` rewrite below restarts expansion on a rewritten string with
+  // the same `max` and `isTop = true`. Loop instead of recursing so a long run
+  // of non-expanding `{}` groups can't exhaust the call stack.
+  for (;;) {
+    const m = balanced('{', '}', str)
+    if (!m) return [str]
 
-  // no need to expand pre, since it is guaranteed to be free of brace-sets
-  var pre = m.pre;
-  var post = m.post.length
-    ? expand(m.post, max, false)
-    : [''];
+    // no need to expand pre, since it is guaranteed to be free of brace-sets
+    const pre = m.pre
 
-  if (/\$$/.test(m.pre)) {    
-    for (var k = 0; k < post.length && k < max; k++) {
-      var expansion = pre+ '{' + m.body + '}' + post[k];
-      expansions.push(expansion);
+    if (/\$$/.test(m.pre)) {
+      const post =
+        m.post.length ? expand(m.post, max, false) : ['']
+      for (let k = 0; k < post.length && k < max; k++) {
+        const expansion = pre + '{' + m.body + '}' + post[k]
+        expansions.push(expansion)
+      }
+      return expansions
     }
-  } else {
+
     var isNumericSequence = /^-?\d+\.\.-?\d+(?:\.\.-?\d+)?$/.test(m.body);
     var isAlphaSequence = /^[a-zA-Z]\.\.[a-zA-Z](?:\.\.-?\d+)?$/.test(m.body);
     var isSequence = isNumericSequence || isAlphaSequence;
@@ -121,11 +126,18 @@ function expand(str, max, isTop) {
       // {a},b}
       if (m.post.match(/,(?!,).*\}/)) {
         str = m.pre + '{' + m.body + escClose + m.post;
-        return expand(str, max, true);
+        isTop = true;
+        continue;
       }
       return [str];
     }
 
+    // Only expand post once we know this brace set actually expands. Computing
+    // it before the early returns above expanded post a second time on every
+    // non-expanding `{}`, which is what made inputs like `a{},{},{}...` blow up
+    // exponentially.
+    const post =
+      m.post.length ? expand(m.post, max, false) : ['']
     var n;
     if (isSequence) {
       n = m.body.split(/\.\./);
@@ -199,7 +211,7 @@ function expand(str, max, isTop) {
           expansions.push(expansion);
       }
     }
-  }
 
-  return expansions;
+    return expansions;
+  }
 }
