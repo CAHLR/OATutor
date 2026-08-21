@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Understanding the Density Function",
-        "text": "The density of the rod is given by the function $$rho(x)=\\rho_0+\\left(\\rho_1-\\rho_0\\right) \\left(\\frac{x}{L}\\right)^2$$. This means the density changes quadratically from one end of the rod to the other.",
+        "text": "The density of the rod is given by the function rho(x)=rho_0+(rho_1-rho_0)*$$(x/L)**{2}$$. This means the density changes quadratically from one end of the rod to the other.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -45,7 +45,7 @@
             "abaea60linmom16a-h3"
         ],
         "title": "Calculate the Total Mass",
-        "text": "Calculate the total mass M of the rod using the integral M=int{rho_0+(rho_1-rho_0)*(x/L)**2,0,L,x}.",
+        "text": "Calculate the total mass M of the rod using the integral M=int{rho_0+(rho_1-rho_0)*$$(x/L)**{2}$$,0,L,x}.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -57,7 +57,7 @@
             "abaea60linmom16a-h4"
         ],
         "title": "Substitute the Density Function",
-        "text": "Substitute the density function $$rho(x)=\\rho_0+\\left(\\rho_1-\\rho_0\\right) \\left(\\frac{x}{L}\\right)^2$$ into the center of mass formula.",
+        "text": "Substitute the density function rho(x)=rho_0+(rho_1-rho_0)*$$(x/L)**{2}$$ into the center of mass formula.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -74,7 +74,7 @@
             "abaea60linmom16a-h5"
         ],
         "title": "Calculate the Center of Mass",
-        "text": "Calculate the center of mass $$x_{\\text{cm}}$$ using the formula $$x_{\\text{cm}}$$=(1/M)*int{x*(rho_0+(rho_1-rho_0)*(x/L)**2),0,L,x}.",
+        "text": "Calculate the center of mass $$x_{\\text{cm}}$$ using the formula $$x_{\\text{cm}}$$=(1/M)*int{x*(rho_0+(rho_1-rho_0)*$$(x/L)**{2}$$),0,L,x}.",
         "variabilization": {},
         "oer": "openai",
         "license": ""

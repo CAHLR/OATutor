@@ -23,18 +23,6 @@
     },
     {
         "id": "a88c93efixedaxis3a-h3",
-        "type": "hint",
-        "dependencies": [
-            "a88c93efixedaxis3a-h2"
-        ],
-        "title": "Substitute the Given Time",
-        "text": "To find the instantaneous angular velocity at $$t=2.0\\, \\text{s}$$, $$substitute$$ $$t=2.0$$ into the formula $$\\omega=25.0t$$.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "a88c93efixedaxis3a-h4",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -42,7 +30,7 @@
             "$$50$$"
         ],
         "dependencies": [
-            "a88c93efixedaxis3a-h3"
+            "a88c93efixedaxis3a-h2"
         ],
         "title": "Calculate the Angular Velocity",
         "text": "Substitute $$t=2.0$$ into the formula $$\\omega=25.0t$$ to find the angular velocity.",

@@ -16,7 +16,7 @@
             "ace918bnlaws20b-h1"
         ],
         "title": "Kinetic Energy Formula",
-        "text": "The initial kinetic energy of the car can be calculated using the formula: $$KE=\\frac{1}{2} m v^2$$, where $$m$$ is the mass and $$v$$ is the velocity.",
+        "text": "The initial kinetic energy of the car can be calculated using the formula: KE=1/2*m*$$v**{2}$$, where $$m$$ is the mass and $$v$$ is the velocity.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -39,18 +39,6 @@
         "dependencies": [
             "ace918bnlaws20b-h3"
         ],
-        "title": "Calculate Initial Kinetic Energy",
-        "text": "Substitute the values into the kinetic energy formula: $$KE=1050\\frac{1}{2} \\left(\\frac{40\\times5}{18}\\right)^2$$.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "ace918bnlaws20b-h5",
-        "type": "hint",
-        "dependencies": [
-            "ace918bnlaws20b-h4"
-        ],
         "title": "Work Done by the Net Force",
         "text": "The work done by the net force is equal to the initial kinetic energy, which is also equal to the force times the stopping distance: $$Work=Force x$$.",
         "variabilization": {},
@@ -58,7 +46,7 @@
         "license": ""
     },
     {
-        "id": "ace918bnlaws20b-h6",
+        "id": "ace918bnlaws20b-h5",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -66,7 +54,7 @@
             "$$2592$$"
         ],
         "dependencies": [
-            "ace918bnlaws20b-h5"
+            "ace918bnlaws20b-h4"
         ],
         "title": "Calculate the Net Force",
         "text": "Rearrange the work formula to find the force: $$Force=\\frac{Work}{x}$$. Use the initial kinetic energy as the work done.",

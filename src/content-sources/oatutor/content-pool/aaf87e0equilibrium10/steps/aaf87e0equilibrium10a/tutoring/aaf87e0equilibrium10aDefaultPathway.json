@@ -27,8 +27,8 @@
         "dependencies": [
             "aaf87e0equilibrium10a-h2"
         ],
-        "title": "Calculating Change in Volume",
-        "text": "Given that B=$$2.2\\times10**{9}$$ N/m\u00b2 and $$\\Delta$$P=$$200\\times10**{6}$$ N/m\u00b2, substitute these values into the formula to find $$\\Delta$$V/V.",
+        "title": "Finding the New Volume",
+        "text": "The initial volume $$V$$ of the sphere can be calculated using the formula for the volume of a sphere: $$V=(4/3)\\pi*r$$**3, $$where$$ $$r=0.2\\, \\text{m}$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -39,18 +39,6 @@
         "dependencies": [
             "aaf87e0equilibrium10a-h3"
         ],
-        "title": "Finding the New Volume",
-        "text": "The initial volume $$V$$ of the sphere can be calculated using the formula for the volume of a sphere: $$V=(4/3)\\pi*r$$**3, $$where$$ $$r=0.2\\, \\text{m}$$.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "aaf87e0equilibrium10a-h5",
-        "type": "hint",
-        "dependencies": [
-            "aaf87e0equilibrium10a-h4"
-        ],
         "title": "Relating Volume Change to Radius Change",
         "text": "The change in volume ($$\\Delta$$V) can be related to the change in radius ($$\\Delta$$r) using the derivative of the volume formula: $$\\Delta$$V=4*$$\\pi*r$$**2*$$\\Delta$$r.",
         "variabilization": {},
@@ -58,7 +46,7 @@
         "license": ""
     },
     {
-        "id": "aaf87e0equilibrium10a-h6",
+        "id": "aaf87e0equilibrium10a-h5",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -66,7 +54,7 @@
             "$$0.606$$"
         ],
         "dependencies": [
-            "aaf87e0equilibrium10a-h5"
+            "aaf87e0equilibrium10a-h4"
         ],
         "title": "Calculate $$\\Delta\\$\\$r$$",
         "text": "Using the relationship $$\\Delta$$V=4*$$\\pi*r$$**2*$$\\Delta$$r $$and$$ $$the$$ $$calculated$$ $$\\Delta\\$\\$V$$, $$solve$$ $$for$$ $$\\Delta\\$\\$r$$.",

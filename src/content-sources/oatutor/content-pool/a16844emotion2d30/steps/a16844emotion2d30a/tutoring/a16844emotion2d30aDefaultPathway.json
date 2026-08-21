@@ -37,19 +37,7 @@
         "id": "a16844emotion2d30a-h4",
         "type": "hint",
         "dependencies": [
-            "a16844emotion2d30a-h2"
-        ],
-        "title": "Distance Between the Vehicles",
-        "text": "The distance between the truck and the car can be found using the Pythagorean theorem: $$distance=\\sqrt{\\left(32-80t\\right)^2+\\left(50t\\right)^2}$$.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "a16844emotion2d30a-h5",
-        "type": "hint",
-        "dependencies": [
-            "a16844emotion2d30a-h4"
+            "a16844emotion2d30a-h3"
         ],
         "title": "Minimizing the Distance",
         "text": "To find when the vehicles are closest, minimize the distance function with respect to time $$t$$.",
@@ -58,7 +46,7 @@
         "license": ""
     },
     {
-        "id": "a16844emotion2d30a-h6",
+        "id": "a16844emotion2d30a-h5",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -66,7 +54,7 @@
             "$$0.288$$"
         ],
         "dependencies": [
-            "a16844emotion2d30a-h5"
+            "a16844emotion2d30a-h4"
         ],
         "title": "Derivative of the Distance Function",
         "text": "Find the derivative of the distance function with respect to time $$t$$ and set it to zero to find the critical points.",

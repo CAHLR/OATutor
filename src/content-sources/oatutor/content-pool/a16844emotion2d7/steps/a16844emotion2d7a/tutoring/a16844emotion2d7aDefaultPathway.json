@@ -16,7 +16,7 @@
             "a16844emotion2d7a-h1"
         ],
         "title": "Differentiating the i-component",
-        "text": "The i-component of the position function is $$3t^2$$. Differentiate this with respect to $$t$$.",
+        "text": "The i-component of the position function is 3.0*$$t**{2}$$. Differentiate this with respect to $$t$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -33,7 +33,7 @@
             "a16844emotion2d7a-h2"
         ],
         "title": "Differentiating the i-component",
-        "text": "What is the derivative of $$3t^2$$ with respect to $$t$$?",
+        "text": "What is the derivative of 3.0*$$t**{2}$$ with respect to $$t$$?",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -45,7 +45,7 @@
             "a16844emotion2d7a-h1"
         ],
         "title": "Differentiating the j-component",
-        "text": "The j-component of the position function is $$-7t^3$$. Differentiate this with respect to $$t$$.",
+        "text": "The j-component of the position function is -7.0*$$t**{3}$$. Differentiate this with respect to $$t$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -56,13 +56,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$-21t^2$$"
+            "-21.0*$$t**{2}$$"
         ],
         "dependencies": [
             "a16844emotion2d7a-h4"
         ],
         "title": "Differentiating the j-component",
-        "text": "What is the derivative of $$-7t^3$$ with respect to $$t$$?",
+        "text": "What is the derivative of -7.0*$$t**{3}$$ with respect to $$t$$?",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -74,7 +74,7 @@
             "a16844emotion2d7a-h1"
         ],
         "title": "Differentiating the k-component",
-        "text": "The k-component of the position function is $$-5t^{-2}$$. Differentiate this with respect to $$t$$.",
+        "text": "The k-component of the position function is -5.0*$$t**{-2}$$. Differentiate this with respect to $$t$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -85,13 +85,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$10t^{-3}$$"
+            "10.0*$$t**{-3}$$"
         ],
         "dependencies": [
             "a16844emotion2d7a-h6"
         ],
         "title": "Differentiating the k-component",
-        "text": "What is the derivative of $$-5t^{-2}$$ with respect to $$t$$?",
+        "text": "What is the derivative of -5.0*$$t**{-2}$$ with respect to $$t$$?",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -116,7 +116,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$6t i-21t^2 j+10t^{-3} k$$"
+            "6.0*t*i-21.0*$$t**{2}$$*j+10.0*$$t**{-3}$$*k"
         ],
         "dependencies": [
             "a16844emotion2d7a-h8"

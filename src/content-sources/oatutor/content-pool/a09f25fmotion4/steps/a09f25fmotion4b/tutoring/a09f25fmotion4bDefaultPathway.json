@@ -16,7 +16,7 @@
             "a09f25fmotion4b-h1"
         ],
         "title": "Find the Derivative",
-        "text": "The derivative of the position function $$x(t)=10t-2t**{2}$$ with respect to time $$t$$ gives us the velocity function $$v(t)$$.",
+        "text": "The derivative of the position function $$x(t)=10t-2t**{2}$$ with respect to time $$t$$ gives us the velocity function v(t).",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -33,25 +33,13 @@
             "a09f25fmotion4b-h2"
         ],
         "title": "Calculate the Derivative",
-        "text": "Differentiate $$x(t)=10t-2t**{2}$$ to find $$v(t)$$.",
+        "text": "Differentiate $$x(t)=10t-2t**{2}$$ to find v(t).",
         "variabilization": {},
         "oer": "openai",
         "license": ""
     },
     {
         "id": "a09f25fmotion4b-h4",
-        "type": "hint",
-        "dependencies": [
-            "a09f25fmotion4b-h3"
-        ],
-        "title": "Evaluate the Velocity at $$t=3\\, \\text{s}$$",
-        "text": "Substitute $$t=3$$ into the velocity function $$v(t)=10-4t$$ to find the instantaneous speed.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "a09f25fmotion4b-h5",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -59,7 +47,7 @@
             "$$2$$"
         ],
         "dependencies": [
-            "a09f25fmotion4b-h4"
+            "a09f25fmotion4b-h3"
         ],
         "title": "Substitute and Solve",
         "text": "Calculate v(3) using the velocity function $$v(t)=10-4t$$.",

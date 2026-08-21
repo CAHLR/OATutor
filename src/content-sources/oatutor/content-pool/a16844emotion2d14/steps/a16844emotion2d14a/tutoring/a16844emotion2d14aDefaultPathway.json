@@ -11,18 +11,6 @@
     },
     {
         "id": "a16844emotion2d14a-h2",
-        "type": "hint",
-        "dependencies": [
-            "a16844emotion2d14a-h1"
-        ],
-        "title": "Substitute the Known Values",
-        "text": "Given that the initial velocity $$v=15\\, \\tfrac{\\text{m}}{\\text{s}}$$, $$the$$ $$angle$$ $$\\theta=45$$ degrees, and the acceleration due to gravity on Mars $$g=3.7\\,\\tfrac{\\text{m}}{\\text{s}**2}$$, $$substitute$$ $$these$$ $$values$$ $$into$$ $$the$$ $$range$$ $$formula$$.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "a16844emotion2d14a-h3",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -30,7 +18,7 @@
             "$$60.8$$"
         ],
         "dependencies": [
-            "a16844emotion2d14a-h2"
+            "a16844emotion2d14a-h1"
         ],
         "title": "Calculate the Range",
         "text": "Using the formula $$R=\\frac{v**{2}\\sin(2\\theta)}{g}$$, $$calculate$$ $$the$$ $$range$$ $$of$$ $$the$$ $$soccer$$ $$kick$$.",

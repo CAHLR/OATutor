@@ -23,18 +23,6 @@
     },
     {
         "id": "ace918bnlaws26a-h3",
-        "type": "hint",
-        "dependencies": [
-            "ace918bnlaws26a-h2"
-        ],
-        "title": "Calculating Net Acceleration",
-        "text": "The net acceleration can be found using the Pythagorean theorem since the accelerations are perpendicular: $$a_{\\text{net}}$$=sqrt((5.0)**2+(3.8)**2).",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "ace918bnlaws26a-h4",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -42,7 +30,7 @@
             "$$6.3$$"
         ],
         "dependencies": [
-            "ace918bnlaws26a-h3"
+            "ace918bnlaws26a-h2"
         ],
         "title": "Calculate Net Acceleration",
         "text": "Calculate the net acceleration using the formula: $$a_{\\text{net}}$$=sqrt((5.0)**2+(3.8)**2).",
@@ -51,10 +39,10 @@
         "license": ""
     },
     {
-        "id": "ace918bnlaws26a-h5",
+        "id": "ace918bnlaws26a-h4",
         "type": "hint",
         "dependencies": [
-            "ace918bnlaws26a-h4"
+            "ace918bnlaws26a-h3"
         ],
         "title": "Finding the Force",
         "text": "Now that we have the net acceleration, use $$F=ma$$ to find the force.",
@@ -63,7 +51,7 @@
         "license": ""
     },
     {
-        "id": "ace918bnlaws26a-h6",
+        "id": "ace918bnlaws26a-h5",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -71,7 +59,7 @@
             "$$756$$"
         ],
         "dependencies": [
-            "ace918bnlaws26a-h5"
+            "ace918bnlaws26a-h4"
         ],
         "title": "Calculate the Force",
         "text": "Use the formula $$F=ma$$ with $$\\, \\text{m}\\$\\$=120$$ and $$a=6.3$$ to find the force.",

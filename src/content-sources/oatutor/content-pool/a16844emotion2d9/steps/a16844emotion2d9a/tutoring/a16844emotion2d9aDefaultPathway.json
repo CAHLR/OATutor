@@ -23,18 +23,6 @@
     },
     {
         "id": "a16844emotion2d9a-h3",
-        "type": "hint",
-        "dependencies": [
-            "a16844emotion2d9a-h2"
-        ],
-        "title": "Substitute Known Values",
-        "text": "Substitute the known values into the equation: $$1.5=0*t+\\frac{1}{2}*9.8*t**{2}$$.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "a16844emotion2d9a-h4",
         "type": "scaffold",
         "problemType": "TextBox",
         "answerType": "arithmetic",
@@ -42,7 +30,7 @@
             "$$0.55$$"
         ],
         "dependencies": [
-            "a16844emotion2d9a-h3"
+            "a16844emotion2d9a-h2"
         ],
         "title": "Solve for Time",
         "text": "Solve the equation $$1.5=\\frac{1}{2}*9.8*t**{2}$$ for $$t$$.",

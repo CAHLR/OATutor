@@ -39,7 +39,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$\\frac{\\rho_0 x b^2}{2}$$"
+            "rho_0*x*$$b**{2}$$/2"
         ],
         "dependencies": [
             "abaea60linmom17b-h3"
@@ -56,13 +56,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$\\frac{\\rho_0 a^2 b^2}{4}$$"
+            "rho_0*$$a**{2}$$*$$b**{2}$$/4"
         ],
         "dependencies": [
             "abaea60linmom17b-h4"
         ],
         "title": "Integrate Over the $$x\\$\\$-axis$$",
-        "text": "Now, integrate the result from the previous step over the $$x\\$\\$-axis$$: $$\\int_{0}^{a} \\frac{\\rho_0 x b^2}{2} \\,dx$$.",
+        "text": "Now, integrate the result from the previous step over the $$x\\$\\$-axis$$: /int{rho_0*x*$$b**{2}$$/2,0,a,x}.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -73,7 +73,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$\\frac{\\rho_0 a^2 b^2}{4}$$"
+            "rho_0*$$a**{2}$$*$$b**{2}$$/4"
         ],
         "dependencies": [
             "abaea60linmom17b-h5"

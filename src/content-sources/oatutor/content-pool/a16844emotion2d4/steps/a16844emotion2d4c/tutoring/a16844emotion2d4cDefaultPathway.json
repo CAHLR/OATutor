@@ -11,12 +11,17 @@
     },
     {
         "id": "a16844emotion2d4c-h2",
-        "type": "hint",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "0\\hat{i}-3.0\\hat{j}+0\\hat{k}"
+        ],
         "dependencies": [
             "a16844emotion2d4c-h1"
         ],
-        "title": "Calculate Position at $$t=0$$",
-        "text": "Substitute $$t=0$$ into the position function $$\\vec{r}(t)=4.0t**{2}\\hat{i}-3.0\\hat{j}+2.0t**{3}\\hat{k}$$ to find the initial position.",
+        "title": "Position at $$t=0$$",
+        "text": "What is the position of the particle at $$t=0$$?",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -27,13 +32,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0\\hat{i}-3.0\\hat{j}+0\\hat{k}"
+            "4.0\\hat{i}-3.0\\hat{j}+2.0\\hat{k}"
         ],
         "dependencies": [
             "a16844emotion2d4c-h2"
         ],
-        "title": "Position at $$t=0$$",
-        "text": "What is the position of the particle at $$t=0$$?",
+        "title": "Position at $$t=1$$",
+        "text": "What is the position of the particle at $$t=1$$?",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -42,10 +47,11 @@
         "id": "a16844emotion2d4c-h4",
         "type": "hint",
         "dependencies": [
-            "a16844emotion2d4c-h1"
+            "a16844emotion2d4c-h2",
+            "a16844emotion2d4c-h3"
         ],
-        "title": "Calculate Position at $$t=1$$",
-        "text": "Substitute $$t=1$$ into the position function $$\\vec{r}(t)=4.0t**{2}\\hat{i}-3.0\\hat{j}+2.0t**{3}\\hat{k}$$ to find the position at $$t=1$$.",
+        "title": "Calculate Change in Position",
+        "text": "Find the change in position by subtracting the initial position from the position at $$t=1$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -56,13 +62,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "4.0\\hat{i}-3.0\\hat{j}+2.0\\hat{k}"
+            "4.0\\hat{i}+2.0\\hat{k}"
         ],
         "dependencies": [
             "a16844emotion2d4c-h4"
         ],
-        "title": "Position at $$t=1$$",
-        "text": "What is the position of the particle at $$t=1$$?",
+        "title": "Change in Position",
+        "text": "What is the change in position of the particle?",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -71,11 +77,10 @@
         "id": "a16844emotion2d4c-h6",
         "type": "hint",
         "dependencies": [
-            "a16844emotion2d4c-h3",
             "a16844emotion2d4c-h5"
         ],
-        "title": "Calculate Change in Position",
-        "text": "Find the change in position by subtracting the initial position from the position at $$t=1$$.",
+        "title": "Calculate Average Velocity",
+        "text": "Divide the change in position by the change in time (1 second) to find the average velocity.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -90,35 +95,6 @@
         ],
         "dependencies": [
             "a16844emotion2d4c-h6"
-        ],
-        "title": "Change in Position",
-        "text": "What is the change in position of the particle?",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "a16844emotion2d4c-h8",
-        "type": "hint",
-        "dependencies": [
-            "a16844emotion2d4c-h7"
-        ],
-        "title": "Calculate Average Velocity",
-        "text": "Divide the change in position by the change in time (1 second) to find the average velocity.",
-        "variabilization": {},
-        "oer": "openai",
-        "license": ""
-    },
-    {
-        "id": "a16844emotion2d4c-h9",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "4.0\\hat{i}+2.0\\hat{k}"
-        ],
-        "dependencies": [
-            "a16844emotion2d4c-h8"
         ],
         "title": "Average Velocity",
         "text": "What is the average velocity of the particle between $$0\\, \\text{s}$$ and $$1.0\\, \\text{s}$$?",

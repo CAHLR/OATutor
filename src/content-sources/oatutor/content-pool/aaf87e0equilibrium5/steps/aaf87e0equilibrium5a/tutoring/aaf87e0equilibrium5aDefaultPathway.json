@@ -16,7 +16,7 @@
             "aaf87e0equilibrium5a-h1"
         ],
         "title": "Shear Modulus and Deformation",
-        "text": "The shear modulus $$G$$ is a measure of a material's ability to resist shear deformation. It is defined as the ratio of shear stress to shear strain. In this problem, the shear modulus is given as $$2.5\\times10**{10}$$ N/m\u00b2.",
+        "text": "The shear modulus $$G$$ is a measure of a material's ability to resist shear deformation. It is defined as the ratio of shear stress to shear strain.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -28,7 +28,7 @@
             "aaf87e0equilibrium5a-h2"
         ],
         "title": "Calculating Shear Stress",
-        "text": "Shear stress $$\\tau$$ is calculated using the formula $$\\tau=\\frac{F}{A}$$, $$where$$ $$F$$ is the force applied and A is the cross-sectional area. For a cylinder, A=$$\\pi$$*(d/2)**2, where $$d$$ is the diameter.",
+        "text": "Shear stress $$\\tau$$ is calculated using the formula $$\\tau=\\frac{F}{A}$$, $$where$$ $$F$$ is the force applied and A is the cross-sectional area. For a cylinder, A=$$\\pi$$*$$(d/2)**{2}$$, where $$d$$ is the diameter.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -73,7 +73,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$\u03b3=\\frac{\\frac{900}{\\pi \\left(\\frac{0.04}{2}\\right)^2}}{2.5\\times{10}^{10}}$$"
+            "\u03b3=(900/((pi*(0.04/2)**2)))/(2.5*$$10**{10}$$"
         ],
         "dependencies": [
             "aaf87e0equilibrium5a-h5"
@@ -90,7 +90,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$\u0394x=20\\frac{\\frac{900}{\\pi \\left(\\frac{0.04}{2}\\right)^2}}{2.5\\times{10}^{10}}$$"
+            "\u0394x=((900/((pi*(0.04/2)**2)))/(2.5*$$10**{10}$$)*20"
         ],
         "dependencies": [
             "aaf87e0equilibrium5a-h6"

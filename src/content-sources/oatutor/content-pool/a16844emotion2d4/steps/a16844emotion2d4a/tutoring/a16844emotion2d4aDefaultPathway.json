@@ -16,7 +16,7 @@
             "a16844emotion2d4a-h1"
         ],
         "title": "Differentiating the Position Vector",
-        "text": "The position vector is given as $$r(t)=4.0t**{2}i-3.0j+2.0t**{3}k$$. $$Differentiate$$ $$each$$ $$component$$ $$with$$ $$respect$$ $$to$$ $$time$$ $$t$$.",
+        "text": "Differentiate each component with respect to time $$t$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -33,7 +33,7 @@
             "a16844emotion2d4a-h2"
         ],
         "title": "Calculate the Derivative",
-        "text": "Differentiate the i-component: $$4t^2$$. What is the derivative?",
+        "text": "Differentiate the i-component: 4.0*$$t**{2}$$. What is the derivative?",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -61,13 +61,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$6t^2$$"
+            "6.0*$$t**{2}$$"
         ],
         "dependencies": [
             "a16844emotion2d4a-h2"
         ],
         "title": "Calculate the Derivative",
-        "text": "Differentiate the k-component: $$2t^3$$. What is the derivative?",
+        "text": "Differentiate the k-component: 2.0*$$t**{3}$$. What is the derivative?",
         "variabilization": {},
         "oer": "openai",
         "license": ""

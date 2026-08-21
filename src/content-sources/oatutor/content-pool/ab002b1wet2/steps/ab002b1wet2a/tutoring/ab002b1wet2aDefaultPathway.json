@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Initial KE",
-        "text": "$$KE_i$$ $$=$$ $$0.5\\times2 3^2$$ $$=$$ $$9$$ J.",
+        "text": "Start with the kinetic energy the object already has: $$KE_{i}=\\tfrac{1}{2}mv_{i}**{2}$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -15,20 +15,8 @@
         "dependencies": [
             "ab002b1wet2a-h1"
         ],
-        "title": "Apply W-E Theorem",
-        "text": "$$KE_f$$ $$=$$ $$KE_i$$ + $$W_{net}$$ $$=$$ $$9$$ + $$16$$ $$=$$ $$25$$ J.",
-        "variabilization": {},
-        "oer": "",
-        "license": ""
-    },
-    {
-        "id": "ab002b1wet2a-h3",
-        "type": "hint",
-        "dependencies": [
-            "ab002b1wet2a-h2"
-        ],
-        "title": "Solve for $$v_f$$",
-        "text": "$$25$$ $$=$$ $$0.5\\times2 {v_f}^2$$ $$=$$ $${v_f}^2$$, so $$v_f$$ $$=$$ $$5$$ $$\\frac{m}{s}$$.",
+        "title": "Apply the Work-Energy Theorem",
+        "text": "Net work adds to that: $$KE_{f}=KE_{i}+W_{\\text{net}}$$.",
         "variabilization": {},
         "oer": "",
         "license": ""

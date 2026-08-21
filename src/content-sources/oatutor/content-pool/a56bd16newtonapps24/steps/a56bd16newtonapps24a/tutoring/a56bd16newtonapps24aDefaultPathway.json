@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a56bd16newtonapps24a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Drag Force",
+        "text": "The drag force on a car is proportional to the square of its speed. This means if the speed of the car doubles, the drag force increases by a factor of four.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps24a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a56bd16newtonapps24a-h1"
+        ],
+        "title": "Calculating the Factor of Increase",
+        "text": "To find the factor by which the drag force increases, calculate the square of the ratio of the final speed to the initial speed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps24a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{110}{65}$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps24a-h2"
+        ],
+        "title": "Calculate the Speed Ratio",
+        "text": "Calculate the ratio of the final speed ($$110\\,\\tfrac{\\text{km}}{\\text{hr}}$$) to the initial speed ($$65\\,\\tfrac{\\text{km}}{\\text{hr}}$$).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a56bd16newtonapps24a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(\\frac{110}{65}\\right)^2$$"
+        ],
+        "dependencies": [
+            "a56bd16newtonapps24a-h3"
+        ],
+        "title": "Square the Speed Ratio",
+        "text": "Square the ratio you calculated to find the factor by which the drag force increases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]
