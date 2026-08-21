@@ -186,21 +186,22 @@ class DebugPlatform extends React.Component {
                 <AppBar position="static">
                     <Toolbar>
                         <Grid container spacing={0} role={"navigation"}>
-                            <Grid item xs={3} key={1}>
+                            <Grid item xs={12} sm={3} key={1}>
                                 <BrandLogoNav noLink={true}/>
                             </Grid>
-                            <Grid item xs={6} key={2}>
+                            <Grid item xs={12} sm={6} key={2}>
                                 <div
                                     style={{
                                         textAlign: 'center',
-                                        textAlignVertical: 'center',
                                         paddingTop: "6px",
-                                        paddingBottom: "6px"
+                                        paddingBottom: "6px",
+                                        wordBreak: "break-word",
+                                        fontSize: "clamp(14px, 4vw, 16px)",
                                     }}>
                                     {"Debug Mode: " + this.props.problemID}
                                 </div>
                             </Grid>
-                            <Grid item xs={3} key={3}>
+                            <Grid item xs={12} sm={3} key={3}>
                                 <div style={{ textAlign: 'right' }}>
                                     <Button
                                         aria-label={`Return to home`}

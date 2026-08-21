@@ -6,7 +6,7 @@ import { SITE_NAME } from "@common/global-config";
 import { cleanObjectKeys } from "../util/cleanObject";
 
 const ThemeContext = React.createContext(0);
-const SITE_VERSION = "1.7";
+const SITE_VERSION = "1.6";
 
 const CURRENT_SEMESTER = calculateSemester(Date.now());
 
@@ -98,7 +98,7 @@ const EQUATION_EDITOR_AUTO_COMMANDS =
 const EQUATION_EDITOR_AUTO_OPERATORS = "sin cos tan";
 
 const MIDDLEWARE_URL =
-    "https://di2iygvxtg.execute-api.us-west-1.amazonaws.com/prod";
+    "https://87dwtge8b4.execute-api.us-west-1.amazonaws.com/prod";
 
 const HELP_DOCUMENT =
     "https://docs.google.com/document/d/e/2PACX-1vToe2F3RiCx1nwcX9PEkMiBA2bFy9lQRaeWIbyqlc8W_KJ9q-hAMv34QaO_AdEelVY7zjFAF1uOP4pG/pub";
@@ -108,7 +108,16 @@ const DYNAMIC_HINT_URL = process.env.AI_HINT_GENERATION_AWS_ENDPOINT;
 const DYNAMIC_HINT_TEMPLATE =
     "<{problem_title}.> <{problem_subtitle}.> <{question_title}.> <{question_subtitle}.> <Student's answer is: {student_answer}.> <The correct answer is: {correct_answer}.> Please give a hint for this.";
 
-const MASTERY_THRESHOLD = 0.95;
+const TTS_API_URL = process.env.REACT_APP_TTS_AWS_ENDPOINT;
+
+const MASTERY_THRESHOLD = 0.85;
+
+const getNormalizedMastery = (mastery, lesson) => {
+    const threshold = Object.values(lesson?.learningObjectives || {}).find(
+        (value) => typeof value === "number" && value > 0
+    ) || MASTERY_THRESHOLD;
+    return Math.min(Math.max(mastery / threshold, 0), 1);
+};
 // const coursePlans = courses.sort((a, b) => a.courseName.localeCompare(b.courseName));
 const coursePlans = courses;
 const _coursePlansNoEditor = coursePlans.filter(({ editor }) => !!!editor);
@@ -117,12 +126,18 @@ const lessonPlans = [];
 for (let i = 0; i < coursePlans.length; i++) {
     const course = coursePlans[i];
     for (let j = 0; j < course.lessons.length; j++) {
-        course.lessons[j].learningObjectives = cleanObjectKeys(
-            course.lessons[j].learningObjectives
+        const lesson = course.lessons[j];
+        const lessonLanguage = course.language ?? null;
+
+        lesson.learningObjectives = cleanObjectKeys(
+            lesson.learningObjectives
         );
+        lesson.language = lessonLanguage;
+
         lessonPlans.push({
-            ...course.lessons[j],
+            ...lesson,
             courseName: course.courseName,
+            language: lessonLanguage,
             courseOER: course.courseOER != null ? course.courseOER : "",
             courseLicense:
                 course.courseLicense != null ? course.courseLicense : "",
@@ -134,7 +149,10 @@ const _lessonPlansNoEditor = lessonPlans.filter(
 );
 
 const findLessonById = (ID) => {
-    return _lessonPlansNoEditor.find((lessonPlan) => lessonPlan.id === ID);
+    if (ID == null) return undefined;
+    return _lessonPlansNoEditor.find(
+        (lessonPlan) => lessonPlan.id === ID || lessonPlan.metaId === ID
+    );
 };
 
 export {
@@ -158,6 +176,7 @@ export {
     DYNAMIC_HINT_URL,
     DYNAMIC_HINT_TEMPLATE,
     MASTERY_THRESHOLD,
+    getNormalizedMastery,
     USER_ID_STORAGE_KEY,
     PROGRESS_STORAGE_KEY,
     SITE_NAME,
@@ -168,6 +187,7 @@ export {
     DO_FOCUS_TRACKING,
     findLessonById,
     SHOW_NOT_CANVAS_WARNING,
-    DEFAULT_LANGUAGE, 
-    AVAILABLE_LANGUAGES
+    DEFAULT_LANGUAGE,
+    AVAILABLE_LANGUAGES,
+    TTS_API_URL
 };

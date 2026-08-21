@@ -5,7 +5,7 @@ import translationsEs from "../locales/es.json";
 import translationsSe from "../locales/se.json";
 
 export const useTranslation = () => {
-    const { language, setLanguage } = useLocalization();
+    const { language, setLanguage, enterCourse, exitCourse } = useLocalization();
 
     const translationsMap = {
         en: translationsEn,
@@ -19,5 +19,5 @@ export const useTranslation = () => {
         return key.split(".").reduce((obj, k) => (obj || {})[k], translations);
     };
 
-    return { translate, setLanguage };
+    return { translate, setLanguage, enterCourse, exitCourse, language };
 };

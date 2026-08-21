@@ -1,0 +1,61 @@
+{
+  "metadata": {
+    "logical_subdocument_id": "fixture-data8-disc04",
+    "semantic_modality": "DOCUMENT",
+    "s3_bucket": "local-fixture",
+    "s3_prefix": "fixture"
+  },
+  "document": {
+    "representation": {
+      "markdown": "# Discussion #4 Solutions\n\n## Joins and Aggregation\n\n1. Across all elections, which parties appear most often?\n\n(a) Write an analysis plan.\n\nSolution:\n- Group by Party\n- Count rows\n- Sort descending\n\nPandas Code:\n```python\nelections.groupby('Party').size().sort_values(ascending=False)\n```\n\nSQL Query:\n```sql\nSELECT Party, COUNT(*) AS n\nFROM elections\nGROUP BY Party\nORDER BY n DESC;\n```\n\n(b) Interpret the join diagram on the page.\n\nSolution:\nThe diagram shows a left join between candidates and parties on party_id.\n\n2. What does a scatter plot of temperature vs yield suggest?\n\nSolution:\nThe relationship appears curved rather than linear.\n",
+      "text": "Discussion #4 Solutions. 1. Across all elections... 2. What does a scatter plot..."
+    },
+    "description": "Fixture discussion solutions for compiler dry-run",
+    "summary": "Discussion 4 joins and aggregation solutions",
+    "statistics": {
+      "element_count": 8,
+      "table_count": 0,
+      "figure_count": 0,
+      "word_count": 120,
+      "line_count": 30
+    }
+  },
+  "pages": [
+    {
+      "id": "page-0",
+      "page_index": 0,
+      "detected_page_number": 1,
+      "representation": {
+        "markdown": "# Discussion #4 Solutions\n\n1. Across all elections, which parties appear most often?\n\n(a) Write an analysis plan.\n\nSolution:\n- Group by Party\n\n2. What does a scatter plot of temperature vs yield suggest?\n\nSolution:\nThe relationship appears curved rather than linear.\n"
+      },
+      "statistics": {
+        "element_count": 4,
+        "table_count": 0,
+        "figure_count": 0,
+        "word_count": 80,
+        "line_count": 20
+      }
+    }
+  ],
+  "elements": [
+    {
+      "id": "el-title",
+      "type": "TEXT",
+      "sub_type": "TITLE",
+      "representation": { "markdown": "# Discussion #4 Solutions", "text": "Discussion #4 Solutions" },
+      "reading_order": 1,
+      "page_indices": [0]
+    },
+    {
+      "id": "el-q1",
+      "type": "TEXT",
+      "sub_type": "PARAGRAPH",
+      "representation": {
+        "markdown": "1. Across all elections, which parties appear most often?",
+        "text": "1. Across all elections, which parties appear most often?"
+      },
+      "reading_order": 2,
+      "page_indices": [0]
+    }
+  ]
+}

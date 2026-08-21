@@ -7,6 +7,26 @@ import ErrorBoundary from "@components/ErrorBoundary";
 import RenderMedia from "@components/RenderMedia";
 import { CONTENT_SOURCE } from "@common/global-config";
 
+// KaTeX is strict about Unicode characters inside math. Some authored content
+// (and some LLM output) uses unicode symbols like `°` / `º` directly, which
+// causes KaTeX to throw and can crash the page if not handled.
+function sanitizeLatexMath(math) {
+    if (typeof math !== "string") return math;
+    return math
+        // Degrees
+        .replace(/[°º]/g, "^{\\circ}")
+        // Common operators/relations
+        .replace(/×/g, "\\times ")
+        .replace(/÷/g, "\\div ")
+        .replace(/±/g, "\\pm ")
+        .replace(/≈/g, "\\approx ")
+        .replace(/≤/g, "\\leq ")
+        .replace(/≥/g, "\\geq ")
+        .replace(/≠/g, "\\neq ")
+        // Unicode minus to ASCII hyphen-minus
+        .replace(/−/g, "-");
+}
+
 /**
  * @param {string|*} text
  * @param problemID
@@ -52,9 +72,13 @@ function renderText(text, problemID, variabilization, context) {
                         key={Math.random() * 2 ** 16}
                     >
                         <InlineMath
-                            math={part}
+                            math={sanitizeLatexMath(part)}
                             renderError={(error) => {
-                                throw error;
+                                // Never crash the whole UI for a single bad token.
+                                // Show raw math text instead.
+                                // eslint-disable-next-line no-console
+                                console.warn("[katex] render error in authored content:", error);
+                                return part;
                             }}
                         />
                     </ErrorBoundary>
@@ -136,9 +160,13 @@ function renderGPTText(text, problemID, variabilization, context) {
                         key={Math.random() * 2 ** 16}
                     >
                         <InlineMath
-                            math={part}
+                            math={sanitizeLatexMath(part)}
                             renderError={(error) => {
-                                throw error;
+                                // Never crash the whole UI for a single bad token.
+                                // Show raw math text instead.
+                                // eslint-disable-next-line no-console
+                                console.warn("[katex] render error in GPT content:", error);
+                                return part;
                             }}
                         />
                     </ErrorBoundary>
@@ -206,6 +234,53 @@ function preprocessChatGPTResponse(input) {
     return input;
 }
 
+
+/**
+ * Convert markdown links ([label](url)) into clickable anchors.
+ * Only allows explicit external links and mailto links.
+ * @param {string} str
+ * @return {(string | JSX.Element)[]}
+ */
+function parseForHyperlinks(str) {
+    if (typeof str !== "string" || str.length === 0) {
+        return [str];
+    }
+
+    const linkRegex = /\[([^\]]+)\]\((https?:\/\/[^\s)]+|mailto:[^\s)]+)\)/g;
+    const result = [];
+    let lastIndex = 0;
+    let match;
+
+    while ((match = linkRegex.exec(str)) !== null) {
+        const [fullMatch, label, url] = match;
+        const start = match.index;
+
+        if (start > lastIndex) {
+            result.push(str.slice(lastIndex, start));
+        }
+
+        result.push(
+            <a
+                key={Math.random() * 2 ** 16}
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                {label}
+            </a>
+        );
+
+        lastIndex = start + fullMatch.length;
+    }
+
+    if (lastIndex < str.length) {
+        result.push(str.slice(lastIndex));
+    }
+
+    return result.length > 0 ? result : [str];
+}
+
+
 /**
  * Takes in a string and iff there is 3+ underscores in a row, convert it into a fill-in-the-blank box.
  * @param {(string)} str
@@ -245,7 +320,7 @@ function parseForFillInQuestions(str) {
                 </span>
             );
         }
-        result.push(part);
+        result.push(...parseForHyperlinks(part));
     });
     return result;
 }

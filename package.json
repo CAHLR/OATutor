@@ -2,9 +2,6 @@
   "name": "open-its",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": ">=12"
-  },
   "dependencies": {
     "@common/global-config": "file:./common",
     "@material-ui/core": "~4.12.3",
@@ -13,6 +10,7 @@
     "await-to-js": "~3.0.0",
     "aws-sdk": "^2.1692.0",
     "axios": "^1.4.0",
+    "canvas-confetti": "^1.9.4",
     "clsx": "~1.1.1",
     "crypto-js": "^4.2.0",
     "equation-editor-react": "https://github.com/CAHLR/equation-editor-react-forked/releases/download/v0.0.10/equation-editor-react-0.0.10.tgz",
@@ -27,11 +25,16 @@
     "react-cursor-position": "~3.0.3",
     "react-dom": "~16.14.0",
     "react-katex": "~2.0.2",
+    "react-markdown": "^7.1.2",
     "react-medium-image-zoom": "^4.3.5",
     "react-router-dom": "~5.3.0",
     "react-scripts": "~5.0.1",
     "react-scroll": "~1.8.4",
     "react-toastify": "~8.0.2",
+    "rehype-katex": "^5.0.0",
+    "remark-gfm": "^1.0.0",
+    "remark-math": "^4.0.0",
+    "speech-rule-engine": "^5.0.0-alpha.8",
     "typeface-roboto": "~0.0.75",
     "underscore": "~1.13.1",
     "universal-cookie": "~4.0.4",
@@ -49,7 +52,13 @@
     "test": "react-app-rewired test",
     "pretest": "node src/tools/preprocessProblemPool.js",
     "eject": "react-scripts eject",
-    "fix-lockfile": "npm install --package-lock-only"
+    "fix-lockfile": "npm install --package-lock-only",
+    "process-tts": "node src/math-to-speech/scripts/autoTTSProcessor.js",
+    "process-tts:force": "node src/math-to-speech/scripts/autoTTSProcessor.js --force",
+    "process-tts:dry-run": "node src/math-to-speech/scripts/autoTTSProcessor.js --dry-run --verbose",
+    "process-tts:hints": "node src/math-to-speech/scripts/autoTTSProcessor.js --types hints",
+    "process-tts:steps": "node src/math-to-speech/scripts/autoTTSProcessor.js --types steps",
+    "process-tts:problems": "node src/math-to-speech/scripts/autoTTSProcessor.js --types problems"
   },
   "browserslist": {
     "production": [
@@ -72,5 +81,5 @@
     "react-window": "^1.8.11",
     "typescript": "4.9.5"
   },
-  "homepage": "place-holder"
+  "homepage": "https://CAHLR.github.io/OATutor-beta"
 }

@@ -54,18 +54,6 @@ All content is available in JSON format within the repository. To view the raw s
 * **Calculus Volume 1**: [Link to Spreadsheet](https://docs.google.com/spreadsheets/d/1YPJw-vBkaP54n3L4gd-t0sMKQW0e_Tj0SCp2CiAxyws/edit?gid=1196972050#gid=1196972050)
 * **Pre-Calculus Essentials (UC Berkeley Math 1B)**: [Link to Spreadsheet](https://docs.google.com/spreadsheets/d/1rL-4YOVp5d5xWJqekabRfyhuBS5AjGS1XqTQ--uzHOU/edit?gid=0#gid=0)
 
-Content in the system is now largely authored by subject matter experts utilizing the [PromptHive](https://github.com/mohireza/prompthive/) GenAI tool:
-
-Mohi Reza, Ioannis Anastasopoulos, Shreya Bhandari, and Zachary A. Pardos. 2025. PromptHive: Bringing Subject Matter Experts Back to the Forefront with Collaborative Prompt Engineering for Educational Content Creation. In *Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems* (CHI '25). Association for Computing Machinery, New York, NY, USA, Article 148, 1–22. [https://doi.org/10.1145/3706598.3714051](https://doi.org/10.1145/3706598.3714051)
-```
-@inproceedings{reza2025prompthive,
-  title={PromptHive: Bringing subject matter experts back to the forefront with collaborative prompt engineering for educational content creation},
-  author={Reza, Mohi and Anastasopoulos, Ioannis and Bhandari, Shreya and Pardos, Zachary A},
-  booktitle={Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems},
-  pages={1--22},
-  year={2025}
-}
-```
 ### License/Atribution
 
 All content in this repository is made available under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) license.
@@ -122,6 +110,15 @@ OATutor can use Firebase to persistently store log data.
 3. Centralized skill model - `src/content-sources/*/skillModel.json`
 4. Data logging/collection - Based off of the Cognitive Tutor KDD dataset.
 5. User login/registration - JSON Web Tokens
+6. Text-to-Speech (TTS) for hints, steps, and problem body using SRE-converted text and AWS Lambda (optional)
+
+### \[Optional\] Text-to-Speech (TTS)
+
+TTS uses pre-computed `pacedSpeech` fields (LaTeX → speech via SRE) and an AWS Lambda endpoint for audio.
+
+- **Generate speech text:** `npm run process-tts` (or `process-tts:force` / `process-tts:dry-run`). Writes `pacedSpeech` into hint, step, and problem JSON under `src/content-sources/oatutor/content-pool/`.
+- **Lambda:** Set `TTS_API_URL` in `src/config/config.js` to your Lambda Function URL. The frontend sends `{ segments: string[] }` and expects `{ audios: base64[] }`.
+- **Frontend:** Problem body, step title/body, and hints use `pacedSpeech` when present; otherwise a basic LaTeX-to-readable fallback is used.
 
 ## Technologies Used
 
@@ -181,10 +178,9 @@ website for more info on this syntax.
 
 ### ./platform-logic
 
-- `checkAnswer.js`: Function to check answers. 3 different types of answers are supported: 
-    - `arithmetic`: simplifies numeric expressions
-    - `numeric`: checks numeric equivalence
-    - `string`: requires answers to exactly match.
+- `checkAnswer.js`: Function to check answers. 3 different types of answers are supported: Algebraic, String, Numeric.
+  Algebraic will simplify numeric expressions, numeric checks numeric equivalence, string requires answers to exactly
+  match.
 
 - `Platform.js`: Creates top "AppBar" and presents the first "problem" (everything under the app bar is part of the
   problem component). Also imports all of the problem files and stores them in `const problemIndex`. The
@@ -203,7 +199,7 @@ website for more info on this syntax.
 #### Markdown Support
 
 - All `\` must be escaped as `\\` because values are strings
-- Wrap Latex in `$$` for inline LaTeX
+- Wrap Latex in `$` for inline LaTeX
 - Newlines can be created with `\n`, escaped as `\\n`
 
 ### ./config [Configurable]
@@ -298,7 +294,6 @@ DO_FOCUS_TRACKING = false;
 - However, content sources can be copied in as entire folders as well and committed to this repository
 
 ### Content Source Directory Structure
-
 #### ./content-pool
 - Each _problem_ is contained in its own folder.
 - Problems can contain _steps_ which are contained in their own sub-folder.
@@ -338,19 +333,10 @@ DO_FOCUS_TRACKING = false;
 
 ### Types of problems
 
-* `TextBox`: Box for student to enter answer. 3 different types of answers are supported: Algebraic, String, Numeric.
+* `TextBox` : Box for student to enter answer. 3 different types of answers are supported: Algebraic, String, Numeric.
   Algebraic will simplify numeric expressions, numeric checks numeric equivalence, string requires answers to exactly
   match.
 * `MultipleChoice`: List choices as `choices: ["Choice A", "Choice B"]`, must have `answerType: "string"`
-* `GridInput`: Provides a grid for the student to fill out. Must have `numRows` and `numCols` for the answer size, while the `stepAnswer` must be a list of lists of strings: `"[[\"1\",\"2\"],[\"3\",\"4\"]]"` for a 2x2 grid. Must have `answerType: "string"`.
-* `MatrixInput`: Provides a matrix for the student to fill out. Must have `numRows` and `numCols` for the answer size, while the `stepAnswer` must be a list of lists of strings: `"[[\"1\",\"2\"],[\"3\",\"4\"]]"` for a 2x2 grid. Must have `answerType: "string"`.
-
-### Answer Validation
-
-Due to the numerous different ways an arithmetic expression can be an answer, OATutor performs some additional validation on the student's answer to make sure they are not copying and pasting the problem body into the answer box. However, the backing evaluator does not always identify the question and answer text as unique states from different inputs. For this, steps and scaffolds have an optional `answerValidator` field that can take in one the following values:
-
-* `default`: Checks whether the representation of the problem is not the same as the representation of the student's answer. This is the default behavior in OATutor.
-* `simplified`: Compares whether the question does not contain the student's answer, and that the student's answer is in it's simplest form. This should be used for problems that convert one form of an expression to another equivalent form (e.g., convert the fifth root of x to its exponent representation).
 
 ### Example Directory Structure
 
@@ -363,8 +349,6 @@ content-sources/
     ├── content-pool/
     │   ├── circle1/
     │   │   ├── circle1.json
-    |   |   ├── figures/
-    |   |   |   ├── figure1.png
     │   │   └── steps/
     │   │       ├── circle1a/
     │   │       │   ├── circle1a.json
@@ -387,7 +371,7 @@ content-sources/
 {
     "id": "circle1",
     "title": "Buying a Big Rug",
-    "body": "Bob wants to surprise Alice by buying a new rug for their living room. Their living room is 28 feet wide and 20 feet long. To further surprise Alice, Bob wants to buy the biggest circular rug that will fit.\\n##figure1.gif##",
+    "body": "Bob wants to surprise Alice by buying a new rug for their living room. Their living room is 28 feet wide and 20 feet long. To further surprise Alice, Bob wants to buy the biggest circular rug that will fit.",
     "variabilization": {},
     "oer": "https://example.com",
     "lesson": "1.1 Circle Radius",
@@ -407,9 +391,7 @@ content-sources/
     "stepTitle": "1. Maximum Radius",
     "stepBody": "What is the maximum radius of a circular rug that will fit in the room?",
     "answerType": "numeric",
-    "variabilization": {},
-    // Can be either 'default' or 'simplified'
-    "answerValidator": "default"
+    "variabilization": {}
 }
 ```
 
@@ -434,9 +416,7 @@ content-sources/
         "answerType": "numeric",
         "type": "scaffold",
         "dependencies": [0],
-        "variabilization": {},
-        // Can be either 'default' or 'simplified'
-        "answerValidator": "default"
+        "variabilization": {}
     },
     {
         "id": "circle1a-h3",
@@ -455,7 +435,6 @@ content-sources/
 {
     "id": "pythag1", //Substeps will be in the form problem.id + 'a' and so on
     "title": "Car Forces",
-    // Figures are set using ##<figure_path>##, where the figure path is relative to the 'figures' directory for the problem
     "body": "A %CAR% experiences three horizontal forces of -3.10N, 1.70N and -4.00N. It also experiences three vertical forces of -4.30N, 0.20N and 4.20N. \\n Round all answers to the hundredths place. \\n##triangle.png## ",
     "variabilization": {}
 }
@@ -627,3 +606,5 @@ mastery. Ties (of equal mastery) in the heuristic selection algorithm are broken
 - **giveHintOnIncorrect:** controls whether an incorrect response should automatically force the user into the hint pathway
 - **keepMCOrder:** controls whether to preserve the order of MCQ choices in the spreadsheet
 - **enableCompletionMode:** controls whether the student finishes the lesson once mastery threshold is reached or once all problems exhausted
+- **enableTTS:** enables text-to-speech functionality and buttons displayed
+- **chat_display_mode:** Toggles chatbot with *Off: (chatbot disabled)* and *Window: (interactive chatbot window)*

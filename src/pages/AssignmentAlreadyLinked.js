@@ -38,7 +38,7 @@ const AssignmentAlreadyLinked = (props) => {
                     alignItems="center"
                     justifyContent="center"
                 >
-                    <Box width="75%" maxWidth={1500}>
+                    <Box width="100%" maxWidth={1500} style={{ paddingLeft: 16, paddingRight: 16 }}>
                         <center>
                             {linkedLesson
                                 ? <h1>This assignment has been linked to

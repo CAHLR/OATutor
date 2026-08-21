@@ -1,0 +1,70 @@
+import React from 'react';
+import AgentChatbox from './AgentChatbox';
+
+/**
+ * AgentIntegration.js
+ * 
+ * Wrapper component that connects Problem.js to AgentChatbox
+ * Extracts and passes necessary context from Problem.js
+ */
+class AgentIntegration extends React.Component {
+    render() {
+        const {
+            problem,
+            lesson,
+            seed,
+            problemVars,
+            stepStates,
+            bktParams,
+            getActiveStepData,
+            attemptHistory,
+            user,
+            lessonMasteryMap,
+            hintUsageByStep,
+            mode,
+            condition,
+            showSuggestedQuestions,
+            hintsOpen,
+            drawerOpen,
+            mathKeyboardOpen,
+            closeRequest,
+            onChatVisibilityChange,
+            hidePromoDueToOverlap,
+            onPromoLayoutChange,
+            onPromoEligibilityChange,
+            applyHelpPenalty,
+            chatPenaltyMode,
+        } = this.props;
+
+        return (
+            <AgentChatbox
+                problem={problem}
+                lesson={lesson}
+                seed={seed}
+                problemVars={problemVars}
+                stepStates={stepStates}
+                bktParams={bktParams}
+                getActiveStepData={getActiveStepData}
+                attemptHistory={attemptHistory}
+                user={user}
+                lessonMasteryMap={lessonMasteryMap}
+                hintUsageByStep={hintUsageByStep}
+                mode={mode}
+                condition={condition}
+                showSuggestedQuestions={showSuggestedQuestions}
+                hintsOpen={hintsOpen}
+                drawerOpen={drawerOpen}
+                mathKeyboardOpen={mathKeyboardOpen}
+                closeRequest={closeRequest}
+                onChatVisibilityChange={onChatVisibilityChange}
+                hidePromoDueToOverlap={hidePromoDueToOverlap}
+                onPromoLayoutChange={onPromoLayoutChange}
+                onPromoEligibilityChange={onPromoEligibilityChange}
+                applyHelpPenalty={applyHelpPenalty}
+                chatPenaltyMode={chatPenaltyMode}
+            />
+        );
+    }
+}
+
+export default AgentIntegration;

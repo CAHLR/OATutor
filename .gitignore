@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+node_modules/
 /.pnp
 .pnp.js
 
@@ -17,6 +17,7 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.env
 
 npm-debug.log*
 yarn-debug.log*
@@ -28,11 +29,33 @@ credentials-secret.js
 service-account-credentials.json
 sheets-service-account.json
 oatutor-firebase-adminsdk.json
+aws/aiAgentGeneration/.env
+src/config/firebaseConfig.js
 
 # Misc.
 **/.vscode
 **/.idea
 **/.Rhistory
 pnpm-lock.yaml
+serviceAccountKey.json
+export.py
+*.csv
 
 /generated
+
+public/static/images/figures/oatutor/
+
+# Course-document compiler caches / large BDA outputs (keep .gitkeep + fixtures)
+aws/aiAgentGeneration/documents/bda-raw/**
+!aws/aiAgentGeneration/documents/bda-raw/.gitkeep
+!aws/aiAgentGeneration/documents/bda-raw/_fixtures/
+!aws/aiAgentGeneration/documents/bda-raw/_fixtures/**
+aws/aiAgentGeneration/documents/compiled/**
+!aws/aiAgentGeneration/documents/compiled/.gitkeep
+aws/aiAgentGeneration/documents/assets/figures/**
+!aws/aiAgentGeneration/documents/assets/figures/.gitkeep
+aws/aiAgentGeneration/documents/assets/tables/**
+!aws/aiAgentGeneration/documents/assets/tables/.gitkeep
+# Keep all raw PDFs / nested course folders out of git (local drop-in only)
+aws/aiAgentGeneration/documents/raw/**
+!aws/aiAgentGeneration/documents/raw/.gitkeep

@@ -22,6 +22,7 @@ export const LocalizationProvider = ({ children }) => {
 
   const [activeLanguage, setActiveLanguage] = useState(platformLanguage);
   const [currentCourseName, setCurrentCourseName] = useState(null);
+  const [currentCourseLanguage, setCurrentCourseLanguage] = useState(null);
 
   useEffect(() => {
 
@@ -48,38 +49,50 @@ export const LocalizationProvider = ({ children }) => {
 
 
   useEffect(() => {
-    // if (['en', 'es', 'se'].includes(language)) {
-    //   localStorage.setItem('locale', language);
-    // }
-    if (!currentCourseName) {
+    if (!currentCourseName || !currentCourseLanguage) {
       setActiveLanguage(platformLanguage);
+      return;
     }
-  }, [platformLanguage, currentCourseName]);
 
-  /**
-   * Called when entering a course
-   * @param courseName 
-   * @param courseLanguage 
-   */
-  const enterCourse = (courseName, courseLanguage) => {
-    setCurrentCourseName(courseName);
-    const savedLang = sessionStorage.getItem(`course_lang_${courseName}`);
-    
-    if (savedLang && AVAILABLE_LANGUAGES.includes(savedLang)) {
-      setActiveLanguage(savedLang);
-    } else if (courseLanguage && AVAILABLE_LANGUAGES.includes(courseLanguage)) {
-      setActiveLanguage(courseLanguage);
-      sessionStorage.setItem(`course_lang_${courseName}`, courseLanguage);
-    } else {
-      setActiveLanguage(platformLanguage);
+    if (AVAILABLE_LANGUAGES.includes(currentCourseLanguage)) {
+      setActiveLanguage(currentCourseLanguage);
     }
+  }, [platformLanguage, currentCourseName, currentCourseLanguage]);
+
+
+  // /**
+  //  * Called when entering a course
+  //  * @param courseName 
+  //  * @param courseLanguage 
+  //  */
+  // const enterCourse = (courseName, courseLanguage) => {
+  //   setCurrentCourseName(courseName);
+  //   const savedLang = sessionStorage.getItem(`course_lang_${courseName}`);
+    
+  //   if (savedLang && AVAILABLE_LANGUAGES.includes(savedLang)) {
+  //     setActiveLanguage(savedLang);
+  //   } else if (courseLanguage && AVAILABLE_LANGUAGES.includes(courseLanguage)) {
+  //     setActiveLanguage(courseLanguage);
+  //     sessionStorage.setItem(`course_lang_${courseName}`, courseLanguage);
+  //   } else {
+  //     setActiveLanguage(platformLanguage);
+  //   }
+  // };
+
+  const enterCourse = (courseName, courseLanguage) => {
+    const normalizedCourseLanguage =
+      courseLanguage && AVAILABLE_LANGUAGES.includes(courseLanguage)
+        ? courseLanguage
+        : null;
+
+    setCurrentCourseName(courseName);
+    setCurrentCourseLanguage(normalizedCourseLanguage);
+    setActiveLanguage(normalizedCourseLanguage || platformLanguage);
   };
 
-  /**
-   * Called when leaving a course (going to home)
-   */
   const exitCourse = () => {
     setCurrentCourseName(null);
+    setCurrentCourseLanguage(null);
     setActiveLanguage(platformLanguage);
   };
 
