@@ -1,0 +1,46 @@
+[
+    {
+        "id": "ace788cLimitlLaw21a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [],
+        "title": "Plug In $$x=6$$ and Solve for f(x)",
+        "text": "What's $$\\lim_{x\\to6} f(x)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace788cLimitlLaw21a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "ace788cLimitlLaw21a-h1"
+        ],
+        "title": "Plug In $$x=6$$ and Solve for g(x)",
+        "text": "What's $$\\lim_{x\\to6} g(x)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace788cLimitlLaw21a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ace788cLimitlLaw21a-h2"
+        ],
+        "title": "Multiply the Values Together",
+        "text": "Mutiply the values together, then multiply the coefficient.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]
