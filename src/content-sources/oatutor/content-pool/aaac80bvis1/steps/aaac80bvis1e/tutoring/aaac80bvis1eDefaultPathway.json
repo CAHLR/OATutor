@@ -1,0 +1,58 @@
+[
+    {
+        "id": "aaac80bvis1e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Combining Bins",
+        "text": "When we combine bins together, the height of the new bin is the weighted average of the old bin heights.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaac80bvis1e-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$40$$"
+        ],
+        "dependencies": [
+            "aaac80bvis1e-h1"
+        ],
+        "title": "New Bin Area",
+        "text": "What is the percentage area of the new bin?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaac80bvis1e-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$500$$"
+        ],
+        "dependencies": [
+            "aaac80bvis1e-h1"
+        ],
+        "title": "New Bin Width",
+        "text": "What is the width of the new bin in dollars?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aaac80bvis1e-h4",
+        "type": "hint",
+        "dependencies": [
+            "aaac80bvis1e-h3"
+        ],
+        "title": "Comparing Bin Height",
+        "text": "Thus, the new bin height will be greater than the [500, 800) bin, but less than the [800, 1000) bin.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
