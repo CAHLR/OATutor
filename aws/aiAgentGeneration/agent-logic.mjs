@@ -5,6 +5,9 @@ import { basename, dirname, extname, join } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+/** Prompt templates live here. coursePlans.json still stores the basename only. */
+const PROMPTS_DIR = join(__dirname, 'prompts');
+
 export const DEFAULT_CHAT_PROMPT = 'PROMPTv2a.txt';
 
 // Temporarily disabled for prompt A/B testing (seminar demos).
@@ -80,9 +83,9 @@ function extractSystemPromptFromPython(source, fileLabel = 'prompt.py') {
 }
 
 function loadPromptFileContents(file) {
-    const fullPath = join(__dirname, file);
+    const fullPath = join(PROMPTS_DIR, file);
     if (!existsSync(fullPath)) {
-        throw new Error(`Prompt file not found: ${file}`);
+        throw new Error(`Prompt file not found: prompts/${file}`);
     }
 
     const ext = extname(file).toLowerCase();
