@@ -25,7 +25,7 @@ Key files:
 | --- | --- |
 | `index.mjs` | Lambda entrypoint, CORS, request routing, streaming response, CloudWatch logging, DynamoDB session memory |
 | `agent-logic.mjs` | Prompt loading, chat prompt construction, multimodal message construction, suggested-question prompt and parsing |
-| `PROMPTv1.txt` / `PROMPTv2.txt` | Allowed chat prompt templates selected by lesson config |
+| `prompts/` | Chat prompt templates. Lesson `chat_prompt` is a basename (e.g. `PROMPTv2a.txt`) |
 | `src/components/problem-layout/AgentHelper.js` | Frontend API client for chat turns and suggested questions |
 | `src/components/problem-layout/AgentChatbox.js` | Shared chat UI used by Window, Avatar, and Full modes |
 
@@ -183,14 +183,15 @@ Built by `AgentChatbox.getStudentState()`:
 
 ## Prompt Templates
 
-`agent-logic.mjs` only allows these prompt files:
+Prompt files live in `prompts/`. `coursePlans.json` and the frontend still pass a **basename only** (for example `PROMPTv2a.txt`). `agent-logic.mjs` resolves that to `prompts/<basename>` and rejects path separators.
 
 | Template | Notes |
 | --- | --- |
-| `PROMPTv1.txt` | Older tutor behavior template |
-| `PROMPTv2.txt` | Default template |
+| `prompts/PROMPTv1.txt` | Older tutor behavior template |
+| `prompts/PROMPTv2.txt` | Interactive tutor template |
+| `prompts/PROMPTv2a.txt` | Default template |
 
-The frontend passes `lesson.chat_prompt` as `chatPrompt`. If the file name is missing or not allowed, `agent-logic.mjs` falls back to `PROMPTv2.txt`.
+If the file name is missing or contains a path, `agent-logic.mjs` falls back to `PROMPTv2a.txt`.
 
 `PROMPTv1.txt` is the older expert math tutor prompt. `PROMPTv2.txt` is the newer, more interactive tutor prompt informed by:
 
@@ -371,7 +372,7 @@ Jest currently may fail before tests run if the repo's Jest config does not tran
 
 Backend deployment check:
 
-1. Deploy the latest `aws/aiAgentGeneration/index.mjs`, `agent-logic.mjs`, and prompt files.
+1. Deploy the latest `aws/aiAgentGeneration/index.mjs`, `agent-logic.mjs`, and the `prompts/` directory.
 2. Confirm Lambda env vars, especially `OPENAI_API_KEY`, `OPENAI_MODEL`, `SUGGESTIONS_MODEL`, and `CONVERSATION_TABLE_NAME`.
 3. Confirm the frontend `.env` has `REACT_APP_AI_AGENT_URL=<Lambda Function URL>`.
 4. Restart the frontend dev server after changing `.env`.
@@ -385,5 +386,5 @@ Backend deployment check:
 | Suggested questions always fall back | Lambda is stale or suggestions request is failing | Confirm deployed Lambda includes `requestType: "suggestedQuestions"` handling and `SUGGESTIONS_MODEL` is valid |
 | OpenAI error says content is null | Stale Lambda or malformed request | Current code coerces non-string `userMessage` to `""`; redeploy latest backend |
 | Images are ignored | No figure tokens found or image fetch failed | Check browser console warnings from `fetchFiguresAsBase64()` |
-| Prompt changes do not appear | Prompt file not deployed or `chatPrompt` not allowed | Only `PROMPTv1.txt` and `PROMPTv2.txt` are accepted |
+| Prompt changes do not appear | `prompts/` not deployed, or `chatPrompt` basename missing from that folder | Confirm Lambda zip includes `prompts/` and `chat_prompt` matches a file basename |
 | Mode changes do not appear | `coursePlans.json` change not loaded | Rebuild/restart frontend and confirm `lesson.chat_display_mode` |
