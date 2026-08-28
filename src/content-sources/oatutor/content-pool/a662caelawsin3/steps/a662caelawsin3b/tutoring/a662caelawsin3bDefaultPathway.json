@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a662caelawsin3b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Law of Sines",
+        "text": "Recall the Law of Sines: $$a/\\sin(\\alpha) $$=$$ b/\\sin(\\beta) $$=$$ c/\\sin(\\gamma)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin3b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin3b-h1"
+        ],
+        "title": "Sum of Angles in a Triangle",
+        "text": "The sum of angles in a triangle is always $$180$$ degrees.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin3b-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$14.1$$"
+        ],
+        "dependencies": [
+            "a662caelawsin3b-h2"
+        ],
+        "title": "Find the angle $$gamma$$, $$in$$ $$degrees$$ $$to$$ $$the$$ $$nearest$$ $$tenth$$, $$using$$ $$the$$ $$correct$$ $$value$$ $$of$$ $$the$$ $$angle$$ $$beta$$.",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin3b-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2.7$$"
+        ],
+        "dependencies": [
+            "a662caelawsin3b-s1"
+        ],
+        "title": "Using the Law of Sines, find the length of side c.",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

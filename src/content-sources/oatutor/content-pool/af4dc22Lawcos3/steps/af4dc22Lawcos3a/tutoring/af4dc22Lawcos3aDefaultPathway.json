@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Law of Cosines",
-        "text": "How could we use the law of cosines to find the length of the third side? Remember that the law of cosines is $$c^2=a^2+b^2+2\\operatorname{abcos}\\left(X\\right)$$, X is the given angle between a and $$b$$",
+        "text": "Use the Law of Sines to find beta, then use $$alpha=180-beta-gamma$$ and the Law of Sines to find side a.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -15,8 +15,8 @@
         "dependencies": [
             "af4dc22Lawcos3a-h1"
         ],
-        "title": "Side",
-        "text": "Which side length are we solving for?",
+        "title": "Unknown side",
+        "text": "The unknown side is a.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -28,7 +28,7 @@
             "af4dc22Lawcos3a-h2"
         ],
         "title": "Missing angle",
-        "text": "What angle are we missing to be able to use the cosine law? How do we find this angle given that we know $$2$$ side lengths and have another angle given to us?",
+        "text": "Find beta from $$\\fracsin^b\\left(\\beta\\right)}=\\fracsin^c\\left(\\gamma\\right)}$$, then find alpha.",
         "variabilization": {},
         "oer": "",
         "license": ""

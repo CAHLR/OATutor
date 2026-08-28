@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a662caelawsin3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Law of Sines",
+        "text": "Recall the Law of Sines: $$\\frac{a}{\\sin(\\alpha)$$} $$=$$ $$\\frac{b}{\\sin(\\beta)$$} $$=$$ $$\\frac{c}{\\sin(\\gamma)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin3a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.765$$"
+        ],
+        "dependencies": [
+            "a662caelawsin3a-h1"
+        ],
+        "title": "Find $$\\sin(\\beta)$$",
+        "text": "Using the known values $$\\alpha$$ $$=$$ 35**{\\circ}, $$a$$ $$=$$ $$6$$, $$b$$ $$=$$ $$8$$ and the law of sines, find $$\\sin(\\beta)$$ to the nearest thousandth.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin3a-s1"
+        ],
+        "title": "Multiple Solutions",
+        "text": "There are two angles between $$0$$ and $$180$$ degrees that have a sine of $$0.765$$. These angles will be supplementary (add to $$180$$ degrees). The arcsin function on your calculator will give you the smaller angle.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin3a-h2"
+        ],
+        "title": "Valid Solution",
+        "text": "From the diagram, we see that $\\beta$ is obtuse. We then want to choose the obtuse value of $\\beta$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin3a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$49.9$$"
+        ],
+        "dependencies": [
+            "a662caelawsin3a-h3"
+        ],
+        "title": "Find arcsine",
+        "text": "Using your calculator, find $$\\arcsin(\\sin(\\beta))$$, $$in$$ $$degrees$$, $$to$$ $$the$$ $$nearest$$ $$tenth$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin3a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$130.1$$"
+        ],
+        "dependencies": [
+            "a662caelawsin3a-s2"
+        ],
+        "title": "Find the correct angle",
+        "text": "Find the supplementary angle, in degrees to the nearest tenth, to what we found in the previous scaffold.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

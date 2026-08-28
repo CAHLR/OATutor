@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Use Trig Identity",
-        "text": "Use the identity $$sin(2(-\\theta))=-sin(2\\theta)$$.",
+        "text": "For origin symmetry, replace theta with $$\\theta+\\pi$$ and simplify $$sin\\left(2\\left(\\theta+\\pi\\right)\\right)$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -16,7 +16,7 @@
             "aac5661polarcoords10a-h1"
         ],
         "title": "Check for Valid Output",
-        "text": "Since the square root of a negative number is not real, the domain matters\u2014only values where $$sin(2\\theta) \\geq 0$$ are valid.",
+        "text": "Because $$sin\\left(2\\theta+2\\pi\\right)=sin\\left(2\\theta\\right)$$, the equation is unchanged wherever the square root is real.",
         "variabilization": {},
         "oer": "",
         "license": ""

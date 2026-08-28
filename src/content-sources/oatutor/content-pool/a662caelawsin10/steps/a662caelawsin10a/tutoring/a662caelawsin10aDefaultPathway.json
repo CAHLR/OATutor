@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a662caelawsin10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Triangle angle sum",
+        "text": "Recall that the sum of the interior angles of any triangle is $$180$$ degrees.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin10a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$180$$"
+        ],
+        "dependencies": [
+            "a662caelawsin10a-h1"
+        ],
+        "title": "Angle sum property",
+        "text": "What is the total measure of the angles in any triangle?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin10a-h1"
+        ],
+        "title": "Calculating the third angle",
+        "text": "If you know two angles, you can find the third by subtracting their sum from $$180$$ degrees.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin10a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$180-43-69$$"
+        ],
+        "dependencies": [
+            "a662caelawsin10a-h2"
+        ],
+        "title": "Equation for beta",
+        "text": "Given $$alpha=43$$ degrees and $$gamma=69$$ degrees, choose the expression for beta.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$180-43-69$$",
+            "$$43+69$$",
+            "$$180-43$$",
+            "$$180-69$$"
+        ]
+    }
+]

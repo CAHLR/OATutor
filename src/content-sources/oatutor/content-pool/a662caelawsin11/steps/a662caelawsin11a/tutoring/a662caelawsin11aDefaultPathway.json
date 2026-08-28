@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Sum of angles in a triangle",
-        "text": "Recall that the sum of the angles in any triangle is 180**{\\circ}.",
+        "text": "The angles in a triangle total $$180$$ degrees.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -15,7 +15,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\alpha$$ + $$\\beta$$ + $$\\gamma$$ $$=$$ 180**\\circ$$"
+            "$$\\alpha+\\beta+\\gamma=180$$"
         ],
         "dependencies": [
             "a662caelawsin11a-h1"
@@ -26,10 +26,10 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\alpha$$ + $$\\beta$$ + $$\\gamma$$ $$=$$ 180**\\circ$$",
-            "$$\\alpha$$ + $$\\beta$$ + $$\\gamma$$ $$=$$ 360**\\circ$$",
-            "$$\\alpha$$ + $$\\beta$$ $$=$$ 180**\\circ$$",
-            "$$\\alpha**2 + \\beta**2 $$=$$ \\gamma**2$$"
+            "$$\\alpha+\\beta+\\gamma=180$$",
+            "$$\\alpha+\\beta+\\gamma=360$$",
+            "$$\\alpha+\\beta=180$$",
+            "$${\\alpha}^2+{\\beta}^2={\\gamma}^2$$"
         ]
     },
     {
@@ -39,7 +39,7 @@
             "a662caelawsin11a-h1"
         ],
         "title": "Substitute known values",
-        "text": "Substitute the given values for $$\\alpha$$ and $$\\gamma$$ into the formula.",
+        "text": "Substitute $$alpha=35$$ degrees and $$gamma=73$$ degrees.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -50,7 +50,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$35**\\circ + $$\\beta$$ + 73**\\circ $$=$$ 180**\\circ$$"
+            "$$35+\\beta+73=180$$"
         ],
         "dependencies": [
             "a662caelawsin11a-h2"
@@ -61,10 +61,10 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$35**\\circ + $$\\beta$$ + 73**\\circ $$=$$ 180**\\circ$$",
-            "$$35**\\circ + $$\\beta$$ + 73**\\circ $$=$$ 360**\\circ$$",
-            "$$35**\\circ + 73**\\circ $$=$$ $$\\beta$$",
-            "$$180**\\circ $$-$$ 35**\\circ $$-$$ 73**\\circ $$=$$ $$\\beta$$"
+            "$$35+\\beta+73=180$$",
+            "$$35+\\beta+73=360$$",
+            "$$35+73=beta$$",
+            "$$180-35-73=beta$$"
         ]
     }
 ]

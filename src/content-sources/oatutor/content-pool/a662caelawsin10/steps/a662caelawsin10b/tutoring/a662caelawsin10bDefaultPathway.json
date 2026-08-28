@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a662caelawsin10b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Law of Sines for sides",
+        "text": "Use the Law of Sines: $$\\frac{a}sin^$\\left(\\alpha\\righ=\\frac{b}sin^$\\left(\\beta\\righ=\\frac{c}sin^$\\left(\\gamma\\righ$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin10b-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{a}sin^$\\left(\\alpha\\righ=\\frac{b}sin^$\\left(\\beta\\righ$$"
+        ],
+        "dependencies": [
+            "a662caelawsin10b-h1"
+        ],
+        "title": "Law of Sines proportion",
+        "text": "Which proportion should be used to find side $$b$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{a}sin^$\\left(\\alpha\\righ=\\frac{b}sin^$\\left(\\beta\\righ$$",
+            "$$\\frac{a}sin^$\\left(\\beta\\righ=\\frac{b}sin^$\\left(\\alpha\\righ$$",
+            "$$\\frac{a}sin^$\\left(\\alpha\\righ=\\frac{c}sin^$\\left(\\gamma\\righ$$",
+            "$$\\frac{a}cos^$\\left(\\alpha\\righ=\\frac{b}cos^$\\left(\\beta\\righ$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin10b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin10b-h1"
+        ],
+        "title": "Setting up the proportion",
+        "text": "You know $$a$$, $$\\alpha$$, $$and$$ $$\\beta$$. $$Which$$ $$part$$ $$of$$ $$the$$ $$Law$$ $$of$$ $$Sines$$ $$can$$ $$you$$ $$use$$ $$to$$ $$find$$ $$b$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin10b-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{20}sin^$\\left(43\\righ=\\frac{b}sin^$\\left(68\\righ$$"
+        ],
+        "dependencies": [
+            "a662caelawsin10b-h2"
+        ],
+        "title": "Substitute values",
+        "text": "Substitute $$a=20$$, $$alpha=43$$ degrees, and $$beta=68$$ degrees.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{20}sin^$\\left(43\\righ=\\frac{b}sin^$\\left(68\\righ$$",
+            "$$\\frac{20}sin^$\\left(68\\righ=\\frac{b}sin^$\\left(43\\righ$$",
+            "$$\\frac{20}cos^$\\left(43\\righ=\\frac{b}cos^$\\left(68\\righ$$",
+            "$$\\frac{43}sin^$\\left(20\\righ=\\frac{b}sin^$\\left(68\\righ$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin10b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin10b-h2"
+        ],
+        "title": "Solving for $$b$$",
+        "text": "Rearrange $$\\frac{a}sin^$\\left(\\alpha\\righ=\\frac{b}sin^$\\left(\\beta\\righ$$ to solve for $$b$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin10b-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$27.2$$"
+        ],
+        "dependencies": [
+            "a662caelawsin10b-h3"
+        ],
+        "title": "Calculate $$b$$",
+        "text": "Solve for $$b$$ and round to the nearest tenth.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

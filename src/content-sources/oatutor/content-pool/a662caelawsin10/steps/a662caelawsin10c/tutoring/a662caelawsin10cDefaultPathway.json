@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a662caelawsin10c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Law of Sines for side c",
+        "text": "Use $$\\frac{a}sin^$\\left(\\alpha\\righ=\\frac{c}sin^$\\left(\\gamma\\righ$$ to find c.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin10c-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{a}sin^$\\left(\\alpha\\righ=\\frac{c}sin^$\\left(\\gamma\\righ$$"
+        ],
+        "dependencies": [
+            "a662caelawsin10c-h1"
+        ],
+        "title": "Law of Sines proportion for $$c$$",
+        "text": "Which proportion should be used to find side c?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{a}sin^$\\left(\\alpha\\righ=\\frac{c}sin^$\\left(\\gamma\\righ$$",
+            "$$\\frac{a}sin^$\\left(\\gamma\\righ=\\frac{c}sin^$\\left(\\alpha\\righ$$",
+            "$$\\frac{a}sin^$\\left(\\alpha\\righ=\\frac{b}sin^$\\left(\\beta\\righ$$",
+            "$$\\frac{a}cos^$\\left(\\alpha\\righ=\\frac{c}cos^$\\left(\\gamma\\righ$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin10c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin10c-h1"
+        ],
+        "title": "Setting up the proportion for c",
+        "text": "Use the known values a, alpha, and gamma to set up a proportion for c.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin10c-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{20}sin^$\\left(43\\righ=\\frac{c}sin^$\\left(69\\righ$$"
+        ],
+        "dependencies": [
+            "a662caelawsin10c-h2"
+        ],
+        "title": "Substitute values for $$c$$",
+        "text": "Substitute $$a=20$$, $$alpha=43$$ degrees, and $$gamma=69$$ degrees.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{20}sin^$\\left(43\\righ=\\frac{c}sin^$\\left(69\\righ$$",
+            "$$\\frac{20}sin^$\\left(69\\righ=\\frac{c}sin^$\\left(43\\righ$$",
+            "$$\\frac{20}cos^$\\left(43\\righ=\\frac{c}cos^$\\left(69\\righ$$",
+            "$$\\frac{43}sin^$\\left(20\\righ=\\frac{c}sin^$\\left(69\\righ$$"
+        ]
+    },
+    {
+        "id": "a662caelawsin10c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a662caelawsin10c-h2"
+        ],
+        "title": "Solving for c",
+        "text": "Rearrange $$\\frac{a}sin^$\\left(\\alpha\\righ=\\frac{c}sin^$\\left(\\gamma\\righ$$ to solve for c.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a662caelawsin10c-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$27.4$$"
+        ],
+        "dependencies": [
+            "a662caelawsin10c-h3"
+        ],
+        "title": "Calculate c",
+        "text": "Solve for $$c$$ and round to the nearest tenth.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
