@@ -1,0 +1,133 @@
+[
+    {
+        "id": "a70d110lang8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Start with the Smallest Prime",
+        "text": "Begin by identifying the smallest prime number that divides $$360$$. Remember, a prime number is a number greater than $$1$$ that has no divisors other than $$1$$ and itself.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a70d110lang8a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$180$$"
+        ],
+        "dependencies": [
+            "a70d110lang8a-h1"
+        ],
+        "title": "Divide by the Smallest Prime",
+        "text": "What is $$360$$ divided by 2?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70d110lang8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a70d110lang8a-h2"
+        ],
+        "title": "Continue Dividing by $$2$$",
+        "text": "Since $$180$$ is still even, continue dividing by $$2$$ until you can no longer do so evenly.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70d110lang8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$90$$"
+        ],
+        "dependencies": [
+            "a70d110lang8a-h3"
+        ],
+        "title": "Divide Again by $$2$$",
+        "text": "What is $$180$$ divided by 2?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70d110lang8a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$45$$"
+        ],
+        "dependencies": [
+            "a70d110lang8a-h4"
+        ],
+        "title": "Divide Once More by $$2$$",
+        "text": "What is $$90$$ divided by 2?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70d110lang8a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a70d110lang8a-h5"
+        ],
+        "title": "Switch to the Next Prime Number",
+        "text": "Now that $$45$$ is not divisible by $$2$$, move to the next smallest prime number, which is $$3$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70d110lang8a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$15$$"
+        ],
+        "dependencies": [
+            "a70d110lang8a-h6"
+        ],
+        "title": "Divide by $$3$$",
+        "text": "What is $$45$$ divided by 3?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70d110lang8a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a70d110lang8a-h7"
+        ],
+        "title": "Divide Again by $$3$$",
+        "text": "What is $$15$$ divided by 3?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a70d110lang8a-h9",
+        "type": "hint",
+        "dependencies": [
+            "a70d110lang8a-h8"
+        ],
+        "title": "Final Prime Factor",
+        "text": "Now that you have reached $$5$$, which is a prime number, you have completed the factorization.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]
