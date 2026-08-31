@@ -1,0 +1,58 @@
+[
+    {
+        "id": "af0908dreal9a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{6}$$"
+        ],
+        "dependencies": [],
+        "title": "What is $$\\frac{13\\pi}{6}$$ equivalent to?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af0908dreal9a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{3}$$"
+        ],
+        "dependencies": [
+            "af0908dreal9a-h1"
+        ],
+        "title": "Using this value instead, evaluate the function.",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af0908dreal9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af0908dreal9a-h2"
+        ],
+        "title": "What is $$x$$ and $$y$$ for the method: $$X=\\frac{13\\pi}{6}$$, $$y=\\frac{\\pi}{6}$$",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af0908dreal9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "af0908dreal9a-h3"
+        ],
+        "title": "How would the equation look: $${sin}^{-1\\left(cos\\left(\\frac{13\\pi}{6}\\right)\\right)}=\\frac{\\pi}{2}-\\frac{\\pi}{6}$$",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

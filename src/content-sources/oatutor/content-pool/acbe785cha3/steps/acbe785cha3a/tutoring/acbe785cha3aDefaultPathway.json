@@ -1,0 +1,48 @@
+[
+    {
+        "id": "acbe785cha3a-1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Probability",
+        "text": "We want: P(at least one blue OR gold in $$6$$ draws)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acbe785cha3a-2",
+        "type": "hint",
+        "dependencies": [
+            "acbe785cha3a-1"
+        ],
+        "title": "Rule",
+        "text": "What's an easier way to compute this?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acbe785cha3a-3",
+        "type": "hint",
+        "dependencies": [
+            "acbe785cha3a-2"
+        ],
+        "title": "Rule",
+        "text": "The complement rule: $$1$$ - P(no blue AND no gold)",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "acbe785cha3a-4",
+        "type": "hint",
+        "dependencies": [
+            "acbe785cha3a-3"
+        ],
+        "title": "So:",
+        "text": "What\u2019s the chance of drawing only green or red in one draw? Raise to what power for $$6$$ independent draws? Then subtract from $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
