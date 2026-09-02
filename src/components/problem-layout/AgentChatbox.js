@@ -37,6 +37,7 @@ import {
     shouldJudgeAgentAnswerReveal,
     shouldPenalizeAgentOnOpen,
 } from '../../util/helpPenaltyMode.js';
+import { resolveChatModel } from '../../util/chatModel.js';
 import { chooseVariables, variabilize } from '../../platform-logic/variabilize.js';
 
 const CHAT_THEME = {
@@ -491,6 +492,7 @@ class AgentChatbox extends React.Component {
                 chatPrompt: this.props.lesson?.chat_prompt || 'PROMPTv2.txt',
                 chatDisplayMode: this.props.lesson?.chat_display_mode ?? 'Off',
                 chatPenaltyMode: this._getChatPenaltyMode(),
+                chatModel: resolveChatModel(this.props.lesson),
                 lessonId: this.props.lesson?.id || null,
                 condition: this.props.condition,
             });
@@ -659,6 +661,7 @@ class AgentChatbox extends React.Component {
                 this.props.lesson?.chat_prompt || 'PROMPTv2.txt',
                 this.props.lesson?.chat_display_mode ?? 'Off',
                 this._getChatPenaltyMode(),
+                resolveChatModel(this.props.lesson),
             );
 
             this.setState({
@@ -990,6 +993,7 @@ class AgentChatbox extends React.Component {
         const chatPrompt = this.props.lesson?.chat_prompt || 'PROMPTv2.txt';
         const chatDisplayMode = this.props.lesson?.chat_display_mode ?? 'Off';
         const chatPenaltyMode = this._getChatPenaltyMode();
+        const chatModel = resolveChatModel(this.props.lesson);
 
         const assistantMessageId = `assistant-${messageId}`;
         const turnStart = Date.now();
@@ -1027,6 +1031,7 @@ class AgentChatbox extends React.Component {
                                 chatPrompt,
                                 chatDisplayMode,
                                 chatPenaltyMode,
+                                chatModel,
                                 timestampMs: Date.now(),
                             });
                         }
@@ -1080,6 +1085,7 @@ class AgentChatbox extends React.Component {
                                 chatPrompt,
                                 chatDisplayMode,
                                 chatPenaltyMode,
+                                chatModel,
                                 timestampMs: Date.now(),
                             });
                         }
@@ -1115,7 +1121,8 @@ class AgentChatbox extends React.Component {
                         }
                     }
                 },
-                conversationHistory
+                conversationHistory,
+                chatModel
             );
         } catch (error) {
             // Error already handled in callbacks

@@ -29,6 +29,30 @@ function nowMs() {
     return Date.now();
 }
 
+function resolveRequestedChatModel(requestBody) {
+    const requested = String(requestBody?.chatModel || "").trim();
+    const defaultModel = process.env.OPENAI_MODEL || "gpt-4o";
+    return {
+        defaultModel,
+        chatModel: requested || defaultModel,
+    };
+}
+
+function isInvalidModelError(err) {
+    const code = err?.code || err?.error?.code;
+    const status = err?.status || err?.statusCode;
+    const msg = String(err?.message || "").toLowerCase();
+    return (
+        code === "model_not_found" ||
+        code === "invalid_model" ||
+        status === 404 ||
+        msg.includes("model_not_found") ||
+        msg.includes("invalid model") ||
+        msg.includes("does not exist") ||
+        msg.includes("does not have access")
+    );
+}
+
 function logEvent(evt) {
     // Single-line JSON for CloudWatch Logs Insights friendliness.
     console.log(JSON.stringify({ ...evt, timestampMs: evt.timestampMs ?? nowMs() }));
@@ -92,6 +116,7 @@ export const handler = awslambda.streamifyResponse(
                 requestBody.chatPenaltyMode ??
                 extracted?.chatPenaltyMode ??
                 problemContext?.chatPenaltyMode;
+            const { defaultModel, chatModel } = resolveRequestedChatModel(requestBody);
 
             if (requestBody?.requestType === "suggestedQuestions") {
                 const metadata = {
@@ -360,6 +385,7 @@ export const handler = awslambda.streamifyResponse(
                     chatPrompt,
                     chatDisplayMode,
                     chatPenaltyMode,
+                    chatModel,
                     historyMessageCount: fullConversationHistory.length,
                     llmMessageCount: messagesForLog.length,
                     // Exact roles/order OpenAI sees: system, then prior turns, then latest user.
@@ -384,7 +410,7 @@ export const handler = awslambda.streamifyResponse(
                 turnId,
                 userIdHash,
                 promptHash,
-                model: process.env.OPENAI_MODEL || "gpt-4o",
+                model: chatModel,
                 imagesCount,
                 historyMessageCount: fullConversationHistory.length,
                 condition,
@@ -392,6 +418,7 @@ export const handler = awslambda.streamifyResponse(
                 chatPrompt,
                 chatDisplayMode,
                 chatPenaltyMode,
+                chatModel,
                 problemId: problemContext?.problemID,
                 stepId: problemContext?.currentStep?.id,
                 courseName: problemContext?.courseName,
@@ -401,9 +428,28 @@ export const handler = awslambda.streamifyResponse(
                 hintsUsed,
             });
 
-            const response = await generateAgentResponse(openai, agentPrompt, httpResponseStream, {
-                model: process.env.OPENAI_MODEL || "gpt-4o",
-            });
+            let response;
+            try {
+                response = await generateAgentResponse(openai, agentPrompt, httpResponseStream, {
+                    model: chatModel,
+                });
+            } catch (err) {
+                if (chatModel !== defaultModel && isInvalidModelError(err)) {
+                    logEvent({
+                        eventType: "chat_model_fallback",
+                        sessionId,
+                        turnId,
+                        requestedModel: chatModel,
+                        fallbackModel: defaultModel,
+                        error: err?.message || String(err),
+                    });
+                    response = await generateAgentResponse(openai, agentPrompt, httpResponseStream, {
+                        model: defaultModel,
+                    });
+                } else {
+                    throw err;
+                }
+            }
 
             if (response) {
                 await updateConversationHistory(sessionId, safeUserMessage, response);
@@ -465,6 +511,7 @@ export const handler = awslambda.streamifyResponse(
                 chatPrompt,
                 chatDisplayMode,
                 chatPenaltyMode,
+                chatModel,
                 problemId: problemContext?.problemID,
                 stepId: problemContext?.currentStep?.id,
                 courseName: problemContext?.courseName,

@@ -1,6 +1,7 @@
 import { readFileSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { basename, dirname, extname, join } from 'path';
+import { createChatCompletion, defaultChatMaxTokens } from './openaiChatParams.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -360,12 +361,12 @@ export async function generateSuggestedQuestions(openai, prompt, config = {}) {
         max_tokens = 180,
     } = config;
 
-    const completion = await openai.chat.completions.create({
+    const completion = await createChatCompletion(openai, {
         model,
         messages: prompt,
         stream: false,
         temperature,
-        max_tokens,
+        maxTokens: max_tokens,
         response_format: { type: 'json_object' },
     });
 
@@ -428,12 +429,12 @@ export async function judgeAnswerReveal(openai, prompt, config = {}) {
         max_tokens = 120,
     } = config;
 
-    const completion = await openai.chat.completions.create({
+    const completion = await createChatCompletion(openai, {
         model,
         messages: prompt,
         stream: false,
         temperature,
-        max_tokens,
+        maxTokens: max_tokens,
         response_format: { type: 'json_object' },
     });
 
@@ -452,18 +453,16 @@ export async function judgeAnswerReveal(openai, prompt, config = {}) {
 }
 
 export async function generateAgentResponse(openai, prompt, responseStream = null, config = {}) {
-    const {
-        model = "gpt-4o",
-        temperature = 0.7,
-        max_tokens = 800  
-    } = config;
+    const model = config.model || "gpt-4o";
+    const temperature = config.temperature ?? 0.7;
+    const max_tokens = config.max_tokens ?? defaultChatMaxTokens(model);
 
-    const stream = await openai.chat.completions.create({
+    const stream = await createChatCompletion(openai, {
         model,
         messages: prompt,
         stream: true,
         temperature,
-        max_tokens
+        maxTokens: max_tokens,
     });
 
     let fullResponse = "";
