@@ -11,6 +11,7 @@ import {
     DEFAULT_CHAT_PENALTY_MODE,
     DEFAULT_HINT_PENALTY_MODE,
 } from '../../util/helpPenaltyMode.js';
+import { DEFAULT_CHAT_MODEL, resolveChatModel } from '../../util/chatModel.js';
 
 export class AgentHelper {
     constructor() {
@@ -95,6 +96,7 @@ export class AgentHelper {
             chatDisplayMode,
             condition,
             chatPrompt: lesson?.chat_prompt || 'PROMPTv2.txt',
+            chatModel: resolveChatModel(lesson),
             hintPenaltyMode: hintPenaltyMode || DEFAULT_HINT_PENALTY_MODE,
             chatPenaltyMode: chatPenaltyMode || DEFAULT_CHAT_PENALTY_MODE,
             startedAt: now,
@@ -118,7 +120,7 @@ export class AgentHelper {
      * @param {Array<{role: string, content: string}>} conversationHistory
      *   Prior turns only (exclude the current userMessage — Lambda appends it).
      */
-    buildAgentRequest(userMessage, problemContext, studentState, extracted, chatPrompt, chatDisplayMode, conversationHistory = [], chatPenaltyMode = DEFAULT_CHAT_PENALTY_MODE) {
+    buildAgentRequest(userMessage, problemContext, studentState, extracted, chatPrompt, chatDisplayMode, conversationHistory = [], chatPenaltyMode = DEFAULT_CHAT_PENALTY_MODE, chatModel = DEFAULT_CHAT_MODEL) {
         const safeUserMessage = typeof userMessage === 'string' ? userMessage : '';
         const request = {
             sessionId: this.sessionId,
@@ -131,6 +133,7 @@ export class AgentHelper {
             chatPrompt: chatPrompt || 'PROMPTv2.txt',
             chatDisplayMode: chatDisplayMode || 'Off',
             chatPenaltyMode: chatPenaltyMode || DEFAULT_CHAT_PENALTY_MODE,
+            chatModel: chatModel || DEFAULT_CHAT_MODEL,
             // Client transcript is the source of truth; DynamoDB is a backup.
             conversationHistory: Array.isArray(conversationHistory) ? conversationHistory : [],
         };
@@ -174,7 +177,7 @@ export class AgentHelper {
      * @param {object} extracted - Optional extracted input (e.g., { text, images }) for vision
      * @param {object} callbacks - { onChunkReceived, onSuccessfulCompletion, onError }
      */
-    async sendMessage(userMessage, problemContext, studentState, extracted = {}, chatPrompt = 'PROMPTv2.txt', chatDisplayMode = 'Off', chatPenaltyMode = DEFAULT_CHAT_PENALTY_MODE, callbacks = {}, conversationHistory = []) {
+    async sendMessage(userMessage, problemContext, studentState, extracted = {}, chatPrompt = 'PROMPTv2.txt', chatDisplayMode = 'Off', chatPenaltyMode = DEFAULT_CHAT_PENALTY_MODE, callbacks = {}, conversationHistory = [], chatModel = DEFAULT_CHAT_MODEL) {
         const {
             onTurnStarted = () => {},
             onChunkReceived = () => {},
@@ -204,7 +207,8 @@ export class AgentHelper {
                 chatPrompt,
                 chatDisplayMode,
                 conversationHistory,
-                chatPenaltyMode
+                chatPenaltyMode,
+                chatModel
             );
 
             // Send POST request with streaming
@@ -296,7 +300,7 @@ export class AgentHelper {
      * This is intentionally separate from chat turns so it does not mutate
      * conversation history or advance the visible chat transcript.
      */
-    async fetchSuggestedQuestions(problemContext, studentState, extracted = {}, chatPrompt = 'PROMPTv2.txt', chatDisplayMode = 'Off', chatPenaltyMode = DEFAULT_CHAT_PENALTY_MODE) {
+    async fetchSuggestedQuestions(problemContext, studentState, extracted = {}, chatPrompt = 'PROMPTv2.txt', chatDisplayMode = 'Off', chatPenaltyMode = DEFAULT_CHAT_PENALTY_MODE, chatModel = DEFAULT_CHAT_MODEL) {
         if (!this.sessionId) {
             this.initializeSession();
         }
@@ -319,6 +323,7 @@ export class AgentHelper {
                 chatPrompt: chatPrompt || 'PROMPTv2.txt',
                 chatDisplayMode: chatDisplayMode || 'Off',
                 chatPenaltyMode: chatPenaltyMode || DEFAULT_CHAT_PENALTY_MODE,
+                chatModel: chatModel || DEFAULT_CHAT_MODEL,
             }),
         });
 
@@ -354,6 +359,7 @@ export class AgentHelper {
         chatPrompt = 'PROMPTv2.txt',
         chatDisplayMode = 'Off',
         chatPenaltyMode = DEFAULT_CHAT_PENALTY_MODE,
+        chatModel = DEFAULT_CHAT_MODEL,
         lessonId = null,
         condition = null,
     } = {}) {
@@ -379,6 +385,7 @@ export class AgentHelper {
                 chatPrompt: chatPrompt || 'PROMPTv2.txt',
                 chatDisplayMode: chatDisplayMode || 'Off',
                 chatPenaltyMode: chatPenaltyMode || DEFAULT_CHAT_PENALTY_MODE,
+                chatModel: chatModel || DEFAULT_CHAT_MODEL,
                 lessonId,
                 condition,
             }),

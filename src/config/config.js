@@ -141,6 +141,7 @@ for (let i = 0; i < coursePlans.length; i++) {
             courseOER: course.courseOER != null ? course.courseOER : "",
             courseLicense:
                 course.courseLicense != null ? course.courseLicense : "",
+            chat_model: lesson.chat_model || course.chat_model || undefined,
         });
     }
 }
