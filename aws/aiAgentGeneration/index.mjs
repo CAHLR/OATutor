@@ -276,12 +276,14 @@ export const handler = awslambda.streamifyResponse(
                 ? clientHistory
                 : existingConversation;
 
+            const resolvedChatPrompt =
+                chatDisplayMode === "Full" ? "PROMPT-officehours.txt" : chatPrompt;
+
             const docCtxStarted = nowMs();
             const docCtx = await buildDocumentContext({
                 lessonId,
                 userMessage: safeUserMessage,
-                problemContext,
-                // Client authority fields are ignored inside the loader.
+                problemContext: chatDisplayMode === "Full" ? { courseName: problemContext?.courseName } : problemContext,
                 clientHints: {
                     chat_documents: requestBody.chat_documents,
                     documentId: requestBody.documentId,
@@ -312,7 +314,7 @@ export const handler = awslambda.streamifyResponse(
 
             // Optional figure bytes for figure-dependent turns (soft-fail).
             let documentImages = [];
-            if (docCtx?.assetHints?.length) {
+            if (chatDisplayMode !== "Full" && docCtx?.assetHints?.length) {
                 const runtime = getDefaultDocumentContextRuntime();
                 for (const hint of docCtx.assetHints.slice(0, 1)) {
                     const dataUrl = await runtime.tryFetchAssetDataUrl(
@@ -323,21 +325,26 @@ export const handler = awslambda.streamifyResponse(
                 }
             }
 
-            const extractedWithDocs = {
-                ...(extracted || {}),
-                images: [
-                    ...(Array.isArray(extracted?.images) ? extracted.images : []),
-                    ...documentImages,
-                ],
-            };
+            const extractedWithDocs = chatDisplayMode === "Full"
+                ? { ...(extracted || {}), images: [] }
+                : {
+                    ...(extracted || {}),
+                    images: [
+                        ...(Array.isArray(extracted?.images) ? extracted.images : []),
+                        ...documentImages,
+                    ],
+                };
             
             const agentPrompt = buildAgentPrompt({
                 userMessage: safeUserMessage,
-                problemContext,
-                studentState,
+                problemContext: chatDisplayMode === "Full"
+                    ? { courseName: problemContext?.courseName }
+                    : problemContext,
+                studentState: chatDisplayMode === "Full" ? {} : studentState,
                 conversationHistory: fullConversationHistory,
                 extracted: extractedWithDocs,
-                chatPrompt,
+                chatPrompt: resolvedChatPrompt,
+                chatDisplayMode,
                 documentContextSection: docCtx?.privatePromptSection || null,
             });
 

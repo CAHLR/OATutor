@@ -3,6 +3,7 @@ import { AppBar, Toolbar } from "@material-ui/core";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import Grid from "@material-ui/core/Grid";
 import ProblemWrapper from "@components/problem-layout/ProblemWrapper.js";
+import StandaloneChatView from "@components/problem-layout/StandaloneChatView.js";
 import LessonSelectionWrapper from "@components/problem-layout/LessonSelectionWrapper.js";
 import { withRouter } from "react-router-dom";
 
@@ -70,6 +71,8 @@ let seed = Date.now().toString();
 console.log("Generated seed");
 
 const TOC_DRAWER_OPEN_KEY = "toc:drawer-open:v1";
+
+const isOfficeHoursLesson = (lesson) => lesson?.chat_display_mode === "Full";
 
 const findMetaLessonById = (ID) => {
     for (const course of coursePlans) {
@@ -386,6 +389,13 @@ class Platform extends React.Component {
     if (!this._isMounted) return;
     if (prevCompletedProbs) {
       this.completedProbs = new Set(prevCompletedProbs);
+    }
+    if (isOfficeHoursLesson(lesson)) {
+      this.setState({
+        currProblem: null,
+        status: "learning",
+      });
+      return;
     }
     this.setState({
       currProblem: this._nextProblem(this.context ? this.context : context),
@@ -1138,7 +1148,9 @@ class Platform extends React.Component {
 
     const lessonMasteryMap = this.getLessonMasteryMap(tocCourseName);
     const inLesson = Boolean(this.props.lessonID);
-    const showToc = inLesson && !this.isFromCanvas;
+    const isOfficeHours =
+      isOfficeHoursLesson(this.lesson) || isOfficeHoursLesson(currentLesson);
+    const showToc = inLesson && !this.isFromCanvas && !isOfficeHours;
     const progressData = this.getProgressBarData();
     const isCompletionMode = this.lesson?.enableCompletionMode;
     const barPercent = isCompletionMode
@@ -1262,7 +1274,7 @@ class Platform extends React.Component {
                     <IconButton aria-label="about" title={`About ${SITE_NAME}`} onClick={this.togglePopup} size="small">
                       <HelpOutlineOutlinedIcon htmlColor={"#344054"} style={{ fontSize: 28 }} />
                     </IconButton>
-                    {this.state.status === "learning" && (
+                    {this.state.status === "learning" && !isOfficeHours && (
                       <IconButton aria-label="report problem" onClick={this.toggleFeedback} title={"Report Problem"} size="small">
                         <FeedbackOutlinedIcon htmlColor={"#344054"} style={{ fontSize: 26 }} />
                       </IconButton>
@@ -1300,8 +1312,8 @@ class Platform extends React.Component {
 
           <div className={classes.toolbarOffset} />
 
-          {/* Second top bar (desktop only) */}
-          {!isMobile && (
+          {/* Second top bar (desktop only). Hidden in office hours — one navbar. */}
+          {!isMobile && !isOfficeHours && (
           <AppBar position="fixed" className={classes.secondBarOffset}>
             <Toolbar style={{ minHeight: "56px" }}>
               <Grid container spacing={0} role={"secondary-navigation"} alignItems={"center"}>
@@ -1358,7 +1370,7 @@ class Platform extends React.Component {
                       <HelpOutlineOutlinedIcon htmlColor={"#ffffff"} style={{ fontSize: 36, margin: -2 }} />
                     </IconButton>
 
-                    {this.state.status === "learning" && (
+                    {this.state.status === "learning" && !isOfficeHours && (
                       <IconButton aria-label="report problem" onClick={this.toggleFeedback} title={"Report Problem"}>
                         <FeedbackOutlinedIcon htmlColor={"#ffffff"} style={{ fontSize: 32 }} />
                       </IconButton>
@@ -1373,7 +1385,7 @@ class Platform extends React.Component {
           </AppBar>
           )}
 
-          {!isMobile && <div style={{ height: 56 }} />}
+          {!isMobile && !isOfficeHours && <div style={{ height: 56 }} />}
 
           {/* Progress Bar */}
           <div
@@ -1383,7 +1395,7 @@ class Platform extends React.Component {
               transition: "margin 0.1s ease",
             }}
           >
-            {this.state.status === "learning" ? (
+            {this.state.status === "learning" && !isOfficeHours ? (
               <AppBar position="sticky"
                       style={{ top: progressStickyTop, backgroundColor: "#F6F6F6", boxShadow: "none", zIndex: 3 }}>
                 <Toolbar disableGutters style={{ minHeight: isMobile ? 64 : 80, paddingLeft: isMobile ? 8 : 16, paddingRight: isMobile ? 8 : 32 }}>
@@ -1671,6 +1683,18 @@ class Platform extends React.Component {
             )}
             {this.state.status === "learning" ? (
               <ErrorBoundary componentName={"Problem"} descriptor={"problem"}>
+                {isOfficeHours ? (
+                  <div
+                    style={{
+                      ...CONTAINER_STYLE,
+                      padding: 0,
+                      height: isMobile ? "calc(100vh - 56px)" : "calc(100vh - 64px)",
+                      minHeight: isMobile ? "calc(100vh - 56px)" : "calc(100vh - 64px)",
+                    }}
+                  >
+                    <StandaloneChatView lesson={this.lesson} />
+                  </div>
+                ) : (
                 <div style={CONTAINER_STYLE}>
                   <ProblemWrapper
                     problem={this.state.currProblem}
@@ -1688,6 +1712,7 @@ class Platform extends React.Component {
                     submitFeedback={this.submitFeedback}
                   />
                 </div>
+                )}
               </ErrorBoundary>
             ) : (
               ""

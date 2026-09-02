@@ -12,6 +12,7 @@ import {
     DEFAULT_HINT_PENALTY_MODE,
 } from '../../util/helpPenaltyMode.js';
 import { DEFAULT_CHAT_MODEL, resolveChatModel } from '../../util/chatModel.js';
+import { OFFICE_HOURS_CHAT_PROMPT } from '../../util/officeHours.js';
 
 export class AgentHelper {
     constructor() {
@@ -95,7 +96,9 @@ export class AgentHelper {
             lessonId: lesson?.id || null,
             chatDisplayMode,
             condition,
-            chatPrompt: lesson?.chat_prompt || 'PROMPTv2.txt',
+            chatPrompt: lesson?.chat_display_mode === 'Full'
+                ? OFFICE_HOURS_CHAT_PROMPT
+                : (lesson?.chat_prompt || 'PROMPTv2.txt'),
             chatModel: resolveChatModel(lesson),
             hintPenaltyMode: hintPenaltyMode || DEFAULT_HINT_PENALTY_MODE,
             chatPenaltyMode: chatPenaltyMode || DEFAULT_CHAT_PENALTY_MODE,

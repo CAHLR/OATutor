@@ -2,6 +2,7 @@ import { readFileSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { basename, dirname, extname, join } from 'path';
 import { createChatCompletion, defaultChatMaxTokens } from './openaiChatParams.mjs';
+import { OFFICE_HOURS_PROMPT_FILE, OFFICE_HOURS_PROMPT_TEXT } from './officeHoursPrompt.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -86,6 +87,10 @@ function extractSystemPromptFromPython(source, fileLabel = 'prompt.py') {
 function loadPromptFileContents(file) {
     const fullPath = join(PROMPTS_DIR, file);
     if (!existsSync(fullPath)) {
+        // Office hours must never fall back to an ITS prompt (e.g. PROMPTv2a.txt).
+        if (file === OFFICE_HOURS_PROMPT_FILE) {
+            return OFFICE_HOURS_PROMPT_TEXT;
+        }
         throw new Error(`Prompt file not found: prompts/${file}`);
     }
 
@@ -117,9 +122,35 @@ export function buildAgentPrompt({
     extracted = {},
     chatPrompt,
     documentContextSection = null,
+    chatDisplayMode = 'Off',
 }) {
     const { template: promptTemplate } = loadPromptTemplate(chatPrompt);
     const safeUserMessage = typeof userMessage === 'string' ? userMessage : '';
+    const isOfficeHours = chatDisplayMode === 'Full';
+
+    if (isOfficeHours) {
+        const systemPrompt = promptTemplate.replace(
+            /\{courseName\}/g,
+            problemContext?.courseName || 'this course'
+        );
+        const messages = [
+            { role: 'system', content: systemPrompt },
+        ];
+        if (
+            typeof documentContextSection === 'string' &&
+            documentContextSection.trim()
+        ) {
+            messages.push({
+                role: 'system',
+                content: documentContextSection.trim(),
+            });
+        }
+        if (conversationHistory && conversationHistory.length > 0) {
+            messages.push(...conversationHistory);
+        }
+        messages.push({ role: 'user', content: safeUserMessage });
+        return messages;
+    }
     
     // Format skill mastery
     const skillMasteryText = studentState.skillMastery && Object.keys(studentState.skillMastery).length > 0

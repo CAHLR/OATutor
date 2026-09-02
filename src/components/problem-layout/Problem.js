@@ -39,7 +39,6 @@ import { cleanArray } from "../../util/cleanObject";
 import {Accordion, AccordionSummary, Typography} from "@material-ui/core";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import AgentIntegration from './AgentIntegration';
-import StandaloneChatView from './StandaloneChatView';
 import AvatarHelpPanel from './AvatarHelpPanel';
 import { withResponsive } from '../../util/ResponsiveContext';
 import MobileBottomSheet from './MobileBottomSheet';
@@ -128,7 +127,6 @@ class Problem extends React.Component {
             avatarVisibleHintIndex: null,
             isAvatarHintVisible: false,
             avatarHintRequestId: 0,
-            standaloneExited: false,
             firstHelpAction: null, // "chat" | "hint" — set once, used to write firstActionType
             agentCloseRequest: 0,
             isAgentChatVisible: false,
@@ -1488,27 +1486,6 @@ class Problem extends React.Component {
             stepIndex: this.state.avatarHintStepIndex,
             hintIndex: this.state.avatarVisibleHintIndex,
         };
-        if (chatDisplayMode === 'Full' && !this.state.standaloneExited) {
-            return (
-                <StandaloneChatView
-                    lesson={this.props.lesson}
-                    problem={problem}
-                    seed={seed}
-                    problemVars={this.props.problemVars}
-                    stepStates={this.state.stepStates}
-                    bktParams={this.bktParams}
-                    getActiveStepData={this.getActiveStepData}
-                    attemptHistory={this.state.attemptHistory}
-                    user={this.props.user}
-                    lessonMasteryMap={this.props.lessonMasteryMap}
-                    hintUsageByStep={this.state.hintUsageByStep}
-                    condition="standalone_gpt_only"
-                    applyHelpPenalty={this.applyHelpPenalty}
-                    chatPenaltyMode={this.chatPenaltyMode}
-                    onExit={() => this.setState({ standaloneExited: true })}
-                />
-            );
-        }
 
         const drawerOpen = this.props.drawerOpen;
         const layoutGap = drawerOpen ? 3 : 4;
