@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a6143e5real9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the relevant hyperbola feature",
+        "text": "The midpoint of the vertices gives the center, and their matching $$x$$ coordinates indicate a vertical hyperbola.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6143e5real9a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(2,-1)$$"
+        ],
+        "dependencies": [
+            "a6143e5real9a-h1"
+        ],
+        "title": "Check an intermediate value",
+        "text": "What is the center?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$(2,-1)$$",
+            "$$(-2,1)$$",
+            "$$(2,1)$$",
+            "$$(-1,2)$$"
+        ]
+    },
+    {
+        "id": "a6143e5real9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6143e5real9a-h2"
+        ],
+        "title": "Use the intermediate result",
+        "text": "The distances are $$a=5$$ and $$c=7$$, $$so$$ $$b**{2}=49-25=24$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

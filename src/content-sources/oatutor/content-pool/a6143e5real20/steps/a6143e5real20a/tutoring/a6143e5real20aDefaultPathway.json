@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a6143e5real20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the relevant hyperbola feature",
+        "text": "The center, vertex, and focus share an $$x$$ coordinate, so the transverse axis is vertical.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6143e5real20a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$a=4, \\$$ $$c=5$$"
+        ],
+        "dependencies": [
+            "a6143e5real20a-h1"
+        ],
+        "title": "Check an intermediate value",
+        "text": "Find $$a$$ and $$c$$ from the vertical distances to the center.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$a=4, \\$$ $$c=5$$",
+            "$$a=5, \\$$ $$c=4$$",
+            "$$a=3, \\$$ $$c=4$$",
+            "$$a=4, \\$$ $$c=3$$"
+        ]
+    },
+    {
+        "id": "a6143e5real20a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6143e5real20a-h2"
+        ],
+        "title": "Use the intermediate result",
+        "text": "Then $$b**{2}=c**{2}-a**{2}=25-16=9$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

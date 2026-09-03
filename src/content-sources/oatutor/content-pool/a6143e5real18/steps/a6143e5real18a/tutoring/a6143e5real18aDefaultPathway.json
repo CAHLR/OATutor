@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a6143e5real18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the relevant hyperbola feature",
+        "text": "For a horizontal hyperbola, the co-vertices are $$(h, k\\pm$$ $$b)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6143e5real18a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(h,k)=(5,-2),\\$$ $$b=5$$"
+        ],
+        "dependencies": [
+            "a6143e5real18a-h1"
+        ],
+        "title": "Check an intermediate value",
+        "text": "What are the center and $$b$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$(h,k)=(5,-2),\\$$ $$b=5$$",
+            "$$(h,k)=(-5,2),\\$$ $$b=5$$",
+            "$$(h,k)=(5,-2),\\$$ $$b=6$$",
+            "$$(h,k)=(-5,-2),\\$$ $$b=6$$"
+        ]
+    },
+    {
+        "id": "a6143e5real18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6143e5real18a-h2"
+        ],
+        "title": "Use the intermediate result",
+        "text": "Add and subtract $$5$$ from the center's $$y$$ coordinate.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "id": "af0908dreal6a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{a}{h}$$"
+        ],
+        "dependencies": [],
+        "title": "What does cosine equal, if $$o=opposite$$, $$a=adjacent$$, and $$h=hypotenuse$$?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af0908dreal6a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$cos(t)=\\frac{9}{12}$$"
+        ],
+        "dependencies": [
+            "af0908dreal6a-h1"
+        ],
+        "title": "Using the hypotenuse and adjacent lengths given in the image, construct a formula for the angle $$t$$.",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af0908dreal6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "af0908dreal6a-h2"
+        ],
+        "title": "Apply $${cos}^{-1}$$ to both sides of the equation: $$t={cos}^{-1\\left(\\frac{9}{12}\\right)}$$, or $$t=0.7227$$",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

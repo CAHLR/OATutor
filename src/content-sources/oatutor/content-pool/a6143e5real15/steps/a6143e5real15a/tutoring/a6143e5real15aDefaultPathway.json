@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a6143e5real15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the relevant hyperbola feature",
+        "text": "A nondegenerate hyperbola has squared-variable terms with opposite signs.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6143e5real15a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a6143e5real15a-h1"
+        ],
+        "title": "Check an intermediate value",
+        "text": "Do the $$x**{2}$$ and $$y**{2}$$ terms have opposite signs?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a6143e5real15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6143e5real15a-h2"
+        ],
+        "title": "Use the intermediate result",
+        "text": "Both squared terms are positive, so the equation is not a hyperbola.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

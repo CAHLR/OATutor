@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a6143e5real3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the relevant hyperbola feature",
+        "text": "The positive $$x**{2}$$ term makes the hyperbola horizontal.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6143e5real3a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "a6143e5real3a-h1"
+        ],
+        "title": "Check an intermediate value",
+        "text": "Compute $$c=\\sqrt{36+64}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$8$$",
+            "$$10$$",
+            "$$14$$",
+            "$$100$$"
+        ]
+    },
+    {
+        "id": "a6143e5real3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6143e5real3a-h2"
+        ],
+        "title": "Use the intermediate result",
+        "text": "For a horizontal hyperbola centered at the origin, the vertices are $$(\\pm$$ $$a, 0)$$ and the foci are $$(\\pm$$ $$c, 0)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

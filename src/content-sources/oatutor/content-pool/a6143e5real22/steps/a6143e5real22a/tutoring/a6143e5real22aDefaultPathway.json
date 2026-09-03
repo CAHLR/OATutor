@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a6143e5real22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the relevant hyperbola feature",
+        "text": "Use the relationship $$c**{2}=a**{2}+b**{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6143e5real22a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$74-49$$"
+        ],
+        "dependencies": [
+            "a6143e5real22a-h1"
+        ],
+        "title": "Check an intermediate value",
+        "text": "Which expression gives $$b**{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$74-49$$",
+            "$$74+49$$",
+            "$$49-74$$",
+            "$$\\sqrt{74}-7$$"
+        ]
+    },
+    {
+        "id": "a6143e5real22a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6143e5real22a-h2"
+        ],
+        "title": "Use the intermediate result",
+        "text": "Subtract $$a**{2}=49$$ from $$c**{2}=74$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

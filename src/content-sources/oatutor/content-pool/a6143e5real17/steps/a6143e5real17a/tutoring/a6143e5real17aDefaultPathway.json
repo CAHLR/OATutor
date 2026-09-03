@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a6143e5real17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the relevant hyperbola feature",
+        "text": "The transverse-axis length is $$2a$$ and the conjugate-axis length is $$2b$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6143e5real17a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$a=8, \\$$ $$b=7$$"
+        ],
+        "dependencies": [
+            "a6143e5real17a-h1"
+        ],
+        "title": "Check an intermediate value",
+        "text": "What are $$a$$ and $$b$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$a=8, \\$$ $$b=7$$",
+            "$$a=7, \\$$ $$b=8$$",
+            "$$a=64, \\$$ $$b=49$$",
+            "$$a=16, \\$$ $$b=14$$"
+        ]
+    },
+    {
+        "id": "a6143e5real17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6143e5real17a-h2"
+        ],
+        "title": "Use the intermediate result",
+        "text": "Double $$a=8$$ and $$b=7$$ to obtain the two axis lengths.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

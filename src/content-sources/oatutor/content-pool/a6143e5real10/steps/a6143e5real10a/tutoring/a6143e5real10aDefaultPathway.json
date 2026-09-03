@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a6143e5real10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the relevant hyperbola feature",
+        "text": "Compare each squared binomial with $$(x-h)**{2}$$ and $$(y-k)**{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6143e5real10a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-4$$"
+        ],
+        "dependencies": [
+            "a6143e5real10a-h1"
+        ],
+        "title": "Check an intermediate value",
+        "text": "What value of $$h$$ makes $$x-h=x+4$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$-4$$",
+            "$$-1$$",
+            "$$1$$",
+            "$$4$$"
+        ]
+    },
+    {
+        "id": "a6143e5real10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6143e5real10a-h2"
+        ],
+        "title": "Use the intermediate result",
+        "text": "The positive squared term is the $$x$$ term, so the transverse axis is horizontal.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a6143e5real19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the relevant hyperbola feature",
+        "text": "Both asymptotes pass through the center of a hyperbola.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6143e5real19a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-2$$"
+        ],
+        "dependencies": [
+            "a6143e5real19a-h1"
+        ],
+        "title": "Check an intermediate value",
+        "text": "Solve $$2x+7=-2x-1$$ for $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$-3$$",
+            "$$-2$$",
+            "$$2$$",
+            "$$3$$"
+        ]
+    },
+    {
+        "id": "a6143e5real19a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6143e5real19a-h2"
+        ],
+        "title": "Use the intermediate result",
+        "text": "Substitute $$x=-2$$ into either asymptote to obtain $$y=3$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

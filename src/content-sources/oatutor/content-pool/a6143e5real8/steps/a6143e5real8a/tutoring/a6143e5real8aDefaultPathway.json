@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a6143e5real8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the relevant hyperbola feature",
+        "text": "The midpoint of the vertices is the center, and the matching $$y$$ coordinates indicate a horizontal hyperbola.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6143e5real8a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(3,2)$$"
+        ],
+        "dependencies": [
+            "a6143e5real8a-h1"
+        ],
+        "title": "Check an intermediate value",
+        "text": "What is the center?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$(3,2)$$",
+            "$$(-3,2)$$",
+            "$$(3,-2)$$",
+            "$$(4,2)$$"
+        ]
+    },
+    {
+        "id": "a6143e5real8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6143e5real8a-h2"
+        ],
+        "title": "Use the intermediate result",
+        "text": "Here $$a=4$$, $$c=6$$, $$and$$ $$b**{2}=36-16=20$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

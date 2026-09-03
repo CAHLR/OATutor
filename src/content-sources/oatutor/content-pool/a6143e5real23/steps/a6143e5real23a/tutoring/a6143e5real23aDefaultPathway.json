@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a6143e5real23a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the relevant hyperbola feature",
+        "text": "The minimum width is $$2a$$, $$so$$ $$first$$ $$find$$ $$a$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6143e5real23a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$400$$"
+        ],
+        "dependencies": [
+            "a6143e5real23a-h1"
+        ],
+        "title": "Check an intermediate value",
+        "text": "What is $$a**{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$20$$",
+            "$$40$$",
+            "$$400$$",
+            "$$1600$$"
+        ]
+    },
+    {
+        "id": "a6143e5real23a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6143e5real23a-h2"
+        ],
+        "title": "Use the intermediate result",
+        "text": "Substitute $$a**{2}=400$$, $$x=25$$, $$and$$ $$y=30$$ into $$\\frac{x**{2}}{a**{2}}-\\frac{y**{2}}{b**{2}}=1$$ to get $$b**{2}=1600$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

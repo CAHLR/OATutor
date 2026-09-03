@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a6143e5real11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the relevant hyperbola feature",
+        "text": "The center is $$(2,-3)$$ and the foci are horizontal.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6143e5real11a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$13$$"
+        ],
+        "dependencies": [
+            "a6143e5real11a-h1"
+        ],
+        "title": "Check an intermediate value",
+        "text": "Compute $$c=\\sqrt{25+144}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$5$$",
+            "$$12$$",
+            "$$13$$",
+            "$$169$$"
+        ]
+    },
+    {
+        "id": "a6143e5real11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6143e5real11a-h2"
+        ],
+        "title": "Use the intermediate result",
+        "text": "Use $$(h\\pm$$ $$c, k)=(2\\pm13, -3)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

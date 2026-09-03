@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a6143e5real1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the relevant hyperbola feature",
+        "text": "The variable with the positive squared term determines the transverse axis.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6143e5real1a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x**{2}$$"
+        ],
+        "dependencies": [
+            "a6143e5real1a-h1"
+        ],
+        "title": "Check an intermediate value",
+        "text": "Which squared term is positive in $$\\frac{x**{2}}{16}-\\frac{y**{2}}{9}=1$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$x**{2}$$",
+            "$$y**{2}$$"
+        ]
+    },
+    {
+        "id": "a6143e5real1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6143e5real1a-h2"
+        ],
+        "title": "Use the intermediate result",
+        "text": "Because the $$x**{2}$$ term is positive, the branches open left and right.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a6143e5real5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the relevant hyperbola feature",
+        "text": "For a vertical hyperbola centered at the origin, the asymptotes have slopes $$\\pm\\frac{a}{b}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6143e5real5a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$a=9, \\$$ $$b=3$$"
+        ],
+        "dependencies": [
+            "a6143e5real5a-h1"
+        ],
+        "title": "Check an intermediate value",
+        "text": "What are $$a$$ and $$b$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$a=9, \\$$ $$b=3$$",
+            "$$a=3, \\$$ $$b=9$$",
+            "$$a=81, \\$$ $$b=9$$",
+            "$$a=9, \\$$ $$b=81$$"
+        ]
+    },
+    {
+        "id": "a6143e5real5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6143e5real5a-h2"
+        ],
+        "title": "Use the intermediate result",
+        "text": "The slope magnitude is $$\\frac{9}{3}=3$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

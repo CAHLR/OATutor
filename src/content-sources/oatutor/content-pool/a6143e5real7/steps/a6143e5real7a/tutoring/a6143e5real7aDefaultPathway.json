@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a6143e5real7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the relevant hyperbola feature",
+        "text": "The shared $$x$$ coordinate is zero, so the transverse axis is vertical.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6143e5real7a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$16$$"
+        ],
+        "dependencies": [
+            "a6143e5real7a-h1"
+        ],
+        "title": "Check an intermediate value",
+        "text": "Calculate $$b**{2}=5**{2}-3**{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$8$$",
+            "$$9$$",
+            "$$16$$",
+            "$$34$$"
+        ]
+    },
+    {
+        "id": "a6143e5real7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6143e5real7a-h2"
+        ],
+        "title": "Use the intermediate result",
+        "text": "A vertical hyperbola centered at the origin has form $$\\frac{y**{2}}{a**{2}}-\\frac{x**{2}}{b**{2}}=1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a6143e5real2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the relevant hyperbola feature",
+        "text": "This is a vertical hyperbola, so its vertices and foci lie on the $$y$$ axis.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6143e5real2a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$36$$"
+        ],
+        "dependencies": [
+            "a6143e5real2a-h1"
+        ],
+        "title": "Check an intermediate value",
+        "text": "Using $$c**{2}=a**{2}+b**{2}$$, $$what$$ $$is$$ $$c**{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$14$$",
+            "$$25$$",
+            "$$36$$",
+            "$$121$$"
+        ]
+    },
+    {
+        "id": "a6143e5real2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6143e5real2a-h2"
+        ],
+        "title": "Use the intermediate result",
+        "text": "Here $$a=5$$ and $$c=6$$, $$so$$ $$use$$ $$(0, \\pm$$ $$a)$$ and $$(0, \\pm$$ $$c)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

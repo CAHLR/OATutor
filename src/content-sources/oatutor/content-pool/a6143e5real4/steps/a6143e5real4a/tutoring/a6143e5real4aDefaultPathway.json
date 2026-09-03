@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a6143e5real4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the relevant hyperbola feature",
+        "text": "For $$\\frac{x**{2}}{a**{2}}-\\frac{y**{2}}{b**{2}}=1$$, $$the$$ $$asymptotes$$ $$are$$ $$y=\\pm\\frac{b}{a}x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6143e5real4a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{4}{7}$$"
+        ],
+        "dependencies": [
+            "a6143e5real4a-h1"
+        ],
+        "title": "Check an intermediate value",
+        "text": "What is the positive slope magnitude $$\\frac{b}{a}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{4}{7}$$",
+            "$$\\frac{7}{4}$$",
+            "$$\\frac{16}{49}$$",
+            "$$\\frac{49}{16}$$"
+        ]
+    },
+    {
+        "id": "a6143e5real4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6143e5real4a-h2"
+        ],
+        "title": "Use the intermediate result",
+        "text": "Use $$a=7$$ and $$b=4$$. $$Both$$ $$positive$$ $$and$$ $$negative$$ $$slopes$$ $$are$$ $$required$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
