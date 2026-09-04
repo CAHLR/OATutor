@@ -1,0 +1,18 @@
+{
+    "id": "ad7cbc2vis4a",
+    "stepAnswer": [
+        "seats.column(\"Seat\")"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "blank (i)",
+    "stepBody": "The largest seat number in the $$\\texttt{seats}$$ table.\\nMethod 1:\\nmax((i))",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "seats.column(\"Seat\")",
+        "seats.select(\"Seat\")",
+        "seats.sort(\"Seat\")",
+        "seats.column(\"Seat\").item(0)",
+        "seats.row(\"Seat\")"
+    ]
+}

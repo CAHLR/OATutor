@@ -1,0 +1,19 @@
+{
+    "id": "a5fb8e3cause4b",
+    "stepAnswer": [
+        "coworkers.sort(\"Average Cups of Coffee\", $$descending=True)$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Carisma wants to see which of her coworkers consume the most coffee. Create a table titled $$\\texttt{consumption}$$ that organizes her coworkers from the highest average cups of coffee per day to the lowest. Which expression should $$\\texttt{consumption}$$ be assigned to?",
+    "stepBody": "Help Carisma analyze her coworkers' coffee consumption habits by creating the following tables.",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "coworkers.sort(\"Average Cups of Coffee\", $$descending=True)$$",
+    "choices": [
+        "coworkers.sort(\"Average Cups of Coffee\")",
+        "coworkers.sort(\"Average Cups of Coffee\", $$descending=False)$$",
+        "coworkers.sort(\"Average Cups of Coffee\", $$descending=True)$$",
+        "coworkers.where(\"Average Cups of Coffee\", $$descending=True)$$",
+        "coworkers.sort(\"Name\", $$descending=True)$$"
+    ]
+}

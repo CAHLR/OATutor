@@ -1,0 +1,18 @@
+{
+    "id": "ad7cbc2vis3g",
+    "stepAnswer": [
+        "\"Admin\", True"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "blank (ii)",
+    "stepBody": "Professor DeNero wants to award a prize to a staff member based on their performance on Ed. To be eligible, the staff member must receive at least one heart per post and hold an admin role. Among those who meet these criteria, the staff member with the highest number of answers will be selected as the winner. Fill in the code blanks to determine who earns the prize.\\n$$\\texttt{good\\_staff}$$ $$=$$ staff.where( (i) ).where( (ii) )\\n$$\\texttt{lucky\\_staff\\_name}$$ $$=$$ (iii).sort( (iv) ).column( (v) ).item(0)",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "\"Admin\", \"True\"",
+        "\"Admin\", False",
+        "\"Admin\", True",
+        "\"Admin\", $$1$$",
+        "True, \"Admin\""
+    ]
+}

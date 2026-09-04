@@ -1,0 +1,18 @@
+{
+    "id": "a5fb8e3cause4c",
+    "stepAnswer": [
+        "coworkers.select(\"Average Cups of Coffee\", \"Method\")"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Carisma decides she only wants to focus on her coworkers' average coffee consumption and method of commuting to work. Create a table titled $$\\texttt{coffee\\_and\\_commute}$$ that includes only the Average Cups of Coffee and Method columns in that order. Which expression should $$\\texttt{coffee\\_and\\_commute}$$ be assigned to?",
+    "stepBody": "Help Carisma analyze her coworkers' coffee consumption habits by creating the following tables.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "coworkers.select(\"Method\", \"Average Cups of Coffee\")",
+        "coworkers.drop(\"Average Cups of Coffee\", \"Method\")",
+        "coworkers.select(\"Average Cups of Coffee\", \"Method\")",
+        "coworkers.where(\"Average Cups of Coffee\", \"Method\")",
+        "coworkers.column(\"Average Cups of Coffee\", \"Method\")"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "id": "ad7cbc2vis2c",
+    "stepAnswer": [
+        "The code errors because it attempts to divide an array by a table. Arrays can only be divided by an integer or another array of a similar data type and of the same length."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Describe the issue that causes this error.",
+    "stepBody": "An array of the average number of aces hit per match for each player.\\ntennis.column(\"Num. Aces\") / tennis.select(\"Matches Played\")\\nTypeError: ufunc 'divide' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "The code errors because the Num. Aces column contains strings rather than integers.",
+        "The code errors because the two columns have different numbers of rows.",
+        "The code errors because it attempts to divide an array by a table. Arrays can only be divided by an integer or another array of a similar data type and of the same length.",
+        "The code errors because division of one array by another array is never allowed in Python.",
+        "The code errors because the select method returns an array of strings that cannot be divided."
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "id": "ad7cbc2vis2e",
+    "stepAnswer": [
+        "The code errors because \"10000\" is a string, making comparisons with the values in the Num. Aces column (which are integers) invalid."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Describe the issue that causes this error.",
+    "stepBody": "The name of the player with less than 10,000 aces who has played the most matches in their career.\\n$$\\texttt{less\\_aces\\_players}$$ $$=$$ tennis.where(\"Num. Aces\", are.below(\"10000\"))\\n$$\\texttt{less\\_aces\\_most\\_matches}$$ $$=$$ $$\\texttt{less\\_aces\\_players.sort(\"Matches}$$ Played\", $$descending=True).column(\"Name\").item(0)$$\\nUFuncTypeError: ufunc 'less' did not contain a loop with signature matching types (<class 'numpy.dtypes.Int64DType'>, <class 'numpy.dtypes.StrDType'>) -> None",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "The code errors because the sort method cannot be used after the where method.",
+        "The code errors because $$descending=True$$ is not a valid argument to the sort method.",
+        "The code errors because \"10000\" is a string, making comparisons with the values in the Num. Aces column (which are integers) invalid.",
+        "The code errors because item(0) is applied to a table rather than to an array.",
+        "The code errors because the are.below predicate requires two arguments."
+    ]
+}

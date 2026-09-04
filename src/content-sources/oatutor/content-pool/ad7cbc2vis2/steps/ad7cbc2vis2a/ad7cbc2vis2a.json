@@ -1,0 +1,18 @@
+{
+    "id": "ad7cbc2vis2a",
+    "stepAnswer": [
+        "The code errors because it tries to divide a table by an integer, which is not a valid operation."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Describe the issue that causes this error.",
+    "stepBody": "The proportion of players in the table that are from the United States.\\ntennis.where(\"Nationality\", \"United States\") / $$\\texttt{tennis.num\\_rows}$$\\nTypeError: unsupported operand type(s) for /: 'Table' and 'int'",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "The code errors because the where method returns an array, which cannot be divided by an integer.",
+        "The code errors because it tries to divide a table by an integer, which is not a valid operation.",
+        "The code errors because the two arguments to where must be of the same data type.",
+        "The code errors because there are no players from the United States in the table.",
+        "The code errors because a proportion cannot be computed without first sorting the table."
+    ]
+}

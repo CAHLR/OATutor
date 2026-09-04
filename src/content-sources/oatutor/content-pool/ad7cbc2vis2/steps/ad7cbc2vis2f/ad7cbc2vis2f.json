@@ -1,0 +1,18 @@
+{
+    "id": "ad7cbc2vis2f",
+    "stepAnswer": [
+        "tennis.where(\"Num. Aces\", are.below(10000))"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Which corrected expression should be assigned on the first line?",
+    "stepBody": "The name of the player with less than 10,000 aces who has played the most matches in their career.\\n$$\\texttt{less\\_aces\\_players}$$ $$=$$ tennis.where(\"Num. Aces\", are.below(\"10000\"))\\n$$\\texttt{less\\_aces\\_most\\_matches}$$ $$=$$ $$\\texttt{less\\_aces\\_players.sort(\"Matches}$$ Played\", $$descending=True).column(\"Name\").item(0)$$\\nUFuncTypeError: ufunc 'less' did not contain a loop with signature matching types (<class 'numpy.dtypes.Int64DType'>, <class 'numpy.dtypes.StrDType'>) -> None",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "tennis.where(\"Num. Aces\", are.below(\"10000\"))",
+        "tennis.where(\"Num. Aces\", are.above(10000))",
+        "tennis.where(\"Num. Aces\", are.below(10000))",
+        "tennis.column(\"Num. Aces\", are.below(10000))",
+        "tennis.where(\"Num. Aces\", are.below(int(\"10000\")))"
+    ]
+}

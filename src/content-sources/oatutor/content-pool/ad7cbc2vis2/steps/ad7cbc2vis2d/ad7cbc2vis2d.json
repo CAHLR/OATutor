@@ -1,0 +1,18 @@
+{
+    "id": "ad7cbc2vis2d",
+    "stepAnswer": [
+        "tennis.column(\"Num. Aces\") / tennis.column(\"Matches Played\")"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Which corrected code computes the described value?",
+    "stepBody": "An array of the average number of aces hit per match for each player.\\ntennis.column(\"Num. Aces\") / tennis.select(\"Matches Played\")\\nTypeError: ufunc 'divide' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "tennis.select(\"Num. Aces\") / tennis.select(\"Matches Played\")",
+        "tennis.column(\"Num. Aces\") / tennis.column(\"Matches Played\").item(0)",
+        "tennis.select(\"Num. Aces\") / tennis.column(\"Matches Played\")",
+        "tennis.column(\"Num. Aces\") / tennis.column(\"Matches Played\")",
+        "tennis.column(\"Matches Played\") / tennis.column(\"Num. Aces\")"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "id": "a5fb8e3cause4a",
+    "stepAnswer": [
+        "coworkers.where(\"Method\", \"drive\")"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Carisma wants to focus on her coworkers who commute by driving to work. Create a table titled $$\\texttt{drivers}$$ that only includes coworkers who drive to work. Which expression should $$\\texttt{drivers}$$ be assigned to?",
+    "stepBody": "Help Carisma analyze her coworkers' coffee consumption habits by creating the following tables.",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "coworkers.select(\"Method\", \"drive\")",
+        "coworkers.where(\"Method\", \"drive\")",
+        "coworkers.where(\"drive\", \"Method\")",
+        "coworkers.where(\"Method\", \"bus\")",
+        "coworkers.take(\"Method\", \"drive\")"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "id": "ad7cbc2vis2b",
+    "stepAnswer": [
+        "tennis.where(\"Nationality\", \"United $$\\texttt{States\").num\\_rows}$$ / $$\\texttt{tennis.num\\_rows}$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Which corrected code computes the described value?",
+    "stepBody": "The proportion of players in the table that are from the United States.\\ntennis.where(\"Nationality\", \"United States\") / $$\\texttt{tennis.num\\_rows}$$\\nTypeError: unsupported operand type(s) for /: 'Table' and 'int'",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "tennis.where(\"Nationality\", \"United $$\\texttt{States\").num\\_rows()}$$ / $$\\texttt{tennis.num\\_rows()}$$",
+        "$$\\texttt{tennis.column(\"Nationality\").num\\_rows}$$ / $$\\texttt{tennis.num\\_rows}$$",
+        "tennis.where(\"Nationality\", \"United $$\\texttt{States\").num\\_rows}$$ / $$\\texttt{tennis.num\\_rows}$$",
+        "tennis.select(\"Nationality\", \"United $$\\texttt{States\").num\\_rows}$$ / $$\\texttt{tennis.num\\_rows}$$",
+        "tennis.where(\"Nationality\", \"United $$\\texttt{States\").num\\_rows}$$ / $$\\texttt{tennis.num\\_columns}$$"
+    ]
+}
