@@ -65,7 +65,10 @@ jobs:
         mv "OpenStax Content" "content-pool"
         mkdir -p bkt-params
         mv bktParams.json bkt-params/defaultBKTParams.json
-        cp bkt-params/defaultBKTParams.json bkt-params/experimentalBKTParams.json
+        python3 /home/runner/work/OATutor-Tooling/bkt/merge_experimental.py \
+          --default bkt-params/defaultBKTParams.json \
+          --fitted /home/runner/work/OATutor-Tooling/bkt/output/experimentalBKTParams.json \
+          --out bkt-params/experimentalBKTParams.json
 
     - name: Run Node.js preprocessing script
       run: |
