@@ -1,0 +1,18 @@
+{
+    "id": "ac0bc72pred2f",
+    "stepAnswer": [
+        "Greater than or equal to $$121$$ because the majority of neighbors will always be benign $$=$$ $$1$$ since there are $$120$$ of them and at most $$60$$ benign $$=$$ $$0$$."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "f) Suppose in our breast tumor training dataset we have $$60$$ benign $$=$$ $$0$$ data points and $$120$$ benign $$=$$ $$1$$ data points. For what values of k would we always predict the same class?",
+    "stepBody": "",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "Greater than or equal to $$121$$ because the majority of neighbors will always be benign $$=$$ $$1$$ since there are $$120$$ of them and at most $$60$$ benign $$=$$ $$0$$.",
+    "choices": [
+        "Greater than or equal to $$60$$ because once k exceeds the number of malignant points, they can never win the vote.",
+        "Greater than or equal to $$121$$ because the majority of neighbors will always be benign $$=$$ $$1$$ since there are $$120$$ of them and at most $$60$$ benign $$=$$ $$0$$.",
+        "Greater than $$180$$ because you'd need to include every single point before the prediction becomes constant.",
+        "Greater than or equal to $$1$$ because the classifier always predicts the same class since there are more benign $$=$$ $$1$$ points overall."
+    ]
+}
