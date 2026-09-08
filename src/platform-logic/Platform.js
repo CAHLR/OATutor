@@ -27,6 +27,7 @@ import {
 import to from "await-to-js";
 import { toast } from "react-toastify";
 import ToastID from "../util/toastIds";
+import { getStudentDisplayName } from "../util/getStudentDisplayName";
 import BrandLogoNav from "@components/BrandLogoNav";
 import { cleanArray } from "../util/cleanObject";
 import ErrorBoundary from "@components/ErrorBoundary";
@@ -1126,7 +1127,11 @@ class Platform extends React.Component {
     const drawerWidth = 340;
     const isMobile = isMobileWidth(width);
 
-    this.studentNameDisplay = this.context.studentName ? decodeURIComponent(this.context.studentName) : translate("platform.LoggedIn");
+    this.studentNameDisplay = getStudentDisplayName(
+      this.context,
+      translate("platform.NotLoggedIn"),
+      translate("platform.LoggedIn")
+    );
 
     const tocCourseName = this.state.selectedCourse?.courseName || findLessonById(this.props.lessonID)?.courseName;
     const currentLesson = findLessonById(this.props.lessonID);
