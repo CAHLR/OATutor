@@ -718,6 +718,7 @@ class Problem extends React.Component {
                 kcArray = [];
             }
             const _kcArray = cleanArray(kcArray);
+            let markFirstAttempt = false;
             for (const kc of _kcArray) {
                 if (!this.bktParams[kc]) {
                     console.debug("invalid KC", kc);
@@ -733,9 +734,12 @@ class Problem extends React.Component {
                     continue;
                 }
                 if (this.doMasteryUpdate && (firstAttempts[cardIndex] === undefined || firstAttempts[cardIndex] === false)) {
-                    firstAttempts[cardIndex] = true;
+                    markFirstAttempt = true;
                     update(this.bktParams[kc], bktIsCorrect);
                 }
+            }
+            if (markFirstAttempt) {
+                firstAttempts[cardIndex] = true;
             }
         }
 
