@@ -111,6 +111,7 @@ OATutor can use Firebase to persistently store log data.
 4. Data logging/collection - Based off of the Cognitive Tutor KDD dataset.
 5. User login/registration - JSON Web Tokens
 6. Text-to-Speech (TTS) for hints, steps, and problem body using SRE-converted text and AWS Lambda (optional)
+7. Meta-lessons for A/B testing - deterministically route students to one variant of a lesson from a single link (optional)
 
 ### \[Optional\] Text-to-Speech (TTS)
 
@@ -119,6 +120,14 @@ TTS uses pre-computed `pacedSpeech` fields (LaTeX → speech via SRE) and an AWS
 - **Generate speech text:** `npm run process-tts` (or `process-tts:force` / `process-tts:dry-run`). Writes `pacedSpeech` into hint, step, and problem JSON under `src/content-sources/oatutor/content-pool/`.
 - **Lambda:** Set `TTS_API_URL` in `src/config/config.js` to your Lambda Function URL. The frontend sends `{ segments: string[] }` and expects `{ audios: base64[] }`.
 - **Frontend:** Problem body, step title/body, and hints use `pacedSpeech` when present; otherwise a basic LaTeX-to-readable fallback is used.
+
+### \[Optional\] Meta-Lessons (A/B testing)
+
+A meta-lesson wraps several lessons and resolves to one path when a student opens it. Its main use is A/B testing: one link, with each student deterministically assigned to a variant based on their user id, so the same student always sees the same version.
+
+Meta-lessons are inert by default — a course with no `metaLessons` array behaves exactly as before.
+
+See [META_LESSONS.md](META_LESSONS.md) for the data model, nesting, branch assignment, and validation.
 
 ## Technologies Used
 
