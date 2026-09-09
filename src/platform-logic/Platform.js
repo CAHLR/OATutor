@@ -102,6 +102,10 @@ class Platform extends React.Component {
     };
     this.completedProbs = new Set();
     this.lesson = null;
+    this.metaLesson = null;
+    this.metaLessonLessons = [];
+    this.currentMetaLessonIndex = -1;
+    this.completedMetaLessonLessons = new Set();
 
     // Tracks the platform-level language captured just before we override it
     // for a course/lesson. `null` means "not currently inside a course" —
@@ -388,9 +392,13 @@ class Platform extends React.Component {
     if (prevCompletedProbs) {
       this.completedProbs = new Set(prevCompletedProbs);
     }
+    const nextProblem = this._nextProblem(this.context ? this.context : context);
     this.setState({
-      currProblem: this._nextProblem(this.context ? this.context : context),
+      currProblem: nextProblem,
     });
+    if (!nextProblem && this.lesson?.isPartOfMetaLesson && this.metaLesson) {
+      await this.handleMetaSubLessonComplete();
+    }
   }
 
   async selectMetaLesson(metaLesson, updateServer = true) {
