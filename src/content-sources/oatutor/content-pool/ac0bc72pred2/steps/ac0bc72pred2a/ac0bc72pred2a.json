@@ -1,0 +1,17 @@
+{
+    "id": "ac0bc72pred2a",
+    "stepAnswer": [
+        "Compute the Euclidean distance between the new point and all the points in the dataset, then sort data in increasing order based on calculated distance, then take the top $$5$$ neighbors and take a majority vote."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "a) See Image. Dagny wants to classify a new tumor (represented as a triangle in the scatter plot). Describe the steps she would take to\\nclassify this new point based on a k-nearest neighbors classifier with k $$=$$ $$5$$.",
+    "stepBody": "##figure1.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "Compute the Euclidean distance between the new point and all the points in the dataset, then sort data in increasing order based on calculated distance, then take the top $$5$$ neighbors and take a majority vote.",
+    "choices": [
+        "Compute the Euclidean distance between the new point and all the points in the dataset, then sort data in increasing order based on calculated distance, then take the top $$5$$ neighbors and take a majority vote.",
+        "Sort data in increasing order based on Euclidean distance between all points in the dataset and then take the top $$5$$ neighbors' majority vote.",
+        "Compute the Euclidean distance between the new point and every other point and then take the first $$5$$ neighbors' majority vote."
+    ]
+}
