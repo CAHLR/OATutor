@@ -1,0 +1,53 @@
+[
+    {
+        "id": "a76e5d4tab3c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "For loops",
+        "text": "When running this for loop, we have now exhausted the first value of c. What is the next value of c?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a76e5d4tab3c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a76e5d4tab3c-h1"
+        ],
+        "title": "For loops",
+        "text": "After finding the second value of c, you go to the next line: is c < 2? If so, compute the body. If not, move to the else statement, and compute the body.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a76e5d4tab3c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a76e5d4tab3c-h2"
+        ],
+        "title": "np.arange()",
+        "text": "What is the second value in np.arange(5)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a76e5d4tab3c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a76e5d4tab3c-h3"
+        ],
+        "title": "For loops",
+        "text": "After determining c is less than $$2$$, is c % $$2$$ $$==$$ 0? If so, print the statement. If not, move on.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
