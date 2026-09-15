@@ -765,6 +765,8 @@ class Platform extends React.Component {
       if (this.lesson?.isPartOfMetaLesson && this.metaLesson) {
         return;
       }
+      // Save progress/KC updates before showing completion, so that the final answer actually finishes the lesson
+      this.props.saveProgress();
       // toast.success("You've successfully completed this assignment!", {
       //   toastId: ToastID.successfully_completed_lesson.toString(),
       // });
