@@ -4,6 +4,7 @@ import { calculateSemester } from "../util/calculateSemester.js";
 
 import { SITE_NAME } from "@common/global-config";
 import { cleanObjectKeys } from "../util/cleanObject";
+import { buildOfficeHoursLesson, courseHasOfficeHours } from "../util/officeHours.js";
 
 const ThemeContext = React.createContext(0);
 const SITE_VERSION = "1.6";
@@ -118,8 +119,15 @@ const getNormalizedMastery = (mastery, lesson) => {
     ) || MASTERY_THRESHOLD;
     return Math.min(Math.max(mastery / threshold, 0), 1);
 };
-// const coursePlans = courses.sort((a, b) => a.courseName.localeCompare(b.courseName));
-const coursePlans = courses;
+// Synthetic Office Hours lesson: per-course via coursePlans `office_hours: true`.
+// Authored lessons with chat_display_mode "Full" are independent of that field.
+const coursePlans = courses.map((course) => {
+    const lessons = [...(course.lessons || [])];
+    if (courseHasOfficeHours(course)) {
+        lessons.push(buildOfficeHoursLesson(course));
+    }
+    return { ...course, lessons };
+});
 const _coursePlansNoEditor = coursePlans.filter(({ editor }) => !!!editor);
 
 const lessonPlans = [];

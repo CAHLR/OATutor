@@ -8,6 +8,7 @@ import { withStyles } from '@material-ui/core/styles';
 import styles from './common-styles.js';
 import IconButton from '@material-ui/core/IconButton';
 import { _coursePlansNoEditor, ThemeContext, SITE_NAME, SHOW_COPYRIGHT } from '../../config/config.js';
+import { isFullChatLesson } from '../../util/officeHours.js';
 import Spacer from "../Spacer";
 import { Typography } from "@material-ui/core";
 import { IS_STAGING_OR_DEVELOPMENT } from "../../util/getBuildType";
@@ -153,6 +154,7 @@ class LessonSelection extends React.Component {
                                             <Grid item xs={12} sm={6} md={4} key={i}>
                                             <center>
                                             <Paper className={classes.paper} style={{ position: "relative", height: "12rem" }}>
+                                                {!isFullChatLesson(lesson) && (
                                                 <IconButton
                                                     size="small"
                                                     style={{ position: 'absolute', top: 8, right: 8 }}
@@ -161,6 +163,7 @@ class LessonSelection extends React.Component {
                                                 >
                                                     <MenuBookIcon fontSize="small" />
                                                 </IconButton>
+                                                )}
 
                                                 <div
                                                     style={{

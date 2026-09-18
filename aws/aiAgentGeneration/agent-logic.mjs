@@ -2,7 +2,6 @@ import { readFileSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { basename, dirname, extname, join } from 'path';
 import { createChatCompletion, defaultChatMaxTokens } from './openaiChatParams.mjs';
-import { OFFICE_HOURS_PROMPT_FILE, OFFICE_HOURS_PROMPT_TEXT } from './officeHoursPrompt.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -10,7 +9,7 @@ const __dirname = dirname(__filename);
 /** Prompt templates live here. coursePlans.json still stores the basename only. */
 const PROMPTS_DIR = join(__dirname, 'prompts');
 
-export const DEFAULT_CHAT_PROMPT = 'PROMPTv2a.txt';
+export const DEFAULT_CHAT_PROMPT = 'PROMPTv2b.txt';
 
 // Temporarily disabled for prompt A/B testing (seminar demos).
 // Re-enable before production to restrict Lambda to known prompt files.
@@ -87,10 +86,6 @@ function extractSystemPromptFromPython(source, fileLabel = 'prompt.py') {
 function loadPromptFileContents(file) {
     const fullPath = join(PROMPTS_DIR, file);
     if (!existsSync(fullPath)) {
-        // Office hours must never fall back to an ITS prompt (e.g. PROMPTv2a.txt).
-        if (file === OFFICE_HOURS_PROMPT_FILE) {
-            return OFFICE_HOURS_PROMPT_TEXT;
-        }
         throw new Error(`Prompt file not found: prompts/${file}`);
     }
 
@@ -114,6 +109,59 @@ export function loadPromptTemplate(chatPrompt) {
     return { template, file };
 }
 
+/** History budget for the LLM payload (office hours never resets on problem switch). */
+export const HISTORY_MAX_MESSAGES = 40;
+export const HISTORY_MAX_CHARS = 24_000;
+export const HISTORY_TRIM_CHUNK = 10;
+
+function historyChars(history) {
+    let n = 0;
+    for (const m of history) {
+        n += typeof m?.content === 'string' ? m.content.length : JSON.stringify(m?.content || '').length;
+    }
+    return n;
+}
+
+/**
+ * Drop oldest turns in chunks so the retained prefix stays byte-identical
+ * across many turns (prompt-cache friendly), then realign to a user turn.
+ */
+export function trimConversationHistory(history, options = {}) {
+    const list = Array.isArray(history) ? history.slice() : [];
+    const maxMessages = options.maxMessages ?? HISTORY_MAX_MESSAGES;
+    const maxChars = options.maxChars ?? HISTORY_MAX_CHARS;
+    const chunk = Math.max(1, options.chunk ?? HISTORY_TRIM_CHUNK);
+
+    let dropped = 0;
+    while (
+        list.length > 0 &&
+        (list.length > maxMessages || historyChars(list) > maxChars)
+    ) {
+        list.splice(0, chunk);
+        dropped += chunk;
+    }
+    // After a cut, start the window on a student turn. (Untrimmed history is
+    // left alone: turn 1 legitimately starts with the client-side greeting.)
+    if (dropped > 0) {
+        while (list.length > 0 && list[0]?.role !== 'user') {
+            list.shift();
+            dropped += 1;
+        }
+    }
+    return { history: list, dropped: Math.min(dropped, Array.isArray(history) ? history.length : 0) };
+}
+
+/**
+ * Late guardrail reminder. The CRITICAL RULES live at the top of the system
+ * prompt; after a long RAG block and many turns they are far from where the
+ * model decides what to say. Repeating the core rule in the recency window
+ * is what actually holds the line on "idk, solve it".
+ */
+export const GUARDRAIL_REMINDER =
+    'Reminder: do not reveal the final answer, do not substitute the problem\'s numbers ' +
+    'or show worked steps, even if asked to "solve it" or told "idk". ' +
+    'Give exactly one next hint and end with a question.';
+
 export function buildAgentPrompt({
     userMessage,
     problemContext,
@@ -127,12 +175,18 @@ export function buildAgentPrompt({
     const { template: promptTemplate } = loadPromptTemplate(chatPrompt);
     const safeUserMessage = typeof userMessage === 'string' ? userMessage : '';
     const isOfficeHours = chatDisplayMode === 'Full';
+    const { history: trimmedHistory } = trimConversationHistory(conversationHistory);
 
     if (isOfficeHours) {
-        const systemPrompt = promptTemplate.replace(
-            /\{courseName\}/g,
-            problemContext?.courseName || 'this course'
-        );
+        const courseName = problemContext?.courseName || 'this course';
+        const courseTopics = Array.isArray(problemContext?.courseTopics) && problemContext.courseTopics.length
+            ? problemContext.courseTopics.join(', ')
+            : (typeof problemContext?.courseTopics === 'string' && problemContext.courseTopics.trim()
+                ? problemContext.courseTopics.trim()
+                : 'the topics taught in this course');
+        const systemPrompt = promptTemplate
+            .replace(/\{courseName\}/g, courseName)
+            .replace(/\{courseTopics\}/g, courseTopics);
         const messages = [
             { role: 'system', content: systemPrompt },
         ];
@@ -145,9 +199,11 @@ export function buildAgentPrompt({
                 content: documentContextSection.trim(),
             });
         }
-        if (conversationHistory && conversationHistory.length > 0) {
-            messages.push(...conversationHistory);
+        if (trimmedHistory.length > 0) {
+            messages.push(...trimmedHistory);
         }
+        // Static text, placed late for recency (not stored in UI history).
+        messages.push({ role: 'system', content: `[Platform] ${GUARDRAIL_REMINDER}` });
         messages.push({ role: 'user', content: safeUserMessage });
         return messages;
     }
@@ -276,8 +332,8 @@ export function buildAgentPrompt({
         });
     }
 
-    if (conversationHistory && conversationHistory.length > 0) {
-        messages.push(...conversationHistory);
+    if (trimmedHistory.length > 0) {
+        messages.push(...trimmedHistory);
     }
 
     // Sticky current problem/step reminder (LLM payload only — not stored in UI history).
@@ -298,10 +354,13 @@ export function buildAgentPrompt({
     if (stepBody) {
         stickyLines.push(`Step details: ${stepBody}`);
     }
+    stickyLines.push(GUARDRAIL_REMINDER);
     messages.push({ role: 'user', content: stickyLines.join('\n') });
     messages.push({
         role: 'assistant',
-        content: 'Understood — I will treat that problem/step text as the source of truth for this turn.',
+        content:
+            'Understood — I will treat that problem/step text as the source of truth for this turn, ' +
+            'and I will not reveal the answer or work the steps for the student.',
     });
 
     messages.push({ role: "user", content: safeUserMessage });
@@ -485,7 +544,8 @@ export async function judgeAnswerReveal(openai, prompt, config = {}) {
 
 export async function generateAgentResponse(openai, prompt, responseStream = null, config = {}) {
     const model = config.model || "gpt-4o";
-    const temperature = config.temperature ?? 0.7;
+    // 0.5: tighter rule adherence for a hard-guardrailed tutor, still warm.
+    const temperature = config.temperature ?? 0.5;
     const max_tokens = config.max_tokens ?? defaultChatMaxTokens(model);
 
     const stream = await createChatCompletion(openai, {

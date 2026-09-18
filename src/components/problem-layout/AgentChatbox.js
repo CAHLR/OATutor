@@ -38,7 +38,7 @@ import {
     shouldPenalizeAgentOnOpen,
 } from '../../util/helpPenaltyMode.js';
 import { resolveChatModel } from '../../util/chatModel.js';
-import { OFFICE_HOURS_CHAT_PROMPT } from '../../util/officeHours.js';
+import { OFFICE_HOURS_CHAT_PROMPT, collectLessonTopics, isFullChatLesson, isOfficeHoursLesson } from '../../util/officeHours.js';
 import { chooseVariables, variabilize } from '../../platform-logic/variabilize.js';
 
 const CHAT_THEME = {
@@ -64,6 +64,9 @@ function isVisionSafeImageDataUrl(dataUrl) {
 
 // Tail tip x=382 in the 520-wide chat-bubble viewBox
 const LAUNCHER_TAIL_CENTER_PERCENT = (382 / 520) * 100;
+
+// Shown when the stream completes with no text. Never sent back as history.
+const EMPTY_RESPONSE_FALLBACK = "Sorry, I didn't get a response. Please try again.";
 
 const FALLBACK_SUGGESTED_QUESTIONS = [
     'What should I try first?',
@@ -183,6 +186,9 @@ const styles = (theme) => ({
         borderRadius: 14,
         backgroundColor: 'rgba(255, 255, 255, 0.72)',
         border: `1px solid ${CHAT_THEME.pale}`,
+        [theme.breakpoints.down('sm')]: {
+            display: 'none',
+        },
     },
     suggestionsTitle: {
         color: '#5f6f7f',
@@ -532,30 +538,6 @@ const styles = (theme) => ({
         padding: '8px 0 20px',
         boxSizing: 'border-box',
     },
-    officeHoursSuggestions: {
-        marginTop: 0,
-        marginBottom: 0,
-        padding: 0,
-        border: 'none',
-        backgroundColor: 'transparent',
-        borderRadius: 0,
-    },
-    officeHoursChip: {
-        border: `1.5px solid ${CHAT_THEME.pale}`,
-        backgroundColor: 'transparent',
-        color: CHAT_THEME.primaryDark,
-        borderRadius: 999,
-        padding: '8px 14px',
-        fontSize: 14,
-        fontWeight: 600,
-        lineHeight: 1.3,
-        whiteSpace: 'normal',
-        textAlign: 'left',
-        '&:hover': {
-            borderColor: CHAT_THEME.primary,
-            backgroundColor: 'rgba(255, 255, 255, 0.7)',
-        },
-    },
     officeHoursMessageInput: {
         '& .MuiOutlinedInput-root': {
             borderRadius: 24,
@@ -643,7 +625,22 @@ class AgentChatbox extends React.Component {
 
     _isOfficeHours = () =>
         this.props.officeHours === true ||
-        this.props.lesson?.chat_display_mode === 'Full';
+        isFullChatLesson(this.props.lesson);
+
+    _isMobileView = () => {
+        if (this.props.responsive?.isMobile) {
+            return true;
+        }
+        if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') {
+            return false;
+        }
+        return window.matchMedia('(max-width: 959.95px)').matches;
+    };
+
+    _showSuggestedQuestions = () =>
+        Boolean(this.props.showSuggestedQuestions) &&
+        !this._isOfficeHours() &&
+        !this._isMobileView();
 
     _maybePenalizeAgentOnFirstQuery = () => {
         if (this._isOfficeHours()) {
@@ -695,7 +692,7 @@ class AgentChatbox extends React.Component {
                 stepAnswers: answers,
                 problemContext: this.getProblemContext(),
                 stepId: step?.id || null,
-                chatPrompt: this.props.lesson?.chat_prompt || 'PROMPTv2.txt',
+                chatPrompt: this.props.lesson?.chat_prompt || 'PROMPTv2b.txt',
                 chatDisplayMode: this.props.lesson?.chat_display_mode ?? 'Off',
                 chatPenaltyMode: this._getChatPenaltyMode(),
                 chatModel: resolveChatModel(this.props.lesson),
@@ -774,7 +771,7 @@ class AgentChatbox extends React.Component {
             this.scrollToBottom(true);
         }
 
-        if (this.props.showSuggestedQuestions) {
+        if (this._showSuggestedQuestions()) {
             this.fetchSuggestedQuestionsIfNeeded();
         }
     }
@@ -814,12 +811,15 @@ class AgentChatbox extends React.Component {
     // not to make a contextual diagnosis.
     buildGreetingMessages = () => {
         const course = this.props.lesson?.courseName || 'this course';
+        const lessonLabel = String(this.props.lesson?.name || '').replace(/##/g, '').trim();
+        const fullChatScope = isOfficeHoursLesson(this.props.lesson)
+            ? course
+            : (lessonLabel || this.props.lesson?.topics || course);
         const subject = this.props.problem?.title ? `**${this.props.problem.title}**` : 'this problem';
         const greeting = this._isOfficeHours()
             ? [
-                "Hello! I'm Oski, your AI tutor.",
-                `This is office hours — ask me anything about ${course}.`,
-                'I can help with explanations, examples, and studying.',
+                `Hi! I’m Oski. I’m here to help with questions about ${fullChatScope}.`,
+                'You can ask me to explain a concept, work through something you’re stuck on, show you an example.',
                 'What would you like to talk about?',
             ].join('\n\n')
             : `Hello! I'm Oski, your AI tutor. I'm here to think through ${subject} with you — feel free to ask me anything, or tell me where you're stuck.`;
@@ -852,7 +852,7 @@ class AgentChatbox extends React.Component {
         if (this._isOfficeHours()) {
             return;
         }
-        if (!this.props.showSuggestedQuestions || this.state.isLoadingSuggestedQuestions) {
+        if (!this._showSuggestedQuestions() || this.state.isLoadingSuggestedQuestions) {
             return;
         }
         if (this.props.allowEmbeddedClose && !this.state.isVisible) {
@@ -882,7 +882,7 @@ class AgentChatbox extends React.Component {
                     condition: this.props.condition,
                     lessonId: this.props.lesson?.id,
                 },
-                this.props.lesson?.chat_prompt || 'PROMPTv2.txt',
+                this.props.lesson?.chat_prompt || 'PROMPTv2b.txt',
                 this.props.lesson?.chat_display_mode ?? 'Off',
                 this._getChatPenaltyMode(),
                 resolveChatModel(this.props.lesson),
@@ -1143,8 +1143,12 @@ class AgentChatbox extends React.Component {
 
         // Snapshot prior turns before we append this turn's placeholders.
         // This is a copy for the LLM payload — UI state is updated separately below.
+        // Skip error bubbles, in-flight placeholders, and the empty-response
+        // fallback: none of them are words Oski actually said.
         const conversationHistory = (this.state.messages || [])
             .filter((msg) => msg?.role === 'user' || msg?.role === 'assistant')
+            .filter((msg) => !msg.isError && !msg.isGenerating)
+            .filter((msg) => msg.content !== EMPTY_RESPONSE_FALLBACK)
             .map((msg) => ({
                 role: msg.role,
                 content: typeof msg.content === 'string' ? msg.content : '',
@@ -1215,7 +1219,7 @@ class AgentChatbox extends React.Component {
 
         const chatPrompt = isOfficeHours
             ? OFFICE_HOURS_CHAT_PROMPT
-            : (this.props.lesson?.chat_prompt || 'PROMPTv2.txt');
+            : (this.props.lesson?.chat_prompt || 'PROMPTv2b.txt');
         const chatDisplayMode = this.props.lesson?.chat_display_mode ?? 'Off';
         const chatPenaltyMode = this._getChatPenaltyMode();
         const chatModel = resolveChatModel(this.props.lesson);
@@ -1284,7 +1288,7 @@ class AgentChatbox extends React.Component {
                             return;
                         }
                         const resolvedResponse = (fullResponse || '').trim()
-                            || "Sorry, I didn't get a response. Please try again.";
+                            || EMPTY_RESPONSE_FALLBACK;
                         this.setState(prevState => ({
                             messages: prevState.messages.map(msg =>
                                 msg.id === assistantMessageId
@@ -1373,26 +1377,23 @@ class AgentChatbox extends React.Component {
 
     renderSuggestedQuestions = (questions, loadingSuggestions) => {
         const { classes } = this.props;
-        const isOfficeHours = this._isOfficeHours();
 
-        if (!this.props.showSuggestedQuestions || (!loadingSuggestions && questions.length === 0)) {
+        if (!this._showSuggestedQuestions() || (!loadingSuggestions && questions.length === 0)) {
             return null;
         }
 
         return (
-            <div className={`${classes.suggestions}${isOfficeHours ? ` ${classes.officeHoursSuggestions}` : ''}`}>
-                {!isOfficeHours && (
-                    <div className={classes.suggestionsTitle}>
-                        {loadingSuggestions ? 'Finding helpful questions...' : 'Suggested questions'}
-                    </div>
-                )}
+            <div className={classes.suggestions}>
+                <div className={classes.suggestionsTitle}>
+                    {loadingSuggestions ? 'Finding helpful questions...' : 'Suggested questions'}
+                </div>
                 {questions.length > 0 && (
                     <div className={classes.suggestionList}>
                         {questions.map((question, index) => (
                             <button
                                 key={`${question}-${index}`}
                                 type="button"
-                                className={`${classes.suggestionChip}${isOfficeHours ? ` ${classes.officeHoursChip}` : ''}`}
+                                className={classes.suggestionChip}
                                 onClick={() => this.handleSuggestedQuestionClick(question)}
                                 disabled={loadingSuggestions}
                             >
@@ -1492,6 +1493,9 @@ class AgentChatbox extends React.Component {
         if (this._isOfficeHours()) {
             return {
                 courseName: lesson?.courseName || null,
+                courseTopics: isOfficeHoursLesson(lesson)
+                    ? (lesson?.courseTopics || [])
+                    : collectLessonTopics(lesson),
             };
         }
         
@@ -1716,6 +1720,10 @@ class AgentChatbox extends React.Component {
 
         if (this._isOfficeHours()) {
             const courseName = this.props.lesson?.courseName || 'this course';
+            const lessonLabel = String(this.props.lesson?.name || '').replace(/##/g, '').trim();
+            const introScope = isOfficeHoursLesson(this.props.lesson)
+                ? courseName
+                : (lessonLabel || courseName);
             return (
                 <div className={classes.officeHoursScrollPane}>
                     <div className={classes.officeHoursColumn}>
@@ -1723,7 +1731,7 @@ class AgentChatbox extends React.Component {
                             <OskiAvatar className={classes.officeHoursIntroAvatar} aria-hidden="true" />
                             <h1 className={classes.officeHoursIntroTitle}>Oski · AI Tutor</h1>
                             <p className={classes.officeHoursIntroSubtitle}>
-                                Office Hours for {courseName}
+                                Office Hours for {introScope}
                             </p>
                         </div>
                         {thread}

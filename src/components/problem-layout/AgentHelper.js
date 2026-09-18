@@ -12,7 +12,7 @@ import {
     DEFAULT_HINT_PENALTY_MODE,
 } from '../../util/helpPenaltyMode.js';
 import { DEFAULT_CHAT_MODEL, resolveChatModel } from '../../util/chatModel.js';
-import { OFFICE_HOURS_CHAT_PROMPT } from '../../util/officeHours.js';
+import { OFFICE_HOURS_CHAT_PROMPT, isFullChatLesson } from '../../util/officeHours.js';
 
 export class AgentHelper {
     constructor() {
@@ -96,9 +96,9 @@ export class AgentHelper {
             lessonId: lesson?.id || null,
             chatDisplayMode,
             condition,
-            chatPrompt: lesson?.chat_display_mode === 'Full'
+            chatPrompt: isFullChatLesson(lesson)
                 ? OFFICE_HOURS_CHAT_PROMPT
-                : (lesson?.chat_prompt || 'PROMPTv2.txt'),
+                : (lesson?.chat_prompt || 'PROMPTv2b.txt'),
             chatModel: resolveChatModel(lesson),
             hintPenaltyMode: hintPenaltyMode || DEFAULT_HINT_PENALTY_MODE,
             chatPenaltyMode: chatPenaltyMode || DEFAULT_CHAT_PENALTY_MODE,
@@ -133,7 +133,7 @@ export class AgentHelper {
             problemContext: problemContext,
             studentState: studentState,
             extracted: extracted || {},
-            chatPrompt: chatPrompt || 'PROMPTv2.txt',
+            chatPrompt: chatPrompt || 'PROMPTv2b.txt',
             chatDisplayMode: chatDisplayMode || 'Off',
             chatPenaltyMode: chatPenaltyMode || DEFAULT_CHAT_PENALTY_MODE,
             chatModel: chatModel || DEFAULT_CHAT_MODEL,
@@ -180,7 +180,7 @@ export class AgentHelper {
      * @param {object} extracted - Optional extracted input (e.g., { text, images }) for vision
      * @param {object} callbacks - { onChunkReceived, onSuccessfulCompletion, onError }
      */
-    async sendMessage(userMessage, problemContext, studentState, extracted = {}, chatPrompt = 'PROMPTv2.txt', chatDisplayMode = 'Off', chatPenaltyMode = DEFAULT_CHAT_PENALTY_MODE, callbacks = {}, conversationHistory = [], chatModel = DEFAULT_CHAT_MODEL) {
+    async sendMessage(userMessage, problemContext, studentState, extracted = {}, chatPrompt = 'PROMPTv2b.txt', chatDisplayMode = 'Off', chatPenaltyMode = DEFAULT_CHAT_PENALTY_MODE, callbacks = {}, conversationHistory = [], chatModel = DEFAULT_CHAT_MODEL) {
         const {
             onTurnStarted = () => {},
             onChunkReceived = () => {},
@@ -303,7 +303,7 @@ export class AgentHelper {
      * This is intentionally separate from chat turns so it does not mutate
      * conversation history or advance the visible chat transcript.
      */
-    async fetchSuggestedQuestions(problemContext, studentState, extracted = {}, chatPrompt = 'PROMPTv2.txt', chatDisplayMode = 'Off', chatPenaltyMode = DEFAULT_CHAT_PENALTY_MODE, chatModel = DEFAULT_CHAT_MODEL) {
+    async fetchSuggestedQuestions(problemContext, studentState, extracted = {}, chatPrompt = 'PROMPTv2b.txt', chatDisplayMode = 'Off', chatPenaltyMode = DEFAULT_CHAT_PENALTY_MODE, chatModel = DEFAULT_CHAT_MODEL) {
         if (!this.sessionId) {
             this.initializeSession();
         }
@@ -323,7 +323,7 @@ export class AgentHelper {
                 problemContext,
                 studentState,
                 extracted,
-                chatPrompt: chatPrompt || 'PROMPTv2.txt',
+                chatPrompt: chatPrompt || 'PROMPTv2b.txt',
                 chatDisplayMode: chatDisplayMode || 'Off',
                 chatPenaltyMode: chatPenaltyMode || DEFAULT_CHAT_PENALTY_MODE,
                 chatModel: chatModel || DEFAULT_CHAT_MODEL,
@@ -359,7 +359,7 @@ export class AgentHelper {
         stepAnswers = [],
         problemContext = {},
         stepId = null,
-        chatPrompt = 'PROMPTv2.txt',
+        chatPrompt = 'PROMPTv2b.txt',
         chatDisplayMode = 'Off',
         chatPenaltyMode = DEFAULT_CHAT_PENALTY_MODE,
         chatModel = DEFAULT_CHAT_MODEL,
@@ -385,7 +385,7 @@ export class AgentHelper {
                 stepAnswers,
                 problemContext,
                 stepId,
-                chatPrompt: chatPrompt || 'PROMPTv2.txt',
+                chatPrompt: chatPrompt || 'PROMPTv2b.txt',
                 chatDisplayMode: chatDisplayMode || 'Off',
                 chatPenaltyMode: chatPenaltyMode || DEFAULT_CHAT_PENALTY_MODE,
                 chatModel: chatModel || DEFAULT_CHAT_MODEL,

@@ -8,11 +8,13 @@ import {
     generateAgentResponse,
     generateSuggestedQuestions,
     judgeAnswerReveal,
+    trimConversationHistory,
 } from "./agent-logic.mjs";
 import {
     buildDocumentContext,
     getDefaultDocumentContextRuntime,
 } from "./document-context.mjs";
+import { isOfficeHoursLessonId } from "./document-id-utils.mjs";
 import crypto from "crypto";
 
 dotenv.config();
@@ -111,7 +113,11 @@ export const handler = awslambda.streamifyResponse(
             const condition = requestBody.condition ?? extracted?.condition;
             const lessonId = requestBody.lessonId ?? extracted?.lessonId;
             const chatPrompt = requestBody.chatPrompt ?? problemContext?.chatPrompt;
-            const chatDisplayMode = requestBody.chatDisplayMode ?? extracted?.chatDisplayMode;
+            const requestedChatDisplayMode = requestBody.chatDisplayMode ?? extracted?.chatDisplayMode;
+            const chatDisplayMode =
+                requestedChatDisplayMode === "Full" || isOfficeHoursLessonId(lessonId)
+                    ? "Full"
+                    : requestedChatDisplayMode;
             const chatPenaltyMode =
                 requestBody.chatPenaltyMode ??
                 extracted?.chatPenaltyMode ??
@@ -269,12 +275,13 @@ export const handler = awslambda.streamifyResponse(
             httpResponseStream = awslambda.HttpResponseStream.from(responseStream, metadata);
 
             // Prefer client transcript when present (UI is authoritative). DynamoDB
-            // is a fallback for older clients that still send conversationHistory: [].
-            const existingConversation = await loadConversationHistory(sessionId);
+            // is a fallback for older clients that still send conversationHistory: [];
+            // skip the read entirely when the client sent a transcript.
             const clientHistory = Array.isArray(conversationHistory) ? conversationHistory : [];
             const fullConversationHistory = clientHistory.length > 0
                 ? clientHistory
-                : existingConversation;
+                : await loadConversationHistory(sessionId);
+            const { dropped: historyDroppedCount } = trimConversationHistory(fullConversationHistory);
 
             const resolvedChatPrompt =
                 chatDisplayMode === "Full" ? "PROMPT-officehours.txt" : chatPrompt;
@@ -283,6 +290,9 @@ export const handler = awslambda.streamifyResponse(
             const docCtx = await buildDocumentContext({
                 lessonId,
                 userMessage: safeUserMessage,
+                // Short follow-ups ("why?") rank against the thread, not just this line.
+                recentHistory: fullConversationHistory.slice(-2),
+                officeHours: chatDisplayMode === "Full",
                 problemContext: chatDisplayMode === "Full" ? { courseName: problemContext?.courseName } : problemContext,
                 clientHints: {
                     chat_documents: requestBody.chat_documents,
@@ -300,6 +310,10 @@ export const handler = awslambda.streamifyResponse(
                     allowedDocumentIds:
                         docCtx?.allowedDocumentIds ||
                         docCtx?.meta?.allowedDocumentIds ||
+                        [],
+                    missingDocumentIds:
+                        docCtx?.missingDocumentIds ||
+                        docCtx?.meta?.missingDocumentIds ||
                         [],
                     selectedContexts:
                         docCtx?.selectedContexts ||
@@ -335,10 +349,34 @@ export const handler = awslambda.streamifyResponse(
                     ],
                 };
             
+            // Full: course name/topics are resolved server-side from coursePlans
+            // (same authority model as chat_documents). Client values are only a
+            // fallback when the server lookup was unavailable (no runtime, or it failed).
+            const serverLookupUnavailable = docCtx == null || docCtx?.error === true;
+            const serverCourseName =
+                typeof docCtx?.courseName === "string" && docCtx.courseName.trim()
+                    ? docCtx.courseName.trim()
+                    : null;
+            const serverCourseTopics =
+                Array.isArray(docCtx?.courseTopics) && docCtx.courseTopics.length
+                    ? docCtx.courseTopics
+                    : null;
+            const fullCourseName =
+                serverCourseName ??
+                (serverLookupUnavailable ? problemContext?.courseName : undefined);
+            const fullCourseTopics =
+                serverCourseTopics ??
+                (serverLookupUnavailable && Array.isArray(problemContext?.courseTopics)
+                    ? problemContext.courseTopics
+                    : []);
+
             const agentPrompt = buildAgentPrompt({
                 userMessage: safeUserMessage,
                 problemContext: chatDisplayMode === "Full"
-                    ? { courseName: problemContext?.courseName }
+                    ? {
+                        courseName: fullCourseName,
+                        courseTopics: fullCourseTopics,
+                    }
                     : problemContext,
                 studentState: chatDisplayMode === "Full" ? {} : studentState,
                 conversationHistory: fullConversationHistory,
@@ -420,6 +458,8 @@ export const handler = awslambda.streamifyResponse(
                 model: chatModel,
                 imagesCount,
                 historyMessageCount: fullConversationHistory.length,
+                historyDroppedCount,
+                historyTrimmedTo: fullConversationHistory.length - historyDroppedCount,
                 condition,
                 lessonId,
                 chatPrompt,

@@ -64,6 +64,7 @@ import withWidth from "@material-ui/core/withWidth";
 
 import { ProgressTooltip, InfoTooltip } from "@components/Tooltip";
 import { isMobileWidth } from "../util/responsive";
+import { isFullChatLesson } from "../util/officeHours.js";
 
 let problemPool = require(`@generated/processed-content-pool/${CONTENT_SOURCE}.json`);
 
@@ -71,8 +72,6 @@ let seed = Date.now().toString();
 console.log("Generated seed");
 
 const TOC_DRAWER_OPEN_KEY = "toc:drawer-open:v1";
-
-const isOfficeHoursLesson = (lesson) => lesson?.chat_display_mode === "Full";
 
 const findMetaLessonById = (ID) => {
     for (const course of coursePlans) {
@@ -390,7 +389,7 @@ class Platform extends React.Component {
     if (prevCompletedProbs) {
       this.completedProbs = new Set(prevCompletedProbs);
     }
-    if (isOfficeHoursLesson(lesson)) {
+    if (isFullChatLesson(lesson)) {
       this.setState({
         currProblem: null,
         status: "learning",
@@ -1149,7 +1148,7 @@ class Platform extends React.Component {
     const lessonMasteryMap = this.getLessonMasteryMap(tocCourseName);
     const inLesson = Boolean(this.props.lessonID);
     const isOfficeHours =
-      isOfficeHoursLesson(this.lesson) || isOfficeHoursLesson(currentLesson);
+      isFullChatLesson(this.lesson) || isFullChatLesson(currentLesson);
     const showToc = inLesson && !this.isFromCanvas && !isOfficeHours;
     const progressData = this.getProgressBarData();
     const isCompletionMode = this.lesson?.enableCompletionMode;
@@ -1240,10 +1239,18 @@ class Platform extends React.Component {
 
         <div
           style={{
-            backgroundColor: "#F6F6F6",
-            paddingBottom: 20,
+            backgroundColor: isOfficeHours ? "#eef4fa" : "#F6F6F6",
+            paddingBottom: isOfficeHours ? 0 : 20,
             display: "flex",
             flexDirection: "column",
+            ...(isOfficeHours
+              ? {
+                  height: "100vh",
+                  maxHeight: "100vh",
+                  overflow: "hidden",
+                  overscrollBehavior: "none",
+                }
+              : {}),
           }}
         >
           {/* Top bar */}
@@ -1393,6 +1400,15 @@ class Platform extends React.Component {
               marginLeft: showToc && this.state.drawerOpen && !isMobile ? drawerWidth : 0,
               marginBottom: 0,
               transition: "margin 0.1s ease",
+              ...(isOfficeHours
+                ? {
+                    flex: 1,
+                    minHeight: 0,
+                    display: "flex",
+                    flexDirection: "column",
+                    overflow: "hidden",
+                  }
+                : {}),
             }}
           >
             {this.state.status === "learning" && !isOfficeHours ? (
@@ -1688,8 +1704,9 @@ class Platform extends React.Component {
                     style={{
                       ...CONTAINER_STYLE,
                       padding: 0,
-                      height: isMobile ? "calc(100vh - 56px)" : "calc(100vh - 64px)",
-                      minHeight: isMobile ? "calc(100vh - 56px)" : "calc(100vh - 64px)",
+                      flex: 1,
+                      minHeight: 0,
+                      overflow: "hidden",
                     }}
                   >
                     <StandaloneChatView lesson={this.lesson} />

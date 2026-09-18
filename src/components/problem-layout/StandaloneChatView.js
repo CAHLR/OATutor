@@ -1,6 +1,5 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import { OFFICE_HOURS_STARTERS } from '../../util/officeHours.js';
 import AgentChatbox from './AgentChatbox';
 
 const styles = () => ({
@@ -29,8 +28,6 @@ function StandaloneChatViewBase({ classes, lesson }) {
                     mode="embedded"
                     officeHours
                     showEmbeddedHeader={false}
-                    showSuggestedQuestions
-                    suggestedQuestions={OFFICE_HOURS_STARTERS}
                     condition="office_hours"
                     embeddedHeight="100%"
                 />
