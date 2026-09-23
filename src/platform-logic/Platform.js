@@ -1151,7 +1151,9 @@ class Platform extends React.Component {
 
     const lessonMasteryMap = this.getLessonMasteryMap(tocCourseName);
     const inLesson = Boolean(this.props.lessonID);
-    const showToc = inLesson && !this.isFromCanvas;
+    // Meta-lessons render their own sidebar header with per-sub-lesson chips, so the
+    // TOC is redundant there — and its course lookup can't resolve a meta-lesson id.
+    const showToc = inLesson && !this.isFromCanvas && !this.isMetaLessonSidebarMode();
     const progressData = this.getProgressBarData();
     const isCompletionMode = this.lesson?.enableCompletionMode;
     const barPercent = isCompletionMode
