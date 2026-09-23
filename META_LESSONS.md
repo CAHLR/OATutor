@@ -56,6 +56,25 @@ Any lesson-level field can differ between variants — `chat_prompt`,
 `chat_display_mode`, `fixedProblemOrder`, and so on. What must stay the same is
 `id`, or the variants stop resolving to the same problem content.
 
+### Display names
+
+The meta-lesson sidebar shows a chip per sub-lesson, labelled from the lesson's
+`name`. If you set an optional `displayName`, the chip uses that instead:
+
+```json
+    {
+        "id": "33ubFGPj-iH8T-IbGf1Lxm3Q",
+        "metaId": "pandas-A",
+        "name": "Lesson Pandas (variant A)",
+        "displayName": "Part 1",
+        "learningObjectives": { "pandas": 0.85 }
+    }
+```
+
+This matters for A/B tests: internal names can stay descriptive while students
+see something neutral that doesn't reveal which condition they were assigned to.
+Lessons without `displayName` fall back to `name` as before.
+
 ### Meta-lesson entries
 
 A `metaLessons` array sits as a sibling of `lessons` on the course object:

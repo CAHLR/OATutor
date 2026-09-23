@@ -981,7 +981,7 @@ class Platform extends React.Component {
         <div style={{ display: showLessonChips ? "flex" : "none", gap: 8, marginTop: 10, flexWrap: "wrap" }}>
           {this.metaLessonLessons.map((lessonId, index) => {
             const lesson = findLessonById(lessonId);
-            const label = lesson?.name || lesson?.topics || (lesson ? lesson.id : null) || "Unavailable lesson";
+            const label = lesson?.displayName || lesson?.name || lesson?.topics || (lesson ? lesson.id : null) || "Unavailable lesson";
             const isCompleted = this.completedMetaLessonLessons.has(lessonId);
             const isCurrent = index === currentIndex;
             const borderColor = isCurrent ? "#0B9B8A" : isCompleted ? "#0B9B8A" : "#EBEFF2";
