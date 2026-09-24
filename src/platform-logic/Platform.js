@@ -102,6 +102,10 @@ class Platform extends React.Component {
     };
     this.completedProbs = new Set();
     this.lesson = null;
+    this.metaLesson = null;
+    this.metaLessonLessons = [];
+    this.currentMetaLessonIndex = -1;
+    this.completedMetaLessonLessons = new Set();
 
     // Tracks the platform-level language captured just before we override it
     // for a course/lesson. `null` means "not currently inside a course" —
@@ -388,9 +392,13 @@ class Platform extends React.Component {
     if (prevCompletedProbs) {
       this.completedProbs = new Set(prevCompletedProbs);
     }
+    const nextProblem = this._nextProblem(this.context ? this.context : context);
     this.setState({
-      currProblem: this._nextProblem(this.context ? this.context : context),
+      currProblem: nextProblem,
     });
+    if (!nextProblem && this.lesson?.isPartOfMetaLesson && this.metaLesson) {
+      await this.handleMetaSubLessonComplete();
+    }
   }
 
   async selectMetaLesson(metaLesson, updateServer = true) {
@@ -975,7 +983,7 @@ class Platform extends React.Component {
         <div style={{ display: showLessonChips ? "flex" : "none", gap: 8, marginTop: 10, flexWrap: "wrap" }}>
           {this.metaLessonLessons.map((lessonId, index) => {
             const lesson = findLessonById(lessonId);
-            const label = lesson?.name || lesson?.topics || (lesson ? lesson.id : null) || "Unavailable lesson";
+            const label = lesson?.displayName || lesson?.name || lesson?.topics || (lesson ? lesson.id : null) || "Unavailable lesson";
             const isCompleted = this.completedMetaLessonLessons.has(lessonId);
             const isCurrent = index === currentIndex;
             const borderColor = isCurrent ? "#0B9B8A" : isCompleted ? "#0B9B8A" : "#EBEFF2";
@@ -1145,7 +1153,9 @@ class Platform extends React.Component {
 
     const lessonMasteryMap = this.getLessonMasteryMap(tocCourseName);
     const inLesson = Boolean(this.props.lessonID);
-    const showToc = inLesson && !this.isFromCanvas;
+    // Meta-lessons render their own sidebar header with per-sub-lesson chips, so the
+    // TOC is redundant there — and its course lookup can't resolve a meta-lesson id.
+    const showToc = inLesson && !this.isFromCanvas && !this.isMetaLessonSidebarMode();
     const progressData = this.getProgressBarData();
     const isCompletionMode = this.lesson?.enableCompletionMode;
     const barPercent = isCompletionMode
