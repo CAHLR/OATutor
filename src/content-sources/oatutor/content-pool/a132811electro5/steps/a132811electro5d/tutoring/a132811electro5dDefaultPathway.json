@@ -1,0 +1,104 @@
+[
+    {
+        "id": "a132811electro5d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Galvanic Cell",
+        "text": "In a galvanic cell, the anode is where oxidation occurs, and the cathode is where reduction occurs. Identify which metal is oxidized and which is reduced.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro5d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro5d-h1"
+        ],
+        "title": "Identify the Half-Reactions",
+        "text": "Look at the standard reduction potential table. Find the half-reactions for zinc and copper. Remember, the anode reaction will be the reverse of the reduction reaction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro5d-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Zn(s)\u2192Zn**2+(aq)+2e**-"
+        ],
+        "dependencies": [
+            "a132811electro5d-h2"
+        ],
+        "title": "Write the Anode Half-Reaction",
+        "text": "The anode is zinc. Write the oxidation half-reaction for zinc.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro5d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "Cu**2+(aq)+2e**-\u2192Cu(s)"
+        ],
+        "dependencies": [
+            "a132811electro5d-h2"
+        ],
+        "title": "Write the Cathode Half-Reaction",
+        "text": "The cathode is copper. Write the reduction half-reaction for copper.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro5d-h5",
+        "type": "hint",
+        "dependencies": [
+            "a132811electro5d-h4"
+        ],
+        "title": "Calculate the Standard Cell Potential",
+        "text": "Use the standard reduction potentials from the table. The standard cell potential is the difference between the cathode and anode potentials.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro5d-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$Cu:0.34V$$. $$Zn:-0.76V$$"
+        ],
+        "dependencies": [
+            "a132811electro5d-h5"
+        ],
+        "title": "Find the Standard Reduction Potentials",
+        "text": "From the table, find the standard reduction potential for copper and zinc.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a132811electro5d-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.1$$"
+        ],
+        "dependencies": [
+            "a132811electro5d-h6"
+        ],
+        "title": "Calculate Ecell",
+        "text": "Use the formula $$Ecell=E(cathode)-E(anode)$$ to find the standard cell potential.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -289,6 +289,7 @@
                 "learningObjectives": {
                     "solve_compound_inequalities_with_and": 0.85,
                     "solve_compound_inequalities_with_or": 0.85,
+                    "solve_inequalities_using_the_division_and_multiplication_properties_of_inequality": 0.85,
                     "solve_inequalities_using_the_subtraction_and_addition_properties_of_inequality": 0.85,
                     "solve_linear_inequalities": 0.85,
                     "solving_compound_inequalities": 0.85
@@ -353,6 +354,8 @@
                     "graph_inequalities_on_the_number_line": 0.85,
                     "solve_compound_inequalities_with_and": 0.85,
                     "solve_compound_inequalities_with_or": 0.85,
+                    "solve_inequalities_using_the_division_and_multiplication_properties_of_inequality": 0.85,
+                    "solve_inequalities_using_the_subtraction_and_addition_properties_of_inequality": 0.85,
                     "solve_linear_inequalities": 0.85
                 }
             },
@@ -459,7 +462,8 @@
                     "finding_domain_and_range_from_graphs": 0.85,
                     "finding_domains_and_ranges_of_the_toolkit_functions": 0.85,
                     "finding_the_domain_of_a_function_defined_by_an_equation": 0.85,
-                    "graphing_piecewise_defined_functions": 0.85
+                    "graphing_piecewise_defined_functions": 0.85,
+                    "using_notations_to_specify_domain_and_range": 0.85
                 }
             },
             {
@@ -4925,6 +4929,7 @@
                 "chat_display_mode": "Window",
                 "learningObjectives": {
                     "graph_quadratic_functions_of_the_form_f(x)=(x_h)**2": 0.85,
+                    "graph_quadratic_functions_of_the_form_f(x)=ax**2": 0.85,
                     "graph_quadratic_functions_of_the_form_f(x)=x**2+k": 0.85,
                     "graph_quadratic_functions_using_transformations": 0.85
                 }
@@ -4972,6 +4977,7 @@
                 "learningObjectives": {
                     "convert_between_exponential_and_logarithmic_form": 0.85,
                     "evaluate_logarithmic_functions": 0.85,
+                    "graph_logarithmic_functions": 0.85,
                     "use_logarithmic_models_in_applications": 0.85
                 }
             },
@@ -5027,6 +5033,7 @@
                 "allowRecycle": true,
                 "chat_display_mode": "Window",
                 "learningObjectives": {
+                    "find_the_equation_of_an_ellipse_with_center_at_the_origin": 0.85,
                     "graph_an_ellipse_with_center_at_the_origin": 0.85,
                     "graph_an_ellipse_with_center_not_at_the_origin": 0.85
                 }
@@ -5100,7 +5107,8 @@
                 "allowRecycle": true,
                 "chat_display_mode": "Window",
                 "learningObjectives": {
-                    "use_pascal\u2019s_triangle_to_expand_a_binomial": 0.85
+                    "use_pascal\u2019s_triangle_to_expand_a_binomial": 0.85,
+                    "use_the_binomial_theorem_to_expand_a_binomial": 0.85
                 }
             }
         ]
@@ -5392,6 +5400,7 @@
                     "interpreting_slope_as_rate_of_change": 0.85,
                     "modeling_real_world_problems_with_linear_functions": 0.85,
                     "or_constant": 0.85,
+                    "representing_linear_functions": 0.85,
                     "writing_and_interpreting_an_equation_for_a_linear_function": 0.85,
                     "writing_the_equation_for_a_function_from_the_graph_of_a_line": 0.85,
                     "writing_the_equation_of_a_line_parallel_or_perpendicular_to_a_given_line": 0.85
@@ -6001,6 +6010,7 @@
                 "allowRecycle": true,
                 "chat_display_mode": "Window",
                 "learningObjectives": {
+                    "frequency": 0.85,
                     "histograms": 0.85
                 }
             },
@@ -6011,7 +6021,10 @@
                 "allowRecycle": true,
                 "chat_display_mode": "Window",
                 "learningObjectives": {
+                    "box_plot": 0.85,
                     "interquartile_range": 0.85,
+                    "median": 0.85,
+                    "percentages_of_data": 0.85,
                     "percentiles": 0.85,
                     "quartiles": 0.85
                 }
@@ -6064,6 +6077,7 @@
                 "allowRecycle": true,
                 "chat_display_mode": "Window",
                 "learningObjectives": {
+                    "frequency": 0.85,
                     "mean": 0.85,
                     "median": 0.85,
                     "proportions": 0.85,
@@ -6568,6 +6582,16 @@
                 }
             },
             {
+                "id": "1HzSbVAz-jRGW-T5Hoiq5yor",
+                "name": "Lesson 12.3",
+                "topics": "The Regression Equation",
+                "allowRecycle": true,
+                "chat_display_mode": "Window",
+                "learningObjectives": {
+                    "testing_the_significance_of_the_correlation_coefficient": 0.85
+                }
+            },
+            {
                 "id": "1DNwcX1V-KIMo-7pfDL4zVtD",
                 "name": "Lesson 12.4",
                 "topics": "Testing the Significance of the Correlation Coefficient",
@@ -6597,6 +6621,16 @@
                 "learningObjectives": {
                     "f_ratio": 0.85,
                     "the_f_distribution": 0.85
+                }
+            },
+            {
+                "id": "3dlF1kas-WN0k-BdZzyV4tMy",
+                "name": "Lesson 13.3",
+                "topics": "Facts About the F Distribution",
+                "allowRecycle": true,
+                "chat_display_mode": "Window",
+                "learningObjectives": {
+                    "f_distribution": 0.85
                 }
             },
             {
@@ -7042,6 +7076,7 @@
                 "learningObjectives": {
                     "rules_of_addition": 0.85,
                     "rules_of_algebra:_addition_and_multiplication": 0.85,
+                    "rules_of_algebra:_visual_models_addition_and_multiplication": 0.85,
                     "rules_of_multiplication": 0.85
                 }
             },
@@ -7489,6 +7524,16 @@
                     "important_trig_values": 0.85,
                     "periodicity": 0.85,
                     "trig_angle_sum_formulas": 0.85
+                }
+            },
+            {
+                "id": "42pluu7J-pg0o-JFKTdySq5I",
+                "name": "Lesson T3.1.2",
+                "topics": "Evaluating Inverse Trig Functions",
+                "allowRecycle": true,
+                "chat_display_mode": "Window",
+                "learningObjectives": {
+                    "evaluate_inverse_tangent_at_special_values": 0.85
                 }
             },
             {
