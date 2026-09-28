@@ -1,0 +1,86 @@
+[
+    {
+        "id": "a4d5812T121-trigraph-P04a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2x-\\frac{\\pi}{2}$$"
+        ],
+        "dependencies": [],
+        "title": "Standard peak",
+        "text": "A standard cosine wave $$\\cos(\\theta)$$ reaches its first peak when the argument $$\\theta=0.$$ In our function, what is the expression that must be zero when the function reaches its first peak?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a4d5812T121-trigraph-P04a-h1-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Finding the location of peak",
+                "text": "To find where our new peak is, set that entire argument to zero: $$2x-\\frac{\\pi}{2}=0$$. Solve for $$x.$$\\n",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a4d5812T121-trigraph-P04a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4d5812T121-trigraph-P04a-h1"
+        ],
+        "title": "Solve for $$x.$$",
+        "text": "$$2x-\\frac{\\pi}{2}=0$$ implies $$x=\\frac{\\pi}{4}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4d5812T121-trigraph-P04a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "right"
+        ],
+        "dependencies": [
+            "a4d5812T121-trigraph-P04a-h2"
+        ],
+        "title": "Right or left?",
+        "text": "Since the peak moved from $$x=0$$ to $$x=\\frac{\\pi}{4}$$, did the graph shift left or right?\\n",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "right",
+            "left"
+        ],
+        "subHints": [
+            {
+                "id": "a4d5812T121-trigraph-P04a-h3-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Phase shift",
+                "text": "The phase shift is $$\\frac{\\pi}{4}$$ to the right.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a4d5812T121-trigraph-P04a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4d5812T121-trigraph-P04a-h3"
+        ],
+        "title": "Graph the function",
+        "text": "The dashed line shows $$\\cos(2x), $$ a periodic function of period $$\\pi.$$ The solid line shows $$\\cos(2x-\\frac{\\pi}{2}), $$ which is the same graph shifted to the right by $$\\frac{\\pi}{4}$$.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

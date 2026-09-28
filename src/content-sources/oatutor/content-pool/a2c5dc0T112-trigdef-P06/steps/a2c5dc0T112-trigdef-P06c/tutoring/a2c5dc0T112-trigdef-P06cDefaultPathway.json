@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a2c5dc0T112-trigdef-P06c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Identify the goal",
+        "text": "We need to find values of $$\\frac{5\\pi}{3}+2\\pi{k}$$ that fall between $$0$$ and $$4\\pi.$$ Since the interval is positive, we test $$k=0$$ and positive integers.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2c5dc0T112-trigdef-P06c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2c5dc0T112-trigdef-P06c-h1"
+        ],
+        "title": "Check $$k=0$$",
+        "text": "When $$k=0, $$ $$\\theta=\\frac{5\\pi}{3}.$$ This is between $$0$$ and $$4\\pi.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2c5dc0T112-trigdef-P06c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a2c5dc0T112-trigdef-P06c-h2"
+        ],
+        "title": "Check $$k=1$$",
+        "text": "When $$k=1, $$ $$\\theta=\\frac{5\\pi}{3}+2\\pi=\\frac{5\\pi}{3}+\\frac{6\\pi}{3}=\\frac{11\\pi}{3}.$$ This is less than $$4\\pi$$ (which is $$\\frac{12\\pi}{3}$$ ), so it is safely in the interval.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2c5dc0T112-trigdef-P06c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a2c5dc0T112-trigdef-P06c-h3"
+        ],
+        "title": "Check $$k=2$$",
+        "text": "When $$k=2, $$ $$\\theta=\\frac{5\\pi}{3}+4\\pi=\\frac{17\\pi}{3}.$$ This is greater than $$4\\pi, $$ so it falls outside our boundary.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2c5dc0T112-trigdef-P06c-h5",
+        "type": "hint",
+        "dependencies": [
+            "a2c5dc0T112-trigdef-P06c-h4"
+        ],
+        "title": "Compile the list",
+        "text": "The only angles that fall inside the interval are $$\\frac{5\\pi}{3}$$ and $$\\frac{11\\pi}{3}.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "id": "add398dT2-diag-P02b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Reference triangle",
+        "text": "As above, the relationship $$\\cos(\\theta)=x=\\frac{x}{1}$$ can be encoded in a right triangle with adjacent side length $$x$$ and hypotenuse $$1$$. \\n The image below shows a right triangle with a horizontal base labeled $$x$$ and a diagonal hypotenuse labeled $$1$$. The acute angle between the base and the hypotenuse is labeled theta. The vertical side opposite theta is unlabeled.\\n##figure2.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "add398dT2-diag-P02b-h2",
+        "type": "hint",
+        "dependencies": [
+            "add398dT2-diag-P02b-h1"
+        ],
+        "title": "Find opposite side length",
+        "text": "By the Pythagorean theorem, the opposite side length is $$\\sqrt{1-x**2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "add398dT2-diag-P02b-h3",
+        "type": "hint",
+        "dependencies": [
+            "add398dT2-diag-P02b-h2"
+        ],
+        "title": "Tangent",
+        "text": "Tangent is opposite over adjacent: \\sqrt(1-x**2)/x",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

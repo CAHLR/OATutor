@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ac08b9aA132-fracmuldiv-P09a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "How many teeth",
+        "text": "Through the point of connection with the blue gear, the pink gear moves over all $$14$$ teeth through a single rotation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac08b9aA132-fracmuldiv-P09a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$14$$"
+        ],
+        "dependencies": [
+            "ac08b9aA132-fracmuldiv-P09a-h1"
+        ],
+        "title": "How many teeth",
+        "text": "How many teeth of the blue gear pass through the connection point in $$1$$ rotation of the pink gear?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "subHints": [
+            {
+                "id": "ac08b9aA132-fracmuldiv-P09a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "How many teeth",
+                "text": "The blue gear is connected to the pink gear. As pink gear rotates once and moves through $$14$$ teeth. The blue gear will also rotate through $$14$$ teeth at the connection point.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "ac08b9aA132-fracmuldiv-P09a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac08b9aA132-fracmuldiv-P09a-h2"
+        ],
+        "title": "How much did it rotate?",
+        "text": "And $$14$$ teeth out of $$42$$ teeth is $$\\frac{14}{42}=\\frac{1}{3}$$ of a rotation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,101 @@
+[
+    {
+        "id": "ae41a5fspread14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Determine Baseball Players' Standard Deviations",
+        "text": "For each baseball player, determine how many standard deviations (#ofSTDEVs) his batting average is away from the average, for his team. Pay careful attention to signs when comparing and interpreting the answer.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "ae41a5fspread14a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-0.67$$"
+        ],
+        "dependencies": [
+            "ae41a5fspread14a-h1"
+        ],
+        "title": "Fredo's Standard Deviation",
+        "text": "How many standard deviations away from the mean is Fredo? Pay careful attention to sign. Round to the nearest hundredth.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "ae41a5fspread14a-h2-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$-0.67$$"
+                ],
+                "dependencies": [],
+                "title": "Fredo's Standard Deviation",
+                "text": "What is $$\\frac{0.158-0.166}{0.012}$$? Round to the nearest hundredth.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "ae41a5fspread14a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-0.8$$"
+        ],
+        "dependencies": [
+            "ae41a5fspread14a-h2"
+        ],
+        "title": "Karl's Standard Deviation",
+        "text": "How many standard deviations away from the mean is Karl? Pay careful attention to sign. Round to the nearest hundredth.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "subHints": [
+            {
+                "id": "ae41a5fspread14a-h3-s2",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$-0.8$$"
+                ],
+                "dependencies": [],
+                "title": "Karl's Standard Deviation",
+                "text": "What is $$\\frac{0.177-0.189}{0.015}$$? Round to the nearest hundredth.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+            }
+        ]
+    },
+    {
+        "id": "ae41a5fspread14a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Fredo"
+        ],
+        "dependencies": [
+            "ae41a5fspread14a-h3"
+        ],
+        "title": "Determining Which Student's GPA is Better",
+        "text": "Which baseball player had a higher batting average when compared to their school? Effectively, which baseball player had a higher standard deviation score?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "Fredo",
+            "Karl"
+        ]
+    }
+]

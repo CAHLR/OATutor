@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a6c1cc5T311-invtrigdef-P01a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Increasing or decreasing",
+        "text": "Look for an interval where the function is either strictly increasing or strictly decreasing. If it does both, it fails the Horizontal Line Test.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6c1cc5T311-invtrigdef-P01a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6c1cc5T311-invtrigdef-P01a-h1"
+        ],
+        "title": "Test midpoints and end points",
+        "text": "Test the midpoints and endpoints. For example, in $$[0, \\pi], $$ $$\\sin(\\pi/4)\\approx$$ $$0.707$$ and $$\\sin(3\\pi/4)\\approx$$ $$0.707$$. Since two different inputs give the same output, it is not $$1-1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6c1cc5T311-invtrigdef-P01a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a6c1cc5T311-invtrigdef-P01a-h2"
+        ],
+        "title": "Graph the function",
+        "text": "Visualize the sine wave. Between $$x=\\pi/2$$ (a peak) and $$x=3\\pi/2$$ (a valley), the function is strictly decreasing. This makes it a valid candidate for an inverse.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

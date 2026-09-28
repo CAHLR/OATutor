@@ -1,0 +1,95 @@
+[
+    {
+        "id": "ac048eeT331-trigcancel-P04a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding restricted domains",
+        "text": "The $$\\arctan$$ function only gives you the \"Principal Value\" (the one in the restricted domain). You have to use the function's periodicity to find other valid solutions.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac048eeT331-trigcancel-P04a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\pi$$"
+        ],
+        "dependencies": [
+            "ac048eeT331-trigcancel-P04a-h1"
+        ],
+        "title": "What is the period of $$\\tan(x)?$$",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{\\pi}{2}$$",
+            "$$\\pi$$",
+            "$$2\\pi$$",
+            "undefined, it is not periodic"
+        ]
+    },
+    {
+        "id": "ac048eeT331-trigcancel-P04a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac048eeT331-trigcancel-P04a-h2"
+        ],
+        "title": "The period",
+        "text": "The period of $$\\tan(\\theta)$$ is $$\\pi.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac048eeT331-trigcancel-P04a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ac048eeT331-trigcancel-P04a-h3"
+        ],
+        "title": "Interpreting the period",
+        "text": "If $$\\tan(\\theta)=y,$$ then $$\\tan(\\theta+n\\pi)=y$$ for any integer $$n.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac048eeT331-trigcancel-P04a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ac048eeT331-trigcancel-P04a-h4"
+        ],
+        "title": "Shift the principal value into the desired interval",
+        "text": "To find the equivalent angle in the required physical range of $$[\\pi, 2\\pi], $$ we add the period $$\\pi$$ to our principal value of $$\\frac{\\pi}{4}.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac048eeT331-trigcancel-P04a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ac048eeT331-trigcancel-P04a-h5"
+        ],
+        "title": "Visualize the equivalent angle",
+        "text": "Due to the fact that the tangent has period $$\\pi, $$ $$\\frac{\\pi}{4}+\\pi=\\frac{5\\pi}{4}.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac048eeT331-trigcancel-P04a-h7",
+        "type": "hint",
+        "dependencies": [
+            "ac048eeT331-trigcancel-P04a-h6"
+        ],
+        "title": "Visualize the equivalent angle",
+        "text": "Visually, tangent represents the slope of the line at an angle. If we draw a line through the origin and $$\\frac{\\pi}{4}, $$ it intersects the other side of the unit circle at $$\\frac{5\\pi}{4}.$$ Thus both of these angles have the same tangent.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

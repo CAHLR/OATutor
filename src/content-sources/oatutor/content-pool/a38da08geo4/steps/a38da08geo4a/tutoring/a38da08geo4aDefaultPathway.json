@@ -1,0 +1,283 @@
+[
+    {
+        "id": "a38da08geo4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Expression",
+        "text": "Express $$2x-6y=-3$$ in the form of $$y$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a38da08geo4a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$y=\\frac{1}{3} x+\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a38da08geo4a-h1"
+        ],
+        "title": "Expression",
+        "text": "Which option is the correct expression?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$y=\\frac{-1}{3} x+\\frac{1}{2}$$",
+            "$$y=\\frac{1}{3} x+\\frac{1}{2}$$",
+            "$$y=\\frac{1}{3} x-\\frac{1}{2}$$",
+            "$$y=\\frac{-1}{3} x-\\frac{1}{2}$$"
+        ]
+    },
+    {
+        "id": "a38da08geo4a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{5}{6}$$"
+        ],
+        "dependencies": [
+            "a38da08geo4a-h2"
+        ],
+        "title": "Plot",
+        "text": "When $$x=1$$ (specified in the plot), what is the corresponding $$y$$ value?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "$$\\frac{5}{6}$$",
+            "$$1$$"
+        ],
+        "subHints": [
+            {
+                "id": "a38da08geo4a-h3-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Plot",
+                "text": "$$y=\\frac{1}{3}+\\frac{1}{2}=\\frac{5}{6}$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a38da08geo4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{4}{3}$$"
+        ],
+        "dependencies": [
+            "a38da08geo4a-h3"
+        ],
+        "title": "Plot",
+        "text": "When $$x=2.5=\\frac{5}{2}$$ (specified in the plot), what is the corresponding $$y$$ value?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a38da08geo4a-h4-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Plot",
+                "text": "$$y=\\frac{1}{3} \\frac{5}{2}+\\frac{1}{2}=\\frac{5}{6}+\\frac{1}{2}=\\frac{8}{6}=\\frac{4}{3}$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a38da08geo4a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a38da08geo4a-h4"
+        ],
+        "title": "The other plot",
+        "text": "The shaded region (a trapezoid) can be considered as a rectangle and a triangle as shown in the other plot.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a38da08geo4a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{2}$$"
+        ],
+        "dependencies": [
+            "a38da08geo4a-h5"
+        ],
+        "title": "The other plot",
+        "text": "What is the length (L) of the rectangle? (the same value as the base (b) of the triangle)",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a38da08geo4a-h6-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "The other plot",
+                "text": "$$length=\\frac{5}{2}-1=\\frac{3}{2}$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a38da08geo4a-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{5}{6}$$"
+        ],
+        "dependencies": [
+            "a38da08geo4a-h6"
+        ],
+        "title": "The other plot",
+        "text": "What is the height (h1) of the rectangle?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a38da08geo4a-h7-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "The other plot",
+                "text": "$$h1=\\frac{5}{6}-0=\\frac{5}{6}$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a38da08geo4a-h8",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a38da08geo4a-h7"
+        ],
+        "title": "The other plot",
+        "text": "What is the height (h2) of the triangle?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a38da08geo4a-h8-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "The other plot",
+                "text": "$$h2=\\frac{4}{3}-\\frac{5}{6}=\\frac{3}{6}=\\frac{1}{2}$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a38da08geo4a-h9",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{8}$$"
+        ],
+        "dependencies": [
+            "a38da08geo4a-h8"
+        ],
+        "title": "Area",
+        "text": "What is the area of the triangle?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a38da08geo4a-h9-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Area",
+                "text": "$$A=\\frac{1}{2} b h2=\\frac{1}{2} \\frac{3}{2} \\frac{1}{2}=\\frac{3}{8}$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a38da08geo4a-h10",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{5}{4}$$"
+        ],
+        "dependencies": [
+            "a38da08geo4a-h9"
+        ],
+        "title": "Area",
+        "text": "What is the area of the rectangle?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a38da08geo4a-h10-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Area",
+                "text": "$$A=L h1=\\frac{3}{2} \\frac{5}{6}=\\frac{15}{12}=\\frac{5}{4}$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a38da08geo4a-h11",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{13}{8}$$"
+        ],
+        "dependencies": [
+            "a38da08geo4a-h10"
+        ],
+        "title": "Total Area",
+        "text": "What is the total area?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "subHints": [
+            {
+                "id": "a38da08geo4a-h11-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Total Area",
+                "text": "$$\\frac{3}{8}+\\frac{5}{4}=\\frac{13}{8}$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io",
+                "license": ""
+            }
+        ]
+    }
+]

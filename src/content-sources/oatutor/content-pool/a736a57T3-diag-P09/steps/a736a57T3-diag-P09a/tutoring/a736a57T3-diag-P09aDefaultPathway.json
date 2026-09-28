@@ -1,0 +1,94 @@
+[
+    {
+        "id": "a736a57T3-diag-P09a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [],
+        "title": "Evaluate the inner value",
+        "text": "First, calculate the inner value: what is $$\\tan\\left(\\frac{3\\pi}{4}\\right)?$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a736a57T3-diag-P09a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\left(-\\pi\\right)}{4}$$"
+        ],
+        "dependencies": [
+            "a736a57T3-diag-P09a-h1"
+        ],
+        "title": "Evaluate the outer value",
+        "text": "$$\\tan\\left(\\frac{3\\pi}{4}\\right)=-1.$$ Now, what is $$\\arctan(-1)?$$",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{5\\pi}{4}$$",
+            "$$\\frac{\\pi}{4}$$",
+            "$$\\frac{\\left(-\\pi\\right)}{4}$$",
+            "$$\\frac{\\left(-5\\pi\\right)}{4}$$"
+        ],
+        "subHints": [
+            {
+                "id": "a736a57T3-diag-P09a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Remember the range",
+                "text": "The range of $$\\arctan$$ is $$\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right).$$ It cannot return a value like $$\\frac{3\\pi}{4}.$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            },
+            {
+                "id": "a736a57T3-diag-P09a-h2-s2",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Connection to the unit circle",
+                "text": "Recall that $$\\tan\\left(\\frac{3\\pi}{4}\\right)$$ represents the slope of the line passing through the origin and the point on the unit circle at the angle $$\\frac{3\\pi}{4}.$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            },
+            {
+                "id": "a736a57T3-diag-P09a-h2-s3",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Find equivalent angle geometrically",
+                "text": "The principal range of $$\\arctan$$ is $$\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right), $$ which is the right half of the unit circle. To find an angle in this range that creates the same slope as $$\\frac{3\\pi}{4}, $$ extend that line straight through the origin into Quadrant IV. It hits the right half of the circle at $$-\\frac{\\pi}{4}.$$\\n##figure1.gif##",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            },
+            {
+                "id": "a736a57T3-diag-P09a-h2-s4",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Find equivalent angle algebraically",
+                "text": "We can also solve this algebraically using the periodic nature of the tangent function. Tangent has a period of $$\\pi, $$ meaning $$\\tan(\\theta)=\\tan(\\theta-\\pi).$$ Subtracting the period gives $$\\frac{3\\pi}{4}-\\pi=-\\frac{\\pi}{4}.$$ Since this is inside the principal range, it is our answer.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a736a57T3-diag-P09a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a736a57T3-diag-P09a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "Therefore $$\\arctan\\left(\\tan\\left(\\frac{3\\pi}{4}\\right)\\right)=\\arctan\\left(\\tan\\left(\\frac{-\\pi}{4}\\right)\\right)=\\frac{-\\pi}{4}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

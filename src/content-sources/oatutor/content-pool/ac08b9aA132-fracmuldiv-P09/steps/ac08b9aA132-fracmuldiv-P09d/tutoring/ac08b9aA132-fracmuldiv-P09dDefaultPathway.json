@@ -1,0 +1,48 @@
+[
+    {
+        "id": "ac08b9aA132-fracmuldiv-P09d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Combining gears",
+        "text": "The rotation rate of each gear combines through a conversion factor problem that connects the rotation rates as products.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac08b9aA132-fracmuldiv-P09d-h2",
+        "type": "hint",
+        "dependencies": [
+            "ac08b9aA132-fracmuldiv-P09d-h1"
+        ],
+        "title": "Blue gear rotation rate",
+        "text": "The pink gear rotates at $$\\frac{12}{1}$$ RPM. The blue gear rotates at the rate $$\\frac{12}{1} \\frac{1}{3}=\\frac{4}{1}$$ RPM",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac08b9aA132-fracmuldiv-P09d-h3",
+        "type": "hint",
+        "dependencies": [
+            "ac08b9aA132-fracmuldiv-P09d-h2"
+        ],
+        "title": "Yellow gear rotation rate",
+        "text": "The yellow gear rotates at the same rotation rate as the blue gear, they are connected. The yellow gear rotates at the rate $$\\frac{4}{1} \\frac{1}{1}$$ RPM.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac08b9aA132-fracmuldiv-P09d-h4",
+        "type": "hint",
+        "dependencies": [
+            "ac08b9aA132-fracmuldiv-P09d-h3"
+        ],
+        "title": "Orange gear rotation rate",
+        "text": "The orange gear rotates at the yellow gear's rate times the reduction factor: $$\\frac{4}{1} \\frac{1}{2}$$ $$=$$ $$2$$ RMP. \\n Note that $$\\frac{4}{1}$$ is the rotation rate of the yellow gear, and $$\\frac{1}{2}$$ is the factor of the number of rotations of the orange gear per rotation of the yellow gear.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

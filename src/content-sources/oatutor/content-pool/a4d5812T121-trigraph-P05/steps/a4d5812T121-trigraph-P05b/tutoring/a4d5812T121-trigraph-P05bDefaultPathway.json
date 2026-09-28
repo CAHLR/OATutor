@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a4d5812T121-trigraph-P05b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Where is the first peak?",
+        "text": "To find where our new peak is, set that entire argument to zero: $$3\\left(x-\\frac{\\pi}{3}\\right)=0$$. Solve for $$x.$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4d5812T121-trigraph-P05b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4d5812T121-trigraph-P05b-h1"
+        ],
+        "title": "Zero product property",
+        "text": "By the zero product property, the argument is zero if $$3=0$$ (not possible) or $$x-\\frac{\\pi}{3}=0$$, which means $$x=\\frac{\\pi}{3}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4d5812T121-trigraph-P05b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a4d5812T121-trigraph-P05b-h2"
+        ],
+        "title": "Phase shift",
+        "text": "The phase shift is $$\\frac{\\pi}{3}$$ to the right.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4d5812T121-trigraph-P05b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4d5812T121-trigraph-P05b-h3"
+        ],
+        "title": "Compare graphs",
+        "text": "Compare the graph of $$\\cos(3x-\\frac{\\pi}{3})$$ in gold and $$\\cos\\left(3\\left(x-\\frac{\\pi}{3}\\right)\\right)$$ in blue. \\n Both cosine graphs have period $$\\frac{2\\pi}{3}$$. The blue graph, $$\\cos(3x-\\pi/3),$$ has a peak at $$x=\\frac{\\pi}{9}$$. The gold graph, $$\\cos(3(x-\\pi/3)),$$ has a peak at $$x=\\frac{\\pi}{3}$$.\\n##figure2.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

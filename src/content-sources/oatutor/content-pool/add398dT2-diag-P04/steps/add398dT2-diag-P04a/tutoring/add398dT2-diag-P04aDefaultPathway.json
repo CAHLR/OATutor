@@ -1,0 +1,36 @@
+[
+    {
+        "id": "add398dT2-diag-P04a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Reference triangle",
+        "text": "The relationship $$\\tan(\\theta)=x=\\frac{x}{1}$$ can be encoded in a right triangle with opposite side length $$x$$ and adjacent side length $$1$$. \\n The image below shows a right triangle with a horizontal base labeled $$1$$ and vertical opposite side labeled $$x$$. The diagonal hypotenuse is unlabeled. The acute angle between the base and the hypotenuse is labeled theta.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "add398dT2-diag-P04a-h2",
+        "type": "hint",
+        "dependencies": [
+            "add398dT2-diag-P04a-h1"
+        ],
+        "title": "Find hypotenuse length",
+        "text": "By the Pythagorean theorem, the hypotenuse length is $$\\sqrt{1**2+x**2} $$=$$ \\sqrt{1+x**2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "add398dT2-diag-P04a-h3",
+        "type": "hint",
+        "dependencies": [
+            "add398dT2-diag-P04a-h2"
+        ],
+        "title": "Take the ratio",
+        "text": "Opposite over hypotenuse is $$\\frac{x}{\\sqrt{1+x**2}}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "id": "ac048eeT331-trigcancel-P01a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\sqrt{3}}{2}$$"
+        ],
+        "dependencies": [],
+        "title": "Evaluate the inner value",
+        "text": "First, calculate the inner value: what is $$\\cos\\left(-\\frac{\\pi}{6}\\right)?$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ac048eeT331-trigcancel-P01a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{6}$$"
+        ],
+        "dependencies": [
+            "ac048eeT331-trigcancel-P01a-h1"
+        ],
+        "title": "Evaluate the outer value",
+        "text": "$$\\cos\\left(\\frac{-\\pi}{6}\\right)=\\frac{\\sqrt{3}}{2}.$$ Now, what is $$\\arccos\\left(\\frac{\\sqrt{3}}{2}\\right)?$$",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{-\\pi}{6}$$",
+            "$$\\frac{\\pi}{6}$$",
+            "$$\\frac{11\\pi}{6}$$",
+            "$$\\frac{5\\pi}{6}$$"
+        ],
+        "subHints": [
+            {
+                "id": "ac048eeT331-trigcancel-P01a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Connection to the unit circle",
+                "text": "Recall that $$\\cos\\left(\\frac{-\\pi}{6}\\right)$$ represents the $$x-$$ coordinate of the point on the unit circle at the angle $$\\frac{-\\pi}{6}.$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            },
+            {
+                "id": "ac048eeT331-trigcancel-P01a-h2-s2",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Find equivalent angle geometrically",
+                "text": "The principal range of $$\\arccos$$ is $$[0, \\pi], $$ which covers only the 1st and 2nd quadrants. Angles in the 4th quadrant share the same $$x-$$ coordinate as angles directly above them in the 1st quadrant. Visually, a vertical line drawn up from the point on the circle at angle $$\\frac{-\\pi}{6}$$ intersects the upper half of the circle at the point on the circle at angle $$\\frac{\\pi}{6}.$$\\n##figure1.gif##",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            },
+            {
+                "id": "ac048eeT331-trigcancel-P01a-h2-s3",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Find equivalent angle algebraically",
+                "text": "We can also verify this algebraically. Because cosine is an even function, $$\\cos\\left(\\frac{-\\pi}{6}\\right)=\\cos\\left(\\frac{\\pi}{6}\\right).$$ Since $$\\frac{\\pi}{6}$$ falls inside the required principal range of $$[0, \\pi], $$ that is our final answer.",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    }
+]

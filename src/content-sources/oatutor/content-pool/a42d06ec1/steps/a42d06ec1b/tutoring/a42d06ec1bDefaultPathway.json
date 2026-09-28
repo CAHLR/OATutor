@@ -1,0 +1,118 @@
+[
+    {
+        "id": "a42d06ec1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Special Points",
+        "text": "Start by choosing a few $$x$$ values, calculating the corresponding $$y$$ values, and plotting points on the graph.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a42d06ec1b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a42d06ec1b-h1"
+        ],
+        "title": "Special Points",
+        "text": "For the line $$y=\\left(\\frac{1}{3}\\right)^x$$, what is the value of $$y$$ when $$x=0$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a42d06ec1b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a42d06ec1b-h2"
+        ],
+        "title": "Special Points",
+        "text": "For the line $$y=\\left(\\frac{1}{3}\\right)^x$$, what is the value of $$y$$ when $$x=-1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a42d06ec1b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{3}$$"
+        ],
+        "dependencies": [
+            "a42d06ec1b-h3"
+        ],
+        "title": "Special Points",
+        "text": "For the line $$y=\\left(\\frac{1}{3}\\right)^x$$, what is the value of $$y$$ when $$x=1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a42d06ec1b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a42d06ec1b-h4"
+        ],
+        "title": "Special Points",
+        "text": "For the line $$y=\\log_{1/3}\\left(x\\right)$$, what is the value of $$y$$ when $$x=1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a42d06ec1b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "a42d06ec1b-h5"
+        ],
+        "title": "Special Points",
+        "text": "For the line $$y=\\log_{1/3}\\left(x\\right)$$, what is the value of $$y$$ when $$x=3$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a42d06ec1b-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a42d06ec1b-h6"
+        ],
+        "title": "Select the graph",
+        "text": "Is this the correct graph?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

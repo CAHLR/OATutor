@@ -1,0 +1,36 @@
+[
+    {
+        "id": "add398dT2-diag-P03a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Reference triangle",
+        "text": "The relationship $$\\sin(\\theta)=x=\\frac{x}{1}$$ can be encoded in a right triangle with opposite side length $$x$$ and hypotenuse $$1$$. \\n The image below shows a right triangle with an unlabeled horizontal base. The vertical opposite side is labeled $$x$$, and a diagonal hypotenuse is labeled $$1$$. The acute angle between the base and the hypotenuse is labeled theta.\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "add398dT2-diag-P03a-h2",
+        "type": "hint",
+        "dependencies": [
+            "add398dT2-diag-P03a-h1"
+        ],
+        "title": "Find adjacent side length",
+        "text": "By the Pythagorean theorem, the adjacent side length is $$\\sqrt{1-x**2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "add398dT2-diag-P03a-h3",
+        "type": "hint",
+        "dependencies": [
+            "add398dT2-diag-P03a-h2"
+        ],
+        "title": "Take the ratio",
+        "text": "Adjacent over hypotenuse is $$\\frac{\\sqrt{1-x**2}}{1} $$=$$ \\sqrt{1-x**2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

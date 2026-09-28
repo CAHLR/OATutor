@@ -1,0 +1,48 @@
+[
+    {
+        "id": "ad08b92T212-sohcahtoa-P03a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "SOH",
+        "text": "Sine is opposite over hypotenuse",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad08b92T212-sohcahtoa-P03a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad08b92T212-sohcahtoa-P03a-h1"
+        ],
+        "title": "Find opposite leg length",
+        "text": "The length of the unknown leg is $$\\sqrt{1-x^2}$$ by the Pythagorean theorem.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad08b92T212-sohcahtoa-P03a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad08b92T212-sohcahtoa-P03a-h2"
+        ],
+        "title": "Pythagorean theorem",
+        "text": "By the pythagorean theorem, the unknown leg must satisfy the equation x**2+?**2=1**2",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad08b92T212-sohcahtoa-P03a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad08b92T212-sohcahtoa-P03a-h3"
+        ],
+        "title": "Solve for unknown side",
+        "text": "Solving for the unknown side we get \\n ?**2=1-x**2 \\n Since the side length must be positive, we take the positive square root as the answer.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a736a57T3-diag-P05a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of the arcsin",
+        "text": "There is an angle $$\\frac{-\\pi}{2}$$ $$\\leq$$ $$\\theta$$ $$\\leq$$ $$\\frac{\\pi}{2}$$ such that $$\\arcsin(1/2)=\\theta$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a736a57T3-diag-P05a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a736a57T3-diag-P05a-h1"
+        ],
+        "title": "Definition of the sine",
+        "text": "$$\\arcsin(1/2)=\\theta$$ if and only if $$\\sin(\\theta)=1/2$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a736a57T3-diag-P05a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a736a57T3-diag-P05a-h2"
+        ],
+        "title": "SOHCAHTOA",
+        "text": "$$\\sin(\\theta)$$ is the ratio of the opposite side to the hypotenuse of a right triangle with angle $$\\theta$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a736a57T3-diag-P05a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a736a57T3-diag-P05a-h3"
+        ],
+        "title": "Important right triangles",
+        "text": "The right triangle with opposite side length $$\\frac{1}{2}$$ and hypotenuse $$1$$ is the $$30-60-90$$ triangle where the angle $$\\theta$$ $$=\\frac{\\pi}{6}$$\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,84 @@
+[
+    {
+        "id": "a2101f5T332-trigcomp-P06a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Name the angle",
+        "text": "Let $$\\theta$$ be the angle $$\\theta=\\arctan(x/a)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2101f5T332-trigcomp-P06a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2101f5T332-trigcomp-P06a-h1"
+        ],
+        "title": "Definition of the inverse",
+        "text": "If $$\\theta=\\arctan(x/a),$$ then $$\\tan(\\theta)=x/a$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2101f5T332-trigcomp-P06a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a2101f5T332-trigcomp-P06a-h2"
+        ],
+        "title": "SOHCAHTOA",
+        "text": "Tangent of $$\\theta$$ is the ratio of opposite over adjacent for a right triangle with angle $$\\theta$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2101f5T332-trigcomp-P06a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a2101f5T332-trigcomp-P06a-h3"
+        ],
+        "title": "Construct a right triangle",
+        "text": "Construct a right triangle with angle $$\\theta$$ so that $$\\tan(\\theta)=x/a.$$ \\n Assume a triangle with opposite side $$x$$ and adjacent side $$a.$$\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2101f5T332-trigcomp-P06a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a2101f5T332-trigcomp-P06a-h4"
+        ],
+        "title": "The hypotenuse",
+        "text": "Compute the hypotenuse from Pythagorean theorem.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2101f5T332-trigcomp-P06a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a2101f5T332-trigcomp-P06a-h5"
+        ],
+        "title": "The hypotenuse",
+        "text": "The hypotenuse is $$\\sqrt{x^2+a^2}$$.\\n##figure2.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2101f5T332-trigcomp-P06a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a2101f5T332-trigcomp-P06a-h6"
+        ],
+        "title": "SOHCAHTOA",
+        "text": "Sine is opposite over hypotenuse. Combine those two algebraic pieces.\\n##figure3.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

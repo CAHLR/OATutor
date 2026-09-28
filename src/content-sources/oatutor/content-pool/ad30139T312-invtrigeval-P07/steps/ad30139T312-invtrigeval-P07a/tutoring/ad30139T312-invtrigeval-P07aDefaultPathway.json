@@ -1,0 +1,72 @@
+[
+    {
+        "id": "ad30139T312-invtrigeval-P07a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Definition of the arcsin",
+        "text": "There is an angle $$\\frac{-\\pi}{2}$$ $$\\leq$$ $$\\theta$$ $$\\leq$$ $$\\frac{\\pi}{2}$$ such that $$\\arcsin(-\\sqrt{2}/2)=\\theta$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad30139T312-invtrigeval-P07a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad30139T312-invtrigeval-P07a-h1"
+        ],
+        "title": "Definition of the sine",
+        "text": "$$\\arcsin(-\\sqrt{2}/2)=\\theta$$ if and only if $$\\sin(\\theta)$$ $$=\\frac{\\left(-\\sqrt{2}\\right)}{2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad30139T312-invtrigeval-P07a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ad30139T312-invtrigeval-P07a-h2"
+        ],
+        "title": "Possible $$\\theta$$",
+        "text": "In the range $$\\frac{-\\pi}{2}$$ $$\\leq$$ $$\\theta$$ $$\\leq$$ $$\\frac{\\pi}{2}$$, $$\\sin(\\theta)$$ <0 for $$\\frac{-\\pi}{2}$$ $$\\leq$$ $$\\theta$$ < $$0$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad30139T312-invtrigeval-P07a-h4",
+        "type": "hint",
+        "dependencies": [
+            "ad30139T312-invtrigeval-P07a-h3"
+        ],
+        "title": "SOHCAHTOA",
+        "text": "$$\\sin(\\theta)$$ is the ratio of the opposite side to the hypotenuse of a right triangle with angle $$\\theta$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad30139T312-invtrigeval-P07a-h5",
+        "type": "hint",
+        "dependencies": [
+            "ad30139T312-invtrigeval-P07a-h4"
+        ],
+        "title": "Important right triangles",
+        "text": "The right triangle with opposite side length $$\\frac{\\sqrt{2}}{2}$$ and hypotenuse $$1$$ is the isosoles right triangle where the angle is $$\\frac{\\pi}{4}$$\\n##figure1.gif##",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad30139T312-invtrigeval-P07a-h6",
+        "type": "hint",
+        "dependencies": [
+            "ad30139T312-invtrigeval-P07a-h5"
+        ],
+        "title": "Convert to the correct angle",
+        "text": "In order to have the negative value, we take $$\\theta$$ $$=\\frac{\\left(-\\pi\\right)}{4}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

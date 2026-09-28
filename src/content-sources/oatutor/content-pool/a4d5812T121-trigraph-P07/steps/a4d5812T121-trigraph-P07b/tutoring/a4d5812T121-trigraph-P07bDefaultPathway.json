@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a4d5812T121-trigraph-P07b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find asymptotes of $$\\tan(Bx).$$",
+        "text": "The asymptotes are found by solving $$Bx=\\frac{\\pm \\pi}{2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4d5812T121-trigraph-P07b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4d5812T121-trigraph-P07b-h1"
+        ],
+        "title": "Find asymptotes of $$\\tan(Bx).$$",
+        "text": "$$Bx=\\frac{\\pm \\pi}{2}$$ gives $$x=\\frac{\\pm \\pi}{2B}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4d5812T121-trigraph-P07b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{B}$$"
+        ],
+        "dependencies": [
+            "a4d5812T121-trigraph-P07b-h2"
+        ],
+        "title": "Find the period",
+        "text": "What is the period of $$\\tan(Bx)?$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4d5812T121-trigraph-P07b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a4d5812T121-trigraph-P07b-h3"
+        ],
+        "title": "Distance between asymptotes",
+        "text": "The period is the distance between the asymptotes.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4d5812T121-trigraph-P07b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a4d5812T121-trigraph-P07b-h4"
+        ],
+        "title": "Distance between asymptotes",
+        "text": "The distance between asymptotes is \\n $$\\frac{\\pi}{2B}-\\frac{\\left(-\\pi\\right)}{2B}=\\frac{\\pi}{B}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4d5812T121-trigraph-P07b-h6",
+        "type": "hint",
+        "dependencies": [
+            "a4d5812T121-trigraph-P07b-h5"
+        ],
+        "title": "Understanding the period",
+        "text": "If $$B>1$$, then $$\\frac{\\pi}{B}<\\pi$$, which means that the distance between asymptotes is decreasing.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
