@@ -1,0 +1,56 @@
+[
+    {
+        "id": "aea05a2ds100-sp24-final-Q10c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding k-Medians",
+        "text": "In k-Medians clustering, the center of each cluster is the median of the data points in that cluster. This is different from k-Means, where the center is the mean. Think about how the median is calculated and how it might affect the cluster centers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp24-final-Q10c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "First Iteration Check",
+        "text": "To determine if k-Medians has converged, check if the cluster centers have changed after assigning data points to the nearest center. If they remain the same, it has converged. Otherwise, it hasn't.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp24-final-Q10c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3$$ and $$5.5$$"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp24-final-Q10c-h2"
+        ],
+        "title": "Calculating New Medians",
+        "text": "After assigning each data point to the nearest cluster center, calculate the median of each cluster. What are the new medians?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$2$$ and $$7$$",
+            "$$3$$ and $$5.5$$",
+            "$$1$$ and $$8$$"
+        ]
+    },
+    {
+        "id": "aea05a2ds100-sp24-final-Q10c-h4",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-sp24-final-Q10c-h1"
+        ],
+        "title": "Assigning Data Points",
+        "text": "Assign each data point to the nearest cluster center. For example, data point $$1$$ is closer to center $$2$$ than to center $$7$$. Do this for all data points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

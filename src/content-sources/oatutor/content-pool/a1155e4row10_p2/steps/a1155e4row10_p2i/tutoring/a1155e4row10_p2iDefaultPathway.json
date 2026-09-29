@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1155e4row10_p2i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Quartiles",
+        "text": "A box plot visually represents the distribution of data. The box itself shows the interquartile range (IQR), which contains the middle 50% of the data. The line inside the box represents the median, or the second quartile (Q2).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row10_p2i-h1"
+        ],
+        "title": "Identifying Quartiles in a Box Plot",
+        "text": "In a box plot, the edges of the box represent the first quartile (Q1) and the third quartile (Q3). The whiskers extend to the smallest and largest values within $$1.5$$ times the IQR from the quartiles.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2i-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1155e4row10_p2i-h2"
+        ],
+        "title": "Can You Determine Quartiles?",
+        "text": "Based on the information about box plots, can you determine quartiles by looking at a box plot?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

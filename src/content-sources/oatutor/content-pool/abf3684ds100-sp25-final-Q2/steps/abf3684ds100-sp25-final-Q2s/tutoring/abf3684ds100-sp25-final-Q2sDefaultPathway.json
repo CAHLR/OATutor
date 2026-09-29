@@ -1,0 +1,64 @@
+[
+    {
+        "id": "abf3684ds100-sp25-final-Q2s-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Learning Rate",
+        "text": "The learning rate in gradient descent determines the size of the steps taken towards the minimum. If the learning rate is too small, convergence is slow. If it's too large, it might overshoot the minimum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2s-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2s-h1"
+        ],
+        "title": "Effect of Increasing Learning Rate",
+        "text": "What happens to the convergence speed if the learning rate is increased?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2s-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Visualizing the Path",
+        "text": "Look at the path of the gradient descent in the plot. Notice how the steps are taken towards the minimum. Consider how larger steps might affect this path.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2s-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2s-h3"
+        ],
+        "title": "Potential Outcomes of Larger Steps",
+        "text": "If the steps become larger due to an increased learning rate, what could happen to the path of convergence?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

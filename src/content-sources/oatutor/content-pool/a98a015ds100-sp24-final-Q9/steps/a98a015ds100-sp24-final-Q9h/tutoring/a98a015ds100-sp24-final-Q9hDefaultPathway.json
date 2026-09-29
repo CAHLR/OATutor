@@ -1,0 +1,43 @@
+[
+    {
+        "id": "a98a015ds100-sp24-final-Q9h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is sensitive to the variance in the data. When more data points are added, the variance structure can change, potentially altering the principal components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9h-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Singular Values and Variance",
+        "text": "The singular values in PCA represent the amount of variance captured by each principal component. Larger singular values indicate more variance captured.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9h-h1"
+        ],
+        "title": "Effect of Adding Data Points",
+        "text": "Consider how adding more data points might affect the variance in the dataset. Would the principal components remain the same?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

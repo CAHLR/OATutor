@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a640c04row4c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "Look at the DataFrame provided. Notice the columns and their data types. Which column would you use to filter nuggets by weight?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row4c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a640c04row4c-h1"
+        ],
+        "title": "Filtering the Data",
+        "text": "To find nuggets with weight less than $$0.6$$ ounces, consider how you can use a condition to filter the DataFrame. What would this condition look like?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row4c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a640c04row4c-h2"
+        ],
+        "title": "Counting the Nuggets",
+        "text": "Once you have filtered the DataFrame, think about how you can count the occurrences of each chain. Which function helps in counting unique values?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row4c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            ".idxmax()"
+        ],
+        "dependencies": [
+            "a640c04row4c-h3"
+        ],
+        "title": "Finding the Maximum Count",
+        "text": "After counting the nuggets for each chain, which function will help you find the chain with the highest count?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            ".max()",
+            ".idxmin()",
+            ".argmax()",
+            ".idxmax()",
+            ".first()"
+        ]
+    }
+]

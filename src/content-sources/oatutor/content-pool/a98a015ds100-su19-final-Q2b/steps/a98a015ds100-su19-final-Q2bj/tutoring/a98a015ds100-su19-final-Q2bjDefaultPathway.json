@@ -1,0 +1,52 @@
+[
+    {
+        "id": "a98a015ds100-su19-final-Q2bj-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It projects data onto new axes, called principal components, which are linear combinations of the original variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su19-final-Q2bj-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting Scatter Plots",
+        "text": "Look at the scatter plot with 'mpg' and 'age'. Notice the pattern and how the points are distributed. This can help you determine which principal component might be represented in other plots.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su19-final-Q2bj-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "pc1"
+        ],
+        "dependencies": [],
+        "title": "Choosing the Correct Axis Label",
+        "text": "For the plot labeled (h.i), which axis label is consistent with a linear relationship?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "pc1",
+            "pc2",
+            "Neither"
+        ]
+    },
+    {
+        "id": "a98a015ds100-su19-final-Q2bj-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Analyzing KDE Plots",
+        "text": "KDE plots show the distribution of data. Compare the KDE plots with the scatter plot to see which principal component might match the distribution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

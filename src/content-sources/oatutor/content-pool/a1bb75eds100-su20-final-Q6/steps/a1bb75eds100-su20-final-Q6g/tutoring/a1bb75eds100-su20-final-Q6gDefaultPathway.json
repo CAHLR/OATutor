@@ -1,0 +1,52 @@
+[
+    {
+        "id": "a1bb75eds100-su20-final-Q6g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding GroupBy",
+        "text": "When using the groupby function, it organizes the data based on the unique values of the specified column. Think about what the size function does after grouping the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su20-final-Q6g-h1"
+        ],
+        "title": "Indexing with iloc",
+        "text": "The iloc function is used to access rows by their integer index. Consider how the index is determined after grouping the data by generation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su20-final-Q6g-h2"
+        ],
+        "title": "Checking the Generation Index",
+        "text": "What is the index of the seventh generation in the grouped data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$1$$",
+            "$$2$$",
+            "$$3$$",
+            "$$4$$",
+            "$$5$$",
+            "$$6$$",
+            "$$7$$",
+            "FALSE"
+        ]
+    }
+]

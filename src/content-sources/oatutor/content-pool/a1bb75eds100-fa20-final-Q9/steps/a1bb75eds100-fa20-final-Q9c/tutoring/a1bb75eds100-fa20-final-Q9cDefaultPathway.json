@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a1bb75eds100-fa20-final-Q9c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Feature Weights",
+        "text": "When you standardize features, each feature is transformed to have a mean of $$0$$ and a standard deviation of $$1$$. This means that the weights in logistic regression reflect the importance of each feature in predicting the outcome. Consider how the magnitude of these weights might relate to the variability and influence of each feature.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9c-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "abv"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9c-h1"
+        ],
+        "title": "Comparing Feature Influence",
+        "text": "Which feature is likely to have a greater influence on the logistic regression model based on its weight magnitude?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "hue",
+            "abv"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9c-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting Logistic Regression Weights",
+        "text": "In logistic regression, a larger weight magnitude for a feature indicates a stronger influence on the predicted probability. Think about how the standardized nature of the features might affect the weight magnitudes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "abv is more important"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9c-h3"
+        ],
+        "title": "Weight Magnitude and Feature Importance",
+        "text": "If the abv feature has a higher magnitude weight than the hue feature, what does this suggest about its importance in the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "abv is more important",
+            "hue is more important",
+            "Both are equally important"
+        ]
+    }
+]

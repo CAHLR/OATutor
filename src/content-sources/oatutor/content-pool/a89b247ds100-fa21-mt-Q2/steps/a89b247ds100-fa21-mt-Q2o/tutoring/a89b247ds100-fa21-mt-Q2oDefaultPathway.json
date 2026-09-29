@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a89b247ds100-fa21-mt-Q2o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "When we talk about reducing model variance, we're looking at how sensitive our model is to fluctuations in the training data. Think about how transformations can help stabilize predictions by grouping similar data points together.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2o-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2o-h1"
+        ],
+        "title": "Exploring the Transformation",
+        "text": "Consider what happens when you apply the transformation $$f(x)=\\operatorname{floor}\\left(\\frac{x}{5}\\right)$$. How does this affect the range of values for age? Does it group ages into broader categories?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2o-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It decreases"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2o-h2"
+        ],
+        "title": "Effect of Grouping Ages",
+        "text": "If you transform age using $$f(x)=\\operatorname{floor}\\left(\\frac{x}{5}\\right)$$, what happens to the number of unique values for age?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It increases",
+            "It decreases",
+            "It stays the same"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2o-h4",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2o-h3"
+        ],
+        "title": "Linking Transformation to Variance",
+        "text": "By reducing the number of unique values, the model might become less sensitive to small changes in the data. How does this relate to variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

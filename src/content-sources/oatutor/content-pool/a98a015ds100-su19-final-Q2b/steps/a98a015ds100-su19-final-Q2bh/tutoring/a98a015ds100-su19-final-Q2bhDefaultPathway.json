@@ -1,0 +1,76 @@
+[
+    {
+        "id": "a98a015ds100-su19-final-Q2bh-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It projects data onto new axes, called principal components, which are linear combinations of the original variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su19-final-Q2bh-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting Scatter Plots",
+        "text": "Look at the scatter plot labeled (g.i). It shows a clear pattern. Consider how this pattern might relate to the principal components, pc1 and pc2.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su19-final-Q2bh-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "pc1"
+        ],
+        "dependencies": [
+            "a98a015ds100-su19-final-Q2bh-h2"
+        ],
+        "title": "Choosing the Correct Axis Label for (g.i)",
+        "text": "Which principal component, pc1 or pc2, is likely represented on the x-axis of plot (g.i) based on the pattern observed?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "pc1",
+            "pc2",
+            "Neither"
+        ]
+    },
+    {
+        "id": "a98a015ds100-su19-final-Q2bh-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Analyzing Plot (h.i)",
+        "text": "Plot (h.i) shows a perfect linear relationship. Consider what this might indicate about the data and the principal components involved.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su19-final-Q2bh-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "pc1"
+        ],
+        "dependencies": [
+            "a98a015ds100-su19-final-Q2bh-h4"
+        ],
+        "title": "Choosing the Correct Axis Label for (h.i)",
+        "text": "Given the perfect linear relationship in plot (h.i), which principal component, pc1 or pc2, is likely represented on the x-axis?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "pc1",
+            "pc2",
+            "Neither"
+        ]
+    }
+]

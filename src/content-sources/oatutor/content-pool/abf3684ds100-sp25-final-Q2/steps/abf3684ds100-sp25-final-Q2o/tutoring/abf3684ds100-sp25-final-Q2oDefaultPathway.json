@@ -1,0 +1,80 @@
+[
+    {
+        "id": "abf3684ds100-sp25-final-Q2o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Objective Function",
+        "text": "The objective function is a way to measure how well your model is predicting the profits. It involves parameters $$\\theta_0$$ and $$\\theta_1$$, which you will adjust to minimize the function's value. Think about how each term in the function might affect the outcome.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2o-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Initial Values and Learning Rate",
+        "text": "You start with initial values $$\\theta_0=1$$ and $$\\theta_1=2$$. The learning rate, alpha, is $$0.5$$. These values will guide how much you adjust $$\\theta_0$$ and $$\\theta_1$$ in each step. Consider how the learning rate affects the size of your steps.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2o-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Gradient Descent Step",
+        "text": "In gradient descent, you update $$\\theta_0$$ by subtracting the product of the learning rate and the derivative of the objective function with respect to $$\\theta_0$$. Try to find this derivative and see how it influences the update.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2o-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-1}{{\\theta_0}**2}$$"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2o-h3"
+        ],
+        "title": "Calculating the Derivative",
+        "text": "What is the derivative of the objective function with respect to $$\\theta_0$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{-1}{{\\theta_0}**2}$$",
+            "$$\\frac{-1}{{\\theta_0}^2}$$",
+            "$$-{\\theta_0}^2$$",
+            "$$\\frac{1}{{\\theta_0}^2}$$",
+            "$${\\theta_0}^2$$"
+        ]
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2o-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0.5$$"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2o-h4"
+        ],
+        "title": "Updating $$\\Theta_0$$",
+        "text": "Using the derivative you found, what is the new value of $$\\theta_0$$ after one gradient descent step?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0.5$$",
+            "$$1.5$$",
+            "$$1.0$$",
+            "$$0.0$$",
+            "$$2.0$$"
+        ]
+    }
+]

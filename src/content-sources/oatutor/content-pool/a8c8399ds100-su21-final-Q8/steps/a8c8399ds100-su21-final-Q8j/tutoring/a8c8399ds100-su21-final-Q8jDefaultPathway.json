@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a8c8399ds100-su21-final-Q8j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "When you one-hot encode a categorical variable, each category becomes a separate binary column. For example, if you have a column with three categories, you will create three new columns, each representing one of the categories.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8j-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Intercept Term in Regression",
+        "text": "An intercept term in a regression model is a constant that allows the model to fit the data better by shifting the regression line up or down. It is often represented as a column of ones in the design matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Linear dependence due to one hot encoded columns with an intercept term"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su21-final-Q8j-h1"
+        ],
+        "title": "Identifying Linear Dependence",
+        "text": "Consider how one-hot encoding and the intercept term might create linear dependence. If you have a one-hot encoded column for each category, what happens when you add an intercept term?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Linear dependence due to one hot encoded columns with an intercept term",
+            "More features than data points (20 data points, $$21$$ features)",
+            "The nonlinear transformations create duplicate columns",
+            "The intercept term is always zero",
+            "The design matrix has more rows than columns"
+        ]
+    }
+]

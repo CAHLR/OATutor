@@ -1,0 +1,68 @@
+[
+    {
+        "id": "abf3684ds100-sp24-final-Q2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Loss Function Impact",
+        "text": "The choice of a loss function is crucial in determining how well the gradient descent algorithm performs. Think about how the shape of the loss function might affect the path the algorithm takes to find the minimum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp24-final-Q2d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Gradient Descent Convergence",
+        "text": "Consider what factors influence whether gradient descent converges to the true optimal weights. How might the properties of the loss function, such as convexity, play a role?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp24-final-Q2d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Convexity"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp24-final-Q2d-h1"
+        ],
+        "title": "Evaluating Loss Function Properties",
+        "text": "Which of the following properties of a loss function can affect the convergence of gradient descent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Convexity",
+            "Linearity",
+            "Symmetry",
+            "Periodicity"
+        ]
+    },
+    {
+        "id": "abf3684ds100-sp24-final-Q2d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Ensures convergence to a global minimum"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp24-final-Q2d-h3"
+        ],
+        "title": "Impact of Loss Function on Convergence",
+        "text": "How does the convexity of a loss function influence the convergence of gradient descent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Ensures convergence to a global minimum",
+            "Causes divergence",
+            "Has no effect",
+            "Leads to multiple local minima"
+        ]
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-final-Q5m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scaled Inverse Tangent Function",
+        "text": "The scaled inverse tangent function is defined as $$f(x)=\\frac{1}{\\pi} \\arctan\\left(x\\right)+\\frac{1}{2}$$. This function is similar to the logistic function in that it maps any real number to a value between $$0$$ and $$1$$. Can you think about why this property is important for classification?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5m-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5m-h1"
+        ],
+        "title": "Comparing Tail-End Behavior",
+        "text": "Both the logistic function and the scaled inverse tangent function approach $$0$$ as $$x$$ approaches negative infinity and approach $$1$$ as $$x$$ approaches positive $$\\infty$$. Why might this similarity be useful when constructing an ROC curve?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5m-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$ to $$1$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5m-h2"
+        ],
+        "title": "Evaluating the Function's Range",
+        "text": "What is the range of the function $$f(x)=\\frac{1}{\\pi} \\arctan\\left(x\\right)+\\frac{1}{2}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$ to $$1$$",
+            "$$0$$ to $$2$$",
+            "$$1$$ to $$2$$",
+            "Negative infinity to positive infinity"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5m-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The function outputs probabilities between $$0$$ and $$1$$."
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5m-h3"
+        ],
+        "title": "ROC Curve and AUC",
+        "text": "Why is it possible to construct an ROC curve using the scaled inverse tangent function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The function outputs probabilities between $$0$$ and $$1$$.",
+            "The function is linear.",
+            "The function is always increasing.",
+            "The function is always decreasing."
+        ]
+    }
+]

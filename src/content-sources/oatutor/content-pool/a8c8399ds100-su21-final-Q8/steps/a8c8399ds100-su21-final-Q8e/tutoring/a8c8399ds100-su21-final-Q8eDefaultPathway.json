@@ -1,0 +1,76 @@
+[
+    {
+        "id": "a8c8399ds100-su21-final-Q8e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "When you one-hot encode a categorical variable, each category becomes a separate column. For example, if you have a column with categories {A, B, C}, it will be transformed into three columns: one for each category. Each row will have a $$1$$ in the column corresponding to its category and $$0$$ in others.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8e-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Intercept Term in the Model",
+        "text": "Including an intercept term in a model means adding a column of ones to the design matrix. This column accounts for the baseline level of the dependent variable when all other predictors are zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su21-final-Q8e-h1"
+        ],
+        "title": "Columns in the Design Matrix",
+        "text": "How many columns will the design matrix have after one-hot encoding the 'sex' and $$'embark_{town'}$$ columns and adding an intercept term?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$6$$",
+            "$$7$$",
+            "$$8$$",
+            "$$9$$"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8e-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Full Column Rank",
+        "text": "A matrix is full column rank if all its columns are linearly independent. This means no column can be written as a linear combination of the others.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8e-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su21-final-Q8e-h4"
+        ],
+        "title": "Checking Linear Independence",
+        "text": "Consider the columns created by one-hot encoding. Are any of these columns linearly dependent on others?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

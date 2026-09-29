@@ -1,0 +1,33 @@
+[
+    {
+        "id": "aea05a2ds100-su20-final-Q2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Silhouette Scores",
+        "text": "A silhouette score measures how similar a data point is to its own cluster compared to other clusters. If a point has a negative silhouette score, it means it's closer to points in a different cluster than to points in its own cluster. Think about what this implies for the point's placement.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-su20-final-Q2c-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "aea05a2ds100-su20-final-Q2c-h1"
+        ],
+        "title": "Evaluating Silhouette Scores",
+        "text": "Consider a data point that is closer to points in another cluster than to points in its own cluster. What does this indicate about its silhouette score?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

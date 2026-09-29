@@ -1,0 +1,50 @@
+[
+    {
+        "id": "a1bb75eds100-fa20-final-Q9m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Decision Boundary",
+        "text": "The decision boundary is the line where the probability of the wine being type $$1$$ is exactly $$0.5$$. This means that the expression inside the logistic function equals zero. Can you express this condition using the given decision boundary equation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9m-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9m-h1"
+        ],
+        "title": "Relating the Decision Boundary to the Threshold",
+        "text": "The decision boundary equation is given as $$2hue+abv=\\frac{3}{2}$$. This equation represents the line where the probability of the wine being type $$1$$ is $$0.5$$. How does this relate to the threshold T in the logistic regression model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9m-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$T=1-gamma$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9m-h2"
+        ],
+        "title": "Choosing the Correct Threshold",
+        "text": "Given the decision boundary $$2hue+abv=\\frac{3}{2}$$, which of the following values for T would result in this boundary?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$T=beta$$",
+            ">T=e**(-gamma)",
+            "$$T=gamma$$",
+            "$$T=-beta$$",
+            "$$T=1-beta$$",
+            "$$T=\\ln\\left(\\frac{\\gamma}{1-\\gamma}\\right)$$",
+            "$$T=1-gamma$$"
+        ]
+    }
+]

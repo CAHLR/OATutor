@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a1155e4row6f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "To create the plot, you need to filter the DataFrame to include only the relevant data. Think about how you can use conditions to filter out rows where the number of jackets bought is greater than $$10$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row6f-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$df_{to,plot[\"num_jacket_bought\"]} \\leq 10$$"
+        ],
+        "dependencies": [
+            "a1155e4row6f-h1"
+        ],
+        "title": "Filtering the DataFrame",
+        "text": "Which condition would correctly filter the DataFrame to include only rows where the number of jackets bought is $$10$$ or less?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$df_{to,plot[\"num_jacket_bought\"]} \\leq 10$$",
+            "$$df_{to,plot[\"num_jacket_bought\"]}>10$$",
+            "$$df_{to,plot[\"num_jacket_bought\"]}<10$$",
+            "$$df_{to,plot[\"collar_size\"]} \\leq 10$$",
+            ".loc[df_to_plot[\"num_jacket_bought\"]>=10]"
+        ]
+    }
+]

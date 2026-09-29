@@ -1,0 +1,81 @@
+[
+    {
+        "id": "a89b247ds100-fa21-mt-Q2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Normalization",
+        "text": "Normalization is a technique often used to scale data to a smaller range, typically between $$0$$ and $$1$$. This can help improve the performance of some machine learning algorithms. Think about how you might transform age data to fit within this range.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2c-h1"
+        ],
+        "title": "Why Normalize?",
+        "text": "Consider why normalizing age data might be beneficial. It can help in reducing the impact of different scales of features on the model's performance. How might this apply to age data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2c-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.25$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2c-h2"
+        ],
+        "title": "Calculating Normalized Age",
+        "text": "If you have an age value of $$25$$, and the age range in your data is from $$0$$ to $$100$$, what would be the normalized value of 25?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0.25$$",
+            "$$0.25$$",
+            "$$0.5$$",
+            "$$0.75$$",
+            "$$1.0$$"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2c-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using Age as a Feature",
+        "text": "When using age as a feature, consider how it might interact with other features. Does it make sense to use it directly, or should it be transformed in some way to better capture its relationship with the target variable?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Use age values normalized between $$0$$ and $$1$$."
+        ],
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2c-h4"
+        ],
+        "title": "Transforming Age Data",
+        "text": "Which of the following transformations could be applied to age data to better capture its meaning in the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Use age values normalized between $$0$$ and $$1$$.",
+            "Use age values as they are.",
+            "Use age values squared.",
+            "Use age values as a categorical variable."
+        ]
+    }
+]

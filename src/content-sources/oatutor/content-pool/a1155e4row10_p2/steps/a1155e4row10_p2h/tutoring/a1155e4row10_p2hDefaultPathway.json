@@ -1,0 +1,54 @@
+[
+    {
+        "id": "a1155e4row10_p2h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Code",
+        "text": "The code calculates the total fantasy points for each player by multiplying the number of games played by the points per game. Then, it groups the data by team and calculates the mean total points for each team.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2h-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Visualizing Data",
+        "text": "The `sns.countplot` function is used to create a count plot, which is suitable for visualizing the frequency of categorical data. Consider whether this is appropriate for the data in `output`.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [],
+        "title": "Choosing the Right Plot",
+        "text": "What type of plot is best suited for visualizing the mean total points per team?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Bar plot",
+            "Count plot",
+            "FALSE",
+            "Line plot",
+            "Scatter plot"
+        ]
+    },
+    {
+        "id": "a1155e4row10_p2h-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Analyzing the Output Data",
+        "text": "The `output` DataFrame contains the mean total points for each team. Think about how you would represent this data visually to show comparisons between teams.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

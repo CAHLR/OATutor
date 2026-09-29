@@ -1,0 +1,35 @@
+[
+    {
+        "id": "aba1299row1_part4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Coefficient",
+        "text": "The coefficient $$\\theta_1$$ represents the change in the predicted GPA for each additional hour of sleep, assuming all other variables are held constant. Think about what it means to \"hold CDSS major status constant.\"",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1_part4b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Predicted increase of $$0.23$$ GPA points for one additional hour of sleep, holding CDSS major status constant."
+        ],
+        "dependencies": [
+            "aba1299row1_part4b-h1"
+        ],
+        "title": "Interpreting $$\\theta_1$$",
+        "text": "What does $$\\theta_1=0.23$$ imply about the relationship between hours of sleep and GPA?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Predicted increase of $$0.23$$ GPA points for one additional hour of sleep, holding CDSS major status constant.",
+            "Predicted GPA for a student who gets $$0$$ hours of sleep and does not have a CDSS affiliated major.",
+            "Predicted increase of $$0.5$$ GPA points for having a CDSS affiliated major, holding sleep constant.",
+            "Predicted number of hours of sleep for a student with GPA $$0.23$$."
+        ]
+    }
+]

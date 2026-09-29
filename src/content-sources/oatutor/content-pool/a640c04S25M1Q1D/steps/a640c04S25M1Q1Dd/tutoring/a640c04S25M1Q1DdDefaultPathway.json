@@ -1,0 +1,49 @@
+[
+    {
+        "id": "a640c04S25M1Q1Dd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Filtering the DataFrame",
+        "text": "To filter the DataFrame for rows with at least $$150$$ bananas, consider using a condition that checks the 'item' column for 'banana' and the 'inventory' column for values greater than or equal to $$150$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04S25M1Q1Dd-h2",
+        "type": "hint",
+        "dependencies": [
+            "a640c04S25M1Q1Dd-h1"
+        ],
+        "title": "Sorting the DataFrame",
+        "text": "When sorting the DataFrame, you want the highest prices at the top. Think about how you can use the $$'sort_{values'}$$ function to achieve this by setting the 'ascending' parameter appropriately.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04S25M1Q1Dd-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a640c04S25M1Q1Dd-h2"
+        ],
+        "title": "Setting the Ascending Parameter",
+        "text": "What should the 'ascending' parameter be set to if you want the highest prices at the top?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "\"False\"",
+            "$$0$$",
+            "FALSE",
+            "False",
+            "None",
+            "True"
+        ]
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a98a015ds100-fa24-final-Q7j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA Components",
+        "text": "To find the coordinates of Contestant D on the PCA plot, you need to use the matrices U, S, and V. Remember that PCA transforms the data into a new coordinate system where the greatest variance comes to lie on the first coordinate (or principal component), the second greatest variance on the second coordinate, and so on.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa24-final-Q7j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa24-final-Q7j-h1"
+        ],
+        "title": "Matrix Multiplication",
+        "text": "To find the new coordinates, you will need to multiply the contestant's data vector by the matrix V. This will project the data onto the principal components. Make sure to use the correct order of multiplication.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa24-final-Q7j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(2.4, 2)$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa24-final-Q7j-h2"
+        ],
+        "title": "Calculate the Projection",
+        "text": "What is the result of multiplying Contestant D's data vector (3,8/3,8/3) by the matrix V?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$(3.6, 2.7)$$",
+            "$$(2, 2.4)$$",
+            "$$(2.4, 2)$$",
+            "$$(2.4, -2)$$",
+            "$$(1.6, 1.4)$$"
+        ]
+    }
+]

@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a1bb75eds100-sp24-final-Q8f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding ROC Curves",
+        "text": "An ROC curve plots the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings. Consider how the TPR and FPR change as you adjust the threshold from $$0$$ to $$0.75$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp24-final-Q8f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp24-final-Q8f-h1"
+        ],
+        "title": "Calculating TPR and FPR",
+        "text": "To calculate the TPR and FPR, you need to determine the number of true positives, false positives, true negatives, and false negatives at each threshold. Start by considering the threshold of $$0.25$$ and see how many predictions are above this threshold.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp24-final-Q8f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Predictions with probabilities $$0.3$$, $$0.7$$, $$0.4$$, $$0.8$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp24-final-Q8f-h2"
+        ],
+        "title": "Threshold $$0.25$$ Analysis",
+        "text": "At a threshold of $$0.25$$, which predictions are classified as positive?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Predictions with probabilities $$0.3$$, $$0.7$$, $$0.4$$, $$0.8$$",
+            "Predictions with probabilities $$0.2$$, $$0.3$$, $$0.4$$",
+            "Predictions with probabilities $$0.7$$, $$0.8$$",
+            "Predictions with probabilities $$0.2$$, $$0.3$$, $$0.8$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp24-final-Q8f-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp24-final-Q8f-h3"
+        ],
+        "title": "Interpreting the ROC Curve",
+        "text": "Once you have calculated the TPR and FPR for each threshold, plot these points on a graph. The ROC curve is a step function that connects these points. Consider how the curve changes as you move from one threshold to the next.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

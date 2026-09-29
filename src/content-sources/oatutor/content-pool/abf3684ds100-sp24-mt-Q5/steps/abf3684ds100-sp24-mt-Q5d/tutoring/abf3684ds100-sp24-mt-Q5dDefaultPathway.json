@@ -1,0 +1,46 @@
+[
+    {
+        "id": "abf3684ds100-sp24-mt-Q5d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE Minimization",
+        "text": "When trying to minimize the Mean Squared Error (MSE) using a constant model, think about how the model's prediction should relate to the target values. What statistical measure best represents the central tendency of a dataset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp24-mt-Q5d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Mean"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp24-mt-Q5d-h1"
+        ],
+        "title": "Exploring Central Tendency",
+        "text": "Which of the following measures of central tendency is most appropriate for minimizing the MSE in a constant model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Mean",
+            "Median",
+            "Mode"
+        ]
+    },
+    {
+        "id": "abf3684ds100-sp24-mt-Q5d-h3",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp24-mt-Q5d-h2"
+        ],
+        "title": "Why the Mean?",
+        "text": "The mean is the value that minimizes the sum of squared deviations from itself. This property makes it the optimal choice for minimizing MSE when using a constant model. Consider how each data point's deviation from the mean contributes to the overall error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

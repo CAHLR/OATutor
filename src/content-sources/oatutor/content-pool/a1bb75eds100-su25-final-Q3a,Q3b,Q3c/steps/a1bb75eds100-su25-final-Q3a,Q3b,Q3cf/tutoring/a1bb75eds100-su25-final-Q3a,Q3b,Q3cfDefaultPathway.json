@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3cf-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Thresholds",
+        "text": "To determine the threshold, consider the probabilities where the prediction changes from $$0$$ to $$1$$ or vice versa. Look at the probabilities given for each prediction and think about where the threshold might lie.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3cf-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3cf-h1"
+        ],
+        "title": "Analyzing Predictions",
+        "text": "Notice the predictions and their corresponding probabilities. A prediction of $$1$$ with a probability less than the threshold would be incorrect, and a prediction of $$0$$ with a probability greater than the threshold would also be incorrect.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3cf-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0.54$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3cf-h2"
+        ],
+        "title": "Choosing the Minimum Threshold",
+        "text": "Which probability value is the highest among those where the prediction is 0?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0.3$$",
+            "$$0.4$$",
+            "$$0.54$$",
+            "$$0.75$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3cf-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0.75$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3cf-h3"
+        ],
+        "title": "Choosing the Maximum Threshold",
+        "text": "Which probability value is the lowest among those where the prediction is 1?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0.4$$",
+            "$$0.54$$",
+            "$$0.75$$",
+            "$$0.88$$"
+        ]
+    }
+]

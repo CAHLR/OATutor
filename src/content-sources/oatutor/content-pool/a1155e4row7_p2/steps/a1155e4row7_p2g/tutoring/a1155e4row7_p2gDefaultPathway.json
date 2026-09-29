@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a1155e4row7_p2g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Percentiles",
+        "text": "The 75th percentile is the value below which 75% of the data falls. In a violin plot, this is often represented by the upper edge of the box in the plot. Consider how this might look for different categories.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row7_p2g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row7_p2g-h1"
+        ],
+        "title": "Comparing Violin Plots",
+        "text": "When comparing violin plots, look at the spread and the position of the quartiles. The 75th percentile is higher if the upper part of the plot extends further up.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row7_p2g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Health"
+        ],
+        "dependencies": [
+            "a1155e4row7_p2g-h2"
+        ],
+        "title": "Analyzing the Violin Plot",
+        "text": "Based on the violin plot, which project topic has a higher 75th percentile of age?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Health",
+            "Education"
+        ]
+    },
+    {
+        "id": "a1155e4row7_p2g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1155e4row7_p2g-h3"
+        ],
+        "title": "True or False",
+        "text": "Is it true that the 75th percentile of age for participants with project topic \"Health\" is higher than that for participants in project topic \"Education\"?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Code",
+        "text": "The code snippet uses an exponential function. Think about how the exponential function behaves and what effect it has on the values of $$`time_{of,day}`$$. What happens when $$`time_{of,day}`$$ is close to 12?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cd-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cd-h1"
+        ],
+        "title": "Exploring the Exponential Function",
+        "text": "The expression $$`exp\\left(-\\left(time_{of,day}-12\\right)^2\\right)`$$ involves squaring the difference between $$`time_{of,day}`$$ and $$12$$. Consider how squaring affects positive and negative differences. What does this tell you about the symmetry of the function around 12?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cd-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cd-h2"
+        ],
+        "title": "Evaluating the Expression",
+        "text": "What is the value of the expression when $$`time_{of,day}`$$ is exactly 12?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$0$$",
+            "$$1$$",
+            "$$12$$",
+            "e"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cd-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decreases"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cd-h3"
+        ],
+        "title": "Behavior of the Function",
+        "text": "How does the value of the expression change as $$`time_{of,day}`$$ moves away from 12?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increases",
+            "Decreases",
+            "Stays the same",
+            "Oscillates"
+        ]
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "id": "aba1299row9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Mean Squared Error",
+        "text": "The mean squared error (MSE) is a measure of how well our model's predictions match the actual data. It is calculated by taking the average of the squares of the differences between the predicted values and the actual values. Can you express this in terms of our model's predictions and the actual target values?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row9a-h1"
+        ],
+        "title": "Expressing the Model's Prediction",
+        "text": "Our model predicts each target value $$y_i$$ using the function $$\\operatorname{f_{\\theta}}\\left(x_i\\right)=\\theta e^{\\sqrt{|x_i|}}$$. How can you use this expression to write the predicted value for each observation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row9a-h2"
+        ],
+        "title": "Setting Up the MSE Equation",
+        "text": "To find the optimal theta, we need to minimize the MSE. Start by writing the MSE in terms of theta, $$x_i$$, and $$y_i$$. Remember, MSE is the average of the squared differences between the actual and predicted values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row9a-h3"
+        ],
+        "title": "Differentiating the MSE",
+        "text": "To find the value of theta that minimizes the MSE, differentiate the MSE with respect to theta. What does the derivative look like?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row9a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "sum{i\\=1}{n}{y_i*e**(sqrt(abs(x_i)))} / sum{i\\=1}{n}{e**(2*sqrt(abs(x_i)))}"
+        ],
+        "dependencies": [
+            "aba1299row9a-h4"
+        ],
+        "title": "Solving for Theta",
+        "text": "After differentiating the MSE with respect to theta, set the derivative equal to zero to find the critical point. What expression do you get for theta?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "sum{i\\=1}{n}{y_i*e**(sqrt(abs(x_i)))} / sum{i\\=1}{n}{e**(2*sqrt(abs(x_i)))}",
+            ">sum{i\\=1}{n}{y_i*e**(sqrt(abs(x_i)))} / sum{i\\=1}{n}{e**(sqrt(abs(x_i)))}",
+            ">sum{i\\=1}{n}{y_i*e**(2*sqrt(abs(x_i)))} / sum{i\\=1}{n}{e**(2*sqrt(abs(x_i)))}}"
+        ]
+    }
+]

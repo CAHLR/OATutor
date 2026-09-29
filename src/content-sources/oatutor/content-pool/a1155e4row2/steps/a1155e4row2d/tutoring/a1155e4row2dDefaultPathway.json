@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1155e4row2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Box Plots",
+        "text": "Box plots are useful for showing the distribution of data and identifying outliers. They are not typically used for showing totals or counts over time. Consider what type of plot might better show the total number of renovations by year.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row2d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row2d-h1"
+        ],
+        "title": "Choosing the Right Visualization",
+        "text": "Think about what kind of plot is best for showing changes over time. Line plots or bar charts are often used to display trends or totals over time. How might these be more appropriate than box plots for this data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row2d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a1155e4row2d-h2"
+        ],
+        "title": "Evaluating Box Plots for Time Series Data",
+        "text": "Are box plots typically used to show totals or counts over time?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

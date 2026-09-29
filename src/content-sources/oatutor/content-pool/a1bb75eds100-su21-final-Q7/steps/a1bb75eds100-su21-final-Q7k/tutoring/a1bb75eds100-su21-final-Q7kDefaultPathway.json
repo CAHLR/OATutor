@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a1bb75eds100-su21-final-Q7k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Random Forests",
+        "text": "Random forests are an ensemble learning method that uses multiple decision trees to make predictions. They can capture complex patterns and interactions between features. Consider how this might apply to the circular pattern in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7k-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Analyzing the Data Distribution",
+        "text": "Look at the distribution of the orange and blue points. Notice how they form concentric circles. Think about whether a decision boundary could be non-linear to separate these classes effectively.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7k-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$Non-linear$$"
+        ],
+        "dependencies": [],
+        "title": "Decision Boundary Type",
+        "text": "What type of decision boundary is likely needed to separate the classes in this dataset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Linear",
+            "$$Non-linear$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7k-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Random Forest Capabilities",
+        "text": "Random forests can create complex decision boundaries by combining multiple decision trees. This allows them to handle non-linear separations in data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7k-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Model Suitability",
+        "text": "Given the circular pattern of the data, is a random forest model suitable for generating boundary B?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a89b247ds100-fa21-mt-Q2h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Overfitting",
+        "text": "Overfitting occurs when a model learns the training data too well, capturing noise along with the underlying pattern. This often results in poor performance on new, unseen data. Can you think of ways to make the model more generalizable?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2h-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Role of Lambda in Ridge Regression",
+        "text": "In ridge regression, the parameter lambda controls the strength of the penalty applied to the coefficients. Increasing lambda can help reduce the complexity of the model. How might this affect overfitting?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2h-h2"
+        ],
+        "title": "Effect of Increasing Lambda",
+        "text": "What happens to the model's variance when you increase lambda in ridge regression?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It decreases",
+            "It increases",
+            "It stays the same",
+            "TRUE"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2h-h4",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2h-h3"
+        ],
+        "title": "Balancing Bias and Variance",
+        "text": "When adjusting lambda, consider the trade-off between bias and variance. Increasing lambda might reduce variance but could increase bias. How does this trade-off impact model performance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

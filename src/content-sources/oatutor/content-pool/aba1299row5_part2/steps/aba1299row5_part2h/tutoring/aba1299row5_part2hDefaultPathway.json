@@ -1,0 +1,47 @@
+[
+    {
+        "id": "aba1299row5_part2h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Matrix Dimensions",
+        "text": "When dealing with matrices in OLS, it's important to remember that the dimensions of the matrices involved in the calculations must align properly. Consider how the number of features, including the intercept, affects the shape of the parameter vector.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row5_part2h-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row5_part2h-h1"
+        ],
+        "title": "Parameter Vector Shape",
+        "text": "The parameter vector, often denoted as theta, includes coefficients for each feature plus the intercept. Think about how many coefficients you would have if you have $$p$$ features.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row5_part2h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$p+1$$ by $$1$$"
+        ],
+        "dependencies": [
+            "aba1299row5_part2h-h2"
+        ],
+        "title": "Matrix Shape Check",
+        "text": "If you have $$p$$ features, including the intercept, what should be the shape of the parameter vector theta?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$p$$ by $$1$$",
+            "$$p+1$$ by $$1$$",
+            "$$1$$ by $$p$$",
+            "$$1$$ by $$p+1$$"
+        ]
+    }
+]

@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a72a45crow6c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Non-Response Bias",
+        "text": "Non-response bias occurs when the individuals who do not respond to a survey differ in significant ways from those who do respond. Consider whether offering an incentive like extra credit completely eliminates this issue.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow6c-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Incentives can increase participation but may not eliminate $$non-response$$ bias."
+        ],
+        "dependencies": [
+            "a72a45crow6c-h1"
+        ],
+        "title": "Evaluating the Impact of Incentives",
+        "text": "Which of the following statements is true about the effect of incentives on survey participation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Incentives can increase participation but may not eliminate $$non-response$$ bias.",
+            "Incentives completely eliminate $$non-response$$ bias.",
+            "Incentives have no effect on survey participation."
+        ]
+    },
+    {
+        "id": "a72a45crow6c-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Considering the Sample Population",
+        "text": "Think about the group of students who might be more inclined to participate in the survey due to the incentive. Are they representative of the entire student body?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow6c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The sample may not be representative of the entire student body."
+        ],
+        "dependencies": [
+            "a72a45crow6c-h3"
+        ],
+        "title": "Analyzing Representativeness",
+        "text": "Which of the following best describes the potential issue with the sample population?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The sample is representative of the entire student body.",
+            "The sample may not be representative of the entire student body.",
+            "The sample is biased towards students who do not use public transportation."
+        ]
+    }
+]

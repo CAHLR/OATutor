@@ -1,0 +1,84 @@
+[
+    {
+        "id": "a1bb75eds100-fa20-final-Q9i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Logistic Function",
+        "text": "The logistic function, denoted as sigma, is used to model probabilities. It transforms any real-valued number into a value between $$0$$ and $$1$$. This is particularly useful for binary classification problems like ours.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9i-h1"
+        ],
+        "title": "Calculating the Linear Combination",
+        "text": "To find the linear combination for Billywine, use the formula $$\\theta_1 hue+\\theta_2 abv$$. Substitute the given values for hue and abv, and the chosen theta values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9i-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-3}{2}$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9i-h2"
+        ],
+        "title": "Compute the Linear Combination",
+        "text": "What is the result of $$2\\frac{1}{4}+1\\left(-2\\right)$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{-3}{2}$$",
+            "$$\\frac{-1}{2}$$",
+            "$$\\frac{-3}{2}$$",
+            "$$\\frac{1}{2}$$",
+            "$$\\frac{3}{2}$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9i-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9i-h3"
+        ],
+        "title": "Applying the Logistic Function",
+        "text": "Once you have the linear combination, apply the logistic function sigma to it. Remember, $$sigma(x)=\\frac{1}{1+e^{\\left(-x\\right)}}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9i-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.1824$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9i-h4"
+        ],
+        "title": "Evaluate the Logistic Function",
+        "text": "What is $$sigma\\left(-\\frac{3}{2}\\right)$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0.1824$$",
+            "$$0.1824$$",
+            "$$0.25$$",
+            "$$0.5$$",
+            "$$0.8176$$"
+        ]
+    }
+]

@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logarithms",
+        "text": "When you see `np.log`, it refers to the natural logarithm, which is the logarithm to the base `e`. Consider how this operation affects the values of $$`time_{of,day}`$$. What happens when you take the logarithm of a number?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cb-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Range of Time of Day",
+        "text": "The time of day is given as a range from $$0.0$$ to $$24.0$$. Think about what happens when you multiply these values by $$12$$. What range do you get?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cb-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$ to $$288$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cb-h2"
+        ],
+        "title": "Effect of Multiplication",
+        "text": "What is the result of multiplying the time of day by 12?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$ to $$288$$",
+            "$$0$$ to $$24$$",
+            "$$12$$ to $$288$$",
+            "$$12$$ to $$24$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cb-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cb-h3"
+        ],
+        "title": "Logarithm of a Range",
+        "text": "Consider the range of values you get after multiplying by $$12$$. What happens when you take the logarithm of these values? Are there any values that might cause issues?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cb-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Undefined"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cb-h4"
+        ],
+        "title": "Logarithm of Zero",
+        "text": "What is the logarithm of zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Zero",
+            "One",
+            "Undefined",
+            "Negative"
+        ]
+    }
+]

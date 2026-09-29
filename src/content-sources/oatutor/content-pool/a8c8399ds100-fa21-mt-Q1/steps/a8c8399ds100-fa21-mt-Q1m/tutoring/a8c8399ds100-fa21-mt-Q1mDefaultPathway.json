@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Validation",
+        "text": "Cross-validation helps in selecting the best hyperparameter by evaluating the model's performance on different subsets of the data. Look at the errors for each lambda value across the folds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1m-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-fa21-mt-Q1m-h1"
+        ],
+        "title": "Analyzing Errors",
+        "text": "Compare the errors for each lambda value across the folds. The goal is to choose the lambda that minimizes the error consistently.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1m-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa21-mt-Q1m-h2"
+        ],
+        "title": "Choosing the Best Lambda",
+        "text": "Which lambda value has the lowest total error across both folds?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$2$$",
+            "$$3$$",
+            "$$1$$ and $$3$$ are tied",
+            "None of these"
+        ]
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a89b247ds100-su20-final-Q5al-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Ridge Regression",
+        "text": "Ridge regression adds a penalty to the loss function to prevent overfitting. This penalty is controlled by the hyperparameter lambda. Can you think about how increasing lambda might affect the model's complexity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su20-final-Q5al-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-su20-final-Q5al-h1"
+        ],
+        "title": "Effect of Lambda on Training Error",
+        "text": "When you increase lambda, the model becomes less flexible. Consider how this might impact the model's ability to fit the training data closely.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su20-final-Q5al-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a89b247ds100-su20-final-Q5al-h2"
+        ],
+        "title": "Training Error and Lambda",
+        "text": "As lambda increases, what happens to the training error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

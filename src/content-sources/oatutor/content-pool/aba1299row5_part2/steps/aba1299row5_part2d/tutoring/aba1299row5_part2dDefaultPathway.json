@@ -1,0 +1,46 @@
+[
+    {
+        "id": "aba1299row5_part2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Residuals",
+        "text": "The residual vector e represents the difference between the observed values Y and the predicted values hat{Y}. Think about what this means for the dimensions of e compared to Y.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row5_part2d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Dimensions of Vectors",
+        "text": "Consider the dimensions of the parameter vector hat{theta}. How many parameters are there in the model $$hat{s}=\\theta_0+\\theta_1 h+\\theta_2 t$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row5_part2d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aba1299row5_part2d-h1"
+        ],
+        "title": "Comparing Dimensions",
+        "text": "Which of the following statements is true about the dimensions of the residual vector e and the parameter vector hat{theta}?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "The parameter vector hat{theta} is a scalar.",
+            "The residual vector e has a different dimension than the parameter vector hat{theta}.",
+            "The residual vector e has the same dimension as the parameter vector hat{theta}.",
+            "The residual vector e is a scalar."
+        ]
+    }
+]

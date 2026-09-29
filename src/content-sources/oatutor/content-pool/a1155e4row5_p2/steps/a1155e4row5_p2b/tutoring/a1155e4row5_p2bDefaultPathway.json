@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a1155e4row5_p2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Sampling Frame",
+        "text": "Think about the group of individuals from which Rachel could potentially select her sample. This group should include everyone who could have been chosen, not just those who were actually selected.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row5_p2b-h1"
+        ],
+        "title": "Defining the Sampling Frame",
+        "text": "The sampling frame is essentially the list or database from which the sample is drawn. Consider what list Rachel used to select the 12,000 students.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p2b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All UC Berkeley students (enrolled currently)"
+        ],
+        "dependencies": [
+            "a1155e4row5_p2b-h2"
+        ],
+        "title": "Identifying the Correct Sampling Frame",
+        "text": "Which of the following best describes the sampling frame in Rachel's study?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "All UC Berkeley students (enrolled currently)",
+            ">BayPass card holders",
+            ">UC Berkeley students who use Bay Area transit",
+            ">All Bay Area transit users",
+            ">The 12,000 selected students"
+        ]
+    }
+]

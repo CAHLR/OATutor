@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2di-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Validation",
+        "text": "In 4-fold cross-validation, the dataset is divided into $$4$$ equal parts. Each part is used as a validation set once, while the remaining parts are used for training. This ensures that every data point is used for validation exactly once.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2di-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2di-h1"
+        ],
+        "title": "Cross-Validation Process",
+        "text": "How many times is each data point used in the validation set during 4-fold cross-validation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$2$$",
+            "$$3$$",
+            "$$4$$"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2di-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Linear Model Structure",
+        "text": "The linear model shown in the image is a typical representation of a multiple linear regression model. It includes an intercept and coefficients for each feature.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2di-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$30$$"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2di-h3"
+        ],
+        "title": "Model Parameters",
+        "text": "How many parameters are there in the linear model shown in the image?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$29$$",
+            "$$30$$",
+            "$$31$$",
+            "$$32$$"
+        ]
+    }
+]

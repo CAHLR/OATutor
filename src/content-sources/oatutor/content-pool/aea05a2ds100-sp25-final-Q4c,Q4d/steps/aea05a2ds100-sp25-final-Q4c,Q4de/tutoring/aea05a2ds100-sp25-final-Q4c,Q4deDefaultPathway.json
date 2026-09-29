@@ -1,0 +1,45 @@
+[
+    {
+        "id": "aea05a2ds100-sp25-final-Q4c,Q4de-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding K-means Clustering",
+        "text": "K-means clustering is sensitive to the initial placement of centroids. Think about how starting points might influence the final clusters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp25-final-Q4c,Q4de-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-sp25-final-Q4c,Q4de-h1"
+        ],
+        "title": "Exploring Initial Centroid Placement",
+        "text": "Consider how different initial positions for centroids might lead to different paths of convergence. What does this imply about the final cluster assignments?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp25-final-Q4c,Q4de-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Initial centroids can lead to different final clusters."
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp25-final-Q4c,Q4de-h2"
+        ],
+        "title": "Evaluating the Impact of Initial Centroids",
+        "text": "Which of the following statements is true about the impact of initial centroid placement in K-means clustering?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Initial centroids have no impact on final clusters.",
+            "Initial centroids can lead to different final clusters."
+        ]
+    }
+]

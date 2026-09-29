@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a9edaf5ds100-su21-final-Q4i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L2 Regularization",
+        "text": "L2 regularization, also known as Ridge Regression, adds a penalty equal to the square of the magnitude of coefficients to the loss function. This helps in reducing overfitting by discouraging overly complex models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-su21-final-Q4i-h1"
+        ],
+        "title": "Effect on Model Variance",
+        "text": "When you apply L2 regularization, it tends to shrink the coefficients of the model. This can lead to a reduction in model variance, as the model becomes less sensitive to small fluctuations in the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4i-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The model's complexity is reduced."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su21-final-Q4i-h2"
+        ],
+        "title": "Impact on Training Set",
+        "text": "What happens to the model's complexity when L2 regularization is applied?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The model's complexity is reduced.",
+            "The model's complexity is increased.",
+            "The model's complexity remains the same."
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4i-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It reduces overfitting."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su21-final-Q4i-h3"
+        ],
+        "title": "Regularization and Overfitting",
+        "text": "How does L2 regularization affect overfitting?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It reduces overfitting.",
+            "It increases overfitting.",
+            "It has no effect on overfitting."
+        ]
+    }
+]

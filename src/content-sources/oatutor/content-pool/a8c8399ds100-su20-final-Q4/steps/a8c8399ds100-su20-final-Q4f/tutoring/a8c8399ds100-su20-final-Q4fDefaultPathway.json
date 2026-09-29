@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a8c8399ds100-su20-final-Q4f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean Squared Error (MSE)",
+        "text": "Mean Squared Error (MSE) is a measure of the average of the squares of the errors. It is calculated as the average of the squared differences between the predicted and actual values. Consider how centering the data might affect these differences.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-su20-final-Q4f-h1"
+        ],
+        "title": "Effect of Centering on MSE",
+        "text": "When you center the data, you subtract the mean from each feature. This affects the intercept term but not the slope of the regression line. Think about how this might influence the MSE calculation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su20-final-Q4f-h2"
+        ],
+        "title": "Comparing MSE of Original and Centered Models",
+        "text": "Does centering the data change the variance of the errors?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

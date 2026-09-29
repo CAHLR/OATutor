@@ -1,0 +1,83 @@
+[
+    {
+        "id": "a1bb75eds100-sp24-final-Q8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logistic Regression",
+        "text": "Logistic regression is used to predict the probability of a binary outcome. The model uses a logistic function to map predicted values to probabilities. The formula for the logistic function is $$\\frac{1}{1+e^{\\left(-z\\right)}}$$, where $$z$$ is the linear combination of the input features and the model parameters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp24-final-Q8b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp24-final-Q8b-h1"
+        ],
+        "title": "Calculate the Linear Combination",
+        "text": "To find the probability, first calculate the linear combination $$z$$ using the formula $$z=\\theta_0+\\theta_1 x_1+\\theta_2 x_2$$. Use the given parameters and the new data point $$x_{new}=(1,4)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp24-final-Q8b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp24-final-Q8b-h2"
+        ],
+        "title": "Compute $$z$$",
+        "text": "What is the value of $$z$$ for $$x_{new}=(1,4)$$ using theta=(-3,1,1/2)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-1$$",
+            "$$-1$$",
+            "$$0$$",
+            "$$1$$",
+            "$$2$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp24-final-Q8b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp24-final-Q8b-h3"
+        ],
+        "title": "Apply the Logistic Function",
+        "text": "Once you have calculated $$z$$, apply the logistic function to find the probability. The logistic function is $$\\frac{1}{1+e^{\\left(-z\\right)}}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp24-final-Q8b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{1}{1+e}$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp24-final-Q8b-h4"
+        ],
+        "title": "Calculate the Probability",
+        "text": "Using the value of $$z=-1$$, what is the probability that Saylor Twift was in attendance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{1}{1+e}$$",
+            "$$\\frac{1}{2}$$",
+            "$$\\frac{1}{1+e^2}$$",
+            "$$\\frac{1}{1+e^{\\left(-1\\right)}}$$"
+        ]
+    }
+]

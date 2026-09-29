@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a98a015ds100-su19-final-Q2ba-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatter Plot",
+        "text": "Look at the scatter plot on the left. Notice the relationship between 'mpg' and 'age'. As 'age' increases, what happens to 'mpg'? This relationship can help you determine the axis labels for the other plots.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su19-final-Q2ba-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-su19-final-Q2ba-h1"
+        ],
+        "title": "Analyzing Plot (a)",
+        "text": "Plot (a) shows a distribution with multiple peaks. Consider whether this distribution could represent 'age' or 'mpg' based on the scatter plot's trend.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su19-final-Q2ba-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "pc1"
+        ],
+        "dependencies": [
+            "a98a015ds100-su19-final-Q2ba-h2"
+        ],
+        "title": "Choosing the Label for Plot (a)",
+        "text": "Based on the scatter plot, which variable is more likely to have a distribution with multiple peaks?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "pc1",
+            "pc2",
+            "Neither"
+        ]
+    },
+    {
+        "id": "a98a015ds100-su19-final-Q2ba-h4",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-su19-final-Q2ba-h1"
+        ],
+        "title": "Analyzing Plot (b)",
+        "text": "Plot (b) shows a smoother distribution. Think about which variable might have a more uniform distribution based on the scatter plot.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su19-final-Q2ba-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "pc2"
+        ],
+        "dependencies": [
+            "a98a015ds100-su19-final-Q2ba-h4"
+        ],
+        "title": "Choosing the Label for Plot (b)",
+        "text": "Which variable is more likely to have a smoother distribution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "pc1",
+            "pc2",
+            "Neither"
+        ]
+    }
+]

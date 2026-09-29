@@ -1,0 +1,120 @@
+[
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3ce-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Logistic Regression Model",
+        "text": "The logistic regression model is used to predict the probability of a binary outcome. In this case, it predicts whether a reply was made by an Ed bot. The formula is $$P(y=1|x)=\\operatorname{\\sigma}\\left(\\theta_1 x_1+\\theta_2 x_2\\right)$$, where \u03c3 is the sigmoid function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3ce-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3ce-h1"
+        ],
+        "title": "Calculating the Linear Combination",
+        "text": "To find the linear combination, use the given values: $$likes=3$$ and $$response_{time}=34$$. Substitute these into the equation $$\\theta_1 x_1+\\theta_2 x_2$$ with $$\\theta_1=1$$ and $$\\theta_2=2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3ce-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$71$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3ce-h2"
+        ],
+        "title": "Compute the Linear Combination",
+        "text": "What is the value of the linear combination $$\\theta_1 x_1+\\theta_2 x_2$$ for $$likes=3$$ and $$response_{time}=34$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$71$$",
+            "$$34$$",
+            "$$37$$",
+            "$$68$$",
+            "$$71$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3ce-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3ce-h3"
+        ],
+        "title": "Understanding Odds",
+        "text": "Odds are calculated as the exponential of the linear combination. In this case, the odds of being a bot are $$e^{\\theta_1 x_1+\\theta_2 x_2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3ce-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$e**{71}$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3ce-h4"
+        ],
+        "title": "Calculate the Odds for a Bot",
+        "text": "What are the odds that the reply was made by a bot, given the linear combination you calculated?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$e**{71}$$",
+            "$$71$$",
+            "$$e^{-71}$$",
+            "$$e^{34}$$",
+            "$$e^{71}$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3ce-h6",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3ce-h5"
+        ],
+        "title": "Odds for a Human",
+        "text": "To find the odds that a reply was made by a human, take the reciprocal of the odds for a bot.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3ce-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$e**{-71}$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3ce-h6"
+        ],
+        "title": "Calculate the Odds for a Human",
+        "text": "What are the odds that the reply was made by a human?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$e**{-71}$$",
+            "$$\\frac{1}{e^{71}}$$",
+            "$$71$$",
+            "$$e^{-71}$$",
+            "$$e^{71}$$"
+        ]
+    }
+]

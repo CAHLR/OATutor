@@ -1,0 +1,35 @@
+[
+    {
+        "id": "a89b247ds100-fa18-final-Q14e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plot",
+        "text": "Notice how the plot shows a U-shape. This is typical of a bias-variance tradeoff, where the error decreases to a minimum point and then increases again. Think about what this might imply about the model's performance as the number of videos considered changes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q14e-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Validation Error"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q14e-h1"
+        ],
+        "title": "Identifying the Y-Axis",
+        "text": "Given the U-shape of the plot, which of the following is most likely represented on the y-axis?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Training Error",
+            "Validation Error",
+            "Number of Features",
+            "Model Complexity"
+        ]
+    }
+]

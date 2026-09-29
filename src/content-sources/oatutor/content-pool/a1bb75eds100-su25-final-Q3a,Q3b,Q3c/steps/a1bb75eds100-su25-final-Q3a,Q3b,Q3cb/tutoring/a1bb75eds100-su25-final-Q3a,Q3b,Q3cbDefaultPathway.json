@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3cb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Sigmoid Function",
+        "text": "The sigmoid function, often used in logistic regression, outputs values between $$0$$ and $$1$$. It is defined as $$\\frac{1}{1+e^{\\left(-z\\right)}}$$, where $$z$$ is a linear combination of input features. Consider how this function behaves as $$z$$ approaches positive or negative $$\\infty$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3cb-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3cb-h1"
+        ],
+        "title": "Behavior of the Sigmoid Function",
+        "text": "Think about the limits of the sigmoid function as the input approaches very large positive or negative values. What happens to the output in these cases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3cb-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$ to $$1$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3cb-h2"
+        ],
+        "title": "Sigmoid Function Output",
+        "text": "What is the range of values that the sigmoid function can output?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$ to $$1$$",
+            "$$0$$ to infinity",
+            "negative infinity to infinity",
+            "$$0$$ to $$0.5$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3cb-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3cb-h3"
+        ],
+        "title": "Interpreting the Sigmoid Output",
+        "text": "The sigmoid function outputs a probability. Consider what it means for a probability to be exactly $$1$$. Is this possible with the sigmoid function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3cb-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3cb-h4"
+        ],
+        "title": "Probability Output of Sigmoid",
+        "text": "Can the sigmoid function output a probability of exactly $$1$$ for any real-valued input?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

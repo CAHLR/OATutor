@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a98a015ds100-sp24-final-Q9c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Principal Components",
+        "text": "When performing PCA, the first principal component is the direction in which the data varies the most. Think about how you can determine this direction from a plot of data points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9c-h1"
+        ],
+        "title": "Visualizing the First Principal Component",
+        "text": "Look at the spread of the data points in pair B. The first principal component will align with the direction where the points are most spread out. Can you identify this direction?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(1,1)$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9c-h2"
+        ],
+        "title": "Choosing the Correct Vector",
+        "text": "Which of the following vectors best aligns with the direction of maximum variance in pair B?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$(0,1)$$",
+            "$$(1,0)$$",
+            "$$(0,0)$$",
+            "$$(1,1)$$"
+        ]
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "abf3684ds100-sp25-final-Q2l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Validation",
+        "text": "In 4-fold cross-validation, the dataset is divided into $$4$$ equal parts. Each part is used as a validation set once, while the remaining parts are used for training. Can you visualize how this rotation ensures each data point is validated exactly once?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2l-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2l-h1"
+        ],
+        "title": "Exploring the Validation Set",
+        "text": "Consider how many times each data point appears in the validation set during 4-fold cross-validation. Is it possible for a data point to be in the validation set more than once?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2l-h3",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2l-h2"
+        ],
+        "title": "Rotation of Folds",
+        "text": "Think about the rotation of the folds in cross-validation. Each fold takes a turn being the validation set. How does this rotation affect the inclusion of data points in the validation set?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

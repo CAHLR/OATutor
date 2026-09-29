@@ -1,0 +1,45 @@
+[
+    {
+        "id": "aba1299row5_part2i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Matrix Dimensions",
+        "text": "When dealing with matrices, it's important to remember that the dimensions are given as rows by columns. For example, a matrix with $$3$$ rows and $$2$$ columns is described as having dimensions $$3$$ by $$2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row5_part2i-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row5_part2i-h1"
+        ],
+        "title": "Matrix Y in OLS",
+        "text": "In the context of Ordinary Least Squares (OLS), the matrix Y represents the dependent variable, which is typically a column vector. Think about how many observations you have and how that relates to the number of rows in Y.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row5_part2i-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "aba1299row5_part2i-h2"
+        ],
+        "title": "Matrix Y Dimensions",
+        "text": "Consider the number of observations (n) you have. How does this relate to the number of rows in matrix Y?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,67 @@
+[
+    {
+        "id": "a8c8399ds100-su20-final-Q4m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean-Centering",
+        "text": "Mean-centering involves subtracting the mean of each feature from the data points in that feature. This process does not affect the intercept term but can influence the slope of the regression line.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4m-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Regularization",
+        "text": "Regularization adds a penalty to the loss function to prevent overfitting. It can affect the coefficients of the model, especially when features are correlated.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4m-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Negative linear trend"
+        ],
+        "dependencies": [],
+        "title": "Analyzing the Scatter Plot",
+        "text": "Look at the scatter plot. What kind of trend do you observe?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Positive linear trend",
+            "Negative linear trend",
+            "No trend",
+            "Exponential trend"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4m-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\theta_B$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su20-final-Q4m-h3"
+        ],
+        "title": "Comparing Models",
+        "text": "Consider the effect of mean-centering on the model's performance. Which model is likely to perform better on test data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\theta_A$$",
+            "$$\\theta_B$$",
+            "Both achieve the same test MSE",
+            "Cannot be determined without seeing the plot",
+            "Neither, both are equally poor"
+        ]
+    }
+]

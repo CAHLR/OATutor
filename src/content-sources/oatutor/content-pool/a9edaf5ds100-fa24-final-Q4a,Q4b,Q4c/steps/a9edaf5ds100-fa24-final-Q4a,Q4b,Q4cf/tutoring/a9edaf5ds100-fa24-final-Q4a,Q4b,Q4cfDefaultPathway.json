@@ -1,0 +1,43 @@
+[
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4cf-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Training Loss",
+        "text": "Training loss measures how well the model fits the training data. When you add more features, the model can potentially fit the training data better, which usually decreases the training loss. However, consider what happens when the model becomes too complex.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4cf-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Adding Features",
+        "text": "Adding more features to a model can increase its complexity. Think about how this affects the model's ability to fit the training data. Does it make the model more flexible or more constrained?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4cf-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4cf-h1"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "What happens to the training loss when you add more features to a model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

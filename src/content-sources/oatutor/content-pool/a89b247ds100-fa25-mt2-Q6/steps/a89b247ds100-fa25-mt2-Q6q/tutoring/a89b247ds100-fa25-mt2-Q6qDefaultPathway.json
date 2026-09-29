@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6q-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LASSO Regularization",
+        "text": "LASSO regularization adds a penalty to the model based on the absolute values of the coefficients. This can lead to some coefficients being exactly zero, effectively selecting a simpler model. How might this affect the bias of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6q-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6q-h1"
+        ],
+        "title": "Exploring Model Bias",
+        "text": "When you apply LASSO regularization, the model might become simpler by reducing the number of features. Consider how simplifying the model could potentially increase the bias. What happens to the model's ability to capture the complexity of the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6q-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6q-h2"
+        ],
+        "title": "Effect on Model Bias",
+        "text": "What is a possible effect of using LASSO regularization on the model bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    }
+]

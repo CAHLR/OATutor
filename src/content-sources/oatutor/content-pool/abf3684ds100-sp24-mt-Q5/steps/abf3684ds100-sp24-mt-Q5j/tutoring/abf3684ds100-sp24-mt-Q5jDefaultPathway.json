@@ -1,0 +1,78 @@
+[
+    {
+        "id": "abf3684ds100-sp24-mt-Q5j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean Cubed Error",
+        "text": "The Mean Cubed Error is calculated by taking the average of the cube of the differences between the actual and predicted values. How does cubing a number affect its sign and magnitude?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp24-mt-Q5j-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp24-mt-Q5j-h1"
+        ],
+        "title": "Impact of Cubing on Error",
+        "text": "Cubing a number amplifies its magnitude, especially for larger numbers. Consider how this might affect predictions that are slightly off versus those that are significantly off.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp24-mt-Q5j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "large error"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp24-mt-Q5j-h2"
+        ],
+        "title": "Comparing Predictions",
+        "text": "Which prediction error would be penalized more in Mean Cubed Error: a small error or a large error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "small error",
+            "large error"
+        ]
+    },
+    {
+        "id": "abf3684ds100-sp24-mt-Q5j-h4",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp24-mt-Q5j-h3"
+        ],
+        "title": "Closer vs. Farther Predictions",
+        "text": "Think about how the cubing operation affects positive and negative errors. Does it treat them differently?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp24-mt-Q5j-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "keeps it negative"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp24-mt-Q5j-h4"
+        ],
+        "title": "Effect of Cubing on Error Sign",
+        "text": "Does cubing a negative error make it positive or keep it negative?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "makes it positive",
+            "keeps it negative"
+        ]
+    }
+]

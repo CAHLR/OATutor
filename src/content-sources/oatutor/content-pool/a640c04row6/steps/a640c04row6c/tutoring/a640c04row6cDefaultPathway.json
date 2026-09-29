@@ -1,0 +1,65 @@
+[
+    {
+        "id": "a640c04row6c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Missing Values",
+        "text": "When dealing with missing values in a dataset, one common approach is to fill them with a specific value. In this case, think about what value would make sense to use when someone hasn't bought any jackets.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row6c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Filtering Data",
+        "text": "To ensure your data is accurate for the contour plot, you need to exclude certain data points. Consider what condition would make a data point irrelevant for your analysis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row6c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "fillna(0)"
+        ],
+        "dependencies": [],
+        "title": "Handling Missing Values",
+        "text": "Which function would you use to replace missing values in a DataFrame with a specific value?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "fillna(0)",
+            "dropna()",
+            "fillna(num_jacket_bought=0)",
+            "replace(0)",
+            "fillna(np.nan)"
+        ]
+    },
+    {
+        "id": "a640c04row6c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$num_{jacket,bought} \\leq 10$$"
+        ],
+        "dependencies": [],
+        "title": "Excluding Data Points",
+        "text": "What condition should you apply to exclude data points where the number of jackets bought is too high?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$num_{jacket,bought} \\leq 10$$",
+            "$$num_{jacket,bought}>10$$",
+            "$$num_{jacket,bought}==10$$",
+            "$$num_{jacket,bought}<10$$"
+        ]
+    }
+]

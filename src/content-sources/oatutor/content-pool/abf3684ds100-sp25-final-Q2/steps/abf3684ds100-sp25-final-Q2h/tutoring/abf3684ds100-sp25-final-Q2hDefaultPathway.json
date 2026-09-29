@@ -1,0 +1,58 @@
+[
+    {
+        "id": "abf3684ds100-sp25-final-Q2h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "When the training error increases but the validation error decreases, it suggests a change in the model's complexity. Think about how this affects the model's ability to generalize to new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2h-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2h-h1"
+        ],
+        "title": "Training vs. Validation Error",
+        "text": "Consider what it means for a model to have a higher training error but a lower validation error. How does this relate to the model's ability to fit the training data versus new data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Variance decreases"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2h-h2"
+        ],
+        "title": "Model Complexity and Variance",
+        "text": "If a model's complexity is reduced, what happens to its variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Variance increases",
+            "Variance decreases",
+            "Variance remains the same"
+        ]
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2h-h4",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2h-h3"
+        ],
+        "title": "Connecting Errors and Variance",
+        "text": "A decrease in validation error with an increase in training error often indicates a reduction in overfitting. How does this relate to the model's variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

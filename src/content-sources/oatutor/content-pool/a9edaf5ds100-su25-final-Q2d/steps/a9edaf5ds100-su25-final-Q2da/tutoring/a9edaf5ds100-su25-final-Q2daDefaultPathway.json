@@ -1,0 +1,62 @@
+[
+    {
+        "id": "a9edaf5ds100-su25-final-Q2da-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization helps prevent overfitting by adding a penalty to the model's complexity. L1 regularization adds the absolute value of the coefficients, while L2 adds the square of the coefficients. Think about how these differences might affect the choice of the hyperparameter lambda.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su25-final-Q2da-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring Lambda's Role",
+        "text": "The lambda hyperparameter controls the strength of the regularization. A larger lambda means more regularization. Consider how the effect of lambda might differ between L1 and L2 regularization.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su25-final-Q2da-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "L1 regularization can lead to sparse solutions, while L2 regularization tends to shrink coefficients evenly."
+        ],
+        "dependencies": [],
+        "title": "Comparing L1 and L2 Regularization",
+        "text": "Which of the following statements is true about L1 and L2 regularization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "L1 regularization can lead to sparse solutions, while L2 regularization tends to shrink coefficients evenly.",
+            "L1 and L2 regularization always result in the same model complexity.",
+            "L1 regularization is always better than L2 regularization."
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-su25-final-Q2da-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increasing lambda increases the penalty on model complexity, leading to simpler models."
+        ],
+        "dependencies": [],
+        "title": "Effect of Lambda on Regularization",
+        "text": "How does increasing the lambda value affect L1 and L2 regularization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increasing lambda increases the penalty on model complexity, leading to simpler models.",
+            "Increasing lambda decreases the penalty on model complexity, leading to more complex models.",
+            "Lambda has no effect on model complexity."
+        ]
+    }
+]

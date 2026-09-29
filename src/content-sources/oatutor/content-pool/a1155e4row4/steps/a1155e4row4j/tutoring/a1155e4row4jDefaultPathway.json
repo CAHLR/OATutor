@@ -1,0 +1,43 @@
+[
+    {
+        "id": "a1155e4row4j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bimodal Distributions",
+        "text": "A bimodal distribution has two distinct peaks. Look at the spread of data points for each shape. Do you see two separate clusters of weights for any shape?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row4j-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting Box Plots",
+        "text": "Box plots show the median, quartiles, and potential outliers. They help visualize the spread and central tendency of data. Consider how this information might reveal a bimodal distribution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row4j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a1155e4row4j-h1"
+        ],
+        "title": "Analyzing the Plot",
+        "text": "Does the plot show two distinct clusters of nugget weights for any shape?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE on Training Data",
+        "text": "When you remove a feature from a model, think about how it might affect the model's ability to fit the training data. Consider whether the model might become less flexible and how that could impact the error on the training set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6m-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6m-h1"
+        ],
+        "title": "Effect of Feature Removal on Training MSE",
+        "text": "What happens to the MSE on the training data when a feature is removed from the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Both",
+            "Decrease",
+            "Increase",
+            "TRUE"
+        ]
+    }
+]

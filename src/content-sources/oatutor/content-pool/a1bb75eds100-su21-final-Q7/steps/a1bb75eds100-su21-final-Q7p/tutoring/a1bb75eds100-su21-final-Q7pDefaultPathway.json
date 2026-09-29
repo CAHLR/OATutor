@@ -1,0 +1,67 @@
+[
+    {
+        "id": "a1bb75eds100-su21-final-Q7p-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Decision Boundaries",
+        "text": "Consider how decision trees create boundaries. They typically split the data using vertical or horizontal lines. Think about whether such lines can effectively separate the classes in this dataset.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7p-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Vertical and horizontal lines"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7p-h1"
+        ],
+        "title": "Decision Tree Splits",
+        "text": "What kind of lines do decision trees use to split data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Diagonal lines",
+            "Curved lines",
+            "Vertical and horizontal lines"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7p-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7p-h2"
+        ],
+        "title": "Analyzing the Data Distribution",
+        "text": "Look at the distribution of the orange and blue points. Notice the circular pattern. Consider if vertical or horizontal lines can separate these points effectively.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7p-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7p-h3"
+        ],
+        "title": "Circular Patterns",
+        "text": "Can vertical or horizontal lines separate circular patterns effectively?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

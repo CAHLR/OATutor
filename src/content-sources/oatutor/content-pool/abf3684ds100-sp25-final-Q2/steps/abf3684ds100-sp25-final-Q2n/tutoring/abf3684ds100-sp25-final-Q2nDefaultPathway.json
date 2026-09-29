@@ -1,0 +1,60 @@
+[
+    {
+        "id": "abf3684ds100-sp25-final-Q2n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Objective Function",
+        "text": "The objective function involves a summation over all data points. Notice how each term inside the summation is influenced by both $$\\theta_0$$ and $$\\theta_1$$. Think about how changes in these parameters affect the overall value of the function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2n-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2n-h1"
+        ],
+        "title": "Partial Derivative with Respect to $$\\Theta_1$$",
+        "text": "When taking the partial derivative with respect to $$\\theta_1$$, focus on terms in the objective function that include $$\\theta_1$$. Consider how the derivative of a constant term with respect to $$\\theta_1$$ would behave.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2n-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-x_i+\\theta_0$$"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2n-h2"
+        ],
+        "title": "Identify the Terms Involving $$\\Theta_1$$",
+        "text": "Which terms in the objective function involve $$\\theta_1$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-x_i+\\theta_0$$",
+            "$$-x_i-\\theta_0$$",
+            "$$x_i+\\theta_0$$",
+            "$$x_i-\\theta_0$$",
+            "$$-x_i+\\theta_1$$"
+        ]
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2n-h4",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2n-h3"
+        ],
+        "title": "Simplifying the Derivative",
+        "text": "After identifying the terms involving $$\\theta_1$$, simplify the expression by considering how each term contributes to the derivative. Remember, the derivative of a constant is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

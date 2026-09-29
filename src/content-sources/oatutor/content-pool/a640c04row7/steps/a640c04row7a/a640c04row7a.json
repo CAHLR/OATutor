@@ -1,0 +1,20 @@
+{
+    "id": "a640c04row7a",
+    "stepAnswer": [
+        "dan\\_products[(dan\\_products['Product'] $$==$$ 'Lip Glowy Balm') & (dan\\_products['Brand'] $$==$$ 'Laneige')]['Aura'].iloc[0]"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Dan can\u2019t remember what Aura he gave the \u201cLip Glowy Balm\u201d from the brand \u201cLaneige\u201d. Fill in the blank below so that glowy\\_aura is the Aura integer value for this product.\\n\\nFill in the blank (A)##figure1.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "dan\\_products[(dan\\_products['Product'] $$==$$ 'Lip Glowy Balm') & (dan\\_products['Brand'] $$==$$ 'Laneige')]['Aura'].iloc[0]",
+    "choices": [
+        "dan\\_products[(dan\\_products['Product'] $$==$$ 'Lip Glowy Balm') & (dan\\_products['Brand'] $$==$$ 'Laneige')]['Aura'].iloc[0]",
+        "dan\\_products[(dan\\_products['Product'] $$==$$ 'Lip Glowy Balm') & (dan\\_products['Brand'] $$==$$ 'Laneige')]['Aura'][0]",
+        "dan\\_products[(dan\\_products['Product'] $$==$$ 'Lip Glowy Balm')",
+        "(dan\\_products['Brand'] $$==$$ 'Laneige')]['Aura'].iloc[0]",
+        "dan\\_products[(dan\\_products['Product'] $$==$$ 'Lip Glowy Balm') & (dan\\_products['Brand'] $$==$$ 'Laneige')].loc['Aura'].iloc[0]",
+        "dan\\_products[dan\\_products['Product'] $$==$$ 'Lip Glowy Balm']['Aura'].loc[0]"
+    ]
+}

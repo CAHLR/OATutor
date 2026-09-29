@@ -1,0 +1,44 @@
+[
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1p-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Validation",
+        "text": "Think about why we use cross-validation in the first place. What advantage does it offer over using a single validation set?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1p-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Bias and k-Fold Cross-Validation",
+        "text": "Consider how increasing the number of folds (k) in k-fold cross-validation might affect the model's bias. What happens to the training and validation sets as k increases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1p-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Evaluating Cross-Validation Statements",
+        "text": "Which of the following statements is true about cross-validation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            ">Cross-validation cannot be used in production, as the model is cheating by looking at validation samples.",
+            ">We use cross validation because it is less computationally intensive than regular validation.",
+            ">We use cross validation over regular validation because cross validation allows us to use the entire training data set to test the model.",
+            "Increasing k in $$k-fold$$ cross validation decreases the bias of the model.",
+            "TRUE"
+        ]
+    }
+]

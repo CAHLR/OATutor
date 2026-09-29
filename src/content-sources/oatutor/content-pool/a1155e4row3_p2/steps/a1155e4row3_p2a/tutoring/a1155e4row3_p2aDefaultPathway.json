@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a1155e4row3_p2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Correlation",
+        "text": "To investigate correlation, consider visualizations that show the relationship between two variables. Think about how you can visually represent the connection between the amount of antibiotic and the number of colonies.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row3_p2a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Scatter plot"
+        ],
+        "dependencies": [
+            "a1155e4row3_p2a-h1"
+        ],
+        "title": "Choosing the Right Visualization",
+        "text": "Which of the following visualizations would best show the relationship between two continuous variables?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Scatter plot",
+            "Bar chart",
+            "Pie chart",
+            "Line graph"
+        ]
+    },
+    {
+        "id": "a1155e4row3_p2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row3_p2a-h2"
+        ],
+        "title": "Scatter Plot Insight",
+        "text": "A scatter plot is useful for showing how two variables might be related. Each point represents an experiment, with the x-axis showing the amount of antibiotic and the y-axis showing the number of colonies.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

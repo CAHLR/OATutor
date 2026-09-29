@@ -1,0 +1,48 @@
+[
+    {
+        "id": "aea05a2ds100-sp24-final-Q10f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Inertia in k-Means",
+        "text": "Inertia in k-Means clustering measures how tightly the clusters are packed. It is the sum of squared distances between each point and its assigned cluster center. Think about how the initial placement of cluster centers might affect this measure.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp24-final-Q10f-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-sp24-final-Q10f-h1"
+        ],
+        "title": "Convergence in k-Means",
+        "text": "k-Means clustering can converge to a local minimum, but not necessarily the global minimum. Consider how different starting points for the cluster centers might lead to different final configurations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp24-final-Q10f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp24-final-Q10f-h2"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Which of the following statements is true about k-Means clustering?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "$$k-Means$$ always finds the global minimum",
+            "$$k-Means$$ can converge to a local minimum",
+            "$$k-Means$$ guarantees the best clustering solution",
+            "$$k-Means$$ is not affected by initial cluster placement"
+        ]
+    }
+]

@@ -1,0 +1,84 @@
+[
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3db-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the 'artist' Column",
+        "text": "Look at how the 'artist' column is structured. Notice how featured artists are listed after 'feat.' and separated by commas. This pattern is key to determining the number of featured artists.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3db-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-sp24-final-Q3b,Q3c,Q3db-h1"
+        ],
+        "title": "Using String Methods",
+        "text": "Consider using string methods to split the 'artist' column by commas. This will help you count the number of artists listed, including the main artist and any featured artists.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3db-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "song_sample[\"artist\"].str.split(\",\").str.len()"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp24-final-Q3b,Q3c,Q3db-h2"
+        ],
+        "title": "Counting Featured Artists",
+        "text": "How can you use the length of the split list to determine the number of featured artists?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "song_sample[\"artist\"].str.split(\",\").str.len()",
+            "song_sample[\"artist\"].str.count(\",\")+song_sample[\"has_feat\"]",
+            "song_sample[\"artist\"].str.split(\",\").str.len()",
+            "song_sample[\"artist\"].str.count(\",\")*song_sample[\"has_feat\"]",
+            "song_sample[\"artist\"].str.split(\"feat.\").str.len()*song_sample[\"has_feat\"]"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3db-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-sp24-final-Q3b,Q3c,Q3db-h3"
+        ],
+        "title": "Adjusting for Main Artist",
+        "text": "Remember that the split list includes the main artist. How can you adjust the count to exclude the main artist when calculating the number of featured artists?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3db-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "song_sample[\"artist\"].str.split(\",\").str.len()-1"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp24-final-Q3b,Q3c,Q3db-h4"
+        ],
+        "title": "Final Calculation for $$num_{feats}$$",
+        "text": "What operation can you perform to adjust the count from the split list to reflect only the featured artists?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "song_sample[\"artist\"].str.split(\",\").str.len()-1",
+            "song_sample[\"artist\"].str.count(\",\")+song_sample[\"has_feat\"]",
+            "song_sample[\"artist\"].str.split(\",\").str.len()",
+            "song_sample[\"artist\"].str.count(\",\")*song_sample[\"has_feat\"]",
+            "song_sample[\"artist\"].str.split(\"feat.\").str.len()*song_sample[\"has_feat\"]"
+        ]
+    }
+]

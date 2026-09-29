@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a89b247ds100-sp24-final-Q6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "When you add more features to a model, it can become more complex. Think about how this complexity might affect the model's ability to generalize to new data. What happens to bias and variance in this case?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp24-final-Q6b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Training vs. Testing Error",
+        "text": "Consider why the training error decreases as you add more features. What does this tell you about the model's fit to the training data? Now, think about why the testing error might increase. What does this suggest about the model's performance on unseen data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp24-final-Q6b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Effect of Regularization",
+        "text": "Increasing the regularizer parameter \\(\\lambda\\) can help control model complexity. What effect does this have on the model's weights?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

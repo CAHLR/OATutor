@@ -1,0 +1,74 @@
+[
+    {
+        "id": "a8c8399ds100-fa20-final-Q12e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Independence",
+        "text": "To determine if a set of columns is linearly independent, consider if any column can be expressed as a linear combination of the others. If it can, the columns are not linearly independent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12e-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Converting Units",
+        "text": "Remember that height in inches is calculated as height in centimeters divided by $$2.54$$, and weight in pounds is weight in kilograms multiplied by $$2.2$$. Check if these conversions affect linear independence.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa20-final-Q12e-h1"
+        ],
+        "title": "Checking Linear Independence",
+        "text": "Can height (in) be expressed as a linear combination of height (cm)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa20-final-Q12e-h2"
+        ],
+        "title": "Impact of BMI",
+        "text": "Does the BMI column depend on the height and weight columns?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12e-h5",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Span of Columns",
+        "text": "The span of a set of vectors is the set of all possible linear combinations of those vectors. Consider if adding or removing columns changes the span.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a89b247ds100-su19-final-Q6w-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "Bias refers to the error introduced by approximating a real-world problem, which may be complex, by a simplified model. Variance refers to how much the model's predictions would change if we used a different training dataset. Consider how adding more data points might affect these two aspects.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6w-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6w-h1"
+        ],
+        "title": "Effect of More Data on Bias",
+        "text": "Adding more data points generally helps the model learn better patterns from the data. However, think about whether this affects the model's ability to capture the true underlying relationship (bias) or just makes it more stable across different datasets (variance).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6w-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6w-h2"
+        ],
+        "title": "Impact on Bias",
+        "text": "Does collecting more data points typically reduce the error from approximating the real-world problem with a simplified model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

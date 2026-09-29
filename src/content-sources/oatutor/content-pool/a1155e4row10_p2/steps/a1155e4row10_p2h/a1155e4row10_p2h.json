@@ -1,0 +1,15 @@
+{
+    "id": "a1155e4row10_p2h",
+    "stepAnswer": [
+        "FALSE"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Ishani creates a DataFrame called output using the following code:\\ntotal $$=$$ $$players[\"games\\_played\"]$$ * $$players[\"points\\_per\\_game\"]$$\\nplayers[\"total\"] $$=$$ total\\noutput $$=$$ players.groupby(\"team\")[[\"total\"]].mean().reset\\_index()\\nThe line of code is well suited to visualize the relationship between both columns of output.",
+    "stepBody": "sns.countplot(data $$=$$ output, $$x$$ $$=$$ \"team\")",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "TRUE",
+        "FALSE"
+    ]
+}

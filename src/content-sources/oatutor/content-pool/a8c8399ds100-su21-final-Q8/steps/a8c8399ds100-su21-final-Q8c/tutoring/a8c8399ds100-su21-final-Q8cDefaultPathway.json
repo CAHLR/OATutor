@@ -1,0 +1,91 @@
+[
+    {
+        "id": "a8c8399ds100-su21-final-Q8c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding transforms categorical variables into a form that can be provided to ML algorithms to do a better job in prediction. For the 'sex' column, each unique category becomes a column with binary values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Matrix Properties",
+        "text": "A matrix is invertible if it is square and its determinant is non-zero. Consider the dimensions of $$\\Phi_1$$ and what $${\\Phi_1}^T$$ $$\\Phi_1$$ would look like.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "20x2"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su21-final-Q8c-h1"
+        ],
+        "title": "Dimensions of $$\\Phi_1$$",
+        "text": "What are the dimensions of $$\\Phi_1$$ if there are $$20$$ rows and $$2$$ columns?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "20x2",
+            "2x20",
+            "20x20",
+            "2x2"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "2x2"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su21-final-Q8c-h3"
+        ],
+        "title": "Dimensions of $${\\Phi_1}^T$$ $$\\Phi_1$$",
+        "text": "What are the dimensions of $${\\Phi_1}^T$$ $$\\Phi_1$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "20x2",
+            "2x20",
+            "20x20",
+            "2x2"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$Non-zero$$ determinant"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su21-final-Q8c-h4"
+        ],
+        "title": "Determinant of $${\\Phi_1}^T$$ $$\\Phi_1$$",
+        "text": "If $${\\Phi_1}^T$$ $$\\Phi_1$$ is a 2x2 matrix, what condition must be met for it to be invertible?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Zero determinant",
+            "$$Non-zero$$ determinant",
+            "Square matrix",
+            "Symmetric matrix"
+        ]
+    }
+]

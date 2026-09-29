@@ -1,0 +1,60 @@
+[
+    {
+        "id": "aea05a2ds100-su21-final-Q9b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Agglomerative Clustering",
+        "text": "Agglomerative clustering starts with each point as its own cluster and merges the closest clusters step by step. The distance between clusters is defined as the maximum distance between points in the clusters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-su21-final-Q9b-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-su21-final-Q9b-h1"
+        ],
+        "title": "Finding the Closest Clusters",
+        "text": "Look at the distance matrix. Identify the smallest non-zero distance, as this indicates the closest pair of clusters to merge.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-su21-final-Q9b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "AE"
+        ],
+        "dependencies": [
+            "aea05a2ds100-su21-final-Q9b-h2"
+        ],
+        "title": "Identifying the Smallest Distance",
+        "text": "Which pair of points has the smallest distance between them?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "AB",
+            "AC",
+            "AD",
+            "AE",
+            "BC"
+        ]
+    },
+    {
+        "id": "aea05a2ds100-su21-final-Q9b-h4",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-su21-final-Q9b-h3"
+        ],
+        "title": "Merging Clusters",
+        "text": "Once you identify the closest pair, merge them into a single cluster. The new cluster is named after the lowest letter in the pair.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

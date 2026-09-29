@@ -1,0 +1,19 @@
+{
+    "id": "a1155e4row7_p2e",
+    "stepAnswer": [
+        "sns.violinplot(data=sorted\\_merged\\_info, x=\"project\\_topic\", $$y=\"age\")$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Angela noticed that side-by-side violin plots could help effectively visualize the variable age across participants of different project topics. Recall sorted\\_merged\\_info, a DataFrame where each row represents one participant with information from both participant\\_info and other\\_info. Let sorted\\_merged\\_info be the correct result of subpart 3(b). Write one line of Python code to recreate the following visualization with the seaborn library. Assume the following line of code has been run: import seaborn as sns##figure3.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "sns.violinplot(data=sorted\\_merged\\_info, x=\"project\\_topic\", $$y=\"age\")$$",
+    "choices": [
+        "sns.violinplot(data=sorted\\_merged\\_info, x=\"project\\_topic\", $$y=\"age\")$$",
+        "sns.violinplot(data=sorted\\_merged\\_info, $$x=\"age\"$$, y=\"project\\_topic\")",
+        "sns.boxplot(data=sorted\\_merged\\_info, x=\"project\\_topic\", $$y=\"age\")$$",
+        "sns.violinplot(data=sorted\\_merged\\_info, x=\"project\\_topic\", $$hue=\"age\")$$",
+        "plt.violinplot(data=sorted\\_merged\\_info, x=\"project\\_topic\", $$y=\"age\")$$"
+    ]
+}

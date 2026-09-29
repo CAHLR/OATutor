@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1155e4row7_p2f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Violinplots",
+        "text": "Violinplots are used to visualize the distribution of data across different categories. They show the density of the data at different values, which can help you see where the data is concentrated.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row7_p2f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row7_p2f-h1"
+        ],
+        "title": "Mean in Violinplots",
+        "text": "While violinplots show the distribution of data, they do not inherently display the mean. However, some variations of violinplots might include markers for the mean or median.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row7_p2f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a1155e4row7_p2f-h2"
+        ],
+        "title": "True or False: Violinplots Show the Mean",
+        "text": "Consider whether the primary purpose of a violinplot is to show the mean of the data distribution. Is this statement true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a1bb75eds100-fa20-final-Q9b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logistic Regression Coefficients",
+        "text": "In logistic regression, the sign of a coefficient indicates the direction of the relationship between the feature and the probability of the outcome. If a coefficient is negative, what does that imply about the relationship between the feature and the probability of the wine being type 1?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Standardized Features",
+        "text": "Remember that the features in the design matrix X are standardized. How does standardization affect the interpretation of the coefficients in logistic regression?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It suggests that as abv increases, the probability of the wine being type $$1$$ decreases."
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9b-h1"
+        ],
+        "title": "Interpreting the Coefficient Sign",
+        "text": "If the weight for the abv feature is negative, what does this suggest about the relationship between abv and the probability of the wine being type 1?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It suggests a negative relationship.",
+            "It suggests a positive relationship.",
+            "It suggests no relationship.",
+            "It suggests that as abv increases, the probability of the wine being type $$1$$ decreases."
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Standardization affects the scale of the coefficients, making them comparable."
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9b-h2"
+        ],
+        "title": "Effect of Standardization",
+        "text": "How does standardizing the features affect the magnitude of the coefficients in logistic regression?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It makes the coefficients comparable.",
+            "It makes the coefficients larger.",
+            "It makes the coefficients smaller.",
+            "Standardization affects the scale of the coefficients, making them comparable."
+        ]
+    }
+]

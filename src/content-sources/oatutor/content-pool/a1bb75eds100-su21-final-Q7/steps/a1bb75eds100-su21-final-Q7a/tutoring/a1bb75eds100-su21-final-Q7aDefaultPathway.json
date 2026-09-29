@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1bb75eds100-su21-final-Q7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Separability",
+        "text": "Consider what it means for a dataset to be linearly separable. Can you draw a straight line that separates the two classes without any misclassification?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7a-h1"
+        ],
+        "title": "Visualizing the Separation",
+        "text": "Look at the distribution of the orange and blue points. Are they clustered in a way that a single straight line can separate them?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7a-h2"
+        ],
+        "title": "Checking for Linear Separability",
+        "text": "Based on the image, can a straight line separate the orange and blue points without any overlap?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

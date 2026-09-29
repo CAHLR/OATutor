@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a89b247ds100-sp24-final-Q6j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "Consider what bias and variance represent in a model. Bias measures how far off predictions are from actual values on average, while variance measures how much predictions vary for different datasets. Think about how these two components affect the model's performance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp24-final-Q6j-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "LASSO Regression and Lambda",
+        "text": "LASSO Regression uses a penalty term controlled by lambda (\u03bb) to shrink coefficients. A higher \u03bb results in more shrinkage. Consider how this affects bias and variance in a model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp24-final-Q6j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Model B"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp24-final-Q6j-h1"
+        ],
+        "title": "Comparing Bias and Variance",
+        "text": "Which model has a higher bias squared?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Model A",
+            "Model B"
+        ]
+    },
+    {
+        "id": "a89b247ds100-sp24-final-Q6j-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Model A"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp24-final-Q6j-h1"
+        ],
+        "title": "Comparing Variance",
+        "text": "Which model has a higher variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Model A",
+            "Model B"
+        ]
+    },
+    {
+        "id": "a89b247ds100-sp24-final-Q6j-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Bias increases, variance decreases"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp24-final-Q6j-h2"
+        ],
+        "title": "Lambda and Model Characteristics",
+        "text": "If a model has a higher \u03bb in LASSO Regression, what happens to its bias and variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Bias increases, variance decreases",
+            "Bias decreases, variance increases",
+            "Both bias and variance increase",
+            "Both bias and variance decrease"
+        ]
+    }
+]

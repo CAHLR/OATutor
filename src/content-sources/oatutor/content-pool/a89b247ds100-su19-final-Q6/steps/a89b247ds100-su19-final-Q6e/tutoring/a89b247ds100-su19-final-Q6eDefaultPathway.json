@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a89b247ds100-su19-final-Q6e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "In the context of one-hot encoding, each category of a categorical variable is represented by a binary column. For example, if the meat type is beef, the column $$'meat=beef'$$ will be $$1$$, and all other meat columns will be $$0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6e-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting Box Plots",
+        "text": "Look at the box plot for different types of meat. Notice how the median total bill differs for beef, chicken, and fish. This can give you insight into the relative weights of the meat types in the regression model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "fish"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6e-h2"
+        ],
+        "title": "Analyzing the Box Plot",
+        "text": "Based on the box plot, which type of meat tends to have the highest total bill?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "beef",
+            "chicken",
+            "fish"
+        ]
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "higher"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6e-h3"
+        ],
+        "title": "Comparing Meat Types",
+        "text": "Considering the box plot, how does the total bill for beef compare to chicken?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "higher",
+            "lower",
+            "same"
+        ]
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6e-h5",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6e-h4"
+        ],
+        "title": "Relating Box Plot to Model Weights",
+        "text": "The differences in the median total bill for each meat type can help you determine the sign of the weights in the regression model. If beef generally results in a higher bill than chicken, what might that imply about the weight for $$'meat=beef'$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

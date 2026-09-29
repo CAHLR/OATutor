@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a640c04row7c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding GroupBy",
+        "text": "To calculate statistics for each brand, you need to group the data by the 'Brand' column. This will allow you to perform operations like mean and max on other columns within each group.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row7c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a640c04row7c-h1"
+        ],
+        "title": "Using Aggregate Functions",
+        "text": "Once you have grouped the data by 'Brand', you can use the `agg` function to apply different operations to different columns. For example, you can calculate the mean of 'Aura' and the max of 'Stars'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row7c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "dan_products.groupby('Brand').agg({'Aura': 'mean', 'Stars': 'max'})"
+        ],
+        "dependencies": [
+            "a640c04row7c-h2"
+        ],
+        "title": "Choosing the Correct Aggregation",
+        "text": "Which of the following correctly calculates the average Aura and maximum Stars for each brand?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "dan_products.groupby('Brand').agg({'Aura': 'mean', 'Stars': 'max'})",
+            "dan_products.groupby('Brand').agg({'Aura': 'max', 'Stars': 'mean'})",
+            "dan_products.groupby('Brand').agg({'Aura': 'mean', 'Stars': 'mean'})",
+            "dan_products.groupby('Brand')[['Aura', 'Stars']].mean()",
+            "dan_products.agg({'Aura': 'mean', 'Stars': 'max'}).groupby('Brand')"
+        ]
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "abf3684ds100-sp24-mt-Q5h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean Cubed Error",
+        "text": "The Mean Cubed Error is calculated by taking the average of the cubes of the differences between the actual and predicted values. Think about how cubing a number affects its magnitude, especially when the number is negative.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp24-mt-Q5h-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp24-mt-Q5h-h1"
+        ],
+        "title": "Impact of Overpredictions and Underpredictions",
+        "text": "Consider how the cube of a positive number compares to the cube of a negative number of the same magnitude. Which one grows larger? This might help you understand how overpredictions and underpredictions are penalized differently.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp24-mt-Q5h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp24-mt-Q5h-h2"
+        ],
+        "title": "Comparing Cubes of Positive and Negative Numbers",
+        "text": "If you have two numbers, $$2$$ and $$-2$$, which one has a larger cube?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$2$$",
+            "$$-2$$"
+        ]
+    },
+    {
+        "id": "abf3684ds100-sp24-mt-Q5h-h4",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp24-mt-Q5h-h3"
+        ],
+        "title": "Analyzing the Loss Function",
+        "text": "When you cube a negative number, the result is negative, and when you cube a positive number, the result is positive. How does this affect the overall loss when you have overpredictions versus underpredictions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

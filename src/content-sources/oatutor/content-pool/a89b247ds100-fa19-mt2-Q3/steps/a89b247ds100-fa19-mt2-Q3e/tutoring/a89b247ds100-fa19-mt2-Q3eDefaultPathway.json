@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a89b247ds100-fa19-mt2-Q3e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "Model variance refers to how much the predictions of a model will change if we use a different training dataset. It is often influenced by the complexity of the model. Consider how increasing model complexity might affect variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa19-mt2-Q3e-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa19-mt2-Q3e-h1"
+        ],
+        "title": "Impact of Learning Rate on Variance",
+        "text": "Does changing the learning rate in gradient descent directly affect the variance of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa19-mt2-Q3e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa19-mt2-Q3e-h1"
+        ],
+        "title": "Factors Affecting Variance",
+        "text": "Think about other factors that might influence model variance, such as the size of the training data or the complexity of the model itself.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

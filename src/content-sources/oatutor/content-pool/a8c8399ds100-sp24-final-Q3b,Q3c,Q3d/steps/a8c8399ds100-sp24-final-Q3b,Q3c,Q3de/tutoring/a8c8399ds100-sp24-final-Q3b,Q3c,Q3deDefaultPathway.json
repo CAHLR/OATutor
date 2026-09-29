@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3de-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "Look at the $$`song_{sample}`$$ DataFrame. Notice how the `genre` column is used to create new columns for each unique genre. This is a process called one-hot encoding.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3de-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Matrix Invertibility",
+        "text": "For a matrix to be invertible, it must be square and have full rank. Consider the dimensions of the matrix formed by `features` and whether it might affect invertibility.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3de-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "square"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp24-final-Q3b,Q3c,Q3de-h2"
+        ],
+        "title": "Checking Matrix Dimensions",
+        "text": "What are the dimensions of the matrix $$`X^T X`$$ if `X` is the feature matrix?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "square",
+            "rectangular",
+            "diagonal",
+            "identity"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3de-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "full rank"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp24-final-Q3b,Q3c,Q3de-h3"
+        ],
+        "title": "Rank of the Matrix",
+        "text": "What condition must be met for a square matrix to be invertible?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "full rank",
+            "zero determinant",
+            "$$non-square$$",
+            "symmetric"
+        ]
+    }
+]

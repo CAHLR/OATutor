@@ -1,0 +1,18 @@
+{
+    "id": "a1155e4row10_p1g",
+    "stepAnswer": [
+        "There is exactly one winner per game."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Nikhil writes the following lines of code as part of his exploratory data analysis. Under what condition will Nikhil\u2019s code print True?\\ncounts $$=$$ darts[darts[\"win\"] $$==$$ 1][\"game\\_id\"].value\\_counts()\\nprint(sum(counts $$ \\neq $$ 1) $$==$$ 0)",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "Each player only plays in each game once.",
+        "Each player has won at least one game.",
+        "There is exactly one winner per game.",
+        "There are no repeated values of game\\_id.",
+        "Every game has at least one winner."
+    ]
+}

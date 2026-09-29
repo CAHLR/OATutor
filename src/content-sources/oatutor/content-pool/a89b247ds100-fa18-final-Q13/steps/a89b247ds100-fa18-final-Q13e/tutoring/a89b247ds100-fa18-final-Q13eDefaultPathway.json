@@ -1,0 +1,33 @@
+[
+    {
+        "id": "a89b247ds100-fa18-final-Q13e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Role of Theta",
+        "text": "Think about what theta represents in the context of a model. Is it a constant value, or does it change based on the data? Consider how theta is determined and whether it remains the same across different datasets.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q13e-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q13e-h1"
+        ],
+        "title": "Theta as a Parameter",
+        "text": "Is theta a parameter that is estimated from the data, or is it a fixed value that does not change?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

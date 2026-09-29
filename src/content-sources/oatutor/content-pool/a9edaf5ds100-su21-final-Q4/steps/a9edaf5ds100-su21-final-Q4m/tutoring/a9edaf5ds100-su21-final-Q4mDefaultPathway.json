@@ -1,0 +1,44 @@
+[
+    {
+        "id": "a9edaf5ds100-su21-final-Q4m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Bias",
+        "text": "Model bias refers to the error introduced by approximating a real-world problem, which may be complex, by a simplified model. High bias can cause the model to miss relevant relations between features and target outputs. Consider how different models might capture these relationships.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4m-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring Regularization",
+        "text": "Regularization is a technique used to prevent overfitting by adding a penalty to the loss function. However, it can sometimes increase bias. Think about how you might adjust the model complexity to address this.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4m-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Use a decision tree with the same features."
+        ],
+        "dependencies": [],
+        "title": "Model Complexity Adjustment",
+        "text": "Which of the following actions could help reduce model bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Decrease the number of features",
+            "Increase the number of features",
+            "Use a decision tree with the same features",
+            "Use a decision tree with the same features.",
+            "Use a simpler model"
+        ]
+    }
+]

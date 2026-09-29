@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a1bb75eds100-su20-mt2-Q7c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logistic Regression",
+        "text": "In logistic regression, the probability of the binary outcome is modeled using the logistic function. This function maps any real-valued number into the $$(0,1)$$ interval, which represents probabilities. Can you recall the formula for the logistic function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-mt2-Q7c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su20-mt2-Q7c-h1"
+        ],
+        "title": "Sketching the Logistic Function",
+        "text": "Try sketching the logistic function. It has an S-shaped curve, starting near $$0$$, increasing rapidly around the midpoint, and leveling off near $$1$$. How does this shape help you understand the probability at a specific value of $$x$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-mt2-Q7c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su20-mt2-Q7c-h2"
+        ],
+        "title": "Evaluating the Logistic Function",
+        "text": "If the logistic function is given by $$\\frac{1}{1+e^{\\left(-x\\right)}}$$, what is the value when $$x=1$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$\\frac{1}{4}$$",
+            "$$\\frac{1}{2}$$",
+            "$$\\frac{3}{4}$$",
+            "$$1$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su20-mt2-Q7c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su20-mt2-Q7c-h3"
+        ],
+        "title": "Interpreting the Probability",
+        "text": "Once you have the value from the logistic function, remember that it represents the probability of the outcome being $$1$$ given $$x$$. How does this probability relate to the options provided?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

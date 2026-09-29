@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a1bb75eds100-su20-mt2-Q7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Separability",
+        "text": "To determine if a dataset is linearly separable, imagine drawing a straight line that separates the two classes without any overlap. If such a line exists, the dataset is linearly separable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-mt2-Q7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su20-mt2-Q7a-h1"
+        ],
+        "title": "Analyzing the Scatter Plot",
+        "text": "Look at the scatter plot and observe the distribution of the points. Are there any points from different classes that overlap or are very close to each other?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-mt2-Q7a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su20-mt2-Q7a-h2"
+        ],
+        "title": "Evaluating Separability",
+        "text": "Based on the scatter plot, can you draw a straight line that separates the two classes without any overlap?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No",
+            "Impossible to tell"
+        ]
+    }
+]

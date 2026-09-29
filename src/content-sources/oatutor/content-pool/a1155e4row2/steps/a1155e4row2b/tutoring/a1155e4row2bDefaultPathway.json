@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1155e4row2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Data",
+        "text": "Look at the 'renovated' column in the DataFrame. It contains the years when rooms were last renovated. Some entries might be 'None', indicating no renovation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row2b-h1"
+        ],
+        "title": "Choosing the Right Visualization",
+        "text": "Consider what a bar plot represents. It is useful for comparing quantities across different categories. Think about how this applies to the number of renovations per year.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row2b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1155e4row2b-h2"
+        ],
+        "title": "Evaluating the Bar Plot",
+        "text": "Is a bar plot suitable for showing the total number of room renovations by year?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

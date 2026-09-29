@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a1bb75eds100-sp19-final-Q5ab-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logistic Regression",
+        "text": "In logistic regression, the probability of the binary outcome is modeled using the logistic function. This function is defined as $$sigma(x)=\\frac{1}{1+e^{\\left(-x\\right)}}$$. Can you see how this relates to the given equation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp19-final-Q5ab-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp19-final-Q5ab-h1"
+        ],
+        "title": "Symmetry in Logistic Function",
+        "text": "The logistic function has a property of symmetry. If you replace $$x$$ with $$-x$$, the function's output complements to $$1$$. How does this property help in understanding the given statement?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp19-final-Q5ab-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$sigma(-x)=1-sigma(x)$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp19-final-Q5ab-h2"
+        ],
+        "title": "Exploring the Symmetry",
+        "text": "Consider the logistic function $$sigma(x)=\\frac{1}{1+e^{\\left(-x\\right)}}$$. What happens if you replace $$x$$ with $$-x$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$sigma(-x)=1-sigma(x)$$",
+            "$$sigma(-x)=sigma(x)$$",
+            "$$sigma(-x)=0$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp19-final-Q5ab-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp19-final-Q5ab-h3"
+        ],
+        "title": "Connecting the Dots",
+        "text": "Now that you know the symmetry property of the logistic function, think about how this property applies to the equation $$P(Y=1|X)=P(Y=0|-X)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

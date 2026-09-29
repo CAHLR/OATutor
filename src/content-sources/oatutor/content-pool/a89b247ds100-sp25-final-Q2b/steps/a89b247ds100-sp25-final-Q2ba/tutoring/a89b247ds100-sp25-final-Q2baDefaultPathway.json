@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a89b247ds100-sp25-final-Q2ba-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Training and Validation Error",
+        "text": "When you reduce the number of features in a model, it often becomes simpler. A simpler model might not fit the training data as closely, which can increase the training error. However, it might generalize better to new data, potentially reducing the validation error. Think about why a simpler model might perform better on unseen data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp25-final-Q2ba-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Less complex"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp25-final-Q2ba-h1"
+        ],
+        "title": "Feature Selection Impact",
+        "text": "Consider the impact of reducing the number of features on the model's complexity. Does reducing features make the model more or less complex?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "More complex",
+            "Less complex"
+        ]
+    },
+    {
+        "id": "a89b247ds100-sp25-final-Q2ba-h3",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-sp25-final-Q2ba-h2"
+        ],
+        "title": "Bias-Variance Tradeoff",
+        "text": "Reducing the number of features can affect the bias and variance of a model. A model with fewer features might have higher bias but lower variance. How does this tradeoff relate to training and validation errors?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp25-final-Q2ba-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The model's variance is lower"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp25-final-Q2ba-h3"
+        ],
+        "title": "Observational Variance",
+        "text": "If the validation error decreases when reducing features, what does this suggest about the model's variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The model's variance is higher",
+            "The model's variance is lower"
+        ]
+    }
+]

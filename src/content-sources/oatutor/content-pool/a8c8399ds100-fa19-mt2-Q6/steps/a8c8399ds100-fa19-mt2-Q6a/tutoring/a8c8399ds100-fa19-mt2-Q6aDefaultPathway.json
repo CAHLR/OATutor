@@ -1,0 +1,84 @@
+[
+    {
+        "id": "a8c8399ds100-fa19-mt2-Q6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "Remember, one-hot encoding is a way to represent categorical variables as binary vectors. For the $$job_{type}$$ variable, each category (blue collar, white collar, managerial) is represented by a separate binary column. In this case, if a worker is blue collar, the $$x_b$$ variable will be $$1$$, and the others will be $$0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa19-mt2-Q6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-fa19-mt2-Q6a-h1"
+        ],
+        "title": "Substitute Known Values",
+        "text": "For a blue collar worker with $$10$$ years of education, substitute $$x_{edu}$$ with $$10$$ and $$x_b$$ with $$1$$ in the equation. What happens to $$x_m$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa19-mt2-Q6a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$30$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa19-mt2-Q6a-h2"
+        ],
+        "title": "Calculate the Contribution of Education",
+        "text": "Calculate the contribution of education to the wage using the term $$3x_{edu}$$. What is the result when $$x_{edu}$$ is 10?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$30$$",
+            "$$10$$",
+            "$$20$$",
+            "$$30$$",
+            "$$40$$"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-fa19-mt2-Q6a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-3$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa19-mt2-Q6a-h3"
+        ],
+        "title": "Calculate the Contribution of Job Type",
+        "text": "For a blue collar worker, calculate the contribution of the job type using the term $$-3x_b$$. What is the result when $$x_b$$ is 1?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-3$$",
+            "$$-3$$",
+            "$$-6$$",
+            "$$0$$",
+            "$$3$$"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-fa19-mt2-Q6a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-fa19-mt2-Q6a-h4"
+        ],
+        "title": "Combine the Contributions",
+        "text": "Now, combine the contributions from education and job type with the intercept $$-8$$. What is the final expression you need to evaluate?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

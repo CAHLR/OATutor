@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1bb75eds100-su20-final-Q6f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding groupby and size",
+        "text": "The `groupby` function in pandas is used to split the data into groups based on some criteria. The `size` function then counts the number of entries in each group. What do you think `groupby('generation').size()` will return?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su20-final-Q6f-h1"
+        ],
+        "title": "Accessing specific group data",
+        "text": "After using `groupby` and `size`, you can access the size of a specific group using `.loc[]`. What does `.loc[7]` refer to in this context?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su20-final-Q6f-h2"
+        ],
+        "title": "Checking the group size",
+        "text": "What does the expression `consoles.groupby('generation').size().loc[7]` return?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

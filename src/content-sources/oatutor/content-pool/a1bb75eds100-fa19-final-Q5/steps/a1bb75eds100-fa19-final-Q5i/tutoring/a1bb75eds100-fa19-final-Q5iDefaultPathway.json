@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-final-Q5i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Zero-One Loss",
+        "text": "The zero-one loss function is different from the cross-entropy loss because it considers both the model parameters and the threshold. Think about how changing the threshold might affect the classification results.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5i-h1"
+        ],
+        "title": "Precision and Zero-One Loss",
+        "text": "Precision is a measure of how many of the predicted positive cases are actually positive. Consider how the threshold T affects precision and whether minimizing zero-one loss would necessarily maximize precision.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5i-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Precision increases, but recall decreases."
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5i-h2"
+        ],
+        "title": "Evaluating Precision",
+        "text": "If the threshold T is set too high, what happens to the precision of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Precision increases, but recall decreases.",
+            "Precision decreases, but recall increases.",
+            "Both precision and recall increase.",
+            "Both precision and recall decrease."
+        ]
+    }
+]

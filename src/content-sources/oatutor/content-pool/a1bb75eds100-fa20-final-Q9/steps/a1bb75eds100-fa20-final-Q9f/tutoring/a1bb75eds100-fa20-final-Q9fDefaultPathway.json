@@ -1,0 +1,108 @@
+[
+    {
+        "id": "a1bb75eds100-fa20-final-Q9f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Accuracy",
+        "text": "Accuracy is calculated as the number of correct predictions divided by the total number of predictions. Use the given accuracy to find the total number of predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9f-h1"
+        ],
+        "title": "Using Precision",
+        "text": "Precision is the number of true positives divided by the sum of true positives and false positives. Use the given precision to find the number of false positives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9f-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$130$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9f-h1"
+        ],
+        "title": "Calculating Total Predictions",
+        "text": "Given the accuracy $$\\frac{119}{130}$$, what is the total number of predictions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$130$$",
+            "$$119$$",
+            "$$130$$",
+            "$$57$$",
+            "$$62$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9f-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9f-h2"
+        ],
+        "title": "Finding False Positives",
+        "text": "Given the precision $$\\frac{31}{32}$$, how many false positives are there?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$1$$",
+            "$$2$$",
+            "$$3$$",
+            "$$4$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9f-h5",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9f-h4"
+        ],
+        "title": "Understanding Recall",
+        "text": "Recall is the number of true positives divided by the sum of true positives and false negatives. Use this to find the recall.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9f-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{62}{71}$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9f-h5"
+        ],
+        "title": "Calculating Recall",
+        "text": "Using the true positives and false negatives, what is the recall?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{62}{64}$$",
+            "$$\\frac{62}{71}$$",
+            "$$\\frac{57}{59}$$",
+            "$$\\frac{57}{71}$$",
+            "$$\\frac{62}{119}$$"
+        ]
+    }
+]

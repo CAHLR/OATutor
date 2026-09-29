@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a1155e4row10_p2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Scatterplots",
+        "text": "A scatterplot is useful for showing the relationship between two numerical variables. Consider whether $$'games_{played'}$$ is a single variable or if it needs to be compared with another variable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row10_p2d-h1"
+        ],
+        "title": "Visualizing Distributions",
+        "text": "To visualize the distribution of a single variable, consider using plots like histograms or box plots. These plots help in understanding the spread and central tendency of the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a1155e4row10_p2d-h2"
+        ],
+        "title": "Choosing the Right Plot",
+        "text": "Which type of plot is more appropriate for visualizing the distribution of a single variable like $$'games_{played'}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Box Plot",
+            "FALSE",
+            "Histogram",
+            "Scatterplot"
+        ]
+    }
+]

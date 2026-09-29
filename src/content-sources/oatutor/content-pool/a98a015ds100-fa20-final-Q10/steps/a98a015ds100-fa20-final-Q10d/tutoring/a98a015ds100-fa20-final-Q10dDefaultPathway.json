@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a98a015ds100-fa20-final-Q10d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD and Singular Values",
+        "text": "When you perform Singular Value Decomposition (SVD), the singular values in the vector `s` represent the square roots of the eigenvalues of the matrix `X*X.T`. These values give you an idea of the variance captured by each principal component.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa20-final-Q10d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa20-final-Q10d-h1"
+        ],
+        "title": "Connecting Singular Values to Variance",
+        "text": "The sum of the squares of the singular values, $$`\\sum s^2`$$, represents the total variance in the data. This means that each singular value contributes to the total variance. Can you think about how this might help you estimate individual singular values?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa20-final-Q10d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa20-final-Q10d-h2"
+        ],
+        "title": "Estimating s[1]",
+        "text": "If $$`\\sum s^2`$$ is $$121$$, and you know that singular values are typically ordered from largest to smallest, which value might be closest to `s[1]`?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0.3$$",
+            "$$3.3$$",
+            "$$6$$",
+            "$$8$$",
+            "$$36$$"
+        ]
+    }
+]

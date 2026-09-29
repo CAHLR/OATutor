@@ -1,0 +1,43 @@
+[
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4cd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "When you one-hot encode a categorical variable with three categories, you create three new binary features. Each feature represents one category and takes the value $$1$$ if the observation belongs to that category, and $$0$$ otherwise.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4cd-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Linear Dependence in Features",
+        "text": "If you add all three one-hot encoded features to the model, they will sum to $$1$$ for each observation. This introduces linear dependence among the features, which can affect the uniqueness of the OLS solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4cd-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4cd-h2"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Consider the effect of adding all three one-hot encoded features on the model's ability to find a unique solution. What happens when features are linearly dependent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

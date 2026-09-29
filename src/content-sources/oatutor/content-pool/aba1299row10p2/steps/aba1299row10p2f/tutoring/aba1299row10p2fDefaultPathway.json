@@ -1,0 +1,45 @@
+[
+    {
+        "id": "aba1299row10p2f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Residuals",
+        "text": "In an Ordinary Least Squares (OLS) regression, the residuals are the differences between the observed values and the predicted values. Think about what it means for these differences to sum up to a particular value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10p2f-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row10p2f-h1"
+        ],
+        "title": "Sum of Residuals",
+        "text": "Consider the properties of the residuals in OLS regression. What do you know about their sum? Is there a specific value they are known to sum to?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10p2f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aba1299row10p2f-h2"
+        ],
+        "title": "Exploring Mean Squared Error",
+        "text": "The mean squared error (MSE) is calculated as the average of the squares of the residuals. How does this relate to the sum of the residuals?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "abf3684ds100-sp25-final-Q2r-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Learning Rate",
+        "text": "The learning rate in gradient descent determines how big of a step we take towards the minimum. If the learning rate is too high, what do you think might happen to the path of the updates?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2r-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2r-h1"
+        ],
+        "title": "Effect of Increasing Learning Rate",
+        "text": "What could happen to the gradient descent path if the learning rate is increased significantly?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2r-h3",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2r-h2"
+        ],
+        "title": "Oscillation and Divergence",
+        "text": "When the learning rate is too high, the updates can overshoot the minimum, causing the path to oscillate. This can lead to divergence, where the updates move further away from the minimum. How does this relate to the plot you see?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

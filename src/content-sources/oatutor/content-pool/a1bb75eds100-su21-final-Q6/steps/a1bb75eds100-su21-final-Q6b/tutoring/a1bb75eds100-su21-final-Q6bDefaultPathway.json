@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a1bb75eds100-su21-final-Q6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding transforms categorical data into a binary matrix. Each category becomes a column, and for each data point, only one column is set to $$1$$, while the rest are $$0$$. How many categories do you have in your data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q6b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q6b-h1"
+        ],
+        "title": "Counting Zeroes in One-Hot Encoding",
+        "text": "In a one-hot encoded matrix, each row has exactly one '1' and the rest are '0's. If you have $$5$$ categories and $$5$$ data points, how many total entries are there in the matrix? How many of these entries are zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q6b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$25$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q6b-h2"
+        ],
+        "title": "Calculate Total Entries",
+        "text": "Calculate the total number of entries in the one-hot encoded matrix. Remember, you have $$5$$ data points and $$5$$ categories.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$15$$",
+            "$$20$$",
+            "$$25$$",
+            "$$30$$",
+            "$$35$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q6b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$20$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q6b-h3"
+        ],
+        "title": "Determine Zero Entries",
+        "text": "If each row in the matrix has one '1', how many '0's are there in each row? Multiply this by the number of rows to find the total number of zero entries.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$5$$",
+            "$$10$$",
+            "$$15$$",
+            "$$20$$",
+            "$$25$$"
+        ]
+    }
+]

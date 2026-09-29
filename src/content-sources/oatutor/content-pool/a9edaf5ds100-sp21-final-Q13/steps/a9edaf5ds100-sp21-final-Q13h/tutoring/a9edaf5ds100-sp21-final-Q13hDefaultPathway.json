@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a9edaf5ds100-sp21-final-Q13h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Feature Scaling",
+        "text": "Think about how the scale of the features might affect the coefficients in a linear model. Which feature has a larger numerical range, and how might that influence the model's decision?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp21-final-Q13h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-sp21-final-Q13h-h1"
+        ],
+        "title": "Impact of L1 Regularization",
+        "text": "L1 regularization tends to select features by driving some coefficients to zero. Consider how the scale of the features might affect which coefficient is reduced to zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp21-final-Q13h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Weight in mg"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp21-final-Q13h-h2"
+        ],
+        "title": "Comparing Feature Scales",
+        "text": "Which feature has a larger numerical range?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Weight in kg",
+            "Weight in mg"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-sp21-final-Q13h-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The feature with the larger range is less likely to be reduced to zero."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp21-final-Q13h-h3"
+        ],
+        "title": "Effect of Larger Numerical Range",
+        "text": "How does having a larger numerical range affect the feature's coefficient in the presence of L1 regularization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The feature with the larger range is more likely to be reduced to zero.",
+            "The feature with the larger range is less likely to be reduced to zero."
+        ]
+    }
+]

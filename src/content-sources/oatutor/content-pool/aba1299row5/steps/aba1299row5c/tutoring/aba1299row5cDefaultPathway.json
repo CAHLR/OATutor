@@ -1,0 +1,59 @@
+[
+    {
+        "id": "aba1299row5c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Objective Function",
+        "text": "The objective function Rachel is using is a sum of squared errors, but it's weighted by the hours, $$x_i$$. Think about how this weighting affects the minimization process.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row5c-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row5c-h1"
+        ],
+        "title": "Differentiating the Objective Function",
+        "text": "To find the value of $$\\theta_1$$ that minimizes the objective function, consider taking the derivative of $$R\\left(\\theta_1\\right)$$ with respect to $$\\theta_1$$. What happens when you set this derivative to zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row5c-h3",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row5c-h2"
+        ],
+        "title": "Simplifying the Derivative",
+        "text": "After differentiating, you should have an expression involving a sum over $$n$$ terms. Try to simplify this expression by factoring out common terms.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row5c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "sum{i extbackslash=1}{n}{x_i**2*y_i}/sum{i extbackslash=1}{n}{x_i**3}"
+        ],
+        "dependencies": [
+            "aba1299row5c-h3"
+        ],
+        "title": "Choosing the Correct Expression",
+        "text": "Which of the following expressions represents the value of $$\\theta_1$$ that minimizes the objective function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "sum{i extbackslash=1}{n}{x_i**2*y_i}/sum{i extbackslash=1}{n}{x_i**3}",
+            "sum{i extbackslash=1}{n}{x_i*y_i}/sum{i extbackslash=1}{n}{x_i**2}",
+            "sum{i extbackslash=1}{n}{x_i**3}/sum{i extbackslash=1}{n}{x_i**2*y_i}",
+            "sum{i extbackslash=1}{n}{x_i**2*y_i}/sum{i extbackslash=1}{n}{x_i**2}"
+        ]
+    }
+]

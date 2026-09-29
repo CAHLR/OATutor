@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a98a015ds100-sp25-final-Q4a,Q4bc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA and SVD",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It uses Singular Value Decomposition (SVD) to achieve this. Remember, SVD decomposes a matrix into three other matrices: U, \u03a3, and V. Think about how these matrices relate to the variance in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp25-final-Q4a,Q4bc-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp25-final-Q4a,Q4bc-h1"
+        ],
+        "title": "Variance in PCA",
+        "text": "In PCA, the variance of the data in the direction of the principal components is crucial. The singular values in the \u03a3 matrix from SVD are related to this variance. Consider how these singular values might be used to calculate variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp25-final-Q4a,Q4bc-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "\u03a3"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp25-final-Q4a,Q4bc-h2"
+        ],
+        "title": "Matrix Components in SVD",
+        "text": "Which matrix from the SVD decomposition contains the singular values that are directly related to the variance in PCA?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "U",
+            "\u03a3",
+            "V"
+        ]
+    },
+    {
+        "id": "a98a015ds100-sp25-final-Q4a,Q4bc-h4",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp25-final-Q4a,Q4bc-h3"
+        ],
+        "title": "Direction of Variance",
+        "text": "The direction of maximum variance in PCA is given by the principal components. These are derived from the eigenvectors of the covariance matrix. Consider how the U and V matrices relate to these directions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp25-final-Q4a,Q4bc-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "V"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp25-final-Q4a,Q4bc-h4"
+        ],
+        "title": "Principal Components and SVD",
+        "text": "Which matrix from the SVD decomposition contains the principal components that indicate the direction of maximum variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "U",
+            "\u03a3",
+            "V"
+        ]
+    }
+]

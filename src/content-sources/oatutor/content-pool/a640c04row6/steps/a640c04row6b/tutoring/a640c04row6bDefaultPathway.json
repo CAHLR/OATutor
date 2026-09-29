@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a640c04row6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Full Outer Joins",
+        "text": "A full outer join combines all rows from both tables, matching rows with the same key values and including unmatched rows from both tables. Think about how many unique names exist in both tables and how they might overlap.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row6b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a640c04row6b-h1"
+        ],
+        "title": "Analyzing the Join on Name",
+        "text": "When you perform a join on the 'name' column, consider how many names are common between the two tables. The result of the join will include all unique names from both tables, even if they don't match.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row6b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$105$$"
+        ],
+        "dependencies": [
+            "a640c04row6b-h2"
+        ],
+        "title": "Exploring the Number of Unique Names",
+        "text": "How many unique names do you think exist in both the jacket and ticket tables combined?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$92$$",
+            "$$53$$",
+            "$$105$$",
+            "$$145$$"
+        ]
+    },
+    {
+        "id": "a640c04row6b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a640c04row6b-h3"
+        ],
+        "title": "Considering Unmatched Rows",
+        "text": "In a full outer join, unmatched rows from both tables are included. Think about how many names might be unique to each table and how that affects the total number of rows.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

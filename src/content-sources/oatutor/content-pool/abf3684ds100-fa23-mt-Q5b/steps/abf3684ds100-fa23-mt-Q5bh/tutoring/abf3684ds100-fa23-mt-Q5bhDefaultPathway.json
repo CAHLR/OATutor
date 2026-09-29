@@ -1,0 +1,49 @@
+[
+    {
+        "id": "abf3684ds100-fa23-mt-Q5bh-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Loss Functions",
+        "text": "When considering loss functions, think about how they handle differences between predicted and actual values. A higher power in the loss function can amplify these differences, especially for larger errors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa23-mt-Q5bh-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-fa23-mt-Q5bh-h1"
+        ],
+        "title": "Comparing Powers in Loss Functions",
+        "text": "Consider how the power of the difference term affects the loss function. A power greater than $$2$$ will increase the penalty for larger errors more than Mean Squared Error (MSE) does.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa23-mt-Q5bh-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "\\frac{1}{n}sum{i\\=1}{n}{abs(y_i-\\hat{y}_i)**3}"
+        ],
+        "dependencies": [
+            "abf3684ds100-fa23-mt-Q5bh-h2"
+        ],
+        "title": "Identifying Suitable Loss Functions",
+        "text": "Which of the following loss functions penalizes outliers more harshly than MSE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "\\frac{1}{n}sum{i\\=1}{n}{(y_i-\\hat{y}_i)}",
+            "\\frac{1}{n}sum{i\\=1}{n}{(y_i-\\hat{y}_i)**3}",
+            "\\frac{1}{n}sum{i\\=1}{n}{abs(y_i-\\hat{y}_i)**3}",
+            "\\frac{1}{n}sum{i\\=1}{n}{(y_i-\\hat{y}_i)**4}",
+            "\\frac{1}{n}sum{i\\=1}{n}{(y_i-\\hat{y}_i)**5}",
+            "\\frac{1}{n}sum{i\\=1}{n}{abs((y_i-\\hat{y}_i)**5)}"
+        ]
+    }
+]

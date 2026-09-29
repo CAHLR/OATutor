@@ -1,0 +1,33 @@
+[
+    {
+        "id": "a9edaf5ds100-su21-final-Q4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "Model variance refers to how much the predictions of a model vary when you use different training data. Look at how the predictions of the different models differ from each other. Do they all predict similar values, or are there large differences?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su21-final-Q4b-h1"
+        ],
+        "title": "Analyzing the Plot",
+        "text": "Observe the lines representing each model's predictions. Do they overlap closely, or are they spread out?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

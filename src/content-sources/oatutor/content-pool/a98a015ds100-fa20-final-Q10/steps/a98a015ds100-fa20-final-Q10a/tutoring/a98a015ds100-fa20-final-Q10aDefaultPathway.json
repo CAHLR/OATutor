@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a98a015ds100-fa20-final-Q10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It identifies the directions (principal components) in which the data varies the most.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa20-final-Q10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa20-final-Q10a-h1"
+        ],
+        "title": "Direction of Maximum Variance",
+        "text": "The first principal component (PC1) is the direction in which the data varies the most. Look at the scatter plot and try to visualize the line that best captures the spread of the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa20-final-Q10a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x_2=\\frac{2}{3} x_1$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa20-final-Q10a-h2"
+        ],
+        "title": "Slope of PC1",
+        "text": "Based on the scatter plot, which line seems to best represent the direction of maximum variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$x_2=\\frac{11}{3} x_1-9$$",
+            "$$x_2=3x_1$$",
+            "$$x_2=\\frac{-20}{3} x_1+5$$",
+            "$$x_2=\\frac{2}{3} x_1$$",
+            "$$x_2=-3x_1$$"
+        ]
+    }
+]

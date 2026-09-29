@@ -1,0 +1,47 @@
+[
+    {
+        "id": "aba1299row9p2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Types",
+        "text": "Look at the data types in the table. \"Dis\" and \"Goals\" are numerical values, while \"League\" is a categorical value. Consider how these types relate to the term \"qualitative continuous.\"",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row9p2a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A variable that can take on any value within a range and is categorical in nature."
+        ],
+        "dependencies": [
+            "aba1299row9p2a-h1"
+        ],
+        "title": "Identifying Qualitative Continuous Variables",
+        "text": "Which of the following best describes a qualitative continuous variable?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A variable that can take on any value within a range and is categorical in nature.",
+            "A variable that can take on any value within a range and is numerical in nature.",
+            "A variable that is categorical and has distinct categories.",
+            "A variable that is numerical and has distinct categories."
+        ]
+    },
+    {
+        "id": "aba1299row9p2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row9p2a-h2"
+        ],
+        "title": "Analyzing the Dataset",
+        "text": "Consider the types of data present in the dataset. \"Dis\" and \"Goals\" are continuous numerical variables, while \"League\" is a categorical variable. Think about whether any of these fit the description of a qualitative continuous variable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

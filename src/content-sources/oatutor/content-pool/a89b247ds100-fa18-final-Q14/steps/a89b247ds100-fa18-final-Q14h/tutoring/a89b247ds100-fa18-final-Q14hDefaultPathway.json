@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a89b247ds100-fa18-final-Q14h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plot",
+        "text": "Observe how the plot changes as the value of \\(d\\) increases. Notice that the curve decreases to a minimum point and then increases again. This pattern might suggest a relationship with error or complexity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q14h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q14h-h1"
+        ],
+        "title": "Bias-Variance Tradeoff",
+        "text": "Consider the bias-variance tradeoff in machine learning. As model complexity increases, bias typically decreases, but variance increases. Think about how this might relate to the shape of the plot.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q14h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q14h-h2"
+        ],
+        "title": "Possible Y-Axis Labels",
+        "text": "Which of the following could the y-axis represent based on the plot's shape?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Bias",
+            "Complexity",
+            "Error",
+            "FALSE",
+            "Variance"
+        ]
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a98a015ds100-fa19-final-Q8c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Principal Component Matrix",
+        "text": "The principal component matrix, P, is derived from the original matrix X. It involves the singular value decomposition (SVD) of X. Can you recall what the SVD of a matrix involves?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-final-Q8c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa19-final-Q8c-h1"
+        ],
+        "title": "Decomposing the Principal Component Matrix",
+        "text": "When you decompose the principal component matrix P into its components, you are essentially performing another SVD. What are the components of an SVD?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-final-Q8c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The $$3$$ by $$3$$ identity matrix, with rows (1,0,0), (0,1,0) and (0,0,1)"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa19-final-Q8c-h2"
+        ],
+        "title": "Identifying $${V_P}^T$$",
+        "text": "Consider the properties of the matrices involved in the SVD. What is the role of $${V_P}^T$$ in the decomposition?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The $$5$$ by $$5$$ identity matrix, with rows (1,0,0,0,0), (0,1,0,0,0), (0,0,1,0,0), (0,0,0,1,0) and (0,0,0,0,1)",
+            "The $$3$$ by $$3$$ identity matrix, with rows (1,0,0), (0,1,0) and (0,0,1)",
+            "The $$3$$ by $$3$$ matrix of all zeros, with rows (0,0,0), (0,0,0) and (0,0,0)",
+            "The $$2$$ by $$2$$ identity matrix, with rows $$(1,0)$$ and $$(0,1)$$",
+            "The same matrix as $$V^T$$ obtained from the decomposition of X"
+        ]
+    }
+]

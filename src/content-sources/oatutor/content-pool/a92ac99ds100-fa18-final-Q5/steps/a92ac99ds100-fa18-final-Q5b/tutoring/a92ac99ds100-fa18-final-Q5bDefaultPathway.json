@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a92ac99ds100-fa18-final-Q5b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrap Estimates",
+        "text": "To find the bootstrap estimate for the variance of the sample mean, focus on the rowmeans. The variance of these rowmeans will give you the estimate you need.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa18-final-Q5b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "np.var(rowmeans)"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa18-final-Q5b-h1"
+        ],
+        "title": "Choosing the Correct Statistic",
+        "text": "Which statistic should you use to estimate the variance of the sample mean?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "np.var(rowmeans)",
+            "np.mean(rowvars)",
+            "np.var(colmeans)",
+            "np.mean(colvars)",
+            "None of these"
+        ]
+    },
+    {
+        "id": "a92ac99ds100-fa18-final-Q5b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a92ac99ds100-fa18-final-Q5b-h1"
+        ],
+        "title": "Calculating Variance",
+        "text": "Remember, variance is calculated by taking the average of the squared differences from the mean. Apply this to the rowmeans to find the variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

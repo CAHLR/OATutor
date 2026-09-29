@@ -1,0 +1,43 @@
+[
+    {
+        "id": "a89b247ds100-sp17-final-Q7d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bernoulli Sampling",
+        "text": "Bernoulli sampling is a probabilistic method where each row in the table has a fixed probability of being included in the sample. This means that the sample size is not fixed, but rather determined by the probability you set. Can you think of how this might affect the memory usage on your laptop?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp17-final-Q7d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring the LIMIT Clause",
+        "text": "The LIMIT clause in SQL is used to restrict the number of rows returned by a query. It doesn't sample the data but rather takes the first XX rows as they appear in the table. How might this approach impact the memory usage compared to Bernoulli sampling?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp17-final-Q7d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp17-final-Q7d-h1"
+        ],
+        "title": "Evaluating Memory Usage",
+        "text": "Consider the difference in memory usage between sampling a small percentage of rows and retrieving a fixed number of rows. Which approach is more likely to exceed your laptop's memory capacity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

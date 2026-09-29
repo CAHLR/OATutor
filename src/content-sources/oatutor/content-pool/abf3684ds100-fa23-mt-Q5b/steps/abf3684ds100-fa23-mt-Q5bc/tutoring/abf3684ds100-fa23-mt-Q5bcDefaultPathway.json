@@ -1,0 +1,66 @@
+[
+    {
+        "id": "abf3684ds100-fa23-mt-Q5bc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Loss Functions",
+        "text": "When considering loss functions, think about how they handle differences between predicted and actual values. A function that raises these differences to a higher power will generally penalize larger errors more severely. Consider how this might affect outliers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa23-mt-Q5bc-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Comparing Powers in Loss Functions",
+        "text": "If you compare the Mean Squared Error (MSE) with a function that uses a higher power, such as cubing or raising to the fourth power, how does this change the impact of larger errors?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa23-mt-Q5bc-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Cubing increases the penalty for larger errors more than squaring does."
+        ],
+        "dependencies": [
+            "abf3684ds100-fa23-mt-Q5bc-h1"
+        ],
+        "title": "Analyzing the Impact of Cubing",
+        "text": "Consider the function sum{i o1}{n}{(y_i-\u007fhat{y}_i)**3}. How does cubing the error term affect the penalty for larger errors compared to squaring?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Cubing increases the penalty for larger errors more than squaring does.",
+            "Cubing decreases the penalty for larger errors compared to squaring.",
+            "Cubing has no effect on the penalty for larger errors."
+        ]
+    },
+    {
+        "id": "abf3684ds100-fa23-mt-Q5bc-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Using absolute values with a higher power increases the penalty for outliers."
+        ],
+        "dependencies": [
+            "abf3684ds100-fa23-mt-Q5bc-h2"
+        ],
+        "title": "Exploring Absolute Values",
+        "text": "Look at the function sum{i o1}{n}{abs(y_i-\u007fhat{y}_i)**3}. How does using absolute values with a higher power affect the treatment of outliers?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Using absolute values with a higher power increases the penalty for outliers.",
+            "Using absolute values with a higher power decreases the penalty for outliers.",
+            "Using absolute values with a higher power has no effect on the penalty for outliers."
+        ]
+    }
+]

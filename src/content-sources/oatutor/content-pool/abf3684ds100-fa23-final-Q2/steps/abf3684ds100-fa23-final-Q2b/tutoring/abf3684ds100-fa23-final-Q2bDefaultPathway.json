@@ -1,0 +1,84 @@
+[
+    {
+        "id": "abf3684ds100-fa23-final-Q2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Loss Function",
+        "text": "Let's start by examining the loss function \\( \\tilde{L}(\\theta) $$=$$ 2\\theta_0 + \\theta_0**4\\theta_1 - e**{2\\theta_1} \\). Notice how each term involves \\( $$\\theta_0$$ \\) and \\( $$\\theta_1$$ \\). Consider how each term will contribute to the gradient with respect to \\( $$\\theta_0$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa23-final-Q2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-fa23-final-Q2b-h1"
+        ],
+        "title": "Partial Derivative with Respect to \\( $$\\theta_0$$ \\)",
+        "text": "To find the gradient descent update for \\( $$\\theta_0$$ \\), we need the partial derivative of \\( \\tilde{L} \\) with respect to \\( $$\\theta_0$$ \\). Focus on the terms in \\( \\tilde{L} \\) that include \\( $$\\theta_0$$ \\). What happens when you differentiate \\( 2\\theta_0 \\) and \\( \\theta_0**4\\theta_1 \\) with respect to \\( $$\\theta_0$$ \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa23-final-Q2b-h3",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-fa23-final-Q2b-h2"
+        ],
+        "title": "Gradient Descent Update Formula",
+        "text": "Remember, the update rule for gradient descent is \\( \\theta_0**{(1)} $$=$$ \\theta_0**{(0)} - \\alpha \\cdot \\frac{\\partial \\tilde{L}}{\\partial $$\\theta_0$$} \\). You have \\( \\theta_0**{(0)} $$=$$ $$1$$ \\) and \\( \\alpha $$=$$ $$0.5$$ \\). Use these values to calculate the update.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa23-final-Q2b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "abf3684ds100-fa23-final-Q2b-h3"
+        ],
+        "title": "Calculate the Partial Derivative",
+        "text": "What is the partial derivative of \\( \\tilde{L} \\) with respect to \\( $$\\theta_0$$ \\) when \\( $$\\theta_0$$ $$=$$ $$1$$ \\) and \\( $$\\theta_1$$ $$=$$ $$2$$ \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$10$$",
+            "$$8$$",
+            "$$12$$",
+            "$$14$$",
+            "$$16$$"
+        ]
+    },
+    {
+        "id": "abf3684ds100-fa23-final-Q2b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-4$$"
+        ],
+        "dependencies": [
+            "abf3684ds100-fa23-final-Q2b-h4"
+        ],
+        "title": "Apply the Gradient Descent Update",
+        "text": "Using the partial derivative you calculated, what is the new value of \\( \\theta_0**{(1)} \\) after applying the gradient descent update?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-4$$",
+            "$$1$$",
+            "$$-5$$",
+            "$$6$$",
+            "$$-9$$"
+        ]
+    }
+]

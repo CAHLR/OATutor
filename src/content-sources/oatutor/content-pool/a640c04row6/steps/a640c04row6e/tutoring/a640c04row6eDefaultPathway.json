@@ -1,0 +1,56 @@
+[
+    {
+        "id": "a640c04row6e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrames",
+        "text": "Take a look at the columns in both DataFrames. Notice how they both have a $$'passport_{id'}$$ column. This can be useful for merging or comparing data between the two DataFrames.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row6e-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Handling Missing Values",
+        "text": "When you encounter missing values in a DataFrame, one common approach is to fill them with a specific value. In this case, consider filling the missing $$'num_{jacket,bought'}$$ values with $$0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row6e-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Filtering Data",
+        "text": "To exclude certain data points, you can use a condition to filter the DataFrame. Think about how you can use a condition to exclude rows where $$'num_{jacket,bought'}$$ is greater than $$10$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row6e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$df_{to,plot[\"num_jacket_bought\"]} \\leq 10$$"
+        ],
+        "dependencies": [
+            "a640c04row6e-h3"
+        ],
+        "title": "Choosing the Correct Condition",
+        "text": "Which condition would correctly filter out rows where $$'num_{jacket,bought'}$$ is greater than 10?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$df_{to,plot[\"num_jacket_bought\"]} \\leq 10$$",
+            "$$df_{to,plot[\"num_jacket_bought\"]}>10$$",
+            "$$df_{to,plot[\"num_jacket_bought\"]}<10$$",
+            "$$df_{to,plot[\"collar_size\"]} \\leq 10$$",
+            "$$df_{to,plot[\"num_jacket_bought\"]} \\geq 10$$"
+        ]
+    }
+]

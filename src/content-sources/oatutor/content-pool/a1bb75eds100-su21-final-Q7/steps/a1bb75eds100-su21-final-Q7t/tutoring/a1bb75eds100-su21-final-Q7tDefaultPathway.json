@@ -1,0 +1,43 @@
+[
+    {
+        "id": "a1bb75eds100-su21-final-Q7t-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Data Distribution",
+        "text": "Observe how the orange and blue points are distributed. Notice any patterns or shapes that might help in distinguishing between the two classes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7t-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Feature Transformation",
+        "text": "Consider how a new feature $$x_3$$, derived from $$x_1$$ and $$x_2$$, might help in separating the classes. Think about transformations that could make the boundary more apparent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7t-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Random Forest"
+        ],
+        "dependencies": [],
+        "title": "Choosing the Right Model",
+        "text": "Which type of model is capable of handling complex boundaries like the one shown?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Random Forest",
+            "Linear Regression",
+            "Logistic Regression",
+            "$$K-Nearest$$ Neighbors"
+        ]
+    }
+]

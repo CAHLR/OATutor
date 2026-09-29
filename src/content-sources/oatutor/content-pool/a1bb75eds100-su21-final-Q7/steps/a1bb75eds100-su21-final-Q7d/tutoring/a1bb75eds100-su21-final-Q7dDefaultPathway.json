@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a1bb75eds100-su21-final-Q7d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Classifier C",
+        "text": "Look at how the decision boundary in classifier C separates the orange and blue points. Does it correctly classify all the points based on their color?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7d-h1"
+        ],
+        "title": "Analyzing the Inner Region",
+        "text": "Focus on the inner blue region of classifier C. Are there any orange points inside this blue region?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7d-h2"
+        ],
+        "title": "Analyzing the Outer Region",
+        "text": "Now, look at the outer orange region of classifier C. Are there any blue points inside this orange region?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7d-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7d-h3"
+        ],
+        "title": "Conclusion on Classifier C",
+        "text": "Based on your observations of the inner and outer regions, does classifier C achieve perfect accuracy on the training set? Consider if any points are misclassified.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

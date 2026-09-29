@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a98a015ds100-sp24-final-Q9o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Singular Value Decomposition",
+        "text": "When performing Singular Value Decomposition (SVD) on a matrix, the matrix is decomposed into three other matrices: U, S, and $$V^T$$. Each of these matrices has specific properties. Can you recall what these properties are and how they relate to the original matrix X?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9o-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9o-h1"
+        ],
+        "title": "Properties of the S Matrix",
+        "text": "The S matrix in the SVD decomposition contains the singular values of the original matrix X. These singular values are always arranged in a specific order. Do you remember what this order is and why it might be important?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9o-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9o-h2"
+        ],
+        "title": "Order of Singular Values",
+        "text": "How are the singular values in the S matrix arranged?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

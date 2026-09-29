@@ -1,0 +1,59 @@
+[
+    {
+        "id": "aba1299row7f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Residuals",
+        "text": "Residuals are the differences between the observed values and the values predicted by the model. A residual plot helps us see how well the model fits the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row7f-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row7f-h1"
+        ],
+        "title": "Analyzing the Residual Plot",
+        "text": "Look at the pattern of the residuals. If they show a clear trend or pattern, it might indicate a problem with the model's fit.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row7f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The model is consistently underpredicting."
+        ],
+        "dependencies": [
+            "aba1299row7f-h2"
+        ],
+        "title": "Identifying Patterns",
+        "text": "What does it mean if the residuals are consistently above or below zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The model is consistently overpredicting.",
+            "The model is consistently underpredicting.",
+            "As $$x$$ increases, the model performs worse.",
+            "A linear model works well for this data."
+        ]
+    },
+    {
+        "id": "aba1299row7f-h4",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row7f-h2"
+        ],
+        "title": "Interpreting the Trend",
+        "text": "If the residuals increase as $$x$$ increases, it suggests that the model's predictions are getting worse as $$x$$ increases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

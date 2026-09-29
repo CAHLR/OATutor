@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting by adding a penalty to the model's complexity. It helps in simplifying the model and improving its generalization to new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1l-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1l-h1"
+        ],
+        "title": "L1 vs L2 Regularization",
+        "text": "L1 regularization, also known as Lasso, tends to produce sparse models by driving some coefficients to zero. L2 regularization, or Ridge, tends to shrink coefficients but usually keeps them non-zero. Consider which might be more beneficial given the problem's context.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1l-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1l-h2"
+        ],
+        "title": "High Dimensionality and Sparsity",
+        "text": "In high-dimensional spaces, many features might not contribute significantly to the model's prediction. Think about how L1 regularization can help in selecting only the most important features by setting others to zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1l-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Apply L1 regularization, due to the redundancies in codon meaning."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1l-h3"
+        ],
+        "title": "Choosing the Right Regularization",
+        "text": "Which regularization technique is known for creating sparse models by setting some coefficients to zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Apply L2 regularization, due to the redundancies in codon meaning.",
+            "Apply L1 regularization, due to the redundancies in codon meaning.",
+            "Apply L2 regularization, due to the high dimensionality of the samples.",
+            "Apply L1 regularization, due to the high dimensionality of the samples."
+        ]
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a1155e4row7_p1d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Code Structure",
+        "text": "Look at how the `groupby` function is used. It groups the data based on a specific column. Which column do you think is relevant for grouping activities?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row7_p1d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "activity"
+        ],
+        "dependencies": [
+            "a1155e4row7_p1d-h1"
+        ],
+        "title": "Choosing the Correct Column for Grouping",
+        "text": "Which column should be used to group the data to find the mode of $$`hour_{of,visit}`$$ for each activity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$hour_{of,visit}$$",
+            "activity",
+            "$$visitor_{id}$$",
+            "mode",
+            "$$replacement_{values}$$"
+        ]
+    },
+    {
+        "id": "a1155e4row7_p1d-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Filling in the Blank for Replacement",
+        "text": "Consider what needs to be replaced in the $$`portal_{traffic}`$$ DataFrame. Which column's missing values are we trying to fill?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row7_p1d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$hour_{of,visit}$$"
+        ],
+        "dependencies": [
+            "a1155e4row7_p1d-h3"
+        ],
+        "title": "Identifying the Column to Replace",
+        "text": "Which column's missing values are being replaced with the mode values?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$hour_{of,visit}$$",
+            "activity",
+            "$$visitor_{id}$$",
+            "mode",
+            "$$replacement_{values}$$"
+        ]
+    }
+]

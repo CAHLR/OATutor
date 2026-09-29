@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3cc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logistic Regression",
+        "text": "Logistic regression is used for binary classification problems. It predicts the probability that a given input point belongs to a certain class. In this case, it predicts whether a reply is from a bot or a human.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3cc-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3cc-h1"
+        ],
+        "title": "Nonlinear Function",
+        "text": "The logistic function, which is used in logistic regression, is a nonlinear function. It maps any real-valued number into the $$(0,1)$$ interval, making it suitable for probability predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3cc-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3cc-h2"
+        ],
+        "title": "Model Predictions",
+        "text": "Consider how logistic regression transforms input features into probabilities. Is this transformation linear or nonlinear?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a9edaf5ds100-su25-final-Q2df-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "Gradient descent is an iterative optimization algorithm used to find the minimum of a function. It updates parameters in the opposite direction of the gradient of the function with respect to the parameters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su25-final-Q2df-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-su25-final-Q2df-h1"
+        ],
+        "title": "Convergence of Gradient Descent",
+        "text": "For gradient descent to converge to a global minimum, certain conditions must be met. Consider the nature of the function being optimized and the learning rate used.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su25-final-Q2df-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A fixed learning rate can lead to convergence issues if not chosen appropriately."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su25-final-Q2df-h2"
+        ],
+        "title": "Exploring Learning Rate",
+        "text": "What effect does a fixed learning rate have on the convergence of gradient descent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A fixed learning rate can lead to convergence issues if not chosen appropriately.",
+            "It always leads to faster convergence",
+            "It ensures convergence",
+            "It has no effect on convergence",
+            "It may cause oscillations or divergence"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-su25-final-Q2df-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Gradient descent may converge to a local minimum depending on the function's landscape."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su25-final-Q2df-h2"
+        ],
+        "title": "Global vs. Local Minimum",
+        "text": "Does gradient descent always find the global minimum?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Gradient descent may converge to a local minimum depending on the function's landscape.",
+            "No, it depends on the function",
+            "Only if the function is convex",
+            "Only with a variable learning rate",
+            "Yes, always"
+        ]
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3ch-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding True Positive Rate",
+        "text": "The true positive rate (TPR) is the proportion of actual positives that are correctly identified. Think about how changing the classification threshold might affect the number of true positives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3ch-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3ch-h1"
+        ],
+        "title": "Effect of Lowering the Threshold",
+        "text": "Lowering the classification threshold means that the model will classify more instances as positive. Consider how this might impact the true positive rate and false positive rate.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3ch-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It increases"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3ch-h2"
+        ],
+        "title": "Threshold and True Positives",
+        "text": "If the threshold is reduced, what happens to the number of true positives?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It increases",
+            "It decreases",
+            "It stays the same"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3ch-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It increases"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3ch-h3"
+        ],
+        "title": "Threshold and False Positives",
+        "text": "What is the effect of lowering the threshold on the number of false positives?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It increases",
+            "It decreases",
+            "It stays the same"
+        ]
+    }
+]

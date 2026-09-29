@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a1155e4row9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Missing Data",
+        "text": "When dealing with missing data, it's important to consider how the missing values might affect your analysis. Think about whether the missing dates are random or if there's a pattern.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row9a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Options for Handling Missing Data",
+        "text": "Consider the different methods for handling missing data: dropping rows, imputing values, or using interpolation. Each method has its pros and cons depending on the context.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row9a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Interpolation can estimate missing values based on surrounding data points, maintaining the chronological order."
+        ],
+        "dependencies": [
+            "a1155e4row9a-h2"
+        ],
+        "title": "Evaluating Interpolation",
+        "text": "Why might interpolation be a good choice for handling missing dates in a chronological dataset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Interpolation can estimate missing values based on surrounding data points, maintaining the chronological order.",
+            "It deletes missing entries.",
+            "It maintains the chronological order.",
+            "It randomly assigns dates.",
+            "It uses the most common date."
+        ]
+    },
+    {
+        "id": "a1155e4row9a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Dropping rows can lead to loss of valuable data and potential bias."
+        ],
+        "dependencies": [
+            "a1155e4row9a-h2"
+        ],
+        "title": "Considering Other Options",
+        "text": "What could be a downside of simply dropping rows with missing dates?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Dropping rows can lead to loss of valuable data and potential bias.",
+            "Improved data quality.",
+            "Increased data accuracy.",
+            "Loss of valuable data.",
+            "No effect on analysis."
+        ]
+    }
+]

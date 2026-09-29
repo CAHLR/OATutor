@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a89b247ds100-sp24-final-Q6h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Risk",
+        "text": "Model risk is the sum of model variance and observational variance. Can you calculate the model risk for the new model using the given variances?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp24-final-Q6h-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Adding Features",
+        "text": "Adding more features to a model can increase its complexity. How might this affect the model variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp24-final-Q6h-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$18$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp24-final-Q6h-h1"
+        ],
+        "title": "Calculate New Model Risk",
+        "text": "Given the model variance of $$15$$ and observational variance of $$3$$, what is the new model risk?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$18$$",
+            "$$15$$",
+            "$$18$$",
+            "$$20$$",
+            "$$22$$"
+        ]
+    },
+    {
+        "id": "a89b247ds100-sp24-final-Q6h-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$15$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp24-final-Q6h-h2"
+        ],
+        "title": "Impact on Model Variance",
+        "text": "If adding features increases model variance, which of the following could be a reasonable new model variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$8$$",
+            "$$10$$",
+            "$$15$$",
+            "$$20$$"
+        ]
+    }
+]

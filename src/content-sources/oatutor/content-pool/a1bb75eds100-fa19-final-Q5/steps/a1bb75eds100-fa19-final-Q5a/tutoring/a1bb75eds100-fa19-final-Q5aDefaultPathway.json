@@ -1,0 +1,105 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-final-Q5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Entropy Loss",
+        "text": "Cross-entropy loss measures the difference between the true labels and the predicted probabilities. It is calculated using the formula: $$-\\sum y \\ln\\left(p\\right)+\\left(1-y\\right) \\ln\\left(1-p\\right)$$, where $$y$$ is the true label and $$p$$ is the predicted probability.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5a-h1"
+        ],
+        "title": "Applying the Formula",
+        "text": "For each data point, calculate the loss using the formula: $$-y \\ln\\left(p\\right)-\\left(1-y\\right) \\ln\\left(1-p\\right)$$. Remember to apply this to each pair of true label and predicted probability.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-\\ln\\left(0.9\\right)$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5a-h2"
+        ],
+        "title": "Calculate for Each Pair",
+        "text": "What is the cross-entropy loss for the first pair $$(y=0$$, $$p=0.1)$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-\\ln\\left(0.1\\right)$$",
+            "$$-\\ln\\left(0.9\\right)$$",
+            "$$\\ln\\left(0.1\\right)$$",
+            "$$\\ln\\left(0.9\\right)$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-\\ln\\left(0.4\\right)$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5a-h2"
+        ],
+        "title": "Calculate for Each Pair",
+        "text": "What is the cross-entropy loss for the second pair $$(y=0$$, $$p=0.6)$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-\\ln\\left(0.6\\right)$$",
+            "$$-\\ln\\left(0.4\\right)$$",
+            "$$\\ln\\left(0.6\\right)$$",
+            "$$\\ln\\left(0.4\\right)$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-\\ln\\left(0.9\\right)$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5a-h2"
+        ],
+        "title": "Calculate for Each Pair",
+        "text": "What is the cross-entropy loss for the third pair $$(y=1$$, $$p=0.9)$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-\\ln\\left(0.1\\right)$$",
+            "$$-\\ln\\left(0.9\\right)$$",
+            "$$\\ln\\left(0.1\\right)$$",
+            "$$\\ln\\left(0.9\\right)$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5a-h5"
+        ],
+        "title": "Summing Up the Losses",
+        "text": "Once you have calculated the cross-entropy loss for each pair, sum them up to get the total cross-entropy loss.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

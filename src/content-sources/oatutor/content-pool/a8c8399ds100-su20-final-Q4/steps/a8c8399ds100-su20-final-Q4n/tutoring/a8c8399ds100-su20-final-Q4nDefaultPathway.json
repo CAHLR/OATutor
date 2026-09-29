@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a8c8399ds100-su20-final-Q4n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Models",
+        "text": "The first equation represents the un-regularized linear regression model using the original design matrix. The second equation uses the mean-centered design matrix. Consider how centering affects the intercept term.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4n-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-su20-final-Q4n-h1"
+        ],
+        "title": "Effect of Lambda on Predictions",
+        "text": "As lambda approaches $$\\infty$$, the regularization term dominates the cost function. Think about what happens to the coefficients in this scenario.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4n-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su20-final-Q4n-h2"
+        ],
+        "title": "Choosing the Correct Prediction",
+        "text": "What happens to the coefficients when the regularization term becomes very large?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "the mean of the true $$y$$ values",
+            "$$\\frac{1}{\\lambda}$$",
+            "$$p+1$$",
+            "Impossible to tell"
+        ]
+    }
+]

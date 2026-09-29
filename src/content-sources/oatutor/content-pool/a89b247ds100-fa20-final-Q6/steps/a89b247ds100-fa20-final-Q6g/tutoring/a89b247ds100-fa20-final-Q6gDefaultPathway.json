@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a89b247ds100-fa20-final-Q6g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Pruning",
+        "text": "Pruning a decision tree involves removing branches that have little importance. Think about how this might affect the overall structure of the tree.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa20-final-Q6g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa20-final-Q6g-h1"
+        ],
+        "title": "Complexity and Pruning",
+        "text": "Consider how the complexity of a decision tree is related to the number of branches it has. What happens to the complexity when you remove some branches?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa20-final-Q6g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decreases it"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa20-final-Q6g-h2"
+        ],
+        "title": "Effect of Pruning on Complexity",
+        "text": "When you prune a decision tree, does it:",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increases it",
+            "Decreases it",
+            "Depends on the splitting rule"
+        ]
+    }
+]

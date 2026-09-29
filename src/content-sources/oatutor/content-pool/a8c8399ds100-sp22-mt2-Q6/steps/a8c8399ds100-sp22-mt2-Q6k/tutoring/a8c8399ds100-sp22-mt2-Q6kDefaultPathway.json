@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Dataset",
+        "text": "Look at the columns in the dataset. Each row represents a student's lunch, including the foods they ate, the servings, and the total calories. This information will help you understand what each part of the code is doing.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-sp22-mt2-Q6k-h1"
+        ],
+        "title": "Identifying the Target Variable",
+        "text": "The target variable in this context is what you want to predict or analyze. In this dataset, think about which column represents the outcome of interest related to the students' diet.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6k-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "calories"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp22-mt2-Q6k-h2"
+        ],
+        "title": "Choosing the Target Column",
+        "text": "Which column in the dataset represents the total calories consumed by each student?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "calories",
+            "\"calories_1d_ago\"",
+            "\"calories_2d_ago\"",
+            "$$[\"calories_1*d_ago\" \"calories_2*d_ago\"]$$",
+            "person"
+        ]
+    }
+]

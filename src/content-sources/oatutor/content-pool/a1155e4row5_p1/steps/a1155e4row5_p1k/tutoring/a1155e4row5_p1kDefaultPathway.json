@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a1155e4row5_p1k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Boxplots",
+        "text": "A boxplot displays the distribution of data based on a five-number summary: minimum, first quartile (Q1), median, third quartile (Q3), and maximum. The box represents the interquartile range (IQR), which contains the middle 50% of the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p1k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row5_p1k-h1"
+        ],
+        "title": "Comparing Medians",
+        "text": "Look at the median lines in the boxplot for both Tutors and TAs. The median represents the middle value of the data set. Which role has a higher median number of OH tickets resolved?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p1k-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row5_p1k-h2"
+        ],
+        "title": "Interpreting the Boxplot",
+        "text": "Notice the position of the boxes and whiskers for Tutors and TAs. The position of these elements can help you understand the spread and central tendency of the data for each role.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p1k-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TA"
+        ],
+        "dependencies": [
+            "a1155e4row5_p1k-h3"
+        ],
+        "title": "Analyzing the Third Quartile",
+        "text": "Which role has a higher third quartile (Q3) value in the boxplot?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Tutor",
+            "TA"
+        ]
+    },
+    {
+        "id": "a1155e4row5_p1k-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1155e4row5_p1k-h4"
+        ],
+        "title": "Understanding the Statement",
+        "text": "Based on the boxplot, is it true that about 75% of TAs resolved more OH tickets than about 75% of Tutors?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

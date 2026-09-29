@@ -1,0 +1,35 @@
+[
+    {
+        "id": "a1155e4row8c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Box Plots",
+        "text": "A box plot is useful for visualizing the distribution of a dataset. It shows the median, quartiles, and potential outliers. Consider how this might apply to the prices of the drinks.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row8c-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Box plot"
+        ],
+        "dependencies": [
+            "a1155e4row8c-h1"
+        ],
+        "title": "Identifying Suitable Visualizations",
+        "text": "Which of the following visualizations can effectively display the distribution of numerical data like price?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Box plot",
+            "Bar chart",
+            "Pie chart",
+            "Line graph"
+        ]
+    }
+]

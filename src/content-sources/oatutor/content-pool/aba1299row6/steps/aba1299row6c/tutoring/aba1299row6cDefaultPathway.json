@@ -1,0 +1,45 @@
+[
+    {
+        "id": "aba1299row6c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Confidence Intervals",
+        "text": "A confidence interval gives a range of values that is likely to contain the true parameter value. If a confidence interval for a parameter includes $$0$$, it suggests that $$0$$ is a plausible value for that parameter, but it doesn't confirm it as the true value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Bootstrap Sampling",
+        "text": "Bootstrap sampling involves repeatedly drawing samples from a dataset with replacement. This method helps estimate the distribution of a statistic, such as a parameter estimate, by simulating many possible samples.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It suggests that $$0$$ is a plausible value for the parameter, but it does not confirm it as the true value."
+        ],
+        "dependencies": [
+            "aba1299row6c-h1"
+        ],
+        "title": "Interpreting the Confidence Interval",
+        "text": "If the 95% confidence interval of a parameter estimate includes $$0$$, what does it imply about the null hypothesis that the parameter is 0?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It confirms the parameter is $$0$$.",
+            "It proves the parameter is not $$0$$.",
+            "It suggests $$0$$ is a plausible value.",
+            "It suggests that $$0$$ is a plausible value for the parameter, but it does not confirm it as the true value."
+        ]
+    }
+]

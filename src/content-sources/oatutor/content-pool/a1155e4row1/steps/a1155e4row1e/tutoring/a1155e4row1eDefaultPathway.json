@@ -1,0 +1,33 @@
+[
+    {
+        "id": "a1155e4row1e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Hexplot",
+        "text": "A hexplot is useful for visualizing the relationship between two quantitative variables. It shows the density of data points in hexagonal bins, which can help identify patterns or correlations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row1e-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1155e4row1e-h1"
+        ],
+        "title": "Choosing the Right Plot",
+        "text": "Consider whether a hexplot is suitable for showing the relationship between temperature and workout time. Is it appropriate for visualizing two quantitative variables?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

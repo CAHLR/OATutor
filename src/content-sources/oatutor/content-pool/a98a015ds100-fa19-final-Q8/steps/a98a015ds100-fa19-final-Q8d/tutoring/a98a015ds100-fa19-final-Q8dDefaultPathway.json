@@ -1,0 +1,33 @@
+[
+    {
+        "id": "a98a015ds100-fa19-final-Q8d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA Components",
+        "text": "Think about what PCA does. It transforms the original data into a new set of variables. These new variables are called principal components. What do you think these components are derived from?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-final-Q8d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "columns"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa19-final-Q8d-h1"
+        ],
+        "title": "Identifying the Source",
+        "text": "When we perform PCA, we are transforming the data. Are we transforming the rows or the columns of the data matrix?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "rows",
+            "columns"
+        ]
+    }
+]

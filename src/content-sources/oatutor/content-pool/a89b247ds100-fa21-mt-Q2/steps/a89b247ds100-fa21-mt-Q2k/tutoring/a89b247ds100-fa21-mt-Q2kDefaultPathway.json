@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a89b247ds100-fa21-mt-Q2k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Overfitting",
+        "text": "Overfitting occurs when a model learns the training data too well, including its noise and outliers, which can lead to poor performance on new data. Think about how reducing complexity might help.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2k-h1"
+        ],
+        "title": "Reducing Model Complexity",
+        "text": "One way to reduce overfitting is by simplifying the model. Consider how removing some features might affect the model's ability to generalize.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2k-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2k-h2"
+        ],
+        "title": "Feature Selection",
+        "text": "Which of the following strategies could help reduce overfitting by simplifying the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Add more features",
+            "Increase the model complexity",
+            "Remove some demographic features",
+            "TRUE",
+            "Use all available data"
+        ]
+    }
+]

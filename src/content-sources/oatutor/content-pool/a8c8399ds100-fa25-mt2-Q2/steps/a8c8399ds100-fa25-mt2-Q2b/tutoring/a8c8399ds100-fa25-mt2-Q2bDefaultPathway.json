@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Span",
+        "text": "Think about what it means for a vector to be \"in the span of\" a matrix. If a vector is in the span of a matrix, it can be expressed as a linear combination of the columns of that matrix. Consider how the vector of ones might relate to the columns of the design matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q2b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "NOT orthogonal to and NOT in the span of"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa25-mt2-Q2b-h1"
+        ],
+        "title": "Exploring Orthogonality",
+        "text": "Consider the relationship between the vector of ones and the columns of the design matrix. Is it possible for the vector of ones to be orthogonal to any of the columns of the design matrix?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Orthogonal to",
+            "In the span of",
+            "NOT orthogonal to and NOT in the span of"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q2b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-fa25-mt2-Q2b-h2"
+        ],
+        "title": "Linear Combinations",
+        "text": "A linear combination involves multiplying each column of the matrix by a scalar and summing the results. Can you express the vector of ones as such a combination using the columns of the design matrix?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q2b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "In the span of"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa25-mt2-Q2b-h3"
+        ],
+        "title": "Checking the Span",
+        "text": "If the vector of ones is in the span of the design matrix, it can be written as a linear combination of its columns. Which option best describes this relationship?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Orthogonal to",
+            "In the span of",
+            "NOT orthogonal to and NOT in the span of"
+        ]
+    }
+]

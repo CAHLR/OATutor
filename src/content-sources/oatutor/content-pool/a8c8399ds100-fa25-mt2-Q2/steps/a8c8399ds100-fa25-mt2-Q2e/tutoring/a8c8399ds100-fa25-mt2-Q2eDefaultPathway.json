@@ -1,0 +1,42 @@
+[
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q2e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Orthogonality",
+        "text": "When we say two vectors are orthogonal, it means their dot product is zero. Think about what this implies for the relationship between the residuals $$(Y-hatY)$$ and the predictions (hatY).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q2e-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring the Residuals",
+        "text": "The residuals, Y-hatY, represent the difference between the actual outcomes and the predicted outcomes. Consider how these residuals relate to the space spanned by the columns of the design matrix X.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q2e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Orthogonal to"
+        ],
+        "dependencies": [],
+        "title": "Checking Orthogonality",
+        "text": "What does it mean for Y-hatY to be orthogonal to hatY?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Orthogonal to",
+            "In the span of",
+            "NOT orthogonal to and NOT in the span of"
+        ]
+    }
+]

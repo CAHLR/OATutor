@@ -1,0 +1,68 @@
+[
+    {
+        "id": "aba1299row1_part3d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE on Test Data",
+        "text": "When you add a new feature, especially a transformation like a square of an existing feature, it can affect the model's ability to generalize. Consider how this might lead to overfitting or underfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1_part3d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "aba1299row1_part3d-h1"
+        ],
+        "title": "Effect of Adding Features",
+        "text": "What happens to the model's complexity when you add a new feature?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "No Change"
+        ]
+    },
+    {
+        "id": "aba1299row1_part3d-h3",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row1_part3d-h2"
+        ],
+        "title": "Model Complexity and Test MSE",
+        "text": "Increasing model complexity can lead to overfitting, where the model performs well on training data but poorly on test data. Think about how this affects the MSE on held-out test data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1_part3d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase and Decrease"
+        ],
+        "dependencies": [
+            "aba1299row1_part3d-h3"
+        ],
+        "title": "Possible Effects on Test MSE",
+        "text": "Given that adding a feature can increase complexity, what are the possible effects on the MSE on held-out test data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Increase and Decrease"
+        ]
+    }
+]

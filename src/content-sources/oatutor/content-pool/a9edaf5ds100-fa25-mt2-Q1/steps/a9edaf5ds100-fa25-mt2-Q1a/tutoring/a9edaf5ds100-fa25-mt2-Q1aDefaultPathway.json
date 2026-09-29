@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a9edaf5ds100-fa25-mt2-Q1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross Validation",
+        "text": "In 8-fold cross-validation, the dataset is divided into $$8$$ parts. For each fold, one part is used as the validation set, and the remaining $$7$$ parts are used for training. This process is repeated $$8$$ times, each time with a different part as the validation set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa25-mt2-Q1a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Hyperparameter Tuning",
+        "text": "When tuning a hyperparameter, you test multiple values to find the best one. In this case, you are testing $$11$$ different values of the hyperparameter.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa25-mt2-Q1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$8\\times11$$"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa25-mt2-Q1a-h1"
+        ],
+        "title": "Calculating Total Models",
+        "text": "Consider how many models are fit for each fold and how many hyperparameter values are tested. What is the total number of models?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$8\\times11$$",
+            "$$3+1\\times1\\times11$$",
+            "$$3+1\\times8-1\\times11$$",
+            "$$3+1\\times8\\times11$$",
+            "$$8-1\\times11$$"
+        ]
+    }
+]

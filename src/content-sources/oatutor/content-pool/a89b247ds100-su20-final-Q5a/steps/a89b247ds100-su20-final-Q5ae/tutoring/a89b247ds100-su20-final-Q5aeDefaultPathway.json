@@ -1,0 +1,33 @@
+[
+    {
+        "id": "a89b247ds100-su20-final-Q5ae-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the True Model",
+        "text": "Think about what the true model represents in the context of the data generation process. How does the parameter $$\\theta_{star}$$ relate to the design matrix X and the response vector Y?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su20-final-Q5ae-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a89b247ds100-su20-final-Q5ae-h1"
+        ],
+        "title": "Exploring the Role of $$\\theta_{star}$$",
+        "text": "Consider the role of $$\\theta_{star}$$ in the equation $$Y_i=\\operatorname{f_{\\theta,star}}\\left(X_i\\right)+\\epsilon_i$$. Is $$\\theta_{star}$$ a parameter that changes with each observation, or is it a fixed parameter for the entire dataset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

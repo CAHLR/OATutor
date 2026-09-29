@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6q-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Confidence Intervals",
+        "text": "A confidence interval gives a range of values that is likely to contain the true parameter value. A 95% confidence interval means we are 95% confident that the true parameter lies within this range.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6q-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-sp22-mt2-Q6q-h1"
+        ],
+        "title": "Interpreting Confidence Intervals",
+        "text": "If a confidence interval for a parameter includes zero, it suggests that the parameter might not have a significant effect. Consider what this means for the intervals given for \\( $$\\theta_1$$ \\) and \\( $$\\theta_2$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6q-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp22-mt2-Q6q-h1"
+        ],
+        "title": "Evaluating \\( $$\\theta_0$$ \\)",
+        "text": "Does the confidence interval for \\( $$\\theta_0$$ \\) suggest a significant effect?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6q-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp22-mt2-Q6q-h2"
+        ],
+        "title": "Evaluating \\( $$\\theta_1$$ \\)",
+        "text": "Does the confidence interval for \\( $$\\theta_1$$ \\) include zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6q-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp22-mt2-Q6q-h2"
+        ],
+        "title": "Evaluating \\( $$\\theta_2$$ \\)",
+        "text": "Does the confidence interval for \\( $$\\theta_2$$ \\) include zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

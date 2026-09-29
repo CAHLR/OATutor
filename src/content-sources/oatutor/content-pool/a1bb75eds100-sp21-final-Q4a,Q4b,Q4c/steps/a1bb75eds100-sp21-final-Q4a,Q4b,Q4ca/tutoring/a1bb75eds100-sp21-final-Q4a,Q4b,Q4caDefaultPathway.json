@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4ca-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Feature Encoding",
+        "text": "Think about what it means to encode a feature. When we encode a feature, we often transform it into a form that can be more easily used by a model. Consider how you might represent different times of the day numerically.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4ca-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q4a,Q4b,Q4ca-h1"
+        ],
+        "title": "Exploring the Code",
+        "text": "The code snippet $$`{time_{of,day}}^2`$$ suggests a mathematical operation. What does squaring a number do to its value? How might this affect the representation of time?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4ca-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q4a,Q4b,Q4ca-h2"
+        ],
+        "title": "Evaluating the Code",
+        "text": "Does squaring the time of day $$(0.0$$ to $$24.0)$$ create a unique encoding for each hour?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

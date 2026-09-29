@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a640c04row4d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Grouping",
+        "text": "To calculate the average weight for each chain, you need to group the data by the 'chain' column. This will allow you to perform operations like mean on each group separately.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row4d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            ".groupby(\"chain\")"
+        ],
+        "dependencies": [
+            "a640c04row4d-h1"
+        ],
+        "title": "Choosing the Correct Grouping Method",
+        "text": "Which method would you use to group the data by the 'chain' column?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            ".groupby(\"chain\")",
+            ".groupby([\"chain\"])",
+            ".groupby(\"shape\")",
+            ".groupby(chain)",
+            ".group\\_by(\"chain\")"
+        ]
+    }
+]

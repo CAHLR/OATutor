@@ -1,0 +1,45 @@
+[
+    {
+        "id": "aea05a2ds100-sp18-final-Q15b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Star Schemas",
+        "text": "Think about how star schemas organize data. They often centralize data in a way that reduces redundancy. How might this help with update errors?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp18-final-Q15b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp18-final-Q15b-h1"
+        ],
+        "title": "Evaluating Data Duplication",
+        "text": "Consider the role of data duplication in update errors. If data is duplicated across multiple tables, what happens when an update is made?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "aea05a2ds100-sp18-final-Q15b-h3",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-sp18-final-Q15b-h2"
+        ],
+        "title": "Centralized Data",
+        "text": "In a star schema, data is often centralized in a fact table. How does this centralization affect the need to update data in multiple places?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a89b247ds100-fa20-final-Q6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias-Variance Decomposition",
+        "text": "The bias-variance decomposition helps us understand the error in our model predictions. It breaks down the error into three components: the variance of the noise, the bias of the model, and the variance of the model. Can you identify which part of this decomposition is affected by the choice of model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa20-final-Q6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa20-final-Q6a-h1"
+        ],
+        "title": "Linear Models and Squared Loss",
+        "text": "Consider how linear models are structured. They aim to fit a line through the data points. When using squared loss, the model tries to minimize the squared differences between the predicted and actual values. How might this relate to the bias and variance in the decomposition?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa20-final-Q6a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa20-final-Q6a-h2"
+        ],
+        "title": "Does the Decomposition Hold?",
+        "text": "Think about the properties of linear models and squared loss. Does the bias-variance decomposition apply to them?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

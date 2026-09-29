@@ -1,0 +1,45 @@
+[
+    {
+        "id": "abf3684ds100-sp25-final-Q2q-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Learning Rate",
+        "text": "The learning rate in gradient descent determines the size of the steps we take towards the minimum. If the learning rate is too small, convergence is slow. If it's too large, we might overshoot the minimum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2q-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2q-h1"
+        ],
+        "title": "Effect of Increasing Learning Rate",
+        "text": "Increasing the learning rate can lead to faster convergence, but it can also cause the algorithm to overshoot the minimum and potentially diverge. Consider how this might affect the path shown in the plot.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2q-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2q-h2"
+        ],
+        "title": "Analyzing the Plot",
+        "text": "What happens to the gradient descent path if the learning rate is increased significantly?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

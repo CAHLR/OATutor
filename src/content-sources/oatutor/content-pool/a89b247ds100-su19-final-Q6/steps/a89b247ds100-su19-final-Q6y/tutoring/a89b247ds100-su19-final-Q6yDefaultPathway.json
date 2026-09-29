@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a89b247ds100-su19-final-Q6y-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variance",
+        "text": "Variance in a model refers to how much the model's predictions would change if we used a different training dataset. More data can help stabilize these predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6y-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6y-h1"
+        ],
+        "title": "Effect of More Data",
+        "text": "When you collect more data, you provide the model with more information. This can help the model generalize better to new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6y-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "decrease"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6y-h2"
+        ],
+        "title": "Impact on Variance",
+        "text": "Does collecting more data typically increase or decrease the variance of a model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "increase",
+            "decrease"
+        ]
+    }
+]

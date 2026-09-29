@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-final-Q6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Logistic Regression Model",
+        "text": "In logistic regression, the decision boundary is a linear equation. Given the coefficients \\( \\hat{\\beta}_1 \\) and \\( \\hat{\\beta}_2 \\), can you express the decision boundary equation in terms of \\( $$x_1$$ \\) and \\( $$x_2$$ \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q6a-h1"
+        ],
+        "title": "Using the Sigmoid Function",
+        "text": "The sigmoid function \\( \\sigma(z) \\) is defined as \\( \\frac{1}{1+e**{-z}} \\). If \\( \\sigma(\\log(3))=0.75 \\), what does this tell you about the value of \\( $$z$$ \\) when the threshold is $$0.75$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q6a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{-2}{3}$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q6a-h2"
+        ],
+        "title": "Finding the Slope \\( $$m$$ \\)",
+        "text": "Given the equation \\( $$x_2=m x_1+b$$ \\), and knowing that the decision boundary is where the probability is $$0.75$$, what is the slope \\( $$m$$ \\) if \\( \\hat{\\beta}_1=2 \\) and \\( \\hat{\\beta}_2=3 \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{2}{3}$$",
+            "$$\\frac{-2}{3}$$",
+            "$$\\frac{-3}{2}$$",
+            "$$\\frac{3}{2}$$",
+            "-log{3}/3"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q6a-h3"
+        ],
+        "title": "Interpreting the Threshold",
+        "text": "The threshold \\( $$T=0.75$$ \\) indicates the point where the logistic function outputs $$0.75$$. How does this relate to the decision boundary equation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

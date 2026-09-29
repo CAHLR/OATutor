@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a98a015ds100-su19-final-Q2bf-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It projects data onto new axes, called principal components, which are linear combinations of the original variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su19-final-Q2bf-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting Scatter Plots",
+        "text": "Look at the scatter plot on the left. Notice the relationship between the variables. How does the pattern of points relate to the principal components?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su19-final-Q2bf-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "pc1"
+        ],
+        "dependencies": [],
+        "title": "Choosing the Correct Axis Label",
+        "text": "Which principal component is likely to represent the horizontal axis in the scatter plot (g.i)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "pc1",
+            "pc2",
+            "Neither"
+        ]
+    },
+    {
+        "id": "a98a015ds100-su19-final-Q2bf-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "pc2"
+        ],
+        "dependencies": [],
+        "title": "Analyzing the Point Plot",
+        "text": "For the point plot (e.i), which principal component is likely to represent the vertical axis?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "pc1",
+            "pc2",
+            "Neither"
+        ]
+    },
+    {
+        "id": "a98a015ds100-su19-final-Q2bf-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "pc1"
+        ],
+        "dependencies": [],
+        "title": "Understanding the KDE Plot",
+        "text": "In the KDE plot (a), which principal component is likely to be represented?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "pc1",
+            "pc2",
+            "Neither"
+        ]
+    }
+]

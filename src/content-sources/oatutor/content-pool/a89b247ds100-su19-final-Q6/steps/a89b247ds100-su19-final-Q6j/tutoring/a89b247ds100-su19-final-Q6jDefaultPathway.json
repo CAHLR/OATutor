@@ -1,0 +1,79 @@
+[
+    {
+        "id": "a89b247ds100-su19-final-Q6j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "In the context of one-hot encoding, each type of meat (beef, chicken, fish) is represented by a separate binary variable. For example, if the meat is beef, then $$meat=beef$$ is $$1$$, and the others are $$0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6j-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting the Box Plot",
+        "text": "Look at the box plot for the total cost associated with each type of meat. Which type of meat tends to have the highest total cost?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "fish"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6j-h2"
+        ],
+        "title": "Analyzing the Box Plot",
+        "text": "Based on the box plot, which type of meat has the highest median total cost?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "beef",
+            "chicken",
+            "fish"
+        ]
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6j-h4",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6j-h3"
+        ],
+        "title": "Understanding Model Weights",
+        "text": "The weight $$\\theta_3$$ corresponds to the $$meat=fish$$ variable. Consider how the total cost changes when fish is the meat type compared to others.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6j-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Positive"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6j-h4"
+        ],
+        "title": "Determining the Sign of $$\\theta_3$$",
+        "text": "Given that fish has the highest median total cost, what can you infer about the sign of $$\\theta_3$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Positive",
+            "Negative",
+            "Exactly $$0$$",
+            "Not enough info"
+        ]
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "id": "abf3684ds100-sp25-final-Q2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Independence",
+        "text": "Linear independence means that no column in the design matrix can be written as a combination of the others. Why do you think this property is important for the uniqueness of the OLS solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2a-h1"
+        ],
+        "title": "OLS Solution Uniqueness",
+        "text": "Consider what happens when the columns of the design matrix are linearly dependent. How might this affect the ability to find a unique solution for the parameters?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$non-zero$$"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2a-h2"
+        ],
+        "title": "Checking Linear Independence",
+        "text": "If the columns of the design matrix are linearly independent, what can we say about the determinant of the matrix?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "zero",
+            "$$non-zero$$",
+            "undefined"
+        ]
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "less than"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2a-h3"
+        ],
+        "title": "Implications of Linear Dependence",
+        "text": "If the columns of the design matrix are linearly dependent, what happens to the rank of the matrix compared to the number of parameters?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "equal to",
+            "less than",
+            "greater than"
+        ]
+    }
+]

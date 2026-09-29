@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Codons",
+        "text": "Remember that a codon is a sequence of $$3$$ DNA letters. Since each letter can be one of T, G, C, or A, how many different combinations can you form with $$3$$ letters?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-fa21-mt-Q1c-h1"
+        ],
+        "title": "Calculating Codon Combinations",
+        "text": "To find the number of possible codons, consider that each position in the codon can be filled by one of $$4$$ letters. How would you calculate the total number of combinations for $$3$$ positions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$64$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa21-mt-Q1c-h2"
+        ],
+        "title": "One-Hot Encoding Codons",
+        "text": "If you one-hot encode each codon, how many dimensions will you have for each codon?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$4$$",
+            "$$64$$",
+            "$$12$$",
+            "$$20$$"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-fa21-mt-Q1c-h3"
+        ],
+        "title": "Total Dimensions for DNA String",
+        "text": "Once you know the number of dimensions for one codon, think about how many codons are in a DNA string of $$3000$$ letters. How would you calculate the total number of dimensions for the entire string?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$64000$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa21-mt-Q1c-h4"
+        ],
+        "title": "Calculating Total Dimensions",
+        "text": "If each codon has $$64$$ dimensions and there are $$1000$$ codons in a DNA string, what is the total number of dimensions for the string?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$64000$$",
+            "$$2048000$$",
+            "$$3000$$",
+            "$$1000$$"
+        ]
+    }
+]

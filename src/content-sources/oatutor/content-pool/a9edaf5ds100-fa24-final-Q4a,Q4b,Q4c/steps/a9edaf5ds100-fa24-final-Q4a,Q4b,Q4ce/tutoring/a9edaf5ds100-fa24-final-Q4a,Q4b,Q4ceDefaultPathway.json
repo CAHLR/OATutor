@@ -1,0 +1,43 @@
+[
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4ce-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding transforms categorical variables into a form that could be provided to ML algorithms to do a better job in prediction. Each category is converted into a new binary column. For example, if you have a 'weather' column with 'sunny', 'cloudy', and 'rainy', each will become a separate column with 0s and 1s indicating the presence of that category.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4ce-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect on Model Bias",
+        "text": "Adding a new feature to a model can affect its bias and variance. Consider how adding a one-hot encoded feature might change the model's ability to fit the training data. Does it make the model more flexible or more constrained?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4ce-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4ce-h2"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "What happens to the model's bias when you add a new feature?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

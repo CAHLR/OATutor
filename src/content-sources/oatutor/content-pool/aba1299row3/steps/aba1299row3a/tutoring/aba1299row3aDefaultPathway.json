@@ -1,0 +1,64 @@
+[
+    {
+        "id": "aba1299row3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Zero Correlation",
+        "text": "A correlation of zero between two variables means there is no linear relationship between them. This doesn't necessarily mean there is no relationship at all, just that it isn't linear.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row3a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting the Scatterplot",
+        "text": "If the correlation is zero, the scatterplot of the data points will not show any clear pattern or trend. The points will appear randomly scattered.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row3a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "If Michael fits $$y_{hat}=\\theta_0+\\theta_1 temperature$$ using squared loss, the optimal $$\\theta_1$$ will always be unique and equal to $$0$$."
+        ],
+        "dependencies": [],
+        "title": "Analyzing the Regression Coefficient",
+        "text": "What happens to the coefficient of temperature in a linear regression model when the correlation between temperature and tip is zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "If Michael fits $$y_{hat}=\\theta_0+\\theta_1 temperature$$ using squared loss, the optimal $$\\theta_1$$ will always be unique and equal to $$0$$.",
+            "The coefficient will be negative.",
+            "The coefficient will be positive.",
+            "The coefficient will be zero."
+        ]
+    },
+    {
+        "id": "aba1299row3a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "If Michael fits $$y_{hat}=\\theta_0+\\theta_1 temperature$$ using squared loss, the optimal $$\\theta_1$$ will always be unique and equal to $$0$$."
+        ],
+        "dependencies": [],
+        "title": "Understanding the Regression Line",
+        "text": "If the correlation is zero, what does this imply about the slope of the regression line when predicting tip from temperature?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "If Michael fits $$y_{hat}=\\theta_0+\\theta_1 temperature$$ using squared loss, the optimal $$\\theta_1$$ will always be unique and equal to $$0$$.",
+            "The slope will be negative.",
+            "The slope will be positive.",
+            "The slope will be zero."
+        ]
+    }
+]

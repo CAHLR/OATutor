@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cf-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Separability",
+        "text": "Think about what it means for data to be linearly separable. Can you draw a straight line that separates the two classes in the transformed space?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cf-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cf-h1"
+        ],
+        "title": "Visualizing the Transformation",
+        "text": "Consider how the transformation $$(x_1,x_2)$$ to $$(x_1,{x_2}^2)$$ affects the data points. What happens to the values of $$x_2$$ when they are squared?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cf-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cf-h2"
+        ],
+        "title": "Effect of Squaring on Linear Separability",
+        "text": "When you square a number, it becomes non-negative. How does this affect the distribution of data points along the $$x_2$$ axis?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cf-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cf-h3"
+        ],
+        "title": "Analyzing the Transformation",
+        "text": "After applying the transformation $$(x_1,x_2)$$ to $$(x_1,{x_2}^2)$$, is it possible to separate the data with a straight line?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

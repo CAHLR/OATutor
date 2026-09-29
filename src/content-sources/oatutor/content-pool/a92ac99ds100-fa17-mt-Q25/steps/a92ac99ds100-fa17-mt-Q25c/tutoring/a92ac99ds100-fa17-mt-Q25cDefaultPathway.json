@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a92ac99ds100-fa17-mt-Q25c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Pseudo-Random Number Generators",
+        "text": "Think about why reproducibility is important in simulations. How does controlling the seed help achieve this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-mt-Q25c-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "To verify results and ensure consistency"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-mt-Q25c-h1"
+        ],
+        "title": "Exploring Reproducibility",
+        "text": "Why might it be beneficial to reproduce the exact results of a simulation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "To verify results and ensure consistency",
+            "To introduce randomness",
+            "To make simulations unpredictable"
+        ]
+    },
+    {
+        "id": "a92ac99ds100-fa17-mt-Q25c-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Role of the Seed in Simulations",
+        "text": "Consider how setting a seed affects the sequence of numbers generated. What does this imply for the reproducibility of results?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-mt-Q25c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The sequence remains the same"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-mt-Q25c-h3"
+        ],
+        "title": "Impact of Seed on Randomness",
+        "text": "What happens to the sequence of numbers generated when you use the same seed?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The sequence remains the same",
+            "The sequence changes randomly",
+            "The sequence becomes unpredictable"
+        ]
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Dataframe",
+        "text": "The dataframe shown contains the time spent by visitors at different exhibits. Each column represents a different exhibit, and the values are the time spent in minutes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1h-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Matrix Multiplication",
+        "text": "When you see an expression like X\u03a3, it often involves matrix multiplication. Consider the dimensions of the matrices involved to determine if the multiplication is possible.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The number of columns in X must equal the number of rows in \u03a3."
+        ],
+        "dependencies": [
+            "a98a015ds100-fa19-mt2-Q1h-h2"
+        ],
+        "title": "Checking Dimensions",
+        "text": "What must be true about the dimensions of X and \u03a3 for the multiplication X\u03a3 to be valid?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The number of columns in X must equal the number of rows in \u03a3.",
+            "The number of rows in X must equal the number of columns in \u03a3.",
+            "The number of rows in X must equal the number of rows in \u03a3.",
+            "The number of columns in X must equal the number of columns in \u03a3."
+        ]
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1h-h4",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa19-mt2-Q1h-h1"
+        ],
+        "title": "Interpreting the Expression",
+        "text": "Consider what the expression X\u03a3 represents in the context of PCA. It might relate to transforming the data using principal components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

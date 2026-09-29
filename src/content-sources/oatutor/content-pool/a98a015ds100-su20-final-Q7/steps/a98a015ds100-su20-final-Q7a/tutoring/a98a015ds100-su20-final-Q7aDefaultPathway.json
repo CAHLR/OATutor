@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a98a015ds100-su20-final-Q7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean Nearest Squared Error",
+        "text": "Think about how the mean nearest squared error is calculated. It involves finding the squared distances from each observation to the nearest point on the regression line. How does this differ from the mean squared error, which considers the vertical distance to the line?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-su20-final-Q7a-h1"
+        ],
+        "title": "Comparing Distances",
+        "text": "Consider the difference between the vertical distance and the perpendicular distance from a point to a line. Which one is generally shorter?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q7a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "less than"
+        ],
+        "dependencies": [
+            "a98a015ds100-su20-final-Q7a-h2"
+        ],
+        "title": "Choosing the Correct Comparison",
+        "text": "Based on your understanding of distances, how does the mean nearest squared error compare to the mean squared error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "less than",
+            "equal to",
+            "greater than",
+            "not enough information"
+        ]
+    }
+]

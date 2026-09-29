@@ -1,0 +1,79 @@
+[
+    {
+        "id": "aba1299row10b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Sensitivity to Outliers",
+        "text": "Consider how each error metric, MSE and MAE, responds to large deviations in data points. Which one might amplify the effect of outliers more?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10b-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row10b-h1"
+        ],
+        "title": "Exploring MSE",
+        "text": "Think about how MSE is calculated. It involves squaring the differences between predicted and actual values. How does squaring affect the influence of larger errors?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10b-h3",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row10b-h1"
+        ],
+        "title": "Exploring MAE",
+        "text": "MAE calculates the average of the absolute differences between predicted and actual values. How does taking the absolute value affect the influence of larger errors compared to squaring?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "MSE"
+        ],
+        "dependencies": [
+            "aba1299row10b-h2"
+        ],
+        "title": "Comparing MSE and MAE",
+        "text": "Which error metric is more sensitive to outliers?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "MSE",
+            "MAE"
+        ]
+    },
+    {
+        "id": "aba1299row10b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It increases the impact of larger errors."
+        ],
+        "dependencies": [
+            "aba1299row10b-h2"
+        ],
+        "title": "Impact of Squaring in MSE",
+        "text": "What effect does squaring the differences have on the error metric?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It increases the impact of larger errors.",
+            "It decreases the impact of larger errors.",
+            "It has no effect on the impact of larger errors."
+        ]
+    }
+]

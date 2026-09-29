@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a89b247ds100-su19-final-Q6\u0081-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Ridge Regression",
+        "text": "Ridge regression is a technique used to analyze multiple regression data that suffer from multicollinearity. It adds a penalty equivalent to the square of the magnitude of coefficients to the loss function. This penalty is controlled by the parameter lambda (\u03bb).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6\u0081-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting the Plots",
+        "text": "When looking at plots of training and validation errors, consider how the error changes as lambda (\u03bb) increases. Typically, training error increases with higher \u03bb, while validation error may decrease initially and then increase.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6\u0081-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Plot B"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6\u0081-h2"
+        ],
+        "title": "Identifying Validation Error",
+        "text": "Which plot shows a typical pattern for validation error, where the error decreases initially and then increases as lambda increases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Plot A",
+            "Plot B",
+            "Plot C",
+            "Plot D"
+        ]
+    }
+]

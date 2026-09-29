@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a72a45crow2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Response Bias",
+        "text": "Think about what response bias means. It's related to how the responses you get might not accurately reflect the true preferences of the entire group you're studying. Consider how increasing the sample size or sending reminders might affect this bias.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a72a45crow2b-h1"
+        ],
+        "title": "Impact of Sample Size",
+        "text": "Increasing the sample size from $$100$$ to $$200$$ could potentially give you more responses, but does it necessarily change the nature of the responses you get? Consider if the bias is about the number of responses or the type of responses.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow2b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a72a45crow2b-h2"
+        ],
+        "title": "Effect of Reminder Emails",
+        "text": "Sending a reminder email might encourage more students to respond. Think about whether this affects the bias in the responses or just the number of responses.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow2b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The same as"
+        ],
+        "dependencies": [
+            "a72a45crow2b-h3"
+        ],
+        "title": "Evaluating Changes in Response Bias",
+        "text": "Consider the changes suggested: increasing the sample size and sending reminders. How do these changes affect the likelihood of response bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Larger than",
+            "Smaller than",
+            "The same as",
+            "Impossible to determine",
+            "Exactly half of"
+        ]
+    }
+]

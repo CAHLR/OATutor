@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a98a015ds100-fa20-final-Q10b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Principal Components",
+        "text": "Principal components are directions in the data that maximize variance. PC $$1$$ captures the most variance, while PC $$2$$ captures the next most, orthogonal to PC $$1$$. Think about how these directions relate to the data's spread.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa20-final-Q10b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa20-final-Q10b-h1"
+        ],
+        "title": "Slope of PC $$2$$",
+        "text": "The slope of PC $$2$$ is determined by the direction it points in the data space. Consider how the slope relates to the ratio of the changes in the variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa20-final-Q10b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x_2=\\frac{-3}{2} x_1$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa20-final-Q10b-h2"
+        ],
+        "title": "Identifying the Correct Equation",
+        "text": "Which equation represents a line with a negative slope, indicating a decrease in one variable as the other increases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$x_2=-3x_1$$",
+            "$$x_2=\\frac{1}{3} x_1+5$$",
+            "$$x_2=-4x_1+10$$",
+            "$$x_2=3x_1$$",
+            "$$x_2=\\frac{-3}{2} x_1$$"
+        ]
+    }
+]

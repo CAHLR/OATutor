@@ -1,0 +1,58 @@
+[
+    {
+        "id": "abf3684ds100-sp25-final-Q2f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Training and Validation Errors",
+        "text": "When the training error increases but the validation error decreases, it often indicates a change in the model's complexity. Consider how the model's ability to generalize to new data might be affected by the number of features used.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2f-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2f-h1"
+        ],
+        "title": "Model Complexity and Variance",
+        "text": "Think about how adding more features to a model can affect its variance. Does it always increase, decrease, or stay the same? How might this relate to the observed changes in training and validation errors?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Variance increases"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2f-h2"
+        ],
+        "title": "Evaluating Variance",
+        "text": "If a model's complexity increases, what typically happens to its variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Variance increases",
+            "Variance decreases",
+            "Variance stays the same"
+        ]
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2f-h4",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2f-h3"
+        ],
+        "title": "Connecting Errors and Variance",
+        "text": "Consider how the relationship between training error, validation error, and variance can help you determine whether the observational variance is lower or higher relative to the previous model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

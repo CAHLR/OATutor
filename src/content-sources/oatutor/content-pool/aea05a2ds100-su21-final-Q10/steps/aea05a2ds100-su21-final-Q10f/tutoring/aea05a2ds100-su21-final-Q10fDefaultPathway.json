@@ -1,0 +1,46 @@
+[
+    {
+        "id": "aea05a2ds100-su21-final-Q10f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Spectral Clustering",
+        "text": "Spectral clustering involves transforming the data into a new space using a matrix that captures the relationships between data points. Can you think of a matrix that represents these relationships?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-su21-final-Q10f-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-su21-final-Q10f-h1"
+        ],
+        "title": "Matrix Types in Clustering",
+        "text": "In clustering, we often use matrices that describe connections or distances between points. Consider which type of matrix might be used to find eigenvalues and eigenvectors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-su21-final-Q10f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Laplacian"
+        ],
+        "dependencies": [
+            "aea05a2ds100-su21-final-Q10f-h2"
+        ],
+        "title": "Choosing the Right Matrix",
+        "text": "Which matrix is used in spectral clustering to find eigenvalues and eigenvectors?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "distance",
+            "adjacency",
+            "Laplacian"
+        ]
+    }
+]

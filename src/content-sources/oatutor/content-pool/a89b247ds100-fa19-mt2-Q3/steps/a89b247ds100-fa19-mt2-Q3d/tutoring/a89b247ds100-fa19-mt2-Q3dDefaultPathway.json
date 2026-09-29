@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a89b247ds100-fa19-mt2-Q3d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "Model variance refers to how much the predictions of a model will change if we use a different training dataset. Consider how the choice of features might affect this variability.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa19-mt2-Q3d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa19-mt2-Q3d-h1"
+        ],
+        "title": "Impact of Features on Variance",
+        "text": "How does including more features in the design matrix affect model variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa19-mt2-Q3d-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Complexity and Variance",
+        "text": "As model complexity increases, what typically happens to the variance of the model? Think about the graph and how variance changes with complexity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa19-mt2-Q3d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa19-mt2-Q3d-h3"
+        ],
+        "title": "Variance and Complexity Relationship",
+        "text": "Does increasing model complexity generally increase or decrease model variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

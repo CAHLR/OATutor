@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a89b247ds100-fa21-mt-Q2v-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "When you average predictions from multiple models, think about how each model's errors might interact. Consider how combining models might affect the overall error in terms of bias and variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2v-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2v-h1"
+        ],
+        "title": "Effect on Variance",
+        "text": "Averaging predictions from multiple models can help reduce the variance. This is because the errors from different models might cancel each other out. Can you think of why this might be beneficial?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2v-h3",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2v-h1"
+        ],
+        "title": "Effect on Bias",
+        "text": "Consider how averaging predictions might affect the bias of the model. Does combining models change the systematic error in predictions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2v-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2v-h2"
+        ],
+        "title": "Model Variance Decrease",
+        "text": "What happens to the variance of the model when predictions from multiple models are averaged?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

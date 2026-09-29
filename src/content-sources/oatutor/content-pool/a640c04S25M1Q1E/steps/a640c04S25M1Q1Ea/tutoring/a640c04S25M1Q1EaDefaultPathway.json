@@ -1,0 +1,101 @@
+[
+    {
+        "id": "a640c04S25M1Q1Ea-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Inventory Value",
+        "text": "To calculate the total value of the fruit inventory at each store, you need to multiply the price of each fruit by its inventory. This will give you the value of that fruit at that specific store.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04S25M1Q1Ea-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$q1 e[\"inventory\"]*q1*e[\"price\"] q1 e[\"inventory\"]*q1*e[\"price\"]$$"
+        ],
+        "dependencies": [
+            "a640c04S25M1Q1Ea-h1"
+        ],
+        "title": "Calculating Total Inventory Value",
+        "text": "What operation would you use to find the total value of the fruit inventory at each store?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$q1 e[\"inventory\"]+q1*e[\"price\"]+q1 e[\"inventory\"]+q1*e[\"price\"]$$",
+            "$$q1 e[\"inventory\"]*q1*e[\"price\"] q1 e[\"inventory\"]*q1*e[\"price\"]$$",
+            "$$q1e[\"inventory\"]-q1e[\"price\"]$$",
+            "$$\\frac{q1 e[\"inventory\"]/q1*e[\"price\"]}{q1} e[\"inventory\"]/q1*e[\"price\"]$$"
+        ]
+    },
+    {
+        "id": "a640c04S25M1Q1Ea-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Grouping Data",
+        "text": "To create a DataFrame with metrics for each grocery chain, you need to group the data by the 'chain' column. This will allow you to perform operations like sum and max on the grouped data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04S25M1Q1Ea-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "chain"
+        ],
+        "dependencies": [
+            "a640c04S25M1Q1Ea-h3"
+        ],
+        "title": "Choosing the Correct Grouping Column",
+        "text": "Which column should you use to group the data to calculate metrics for each grocery chain?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "item",
+            "chain",
+            "address",
+            "price"
+        ]
+    },
+    {
+        "id": "a640c04S25M1Q1Ea-h5",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using the .agg() Method",
+        "text": "The .agg() method allows you to apply multiple aggregation functions to your grouped data. You can use it to calculate both the sum and the max of the $$'item_{inventory,value'}$$ column for each chain.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04S25M1Q1Ea-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "{\"sum\":\"sum\",\"max\":\"max\"}"
+        ],
+        "dependencies": [
+            "a640c04S25M1Q1Ea-h5"
+        ],
+        "title": "Applying Aggregation Functions",
+        "text": "Which aggregation functions should you apply to the $$'item_{inventory,value'}$$ column to get the desired metrics?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "{\"sum\":\"sum\",\"max\":\"max\"}",
+            "{\"sum\":\"max\",\"max\":\"sum\"}",
+            "{\"sum\":\"mean\",\"max\":\"max\"}",
+            "{\"sum\":\"sum\",\"max\":\"mean\"}"
+        ]
+    }
+]

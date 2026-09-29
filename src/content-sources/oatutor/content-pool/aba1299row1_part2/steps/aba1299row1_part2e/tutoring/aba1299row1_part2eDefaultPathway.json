@@ -1,0 +1,35 @@
+[
+    {
+        "id": "aba1299row1_part2e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "In gradient descent, the update rule for the parameter \\( $$\\theta$$ \\) is given by \\( \\theta**{(t+1)} $$=$$ \\theta**{(t)} - \\alpha \\cdot \\frac{d}{d\\theta}L(\\theta**{(t)}) \\). Use this formula to find the gradient value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1_part2e-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "aba1299row1_part2e-h1"
+        ],
+        "title": "Calculate the Gradient",
+        "text": "Given \\( \\theta**{(1)} $$=$$ $$11$$ \\) and \\( \\theta**{(2)} $$=$$ $$7$$ \\), and \\( \\alpha $$=$$ $$1$$ \\), what is \\( \\frac{d}{d\\theta}L(\\theta**{(1)}) \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$2$$",
+            "$$-4$$",
+            "$$4$$",
+            "$$6$$"
+        ]
+    }
+]

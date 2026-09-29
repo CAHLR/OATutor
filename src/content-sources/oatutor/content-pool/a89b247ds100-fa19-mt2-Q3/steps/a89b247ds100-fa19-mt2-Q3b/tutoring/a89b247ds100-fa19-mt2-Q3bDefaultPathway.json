@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a89b247ds100-fa19-mt2-Q3b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Ridge Penalty",
+        "text": "The Ridge penalty term, $$\\lambda \\sum {\\beta_i}^2$$, affects the complexity of the model. A larger lambda tends to shrink the coefficients, leading to a simpler model. How does this relate to the bias and variance in the graph?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa19-mt2-Q3b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa19-mt2-Q3b-h1"
+        ],
+        "title": "Bias and Variance Relationship",
+        "text": "As model complexity increases, bias tends to decrease while variance tends to increase. Look at the graph and see how these trends are represented. How does this relate to the values of lambda?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa19-mt2-Q3b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The right side of the graph represents small lambda."
+        ],
+        "dependencies": [
+            "a89b247ds100-fa19-mt2-Q3b-h2"
+        ],
+        "title": "Interpreting the Graph",
+        "text": "Which side of the graph represents higher model complexity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The left side of the graph represents small lambda.",
+            "The right side of the graph represents small lambda."
+        ]
+    }
+]

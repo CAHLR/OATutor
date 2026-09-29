@@ -1,0 +1,66 @@
+[
+    {
+        "id": "abf3684ds100-sp25-final-Q2g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Training and Validation Errors",
+        "text": "When the training error increases but the validation error decreases, it suggests a change in the model's complexity. Think about how this might affect the model's ability to generalize to new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2g-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2g-h1"
+        ],
+        "title": "Bias-Variance Tradeoff",
+        "text": "Consider the bias-variance tradeoff. A decrease in validation error might indicate a change in the model's variance or bias. Which one do you think is more likely to have changed?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The model's bias is likely lower."
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2g-h2"
+        ],
+        "title": "Analyzing Bias",
+        "text": "If the validation error decreases, what does this imply about the model's bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The model's bias is likely lower.",
+            "The model's bias is likely higher."
+        ]
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The model's variance is likely higher."
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2g-h3"
+        ],
+        "title": "Analyzing Variance",
+        "text": "If the training error increases, what does this imply about the model's variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The model's variance is likely lower.",
+            "The model's variance is likely higher."
+        ]
+    }
+]

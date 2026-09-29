@@ -1,0 +1,54 @@
+[
+    {
+        "id": "a1155e4row6c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding KDE",
+        "text": "Kernel Density Estimation (KDE) is a way to estimate the probability density function of a random variable. It uses kernels, which are functions centered at each data point, to smooth the distribution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row6c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Role of Kernel Bandwidth",
+        "text": "The kernel bandwidth, often denoted as \\alpha, controls the smoothness of the KDE. A smaller \\alpha results in a more wiggly estimate, while a larger \\alpha gives a smoother estimate.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row6c-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Expression for KDE",
+        "text": "The KDE is calculated by summing the contributions of each kernel centered at the data points. The expression involves dividing by the number of data points, $$n$$, to normalize the estimate.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row6c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "f\\alpha(x)=(1/n)\u03a3K\\alpha(x,xi)"
+        ],
+        "dependencies": [
+            "a1155e4row6c-h3"
+        ],
+        "title": "Choosing the Correct Expression",
+        "text": "Which of the following expressions correctly represents the KDE estimated distribution f\\alpha(x)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "f\\alpha(x)=(1/n)K\\alpha(x,x1)",
+            "$$f\\alpha(x)=\u03a3K\\alpha(x,xi)$$",
+            "f\\alpha(x)=(1/n)\u03a3K\\alpha(x,xi)"
+        ]
+    }
+]

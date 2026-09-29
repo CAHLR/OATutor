@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "When you add a new feature to a model, especially one that is a transformation of an existing feature, think about how it might affect the model's flexibility. More flexibility can lead to changes in variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q6b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-fa25-mt2-Q6b-h1"
+        ],
+        "title": "Effect of Adding Features",
+        "text": "Adding a feature that is a transformation of an existing feature can increase the model's ability to fit the training data. Consider how this might impact the model's variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q6b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase only"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa25-mt2-Q6b-h2"
+        ],
+        "title": "Possible Effects on Model Variance",
+        "text": "What is a possible effect on model variance when you add a new feature that is the square of an existing feature?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase only",
+            "Decrease only",
+            "Increase and Decrease",
+            "Neither Increase nor Decrease",
+            "Cannot be determined"
+        ]
+    }
+]

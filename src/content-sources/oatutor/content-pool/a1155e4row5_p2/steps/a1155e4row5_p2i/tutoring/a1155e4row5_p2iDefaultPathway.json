@@ -1,0 +1,67 @@
+[
+    {
+        "id": "a1155e4row5_p2i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Boxcar Kernel",
+        "text": "The boxcar kernel is a simple kernel function that assigns equal weight to all points within a certain distance (bandwidth) from the target point. It is also known as a rectangular kernel.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p2i-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Bandwidth in KDE",
+        "text": "The bandwidth (\\alpha) in kernel density estimation determines the width of the kernel. A smaller bandwidth leads to a more detailed density estimate, while a larger bandwidth smooths the estimate.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p2i-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.333$$"
+        ],
+        "dependencies": [
+            "a1155e4row5_p2i-h1"
+        ],
+        "title": "Calculating Density with Boxcar Kernel",
+        "text": "For a point $$x_i$$, the boxcar kernel density estimate is calculated by counting the number of data points within the bandwidth and dividing by the total number of points and the bandwidth. What is the density estimate for $$x=2$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0.333$$",
+            "$$0.1$$",
+            "$$0.25$$",
+            "$$0.333$$",
+            "$$0.5$$"
+        ]
+    },
+    {
+        "id": "a1155e4row5_p2i-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1155e4row5_p2i-h3"
+        ],
+        "title": "Interpreting the KDE Plot",
+        "text": "Given the bandwidth of $$0.5$$, each bar in the plot should represent the density estimate for each data point. Does the height of the bars in Option B match the calculated density?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

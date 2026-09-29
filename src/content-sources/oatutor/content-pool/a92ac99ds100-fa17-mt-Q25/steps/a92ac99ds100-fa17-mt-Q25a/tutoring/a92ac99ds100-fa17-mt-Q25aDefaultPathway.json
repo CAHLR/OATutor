@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a92ac99ds100-fa17-mt-Q25a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Confidence Intervals",
+        "text": "A 95% confidence interval means that if we were to take many samples and construct a confidence interval for each one, about 95% of those intervals would contain the true population mean, not the sample mean.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-mt-Q25a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a92ac99ds100-fa17-mt-Q25a-h1"
+        ],
+        "title": "Sample Mean vs. Population Mean",
+        "text": "Remember, the sample mean is an estimate of the population mean. Confidence intervals are used to estimate where the true population mean lies, not the sample mean.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-mt-Q25a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-mt-Q25a-h2"
+        ],
+        "title": "Clarifying the Statement",
+        "text": "What does a 95% confidence interval actually tell us about the sample mean?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,43 @@
+[
+    {
+        "id": "a9edaf5ds100-su21-final-Q4o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting by adding a penalty to the model's complexity. When the regularization hyperparameter is too high, it can lead to underfitting, which increases bias. Think about how adjusting this parameter might affect the model's performance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4o-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring Model Bias",
+        "text": "Model bias refers to the error introduced by approximating a real-world problem, which may be complex, by a simplified model. High bias can occur when the model is too simple. Consider what changes could make the model more flexible.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4o-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease the regularization hyperparameter."
+        ],
+        "dependencies": [],
+        "title": "Adjusting Regularization",
+        "text": "Which of the following actions could help reduce model bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Decrease the regularization hyperparameter.",
+            "Increase the regularization hyperparameter.",
+            "Add more features to the model.",
+            "Remove features from the model."
+        ]
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1155e4row10_p2q-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Log Transformation",
+        "text": "A log transformation is often used to linearize data that shows exponential growth. This means that if you take the log of the x-values, the relationship between $$x$$ and $$y$$ becomes linear. Look for a plot where the x-values increase exponentially.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2q-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "D"
+        ],
+        "dependencies": [
+            "a1155e4row10_p2q-h1"
+        ],
+        "title": "Identifying Exponential Growth",
+        "text": "Which plot shows a pattern where the x-values increase exponentially?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "id": "a1155e4row10_p2q-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Characteristics of Exponential Growth",
+        "text": "In exponential growth, as $$x$$ increases, $$y$$ increases at an increasing rate. This often results in a curve that starts off slowly and then rises sharply.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

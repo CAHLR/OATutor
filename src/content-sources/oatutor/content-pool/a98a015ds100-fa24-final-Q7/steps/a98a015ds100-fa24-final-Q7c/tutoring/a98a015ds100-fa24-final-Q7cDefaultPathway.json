@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a98a015ds100-fa24-final-Q7c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Principal Components",
+        "text": "The number of principal components is determined by the number of original variables in the dataset. How many columns are there in the dataset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa24-final-Q7c-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa24-final-Q7c-h1"
+        ],
+        "title": "Counting Columns",
+        "text": "How many columns are present in the dataset shown in the image?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$3$$",
+            "$$4$$",
+            "$$5$$",
+            "$$6$$"
+        ]
+    },
+    {
+        "id": "a98a015ds100-fa24-final-Q7c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa24-final-Q7c-h2"
+        ],
+        "title": "Relating Columns to Principal Components",
+        "text": "The number of principal components is equal to the number of columns in the dataset. Use this information to evaluate the statement about the number of principal components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

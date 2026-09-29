@@ -1,0 +1,56 @@
+[
+    {
+        "id": "a72a45crow2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Non-Response Bias",
+        "text": "Non-response bias occurs when the individuals who do not respond to a survey differ in meaningful ways from those who do respond. Think about how increasing the sample size and sending reminders might affect the likelihood of getting responses from a more representative group.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow2c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Impact of Sample Size",
+        "text": "Increasing the sample size from $$100$$ to $$200$$ means you are reaching out to more students. Consider how this might affect the diversity of responses and the overall reliability of the survey results.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow2c-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Reminder Emails",
+        "text": "Sending a reminder email to those who did not respond initially can increase the response rate. Think about how this might change the composition of the respondents and the potential for reducing bias.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow2c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Smaller than"
+        ],
+        "dependencies": [
+            "a72a45crow2c-h1"
+        ],
+        "title": "Comparing Non-Response Bias",
+        "text": "If Josh implements both updates, how would the non-response bias of the updated survey compare to the original survey?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Larger than",
+            "Smaller than",
+            "The same as",
+            "Impossible to determine",
+            "Exactly double"
+        ]
+    }
+]

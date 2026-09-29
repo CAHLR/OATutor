@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a1155e4row2h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding KDE Plots",
+        "text": "Kernel Density Estimation (KDE) is a way to estimate the probability density function of a random variable. The choice of kernel can affect how the data is smoothed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row2h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row2h-h1"
+        ],
+        "title": "Normal Kernel Characteristics",
+        "text": "The normal kernel tends to smooth data in a way that can make multimodal distributions appear unimodal. This is because it assumes data is normally distributed.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row2h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Epanechnikov"
+        ],
+        "dependencies": [
+            "a1155e4row2h-h2"
+        ],
+        "title": "Choosing the Right Kernel",
+        "text": "Which kernel might be more appropriate for visualizing multimodal data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Normal",
+            "Epanechnikov",
+            "Uniform",
+            "Triangular"
+        ]
+    },
+    {
+        "id": "a1155e4row2h-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row2h-h3"
+        ],
+        "title": "Impact of Kernel Choice",
+        "text": "Different kernels can highlight different features of the data. For multimodal data, a kernel that doesn't overly smooth the data is preferable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

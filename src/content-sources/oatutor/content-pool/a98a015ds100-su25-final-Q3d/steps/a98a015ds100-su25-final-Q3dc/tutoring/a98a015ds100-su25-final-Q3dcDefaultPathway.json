@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a98a015ds100-su25-final-Q3dc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD",
+        "text": "In Singular Value Decomposition (SVD), a matrix X is decomposed into three matrices: U, S, and $$V^T$$. The matrix S contains the singular values on its diagonal, which are crucial for determining the variance captured by each principal component.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su25-final-Q3dc-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Reconstruction Loss",
+        "text": "Reconstruction loss refers to the difference between the original data and the data reconstructed from the principal components. If all principal components are used, the reconstruction loss should be zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su25-final-Q3dc-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The diagonal entries of S represent the variance captured by each principal component."
+        ],
+        "dependencies": [
+            "a98a015ds100-su25-final-Q3dc-h1"
+        ],
+        "title": "Matrix S and Variance",
+        "text": "What does the matrix S tell us about the variance captured by each principal component?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The diagonal entries of S represent the variance captured by each principal component.",
+            "The diagonal entries of S represent the mean of each feature.",
+            "The diagonal entries of S represent the sum of each feature."
+        ]
+    },
+    {
+        "id": "a98a015ds100-su25-final-Q3dc-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The reconstruction loss should be zero."
+        ],
+        "dependencies": [
+            "a98a015ds100-su25-final-Q3dc-h2"
+        ],
+        "title": "Using All Principal Components",
+        "text": "If Justin uses all three principal components, what should be the reconstruction loss?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The reconstruction loss should be zero.",
+            "The reconstruction loss should be minimal but not zero.",
+            "The reconstruction loss should be significant."
+        ]
+    }
+]

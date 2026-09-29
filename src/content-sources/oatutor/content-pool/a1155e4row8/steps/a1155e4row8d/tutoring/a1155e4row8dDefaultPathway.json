@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a1155e4row8d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Visualizations",
+        "text": "When considering visualizations for a single variable like price, think about how you can represent the distribution or frequency of the data. Common visualizations include histograms, box plots, and bar charts.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row8d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Histogram|Box Plot"
+        ],
+        "dependencies": [
+            "a1155e4row8d-h1"
+        ],
+        "title": "Choosing the Right Visualization",
+        "text": "Which of the following visualizations can effectively show the distribution of prices?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Box Plot",
+            "Histogram",
+            "Histogram|Box Plot",
+            "Line Plot",
+            "Scatter Plot"
+        ]
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a640c04row5d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "The DataFrame 'performance' contains information about staff members, including their roles, office hours tickets resolved, and hours spent on EdStem. To analyze performance by role, we need to group the data by the 'role' column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row5d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a640c04row5d-h1"
+        ],
+        "title": "Aggregation Functions",
+        "text": "When aggregating data, you can use functions like 'min', 'max', 'mean', etc., to summarize the data. For this task, think about which function would best represent the maximum effort on EdStem.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row5d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "\"ed_hours\": \"max\""
+        ],
+        "dependencies": [
+            "a640c04row5d-h2"
+        ],
+        "title": "Choosing the Right Function",
+        "text": "Which function would you use to find the maximum number of hours spent on EdStem?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "\"ed_hours\": \"max\"",
+            "\"ed_hours\": \"min\"",
+            "\"oh_tickets\": \"max\"",
+            "\"ed_hours\": \"mean\"",
+            "\"role\": \"max\""
+        ]
+    }
+]

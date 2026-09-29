@@ -1,0 +1,126 @@
+[
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding k-fold Cross Validation",
+        "text": "Think about what happens when you increase the number of folds (k) in k-fold cross-validation. How does this affect the amount of data used for training versus testing in each fold?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1n-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Computational Intensity of Cross Validation",
+        "text": "Consider the process of cross-validation. Does it involve training the model multiple times? How might this compare to a single train-test split in terms of computational resources?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1n-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using the Entire Dataset",
+        "text": "Reflect on how cross-validation utilizes the dataset. Does it allow for every data point to be used in both training and validation at some point?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1n-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Cross-validation in Production",
+        "text": "Think about the purpose of cross-validation. Is it meant for model evaluation during development, or is it something that should be used when the model is deployed in a real-world setting?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1n-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1n-h1"
+        ],
+        "title": "Effect of Increasing k",
+        "text": "What happens to the bias of the model when you increase k in k-fold cross-validation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1n-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1n-h2"
+        ],
+        "title": "Computational Cost of Cross Validation",
+        "text": "Is cross-validation less computationally intensive than regular validation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1n-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1n-h3"
+        ],
+        "title": "Dataset Utilization in Cross Validation",
+        "text": "Does cross-validation allow the entire training dataset to be used for testing the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1n-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1n-h4"
+        ],
+        "title": "Cross-validation in Production",
+        "text": "Can cross-validation be used in production without the model \"cheating\" by looking at validation samples?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "id": "abf3684ds100-sp25-final-Q2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Residuals",
+        "text": "Residuals are the differences between the observed values and the values predicted by the model. In a well-fitted linear regression model, these residuals have some interesting properties. Can you think of what happens to the sum of these differences?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2b-h1"
+        ],
+        "title": "OLS Model Properties",
+        "text": "One key property of the Ordinary Least Squares (OLS) model is related to the residuals. Consider how the model minimizes the sum of squared residuals. What does this imply about the sum of the residuals themselves?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2b-h2"
+        ],
+        "title": "Exploring Residuals",
+        "text": "Which of the following statements is true about the sum of residuals in an OLS model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "The sum of the residuals is $$0$$",
+            "The sum of the residuals is equal to the number of observations",
+            "The sum of the residuals is negative",
+            "The sum of the residuals is positive"
+        ]
+    }
+]

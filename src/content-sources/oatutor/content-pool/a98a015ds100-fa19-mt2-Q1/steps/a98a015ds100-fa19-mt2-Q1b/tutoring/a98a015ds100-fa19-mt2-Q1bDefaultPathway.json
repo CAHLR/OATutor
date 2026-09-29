@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Data",
+        "text": "The dataframe shows the time spent by visitors at different exhibits. Each column represents an exhibit, and the values are the time spent in minutes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa19-mt2-Q1b-h1"
+        ],
+        "title": "Analyzing the Matrix",
+        "text": "The matrix in the image represents a single row of data. Consider how this data might be used in calculations involving matrices, such as finding a covariance matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Calculate the covariance of the columns"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa19-mt2-Q1b-h2"
+        ],
+        "title": "Matrix Operations",
+        "text": "Which operation would you perform to find the covariance matrix from this data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Calculate the covariance of the columns",
+            "Calculate the sum of the rows",
+            "Calculate the mean of the columns"
+        ]
+    }
+]

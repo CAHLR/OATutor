@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a1155e4row3_p2f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "The DataFrame 'experiments' contains two columns: 'Antibiotic' and 'Colonies'. The 'Antibiotic' column represents the amount of antibiotic added, and the 'Colonies' column shows the number of bacterial colonies after $$12$$ hours.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row3_p2f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row3_p2f-h1"
+        ],
+        "title": "Choosing the Correct Column for x-axis",
+        "text": "For the x-axis of the scatterplot, you need to choose the column that represents the independent variable. In this case, it's the amount of antibiotic added.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row3_p2f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x$$ $$=$$ experiments['Antibiotic']"
+        ],
+        "dependencies": [
+            "a1155e4row3_p2f-h2"
+        ],
+        "title": "Selecting the x-axis Data",
+        "text": "Which column should be used for the x-axis in the scatterplot?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$x$$ $$=$$ experiments['Antibiotic']",
+            "$$x$$ $$=$$ experiments['Colonies']",
+            "experiments['Antibiotic']",
+            "$$y$$ $$=$$ experiments['Antibiotic']",
+            "$$x$$ $$=$$ 'Antibiotic'"
+        ]
+    }
+]

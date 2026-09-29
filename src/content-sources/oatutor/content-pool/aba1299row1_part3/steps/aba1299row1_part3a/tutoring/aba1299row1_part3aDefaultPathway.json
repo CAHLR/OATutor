@@ -1,0 +1,34 @@
+[
+    {
+        "id": "aba1299row1_part3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias in Models",
+        "text": "When you add a new feature to a model, especially one that is a transformation of an existing feature, think about how it might help the model capture more complex patterns in the data. This can potentially reduce the error due to bias.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1_part3a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "aba1299row1_part3a-h1"
+        ],
+        "title": "Effect of Adding Features on Bias",
+        "text": "Consider how adding a feature that is the square of an existing feature might affect the model's ability to fit the data. Does it make the model more flexible or less flexible?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Increase and Decrease"
+        ]
+    }
+]

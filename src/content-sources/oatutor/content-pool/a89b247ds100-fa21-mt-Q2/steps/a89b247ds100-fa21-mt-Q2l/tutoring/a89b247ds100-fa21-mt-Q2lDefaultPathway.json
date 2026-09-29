@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a89b247ds100-fa21-mt-Q2l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Overfitting",
+        "text": "Overfitting occurs when a model learns the training data too well, including its noise and outliers, which can lead to poor performance on new data. Think about how you can simplify the model to make it more generalizable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2l-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Ridge Regression and Variance",
+        "text": "Ridge regression is a technique that can help reduce model variance by adding a penalty to the size of coefficients. Consider how adjusting this penalty might affect the model's complexity and variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2l-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [],
+        "title": "Adding an Intercept Term",
+        "text": "Adding an intercept term can sometimes help with bias, but does it directly address variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2l-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Regularization Techniques",
+        "text": "Regularization techniques like Lasso and Ridge can help control model complexity. Think about how these techniques adjust the model's parameters to prevent overfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2l-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [],
+        "title": "Effect of Regularization",
+        "text": "Does increasing the regularization parameter in ridge regression increase or decrease model variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease"
+        ]
+    }
+]

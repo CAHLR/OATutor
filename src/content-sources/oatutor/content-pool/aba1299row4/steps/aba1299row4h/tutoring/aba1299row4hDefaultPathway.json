@@ -1,0 +1,58 @@
+[
+    {
+        "id": "aba1299row4h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "When the training error increases but the validation error decreases, it suggests a change in the model's complexity. Think about how this affects the model's ability to generalize to new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row4h-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row4h-h1"
+        ],
+        "title": "Training vs. Validation Error",
+        "text": "Consider what it means for a model to have a higher training error but a lower validation error. How does this relate to the model's ability to fit the training data versus new data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row4h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Variance decreases"
+        ],
+        "dependencies": [
+            "aba1299row4h-h2"
+        ],
+        "title": "Model Complexity and Variance",
+        "text": "If a model's complexity is reduced, what happens to its variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Variance increases",
+            "Variance decreases",
+            "Variance remains the same"
+        ]
+    },
+    {
+        "id": "aba1299row4h-h4",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row4h-h3"
+        ],
+        "title": "Connecting Variance and Error",
+        "text": "A decrease in model variance often leads to a decrease in validation error. Why might this be the case? Think about the model's ability to generalize.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

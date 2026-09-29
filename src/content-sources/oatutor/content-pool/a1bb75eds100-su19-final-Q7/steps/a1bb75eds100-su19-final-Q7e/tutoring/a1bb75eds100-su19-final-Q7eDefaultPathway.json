@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a1bb75eds100-su19-final-Q7e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Expression",
+        "text": "Let's break down the expression: alpha*(1/n)*sum{i=1}{n}{(y_i-sigma(X_i*theta**(t)))*X_i}. What do you notice about the terms inside the summation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q7e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q7e-h1"
+        ],
+        "title": "Dimensions of Each Component",
+        "text": "Consider the dimensions of each component in the expression. What are the dimensions of $$X_i$$ and $${\\theta}^t$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q7e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q7e-h2"
+        ],
+        "title": "Summation Result",
+        "text": "When you sum over all i from $$1$$ to $$n$$, what happens to the dimensions of the resulting vector?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q7e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Length $$p$$ vector"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q7e-h3"
+        ],
+        "title": "Identify the Dimensions",
+        "text": "What are the dimensions of the expression alpha*(1/n)*sum{i=1}{n}{(y_i-sigma(X_i*theta**(t)))*X_i}?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Scalar",
+            "Length $$n$$ vector",
+            "Length $$p$$ vector",
+            "$$n$$ by $$p$$ matrix"
+        ]
+    }
+]

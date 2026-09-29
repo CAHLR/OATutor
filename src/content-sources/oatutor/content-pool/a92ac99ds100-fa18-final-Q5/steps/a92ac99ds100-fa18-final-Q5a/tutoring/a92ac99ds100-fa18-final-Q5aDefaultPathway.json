@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a92ac99ds100-fa18-final-Q5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Table",
+        "text": "Look at the table and notice how the replicates are organized. Each row represents a different bootstrap sample, and each column represents a different replicate within that sample.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa18-final-Q5a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculating the Sample Mean",
+        "text": "To find the sample mean, add all the observed values together and divide by the number of observations. Use the values: $$11$$, $$11$$, $$92$$, $$34$$, $$53$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa18-final-Q5a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$201$$"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa18-final-Q5a-h2"
+        ],
+        "title": "Sample Mean Calculation",
+        "text": "What is the sum of the observed values $$11$$, $$11$$, $$92$$, $$34$$, and 53?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$201$$",
+            "$$201$$",
+            "$$202$$",
+            "$$203$$",
+            "$$204$$",
+            "$$205$$"
+        ]
+    },
+    {
+        "id": "a92ac99ds100-fa18-final-Q5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$40.2$$"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa18-final-Q5a-h3"
+        ],
+        "title": "Dividing for the Mean",
+        "text": "Now, divide the sum of the observed values by the number of observations (5). What is the result?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$40.2$$",
+            "$$40.2$$",
+            "$$41.2$$",
+            "$$42.2$$",
+            "$$43.2$$",
+            "$$44.2$$"
+        ]
+    }
+]

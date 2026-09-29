@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a1bb75eds100-su19-final-Q7h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Update Rule",
+        "text": "The update rule for logistic regression with L2 regularization is given by:\\n\\n$${\\theta}^{t+1}=\\left(1-2\\lambda\\right) {\\theta}^t+\\alpha \\left(y_i-\\operatorname{\\sigma}\\left(X_i {\\theta}^t\\right)\\right) X_i$$\\n\\nFocus on understanding each component of this equation. What happens to $${\\theta}^{t+1}$$ when $$X_i$$ is zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q7h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q7h-h1"
+        ],
+        "title": "Effect of $$X_i$$ on the Update",
+        "text": "When $$X_i$$ is zero, the term $$\\alpha \\left(y_i-\\operatorname{\\sigma}\\left(X_i {\\theta}^t\\right)\\right) X_i$$ becomes zero. How does this affect the update rule?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q7h-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q7h-h2"
+        ],
+        "title": "Impact of Regularization",
+        "text": "Consider the term $$\\left(1-2\\lambda\\right) {\\theta}^t$$. How does lambda affect the value of $${\\theta}^{t+1}$$? Think about different scenarios where lambda is positive, zero, or negative.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q7h-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Tie"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q7h-h3"
+        ],
+        "title": "Choosing $$y_i$$",
+        "text": "Given that $$X_i$$ is zero, which value of $$y_i$$ will make $${\\theta}^{t+1}$$ the most positive?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$1$$",
+            "Tie",
+            "Need Info"
+        ]
+    }
+]

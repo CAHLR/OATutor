@@ -1,0 +1,64 @@
+[
+    {
+        "id": "aea05a2ds100-sp25-final-Q4c,Q4dh-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding K-Means Clustering",
+        "text": "K-Means clustering is a popular method in unsupervised learning. One key aspect is that it requires you to decide on a specific number of clusters before you start the algorithm. Think about why this might be necessary and how it affects the clustering process.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp25-final-Q4c,Q4dh-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp25-final-Q4c,Q4dh-h1"
+        ],
+        "title": "Choosing the Number of Clusters",
+        "text": "Why do you think it's important to specify the number of clusters in K-Means before running the algorithm?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "aea05a2ds100-sp25-final-Q4c,Q4dh-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring the Impact of Cluster Number",
+        "text": "Consider how the number of clusters you choose might influence the results of the K-Means algorithm. What happens if you choose too few or too many clusters?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp25-final-Q4c,Q4dh-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp25-final-Q4c,Q4dh-h3"
+        ],
+        "title": "Effects of Cluster Number on Results",
+        "text": "What could be a potential consequence of choosing too many clusters in K-Means?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

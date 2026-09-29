@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a89b247ds100-su19-final-Q6o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Polynomial Features",
+        "text": "Adding polynomial features, like degree $$3$$, means including terms like $${veg}^3$$ in the model. This can help the model capture more complex relationships between the variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6o-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6o-h1"
+        ],
+        "title": "Bias and Variance Trade-off",
+        "text": "Increasing the complexity of a model, such as adding polynomial features, typically reduces bias because the model can fit the training data more closely. However, it might increase variance as the model becomes more sensitive to fluctuations in the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6o-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Bias decreases"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6o-h2"
+        ],
+        "title": "Effect on Bias",
+        "text": "What happens to the bias of a model when you add more complex features like degree $$3$$ polynomials?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Bias increases",
+            "Bias decreases",
+            "Bias remains the same"
+        ]
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6o-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Variance increases"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6o-h3"
+        ],
+        "title": "Effect on Variance",
+        "text": "What happens to the variance of a model when you add more complex features like degree $$3$$ polynomials?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Variance increases",
+            "Variance decreases",
+            "Variance remains the same"
+        ]
+    }
+]

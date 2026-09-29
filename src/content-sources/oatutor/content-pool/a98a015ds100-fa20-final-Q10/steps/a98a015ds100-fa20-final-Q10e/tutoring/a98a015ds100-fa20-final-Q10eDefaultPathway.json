@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a98a015ds100-fa20-final-Q10e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD Output",
+        "text": "When you perform Singular Value Decomposition (SVD) on a matrix, you decompose it into three matrices: U, \u03a3 (Sigma), and $$V^T$$. Each of these matrices has specific dimensions based on the original matrix. Consider how the dimensions of these matrices relate to the original matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa20-final-Q10e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa20-final-Q10e-h1"
+        ],
+        "title": "Dimensions of U and \u03a3",
+        "text": "The matrix U from the SVD has the same number of rows as the original matrix. The diagonal matrix \u03a3 contains the singular values and its dimensions are determined by the rank of the original matrix. Think about how these dimensions affect the product U times \u03a3.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa20-final-Q10e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(940,7)$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa20-final-Q10e-h2"
+        ],
+        "title": "Calculating the Shape of U times \u03a3",
+        "text": "Given that U has dimensions $$(940,7)$$ and \u03a3 is a diagonal matrix with dimensions $$(7,7)$$, what would be the resulting dimensions of the product U times \u03a3?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$(940,7)$$",
+            "$$(7,7)$$",
+            "$$(940,940)$$",
+            "$$(7,940)$$",
+            "None of these"
+        ]
+    }
+]

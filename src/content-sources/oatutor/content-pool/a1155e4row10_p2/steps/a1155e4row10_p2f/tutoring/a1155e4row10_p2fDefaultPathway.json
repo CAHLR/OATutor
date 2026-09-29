@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a1155e4row10_p2f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "The DataFrame 'players' contains columns for 'team', 'position', $$'games_{played'}$$, and $$'points_{per,game'}$$. Each row represents a player with their respective data. Consider how these columns are used to calculate the 'total' and how they relate to the 'output' DataFrame.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row10_p2f-h1"
+        ],
+        "title": "Calculating Total Points",
+        "text": "The 'total' column is calculated by multiplying $$'games_{played'}$$ by $$'points_{per,game'}$$. This gives the total fantasy points for each player over the season. Think about how this calculation is used in the 'output' DataFrame.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row10_p2f-h2"
+        ],
+        "title": "Grouping by Team",
+        "text": "The 'output' DataFrame is created by grouping the 'players' DataFrame by 'team' and calculating the mean of the 'total' points for each team. This gives the average total points per team.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1155e4row10_p2f-h3"
+        ],
+        "title": "Visualizing with Boxplot",
+        "text": "What does the boxplot visualize when using 'team' on the x-axis and 'total' on the y-axis?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

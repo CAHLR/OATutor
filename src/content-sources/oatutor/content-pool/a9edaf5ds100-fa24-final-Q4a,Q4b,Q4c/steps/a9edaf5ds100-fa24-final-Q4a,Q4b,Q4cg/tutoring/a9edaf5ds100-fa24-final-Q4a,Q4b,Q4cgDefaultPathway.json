@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4cg-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization helps prevent overfitting by adding a penalty to the model's complexity. L1 regularization (Lasso) tends to produce sparse models with fewer coefficients, while L2 regularization (Ridge) tends to shrink coefficients evenly. Without regularization, the model is more likely to have larger coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4cg-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4cg-h1"
+        ],
+        "title": "Interpreting Coefficients",
+        "text": "Look at the coefficients for each version. A model without regularization is likely to have larger coefficients because there is no penalty for complexity. Which version has the largest coefficients?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4cg-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$${\\theta}^b=[1, 0.5, 2]$$"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4cg-h2"
+        ],
+        "title": "Choosing the Right Model",
+        "text": "Which version of the model is most likely trained without regularization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$${\\theta}^a=[0, 0.1, 0]$$",
+            "$${\\theta}^b=[1, 0.5, 2]$$",
+            "$${\\theta}^c=[0.05, 0.08, 0.03]$$",
+            "$${\\theta}^a$$ and $${\\theta}^c$$ are equally likely",
+            "None of these"
+        ]
+    }
+]

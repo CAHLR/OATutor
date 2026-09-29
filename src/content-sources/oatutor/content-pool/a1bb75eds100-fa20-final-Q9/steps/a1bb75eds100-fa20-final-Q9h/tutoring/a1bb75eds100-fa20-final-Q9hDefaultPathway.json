@@ -1,0 +1,108 @@
+[
+    {
+        "id": "a1bb75eds100-fa20-final-Q9h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Logistic Function",
+        "text": "The logistic function, also known as the sigmoid function, is used to model probabilities. It transforms any real-valued number into a value between $$0$$ and $$1$$. The formula is given by $$sigma(z)=\\frac{1}{1+e^{\\left(-z\\right)}}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9h-h1"
+        ],
+        "title": "Calculate the Linear Combination",
+        "text": "To find the value of $$z$$ in the logistic function, calculate the linear combination of the features and the parameters: $$z=\\theta_1 hue+\\theta_2 abv$$. Substitute the given values for hue and abv.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9h-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9h-h2"
+        ],
+        "title": "Substitute the Values",
+        "text": "Given $$\\theta_1=2$$, $$\\theta_2=1$$, $$hue=\\frac{1}{4}$$, and $$abv=-2$$, substitute these into the linear combination formula: $$z=2\\frac{1}{4}+1\\left(-2\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9h-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-3}{2}$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9h-h3"
+        ],
+        "title": "Calculate $$z$$",
+        "text": "What is the value of $$z$$ after substituting the given values?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{-3}{2}$$",
+            "$$\\frac{-3}{2}$$",
+            "$$\\frac{1}{2}$$",
+            "$$2$$",
+            "$$\\frac{3}{2}$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9h-h5",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9h-h4"
+        ],
+        "title": "Evaluate the Exponential",
+        "text": "Once you have $$z$$, calculate $$e^{\\left(-z\\right)}$$. This will be used in the logistic function to find the probability.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9h-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$e**{\\frac{3}{2}}$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9h-h5"
+        ],
+        "title": "Calculate $$e^{\\left(-z\\right)}$$",
+        "text": "What is the value of $$e^{\\left(-z\\right)}$$ when $$z=\\frac{-3}{2}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$e**{\\frac{3}{2}}$$",
+            "$$e^{\\left(-\\frac{1}{2}\\right)}$$",
+            "$$e^{\\left(-\\frac{3}{2}\\right)}$$",
+            "$$e^{\\frac{1}{2}}$$",
+            "$$e^{\\frac{3}{2}}$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9h-h7",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9h-h6"
+        ],
+        "title": "Find the Probability",
+        "text": "Use the logistic function to find the probability: $$gamma=\\frac{1}{1+e^{\\left(-z\\right)}}$$. Substitute the value of $$e^{\\left(-z\\right)}$$ you calculated.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

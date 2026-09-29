@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1bb75eds100-fa24-final-Q6ab-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linearly Separable Datasets",
+        "text": "A linearly separable dataset is one where you can draw a straight line (or hyperplane in higher dimensions) that separates the data points of different classes. Think about how this might affect the number of solutions for a model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa24-final-Q6ab-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa24-final-Q6ab-h1"
+        ],
+        "title": "Exploring Logistic Regression Solutions",
+        "text": "In logistic regression, the goal is to find the best-fitting model to describe the relationship between the dependent variable and one or more independent variables. Consider how the nature of the dataset might influence the number of optimal solutions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa24-final-Q6ab-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa24-final-Q6ab-h2"
+        ],
+        "title": "Analyzing the Statement",
+        "text": "What does it mean for a dataset to be linearly separable in terms of logistic regression solutions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

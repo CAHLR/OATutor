@@ -1,0 +1,43 @@
+[
+    {
+        "id": "a9edaf5ds100-su21-final-Q4j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L2 Regularization",
+        "text": "L2 regularization, also known as Ridge Regression, adds a penalty equal to the square of the magnitude of coefficients. This helps in reducing overfitting by discouraging overly complex models. Think about how this might affect the variance of the model's predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4j-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su21-final-Q4j-h1"
+        ],
+        "title": "Effect on Variance",
+        "text": "Consider how adding L2 regularization affects the variance of the model's predictions. Does it increase, decrease, or remain the same?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4j-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Bias-Variance Tradeoff",
+        "text": "Regularization techniques like L2 often lead to a tradeoff between bias and variance. While variance might decrease, what happens to the bias? Understanding this tradeoff is key to predicting the behavior of regularized models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

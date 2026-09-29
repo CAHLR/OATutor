@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1155e4row2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Data",
+        "text": "Look at the 'renovated' column. It shows the year each room was last renovated. Some entries might be 'None', indicating no renovation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row2a-h1"
+        ],
+        "title": "Choosing the Right Visualization",
+        "text": "Consider what a line plot represents. It is useful for showing trends over time. Think about how this applies to the renovation data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1155e4row2a-h2"
+        ],
+        "title": "Evaluating the Line Plot",
+        "text": "Why might a line plot be appropriate for visualizing renovations by year?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

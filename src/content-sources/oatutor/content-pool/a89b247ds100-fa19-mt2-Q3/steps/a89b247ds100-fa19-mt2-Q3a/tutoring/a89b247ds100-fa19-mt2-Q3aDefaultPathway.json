@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a89b247ds100-fa19-mt2-Q3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE Components",
+        "text": "The Mean Squared Error (MSE) is composed of three parts: the squared bias, the variance, and the irreducible error. Each of these components contributes to the overall error in different ways.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa19-mt2-Q3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa19-mt2-Q3a-h1"
+        ],
+        "title": "Analyzing the Graph",
+        "text": "Look at how the squared bias and variance change with model complexity. Notice that as model complexity increases, the squared bias decreases while the variance increases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa19-mt2-Q3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa19-mt2-Q3a-h2"
+        ],
+        "title": "Irreducible Error",
+        "text": "The irreducible error is constant and does not change with model complexity. It represents the noise inherent in the data that cannot be reduced by any model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa19-mt2-Q3a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The MSE is the sum of the squared model bias, the model variance and the irreducible error; it is approximately U shaped and its minimum occurs at the minimum of that curve."
+        ],
+        "dependencies": [
+            "a89b247ds100-fa19-mt2-Q3a-h3"
+        ],
+        "title": "Identifying the MSE Minimum",
+        "text": "Where does the MSE reach its minimum on the graph? Consider the point where the sum of squared bias, variance, and irreducible error is lowest.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The MSE is the sum of the squared model bias and the model variance only; its minimum occurs at the smallest model complexity.",
+            "The MSE is the sum of the squared model bias, the model variance and the irreducible error; it is approximately U shaped and its minimum occurs at the minimum of that curve.",
+            "The MSE is the difference between the model variance and the squared model bias; its minimum occurs where those two curves cross.",
+            "The MSE equals the irreducible error alone; it is a horizontal line and has no single minimum.",
+            "The MSE is the sum of the squared model bias, the model variance and the irreducible error; its minimum occurs at the largest model complexity."
+        ]
+    }
+]

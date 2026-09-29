@@ -1,0 +1,81 @@
+[
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding N-grams",
+        "text": "Think about how N-grams work. They capture sequences of letters, but do they consider the biological significance of codons?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1g-h1"
+        ],
+        "title": "Non-consecutive Segments",
+        "text": "Consider how N-grams might treat sequences that aren't directly next to each other. How does this affect the representation of DNA sequences?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1g-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1g-h1"
+        ],
+        "title": "Meaningless Segments",
+        "text": "What happens when N-grams capture sequences shorter than a codon? Do these shorter sequences have any biological meaning?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1g-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1g-h1"
+        ],
+        "title": "Overlapping Segments",
+        "text": "Think about how overlapping segments might be formed in N-grams. How does this affect the interpretation of DNA sequences?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1g-h5",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1g-h1"
+        ],
+        "title": "Wrap-around Segments",
+        "text": "Consider how N-grams might treat the end of a sequence. Does it assume continuity where there is none?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1g-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Segments with $$1$$ or $$2$$ letters have no meaning, which $$N-gram$$ would capture as \"words\"."
+        ],
+        "dependencies": [],
+        "title": "Evaluating N-gram Segments",
+        "text": "Which of the following is a reason why N-grams might capture segments that don't make sense biologically?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Segments of $$non-consecutive$$ letters would be included, meaning ATGCA could suggest the word AGA.",
+            "Segments with $$1$$ or $$2$$ letters have no meaning, which $$N-gram$$ would capture as \"words\".",
+            "Overlapping segments would be included, meaning ATGCA is broken up into $$3$$ overlapping words.",
+            "DNA does not \"wrap around\", but $$N-gram$$ would capture $$\"wrap-around\"$$ segments, like TGG from GGTT."
+        ]
+    }
+]

@@ -1,0 +1,84 @@
+[
+    {
+        "id": "a1bb75eds100-fa20-final-Q9j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Logistic Function",
+        "text": "The logistic function, denoted as sigma, is used to model probabilities. It transforms any real-valued number into a value between $$0$$ and $$1$$. This is useful for predicting probabilities in binary classification problems.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9j-h1"
+        ],
+        "title": "Calculating the Linear Combination",
+        "text": "To find the linear combination for Billywine, substitute the given values into the expression $$\\theta_1 hue+\\theta_2 abv$$. Remember, $$\\theta_1$$ is $$2$$, hue is $$\\frac{1}{4}$$, $$\\theta_2$$ is $$1$$, and abv is $$-2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9j-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-1.5$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9j-h2"
+        ],
+        "title": "Compute the Linear Combination",
+        "text": "What is the result of the linear combination $$2\\frac{1}{4}+1\\left(-2\\right)$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-1.5$$",
+            "$$-1.5$$",
+            "$$-2.5$$",
+            "$$0.5$$",
+            "$$1.5$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9j-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9j-h3"
+        ],
+        "title": "Applying the Logistic Function",
+        "text": "Once you have the linear combination, apply the logistic function: $$sigma(x)=\\frac{1}{1+e^{\\left(-x\\right)}}$$. Use the result from the previous step as $$x$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9j-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.1824$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9j-h4"
+        ],
+        "title": "Evaluate the Logistic Function",
+        "text": "What is the value of $$sigma(-1.5)$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0.1824$$",
+            "$$0.1824$$",
+            "$$0.3775$$",
+            "$$0.6225$$",
+            "$$0.8176$$"
+        ]
+    }
+]

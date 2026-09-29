@@ -1,0 +1,86 @@
+[
+    {
+        "id": "aea05a2ds100-sp19-final-Q10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Block Distribution",
+        "text": "Think about how many blocks each machine can potentially store. Since each block is replicated twice and there are $$4$$ machines, how many blocks can each machine hold on average?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp19-final-Q10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-sp19-final-Q10a-h1"
+        ],
+        "title": "Calculating Expected Blocks",
+        "text": "Consider that each block is stored on $$2$$ out of $$4$$ machines. What fraction of the total blocks does each machine store?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp19-final-Q10a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp19-final-Q10a-h2"
+        ],
+        "title": "Fraction of Blocks per Machine",
+        "text": "If each block is stored on $$2$$ machines, what fraction of the blocks does each machine store?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{1}{4}$$",
+            "$$\\frac{1}{2}$$",
+            "$$\\frac{1}{8}$$",
+            "$$\\frac{1}{16}$$"
+        ]
+    },
+    {
+        "id": "aea05a2ds100-sp19-final-Q10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-sp19-final-Q10a-h3"
+        ],
+        "title": "Total Blocks Calculation",
+        "text": "Now, multiply the fraction of blocks each machine stores by the total number of blocks to find the expected number of blocks per machine.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp19-final-Q10a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp19-final-Q10a-h4"
+        ],
+        "title": "Expected Blocks per Machine",
+        "text": "What is the expected number of blocks stored on each machine if each machine stores $$\\frac{1}{2}$$ of the total blocks?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$1$$",
+            "$$2$$",
+            "$$4$$",
+            "$$8$$",
+            "$$16$$",
+            "$$32$$",
+            "Other"
+        ]
+    }
+]

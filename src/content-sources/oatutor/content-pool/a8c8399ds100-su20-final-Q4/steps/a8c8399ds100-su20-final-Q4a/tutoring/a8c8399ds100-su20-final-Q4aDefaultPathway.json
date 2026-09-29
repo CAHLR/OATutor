@@ -1,0 +1,43 @@
+[
+    {
+        "id": "a8c8399ds100-su20-final-Q4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean-Centering",
+        "text": "Mean-centering involves subtracting the mean of each column from the respective column values, except for the intercept column. This process ensures that the mean of each column is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting the Equations",
+        "text": "The equations provided show the optimization problem for finding the coefficients in linear regression. The first equation uses the original design matrix, while the second uses the mean-centered version.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su20-final-Q4a-h1"
+        ],
+        "title": "Effect of Mean-Centering on Intercept",
+        "text": "Consider how mean-centering affects the intercept term in a linear regression model. Does mean-centering change the intercept?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,54 @@
+[
+    {
+        "id": "a1bb75eds100-su20-mt2-Q8d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Precision and Recall",
+        "text": "Precision is the ratio of true positive predictions to the total number of positive predictions made by the model. Recall is the ratio of true positive predictions to the total number of actual positive cases. Think about how changing the threshold affects these ratios.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-mt2-Q8d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Threshold on Predictions",
+        "text": "When you increase the threshold, fewer instances are predicted as positive. Consider how this affects the number of true positives and false positives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-mt2-Q8d-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Balancing Precision and Recall",
+        "text": "To find a threshold where precision equals recall, consider how the number of true positives, false positives, and false negatives change with different thresholds. Try calculating precision and recall for each threshold.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-mt2-Q8d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Precision equals Recall"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su20-mt2-Q8d-h3"
+        ],
+        "title": "Calculating Precision and Recall for $$T=0.6$$",
+        "text": "Calculate precision and recall for the threshold $$T=0.6$$. Which of the following is true?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Precision equals Recall",
+            "Precision is greater than Recall",
+            "Recall is greater than Precision"
+        ]
+    }
+]

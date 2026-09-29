@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a72a45crow2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Chance Error",
+        "text": "Chance error is related to the variability in your sample results. When you increase the sample size, what happens to the variability of the sample mean? Think about how a larger sample size might affect the precision of your estimate.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow2a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Reminder Emails",
+        "text": "Consider how sending a reminder email might impact the response rate. If more students respond, how might this affect the reliability of the survey results?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Smaller than"
+        ],
+        "dependencies": [
+            "a72a45crow2a-h1"
+        ],
+        "title": "Sample Size and Chance Error",
+        "text": "If Josh increases his sample size from $$100$$ to $$200$$, how does this affect the chance error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Larger than",
+            "Smaller than",
+            "The same as",
+            "Impossible to determine",
+            "Exactly double"
+        ]
+    },
+    {
+        "id": "a72a45crow2a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Smaller than"
+        ],
+        "dependencies": [
+            "a72a45crow2a-h2"
+        ],
+        "title": "Impact of Reminder Emails on Chance Error",
+        "text": "How might sending a reminder email to non-respondents affect the chance error of the survey?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Larger than",
+            "Smaller than",
+            "The same as",
+            "Impossible to determine",
+            "Exactly double"
+        ]
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "id": "a640c04F25M1Q1d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Code Snippet",
+        "text": "The code snippet `df[df['b'] $$==$$ 7]['a'].iloc[0]` is filtering the DataFrame `df` where the column 'b' equals $$7$$. Then, it selects the 'a' column from the filtered result and retrieves the first element using `iloc[0]`.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04F25M1Q1d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a640c04F25M1Q1d-h1"
+        ],
+        "title": "Filtering the DataFrame",
+        "text": "Look at the DataFrame and identify which row has the value $$7$$ in column 'b'. This will help you understand which row is being selected.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04F25M1Q1d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a640c04F25M1Q1d-h2"
+        ],
+        "title": "Selecting the Column",
+        "text": "Once you have the row where 'b' is $$7$$, check the value in column 'a' for that row. This is the value that will be returned by the code snippet.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04F25M1Q1d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a640c04F25M1Q1d-h3"
+        ],
+        "title": "Choose the Correct Value",
+        "text": "What is the value of 'a' in the row where 'b' is 7?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$5$$",
+            "$$4$$",
+            "$$6$$",
+            "$$3$$",
+            "$$8$$",
+            "$$7$$",
+            "NA"
+        ]
+    }
+]

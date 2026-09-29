@@ -1,0 +1,84 @@
+[
+    {
+        "id": "aea05a2ds100-fa24-final-Q8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding k-Means Clustering",
+        "text": "In k-Means clustering, each point is assigned to the cluster whose center is closest to it. The distance is usually calculated using the Euclidean distance formula. Can you recall how to calculate the Euclidean distance between two points?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-fa24-final-Q8b-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-fa24-final-Q8b-h1"
+        ],
+        "title": "Calculating Euclidean Distance",
+        "text": "To find the Euclidean distance between two points, use the formula: distance $$=$$ $$\\sqrt{\\left(x2-x1\\right)^2+\\left(y2-y1\\right)^2}$$. Try applying this formula to find the distance between Team Pandas and each cluster center.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-fa24-final-Q8b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sqrt{\\left(5-0\\right)**2+\\left(4-5\\right)**2}$$"
+        ],
+        "dependencies": [
+            "aea05a2ds100-fa24-final-Q8b-h2"
+        ],
+        "title": "Distance to Cluster A",
+        "text": "Calculate the distance from Team Pandas $$(5,4)$$ to Cluster A's center $$(0,5)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\sqrt{\\left(5-0\\right)**2+\\left(4-5\\right)**2}$$",
+            "$$4.0$$",
+            "$$4.1$$",
+            "$$5.0$$",
+            "$$5.1$$"
+        ]
+    },
+    {
+        "id": "aea05a2ds100-fa24-final-Q8b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sqrt{\\left(5-6\\right)**2+\\left(4-0\\right)**2}$$"
+        ],
+        "dependencies": [
+            "aea05a2ds100-fa24-final-Q8b-h2"
+        ],
+        "title": "Distance to Cluster B",
+        "text": "Now, calculate the distance from Team Pandas $$(5,4)$$ to Cluster B's center $$(6,0)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\sqrt{\\left(5-6\\right)**2+\\left(4-0\\right)**2}$$",
+            "$$3.0$$",
+            "$$3.1$$",
+            "$$4.0$$",
+            "$$4.1$$"
+        ]
+    },
+    {
+        "id": "aea05a2ds100-fa24-final-Q8b-h5",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-fa24-final-Q8b-h3"
+        ],
+        "title": "Comparing Distances",
+        "text": "Once you have both distances, compare them to determine which cluster Team Pandas is closer to. Remember, the smaller the distance, the closer the point is to that cluster center.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

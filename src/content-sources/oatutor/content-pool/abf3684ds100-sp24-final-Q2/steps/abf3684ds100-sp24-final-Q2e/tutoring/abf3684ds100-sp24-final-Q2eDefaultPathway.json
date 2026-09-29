@@ -1,0 +1,47 @@
+[
+    {
+        "id": "abf3684ds100-sp24-final-Q2e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "Think about how batch and stochastic gradient descent differ in terms of the data they use to compute the gradient. Does one use the entire dataset while the other uses a subset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp24-final-Q2e-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp24-final-Q2e-h1"
+        ],
+        "title": "True Gradient Calculation",
+        "text": "Consider what it means to compute the \"true gradient\" of the loss surface. Is it possible to achieve this with only a portion of the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp24-final-Q2e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp24-final-Q2e-h2"
+        ],
+        "title": "Batch vs. Stochastic Gradient Descent",
+        "text": "Which of the following statements is true about batch and stochastic gradient descent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Batch gradient descent uses the entire dataset to compute the gradient.",
+            "Both methods compute the true gradient of the loss surface.",
+            "FALSE",
+            "Stochastic gradient descent uses a single data point to compute the gradient."
+        ]
+    }
+]

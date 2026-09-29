@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a8c8399ds100-su20-final-Q4d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean-Centering",
+        "text": "Mean-centering involves subtracting the mean of each column from the respective column values, except for the intercept column. This process ensures that the mean of each column is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-su20-final-Q4d-h1"
+        ],
+        "title": "Comparing Coefficients",
+        "text": "Consider how mean-centering affects the coefficients of the linear regression model. Does it change the relationship between the predictors and the response variable?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su20-final-Q4d-h2"
+        ],
+        "title": "Effect of Mean-Centering on Coefficients",
+        "text": "Does mean-centering the data change the coefficients of the linear regression model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4d-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-su20-final-Q4d-h3"
+        ],
+        "title": "Interpreting the Equations",
+        "text": "Look at the equations for beta and gamma. Notice how the design matrices X and $$X_{tilde}$$ are used. How does this affect the minimization process?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4d-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su20-final-Q4d-h4"
+        ],
+        "title": "Impact on Minimization",
+        "text": "Does the use of mean-centered data $$X_{tilde}$$ affect the minimization process in linear regression?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

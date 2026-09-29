@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2dg-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization helps in feature selection by adding a penalty to the model complexity. This penalty term is added to the loss function to discourage overly complex models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2dg-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2dg-h1"
+        ],
+        "title": "L1 vs L2 Regularization",
+        "text": "L1 regularization, also known as Lasso, tends to produce sparse models by driving some coefficients to zero, effectively selecting features. L2 regularization, or Ridge, tends to shrink coefficients but rarely makes them exactly zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2dg-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "g(theta)=sum{i=1}{p}{abs(theta_i)}"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2dg-h2"
+        ],
+        "title": "Choosing the Right Regularization",
+        "text": "Which regularization method is known for producing sparse solutions by setting some coefficients to zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "g(theta)=sum{i=1}{p}{log(theta_i)}",
+            "g(theta)=sum{i=1}{p}{theta_i}",
+            "g(theta)=sum{i=1}{p}{abs(theta_i)}",
+            "g(theta)=sum{i=1}{p}{theta_i**2}"
+        ]
+    }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a1bb75eds100-su19-final-Q8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Precision",
+        "text": "Precision is calculated as the number of true positives divided by the sum of true positives and false positives. For each model, identify these values from the confusion matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q8a-h1"
+        ],
+        "title": "Calculating Precision for Model A",
+        "text": "For Model A, the true positives are $$40$$ and the false positives are $$10$$. Use these values to calculate the precision.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q8a-h1"
+        ],
+        "title": "Calculating Precision for Model B",
+        "text": "For Model B, the true positives are $$80$$ and the false positives are $$10$$. Use these values to calculate the precision.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q8a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q8a-h1"
+        ],
+        "title": "Calculating Precision for Model C",
+        "text": "For Model C, the true positives are $$80$$ and the false positives are $$5$$. Use these values to calculate the precision.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q8a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Model C"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q8a-h2",
+            "a1bb75eds100-su19-final-Q8a-h3",
+            "a1bb75eds100-su19-final-Q8a-h4"
+        ],
+        "title": "Comparing Precision Values",
+        "text": "Which model has the highest precision based on your calculations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Model A",
+            "Model B",
+            "Model C"
+        ]
+    }
+]

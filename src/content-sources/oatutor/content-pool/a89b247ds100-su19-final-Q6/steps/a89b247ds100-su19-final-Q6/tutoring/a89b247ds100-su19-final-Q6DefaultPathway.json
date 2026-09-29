@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a89b247ds100-su19-final-Q6\u007f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Polynomial Degree",
+        "text": "Consider how the degree of a polynomial affects the model's ability to fit the data. A higher degree polynomial can fit more complex patterns, but it might also lead to overfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6\u007f-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Training vs. Validation Error",
+        "text": "Think about how training error and validation error behave as the complexity of the model increases. Training error usually decreases with complexity, but validation error might increase after a certain point due to overfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6\u007f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Plot B"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6\u007f-h1"
+        ],
+        "title": "Identifying Overfitting",
+        "text": "Which plot shows a decrease in validation error followed by an increase as the polynomial degree increases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Plot A",
+            "Plot B",
+            "Plot C",
+            "Plot D"
+        ]
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6\u007f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Plot C"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6\u007f-h2"
+        ],
+        "title": "Analyzing Plot Behavior",
+        "text": "Which plot shows a consistent decrease in error without an increase, indicating no overfitting?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Plot A",
+            "Plot B",
+            "Plot C",
+            "Plot D"
+        ]
+    }
+]

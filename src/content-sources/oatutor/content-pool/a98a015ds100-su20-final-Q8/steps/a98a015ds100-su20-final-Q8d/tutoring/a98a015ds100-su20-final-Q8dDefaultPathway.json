@@ -1,0 +1,81 @@
+[
+    {
+        "id": "a98a015ds100-su20-final-Q8d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Orthogonality",
+        "text": "Consider what it means for two vectors to be orthogonal. What is the dot product of two orthogonal vectors?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q8d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-su20-final-Q8d-h1"
+        ],
+        "title": "Dot Product Calculation",
+        "text": "Calculate the dot product of $$u_1$$ and $$u_2$$. Remember, the dot product is the sum of the products of their corresponding components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q8d-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-su20-final-Q8d-h2"
+        ],
+        "title": "Dot Product Result",
+        "text": "What is the result of the dot product of $$u_1$$ and $$u_2$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$\\frac{-1}{2}$$",
+            "$$0$$",
+            "$$1$$",
+            "$$\\frac{1}{2}$$"
+        ]
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q8d-h4",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-su20-final-Q8d-h3"
+        ],
+        "title": "Checking Orthogonality",
+        "text": "If the dot product of two vectors is zero, what does that tell you about their relationship?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q8d-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a98a015ds100-su20-final-Q8d-h4"
+        ],
+        "title": "Orthogonality Conclusion",
+        "text": "Based on the dot product result, are $$u_1$$ and $$u_2$$ orthogonal?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

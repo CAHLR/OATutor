@@ -1,0 +1,33 @@
+[
+    {
+        "id": "abf3684ds100-fa24-final-Q5a,Q5bb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Stochastic Gradient Descent",
+        "text": "Think about how stochastic gradient descent (SGD) updates the model parameters. It uses a single data point or a small batch of data for each update. How might this affect the computational cost compared to using the entire dataset at once?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa24-final-Q5a,Q5bb-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "abf3684ds100-fa24-final-Q5a,Q5bb-h1"
+        ],
+        "title": "Comparing Computational Costs",
+        "text": "Which of the following statements is true about the computational cost per update of stochastic gradient descent compared to batch gradient descent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "id": "abf3684ds100-su25-final-Q2i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Unique Solutions in OLS",
+        "text": "When considering the uniqueness of a solution in an OLS model, think about the number of features compared to the number of data points. What happens if the number of features approaches the number of data points?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2i-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Impact of Adding Features",
+        "text": "Adding more features to a model can affect the solution's uniqueness. Consider how the model's complexity changes with additional features and how this might impact the ability to find a unique solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2i-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2i-h1"
+        ],
+        "title": "Evaluating Feature Impact",
+        "text": "If Wesley adds $${x_{i1}}^6$$ as a feature, how does this affect the number of features compared to the number of data points?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "It decreases the number of features",
+            "It has no effect on the number of features",
+            "It increases the number of features to $$3$$",
+            "It increases the number of features to $$4$$"
+        ]
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2i-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2i-h2"
+        ],
+        "title": "Understanding Model Complexity",
+        "text": "What is the relationship between the number of features and the ability to find a unique solution in an OLS model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "Fewer features make it harder to find a unique solution",
+            "More features always lead to a unique solution",
+            "More features can make it harder to find a unique solution",
+            "The number of features does not affect the uniqueness of the solution"
+        ]
+    }
+]

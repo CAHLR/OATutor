@@ -1,0 +1,51 @@
+[
+    {
+        "id": "a8c8399ds100-su21-final-Q8f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "When you one-hot encode a categorical variable, each category becomes a separate column with binary values (0 or 1). For example, if you one-hot encode the 'sex' column, you will have two new columns: $$'sex_{male'}$$ and $$'sex_{female'}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8f-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Intercept Term in the Model",
+        "text": "Including an intercept term in a model means adding a column of ones to the design matrix. This column accounts for the baseline level of the dependent variable when all other predictors are zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8f-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Column Count in Design Matrix",
+        "text": "Consider how many columns are added when you one-hot encode 'sex' and $$'embark_{town'}$$. Remember to add one more column for the intercept term.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [],
+        "title": "Checking Invertibility",
+        "text": "For a matrix to be invertible, it must be square and have full rank. Does the design matrix $$\\Phi_2$$ meet these criteria?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

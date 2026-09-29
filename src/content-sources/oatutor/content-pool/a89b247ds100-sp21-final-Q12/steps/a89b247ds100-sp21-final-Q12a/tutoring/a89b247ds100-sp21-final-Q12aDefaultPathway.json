@@ -1,0 +1,117 @@
+[
+    {
+        "id": "a89b247ds100-sp21-final-Q12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "To find the bias and variance, start by considering the model function $$\\operatorname{f_{\\theta}}\\left(z\\right)=\\theta z$$. Since $$x=1$$, think about how you would choose theta to best fit the data point.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp21-final-Q12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-sp21-final-Q12a-h1"
+        ],
+        "title": "Optimal Theta",
+        "text": "With no noise (sigma**2=0), the observed $$y$$ is exactly g(x). What does this imply about the relationship between theta and A when $$x=1$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp21-final-Q12a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp21-final-Q12a-h2"
+        ],
+        "title": "Choosing Theta",
+        "text": "If $$x=1$$ and $$y=g(x)$$, what should theta be to make $$\\operatorname{f_{\\theta}}\\left(x\\right)=y$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A",
+            "$$0$$",
+            "$$1$$",
+            "theta"
+        ]
+    },
+    {
+        "id": "a89b247ds100-sp21-final-Q12a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-sp21-final-Q12a-h3"
+        ],
+        "title": "Bias Calculation",
+        "text": "The bias of a model is the difference between the expected prediction of the model and the true function value at a test point. What happens to this difference when theta is chosen optimally?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp21-final-Q12a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp21-final-Q12a-h4"
+        ],
+        "title": "Bias Value",
+        "text": "Given that theta is chosen such that $$\\operatorname{f_{\\theta}}\\left(z\\right)=g(z)$$ at $$z=1$$, what is the bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "A",
+            "$${\\sigma}^2$$",
+            "$$1$$"
+        ]
+    },
+    {
+        "id": "a89b247ds100-sp21-final-Q12a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-sp21-final-Q12a-h5"
+        ],
+        "title": "Variance Insight",
+        "text": "Variance measures how much the model's predictions vary for different training sets. With only one data point and no noise, how much variation do you expect?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp21-final-Q12a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp21-final-Q12a-h6"
+        ],
+        "title": "Variance Value",
+        "text": "Considering there is no noise and only one data point, what is the variance of the model's prediction at $$z=1$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "A",
+            "$${\\sigma}^2$$",
+            "$$1$$"
+        ]
+    }
+]

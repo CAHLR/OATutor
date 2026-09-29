@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a98a015ds100-sp24-final-Q9j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Singular Values",
+        "text": "Singular values in PCA are related to the variance captured by each principal component. The larger the singular value, the more variance that component captures. Think about how this might relate to the component scores.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9j-h1"
+        ],
+        "title": "Comparing Singular Values",
+        "text": "Compare the singular values of PC \\(\\alpha\\) and PC \\(\\beta\\). Which one is larger? How does this relate to the component scores?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "PC \\(\\alpha\\)"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9j-h2"
+        ],
+        "title": "Identifying the Larger Singular Value",
+        "text": "Which principal component has the larger singular value?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "PC \\(\\alpha\\)",
+            "PC \\(\\beta\\)"
+        ]
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9j-h4",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9j-h3"
+        ],
+        "title": "Linking Singular Values to Component Scores",
+        "text": "The principal component with the larger singular value captures more variance. This often means it has a higher component score. Consider how this applies to PC \\(\\alpha\\) and PC \\(\\beta\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

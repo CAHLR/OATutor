@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a72a45crow10_p1h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Non-response Bias",
+        "text": "Non-response bias occurs when the individuals who do not respond to a survey differ in significant ways from those who do respond. Think about how the method of selecting every fifth student might lead to certain groups being underrepresented.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow10_p1h-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A"
+        ],
+        "dependencies": [
+            "a72a45crow10_p1h-h1"
+        ],
+        "title": "Identifying Potential Bias",
+        "text": "Which of the following best describes non-response bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "> B. When the survey questions are leading or biased",
+            "> C. When the sample size is too small to draw conclusions",
+            "> D. When the survey is conducted at an inconvenient time",
+            "A",
+            "A. When the responses collected do not represent the entire population"
+        ]
+    },
+    {
+        "id": "a72a45crow10_p1h-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sampling Method Consideration",
+        "text": "Consider how the sampling method might affect who is included in the survey. Are there any groups of students who might be less likely to attend discussion sections?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow10_p1h-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "B"
+        ],
+        "dependencies": [
+            "a72a45crow10_p1h-h3"
+        ],
+        "title": "Evaluating the Sampling Scheme",
+        "text": "What is a potential drawback of selecting every fifth student in a discussion section?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "> B. It might miss students who do not attend discussions",
+            "> C. It is too random to be effective",
+            "> D. It is too $$time-consuming$$",
+            "A. It ensures a diverse sample",
+            "B"
+        ]
+    }
+]

@@ -1,0 +1,76 @@
+[
+    {
+        "id": "a8c8399ds100-fa20-final-Q12j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model A",
+        "text": "Model A includes parameters for height in both inches and centimeters, and weight in both pounds and kilograms. Think about how these variables might be related to each other.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12j-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model B",
+        "text": "Model B simplifies the parameters by only including height in centimeters and weight in kilograms. Consider how this might affect the confidence intervals compared to Model A.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Model A"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa20-final-Q12j-h1"
+        ],
+        "title": "Exploring Multicollinearity",
+        "text": "Which model is more likely to have multicollinearity issues due to the inclusion of similar variables?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Model A",
+            "Model B"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12j-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-fa20-final-Q12j-h3"
+        ],
+        "title": "Confidence Intervals and Multicollinearity",
+        "text": "Multicollinearity can inflate the standard errors of the coefficients, which might make the confidence intervals wider. Consider how this could affect the likelihood of the intervals containing zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12j-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa20-final-Q12j-h4"
+        ],
+        "title": "Impact on Confidence Intervals",
+        "text": "Given the potential multicollinearity in Model A, are the confidence intervals for its parameters more likely to contain zero compared to Model B?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a8c8399ds100-su20-mt2-Q4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding transforms a categorical variable into a binary matrix. Each category becomes a column, and a row has a $$1$$ in the column corresponding to its category and 0s elsewhere. How might changing the values in these columns affect the model's predictions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-mt2-Q4a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Scaling on Linear Models",
+        "text": "Consider how scaling the input features (like changing 1s to 3s or 2s) affects the coefficients of a linear model. Does it change the relationship between the features and the target variable?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-mt2-Q4a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "equal to"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su20-mt2-Q4a-h1"
+        ],
+        "title": "Comparing Models m1 and m2",
+        "text": "If the model's predictions are based on the relative differences between feature values, how would changing the scale of one feature affect the average squared loss?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "greater than",
+            "less than",
+            "equal to",
+            "impossible to tell",
+            "depends on the data"
+        ]
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Exponential Regularization",
+        "text": "Consider how exponential regularization affects the model parameters. As lambda increases, the penalty on large parameter values becomes more severe. Think about how this might influence the bias of the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-sp22-mt2-Q5j-h1"
+        ],
+        "title": "Bias and Regularization",
+        "text": "Remember that regularization tends to increase bias in a model. With exponential regularization, this effect can be more pronounced. How might this trend appear on a graph as lambda increases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "B: bias increases as lambda increases, growing steeply and unboundedly"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp22-mt2-Q5j-h2"
+        ],
+        "title": "Analyzing the Graphs",
+        "text": "Which graph shows a trend where bias increases as lambda increases, growing steeply and unboundedly?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A: bias decreases then levels off as lambda increases",
+            "B: bias increases as lambda increases, growing steeply and unboundedly",
+            "C: bias decreases monotonically as lambda increases",
+            "D: bias increases then decreases as lambda increases",
+            "E: bias remains constant as lambda increases"
+        ]
+    }
+]

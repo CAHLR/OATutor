@@ -1,0 +1,81 @@
+[
+    {
+        "id": "a89b247ds100-fa21-mt-Q2j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Overfitting",
+        "text": "Overfitting occurs when a model learns the training data too well, including its noise and outliers, which can negatively impact its performance on new data. Think about how you might simplify the model to make it more generalizable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2j-h1"
+        ],
+        "title": "Feature Addition and Model Complexity",
+        "text": "Adding new features can sometimes increase the complexity of the model, which might lead to overfitting. Consider how adding features affects the model's ability to generalize.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2j-h2"
+        ],
+        "title": "Evaluating Feature Addition",
+        "text": "What effect does adding more features generally have on the variance of a model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Decreases variance",
+            "Increases variance",
+            "No effect on variance",
+            "TRUE"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2j-h4",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2j-h1"
+        ],
+        "title": "Regularization Techniques",
+        "text": "Regularization techniques like ridge regression are designed to penalize large coefficients, which can help reduce overfitting. Think about how adjusting the regularization parameter might affect the model's variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2j-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decreases variance"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2j-h4"
+        ],
+        "title": "Impact of Regularization",
+        "text": "How does increasing the regularization parameter in ridge regression affect the model's variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increases variance",
+            "Decreases variance",
+            "No effect on variance"
+        ]
+    }
+]

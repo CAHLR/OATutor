@@ -1,0 +1,81 @@
+[
+    {
+        "id": "a640c04row4f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Data",
+        "text": "Look at the table of nuggets. Identify which chains have nuggets with a weight less than $$0.6$$ ounces. This will help you determine which chain sold the most of these lighter nuggets.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row4f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a640c04row4f-h1"
+        ],
+        "title": "Grouping and Counting",
+        "text": "Consider using a method to group the data by chain and count the number of nuggets that meet the weight condition. This will help you find the chain with the most nuggets under $$0.6$$ ounces.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row4f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "groupby"
+        ],
+        "dependencies": [
+            "a640c04row4f-h2"
+        ],
+        "title": "Choosing the Right Method",
+        "text": "Which method would you use to group the data by chain and count the nuggets with weight less than $$0.6$$ ounces?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "filter",
+            "groupby",
+            "$$sort_{values}$$",
+            "merge"
+        ]
+    },
+    {
+        "id": "a640c04row4f-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculating the Average Price",
+        "text": "To find the average price per nugget, you need to multiply the average weight by the price per ounce. This will give you the cost for each chain.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row4f-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$merged[\"average_weight\"]*merged[\"price_per_ounce\"] merged[\"average_weight\"]*merged[\"price_per_ounce\"]$$"
+        ],
+        "dependencies": [
+            "a640c04row4f-h4"
+        ],
+        "title": "Filling in the Blank",
+        "text": "What operation will you perform to calculate the average price per nugget?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$merged[\"average_weight\"]+merged[\"price_per_ounce\"]+merged[\"average_weight\"]+merged[\"price_per_ounce\"]$$",
+            "$$merged[\"weight\"]*merged[\"price_per_ounce\"] merged[\"weight\"]*merged[\"price_per_ounce\"]$$",
+            "$$\\frac{merged[\"average_weight\"]/merged[\"price_per_ounce\"]}{merged[\"average_weight\"]/merged[\"price_per_ounce\"]}$$",
+            "$$merged[\"average_weight\"]*merged[\"price_per_ounce\"] merged[\"average_weight\"]*merged[\"price_per_ounce\"]$$",
+            "$$\\frac{merged[\"price_per_ounce\"]/merged[\"average_weight\"]}{merged[\"price_per_ounce\"]/merged[\"average_weight\"]}$$"
+        ]
+    }
+]

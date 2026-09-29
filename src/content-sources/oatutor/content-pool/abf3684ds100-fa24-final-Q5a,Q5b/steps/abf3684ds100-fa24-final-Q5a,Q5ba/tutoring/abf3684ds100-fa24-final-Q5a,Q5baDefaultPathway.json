@@ -1,0 +1,68 @@
+[
+    {
+        "id": "abf3684ds100-fa24-final-Q5a,Q5ba-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Stochastic Gradient Descent",
+        "text": "Think about how stochastic gradient descent (SGD) updates the weights using a single data point at a time. How might this affect the convergence speed compared to batch gradient descent, which uses the entire dataset for each update?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa24-final-Q5a,Q5ba-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring Convex Loss Functions",
+        "text": "Consider the properties of a convex loss function. What does it mean for a function to be convex, and how does this property influence the optimization process?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa24-final-Q5a,Q5ba-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Stochastic gradient descent can converge faster due to its noisy updates, which help escape local minima."
+        ],
+        "dependencies": [
+            "abf3684ds100-fa24-final-Q5a,Q5ba-h1"
+        ],
+        "title": "Comparing Convergence",
+        "text": "Which of the following statements is true about the convergence of stochastic gradient descent compared to batch gradient descent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Batch gradient descent converges faster",
+            "Both converge at the same rate",
+            "Stochastic gradient descent can converge faster due to its noisy updates, which help escape local minima.",
+            "Stochastic gradient descent converges faster"
+        ]
+    },
+    {
+        "id": "abf3684ds100-fa24-final-Q5a,Q5ba-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Convexity ensures that any local minimum is a global minimum, simplifying the optimization process."
+        ],
+        "dependencies": [
+            "abf3684ds100-fa24-final-Q5a,Q5ba-h2"
+        ],
+        "title": "Convexity and Optimization",
+        "text": "How does the convexity of a loss function affect the optimization process?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Convexity ensures any local minimum is a global minimum",
+            "Convexity ensures that any local minimum is a global minimum, simplifying the optimization process.",
+            "Convexity has no effect on optimization",
+            "Convexity makes optimization harder"
+        ]
+    }
+]

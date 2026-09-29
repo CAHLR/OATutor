@@ -1,0 +1,82 @@
+[
+    {
+        "id": "aba1299row10p2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Parameter Vector",
+        "text": "The parameter vector theta represents the coefficients in your linear regression model. Since you have $$9$$ features and an intercept, how many coefficients do you think you need?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10p2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row10p2b-h1"
+        ],
+        "title": "Shape of the Design Matrix",
+        "text": "Consider the design matrix X. It includes all your features plus an intercept. What would be the dimensions of X if you have $$400$$ flight records and $$9$$ features?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10p2b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "400x10"
+        ],
+        "dependencies": [
+            "aba1299row10p2b-h2"
+        ],
+        "title": "Dimensions of X",
+        "text": "If X has $$400$$ rows (one for each flight record) and $$10$$ columns (9 features plus an intercept), what is the shape of X?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "400x10",
+            ">10x400",
+            ">400x9",
+            ">9x400"
+        ]
+    },
+    {
+        "id": "aba1299row10p2b-h4",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row10p2b-h3"
+        ],
+        "title": "Relating X and Theta",
+        "text": "The parameter vector theta is used to multiply with the design matrix X to predict the output. If X is 400x10, what should be the shape of theta to make this multiplication possible?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10p2b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "10x1"
+        ],
+        "dependencies": [
+            "aba1299row10p2b-h4"
+        ],
+        "title": "Shape of Theta",
+        "text": "Given that X is 400x10, what is the shape of theta if it needs to multiply with X to produce a 400x1 output vector?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "10x1",
+            ">1x10",
+            ">400x1",
+            ">10x400"
+        ]
+    }
+]

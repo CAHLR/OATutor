@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a89b247ds100-sp24-final-Q6e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Risk",
+        "text": "Model risk is the sum of model variance and observational variance. Can you calculate the model risk for the new model using the given variances?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp24-final-Q6e-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Model Variance and Observational Variance",
+        "text": "Remember that adding more features can reduce model variance, but it might not affect observational variance. How does this relate to the changes in model risk?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp24-final-Q6e-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp24-final-Q6e-h1"
+        ],
+        "title": "Calculate New Model Risk",
+        "text": "Given the new model variance of $$5$$ and observational variance of $$2$$, what is the new model risk?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$7$$",
+            "$$10$$",
+            "$$12$$",
+            "$$5$$",
+            "$$7$$"
+        ]
+    },
+    {
+        "id": "a89b247ds100-sp24-final-Q6e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Model Variance"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp24-final-Q6e-h2"
+        ],
+        "title": "Impact of Adding Features",
+        "text": "When features are added to a model, which of the following is most likely to decrease?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Model Variance",
+            "Observational Variance",
+            "Both",
+            "Neither"
+        ]
+    }
+]

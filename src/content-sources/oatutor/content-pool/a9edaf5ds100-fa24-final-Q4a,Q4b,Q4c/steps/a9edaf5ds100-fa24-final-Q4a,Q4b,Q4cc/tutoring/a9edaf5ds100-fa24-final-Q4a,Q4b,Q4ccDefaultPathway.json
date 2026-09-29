@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4cc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Ridge Regression",
+        "text": "Ridge regression is a type of linear regression that includes a regularization term. This term is controlled by the hyper-parameter lambda (\u03bb). When \u03bb is $$0$$, ridge regression becomes ordinary least squares regression.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4cc-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4cc-h1"
+        ],
+        "title": "Effect of Lambda on Solutions",
+        "text": "When \u03bb is $$0$$, the regularization term does not affect the model. Consider how this impacts the uniqueness of the solution in ordinary least squares regression.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4cc-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4cc-h2"
+        ],
+        "title": "Exploring Ordinary Least Squares",
+        "text": "Does ordinary least squares regression always have a unique solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

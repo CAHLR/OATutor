@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a9edaf5ds100-sp21-final-Q13e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "When you increase the regularization coefficient \\(\\lambda\\), think about how it affects the model's complexity. Does it make the model more flexible or more constrained?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp21-final-Q13e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-sp21-final-Q13e-h1"
+        ],
+        "title": "Bias and Regularization",
+        "text": "Consider how adding more regularization might impact the bias of the model. Does it tend to increase or decrease as the model becomes less complex?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp21-final-Q13e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "more constrained"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp21-final-Q13e-h2"
+        ],
+        "title": "Effect of Increasing \\(\\lambda\\)",
+        "text": "As \\(\\lambda\\) increases, the model becomes:",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "more flexible",
+            "more constrained"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-sp21-final-Q13e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "increases"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp21-final-Q13e-h3"
+        ],
+        "title": "Bias Change with Regularization",
+        "text": "With increased regularization, the bias of the model:",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "increases",
+            "decreases"
+        ]
+    }
+]

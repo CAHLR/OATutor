@@ -1,0 +1,102 @@
+[
+    {
+        "id": "a92ac99ds100-fa17-final-Q10e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Diagram",
+        "text": "The diagram represents the process of bootstrapping. It starts with a population and involves taking samples, calculating statistics, and generating a distribution of those statistics.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q10e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q10e-h1"
+        ],
+        "title": "Identifying the Population",
+        "text": "Look at the first part of the diagram. It represents the entire group from which samples are drawn. What term is used for this group?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q10e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Population"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q10e-h2"
+        ],
+        "title": "Filling Blank $$1$$",
+        "text": "What is the term for the entire group from which samples are drawn?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Population",
+            "Bootstrap population",
+            "Observed sample",
+            "Expected sample",
+            "Bootstrap sample",
+            "Sampling distribution",
+            "Sampling",
+            "Bootstrapping",
+            "Bootstrap sampling distribution",
+            "Empirical distribution",
+            "True distribution",
+            "Population parameter",
+            "Sample Statistic",
+            "Bootstrap Statistic"
+        ]
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q10e-h4",
+        "type": "hint",
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q10e-h1"
+        ],
+        "title": "Understanding Sample Statistic",
+        "text": "After drawing a sample from the population, a statistic is calculated. This statistic is an estimate based on the sample. What is this called?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q10e-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Sample Statistic"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q10e-h4"
+        ],
+        "title": "Filling Blank $$5$$",
+        "text": "What is the term for a statistic calculated from a sample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Population",
+            "Bootstrap population",
+            "Observed sample",
+            "Expected sample",
+            "Bootstrap sample",
+            "Sampling distribution",
+            "Sampling",
+            "Bootstrapping",
+            "Bootstrap sampling distribution",
+            "Empirical distribution",
+            "True distribution",
+            "Population parameter",
+            "Sample Statistic",
+            "Bootstrap Statistic"
+        ]
+    }
+]

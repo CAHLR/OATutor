@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3dc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "Notice how the code creates new columns for each unique genre. This process is known as one-hot encoding. It transforms categorical data into a format that can be provided to ML algorithms to do a better job in prediction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3dc-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Checking for Unique Solutions",
+        "text": "In linear regression, a unique solution exists if the matrix of features is full rank. Consider how one-hot encoding affects the rank of the feature matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3dc-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The feature matrix must be full rank."
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp24-final-Q3b,Q3c,Q3dc-h2"
+        ],
+        "title": "Matrix Rank and Unique Solutions",
+        "text": "What condition must the feature matrix satisfy to ensure a unique solution in linear regression?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The feature matrix must be full rank.",
+            "The feature matrix must be square.",
+            "The feature matrix must have more rows than columns.",
+            "The feature matrix must be symmetric."
+        ]
+    }
+]

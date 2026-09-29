@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a98a015ds100-sp21-final-Q11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It reduces the dimensionality of the data while preserving as much variance as possible.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp21-final-Q11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp21-final-Q11a-h1"
+        ],
+        "title": "First Principal Component",
+        "text": "The first principal component is the direction in which the data varies the most. It is the line that best fits the data in terms of minimizing the squared distances from the data points to the line.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp21-final-Q11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp21-final-Q11a-h2"
+        ],
+        "title": "Reconstruction Error",
+        "text": "Reconstruction error is the difference between the original data and the data reconstructed from the principal components. Lower reconstruction error means the principal component captures more of the data's variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp21-final-Q11a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp21-final-Q11a-h3"
+        ],
+        "title": "Analyzing Plot A",
+        "text": "Look at Plot A. Does the data seem to have a clear direction of maximum variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

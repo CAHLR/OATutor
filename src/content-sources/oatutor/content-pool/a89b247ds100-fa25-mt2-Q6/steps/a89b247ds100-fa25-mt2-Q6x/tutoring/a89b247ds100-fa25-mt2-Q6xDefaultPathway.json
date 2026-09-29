@@ -1,0 +1,52 @@
+[
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6x-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LASSO Regularization",
+        "text": "LASSO regularization adds a penalty equal to the absolute value of the magnitude of coefficients. This can lead to some coefficients being exactly zero, effectively selecting a simpler model. How might this affect the model's performance on unseen data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6x-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Impact on Model Bias",
+        "text": "Consider how reducing the complexity of a model by setting some coefficients to zero might affect the model's bias. Does it increase or decrease?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6x-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect on Model Variance",
+        "text": "Think about how a simpler model with fewer parameters might influence the model's variance. Would it be more stable or more sensitive to changes in the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6x-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [],
+        "title": "Possible Effects on MSE",
+        "text": "What are the possible effects of using LASSO regularization on the MSE of held-out test data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    }
+]

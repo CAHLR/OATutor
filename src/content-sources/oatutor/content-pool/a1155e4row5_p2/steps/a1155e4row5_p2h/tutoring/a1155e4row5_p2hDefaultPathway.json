@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a1155e4row5_p2h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Boxcar Kernel",
+        "text": "The boxcar kernel is a simple kernel function that assigns equal weight to all points within a certain distance (bandwidth) from the point of interest. It is also known as a rectangular kernel.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p2h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row5_p2h-h1"
+        ],
+        "title": "Bandwidth and Its Effect",
+        "text": "The bandwidth (\\alpha) determines the width of the boxcar kernel. A smaller bandwidth results in a more localized estimate, while a larger bandwidth smooths the estimate over a wider range.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p2h-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.6667$$"
+        ],
+        "dependencies": [
+            "a1155e4row5_p2h-h2"
+        ],
+        "title": "Calculating Density with Boxcar Kernel",
+        "text": "For a point $$x$$, the boxcar kernel density estimate is calculated by counting the number of data points within the bandwidth range of $$x$$ and dividing by the total number of data points and the bandwidth. What is the density estimate at $$x=2$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0.6667$$",
+            "$$0.3333$$",
+            "$$0.5$$",
+            "$$0.6667$$",
+            "$$1.0$$"
+        ]
+    },
+    {
+        "id": "a1155e4row5_p2h-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row5_p2h-h3"
+        ],
+        "title": "Interpreting the Plot",
+        "text": "In the plot, each bar represents the density estimate at a data point. The height of the bar corresponds to the density value calculated using the boxcar kernel.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

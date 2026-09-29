@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a89b247ds100-fa18-final-Q14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plot",
+        "text": "Notice how the plot shows a decreasing trend as the value of $$d$$ increases. Think about what this might imply about the relationship between $$d$$ and the y-axis variable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q14a-h1"
+        ],
+        "title": "Training Error Behavior",
+        "text": "Consider how training error behaves as the complexity of the model increases. Does it typically increase, decrease, or stay the same?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q14a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Training Error"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q14a-h2"
+        ],
+        "title": "Possible Y-Axis Labels",
+        "text": "Which of the following could the y-axis represent based on the plot's behavior?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Training Error",
+            "Validation Error",
+            "Model Complexity",
+            "Bias"
+        ]
+    }
+]

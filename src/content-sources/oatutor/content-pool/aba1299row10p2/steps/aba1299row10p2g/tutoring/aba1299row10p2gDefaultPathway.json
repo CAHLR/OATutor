@@ -1,0 +1,45 @@
+[
+    {
+        "id": "aba1299row10p2g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Residuals",
+        "text": "In an Ordinary Least Squares (OLS) regression, the residuals are the differences between the observed values and the predicted values. Think about what happens when you sum these differences across all observations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10p2g-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row10p2g-h1"
+        ],
+        "title": "Properties of Residuals",
+        "text": "Consider the property of the residuals in OLS regression. What does the model try to minimize, and how does this affect the sum of the residuals?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10p2g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aba1299row10p2g-h2"
+        ],
+        "title": "Sum of Residuals",
+        "text": "In OLS regression, the sum of the residuals is always zero. This is because the model minimizes the sum of squared residuals, which results in the residuals balancing out around zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

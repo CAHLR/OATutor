@@ -1,0 +1,56 @@
+[
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Dataset",
+        "text": "The dataset contains information about what students ate for lunch, including the types of food, servings, and total calories. Each row represents one lunch entry for a student.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6i-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Bootstrap Sampling",
+        "text": "Bootstrap sampling involves taking random samples with replacement from the dataset. This helps in estimating the distribution of a statistic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6i-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$replace=True$$"
+        ],
+        "dependencies": [],
+        "title": "Choosing the Correct Argument",
+        "text": "What should be the second argument to lunch_mat.sample()?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$replace=True$$",
+            "$$replace=False$$",
+            "None",
+            "$$0$$",
+            "True"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6i-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-sp22-mt2-Q6i-h3"
+        ],
+        "title": "Replacement in Sampling",
+        "text": "When sampling with replacement, each sample can be selected more than once. This is crucial for bootstrap sampling.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

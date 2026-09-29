@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a9edaf5ds100-su25-final-Q2dh-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "Gradient descent is an optimization algorithm used to minimize a function by iteratively moving towards the steepest descent, as defined by the negative of the gradient. Can you think of why it might work with both convex and non-convex functions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su25-final-Q2dh-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Convex functions have a single global minimum, while $$non-convex$$ functions can have multiple local minima."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su25-final-Q2dh-h1"
+        ],
+        "title": "Convex vs Non-Convex Functions",
+        "text": "Which of the following statements is true about convex and non-convex functions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Convex functions have a single global minimum, while $$non-convex$$ functions can have multiple local minima.",
+            "Convex functions have multiple local minima, while $$non-convex$$ functions have a single global minimum.",
+            "Both convex and $$non-convex$$ functions have a single global minimum."
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-su25-final-Q2dh-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-su25-final-Q2dh-h2"
+        ],
+        "title": "Gradient Updates",
+        "text": "When using gradient descent, the algorithm updates parameters by moving in the direction of the negative gradient. This is because the gradient points in the direction of the steepest increase. How might this help in finding the minimum of a function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su25-final-Q2dh-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The direction of the gradient indicates the direction of the steepest increase of the function."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su25-final-Q2dh-h3"
+        ],
+        "title": "Direction of Gradient",
+        "text": "What does the direction of the gradient indicate in the context of optimization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The direction of the gradient indicates the direction of the steepest increase of the function.",
+            "The direction of the gradient indicates the direction of the steepest decrease of the function.",
+            "The direction of the gradient indicates the direction of no change in the function."
+        ]
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "id": "a1155e4row8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Visualizations",
+        "text": "When considering visualizations for a single numerical variable like price, think about how you can display the distribution of values. Common options include histograms, box plots, and density plots.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row8b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Histogram"
+        ],
+        "dependencies": [
+            "a1155e4row8b-h1"
+        ],
+        "title": "Choosing the Right Visualization",
+        "text": "Which of the following visualizations can show the distribution of a single numerical variable like price?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Histogram",
+            "Scatter Plot",
+            "Bar Chart",
+            "Line Graph"
+        ]
+    }
+]

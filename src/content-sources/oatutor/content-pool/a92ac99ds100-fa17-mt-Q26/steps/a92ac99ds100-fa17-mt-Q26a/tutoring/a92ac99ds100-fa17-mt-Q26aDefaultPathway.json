@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a92ac99ds100-fa17-mt-Q26a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Sampling Distributions",
+        "text": "When you take multiple samples from a population and calculate the mean of each sample, the distribution of these sample means tends to form a specific shape. What shape do you think this is?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-mt-Q26a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a92ac99ds100-fa17-mt-Q26a-h1"
+        ],
+        "title": "Central Limit Theorem Insight",
+        "text": "The Central Limit Theorem tells us something important about the distribution of sample means, especially as the sample size increases. How does this theorem describe the shape of the distribution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-mt-Q26a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A histogram of $$10000$$ sample means from samples of size $$n=1000$$."
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-mt-Q26a-h2"
+        ],
+        "title": "Sample Size and Distribution Shape",
+        "text": "Consider the effect of sample size on the distribution of sample means. Which of the following is most likely to resemble a normal distribution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A histogram of $$10000$$ sample means from samples of size $$n=1000$$.",
+            "A histogram of incomes from a SRS of $$n=10000$$ households.",
+            "A histogram of incomes from the entire census.",
+            "None of these would resemble a normal distribution."
+        ]
+    }
+]

@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-final-Q5j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Zero-One Loss",
+        "text": "The zero-one loss function is different from the cross-entropy loss because it considers both the model parameters and the threshold. Think about how changing the threshold might affect the classification results.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5j-h1"
+        ],
+        "title": "Recall and Zero-One Loss",
+        "text": "Recall is a measure of how many actual positive cases were correctly identified by the model. Consider how the zero-one loss function might prioritize different aspects of the classification compared to recall.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The proportion of actual positives correctly identified.|The proportion of actual negatives correctly identified.|The proportion of predicted positives that are correct.|The proportion of predicted negatives that are correct."
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5j-h2"
+        ],
+        "title": "Exploring Recall",
+        "text": "Which of the following best describes recall in the context of classification?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The proportion of actual negatives correctly identified.",
+            "The proportion of actual positives correctly identified.",
+            "The proportion of actual positives correctly identified.|The proportion of actual negatives correctly identified.|The proportion of predicted positives that are correct.|The proportion of predicted negatives that are correct.",
+            "The proportion of predicted negatives that are correct.",
+            "The proportion of predicted positives that are correct."
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5j-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5j-h3"
+        ],
+        "title": "Threshold's Role in Classification",
+        "text": "The threshold T in a classification model determines the cutoff point for deciding between classes. How might adjusting T impact the model's performance in terms of precision and recall?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

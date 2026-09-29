@@ -1,0 +1,34 @@
+[
+    {
+        "id": "a72a45crow6d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Selection Bias",
+        "text": "Selection bias occurs when the sample collected is not representative of the population intended to be analyzed. Consider how offering extra credit might influence who chooses to participate in the survey.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow6d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Offering extra credit may attract students who are more $$grade-conscious$$, potentially skewing the sample."
+        ],
+        "dependencies": [
+            "a72a45crow6d-h1"
+        ],
+        "title": "Evaluating the Sampling Method",
+        "text": "Which of the following could be a reason for selection bias in Rachel's sampling method?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Offering extra credit may attract students who are more $$grade-conscious$$, potentially skewing the sample.",
+            "The survey is only available to students who use public transportation.",
+            "The survey is conducted online, excluding students without internet access."
+        ]
+    }
+]

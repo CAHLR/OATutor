@@ -1,0 +1,226 @@
+[
+    {
+        "id": "a1155e4row5_p1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variable Types",
+        "text": "Consider what kind of information each column represents. For example, the 'name' column contains unique identifiers for each staff member. What type of data does this suggest?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p1a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Qualitative nominal"
+        ],
+        "dependencies": [
+            "a1155e4row5_p1a-h1"
+        ],
+        "title": "Variable Type for 'name'",
+        "text": "The best variable type for the column 'name' is:",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Qualitative ordinal",
+            "Qualitative nominal",
+            "Quantitative"
+        ]
+    },
+    {
+        "id": "a1155e4row5_p1a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Role Column Analysis",
+        "text": "The 'role' column categorizes staff into specific groups. Think about whether these categories have a natural order or not.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p1a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Qualitative nominal"
+        ],
+        "dependencies": [
+            "a1155e4row5_p1a-h3"
+        ],
+        "title": "Variable Type for 'role'",
+        "text": "The best variable type for the column 'role' is:",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Qualitative ordinal",
+            "Qualitative nominal",
+            "Quantitative"
+        ]
+    },
+    {
+        "id": "a1155e4row5_p1a-h5",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Graduation Status",
+        "text": "The $$'is_{graduating'}$$ column indicates a true or false condition. What type of data does this represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p1a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Qualitative nominal"
+        ],
+        "dependencies": [
+            "a1155e4row5_p1a-h5"
+        ],
+        "title": "Variable Type for $$'is_{graduating'}$$",
+        "text": "The best variable type for the column $$'is_{graduating'}$$ is:",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Qualitative ordinal",
+            "Qualitative nominal",
+            "Quantitative"
+        ]
+    },
+    {
+        "id": "a1155e4row5_p1a-h7",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Discussion Day Analysis",
+        "text": "The $$'disc_{day'}$$ column specifies days of the week or no discussion. Consider if these values have a natural order.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p1a-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Qualitative nominal"
+        ],
+        "dependencies": [
+            "a1155e4row5_p1a-h7"
+        ],
+        "title": "Variable Type for $$'disc_{day'}$$",
+        "text": "The best variable type for the column $$'disc_{day'}$$ is:",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Qualitative ordinal",
+            "Qualitative nominal",
+            "Quantitative"
+        ]
+    },
+    {
+        "id": "a1155e4row5_p1a-h9",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Office Hours Tickets",
+        "text": "The $$'oh_{tickets'}$$ column counts the number of tickets resolved. What type of data does this suggest?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p1a-h10",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Quantitative"
+        ],
+        "dependencies": [
+            "a1155e4row5_p1a-h9"
+        ],
+        "title": "Variable Type for $$'oh_{tickets'}$$",
+        "text": "The best variable type for the column $$'oh_{tickets'}$$ is:",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Qualitative ordinal",
+            "Qualitative nominal",
+            "Quantitative"
+        ]
+    },
+    {
+        "id": "a1155e4row5_p1a-h11",
+        "type": "hint",
+        "dependencies": [],
+        "title": "EdStem Hours Analysis",
+        "text": "The $$'ed_{hours'}$$ column measures time spent in hours. Consider what type of data this represents.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p1a-h12",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Quantitative"
+        ],
+        "dependencies": [
+            "a1155e4row5_p1a-h11"
+        ],
+        "title": "Variable Type for $$'ed_{hours'}$$",
+        "text": "The best variable type for the column $$'ed_{hours'}$$ is:",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Qualitative ordinal",
+            "Qualitative nominal",
+            "Quantitative"
+        ]
+    },
+    {
+        "id": "a1155e4row5_p1a-h13",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Graduation Day Analysis",
+        "text": "The $$'grad_{day'}$$ column contains dates. Think about how dates are typically categorized in data analysis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p1a-h14",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Quantitative"
+        ],
+        "dependencies": [
+            "a1155e4row5_p1a-h13"
+        ],
+        "title": "Variable Type for $$'grad_{day'}$$",
+        "text": "The best variable type for the column $$'grad_{day'}$$ is:",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Qualitative ordinal",
+            "Qualitative nominal",
+            "Quantitative"
+        ]
+    }
+]

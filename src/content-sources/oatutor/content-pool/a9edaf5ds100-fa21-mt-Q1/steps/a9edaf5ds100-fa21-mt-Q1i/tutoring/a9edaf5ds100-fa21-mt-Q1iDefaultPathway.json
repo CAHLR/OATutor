@@ -1,0 +1,51 @@
+[
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding N-grams",
+        "text": "Think about how N-grams capture sequences. What happens when you have overlapping sequences?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1i-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Non-consecutive Segments",
+        "text": "Consider how N-grams might mistakenly group non-consecutive letters. How could this affect the meaning of the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1i-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Meaningless Segments",
+        "text": "What happens when N-grams capture segments that don't have biological significance? Think about segments shorter than three letters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1i-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [],
+        "title": "Wrap-around Segments",
+        "text": "Does DNA wrap around like a circle? How might N-grams mistakenly capture sequences that don't exist in the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

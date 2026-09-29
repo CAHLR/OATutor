@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a1bb75eds100-su20-final-Q6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding DataFrame Filtering",
+        "text": "When filtering a DataFrame, ensure that the condition inside the brackets is correctly specified. For example, to filter rows where the 'generation' is $$6$$, you would use $$`consoles['generation']==6`$$. This condition should be inside the brackets of the DataFrame.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su20-final-Q6b-h1"
+        ],
+        "title": "Using loc for Row Selection",
+        "text": "The `loc` method is used to select rows and columns by labels. If you want to select rows based on a condition, ensure that the condition is applied before using `loc`. For example, to select rows where the 'year' is less than $$2000$$, you should apply this condition before using `loc`.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "consoles.loc[consoles['year']<2000, 'name']"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su20-final-Q6b-h2"
+        ],
+        "title": "Correcting the loc Usage",
+        "text": "Which of the following correctly uses `loc` to filter consoles released before the year 2000?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "consoles.loc[consoles['year']<2000, 'name']",
+            "consoles.loc[:2000, 'name']",
+            "consoles.loc[consoles['year']>2000, 'name']"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su20-final-Q6b-h3"
+        ],
+        "title": "Combining Conditions",
+        "text": "To filter data based on multiple conditions, you can combine them using the `&` operator. Ensure each condition is enclosed in parentheses. For example, to filter for generation $$6$$ and year less than $$2000$$, you would use $$`(consoles['generation']==6)$$ & $$consoles[primesymbolyearprimesymbol]<2000`$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

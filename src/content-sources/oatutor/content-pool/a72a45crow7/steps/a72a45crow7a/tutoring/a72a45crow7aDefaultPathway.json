@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a72a45crow7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regular Expressions",
+        "text": "Regular expressions are patterns used to match character combinations in strings. They are very powerful for searching and manipulating text. In this case, you need to remove leading zeroes from the room numbers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a72a45crow7a-h1"
+        ],
+        "title": "Identifying Leading Zeroes",
+        "text": "Leading zeroes are zeroes that appear at the beginning of a string. For example, in '06A', '0' is a leading zero. The goal is to remove these zeroes while keeping the rest of the string intact.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a72a45crow7a-h2"
+        ],
+        "title": "Using Regular Expression Patterns",
+        "text": "In regular expressions, the symbol $$'0 '$$ can be used to match zero or more occurrences of the digit '0'. This can help in identifying and removing leading zeroes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow7a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "0*([\\dA-z]+)"
+        ],
+        "dependencies": [
+            "a72a45crow7a-h3"
+        ],
+        "title": "Choosing the Correct Pattern",
+        "text": "Which regular expression pattern will correctly remove leading zeroes from the room numbers?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "0*([\\dA-z]+)",
+            "0+([\\dA-z]+)",
+            "0*([\\d]+)",
+            "**0([\\dA-z]+)$",
+            "([\\dA-z]+)0*"
+        ]
+    }
+]

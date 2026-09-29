@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a89b247ds100-su20-final-Q5af-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting in models. It adds a penalty to the loss function to discourage complex models. Can you think about how this might affect the parameters of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su20-final-Q5af-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Role of Lambda in Ridge Regression",
+        "text": "In ridge regression, the regularization parameter lambda controls the strength of the penalty applied to the model's coefficients. Consider how changing lambda might influence the model's complexity and the coefficients' values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su20-final-Q5af-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [],
+        "title": "Is Lambda Fixed?",
+        "text": "Think about whether lambda is a parameter that is set before the model is trained or if it is something that is determined by the data itself.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

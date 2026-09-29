@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a98a015ds100-sp25-final-Q4a,Q4bb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It does this by transforming the original features into a new set of features called principal components. These components are linear combinations of the original features.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp25-final-Q4a,Q4bb-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp25-final-Q4a,Q4bb-h1"
+        ],
+        "title": "Linear Combinations in PCA",
+        "text": "When we say that the latent features in PCA are linear combinations of the original features, it means each principal component is formed by multiplying each original feature by a coefficient and summing them up. This transformation helps in reducing the dimensionality of the data while preserving as much variance as possible.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp25-final-Q4a,Q4bb-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp25-final-Q4a,Q4bb-h2"
+        ],
+        "title": "True or False: PCA and Linear Combinations",
+        "text": "The latent features constructed by PCA are linear combinations of the original features.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,84 @@
+[
+    {
+        "id": "a1bb75eds100-fa20-final-Q9k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Logistic Function",
+        "text": "The logistic function, also known as the sigmoid function, is used to model probabilities. It transforms any real-valued number into a value between $$0$$ and $$1$$. The formula is given by $$sigma(z)=\\frac{1}{1+e^{\\left(-z\\right)}}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9k-h1"
+        ],
+        "title": "Calculate the Linear Combination",
+        "text": "To find the value of $$z$$ in the logistic function, calculate the linear combination of the features and the parameters: $$z=\\theta_1 hue+\\theta_2 abv$$. Substitute the given values for hue and abv.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9k-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-3}{2}$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9k-h2"
+        ],
+        "title": "Substitute the Values",
+        "text": "What is the value of $$z$$ when you substitute $$hue=\\frac{1}{4}$$ and $$abv=-2$$ into the equation $$z=2hue+1abv$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{-3}{2}$$",
+            "$$\\frac{-3}{2}$$",
+            "$$\\frac{1}{2}$$",
+            "$$2$$",
+            "$$\\frac{3}{2}$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9k-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9k-h3"
+        ],
+        "title": "Compute the Probability",
+        "text": "Once you have the value of $$z$$, use the logistic function to compute the probability gamma. Remember, $$gamma=sigma(z)=\\frac{1}{1+e^{\\left(-z\\right)}}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9k-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.1824$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9k-h4"
+        ],
+        "title": "Calculate Gamma",
+        "text": "What is the value of gamma when $$z=\\frac{-3}{2}$$? Use the formula $$gamma=\\frac{1}{1+e^{\\left(-z\\right)}}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0.1824$$",
+            "$$0.1824$$",
+            "$$0.3775$$",
+            "$$0.6225$$",
+            "$$0.8176$$"
+        ]
+    }
+]

@@ -1,0 +1,98 @@
+[
+    {
+        "id": "a89b247ds100-sp19-final-Q8d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Estimator",
+        "text": "Think about what it means to estimate the maximum possible outcome of a die roll. What is the highest number you can roll on a 6-sided die?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp19-final-Q8d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-sp19-final-Q8d-h1"
+        ],
+        "title": "Mean of a Fair Die",
+        "text": "Consider the average value you would expect from rolling a fair 6-sided die. How do you calculate the mean of all possible outcomes?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp19-final-Q8d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-sp19-final-Q8d-h2"
+        ],
+        "title": "Variance of a Die Roll",
+        "text": "The variance of a single roll of a fair 6-sided die can be calculated using the formula for variance. Do you remember how to calculate it?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp19-final-Q8d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3.5$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp19-final-Q8d-h2"
+        ],
+        "title": "Calculating the Mean",
+        "text": "What is the mean of the numbers $$1$$ through 6?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$3.5$$",
+            "$$1$$",
+            "$$2$$",
+            "$$3.5$$",
+            "$$4$$",
+            "$$5$$"
+        ]
+    },
+    {
+        "id": "a89b247ds100-sp19-final-Q8d-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{35}{12}$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp19-final-Q8d-h3"
+        ],
+        "title": "Calculating the Variance",
+        "text": "What is the variance of a single roll of a fair 6-sided die?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{35}{12}$$",
+            "$$1$$",
+            "$$\\frac{35}{12}$$",
+            "$$5$$",
+            "$$6$$",
+            "$$\\frac{7}{12}$$"
+        ]
+    },
+    {
+        "id": "a89b247ds100-sp19-final-Q8d-h6",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-sp19-final-Q8d-h5"
+        ],
+        "title": "Mean Squared Error Formula",
+        "text": "The mean squared error (MSE) is the sum of the variance and the square of the bias. How can you apply this to the die roll problem?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

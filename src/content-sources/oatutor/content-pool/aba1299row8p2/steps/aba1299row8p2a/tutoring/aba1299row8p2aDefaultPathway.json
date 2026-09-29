@@ -1,0 +1,36 @@
+[
+    {
+        "id": "aba1299row8p2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Design Matrix",
+        "text": "The design matrix $X$ includes all the features of the data set plus an additional column for the intercept. If $X$ has $n$ columns, how many of these columns represent the actual features of the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row8p2a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$n-1$$"
+        ],
+        "dependencies": [
+            "aba1299row8p2a-h1"
+        ],
+        "title": "Counting the Features",
+        "text": "If the design matrix $X$ has $n$ columns, and one of these columns is for the intercept, how many columns are left for the features?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "> $$n+1$$",
+            "> $$n-1$$",
+            "> $$n-2$$",
+            "$$n$$",
+            "$$n-1$$"
+        ]
+    }
+]

@@ -1,0 +1,67 @@
+[
+    {
+        "id": "a89b247ds100-su19-final-Q6h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "In the context of one-hot encoding, each category of a categorical variable is represented by a binary column. For example, if the meat type is beef, the column $$'meat=beef'$$ will be $$1$$, and the others will be $$0$$. How does this affect the interpretation of the coefficients in the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6h-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting Box Plots",
+        "text": "Look at the box plot for the total cost based on the type of meat. Which type of meat seems to have the highest median total cost? How might this relate to the coefficients in the regression model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Higher"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6h-h2"
+        ],
+        "title": "Analyzing the Coefficient for Beef",
+        "text": "Based on the box plot, does beef generally have a higher, lower, or similar total cost compared to chicken and fish?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Higher",
+            "Lower",
+            "Similar"
+        ]
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6h-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Positive"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6h-h3"
+        ],
+        "title": "Determining the Sign of $$\\Theta_1$$",
+        "text": "Given that beef tends to have a higher total cost, what can you infer about the sign of $$\\theta_1$$, the coefficient for $$'meat=beef'$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Positive",
+            "Negative",
+            "Exactly $$0$$",
+            "Not enough info"
+        ]
+    }
+]

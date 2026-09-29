@@ -1,0 +1,33 @@
+[
+    {
+        "id": "a1155e4row10_p2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Hexplot",
+        "text": "A hexplot is useful for visualizing the relationship between two continuous variables. Consider whether $$'games_{played'}$$ fits this description.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a1155e4row10_p2b-h1"
+        ],
+        "title": "Choosing the Right Plot",
+        "text": "Is $$'games_{played'}$$ a continuous variable that you would want to compare with another continuous variable using a hexplot?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Total Variance",
+        "text": "The total variance of a centered and scaled design matrix is equal to the number of features (columns) in the matrix. How many columns are there in the given data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1l-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa19-mt2-Q1l-h1"
+        ],
+        "title": "Counting Features",
+        "text": "How many columns are present in the dataframe shown in the image?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$6$$",
+            "$$7$$",
+            "$$8$$",
+            "$$9$$",
+            "$$10$$"
+        ]
+    }
+]

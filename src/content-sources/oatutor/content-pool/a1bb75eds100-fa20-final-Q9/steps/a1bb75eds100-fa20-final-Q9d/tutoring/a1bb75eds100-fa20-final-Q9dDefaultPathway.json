@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a1bb75eds100-fa20-final-Q9d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logistic Regression",
+        "text": "Logistic regression is used to model the probability of a binary outcome based on one or more predictor variables. In this case, we're using hue and abv as predictors. Can you think about how these features might influence the probability of a wine being type 1?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Standardized Features",
+        "text": "Since the features are standardized, they have a mean of $$0$$ and a standard deviation of $$1$$. This means that the coefficients (theta_1 and theta_2) directly reflect the importance of each feature in predicting the wine type. How might this affect your interpretation of the coefficients?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [],
+        "title": "Linearly Separable Data",
+        "text": "Consider what it means for data to be linearly separable. If you can draw a straight line (or hyperplane in higher dimensions) that separates the two classes without any overlap, the data is linearly separable. Given this, is it possible to separate the wine types with a straight line using hue and abv?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

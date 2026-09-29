@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a98a015ds100-sp25-final-Q4a,Q4be-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Rank",
+        "text": "The rank of a matrix is determined by the number of non-zero singular values. Look at the diagonal of matrix S to identify these values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp25-final-Q4a,Q4be-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp25-final-Q4a,Q4be-h1"
+        ],
+        "title": "Counting Non-Zero Singular Values",
+        "text": "How many non-zero values are there on the diagonal of matrix S?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$2$$",
+            "$$3$$",
+            "$$6$$",
+            "$$9$$"
+        ]
+    }
+]

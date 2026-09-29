@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a98a015ds100-fa24-final-Q7g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA Components",
+        "text": "To find the component score of the first principal component, you need to use the matrices U, S, and V. Remember that the component scores are calculated using the formula: U * S.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa24-final-Q7g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa24-final-Q7g-h1"
+        ],
+        "title": "Matrix Multiplication",
+        "text": "When multiplying matrices, each element in the resulting matrix is the dot product of the corresponding row from the first matrix and the column from the second matrix. Try applying this to U and S.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa24-final-Q7g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{16}{3}$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa24-final-Q7g-h2"
+        ],
+        "title": "Calculate the First Component Score",
+        "text": "What is the result of multiplying the first row of U by the first column of S?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{4}{3}$$",
+            "$$\\frac{16}{3}$$",
+            "$$16$$",
+            "$$4$$",
+            "$$\\frac{1}{3}$$"
+        ]
+    }
+]

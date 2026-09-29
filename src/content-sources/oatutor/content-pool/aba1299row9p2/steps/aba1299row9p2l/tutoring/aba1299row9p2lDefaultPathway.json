@@ -1,0 +1,46 @@
+[
+    {
+        "id": "aba1299row9p2l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Orthogonality",
+        "text": "If a vector is orthogonal to the column space of a matrix, it means that the vector is perpendicular to every vector in that space. Think about what this implies for the projection of the vector onto the column space.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row9p2l-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row9p2l-h1"
+        ],
+        "title": "Projection Matrix",
+        "text": "The projection matrix $H$ projects any vector onto the column space of $X$. If a vector is orthogonal to this space, what would its projection be?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row9p2l-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It becomes the zero vector."
+        ],
+        "dependencies": [
+            "aba1299row9p2l-h2"
+        ],
+        "title": "Checking Orthogonality",
+        "text": "What happens to a vector when it is projected onto a space it is orthogonal to?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It becomes the zero vector.",
+            "It remains unchanged.",
+            "It doubles in magnitude."
+        ]
+    }
+]

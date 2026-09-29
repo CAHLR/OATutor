@@ -1,0 +1,44 @@
+[
+    {
+        "id": "abf3684ds100-su25-final-Q2u-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "Think about how gradient descent works. It updates the parameters in the direction that reduces the loss. What does this imply about the relationship between the estimated gradient and the true gradient?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2u-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Stochastic Gradient Descent",
+        "text": "Consider how stochastic gradient descent (SGD) differs from regular gradient descent. How does the randomness in SGD affect the gradient estimates?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2u-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [],
+        "title": "True Gradient vs. Estimated Gradient",
+        "text": "Which of the following statements is true about the relationship between the true gradient and the estimated gradient in stochastic gradient descent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "The estimated gradient is always equal to the true gradient",
+            "The estimated gradient is always greater than the true gradient",
+            "The estimated gradient is always less than the true gradient",
+            "The estimated gradient is an approximation of the true gradient"
+        ]
+    }
+]

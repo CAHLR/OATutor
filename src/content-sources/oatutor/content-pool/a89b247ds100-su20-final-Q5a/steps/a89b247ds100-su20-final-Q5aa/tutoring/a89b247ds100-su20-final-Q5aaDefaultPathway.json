@@ -1,0 +1,33 @@
+[
+    {
+        "id": "a89b247ds100-su20-final-Q5aa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the True Model",
+        "text": "Think about what $f_{\\theta**{*}}(x)$ represents in the context of the problem. It's the true underlying relationship between $X$ and $Y$. Consider whether this relationship changes or remains constant when generating $X$ and $Y$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su20-final-Q5aa-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a89b247ds100-su20-final-Q5aa-h1"
+        ],
+        "title": "Fixed or Variable?",
+        "text": "Is $f_{\\theta**{*}}(x)$ a fixed quantity in the true model used to generate $X$ and $Y$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

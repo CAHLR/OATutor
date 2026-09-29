@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a1155e4row9c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bandwidth in KDE",
+        "text": "The bandwidth in a KDE affects the smoothness of the curve. A smaller bandwidth results in a curve that closely follows the data points, showing more peaks and valleys. Consider how each curve looks in terms of smoothness and detail.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row9c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row9c-h1"
+        ],
+        "title": "Comparing the Curves",
+        "text": "Look at the density plots and observe which one has the most peaks. More peaks usually indicate a smaller bandwidth, as the curve is more sensitive to the data points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row9c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "D"
+        ],
+        "dependencies": [
+            "a1155e4row9c-h2"
+        ],
+        "title": "Identifying the Curve with Smallest Bandwidth",
+        "text": "Which KDE curve appears to have the most distinct peaks and valleys, indicating a smaller bandwidth?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    }
+]

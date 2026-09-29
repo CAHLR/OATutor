@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a72a45crow6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Sampling Frame",
+        "text": "Think about the group of individuals from which Rachel could potentially select her sample. This group should include everyone who could have been chosen, not just those who were actually selected.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow6b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a72a45crow6b-h1"
+        ],
+        "title": "Defining the Population",
+        "text": "Consider who Rachel is interested in studying. Is it just the students who received the BayPass, or is it a broader group?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow6b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All UC Berkeley students currently enrolled."
+        ],
+        "dependencies": [
+            "a72a45crow6b-h2"
+        ],
+        "title": "Identifying the Correct Sampling Frame",
+        "text": "Which of the following best describes the sampling frame for Rachel's study?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "All UC Berkeley students currently enrolled.",
+            "The 12,000 students who received a BayPass card.",
+            "All people who use Bay Area transit services.",
+            "All BayPass card holders in the Bay Area.",
+            "UC Berkeley students who responded to the survey."
+        ]
+    }
+]

@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a1bb75eds100-su20-mt2-Q8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Precision",
+        "text": "Precision is the ratio of true positive predictions to the total number of positive predictions made by the model. Can you identify which predictions are considered positive for Model C?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-mt2-Q8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su20-mt2-Q8a-h1"
+        ],
+        "title": "Identifying Positive Predictions",
+        "text": "For Model C, a prediction is positive if the predicted probability is greater than or equal to $$0.75$$. How many predictions meet this criterion?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-mt2-Q8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su20-mt2-Q8a-h2"
+        ],
+        "title": "True Positives for Model C",
+        "text": "A true positive occurs when both the true label and the predicted label are $$1$$. For Model C, which predictions are true positives?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-mt2-Q8a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su20-mt2-Q8a-h3"
+        ],
+        "title": "Calculating Precision",
+        "text": "Using the formula for precision, calculate the precision for Model C. Remember, precision is true positives divided by the sum of true positives and false positives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{1}{6}$$",
+            "$$\\frac{1}{3}$$",
+            "$$\\frac{1}{2}$$",
+            "$$1$$",
+            "$$\\frac{2}{3}$$"
+        ]
+    }
+]

@@ -1,0 +1,33 @@
+[
+    {
+        "id": "a1155e4row1h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Boxplots",
+        "text": "Boxplots are useful for showing the distribution of a single variable and comparing distributions across different categories. Think about whether temperature and workout time are categories or continuous variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row1h-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a1155e4row1h-h1"
+        ],
+        "title": "Choosing the Right Plot",
+        "text": "Consider whether side-by-side boxplots are suitable for visualizing the relationship between two continuous variables like temperature and workout time. Is this plot type appropriate?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

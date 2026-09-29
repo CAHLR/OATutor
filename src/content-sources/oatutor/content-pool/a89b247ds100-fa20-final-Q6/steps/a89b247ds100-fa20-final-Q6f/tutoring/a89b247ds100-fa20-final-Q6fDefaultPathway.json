@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a89b247ds100-fa20-final-Q6f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Pruning",
+        "text": "Pruning a decision tree involves removing branches that have little importance. Think about how this might affect the tree's complexity and its ability to adapt to different datasets.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa20-final-Q6f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa20-final-Q6f-h1"
+        ],
+        "title": "Variance in Decision Trees",
+        "text": "Consider how a simpler model, with fewer branches, might respond to variations in the data. Would it be more or less sensitive to changes?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa20-final-Q6f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decreases it"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa20-final-Q6f-h2"
+        ],
+        "title": "Effect of Pruning on Variance",
+        "text": "What happens to the variance of a decision tree when it is pruned?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increases it",
+            "Decreases it"
+        ]
+    }
+]

@@ -1,0 +1,76 @@
+[
+    {
+        "id": "a9edaf5ds100-su20-final-Q11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Fold Size",
+        "text": "To determine the size of each fold, think about how you would divide the total number of samples into k equal parts. What operation would you use to achieve this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q11a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "X.shape[0]/k"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su20-final-Q11a-h1"
+        ],
+        "title": "Calculating Fold Size",
+        "text": "Which of the following expressions correctly calculates the fold size?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "X.shape[0]/k",
+            "X.shape[0]*k",
+            "X.shape[1]/k"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q11a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Shuffling Indices",
+        "text": "The function np.random.permutation is used to shuffle the indices of the dataset. Why is shuffling important in cross-validation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q11a-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Creating Validation Indices",
+        "text": "For the validation indices, consider which part of the shuffled indices should be used for validation in each fold. How does this relate to the current fold number i?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q11a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "shuffled_idx[i*fold_size:(i+1)*fold_size]"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su20-final-Q11a-h4"
+        ],
+        "title": "Determining Validation Indices",
+        "text": "Which of the following expressions correctly selects the validation indices for the current fold?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "shuffled_idx[i*fold_size:(i+1)*fold_size]",
+            "$$shuffled_{idx[0:i*fold_size]}$$",
+            "shuffled_idx[(i+1)*fold_size:]"
+        ]
+    }
+]

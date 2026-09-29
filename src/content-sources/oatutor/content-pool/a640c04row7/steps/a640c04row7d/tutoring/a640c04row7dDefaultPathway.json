@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a640c04row7d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Pivot Tables",
+        "text": "To create a DataFrame that shows the average Aura for each brand based on whether the product was repurchased, consider using a pivot table. A pivot table allows you to summarize data and calculate averages based on specific conditions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row7d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a640c04row7d-h1"
+        ],
+        "title": "Choosing the Right Columns",
+        "text": "When setting up your pivot table, think about which columns should be used for values, index, and columns. The 'Aura' should be your values, 'Brand' should be your index, and 'Repurchased' should be your columns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row7d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "mean"
+        ],
+        "dependencies": [
+            "a640c04row7d-h2"
+        ],
+        "title": "Selecting the Aggregation Function",
+        "text": "What aggregation function should you use to find the average Aura?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "sum",
+            "mean",
+            "count",
+            "max"
+        ]
+    },
+    {
+        "id": "a640c04row7d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$fill_{value}=None$$"
+        ],
+        "dependencies": [
+            "a640c04row7d-h3"
+        ],
+        "title": "Handling Missing Data",
+        "text": "How should you handle categories with no data in your pivot table?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$fill_{value}=0$$",
+            "$$fill_{value}=None$$",
+            "$$dropna=True$$",
+            "$$fill_{value}=\\frac{'N}{A'}$$"
+        ]
+    }
+]

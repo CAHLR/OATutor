@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a1bb75eds100-sp24-final-Q8c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logistic Regression",
+        "text": "Logistic regression predicts the probability that a given input point belongs to a particular class. The model uses the logistic function to map predicted values to probabilities.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp24-final-Q8c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp24-final-Q8c-h1"
+        ],
+        "title": "Model Parameters",
+        "text": "The model parameters given are \\( \\hat{\\theta}=(-3,1,\\frac{1}{2}) \\). These represent the intercept and coefficients for the features \\( $$x_1$$ \\) and \\( $$x_2$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp24-final-Q8c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp24-final-Q8c-h2"
+        ],
+        "title": "Calculating the Linear Combination",
+        "text": "To find the linear combination for \\( x_{new}=(1,4) \\), use the formula: \\( $$\\theta_0$$ + $$\\theta_1 x_1$$ + $$\\theta_2 x_2$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp24-final-Q8c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp24-final-Q8c-h3"
+        ],
+        "title": "Applying the Logistic Function",
+        "text": "The logistic function is \\( \\sigma(z) $$=$$ \\frac{1}{1+e**{-z}} \\). Use this to convert the linear combination into a probability.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp24-final-Q8c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-\\ln\\left(p\\right)$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp24-final-Q8c-h4"
+        ],
+        "title": "Cross Entropy Loss",
+        "text": "What is the formula for cross entropy loss when the true label \\( $$y$$ \\) is 1?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-\\ln\\left(p\\right)$$",
+            "$$\\ln\\left(p\\right)$$",
+            "$$1-p$$",
+            "$$p$$"
+        ]
+    }
+]

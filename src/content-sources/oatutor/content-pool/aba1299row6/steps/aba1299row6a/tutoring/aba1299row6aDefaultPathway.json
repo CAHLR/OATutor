@@ -1,0 +1,82 @@
+[
+    {
+        "id": "aba1299row6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model we are using is $$y_{hat}=\\theta_0+\\theta_1 {critic_1}^2$$. With $$\\theta_0=2$$ and $$\\theta_1=1$$, try substituting the values of $$critic_1$$ from the dataset to predict $$y_{hat}$$ for each row.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row6a-h1"
+        ],
+        "title": "Calculating Predictions",
+        "text": "For Datapoint A, substitute $$critic_1=2$$ into the model equation. Calculate $$y_{hat}=2+1\\times2^2$$. What is the predicted value?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row6a-h2"
+        ],
+        "title": "Calculating Errors",
+        "text": "Once you have the predicted values, calculate the error for each datapoint by finding the difference between the predicted value and the actual $$self_{rating}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It adds a regularization term to the loss function."
+        ],
+        "dependencies": [
+            "aba1299row6a-h3"
+        ],
+        "title": "Understanding Ridge Regression",
+        "text": "Ridge regression adds a penalty to the loss function. The penalty is lambda times the square of the coefficients. How does this affect the calculation of empirical risk?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It adds a regularization term to the loss function.",
+            ">It changes the model equation.",
+            ">It affects the intercept.",
+            ">It removes the need for calculating errors."
+        ]
+    },
+    {
+        "id": "aba1299row6a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\sum {errors}^2+\\lambda {\\theta_1}^2$$"
+        ],
+        "dependencies": [
+            "aba1299row6a-h4"
+        ],
+        "title": "Calculating Empirical Risk",
+        "text": "To calculate the empirical risk, sum the squared errors for each datapoint and add the regularization term. What is the formula for the empirical risk in this case?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\sum {errors}^2+\\lambda {\\theta_1}^2$$",
+            ">sum(errors)+lambda*(theta_1**2)",
+            ">sum(errors**2)",
+            ">sum(errors)+lambda*(theta_0**2)"
+        ]
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a9edaf5ds100-sp24-final-Q4b,Q4c,Q4dc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LASSO Regression",
+        "text": "LASSO regression is a type of linear regression that includes a penalty term to prevent overfitting. This penalty term is controlled by the parameter lambda. What effect does increasing lambda have on the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp24-final-Q4b,Q4c,Q4dc-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Training vs. Validation Error",
+        "text": "If the training error is low but the validation error is high, this might indicate overfitting. Overfitting occurs when the model learns the training data too well, including its noise, and performs poorly on new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp24-final-Q4b,Q4c,Q4dc-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The model becomes simpler."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp24-final-Q4b,Q4c,Q4dc-h1"
+        ],
+        "title": "Effect of Lambda on Overfitting",
+        "text": "What happens to the complexity of the model as lambda increases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The model becomes more complex.",
+            "The model becomes simpler.",
+            "The model remains unchanged.",
+            "The model becomes unstable."
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-sp24-final-Q4b,Q4c,Q4dc-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase lambda."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp24-final-Q4b,Q4c,Q4dc-h2"
+        ],
+        "title": "Choosing the Right Lambda",
+        "text": "Given that increasing lambda reduces overfitting, what should Jessica do to address the high validation error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase lambda.",
+            "Decrease lambda.",
+            "Set $$lambda=0$$.",
+            "Remove all regularization."
+        ]
+    }
+]

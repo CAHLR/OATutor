@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a72a45crow6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Population of Interest",
+        "text": "Think about who Rachel is interested in studying. Is it all the people who use Bay Area transit services, or is it a specific group of people?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow6a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "UC Berkeley students"
+        ],
+        "dependencies": [
+            "a72a45crow6a-h1"
+        ],
+        "title": "Identifying the Population",
+        "text": "Who is Rachel specifically selecting for her study?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "UC Berkeley students",
+            "BayPass card holders",
+            "UC Berkeley students who use Bay Area transit services",
+            "People who use Bay Area transit services",
+            "Bay Area transit service operators"
+        ]
+    }
+]

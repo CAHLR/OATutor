@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a89b247ds100-su19-final-Q6\u0080-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Ridge Regression",
+        "text": "Ridge regression is a technique used to analyze multiple regression data that suffer from multicollinearity. It introduces a penalty term, controlled by the parameter lambda, to the loss function. This penalty term helps to shrink the coefficients and reduce overfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6\u0080-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting the Plots",
+        "text": "When looking at the plots, consider how the mean squared error (MSE) changes as lambda increases. A plot showing a decrease in MSE followed by an increase might indicate a balance between bias and variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6\u0080-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Plot A"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6\u0080-h2"
+        ],
+        "title": "Identifying Training Error",
+        "text": "Which plot shows a consistent increase in error as lambda increases, indicating overfitting is being reduced?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Plot A",
+            "Plot B",
+            "Plot C",
+            "Plot D"
+        ]
+    }
+]

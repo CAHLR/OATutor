@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a9edaf5ds100-fa20-final-Q7d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Standardization",
+        "text": "Standardizing a dataset means adjusting the values so that the mean of each column is $$0$$ and the variance is $$1$$. This process helps in comparing different datasets on a similar scale. Think about how this might affect the model's ability to generalize.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa20-final-Q7d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-fa20-final-Q7d-h1"
+        ],
+        "title": "Impact of Standardization on Overfitting",
+        "text": "Consider how standardizing the training set might influence the model's performance on unseen data. Does it make the model more flexible or more rigid? How does this relate to overfitting?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa20-final-Q7d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa20-final-Q7d-h2"
+        ],
+        "title": "Evaluating the Effect of Standardization",
+        "text": "When you standardize the training set, does it change the underlying patterns in the data? Think about whether this process introduces any bias or variance that could lead to overfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

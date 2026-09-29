@@ -1,0 +1,72 @@
+[
+    {
+        "id": "abf3684ds100-su25-final-Q2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Constant Models",
+        "text": "When considering a constant model, think about how the mean and median of a dataset relate to minimizing errors. Which one is more sensitive to outliers?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring MSE and MAE",
+        "text": "Mean Squared Error (MSE) and Mean Absolute Error (MAE) are both measures of prediction accuracy. Consider how each measure reacts to large errors. Which one squares the errors?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Median"
+        ],
+        "dependencies": [],
+        "title": "Choosing the Optimal Constant for MAE",
+        "text": "If you want to minimize the Mean Absolute Error (MAE), which central tendency measure should you consider?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Mean",
+            "Median",
+            "Mode"
+        ]
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Mean"
+        ],
+        "dependencies": [],
+        "title": "Choosing the Optimal Constant for MSE",
+        "text": "To minimize the Mean Squared Error (MSE), which central tendency measure is typically used?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Mean",
+            "Median",
+            "Mode"
+        ]
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2b-h5",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Multiple Optimal Constants for MAE",
+        "text": "Consider a dataset with an even number of data points. How might the median be represented in such a case? Could there be more than one value that minimizes the MAE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

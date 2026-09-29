@@ -1,0 +1,79 @@
+[
+    {
+        "id": "abf3684ds100-su25-mt-Q4b,Q4ca-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MAE",
+        "text": "The Mean Absolute Error (MAE) is a measure of errors between paired observations expressing the same phenomenon. It is calculated as the average of the absolute differences between predicted values and observed values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-mt-Q4b,Q4ca-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-su25-mt-Q4b,Q4ca-h1"
+        ],
+        "title": "Effect of Shuffling Data",
+        "text": "Consider what happens to the mean of a dataset when you shuffle the data. Does the mean change? How does this relate to the MAE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-mt-Q4b,Q4ca-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "abf3684ds100-su25-mt-Q4b,Q4ca-h2"
+        ],
+        "title": "Shuffling and Mean",
+        "text": "If you shuffle the order of the rows in a dataset, does the mean of the dataset change?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "abf3684ds100-su25-mt-Q4b,Q4ca-h4",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-su25-mt-Q4b,Q4ca-h3"
+        ],
+        "title": "MAE and Constant Model",
+        "text": "In a constant model where the prediction is always the same value, think about how the MAE is calculated. What role does the mean of the dataset play in this calculation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-mt-Q4b,Q4ca-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The mean of the observed values"
+        ],
+        "dependencies": [
+            "abf3684ds100-su25-mt-Q4b,Q4ca-h4"
+        ],
+        "title": "MAE Calculation",
+        "text": "When using a constant model, what value minimizes the MAE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The mean of the observed values",
+            "The median of the observed values",
+            "The mode of the observed values"
+        ]
+    }
+]

@@ -1,0 +1,81 @@
+[
+    {
+        "id": "a1bb75eds100-su20-final-Q6e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Code",
+        "text": "The code snippet `consoles[consoles['generation'] $$==$$ 7].shape[0]` is filtering the DataFrame for consoles of a specific generation. What generation is it filtering for?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su20-final-Q6e-h1"
+        ],
+        "title": "Checking the Condition",
+        "text": "The condition `consoles['generation'] $$==$$ 7` is checking for consoles that belong to the 7th generation. Is this the correct generation we are interested in?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su20-final-Q6e-h2"
+        ],
+        "title": "Correcting the Generation",
+        "text": "Which generation should the code be filtering for to find consoles released before the year 2000?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$6$$",
+            "$$7$$",
+            "$$8$$",
+            "$$5$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6e-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su20-final-Q6e-h3"
+        ],
+        "title": "Understanding the Year Condition",
+        "text": "The code does not currently check for the release year. How would you add a condition to filter for consoles released before the year 2000?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6e-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "consoles[(consoles['generation'] $$==$$ 6) & (consoles['year'] < 2000)].shape[0]"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su20-final-Q6e-h4"
+        ],
+        "title": "Adding the Year Condition",
+        "text": "How would you modify the code to include consoles released before the year 2000?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "consoles[(consoles['generation'] $$==$$ 6) & (consoles['year'] < 2000)].shape[0]",
+            "consoles[(consoles['generation'] $$==$$ 7) & (consoles['year'] < 2000)].shape[0]",
+            "consoles[(consoles['generation'] $$==$$ 6) & (consoles['year'] > 2000)].shape[0]"
+        ]
+    }
+]

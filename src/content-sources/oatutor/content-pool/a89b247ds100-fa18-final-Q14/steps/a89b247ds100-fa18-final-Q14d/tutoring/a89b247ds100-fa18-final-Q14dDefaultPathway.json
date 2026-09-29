@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a89b247ds100-fa18-final-Q14d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plot",
+        "text": "Observe how the y-axis value changes as the number of videos, $$d$$, increases. Consider what aspect of a model might decrease as more data is used.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q14d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q14d-h1"
+        ],
+        "title": "Possible Y-Axis Labels",
+        "text": "Which of the following could the y-axis represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Bias",
+            "Complexity",
+            "Error",
+            "FALSE",
+            "Variance"
+        ]
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-final-Q12ca-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Separability",
+        "text": "Think about what it means for data to be linearly separable. If you can draw a straight line (or hyperplane in higher dimensions) that perfectly separates the classes, what does that imply about the model's ability to classify the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q12ca-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring Logistic Regression",
+        "text": "Consider how logistic regression works. It tries to find a decision boundary that best separates the classes. If the model achieves 100% accuracy, what does that suggest about the decision boundary and the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q12ca-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Always True"
+        ],
+        "dependencies": [],
+        "title": "Analyzing Training Accuracy",
+        "text": "If a logistic regression model achieves 100% training accuracy, what can we infer about the relationship between the decision boundary and the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Always True",
+            "Sometimes True",
+            "Never True"
+        ]
+    }
+]

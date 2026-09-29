@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-final-Q7e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding ROC Curves",
+        "text": "The ROC curve is a graphical representation of the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings. It helps to visualize the performance of a binary classifier.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q7e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q7e-h1"
+        ],
+        "title": "Calculating TPR",
+        "text": "The true positive rate (TPR) is calculated as the number of true positives divided by the sum of true positives and false negatives. Think about how this relates to the variables a and $$d$$ in the pseudocode.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q7e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{a}{a+d}$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q7e-h2"
+        ],
+        "title": "Choose the Correct Formula for TPR",
+        "text": "Which of the following formulas correctly represents the true positive rate (TPR)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{a}{a+c}$$",
+            "$$\\frac{a}{a+b}$$",
+            "$$\\frac{a}{a+d}$$",
+            "$$\\frac{c}{b+c}$$",
+            "$$\\frac{d}{a+d}$$"
+        ]
+    }
+]

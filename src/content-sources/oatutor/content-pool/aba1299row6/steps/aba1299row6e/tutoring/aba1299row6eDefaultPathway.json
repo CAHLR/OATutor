@@ -1,0 +1,78 @@
+[
+    {
+        "id": "aba1299row6e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Correlation",
+        "text": "Correlation measures the strength and direction of a linear relationship between two variables. A correlation close to $$1$$ or $$-1$$ indicates a strong relationship, while a correlation close to $$0$$ indicates a weak relationship.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6e-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row6e-h1"
+        ],
+        "title": "Correlation with Self Rating",
+        "text": "Look at the correlation values between each critic's rating and the self rating. Which critic has a stronger correlation with the self rating?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$critic_2$$"
+        ],
+        "dependencies": [
+            "aba1299row6e-h2"
+        ],
+        "title": "Comparing Correlations",
+        "text": "Which critic has a stronger correlation with the self rating?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$critic_1$$",
+            "$$critic_2$$"
+        ]
+    },
+    {
+        "id": "aba1299row6e-h4",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row6e-h3"
+        ],
+        "title": "Interpreting Negative Correlation",
+        "text": "A negative correlation means that as one variable increases, the other tends to decrease. Consider how this might affect the usefulness of a predictor.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6e-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "aba1299row6e-h4"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Based on the correlation values, is $$critic_2$$ a more helpful predictor variable than $$critic_1$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,43 @@
+[
+    {
+        "id": "a89b247ds100-su19-final-Q6d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model uses one-hot encoding for the meat type. This means that for each type of meat, a separate variable is created that is $$1$$ if the meat is of that type and $$0$$ otherwise. Consider how this affects the intercept term.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting the Box Plot",
+        "text": "Look at the box plot for the total cost based on meat type. Which meat type seems to have the highest average total cost? This can help you determine the sign of the coefficients for the meat variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Positive"
+        ],
+        "dependencies": [],
+        "title": "Analyzing $$\\Theta_0$$",
+        "text": "Based on the data, what can you infer about the intercept term $$\\theta_0$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Positive",
+            "Negative",
+            "Exactly $$0$$",
+            "Not enough info"
+        ]
+    }
+]

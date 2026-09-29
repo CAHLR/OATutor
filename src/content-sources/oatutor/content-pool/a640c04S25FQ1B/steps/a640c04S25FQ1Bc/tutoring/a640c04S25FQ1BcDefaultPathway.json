@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a640c04S25FQ1Bc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Groupby",
+        "text": "When you use the `groupby` function, it allows you to group data based on one or more columns. This is useful for performing operations on subsets of your data. Think about which column you need to group by to count the number of modern buildings in each college.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04S25FQ1Bc-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "groupby(\"college\").size()"
+        ],
+        "dependencies": [
+            "a640c04S25FQ1Bc-h1"
+        ],
+        "title": "Choosing the Right Groupby Column",
+        "text": "Which column should you group by to count the number of modern buildings in each college?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "groupby(\"building\").size()",
+            "groupby(\"college\").size()",
+            "groupby(\"college\").count()",
+            "groupby(\"college\").nunique()",
+            "reset_index().value_counts(\"college\")"
+        ]
+    }
+]

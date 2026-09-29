@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE on Test Data",
+        "text": "When you add a new feature to a model, especially one that is a transformation of an existing feature, it can affect the model's complexity. Think about how this might influence the model's ability to generalize to new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6g-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6g-h1"
+        ],
+        "title": "Impact of Adding Features",
+        "text": "Consider how adding a feature might affect the model's performance on unseen data. Could it lead to overfitting, underfitting, or neither?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Both",
+            "Decrease",
+            "Increase",
+            "TRUE"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6g-h3",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6g-h2"
+        ],
+        "title": "Model Complexity and Generalization",
+        "text": "Adding a feature increases the model's complexity. Reflect on how this complexity might impact the model's ability to generalize to new data. Does it always improve the model's performance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6g-h3"
+        ],
+        "title": "Evaluating MSE Changes",
+        "text": "Think about the relationship between model complexity and MSE on test data. What happens to MSE when a model becomes too complex?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Both",
+            "Decrease",
+            "Increase",
+            "TRUE"
+        ]
+    }
+]

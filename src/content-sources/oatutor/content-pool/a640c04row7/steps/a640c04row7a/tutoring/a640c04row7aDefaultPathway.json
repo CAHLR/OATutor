@@ -1,0 +1,61 @@
+[
+    {
+        "id": "a640c04row7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding DataFrame Filtering",
+        "text": "To find the Aura for a specific product, you need to filter the DataFrame based on the product name and brand. Think about how you can use conditions to select the right row.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a640c04row7a-h1"
+        ],
+        "title": "Using Conditions in Pandas",
+        "text": "In Pandas, you can use conditions to filter data. For example, to find rows where the 'Product' is 'Lip Glowy Balm', you can use: $$`dan_{products[primesymbolProductprimesymbol]}=='Lip$$ Glowy Balm'`. How can you combine this with another condition for the 'Brand'?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a640c04row7a-h2"
+        ],
+        "title": "Combining Conditions",
+        "text": "To combine conditions in Pandas, use the `&` operator. For example, to filter by both 'Product' and 'Brand', you can write: `(dan_products['Product']=='Lip Glowy Balm') & (dan_products['Brand']=='Laneige')`. What does this expression return?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row7a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "dan_products[(dan_products['Product']=='Lip Glowy Balm')&(dan_products['Brand']=='Laneige')]['Aura'].iloc[0]"
+        ],
+        "dependencies": [
+            "a640c04row7a-h3"
+        ],
+        "title": "Selecting the Aura Value",
+        "text": "Once you have filtered the DataFrame, you need to select the 'Aura' column. Which of the following expressions correctly selects the 'Aura' value for the filtered row?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "dan_products[(dan_products['Product']=='Lip Glowy Balm')&(dan_products['Brand']=='Laneige')]['Aura'].iloc[0]",
+            ">dan_products[(dan_products['Product']=='Lip Glowy Balm')&(dan_products['Brand']=='Laneige')]['Aura'][0]",
+            ">dan_products[(dan_products['Product']=='Lip Glowy Balm')",
+            "(dan_products['Brand']=='Laneige')]['Aura'].iloc[0]",
+            ">dan_products[(dan_products['Product']=='Lip Glowy Balm')&(dan_products['Brand']=='Laneige')].loc['Aura'].iloc[0]",
+            ">dan_products[dan_products['Product']=='Lip Glowy Balm']['Aura'].loc[0]"
+        ]
+    }
+]

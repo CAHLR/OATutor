@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a89b247ds100-sp19-final-Q8e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias in Estimators",
+        "text": "When you roll a die once, your estimate of the maximum outcome is based on just that single roll. Think about how much information you have with just one roll compared to having $$100$$ rolls. How might more data affect your estimate?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp19-final-Q8e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-sp19-final-Q8e-h1"
+        ],
+        "title": "Exploring the Effect of More Rolls",
+        "text": "Consider what happens to the range of outcomes when you roll a die $$100$$ times. Does having more rolls give you a better chance of seeing the maximum possible outcome? How does this affect the bias of your estimator?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp19-final-Q8e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It would decrease"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp19-final-Q8e-h2"
+        ],
+        "title": "Comparing Single vs. Multiple Rolls",
+        "text": "If you roll a die once, your maximum outcome is limited to that single roll. With $$100$$ rolls, you have more opportunities to see higher numbers. How does this affect the bias of your estimator?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It would increase",
+            "It would decrease",
+            "It would stay the same"
+        ]
+    }
+]

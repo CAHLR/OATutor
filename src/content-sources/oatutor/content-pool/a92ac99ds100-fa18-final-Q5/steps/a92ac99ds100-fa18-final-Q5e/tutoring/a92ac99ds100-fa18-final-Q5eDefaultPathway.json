@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a92ac99ds100-fa18-final-Q5e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrap Replicates",
+        "text": "Bootstrap replicates are used to estimate the sampling distribution of a statistic by resampling with replacement from the original data. Consider how increasing the number of replicates might affect the variability of the sample mean.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa18-final-Q5e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a92ac99ds100-fa18-final-Q5e-h1"
+        ],
+        "title": "Effect of Increasing Replicates",
+        "text": "Increasing the number of bootstrap replicates generally provides a more accurate estimate of the sampling distribution. Think about how this might influence the variance of the sample mean.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa18-final-Q5e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa18-final-Q5e-h2"
+        ],
+        "title": "Analyzing Variance",
+        "text": "What happens to the variance of the sample mean when you increase the number of bootstrap replicates?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

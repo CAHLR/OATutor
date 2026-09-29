@@ -1,0 +1,81 @@
+[
+    {
+        "id": "a89b247ds100-su20-final-Q5ag-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Ridge Regression",
+        "text": "Ridge regression is a type of linear regression that includes a regularization term. This term is controlled by the hyperparameter lambda (\u03bb). Increasing \u03bb can help prevent overfitting by penalizing large coefficients in the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su20-final-Q5ag-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-su20-final-Q5ag-h1"
+        ],
+        "title": "Effect of Increasing \u03bb",
+        "text": "When you increase the value of \u03bb in ridge regression, the penalty on the size of the coefficients increases. This means that the model will try to keep the coefficients smaller to minimize the penalty term.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su20-final-Q5ag-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The coefficients become smaller."
+        ],
+        "dependencies": [
+            "a89b247ds100-su20-final-Q5ag-h2"
+        ],
+        "title": "Impact on Coefficients",
+        "text": "What happens to the coefficients of the model when \u03bb is increased?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The coefficients become larger.",
+            "The coefficients become smaller.",
+            "The coefficients remain the same."
+        ]
+    },
+    {
+        "id": "a89b247ds100-su20-final-Q5ag-h4",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-su20-final-Q5ag-h2"
+        ],
+        "title": "Balancing Bias and Variance",
+        "text": "Increasing \u03bb can increase the bias of the model but decrease its variance. This trade-off is crucial in understanding how ridge regression works.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su20-final-Q5ag-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Bias increases, variance decreases."
+        ],
+        "dependencies": [
+            "a89b247ds100-su20-final-Q5ag-h4"
+        ],
+        "title": "Bias-Variance Trade-off",
+        "text": "How does increasing \u03bb affect the bias and variance of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Bias increases, variance increases.",
+            "Bias decreases, variance increases.",
+            "Bias increases, variance decreases.",
+            "Bias decreases, variance decreases."
+        ]
+    }
+]

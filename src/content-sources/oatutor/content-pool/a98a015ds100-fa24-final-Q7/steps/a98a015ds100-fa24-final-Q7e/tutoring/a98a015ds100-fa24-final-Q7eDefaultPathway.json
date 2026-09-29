@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a98a015ds100-fa24-final-Q7e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD",
+        "text": "The singular value decomposition (SVD) of a matrix X is expressed as X=U*S*V**T. Here, U and V are orthogonal matrices, and S is a diagonal matrix containing the singular values of X.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa24-final-Q7e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa24-final-Q7e-h1"
+        ],
+        "title": "Properties of Diagonal Matrices",
+        "text": "A diagonal matrix is a matrix in which the entries outside the main diagonal are all zero. The main diagonal can have non-zero values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa24-final-Q7e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa24-final-Q7e-h2"
+        ],
+        "title": "Identifying Matrix S",
+        "text": "Which of the following statements is true about matrix S in the SVD of X?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "S is a diagonal matrix",
+            "S is a full matrix",
+            "S is a zero matrix",
+            "S is an orthogonal matrix",
+            "TRUE"
+        ]
+    }
+]

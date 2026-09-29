@@ -1,0 +1,62 @@
+[
+    {
+        "id": "a98a015ds100-sp21-final-Q11g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD Output",
+        "text": "The singular values in Sigma represent the variance captured by each principal component. A larger singular value indicates more variance along that direction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp21-final-Q11g-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting $$V_T$$",
+        "text": "The matrix $$V_T$$ contains the principal components. Each row represents a direction in the original space. The first row corresponds to the direction of maximum variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp21-final-Q11g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Dataset B"
+        ],
+        "dependencies": [],
+        "title": "Comparing Variance",
+        "text": "Which plot shows the most variance along a single direction?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Dataset A",
+            "Dataset B",
+            "Dataset C"
+        ]
+    },
+    {
+        "id": "a98a015ds100-sp21-final-Q11g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Dataset B"
+        ],
+        "dependencies": [],
+        "title": "Direction of Principal Component",
+        "text": "Which plot aligns with the direction given by the first row of $$V_T$$: $$[0.89238775$$, $$-0.45126944]$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Dataset A",
+            "Dataset B",
+            "Dataset C"
+        ]
+    }
+]

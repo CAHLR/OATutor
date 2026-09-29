@@ -1,0 +1,34 @@
+[
+    {
+        "id": "a1bb75eds100-su21-final-Q7h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Random Forests",
+        "text": "Random forests are ensembles of decision trees. They can capture complex patterns, but they are typically better at handling linear or axis-aligned boundaries. Consider how this might affect their ability to model circular patterns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7h-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$Axis-aligned$$ or linear boundaries"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7h-h1"
+        ],
+        "title": "Characteristics of Random Forests",
+        "text": "Which of the following best describes the type of decision boundaries that random forests can create?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$Axis-aligned$$ or linear boundaries",
+            "Complex circular boundaries",
+            "No boundaries"
+        ]
+    }
+]

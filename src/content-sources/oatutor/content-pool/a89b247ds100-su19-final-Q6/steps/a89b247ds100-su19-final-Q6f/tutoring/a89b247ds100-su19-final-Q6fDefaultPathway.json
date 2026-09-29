@@ -1,0 +1,67 @@
+[
+    {
+        "id": "a89b247ds100-su19-final-Q6f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "In one-hot encoding, each category is represented by a binary vector. For example, if 'meat' is beef, then $$'meat=beef'$$ is $$1$$ and $$'meat=chicken'$$ is $$0$$. How does this affect the model's prediction?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6f-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting Box Plots",
+        "text": "Look at the box plot for different types of meat. Which type of meat tends to have a lower total cost? How might this relate to the sign of the weight for $$'meat=chicken'$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "chicken"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6f-h2"
+        ],
+        "title": "Analyzing the Box Plot",
+        "text": "Based on the box plot, which type of meat has the lowest median total cost?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "beef",
+            "chicken",
+            "fish"
+        ]
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Negative"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6f-h3"
+        ],
+        "title": "Relating Cost to Weights",
+        "text": "If $$'meat=chicken'$$ has a lower total cost compared to $$'meat=beef'$$, what does this suggest about the sign of $$\\theta_2$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Positive",
+            "Negative",
+            "Exactly $$0$$",
+            "Not enough info"
+        ]
+    }
+]

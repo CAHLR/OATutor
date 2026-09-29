@@ -1,0 +1,55 @@
+[
+    {
+        "id": "a8c8399ds100-su21-final-Q8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding transforms categorical variables into a form that can be provided to ML algorithms to do a better job in prediction. Each category value is converted into a new categorical column and assigned a $$1$$ or $$0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Column Rank of a Matrix",
+        "text": "A matrix is full column rank if its columns are linearly independent. This means no column can be written as a linear combination of the others.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su21-final-Q8b-h2"
+        ],
+        "title": "Checking Linear Independence",
+        "text": "Consider the columns $$sex_{male}$$ and $$sex_{female}$$. Can one be expressed as a linear combination of the other?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-su21-final-Q8b-h3"
+        ],
+        "title": "Interpreting the Design Matrix",
+        "text": "In the design matrix $$\\Phi_1$$, each row corresponds to a passenger, and the columns indicate whether the passenger is male or female. Since each passenger is either male or female, the columns are not linearly dependent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

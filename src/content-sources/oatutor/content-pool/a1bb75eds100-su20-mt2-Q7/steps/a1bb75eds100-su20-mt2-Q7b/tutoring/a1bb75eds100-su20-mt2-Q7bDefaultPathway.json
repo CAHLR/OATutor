@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a1bb75eds100-su20-mt2-Q7b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Logistic Regression Model",
+        "text": "In a logistic regression model, the function \\( \\sigma(z) \\) is the sigmoid function, which maps any real-valued number into the range $$(0,1)$$. The expression \\( $$\\theta_0+\\theta_1 x$$ \\) is the linear combination of the parameters and the feature. Think about how changes in \\( $$x$$ \\) affect the value of \\( $$\\theta_1$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-mt2-Q7b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su20-mt2-Q7b-h1"
+        ],
+        "title": "Exploring the Role of \\( $$\\theta_1$$ \\)",
+        "text": "The parameter \\( $$\\theta_1$$ \\) in the logistic regression model represents the change in the log-odds of the response variable for a one-unit change in \\( $$x$$ \\). Consider how the sign and magnitude of \\( $$\\theta_1$$ \\) influence the direction and steepness of the curve.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-mt2-Q7b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su20-mt2-Q7b-h2"
+        ],
+        "title": "Evaluating the Scale Parameter",
+        "text": "Which of the following values is closest to the scale parameter \\( $$\\theta_1$$ \\) in the logistic regression model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-100$$",
+            "$$-1$$",
+            "$$1$$",
+            "$$100$$"
+        ]
+    }
+]

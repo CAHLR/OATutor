@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a89b247ds100-sp19-final-Q8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias",
+        "text": "Think about what bias means in the context of statistics. It's not just about a single sample, but rather how an estimator behaves across many samples.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp19-final-Q8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-sp19-final-Q8a-h1"
+        ],
+        "title": "Average Difference",
+        "text": "Consider how you might calculate the average difference between the true parameter and the estimator. What does this tell you about the estimator's performance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp19-final-Q8a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The average difference between theta and hat(theta) over all possible simple random samples from the population."
+        ],
+        "dependencies": [
+            "a89b247ds100-sp19-final-Q8a-h2"
+        ],
+        "title": "Bias Definition",
+        "text": "Which of the following best describes the bias of an estimator?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The difference between theta and the value of hat(theta) for a particular sample.",
+            "The average difference between theta and hat(theta) computed for each element of the sample.",
+            "The average difference between theta and hat(theta) over all possible simple random samples from the population.",
+            "The difference between the expected value of theta and the value of hat(theta) for a particular sample."
+        ]
+    }
+]

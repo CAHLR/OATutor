@@ -1,0 +1,85 @@
+[
+    {
+        "id": "a89b247ds100-su19-final-Q6g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "In one-hot encoding, each category is represented by a binary vector. For example, if 'meat' can be beef, chicken, or fish, then $$'meat=beef'$$ is $$1$$ if the meat is beef and $$0$$ otherwise. How does this affect the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6g-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting the Box Plot",
+        "text": "Look at the box plot for the total cost based on the type of meat. Which type of meat seems to have the highest average total cost? How might this influence the weights in the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Positive"
+        ],
+        "dependencies": [],
+        "title": "Analyzing the Scatter Plot",
+        "text": "What does the scatter plot suggest about the relationship between the amount of vegetables and the total cost?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Positive",
+            "Negative",
+            "Exactly $$0$$",
+            "Not enough info"
+        ]
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Positive"
+        ],
+        "dependencies": [],
+        "title": "Weight for $$Meat=Beef$$",
+        "text": "Based on the data and visualizations, what can you infer about the weight for $$'meat=beef'$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Positive",
+            "Negative",
+            "Exactly $$0$$",
+            "Not enough info"
+        ]
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6g-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Negative"
+        ],
+        "dependencies": [],
+        "title": "Weight for $$Meat=Chicken$$",
+        "text": "Considering the box plot, what do you think the weight for $$'meat=chicken'$$ would be?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Positive",
+            "Negative",
+            "Exactly $$0$$",
+            "Not enough info"
+        ]
+    }
+]

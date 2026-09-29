@@ -1,0 +1,75 @@
+[
+    {
+        "id": "aea05a2ds100-fa24-final-Q8c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding k-Means Clustering",
+        "text": "In k-Means clustering, each point is assigned to the cluster whose center is closest to it. The center of a cluster is the average of all the points assigned to it. Think about how you can calculate the average of the coordinates for each cluster.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-fa24-final-Q8c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculating Distance",
+        "text": "To determine which cluster a point belongs to, calculate the distance from the point to each cluster center. Use the formula for Euclidean distance: distance between (x1,y1) and (x2,y2) is $$\\sqrt{\\left(x2-x1\\right)^2+\\left(y2-y1\\right)^2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-fa24-final-Q8c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Team $$Ice-berk$$"
+        ],
+        "dependencies": [],
+        "title": "Assigning Teams to Clusters",
+        "text": "Which team is closest to the initial center of cluster A at $$(0,5)$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            ">Team $$Ice-berk$$",
+            ">Team Pandas",
+            ">Team SantaQlaus",
+            "Team $$Ice-berk$$",
+            "Team $$O-Ski$$"
+        ]
+    },
+    {
+        "id": "aea05a2ds100-fa24-final-Q8c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Calculate the average of the coordinates of the points in the cluster."
+        ],
+        "dependencies": [],
+        "title": "Recalculating Cluster Centers",
+        "text": "After assigning teams to clusters, how do you find the new center of a cluster?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            ">Calculate the average of the coordinates of the points in the cluster",
+            ">Use the midpoint of the farthest points in the cluster",
+            "Calculate the average of the coordinates of the points in the cluster.",
+            "Choose the point closest to the current center"
+        ]
+    },
+    {
+        "id": "aea05a2ds100-fa24-final-Q8c-h5",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Convergence in k-Means",
+        "text": "The algorithm converges when the cluster centers no longer change after an iteration. This means the assignments of points to clusters remain the same.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

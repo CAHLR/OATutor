@@ -1,0 +1,51 @@
+[
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1q-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding k-fold Cross Validation",
+        "text": "Think about what happens when you increase the number of folds in k-fold cross-validation. How does this affect the training and validation sets?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1q-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Computational Intensity of Cross Validation",
+        "text": "Consider the process of cross-validation. Does it involve training the model multiple times? How might this compare to a single train-test split?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1q-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using the Entire Dataset",
+        "text": "Reflect on how cross-validation utilizes the dataset. Does it allow for more comprehensive testing compared to a single validation set?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1q-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [],
+        "title": "Cross-validation in Production",
+        "text": "Why might cross-validation not be suitable for production environments?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a89b247ds100-su19-final-Q6m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model is given by f(x)=theta_0+theta_1*veg+theta_2*(meat=beef)+theta_3*(meat=fish). For the third data point, identify the values of veg and meat.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6m-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6m-h1"
+        ],
+        "title": "Substitute Values into the Model",
+        "text": "For the third data point, $$veg=2$$ and $$meat=beef$$. Substitute these values into the model equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6m-h3",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6m-h2"
+        ],
+        "title": "Calculate the Predicted Total",
+        "text": "Using the values $$\\theta_0=-3$$, $$\\theta_1=5$$, $$\\theta_2=8$$, and $$\\theta_3=12$$, calculate the predicted total for the third data point.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6m-h4",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6m-h3"
+        ],
+        "title": "Calculate Absolute Loss",
+        "text": "The actual total for the third data point is $$16$$. Calculate the absolute loss by finding the absolute value of the difference between the predicted total and the actual total.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6m-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$26$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6m-h4"
+        ],
+        "title": "Include L1 Regularization",
+        "text": "Add the L1 regularization term to the absolute loss. The regularization term is $$\\lambda \\left(|\\theta_0|+|\\theta_1|+|\\theta_2|+|\\theta_3|\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$1$$",
+            "$$15$$",
+            "$$24$$",
+            "$$26$$",
+            "$$27$$",
+            "$$28$$",
+            "$$29$$"
+        ]
+    }
+]

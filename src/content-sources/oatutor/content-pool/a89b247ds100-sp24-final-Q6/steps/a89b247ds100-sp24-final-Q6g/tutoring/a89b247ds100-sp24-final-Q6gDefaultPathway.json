@@ -1,0 +1,61 @@
+[
+    {
+        "id": "a89b247ds100-sp24-final-Q6g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Risk",
+        "text": "Model risk is the sum of model variance and observational variance. Can you calculate the model risk for the new model using the given variances?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp24-final-Q6g-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Model Variance and Observational Variance",
+        "text": "Remember, when you add more features to a model, it can affect both the model variance and the observational variance. Think about how these changes might impact the overall model risk.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp24-final-Q6g-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$17$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp24-final-Q6g-h1"
+        ],
+        "title": "Calculate New Model Risk",
+        "text": "Given the new model variance of $$15$$ and observational variance of $$2$$, what is the new model risk?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp24-final-Q6g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Model variance may increase, but observational variance may decrease."
+        ],
+        "dependencies": [
+            "a89b247ds100-sp24-final-Q6g-h2"
+        ],
+        "title": "Impact of Adding Features",
+        "text": "When features are added to a model, which of the following is likely to happen?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Model variance may increase, but observational variance may decrease.",
+            "Both model variance and observational variance will increase.",
+            "Model variance will decrease, but observational variance will increase."
+        ]
+    }
+]

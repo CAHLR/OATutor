@@ -1,0 +1,33 @@
+[
+    {
+        "id": "a89b247ds100-su20-final-Q5ac-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variance in the Model",
+        "text": "Think about what the variance \\( \\sigma**2 \\) represents in the context of a linear model. How does it relate to the randomness or noise in the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su20-final-Q5ac-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a89b247ds100-su20-final-Q5ac-h1"
+        ],
+        "title": "Exploring the Role of \\( \\sigma**2 \\)",
+        "text": "Consider the role of \\( \\sigma**2 \\) in the equation \\( Y_i=f_{\\theta**{*}}(X_i)+\\epsilon_i \\). Is \\( \\sigma**2 \\) a parameter that changes with each observation, or is it a fixed quantity that describes the overall variability?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

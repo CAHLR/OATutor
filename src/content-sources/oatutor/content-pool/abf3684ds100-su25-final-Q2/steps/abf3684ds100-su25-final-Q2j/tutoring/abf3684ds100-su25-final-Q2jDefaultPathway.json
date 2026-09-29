@@ -1,0 +1,68 @@
+[
+    {
+        "id": "abf3684ds100-su25-final-Q2j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L2 Regularization",
+        "text": "L2 regularization, also known as Ridge regression, adds a penalty equal to the square of the magnitude of coefficients to the loss function. This helps prevent overfitting by discouraging overly complex models. Can you think about how this might affect the existence of a unique solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2j-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Unique Solution in OLS",
+        "text": "In ordinary least squares (OLS), a unique solution exists if the matrix of features is full rank. This means there are no perfect multicollinearities among the features. How might this relate to the number of data points and features?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It increases the likelihood of a unique solution."
+        ],
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2j-h1"
+        ],
+        "title": "Effect of Regularization on Solution Uniqueness",
+        "text": "Consider the effect of adding L2 regularization to the model. Does it increase, decrease, or have no effect on the likelihood of a unique solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Decreases",
+            "Increases",
+            "It increases the likelihood of a unique solution.",
+            "No effect"
+        ]
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2j-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A unique solution exists."
+        ],
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2j-h2"
+        ],
+        "title": "Matrix Rank and Unique Solutions",
+        "text": "If the matrix of features is full rank, what does this imply about the existence of a unique solution in OLS?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A unique solution exists.",
+            "Depends on the data",
+            "No unique solution",
+            "Unique solution exists"
+        ]
+    }
+]

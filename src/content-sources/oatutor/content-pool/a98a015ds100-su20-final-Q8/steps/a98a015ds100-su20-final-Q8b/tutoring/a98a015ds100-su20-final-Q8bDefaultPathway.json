@@ -1,0 +1,108 @@
+[
+    {
+        "id": "a98a015ds100-su20-final-Q8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Columns of U",
+        "text": "The columns of a matrix in the Singular Value Decomposition (SVD) are orthogonal unit vectors. What does it mean for vectors to be orthogonal and unit vectors?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q8b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-su20-final-Q8b-h1"
+        ],
+        "title": "Checking Orthogonality",
+        "text": "To check if two vectors are orthogonal, you can calculate their dot product. If the dot product is zero, the vectors are orthogonal. Try calculating the dot product of $$u_1$$ and $$u_2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q8b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-su20-final-Q8b-h1"
+        ],
+        "title": "Unit Vector Verification",
+        "text": "A unit vector has a magnitude of $$1$$. You can find the magnitude of a vector by taking the square root of the sum of the squares of its components. Calculate the magnitude of $$u_1$$ and $$u_2$$ to verify if they are unit vectors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q8b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-su20-final-Q8b-h2"
+        ],
+        "title": "Dot Product Calculation",
+        "text": "What is the dot product of $$u_1=(1, 0, 0, 0, 0, 0)$$ and $$u_2=(0, 0, 1, 0, 0, 0)$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$0$$",
+            "$$1$$",
+            "$$2$$",
+            "$$3$$"
+        ]
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q8b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-su20-final-Q8b-h3"
+        ],
+        "title": "Magnitude of $$u_1$$",
+        "text": "Calculate the magnitude of $$u_1=(1, 0, 0, 0, 0, 0)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$0$$",
+            "$$1$$",
+            "$$2$$",
+            "$$\\sqrt{2}$$"
+        ]
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q8b-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-su20-final-Q8b-h3"
+        ],
+        "title": "Magnitude of $$u_2$$",
+        "text": "Calculate the magnitude of $$u_2=(0, 0, 1, 0, 0, 0)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$0$$",
+            "$$1$$",
+            "$$2$$",
+            "$$\\sqrt{2}$$"
+        ]
+    }
+]

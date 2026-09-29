@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a9edaf5ds100-su20-final-Q4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean-Centering",
+        "text": "Mean-centering involves adjusting the values of a variable so that its mean becomes zero. This is done by subtracting the mean of the variable from each data point. How might this affect the intercept term in a linear regression model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q4b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring Full Column Rank",
+        "text": "When a matrix has full column rank, it means that all its columns are linearly independent. How does this property affect the invertibility of the matrix and the uniqueness of the solution in linear regression?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q4b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su20-final-Q4b-h1"
+        ],
+        "title": "Comparing Coefficients",
+        "text": "Consider the effect of mean-centering on the coefficients of the linear model. Which of the following statements is true about the intercept term when comparing centered and uncentered data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "The intercept becomes zero",
+            "The intercept changes",
+            "The intercept is not affected by centering",
+            "The intercept remains the same"
+        ]
+    }
+]

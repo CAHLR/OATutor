@@ -1,0 +1,43 @@
+[
+    {
+        "id": "a98a015ds100-sp24-final-Q9g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Principal Components",
+        "text": "Principal components are derived from the eigenvectors of the covariance matrix of the data. The number of principal components is limited by the rank of the matrix. What does this imply about the maximum number of principal components you can have?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9g-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting the Scree Plot",
+        "text": "A scree plot displays the eigenvalues associated with each principal component. The eigenvalues represent the amount of variance captured by each component. How does the scree plot help you determine the significance of each principal component?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9g-h1"
+        ],
+        "title": "Evaluating the 36th Component",
+        "text": "Consider the rank of the matrix and the number of principal components that can be depicted. Is it possible for a 36th principal component to exist and account for more than 10% of the variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

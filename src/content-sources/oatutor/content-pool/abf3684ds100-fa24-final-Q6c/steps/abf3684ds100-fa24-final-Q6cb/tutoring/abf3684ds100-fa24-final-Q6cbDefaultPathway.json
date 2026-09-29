@@ -1,0 +1,45 @@
+[
+    {
+        "id": "abf3684ds100-fa24-final-Q6cb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Loss Function",
+        "text": "The loss function Jessica designed is a variation of the standard cross-entropy loss. Notice how it includes a term with $$(1-p)$$ raised to the power of $$3$$. Think about how this might affect the loss when $$y$$ is $$0$$ or $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa24-final-Q6cb-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring the Term $$y \\ln\\left(p\\right)$$",
+        "text": "In the context of logistic regression, the term $$y \\ln\\left(p\\right)$$ is part of the loss function. Consider what happens to this term when the model predicts class $$0$$ (p is the probability of class 1).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa24-final-Q6cb-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The term $$y \\ln\\left(p\\right)$$ becomes $$0$$ because $$y$$ is $$0$$."
+        ],
+        "dependencies": [
+            "abf3684ds100-fa24-final-Q6cb-h2"
+        ],
+        "title": "Analyzing the Loss Function Components",
+        "text": "Which of the following statements is true about the term $$y \\ln\\left(p\\right)$$ when the model predicts class 0?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The term $$y \\ln\\left(p\\right)$$ becomes $$0$$ because $$y$$ is $$0$$.",
+            "The term $$y \\ln\\left(p\\right)$$ becomes $$0$$ because $$p$$ is $$0$$.",
+            "The term $$y \\ln\\left(p\\right)$$ becomes $$0$$ because $$y$$ is $$1$$.",
+            "The term $$y \\ln\\left(p\\right)$$ becomes $$0$$ because $$p$$ is $$1$$."
+        ]
+    }
+]

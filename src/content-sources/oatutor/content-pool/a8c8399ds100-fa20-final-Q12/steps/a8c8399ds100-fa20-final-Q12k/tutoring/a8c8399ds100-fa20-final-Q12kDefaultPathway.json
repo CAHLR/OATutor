@@ -1,0 +1,63 @@
+[
+    {
+        "id": "a8c8399ds100-fa20-final-Q12k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model A",
+        "text": "Model A includes parameters for height in both inches and centimeters, and weight in both pounds and kilograms. Consider how including multiple units for the same measurement might affect the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12k-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model B",
+        "text": "Model B uses height in centimeters and weight in kilograms. Think about how this model might be simpler compared to Model A and what that means for the confidence intervals of its parameters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12k-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It implies the parameter might not be significant."
+        ],
+        "dependencies": [],
+        "title": "Confidence Intervals and Zero",
+        "text": "If a confidence interval for a parameter includes zero, what does that imply about the parameter's significance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It implies the parameter might not be significant.",
+            "It implies the parameter is definitely significant.",
+            "It implies the parameter is always zero."
+        ]
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12k-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa20-final-Q12k-h2"
+        ],
+        "title": "Parameter Significance in Model B",
+        "text": "Considering Model B, which uses height in centimeters and weight in kilograms, do you think the confidence interval for $$\\beta_{cm}$$ is likely to include zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

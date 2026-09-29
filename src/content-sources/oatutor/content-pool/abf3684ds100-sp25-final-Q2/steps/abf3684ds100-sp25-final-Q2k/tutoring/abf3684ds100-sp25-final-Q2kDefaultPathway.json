@@ -1,0 +1,45 @@
+[
+    {
+        "id": "abf3684ds100-sp25-final-Q2k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Validation",
+        "text": "Cross-validation is a technique used to assess how the results of a statistical analysis will generalize to an independent data set. It is mainly used in settings where the goal is prediction, and one wants to estimate how accurately a predictive model will perform in practice.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2k-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2k-h1"
+        ],
+        "title": "Sampling with Replacement",
+        "text": "When you sample with replacement, each data point can be selected more than once in the same sample. Think about how this might affect the independence of your cross-validation folds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2k-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Without replacement"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2k-h2"
+        ],
+        "title": "Sampling Method in Cross-Validation",
+        "text": "Which sampling method is typically used to create cross-validation folds?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "With replacement",
+            "Without replacement"
+        ]
+    }
+]

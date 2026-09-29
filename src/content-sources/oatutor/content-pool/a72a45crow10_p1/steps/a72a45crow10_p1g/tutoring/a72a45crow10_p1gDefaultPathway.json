@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a72a45crow10_p1g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Selection Bias",
+        "text": "Selection bias occurs when the sample collected is not representative of the population intended to be analyzed. Think about how the method of selecting every fifth student might influence the results. Are there any patterns or characteristics that could be overrepresented or underrepresented?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow10_p1g-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a72a45crow10_p1g-h1"
+        ],
+        "title": "Evaluating the Sampling Method",
+        "text": "Consider the characteristics of students who attend discussion sections. Do you think selecting every fifth student could lead to a biased sample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a72a45crow10_p1g-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Potential Patterns in Attendance",
+        "text": "Think about the timing and frequency of discussion sections. Could certain types of students be more likely to attend at specific times, and how might this affect the sample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow10_p1g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a72a45crow10_p1g-h3"
+        ],
+        "title": "Impact of Attendance Patterns",
+        "text": "If students with certain characteristics are more likely to attend discussions at specific times, how might this influence the results of the survey?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

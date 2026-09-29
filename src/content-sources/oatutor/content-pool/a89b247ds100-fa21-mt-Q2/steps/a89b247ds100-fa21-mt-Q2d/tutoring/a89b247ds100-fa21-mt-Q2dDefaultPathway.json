@@ -1,0 +1,67 @@
+[
+    {
+        "id": "a89b247ds100-fa21-mt-Q2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding is a technique used to convert categorical data into a numerical format. It creates binary columns for each category. Think about whether age is a categorical variable or a continuous one. How might this affect the use of one-hot encoding?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2d-h1"
+        ],
+        "title": "Considering Age as a Continuous Variable",
+        "text": "If age is treated as a continuous variable, which of the following methods would be appropriate for incorporating it into a linear model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$One-hot$$ encode the age",
+            "Standardize the age data",
+            "TRUE",
+            "Use age directly as a feature"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2d-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Standardizing Continuous Variables",
+        "text": "Standardizing a continuous variable involves transforming it to have a mean of $$0$$ and a standard deviation of $$1$$. This can help improve the performance of some models. Consider how this might apply to age data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2d-h2"
+        ],
+        "title": "Using Age Directly",
+        "text": "Is it reasonable to use age directly as a feature in the model without any transformation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "No, age must be transformed first",
+            "TRUE",
+            "Yes, age can be used directly"
+        ]
+    }
+]

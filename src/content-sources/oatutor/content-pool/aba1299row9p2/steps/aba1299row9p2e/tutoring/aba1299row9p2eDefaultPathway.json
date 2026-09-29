@@ -1,0 +1,42 @@
+[
+    {
+        "id": "aba1299row9p2e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Invertibility",
+        "text": "For a matrix to be invertible, it must be square and have full rank. If a matrix is not invertible, it means there is no unique solution to the equation involving that matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row9p2e-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Normal Equation",
+        "text": "The normal equation for linear regression is given by theta $$=$$ (X**T * X)**(-1) * $$X^T$$ * $$y$$. If X is not invertible, you might need to use a different method like regularization.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row9p2e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "You cannot directly compute the inverse."
+        ],
+        "dependencies": [],
+        "title": "Matrix Inversion",
+        "text": "What happens if the matrix $$X^T$$ * X is not invertible?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "You cannot directly compute the inverse.",
+            "You can still compute the inverse.",
+            "The inverse is zero."
+        ]
+    }
+]

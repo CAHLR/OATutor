@@ -1,0 +1,130 @@
+[
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Bias",
+        "text": "When you remove a feature from a model, think about how it might affect the model's ability to capture the true relationship between the input features and the output. Consider whether the model might become less flexible and how that could impact the bias.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6j-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring Model Variance",
+        "text": "Removing a feature can change the model's complexity. Reflect on how a simpler model might respond to different datasets. Would it be more stable or less stable? How does this relate to variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6j-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Training Data MSE",
+        "text": "Consider how removing a feature might affect the model's performance on the training data. Does the model have fewer parameters to fit? How might this influence the Mean Squared Error on the training set?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6j-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Test Data MSE",
+        "text": "Think about the model's ability to generalize to new data when a feature is removed. How might this change the Mean Squared Error on the test data? Consider the balance between bias and variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6j-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6j-h1"
+        ],
+        "title": "Effect on Model Bias",
+        "text": "What is a possible effect on (model bias) squared when a feature is removed from Model A?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6j-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6j-h2"
+        ],
+        "title": "Effect on Model Variance",
+        "text": "What is a possible effect on model variance when a feature is removed from Model A?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6j-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6j-h3"
+        ],
+        "title": "Effect on Training Data MSE",
+        "text": "What is a possible effect on MSE on the training data when a feature is removed from Model A?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6j-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Both"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6j-h4"
+        ],
+        "title": "Effect on Test Data MSE",
+        "text": "What is a possible effect on MSE on held-out test data when a feature is removed from Model A?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    }
+]

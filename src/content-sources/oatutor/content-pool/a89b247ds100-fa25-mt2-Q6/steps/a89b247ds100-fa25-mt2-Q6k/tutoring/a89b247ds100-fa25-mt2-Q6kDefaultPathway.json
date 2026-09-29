@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "When you remove a feature from a model, think about how it affects the model's ability to adapt to the data. Does having fewer features make the model more or less flexible? Consider how this flexibility relates to variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6k-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6k-h1"
+        ],
+        "title": "Effect on Model Variance",
+        "text": "What happens to the model's variance when you remove a feature?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6k-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Linking Features and Variance",
+        "text": "Consider the role of each feature in capturing the variability of the data. If a feature is removed, how might this impact the model's ability to capture different patterns in the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6k-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Less flexible"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6k-h3"
+        ],
+        "title": "Impact on Flexibility",
+        "text": "Does removing a feature make the model more or less flexible?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "More flexible",
+            "Less flexible"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6k-h5",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Variance and Flexibility",
+        "text": "Remember, a model with high variance is very flexible and can fit the training data closely. How does removing a feature affect this flexibility?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

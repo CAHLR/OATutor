@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Exponential Regularization",
+        "text": "Think about how the exponential function behaves compared to linear functions. How does the value of $${10}^{\\theta_i}$$ change as $$\\theta_i$$ increases or decreases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5f-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Comparing with L2 Regularization",
+        "text": "Consider how L2 regularization penalizes coefficients. It uses the square of the coefficients. How does squaring a number compare to raising $$10$$ to the power of that number?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5f-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Feature Selection with L1 Regularization",
+        "text": "L1 regularization is known for its ability to perform feature selection. It can set some coefficients to zero. Why might exponential regularization not have this property?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Exponential regularization"
+        ],
+        "dependencies": [],
+        "title": "Comparing Penalties for Positive Coefficients",
+        "text": "Which regularization method penalizes large positive coefficients more?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Exponential regularization",
+            "L2 regularization",
+            "L1 regularization"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5f-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "L2 regularization"
+        ],
+        "dependencies": [],
+        "title": "Effectiveness for Parameters Close to Zero",
+        "text": "Which regularization method is more effective when we want parameters close to zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Exponential regularization",
+            "L2 regularization",
+            "L1 regularization"
+        ]
+    }
+]

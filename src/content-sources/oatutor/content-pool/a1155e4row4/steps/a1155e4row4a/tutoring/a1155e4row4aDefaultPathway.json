@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a1155e4row4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Condition",
+        "text": "To find the nuggets with weight less than $$0.6$$ ounces, you need to filter the DataFrame using a condition. Think about how you can use a comparison operator to achieve this.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row4a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$nuggets[\"weight\"]<0.6$$"
+        ],
+        "dependencies": [
+            "a1155e4row4a-h1"
+        ],
+        "title": "Choosing the Correct Condition",
+        "text": "Which condition would correctly filter the nuggets with weight less than $$0.6$$ ounces?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$nuggets[\"weight\"]<0.6$$",
+            "$$nuggets[\"weight\"]>0.6$$",
+            "$$nuggets[\"chain\"]<0.6$$",
+            "$$nuggets[\"weight\"] \\leq 0.6$$",
+            "\"weight\"<0.6"
+        ]
+    }
+]

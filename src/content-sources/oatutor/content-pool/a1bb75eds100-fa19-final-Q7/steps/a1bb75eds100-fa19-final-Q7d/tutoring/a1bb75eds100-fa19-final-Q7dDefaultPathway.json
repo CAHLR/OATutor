@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-final-Q7d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding ROC Curves",
+        "text": "A ROC curve plots the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings. The curve helps to visualize the performance of a binary classifier.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q7d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q7d-h1"
+        ],
+        "title": "Thresholds in ROC Curves",
+        "text": "The thresholds are used to determine the point at which a predicted probability is considered a positive prediction. These thresholds are varied to calculate different TPR and FPR values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q7d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1\\left(predicted_{probs}>t\\right)$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q7d-h2"
+        ],
+        "title": "Choosing the Correct Expression",
+        "text": "Which expression correctly converts predicted probabilities to binary predictions based on a threshold?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1\\left(predicted_{probs}<t\\right)$$",
+            "$$1\\left(predicted_{probs}>t\\right)$$",
+            "$$1\\left(y_{actual}>t\\right)$$",
+            "(predicted_probs>t).sum()",
+            "1*(predicted_probs>=y_actual)"
+        ]
+    }
+]

@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Logistic Regression Equation",
+        "text": "In logistic regression, the decision boundary is derived from the equation of the form: \\( $$\\theta_0$$ + $$\\theta_1 X_1$$ + $$\\theta_2 X_2$$ $$=$$ $$0$$ \\). Here, \\( $$\\theta$$ \\) represents the parameter vector. Can you identify the values of \\( $$\\theta_0$$ \\), \\( $$\\theta_1$$ \\), and \\( $$\\theta_2$$ \\) from the given parameter vector?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fc-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp25-final-Q3e,Q3fc-h1"
+        ],
+        "title": "Setting the Probability Threshold",
+        "text": "The decision boundary is where the probability of preferring Kendrick is $$0.5$$. In logistic regression, this corresponds to the point where the linear combination of features equals zero. How does this relate to the equation \\( $$\\theta_0$$ + $$\\theta_1 X_1$$ + $$\\theta_2 X_2$$ $$=$$ $$0$$ \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fc-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "\\theta_0=-2,\\theta_1=2,\\theta_2=1"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp25-final-Q3e,Q3fc-h1"
+        ],
+        "title": "Identify the Parameters",
+        "text": "What are the values of \\( $$\\theta_0$$ \\), \\( $$\\theta_1$$ \\), and \\( $$\\theta_2$$ \\) in the parameter vector \\( $$\\theta=(-2, 2, 1)$$ \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "\\theta_0=-2,\\theta_1=2,\\theta_2=1",
+            "\\theta_0=2,\\theta_1=-2,\\theta_2=1",
+            "\\theta_0=1,\\theta_1=2,\\theta_2=-2",
+            "\\theta_0=2,\\theta_1=1,\\theta_2=-2"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fc-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2X_1+X_2=2$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp25-final-Q3e,Q3fc-h3"
+        ],
+        "title": "Formulate the Decision Boundary Equation",
+        "text": "Using the identified parameters, what is the equation of the decision boundary?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$2X_1+X_2=-2$$",
+            "$$X_1+2X_2=2$$",
+            "$$2X_1+X_2=2$$",
+            "$$-2X_1+X_2=2$$",
+            "$$2X_1+X_2=0$$"
+        ]
+    }
+]

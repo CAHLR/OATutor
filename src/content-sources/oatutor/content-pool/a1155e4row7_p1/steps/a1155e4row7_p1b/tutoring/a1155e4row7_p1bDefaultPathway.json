@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a1155e4row7_p1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "Look at the columns in the DataFrame. You have $$'visitor_{id'}$$, $$'hour_{of,visit'}$$, and 'activity'. Each row represents a visit to the portal with specific details.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row7_p1b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row7_p1b-h1"
+        ],
+        "title": "Grouping by Activity",
+        "text": "To fill in the missing $$'hour_{of,visit'}$$, you need to group the data by 'activity'. This will allow you to calculate the mode for each activity type.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row7_p1b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$portal_{traffic[\"hour_of_visit\"]}$$"
+        ],
+        "dependencies": [
+            "a1155e4row7_p1b-h2"
+        ],
+        "title": "Choosing the Correct Column for B",
+        "text": "Which column should be used to locate the missing values that need to be replaced?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$portal_{traffic[\"hour_of_visit\"]}$$",
+            "$$portal_{traffic[\"activity\"]}$$",
+            "$$portal_{traffic}$$",
+            "$$modes_{of,each,group}$$",
+            "$$portal_{traffic[\"visitor_id\"]}$$"
+        ]
+    }
+]

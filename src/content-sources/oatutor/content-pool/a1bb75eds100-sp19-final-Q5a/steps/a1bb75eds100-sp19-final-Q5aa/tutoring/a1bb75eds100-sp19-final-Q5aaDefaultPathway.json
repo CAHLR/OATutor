@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a1bb75eds100-sp19-final-Q5aa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logistic Regression",
+        "text": "In logistic regression, the probability $$\\$P(Y=1|X)\\$$$ is modeled using the logistic function, which is a type of sigmoid function. This function maps any real-valued number into the $$(0,1)$$ interval, making it suitable for binary classification.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp19-final-Q5aa-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp19-final-Q5aa-h1"
+        ],
+        "title": "Comparing Probabilities and Linear Combinations",
+        "text": "Consider the logistic function $\\sigma(X**T\\beta)$, which outputs a value between $$0$$ and $$1$$. Compare this with the linear combination $X**T\\beta$, which can take any real value. Think about how these two expressions relate to each other in terms of their range and behavior.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp19-final-Q5aa-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All real numbers"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp19-final-Q5aa-h2"
+        ],
+        "title": "Exploring the Range of $X**T\\beta$",
+        "text": "What is the range of values that $X**T\\beta$ can take?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "All real numbers",
+            "Only positive numbers",
+            "Only negative numbers"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp19-final-Q5aa-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Between $$0$$ and $$1$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp19-final-Q5aa-h3"
+        ],
+        "title": "Exploring the Range of $\\sigma(X**T\\beta)$",
+        "text": "What is the range of values that $\\sigma(X**T\\beta)$ can take?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Between $$0$$ and $$1$$",
+            "Between $$-1$$ and $$1$$",
+            "All real numbers"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp19-final-Q5aa-h5",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp19-final-Q5aa-h4"
+        ],
+        "title": "Understanding the Inequality",
+        "text": "To determine when $P(Y=1|X)>X**T\\beta$, consider the behavior of the logistic function $\\sigma(X**T\\beta)$ and how it compares to the linear combination $X**T\\beta$. Think about the conditions under which the logistic function might output a value greater than the linear combination.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

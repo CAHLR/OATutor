@@ -1,0 +1,50 @@
+[
+    {
+        "id": "a98a015ds100-fa19-final-Q8e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA Components",
+        "text": "When we talk about PCA, we often refer to the components that capture the most variance in the data. Think about what matrices are involved in the decomposition process and which ones are used to represent the data in a reduced form.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-final-Q8e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa19-final-Q8e-h1"
+        ],
+        "title": "Matrix Decomposition in PCA",
+        "text": "In PCA, we use a specific matrix decomposition technique. Consider how the original data matrix is broken down into different matrices, each serving a unique purpose in the transformation process.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-final-Q8e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "U*Sigma"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa19-final-Q8e-h2"
+        ],
+        "title": "Identifying the Correct Matrix",
+        "text": "Which matrix or combination of matrices is used to represent the data in a reduced form after applying PCA?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "X",
+            "U",
+            "Sigma",
+            "$$V^T$$",
+            "U*Sigma",
+            "$$\\Sigma V^T$$",
+            "U*Sigma*V**T"
+        ]
+    }
+]

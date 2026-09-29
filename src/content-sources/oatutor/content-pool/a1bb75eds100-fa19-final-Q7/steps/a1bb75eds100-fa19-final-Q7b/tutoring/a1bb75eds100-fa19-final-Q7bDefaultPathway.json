@@ -1,0 +1,76 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-final-Q7b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding ROC Curves",
+        "text": "A ROC curve plots the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings. The area under the curve (AUC) is a measure of how well the model can distinguish between classes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q7b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Thresholds in ROC Curves",
+        "text": "Thresholds are used to convert predicted probabilities into binary classifications. By varying the threshold, you can calculate different TPR and FPR values to plot the ROC curve.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q7b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [],
+        "title": "Choosing the Right Threshold Range",
+        "text": "What should be the range of thresholds to consider for generating a ROC curve?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$0$$ to $$0.5$$",
+            "$$0$$ to $$1$$",
+            "$$0$$ to $$10$$",
+            "$$0$$ to $$100$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q7b-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculating TPR and FPR",
+        "text": "The true positive rate (TPR) is calculated as the number of true positives divided by the sum of true positives and false negatives. The false positive rate (FPR) is the number of false positives divided by the sum of false positives and true negatives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q7b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [],
+        "title": "Filling in the Pseudocode",
+        "text": "What should be the value of (ii) in the pseudocode for generating a ROC curve?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1000$$",
+            "$$1$$",
+            "$$100$$",
+            "$$0.5$$",
+            "predicted_probs.max()"
+        ]
+    }
+]

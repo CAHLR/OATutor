@@ -1,0 +1,35 @@
+[
+    {
+        "id": "aba1299row1_part4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Intercept",
+        "text": "The intercept \\( $$\\theta_0$$ \\) in a regression model represents the predicted value of the dependent variable when all independent variables are zero. Think about what it means for a student to have $$0$$ hours of sleep and not be affiliated with CDSS.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1_part4a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Predicted GPA for a student who gets $$0$$ hours of sleep and does not have a CDSS affiliated major."
+        ],
+        "dependencies": [
+            "aba1299row1_part4a-h1"
+        ],
+        "title": "Identify the Variables",
+        "text": "What does it mean for the variables $$hours_{sleep}$$ and $$is_{cdss}$$ to be zero in this context?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Predicted GPA for a student who gets $$0$$ hours of sleep and does not have a CDSS affiliated major.",
+            "Predicted increase in GPA for one additional hour of sleep, holding CDSS major status constant.",
+            "Predicted GPA difference between CDSS affiliated and non CDSS affiliated majors, holding sleep constant.",
+            "Average GPA of all students in the dataset."
+        ]
+    }
+]

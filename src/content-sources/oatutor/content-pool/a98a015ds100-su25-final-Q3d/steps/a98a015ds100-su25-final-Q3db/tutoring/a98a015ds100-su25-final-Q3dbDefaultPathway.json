@@ -1,0 +1,43 @@
+[
+    {
+        "id": "a98a015ds100-su25-final-Q3db-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD",
+        "text": "In Singular Value Decomposition (SVD), the matrix X is decomposed into three matrices: U, S, and $$V^T$$. The matrix S contains the singular values on its diagonal, which represent the magnitude of the principal components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su25-final-Q3db-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Role of V in SVD",
+        "text": "The matrix V in SVD contains the right singular vectors. These vectors are crucial for transforming the original data into the principal component space.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su25-final-Q3db-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a98a015ds100-su25-final-Q3db-h1"
+        ],
+        "title": "Calculating Latent Features",
+        "text": "If Justin has the matrix X and the first two rows of V, can he compute the first two latent features for all observations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

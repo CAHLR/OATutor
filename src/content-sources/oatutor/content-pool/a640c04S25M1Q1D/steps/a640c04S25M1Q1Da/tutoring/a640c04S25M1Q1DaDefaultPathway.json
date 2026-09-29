@@ -1,0 +1,38 @@
+[
+    {
+        "id": "a640c04S25M1Q1Da-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Filter Condition",
+        "text": "To filter the DataFrame for bananas with at least $$150$$ in inventory, think about how you can use logical operators to combine conditions. You need to check both the item type and the inventory count.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04S25M1Q1Da-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(fruit[\"item\"]==\"banana\")&(fruit[\"inventory\"] \\geq 150)$$"
+        ],
+        "dependencies": [
+            "a640c04S25M1Q1Da-h1"
+        ],
+        "title": "Choosing the Correct Logical Operator",
+        "text": "Which logical operator should you use to combine the conditions for filtering bananas with at least $$150$$ in inventory?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$(fruit[\"inventory\"] \\geq 150)$$",
+            "$$(fruit[\"item\"]==\"banana\")$$",
+            "$$(fruit[\"item\"]==\"banana\")$$ & $$fruit[\"inventory\"]>150$$",
+            "$$(fruit[\"item\"]==\"banana\")$$ & $$(fruit[\"inventory\"] \\geq \"150\")$$",
+            "$$(fruit[\"item\"]==\"banana\")$$ & $$(fruit[\"inventory\"] \\geq 150)$$",
+            "$$(fruit[\"item\"]==\"banana\")$$ and $$(fruit[\"inventory\"] \\geq 150)$$",
+            "$$(fruit[\"item\"]==\"banana\")&(fruit[\"inventory\"] \\geq 150)$$"
+        ]
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a89b247ds100-fa21-mt-Q2p-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "When thinking about reducing model variance, consider how transformations can affect the spread of your data. A transformation that compresses the range of your data might help in reducing variance. Can you think of any mathematical operations that might achieve this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2p-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2p-h1"
+        ],
+        "title": "Exploring Transformations",
+        "text": "Consider how different transformations affect the distribution of age data. For instance, squaring or taking the square root of a variable can change its distribution. How might these transformations impact the variance of your model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2p-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2p-h2"
+        ],
+        "title": "Choosing a Transformation",
+        "text": "Which of the following transformations could potentially reduce the variance of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Logarithm of $$x$$",
+            "Square root of $$x$$",
+            "TRUE",
+            "$$x$$ plus a constant",
+            "$$x$$ squared"
+        ]
+    }
+]

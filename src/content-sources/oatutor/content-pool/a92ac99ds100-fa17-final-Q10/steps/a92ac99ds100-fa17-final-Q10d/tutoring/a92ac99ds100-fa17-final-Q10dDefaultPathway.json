@@ -1,0 +1,135 @@
+[
+    {
+        "id": "a92ac99ds100-fa17-final-Q10d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Diagram",
+        "text": "The diagram represents the bootstrap process. Start by identifying the initial population and the observed sample. This will help you understand the flow of the process.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q10d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Population"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q10d-h1"
+        ],
+        "title": "Identifying the Population",
+        "text": "What is the initial group of people in the diagram labeled as?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Population",
+            "Bootstrap population",
+            "Observed sample",
+            "Expected sample",
+            "Bootstrap sample",
+            "Sampling distribution",
+            "Sampling",
+            "Bootstrapping",
+            "Bootstrap sampling distribution",
+            "Empirical distribution",
+            "True distribution",
+            "Population parameter",
+            "Sample Statistic",
+            "Bootstrap Statistic"
+        ]
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q10d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q10d-h2"
+        ],
+        "title": "Observed Sample",
+        "text": "After identifying the population, the next step is to determine the observed sample. This is the sample taken from the population.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q10d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Observed sample"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q10d-h3"
+        ],
+        "title": "Identifying the Observed Sample",
+        "text": "Which label corresponds to the sample taken from the population?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Population",
+            "Bootstrap population",
+            "Observed sample",
+            "Expected sample",
+            "Bootstrap sample",
+            "Sampling distribution",
+            "Sampling",
+            "Bootstrapping",
+            "Bootstrap sampling distribution",
+            "Empirical distribution",
+            "True distribution",
+            "Population parameter",
+            "Sample Statistic",
+            "Bootstrap Statistic"
+        ]
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q10d-h5",
+        "type": "hint",
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q10d-h4"
+        ],
+        "title": "Bootstrap Samples",
+        "text": "Once you have the observed sample, the next step involves creating multiple bootstrap samples. These are samples taken with replacement from the observed sample.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q10d-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Bootstrap sample"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q10d-h5"
+        ],
+        "title": "Identifying Bootstrap Samples",
+        "text": "What are the samples called that are taken with replacement from the observed sample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Population",
+            "Bootstrap population",
+            "Observed sample",
+            "Expected sample",
+            "Bootstrap sample",
+            "Sampling distribution",
+            "Sampling",
+            "Bootstrapping",
+            "Bootstrap sampling distribution",
+            "Empirical distribution",
+            "True distribution",
+            "Population parameter",
+            "Sample Statistic",
+            "Bootstrap Statistic"
+        ]
+    }
+]

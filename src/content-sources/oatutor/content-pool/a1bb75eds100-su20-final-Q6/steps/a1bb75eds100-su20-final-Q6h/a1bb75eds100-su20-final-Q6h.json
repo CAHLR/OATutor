@@ -1,0 +1,15 @@
+{
+    "id": "a1bb75eds100-su20-final-Q6h",
+    "stepAnswer": [
+        "FALSE"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Is the line of code correctly finding the number of seventh generation consoles?",
+    "stepBody": "consoles.groupby('name')['generation'].count().loc[7]",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "TRUE",
+        "FALSE"
+    ]
+}

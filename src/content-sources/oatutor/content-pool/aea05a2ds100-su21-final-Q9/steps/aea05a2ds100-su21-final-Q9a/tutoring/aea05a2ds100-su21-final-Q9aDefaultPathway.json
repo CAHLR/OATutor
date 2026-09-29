@@ -1,0 +1,48 @@
+[
+    {
+        "id": "aea05a2ds100-su21-final-Q9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Agglomerative Clustering",
+        "text": "Agglomerative clustering starts by treating each point as its own cluster. The algorithm then repeatedly merges the closest pair of clusters until the desired number of clusters is reached. In this case, we want to end up with $$3$$ clusters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-su21-final-Q9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-su21-final-Q9a-h1"
+        ],
+        "title": "Finding the Closest Pair",
+        "text": "To find the closest pair of clusters, look for the smallest distance between any two points. Check the distance matrix for the smallest non-zero value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-su21-final-Q9a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "AE"
+        ],
+        "dependencies": [
+            "aea05a2ds100-su21-final-Q9a-h2"
+        ],
+        "title": "Identify the Smallest Distance",
+        "text": "Which pair of points has the smallest distance between them?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "AB",
+            "AD",
+            "AE",
+            "BD",
+            "BC"
+        ]
+    }
+]

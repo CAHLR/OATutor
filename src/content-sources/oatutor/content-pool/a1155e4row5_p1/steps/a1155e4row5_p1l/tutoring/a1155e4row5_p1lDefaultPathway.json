@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a1155e4row5_p1l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plot",
+        "text": "The violin plot is used to visualize the distribution of a dataset. In this case, it shows the distribution of $$`ed_{hours}`$$ for different combinations of `role` and $$`is_{graduating}`$$. Think about which variable should be on the x-axis to separate these groups.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p1l-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x$$ $$=$$ \"is_graduating\""
+        ],
+        "dependencies": [
+            "a1155e4row5_p1l-h1"
+        ],
+        "title": "Choosing the X-axis",
+        "text": "Which variable should be on the x-axis to separate the data by graduation status?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$x$$ $$=$$ \"is_graduating\"",
+            "$$x$$ $$=$$ \"ed_hours\"",
+            "$$x$$ $$=$$ \"role\"",
+            "hue $$=$$ \"is_graduating\"",
+            "$$y$$ $$=$$ \"is_graduating\""
+        ]
+    }
+]

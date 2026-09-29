@@ -1,0 +1,34 @@
+[
+    {
+        "id": "a1155e4row3_p1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variable Types",
+        "text": "Think about the nature of the data in the 'item' column. Each entry is a name of a fruit, which doesn't have a specific order or ranking. What type of variable does this suggest?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row3_p1b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Qualitative nominal"
+        ],
+        "dependencies": [
+            "a1155e4row3_p1b-h1"
+        ],
+        "title": "Identifying the Variable Type",
+        "text": "Consider the 'item' column. Is it best described as qualitative ordinal, qualitative nominal, or quantitative?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Qualitative ordinal",
+            "Qualitative nominal",
+            "Quantitative"
+        ]
+    }
+]

@@ -1,0 +1,33 @@
+[
+    {
+        "id": "aea05a2ds100-su25-final-Q3e,Q3f,Q3gc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Silhouette Scores",
+        "text": "A silhouette score measures how similar an object is to its own cluster compared to other clusters. If the score is negative, it suggests that the object might be closer to a neighboring cluster than to the cluster it is currently assigned to.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-su25-final-Q3e,Q3f,Q3gc-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "aea05a2ds100-su25-final-Q3e,Q3f,Q3gc-h1"
+        ],
+        "title": "Interpreting Negative Silhouette Scores",
+        "text": "What does a negative silhouette score indicate about a point's position relative to its cluster and the nearest cluster?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

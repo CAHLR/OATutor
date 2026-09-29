@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a89b247ds100-su19-final-Q6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Theta $$0$$",
+        "text": "Theta $$0$$ $$\\theta_0$$ represents the intercept of the model. It is the predicted total when the amount of vegetables is zero. Look at the data and the graph to see what the total might be when veg is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6b-h1"
+        ],
+        "title": "Analyzing the Graph",
+        "text": "Observe the scatter plot. When veg is zero, what is the approximate value of total? This can help you determine the sign of $$\\theta_0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Positive"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6b-h2"
+        ],
+        "title": "Theta $$0$$ Sign",
+        "text": "Based on the scatter plot, what is the sign of $$\\theta_0$$ when veg is zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Positive",
+            "Negative",
+            "Exactly $$0$$",
+            "Not enough info"
+        ]
+    }
+]

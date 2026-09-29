@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a9edaf5ds100-sp24-final-Q4b,Q4c,Q4dd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Validation",
+        "text": "Cross-validation is a technique used to assess how the results of a statistical analysis will generalize to an independent data set. It is mainly used for model validation and selection.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp24-final-Q4b,Q4c,Q4dd-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-sp24-final-Q4b,Q4c,Q4dd-h1"
+        ],
+        "title": "Purpose of Cross-Validation",
+        "text": "Think about the main goals of cross-validation. It helps in estimating the skill of a model on new data, tuning hyperparameters, and selecting models. It is not typically used for solving issues related to the design matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp24-final-Q4b,Q4c,Q4dd-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Find an optimal solution when the design matrix is not full column rank."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp24-final-Q4b,Q4c,Q4dd-h2"
+        ],
+        "title": "Identifying the Odd One Out",
+        "text": "Which of the following is NOT a typical use case for cross-validation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Determining how well a model generalizes.",
+            "Hyperparameter tuning.",
+            "Selecting the degree of polynomial models.",
+            "Find an optimal solution when the design matrix is not full column rank.",
+            "Comparing multiple model architectures."
+        ]
+    }
+]

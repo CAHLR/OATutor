@@ -1,0 +1,83 @@
+[
+    {
+        "id": "a9edaf5ds100-su25-final-Q2dj-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mini-Batch Gradient Descent",
+        "text": "In mini-batch gradient descent, the dataset is divided into smaller batches. Each batch is used to calculate the gradient once per epoch. Think about how many times the entire dataset is processed in $$5$$ epochs.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su25-final-Q2dj-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-su25-final-Q2dj-h1"
+        ],
+        "title": "Calculating Total Gradients",
+        "text": "If $$125$$ gradients were calculated over $$5$$ epochs, how many gradients were calculated per epoch? This will help you determine the size of each mini-batch.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su25-final-Q2dj-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$25$$"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su25-final-Q2dj-h2"
+        ],
+        "title": "Determine Gradients Per Epoch",
+        "text": "How many gradients are calculated per epoch if $$125$$ gradients are calculated over $$5$$ epochs?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$25$$",
+            "$$20$$",
+            "$$10$$",
+            "$$50$$"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-su25-final-Q2dj-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-su25-final-Q2dj-h3"
+        ],
+        "title": "Linking Gradients to Mini-Batch Size",
+        "text": "Once you know the number of gradients per epoch, consider how this relates to the number of mini-batches. Each gradient corresponds to one mini-batch.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su25-final-Q2dj-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$20$$"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su25-final-Q2dj-h4"
+        ],
+        "title": "Calculate Mini-Batch Size",
+        "text": "If there are $$25$$ gradients per epoch and $$500$$ data points in total, how many data points are in each mini-batch?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$20$$",
+            "$$25$$",
+            "$$100$$",
+            "$$50$$",
+            "$$10$$"
+        ]
+    }
+]

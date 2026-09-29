@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a89b247ds100-fa17-final-Q17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Graph",
+        "text": "Notice how the error changes as the regularization parameter lambda increases. Think about how bias and variance are affected by regularization.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa17-final-Q17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa17-final-Q17a-h1"
+        ],
+        "title": "Bias and Variance",
+        "text": "Remember that increasing regularization tends to increase bias and decrease variance. How does this relate to the curves labeled A and B?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa17-final-Q17a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(A) is the error due to $${Bias}^2$$ and (B) is the error due to Model Variance."
+        ],
+        "dependencies": [
+            "a89b247ds100-fa17-final-Q17a-h2"
+        ],
+        "title": "Identifying Curve A",
+        "text": "Which error component typically increases with more regularization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "(A) is the Test Error and (B) is the error due to $${Bias}^2$$.",
+            "(A) is the error due to Model Variance and (B) is the Training Error",
+            "(A) is the error due to Model Variance and (B) is the error due to $${Bias}^2$$.",
+            "(A) is the error due to $${Bias}^2$$ and (B) is the error due to Model Variance."
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa17-final-Q17a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(A) is the error due to $${Bias}^2$$ and (B) is the error due to Model Variance."
+        ],
+        "dependencies": [
+            "a89b247ds100-fa17-final-Q17a-h3"
+        ],
+        "title": "Identifying Curve B",
+        "text": "Which error component typically decreases with more regularization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "(A) is the Test Error and (B) is the error due to $${Bias}^2$$.",
+            "(A) is the error due to Model Variance and (B) is the Training Error",
+            "(A) is the error due to Model Variance and (B) is the error due to $${Bias}^2$$.",
+            "(A) is the error due to $${Bias}^2$$ and (B) is the error due to Model Variance."
+        ]
+    }
+]

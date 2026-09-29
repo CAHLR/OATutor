@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1bb75eds100-su21-final-Q7i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logistic Regression",
+        "text": "Logistic regression is a linear classifier. It tries to find a linear boundary between classes. Consider the shape of the data distribution and think about whether a straight line can separate the classes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7i-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7i-h1"
+        ],
+        "title": "Analyzing the Data Distribution",
+        "text": "Look at the distribution of the orange and blue points. Does the pattern suggest a linear separation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7i-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7i-h2"
+        ],
+        "title": "Boundary B and Logistic Regression",
+        "text": "If logistic regression creates a linear boundary, think about what kind of boundary would be needed to separate the classes in this dataset. Is it linear or non-linear?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

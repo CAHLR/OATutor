@@ -1,0 +1,84 @@
+[
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Logistic Regression Model",
+        "text": "In logistic regression, the probability that a student prefers Kendrick is calculated using the logistic function. This function takes the form: $$\\frac{1}{1+e^{\\left(-z\\right)}}$$, where $$z$$ is a linear combination of the features and the parameters. Can you identify what $$z$$ would be in this case?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fa-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp25-final-Q3e,Q3fa-h1"
+        ],
+        "title": "Calculating the Linear Combination",
+        "text": "To find $$z$$, you need to compute the linear combination of the features and the parameters. The formula is $$z=\\theta_0+\\theta_1 X_1+\\theta_2 X_2$$. Given $$theta=(-2, 2, 1)$$, $$X_1=1$$, and $$X_2=0$$, what is the value of $$z$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fa-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp25-final-Q3e,Q3fa-h2"
+        ],
+        "title": "Evaluating the Linear Combination",
+        "text": "What is the value of $$z$$ when you substitute the given values into the formula $$z=\\theta_0+\\theta_1 X_1+\\theta_2 X_2$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$-2$$",
+            "$$0$$",
+            "$$1$$",
+            "$$2$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fa-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp25-final-Q3e,Q3fa-h3"
+        ],
+        "title": "Using the Logistic Function",
+        "text": "Now that you have $$z$$, use the logistic function to find the probability. Remember, the logistic function is $$\\frac{1}{1+e^{\\left(-z\\right)}}$$. What does this expression evaluate to when $$z=0$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fa-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0.5$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp25-final-Q3e,Q3fa-h4"
+        ],
+        "title": "Calculating the Probability",
+        "text": "What is the probability that the student prefers Kendrick when $$z=0$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0.88$$",
+            "$$0.5$$",
+            "$$0.12$$",
+            "$$0.27$$",
+            "$$0.73$$"
+        ]
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "id": "a1bb75eds100-su20-mt2-Q7d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Separability",
+        "text": "To determine if a dataset is linearly separable, check if you can draw a straight line that separates the two classes without any overlap. Look at the distribution of points in the scatter plot.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-mt2-Q7d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su20-mt2-Q7d-h1"
+        ],
+        "title": "Analyzing the Scatter Plot",
+        "text": "Observe the scatter plot. Can you identify a threshold value of $$x$$ that separates the points with $$y=0$$ from those with $$y=1$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No",
+            "Impossible to tell"
+        ]
+    }
+]

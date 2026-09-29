@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4cj-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Bias",
+        "text": "Model bias refers to the error introduced by approximating a real-world problem with a simplified model. High bias can occur when the model is too simple to capture the underlying patterns in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4cj-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4cj-h1"
+        ],
+        "title": "Role of the Intercept",
+        "text": "The intercept in a model allows it to fit the data better by adjusting the baseline prediction. Removing it might make the model less flexible, potentially increasing bias.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4cj-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The model becomes less flexible."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4cj-h2"
+        ],
+        "title": "Effect of Removing the Intercept",
+        "text": "What happens to the model's flexibility if the intercept is removed?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The model becomes more flexible.",
+            "The model becomes less flexible.",
+            "The model's flexibility remains unchanged."
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4cj-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4cj-h3"
+        ],
+        "title": "Impact on Bias",
+        "text": "Does removing the intercept increase or decrease the model's bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "No impact"
+        ]
+    }
+]

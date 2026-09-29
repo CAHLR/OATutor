@@ -1,0 +1,67 @@
+[
+    {
+        "id": "a1155e4row5_p2o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE and MAE",
+        "text": "Mean Squared Error (MSE) and Mean Absolute Error (MAE) are both used to measure the accuracy of a model. MSE is sensitive to outliers because it squares the errors, making larger errors more significant. MAE, on the other hand, treats all errors equally. Consider which scenario might benefit from emphasizing larger errors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p2o-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1155e4row5_p2o-h1"
+        ],
+        "title": "Choosing the Right Error Metric",
+        "text": "Which error metric would be more appropriate if you want to penalize larger errors more heavily?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "MAE",
+            "MSE",
+            "TRUE"
+        ]
+    },
+    {
+        "id": "a1155e4row5_p2o-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Differentiability of MSE",
+        "text": "MSE is a smooth, differentiable function, which means it can be used with gradient-based optimization methods. This property is useful when you need to find the minimum average loss efficiently. Think about why differentiability might be important in optimization.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p2o-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1155e4row5_p2o-h3"
+        ],
+        "title": "Optimization and Differentiability",
+        "text": "Why might a smooth, differentiable loss function be preferred in optimization tasks?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It allows for efficient $$gradient-based$$ optimization",
+            "It makes the model more complex",
+            "It reduces computation time",
+            "TRUE"
+        ]
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fe-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Decision Thresholds",
+        "text": "When you lower the decision threshold in a logistic regression model, you are essentially making it easier for the model to predict the positive class. Think about how this might affect the number of predictions for \"Kendrick.\"",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fe-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp25-final-Q3e,Q3fe-h1"
+        ],
+        "title": "Impact on Predictions",
+        "text": "Consider what happens to the model's sensitivity and specificity when the threshold is lowered. How does this change the balance between false positives and false negatives?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fe-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp25-final-Q3e,Q3fe-h2"
+        ],
+        "title": "Threshold and Prediction Frequency",
+        "text": "If the threshold is lowered from $$0.5$$ to $$0.3$$, will the model predict \"Kendrick\" more often, less often, or the same amount?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Less often",
+            "More often",
+            "TRUE",
+            "The same amount"
+        ]
+    }
+]

@@ -1,0 +1,43 @@
+[
+    {
+        "id": "a9edaf5ds100-fa24-final-Q3fa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L1 Regularization",
+        "text": "L1 regularization, also known as Lasso, adds a penalty equal to the absolute value of the magnitude of coefficients. This can lead to some coefficients being exactly zero, effectively selecting a simpler model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa24-final-Q3fa-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Closed-form Solutions",
+        "text": "A closed-form solution is an explicit equation that can be solved directly. In the context of linear regression, closed-form solutions exist for ordinary least squares but not necessarily when regularization is applied.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa24-final-Q3fa-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa24-final-Q3fa-h1"
+        ],
+        "title": "Impact of L1 Regularization",
+        "text": "Does L1 regularization typically result in a closed-form solution for the coefficients?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

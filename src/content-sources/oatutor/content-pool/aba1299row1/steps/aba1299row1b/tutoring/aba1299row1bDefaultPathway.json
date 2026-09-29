@@ -1,0 +1,46 @@
+[
+    {
+        "id": "aba1299row1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Role of the Intercept",
+        "text": "Think about what the intercept column represents in the design matrix X. How does it relate to the vector 1?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1b-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row1b-h1"
+        ],
+        "title": "Exploring the Span",
+        "text": "Consider what it means for a vector to be in the span of a set of vectors. How does this apply to the vector $$1$$ and the columns of X?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "In the span of"
+        ],
+        "dependencies": [
+            "aba1299row1b-h2"
+        ],
+        "title": "Multiple Choice: Relationship of $$1$$ to X",
+        "text": "Based on your understanding, how is the vector $$1$$ related to the design matrix X?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Orthogonal to",
+            "In the span of",
+            "NOT orthogonal to and NOT in the span of"
+        ]
+    }
+]

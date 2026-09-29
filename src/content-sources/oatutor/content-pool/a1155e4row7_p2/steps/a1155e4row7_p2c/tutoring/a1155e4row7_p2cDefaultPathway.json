@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1155e4row7_p2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding KDE Plot",
+        "text": "A KDE plot estimates the probability density function of a random variable. It smooths out the distribution by using a kernel, which affects how the data is represented. The bandwidth (\\alpha) controls the smoothness of the KDE plot.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row7_p2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row7_p2c-h1"
+        ],
+        "title": "Effect of High Bandwidth",
+        "text": "When the bandwidth (\\alpha) is too high, the KDE plot becomes overly smooth. This can lead to unrealistic density estimates, such as showing significant density for ages below $$18$$, which might not be present in the actual data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row7_p2c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1155e4row7_p2c-h2"
+        ],
+        "title": "Analyzing the KDE Plot",
+        "text": "Look at the KDE plot. Does it show a significant density for ages below 18?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

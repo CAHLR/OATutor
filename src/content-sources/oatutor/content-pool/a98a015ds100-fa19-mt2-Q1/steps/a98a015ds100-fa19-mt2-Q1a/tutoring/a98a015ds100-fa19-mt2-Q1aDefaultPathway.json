@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD and Principal Components",
+        "text": "When you perform Singular Value Decomposition (SVD) on a matrix, you decompose it into three matrices: U, \u03a3, and $$V^T$$. The principal component matrix P is related to these matrices. Think about how the principal components are derived from these components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa19-mt2-Q1a-h1"
+        ],
+        "title": "Role of U in SVD",
+        "text": "The matrix U in SVD represents the left singular vectors of the original matrix. Consider how these vectors relate to the principal components. Are they directly the principal components, or do they need to be transformed?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa19-mt2-Q1a-h2"
+        ],
+        "title": "Matrix Multiplication in SVD",
+        "text": "To find the principal component matrix P, consider the role of \u03a3 in the decomposition. Which matrix multiplication involving U and \u03a3 gives you P?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

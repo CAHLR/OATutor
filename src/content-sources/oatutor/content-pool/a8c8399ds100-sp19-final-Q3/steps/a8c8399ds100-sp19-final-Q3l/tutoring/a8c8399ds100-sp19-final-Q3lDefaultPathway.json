@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a8c8399ds100-sp19-final-Q3l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatterplot",
+        "text": "Look at the pattern of the data points in the scatterplot. Consider how the function $$f(x)=|x|$$ might affect the relationship between $$x$$ and $$y$$. What kind of transformation does the absolute value function perform?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp19-final-Q3l-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "They become $$non-negative$$."
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp19-final-Q3l-h1"
+        ],
+        "title": "Effect of Absolute Value",
+        "text": "What happens to the values of $$x$$ when you apply the absolute value function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "They become $$non-negative$$.",
+            "They become negative.",
+            "They remain unchanged."
+        ]
+    },
+    {
+        "id": "a8c8399ds100-sp19-final-Q3l-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-sp19-final-Q3l-h2"
+        ],
+        "title": "Model Fit with Absolute Value",
+        "text": "Consider how the transformation by $$f(x)=|x|$$ might help in fitting the model $$y_i=\\beta_0+x_i \\beta_1+f{\\left(x_i\\right)} \\beta_2$$ to the data. Does the pattern of the data suggest that this transformation could be useful?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

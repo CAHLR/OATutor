@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a89b247ds100-fa20-final-Q6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias-Variance Decomposition",
+        "text": "The bias-variance decomposition is a way to express the error of a model as the sum of three components: the variance of the model, the bias of the model, and the irreducible error. Think about how each of these components might behave in different types of models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa20-final-Q6b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring Non-linear Models",
+        "text": "Non-linear models can capture complex patterns in data that linear models cannot. Consider how this ability might affect the bias and variance of the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa20-final-Q6b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [],
+        "title": "Bias-Variance Decomposition for Non-linear Models",
+        "text": "Does the bias-variance decomposition apply to non-linear models when using squared loss?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

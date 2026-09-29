@@ -1,0 +1,96 @@
+[
+    {
+        "id": "aba1299row3b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE",
+        "text": "To calculate the Mean Squared Error (MSE), you need to find the difference between the observed values and the predicted values from the regression line. Then, square these differences and find their average.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row3b-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row3b-h1"
+        ],
+        "title": "Identifying Residuals",
+        "text": "Look at the graph and identify the observed tip values and the corresponding predicted values on the line for each temperature. The residuals are the differences between these observed and predicted values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row3b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$30-28$$"
+        ],
+        "dependencies": [
+            "aba1299row3b-h2"
+        ],
+        "title": "Calculating a Residual",
+        "text": "What is the residual for the data point at temperature 69?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$30-28$$",
+            "$$2$$",
+            ">3",
+            ">4",
+            ">5"
+        ]
+    },
+    {
+        "id": "aba1299row3b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "aba1299row3b-h3"
+        ],
+        "title": "Squaring the Residuals",
+        "text": "What is the square of the residual for the data point at temperature 69?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$4$$",
+            "$$4$$",
+            ">10",
+            ">6",
+            ">8"
+        ]
+    },
+    {
+        "id": "aba1299row3b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "aba1299row3b-h4"
+        ],
+        "title": "Finding the Average of Squared Residuals",
+        "text": "After calculating the squared residuals for all data points, what is the average of these squared residuals?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$8$$",
+            "$$6$$",
+            ">7",
+            ">8",
+            ">9"
+        ]
+    }
+]

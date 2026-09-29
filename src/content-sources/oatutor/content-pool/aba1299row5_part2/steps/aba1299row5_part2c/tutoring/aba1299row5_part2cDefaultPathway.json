@@ -1,0 +1,62 @@
+[
+    {
+        "id": "aba1299row5_part2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Residual Vector",
+        "text": "The residual vector, denoted as e, is the difference between the observed values Y and the predicted values hat{Y}. This vector helps us understand how well our model fits the data. Can you think about why minimizing the sum of squared residuals is important?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row5_part2c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The Role of the Normal Equation",
+        "text": "The normal equation is a key component in finding the optimal parameters for an OLS model. It helps in minimizing the sum of squared residuals. Do you remember the form of the normal equation and how it relates to the matrix X?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row5_part2c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It ensures that the normal equation has a unique solution."
+        ],
+        "dependencies": [],
+        "title": "Checking Full Column Rank",
+        "text": "Why is it important for matrix X to have full column rank in the context of OLS?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It ensures that the normal equation has a unique solution.",
+            "It allows for multiple solutions to the normal equation.",
+            "It has no effect on the solution of the normal equation."
+        ]
+    },
+    {
+        "id": "aba1299row5_part2c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It provides the best fit line for the data."
+        ],
+        "dependencies": [],
+        "title": "Understanding the Sum of Squared Residuals",
+        "text": "What does minimizing the sum of squared residuals achieve in the context of OLS?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It provides the best fit line for the data.",
+            "It maximizes the variance of the residuals.",
+            "It has no effect on the fit of the model."
+        ]
+    }
+]

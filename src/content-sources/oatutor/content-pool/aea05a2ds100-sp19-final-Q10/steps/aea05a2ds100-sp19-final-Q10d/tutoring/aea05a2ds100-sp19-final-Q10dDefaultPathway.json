@@ -1,0 +1,64 @@
+[
+    {
+        "id": "aea05a2ds100-sp19-final-Q10d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Block Replication",
+        "text": "Each block of the file is stored on $$2$$ different machines. Think about how this replication affects the file's availability when machines fail.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp19-final-Q10d-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-sp19-final-Q10d-h1"
+        ],
+        "title": "Analyzing Machine Failures",
+        "text": "Consider the scenario where $$3$$ out of $$4$$ machines fail. How many machines are left to potentially hold the blocks?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp19-final-Q10d-h3",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-sp19-final-Q10d-h2"
+        ],
+        "title": "Probability of Block Availability",
+        "text": "For a block to be available, at least one of its replicas must be on the remaining machine. What is the probability of this happening for a single block?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp19-final-Q10d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\left(\\frac{1}{2}\\right)^8$$"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp19-final-Q10d-h3"
+        ],
+        "title": "Calculating Overall Probability",
+        "text": "If the probability of a single block being available is $$\\frac{1}{2}$$, what is the probability that all $$8$$ blocks are available?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$\\frac{1}{2}$$",
+            "$$\\left(\\frac{1}{2}\\right)^8$$",
+            "$$\\frac{1}{6}$$",
+            "$$\\frac{5}{6}$$",
+            "$$\\left(\\frac{5}{6}\\right)^8$$",
+            "$$1-\\left(\\frac{5}{6}\\right)^8$$",
+            "$$1$$",
+            "Other"
+        ]
+    }
+]

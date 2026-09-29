@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a1155e4row10_p1f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame Structure",
+        "text": "Look at how the second DataFrame is structured. Notice that both $$`player_{id}`$$ and $$`game_{type}`$$ are used as indices. This suggests that the data is grouped by these two columns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p1f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row10_p1f-h1"
+        ],
+        "title": "Analyzing the Aggregation",
+        "text": "The `win` column in the second DataFrame shows the average win value for each combination of $$`player_{id}`$$ and $$`game_{type}`$$. Think about which method can calculate the mean for grouped data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p1f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            ".groupby() with .mean()"
+        ],
+        "dependencies": [
+            "a1155e4row10_p1f-h2"
+        ],
+        "title": "Choosing the Right Method",
+        "text": "Which method allows you to group data by multiple columns and then calculate the mean for each group?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            ".groupby() with .mean()",
+            ".value_counts()",
+            ".pivot_table()",
+            ".agg()",
+            ".merge()"
+        ]
+    }
+]

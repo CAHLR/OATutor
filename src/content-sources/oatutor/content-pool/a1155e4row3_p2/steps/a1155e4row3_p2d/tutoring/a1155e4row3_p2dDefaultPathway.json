@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a1155e4row3_p2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Correlation",
+        "text": "To investigate the correlation between two variables, you might want to visualize how one variable changes with respect to the other. Think about what types of plots can show relationships between two continuous variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row3_p2d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Scatter plot"
+        ],
+        "dependencies": [
+            "a1155e4row3_p2d-h1"
+        ],
+        "title": "Choosing the Right Plot",
+        "text": "Which of the following plots can help visualize the relationship between two continuous variables?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Bar chart",
+            "Scatter plot",
+            "Pie chart",
+            "Histogram"
+        ]
+    },
+    {
+        "id": "a1155e4row3_p2d-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting the Data",
+        "text": "Look at the data provided. Notice how the number of colonies changes as the amount of antibiotic changes. This can give you a clue about the type of relationship between the two variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row3_p2d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Line plot"
+        ],
+        "dependencies": [
+            "a1155e4row3_p2d-h3"
+        ],
+        "title": "Visualizing Trends",
+        "text": "Which plot would best show a trend or pattern between the amount of antibiotic and the number of colonies?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Line plot",
+            "Box plot",
+            "Pie chart",
+            "Bar chart"
+        ]
+    }
+]

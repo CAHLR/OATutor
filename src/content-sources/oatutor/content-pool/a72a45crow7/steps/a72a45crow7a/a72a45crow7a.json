@@ -1,0 +1,18 @@
+{
+    "id": "a72a45crow7a",
+    "stepAnswer": [
+        "0*([\\dA-z]+)"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Some of the values in the number column have leading zeroes (e.g., \"06A\"). Write a regular expression to remove all leading zeroes from the entries in the number column. Every string in number starts with a non-negative count of leading zeroes, followed by a combination of numbers and/or letters. No room number consists of only zeroes. Which regular expression pattern correctly accomplishes this?",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "0*([\\dA-z]+)",
+        "0+([\\dA-z]+)",
+        "0*([\\d]+)",
+        "**0([\\dA-z]+)$",
+        "([\\dA-z]+)0*"
+    ]
+}

@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Data",
+        "text": "The table shows the time spent by a visitor at each exhibit. Each column represents a different exhibit, and the values are the time spent in minutes. Consider how this data might be used in PCA to find patterns or reduce dimensions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "train"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa19-mt2-Q1d-h1"
+        ],
+        "title": "Identifying Patterns",
+        "text": "Which exhibit did the visitor spend the most time at?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "lion",
+            "tiger",
+            "train",
+            "playground"
+        ]
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1d-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Principal Component Analysis (PCA)",
+        "text": "PCA is used to reduce the dimensionality of data while preserving as much variance as possible. It transforms the data into a new coordinate system where the greatest variance comes to lie on the first coordinate (called the first principal component), the second greatest variance on the second coordinate, and so on.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "variance"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa19-mt2-Q1d-h3"
+        ],
+        "title": "Variance in PCA",
+        "text": "What does PCA aim to maximize in the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "mean",
+            "variance",
+            "median",
+            "mode"
+        ]
+    }
+]

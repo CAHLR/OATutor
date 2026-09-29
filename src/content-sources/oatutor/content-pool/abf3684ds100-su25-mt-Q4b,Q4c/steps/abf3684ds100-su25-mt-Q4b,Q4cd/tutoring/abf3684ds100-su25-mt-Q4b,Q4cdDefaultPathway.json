@@ -1,0 +1,60 @@
+[
+    {
+        "id": "abf3684ds100-su25-mt-Q4b,Q4cd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Objective Function",
+        "text": "The objective function Michael is using involves a summation over all customers. It combines a constant term with a logarithmic term. Think about how each part of the function contributes to the overall sum.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-mt-Q4b,Q4cd-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-su25-mt-Q4b,Q4cd-h1"
+        ],
+        "title": "Derivative of a Logarithm",
+        "text": "Remember that the derivative of $$\\ln\\left(x\\right)$$ with respect to $$x$$ is $$\\frac{1}{x}$$. This will be useful when differentiating the logarithmic part of the objective function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-mt-Q4b,Q4cd-h3",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-su25-mt-Q4b,Q4cd-h2"
+        ],
+        "title": "Differentiating the Objective Function",
+        "text": "When differentiating the objective function with respect to theta0, consider each term separately. The constant term $$3theta0$$ will differentiate differently compared to the logarithmic term involving tip and theta0.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-mt-Q4b,Q4cd-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\sum 3-\\frac{tip}{theta0}$$"
+        ],
+        "dependencies": [
+            "abf3684ds100-su25-mt-Q4b,Q4cd-h3"
+        ],
+        "title": "Choosing the Correct Derivative Expression",
+        "text": "Which of the following expressions correctly represents the derivative of the objective function with respect to theta0?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\sum 3-\\frac{tip}{theta0}$$",
+            "$$\\sum 3theta0-tip$$",
+            "$$sum\\left(-\\frac{tip}{theta0}\\right)$$",
+            "$$\\sum 3+\\frac{tip}{theta0}$$",
+            "$$\\sum 3-tip theta0$$"
+        ]
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2da-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Independence",
+        "text": "Linear independence of columns in a design matrix means that no column can be written as a linear combination of the others. This ensures that the matrix has full rank.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2da-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2da-h1"
+        ],
+        "title": "OLS Solution Uniqueness",
+        "text": "For the OLS solution to be unique, the design matrix must have full column rank. This means the number of linearly independent columns equals the number of columns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2da-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$30$$"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2da-h2"
+        ],
+        "title": "Checking Column Rank",
+        "text": "If a design matrix has $$30$$ columns and they are linearly independent, what is the rank of the matrix?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$30$$",
+            "$$28$$",
+            "$$29$$",
+            "$$30$$",
+            "$$31$$"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2da-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The solution is unique."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2da-h3"
+        ],
+        "title": "Implication of Full Rank",
+        "text": "What does having full rank imply about the solutions to the OLS problem?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The solution is unique.",
+            "There are infinite solutions.",
+            "There is no solution."
+        ]
+    }
+]

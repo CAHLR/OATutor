@@ -1,0 +1,45 @@
+[
+    {
+        "id": "aea05a2ds100-fa24-final-Q8m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Dendrograms",
+        "text": "A dendrogram is a tree-like diagram that records the sequences of merges or splits in hierarchical clustering. Can you think about how this might visually represent the clustering process?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-fa24-final-Q8m-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-fa24-final-Q8m-h1"
+        ],
+        "title": "Hierarchical Agglomerative Clustering",
+        "text": "In hierarchical agglomerative clustering, we start with each point as its own cluster and then merge the closest pairs of clusters step by step. How might this process be represented in a dendrogram?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-fa24-final-Q8m-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "aea05a2ds100-fa24-final-Q8m-h2"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Does a dendrogram show the process of hierarchical agglomerative clustering as a tree?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,85 @@
+[
+    {
+        "id": "a8c8399ds100-fa19-mt2-Q6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "Remember, one-hot encoding is a way to represent categorical variables as binary vectors. For the $$job_{type}$$ variable, each category (blue collar, white collar, managerial) is represented by a separate binary column. In this case, since we're dealing with a white collar worker, think about which columns will be $$0$$ and which will be $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa19-mt2-Q6b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-fa19-mt2-Q6b-h1"
+        ],
+        "title": "Substitute Known Values",
+        "text": "You know the worker is white collar and has $$10$$ years of education. Substitute these values into the equation: $$y=-8+3x_{edu}+6x_m-3x_b$$. What do you get when you plug in $$x_{edu}=10$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa19-mt2-Q6b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$30$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa19-mt2-Q6b-h2"
+        ],
+        "title": "Calculate the Education Contribution",
+        "text": "Calculate the contribution of education to the wage using the term $$3x_{edu}$$. What is the result when $$x_{edu}=10$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$30$$",
+            "$$16$$",
+            "$$19$$",
+            "$$22$$",
+            "$$25$$",
+            "$$28$$"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-fa19-mt2-Q6b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-fa19-mt2-Q6b-h3"
+        ],
+        "title": "Consider the Job Type Contribution",
+        "text": "Since the worker is white collar, the dummy variables for managerial $$x_m$$ and blue collar $$x_b$$ will both be $$0$$. How does this affect the equation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa19-mt2-Q6b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$22$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa19-mt2-Q6b-h4"
+        ],
+        "title": "Calculate the Predicted Wage",
+        "text": "Now that you have the contributions from education and job type, calculate the predicted wage using the equation $$y=-8+3x_{edu}+6x_m-3x_b$$. What is the final result?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$19$$",
+            "$$22$$",
+            "$$28$$",
+            "$$16$$",
+            "$$25$$"
+        ]
+    }
+]

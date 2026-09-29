@@ -1,0 +1,46 @@
+[
+    {
+        "id": "aea05a2ds100-su20-final-Q2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Agglomerative Clustering",
+        "text": "Agglomerative clustering is a type of hierarchical clustering that builds nested clusters by merging or splitting them successively. It starts with each point as its own cluster and merges them step by step. Can you think about how randomness in tie-breaking might affect the final clustering?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-su20-final-Q2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-su20-final-Q2a-h1"
+        ],
+        "title": "Tie-breaking in Clustering",
+        "text": "When distances between points are unique, the order of merging clusters is determined by these distances. However, if tie-breaking is random, consider how this might introduce variability in the clustering process. What does this imply about the consistency of the results?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-su20-final-Q2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Sometimes"
+        ],
+        "dependencies": [
+            "aea05a2ds100-su20-final-Q2a-h2"
+        ],
+        "title": "Impact of Random Tie-breaking",
+        "text": "If tie-breaking is done randomly, will the clustering result be:",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Always",
+            "Sometimes",
+            "Never"
+        ]
+    }
+]

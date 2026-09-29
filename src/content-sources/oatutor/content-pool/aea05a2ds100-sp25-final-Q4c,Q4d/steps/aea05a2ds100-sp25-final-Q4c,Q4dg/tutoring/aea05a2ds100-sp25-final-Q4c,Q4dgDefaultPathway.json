@@ -1,0 +1,68 @@
+[
+    {
+        "id": "aea05a2ds100-sp25-final-Q4c,Q4dg-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding K-Means Objective",
+        "text": "K-Means clustering aims to minimize the within-cluster variance. Think about what this means in terms of how data points are grouped together.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp25-final-Q4c,Q4dg-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Silhouette Score"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp25-final-Q4c,Q4dg-h1"
+        ],
+        "title": "Evaluating Clustering Performance",
+        "text": "Which metric is commonly used to evaluate the compactness and separation of clusters?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Silhouette Score",
+            "Mean Squared Error",
+            "Accuracy",
+            "Precision"
+        ]
+    },
+    {
+        "id": "aea05a2ds100-sp25-final-Q4c,Q4dg-h3",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-sp25-final-Q4c,Q4dg-h2"
+        ],
+        "title": "Silhouette Score Insight",
+        "text": "The silhouette score measures how similar an object is to its own cluster compared to other clusters. Consider how this might relate to the goal of K-Means.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp25-final-Q4c,Q4dg-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp25-final-Q4c,Q4dg-h3"
+        ],
+        "title": "K-Means Objective Clarification",
+        "text": "Does K-Means directly optimize the silhouette score during its clustering process?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

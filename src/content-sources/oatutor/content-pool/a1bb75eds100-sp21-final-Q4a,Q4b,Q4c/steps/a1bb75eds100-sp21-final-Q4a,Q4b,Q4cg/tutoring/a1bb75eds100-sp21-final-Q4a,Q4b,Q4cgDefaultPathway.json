@@ -1,0 +1,54 @@
+[
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cg-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Separability",
+        "text": "Think about what it means for data to be linearly separable. If you can draw a straight line that separates the data points of different classes, then the data is linearly separable. Consider how transforming the data might help achieve this.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cg-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Squaring on Data",
+        "text": "When you square a number, it becomes non-negative. Consider how this transformation affects the distribution of data points, especially those that were negative or close to zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cg-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Analyzing the Transformation",
+        "text": "What happens to the data points when you apply the transformation $$(x_1,x_2)$$ to $$({x_1}^2,{x_2}^2)$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "They become negative",
+            "They become $$non-negative$$",
+            "They become zero",
+            "They remain the same"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cg-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Visualizing the Transformation",
+        "text": "Try plotting a few points before and after the transformation. Observe how the shape and position of the data points change. This might give you insight into whether the data can be separated by a line after transformation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

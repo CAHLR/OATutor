@@ -1,0 +1,18 @@
+{
+    "id": "a640c04row7b",
+    "stepAnswer": [
+        "dan\\_products['Stars'].iloc[359]"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Dan tells you that 1) he has sorted dan\\_products so that Stars is in descending order and 2) that there are $$719$$ rows in the DataFrame. Fill in the blank below so that med\\_stars is the median Stars value. You are not allowed to use np.median.\\n\\nFill in the blank (A)##figure2.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "dan\\_products['Stars'].iloc[359]",
+        "dan\\_products['Stars'].iloc[360]",
+        "dan\\_products['Stars'].loc[359]",
+        "dan\\_products['Stars'].iloc[719 // $$2$$ + 1]",
+        "dan\\_products.iloc[359]"
+    ]
+}

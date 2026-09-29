@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It transforms the data into a new coordinate system, where the greatest variance by any projection of the data comes to lie on the first coordinate (called the first principal component), the second greatest variance on the second coordinate, and so on.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa19-mt2-Q1e-h1"
+        ],
+        "title": "Matrix Multiplication in PCA",
+        "text": "In PCA, the data matrix is often multiplied by a matrix of eigenvectors to transform the data. This transformation helps in reducing the dimensionality of the data while preserving as much variance as possible.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa19-mt2-Q1e-h2"
+        ],
+        "title": "Checking Matrix Multiplication",
+        "text": "Consider the expression UX. What does this represent in the context of PCA?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

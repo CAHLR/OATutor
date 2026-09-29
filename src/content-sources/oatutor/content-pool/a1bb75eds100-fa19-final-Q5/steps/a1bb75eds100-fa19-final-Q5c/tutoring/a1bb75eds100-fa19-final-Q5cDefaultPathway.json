@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-final-Q5c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Entropy Loss",
+        "text": "Cross-entropy loss is particularly useful in classification problems because it measures the difference between two probability distributions. Think about how this might be more suitable than squared loss when dealing with probabilities.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Behavior of Squared Loss",
+        "text": "Consider how squared loss behaves when the predicted probabilities are close to $$0$$ or $$1$$. What happens to the loss value in these cases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$Cross-entropy$$ loss"
+        ],
+        "dependencies": [],
+        "title": "Comparing Loss Functions",
+        "text": "Which loss function is more sensitive to the differences between predicted probabilities and true labels?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$Cross-entropy$$ loss",
+            "Squared loss"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5c-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Impact on Parameter Optimization",
+        "text": "Think about how minimizing cross-entropy loss affects the optimization of parameters like beta. How does it guide the model to make better predictions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$Cross-entropy$$ loss"
+        ],
+        "dependencies": [],
+        "title": "Loss Function and Model Performance",
+        "text": "Which loss function is more likely to lead to better performance in a binary classification task?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$Cross-entropy$$ loss",
+            "Squared loss"
+        ]
+    }
+]

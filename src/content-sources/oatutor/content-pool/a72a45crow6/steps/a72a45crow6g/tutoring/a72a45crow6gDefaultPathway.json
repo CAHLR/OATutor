@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a72a45crow6g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Sampling Methods",
+        "text": "Think about how Rachel is organizing the students into groups based on their year. This organization is key to identifying the type of sampling method used. What does it mean when you divide a population into distinct groups before sampling?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow6g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a72a45crow6g-h1"
+        ],
+        "title": "Proportional Sampling",
+        "text": "Rachel is taking a sample size from each group that is proportional to the number of students in that group. How does this affect the representation of each group in the sample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow6g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Stratified random sample"
+        ],
+        "dependencies": [
+            "a72a45crow6g-h2"
+        ],
+        "title": "Identify the Sampling Method",
+        "text": "Based on the information given, which sampling method is Rachel using?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Convenience sample",
+            "Stratified random sample",
+            "Uniform random sample with replacement",
+            "Post stratification",
+            "Cluster sample"
+        ]
+    }
+]

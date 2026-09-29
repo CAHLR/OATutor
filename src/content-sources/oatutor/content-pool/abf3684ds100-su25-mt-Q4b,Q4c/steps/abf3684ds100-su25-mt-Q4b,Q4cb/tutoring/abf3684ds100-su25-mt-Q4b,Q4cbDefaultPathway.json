@@ -1,0 +1,51 @@
+[
+    {
+        "id": "abf3684ds100-su25-mt-Q4b,Q4cb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MAE",
+        "text": "The Mean Absolute Error (MAE) measures the average magnitude of errors in a set of predictions, without considering their direction. It is the average over the test sample of the absolute differences between prediction and actual observation where all individual differences have equal weight.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-mt-Q4b,Q4cb-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring Constant Models",
+        "text": "In a constant model, the predicted value is the same for all observations. Think about how this affects the calculation of errors when using MAE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-mt-Q4b,Q4cb-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [],
+        "title": "Choosing the Best Theta",
+        "text": "Consider what happens to the MAE when $$\\theta_0$$ is set to the median of the observed tips. Why might this be a good choice?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "abf3684ds100-su25-mt-Q4b,Q4cb-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Median vs. Mean",
+        "text": "The median is often used in statistics to minimize the sum of absolute deviations. How does this relate to the MAE and the choice of $$\\theta_0$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

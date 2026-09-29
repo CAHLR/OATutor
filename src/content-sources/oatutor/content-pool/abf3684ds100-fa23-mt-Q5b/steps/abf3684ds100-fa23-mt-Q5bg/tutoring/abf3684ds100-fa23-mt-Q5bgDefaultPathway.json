@@ -1,0 +1,66 @@
+[
+    {
+        "id": "abf3684ds100-fa23-mt-Q5bg-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Loss Functions",
+        "text": "When considering loss functions, think about how they handle differences between predicted and actual values. A higher power in the loss function can amplify these differences, especially for larger errors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa23-mt-Q5bg-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Comparing Powers in Loss Functions",
+        "text": "Consider how the power of the difference term affects the sensitivity of the loss function to outliers. Higher powers will increase the penalty for larger errors more than lower powers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa23-mt-Q5bg-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It increases the penalty for larger errors compared to MSE."
+        ],
+        "dependencies": [
+            "abf3684ds100-fa23-mt-Q5bg-h1"
+        ],
+        "title": "Analyzing the Power of $$3$$",
+        "text": "What happens to the penalty for errors when you use a power of $$3$$ in the loss function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It increases the penalty for larger errors compared to MSE.",
+            "It decreases the penalty for larger errors compared to MSE.",
+            "It has no effect on the penalty for larger errors."
+        ]
+    },
+    {
+        "id": "abf3684ds100-fa23-mt-Q5bg-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It makes the loss function more sensitive to outliers than MSE."
+        ],
+        "dependencies": [
+            "abf3684ds100-fa23-mt-Q5bg-h2"
+        ],
+        "title": "Absolute Value and Powers",
+        "text": "How does using an absolute value with a power of $$5$$ affect the loss function's sensitivity to outliers?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It makes the loss function more sensitive to outliers than MSE.",
+            "It makes the loss function less sensitive to outliers than MSE.",
+            "It has no effect on the sensitivity to outliers."
+        ]
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a98a015ds100-su25-final-Q3da-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD",
+        "text": "In Singular Value Decomposition (SVD), a matrix X is decomposed into three matrices: U, S, and $$V^T$$. The matrix S contains the singular values on its diagonal, which represent the magnitude of the principal components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su25-final-Q3da-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-su25-final-Q3da-h1"
+        ],
+        "title": "Role of Matrix U",
+        "text": "The matrix U in SVD contains the left singular vectors. Each column of U corresponds to a principal component, and the first column represents the direction of the first principal component.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su25-final-Q3da-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a98a015ds100-su25-final-Q3da-h2"
+        ],
+        "title": "Using U to Compute Latent Features",
+        "text": "If you have the first column of U, how can you use it to compute the first latent feature for all observations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

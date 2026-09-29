@@ -1,0 +1,81 @@
+[
+    {
+        "id": "aba1299row1_part2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Loss Function",
+        "text": "The loss function, denoted as L(\u03b8), measures how well the model predicts the target values. It is often used to guide the optimization process. Consider how the loss changes between iterations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1_part2d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Gradient Descent Step",
+        "text": "In gradient descent, the update rule for \u03b8 is $$\\operatorname{\\theta}\\left(t+1\\right)$$ $$=$$ \u03b8(t) - \\alpha * gradient. Here, \\alpha is the learning rate, which is given as $$1$$. Use this to understand how \u03b8 changes between iterations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1_part2d-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [
+            "aba1299row1_part2d-h2"
+        ],
+        "title": "Calculating $$\\operatorname{\\theta}\\left(t+1\\right)$$",
+        "text": "Given \u03b8(1) $$=$$ $$11$$ and the gradient at \u03b8(1) is $$4$$, what is \u03b8(2)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$7$$",
+            "$$11$$",
+            "$$13$$",
+            "$$7$$",
+            "$$9$$"
+        ]
+    },
+    {
+        "id": "aba1299row1_part2d-h4",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row1_part2d-h1"
+        ],
+        "title": "Loss Function at \u03b8(2)",
+        "text": "You know L(\u03b8(2)) $$=$$ $$0.5$$. Consider how the loss function might change between \u03b8(1) and \u03b8(2).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1_part2d-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "NA"
+        ],
+        "dependencies": [
+            "aba1299row1_part2d-h4"
+        ],
+        "title": "Determining L(\u03b8(1))",
+        "text": "Given L(\u03b8(0)) $$=$$ $$1$$ and L(\u03b8(2)) $$=$$ $$0.5$$, can you determine L(\u03b8(1))?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$0.5$$",
+            "$$1$$",
+            "NA"
+        ]
+    }
+]

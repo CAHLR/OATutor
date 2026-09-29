@@ -1,0 +1,43 @@
+[
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Codons",
+        "text": "Remember that a codon is a sequence of three DNA letters. How many different codons can you form with the letters T, G, C, and A?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Compact Representation",
+        "text": "Think about how you can represent the DNA data in a way that captures the essential information without being too large. What does \"compact\" mean in this context?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "One hot encode each of the 1,000 disjoint codons, per sample."
+        ],
+        "dependencies": [],
+        "title": "Choosing the Right Encoding",
+        "text": "Which encoding strategy allows you to capture the information of each codon while keeping the representation manageable?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Apply one one hot encoding to the entire DNA string.",
+            "One hot encode each of the 1,000 disjoint codons, per sample.",
+            "One hot encode each of the $$500$$ disjoint $$6$$ letter combinations, per sample.",
+            "Bag of words encoding, where each \"word\" is a codon"
+        ]
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a8c8399ds100-sp19-final-Q3n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatterplot",
+        "text": "Look at how the y-values change as $$x$$ increases. Consider which function f(x) could transform $$x$$ to match this pattern.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp19-final-Q3n-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-sp19-final-Q3n-h1"
+        ],
+        "title": "Analyzing Function Behavior",
+        "text": "Think about the behavior of each function option: linear, quadratic, absolute value, and negative linear. Which one aligns with the pattern in the scatterplot?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp19-final-Q3n-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp19-final-Q3n-h2"
+        ],
+        "title": "Choosing the Right Function",
+        "text": "Which function f(x) would create a linear relationship with the y-values as shown in the scatterplot?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

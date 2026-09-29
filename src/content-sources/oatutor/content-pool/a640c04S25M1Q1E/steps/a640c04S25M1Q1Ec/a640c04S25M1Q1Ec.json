@@ -1,0 +1,19 @@
+{
+    "id": "a640c04S25M1Q1Ec",
+    "stepAnswer": [
+        "{'item\\_inventory\\_value' : ('sum', 'min')}"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Fill in the blanks below to create metrics exactly as they appear.\\n\\n$$1$$. There should be one row of metrics for each unique grocery store chain.\\n$$2$$. The first column of metrics indicates the total value of the fruit inventory in all visited stores of each grocery chain.\\n$$3$$. The second column of metrics contains the inventory value of the single store with the highest inventory value. For example, consider the row corresponding to Trader Joe\u2019s. If the Trader Joe\u2019s closest to campus has the lowest inventory value of all Trader Joe\u2019s locations in Berkeley, then the second column would contain that single store\u2019s inventory value. You may assume that no two store locations have the same total inventory value.",
+    "stepBody": "Fill in blank iii##figure5.gif## ##figure6.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "\"chain\"",
+        "\"inventory\"",
+        "\"item\"",
+        "\"price\"",
+        "[\"price\", \"inventory\"]",
+        "{'item\\_inventory\\_value' : ('sum', 'min')}"
+    ]
+}

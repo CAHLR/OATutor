@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a1bb75eds100-su20-mt2-Q8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Recall",
+        "text": "Recall is the ratio of true positive predictions to the total actual positives. Think about how many true positives Model C predicts and how many actual positives there are.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-mt2-Q8b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su20-mt2-Q8b-h1"
+        ],
+        "title": "Identify True Positives",
+        "text": "For Model C, a prediction is positive if the predicted probability is greater than or equal to $$0.75$$. Look at the observations and identify which ones meet this criterion and have a true label of $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-mt2-Q8b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su20-mt2-Q8b-h2"
+        ],
+        "title": "Count Actual Positives",
+        "text": "Count how many observations have a true label of $$1$$. This will be the denominator in your recall calculation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-mt2-Q8b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{1}{3}$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su20-mt2-Q8b-h3"
+        ],
+        "title": "Calculate Recall",
+        "text": "Using the information from the previous hints, calculate the recall for Model C.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$\\frac{1}{3}$$",
+            "$$\\frac{2}{3}$$",
+            "$$\\frac{1}{2}$$",
+            "$$\\frac{1}{6}$$"
+        ]
+    }
+]

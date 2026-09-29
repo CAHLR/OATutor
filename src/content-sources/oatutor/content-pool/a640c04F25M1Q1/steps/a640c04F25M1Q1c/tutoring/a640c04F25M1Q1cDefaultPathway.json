@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a640c04F25M1Q1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding iloc",
+        "text": "The iloc function is used to access a group of rows and columns by integer index. The first number is the row index, and the second is the column index.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04F25M1Q1c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a640c04F25M1Q1c-h1"
+        ],
+        "title": "Accessing Elements with iloc",
+        "text": "When you use df.iloc[1,2], you're trying to access the element in the second row and third column. Check if the DataFrame has a third column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04F25M1Q1c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "NA"
+        ],
+        "dependencies": [
+            "a640c04F25M1Q1c-h2"
+        ],
+        "title": "Checking Column Index",
+        "text": "Does the DataFrame have a column index 2?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No",
+            "NA"
+        ]
+    }
+]

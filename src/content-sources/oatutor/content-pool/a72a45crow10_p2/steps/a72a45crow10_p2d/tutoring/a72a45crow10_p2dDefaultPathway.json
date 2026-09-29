@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a72a45crow10_p2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variable Types",
+        "text": "Think about what kind of data $$'num_{times'}$$ represents. Is it something that can be counted or measured?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow10_p2d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a72a45crow10_p2d-h1"
+        ],
+        "title": "Discrete vs. Continuous",
+        "text": "Consider whether $$'num_{times'}$$ can take any value within a range or if it is limited to specific values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow10_p2d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Quantitative Discrete"
+        ],
+        "dependencies": [
+            "a72a45crow10_p2d-h2"
+        ],
+        "title": "Choosing the Right Type",
+        "text": "Which of the following best describes $$'num_{times'}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Qualitative Nominal",
+            "Qualitative Ordinal",
+            "Quantitative Continuous",
+            "Quantitative Discrete"
+        ]
+    }
+]

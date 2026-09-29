@@ -1,0 +1,88 @@
+[
+    {
+        "id": "a98a015ds100-su20-final-Q7c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean Squared Error",
+        "text": "Mean squared error (MSE) is calculated by taking the average of the squared differences between the predicted values and the actual values. Can you identify the differences for each group of inputs?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q7c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-su20-final-Q7c-h1"
+        ],
+        "title": "Calculating Squared Differences",
+        "text": "For the $$250$$ inputs where the predicted value was $$1$$ more than the actual value, what would the squared difference be for each input?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q7c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-su20-final-Q7c-h2"
+        ],
+        "title": "Handling the Second Group",
+        "text": "For the $$500$$ inputs where the predicted value was $$0.5$$ less than the actual value, calculate the squared difference for each input. Remember, squaring a negative number results in a positive value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q7c-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$250\\times1**2+500\\times{0.5}**2$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-su20-final-Q7c-h3"
+        ],
+        "title": "Summing the Squared Differences",
+        "text": "Now that you have the squared differences for each group, sum them up. What is the total squared difference for all $$900$$ inputs?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$250\\times1**2+500\\times{0.5}**2$$",
+            "$$0$$",
+            "$$0.25$$",
+            "$$0.35$$",
+            "$$0.42$$",
+            "$$0.55$$",
+            "$$1$$"
+        ]
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q7c-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{250\\times1**2+500\\times{0.5}**2}{900}$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-su20-final-Q7c-h4"
+        ],
+        "title": "Calculating the Mean",
+        "text": "To find the mean squared error, divide the total squared difference by the number of observations. What is the mean squared error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{250\\times1**2+500\\times{0.5}**2}{900}$$",
+            "$$0$$",
+            "$$0.25$$",
+            "$$0.35$$",
+            "$$0.42$$",
+            "$$0.55$$",
+            "$$1$$"
+        ]
+    }
+]

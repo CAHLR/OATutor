@@ -1,0 +1,49 @@
+[
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2df-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Complexity",
+        "text": "Model complexity in linear regression can be influenced by the number of features and the regularization parameter, lambda. Consider how lambda affects the penalty on the coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2df-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The coefficients are shrunk towards zero, reducing complexity."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2df-h1"
+        ],
+        "title": "Effect of Lambda on Coefficients",
+        "text": "What happens to the coefficients of the model when lambda is increased?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The coefficients are shrunk towards zero, reducing complexity",
+            "The coefficients are shrunk towards zero, reducing complexity.",
+            "The coefficients are unaffected by lambda",
+            "The coefficients decrease",
+            "The coefficients increase",
+            "The coefficients remain unchanged"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2df-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2df-h2"
+        ],
+        "title": "Regularization and Complexity",
+        "text": "Increasing lambda in regularization techniques like Ridge regression adds more penalty to the size of the coefficients, which can help in reducing overfitting by simplifying the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

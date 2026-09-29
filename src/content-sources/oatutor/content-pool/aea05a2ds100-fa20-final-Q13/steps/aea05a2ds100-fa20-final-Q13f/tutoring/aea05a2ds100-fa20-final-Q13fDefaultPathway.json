@@ -1,0 +1,45 @@
+[
+    {
+        "id": "aea05a2ds100-fa20-final-Q13f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Silhouette Scores",
+        "text": "A silhouette score measures how similar a point is to its own cluster compared to other clusters. A negative silhouette score indicates that a point might be closer to a neighboring cluster than to its own cluster.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-fa20-final-Q13f-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-fa20-final-Q13f-h1"
+        ],
+        "title": "Analyzing Clustering C",
+        "text": "Look at the points in Clustering C. Are there any points that seem closer to a different cluster than their own? This might indicate a negative silhouette score.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-fa20-final-Q13f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "aea05a2ds100-fa20-final-Q13f-h2"
+        ],
+        "title": "Identifying Points with Negative Silhouette Scores",
+        "text": "In Clustering C, which point seems to be closer to a different cluster than its own?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

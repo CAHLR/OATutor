@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a72a45crow10_p1e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Sampling Frame",
+        "text": "Think about what a sampling frame is. It's the list or group from which you draw your sample. In this case, who are the TAs selecting from?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow10_p1e-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Population of Interest",
+        "text": "Consider who Aditi and Zekai are interested in studying. What characteristics define the population they want to learn about?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow10_p1e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Students attending Data $$100$$ discussion sections"
+        ],
+        "dependencies": [
+            "a72a45crow10_p1e-h1"
+        ],
+        "title": "Sampling Frame and Population",
+        "text": "Which of the following best describes the sampling frame in this scenario?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "All UC Berkeley students",
+            "Students attending Data $$100$$ discussion sections",
+            "All students who drink chocolate milk",
+            "All TAs in Data $$100$$"
+        ]
+    },
+    {
+        "id": "a72a45crow10_p1e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$Above-average$$ spenders on chocolate milk"
+        ],
+        "dependencies": [
+            "a72a45crow10_p1e-h2"
+        ],
+        "title": "Population of Interest",
+        "text": "Who are Aditi and Zekai primarily interested in surveying?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "All UC Berkeley students",
+            "$$Above-average$$ spenders on chocolate milk",
+            "Students attending Data $$100$$ discussion sections",
+            "All students who drink chocolate milk"
+        ]
+    }
+]

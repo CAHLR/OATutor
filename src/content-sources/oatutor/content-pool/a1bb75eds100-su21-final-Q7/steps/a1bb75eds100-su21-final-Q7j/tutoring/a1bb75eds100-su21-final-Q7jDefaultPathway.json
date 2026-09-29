@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1bb75eds100-su21-final-Q7j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Decision Boundaries",
+        "text": "Look at how the points are distributed. Notice the circular pattern formed by the classes. Think about what kind of decision boundary could separate these classes effectively.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7j-h1"
+        ],
+        "title": "Decision Tree Characteristics",
+        "text": "Decision trees can create complex boundaries by splitting the data multiple times. Consider how a decision tree might split the data to form a boundary around the circular pattern.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7j-h2"
+        ],
+        "title": "Boundary B Possibility",
+        "text": "Could a decision tree create a boundary that encloses a circular region?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

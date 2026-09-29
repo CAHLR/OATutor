@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a89b247ds100-sp24-final-Q6l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "Consider what bias and variance represent in a model. Bias measures how far off the model's predictions are from the actual values, while variance measures how much the model's predictions change with different data sets. Think about how these two components might affect the weights of a model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp24-final-Q6l-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Comparing Bias and Variance",
+        "text": "Model A has a bias squared of $$2$$ and a variance of $$12$$, while Model B has a bias squared of $$4$$ and a variance of $$1$$. Which model do you think is more stable in its predictions? Consider how variance affects stability.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp24-final-Q6l-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [],
+        "title": "Analyzing Model Weights",
+        "text": "If a model has higher variance, does it necessarily mean it has larger weights?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

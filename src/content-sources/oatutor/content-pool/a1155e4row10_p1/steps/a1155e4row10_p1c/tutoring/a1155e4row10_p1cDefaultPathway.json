@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a1155e4row10_p1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variable Types",
+        "text": "Consider what kind of data the column $$'player_{score'}$$ represents. Is it a countable number, a measurement, or a category?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p1c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row10_p1c-h1"
+        ],
+        "title": "Continuous vs. Discrete",
+        "text": "Think about whether $$'player_{score'}$$ can take any value within a range or if it is limited to specific values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p1c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Quantitative Continuous"
+        ],
+        "dependencies": [
+            "a1155e4row10_p1c-h2"
+        ],
+        "title": "Choosing the Correct Type",
+        "text": "Which of the following best describes $$'player_{score'}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Quantitative Continuous",
+            "Quantitative Discrete",
+            "Qualitative Ordinal",
+            "Qualitative Nominal"
+        ]
+    }
+]

@@ -1,0 +1,54 @@
+[
+    {
+        "id": "a8c8399ds100-su20-final-Q4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean-Centering",
+        "text": "Mean-centering involves subtracting the mean of each column from the respective column values, except for the intercept column. This process ensures that the mean of each column is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting the Equations",
+        "text": "The equations provided represent the optimization problems for finding the coefficients in linear regression. The first equation uses the original design matrix, while the second uses the mean-centered design matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4b-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Mean-Centering on Coefficients",
+        "text": "Mean-centering affects the coefficients of the linear regression model. Specifically, it can change the interpretation of the intercept term, but the slopes (coefficients of other variables) remain the same.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The intercept term changes, but the slopes remain the same."
+        ],
+        "dependencies": [
+            "a8c8399ds100-su20-final-Q4b-h3"
+        ],
+        "title": "Comparing Coefficients",
+        "text": "What happens to the intercept term when you mean-center the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The intercept term changes, but the slopes remain the same.",
+            "Both the intercept and slopes change.",
+            "Neither the intercept nor the slopes change."
+        ]
+    }
+]

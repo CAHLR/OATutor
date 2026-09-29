@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a72a45crow10_p1l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Simple Random Sampling",
+        "text": "In a simple random sample, every individual has an equal chance of being selected. Think about whether Zekai's method gives each student the same probability of being chosen.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow10_p1l-h2",
+        "type": "hint",
+        "dependencies": [
+            "a72a45crow10_p1l-h1"
+        ],
+        "title": "Analyzing the Sampling Method",
+        "text": "Consider how the selection process works in Zekai's proposal. Does each student have an equal chance of being selected, or does the method introduce some form of grouping?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow10_p1l-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a72a45crow10_p1l-h2"
+        ],
+        "title": "Evaluating Equal Probability",
+        "text": "Does Zekai's method ensure that every student has an equal chance of being selected?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

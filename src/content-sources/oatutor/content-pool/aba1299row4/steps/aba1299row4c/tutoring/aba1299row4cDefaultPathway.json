@@ -1,0 +1,64 @@
+[
+    {
+        "id": "aba1299row4c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding OLS Solutions",
+        "text": "When you have more features than observations, think about what happens to the system of equations you're trying to solve. Can you always find a unique solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row4c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Features vs. Observations",
+        "text": "Consider the relationship between the number of features and the number of observations. What happens if the number of features exceeds the number of observations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row4c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aba1299row4c-h1"
+        ],
+        "title": "Linear Dependence",
+        "text": "If you have more features than observations, what can you say about the linear dependence of the features?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "aba1299row4c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aba1299row4c-h2"
+        ],
+        "title": "Unique Solutions in OLS",
+        "text": "In an OLS model, when the number of features exceeds the number of observations, is it possible to have a unique solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

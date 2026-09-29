@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Odds",
+        "text": "Odds are a way of expressing the likelihood of an event happening compared to it not happening. If the odds of an event are $$4$$, it means the event is $$4$$ times more likely to happen than not happen. Can you think about how this relates to probabilities?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7l-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-mt2-Q7l-h1"
+        ],
+        "title": "Interpreting the Coefficients",
+        "text": "The coefficients in a logistic regression model tell us how the log-odds of the outcome change with a one-unit change in the predictor variable. What does the coefficient for sex tell you about the odds of survival for males versus females?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7l-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$f={me}^{2.5}$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-mt2-Q7l-h2"
+        ],
+        "title": "Calculating Odds for Females",
+        "text": "If the odds of survival for a male passenger are $$m$$, how would you express the odds for a female passenger using the coefficient for sex?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$f={me}^{-2.5}$$",
+            "$$f=m+e^{2.5}$$",
+            "$$f={me}^{2.5}$$",
+            "$$f=2.5m$$",
+            "$$f=m+2.5$$"
+        ]
+    }
+]

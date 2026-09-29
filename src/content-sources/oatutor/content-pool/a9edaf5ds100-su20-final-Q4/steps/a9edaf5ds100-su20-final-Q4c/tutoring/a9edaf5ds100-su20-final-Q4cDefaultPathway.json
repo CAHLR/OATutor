@@ -1,0 +1,54 @@
+[
+    {
+        "id": "a9edaf5ds100-su20-final-Q4c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean-Centering",
+        "text": "Mean-centering involves adjusting the values of a variable so that its mean becomes zero. This is done by subtracting the mean of the variable from each data point. How might this affect the coefficients in a linear regression model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q4c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring Full Column Rank",
+        "text": "When a matrix has full column rank, it means that all its columns are linearly independent. How does this property affect the solution to a linear regression problem?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q4c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Comparing Coefficients",
+        "text": "Consider the effect of mean-centering on the coefficients of a linear regression model. Which of the following statements is true?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$Mean-centering$$ affects only the intercept",
+            "$$Mean-centering$$ affects only the slope",
+            "$$Mean-centering$$ changes the coefficients",
+            "$$Mean-centering$$ does not change the coefficients",
+            "TRUE"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q4c-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Mean-Centering on Intercept",
+        "text": "Mean-centering typically affects the intercept of a linear regression model. Why might this be the case? Think about how the intercept is calculated in relation to the mean of the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

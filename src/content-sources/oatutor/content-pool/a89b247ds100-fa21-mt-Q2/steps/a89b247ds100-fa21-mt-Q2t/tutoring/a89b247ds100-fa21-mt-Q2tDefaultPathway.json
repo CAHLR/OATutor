@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a89b247ds100-fa21-mt-Q2t-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias in Ensemble Models",
+        "text": "When you average predictions from multiple models, think about how each model's errors might cancel each other out. This can affect the overall bias of the ensemble model. Consider how combining different perspectives might lead to a more balanced prediction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2t-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring Variance in Ensemble Models",
+        "text": "Consider how variance is affected when you average predictions from multiple models. Each model might have its own fluctuations, but when combined, these fluctuations might reduce. Think about how this impacts the overall stability of the predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2t-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [],
+        "title": "Bias Change in Ensemble Models",
+        "text": "What happens to the bias of a model when you average predictions from multiple models?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Bias decreases",
+            "Bias increases",
+            "Bias remains the same",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2t-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Variance Change in Ensemble Models",
+        "text": "How does the variance of a model change when you average predictions from multiple models?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "Variance decreases",
+            "Variance increases",
+            "Variance remains the same"
+        ]
+    }
+]

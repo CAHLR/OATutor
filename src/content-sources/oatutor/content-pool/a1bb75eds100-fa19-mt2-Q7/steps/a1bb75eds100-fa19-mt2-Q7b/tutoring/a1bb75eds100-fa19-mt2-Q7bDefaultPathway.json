@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Precision",
+        "text": "Precision is a measure of how many of the positive predictions made by the classifier are actually correct. It is calculated as the number of true positive predictions divided by the total number of positive predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-mt2-Q7b-h1"
+        ],
+        "title": "Identifying True Positives",
+        "text": "Look at the predictions and true labels. A true positive is when both the prediction and the true label are $$1$$. Count how many true positives there are in the given data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-mt2-Q7b-h1"
+        ],
+        "title": "Counting Positive Predictions",
+        "text": "To find the total number of positive predictions, count how many times the classifier predicted a $$1$$, regardless of whether it was correct or not.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{2}{3}$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-mt2-Q7b-h2"
+        ],
+        "title": "Calculate Precision",
+        "text": "Using the formula for precision, calculate it using the true positives and total positive predictions you counted.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{2}{3}$$",
+            "$$\\frac{6}{10}$$",
+            "$$\\frac{7}{9}$$",
+            "$$\\frac{6}{7}$$",
+            "$$1$$"
+        ]
+    }
+]

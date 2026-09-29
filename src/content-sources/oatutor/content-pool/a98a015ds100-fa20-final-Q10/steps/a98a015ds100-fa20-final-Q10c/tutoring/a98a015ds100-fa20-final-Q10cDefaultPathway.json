@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a98a015ds100-fa20-final-Q10c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD Output",
+        "text": "When you perform Singular Value Decomposition (SVD) on a matrix, you decompose it into three matrices: U, S, and $$V^T$$. The singular values in S are crucial because they help determine the variance captured by each principal component.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa20-final-Q10c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting the Scree Plot",
+        "text": "A scree plot shows the proportion of variance explained by each principal component. The x-axis represents the principal components, and the y-axis shows the proportion of variance explained.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa20-final-Q10c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "plt.plot(np.arange(1,F.shape[1]+1),s**2/np.sum(s**2))"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa20-final-Q10c-h1"
+        ],
+        "title": "Calculating Proportion of Variance",
+        "text": "To find the proportion of variance explained by each principal component, you need to square the singular values and divide by the sum of all squared singular values. Which line of code does this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$plt.plot(\\frac{s^2}{\\sum s^2},u)$$",
+            "plt.plot(F[:, :7]),s**2/np.sum(s))",
+            "plt.plot(np.arange(1,F.shape[1]+1),s**2/np.sum(s**2))",
+            "plt.plot(np.arange(1,F.shape[1]+1),s**2/np.sum(s))",
+            "plt.plot(u@s,s**2/np.sum(s**2))"
+        ]
+    }
+]

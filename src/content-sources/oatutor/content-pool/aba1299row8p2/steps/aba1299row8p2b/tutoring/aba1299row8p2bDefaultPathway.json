@@ -1,0 +1,69 @@
+[
+    {
+        "id": "aba1299row8p2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Dimensions of a Vector",
+        "text": "When considering the dimensions of a vector, think about how many entries it has and how they are arranged. A vector typically has one column and multiple rows. Can you visualize how this applies to the vector $Y$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row8p2b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$m$$"
+        ],
+        "dependencies": [
+            "aba1299row8p2b-h1"
+        ],
+        "title": "Identifying the Number of Rows",
+        "text": "If $Y$ is a vector that contains the heights of $m$ individuals, how many rows would it have?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$m$$",
+            ">n",
+            ">1"
+        ]
+    },
+    {
+        "id": "aba1299row8p2b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "aba1299row8p2b-h2"
+        ],
+        "title": "Identifying the Number of Columns",
+        "text": "A vector typically has how many columns?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            ">1",
+            ">n",
+            "$$m$$"
+        ]
+    },
+    {
+        "id": "aba1299row8p2b-h4",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row8p2b-h3"
+        ],
+        "title": "Putting It All Together",
+        "text": "Now that you know the number of rows and columns for the vector $Y$, can you determine its dimensions? Remember, the format is $a$ by $b$, where $a$ is the number of rows and $b$ is the number of columns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

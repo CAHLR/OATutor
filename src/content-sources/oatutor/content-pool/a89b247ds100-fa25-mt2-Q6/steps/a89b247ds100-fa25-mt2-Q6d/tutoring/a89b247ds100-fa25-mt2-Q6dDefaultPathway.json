@@ -1,0 +1,34 @@
+[
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "When you add a new feature to a model, especially one that is a transformation of an existing feature, think about how it might affect the model's flexibility. More flexibility can sometimes lead to increased variance. Consider how this new feature might interact with the existing ones.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6d-h1"
+        ],
+        "title": "Effect of Adding a Feature",
+        "text": "What happens to model variance when you add a new feature that is a transformation of an existing feature?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    }
+]

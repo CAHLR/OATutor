@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a9edaf5ds100-su21-final-Q4g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L2 Regularization",
+        "text": "L2 regularization, also known as Ridge Regression, adds a penalty equal to the square of the magnitude of coefficients to the loss function. This helps in reducing overfitting by discouraging overly complex models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-su21-final-Q4g-h1"
+        ],
+        "title": "Effect on Model Complexity",
+        "text": "When you apply L2 regularization, the model tends to have smaller coefficients. This means the model is less likely to fit the noise in the training data, which can lead to a more generalized model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It may increase slightly due to the penalty term."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su21-final-Q4g-h2"
+        ],
+        "title": "Impact on Training Error",
+        "text": "Consider how adding L2 regularization affects the training error. Does it increase, decrease, or stay the same?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Decrease",
+            "Increase",
+            "It may increase slightly due to the penalty term.",
+            "Stay the same"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Bias increases slightly, variance decreases."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su21-final-Q4g-h3"
+        ],
+        "title": "Bias and Variance Tradeoff",
+        "text": "Think about the bias and variance tradeoff when L2 regularization is applied. How does it affect bias and variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Bias decreases, variance increases",
+            "Bias increases slightly, variance decreases.",
+            "Bias increases, variance decreases",
+            "Both decrease",
+            "Both increase"
+        ]
+    }
+]

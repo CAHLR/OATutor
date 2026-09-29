@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a92ac99ds100-fa17-mt-Q27e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrapping",
+        "text": "Bootstrapping involves resampling with replacement from the sample data to create many simulated samples. This helps estimate the sampling distribution of a statistic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-mt-Q27e-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Setting Up the Loop",
+        "text": "To generate multiple bootstrapped samples, you need to use a loop. The range of the loop determines how many bootstrapped samples you will create.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-mt-Q27e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$10000$$"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-mt-Q27e-h2"
+        ],
+        "title": "Choosing the Number of Bootstraps",
+        "text": "How many bootstrapped estimates do you want to generate?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$100$$",
+            "$$400$$",
+            "$$1000$$",
+            "$$10000$$",
+            "$$25000$$"
+        ]
+    }
+]

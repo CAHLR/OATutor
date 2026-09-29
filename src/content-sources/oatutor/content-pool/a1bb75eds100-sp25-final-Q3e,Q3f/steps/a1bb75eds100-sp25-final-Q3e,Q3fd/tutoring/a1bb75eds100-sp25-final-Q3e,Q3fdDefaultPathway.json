@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Precision",
+        "text": "Precision is a measure of how many of the predicted positive cases were actually positive. It's calculated as the number of true positives divided by the total number of predicted positives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fd-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp25-final-Q3e,Q3fd-h1"
+        ],
+        "title": "Identifying True Positives",
+        "text": "Look at the predictions and true values. A true positive is when both the predicted and true values are $$1$$. How many true positives do you see?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fd-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp25-final-Q3e,Q3fd-h2"
+        ],
+        "title": "Counting Predicted Positives",
+        "text": "Predicted positives are all the cases where the predicted value is $$1$$, regardless of the true value. Count these cases to find the total number of predicted positives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fd-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{2}{3}$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp25-final-Q3e,Q3fd-h3"
+        ],
+        "title": "Calculate Precision",
+        "text": "Using the formula for precision, calculate it using the true positives and predicted positives you identified.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{1}{2}$$",
+            "$$\\frac{3}{4}$$",
+            "$$\\frac{2}{3}$$",
+            "$$\\frac{1}{3}$$",
+            "$$\\frac{2}{5}$$"
+        ]
+    }
+]

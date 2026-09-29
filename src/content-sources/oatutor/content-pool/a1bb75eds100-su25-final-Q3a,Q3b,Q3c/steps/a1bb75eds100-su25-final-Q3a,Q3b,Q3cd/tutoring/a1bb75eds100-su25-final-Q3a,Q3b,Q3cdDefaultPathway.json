@@ -1,0 +1,35 @@
+[
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3cd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Separability",
+        "text": "Linear separability means that you can draw a straight line (or hyperplane in higher dimensions) that separates the data points of different classes without any overlap. Consider how this might affect the convergence of gradient descent in logistic regression.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3cd-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "They tend to infinity"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3cd-h1"
+        ],
+        "title": "Gradient Descent and Linear Separability",
+        "text": "What happens to the weights in logistic regression when the data is perfectly linearly separable?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "They tend to zero",
+            "They tend to infinity",
+            "They remain constant",
+            "They oscillate"
+        ]
+    }
+]

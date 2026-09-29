@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a9edaf5ds100-su20-final-Q4i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Intercept Term",
+        "text": "Consider what the intercept term represents in a linear regression model. It is the expected value of the response variable when all predictors are zero. Think about how centering the data might affect this term.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q4i-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Centering on Coefficients",
+        "text": "When you center the data, each predictor variable has a mean of zero. How might this affect the calculation of the coefficients in the regression model? Consider the role of the intercept in this context.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q4i-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su20-final-Q4i-h1"
+        ],
+        "title": "Exploring the Intercept Term",
+        "text": "What happens to the intercept term when you mean-center the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "It becomes negative",
+            "It becomes positive",
+            "It becomes zero",
+            "It remains unchanged"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q4i-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su20-final-Q4i-h2"
+        ],
+        "title": "Impact of Centering on Regression Coefficients",
+        "text": "How does centering the data affect the regression coefficients?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "They change based on the data",
+            "They decrease",
+            "They increase",
+            "They remain the same"
+        ]
+    }
+]

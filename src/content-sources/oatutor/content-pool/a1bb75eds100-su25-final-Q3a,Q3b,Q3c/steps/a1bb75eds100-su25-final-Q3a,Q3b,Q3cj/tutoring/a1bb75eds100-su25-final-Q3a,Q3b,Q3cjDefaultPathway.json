@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3cj-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding AUC-ROC",
+        "text": "The AUC-ROC curve is a graphical representation of a model's performance across different thresholds. It plots the true positive rate against the false positive rate. Consider how changing the threshold might affect these rates.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3cj-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Threshold and Predictions",
+        "text": "Changing the threshold affects which probabilities are classified as positive or negative. Think about how this might impact the true positive and false positive rates.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3cj-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3cj-h1"
+        ],
+        "title": "Effect of Threshold on AUC-ROC",
+        "text": "Does changing the threshold alter the shape of the ROC curve?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3cj-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3cj-h2"
+        ],
+        "title": "True Positive and False Positive Rates",
+        "text": "If you change the threshold, do the true positive and false positive rates change?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

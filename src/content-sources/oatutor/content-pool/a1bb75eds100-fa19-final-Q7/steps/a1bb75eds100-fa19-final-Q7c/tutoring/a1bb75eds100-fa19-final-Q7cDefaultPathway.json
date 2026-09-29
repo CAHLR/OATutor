@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-final-Q7c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding ROC Curves",
+        "text": "A ROC curve plots the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings. The curve helps to visualize the performance of a binary classifier.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q7c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q7c-h1"
+        ],
+        "title": "Thresholds in ROC Curves",
+        "text": "The thresholds are used to determine the point at which a predicted probability is considered a positive prediction. These thresholds are typically varied from $$0$$ to $$1$$ to generate the ROC curve.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q7c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "thresholds"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q7c-h2"
+        ],
+        "title": "Choosing the Correct Loop Variable",
+        "text": "Which variable should be used to iterate over in the loop to calculate TPR and FPR?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$predicted_{probs}$$",
+            "$$y_{actual}$$",
+            "thresholds",
+            "range(1000)",
+            "tprs"
+        ]
+    }
+]

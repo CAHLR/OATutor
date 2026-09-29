@@ -1,0 +1,42 @@
+[
+    {
+        "id": "aea05a2ds100-su21-final-Q10c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding K-means Clustering",
+        "text": "K-means clustering is an iterative algorithm that aims to partition a dataset into K distinct, non-overlapping subsets or clusters. It does this by minimizing the sum of squared distances between data points and their respective cluster centroids. However, the algorithm's performance can be influenced by the initial placement of centroids.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-su21-final-Q10c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Inertia in Clustering",
+        "text": "Inertia is a measure of how well a clustering algorithm has grouped the data. It calculates the sum of squared distances between each data point and its assigned cluster centroid. Lower inertia values indicate tighter clusters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-su21-final-Q10c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "sometimes"
+        ],
+        "dependencies": [],
+        "title": "Evaluating K-means Clustering",
+        "text": "Consider how the initial placement of centroids affects the clustering outcome. Does K-means always find the best solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "always",
+            "sometimes",
+            "never"
+        ]
+    }
+]

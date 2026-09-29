@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a9edaf5ds100-su21-final-Q4e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias Calculation",
+        "text": "To estimate the empirical bias, consider the formula for bias in the bias-variance decomposition: (E[f_theta(x)]-g(x))**2. Here, E[f_theta(x)] is the mean of the predictions, and g(x) is the true value. You need to find the difference between these two values and square it.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-su21-final-Q4e-h1"
+        ],
+        "title": "Identifying the True Value",
+        "text": "The true value, g(x), is the actual measurement you are comparing your predictions against. In this context, it is the mean of the predictions minus the bias. Use the given statistics to help identify this value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$4.215$$"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su21-final-Q4e-h2"
+        ],
+        "title": "Calculating the Bias",
+        "text": "Given that the mean of the predictions is $$104.130417$$, and the MSE mean is $$101.930101$$, what is the empirical bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$4.215$$",
+            "$$2.850$$",
+            "$$8.256$$",
+            "$$17.730$$",
+            "$$6.103$$"
+        ]
+    }
+]

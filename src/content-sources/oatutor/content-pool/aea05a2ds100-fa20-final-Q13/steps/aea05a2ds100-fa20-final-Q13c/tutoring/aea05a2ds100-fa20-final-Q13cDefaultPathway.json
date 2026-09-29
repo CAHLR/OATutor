@@ -1,0 +1,69 @@
+[
+    {
+        "id": "aea05a2ds100-fa20-final-Q13c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Inertia and Distortion",
+        "text": "Inertia is a measure of how tightly the clusters are packed. Distortion is the average distance from each point to its cluster center. Consider how these two metrics relate to each other when you multiply distortion by the number of points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-fa20-final-Q13c-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$n$$ $$distortion$$"
+        ],
+        "dependencies": [
+            "aea05a2ds100-fa20-final-Q13c-h1"
+        ],
+        "title": "Calculating Inertia",
+        "text": "If you have a dataset with $$n$$ points and the distortion is calculated as the average distance from each point to its cluster center, what would be the formula for inertia?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$n$$ $$distortion$$",
+            "$$\\frac{distortion}{n}$$",
+            "$$n distortion$$",
+            "$$n+distortion$$",
+            "$$n-distortion$$"
+        ]
+    },
+    {
+        "id": "aea05a2ds100-fa20-final-Q13c-h3",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-fa20-final-Q13c-h2"
+        ],
+        "title": "Analyzing Clustering C",
+        "text": "Look at Clustering C and think about how the points are distributed. How does this distribution affect the calculation of inertia and distortion?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-fa20-final-Q13c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "aea05a2ds100-fa20-final-Q13c-h3"
+        ],
+        "title": "True or False: Inertia and Distortion Relationship",
+        "text": "Based on your understanding of inertia and distortion, is it true that inertia equals $$n$$ times distortion in Clustering C?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

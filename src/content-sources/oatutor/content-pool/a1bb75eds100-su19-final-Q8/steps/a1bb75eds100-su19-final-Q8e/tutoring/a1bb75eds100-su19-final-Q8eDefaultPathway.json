@@ -1,0 +1,56 @@
+[
+    {
+        "id": "a1bb75eds100-su19-final-Q8e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Probability Assignments",
+        "text": "Consider how the probabilities $$\\$P(Y=1|X)=0.8\\$$$ and $$\\$P(Y=1|X)=0.6\\$$$ are assigned to different groups of points. What does this tell you about the likelihood of $$\\$Y=1\\$$$ for each group?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q8e-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting ROC Curves",
+        "text": "Think about what an ROC curve represents. How does it relate to the true positive rate and false positive rate?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q8e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "ROC C"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q8e-h1"
+        ],
+        "title": "Probability and ROC Curves",
+        "text": "Given the probabilities $$\\$P(Y=1|X)=0.8\\$$$ and $$\\$P(Y=1|X)=0.6\\$$$, which ROC curve would likely show a higher true positive rate?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "ROC A",
+            "ROC B",
+            "ROC C"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q8e-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q8e-h2"
+        ],
+        "title": "Connecting Probabilities to ROC",
+        "text": "If a classifier assigns a higher probability to $$\\$Y=1\\$$$, how might this affect the position of the ROC curve?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

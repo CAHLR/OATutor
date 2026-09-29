@@ -1,0 +1,70 @@
+[
+    {
+        "id": "aba1299row6p2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Ridge Regression",
+        "text": "Ridge regression is a type of linear regression that includes a regularization term. This term helps prevent overfitting by penalizing large coefficients. The regularization parameter, lambda, controls the strength of this penalty.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6p2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row6p2c-h1"
+        ],
+        "title": "Effect of Lambda on Solutions",
+        "text": "When lambda is set to $$0$$, ridge regression becomes ordinary least squares regression. Consider what happens to the uniqueness of solutions in ordinary least squares when the design matrix is not full rank.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6p2c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All columns are linearly independent."
+        ],
+        "dependencies": [
+            "aba1299row6p2c-h2"
+        ],
+        "title": "Understanding Full Rank",
+        "text": "What does it mean for a matrix to be full rank?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "All columns are linearly independent.",
+            "All rows are linearly dependent.",
+            "The matrix is square.",
+            "The determinant is zero."
+        ]
+    },
+    {
+        "id": "aba1299row6p2c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "There may be infinitely many solutions."
+        ],
+        "dependencies": [
+            "aba1299row6p2c-h3"
+        ],
+        "title": "Implications of Non-Full Rank",
+        "text": "If the design matrix is not full rank, what can happen to the solutions of the regression model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "There is a unique solution.",
+            "There may be infinitely many solutions.",
+            "There is no solution.",
+            "The solution is always zero."
+        ]
+    }
+]

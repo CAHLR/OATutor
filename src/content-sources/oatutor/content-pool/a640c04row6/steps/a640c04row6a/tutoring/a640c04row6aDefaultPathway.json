@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a640c04row6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Full Outer Joins",
+        "text": "A full outer join combines all rows from both tables, matching rows with the same key and filling in with NULLs where there is no match. Consider how many unique passport IDs exist across both tables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a640c04row6a-h1"
+        ],
+        "title": "Counting Unique Passport IDs",
+        "text": "Think about how many unique passport IDs are present in both the jacket and ticket tables. A full outer join will include all unique IDs from both tables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row6a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$93$$"
+        ],
+        "dependencies": [
+            "a640c04row6a-h2"
+        ],
+        "title": "Calculating Unique IDs",
+        "text": "If jacket has $$92$$ rows and ticket has $$53$$ rows, and an inner join on $$passport_{id}$$ has $$52$$ rows, how many unique passport IDs are there in total?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$93$$",
+            "$$105$$",
+            "$$52$$",
+            "$$145$$",
+            "$$\\frac{N}{A}$$"
+        ]
+    }
+]

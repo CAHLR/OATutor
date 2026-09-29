@@ -1,0 +1,65 @@
+[
+    {
+        "id": "aba1299row6p2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding transforms categorical variables into a form that could be provided to ML algorithms to do a better job in prediction. For each category, a new binary column is created. How many new columns will be created for the 'weather' variable?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6p2d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Model Complexity",
+        "text": "Consider how adding more features to a model affects its complexity. If you add too many features, especially if they are not independent, what might happen to the model's ability to find a unique solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6p2d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "aba1299row6p2d-h1"
+        ],
+        "title": "Checking for Multicollinearity",
+        "text": "If you add all three one-hot encoded features for 'weather', will they be independent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "aba1299row6p2d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It makes the solution $$non-unique$$"
+        ],
+        "dependencies": [
+            "aba1299row6p2d-h3"
+        ],
+        "title": "Understanding the Impact of Multicollinearity",
+        "text": "What is the impact of multicollinearity on the OLS solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It makes the solution $$non-unique$$",
+            "It improves the solution",
+            "It has no effect"
+        ]
+    }
+]

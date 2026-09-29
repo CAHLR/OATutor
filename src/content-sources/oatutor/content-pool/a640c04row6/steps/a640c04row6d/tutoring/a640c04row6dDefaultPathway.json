@@ -1,0 +1,54 @@
+[
+    {
+        "id": "a640c04row6d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrames",
+        "text": "Take a look at the columns in both DataFrames. Notice how they both have a $$'passport_{id'}$$ column. This can be useful for merging or comparing data between the two DataFrames.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row6d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Handling Missing Values",
+        "text": "When you encounter missing values in a DataFrame, one common approach is to fill them with a specific value. In this case, consider filling the missing $$'num_{jacket,bought'}$$ values with $$0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row6d-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Filtering Data",
+        "text": "To ensure that no data points have $$'num_{jacket,bought'}$$ greater than $$10$$, you can filter the DataFrame to exclude these rows. Think about how you can use conditional statements to achieve this.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row6d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "sns.kdeplot"
+        ],
+        "dependencies": [],
+        "title": "Choosing the Right Plot",
+        "text": "Which type of plot is best for visualizing the joint distribution of two continuous variables?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "sns.kdeplot",
+            "sns.scatterplot",
+            "sns.histplot",
+            "sns.boxplot",
+            "plt.hist"
+        ]
+    }
+]

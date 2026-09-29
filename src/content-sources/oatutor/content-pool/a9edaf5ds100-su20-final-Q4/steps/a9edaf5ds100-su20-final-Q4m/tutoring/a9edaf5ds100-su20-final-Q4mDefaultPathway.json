@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a9edaf5ds100-su20-final-Q4m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatter Plot",
+        "text": "Observe the scatter plot carefully. Notice the trend of the data points. How does the trend relate to the slope of a linear regression line?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q4m-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Mean-Centering Effect",
+        "text": "Mean-centering the data affects the intercept of the regression line but not the slope. Consider how this might influence the test MSE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q4m-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\theta_B$$"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su20-final-Q4m-h1"
+        ],
+        "title": "Choosing the Parameter",
+        "text": "Given the negative trend in the data, which parameter is likely to fit the data better and achieve a lower test MSE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\theta_A$$",
+            "$$\\theta_B$$",
+            "Both achieve the same test MSE",
+            "Cannot be determined without seeing the plot",
+            "Neither, both are equally poor"
+        ]
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a89b247ds100-fa18-final-Q14c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plot",
+        "text": "Notice how the plot shows a decreasing trend as the value of $$d$$ increases. Think about what this might imply about the relationship between $$d$$ and the y-axis variable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q14c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q14c-h1"
+        ],
+        "title": "Bias in Machine Learning",
+        "text": "Bias in machine learning models often decreases as the model complexity increases. Consider how increasing $$d$$ might affect the complexity of the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q14c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Bias"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q14c-h2"
+        ],
+        "title": "Possible Y-Axis Labels",
+        "text": "Which of the following could the y-axis represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Bias",
+            "Variance",
+            "Error",
+            "Accuracy"
+        ]
+    }
+]

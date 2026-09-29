@@ -1,0 +1,67 @@
+[
+    {
+        "id": "aba1299row10p2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Design Matrix",
+        "text": "The design matrix, often denoted as X, includes all the input features for each observation. Since there are $$400$$ flight records, think about how many rows the matrix should have. Also, consider the number of columns based on the features provided.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10p2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row10p2a-h1"
+        ],
+        "title": "Including the Intercept",
+        "text": "Remember that the design matrix X includes an intercept term. This means that even if there are $$9$$ numerical features, the matrix will have an additional column for the intercept. How does this affect the total number of columns?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10p2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$400$$"
+        ],
+        "dependencies": [],
+        "title": "Determine the Number of Rows",
+        "text": "How many rows should the design matrix X have if there are $$400$$ flight records?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$400$$",
+            ">10",
+            ">9"
+        ]
+    },
+    {
+        "id": "aba1299row10p2a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "aba1299row10p2a-h3"
+        ],
+        "title": "Determine the Number of Columns",
+        "text": "If there are $$9$$ numerical features and an intercept, how many columns should the design matrix X have?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$10$$",
+            "$$9$$",
+            ">10",
+            ">11"
+        ]
+    }
+]

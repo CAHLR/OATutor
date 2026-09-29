@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-final-Q5e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Entropy Loss",
+        "text": "Cross-entropy loss is particularly useful for classification problems because it measures the difference between two probability distributions. Can you think about why this might be more suitable than squared loss, which measures the difference between actual and predicted values?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5e-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Gradient Descent and Loss Functions",
+        "text": "When using gradient descent, the shape of the loss function can affect how easily the algorithm finds the minimum. Consider how the properties of cross-entropy loss might help in this process compared to squared loss.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Choosing the Right Loss Function",
+        "text": "Which of the following is a reason why cross-entropy loss is preferred over squared loss for classification problems?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

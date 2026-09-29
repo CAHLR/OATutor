@@ -1,0 +1,83 @@
+[
+    {
+        "id": "aba1299row5b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Objective Function",
+        "text": "The objective function $R(\\theta_1)$ is a sum of squared errors, but it's weighted by $x_i$. Think about how this affects the derivative.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row5b-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row5b-h1"
+        ],
+        "title": "Differentiation Step",
+        "text": "When differentiating $R(\\theta_1)$ with respect to $\\theta_1$, consider the chain rule. The expression inside the sum is $(y_i-\\theta_1x_i)**2$. What happens when you differentiate this with respect to $\\theta_1$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row5b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-2x_i$$ \\left(y_i-\\theta_1 x_i\\right)$$"
+        ],
+        "dependencies": [
+            "aba1299row5b-h2"
+        ],
+        "title": "Applying the Chain Rule",
+        "text": "Differentiate $(y_i-\\theta_1x_i)**2$ with respect to $\\theta_1$. What do you get?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-2x_i$$ \\left(y_i-\\theta_1 x_i\\right)$$",
+            "$$-2\\left(y_i-\\theta_1 x_i\\right)$$",
+            "$$-2x_i \\left(y_i-\\theta_1 x_i\\right)$$",
+            "$$2\\left(y_i-\\theta_1 x_i\\right)$$",
+            "$$2x_i \\left(y_i-\\theta_1 x_i\\right)$$"
+        ]
+    },
+    {
+        "id": "aba1299row5b-h4",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row5b-h3"
+        ],
+        "title": "Summation and Constants",
+        "text": "Remember that when you differentiate a sum, you can differentiate each term individually. Also, the factor $1/n$ is a constant and can be factored out of the differentiation process.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row5b-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-2/n*sum{i\\=1}{n}{x_i**2*(y_i-\\theta_1*x_i)}"
+        ],
+        "dependencies": [
+            "aba1299row5b-h4"
+        ],
+        "title": "Combining the Results",
+        "text": "Combine the differentiated term with the constant factor $1/n$ and the summation. What is the derivative of $R(\\theta_1)$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "-2/n*sum{i\\=1}{n}{x_i**2*(y_i-\\theta_1*x_i)}",
+            "-2/n*sum{i\\=1}{n}{x_i*(y_i-\\theta_1*x_i)}",
+            "2/n*sum{i\\=1}{n}{x_i**2*(y_i-\\theta_1*x_i)}",
+            "-2/n*sum{i\\=1}{n}{x_i**2}"
+        ]
+    }
+]

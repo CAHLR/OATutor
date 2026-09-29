@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1bb75eds100-su21-final-Q7q-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Random Forests",
+        "text": "Random forests are an ensemble method that uses multiple decision trees. They are good at capturing complex patterns, but they rely on the individual trees' ability to split the data effectively. Consider how decision trees work and whether they can handle circular patterns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7q-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7q-h1"
+        ],
+        "title": "Decision Trees and Boundaries",
+        "text": "Can a single decision tree create a circular boundary?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7q-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7q-h2"
+        ],
+        "title": "Boundary Shapes",
+        "text": "Think about the shapes that decision trees typically create. They usually form rectangular or linear boundaries. How might this affect the ability of a random forest to create a circular boundary?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

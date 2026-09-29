@@ -1,0 +1,58 @@
+[
+    {
+        "id": "abf3684ds100-su25-final-Q2q-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross Validation",
+        "text": "In 7-fold cross-validation, the dataset is divided into $$7$$ parts. Each part is used as a validation set once, while the remaining $$6$$ parts are used for training. Can you think about how many times each data point is used in training?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2q-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring Hyperparameter Combinations",
+        "text": "Milena is testing $$2$$ values of lambda and $$5$$ values of rho. How many different combinations of these hyperparameters will she test?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2q-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$70$$"
+        ],
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2q-h2"
+        ],
+        "title": "Calculating Model Fits",
+        "text": "How many models will Milena fit in total if she tests each combination of lambda and rho using 7-fold cross-validation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$60$$",
+            "$$70$$",
+            "$$42$$",
+            "$$84$$",
+            "$$35$$"
+        ]
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2q-h4",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2q-h3"
+        ],
+        "title": "Data Point Usage in Training",
+        "text": "Each data point is used in training for $$6$$ out of the $$7$$ folds. Given that there are $$10$$ hyperparameter combinations, how many times is each data point used in training across all models?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

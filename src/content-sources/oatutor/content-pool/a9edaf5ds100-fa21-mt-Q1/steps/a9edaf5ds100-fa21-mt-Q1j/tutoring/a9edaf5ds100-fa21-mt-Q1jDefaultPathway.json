@@ -1,0 +1,54 @@
+[
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Codons and Amino Acids",
+        "text": "Think about how codons are translated into amino acids. There are $$64$$ possible codons, but only $$20$$ amino acids. How might this relationship help reduce the dimensionality of your data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1j-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring N-grams",
+        "text": "Consider using $$n-grams$$ to capture sequences of amino acids. How might using 3-grams of amino acids differ from using 3-grams of codons?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$20$$ (3 gram of amino acids)"
+        ],
+        "dependencies": [],
+        "title": "Choosing the Right Encoding",
+        "text": "Which encoding strategy would result in the smallest dimensionality while still capturing the necessary information?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$20$$ (3 gram of amino acids)",
+            "$$64$$ (bag of words over codons)",
+            "$$3000$$ (one value per letter)",
+            "$$1000$$ (one codon index per position)",
+            "$$128$$ (pairs of amino acids)"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1j-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Dimensionality Considerations",
+        "text": "When thinking about dimensionality, consider how many unique elements you are encoding. How does the number of amino acids compare to the number of codons?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

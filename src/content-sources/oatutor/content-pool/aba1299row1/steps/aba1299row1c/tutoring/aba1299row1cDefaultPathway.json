@@ -1,0 +1,46 @@
+[
+    {
+        "id": "aba1299row1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Residuals",
+        "text": "Think about what the residuals represent in an OLS model. They are the differences between the actual outcomes and the predicted outcomes. What does it mean for these residuals in relation to the design matrix X?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1c-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row1c-h1"
+        ],
+        "title": "Orthogonality in OLS",
+        "text": "In the context of OLS, the residuals are orthogonal to the columns of the design matrix X. This means that the dot product of the residuals with any column of X is zero. How does this relate to the concept of orthogonality?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Orthogonal to"
+        ],
+        "dependencies": [
+            "aba1299row1c-h2"
+        ],
+        "title": "Choosing the Correct Relationship",
+        "text": "Based on what you know about residuals and the design matrix X, which of the following best describes the relationship between Y - $$hat_Y$$ and $$X_p$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Orthogonal to",
+            "In the span of",
+            "NOT orthogonal to and NOT in the span of"
+        ]
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a89b247ds100-fa20-final-Q6c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias-Variance Decomposition",
+        "text": "The bias-variance decomposition helps us understand the error in our model predictions. It breaks down the error into three components: the variance of the noise, the square of the bias, and the variance of the model. Can you identify which part of this decomposition might not hold for linear models with absolute loss?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa20-final-Q6c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa20-final-Q6c-h1"
+        ],
+        "title": "Exploring Linear Models",
+        "text": "Linear models aim to minimize the squared error between the predicted and actual values. Think about how this objective might differ when using absolute loss instead of squared loss. How does this affect the bias and variance components?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa20-final-Q6c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa20-final-Q6c-h2"
+        ],
+        "title": "Evaluating the Decomposition",
+        "text": "Consider the properties of absolute loss. Does it affect the bias, variance, or both?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

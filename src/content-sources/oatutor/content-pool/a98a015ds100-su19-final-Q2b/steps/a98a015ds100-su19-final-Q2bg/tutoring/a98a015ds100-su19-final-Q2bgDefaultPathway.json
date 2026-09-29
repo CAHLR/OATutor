@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a98a015ds100-su19-final-Q2bg-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It projects data onto new axes, called principal components, which are linear combinations of the original variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su19-final-Q2bg-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-su19-final-Q2bg-h1"
+        ],
+        "title": "Interpreting Scatter Plots",
+        "text": "Look at the scatter plot labeled (g.i). It shows a similar pattern to the original scatter plot with 'mpg' and 'age'. Consider how the axes might be labeled if they represent principal components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su19-final-Q2bg-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "pc1"
+        ],
+        "dependencies": [
+            "a98a015ds100-su19-final-Q2bg-h2"
+        ],
+        "title": "Choosing the Correct Axis Label",
+        "text": "For the plot labeled (f.ii), which axis label would make it consistent with the data in the scatter plot?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "pc1",
+            "pc2",
+            "Neither"
+        ]
+    }
+]

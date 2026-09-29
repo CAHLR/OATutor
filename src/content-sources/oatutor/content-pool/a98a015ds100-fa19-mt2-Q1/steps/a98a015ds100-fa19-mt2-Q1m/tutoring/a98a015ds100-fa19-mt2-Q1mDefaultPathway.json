@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Singular Values",
+        "text": "Singular values are related to the variance captured by each principal component. The larger the singular value, the more variance that component captures.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1m-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa19-mt2-Q1m-h1"
+        ],
+        "title": "Calculating Variance from Singular Values",
+        "text": "The variance captured by a principal component is proportional to the square of its singular value. To find the total variance captured by the first two components, consider the squares of the first two singular values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1m-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$${56}^2+\\frac{{53}^2}{1000} V$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa19-mt2-Q1m-h2"
+        ],
+        "title": "Formulating the Expression",
+        "text": "Which of the following expressions represents the fraction of variance captured by the first two principal components?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$56+\\frac{53}{1000} V$$",
+            "$${56}^2+\\frac{{53}^2}{1000} V$$",
+            "$${56}^2+\\frac{{53}^2}{1000}$$",
+            "$$\\frac{1000\\left({56}^2+{53}^2\\right)}{V}$$",
+            "$${56}^2+\\frac{{53}^2}{{56}^2+{53}^2+{21}^2+{20}^2+{20}^2+{19}^2}$$"
+        ]
+    }
+]

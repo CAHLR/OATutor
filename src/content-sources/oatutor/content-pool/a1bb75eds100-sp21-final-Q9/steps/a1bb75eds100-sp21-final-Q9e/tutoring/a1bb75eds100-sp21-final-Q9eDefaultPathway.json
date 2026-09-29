@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a1bb75eds100-sp21-final-Q9e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting by adding a penalty to the loss function. In L2 regularization, this penalty is proportional to the square of the magnitude of the coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q9e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q9e-h1"
+        ],
+        "title": "Effect of Large Lambda",
+        "text": "When lambda is set to a large value, the regularization term becomes significant. This can lead to smaller coefficients, affecting the slope of the decision boundary.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q9e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q9e-h2"
+        ],
+        "title": "Impact on Training Error",
+        "text": "If the coefficients are reduced significantly due to a large lambda, what is likely to happen to the training error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Remain the same",
+            "Cannot be determined"
+        ]
+    }
+]

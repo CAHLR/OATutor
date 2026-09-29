@@ -1,0 +1,47 @@
+[
+    {
+        "id": "aba1299row10p2h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Residuals",
+        "text": "Residuals in a regression model are the differences between the observed values and the predicted values. Think about how these differences relate to the predictions themselves.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10p2h-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row10p2h-h1"
+        ],
+        "title": "Orthogonality in Regression",
+        "text": "In the context of regression, orthogonality means that two vectors are perpendicular to each other. Consider what it means for the residuals and predictions to be orthogonal.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10p2h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Residuals are orthogonal to predictions"
+        ],
+        "dependencies": [
+            "aba1299row10p2h-h2"
+        ],
+        "title": "Exploring Orthogonality",
+        "text": "Which of the following statements is true about orthogonality in the context of OLS regression?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Residuals are orthogonal to predictions",
+            "Residuals are parallel to predictions",
+            "Residuals are equal to predictions",
+            "Residuals are unrelated to predictions"
+        ]
+    }
+]

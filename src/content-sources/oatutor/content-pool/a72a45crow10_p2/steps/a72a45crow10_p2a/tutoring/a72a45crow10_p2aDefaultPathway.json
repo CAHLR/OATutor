@@ -1,0 +1,35 @@
+[
+    {
+        "id": "a72a45crow10_p2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Qualitative Data",
+        "text": "Qualitative data describes categories or qualities. Think about whether the 'drink' column represents categories or numerical values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow10_p2a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Qualitative Nominal"
+        ],
+        "dependencies": [
+            "a72a45crow10_p2a-h1"
+        ],
+        "title": "Identifying the Type of Data",
+        "text": "What type of data does the 'drink' column represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Qualitative Nominal",
+            "Qualitative Ordinal",
+            "Quantitative Continuous",
+            "Quantitative Discrete"
+        ]
+    }
+]

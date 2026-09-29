@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q6c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE on Training Data",
+        "text": "When you add a new feature to a model, especially one that is a transformation of an existing feature, think about how it might affect the model's ability to fit the training data. Consider whether the model becomes more flexible and how that might impact the error on the training set.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q6c-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease only"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa25-mt2-Q6c-h1"
+        ],
+        "title": "Effect of Adding Features",
+        "text": "What is a possible effect on the MSE on training data when you add a new feature that is the square of an existing feature?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase only",
+            "Decrease only",
+            "Increase and Decrease",
+            "Neither Increase nor Decrease",
+            "Cannot be determined"
+        ]
+    }
+]

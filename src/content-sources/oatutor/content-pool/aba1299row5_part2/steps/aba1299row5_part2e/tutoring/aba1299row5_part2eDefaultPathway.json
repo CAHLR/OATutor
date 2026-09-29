@@ -1,0 +1,36 @@
+[
+    {
+        "id": "aba1299row5_part2e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Graph",
+        "text": "Observe how the number of students increases with humidity. The relationship appears to be non-linear, possibly logarithmic. Consider how a logarithmic transformation might affect the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row5_part2e-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$h_i=\\ln\\left(x_i\\right)$$"
+        ],
+        "dependencies": [
+            "aba1299row5_part2e-h1"
+        ],
+        "title": "Choosing the Right Transformation",
+        "text": "Which transformation would help linearize a curve that looks like it might be logarithmic?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$h_i=\\ln\\left(x_i\\right)$$",
+            "$$\\ln\\left(h_i\\right)=x_i$$",
+            "$$h_i={x_i}^2$$",
+            "$$h_i={x_i}^3$$",
+            "$$h_i=\\sqrt{x_i}$$"
+        ]
+    }
+]

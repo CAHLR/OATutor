@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4ci-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Word Frequency",
+        "text": "Think about how the frequency of words is calculated. Does this method consider the order in which words appear? How might this affect the meaning of a sentence?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4ci-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Impact of Removing Stopwords",
+        "text": "Consider what happens when common words are removed from a sentence. How might this change the information available to the model? Are there any words that might be important for understanding sentiment that could be removed?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4ci-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Counting the frequency of all words does not capture the order of the words, so 'I am happy that it does not rain today' and 'I am not happy that it does rain today' produce exactly the same frequency vector and the model must make a false prediction on one of them."
+        ],
+        "dependencies": [],
+        "title": "Order of Words",
+        "text": "Which of the following sentences would produce the same frequency vector after preprocessing?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Counting the frequency of all words does not capture the order of the words, so 'I am happy that it does not rain today' and 'I am not happy that it does rain today' produce exactly the same frequency vector and the model must make a false prediction on one of them.",
+            "I am happy that it does not rain today and I am not happy that it does rain today.",
+            "I am happy today and I am not happy today.",
+            "It is raining today and It is not raining today."
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4ci-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Removing all stopwords deletes the word not, so 'I am not happy today' is encoded exactly like 'I am happy today' and one of the two must be misclassified."
+        ],
+        "dependencies": [],
+        "title": "Effect of Stopwords",
+        "text": "Which sentence might be misclassified due to the removal of stopwords?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "I am happy today and I am very happy today.",
+            "I am not happy today and I am happy today.",
+            "It is raining today and It is not raining today.",
+            "Removing all stopwords deletes the word not, so 'I am not happy today' is encoded exactly like 'I am happy today' and one of the two must be misclassified."
+        ]
+    }
+]

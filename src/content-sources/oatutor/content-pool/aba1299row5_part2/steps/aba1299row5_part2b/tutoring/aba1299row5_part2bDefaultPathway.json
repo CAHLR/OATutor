@@ -1,0 +1,45 @@
+[
+    {
+        "id": "aba1299row5_part2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Residuals",
+        "text": "Residuals are the differences between the observed values and the predicted values from a model. They tell us how far off our predictions are from the actual data points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row5_part2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row5_part2b-h1"
+        ],
+        "title": "Average of Residuals",
+        "text": "The average of the residuals in a well-fitted model is typically zero. This is because the model aims to minimize the sum of squared residuals, balancing positive and negative errors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row5_part2b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aba1299row5_part2b-h2"
+        ],
+        "title": "Effect of $$\\Theta_0$$ on Residuals",
+        "text": "Consider the role of $$\\theta_0$$ in the model. Does it directly affect the average of the residuals?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,56 @@
+[
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Exponential Regularization",
+        "text": "Exponential regularization involves penalizing large values of theta by raising them to a power. This can help prevent overfitting by discouraging overly complex models. Consider how changing lambda affects the penalty applied to the model parameters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5k-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Cross-Validation Insight",
+        "text": "Cross-validation helps in assessing how the results of a statistical analysis will generalize to an independent data set. It is particularly useful in choosing the best lambda by comparing the root-mean square error across different folds.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5k-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$lambda=0.01$$"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp22-mt2-Q5k-h2"
+        ],
+        "title": "Analyzing RMSE Values",
+        "text": "Which lambda value results in the lowest average root-mean square error across the $$5$$ folds?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$lambda=0.001$$",
+            "$$lambda=0.01$$",
+            "$$lambda=0.1$$",
+            "$$lambda=1$$",
+            "$$lambda=10$$"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5k-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Lambda on Model Complexity",
+        "text": "A smaller lambda value generally allows for more complex models, while a larger lambda value imposes a stronger penalty on large theta values, leading to simpler models. Think about how this affects the model's performance on unseen data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

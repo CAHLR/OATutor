@@ -1,0 +1,84 @@
+[
+    {
+        "id": "aba1299row10g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE",
+        "text": "The Mean Squared Error (MSE) is a measure of how well your model predicts the data. It calculates the average of the squares of the errors, which are the differences between the observed and predicted values. Think about how you can express this error in terms of your model's parameters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10g-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row10g-h1"
+        ],
+        "title": "Expressing the Model",
+        "text": "Your model is given by $$\\operatorname{f_{theta1}}\\left(x_i\\right)=\\theta_1 \\ln\\left(x_i\\right)$$. Consider how you can use this expression to substitute into the MSE formula. What does this tell you about the relationship between $$\\theta_1$$ and the data points?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10g-h3",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row10g-h2"
+        ],
+        "title": "Simplifying the MSE",
+        "text": "After substituting the model into the MSE, you should have an expression involving $$\\theta_1$$, $$\\ln\\left(x_i\\right)$$, and $$y_i$$. Try to simplify this expression by expanding the square and separating terms involving $$\\theta_1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10g-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "-2*sum{i o n}{log(x_i)*(y_i-theta_1*log(x_i))}"
+        ],
+        "dependencies": [
+            "aba1299row10g-h3"
+        ],
+        "title": "Finding the Derivative",
+        "text": "To find the minimizer, you need to take the derivative of the MSE with respect to $$\\theta_1$$. What is the derivative of sum{i o n}{(y_i-theta_1*log(x_i))**2} with respect to $$\\theta_1$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "-2*sum{i o n}{log(x_i)*(y_i-theta_1*log(x_i))}",
+            "-2*sum{i o n}{log(x_i)*(y_i-theta_1*log(x_i))}",
+            "-sum{i o n}{log(x_i)*(y_i-theta_1*log(x_i))}",
+            "2*sum{i o n}{log(x_i)*(y_i-theta_1*log(x_i))}",
+            "sum{i o n}{log(x_i)*(y_i-theta_1*log(x_i))}"
+        ]
+    },
+    {
+        "id": "aba1299row10g-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "sum{i o n}{log(x_i)*y_i}=theta_1*sum{i o n}{(log(x_i))**2}"
+        ],
+        "dependencies": [
+            "aba1299row10g-h4"
+        ],
+        "title": "Setting the Derivative to Zero",
+        "text": "Once you have the derivative, set it to zero to find the critical points. What equation do you get when you set the derivative to zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "sum{i o n}{log(x_i)*y_i}=theta_1*sum{i o n}{(log(x_i))**2}",
+            "sum{i o n}{log(x_i)*y_i}=theta_1*sum{i o n}{log(x_i)}",
+            "sum{i o n}{log(x_i)*y_i}=theta_1*sum{i o n}{x_i}",
+            "sum{i o n}{log(x_i)*y_i}=theta_1*sum{i o n}{y_i}",
+            "sum{i o n}{log(x_i)*y_i}=theta_1*sum{i o n}{(log(x_i))**2}"
+        ]
+    }
+]

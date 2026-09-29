@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3ff-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Decision Thresholds",
+        "text": "When you lower the decision threshold in a logistic regression model, you are essentially making it easier for the model to predict the positive class. Think about how this might affect the number of true positives and false negatives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3ff-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp25-final-Q3e,Q3ff-h1"
+        ],
+        "title": "Impact on Recall",
+        "text": "Recall is calculated as the number of true positives divided by the sum of true positives and false negatives. Consider how changing the threshold might affect these components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3ff-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It increases"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp25-final-Q3e,Q3ff-h2"
+        ],
+        "title": "Threshold and Recall Relationship",
+        "text": "If you lower the threshold, what happens to the number of true positives?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It increases",
+            "It decreases",
+            "It stays the same"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3ff-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It decreases"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp25-final-Q3e,Q3ff-h3"
+        ],
+        "title": "Effect on False Negatives",
+        "text": "What happens to the number of false negatives when you lower the threshold?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It increases",
+            "It decreases",
+            "It stays the same"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3ff-h5",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp25-final-Q3e,Q3ff-h4"
+        ],
+        "title": "Connecting Threshold and Recall",
+        "text": "With more true positives and fewer false negatives, recall tends to increase. Consider how this aligns with the definition of recall.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

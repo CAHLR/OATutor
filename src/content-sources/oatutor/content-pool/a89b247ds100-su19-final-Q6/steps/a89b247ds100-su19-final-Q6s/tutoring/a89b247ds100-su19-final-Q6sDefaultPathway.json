@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a89b247ds100-su19-final-Q6s-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "Bias refers to the error introduced by approximating a real-world problem, which may be complex, by a simplified model. Variance refers to the model's sensitivity to fluctuations in the training set. Consider how adding random noise might affect these aspects.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6s-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6s-h1"
+        ],
+        "title": "Effect of Random Features",
+        "text": "Adding a feature of random numbers between $$0$$ and $$1$$ introduces noise. Think about how noise affects the model's ability to generalize from the training data to unseen data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6s-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "less likely"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6s-h2"
+        ],
+        "title": "Impact on Bias",
+        "text": "Does adding random noise to the model make it more or less likely to fit the underlying pattern of the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "more likely",
+            "less likely"
+        ]
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6s-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "more sensitive"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6s-h3"
+        ],
+        "title": "Impact on Variance",
+        "text": "Does adding random noise to the model make it more or less sensitive to changes in the training data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "more sensitive",
+            "less sensitive"
+        ]
+    }
+]

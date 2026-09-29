@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a1155e4row4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "Look at the columns in the `nuggets` DataFrame. Which column would help you filter nuggets with weight less than $$0.6$$ ounces?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row4b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row4b-h1"
+        ],
+        "title": "Filtering the Data",
+        "text": "To find nuggets with weight less than $$0.6$$ ounces, you need to filter the DataFrame using a condition on the `weight` column. How would you write this condition?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row4b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "chain"
+        ],
+        "dependencies": [
+            "a1155e4row4b-h2"
+        ],
+        "title": "Selecting the Column",
+        "text": "Which column should you select to count the number of nuggets sold by each chain?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "chain",
+            ">weight",
+            ">shape",
+            ">location"
+        ]
+    },
+    {
+        "id": "a1155e4row4b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row4b-h3"
+        ],
+        "title": "Counting Values",
+        "text": "After filtering the DataFrame and selecting the `chain` column, use the $$`\\operatorname{value_{counts}}\\left(\\right)`$$ method to count the occurrences of each chain. This will help you find which chain sold the most nuggets with weight less than $$0.6$$ ounces.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

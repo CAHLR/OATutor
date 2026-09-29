@@ -1,0 +1,47 @@
+[
+    {
+        "id": "aba1299row7d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE in OLS",
+        "text": "When Mir finds a different weight vector that yields the same MSE, it suggests that the model's error is not changing despite the change in weights. Think about what might cause this situation in terms of the data or the model's structure.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row7d-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row7d-h1"
+        ],
+        "title": "Exploring Feature Relationships",
+        "text": "Consider the possibility that some features in the dataset might not be providing unique information. If one feature can be expressed as a combination of others, how might this affect the OLS solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row7d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "One or more of the features is a linear combination of other features."
+        ],
+        "dependencies": [
+            "aba1299row7d-h2"
+        ],
+        "title": "Identifying Linear Combinations",
+        "text": "Which of the following scenarios could lead to the same MSE despite different weight vectors?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "One or more of the features is a linear combination of other features.",
+            "$\\hat{Y}$ is not a linear combination of the columns of $X$.",
+            "The prediction vector $\\hat{Y}$ is not in the span of the design matrix.",
+            "The model does not have an intercept term."
+        ]
+    }
+]

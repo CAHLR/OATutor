@@ -1,0 +1,48 @@
+[
+    {
+        "id": "aea05a2ds100-sp18-final-Q14b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Replication",
+        "text": "Think about what 4-way replication means. If each fragment is stored on $$4$$ different machines, how many copies of each fragment do you have?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp18-final-Q14b-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-sp18-final-Q14b-h1"
+        ],
+        "title": "Calculating Failures",
+        "text": "Consider how many copies of each fragment you need to access the entire file. If you have $$4$$ copies of each fragment, how many can you afford to lose and still have at least one copy left?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp18-final-Q14b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp18-final-Q14b-h2"
+        ],
+        "title": "Maximum Failures",
+        "text": "If each fragment is stored on $$4$$ machines, how many machines can fail while still ensuring at least one copy of each fragment is available?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$2$$",
+            "$$3$$",
+            "$$4$$",
+            "$$5$$"
+        ]
+    }
+]

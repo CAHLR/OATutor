@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1bb75eds100-su21-final-Q7b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Decision Boundaries",
+        "text": "Look at how the decision boundary separates the orange and blue points. Does it correctly classify all the points based on their color?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7b-h1"
+        ],
+        "title": "Analyzing Classifier A",
+        "text": "Consider whether the linear boundary in Classifier A can perfectly separate the two classes given their distribution. What do you notice about the points near the boundary?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7b-h2"
+        ],
+        "title": "Checking Classifier A's Accuracy",
+        "text": "Does the linear boundary in Classifier A correctly classify all the orange and blue points?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

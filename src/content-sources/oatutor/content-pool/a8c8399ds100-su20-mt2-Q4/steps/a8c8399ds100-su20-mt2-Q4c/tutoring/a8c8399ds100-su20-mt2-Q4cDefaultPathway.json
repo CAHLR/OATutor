@@ -1,0 +1,44 @@
+[
+    {
+        "id": "a8c8399ds100-su20-mt2-Q4c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding is a technique used to convert categorical variables into a form that could be provided to ML algorithms to do a better job in prediction. It creates binary columns for each category. Can you think of how this might apply to the cluster numbers?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-mt2-Q4c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Why One-Hot Encode?",
+        "text": "Consider how machine learning models interpret numerical values. If you leave the cluster numbers as they are, the model might assume a numerical relationship between them. What could be a better way to represent these clusters?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-mt2-Q4c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "One hot encode it"
+        ],
+        "dependencies": [],
+        "title": "Choosing the Right Transformation",
+        "text": "What is the best way to handle categorical data like cluster numbers before training a model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Leave as is",
+            "One hot encode it",
+            "Normalize it",
+            "Use bag of words",
+            "Drop it entirely"
+        ]
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE on Training Data",
+        "text": "When you add a new feature to a model, especially one that is a transformation of an existing feature, think about how it might affect the model's ability to fit the training data. Consider how adding more parameters can change the model's flexibility.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6e-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6e-h1"
+        ],
+        "title": "Effect of Adding a Feature",
+        "text": "What happens to the model's flexibility when you add a new feature?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "No Change"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6e-h2"
+        ],
+        "title": "Model Complexity and Training MSE",
+        "text": "Adding a feature can increase the model's complexity. A more complex model might fit the training data better, but it could also lead to overfitting. Think about how this affects the MSE on the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6e-h3"
+        ],
+        "title": "Impact on Training MSE",
+        "text": "If a model becomes more complex, what is a possible effect on the MSE of the training data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "No Change"
+        ]
+    }
+]

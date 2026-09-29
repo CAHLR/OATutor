@@ -1,0 +1,60 @@
+[
+    {
+        "id": "abf3684ds100-su25-mt-Q4b,Q4ce-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Derivative",
+        "text": "The derivative of TUO with respect to $$\\theta_0$$ involves a summation over all customers. Notice how each term in the summation has a fraction involving the tip and $$\\theta_0$$. What happens when you set this derivative to zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-mt-Q4b,Q4ce-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-su25-mt-Q4b,Q4ce-h1"
+        ],
+        "title": "Balancing the Equation",
+        "text": "To find the value of $$\\theta_0$$ that minimizes TUO, consider setting the derivative equal to zero. This will help you find the critical points. What does the equation look like when you do this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-mt-Q4b,Q4ce-h3",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-su25-mt-Q4b,Q4ce-h2"
+        ],
+        "title": "Solving for $$\\Theta_0$$",
+        "text": "Once you have set the derivative to zero, try isolating $$\\theta_0$$. Think about how you can manipulate the equation to express $$\\theta_0$$ in terms of the tips.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-mt-Q4b,Q4ce-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "N*(sum{i ext{=}1}{N}{3/tip_i})**(-1)"
+        ],
+        "dependencies": [
+            "abf3684ds100-su25-mt-Q4b,Q4ce-h3"
+        ],
+        "title": "Choosing the Correct Expression",
+        "text": "Which of the following expressions correctly represents the value of $$\\theta_0$$ that minimizes TUO?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "1/N*sum{i ext{=}1}{N}{tip_i/3}",
+            "1/N*sum{i ext{=}1}{N}{log{tip_i/3}}",
+            "1/N*sum{i ext{=}1}{N}{3/tip_i}",
+            "N*(sum{i ext{=}1}{N}{tip_i/3})**(-1)",
+            "N*(sum{i ext{=}1}{N}{3/tip_i})**(-1)"
+        ]
+    }
+]

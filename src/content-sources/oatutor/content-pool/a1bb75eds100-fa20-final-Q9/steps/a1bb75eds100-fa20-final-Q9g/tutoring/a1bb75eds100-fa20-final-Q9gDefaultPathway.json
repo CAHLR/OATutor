@@ -1,0 +1,83 @@
+[
+    {
+        "id": "a1bb75eds100-fa20-final-Q9g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Logistic Function",
+        "text": "The logistic function, also known as the sigmoid function, is used to model probabilities. It transforms any real-valued number into a value between $$0$$ and $$1$$. The formula is given by $$sigma(z)=\\frac{1}{1+e^{\\left(-z\\right)}}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9g-h1"
+        ],
+        "title": "Calculating the Linear Combination",
+        "text": "To find the linear combination for Billywine, substitute the given values into the expression $$\\theta_1 hue+\\theta_2 abv$$. Remember, $$\\theta_1=2$$ and $$\\theta_2=1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9g-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-3}{2}$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9g-h2"
+        ],
+        "title": "Compute the Linear Combination",
+        "text": "What is the value of the linear combination $$2\\frac{1}{4}+1\\left(-2\\right)$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{-3}{2}$$",
+            "$$\\frac{-3}{2}$$",
+            "$$\\frac{1}{2}$$",
+            "$$2$$",
+            "$$\\frac{3}{2}$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9g-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9g-h3"
+        ],
+        "title": "Understanding Odds",
+        "text": "Odds are a way of expressing the likelihood of an event. If the probability of an event is $$p$$, then the odds are $$\\frac{p}{1-p}$$. In logistic regression, the odds can be expressed as e**(linear combination).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9g-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$e^{\\left(-\\frac{3}{2}\\right)}$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9g-h4"
+        ],
+        "title": "Calculate the Odds",
+        "text": "Using the linear combination you found, what are the odds that Billywine is a type $$1$$ wine?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$e^{\\left(-\\frac{3}{2}\\right)}$$",
+            "$$e^{\\frac{3}{2}}$$",
+            "$$\\frac{-3}{2}$$",
+            "$$\\frac{3}{2}$$"
+        ]
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a72a45crow8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Sampling Frame and Population",
+        "text": "Consider what the sampling frame and the population represent in this context. The sampling frame is the group from which the sample is actually drawn, while the population is the entire group you want to understand. How do these two groups relate to each other in this scenario?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow8b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a72a45crow8b-h1"
+        ],
+        "title": "Analyzing Picture A",
+        "text": "In Picture A, the sampling frame and the population overlap. This suggests that some members of the population are included in the sampling frame, but not all. Think about whether this matches the scenario where the survey is distributed to all UC Berkeley students.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow8b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a72a45crow8b-h1"
+        ],
+        "title": "Analyzing Picture B",
+        "text": "Picture B shows the sampling frame and the population as completely separate. This would mean that the sample does not include any members of the population. Consider if this makes sense for the survey distributed to all UC Berkeley students.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow8b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a72a45crow8b-h1"
+        ],
+        "title": "Analyzing Picture C",
+        "text": "In Picture C, the population is entirely within the sampling frame. This means that the sampling frame includes the entire population and possibly more. Reflect on whether this fits the scenario where the survey is given to all UC Berkeley students.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow8b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Picture A"
+        ],
+        "dependencies": [
+            "a72a45crow8b-h2"
+        ],
+        "title": "Choosing the Correct Picture",
+        "text": "Based on the analysis of the pictures, which one best represents the relationship between the sampling frame and the population when the survey is distributed to all UC Berkeley students?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Picture A",
+            "Picture B",
+            "Picture C"
+        ]
+    }
+]

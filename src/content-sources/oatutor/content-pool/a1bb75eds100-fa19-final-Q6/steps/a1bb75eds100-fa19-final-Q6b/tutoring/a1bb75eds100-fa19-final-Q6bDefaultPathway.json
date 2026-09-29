@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-final-Q6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Logistic Regression Model",
+        "text": "In logistic regression, the decision boundary is a linear equation. Given the coefficients \\( \\hat{\\beta}_1 \\) and \\( \\hat{\\beta}_2 \\), can you express the decision boundary equation in terms of \\( $$x_1$$ \\) and \\( $$x_2$$ \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q6b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q6b-h1"
+        ],
+        "title": "Using the Sigmoid Function",
+        "text": "The sigmoid function \\( \\sigma(z) \\) is defined as \\( \\frac{1}{1+e**{-z}} \\). If \\( \\sigma(\\log(3))=0.75 \\), what does this tell you about the value of \\( $$z$$ \\) when the threshold is $$0.75$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q6b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{-2}{3}$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q6b-h2"
+        ],
+        "title": "Finding the Slope \\( $$m$$ \\)",
+        "text": "Given \\( \\hat{\\beta}_1=2 \\) and \\( \\hat{\\beta}_2=3 \\), what is the slope \\( $$m$$ \\) of the line \\( $$x_2=mx_1+b$$ \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{2}{3}$$",
+            "$$\\frac{-2}{3}$$",
+            "$$\\frac{3}{2}$$",
+            "$$\\frac{-3}{2}$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q6b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "log{3}/3"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q6b-h3"
+        ],
+        "title": "Finding the Intercept \\( $$b$$ \\)",
+        "text": "Using the fact that \\( \\sigma(\\log(3))=0.75 \\), what is the intercept \\( $$b$$ \\) in the equation \\( $$x_2=mx_1+b$$ \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "log{3}",
+            "log{3}/2",
+            "log{3}/3",
+            "-log{3}/3",
+            "3/log{3}"
+        ]
+    }
+]

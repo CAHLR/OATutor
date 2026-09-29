@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a92ac99ds100-fa17-final-Q11b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Bootstrap Confidence Interval",
+        "text": "To construct a bootstrap confidence interval, we need to use the percentiles from the bootstrap distribution. Here, the $$2.5th$$ and $$97.5th$$ percentiles are given as $$-2.2$$ and $$1.9$$. These values help us determine the range of our confidence interval.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q11b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculating the Standard Error",
+        "text": "The standard error of the sample mean is calculated using the formula SE(\\hat{\\theta})=\\frac{\\sigma}{\\sqrt{n}}. Given $$\\sigma=2$$ and $$n=100$$, try calculating the standard error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q11b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(8.4-1.9*2/sqrt(100),8.4+2.2*2/sqrt(100))"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q11b-h1"
+        ],
+        "title": "Choosing the Correct Interval",
+        "text": "Which of the following intervals correctly uses the percentiles and standard error to form a 95% confidence interval?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "(8.4-1.9*2/sqrt(100),8.4+2.2*2/sqrt(100))",
+            "(8.4-2.2*2/sqrt(100),8.4+1.9*2/sqrt(100))",
+            "$$(-1.9, 2.2)$$",
+            "(7.7-2.2*2/sqrt(100),9.1+1.9*2/sqrt(100))"
+        ]
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q11b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q11b-h2"
+        ],
+        "title": "Applying the Percentiles",
+        "text": "To find the confidence interval, apply the percentiles to the sample mean and standard error. The formula is \\hat{\\theta} $$\\frac{plus}{minus}$$ the percentile times SE(\\hat{\\theta}).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

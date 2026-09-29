@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a72a45crow10_p1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Probability Sampling",
+        "text": "Think about what it means for a sampling scheme to be a probability sample. Does every student have an equal chance of being selected in this method?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow10_p1c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a72a45crow10_p1c-h1"
+        ],
+        "title": "Analyzing the Sampling Frame",
+        "text": "Consider the group of students who are actually attending the discussion sections. Are there any students who might be excluded from this sampling frame?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow10_p1c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a72a45crow10_p1c-h2"
+        ],
+        "title": "Evaluating Equal Probability",
+        "text": "Does selecting every fifth student ensure that each student has an equal chance of being chosen?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

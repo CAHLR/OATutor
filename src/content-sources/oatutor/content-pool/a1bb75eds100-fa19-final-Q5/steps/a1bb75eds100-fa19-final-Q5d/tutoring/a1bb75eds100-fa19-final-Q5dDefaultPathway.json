@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-final-Q5d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Entropy Loss",
+        "text": "Cross-entropy loss is particularly useful for classification problems because it measures the difference between two probability distributions. Think about how this might be more suitable than squared loss, which is often used for regression tasks.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5d-h1"
+        ],
+        "title": "Properties of Cross-Entropy",
+        "text": "Consider how cross-entropy loss behaves when the predicted probability is close to the true label. Does it penalize incorrect predictions more heavily than squared loss?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$Cross-entropy$$ loss penalizes incorrect predictions more heavily than squared loss."
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5d-h2"
+        ],
+        "title": "Comparing Loss Functions",
+        "text": "Which of the following statements is true about cross-entropy loss compared to squared loss?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$Cross-entropy$$ loss penalizes incorrect predictions more heavily than squared loss.",
+            "Squared loss penalizes incorrect predictions more heavily than $$cross-entropy$$ loss.",
+            "Both loss functions penalize incorrect predictions equally."
+        ]
+    }
+]

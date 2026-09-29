@@ -1,0 +1,49 @@
+[
+    {
+        "id": "a98a015ds100-su20-final-Q8g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Singular Values",
+        "text": "The singular values of a matrix are related to the variance of its features. Think about how the variance of the features might influence the singular values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q8g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-su20-final-Q8g-h1"
+        ],
+        "title": "Connecting Variance and Singular Values",
+        "text": "The largest singular value, $$\\sigma_1$$, is at least as large as the square root of the largest variance of the features. Can you identify which feature has the largest variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q8g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\sigma_1 \\geq \\sqrt{125}$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-su20-final-Q8g-h2"
+        ],
+        "title": "Calculating the Lower Bound",
+        "text": "What is the square root of the largest variance among the features?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            ">sigma_1>=0",
+            ">sigma_1>=20",
+            ">sigma_1>=5",
+            ">sigma_1>=50",
+            "$$\\sigma_1 \\geq 125$$",
+            "$$\\sigma_1 \\geq \\sqrt{125}$$"
+        ]
+    }
+]

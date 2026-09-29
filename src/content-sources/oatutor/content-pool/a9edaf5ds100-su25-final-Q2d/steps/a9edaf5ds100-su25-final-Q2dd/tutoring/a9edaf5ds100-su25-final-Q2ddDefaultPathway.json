@@ -1,0 +1,43 @@
+[
+    {
+        "id": "a9edaf5ds100-su25-final-Q2dd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L1 and L2 Regularization",
+        "text": "L1 regularization, also known as Lasso, tends to produce sparse models by driving some coefficients to zero, which can help in feature selection. On the other hand, L2 regularization, or Ridge, tends to distribute the error among all the coefficients. Think about how these characteristics might affect the model's performance and loss.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su25-final-Q2dd-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "L1 regularization generally results in higher average loss compared to L2 regularization."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su25-final-Q2dd-h1"
+        ],
+        "title": "Comparing Loss in L1 and L2 Regularization",
+        "text": "Consider how the regularization term affects the loss function in both L1 and L2 regularization. Which of the following statements is true?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "L1 regularization generally results in higher average loss compared to L2 regularization.",
+            "L2 regularization generally results in higher average loss compared to L1 regularization."
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-su25-final-Q2dd-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Feature Selection with L1 Regularization",
+        "text": "L1 regularization can help identify the most predictive features by reducing some coefficients to zero. This characteristic is particularly useful when you suspect that only a few features are truly important. How might this affect the model's interpretability?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

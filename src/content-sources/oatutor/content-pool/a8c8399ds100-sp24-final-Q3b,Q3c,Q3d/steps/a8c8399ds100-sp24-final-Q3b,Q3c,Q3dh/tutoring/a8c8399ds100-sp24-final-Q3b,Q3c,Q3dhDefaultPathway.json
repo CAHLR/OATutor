@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3dh-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Dimensionality",
+        "text": "To determine the dimensionality of the parameter vector \\( \\hat{\\theta} \\), consider how many parameters are needed for each genre. Remember, each genre will have its own parameter in the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3dh-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-sp24-final-Q3b,Q3c,Q3dh-h1"
+        ],
+        "title": "Intercept in the Model",
+        "text": "In a typical linear regression model, an intercept is included. How does this affect the dimensionality of \\( \\hat{\\theta} \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3dh-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$m$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp24-final-Q3b,Q3c,Q3dh-h2"
+        ],
+        "title": "Counting Parameters",
+        "text": "If there are \\( $$m$$ \\) different genres, how many parameters are needed for the genres alone?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$m$$",
+            "$$m-1$$",
+            "$$2$$",
+            "$$d$$"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3dh-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$m+1$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp24-final-Q3b,Q3c,Q3dh-h3"
+        ],
+        "title": "Including the Intercept",
+        "text": "Considering the intercept, what is the total number of parameters in \\( \\hat{\\theta} \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$m$$",
+            "$$m+1$$",
+            "$$m-1$$",
+            "$$2$$"
+        ]
+    }
+]

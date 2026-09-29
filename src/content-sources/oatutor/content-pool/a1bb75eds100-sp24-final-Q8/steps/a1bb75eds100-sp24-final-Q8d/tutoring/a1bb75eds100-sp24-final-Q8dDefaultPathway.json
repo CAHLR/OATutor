@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a1bb75eds100-sp24-final-Q8d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Recall",
+        "text": "Recall is the ratio of true positives to the sum of true positives and false negatives. Think about how you can identify true positives and false negatives from the data given.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp24-final-Q8d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculating Accuracy",
+        "text": "Accuracy is the ratio of correctly predicted observations to the total observations. Consider how you can use the predicted probabilities and a threshold to determine correct predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp24-final-Q8d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0.5$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp24-final-Q8d-h1"
+        ],
+        "title": "Choosing a Threshold",
+        "text": "Which threshold would result in the highest recall while maintaining accuracy above $$0.75$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0.3$$",
+            "$$0.4$$",
+            "$$0.5$$",
+            "$$0.6$$",
+            "$$0.7$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp24-final-Q8d-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp24-final-Q8d-h3"
+        ],
+        "title": "Evaluating Predictions",
+        "text": "For each threshold, classify the predictions as positive or negative. Compare these classifications to the true labels to determine true positives, false positives, true negatives, and false negatives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp24-final-Q8d-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0.5$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp24-final-Q8d-h4"
+        ],
+        "title": "Calculating Recall",
+        "text": "What is the recall when the threshold is set to $$0.5$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$0.8$$",
+            "$$0.5$$",
+            "$$0.6$$",
+            "$$0.25$$"
+        ]
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a8c8399ds100-fa24-final-Q3dc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model Equation",
+        "text": "The model equation given is $$self_{rating}=\\theta_0+\\theta_1 critic_1$$. This means that the predicted $$self_{rating}$$ is a linear combination of a constant term $$\\theta_0$$ and the $$critic_1$$ rating multiplied by $$\\theta_1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa24-final-Q3dc-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-fa24-final-Q3dc-h1"
+        ],
+        "title": "Effect of Squaring $$critic_1$$",
+        "text": "If you use the square of $$critic_1$$ as the predictor variable, the equation becomes $$self_{rating}=\\theta_0+\\theta_1 {critic_1}^2$$. Consider how this change affects the relationship between $$critic_1$$ and $$self_{rating}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa24-final-Q3dc-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa24-final-Q3dc-h2"
+        ],
+        "title": "Impact on $$\\theta_1$$",
+        "text": "Does using $${critic_1}^2$$ instead of $$critic_1$$ change the value of $$\\theta_1$$ in the model equation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

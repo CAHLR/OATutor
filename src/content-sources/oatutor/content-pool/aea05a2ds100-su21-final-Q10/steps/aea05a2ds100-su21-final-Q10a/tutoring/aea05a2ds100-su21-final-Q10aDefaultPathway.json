@@ -1,0 +1,34 @@
+[
+    {
+        "id": "aea05a2ds100-su21-final-Q10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Clustering Algorithms",
+        "text": "Think about how clustering algorithms group data. Do they rely on any pre-existing labels, or do they work independently of them?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-su21-final-Q10a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "never"
+        ],
+        "dependencies": [
+            "aea05a2ds100-su21-final-Q10a-h1"
+        ],
+        "title": "Exploring Data Labels in Clustering",
+        "text": "When clustering, the algorithm [blank] sees data labels. Choose the correct option.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "always",
+            "sometimes",
+            "never"
+        ]
+    }
+]

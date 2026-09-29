@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a640c04S25M1Q1Ga-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Pivot Table",
+        "text": "To create the DataFrame q1g, you need to use a pivot table to summarize the data. Think about which columns should be used as the index, columns, and values in the pivot table.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04S25M1Q1Ga-h2",
+        "type": "hint",
+        "dependencies": [
+            "a640c04S25M1Q1Ga-h1"
+        ],
+        "title": "Choosing the Right Columns",
+        "text": "Consider using $$'is_{reachable'}$$ as the index and 'item' as the columns. This will help you organize the data by reachability and fruit type.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04S25M1Q1Ga-h3",
+        "type": "hint",
+        "dependencies": [
+            "a640c04S25M1Q1Ga-h2"
+        ],
+        "title": "Calculating the Average",
+        "text": "The pivot table should calculate the average inventory for each combination of 'item' and $$'is_{reachable'}$$. Use the 'aggfunc' parameter to specify this calculation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04S25M1Q1Ga-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$fill_{value}=0$$"
+        ],
+        "dependencies": [
+            "a640c04S25M1Q1Ga-h3"
+        ],
+        "title": "Fill Missing Values",
+        "text": "What should you use to fill missing values in the pivot table?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$fill_{value}=0$$",
+            "$$fill_{value}=np.nan$$",
+            "$$fill_{value}='missing'$$",
+            "$$fill_{value}=-1$$"
+        ]
+    }
+]

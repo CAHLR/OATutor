@@ -1,0 +1,73 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-final-Q5n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Confusion Matrix",
+        "text": "A confusion matrix is a tool used to evaluate the performance of a classification model. It shows the number of true positive, true negative, false positive, and false negative predictions. Can you think about how these terms relate to the predictions made by your classifier?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5n-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "True Positive|True Negative|False Positive|False Negative"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5n-h1"
+        ],
+        "title": "Components of a Confusion Matrix",
+        "text": "Which of the following are components of a confusion matrix?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "False Discovery Rate",
+            "False Negative",
+            "False Positive",
+            "True Negative",
+            "True Negative Rate",
+            "True Positive",
+            "True Positive|True Negative|False Positive|False Negative"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5n-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5n-h2"
+        ],
+        "title": "Linking Classifier Output to Confusion Matrix",
+        "text": "Think about how the output of your classifier (0 or 1) can be mapped to the entries in a confusion matrix. What does a true positive or a false negative mean in terms of your classifier's predictions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5n-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "True Positive"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5n-h3"
+        ],
+        "title": "Mapping Predictions to Confusion Matrix",
+        "text": "If your classifier predicts $$1$$ and the actual label is $$1$$, which part of the confusion matrix does this correspond to?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "True Positive",
+            "True Negative",
+            "False Positive",
+            "False Negative"
+        ]
+    }
+]

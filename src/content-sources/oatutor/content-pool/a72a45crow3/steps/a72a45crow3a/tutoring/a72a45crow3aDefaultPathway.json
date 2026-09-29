@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a72a45crow3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "Look at the columns in the DataFrame. Each column represents a different attribute of the buildings, such as 'id', 'building', 'number', 'college', and 'renovated'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a72a45crow3a-h1"
+        ],
+        "title": "Focus on the 'renovated' Column",
+        "text": "The 'renovated' column shows the year each building was renovated. Some entries might be missing, indicated by 'None'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow3a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Gateway"
+        ],
+        "dependencies": [
+            "a72a45crow3a-h2"
+        ],
+        "title": "Identify the Building with the Most Recent Renovation",
+        "text": "Which building has the most recent renovation year listed?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Evans",
+            "Soda",
+            "Gateway",
+            "Cory"
+        ]
+    }
+]

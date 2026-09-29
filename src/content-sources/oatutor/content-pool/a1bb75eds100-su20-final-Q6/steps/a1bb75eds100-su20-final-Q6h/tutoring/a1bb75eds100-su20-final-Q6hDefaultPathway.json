@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a1bb75eds100-su20-final-Q6h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding GroupBy",
+        "text": "When using the `groupby` function, think about what column you want to group by and what operation you want to perform on the grouped data. Here, consider what `groupby('name')` does and whether it aligns with the goal of counting consoles by generation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su20-final-Q6h-h1"
+        ],
+        "title": "Locating with .loc",
+        "text": "The `.loc` function is used to access a group of rows and columns by labels or a boolean array. Consider what `loc[7]` is trying to access and whether it matches the intended data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "generation"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su20-final-Q6h-h2"
+        ],
+        "title": "Correcting the GroupBy",
+        "text": "Which column should you group by to find the number of consoles in the seventh generation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "name",
+            "generation",
+            "sales",
+            "year"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6h-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su20-final-Q6h-h3"
+        ],
+        "title": "Using the Correct Index",
+        "text": "What should you use with `.loc` to correctly find the number of seventh generation consoles?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$6$$",
+            "$$7$$",
+            "$$8$$",
+            "$$9$$"
+        ]
+    }
+]

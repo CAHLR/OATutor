@@ -1,0 +1,48 @@
+[
+    {
+        "id": "aea05a2ds100-su21-final-Q9d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Spectral Clustering",
+        "text": "In spectral clustering, we first construct a graph where each point is a vertex. The weight of the edge between two vertices is a function of the Euclidean distance between them. Consider how the distance affects the weight of the edge.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-su21-final-Q9d-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-su21-final-Q9d-h1"
+        ],
+        "title": "Finding the Smallest Edge Weight",
+        "text": "To find the edge with the smallest weight, look for the pair of points with the smallest Euclidean distance. This distance will determine the weight of the edge between them.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-su21-final-Q9d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "AE"
+        ],
+        "dependencies": [
+            "aea05a2ds100-su21-final-Q9d-h2"
+        ],
+        "title": "Identifying the Closest Points",
+        "text": "Which pair of points has the smallest Euclidean distance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "AE",
+            "CD",
+            "BC",
+            "AB",
+            "CE"
+        ]
+    }
+]

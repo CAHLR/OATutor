@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1155e4row5_p1j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Boxplots",
+        "text": "A boxplot displays the distribution of data based on a five-number summary: minimum, first quartile (Q1), median, third quartile (Q3), and maximum. The median is the line inside the box. Compare the medians of the two groups to determine which is higher.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p1j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row5_p1j-h1"
+        ],
+        "title": "Comparing Medians",
+        "text": "Look at the line inside each box in the boxplot. This line represents the median. Compare the position of these lines for Tutors and TAs to see which is higher.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p1j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TA"
+        ],
+        "dependencies": [
+            "a1155e4row5_p1j-h2"
+        ],
+        "title": "Median Comparison",
+        "text": "Which role has a higher median number of OH tickets resolved according to the boxplot?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Tutor",
+            "TA"
+        ]
+    }
+]

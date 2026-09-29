@@ -1,0 +1,43 @@
+[
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Codons",
+        "text": "Think about how DNA is structured. Each sequence of three letters forms a codon, which is crucial for encoding amino acids. How might this influence your choice of encoding strategy?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Compactness vs. Meaning",
+        "text": "Consider the trade-off between compactness and preserving the meaning of the data. Why might a more compact representation not always be the best choice?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "One hot encode each of the 1,000 disjoint codons, per sample."
+        ],
+        "dependencies": [],
+        "title": "Choosing the Right Encoding",
+        "text": "Which encoding strategy allows you to capture the unique sequences of three letters that are crucial for protein synthesis?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Apply one one hot encoding to the entire DNA string.",
+            "One hot encode each of the 1,000 disjoint codons, per sample.",
+            "One hot encode each of the $$500$$ disjoint $$6$$ letter combinations, per sample.",
+            "Bag of words encoding, where each \"word\" is a codon"
+        ]
+    }
+]

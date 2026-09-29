@@ -1,0 +1,79 @@
+[
+    {
+        "id": "a89b247ds100-fa21-mt-Q2q-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "When thinking about reducing model variance, consider how complex transformations of the input data might affect the model's ability to generalize to new data. Simpler transformations often lead to lower variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2q-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2q-h1"
+        ],
+        "title": "Exploring the Transformation",
+        "text": "Look at the transformation function: $$f(x)=sin\\left(x\\right)+cos\\left(x\\right)+x^{1000}$$. Consider how each component of this function might influence the model's complexity and variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2q-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x^{1000}$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2q-h2"
+        ],
+        "title": "Analyzing the Components",
+        "text": "Which part of the function $$f(x)=sin\\left(x\\right)+cos\\left(x\\right)+x^{1000}$$ is likely to increase the model's variance the most?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "sin(x)",
+            "cos(x)",
+            "$$x^{1000}$$"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2q-h4",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2q-h3"
+        ],
+        "title": "Impact of High-Degree Polynomials",
+        "text": "High-degree polynomial terms, like $$x^{1000}$$, can lead to overfitting, which increases model variance. Consider how this affects the model's predictions on unseen data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2q-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$sin\\left(x\\right)+cos\\left(x\\right)$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2q-h4"
+        ],
+        "title": "Choosing Simpler Transformations",
+        "text": "Which transformation would likely result in lower variance for the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$sin\\left(x\\right)+cos\\left(x\\right)$$",
+            "$$x^{1000}$$"
+        ]
+    }
+]

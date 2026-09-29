@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-final-Q5k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Zero-One Loss",
+        "text": "Consider how the zero-one loss function behaves. What happens to the loss when a prediction is correct versus when it is incorrect?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5k-h1"
+        ],
+        "title": "Gradient of Zero-One Loss",
+        "text": "Think about how the zero-one loss changes with small changes in the prediction. Does the loss change smoothly or abruptly?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5k-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The gradient is always $$0$$, so gradient descent never moves."
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5k-h2"
+        ],
+        "title": "Behavior of the Gradient",
+        "text": "Which of the following best describes the gradient of the zero-one loss function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The gradient is always $$0$$, so gradient descent never moves.",
+            "The gradient is positive for correct predictions and negative for incorrect ones.",
+            "The gradient is undefined for $$zero-one$$ loss.",
+            "The gradient is always positive, leading to divergence."
+        ]
+    }
+]

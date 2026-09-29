@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a1bb75eds100-su21-final-Q7l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logistic Regression",
+        "text": "Logistic regression is a linear classifier. This means it tries to separate classes using a straight line (or a hyperplane in higher dimensions).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7l-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Analyzing the Data Distribution",
+        "text": "Look at how the data points are distributed. Are they linearly separable, or do they form a more complex pattern?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7l-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Linear"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7l-h1"
+        ],
+        "title": "Boundary Type",
+        "text": "What type of boundary does logistic regression create?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Linear",
+            "$$Non-linear$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7l-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Circular"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7l-h2"
+        ],
+        "title": "Data Pattern",
+        "text": "Does the data form a circular pattern or a linear pattern?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Circular",
+            "Linear"
+        ]
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1bb75eds100-su21-final-Q7m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Decision Boundaries",
+        "text": "Consider how decision trees create boundaries. They typically split the data using vertical or horizontal lines. Think about whether such lines can effectively separate the classes in this dataset.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7m-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7m-h1"
+        ],
+        "title": "Analyzing the Data Distribution",
+        "text": "What kind of boundary would a decision tree create to separate the orange and blue points?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7m-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7m-h2"
+        ],
+        "title": "Visualizing the Boundary",
+        "text": "Look at the distribution of the points. Notice the circular pattern. Consider if a decision tree can create a circular boundary or if it would require a different type of model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

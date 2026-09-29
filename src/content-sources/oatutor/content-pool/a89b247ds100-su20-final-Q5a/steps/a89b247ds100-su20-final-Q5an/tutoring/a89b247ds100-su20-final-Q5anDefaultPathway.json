@@ -1,0 +1,51 @@
+[
+    {
+        "id": "a89b247ds100-su20-final-Q5an-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias-Variance Decomposition",
+        "text": "In the context of bias-variance decomposition, the risk is the expected squared difference between the true response and the predicted response. Think about how bias and variance contribute to this risk.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su20-final-Q5an-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-su20-final-Q5an-h1"
+        ],
+        "title": "Exploring Model Bias",
+        "text": "Model bias refers to the error introduced by approximating a real-world problem, which may be complex, by a simplified model. Consider how this bias affects the expected prediction error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su20-final-Q5an-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The negative of model bias"
+        ],
+        "dependencies": [
+            "a89b247ds100-su20-final-Q5an-h2"
+        ],
+        "title": "Identifying the Expression",
+        "text": "Which of the following expressions represents the expected difference between the true response and the predicted response?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "The negative of model bias",
+            "Model bias",
+            "Model bias squared",
+            "Model variance",
+            "Model standard deviation",
+            "Observation variance",
+            "None of these"
+        ]
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a72a45crow8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Sampling Methods",
+        "text": "Think about the time and location Xiaorui chose to distribute the survey. How might these factors influence the type of sampling method used?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a72a45crow8a-h1"
+        ],
+        "title": "Convenience Sampling Characteristics",
+        "text": "Convenience sampling often involves selecting a sample based on ease of access. Consider how Xiaorui's choice of time and place might reflect this.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow8a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "This method is an instance of convenience sampling."
+        ],
+        "dependencies": [
+            "a72a45crow8a-h2"
+        ],
+        "title": "Identifying the Sampling Method",
+        "text": "Which of the following best describes the sampling method used by Xiaorui?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The sampling method guarantees a representative sample of its population.",
+            "The sampling method guarantees to prevent response bias from its respondents.",
+            "This method is an instance of convenience sampling.",
+            "This method is an instance of simple random sampling with replacement."
+        ]
+    }
+]

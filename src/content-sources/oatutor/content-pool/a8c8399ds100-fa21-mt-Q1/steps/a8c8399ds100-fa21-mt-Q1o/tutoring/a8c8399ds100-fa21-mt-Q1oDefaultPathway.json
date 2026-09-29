@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Validation",
+        "text": "Cross-validation is a technique used to assess how the results of a statistical analysis will generalize to an independent data set. It is mainly used in settings where the goal is prediction, and one wants to estimate how accurately a predictive model will perform in practice.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1o-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Bias and Variance in Cross-Validation",
+        "text": "Increasing the number of folds in k-fold cross-validation can affect the bias and variance of the model. Think about how using more folds might change the amount of data used for training versus testing in each iteration.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1o-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [],
+        "title": "Evaluating Cross-Validation Efficiency",
+        "text": "Consider the computational cost of cross-validation compared to regular validation. Does cross-validation require more or less computation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1o-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Training Data Utilization",
+        "text": "One advantage of cross-validation is that it allows the model to be trained and tested on different subsets of the data. This means that every data point gets to be in a test set exactly once and gets to be in a training set k-1 times.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1o-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [],
+        "title": "Cross-Validation in Production",
+        "text": "Think about whether cross-validation is typically used during the model development phase or in production. Does it involve using the entire dataset for training and testing?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

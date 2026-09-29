@@ -1,0 +1,75 @@
+[
+    {
+        "id": "a98a015ds100-sp21-final-Q11d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It reduces the dimensionality of the data while preserving as much variance as possible.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp21-final-Q11d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Reconstruction Error",
+        "text": "Reconstruction error in PCA is the difference between the original data and the data reconstructed from the principal components. Lower reconstruction error means the principal components capture more of the data's variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp21-final-Q11d-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Analyzing Plot A",
+        "text": "Look at the spread of the data in Plot A. Consider how the principal components would align with the data's variance. The more variance captured by the first two components, the lower the reconstruction error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp21-final-Q11d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Plot B"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp21-final-Q11d-h3"
+        ],
+        "title": "Comparing Variance",
+        "text": "Which plot shows data with the most variance along a single direction?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Plot A",
+            "Plot B",
+            "Plot C"
+        ]
+    },
+    {
+        "id": "a98a015ds100-sp21-final-Q11d-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp21-final-Q11d-h4"
+        ],
+        "title": "Principal Components in Plot A",
+        "text": "In Plot A, do the principal components likely capture a significant amount of variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

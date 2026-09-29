@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fh-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Precision",
+        "text": "Precision is the ratio of true positive predictions to the total number of positive predictions made by the model. Think about how changing the threshold might affect the number of true positives and false positives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fh-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Lowering the Threshold",
+        "text": "Lowering the threshold means that the model will classify more instances as positive. Consider how this might impact the number of false positives and true positives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fh-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "They increase"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp25-final-Q3e,Q3fh-h2"
+        ],
+        "title": "Analyzing Precision Change",
+        "text": "If you lower the threshold, what happens to the number of false positives?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "They increase",
+            "They decrease",
+            "They stay the same"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fh-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "They increase"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp25-final-Q3e,Q3fh-h3"
+        ],
+        "title": "Impact on True Positives",
+        "text": "When the threshold is lowered, what happens to the number of true positives?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "They increase",
+            "They decrease",
+            "They stay the same"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fh-h5",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp25-final-Q3e,Q3fh-h4"
+        ],
+        "title": "Precision Formula",
+        "text": "Remember, precision is calculated as true positives divided by the sum of true positives and false positives. Consider how changes in these values affect precision.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

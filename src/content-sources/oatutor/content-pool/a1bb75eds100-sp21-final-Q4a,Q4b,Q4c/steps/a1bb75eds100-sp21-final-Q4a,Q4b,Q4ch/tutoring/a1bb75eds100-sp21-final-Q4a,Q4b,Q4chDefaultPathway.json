@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4ch-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Separability",
+        "text": "Think about what it means for data to be linearly separable. If you can draw a straight line (or hyperplane in higher dimensions) that separates the data into two distinct classes, then the data is linearly separable. Consider how transforming the data might help achieve this.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4ch-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring the Transformation",
+        "text": "The transformation given is $$(x_1,x_2)$$ to $$({x_2}^2,{x_1}^2)$$. Think about how squaring each component might affect the data points. What happens to negative values? How does this transformation change the shape of the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4ch-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It becomes $$non-negative$$."
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q4a,Q4b,Q4ch-h2"
+        ],
+        "title": "Analyzing the Effect of Squaring",
+        "text": "What happens to the sign of a number when you square it?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It becomes $$non-negative$$.",
+            "It becomes negative.",
+            "It stays the same.",
+            "It becomes zero."
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4ch-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$({x_2}^2,{x_1}^2)$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q4a,Q4b,Q4ch-h2"
+        ],
+        "title": "Visualizing the Transformation",
+        "text": "Consider a point $$(x_1,x_2)$$ in the original space. After the transformation, what are the new coordinates?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$({x_2}^2,{x_1}^2)$$",
+            "$$({x_1}^2,{x_2}^2)$$",
+            "$$(x_1,x_2)$$",
+            "$$(x_2,x_1)$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4ch-h5",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q4a,Q4b,Q4ch-h4"
+        ],
+        "title": "Impact on Linear Separability",
+        "text": "After applying the transformation, consider how the data points are distributed. Are they more likely to be separated by a straight line now? Think about the symmetry introduced by squaring each component.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

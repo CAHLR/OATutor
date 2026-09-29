@@ -1,0 +1,48 @@
+[
+    {
+        "id": "aba1299row9c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Relationships",
+        "text": "When considering if a relationship is linear, think about how the variables interact. A linear relationship means that if you plot the data, it should form a straight line. Consider how transformations like logarithms or square roots might affect this.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row9c-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row9c-h1"
+        ],
+        "title": "Exploring Transformations",
+        "text": "Transformations like taking the logarithm or square root can linearize data that isn't initially linear. For example, if you have an exponential relationship, taking the logarithm might help reveal a linear pattern.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row9c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$y=\\theta_0+\\theta_1 x_1$$"
+        ],
+        "dependencies": [
+            "aba1299row9c-h2"
+        ],
+        "title": "Identifying Linear Equations",
+        "text": "Which of the following equations represents a linear relationship?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$y=\\theta_0+\\theta_1 x_1$$",
+            "y=theta_0+theta_1*log{x}_1",
+            "y=theta_0+theta_1*log{x}_2",
+            "$$\\sqrt{y}=\\theta_0+\\theta_1 \\sqrt{x_2}$$",
+            "log{x}_2=theta_0+theta_1*sqrt(x_1)"
+        ]
+    }
+]

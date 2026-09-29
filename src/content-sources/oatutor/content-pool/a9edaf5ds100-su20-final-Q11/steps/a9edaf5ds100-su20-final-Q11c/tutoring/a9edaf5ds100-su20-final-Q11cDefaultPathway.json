@@ -1,0 +1,54 @@
+[
+    {
+        "id": "a9edaf5ds100-su20-final-Q11c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Fold Size",
+        "text": "To determine the size of each fold, consider how you would divide the total number of samples by the number of folds, k. This will give you the number of samples in each fold.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q11c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Shuffling Indices",
+        "text": "The shuffled indices are created to ensure that each fold is a random subset of the data. This helps in reducing bias during cross-validation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q11c-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Creating Validation Indices",
+        "text": "For the validation indices, think about which part of the shuffled indices should be used for validation in each iteration. It should be a continuous block of indices corresponding to the current fold.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q11c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "sqrt(mean((model.predict(X[valid_idx])-y[valid_idx])**2))"
+        ],
+        "dependencies": [],
+        "title": "Calculating RMSE",
+        "text": "Which of the following expressions correctly calculates the RMSE for the validation set?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "sqrt(mean((model.predict(X[valid_idx])-y[valid_idx])**2))",
+            "mean((model.predict(X[valid_idx])-y[valid_idx])**2)",
+            "sqrt(mean((model.predict(X[train_idx])-y[train_idx])**2))",
+            "sqrt(mean((y[valid_idx]-X[valid_idx]@lm.coef_-lm.intercept_)**2)+lamb*sum(lm.coef_**2))",
+            "mean(abs(model.predict(X[valid_idx])-y[valid_idx]))"
+        ]
+    }
+]

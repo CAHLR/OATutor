@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a1155e4row3_p1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variable Types",
+        "text": "Consider what the column 'ranking' represents. It's a personal rating system with values like $$1$$, $$2$$, and $$3$$. Think about whether these numbers have a meaningful order or if they are just labels.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row3_p1c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row3_p1c-h1"
+        ],
+        "title": "Qualitative vs Quantitative",
+        "text": "Qualitative data describes qualities or characteristics, while quantitative data involves numbers that can be measured. Does the 'ranking' column describe a quality or a measurable quantity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row3_p1c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Qualitative ordinal"
+        ],
+        "dependencies": [
+            "a1155e4row3_p1c-h2"
+        ],
+        "title": "Identifying the Type",
+        "text": "What type of data is represented by the 'ranking' column?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Qualitative ordinal",
+            "Qualitative nominal",
+            "Quantitative"
+        ]
+    }
+]

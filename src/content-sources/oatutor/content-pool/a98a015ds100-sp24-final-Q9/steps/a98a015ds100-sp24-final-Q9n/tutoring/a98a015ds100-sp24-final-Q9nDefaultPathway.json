@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a98a015ds100-sp24-final-Q9n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD Components",
+        "text": "When performing Singular Value Decomposition (SVD), the matrix $X$ is decomposed into three matrices: $U$, $S$, and $V**T$. Consider what each of these matrices represents in terms of dimensions and properties. What can you infer about the structure of $S$ and $V**T$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9n-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$U$ is $n \\times n$, $S$ is $n \\times d$, and $V**T$ is $d \\times $$d\\$$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9n-h1"
+        ],
+        "title": "Matrix Dimensions in SVD",
+        "text": "Given that $X$ has $n$ rows and $d$ columns, what are the dimensions of the matrices $U$, $S$, and $V**T$ in the decomposition $X=USV**T$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$U$ is $n \\times n$, $S$ is $n \\times d$, and $V**T$ is $d \\times $$d\\$$$",
+            "$U$ is $n \\times d$, $S$ is $d \\times d$, and $V**T$ is $d \\times $$n\\$$$",
+            "$U$ is $d \\times n$, $S$ is $d \\times d$, and $V**T$ is $n \\times $$d\\$$$"
+        ]
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9n-h3",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9n-h2"
+        ],
+        "title": "Diagonal Matrix Properties",
+        "text": "A diagonal matrix has non-zero elements only on its main diagonal. Consider the rank of $X$ and how it affects the structure of $S$. What does this imply about $S$ being a diagonal matrix?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9n-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "There are fewer than $d$ $$non-zero$$ singular values in $S$."
+        ],
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9n-h3"
+        ],
+        "title": "Rank and Diagonal Matrices",
+        "text": "If $rank(X)<d$, what does this tell you about the number of non-zero singular values in $S$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "There are fewer than $d$ $$non-zero$$ singular values in $S$.",
+            "There are exactly $d$ $$non-zero$$ singular values in $S$.",
+            "There are more than $d$ $$non-zero$$ singular values in $S$."
+        ]
+    }
+]

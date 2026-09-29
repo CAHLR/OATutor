@@ -1,0 +1,34 @@
+[
+    {
+        "id": "aba1299row1_part3e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias in Model A",
+        "text": "When you remove a feature from a model, think about how it affects the model's ability to capture the underlying data patterns. Consider whether the model becomes simpler and how that might impact the bias.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1_part3e-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "aba1299row1_part3e-h1"
+        ],
+        "title": "Effect of Removing a Feature on Bias",
+        "text": "What happens to the model's ability to capture data patterns when a feature is removed?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Increase and Decrease"
+        ]
+    }
+]

@@ -1,0 +1,67 @@
+[
+    {
+        "id": "a89b247ds100-fa18-final-Q13b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Bias-Variance Decomposition",
+        "text": "The expected squared error can be broken down into three main components: the variance of the noise, the squared bias, and the variance of the model. Can you identify which part of the equation represents each of these components?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q13b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q13b-h1"
+        ],
+        "title": "Identifying the Noise Variance",
+        "text": "In the equation, the term $${\\sigma}^2$$ represents the variance of the noise. This is the part of the error that is due to the inherent randomness in the data. Can you see how this fits into the overall error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q13b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q13b-h1"
+        ],
+        "title": "Understanding the Squared Bias",
+        "text": "The term (h(x)-E[f_hat_theta(x)])**2 represents the squared bias. This measures how far the average prediction is from the true function. How does this affect the overall error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q13b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q13b-h1"
+        ],
+        "title": "Exploring the Model Variance",
+        "text": "The term E[(E[f_hat_theta(x)]-f_hat_theta(x))**2] represents the variance of the model. This shows how much the predictions vary for different training sets. Can you think about why this is important?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q13b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Sources of Randomness",
+        "text": "When we draw random samples from a population to build our training set, is this a source of randomness in the bias-variance tradeoff?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

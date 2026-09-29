@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a1155e4row2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding KDE Plot",
+        "text": "A KDE plot is used to estimate the probability density function of a continuous random variable. It is useful for visualizing the distribution of data points. Consider whether this is suitable for counting discrete events like room renovations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row2c-h1"
+        ],
+        "title": "Visualizing Discrete Data",
+        "text": "When you want to visualize the total number of events by category, such as the number of renovations by year, think about whether a plot that shows counts or frequencies might be more appropriate.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row2c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Bar Plot"
+        ],
+        "dependencies": [
+            "a1155e4row2c-h2"
+        ],
+        "title": "Choosing the Right Plot",
+        "text": "Which type of plot is typically used to show the count of occurrences for different categories?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "KDE Plot",
+            "Bar Plot",
+            "Line Plot",
+            "Scatter Plot"
+        ]
+    }
+]

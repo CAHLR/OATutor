@@ -1,0 +1,54 @@
+[
+    {
+        "id": "a98a015ds100-sp19-final-Q6cd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It transforms the data into a new coordinate system, where the greatest variance by any projection of the data comes to lie on the first coordinate (called the first principal component), the second greatest variance on the second coordinate, and so on.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp19-final-Q6cd-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Matrix Centering",
+        "text": "When applying PCA, it's important to center the data by subtracting the mean of each variable from the dataset. This ensures that the first principal component describes the direction of maximum variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp19-final-Q6cd-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The scatterplot represents the projection of the data onto the first two principal components."
+        ],
+        "dependencies": [],
+        "title": "Understanding $U\\Sigma$",
+        "text": "Consider the matrix $U\\Sigma$ from the singular value decomposition. What does the scatterplot of its first two columns represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The mean of the data",
+            "The original data points",
+            "The projection of the data onto the first two principal components",
+            "The scatterplot represents the projection of the data onto the first two principal components.",
+            "The variance of the data"
+        ]
+    },
+    {
+        "id": "a98a015ds100-sp19-final-Q6cd-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Straight Line in Scatterplot",
+        "text": "A scatterplot forming a straight line indicates a strong linear relationship between the two variables plotted. In the context of PCA, this suggests that the first two principal components capture most of the variance in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

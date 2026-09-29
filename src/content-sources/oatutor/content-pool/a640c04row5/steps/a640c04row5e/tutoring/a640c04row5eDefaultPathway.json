@@ -1,0 +1,61 @@
+[
+    {
+        "id": "a640c04row5e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Condition",
+        "text": "To find top performers on EdStem who do not hold discussion sections, consider two conditions: the number of hours spent on EdStem and whether the staff member holds a discussion section.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row5e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a640c04row5e-h1"
+        ],
+        "title": "Checking EdStem Hours",
+        "text": "Focus on the condition related to EdStem hours. You need to check if the staff spent at least $$15$$ hours on EdStem. How would you express this condition using the $$'ed_{hours'}$$ column?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row5e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a640c04row5e-h1"
+        ],
+        "title": "Identifying Non-Discussion Holders",
+        "text": "Consider how to identify staff members who do not hold discussion sections. What value does the $$'disc_{day'}$$ column have for these staff members?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row5e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(performance[\"ed_hours\"]>=15)&(performance[\"disc_day\"].isna())"
+        ],
+        "dependencies": [
+            "a640c04row5e-h2"
+        ],
+        "title": "Combining Conditions",
+        "text": "Combine the conditions for EdStem hours and non-discussion holders. Which logical operator would you use to ensure both conditions are met?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "(performance[\"ed_hours\"]>=15)&(performance[\"disc_day\"].isna())",
+            "(performance[\"ed_hours\"]>=15)&(performance[\"disc_day\"].notna())",
+            "(performance[\"ed_hours\"]>=15)",
+            "(performance[\"disc_day\"].isna())",
+            "(performance[\"ed_hours\"]>15)&(performance[\"disc_day\"]==np.nan)",
+            "(performance[\"ed_hours\"]<=15)&(performance[\"disc_day\"].isna())"
+        ]
+    }
+]

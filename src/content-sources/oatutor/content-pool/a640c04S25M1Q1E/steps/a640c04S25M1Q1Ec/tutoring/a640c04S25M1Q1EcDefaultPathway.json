@@ -1,0 +1,49 @@
+[
+    {
+        "id": "a640c04S25M1Q1Ec-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "Look at the columns in the DataFrame. You need to calculate the total value of the fruit inventory for each store. Which columns would you use to find this value?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04S25M1Q1Ec-h2",
+        "type": "hint",
+        "dependencies": [
+            "a640c04S25M1Q1Ec-h1"
+        ],
+        "title": "Calculating Inventory Value",
+        "text": "To find the total value of the fruit inventory, you need to multiply the price of each fruit by its inventory. This will give you the value for each fruit at a store.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04S25M1Q1Ec-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "price|>inventory"
+        ],
+        "dependencies": [
+            "a640c04S25M1Q1Ec-h2"
+        ],
+        "title": "Choosing the Correct Columns",
+        "text": "Which columns should you use to calculate the total value of the fruit inventory?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "[price, inventory]",
+            "chain",
+            "inventory",
+            "item",
+            "price",
+            "price|>inventory"
+        ]
+    }
+]

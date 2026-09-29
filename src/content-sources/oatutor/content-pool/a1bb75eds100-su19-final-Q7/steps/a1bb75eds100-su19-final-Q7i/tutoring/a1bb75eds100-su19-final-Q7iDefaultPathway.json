@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a1bb75eds100-su19-final-Q7i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Update Rule",
+        "text": "The update rule for logistic regression with L2 regularization is given by:\\n\\n$${\\theta}^{t+1}=\\left(1-2\\lambda\\right) {\\theta}^t+\\alpha \\left(y_i-\\operatorname{\\sigma}\\left(X_i {\\theta}^t\\right)\\right) X_i$$\\n\\nFocus on understanding each component of this equation. What does each term represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q7i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q7i-h1"
+        ],
+        "title": "Exploring the Role of Sigma",
+        "text": "The function sigma is the logistic function, often represented as:\\n\\n$$sigma(z)=\\frac{1}{1+e^{\\left(-z\\right)}}$$\\n\\nConsider how this function behaves for different values of $$z$$. What happens when $$z$$ is very large or very small?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q7i-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q7i-h2"
+        ],
+        "title": "Impact of Theta and $$X_i$$",
+        "text": "In the update rule, the term $$X_i {\\theta}^t$$ is crucial. Think about how this product affects the value of $$\\operatorname{\\sigma}\\left(X_i {\\theta}^t\\right)$$. What happens if $$X_i$$ is large or small?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q7i-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Need Info"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q7i-h3"
+        ],
+        "title": "Choosing $$y_i$$",
+        "text": "Given $${\\theta}^t=0$$ and $$alpha=1$$, which value of $$y_i$$ will maximize $${\\theta}^{t+1}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$1$$",
+            "Tie",
+            "Need Info"
+        ]
+    }
+]

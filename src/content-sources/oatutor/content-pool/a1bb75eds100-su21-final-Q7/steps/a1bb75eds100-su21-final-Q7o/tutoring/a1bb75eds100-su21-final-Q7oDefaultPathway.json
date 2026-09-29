@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1bb75eds100-su21-final-Q7o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logistic Regression",
+        "text": "Logistic regression is a linear classifier. It tries to find a linear boundary between classes. Consider whether a linear boundary can separate the orange and blue points in the image.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7o-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7o-h1"
+        ],
+        "title": "Analyzing the Data Distribution",
+        "text": "Look at the distribution of the orange and blue points. Do they form a pattern that can be separated by a straight line?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7o-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7o-h2"
+        ],
+        "title": "Boundary D Characteristics",
+        "text": "Consider what kind of boundary would be needed to separate the two classes in the image. Is it linear or non-linear?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

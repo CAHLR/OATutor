@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a8c8399ds100-sp19-final-Q3h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "Consider the model equation: $$y_i=\\beta_0+x_i \\beta_1+f{\\left(x_i\\right)} \\beta_2$$. Think about how the function $$f(x)=|x|$$ might affect the values of $$y_i$$. How does the absolute value function transform $$x$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp19-final-Q3h-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The pattern suggests a $$V-shape$$, which is characteristic of an absolute value function."
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp19-final-Q3h-h1"
+        ],
+        "title": "Analyzing the Scatterplot",
+        "text": "Look at the scatterplot. Does the pattern of the data suggest a linear relationship, or does it seem to have a different shape?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Linear",
+            "Parabolic",
+            "Random",
+            "The pattern suggests a $$V-shape$$, which is characteristic of an absolute value function.",
+            "$$V-shape$$"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-sp19-final-Q3h-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-sp19-final-Q3h-h2"
+        ],
+        "title": "Effect of Absolute Value",
+        "text": "The absolute value function, $$f(x)=|x|$$, creates a V-shape in the graph. This means that for both positive and negative $$x$$, the output is positive, which can fit data that has symmetry around the y-axis.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

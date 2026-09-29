@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a72a45crow4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Stratified Sampling",
+        "text": "Stratified sampling involves dividing the population into distinct subgroups and then sampling from each subgroup. In this case, the subgroups are based on high school location. Can you identify how many subgroups are within California?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow4b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a72a45crow4b-h1"
+        ],
+        "title": "Calculating the Total from California",
+        "text": "To find out how many attendees went to high school in California, consider the sum of those from Southern and Northern California. What is the sum of these two groups?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow4b-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.9$$"
+        ],
+        "dependencies": [
+            "a72a45crow4b-h2"
+        ],
+        "title": "Proportion of California Attendees",
+        "text": "What proportion of the total attendees went to high school in California?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0.9$$",
+            "$$0.6$$",
+            "$$0.7$$",
+            "$$0.8$$",
+            "$$0.9$$"
+        ]
+    },
+    {
+        "id": "a72a45crow4b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$90$$"
+        ],
+        "dependencies": [
+            "a72a45crow4b-h3"
+        ],
+        "title": "Sample Calculation",
+        "text": "If 90% of the attendees went to high school in California, how many of the $$100$$ sampled email addresses would you expect to be from California?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$90$$",
+            "$$100$$",
+            "$$50$$",
+            "$$0$$",
+            "$$80$$"
+        ]
+    }
+]

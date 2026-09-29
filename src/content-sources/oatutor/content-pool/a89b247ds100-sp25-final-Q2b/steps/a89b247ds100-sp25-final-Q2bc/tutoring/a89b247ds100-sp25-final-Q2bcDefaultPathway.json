@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a89b247ds100-sp25-final-Q2bc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Complexity",
+        "text": "When you reduce the number of features in a model, you are simplifying it. Think about how this might affect the model's ability to fit the training data versus its ability to generalize to new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp25-final-Q2bc-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Training Error vs. Validation Error",
+        "text": "Consider what happens to the training error and validation error when a model becomes less complex. Why might the training error increase while the validation error decreases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp25-final-Q2bc-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Model Variance",
+        "text": "What happens to the variance of a model when you reduce the number of features?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

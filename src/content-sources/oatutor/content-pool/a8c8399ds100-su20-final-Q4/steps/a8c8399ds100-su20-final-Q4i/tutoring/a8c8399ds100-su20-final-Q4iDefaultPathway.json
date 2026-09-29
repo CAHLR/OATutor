@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a8c8399ds100-su20-final-Q4i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Intercept Term",
+        "text": "The intercept term in a linear regression model represents the expected value of the response variable when all predictors are zero. Consider how centering the data might affect this term.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4i-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The intercept becomes the mean of the response variable."
+        ],
+        "dependencies": [
+            "a8c8399ds100-su20-final-Q4i-h1"
+        ],
+        "title": "Effect of Centering on the Intercept",
+        "text": "When data is mean-centered, what happens to the intercept term in the regression model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The intercept becomes zero.",
+            "The intercept becomes the mean of the response variable.",
+            "The intercept remains unchanged."
+        ]
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4i-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Analyzing the Objective Function",
+        "text": "Look at the objective functions in the images. Notice how the design matrix is used in each case. How does centering affect the calculation of the intercept?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4i-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The mean of the response variable."
+        ],
+        "dependencies": [
+            "a8c8399ds100-su20-final-Q4i-h3"
+        ],
+        "title": "Intercept in Mean-Centered Data",
+        "text": "In the mean-centered version of the data, what does the intercept term represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The mean of the response variable.",
+            "The sum of the response variable.",
+            "The variance of the response variable."
+        ]
+    }
+]

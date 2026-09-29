@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a89b247ds100-fa18-final-Q13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Components",
+        "text": "The expected squared error can be broken down into three main components: variance, bias squared, and irreducible error. Can you identify which part of the equation represents each of these components?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q13a-h1"
+        ],
+        "title": "Focus on Variance",
+        "text": "Consider the term E[(E[f_hat_theta(x)]-f_hat_theta(x))**2]. This term is related to the variability of the model predictions around their expected value. What does this tell you about the model's variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q13a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$${\\sigma}^2$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q13a-h1"
+        ],
+        "title": "Identifying the Irreducible Error",
+        "text": "Which term in the equation represents the irreducible error, which is the noise inherent in the data that cannot be reduced by any model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$${\\sigma}^2$$",
+            "h(x)-E[f_hat_theta(x)]**2",
+            "E[(E[f_hat_theta(x)]-f_hat_theta(x))**2]"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q13a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q13a-h1"
+        ],
+        "title": "Exploring Bias",
+        "text": "The term (h(x)-E[f_hat_theta(x)])**2 represents the bias squared. This term measures the error introduced by approximating a real-world problem, which may be complex, by a simplified model. How does this affect the model's predictions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

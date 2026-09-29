@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a1155e4row2g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding KDE Normalization",
+        "text": "When creating a Kernel Density Estimate (KDE) plot, normalization ensures that the area under the curve sums to $$1$$. This is important for interpreting the plot as a probability density function. If the KDE is not normalized, it might not accurately represent the distribution of the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row2g-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The plot may not accurately represent the probability density."
+        ],
+        "dependencies": [
+            "a1155e4row2g-h1"
+        ],
+        "title": "Effect of Normalization on KDE",
+        "text": "What is the effect of not normalizing the kernel in a KDE plot?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The plot may not accurately represent the probability density.",
+            "The plot will look like a normal distribution.",
+            "The plot will have more peaks."
+        ]
+    },
+    {
+        "id": "a1155e4row2g-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Multimodal Distributions",
+        "text": "A multimodal distribution has multiple peaks. If your KDE plot looks like a normal distribution, it might be due to the choice of bandwidth or kernel, not necessarily the normalization.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row2g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The choice of bandwidth or kernel might be incorrect."
+        ],
+        "dependencies": [
+            "a1155e4row2g-h3"
+        ],
+        "title": "Identifying Issues with KDE",
+        "text": "If a KDE plot of a multimodal distribution looks like a normal distribution, what could be a possible reason?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The choice of bandwidth or kernel might be incorrect.",
+            "The data is actually normally distributed.",
+            "The plot is not normalized."
+        ]
+    }
+]

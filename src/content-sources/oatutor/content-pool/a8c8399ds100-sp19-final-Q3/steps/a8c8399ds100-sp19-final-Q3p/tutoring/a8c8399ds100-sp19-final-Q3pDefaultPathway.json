@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a8c8399ds100-sp19-final-Q3p-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatterplot",
+        "text": "Observe the pattern of the data points in the scatterplot. Notice how the y-values change as $$x$$ increases. This can give you a clue about the type of function that might fit the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp19-final-Q3p-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-sp19-final-Q3p-h1"
+        ],
+        "title": "Consider the Function Options",
+        "text": "Think about how each function option (A, B, C, D) transforms the x-values. Which transformation seems to match the pattern of the y-values in the scatterplot?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp19-final-Q3p-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp19-final-Q3p-h2"
+        ],
+        "title": "Analyzing Absolute Value",
+        "text": "What happens to the y-values when you apply the absolute value function to $$x$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

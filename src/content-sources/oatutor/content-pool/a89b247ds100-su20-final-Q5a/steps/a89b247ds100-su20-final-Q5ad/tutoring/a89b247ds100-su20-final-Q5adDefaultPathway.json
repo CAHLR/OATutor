@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a89b247ds100-su20-final-Q5ad-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Ridge Regression",
+        "text": "Ridge regression is a type of linear regression that includes a regularization term. This term helps prevent overfitting by penalizing large coefficients. Can you think about how the regularization term might affect the estimation of theta?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su20-final-Q5ad-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The Role of Lambda",
+        "text": "The regularization parameter lambda controls the strength of the penalty on large coefficients. A larger lambda means more penalty. How do you think this affects the flexibility of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su20-final-Q5ad-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [],
+        "title": "Is Theta Fixed?",
+        "text": "Consider the nature of theta in the context of ridge regression. Is it a fixed parameter in the true model, or is it something we estimate?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

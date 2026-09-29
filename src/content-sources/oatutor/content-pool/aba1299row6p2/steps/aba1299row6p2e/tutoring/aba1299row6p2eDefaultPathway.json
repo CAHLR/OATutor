@@ -1,0 +1,66 @@
+[
+    {
+        "id": "aba1299row6p2e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding transforms categorical variables into a form that could be provided to ML algorithms to do a better job in prediction. Each category is converted into a binary vector. How might this affect the model's complexity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6p2e-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Model Complexity and Bias",
+        "text": "Adding more features to a model can increase its complexity. Consider how this might affect the bias of the model. Does increasing complexity always increase bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6p2e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The bias usually decreases."
+        ],
+        "dependencies": [
+            "aba1299row6p2e-h2"
+        ],
+        "title": "Effect of Adding Features",
+        "text": "What happens to the bias of a model when you add more features?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The bias usually increases.",
+            "The bias usually decreases.",
+            "The bias remains the same."
+        ]
+    },
+    {
+        "id": "aba1299row6p2e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Adding features can decrease bias but increase variance."
+        ],
+        "dependencies": [
+            "aba1299row6p2e-h3"
+        ],
+        "title": "Understanding Bias-Variance Tradeoff",
+        "text": "How does the bias-variance tradeoff relate to adding features to a model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Adding features can decrease bias but increase variance.",
+            "Adding features can increase both bias and variance.",
+            "Adding features can decrease both bias and variance."
+        ]
+    }
+]

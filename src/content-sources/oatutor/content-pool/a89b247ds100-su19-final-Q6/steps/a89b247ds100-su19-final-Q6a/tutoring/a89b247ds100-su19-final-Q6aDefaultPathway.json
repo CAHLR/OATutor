@@ -1,0 +1,35 @@
+[
+    {
+        "id": "a89b247ds100-su19-final-Q6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Theta Zero",
+        "text": "Theta zero $$\\theta_0$$ represents the intercept of the model. It is the predicted total when all other variables are zero. Consider the data and the visualizations to determine if this value is positive, negative, or zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Positive"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6a-h1"
+        ],
+        "title": "Interpreting the Intercept",
+        "text": "Based on the data, what can you infer about the intercept $$\\theta_0$$ of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Positive",
+            "Negative",
+            "Exactly $$0$$",
+            "Not enough info"
+        ]
+    }
+]

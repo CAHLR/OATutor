@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a1bb75eds100-sp21-final-Q9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logistic Regression Output",
+        "text": "In logistic regression, the output of the model is a probability. The sigmoid function, denoted as sigma, is used to map any real-valued number into the range of $$0$$ to $$1$$, which represents this probability.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q9a-h1"
+        ],
+        "title": "Interpreting the Sigmoid Function",
+        "text": "The sigmoid function, sigma, is defined as $$\\frac{1}{1+e^{\\left(-z\\right)}}$$, where $$z$$ is the input to the function. In the context of logistic regression, $$z$$ is typically the dot product of the feature vector and the parameter vector, theta.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q9a-h2"
+        ],
+        "title": "Calculating Probability of Sadness",
+        "text": "To find the probability of a tweet being sad, you need to consider the complement of the probability of it being happy. If $$\\operatorname{\\sigma}\\left({\\theta}^T x_{test}\\right)$$ gives the probability of happiness, what would represent the probability of sadness?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q9a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1-\\operatorname{\\sigma}\\left({\\theta}^T x_{test}\\right)$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q9a-h3"
+        ],
+        "title": "Choosing the Correct Expression",
+        "text": "Which expression correctly represents the probability of a tweet being sad given the feature vector $$x_{test}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\operatorname{\\sigma}\\left({\\theta}^T x_{test}\\right)$$",
+            "$$1-\\operatorname{\\sigma}\\left({\\theta}^T x_{test}\\right)$$",
+            "$$\\operatorname{\\sigma}\\left(1-{\\theta}^T x_{test}\\right)$$",
+            "1{sigma(theta**T*x_test)>0.5}",
+            "1{sigma(theta**T*x_test)<0.5}"
+        ]
+    }
+]

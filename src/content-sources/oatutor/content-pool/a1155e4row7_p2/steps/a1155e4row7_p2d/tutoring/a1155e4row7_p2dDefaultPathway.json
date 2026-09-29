@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a1155e4row7_p2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Unimodal Distributions",
+        "text": "A distribution is considered unimodal if it has a single peak. Look at the histogram and identify how many peaks or high points it has. This will help you determine if the distribution is unimodal.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row7_p2d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a1155e4row7_p2d-h1"
+        ],
+        "title": "Counting Peaks",
+        "text": "How many peaks do you observe in the histogram?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$2$$",
+            "$$3$$",
+            "$$4$$"
+        ]
+    },
+    {
+        "id": "a1155e4row7_p2d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row7_p2d-h2"
+        ],
+        "title": "Analyzing the KDE Plot",
+        "text": "The KDE plot provides a smoothed estimate of the distribution. Compare the KDE line to the histogram to see if it supports the same number of peaks.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

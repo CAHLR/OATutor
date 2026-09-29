@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1155e4row1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Data",
+        "text": "Look at the data provided. You have two columns: temperature and $$workout_{time}$$. Think about what kind of plot would best show the distribution of $$workout_{time}$$ values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row1b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row1b-h1"
+        ],
+        "title": "Choosing the Right Plot",
+        "text": "A scatter plot is typically used to show relationships between two variables. Consider if this is the best choice for showing the distribution of a single variable like $$workout_{time}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row1b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a1155e4row1b-h2"
+        ],
+        "title": "Evaluating Plot Types",
+        "text": "Is a scatter plot appropriate for visualizing the distribution of a single variable?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

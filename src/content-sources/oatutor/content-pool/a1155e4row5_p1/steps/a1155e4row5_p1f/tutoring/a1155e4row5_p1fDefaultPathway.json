@@ -1,0 +1,33 @@
+[
+    {
+        "id": "a1155e4row5_p1f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding KDE Plot",
+        "text": "A KDE plot, or Kernel Density Estimate plot, is useful for visualizing the distribution of a continuous variable. It smooths the data points to show the probability density function of the variable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p1f-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1155e4row5_p1f-h1"
+        ],
+        "title": "Choosing the Right Plot",
+        "text": "Which type of plot is suitable for visualizing the distribution of continuous data like $$ed_{hours}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

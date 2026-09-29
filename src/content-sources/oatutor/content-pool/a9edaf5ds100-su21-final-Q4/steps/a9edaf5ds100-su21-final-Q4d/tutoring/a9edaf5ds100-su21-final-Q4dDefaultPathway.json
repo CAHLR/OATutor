@@ -1,0 +1,33 @@
+[
+    {
+        "id": "a9edaf5ds100-su21-final-Q4d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Bias",
+        "text": "Model bias refers to the error introduced by approximating a real-world problem, which may be complex, by a simplified model. Look at how the predictions deviate from the true observed values. Are the predictions consistently off in one direction?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su21-final-Q4d-h1"
+        ],
+        "title": "Analyzing the Plot",
+        "text": "Observe the dotted line representing the average prediction. Does it closely follow the trend of the observed data points?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

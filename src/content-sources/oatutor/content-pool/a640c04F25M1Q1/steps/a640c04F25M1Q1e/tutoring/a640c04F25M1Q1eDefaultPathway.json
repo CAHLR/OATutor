@@ -1,0 +1,62 @@
+[
+    {
+        "id": "a640c04F25M1Q1e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding $$sort_{values}$$",
+        "text": "The $$`sort_{values}`$$ function is used to sort the DataFrame based on the values of a specified column. In this case, it's sorting by column 'a'. What does $$`ascending=False`$$ imply about the order of sorting?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04F25M1Q1e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a640c04F25M1Q1e-h1"
+        ],
+        "title": "Using head(1)",
+        "text": "The `head(1)` function returns the first row of the DataFrame after sorting. Consider what the first row would be after sorting column 'a' in descending order.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04F25M1Q1e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a640c04F25M1Q1e-h2"
+        ],
+        "title": "Accessing column 'b'",
+        "text": "After sorting and using `head(1)`, you access column 'b'. Which value from column 'b' corresponds to the first row of the sorted DataFrame?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04F25M1Q1e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [
+            "a640c04F25M1Q1e-h3"
+        ],
+        "title": "Final Step: iloc[0]",
+        "text": "Now, use `iloc[0]` to get the first value of the Series obtained from the previous step. What is this value?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$5$$",
+            "$$4$$",
+            "$$6$$",
+            "$$3$$",
+            "$$8$$",
+            "$$7$$",
+            "NA"
+        ]
+    }
+]

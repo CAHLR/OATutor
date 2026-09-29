@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-final-Q5o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Log-Odds",
+        "text": "The log-odds, or the logarithm of the odds ratio, is a way to express the relationship between the probability of an event occurring and not occurring. In logistic regression, this is expressed as log(P(Y=1|x)/P(Y=0|x)). Consider how this expression relates to the linear combination of features and coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5o-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5o-h1"
+        ],
+        "title": "Exploring Linearity",
+        "text": "If we assume that the log-odds is linear, what does this imply about the relationship between the features and the coefficients in the logistic regression model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5o-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5o-h2"
+        ],
+        "title": "Connecting Log-Odds and Linear Models",
+        "text": "In logistic regression, the log-odds is modeled as a linear function of the input features. This means that the expression $$x^T \\beta$$ is linear. Think about how this linearity affects the overall model and its predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

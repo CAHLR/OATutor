@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a89b247ds100-fa21-mt-Q2i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "When a model is overfitting, it means it's too complex and captures noise in the training data. Think about how you can simplify the model or make it less sensitive to the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2i-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Role of Lambda in Ridge Regression",
+        "text": "In ridge regression, the parameter lambda controls the strength of the penalty on large coefficients. Consider how changing lambda might affect the model's complexity and variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2i-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2i-h2"
+        ],
+        "title": "Effect of Increasing Lambda",
+        "text": "What happens to the model's variance if you increase lambda in ridge regression?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It decreases",
+            "It increases",
+            "It stays the same",
+            "TRUE"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2i-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Balancing Bias and Variance",
+        "text": "Reducing variance often involves increasing bias. Think about how you can achieve a balance between bias and variance to improve model performance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2i-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2i-h4"
+        ],
+        "title": "Strategies to Reduce Variance",
+        "text": "Which of the following strategies can help reduce model variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Decrease model complexity",
+            "Increase lambda",
+            "TRUE",
+            "Use more training data"
+        ]
+    }
+]

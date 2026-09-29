@@ -1,0 +1,43 @@
+[
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6w-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LASSO Regularization",
+        "text": "LASSO regularization adds a penalty equal to the absolute value of the magnitude of coefficients. This can lead to some coefficients being exactly zero, effectively selecting a simpler model. How might this affect the model's performance on unseen data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6w-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Impact on Model Complexity",
+        "text": "Consider how reducing the number of features by setting some coefficients to zero might influence the model's complexity. What are the potential benefits and drawbacks of a simpler model when it comes to generalizing to new data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6w-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Effect on Test MSE",
+        "text": "When LASSO regularization is applied, which of the following is a possible effect on the MSE of held-out test data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Both",
+            "Decrease",
+            "Increase",
+            "TRUE"
+        ]
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2dd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L2 Regularization",
+        "text": "L2 regularization, also known as Ridge regression, adds a penalty equal to the square of the magnitude of coefficients to the loss function. This helps in reducing overfitting and ensures that the solution is unique.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2dd-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2dd-h1"
+        ],
+        "title": "Uniqueness of the Solution",
+        "text": "In the context of linear regression, when you apply L2 regularization, the cost function becomes strictly convex. A strictly convex function has a unique minimum, which means the solution is guaranteed to be unique.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2dd-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A strictly convex function has only one global minimum."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2dd-h2"
+        ],
+        "title": "Convexity and Uniqueness",
+        "text": "Why does a strictly convex function guarantee a unique solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A strictly convex function has only one global minimum.",
+            "It has multiple minima",
+            "It has no minima",
+            "It has only one global minimum"
+        ]
+    }
+]

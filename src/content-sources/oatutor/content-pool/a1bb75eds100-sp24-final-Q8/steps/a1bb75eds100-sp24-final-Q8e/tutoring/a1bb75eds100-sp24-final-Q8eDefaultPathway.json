@@ -1,0 +1,92 @@
+[
+    {
+        "id": "a1bb75eds100-sp24-final-Q8e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Recall",
+        "text": "Recall is the ratio of true positive predictions to the total actual positives. To calculate it, identify the true positives and the total number of positive labels.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp24-final-Q8e-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculating Accuracy",
+        "text": "Accuracy is the ratio of correct predictions to the total number of predictions. Consider both true positives and true negatives when calculating accuracy.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp24-final-Q8e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0.7, 0.8$$"
+        ],
+        "dependencies": [],
+        "title": "Threshold and Predictions",
+        "text": "Which predicted probabilities should be considered positive if the threshold is set at $$0.7$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0.3, 0.8$$",
+            "$$0.2, 0.3$$",
+            "$$0.7, 0.8$$",
+            "$$0.4, 0.7$$",
+            "$$0.8, 1$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp24-final-Q8e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp24-final-Q8e-h3"
+        ],
+        "title": "Maximizing Recall",
+        "text": "What is the recall if you classify all predictions with a probability greater than $$0.7$$ as positive?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0.5$$",
+            "$$0.6$$",
+            "$$0.8$$",
+            "$$1$$",
+            "$$0.4$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp24-final-Q8e-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0.8$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp24-final-Q8e-h4"
+        ],
+        "title": "Maintaining Accuracy",
+        "text": "What is the accuracy if you classify predictions with a probability greater than $$0.7$$ as positive?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0.6$$",
+            "$$0.7$$",
+            "$$0.8$$",
+            "$$0.9$$",
+            "$$1$$"
+        ]
+    }
+]

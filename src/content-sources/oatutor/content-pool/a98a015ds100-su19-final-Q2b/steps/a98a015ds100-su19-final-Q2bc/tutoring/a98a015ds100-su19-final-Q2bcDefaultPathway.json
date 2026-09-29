@@ -1,0 +1,44 @@
+[
+    {
+        "id": "a98a015ds100-su19-final-Q2bc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatter Plot",
+        "text": "Look at the scatter plot on the left. Notice the relationship between 'mpg' and 'age'. How does this relationship help you determine the axis labels for the other plots?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su19-final-Q2bc-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Analyzing Plot (c)",
+        "text": "Plot (c) is a histogram. Consider the distribution of values. Does it resemble the distribution of 'age' or 'mpg' from the scatter plot?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su19-final-Q2bc-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Neither"
+        ],
+        "dependencies": [
+            "a98a015ds100-su19-final-Q2bc-h2"
+        ],
+        "title": "Choosing the Correct Label for Plot (c)",
+        "text": "Based on the distribution in plot (c), which label fits best?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "age",
+            "mpg",
+            "Neither"
+        ]
+    }
+]

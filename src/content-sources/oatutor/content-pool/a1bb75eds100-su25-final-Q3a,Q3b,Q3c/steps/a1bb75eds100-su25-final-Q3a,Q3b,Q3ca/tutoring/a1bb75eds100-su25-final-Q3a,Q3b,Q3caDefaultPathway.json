@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3ca-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Invertibility",
+        "text": "For a matrix to be invertible, it must be square and have full rank. Consider what this means for the design matrix X in the context of logistic regression.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3ca-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3ca-h1"
+        ],
+        "title": "Properties of $$X^{TX}$$",
+        "text": "The matrix $$X^{TX}$$ is square if X has more rows than columns. Think about how this affects the invertibility of $$X^{TX}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3ca-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "X must have full column rank."
+        ],
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3ca-h2"
+        ],
+        "title": "Checking Matrix Dimensions",
+        "text": "What must be true about the dimensions of X for $$X^{TX}$$ to be invertible?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "X must have full column rank.",
+            "X must have full row rank.",
+            "X must be a square matrix.",
+            "X must be a diagonal matrix."
+        ]
+    }
+]

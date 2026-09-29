@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a1155e4row6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding KDE Bandwidth",
+        "text": "The bandwidth in a KDE plot affects the smoothness of the density estimate. A smaller bandwidth results in a more wiggly plot, while a larger bandwidth results in a smoother plot. Look at the plots and compare their smoothness to determine the bandwidth values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row6b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(x) is $$0.1$$"
+        ],
+        "dependencies": [
+            "a1155e4row6b-h1"
+        ],
+        "title": "Identifying Bandwidth for Plot $$1$$",
+        "text": "For the first plot, which bandwidth value would result in a more detailed, wiggly plot?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "(x) is $$0.1$$",
+            "(x) is $$0.5$$",
+            "(x) is $$1.5$$"
+        ]
+    },
+    {
+        "id": "a1155e4row6b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(y) is $$0.5$$"
+        ],
+        "dependencies": [
+            "a1155e4row6b-h1"
+        ],
+        "title": "Identifying Bandwidth for Plot $$2$$",
+        "text": "For the second plot, which bandwidth value would result in a moderately smooth plot?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "(y) is $$0.1$$",
+            "(y) is $$0.5$$",
+            "(y) is $$1.5$$"
+        ]
+    },
+    {
+        "id": "a1155e4row6b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(z) is $$1.5$$"
+        ],
+        "dependencies": [
+            "a1155e4row6b-h1"
+        ],
+        "title": "Identifying Bandwidth for Plot $$3$$",
+        "text": "For the third plot, which bandwidth value would result in the smoothest plot?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "(z) is $$0.1$$",
+            "(z) is $$0.5$$",
+            "(z) is $$1.5$$"
+        ]
+    }
+]

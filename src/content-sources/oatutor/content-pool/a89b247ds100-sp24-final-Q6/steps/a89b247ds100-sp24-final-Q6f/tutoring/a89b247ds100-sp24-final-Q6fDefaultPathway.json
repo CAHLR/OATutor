@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a89b247ds100-sp24-final-Q6f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Risk",
+        "text": "Model risk is the sum of model variance and observational variance. Can you calculate the model risk for the new model using the given variances?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp24-final-Q6f-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Model Variance and Features",
+        "text": "Adding more features to a model can affect its variance. Think about how increasing the complexity of a model might change its variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp24-final-Q6f-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$13$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp24-final-Q6f-h1"
+        ],
+        "title": "Calculate New Model Risk",
+        "text": "Given the model variance of $$10$$ and observational variance of $$3$$, what is the new model risk?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$13$$",
+            "$$13$$",
+            "$$15$$",
+            "$$17$$",
+            "$$20$$"
+        ]
+    },
+    {
+        "id": "a89b247ds100-sp24-final-Q6f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The model becomes more complex, capturing more noise."
+        ],
+        "dependencies": [
+            "a89b247ds100-sp24-final-Q6f-h2"
+        ],
+        "title": "Impact of Features on Variance",
+        "text": "If adding features increases the model variance, which of the following could be a reason?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The model becomes more complex, capturing more noise.",
+            "The model becomes simpler, reducing noise.",
+            "The model variance is unaffected by features."
+        ]
+    }
+]

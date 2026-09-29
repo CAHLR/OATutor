@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a72a45crow10_p1j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Sampling Scheme",
+        "text": "Think about how many students are selected from each group of seven. How does this relate to the total number of students?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow10_p1j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a72a45crow10_p1j-h1"
+        ],
+        "title": "Breaking Down the Probability",
+        "text": "Consider the probability of selecting one student from a group of seven. What fraction represents this selection?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow10_p1j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a72a45crow10_p1j-h2"
+        ],
+        "title": "Calculating the Probability",
+        "text": "If you have $$35$$ students and you select $$1$$ student from every $$7$$, how many students will be in your sample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$5$$",
+            "$$7$$",
+            "$$35$$",
+            "$$1$$"
+        ]
+    },
+    {
+        "id": "a72a45crow10_p1j-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{1}{7}$$"
+        ],
+        "dependencies": [
+            "a72a45crow10_p1j-h3"
+        ],
+        "title": "Final Probability Calculation",
+        "text": "What is the probability of a student being selected if $$5$$ students are chosen from a total of 35?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{1}{7}$$",
+            "$$\\frac{1}{5}$$",
+            "$$\\frac{1}{35}$$",
+            "$$\\frac{7}{35}$$",
+            "$$\\frac{1}{2}$$"
+        ]
+    }
+]

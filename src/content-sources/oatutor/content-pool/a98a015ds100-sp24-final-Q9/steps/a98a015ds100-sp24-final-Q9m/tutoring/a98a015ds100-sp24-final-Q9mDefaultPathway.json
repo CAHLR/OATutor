@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a98a015ds100-sp24-final-Q9m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Singular Value Decomposition",
+        "text": "When performing Singular Value Decomposition (SVD) on a matrix, the diagonal matrix \\(S\\) contains the singular values of the matrix \\(X\\). These singular values are related to the eigenvalues of \\(X**TX\\). What can you infer about the singular values if the rank of \\(X\\) is less than \\(d\\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9m-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9m-h1"
+        ],
+        "title": "Rank and Singular Values",
+        "text": "The rank of a matrix is the number of non-zero singular values it has. If \\(rank(X)<d\\), what does this tell you about the number of non-zero singular values in \\(S\\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9m-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9m-h2"
+        ],
+        "title": "Analyzing the Diagonal of \\(S\\)",
+        "text": "Given that \\(rank(X)<d\\), which of the following must be true about the diagonal of \\(S\\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "All values on the diagonal of S are $$non-zero$$.",
+            "TRUE",
+            "The diagonal of S is irrelevant to the rank of X.",
+            "There must be at least one $$0$$ along the diagonal of S."
+        ]
+    }
+]

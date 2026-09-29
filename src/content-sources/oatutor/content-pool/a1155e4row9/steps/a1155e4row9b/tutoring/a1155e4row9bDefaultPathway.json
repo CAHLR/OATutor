@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a1155e4row9b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Granularity",
+        "text": "Granularity refers to the level of detail represented by each row in a dataset. Consider what each row in the table represents in terms of the data provided.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row9b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Each row represents one $$\\frac{post}{picture}$$."
+        ],
+        "dependencies": [
+            "a1155e4row9b-h1"
+        ],
+        "title": "Identifying the Key Element",
+        "text": "Look at the columns: $$post_{id}$$, date, likes, and $$day_{of,week}$$. What do these columns collectively describe?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Each row represents one $$\\frac{post}{picture}$$.",
+            "Each row represents one day of the week.",
+            "Each row represents one number of likes.",
+            "Each row represents one user.",
+            "Each row represents one month of posts."
+        ]
+    },
+    {
+        "id": "a1155e4row9b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row9b-h2"
+        ],
+        "title": "Analyzing the Data",
+        "text": "Notice that each row has a unique $$post_{id}$$ and date. This suggests that each row corresponds to a specific event or item. What could that be?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

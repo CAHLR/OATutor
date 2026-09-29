@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a1155e4row5_p1d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Contour Plots",
+        "text": "Contour plots are typically used to represent three-dimensional data in two dimensions, showing levels of a third variable. Consider whether this applies to visualizing a single variable like $$ed_{hours}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p1d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a1155e4row5_p1d-h1"
+        ],
+        "title": "Choosing the Right Plot",
+        "text": "Which type of plot is best for visualizing the distribution of a single variable like $$ed_{hours}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Boxplot",
+            "Contourplot",
+            "FALSE",
+            "Histogram",
+            "Scatterplot"
+        ]
+    }
+]

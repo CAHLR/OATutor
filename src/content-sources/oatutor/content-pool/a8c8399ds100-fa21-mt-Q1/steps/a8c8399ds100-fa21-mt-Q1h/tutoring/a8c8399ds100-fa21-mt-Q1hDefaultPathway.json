@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding N-grams",
+        "text": "Think about how N-grams work. They capture sequences of N consecutive elements. How might this be problematic when dealing with DNA sequences?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-fa21-mt-Q1h-h1"
+        ],
+        "title": "Non-consecutive Segments",
+        "text": "Consider how N-grams might include segments that aren't biologically meaningful. What happens when you have non-consecutive letters being treated as a sequence?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1h-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-fa21-mt-Q1h-h1"
+        ],
+        "title": "Meaningless Segments",
+        "text": "In DNA, codons are groups of $$3$$ letters. What happens if you capture segments of $$1$$ or $$2$$ letters? Do they have any biological significance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1h-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Overlapping segments would be included, meaning ATGCA is broken up into $$3$$ overlapping words."
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa21-mt-Q1h-h1"
+        ],
+        "title": "Overlapping Segments",
+        "text": "If you have a DNA sequence like ATGCA, how would N-grams break it down?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Overlapping segments would be included, meaning ATGCA is broken up into $$3$$ overlapping words.",
+            "Segments of $$non-consecutive$$ letters would be included, meaning ATGCA could suggest the word AGA.",
+            "Segments with $$1$$ or $$2$$ letters have no meaning, which $$N-gram$$ would capture as 'words'.",
+            "DNA does not 'wrap around', but $$N-gram$$ would capture $$'wrap-around'$$ segments, like TGG from GGTT."
+        ]
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1h-h5",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-fa21-mt-Q1h-h1"
+        ],
+        "title": "Wrap-around Segments",
+        "text": "DNA sequences are linear and do not wrap around. How might N-grams mistakenly capture sequences that don't exist in the actual DNA?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

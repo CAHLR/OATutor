@@ -1,0 +1,62 @@
+[
+    {
+        "id": "aba1299row9b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "Consider how the model function \\( \\hat{y}_i=f_{\\theta}(x_i)=\\theta e**{\\sqrt{|x_i|}} \\) behaves. What happens to \\( \\hat{y}_i \\) when \\( $$x_i$$ \\) is negative or positive? Think about the role of the absolute value and the exponential function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row9b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Ordinary Least Squares (OLS)",
+        "text": "OLS is a method used to estimate the parameters in a linear regression model. Consider how the model \\( \\hat{y}_i=f_{\\theta}(x_i)=\\theta e**{\\sqrt{|x_i|}} \\) might be linear in terms of \\( $$\\theta$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row9b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The sum of residuals of our model will always be $$0$$."
+        ],
+        "dependencies": [],
+        "title": "Exploring Residuals",
+        "text": "Which of the following is true about the sum of residuals in a model estimated using OLS?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The sum of residuals of our model will always be $$0$$.",
+            "The sum of residuals of our model will always be positive.",
+            "The sum of residuals of our model will always be negative."
+        ]
+    },
+    {
+        "id": "aba1299row9b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The predictions of our model can never be negative."
+        ],
+        "dependencies": [],
+        "title": "Model Predictions",
+        "text": "Consider the expression \\( \\hat{y}_i=\\theta e**{\\sqrt{|x_i|}} \\). Which of the following statements about the predictions is true?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The predictions of our model can never be negative.",
+            "The predictions of our model can be negative.",
+            "The predictions of our model are always positive."
+        ]
+    }
+]

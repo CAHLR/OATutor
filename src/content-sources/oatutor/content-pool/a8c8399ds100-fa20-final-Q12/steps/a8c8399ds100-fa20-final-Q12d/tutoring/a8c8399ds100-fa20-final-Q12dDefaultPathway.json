@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a8c8399ds100-fa20-final-Q12d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Independence",
+        "text": "To determine if a set of columns is linearly independent, consider if any column can be expressed as a linear combination of the others. If not, they are independent.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Span of Columns",
+        "text": "The span of a set of columns is the set of all possible linear combinations of those columns. If the span of one set of columns equals the span of another, they cover the same space.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa20-final-Q12d-h1"
+        ],
+        "title": "Checking Linear Independence",
+        "text": "Consider the columns height (cm), weight (lb), and bmi. Can any of these columns be expressed as a combination of the others?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa20-final-Q12d-h2"
+        ],
+        "title": "Comparing Spans",
+        "text": "Do the columns height (cm), weight (lb), and bmi span the same space as the columns in the humans dataset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

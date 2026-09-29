@@ -1,0 +1,44 @@
+[
+    {
+        "id": "abf3684ds100-sp25-final-Q2e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L1 Regularization",
+        "text": "L1 regularization, also known as Lasso, adds a penalty equal to the absolute value of the magnitude of coefficients. This can lead to some coefficients being exactly zero, effectively selecting a simpler model. Consider how this might affect the uniqueness of the solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2e-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring the Role of Features and Observations",
+        "text": "In your model, you have $$30$$ observations and $$29$$ features. Think about the relationship between the number of observations and the number of features. How might this impact the uniqueness of the solution when regularization is applied?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "L1 regularization can lead to multiple solutions when the number of features is close to the number of observations."
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2e-h1"
+        ],
+        "title": "Considering the Impact of Regularization",
+        "text": "Which of the following statements is true about L1 regularization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "L1 regularization always leads to a unique solution.",
+            "L1 regularization can lead to multiple solutions when the number of features is close to the number of observations.",
+            "L1 regularization has no impact on the uniqueness of the solution."
+        ]
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "aba1299row4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Residuals",
+        "text": "Residuals are the differences between the observed values and the values predicted by the model. In a well-fitted linear regression model, these residuals have some interesting properties.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row4b-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row4b-h1"
+        ],
+        "title": "Sum of Residuals in OLS",
+        "text": "One key property of the Ordinary Least Squares (OLS) regression is that the sum of the residuals is always zero. This is because the OLS method minimizes the sum of squared residuals, ensuring that the average of the residuals is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row4b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "aba1299row4b-h2"
+        ],
+        "title": "Checking the Property",
+        "text": "Given the property of OLS, which of the following statements is true about the sum of residuals?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

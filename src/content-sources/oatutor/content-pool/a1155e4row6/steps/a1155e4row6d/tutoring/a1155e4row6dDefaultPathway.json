@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a1155e4row6d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Missing Values",
+        "text": "To handle missing values in a DataFrame, you can use a method that fills them with a specified value. Think about how you can replace missing values with zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row6d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "fillna(0)"
+        ],
+        "dependencies": [
+            "a1155e4row6d-h1"
+        ],
+        "title": "Choosing the Right Method",
+        "text": "Which method would you use to fill missing values in a DataFrame with zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\operatorname{fill_{empty}}\\left(0\\right)$$",
+            "fillna(0)",
+            "$$\\operatorname{value_{counts}}\\left('name'\\right)$$",
+            "head(5)",
+            "astype('str')"
+        ]
+    }
+]

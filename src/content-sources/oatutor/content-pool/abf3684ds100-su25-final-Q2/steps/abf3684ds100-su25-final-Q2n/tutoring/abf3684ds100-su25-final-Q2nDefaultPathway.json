@@ -1,0 +1,48 @@
+[
+    {
+        "id": "abf3684ds100-su25-final-Q2n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting in models. It adds a penalty to the loss function to discourage complex models. Can you think of how this might affect the bias and variance of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2n-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2n-h1"
+        ],
+        "title": "L1 Regularization and Bias",
+        "text": "L1 regularization, also known as Lasso, tends to shrink some coefficients to zero, effectively selecting a simpler model. How might this simplification impact the model's bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2n-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2n-h2"
+        ],
+        "title": "Effect of L1 Regularization",
+        "text": "Which of the following statements is true about L1 regularization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "L1 regularization decreases model complexity",
+            "L1 regularization has no effect on model complexity",
+            "L1 regularization increases model bias",
+            "L1 regularization increases model complexity",
+            "TRUE"
+        ]
+    }
+]

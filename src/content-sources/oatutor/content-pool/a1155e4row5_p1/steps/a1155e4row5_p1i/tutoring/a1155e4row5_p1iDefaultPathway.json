@@ -1,0 +1,33 @@
+[
+    {
+        "id": "a1155e4row5_p1i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Hexplot",
+        "text": "A hexplot is useful for visualizing the relationship between two continuous variables. It divides the plot area into hexagonal bins and counts the number of observations in each bin. This can help identify patterns or correlations between the variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p1i-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1155e4row5_p1i-h1"
+        ],
+        "title": "Choosing the Right Plot",
+        "text": "Which type of plot is suitable for visualizing the relationship between two continuous variables like $$oh_{tickets}$$ and $$ed_{hours}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

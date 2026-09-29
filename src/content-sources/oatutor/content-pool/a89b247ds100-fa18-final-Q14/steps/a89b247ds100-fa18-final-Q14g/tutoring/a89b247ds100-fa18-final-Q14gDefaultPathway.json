@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a89b247ds100-fa18-final-Q14g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plot",
+        "text": "Notice how the plot shows a U-shape. This suggests that as the value of $$d$$ increases, the y-axis value decreases to a minimum and then increases again. Think about what kind of metric in machine learning might behave this way as complexity increases.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q14g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q14g-h1"
+        ],
+        "title": "Bias and Variance",
+        "text": "Consider how bias and variance behave as model complexity changes. Bias typically decreases with more complexity, while variance increases. How might this relate to the U-shape of the plot?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q14g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q14g-h2"
+        ],
+        "title": "Possible Y-Axis Labels",
+        "text": "Which of the following could the y-axis represent based on the U-shape of the plot?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Bias",
+            "Complexity",
+            "Error",
+            "FALSE",
+            "Variance"
+        ]
+    }
+]

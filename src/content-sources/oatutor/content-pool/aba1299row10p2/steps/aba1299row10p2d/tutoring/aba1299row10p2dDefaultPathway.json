@@ -1,0 +1,105 @@
+[
+    {
+        "id": "aba1299row10p2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Prediction Vector",
+        "text": "The prediction vector \\( \\hat{Y} \\) is the result of multiplying the design matrix \\( X \\) by the parameter vector \\( \\hat{\\theta} \\). Think about the dimensions of \\( X \\) and \\( \\hat{\\theta} \\) to determine the shape of \\( \\hat{Y} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10p2d-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row10p2d-h1"
+        ],
+        "title": "Dimensions of the Design Matrix",
+        "text": "The design matrix \\( X \\) includes an intercept and has $$400$$ flight records. What does this tell you about the number of rows in \\( X \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10p2d-h3",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row10p2d-h2"
+        ],
+        "title": "Dimensions of the Parameter Vector",
+        "text": "The parameter vector \\( \\hat{\\theta} \\) corresponds to the number of columns in \\( X \\), which includes the intercept. How many parameters are there in total?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10p2d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "400\u00d710"
+        ],
+        "dependencies": [
+            "aba1299row10p2d-h3"
+        ],
+        "title": "Shape of the Design Matrix",
+        "text": "What is the shape of the design matrix \\( X \\) if it includes an intercept and $$9$$ features?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "400\u00d710",
+            ">10\u00d7400",
+            ">400\u00d79",
+            ">9\u00d7400"
+        ]
+    },
+    {
+        "id": "aba1299row10p2d-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "10\u00d71"
+        ],
+        "dependencies": [
+            "aba1299row10p2d-h4"
+        ],
+        "title": "Shape of the Parameter Vector",
+        "text": "What is the shape of the parameter vector \\( \\hat{\\theta} \\) if it corresponds to the number of columns in \\( X \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "10\u00d71",
+            ">1\u00d710",
+            ">9\u00d71",
+            ">1\u00d79"
+        ]
+    },
+    {
+        "id": "aba1299row10p2d-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "400\u00d71"
+        ],
+        "dependencies": [
+            "aba1299row10p2d-h5"
+        ],
+        "title": "Calculating the Shape of \\( \\hat{Y} \\)",
+        "text": "Given the shapes of \\( X \\) and \\( \\hat{\\theta} \\), what is the resulting shape of \\( \\hat{Y} \\) when you multiply them?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "400\u00d71",
+            ">1\u00d7400",
+            ">10\u00d71",
+            ">1\u00d710"
+        ]
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a1155e4row10_p2l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Box Plots",
+        "text": "A box plot provides a visual summary of data through its quartiles and median. It shows the spread and skewness of the data, but not the mode.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2l-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Median"
+        ],
+        "dependencies": [
+            "a1155e4row10_p2l-h1"
+        ],
+        "title": "Interpreting Box Plot Features",
+        "text": "Which of the following can you determine from a box plot?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Mean",
+            "Median",
+            "Mode",
+            "Range"
+        ]
+    },
+    {
+        "id": "a1155e4row10_p2l-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row10_p2l-h1"
+        ],
+        "title": "Mode in Data Visualization",
+        "text": "The mode is the most frequently occurring value in a dataset. Consider how this might be represented in a box plot, if at all.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2l-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a1155e4row10_p2l-h3"
+        ],
+        "title": "Box Plot Limitations",
+        "text": "Can a box plot show the most frequently occurring value in a dataset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a1bb75eds100-su19-final-Q7c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Expression",
+        "text": "Let's break down the expression: $$y_i-\\operatorname{\\sigma}\\left(X_i {\\theta}^t\\right)$$. Think about what each part represents. $$y_i$$ is a single outcome, and $$\\operatorname{\\sigma}\\left(X_i {\\theta}^t\\right)$$ is the predicted probability for that outcome. What happens when you subtract one from the other?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q7c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q7c-h1"
+        ],
+        "title": "Dimensions of Each Component",
+        "text": "Consider the dimensions of each component in the expression $$y_i-\\operatorname{\\sigma}\\left(X_i {\\theta}^t\\right)$$. $$y_i$$ is a scalar since it's a single outcome. What about $$\\operatorname{\\sigma}\\left(X_i {\\theta}^t\\right)$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q7c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Scalar"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q7c-h2"
+        ],
+        "title": "Identify the Dimension",
+        "text": "What is the dimension of $$\\operatorname{\\sigma}\\left(X_i {\\theta}^t\\right)$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Scalar",
+            "Length $$n$$ vector",
+            "Length $$p$$ vector",
+            "$$n$$ by $$p$$ matrix"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q7c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q7c-h3"
+        ],
+        "title": "Final Dimension",
+        "text": "Now that you know the dimensions of $$y_i$$ and $$\\operatorname{\\sigma}\\left(X_i {\\theta}^t\\right)$$, what is the dimension of their difference?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

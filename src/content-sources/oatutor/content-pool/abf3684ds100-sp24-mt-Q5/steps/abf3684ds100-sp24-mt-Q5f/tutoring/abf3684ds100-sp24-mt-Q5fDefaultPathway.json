@@ -1,0 +1,46 @@
+[
+    {
+        "id": "abf3684ds100-sp24-mt-Q5f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Mode",
+        "text": "The mode of a dataset is the value that appears most frequently. Think about how this might affect the Mean Squared Error (MSE) when used as a constant prediction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp24-mt-Q5f-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It is the most frequently occurring value in the dataset."
+        ],
+        "dependencies": [
+            "abf3684ds100-sp24-mt-Q5f-h1"
+        ],
+        "title": "Exploring MSE Minimization",
+        "text": "Which of the following is true about the mode of a dataset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It is the most frequently occurring value in the dataset.",
+            "It is the average of the dataset.",
+            "It is the middle value of the dataset."
+        ]
+    },
+    {
+        "id": "abf3684ds100-sp24-mt-Q5f-h3",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp24-mt-Q5f-h2"
+        ],
+        "title": "Connecting Mode and MSE",
+        "text": "Consider how using the mode as a constant prediction might affect the sum of squared differences between the predicted and actual values. Would it minimize the MSE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

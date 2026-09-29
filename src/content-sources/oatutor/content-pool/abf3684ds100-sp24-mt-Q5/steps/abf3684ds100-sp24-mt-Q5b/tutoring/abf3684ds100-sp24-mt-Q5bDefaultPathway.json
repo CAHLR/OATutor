@@ -1,0 +1,72 @@
+[
+    {
+        "id": "abf3684ds100-sp24-mt-Q5b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE",
+        "text": "Mean Squared Error (MSE) is calculated as the average of the squares of the errors. The error for each data point is the difference between the observed value and the predicted value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp24-mt-Q5b-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp24-mt-Q5b-h1"
+        ],
+        "title": "Expressing MSE",
+        "text": "The MSE can be expressed as: MSE $$=$$ (1/n)*sum{i\\=1}{n}{(y_i-hat{y}_i)**2}. Try substituting hat{y}_i with the given model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp24-mt-Q5b-h3",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp24-mt-Q5b-h2"
+        ],
+        "title": "Substitute the Model",
+        "text": "Substitute hat{y}_i with $$\\frac{1}{\\theta_1} x_i$$ in the MSE formula. This will help you express MSE in terms of $$\\theta_1$$, $$x_i$$, and $$y_i$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp24-mt-Q5b-h4",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp24-mt-Q5b-h3"
+        ],
+        "title": "Differentiate MSE",
+        "text": "To find the value of $$\\theta_1$$ that minimizes MSE, differentiate the MSE expression with respect to $$\\theta_1$$ and set the derivative to zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp24-mt-Q5b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "sum{i\\=1}{n}{x_i**2}/sum{i\\=1}{n}{y_i*x_i}"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp24-mt-Q5b-h4"
+        ],
+        "title": "Solve for $$\\theta_1$$",
+        "text": "After differentiating, solve the equation for $$\\theta_1$$. What expression do you get?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "sum{i\\=1}{n}{x_i**2}/sum{i\\=1}{n}{y_i*x_i}",
+            "sum{i\\=1}{n}{y_i*x_i}/sum{i\\=1}{n}{x_i**2}",
+            "sum{i\\=1}{n}{x_i}/sum{i\\=1}{n}{y_i}",
+            "sum{i\\=1}{n}{y_i}/sum{i\\=1}{n}{x_i**2}",
+            "sum{i\\=1}{n}{x_i**2}/sum{i\\=1}{n}{y_i}"
+        ]
+    }
+]

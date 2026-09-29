@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a89b247ds100-fa18-final-Q13g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Components",
+        "text": "The expected squared error can be broken down into three main components: variance, bias squared, and irreducible error. Can you identify which part of the equation represents each of these components?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q13g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q13g-h1"
+        ],
+        "title": "Focus on h(x)",
+        "text": "Consider the role of h(x) in the equation. Is it something that changes with different datasets, or is it a fixed function of $$x$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q13g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q13g-h2"
+        ],
+        "title": "Fixed or Variable?",
+        "text": "When thinking about h(x), should it be treated as a fixed function or a variable one?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

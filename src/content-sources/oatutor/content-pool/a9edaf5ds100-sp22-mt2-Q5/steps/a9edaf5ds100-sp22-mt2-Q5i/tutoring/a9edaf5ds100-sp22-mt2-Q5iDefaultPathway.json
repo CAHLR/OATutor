@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Exponential Regularization",
+        "text": "Think about how the exponential function behaves compared to linear functions. How does the value of $${10}^{\\theta_i}$$ change as $$\\theta_i$$ increases or decreases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-sp22-mt2-Q5i-h1"
+        ],
+        "title": "Comparing Penalties",
+        "text": "Consider how exponential growth affects large positive and negative coefficients. Does it increase or decrease the penalty compared to L2 regularization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5i-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "C"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp22-mt2-Q5i-h2"
+        ],
+        "title": "Effectiveness of L2 Regularization",
+        "text": "Which regularization method is more effective when we want parameters close to zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5i-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-sp22-mt2-Q5i-h3"
+        ],
+        "title": "Feature Selection with L1 Regularization",
+        "text": "L1 regularization can set some coefficients to zero, effectively selecting features. How does this compare to exponential regularization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

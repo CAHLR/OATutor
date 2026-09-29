@@ -1,0 +1,83 @@
+[
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "The DataFrame $$`lunch_{mat}`$$ contains columns for each person's calorie intake over the past two days and today. Think about how these columns relate to the parameters in the linear model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-sp22-mt2-Q6f-h1"
+        ],
+        "title": "Linear Regression Model",
+        "text": "In linear regression, the $$`fit_{intercept}`$$ parameter determines whether to calculate the intercept for this model. Consider how this affects the model's predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp22-mt2-Q6f-h2"
+        ],
+        "title": "Choosing $$fit_{intercept}$$",
+        "text": "What should the $$`fit_{intercept}`$$ parameter be set to if you want the model to include an intercept term?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$1$$",
+            "False",
+            "None",
+            "TRUE",
+            "True"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6f-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-sp22-mt2-Q6f-h2"
+        ],
+        "title": "Accessing Coefficients",
+        "text": "The `model.coef_` attribute contains the coefficients of the features in the linear model. Think about which index corresponds to the coefficient for calories from $$1$$ day ago.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6f-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp22-mt2-Q6f-h4"
+        ],
+        "title": "Index for theta1",
+        "text": "Which index in `model.coef_` corresponds to $$`\\theta_1`$$, the coefficient for calories from $$1$$ day ago?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$1$$",
+            "$$2$$"
+        ]
+    }
+]

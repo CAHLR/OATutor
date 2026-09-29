@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding N-grams",
+        "text": "Think about how N-grams work. They capture sequences of letters, but do they consider the biological significance of codons?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1g-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Non-consecutive Segments",
+        "text": "Consider how N-grams might treat sequences that aren't directly next to each other. How does this affect the representation of DNA sequences?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1g-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Meaningless Segments",
+        "text": "Remember that in DNA, only sequences of three letters (codons) have biological meaning. How might N-grams capture sequences that don't have this structure?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Overlapping Segments",
+        "text": "How does N-gram encoding handle overlapping sequences? Consider the sequence ATGCA. What overlapping segments would be captured?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1g-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Wrap-around Segments",
+        "text": "Does N-gram encoding consider the end of a sequence as connected to the beginning? Think about how this might affect the representation of DNA sequences.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

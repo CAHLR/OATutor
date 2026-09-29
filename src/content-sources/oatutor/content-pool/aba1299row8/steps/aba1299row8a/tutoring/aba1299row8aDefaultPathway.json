@@ -1,0 +1,47 @@
+[
+    {
+        "id": "aba1299row8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatterplot",
+        "text": "Observe the scatterplot of $$z$$ versus $$y$$. Notice the pattern of the data points. Does it resemble a linear, quadratic, or another type of relationship?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row8a-h1"
+        ],
+        "title": "Identifying the Pattern",
+        "text": "The scatterplot shows a curve that seems to rise more steeply as $$z$$ increases. This suggests a non-linear relationship. Consider transformations that can linearize such patterns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row8a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\sqrt{y_i}=z_i$$"
+        ],
+        "dependencies": [
+            "aba1299row8a-h2"
+        ],
+        "title": "Choosing the Right Transformation",
+        "text": "Which transformation could potentially linearize a relationship where $$y$$ increases rapidly as $$z$$ increases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$${y_i}^3=z_i$$",
+            "$$\\ln\\left(y_i\\right)=\\sqrt{z_i}$$",
+            "$$\\ln\\left(y_i\\right)=\\ln\\left(z_i\\right)$$",
+            "$$\\sqrt{y_i}=z_i$$"
+        ]
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a1bb75eds100-sp21-final-Q9f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding ROC Curves",
+        "text": "The ROC curve plots the True Positive Rate (TPR) against the False Positive Rate (FPR) at various threshold settings. A model with a curve closer to the top-left corner indicates a better performance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q9f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q9f-h1"
+        ],
+        "title": "Interpreting the ROC Curve",
+        "text": "Look at how each model's curve behaves as the FPR increases. The model with the highest TPR for a given FPR is generally preferred.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q9f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Model C"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q9f-h2"
+        ],
+        "title": "Comparing Models",
+        "text": "Which model has the highest TPR at an FPR of $$0.8$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Model A",
+            "Model B",
+            "Model C"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q9f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$C>B>A$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q9f-h3"
+        ],
+        "title": "Ranking the Models",
+        "text": "Based on the ROC curves, which model is the most preferred?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$C>B>A$$",
+            "$$C>A>B$$",
+            "$$B>C>A$$",
+            "$$B>A>C$$",
+            "Cannot be determined"
+        ]
+    }
+]

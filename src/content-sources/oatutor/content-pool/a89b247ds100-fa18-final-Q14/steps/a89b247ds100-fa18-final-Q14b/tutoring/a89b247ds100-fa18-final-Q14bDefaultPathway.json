@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a89b247ds100-fa18-final-Q14b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plot",
+        "text": "Notice how the plot shows a decreasing trend as the value of $$d$$ increases. Think about what this might imply about the relationship between $$d$$ and the y-axis variable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q14b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q14b-h1"
+        ],
+        "title": "Possible Y-Axis Labels",
+        "text": "Consider what metrics in machine learning might decrease as the number of features (d) increases. Could it be related to error or complexity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q14b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Validation Error"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q14b-h2"
+        ],
+        "title": "Choosing the Y-Axis",
+        "text": "Which of the following could the y-axis represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Training Error",
+            "Validation Error",
+            "Model Complexity"
+        ]
+    }
+]

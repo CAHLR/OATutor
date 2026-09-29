@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a8c8399ds100-su20-final-Q4g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Residuals",
+        "text": "The residuals in a linear regression model are the differences between the observed values and the predicted values. Think about how centering the data might affect these residuals.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4g-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su20-final-Q4g-h1"
+        ],
+        "title": "Mean of Residuals",
+        "text": "What is the mean of the residuals in a linear regression model with an intercept term?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4g-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Centering on Coefficients",
+        "text": "Consider how centering the data affects the coefficients in the regression model. Does it change the intercept or the slope?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su20-final-Q4g-h3"
+        ],
+        "title": "Intercept Term",
+        "text": "Does centering the data affect the intercept term in a linear regression model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q6j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LASSO Regularization",
+        "text": "LASSO regularization adds a penalty equal to the absolute value of the magnitude of coefficients. This can lead to some coefficients being exactly zero, effectively removing some features from the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q6j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-fa25-mt2-Q6j-h1"
+        ],
+        "title": "Effect of LASSO on Variance",
+        "text": "Consider how reducing the number of features by setting some coefficients to zero might affect the model's variance. Think about the trade-off between bias and variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q6j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease only"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa25-mt2-Q6j-h2"
+        ],
+        "title": "Choosing the Effect on Model Variance",
+        "text": "What is the possible effect of using LASSO regularization on model variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase only",
+            "Decrease only",
+            "Increase and Decrease",
+            "Neither Increase nor Decrease",
+            "Cannot be determined"
+        ]
+    }
+]

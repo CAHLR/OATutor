@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3ci-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the F1 Score",
+        "text": "The F1 score is a measure of a test's accuracy. It considers both precision and recall to compute the score. Think about how changing the threshold might affect these two components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3ci-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Threshold and Predictions",
+        "text": "Changing the threshold in a classification model can alter which predictions are classified as positive or negative. Consider how this might impact the precision and recall.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3ci-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The number of true positives may decrease, and false negatives may increase."
+        ],
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3ci-h1"
+        ],
+        "title": "Effect of Threshold on F1 Score",
+        "text": "If the threshold is increased, what happens to the number of true positives and false negatives?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The number of true positives may decrease, and false negatives may increase.",
+            "True positives and false negatives remain the same",
+            "True positives decrease, false negatives increase",
+            "True positives increase, false negatives decrease"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3ci-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Precision is true positives over true positives plus false positives, and recall is true positives over true positives plus false negatives."
+        ],
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3ci-h2"
+        ],
+        "title": "Precision and Recall",
+        "text": "How do precision and recall relate to true positives, false positives, and false negatives?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Precision and Recall are the same",
+            "Precision is $$\\frac{TP}{TP+FN}$$, Recall is $$\\frac{TP}{TP+FP}$$",
+            "Precision is $$\\frac{TP}{TP+FP}$$, Recall is $$\\frac{TP}{TP+FN}$$",
+            "Precision is true positives over true positives plus false positives, and recall is true positives over true positives plus false negatives."
+        ]
+    }
+]

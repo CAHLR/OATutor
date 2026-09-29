@@ -1,0 +1,147 @@
+[
+    {
+        "id": "abf3684ds100-sp25-final-Q2t-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Computations",
+        "text": "Think about how many times the model updates its parameters in each paradigm. Each update involves a gradient computation. Consider how the number of data points and batch sizes affect this.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2t-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2t-h1"
+        ],
+        "title": "Batch Gradient Descent",
+        "text": "In Batch Gradient Descent, the entire dataset is used to compute a single gradient update per epoch. How many updates will there be after $$5$$ epochs?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2t-h3",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2t-h1"
+        ],
+        "title": "Mini-batch Gradient Descent",
+        "text": "Mini-batch Gradient Descent divides the dataset into smaller batches. With a batch size of $$20$$ and $$100$$ data points, how many batches are there per epoch?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2t-h4",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2t-h1"
+        ],
+        "title": "Stochastic Gradient Descent",
+        "text": "In Stochastic Gradient Descent, each data point results in a separate gradient computation. How many computations occur per epoch with $$10$$ data points?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2t-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2t-h2"
+        ],
+        "title": "Calculate Total Computations for Paradigm $$1$$",
+        "text": "How many gradient computations occur in Paradigm $$1$$ after $$5$$ epochs?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$5$$",
+            "$$10$$",
+            "$$15$$",
+            "$$20$$",
+            "$$25$$",
+            "$$5$$"
+        ]
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2t-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$25$$"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2t-h3"
+        ],
+        "title": "Calculate Total Computations for Paradigm $$2$$",
+        "text": "How many gradient computations occur in Paradigm $$2$$ after $$5$$ epochs?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$25$$",
+            "$$10$$",
+            "$$15$$",
+            "$$20$$",
+            "$$25$$",
+            "$$5$$"
+        ]
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2t-h7",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$50$$"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2t-h4"
+        ],
+        "title": "Calculate Total Computations for Paradigm $$3$$",
+        "text": "How many gradient computations occur in Paradigm $$3$$ after $$5$$ epochs?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$50$$",
+            "$$10$$",
+            "$$20$$",
+            "$$30$$",
+            "$$40$$",
+            "$$50$$"
+        ]
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2t-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Paradigm $$1$$ < Paradigm $$2$$ < Paradigm $$3$$"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2t-h5"
+        ],
+        "title": "Rank the Paradigms",
+        "text": "Based on the total number of gradient computations, which ordering correctly ranks the paradigms?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Paradigm $$1$$ < Paradigm $$2$$ < Paradigm $$3$$",
+            "Paradigm $$2$$ < Paradigm $$1$$ < Paradigm $$3$$",
+            "Paradigm $$3$$ < Paradigm $$2$$ < Paradigm $$1$$",
+            "Paradigm $$2$$ < Paradigm $$3$$ < Paradigm $$1$$",
+            "Paradigm $$1$$ < Paradigm $$3$$ < Paradigm $$2$$"
+        ]
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "abf3684ds100-sp25-final-Q2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding OLS Solutions",
+        "text": "When you have more features than observations, think about what happens to the matrix you use in OLS. What does it mean for a matrix to be invertible?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2c-h1"
+        ],
+        "title": "Matrix Invertibility",
+        "text": "Consider the dimensions of the matrix when you have more features than observations. What does this imply about the rank of the matrix?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2c-h2"
+        ],
+        "title": "Matrix Rank and Solutions",
+        "text": "If a matrix has more columns than rows, what can you say about its rank and the possibility of finding a unique solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

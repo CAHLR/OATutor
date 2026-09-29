@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a1bb75eds100-su21-final-Q6g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean Squared Error",
+        "text": "Mean squared error (MSE) is a measure of how well a model's predictions match the actual data. It is calculated by taking the average of the squares of the differences between the predicted and actual values. Can you identify the predicted values for each color in the dataset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q6g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q6g-h1"
+        ],
+        "title": "Calculating Differences",
+        "text": "To find the differences between the predicted and actual values, subtract each actual value from its corresponding predicted value. What are the differences for each data point?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q6g-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q6g-h2"
+        ],
+        "title": "Squaring the Differences",
+        "text": "Once you have the differences, square each one. This will help eliminate negative values and emphasize larger errors. What are the squared differences for each data point?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q6g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q6g-h3"
+        ],
+        "title": "Finding the Mean of Squared Differences",
+        "text": "Now, calculate the mean of the squared differences. This involves summing all the squared differences and dividing by the number of data points. What is the mean squared error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$\\frac{1}{5}$$",
+            "$$\\frac{2}{5}$$",
+            "$$\\frac{3}{5}$$",
+            "$$1$$"
+        ]
+    }
+]

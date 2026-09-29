@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a98a015ds100-fa24-final-Q7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scree Plot",
+        "text": "The scree plot shows the explained variance ratio for each principal component. Look for a point where the explained variance starts to level off. This is often called the 'elbow' of the plot.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa24-final-Q7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa24-final-Q7a-h1"
+        ],
+        "title": "Interpreting the Elbow",
+        "text": "In the scree plot, the 'elbow' is where the explained variance ratio significantly drops and then levels off. This point helps determine the number of principal components to use.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa24-final-Q7a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa24-final-Q7a-h2"
+        ],
+        "title": "Choosing the Number of Components",
+        "text": "Based on the scree plot, how many principal components should be used to capture most of the variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$2$$",
+            "$$3$$",
+            "$$4$$",
+            "TRUE"
+        ]
+    }
+]

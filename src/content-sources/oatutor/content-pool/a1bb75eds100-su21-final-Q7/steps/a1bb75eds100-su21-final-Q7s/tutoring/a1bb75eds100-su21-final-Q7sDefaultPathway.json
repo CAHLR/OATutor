@@ -1,0 +1,43 @@
+[
+    {
+        "id": "a1bb75eds100-su21-final-Q7s-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Data Distribution",
+        "text": "Observe how the orange and blue points are distributed. Notice any patterns or shapes that might help in distinguishing between the two classes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7s-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Considering Feature Transformations",
+        "text": "Think about how a new feature $$x_3$$, derived from $$x_1$$ and $$x_2$$, might help in separating the classes. What kind of transformation could make the boundary more apparent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7s-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7s-h2"
+        ],
+        "title": "Evaluating Decision Boundaries",
+        "text": "Could a decision tree model create a boundary that separates the classes effectively with the new feature $$x_3$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

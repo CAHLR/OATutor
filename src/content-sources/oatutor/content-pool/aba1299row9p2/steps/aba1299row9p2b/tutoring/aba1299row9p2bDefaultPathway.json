@@ -1,0 +1,47 @@
+[
+    {
+        "id": "aba1299row9p2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Types",
+        "text": "Look at the data types in the table. Consider what each column represents and how the data is stored. Which columns contain numerical data, and which contain categorical data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row9p2b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "League"
+        ],
+        "dependencies": [
+            "aba1299row9p2b-h1"
+        ],
+        "title": "Identifying Ordinal Data",
+        "text": "Which column could potentially represent qualitative ordinal data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Player",
+            "Dis",
+            "League",
+            "Goals"
+        ]
+    },
+    {
+        "id": "aba1299row9p2b-h3",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row9p2b-h2"
+        ],
+        "title": "Qualitative Ordinal Data",
+        "text": "Qualitative ordinal data is categorical data with a meaningful order or ranking. Does the 'League' column fit this description?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

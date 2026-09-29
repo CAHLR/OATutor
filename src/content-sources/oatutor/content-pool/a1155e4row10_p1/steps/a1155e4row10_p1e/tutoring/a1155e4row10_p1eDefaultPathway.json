@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a1155e4row10_p1e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame Structure",
+        "text": "Look at how the data is organized in the second image. Notice that each $$player_{id}$$ is an index, and there are columns for each $$game_{type}$$. This structure is key to understanding which method was used.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p1e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row10_p1e-h1"
+        ],
+        "title": "Identifying the Method",
+        "text": "Consider what method allows you to reshape data so that one column becomes the index and other columns are created for each unique value in another column. This is a common operation in data manipulation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p1e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            ".pivot_table()"
+        ],
+        "dependencies": [
+            "a1155e4row10_p1e-h2"
+        ],
+        "title": "Choosing the Right Method",
+        "text": "Which method allows you to create a new DataFrame with one column as the index and other columns for each unique value in another column?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            ".groupby() with .mean()",
+            ".value_counts()",
+            ".pivot_table()",
+            ".agg()",
+            ".merge()"
+        ]
+    }
+]

@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a1155e4row1f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Overlaid Histograms",
+        "text": "Overlaid histograms are useful for comparing the distribution of a single variable across different categories. Consider whether temperature and workout time are categories or continuous variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row1f-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1155e4row1f-h1"
+        ],
+        "title": "Choosing the Right Plot Type",
+        "text": "Is temperature a continuous variable that can be plotted on a histogram?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a1155e4row1f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1155e4row1f-h1"
+        ],
+        "title": "Understanding Data Types",
+        "text": "Are both temperature and workout time quantitative variables?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a1155e4row1f-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row1f-h3"
+        ],
+        "title": "Visualizing Relationships",
+        "text": "To visualize the relationship between two quantitative variables, consider using scatter plots or line plots instead of histograms.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

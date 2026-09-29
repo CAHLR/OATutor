@@ -1,0 +1,68 @@
+[
+    {
+        "id": "aba1299row6h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Standardization",
+        "text": "Standardizing a variable involves subtracting the mean and dividing by the standard deviation. This process changes the scale of the variable but not the relationships between variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6h-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Correlation and Coefficients",
+        "text": "The correlation between variables can affect the coefficients in a regression model. Consider how the correlation values might influence the coefficients when variables are standardized.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "They change"
+        ],
+        "dependencies": [
+            "aba1299row6h-h1"
+        ],
+        "title": "Effect of Standardization on Coefficients",
+        "text": "What happens to the coefficients of a linear regression model when the predictor variables are standardized?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "They change",
+            "They remain the same",
+            "They become zero",
+            "They become negative"
+        ]
+    },
+    {
+        "id": "aba1299row6h-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It affects the coefficients"
+        ],
+        "dependencies": [
+            "aba1299row6h-h2"
+        ],
+        "title": "Correlation Impact",
+        "text": "Given the correlation matrix, how might the negative correlation between $$critic_1$$ and $$critic_2$$ affect the model's coefficients after standardization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It affects the coefficients",
+            "It has no effect",
+            "It makes them equal",
+            "It makes them zero"
+        ]
+    }
+]

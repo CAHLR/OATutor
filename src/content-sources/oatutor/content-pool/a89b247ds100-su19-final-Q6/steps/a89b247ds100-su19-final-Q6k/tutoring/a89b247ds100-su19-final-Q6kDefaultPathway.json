@@ -1,0 +1,50 @@
+[
+    {
+        "id": "a89b247ds100-su19-final-Q6k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model is a linear regression with coefficients for vegetables and types of meat. The equation is: f(x)=theta_0+theta_1*veg+theta_2*(meat=beef)+theta_3*(meat=fish).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6k-h1"
+        ],
+        "title": "Identify the Variables",
+        "text": "For the first data point, $$veg=1$$ and $$meat=beef$$. This means the indicator variable for beef is $$1$$, and for fish, it is $$0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6k-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6k-h2"
+        ],
+        "title": "Calculate the Prediction",
+        "text": "Substitute the values into the model: f(x)=-3+5*veg+8*(meat=beef)+12*(meat=fish). What is the result?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-3$$",
+            "$$2$$",
+            "$$5$$",
+            "$$10$$",
+            "$$13$$",
+            "$$22$$",
+            "$$25$$"
+        ]
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3dg-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Dimensionality",
+        "text": "To determine the dimensionality of the parameter vector in a regression model, consider the number of features used. Each unique genre can be a feature in the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3dg-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-sp24-final-Q3b,Q3c,Q3dg-h1"
+        ],
+        "title": "One-Hot Encoding",
+        "text": "When dealing with categorical variables like genre, one common approach is to use one-hot encoding. This means creating a binary variable for each category.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3dg-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$m$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp24-final-Q3b,Q3c,Q3dg-h2"
+        ],
+        "title": "Calculating Dimensionality",
+        "text": "If you have $$m$$ different genres, how many binary variables will you create using one-hot encoding?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$m$$",
+            "$$m-1$$",
+            "$$m+1$$",
+            "$$2m$$",
+            "$$d$$"
+        ]
+    }
+]

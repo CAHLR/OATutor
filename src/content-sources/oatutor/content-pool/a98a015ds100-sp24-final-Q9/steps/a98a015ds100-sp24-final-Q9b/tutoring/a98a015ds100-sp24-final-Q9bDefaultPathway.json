@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a98a015ds100-sp24-final-Q9b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Principal Components",
+        "text": "When looking at a pair of columns, the first principal component is the direction along which the data varies the most. Think about which axis shows the greatest spread of data points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9b-h1"
+        ],
+        "title": "Visualizing Data Spread",
+        "text": "Consider how the data points are distributed in each plot. The principal component will align with the axis that has the most variation in data points. Which plot shows a vertical spread?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Pair C"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9b-h2"
+        ],
+        "title": "Identifying the Principal Component",
+        "text": "Which pair of columns shows the data points spread more along the vertical axis?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Pair A",
+            "Pair B",
+            "Pair C",
+            "Not enough information"
+        ]
+    }
+]

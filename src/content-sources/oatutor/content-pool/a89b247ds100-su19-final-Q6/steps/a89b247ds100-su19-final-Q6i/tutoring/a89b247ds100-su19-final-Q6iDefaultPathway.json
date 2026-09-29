@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a89b247ds100-su19-final-Q6i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "In one-hot encoding, each category is represented by a binary vector. For example, if 'meat' can be beef, chicken, or fish, each type of meat will have its own column. If the meat is beef, the $$'meat=beef'$$ column will be $$1$$, and the others will be $$0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6i-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting Box Plots",
+        "text": "Look at the box plot for each type of meat. The median line inside each box represents the median total bill for that meat type. Compare these medians to understand how different meats might affect the total bill.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6i-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "fish"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6i-h2"
+        ],
+        "title": "Analyzing the Box Plot",
+        "text": "Based on the box plot, which type of meat seems to have the highest median total bill?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "beef",
+            "chicken",
+            "fish"
+        ]
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6i-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Weights",
+        "text": "In a linear regression model, the weight (theta) associated with a feature indicates how much that feature contributes to the prediction. A positive weight increases the prediction, a negative weight decreases it, and a weight of zero means the feature has no effect.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6i-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Negative"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6i-h3"
+        ],
+        "title": "Determining the Effect of Meat Type",
+        "text": "Given the box plot, what can you infer about the weight $$\\theta_2$$ for $$'meat=chicken'$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Positive",
+            "Negative",
+            "Exactly $$0$$",
+            "Not enough info"
+        ]
+    }
+]

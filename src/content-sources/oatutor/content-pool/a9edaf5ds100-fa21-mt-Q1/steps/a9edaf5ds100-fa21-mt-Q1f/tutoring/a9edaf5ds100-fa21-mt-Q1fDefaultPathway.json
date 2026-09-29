@@ -1,0 +1,83 @@
+[
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding N-grams",
+        "text": "Think about how N-grams work. They capture sequences of letters, but do they consider the biological significance of codons?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1f-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Codons and Amino Acids",
+        "text": "Remember that codons are groups of $$3$$ letters. How might this affect the usefulness of capturing sequences of $$1$$ or $$2$$ letters?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "ATG, TGC, GCA"
+        ],
+        "dependencies": [],
+        "title": "Overlapping Segments",
+        "text": "Consider the sequence ATGCA. How would a 3-gram encoding break this sequence into words?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "ATG, TGC, GCA",
+            "AT, GC, CA",
+            "ATGCA",
+            "TGC, GCA"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It could suggest unrelated sequences like AGA."
+        ],
+        "dependencies": [],
+        "title": "Non-Consecutive Segments",
+        "text": "If N-grams capture non-consecutive segments, what might be a potential issue with the sequence ATGCA?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It could suggest unrelated sequences like AGA.",
+            "It captures all possible codons accurately.",
+            "It ignores $$non-consecutive$$ segments."
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1f-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$N-gram$$ might capture $$wrap-around$$ segments like TGG from GGTT."
+        ],
+        "dependencies": [],
+        "title": "Wrap-Around Segments",
+        "text": "Does DNA wrap around like a circle, or is it linear? How might this affect N-gram encoding?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$N-gram$$ might capture $$wrap-around$$ segments like TGG from GGTT.",
+            "DNA naturally wraps around, so $$N-gram$$ is accurate.",
+            "$$N-gram$$ only captures linear sequences."
+        ]
+    }
+]

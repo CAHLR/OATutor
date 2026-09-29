@@ -1,0 +1,45 @@
+[
+    {
+        "id": "aba1299row9p2f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding OLS",
+        "text": "The ordinary least squares (OLS) method is used to minimize the sum of the squared differences between the observed and predicted values. Think about what this means for the prediction vector.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row9p2f-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row9p2f-h1"
+        ],
+        "title": "Prediction Vector",
+        "text": "The prediction vector, often denoted as Y-hat, represents the predicted values from your model. Consider how OLS affects this vector.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row9p2f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aba1299row9p2f-h2"
+        ],
+        "title": "OLS and Prediction Vector",
+        "text": "Does OLS minimize the length of the prediction vector Y-hat?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

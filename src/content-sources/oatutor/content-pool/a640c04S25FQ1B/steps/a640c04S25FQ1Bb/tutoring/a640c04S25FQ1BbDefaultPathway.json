@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a640c04S25FQ1Bb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Filter Function",
+        "text": "To determine if a building is modern, you need to calculate the proportion of rooms renovated in $$2003$$ or later. Think about how you can use the `sum` function to count these rooms and the `size` attribute to get the total number of rooms with recorded renovations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04S25FQ1Bb-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "lambda sf: (sum(sf[\"renovated\"].astype(int)>=2003)/sf[\"renovated\"].size)>=0.80"
+        ],
+        "dependencies": [
+            "a640c04S25FQ1Bb-h1"
+        ],
+        "title": "Choosing the Correct Filter Condition",
+        "text": "Which of the following conditions correctly identifies modern buildings?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "lambda sf: $$sf[\"renovated\"].astype(int).mean() \\geq 2003$$",
+            "lambda sf: $$(sf[\"renovated\"].astype(int) \\geq 2003).all()$$",
+            "lambda sf: (sum(sf[\"renovated\"].astype(int)>=2003)/sf[\"renovated\"].size)>=0.80",
+            "lambda sf: $$(sf[\"renovated\"].astype(int) \\geq 2003).sum() \\geq 0.80$$",
+            "lambda sf: (sf[\"renovated\"].astype(int)>2003).mean()>=0.80"
+        ]
+    }
+]

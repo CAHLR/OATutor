@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bag-of-Words",
+        "text": "Think about how the bag-of-words model works. It counts the frequency of each word in a document. In this case, consider what 'words' might mean for DNA sequences.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1e-h1"
+        ],
+        "title": "Identifying the 'Words'",
+        "text": "In the context of DNA sequences, what could be considered as 'words'? Remember, DNA is made up of sequences of letters, and these sequences can be grouped in different ways.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1e-h2"
+        ],
+        "title": "Possible Combinations",
+        "text": "Consider how many different combinations of these 'words' can exist. Each 'word' is a sequence of letters, and there are a limited number of letters in DNA.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$64$$"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1e-h3"
+        ],
+        "title": "Calculating Dimensions",
+        "text": "If each 'word' is a codon, how many possible codons are there?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$4^3$$",
+            "$$64$$",
+            "$$20$$",
+            "$$3000$$",
+            "$$50$$"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1e-h5",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1e-h4"
+        ],
+        "title": "Connecting to Bag-of-Words",
+        "text": "In a bag-of-words model, each unique 'word' or codon would represent a dimension. How does this relate to the number of possible codons?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

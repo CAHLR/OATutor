@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a92ac99ds100-fa17-mt-Q27b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrapping",
+        "text": "Bootstrapping involves resampling with replacement from the sample data to create many simulated samples. This helps in estimating the sampling distribution of a statistic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-mt-Q27b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a92ac99ds100-fa17-mt-Q27b-h1"
+        ],
+        "title": "Sample Size in Bootstrapping",
+        "text": "When performing bootstrapping, each resampled dataset should have the same size as the original sample. Consider how many individuals are in the original sample.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-mt-Q27b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$400$$"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-mt-Q27b-h2"
+        ],
+        "title": "Choosing the Correct Sample Size",
+        "text": "What is the size of the original sample, theSample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$399$$",
+            "$$400$$",
+            "$$10000$$",
+            "$$25000$$"
+        ]
+    }
+]

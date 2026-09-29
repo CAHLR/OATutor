@@ -1,0 +1,43 @@
+[
+    {
+        "id": "a92ac99ds100-fa18-final-Q5d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrap Replicates",
+        "text": "Bootstrap replicates are used to estimate the sampling distribution of a statistic by resampling with replacement from the original data. Look at how the replicates are structured in the table. Are they organized by rows or columns?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa18-final-Q5d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Increasing Bootstrap Replicate Size",
+        "text": "Increasing the size of each bootstrap replicate means drawing more samples in each replicate. Consider how this affects the variability of the sample mean.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa18-final-Q5d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa18-final-Q5d-h2"
+        ],
+        "title": "Impact on Variance",
+        "text": "What happens to the variance of the sample mean when you increase the sample size?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

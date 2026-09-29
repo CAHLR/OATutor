@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a98a015ds100-fa19-final-Q8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Matrix Dimensions",
+        "text": "When you decompose a matrix using PCA, the matrix $$V^T$$ is a transformation matrix. Its dimensions are determined by the number of features in the original matrix X. How many columns does X have?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-final-Q8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa19-final-Q8a-h1"
+        ],
+        "title": "Relating Dimensions",
+        "text": "The matrix $$V^T$$ is derived from the original matrix X. Consider how the number of columns in X relates to the dimensions of $$V^T$$. What does this tell you about the number of rows in $$V^T$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-final-Q8a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [],
+        "title": "Counting Columns",
+        "text": "How many columns does the matrix X have?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$2$$",
+            "$$3$$",
+            "$$4$$",
+            "$$5$$"
+        ]
+    },
+    {
+        "id": "a98a015ds100-fa19-final-Q8a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa19-final-Q8a-h3"
+        ],
+        "title": "Determining Rows in $$V^T$$",
+        "text": "Given that the number of columns in X is the same as the number of rows in $$V^T$$, what is $$r$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$2$$",
+            "$$3$$",
+            "$$4$$",
+            "$$5$$"
+        ]
+    }
+]

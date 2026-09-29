@@ -1,0 +1,83 @@
+[
+    {
+        "id": "a1155e4row7_p2h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Boxcar Kernel",
+        "text": "The boxcar kernel is a simple function used in kernel density estimation. It assigns a constant weight to all points within a certain range and zero weight to points outside that range. The width of this range is determined by the parameter \\( \\alpha \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row7_p2h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row7_p2h-h1"
+        ],
+        "title": "Applying the Boxcar Kernel",
+        "text": "To apply the boxcar kernel, check if the difference \\( $$x-x_i$$ \\) falls within the range \\( -\\alpha/2 \\leq $$x-x_i$$ \\leq \\alpha/2 \\). If it does, the kernel value is \\( 1/\\alpha \\); otherwise, it is $$0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row7_p2h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-1\\leq$$ x-x_i\\leq $$1$$"
+        ],
+        "dependencies": [
+            "a1155e4row7_p2h-h2"
+        ],
+        "title": "Calculate the Range",
+        "text": "What is the range of values for \\( $$x-x_i$$ \\) when \\( $$\\alpha=2$$ \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-1\\leq$$ x-x_i\\leq $$1$$",
+            "0\\leq x-x_i\\leq $$2$$",
+            "$$-2\\leq$$ x-x_i\\leq $$2$$",
+            "$$-1\\leq$$ x-x_i\\leq $$2$$"
+        ]
+    },
+    {
+        "id": "a1155e4row7_p2h-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$22$$"
+        ],
+        "dependencies": [
+            "a1155e4row7_p2h-h3"
+        ],
+        "title": "Check Each Age",
+        "text": "For age $$22.5$$, check if it falls within the range for each given age (20, $$22$$, 23) using the boxcar kernel with \\( $$\\alpha=2$$ \\). Which ages contribute to the density?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$20$$",
+            "$$22$$",
+            "$$23$$",
+            "$$20$$ and $$22$$",
+            "$$22$$ and $$23$$"
+        ]
+    },
+    {
+        "id": "a1155e4row7_p2h-h5",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row7_p2h-h4"
+        ],
+        "title": "Calculate the Density",
+        "text": "The estimated density is the sum of the kernel values for each contributing age divided by the total number of ages. Calculate this sum to find the density at age $$22.5$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

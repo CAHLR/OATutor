@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a9edaf5ds100-fa24-final-Q3fb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L1 Regularization",
+        "text": "L1 regularization, also known as Lasso, adds a penalty equal to the absolute value of the magnitude of coefficients. This can lead to some coefficients being exactly zero, effectively selecting a simpler model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa24-final-Q3fb-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-fa24-final-Q3fb-h1"
+        ],
+        "title": "Objective Function with L1 Regularization",
+        "text": "The objective function with L1 regularization is typically augmented by adding the term lambda times the sum of the absolute values of the coefficients. Consider how this affects the coefficients in the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa24-final-Q3fb-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\lambda$$ \\left(|\\theta_1|+|\\theta_2|\\right)$$"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa24-final-Q3fb-h2"
+        ],
+        "title": "Form of the Regularization Term",
+        "text": "What is the correct form of the regularization term added to the objective function in L1 regularization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\lambda$$ \\left(|\\theta_1|+|\\theta_2|\\right)$$",
+            "$$\\lambda \\left(|\\theta_1|+|\\theta_2|\\right)$$",
+            "$$\\lambda \\left({\\theta_1}^2+{\\theta_2}^2\\right)$$",
+            "$$\\lambda \\left(\\theta_1+\\theta_2\\right)$$"
+        ]
+    }
+]

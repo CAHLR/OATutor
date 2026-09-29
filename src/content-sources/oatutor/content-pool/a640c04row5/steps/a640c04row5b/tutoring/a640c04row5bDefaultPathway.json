@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a640c04row5b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Grouping",
+        "text": "To analyze performance by staff role, you need to group the data by the 'role' column. This will allow you to calculate statistics for each role category separately.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row5b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "role"
+        ],
+        "dependencies": [
+            "a640c04row5b-h1"
+        ],
+        "title": "Choosing the Correct Column for Grouping",
+        "text": "Which column should be used to group the data in order to analyze performance by staff role?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "role",
+            "name",
+            "$$oh_{tickets}$$",
+            "$$is_{graduating}$$",
+            "$$ed_{hours}$$"
+        ]
+    }
+]

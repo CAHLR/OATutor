@@ -1,0 +1,66 @@
+[
+    {
+        "id": "abf3684ds100-su25-final-Q2h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Combinations",
+        "text": "Think about what it means for a vector to be a linear combination of other vectors. How are the coefficients involved in forming this combination?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2h-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring the Model Structure",
+        "text": "Consider the structure of Wesley's model: $$y_{hat,i}=\\theta_0+\\theta_1 {x_{i1}}^3+\\theta_2 \\ln\\left(x_{i2}\\right)$$. How does this relate to the concept of linearity in terms of the parameters?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2h-h1"
+        ],
+        "title": "Identifying Linear Combinations",
+        "text": "Which of the following statements is true about linear combinations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A linear combination can include $$non-linear$$ transformations like powers and logarithms.",
+            "A linear combination involves only addition and scalar multiplication of vectors.",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2h-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2h-h2"
+        ],
+        "title": "Analyzing the Model's Linearity",
+        "text": "Does the presence of $${x_{i1}}^3$$ and $$\\ln\\left(x_{i2}\\right)$$ affect the linearity of the model in terms of the parameters?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "No, the model remains linear in terms of the parameters.",
+            "Yes, it makes the model $$non-linear$$ in terms of the parameters."
+        ]
+    }
+]

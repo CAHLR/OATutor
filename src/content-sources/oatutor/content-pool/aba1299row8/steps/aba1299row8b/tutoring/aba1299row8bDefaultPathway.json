@@ -1,0 +1,47 @@
+[
+    {
+        "id": "aba1299row8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatterplot",
+        "text": "Observe the shape of the scatterplot. Does it resemble a linear, quadratic, or another type of function? This will help you determine the relationship between $$z$$ and $$y$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row8b-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row8b-h1"
+        ],
+        "title": "Identifying the Pattern",
+        "text": "The scatterplot shows a curve that increases more steeply as $$z$$ increases. This suggests a polynomial relationship. Consider what kind of polynomial might fit this pattern.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row8b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$y_i=\\left(mz_i+b\\right)^2$$"
+        ],
+        "dependencies": [
+            "aba1299row8b-h2"
+        ],
+        "title": "Choosing the Correct Function",
+        "text": "Based on the scatterplot, which function best represents the relationship between $$y$$ and $$z$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$y_i=\\left(mz_i+b\\right)^2$$",
+            "$$y_i=\\left(mz_i+b\\right)^3$$",
+            "$$y_i=mz_i$$",
+            "$$y_i=mz_i+b$$"
+        ]
+    }
+]

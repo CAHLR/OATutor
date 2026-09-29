@@ -1,0 +1,43 @@
+[
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2dc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding OLS",
+        "text": "In an Ordinary Least Squares (OLS) model, the goal is to minimize the sum of the squared differences between the observed and predicted values. This is achieved by finding the best-fitting line through the data points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2dc-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Degrees of Freedom",
+        "text": "Consider the concept of degrees of freedom in a regression model. It is calculated as the number of observations minus the number of parameters being estimated. What happens to the degrees of freedom if you add more parameters than observations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2dc-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2dc-h2"
+        ],
+        "title": "Checking Uniqueness",
+        "text": "What happens to the uniqueness of the OLS solution if the number of parameters exceeds the number of observations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

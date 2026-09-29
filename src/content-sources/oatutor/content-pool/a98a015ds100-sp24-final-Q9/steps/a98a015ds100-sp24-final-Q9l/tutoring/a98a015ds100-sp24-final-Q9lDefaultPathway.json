@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a98a015ds100-sp24-final-Q9l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD Dimensions",
+        "text": "When performing Singular Value Decomposition (SVD) on a matrix X with dimensions $$n$$ by $$d$$, the resulting matrices U, S, and $$V^T$$ have specific dimensions. Consider how the dimensions of U and $$V^T$$ relate to the original matrix X.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9l-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9l-h1"
+        ],
+        "title": "Rank and Dimensions",
+        "text": "Remember that the rank of a matrix is the maximum number of linearly independent column vectors in the matrix. How does the rank of X, which is less than $$d$$, affect the dimensions of the matrices in the SVD?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9l-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "U is $$n$$ by $$n$$, $$V^T$$ is $$d$$ by $$d$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9l-h2"
+        ],
+        "title": "Dimensions of U and $$V^T$$",
+        "text": "Given that X is an $$n$$ by $$d$$ matrix, what are the possible dimensions of U and $$V^T$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "U is $$n$$ by $$n$$, $$V^T$$ is $$d$$ by $$d$$",
+            "U is $$n$$ by $$d$$, $$V^T$$ is $$d$$ by $$n$$",
+            "U is $$d$$ by $$n$$, $$V^T$$ is $$n$$ by $$d$$",
+            "U is $$n$$ by $$d$$, $$V^T$$ is $$n$$ by $$n$$"
+        ]
+    }
+]

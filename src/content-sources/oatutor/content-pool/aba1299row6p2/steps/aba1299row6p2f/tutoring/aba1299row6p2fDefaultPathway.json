@@ -1,0 +1,47 @@
+[
+    {
+        "id": "aba1299row6p2f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model Sam uses is a linear regression model. It predicts the attendance rate based on the distance from the bell and the section number. Think about how adding more features, like weather, might affect the model's ability to fit the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6p2f-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row6p2f-h1"
+        ],
+        "title": "Effect of Adding Features",
+        "text": "When you add more features to a model, it can capture more complexity in the data. Consider how this might impact the training loss, which measures how well the model fits the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6p2f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It decreases or stays the same"
+        ],
+        "dependencies": [
+            "aba1299row6p2f-h2"
+        ],
+        "title": "Training Loss and Features",
+        "text": "What happens to the training loss when you add more features to a model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It increases",
+            "It decreases or stays the same",
+            "It remains unchanged",
+            "It becomes unpredictable"
+        ]
+    }
+]

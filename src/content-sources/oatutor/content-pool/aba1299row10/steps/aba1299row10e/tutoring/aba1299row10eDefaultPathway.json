@@ -1,0 +1,64 @@
+[
+    {
+        "id": "aba1299row10e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE and MAE",
+        "text": "Mean Squared Error (MSE) and Mean Absolute Error (MAE) are both used to measure the accuracy of a model. MSE squares the differences between predicted and actual values, while MAE takes the absolute value of these differences. Think about how squaring affects the error values compared to taking the absolute value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10e-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring Solutions for MAE",
+        "text": "When minimizing MAE, consider how the absolute value function behaves. Does it have a unique minimum point, or could there be multiple points that yield the same minimum error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "MSE is more sensitive to outliers than MAE|MAE is more sensitive to outliers than MSE|Both are equally sensitive to outliers"
+        ],
+        "dependencies": [],
+        "title": "Comparing MSE and MAE",
+        "text": "Which of the following statements is true about MSE and MAE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Both are equally sensitive to outliers",
+            "MAE is more sensitive to outliers than MSE",
+            "MSE is more sensitive to outliers than MAE",
+            "MSE is more sensitive to outliers than MAE|MAE is more sensitive to outliers than MSE|Both are equally sensitive to outliers"
+        ]
+    },
+    {
+        "id": "aba1299row10e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It is linear and has a single minimum point|It is $$non-linear$$ and can have multiple minimum points|It is $$non-linear$$ and has a single minimum point"
+        ],
+        "dependencies": [],
+        "title": "Behavior of Absolute Value Function",
+        "text": "What is a characteristic of the absolute value function that affects the uniqueness of solutions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It is linear and has a single minimum point",
+            "It is linear and has a single minimum point|It is $$non-linear$$ and can have multiple minimum points|It is $$non-linear$$ and has a single minimum point",
+            "It is $$non-linear$$ and can have multiple minimum points",
+            "It is $$non-linear$$ and has a single minimum point"
+        ]
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "id": "a9edaf5ds100-sp21-final-Q13b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "When training a model, regularization helps prevent overfitting. Overfitting occurs when a model performs well on training data but poorly on unseen data. Can you think of how regularization might help in this situation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp21-final-Q13b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Training vs. Validation Error",
+        "text": "If the training error is decreasing but the validation error is increasing, it suggests that the model is learning the training data too well, possibly memorizing it. What does this imply about the model's ability to generalize?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp21-final-Q13b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase regularization."
+        ],
+        "dependencies": [],
+        "title": "Choosing the Right Action",
+        "text": "Given that the validation error is increasing, which of the following actions would help address this issue?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Decrease regularization.",
+            "No additional regularization changes are needed.",
+            "Add more training data only.",
+            "Increase regularization.",
+            "Increase the learning rate."
+        ]
+    }
+]

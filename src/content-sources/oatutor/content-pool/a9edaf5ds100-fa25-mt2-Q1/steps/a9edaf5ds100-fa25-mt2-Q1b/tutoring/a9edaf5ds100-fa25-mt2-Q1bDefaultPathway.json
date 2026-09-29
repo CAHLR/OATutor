@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a9edaf5ds100-fa25-mt2-Q1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross Validation",
+        "text": "In 8-fold cross-validation, the dataset is divided into $$8$$ parts. Each part is used once as a validation set while the remaining $$7$$ parts form the training set. How many times does each data point appear in the validation set?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa25-mt2-Q1b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1$$ by $$11$$"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa25-mt2-Q1b-h1"
+        ],
+        "title": "Calculating Validation Uses",
+        "text": "Consider that each data point is used in the validation set once for each fold. How many folds are there?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$8$$ by $$11$$",
+            "$$8+11$$",
+            "$$1$$ by $$11$$",
+            "$$(8-1)$$ by $$11$$",
+            "$$3+1$$ by $$8+11$$"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-fa25-mt2-Q1b-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Regularization Hyperparameter",
+        "text": "The regularization hyperparameter is tested across multiple values to find the best fit. If you have $$11$$ different values, how many times will each value be evaluated during cross-validation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa25-mt2-Q1b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1$$ by $$11$$"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa25-mt2-Q1b-h3"
+        ],
+        "title": "Evaluating Hyperparameter Values",
+        "text": "Each hyperparameter value is tested across all folds. How many folds are there in this cross-validation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$8$$ by $$11$$",
+            "$$8+11$$",
+            "$$1$$ by $$11$$",
+            "$$(8-1)$$ by $$11$$",
+            "$$3+1$$ by $$8+11$$"
+        ]
+    }
+]

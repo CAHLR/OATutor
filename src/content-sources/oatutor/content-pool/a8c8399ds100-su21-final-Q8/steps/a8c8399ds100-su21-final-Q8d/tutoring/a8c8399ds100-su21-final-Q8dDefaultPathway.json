@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a8c8399ds100-su21-final-Q8d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "When you one-hot encode a categorical variable, each category becomes a separate column. For example, if you have a column with three categories, it will be transformed into three binary columns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Intercept Term in the Model",
+        "text": "Including an intercept term in a model means adding a column of ones to the design matrix. This column accounts for the baseline level of the dependent variable when all other predictors are zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su21-final-Q8d-h1"
+        ],
+        "title": "Counting Columns After Encoding",
+        "text": "Consider how many columns are added when you one-hot encode the 'sex' and $$'embark_{town'}$$ columns. How many categories are there in each?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$6$$",
+            "$$7$$",
+            "$$8$$",
+            "$$9$$"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$20$$"
+        ],
+        "dependencies": [],
+        "title": "Rows in the Design Matrix",
+        "text": "How many rows will the design matrix have if there are $$20$$ passengers in the dataset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$18$$",
+            "$$19$$",
+            "$$20$$",
+            "$$21$$"
+        ]
+    }
+]

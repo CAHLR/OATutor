@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a9edaf5ds100-su21-final-Q4q-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "When we talk about bias and variance in a model, we're discussing two different types of errors. Bias refers to the error due to overly simplistic assumptions in the learning algorithm, while variance refers to the error due to excessive sensitivity to small fluctuations in the training set. Can you think about how changing the model might affect these two types of errors?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4q-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su21-final-Q4q-h1"
+        ],
+        "title": "Impact on Variance",
+        "text": "If the model bias decreased, what might happen to the variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4q-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-su21-final-Q4q-h2"
+        ],
+        "title": "Tradeoff Between Bias and Variance",
+        "text": "There's often a tradeoff between bias and variance. Reducing bias might lead to an increase in variance, and vice versa. Consider how this tradeoff might play out when you change the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4q-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su21-final-Q4q-h3"
+        ],
+        "title": "Model Complexity",
+        "text": "How does changing the model complexity affect bias and variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

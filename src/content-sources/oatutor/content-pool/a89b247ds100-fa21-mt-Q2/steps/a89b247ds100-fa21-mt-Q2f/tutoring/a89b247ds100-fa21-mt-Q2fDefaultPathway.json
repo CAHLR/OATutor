@@ -1,0 +1,33 @@
+[
+    {
+        "id": "a89b247ds100-fa21-mt-Q2f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bag-of-Words Encoding",
+        "text": "Bag-of-words is a technique often used in text processing. It involves representing text data as a set of words, disregarding grammar and word order. Think about whether this method is suitable for numerical data like age.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2f-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2f-h1"
+        ],
+        "title": "Evaluating Bag-of-Words for Age",
+        "text": "Consider the nature of age as a numerical feature. Would converting it into a set of words capture its quantitative aspect?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

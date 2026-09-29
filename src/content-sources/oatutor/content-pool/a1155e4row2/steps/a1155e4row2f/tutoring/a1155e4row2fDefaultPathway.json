@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1155e4row2f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding KDE Bandwidth",
+        "text": "The bandwidth in a KDE plot controls the smoothness of the distribution. A small bandwidth can lead to a plot that is too jagged, while a large bandwidth can oversmooth the data. Consider how this might affect the appearance of a multimodal distribution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row2f-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The plot becomes oversmoothed, potentially hiding multiple peaks."
+        ],
+        "dependencies": [
+            "a1155e4row2f-h1"
+        ],
+        "title": "Effect of Bandwidth on KDE",
+        "text": "What happens to a KDE plot if the bandwidth is too large?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The plot becomes oversmoothed, potentially hiding multiple peaks.",
+            "The plot becomes too jagged, showing too many peaks."
+        ]
+    },
+    {
+        "id": "a1155e4row2f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row2f-h2"
+        ],
+        "title": "Multimodal Distributions",
+        "text": "A multimodal distribution has multiple peaks. If a KDE plot looks like a normal distribution, it might be because the bandwidth is too large, smoothing out these peaks.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "id": "a1155e4row10_p1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variable Types",
+        "text": "Consider what the $$player_{id}$$ represents. Is it a number that can be used for calculations, or is it just a label to identify players?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p1b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Qualitative Nominal"
+        ],
+        "dependencies": [
+            "a1155e4row10_p1b-h1"
+        ],
+        "title": "Identifying Variable Type",
+        "text": "What kind of information does $$player_{id}$$ provide?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Quantitative Continuous",
+            "Quantitative Discrete",
+            "Qualitative Ordinal",
+            "Qualitative Nominal"
+        ]
+    }
+]

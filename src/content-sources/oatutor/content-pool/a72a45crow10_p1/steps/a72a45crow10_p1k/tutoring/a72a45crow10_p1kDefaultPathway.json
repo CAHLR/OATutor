@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a72a45crow10_p1k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Probability Sampling",
+        "text": "Think about what it means to randomly select individuals from a group. How does this differ from selecting every nth person?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow10_p1k-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Probability Sampling"
+        ],
+        "dependencies": [
+            "a72a45crow10_p1k-h1"
+        ],
+        "title": "Identifying the Sampling Method",
+        "text": "Which of the following best describes the sampling method Zekai is proposing?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Probability Sampling",
+            "Systematic Sampling",
+            "Convenience Sampling",
+            "Stratified Sampling"
+        ]
+    },
+    {
+        "id": "a72a45crow10_p1k-h3",
+        "type": "hint",
+        "dependencies": [
+            "a72a45crow10_p1k-h1"
+        ],
+        "title": "Random Selection Process",
+        "text": "Consider how the process of randomly selecting one student from a group of seven might ensure that each student has an equal chance of being chosen.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow10_p1k-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Each member of the population has an equal chance of being selected."
+        ],
+        "dependencies": [
+            "a72a45crow10_p1k-h3"
+        ],
+        "title": "Equal Chance of Selection",
+        "text": "What is the key characteristic of a probability sample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Each member of the population has an equal chance of being selected.",
+            "Only certain members of the population are selected.",
+            "Selection is based on convenience.",
+            "Selection is based on a fixed interval."
+        ]
+    }
+]

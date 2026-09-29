@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a640c04S25M1Q1Ca-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "Look at the 'item' column in the DataFrame. Each row represents a fruit item available at a specific store location. Your task is to find out which fruit appears most frequently across all rows.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04S25M1Q1Ca-h2",
+        "type": "hint",
+        "dependencies": [
+            "a640c04S25M1Q1Ca-h1"
+        ],
+        "title": "Using $$\\operatorname{value_{counts}}\\left(\\right)$$",
+        "text": "The function $$\\operatorname{value_{counts}}\\left(\\right)$$ can be used to count the occurrences of each unique value in a column. Apply this function to the 'item' column to see how many times each fruit appears.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04S25M1Q1Ca-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "fruit[\"item\"].value_counts().index[0]"
+        ],
+        "dependencies": [
+            "a640c04S25M1Q1Ca-h2"
+        ],
+        "title": "Selecting the Most Frequent Item",
+        "text": "After using $$\\operatorname{value_{counts}}\\left(\\right)$$, how can you select the item that appears the most?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "fruit[\"item\"].value_counts().index[0]",
+            "fruit.value_counts().iloc[0]",
+            "fruit[\"item\"].value_counts().loc[0,0]",
+            "fruit.groupby(\"item\").count().iloc[0,:]"
+        ]
+    }
+]

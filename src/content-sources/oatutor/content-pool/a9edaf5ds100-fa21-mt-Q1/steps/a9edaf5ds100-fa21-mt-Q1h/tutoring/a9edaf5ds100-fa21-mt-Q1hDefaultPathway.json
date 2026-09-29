@@ -1,0 +1,74 @@
+[
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding N-grams",
+        "text": "Think about how N-grams work. They capture sequences of letters, but do they consider the biological significance of codons?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1h-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Non-consecutive Segments",
+        "text": "Consider how N-grams might treat sequences that aren't directly next to each other. How might this affect the interpretation of DNA sequences?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1h-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Meaningless Segments",
+        "text": "Think about the biological meaning of single letters or pairs of letters in DNA. How does this relate to the concept of codons?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1h-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "ATG, TGC, GCA"
+        ],
+        "dependencies": [],
+        "title": "Overlapping Segments",
+        "text": "How does the N-gram model handle overlapping sequences? Consider the sequence ATGCA. What overlapping segments would be captured?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "ATG, TGC, GCA",
+            "AT, TG, GC, CA",
+            "ATGCA",
+            "TGA, GAC, CAT"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1h-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes, it might capture segments like TGG from GGTT."
+        ],
+        "dependencies": [],
+        "title": "Wrap-around Segments",
+        "text": "Does the N-gram model consider the end of a sequence as connected to the beginning? What might this imply for DNA sequences?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes, it might capture segments like TGG from GGTT.",
+            "No, it only considers linear sequences.",
+            "Yes, but only for sequences longer than $$3$$ letters.",
+            "No, it treats each sequence independently."
+        ]
+    }
+]

@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a9edaf5ds100-su20-final-Q4j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Normal Equations",
+        "text": "The normal equations are derived from setting the gradient of the loss function to zero. This ensures that we find the minimum of the loss function. Consider how the design matrix X and its properties affect the uniqueness of the solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q4j-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Role of the Intercept Term",
+        "text": "The intercept term in a linear regression model allows the line to fit the data better by adjusting vertically. Think about how centering the data affects the intercept and the overall fit of the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q4j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The mean of each column (except the intercept) becomes zero."
+        ],
+        "dependencies": [],
+        "title": "Exploring the Design Matrix",
+        "text": "What happens to the design matrix X when it is mean-centered?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The mean of each column (except the intercept) becomes zero.",
+            "The mean of each column becomes negative",
+            "The mean of each column becomes one",
+            "The mean of each column becomes zero",
+            "The mean of each column remains unchanged"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q4j-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Centering the data does not affect the uniqueness of the solution."
+        ],
+        "dependencies": [],
+        "title": "Impact of Centering on Solutions",
+        "text": "How does centering the data affect the solution to the normal equations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Centering the data affects the uniqueness of the solution",
+            "Centering the data does not affect the uniqueness of the solution",
+            "Centering the data does not affect the uniqueness of the solution.",
+            "Centering the data makes the solution less unique",
+            "Centering the data makes the solution more unique"
+        ]
+    }
+]

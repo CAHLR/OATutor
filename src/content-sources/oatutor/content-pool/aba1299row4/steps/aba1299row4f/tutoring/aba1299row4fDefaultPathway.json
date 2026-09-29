@@ -1,0 +1,58 @@
+[
+    {
+        "id": "aba1299row4f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Training and Validation Errors",
+        "text": "When the training error increases but the validation error decreases, it often indicates a change in the model's complexity. Consider how the model's ability to generalize to new data might be affected by the number of features used.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row4f-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row4f-h1"
+        ],
+        "title": "Model Complexity and Variance",
+        "text": "Think about how adding more features to a model can affect its variance. Does it always increase or decrease the variance? How might this relate to the training and validation errors?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row4f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Variance increases"
+        ],
+        "dependencies": [
+            "aba1299row4f-h2"
+        ],
+        "title": "Evaluating Model Variance",
+        "text": "If a model's complexity increases, what typically happens to its variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Variance increases",
+            "Variance decreases",
+            "Variance remains the same"
+        ]
+    },
+    {
+        "id": "aba1299row4f-h4",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row4f-h3"
+        ],
+        "title": "Connecting Errors and Variance",
+        "text": "Consider how the relationship between training error, validation error, and variance can help you determine the truth of the statement about observational variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

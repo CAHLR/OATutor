@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a640c04row4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Condition",
+        "text": "To find the nuggets with weight less than $$0.6$$ ounces, you need to filter the DataFrame using a condition. Think about how you can use the column name and a comparison operator to achieve this.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row4a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$nuggets[\"weight\"]<0.6$$"
+        ],
+        "dependencies": [
+            "a640c04row4a-h1"
+        ],
+        "title": "Choosing the Correct Condition",
+        "text": "Which of the following conditions correctly filters nuggets with weight less than $$0.6$$ ounces?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$nuggets[\"weight\"] \\leq 0.6$$",
+            "$$nuggets[weight]<0.6$$",
+            "$$nuggets[\"weight\"]>0.6$$",
+            "$$nuggets[\"weight\"]<0.6$$",
+            "nuggets[nuggets[\"weight\"]<0.6]"
+        ]
+    },
+    {
+        "id": "a640c04row4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a640c04row4a-h2"
+        ],
+        "title": "Filtering the DataFrame",
+        "text": "Once you have the condition, apply it to the DataFrame to filter out the rows where the weight is less than $$0.6$$ ounces. This will give you a subset of the original DataFrame.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

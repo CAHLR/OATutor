@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a89b247ds100-su19-final-Q6r-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "Adding a feature of random numbers between $$0$$ and $$1$$ introduces noise to the model. Consider how noise affects the model's ability to generalize to new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6r-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6r-h1"
+        ],
+        "title": "Effect on Bias",
+        "text": "Bias refers to the error introduced by approximating a real-world problem with a simplified model. Think about whether adding random noise makes the model more or less simplified.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6r-h3",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6r-h1"
+        ],
+        "title": "Effect on Variance",
+        "text": "Variance refers to the model's sensitivity to fluctuations in the training data. Consider how adding random noise might affect this sensitivity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6r-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "more complex"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6r-h2"
+        ],
+        "title": "Analyzing Bias",
+        "text": "Does adding random noise make the model more complex or more simplified?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "more complex",
+            "more simplified"
+        ]
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6r-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "increase"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6r-h3"
+        ],
+        "title": "Analyzing Variance",
+        "text": "Does adding random noise increase or decrease the model's sensitivity to the training data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "increase",
+            "decrease"
+        ]
+    }
+]

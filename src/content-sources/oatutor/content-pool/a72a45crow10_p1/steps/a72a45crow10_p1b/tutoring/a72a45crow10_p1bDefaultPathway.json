@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a72a45crow10_p1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Sampling Frame",
+        "text": "Think about who is actually being considered for selection in this sampling method. It's not about who they want to study, but who they are actually able to ask.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow10_p1b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All Data $$100$$ students that attend discussion section this week."
+        ],
+        "dependencies": [
+            "a72a45crow10_p1b-h1"
+        ],
+        "title": "Identifying the Group",
+        "text": "Which group of students is directly accessible to the TAs for this sampling method?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "All Data $$100$$ students that attend discussion section this week.",
+            "All UC Berkeley students that spend an $$above-average$$ amount on chocolate milk.",
+            "Every fifth student in the discussion section.",
+            "All UC Berkeley students.",
+            "All Data $$100$$ teaching assistants."
+        ]
+    },
+    {
+        "id": "a72a45crow10_p1b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a72a45crow10_p1b-h2"
+        ],
+        "title": "Clarifying the Sampling Frame",
+        "text": "The sampling frame is the list or group from which the sample is actually drawn. Consider the context of the discussion sections and who is present there.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

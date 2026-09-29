@@ -1,0 +1,66 @@
+[
+    {
+        "id": "aba1299row6p2k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting in machine learning models. It adds a penalty to the loss function to discourage complex models. Can you think of how this might affect bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6p2k-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row6p2k-h1"
+        ],
+        "title": "Types of Regularization",
+        "text": "There are different types of regularization, such as L1 and L2. L1 regularization adds a penalty equal to the absolute value of the magnitude of coefficients, while L2 adds a penalty equal to the square of the magnitude. How might these affect the model's complexity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6p2k-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "aba1299row6p2k-h2"
+        ],
+        "title": "Effect on Bias",
+        "text": "Does regularization increase or decrease model bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease"
+        ]
+    },
+    {
+        "id": "aba1299row6p2k-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase bias and decrease variance"
+        ],
+        "dependencies": [
+            "aba1299row6p2k-h3"
+        ],
+        "title": "Regularization and Bias-Variance Tradeoff",
+        "text": "Regularization affects the bias-variance tradeoff. Does it typically increase bias and decrease variance, or decrease bias and increase variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase bias and decrease variance",
+            "Decrease bias and increase variance"
+        ]
+    }
+]

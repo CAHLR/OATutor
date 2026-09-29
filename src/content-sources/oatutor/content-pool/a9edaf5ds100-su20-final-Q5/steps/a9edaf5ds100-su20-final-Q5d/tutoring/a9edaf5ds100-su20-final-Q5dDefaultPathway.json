@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a9edaf5ds100-su20-final-Q5d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Loss Function",
+        "text": "The loss function here is the difference between the actual value \\(y_i\\) and the predicted value \\(f_{\\theta}(x_i)\\). Think about how this difference can guide the adjustment of \\(\\theta_0\\) and \\(\\theta_1\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q5d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Gradient Descent Basics",
+        "text": "In gradient descent, we update the parameters by moving in the direction that reduces the loss. This involves calculating the derivative of the loss with respect to each parameter. What does this derivative tell us about the direction to move?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q5d-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-0.5-y_i+0.5\\theta_0+\\theta_0 $$\\theta_1$$ x_1+sin\\left(\\theta_1\\right) $$x_2$$"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su20-final-Q5d-h1"
+        ],
+        "title": "Calculating the Derivative for \\(\\theta_0\\)",
+        "text": "What is the derivative of the loss function \\(L(\\theta)=y_i-f_{\\theta}(x_i)\\) with respect to \\(\\theta_0\\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-0.5-y_i+0.5\\theta_0+\\theta_0 $$\\theta_1$$ x_1+sin\\left(\\theta_1\\right) $$x_2$$",
+            "$$-0.5-y_i+0.5\\theta_0+\\theta_0 \\theta_1 x_1+sin\\left(\\theta_1\\right) x_2$$",
+            "$$-y_i+0.5\\theta_0+\\theta_0 \\theta_1 x_1+sin\\left(\\theta_1\\right) x_2$$",
+            "$$0.5-y_i+0.5\\theta_0+\\theta_0 \\theta_1 x_1+sin\\left(\\theta_1\\right) x_2$$"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q5d-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-\\theta_0$$ x_1-cos\\left(\\theta_1\\right) $$x_2$$"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su20-final-Q5d-h1"
+        ],
+        "title": "Calculating the Derivative for \\(\\theta_1\\)",
+        "text": "What is the derivative of the loss function \\(L(\\theta)=y_i-f_{\\theta}(x_i)\\) with respect to \\(\\theta_1\\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-\\theta_0$$ x_1-cos\\left(\\theta_1\\right) $$x_2$$",
+            "$$-\\theta_0 x_1+cos\\left(\\theta_1\\right) x_2$$",
+            "$$-\\theta_0 x_1-cos\\left(\\theta_1\\right) x_2$$",
+            "$$\\theta_0 x_1+cos\\left(\\theta_1\\right) x_2$$"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q5d-h5",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-su20-final-Q5d-h2"
+        ],
+        "title": "Updating \\(\\theta_0\\) and \\(\\theta_1\\)",
+        "text": "Once you have the derivatives, remember that the update rule for gradient descent is \\(\\theta**{(t+1)}=\\theta**{(t)}-\\alpha\\cdot\\text{derivative}\\), where \\(\\alpha\\) is the learning rate. How does this rule apply to our parameters?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

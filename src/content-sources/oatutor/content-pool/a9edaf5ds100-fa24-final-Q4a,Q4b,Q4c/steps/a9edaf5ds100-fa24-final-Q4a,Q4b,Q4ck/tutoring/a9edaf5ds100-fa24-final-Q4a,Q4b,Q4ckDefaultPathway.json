@@ -1,0 +1,74 @@
+[
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4ck-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting by adding a penalty to the model's complexity. It can help reduce variance but might not always reduce bias. Consider how regularization affects the model's ability to fit the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4ck-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "increase"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4ck-h1"
+        ],
+        "title": "Effect of Regularization on Bias",
+        "text": "Does regularization typically increase or decrease model bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "increase",
+            "decrease"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4ck-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Bias-Variance Tradeoff",
+        "text": "The bias-variance tradeoff is a fundamental concept in machine learning. Increasing regularization can increase bias while decreasing variance. Think about how this tradeoff affects the model's predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4ck-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "increase bias"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4ck-h3"
+        ],
+        "title": "Impact of Regularization on Bias Squared",
+        "text": "If a model already has high bias, what is the likely effect of adding regularization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "increase bias",
+            "decrease bias"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4ck-h5",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Analyzing the Model Equation",
+        "text": "The model equation is $$y=\\theta_0+\\theta_1 {x_1}^2+\\theta_2 \\sqrt{x_2}$$. Consider how each term contributes to the model's predictions and how regularization might affect these terms.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

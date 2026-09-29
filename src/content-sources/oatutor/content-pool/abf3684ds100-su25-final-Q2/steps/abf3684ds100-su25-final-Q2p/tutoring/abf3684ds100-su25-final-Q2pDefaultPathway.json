@@ -1,0 +1,64 @@
+[
+    {
+        "id": "abf3684ds100-su25-final-Q2p-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L1 and L2 Regularization",
+        "text": "L1 regularization, also known as Lasso, tends to produce sparse models by driving some coefficients to zero, which can help in feature selection. On the other hand, L2 regularization, or Ridge, tends to distribute the error among all the terms. Think about how these characteristics might affect the model's performance and loss.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2p-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "L1"
+        ],
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2p-h1"
+        ],
+        "title": "Comparing Loss in L1 and L2 Regularization",
+        "text": "Consider how the penalty terms in L1 and L2 regularization affect the loss function. Which regularization method is more likely to result in a higher average loss?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "L1",
+            "L2"
+        ]
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2p-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Feature Selection with L1 Regularization",
+        "text": "L1 regularization can help identify the most predictive features by reducing some coefficients to zero. This characteristic is particularly useful when you suspect that only a few features are truly important. How might this affect the model's interpretability?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2p-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "L1"
+        ],
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2p-h3"
+        ],
+        "title": "Impact of Regularization on Model Complexity",
+        "text": "Which regularization method is more likely to produce a simpler model with fewer non-zero coefficients?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "L1",
+            "L2"
+        ]
+    }
+]

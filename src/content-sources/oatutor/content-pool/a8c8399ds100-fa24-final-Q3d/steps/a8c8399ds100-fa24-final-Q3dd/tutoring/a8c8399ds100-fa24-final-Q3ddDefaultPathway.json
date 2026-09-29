@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a8c8399ds100-fa24-final-Q3dd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model Equation",
+        "text": "The model equation given is $$self_{rating}=\\theta_0+\\theta_1 critic_1$$. This equation predicts $$self_{rating}$$ based on $$critic_{1's}$$ rating. Consider how changes to $$self_{rating}$$ might affect the parameters in this equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa24-final-Q3dd-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-fa24-final-Q3dd-h1"
+        ],
+        "title": "Effect of Subtracting the Mean",
+        "text": "Subtracting the mean from $$self_{rating}$$ changes the scale of $$self_{rating}$$ but does not affect the relationship between $$self_{rating}$$ and $$critic_1$$ in the model equation. Think about how this operation impacts the parameters $$\\theta_0$$ and $$\\theta_1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa24-final-Q3dd-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa24-final-Q3dd-h2"
+        ],
+        "title": "Impact on $$\\theta_1$$",
+        "text": "Does subtracting the mean of $$self_{rating}$$ change the slope of the relationship between $$self_{rating}$$ and $$critic_1$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

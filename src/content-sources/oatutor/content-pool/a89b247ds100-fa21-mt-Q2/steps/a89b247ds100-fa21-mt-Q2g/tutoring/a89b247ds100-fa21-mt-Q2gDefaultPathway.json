@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a89b247ds100-fa21-mt-Q2g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linearization",
+        "text": "When trying to linearize a relationship, consider transformations that can make the data appear more linear. Think about how logarithms or square roots might affect the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2g-h1"
+        ],
+        "title": "Exploring Logarithmic Transformations",
+        "text": "Logarithmic transformations can be useful when dealing with exponential growth or when the data spans several orders of magnitude. Consider how applying a logarithm to the x-values might help.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "x'=log(x),y'=y"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2g-h2"
+        ],
+        "title": "Choosing the Right Transformation",
+        "text": "Which transformation would make the x-values more linear if they exhibit exponential growth?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$x'=x, y'=e^y$$",
+            "x'=log(x),y'=y",
+            "$$x'=x, y'=y^2$$",
+            "x'=sqrt(x),y'=log(y)"
+        ]
+    }
+]

@@ -1,0 +1,66 @@
+[
+    {
+        "id": "aba1299row10d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MAE and MSE",
+        "text": "Mean Absolute Error (MAE) and Mean Squared Error (MSE) are both measures of error in a model. MAE is the average of the absolute differences between predicted and actual values, while MSE is the average of the squared differences. Consider how these differences might affect the uniqueness of the solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring Uniqueness in Solutions",
+        "text": "When considering the uniqueness of solutions in optimization problems, think about the nature of the function being minimized. Is it always convex? Does it have multiple minima? These characteristics can influence whether a unique solution exists.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A convex function has a unique global minimum."
+        ],
+        "dependencies": [
+            "aba1299row10d-h2"
+        ],
+        "title": "Convexity and Uniqueness",
+        "text": "Which of the following statements is true about convex functions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A convex function has a unique global minimum.",
+            "A convex function has multiple global minima.",
+            "A convex function has no global minimum."
+        ]
+    },
+    {
+        "id": "aba1299row10d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "MAE is not always convex."
+        ],
+        "dependencies": [
+            "aba1299row10d-h1"
+        ],
+        "title": "Characteristics of MAE",
+        "text": "What is a key characteristic of the Mean Absolute Error (MAE) function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "MAE is always convex.",
+            "MAE is not always convex.",
+            "MAE is always differentiable."
+        ]
+    }
+]

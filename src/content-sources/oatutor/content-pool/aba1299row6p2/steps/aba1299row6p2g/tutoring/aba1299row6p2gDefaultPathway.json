@@ -1,0 +1,42 @@
+[
+    {
+        "id": "aba1299row6p2g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting by adding a penalty to the model's complexity. L1 regularization adds a penalty equal to the absolute value of the magnitude of coefficients, while L2 regularization adds a penalty equal to the square of the magnitude of coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6p2g-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting the Coefficients",
+        "text": "Look at the coefficients in each parameter vector. The intercept is the first value, the coefficient for $$dist_{from,bell}$$ is the second, and the coefficient for $$section_{no}$$ is the third. Consider how these values might affect the attendance rate.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6p2g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$${\\theta}^b$$"
+        ],
+        "dependencies": [],
+        "title": "Comparing Parameter Vectors",
+        "text": "Which parameter vector has the largest coefficients, indicating no regularization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$${\\theta}^a$$",
+            "$${\\theta}^b$$",
+            "$${\\theta}^c$$"
+        ]
+    }
+]

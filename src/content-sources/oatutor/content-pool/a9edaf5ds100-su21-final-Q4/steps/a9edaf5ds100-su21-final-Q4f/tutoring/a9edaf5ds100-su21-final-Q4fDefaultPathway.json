@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a9edaf5ds100-su21-final-Q4f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L2 Regularization",
+        "text": "L2 regularization, also known as Ridge Regression, adds a penalty equal to the square of the magnitude of coefficients to the loss function. This helps in reducing overfitting by discouraging overly complex models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-su21-final-Q4f-h1"
+        ],
+        "title": "Effect on Model Bias",
+        "text": "When you add L2 regularization, the model tends to become simpler. Think about how this might affect the bias of the model. Does a simpler model have more or less bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su21-final-Q4f-h2"
+        ],
+        "title": "Impact on Training Set",
+        "text": "What happens to the model's performance on the training set when L2 regularization is applied?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "The model's performance on the training set decreases",
+            "The model's performance on the training set improves",
+            "The model's performance on the training set remains the same"
+        ]
+    }
+]

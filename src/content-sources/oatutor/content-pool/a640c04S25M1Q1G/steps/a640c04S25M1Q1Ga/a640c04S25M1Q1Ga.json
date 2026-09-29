@@ -1,0 +1,20 @@
+{
+    "id": "a640c04S25M1Q1Ga",
+    "stepAnswer": [
+        "q1h $$=$$ q1g.pivot\\_table(values=\"inventory\", index=\"is\\_reachable\", $$columns=\"item\"$$, $$aggfunc=\"mean\"$$, fill\\_value=0)"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Help Oski determine, for each unique combination of item and is\\_reachable, the average amount of each fruit across all store locations in the q1f DataFrame. This information will be stored as a DataFrame called q1g.\\n\\nTo guide you, the first $$5$$ rows of q1f and the entire q1g DataFrame are provided below.\\n\\nFill in blank i to create q1g. If a particular combination of fruit and reachability does not exist, the average amount in q1g should have a value of $$0$$.",
+    "stepBody": "q1g $$=$$ q1f.pivot\\_table(\\_\\_\\_\\_i\\_\\_\\_\\_)##figure1.gif## ##figure2.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "q1h $$=$$ q1g.pivot\\_table(values=\"inventory\", index=\"is\\_reachable\", $$columns=\"item\"$$, $$aggfunc=\"mean\"$$, fill\\_value=0)",
+    "choices": [
+        "q1h $$=$$ q1g.pivot\\_table(values=\"inventory\", index=\"is\\_reachable\", $$columns=\"item\"$$, $$aggfunc=\"mean\"$$, fill\\_value=0)",
+        "$$values=\"inventory\"$$, index=\"is\\_reachable\", $$columns=\"item\"$$, $$aggfunc=\"mean\"$$",
+        "$$values=\"inventory\"$$, index=\"is\\_reachable\", $$columns=\"item\"$$, $$aggfunc=\"mean\"$$, fill\\_value=0",
+        "$$values=\"inventory\"$$, index=\"is\\_reachable\", $$columns=\"item\"$$, $$aggfunc=\"mean\"$$, fill\\_value=np.nan",
+        "$$values=\"inventory\"$$, index=\"is\\_reachable\", $$columns=\"item\"$$, $$aggfunc=\"sum\"$$, fill\\_value=0",
+        "$$values=\"inventory\"$$, $$index=\"item\"$$, columns=\"is\\_reachable\", $$aggfunc=\"mean\"$$, fill\\_value=0"
+    ]
+}

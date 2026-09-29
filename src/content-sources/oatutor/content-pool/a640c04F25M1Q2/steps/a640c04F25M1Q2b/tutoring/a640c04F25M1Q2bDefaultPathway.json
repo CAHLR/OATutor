@@ -1,0 +1,86 @@
+[
+    {
+        "id": "a640c04F25M1Q2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding groupby and head",
+        "text": "The `groupby` function in pandas is used to split the data into groups based on some criteria. The `head(1)` function returns the first row of each group. Consider how many unique values are in column 'a'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04F25M1Q2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a640c04F25M1Q2b-h1"
+        ],
+        "title": "Identifying Unique Groups",
+        "text": "Look at column 'a' in the DataFrame. How many unique values do you see? These unique values determine the number of groups formed by `groupby`.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04F25M1Q2b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a640c04F25M1Q2b-h2"
+        ],
+        "title": "Counting Unique Values",
+        "text": "How many unique values are there in column 'a'?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$2$$",
+            "$$3$$",
+            "$$4$$",
+            "$$5$$"
+        ]
+    },
+    {
+        "id": "a640c04F25M1Q2b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a640c04F25M1Q2b-h3"
+        ],
+        "title": "Applying head(1)",
+        "text": "After grouping by column 'a', the `head(1)` function will return the first row of each group. Think about how many groups you have and what the first row of each group would be.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04F25M1Q2b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a640c04F25M1Q2b-h4"
+        ],
+        "title": "Result of head(1)",
+        "text": "What will be the result of applying `head(1)` to each group?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$3$$",
+            "$$4$$",
+            "$$5$$",
+            "$$6$$",
+            "$$7$$",
+            "$$8$$",
+            "$$9$$",
+            "NA"
+        ]
+    }
+]

@@ -1,0 +1,51 @@
+[
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "Gradient descent is an iterative optimization algorithm used to find the minimum of a function. It works by taking steps proportional to the negative of the gradient (or approximate gradient) of the function at the current point. Can you think about how this might apply to the objective function given?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Objective Function Components",
+        "text": "The objective function consists of two parts: the L2 loss and the exponential regularization term. Consider how each part contributes to the overall function and how gradient descent might handle these components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Gradient of the Exponential Term",
+        "text": "To apply gradient descent, you need to compute the gradient of the objective function. Focus on the exponential regularization term: lambda*sum{i=1}{p}{10**theta_i}. How would you find the gradient of this term with respect to $$\\theta_i$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Gradient Descent Applicability",
+        "text": "Can gradient descent be used to solve for the optimal solution with exponential regularization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "id": "a9edaf5ds100-su20-final-Q4o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "When we apply regularization, we are essentially adding a penalty to the model's complexity. As the regularization parameter lambda increases, the model tends to favor simpler solutions. What do you think happens to the coefficients of the model in this scenario?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q4o-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Mean-Centering and Its Effects",
+        "text": "Mean-centering the data involves adjusting the values so that each feature has a mean of zero. This can affect the intercept term in the model. How might this influence the predictions when lambda is very large?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q4o-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "the mean of the true $$y$$ values"
+        ],
+        "dependencies": [],
+        "title": "Exploring the Limit of Predictions",
+        "text": "Consider what happens to the predictions of a model when the regularization parameter lambda becomes very large. Which of the following is the most likely outcome?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "the mean of the true $$y$$ values",
+            "$$\\frac{1}{\\lambda}$$",
+            "$$p+1$$",
+            "Impossible to tell"
+        ]
+    }
+]

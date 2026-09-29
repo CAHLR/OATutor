@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a1155e4row5_p1o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "Look at the $$'oh_{tickets'}$$ column. This column shows the number of office hours tickets each staff member resolved. We need to find the staff member with the highest number in this column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p1o-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row5_p1o-h1"
+        ],
+        "title": "Sorting the DataFrame",
+        "text": "To find the staff member with the highest $$'oh_{tickets'}$$, consider sorting the DataFrame by this column in descending order. This will bring the highest value to the top.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p1o-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "performance.sort_values('oh_tickets', $$ascending=False).iloc[0]['name']$$"
+        ],
+        "dependencies": [
+            "a1155e4row5_p1o-h2"
+        ],
+        "title": "Selecting the Top Row",
+        "text": "Once the DataFrame is sorted, how can you select the first row to get the staff member's name?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "performance.sort_values('oh_tickets', $$ascending=False).iloc[0]['name']$$",
+            "performance.sort_values('oh_tickets', $$ascending=False).iloc[0,0]$$",
+            "performance.sort_values('oh_tickets')['name'].iloc[0]",
+            "performance['oh_tickets'].max()",
+            "performance.sort_values('oh_tickets', $$ascending=False)['name'][0]$$"
+        ]
+    }
+]

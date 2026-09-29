@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a8c8399ds100-su20-final-Q4l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Equations",
+        "text": "The equations shown are for finding the coefficients that minimize the mean squared error. The first equation uses the original design matrix, while the second uses the mean-centered design matrix. Consider how centering affects the intercept term.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4l-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-su20-final-Q4l-h1"
+        ],
+        "title": "Effect of Centering on MSE",
+        "text": "When you center the data, the intercept term is adjusted, but the slopes remain the same. Think about how this might affect the mean squared error when comparing the two models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4l-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Always true"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su20-final-Q4l-h2"
+        ],
+        "title": "Comparing $$MSE_A$$ and $$MSE_B$$",
+        "text": "Consider the effect of regularization on the models. Does centering the data change the regularization effect?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Always true",
+            "Sometimes true",
+            "Never true",
+            "Depends on the dataset",
+            "Cannot be determined"
+        ]
+    }
+]

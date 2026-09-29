@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-final-Q7g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding ROC Curves",
+        "text": "The ROC curve plots the true positive rate against the false positive rate at various threshold settings. A point on the curve represents a specific threshold.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q7g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q7g-h1"
+        ],
+        "title": "Interpreting the Point on the ROC Curve",
+        "text": "The point marked with an 'X' on the ROC curve indicates a specific balance between the true positive rate and the false positive rate. Consider how close this point is to the top-left corner of the plot.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q7g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0.1$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q7g-h2"
+        ],
+        "title": "Threshold and ROC Curve",
+        "text": "Which threshold value is likely to result in a high true positive rate and a low false positive rate?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0.1$$",
+            "$$0.65$$",
+            "$$0.9$$",
+            "$$1.0$$"
+        ]
+    }
+]

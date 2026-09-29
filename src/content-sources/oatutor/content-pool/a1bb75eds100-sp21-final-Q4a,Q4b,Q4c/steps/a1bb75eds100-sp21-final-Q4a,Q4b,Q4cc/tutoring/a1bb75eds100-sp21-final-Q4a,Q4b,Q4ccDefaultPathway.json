@@ -1,0 +1,83 @@
+[
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Cosine Function",
+        "text": "The cosine function, cos(x), oscillates between $$-1$$ and $$1$$. When you multiply it by a constant and add or subtract from it, you can shift and scale this oscillation. Consider how this might help in encoding time of day.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cc-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cc-h1"
+        ],
+        "title": "Periodicity of Cosine",
+        "text": "The cosine function has a period of $$2\\pi$$. This means it completes one full cycle every $$2\\pi$$ units. How does this relate to the 24-hour cycle of a day?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cc-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cc-h2"
+        ],
+        "title": "Scaling the Time of Day",
+        "text": "In the expression $$1-cos\\left(\\frac{\\pi time_{of,day}}{12}\\right)$$, the $$time_{of,day}$$ is divided by $$12$$. Think about why dividing by $$12$$ might be useful when considering the 24-hour cycle of a day.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cc-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cc-h3"
+        ],
+        "title": "Evaluating the Expression",
+        "text": "What is the value of the expression $$1-cos\\left(\\frac{12\\pi}{12}\\right)$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$2$$",
+            "$$0$$",
+            "$$1$$",
+            "$$2$$",
+            "$$3$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cc-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$ to $$2$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q4a,Q4b,Q4cc-h4"
+        ],
+        "title": "Understanding the Range",
+        "text": "What is the range of values for the expression $$1-cos\\left(\\frac{\\pi time_{of,day}}{12}\\right)$$ as $$time_{of,day}$$ varies from $$0$$ to 24?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$ to $$1$$",
+            "$$0$$ to $$2$$",
+            "$$1$$ to $$2$$",
+            "$$1$$ to $$3$$"
+        ]
+    }
+]

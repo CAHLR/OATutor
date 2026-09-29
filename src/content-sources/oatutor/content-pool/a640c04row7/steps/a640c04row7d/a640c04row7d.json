@@ -1,0 +1,19 @@
+{
+    "id": "a640c04row7d",
+    "stepAnswer": [
+        "dan\\_products.pivot\\_table(values='Aura', $$index='Brand'$$, $$columns='Repurchased'$$, $$aggfunc='mean'$$, fill\\_value=None)"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Dan wants to find out if a product being repurchased has a greater amount of Aura. Fill in the blank below to create a DataFrame called repurch\\_aura that finds the average Aura for each brand, separating it into two columns on whether or not a group of products has been repurchased. If there\u2019s a category with no data, keep the value NaN.\\n\\nFill in the blank (A)##figure4.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "dan\\_products.pivot\\_table(values='Aura', $$index='Brand'$$, $$columns='Repurchased'$$, $$aggfunc='mean'$$, fill\\_value=None)",
+    "choices": [
+        "dan\\_products.pivot\\_table(values='Aura', $$index='Brand'$$, $$columns='Repurchased'$$, $$aggfunc='mean'$$, fill\\_value=None)",
+        "dan\\_products.pivot\\_table(values='Aura', $$index='Repurchased'$$, $$columns='Brand'$$, $$aggfunc='mean'$$, fill\\_value=None)",
+        "dan\\_products.pivot\\_table(values='Aura', $$index='Brand'$$, $$columns='Repurchased'$$, $$aggfunc='mean'$$, fill\\_value=0)",
+        "dan\\_products.groupby(['Brand', 'Repurchased'])['Aura'].mean()",
+        "dan\\_products.pivot\\_table(values='Aura', $$index='Brand'$$, $$columns='Repurchased'$$, $$aggfunc='sum'$$, fill\\_value=None)"
+    ]
+}

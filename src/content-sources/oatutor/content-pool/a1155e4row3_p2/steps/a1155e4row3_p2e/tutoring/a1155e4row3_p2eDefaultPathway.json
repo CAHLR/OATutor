@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a1155e4row3_p2e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plot Type",
+        "text": "To visualize the relationship between two continuous variables, like the amount of antibiotic and the number of colonies, consider which type of plot best shows correlations or patterns between them.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row3_p2e-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "scatter"
+        ],
+        "dependencies": [
+            "a1155e4row3_p2e-h1"
+        ],
+        "title": "Choosing the Plot Type",
+        "text": "Which type of plot is typically used to show the relationship between two continuous variables?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "scatter",
+            "plot",
+            "hist",
+            "bar",
+            "boxplot"
+        ]
+    }
+]

@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a98a015ds100-su20-final-Q8e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Orthogonality",
+        "text": "Remember that the columns of a matrix in the SVD are orthogonal. What does it mean for two vectors to be orthogonal?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q8e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-su20-final-Q8e-h1"
+        ],
+        "title": "Checking Orthogonality",
+        "text": "To check if two vectors are orthogonal, calculate their dot product. If the dot product is zero, the vectors are orthogonal. Try calculating the dot product of $$u_1$$ and $$u_2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q8e-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-su20-final-Q8e-h2"
+        ],
+        "title": "Calculate the Dot Product",
+        "text": "What is the dot product of $$u_1=(1, 0, 0, 0, 0, 0)$$ and u_2=(1/2,1/2,0,0,0,0)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{1}{2}$$",
+            "$$0$$",
+            "$$1$$",
+            "$$\\frac{1}{2}$$",
+            "$$2$$"
+        ]
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q8e-h4",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-su20-final-Q8e-h3"
+        ],
+        "title": "Interpreting the Dot Product",
+        "text": "If the dot product of two vectors is not zero, what does that tell you about their orthogonality?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

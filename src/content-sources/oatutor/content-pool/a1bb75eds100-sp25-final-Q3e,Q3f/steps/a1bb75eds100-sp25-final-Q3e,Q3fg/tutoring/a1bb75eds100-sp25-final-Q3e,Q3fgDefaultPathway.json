@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fg-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Decision Thresholds",
+        "text": "When you lower the decision threshold in a logistic regression model, you are essentially making it easier for the model to predict the positive class. Think about how this might affect the number of true positives and false positives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fg-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp25-final-Q3e,Q3fg-h1"
+        ],
+        "title": "Impact on ROC-AUC",
+        "text": "The ROC-AUC is a measure of the model's ability to distinguish between classes. Consider whether changing the threshold affects the model's inherent ability to separate the classes, or if it just changes the point at which you decide to classify a prediction as positive.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fg-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The number of false positives increases."
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp25-final-Q3e,Q3fg-h1"
+        ],
+        "title": "Effect of Lowering Threshold",
+        "text": "What happens to the number of false positives when you lower the threshold from $$0.5$$ to $$0.3$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The number of false positives increases.",
+            "The number of false positives decreases.",
+            "The number of false positives stays the same."
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fg-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No, changing the threshold does not affect the $$ROC-A \\cup C$$."
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp25-final-Q3e,Q3fg-h2"
+        ],
+        "title": "ROC-AUC and Thresholds",
+        "text": "Does changing the decision threshold affect the ROC-AUC of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "No, changing the threshold does not affect the $$ROC-A \\cup C$$.",
+            "No, it does not affect the $$ROC-A \\cup C$$.",
+            "Yes, it affects the $$ROC-A \\cup C$$."
+        ]
+    }
+]

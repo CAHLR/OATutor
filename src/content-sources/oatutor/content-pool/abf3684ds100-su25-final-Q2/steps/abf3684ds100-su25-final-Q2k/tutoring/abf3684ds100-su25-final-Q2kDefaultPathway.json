@@ -1,0 +1,45 @@
+[
+    {
+        "id": "abf3684ds100-su25-final-Q2k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Objective Function",
+        "text": "The objective function is a sum of squared differences. Think about how you can minimize this type of function. What role does each parameter play in the equation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2k-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2k-h1"
+        ],
+        "title": "Partial Derivative with Respect to $$\\Theta_0$$",
+        "text": "To find the optimal value of $$\\theta_0$$, consider taking the partial derivative of the objective function with respect to $$\\theta_0$$. What happens to the function when you set this derivative to zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2k-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "4*theta_1/n*sum{i extbackslash=1}{n}{y_i+theta_1*x_i}"
+        ],
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2k-h2"
+        ],
+        "title": "Simplifying the Derivative",
+        "text": "After taking the derivative, you should have an expression involving $$\\theta_0$$, $$\\theta_1$$, $$y_i$$, and $$x_i$$. Which of the following represents the simplified form of this expression?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "4*theta_1/n*sum{i extbackslash=1}{n}{y_i+theta_1*x_i}",
+            "4*theta_1/n*sum{i extbackslash=1}{n}{y_i+theta_1*x_i} extbar 1/n*sum{i extbackslash=1}{n}{y_i+theta_1*x_i} extbar 4*theta_1/n*sum{i extbackslash=1}{n}{y_i-theta_1*x_i} extbar 1/(4*theta_1*n)*sum{i extbackslash=1}{n}{y_i+theta_1*x_i} extbar 4*theta_1/n*sum{i extbackslash=1}{n}{y_i}"
+        ]
+    }
+]

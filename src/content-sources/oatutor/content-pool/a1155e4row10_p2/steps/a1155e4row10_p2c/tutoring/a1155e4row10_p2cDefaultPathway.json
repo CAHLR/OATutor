@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a1155e4row10_p2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Violin Plots",
+        "text": "A violin plot is useful for visualizing the distribution of a dataset. It shows the density of the data at different values. Think about whether this type of plot can help you understand how many games were played by different players.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2c-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Violinplot"
+        ],
+        "dependencies": [
+            "a1155e4row10_p2c-h1"
+        ],
+        "title": "Choosing the Right Plot",
+        "text": "Which type of plot is best for visualizing the distribution of a numerical variable like $$games_{played}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Violinplot",
+            "Bar chart",
+            "Line graph",
+            "Scatter plot"
+        ]
+    },
+    {
+        "id": "a1155e4row10_p2c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row10_p2c-h2"
+        ],
+        "title": "Interpreting the Data",
+        "text": "Look at the $$'games_{played'}$$ column. Notice how the values are distributed. A violin plot can show you the spread and density of these values. Consider if this visualization helps in understanding the data better.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

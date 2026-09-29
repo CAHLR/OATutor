@@ -1,0 +1,68 @@
+[
+    {
+        "id": "aba1299row10p2e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Orthogonality",
+        "text": "In the context of OLS regression, when we say that residuals are orthogonal to the column space of the design matrix, it means that the dot product of the residual vector and any column of the design matrix is zero. This is a key property of the least squares solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10p2e-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The column space is spanned by the columns of the design matrix."
+        ],
+        "dependencies": [
+            "aba1299row10p2e-h1"
+        ],
+        "title": "Exploring the Column Space",
+        "text": "Which of the following statements is true about the column space of the design matrix in OLS regression?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The column space is spanned by the columns of the design matrix.",
+            "The column space is the same as the row space.",
+            "The column space is orthogonal to the residuals."
+        ]
+    },
+    {
+        "id": "aba1299row10p2e-h3",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row10p2e-h1"
+        ],
+        "title": "Residuals and Predictions",
+        "text": "Remember that the residuals are the differences between the observed values and the predicted values. In OLS regression, these residuals have a special relationship with the design matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10p2e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Residuals are orthogonal to the column space of the design matrix."
+        ],
+        "dependencies": [
+            "aba1299row10p2e-h3"
+        ],
+        "title": "Properties of Residuals",
+        "text": "Which of the following is a property of residuals in OLS regression?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Residuals are orthogonal to the column space of the design matrix.",
+            "Residuals are always positive.",
+            "Residuals are equal to the predicted values."
+        ]
+    }
+]

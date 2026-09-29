@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE on Training Data",
+        "text": "When you add a new feature to a model, especially one that is a transformation of an existing feature, think about how it might affect the model's ability to fit the training data. Consider how the model's flexibility changes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6f-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6f-h1"
+        ],
+        "title": "Effect of Adding a Feature",
+        "text": "What happens to the model's ability to fit the training data when you add a new feature?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6f-h2"
+        ],
+        "title": "Model Complexity and Training MSE",
+        "text": "Adding a feature can increase the model's complexity. A more complex model can fit the training data more closely. How might this affect the training MSE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6f-h3"
+        ],
+        "title": "Training MSE and Model Complexity",
+        "text": "Does increasing model complexity generally increase or decrease the training MSE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    }
+]

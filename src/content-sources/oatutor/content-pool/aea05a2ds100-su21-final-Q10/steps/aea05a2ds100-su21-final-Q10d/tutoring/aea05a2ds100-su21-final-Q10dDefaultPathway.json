@@ -1,0 +1,33 @@
+[
+    {
+        "id": "aea05a2ds100-su21-final-Q10d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Silhouette Score",
+        "text": "The silhouette score measures how similar an object is to its own cluster compared to other clusters. A higher score indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-su21-final-Q10d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "larger"
+        ],
+        "dependencies": [
+            "aea05a2ds100-su21-final-Q10d-h1"
+        ],
+        "title": "Choosing the Right k",
+        "text": "When selecting the number of clusters, k, for k-means clustering, which silhouette score should you aim for?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "smaller",
+            "larger"
+        ]
+    }
+]

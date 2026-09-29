@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1155e4row5_p1g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Jointplot",
+        "text": "A jointplot is useful for visualizing the relationship between two variables. It combines a scatter plot with histograms or density plots. Think about how this might help in understanding the relationship between $$oh_{tickets}$$ and $$ed_{hours}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p1g-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Jointplot"
+        ],
+        "dependencies": [
+            "a1155e4row5_p1g-h1"
+        ],
+        "title": "Choosing the Right Plot",
+        "text": "Which type of plot combines a scatter plot with histograms or density plots to show the relationship between two variables?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Jointplot",
+            "Bar plot",
+            "Line plot",
+            "Pie chart"
+        ]
+    },
+    {
+        "id": "a1155e4row5_p1g-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting the Data",
+        "text": "Look at the columns $$oh_{tickets}$$ and $$ed_{hours}$$. Consider how a jointplot might help you see patterns or correlations between these two variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

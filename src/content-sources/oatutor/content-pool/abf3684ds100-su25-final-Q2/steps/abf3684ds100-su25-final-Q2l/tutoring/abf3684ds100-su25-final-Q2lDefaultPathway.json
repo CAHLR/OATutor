@@ -1,0 +1,82 @@
+[
+    {
+        "id": "abf3684ds100-su25-final-Q2l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Objective Function",
+        "text": "The objective function Sammie is using is a mean squared error function. This function measures the average of the squares of the errors, which are the differences between the observed values and the predicted values. Can you identify the role of $$\\theta_0$$ in this function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2l-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Gradient Calculation",
+        "text": "The gradient of the objective function with respect to $$\\theta_0$$ is given. This gradient tells us how the function changes as $$\\theta_0$$ changes. What does the negative sign in the gradient expression indicate about the direction of change?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2l-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-6$$"
+        ],
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2l-h2"
+        ],
+        "title": "Substitute Known Values",
+        "text": "Substitute the known values into the gradient expression: $$\\theta_0=5$$, $$y_1=1$$, $$y_2=2$$, and $$n=2$$. What is the value of the gradient?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-6$$",
+            "$$-6$$",
+            "$$0$$",
+            "$$12$$",
+            "$$6$$"
+        ]
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2l-h4",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2l-h3"
+        ],
+        "title": "Using the Gradient Descent Update Rule",
+        "text": "The update rule for gradient descent is $${\\theta_0}^{new}={\\theta_0}^{old}-\\alpha gradient$$. With $$alpha=1$$, how does this rule help you find the initial value of $$\\theta_0$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2l-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-2$$"
+        ],
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2l-h4"
+        ],
+        "title": "Calculate Initial $$\\Theta_0$$",
+        "text": "Using the update rule and the calculated gradient, find the initial value of $$\\theta_0$$. Remember, $${\\theta_0}^1=5$$ and $$alpha=1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-2$$",
+            "$$2$$",
+            "$$3$$",
+            "$$8$$",
+            "$$-8$$"
+        ]
+    }
+]

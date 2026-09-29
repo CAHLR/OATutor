@@ -1,0 +1,55 @@
+[
+    {
+        "id": "abf3684ds100-fa23-mt-Q5ba-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "Rohan's model uses the logarithm of the square of the input values. Think about how this transformation affects the relationship between $$x$$ and $$y$$. What properties of logarithms might simplify your calculations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa23-mt-Q5ba-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Mean Squared Error (MSE)",
+        "text": "The Mean Squared Error is a common loss function in regression. It measures the average of the squares of the errors\u2014that is, the average squared difference between the estimated values and the actual value. How can you express this in terms of theta?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa23-mt-Q5ba-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Convex Function",
+        "text": "Since the loss function is convex, finding the minimum involves taking the derivative with respect to theta and setting it to zero. What does the derivative of the MSE with respect to theta look like?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa23-mt-Q5ba-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "sum{i\\=1}{n}{-2*(y_i-theta*log(x_i**2))*log(x_i**2)}"
+        ],
+        "dependencies": [
+            "abf3684ds100-fa23-mt-Q5ba-h3"
+        ],
+        "title": "Derivative of MSE",
+        "text": "What is the derivative of the Mean Squared Error with respect to theta?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "sum{i\\=1}{n}{-2*(y_i-theta*log(x_i**2))*log(x_i**2)}",
+            "sum{i\\=1}{n}{-2*(y_i-theta*log(x_i))*log(x_i)}",
+            "sum{i\\=1}{n}{-2*(y_i-theta*x_i)*x_i}",
+            "sum{i\\=1}{n}{-2*(y_i-theta*x_i**2)*x_i**2}"
+        ]
+    }
+]

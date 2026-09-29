@@ -1,0 +1,58 @@
+[
+    {
+        "id": "aba1299row6p2j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Bias",
+        "text": "Model bias refers to the error introduced by approximating a real-world problem, which may be complex, by a simplified model. High bias can occur if the model is too simple to capture the underlying patterns in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6p2j-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row6p2j-h1"
+        ],
+        "title": "Role of the Intercept",
+        "text": "The intercept in a model represents the expected value of the dependent variable when all independent variables are zero. Removing it might affect the model's ability to fit the data properly.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6p2j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The model becomes less flexible."
+        ],
+        "dependencies": [
+            "aba1299row6p2j-h2"
+        ],
+        "title": "Effect of Removing the Intercept",
+        "text": "What happens to the model's flexibility when the intercept is removed?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The model becomes more flexible.",
+            "The model becomes less flexible.",
+            "The model's flexibility remains unchanged."
+        ]
+    },
+    {
+        "id": "aba1299row6p2j-h4",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row6p2j-h3"
+        ],
+        "title": "Impact on Bias",
+        "text": "Consider how removing the intercept might impact the model's bias. Does it make the model more or less capable of capturing the true relationship between variables?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

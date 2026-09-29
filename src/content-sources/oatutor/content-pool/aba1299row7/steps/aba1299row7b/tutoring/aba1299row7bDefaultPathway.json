@@ -1,0 +1,59 @@
+[
+    {
+        "id": "aba1299row7b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Residual",
+        "text": "The residual is the difference between the actual value and the predicted value. In this case, you need to find out how many sols the model predicts for a mission with $$20$$ food portions and $$3$$ astronauts, and then compare it to the actual duration of $$5$$ sols.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row7b-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row7b-h1"
+        ],
+        "title": "Calculating the Predicted Value",
+        "text": "To find the predicted value, use the weight vector $$\\([-3, 0.25, 2]\\)$$ and the features \\([1,20,3]\\). The first element in the feature vector is always $$1$$ for the intercept. Calculate the dot product of these two vectors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row7b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "aba1299row7b-h2"
+        ],
+        "title": "Dot Product Calculation",
+        "text": "What is the result of the dot product $$\\([-3, 0.25, 2]\\)$$ and \\([1,20,3]\\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$4$$",
+            ">5",
+            ">6",
+            ">7"
+        ]
+    },
+    {
+        "id": "aba1299row7b-h4",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row7b-h3"
+        ],
+        "title": "Finding the Residual",
+        "text": "Now that you have the predicted value, subtract it from the actual value of $$5$$ sols to find the residual.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6t-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LASSO Regularization",
+        "text": "LASSO regularization adds a penalty to the model based on the absolute values of the coefficients. This can lead to some coefficients being exactly zero, effectively selecting a simpler model. How might this affect the model's variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6t-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6t-h1"
+        ],
+        "title": "Effect of LASSO on Model Variance",
+        "text": "Consider how reducing the number of features in a model might impact its variance. What happens to the model's flexibility when some coefficients are set to zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6t-h3",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6t-h1"
+        ],
+        "title": "Model Complexity and Variance",
+        "text": "A more complex model with many features tends to have higher variance. LASSO can reduce model complexity by shrinking some coefficients to zero. Think about how this reduction in complexity might influence variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6t-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6t-h3"
+        ],
+        "title": "Impact of Coefficient Shrinkage",
+        "text": "When LASSO shrinks coefficients, it can lead to a simpler model. How does this simplification affect the model's ability to adapt to different datasets?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    }
+]

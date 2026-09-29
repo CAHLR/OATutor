@@ -1,0 +1,43 @@
+[
+    {
+        "id": "a72a45crow10_p1i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Response Bias",
+        "text": "Response bias occurs when the responses collected in a survey are influenced by the way questions are asked or the environment in which they are asked. Think about whether the TAs asking the questions could influence the students' answers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow10_p1i-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a72a45crow10_p1i-h1"
+        ],
+        "title": "Evaluating the Sampling Method",
+        "text": "Consider the method of selecting every fifth student. Does this method introduce any bias in the selection process?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a72a45crow10_p1i-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sampling Method Considerations",
+        "text": "When using systematic sampling, like selecting every fifth student, it's important to consider if the order of students has any pattern that could affect the results. What do you think about the order in which students arrive at discussion sections?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

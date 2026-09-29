@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a1155e4row5_p1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Granularity",
+        "text": "Granularity refers to the level of detail represented by the data. Consider what each row in the DataFrame represents.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p1c-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Staff member or name"
+        ],
+        "dependencies": [
+            "a1155e4row5_p1c-h1"
+        ],
+        "title": "Identifying Granularity",
+        "text": "What does each row in the DataFrame represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Staff member or name",
+            "Role",
+            "Discussion day",
+            "Graduation status",
+            "Office hours ticket"
+        ]
+    }
+]

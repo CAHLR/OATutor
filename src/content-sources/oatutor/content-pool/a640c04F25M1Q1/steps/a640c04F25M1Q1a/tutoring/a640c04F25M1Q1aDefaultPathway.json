@@ -1,0 +1,38 @@
+[
+    {
+        "id": "a640c04F25M1Q1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding DataFrame Indexing",
+        "text": "In a DataFrame, you can access elements using the column name and the row index. For example, df['a'][1] accesses the element in column 'a' at row index $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04F25M1Q1a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "a640c04F25M1Q1a-h1"
+        ],
+        "title": "Accessing the Element",
+        "text": "What is the value at column 'a' and row index $$1$$ in the DataFrame?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$5$$",
+            "$$4$$",
+            "$$6$$",
+            "$$3$$",
+            "$$8$$",
+            "$$7$$",
+            "NA"
+        ]
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "id": "abf3684ds100-sp25-final-Q2m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Validation",
+        "text": "In 4-fold cross-validation, the dataset is divided into $$4$$ equal parts. Each part is used once as a test set while the remaining parts are used for training. Think about how many times each data point is used in training and testing.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2m-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2m-h1"
+        ],
+        "title": "Data Point Usage in Cross-Validation",
+        "text": "Consider a single data point. How many times is it used in the training set during 4-fold cross-validation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$2$$",
+            "$$3$$",
+            "$$4$$"
+        ]
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2m-h3",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2m-h2"
+        ],
+        "title": "Training and Testing in Cross-Validation",
+        "text": "Remember, in 4-fold cross-validation, each fold acts as a test set once. The remaining folds are used for training. How does this affect the number of times each data point is used in training?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a1bb75eds100-sp21-final-Q9d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization helps prevent overfitting by adding a penalty to the loss function. In L2 regularization, this penalty is proportional to the square of the magnitude of the coefficients. What effect do you think this has on the coefficients when the regularization parameter lambda is large?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q9d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q9d-h1"
+        ],
+        "title": "Effect of Large Lambda",
+        "text": "When lambda is large, the regularization term dominates the loss function. This tends to shrink the coefficients towards zero. How might this affect the slope of the decision boundary?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q9d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The decision boundary becomes less steep."
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q9d-h2"
+        ],
+        "title": "Decision Boundary and Training Error",
+        "text": "If the coefficients are shrunk towards zero, what happens to the decision boundary?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The decision boundary becomes less steep.",
+            "The decision boundary becomes more steep.",
+            "The decision boundary remains unchanged.",
+            "The decision boundary disappears."
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q9d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The training error increases."
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q9d-h3"
+        ],
+        "title": "Training Error with Large Lambda",
+        "text": "With a large lambda, how is the training error affected?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The training error increases.",
+            "The training error decreases.",
+            "The training error remains the same.",
+            "The training error becomes zero."
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q9d-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Figure A"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q9d-h4"
+        ],
+        "title": "Matching the Figure",
+        "text": "Which figure best represents a decision boundary with a large lambda?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Figure A",
+            "Figure B",
+            "Figure C",
+            "None of these"
+        ]
+    }
+]

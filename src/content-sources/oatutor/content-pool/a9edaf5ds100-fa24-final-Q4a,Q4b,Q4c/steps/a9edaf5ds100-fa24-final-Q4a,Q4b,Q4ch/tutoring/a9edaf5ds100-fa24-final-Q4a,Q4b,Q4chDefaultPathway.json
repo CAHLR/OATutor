@@ -1,0 +1,34 @@
+[
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4ch-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L1 Regularization",
+        "text": "L1 regularization, also known as Lasso, tends to produce sparse solutions. This means it often results in some coefficients being exactly zero. Consider which version has coefficients that reflect this property.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4ch-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$${\\theta}^a=[0, 0.1, 0]$$"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4ch-h1"
+        ],
+        "title": "Identifying Sparse Solutions",
+        "text": "Which version has one or more coefficients that are exactly zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$${\\theta}^a=[0, 0.1, 0]$$",
+            "$${\\theta}^b=[1, 0.5, 2]$$",
+            "$${\\theta}^c=[0.05, 0.08, 0.03]$$"
+        ]
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a9edaf5ds100-sp21-final-Q13f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "When you increase the regularization coefficient, you're essentially adding a penalty to the model's complexity. Think about how this might affect the model's ability to fit the training data closely.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp21-final-Q13f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-sp21-final-Q13f-h1"
+        ],
+        "title": "Effect on Variance",
+        "text": "Consider how adding a penalty for complexity might influence the model's variance. Does it make the model more or less sensitive to fluctuations in the training data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp21-final-Q13f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The model's complexity decreases."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp21-final-Q13f-h2"
+        ],
+        "title": "Regularization and Model Complexity",
+        "text": "As the regularization coefficient increases, what happens to the model's complexity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The model's complexity increases.",
+            "The model's complexity decreases.",
+            "The model's complexity remains the same."
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-sp21-final-Q13f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The model is less likely to overfit."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp21-final-Q13f-h3"
+        ],
+        "title": "Regularization and Overfitting",
+        "text": "How does increasing the regularization coefficient affect the model's tendency to overfit?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The model is more likely to overfit.",
+            "The model is less likely to overfit.",
+            "The model's tendency to overfit remains unchanged."
+        ]
+    }
+]

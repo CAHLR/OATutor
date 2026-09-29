@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a89b247ds100-fa18-final-Q13d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Components",
+        "text": "The expected squared error can be broken down into three main components: variance, bias squared, and irreducible error. Can you identify which part of the equation represents each of these components?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q13d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q13d-h1"
+        ],
+        "title": "Focus on Variance",
+        "text": "Consider the term E[(E[f_hat_theta(x)]-f_hat_theta(x))**2]. This term is related to the variance of the model. What does variance tell us about the model's predictions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q13d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$${\\sigma}^2$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q13d-h1"
+        ],
+        "title": "Identifying the Irreducible Error",
+        "text": "Which term in the equation represents the irreducible error, which is the noise inherent in the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$${\\sigma}^2$$",
+            "h(x)-E[f_hat_theta(x)]**2",
+            "E[(E[f_hat_theta(x)]-f_hat_theta(x))**2]"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q13d-h4",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q13d-h1"
+        ],
+        "title": "Exploring Bias",
+        "text": "The term (h(x)-E[f_hat_theta(x)])**2 is related to the bias of the model. How does bias affect the accuracy of the model's predictions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q13d-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(h(x)-E[f_hat_theta(x)])**2"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q13d-h4"
+        ],
+        "title": "Understanding Bias",
+        "text": "Which term in the equation represents the bias squared, which measures the error introduced by approximating a real-world problem?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$${\\sigma}^2$$",
+            "(h(x)-E[f_hat_theta(x)])**2",
+            "E[(E[f_hat_theta(x)]-f_hat_theta(x))**2]"
+        ]
+    }
+]

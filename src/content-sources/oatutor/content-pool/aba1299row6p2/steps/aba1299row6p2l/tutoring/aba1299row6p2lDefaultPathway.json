@@ -1,0 +1,80 @@
+[
+    {
+        "id": "aba1299row6p2l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "Look at the columns in the DataFrame. Each column represents a different variable that might affect attendance. Consider how each variable could be used to predict attendance rates.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6p2l-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row6p2l-h1"
+        ],
+        "title": "Using $$dist_{from,bell}$$",
+        "text": "Think about how the distance from the Campanile might influence attendance. Would students be more or less likely to attend if the location is further away?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6p2l-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$dist_{from,bell}$$"
+        ],
+        "dependencies": [
+            "aba1299row6p2l-h2"
+        ],
+        "title": "Predictor Variables",
+        "text": "Which of the following could be a predictor variable for attendance rate?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$dist_{from,bell}$$",
+            "$$section_{no}$$",
+            "weather",
+            "$$attendance_{rate}$$"
+        ]
+    },
+    {
+        "id": "aba1299row6p2l-h4",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row6p2l-h3"
+        ],
+        "title": "Model Bias",
+        "text": "Consider how adding more predictor variables might help reduce bias in a model. More variables can provide a more complete picture of the factors affecting attendance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6p2l-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "aba1299row6p2l-h4"
+        ],
+        "title": "Effect on Model Bias",
+        "text": "Does adding $$dist_{from,bell}$$ as a predictor variable reduce model bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

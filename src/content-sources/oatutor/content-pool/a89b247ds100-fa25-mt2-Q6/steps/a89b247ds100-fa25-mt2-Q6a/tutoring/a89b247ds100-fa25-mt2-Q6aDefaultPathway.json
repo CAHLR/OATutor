@@ -1,0 +1,62 @@
+[
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Bias",
+        "text": "When you add a new feature to a model, think about how it might affect the model's ability to capture the true relationship between the input features and the output. Consider whether the new feature could potentially introduce more error in the model's predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Impact on Model Variance",
+        "text": "Adding a new feature can increase the complexity of the model. Reflect on how this complexity might affect the model's sensitivity to fluctuations in the training data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase|Decrease"
+        ],
+        "dependencies": [],
+        "title": "Effect on Training MSE",
+        "text": "Consider how adding a new feature might affect the model's performance on the training data. Could it potentially fit the training data better or worse?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Decrease",
+            "Increase",
+            "Increase|Decrease"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase|Decrease"
+        ],
+        "dependencies": [],
+        "title": "Effect on Test MSE",
+        "text": "Think about how the addition of a new feature might impact the model's performance on unseen data. Could it lead to overfitting or underfitting?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Decrease",
+            "Increase",
+            "Increase|Decrease"
+        ]
+    }
+]

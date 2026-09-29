@@ -1,0 +1,54 @@
+[
+    {
+        "id": "a8c8399ds100-su20-final-Q4k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean-Centering",
+        "text": "Mean-centering involves subtracting the mean of each column from the respective column values, except for the intercept column. This process ensures that the mean of each column is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4k-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Regularization in Ridge Regression",
+        "text": "In ridge regression, regularization adds a penalty to the loss function to prevent overfitting. The penalty is proportional to the square of the magnitude of coefficients.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4k-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Centering on Intercept",
+        "text": "When data is mean-centered, the intercept term is not affected by the centering process. This is because the intercept is the mean of the response variable when all predictors are zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4k-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Always true"
+        ],
+        "dependencies": [],
+        "title": "Comparing Models A and B",
+        "text": "Consider how the regularization of the intercept term affects the models. Does centering the data change the impact of regularizing the intercept?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Always true",
+            "Sometimes true",
+            "Never true",
+            "Depends on the value of lambda",
+            "Cannot be determined"
+        ]
+    }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a89b247ds100-sp17-final-Q7c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bernoulli Sampling",
+        "text": "Bernoulli sampling is a probabilistic method where each row in the table has a fixed probability of being included in the sample. This means that the number of rows in the sample can vary each time you run the query.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp17-final-Q7c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring the LIMIT Clause",
+        "text": "The LIMIT clause in SQL is used to specify the number of records you want to retrieve from a query. It doesn't provide any probabilistic sampling but rather a fixed number of rows.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp17-final-Q7c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Bernoulli sampling provides a probabilistic sample, while LIMIT retrieves a fixed number of rows."
+        ],
+        "dependencies": [],
+        "title": "Comparing Sampling Methods",
+        "text": "Which of the following statements is true about Bernoulli sampling and the LIMIT clause?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Bernoulli sampling provides a probabilistic sample, while LIMIT retrieves a fixed number of rows.",
+            "LIMIT provides a probabilistic sample, while Bernoulli retrieves a fixed number of rows.",
+            "Both Bernoulli and LIMIT provide probabilistic samples.",
+            "Both Bernoulli and LIMIT retrieve a fixed number of rows."
+        ]
+    },
+    {
+        "id": "a89b247ds100-sp17-final-Q7c-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting the Output",
+        "text": "When you use TABLESAMPLE, the output can give you an idea of the distribution of data across the entire table, as it randomly selects rows based on a probability. This can hint at the overall size and structure of the table.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp17-final-Q7c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Evaluating the Statement",
+        "text": "Does the TABLESAMPLE query provide more information about the transactions table compared to the LIMIT query?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "id": "a98a015ds100-su19-final-Q2bd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatter Plot",
+        "text": "Look at the scatter plot on the left. Notice the relationship between 'mpg' and 'age'. How does the pattern of points help you understand the correlation between these two variables?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su19-final-Q2bd-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Analyzing Plot (d)",
+        "text": "Consider the distribution shown in plot (d). Does it resemble a typical distribution for 'age' or 'mpg'? Or does it seem unrelated to either?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su19-final-Q2bd-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Neither"
+        ],
+        "dependencies": [
+            "a98a015ds100-su19-final-Q2bd-h2"
+        ],
+        "title": "Choosing the Correct Label for Plot (d)",
+        "text": "Based on the distribution in plot (d), which label fits best: 'age', 'mpg', or 'Neither'?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "age",
+            "mpg",
+            "Neither"
+        ]
+    }
+]

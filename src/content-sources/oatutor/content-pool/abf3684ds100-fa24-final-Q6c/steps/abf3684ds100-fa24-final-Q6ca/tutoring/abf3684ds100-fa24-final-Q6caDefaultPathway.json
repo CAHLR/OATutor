@@ -1,0 +1,46 @@
+[
+    {
+        "id": "abf3684ds100-fa24-final-Q6ca-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Loss Function",
+        "text": "The loss function shown is a variation of the cross-entropy loss. Notice how the term for false negatives is modified by raising $$(1-p)$$ to the power of $$3$$. This modification affects the penalty for certain types of errors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa24-final-Q6ca-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-fa24-final-Q6ca-h1"
+        ],
+        "title": "Comparing with Cross-Entropy Loss",
+        "text": "In standard cross-entropy loss, the term $$\\left(1-y\\right) \\ln\\left(1-p\\right)$$ is not raised to any power. Consider how raising $$(1-p)$$ to the power of $$3$$ might change the impact of false positive predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa24-final-Q6ca-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It increases the penalty for false positives."
+        ],
+        "dependencies": [
+            "abf3684ds100-fa24-final-Q6ca-h2"
+        ],
+        "title": "Impact of the Power on $$(1-p)$$",
+        "text": "What effect does raising $$(1-p)$$ to the power of $$3$$ have on the loss function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It increases the penalty for false positives.",
+            "It decreases the penalty for false positives.",
+            "It has no effect on the penalty for false positives."
+        ]
+    }
+]

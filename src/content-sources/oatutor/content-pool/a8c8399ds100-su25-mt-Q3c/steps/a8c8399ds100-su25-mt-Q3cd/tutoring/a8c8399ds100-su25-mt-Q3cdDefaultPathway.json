@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a8c8399ds100-su25-mt-Q3cd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Non-linear Relationships",
+        "text": "The scatterplot shows a non-linear relationship between the amount of antibiotic and the number of colonies. Consider transformations that can help linearize such relationships. Common transformations include logarithmic, square root, and reciprocal transformations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su25-mt-Q3cd-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su25-mt-Q3cd-h1"
+        ],
+        "title": "Exploring Transformations",
+        "text": "Which of the following transformations could help linearize a decreasing exponential relationship?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Exponential Transformation",
+            "Logarithmic Transformation",
+            "Reciprocal Transformation",
+            "Square Root Transformation",
+            "TRUE"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-su25-mt-Q3cd-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-su25-mt-Q3cd-h2"
+        ],
+        "title": "Logarithmic Transformation",
+        "text": "A logarithmic transformation can be useful when the rate of change decreases as the independent variable increases. This is often seen in exponential decay relationships.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

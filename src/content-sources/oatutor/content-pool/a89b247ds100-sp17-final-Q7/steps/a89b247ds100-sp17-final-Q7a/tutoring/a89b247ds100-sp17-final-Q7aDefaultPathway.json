@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a89b247ds100-sp17-final-Q7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bernoulli Sampling",
+        "text": "Bernoulli sampling involves randomly selecting each row with a certain probability. This means that each row is independently chosen to be part of the sample or not. Can you think about how this might affect the speed of the query?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp17-final-Q7a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring the LIMIT Clause",
+        "text": "The LIMIT clause allows you to specify the number of rows you want to retrieve from the table. Consider how this might be more efficient than evaluating each row individually, as in Bernoulli sampling.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp17-final-Q7a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TABLESAMPLE query"
+        ],
+        "dependencies": [],
+        "title": "Comparing Query Execution",
+        "text": "Which query do you think requires the database to evaluate each row individually?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TABLESAMPLE query",
+            "LIMIT query"
+        ]
+    },
+    {
+        "id": "a89b247ds100-sp17-final-Q7a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "LIMIT query"
+        ],
+        "dependencies": [],
+        "title": "Evaluating Query Speed",
+        "text": "Which query is likely to be faster if the database can directly access a specific number of rows without evaluating each one?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TABLESAMPLE query",
+            "LIMIT query"
+        ]
+    }
+]

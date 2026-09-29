@@ -1,0 +1,47 @@
+[
+    {
+        "id": "aba1299row8p2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Residuals",
+        "text": "Residuals are the differences between the observed values and the predicted values from a model. In a well-fitted model, residuals should be randomly scattered around zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row8p2d-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row8p2d-h1"
+        ],
+        "title": "Pattern in Residuals",
+        "text": "Look for patterns in the residual plot. If residuals show a systematic pattern, it might indicate a problem with the model, such as a missing variable or incorrect functional form.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row8p2d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The model is consistently underpredicting."
+        ],
+        "dependencies": [
+            "aba1299row8p2d-h2"
+        ],
+        "title": "Interpreting the Residual Plot",
+        "text": "What does it mean if the residuals are mostly above zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The model is consistently underpredicting.",
+            "The design matrix is not full column rank.",
+            "One or more of the columns used to predict $$y$$ must undergo a log transformation.",
+            "The model does not include an intercept term."
+        ]
+    }
+]

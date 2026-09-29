@@ -1,0 +1,18 @@
+{
+    "id": "a640c04row6c",
+    "stepAnswer": [
+        "fillna(0)"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Aneesh has a broken copy of the jacket, called jacket\\_miss. This broken copy has some missing values in num\\_jacket\\_bought. No other columns have missing values.\\n\\nAneesh wants to produce a contour plot that visualizes the joint distribution of collar\\_size and num\\_jacket\\_bought from jacket\\_miss. Fill all missing values with $$0$$. Do not include any datapoint where the value of num\\_jacket\\_bought is higher than $$10$$. Fill in the blanks to achieve this.",
+    "stepBody": "Fill in blank (i):",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "fillna(0)",
+        "dropna()",
+        "fillna(num\\_jacket\\_bought=0)",
+        "replace(0)",
+        "fillna(np.nan)"
+    ]
+}

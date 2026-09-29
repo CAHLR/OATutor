@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4ci-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L2 Regularization",
+        "text": "L2 regularization, also known as Ridge regression, tends to produce models with smaller coefficients. This is because it adds a penalty equal to the square of the magnitude of coefficients to the loss function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4ci-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4ci-h1"
+        ],
+        "title": "Comparing Coefficients",
+        "text": "Look at the coefficients of each version. Which version has the smallest coefficients overall? This might indicate the use of L2 regularization.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4ci-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$${\\theta}^c=[0.05, 0.08, 0.03]$$"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa24-final-Q4a,Q4b,Q4ci-h2"
+        ],
+        "title": "Choose the Version with Smallest Coefficients",
+        "text": "Which version has the smallest coefficients, indicating it might be the result of L2 regularization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$${\\theta}^a=[0, 0.1, 0]$$",
+            "$${\\theta}^b=[1, 0.5, 2]$$",
+            "$${\\theta}^c=[0.05, 0.08, 0.03]$$",
+            "$${\\theta}^a$$ and $${\\theta}^b$$ are equally likely",
+            "None of these"
+        ]
+    }
+]

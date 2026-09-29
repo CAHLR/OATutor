@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a72a45crow10_p2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variable Types",
+        "text": "Think about what kind of data the 'price' column represents. Is it something that can take any value within a range, or is it limited to specific values?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow10_p2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a72a45crow10_p2b-h1"
+        ],
+        "title": "Continuous vs. Discrete",
+        "text": "Consider whether the 'price' can have decimal values or if it is restricted to whole numbers. This will help you determine if it's continuous or discrete.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow10_p2b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Quantitative Continuous"
+        ],
+        "dependencies": [
+            "a72a45crow10_p2b-h2"
+        ],
+        "title": "Choose the Correct Type",
+        "text": "Based on your understanding, what type of variable is 'price'?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Qualitative Nominal",
+            "Qualitative Ordinal",
+            "Quantitative Continuous",
+            "Quantitative Discrete"
+        ]
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a89b247ds100-fa21-mt-Q2n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "When thinking about reducing model variance, consider how transformations can affect the spread of your data. A transformation that compresses the range of your data might help in reducing variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2n-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring Transformations",
+        "text": "Think about how the transformation $$f(x)=\\frac{1}{x}$$ affects the values of $$x$$. What happens to the values as $$x$$ increases or decreases? How might this impact the variance of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2n-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2n-h2"
+        ],
+        "title": "Analyzing the Transformation",
+        "text": "Consider the behavior of the function $$f(x)=\\frac{1}{x}$$. What happens to f(x) as $$x$$ approaches zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "It approaches infinity",
+            "It approaches zero",
+            "It becomes negative",
+            "It remains constant"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2n-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2n-h3"
+        ],
+        "title": "Impact on Variance",
+        "text": "How does the transformation $$f(x)=\\frac{1}{x}$$ affect the spread of data values?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "It decreases the spread",
+            "It has no effect on the spread",
+            "It increases the spread",
+            "It makes the spread unpredictable"
+        ]
+    }
+]

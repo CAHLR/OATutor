@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a8c8399ds100-fa20-final-Q12i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model A",
+        "text": "Model A includes parameters for height in both inches and centimeters, and weight in both pounds and kilograms. Consider how these different units might affect the confidence intervals for each parameter.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12i-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model B",
+        "text": "Model B only includes height in centimeters and weight in kilograms. Think about how this might simplify the model compared to Model A.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12i-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\theta_{lb}$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa20-final-Q12i-h1"
+        ],
+        "title": "Impact of Units on Confidence Intervals",
+        "text": "Which parameter in Model A is likely to have a confidence interval containing $$0$$ due to unit conversion issues?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\theta_{in}$$",
+            "$$\\theta_{cm}$$",
+            "$$\\theta_{lb}$$",
+            "$$\\theta_{kg}$$"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12i-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Bootstrap Method",
+        "text": "The bootstrap method involves resampling the data with replacement to create many simulated samples. This helps estimate the variability of the parameter estimates.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12i-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The parameter might not be significant."
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa20-final-Q12i-h4"
+        ],
+        "title": "Confidence Interval and Zero",
+        "text": "Why might a confidence interval for a parameter contain 0?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The parameter might not be significant.",
+            "The parameter is always significant.",
+            "The parameter is incorrectly calculated."
+        ]
+    }
+]

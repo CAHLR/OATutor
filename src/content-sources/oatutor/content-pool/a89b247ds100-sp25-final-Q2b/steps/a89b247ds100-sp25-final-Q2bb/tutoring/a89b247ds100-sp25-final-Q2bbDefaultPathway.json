@@ -1,0 +1,86 @@
+[
+    {
+        "id": "a89b247ds100-sp25-final-Q2bb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "When you reduce the number of features in a model, it often leads to a simpler model. Think about how this affects the model's ability to fit the training data versus its ability to generalize to new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp25-final-Q2bb-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Training Error vs. Validation Error",
+        "text": "Consider why the training error might increase when you reduce the number of features. What does this tell you about the model's complexity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp25-final-Q2bb-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The model becomes less complex."
+        ],
+        "dependencies": [],
+        "title": "Evaluating Model Complexity",
+        "text": "What happens to a model's complexity when you reduce the number of features?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The model becomes more complex.",
+            "The model becomes less complex.",
+            "The model's complexity remains the same."
+        ]
+    },
+    {
+        "id": "a89b247ds100-sp25-final-Q2bb-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The bias increases."
+        ],
+        "dependencies": [
+            "a89b247ds100-sp25-final-Q2bb-h3"
+        ],
+        "title": "Impact on Bias",
+        "text": "If a model becomes less complex, what typically happens to its bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The bias increases.",
+            "The bias decreases.",
+            "The bias remains the same."
+        ]
+    },
+    {
+        "id": "a89b247ds100-sp25-final-Q2bb-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The variance decreases."
+        ],
+        "dependencies": [
+            "a89b247ds100-sp25-final-Q2bb-h3"
+        ],
+        "title": "Impact on Variance",
+        "text": "If a model becomes less complex, what typically happens to its variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The variance increases.",
+            "The variance decreases.",
+            "The variance remains the same."
+        ]
+    }
+]

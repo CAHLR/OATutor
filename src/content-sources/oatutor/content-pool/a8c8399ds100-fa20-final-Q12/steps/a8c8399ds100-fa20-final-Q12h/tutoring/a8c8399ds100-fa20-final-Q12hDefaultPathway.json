@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a8c8399ds100-fa20-final-Q12h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Confidence Intervals",
+        "text": "Confidence intervals provide a range of values that likely contain the true parameter value. If a confidence interval includes $$0$$, it suggests that the parameter might not have a significant effect.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12h-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Model A Parameters",
+        "text": "Model A includes parameters for height in inches and centimeters, and weight in pounds and kilograms. Consider how these might affect the confidence intervals.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [],
+        "title": "Analyzing Model B",
+        "text": "Does Model B include height in inches or weight in pounds?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12h-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Parameter Redundancy",
+        "text": "Including both height in inches and centimeters, or weight in pounds and kilograms, might introduce redundancy. This can affect the confidence intervals of the parameters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12h-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [],
+        "title": "Confidence Interval for $$\\theta_{cm}$$",
+        "text": "Given the redundancy in Model A, is it likely that the confidence interval for $$\\theta_{cm}$$ includes 0?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a89b247ds100-sp19-final-Q8c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variance",
+        "text": "Variance measures how much the outcomes of a random variable differ from the expected value. For a fair 6-sided die, think about how each roll can vary from the average roll value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp19-final-Q8c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-sp19-final-Q8c-h1"
+        ],
+        "title": "Expected Value of a Die Roll",
+        "text": "The expected value of a single roll of a fair 6-sided die is the average of all possible outcomes. Calculate this by summing all possible outcomes and dividing by the number of outcomes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp19-final-Q8c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-sp19-final-Q8c-h2"
+        ],
+        "title": "Calculating Variance",
+        "text": "To find the variance, you need to calculate the average of the squared differences from the expected value. Consider how each outcome of the die roll differs from the expected value and square those differences.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp19-final-Q8c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "sum{i extbackslash=1}{6}{(i-3.5)**2}/6"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp19-final-Q8c-h3"
+        ],
+        "title": "Variance Calculation Steps",
+        "text": "Which of the following represents the correct formula for calculating the variance of a single roll of a fair 6-sided die?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "sum{i extbackslash=1}{6}{(i-3.5)**2}/6",
+            "sum{i extbackslash=1}{6}{(i-3.5)**2}/5",
+            "sum{i extbackslash=1}{6}{(i-3.5)**2}/7",
+            "sum{i extbackslash=1}{6}{(i-3.5)**2}/12"
+        ]
+    }
+]

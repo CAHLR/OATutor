@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Dataset",
+        "text": "The dataset contains information about what each student ate for lunch, including the types of food, the number of servings, and the total calories. Each row represents one lunch for a student.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-sp22-mt2-Q6h-h1"
+        ],
+        "title": "Bootstrap Sampling",
+        "text": "In bootstrap sampling, we draw samples with replacement from the dataset. The size of each sample should match the number of rows in the original dataset.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$num_{rows}$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp22-mt2-Q6h-h2"
+        ],
+        "title": "Choosing the Correct Argument",
+        "text": "What should be the first argument to lunch_mat.sample()?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$num_{rows}$$",
+            "$$num_{cols}$$",
+            "$$5000$$",
+            "$$num_{rows}-1$$",
+            "$$1$$"
+        ]
+    }
+]

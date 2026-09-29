@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a98a015ds100-sp25-final-Q4a,Q4ba-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Orthogonality in PCA",
+        "text": "In PCA, orthogonality between principal components means that they are uncorrelated. Think about how vectors at right angles to each other have no projection onto one another.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp25-final-Q4a,Q4ba-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp25-final-Q4a,Q4ba-h1"
+        ],
+        "title": "Exploring PCA Properties",
+        "text": "Which of the following statements is true about PCA?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "PCA components are correlated",
+            "PCA components are orthogonal",
+            "PCA does not require orthogonality",
+            "PCA is only for supervised learning",
+            "TRUE"
+        ]
+    }
+]

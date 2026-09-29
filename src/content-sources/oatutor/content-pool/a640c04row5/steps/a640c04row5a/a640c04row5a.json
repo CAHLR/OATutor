@@ -1,0 +1,19 @@
+{
+    "id": "a640c04row5a",
+    "stepAnswer": [
+        "performance.sort\\_values('oh\\_tickets', $$ascending=False).iloc[0]['name']$$"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Who has resolved the highest number of oh\\_tickets?",
+    "stepBody": "Write a single line of code to return a String with the name of the staff member who has resolved the highest number of oh\\_tickets.\\nNote: There is exactly one staff member with the highest count.",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "performance.sort\\_values('oh\\_tickets', $$ascending=False).iloc[0]['name']$$",
+    "choices": [
+        "performance.sort\\_values('oh\\_tickets', $$ascending=False).iloc[0]['name']$$",
+        "performance.sort\\_values('oh\\_tickets', $$ascending=True).iloc[0]['name']$$",
+        "performance.sort\\_values('oh\\_tickets', $$ascending=False)['name'][0]$$",
+        "performance['name'].max()",
+        "performance.sort\\_values('name', ascending=False).iloc[0]['oh\\_tickets']"
+    ]
+}

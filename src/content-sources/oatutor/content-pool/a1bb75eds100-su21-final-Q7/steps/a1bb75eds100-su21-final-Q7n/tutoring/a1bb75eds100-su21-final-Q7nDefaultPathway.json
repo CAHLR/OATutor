@@ -1,0 +1,33 @@
+[
+    {
+        "id": "a1bb75eds100-su21-final-Q7n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Random Forests",
+        "text": "Random forests are an ensemble method that uses multiple decision trees to make predictions. They can capture complex patterns and interactions between features. Consider how this might apply to the circular pattern in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7n-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7n-h1"
+        ],
+        "title": "Boundary C Possibility",
+        "text": "Given the circular pattern of the data, could a random forest model create a non-linear boundary like C?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

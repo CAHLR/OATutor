@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a640c04row4e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Merge Function",
+        "text": "To merge two DataFrames, you need to specify the column on which you want to merge them. This column should be common to both DataFrames. Look at the columns in both DataFrames to find a match.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row4e-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "merge(expected_prices, $$on=\"chain\")$$"
+        ],
+        "dependencies": [
+            "a640c04row4e-h1"
+        ],
+        "title": "Choosing the Correct Merge Column",
+        "text": "Which column should you use to merge the $$`avg_{weights}`$$ DataFrame with the $$`expected_{prices}`$$ DataFrame?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "merge(expected_prices, $$on=\"chain\")$$",
+            "join(expected_prices, $$on=\"chain\")$$",
+            "merge(expected_prices, on=\"price_per_ounce\")",
+            "$$\\operatorname{merge}\\left(expected_{prices}\\right)$$",
+            "concat(expected_prices, $$on=\"chain\")$$"
+        ]
+    }
+]

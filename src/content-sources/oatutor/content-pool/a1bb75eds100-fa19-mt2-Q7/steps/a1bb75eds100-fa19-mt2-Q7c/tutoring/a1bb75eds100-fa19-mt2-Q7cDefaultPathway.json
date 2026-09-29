@@ -1,0 +1,61 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Recall",
+        "text": "Recall is a measure of how many actual positive cases were correctly predicted by the classifier. It is calculated as the number of true positives divided by the sum of true positives and false negatives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-mt2-Q7c-h1"
+        ],
+        "title": "Identifying True Positives",
+        "text": "Look at the predictions and true labels. A true positive is when both the prediction and the true label are $$1$$. Count how many true positives there are in the given data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-mt2-Q7c-h1"
+        ],
+        "title": "Identifying False Negatives",
+        "text": "A false negative occurs when the prediction is $$0$$, but the true label is $$1$$. Count the number of false negatives in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-mt2-Q7c-h2",
+            "a1bb75eds100-fa19-mt2-Q7c-h3"
+        ],
+        "title": "Calculating Recall",
+        "text": "Using the formula for recall, calculate the value using the true positives and false negatives you identified.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$\\frac{2}{3}$$",
+            "$$\\frac{6}{7}$$",
+            "$$1$$",
+            "$$\\frac{6}{10}$$"
+        ]
+    }
+]

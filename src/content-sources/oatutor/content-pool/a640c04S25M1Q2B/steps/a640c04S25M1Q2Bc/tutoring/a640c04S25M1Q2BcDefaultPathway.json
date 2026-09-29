@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a640c04S25M1Q2Bc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Regular Expression",
+        "text": "The regular expression `**510$` is used to match strings that start and end with '510'. Consider how this might affect the matching of phone numbers that start with '510'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04S25M1Q2Bc-h2",
+        "type": "hint",
+        "dependencies": [
+            "a640c04S25M1Q2Bc-h1"
+        ],
+        "title": "Correct Regular Expression",
+        "text": "To match phone numbers that start with '510', you need a regular expression that checks the beginning of the string. Think about how you can use `**` to indicate the start of a string and what should follow '510'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04S25M1Q2Bc-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "**510"
+        ],
+        "dependencies": [
+            "a640c04S25M1Q2Bc-h2"
+        ],
+        "title": "Choosing the Correct Pattern",
+        "text": "Which of the following regular expressions correctly matches phone numbers that start with '510'?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "**510$",
+            "**510",
+            "510$"
+        ]
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1155e4row1g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Data",
+        "text": "Look at the data provided. You have two quantitative variables: temperature and workout time. Think about how these variables might relate to each other and how you can visualize this relationship.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row1g-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1155e4row1g-h1"
+        ],
+        "title": "Choosing the Right Plot",
+        "text": "Which type of plot is suitable for visualizing the relationship between two quantitative variables?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a1155e4row1g-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row1g-h2"
+        ],
+        "title": "Contour Plot Explanation",
+        "text": "A contour plot is useful for visualizing three-dimensional data in two dimensions, showing the density of data points. Consider if this is appropriate for your two variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

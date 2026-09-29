@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a9edaf5ds100-sp21-final-Q13c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting in models by adding a penalty term to the loss function. Different types of regularization can help achieve different goals. Consider what you want to achieve with your model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp21-final-Q13c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-sp21-final-Q13c-h1"
+        ],
+        "title": "L1 vs L2 Regularization",
+        "text": "L1 regularization, also known as Lasso, tends to produce sparse models by driving some feature coefficients to zero. L2 regularization, or Ridge, tends to shrink coefficients but usually keeps all features. Which one might help you find a minimal set of features?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp21-final-Q13c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "L1 regularization."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp21-final-Q13c-h2"
+        ],
+        "title": "Choosing the Right Regularization",
+        "text": "Which form of regularization is known for producing sparse models by setting some coefficients to zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "L2 regularization.",
+            "No regularization.",
+            "L1 regularization.",
+            "Elastic net regularization.",
+            "Dropout regularization."
+        ]
+    }
+]

@@ -1,0 +1,33 @@
+[
+    {
+        "id": "abf3684ds100-su25-final-Q2e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Residuals",
+        "text": "The sum of residuals in a linear regression model is often zero. This is because the model is designed to minimize the sum of squared residuals, which often results in the residuals balancing out around zero. However, this is not always guaranteed, especially in models with transformations or non-linear terms.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2e-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2e-h1"
+        ],
+        "title": "Exploring the Model's Structure",
+        "text": "Consider the structure of Wesley's model: hat{y}_i=hat{theta}_0+hat{theta}_1*(x_{i1})**3+hat{theta}_{2}*log(x_{i2}). What can you infer about the sum of residuals based on this structure?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

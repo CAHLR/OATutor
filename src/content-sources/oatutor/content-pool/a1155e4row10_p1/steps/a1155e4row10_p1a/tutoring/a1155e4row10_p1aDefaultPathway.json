@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a1155e4row10_p1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Primary Keys",
+        "text": "A primary key is a unique identifier for each record in a dataset. It must be unique for every row. Consider which columns, when combined, can uniquely identify each row in the dataset.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row10_p1a-h1"
+        ],
+        "title": "Analyzing the Data",
+        "text": "Look at the data provided. Notice how each player can participate in multiple games and each game can have multiple players. Which combination of columns ensures that each entry is unique?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$player_{id}$$ and $$game_{id}$$"
+        ],
+        "dependencies": [
+            "a1155e4row10_p1a-h2"
+        ],
+        "title": "Choosing the Right Columns",
+        "text": "Which combination of columns would uniquely identify each record in the dataset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$player_{id}$$ and $$game_{id}$$",
+            "$$player_{id}$$",
+            "$$game_{id}$$",
+            "$$game_{type}$$ and win",
+            "$$player_{id}$$, $$game_{id}$$, and $$game_{type}$$"
+        ]
+    }
+]

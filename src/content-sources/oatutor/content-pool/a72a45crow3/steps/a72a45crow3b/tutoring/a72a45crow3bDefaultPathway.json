@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a72a45crow3b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "Take a look at the columns in the DataFrame. Each column represents a different attribute of the buildings. Consider how these attributes might relate to each other.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow3b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a72a45crow3b-h1"
+        ],
+        "title": "Focus on the 'renovated' Column",
+        "text": "Notice the 'renovated' column. It contains years when the buildings were renovated. How might this information be useful in analyzing the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow3b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Gateway"
+        ],
+        "dependencies": [
+            "a72a45crow3b-h2"
+        ],
+        "title": "Identify the Building with the Most Recent Renovation",
+        "text": "Which building has the most recent renovation year?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Evans",
+            "Soda",
+            "Gateway",
+            "Cory"
+        ]
+    },
+    {
+        "id": "a72a45crow3b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "CDSS"
+        ],
+        "dependencies": [
+            "a72a45crow3b-h3"
+        ],
+        "title": "Consider the College Affiliation",
+        "text": "Which college is associated with the building that has the most recent renovation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "LNS",
+            "CDSS",
+            "CoE"
+        ]
+    }
+]

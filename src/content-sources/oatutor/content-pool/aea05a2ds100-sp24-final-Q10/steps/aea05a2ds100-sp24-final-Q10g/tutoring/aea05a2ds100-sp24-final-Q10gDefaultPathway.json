@@ -1,0 +1,48 @@
+[
+    {
+        "id": "aea05a2ds100-sp24-final-Q10g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Distortion in k-Means",
+        "text": "In k-Means clustering, distortion refers to the sum of squared distances between each data point and its assigned cluster center. Think about how the initial placement of cluster centers might affect this distortion.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp24-final-Q10g-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-sp24-final-Q10g-h1"
+        ],
+        "title": "Convergence in k-Means",
+        "text": "Consider how k-Means clustering updates cluster centers iteratively. What role does the initial configuration play in reaching the minimum distortion?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp24-final-Q10g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp24-final-Q10g-h2"
+        ],
+        "title": "Evaluating Convergence",
+        "text": "Which of the following statements is true about k-Means clustering convergence?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Convergence always reaches the true minimum",
+            "Convergence depends on initial configuration",
+            "Convergence is guaranteed to be optimal",
+            "Convergence is independent of initial configuration",
+            "FALSE"
+        ]
+    }
+]

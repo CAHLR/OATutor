@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1155e4row10_p2j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Box Plots",
+        "text": "A box plot provides a visual summary of data, showing the median, quartiles, and potential outliers. Outliers are typically represented as individual points outside the whiskers of the box plot.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2j-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Individual points outside the whiskers"
+        ],
+        "dependencies": [
+            "a1155e4row10_p2j-h1"
+        ],
+        "title": "Identifying Outliers in Box Plots",
+        "text": "What feature of a box plot indicates the presence of outliers?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The median line",
+            "The edges of the box",
+            "Individual points outside the whiskers",
+            "The length of the whiskers"
+        ]
+    },
+    {
+        "id": "a1155e4row10_p2j-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting Whiskers",
+        "text": "The whiskers in a box plot extend to the smallest and largest values within $$1.5$$ times the interquartile range from the lower and upper quartiles. Values outside this range are considered outliers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

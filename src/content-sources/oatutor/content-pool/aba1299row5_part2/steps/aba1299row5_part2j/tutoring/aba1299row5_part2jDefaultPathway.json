@@ -1,0 +1,43 @@
+[
+    {
+        "id": "aba1299row5_part2j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Matrix Invertibility",
+        "text": "To determine if a matrix is invertible, consider its determinant. If the determinant is zero, the matrix is not invertible. Think about how this applies to the matrix $$X^T$$ X.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row5_part2j-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Full Column Rank",
+        "text": "A matrix has full column rank if all its columns are linearly independent. How does this relate to the invertibility of $$X^T$$ X?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row5_part2j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$X^T$$ X must be invertible."
+        ],
+        "dependencies": [],
+        "title": "Matrix Properties",
+        "text": "Which property of X ensures that $$X^T$$ X is invertible?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "X must not be full column rank.",
+            "X must be a square matrix.",
+            "$$X^T$$ X must be invertible.",
+            "X must have fewer rows than columns."
+        ]
+    }
+]

@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6s-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LASSO Regularization",
+        "text": "LASSO regularization adds a penalty to the model based on the absolute values of the coefficients. This can lead to some coefficients being exactly zero, effectively selecting a simpler model. How might this affect the model's variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6s-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6s-h1"
+        ],
+        "title": "Effect of LASSO on Model Variance",
+        "text": "Consider how reducing the number of features in a model might impact its variance. Does having fewer features generally increase or decrease the model's sensitivity to changes in the training data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6s-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring Model Complexity",
+        "text": "Think about how LASSO regularization affects model complexity. A simpler model with fewer features might have different variance characteristics compared to a more complex model. What does this imply about the model's ability to generalize to new data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6s-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Less likely to overfit"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6s-h3"
+        ],
+        "title": "Impact on Generalization",
+        "text": "If a model is less complex due to LASSO regularization, how might this affect its ability to generalize to unseen data? Consider whether a simpler model is more or less likely to overfit.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "More likely to overfit",
+            "Less likely to overfit"
+        ]
+    }
+]

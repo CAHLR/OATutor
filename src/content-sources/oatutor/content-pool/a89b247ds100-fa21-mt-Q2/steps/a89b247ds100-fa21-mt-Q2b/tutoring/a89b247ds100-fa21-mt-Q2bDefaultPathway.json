@@ -1,0 +1,51 @@
+[
+    {
+        "id": "a89b247ds100-fa21-mt-Q2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Risk",
+        "text": "Model risk is influenced by three main components: model bias, model variance, and observational variance. Consider how each of these might be affected if the data collected is not truthful.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2b-h1"
+        ],
+        "title": "Observational Variance",
+        "text": "Observational variance refers to the variability in the data that cannot be explained by the model. Think about how inaccurate survey responses might impact this aspect of the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The model risk increases because the observational variance increases."
+        ],
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2b-h2"
+        ],
+        "title": "Impact on Observational Variance",
+        "text": "If the survey responses are not truthful, how does this affect the observational variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            ">The model risk increases because the model variance increases.",
+            ">The model risk increases because the observational variance increases.",
+            "The model risk decreases because the model bias decreases.",
+            "The model risk decreases because the model variance decreases.",
+            "The model risk decreases because the observational variance decreases.",
+            "The model risk increases because the model bias increases.",
+            "The model risk increases because the observational variance increases.",
+            "The model risk stays the same because the lying consumers have no effect on model bias, model variance, or observational variance."
+        ]
+    }
+]

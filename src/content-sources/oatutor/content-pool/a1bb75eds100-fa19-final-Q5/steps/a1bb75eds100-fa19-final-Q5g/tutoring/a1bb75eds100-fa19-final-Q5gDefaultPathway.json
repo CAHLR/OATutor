@@ -1,0 +1,88 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-final-Q5g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Zero-One Loss",
+        "text": "Zero-one loss is a simple way to measure the accuracy of predictions. It assigns a loss of $$1$$ for each incorrect prediction and $$0$$ for each correct one. Think about how many predictions are incorrect given the true labels and predicted probabilities.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5g-h1"
+        ],
+        "title": "Applying the Threshold",
+        "text": "To determine the predicted labels, compare each predicted probability to the threshold T. If the probability is greater than T, the predicted label is 1; otherwise, it's $$0$$. Try applying this to each probability.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "0|1|1"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5g-h2"
+        ],
+        "title": "Calculate Predicted Labels",
+        "text": "What are the predicted labels when you apply the threshold $$T=0.5$$ to the probabilities $$(0.1$$, $$0.6$$, $$0.9)$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$0$$",
+            "$$0$$",
+            "$$0$$",
+            "$$0$$",
+            "0|1|1",
+            "$$1$$",
+            "$$1$$",
+            "$$1$$",
+            "$$1$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5g-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5g-h3"
+        ],
+        "title": "Comparing True and Predicted Labels",
+        "text": "Now that you have the predicted labels, compare them to the true labels (0, $$0$$, 1). Count how many times they differ to find the zero-one loss.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5g-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5g-h4"
+        ],
+        "title": "Calculate Zero-One Loss",
+        "text": "How many of the predicted labels differ from the true labels?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$1$$",
+            "$$2$$",
+            "$$3$$"
+        ]
+    }
+]

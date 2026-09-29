@@ -1,0 +1,130 @@
+[
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1p-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding k-fold Cross Validation",
+        "text": "Think about how dividing the dataset into more folds affects the training and validation process. What happens to the amount of data used for training and the amount used for validation as k increases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1p-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Computational Intensity of Cross Validation",
+        "text": "Consider the number of models that need to be trained in k-fold cross-validation compared to regular validation. Does this increase or decrease the computational load?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1p-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Using the Entire Dataset",
+        "text": "Reflect on how cross-validation utilizes the dataset. Does it allow for more comprehensive testing compared to using a single validation set?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1p-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Cross-validation in Production",
+        "text": "Think about the purpose of cross-validation during model development. Why might it not be suitable for use in a production environment?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1p-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increasing k in $$k-fold$$ cross validation decreases the bias of the model."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1p-h1"
+        ],
+        "title": "Evaluating Bias in k-fold Cross Validation",
+        "text": "What effect does increasing the number of folds (k) have on the bias of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "Increasing k in $$k-fold$$ cross validation decreases the bias of the model.",
+            "TRUE"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1p-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "We use cross validation because it is less computationally intensive than regular validation."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1p-h2"
+        ],
+        "title": "Computational Load of Cross Validation",
+        "text": "Is cross-validation less computationally intensive than regular validation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "TRUE",
+            "We use cross validation because it is less computationally intensive than regular validation."
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1p-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "We use cross validation over regular validation because cross validation allows us to use the entire training data set to test the model."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1p-h3"
+        ],
+        "title": "Dataset Utilization in Cross Validation",
+        "text": "Does cross-validation allow us to use the entire training dataset to test the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "TRUE",
+            "We use cross validation over regular validation because cross validation allows us to use the entire training data set to test the model."
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1p-s4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$Cross-validation$$ cannot be used in production, as the model is cheating by looking at validation samples."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1p-h4"
+        ],
+        "title": "Cross-validation in Production Environments",
+        "text": "Can cross-validation be used in production without the model \"cheating\" by looking at validation samples?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$Cross-validation$$ cannot be used in production, as the model is cheating by looking at validation samples.",
+            "FALSE",
+            "TRUE"
+        ]
+    }
+]

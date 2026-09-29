@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a9edaf5ds100-su20-final-Q4f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean-Centering",
+        "text": "Mean-centering involves adjusting the data so that each feature has a mean of zero. This can help in simplifying the interpretation of the intercept term in a linear model. Consider how this might affect the calculation of the mean squared error (MSE).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q4f-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring Full Column Rank",
+        "text": "When a matrix has full column rank, it means that its columns are linearly independent. This property is crucial for ensuring that the matrix is invertible. Think about how this might influence the solutions for the coefficients in linear regression.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q4f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Comparing MSEs",
+        "text": "If the data is mean-centered, how does this affect the calculation of the mean squared error (MSE)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

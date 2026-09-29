@@ -1,0 +1,79 @@
+[
+    {
+        "id": "aea05a2ds100-fa24-final-Q8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding k-Means Clustering",
+        "text": "In k-Means clustering, each point is assigned to the cluster whose center is closest to it. To determine which cluster Team SantaQlaus belongs to, calculate the distance from Team SantaQlaus to each cluster center.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-fa24-final-Q8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-fa24-final-Q8a-h1"
+        ],
+        "title": "Calculating Distance",
+        "text": "The distance between two points (x1,y1) and (x2,y2) in a 2D space can be calculated using the formula: distance $$=$$ $$\\sqrt{\\left(x2-x1\\right)^2+\\left(y2-y1\\right)^2}$$. Try applying this formula to find the distance from Team SantaQlaus to each cluster center.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-fa24-final-Q8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "aea05a2ds100-fa24-final-Q8a-h2"
+        ],
+        "title": "Distance to Cluster A",
+        "text": "Calculate the distance from Team SantaQlaus $$(3,1)$$ to the center of Cluster A $$(0,5)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-fa24-final-Q8a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3.162$$"
+        ],
+        "dependencies": [
+            "aea05a2ds100-fa24-final-Q8a-h2"
+        ],
+        "title": "Distance to Cluster B",
+        "text": "Calculate the distance from Team SantaQlaus $$(3,1)$$ to the center of Cluster B $$(6,0)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-fa24-final-Q8a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Cluster B"
+        ],
+        "dependencies": [
+            "aea05a2ds100-fa24-final-Q8a-h3"
+        ],
+        "title": "Choosing the Closest Cluster",
+        "text": "Based on the distances calculated, which cluster is Team SantaQlaus closer to?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Cluster A",
+            "Cluster B"
+        ]
+    }
+]

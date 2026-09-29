@@ -1,0 +1,47 @@
+[
+    {
+        "id": "aba1299row1_part2f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "In gradient descent, the update rule for the parameter \\( $$\\theta$$ \\) is given by \\( \\theta**{(t+1)} $$=$$ \\theta**{(t)} - \\alpha \\frac{d}{d\\theta}L(\\theta**{(t)}) \\). This means you adjust \\( $$\\theta$$ \\) by moving in the direction opposite to the gradient.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1_part2f-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row1_part2f-h1"
+        ],
+        "title": "Applying the Update Rule",
+        "text": "Given \\( \\theta**{(t+1)} $$=$$ $$9$$ \\) and \\( \\frac{d}{d\\theta}L(\\theta**{(t)}) $$=$$ $$-2$$ \\) at \\( $$t$$ $$=$$ $$2$$ \\), use the update rule \\( \\theta**{(t+1)} $$=$$ \\theta**{(t)} - \\alpha \\frac{d}{d\\theta}L(\\theta**{(t)}) \\) to find \\( \\theta**{(2)} \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1_part2f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [
+            "aba1299row1_part2f-h2"
+        ],
+        "title": "Calculate \\( \\theta**{(2)} \\)",
+        "text": "Using the update rule \\( \\theta**{(t+1)} $$=$$ \\theta**{(t)} - \\alpha \\frac{d}{d\\theta}L(\\theta**{(t)}) \\), what is \\( \\theta**{(2)} \\) if \\( \\theta**{(t+1)} $$=$$ $$9$$ \\), \\( \\alpha $$=$$ $$1$$ \\), and \\( \\frac{d}{d\\theta}L(\\theta**{(t)}) $$=$$ $$-2$$ \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$7$$",
+            ">8",
+            ">9",
+            ">10"
+        ]
+    }
+]

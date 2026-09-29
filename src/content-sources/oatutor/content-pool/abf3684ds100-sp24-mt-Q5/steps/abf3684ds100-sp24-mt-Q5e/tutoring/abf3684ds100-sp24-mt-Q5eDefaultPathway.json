@@ -1,0 +1,43 @@
+[
+    {
+        "id": "abf3684ds100-sp24-mt-Q5e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE Minimization",
+        "text": "When trying to minimize the Mean Squared Error (MSE) using a constant model, think about how the model's prediction relates to the actual data points. What statistical measure best represents the center of the data in terms of minimizing squared differences?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp24-mt-Q5e-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp24-mt-Q5e-h1"
+        ],
+        "title": "Exploring the Median",
+        "text": "Consider the role of the median in a dataset. Does it minimize the sum of squared differences from the data points?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "abf3684ds100-sp24-mt-Q5e-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Mean vs. Median",
+        "text": "The mean is often used to minimize the sum of squared differences. How does this compare to the median, which minimizes the sum of absolute differences?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

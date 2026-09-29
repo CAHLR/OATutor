@@ -1,0 +1,49 @@
+[
+    {
+        "id": "a98a015ds100-fa19-final-Q8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Matrix Dimensions",
+        "text": "When considering the dimensions of a matrix, remember that the number of columns in the original matrix $X$ will determine the number of columns in $V**{T}$. How many columns does $X$ have?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-final-Q8b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa19-final-Q8b-h1"
+        ],
+        "title": "PCA Decomposition Insight",
+        "text": "In PCA, the matrix $V**{T}$ is derived from the right singular vectors of $X$. These vectors correspond to the features of $X$. How many features does $X$ have?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-final-Q8b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa19-final-Q8b-h2"
+        ],
+        "title": "Counting Columns in $X$",
+        "text": "How many columns are there in the matrix $X$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$2$$",
+            "$$3$$",
+            "$$4$$",
+            "$$5$$",
+            "None of these"
+        ]
+    }
+]

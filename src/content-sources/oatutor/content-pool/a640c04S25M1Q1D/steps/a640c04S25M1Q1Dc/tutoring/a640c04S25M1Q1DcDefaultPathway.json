@@ -1,0 +1,35 @@
+[
+    {
+        "id": "a640c04S25M1Q1Dc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Sorting Function",
+        "text": "To sort the DataFrame, you need to specify the column by which you want to sort. Think about which column represents the price of the bananas.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04S25M1Q1Dc-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "price"
+        ],
+        "dependencies": [
+            "a640c04S25M1Q1Dc-h1"
+        ],
+        "title": "Choosing the Correct Column",
+        "text": "Which column should you use to sort the DataFrame by the price of bananas?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "inventory",
+            "item",
+            "price",
+            "chain"
+        ]
+    }
+]

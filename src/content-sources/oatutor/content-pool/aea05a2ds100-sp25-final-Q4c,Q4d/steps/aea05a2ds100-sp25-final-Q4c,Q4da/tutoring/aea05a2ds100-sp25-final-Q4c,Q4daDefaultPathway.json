@@ -1,0 +1,81 @@
+[
+    {
+        "id": "aea05a2ds100-sp25-final-Q4c,Q4da-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Single Linkage",
+        "text": "Single linkage clustering merges clusters based on the shortest distance between any two points in the clusters. Think about how this might affect which pandas get grouped together.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp25-final-Q4c,Q4da-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Visualizing the Clusters",
+        "text": "Try sketching a simple diagram of the pandas in the PC space. Mark the distances between them. This can help you visualize which pandas are closest to each other.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp25-final-Q4c,Q4da-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sqrt{\\left(x2-x1\\right)^2+\\left(y2-y1\\right)^2}$$"
+        ],
+        "dependencies": [],
+        "title": "Distance Calculation",
+        "text": "If Panda $$3$$ is at (x1,y1) and Panda $$4$$ is at (x2,y2), what is the distance between them?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp25-final-Q4c,Q4da-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Pandas $$1$$ and $$2$$"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp25-final-Q4c,Q4da-h1"
+        ],
+        "title": "Cluster Merging",
+        "text": "After the first merge, which pandas are in the same cluster?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Pandas $$1$$ and $$2$$",
+            "Pandas $$3$$ and $$4$$",
+            "Pandas $$5$$ and $$6$$"
+        ]
+    },
+    {
+        "id": "aea05a2ds100-sp25-final-Q4c,Q4da-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Pandas $$3$$ and $$4$$"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp25-final-Q4c,Q4da-h4"
+        ],
+        "title": "Third Step of Clustering",
+        "text": "After three steps of clustering, which pandas are in the same cluster as Panda 4?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Pandas $$3$$ and $$4$$",
+            "Pandas $$1$$ and $$4$$",
+            "Pandas $$2$$ and $$5$$"
+        ]
+    }
+]

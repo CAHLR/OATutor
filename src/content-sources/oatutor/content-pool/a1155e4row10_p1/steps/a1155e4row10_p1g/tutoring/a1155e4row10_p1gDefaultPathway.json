@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a1155e4row10_p1g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Code",
+        "text": "The code is checking how many games have more than one winner. It uses $$`\\operatorname{value_{counts}}\\left(\\right)`$$ to count the number of times each $$`game_{id}`$$ appears where `win` is $$1$$. Then, it checks if all these counts are equal to $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p1g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row10_p1g-h1"
+        ],
+        "title": "Analyzing the Condition",
+        "text": "The condition $$`sum(counts \\neq 1)==0`$$ will be true if there are no games with more than one winner. This means every game should have exactly one winner.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p1g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "There is exactly one winner per game."
+        ],
+        "dependencies": [
+            "a1155e4row10_p1g-h2"
+        ],
+        "title": "Checking the Data",
+        "text": "Look at the data provided. How many winners are there for each game?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Each player only plays in each game once.",
+            "Each player has won at least one game.",
+            "There is exactly one winner per game.",
+            "There are no repeated values of $$game_{id}$$.",
+            "Every game has at least one winner."
+        ]
+    }
+]

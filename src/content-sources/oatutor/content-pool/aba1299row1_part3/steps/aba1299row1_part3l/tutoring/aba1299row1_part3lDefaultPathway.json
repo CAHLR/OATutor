@@ -1,0 +1,46 @@
+[
+    {
+        "id": "aba1299row1_part3l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LASSO Regularization",
+        "text": "LASSO regularization adds a penalty equal to the absolute value of the magnitude of coefficients. This can lead to some coefficients being exactly zero, effectively selecting a simpler model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1_part3l-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row1_part3l-h1"
+        ],
+        "title": "Effect on Model Complexity",
+        "text": "By potentially reducing the number of features, LASSO can decrease model complexity. How might this affect the model's performance on unseen data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1_part3l-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase and Decrease"
+        ],
+        "dependencies": [
+            "aba1299row1_part3l-h2"
+        ],
+        "title": "Impact on Test MSE",
+        "text": "Consider how reducing model complexity with LASSO might affect overfitting. What are the possible effects on the MSE of held-out test data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Increase and Decrease"
+        ]
+    }
+]

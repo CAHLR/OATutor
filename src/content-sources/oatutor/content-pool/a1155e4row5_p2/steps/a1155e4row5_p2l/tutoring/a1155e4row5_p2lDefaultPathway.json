@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a1155e4row5_p2l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Objective Function",
+        "text": "The objective function R(\u03b8) $$=$$ $$\\frac{1}{1000}$$ sum{i extbackslash=1}{3}{abs(x_i-\u03b8)} is a measure of how far each data point is from \u03b8. Think about what value of \u03b8 would make the sum of these distances as small as possible.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p2l-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row5_p2l-h1"
+        ],
+        "title": "Exploring Absolute Values",
+        "text": "The absolute value function, $$|x|$$, measures the distance of $$x$$ from zero. In this context, $$|x_i-\\theta|$$ measures the distance of each ride count from \u03b8. Consider how you can minimize these distances collectively.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p2l-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "a1155e4row5_p2l-h2"
+        ],
+        "title": "Choosing the Right \u03b8",
+        "text": "Which value of \u03b8 minimizes the sum of absolute deviations from the data points {1, $$6$$, 17}?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$6$$",
+            "$$17$$",
+            "$$12$$"
+        ]
+    },
+    {
+        "id": "a1155e4row5_p2l-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row5_p2l-h3"
+        ],
+        "title": "Median as a Minimizer",
+        "text": "In a set of numbers, the median is often the value that minimizes the sum of absolute deviations. Consider how this applies to the dataset {1, $$6$$, 17}.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

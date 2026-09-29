@@ -1,0 +1,58 @@
+[
+    {
+        "id": "aba1299row4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Independence",
+        "text": "Linear independence means that no column in the design matrix can be written as a combination of the others. This ensures that each feature contributes uniquely to the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row4a-h1"
+        ],
+        "title": "Unique Solutions in OLS",
+        "text": "In an OLS model, if the columns of the design matrix are linearly independent, it means that the matrix is full rank. This is crucial for ensuring a unique solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row4a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The matrix is full rank."
+        ],
+        "dependencies": [
+            "aba1299row4a-h2"
+        ],
+        "title": "Checking for Linear Independence",
+        "text": "Which of the following statements is true about a matrix with linearly independent columns?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The matrix is full rank.",
+            "The matrix is not full rank.",
+            "The matrix has dependent columns."
+        ]
+    },
+    {
+        "id": "aba1299row4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row4a-h3"
+        ],
+        "title": "OLS and Full Rank",
+        "text": "When the design matrix is full rank, it means that the inverse of the matrix can be computed, which is necessary for finding the unique OLS solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

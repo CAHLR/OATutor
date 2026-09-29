@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Principal Component Matrix",
+        "text": "The principal component matrix $P$ is derived from the original data matrix. It has the same number of columns as the original data matrix, which corresponds to the number of features or variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1k-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa19-mt2-Q1k-h1"
+        ],
+        "title": "Counting Columns",
+        "text": "How many columns are in the original data matrix shown in the image?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$2$$",
+            "$$6$$",
+            "$$7$$",
+            "$$8$$",
+            "$$1000$$"
+        ]
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a89b247ds100-su19-final-Q6{-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "Bias refers to the error introduced by approximating a real-world problem, which may be complex, by a simplified model. Variance refers to how much the model's predictions would change if we used a different training dataset. Consider how removing a feature might affect these aspects.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6{-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6{-h1"
+        ],
+        "title": "Role of the 'veg' Column",
+        "text": "The 'veg' column represents the pounds of vegetables bought. Think about how this variable might help in predicting the total bill. Does it capture important information that could reduce bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6{-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6{-h2"
+        ],
+        "title": "Impact of Removing 'veg' on Bias",
+        "text": "If we remove the 'veg' column, will the model have less information to predict the total bill accurately?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6{-h4",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6{-h2"
+        ],
+        "title": "Visualizing the Data",
+        "text": "Look at the scatter plot. It shows the relationship between the pounds of vegetables and the total bill. Does this relationship seem strong? How might this affect the model's predictions if 'veg' is removed?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

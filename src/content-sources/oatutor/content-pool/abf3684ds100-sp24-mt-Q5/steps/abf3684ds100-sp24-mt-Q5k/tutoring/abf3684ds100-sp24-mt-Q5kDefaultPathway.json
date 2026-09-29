@@ -1,0 +1,75 @@
+[
+    {
+        "id": "abf3684ds100-sp24-mt-Q5k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean Cubed Error",
+        "text": "The Mean Cubed Error is calculated by taking the average of the cubes of the differences between the actual and predicted values. How does this differ from the Mean Squared Error? Think about how cubing affects positive and negative differences.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp24-mt-Q5k-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring the Loss Function",
+        "text": "Consider how the Mean Cubed Error behaves when the differences between actual and predicted values are both positive and negative. What happens to the sign of the error when you cube it?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp24-mt-Q5k-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Negative"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp24-mt-Q5k-h2"
+        ],
+        "title": "Analyzing the Behavior of Cubed Differences",
+        "text": "If the difference y_i-\\hat{y}_i is negative, what will be the sign of (y_i-\\hat{y}_i)**3?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Positive",
+            "Negative",
+            "Zero"
+        ]
+    },
+    {
+        "id": "abf3684ds100-sp24-mt-Q5k-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Minimizing the Loss Function",
+        "text": "Think about the properties of a cubic function. Does it have a single minimum point like a quadratic function? Consider how this affects the possibility of finding a single, finite value of theta that minimizes the Mean Cubed Error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp24-mt-Q5k-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp24-mt-Q5k-h4"
+        ],
+        "title": "Exploring the Nature of Cubic Functions",
+        "text": "Does a cubic function always have a single minimum point?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

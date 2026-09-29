@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a1bb75eds100-su19-final-Q8d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Probability Assignments",
+        "text": "Think about what it means to assign a probability like $$\\$P(Y=1|X)=0.3\\$$$. How does this affect the likelihood of an event occurring?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q8d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Comparing Probabilities",
+        "text": "Consider how the probabilities $$\\$P(Y=1|X)=0.3\\$$$ and $$\\$P(Y=1|X)=0.4\\$$$ differ. What does a higher probability imply about the event?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q8d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "ROC A"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q8d-h2"
+        ],
+        "title": "Probability Impact on ROC",
+        "text": "If the probability of $$\\$Y=1\\$$$ increases from $$0.3$$ to $$0.4$$, how might this affect the true positive rate in an ROC curve?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It decreases the true positive rate",
+            "It has no effect on the true positive rate",
+            "It increases the true positive rate",
+            "ROC A"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q8d-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding ROC Curves",
+        "text": "An ROC curve plots the true positive rate against the false positive rate. How might changes in probability assignments affect these rates?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q8d-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "ROC A"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q8d-h4"
+        ],
+        "title": "Effect of Probability on ROC",
+        "text": "Given the probabilities $$\\$P(Y=1|X)=0.3\\$$$ and $$\\$P(Y=1|X)=0.4\\$$$, which ROC curve might represent a better classifier?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "ROC A",
+            "ROC B",
+            "ROC C"
+        ]
+    }
+]

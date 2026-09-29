@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a98a015ds100-sp25-final-Q4a,Q4bg-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD",
+        "text": "In Singular Value Decomposition (SVD), the matrix S contains the singular values. These values are related to the variance explained by each principal component. The square of each singular value gives the variance along that principal component direction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp25-final-Q4a,Q4bg-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp25-final-Q4a,Q4bg-h1"
+        ],
+        "title": "Finding Variance for PC2",
+        "text": "To find the variance in the PC2 direction, look at the second singular value in the matrix S. Remember, the variance is the square of this singular value divided by the number of observations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp25-final-Q4a,Q4bg-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{4}{6}$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp25-final-Q4a,Q4bg-h2"
+        ],
+        "title": "Calculate the Variance",
+        "text": "What is the variance in the PC2 direction if the singular value is $$2$$ and there are $$6$$ observations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{2}{6}$$",
+            "$$\\frac{4}{5}$$",
+            "$$\\frac{4}{6}$$",
+            "$$\\frac{4}{104.01}$$",
+            "$$\\frac{100}{6}$$"
+        ]
+    }
+]

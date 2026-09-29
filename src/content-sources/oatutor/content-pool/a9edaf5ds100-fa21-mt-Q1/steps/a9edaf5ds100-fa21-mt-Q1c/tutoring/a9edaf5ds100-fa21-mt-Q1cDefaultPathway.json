@@ -1,0 +1,83 @@
+[
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Codons",
+        "text": "Remember that a codon is a sequence of $$3$$ DNA letters. Since each letter can be one of T, G, C, or A, think about how many different combinations of $$3$$ letters you can make.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1c-h1"
+        ],
+        "title": "Calculating Combinations",
+        "text": "To find the number of possible codons, consider the number of choices you have for each position in the codon. Multiply these choices together to get the total number of combinations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$64$$"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1c-h2"
+        ],
+        "title": "Number of Codons",
+        "text": "How many different codons can be formed from the DNA letters T, G, C, and A?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$4$$",
+            "$$64$$",
+            ">16",
+            ">256",
+            ">64"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1c-h3"
+        ],
+        "title": "One-Hot Encoding Codons",
+        "text": "When one-hot encoding, each unique item gets its own dimension. If you have $$64$$ unique codons, how many dimensions will you need for one-hot encoding?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$64000$$"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1c-h4"
+        ],
+        "title": "Dimensions for One-Hot Encoding",
+        "text": "If each codon is represented by a unique dimension, and there are $$64$$ codons, how many dimensions will a single DNA string of $$3000$$ letters have when one-hot encoded by codons?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$64000$$",
+            ">2048000",
+            ">64",
+            ">1000"
+        ]
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "The DataFrame $$`lunch_{mat}`$$ contains columns for the person, calories consumed $$1$$ day ago, calories consumed $$2$$ days ago, and calories consumed today. These columns are used to predict today's calorie intake using a linear model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-sp22-mt2-Q6g-h1"
+        ],
+        "title": "Linear Regression Coefficients",
+        "text": "In linear regression, the $$`coef_{}`$$ attribute of the model contains the coefficients for the features. These coefficients correspond to the features in the order they appear in the input data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp22-mt2-Q6g-h2"
+        ],
+        "title": "Indexing the Coefficients",
+        "text": "Which index of `model.coef_` corresponds to the coefficient for $$`calories_1 d_{ago}`$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$1$$",
+            "$$2$$",
+            "$$-1$$",
+            "$$\\theta_1$$"
+        ]
+    }
+]

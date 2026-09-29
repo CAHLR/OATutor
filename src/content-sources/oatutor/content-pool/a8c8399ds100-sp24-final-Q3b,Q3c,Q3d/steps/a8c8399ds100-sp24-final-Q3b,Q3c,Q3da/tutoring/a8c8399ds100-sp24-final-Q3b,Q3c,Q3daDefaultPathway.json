@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3da-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the $$'has_{feat'}$$ Column",
+        "text": "To create the $$'has_{feat'}$$ column, you need to check if the 'artist' column contains the substring 'feat.'. If it does, the value should be 1; otherwise, it should be $$0$$. Think about how you can use string operations to achieve this.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3da-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "song_sample[\"artist\"].str.contains(\"feat.\").astype(int)"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp24-final-Q3b,Q3c,Q3da-h1"
+        ],
+        "title": "Choosing the Right String Method",
+        "text": "Which string method would you use to check if a substring exists within a string?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "song_sample[\"artist\"].str.contains(\"feat.\").astype(int)",
+            "song_sample[\"artist\"].str.match(\"feat.\").astype(int)",
+            "song_sample[\"artist\"].str.startswith(\"feat.\").astype(int)",
+            "song_sample[\"artist\"].str.count(\"feat.\").astype(int)",
+            "song_sample[\"artist\"].str.find(\"feat.\").astype(int)"
+        ]
+    }
+]

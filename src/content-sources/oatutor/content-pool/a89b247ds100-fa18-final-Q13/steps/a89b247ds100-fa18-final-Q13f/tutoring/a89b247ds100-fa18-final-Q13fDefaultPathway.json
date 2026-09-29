@@ -1,0 +1,33 @@
+[
+    {
+        "id": "a89b247ds100-fa18-final-Q13f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variance",
+        "text": "Think about what variance represents in a dataset. It's a measure of how much the data points differ from the mean. In the context of our equation, consider whether this variance is something that changes with different samples or if it's a fixed property of the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q13f-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q13f-h1"
+        ],
+        "title": "Fixed or Variable?",
+        "text": "Consider whether the variance, sigma squared, is a property of the data that changes with each sample or remains constant. Choose the correct option.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

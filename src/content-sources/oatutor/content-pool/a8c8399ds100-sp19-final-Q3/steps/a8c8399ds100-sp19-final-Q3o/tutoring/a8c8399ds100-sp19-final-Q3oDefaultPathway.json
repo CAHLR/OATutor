@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a8c8399ds100-sp19-final-Q3o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatterplot",
+        "text": "Look at the pattern of the data points in the scatterplot. Consider how the function f(x) might transform the x-values to fit the y-values. What kind of transformation does the pattern suggest?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp19-final-Q3o-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-sp19-final-Q3o-h1"
+        ],
+        "title": "Analyzing Quadratic Functions",
+        "text": "Think about how a quadratic function, like $$f(x)=x^2$$, affects the values of $$x$$. How does squaring $$x$$ change the shape of the data? Does this match the pattern you see in the scatterplot?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp19-final-Q3o-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp19-final-Q3o-h2"
+        ],
+        "title": "Evaluating $$f(x)=x^2$$",
+        "text": "Does the pattern of the data points suggest a parabolic shape, which is characteristic of a quadratic function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

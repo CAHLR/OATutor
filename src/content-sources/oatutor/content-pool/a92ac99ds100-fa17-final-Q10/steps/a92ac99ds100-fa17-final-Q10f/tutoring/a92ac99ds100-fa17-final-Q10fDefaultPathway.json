@@ -1,0 +1,105 @@
+[
+    {
+        "id": "a92ac99ds100-fa17-final-Q10f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Diagram",
+        "text": "The diagram represents the process of bootstrapping. Start by identifying the initial population and the observed sample. This will help you understand the flow of the process.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q10f-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Population"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q10f-h1"
+        ],
+        "title": "Identifying the Population",
+        "text": "What is the term used for the entire group from which a sample is drawn?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Population",
+            "Bootstrap population",
+            "Observed sample",
+            "Expected sample"
+        ]
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q10f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q10f-h2"
+        ],
+        "title": "Sample Statistic",
+        "text": "After obtaining a sample from the population, a statistic is calculated. This statistic is an estimate of the population parameter.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q10f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Bootstrapping"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q10f-h3"
+        ],
+        "title": "Understanding Bootstrapping",
+        "text": "What is the process called where multiple samples are drawn with replacement from the observed sample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Sampling",
+            "Bootstrapping",
+            "Bootstrap sampling distribution",
+            "Empirical distribution"
+        ]
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q10f-h5",
+        "type": "hint",
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q10f-h4"
+        ],
+        "title": "Bootstrap Sample",
+        "text": "Each sample drawn during the bootstrapping process is called a bootstrap sample. These samples are used to calculate bootstrap statistics.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q10f-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Bootstrap sampling distribution"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q10f-h5"
+        ],
+        "title": "Bootstrap Sampling Distribution",
+        "text": "What is the distribution of the bootstrap statistics called?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Sampling distribution",
+            "Bootstrap sampling distribution",
+            "Empirical distribution",
+            "True distribution"
+        ]
+    }
+]

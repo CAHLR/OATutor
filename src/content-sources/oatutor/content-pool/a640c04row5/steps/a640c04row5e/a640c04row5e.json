@@ -1,0 +1,20 @@
+{
+    "id": "a640c04row5e",
+    "stepAnswer": [
+        "(performance[\"ed\\_hours\"] $$ \\geq $$ 15) & (performance[\"disc\\_day\"].isna())"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Instructors want to recognize top performers on EdStem who do not hold discussion sections. A top-performer is any staff who spent at least $$15$$ hours on EdStem.\\nNote: For staff without discussion sections, disc\\_day is NaN.\\nFill in the following blank to assign top\\_ed to a modified version of the performance DataFrame that includes all rows corresponding to these staff members:\\n\\nFill in blank (A) below.",
+    "stepBody": "Top Ed Performers##figure4.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "(performance[\"ed\\_hours\"] $$ \\geq $$ 15) & (performance[\"disc\\_day\"].isna())",
+    "choices": [
+        "(performance[\"ed\\_hours\"] $$ \\geq $$ 15) & (performance[\"disc\\_day\"].isna())",
+        "(performance[\"ed\\_hours\"] $$ \\geq $$ 15) & (performance[\"disc\\_day\"].notna())",
+        "(performance[\"ed\\_hours\"] $$ \\geq $$ 15)",
+        "(performance[\"disc\\_day\"].isna())",
+        "(performance[\"ed\\_hours\"] > 15) & (performance[\"disc\\_day\"] $$==$$ np.nan)",
+        "(performance[\"ed\\_hours\"] $$ \\leq $$ 15) & (performance[\"disc\\_day\"].isna())"
+    ]
+}

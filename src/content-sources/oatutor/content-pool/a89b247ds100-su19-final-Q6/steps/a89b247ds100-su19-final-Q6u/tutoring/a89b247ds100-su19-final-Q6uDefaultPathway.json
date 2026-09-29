@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a89b247ds100-su19-final-Q6u-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variance",
+        "text": "Variance in a model refers to how much the model's predictions change when using different training data. Adding random features can affect this. Think about how randomness might influence the model's stability.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6u-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6u-h1"
+        ],
+        "title": "Impact of Random Features",
+        "text": "Consider what happens when you add a feature that doesn't have a real relationship with the target variable. How might this affect the model's ability to generalize to new data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6u-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6u-h2"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Does adding a feature of random numbers between $$0$$ and $$1$$ decrease variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

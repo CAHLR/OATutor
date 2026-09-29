@@ -1,0 +1,35 @@
+[
+    {
+        "id": "a1155e4row3_p2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Violin Plots",
+        "text": "Violin plots are useful for visualizing the distribution of data and comparing multiple groups. They show the density of the data at different values. Consider whether this helps in understanding the relationship between two continuous variables.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row3_p2c-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Scatter plot"
+        ],
+        "dependencies": [
+            "a1155e4row3_p2c-h1"
+        ],
+        "title": "Choosing the Right Visualization",
+        "text": "Which type of plot is typically used to show the relationship between two continuous variables?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Bar chart",
+            "Scatter plot",
+            "Pie chart",
+            "Histogram"
+        ]
+    }
+]

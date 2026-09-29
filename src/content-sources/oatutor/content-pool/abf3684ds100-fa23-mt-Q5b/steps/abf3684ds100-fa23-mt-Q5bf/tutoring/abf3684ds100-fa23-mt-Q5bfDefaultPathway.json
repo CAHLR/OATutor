@@ -1,0 +1,51 @@
+[
+    {
+        "id": "abf3684ds100-fa23-mt-Q5bf-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Loss Functions",
+        "text": "When considering loss functions, think about how they handle differences between predicted and actual values. A higher power in the loss function can amplify these differences, especially for larger errors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa23-mt-Q5bf-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Comparing Powers in Loss Functions",
+        "text": "Consider how the power of the difference term affects the penalty for outliers. A power greater than $$2$$ will penalize larger errors more than Mean Squared Error (MSE), which uses a power of $$2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa23-mt-Q5bf-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "\\frac{1}{n}sum_{i=1}**{n}(y_i-\\hat{y}_i)**{4}"
+        ],
+        "dependencies": [
+            "abf3684ds100-fa23-mt-Q5bf-h2"
+        ],
+        "title": "Identifying the Correct Loss Function",
+        "text": "Which of the following loss functions uses a power greater than $$2$$, thus penalizing outliers more harshly than MSE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "(y_i-\\hat{y}_i)**{5}",
+            ">\\frac{1}{n}sum_{i=1}**{n}",
+            ">\\frac{1}{n}sum_{i=1}**{n}",
+            ">\\frac{1}{n}sum_{i=1}**{n}(y_i-\\hat{y}_i)**{3}",
+            ">\\frac{1}{n}sum_{i=1}**{n}(y_i-\\hat{y}_i)**{4}",
+            ">\\frac{1}{n}sum_{i=1}**{n}(y_i-\\hat{y}_i)**{5}",
+            "\\frac{1}{n}sum_{i=1}**{n}(y_i-\\hat{y}_i)",
+            "\\frac{1}{n}sum_{i=1}**{n}(y_i-\\hat{y}_i)**{4}",
+            "**{3}",
+            "y_i-\\hat{y}_i"
+        ]
+    }
+]

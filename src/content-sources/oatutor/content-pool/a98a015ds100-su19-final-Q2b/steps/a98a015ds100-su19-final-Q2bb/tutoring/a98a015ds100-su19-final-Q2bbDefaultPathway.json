@@ -1,0 +1,94 @@
+[
+    {
+        "id": "a98a015ds100-su19-final-Q2bb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatter Plot",
+        "text": "Look at the scatter plot on the left. Notice the relationship between 'age' and 'mpg'. How does the pattern of points help you understand the correlation between these two variables?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su19-final-Q2bb-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Analyzing KDE Plots",
+        "text": "KDE plots show the distribution of a single variable. Compare the shapes of the KDE plots (a) and (b) with the scatter plot. Which variable's distribution do they resemble more?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su19-final-Q2bb-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting Histograms",
+        "text": "Histograms (c) and (d) display the frequency of data points for a single variable. Consider the range and distribution of values in the scatter plot. Which histogram aligns with the distribution of 'age' or 'mpg'?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su19-final-Q2bb-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "pc1"
+        ],
+        "dependencies": [],
+        "title": "Matching Point Plots",
+        "text": "Point plots (e.i) and (e.ii) show means and confidence intervals. Which variable's mean and spread do these plots likely represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Neither",
+            "age",
+            "mpg",
+            "pc1"
+        ]
+    },
+    {
+        "id": "a98a015ds100-su19-final-Q2bb-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "pc2"
+        ],
+        "dependencies": [],
+        "title": "Scatter Plot Comparison",
+        "text": "Compare the scatter plots (g.i) and (g.ii) with the labeled scatter plot. Which one shows a similar pattern?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Neither",
+            "g.i",
+            "g.ii",
+            "pc2"
+        ]
+    },
+    {
+        "id": "a98a015ds100-su19-final-Q2bb-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Neither"
+        ],
+        "dependencies": [],
+        "title": "Identifying Linear Relationships",
+        "text": "The plot (h.i) shows a linear relationship. Which variable pair from the scatter plot could result in such a pattern?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "age",
+            "mpg",
+            "Neither"
+        ]
+    }
+]

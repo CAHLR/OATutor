@@ -1,0 +1,74 @@
+[
+    {
+        "id": "a1bb75eds100-su20-final-Q6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Code",
+        "text": "The code snippet is using a boolean mask to filter the DataFrame. It checks two conditions: whether the console's generation is $$6$$ and whether the release year is before $$2000$$. This is done using the `&` operator, which requires both conditions to be true for a row to be included.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Boolean Masking in Pandas",
+        "text": "In pandas, you can filter rows of a DataFrame by creating a boolean mask. A boolean mask is a Series of True/False values that correspond to each row in the DataFrame. When you apply this mask to the DataFrame, only the rows where the mask is True are returned.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It checks if the console's generation is $$6$$."
+        ],
+        "dependencies": [],
+        "title": "Checking the Generation Condition",
+        "text": "What does the condition `(consoles['generation'] $$==$$ 6)` check for?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It checks if the console's generation is $$6$$.",
+            "It checks if the console's generation is $$7$$.",
+            "It checks if the console's generation is less than $$6$$.",
+            "It checks if the console's generation is greater than $$6$$."
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It checks if the console was released before the year $$2000$$."
+        ],
+        "dependencies": [],
+        "title": "Checking the Year Condition",
+        "text": "What does the condition `(consoles['year'] < 2000)` check for?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It checks if the console was released before the year $$2000$$.",
+            "It checks if the console was released in the year $$2000$$.",
+            "It checks if the console was released after the year $$2000$$.",
+            "It checks if the console was released in the 21st century."
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6a-h5",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Combining Conditions",
+        "text": "The `&` operator is used to combine two conditions in pandas. Both conditions must be true for a row to be included in the result. This is similar to the logical AND operation in Python.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

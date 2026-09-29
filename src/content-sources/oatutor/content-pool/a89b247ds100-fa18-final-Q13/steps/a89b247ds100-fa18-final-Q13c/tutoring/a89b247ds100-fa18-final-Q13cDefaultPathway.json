@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a89b247ds100-fa18-final-Q13c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Components",
+        "text": "The expected squared error can be broken down into three main components: the variance of the noise, the squared bias, and the variance of the model. Can you identify which part of the equation represents each of these components?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q13c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q13c-h1"
+        ],
+        "title": "Focus on the Noise Term",
+        "text": "The term $${\\sigma}^2$$ represents the variance of the noise in the data. This is a constant that reflects the inherent randomness in the data generation process. How does this affect the overall error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q13c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(h(x)-E[f_hat_theta(x)])**2"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q13c-h2"
+        ],
+        "title": "Identifying the Bias Term",
+        "text": "Which part of the equation represents the squared bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$${\\sigma}^2$$",
+            "(h(x)-E[f_hat_theta(x)])**2",
+            "E[(E[f_hat_theta(x)]-f_hat_theta(x))**2]"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q13c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa18-final-Q13c-h3"
+        ],
+        "title": "Variance of the Model",
+        "text": "The term E[(E[f_hat_theta(x)]-f_hat_theta(x))**2] represents the variance of the model. This term captures the variability of the model predictions around their expected value. How does this contribute to the overall error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

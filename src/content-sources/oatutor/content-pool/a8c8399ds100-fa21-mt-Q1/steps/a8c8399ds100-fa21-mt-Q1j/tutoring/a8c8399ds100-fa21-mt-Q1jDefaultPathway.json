@@ -1,0 +1,49 @@
+[
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Codons and Amino Acids",
+        "text": "Remember that each codon, a sequence of $$3$$ DNA letters, translates into an amino acid. There are $$64$$ possible codons but only $$20$$ amino acids. Think about how this relationship can help reduce the dimensionality of your data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-fa21-mt-Q1j-h1"
+        ],
+        "title": "Compact Representation",
+        "text": "Consider using the $$20$$ amino acids as your features instead of the $$64$$ codons. This will significantly reduce the number of features you need to work with.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$20$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa21-mt-Q1j-h2"
+        ],
+        "title": "Choosing the Right Dimensionality",
+        "text": "If you encode using amino acids, what would be the dimensionality of your data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1000$$ (one codon index per position)",
+            "$$128$$ (pairs of amino acids)",
+            "$$20$$",
+            "$$20$$ (3 gram of amino acids)",
+            "$$3000$$ (one value per letter)",
+            "$$64$$ (bag of words over codons)"
+        ]
+    }
+]

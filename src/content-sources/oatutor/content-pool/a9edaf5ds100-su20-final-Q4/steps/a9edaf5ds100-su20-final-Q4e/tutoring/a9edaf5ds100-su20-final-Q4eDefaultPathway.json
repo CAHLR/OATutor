@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a9edaf5ds100-su20-final-Q4e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean-Centering",
+        "text": "Mean-centering involves adjusting the values of a variable so that its mean becomes zero. This is done by subtracting the mean of the variable from each data point. How might this affect the intercept term in a regression model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q4e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-su20-final-Q4e-h1"
+        ],
+        "title": "Intercept in Mean-Centered Data",
+        "text": "When you mean-center your data, the intercept term often represents the mean of the response variable. Consider what happens to the intercept when the mean of the response variable is zero.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q4e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su20-final-Q4e-h2"
+        ],
+        "title": "Effect of Mean-Centering on Intercept",
+        "text": "If the mean of the response variable is zero, what does this imply about the intercept term in the regression model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

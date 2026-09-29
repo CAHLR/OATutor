@@ -1,0 +1,48 @@
+[
+    {
+        "id": "abf3684ds100-su25-final-Q2v-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mini-Batch Gradient Descent",
+        "text": "In mini-batch gradient descent, the dataset is divided into smaller batches. Each batch is used to calculate the gradient and update the model parameters. Think about how many data points are in each batch if you know the total number of data points and the number of gradients calculated.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2v-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2v-h1"
+        ],
+        "title": "Calculating the Number of Batches",
+        "text": "If you know the total number of data points and the number of gradients calculated, you can find the number of data points in each mini-batch by dividing the total data points by the number of gradients. What does this tell you about the size of each mini-batch?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2v-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$20$$"
+        ],
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2v-h2"
+        ],
+        "title": "Determine the Mini-Batch Size",
+        "text": "Given that there are $$500$$ data points and $$125$$ gradients calculated, how many data points are in each mini-batch?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$20$$",
+            "$$25$$",
+            "$$50$$",
+            "$$10$$",
+            "$$100$$"
+        ]
+    }
+]

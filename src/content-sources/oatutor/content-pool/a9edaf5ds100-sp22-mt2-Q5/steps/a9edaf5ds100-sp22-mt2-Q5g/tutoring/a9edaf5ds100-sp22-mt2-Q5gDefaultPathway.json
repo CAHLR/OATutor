@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Exponential Regularization",
+        "text": "Think about how the exponential function behaves for positive and negative values. How does this affect the penalty applied to coefficients in comparison to L1 and L2 regularization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5g-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Comparing Penalties",
+        "text": "Consider the nature of the exponential function. It grows rapidly for positive values and approaches zero for negative values. How might this influence the penalty on large positive and negative coefficients?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A"
+        ],
+        "dependencies": [],
+        "title": "Evaluating Large Positive Coefficients",
+        "text": "Which regularization method is likely to impose a greater penalty on large positive coefficients?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [],
+        "title": "Evaluating Large Negative Coefficients",
+        "text": "Does exponential regularization impose a greater penalty on large negative coefficients compared to L2 regularization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5g-h5",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Feature Selection with Regularization",
+        "text": "L1 regularization is known for its ability to perform feature selection by setting some coefficients to zero. Consider how exponential regularization might differ in this aspect.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

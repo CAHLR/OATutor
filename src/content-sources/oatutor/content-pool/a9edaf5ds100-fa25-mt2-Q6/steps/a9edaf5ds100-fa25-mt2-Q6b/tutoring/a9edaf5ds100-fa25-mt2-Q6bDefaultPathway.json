@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a9edaf5ds100-fa25-mt2-Q6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "Model variance refers to how much the predictions of a model will change if we use a different training dataset. Adding a new feature, especially a polynomial one, can increase the complexity of the model. How do you think this affects the variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa25-mt2-Q6b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase only"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa25-mt2-Q6b-h1"
+        ],
+        "title": "Effect of Adding Features on Variance",
+        "text": "When you add a new feature to a model, especially one that is a transformation of an existing feature, what is a possible effect on the model's variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase only",
+            "Decrease only",
+            "Increase and Decrease",
+            "Neither Increase nor Decrease",
+            "Cannot be determined"
+        ]
+    }
+]

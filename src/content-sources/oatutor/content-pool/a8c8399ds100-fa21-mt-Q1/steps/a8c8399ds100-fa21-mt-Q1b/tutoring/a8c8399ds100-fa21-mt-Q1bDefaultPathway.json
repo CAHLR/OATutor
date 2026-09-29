@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "When you one-hot encode a sequence, each unique element in the sequence is represented as a separate dimension. Think about how many unique elements are in a DNA sequence and how this affects the dimensionality.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring Codons",
+        "text": "A codon is a sequence of $$3$$ DNA letters. Consider how many possible combinations of these $$3$$ letters exist. This will help you determine the number of dimensions when one-hot encoding codons.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$64$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa21-mt-Q1b-h2"
+        ],
+        "title": "Calculating Codon Combinations",
+        "text": "How many different codons can be formed from the DNA letters T, G, C, and A?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$64$$",
+            "$$16$$",
+            "$$256$$",
+            "$$4$$"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1b-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding 6-Letter Combinations",
+        "text": "When considering 6-letter combinations, think about how many unique sequences of $$6$$ letters can be formed from the DNA alphabet. This will guide you in determining the dimensionality for one-hot encoding these combinations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$4096$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa21-mt-Q1b-h4"
+        ],
+        "title": "Calculating 6-Letter Combinations",
+        "text": "How many different 6-letter combinations can be formed from the DNA letters T, G, C, and A?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$4096$$",
+            "$$64$$",
+            "$$256$$",
+            "$$1024$$"
+        ]
+    }
+]

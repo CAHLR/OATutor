@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a89b247ds100-fa21-mt-Q2r-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "When you remove a feature from a model, think about how it affects the model's ability to capture the underlying patterns in the data. Does it make the model simpler or more complex?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2r-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2r-h1"
+        ],
+        "title": "Impact of Removing Features",
+        "text": "Consider how removing a feature might affect the model's predictions. If the feature was important, what happens to the model's ability to fit the training data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2r-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Model bias increases."
+        ],
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2r-h2"
+        ],
+        "title": "Analyzing Model Complexity",
+        "text": "If a model becomes simpler by removing a feature, what typically happens to the bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Model bias increases.",
+            "Model bias decreases.",
+            "Model variance increases.",
+            "Model variance decreases."
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2r-h4",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2r-h3"
+        ],
+        "title": "Feature Importance",
+        "text": "Think about the role of the \"Avg Hours Watched Per Day\" feature. If it was significant, removing it might lead to a model that doesn't capture certain patterns as well. How does this relate to bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "id": "abf3684ds100-sp24-final-Q2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Learning Rate",
+        "text": "The learning rate, often denoted as alpha, is a crucial parameter in gradient descent. It determines the size of the steps we take towards the minimum of the loss function. If alpha is too large, what might happen to the convergence of the algorithm?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp24-final-Q2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp24-final-Q2c-h1"
+        ],
+        "title": "Impact of Learning Rate on Convergence",
+        "text": "Consider how the learning rate affects the speed and stability of convergence. A very small learning rate might make the convergence process very slow. What could be the consequence of a very large learning rate?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp24-final-Q2c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp24-final-Q2c-h2"
+        ],
+        "title": "Evaluating Learning Rate Impact",
+        "text": "What is the impact of a very large learning rate on the convergence of gradient descent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "It ensures faster convergence to the minimum",
+            "It has no impact on convergence",
+            "It may cause the algorithm to overshoot the minimum and diverge"
+        ]
+    }
+]

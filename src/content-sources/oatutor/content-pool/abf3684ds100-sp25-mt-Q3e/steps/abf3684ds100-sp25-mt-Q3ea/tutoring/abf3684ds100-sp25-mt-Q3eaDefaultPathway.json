@@ -1,0 +1,59 @@
+[
+    {
+        "id": "abf3684ds100-sp25-mt-Q3ea-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Objective Function",
+        "text": "The objective function given is a type of mean squared error. It measures how far each data point is from your chosen value of theta, squared, and then averaged. Think about what kind of value would minimize these squared differences.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-mt-Q3ea-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp25-mt-Q3ea-h1"
+        ],
+        "title": "Exploring the Mean",
+        "text": "Consider the role of the mean in minimizing squared differences. The mean of a dataset is often used as a measure of central tendency. How does it relate to minimizing the sum of squared deviations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-mt-Q3ea-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-mt-Q3ea-h2"
+        ],
+        "title": "Calculate the Mean",
+        "text": "Calculate the mean of the dataset {1, $$6$$, 17}.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{8}{3}$$",
+            "$$\\frac{6}{3}$$",
+            "$$6$$",
+            "$$8$$"
+        ]
+    },
+    {
+        "id": "abf3684ds100-sp25-mt-Q3ea-h4",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp25-mt-Q3ea-h3"
+        ],
+        "title": "Why the Mean?",
+        "text": "The mean minimizes the sum of squared deviations because it balances the data points around it. Each point's deviation from the mean is squared, and the mean is the point where these squared deviations are smallest.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

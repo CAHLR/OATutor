@@ -1,0 +1,68 @@
+[
+    {
+        "id": "aba1299row9p2k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Column Space",
+        "text": "The column space of a matrix X is the set of all possible linear combinations of its column vectors. If a vector v is in the column space of X, it means that v can be expressed as a linear combination of the columns of X.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row9p2k-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Properties of the Hat Matrix",
+        "text": "The hat matrix H is an idempotent matrix, meaning that $$H H=H$$. It is also symmetric, so $$H=H^T$$. These properties are useful when analyzing how H interacts with vectors in the column space of X.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row9p2k-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "v"
+        ],
+        "dependencies": [
+            "aba1299row9p2k-h1"
+        ],
+        "title": "Checking the Property",
+        "text": "If v is in the column space of X, what does $$H v$$ equal?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "v",
+            "$$0$$",
+            "$$H v$$",
+            "$$X v$$"
+        ]
+    },
+    {
+        "id": "aba1299row9p2k-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$H H=H$$"
+        ],
+        "dependencies": [
+            "aba1299row9p2k-h2"
+        ],
+        "title": "Understanding Idempotency",
+        "text": "What does it mean for a matrix to be idempotent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$H H=H$$",
+            "$$H H=I$$",
+            "$$H H=0$$",
+            "$$H H=2H$$"
+        ]
+    }
+]

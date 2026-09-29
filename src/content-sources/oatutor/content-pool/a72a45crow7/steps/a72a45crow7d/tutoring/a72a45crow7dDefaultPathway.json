@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a72a45crow7d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Groupby Function",
+        "text": "The `groupby` function in pandas is used to split the data into groups based on some criteria. In this case, you want to group by both 'college' and 'building' first, and then perform another grouping by 'college'. Think about how you can use this to count the number of modern buildings per college.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow7d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            ".groupby(\"college\").size()"
+        ],
+        "dependencies": [
+            "a72a45crow7d-h1"
+        ],
+        "title": "Choosing the Correct Groupby Method",
+        "text": "Which method should you use to count the number of modern buildings in each college after grouping by 'college' and 'building'?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            ".groupby(\"college\").size()",
+            ".groupby(\"college\").count()",
+            ".groupby(\"building\").size()",
+            ".reset_index(\"college\").size()",
+            ".groupby(\"college\").sum()"
+        ]
+    }
+]

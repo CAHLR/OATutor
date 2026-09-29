@@ -1,0 +1,48 @@
+[
+    {
+        "id": "aea05a2ds100-sp24-final-Q10h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linkage Types",
+        "text": "Linkage type in agglomerative clustering determines how the distance between clusters is calculated. Can you think of different ways to measure the distance between clusters?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp24-final-Q10h-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-sp24-final-Q10h-h1"
+        ],
+        "title": "Exploring Agglomerative Clustering",
+        "text": "Agglomerative clustering starts with each data point as its own cluster and merges them step by step. How might the choice of linkage affect which clusters are merged at each step?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp24-final-Q10h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Single, Complete, Average"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp24-final-Q10h-h2"
+        ],
+        "title": "Linkage Types in Clustering",
+        "text": "Which of the following linkage types could impact the clustering result?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Average",
+            "Complete",
+            "None",
+            "Single",
+            "Single, Complete, Average"
+        ]
+    }
+]

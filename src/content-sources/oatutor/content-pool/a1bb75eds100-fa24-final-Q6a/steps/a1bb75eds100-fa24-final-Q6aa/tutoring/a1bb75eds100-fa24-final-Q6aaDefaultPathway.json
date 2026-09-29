@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1bb75eds100-fa24-final-Q6aa-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linearly Separable Datasets",
+        "text": "In a linearly separable dataset, there exists a hyperplane that can perfectly separate the data points of different classes. Think about how this might affect the accuracy of a classifier.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa24-final-Q6aa-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa24-final-Q6aa-h1"
+        ],
+        "title": "Logistic Regression and Linearly Separable Data",
+        "text": "Logistic regression can find a decision boundary that separates the classes in a linearly separable dataset. Consider what this means for the model's performance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa24-final-Q6aa-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa24-final-Q6aa-h2"
+        ],
+        "title": "Evaluating Classifier Accuracy",
+        "text": "If a dataset is linearly separable, can a classifier achieve 100% accuracy?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

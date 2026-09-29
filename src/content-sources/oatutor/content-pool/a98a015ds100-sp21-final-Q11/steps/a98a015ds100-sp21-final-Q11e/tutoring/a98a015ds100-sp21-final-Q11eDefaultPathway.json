@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a98a015ds100-sp21-final-Q11e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It reduces the dimensionality of the data while preserving as much variance as possible.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp21-final-Q11e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp21-final-Q11e-h1"
+        ],
+        "title": "Reconstruction Error in PCA",
+        "text": "Reconstruction error in PCA is the difference between the original data and the data reconstructed from the principal components. Lower reconstruction error means the principal components capture more of the data's variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp21-final-Q11e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp21-final-Q11e-h2"
+        ],
+        "title": "Analyzing Plot B",
+        "text": "Look at Plot B. Notice the direction of the spread of the data points. How does this affect the principal components and the reconstruction error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp21-final-Q11e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Plot B"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp21-final-Q11e-h3"
+        ],
+        "title": "Comparing Datasets",
+        "text": "Which dataset appears to have the most linear spread, indicating a clear direction for the principal components?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Plot A",
+            "Plot B",
+            "Plot C"
+        ]
+    },
+    {
+        "id": "a98a015ds100-sp21-final-Q11e-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Plot B"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp21-final-Q11e-h4"
+        ],
+        "title": "Reconstruction Error Comparison",
+        "text": "Considering the linear spread of the datasets, which dataset would likely have the lowest reconstruction error when using two principal components?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Plot A",
+            "Plot B",
+            "Plot C"
+        ]
+    }
+]

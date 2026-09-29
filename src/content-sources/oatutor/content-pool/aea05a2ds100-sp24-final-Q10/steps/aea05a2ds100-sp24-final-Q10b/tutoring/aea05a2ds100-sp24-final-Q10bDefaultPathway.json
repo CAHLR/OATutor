@@ -1,0 +1,78 @@
+[
+    {
+        "id": "aea05a2ds100-sp24-final-Q10b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding k-Medians",
+        "text": "In k-Medians, the cluster center is the median of the data points in the cluster. How does this differ from k-Means, where the center is the mean?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp24-final-Q10b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Initial Cluster Centers",
+        "text": "The initial cluster centers are at $$2$$ and $$7$$. Consider which data points are closer to each center.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp24-final-Q10b-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Reassigning Data Points",
+        "text": "For each data point, determine which cluster center it is closest to. This will help you decide which data points belong to each cluster.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp24-final-Q10b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp24-final-Q10b-h3"
+        ],
+        "title": "Calculating the Median for Cluster $$1$$",
+        "text": "If the data points in the first cluster are $$1$$, $$1$$, $$1$$, and $$3$$, what is the median of these points?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$2$$",
+            "$$3$$",
+            "$$4$$"
+        ]
+    },
+    {
+        "id": "aea05a2ds100-sp24-final-Q10b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp24-final-Q10b-h3"
+        ],
+        "title": "Calculating the Median for Cluster $$2$$",
+        "text": "If the data points in the second cluster are $$4$$, $$5$$, $$6$$, and $$8$$, what is the median of these points?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$5$$",
+            "$$6$$",
+            "$$7$$",
+            "$$8$$"
+        ]
+    }
+]

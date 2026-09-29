@@ -1,0 +1,33 @@
+[
+    {
+        "id": "a1155e4row1d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Boxplots",
+        "text": "A boxplot is useful for visualizing the distribution of a dataset. It shows the median, quartiles, and potential outliers. Think about how this might help you understand the spread and central tendency of workout times.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row1d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1155e4row1d-h1"
+        ],
+        "title": "Choosing the Right Plot",
+        "text": "Which plot type is appropriate for visualizing the distribution of a single variable like workout time?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

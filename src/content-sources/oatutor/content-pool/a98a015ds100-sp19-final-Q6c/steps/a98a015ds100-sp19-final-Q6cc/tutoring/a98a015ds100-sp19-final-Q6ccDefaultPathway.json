@@ -1,0 +1,90 @@
+[
+    {
+        "id": "a98a015ds100-sp19-final-Q6cc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA",
+        "text": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It transforms the data into a new coordinate system where the greatest variance by any projection of the data comes to lie on the first coordinate (called the first principal component), the second greatest variance on the second coordinate, and so on.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp19-final-Q6cc-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp19-final-Q6cc-h1"
+        ],
+        "title": "Dot Product Insight",
+        "text": "The dot product of two vectors is a measure of how much one vector goes in the direction of another. If the dot product is zero, the vectors are orthogonal (perpendicular). If it's one, they are aligned in the same direction. Consider how PCA aligns vectors in terms of variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp19-final-Q6cc-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Subtracting the mean of each column from the respective column values."
+        ],
+        "dependencies": [
+            "a98a015ds100-sp19-final-Q6cc-h2"
+        ],
+        "title": "Matrix Centering",
+        "text": "Before applying PCA, the data matrix is often centered. What does centering a matrix involve?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Subtracting the mean of each column from the respective column values.",
+            "Dividing each column by its standard deviation.",
+            "Adding a constant to each column."
+        ]
+    },
+    {
+        "id": "a98a015ds100-sp19-final-Q6cc-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The right singular vectors of the matrix."
+        ],
+        "dependencies": [
+            "a98a015ds100-sp19-final-Q6cc-h3"
+        ],
+        "title": "Understanding $V$ in SVD",
+        "text": "In the context of Singular Value Decomposition (SVD), what does the matrix $V$ represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The left singular vectors of the matrix.",
+            "The right singular vectors of the matrix.",
+            "The singular values of the matrix."
+        ]
+    },
+    {
+        "id": "a98a015ds100-sp19-final-Q6cc-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp19-final-Q6cc-h4"
+        ],
+        "title": "Dot Product of Columns in $V$",
+        "text": "If the columns of $V$ are orthogonal, what is the dot product of any two different columns?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$1$$",
+            "$$-1$$"
+        ]
+    }
+]

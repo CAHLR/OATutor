@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Design Matrix",
+        "text": "The design matrix X is constructed with rows representing each individual's lunch and columns representing the servings of each food item. Each entry in the matrix corresponds to the number of servings of a particular food item.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-sp22-mt2-Q6e-h1"
+        ],
+        "title": "Interpreting Coefficients",
+        "text": "In a linear regression model, the coefficient for a feature represents the change in the response variable for a one-unit change in that feature, holding all other features constant.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Typical calories consumed through food j per serving size"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp22-mt2-Q6e-h2"
+        ],
+        "title": "Coefficient Interpretation",
+        "text": "What does the coefficient for a food item represent in terms of servings and calories?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Typical calories consumed through food j per day",
+            "Typical calories consumed through food j per serving size",
+            "Typical calories consumed by person j per day",
+            "Typical calories consumed by person j per serving size",
+            "Typical total calories consumed per day across all foods"
+        ]
+    }
+]

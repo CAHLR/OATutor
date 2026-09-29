@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2dj-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Validation",
+        "text": "In 4-fold cross-validation, the dataset is divided into $$4$$ parts. Each part is used as a validation set once, while the remaining parts are used for training. Think about how many times each data point is used in training and validation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2dj-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2dj-h1"
+        ],
+        "title": "Counting Training Uses",
+        "text": "If you have $$4$$ folds, how many times is each data point used for training?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$2$$",
+            "$$3$$",
+            "$$4$$"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2dj-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2dj-h1"
+        ],
+        "title": "Validation Use",
+        "text": "Remember, in cross-validation, each data point is used as a validation point exactly once. Consider how this affects the number of times it is used for training.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

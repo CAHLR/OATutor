@@ -1,0 +1,33 @@
+[
+    {
+        "id": "a8c8399ds100-su25-mt-Q3cc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Non-linear Relationships",
+        "text": "The scatterplot shows a non-linear relationship between the amount of antibiotic and the number of colonies. Consider transformations that can help linearize such relationships. Think about how transformations like square root or logarithm can affect the spread of data points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su25-mt-Q3cc-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su25-mt-Q3cc-h1"
+        ],
+        "title": "Exploring Transformations",
+        "text": "Which of the following transformations could help linearize the relationship between Antibiotic and Colonies?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

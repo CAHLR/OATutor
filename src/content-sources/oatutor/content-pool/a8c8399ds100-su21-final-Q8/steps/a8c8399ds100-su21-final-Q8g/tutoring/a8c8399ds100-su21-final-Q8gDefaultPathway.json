@@ -1,0 +1,79 @@
+[
+    {
+        "id": "a8c8399ds100-su21-final-Q8g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "When you one-hot encode a categorical variable, each category becomes a separate column. For example, if you have a column with two categories, 'male' and 'female', how many new columns will you create?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-su21-final-Q8g-h1"
+        ],
+        "title": "Columns in the Design Matrix",
+        "text": "Consider the columns that will be created from one-hot encoding the 'sex' and $$'embark_{town'}$$ columns. How many columns will each of these variables contribute to the design matrix?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su21-final-Q8g-h2"
+        ],
+        "title": "Counting One-Hot Encoded Columns",
+        "text": "How many columns will the 'sex' column contribute after one-hot encoding?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$2$$"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su21-final-Q8g-h3"
+        ],
+        "title": "Counting One-Hot Encoded Columns for Embark Town",
+        "text": "How many columns will the $$'embark_{town'}$$ column contribute after one-hot encoding?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$3$$",
+            "$$4$$",
+            "$$5$$"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8g-h5",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-su21-final-Q8g-h4"
+        ],
+        "title": "Total Columns in the Design Matrix",
+        "text": "Add the number of columns from one-hot encoding 'sex' and $$'embark_{town'}$$ to the original columns. How many columns does this result in?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

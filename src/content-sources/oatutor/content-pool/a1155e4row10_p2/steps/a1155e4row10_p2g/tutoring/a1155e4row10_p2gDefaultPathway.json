@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a1155e4row10_p2g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "The DataFrame 'players' contains columns for 'team', 'position', $$'games_{played'}$$, and $$'points_{per,game'}$$. Each row represents a player with their respective data. Consider how these columns are used to calculate the 'total' column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row10_p2g-h1"
+        ],
+        "title": "Calculating Total Points",
+        "text": "The 'total' column is calculated by multiplying $$'games_{played'}$$ by $$'points_{per,game'}$$. This gives the total fantasy points a player scored in the season. Think about how this calculation is applied to each player.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2g-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row10_p2g-h2"
+        ],
+        "title": "Grouping by Team",
+        "text": "The code groups the players by 'team' and calculates the mean of the 'total' points for each team. This results in a new DataFrame 'output' with the average total points per team.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1155e4row10_p2g-h3"
+        ],
+        "title": "Visualizing the Data",
+        "text": "What type of plot is used to visualize the relationship between 'team' and 'total' in the 'output' DataFrame?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

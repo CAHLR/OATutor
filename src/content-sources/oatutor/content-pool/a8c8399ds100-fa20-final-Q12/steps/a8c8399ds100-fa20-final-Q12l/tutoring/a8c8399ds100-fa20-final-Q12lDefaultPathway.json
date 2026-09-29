@@ -1,0 +1,44 @@
+[
+    {
+        "id": "a8c8399ds100-fa20-final-Q12l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model B",
+        "text": "Model B uses height in centimeters and weight in kilograms to predict BMI. Consider how these units directly relate to the BMI formula.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12l-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Confidence Intervals and Zero",
+        "text": "A confidence interval that includes zero suggests that the parameter might not be significantly different from zero. Think about how this applies to the parameters in Model B.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12l-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\beta_{kg}$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa20-final-Q12l-h1"
+        ],
+        "title": "Analyzing Beta Parameters",
+        "text": "Which parameters in Model B are directly related to the units used in the BMI calculation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\beta_{cm}$$",
+            "$$\\beta_{kg}$$",
+            "$$\\beta_0$$"
+        ]
+    }
+]

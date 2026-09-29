@@ -1,0 +1,18 @@
+{
+    "id": "a640c04row7c",
+    "stepAnswer": [
+        "dan\\_products.groupby('Brand').agg({'Aura': 'mean', 'Stars': 'max'})"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "",
+    "stepBody": "Dan wants to know the average Aura AND maximum Stars for each brand. Fill in the blank below so that brand\\_stats is assigned to a DataFrame that can represent this.\\n\\nFill in the blank (A)##figure3.gif## ",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "dan\\_products.groupby('Brand').agg({'Aura': 'mean', 'Stars': 'max'})",
+        "dan\\_products.groupby('Brand').agg({'Aura': 'max', 'Stars': 'mean'})",
+        "dan\\_products.groupby('Brand').agg({'Aura': 'mean', 'Stars': 'mean'})",
+        "dan\\_products.groupby('Brand')[['Aura', 'Stars']].mean()",
+        "dan\\_products.agg({'Aura': 'mean', 'Stars': 'max'}).groupby('Brand')"
+    ]
+}

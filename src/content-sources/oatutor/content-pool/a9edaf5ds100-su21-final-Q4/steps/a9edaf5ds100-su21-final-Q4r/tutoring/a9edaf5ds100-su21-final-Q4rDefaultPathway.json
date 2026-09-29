@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a9edaf5ds100-su21-final-Q4r-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "When we talk about bias in a model, we're referring to the error introduced by approximating a real-world problem, which may be complex, by a simplified model. Variance, on the other hand, refers to the model's sensitivity to fluctuations in the training data. If the bias decreases, what might that imply about the model's complexity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4r-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The model complexity increased."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su21-final-Q4r-h1"
+        ],
+        "title": "Exploring Model Complexity",
+        "text": "If the model bias decreased, which of the following could be true about the model's complexity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The model complexity increased.",
+            "The model complexity decreased.",
+            "The model complexity stayed the same."
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4r-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-su21-final-Q4r-h2"
+        ],
+        "title": "Linking Bias and Variance",
+        "text": "Consider how changes in model complexity might affect both bias and variance. If a model becomes more complex, what typically happens to its variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4r-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The model variance increased."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su21-final-Q4r-h3"
+        ],
+        "title": "Impact on Variance",
+        "text": "If the model complexity increased, what is likely to happen to the model's variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The model variance increased.",
+            "The model variance decreased.",
+            "The model variance stayed the same."
+        ]
+    }
+]

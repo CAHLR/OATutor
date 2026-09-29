@@ -1,0 +1,34 @@
+[
+    {
+        "id": "a1155e4row6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Kernel Functions",
+        "text": "A kernel function is used in KDE to estimate the probability density function of a random variable. It is important to know that the kernel function is symmetric and integrates to $$1$$ over its entire range.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row6a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A kernel function has an area under the curve of $$1$$."
+        ],
+        "dependencies": [
+            "a1155e4row6a-h1"
+        ],
+        "title": "Properties of Kernel Functions",
+        "text": "Which of the following is a property of a kernel function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A kernel function has to be differentiable across its domain.",
+            "A kernel function has to be Gaussian.",
+            "A kernel function has an area under the curve of $$1$$."
+        ]
+    }
+]

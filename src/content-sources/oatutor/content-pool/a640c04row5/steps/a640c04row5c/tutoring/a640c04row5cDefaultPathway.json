@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a640c04row5c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the GroupBy Function",
+        "text": "To analyze the data by staff role, you need to use the `groupby` function. This function allows you to group the data based on a specific column, which in this case is the 'role'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row5c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Aggregation Functions",
+        "text": "When using the `agg` function, you can specify different aggregation operations for different columns. For example, you can find the minimum, maximum, or mean of a column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row5c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "\"oh_tickets\": \"min\""
+        ],
+        "dependencies": [
+            "a640c04row5c-h2"
+        ],
+        "title": "Choosing the Right Aggregation for $$oh_{tickets}$$",
+        "text": "Which aggregation function would you use to find the minimum number of office hours tickets resolved by staff in each role?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "\"oh_tickets\": \"min\"",
+            ">\"oh_tickets\": \"max\"",
+            ">\"ed_hours\": \"min\"",
+            ">\"oh_tickets\": \"mean\"",
+            ">\"role\": \"min\""
+        ]
+    }
+]

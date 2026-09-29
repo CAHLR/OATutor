@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization Coefficient",
+        "text": "The regularization coefficient, often denoted as lambda (\u03bb), plays a crucial role in controlling the strength of the regularization term in a model. Think about how increasing or decreasing \u03bb might affect the model's complexity and its ability to generalize to new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It controls the strength of the regularization term."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp22-mt2-Q5b-h1"
+        ],
+        "title": "Role of Lambda in Regularization",
+        "text": "What is the primary role of the regularization coefficient \u03bb in a model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It controls the strength of the regularization term.",
+            "It determines the number of features in the model.",
+            "It adjusts the learning rate of the model."
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5b-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring the Objective Function",
+        "text": "The objective function combines the loss function and the regularization term. Consider how each part contributes to the overall goal of minimizing the function. What happens to the objective function when \u03bb is very large or very small?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It increases the weight of the regularization term, potentially leading to underfitting."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp22-mt2-Q5b-h3"
+        ],
+        "title": "Impact of Lambda on Objective Function",
+        "text": "How does a large \u03bb affect the objective function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It increases the weight of the regularization term, potentially leading to underfitting.",
+            "It decreases the weight of the regularization term, potentially leading to overfitting.",
+            "It has no effect on the objective function."
+        ]
+    }
+]

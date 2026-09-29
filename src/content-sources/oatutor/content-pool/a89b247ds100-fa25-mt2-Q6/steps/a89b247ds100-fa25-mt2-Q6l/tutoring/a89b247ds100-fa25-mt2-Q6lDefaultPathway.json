@@ -1,0 +1,34 @@
+[
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "When you remove a feature from a model, think about how it affects the model's flexibility. A less flexible model might have less variance because it doesn't fit the training data as closely. Consider how this change might impact the model's ability to adapt to new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6l-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6l-h1"
+        ],
+        "title": "Effect on Model Variance",
+        "text": "What happens to the model variance when you remove a feature?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    }
+]

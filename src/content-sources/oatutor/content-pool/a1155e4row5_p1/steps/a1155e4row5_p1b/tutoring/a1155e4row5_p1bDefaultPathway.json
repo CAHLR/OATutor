@@ -1,0 +1,34 @@
+[
+    {
+        "id": "a1155e4row5_p1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variable Types",
+        "text": "Consider what kind of data the column $$'oh_{tickets'}$$ represents. Is it something that can be counted or measured?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p1b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Quantitative"
+        ],
+        "dependencies": [
+            "a1155e4row5_p1b-h1"
+        ],
+        "title": "Identifying $$'oh_{tickets'}$$ Type",
+        "text": "Is $$'oh_{tickets'}$$ a countable number, a category, or an order?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Qualitative ordinal",
+            "Qualitative nominal",
+            "Quantitative"
+        ]
+    }
+]

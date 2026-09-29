@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a1155e4row3_p2g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "The DataFrame 'experiments' contains two columns: 'Antibiotic' and 'Colonies'. The 'Antibiotic' column represents the amount of antibiotic added, while the 'Colonies' column shows the number of bacterial colonies after $$12$$ hours.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row3_p2g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row3_p2g-h1"
+        ],
+        "title": "Choosing the Correct Column",
+        "text": "For the y-axis of the scatterplot, you need to represent the number of bacterial colonies. Which column in the DataFrame corresponds to this data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row3_p2g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$y=experiments['Colonies']$$"
+        ],
+        "dependencies": [
+            "a1155e4row3_p2g-h2"
+        ],
+        "title": "Selecting the y-axis Data",
+        "text": "Which of the following correctly represents the y-axis data for the scatterplot?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$y=experiments['Colonies']$$",
+            "$$y=experiments['Antibiotic']$$",
+            "experiments['Colonies']",
+            "$$x=experiments['Colonies']$$",
+            "$$y='Colonies'$$"
+        ]
+    }
+]

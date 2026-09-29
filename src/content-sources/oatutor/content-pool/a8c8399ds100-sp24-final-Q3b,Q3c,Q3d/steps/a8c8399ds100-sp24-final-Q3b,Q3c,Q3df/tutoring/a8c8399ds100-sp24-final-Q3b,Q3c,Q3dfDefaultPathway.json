@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3df-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding is a process used to convert categorical data into a numerical format that can be used in machine learning models. Each unique category value becomes a new column, and a binary value (0 or 1) is assigned to indicate the presence of that category in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3df-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It creates a new column for each unique genre and assigns binary values."
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp24-final-Q3b,Q3c,Q3df-h1"
+        ],
+        "title": "Identifying One-Hot Encoding",
+        "text": "What does the code snippet do to the 'genre' column in the DataFrame?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It creates a new column for each unique genre and assigns binary values.",
+            "It replaces the genre names with numbers.",
+            "It removes the genre column entirely."
+        ]
+    },
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3df-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-sp24-final-Q3b,Q3c,Q3df-h2"
+        ],
+        "title": "Effect of One-Hot Encoding on the Model",
+        "text": "By using one-hot encoding, each genre is represented as a separate feature in the model. This allows the model to learn the impact of each genre on the number of streams independently.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

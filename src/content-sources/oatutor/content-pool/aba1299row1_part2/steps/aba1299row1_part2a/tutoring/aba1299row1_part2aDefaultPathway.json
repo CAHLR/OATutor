@@ -1,0 +1,71 @@
+[
+    {
+        "id": "aba1299row1_part2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "Gradient descent updates the parameter by moving in the direction opposite to the gradient. The update rule is: $$new_{\\theta}$$ $$=$$ $$old_{\\theta}$$ - alpha * gradient.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1_part2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row1_part2a-h1"
+        ],
+        "title": "Using the Learning Rate",
+        "text": "The learning rate (alpha) is $$1$$ in this problem. This means the update rule simplifies to: $$new_{\\theta}$$ $$=$$ $$old_{\\theta}$$ - gradient.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1_part2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "aba1299row1_part2a-h2"
+        ],
+        "title": "Calculate the Gradient",
+        "text": "What is the gradient at $$t=0$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            ">2",
+            ">3",
+            ">4"
+        ]
+    },
+    {
+        "id": "aba1299row1_part2a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "aba1299row1_part2a-h3"
+        ],
+        "title": "Update the Parameter",
+        "text": "Using the update rule, what is $$\\operatorname{\\theta}\\left(t+1\\right)$$ at $$t=0$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$8$$",
+            "$$9$$",
+            ">10",
+            ">11",
+            ">9"
+        ]
+    }
+]

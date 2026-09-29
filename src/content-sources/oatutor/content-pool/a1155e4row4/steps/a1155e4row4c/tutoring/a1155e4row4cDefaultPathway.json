@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a1155e4row4c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "Look at the `nuggets` DataFrame. Which column would help you filter nuggets with weight less than $$0.6$$ ounces?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row4c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row4c-h1"
+        ],
+        "title": "Filtering the Data",
+        "text": "To find nuggets with weight less than $$0.6$$ ounces, you need to filter the DataFrame. How would you write this condition?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row4c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row4c-h2"
+        ],
+        "title": "Counting the Nuggets",
+        "text": "Once you have filtered the DataFrame, you need to count the occurrences of each chain. Which method helps you count occurrences in a DataFrame?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row4c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            ".idxmax()"
+        ],
+        "dependencies": [
+            "a1155e4row4c-h3"
+        ],
+        "title": "Finding the Chain with Most Nuggets",
+        "text": "After counting the occurrences, which method will give you the index of the maximum value?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            ".idxmax()",
+            ".index[0]",
+            ".max()",
+            ".argmax()",
+            ".iloc[0]"
+        ]
+    }
+]

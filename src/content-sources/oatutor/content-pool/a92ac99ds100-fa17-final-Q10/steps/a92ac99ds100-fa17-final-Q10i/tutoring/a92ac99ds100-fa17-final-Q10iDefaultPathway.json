@@ -1,0 +1,147 @@
+[
+    {
+        "id": "a92ac99ds100-fa17-final-Q10i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Diagram",
+        "text": "Start by identifying the main components of the bootstrap process. The diagram begins with a large group of people, which represents the population. From this population, a sample is drawn.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q10i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q10i-h1"
+        ],
+        "title": "Identifying the Population",
+        "text": "The first step in the diagram involves a large group of people. This is typically referred to as the population in statistical terms.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q10i-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Population"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q10i-h2"
+        ],
+        "title": "Choosing the Correct Term for Step $$1$$",
+        "text": "What term best describes the large group of people in the diagram?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Population",
+            "Bootstrap population",
+            "Observed sample",
+            "Expected sample",
+            "Bootstrap sample",
+            "Sampling distribution",
+            "Sampling",
+            "Bootstrapping",
+            "Bootstrap sampling distribution",
+            "Empirical distribution",
+            "True distribution",
+            "Population parameter",
+            "Sample Statistic",
+            "Bootstrap Statistic"
+        ]
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q10i-h4",
+        "type": "hint",
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q10i-h1"
+        ],
+        "title": "Understanding the Sample",
+        "text": "After identifying the population, the next step involves selecting a smaller group from this population. This smaller group is known as the sample.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q10i-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Observed sample"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q10i-h4"
+        ],
+        "title": "Choosing the Correct Term for Step $$3$$",
+        "text": "What term best describes the smaller group selected from the population?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Population",
+            "Bootstrap population",
+            "Observed sample",
+            "Expected sample",
+            "Bootstrap sample",
+            "Sampling distribution",
+            "Sampling",
+            "Bootstrapping",
+            "Bootstrap sampling distribution",
+            "Empirical distribution",
+            "True distribution",
+            "Population parameter",
+            "Sample Statistic",
+            "Bootstrap Statistic"
+        ]
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q10i-h6",
+        "type": "hint",
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q10i-h1"
+        ],
+        "title": "Understanding the Bootstrap Process",
+        "text": "The bootstrap process involves repeatedly sampling from the observed sample to create multiple bootstrap samples. This helps in estimating the sampling distribution of a statistic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q10i-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Bootstrapping"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q10i-h6"
+        ],
+        "title": "Choosing the Correct Term for Step $$6$$",
+        "text": "What term best describes the process of creating multiple samples from the observed sample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Population",
+            "Bootstrap population",
+            "Observed sample",
+            "Expected sample",
+            "Bootstrap sample",
+            "Sampling distribution",
+            "Sampling",
+            "Bootstrapping",
+            "Bootstrap sampling distribution",
+            "Empirical distribution",
+            "True distribution",
+            "Population parameter",
+            "Sample Statistic",
+            "Bootstrap Statistic"
+        ]
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "id": "abf3684ds100-sp24-final-Q2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Initial Weights",
+        "text": "Think about how starting points in optimization problems can affect the path taken to reach a solution. Consider how different initial weights might lead to different paths in the gradient descent process.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp24-final-Q2b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Convergence in Gradient Descent",
+        "text": "Consider what factors influence whether gradient descent converges to the optimal solution. What role do the learning rate and initial weights play in this process?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp24-final-Q2b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Impact of Initial Weights",
+        "text": "Which of the following statements best describes the impact of initial weights on gradient descent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Initial weights are irrelevant in optimization",
+            "Initial weights can affect convergence",
+            "Initial weights determine the learning rate",
+            "Initial weights have no impact on convergence",
+            "TRUE"
+        ]
+    }
+]

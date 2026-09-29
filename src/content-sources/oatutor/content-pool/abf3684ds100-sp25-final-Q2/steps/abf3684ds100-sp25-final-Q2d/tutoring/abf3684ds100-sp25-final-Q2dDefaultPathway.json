@@ -1,0 +1,58 @@
+[
+    {
+        "id": "abf3684ds100-sp25-final-Q2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L2 Regularization",
+        "text": "L2 regularization, also known as Ridge Regression, adds a penalty equal to the square of the magnitude of coefficients to the loss function. This helps in reducing overfitting by shrinking the coefficients. Can you think about how this might affect the uniqueness of the solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2d-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2d-h1"
+        ],
+        "title": "Exploring the Role of Lambda",
+        "text": "The parameter lambda (\u03bb) in L2 regularization controls the strength of the penalty. A larger \u03bb means more penalty on the coefficients. Consider how this penalty might influence the solution's uniqueness.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The system is exactly determined."
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2d-h2"
+        ],
+        "title": "Analyzing the Number of Parameters",
+        "text": "Given that there are $$30$$ parameters and $$30$$ observations, what can you infer about the system of equations formed?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The system is underdetermined.",
+            "The system is overdetermined.",
+            "The system is exactly determined."
+        ]
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2d-h4",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2d-h3"
+        ],
+        "title": "Uniqueness in Linear Models",
+        "text": "In a linear model with L2 regularization, the addition of the penalty term ensures that the solution is unique even if the matrix of features is not full rank. Think about why this might be the case.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

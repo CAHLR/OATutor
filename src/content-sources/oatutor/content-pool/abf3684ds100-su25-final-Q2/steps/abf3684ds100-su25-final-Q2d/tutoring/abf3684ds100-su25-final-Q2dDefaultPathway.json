@@ -1,0 +1,48 @@
+[
+    {
+        "id": "abf3684ds100-su25-final-Q2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE and MAE",
+        "text": "When considering Mean Squared Error (MSE) and Mean Absolute Error (MAE), think about how each metric treats errors. MSE squares the errors, which means larger errors have a disproportionately larger impact. MAE, on the other hand, treats all errors linearly. How might this affect the choice between the mean and median?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2d-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2d-h1"
+        ],
+        "title": "Mean vs Median in MSE",
+        "text": "The mean is the value that minimizes the sum of squared deviations from the data points. This is because MSE is sensitive to outliers due to the squaring of errors. Consider how this property of the mean might affect the training loss when optimizing for MSE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2d-h2"
+        ],
+        "title": "Choosing the Right Metric",
+        "text": "Which of the following statements is true about optimizing MSE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Both mean and median minimize MSE",
+            "FALSE",
+            "Neither mean nor median minimize MSE",
+            "The mean minimizes MSE",
+            "The median minimizes MSE"
+        ]
+    }
+]

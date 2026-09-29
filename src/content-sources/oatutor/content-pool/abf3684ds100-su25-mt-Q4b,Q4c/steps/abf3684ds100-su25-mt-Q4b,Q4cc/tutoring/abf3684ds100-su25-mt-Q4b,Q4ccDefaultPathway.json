@@ -1,0 +1,48 @@
+[
+    {
+        "id": "abf3684ds100-su25-mt-Q4b,Q4cc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MAE",
+        "text": "The Mean Absolute Error (MAE) measures the average magnitude of errors in a set of predictions, without considering their direction. It is the average over the test sample of the absolute differences between prediction and actual observation where all individual differences have equal weight.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-mt-Q4b,Q4cc-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-su25-mt-Q4b,Q4cc-h1"
+        ],
+        "title": "Robustness to Outliers",
+        "text": "Outliers are data points that differ significantly from other observations. Some loss functions are more sensitive to these outliers than others. Consider how the absolute value function in MAE might handle large deviations compared to a function that squares or raises deviations to the fourth power.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-mt-Q4b,Q4cc-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "abf3684ds100-su25-mt-Q4b,Q4cc-h2"
+        ],
+        "title": "Comparing Loss Functions",
+        "text": "Which of the following statements is true about the Mean Absolute Error (MAE) compared to the Mean 4th Power Error?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Both are equally robust to outliers",
+            "MAE is less robust to outliers",
+            "MAE is more robust to outliers",
+            "Neither is robust to outliers",
+            "TRUE"
+        ]
+    }
+]

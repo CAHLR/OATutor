@@ -1,0 +1,48 @@
+[
+    {
+        "id": "abf3684ds100-su25-final-Q2t-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "Gradient descent is an optimization algorithm used to minimize a function by iteratively moving towards the steepest descent, as defined by the negative of the gradient. Can you think of why it might work with both convex and non-convex functions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2t-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2t-h1"
+        ],
+        "title": "Convex vs Non-Convex Functions",
+        "text": "Convex functions have a single global minimum, while non-convex functions can have multiple local minima. How might this affect the path gradient descent takes?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2t-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2t-h2"
+        ],
+        "title": "Gradient Descent and Function Types",
+        "text": "Which of the following statements is true about gradient descent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Gradient descent can work with both convex and $$non-convex$$ functions.",
+            "Gradient descent is not suitable for optimization problems.",
+            "Gradient descent is only applicable to linear functions.",
+            "Gradient descent only works with convex functions.",
+            "TRUE"
+        ]
+    }
+]

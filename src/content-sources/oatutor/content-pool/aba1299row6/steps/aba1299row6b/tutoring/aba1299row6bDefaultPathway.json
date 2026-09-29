@@ -1,0 +1,45 @@
+[
+    {
+        "id": "aba1299row6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrap Sampling",
+        "text": "Bootstrap sampling involves drawing samples with replacement from the original dataset. This means that each sample can have repeated entries from the dataset. Why do you think this method is used in statistical $$inference$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6b-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row6b-h1"
+        ],
+        "title": "Purpose of Bootstrap Sampling",
+        "text": "Bootstrap sampling is used to estimate the distribution of a statistic by resampling with replacement. This helps in understanding the variability of the statistic. How might this be useful in testing hypotheses?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "aba1299row6b-h2"
+        ],
+        "title": "Bootstrap Sampling Process",
+        "text": "When creating bootstrap samples, are the samples drawn with or without replacement?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

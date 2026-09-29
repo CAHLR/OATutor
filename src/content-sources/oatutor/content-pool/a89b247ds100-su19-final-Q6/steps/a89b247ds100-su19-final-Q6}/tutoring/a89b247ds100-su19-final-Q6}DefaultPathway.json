@@ -1,0 +1,44 @@
+[
+    {
+        "id": "a89b247ds100-su19-final-Q6}-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variance",
+        "text": "Variance in a model refers to how much the model's predictions change when using different subsets of the training data. Consider how removing a feature like 'veg' might affect this variability.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6}-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Role of the 'veg' Feature",
+        "text": "The 'veg' feature captures the amount of vegetables bought. Think about how this feature contributes to the model's ability to fit the data and how its removal might impact the model's flexibility.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6}-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Variance decreases"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6}-h1"
+        ],
+        "title": "Impact on Variance",
+        "text": "What happens to the model's variance if we remove a feature that captures variability in the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Variance increases",
+            "Variance decreases",
+            "Variance stays the same"
+        ]
+    }
+]

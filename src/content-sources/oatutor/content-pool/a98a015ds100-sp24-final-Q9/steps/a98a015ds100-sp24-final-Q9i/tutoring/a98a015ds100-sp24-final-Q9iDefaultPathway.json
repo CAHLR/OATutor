@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a98a015ds100-sp24-final-Q9i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Principal Components",
+        "text": "When performing PCA, the principal components are ordered by the amount of variance they explain in the data. The first principal component explains the most variance, followed by the second, and so on. Singular values are related to the amount of variance explained.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9i-h1"
+        ],
+        "title": "Singular Values and Variance",
+        "text": "The singular value of a principal component is a measure of the variance explained by that component. A larger singular value indicates that the component explains more variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9i-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "PC alpha"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9i-h2"
+        ],
+        "title": "Comparing Singular Values",
+        "text": "Which principal component explains more variance based on the singular values given?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "PC alpha",
+            "PC beta"
+        ]
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9i-h4",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9i-h3"
+        ],
+        "title": "Identifying the First Principal Component",
+        "text": "The first principal component is the one that explains the most variance. Compare the singular values to determine which component is the first.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

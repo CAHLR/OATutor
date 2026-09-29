@@ -1,0 +1,86 @@
+[
+    {
+        "id": "aea05a2ds100-sp25-final-Q4c,Q4db-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Single Linkage",
+        "text": "Single linkage clustering merges clusters based on the shortest distance between any two points in the clusters. Think about how this might affect which pandas get grouped together.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp25-final-Q4c,Q4db-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Visualizing the Clusters",
+        "text": "Try sketching a simple diagram of the pandas in the PC space. Mark the distances between them to see which ones are closest. This can help you visualize how the clusters might form.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp25-final-Q4c,Q4db-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Pandas $$1$$ and $$2$$"
+        ],
+        "dependencies": [],
+        "title": "Step 1: Initial Clustering",
+        "text": "Which pandas are closest to each other initially?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Pandas $$1$$ and $$2$$",
+            "Pandas $$3$$ and $$4$$",
+            "Pandas $$5$$ and $$6$$"
+        ]
+    },
+    {
+        "id": "aea05a2ds100-sp25-final-Q4c,Q4db-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Panda $$3$$"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp25-final-Q4c,Q4db-h3"
+        ],
+        "title": "Step 2: Second Clustering",
+        "text": "After the first merge, which panda is closest to the newly formed cluster?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Panda $$3$$",
+            "Panda $$4$$",
+            "Panda $$5$$"
+        ]
+    },
+    {
+        "id": "aea05a2ds100-sp25-final-Q4c,Q4db-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Panda $$4$$"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp25-final-Q4c,Q4db-h4"
+        ],
+        "title": "Step 3: Third Clustering",
+        "text": "Which panda or cluster is closest to the cluster formed in the second step?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Panda $$4$$",
+            "Panda $$5$$",
+            "Panda $$6$$"
+        ]
+    }
+]

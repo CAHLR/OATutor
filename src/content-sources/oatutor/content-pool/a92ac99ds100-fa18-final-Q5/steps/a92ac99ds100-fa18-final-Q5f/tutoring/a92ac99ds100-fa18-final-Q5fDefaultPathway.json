@@ -1,0 +1,67 @@
+[
+    {
+        "id": "a92ac99ds100-fa18-final-Q5f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variance",
+        "text": "Variance measures how much the values in a dataset differ from the mean. If the values are spread out, the variance is larger. Consider how combining datasets might affect this spread.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa18-final-Q5f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a92ac99ds100-fa18-final-Q5f-h1"
+        ],
+        "title": "Effect of Combining Data",
+        "text": "When you combine datasets, think about how the overall spread of data points around the mean might change. Does combining increase or decrease the spread?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa18-final-Q5f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "rows"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa18-final-Q5f-h2"
+        ],
+        "title": "Analyzing Bootstrap Replicates",
+        "text": "Look at the row and column variances in the table. Which has a larger variance, rows or columns?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "rows",
+            "columns"
+        ]
+    },
+    {
+        "id": "a92ac99ds100-fa18-final-Q5f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It increases"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa18-final-Q5f-h3"
+        ],
+        "title": "Combining Replicates",
+        "text": "If you combine all bootstrap replicates into one array, how does it affect the variance of the sample mean?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It increases",
+            "It decreases",
+            "It stays the same"
+        ]
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a98a015ds100-sp24-final-Q9e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Principal Components",
+        "text": "When performing PCA, each principal component explains a certain amount of variance in the data. Think about how the explained variance changes as you add more components. Does it always increase significantly?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9e-h1"
+        ],
+        "title": "Explained Variance in PCA",
+        "text": "Consider the concept of cumulative explained variance. As you add more principal components, the cumulative explained variance increases. However, does it always increase at the same rate?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9e-h2"
+        ],
+        "title": "Evaluating the Scree Plot",
+        "text": "Look at the scree plot. Does the explained variance increase significantly after a certain number of components?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

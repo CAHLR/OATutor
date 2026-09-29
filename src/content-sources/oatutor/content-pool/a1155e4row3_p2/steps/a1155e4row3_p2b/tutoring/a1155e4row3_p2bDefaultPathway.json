@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1155e4row3_p2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Correlation",
+        "text": "To investigate the correlation between two variables, consider visualizations that show how one variable changes with respect to the other. Think about scatter plots or line graphs.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row3_p2b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Scatter plot"
+        ],
+        "dependencies": [
+            "a1155e4row3_p2b-h1"
+        ],
+        "title": "Choosing the Right Visualization",
+        "text": "Which of the following visualizations would best show the relationship between the amount of antibiotic and the number of colonies?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Scatter plot",
+            "Bar chart",
+            "Pie chart",
+            "Line graph"
+        ]
+    },
+    {
+        "id": "a1155e4row3_p2b-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Why Not Histograms?",
+        "text": "Histograms are useful for showing the distribution of a single variable, not the relationship between two variables. Consider if this is what you need for correlation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

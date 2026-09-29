@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a92ac99ds100-fa17-mt-Q25b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Law of Large Numbers",
+        "text": "The law of large numbers is a fundamental concept in probability and statistics. It suggests that as you increase the number of trials or sample size, the sample mean will converge to the expected value or population mean. Think about how this might apply to a random sample drawn with replacement.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-mt-Q25b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-mt-Q25b-h1"
+        ],
+        "title": "Sample Size and Averages",
+        "text": "Consider what happens to the average of a sample as the sample size increases. Does it tend to stabilize around a certain value?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a92ac99ds100-fa17-mt-Q25b-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sample Mean vs. Population Mean",
+        "text": "When you draw a sample from a population, the sample mean is an estimate of the population mean. As you increase the sample size, what do you think happens to the accuracy of this estimate?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-mt-Q25b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-mt-Q25b-h3"
+        ],
+        "title": "Convergence of Sample Mean",
+        "text": "Does the sample mean get closer to the population mean as the sample size increases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

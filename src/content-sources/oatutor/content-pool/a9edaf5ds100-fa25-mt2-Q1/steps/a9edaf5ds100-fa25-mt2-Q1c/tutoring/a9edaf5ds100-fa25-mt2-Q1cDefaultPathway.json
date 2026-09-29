@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a9edaf5ds100-fa25-mt2-Q1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross Validation",
+        "text": "In 8-fold cross-validation, the dataset is divided into $$8$$ parts. Each part is used once as a validation set while the remaining $$7$$ parts form the training set. How many times is each data point used in the training set?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa25-mt2-Q1c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Regularization Hyperparameter",
+        "text": "The regularization hyperparameter is tested across multiple values to find the best fit. If you have $$11$$ different values, how many times will each value be tested during the cross-validation process?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa25-mt2-Q1c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$11\\left(8-1\\right)$$"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa25-mt2-Q1c-h1"
+        ],
+        "title": "Calculating Training Uses",
+        "text": "Consider that in 8-fold cross-validation, each data point is used in the training set $$7$$ times. How many times will this occur for each of the $$11$$ hyperparameter values?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$8\\times11$$",
+            "$$11\\left(3+1\\right) \\left(8-1\\right)$$",
+            "$$11\\left(8-1\\right)$$",
+            "$$1\\times11$$",
+            "$$8\\left(3+1\\right)\\times11$$"
+        ]
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a640c04row7b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Median",
+        "text": "To find the median in a sorted list, you need to locate the middle value. Since there are $$719$$ rows, think about how you would find the middle index in this case.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row7b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a640c04row7b-h1"
+        ],
+        "title": "Calculating the Middle Index",
+        "text": "For an odd number of elements, the median is the element at the position $$\\frac{n+1}{2}$$. Try applying this formula to find the middle index for $$719$$ elements.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row7b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "dan_products['Stars'].iloc[359]"
+        ],
+        "dependencies": [
+            "a640c04row7b-h2"
+        ],
+        "title": "Choosing the Correct Index",
+        "text": "Which index corresponds to the median value in a list of $$719$$ elements?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "dan_products['Stars'].iloc[359]",
+            "dan_products['Stars'].iloc[360]",
+            "dan_products['Stars'].loc[359]",
+            "dan_products['Stars'].iloc[719/2+1]",
+            "dan_products.iloc[359]"
+        ]
+    }
+]

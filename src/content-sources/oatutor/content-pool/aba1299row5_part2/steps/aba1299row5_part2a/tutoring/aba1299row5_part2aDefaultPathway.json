@@ -1,0 +1,47 @@
+[
+    {
+        "id": "aba1299row5_part2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Residuals",
+        "text": "Residuals are the differences between the observed values and the predicted values from a model. Can you think about what it means for these differences to be orthogonal to the predictors?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row5_part2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row5_part2a-h1"
+        ],
+        "title": "Orthogonality in Linear Models",
+        "text": "In the context of linear regression, when we say that the residuals are orthogonal to the columns of the design matrix, it means that the dot product of the residual vector with any column of the design matrix is zero. Why might this be important for the accuracy of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row5_part2a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "aba1299row5_part2a-h2"
+        ],
+        "title": "Checking Orthogonality",
+        "text": "Which of the following statements is true about the residual vector e in relation to the design matrix X?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "The residual vector e is neither orthogonal nor parallel to the columns of the design matrix X.",
+            "The residual vector e is orthogonal to all columns of the design matrix X.",
+            "The residual vector e is parallel to all columns of the design matrix X."
+        ]
+    }
+]

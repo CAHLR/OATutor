@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a89b247ds100-fa17-final-Q16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "Model variance refers to how much the model's predictions change when it is trained on different subsets of the data. High variance models tend to fit the training data very closely but may not generalize well to new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa17-final-Q16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa17-final-Q16a-h1"
+        ],
+        "title": "Identifying High Variance",
+        "text": "Look for models that have complex patterns and seem to fit the training data very closely. These models often have high variance because they capture noise in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa17-final-Q16a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "(c)"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa17-final-Q16a-h2"
+        ],
+        "title": "Analyzing the Plots",
+        "text": "Which plot shows a model that fits the training data very closely, with complex patterns?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "(a)",
+            "(b)",
+            "(c)"
+        ]
+    }
+]

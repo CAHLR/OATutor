@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a92ac99ds100-fa17-final-Q11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrap Confidence Intervals",
+        "text": "Bootstrap confidence intervals are constructed using the percentiles of the bootstrap distribution. In this case, the $$2.5th$$ and $$97.5th$$ percentiles are given. Think about how these percentiles relate to the confidence interval.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q11a-h1"
+        ],
+        "title": "Percentiles and Confidence Intervals",
+        "text": "The $$2.5th$$ and $$97.5th$$ percentiles of the bootstrap distribution represent the lower and upper bounds of the 95% confidence interval. Consider how these values can be used to form the interval for the population mean.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q11a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(7.7, 9.1)$$"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q11a-h2"
+        ],
+        "title": "Choosing the Correct Interval",
+        "text": "Which of the following options correctly represents the 95% bootstrap confidence interval for the population mean?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "(8.4-1.96*2/10,8.4+1.96*2/10)",
+            "$$(7.7, 9.1)$$",
+            "(7.7-1.96*2/10,9.1+1.96*2/10)",
+            "(8.4-7.1,8.4+9.1)"
+        ]
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a1bb75eds100-sp19-final-Q5ac-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logistic Regression",
+        "text": "In logistic regression, the probability $$\\$P(Y=1|X)\\$$$ is modeled using the logistic function, which outputs values between $$0$$ and $$1$$. This means that $$\\$P(Y=1|X)\\$$$ can never be exactly $$1$$ or $$0$$, but it can get very close to these values. Think about how this affects the statement $P(Y=1|X)<1$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp19-final-Q5ac-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$ to $$1$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp19-final-Q5ac-h1"
+        ],
+        "title": "Exploring the Logistic Function",
+        "text": "Consider the logistic function $\\sigma(X**{T}{\\beta})$. What is the range of values that this function can output?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$ to $$1$$",
+            "$$0$$ to infinity",
+            "negative infinity to infinity"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp19-final-Q5ac-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp19-final-Q5ac-h2"
+        ],
+        "title": "Behavior of the Logistic Function",
+        "text": "The logistic function $\\sigma(z)=1/(1+e**{-z})$ is always less than $$1$$ because the denominator $1+e**{-z}$ is always greater than $$1$$. How does this relate to the probability $$\\$P(Y=1|X)\\$$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp19-final-Q5ac-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Because $e**{-z}$ is always positive."
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp19-final-Q5ac-h3"
+        ],
+        "title": "Analyzing the Denominator",
+        "text": "Why is the denominator $1+e**{-z}$ always greater than 1?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Because $e**{-z}$ is always positive.",
+            "Because $e**{-z}$ can be negative.",
+            "Because $e**{-z}$ is always zero."
+        ]
+    }
+]

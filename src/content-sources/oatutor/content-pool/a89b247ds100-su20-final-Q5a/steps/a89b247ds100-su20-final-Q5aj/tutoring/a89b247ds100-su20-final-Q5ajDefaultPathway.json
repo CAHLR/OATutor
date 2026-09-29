@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a89b247ds100-su20-final-Q5aj-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Ridge Regression",
+        "text": "Ridge regression adds a penalty term to the loss function to prevent overfitting. This penalty term is proportional to the square of the magnitude of the coefficients. Can you think about how increasing this penalty might affect the coefficients?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su20-final-Q5aj-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-su20-final-Q5aj-h1"
+        ],
+        "title": "Effect of Increasing Lambda",
+        "text": "When you increase the value of lambda in ridge regression, the penalty on large coefficients becomes stronger. How do you think this affects the bias and variance of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su20-final-Q5aj-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a89b247ds100-su20-final-Q5aj-h2"
+        ],
+        "title": "Impact on Model Bias",
+        "text": "As lambda increases, what happens to the model bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

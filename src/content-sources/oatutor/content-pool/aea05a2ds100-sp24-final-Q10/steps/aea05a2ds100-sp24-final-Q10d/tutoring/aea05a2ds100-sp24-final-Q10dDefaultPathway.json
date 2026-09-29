@@ -1,0 +1,83 @@
+[
+    {
+        "id": "aea05a2ds100-sp24-final-Q10d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Hierarchical Clustering",
+        "text": "In hierarchical agglomerative clustering, we start by treating each data point as its own cluster. The first step is to merge the two closest clusters. Can you think about how you might determine which clusters are closest?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp24-final-Q10d-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-sp24-final-Q10d-h1"
+        ],
+        "title": "Calculating Distance",
+        "text": "To find the closest clusters, consider how you might calculate the distance between two clusters. What metric could you use to measure this distance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp24-final-Q10d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Euclidean distance"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp24-final-Q10d-h2"
+        ],
+        "title": "Choosing the Distance Metric",
+        "text": "Which of the following is a common method for measuring the distance between two clusters in hierarchical clustering?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Euclidean distance",
+            "Manhattan distance",
+            "Chebyshev distance",
+            "Hamming distance"
+        ]
+    },
+    {
+        "id": "aea05a2ds100-sp24-final-Q10d-h4",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-sp24-final-Q10d-h3"
+        ],
+        "title": "Identifying the Closest Clusters",
+        "text": "Once you have chosen a distance metric, apply it to the data points. Which pairs of points have the smallest distance between them?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp24-final-Q10d-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1$$ and $$1$$"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp24-final-Q10d-h4"
+        ],
+        "title": "First Merge in Hierarchical Clustering",
+        "text": "Based on the distance metric, which two clusters should merge first?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$ and $$3$$",
+            "$$5$$ and $$6$$",
+            "$$1$$ and $$1$$",
+            "$$3$$ and $$4$$",
+            "$$1$$, $$1$$, and $$1$$"
+        ]
+    }
+]

@@ -1,0 +1,80 @@
+[
+    {
+        "id": "aea05a2ds100-su21-final-Q9c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Agglomerative Clustering",
+        "text": "Agglomerative clustering starts with each point as its own cluster and merges the closest clusters step by step. The process continues until the desired number of clusters is reached.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-su21-final-Q9c-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-su21-final-Q9c-h1"
+        ],
+        "title": "Identifying the Closest Points",
+        "text": "Look at the distance matrix. Which pair of points has the smallest distance? This pair will be the first to merge.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-su21-final-Q9c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "A and E"
+        ],
+        "dependencies": [
+            "aea05a2ds100-su21-final-Q9c-h2"
+        ],
+        "title": "First Merge",
+        "text": "Which two points should be merged first based on the smallest distance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "A and B",
+            "A and C",
+            "A and E",
+            "B and D"
+        ]
+    },
+    {
+        "id": "aea05a2ds100-su21-final-Q9c-h4",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-su21-final-Q9c-h3"
+        ],
+        "title": "Next Steps in Clustering",
+        "text": "After merging the closest pair, update the distance matrix to reflect the new cluster. Continue merging the closest clusters until you have the desired number of clusters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-su21-final-Q9c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "aea05a2ds100-su21-final-Q9c-h4"
+        ],
+        "title": "Checking Completion",
+        "text": "Have we completed the algorithm?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

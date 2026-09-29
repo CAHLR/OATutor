@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a9edaf5ds100-su20-final-Q4k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean-Centering",
+        "text": "Mean-centering involves adjusting the values in each column of the design matrix, except the intercept, so that their mean becomes zero. This transformation can simplify the interpretation of the coefficients in a linear model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q4k-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Regularization in Ridge Regression",
+        "text": "Ridge regression adds a penalty term to the loss function to shrink the coefficients. This penalty term is controlled by the parameter lambda. Consider how including or excluding the intercept term in this penalty affects the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q4k-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Always true"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su20-final-Q4k-h1"
+        ],
+        "title": "Effect of Centering on Regularization",
+        "text": "When the design matrix is mean-centered, how does it affect the regularization of the intercept term in ridge regression?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Always true",
+            "Sometimes true",
+            "Never true",
+            "Depends on the value of lambda",
+            "Cannot be determined"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q4k-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-su20-final-Q4k-h2"
+        ],
+        "title": "Comparing Models with and without Centering",
+        "text": "Consider how the mean-centering of the design matrix affects the equivalence of the models with and without regularizing the intercept term. Think about the role of the intercept in a mean-centered matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

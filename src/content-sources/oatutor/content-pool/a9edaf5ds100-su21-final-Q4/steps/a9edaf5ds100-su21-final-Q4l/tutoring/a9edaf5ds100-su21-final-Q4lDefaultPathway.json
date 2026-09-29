@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a9edaf5ds100-su21-final-Q4l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Bias",
+        "text": "When we talk about model bias, we're referring to the error introduced by approximating a real-world problem, which may be complex, by a simplified model. High bias can cause an algorithm to miss the relevant relations between features and target outputs.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4l-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Regularization and Bias",
+        "text": "Regularization is a technique used to prevent overfitting by adding a penalty to the loss function. However, it can sometimes increase bias by making the model too simple. Think about what changes you can make to the model to counteract this effect.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4l-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Adding an Intercept Term",
+        "text": "Consider how adding an intercept term might affect the model's ability to fit the data. Does it allow the model to better capture the underlying trend?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

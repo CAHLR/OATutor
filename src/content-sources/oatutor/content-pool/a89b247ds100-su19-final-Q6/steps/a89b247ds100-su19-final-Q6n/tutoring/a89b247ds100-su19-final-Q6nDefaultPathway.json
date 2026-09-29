@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a89b247ds100-su19-final-Q6n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Polynomial Features",
+        "text": "Adding polynomial features, such as degree $$3$$, increases the complexity of the model. Consider how this affects the model's ability to fit the training data and its flexibility.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6n-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6n-h1"
+        ],
+        "title": "Bias and Variance Trade-off",
+        "text": "Think about how increasing model complexity with polynomial features might impact bias and variance. A more complex model can fit the training data better, but what does that mean for bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6n-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "decrease"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6n-h2"
+        ],
+        "title": "Effect on Bias",
+        "text": "Does increasing the degree of polynomial features generally increase or decrease bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "increase",
+            "decrease"
+        ]
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6n-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "increase"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6n-h3"
+        ],
+        "title": "Effect on Variance",
+        "text": "Does increasing the degree of polynomial features generally increase or decrease variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "increase",
+            "decrease"
+        ]
+    }
+]

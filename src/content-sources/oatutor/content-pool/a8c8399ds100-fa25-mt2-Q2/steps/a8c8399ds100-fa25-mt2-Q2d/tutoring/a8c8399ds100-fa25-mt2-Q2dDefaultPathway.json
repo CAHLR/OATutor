@@ -1,0 +1,62 @@
+[
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Orthogonality",
+        "text": "Think about what it means for two vectors to be orthogonal. If two vectors are orthogonal, their dot product is zero. Consider the vector $$1$$ and the vector Y-hat. What does their dot product tell you?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q2d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring the Span",
+        "text": "The span of a set of vectors is the set of all possible linear combinations of those vectors. If a vector is in the span of another set of vectors, it can be expressed as a linear combination of them. Can the vector $$1$$ be expressed as a linear combination of the vectors in Y-hat?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q2d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Orthogonal to"
+        ],
+        "dependencies": [],
+        "title": "Checking Orthogonality",
+        "text": "What is the dot product of the vector $$1$$ and the vector Y-hat?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Orthogonal to",
+            "In the span of",
+            "NOT orthogonal to and NOT in the span of"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q2d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Orthogonal to"
+        ],
+        "dependencies": [],
+        "title": "Understanding the Span",
+        "text": "Can the vector $$1$$ be written as a linear combination of the vectors in Y-hat?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Orthogonal to",
+            "In the span of",
+            "NOT orthogonal to and NOT in the span of"
+        ]
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a72a45crow7c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrames",
+        "text": "The images show two DataFrames: 'ticket' and 'jacket'. Each has a $$'passport_{id'}$$ column, which can be used to link the two DataFrames. Consider how you might use this information to filter or join data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow7c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Filtering Modern Buildings",
+        "text": "To determine if a building is modern, you need to calculate the proportion of rooms renovated in $$2003$$ or later. Think about how you can use a lambda function to filter buildings based on this condition.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow7c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "lambda sf: (sum(sf['renovated'].astype(int)>=2003)/sf['renovated'].size)>=0.80"
+        ],
+        "dependencies": [
+            "a72a45crow7c-h2"
+        ],
+        "title": "Lambda Function Logic",
+        "text": "Which lambda function correctly calculates the proportion of rooms renovated in $$2003$$ or later?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "lambda sf: (sum(sf['renovated'].astype(int)>=2003)/sf['renovated'].size)>=0.80",
+            "lambda sf: (sum(sf['renovated'].astype(int)>=2003)/sf['renovated'].size)>0.80",
+            "lambda sf: $$sf['renovated'].astype(int).mean() \\geq 2003$$",
+            "lambda sf: (sum(sf['renovated'].astype(int)<=2003)/sf['renovated'].size)>=0.80",
+            "lambda sf: $$sf['renovated'].size \\geq 0.80$$"
+        ]
+    }
+]

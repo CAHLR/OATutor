@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a1155e4row10_p2n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding KDE",
+        "text": "A Kernel Density Estimate (KDE) is a way to estimate the probability density function of a random variable. It involves placing a kernel, which is a smooth, symmetric function, at each data point.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2n-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row10_p2n-h1"
+        ],
+        "title": "Normalization in KDE",
+        "text": "Normalization ensures that each kernel contributes equally to the overall density estimate. This is typically done by ensuring each kernel has an area of $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2n-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Each kernel has an area of $$1$$"
+        ],
+        "dependencies": [
+            "a1155e4row10_p2n-h2"
+        ],
+        "title": "Choosing the Correct Normalization",
+        "text": "Which of the following statements correctly describes the normalization of kernels in a KDE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Each kernel has an area of \\alpha",
+            "Each kernel has an area of $$1$$",
+            "The total area under the KDE curve is $$1$$",
+            "None of the above"
+        ]
+    }
+]

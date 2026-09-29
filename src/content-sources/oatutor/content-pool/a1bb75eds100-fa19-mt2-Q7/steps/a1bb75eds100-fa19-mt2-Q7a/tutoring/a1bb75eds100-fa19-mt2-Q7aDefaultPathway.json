@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Accuracy",
+        "text": "Accuracy is the ratio of correctly predicted observations to the total observations. Think about how many predictions match the true labels.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-mt2-Q7a-h1"
+        ],
+        "title": "Counting Correct Predictions",
+        "text": "Count how many times the predicted value matches the true label. This will give you the number of correct predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{7}{10}$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-mt2-Q7a-h2"
+        ],
+        "title": "Calculate the Accuracy",
+        "text": "Now that you know the number of correct predictions, divide it by the total number of predictions to find the accuracy.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{6}{10}$$",
+            "$$\\frac{7}{10}$$",
+            "$$\\frac{8}{10}$$",
+            "$$\\frac{2}{3}$$",
+            "$$\\frac{6}{9}$$"
+        ]
+    }
+]

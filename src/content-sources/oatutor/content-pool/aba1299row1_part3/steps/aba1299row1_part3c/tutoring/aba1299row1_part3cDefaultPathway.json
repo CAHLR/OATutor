@@ -1,0 +1,34 @@
+[
+    {
+        "id": "aba1299row1_part3c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE on Training Data",
+        "text": "When you add a new feature to a model, especially one that is a transformation of an existing feature, think about how it might help the model fit the training data better. Consider how this might affect the model's ability to capture patterns in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1_part3c-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "aba1299row1_part3c-h1"
+        ],
+        "title": "Effect of Adding Features",
+        "text": "What is a possible effect of adding a new feature on the MSE of training data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Increase and Decrease"
+        ]
+    }
+]

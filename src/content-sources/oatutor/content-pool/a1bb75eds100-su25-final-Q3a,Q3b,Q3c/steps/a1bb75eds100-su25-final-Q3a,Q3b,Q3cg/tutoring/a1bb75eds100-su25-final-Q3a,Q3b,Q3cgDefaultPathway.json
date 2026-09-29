@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3cg-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Recall",
+        "text": "Recall is the ratio of true positive predictions to the total actual positives. It helps us understand how well the model identifies positive instances.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3cg-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3cg-h1"
+        ],
+        "title": "Identifying True Positives",
+        "text": "Look at the test results and identify which predictions are true positives. A true positive is when the true label is $$1$$ and the prediction is also $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3cg-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3cg-h2"
+        ],
+        "title": "Counting Actual Positives",
+        "text": "Count how many instances have a true label of $$1$$. This will give you the total number of actual positives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su25-final-Q3a,Q3b,Q3cg-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{2}{3}$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su25-final-Q3a,Q3b,Q3cg-h3"
+        ],
+        "title": "Calculating Recall",
+        "text": "Using the formula for recall, calculate the recall value. Recall is true positives divided by actual positives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{4}{5}$$",
+            "$$\\frac{1}{3}$$",
+            "$$\\frac{2}{3}$$",
+            "$$\\frac{2}{5}$$",
+            "$$1$$"
+        ]
+    }
+]

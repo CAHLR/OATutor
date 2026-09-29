@@ -1,0 +1,99 @@
+[
+    {
+        "id": "a89b247ds100-sp19-final-Q8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias",
+        "text": "Bias in an estimator is the difference between the expected value of the estimator and the true value of the parameter being estimated. Think about what the true maximum value of a die roll is and compare it to the expected value of your estimator.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp19-final-Q8b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-sp19-final-Q8b-h1"
+        ],
+        "title": "Expected Value of a Die Roll",
+        "text": "The expected value of a single roll of a fair 6-sided die is the average of all possible outcomes. Can you calculate this average?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp19-final-Q8b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3.5$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp19-final-Q8b-h2"
+        ],
+        "title": "Calculate the Expected Value",
+        "text": "What is the expected value of a single roll of a fair 6-sided die?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$2$$",
+            "$$3$$",
+            "$$3.5$$",
+            "$$4$$",
+            "$$5$$",
+            "$$6$$"
+        ]
+    },
+    {
+        "id": "a89b247ds100-sp19-final-Q8b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-sp19-final-Q8b-h3"
+        ],
+        "title": "True Maximum Value",
+        "text": "Consider the maximum number of dots on a 6-sided die. What is this value?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp19-final-Q8b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp19-final-Q8b-h4"
+        ],
+        "title": "Identify the True Maximum",
+        "text": "What is the maximum number of dots on a 6-sided die?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$2$$",
+            "$$3$$",
+            "$$4$$",
+            "$$5$$",
+            "$$6$$"
+        ]
+    },
+    {
+        "id": "a89b247ds100-sp19-final-Q8b-h6",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-sp19-final-Q8b-h5"
+        ],
+        "title": "Calculate the Bias",
+        "text": "Now that you know the expected value of a roll and the true maximum value, calculate the bias by finding the difference between these two values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

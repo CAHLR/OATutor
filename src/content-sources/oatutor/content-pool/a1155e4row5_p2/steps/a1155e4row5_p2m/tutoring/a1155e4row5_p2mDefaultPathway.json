@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a1155e4row5_p2m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE and MAE",
+        "text": "Mean Squared Error (MSE) and Mean Absolute Error (MAE) are both metrics used to evaluate the accuracy of a model. MSE squares the errors before averaging, which means it gives more weight to larger errors. MAE, on the other hand, takes the absolute value of errors, treating all errors equally. Think about when you might want to emphasize larger errors more.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p2m-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row5_p2m-h1"
+        ],
+        "title": "Sensitivity to Outliers",
+        "text": "Outliers are data points that differ significantly from other observations. When a model needs to be sensitive to these outliers, it means that the model should react strongly to them. Consider which error metric, MSE or MAE, would react more strongly to a few large errors.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p2m-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1155e4row5_p2m-h2"
+        ],
+        "title": "Choosing the Right Metric",
+        "text": "Which error metric is more sensitive to outliers due to its squaring of errors?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "MAE",
+            "MSE",
+            "TRUE"
+        ]
+    }
+]

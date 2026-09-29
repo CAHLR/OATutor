@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Full Column Rank",
+        "text": "A matrix is said to be full column rank if all its columns are linearly independent. This means no column can be written as a linear combination of the others. Think about what this implies for the design matrix X in terms of the foods.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-sp22-mt2-Q6b-h1"
+        ],
+        "title": "Dummy Variables and Linear Independence",
+        "text": "Consider how the dummy variables for each food item are constructed. If each food is represented by a separate column, what does this mean for the linear independence of these columns?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The columns are linearly independent."
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp22-mt2-Q6b-h2"
+        ],
+        "title": "Checking Column Rank",
+        "text": "If the design matrix X has columns for Rice, Pizza, Orange Juice, and Sushi, which of the following statements is true about its columns?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The columns are linearly independent.",
+            "The columns are linearly dependent."
+        ]
+    }
+]

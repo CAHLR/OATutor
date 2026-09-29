@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Logistic Regression Equation",
+        "text": "In logistic regression, the probability of an event is modeled using the logistic function, which is expressed as \\( \\sigma(\\beta_0 + \\beta_1x_1 + \\beta_2x_2 + \\ldots) \\). Here, \\( \\sigma \\) is the sigmoid function, and \\( \\beta \\) values are the coefficients from your model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-mt2-Q7j-h1"
+        ],
+        "title": "Identifying the Variables",
+        "text": "For the given problem, identify the values for each variable: \\( \\beta_0 \\) is the intercept, \\( \\beta_1 \\) corresponds to age, and \\( \\beta_2 \\) corresponds to sex. What are the values for a 20-year-old female passenger?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7j-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-mt2-Q7j-h2"
+        ],
+        "title": "Substituting Values into the Equation",
+        "text": "Substitute the values into the logistic regression equation: \\( \\beta_0 + \\beta_1 \\times \\text{age} + \\beta_2 \\times \\text{sex} \\). Remember, for a female passenger, the sex variable is typically coded as $$1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7j-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1.2$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-mt2-Q7j-h3"
+        ],
+        "title": "Calculate the Linear Combination",
+        "text": "Calculate the linear combination of the coefficients and variables: $$\\(-1.2$$ + $$(-0.005$$ \\times 20) + $$(2.5$$ \\times 1)\\). What is the result?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1.2$$",
+            "$$-1.2$$",
+            "$$0.8$$",
+            "$$1.2$$",
+            "$$2.5$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7j-h5",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-mt2-Q7j-h4"
+        ],
+        "title": "Applying the Sigmoid Function",
+        "text": "Once you have the linear combination, apply the sigmoid function \\( \\sigma(x) $$=$$ \\frac{1}{1+e**{-x}} \\) to find the probability. What does \\( $$\\sigma(1.2)$$ \\) represent in this context?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

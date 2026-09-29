@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3dk-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Linear Models",
+        "text": "A linear model with respect to a parameter means that the model is linear in terms of that parameter. This means that the parameter appears in the model without being raised to a power, multiplied by another parameter, or involved in any non-linear operations like exponentiation or logarithms.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3dk-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp24-final-Q3b,Q3c,Q3dk-h1"
+        ],
+        "title": "Analyzing the Given Model",
+        "text": "Consider the model \\( \\hat{y}=\\theta_1+\\theta_1**{2}x_1 \\). Is the parameter \\( $$\\theta_1$$ \\) involved in any non-linear operations?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-sp24-final-Q3b,Q3c,Q3dk-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-sp24-final-Q3b,Q3c,Q3dk-h2"
+        ],
+        "title": "Identifying Non-linear Operations",
+        "text": "In the expression \\( \\theta_1+\\theta_1**{2}x_1 \\), notice that \\( $$\\theta_1$$ \\) is squared. Squaring is a non-linear operation. This affects whether the model is linear with respect to \\( $$\\theta_1$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

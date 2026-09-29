@@ -1,0 +1,97 @@
+[
+    {
+        "id": "a89b247ds100-fa24-final-Q3ba-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Risk",
+        "text": "Model risk is the sum of bias squared, variance, and observational variance. You already know the model bias and variance. Can you use this information to find the observational variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa24-final-Q3ba-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa24-final-Q3ba-h1"
+        ],
+        "title": "Breaking Down the Formula",
+        "text": "The formula for model risk is: $$risk={bias}^2+variance+observational$$ variance. You have the values for risk, bias, and variance. How can you rearrange this formula to solve for the observational variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa24-final-Q3ba-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa24-final-Q3ba-h2"
+        ],
+        "title": "Calculate Bias Squared",
+        "text": "What is the value of bias squared if the bias is 3?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$9$$",
+            "$$12$$",
+            "$$15$$",
+            "$$3$$",
+            "$$6$$",
+            "$$9$$"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa24-final-Q3ba-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$risk-{bias}**2-variance$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa24-final-Q3ba-h3"
+        ],
+        "title": "Rearrange the Formula",
+        "text": "Using the formula $$risk={bias}^2+variance+observational$$ variance, what is the expression for observational variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$risk-{bias}**2-variance$$",
+            "$$risk {bias}^2 variance$$",
+            "$$risk+{bias}^2+variance$$",
+            "$$risk-{bias}^2-variance$$"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa24-final-Q3ba-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa24-final-Q3ba-h4"
+        ],
+        "title": "Calculate Observational Variance",
+        "text": "Now that you have the expression for observational variance, substitute the known values: $$risk=15$$, $${bias}^2=9$$, and $$variance=5$$. What is the observational variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$1$$",
+            "$$11$$",
+            "$$19$$",
+            "$$5$$",
+            "$$7$$"
+        ]
+    }
+]

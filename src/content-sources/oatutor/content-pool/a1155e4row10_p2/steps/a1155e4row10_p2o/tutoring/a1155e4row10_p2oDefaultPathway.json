@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a1155e4row10_p2o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding KDE",
+        "text": "A Kernel Density Estimate (KDE) is a way to estimate the probability density function of a random variable. It involves placing a kernel, which is a smooth, symmetric function, at each data point.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2o-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row10_p2o-h1"
+        ],
+        "title": "Role of Bandwidth in KDE",
+        "text": "The bandwidth parameter in a KDE controls how smooth or wiggly the resulting curve is. A larger bandwidth results in a smoother curve, while a smaller bandwidth can capture more detail but may also introduce noise.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2o-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Smoothness"
+        ],
+        "dependencies": [
+            "a1155e4row10_p2o-h2"
+        ],
+        "title": "Choosing the Correct Term for Blank C",
+        "text": "What does the bandwidth parameter affect in a KDE curve?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Height",
+            "Smoothness",
+            "Area",
+            "None of the above"
+        ]
+    }
+]

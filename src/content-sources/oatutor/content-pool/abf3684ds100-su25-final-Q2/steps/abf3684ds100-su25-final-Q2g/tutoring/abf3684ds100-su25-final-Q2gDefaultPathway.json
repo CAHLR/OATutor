@@ -1,0 +1,66 @@
+[
+    {
+        "id": "abf3684ds100-su25-final-Q2g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Span of X",
+        "text": "The span of a matrix X refers to all possible linear combinations of its columns. If a vector Y is in the span of X, it means Y can be expressed as a combination of the columns of X. Consider what this implies about the relationship between Y and X in the context of linear regression.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2g-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It can be expressed as a linear combination of the matrix's columns."
+        ],
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2g-h1"
+        ],
+        "title": "Exploring Linear Combinations",
+        "text": "Which of the following statements is true about a vector being in the span of a matrix?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It can be expressed as a linear combination of the matrix's columns.",
+            "It is orthogonal to the matrix.",
+            "It is a scalar multiple of the matrix."
+        ]
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2g-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "OLS Model and Unique Solutions",
+        "text": "In an OLS model, a unique solution for the parameters is found when the matrix X has full column rank. This means the columns of X are linearly independent. Think about how this affects the span of X and the vector Y.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2g-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The columns are linearly independent."
+        ],
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2g-h3"
+        ],
+        "title": "Full Column Rank Implications",
+        "text": "What does it mean for a matrix to have full column rank?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The columns are linearly independent.",
+            "The columns are linearly dependent.",
+            "The matrix is square."
+        ]
+    }
+]

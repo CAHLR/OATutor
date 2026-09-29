@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting by adding a penalty term to the loss function. In this case, the penalty term is lambda times the sum of $$10$$ raised to the power of each $$\\theta_i$$. How might this affect the solution compared to the least squares estimate?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-sp22-mt2-Q5c-h1"
+        ],
+        "title": "Comparing Objective Functions",
+        "text": "The objective function here includes both the L2 loss and the exponential regularization term. Consider how the presence of the regularization term might influence the values of theta that minimize the objective function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The values of theta are adjusted to minimize both the L2 loss and the regularization term."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp22-mt2-Q5c-h2"
+        ],
+        "title": "Effect of Regularization on Theta",
+        "text": "What happens to the values of theta when the regularization term is added to the objective function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The values of theta are adjusted to minimize both the L2 loss and the regularization term.",
+            "The values of theta remain the same as the least squares estimate.",
+            "The values of theta are only influenced by the L2 loss."
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-sp22-mt2-Q5c-h3"
+        ],
+        "title": "Role of Lambda in Regularization",
+        "text": "Lambda is a hyperparameter that controls the strength of the regularization. A larger lambda places more emphasis on the regularization term. How might this affect the optimal solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The values of theta will be more heavily influenced by the regularization term, potentially leading to smaller values."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp22-mt2-Q5c-h4"
+        ],
+        "title": "Impact of Lambda on Solution",
+        "text": "If lambda is increased, what is the likely impact on the values of theta?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The values of theta will be more heavily influenced by the regularization term, potentially leading to smaller values.",
+            "The values of theta will be less influenced by the regularization term.",
+            "The values of theta will remain unchanged."
+        ]
+    }
+]

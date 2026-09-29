@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-final-Q5l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Graph",
+        "text": "Observe the behavior of the function as $$x$$ approaches positive and negative $$\\infty$$. Notice how the function levels off at certain values. This is similar to the behavior of the logistic function.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5l-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5l-h1"
+        ],
+        "title": "Comparing Functions",
+        "text": "The logistic function and the scaled inverse tangent function both map any real number to a value between $$0$$ and $$1$$. Consider how this property affects the cross entropy loss.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5l-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It approaches $$1$$."
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5l-h2"
+        ],
+        "title": "Behavior at Infinity",
+        "text": "What happens to the function f(x) as $$x$$ approaches $$\\infty$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It approaches $$0$$.",
+            "It approaches $$1$$.",
+            "It becomes undefined."
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5l-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It approaches $$0$$."
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5l-h3"
+        ],
+        "title": "Behavior at Negative Infinity",
+        "text": "What happens to the function f(x) as $$x$$ approaches negative $$\\infty$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It approaches $$0$$.",
+            "It approaches $$1$$.",
+            "It becomes undefined."
+        ]
+    }
+]

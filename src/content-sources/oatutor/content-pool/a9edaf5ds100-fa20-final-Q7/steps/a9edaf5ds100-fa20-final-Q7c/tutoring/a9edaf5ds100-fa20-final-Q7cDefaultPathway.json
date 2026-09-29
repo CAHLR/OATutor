@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a9edaf5ds100-fa20-final-Q7c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding k-fold Cross-Validation",
+        "text": "In k-fold cross-validation, the dataset is divided into k subsets, and the model is trained k times, each time using a different subset as the validation set and the remaining as the training set. What do you think happens if we use the entire training set for each fold?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa20-final-Q7c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-fa20-final-Q7c-h1"
+        ],
+        "title": "Impact of Using Entire Training Set",
+        "text": "Consider what happens to the model's ability to generalize if it sees the entire training set every time. Does it learn to adapt too closely to the training data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa20-final-Q7c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa20-final-Q7c-h2"
+        ],
+        "title": "Evaluating Overfitting",
+        "text": "If a model is trained on the entire training set for each fold, will it likely perform better on unseen data or just on the training data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

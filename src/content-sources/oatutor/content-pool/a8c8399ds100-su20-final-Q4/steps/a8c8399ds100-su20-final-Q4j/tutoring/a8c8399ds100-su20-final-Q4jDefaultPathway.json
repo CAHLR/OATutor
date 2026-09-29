@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a8c8399ds100-su20-final-Q4j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Normal Equations",
+        "text": "The normal equations for linear regression are derived from setting the derivative of the loss function with respect to the parameters to zero. This ensures that we find the minimum of the loss function. Consider how centering the data might affect these equations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-su20-final-Q4j-h1"
+        ],
+        "title": "Mean-Centering Effect",
+        "text": "Mean-centering the data involves subtracting the mean of each feature from the data points. This can simplify the normal equations, especially when considering the intercept term. Think about how this affects the uniqueness of the solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The design matrix must have full column rank."
+        ],
+        "dependencies": [
+            "a8c8399ds100-su20-final-Q4j-h2"
+        ],
+        "title": "Checking the Solution Uniqueness",
+        "text": "What condition must be satisfied for the normal equations to have a unique solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The design matrix must have full column rank.",
+            "The design matrix must be square.",
+            "The design matrix must be symmetric."
+        ]
+    }
+]

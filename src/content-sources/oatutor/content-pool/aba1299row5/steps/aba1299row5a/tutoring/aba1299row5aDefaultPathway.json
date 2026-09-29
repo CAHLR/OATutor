@@ -1,0 +1,48 @@
+[
+    {
+        "id": "aba1299row5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Slope",
+        "text": "Think about what the slope represents in a linear regression model. It tells us how much the response variable changes for each unit increase in the predictor variable.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row5a-h1"
+        ],
+        "title": "Focus on the Predictor",
+        "text": "In this model, the predictor is the hours spent on campus. Consider how changes in this variable might affect the number of rides taken.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row5a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Estimated average ride increase per additional hour on campus."
+        ],
+        "dependencies": [
+            "aba1299row5a-h2"
+        ],
+        "title": "Choose the Correct Interpretation",
+        "text": "Which of the following best describes the role of \\(\\theta_1\\) in the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            ">Estimated average ride increase per additional hour on campus.",
+            "Estimated average ride increase per additional hour on campus.",
+            "Estimated average rides taken by students.",
+            "Estimated number of rides taken when no hours are spent on campus.",
+            "Estimated total number of rides by students in the dataset."
+        ]
+    }
+]

@@ -1,0 +1,105 @@
+[
+    {
+        "id": "a89b247ds100-fa21-mt-Q2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Risk",
+        "text": "Model risk is calculated as the sum of the squared bias, the variance, and the squared standard deviation of the noise. Can you write down this formula?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2a-h1"
+        ],
+        "title": "Breaking Down the Formula",
+        "text": "The formula for model risk is: risk $$=$$ $${bias}^2$$ + variance + standard $${deviation}^2$$. You know the bias and variance values. Can you substitute them into the formula?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2a-h2"
+        ],
+        "title": "Solving for Standard Deviation",
+        "text": "After substituting the known values, you should have: $$38$$ $$=$$ $$5^2$$ + $$4$$ + standard $${deviation}^2$$. Can you solve for the standard deviation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2a-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$25$$"
+        ],
+        "dependencies": [],
+        "title": "Calculate the Bias Squared",
+        "text": "What is the value of bias squared if the bias is 5?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$25$$",
+            "$$10$$",
+            "$$20$$",
+            "$$25$$",
+            "$$5$$"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$38=25+4+standard$$ $${deviation}**2$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2a-s1"
+        ],
+        "title": "Substitute Known Values",
+        "text": "Substitute the known values into the risk formula: $$38$$ $$=$$ $${bias}^2$$ + variance + standard $${deviation}^2$$. What is the equation after substitution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$38=25+4+standard$$ $${deviation}**2$$",
+            "$$38=25+4+standard$$ $${deviation}^2$$",
+            "$$38=5^2+4+standard$$ $${deviation}^2$$",
+            "$$38=5+4+standard$$ $${deviation}^2$$"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2a-s2"
+        ],
+        "title": "Solve for Standard Deviation",
+        "text": "Solve the equation $$38$$ $$=$$ $$25$$ + $$4$$ + standard $${deviation}^2$$ for the standard deviation. What is the standard deviation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$3$$",
+            "$$3$$",
+            "$$4$$",
+            "$$5$$",
+            "$$6$$"
+        ]
+    }
+]

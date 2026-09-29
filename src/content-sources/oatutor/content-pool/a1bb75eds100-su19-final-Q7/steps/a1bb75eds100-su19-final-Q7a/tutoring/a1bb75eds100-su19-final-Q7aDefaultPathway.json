@@ -1,0 +1,55 @@
+[
+    {
+        "id": "a1bb75eds100-su19-final-Q7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Sigmoid Function",
+        "text": "The sigmoid function, denoted as sigma, is crucial in logistic regression. It transforms any real-valued number into a value between $$0$$ and $$1$$. Can you recall its formula and how it might apply to our model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q7a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring the Loss Function",
+        "text": "The loss function given is a combination of the log loss and a regularization term. Focus on the log loss part: $$-y \\ln\\left(\\operatorname{f_{\\theta}}\\left(x\\right)\\right)-\\left(1-y\\right) \\ln\\left(1-\\operatorname{f_{\\theta}}\\left(x\\right)\\right)$$. How does this relate to the probability predictions of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q7a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Gradient of the Loss Function",
+        "text": "To find the gradient, differentiate the loss function with respect to theta. Pay attention to how the sigmoid function affects this differentiation. What do you notice about the derivative of the sigmoid function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q7a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$y-sigma(theta-2)$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q7a-h3"
+        ],
+        "title": "Calculating the Gradient",
+        "text": "Which of the following represents the gradient of the loss function with respect to theta?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$sigma(theta-2)-y$$",
+            "$$y-sigma(theta-2)$$",
+            "$$\\theta-y+\\operatorname{\\sigma}\\left(\\theta-2\\right)$$",
+            "$$y+\\operatorname{\\sigma}\\left(\\theta-2\\right)$$"
+        ]
+    }
+]

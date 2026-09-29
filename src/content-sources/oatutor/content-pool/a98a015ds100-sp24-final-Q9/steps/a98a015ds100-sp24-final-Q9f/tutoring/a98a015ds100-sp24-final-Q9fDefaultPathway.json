@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a98a015ds100-sp24-final-Q9f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Principal Components",
+        "text": "Principal components are essentially the directions in which your data varies the most. The first principal component accounts for the largest possible variance, and each subsequent component accounts for the remaining variance under the constraint that it is orthogonal to the preceding components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9f-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Interpreting the Scree Plot",
+        "text": "A scree plot displays the eigenvalues associated with each principal component. The eigenvalue indicates the amount of variance captured by each component. Look for a point where the plot starts to level off, often referred to as the 'elbow'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9f-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.5$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9f-h2"
+        ],
+        "title": "Calculating Explained Variance",
+        "text": "If the first two principal components have eigenvalues of $$3$$ and $$2$$, and the total variance is $$10$$, what is the proportion of variance explained by these two components?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0.5$$",
+            "$$0.3$$",
+            "$$0.5$$",
+            "$$0.7$$",
+            "$$0.9$$"
+        ]
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9f-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Explained Variance Ratio",
+        "text": "The explained variance ratio is calculated by dividing the eigenvalue of a principal component by the total sum of all eigenvalues. This ratio tells you how much of the total variance is explained by each component.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9f-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9f-h3"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Based on the scree plot, if the first two components explain 60% of the variance, is the statement 'We can retrieve more than half of the explained variance by the first two principal components' true or false?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

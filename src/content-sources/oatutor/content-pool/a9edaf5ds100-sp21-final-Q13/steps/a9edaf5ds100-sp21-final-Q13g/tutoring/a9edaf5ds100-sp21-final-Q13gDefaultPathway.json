@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a9edaf5ds100-sp21-final-Q13g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting by adding a penalty to the model's complexity. Can you think about how increasing this penalty might affect the model's ability to fit the training data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp21-final-Q13g-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-sp21-final-Q13g-h1"
+        ],
+        "title": "Effect of Increasing Lambda",
+        "text": "As the regularization coefficient lambda increases, the penalty for complexity becomes larger. Consider how this might influence the model's flexibility and its variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp21-final-Q13g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp21-final-Q13g-h2"
+        ],
+        "title": "Variance and Regularization",
+        "text": "What happens to the variance of a model when you increase the regularization coefficient lambda?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

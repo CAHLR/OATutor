@@ -1,0 +1,51 @@
+[
+    {
+        "id": "a1155e4row10_p2e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Code",
+        "text": "The code calculates the total fantasy points for each player by multiplying the number of games played by the points per game. Then, it groups the data by team and calculates the mean total points for each team.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2e-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Visualizing Data",
+        "text": "The sns.violinplot function is used to visualize the distribution of data. It is most effective when you want to see the distribution of a single variable across different categories.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [],
+        "title": "Choosing the Right Plot",
+        "text": "Is a violin plot suitable for visualizing the mean total points per team?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a1155e4row10_p2e-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Alternative Visualization",
+        "text": "Consider using a bar plot or a box plot to visualize the mean total points per team, as these plots are better suited for comparing means across categories.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

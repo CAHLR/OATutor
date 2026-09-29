@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a1155e4row10_p2k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Box Plots",
+        "text": "A box plot provides a visual summary of data through its quartiles and median. It shows the spread and skewness of the data, but not the mean.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row10_p2k-h1"
+        ],
+        "title": "Mean vs. Median",
+        "text": "Remember that the mean is the average of all data points, while the median is the middle value when the data is ordered. A box plot shows the median, not the mean.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2k-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Median"
+        ],
+        "dependencies": [
+            "a1155e4row10_p2k-h2"
+        ],
+        "title": "Box Plot Features",
+        "text": "Which of the following features can you determine from a box plot?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Mean",
+            "Median",
+            "Mode",
+            "Range"
+        ]
+    }
+]

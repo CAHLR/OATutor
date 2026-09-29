@@ -1,0 +1,34 @@
+[
+    {
+        "id": "aea05a2ds100-su21-final-Q10b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Representation",
+        "text": "Think about how data can be represented when it's not just about numbers. Consider how relationships between data points can be visualized or structured.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-su21-final-Q10b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "graph"
+        ],
+        "dependencies": [
+            "aea05a2ds100-su21-final-Q10b-h1"
+        ],
+        "title": "Choosing the Right Representation",
+        "text": "Which of the following is used to represent data based on relationships rather than numerical features?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "graph",
+            "design matrix",
+            "relational database"
+        ]
+    }
+]

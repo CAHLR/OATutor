@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q6i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LASSO Regularization",
+        "text": "LASSO regularization adds a penalty equal to the absolute value of the magnitude of coefficients. This can lead to some coefficients being exactly zero, effectively removing some features from the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q6i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-fa25-mt2-Q6i-h1"
+        ],
+        "title": "Effect on Model Bias",
+        "text": "When you apply LASSO regularization, the model tends to become simpler by reducing the number of features. This can lead to an increase in bias because the model might not capture all the complexities of the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q6i-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase only"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa25-mt2-Q6i-h2"
+        ],
+        "title": "Possible Effects on (Model Bias)**2",
+        "text": "Consider how simplifying a model by reducing features might affect its ability to fit the training data. What happens to the bias when the model becomes less complex?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase only",
+            "Decrease only",
+            "Increase and Decrease",
+            "Neither Increase nor Decrease",
+            "Cannot be determined"
+        ]
+    }
+]

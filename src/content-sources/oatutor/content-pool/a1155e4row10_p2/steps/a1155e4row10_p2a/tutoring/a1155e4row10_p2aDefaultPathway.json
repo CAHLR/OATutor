@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a1155e4row10_p2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Histograms",
+        "text": "A histogram is useful for visualizing the distribution of a single numerical variable. It shows the frequency of data points within certain ranges or bins. Consider how this might apply to the $$'games_{played'}$$ column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Numerical data"
+        ],
+        "dependencies": [
+            "a1155e4row10_p2a-h1"
+        ],
+        "title": "Choosing the Right Visualization",
+        "text": "Which type of data is best visualized using a histogram?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Categorical data",
+            "Numerical data",
+            "Text data"
+        ]
+    },
+    {
+        "id": "a1155e4row10_p2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row10_p2a-h2"
+        ],
+        "title": "Analyzing the Data",
+        "text": "Look at the $$'games_{played'}$$ column. It contains numerical data representing the number of games each player played. Think about how a histogram could represent this data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

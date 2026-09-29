@@ -1,0 +1,34 @@
+[
+    {
+        "id": "a8c8399ds100-sp19-final-Q3e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatterplot",
+        "text": "Look at the pattern of the data points in the scatterplot. Consider how the function $$f(x)=-x$$ might transform the x-values and how this transformation could help fit the data with the given model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp19-final-Q3e-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It reflects the $$x-values$$ across the $$y-axis$$."
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp19-final-Q3e-h1"
+        ],
+        "title": "Effect of $$f(x)=-x$$",
+        "text": "If $$f(x)=-x$$, how does this affect the y-values in the model $$y_i=\\beta_0+x_i \\beta_1+f{\\left(x_i\\right)} \\beta_2$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It reflects the $$x-values$$ across the $$y-axis$$.",
+            "It shifts the $$x-values$$ up by $$1$$.",
+            "It squares the $$x-values$$."
+        ]
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a98a015ds100-fa24-final-Q7i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Reconstruction Loss",
+        "text": "Reconstruction loss measures how much information is lost when reducing dimensions. It is calculated using the singular values in matrix S. Consider how many singular values are used when reducing to $$2$$ dimensions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa24-final-Q7i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa24-final-Q7i-h1"
+        ],
+        "title": "Using Singular Values",
+        "text": "The singular values in matrix S represent the importance of each principal component. When using $$2$$ principal components, only the first two singular values are considered. Think about how this affects the reconstruction loss.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa24-final-Q7i-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa24-final-Q7i-h2"
+        ],
+        "title": "Calculating Reconstruction Loss",
+        "text": "What is the sum of the squares of the singular values not used in the reconstruction?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$0$$",
+            "$$1$$",
+            "$$4$$"
+        ]
+    }
+]

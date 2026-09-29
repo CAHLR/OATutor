@@ -1,0 +1,109 @@
+[
+    {
+        "id": "a89b247ds100-sp22-mt2-Q2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Expected Value",
+        "text": "To find the expected value of a random variable, you need to multiply each possible outcome by its probability and then sum all these products. Think about how this applies to the items sold at Manak's.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp22-mt2-Q2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-sp22-mt2-Q2a-h1"
+        ],
+        "title": "Calculating Individual Expected Values",
+        "text": "Consider the expected value for each item separately. For the pencil, multiply the price by the probability of purchase. Do the same for the wax head. What do you get for each?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp22-mt2-Q2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp22-mt2-Q2a-h2"
+        ],
+        "title": "Expected Value of a Pencil",
+        "text": "What is the expected value of a pencil purchase for one customer?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$0.5$$",
+            "$$1$$",
+            "$$2$$",
+            "$$5$$"
+        ]
+    },
+    {
+        "id": "a89b247ds100-sp22-mt2-Q2a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp22-mt2-Q2a-h2"
+        ],
+        "title": "Expected Value of a Wax Head",
+        "text": "What is the expected value of a wax head purchase for one customer?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$0.5$$",
+            "$$1$$",
+            "$$10$$",
+            "$$5$$"
+        ]
+    },
+    {
+        "id": "a89b247ds100-sp22-mt2-Q2a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-sp22-mt2-Q2a-h4"
+        ],
+        "title": "Summing the Expected Values",
+        "text": "Once you have the expected values for both items, add them together to find the expected value for one customer. Then, consider how this scales with $$10$$ customers.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp22-mt2-Q2a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp22-mt2-Q2a-h5"
+        ],
+        "title": "Total Expected Value for $$10$$ Customers",
+        "text": "What is the total expected value of purchases for $$10$$ customers?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$20$$",
+            "$$10$$",
+            "$$15$$",
+            "$$20$$",
+            "$$25$$",
+            "$$30$$"
+        ]
+    }
+]

@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a72a45crow10_p1d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Simple Random Sampling",
+        "text": "In a simple random sample, every individual in the population has an equal chance of being selected. Think about whether every student in the discussion sections has the same probability of being chosen in Aditi's method.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow10_p1d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a72a45crow10_p1d-h1"
+        ],
+        "title": "Evaluating Equal Probability",
+        "text": "Does every student in the discussion sections have an equal chance of being selected if every fifth student is chosen?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a72a45crow10_p1d-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Considering Systematic Sampling",
+        "text": "Aditi's method is an example of systematic sampling. In systematic sampling, you select every nth individual. Consider how this affects the probability of selection for each student.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow10_p1d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a72a45crow10_p1d-h3"
+        ],
+        "title": "Probability in Systematic Sampling",
+        "text": "In systematic sampling, does every pair of students have the same probability of being selected together?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a89b247ds100-fa20-final-Q6e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Pruning",
+        "text": "Pruning a decision tree involves removing branches that have little importance. Think about how this might affect the tree's ability to fit the training data closely.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa20-final-Q6e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa20-final-Q6e-h1"
+        ],
+        "title": "Bias and Complexity",
+        "text": "Consider how reducing the complexity of a model, like pruning a decision tree, might affect its bias. Does a simpler model tend to have higher or lower bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa20-final-Q6e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increases it"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa20-final-Q6e-h2"
+        ],
+        "title": "Effect of Pruning on Bias",
+        "text": "When you prune a decision tree, does it generally increase or decrease the bias of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increases it",
+            "Decreases it"
+        ]
+    }
+]

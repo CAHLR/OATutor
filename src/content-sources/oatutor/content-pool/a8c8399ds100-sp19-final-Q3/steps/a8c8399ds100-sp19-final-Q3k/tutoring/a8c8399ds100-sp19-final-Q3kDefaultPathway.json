@@ -1,0 +1,33 @@
+[
+    {
+        "id": "a8c8399ds100-sp19-final-Q3k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatterplot",
+        "text": "Look at the pattern of the data points in the scatterplot. Consider how the function $$f(x)=x^2$$ would affect the shape of the data when applied to the x-values. Does the pattern suggest a quadratic relationship?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp19-final-Q3k-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp19-final-Q3k-h1"
+        ],
+        "title": "Analyzing Quadratic Fit",
+        "text": "If $$f(x)=x^2$$, the model becomes $$y_i=\\beta_0+x_i \\beta_1+{x_i}^2 \\beta_2$$. Does this form match the linear pattern observed in the scatterplot?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

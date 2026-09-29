@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Dataframe",
+        "text": "The dataframe shows the time spent by visitors at different exhibits. Each column represents an exhibit, and the values are the time spent in minutes. Consider how this data might be used in PCA.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1c-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It swaps rows and columns."
+        ],
+        "dependencies": [
+            "a98a015ds100-fa19-mt2-Q1c-h1"
+        ],
+        "title": "Matrix Transpose",
+        "text": "What does the transpose of a matrix do to its rows and columns?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It swaps rows and columns.",
+            "It multiplies each element by $$2$$.",
+            "It adds a new row.",
+            "It deletes a column."
+        ]
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa19-mt2-Q1c-h2"
+        ],
+        "title": "PCA and Transpose",
+        "text": "In PCA, the transpose of a matrix is often used to align data for analysis. Think about how this might relate to the expression given.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa19-mt2-Q1c-h3"
+        ],
+        "title": "Expression Evaluation",
+        "text": "Is the expression $$V^T$$ equal to P in the context of PCA?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

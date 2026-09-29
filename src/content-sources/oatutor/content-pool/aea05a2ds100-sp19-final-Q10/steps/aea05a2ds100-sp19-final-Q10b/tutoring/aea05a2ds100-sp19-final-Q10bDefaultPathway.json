@@ -1,0 +1,86 @@
+[
+    {
+        "id": "aea05a2ds100-sp19-final-Q10b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Block Replication",
+        "text": "Each block of the file is stored on $$2$$ different machines. Think about how this replication affects the availability of the file when one machine fails.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp19-final-Q10b-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-sp19-final-Q10b-h1"
+        ],
+        "title": "Analyzing Machine Failure",
+        "text": "Consider what happens to the blocks stored on a machine that fails. How many replicas of each block are still available?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp19-final-Q10b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp19-final-Q10b-h2"
+        ],
+        "title": "Calculating Block Availability",
+        "text": "If a block is stored on $$2$$ machines and one machine fails, what fraction of the block's replicas remain available?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$\\frac{1}{4}$$",
+            "$$\\frac{1}{2}$$",
+            "$$\\frac{3}{4}$$",
+            "$$1$$"
+        ]
+    },
+    {
+        "id": "aea05a2ds100-sp19-final-Q10b-h4",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-sp19-final-Q10b-h3"
+        ],
+        "title": "Ensuring File Readability",
+        "text": "To read the entire file, each block must be available. With $$8$$ blocks and each block having $$2$$ replicas, how does the failure of one machine affect the overall file availability?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp19-final-Q10b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp19-final-Q10b-h4"
+        ],
+        "title": "Final Calculation",
+        "text": "Given that each block is replicated twice and one machine fails, what is the probability that all blocks are still available?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$\\frac{1}{8}$$",
+            "$$\\frac{1}{4}$$",
+            "$$\\frac{1}{2}$$",
+            "$$\\frac{3}{4}$$",
+            "$$\\frac{7}{8}$$",
+            "$$1$$"
+        ]
+    }
+]

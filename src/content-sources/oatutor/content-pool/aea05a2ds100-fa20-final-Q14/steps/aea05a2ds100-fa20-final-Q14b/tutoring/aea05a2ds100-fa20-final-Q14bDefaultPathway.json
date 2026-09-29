@@ -1,0 +1,92 @@
+[
+    {
+        "id": "aea05a2ds100-fa20-final-Q14b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Data Manipulation Tools",
+        "text": "Think about the tools you use when working with small datasets, like those you might handle in a spreadsheet. These tools are often used for data analysis and manipulation in Python.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-fa20-final-Q14b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Handling Large Datasets",
+        "text": "Consider the tools that are designed to process large datasets, often distributed across multiple machines. These tools are commonly used in big data processing and analytics.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-fa20-final-Q14b-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Versatile Data Tools",
+        "text": "Some tools are designed to handle both small and large datasets efficiently. They often provide a familiar interface while leveraging the power of distributed computing.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-fa20-final-Q14b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "numpy and pandas"
+        ],
+        "dependencies": [],
+        "title": "Identifying Tools for Small Data",
+        "text": "Which of the following is designed to manipulate small amounts of data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "numpy and pandas",
+            "Hadoop and Spark",
+            "Modin"
+        ]
+    },
+    {
+        "id": "aea05a2ds100-fa20-final-Q14b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Hadoop and Spark"
+        ],
+        "dependencies": [],
+        "title": "Identifying Tools for Large Data",
+        "text": "Which of the following is designed to manipulate large amounts of data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "numpy and pandas",
+            "Hadoop and Spark",
+            "Modin"
+        ]
+    },
+    {
+        "id": "aea05a2ds100-fa20-final-Q14b-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Modin"
+        ],
+        "dependencies": [],
+        "title": "Identifying Versatile Tools",
+        "text": "Which of the following can handle both small and large datasets?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "numpy and pandas",
+            "Hadoop and Spark",
+            "Modin"
+        ]
+    }
+]

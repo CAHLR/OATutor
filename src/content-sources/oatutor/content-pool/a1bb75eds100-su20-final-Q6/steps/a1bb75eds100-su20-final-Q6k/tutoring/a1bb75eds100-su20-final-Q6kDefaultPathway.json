@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a1bb75eds100-su20-final-Q6k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "Take a closer look at the DataFrame structure. Notice that each console has a type, either 'home' or 'handheld'. This distinction is crucial for finding the best-selling console of each type.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su20-final-Q6k-h1"
+        ],
+        "title": "Sorting the Data",
+        "text": "To find the best-selling console, consider sorting the DataFrame by the 'sales' column. This will help you identify which console has the highest sales for each type.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6k-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su20-final-Q6k-h2"
+        ],
+        "title": "Grouping by Console Type",
+        "text": "After sorting, think about how you can group the consoles by their 'type'. This will allow you to isolate the best-selling console for each category.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6k-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "consoles.sort_values(\"sales\").groupby(\"type\").last()"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su20-final-Q6k-h3"
+        ],
+        "title": "Choosing the Right Method",
+        "text": "Which method will help you get the last entry in each group after sorting by sales?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "consoles.sort_values(\"sales\").groupby(\"type\").first()",
+            "consoles.groupby(\"type\").last()",
+            "consoles.sort_values(\"sales\").groupby(\"type\").last()",
+            "consoles.sort_values(\"sales\",ascending=False).groupby(\"type\").last()",
+            "consoles.sort_values(\"type\").groupby(\"sales\").last()"
+        ]
+    }
+]

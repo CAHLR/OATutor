@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a1155e4row7_p1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Code Structure",
+        "text": "The code is using the `groupby` function to group the data by a specific column. This is followed by an aggregation function to find the mode of $$`hour_{of,visit}`$$ for each activity category. Think about which column is used to categorize the activities.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row7_p1c-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "isna"
+        ],
+        "dependencies": [
+            "a1155e4row7_p1c-h1"
+        ],
+        "title": "Identifying Missing Values",
+        "text": "Which function is used to identify missing values in a DataFrame?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "isna",
+            "notna",
+            "isnull",
+            "fillna",
+            "dropna"
+        ]
+    },
+    {
+        "id": "a1155e4row7_p1c-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row7_p1c-h2"
+        ],
+        "title": "Using the Mode for Imputation",
+        "text": "The mode is the most frequently occurring value in a dataset. In this context, it is used to fill in missing $$`hour_{of,visit}`$$ values based on the activity type. Consider how the mode is calculated for each group.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

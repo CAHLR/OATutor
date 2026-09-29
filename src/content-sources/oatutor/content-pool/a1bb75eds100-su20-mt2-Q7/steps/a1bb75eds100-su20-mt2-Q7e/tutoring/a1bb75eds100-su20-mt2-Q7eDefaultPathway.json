@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a1bb75eds100-su20-mt2-Q7e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logistic Regression",
+        "text": "Logistic regression is used to model the probability of a binary outcome based on one or more predictor variables. The logistic function, also known as the sigmoid function, is used to map predicted values to probabilities.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-mt2-Q7e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su20-mt2-Q7e-h1"
+        ],
+        "title": "The Logistic Function",
+        "text": "The logistic function is defined as $$\\frac{1}{1+e^{\\left(-z\\right)}}$$, where $$z$$ is the linear combination of the input features and the model parameters. This function outputs values between $$0$$ and $$1$$, representing probabilities.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-mt2-Q7e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su20-mt2-Q7e-h2"
+        ],
+        "title": "Calculating $$z$$ for $$x=4$$",
+        "text": "To find the probability $$P(Y=1|x=4)$$, you need to calculate the value of $$z$$ for $$x=4$$. Remember, $$z$$ is the linear combination of the input feature $$x$$ and the model parameters, including the intercept.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-mt2-Q7e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su20-mt2-Q7e-h3"
+        ],
+        "title": "Evaluating the Logistic Function",
+        "text": "Given that $$z=0$$ for $$x=4$$, what is the value of the logistic function $$\\frac{1}{1+e^{\\left(-z\\right)}}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$\\frac{1}{4}$$",
+            "$$\\frac{1}{2}$$",
+            "$$\\frac{3}{4}$$",
+            "$$1$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su20-mt2-Q7e-h5",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su20-mt2-Q7e-h4"
+        ],
+        "title": "Interpreting the Result",
+        "text": "When $$z=0$$, the logistic function simplifies to $$\\frac{1}{2}$$. This means that the probability of $$Y=1$$ given $$x=4$$ is $$0.5$$, assuming $$z=0$$. Consider how the intercept and coefficients affect $$z$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

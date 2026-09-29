@@ -1,0 +1,43 @@
+[
+    {
+        "id": "a72a45crow4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Sampling Frame",
+        "text": "Think about where Oski is conducting the survey and who might be missing from that location.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow4a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Defining Population of Interest",
+        "text": "Consider who Oski wants to gather opinions from. Is it just the people at Memorial Glade or a broader group?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow4a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No, it is not since not all attendees are necessarily at Memorial Glade."
+        ],
+        "dependencies": [],
+        "title": "Comparing Sampling Frame and Population",
+        "text": "Which of the following best describes the relationship between Oski's sampling frame and population of interest?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "No, it is not, since all attendees are at Memorial Glade.",
+            "Yes, since all people in the population are the sample",
+            "No, it is not since not all attendees are necessarily at Memorial Glade.",
+            "Yes, because the sampling frame and population are always the same."
+        ]
+    }
+]

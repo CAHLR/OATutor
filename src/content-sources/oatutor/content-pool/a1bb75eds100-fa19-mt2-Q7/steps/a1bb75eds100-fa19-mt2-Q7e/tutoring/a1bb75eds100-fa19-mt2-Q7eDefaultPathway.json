@@ -1,0 +1,98 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Precision",
+        "text": "Precision is the ratio of true positive predictions to the total number of positive predictions (true positives plus false positives). Think about how changing the threshold might affect the number of false positives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7e-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Recall",
+        "text": "Recall is the ratio of true positive predictions to the total number of actual positives (true positives plus false negatives). Consider how increasing the threshold might impact the number of true positives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7e-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Accuracy",
+        "text": "Accuracy is the ratio of correctly predicted instances (both true positives and true negatives) to the total number of instances. Think about how changing the threshold might affect both true positives and true negatives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decreases"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-mt2-Q7e-h1"
+        ],
+        "title": "Effect on Precision",
+        "text": "If we increase the threshold, what happens to the number of false positives?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increases",
+            "Decreases",
+            "Stays the same"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7e-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decreases"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-mt2-Q7e-h2"
+        ],
+        "title": "Effect on Recall",
+        "text": "If we increase the threshold, what happens to the number of true positives?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increases",
+            "Decreases",
+            "Stays the same"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7e-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increases"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-mt2-Q7e-h3"
+        ],
+        "title": "Effect on Accuracy",
+        "text": "If we increase the threshold, what happens to the number of true negatives?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increases",
+            "Decreases",
+            "Stays the same"
+        ]
+    }
+]

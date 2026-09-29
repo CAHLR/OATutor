@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a89b247ds100-fa19-mt2-Q3f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "Model variance refers to how much the predictions of a model will change if we use a different training dataset. Consider how the complexity of the model might affect this variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa19-mt2-Q3f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa19-mt2-Q3f-h1"
+        ],
+        "title": "Impact of Training Set Size",
+        "text": "Think about how increasing or decreasing the size of the training set might influence the model's ability to generalize and how it might affect the variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa19-mt2-Q3f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "decrease"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa19-mt2-Q3f-h2"
+        ],
+        "title": "Training Set Size and Variance",
+        "text": "Does a larger training set generally increase or decrease model variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "increase",
+            "decrease"
+        ]
+    }
+]

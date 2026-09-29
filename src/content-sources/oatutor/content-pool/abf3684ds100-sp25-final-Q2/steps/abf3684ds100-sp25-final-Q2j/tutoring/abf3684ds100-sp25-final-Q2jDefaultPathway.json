@@ -1,0 +1,49 @@
+[
+    {
+        "id": "abf3684ds100-sp25-final-Q2j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization helps in preventing overfitting by adding a penalty to the loss function. This penalty is based on the magnitude of the coefficients. Can you think of why this might help in selecting the most relevant features?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2j-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2j-h1"
+        ],
+        "title": "Exploring Different Penalties",
+        "text": "Different regularization techniques use different penalty functions. For example, L1 regularization uses the sum of the absolute values of the coefficients. How might this affect the coefficients of less important features?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "g(theta)=sum{i\u00001}{p}{abs(theta_i)}"
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2j-h2"
+        ],
+        "title": "Choosing the Right Penalty Function",
+        "text": "Which penalty function is known for encouraging sparsity in the model, effectively setting some coefficients to zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            ">g(theta)=sum{i\u00001}{p}{abs(theta_i)}",
+            "$$g(theta)=\\operatorname{max_i}\\left(\\theta_i\\right)$$",
+            "g(theta)=sum{i\u00001}{p}{abs(theta_i)}",
+            "g(theta)=sum{i\u00001}{p}{log(theta_i)}",
+            "g(theta)=sum{i\u00001}{p}{theta_i**2}",
+            "g(theta)=sum{i\u00001}{p}{theta_i}"
+        ]
+    }
+]

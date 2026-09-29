@@ -1,0 +1,84 @@
+[
+    {
+        "id": "a89b247ds100-sp22-mt2-Q2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variance",
+        "text": "To find the standard deviation, we first need to calculate the variance. Remember, variance is the expectation of the squared deviation of a random variable from its mean. Can you think about how to calculate the variance for a single customer and then extend it to $$10$$ customers?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp22-mt2-Q2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-sp22-mt2-Q2b-h1"
+        ],
+        "title": "Calculating Variance for One Customer",
+        "text": "For one customer, the variance of the purchase value can be calculated using the formula: variance $$=$$ $$E\\left(X^2\\right)$$ - $${E\\left(X\\right)}^2$$. Try to find E(X) and $$E\\left(X^2\\right)$$ for a single customer.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp22-mt2-Q2b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-sp22-mt2-Q2b-h2"
+        ],
+        "title": "Expected Value for One Customer",
+        "text": "The expected value E(X) for one customer is the sum of the products of each item's price and its probability of being purchased. Can you calculate this value?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp22-mt2-Q2b-h4",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-sp22-mt2-Q2b-h3"
+        ],
+        "title": "Expected Value of Squared Purchases",
+        "text": "To find $$E\\left(X^2\\right)$$, consider the square of the purchase value for each possible outcome and multiply it by its probability. What are the possible purchase values and their probabilities?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp22-mt2-Q2b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp22-mt2-Q2b-h4"
+        ],
+        "title": "Variance for $$10$$ Customers",
+        "text": "Once you have the variance for one customer, how would you calculate the variance for $$10$$ customers?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$10$$",
+            "Add $$10$$",
+            "Divide by $$10$$",
+            "Multiply by $$10$$",
+            "Subtract $$10$$"
+        ]
+    },
+    {
+        "id": "a89b247ds100-sp22-mt2-Q2b-h6",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-sp22-mt2-Q2b-h5"
+        ],
+        "title": "Standard Deviation from Variance",
+        "text": "Remember, the standard deviation is the square root of the variance. Once you have the variance for $$10$$ customers, how can you find the standard deviation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a98a015ds100-sp19-final-Q6cb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Singular Values",
+        "text": "When you apply PCA to a matrix, the singular values represent the amount of variance captured by each principal component. Think about what it means for a singular value to be zero in terms of variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp19-final-Q6cb-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp19-final-Q6cb-h1"
+        ],
+        "title": "Centering the Matrix",
+        "text": "Remember that before applying PCA, the matrix is centered. This means subtracting the mean of each column from the respective column values. How might this affect the singular values?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp19-final-Q6cb-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp19-final-Q6cb-h2"
+        ],
+        "title": "Matrix Structure",
+        "text": "Consider the structure of the matrix with a column of ones. How does this column affect the variance captured by the principal components?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

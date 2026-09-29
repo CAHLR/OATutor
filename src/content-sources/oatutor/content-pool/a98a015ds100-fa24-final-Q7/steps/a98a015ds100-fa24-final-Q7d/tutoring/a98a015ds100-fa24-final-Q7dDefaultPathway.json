@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a98a015ds100-fa24-final-Q7d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD",
+        "text": "The singular value decomposition (SVD) of a matrix X is given by X=U*S*V**T. Here, U and V are orthogonal matrices, and S is a diagonal matrix containing the singular values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa24-final-Q7d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa24-final-Q7d-h1"
+        ],
+        "title": "Properties of U",
+        "text": "The columns of U are the left singular vectors of X. They are not necessarily the eigenvectors of $$X^T X$$, but they are related to the eigenvectors of $$X X^T$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa24-final-Q7d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa24-final-Q7d-h2"
+        ],
+        "title": "True or False?",
+        "text": "Are the columns of matrix U always the eigenvectors of $$X^T X$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

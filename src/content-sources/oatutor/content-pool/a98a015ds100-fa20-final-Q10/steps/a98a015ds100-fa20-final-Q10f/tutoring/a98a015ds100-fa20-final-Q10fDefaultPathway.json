@@ -1,0 +1,83 @@
+[
+    {
+        "id": "a98a015ds100-fa20-final-Q10f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD and Variance",
+        "text": "When you perform Singular Value Decomposition (SVD) on a matrix, it breaks down the matrix into three components: U, S, and $$V^T$$. The singular values in S are related to the variance of the data. Think about how variance is calculated and how it might relate to these singular values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa20-final-Q10f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa20-final-Q10f-h1"
+        ],
+        "title": "Connecting Variance and Singular Values",
+        "text": "The variance of a dataset is a measure of how spread out the data points are. In the context of SVD, the singular values (s) are directly related to the variance of the data along the principal components. Consider how the singular values might be used to calculate variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa20-final-Q10f-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{{s[i]}**2}{\\operatorname{len}\\left(X\\right)}$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa20-final-Q10f-h2"
+        ],
+        "title": "Calculating Variance from Singular Values",
+        "text": "If you have a singular value s[i], how would you calculate the variance of the data along the i-th principal component?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{{s[i]}**2}{\\operatorname{len}\\left(X\\right)}$$",
+            "s[i]",
+            "$${s[i]}^2$$",
+            "$$\\frac{{s[i]}^2}{\\operatorname{len}\\left(X\\right)}$$",
+            "$$\\frac{s[i]}{\\operatorname{len}\\left(X\\right)}$$"
+        ]
+    },
+    {
+        "id": "a98a015ds100-fa20-final-Q10f-h4",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa20-final-Q10f-h3"
+        ],
+        "title": "Understanding the Expression",
+        "text": "The expression np.var((X@vt.T)[:,i]) calculates the variance of the i-th column of the transformed matrix. Think about how this relates to the singular values and the variance formula you just explored.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa20-final-Q10f-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa20-final-Q10f-h4"
+        ],
+        "title": "Evaluating the Expression",
+        "text": "Does the expression $$np.var((X@vt.T)[:, i])==\\frac{{s[i]}^2}{\\operatorname{len}\\left(X\\right)}$$ hold true for all i?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "False",
+            "Impossible to tell",
+            "TRUE",
+            "True"
+        ]
+    }
+]

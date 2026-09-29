@@ -1,0 +1,81 @@
+[
+    {
+        "id": "abf3684ds100-fa23-final-Q2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Convex Functions",
+        "text": "Remember that for a convex function, the local minimum is also the global minimum. This means that if you find a point where the derivative is zero, it is likely the optimal point.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa23-final-Q2c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring the Gradient",
+        "text": "Consider the direction of the gradient at $${\\theta_0}^0$$. If the gradient is positive, which direction should you move to decrease the function value?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa23-final-Q2c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "left"
+        ],
+        "dependencies": [
+            "abf3684ds100-fa23-final-Q2c-h2"
+        ],
+        "title": "Choosing the Optimal Direction",
+        "text": "If the gradient at $${\\theta_0}^0$$ is positive, should you move left or right to find the minimum?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "left",
+            "right",
+            "stay",
+            "move randomly"
+        ]
+    },
+    {
+        "id": "abf3684ds100-fa23-final-Q2c-h4",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-fa23-final-Q2c-h3"
+        ],
+        "title": "Comparing Values",
+        "text": "Think about how the value of $${\\theta_0}^0$$ compares to the optimal value $$hat_{\\theta,0}$$. If moving left decreases the function value, what does that say about the relationship between these two values?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa23-final-Q2c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$hat_{\\theta,0}<{\\theta_0}^0$$"
+        ],
+        "dependencies": [
+            "abf3684ds100-fa23-final-Q2c-h4"
+        ],
+        "title": "Determining the Relationship",
+        "text": "Based on the direction of movement, how does $$hat_{\\theta,0}$$ compare to $${\\theta_0}^0$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$hat_{\\theta,0}<{\\theta_0}^0$$",
+            "$$hat_{\\theta,0}={\\theta_0}^0$$",
+            "$$hat_{\\theta,0}>{\\theta_0}^0$$",
+            "Not enough information",
+            "Cannot be determined without knowing $$\\theta_1$$"
+        ]
+    }
+]

@@ -1,0 +1,77 @@
+[
+    {
+        "id": "a8c8399ds100-su20-mt2-Q4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding transforms a categorical variable into a set of binary variables. Each category becomes a column, and a row has a $$1$$ in the column corresponding to its category and 0s elsewhere. How does this affect the rank of the matrix?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-mt2-Q4b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Adding an Intercept Term",
+        "text": "When you add a column of all ones to a matrix, it represents the intercept term in a regression model. Consider how this column interacts with the other columns in terms of linear independence.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-mt2-Q4b-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Linear Independence and Rank",
+        "text": "The rank of a matrix is determined by the number of linearly independent columns. Think about how the columns a, $$b$$, c, and the intercept column relate to each other. Are any of them linear combinations of the others?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-mt2-Q4b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The columns are linearly dependent because one column can be expressed as a combination of others."
+        ],
+        "dependencies": [],
+        "title": "Evaluating Column Independence",
+        "text": "Which of the following statements is true about the columns in the new design matrix?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The columns are linearly independent.",
+            "The columns are linearly dependent because one column can be expressed as a combination of others.",
+            "The columns are linearly dependent because they are all identical.",
+            "The columns are linearly independent because they all have different values."
+        ]
+    },
+    {
+        "id": "a8c8399ds100-su20-mt2-Q4b-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su20-mt2-Q4b-h4"
+        ],
+        "title": "Determining the Rank",
+        "text": "Given the linear dependence among the columns, what is the rank of the matrix?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$2$$",
+            "$$3$$",
+            "$$4$$",
+            "impossible to tell"
+        ]
+    }
+]

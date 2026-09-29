@@ -1,0 +1,81 @@
+[
+    {
+        "id": "aba1299row6f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Correlation",
+        "text": "The correlation between two variables indicates how one variable changes with respect to the other. A correlation of $$1$$ or $$-1$$ means perfect linear relationship, while $$0$$ means no linear relationship.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6f-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row6f-h1"
+        ],
+        "title": "Correlation and Scalar Multiples",
+        "text": "If one variable is a scalar multiple of another, their correlation would be exactly $$1$$ or $$-1$$. Check the correlation between $$critic_1$$ and $$critic_2$$ to see if this is the case.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-0.7$$"
+        ],
+        "dependencies": [
+            "aba1299row6f-h2"
+        ],
+        "title": "Evaluating the Correlation",
+        "text": "What is the correlation between $$critic_1$$ and $$critic_2$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-0.7$$",
+            "$$-0.70$$",
+            "$$-0.75$$",
+            "$$0.10$$",
+            "$$1.00$$"
+        ]
+    },
+    {
+        "id": "aba1299row6f-h4",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row6f-h3"
+        ],
+        "title": "Non-Unique Solutions",
+        "text": "A non-unique solution in a linear model can occur if there is perfect multicollinearity, meaning one predictor is a perfect linear combination of others. Consider the correlation values to determine if this is the case.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6f-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aba1299row6f-h4"
+        ],
+        "title": "Checking for Scalar Multiples",
+        "text": "Based on the correlation, is $$critic_1$$ a scalar multiple of $$critic_2$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a1bb75eds100-su21-final-Q7f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Logistic Regression",
+        "text": "Logistic regression is a linear classifier. It tries to find a linear boundary between classes. Consider how a linear boundary might look in this dataset.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7f-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Linear"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7f-h1"
+        ],
+        "title": "Linear Boundaries",
+        "text": "What kind of boundary does logistic regression create?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Linear",
+            "$$Non-linear$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7f-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Visualizing the Data",
+        "text": "Look at the distribution of the orange and blue points. Does a straight line seem like it could separate the two classes effectively?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7f-h3"
+        ],
+        "title": "Boundary Shape",
+        "text": "Can logistic regression create a circular boundary?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

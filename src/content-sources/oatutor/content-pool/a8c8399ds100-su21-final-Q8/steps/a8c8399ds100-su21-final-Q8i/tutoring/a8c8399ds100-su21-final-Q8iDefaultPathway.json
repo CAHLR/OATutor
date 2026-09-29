@@ -1,0 +1,83 @@
+[
+    {
+        "id": "a8c8399ds100-su21-final-Q8i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "When you one-hot encode a categorical variable, each category becomes a separate column. For example, if you one-hot encode the 'sex' column, you will have two new columns: one for 'male' and one for 'female'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-su21-final-Q8i-h1"
+        ],
+        "title": "Columns in the Design Matrix",
+        "text": "Consider how many unique values are in the 'sex' and $$'embark_{town'}$$ columns. Each unique value will become a separate column in the design matrix after one-hot encoding.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8i-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su21-final-Q8i-h2"
+        ],
+        "title": "Counting Unique Values",
+        "text": "How many unique values are there in the $$'embark_{town'}$$ column?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$4$$",
+            "$$3$$",
+            "$$4$$",
+            "$$5$$",
+            "$$6$$"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8i-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-su21-final-Q8i-h2"
+        ],
+        "title": "Invertibility of a Matrix",
+        "text": "A matrix is invertible if it is square and has full rank. Consider the dimensions of $$\\Phi_3$$ and what it means for $${\\Phi_3}^T \\Phi_3$$ to be invertible.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8i-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The columns must be linearly independent."
+        ],
+        "dependencies": [
+            "a8c8399ds100-su21-final-Q8i-h4"
+        ],
+        "title": "Checking Full Rank",
+        "text": "What condition must be met for a matrix to have full rank?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The columns must be linearly independent.",
+            "The rows must be linearly dependent.",
+            "The matrix must be symmetric.",
+            "The matrix must be diagonal."
+        ]
+    }
+]

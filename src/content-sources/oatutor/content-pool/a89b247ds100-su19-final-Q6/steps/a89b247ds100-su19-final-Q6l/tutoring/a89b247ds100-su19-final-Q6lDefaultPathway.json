@@ -1,0 +1,63 @@
+[
+    {
+        "id": "a89b247ds100-su19-final-Q6l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "The model is defined as f_theta(x)=theta_0+theta_1*veg+theta_2*(meat=beef)+theta_3*(meat=fish). This means that the coefficients $$\\theta_2$$ and $$\\theta_3$$ are used to account for the type of meat. If the meat is beef, $$\\theta_2$$ is used, and if it's fish, $$\\theta_3$$ is used. If it's chicken, neither $$\\theta_2$$ nor $$\\theta_3$$ is used.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6l-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6l-h1"
+        ],
+        "title": "Substituting Values",
+        "text": "For the second data point, $$veg=3$$ and $$meat=fish$$. Substitute these values into the model equation: $$\\operatorname{f_{\\theta}}\\left(x\\right)=\\theta_0+3\\theta_1+\\theta_3$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6l-h3",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6l-h2"
+        ],
+        "title": "Calculating the Prediction",
+        "text": "Using the values of theta, calculate the prediction: $$\\operatorname{f_{\\theta}}\\left(x\\right)=-3+5\\times3+12$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6l-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$25$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6l-h3"
+        ],
+        "title": "Finding the Squared Error",
+        "text": "Now, calculate the squared error using the formula $$\\left(actual-predicted\\right)^2$$. What is the squared error for the second data point?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$1$$",
+            "$$5$$",
+            "$$6$$",
+            "$$8$$",
+            "$$24$$",
+            "$$25$$",
+            "$$169$$"
+        ]
+    }
+]

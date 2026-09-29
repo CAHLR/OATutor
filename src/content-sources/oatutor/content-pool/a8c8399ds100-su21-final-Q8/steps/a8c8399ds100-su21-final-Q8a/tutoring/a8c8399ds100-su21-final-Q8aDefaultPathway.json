@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a8c8399ds100-su21-final-Q8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "One-hot encoding transforms categorical variables into a set of binary variables. For the 'sex' column, each unique value ('male' and 'female') becomes a separate column in the design matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-su21-final-Q8a-h1"
+        ],
+        "title": "Structure of the Design Matrix",
+        "text": "The design matrix \\( \\Phi_1 \\) will have the same number of rows as the original dataset. Consider how many rows are in the dataset based on the problem description.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su21-final-Q8a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$20$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su21-final-Q8a-h2"
+        ],
+        "title": "Checking the Number of Rows",
+        "text": "How many rows does the dataset have?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$20$$",
+            "$$10$$",
+            "$$5$$",
+            "$$15$$"
+        ]
+    }
+]

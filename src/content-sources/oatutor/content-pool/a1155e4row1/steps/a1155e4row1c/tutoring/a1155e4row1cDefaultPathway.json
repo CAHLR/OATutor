@@ -1,0 +1,33 @@
+[
+    {
+        "id": "a1155e4row1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding KDE Plot",
+        "text": "A KDE plot is useful for visualizing the distribution of a single variable. It estimates the probability density function of the variable. Think about how this might help in understanding the spread of workout times.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row1c-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1155e4row1c-h1"
+        ],
+        "title": "Choosing the Right Plot",
+        "text": "Is a KDE plot appropriate for visualizing the distribution of a single continuous variable like workout time?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

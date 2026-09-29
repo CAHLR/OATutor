@@ -1,0 +1,43 @@
+[
+    {
+        "id": "a8c8399ds100-fa20-final-Q12m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding BMI Calculation",
+        "text": "The BMI is calculated using the formula: weight in kg divided by the square of height in meters. Make sure you convert the height from centimeters to meters before squaring it.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12m-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Effect of Noise on Data",
+        "text": "Adding noise to the height and weight columns will affect their values, but the BMI column remains unchanged. Consider how this might impact the models and their parameters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12m-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa20-final-Q12m-h2"
+        ],
+        "title": "Impact on Confidence Intervals",
+        "text": "How does adding noise to the data affect the confidence intervals of the model parameters?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

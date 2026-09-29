@@ -1,0 +1,92 @@
+[
+    {
+        "id": "a89b247ds100-fa18-final-Q13h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Complexity",
+        "text": "When we talk about model complexity, we're referring to how flexible a model is in fitting the data. A more complex model can fit the training data very closely, but what might be a downside of this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q13h-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring Variance",
+        "text": "Variance in a model refers to how much the model's predictions change when using different training data. Can you think of how model complexity might affect variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q13h-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Bias in Models",
+        "text": "Bias is the error introduced by approximating a real-world problem, which may be complex, by a simplified model. How might decreasing model complexity affect bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q13h-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Variance decreases"
+        ],
+        "dependencies": [],
+        "title": "Model Complexity and Variance",
+        "text": "If you decrease model complexity, what happens to the variance of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Variance increases",
+            "Variance decreases",
+            "Variance stays the same"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q13h-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Bias increases"
+        ],
+        "dependencies": [],
+        "title": "Model Complexity and Bias",
+        "text": "If you decrease model complexity, what happens to the bias of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Bias increases",
+            "Bias decreases",
+            "Bias stays the same"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa18-final-Q13h-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Balancing bias and variance"
+        ],
+        "dependencies": [],
+        "title": "Understanding the Tradeoff",
+        "text": "What is the tradeoff when adjusting model complexity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Balancing bias and variance",
+            "Balancing bias and error",
+            "Balancing variance and error"
+        ]
+    }
+]

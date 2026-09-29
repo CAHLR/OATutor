@@ -1,0 +1,36 @@
+[
+    {
+        "id": "abf3684ds100-fa24-final-Q3ab-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L2 Loss",
+        "text": "L2 loss, also known as the mean squared error, is minimized when the predicted value is the mean of the observed values. Think about what this means for the given data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa24-final-Q3ab-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$85$$"
+        ],
+        "dependencies": [
+            "abf3684ds100-fa24-final-Q3ab-h1"
+        ],
+        "title": "Choosing the Optimal Value",
+        "text": "What is the mean of the $$critic_1$$ ratings given in the problem?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$82$$",
+            "$$85$$",
+            "$$13$$",
+            "$$83.5$$",
+            "$$0$$"
+        ]
+    }
+]

@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a72a45crow6e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Response Bias",
+        "text": "Response bias occurs when the responses collected in a survey do not accurately reflect the true opinions or behaviors of the population. Can you think of reasons why students might not provide honest answers in Rachel's survey?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow6e-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The incentive of extra credit might lead students to participate even if they are not genuinely interested in providing accurate feedback."
+        ],
+        "dependencies": [
+            "a72a45crow6e-h1"
+        ],
+        "title": "Identifying Potential Bias",
+        "text": "Which of the following could contribute to response bias in Rachel's survey?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The incentive of extra credit might lead students to participate even if they are not genuinely interested in providing accurate feedback.",
+            "The survey is conducted online, which ensures anonymity and reduces bias.",
+            "The survey is only available to students who use public transportation regularly."
+        ]
+    },
+    {
+        "id": "a72a45crow6e-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sampling Method Considerations",
+        "text": "Rachel's sampling method involves inviting students through a specific course platform. How might this affect the diversity of the sample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow6e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It may not reach students who are not enrolled in the course, leading to a less diverse sample."
+        ],
+        "dependencies": [
+            "a72a45crow6e-h3"
+        ],
+        "title": "Evaluating Sample Diversity",
+        "text": "What is a potential issue with using a course platform to invite participants?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It may not reach students who are not enrolled in the course, leading to a less diverse sample.",
+            "It ensures that only students interested in transportation are surveyed.",
+            "It guarantees a random sample of the entire student population."
+        ]
+    }
+]

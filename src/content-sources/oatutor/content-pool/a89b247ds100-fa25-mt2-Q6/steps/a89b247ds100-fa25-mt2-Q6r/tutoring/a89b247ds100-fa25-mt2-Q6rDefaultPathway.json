@@ -1,0 +1,130 @@
+[
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6r-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding LASSO Regularization",
+        "text": "LASSO regularization adds a penalty to the model based on the absolute values of the coefficients. This can lead to some coefficients being exactly zero, effectively selecting a simpler model. How might this affect the bias of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6r-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6r-h1"
+        ],
+        "title": "Effect on Model Bias",
+        "text": "When LASSO regularization is applied, the model tends to become simpler. What is a possible effect on the model bias?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6r-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring Model Variance",
+        "text": "Consider how LASSO regularization, by potentially reducing the number of features, might impact the model's sensitivity to fluctuations in the training data. What could this mean for the model's variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6r-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6r-h3"
+        ],
+        "title": "Effect on Model Variance",
+        "text": "With LASSO regularization, the model might use fewer features. What is a possible effect on the model variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6r-h5",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Training Data MSE",
+        "text": "Think about how adding a penalty term in LASSO affects the model's fit to the training data. Does it make the model fit the training data more closely or less closely?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6r-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6r-h5"
+        ],
+        "title": "Effect on Training Data MSE",
+        "text": "When LASSO regularization is applied, the model might not fit the training data as closely. What is a possible effect on the MSE of the training data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6r-h7",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Test Data MSE",
+        "text": "Consider how a simpler model, due to LASSO regularization, might perform on unseen data. Could this lead to a better generalization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6r-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6r-h7"
+        ],
+        "title": "Effect on Test Data MSE",
+        "text": "With LASSO regularization, the model might generalize better to new data. What is a possible effect on the MSE of the test data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    }
+]

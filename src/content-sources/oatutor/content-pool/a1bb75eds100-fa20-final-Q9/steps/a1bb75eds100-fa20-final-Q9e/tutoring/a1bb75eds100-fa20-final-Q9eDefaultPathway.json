@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a1bb75eds100-fa20-final-Q9e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross-Entropy Loss",
+        "text": "Cross-entropy loss measures the difference between the actual and predicted probabilities. For each data point, if the actual label is $$0$$, the loss is -log(1-predicted probability). If the actual label is $$1$$, the loss is -log(predicted probability).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9e-h1"
+        ],
+        "title": "Calculate Individual Losses",
+        "text": "For the first row, the actual label is $$0$$ and the predicted probability is $$0.45$$. Calculate the loss using $$-\\ln\\left(1-0.45\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9e-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9e-h2"
+        ],
+        "title": "Calculate Mean Loss",
+        "text": "Once you have the individual losses for each row, find the mean by summing them up and dividing by the number of rows, which is $$3$$ in this case.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{-1}{3} \\left(\\ln\\left(0.55\\right)+\\ln\\left(0.81\\right)+\\ln\\left(0.8\\right)\\right)$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9e-h3"
+        ],
+        "title": "Choose the Correct Mean Loss Expression",
+        "text": "Which of the following expressions correctly represents the mean cross-entropy loss for the given data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{-1}{3} \\left(\\ln\\left(0.45\\right)+\\ln\\left(0.19\\right)+\\ln\\left(0.2\\right)\\right)$$",
+            "$$\\frac{-1}{3} \\left(\\ln\\left(0.55\\right)+\\ln\\left(0.19\\right)+\\ln\\left(0.8\\right)\\right)$$",
+            "$$\\frac{-1}{3} \\left(\\ln\\left(0.45\\right)+\\ln\\left(0.81\\right)+\\ln\\left(0.8\\right)\\right)$$",
+            "$$\\frac{-1}{3} \\left(\\ln\\left(0.55\\right)+\\ln\\left(0.81\\right)+\\ln\\left(0.8\\right)\\right)$$",
+            "None of these"
+        ]
+    }
+]

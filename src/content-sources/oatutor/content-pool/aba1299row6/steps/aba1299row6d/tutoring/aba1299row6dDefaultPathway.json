@@ -1,0 +1,45 @@
+[
+    {
+        "id": "aba1299row6d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Collinearity",
+        "text": "Collinearity occurs when two or more predictor variables in a regression model are highly correlated, meaning they provide redundant information about the response variable. Look at the correlation values between $$critic_1$$ and $$critic_2$$. What do you notice?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6d-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row6d-h1"
+        ],
+        "title": "Correlation Matrix Insights",
+        "text": "In the correlation matrix, a high absolute value indicates a strong relationship between variables. Check the correlation between $$critic_1$$ and $$critic_2$$. How might this affect the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "aba1299row6d-h2"
+        ],
+        "title": "Evaluating Collinearity",
+        "text": "Based on the correlation matrix, do $$critic_1$$ and $$critic_2$$ show signs of collinearity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

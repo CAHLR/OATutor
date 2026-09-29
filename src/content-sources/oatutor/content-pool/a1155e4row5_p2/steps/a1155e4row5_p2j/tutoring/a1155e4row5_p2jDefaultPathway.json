@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1155e4row5_p2j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Boxcar Kernel",
+        "text": "The boxcar kernel is a simple kernel function that assigns equal weight to all points within a certain range (bandwidth) and zero weight to points outside that range. Consider how this might affect the shape of the density estimate.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p2j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row5_p2j-h1"
+        ],
+        "title": "Bandwidth and Range",
+        "text": "With a bandwidth of $$0.5$$, the boxcar kernel will affect the range of each data point. Think about how far from each data point the kernel will extend and how this might influence the overall density plot.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p2j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1155e4row5_p2j-h2"
+        ],
+        "title": "Calculating Density",
+        "text": "Consider the range of influence for each data point with the given bandwidth. How does this range overlap for the data points {2, $$4$$, 6}?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

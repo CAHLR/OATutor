@@ -1,0 +1,87 @@
+[
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Confidence Intervals",
+        "text": "A confidence interval gives a range of values that is likely to contain the true parameter value. If a confidence interval for a parameter includes zero, it suggests that the parameter might not have a significant effect.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6n-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-sp22-mt2-Q6n-h1"
+        ],
+        "title": "Interpreting Theta Intervals",
+        "text": "Look at the confidence intervals for each theta. If zero is within the interval, it means that the parameter could be zero, indicating no effect. Check if zero is within any of the given intervals.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6n-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp22-mt2-Q6n-h2"
+        ],
+        "title": "Checking $$\\Theta_0$$",
+        "text": "Does the confidence interval for $$\\theta_0$$ include zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6n-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp22-mt2-Q6n-h2"
+        ],
+        "title": "Checking $$\\Theta_1$$",
+        "text": "Does the confidence interval for $$\\theta_1$$ include zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6n-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp22-mt2-Q6n-h2"
+        ],
+        "title": "Checking $$\\Theta_2$$",
+        "text": "Does the confidence interval for $$\\theta_2$$ include zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

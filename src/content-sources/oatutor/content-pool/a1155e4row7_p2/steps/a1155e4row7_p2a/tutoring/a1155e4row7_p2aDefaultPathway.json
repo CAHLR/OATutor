@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a1155e4row7_p2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Contour Plots",
+        "text": "Contour plots are used to represent three-dimensional data in two dimensions. The contour lines connect points of equal value, often representing density or height.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row7_p2a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1155e4row7_p2a-h1"
+        ],
+        "title": "Contour Plot Characteristics",
+        "text": "What do contour lines in a contour plot represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Equal density",
+            "Equal height",
+            "Equal temperature",
+            "Random values",
+            "TRUE"
+        ]
+    },
+    {
+        "id": "a1155e4row7_p2a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Density in Contour Plots",
+        "text": "In contour plots, lines that are close together indicate a steep gradient, while lines that are far apart indicate a gentle gradient. This can help in understanding the distribution of data points.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

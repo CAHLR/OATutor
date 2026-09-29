@@ -1,0 +1,94 @@
+[
+    {
+        "id": "a98a015ds100-su20-final-Q8f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Orthogonality",
+        "text": "Consider what it means for two vectors to be orthogonal. What is the dot product of two orthogonal vectors?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q8f-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Magnitude of Vectors",
+        "text": "Think about how to calculate the magnitude of a vector. What is the magnitude of a vector with components (a,b,0,0,0,0)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q8f-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-su20-final-Q8f-h1"
+        ],
+        "title": "Checking Orthogonality",
+        "text": "Calculate the dot product of $$u_1$$ and $$u_2$$. What do you find?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$-1$$",
+            "$$0$$",
+            "$$0.5$$",
+            "$$1$$"
+        ]
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q8f-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-su20-final-Q8f-h2"
+        ],
+        "title": "Magnitude of $$u_1$$",
+        "text": "Calculate the magnitude of $$u_1$$. What is the result?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$0.6$$",
+            "$$0.8$$",
+            "$$1$$",
+            "$$1.4$$"
+        ]
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q8f-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-su20-final-Q8f-h2"
+        ],
+        "title": "Magnitude of $$u_2$$",
+        "text": "Calculate the magnitude of $$u_2$$. What is the result?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$0.6$$",
+            "$$0.8$$",
+            "$$1$$",
+            "$$1.4$$"
+        ]
+    }
+]

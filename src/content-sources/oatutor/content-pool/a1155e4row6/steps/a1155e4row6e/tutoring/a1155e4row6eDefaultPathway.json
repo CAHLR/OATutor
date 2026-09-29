@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a1155e4row6e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plot Type",
+        "text": "To visualize the joint distribution of two continuous variables, you might want to use a plot that can show density. Think about which Seaborn plot is suitable for this purpose.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row6e-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "sns.kdeplot"
+        ],
+        "dependencies": [
+            "a1155e4row6e-h1"
+        ],
+        "title": "Choosing the Right Plot",
+        "text": "Which Seaborn function is used to create a contour plot that visualizes the joint distribution of two variables?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "sns.kdeplot",
+            "sns.scatterplot",
+            "sns.histplot",
+            "plt.contour",
+            "sns.lineplot"
+        ]
+    }
+]

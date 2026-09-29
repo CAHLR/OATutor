@@ -1,0 +1,64 @@
+[
+    {
+        "id": "aba1299row6i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Standardization",
+        "text": "Standardizing a variable involves subtracting the mean and dividing by the standard deviation. This process changes the scale of the variable but not the relationship between variables. Consider how this affects the correlation and the model's predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6i-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Correlation and Model Uniqueness",
+        "text": "The uniqueness of a model's solution is related to the linear independence of the predictors. If the predictors are highly correlated, it might affect the uniqueness. Check the correlation between $$critic_1$$ and $$critic_2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6i-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aba1299row6i-h1"
+        ],
+        "title": "Effect of Standardization on Predictions",
+        "text": "Does standardizing the predictors change the predicted values of the response variable in a linear regression model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "aba1299row6i-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "aba1299row6i-h2"
+        ],
+        "title": "Correlation Impact on Model",
+        "text": "Given the correlation between $$critic_1$$ and $$critic_2$$ is $$-0.70$$, does this affect the uniqueness of the model's solution?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

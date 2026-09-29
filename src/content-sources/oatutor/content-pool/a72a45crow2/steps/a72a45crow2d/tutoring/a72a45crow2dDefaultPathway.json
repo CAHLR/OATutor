@@ -1,0 +1,60 @@
+[
+    {
+        "id": "a72a45crow2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Selection Bias",
+        "text": "Selection bias occurs when the sample collected is not representative of the population. Think about how increasing the sample size and sending reminders might affect the representativeness of the sample.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow2d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a72a45crow2d-h1"
+        ],
+        "title": "Impact of Sample Size",
+        "text": "Increasing the sample size from $$100$$ to $$200$$ can help reduce variability in the sample. Consider how this might influence the selection bias.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow2d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a72a45crow2d-h2"
+        ],
+        "title": "Effect of Reminder Emails",
+        "text": "Sending reminder emails can increase the response rate. Think about how a higher response rate might affect the selection bias.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow2d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The same as"
+        ],
+        "dependencies": [
+            "a72a45crow2d-h3"
+        ],
+        "title": "Comparing Bias Levels",
+        "text": "If Josh implements both updates, how would the selection bias of the updated survey compare to the original survey?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Larger than",
+            "Smaller than",
+            "The same as",
+            "Impossible to determine",
+            "Exactly half of"
+        ]
+    }
+]

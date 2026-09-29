@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a1155e4row5_p1m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Plot",
+        "text": "The violin plot is used to visualize the distribution of a numeric variable for different categories. Here, you want to visualize the distribution of $$`ed_{hours}`$$ for each combination of `role` and $$`is_{graduating}`$$. Think about which variable should be on the y-axis to show this distribution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p1m-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$y$$ $$=$$ \"ed_hours\""
+        ],
+        "dependencies": [
+            "a1155e4row5_p1m-h1"
+        ],
+        "title": "Choosing the Correct Variable for y-axis",
+        "text": "Which variable should be on the y-axis to show the distribution of hours spent resolving questions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$y$$ $$=$$ \"ed_hours\"",
+            "$$y$$ $$=$$ \"is_graduating\"",
+            "$$x$$ $$=$$ \"ed_hours\"",
+            "$$y$$ $$=$$ \"role\"",
+            "hue $$=$$ \"ed_hours\""
+        ]
+    }
+]

@@ -1,0 +1,43 @@
+[
+    {
+        "id": "a9edaf5ds100-su21-final-Q4c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Bias",
+        "text": "Look at how the predictions from each model compare to the true observed values. If the predictions consistently miss the true values in a systematic way, this might indicate high bias.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4c-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su21-final-Q4c-h1"
+        ],
+        "title": "Analyzing the Plot",
+        "text": "What do you notice about the alignment of the model predictions with the observed data points?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4c-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Average Prediction Line",
+        "text": "Consider the dotted line representing the average prediction across all models. How does it compare to the observed data? This can give you insight into the overall bias of the models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

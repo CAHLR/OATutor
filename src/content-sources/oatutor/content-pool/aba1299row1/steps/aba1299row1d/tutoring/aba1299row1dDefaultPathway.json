@@ -1,0 +1,46 @@
+[
+    {
+        "id": "aba1299row1d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Orthogonality",
+        "text": "Think about what it means for two vectors to be orthogonal. How does this relate to the concept of projections in linear algebra?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1d-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row1d-h1"
+        ],
+        "title": "Exploring the Residuals",
+        "text": "Consider the role of the residuals in an OLS model. What does it mean for the residuals to be orthogonal to the intercept vector?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Orthogonal to"
+        ],
+        "dependencies": [
+            "aba1299row1d-h2"
+        ],
+        "title": "Multiple Choice: Orthogonality",
+        "text": "Which of the following best describes the relationship between the vector $$1$$ and the residuals Y - hat{Y}?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Orthogonal to",
+            "In the span of",
+            "NOT orthogonal to and NOT in the span of"
+        ]
+    }
+]

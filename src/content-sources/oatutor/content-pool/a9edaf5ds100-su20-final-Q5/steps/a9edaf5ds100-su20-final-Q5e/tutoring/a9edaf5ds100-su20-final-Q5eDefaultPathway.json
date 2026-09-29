@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a9edaf5ds100-su20-final-Q5e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "In gradient descent, we update the parameters in the direction that reduces the loss. Think about how the loss function $L(\\theta)=y_i-f_{\\theta}(x_i)$ behaves as $\\theta_0$ changes. What happens to the residuals when $\\theta_0$ increases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q5e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-su20-final-Q5e-h1"
+        ],
+        "title": "Exploring the Loss Function",
+        "text": "Consider the role of $\\theta_0$ in the model $f_{\\theta}(x)=\\theta_0*0.5+\\theta_0*\\theta_1*x_1+\\sin(\\theta_1)*x_2$. How does increasing $\\theta_0$ affect the output of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q5e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$\\theta_0**{(t)}$ approaches positive infinity"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su20-final-Q5e-h2"
+        ],
+        "title": "Predicting the Behavior of $\\theta_0$",
+        "text": "As $t$ grows large, what is the most likely behavior of $\\theta_0**{(t)}$ in terms of its value?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$\\theta_0**{(t)}$ approaches positive infinity",
+            "$\\theta_0**{(t)}$ approaches $$0$$",
+            "$\\theta_0**{(t)}$ approaches negative infinity",
+            "$\\theta_0**{(t)}$ converges to a finite positive value",
+            "$\\theta_0**{(t)}$ oscillates and never converges"
+        ]
+    }
+]

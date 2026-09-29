@@ -1,0 +1,66 @@
+[
+    {
+        "id": "abf3684ds100-su25-final-Q2r-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "Think about what happens when you have a fixed learning rate in gradient descent. How does it affect the convergence to a minimum? Consider the role of the learning rate in the speed and stability of convergence.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2r-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Global vs. Local Minimum",
+        "text": "Remember that a global minimum is the lowest point in the entire function, while a local minimum is the lowest point in a specific region. Does gradient descent always find the global minimum?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2r-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [],
+        "title": "Exploring Learning Rate",
+        "text": "What might happen if the learning rate is too high or too low?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "It may not converge at all",
+            "It may overshoot the minimum",
+            "It will converge quickly",
+            "It will converge slowly"
+        ]
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2r-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [],
+        "title": "Convergence of Gradient Descent",
+        "text": "Does gradient descent always guarantee reaching the global minimum?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "No, not always",
+            "Only if the function is convex",
+            "Only with a variable learning rate",
+            "Yes, always"
+        ]
+    }
+]

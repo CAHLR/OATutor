@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a8c8399ds100-fa24-final-Q3da-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model Equation",
+        "text": "The model equation given is $$self_{rating}=\\theta_0+\\theta_1 critic_1$$. This means that $$self_{rating}$$ is predicted based on a linear relationship with $$critic_1$$. Think about how changes to $$critic_1$$ might affect $$\\theta_1$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa24-final-Q3da-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-fa24-final-Q3da-h1"
+        ],
+        "title": "Effect of Subtracting the Median",
+        "text": "Subtracting the median from $$critic_1$$ shifts all values of $$critic_1$$ by a constant amount. Consider how this affects the slope $$\\theta_1$$ in the linear equation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa24-final-Q3da-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa24-final-Q3da-h2"
+        ],
+        "title": "Impact on $$\\Theta_1$$",
+        "text": "If you subtract a constant from all values of $$critic_1$$, does it change the slope of the line in the equation $$self_{rating}=\\theta_0+\\theta_1 critic_1$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

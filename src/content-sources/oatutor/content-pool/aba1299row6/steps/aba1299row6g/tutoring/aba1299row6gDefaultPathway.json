@@ -1,0 +1,45 @@
+[
+    {
+        "id": "aba1299row6g-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Correlation",
+        "text": "The correlation matrix shows how strongly two variables are related. A correlation of $$1$$ or $$-1$$ indicates a perfect linear relationship, while a correlation of $$0$$ indicates no linear relationship. Consider how these correlations might affect the model's ability to predict $$self_{rating}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6g-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row6g-h1"
+        ],
+        "title": "Correlation and Model Uniqueness",
+        "text": "Think about how the correlation between the predictors (critic_1 and critic_2) and the response $$self_{rating}$$ might influence the uniqueness of the model solution. High correlation between predictors can lead to multicollinearity, affecting the model's stability.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6g-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aba1299row6g-h2"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Consider the number of data points needed to determine a unique solution for a linear model. Is it true that at least $$2$$ distinct data points are necessary?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

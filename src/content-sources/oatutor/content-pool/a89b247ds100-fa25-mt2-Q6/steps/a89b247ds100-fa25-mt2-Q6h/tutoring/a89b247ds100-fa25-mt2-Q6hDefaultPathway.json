@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE on Test Data",
+        "text": "When you add a new feature to a model, especially one that is a transformation of an existing feature, it can affect the model's ability to generalize to new data. Think about how adding complexity might impact the model's performance on unseen data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6h-h1"
+        ],
+        "title": "Impact of Feature Addition",
+        "text": "Consider how adding a feature that is a transformation of an existing one might change the model's flexibility. Does it make the model more adaptable to the training data, or does it risk overfitting?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6h-h2"
+        ],
+        "title": "Evaluating MSE Changes",
+        "text": "What happens to the MSE on held-out test data when a model becomes more complex?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Both",
+            "Decrease",
+            "Increase",
+            "TRUE"
+        ]
+    }
+]

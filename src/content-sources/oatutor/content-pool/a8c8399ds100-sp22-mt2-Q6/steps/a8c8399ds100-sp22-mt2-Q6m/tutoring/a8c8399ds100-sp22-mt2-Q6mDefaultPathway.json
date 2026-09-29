@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrap Sampling",
+        "text": "Bootstrap sampling involves taking random samples with replacement from a dataset. This means each sample can have repeated entries from the original dataset. Consider how this might affect the size of your sample.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6m-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Percentile Calculation",
+        "text": "To calculate the upper percentile, think about the range of percentiles from $$0$$ to $$100$$. The upper percentile is often used to find the boundary above which a certain percentage of data falls.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6m-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$97.5$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp22-mt2-Q6m-h2"
+        ],
+        "title": "Choosing the Upper Percentile",
+        "text": "Which percentile would you choose to represent the upper boundary of a 95% confidence interval?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$97.5$$",
+            "$$95$$",
+            "$$0.975$$",
+            "$$2.5$$",
+            "$$99$$"
+        ]
+    }
+]

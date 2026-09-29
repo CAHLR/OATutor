@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a98a015ds100-sp24-final-Q9d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scree Plot",
+        "text": "Look at the scree plot and identify where the curve starts to level off. This point indicates the number of principal components that capture most of the variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9d-h1"
+        ],
+        "title": "Intrinsic Dimension",
+        "text": "The intrinsic dimension is often determined by the number of principal components before the curve levels off. How many components are there before this happens?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9d-h2"
+        ],
+        "title": "Evaluating the Statement",
+        "text": "Based on the scree plot, does the intrinsic dimension appear to be less than 20?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

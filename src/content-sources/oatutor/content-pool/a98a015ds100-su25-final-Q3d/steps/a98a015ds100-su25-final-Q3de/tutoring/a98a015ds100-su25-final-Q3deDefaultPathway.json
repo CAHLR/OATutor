@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a98a015ds100-su25-final-Q3de-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD",
+        "text": "In Singular Value Decomposition (SVD), a matrix X is decomposed into three matrices: U, S, and $$V^T$$. The matrix S contains the singular values, which are always non-negative and arranged in descending order. These values give us insight into the variance captured by each principal component.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su25-final-Q3de-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-su25-final-Q3de-h1"
+        ],
+        "title": "Properties of V Matrix",
+        "text": "The columns of the V matrix in SVD are orthonormal vectors. This means each column has a norm of $$1$$, and the dot product between any two different columns is $$0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su25-final-Q3de-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$v_1$$ and $$v_4$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-su25-final-Q3de-h2"
+        ],
+        "title": "Identifying Orthonormal Vectors",
+        "text": "Which vectors have a norm of $$1$$ and are orthogonal to each other?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$v_1$$ and $$v_2$$",
+            "$$v_1$$ and $$v_3$$",
+            "$$v_1$$ and $$v_4$$",
+            "$$v_2$$ and $$v_3$$",
+            "$$v_3$$ and $$v_4$$"
+        ]
+    }
+]

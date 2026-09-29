@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a1bb75eds100-su21-final-Q6i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Methods",
+        "text": "When dealing with large datasets, it's important to choose a method that efficiently updates the model parameters. Consider how often you want to update the parameters and how much data you want to use for each update.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q6i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q6i-h1"
+        ],
+        "title": "Batch Size Considerations",
+        "text": "Think about the trade-offs between using a small batch size versus a large batch size. A smaller batch size can lead to more frequent updates, but might be noisier. A larger batch size can be more stable but requires more computation per update.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q6i-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Stochastic gradient descent (batch size $$=$$ 32)"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q6i-h2"
+        ],
+        "title": "Choosing the Right Gradient Method",
+        "text": "Which gradient method is best suited for large datasets like this one?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Stochastic gradient descent (batch size $$=$$ 1)",
+            "Gradient descent, on the complete dataset",
+            "Stochastic gradient descent (batch size $$=$$ 32)"
+        ]
+    }
+]

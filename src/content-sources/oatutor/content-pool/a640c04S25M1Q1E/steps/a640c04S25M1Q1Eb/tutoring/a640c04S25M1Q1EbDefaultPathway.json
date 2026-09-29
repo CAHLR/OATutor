@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a640c04S25M1Q1Eb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Grouping",
+        "text": "To fill in blank (ii), think about which column you need to group by to calculate metrics for each grocery store chain. Look at the column names in the DataFrame.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04S25M1Q1Eb-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "chain"
+        ],
+        "dependencies": [
+            "a640c04S25M1Q1Eb-h1"
+        ],
+        "title": "Choosing the Correct Column",
+        "text": "Which column should you use to group the data by grocery store chain?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "item",
+            "chain",
+            "address",
+            "price",
+            "inventory"
+        ]
+    }
+]

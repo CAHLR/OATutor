@@ -1,0 +1,54 @@
+[
+    {
+        "id": "a9edaf5ds100-su20-final-Q11b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Fold Size",
+        "text": "To determine the size of each fold, consider how you would divide the total number of samples by the number of folds, k. This will give you the number of samples in each fold.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q11b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Shuffling the Indices",
+        "text": "The function np.random.permutation is used to shuffle the indices of the dataset. This ensures that each fold is a random subset of the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q11b-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Creating Validation Indices",
+        "text": "For the validation indices, think about how you can select a specific segment of the shuffled indices for each fold. This segment should correspond to the current fold number.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q11b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "shuffled_idx[i*fold_size:(i+1)*fold_size]"
+        ],
+        "dependencies": [],
+        "title": "Choosing the Correct Validation Indices",
+        "text": "Which of the following expressions correctly selects the validation indices for the current fold?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "np.append(shuffled_idx[i*fold_size],shuffled_idx[(i+1)*fold_size])",
+            "shuffled_idx[i*fold_size:(i+1)*fold_size]",
+            "i*fold_size:(i+1)*fold_size",
+            "$$shuffled_{idx}-train_{idx}$$",
+            "shuffled_idx[fold_size:(i+1)*fold_size]"
+        ]
+    }
+]

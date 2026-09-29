@@ -1,0 +1,47 @@
+[
+    {
+        "id": "aba1299row1_part2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "In gradient descent, the update rule for the parameter \\( $$\\theta$$ \\) is given by \\( \\theta**{(t+1)} $$=$$ \\theta**{(t)} - \\alpha \\cdot \\frac{d}{d\\theta}L(\\theta**{(t)}) \\). Here, \\( \\alpha \\) is the learning rate.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1_part2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row1_part2b-h1"
+        ],
+        "title": "Applying the Update Rule",
+        "text": "Given \\( \\theta**{(0)} $$=$$ $$10$$ \\) and \\( \\theta**{(1)} $$=$$ $$11$$ \\), and \\( \\alpha $$=$$ $$1$$ \\), substitute these values into the update rule to find the gradient.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1_part2b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-1$$"
+        ],
+        "dependencies": [
+            "aba1299row1_part2b-h2"
+        ],
+        "title": "Calculate the Gradient",
+        "text": "What is the value of \\( \\frac{d}{d\\theta}L(\\theta**{(0)}) \\) if \\( \\theta**{(0)} $$=$$ $$10$$ \\), \\( \\theta**{(1)} $$=$$ $$11$$ \\), and \\( \\alpha $$=$$ $$1$$ \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-1$$",
+            ">1",
+            ">0",
+            ">-2"
+        ]
+    }
+]

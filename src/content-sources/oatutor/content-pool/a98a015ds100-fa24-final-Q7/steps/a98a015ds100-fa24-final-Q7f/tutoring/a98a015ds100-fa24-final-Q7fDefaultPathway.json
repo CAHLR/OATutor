@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a98a015ds100-fa24-final-Q7f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD",
+        "text": "In Singular Value Decomposition (SVD), the matrix X is decomposed into three matrices: U, S, and V. Each of these matrices has specific properties. For example, U and V are orthogonal matrices, and S is a diagonal matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa24-final-Q7f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa24-final-Q7f-h1"
+        ],
+        "title": "Properties of V",
+        "text": "The matrix V in SVD represents the right singular vectors of X. These vectors are orthogonal and correspond to the directions of maximum variance in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa24-final-Q7f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The first row of V does not necessarily represent the direction of maximum variance."
+        ],
+        "dependencies": [
+            "a98a015ds100-fa24-final-Q7f-h2"
+        ],
+        "title": "Direction of Maximum Variance",
+        "text": "Which row of V represents the direction of maximum variance in the data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "None of the above",
+            "The first row of V",
+            "The first row of V does not necessarily represent the direction of maximum variance.",
+            "The last row of V",
+            "The row corresponding to the largest singular value"
+        ]
+    }
+]

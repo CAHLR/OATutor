@@ -1,0 +1,71 @@
+[
+    {
+        "id": "a98a015ds100-sp24-final-Q9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Reconstruction Error",
+        "text": "Reconstruction error in PCA is related to how well the first principal component can capture the variance in the data. The more variance it captures, the lower the reconstruction error.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9a-h1"
+        ],
+        "title": "Analyzing Pair A",
+        "text": "Look at the spread of the data points in Pair A. How does the variance along the principal component compare to the variance perpendicular to it?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9a-h1"
+        ],
+        "title": "Analyzing Pair B",
+        "text": "For Pair B, consider the direction of the data spread. How aligned are the data points along a single line?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9a-h1"
+        ],
+        "title": "Analyzing Pair C",
+        "text": "In Pair C, observe the distribution of points. Is there a clear direction where most of the variance is captured?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Pair A"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9a-h2"
+        ],
+        "title": "Choosing the Pair with Lowest Reconstruction Error",
+        "text": "Which pair shows the least spread perpendicular to the direction of maximum variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Pair A",
+            "Pair B",
+            "Pair C",
+            "Not enough information"
+        ]
+    }
+]

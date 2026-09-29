@@ -1,0 +1,108 @@
+[
+    {
+        "id": "aea05a2ds100-fa24-final-Q8e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Single Linkage",
+        "text": "Single linkage clustering, also known as the nearest neighbor method, merges clusters based on the shortest distance between any two points in the clusters. Consider how this might affect the clustering of Team Pandas with other teams.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-fa24-final-Q8e-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-fa24-final-Q8e-h1"
+        ],
+        "title": "Calculating Distances",
+        "text": "To determine which teams might cluster with Team Pandas, calculate the Euclidean distance between Team Pandas and each of the other teams. Remember, the formula for Euclidean distance between two points (x1,y1) and (x2,y2) is $$\\sqrt{\\left(x2-x1\\right)^2+\\left(y2-y1\\right)^2}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-fa24-final-Q8e-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "aea05a2ds100-fa24-final-Q8e-h2"
+        ],
+        "title": "Distance Calculation for Team O-Ski",
+        "text": "What is the Euclidean distance between Team Pandas $$(5,4)$$ and Team O-Ski $$(1,1)$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$5$$",
+            "$$3$$",
+            "$$4$$",
+            "$$5$$",
+            "$$6$$"
+        ]
+    },
+    {
+        "id": "aea05a2ds100-fa24-final-Q8e-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3.6$$"
+        ],
+        "dependencies": [
+            "aea05a2ds100-fa24-final-Q8e-h2"
+        ],
+        "title": "Distance Calculation for Team SantaQlaus",
+        "text": "What is the Euclidean distance between Team Pandas $$(5,4)$$ and Team SantaQlaus $$(3,1)$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$3.6$$",
+            "$$2.8$$",
+            "$$3.6$$",
+            "$$4.2$$",
+            "$$5.1$$"
+        ]
+    },
+    {
+        "id": "aea05a2ds100-fa24-final-Q8e-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4.1$$"
+        ],
+        "dependencies": [
+            "aea05a2ds100-fa24-final-Q8e-h2"
+        ],
+        "title": "Distance Calculation for Team Ice-berk",
+        "text": "What is the Euclidean distance between Team Pandas $$(5,4)$$ and Team Ice-berk $$(1,5)$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$4.1$$",
+            "$$3.2$$",
+            "$$4.1$$",
+            "$$4.5$$",
+            "$$5.0$$"
+        ]
+    },
+    {
+        "id": "aea05a2ds100-fa24-final-Q8e-h6",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-fa24-final-Q8e-h5"
+        ],
+        "title": "Identifying the Closest Team",
+        "text": "After calculating the distances, identify which team has the shortest distance to Team Pandas. This team will be in the same cluster as Team Pandas when using single linkage clustering.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

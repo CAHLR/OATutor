@@ -1,0 +1,57 @@
+[
+    {
+        "id": "a1bb75eds100-su21-final-Q7r-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Data Distribution",
+        "text": "Observe how the orange and blue points are distributed. Notice any patterns or shapes that might suggest a particular type of decision boundary.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7r-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Feature Transformation",
+        "text": "Consider how adding a new feature, like $$x_3$$, which is a function of $$x_1$$ and $$x_2$$, might help in separating the classes. What kind of function could transform the data to make it linearly separable?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7r-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x_3=\\sqrt{{x_1}^2+{x_2}^2}$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7r-h2"
+        ],
+        "title": "Choosing the Right Function",
+        "text": "Which of the following functions could help in transforming the data to make it linearly separable?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$x_3=x_1+x_2$$",
+            "$$x_3=x_1 x_2$$",
+            "$$x_3=\\sqrt{{x_1}^2+{x_2}^2}$$",
+            "$$x_3={x_1}^2-{x_2}^2$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q7r-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q7r-h3"
+        ],
+        "title": "Logistic Regression Capabilities",
+        "text": "Logistic regression can create linear decision boundaries. However, with feature transformations, it can handle more complex boundaries. Think about how the new feature $$x_3$$ might allow logistic regression to create a boundary like D.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

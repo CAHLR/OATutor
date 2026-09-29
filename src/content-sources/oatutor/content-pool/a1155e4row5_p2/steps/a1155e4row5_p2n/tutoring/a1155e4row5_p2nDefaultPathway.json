@@ -1,0 +1,67 @@
+[
+    {
+        "id": "a1155e4row5_p2n-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE and MAE",
+        "text": "Mean Squared Error (MSE) and Mean Absolute Error (MAE) are both metrics used to evaluate the accuracy of a model. MSE squares the errors before averaging, which means it gives more weight to larger errors. MAE, on the other hand, takes the absolute value of errors, treating all errors equally. Think about when you might want to emphasize larger errors more.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p2n-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1155e4row5_p2n-h1"
+        ],
+        "title": "Choosing the Right Error Metric",
+        "text": "Which error metric would you choose if you want to penalize larger errors more heavily?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "MAE",
+            "MSE",
+            "TRUE"
+        ]
+    },
+    {
+        "id": "a1155e4row5_p2n-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Impact of Squaring Errors",
+        "text": "When you square a number, it becomes larger if the number is greater than $$1$$, and smaller if it's between $$0$$ and $$1$$. Consider how this affects the error values when using MSE compared to MAE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p2n-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1155e4row5_p2n-h3"
+        ],
+        "title": "Effect of Squaring on Error Values",
+        "text": "What happens to the error values when they are squared in MSE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "They become larger",
+            "They become smaller",
+            "They remain the same"
+        ]
+    }
+]

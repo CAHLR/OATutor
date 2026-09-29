@@ -1,0 +1,42 @@
+[
+    {
+        "id": "aba1299row6p2i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L2 Regularization",
+        "text": "L2 regularization, also known as ridge regression, adds a penalty equal to the square of the magnitude of coefficients to the loss function. This helps prevent overfitting by discouraging overly complex models.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6p2i-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Analyzing the DataFrame",
+        "text": "Look at the columns in the DataFrame: $$dist_{from,bell}$$, $$section_{no}$$, weather, and $$attendance_{rate}$$. Consider how each might influence the attendance rate and how they could be used in a model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row6p2i-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$${\\theta}^c$$"
+        ],
+        "dependencies": [],
+        "title": "Choosing the Optimal Parameter",
+        "text": "Which parameter is most likely to be optimal when using L2 regularization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$${\\theta}^a$$",
+            "$${\\theta}^b$$",
+            "$${\\theta}^c$$"
+        ]
+    }
+]

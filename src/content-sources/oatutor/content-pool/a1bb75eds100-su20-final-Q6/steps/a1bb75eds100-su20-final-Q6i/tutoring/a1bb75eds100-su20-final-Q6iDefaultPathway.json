@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a1bb75eds100-su20-final-Q6i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame Structure",
+        "text": "Remember, the DataFrame 'consoles' contains columns like 'name', 'generation', 'manufacturer', 'type', 'year', and 'sales'. Each column holds specific information about the consoles. Think about which column would help you filter the data by a specific company.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su20-final-Q6i-h1"
+        ],
+        "title": "Filtering by Manufacturer",
+        "text": "To find the latest generation a company participated in, you need to filter the DataFrame to only include rows where the 'manufacturer' matches the company you're interested in. Which column would you use to filter by manufacturer?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6i-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$consoles[\"manufacturer\"]==company$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su20-final-Q6i-h2"
+        ],
+        "title": "Choosing the Correct Filter",
+        "text": "Which of the following options correctly filters the DataFrame to only include rows where the 'manufacturer' matches the given company?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$consoles[\"manufacturer\"]==\"company\"$$",
+            "$$consoles[\"manufacturer\"]==company$$",
+            "$$consoles[consoles[\"manufacturer\"]==company]$$",
+            "$$consoles[\"generation\"]==company$$",
+            "consoles[\"manufacturer\"].isin(company)"
+        ]
+    }
+]

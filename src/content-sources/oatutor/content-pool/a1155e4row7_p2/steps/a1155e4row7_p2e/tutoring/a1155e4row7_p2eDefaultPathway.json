@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a1155e4row7_p2e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Violin Plots",
+        "text": "Violin plots are used to visualize the distribution of data across different categories. They show the density of the data at different values. In this case, the x-axis represents different project topics, and the y-axis represents the age of participants.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row7_p2e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row7_p2e-h1"
+        ],
+        "title": "Choosing the Correct Axes",
+        "text": "To recreate the violin plot, you need to set the x-axis to the categorical variable and the y-axis to the numerical variable. Here, the project topics are categorical, and age is numerical.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row7_p2e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "sns.violinplot"
+        ],
+        "dependencies": [
+            "a1155e4row7_p2e-h2"
+        ],
+        "title": "Selecting the Correct Function",
+        "text": "Which function from the seaborn library is used to create violin plots?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "sns.violinplot",
+            "sns.boxplot",
+            "sns.barplot",
+            "sns.scatterplot"
+        ]
+    },
+    {
+        "id": "a1155e4row7_p2e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$sorted_{merged,info}$$"
+        ],
+        "dependencies": [
+            "a1155e4row7_p2e-h3"
+        ],
+        "title": "Setting the Data Parameter",
+        "text": "What should be the value of the 'data' parameter in the sns.violinplot function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$sorted_{merged,info}$$",
+            "$$other_{info}$$",
+            "$$participant_{info}$$",
+            "$$project_{info}$$"
+        ]
+    },
+    {
+        "id": "a1155e4row7_p2e-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "x=\"project_topic\", $$y=\"age\"$$"
+        ],
+        "dependencies": [
+            "a1155e4row7_p2e-h4"
+        ],
+        "title": "Defining the Axes",
+        "text": "What should be the $$x$$ and $$y$$ parameters in the sns.violinplot function to match the plot?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "x=\"project_topic\", $$y=\"age\"$$",
+            "$$x=\"age\"$$, y=\"project_topic\"",
+            "$$x=\"age\"$$, y=\"level_of_profession\"",
+            "x=\"level_of_profession\", $$y=\"age\"$$"
+        ]
+    }
+]

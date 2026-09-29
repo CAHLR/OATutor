@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a89b247ds100-fa21-mt-Q2m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Overfitting",
+        "text": "Overfitting occurs when a model learns the training data too well, capturing noise along with the underlying pattern. This often results in poor performance on new, unseen data. Can you think of ways to make the model more generalizable?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2m-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2m-h1"
+        ],
+        "title": "Role of Training Data",
+        "text": "Increasing the amount of training data can help the model learn a more general pattern rather than memorizing the training set. Why do you think this might reduce overfitting?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa21-mt-Q2m-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa21-mt-Q2m-h2"
+        ],
+        "title": "Evaluating Strategies",
+        "text": "Which of the following strategies could help Parth decrease model variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Add more features",
+            "Gather more training data",
+            "Increase model complexity",
+            "TRUE",
+            "Use a simpler model"
+        ]
+    }
+]

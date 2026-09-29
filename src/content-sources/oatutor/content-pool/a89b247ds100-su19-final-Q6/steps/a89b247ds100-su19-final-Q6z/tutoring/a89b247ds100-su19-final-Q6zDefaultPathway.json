@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a89b247ds100-su19-final-Q6z-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "Bias refers to the error introduced by approximating a real-world problem, which may be complex, by a simplified model. Variance refers to the model's sensitivity to fluctuations in the training set. Consider how removing a feature might simplify the model and affect these aspects.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6z-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Role of the 'veg' Column",
+        "text": "The 'veg' column represents the pounds of vegetables bought. Think about how this feature contributes to predicting the total bill and what happens when it's removed from the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6z-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The model's bias increases because it loses information about the relationship between vegetables and the total bill."
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6z-h2"
+        ],
+        "title": "Impact on Bias",
+        "text": "What happens to the model's ability to capture the relationship between vegetables and the total bill if the 'veg' column is removed?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The model's bias increases because it loses information about the relationship between vegetables and the total bill.",
+            "The model's bias decreases because it becomes simpler.",
+            "The model's bias remains the same."
+        ]
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6z-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The model's variance decreases because it becomes less sensitive to fluctuations in the training data."
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6z-h2"
+        ],
+        "title": "Impact on Variance",
+        "text": "How does removing the 'veg' column affect the model's variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The model's variance increases because it becomes more complex.",
+            "The model's variance decreases because it becomes less sensitive to fluctuations in the training data.",
+            "The model's variance remains the same."
+        ]
+    }
+]

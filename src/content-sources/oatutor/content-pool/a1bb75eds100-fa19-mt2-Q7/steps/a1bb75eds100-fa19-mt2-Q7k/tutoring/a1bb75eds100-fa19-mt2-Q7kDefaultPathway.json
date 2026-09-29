@@ -1,0 +1,96 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Logistic Function",
+        "text": "To calculate the probability of survival, we use the logistic function, which is defined as \\( \\sigma(z) $$=$$ \\frac{1}{1+e**{-z}} \\). Here, \\( $$z$$ \\) is the linear combination of the parameters and features. Can you identify what \\( $$z$$ \\) would be for a 20-year-old female passenger?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-mt2-Q7k-h1"
+        ],
+        "title": "Calculating the Linear Combination",
+        "text": "The linear combination \\( $$z$$ \\) is calculated using the formula \\( $$z$$ $$=$$ \\beta_0 + \\beta_1 \\times \\text{age} + \\beta_2 \\times \\text{sex} \\). Given the values \\( $$\\beta=(-1.2, -0.005, 2.5)$$ \\), what would \\( $$z$$ \\) be for a 20-year-old female?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7k-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-mt2-Q7k-h2"
+        ],
+        "title": "Substituting Values into the Formula",
+        "text": "Substitute the values into the formula: \\( $$z$$ $$=$$ $$-1.2$$ + $$(-0.005)$$ \\times $$20$$ + $$2.5$$ \\times $$1$$ \\). Simplify this expression to find \\( $$z$$ \\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7k-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sigma(1.2)$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-mt2-Q7k-h3"
+        ],
+        "title": "Calculating the Probability",
+        "text": "Once you have \\( $$z$$ \\), use the logistic function \\( \\sigma(z) $$=$$ \\frac{1}{1+e**{-z}} \\) to find the probability of survival. What is \\( \\sigma(z) \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\sigma(1.2)$$",
+            "$$\\sigma(-1.2)$$",
+            "\\sigma(0)",
+            "$$\\sigma(1.2)$$",
+            "$$\\sigma(2.5)$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7k-h5",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-mt2-Q7k-h4"
+        ],
+        "title": "Understanding Cross-Entropy Loss",
+        "text": "Cross-entropy loss is calculated using the formula \\( -\\log(\\sigma(z)) \\) for a positive class (survived). Why do you think this formula is used?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7k-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "-log(\\sigma(1.2))"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-mt2-Q7k-h5"
+        ],
+        "title": "Calculating Cross-Entropy Loss",
+        "text": "Using the probability you calculated, what is the cross-entropy loss for the prediction?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "log(\\sigma(1.2))",
+            "-log(1-\\sigma(1.2))",
+            "-log(\\sigma(1.2))",
+            "-log(\\sigma(1.2))-log(1-\\sigma(1.2))",
+            "Not enough information"
+        ]
+    }
+]

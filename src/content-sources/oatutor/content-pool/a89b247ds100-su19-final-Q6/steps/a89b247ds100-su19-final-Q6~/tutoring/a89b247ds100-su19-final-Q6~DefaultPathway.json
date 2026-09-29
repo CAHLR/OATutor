@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a89b247ds100-su19-final-Q6~-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Polynomial Degree",
+        "text": "Consider how the degree of a polynomial affects the model's ability to fit the data. A higher degree polynomial can fit more complex patterns, but it might also lead to overfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6~-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Training vs. Validation Error",
+        "text": "Think about how training error and validation error behave as the complexity of the model increases. Training error usually decreases with complexity, but validation error might increase after a certain point due to overfitting.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6~-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Plot B"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6~-h1"
+        ],
+        "title": "Identifying Overfitting",
+        "text": "Which plot shows a decrease in training error but an increase in validation error as the polynomial degree increases?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Plot A",
+            "Plot B",
+            "Plot C",
+            "Plot D"
+        ]
+    },
+    {
+        "id": "a89b247ds100-su19-final-Q6~-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Plot D"
+        ],
+        "dependencies": [
+            "a89b247ds100-su19-final-Q6~-h2"
+        ],
+        "title": "Consistent Error Across Degrees",
+        "text": "Which plot shows a relatively constant error across all polynomial degrees?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Plot A",
+            "Plot B",
+            "Plot C",
+            "Plot D"
+        ]
+    }
+]

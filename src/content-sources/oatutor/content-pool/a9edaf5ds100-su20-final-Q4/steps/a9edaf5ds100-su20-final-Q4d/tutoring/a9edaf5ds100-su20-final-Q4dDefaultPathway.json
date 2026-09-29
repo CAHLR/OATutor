@@ -1,0 +1,44 @@
+[
+    {
+        "id": "a9edaf5ds100-su20-final-Q4d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Mean-Centering",
+        "text": "Mean-centering involves adjusting the values of each column (except the intercept) so that their mean becomes zero. This transformation can help in simplifying the interpretation of the coefficients in a linear regression model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q4d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring Full Column Rank",
+        "text": "When a matrix has full column rank, it means that all its columns are linearly independent. This property is crucial for ensuring that the matrix is invertible, which is necessary for finding unique solutions in linear regression.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su20-final-Q4d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [],
+        "title": "Comparing Coefficients",
+        "text": "Consider the effect of mean-centering on the coefficients of the linear model. Which of the following statements is true about the coefficients of the mean-centered model compared to the original model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Only the intercept changes",
+            "TRUE",
+            "The coefficients are scaled",
+            "The coefficients change",
+            "The coefficients remain the same"
+        ]
+    }
+]

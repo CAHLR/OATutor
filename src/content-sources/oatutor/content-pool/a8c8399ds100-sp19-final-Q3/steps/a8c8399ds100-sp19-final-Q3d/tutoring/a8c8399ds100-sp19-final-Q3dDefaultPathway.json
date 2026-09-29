@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a8c8399ds100-sp19-final-Q3d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatterplot",
+        "text": "Look at the pattern of the points in the scatterplot. Consider how the function $$f(x)=|x|$$ might transform the x-values and how this could affect the linearity of the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp19-final-Q3d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It makes them positive."
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp19-final-Q3d-h1"
+        ],
+        "title": "Analyzing $$f(x)=|x|$$",
+        "text": "If $$f(x)=|x|$$, how does this function affect negative x-values?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It makes them positive.",
+            "It makes them negative.",
+            "It leaves them unchanged."
+        ]
+    },
+    {
+        "id": "a8c8399ds100-sp19-final-Q3d-h3",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-sp19-final-Q3d-h2"
+        ],
+        "title": "Effect on Linearity",
+        "text": "Consider whether transforming x-values with $$f(x)=|x|$$ could allow the data to be represented as a linear combination in the model $$y_i=\\beta_0+x_i \\beta_1+f{\\left(x_i\\right)} \\beta_2$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

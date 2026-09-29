@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a1155e4row10_p2m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding KDE",
+        "text": "A Kernel Density Estimate (KDE) is a way to estimate the probability density function of a random variable. It involves placing a kernel, which is a smooth, symmetric function, at each data point.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2m-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row10_p2m-h1"
+        ],
+        "title": "Role of the Kernel",
+        "text": "The kernel is placed at each data point to smooth out the distribution. This helps in visualizing the density of data points across the range of values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p2m-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Every data point"
+        ],
+        "dependencies": [
+            "a1155e4row10_p2m-h2"
+        ],
+        "title": "Choosing the Correct Option for Blank A",
+        "text": "Where is the kernel placed in a KDE?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The minimum and maximum",
+            "Every data point",
+            "Some data points, depending on \\alpha",
+            "None of the above"
+        ]
+    }
+]

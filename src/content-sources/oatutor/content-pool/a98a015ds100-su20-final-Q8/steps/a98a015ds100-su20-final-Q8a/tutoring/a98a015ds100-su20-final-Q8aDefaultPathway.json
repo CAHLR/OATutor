@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a98a015ds100-su20-final-Q8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD Components",
+        "text": "Remember that the SVD of a matrix X is given by X=U*\u03a3*V**T. Each component has a specific role. Can you recall what U and $$V^T$$ represent in this decomposition?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-su20-final-Q8a-h1"
+        ],
+        "title": "Role of U and $$V^T$$",
+        "text": "U is the matrix of left singular vectors, and $$V^T$$ is the matrix of right singular vectors. These matrices are orthogonal. How might this property help in reconstructing the principal components?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-su20-final-Q8a-h2"
+        ],
+        "title": "Orthogonality and Reconstruction",
+        "text": "Since U and $$V^T$$ are orthogonal, they preserve the geometric structure of the data. Think about how you can use these matrices to transform X and extract meaningful information.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su20-final-Q8a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "They can be used to transform X to find principal components."
+        ],
+        "dependencies": [
+            "a98a015ds100-su20-final-Q8a-h3"
+        ],
+        "title": "Using U and $$V^T$$",
+        "text": "Given that U and $$V^T$$ are orthogonal, which of the following statements is true about their role in finding principal components?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "They can be used to transform X to find principal components.",
+            "They cannot be used without \u03a3.",
+            "They only provide information about the variance."
+        ]
+    }
+]

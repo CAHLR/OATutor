@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-final-Q5h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Zero-One Loss",
+        "text": "The zero-one loss function is different from cross-entropy loss because it considers both the model parameters and the threshold. Think about how changing the threshold might affect the accuracy of your predictions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5h-h1"
+        ],
+        "title": "Maximizing Accuracy",
+        "text": "When we talk about maximizing accuracy, we're looking at the proportion of correctly predicted labels. Consider how the choice of threshold T can influence whether predictions are classified correctly.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It changes the decision boundary, affecting which predictions are classified as $$1$$ or $$0$$."
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5h-h2"
+        ],
+        "title": "Threshold's Role in Accuracy",
+        "text": "How does adjusting the threshold T affect the accuracy of a binary classifier?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It changes the decision boundary, affecting which predictions are classified as $$1$$ or $$0$$.",
+            "It has no effect on the predictions.",
+            "It only affects the model's complexity."
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q5h-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Both beta and T"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q5h-h3"
+        ],
+        "title": "Parameters in Zero-One Loss",
+        "text": "Which parameters are involved in minimizing the zero-one loss?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Only beta",
+            "Only T",
+            "Both beta and T",
+            "Neither beta nor T"
+        ]
+    }
+]

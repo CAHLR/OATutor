@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a89b247ds100-sp21-final-Q12b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias in the Model",
+        "text": "Consider what happens when the model is trained with the true function. If the model perfectly captures the true function, what would the bias be?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp21-final-Q12b-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Variance in the Model",
+        "text": "Think about the role of the noise term epsilon in the model. How does the variance of epsilon affect the variance of the model's predictions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-sp21-final-Q12b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$bias=0$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp21-final-Q12b-h1"
+        ],
+        "title": "Analyzing Bias",
+        "text": "What is the bias of the model if it perfectly fits the true function?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$bias=0$$",
+            "$$bias=A$$",
+            "$$bias={\\sigma}^2$$"
+        ]
+    },
+    {
+        "id": "a89b247ds100-sp21-final-Q12b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$variance={\\sigma}^2$$"
+        ],
+        "dependencies": [
+            "a89b247ds100-sp21-final-Q12b-h2"
+        ],
+        "title": "Analyzing Variance",
+        "text": "How does the variance of the noise term epsilon affect the variance of the model's predictions?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$variance=0$$",
+            "$$variance=A$$",
+            "$$variance={\\sigma}^2$$"
+        ]
+    }
+]

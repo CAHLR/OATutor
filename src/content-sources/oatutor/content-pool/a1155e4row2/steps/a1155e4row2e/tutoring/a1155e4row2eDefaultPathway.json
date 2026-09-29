@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a1155e4row2e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bandwidth in KDE",
+        "text": "The bandwidth in a Kernel Density Estimate (KDE) controls the smoothness of the resulting plot. A larger bandwidth can cause the plot to appear smoother, potentially masking the true distribution of the data. Consider how this might affect a multimodal distribution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row2e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row2e-h1"
+        ],
+        "title": "Effect of Large Bandwidth",
+        "text": "When the bandwidth is too large, it can cause distinct peaks in the data to merge into a single peak, making a multimodal distribution appear unimodal. Think about how this could make a distribution look like a normal distribution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row2e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It becomes overly smooth, potentially hiding multiple peaks."
+        ],
+        "dependencies": [
+            "a1155e4row2e-h2"
+        ],
+        "title": "Identifying the Issue",
+        "text": "What happens to the appearance of a KDE plot when the bandwidth is too large?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It becomes overly smooth, potentially hiding multiple peaks.",
+            "It becomes too jagged, showing too many peaks.",
+            "It remains unchanged."
+        ]
+    }
+]

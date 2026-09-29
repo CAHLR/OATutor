@@ -1,0 +1,48 @@
+[
+    {
+        "id": "abf3684ds100-sp25-final-Q2i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting in models by adding a penalty term to the loss function. This penalty term is controlled by the parameter lambda. Think about how increasing or decreasing lambda might affect the penalty term and, consequently, the model complexity.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2i-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2i-h1"
+        ],
+        "title": "Effect of Lambda on Model Complexity",
+        "text": "Consider what happens to the penalty term when lambda is increased. Does it make the penalty term larger or smaller? How might this affect the model's parameters and its complexity?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-sp25-final-Q2i-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increasing lambda increases the regularization term, which can reduce model complexity by shrinking the parameters."
+        ],
+        "dependencies": [
+            "abf3684ds100-sp25-final-Q2i-h2"
+        ],
+        "title": "Exploring Lambda's Impact",
+        "text": "What happens to the regularization term when lambda is increased?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increasing lambda increases the regularization term, which can reduce model complexity by shrinking the parameters.",
+            "The effect depends on the choice of g(theta).",
+            "The regularization term decreases.",
+            "The regularization term increases.",
+            "The regularization term remains unchanged."
+        ]
+    }
+]

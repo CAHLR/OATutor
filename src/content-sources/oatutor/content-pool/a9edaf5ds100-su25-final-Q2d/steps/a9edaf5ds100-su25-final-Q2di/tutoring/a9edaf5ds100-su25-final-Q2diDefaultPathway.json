@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a9edaf5ds100-su25-final-Q2di-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Gradient Descent",
+        "text": "When using stochastic gradient descent, the estimated gradient is calculated using a subset of the data. How might this affect the accuracy of the gradient compared to using the entire dataset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su25-final-Q2di-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-su25-final-Q2di-h1"
+        ],
+        "title": "True Gradient vs. Estimated Gradient",
+        "text": "Consider how the true gradient is calculated. It involves the entire dataset, while the estimated gradient in stochastic gradient descent uses only a sample. What implications does this have for their equality?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su25-final-Q2di-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su25-final-Q2di-h2"
+        ],
+        "title": "Comparing Gradients",
+        "text": "Which of the following statements is true about the estimated gradient in stochastic gradient descent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "The estimated gradient is always equal to the true gradient",
+            "The estimated gradient is always greater than the true gradient",
+            "The estimated gradient is always less than the true gradient",
+            "The estimated gradient is an approximation of the true gradient"
+        ]
+    }
+]

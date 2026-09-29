@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a640c04S25M1Q1Db-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "Look at the DataFrame provided. Notice the columns: 'item', 'chain', 'address', 'price', 'inventory', and 'ranking'. Each row represents a different fruit at a specific store location.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04S25M1Q1Db-h2",
+        "type": "hint",
+        "dependencies": [
+            "a640c04S25M1Q1Db-h1"
+        ],
+        "title": "Filtering the DataFrame",
+        "text": "To filter the DataFrame for rows with at least $$150$$ bananas, consider using a condition that checks the 'item' and 'inventory' columns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04S25M1Q1Db-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$sort_{values}$$"
+        ],
+        "dependencies": [
+            "a640c04S25M1Q1Db-h2"
+        ],
+        "title": "Choosing the Correct Method",
+        "text": "Which method would you use to sort the DataFrame by price?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$sort_{index}$$",
+            "$$sort_{values}$$",
+            "$$order_{by}$$",
+            "nlargest",
+            "rank"
+        ]
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a9edaf5ds100-su21-final-Q4p-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bias and Variance",
+        "text": "When you decrease the bias of a model, it often means the model is fitting the training data more closely. Think about what happens to the model's flexibility and how it might affect its performance on new data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4p-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-su21-final-Q4p-h1"
+        ],
+        "title": "Tradeoff Between Bias and Variance",
+        "text": "Consider the bias-variance tradeoff. Reducing bias might lead to an increase in variance. What does this mean for the model's predictions on unseen data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su21-final-Q4p-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su21-final-Q4p-h2"
+        ],
+        "title": "Impact on Variance",
+        "text": "If the model's bias decreases, what is likely to happen to the variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

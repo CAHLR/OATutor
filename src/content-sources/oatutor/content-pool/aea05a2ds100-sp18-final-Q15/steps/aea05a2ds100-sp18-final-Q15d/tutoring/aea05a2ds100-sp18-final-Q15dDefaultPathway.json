@@ -1,0 +1,33 @@
+[
+    {
+        "id": "aea05a2ds100-sp18-final-Q15d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Distributed File Systems",
+        "text": "Think about how data is stored in a distributed file system. How does spreading data across multiple machines affect the speed of reading a large file compared to reading from a single drive?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp18-final-Q15d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp18-final-Q15d-h1"
+        ],
+        "title": "Comparing Read Speeds",
+        "text": "Consider the factors that influence read speeds in distributed systems. Which of the following statements is true?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

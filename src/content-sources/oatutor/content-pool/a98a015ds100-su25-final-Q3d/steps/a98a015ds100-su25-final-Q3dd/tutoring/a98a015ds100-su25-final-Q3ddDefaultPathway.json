@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a98a015ds100-su25-final-Q3dd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD and Variance",
+        "text": "In Singular Value Decomposition (SVD), the singular values in matrix S represent the importance of each principal component. The variance captured by each component is proportional to the square of its singular value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su25-final-Q3dd-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-su25-final-Q3dd-h1"
+        ],
+        "title": "Calculating Total Variance",
+        "text": "To find the total variance, you need to sum the squares of all singular values. This will give you the denominator for calculating the proportion of variance captured by each component.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-su25-final-Q3dd-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{8^2}{{100}^2+{88}^2+8^2}$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-su25-final-Q3dd-h2"
+        ],
+        "title": "Proportion of Variance for Third Component",
+        "text": "What is the formula to calculate the proportion of variance captured by the third principal component?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{8}{100+88+8}$$",
+            "$$\\frac{8^2}{{100}^2+{88}^2+8^2}$$",
+            "$$\\frac{{100}^2}{{100}^2+{88}^2+8^2}$$",
+            "$$\\frac{8^2}{\\left({100}^2+{88}^2+8^2\\right)^2}$$",
+            "$$\\frac{{100}^2+{88}^2}{{100}^2+{88}^2+8^2}$$"
+        ]
+    }
+]

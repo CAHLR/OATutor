@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1155e4row4h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bimodal Distribution",
+        "text": "A bimodal distribution has two distinct peaks. Look at the spread of weights for each shape. Do you see two separate clusters of weights for any shape?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row4h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row4h-h1"
+        ],
+        "title": "Mean Weight and Distribution",
+        "text": "The mean weight gives an average value, but it doesn't show how the weights are spread out. Consider whether a single average can indicate multiple peaks in the data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row4h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a1155e4row4h-h2"
+        ],
+        "title": "Analyzing the Plot",
+        "text": "Does the plot show two distinct clusters of weights for any nugget shape?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

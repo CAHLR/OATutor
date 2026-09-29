@@ -1,0 +1,78 @@
+[
+    {
+        "id": "a1bb75eds100-su21-final-Q6d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L0 Regularization",
+        "text": "L0 regularization limits the number of non-zero parameters in the model. Think about how this constraint affects the model's ability to fit the data. What happens when only one parameter can be non-zero?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q6d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Logistic Regression Basics",
+        "text": "In logistic regression, the output is a probability that a given input point belongs to a particular class. The logistic function, or sigmoid function, is used to map predicted values to probabilities. Remember that the sigmoid function is defined as $$\\frac{1}{1+e^{\\left(-z\\right)}}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q6d-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rounding Probabilities",
+        "text": "Once you have the predicted probabilities from the logistic regression model, you need to round them to the nearest whole number to make a classification decision. Consider how this rounding affects the classification of each data point.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q6d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "green"
+        ],
+        "dependencies": [],
+        "title": "Choosing the Non-Zero Parameter",
+        "text": "If you can only have one non-zero parameter, which color should you choose to minimize misclassification?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "blue",
+            "green",
+            "pink",
+            "purple",
+            "red"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q6d-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q6d-h4"
+        ],
+        "title": "Calculating Misclassifications",
+        "text": "After choosing the non-zero parameter, calculate how many data points are misclassified. Remember to round the predicted probabilities to the nearest whole number.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$1$$",
+            "$$2$$",
+            "$$3$$",
+            "$$5$$"
+        ]
+    }
+]

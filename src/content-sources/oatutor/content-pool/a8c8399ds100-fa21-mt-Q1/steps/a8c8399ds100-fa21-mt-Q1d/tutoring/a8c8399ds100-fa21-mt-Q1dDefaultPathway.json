@@ -1,0 +1,59 @@
+[
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "When you one-hot encode, each unique item in your data gets its own dimension. For example, if you have $$4$$ unique items, your encoding will have $$4$$ dimensions. Think about how many unique 6-letter combinations can be formed from the DNA letters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-fa21-mt-Q1d-h1"
+        ],
+        "title": "Calculating Unique Combinations",
+        "text": "Consider how many different letters are in the DNA alphabet. Then, think about how many different ways you can arrange these letters in a sequence of $$6$$. This will give you the number of unique 6-letter combinations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$4096$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa21-mt-Q1d-h2"
+        ],
+        "title": "Calculate the Number of Unique 6-Letter Combinations",
+        "text": "How many unique 6-letter combinations can be formed from the DNA letters T, G, C, and A?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$4096$$",
+            "$$64$$",
+            "$$256$$",
+            "$$1024$$"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1d-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-fa21-mt-Q1d-h3"
+        ],
+        "title": "Connecting to Dimensionality",
+        "text": "Once you know the number of unique 6-letter combinations, remember that each combination gets its own dimension in one-hot encoding. Multiply the number of combinations by the number of DNA strings to find the total dimensions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

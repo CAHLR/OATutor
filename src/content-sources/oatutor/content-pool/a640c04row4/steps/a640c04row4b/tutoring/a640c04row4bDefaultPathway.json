@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a640c04row4b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "Look at the DataFrame provided. Notice the columns and their data types. Which column would you use to filter nuggets by weight?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row4b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a640c04row4b-h1"
+        ],
+        "title": "Filtering the Data",
+        "text": "To find nuggets with weight less than $$0.6$$ ounces, consider how you would filter the DataFrame using a condition on the 'weight' column.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04row4b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "chain"
+        ],
+        "dependencies": [
+            "a640c04row4b-h2"
+        ],
+        "title": "Choosing the Correct Column",
+        "text": "Which column should you use to group the nuggets after filtering by weight?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "location",
+            "shape",
+            "chain",
+            "['chain']"
+        ]
+    }
+]

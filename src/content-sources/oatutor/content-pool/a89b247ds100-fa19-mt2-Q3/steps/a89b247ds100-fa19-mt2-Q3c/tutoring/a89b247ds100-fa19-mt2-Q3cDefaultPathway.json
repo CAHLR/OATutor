@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a89b247ds100-fa19-mt2-Q3c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Variance",
+        "text": "Model variance refers to how much the predictions of a model will change if we use a different training dataset. High variance can lead to overfitting. Consider how the complexity of the model might affect its variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa19-mt2-Q3c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-fa19-mt2-Q3c-h1"
+        ],
+        "title": "Role of Regularization",
+        "text": "Regularization techniques, such as Lasso or Ridge, can help control the complexity of a model. Think about how adjusting the regularization coefficient \\( \\lambda \\) might influence the model's variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa19-mt2-Q3c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa19-mt2-Q3c-h2"
+        ],
+        "title": "Impact of Regularization Coefficient",
+        "text": "Does increasing the regularization coefficient \\( \\lambda \\) generally increase or decrease model variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease"
+        ]
+    }
+]

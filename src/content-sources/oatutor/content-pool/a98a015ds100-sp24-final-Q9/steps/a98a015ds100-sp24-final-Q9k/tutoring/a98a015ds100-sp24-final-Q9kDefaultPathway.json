@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a98a015ds100-sp24-final-Q9k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Principal Components",
+        "text": "Principal components are orthogonal to each other. What does it mean for two vectors to be orthogonal?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9k-h1"
+        ],
+        "title": "Dot Product of Orthogonal Vectors",
+        "text": "The dot product of two orthogonal vectors is a specific value. Can you recall what that value is?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp24-final-Q9k-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp24-final-Q9k-h2"
+        ],
+        "title": "Evaluating the Dot Product",
+        "text": "If PC \\(\\alpha\\) and PC \\(\\beta\\) are orthogonal, what is the dot product of PC \\(\\alpha\\) and PC \\(\\beta\\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$1$$",
+            "$$48.42$$",
+            "$$36.31$$"
+        ]
+    }
+]

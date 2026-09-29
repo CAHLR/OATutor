@@ -1,0 +1,135 @@
+[
+    {
+        "id": "a640c04F25M1Q2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding GroupBy and Filter",
+        "text": "The `groupby` function in pandas is used to split the data into groups based on some criteria. The `filter` function is then applied to each group. In this case, the filter checks if the maximum value in column 'b' for each group is greater than $$4$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04F25M1Q2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a640c04F25M1Q2c-h1"
+        ],
+        "title": "Analyzing the Groups",
+        "text": "Look at the unique values in column 'a'. These will be the groups created by `groupby`. For each group, check the maximum value in column 'b'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04F25M1Q2c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "a640c04F25M1Q2c-h2"
+        ],
+        "title": "Checking Group 'bye'",
+        "text": "What is the maximum value of column 'b' for the group where 'a' is 'bye'?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$5$$",
+            "$$6$$",
+            "$$7$$",
+            "$$8$$",
+            "$$9$$"
+        ]
+    },
+    {
+        "id": "a640c04F25M1Q2c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "a640c04F25M1Q2c-h2"
+        ],
+        "title": "Checking Group 'hello'",
+        "text": "What is the maximum value of column 'b' for the group where 'a' is 'hello'?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$6$$",
+            "$$7$$",
+            "$$8$$",
+            "$$9$$",
+            "$$10$$"
+        ]
+    },
+    {
+        "id": "a640c04F25M1Q2c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a640c04F25M1Q2c-h2"
+        ],
+        "title": "Checking Group 'hi'",
+        "text": "What is the maximum value of column 'b' for the group where 'a' is 'hi'?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$3$$",
+            "$$4$$",
+            "$$5$$",
+            "$$6$$",
+            "$$7$$"
+        ]
+    },
+    {
+        "id": "a640c04F25M1Q2c-h6",
+        "type": "hint",
+        "dependencies": [
+            "a640c04F25M1Q2c-h5"
+        ],
+        "title": "Applying the Filter",
+        "text": "The filter keeps groups where the maximum value in column 'b' is greater than $$4$$. Which groups meet this condition?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04F25M1Q2c-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a640c04F25M1Q2c-h6"
+        ],
+        "title": "Counting the Rows",
+        "text": "How many rows are in the filtered DataFrame?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$3$$",
+            "$$4$$",
+            "$$5$$",
+            "$$6$$",
+            "$$7$$",
+            "$$8$$",
+            "$$9$$",
+            "NA"
+        ]
+    }
+]

@@ -1,0 +1,108 @@
+[
+    {
+        "id": "a1bb75eds100-su19-final-Q7f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Update Rule",
+        "text": "The update rule for logistic regression with L2 regularization is given by:\\n\\n$${\\theta}^{t+1}=\\left(1-2\\lambda\\right) {\\theta}^t+\\alpha \\left(y_i-\\operatorname{\\sigma}\\left(X_i {\\theta}^t\\right)\\right) X_i$$\\n\\nFocus on understanding each component of this equation. What does each term represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q7f-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q7f-h1"
+        ],
+        "title": "Exploring the Sigmoid Function",
+        "text": "The term $$\\operatorname{\\sigma}\\left(X_i {\\theta}^t\\right)$$ represents the sigmoid function, which is defined as:\\n\\n$$sigma(z)=\\frac{1}{1+exp\\left(-z\\right)}$$\\n\\nTry calculating sigma for a given value of $$z$$. How does this affect the update rule?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q7f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q7f-h1"
+        ],
+        "title": "Effect of Regularization",
+        "text": "The term $$\\left(1-2\\lambda\\right) {\\theta}^t$$ is influenced by the regularization parameter lambda. Consider how different values of lambda (positive, zero, negative) might affect the update of theta.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q7f-s1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "sigma(5)"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q7f-h2"
+        ],
+        "title": "Calculating the Sigmoid Value",
+        "text": "Given $$X_i=5$$ and $${\\theta}^t=1$$, calculate $$\\operatorname{\\sigma}\\left(X_i {\\theta}^t\\right)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0.0067$$",
+            "$$0.5$$",
+            "$$0.9933$$",
+            "Need Info",
+            "sigma(5)"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q7f-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-sigma(5)$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q7f-s1"
+        ],
+        "title": "Determining the Update Impact",
+        "text": "With $$y_i=0$$, what is the value of $$y_i-\\operatorname{\\sigma}\\left(X_i {\\theta}^t\\right)$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-sigma(5)$$",
+            "$$-0.9933$$",
+            "$$0$$",
+            "$$0.9933$$",
+            "Need Info"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q7f-s3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Need Info"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q7f-s2"
+        ],
+        "title": "Finding the Most Positive Update",
+        "text": "Consider the effect of alpha on the update rule. Which value of alpha will make $${\\theta}^{t+1}$$ the most positive?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-1$$",
+            "$$0$$",
+            "$$1$$",
+            "Tie",
+            "Need Info"
+        ]
+    }
+]

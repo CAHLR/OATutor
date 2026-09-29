@@ -1,0 +1,35 @@
+[
+    {
+        "id": "a1155e4row5_p1h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Overlaid Histograms",
+        "text": "Overlaid histograms are useful for comparing the distribution of a single variable across different groups. Consider whether this is suitable for visualizing the relationship between two continuous variables like $$oh_{tickets}$$ and $$ed_{hours}$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p1h-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Scatter plot"
+        ],
+        "dependencies": [
+            "a1155e4row5_p1h-h1"
+        ],
+        "title": "Choosing the Right Plot Type",
+        "text": "Which plot type is typically used to visualize the relationship between two continuous variables?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Scatter plot",
+            "Bar chart",
+            "Pie chart",
+            "Overlaid histograms"
+        ]
+    }
+]

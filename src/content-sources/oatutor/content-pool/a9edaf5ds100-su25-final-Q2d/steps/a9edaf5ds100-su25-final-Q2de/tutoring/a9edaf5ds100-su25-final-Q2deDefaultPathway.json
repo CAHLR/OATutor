@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a9edaf5ds100-su25-final-Q2de-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Cross Validation",
+        "text": "In 7-fold cross-validation, the dataset is divided into $$7$$ parts. Each part is used as a validation set once, while the remaining $$6$$ parts are used for training. How many times does each data point appear in the training set?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su25-final-Q2de-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring Hyperparameter Combinations",
+        "text": "Milena is testing $$2$$ values of lambda and $$5$$ values of rho. How many different combinations of lambda and rho does she need to test?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su25-final-Q2de-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$70$$"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su25-final-Q2de-h2"
+        ],
+        "title": "Calculating Total Model Fits",
+        "text": "Consider the number of hyperparameter combinations and the number of cross-validation folds. How many total model fits will Milena perform?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$60$$",
+            "$$70$$",
+            "$$42$$",
+            "$$30$$",
+            "$$84$$"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-su25-final-Q2de-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-su25-final-Q2de-h3"
+        ],
+        "title": "Data Point Usage in Model Fitting",
+        "text": "Each data point is used in the training set for $$6$$ out of the $$7$$ folds. Given the total number of model fits, how many times is each data point used to fit a model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

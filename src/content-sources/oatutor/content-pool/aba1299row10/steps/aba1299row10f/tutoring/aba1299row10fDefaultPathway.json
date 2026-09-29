@@ -1,0 +1,80 @@
+[
+    {
+        "id": "aba1299row10f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE",
+        "text": "Mean Squared Error (MSE) is a common measure of the quality of an estimator. It is calculated as the average of the squares of the errors\u2014that is, the average squared difference between the estimated values and the actual value.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10f-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Checking for Unique Solutions",
+        "text": "To determine if there is a unique solution for the parameters, consider the design matrix formed by the features. If this matrix is full rank, then a unique solution exists. What does it mean for a matrix to be full rank?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "All columns are linearly independent"
+        ],
+        "dependencies": [
+            "aba1299row10f-h2"
+        ],
+        "title": "Matrix Rank",
+        "text": "What does it mean for a matrix to be full rank?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "All columns are linearly independent",
+            "All rows are linearly dependent",
+            "The determinant is zero",
+            "The matrix is square"
+        ]
+    },
+    {
+        "id": "aba1299row10f-h4",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row10f-h3"
+        ],
+        "title": "Linear Independence",
+        "text": "If the columns of the design matrix are linearly independent, it means no column can be written as a linear combination of the others. This is crucial for ensuring a unique solution.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10f-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The determinant is $$non-zero$$"
+        ],
+        "dependencies": [
+            "aba1299row10f-h4"
+        ],
+        "title": "Checking Linear Independence",
+        "text": "How can you check if the columns of a matrix are linearly independent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The determinant is $$non-zero$$",
+            "The determinant is zero",
+            "The matrix is symmetric",
+            "The matrix is diagonal"
+        ]
+    }
+]

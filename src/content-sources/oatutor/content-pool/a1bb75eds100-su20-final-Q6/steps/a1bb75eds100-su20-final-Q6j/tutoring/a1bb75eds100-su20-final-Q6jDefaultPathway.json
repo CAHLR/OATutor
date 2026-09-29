@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a1bb75eds100-su20-final-Q6j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding GroupBy and Filter",
+        "text": "To solve this problem, you need to group the DataFrame by the manufacturer column. This will allow you to perform operations on each group separately. Think about how you can use the filter function to keep only those groups where all consoles have sold at least $$10$$ million units.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6j-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su20-final-Q6j-h1"
+        ],
+        "title": "Using the Filter Function",
+        "text": "The filter function is useful when you want to keep groups that meet a certain condition. In this case, you want to keep groups where the minimum sales value is at least $$10$$ million. Consider how you can use a lambda function to express this condition.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6j-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "consoles.groupby(\"manufacturer\").filter(lambda x: $$min(x[\"sales\"]) \\geq 10)$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su20-final-Q6j-h2"
+        ],
+        "title": "Choosing the Right Aggregation Function",
+        "text": "Which aggregation function would you use to ensure that all consoles from a manufacturer have sold at least $$10$$ million units?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "consoles.groupby(\"manufacturer\").filter(lambda x: $$max(x[\"sales\"]) \\geq 10)$$",
+            "consoles.groupby(\"manufacturer\").filter(lambda x: $$sum(x[\"sales\"]) \\geq 10)$$",
+            "consoles.groupby(\"manufacturer\").filter(lambda x: $$min(x[\"sales\"]) \\geq 10)$$",
+            "consoles.groupby(\"manufacturer\").agg(lambda x: $$min(x[\"sales\"]) \\geq 10)$$",
+            "$$consoles[consoles[\"sales\"] \\geq 10]$$"
+        ]
+    }
+]

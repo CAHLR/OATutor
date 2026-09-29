@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a92ac99ds100-fa17-mt-Q27d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrapping",
+        "text": "Bootstrapping involves resampling with replacement from a sample to create many simulated samples. This helps estimate the sampling distribution of a statistic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-mt-Q27d-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choosing the Correct Function",
+        "text": "When calculating a statistic like the median, think about which function in Python or Pandas would be appropriate to use.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-mt-Q27d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "median"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-mt-Q27d-h2"
+        ],
+        "title": "Selecting the Statistic",
+        "text": "Which function would you use to calculate the median of a dataset in Pandas?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "mean",
+            "median",
+            "sum",
+            "quantile",
+            "sample"
+        ]
+    }
+]

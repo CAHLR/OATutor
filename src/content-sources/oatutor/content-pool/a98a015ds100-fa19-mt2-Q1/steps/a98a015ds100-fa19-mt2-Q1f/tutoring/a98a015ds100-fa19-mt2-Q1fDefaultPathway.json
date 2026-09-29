@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding PCA Components",
+        "text": "In PCA, the matrix U represents the eigenvectors of the covariance matrix, and \u03a3 is a diagonal matrix with eigenvalues. Think about how these matrices interact when multiplied.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1f-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa19-mt2-Q1f-h1"
+        ],
+        "title": "Matrix Multiplication",
+        "text": "Consider the properties of matrix multiplication. What happens when you multiply a matrix of eigenvectors by a diagonal matrix of eigenvalues?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1f-h3",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa19-mt2-Q1f-h2"
+        ],
+        "title": "Interpreting U\u03a3",
+        "text": "The product U\u03a3 transforms the data into a new space defined by the principal components. This transformation is crucial for dimensionality reduction.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,78 @@
+[
+    {
+        "id": "abf3684ds100-fa23-final-Q2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Model",
+        "text": "Let's start by breaking down Tina's model: \\( \\hat{y}=2\\theta_0+\\theta_0**{4}\\theta_1x-e**{2\\theta_1}x**{2} \\). Notice how each term involves \\( $$\\theta_0$$ \\) and \\( $$\\theta_1$$ \\). Think about how changes in these parameters affect the model's output.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa23-final-Q2a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Mean Squared Error (MSE)",
+        "text": "The Mean Squared Error is calculated as \\( L=\\frac{1}{n}\\sum_{i=1}**{n}(y_i-\\hat{y_i})**2 \\). Consider how \\( \\hat{y} \\) is defined in Tina's model and how it affects the MSE.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa23-final-Q2a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Gradient Vector",
+        "text": "The gradient vector \\( \\frac{\\partial{L}}{\\partial{\\theta}} \\) involves partial derivatives of the loss function with respect to \\( $$\\theta_0$$ \\) and \\( $$\\theta_1$$ \\). Focus on how each term in \\( \\hat{y} \\) contributes to these derivatives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-fa23-final-Q2a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-2-4{\\theta_0}^3 \\theta_1 x_i$$"
+        ],
+        "dependencies": [
+            "abf3684ds100-fa23-final-Q2a-h3"
+        ],
+        "title": "Partial Derivative with Respect to \\( $$\\theta_0$$ \\)",
+        "text": "Consider the term \\( 2\\theta_0 \\) in \\( \\hat{y} \\). What is the partial derivative of \\( L \\) with respect to \\( $$\\theta_0$$ \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-2-4{\\theta_0}^3 \\theta_1 x_i$$",
+            "$$2+4{\\theta_0}^3 \\theta_1 x_i$$",
+            "$$-4{\\theta_0}^3 \\theta_1 x_i$$",
+            "$$4{\\theta_0}^3 \\theta_1 x_i$$"
+        ]
+    },
+    {
+        "id": "abf3684ds100-fa23-final-Q2a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-{\\theta_0}^4 x_i+2e^{2\\theta_1} {x_i}^2$$"
+        ],
+        "dependencies": [
+            "abf3684ds100-fa23-final-Q2a-h3"
+        ],
+        "title": "Partial Derivative with Respect to \\( $$\\theta_1$$ \\)",
+        "text": "Now, consider the term \\( \\theta_0**{4}\\theta_1x \\) in \\( \\hat{y} \\). What is the partial derivative of \\( L \\) with respect to \\( $$\\theta_1$$ \\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-{\\theta_0}^4 x_i+2e^{2\\theta_1} {x_i}^2$$",
+            "$${\\theta_0}^4 x_i-2e^{2\\theta_1} {x_i}^2$$",
+            "$$2e^{2\\theta_1} x_i$$",
+            "$$-2e^{2\\theta_1} x_i$$"
+        ]
+    }
+]

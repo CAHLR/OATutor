@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1k-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Instability",
+        "text": "When a model's validation accuracy is unstable, it often indicates that the model is sensitive to the specific data it was trained on. This can happen if the model is overfitting or if the dataset is not representative enough. Consider methods that help in assessing the model's performance across different subsets of data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1k-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1k-h1"
+        ],
+        "title": "Exploring Cross-Validation",
+        "text": "Cross-validation is a technique that involves dividing the dataset into multiple parts and training the model on different combinations of these parts. This helps in getting a more reliable estimate of the model's performance. Think about how this could help in stabilizing the validation accuracy.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1k-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Use cross validation."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1k-h2"
+        ],
+        "title": "Choosing the Right Approach",
+        "text": "Which of the following methods can help in reducing the instability of validation accuracy by providing a more comprehensive evaluation of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Retrain with more data in the training set allocated to the validation set.",
+            "Retrain with more data in the validation set allocated to the training set.",
+            "Add more features to the dataset, to increase model complexity.",
+            "Use cross validation."
+        ]
+    }
+]

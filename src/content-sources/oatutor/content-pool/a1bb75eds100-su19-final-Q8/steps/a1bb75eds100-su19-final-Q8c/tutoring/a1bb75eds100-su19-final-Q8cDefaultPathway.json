@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a1bb75eds100-su19-final-Q8c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding ROC Curves",
+        "text": "ROC curves plot the true positive rate against the false positive rate. A random classifier would produce a diagonal line from $$(0,0)$$ to $$(1,1)$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q8c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q8c-h1"
+        ],
+        "title": "Interpreting ROC B",
+        "text": "Consider what a random classifier's ROC curve would look like. How does ROC B compare to this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q8c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "ROC B"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q8c-h2"
+        ],
+        "title": "Choosing the Correct ROC Curve",
+        "text": "Which ROC curve represents a random classifier?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "ROC A",
+            "ROC B",
+            "ROC C"
+        ]
+    }
+]

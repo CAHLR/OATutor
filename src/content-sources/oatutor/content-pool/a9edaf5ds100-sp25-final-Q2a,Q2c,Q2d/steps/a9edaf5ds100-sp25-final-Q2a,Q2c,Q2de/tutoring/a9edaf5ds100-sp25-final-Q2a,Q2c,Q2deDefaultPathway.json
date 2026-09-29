@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2de-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding L1 Regularization",
+        "text": "L1 regularization, also known as Lasso, adds a penalty equal to the absolute value of the magnitude of coefficients to the loss function. This can lead to some coefficients being exactly zero, which helps in feature selection.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2de-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2de-h1"
+        ],
+        "title": "Uniqueness of Solutions",
+        "text": "For a solution to be unique in a linear regression model, the design matrix must have full column rank. Consider how L1 regularization affects the rank of the matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2de-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The design matrix must have full column rank."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2de-h2"
+        ],
+        "title": "Checking Matrix Rank",
+        "text": "What condition must the design matrix satisfy for the solution to be unique?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The design matrix must have full column rank.",
+            "The design matrix must be square.",
+            "The design matrix must be symmetric."
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2de-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It can set some coefficients to zero."
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp25-final-Q2a,Q2c,Q2de-h1"
+        ],
+        "title": "Effect of L1 Regularization",
+        "text": "How does L1 regularization affect the coefficients in a linear model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It can set some coefficients to zero.",
+            "It increases all coefficients equally.",
+            "It decreases all coefficients equally."
+        ]
+    }
+]

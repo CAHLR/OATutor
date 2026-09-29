@@ -1,0 +1,83 @@
+[
+    {
+        "id": "a1bb75eds100-su20-final-Q6d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Code",
+        "text": "The code is trying to filter consoles released before the year $$2000$$ and then group them by generation. Think about what happens when you group by a column and then sum the values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su20-final-Q6d-h1"
+        ],
+        "title": "Grouping and Summing",
+        "text": "When you use groupby on a DataFrame and then apply sum, it sums up all numeric columns for each group. Consider what happens to non-numeric columns like 'name'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It does not sum the 'name' column as it is $$non-numeric$$."
+        ],
+        "dependencies": [
+            "a1bb75eds100-su20-final-Q6d-h2"
+        ],
+        "title": "Checking the Grouping",
+        "text": "What does the groupby('generation').sum() operation do to the 'name' column?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It sums the 'name' column",
+            "It ignores the 'name' column",
+            "It concatenates the 'name' column",
+            "It does not sum the 'name' column as it is $$non-numeric$$."
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6d-h4",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su20-final-Q6d-h3"
+        ],
+        "title": "Accessing Data with loc",
+        "text": "The loc method is used to access a group of rows and columns by labels or a boolean array. Consider what loc[6] is trying to access after the groupby operation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-final-Q6d-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It attempts to access the row corresponding to generation $$6$$."
+        ],
+        "dependencies": [
+            "a1bb75eds100-su20-final-Q6d-h4"
+        ],
+        "title": "Understanding loc[6]",
+        "text": "What does loc[6] attempt to access in the DataFrame after grouping by 'generation'?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It accesses the first row",
+            "It accesses the last row",
+            "It accesses the row corresponding to generation $$6$$",
+            "It accesses the row with the highest sales.",
+            "It attempts to access the row corresponding to generation $$6$$."
+        ]
+    }
+]

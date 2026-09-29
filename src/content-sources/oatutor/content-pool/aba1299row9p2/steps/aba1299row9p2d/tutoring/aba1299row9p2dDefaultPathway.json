@@ -1,0 +1,67 @@
+[
+    {
+        "id": "aba1299row9p2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Variable Types",
+        "text": "Look at the data types in the table. \"Dis\" and \"Goals\" are numerical, while \"League\" is categorical. Consider what \"qualitative nominal\" means in this context.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row9p2d-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "League"
+        ],
+        "dependencies": [
+            "aba1299row9p2d-h1"
+        ],
+        "title": "Identifying Qualitative Nominal Variables",
+        "text": "Which column in the table represents a qualitative nominal variable?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Dis",
+            "League",
+            "Goals"
+        ]
+    },
+    {
+        "id": "aba1299row9p2d-h3",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row9p2d-h2"
+        ],
+        "title": "Defining Qualitative Nominal",
+        "text": "Qualitative nominal variables are categories without a specific order. Think about which column fits this description.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row9p2d-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "aba1299row9p2d-h3"
+        ],
+        "title": "Checking for Qualitative Nominal",
+        "text": "Does the \"League\" column fit the definition of a qualitative nominal variable?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

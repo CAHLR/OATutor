@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Data",
+        "text": "The table shows the time spent by a visitor at different exhibits. Each column represents an exhibit, and the values are the time spent in minutes. Consider how this data might be used in a matrix operation.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa19-mt2-Q1i-h1"
+        ],
+        "title": "Matrix Representation",
+        "text": "Think of the data as a matrix where each row is a visitor and each column is an exhibit. How might this matrix be used in a PCA operation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1i-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The matrix of visitor data"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa19-mt2-Q1i-h2"
+        ],
+        "title": "Matrix Multiplication",
+        "text": "Consider the expression $XV$. What does $X$ represent in this context?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The matrix of visitor data",
+            "The matrix of exhibit names",
+            "The matrix of PCA components",
+            "The matrix of time differences"
+        ]
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1i-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "The matrix of PCA components"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa19-mt2-Q1i-h3"
+        ],
+        "title": "Understanding $V$",
+        "text": "In the expression $XV$, what does $V$ represent?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "The matrix of visitor data",
+            "The matrix of exhibit names",
+            "The matrix of PCA components",
+            "The matrix of time differences"
+        ]
+    }
+]

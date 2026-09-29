@@ -1,0 +1,130 @@
+[
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Model Bias",
+        "text": "When you add a new feature to a model, especially one that is a transformation of an existing feature, think about how it might help the model capture more of the underlying pattern in the data. This can potentially reduce the model's bias. Can you think of why this might be the case?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6b-h1"
+        ],
+        "title": "Effect on Model Bias",
+        "text": "What is a possible effect on the model bias when adding a new feature that is the square of an existing feature?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6b-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring Model Variance",
+        "text": "Adding a new feature can increase the complexity of the model. Consider how this might affect the model's variance. Does a more complex model tend to have higher or lower variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6b-h3"
+        ],
+        "title": "Effect on Model Variance",
+        "text": "What is a possible effect on the model variance when adding a new feature that is the square of an existing feature?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6b-h5",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Training Data MSE",
+        "text": "Consider how adding a new feature might affect the model's ability to fit the training data. Does it generally make the model fit better or worse?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6b-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6b-h5"
+        ],
+        "title": "Effect on Training Data MSE",
+        "text": "What is a possible effect on the MSE on the training data when adding a new feature that is the square of an existing feature?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6b-h7",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Test Data MSE",
+        "text": "Think about how adding a new feature might affect the model's performance on unseen data. Does it always improve the model's generalization ability?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6b-h8",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Both"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6b-h7"
+        ],
+        "title": "Effect on Test Data MSE",
+        "text": "What is a possible effect on the MSE on held-out test data when adding a new feature that is the square of an existing feature?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    }
+]

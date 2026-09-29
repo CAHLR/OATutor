@@ -1,0 +1,76 @@
+[
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE on Test Data",
+        "text": "When you remove a feature from a model, think about how it might affect the model's ability to generalize to new data. Consider how the model's complexity changes and how that might impact the error on unseen data.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6o-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6o-h1"
+        ],
+        "title": "Effect of Feature Removal on Complexity",
+        "text": "How does removing a feature affect the complexity of the model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6o-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Improve"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6o-h2"
+        ],
+        "title": "Complexity and Generalization",
+        "text": "If a model becomes less complex, how might that affect its ability to generalize to new data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Improve",
+            "Worsen"
+        ]
+    },
+    {
+        "id": "a89b247ds100-fa25-mt2-Q6o-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Decrease"
+        ],
+        "dependencies": [
+            "a89b247ds100-fa25-mt2-Q6o-h3"
+        ],
+        "title": "Possible Effects on Test MSE",
+        "text": "Given that removing a feature can decrease complexity and potentially improve generalization, what are the possible effects on the MSE of held-out test data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase",
+            "Decrease",
+            "Both"
+        ]
+    }
+]

@@ -1,0 +1,33 @@
+[
+    {
+        "id": "aea05a2ds100-fa24-final-Q8l-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Silhouette Scores",
+        "text": "A silhouette score measures how similar a data point is to its own cluster compared to other clusters. Think about what it means for a point to be far from other points in its cluster.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-fa24-final-Q8l-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aea05a2ds100-fa24-final-Q8l-h1"
+        ],
+        "title": "Silhouette Score Calculation",
+        "text": "If a data point is far from other points in its cluster, would its silhouette score be high or low?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "id": "aba1299row1_part2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Update Rule",
+        "text": "To find the next value of theta, use the update rule for gradient descent: \\(\\theta**{(t+1)} $$=$$ \\theta**{(t)} - \\alpha \\cdot \\frac{d}{d\\theta}L(\\theta**{(t)})\\).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1_part2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row1_part2c-h1"
+        ],
+        "title": "Substitute Known Values",
+        "text": "You know \\(\\theta**{(1)} $$=$$ 11\\), \\(\\alpha $$=$$ 1\\), and \\(\\frac{d}{d\\theta}L(\\theta**{(1)}) $$=$$ 4\\). Substitute these into the update rule.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row1_part2c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$7$$"
+        ],
+        "dependencies": [
+            "aba1299row1_part2c-h2"
+        ],
+        "title": "Calculate the Update",
+        "text": "What is \\(\\theta**{(2)}\\) if \\(\\theta**{(1)} $$=$$ 11\\), \\(\\alpha $$=$$ 1\\), and \\(\\frac{d}{d\\theta}L(\\theta**{(1)}) $$=$$ 4\\)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$7$$",
+            ">15",
+            ">5",
+            ">9"
+        ]
+    }
+]

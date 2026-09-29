@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a1155e4row5_p2d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Selection Bias",
+        "text": "Selection bias occurs when the sample collected is not representative of the population intended to be analyzed. Think about how Rachel's method of inviting students might influence who chooses to participate.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p2d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row5_p2d-h1"
+        ],
+        "title": "Consider the Incentive",
+        "text": "Rachel offers extra credit as an incentive. Consider how this might affect the type of students who decide to take the survey. Are they likely to be a specific group?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row5_p2d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Selection bias"
+        ],
+        "dependencies": [
+            "a1155e4row5_p2d-h2"
+        ],
+        "title": "Evaluating the Sampling Method",
+        "text": "Which of the following could be a potential issue with Rachel's sampling method?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Selection bias",
+            "Random sampling",
+            "Stratified sampling",
+            "Cluster sampling"
+        ]
+    }
+]

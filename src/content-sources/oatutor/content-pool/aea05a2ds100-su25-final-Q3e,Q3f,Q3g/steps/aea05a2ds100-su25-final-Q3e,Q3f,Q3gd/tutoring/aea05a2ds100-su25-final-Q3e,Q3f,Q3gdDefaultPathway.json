@@ -1,0 +1,45 @@
+[
+    {
+        "id": "aea05a2ds100-su25-final-Q3e,Q3f,Q3gd-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Agglomerative Clustering",
+        "text": "Agglomerative clustering is a type of hierarchical clustering. It starts with each data point as its own cluster and merges them step by step. Consider how the merging process might affect the final outcome if the parameters remain unchanged.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-su25-final-Q3e,Q3f,Q3gd-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-su25-final-Q3e,Q3f,Q3gd-h1"
+        ],
+        "title": "Parameters in Clustering",
+        "text": "Think about what parameters are involved in agglomerative clustering. If these parameters are consistent, how might that influence the clustering process?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-su25-final-Q3e,Q3f,Q3gd-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "aea05a2ds100-su25-final-Q3e,Q3f,Q3gd-h2"
+        ],
+        "title": "Exploring Consistency in Clustering",
+        "text": "If you run agglomerative clustering multiple times with the same data and parameters, what do you expect the outcome to be?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,85 @@
+[
+    {
+        "id": "a98a015ds100-sp25-final-Q4a,Q4bf-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding SVD",
+        "text": "In Singular Value Decomposition (SVD), the matrix S contains the singular values. These values are related to the variance captured by each principal component. The larger the singular value, the more variance that component captures.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp25-final-Q4a,Q4bf-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp25-final-Q4a,Q4bf-h1"
+        ],
+        "title": "Calculating Total Variance",
+        "text": "To find the total variance, sum the squares of the singular values in the matrix S. This will give you the total variance captured by all principal components.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp25-final-Q4a,Q4bf-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$104.01$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp25-final-Q4a,Q4bf-h2"
+        ],
+        "title": "Finding Total Variance",
+        "text": "What is the total variance captured by all principal components?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$104.01$$",
+            "$$100$$",
+            "$$104$$",
+            "$$104.01$$",
+            "$$12.1$$",
+            "$$6$$"
+        ]
+    },
+    {
+        "id": "a98a015ds100-sp25-final-Q4a,Q4bf-h4",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-sp25-final-Q4a,Q4bf-h3"
+        ],
+        "title": "Proportion of Variance for PC1",
+        "text": "The proportion of variance captured by PC1 is the square of the first singular value divided by the total variance. Use the singular value from the first row of S.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-sp25-final-Q4a,Q4bf-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{100}{104.01}$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-sp25-final-Q4a,Q4bf-h4"
+        ],
+        "title": "Calculating Proportion for PC1",
+        "text": "What is the proportion of the total variance captured by PC1?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{10}{12.1}$$",
+            "$$\\frac{100}{104.01}$$",
+            "$$\\frac{100}{6}$$",
+            "$$\\frac{4}{104.01}$$",
+            "$$\\frac{104.01}{100}$$"
+        ]
+    }
+]

@@ -1,0 +1,83 @@
+[
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "When you one-hot encode, each unique item in your data gets its own dimension. For example, if you have $$4$$ unique items, you'll have $$4$$ dimensions. Think about how many unique 6-letter combinations can be formed from the letters T, G, C, and A.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1d-h1"
+        ],
+        "title": "Calculating Combinations",
+        "text": "Consider how many different ways you can arrange $$6$$ letters where each letter can be T, G, C, or A. This will give you the number of unique 6-letter combinations.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{1911}{3}$$"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1d-h2"
+        ],
+        "title": "Calculate the Number of 6-Letter Combinations",
+        "text": "How many unique 6-letter combinations can be formed using the letters T, G, C, and A?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1024$$",
+            "$$\\frac{1911}{3}$$",
+            "$$256$$",
+            "$$4096$$",
+            "$$64$$"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1d-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1d-h3"
+        ],
+        "title": "Connecting Combinations to Dimensions",
+        "text": "Each unique 6-letter combination corresponds to a dimension in your one-hot encoding. If you know the number of unique combinations, you know the number of dimensions.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1d-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2048000$$"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1d-h4"
+        ],
+        "title": "Determine the Total Dimensions",
+        "text": "If each DNA string is $$3000$$ letters long, how many 6-letter combinations can you extract from it?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$2048000$$",
+            "$$64000$$",
+            "$$500$$",
+            "$$64$$"
+        ]
+    }
+]

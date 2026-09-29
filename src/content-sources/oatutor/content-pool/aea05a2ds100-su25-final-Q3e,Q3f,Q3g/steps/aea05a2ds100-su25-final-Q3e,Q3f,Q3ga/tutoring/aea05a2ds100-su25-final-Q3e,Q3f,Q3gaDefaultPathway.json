@@ -1,0 +1,48 @@
+[
+    {
+        "id": "aea05a2ds100-su25-final-Q3e,Q3f,Q3ga-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding K-Means Clustering",
+        "text": "K-Means clustering aims to partition the data into K clusters by minimizing the variance within each cluster. The centroids are recalculated until they stabilize. Consider how the points might be grouped based on their proximity to these centroids.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-su25-final-Q3e,Q3f,Q3ga-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-su25-final-Q3e,Q3f,Q3ga-h1"
+        ],
+        "title": "Initial Centroid Placement",
+        "text": "Look at the initial placement of the centroids in the second image. How might the points be reassigned to the nearest centroid? This reassignment is crucial for the next step in the K-Means algorithm.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-su25-final-Q3e,Q3f,Q3ga-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "One cluster contains the two upper left points, one cluster contains the single right hand point, and one cluster contains the two lower points."
+        ],
+        "dependencies": [
+            "aea05a2ds100-su25-final-Q3e,Q3f,Q3ga-h2"
+        ],
+        "title": "Reassigning Points to Centroids",
+        "text": "After the initial assignment, which points are closest to each centroid?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "One cluster contains the two upper left points, one cluster contains the single right hand point, and one cluster contains the two lower points.",
+            "Each of the three initial centroids keeps exactly the point it started on, and the remaining two points are left unassigned.",
+            "One cluster contains all three upper points, one cluster contains the two lower points, and one cluster remains empty.",
+            "One cluster contains one upper left point, one cluster contains the other upper left point, and one cluster contains the remaining three points.",
+            "The algorithm does not converge, so the clusters keep changing with every iteration."
+        ]
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a72a45crow10_p1m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Deterministic Sampling",
+        "text": "Think about what makes a sampling method deterministic. Does it involve a fixed rule or pattern that doesn't change?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow10_p1m-h2",
+        "type": "hint",
+        "dependencies": [
+            "a72a45crow10_p1m-h1"
+        ],
+        "title": "Random Selection",
+        "text": "Consider the role of randomness in the sampling method proposed by Zekai. How does selecting a student randomly from each group of seven affect the predictability of the sample?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow10_p1m-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a72a45crow10_p1m-h2"
+        ],
+        "title": "Evaluating the Sampling Scheme",
+        "text": "Which of the following best describes the sampling method proposed by Zekai?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Cluster",
+            "Deterministic",
+            "FALSE",
+            "Random",
+            "Systematic"
+        ]
+    }
+]

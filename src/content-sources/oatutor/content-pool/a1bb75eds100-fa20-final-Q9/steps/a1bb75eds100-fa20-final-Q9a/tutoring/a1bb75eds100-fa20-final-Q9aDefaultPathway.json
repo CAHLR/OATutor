@@ -1,0 +1,64 @@
+[
+    {
+        "id": "a1bb75eds100-fa20-final-Q9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatter Plot",
+        "text": "Look at how the data points are distributed in relation to the hue and abv axes. Consider how the separation of the two types of wine might influence the sign of the weight for the hue feature.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Analyzing Feature Influence",
+        "text": "Think about how each feature (hue and abv) contributes to distinguishing between the two types of wine. Which feature seems to have a clearer separation between the two types?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "abv"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9a-h1"
+        ],
+        "title": "Feature Correlation",
+        "text": "Based on the scatter plot, which feature appears to have a stronger correlation with the wine type?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "hue",
+            "abv"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa20-final-Q9a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Positive"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa20-final-Q9a-h3"
+        ],
+        "title": "Sign of the Weight",
+        "text": "If a feature has a positive correlation with the target variable, what sign would you expect its weight to have in the logistic regression model?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Positive",
+            "Negative"
+        ]
+    }
+]

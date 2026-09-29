@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a1155e4row10_p1d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Missing Values",
+        "text": "When dealing with missing values, it's important to consider the nature of the data. For instance, player IDs are unique identifiers. What might be the implications of replacing missing IDs with an average value?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p1d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row10_p1d-h1"
+        ],
+        "title": "Imputation Methods",
+        "text": "Think about what each imputation method does. Imputing with the mean replaces missing values with the average of the column. Is this meaningful for unique identifiers like player IDs?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row10_p1d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Imputing with the mean of the column."
+        ],
+        "dependencies": [
+            "a1155e4row10_p1d-h2"
+        ],
+        "title": "Evaluating Options",
+        "text": "Which method below is NEVER appropriate to deal with missing values in $$player_{id}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Keeping it as is (don\u2019t do anything).",
+            "Removing rows with missing values.",
+            "Imputing with the mean of the column.",
+            "Imputing with the mode of the column.",
+            "Interpolating the missing values."
+        ]
+    }
+]

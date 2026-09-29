@@ -1,0 +1,70 @@
+[
+    {
+        "id": "aea05a2ds100-sp25-final-Q4c,Q4df-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding K-Means Convergence",
+        "text": "K-Means clustering is an iterative algorithm that aims to partition data into k clusters. It minimizes the variance within each cluster. However, consider the nature of the algorithm and how it updates centroids. What might affect its ability to find the global optimum?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp25-final-Q4c,Q4df-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp25-final-Q4c,Q4df-h1"
+        ],
+        "title": "Exploring K-Means Convergence",
+        "text": "Which of the following statements is true about K-Means clustering?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "$$K-Means$$ always finds the global optimum",
+            "$$K-Means$$ can converge to a local optimum",
+            "$$K-Means$$ never converges"
+        ]
+    },
+    {
+        "id": "aea05a2ds100-sp25-final-Q4c,Q4df-h3",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-sp25-final-Q4c,Q4df-h1"
+        ],
+        "title": "Factors Influencing K-Means",
+        "text": "Think about the initial placement of centroids in K-Means. How might different initial positions affect the final clusters? Consider the role of randomness in the algorithm.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp25-final-Q4c,Q4df-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$K-Means$$ can converge to a local optimum"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp25-final-Q4c,Q4df-h3"
+        ],
+        "title": "Initial Centroid Placement",
+        "text": "How does the initial placement of centroids affect the K-Means algorithm?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It can lead to different local optima",
+            "It ensures global optimum",
+            "It has no effect",
+            "$$K-Means$$ can converge to a local optimum"
+        ]
+    }
+]

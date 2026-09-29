@@ -1,0 +1,82 @@
+[
+    {
+        "id": "aea05a2ds100-sp19-final-Q10c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Block Replication",
+        "text": "Each block of the file is stored on two different machines. Think about how this replication affects the file's availability when machines fail.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp19-final-Q10c-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-sp19-final-Q10c-h1"
+        ],
+        "title": "Considering Machine Failures",
+        "text": "If two machines fail, consider how many machines are left to store the blocks. How does this affect the probability of accessing all blocks?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp19-final-Q10c-h3",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-sp19-final-Q10c-h2"
+        ],
+        "title": "Probability of Block Availability",
+        "text": "For each block, calculate the probability that at least one replica is still available after two machines fail.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp19-final-Q10c-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{5}{6}$$"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp19-final-Q10c-h3"
+        ],
+        "title": "Calculating Probability for One Block",
+        "text": "What is the probability that a single block is still available if two machines fail?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{1}{2}$$",
+            "$$\\frac{1}{3}$$",
+            "$$\\frac{5}{6}$$",
+            "$$\\frac{2}{3}$$"
+        ]
+    },
+    {
+        "id": "aea05a2ds100-sp19-final-Q10c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\left(\\frac{5}{6}\\right)^8$$"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp19-final-Q10c-h4"
+        ],
+        "title": "Probability for All Blocks",
+        "text": "Given the probability for one block, what is the probability that all $$8$$ blocks are still available?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\left(\\frac{1}{2}\\right)^8$$",
+            "$$\\frac{1}{6}$$",
+            "$$\\left(\\frac{5}{6}\\right)^8$$",
+            "$$1-\\left(\\frac{5}{6}\\right)^8$$"
+        ]
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a640c04S25M1Q2Ba-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Code",
+        "text": "The code uses the `str.startswith()` method. This method checks if each string in the 'phone number' column starts with '510'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04S25M1Q2Ba-h2",
+        "type": "hint",
+        "dependencies": [
+            "a640c04S25M1Q2Ba-h1"
+        ],
+        "title": "DataFrame Filtering",
+        "text": "When you filter a DataFrame using a condition, it returns only the rows where the condition is true. Think about what `dishes['phone number'].str.startswith('510')` returns.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a640c04S25M1Q2Ba-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a640c04S25M1Q2Ba-h2"
+        ],
+        "title": "Checking the Condition",
+        "text": "What does the condition `dishes['phone number'].str.startswith('510')` evaluate to for each row?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

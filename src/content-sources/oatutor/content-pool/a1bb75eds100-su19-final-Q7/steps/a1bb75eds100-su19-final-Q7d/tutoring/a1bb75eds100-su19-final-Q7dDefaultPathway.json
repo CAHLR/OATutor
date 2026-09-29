@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a1bb75eds100-su19-final-Q7d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Expression",
+        "text": "Let's break down the expression $$\\left(y_i-\\operatorname{\\sigma}\\left(X_i {\\theta}^t\\right)\\right) X_i$$. Consider the dimensions of each component: $$X_i$$ is a row vector from the design matrix X, and $${\\theta}^t$$ is a vector of model weights. What happens when you multiply these two?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q7d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q7d-h1"
+        ],
+        "title": "Exploring the Sigma Function",
+        "text": "The function $$\\operatorname{\\sigma}\\left(X_i {\\theta}^t\\right)$$ is a scalar because it represents the logistic function applied to a single value. How does this affect the dimensions of the expression when subtracted from $$y_i$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q7d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Length $$p$$ vector"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q7d-h2"
+        ],
+        "title": "Determining the Dimensions",
+        "text": "Given that $$y_i-\\operatorname{\\sigma}\\left(X_i {\\theta}^t\\right)$$ is a scalar, what are the dimensions of the product $$\\left(y_i-\\operatorname{\\sigma}\\left(X_i {\\theta}^t\\right)\\right) X_i$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Scalar",
+            "Length $$n$$ vector",
+            "Length $$p$$ vector",
+            "$$n$$ by $$p$$ matrix"
+        ]
+    }
+]

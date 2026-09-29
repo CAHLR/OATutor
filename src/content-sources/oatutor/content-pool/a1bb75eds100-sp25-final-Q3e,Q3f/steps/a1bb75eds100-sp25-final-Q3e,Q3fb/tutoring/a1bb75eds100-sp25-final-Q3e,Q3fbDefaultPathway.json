@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fb-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Logistic Regression Model",
+        "text": "In logistic regression, the probability that a student prefers Kendrick is calculated using the logistic function. This function takes the form: $$\\frac{1}{1+e^{\\left(-z\\right)}}$$, where $$z$$ is the linear combination of the features and parameters. Can you identify what $$z$$ would be for student s?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fb-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp25-final-Q3e,Q3fb-h1"
+        ],
+        "title": "Calculating the Linear Combination",
+        "text": "For student s, the linear combination $$z$$ is calculated as: $$z=\\theta_0+\\theta_1 X_{s1}+\\theta_2 X_{s2}$$. Given $$theta=(-2, 2, 1)$$, $$X_{s1}=1$$, and $$X_{s2}=0$$, what is the value of $$z$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fb-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp25-final-Q3e,Q3fb-h2"
+        ],
+        "title": "Evaluating the Probability",
+        "text": "Once you have calculated $$z$$, substitute it into the logistic function: $$\\frac{1}{1+e^{\\left(-z\\right)}}$$. This will give you the probability that student s prefers Kendrick. How does this probability compare to the threshold of $$0.3$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp25-final-Q3e,Q3fb-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Kendrick"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp25-final-Q3e,Q3fb-h3"
+        ],
+        "title": "Classifying the Student's Preference",
+        "text": "Based on the probability you calculated, which rapper would student s be classified as preferring if the threshold is $$0.3$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Drake",
+            "Kendrick",
+            "On the boundary"
+        ]
+    }
+]

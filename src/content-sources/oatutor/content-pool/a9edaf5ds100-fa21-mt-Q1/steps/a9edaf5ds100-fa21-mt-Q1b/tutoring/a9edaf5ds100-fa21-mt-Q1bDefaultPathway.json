@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding One-Hot Encoding",
+        "text": "When you one-hot encode a sequence, each unique item in the sequence gets its own dimension. Think about how many unique items are in a DNA sequence of $$3000$$ letters.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$4^{3000}$$"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1b-h1"
+        ],
+        "title": "Calculating Unique Combinations",
+        "text": "Consider how many unique combinations you can form with $$4$$ different letters (T, G, C, A) in a sequence of $$3000$$. What would be the total number of unique sequences?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$4^{3000}$$",
+            "$$64000$$",
+            "$$2048000$$",
+            "$$64$$",
+            "$$4^{6000}$$"
+        ]
+    },
+    {
+        "id": "a9edaf5ds100-fa21-mt-Q1b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-fa21-mt-Q1b-h2"
+        ],
+        "title": "Breaking Down the Problem",
+        "text": "Think about the process of one-hot encoding. Each unique sequence of letters in the DNA string will have its own dimension. How does this relate to the number of possible sequences?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

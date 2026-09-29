@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-final-Q7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding ROC Curves",
+        "text": "A ROC curve plots the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings. The area under the curve (AUC) is a measure of how well the model can distinguish between classes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q7a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-final-Q7a-h1"
+        ],
+        "title": "Choosing the Starting Point for Thresholds",
+        "text": "Consider the range of values that the predicted probabilities can take. What is the minimum value that these probabilities can have?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$1$$",
+            "$$-1$$",
+            "$$0.5$$",
+            "predicted_probs.min()"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q7a-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Thresholds in ROC Curves",
+        "text": "Thresholds are used to convert predicted probabilities into binary classifications. By varying the threshold, you can calculate different TPR and FPR values to plot the ROC curve.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

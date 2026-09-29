@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a8c8399ds100-fa20-final-Q12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Correlation",
+        "text": "Correlation measures the strength and direction of a linear relationship between two variables. If two variables are uncorrelated, their correlation coefficient is $$0$$. Consider how BMI is calculated and how it might relate to height.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-fa20-final-Q12a-h1"
+        ],
+        "title": "BMI Calculation",
+        "text": "Recall that BMI is calculated using the formula: weight divided by (height divided by 100) squared. Think about how changes in height affect BMI when weight is constant.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "BMI decreases"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa20-final-Q12a-h2"
+        ],
+        "title": "Effect of Height on BMI",
+        "text": "If height increases while weight remains constant, what happens to BMI?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "BMI increases",
+            "BMI decreases",
+            "BMI stays the same",
+            "Impossible to tell"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-fa20-final-Q12a-h3"
+        ],
+        "title": "Correlation Direction",
+        "text": "Consider the direction of the relationship between height and BMI. If height increases and BMI decreases, what does this imply about the correlation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa20-final-Q12a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Negative"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa20-final-Q12a-h4"
+        ],
+        "title": "Correlation Coefficient Sign",
+        "text": "Given that height and BMI have an inverse relationship, what is the sign of the correlation coefficient?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Positive",
+            "Negative",
+            "Zero",
+            "Impossible to tell"
+        ]
+    }
+]

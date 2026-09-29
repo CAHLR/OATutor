@@ -1,0 +1,85 @@
+[
+    {
+        "id": "a92ac99ds100-fa17-mt-Q27c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrapping",
+        "text": "Bootstrapping involves resampling with replacement from a sample to create many simulated samples. This helps estimate the sampling distribution of a statistic.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-mt-Q27c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a92ac99ds100-fa17-mt-Q27c-h1"
+        ],
+        "title": "Sample Size in Bootstrapping",
+        "text": "When performing bootstrapping, the size of each resample should be the same as the original sample size. Consider how this applies to the given sample size of $$400$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-mt-Q27c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-mt-Q27c-h2"
+        ],
+        "title": "Replacement in Bootstrapping",
+        "text": "In bootstrapping, do we sample with or without replacement?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$1$$",
+            "False",
+            "None",
+            "TRUE",
+            "True"
+        ]
+    },
+    {
+        "id": "a92ac99ds100-fa17-mt-Q27c-h4",
+        "type": "hint",
+        "dependencies": [
+            "a92ac99ds100-fa17-mt-Q27c-h3"
+        ],
+        "title": "Function for Estimation",
+        "text": "To estimate the median in each bootstrap sample, use the appropriate function that calculates the median of a dataset.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-mt-Q27c-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$10000$$"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-mt-Q27c-h4"
+        ],
+        "title": "Number of Bootstrap Samples",
+        "text": "How many bootstrap samples are we generating in this problem?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$100$$",
+            "$$1000$$",
+            "$$10000$$",
+            "$$400$$",
+            "$$25000$$"
+        ]
+    }
+]

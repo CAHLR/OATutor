@@ -1,0 +1,47 @@
+[
+    {
+        "id": "a1bb75eds100-su19-final-Q7b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Dot Product",
+        "text": "When you see the expression $$X_i {\\theta}^t$$, think about what happens when you multiply a row vector by a column vector. What kind of result do you get from this operation?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q7b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q7b-h1"
+        ],
+        "title": "Dimensions of Vectors",
+        "text": "Consider the dimensions of $$X_i$$ and $${\\theta}^t$$. $$X_i$$ is a row vector with $$p$$ elements, and $${\\theta}^t$$ is a column vector with $$p$$ elements. What does this tell you about the result of their multiplication?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su19-final-Q7b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Scalar"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su19-final-Q7b-h2"
+        ],
+        "title": "Choose the Correct Dimension",
+        "text": "Based on the multiplication of a row vector and a column vector, what is the dimension of the result?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Scalar",
+            "Length $$n$$ vector",
+            "Length $$p$$ vector",
+            "$$n$$ by $$p$$ matrix"
+        ]
+    }
+]

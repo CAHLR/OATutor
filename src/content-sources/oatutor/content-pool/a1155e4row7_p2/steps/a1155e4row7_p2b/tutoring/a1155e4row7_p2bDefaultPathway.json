@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a1155e4row7_p2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Histogram Skew",
+        "text": "The skew of a histogram is related to the distribution of data. It describes how the data is spread out, particularly if it leans more to one side. Consider how the shape of the histogram might look if most data points are on one side.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row7_p2b-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a1155e4row7_p2b-h1"
+        ],
+        "title": "Histogram Skew Definition",
+        "text": "What does the skew of a histogram actually refer to?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "The asymmetry in the distribution of data",
+            "The number of data points in each bin",
+            "The ratio between its peak and number of bins",
+            "The total number of bins"
+        ]
+    }
+]

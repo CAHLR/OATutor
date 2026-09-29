@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a8c8399ds100-sp25-mt-Q4ba-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Scatter Plot",
+        "text": "Observe how the number of students increases with humidity but at a decreasing rate. This suggests a logarithmic relationship. Think about how you can transform the humidity data to make this relationship linear.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp25-mt-Q4ba-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$h_i=\\ln\\left(x_i\\right)$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp25-mt-Q4ba-h1"
+        ],
+        "title": "Choosing the Right Transformation",
+        "text": "Which transformation would help linearize a logarithmic relationship between humidity and the number of students?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$h_i=\\ln\\left(x_i\\right)$$",
+            "$$\\ln\\left(h_i\\right)=x_i$$",
+            "$$h_i={x_i}^2$$",
+            "$$h_i={x_i}^3$$",
+            "$$h_i=\\sqrt{x_i}$$"
+        ]
+    }
+]

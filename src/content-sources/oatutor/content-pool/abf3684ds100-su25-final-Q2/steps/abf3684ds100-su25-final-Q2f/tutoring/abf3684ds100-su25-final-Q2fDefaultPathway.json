@@ -1,0 +1,59 @@
+[
+    {
+        "id": "abf3684ds100-su25-final-Q2f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Rank of a Matrix",
+        "text": "The rank of a matrix is the maximum number of linearly independent column vectors in the matrix. For Wesley's model, think about how many linearly independent columns the design matrix can have given the number of features and transformations applied.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2f-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2f-h1"
+        ],
+        "title": "Exploring the Design Matrix",
+        "text": "Consider the transformations applied to the features in Wesley's model: one feature is cubed and the other is logged. How might these transformations affect the linear independence of the columns in the design matrix?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2f-h2"
+        ],
+        "title": "Evaluating the Rank",
+        "text": "Given that Wesley has $$2$$ features and applies transformations, what is the maximum possible rank of the design matrix?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$2$$",
+            "$$3$$",
+            "$$4$$"
+        ]
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2f-h4",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2f-h3"
+        ],
+        "title": "Checking for Linear Independence",
+        "text": "If the design matrix has full column rank, it means all columns are linearly independent. With $$2$$ features and transformations, how many linearly independent columns can you expect?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a1155e4row4i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding KDE",
+        "text": "Kernel Density Estimates (KDEs) are useful for visualizing the distribution of data. They can help identify patterns such as bimodality, where a distribution has two distinct peaks.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row4i-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1155e4row4i-h1"
+        ],
+        "title": "Analyzing the Plot",
+        "text": "Look at the distribution of nugget weights for each shape in the plot. Consider whether there are multiple peaks or clusters in the data for any shape.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1155e4row4i-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1155e4row4i-h2"
+        ],
+        "title": "Using KDEs for Bimodality",
+        "text": "Can overlaid KDEs help determine if the distribution of nugget weights is bimodal for a given shape?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

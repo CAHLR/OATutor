@@ -1,0 +1,72 @@
+[
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding N-grams",
+        "text": "Think about how N-grams work. They capture sequences of letters, but do they consider the biological significance of codons?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1f-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Codons and Amino Acids",
+        "text": "Remember, codons are groups of $$3$$ letters that translate into amino acids. How might this affect the usefulness of N-grams?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "ATG, TGC, GCA"
+        ],
+        "dependencies": [],
+        "title": "N-gram Overlap",
+        "text": "Consider how N-grams might break down a sequence like ATGCA. What overlapping segments would it create?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "ATG, TGC, GCA",
+            "ATG, GCA",
+            "TGC, GCA"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "It could suggest incorrect sequences like AGA from ATGCA."
+        ],
+        "dependencies": [],
+        "title": "Non-consecutive Segments",
+        "text": "If N-grams capture non-consecutive segments, what might be a potential issue with this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "It could suggest incorrect sequences like AGA from ATGCA.",
+            "It could miss important sequences.",
+            "It could capture too many sequences."
+        ]
+    },
+    {
+        "id": "a8c8399ds100-fa21-mt-Q1f-h5",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Wrap-around Segments",
+        "text": "DNA sequences do not wrap around. How might N-grams mistakenly capture segments that seem to wrap around?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

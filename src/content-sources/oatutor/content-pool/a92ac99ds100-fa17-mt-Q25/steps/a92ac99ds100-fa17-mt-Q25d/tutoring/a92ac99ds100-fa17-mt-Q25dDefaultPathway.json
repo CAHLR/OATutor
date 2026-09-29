@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a92ac99ds100-fa17-mt-Q25d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Bootstrapping",
+        "text": "Bootstrapping involves resampling with replacement from a dataset to estimate the sampling distribution of a statistic. Think about how the shape of this distribution might change as you increase the sample size.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-mt-Q25d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a92ac99ds100-fa17-mt-Q25d-h1"
+        ],
+        "title": "Normal Distribution and Sample Size",
+        "text": "Consider what happens to the distribution of sample means as the sample size increases. Does it always become normal, or are there conditions that affect this?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-mt-Q25d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-mt-Q25d-h2"
+        ],
+        "title": "Sample Size and Distribution Shape",
+        "text": "As the sample size increases, does the distribution of the sample mean always become normal?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

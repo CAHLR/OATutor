@@ -1,0 +1,36 @@
+[
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1j-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Principal Component Matrix",
+        "text": "The principal component matrix $P$ is derived from the original data matrix. It has the same number of rows as the original data matrix. Think about what each row in the original data represents.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1j-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1000$$"
+        ],
+        "dependencies": [
+            "a98a015ds100-fa19-mt2-Q1j-h1"
+        ],
+        "title": "Number of Rows in the Dataframe",
+        "text": "How many rows are in the original dataframe $\\text{df\\_zoo}$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$8$$",
+            "$$100$$",
+            "$$999$$",
+            "$$1000$$"
+        ]
+    }
+]

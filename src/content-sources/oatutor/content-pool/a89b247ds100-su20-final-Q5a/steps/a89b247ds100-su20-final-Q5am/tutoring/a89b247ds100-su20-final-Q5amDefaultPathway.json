@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a89b247ds100-su20-final-Q5am-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Ridge Regression",
+        "text": "Ridge regression adds a penalty term to the loss function to prevent overfitting. This penalty term is proportional to the square of the magnitude of the coefficients. Can you think about how increasing the penalty might affect the coefficients?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su20-final-Q5am-h2",
+        "type": "hint",
+        "dependencies": [
+            "a89b247ds100-su20-final-Q5am-h1"
+        ],
+        "title": "Effect of Lambda on Coefficients",
+        "text": "When you increase the value of lambda, the penalty on large coefficients becomes stronger. This means that the model will try to keep the coefficients smaller. How might this affect the model's complexity and its ability to fit the training data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a89b247ds100-su20-final-Q5am-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a89b247ds100-su20-final-Q5am-h2"
+        ],
+        "title": "Impact on Test Error",
+        "text": "Consider how increasing lambda affects the model's ability to generalize to new data. Does it make the model more flexible or more rigid?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

@@ -1,0 +1,67 @@
+[
+    {
+        "id": "a1bb75eds100-su21-final-Q6e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Invertibility",
+        "text": "To determine if a matrix is invertible, you need to check if its determinant is non-zero. If the determinant is zero, the matrix is not invertible. Try calculating the determinant of the matrix X'**{T}X'.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q6e-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Matrix Dimensions",
+        "text": "Consider the dimensions of the matrix X'**{T}X'. If the matrix is square, it might be invertible. What are the dimensions of X'**{T}X' in this problem?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q6e-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$a$$ $$d-b$$ $$c$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q6e-h1"
+        ],
+        "title": "Checking Determinant",
+        "text": "What is the determinant of a 2x2 matrix $$\\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$a$$ $$d-b$$ $$c$$",
+            "$$a b c d$$",
+            "$$a d-b c$$",
+            "$$a+b+c+d$$",
+            "$$a-b+c-d$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-su21-final-Q6e-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Yes"
+        ],
+        "dependencies": [
+            "a1bb75eds100-su21-final-Q6e-h2"
+        ],
+        "title": "Square Matrix",
+        "text": "Is the matrix X'**{T}X' a square matrix?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    }
+]

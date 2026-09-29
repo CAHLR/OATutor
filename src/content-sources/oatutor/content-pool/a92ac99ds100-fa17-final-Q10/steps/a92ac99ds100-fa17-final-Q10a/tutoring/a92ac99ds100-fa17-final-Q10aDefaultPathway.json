@@ -1,0 +1,102 @@
+[
+    {
+        "id": "a92ac99ds100-fa17-final-Q10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Diagram",
+        "text": "The diagram represents the bootstrap process. Start by identifying the initial population and the parameter of interest. This will help you fill in the first few blanks.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q10a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Population"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q10a-h1"
+        ],
+        "title": "Identifying the Population",
+        "text": "What is the term used to describe the entire group from which a sample is drawn?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Population",
+            "Bootstrap population",
+            "Observed sample",
+            "Expected sample",
+            "Bootstrap sample",
+            "Sampling distribution",
+            "Sampling",
+            "Bootstrapping",
+            "Bootstrap sampling distribution",
+            "Empirical distribution",
+            "True distribution",
+            "Population parameter",
+            "Sample Statistic",
+            "Bootstrap Statistic"
+        ]
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q10a-h2"
+        ],
+        "title": "Parameter of Interest",
+        "text": "The parameter of interest is often a value that describes a characteristic of the population. Think about what you are trying to estimate from the population.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q10a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Population parameter"
+        ],
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q10a-h3"
+        ],
+        "title": "Identifying the Parameter",
+        "text": "What is the term for the true value that describes a characteristic of the population?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Population",
+            "Bootstrap population",
+            "Observed sample",
+            "Expected sample",
+            "Bootstrap sample",
+            "Sampling distribution",
+            "Sampling",
+            "Bootstrapping",
+            "Bootstrap sampling distribution",
+            "Empirical distribution",
+            "True distribution",
+            "Population parameter",
+            "Sample Statistic",
+            "Bootstrap Statistic"
+        ]
+    },
+    {
+        "id": "a92ac99ds100-fa17-final-Q10a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a92ac99ds100-fa17-final-Q10a-h4"
+        ],
+        "title": "Sampling Process",
+        "text": "After identifying the population and parameter, consider the process of drawing a sample from the population. This is a crucial step in the bootstrap process.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

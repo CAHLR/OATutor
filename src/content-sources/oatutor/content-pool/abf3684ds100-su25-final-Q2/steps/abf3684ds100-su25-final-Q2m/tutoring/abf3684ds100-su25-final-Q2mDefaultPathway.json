@@ -1,0 +1,58 @@
+[
+    {
+        "id": "abf3684ds100-su25-final-Q2m-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization helps prevent overfitting by adding a penalty to the model's complexity. L1 regularization (Lasso) and L2 regularization (Ridge) apply different penalties. Can you think about how these penalties might affect the choice of the lambda hyperparameter?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2m-h2",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2m-h1"
+        ],
+        "title": "Exploring Lambda's Role",
+        "text": "The lambda hyperparameter controls the strength of the penalty in regularization. A larger lambda means a stronger penalty. Consider how this might influence the model's coefficients differently in L1 and L2 regularization.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2m-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "L1 regularization can lead to sparse solutions, while L2 regularization tends to shrink coefficients evenly."
+        ],
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2m-h2"
+        ],
+        "title": "Comparing L1 and L2 Regularization",
+        "text": "Which of the following statements is true about L1 and L2 regularization?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "L1 regularization can lead to sparse solutions, while L2 regularization tends to shrink coefficients evenly.",
+            "L1 and L2 regularization always result in the same model coefficients.",
+            "L1 regularization is always better than L2 regularization."
+        ]
+    },
+    {
+        "id": "abf3684ds100-su25-final-Q2m-h4",
+        "type": "hint",
+        "dependencies": [
+            "abf3684ds100-su25-final-Q2m-h3"
+        ],
+        "title": "Lambda's Consistency",
+        "text": "Think about whether the optimal lambda for minimizing error is influenced by the type of regularization used. Does the penalty type affect the model's performance on the validation dataset?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

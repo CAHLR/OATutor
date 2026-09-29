@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a1bb75eds100-su20-mt2-Q8c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Thresholds",
+        "text": "Think about what happens when you set a lower threshold for predicting a positive case. How does this affect the number of false negatives and false positives?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-mt2-Q8c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-su20-mt2-Q8c-h1"
+        ],
+        "title": "Evaluating Model A",
+        "text": "Model A uses a threshold of $$T=0.25$$. Consider how many observations will be predicted as positive with this threshold. What does this mean for false negatives?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-su20-mt2-Q8c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Model A, since we want to minimize false negatives."
+        ],
+        "dependencies": [
+            "a1bb75eds100-su20-mt2-Q8c-h2"
+        ],
+        "title": "Choosing the Right Model",
+        "text": "Which model is best suited for minimizing false negatives in a medical context?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Model A, since we want to minimize false positives.",
+            "Model A, since we want to minimize false negatives.",
+            "Model B, since it balances precision and recall.",
+            "Model C, since we want to minimize false negatives.",
+            "Model C, since we want to maximize precision."
+        ]
+    }
+]

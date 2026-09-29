@@ -1,0 +1,44 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-final-Q7f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding ROC Curves",
+        "text": "The ROC curve is a graphical representation of the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings. It helps evaluate the performance of a binary classifier.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q7f-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Calculating TPR and FPR",
+        "text": "To calculate the true positive rate (TPR), use the formula: TPR $$=$$ true positives / (true positives + false negatives). For the false positive rate (FPR), use: FPR $$=$$ false positives / (false positives + true negatives).",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-final-Q7f-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{c}{b+c}$$"
+        ],
+        "dependencies": [],
+        "title": "Choosing the Correct Formula for FPR",
+        "text": "Which formula correctly represents the false positive rate (FPR)?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$\\frac{c}{a+c}$$",
+            "$$\\frac{b}{b+c}$$",
+            "$$\\frac{c}{c+d}$$",
+            "$$\\frac{c}{b+c}$$",
+            "$$\\frac{a}{a+d}$$"
+        ]
+    }
+]

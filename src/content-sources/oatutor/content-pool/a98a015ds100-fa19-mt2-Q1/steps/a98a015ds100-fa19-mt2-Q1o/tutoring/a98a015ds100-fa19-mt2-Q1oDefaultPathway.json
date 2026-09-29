@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Principal Components",
+        "text": "The first two principal components (PC1 and PC2) help us understand the main directions of variance in the data. Look at how the different exhibits contribute to these components in the plots of the first and second rows of $$V^T$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1o-h2",
+        "type": "hint",
+        "dependencies": [
+            "a98a015ds100-fa19-mt2-Q1o-h1"
+        ],
+        "title": "Analyzing the Scatterplot",
+        "text": "The scatterplot shows three distinct groups of visitors. Consider how the contributions of different exhibits to PC1 and PC2 might influence the positioning of these groups.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a98a015ds100-fa19-mt2-Q1o-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "These visitors spend a lot of time at the mammal exhibits (cheetah, tiger, and lion)."
+        ],
+        "dependencies": [
+            "a98a015ds100-fa19-mt2-Q1o-h2"
+        ],
+        "title": "Focus on the Bottom-Left Group",
+        "text": "Which exhibits have the highest positive contributions to PC1 and PC2 for the bottom-left group?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "These visitors spend a lot of time at the mammal exhibits (cheetah, tiger, and lion).",
+            "These visitors spend a lot of time at the activities (train and playground).",
+            "These visitors spend a lot of time at the reptile exhibits (turtle, iguana, and alligator).",
+            "These visitors spend very little time at any of the $$8$$ exhibits.",
+            "These visitors spend about the same amount of time at every exhibit."
+        ]
+    }
+]

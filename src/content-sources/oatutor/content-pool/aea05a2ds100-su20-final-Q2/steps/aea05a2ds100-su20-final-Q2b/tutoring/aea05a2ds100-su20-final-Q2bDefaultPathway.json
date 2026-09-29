@@ -1,0 +1,46 @@
+[
+    {
+        "id": "aea05a2ds100-su20-final-Q2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Convergence in K-means",
+        "text": "Think about what it means for the cluster centers to change but the labels to remain the same. What does this tell you about the distances between the points and the centers?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-su20-final-Q2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-su20-final-Q2b-h1"
+        ],
+        "title": "Cluster Center Movement",
+        "text": "If the cluster centers move but the labels don't change, consider why the points are still closest to their original centers. What does this imply about the stability of the clusters?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-su20-final-Q2b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Always"
+        ],
+        "dependencies": [
+            "aea05a2ds100-su20-final-Q2b-h2"
+        ],
+        "title": "Evaluating Convergence",
+        "text": "When the cluster centers change but the labels remain the same, is it:",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Always",
+            "Sometimes",
+            "Never"
+        ]
+    }
+]

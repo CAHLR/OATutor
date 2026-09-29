@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a9edaf5ds100-su25-final-Q2dc-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting in models. It adds a penalty to the loss function to discourage complex models. Can you think of how this might affect the model's variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su25-final-Q2dc-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-su25-final-Q2dc-h1"
+        ],
+        "title": "L2 Regularization and Variance",
+        "text": "L2 regularization, also known as Ridge regression, adds a penalty equal to the square of the magnitude of coefficients. Consider how this might impact the flexibility of the model and its variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-su25-final-Q2dc-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-su25-final-Q2dc-h2"
+        ],
+        "title": "Effect of L2 Regularization",
+        "text": "What is the effect of L2 regularization on model variance?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

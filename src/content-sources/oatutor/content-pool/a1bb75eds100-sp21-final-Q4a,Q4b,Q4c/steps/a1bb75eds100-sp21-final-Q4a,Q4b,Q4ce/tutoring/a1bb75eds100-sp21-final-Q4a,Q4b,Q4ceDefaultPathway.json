@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4ce-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Transformation",
+        "text": "Consider how the transformation $$(x_1,x_2)$$ to $$({x_1}^2,x_2)$$ affects the data points. What happens to the $$x_1$$ values when they are squared?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4ce-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q4a,Q4b,Q4ce-h1"
+        ],
+        "title": "Effect of Squaring on $$x_1$$",
+        "text": "Squaring $$x_1$$ will make all $$x_1$$ values non-negative. How does this affect the separation of the classes?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4ce-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$(4,3)$$"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q4a,Q4b,Q4ce-h2"
+        ],
+        "title": "Analyzing the New Coordinates",
+        "text": "After the transformation, what are the new coordinates of the point $$(-2,3)$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$(4,3)$$",
+            "$$(2,3)$$",
+            "$$(-2,3)$$",
+            "$$(4,-3)$$"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-sp21-final-Q4a,Q4b,Q4ce-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "TRUE"
+        ],
+        "dependencies": [
+            "a1bb75eds100-sp21-final-Q4a,Q4b,Q4ce-h3"
+        ],
+        "title": "Class Separation",
+        "text": "Does the transformation make it easier to draw a line that separates the two classes?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    }
+]

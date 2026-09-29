@@ -1,0 +1,59 @@
+[
+    {
+        "id": "aba1299row7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Weight Vector",
+        "text": "The weight vector \\(\\hat{\\theta}\\) gives us the coefficients for each feature in the design matrix. Each coefficient tells us how much the dependent variable (in this case, mission duration in sols) changes with a one-unit change in the corresponding feature, holding all other features constant.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row7a-h1"
+        ],
+        "title": "Focus on the Astronauts",
+        "text": "Look at the coefficient associated with the number of astronauts in the weight vector \\([-3,0.25,2]**T\\). This coefficient tells you how many additional sols the mission can last for each additional astronaut.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row7a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "aba1299row7a-h2"
+        ],
+        "title": "Identify the Coefficient",
+        "text": "Which value in the weight vector \\([-3,0.25,2]**T\\) corresponds to the number of astronauts?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$-3$$",
+            "$$2$$",
+            ">0.25",
+            ">2"
+        ]
+    },
+    {
+        "id": "aba1299row7a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row7a-h3"
+        ],
+        "title": "Interpreting the Coefficient",
+        "text": "The coefficient for the number of astronauts is $$2$$. This means that for each additional astronaut, the mission duration increases by $$2$$ sols, assuming all other factors remain constant.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

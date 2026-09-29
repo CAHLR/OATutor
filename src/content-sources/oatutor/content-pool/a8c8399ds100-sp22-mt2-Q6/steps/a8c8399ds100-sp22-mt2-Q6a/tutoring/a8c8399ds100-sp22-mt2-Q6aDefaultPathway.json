@@ -1,0 +1,55 @@
+[
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Design Matrix",
+        "text": "The design matrix X is constructed using dummy variables for each food item. Each column represents a food, and each row represents a student's lunch on a particular day. If a food is eaten, the corresponding entry is 1; otherwise, it's $$0$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6a-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Full Column Rank",
+        "text": "For a matrix to be full column rank, its columns must be linearly independent. This means no column can be written as a linear combination of the others.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a8c8399ds100-sp22-mt2-Q6a-h2"
+        ],
+        "title": "Checking Linear Independence",
+        "text": "Consider the columns of the design matrix. Are there any columns that can be expressed as a combination of others?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "TRUE",
+            "FALSE"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-sp22-mt2-Q6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-sp22-mt2-Q6a-h2"
+        ],
+        "title": "Implications of Full Column Rank",
+        "text": "If the design matrix X is full column rank, it implies that the columns are linearly independent, which affects the uniqueness of the solution in ordinary least squares regression.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    }
+]

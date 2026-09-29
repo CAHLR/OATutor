@@ -1,0 +1,70 @@
+[
+    {
+        "id": "a8c8399ds100-su20-final-Q4o-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "As the regularization parameter lambda increases, the model complexity is penalized more heavily. This affects the coefficients of the model. Think about what happens to the coefficients when lambda is very large.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4o-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Mean-Centered Data",
+        "text": "When data is mean-centered, each feature has a mean of zero. Consider how this affects the intercept term and the predictions of the model.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4o-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su20-final-Q4o-h1"
+        ],
+        "title": "Effect of Large Lambda",
+        "text": "What happens to the coefficients of a linear model as lambda approaches $$\\infty$$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "They approach zero",
+            "They become negative",
+            "They become very large",
+            "They remain unchanged"
+        ]
+    },
+    {
+        "id": "a8c8399ds100-su20-final-Q4o-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "the mean of the true $$y$$ values"
+        ],
+        "dependencies": [
+            "a8c8399ds100-su20-final-Q4o-h2"
+        ],
+        "title": "Predictions with Mean-Centered Data",
+        "text": "If the data is mean-centered, what do the predictions of the model approach as lambda becomes very large?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "the mean of the true $$y$$ values",
+            "$$\\frac{1}{\\lambda}$$",
+            "$$p+1$$",
+            "Impossible to tell"
+        ]
+    }
+]

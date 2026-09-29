@@ -1,0 +1,47 @@
+[
+    {
+        "id": "aba1299row10p2i-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Residuals",
+        "text": "Residuals are the differences between the observed values and the predicted values in a regression model. Think about how these differences relate to the design matrix.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10p2i-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row10p2i-h1"
+        ],
+        "title": "Orthogonality in OLS",
+        "text": "In the context of OLS regression, orthogonality refers to the residuals being perpendicular to certain vectors. Consider what vectors in the model might have this relationship with the residuals.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10p2i-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "They are orthogonal to the column space of the design matrix (X)."
+        ],
+        "dependencies": [
+            "aba1299row10p2i-h2"
+        ],
+        "title": "Exploring Orthogonality",
+        "text": "Which of the following statements about residuals in OLS regression is true?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "They are orthogonal to the column space of the design matrix (X).",
+            "Their sum is equal to the mean squared error.",
+            "Their sum is equal to zero.",
+            "They are orthogonal to the vector of predictions (hat{Y})."
+        ]
+    }
+]

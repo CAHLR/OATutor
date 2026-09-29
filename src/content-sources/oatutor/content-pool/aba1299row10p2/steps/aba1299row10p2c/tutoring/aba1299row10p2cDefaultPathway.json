@@ -1,0 +1,47 @@
+[
+    {
+        "id": "aba1299row10p2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Output Vector",
+        "text": "The true output vector Y represents the observed delay in minutes for each flight record. Since there are $$400$$ flight records, think about how many rows this vector should have.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10p2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "aba1299row10p2c-h1"
+        ],
+        "title": "Shape of a Vector",
+        "text": "A vector with $$n$$ elements is typically represented as $$n$$ by $$1$$. Consider how this applies to the $$400$$ flight records in the dataset.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aba1299row10p2c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "400x1"
+        ],
+        "dependencies": [
+            "aba1299row10p2c-h2"
+        ],
+        "title": "Multiple Choice: Shape of Y",
+        "text": "What is the shape of the true output vector Y?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "400x1",
+            ">1x400",
+            ">10x1",
+            ">1x10"
+        ]
+    }
+]

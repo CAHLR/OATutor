@@ -1,0 +1,42 @@
+[
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Orthogonality",
+        "text": "When two vectors are orthogonal, their dot product is zero. Think about what this means in terms of the relationship between $Y-\\hat{Y}$ and $\\mathbb{X}_p$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q2c-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exploring the Residuals",
+        "text": "The vector $Y-\\hat{Y}$ represents the residuals of the model. Consider how these residuals relate to the columns of the design matrix $\\mathbb{X}$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q2c-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Orthogonal to"
+        ],
+        "dependencies": [],
+        "title": "Analyzing Vector Relationships",
+        "text": "Which of the following best describes the relationship between $Y-\\hat{Y}$ and $\\mathbb{X}_p$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Orthogonal to",
+            "In the span of",
+            "NOT orthogonal to and NOT in the span of"
+        ]
+    }
+]

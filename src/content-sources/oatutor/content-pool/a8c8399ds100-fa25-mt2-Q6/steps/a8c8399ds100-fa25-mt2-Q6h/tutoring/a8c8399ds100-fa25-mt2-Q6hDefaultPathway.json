@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q6h-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding MSE on Test Data",
+        "text": "When you remove a feature from a model, consider how it might affect the model's ability to generalize to new data. Think about the trade-off between bias and variance.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q6h-h2",
+        "type": "hint",
+        "dependencies": [
+            "a8c8399ds100-fa25-mt2-Q6h-h1"
+        ],
+        "title": "Bias-Variance Trade-off",
+        "text": "Removing a feature can increase bias because the model might be less flexible. However, it can also decrease variance because the model is simpler. How might these changes affect the MSE on test data?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a8c8399ds100-fa25-mt2-Q6h-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Increase and Decrease"
+        ],
+        "dependencies": [
+            "a8c8399ds100-fa25-mt2-Q6h-h2"
+        ],
+        "title": "Possible Effects on MSE",
+        "text": "What are the possible effects on MSE on held-out test data when a feature is removed?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Increase only",
+            "Decrease only",
+            "Increase and Decrease",
+            "Neither Increase nor Decrease",
+            "Cannot be determined"
+        ]
+    }
+]

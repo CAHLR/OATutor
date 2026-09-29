@@ -1,0 +1,47 @@
+[
+    {
+        "id": "aea05a2ds100-sp18-final-Q14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Replication",
+        "text": "Think about what 4-way replication means. If each fragment is replicated $$4$$ times, how many total fragments do you have now?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp18-final-Q14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aea05a2ds100-sp18-final-Q14a-h1"
+        ],
+        "title": "Calculating Total Fragments",
+        "text": "If you have $$800$$ fragments and each is replicated $$4$$ times, how many fragments are there in total? Try calculating $$800$$ times $$4$$.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "aea05a2ds100-sp18-final-Q14a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$400$$"
+        ],
+        "dependencies": [
+            "aea05a2ds100-sp18-final-Q14a-h2"
+        ],
+        "title": "Distributing Fragments",
+        "text": "Now that you know the total number of fragments, how would you distribute them evenly across $$8$$ nodes?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "$$100$$",
+            "$$400$$",
+            "$$800$$",
+            "$$3200$$"
+        ]
+    }
+]

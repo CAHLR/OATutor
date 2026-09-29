@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a72a45crow7b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the DataFrame",
+        "text": "The DataFrame 'rooms' contains information about rooms in various buildings. Each row represents a room, and the columns provide details like the building name, room number, and renovation year. Focus on the 'renovated' column for this step.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow7b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a72a45crow7b-h1"
+        ],
+        "title": "Handling None Values",
+        "text": "To remove rows with None values in the 'renovated' column, you can use the isna() function to identify these rows. Then, use the tilde (~) operator to select rows that do not have None values.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a72a45crow7b-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "rooms[~rooms[\"renovated\"].isna()]"
+        ],
+        "dependencies": [
+            "a72a45crow7b-h2"
+        ],
+        "title": "Choosing the Correct Code",
+        "text": "Which code correctly removes rows with None values in the 'renovated' column?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "rooms[~rooms[\"renovated\"].isna()]",
+            "rooms[rooms[\"renovated\"].isna()]",
+            "$$rooms.dropna(axis=1)$$",
+            "rooms[rooms[\"renovated\"] $$ \\neq $$ None]",
+            "rooms.fillna(0)"
+        ]
+    }
+]

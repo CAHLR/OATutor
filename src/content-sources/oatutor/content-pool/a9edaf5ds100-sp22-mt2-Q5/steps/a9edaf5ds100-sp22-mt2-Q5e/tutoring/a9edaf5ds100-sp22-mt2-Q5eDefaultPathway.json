@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5e-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Regularization",
+        "text": "Regularization is a technique used to prevent overfitting by adding a penalty term to the loss function. This penalty term is often dependent on the model parameters, theta. Can you think about how increasing the penalty might affect the values of theta?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5e-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-sp22-mt2-Q5e-h1"
+        ],
+        "title": "Exploring the Exponential Function",
+        "text": "The exponential function grows rapidly as its input increases. Consider what happens to the value of $${10}^{\\theta_i}$$ as $$\\theta_i$$ becomes more negative. How does this affect the sum in the regularization term?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5e-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "hat{theta}->-inf"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp22-mt2-Q5e-h2"
+        ],
+        "title": "Behavior of Theta with Increasing Lambda",
+        "text": "As lambda approaches positive $$\\infty$$, which of the following is true about the entries of the optimal theta vector?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "hat{theta}->-inf",
+            "hat{theta}->0",
+            "hat{theta}->inf",
+            "hat{theta} stays constant",
+            "hat{theta} approaches the OLS estimate"
+        ]
+    }
+]

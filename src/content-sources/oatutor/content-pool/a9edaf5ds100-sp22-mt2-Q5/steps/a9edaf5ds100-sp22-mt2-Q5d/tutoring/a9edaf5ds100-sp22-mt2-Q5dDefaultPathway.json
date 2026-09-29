@@ -1,0 +1,48 @@
+[
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5d-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding the Objective Function",
+        "text": "The objective function combines two parts: the $L_2$ loss and the exponential regularization. The $L_2$ loss is represented by $1/n*||Y-X*theta||_2**2$. Can you identify how the regularization term $lambda*sum{i\\=1}{p}{10**theta_i}$ affects the optimization process?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5d-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9edaf5ds100-sp22-mt2-Q5d-h1"
+        ],
+        "title": "Matrix Inversion Insight",
+        "text": "Consider the expression $(X**{-1}+lambda*I)*X**{T}*Y$. What role does the identity matrix $I$ play when added to $X**{-1}$? Think about how this affects the matrix inversion process.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a9edaf5ds100-sp22-mt2-Q5d-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "FALSE"
+        ],
+        "dependencies": [
+            "a9edaf5ds100-sp22-mt2-Q5d-h2"
+        ],
+        "title": "Evaluating the Expression",
+        "text": "Which of the following statements is true about the expression $(X**{-1}+lambda*I)*X**{T}*Y$?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "FALSE",
+            "It does not account for regularization correctly",
+            "It is a valid solution for any lambda",
+            "It is the same as the normal equation solution",
+            "It represents the optimal solution"
+        ]
+    }
+]

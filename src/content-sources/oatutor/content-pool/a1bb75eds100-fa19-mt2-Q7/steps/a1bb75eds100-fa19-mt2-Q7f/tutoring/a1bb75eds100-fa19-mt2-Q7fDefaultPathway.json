@@ -1,0 +1,95 @@
+[
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7f-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Precision",
+        "text": "Precision is the ratio of true positive predictions to the total number of positive predictions. Think about how changing the threshold might affect the number of false positives and true positives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7f-h2",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Recall",
+        "text": "Recall is the ratio of true positive predictions to the total number of actual positives. Consider how increasing the threshold might impact the number of true positives.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7f-h3",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Understanding Accuracy",
+        "text": "Accuracy is the ratio of correctly predicted observations to the total observations. Think about how both true positives and true negatives contribute to accuracy when the threshold changes.",
+        "variabilization": {},
+        "oer": "openai",
+        "license": ""
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7f-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Precision can increase"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-mt2-Q7f-h1"
+        ],
+        "title": "Effect on Precision",
+        "text": "If the threshold is increased, what happens to precision?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Precision can increase",
+            "Precision can decrease"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7f-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Recall can decrease"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-mt2-Q7f-h2"
+        ],
+        "title": "Effect on Recall",
+        "text": "If the threshold is increased, what happens to recall?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Recall can increase",
+            "Recall can decrease"
+        ]
+    },
+    {
+        "id": "a1bb75eds100-fa19-mt2-Q7f-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Accuracy can increase"
+        ],
+        "dependencies": [
+            "a1bb75eds100-fa19-mt2-Q7f-h3"
+        ],
+        "title": "Effect on Accuracy",
+        "text": "If the threshold is increased, what happens to accuracy?",
+        "variabilization": {},
+        "oer": "openai",
+        "license": "",
+        "choices": [
+            "Accuracy can increase",
+            "Accuracy can decrease"
+        ]
+    }
+]
