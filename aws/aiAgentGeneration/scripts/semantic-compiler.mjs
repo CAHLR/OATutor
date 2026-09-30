@@ -630,7 +630,9 @@ CRITICAL RULES:
 - Produce exactly one problem object for every chunk-index entry.
 - Do NOT include prompt fields. Authoritative prompts are filled later by the compiler.
 - Keep problem objects small: problem_id, number, title, knowledge_components, equations, assets, source.
-- Put shared prose enrichment in section-level concepts, notes, and examples — not by echoing full chunk text.
+- knowledge_components must be chunk-local (from that chunk's heading only), not a copy of every topic in the document.
+- section concepts: at most 5 short document-level tags. Do NOT union every chunk topic into section concepts.
+- Put shared prose enrichment in section-level notes and examples — not by echoing full chunk text.
 - Student-visible content uses visibility "student".
 - Return a single compact JSON object only.`;
 
@@ -666,7 +668,7 @@ function buildTextbookUserPrompt({
         '2. Use the supplied id / problem_id exactly as problem_id.',
         '3. Set title to the supplied heading (or a short equivalent). Do NOT include a prompt field.',
         '4. Do not create additional chunk IDs.',
-        '5. Use the document content to populate section concepts, notes, examples, and per-chunk knowledge_components / assets.',
+        '5. knowledge_components must describe only that chunk (derive them from its heading). section concepts: at most 5 document-level tags, not a union of all chunk topics. Also fill notes, examples, and assets.',
         '6. Do not add solution blocks for textbook chunks.',
         '7. Keep the JSON compact — do not paste long body text into problem fields.',
         '',
@@ -896,10 +898,29 @@ export function reconcileProblems(questionIndex, modelProblems) {
 /**
  * Textbook chunks: keep authoritative IDs/prompts; allow enrichment without solutions.
  */
+function fallbackKnowledgeComponents(problem) {
+    const existing = (Array.isArray(problem.knowledge_components)
+        ? problem.knowledge_components
+        : []
+    )
+        .map((k) => String(k || '').trim())
+        .filter(Boolean);
+    if (existing.length) return existing;
+    const heading = String(problem.title || '').trim();
+    if (heading) return [heading];
+    const slug = String(problem.problem_id || '')
+        .split('::')
+        .pop()
+        .replace(/[-_]+/g, ' ')
+        .trim();
+    return slug ? [slug] : [];
+}
+
 export function reconcileTextbookChunks(chunkIndex, modelProblems) {
     return reconcileProblems(chunkIndex, modelProblems).map((problem) => ({
         ...problem,
         question_type: problem.question_type || 'other',
+        knowledge_components: fallbackKnowledgeComponents(problem),
         // Empty stub — private_tutor avoids validator noise; no answer key content.
         solution: {
             text: null,
@@ -941,7 +962,10 @@ function normalizeTextbookCompiled({
                 sectionMeta.section_id ||
                 `${documentId}-${slugify(docTitle) || 'document'}`,
             title: sectionMeta.title || docTitle,
-            concepts: sectionMeta.concepts || [],
+            concepts: (Array.isArray(sectionMeta.concepts)
+                ? sectionMeta.concepts
+                : []
+            ).slice(0, 5),
             definitions: sectionMeta.definitions || [],
             notes: sectionMeta.notes || [],
             examples: sectionMeta.examples || [],

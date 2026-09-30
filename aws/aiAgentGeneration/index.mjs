@@ -294,6 +294,7 @@ export const handler = awslambda.streamifyResponse(
                 recentHistory: fullConversationHistory.slice(-2),
                 officeHours: chatDisplayMode === "Full",
                 problemContext: chatDisplayMode === "Full" ? { courseName: problemContext?.courseName } : problemContext,
+                openai,
                 clientHints: {
                     chat_documents: requestBody.chat_documents,
                     documentId: requestBody.documentId,
