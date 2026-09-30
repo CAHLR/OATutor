@@ -1549,7 +1549,7 @@ class Problem extends React.Component {
                                                     problem.variabilization,
                                                     seed
                                                 ),
-                                                this.context
+                                                this.context, problem.figureAlts
                                             )}
                                         </span>
                                         {this.enableTTS && this.ttsPlayer && (
@@ -1580,7 +1580,7 @@ class Problem extends React.Component {
                                                 problem.variabilization,
                                                 seed
                                             ),
-                                            this.context
+                                            this.context, problem.figureAlts
                                         )}
                                     </div>
                                 </CardContent>
@@ -1687,7 +1687,7 @@ class Problem extends React.Component {
                                                                 ),
                                                                 seed
                                                             ),
-                                                            this.context
+                                                            this.context, step.figureAlts
                                                         )}
                                                     </span>
                                                     {this.enableTTS && this.stepTTSPlayers[idx] && (
