@@ -24,6 +24,7 @@ import Popup from '@components/Popup/Popup';
 import About from '../../pages/Posts/About';
 import ProblemWrapper from '@components/problem-layout/ProblemWrapper';
 import { findLessonById, ThemeContext, SHOW_COPYRIGHT, SITE_NAME } from '../../config/config.js';
+import { getStudentDisplayName } from '../../util/getStudentDisplayName';
 import { CONTENT_SOURCE } from '@common/global-config';
 import withTranslation from '../../util/withTranslation.js';
 
@@ -110,9 +111,7 @@ const ViewAllProblems = ({ translate, history }) => {
   const [showPopup, setShowPopup] = useState(false);
   const [seed] = useState(() => Date.now().toString());
 
-  const studentNameDisplay = context.studentName
-  ? decodeURIComponent(context.studentName)
-  : translate('platform.LoggedIn');
+  const studentNameDisplay = getStudentDisplayName(context, translate('platform.NotLoggedIn'), translate('platform.LoggedIn'));
 
   // no-op handlers for ProblemWrapper
   const displayMastery = () => {};

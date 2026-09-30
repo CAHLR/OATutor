@@ -7,7 +7,7 @@ import { cleanObjectKeys } from "../util/cleanObject";
 import { buildOfficeHoursLesson, courseHasOfficeHours } from "../util/officeHours.js";
 
 const ThemeContext = React.createContext(0);
-const SITE_VERSION = "1.6";
+const SITE_VERSION = "2.0";
 
 const CURRENT_SEMESTER = calculateSemester(Date.now());
 

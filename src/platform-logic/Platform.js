@@ -28,6 +28,7 @@ import {
 import to from "await-to-js";
 import { toast } from "react-toastify";
 import ToastID from "../util/toastIds";
+import { getStudentDisplayName } from "../util/getStudentDisplayName";
 import BrandLogoNav from "@components/BrandLogoNav";
 import { cleanArray } from "../util/cleanObject";
 import ErrorBoundary from "@components/ErrorBoundary";
@@ -103,6 +104,10 @@ class Platform extends React.Component {
     };
     this.completedProbs = new Set();
     this.lesson = null;
+    this.metaLesson = null;
+    this.metaLessonLessons = [];
+    this.currentMetaLessonIndex = -1;
+    this.completedMetaLessonLessons = new Set();
 
     // Tracks the platform-level language captured just before we override it
     // for a course/lesson. `null` means "not currently inside a course" —
@@ -396,9 +401,14 @@ class Platform extends React.Component {
       });
       return;
     }
+    const nextProblem = this._nextProblem(this.context ? this.context : context);
+
     this.setState({
-      currProblem: this._nextProblem(this.context ? this.context : context),
+      currProblem: nextProblem,
     });
+    if (!nextProblem && this.lesson?.isPartOfMetaLesson && this.metaLesson) {
+      await this.handleMetaSubLessonComplete();
+    }
   }
 
   async selectMetaLesson(metaLesson, updateServer = true) {
@@ -773,6 +783,8 @@ class Platform extends React.Component {
       if (this.lesson?.isPartOfMetaLesson && this.metaLesson) {
         return;
       }
+      // Save progress/KC updates before showing completion, so that the final answer actually finishes the lesson
+      this.props.saveProgress();
       // toast.success("You've successfully completed this assignment!", {
       //   toastId: ToastID.successfully_completed_lesson.toString(),
       // });
@@ -981,7 +993,7 @@ class Platform extends React.Component {
         <div style={{ display: showLessonChips ? "flex" : "none", gap: 8, marginTop: 10, flexWrap: "wrap" }}>
           {this.metaLessonLessons.map((lessonId, index) => {
             const lesson = findLessonById(lessonId);
-            const label = lesson?.name || lesson?.topics || (lesson ? lesson.id : null) || "Unavailable lesson";
+            const label = lesson?.displayName || lesson?.name || lesson?.topics || (lesson ? lesson.id : null) || "Unavailable lesson";
             const isCompleted = this.completedMetaLessonLessons.has(lessonId);
             const isCurrent = index === currentIndex;
             const borderColor = isCurrent ? "#0B9B8A" : isCompleted ? "#0B9B8A" : "#EBEFF2";
@@ -1135,7 +1147,11 @@ class Platform extends React.Component {
     const drawerWidth = 340;
     const isMobile = isMobileWidth(width);
 
-    this.studentNameDisplay = this.context.studentName ? decodeURIComponent(this.context.studentName) : translate("platform.LoggedIn");
+    this.studentNameDisplay = getStudentDisplayName(
+      this.context,
+      translate("platform.NotLoggedIn"),
+      translate("platform.LoggedIn")
+    );
 
     const tocCourseName = this.state.selectedCourse?.courseName || findLessonById(this.props.lessonID)?.courseName;
     const currentLesson = findLessonById(this.props.lessonID);
@@ -1149,7 +1165,7 @@ class Platform extends React.Component {
     const inLesson = Boolean(this.props.lessonID);
     const isOfficeHours =
       isFullChatLesson(this.lesson) || isFullChatLesson(currentLesson);
-    const showToc = inLesson && !this.isFromCanvas && !isOfficeHours;
+    const showToc = inLesson && !this.isFromCanvas && !isOfficeHours && !this.isMetaLessonSidebarMode();    
     const progressData = this.getProgressBarData();
     const isCompletionMode = this.lesson?.enableCompletionMode;
     const barPercent = isCompletionMode
