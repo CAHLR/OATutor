@@ -8,11 +8,13 @@ import {
     generateAgentResponse,
     generateSuggestedQuestions,
     judgeAnswerReveal,
+    trimConversationHistory,
 } from "./agent-logic.mjs";
 import {
     buildDocumentContext,
     getDefaultDocumentContextRuntime,
 } from "./document-context.mjs";
+import { isOfficeHoursLessonId } from "./document-id-utils.mjs";
 import crypto from "crypto";
 
 dotenv.config();
@@ -27,6 +29,30 @@ function sha256Hex(s) {
 
 function nowMs() {
     return Date.now();
+}
+
+function resolveRequestedChatModel(requestBody) {
+    const requested = String(requestBody?.chatModel || "").trim();
+    const defaultModel = process.env.OPENAI_MODEL || "gpt-4o";
+    return {
+        defaultModel,
+        chatModel: requested || defaultModel,
+    };
+}
+
+function isInvalidModelError(err) {
+    const code = err?.code || err?.error?.code;
+    const status = err?.status || err?.statusCode;
+    const msg = String(err?.message || "").toLowerCase();
+    return (
+        code === "model_not_found" ||
+        code === "invalid_model" ||
+        status === 404 ||
+        msg.includes("model_not_found") ||
+        msg.includes("invalid model") ||
+        msg.includes("does not exist") ||
+        msg.includes("does not have access")
+    );
 }
 
 function logEvent(evt) {
@@ -87,11 +113,16 @@ export const handler = awslambda.streamifyResponse(
             const condition = requestBody.condition ?? extracted?.condition;
             const lessonId = requestBody.lessonId ?? extracted?.lessonId;
             const chatPrompt = requestBody.chatPrompt ?? problemContext?.chatPrompt;
-            const chatDisplayMode = requestBody.chatDisplayMode ?? extracted?.chatDisplayMode;
+            const requestedChatDisplayMode = requestBody.chatDisplayMode ?? extracted?.chatDisplayMode;
+            const chatDisplayMode =
+                requestedChatDisplayMode === "Full" || isOfficeHoursLessonId(lessonId)
+                    ? "Full"
+                    : requestedChatDisplayMode;
             const chatPenaltyMode =
                 requestBody.chatPenaltyMode ??
                 extracted?.chatPenaltyMode ??
                 problemContext?.chatPenaltyMode;
+            const { defaultModel, chatModel } = resolveRequestedChatModel(requestBody);
 
             if (requestBody?.requestType === "suggestedQuestions") {
                 const metadata = {
@@ -244,19 +275,26 @@ export const handler = awslambda.streamifyResponse(
             httpResponseStream = awslambda.HttpResponseStream.from(responseStream, metadata);
 
             // Prefer client transcript when present (UI is authoritative). DynamoDB
-            // is a fallback for older clients that still send conversationHistory: [].
-            const existingConversation = await loadConversationHistory(sessionId);
+            // is a fallback for older clients that still send conversationHistory: [];
+            // skip the read entirely when the client sent a transcript.
             const clientHistory = Array.isArray(conversationHistory) ? conversationHistory : [];
             const fullConversationHistory = clientHistory.length > 0
                 ? clientHistory
-                : existingConversation;
+                : await loadConversationHistory(sessionId);
+            const { dropped: historyDroppedCount } = trimConversationHistory(fullConversationHistory);
+
+            const resolvedChatPrompt =
+                chatDisplayMode === "Full" ? "PROMPT-officehours.txt" : chatPrompt;
 
             const docCtxStarted = nowMs();
             const docCtx = await buildDocumentContext({
                 lessonId,
                 userMessage: safeUserMessage,
-                problemContext,
-                // Client authority fields are ignored inside the loader.
+                // Short follow-ups ("why?") rank against the thread, not just this line.
+                recentHistory: fullConversationHistory.slice(-2),
+                officeHours: chatDisplayMode === "Full",
+                problemContext: chatDisplayMode === "Full" ? { courseName: problemContext?.courseName } : problemContext,
+                openai,
                 clientHints: {
                     chat_documents: requestBody.chat_documents,
                     documentId: requestBody.documentId,
@@ -274,6 +312,10 @@ export const handler = awslambda.streamifyResponse(
                         docCtx?.allowedDocumentIds ||
                         docCtx?.meta?.allowedDocumentIds ||
                         [],
+                    missingDocumentIds:
+                        docCtx?.missingDocumentIds ||
+                        docCtx?.meta?.missingDocumentIds ||
+                        [],
                     selectedContexts:
                         docCtx?.selectedContexts ||
                         docCtx?.meta?.selectedContexts ||
@@ -287,7 +329,7 @@ export const handler = awslambda.streamifyResponse(
 
             // Optional figure bytes for figure-dependent turns (soft-fail).
             let documentImages = [];
-            if (docCtx?.assetHints?.length) {
+            if (chatDisplayMode !== "Full" && docCtx?.assetHints?.length) {
                 const runtime = getDefaultDocumentContextRuntime();
                 for (const hint of docCtx.assetHints.slice(0, 1)) {
                     const dataUrl = await runtime.tryFetchAssetDataUrl(
@@ -298,21 +340,50 @@ export const handler = awslambda.streamifyResponse(
                 }
             }
 
-            const extractedWithDocs = {
-                ...(extracted || {}),
-                images: [
-                    ...(Array.isArray(extracted?.images) ? extracted.images : []),
-                    ...documentImages,
-                ],
-            };
+            const extractedWithDocs = chatDisplayMode === "Full"
+                ? { ...(extracted || {}), images: [] }
+                : {
+                    ...(extracted || {}),
+                    images: [
+                        ...(Array.isArray(extracted?.images) ? extracted.images : []),
+                        ...documentImages,
+                    ],
+                };
             
+            // Full: course name/topics are resolved server-side from coursePlans
+            // (same authority model as chat_documents). Client values are only a
+            // fallback when the server lookup was unavailable (no runtime, or it failed).
+            const serverLookupUnavailable = docCtx == null || docCtx?.error === true;
+            const serverCourseName =
+                typeof docCtx?.courseName === "string" && docCtx.courseName.trim()
+                    ? docCtx.courseName.trim()
+                    : null;
+            const serverCourseTopics =
+                Array.isArray(docCtx?.courseTopics) && docCtx.courseTopics.length
+                    ? docCtx.courseTopics
+                    : null;
+            const fullCourseName =
+                serverCourseName ??
+                (serverLookupUnavailable ? problemContext?.courseName : undefined);
+            const fullCourseTopics =
+                serverCourseTopics ??
+                (serverLookupUnavailable && Array.isArray(problemContext?.courseTopics)
+                    ? problemContext.courseTopics
+                    : []);
+
             const agentPrompt = buildAgentPrompt({
                 userMessage: safeUserMessage,
-                problemContext,
-                studentState,
+                problemContext: chatDisplayMode === "Full"
+                    ? {
+                        courseName: fullCourseName,
+                        courseTopics: fullCourseTopics,
+                    }
+                    : problemContext,
+                studentState: chatDisplayMode === "Full" ? {} : studentState,
                 conversationHistory: fullConversationHistory,
                 extracted: extractedWithDocs,
-                chatPrompt,
+                chatPrompt: resolvedChatPrompt,
+                chatDisplayMode,
                 documentContextSection: docCtx?.privatePromptSection || null,
             });
 
@@ -360,6 +431,7 @@ export const handler = awslambda.streamifyResponse(
                     chatPrompt,
                     chatDisplayMode,
                     chatPenaltyMode,
+                    chatModel,
                     historyMessageCount: fullConversationHistory.length,
                     llmMessageCount: messagesForLog.length,
                     // Exact roles/order OpenAI sees: system, then prior turns, then latest user.
@@ -384,14 +456,17 @@ export const handler = awslambda.streamifyResponse(
                 turnId,
                 userIdHash,
                 promptHash,
-                model: process.env.OPENAI_MODEL || "gpt-4o",
+                model: chatModel,
                 imagesCount,
                 historyMessageCount: fullConversationHistory.length,
+                historyDroppedCount,
+                historyTrimmedTo: fullConversationHistory.length - historyDroppedCount,
                 condition,
                 lessonId,
                 chatPrompt,
                 chatDisplayMode,
                 chatPenaltyMode,
+                chatModel,
                 problemId: problemContext?.problemID,
                 stepId: problemContext?.currentStep?.id,
                 courseName: problemContext?.courseName,
@@ -401,9 +476,28 @@ export const handler = awslambda.streamifyResponse(
                 hintsUsed,
             });
 
-            const response = await generateAgentResponse(openai, agentPrompt, httpResponseStream, {
-                model: process.env.OPENAI_MODEL || "gpt-4o",
-            });
+            let response;
+            try {
+                response = await generateAgentResponse(openai, agentPrompt, httpResponseStream, {
+                    model: chatModel,
+                });
+            } catch (err) {
+                if (chatModel !== defaultModel && isInvalidModelError(err)) {
+                    logEvent({
+                        eventType: "chat_model_fallback",
+                        sessionId,
+                        turnId,
+                        requestedModel: chatModel,
+                        fallbackModel: defaultModel,
+                        error: err?.message || String(err),
+                    });
+                    response = await generateAgentResponse(openai, agentPrompt, httpResponseStream, {
+                        model: defaultModel,
+                    });
+                } else {
+                    throw err;
+                }
+            }
 
             if (response) {
                 await updateConversationHistory(sessionId, safeUserMessage, response);
@@ -465,6 +559,7 @@ export const handler = awslambda.streamifyResponse(
                 chatPrompt,
                 chatDisplayMode,
                 chatPenaltyMode,
+                chatModel,
                 problemId: problemContext?.problemID,
                 stepId: problemContext?.currentStep?.id,
                 courseName: problemContext?.courseName,

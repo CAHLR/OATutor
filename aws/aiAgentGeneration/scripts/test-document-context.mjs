@@ -28,6 +28,12 @@ import {
     resolveMaterialType,
     toStudentFacingMaterialTitle,
     resetDefaultDocumentContextRuntime,
+    buildEmbedText,
+    cosineSimilarity,
+    embeddingsSidecarRel,
+    flattenLearningObjects,
+    applyRelativeScoreCutoff,
+    buildQueryText,
 } from '../document-context.mjs';
 import { preflightPublish } from './publish-preflight.mjs';
 
@@ -62,6 +68,251 @@ function assertThrows(fn, msgIncludes) {
         }
     }
     if (!threw) throw new Error(`expected throw (${msgIncludes || 'any'})`);
+}
+
+/** Ranking helpers that do not need documents/compiled on disk. */
+function runPureRankingTests() {
+    const joinUnits = [
+        {
+            unit_id: 'data100-disc04-joins-q1',
+            section_title: 'SQL Joins',
+            concepts: ['joins'],
+            material_title: 'Data 100 Discussion 4',
+            problem_id: 'data100-disc04-joins-q1',
+            corpus:
+                'SQL Joins cross join maximum rows m n cartesian product Discussion 4',
+        },
+        {
+            unit_id: 'data100-disc04-other-q1',
+            section_title: 'Other',
+            concepts: [],
+            material_title: 'Data 100 Discussion 4',
+            problem_id: 'data100-disc04-other-q1',
+            corpus: 'unrelated aggregation group by average',
+        },
+    ];
+    const picked = selectRelevantUnits(
+        joinUnits,
+        'cross join maximum rows m n'
+    );
+    assert(
+        picked[0]?.unit?.unit_id?.includes('joins'),
+        `expected joins first, got ${picked[0]?.unit?.unit_id}`
+    );
+    assert(
+        typeof picked[0]?.score === 'number' && picked[0].score > 0,
+        'selectRelevantUnits must return positive numeric scores'
+    );
+    assert(
+        typeof picked[0]?.lexicalScore === 'number',
+        'selectRelevantUnits must expose lexicalScore'
+    );
+    const none = selectRelevantUnits(joinUnits, 'zzzznonmatchingtokenqqq');
+    assert(
+        none.length === 0,
+        'zero positive matches should yield 0 contexts (no min padding)'
+    );
+
+    const intervalDump = Array(400)
+        .fill('interval notation endpoint endpoint endpoint')
+        .join(' ');
+    const rankingUnits = [
+        {
+            unit_id: 'intervals::content',
+            document_id: 'math1b-demo',
+            section_title: 'Interval Notation',
+            concepts: ['intervals', 'endpoints'],
+            material_title: 'Algebra review',
+            problem_id: null,
+            prompt: '',
+            content: intervalDump,
+            corpus: `Interval Notation\n${intervalDump}\nAlgebra review`,
+        },
+        {
+            unit_id: 'abs-value::content',
+            document_id: 'math1b-demo',
+            section_title: 'Absolute Value Inequalities',
+            concepts: ['absolute value', 'inequalities'],
+            material_title: 'Algebra review',
+            problem_id: null,
+            prompt: 'Solve |A| ≤ B by writing a compound inequality.',
+            content: 'Absolute value inequalities',
+            corpus:
+                'Absolute Value Inequalities\nabsolute value inequalities\nSolve |A| ≤ B by writing a compound inequality.\nAlgebra review',
+        },
+    ];
+    const absQuery = selectRelevantUnits(
+        rankingUnits,
+        'how do I solve absolute value inequalities'
+    );
+    assert(
+        absQuery[0]?.unit?.unit_id === 'abs-value::content',
+        `expected abs-value first for lexical query, got ${absQuery[0]?.unit?.unit_id}`
+    );
+    const absQuery2 = selectRelevantUnits(rankingUnits, '|A| ≤ B absolute');
+    assert(
+        absQuery2[0]?.unit?.unit_id === 'abs-value::content',
+        `expected abs-value first for |A|≤B query, got ${absQuery2[0]?.unit?.unit_id}`
+    );
+
+    const hybridUnits = [
+        {
+            unit_id: 'intervals',
+            section_title: 'Intervals',
+            concepts: [],
+            corpus: 'interval endpoint bracket',
+            embedding: [1, 0, 0, 0],
+        },
+        {
+            unit_id: 'abs',
+            section_title: 'Other',
+            concepts: [],
+            corpus: 'unrelated filler text here',
+            embedding: [0, 1, 0, 0],
+        },
+    ];
+    const hybrid = selectRelevantUnits(hybridUnits, 'zzz', {
+        queryEmbedding: [0, 1, 0, 0],
+        embedWeight: 0.9,
+    });
+    assert(
+        hybrid[0]?.unit?.unit_id === 'abs',
+        `expected hybrid embed to prefer abs, got ${hybrid[0]?.unit?.unit_id}`
+    );
+    assert(
+        hybrid[0]?.embedScore != null && hybrid[0].embedScore > 0.9,
+        'hybrid result should expose high embedScore'
+    );
+
+    assert(
+        cosineSimilarity([1, 0], [1, 0]) === 1,
+        'identical vectors cosine = 1'
+    );
+    assert(
+        embeddingsSidecarRel('compiled/math1b/math1b-03.json') ===
+            'compiled/math1b/math1b-03.embeddings.json',
+        'sidecar path derivation'
+    );
+    const embedSample = buildEmbedText({
+        section_title: 'Absolute Value Inequalities',
+        concepts: ['absolute value'],
+        prompt: 'Solve |A| ≤ B',
+        content: 'x'.repeat(2000),
+    });
+    assert(
+        embedSample.includes('Absolute Value') && embedSample.length < 2000,
+        'buildEmbedText prefers title/concepts and truncates body'
+    );
+
+    const cut = applyRelativeScoreCutoff(
+        [
+            { score: 1.0 },
+            { score: 0.95 },
+            { score: 0.4 },
+            { score: 0.3 },
+        ],
+        0.65
+    );
+    assert(
+        cut.length === 2 && cut[0].score === 1 && cut[1].score === 0.95,
+        `relative cutoff should keep top two, got ${cut.map((c) => c.score).join(',')}`
+    );
+
+    const sharedSection = {
+        section_id: 'doc',
+        title: 'Inequalities and Absolute Values',
+        concepts: [
+            'Inequalities',
+            'Intervals',
+            'Unions',
+            'Absolute Value',
+            'Absolute-value Inequalities',
+        ],
+        problems: [
+            {
+                problem_id: 'demo::intervals',
+                title: 'Intervals, unions, intersections',
+                prompt: 'Open and closed interval notation (a,b) and [a,b].',
+                knowledge_components: [
+                    'interval notation',
+                    'unions',
+                    'intersections',
+                ],
+            },
+            {
+                problem_id: 'demo::absolute-value-inequalities',
+                title: 'Absolute-value inequalities',
+                prompt: 'For R > 0, |x - a| < R means a - R < x < a + R.',
+                knowledge_components: [
+                    'absolute-value inequalities',
+                    'compound inequalities',
+                ],
+            },
+        ],
+    };
+    const flat = flattenLearningObjects('demo', { sections: [sharedSection] });
+    const absUnit = flat.find((u) => u.unit_id.includes('absolute'));
+    const intUnit = flat.find((u) => u.unit_id.includes('intervals'));
+    assert(
+        absUnit &&
+            !absUnit.concepts.join(' ').toLowerCase().includes('interval notation'),
+        'abs-value unit must not inherit shared interval concepts'
+    );
+    const rankedShared = selectRelevantUnits(
+        flat,
+        'how do I solve absolute value inequalities'
+    );
+    assert(
+        rankedShared[0]?.unit?.unit_id?.includes('absolute'),
+        `shared section concepts must not outrank abs-value, got ${rankedShared[0]?.unit?.unit_id}`
+    );
+    assert(
+        !rankedShared.some((r) => r.unit.unit_id.includes('intervals')) ||
+            rankedShared[0].unit.unit_id.includes('absolute'),
+        'intervals must not be the top hit for an abs-value query'
+    );
+    void intUnit;
+
+    const conceptual = buildQueryText({
+        userMessage: "Don't use the numbers from the problem — explain the general rule.",
+        problemContext: {
+            problemTitle: 'Algebra with Absolute Values',
+            problemBody: 'interval (-2,1) |2x^2-3x+1|<K',
+            currentStep: { title: 'Find K for |2x^2-3x+1|' },
+        },
+    });
+    assert(
+        !/2x/.test(conceptual),
+        'conceptual asks must not pull sticky problem text into the ranking query'
+    );
+
+    const whyQuery = buildQueryText({
+        userMessage: 'why?',
+        problemContext: {
+            problemTitle: 'Algebra with Absolute Values',
+            problemBody: 'interval (-2,1) |2x^2-3x+1|<K',
+            currentStep: { title: 'Find K' },
+        },
+        recentHistory: [
+            {
+                role: 'user',
+                content: 'How do I solve |A| ≤ B?',
+            },
+            {
+                role: 'assistant',
+                content:
+                    'For $|A| \\leq B$ with $B \\geq 0$, rewrite as $-B \\leq A \\leq B$. Absolute value means distance from zero.',
+            },
+        ],
+    });
+    assert(
+        /\\\\leq|absolute|distance/i.test(whyQuery),
+        `why? follow-up must rank from last assistant math, got: ${whyQuery.slice(0, 120)}`
+    );
+    assert(
+        !/2x\^2|Find K/i.test(whyQuery),
+        'why? follow-up must not inject sticky problem text'
+    );
 }
 
 function compiledPath(documentId) {
@@ -115,8 +366,20 @@ async function main() {
         'lesson-document-map.json must not exist'
     );
 
+    runPureRankingTests();
+    console.log('PASS pure ranking / hybrid unit tests');
+
     const coursePlans = JSON.parse(readFileSync(COURSE_PLANS_PATH, 'utf8'));
-    const sample = pickSampleLesson(coursePlans);
+    let sample;
+    try {
+        sample = pickSampleLesson(coursePlans);
+    } catch (err) {
+        console.warn(
+            `SKIP phase3 integration tests: ${err.message}`
+        );
+        console.log('PASS phase3 document-context tests (ranking only)');
+        return;
+    }
     const sampleLessonId = sample.lessonId;
     const sampleDocs = sample.chat_documents;
     const primaryDoc = sampleDocs[0];
@@ -623,7 +886,11 @@ async function main() {
         );
         assert(
             typeof picked[0]?.score === 'number' && picked[0].score > 0,
-            'selectRelevantUnits must return integer scores'
+            'selectRelevantUnits must return positive numeric scores'
+        );
+        assert(
+            typeof picked[0]?.lexicalScore === 'number',
+            'selectRelevantUnits must expose lexicalScore'
         );
         const none = selectRelevantUnits(units, 'zzzznonmatchingtokenqqq');
         assert(

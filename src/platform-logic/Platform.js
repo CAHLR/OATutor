@@ -3,6 +3,7 @@ import { AppBar, Toolbar } from "@material-ui/core";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import Grid from "@material-ui/core/Grid";
 import ProblemWrapper from "@components/problem-layout/ProblemWrapper.js";
+import StandaloneChatView from "@components/problem-layout/StandaloneChatView.js";
 import LessonSelectionWrapper from "@components/problem-layout/LessonSelectionWrapper.js";
 import { withRouter } from "react-router-dom";
 
@@ -64,6 +65,7 @@ import withWidth from "@material-ui/core/withWidth";
 
 import { ProgressTooltip, InfoTooltip } from "@components/Tooltip";
 import { isMobileWidth } from "../util/responsive";
+import { isFullChatLesson } from "../util/officeHours.js";
 
 let problemPool = require(`@generated/processed-content-pool/${CONTENT_SOURCE}.json`);
 
@@ -392,7 +394,15 @@ class Platform extends React.Component {
     if (prevCompletedProbs) {
       this.completedProbs = new Set(prevCompletedProbs);
     }
+    if (isFullChatLesson(lesson)) {
+      this.setState({
+        currProblem: null,
+        status: "learning",
+      });
+      return;
+    }
     const nextProblem = this._nextProblem(this.context ? this.context : context);
+
     this.setState({
       currProblem: nextProblem,
     });
@@ -1153,9 +1163,9 @@ class Platform extends React.Component {
 
     const lessonMasteryMap = this.getLessonMasteryMap(tocCourseName);
     const inLesson = Boolean(this.props.lessonID);
-    // Meta-lessons render their own sidebar header with per-sub-lesson chips, so the
-    // TOC is redundant there — and its course lookup can't resolve a meta-lesson id.
-    const showToc = inLesson && !this.isFromCanvas && !this.isMetaLessonSidebarMode();
+    const isOfficeHours =
+      isFullChatLesson(this.lesson) || isFullChatLesson(currentLesson);
+    const showToc = inLesson && !this.isFromCanvas && !isOfficeHours && !this.isMetaLessonSidebarMode();    
     const progressData = this.getProgressBarData();
     const isCompletionMode = this.lesson?.enableCompletionMode;
     const barPercent = isCompletionMode
@@ -1245,10 +1255,18 @@ class Platform extends React.Component {
 
         <div
           style={{
-            backgroundColor: "#F6F6F6",
-            paddingBottom: 20,
+            backgroundColor: isOfficeHours ? "#eef4fa" : "#F6F6F6",
+            paddingBottom: isOfficeHours ? 0 : 20,
             display: "flex",
             flexDirection: "column",
+            ...(isOfficeHours
+              ? {
+                  height: "100vh",
+                  maxHeight: "100vh",
+                  overflow: "hidden",
+                  overscrollBehavior: "none",
+                }
+              : {}),
           }}
         >
           {/* Top bar */}
@@ -1279,7 +1297,7 @@ class Platform extends React.Component {
                     <IconButton aria-label="about" title={`About ${SITE_NAME}`} onClick={this.togglePopup} size="small">
                       <HelpOutlineOutlinedIcon htmlColor={"#344054"} style={{ fontSize: 28 }} />
                     </IconButton>
-                    {this.state.status === "learning" && (
+                    {this.state.status === "learning" && !isOfficeHours && (
                       <IconButton aria-label="report problem" onClick={this.toggleFeedback} title={"Report Problem"} size="small">
                         <FeedbackOutlinedIcon htmlColor={"#344054"} style={{ fontSize: 26 }} />
                       </IconButton>
@@ -1317,8 +1335,8 @@ class Platform extends React.Component {
 
           <div className={classes.toolbarOffset} />
 
-          {/* Second top bar (desktop only) */}
-          {!isMobile && (
+          {/* Second top bar (desktop only). Hidden in office hours — one navbar. */}
+          {!isMobile && !isOfficeHours && (
           <AppBar position="fixed" className={classes.secondBarOffset}>
             <Toolbar style={{ minHeight: "56px" }}>
               <Grid container spacing={0} role={"secondary-navigation"} alignItems={"center"}>
@@ -1375,7 +1393,7 @@ class Platform extends React.Component {
                       <HelpOutlineOutlinedIcon htmlColor={"#ffffff"} style={{ fontSize: 36, margin: -2 }} />
                     </IconButton>
 
-                    {this.state.status === "learning" && (
+                    {this.state.status === "learning" && !isOfficeHours && (
                       <IconButton aria-label="report problem" onClick={this.toggleFeedback} title={"Report Problem"}>
                         <FeedbackOutlinedIcon htmlColor={"#ffffff"} style={{ fontSize: 32 }} />
                       </IconButton>
@@ -1390,7 +1408,7 @@ class Platform extends React.Component {
           </AppBar>
           )}
 
-          {!isMobile && <div style={{ height: 56 }} />}
+          {!isMobile && !isOfficeHours && <div style={{ height: 56 }} />}
 
           {/* Progress Bar */}
           <div
@@ -1398,9 +1416,18 @@ class Platform extends React.Component {
               marginLeft: showToc && this.state.drawerOpen && !isMobile ? drawerWidth : 0,
               marginBottom: 0,
               transition: "margin 0.1s ease",
+              ...(isOfficeHours
+                ? {
+                    flex: 1,
+                    minHeight: 0,
+                    display: "flex",
+                    flexDirection: "column",
+                    overflow: "hidden",
+                  }
+                : {}),
             }}
           >
-            {this.state.status === "learning" ? (
+            {this.state.status === "learning" && !isOfficeHours ? (
               <AppBar position="sticky"
                       style={{ top: progressStickyTop, backgroundColor: "#F6F6F6", boxShadow: "none", zIndex: 3 }}>
                 <Toolbar disableGutters style={{ minHeight: isMobile ? 64 : 80, paddingLeft: isMobile ? 8 : 16, paddingRight: isMobile ? 8 : 32 }}>
@@ -1688,6 +1715,19 @@ class Platform extends React.Component {
             )}
             {this.state.status === "learning" ? (
               <ErrorBoundary componentName={"Problem"} descriptor={"problem"}>
+                {isOfficeHours ? (
+                  <div
+                    style={{
+                      ...CONTAINER_STYLE,
+                      padding: 0,
+                      flex: 1,
+                      minHeight: 0,
+                      overflow: "hidden",
+                    }}
+                  >
+                    <StandaloneChatView lesson={this.lesson} />
+                  </div>
+                ) : (
                 <div style={CONTAINER_STYLE}>
                   <ProblemWrapper
                     problem={this.state.currProblem}
@@ -1705,6 +1745,7 @@ class Platform extends React.Component {
                     submitFeedback={this.submitFeedback}
                   />
                 </div>
+                )}
               </ErrorBoundary>
             ) : (
               ""

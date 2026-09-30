@@ -27,18 +27,18 @@ Key files:
 | `agent-logic.mjs` | Prompt loading, chat prompt construction, multimodal message construction, suggested-question prompt and parsing |
 | `prompts/` | Chat prompt templates. Lesson `chat_prompt` is a basename (e.g. `PROMPTv2a.txt`) |
 | `src/components/problem-layout/AgentHelper.js` | Frontend API client for chat turns and suggested questions |
-| `src/components/problem-layout/AgentChatbox.js` | Shared chat UI used by Window, Avatar, and Full modes |
+| `src/components/problem-layout/AgentChatbox.js` | Shared chat UI used by Window, Avatar, and Office Hours (Full) |
 
 ## Chat Display Modes
 
-The frontend reads `lesson.chat_display_mode` from `coursePlans.json`.
+The frontend reads `lesson.chat_display_mode` from the flattened lesson (authored in `coursePlans.json`, except Office Hours which is injected in `config.js`).
 
 | Mode | Behavior |
 | --- | --- |
 | `Off` | AI Tutor is not rendered. Problem and normal hint UI behave without chat. |
 | `Window` | Floating Oski chat window rendered from `Problem.js` through `AgentIntegration`. |
 | `Avatar` | Embedded Window-style chat panel beside the problem. Includes compact Avatar hint UI inside the chat shell and suggested questions below the textbox. |
-| `Full` | Full-screen standalone AI Tutor view via `StandaloneChatView`. The current problem step is shown above the embedded chat. |
+| `Full` | Full-page chat via `StandaloneChatView`; no ITS problem. Authored on a lesson: that lesson's `chat_documents` from `coursePlans.json`. Synthetic Office Hours lesson (`office-hours--…`, when the course has `office_hours: true`): course-wide documents. Lambda uses `PROMPT-officehours.txt`. |
 
 `AgentChatbox` is shared across modes. `AvatarHelpPanel` uses Avatar-only slots (`afterMessagesContent`, `beforeInputContent`) so compact hint cards and hint buttons do not affect Window mode styling.
 

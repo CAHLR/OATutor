@@ -37,6 +37,8 @@ import {
     shouldJudgeAgentAnswerReveal,
     shouldPenalizeAgentOnOpen,
 } from '../../util/helpPenaltyMode.js';
+import { resolveChatModel } from '../../util/chatModel.js';
+import { OFFICE_HOURS_CHAT_PROMPT, collectLessonTopics, isFullChatLesson, isOfficeHoursLesson } from '../../util/officeHours.js';
 import { chooseVariables, variabilize } from '../../platform-logic/variabilize.js';
 
 const CHAT_THEME = {
@@ -62,6 +64,9 @@ function isVisionSafeImageDataUrl(dataUrl) {
 
 // Tail tip x=382 in the 520-wide chat-bubble viewBox
 const LAUNCHER_TAIL_CENTER_PERCENT = (382 / 520) * 100;
+
+// Shown when the stream completes with no text. Never sent back as history.
+const EMPTY_RESPONSE_FALLBACK = "Sorry, I didn't get a response. Please try again.";
 
 const FALLBACK_SUGGESTED_QUESTIONS = [
     'What should I try first?',
@@ -181,6 +186,9 @@ const styles = (theme) => ({
         borderRadius: 14,
         backgroundColor: 'rgba(255, 255, 255, 0.72)',
         border: `1px solid ${CHAT_THEME.pale}`,
+        [theme.breakpoints.down('sm')]: {
+            display: 'none',
+        },
     },
     suggestionsTitle: {
         color: '#5f6f7f',
@@ -384,7 +392,158 @@ const styles = (theme) => ({
         height: 20,
         cursor: 'nwse-resize',
         zIndex: 10,
-    }
+    },
+    officeHoursRoot: {
+        boxShadow: 'none !important',
+        backgroundColor: 'transparent',
+        borderRadius: '0 !important',
+        overflow: 'hidden',
+        minWidth: '0 !important',
+        minHeight: '0 !important',
+        maxWidth: 'none',
+        width: '100%',
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        position: 'relative !important',
+        bottom: 'auto',
+        right: 'auto',
+        left: 'auto',
+    },
+    officeHoursScrollPane: {
+        flex: 1,
+        width: '100%',
+        minHeight: 0,
+        overflowY: 'auto',
+        overflowX: 'hidden',
+        paddingBottom: 16,
+        boxSizing: 'border-box',
+    },
+    officeHoursColumn: {
+        maxWidth: 900,
+        width: 'calc(100% - 48px)',
+        margin: '0 auto',
+        overflow: 'visible',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 20,
+        boxSizing: 'border-box',
+        [theme.breakpoints.down('sm')]: {
+            width: 'calc(100% - 32px)',
+        },
+    },
+    officeHoursIntro: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        textAlign: 'center',
+        padding: '28px 8px 8px',
+        position: 'static',
+    },
+    officeHoursIntroAvatar: {
+        width: 44,
+        height: 44,
+        display: 'block',
+        marginBottom: 6,
+    },
+    officeHoursIntroTitle: {
+        margin: 0,
+        fontFamily: '"Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontSize: 18,
+        fontWeight: 700,
+        color: CHAT_THEME.primaryDark,
+        lineHeight: 1.25,
+    },
+    officeHoursIntroSubtitle: {
+        margin: '4px 0 0',
+        fontFamily: '"Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontSize: 14,
+        fontWeight: 500,
+        color: '#5f6f7f',
+        lineHeight: 1.35,
+    },
+    officeHoursComposerColumn: {
+        maxWidth: 900,
+        width: 'calc(100% - 48px)',
+        margin: '0 auto',
+        overflow: 'visible',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 10,
+        boxSizing: 'border-box',
+        [theme.breakpoints.down('sm')]: {
+            width: 'calc(100% - 32px)',
+        },
+    },
+    officeHoursAssistantMessage: {
+        alignItems: 'flex-start',
+        width: '100%',
+        marginTop: 0,
+    },
+    officeHoursAssistantRow: {
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'flex-start',
+        gap: 12,
+        width: '85%',
+        maxWidth: '85%',
+        alignSelf: 'flex-start',
+        boxSizing: 'border-box',
+    },
+    officeHoursAssistantAvatar: {
+        width: 32,
+        height: 32,
+        flexShrink: 0,
+        marginTop: 2,
+    },
+    officeHoursAssistantBody: {
+        flex: '1 1 auto',
+        minWidth: 0,
+        width: '100%',
+        maxWidth: 'none',
+    },
+    officeHoursAssistantLabel: {
+        fontSize: 14,
+        fontWeight: 700,
+        color: CHAT_THEME.primaryDark,
+        marginBottom: 4,
+        lineHeight: 1.3,
+    },
+    officeHoursAssistantText: {
+        fontSize: 15,
+        lineHeight: 1.65,
+        fontWeight: 400,
+        color: '#1f2933',
+        width: '100%',
+        maxWidth: 'none',
+        '& p': {
+            maxWidth: 'none',
+        },
+    },
+    officeHoursUserBubble: {
+        backgroundColor: '#d7e8f4',
+        color: '#1f2933',
+        boxShadow: 'none',
+        borderRadius: 18,
+        maxWidth: '58%',
+        width: 'fit-content',
+        marginLeft: 'auto',
+        padding: '10px 16px',
+    },
+    officeHoursInput: {
+        flexShrink: 0,
+        width: '100%',
+        backgroundColor: '#eef4fa',
+        borderTop: 'none',
+        padding: '8px 0 20px',
+        boxSizing: 'border-box',
+    },
+    officeHoursMessageInput: {
+        '& .MuiOutlinedInput-root': {
+            borderRadius: 24,
+            backgroundColor: '#fff',
+        },
+    },
 });
 
 class AgentChatbox extends React.Component {
@@ -423,15 +582,35 @@ class AgentChatbox extends React.Component {
     getSessionId = () => agentHelper.getSessionId();
 
     componentDidMount() {
-        // Use initSessionIfNeeded so Problem.js (which mounts first) wins the session ID.
         agentHelper.initSessionIfNeeded();
+        const fb = this.getFirebase();
+        const sid = this.getSessionId();
+        const lesson = this.props.lesson;
+        if (fb?.logChatSession && sid && agentHelper.needsSessionMetaWrite()) {
+            fb.logChatSession(
+                sid,
+                agentHelper.buildChatSessionCreatePayload({
+                    sessionId: sid,
+                    lesson,
+                    oats_user_id: this.context?.userID || null,
+                    lms_user_id: this.context?.user?.user_id || null,
+                    course_id: this.context?.user?.course_id || null,
+                    course_name: this.context?.user?.course_name || lesson?.courseName || null,
+                    course_code: this.context?.user?.course_code || null,
+                    semester: fb.addMetaData?.({})?.semester || null,
+                    treatment: this.context?.getTreatment?.() ?? null,
+                    siteVersion: fb.siteVersion || null,
+                    siteCommitHash: process.env.REACT_APP_COMMIT_HASH || null,
+                    hintPenaltyMode: getHintPenaltyMode(lesson),
+                    chatPenaltyMode: this._getChatPenaltyMode(),
+                })
+            );
+            agentHelper.markSessionMetaWritten();
+        }
         if (this.props.mode === 'embedded' && this.state.isVisible) {
-            // In standalone embedded mode, greet immediately and mark chat as opened.
             this.setState((prev) => ({
                 messages: prev.messages.length === 0 ? this.buildGreetingMessages() : prev.messages,
             }));
-            const fb = this.getFirebase();
-            const sid = this.getSessionId();
             if (fb?.logChatSession && sid) {
                 fb.logChatSession(sid, { chatOpenCount: increment(1), lastActivityAt: Date.now() });
             }
@@ -444,7 +623,29 @@ class AgentChatbox extends React.Component {
     _getChatPenaltyMode = () =>
         this.props.chatPenaltyMode || getChatPenaltyMode(this.props.lesson);
 
+    _isOfficeHours = () =>
+        this.props.officeHours === true ||
+        isFullChatLesson(this.props.lesson);
+
+    _isMobileView = () => {
+        if (this.props.responsive?.isMobile) {
+            return true;
+        }
+        if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') {
+            return false;
+        }
+        return window.matchMedia('(max-width: 959.95px)').matches;
+    };
+
+    _showSuggestedQuestions = () =>
+        Boolean(this.props.showSuggestedQuestions) &&
+        !this._isOfficeHours() &&
+        !this._isMobileView();
+
     _maybePenalizeAgentOnFirstQuery = () => {
+        if (this._isOfficeHours()) {
+            return;
+        }
         if (!shouldPenalizeAgentOnOpen({ mode: this._getChatPenaltyMode() })) {
             return;
         }
@@ -470,6 +671,9 @@ class AgentChatbox extends React.Component {
     };
 
     _maybeJudgeAgentAnswerReveal = async (assistantText) => {
+        if (this._isOfficeHours()) {
+            return;
+        }
         if (!shouldJudgeAgentAnswerReveal({ mode: this._getChatPenaltyMode() })) {
             return;
         }
@@ -488,9 +692,10 @@ class AgentChatbox extends React.Component {
                 stepAnswers: answers,
                 problemContext: this.getProblemContext(),
                 stepId: step?.id || null,
-                chatPrompt: this.props.lesson?.chat_prompt || 'PROMPTv2.txt',
+                chatPrompt: this.props.lesson?.chat_prompt || 'PROMPTv2b.txt',
                 chatDisplayMode: this.props.lesson?.chat_display_mode ?? 'Off',
                 chatPenaltyMode: this._getChatPenaltyMode(),
+                chatModel: resolveChatModel(this.props.lesson),
                 lessonId: this.props.lesson?.id || null,
                 condition: this.props.condition,
             });
@@ -566,7 +771,7 @@ class AgentChatbox extends React.Component {
             this.scrollToBottom(true);
         }
 
-        if (this.props.showSuggestedQuestions) {
+        if (this._showSuggestedQuestions()) {
             this.fetchSuggestedQuestionsIfNeeded();
         }
     }
@@ -575,7 +780,14 @@ class AgentChatbox extends React.Component {
         if (!this.messagesEndRef.current) {
             return;
         }
-        const messagesContainer = this.messagesEndRef.current.parentElement;
+        let messagesContainer = this.messagesEndRef.current.parentElement;
+        while (messagesContainer && messagesContainer !== document.body) {
+            const overflowY = window.getComputedStyle(messagesContainer).overflowY;
+            if (overflowY === 'auto' || overflowY === 'scroll') {
+                break;
+            }
+            messagesContainer = messagesContainer.parentElement;
+        }
         if (!messagesContainer) {
             return;
         }
@@ -598,8 +810,19 @@ class AgentChatbox extends React.Component {
     // student to drive the conversation per the open-inquiry research finding,
     // not to make a contextual diagnosis.
     buildGreetingMessages = () => {
-        const title = this.props.problem?.title;
-        const subject = title ? `**${title}**` : 'this problem';
+        const course = this.props.lesson?.courseName || 'this course';
+        const lessonLabel = String(this.props.lesson?.name || '').replace(/##/g, '').trim();
+        const fullChatScope = isOfficeHoursLesson(this.props.lesson)
+            ? course
+            : (lessonLabel || this.props.lesson?.topics || course);
+        const subject = this.props.problem?.title ? `**${this.props.problem.title}**` : 'this problem';
+        const greeting = this._isOfficeHours()
+            ? [
+                `Hi! I’m Oski. I’m here to help with questions about ${fullChatScope}.`,
+                'You can ask me to explain a concept, work through something you’re stuck on, show you an example.',
+                'What would you like to talk about?',
+            ].join('\n\n')
+            : `Hello! I'm Oski, your AI tutor. I'm here to think through ${subject} with you — feel free to ask me anything, or tell me where you're stuck.`;
         const fb = this.getFirebase();
         const sid = this.getSessionId();
         if (fb?.logChatSession && sid) {
@@ -608,7 +831,7 @@ class AgentChatbox extends React.Component {
         return [{
             id: `greeting-${Date.now()}`,
             role: 'assistant',
-            content: `Hello! I'm Oski, your AI tutor. I'm here to think through ${subject} with you — feel free to ask me anything, or tell me where you're stuck.`,
+            content: greeting,
             timestamp: Date.now(),
             isGenerating: false,
         }];
@@ -626,7 +849,10 @@ class AgentChatbox extends React.Component {
     };
 
     fetchSuggestedQuestionsIfNeeded = async () => {
-        if (!this.props.showSuggestedQuestions || this.state.isLoadingSuggestedQuestions) {
+        if (this._isOfficeHours()) {
+            return;
+        }
+        if (!this._showSuggestedQuestions() || this.state.isLoadingSuggestedQuestions) {
             return;
         }
         if (this.props.allowEmbeddedClose && !this.state.isVisible) {
@@ -656,9 +882,10 @@ class AgentChatbox extends React.Component {
                     condition: this.props.condition,
                     lessonId: this.props.lesson?.id,
                 },
-                this.props.lesson?.chat_prompt || 'PROMPTv2.txt',
+                this.props.lesson?.chat_prompt || 'PROMPTv2b.txt',
                 this.props.lesson?.chat_display_mode ?? 'Off',
                 this._getChatPenaltyMode(),
+                resolveChatModel(this.props.lesson),
             );
 
             this.setState({
@@ -916,8 +1143,12 @@ class AgentChatbox extends React.Component {
 
         // Snapshot prior turns before we append this turn's placeholders.
         // This is a copy for the LLM payload — UI state is updated separately below.
+        // Skip error bubbles, in-flight placeholders, and the empty-response
+        // fallback: none of them are words Oski actually said.
         const conversationHistory = (this.state.messages || [])
             .filter((msg) => msg?.role === 'user' || msg?.role === 'assistant')
+            .filter((msg) => !msg.isError && !msg.isGenerating)
+            .filter((msg) => msg.content !== EMPTY_RESPONSE_FALLBACK)
             .map((msg) => ({
                 role: msg.role,
                 content: typeof msg.content === 'string' ? msg.content : '',
@@ -971,25 +1202,27 @@ class AgentChatbox extends React.Component {
 
         // Get context from props
         const problemContext = this.getProblemContext();
-        // Snapshot once at turn start so user + assistant history rows stay aligned
-        // even if the student changes step while the reply streams.
         const turnProblemId = problemContext?.problemID || null;
         const turnStepId = problemContext?.currentStep?.id || null;
         const studentState = this.getStudentState();
-        const { text, figureUrls } = this.extractConceptExplorationInput(userMessage, problemContext);
-        const images = await this.fetchFiguresAsBase64(figureUrls);
+        const isOfficeHours = this._isOfficeHours();
+        const { text, figureUrls } = isOfficeHours
+            ? { text: userMessage, figureUrls: [] }
+            : this.extractConceptExplorationInput(userMessage, problemContext);
+        const images = isOfficeHours ? [] : await this.fetchFiguresAsBase64(figureUrls);
         const extracted = {
             text,
             images,
-            // Forward experiment condition + lesson id to Lambda so it can be
-            // persisted in CloudWatch + S3 transcripts.
             condition: this.props.condition,
             lessonId: this.props.lesson?.id,
         };
 
-        const chatPrompt = this.props.lesson?.chat_prompt || 'PROMPTv2.txt';
+        const chatPrompt = isOfficeHours
+            ? OFFICE_HOURS_CHAT_PROMPT
+            : (this.props.lesson?.chat_prompt || 'PROMPTv2b.txt');
         const chatDisplayMode = this.props.lesson?.chat_display_mode ?? 'Off';
         const chatPenaltyMode = this._getChatPenaltyMode();
+        const chatModel = resolveChatModel(this.props.lesson);
 
         const assistantMessageId = `assistant-${messageId}`;
         const turnStart = Date.now();
@@ -1027,6 +1260,7 @@ class AgentChatbox extends React.Component {
                                 chatPrompt,
                                 chatDisplayMode,
                                 chatPenaltyMode,
+                                chatModel,
                                 timestampMs: Date.now(),
                             });
                         }
@@ -1054,7 +1288,7 @@ class AgentChatbox extends React.Component {
                             return;
                         }
                         const resolvedResponse = (fullResponse || '').trim()
-                            || "Sorry, I didn't get a response. Please try again.";
+                            || EMPTY_RESPONSE_FALLBACK;
                         this.setState(prevState => ({
                             messages: prevState.messages.map(msg =>
                                 msg.id === assistantMessageId
@@ -1080,6 +1314,7 @@ class AgentChatbox extends React.Component {
                                 chatPrompt,
                                 chatDisplayMode,
                                 chatPenaltyMode,
+                                chatModel,
                                 timestampMs: Date.now(),
                             });
                         }
@@ -1115,7 +1350,8 @@ class AgentChatbox extends React.Component {
                         }
                     }
                 },
-                conversationHistory
+                conversationHistory,
+                chatModel
             );
         } catch (error) {
             // Error already handled in callbacks
@@ -1142,7 +1378,7 @@ class AgentChatbox extends React.Component {
     renderSuggestedQuestions = (questions, loadingSuggestions) => {
         const { classes } = this.props;
 
-        if (!this.props.showSuggestedQuestions || (!loadingSuggestions && questions.length === 0)) {
+        if (!this._showSuggestedQuestions() || (!loadingSuggestions && questions.length === 0)) {
             return null;
         }
 
@@ -1254,6 +1490,14 @@ class AgentChatbox extends React.Component {
      */
     getProblemContext() {
         const { problem, lesson, seed, getActiveStepData } = this.props;
+        if (this._isOfficeHours()) {
+            return {
+                courseName: lesson?.courseName || null,
+                courseTopics: isOfficeHoursLesson(lesson)
+                    ? (lesson?.courseTopics || [])
+                    : collectLessonTopics(lesson),
+            };
+        }
         
         // Get the step student is currently working on
         const activeStepData = getActiveStepData ? getActiveStepData() : null;
@@ -1282,6 +1526,9 @@ class AgentChatbox extends React.Component {
      * @returns {Object} Student state including answers, correctness, skill mastery, and attempt history
      */
     getStudentState() {
+        if (this._isOfficeHours()) {
+            return {};
+        }
         const { stepStates, bktParams, getActiveStepData, attemptHistory, hintUsageByStep } = this.props;
         
         // Get active step
@@ -1382,14 +1629,181 @@ class AgentChatbox extends React.Component {
         return [];
     }
 
+    renderThreadMessage = (message) => {
+        const { classes } = this.props;
+        const isOfficeHours = this._isOfficeHours();
+        const isUser = message.role === 'user';
+
+        if (isUser) {
+            return (
+                <div
+                    key={message.id}
+                    className={`${classes.message} ${classes.userMessage}`}
+                >
+                    <Paper
+                        className={`${classes.messageBubble} ${classes.userBubble}${isOfficeHours ? ` ${classes.officeHoursUserBubble}` : ''}`}
+                        elevation={isOfficeHours ? 0 : 1}
+                    >
+                        {message.content ? (
+                            <Typography variant="body2" style={{ fontSize: 14, lineHeight: 1.4, fontWeight: 400 }}>
+                                {message.content}
+                            </Typography>
+                        ) : (
+                            <Typography variant="body2" style={{ fontSize: 14, lineHeight: 1.4, fontWeight: 400 }}>
+                                {message.isGenerating ? 'Thinking...' : ''}
+                            </Typography>
+                        )}
+                        {message.isGenerating && (
+                            <CircularProgress size={16} style={{ marginLeft: 8 }} />
+                        )}
+                    </Paper>
+                </div>
+            );
+        }
+
+        const assistantBody = message.content ? (
+            <div style={{ fontSize: 15, lineHeight: 1.6, fontWeight: isOfficeHours ? 400 : 500, color: '#1f2933' }}>
+                <MessageRenderer content={message.content} />
+            </div>
+        ) : (
+            <Typography variant="body2" style={{ fontSize: 15, lineHeight: 1.6, fontWeight: isOfficeHours ? 400 : 500, color: '#1f2933' }}>
+                {message.isGenerating ? 'Thinking...' : ''}
+            </Typography>
+        );
+
+        if (isOfficeHours) {
+            return (
+                <div
+                    key={message.id}
+                    className={`${classes.message} ${classes.assistantMessage} ${classes.officeHoursAssistantMessage}`}
+                >
+                    <div className={classes.officeHoursAssistantRow}>
+                        <OskiAvatar className={classes.officeHoursAssistantAvatar} aria-hidden="true" />
+                        <div className={classes.officeHoursAssistantBody}>
+                            <div className={classes.officeHoursAssistantLabel}>Oski</div>
+                            <div className={`${classes.assistantContent} ${classes.officeHoursAssistantText}`}>
+                                {assistantBody}
+                                {message.isGenerating && (
+                                    <CircularProgress size={16} style={{ marginLeft: 8 }} />
+                                )}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        return (
+            <div
+                key={message.id}
+                className={`${classes.message} ${classes.assistantMessage}`}
+            >
+                <div className={classes.assistantContent}>
+                    {assistantBody}
+                    {message.isGenerating && (
+                        <CircularProgress size={16} style={{ marginLeft: 8 }} />
+                    )}
+                </div>
+            </div>
+        );
+    };
+
+    renderThread = (messages, afterMessagesContent) => {
+        const { classes } = this.props;
+        const thread = (
+            <>
+                {messages.map((message) => this.renderThreadMessage(message))}
+                {afterMessagesContent}
+                <div ref={this.messagesEndRef} />
+            </>
+        );
+
+        if (this._isOfficeHours()) {
+            const courseName = this.props.lesson?.courseName || 'this course';
+            const lessonLabel = String(this.props.lesson?.name || '').replace(/##/g, '').trim();
+            const introScope = isOfficeHoursLesson(this.props.lesson)
+                ? courseName
+                : (lessonLabel || courseName);
+            return (
+                <div className={classes.officeHoursScrollPane}>
+                    <div className={classes.officeHoursColumn}>
+                        <div className={classes.officeHoursIntro}>
+                            <OskiAvatar className={classes.officeHoursIntroAvatar} aria-hidden="true" />
+                            <h1 className={classes.officeHoursIntroTitle}>Oski · AI Tutor</h1>
+                            <p className={classes.officeHoursIntroSubtitle}>
+                                Office Hours for {introScope}
+                            </p>
+                        </div>
+                        {thread}
+                    </div>
+                </div>
+            );
+        }
+
+        return (
+            <div className={classes.chatMessages}>
+                {thread}
+            </div>
+        );
+    };
+
+    renderComposer = (questions, loadingSuggestions) => {
+        const { classes } = this.props;
+        const { currentMessage, isGenerating } = this.state;
+        const isOfficeHours = this._isOfficeHours();
+        const chips = this.renderSuggestedQuestions(questions, loadingSuggestions);
+        const field = (
+            <div className={classes.inputContainer}>
+                <TextField
+                    className={`${classes.messageInput}${isOfficeHours ? ` ${classes.officeHoursMessageInput}` : ''}`}
+                    variant="outlined"
+                    size="small"
+                    placeholder="Ask me anything..."
+                    value={currentMessage}
+                    onChange={this.handleInputChange}
+                    onKeyPress={this.handleKeyPress}
+                    disabled={isGenerating}
+                    multiline
+                    maxRows={3}
+                />
+                <IconButton
+                    className={classes.sendButton}
+                    onClick={this.handleSendMessage}
+                    disabled={!currentMessage.trim() || isGenerating}
+                    disableRipple
+                    disableFocusRipple
+                >
+                    <SendArrowIcon className={classes.sendIcon} aria-label="Send" />
+                </IconButton>
+            </div>
+        );
+
+        const body = (
+            <>
+                {this.props.beforeInputContent}
+                {isOfficeHours ? chips : null}
+                {field}
+                {isOfficeHours ? null : chips}
+            </>
+        );
+
+        return (
+            <div className={`${classes.chatInput}${isOfficeHours ? ` ${classes.officeHoursInput}` : ''}`}>
+                {isOfficeHours ? (
+                    <div className={classes.officeHoursComposerColumn}>
+                        {body}
+                    </div>
+                ) : body}
+            </div>
+        );
+    };
+
     render() {
         const { classes, responsive } = this.props;
         const isMobile = responsive?.isMobile ?? false;
         const {
             isVisible,
             messages,
-            currentMessage,
-            isGenerating,
             chatWidth,
             chatHeight,
             suggestedQuestions,
@@ -1400,12 +1814,12 @@ class AgentChatbox extends React.Component {
         const isChatVisible = (mode === 'embedded' && !allowEmbeddedClose) || isVisible;
         const isResizablePanel = !isMobile && (mode === 'floating' || allowEmbeddedClose);
         const useMobileSheet = isMobile && (mode === 'floating' || (mode === 'embedded' && allowEmbeddedClose));
+        const isOfficeHours = this._isOfficeHours();
         const questions = this.props.suggestedQuestions || suggestedQuestions;
         const loadingSuggestions = this.props.isLoadingSuggestedQuestions ?? isLoadingSuggestedQuestions;
         const showEmbeddedHeader = mode === 'embedded' && this.props.showEmbeddedHeader !== false;
         const topContent = this.props.topContent || null;
         const afterMessagesContent = this.props.afterMessagesContent || null;
-        const beforeInputContent = this.props.beforeInputContent || null;
         const embeddedHeight = this.props.embeddedHeight || '100%';
         const header = (
             <div
@@ -1444,7 +1858,7 @@ class AgentChatbox extends React.Component {
                     >
                         <Card
                             ref={this.chatContainerRef}
-                            className={`${classes.chatContainer} ${classes.chatContainerSheet}`}
+                            className={`${classes.chatContainer} ${classes.chatContainerSheet}${isOfficeHours ? ` ${classes.officeHoursRoot}` : ''}`}
                             style={{
                                 width: '100%',
                                 height: '100%',
@@ -1463,79 +1877,8 @@ class AgentChatbox extends React.Component {
                             {topContent}
                             {mode === 'floating' && header}
                             <>
-                                <div className={classes.chatMessages}>
-                                    {messages.map((message) => (
-                                        <div
-                                            key={message.id}
-                                            className={`${classes.message} ${message.role === 'user' ? classes.userMessage : classes.assistantMessage}`}
-                                        >
-                                            {message.role === 'user' ? (
-                                                <Paper
-                                                    className={`${classes.messageBubble} ${classes.userBubble}`}
-                                                    elevation={1}
-                                                >
-                                                    {message.content ? (
-                                                        <Typography variant="body2" style={{ fontSize: 14, lineHeight: 1.4, fontWeight: 400 }}>
-                                                            {message.content}
-                                                        </Typography>
-                                                    ) : (
-                                                        <Typography variant="body2" style={{ fontSize: 14, lineHeight: 1.4, fontWeight: 400 }}>
-                                                            {message.isGenerating ? 'Thinking...' : ''}
-                                                        </Typography>
-                                                    )}
-                                                    {message.isGenerating && (
-                                                        <CircularProgress size={16} style={{ marginLeft: 8 }} />
-                                                    )}
-                                                </Paper>
-                                            ) : (
-                                                <div className={classes.assistantContent}>
-                                                    {message.content ? (
-                                                        <div style={{ fontSize: 15, lineHeight: 1.6, fontWeight: 500, color: '#1f2933' }}>
-                                                            <MessageRenderer content={message.content} />
-                                                        </div>
-                                                    ) : (
-                                                        <Typography variant="body2" style={{ fontSize: 15, lineHeight: 1.6, fontWeight: 500, color: '#1f2933' }}>
-                                                            {message.isGenerating ? 'Thinking...' : ''}
-                                                        </Typography>
-                                                    )}
-                                                    {message.isGenerating && (
-                                                        <CircularProgress size={16} style={{ marginLeft: 8 }} />
-                                                    )}
-                                                </div>
-                                            )}
-                                        </div>
-                                    ))}
-                                    {afterMessagesContent}
-                                    <div ref={this.messagesEndRef} />
-                                </div>
-
-                                <div className={classes.chatInput}>
-                                    {beforeInputContent}
-                                    <div className={classes.inputContainer}>
-                                        <TextField
-                                            className={classes.messageInput}
-                                            variant="outlined"
-                                            size="small"
-                                            placeholder="Ask me anything..."
-                                            value={currentMessage}
-                                            onChange={this.handleInputChange}
-                                            onKeyPress={this.handleKeyPress}
-                                            disabled={isGenerating}
-                                            multiline
-                                            maxRows={3}
-                                        />
-                                        <IconButton
-                                            className={classes.sendButton}
-                                            onClick={this.handleSendMessage}
-                                            disabled={!currentMessage.trim() || isGenerating}
-                                            disableRipple
-                                            disableFocusRipple
-                                        >
-                                            <SendArrowIcon className={classes.sendIcon} aria-label="Send" />
-                                        </IconButton>
-                                    </div>
-                                    {this.renderSuggestedQuestions(questions, loadingSuggestions)}
-                                </div>
+                                {this.renderThread(messages, afterMessagesContent)}
+                                {this.renderComposer(questions, loadingSuggestions)}
                             </>
                         </Card>
                     </MobileBottomSheet>
@@ -1551,7 +1894,7 @@ class AgentChatbox extends React.Component {
         const chatPanel = (
             <Card 
                 ref={this.chatContainerRef}
-                className={`${classes.chatContainer} ${useMobileSheet ? classes.chatContainerSheet : ''}`}
+                className={`${classes.chatContainer} ${useMobileSheet ? classes.chatContainerSheet : ''}${isOfficeHours ? ` ${classes.officeHoursRoot}` : ''}`}
                 style={{
                     width: useMobileSheet
                         ? '100%'
@@ -1579,8 +1922,12 @@ class AgentChatbox extends React.Component {
                         : mode === 'embedded'
                         ? (allowEmbeddedClose ? 20 : 'auto')
                         : undefined,
-                    borderRadius: useMobileSheet ? '20px 20px 0 0' : (mode === 'embedded' ? 12 : undefined),
-                    boxShadow: useMobileSheet
+                    borderRadius: isOfficeHours
+                        ? 0
+                        : useMobileSheet ? '20px 20px 0 0' : (mode === 'embedded' ? 12 : undefined),
+                    boxShadow: isOfficeHours
+                        ? 'none'
+                        : useMobileSheet
                         ? '0 -10px 40px rgba(16, 24, 40, 0.16)'
                         : (mode === 'embedded' ? '0 8px 32px rgba(0, 0, 0, 0.12)' : undefined),
                     minWidth: useMobileSheet || mode === 'embedded' ? 0 : undefined,
@@ -1613,79 +1960,8 @@ class AgentChatbox extends React.Component {
                 )}
 
                 <>
-                        <div className={classes.chatMessages}>
-                            {messages.map((message) => (
-                                <div
-                                    key={message.id}
-                                    className={`${classes.message} ${message.role === 'user' ? classes.userMessage : classes.assistantMessage}`}
-                                >
-                                    {message.role === 'user' ? (
-                                        <Paper
-                                            className={`${classes.messageBubble} ${classes.userBubble}`}
-                                            elevation={1}
-                                        >
-                                            {message.content ? (
-                                                <Typography variant="body2" style={{ fontSize: 14, lineHeight: 1.4, fontWeight: 400 }}>
-                                                    {message.content}
-                                                </Typography>
-                                            ) : (
-                                                <Typography variant="body2" style={{ fontSize: 14, lineHeight: 1.4, fontWeight: 400 }}>
-                                                    {message.isGenerating ? 'Thinking...' : ''}
-                                                </Typography>
-                                            )}
-                                            {message.isGenerating && (
-                                                <CircularProgress size={16} style={{ marginLeft: 8 }} />
-                                            )}
-                                        </Paper>
-                                    ) : (
-                                        <div className={classes.assistantContent}>
-                                            {message.content ? (
-                                                <div style={{ fontSize: 15, lineHeight: 1.6, fontWeight: 500, color: '#1f2933' }}>
-                                                    <MessageRenderer content={message.content} />
-                                                </div>
-                                            ) : (
-                                                <Typography variant="body2" style={{ fontSize: 15, lineHeight: 1.6, fontWeight: 500, color: '#1f2933' }}>
-                                                    {message.isGenerating ? 'Thinking...' : ''}
-                                                </Typography>
-                                            )}
-                                            {message.isGenerating && (
-                                                <CircularProgress size={16} style={{ marginLeft: 8 }} />
-                                            )}
-                                        </div>
-                                    )}
-                                </div>
-                            ))}
-                            {afterMessagesContent}
-                            <div ref={this.messagesEndRef} />
-                        </div>
-
-                        <div className={classes.chatInput}>
-                            {beforeInputContent}
-                            <div className={classes.inputContainer}>
-                                <TextField
-                                    className={classes.messageInput}
-                                    variant="outlined"
-                                    size="small"
-                                    placeholder="Ask me anything..."
-                                    value={currentMessage}
-                                    onChange={this.handleInputChange}
-                                    onKeyPress={this.handleKeyPress}
-                                    disabled={isGenerating}
-                                    multiline
-                                    maxRows={3}
-                                />
-                                <IconButton
-                                    className={classes.sendButton}
-                                    onClick={this.handleSendMessage}
-                                    disabled={!currentMessage.trim() || isGenerating}
-                                    disableRipple
-                                    disableFocusRipple
-                                >
-                                    <SendArrowIcon className={classes.sendIcon} aria-label="Send" />
-                                </IconButton>
-                            </div>
-                            {this.renderSuggestedQuestions(questions, loadingSuggestions)}
-                        </div>
+                        {this.renderThread(messages, afterMessagesContent)}
+                        {this.renderComposer(questions, loadingSuggestions)}
                 </>
             </Card>
         );

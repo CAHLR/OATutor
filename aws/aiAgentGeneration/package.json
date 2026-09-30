@@ -12,6 +12,7 @@
     "dev": "node index.mjs",
     "deploy": "echo 'Deploy to AWS Lambda'",
     "compile-docs": "node scripts/compile-documents.mjs",
+    "embed-docs": "node scripts/embed-documents.mjs",
     "validate-docs": "node scripts/validate-compiled.mjs",
     "publish-docs": "node scripts/publish-docs.mjs"
   },

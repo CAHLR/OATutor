@@ -298,9 +298,11 @@ There is **no** `lesson-document-map.json`.
 
 ```text
 Build (us-west-2): PDF → BDA → semantic compile → validated JSON
+Embed (optional): npm run embed-docs → compiled/*.embeddings.json sidecars
 Publish: npm run publish-docs → private S3 bucket (us-west-1)
 Chat (us-west-1 Lambda): lessonId → coursePlans.chat_documents → load compiled JSON
-  → score learning objects globally → keep 0–5 matches (char budget)
+  (+ embeddings sidecar when present)
+  → hybrid rank (lexical + embeddings) → keep 0–5 matches (char budget)
   → ACCESSIBLE COURSE MATERIALS inventory + <course_context> excerpts → OpenAI
 ```
 
@@ -313,10 +315,13 @@ s3://oatutor-runtime-course-docs/documents/
 ├── coursePlans.json          # uploaded last
 ├── manifest.json
 ├── compiled/*.json
+├── compiled/*.embeddings.json   # optional hybrid-RAG sidecars
 └── assets/{figures,tables,pages}/…
 ```
 
 Do not upload `raw/`, `bda-raw/`, `_compile-report.json`, or `_validation-report.json`.
+Embeddings sidecars live under `compiled/` next to each document
+(`compiled/math1b/math1b-03.embeddings.json`) and are synced by `publish-docs`.
 
 ### Environment
 
@@ -335,12 +340,21 @@ Also set the same variables on the **aiAgentGeneration Lambda** (us-west-1).
 ```bash
 source documents/runtime-docs-env.sh
 npm test
+# After compile (or when ranked retrieval should use semantics):
+npm run embed-docs                    # all manifest ids
+npm run embed-docs -- --only-missing  # skip existing sidecars
+npm run embed-docs -- --doc math1b-03
 npm run publish-docs
 # preflight only:
 npm run publish-docs -- --dry-run
 ```
 
-`publish-docs` runs tests, validates compiled JSON, checks every `chat_documents` id against the manifest and local assets, syncs assets + compiled, uploads `manifest.json`, then uploads `coursePlans.json` **last**.
+`embed-docs` requires `OPENAI_API_KEY`. Optional: `EMBEDDING_MODEL` (default
+`text-embedding-3-small`), `EMBEDDING_DIMENSIONS` (default `512`),
+`RAG_EMBED_WEIGHT` (default `0.6`, used at chat time). Missing sidecars are fine:
+Lambda fails open to lexical-only ranking.
+
+`publish-docs` runs tests, validates compiled JSON, checks every `chat_documents` id against the manifest and local assets, syncs assets + compiled (including `*.embeddings.json`), uploads `manifest.json`, then uploads `coursePlans.json` **last**.
 
 ### IAM
 
@@ -449,7 +463,9 @@ Prefix: documents/
 
 # Not part of this workflow yet
 
-- No Bedrock Knowledge Base or production vector store.
+- No Bedrock Knowledge Base or production vector store (unit vectors are
+  precomputed OpenAI embeddings in `compiled/*.embeddings.json` sidecars;
+  cosine ranking runs in-process in the Lambda).
 - No live BDA call during student chat (compile offline; load compiled JSON from runtime S3).
 - No Textract primary pipeline.
 - No `unpdf` or runtime PDF parsing.
