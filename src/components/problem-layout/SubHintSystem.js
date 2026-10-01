@@ -75,7 +75,7 @@ class SubHintSystem extends React.Component {
                                         hint.title,
                                         problemID,
                                         chooseVariables(Object.assign({}, hintVars, hint.variabilization), seed),
-                                        this.context
+                                        this.context, hint.figureAlts
                                     )
                                     : (
                                         <>
@@ -84,7 +84,7 @@ class SubHintSystem extends React.Component {
                                                 hint.title,
                                                 problemID,
                                                 chooseVariables(Object.assign({}, hintVars, hint.variabilization), seed),
-                                                this.context
+                                                this.context, hint.figureAlts
                                             )}
                                         </>
                                     )}
@@ -92,7 +92,7 @@ class SubHintSystem extends React.Component {
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography component={'span'} style={{ width: "100%" }}>
-                                    {renderText(hint.text, problemID, chooseVariables(Object.assign({}, hintVars, hint.variabilization), seed), this.context)}
+                                    {renderText(hint.text, problemID, chooseVariables(Object.assign({}, hintVars, hint.variabilization), seed), this.context, hint.figureAlts)}
                                     {hint.type === "scaffold" ?
                                         <div>
                                             <Spacer/>

@@ -32,8 +32,9 @@ function sanitizeLatexMath(math) {
  * @param problemID
  * @param {*} variabilization
  * @param context
+ * @param {Object<string, string>} [figureAlts] maps a figure filename to its alt text
  */
-function renderText(text, problemID, variabilization, context) {
+function renderText(text, problemID, variabilization, context, figureAlts) {
     if (typeof text !== "string") {
         return text;
     }
@@ -95,6 +96,7 @@ function renderText(text, problemID, variabilization, context) {
                                 url={subPart}
                                 problemID={problemID}
                                 contentSource={CONTENT_SOURCE}
+                                alt={figureAlts?.[subPart]}
                             />
                         </center>
                     );
@@ -118,8 +120,9 @@ function renderText(text, problemID, variabilization, context) {
  * @param problemID
  * @param {*} variabilization
  * @param context
+ * @param {Object<string, string>} [figureAlts] maps a figure filename to its alt text
  */
-function renderGPTText(text, problemID, variabilization, context) {
+function renderGPTText(text, problemID, variabilization, context, figureAlts) {
     if (typeof text !== "string") {
         return text;
     }
@@ -183,6 +186,7 @@ function renderGPTText(text, problemID, variabilization, context) {
                                 url={subPart}
                                 problemID={problemID}
                                 contentSource={CONTENT_SOURCE}
+                                alt={figureAlts?.[subPart]}
                             />
                         </center>
                     );
