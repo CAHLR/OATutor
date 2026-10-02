@@ -30,6 +30,18 @@
             "$$-2, 3$$",
             "2,3",
             "$$-3, 2$$"
+        ],
+        "subHints": [
+            {
+                "id": "adc8562real13a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Factorization",
+                "text": "$$x^2-x-6$$ can be factorized as $$\\left(x-3\\right) \\left(x+2\\right)$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
         ]
     },
     {
@@ -37,18 +49,6 @@
         "type": "hint",
         "dependencies": [
             "adc8562real13a-h2"
-        ],
-        "title": "Factorization",
-        "text": "$$x^2-x-6$$ can be factorized as $$\\left(x-3\\right) \\left(x+2\\right)$$",
-        "variabilization": {},
-        "oer": "",
-        "license": ""
-    },
-    {
-        "id": "adc8562real13a-h4",
-        "type": "hint",
-        "dependencies": [
-            "adc8562real13a-h3"
         ],
         "title": "Real Line",
         "text": "Now, we will exclude $$-2$$ and $$3$$ from the domain. The answers are all real numbers where $$x<-2$$ or $$-2<x<3$$ or $$x>3$$. We can use a symbol known as the union, U, to combine the two sets.",

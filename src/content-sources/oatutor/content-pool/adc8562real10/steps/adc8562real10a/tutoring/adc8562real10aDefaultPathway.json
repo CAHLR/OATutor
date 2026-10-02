@@ -21,7 +21,7 @@
             "adc8562real10a-h1"
         ],
         "title": "Solve for $$x$$",
-        "text": "We can set the denominator equal to $$0$$ and solve for $$x$$. What is the values of x?(Separate the answers by comma)",
+        "text": "We can set the denominator equal to $$0$$ and solve for $$x$$. What is the values of $$x$$? (Separate the answers with a comma).",
         "variabilization": {},
         "oer": "",
         "license": "",
@@ -30,6 +30,18 @@
             "2,11",
             "$$-2, 11$$",
             "$$-11, -2$$"
+        ],
+        "subHints": [
+            {
+                "id": "adc8562real10a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Factorization",
+                "text": "$$x^2+9x-22$$ can be factorized as $$\\left(x+11\\right) \\left(x-2\\right)$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
         ]
     },
     {
@@ -37,18 +49,6 @@
         "type": "hint",
         "dependencies": [
             "adc8562real10a-h2"
-        ],
-        "title": "Factorization",
-        "text": "$$x^2+9x-22$$ can be factorized as $$\\left(x+11\\right) \\left(x-2\\right)$$",
-        "variabilization": {},
-        "oer": "",
-        "license": ""
-    },
-    {
-        "id": "adc8562real10a-h4",
-        "type": "hint",
-        "dependencies": [
-            "adc8562real10a-h3"
         ],
         "title": "Real Line",
         "text": "Now, we will exclude $$2$$ and $$-11$$ from the domain. The answers are all real numbers where $$x<-11$$ or $$-11<x<2$$ or $$x>2$$. We can use a symbol known as the union, U, to combine the two sets.",
