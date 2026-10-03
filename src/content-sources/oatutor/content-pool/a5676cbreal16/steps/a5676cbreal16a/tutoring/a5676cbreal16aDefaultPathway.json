@@ -1,0 +1,52 @@
+[
+    {
+        "id": "a5676cbreal16a-h1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "6,12"
+        ],
+        "dependencies": [],
+        "title": "What is the amount at $$t=5$$ and $$t=15$$?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$6$$",
+            "$$6, -12$$",
+            "$$-6, 12$$",
+            "6,12"
+        ]
+    },
+    {
+        "id": "a5676cbreal16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a5676cbreal16a-h1"
+        ],
+        "title": "The average rate of change is the change in $$y$$ values divided by the change in $$x$$ values",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a5676cbreal16a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-3}{5}$$"
+        ],
+        "dependencies": [
+            "a5676cbreal16a-h2"
+        ],
+        "title": "What is the difference between amounts divided by the change in $$t$$?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

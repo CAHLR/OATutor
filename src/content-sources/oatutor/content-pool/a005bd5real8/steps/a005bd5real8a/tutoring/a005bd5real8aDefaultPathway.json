@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a005bd5real8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "$$g(0)=7-0^2=7$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a005bd5real8a-h1"
+        ],
+        "title": "Substitute",
+        "text": "$$f(g(0))=f(7)=4\\times7+8$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a005bd5real8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$36$$"
+        ],
+        "dependencies": [
+            "a005bd5real8a-h2"
+        ],
+        "title": "Simplify",
+        "text": "What is $$4\\times7+8$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

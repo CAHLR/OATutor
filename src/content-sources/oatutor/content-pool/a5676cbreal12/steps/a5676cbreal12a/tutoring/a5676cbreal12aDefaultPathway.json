@@ -1,0 +1,34 @@
+[
+    {
+        "id": "a5676cbreal12a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\left(2+h\\right)^3-8$$"
+        ],
+        "dependencies": [],
+        "title": "What is the difference between the $$y$$ values?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a5676cbreal12a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\left(2+h\\right)^3-8}{h}$$"
+        ],
+        "dependencies": [
+            "a5676cbreal12a-h1"
+        ],
+        "title": "Divide the previous answer by the difference between $$2+h$$ and $$2$$",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
