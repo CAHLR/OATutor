@@ -10,7 +10,8 @@ import {
     Typography,
     Paper,
     IconButton,
-    CircularProgress
+    CircularProgress,
+    Button
 } from '@material-ui/core';
 import {
     Close as CloseIcon
@@ -38,8 +39,10 @@ import {
     shouldPenalizeAgentOnOpen,
 } from '../../util/helpPenaltyMode.js';
 import { resolveChatModel } from '../../util/chatModel.js';
-import { OFFICE_HOURS_CHAT_PROMPT, collectLessonTopics, isFullChatLesson, isOfficeHoursLesson } from '../../util/officeHours.js';
+import { collectLessonTopics, isFullChatLesson, isOfficeHoursLesson, resolveFullChatPrompt } from '../../util/officeHours.js';
 import { chooseVariables, variabilize } from '../../platform-logic/variabilize.js';
+import { boundChatMessages, historyPageMessages } from '../../util/chatHistory.js';
+import AnthropologyReviewStarters from './AnthropologyReviewStarters';
 
 const CHAT_THEME = {
     primary: '#4c7d9f',
@@ -567,6 +570,10 @@ class AgentChatbox extends React.Component {
             hasChatBeenOpened: false,
             isLauncherHovered: false,
             firstChatActionRecorded: false, // true once firstActionType has been written
+            hasOlderMessages: false,
+            isLoadingHistory: false,
+            browsingHistory: false,
+            historyError: '',
         };
         this.messagesEndRef = React.createRef();
         this.chatContainerRef = React.createRef();
@@ -581,7 +588,38 @@ class AgentChatbox extends React.Component {
 
     getSessionId = () => agentHelper.getSessionId();
 
+    componentWillUnmount() {
+        this._mounted = false;
+        this.activeRequestId += 1;
+        this.historyController?.abort();
+        agentHelper.cancelMessage();
+    }
+
+    loadHistory = async (latest = false) => {
+        if (this.state.isGenerating || this.state.isLoadingHistory) return;
+        const sid = this.getSessionId();
+        const firstSequence = this.state.messages.find((message) => message.sequence)?.sequence;
+        this.historyController = new AbortController();
+        this.setState({ isLoadingHistory: true, historyError: '' });
+        try {
+            const page = await agentHelper.fetchHistory(latest ? null : firstSequence, this.historyController.signal);
+            if (!this._mounted || sid !== this.getSessionId()) return;
+            const archived = historyPageMessages(page.turns);
+            await new Promise((resolve) => this.setState((prev) => {
+                const messages = latest ? boundChatMessages(archived) : boundChatMessages([
+                    ...archived,
+                    ...prev.messages.filter((message) => message.sequence >= firstSequence),
+                ], 'oldest');
+                return { messages, hasOlderMessages: page.hasMore, browsingHistory: !latest,
+                    isLoadingHistory: false };
+            }, resolve));
+        } catch (error) {
+            if (this._mounted && sid === this.getSessionId()) this.setState({ isLoadingHistory: false, historyError: error.message });
+        }
+    };
+
     componentDidMount() {
+        this._mounted = true;
         agentHelper.initSessionIfNeeded();
         const fb = this.getFirebase();
         const sid = this.getSessionId();
@@ -766,7 +804,7 @@ class AgentChatbox extends React.Component {
             requestAnimationFrame(() => {
                 requestAnimationFrame(() => this.scrollToBottom(true));
             });
-        } else if (this.state.messages.length > prevState.messages.length) {
+        } else if (!this.state.browsingHistory && this.state.messages.length > prevState.messages.length) {
             // New user/assistant turn — always stick to the latest message
             this.scrollToBottom(true);
         }
@@ -816,7 +854,10 @@ class AgentChatbox extends React.Component {
             ? course
             : (lessonLabel || this.props.lesson?.topics || course);
         const subject = this.props.problem?.title ? `**${this.props.problem.title}**` : 'this problem';
-        const greeting = this._isOfficeHours()
+        const customGreeting = String(this.props.lesson?.office_hours_greeting || '').trim();
+        const greeting = this._isOfficeHours() && customGreeting
+            ? customGreeting
+            : this._isOfficeHours()
             ? [
                 `Hi! I’m Oski. I’m here to help with questions about ${fullChatScope}.`,
                 'You can ask me to explain a concept, work through something you’re stuck on, show you an example.',
@@ -1033,6 +1074,7 @@ class AgentChatbox extends React.Component {
     };
 
     clearConversation = () => {
+        this.historyController?.abort();
         this.activeRequestId += 1;
         const fb = this.getFirebase();
         const oldSid = this.getSessionId();
@@ -1073,6 +1115,10 @@ class AgentChatbox extends React.Component {
             isGenerating: false,
             isTyping: false,
             currentMessage: '',
+            hasOlderMessages: false,
+            isLoadingHistory: false,
+            browsingHistory: false,
+            historyError: '',
         }, this.fetchSuggestedQuestionsIfNeeded);
         this._lastPromptedProblemId = null;
     };
@@ -1133,6 +1179,16 @@ class AgentChatbox extends React.Component {
             return;
         }
 
+        if (this.state.isLoadingHistory) return;
+        if (new TextEncoder().encode(nextMessage).length > 16_000) {
+            this.setState({ historyError: 'This message is too long. Please split it into smaller messages.' });
+            return;
+        }
+        if (this.state.browsingHistory) {
+            await this.loadHistory(true);
+            if (this.state.browsingHistory) return;
+        }
+
         const userMessage = nextMessage.trim();
         const messageId = Date.now();
         const requestId = this.activeRequestId + 1;
@@ -1177,9 +1233,9 @@ class AgentChatbox extends React.Component {
             this._lastPromptedProblemId = nextProblemId;
         }
         
-        // Add user message and assistant placeholder in a single setState
+        // Keep only a bounded visible window; the server owns the full transcript.
         this.setState(prevState => ({
-            messages: [
+            messages: boundChatMessages([
                 ...prevState.messages,
                 {
                     id: `user-${messageId}`,
@@ -1194,7 +1250,7 @@ class AgentChatbox extends React.Component {
                     timestamp: Date.now(),
                     isGenerating: true
                 }
-            ],
+            ]),
             currentMessage: '',
             isGenerating: true,
             isTyping: true
@@ -1210,6 +1266,7 @@ class AgentChatbox extends React.Component {
             ? { text: userMessage, figureUrls: [] }
             : this.extractConceptExplorationInput(userMessage, problemContext);
         const images = isOfficeHours ? [] : await this.fetchFiguresAsBase64(figureUrls);
+        if (requestId !== this.activeRequestId) return;
         const extracted = {
             text,
             images,
@@ -1218,7 +1275,7 @@ class AgentChatbox extends React.Component {
         };
 
         const chatPrompt = isOfficeHours
-            ? OFFICE_HOURS_CHAT_PROMPT
+            ? resolveFullChatPrompt(this.props.lesson)
             : (this.props.lesson?.chat_prompt || 'PROMPTv2b.txt');
         const chatDisplayMode = this.props.lesson?.chat_display_mode ?? 'Off';
         const chatPenaltyMode = this._getChatPenaltyMode();
@@ -1238,6 +1295,18 @@ class AgentChatbox extends React.Component {
                 chatDisplayMode,
                 chatPenaltyMode,
                 {
+                    onHistoryCommitted: ({ sequence }) => {
+                        if (requestId !== this.activeRequestId) return;
+                        this.setState((prev) => {
+                            const messages = prev.messages.map((message) =>
+                                message.id === `user-${messageId}` || message.id === assistantMessageId
+                                    ? { ...message, sequence } : message);
+                            const bounded = boundChatMessages(messages);
+                            const first = bounded.find((message) => message.sequence)?.sequence;
+                            return { messages: bounded, hasOlderMessages: first > 1,
+                                browsingHistory: false };
+                        });
+                    },
                     onTurnStarted: (turnId) => {
                         const fb = this.getFirebase();
                         const sid = this.getSessionId();
@@ -1273,11 +1342,11 @@ class AgentChatbox extends React.Component {
                             return;
                         }
                         this.setState(prevState => ({
-                            messages: prevState.messages.map(msg =>
+                            messages: boundChatMessages(prevState.messages.map(msg =>
                                 msg.id === assistantMessageId
                                     ? { ...msg, content: partialResponse }
                                     : msg
-                            )
+                            ))
                         }), () => {
                             // Follow the streaming reply to the bottom (ChatGPT-style)
                             this.scrollToBottom(true);
@@ -1290,11 +1359,11 @@ class AgentChatbox extends React.Component {
                         const resolvedResponse = (fullResponse || '').trim()
                             || EMPTY_RESPONSE_FALLBACK;
                         this.setState(prevState => ({
-                            messages: prevState.messages.map(msg =>
+                            messages: boundChatMessages(prevState.messages.map(msg =>
                                 msg.id === assistantMessageId
                                     ? { ...msg, content: resolvedResponse, isGenerating: false }
                                     : msg
-                            ),
+                            )),
                             isGenerating: false,
                             isTyping: false
                         }), () => {
@@ -1328,7 +1397,7 @@ class AgentChatbox extends React.Component {
                             return;
                         }
                         this.setState(prevState => ({
-                            messages: prevState.messages.map(msg =>
+                            messages: boundChatMessages(prevState.messages.map(msg =>
                                 msg.id === assistantMessageId
                                     ? { 
                                         ...msg, 
@@ -1337,7 +1406,7 @@ class AgentChatbox extends React.Component {
                                         isError: true 
                                     }
                                     : msg
-                            ),
+                            )),
                             isGenerating: false,
                             isTyping: false
                         }), () => {
@@ -1712,7 +1781,22 @@ class AgentChatbox extends React.Component {
         const { classes } = this.props;
         const thread = (
             <>
+                {this.state.hasOlderMessages && (
+                    <Button size="small" onClick={() => this.loadHistory(false)}
+                        disabled={this.state.isGenerating || this.state.isLoadingHistory}>
+                        {this.state.isLoadingHistory ? 'Loading...' : 'Earlier messages'}
+                    </Button>
+                )}
+                {this.state.browsingHistory && (
+                    <Button size="small" onClick={() => this.loadHistory(true)} disabled={this.state.isLoadingHistory}>
+                        Latest messages
+                    </Button>
+                )}
+                {this.state.historyError && <Typography role="alert" color="error">{this.state.historyError}</Typography>}
                 {messages.map((message) => this.renderThreadMessage(message))}
+                <AnthropologyReviewStarters lesson={this.props.lesson} messages={messages}
+                    disabled={this.state.isGenerating || this.state.isLoadingHistory || this.state.browsingHistory}
+                    onSelect={this.handleSuggestedQuestionClick} />
                 {afterMessagesContent}
                 <div ref={this.messagesEndRef} />
             </>

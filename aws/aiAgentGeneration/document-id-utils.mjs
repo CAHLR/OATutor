@@ -73,6 +73,19 @@ export function isOfficeHoursLesson(lesson) {
     return lesson?.officeHours === true || isOfficeHoursLessonId(lesson?.id);
 }
 
+export const OFFICE_HOURS_CHAT_PROMPT = 'PROMPT-officehours.txt';
+
+/**
+ * Prompt for a Full-mode turn. Synthetic Office Hours may use the course's
+ * `office_hours_prompt` (sent by the client); authored Full lessons always use
+ * the default Office Hours prompt.
+ */
+export function resolveFullChatPrompt(lessonId, requestedPrompt) {
+    if (!isOfficeHoursLessonId(lessonId)) return OFFICE_HOURS_CHAT_PROMPT;
+    const name = typeof requestedPrompt === 'string' ? requestedPrompt.trim() : '';
+    return name || OFFICE_HOURS_CHAT_PROMPT;
+}
+
 /** Max topics pasted into the system prompt (large courses have hundreds of LO keys). */
 export const MAX_PROMPT_TOPICS = 40;
 
