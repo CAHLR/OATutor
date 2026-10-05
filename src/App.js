@@ -372,7 +372,6 @@ class App extends React.Component {
                                         path="/debug/:problemID"
                                         render={(props) => (
                                             <DebugPlatform
-                                                key={Date.now()}
                                                 saveProgress={() =>
                                                     this.saveProgress()
                                                 }

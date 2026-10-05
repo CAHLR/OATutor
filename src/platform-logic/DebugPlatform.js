@@ -51,10 +51,6 @@ class DebugPlatform extends React.Component {
     }
 
     componentDidMount() {
-        if (this.context.needRefresh) {
-            this.context.needRefresh = false;
-            window.location.reload();
-        }
         this.onComponentUpdate(null, null, null)
     }
 
@@ -63,6 +59,10 @@ class DebugPlatform extends React.Component {
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
+        if (prevProps.problemID !== this.props.problemID) {
+            this.selectProblem(this.props.problemID, this.context)
+            return
+        }
         this.onComponentUpdate(prevProps, prevState, snapshot)
     }
 
@@ -74,7 +74,6 @@ class DebugPlatform extends React.Component {
 
     selectProblem = (problemID, context) => {
         seed = Date.now().toString();
-        this.setState({ seed: seed }, () => console.log(seed));
         context.debug = true;
         this.problemIndex = {
             problems: problemPool
@@ -87,7 +86,7 @@ class DebugPlatform extends React.Component {
         // Add each Q Matrix skill model attribute to each step
         for (const problem of this.problemIndex.problems) {
             problemIDs.push(problem.id)
-            if (problem.id === this.props.problemID) {
+            if (problem.id === problemID) {
                 chosenProblem = problem;
             }
             for (let stepIndex = 0; stepIndex < problem.steps.length; stepIndex++) {
@@ -95,8 +94,8 @@ class DebugPlatform extends React.Component {
                 step.knowledgeComponents = context.skillModel[step.id];
             }
         }
+        context.problemID = problemID;
         context.problemIDs = problemIDs.sort(this.__compareProblemID);
-        console.log(context.problemIDs)
 
         this.setState({
             currProblem: chosenProblem,
@@ -221,7 +220,8 @@ class DebugPlatform extends React.Component {
                     </Toolbar>
                 </AppBar>
                 {this.state.currProblem
-                    ? <ProblemWrapper problem={this.state.currProblem} problemComplete={this.problemComplete}
+                    ? <ProblemWrapper key={this.state.currProblem.id}
+                               problem={this.state.currProblem} problemComplete={this.problemComplete}
                                lesson={this.lesson}
                                seed={this.state.seed}/>
                     : <Box width={'100%'} textAlign={'center'} pt={4} pb={4}>
