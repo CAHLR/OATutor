@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Estimate the Coefficients",
-        "text": "The graph is a function of the form $$f(x)=\\arccos\\left(nt\\right)+\\operatorname{bcos}\\left(mt\\right)$$. Take a look at the graph and note the frequencies. Note the frequency parameters are $$n$$ and $$m$$.",
+        "text": "The graph is a function of the form $$f(t)=a cos\\left(n t\\right)+b cos\\left(m t\\right)$$. Take a look at the graph and note the frequencies $$n$$ and $$m$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -15,21 +15,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$f(t)=2cos(3t)-cos(2t)$$"
+            "$$f(t)=2cos\\left(3t\\right)-cos\\left(2t\\right)$$"
         ],
         "dependencies": [
             "a82ea5csubstitution20a-h1"
         ],
-        "title": "Selected the Estimate of Coefficients",
-        "text": "2cos",
+        "title": "Select the Estimate of the Coefficients",
+        "text": "Which function matches the graph?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "$$f(t)=2cos(3t)-cos(2t)$$",
-            "$$f(t)=3cos(2t)-cos(3t)$$",
-            "$$f(t)=cos(3t)-cos(2t)$$",
-            "$$f(t)=3cos(3t)-cos(2t)$$"
+            "$$f(t)=2cos\\left(3t\\right)-cos\\left(2t\\right)$$",
+            "$$f(t)=3cos\\left(2t\\right)-cos\\left(3t\\right)$$",
+            "$$f(t)=cos\\left(3t\\right)-cos\\left(2t\\right)$$",
+            "$$f(t)=3cos\\left(3t\\right)-cos\\left(2t\\right)$$"
         ]
     },
     {
@@ -39,7 +39,7 @@
             "a82ea5csubstitution20a-h2"
         ],
         "title": "Set Up the Integral",
-        "text": "Use the correct function to approximate $$\\int_{0}^{pi} f(t) \\,dt$$. Evaluate the integral.",
+        "text": "Use the correct function to approximate $$\\int_{0}^{\\pi} f(t) \\,dt$$. Evaluate the integral.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -56,7 +56,7 @@
             "a82ea5csubstitution20a-h3"
         ],
         "title": "Approximate the Integral",
-        "text": "The integral would be set up as $$\\int_{0}^{pi} 2cos(3t)-cos(2t) \\,dt$$.",
+        "text": "The integral would be set up as $$\\int_{0}^{\\pi} 2cos\\left(3t\\right)-cos\\left(2t\\right) \\,dt$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",

@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Mass-Density Formula",
-        "text": "Let p(x) be an integrable function representing the radial density of a disk of radius $$r$$. Then the mass of the disk is given by $$m=\\int_{0}^{r} 2\\pi p\\left(x\\right) \\,dx$$",
+        "text": "Let \u03c1(x) be an integrable function representing the radial density of a disk of radius $$r$$. Then the mass of the disk is $$m=\\int_{0}^{r} 2\\pi x \u03c1\\left(x\\right) \\,dx$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -16,7 +16,7 @@
             "af9dcc3physical13a-h1"
         ],
         "title": "Set up the integral",
-        "text": "m=/int{2*pi*x*(1+cos(pi*x),0,10,x}=2*pi*/int{x,0,10,x}+2*pi*/int{cos(pi*x),0,10,x}",
+        "text": "$$m=\\int_{0}^{10} 2\\pi x \\left(1+cos\\left(\\pi x\\right)\\right) \\,dx=\\int_{0}^{10} 2\\pi x \\,dx+\\int_{0}^{10} 2\\pi x cos\\left(\\pi x\\right) \\,dx$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -28,7 +28,7 @@
             "af9dcc3physical13a-h2"
         ],
         "title": "Find the integral",
-        "text": "We can evaluate the integral separately: $$2*pi*\\int_{0}^{10} x \\,dx$$ and $$2*pi*\\int_{0}^{10} cos\\left(\\pi x\\right) \\,dx$$",
+        "text": "Evaluate the two integrals separately: $$\\int_{0}^{10} 2\\pi x \\,dx$$ and $$\\int_{0}^{10} 2\\pi x cos\\left(\\pi x\\right) \\,dx$$ (the second one needs integration by parts).",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -40,7 +40,7 @@
             "af9dcc3physical13a-h3"
         ],
         "title": "Evaluate first integral",
-        "text": "$$2*pi*\\int_{0}^{10} x \\,dx$$ is $$\\frac{2\\pi x^2}{2}$$ with the limit from $$x=0$$ to $$x=10$$",
+        "text": "$$\\int_{0}^{10} 2\\pi x \\,dx=\\pi x^2$$ with $$x$$ going from $$0$$ to $$10$$, which is $$100\\pi$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -69,7 +69,7 @@
             "af9dcc3physical13a-h5"
         ],
         "title": "Evaluate second integral",
-        "text": "$$2*pi*\\int_{0}^{10} cos\\left(\\pi x\\right) \\,dx$$ is $$-\\left(\\frac{x}{\\pi}\\right) sin\\left(\\pi x\\right)$$ with the limit from $$x=0$$ to $$x=10+\\frac{1}{\\pi} \\left(-\\frac{1}{\\pi} cos\\left(\\pi x\\right)\\right)$$ with the limit from $$x=0$$ to $$x=10$$",
+        "text": "$$\\int_{0}**{10}2\\pi{}x\\cos(\\pi{}x)\\,dx=2\\pi\\left[\\frac{x\\sin(\\pi{}x)}{\\pi}+\\frac{\\cos(\\pi{}x)}{\\pi**2}\\right]_{0}**{10}=0$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

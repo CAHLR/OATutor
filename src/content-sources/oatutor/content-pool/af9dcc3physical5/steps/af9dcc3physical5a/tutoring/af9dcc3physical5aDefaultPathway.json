@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Mass-Density Formula",
-        "text": "Let p(x) be an integrable function representing the radial density of a disk of radius $$r$$. Then the mass of the disk is given by $$m=\\int_{0}^{r} 2\\pi p\\left(x\\right) \\,dx$$",
+        "text": "Let \u03c1(x) be an integrable function representing the radial density of a disk of radius $$r$$. Then the mass of the disk is $$m=\\int_{0}^{r} 2\\pi x \u03c1\\left(x\\right) \\,dx$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -16,7 +16,7 @@
             "af9dcc3physical5a-h1"
         ],
         "title": "Set up the integral",
-        "text": "$$m=\\int_{0}^{2} 2\\pi x \\left(3x+2\\right) \\,dx=m=\\int_{0}^{2} 2\\pi \\left(3\\left(x^2\\right)+2x\\right) \\,dx=/int{6*pi*(x**2)+4*pi*x$$, 0,2,x}",
+        "text": "$$m=\\int_{0}^{2} 2\\pi x \\left(3x+2\\right) \\,dx=\\int_{0}^{2} 6\\pi x^2+4\\pi x \\,dx$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

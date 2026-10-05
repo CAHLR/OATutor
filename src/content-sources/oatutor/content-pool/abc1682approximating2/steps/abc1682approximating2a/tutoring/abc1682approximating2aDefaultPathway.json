@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Sigma Notation",
-        "text": "We express a sigma notation using the initial number as a lower bound and the ending number as an upper bound. The expression is given in this case sum{i\\=1}{200}{(i-3)**2}",
+        "text": "We express a sigma notation using the initial number as a lower bound and the ending number as an upper bound. The expression is given in this case $$\\sum_{i=1}**{200}(i-3)**2$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -16,7 +16,7 @@
             "abc1682approximating2a-h1"
         ],
         "title": "Expand",
-        "text": "According to the expansion of the perfect square formula, the summation can be written as sum{i\\=1}{200}{(i**2)-(6*i)+9}",
+        "text": "According to the expansion of the perfect square formula, the summation can be written as $$\\sum_{i=1}**{200}\\left(i**2-6i+9\\right)$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -27,7 +27,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "sum{i\\=1}{200}{(i**2)}-sum{i\\=1}{200}{(6*i)}+sum{i\\=1}{200}{9}"
+            "$$\\sum_{i=1}**{200}i**2-\\sum_{i=1}**{200}6i+\\sum_{i=1}**{200}9$$"
         ],
         "dependencies": [
             "abc1682approximating2a-h2"
@@ -38,8 +38,8 @@
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "sum{i\\=1}{200}{(i**2)}-sum{i\\=1}{200}{(6*i)}+sum{i\\=1}{200}{9}",
-            "sum{i\\=1}{200}{(i**2)}-sum{i\\=1}{200}{(6*i)}"
+            "$$\\sum_{i=1}**{200}i**2-\\sum_{i=1}**{200}6i+\\sum_{i=1}**{200}9$$",
+            "$$\\sum_{i=1}**{200}i**2-\\sum_{i=1}**{200}6i$$"
         ],
         "subHints": [
             {
@@ -48,17 +48,17 @@
                 "problemType": "MultipleChoice",
                 "answerType": "string",
                 "hintAnswer": [
-                    "6*sum{i\\=1}{200}{i}"
+                    "$$6\\sum_{i=1}**{200}i$$"
                 ],
                 "dependencies": [],
                 "title": "Properties of Sigma Notation",
-                "text": "How can we isolate the constant in the second term sum{i\\=1}{200}{(6*i)} using the properties of sigma notation?",
+                "text": "How can we isolate the constant in the second term $$\\sum_{i=1}**{200}6i$$ using the properties of sigma notation?",
                 "variabilization": {},
                 "oer": "https://OATutor.io <OATutor>",
                 "license": "",
                 "choices": [
-                    "6*sum{i\\=1}{200}{i}",
-                    "sum{i\\=1}{200}{i}"
+                    "$$6\\sum_{i=1}**{200}i$$",
+                    "$$\\sum_{i=1}**{200}i$$"
                 ]
             }
         ]

@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Calculate the total mass of the system.",
-        "text": "Add the mass values together, the sum is written as such: m=sum{i\\=1}{3}{m_i}",
+        "text": "Add the masses together: $$m=\\sum_{i=1}**{3}m_i$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -44,8 +44,8 @@
         "dependencies": [
             "ad4fd60center4a-h2"
         ],
-        "title": "Find the moments with respect to the $$x-$$ and $$y-axes$$.",
-        "text": "Find both M_y=sum{i\\=1}{3}{m_i*x_i} and M_x=sum{i\\=1}{3}{m_i*y_i}",
+        "title": "Find the moments with respect to the x-axis and y-axis.",
+        "text": "Find both $$M_y=\\sum_{i=1}**{3}m_ix_i$$ and $$M_x=\\sum_{i=1}**{3}m_iy_i$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -61,7 +61,7 @@
         "dependencies": [
             "ad4fd60center4a-h3"
         ],
-        "title": "Find the moment with respect to the x-axis.",
+        "title": "Find the moment with respect to the y-axis.",
         "text": "What is the value of $$M_y$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
@@ -71,7 +71,7 @@
                 "id": "ad4fd60center4a-h4-s1",
                 "type": "hint",
                 "dependencies": [],
-                "title": "Find the moment with respect to the x-axis.",
+                "title": "Find the moment with respect to the y-axis.",
                 "text": "$$-10+6-6=-10$$",
                 "variabilization": {},
                 "oer": "https://OATutor.io <OATutor>",
@@ -90,7 +90,7 @@
         "dependencies": [
             "ad4fd60center4a-h4"
         ],
-        "title": "Find the moment with respect to the y-axis.",
+        "title": "Find the moment with respect to the x-axis.",
         "text": "What is the value of $$M_x$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
@@ -100,7 +100,7 @@
                 "id": "ad4fd60center4a-h5-s1",
                 "type": "hint",
                 "dependencies": [],
-                "title": "Find the moment with respect to the y-axis.",
+                "title": "Find the moment with respect to the x-axis.",
                 "text": "$$-15+9-4=-10$$",
                 "variabilization": {},
                 "oer": "https://OATutor.io <OATutor>",

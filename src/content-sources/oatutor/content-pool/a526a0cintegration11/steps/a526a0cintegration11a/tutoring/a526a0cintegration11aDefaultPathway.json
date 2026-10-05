@@ -3,8 +3,8 @@
         "id": "a526a0cintegration11a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Seperating the terms",
-        "text": "We will start by seperating the $$2$$ terms in this integrals and apply the basic inegration rules on each of them.",
+        "title": "Separating the terms",
+        "text": "We will start by separating the $$2$$ terms in this integral and apply the basic integration rules to each of them.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -15,8 +15,8 @@
         "dependencies": [
             "a526a0cintegration11a-h1"
         ],
-        "title": "Seperating the terms",
-        "text": "$$\\int_{0}^{pi} sinx-cosx \\,dx=\\int_{0}^{pi} sinx \\,dx-\\int_{0}^{pi} cosx \\,dx$$",
+        "title": "Separating the terms",
+        "text": "$$\\int_{0}^{\\pi} sin(x)-cos(x) \\,dx=\\int_{0}^{\\pi} sin(x) \\,dx-\\int_{0}^{\\pi} cos(x) \\,dx$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -25,9 +25,9 @@
         "id": "a526a0cintegration11a-h3",
         "type": "scaffold",
         "problemType": "TextBox",
-        "answerType": "string",
+        "answerType": "arithmetic",
         "hintAnswer": [
-            "-cosx"
+            "$$-cos(x)$$"
         ],
         "dependencies": [
             "a526a0cintegration11a-h2"
@@ -42,9 +42,9 @@
         "id": "a526a0cintegration11a-h4",
         "type": "scaffold",
         "problemType": "TextBox",
-        "answerType": "string",
+        "answerType": "arithmetic",
         "hintAnswer": [
-            "sinx"
+            "sin(x)"
         ],
         "dependencies": [
             "a526a0cintegration11a-h3"
@@ -62,7 +62,7 @@
             "a526a0cintegration11a-h4"
         ],
         "title": "Combine two integrations",
-        "text": "$$(-cos(pi)-cos(0))-(sin(pi)-sin(0))=\\left(-\\left(-1\\right)+1\\right)-0-0=2$$",
+        "text": "$$\\left(-\\cos(\\pi)+\\cos(0)\\right)-\\left(\\sin(\\pi)-\\sin(0)\\right)=(1+1)-(0-0)=2$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

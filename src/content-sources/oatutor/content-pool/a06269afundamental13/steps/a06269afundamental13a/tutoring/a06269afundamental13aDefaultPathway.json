@@ -1,0 +1,81 @@
+[
+    {
+        "id": "a06269afundamental13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Antiderivative",
+        "text": "The first step is to find the antiderivative of the integrand.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a06269afundamental13a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "sec(x)"
+        ],
+        "dependencies": [
+            "a06269afundamental13a-h1"
+        ],
+        "title": "Antiderivative",
+        "text": "What is the antiderivative of $$\\operatorname{sec}\\left(x\\right) tan\\left(x\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "sec(x)",
+            "tan(x)",
+            "$$\\operatorname{sec}\\left(x\\right) tan\\left(x\\right)$$"
+        ]
+    },
+    {
+        "id": "a06269afundamental13a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a06269afundamental13a-h1",
+            "a06269afundamental13a-h2"
+        ],
+        "title": "$$F(b)-F(a)$$",
+        "text": "If F(x) is the antiderivative of f(x), then find $$F(b)-F(a)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a06269afundamental13a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sqrt{2}$$"
+        ],
+        "dependencies": [
+            "a06269afundamental13a-h3"
+        ],
+        "title": "F(b)",
+        "text": "What is $$\\operatorname{sec}\\left(\\frac{\\pi}{4}\\right)$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a06269afundamental13a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a06269afundamental13a-h3"
+        ],
+        "title": "F(a)",
+        "text": "What is sec(0)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

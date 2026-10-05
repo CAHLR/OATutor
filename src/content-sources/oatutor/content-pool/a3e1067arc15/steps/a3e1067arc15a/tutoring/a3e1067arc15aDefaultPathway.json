@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Find the surface area",
-        "text": "The surface area can be found with $$(2*pi)*\\int_{a}^{b} f{\\left(x\\right)} \\sqrt{1+{\\operatorname{f'}\\left(x\\right)}^2} \\,dx$$, where f'(x) indicates the derivative of f(x). We need to plug f(x) and intervals into this equation",
+        "text": "The surface area can be found with $$\\int_{a}^{b} 2\\pi |f{\\left(x\\right)}| \\sqrt{1+{\\operatorname{f'}\\left(x\\right)}^2} \\,dx$$, where f'(x) is the derivative of f(x). Plug f(x) and the interval into this formula.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -50,7 +50,7 @@
             "a3e1067arc15a-h3"
         ],
         "title": "Find the surface area",
-        "text": "After plugging f(x) and the interval into the equation, we will have Surface $$Area=(2*pi)*\\int_{-1}^{1} 7x \\sqrt{1+49} \\,dx=(2*pi)*\\int_{-1}^{1} 7x \\sqrt{50} \\,dx$$",
+        "text": "After plugging f(x) and the interval into the equation, we will have Surface area $$S=\\int_{-1}^{1} 2\\pi |7x| \\sqrt{1+49} \\,dx=\\int_{-1}^{1} 2\\pi |7x| \\sqrt{50} \\,dx$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

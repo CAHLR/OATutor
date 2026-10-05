@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Apply the Integral of a Sum Property",
-        "text": "$$\\int_{a}^{b} f{\\left(x\\right)}+g{\\left(x\\right)} \\,dx=\\int_{a}^{b} f(x) \\,dx+\\int_{a}^{b} g(x) \\,dx$$. In other words, the integral of a sum is the sum of the integrals. This means separating the terms into two different integrals.",
+        "text": "$$\\int_{a}**{b}\\left(f(x)+g(x)\\right)dx=\\int_{a}**{b}f(x)\\,dx+\\int_{a}**{b}g(x)\\,dx$$ In other words, the integral of a sum is the sum of the integrals. This means separating the terms into two different integrals.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -16,7 +16,7 @@
             "a961302definite16a-h1"
         ],
         "title": "Apply the Integral of the Product Property",
-        "text": "$$\\int_{a}^{b} c f{\\left(x\\right)} \\,dx=c*\\int_{a}^{b} f(x) \\,dx$$ for constant c. In other words, the integral of the produce of a constant and a function is equal to the constant multiplied by the integral of the function. This means taking the constant outside and putting it in front of the integral.",
+        "text": "$$\\int_{a}**{b}c\\,f(x)\\,dx=c\\int_{a}**{b}f(x)\\,dx$$ for a constant c. In other words, the integral of the product of a constant and a function is equal to the constant multiplied by the integral of the function. This means taking the constant outside and putting it in front of the integral.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -45,24 +45,26 @@
             "a961302definite16a-h3"
         ],
         "title": "Evaluate the Integrals and Add Them Up Together",
-        "text": "What is $$4*\\int_{2}^{4} f(x) \\,dx-3*\\int_{2}^{4} g(x) \\,dx$$?",
+        "text": "What is $$4\\int_{2}**{4}f(x)\\,dx-3\\int_{2}**{4}g(x)\\,dx$$ ?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
-        "license": ""
-    },
-    {
-        "id": "a961302definite16a-s1",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$41$$"
-        ],
-        "dependencies": [],
-        "title": "Evaluate the Integrals and Add Them Up Together",
-        "text": "What is $$32+9$$?",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": ""
+        "license": "",
+        "subHints": [
+            {
+                "id": "a961302definite16a-h4-s1",
+                "type": "scaffold",
+                "problemType": "TextBox",
+                "answerType": "arithmetic",
+                "hintAnswer": [
+                    "$$41$$"
+                ],
+                "dependencies": [],
+                "title": "Evaluate the Integrals and Add Them Up Together",
+                "text": "What is $$32+9$$?",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
+        ]
     }
 ]

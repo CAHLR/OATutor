@@ -27,27 +27,29 @@
             "$$[-2,6]$$",
             "$$[-5.5, 5.5]$$",
             "[0,10]"
+        ],
+        "subHints": [
+            {
+                "id": "a1cc0dcareas2a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Determine the limits of integration",
+                "text": "As $$f(x)=g(x)$$, we then have $$9-\\left(\\frac{x}{2}\\right)^2=6-x$$",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            },
+            {
+                "id": "a1cc0dcareas2a-h2-s2",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Solve for $$x$$",
+                "text": "$$9-\\frac{x^2}{4}=6-x$$, so $$\\left(x-6\\right) \\left(x+2\\right)=0$$. The graphs intersect when $$x=6$$ and $$x=-2$$, so we integrate from $$-2$$ to $$6$$.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
         ]
-    },
-    {
-        "id": "a1cc0dcareas2a-s1",
-        "type": "hint",
-        "dependencies": [],
-        "title": "Determine the limits of integration",
-        "text": "As $$f(x)=g(x)$$, we then have $$9-\\left(\\frac{x}{2}\\right)^2=6-x$$",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": ""
-    },
-    {
-        "id": "a1cc0dcareas2a-s2",
-        "type": "hint",
-        "dependencies": [],
-        "title": "Solve for $$x$$",
-        "text": "$$9-\\frac{x}{4}=6-x$$ then $$\\left(x-6\\right) \\left(x+2\\right)=0$$. The graphs of functions intersect when $$x=6$$ and $$x=-2$$ so we want to integrate from $$-2$$ to $$6$$.",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": ""
     },
     {
         "id": "a1cc0dcareas2a-h3",
@@ -56,7 +58,7 @@
             "a1cc0dcareas2a-h2"
         ],
         "title": "Set up the integral",
-        "text": "$$\\int_{-2}^{6} 9-\\left(\\frac{x}{2}\\right)^2-6-x \\,dx=\\int_{-2}^{6} 3-\\frac{x^2}{4}+x \\,dx$$",
+        "text": "$$\\int_{-2}**{6}\\left(9-\\left(\\frac{x}{2}\\right)**2-(6-x)\\right)dx=\\int_{-2}**{6}\\left(3-\\frac{x**2}{4}+x\\right)dx$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -80,7 +82,7 @@
             "a1cc0dcareas2a-h4"
         ],
         "title": "Conclusion",
-        "text": "The area of the region is $$\\frac{64}{3}$$ $${unit}^2$$",
+        "text": "The area of the region is $$\\frac{64}{3}$$ square units.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Choose an Expression",
-        "text": "We know the derivative of cost is -sint, so we set $$u=cost$$. Then $$du=-sintdt$$.",
+        "text": "We know the derivative of cos(t) is $$-sin(t)$$, so we set $$u=cos(t)$$. Then $$du=-sin\\left(t\\right) dt$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -15,8 +15,8 @@
         "dependencies": [
             "a82ea5csubstitution3a-h1"
         ],
-        "title": "Substitute cost Into the Integral",
-        "text": "Substitute u as cost into the integral.",
+        "title": "Substitute $$u=cos(t)$$ Into the Integral",
+        "text": "Substitute $$u=cos(t)$$ into the integral.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -39,7 +39,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$-\\left(-\\frac{1}{2}\\right) u^{-2}+C$$"
+            "$$\\frac{1}{2} u^{\\left(-2\\right)}+C$$"
         ],
         "dependencies": [
             "a82ea5csubstitution3a-h3"
@@ -50,10 +50,10 @@
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "$$-\\left(-\\frac{1}{2}\\right) u^{-2}+C$$",
-            "$$\\frac{-1}{2} u^{-2}+C$$",
-            "$$-\\left(-\\frac{1}{2}\\right) u^{+C}$$",
-            "$$u^{-2}+C$$"
+            "$$\\frac{1}{2} u^{\\left(-2\\right)}+C$$",
+            "$$-\\left(\\frac{1}{2}\\right) u^{\\left(-2\\right)}+C$$",
+            "$$u^{\\left(-2\\right)}+C$$",
+            "$$\\frac{1}{2} u^2+C$$"
         ]
     },
     {

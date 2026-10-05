@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Reciprocal Function",
-        "text": "Using one of the basic integration formula $$\\int \\frac{1}{x} \\,dx=log|x|+C$$",
+        "text": "Using the basic integration formula $$\\int \\frac{1}{x} \\,dx=\\ln\\left(|x|\\right)+C$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -15,7 +15,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\frac{1}{2} log|x|+C$$"
+            "$$\\frac{1}{2} \\ln\\left(|x|\\right)+C$$"
         ],
         "dependencies": [
             "a526a0cintegration9a-h1"
@@ -26,13 +26,9 @@
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "$$\\frac{1}{2} log$$",
-            "$$\\frac{1}{2} log|x|+C$$",
-            "$$+C$$",
-            "$$+C$$",
-            "log",
-            "$$x$$",
-            "$$x$$"
+            "$$\\frac{1}{2} \\ln\\left(|x|\\right)+C$$",
+            "$$\\ln\\left(|x|\\right)+C$$",
+            "$$2\\ln\\left(|x|\\right)+C$$"
         ],
         "subHints": [
             {
@@ -40,7 +36,7 @@
                 "type": "hint",
                 "dependencies": [],
                 "title": "Failing to apply Power Rule",
-                "text": "As the function can be rewritten as $$(1/2)*\\int x^{-1} \\,dx$$, we realize the Power Rule for Integrals will result in the denominator equal $$0$$ which is undefined. We have to use another method to approach the problem.",
+                "text": "As the function can be rewritten as $$\\int \\frac{1}{2} x^{\\left(-1\\right)} \\,dx$$, we realize the Power Rule for Integrals would put $$0$$ in the denominator, which is undefined. We have to use another method.",
                 "variabilization": {},
                 "oer": "https://OATutor.io <OATutor>",
                 "license": ""

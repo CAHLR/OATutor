@@ -25,9 +25,9 @@
         "id": "a9ef311slicing6a-h3",
         "type": "scaffold",
         "problemType": "TextBox",
-        "answerType": "string",
+        "answerType": "arithmetic",
         "hintAnswer": [
-            "6-x"
+            "$$6-x$$"
         ],
         "dependencies": [
             "a9ef311slicing6a-h2"
@@ -45,7 +45,7 @@
             "a9ef311slicing6a-h3"
         ],
         "title": "Radius of the Inner Circle",
-        "text": "The radius of the inner circle is $$g(x)=2$$. Therefore, we have $$V=\\int_{0}^{4} \\pi \\left(6-x\\right)^2-2^2 \\,dx$$.",
+        "text": "The radius of the inner circle is $$g(x)=2$$. Therefore, $$V=\\int_{0}^{4} \\pi \\left(\\left(6-x\\right)^2-2^2\\right) \\,dx$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -54,9 +54,9 @@
         "id": "a9ef311slicing6a-h5",
         "type": "scaffold",
         "problemType": "TextBox",
-        "answerType": "string",
+        "answerType": "arithmetic",
         "hintAnswer": [
-            "(160*pi)/3"
+            "$$\\frac{160\\pi}{3}$$"
         ],
         "dependencies": [
             "a9ef311slicing6a-h4"

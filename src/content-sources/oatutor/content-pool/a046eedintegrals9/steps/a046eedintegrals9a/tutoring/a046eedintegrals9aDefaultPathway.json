@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Factoring out Constants",
-        "text": "First factor the $$3$$ outside the integral symbol. Then use the $$u^{\\left(-1\\right)}$$ rule. Thus, $$\\int \\frac{3}{x-10} \\,dx=3*\\int \\frac{1}{x-10} \\,dx$$",
+        "text": "First factor the $$3$$ outside the integral. Then use the $$\\frac{1}{u}$$ rule: $$\\int\\frac{3}{x-10}\\, dx=3\\int\\frac{1}{x-10}\\, dx$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -28,7 +28,7 @@
             "a046eedintegrals9a-h2"
         ],
         "title": "Find the Integral",
-        "text": "$$3*\\int \\frac{1}{u} \\,du=3ln|u|+C$$",
+        "text": "$$3\\int\\frac{1}{u}\\,du=3\\ln|u|+C$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -39,8 +39,8 @@
         "dependencies": [
             "a046eedintegrals9a-h3"
         ],
-        "title": "Back-Subsitute",
-        "text": "As we set $$u=x-10$$ at the beginning, we then obtain $$3ln|x-10|+C$$ with $$x$$ is different from $$0$$.",
+        "title": "Back-Substitute",
+        "text": "As we set $$u=x-10$$ at the beginning, we obtain $$3\\ln\\left(|x-10|\\right)+C$$, for $$x$$ not equal to $$10$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

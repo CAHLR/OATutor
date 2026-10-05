@@ -15,7 +15,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$V=pi*\\int_{1}^{4} x^2-\\left(\\frac{1}{x}\\right)^2 \\,dx$$"
+            "$$V=\\int_{1}^{4} \\pi \\left(x^2-\\left(\\frac{1}{x}\\right)^2\\right) \\,dx$$"
         ],
         "dependencies": [
             "a9ef311slicing5a-h1"
@@ -26,10 +26,10 @@
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "$$V=pi*\\int_{1}^{4} x^2-\\left(\\frac{1}{x}\\right)^2 \\,dx$$",
-            "$$V=pi*\\int_{4}^{1} x^2-\\left(\\frac{1}{x}\\right)^2 \\,dx$$",
-            "$$V=\\int_{1}^{4} \\pi x^2-\\frac{1}{x} \\,dx$$",
-            "$$V=\\int_{4}^{1} \\pi x^2-\\frac{1}{x} \\,dx$$"
+            "$$V=\\int_{1}^{4} \\pi \\left(x^2-\\left(\\frac{1}{x}\\right)^2\\right) \\,dx$$",
+            "$$V=\\int_{4}^{1} \\pi \\left(x^2-\\left(\\frac{1}{x}\\right)^2\\right) \\,dx$$",
+            "$$V=\\int_{1}^{4} \\pi \\left(x^2-\\frac{1}{x}\\right) \\,dx$$",
+            "$$V=\\int_{4}^{1} \\pi \\left(x^2-\\frac{1}{x}\\right) \\,dx$$"
         ]
     },
     {

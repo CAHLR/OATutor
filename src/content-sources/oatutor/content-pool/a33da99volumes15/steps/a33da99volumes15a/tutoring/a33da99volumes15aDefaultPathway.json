@@ -16,7 +16,7 @@
             "a33da99volumes15a-h1"
         ],
         "title": "Find the volume",
-        "text": "Using the shell, $$V=/int{2*pi*x*$$ (5*(x**3)),0,1,x}=2*pi*(/int{5*(x**4),0,1,x})",
+        "text": "Using shells, $$V=\\int_{0}^{1} 2\\pi x\\times5 x^3 \\,dx=\\int_{0}^{1} 10\\pi x^4 \\,dx$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -28,7 +28,7 @@
             "a33da99volumes15a-h2"
         ],
         "title": "Find the integral",
-        "text": "So we need to solve $$2\\pi$$ times $$\\frac{5x^5}{5}$$ with limits from $$0$$ to $$1$$.",
+        "text": "So we need to solve $$2\\pi x^5$$ with limits from $$0$$ to $$1$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

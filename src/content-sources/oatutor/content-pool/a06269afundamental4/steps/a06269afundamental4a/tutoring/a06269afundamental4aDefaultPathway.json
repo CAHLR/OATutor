@@ -1,0 +1,80 @@
+[
+    {
+        "id": "a06269afundamental4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Split",
+        "text": "Because both limits of integration are variables, split the integral into two.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a06269afundamental4a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-\\int_{0}^{x} t^3 \\,dt+\\int_{0}^{2x} t^3 \\,dt$$"
+        ],
+        "dependencies": [
+            "a06269afundamental4a-h1"
+        ],
+        "title": "Split",
+        "text": "Which pair of split integrals is correct?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$-\\int_{x}^{0} t^3 \\,dt+\\int_{0}^{2x} t^3 \\,dt$$",
+            "$$-\\int_{0}^{x} t^3 \\,dt+\\int_{0}^{2x} t^3 \\,dt$$",
+            "$$\\int_{x}^{0} t^3 \\,dt-\\int_{0}^{2x} t^3 \\,dt$$"
+        ]
+    },
+    {
+        "id": "a06269afundamental4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a06269afundamental4a-h2"
+        ],
+        "title": "Differentiate",
+        "text": "Differentiate both integrals.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a06269afundamental4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-x^3$$"
+        ],
+        "dependencies": [
+            "a06269afundamental4a-h3"
+        ],
+        "title": "Differentiate",
+        "text": "What is $$\\frac{d}{dx}$$ of $$-\\int_{0}^{x} t^3 \\,dt$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "a06269afundamental4a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$16x^3$$"
+        ],
+        "dependencies": [
+            "a06269afundamental4a-h3"
+        ],
+        "title": "Differentiate",
+        "text": "What is $$\\frac{d}{dx}$$ of $$\\int_{0}^{2x} t^3 \\,dt$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

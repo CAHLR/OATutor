@@ -29,7 +29,7 @@
             "$$2x^3$$",
             "$$2x$$",
             "$$3x^2$$",
-            "$$e^2 x^3$$"
+            "$$e^{2x^3}$$"
         ]
     },
     {
@@ -51,7 +51,7 @@
             "a046eedintegrals3a-h3"
         ],
         "title": "Adjusting the Constant Coefficient",
-        "text": "As we've determined that du $$=$$ $$6x^2$$ dx, and the original function incorporates a factor of $$3x^2$$ (rather than 6x**2), we need to make a minor adjustment to the constant multiplier to align it with the function we intend to substitute.",
+        "text": "As we have determined that $$du=6x^2 dx$$, and the original function has a factor of $$3x^2$$ rather than $$6x^2$$, we need to adjust the constant.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -63,7 +63,7 @@
             "a046eedintegrals3a-h4"
         ],
         "title": "Adjusting the Constant Coefficient",
-        "text": "We can easily see that $$3$$ is $$\\frac{1}{2}$$ of $$6$$ so we will divide both side of the expression by $$2$$ and obtain $$\\frac{du}{2}=3x^2 dx$$",
+        "text": "Since $$3$$ is $$\\frac{1}{2}$$ of $$6$$, we divide both sides by $$2$$ and obtain $$\\frac{du}{2}=3x^2 dx$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -75,7 +75,7 @@
             "a046eedintegrals3a-h5"
         ],
         "title": "Using u-Substitution",
-        "text": "$$\\int 3x^2 e^2 x^3 \\,dx=(1/2)*\\int e^u \\,du$$",
+        "text": "$$\\int 3x^2 e^{2x^3} \\,dx=\\int \\frac{1}{2} e^u \\,du$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -87,7 +87,7 @@
             "a046eedintegrals3a-h6"
         ],
         "title": "Find the integral",
-        "text": "Integrate the expression in u and then substitute the original expression in $$x$$ back into the u integral: $$(1/2)*\\int e^u \\,du=\\frac{1}{2} e^u+C$$",
+        "text": "Integrate the expression in u and then substitute the original expression in $$x$$ back: $$\\int \\frac{1}{2} e^u \\,du=\\frac{1}{2} e^u+C$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

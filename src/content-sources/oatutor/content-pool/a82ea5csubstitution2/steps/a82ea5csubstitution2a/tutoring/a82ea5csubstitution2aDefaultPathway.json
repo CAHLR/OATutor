@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Rewrite the Integral",
-        "text": "Rewrite the integral as $$\\int z\\left(\\left(z^2-5\\right)^{\\frac{1}{2}}\\right) \\,dz$$.",
+        "text": "Rewrite the integral as $$\\int z \\left(z^2-5\\right)^{\\frac{1}{2}} \\,dz$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -16,7 +16,7 @@
             "a82ea5csubstitution2a-h1"
         ],
         "title": "Choose an Expression",
-        "text": "Let $$u=z^2-5$$ and $$du=2zdz$$. Our new concern is that $$du=2zdz$$ and the original expression has only xdz.",
+        "text": "Let $$u=z^2-5$$ and $$du=2z dz$$. Our new concern is that $$du=2z dz$$, but the original integral only has $$z dz$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -51,7 +51,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$1/2*\\int u \\frac{1}{2} \\,du$$"
+            "$$\\int \\frac{1}{2} u^{\\frac{1}{2}} \\,du$$"
         ],
         "dependencies": [
             "a82ea5csubstitution2a-h4"
@@ -62,9 +62,9 @@
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "$$1/2*\\int u \\frac{1}{2} \\,du$$",
-            "$$1/2*\\int u \\,du$$",
-            "$$\\int u \\frac{1}{2} \\,du$$",
+            "$$\\int \\frac{1}{2} u^{\\frac{1}{2}} \\,du$$",
+            "$$\\int \\frac{1}{2} u \\,du$$",
+            "$$\\int u^{\\frac{1}{2}} \\,du$$",
             "$$\\int u \\,du$$"
         ]
     },

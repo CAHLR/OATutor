@@ -1,0 +1,58 @@
+[
+    {
+        "id": "a06269afundamental10b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Area Under",
+        "text": "First, find the area under the function in the first quadrant that is bounded by the x-axis and y-axis. You can see this shape in the figure.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a06269afundamental10b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-3$$"
+        ],
+        "dependencies": [
+            "a06269afundamental10b-h1"
+        ],
+        "title": "Area Under",
+        "text": "What is the total area of the shaded area between the piecewise function and x-axis?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a06269afundamental10b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a06269afundamental10b-h2"
+        ],
+        "title": "Average Value",
+        "text": "Next, find the average value by multiplying the area by $$\\frac{1}{b-a}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a06269afundamental10b-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{-1}{2}$$"
+        ],
+        "dependencies": [
+            "a06269afundamental10b-h3"
+        ],
+        "title": "Average Value",
+        "text": "What is $$-3\\frac{1}{6-0}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

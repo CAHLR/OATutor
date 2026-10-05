@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Set up the integral",
-        "text": "We will start by converting the word problem in to the mathematical expession. The surface of a sphere formula will be integrated with the double side length and the boundaries run from $$x=R$$ to $$x=2R$$.",
+        "text": "We will start by converting the word problem into a mathematical expression. The rate of change of the surface area of a sphere will be integrated from $$x=R$$ to $$x=2R$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -15,7 +15,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$8*pi*\\int_{R}^{2R} x \\,dx$$"
+            "$$\\int_{R}^{2R} 8\\pi x \\,dx$$"
         ],
         "dependencies": [
             "a526a0cintegration13a-h1"
@@ -26,21 +26,23 @@
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "$$4*pi*\\int_{R}^{2R} x \\,dx$$",
-            "$$8*pi*\\int_{R}^{2R} 2x \\,dx$$",
-            "$$8*pi*\\int_{R}^{2R} x \\,dx$$",
-            "$$8*pi*\\int_{R}^{2R} x \\,dx$$"
+            "$$\\int_{R}^{2R} 4\\pi x \\,dx$$",
+            "$$\\int_{R}^{2R} 8\\pi\\times2 x \\,dx$$",
+            "$$\\int_{R}^{2R} 8\\pi x \\,dx$$",
+            "$$\\int_{R}^{2R} 8\\pi x^2 \\,dx$$"
+        ],
+        "subHints": [
+            {
+                "id": "a526a0cintegration13a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Set up the integral",
+                "text": "The surface area of a sphere is $$4\\pi x^2$$, where $$x$$ is the radius, so its rate of change is $$8\\pi x$$. The $$8\\pi$$ can be treated as a constant.",
+                "variabilization": {},
+                "oer": "https://OATutor.io <OATutor>",
+                "license": ""
+            }
         ]
-    },
-    {
-        "id": "a526a0cintegration13a-s1",
-        "type": "hint",
-        "dependencies": [],
-        "title": "Set up the integral",
-        "text": "The surface of a cube formula originally is $$8\\pi x$$ with $$x$$ is a radius of the sphere. The term $$8\\pi$$ can be treated as a constant and moved out of the integral.",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": ""
     },
     {
         "id": "a526a0cintegration13a-h3",
@@ -49,7 +51,7 @@
             "a526a0cintegration13a-h2"
         ],
         "title": "Net change theorem",
-        "text": "The Net Change Theorem giving the integral for determining change in a function F(x) when $$x$$ changes from a to $$b$$ is stated as $$F(b)-F(a)=\\int_{a}^{b} \\frac{d}{dx} F\\left(x\\right) \\,dx$$",
+        "text": "The Net Change Theorem says that when $$x$$ changes from a to $$b$$, the change in F(x) is $$F(b)-F(a)=\\int_{a}^{b} F'(x) \\,dx$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -61,7 +63,7 @@
             "a526a0cintegration13a-h3"
         ],
         "title": "Calculate the derivative",
-        "text": "$$\\frac{d}{dx} F\\left(x\\right)=\\frac{d}{dx} 4\\pi r^2=8\\pi x$$",
+        "text": "$$F'(x)=\\frac{d}{dx}\\left(4\\pi{}x**2\\right)=8\\pi{}x$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -73,7 +75,7 @@
             "a526a0cintegration13a-h4"
         ],
         "title": "Compute the integral",
-        "text": "$$8*pi*\\int_{R}^{2R} x \\,dx=\\frac{8\\pi x^2}{2}$$ with $$x$$ running from $$x=R$$ to $$x=2R$$",
+        "text": "$$\\int_{R}^{2R} 8\\pi x \\,dx=\\frac{8\\pi x^2}{2}$$ with $$x$$ running from $$x=R$$ to $$x=2R$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -85,7 +87,7 @@
             "a526a0cintegration13a-h5"
         ],
         "title": "Evaluate",
-        "text": "$$\\frac{8\\pi \\left(2R\\right)^2}{2}-\\frac{8\\pi R^2}{2}=12\\pi R$$",
+        "text": "$$\\frac{8\\pi(2R)**2}{2}-\\frac{8\\pi{}R**2}{2}=12\\pi{}R**2$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

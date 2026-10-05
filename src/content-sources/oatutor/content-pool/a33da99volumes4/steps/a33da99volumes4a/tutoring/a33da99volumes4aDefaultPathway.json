@@ -28,7 +28,7 @@
             "a33da99volumes4a-h2"
         ],
         "title": "Find the height of a shell",
-        "text": "Note that the axis of revolution is the y-axis, so the radius of a shell is given simply by $$x$$. We don\u2019t need to make any adjustments to the $$x-term$$ of our integrand. The height of a shell, though, is given by $$f(x)-g(x)$$, so in this case we need to adjust the f(x) term of the integrand.",
+        "text": "Note that the axis of revolution is the y-axis, so the radius of a shell is simply $$x$$. The height of a shell is $$f(x)-g(x)$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -40,7 +40,7 @@
             "a33da99volumes4a-h3"
         ],
         "title": "Find the volume",
-        "text": "$$V=2*pi*\\int_{1}^{4} x \\left(\\sqrt{x}-\\frac{1}{x}\\right) \\,dx=2*pi*\\int_{1}^{4} x^{\\frac{3}{2}}-1 \\,dx$$",
+        "text": "$$V=\\int_{1}^{4} 2\\pi x \\left(\\sqrt{x}-\\frac{1}{x}\\right) \\,dx=\\int_{1}^{4} 2\\pi \\left(x^{\\frac{3}{2}}-1\\right) \\,dx$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -52,7 +52,7 @@
             "a33da99volumes4a-h4"
         ],
         "title": "Find the integral",
-        "text": "$$2\\pi \\frac{2x^{\\frac{5}{2}}}{5}-x$$ with the limits going from $$x=1$$ to $$x=4$$.",
+        "text": "$$2\\pi \\left(\\frac{2x^{\\frac{5}{2}}}{5}-x\\right)$$ with the limits going from $$x=1$$ to $$x=4$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -64,7 +64,7 @@
             "a33da99volumes4a-h5"
         ],
         "title": "Evaluate",
-        "text": "2*pi*(((2*4**(5/2))/5)-4-(2*pi*(((2*1**(5/2))/5)-1)=94*pi/5",
+        "text": "$$2\\pi\\left(\\frac{2\\cdot4**{5/2}}{5}-4\\right)-2\\pi\\left(\\frac{2\\cdot1**{5/2}}{5}-1\\right)=\\frac{94\\pi}{5}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

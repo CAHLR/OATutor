@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Set up the integral",
-        "text": "$$A=\\int_{a}^{b} |f(x)-g(x)| \\,dx=\\int_{0}^{\\frac{\\pi}{4}} cosx-sinx \\,dx+\\int_{\\frac{\\pi}{4}}^{pi} sinx-cosx \\,dx$$",
+        "text": "$$A=\\int_{a}^{b} |f{\\left(x\\right)}-g{\\left(x\\right)}| \\,dx=\\int_{0}^{\\frac{\\pi}{4}} cos(x)-sin(x) \\,dx+\\int_{\\frac{\\pi}{4}}^{\\pi} sin(x)-cos(x) \\,dx$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -16,7 +16,7 @@
             "a1cc0dcareas3a-h1"
         ],
         "title": "Integrate from $$0$$ to $$\\frac{\\pi}{4}$$",
-        "text": "$$\\int_{0}^{\\frac{\\pi}{4}} cosx-sinx \\,dx=sinx+cox$$ with $$x$$ goes from $$0$$ to $$\\frac{\\pi}{4}$$.",
+        "text": "$$\\int_{0}^{\\frac{\\pi}{4}} cos(x)-sin(x) \\,dx=sin\\left(x\\right)+cos\\left(x\\right)$$ with $$x$$ going from $$0$$ to $$\\frac{\\pi}{4}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -44,8 +44,8 @@
         "dependencies": [
             "a1cc0dcareas3a-h3"
         ],
-        "title": "Integrate from $$\\frac{\\pi}{4}$$ to pi",
-        "text": "$$\\int_{0}^{\\frac{\\pi}{4}} -cosx-sinx \\,dx=sinx+cox$$ with $$x$$ goes from $$\\frac{\\pi}{4}$$ to pi",
+        "title": "Integrate from $$\\frac{\\pi}{4}$$ to $$\\pi$$",
+        "text": "$$\\int_{\\frac{\\pi}{4}}^{\\pi} sin(x)-cos(x) \\,dx=-cos(x)-sin(x)$$ with $$x$$ going from $$\\frac{\\pi}{4}$$ to $$\\pi$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -62,7 +62,7 @@
             "a1cc0dcareas3a-h4"
         ],
         "title": "Evaluate",
-        "text": "What is the Area of a region bounded from $$x=0$$ to $$x=\\frac{\\pi}{4}$$?",
+        "text": "What is the area of the region from $$x=\\frac{\\pi}{4}$$ to $$x=\\pi?$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -74,7 +74,7 @@
             "a1cc0dcareas3a-h5"
         ],
         "title": "The area of the whole region",
-        "text": "$$\\sqrt{2}-1+\\sqrt{2}+1=2\\sqrt{2}$$ $${units}^2$$",
+        "text": "$$\\sqrt{2}-1+\\sqrt{2}+1=2\\sqrt{2}$$ square units",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

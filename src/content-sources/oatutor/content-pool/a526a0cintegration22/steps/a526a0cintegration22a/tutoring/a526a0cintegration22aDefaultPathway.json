@@ -3,8 +3,8 @@
         "id": "a526a0cintegration22a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Finding the $$t-intercept$$",
-        "text": "The total distance traveled includes both the positive and the negative values. Therefore, we must integrate the absolute value of the velocity function to find the total distance traveled. To continue with the example, use two integrals to find the total distance. First, find the $$t-intercept$$ of the function, since that is where the division of the interval occurs. Set the equation equal to zero and solve for $$t$$. Thus,",
+        "title": "Finding where $$v(t)=0$$",
+        "text": "The total distance traveled includes both the positive and the negative values. Therefore, we must integrate the absolute value of the velocity function to find the total distance traveled. To do this, use two integrals. First, find where the velocity changes sign, which is where $$v(t)=0$$. That is where the interval is divided. Set the equation equal to zero and solve for $$t$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -18,8 +18,8 @@
             "$$\\frac{5}{3}$$"
         ],
         "dependencies": [],
-        "title": "Finding the $$t-intercept$$",
-        "text": "What is the $$t-intercept$$ of this function?",
+        "title": "Finding where $$v(t)=0$$",
+        "text": "At what value of $$t$$ is $$v(t)=0$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -31,7 +31,7 @@
             "a526a0cintegration22a-h2"
         ],
         "title": "Subintervals",
-        "text": "The two subintervals are $$[0,\\frac{5}{3}]$$ and $$[\\frac{5}{3},3]$$. To find the total distance traveled, integrate the absolute value of the function. Since the function is negative over the interval $$[0,\\frac{5}{3}]$$ and positive over $$[\\frac{5}{3},3]$$, we obtain /int{-(3*t)-5),0,5/3,t}+/int{(3*t)-5,5/3,3,t}",
+        "text": "The two subintervals are $$[0,\\frac{5}{3}]$$ and $$[\\frac{5}{3},3]$$. To find the total distance traveled, integrate the absolute value of the function. Since the function is negative over the interval $$[0,\\frac{5}{3}]$$ and positive over $$[\\frac{5}{3},3]$$, we obtain $$\\int_{0}^{\\frac{5}{3}} -\\left(3t-5\\right) \\,dt+\\int_{\\frac{5}{3}}^{3} 3t-5 \\,dt$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -43,7 +43,7 @@
             "a526a0cintegration22a-h3"
         ],
         "title": "Compute the integral",
-        "text": "Power rules for integrals gives us $$\\left(-\\frac{3t^2}{2}\\right)+5t$$ with $$t=$$ $$0$$ as a lower boundary and $$t=\\frac{5}{3}$$ as an upper boundary added to $$\\left(-\\frac{3t^2}{2}\\right)+5t$$ with $$t=$$ $$\\frac{5}{3}$$ as a lower boundary and $$t=3$$ as an upper boundary.",
+        "text": "The power rule for integrals gives $$\\frac{-\\left(3t^2\\right)}{2}+5t$$ with $$t=0$$ as the lower bound and $$t=\\frac{5}{3}$$ as the upper bound, added to $$\\frac{3t^2}{2}-5t$$ with $$t=\\frac{5}{3}$$ as the lower bound and $$t=3$$ as the upper bound.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -55,7 +55,7 @@
             "a526a0cintegration22a-h4"
         ],
         "title": "Evaluate the integral",
-        "text": "-3*((5/3)**2)/2+5*(5/3)+27/2-15-(-3*((5/3)**2)/2)-25/3)=41/6",
+        "text": "$$\\left(-\\frac{3}{2}\\left(\\frac{5}{3}\\right)**2+5\\cdot\\frac{5}{3}\\right)+\\left(\\frac{3}{2}\\cdot3**2-5\\cdot3\\right)-\\left(\\frac{3}{2}\\left(\\frac{5}{3}\\right)**2-5\\cdot\\frac{5}{3}\\right)=\\frac{25}{6}+\\frac{8}{3}=\\frac{41}{6}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

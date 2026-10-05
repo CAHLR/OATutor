@@ -15,7 +15,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$1+cosx$$"
+            "$$1+cos\\left(x\\right)$$"
         ],
         "dependencies": [
             "a046eedintegrals12a-h1"
@@ -26,8 +26,8 @@
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "$$1+cosx$$",
-            "sinx"
+            "$$1+cos\\left(x\\right)$$",
+            "sin(x)"
         ],
         "subHints": [
             {
@@ -35,7 +35,7 @@
                 "type": "hint",
                 "dependencies": [],
                 "title": "Why u-Substitution",
-                "text": "The reason why we want to set $$u=1+cosx$$ is because that expression is on the denominator and we know that $$\\frac{d}{\\operatorname{dx}\\left(1+cosx\\right)}=-sinx$$. So that $$du=-sinx$$ or $$-du=sinx$$ which is an expression on the numerator",
+                "text": "We set $$u=1+cos\\left(x\\right)$$ because it is in the denominator and its derivative is $$-sin(x)$$. So $$du=-sin\\left(x\\right) dx$$, or $$-du=sin\\left(x\\right) dx$$, which is the numerator.",
                 "variabilization": {},
                 "oer": "https://OATutor.io <OATutor>",
                 "license": ""
@@ -73,7 +73,7 @@
             "a046eedintegrals12a-h4"
         ],
         "title": "Result of Changing the Limits",
-        "text": "As $$u=1+cosx$$, we will have upper and lower limits $$x=1$$ and $$x=2$$ respectively.",
+        "text": "Since $$u=1+cos\\left(x\\right)$$, the new limits are $$u=2$$ when $$x=0$$, and $$u=1$$ when $$x=\\frac{\\pi}{2}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -109,7 +109,7 @@
             "a046eedintegrals12a-h7"
         ],
         "title": "Find the Integral",
-        "text": "$$\\int_{1}^{2} u^{\\left(-1\\right)} \\,du=ln|u|$$ with the limit goes from $$u=1$$ to $$u=2$$",
+        "text": "$$\\int_{1}^{2} u^{\\left(-1\\right)} \\,du=\\ln\\left(|u|\\right)$$ with u going from $$1$$ to $$2$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -121,7 +121,7 @@
             "a046eedintegrals12a-h8"
         ],
         "title": "Evaluate the Integral",
-        "text": "$$ln2-ln1=ln2$$",
+        "text": "$$ln(2)-ln(1)=ln(2)$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

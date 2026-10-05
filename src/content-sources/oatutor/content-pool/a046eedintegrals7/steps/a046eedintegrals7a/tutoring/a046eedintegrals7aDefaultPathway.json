@@ -16,7 +16,7 @@
             "a046eedintegrals7a-h1"
         ],
         "title": "Applying Net Change Theorem",
-        "text": "$$g(10)-g(0)=\\int_{0}^{10} 2e^{0.02} t \\,dt$$. Note that $$g(0)=100$$ is given",
+        "text": "$$P(10)-P(0)=\\int_{0}^{10} 2e^{0.02t} \\,dt$$, where P is the population. Note that $$P(0)=100$$ is given.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -28,7 +28,7 @@
             "a046eedintegrals7a-h2"
         ],
         "title": "Solve for g(10)",
-        "text": "Add both sides by g(0) or $$100$$ to obtain $$g(10)=100+\\int_{0}^{10} 2e^{0.02} t \\,dt$$",
+        "text": "Add $$100$$ to both sides to obtain $$P(10)=100+\\int_{0}^{10} 2e^{0.02t} \\,dt$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -40,7 +40,7 @@
             "a046eedintegrals7a-h3"
         ],
         "title": "Compute the Integral",
-        "text": "$$100+\\frac{2}{0.02} e^{0.02} t$$ with the limit goes from $$t=0$$ to $$t=10$$.",
+        "text": "$$100+\\frac{2}{0.02} e^{0.02t}$$ with $$t$$ going from $$0$$ to $$10$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -52,7 +52,7 @@
             "a046eedintegrals7a-h4"
         ],
         "title": "Evaluate the Integral",
-        "text": "$$100+100e^{0.2}-100=122$$",
+        "text": "$$100+100e^{0.2}-100=122.14$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

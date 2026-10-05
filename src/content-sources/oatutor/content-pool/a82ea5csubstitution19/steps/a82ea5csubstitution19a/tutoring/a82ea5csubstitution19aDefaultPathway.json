@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Choose an Expression",
-        "text": "Let $$u=1+x^2$$, so $$du=2xdx$$.",
+        "text": "Let $$u=1+x^2$$, so $$du=2x dx$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -27,7 +27,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$1/2*\\int_{1}^{2} u^{\\left(-\\frac{1}{2}\\right)} \\,du$$"
+            "$$\\int_{1}^{2} \\frac{1}{2} u^{\\left(-\\frac{1}{2}\\right)} \\,du$$"
         ],
         "dependencies": [
             "a82ea5csubstitution19a-h2"
@@ -38,8 +38,8 @@
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "$$1/2*\\int_{1}^{2} u^{\\left(-\\frac{1}{2}\\right)} \\,du$$",
-            "$$1/2*\\int_{2}^{1} u^{\\left(-\\frac{1}{2}\\right)} \\,du$$",
+            "$$\\int_{1}^{2} \\frac{1}{2} u^{\\left(-\\frac{1}{2}\\right)} \\,du$$",
+            "$$\\int_{2}^{1} \\frac{1}{2} u^{\\left(-\\frac{1}{2}\\right)} \\,du$$",
             "$$\\int_{1}^{2} u^{\\left(-\\frac{1}{2}\\right)} \\,du$$",
             "$$\\int_{2}^{1} u^{\\left(-\\frac{1}{2}\\right)} \\,du$$"
         ]
@@ -51,7 +51,7 @@
             "a82ea5csubstitution19a-h3"
         ],
         "title": "Evaluate the Definite Integral",
-        "text": "",
+        "text": "$$\\int_{1}^{2} \\frac{1}{2} u^{\\left(-\\frac{1}{2}\\right)} \\,du=\\sqrt{2}-\\sqrt{1}=\\sqrt{2}-1$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

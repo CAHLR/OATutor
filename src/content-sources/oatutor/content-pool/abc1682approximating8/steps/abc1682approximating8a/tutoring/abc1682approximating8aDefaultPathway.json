@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Expand the sum",
-        "text": "In order to calculate the sum, we need to define the starting value which is a number below the summation sign. If it appears as $$i=1$$, we can easily subtitute $$n$$ into the sum according to the consecutive integers squared and compute the sum. Otherwise, we have to manipulate it by expanding the sum.",
+        "text": "In order to calculate the sum, we need to define the starting value, which is the number below the summation sign. If it is $$i=1$$, we can directly use the formula for the sum of consecutive integers squared. Otherwise, we have to manipulate the sum first.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -33,7 +33,7 @@
             "abc1682approximating8a-h2"
         ],
         "title": "Expand the sum",
-        "text": "Since this sum starts from the fifth term, we have to calculate the sum of the tenth term minus the sum of the first $$4$$ terms",
+        "text": "Since this sum starts from the fifth term, we calculate the sum of the first ten terms minus the sum of the first four terms.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -80,7 +80,7 @@
             "abc1682approximating8a-h3"
         ],
         "title": "Rearranging the sum",
-        "text": "We can rewrite the sum of the first four terms as:sum{i\\=1}{4}{i**2)}",
+        "text": "We can rewrite the sum of the first four terms as $$\\sum_{i=1}**{4}i**2$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -109,7 +109,7 @@
             "abc1682approximating8a-h6"
         ],
         "title": "Sums of integers",
-        "text": "Using the sum of consecutive integers squared, we obtain:sum{i\\=1}{10}{i**2}=10*(10+1)*(2*10+1)/6=385",
+        "text": "Using the sum of consecutive integers squared, we obtain $$\\sum_{i=1}**{10}i**2=\\frac{10(10+1)(2\\cdot10+1)}{6}=385$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -121,8 +121,8 @@
             "abc1682approximating8a-h4",
             "abc1682approximating8a-h7"
         ],
-        "title": "Sums of last five terms",
-        "text": "The summation with the starting value of $$5$$ can be calculated $$as:385-30=355$$",
+        "title": "Sum of the last six terms",
+        "text": "The summation with the starting value of $$5$$ can be calculated as $$385-30=355$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

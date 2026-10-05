@@ -28,7 +28,7 @@
             "a33da99volumes9a-h2"
         ],
         "title": "Shell Method",
-        "text": "The general formula of cylindrical shells is given as $$2*pi*\\int_{a}^{b} x f{\\left(x\\right)} \\,dx$$.",
+        "text": "The general formula for cylindrical shells is $$\\int_{a}^{b} 2\\pi x f{\\left(x\\right)} \\,dx$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -55,7 +55,7 @@
                 "type": "hint",
                 "dependencies": [],
                 "title": "A point of intersection",
-                "text": "The lower limit is also the point where two graphs intersect each other. To find that point, we set $$y^2=y^2-2y+1$$ and solve for $$x$$. Then $$x=\\frac{1}{4}$$",
+                "text": "The lower limit is where the two graphs intersect. Set $$y^2=y^2-2y+1$$ and solve for $$y$$ to get $$y=\\frac{1}{2}$$, so $$x=\\frac{1}{4}$$.",
                 "variabilization": {},
                 "oer": "https://OATutor.io <OATutor>",
                 "license": ""
@@ -134,7 +134,7 @@
             "a33da99volumes9a-h6"
         ],
         "title": "Find f(x)",
-        "text": "$$\\sqrt{x}-1-\\sqrt{x}=2\\sqrt{x}-1$$",
+        "text": "$$\\sqrt{x}-\\left(1-\\sqrt{x}\\right)=2\\sqrt{x}-1$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -146,7 +146,7 @@
             "a33da99volumes9a-h7"
         ],
         "title": "Set up the integral",
-        "text": "$$2*pi*\\int_{\\frac{1}{4}}^{2} x \\left(2\\sqrt{x}-1\\right) \\,dx$$",
+        "text": "$$\\int_{\\frac{1}{4}}^{2} 2\\pi x \\left(2\\sqrt{x}-1\\right) \\,dx$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -158,7 +158,7 @@
             "a33da99volumes9a-h8"
         ],
         "title": "Find the integral",
-        "text": "$$2\\pi \\left(\\frac{4}{5} \\frac{x^5}{2}-\\frac{x^2}{2}\\right)$$ as the limits going from $$x=\\frac{1}{4}$$ to $$x=2$$.",
+        "text": "$$2\\pi \\left(\\frac{4}{5} x^{\\frac{5}{2}}-\\frac{x^2}{2}\\right)$$ as the limits go from $$x=\\frac{1}{4}$$ to $$x=2$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

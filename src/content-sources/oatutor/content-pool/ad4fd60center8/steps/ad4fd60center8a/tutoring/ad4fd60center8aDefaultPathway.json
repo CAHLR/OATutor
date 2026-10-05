@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "The depicted region",
-        "text": "The graphs of the functions intersect at $$(-2,-3)$$ and $$(1,0)$$, so we integrate from $$-2$$ to $$1$$. For the sake of convenience, assume $$\ud835\udf0c=1$$.\\n##figure1.gif##",
+        "text": "The graphs of the functions intersect at $$(-2,-3)$$ and $$(1,0)$$, so we integrate from $$-2$$ to $$1$$. For the sake of convenience, assume $$\u03c1=1$$.\\n##figure1.gif##",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -21,7 +21,7 @@
             "ad4fd60center8a-h1"
         ],
         "title": "Total mass",
-        "text": "First, we calculate the total mass: $$\ud835\udf0c*\\int_{a}^{b} f(x)-g(x) \\,dx=\\int_{-2}^{1} 1-x^2-x-1 \\,dx$$. What is the value of the total mass?",
+        "text": "First, we calculate the total mass: $$m=\\int_{-2}**{1}\\left(1-x**2-(x-1)\\right)dx$$ What is the value of the total mass?",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -38,7 +38,7 @@
             "ad4fd60center8a-h2"
         ],
         "title": "The moments",
-        "text": "Next, we calculate the moments. $$\ud835\udc40x=\ud835\udf0c*\\int_{a}^{b} \\frac{1}{2} \\left({f{\\left(x\\right)}}^2-{g{\\left(x\\right)}}^2\\right) \\,dx=(1/2)*\\int_{-2}^{1} \\left(1-x^2\\right)^2-\\left(x-1\\right)^2 \\,dx$$. What is the value of\ud835\udc40x?",
+        "text": "Next, we calculate the moments: $$M_x=\\frac{1}{2}\\int_{-2}**{1}\\left((1-x**2)**2-(x-1)**2\\right)dx$$ What is the value of $$M_x$$?",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -55,7 +55,7 @@
             "ad4fd60center8a-h3"
         ],
         "title": "The moments",
-        "text": "$$M_y=\ud835\udf0c*\\int_{a}^{b} x \\left(f{\\left(x\\right)}-g{\\left(x\\right)}\\right) \\,dx=\\int_{-2}^{1} x \\left(1-x^2-x-1\\right) \\,dx$$",
+        "text": "$$M_y=\\int_{-2}**{1}x\\left(1-x**2-(x-1)\\right)dx$$",
         "variabilization": {},
         "oer": "",
         "license": ""
