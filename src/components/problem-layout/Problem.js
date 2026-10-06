@@ -1580,9 +1580,6 @@ class Problem extends React.Component {
                                             className={classes.button}
                                             style={{ width: "100%" }}
                                             size="small"
-                                            onClick={() =>
-                                                (this.context.needRefresh = true)
-                                            }
                                         >
                                             {translate('problem.PreviousProblem')}
                                         </Button>
@@ -1601,9 +1598,6 @@ class Problem extends React.Component {
                                             className={classes.button}
                                             style={{ width: "100%" }}
                                             size="small"
-                                            onClick={() =>
-                                                (this.context.needRefresh = true)
-                                            }
                                         >
                                            {translate('problem.NextProblem')}
                                         </Button>
@@ -1741,9 +1735,6 @@ class Problem extends React.Component {
                                                 className={classes.button}
                                                 style={{ width: "100%" }}
                                                 size="small"
-                                                onClick={() =>
-                                                    (this.context.needRefresh = true)
-                                                }
                                             >
                                                 {translate('problem.PreviousProblem')}
                                             </Button>
@@ -1762,9 +1753,6 @@ class Problem extends React.Component {
                                                 className={classes.button}
                                                 style={{ width: "100%" }}
                                                 size="small"
-                                                onClick={() =>
-                                                    (this.context.needRefresh = true)
-                                                }
                                             >
                                             {translate('problem.NextProblem')}
                                             </Button>
