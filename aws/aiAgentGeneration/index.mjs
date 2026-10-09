@@ -14,14 +14,25 @@ import {
     buildDocumentContext,
     getDefaultDocumentContextRuntime,
 } from "./document-context.mjs";
-import { isOfficeHoursLessonId } from "./document-id-utils.mjs";
+import {
+    OFFICE_HOURS_CHAT_PROMPT,
+    isOfficeHoursLessonId,
+    resolveFullChatPrompt,
+} from "./document-id-utils.mjs";
 import crypto from "crypto";
+import { createConversationStore, summarizeConversation, validateUserMessage } from './conversation-memory.mjs';
 
 dotenv.config();
 
 const dynamoClient = new AWS.DynamoDB.DocumentClient();
 const s3 = new AWS.S3();
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+const conversationStore = createConversationStore({
+    client: dynamoClient,
+    tableName: process.env.CONVERSATION_TABLE_NAME || 'agent-conversations',
+    summarize: (summary, turns) => summarizeConversation(openai, summary, turns),
+    log: logEvent,
+});
 
 function sha256Hex(s) {
     return crypto.createHash("sha256").update(String(s || ""), "utf8").digest("hex");
@@ -95,8 +106,10 @@ export const handler = awslambda.streamifyResponse(
 
         let httpResponseStream;
         let requestBody;
+        let memoryHandle;
 
         try {
+            if (Buffer.byteLength(event.body || '', 'utf8') > 6_000_000) throw new Error('Request is too large');
             requestBody = safeJsonParse(event.body);
             if (!requestBody) {
                 throw new Error("Invalid JSON body");
@@ -123,6 +136,16 @@ export const handler = awslambda.streamifyResponse(
                 extracted?.chatPenaltyMode ??
                 problemContext?.chatPenaltyMode;
             const { defaultModel, chatModel } = resolveRequestedChatModel(requestBody);
+
+            if (requestBody.requestType === 'chatHistory') {
+                httpResponseStream = awslambda.HttpResponseStream.from(responseStream, {
+                    statusCode: 200,
+                    headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' },
+                });
+                httpResponseStream.write(JSON.stringify({ type: 'chatHistory',
+                    ...await conversationStore.page(sessionId, requestBody.beforeSequence) }) + '\n');
+                return;
+            }
 
             if (requestBody?.requestType === "suggestedQuestions") {
                 const metadata = {
@@ -274,17 +297,28 @@ export const handler = awslambda.streamifyResponse(
 
             httpResponseStream = awslambda.HttpResponseStream.from(responseStream, metadata);
 
-            // Prefer client transcript when present (UI is authoritative). DynamoDB
-            // is a fallback for older clients that still send conversationHistory: [];
-            // skip the read entirely when the client sent a transcript.
-            const clientHistory = Array.isArray(conversationHistory) ? conversationHistory : [];
-            const fullConversationHistory = clientHistory.length > 0
-                ? clientHistory
-                : await loadConversationHistory(sessionId);
+            validateUserMessage(safeUserMessage);
+            const requestId = requestBody.requestId || crypto.randomUUID();
+            const legacyHistory = trimConversationHistory(conversationHistory, { maxChars: 48_000, chunk: 2 }).history;
+            memoryHandle = await conversationStore.begin(sessionId, requestId, legacyHistory,
+                Math.max(120_000, (_context?.getRemainingTimeInMillis?.() || 120_000) + 30_000),
+                sha256Hex(JSON.stringify([safeUserMessage, lessonId, problemContext?.problemID, problemContext?.currentStep?.id])));
+            if (memoryHandle.replay) {
+                httpResponseStream.write(JSON.stringify({ type: 'complete', fullResponse: memoryHandle.replay.response,
+                    sequence: memoryHandle.replay.sequence, requestId, memoryVersion: 1 }) + '\n');
+                return;
+            }
+            const memory = await conversationStore.prepare(memoryHandle);
+            const fullConversationHistory = memory.history;
             const { dropped: historyDroppedCount } = trimConversationHistory(fullConversationHistory);
 
-            const resolvedChatPrompt =
-                chatDisplayMode === "Full" ? "PROMPT-officehours.txt" : chatPrompt;
+            const resolvedChatPrompt = chatDisplayMode === "Full"
+                ? resolveFullChatPrompt(lessonId, chatPrompt)
+                : chatPrompt;
+            // A course-specific Office Hours prompt (e.g. reading review) carries its own
+            // teaching rules; the homework guardrails are for the default prompt.
+            const customFullChatPrompt =
+                chatDisplayMode === "Full" && resolvedChatPrompt !== OFFICE_HOURS_CHAT_PROMPT;
 
             const docCtxStarted = nowMs();
             const docCtx = await buildDocumentContext({
@@ -293,6 +327,7 @@ export const handler = awslambda.streamifyResponse(
                 // Short follow-ups ("why?") rank against the thread, not just this line.
                 recentHistory: fullConversationHistory.slice(-2),
                 officeHours: chatDisplayMode === "Full",
+                customFullChatPrompt,
                 problemContext: chatDisplayMode === "Full" ? { courseName: problemContext?.courseName } : problemContext,
                 openai,
                 clientHints: {
@@ -384,7 +419,9 @@ export const handler = awslambda.streamifyResponse(
                 extracted: extractedWithDocs,
                 chatPrompt: resolvedChatPrompt,
                 chatDisplayMode,
+                customFullChatPrompt,
                 documentContextSection: docCtx?.privatePromptSection || null,
+                conversationMemory: memory.summary,
             });
 
             const lastMsg = agentPrompt[agentPrompt.length - 1];
@@ -480,6 +517,7 @@ export const handler = awslambda.streamifyResponse(
             try {
                 response = await generateAgentResponse(openai, agentPrompt, httpResponseStream, {
                     model: chatModel,
+                    emitComplete: false,
                 });
             } catch (err) {
                 if (chatModel !== defaultModel && isInvalidModelError(err)) {
@@ -493,15 +531,22 @@ export const handler = awslambda.streamifyResponse(
                     });
                     response = await generateAgentResponse(openai, agentPrompt, httpResponseStream, {
                         model: defaultModel,
+                        emitComplete: false,
                     });
                 } else {
                     throw err;
                 }
             }
 
-            if (response) {
-                await updateConversationHistory(sessionId, safeUserMessage, response);
-            }
+            if (!response) throw new Error('The tutor returned an empty reply. Please try again.');
+            const sequence = await conversationStore.commit(memoryHandle, safeUserMessage, response, {
+                lessonId: lessonId || null,
+                problemId: problemContext?.problemID || null,
+                stepId: problemContext?.currentStep?.id || null,
+                problemTitle: problemContext?.problemTitle || null,
+                stepTitle: problemContext?.currentStep?.title || null,
+            });
+            httpResponseStream.write(JSON.stringify({ type: 'complete', sequence, requestId, memoryVersion: 1 }) + '\n');
 
 //             // Append full transcript to S3 (research logging).
 //             const transcriptBucket = process.env.TRANSCRIPT_BUCKET;
@@ -583,65 +628,22 @@ export const handler = awslambda.streamifyResponse(
                 stepId: requestBody?.problemContext?.currentStep?.id,
             });
             console.error("Agent error:", error);
+            if (!httpResponseStream) {
+                httpResponseStream = awslambda.HttpResponseStream.from(responseStream, {
+                    statusCode: 400,
+                    headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' },
+                });
+            }
             if (httpResponseStream) {
                 httpResponseStream.write(
                     JSON.stringify({ error: error.message, type: "error" }) + "\n"
                 );
             }
         } finally {
+            if (memoryHandle) await conversationStore.release(memoryHandle);
             if (httpResponseStream) {
                 httpResponseStream.end();
             }
         }
     }
 );
-
-async function loadConversationHistory(sessionId) {
-    try {
-        const params = {
-            TableName: process.env.CONVERSATION_TABLE_NAME || "agent-conversations",
-            Key: { sessionId: sessionId }
-        };
-
-        const result = await dynamoClient.get(params).promise();
-        return result.Item?.messages || [];
-    } catch (error) {
-        return [];
-    }
-}
-
-async function updateConversationHistory(sessionId, userMessage, agentResponse) {
-    if (!agentResponse) return;
-    
-    try {
-        const existingMessages = await loadConversationHistory(sessionId);
-        
-        const updatedMessages = [
-            ...existingMessages,
-            {
-                role: "user",
-                content: userMessage,
-                timestamp: Date.now()
-            },
-            {
-                role: "assistant",
-                content: agentResponse,
-                timestamp: Date.now()
-            }
-        ];
-        
-        const params = {
-            TableName: process.env.CONVERSATION_TABLE_NAME || "agent-conversations",
-            Item: {
-                sessionId: sessionId,
-                messages: updatedMessages,
-                lastUpdated: Date.now(),
-                ttl: Math.floor(Date.now() / 1000) + (24 * 60 * 60)
-            }
-        };
-
-        await dynamoClient.put(params).promise();
-    } catch (error) {
-        console.error("Error updating conversation history:", error);
-    }
-}

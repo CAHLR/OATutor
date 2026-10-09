@@ -287,6 +287,18 @@ Only assign documents to lessons that should have access to them. Physics lesson
 
 The backend must enforce the lesson-to-document allowlist. Do not trust an arbitrary `chatDocuments` list sent by the browser.
 
+### Course-specific Office Hours prompt (e.g. reading review)
+
+Office Hours (`"office_hours": true` on a course) uses every document bound to the course's lessons. A course may replace the default Office Hours prompt and opening message:
+
+```json
+"office_hours": true,
+"office_hours_prompt": "PROMPT-anthro-reading-review.txt",
+"office_hours_greeting": "Hi! I'm Oski. Let's review the reading together...",
+```
+
+With `office_hours_prompt` set, the Lambda skips the homework reminder and lets the tutor quote short passages from the documents; the prompt file defines the teaching rules. For a document-only course, add one lesson that carries `chat_documents`.
+
 ---
 
 ## 9. Phase 3: publish compiled documents for Oski (runtime S3)

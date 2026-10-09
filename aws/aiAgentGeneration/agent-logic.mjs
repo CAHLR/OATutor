@@ -111,7 +111,7 @@ export function loadPromptTemplate(chatPrompt) {
 
 /** History budget for the LLM payload (office hours never resets on problem switch). */
 export const HISTORY_MAX_MESSAGES = 40;
-export const HISTORY_MAX_CHARS = 24_000;
+export const HISTORY_MAX_CHARS = 48_000;
 export const HISTORY_TRIM_CHUNK = 10;
 
 function historyChars(history) {
@@ -171,11 +171,14 @@ export function buildAgentPrompt({
     chatPrompt,
     documentContextSection = null,
     chatDisplayMode = 'Off',
+    customFullChatPrompt = false,
+    conversationMemory = null,
 }) {
     const { template: promptTemplate } = loadPromptTemplate(chatPrompt);
     const safeUserMessage = typeof userMessage === 'string' ? userMessage : '';
     const isOfficeHours = chatDisplayMode === 'Full';
-    const { history: trimmedHistory } = trimConversationHistory(conversationHistory);
+    const { history: trimmedHistory } = trimConversationHistory(conversationHistory,
+        conversationMemory ? { maxChars: 48_000, chunk: 2 } : {});
 
     if (isOfficeHours) {
         const courseName = problemContext?.courseName || 'this course';
@@ -190,6 +193,7 @@ export function buildAgentPrompt({
         const messages = [
             { role: 'system', content: systemPrompt },
         ];
+        if (conversationMemory) messages.push({ role: 'user', content: conversationMemory });
         if (
             typeof documentContextSection === 'string' &&
             documentContextSection.trim()
@@ -203,7 +207,10 @@ export function buildAgentPrompt({
             messages.push(...trimmedHistory);
         }
         // Static text, placed late for recency (not stored in UI history).
-        messages.push({ role: 'system', content: `[Platform] ${GUARDRAIL_REMINDER}` });
+        // Homework-specific; a course-specific Office Hours prompt defines its own rules.
+        if (!customFullChatPrompt) {
+            messages.push({ role: 'system', content: `[Platform] ${GUARDRAIL_REMINDER}` });
+        }
         messages.push({ role: 'user', content: safeUserMessage });
         return messages;
     }
@@ -293,6 +300,7 @@ export function buildAgentPrompt({
     const messages = [
         { role: "system", content: systemPrompt }
     ];
+    if (conversationMemory) messages.push({ role: 'user', content: conversationMemory });
 
     // Private course-document reference (server-only; never stored in client history).
     if (
@@ -563,6 +571,9 @@ export async function generateAgentResponse(openai, prompt, responseStream = nul
         
         if (content) {
             fullResponse += content;
+            if (Buffer.byteLength(fullResponse, 'utf8') > 16_000) {
+                throw new Error('Reply exceeded the size limit. Please ask a narrower question.');
+            }
             
             if (responseStream) {
                 responseStream.write(JSON.stringify({
@@ -576,7 +587,7 @@ export async function generateAgentResponse(openai, prompt, responseStream = nul
         }
     }
 
-    if (responseStream) {
+    if (responseStream && config.emitComplete !== false) {
         responseStream.write(JSON.stringify({
             type: "complete",
             fullResponse: fullResponse,
