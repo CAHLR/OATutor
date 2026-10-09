@@ -3,8 +3,8 @@
         "id": "a63563bnewton7a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "When Newton's Method Failes",
-        "text": "Newton's method fails when f'(x) $$=$$ $$0$$, as then the denominator is zero.",
+        "title": "How c Affects Convergence",
+        "text": "Since $$f(x)=x^2-4$$, the iteration is $$x_{n+1}=x_n-c\\,(x_n**2-4)$$ . Starting from $$x_0=0$$, compute a few iterations for different values of c. For example, $$c=0.25$$ gives $$0$$, $$1$$, $$1.75$$, $$1.984$$, ... which approaches the root $$2$$, while $$c=1$$ gives $$0$$, $$4$$, $$-8$$, $$-68$$, ... which does not converge.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

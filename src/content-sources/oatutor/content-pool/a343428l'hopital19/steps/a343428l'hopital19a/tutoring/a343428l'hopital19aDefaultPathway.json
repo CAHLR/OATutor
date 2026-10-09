@@ -16,7 +16,7 @@
             "a343428l'hopital19a-h1"
         ],
         "title": "Substitute the limit",
-        "text": "(sin(0)-tan(0))/(0)**3)}=(0-0)/0=0/0",
+        "text": "Substituting $$x=0$$ gives $$sin(0)-tan(0)=0$$ in the numerator and $$0^3=0$$ in the denominator, so the limit has the form $$\\frac{0}{0}$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -28,7 +28,7 @@
             "a343428l'hopital19a-h2"
         ],
         "title": "Apply L\u2019H\u00f4pital\u2019s Rule",
-        "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to0} \\frac{\\frac{d}{dx} \\left(sinx-tan\\left(x\\right)\\right)}{\\frac{d}{dx} x^3}$$",
+        "text": "Differentiate the denominator and the numerator separately: $$\\lim_{x\\to0} \\frac{\\frac{d}{dx} \\left(sinx-tan\\left(x\\right)\\right)}{\\frac{d}{dx} x^3}$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -39,7 +39,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\lim_{x\\to0} \\frac{cosx-{sec}^{2\\left(x\\right)}}{3x^2}$$"
+            "$$\\lim_{x\\to0} \\frac{cosx-{\\operatorname{sec}\\left(x\\right)}^2}{3x^2}$$"
         ],
         "dependencies": [
             "a343428l'hopital19a-h3"
@@ -50,10 +50,10 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\lim_{x\\to0} \\frac{\\left(-cosx-{sec}^{2\\left(x\\right)}\\right)}{3x^2}$$",
+            "$$\\lim_{x\\to0} \\frac{\\left(-cosx-{\\operatorname{sec}\\left(x\\right)}^2\\right)}{3x^2}$$",
             "$$\\lim_{x\\to0} \\frac{cosx-\\operatorname{sec}\\left(x\\right)}{3x^2}$$",
-            "$$\\lim_{x\\to0} \\frac{cosx+{sec}^{2\\left(x\\right)}}{3x^2}$$",
-            "$$\\lim_{x\\to0} \\frac{cosx-{sec}^{2\\left(x\\right)}}{3x^2}$$"
+            "$$\\lim_{x\\to0} \\frac{cosx+{\\operatorname{sec}\\left(x\\right)}^2}{3x^2}$$",
+            "$$\\lim_{x\\to0} \\frac{cosx-{\\operatorname{sec}\\left(x\\right)}^2}{3x^2}$$"
         ],
         "subHints": [
             {
@@ -75,7 +75,7 @@
             "a343428l'hopital19a-h4"
         ],
         "title": "Evaluate the limit",
-        "text": "$$\\fraccos^3\\left(0\\right)-{sec}^{2\\left(0\\right)}\\times0^2}=\\frac{1-1}{0}=\\frac{0}{0}$$",
+        "text": "Substituting $$x=0$$ gives $$cos\\left(0\\right)-{\\operatorname{sec}\\left(0\\right)}^2=1-1=0$$ in the numerator and $$3\\times0^2=0$$ in the denominator, so the limit is again of the form $$\\frac{0}{0}$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -87,7 +87,7 @@
             "a343428l'hopital19a-h5"
         ],
         "title": "Apply L\u2019H\u00f4pital\u2019s Rule again",
-        "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to0} \\frac{\\frac{\\frac{d}{\\operatorname{dx}\\left(cosx-{sec}^{2\\left(x\\right)}\\right)}}{d}}{\\operatorname{dx}\\left(3x^2\\right)}$$",
+        "text": "Differentiate the denominator and the numerator separately: $$\\lim_{x\\to0} \\frac{\\frac{d}{dx} \\left(cosx-{\\operatorname{sec}\\left(x\\right)}^2\\right)}{\\frac{d}{dx} 3x^2}$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -98,7 +98,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\lim_{x\\to0} \\frac{\\left(-sinx-2{sec}^{2\\left(x\\right)} tan\\left(x\\right)\\right)}{6x}$$"
+            "$$\\lim_{x\\to0} \\frac{\\left(-sinx-2{\\operatorname{sec}\\left(x\\right)}^2 tan\\left(x\\right)\\right)}{6x}$$"
         ],
         "dependencies": [
             "a343428l'hopital19a-h6"
@@ -109,10 +109,10 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\lim_{x\\to0} \\frac{sinx-2{sec}^{2\\left(x\\right)} {tan}^{2\\left(x\\right)}}{6x}$$",
-            "$$\\lim_{x\\to0} \\frac{\\left(-sinx-2{sec}^{2\\left(x\\right)} tan\\left(x\\right)\\right)}{6x}$$",
+            "$$\\lim_{x\\to0} \\frac{sinx-2{\\operatorname{sec}\\left(x\\right)}^2 tan^2\\left(x\\right)}{6x}$$",
+            "$$\\lim_{x\\to0} \\frac{\\left(-sinx-2{\\operatorname{sec}\\left(x\\right)}^2 tan\\left(x\\right)\\right)}{6x}$$",
             "$$\\lim_{x\\to0} \\frac{\\left(-sinx+2\\operatorname{sec}\\left(x\\right) tan\\left(x\\right)\\right)}{6x}$$",
-            "/lim{x,0,(-sinx-2*tan(x)))/(6*x)}"
+            "$$\\lim_{x\\to0} \\frac{\\left(-sinx-2tan\\left(x\\right)\\right)}{6x}$$"
         ],
         "subHints": [
             {
@@ -146,7 +146,7 @@
             "a343428l'hopital19a-h7"
         ],
         "title": "Evaluate the limit",
-        "text": "$$\\frac{\\left(-sin\\left(0\\right)-2{sec}^{2\\left(0\\right)} tan\\left(0\\right)\\right)}{6\\times0}=\\frac{0-2\\times0}{0}=\\frac{0}{0}$$",
+        "text": "$$\\frac{\\left(-sin\\left(0\\right)-2{\\operatorname{sec}\\left(0\\right)}^2 tan\\left(0\\right)\\right)}{6\\times0}=\\frac{0-2\\times0}{0}=\\frac{0}{0}$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -158,7 +158,7 @@
             "a343428l'hopital19a-h8"
         ],
         "title": "Apply L\u2019H\u00f4pital\u2019s Rule again",
-        "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to0} \\frac{\\frac{\\frac{d}{dx\\left(-sinx-2{sec}^{2\\left(x\\right)} tan\\left(x\\right)\\right)}}{d}}{\\operatorname{dx}\\left(6x\\right)}$$",
+        "text": "Differentiate the denominator and the numerator separately: $$\\lim_{x\\to0} \\frac{\\frac{d}{dx} \\left(-sinx-2{\\operatorname{sec}\\left(x\\right)}^2 tan\\left(x\\right)\\right)}{\\frac{d}{dx} 6x}$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -169,7 +169,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\lim_{x\\to0} \\frac{\\left(-cosx-2\\left(2{sec}^{2\\left(x\\right)} {tan}^{2\\left(x\\right)}+{sec}^{4\\left(x\\right)}\\right)\\right)}{6}$$"
+            "$$\\lim_{x\\to0} \\frac{\\left(-cosx-2\\left(2{\\operatorname{sec}\\left(x\\right)}^2 tan^2\\left(x\\right)+{\\operatorname{sec}\\left(x\\right)}^4\\right)\\right)}{6}$$"
         ],
         "dependencies": [
             "a343428l'hopital19a-h9"
@@ -180,10 +180,10 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\lim_{x\\to0} \\frac{\\left(-cosx-2\\left(\\operatorname{sec}\\left(x\\right) tan\\left(x\\right)+2{sec}^{4\\left(x\\right)}\\right)\\right)}{6}$$",
-            "$$\\lim_{x\\to0} \\frac{\\left(-cosx-2\\left({sec}^{2\\left(x\\right)} {tan}^{2\\left(x\\right)}+2{sec}^{4\\left(x\\right)}\\right)\\right)}{6}$$",
-            "$$\\lim_{x\\to0} \\frac{\\left(-cosx-2\\left({sec}^{2\\left(x\\right)} {tan}^{2\\left(x\\right)}+{sec}^{2\\left(x\\right)}\\right)\\right)}{6}$$",
-            "$$\\lim_{x\\to0} \\frac{\\left(-cosx-2\\left(2{sec}^{2\\left(x\\right)} {tan}^{2\\left(x\\right)}+{sec}^{4\\left(x\\right)}\\right)\\right)}{6}$$"
+            "$$\\lim_{x\\to0} \\frac{\\left(-cosx-2\\left(\\operatorname{sec}\\left(x\\right) tan\\left(x\\right)+2{\\operatorname{sec}\\left(x\\right)}^4\\right)\\right)}{6}$$",
+            "$$\\lim_{x\\to0} \\frac{\\left(-cosx-2\\left({\\operatorname{sec}\\left(x\\right)}^2 tan^2\\left(x\\right)+2{\\operatorname{sec}\\left(x\\right)}^4\\right)\\right)}{6}$$",
+            "$$\\lim_{x\\to0} \\frac{\\left(-cosx-2\\left({\\operatorname{sec}\\left(x\\right)}^2 tan^2\\left(x\\right)+{\\operatorname{sec}\\left(x\\right)}^2\\right)\\right)}{6}$$",
+            "$$\\lim_{x\\to0} \\frac{\\left(-cosx-2\\left(2{\\operatorname{sec}\\left(x\\right)}^2 tan^2\\left(x\\right)+{\\operatorname{sec}\\left(x\\right)}^4\\right)\\right)}{6}$$"
         ]
     },
     {
@@ -193,7 +193,7 @@
             "a343428l'hopital19a-h10"
         ],
         "title": "Evaluate the limit",
-        "text": "$$\\frac{\\left(-cosx-2\\left(2{sec}^{2\\left(x\\right)} {tan}^{2\\left(x\\right)}+{sec}^{4\\left(x\\right)}\\right)\\right)}{6}=\\frac{\\left(-1-2\\left(0+1\\right)\\right)}{6}=\\frac{\\left(-1-2\\right)}{6}=\\frac{-1}{2}$$",
+        "text": "$$\\frac{\\left(-cosx-2\\left(2{\\operatorname{sec}\\left(x\\right)}^2 tan^2\\left(x\\right)+{\\operatorname{sec}\\left(x\\right)}^4\\right)\\right)}{6}=\\frac{\\left(-1-2\\left(0+1\\right)\\right)}{6}=\\frac{\\left(-1-2\\right)}{6}=\\frac{-1}{2}$$",
         "variabilization": {},
         "oer": "",
         "license": ""

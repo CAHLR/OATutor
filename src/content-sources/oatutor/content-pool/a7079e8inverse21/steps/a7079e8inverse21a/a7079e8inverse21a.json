@@ -1,11 +1,18 @@
 {
     "id": "a7079e8inverse21a",
     "stepAnswer": [
-        "(csc**(-1)(x))-(1/(x*(sqrt(1-(1/(x**2)))))"
+        "$${csc}^{\\left(-1\\right)} x-\\frac{1}{x \\sqrt{1-\\frac{1}{x^2}}}$$"
     ],
-    "problemType": "TextBox",
+    "problemType": "MultipleChoice",
     "stepTitle": "$$y=x {csc}^{\\left(-1\\right)} x$$",
     "stepBody": "",
-    "answerType": "arithmetic",
-    "variabilization": {}
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "$${csc}^{\\left(-1\\right)} x-\\frac{1}{x \\sqrt{1-\\frac{1}{x^2}}}$$",
+    "choices": [
+        "$${csc}^{\\left(-1\\right)} x-\\frac{1}{x \\sqrt{1-\\frac{1}{x^2}}}$$",
+        "$${csc}^{\\left(-1\\right)} x+\\frac{1}{x \\sqrt{1-\\frac{1}{x^2}}}$$",
+        "$$\\frac{-1}{x \\sqrt{1-\\frac{1}{x^2}}}$$",
+        "$${csc}^{\\left(-1\\right)} x$$"
+    ]
 }

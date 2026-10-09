@@ -16,7 +16,7 @@
             "a343428l'hopital4a-h1"
         ],
         "title": "Substitute the limit",
-        "text": "$$\\frac{0}tan^$\\left(0\\righ=\\frac{0}{0}$$",
+        "text": "Substituting $$x=0$$ gives $$0$$ in the numerator and $$tan(0)=0$$ in the denominator, so the limit has the form $$\\frac{0}{0}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -28,7 +28,7 @@
             "a343428l'hopital4a-h2"
         ],
         "title": "Apply L\u2019H\u00f4pital\u2019s Rule",
-        "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to0} \\frac{\\frac{d}{dx} x}{\\frac{d}{dx} tanx}$$",
+        "text": "Differentiate the denominator and the numerator separately: $$\\lim_{x\\to0} \\frac{\\frac{d}{dx} x}{\\frac{d}{dx} tanx}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -39,7 +39,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\lim_{x\\to0} \\frac{1}{{sec}^{2\\left(x\\right)}}$$"
+            "$$\\lim_{x\\to0} \\frac{1}{{\\operatorname{sec}\\left(x\\right)}^2}$$"
         ],
         "dependencies": [
             "a343428l'hopital4a-h3"
@@ -51,9 +51,9 @@
         "license": "",
         "choices": [
             "$$\\lim_{x\\to0} \\frac{1}{\\operatorname{sec}\\left(x\\right)}$$",
-            "$$\\lim_{x\\to0} \\frac{1}{{sec}^{2\\left(x\\right)}}$$",
+            "$$\\lim_{x\\to0} \\frac{1}{{\\operatorname{sec}\\left(x\\right)}^2}$$",
             "$$\\lim_{x\\to0} \\frac{1}{secx tanx}$$",
-            "$$\\lim_{x\\to0} \\frac{1}{{cos}^{2\\left(x\\right)}}$$"
+            "$$\\lim_{x\\to0} \\frac{1}{cos^2\\left(x\\right)}$$"
         ]
     },
     {
@@ -63,7 +63,7 @@
             "a343428l'hopital4a-h4"
         ],
         "title": "Evaluate the limit",
-        "text": "$$\\frac{1}{{sec}^{2\\left(0\\right)}}=1$$",
+        "text": "$$\\frac{1}{{\\operatorname{sec}\\left(0\\right)}^2}=1$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

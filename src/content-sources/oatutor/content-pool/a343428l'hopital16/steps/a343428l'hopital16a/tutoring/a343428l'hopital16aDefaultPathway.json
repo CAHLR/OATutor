@@ -28,7 +28,7 @@
             "a343428l'hopital16a-h2"
         ],
         "title": "Apply L\u2019H\u00f4pital\u2019s Rule",
-        "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to\\infty} \\frac{\\frac{d}{dx} e^x}{\\frac{d}{dx} x^k}$$",
+        "text": "Differentiate the denominator and the numerator separately: $$\\lim_{x\\to\\infty} \\frac{\\frac{d}{dx} e^x}{\\frac{d}{dx} x^k}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -51,7 +51,7 @@
         "license": "",
         "choices": [
             "$$\\lim_{x\\to\\infty} \\frac{x e^x}{k}$$",
-            "/lim{x,inf,(x*(e**(x)))/(k*x))}",
+            "$$\\lim_{x\\to\\infty} \\frac{x e^x}{k x}$$",
             "$$\\lim_{x\\to\\infty} \\frac{e^x}{k x}$$",
             "$$\\lim_{x\\to\\infty} \\frac{e^x}{k x^{k-1}}$$"
         ]
@@ -63,7 +63,7 @@
             "a343428l'hopital16a-h4"
         ],
         "title": "Rewrite the limit",
-        "text": "After taking the limit many times, it becomes /lim{x,inf,(e**(x))/(x*(k!))}",
+        "text": "After applying L\u2019H\u00f4pital\u2019s Rule k times, the numerator is still $$e^x$$ and the denominator becomes the constant k! (k factorial).",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
@@ -73,7 +73,7 @@
                 "type": "hint",
                 "dependencies": [],
                 "title": "Factorial Formula",
-                "text": "Take a look at the denominator, if we keep applying the L\u2019H\u00f4pital\u2019s Rule $$infinitely$$, we will obtain the general form of factorial: $$x k \\left(k-1\\right) \\neq k \\left(k-1\\right) \\neq k!$$",
+                "text": "Take a look at the denominator: each time we apply L\u2019H\u00f4pital\u2019s Rule, the exponent of $$x$$ becomes a new factor and the power of $$x$$ decreases by $$1$$. After k applications, the denominator is k times $$(k-1)$$ times ... times $$1$$, which is k! (k factorial).",
                 "variabilization": {},
                 "oer": "https://OATutor.io <OATutor>",
                 "license": ""
@@ -99,7 +99,7 @@
             "a343428l'hopital16a-h5"
         ],
         "title": "Evaluate the limit",
-        "text": "(e**(inf))/(k!)=inf/k!=inf",
+        "text": "As $$x$$ approaches $$\\infty$$, $$e^x$$ approaches infinity while k! is a constant, so the limit is $$\\infty$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

@@ -39,7 +39,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\frac{dy}{dx} \\left(\\sqrt{x+4}+\\frac{y}{\\sqrt{x+4}}\\right)$$"
+            "$$\\frac{dy}{dx} \\sqrt{x+4}+\\frac{y}{2\\sqrt{x+4}}$$"
         ],
         "dependencies": [
             "ab2ed79implicit5a-h3"
@@ -50,6 +50,7 @@
         "oer": "",
         "license": "",
         "choices": [
+            "$$\\frac{dy}{dx} \\sqrt{x+4}+\\frac{y}{2\\sqrt{x+4}}$$",
             "$$\\frac{dy}{dx} \\left(\\sqrt{x+4}+\\frac{y}{\\sqrt{x+4}}\\right)$$",
             "$$\\frac{dy}{dx} \\sqrt{x+4}$$"
         ]

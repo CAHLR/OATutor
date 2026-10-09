@@ -1,1 +1,106 @@
-[]
+[
+    {
+        "id": "aca1a7dderivative5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The Power Rule",
+        "text": "If $$f(x)=x^n$$, then $$f'(x)={nx}^{n-1}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aca1a7dderivative5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aca1a7dderivative5a-h1"
+        ],
+        "title": "Application of Power Rule $$1$$",
+        "text": "To get the derivative of $$x^4$$, we multiply our constant (1) by our exponent (4) and subtract the exponent power by $$1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aca1a7dderivative5a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$4x^3$$"
+        ],
+        "dependencies": [
+            "aca1a7dderivative5a-h2"
+        ],
+        "title": "Application of Power Rule $$2$$",
+        "text": "What is the derivative of $$x^4$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$4x^3$$",
+            "$$x^3$$",
+            "$$4x^4$$",
+            "$$3x^4$$"
+        ]
+    },
+    {
+        "id": "aca1a7dderivative5a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aca1a7dderivative5a-h3"
+        ],
+        "title": "Rewrite $$\\frac{2}{x}$$",
+        "text": "Rewrite $$\\frac{2}{x}$$ as a power of x: $$\\frac{2}{x}=2x^{\\left(-1\\right)}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aca1a7dderivative5a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aca1a7dderivative5a-h4"
+        ],
+        "title": "Application of Power Rule $$3$$",
+        "text": "To get the derivative of $$2x^{\\left(-1\\right)}$$, we multiply our constant (2) by our exponent $$(-1)$$ and subtract the exponent power by $$1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aca1a7dderivative5a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{-2}{x^2}$$"
+        ],
+        "dependencies": [
+            "aca1a7dderivative5a-h5"
+        ],
+        "title": "Application of Power Rule $$4$$",
+        "text": "What is the derivative of $$\\frac{2}{x}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\frac{-2}{x^2}$$",
+            "$$\\frac{2}{x^2}$$",
+            "$$\\frac{-2}{x}$$",
+            "$$\\frac{-1}{x^2}$$"
+        ]
+    },
+    {
+        "id": "aca1a7dderivative5a-h7",
+        "type": "hint",
+        "dependencies": [
+            "aca1a7dderivative5a-h6"
+        ],
+        "title": "The Sum Rule",
+        "text": "You can add the two separate derivatives that we just found to find our answer.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

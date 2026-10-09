@@ -1,1 +1,105 @@
-[]
+[
+    {
+        "id": "aca1a7dtangentline6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Slope of the Tangent Line",
+        "text": "The slope of the tangent line to the graph of f(x) at $$x=a$$ is f'(a).",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aca1a7dtangentline6a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2x-\\frac{4}{x^2}$$"
+        ],
+        "dependencies": [
+            "aca1a7dtangentline6a-h1"
+        ],
+        "title": "Find the Derivative",
+        "text": "What is f'(x) for $$f(x)=x^2+\\frac{4}{x}-10$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$2x-\\frac{4}{x^2}$$",
+            "$$2x+\\frac{4}{x^2}$$",
+            "$$2x-\\frac{4}{x}$$",
+            "$$x-\\frac{4}{x^2}$$"
+        ]
+    },
+    {
+        "id": "aca1a7dtangentline6a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{255}{16}$$"
+        ],
+        "dependencies": [
+            "aca1a7dtangentline6a-h2"
+        ],
+        "title": "Find the Slope",
+        "text": "What is the slope of the tangent line at $$x=8$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\frac{255}{16}$$",
+            "$$\\frac{257}{16}$$",
+            "$$16$$",
+            "$$\\frac{63}{4}$$"
+        ]
+    },
+    {
+        "id": "aca1a7dtangentline6a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{109}{2}$$"
+        ],
+        "dependencies": [
+            "aca1a7dtangentline6a-h3"
+        ],
+        "title": "Find the Point",
+        "text": "What is f(8)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\frac{109}{2}$$",
+            "$$\\frac{-109}{2}$$",
+            "$$\\frac{109}{4}$$",
+            "$$54$$"
+        ]
+    },
+    {
+        "id": "aca1a7dtangentline6a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aca1a7dtangentline6a-h4"
+        ],
+        "title": "Point-Slope Form",
+        "text": "The equation of the line through the point (a,f(a)) with slope $$m$$ is $$y-f(a)=m(x-a)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aca1a7dtangentline6a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aca1a7dtangentline6a-h5"
+        ],
+        "title": "Application of Point-Slope Form",
+        "text": "Substitute the point $$(8,\\frac{109}{2})$$ and the slope $$\\frac{255}{16}$$: $$y-\\frac{109}{2}=\\frac{255}{16} \\left(x-8\\right)$$. Solve for $$y$$ to get the answer.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

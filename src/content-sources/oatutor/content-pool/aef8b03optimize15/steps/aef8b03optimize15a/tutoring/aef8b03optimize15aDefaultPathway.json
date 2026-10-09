@@ -49,7 +49,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$x^2-60x+900$$"
+            "$$x^2-60x+1300$$"
         ],
         "dependencies": [
             "aef8b03optimize15a-h3"
@@ -66,13 +66,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$2x^2-60x+1400$$"
+            "$$\\sqrt{100+x^2}+\\sqrt{x^2-60x+1300}$$"
         ],
         "dependencies": [
             "aef8b03optimize15a-h4"
         ],
         "title": "Total Length",
-        "text": "What is the total length of the wires squared in terms of $$x$$? $$L(x)=___$$?",
+        "text": "What is the total length of the wire in terms of $$x$$? $$L(x)=___$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -84,7 +84,7 @@
             "aef8b03optimize15a-h5"
         ],
         "title": "Critical Point",
-        "text": "Find the critical point. (The minimum of their squared lengths will be the same as the minimum of their length)",
+        "text": "Find the critical point by setting $$L'(x)=0$$. Note that minimizing the sum of the squared lengths is not the same as minimizing the total length, so we differentiate L(x) itself.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -95,7 +95,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$4x-60$$"
+            "$$\\frac{x}{\\sqrt{100+x^2}}+\\frac{x-30}{\\sqrt{x^2-60x+1300}}$$"
         ],
         "dependencies": [
             "aef8b03optimize15a-h6"
@@ -112,7 +112,7 @@
         "problemType": "TextBox",
         "answerType": "string",
         "hintAnswer": [
-            "15"
+            "10"
         ],
         "dependencies": [
             "aef8b03optimize15a-h7"

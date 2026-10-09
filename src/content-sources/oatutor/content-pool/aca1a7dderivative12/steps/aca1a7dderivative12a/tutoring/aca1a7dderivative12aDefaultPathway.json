@@ -1,1 +1,105 @@
-[]
+[
+    {
+        "id": "aca1a7dderivative12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The Quotient Rule",
+        "text": "If $$f(x)=\\frac{g{\\left(x\\right)}}{h{\\left(x\\right)}}$$, then $$f'(x)=\\frac{\\operatorname{g'}\\left(x\\right) h{\\left(x\\right)}-g{\\left(x\\right)} \\operatorname{h'}\\left(x\\right)}{{h{\\left(x\\right)}}^2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aca1a7dderivative12a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "aca1a7dderivative12a-h1"
+        ],
+        "title": "Derivative of the Numerator",
+        "text": "What is the derivative of $$x+9$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$1$$",
+            "$$0$$",
+            "$$x$$",
+            "$$9$$"
+        ]
+    },
+    {
+        "id": "aca1a7dderivative12a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2x-7$$"
+        ],
+        "dependencies": [
+            "aca1a7dderivative12a-h2"
+        ],
+        "title": "Derivative of the Denominator",
+        "text": "What is the derivative of $$x^2-7x+1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$2x-7$$",
+            "$$2x+7$$",
+            "$$x^2-7$$",
+            "$$2x-6$$"
+        ]
+    },
+    {
+        "id": "aca1a7dderivative12a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aca1a7dderivative12a-h3"
+        ],
+        "title": "Application of Quotient Rule",
+        "text": "Substitute into the quotient rule: $$f'(x)=\\frac{1\\left(x^2-7x+1\\right)-\\left(x+9\\right) \\left(2x-7\\right)}{\\left(x^2-7x+1\\right)^2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aca1a7dderivative12a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-x^2-18x+64$$"
+        ],
+        "dependencies": [
+            "aca1a7dderivative12a-h4"
+        ],
+        "title": "Simplify the Numerator",
+        "text": "What is $$x^2-7x+1-\\left(x+9\\right) \\left(2x-7\\right)$$ after expanding and combining like terms?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$-x^2-18x+64$$",
+            "$$3x^2+4x-62$$",
+            "$$-x^2-18x-62$$",
+            "$$-x^2+4x+64$$"
+        ]
+    },
+    {
+        "id": "aca1a7dderivative12a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aca1a7dderivative12a-h5"
+        ],
+        "title": "Final Answer",
+        "text": "Put the simplified numerator over $$\\left(x^2-7x+1\\right)^2$$ to get the answer.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

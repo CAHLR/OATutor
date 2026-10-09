@@ -16,7 +16,7 @@
             "a343428l'hopital17a-h1"
         ],
         "title": "Substitute the limit",
-        "text": "$$\\fractan^\\\\left(0\\right)sqrt{0}}=\\frac{0}{0}$$",
+        "text": "Substituting $$x=0$$ gives $$tan(0)=0$$ in the numerator and $$\\sqrt{0}=0$$ in the denominator, so the limit has the form $$\\frac{0}{0}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -28,7 +28,7 @@
             "a343428l'hopital17a-h2"
         ],
         "title": "Apply L\u2019H\u00f4pital\u2019s Rule",
-        "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to0} \\frac{\\frac{d}{dx} tan\\left(x\\right)}{\\frac{d}{dx} \\sqrt{x}}$$",
+        "text": "Differentiate the denominator and the numerator separately: $$\\lim_{x\\to0} \\frac{\\frac{d}{dx} tan\\left(x\\right)}{\\frac{d}{dx} \\sqrt{x}}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -39,7 +39,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\lim_{x\\to0} \\frac{{sec}^{2\\left(x\\right)}}{\\frac{1}{2\\sqrt{x}}}$$"
+            "$$\\lim_{x\\to0} \\frac{{\\operatorname{sec}\\left(x\\right)}^2}{\\frac{1}{2\\sqrt{x}}}$$"
         ],
         "dependencies": [
             "a343428l'hopital17a-h3"
@@ -50,10 +50,10 @@
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "$$\\lim_{x\\to0} \\frac{{sec}^{2\\left(x\\right)}}{\\frac{1}{\\sqrt{x}}}$$",
+            "$$\\lim_{x\\to0} \\frac{{\\operatorname{sec}\\left(x\\right)}^2}{\\frac{1}{\\sqrt{x}}}$$",
             "$$\\lim_{x\\to0} \\frac{\\operatorname{sec}\\left(x\\right)}{\\frac{1}{\\sqrt{x}}}$$",
-            "$$\\lim_{x\\to0} \\frac{{sec}^{2\\left(x\\right)}}{-\\left(\\frac{1}{\\sqrt{x}}\\right)}$$",
-            "$$\\lim_{x\\to0} \\frac{{sec}^{2\\left(x\\right)}}{\\frac{1}{2\\sqrt{x}}}$$"
+            "$$\\lim_{x\\to0} \\frac{{\\operatorname{sec}\\left(x\\right)}^2}{-\\left(\\frac{1}{\\sqrt{x}}\\right)}$$",
+            "$$\\lim_{x\\to0} \\frac{{\\operatorname{sec}\\left(x\\right)}^2}{\\frac{1}{2\\sqrt{x}}}$$"
         ]
     },
     {
@@ -63,7 +63,7 @@
             "a343428l'hopital17a-h4"
         ],
         "title": "Rearrange the expression",
-        "text": "$$\\lim_{x\\to0} \\frac{{sec}^{2\\left(x\\right)}}{\\frac{1}{2\\sqrt{x}}}=\\lim_{x\\to0} 2{sec}^{2\\left(x\\right)} \\sqrt{x}$$",
+        "text": "$$\\lim_{x\\to0} \\frac{{\\operatorname{sec}\\left(x\\right)}^2}{\\frac{1}{2\\sqrt{x}}}=\\lim_{x\\to0} 2{\\operatorname{sec}\\left(x\\right)}^2 \\sqrt{x}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -75,7 +75,7 @@
             "a343428l'hopital17a-h5"
         ],
         "title": "Evaluate the limit",
-        "text": "$$2{sec}^{2\\left(0\\right)} \\sqrt{0}=0\\times2\\times0=0$$",
+        "text": "$$2{\\operatorname{sec}\\left(0\\right)}^2 \\sqrt{0}=0\\times2\\times0=0$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

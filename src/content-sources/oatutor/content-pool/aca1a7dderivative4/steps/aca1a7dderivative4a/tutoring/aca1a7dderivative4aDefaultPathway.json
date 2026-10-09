@@ -1,1 +1,129 @@
-[]
+[
+    {
+        "id": "aca1a7dderivative4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The Power Rule",
+        "text": "If $$f(x)=x^n$$, then $$f'(x)={nx}^{n-1}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aca1a7dderivative4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aca1a7dderivative4a-h1"
+        ],
+        "title": "Application of Power Rule $$1$$",
+        "text": "To get the derivative of $$8x^4$$, we multiply our constant (8) by our exponent (4) and subtract the exponent power by $$1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aca1a7dderivative4a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$32x^3$$"
+        ],
+        "dependencies": [
+            "aca1a7dderivative4a-h2"
+        ],
+        "title": "Application of Power Rule $$2$$",
+        "text": "What is the derivative of $$8x^4$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$32x^3$$",
+            "$$8x^3$$",
+            "$$32x^4$$",
+            "$$12x^3$$"
+        ]
+    },
+    {
+        "id": "aca1a7dderivative4a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aca1a7dderivative4a-h3"
+        ],
+        "title": "Application of Power Rule $$3$$",
+        "text": "To get the derivative of $$9x^2$$, we multiply our constant (9) by our exponent (2) and subtract the exponent power by $$1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aca1a7dderivative4a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$18x$$"
+        ],
+        "dependencies": [
+            "aca1a7dderivative4a-h4"
+        ],
+        "title": "Application of Power Rule $$4$$",
+        "text": "What is the derivative of $$9x^2$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$18x$$",
+            "$$9x$$",
+            "$$18x^2$$",
+            "$$11x$$"
+        ]
+    },
+    {
+        "id": "aca1a7dderivative4a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aca1a7dderivative4a-h5"
+        ],
+        "title": "The Constant Rule",
+        "text": "If f(x) is a constant c, $$f'(x)=0$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aca1a7dderivative4a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "aca1a7dderivative4a-h6"
+        ],
+        "title": "Application of Constant Rule",
+        "text": "What is the derivative of -1?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$0$$",
+            "$$1$$",
+            "$$-1$$",
+            "$$x$$"
+        ]
+    },
+    {
+        "id": "aca1a7dderivative4a-h8",
+        "type": "hint",
+        "dependencies": [
+            "aca1a7dderivative4a-h7"
+        ],
+        "title": "The Sum Rule",
+        "text": "You can add the two separate derivatives that we just found to find our answer.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

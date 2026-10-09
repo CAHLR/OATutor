@@ -28,7 +28,7 @@
             "acf60f3DerivativeFunction11b-h2"
         ],
         "title": "Expand",
-        "text": "Expand $$1-\\frac{1}{\\left(x+h\\right)^2}-\\frac{1-\\frac{1}{x^2}}{h}$$ and Simplify",
+        "text": "Expand $$\\frac{1-\\frac{1}{\\left(x+h\\right)^2}-1-\\frac{1}{x^2}}{h}$$ and Simplify",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -39,7 +39,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\lim_{h\\to0} \\frac{2x+h}{x^4+2x^3 h+h^2}$$"
+            "$$\\lim_{h\\to0} \\frac{2x+h}{x^4+2x^3 h+x^2 h^2}$$"
         ],
         "dependencies": [
             "acf60f3DerivativeFunction11b-h3"
@@ -50,9 +50,9 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$\\lim_{h\\to0} \\frac{2x-h}{x^4+2x^3 h+h^2}$$",
+            "$$\\lim_{h\\to0} \\frac{2x-h}{x^4+2x^3 h+x^2 h^2}$$",
             "$$\\lim_{h\\to0} \\frac{2x+h}{x^2+2xh+h^2}$$",
-            "$$\\lim_{h\\to0} \\frac{2x+h}{x^4+2x^3 h+h^2}$$"
+            "$$\\lim_{h\\to0} \\frac{2x+h}{x^4+2x^3 h+x^2 h^2}$$"
         ]
     },
     {

@@ -15,7 +15,7 @@
         "dependencies": [
             "a7079e8inverse24a-h1"
         ],
-        "title": "Finding the Inverse of f(x) at $$a=0$$.",
+        "title": "Finding the Inverse of f(x) at $$a=-8$$.",
         "text": "To find the inverse of f(x) where $$a=-8$$, then we need to first find what value of $$x$$ when we plug it into f(x) will give us a value of $$-8$$. In this case, it is when $$x=\\frac{1}{3}$$, so we know that $$g(-8)=\\frac{1}{3}$$ where g(x) is the inverse of f(x).",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
@@ -28,7 +28,7 @@
             "a7079e8inverse24a-h2"
         ],
         "title": "Finding the Derivative of f(g(x)), where g(x) is the inverse of f(x).",
-        "text": "We found that the inverse of f(x) $$=\\frac{1}{3}$$ in the previous hint, therefore we need next know what $$\\operatorname{f'}\\left(\\frac{1}{3}\\right)$$ equals, which is given to us, it is $$2$$.",
+        "text": "We found that $$g(-8)=\\frac{1}{3}$$ in the previous hint, therefore we next need to know what $$\\operatorname{f'}\\left(\\frac{1}{3}\\right)$$ equals, which is given to us: it is $$2$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -40,7 +40,7 @@
             "a7079e8inverse24a-h3"
         ],
         "title": "Applying the Inverse Function Theorem",
-        "text": "Since we know that $$h{\\left(g{\\left(\\frac{1}{3}\\right)}\\right)}$$ where g(x) is the inverse of f(x) and h(x) is the derivative of f(x) equals $$2$$, we can can apply the inverse function theorem by doing 1/(our answer). In this case this is $$\\frac{1}{2}=\\frac{1}{2}$$.",
+        "text": "Since $$h(g(-8))=\\operatorname{f'}\\left(\\frac{1}{3}\\right)=2$$, where g(x) is the inverse of f(x) and h(x) is the derivative of f(x), we can apply the inverse function theorem by doing 1/(our answer). In this case this is $$\\frac{1}{2}=\\frac{1}{2}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

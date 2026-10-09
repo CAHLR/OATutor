@@ -1,1 +1,59 @@
-[]
+[
+    {
+        "id": "aca1a7dvelocity1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Velocity",
+        "text": "The velocity is the derivative of the position function: $$v(t)=s'(t)$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aca1a7dvelocity1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aca1a7dvelocity1a-h1"
+        ],
+        "title": "The Quotient Rule",
+        "text": "If $$s(t)=\\frac{g{\\left(t\\right)}}{h{\\left(t\\right)}}$$, then $$s'(t)=\\frac{\\operatorname{g'}\\left(t\\right) h{\\left(t\\right)}-g{\\left(t\\right)} \\operatorname{h'}\\left(t\\right)}{{h{\\left(t\\right)}}^2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aca1a7dvelocity1a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{4t}{\\left(t^2+2\\right)^2}$$"
+        ],
+        "dependencies": [
+            "aca1a7dvelocity1a-h2"
+        ],
+        "title": "Find the Derivative",
+        "text": "What is s'(t) for $$s(t)=\\frac{t^2}{t^2+2}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\frac{4t}{\\left(t^2+2\\right)^2}$$",
+            "$$\\frac{-4t}{\\left(t^2+2\\right)^2}$$",
+            "$$\\frac{4t^3+4t}{\\left(t^2+2\\right)^2}$$",
+            "$$\\frac{4t}{t^2+2}$$"
+        ]
+    },
+    {
+        "id": "aca1a7dvelocity1a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aca1a7dvelocity1a-h3"
+        ],
+        "title": "Evaluate the Velocity",
+        "text": "Substitute $$t=3$$ into s'(t): $$s'(3)=\\frac{4\\left(3\\right)}{\\left(3^2+2\\right)^2}$$. Simplify to get the answer.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

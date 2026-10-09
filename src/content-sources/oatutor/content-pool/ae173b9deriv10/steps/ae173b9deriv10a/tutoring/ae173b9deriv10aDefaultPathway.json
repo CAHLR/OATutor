@@ -15,7 +15,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$10000$$"
+            "$$10$$"
         ],
         "dependencies": [
             "ae173b9deriv10a-h1"
@@ -32,13 +32,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$30000$$"
+            "$$30$$"
         ],
         "dependencies": [
             "ae173b9deriv10a-h2"
         ],
         "title": "Tripling the Population",
-        "text": "Since the current population is 10,000 and P(t) is the population (in thousands) $$t$$ years from now, we know that P(0) $$=$$ $$10$$. Based on this information, what can we anticipate that the population is if it triples every $$5$$ years?",
+        "text": "Since the current population is 10,000 and P(t) is the population (in thousands) $$t$$ years from now, we know that P(0) $$=$$ $$10$$. If the population triples every $$5$$ years, what is P(5)?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -102,7 +102,7 @@
         "dependencies": [
             "ae173b9deriv10a-h7"
         ],
-        "title": "Pluggin in the Populations, in Thousands",
+        "title": "Plugging in the Populations, in Thousands",
         "text": "P'(0) \u2248 (30 - 10)/(5 - 0)",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
@@ -132,7 +132,7 @@
             "ae173b9deriv10a-h9"
         ],
         "title": "Amount of Change Formula",
-        "text": "For small enough values of $$h$$, f'(a) \u2248 f(a + h) - f(a)h. We can then solve for $$f{\\left(a+h\\right)}$$ to get the amount of change formula: f(a + h) \u2248 f(a) + f'(a)h. Apply this equation to P(t) to estimate the population $$2$$ years from now.",
+        "text": "For small enough values of $$h$$, f'(a) \u2248 (f(a + h) - f(a))/h. We can then solve for $$f{\\left(a+h\\right)}$$ to get the amount of change formula: f(a + h) \u2248 f(a) + f'(a)h. Apply this equation to P(t) to estimate the population $$2$$ years from now.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -190,7 +190,7 @@
             "ae173b9deriv10a-h13"
         ],
         "title": "Final Answer",
-        "text": "P(2) $$=$$ $$18$$. Remember that P(t) is the population (in thousands) $$t$$ years from now. This means that P(2) is the population (in thousands) $$2$$ years from now. What is the approximate population $$2$$ years from now in thousands?",
+        "text": "P(2) $$=$$ $$18$$. Remember that P(t) is the population (in thousands) $$t$$ years from now. This means that P(2) is the population (in thousands) $$2$$ years from now. What is the approximate population $$2$$ years from now?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

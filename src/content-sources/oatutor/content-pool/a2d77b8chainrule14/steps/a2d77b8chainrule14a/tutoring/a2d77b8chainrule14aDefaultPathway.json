@@ -8,5 +8,133 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a2d77b8chainrule14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2d77b8chainrule14a-h1"
+        ],
+        "title": "Decompose the Function",
+        "text": "First we need to decompose our function $$y$$ into the form $$y=f(u)$$ and $$u=g(x)$$, try finding what f(u) and g(x) should be in this case.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a2d77b8chainrule14a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "sin(u)"
+        ],
+        "dependencies": [
+            "a2d77b8chainrule14a-h2"
+        ],
+        "title": "Find f(u)",
+        "text": "What is f(u)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "sin(u)",
+            "cos(u)",
+            "sin(7u)",
+            "cos(7u)"
+        ]
+    },
+    {
+        "id": "a2d77b8chainrule14a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "cos(7x)"
+        ],
+        "dependencies": [
+            "a2d77b8chainrule14a-h3"
+        ],
+        "title": "Find g(x)",
+        "text": "What is g(x)?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "cos(7x)",
+            "$$7x$$",
+            "sin(7x)",
+            "cos(x)"
+        ]
+    },
+    {
+        "id": "a2d77b8chainrule14a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a2d77b8chainrule14a-h4"
+        ],
+        "title": "Find the Derivative",
+        "text": "Next, we take the derivative of f(u) in terms of u, $$\\frac{dy}{du}$$, and the derivative of g(x) in terms of $$x$$, $$\\frac{du}{dx}$$. Multiplying these two expressions together yields our final answer, $$\\frac{dy}{dx}$$. Note that $$g(x)=cos(7x)$$ is itself a composite function, so use the chain rule again to find $$\\frac{du}{dx}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    },
+    {
+        "id": "a2d77b8chainrule14a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "cos(u)"
+        ],
+        "dependencies": [
+            "a2d77b8chainrule14a-h5"
+        ],
+        "title": "Find $$\\frac{dy}{du}$$",
+        "text": "What is $$\\frac{dy}{du}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "cos(u)",
+            "$$-cos(u)$$",
+            "sin(u)",
+            "$$-sin(u)$$"
+        ]
+    },
+    {
+        "id": "a2d77b8chainrule14a-h7",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-7sin\\left(7x\\right)$$"
+        ],
+        "dependencies": [
+            "a2d77b8chainrule14a-h6"
+        ],
+        "title": "Find $$\\frac{du}{dx}$$",
+        "text": "What is $$\\frac{du}{dx}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "choices": [
+            "$$-7sin\\left(7x\\right)$$",
+            "$$-sin(7x)$$",
+            "$$7sin\\left(7x\\right)$$",
+            "$$-7cos\\left(7x\\right)$$"
+        ]
+    },
+    {
+        "id": "a2d77b8chainrule14a-h8",
+        "type": "hint",
+        "dependencies": [
+            "a2d77b8chainrule14a-h7"
+        ],
+        "title": "Plug In and Solve in Terms of $$x$$",
+        "text": "Finally, we only need to multiply these two expressions to find our final answer. Don't forget to plug in what we have for u in terms of $$x$$ into our final answer.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
     }
 ]

@@ -1,1 +1,105 @@
-[]
+[
+    {
+        "id": "aca1a7dderivative11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The Quotient Rule",
+        "text": "If $$f(x)=\\frac{g{\\left(x\\right)}}{h{\\left(x\\right)}}$$, then $$f'(x)=\\frac{\\operatorname{g'}\\left(x\\right) h{\\left(x\\right)}-g{\\left(x\\right)} \\operatorname{h'}\\left(x\\right)}{{h{\\left(x\\right)}}^2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aca1a7dderivative11a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2x$$"
+        ],
+        "dependencies": [
+            "aca1a7dderivative11a-h1"
+        ],
+        "title": "Derivative of the Numerator",
+        "text": "What is the derivative of $$x^2+4$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$2x$$",
+            "$$2x+4$$",
+            "$$x$$",
+            "$$2$$"
+        ]
+    },
+    {
+        "id": "aca1a7dderivative11a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$2x$$"
+        ],
+        "dependencies": [
+            "aca1a7dderivative11a-h2"
+        ],
+        "title": "Derivative of the Denominator",
+        "text": "What is the derivative of $$x^2-4$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$2x$$",
+            "$$2x-4$$",
+            "$$-2x$$",
+            "$$x$$"
+        ]
+    },
+    {
+        "id": "aca1a7dderivative11a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aca1a7dderivative11a-h3"
+        ],
+        "title": "Application of Quotient Rule",
+        "text": "Substitute into the quotient rule: $$f'(x)=\\frac{2x \\left(x^2-4\\right)-\\left(x^2+4\\right) 2x}{\\left(x^2-4\\right)^2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aca1a7dderivative11a-h5",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$-16x$$"
+        ],
+        "dependencies": [
+            "aca1a7dderivative11a-h4"
+        ],
+        "title": "Simplify the Numerator",
+        "text": "What is $$2x \\left(x^2-4\\right)-\\left(x^2+4\\right) 2x$$ after simplifying?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$-16x$$",
+            "$$16x$$",
+            "$$-8x$$",
+            "$$0$$"
+        ]
+    },
+    {
+        "id": "aca1a7dderivative11a-h6",
+        "type": "hint",
+        "dependencies": [
+            "aca1a7dderivative11a-h5"
+        ],
+        "title": "Final Answer",
+        "text": "Put the simplified numerator over $$\\left(x^2-4\\right)^2$$ to get the answer.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

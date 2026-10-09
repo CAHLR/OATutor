@@ -50,7 +50,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "Let's set the horizontal distance between L and P as $$x$$, distance between P and the point the light hit in the beach as $$h$$, and the angle between PL and light as \u03b8, what equation can you use from trigonometry?"
+            "$${\\operatorname{sec}\\left(\\theta\\right)}^2 \\frac{dtheta}{dt}=\\frac{1}{x} \\frac{dh}{dt}$$"
         ],
         "dependencies": [
             "ac1df14related17a-h3"
@@ -61,10 +61,9 @@
         "oer": "",
         "license": "",
         "choices": [
-            "Let's set the horizontal distance between L and P as $$x$$, distance between P and the point the light hit in the beach as $$h$$, and the angle between PL and light as \u03b8, what equation can you use from trigonometry?",
-            "$${sec}^{2\\left(\\theta\\right)} \\frac{dtheta}{dt}=$$ $$\\frac{1}{x} \\frac{dh}{dt}-\\frac{h}{x^2} \\frac{dx}{dt}$$",
-            "$${sec}^{2\\left(\\theta\\right)} \\frac{dtheta}{dt}=\\frac{1}{x} \\frac{dh}{dt}$$",
-            "$${sec}^{2\\left(\\theta\\right)} \\frac{dtheta}{dt}=\\frac{h}{x^2} \\frac{dx}{dt}$$"
+            "$${\\operatorname{sec}\\left(\\theta\\right)}^2 \\frac{dtheta}{dt}=\\frac{1}{x} \\frac{dh}{dt}$$",
+            "$${\\operatorname{sec}\\left(\\theta\\right)}^2 \\frac{dtheta}{dt}=x\\left(\\frac{dh}{dt}\\right)$$",
+            "$${\\operatorname{sec}\\left(\\theta\\right)}^2 \\frac{dtheta}{dt}=\\frac{h}{x^2} \\frac{dh}{dt}$$"
         ]
     },
     {
@@ -86,7 +85,7 @@
             "ac1df14related17a-h5"
         ],
         "title": "Strategy For Approaching Problem",
-        "text": "We want to find $$\\frac{dh}{dt}$$ when $$\\frac{dx}{dt}$$ is $$0$$, $$\\frac{dtheta}{dt}=1o$$ $$\\frac{revolution}{min}$$, $$x=4mi$$, and $$h=2mi$$",
+        "text": "We want to find $$\\frac{dh}{dt}$$ when $$\\frac{dx}{dt}$$ is $$0$$, $$\\frac{dtheta}{dt}=10$$ $$\\frac{revolutions}{min}=20\\pi$$ $$\\frac{rad}{min}$$, $$x=4mi$$, and $$h=2mi$$",
         "variabilization": {},
         "oer": "",
         "license": ""

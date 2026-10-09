@@ -11,11 +11,34 @@
     },
     {
         "id": "ab2ed79implicit20a-h2",
-        "type": "hint",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{-3y}{x}$$"
+        ],
         "dependencies": [
             "ab2ed79implicit20a-h1"
         ],
-        "title": "Point-Slope Form",
+        "title": "Finding $$\\frac{dy}{dx}$$",
+        "text": "What is $$\\frac{dy}{dx}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{-3y}{x}$$",
+            "$$\\frac{-y}{3x}$$",
+            "$$\\frac{3y}{x}$$",
+            "$$\\frac{-x}{3y}$$"
+        ]
+    },
+    {
+        "id": "ab2ed79implicit20a-h3",
+        "type": "hint",
+        "dependencies": [
+            "ab2ed79implicit20a-h2"
+        ],
+        "title": "Finding the Slope at $$(81,16)$$",
         "text": "Plug $$(81,16)$$ into the $$\\frac{dy}{dx}$$ equation for the slope of the equation at $$(81,16)$$.",
         "variabilization": {},
         "oer": "",

@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Average Velocity Formula",
-        "text": "One use for the derivative is to analyze motion along a line. Let s(t) be a function giving the position of an object at time $$t$$. The average velocity of the object is given by $$v_{ave}$$ $$=$$ $$\\frac{\\Delta x}{\\Delta t}$$, where \u0394x is the displacement (total distance travelled) and \u0394t is the change in time.",
+        "text": "One use for the derivative is to analyze motion along a line. Let s(t) be a function giving the position of an object at time $$t$$. The average velocity of the object is given by $$v_{ave}$$ $$=$$ $$\\frac{\\Delta x}{\\Delta t}$$, where \u0394x is the displacement (change in position) and \u0394t is the change in time.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -69,17 +69,12 @@
     },
     {
         "id": "ae173b9deriv3a-h5",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$-64$$"
-        ],
+        "type": "hint",
         "dependencies": [
             "ae173b9deriv3a-h4"
         ],
-        "title": "Finding the Total Distance Travelled",
-        "text": "What is \u0394x, the displacement?",
+        "title": "Finding the Displacement",
+        "text": "To find \u0394x $$=$$ s(2) - s(0), first find s(2) and s(0).",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

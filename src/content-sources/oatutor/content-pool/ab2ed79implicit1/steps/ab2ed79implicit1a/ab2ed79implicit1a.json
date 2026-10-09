@@ -1,12 +1,18 @@
 {
     "id": "ab2ed79implicit1a",
     "stepAnswer": [
-        "x/y"
+        "$$\\frac{x}{y}$$"
     ],
-    "problemType": "TextBox",
+    "problemType": "MultipleChoice",
     "stepTitle": "For $$x^2-y^2=4$$, use implicit differentiation to find $$\\frac{dy}{dx}$$.",
     "stepBody": "",
     "answerType": "string",
     "variabilization": {},
-    "answerLatex": "$$\\frac{x}{y}$$"
+    "answerLatex": "$$\\frac{x}{y}$$",
+    "choices": [
+        "$$\\frac{x}{y}$$",
+        "$$\\frac{-x}{y}$$",
+        "$$\\frac{y}{x}$$",
+        "$$\\frac{-y}{x}$$"
+    ]
 }

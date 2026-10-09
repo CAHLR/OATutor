@@ -1,1 +1,59 @@
-[]
+[
+    {
+        "id": "aca1a7dderivative9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "The Constant Multiple Rule",
+        "text": "Dividing by $$3$$ is the same as multiplying by $$\\frac{1}{3}$$. If $$f(x)=c g{\\left(x\\right)}$$, then $$f'(x)=c \\operatorname{g'}\\left(x\\right)$$, so you can take the derivative of the numerator and then divide by $$3$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aca1a7dderivative9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aca1a7dderivative9a-h1"
+        ],
+        "title": "The Power Rule",
+        "text": "If $$f(x)=x^n$$, then $$f'(x)={nx}^{n-1}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aca1a7dderivative9a-h3",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$3x^2+4x$$"
+        ],
+        "dependencies": [
+            "aca1a7dderivative9a-h2"
+        ],
+        "title": "Derivative of the Numerator",
+        "text": "What is the derivative of $$x^3+2x^2-4$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$3x^2+4x$$",
+            "$$3x^2+4x-4$$",
+            "$$3x^2+2x$$",
+            "$$x^2+4x$$"
+        ]
+    },
+    {
+        "id": "aca1a7dderivative9a-h4",
+        "type": "hint",
+        "dependencies": [
+            "aca1a7dderivative9a-h3"
+        ],
+        "title": "Divide by $$3$$",
+        "text": "Divide the derivative of the numerator by $$3$$ to get the answer.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

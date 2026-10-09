@@ -1,1 +1,117 @@
-[]
+[
+    {
+        "id": "aca1a7dderivative6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Distribute",
+        "text": "Multiply $$3x$$ into the parentheses before taking the derivative.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aca1a7dderivative6a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$54x^5+\\frac{39x}{x+1}$$"
+        ],
+        "dependencies": [
+            "aca1a7dderivative6a-h1"
+        ],
+        "title": "Simplify the Function",
+        "text": "What is $$3x\\left(18x^4+\\frac{13}{x+1}\\right)$$ after distributing?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$54x^5+\\frac{39x}{x+1}$$",
+            "$$54x^4+\\frac{39}{x+1}$$",
+            "$$21x^5+\\frac{16x}{x+1}$$",
+            "$$54x^5+\\frac{13x}{x+1}$$"
+        ]
+    },
+    {
+        "id": "aca1a7dderivative6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "aca1a7dderivative6a-h2"
+        ],
+        "title": "The Power Rule",
+        "text": "If $$f(x)=x^n$$, then $$f'(x)={nx}^{n-1}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aca1a7dderivative6a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$270x^4$$"
+        ],
+        "dependencies": [
+            "aca1a7dderivative6a-h3"
+        ],
+        "title": "Application of Power Rule",
+        "text": "What is the derivative of $$54x^5$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$270x^4$$",
+            "$$54x^4$$",
+            "$$270x^5$$",
+            "$$216x^4$$"
+        ]
+    },
+    {
+        "id": "aca1a7dderivative6a-h5",
+        "type": "hint",
+        "dependencies": [
+            "aca1a7dderivative6a-h4"
+        ],
+        "title": "The Quotient Rule",
+        "text": "If $$f(x)=\\frac{g{\\left(x\\right)}}{h{\\left(x\\right)}}$$, then $$f'(x)=\\frac{\\operatorname{g'}\\left(x\\right) h{\\left(x\\right)}-g{\\left(x\\right)} \\operatorname{h'}\\left(x\\right)}{{h{\\left(x\\right)}}^2}$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    },
+    {
+        "id": "aca1a7dderivative6a-h6",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{39}{\\left(x+1\\right)^2}$$"
+        ],
+        "dependencies": [
+            "aca1a7dderivative6a-h5"
+        ],
+        "title": "Application of Quotient Rule",
+        "text": "What is the derivative of $$\\frac{39x}{x+1}$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "",
+        "choices": [
+            "$$\\frac{39}{\\left(x+1\\right)^2}$$",
+            "$$\\frac{-39}{\\left(x+1\\right)^2}$$",
+            "$$39$$",
+            "$$\\frac{78x+39}{\\left(x+1\\right)^2}$$"
+        ]
+    },
+    {
+        "id": "aca1a7dderivative6a-h7",
+        "type": "hint",
+        "dependencies": [
+            "aca1a7dderivative6a-h6"
+        ],
+        "title": "The Sum Rule",
+        "text": "You can add the two separate derivatives that we just found to find our answer.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": ""
+    }
+]

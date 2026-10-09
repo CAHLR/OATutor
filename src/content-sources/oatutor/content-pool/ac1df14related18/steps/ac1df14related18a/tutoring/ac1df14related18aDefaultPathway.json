@@ -21,7 +21,7 @@
             "ac1df14related18a-h1"
         ],
         "title": "Use Trigonometry",
-        "text": "Let's set the distance you traveled north as $$x$$, distance the bus traveled west as $$y$$ , and the angle between you and bus as \u03b8, what equation can you use from trigonometry?",
+        "text": "Let's set your distance south of the intersection as $$x$$, the distance of the bus west of the intersection as $$y$$, and the angle between you and bus as \u03b8, what equation can you use from trigonometry?",
         "variabilization": {},
         "oer": "",
         "license": "",
@@ -50,7 +50,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$${sec}^2 \\theta \\frac{dtheta}{dt}=$$ $$\\frac{1}{x} \\frac{dy}{dt}-\\frac{y}{x^2} \\frac{dx}{dt}$$"
+            "$${\\operatorname{sec}\\left(\\theta\\right)}^2 \\frac{dtheta}{dt}=\\frac{1}{x} \\frac{dy}{dt}-\\frac{y}{x^2} \\frac{dx}{dt}$$"
         ],
         "dependencies": [
             "ac1df14related18a-h3"
@@ -61,10 +61,9 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$${sec}^2 \\theta \\frac{dtheta}{dt}=$$ $$\\frac{1}{x} \\frac{dy}{dt}-\\frac{y}{x^2} \\frac{dx}{dt}$$",
-            "$${sec}^2 \\theta \\frac{dtheta}{dt}=\\frac{1}{x} \\frac{dy}{dt}$$",
-            "$${sec}^{2\\left(\\theta\\right)} \\frac{dtheta}{dt}=$$ $$\\frac{1}{x} \\frac{dy}{dt}-\\frac{y}{x^2} \\frac{dx}{dt}$$",
-            "$${sec}^{2\\left(\\theta\\right)} \\frac{dtheta}{dt}=\\frac{u}{x^2} \\frac{dx}{dt}$$"
+            "$${\\operatorname{sec}\\left(\\theta\\right)}^2 \\frac{dtheta}{dt}=\\frac{1}{x} \\frac{dy}{dt}$$",
+            "$${\\operatorname{sec}\\left(\\theta\\right)}^2 \\frac{dtheta}{dt}=\\frac{1}{x} \\frac{dy}{dt}-\\frac{y}{x^2} \\frac{dx}{dt}$$",
+            "$${\\operatorname{sec}\\left(\\theta\\right)}^2 \\frac{dtheta}{dt}=\\frac{y}{x^2} \\frac{dx}{dt}$$"
         ]
     },
     {
@@ -74,7 +73,7 @@
             "ac1df14related18a-h4"
         ],
         "title": "Strategy For Approaching Problem",
-        "text": "We want to find $$\\frac{dtheta}{dt}$$ when $$\\frac{dx}{dt}$$ is $$\\frac{2m}{sec}$$, $$\\frac{dy}{dt}=10$$ $$\\frac{m}{sec}$$, $$x=20mi$$, and $$y=10mi$$",
+        "text": "We want to find $$\\frac{dtheta}{dt}$$ when $$\\frac{dx}{dt}=-2$$ $$\\frac{m}{sec}$$ (x is decreasing as you walk toward the intersection), $$\\frac{dy}{dt}=10$$ $$\\frac{m}{sec}$$, $$x=20$$ $$m$$, and $$y=10$$ $$m$$",
         "variabilization": {},
         "oer": "",
         "license": ""

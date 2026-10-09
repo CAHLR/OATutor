@@ -48,13 +48,13 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$T=RxD$$"
+            "$$D=RxT$$"
         ],
         "dependencies": [
             "aef8b03optimize3a-h3"
         ],
         "title": "Distance",
-        "text": "To find the time spent traveling from the cabin to the island, add the tme spent running and the time spent swimming. Let $$D=distance$$, $$R=Rate$$, and $$T=Time$$. Which equation is correct?",
+        "text": "To find the time spent traveling from the cabin to the island, add the time spent running and the time spent swimming. Let $$D=distance$$, $$R=Rate$$, and $$T=Time$$. Which equation is correct?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
@@ -192,7 +192,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\frac{x}{8}+\\frac{{\\sqrt{6-x}}^2+4}{3}$$"
+            "$$\\frac{x}{8}+\\frac{\\sqrt{\\left(6-x\\right)^2+4}}{3}$$"
         ],
         "dependencies": [
             "aef8b03optimize3a-h10"
@@ -203,8 +203,9 @@
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "$$\\frac{x}{8}+\\frac{{\\sqrt{6-x}}^2+4}{3}$$",
-            "$$\\frac{{\\sqrt{6-x}}^2+4}{3}$$"
+            "$$\\frac{x}{8}+\\frac{\\sqrt{\\left(6-x\\right)^2+4}}{3}$$",
+            "$$\\frac{\\sqrt{\\left(6-x\\right)^2+4}}{3}$$",
+            "$$\\frac{x}{8}+\\frac{{\\sqrt{6-x}}^2+4}{3}$$"
         ]
     },
     {
@@ -213,8 +214,8 @@
         "dependencies": [
             "aef8b03optimize3a-h11"
         ],
-        "title": "Subsitute $$y$$",
-        "text": "If $$T=\\frac{x}{8}+\\frac{y}{3}$$, subsitute $$y$$ with $$y=\\sqrt{\\left(6-x\\right)^2+4}$$.",
+        "title": "Substitute $$y$$",
+        "text": "If $$T=\\frac{x}{8}+\\frac{y}{3}$$, substitute $$y$$ with $$y=\\sqrt{\\left(6-x\\right)^2+4}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -242,7 +243,7 @@
         "dependencies": [
             "aef8b03optimize3a-h13"
         ],
-        "title": "Shore Length's Fomain",
+        "title": "Shore Length's Domain",
         "text": "If the shore length must be positive and less than $$6$$ miles, $$x$$ can only be within what two numbers?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
@@ -271,7 +272,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\frac{1}{8}-\\frac{2\\frac{1}{2} \\left(6-x\\right) \\left(\\left(6-x\\right)^2+4\\right)^{\\left(-\\frac{1}{2}\\right)}}{3}$$"
+            "$$\\frac{1}{8}-\\frac{6-x}{3\\sqrt{\\left(6-x\\right)^2+4}}$$"
         ],
         "dependencies": [
             "aef8b03optimize3a-h15"
@@ -282,8 +283,8 @@
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "$$\\frac{2\\frac{1}{2} \\left(6-x\\right) \\left(\\left(6-x\\right)^2+4\\right)^{\\left(-\\frac{1}{2}\\right)}}{3}$$",
-            "$$\\frac{1}{8}-\\frac{2\\frac{1}{2} \\left(6-x\\right) \\left(\\left(6-x\\right)^2+4\\right)^{\\left(-\\frac{1}{2}\\right)}}{3}$$"
+            "$$\\frac{6-x}{3\\sqrt{\\left(6-x\\right)^2+4}}$$",
+            "$$\\frac{1}{8}-\\frac{6-x}{3\\sqrt{\\left(6-x\\right)^2+4}}$$"
         ]
     },
     {
@@ -318,7 +319,7 @@
         "dependencies": [
             "aef8b03optimize3a-h17"
         ],
-        "title": "Critial Points Within the Domain",
+        "title": "Critical Points Within the Domain",
         "text": "Which of the following $$x$$ values are within the domain?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",

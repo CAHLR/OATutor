@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Derivative Function",
-        "text": "Start directly with the definition of the Derivative Function. $$f\u2032(x)=\\lim_{h\\to0} \\frac{f{\\left(x+h\\right)}-f{\\left(x\\right)}}{h}$$",
+        "text": "Start directly with the definition of the Derivative Function. $$f'(x)=\\lim_{h\\to0} \\frac{f{\\left(x+h\\right)}-f{\\left(x\\right)}}{h}$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -73,7 +73,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$/lim{h,0$$, $$2x-2+h$$}"
+            "$$\\lim_{h\\to0} 2x-2+h$$"
         ],
         "dependencies": [
             "acf60f3DerivativeFunction2a-h5"
@@ -84,9 +84,9 @@
         "oer": "",
         "license": "",
         "choices": [
-            "$$/lim{h,0$$, $$x+h$$}",
-            "$$/lim{h,0$$, $$(2x-h)$$}",
-            "$$/lim{h,0$$, $$2x-2+h$$}"
+            "$$\\lim_{h\\to0} x+h$$",
+            "$$\\lim_{h\\to0} (2x-h)$$",
+            "$$\\lim_{h\\to0} 2x-2+h$$"
         ]
     },
     {
@@ -96,7 +96,7 @@
             "acf60f3DerivativeFunction2a-h6"
         ],
         "title": "Evaluate the Limit",
-        "text": "To get a final answer, Evaluate the Limit by inserting h-->0 $$=$$ $$h=0$$",
+        "text": "To get a final answer, Evaluate the Limit by inserting $$h=0$$",
         "variabilization": {},
         "oer": "",
         "license": ""

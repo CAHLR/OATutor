@@ -28,7 +28,7 @@
             "a343428l'hopital5a-h2"
         ],
         "title": "Apply L\u2019H\u00f4pital\u2019s Rule",
-        "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to0} \\frac{\\frac{\\frac{d}{\\operatorname{dx}\\left(lnx\\right)}}{d}}{\\operatorname{dx}\\left(cotx\\right)}$$",
+        "text": "Differentiate the denominator and the numerator separately: $$\\lim_{x\\to0} \\frac{\\frac{d}{dx} lnx}{\\frac{d}{dx} cotx}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -39,7 +39,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$\\lim_{x\\to0} \\frac{1}{-\\left(x {csc}^{2\\left(x\\right)}\\right)}$$"
+            "$$\\lim_{x\\to0} \\frac{1}{-\\left(x {\\operatorname{csc}\\left(x\\right)}^2\\right)}$$"
         ],
         "dependencies": [
             "a343428l'hopital5a-h3"
@@ -50,10 +50,10 @@
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "$$\\lim_{x\\to0} \\frac{1}{x {csc}^{2\\left(x\\right)}}$$",
-            "$$\\lim_{x\\to0} \\frac{1}{-\\left(x {csc}^{2\\left(x\\right)}\\right)}$$",
-            "$$\\lim_{x\\to0} \\frac{x}{\\left(-{csc}^{2\\left(x\\right)}\\right)}$$",
-            "$$\\lim_{x\\to0} \\frac{-{csc}^{2\\left(x\\right)}}{x}$$"
+            "$$\\lim_{x\\to0} \\frac{1}{x {\\operatorname{csc}\\left(x\\right)}^2}$$",
+            "$$\\lim_{x\\to0} \\frac{1}{-\\left(x {\\operatorname{csc}\\left(x\\right)}^2\\right)}$$",
+            "$$\\lim_{x\\to0} \\frac{x}{\\left(-{\\operatorname{csc}\\left(x\\right)}^2\\right)}$$",
+            "$$\\lim_{x\\to0} \\frac{-{\\operatorname{csc}\\left(x\\right)}^2}{x}$$"
         ],
         "subHints": [
             {
@@ -87,7 +87,7 @@
             "a343428l'hopital5a-h5"
         ],
         "title": "Apply L\u2019H\u00f4pital\u2019s Rule again",
-        "text": "Differentiate the denominator and the numerator seperatedly: $$\\lim_{x\\to0} \\frac{\\frac{\\frac{d}{dx}\\left(\\frac{{sin}^{2\\left(x\\right)}}{-x}\\right)}}{d}}{\\operatorname{dx\\left(-x\\right)}$$",
+        "text": "Rewrite $$\\frac{1}{-\\left(x {\\operatorname{csc}\\left(x\\right)}^2\\right)}$$ as $$\\frac{sin^2\\left(x\\right)}{\\left(-x\\right)}$$. Differentiate the denominator and the numerator separately: $$\\lim_{x\\to0} \\frac{\\frac{d}{dx} sin^2\\left(x\\right)}{\\frac{d}{dx} \\left(-x\\right)}$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -109,33 +109,21 @@
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "$$\\lim_{x\\to0} \\frac{2{sin}^{2}\\left(x\\right)}}{\\operatorname{\\left(-1\\right)}$$",
+            "$$\\lim_{x\\to0} \\frac{2sinx cosx}{\\left(-1\\right)}$$",
+            "$$\\lim_{x\\to0} \\frac{2sin^2\\left(x\\right)}{\\left(-1\\right)}$$",
             "$$\\lim_{x\\to0} \\frac{2sinx}{\\left(-1\\right)}$$",
-            "$$\\lim_{x\\to0} \\frac{2sinx cosx}{\\left(-1\\right)}$$",
-            "$$\\lim_{x\\to0} \\frac{2sinx cosx}{\\left(-1\\right)}$$",
-            "lim{x,0,(sinx*cos**2(x))/(-1)}"
+            "$$\\lim_{x\\to0} \\frac{sinx cos^2\\left(x\\right)}{\\left(-1\\right)}$$"
         ],
         "subHints": [
             {
                 "id": "a343428l'hopital5a-h7-s1",
-                "type": "scaffold",
-                "problemType": "MultipleChoice",
-                "answerType": "string",
-                "hintAnswer": [
-                    "$$2sinx cosx$$"
-                ],
+                "type": "hint",
                 "dependencies": [],
                 "title": "Apply Chain Rule",
-                "text": "What is the derivative of $${sin}^{2\\left(x\\right)}$$?",
+                "text": "By the Chain Rule, the derivative of $$sin^2\\left(x\\right)$$ is $$2sinx cosx$$.",
                 "variabilization": {},
                 "oer": "https://OATutor.io <OATutor>",
-                "license": "",
-                "choices": [
-                    "$$2{sin}^{2\\left(x\\right)}$$",
-                    "$$2sinx$$",
-                    "$$2sinx cosx$$",
-                    "$$sinx {cos}^{2\\left(x\\right)}$$"
-                ]
+                "license": ""
             }
         ]
     },

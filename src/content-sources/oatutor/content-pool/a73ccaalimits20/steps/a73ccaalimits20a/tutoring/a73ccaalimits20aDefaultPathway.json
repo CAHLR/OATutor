@@ -28,7 +28,7 @@
             "a73ccaalimits20a-h2"
         ],
         "title": "Cancel out the Infinities",
-        "text": "What we are really looking at in this problem is $$\\frac{1}{\\infty}$$ since the $$2\\sqrt{x}$$ and $$-\\sqrt{x}+1$$ will not have as large an effect on the limit compared to $$\\infty$$. Thus, since $$\\frac{1}{\\infty}$$ is infinitely small, the limit as $$x$$ approaches infinity approaches closer to $$0$$.",
+        "text": "Divide the numerator and the denominator by $$x$$. The numerator becomes $$\\frac{2\\sqrt{x}}{x}=\\frac{2}{\\sqrt{x}}$$, which approaches $$0$$, while the denominator becomes $$1-\\frac{1}{\\sqrt{x}}+\\frac{1}{x}$$, which approaches $$1$$. Thus, the limit as $$x$$ approaches infinity is $$\\frac{0}{1}=0$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
