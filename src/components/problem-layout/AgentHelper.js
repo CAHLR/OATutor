@@ -12,7 +12,8 @@ import {
     DEFAULT_HINT_PENALTY_MODE,
 } from '../../util/helpPenaltyMode.js';
 import { DEFAULT_CHAT_MODEL, resolveChatModel } from '../../util/chatModel.js';
-import { OFFICE_HOURS_CHAT_PROMPT, isFullChatLesson } from '../../util/officeHours.js';
+import { isFullChatLesson, resolveFullChatPrompt } from '../../util/officeHours.js';
+import { boundedLegacyHistory } from '../../util/chatHistory.js';
 
 export class AgentHelper {
     constructor() {
@@ -30,9 +31,14 @@ export class AgentHelper {
      * Creates unique session ID for conversation history tracking
      */
     initializeSession() {
-        this.sessionId = `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+        this.cancelMessage();
+        const random = new Uint32Array(4);
+        window.crypto.getRandomValues(random);
+        this.sessionId = `session_${Array.from(random, (value) => value.toString(16).padStart(8, '0')).join('')}`;
         this.turnId = 0;
         this._needsSessionMetaWrite = true;
+        this.serverOwnsHistory = false;
+        this.pendingRequest = null;
         return this.sessionId;
     }
 
@@ -97,7 +103,7 @@ export class AgentHelper {
             chatDisplayMode,
             condition,
             chatPrompt: isFullChatLesson(lesson)
-                ? OFFICE_HOURS_CHAT_PROMPT
+                ? resolveFullChatPrompt(lesson)
                 : (lesson?.chat_prompt || 'PROMPTv2b.txt'),
             chatModel: resolveChatModel(lesson),
             hintPenaltyMode: hintPenaltyMode || DEFAULT_HINT_PENALTY_MODE,
@@ -137,8 +143,10 @@ export class AgentHelper {
             chatDisplayMode: chatDisplayMode || 'Off',
             chatPenaltyMode: chatPenaltyMode || DEFAULT_CHAT_PENALTY_MODE,
             chatModel: chatModel || DEFAULT_CHAT_MODEL,
-            // Client transcript is the source of truth; DynamoDB is a backup.
-            conversationHistory: Array.isArray(conversationHistory) ? conversationHistory : [],
+            memoryVersion: 1,
+            requestId: `${this.sessionId}_${this.turnId}`,
+            // Bounded bootstrap for deployment compatibility; stop sending after acknowledgment.
+            conversationHistory: this.serverOwnsHistory ? [] : boundedLegacyHistory(conversationHistory),
         };
 
         return request;
@@ -185,8 +193,11 @@ export class AgentHelper {
             onTurnStarted = () => {},
             onChunkReceived = () => {},
             onSuccessfulCompletion = () => {},
+            onHistoryCommitted = () => {},
             onError = () => {}
         } = callbacks;
+        let controller;
+        let reader;
 
         try {
             // Initialize session if needed
@@ -194,7 +205,6 @@ export class AgentHelper {
                 this.initializeSession();
             }
             this.turnId += 1;
-            onTurnStarted(this.turnId);
 
             // Validate endpoint
             if (!this.agentEndpoint) {
@@ -213,6 +223,16 @@ export class AgentHelper {
                 chatPenaltyMode,
                 chatModel
             );
+            const requestSessionId = this.sessionId;
+            const identity = JSON.stringify([userMessage, extracted?.lessonId,
+                problemContext?.problemID, problemContext?.currentStep?.id]);
+            if (this.pendingRequest?.identity === identity) {
+                agentRequest.requestId = this.pendingRequest.requestId;
+            }
+            this.pendingRequest = { identity, requestId: agentRequest.requestId };
+            onTurnStarted(this.turnId);
+            controller = new AbortController();
+            this.controller = controller;
 
             // Send POST request with streaming
             const response = await fetch(this.agentEndpoint, {
@@ -220,7 +240,8 @@ export class AgentHelper {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(agentRequest)
+                body: JSON.stringify(agentRequest),
+                signal: controller.signal
             });
 
             if (!response.ok) {
@@ -228,10 +249,12 @@ export class AgentHelper {
             }
 
             // Handle streaming response
-            const reader = response.body.getReader();
+            reader = response.body.getReader();
             const decoder = new TextDecoder();
             let fullResponse = '';
             let lineBuffer = '';
+            let completion = null;
+            let lastPaint = 0;
 
             const processStreamLine = (line) => {
                 const trimmed = line.trim();
@@ -243,9 +266,15 @@ export class AgentHelper {
 
                 if (data.type === 'content' && data.content) {
                     fullResponse += data.content;
-                    onChunkReceived(fullResponse);
+                    if (fullResponse.length > 16_000) throw new Error('Reply exceeds the size limit');
+                    if (Date.now() - lastPaint >= 50) {
+                        lastPaint = Date.now();
+                        onChunkReceived(fullResponse);
+                    }
                 } else if (data.type === 'complete') {
+                    completion = data;
                     if (!fullResponse && typeof data.fullResponse === 'string' && data.fullResponse) {
+                        if (data.fullResponse.length > 16_000) throw new Error('Reply exceeds the size limit');
                         fullResponse = data.fullResponse;
                         onChunkReceived(fullResponse);
                     }
@@ -262,39 +291,37 @@ export class AgentHelper {
                 }
 
                 lineBuffer += decoder.decode(value, { stream: true });
+                if (lineBuffer.length > 100_000) throw new Error('Invalid oversized stream record');
                 const lines = lineBuffer.split('\n');
                 lineBuffer = lines.pop() || '';
 
                 for (const line of lines) {
-                    try {
-                        processStreamLine(line);
-                    } catch (parseError) {
-                        if (parseError instanceof SyntaxError) {
-                            continue;
-                        }
-                        throw parseError;
-                    }
+                    processStreamLine(line);
                 }
             }
 
             lineBuffer += decoder.decode();
             if (lineBuffer.trim()) {
-                try {
-                    processStreamLine(lineBuffer);
-                } catch (parseError) {
-                    if (!(parseError instanceof SyntaxError)) {
-                        throw parseError;
-                    }
-                }
+                processStreamLine(lineBuffer);
             }
 
-            // Call completion callback
+            if (!completion) throw new Error('Reply was interrupted. Please try again.');
+            if (requestSessionId !== this.sessionId) throw new Error('Chat session changed');
+            this.pendingRequest = null;
+            if (completion.memoryVersion === 1) {
+                this.serverOwnsHistory = true;
+                onHistoryCommitted(completion);
+            }
             onSuccessfulCompletion(fullResponse);
             return fullResponse;
 
         } catch (error) {
             onError(error);
             throw error;
+        } finally {
+            controller?.abort();
+            reader?.releaseLock?.();
+            if (this.controller === controller) this.controller = null;
         }
     }
 
@@ -428,8 +455,29 @@ export class AgentHelper {
      * Clear session (for starting fresh)
      */
     clearSession() {
+        this.cancelMessage();
         this.sessionId = null;
+        this.serverOwnsHistory = false;
+        this.pendingRequest = null;
         this._needsSessionMetaWrite = false;
+    }
+
+    cancelMessage() {
+        this.controller?.abort();
+        this.controller = null;
+    }
+
+    async fetchHistory(beforeSequence = null, signal = undefined) {
+        const response = await fetch(this.agentEndpoint, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ requestType: 'chatHistory', sessionId: this.sessionId, beforeSequence }),
+            signal,
+        });
+        if (!response.ok) throw new Error('Unable to load chat history');
+        const result = JSON.parse(await response.text());
+        if (result.type !== 'chatHistory') throw new Error(result.error || 'Unable to load chat history');
+        return result;
     }
 }
 

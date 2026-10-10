@@ -28,6 +28,18 @@ export function isFullChatLesson(lesson) {
     return isOfficeHoursLesson(lesson) || lesson?.chat_display_mode === "Full";
 }
 
+/**
+ * Prompt for a full-page chat. Synthetic Office Hours carries the course's
+ * `office_hours_prompt` (see buildOfficeHoursLesson); authored Full lessons
+ * always use the default Office Hours prompt.
+ */
+export function resolveFullChatPrompt(lesson) {
+    if (isOfficeHoursLesson(lesson)) {
+        return String(lesson?.chat_prompt || "").trim() || OFFICE_HOURS_CHAT_PROMPT;
+    }
+    return OFFICE_HOURS_CHAT_PROMPT;
+}
+
 export function collectLessonTopics(lesson) {
     const topics = new Set();
     const topic = String(lesson?.topics || "").trim();
@@ -99,7 +111,8 @@ export function buildOfficeHoursLesson(course) {
         topics: "Ask about any topic in this course",
         officeHours: true,
         chat_display_mode: "Full",
-        chat_prompt: OFFICE_HOURS_CHAT_PROMPT,
+        chat_prompt: String(course?.office_hours_prompt || "").trim() || OFFICE_HOURS_CHAT_PROMPT,
+        office_hours_greeting: String(course?.office_hours_greeting || "").trim() || undefined,
         chat_penalty_mode: "Never",
         hint_penalty_mode: "Never",
         learningObjectives: {},

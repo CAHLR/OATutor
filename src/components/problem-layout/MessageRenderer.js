@@ -133,5 +133,4 @@ const MessageRenderer = ({ content }) => {
     );
 };
 
-export default MessageRenderer;
-
+export default React.memo(MessageRenderer);

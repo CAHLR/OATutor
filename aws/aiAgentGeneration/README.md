@@ -54,6 +54,8 @@ Sent by `AgentHelper.sendMessage()`.
 {
   "sessionId": "session_...",
   "turnId": 1,
+  "requestId": "session_..._1",
+  "memoryVersion": 1,
   "userMessage": "Can you help me start?",
   "problemContext": {},
   "studentState": {},
@@ -71,17 +73,17 @@ Sent by `AgentHelper.sendMessage()`.
 
 The Lambda:
 
-1. Loads existing conversation history from DynamoDB.
+1. Acquires the session lease and loads bounded recent turns plus rolling memory from DynamoDB.
 2. Builds the prompt with `buildAgentPrompt()`.
 3. Streams newline-delimited JSON chunks:
 
 ```json
 {"type":"content","content":"Let's","timestamp":...}
 {"type":"content","content":" start...","timestamp":...}
-{"type":"complete","fullResponse":"Let's start...","timestamp":...}
+{"type":"complete","sequence":1,"requestId":"session_..._1","memoryVersion":1}
 ```
 
-4. Stores the user/assistant turn back to DynamoDB for multi-turn session memory.
+4. Atomically archives the exchange and commits bounded session state before sending `complete`.
 
 Research chat history (`chat_opened`, `chat_message`, etc.) is logged from the browser to Firebase `chatHistory` / `development_chatHistory` via `Firebase.logChatHistory()`.
 
@@ -299,6 +301,8 @@ Lambda:
 | `OPENAI_MODEL` | `gpt-4o` | Streaming chat model; should support vision if images are sent |
 | `SUGGESTIONS_MODEL` | `gpt-4o-mini` | Non-streaming model for suggested questions |
 | `CONVERSATION_TABLE_NAME` | `agent-conversations` | DynamoDB table for session memory |
+| `CHAT_SUMMARY_MODEL` | `gpt-4o-mini` | Rolling conversation summarizer |
+| `CHAT_SUMMARIZATION_ENABLED` | `true` | Set `false` for bounded recent history without LLM summaries |
 | `LOG_FULL_PROMPT` | `false` | If `true`, writes full prompt text to CloudWatch for debugging |
 | `LOG_ERROR_STACK` | `false` | If `true`, includes error stacks in CloudWatch error events |
 
@@ -306,9 +310,9 @@ Lambda:
 
 ### DynamoDB Conversation Memory (keep this)
 
-`loadConversationHistory(sessionId)` reads previous turns from DynamoDB. `updateConversationHistory()` appends the new user and assistant messages after each completed chat turn.
+`conversation-memory.mjs` stores a rolling structured summary and bounded recent exchanges at the session key. Exact exchanges and idempotent replay records are separate items in the same table. Old `messages` arrays migrate on first use.
 
-This is **not** research logging. It is runtime session memory so Oski remembers earlier messages in the same chat session. The frontend sends `conversationHistory: []` on every request; the Lambda relies on DynamoDB to rebuild context across turns.
+The browser sends bounded bootstrap history until it receives a `memoryVersion: 1` acknowledgment, then relies on server-owned memory. It keeps a bounded visible window and loads older messages through `requestType: chatHistory` with an exclusive `beforeSequence` cursor.
 
 Items are written with a 24-hour TTL so stale sessions auto-expire:
 
@@ -316,7 +320,7 @@ Items are written with a 24-hour TTL so stale sessions auto-expire:
 ttl: Math.floor(Date.now() / 1000) + (24 * 60 * 60)
 ```
 
-Keep DynamoDB unless you redesign chat to send full history from the browser on every turn.
+See [CHAT_MEMORY.md](CHAT_MEMORY.md) for limits, concurrency/failure behavior, IAM permissions, rollout, and regression tests. Backend deployment must include the new module and required DynamoDB write permissions before deploying the updated frontend.
 
 ### Firebase Chat History
 
