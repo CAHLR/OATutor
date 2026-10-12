@@ -1,0 +1,52 @@
+[
+    {
+        "id": "a9c64f0series16a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Geometric"
+        ],
+        "dependencies": [],
+        "title": "Type of Series",
+        "text": "What type of series that we've learned about have defined infinite sums?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Arithmetic",
+            "Geometric"
+        ]
+    },
+    {
+        "id": "a9c64f0series16a-s2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Arithmetic"
+        ],
+        "dependencies": [
+            "a9c64f0series16a-s1"
+        ],
+        "title": "Which Series?",
+        "text": "What type of series is this?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Arithmetic",
+            "Geometric"
+        ]
+    },
+    {
+        "id": "a9c64f0series16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Conclusion",
+        "text": "Because this is not a convergent geometric series, the infinite sum is not defined.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

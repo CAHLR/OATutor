@@ -32,8 +32,8 @@
         "dependencies": [
             "a73b129counting30a-h1"
         ],
-        "title": "Using the Combination Formula",
-        "text": "The combination formula is used to calculate the number of ways to choose $$r$$ objects from a set of $$n$$ objects, where the order of selection does not matter.",
+        "title": "Using the Arrangement Formula",
+        "text": "Because order matters, use an arrangement formula. Treat the vowel block as one object along with the consonants.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -44,8 +44,8 @@
         "dependencies": [
             "a73b129counting30a-h2"
         ],
-        "title": "Combination Formula",
-        "text": "The combination formula is: C(n,r)=n!/(r!*(n-r)!)",
+        "title": "Arrangement Formula",
+        "text": "For $$n$$ objects with repeated items, the number of distinct arrangements is n!/(r_1!*r_2!*...). Here, arrange the $$6$$ objects using 6!/2!.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -62,7 +62,7 @@
             "a73b129counting30a-h3"
         ],
         "title": "Repetition",
-        "text": "Only one of the consonants is repeated more than once, how many times is it repeated? The factorial of this will be your denominator in the Combination formula.",
+        "text": "Only one consonant is repeated. How many times does it occur? Its factorial will be in the denominator of the arrangement formula.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -91,7 +91,7 @@
             "a73b129counting30a-h3"
         ],
         "title": "Finding the answer",
-        "text": "Now, substitute the values into the combination formula, and multiply that by the factorial of the number of vowels to find the answer.",
+        "text": "Arrange the $$6$$ objects using 6!/2!, then multiply by 4! for the possible arrangements of the four vowels within the vowel block.",
         "variabilization": {},
         "oer": "",
         "license": ""

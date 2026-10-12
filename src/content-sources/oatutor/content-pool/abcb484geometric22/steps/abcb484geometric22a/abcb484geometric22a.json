@@ -1,19 +1,18 @@
 {
     "id": "abcb484geometric22a",
     "stepAnswer": [
-        "$$r=-0.3$$, $$a_1=10$$"
+        "a_1=10,a_n=-0.3*a_n-1"
     ],
     "problemType": "MultipleChoice",
-    "stepTitle": "Write a recursive formula for the given geometric sequence: {14, $$56$$, $$224$$, $$896$$, ...}",
+    "stepTitle": "Write a recursive formula for the given geometric sequence: {10, $$-3$$, $$0.9$$, $$-0.27$$, ...}",
     "stepBody": "",
     "answerType": "string",
     "variabilization": {},
-    "answerLatex": "$$r=-0.3$$, $$a_1=10$$",
     "choices": [
-        "$$r=-0.3$$, $$a_1=10$$",
-        "$$r=-0.3$$, $$a_1=14$$",
-        "$$r=30$$, $$a_1=10$$",
-        "$$r=-0.3$$, $$a_1=10$$",
-        "$$r=3$$, $$a_1=1$$"
+        "a_1=-0.3,a_n=10*a_n-1",
+        "a_1=10,a_n=0.3*a_n-1",
+        "a_1=14,a_n=-0.3*a_n-1",
+        "a_1=10,a_n=-0.3*a_n-1",
+        "a_1=10,a_n=-0.3*a_n-1"
     ]
 }

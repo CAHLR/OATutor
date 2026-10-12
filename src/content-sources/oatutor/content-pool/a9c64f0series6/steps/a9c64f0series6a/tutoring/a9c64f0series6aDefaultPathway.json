@@ -1,0 +1,128 @@
+[
+    {
+        "id": "a9c64f0series6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Types of Series",
+        "text": "We know how to sum arithmetic and geometric series. Determine which type this series is.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9c64f0series6a-s1",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "Arithmetic"
+        ],
+        "dependencies": [
+            "a9c64f0series6a-h1"
+        ],
+        "title": "What type of series is this?",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "Arithmetic",
+            "Geometric",
+            "None of the Above"
+        ]
+    },
+    {
+        "id": "a9c64f0series6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a9c64f0series6a-h1"
+        ],
+        "title": "Use Sum of Arithmetic Series",
+        "text": "Remember: the sum of the first $$n$$ terms of an arithmetic series is $$S_n$$ $$=$$ $$\\frac{n}{2}$$ * (a_1 + a_n).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9c64f0series6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a9c64f0series6a-h2"
+        ],
+        "title": "Find $$d$$",
+        "text": "$$d$$ is the common difference between consecutive terms of the series.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9c64f0series6a-s2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.2$$"
+        ],
+        "dependencies": [
+            "a9c64f0series6a-h3"
+        ],
+        "title": "Solve for $$d$$",
+        "text": "Find the value of $$d$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9c64f0series6a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a9c64f0series6a-h3"
+        ],
+        "title": "Find $$n$$",
+        "text": "We know $$a_n$$ $$=$$ $$a_1$$ + (n - 1)*d. Use this to solve for $$n$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9c64f0series6a-s3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$11$$"
+        ],
+        "dependencies": [
+            "a9c64f0series6a-h4"
+        ],
+        "title": "Solve for $$n$$",
+        "text": "",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9c64f0series6a-h5",
+        "type": "hint",
+        "dependencies": [
+            "a9c64f0series6a-h4"
+        ],
+        "title": "Solve for $$S_n$$",
+        "text": "$$n$$ is $$11$$, so we want the sum of the first $$11$$ terms. Use $$S_n$$ $$=$$ $$\\frac{n}{2}$$ * (a_1 + a_n) with $$a_1$$ $$=$$ $$1.4$$ and $$a_{11}$$ $$=$$ $$3.4$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a9c64f0series6a-h6",
+        "type": "hint",
+        "dependencies": [
+            "a9c64f0series6a-h5"
+        ],
+        "title": "Plug in previous",
+        "text": "$$a_1$$ $$=$$ $$1.4$$, $$a_n$$ $$=$$ $$3.4$$, $$n$$ $$=$$ $$11$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

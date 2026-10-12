@@ -1,0 +1,18 @@
+{
+    "id": "ac0bc72pred2g",
+    "stepAnswer": [
+        "70% because it always predicts benign $$=$$ $$1$$, and $$35$$ out of $$50$$ test points are benign $$=$$ $$1$$."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "g) Marissa suggests that we use a constant classifier which will always predict the class that is most common in the training set. In our test set, there are $$15$$ benign $$=$$ $$0$$ data points and $$35$$ benign $$=$$ $$1$$ data points. What will the accuracy of the constant classifier be on our test set?",
+    "stepBody": "",
+    "answerType": "string",
+    "variabilization": {},
+    "answerLatex": "70% because it always predicts benign $$=$$ $$1$$, and $$35$$ out of $$50$$ test points are benign $$=$$ $$1$$.",
+    "choices": [
+        "70% because it always predicts benign $$=$$ $$1$$, and $$35$$ out of $$50$$ test points are benign $$=$$ $$1$$.",
+        "30% because it only gets the benign $$=$$ $$0$$ points right since it predicts the majority class.",
+        "$$66.7\\%$$ because it matches the training set ratio of $$\\frac{120}{180}$$.",
+        "50% because a constant classifier is no better than a fair coin flip."
+    ]
+}

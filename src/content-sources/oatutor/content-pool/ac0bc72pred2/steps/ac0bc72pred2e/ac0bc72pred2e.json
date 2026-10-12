@@ -1,0 +1,17 @@
+{
+    "id": "ac0bc72pred2e",
+    "stepAnswer": [
+        "No because tuning k on the test set means you're overfitting to that specific test data, and the accuracy won't reflect $$real-world$$ performance."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "e) Suppose Dagny obtains a test set consisting of $$50$$ data points. Should she repeatedly use her classifier on the test set, using various values of k, to obtain the value of k that yields the greatest accuracy? Explain.",
+    "stepBody": "",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "Yes because trying all values of k and picking the best one is good practice for maximizing accuracy.",
+        "Yes because as long as the test set is large enough, repeatedly testing different k values won't cause any issues due to independence.",
+        "No because tuning k on the test set means you're overfitting to that specific test data, and the accuracy won't reflect $$real-world$$ performance.",
+        "No because you should never evaluate your classifier on the test set at all."
+    ]
+}
