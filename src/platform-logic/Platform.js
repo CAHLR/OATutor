@@ -861,16 +861,27 @@ class Platform extends React.Component {
     }));
   }
 
-  submitFeedback = () => {
+  submitFeedback = async (reportContext = {}) => {
     const problem = this.state.currProblem;
-    this.context.firebase.submitFeedback(
+    const diagnosticContext = {
+      ...reportContext,
+      platformState: {
+        status: this.state.status,
+        lessonId: this.props.lessonID || this.lesson?.id || null,
+        drawerOpen: this.state.drawerOpen === true,
+        feedbackFormOpen: this.state.showFeedback === true,
+        problemSeed: typeof this.state.seed === "string" ? this.state.seed.slice(0, 100) : null,
+      },
+    };
+    await this.context.firebase.submitFeedback(
       problem.id,
       this.state.feedback,
-      this.state.problemFinished,
-      chooseVariables(problem.variabilization, this.props.seed),
+      reportContext.problemFinished === true,
+      chooseVariables(problem.variabilization, this.state.seed),
       problem.courseName,
       problem.steps,
-      problem.lesson
+      problem.lesson,
+      diagnosticContext
     );
     this.setState({ feedback: "", feedbackSubmitted: true });
   };

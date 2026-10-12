@@ -779,6 +779,7 @@ class ProblemCard extends React.Component {
                         descriptor={"hint"}
                     >
                         <HintSystem
+                            onFeedbackHintChange={(hint) => this.props.onFeedbackHintChange?.(this.index, hint)}
                             key={`hints-${this.giveDynamicHint ? "dynamic" : "manual"}`}
                                         giveHintOnIncorrect={this.giveHintOnIncorrect}
                                         giveDynamicHint={this.giveDynamicHint}

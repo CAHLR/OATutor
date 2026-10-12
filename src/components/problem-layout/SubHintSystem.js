@@ -10,6 +10,7 @@ import { renderText, chooseVariables } from '../../platform-logic/renderText.js'
 import Spacer from "../Spacer";
 import { ThemeContext } from "../../config/config";
 import withTranslation from "../../util/withTranslation.js"
+import { describeFeedbackHint } from "../../util/feedbackContext";
 
 
 class SubHintSystem extends React.Component {
@@ -29,7 +30,14 @@ class SubHintSystem extends React.Component {
         }
     }
 
+    componentDidMount() {
+        if (this.state.currentExpanded >= 0) {
+            this.props.onFeedbackHintChange?.(describeFeedbackHint(this.props.hints[this.state.currentExpanded], this.state.currentExpanded));
+        }
+    }
+
     unlockHint = (event, expanded, i) => {
+        this.props.onFeedbackHintChange?.(expanded ? describeFeedbackHint(this.props.hints[i], i) : null);
         if (this.state.currentExpanded === i) {
             this.setState({ currentExpanded: -1 });
         } else {

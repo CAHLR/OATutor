@@ -1,0 +1,46 @@
+name: Deploy feedback notifications
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    concurrency:
+      group: feedback-functions-production
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install Functions dependencies
+        run: npm --prefix functions ci
+
+      - name: Test feedback notification code and production configuration
+        run: |
+          npm --prefix functions test
+          node --test scripts/prepareProductionFirebase.test.cjs
+
+      - name: Prepare production Functions settings
+        run: node scripts/prepareProductionFirebase.cjs
+        env:
+          FRONTEND_FIREBASE_CONFIG: ${{ secrets.STAGING_FIREBASE_CONFIG }}
+          PRODUCTION_FIREBASE_PROJECT_ID: ${{ vars.PRODUCTION_FIREBASE_PROJECT_ID }}
+          SLACK_SCREENSHOT_CHANNEL_ID: ${{ vars.SLACK_SCREENSHOT_CHANNEL_ID }}
+
+      - uses: google-github-actions/auth@v3
+        with:
+          credentials_json: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PRODUCTION }}
+          project_id: ${{ vars.PRODUCTION_FIREBASE_PROJECT_ID }}
+
+      - name: Deploy only the feedback Functions codebase
+        run: ./functions/node_modules/.bin/firebase deploy --only functions:feedback --project "$PRODUCTION_FIREBASE_PROJECT_ID" --non-interactive
+        env:
+          PRODUCTION_FIREBASE_PROJECT_ID: ${{ vars.PRODUCTION_FIREBASE_PROJECT_ID }}

@@ -1,0 +1,96 @@
+name: Bug report
+description: Report a problem in OATutor that needs investigation
+title: "[Bug] "
+labels:
+  - bug
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe what happened and how to reproduce it. A feedback report ID can
+        help maintainers find the original report in Firestore.
+        Do not paste learner names, email addresses, credentials, LTI tokens, or
+        a full LMS launch URL into this GitHub issue.
+
+  - type: textarea
+    id: observed-behavior
+    attributes:
+      label: What happened?
+      description: Include the feature or page and any visible error message.
+      placeholder: The feedback form showed “The report could not be saved” after I selected Submit.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Give the shortest sequence you know. If it happened once, say so.
+      placeholder: |
+        1. Open ...
+        2. Select ...
+        3. Observe ...
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: What should happen?
+      placeholder: The form should save the report and show a confirmation.
+
+  - type: textarea
+    id: user-impact
+    attributes:
+      label: User impact
+      description: Who is affected, and what can they no longer do?
+      placeholder: Learners cannot submit feedback for this problem.
+
+  - type: input
+    id: feedback-report-id
+    attributes:
+      label: Feedback report ID (if available)
+      description: Use the report ID from the Slack notification; do not copy learner identifiers.
+      placeholder: "09-23-2026 13:48:06|43778"
+
+  - type: input
+    id: problem-id
+    attributes:
+      label: Problem ID or lesson (if relevant)
+      description: Use the OATutor problem ID or lesson name, not a full LTI launch URL.
+      placeholder: aaac80bvis10
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does it happen?
+      options:
+        - Every time
+        - Often
+        - Sometimes
+        - Happened once
+        - Not sure
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Relevant environment details
+      description: Add only details useful for this bug; the private feedback report may already have them.
+      placeholder: |
+        Browser and OS:
+        Viewport or device layout:
+        OATutor version:
+        LTI version or LMS (if known):
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or error details
+      description: Attach a cropped screenshot or a short, sanitized error excerpt if helpful.
+
+  - type: checkboxes
+    id: privacy-check
+    attributes:
+      label: Privacy check
+      options:
+        - label: I removed personal information, access tokens, and credentials from this issue and its attachments.
+          required: true

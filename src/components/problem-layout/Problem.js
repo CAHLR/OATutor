@@ -16,6 +16,8 @@ import styles from "./common-styles.js";
 import { NavLink } from "react-router-dom";
 import { agentHelper } from "./AgentHelper";
 import { increment } from "../Firebase";
+import FeedbackScreenshot from "../FeedbackScreenshot";
+import { buildFeedbackContext } from "../../util/feedbackContext";
 import withTranslation from "../../util/withTranslation.js"
 import lightbulbIcon from "../../assets/lightbulb.svg";
 import TTSPlayer from "../../util/ttsPlayer.js";
@@ -115,6 +117,11 @@ class Problem extends React.Component {
             problemFinished: false,
             feedback: "",
             feedbackSubmitted: false,
+            feedbackSending: false,
+            feedbackError: "",
+            feedbackScreenshot: null,
+            feedbackScreenshotBusy: false,
+            feedbackHintsByStep: {},
             expandedAccordion: 0,
             hintToggleTrigger: 0,
             hintToggleIndex: null,
@@ -204,6 +211,12 @@ class Problem extends React.Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
+        if (prevProps.showFeedback && !this.props.showFeedback) {
+            this.setState({ feedbackScreenshotBusy: false });
+        }
+        if (prevProps.problem?.id !== this.props.problem?.id) {
+            this.setState({ feedbackScreenshot: null, feedbackScreenshotBusy: false, feedbackError: "", feedbackHintsByStep: {}, hintUsageByStep: {}, avatarHintsByStep: {} });
+        }
         if (this.enableTTS && prevProps.problem?.id !== this.props.problem?.id) {
             this._loadTTSAudio(this.props.problem);
         }
@@ -890,20 +903,29 @@ class Problem extends React.Component {
         });
     };
 
-    submitFeedback = () => {
-        const problem = this.state.currProblem;
-
-        console.debug("problem when submitting feedback", problem);
-        this.context.firebase.submitFeedback(
-            problem.id,
-            this.state.feedback,
-            this.state.problemFinished,
-            chooseVariables(problem.variabilization, this.props.seed),
-            problem.courseName,
-            problem.steps,
-            problem.lesson
-        );
-        this.setState({ feedback: "", feedbackSubmitted: true });
+    submitFeedback = async () => {
+        if (this.state.feedbackSending || this.state.feedbackScreenshotBusy) return;
+        const reportContext = {
+            ...buildFeedbackContext(this.props.problem, this.state, this.getActiveStepData()),
+            screenshot: this.state.feedbackScreenshot,
+        };
+        this.setState({ feedbackSending: true, feedbackError: "" });
+        try {
+            await this.props.submitFeedback(reportContext);
+            this.setState({ feedbackScreenshot: null });
+        } catch (error) {
+            const emulatorUnavailable =
+                process.env.REACT_APP_USE_FIREBASE_EMULATOR === "true" &&
+                (error?.code === "unavailable" ||
+                    error?.message?.includes("Firestore write timed out after 10s"));
+            this.setState({
+                feedbackError: emulatorUnavailable
+                    ? "The local Firestore emulator is unavailable. Start it and try again."
+                    : "The report could not be saved. Please try again.",
+            });
+        } finally {
+            this.setState({ feedbackSending: false });
+        }
     };
 
     _getNextDebug = (offset) => {
@@ -961,6 +983,7 @@ class Problem extends React.Component {
         }
         this.setState(() => ({
             expandedAccordion: isExpanded ? panel : null,
+            feedbackHintsByStep: {},
             hintToggleIndex: null,
             isHintPortalOpen: false,
             isAvatarHintVisible: false,
@@ -1735,6 +1758,7 @@ class Problem extends React.Component {
                                                     }
                                                     onHintToggle={this.handleHintToggleFromStep}
                                                     onHintUsageChange={this.handleHintUsageChange}
+                                                    onFeedbackHintChange={(stepIndex, hint) => this.setState((state) => ({ feedbackHintsByStep: { ...state.feedbackHintsByStep, [stepIndex]: hint } }))}
                                                     avatarHintMode={chatDisplayMode === 'Avatar'}
                                                     avatarHintRequest={chatDisplayMode === 'Avatar' ? avatarHintRequest : null}
                                                     onAvatarHintsChange={this.handleAvatarHintsChange}
@@ -1994,6 +2018,14 @@ class Problem extends React.Component {
                                                 margin="normal"
                                                 variant="outlined"
                                             />
+                                            <FeedbackScreenshot
+                                                key={this.props.problem.id}
+                                                value={this.state.feedbackScreenshot}
+                                                disabled={this.state.feedbackSending}
+                                                onChange={(feedbackScreenshot) => this.setState({ feedbackScreenshot })}
+                                                onBusyChange={(feedbackScreenshotBusy) => this.setState({ feedbackScreenshotBusy })}
+                                            />
+                                            {this.state.feedbackError && <p role="alert">{this.state.feedbackError}</p>}
                                         </Grid>
                                         <Grid item xs={1} sm={2} md={2} key={3} />
                                     </Grid>
@@ -2008,11 +2040,11 @@ class Problem extends React.Component {
                                         <Grid item xs={6} sm={6} md={2} key={2}>
                                             <Button
                                                 className={classes.button}
-                                                onClick={this.props.submitFeedback}
+                                                onClick={this.submitFeedback}
                                                 style={{ width: "100%" }}
-                                                disabled={(this.props.feedback || "").trim() === ""}
+                                                disabled={(this.props.feedback || "").trim() === "" || this.state.feedbackSending || this.state.feedbackScreenshotBusy}
                                             >
-                                                {translate('problem.Submit')}
+                                                {this.state.feedbackSending ? "Sending…" : translate('problem.Submit')}
                                             </Button>
                                         </Grid>
                                         <Grid item xs={3} sm={3} md={5} key={3} />

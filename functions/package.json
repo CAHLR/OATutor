@@ -1,0 +1,18 @@
+{
+  "name": "oatutor-feedback-functions",
+  "private": true,
+  "main": "index.js",
+  "engines": { "node": "22" },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "test:emulator": "node scripts/test-emulator.cjs",
+    "emulators": "firebase emulators:start --config ../firebase.json --only firestore,functions --project demo-oat-local"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.0.0",
+    "firebase-functions": "^7.4.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "15.30.2"
+  }
+}

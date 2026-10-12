@@ -18,6 +18,7 @@ import ErrorBoundary from "../ErrorBoundary";
 import withTranslation from '../../util/withTranslation';
 import ReloadIcon from './ReloadIcon';
 import TTSPlayer from "../../util/ttsPlayer.js";
+import { describeFeedbackHint } from "../../util/feedbackContext";
 import TTSButtons from "./TTSButtons.js";
 import { textToReadable } from "../../util/latexToReadable.js";
 import {
@@ -126,6 +127,9 @@ class HintSystem extends React.Component {
     };
 
     unlockHint = (event, expanded, i) => {
+        this.props.onFeedbackHintChange?.(
+            expanded ? describeFeedbackHint(this.props.hints[i], i) : null
+        );
         if (this.state.currentExpanded === i ) {
             this.setState({ currentExpanded: -1 });
         } else {
@@ -349,6 +353,7 @@ class HintSystem extends React.Component {
                                             componentName={"SubHintSystem"}
                                         >
                                             <SubHintSystem
+                                                onFeedbackHintChange={(subHint) => this.props.onFeedbackHintChange?.(describeFeedbackHint(hint, i, subHint))}
                                                 giveStuFeedback={
                                                     this.giveStuFeedback
                                                 }

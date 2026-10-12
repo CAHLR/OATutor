@@ -24,6 +24,13 @@ yarn-debug.log*
 yarn-error.log*
 
 # Secrets
+functions/.secret.local
+functions/.env.*
+!functions/.env.local.example
+!functions/.env.production.example
+gha-creds-*.json
+.firebase/
+*-debug.log
 credentials.js
 credentials-secret.js
 service-account-credentials.json

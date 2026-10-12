@@ -10,6 +10,7 @@ import {
 import { getApp, getApps, initializeApp } from "firebase/app";
 import {
     arrayUnion,
+    connectFirestoreEmulator,
     doc,
     getFirestore,
     increment,
@@ -17,6 +18,8 @@ import {
     setDoc,
 } from "firebase/firestore";
 import daysSinceEpoch from "../util/daysSinceEpoch";
+import { getFeedbackAccess } from "../util/feedbackContext";
+import { buildFeedbackClientDiagnostics } from "../util/feedbackDiagnostics";
 import {
     IS_PRODUCTION,
     IS_STAGING_CONTENT,
@@ -30,6 +33,10 @@ const feedbackOutput = "feedbacks";
 const siteLogOutput = "siteLogs";
 const focusStatus = "focusStatus";
 const chatHistoryOutput = "chatHistory";
+const useFirebaseEmulator =
+    process.env.NODE_ENV === "development" &&
+    process.env.REACT_APP_USE_FIREBASE_EMULATOR === "true";
+const emulatorAppName = "oatutor-local-emulator";
 
 function isPlaceholderFirebaseConfig(credentials) {
     const projectId = credentials?.projectId || "";
@@ -71,17 +78,32 @@ class Firebase {
             console.debug("Not using firebase for logging");
             return;
         }
-        if (isPlaceholderFirebaseConfig(credentials)) {
+        if (!useFirebaseEmulator && isPlaceholderFirebaseConfig(credentials)) {
             console.error(
                 "[Firebase] Logging is enabled but firebaseConfig.js still has placeholder values. " +
                     "Copy your project config from Firebase Console → Project settings → Your apps, " +
                     "or set REACT_APP_FIREBASE_CONFIG in .env, then restart npm start."
             );
         }
-        const app = getApps().length ? getApp() : initializeApp(credentials);
+        const existingEmulatorApp = useFirebaseEmulator &&
+            getApps().find(({ name }) => name === emulatorAppName);
+        const app = useFirebaseEmulator
+            ? existingEmulatorApp ||
+              initializeApp(
+                  { projectId: "demo-oat-local", apiKey: "demo-local-api-key" },
+                  emulatorAppName
+              )
+            : getApps().find(({ name }) => name === "[DEFAULT]")
+              ? getApp()
+              : initializeApp(credentials);
 
         this.oats_user_id = oats_user_id;
         this.db = getFirestore(app);
+        // A named app survives React hot reload. Connect only when creating it;
+        // connecting its already-started Firestore instance again throws.
+        if (useFirebaseEmulator && !existingEmulatorApp) {
+            connectFirestoreEmulator(this.db, "127.0.0.1", 8080);
+        }
         this.treatment = treatment;
         this.siteVersion = siteVersion;
         this.mouseLogBuffer = [];
@@ -89,6 +111,7 @@ class Firebase {
     }
 
     getCollectionName(targetCollection) {
+        if (useFirebaseEmulator) return `development_${targetCollection}`;
         const cond1 =
             IS_STAGING_CONTENT &&
             [feedbackOutput, siteLogOutput].includes(targetCollection);
@@ -150,9 +173,13 @@ class Firebase {
       Document: Key - How you will access this data later. Usually username
       Data: Value - JSON object of data you want to store
     */
-    async writeData(_collection, data) {
-        if (!ENABLE_FIREBASE) return;
+    async writeData(_collection, data, throwOnError = false) {
+        if (!ENABLE_FIREBASE) {
+            if (throwOnError) throw new Error("Feedback storage is disabled.");
+            return;
+        }
         if (!this.db) {
+            if (throwOnError) throw new Error("Feedback storage is not initialized.");
             console.warn(
                 `[Firebase] Skipping write to "${_collection}" because Firestore is not initialized.`
             );
@@ -165,10 +192,11 @@ class Firebase {
             payload = sanitizeForFirestore(this.addMetaData(data));
         } catch (err) {
             console.warn(`Firebase write failed while building payload for "${collection}"`, err);
+            if (throwOnError) throw err;
             return;
         }
 
-        if (IS_STAGING_OR_DEVELOPMENT) {
+        if (IS_STAGING_OR_DEVELOPMENT && _collection !== feedbackOutput) {
             console.debug("Writing this payload to firebase: ", payload);
         }
 
@@ -193,6 +221,7 @@ class Firebase {
             }
         } catch (err) {
             console.warn(`Firebase write failed for "${collection}"`, err);
+            if (throwOnError) throw err;
         }
     }
 
@@ -510,7 +539,8 @@ class Firebase {
         variables,
         courseName,
         steps,
-        lesson
+        lesson,
+        reportContext = {}
     ) {
         const data = {
             problemID,
@@ -520,6 +550,16 @@ class Firebase {
             status: "open",
             Content: courseName,
             variables,
+            reportContext: {
+                activeStep: reportContext.activeStep || null,
+                hint: reportContext.hint || null,
+                viewedHintCount: reportContext.viewedHintCount ?? null,
+                stateSummary: reportContext.stateSummary || null,
+                platformState: reportContext.platformState || null,
+            },
+            access: getFeedbackAccess(this.ltiContext),
+            client: buildFeedbackClientDiagnostics(problemID),
+            screenshot: reportContext.screenshot || null,
             steps: steps.map(
                 ({
                     answerType,
@@ -536,7 +576,7 @@ class Firebase {
                 })
             ),
         };
-        return this.writeData(feedbackOutput, data);
+        return this.writeData(feedbackOutput, data, true);
     }
 }
 

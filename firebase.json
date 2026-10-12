@@ -1,0 +1,9 @@
+{
+  "functions": [{ "source": "functions", "codebase": "feedback" }],
+  "emulators": {
+    "functions": { "host": "127.0.0.1", "port": 5001 },
+    "firestore": { "host": "127.0.0.1", "port": 8080 },
+    "ui": { "enabled": true, "host": "127.0.0.1", "port": 4000 },
+    "singleProjectMode": true
+  }
+}
