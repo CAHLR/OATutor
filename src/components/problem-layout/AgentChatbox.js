@@ -1817,7 +1817,7 @@ class AgentChatbox extends React.Component {
                             <p className={classes.officeHoursIntroSubtitle}>
                                 {courseName === 'Anthropology: Reading Review'
                                     ? 'What is Property by Pierre-Jospeh Proudhon'
-                                    : `Office Hours for ${introScope}`}
+                                    : introScope}
                             </p>
                         </div>
                         {thread}
