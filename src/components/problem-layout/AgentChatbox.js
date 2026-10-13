@@ -1816,7 +1816,7 @@ class AgentChatbox extends React.Component {
                             <h1 className={classes.officeHoursIntroTitle}>Oski · AI Tutor</h1>
                             <p className={classes.officeHoursIntroSubtitle}>
                                 {courseName === 'Anthropology: Reading Review'
-                                    ? 'What is Property by Pierre-Jospeh Proudhon'
+                                    ? 'What is Property by Pierre-Joseph Proudhon'
                                     : introScope}
                             </p>
                         </div>
