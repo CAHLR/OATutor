@@ -2,19 +2,27 @@ import React from 'react';
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
+import IconButton from '@material-ui/core/IconButton';
+import HelpOutlineOutlinedIcon from '@material-ui/icons/HelpOutlineOutlined';
 import ProblemWrapper from "@components/problem-layout/ProblemWrapper.js";
 
 import { ThemeContext } from '../config/config.js';
 import Box from "@material-ui/core/Box";
 import BrandLogoNav from "@components/BrandLogoNav";
 import { CONTENT_SOURCE } from "@common/global-config";
+import Popup from "../components/Popup/Popup";
+import About from "../pages/Posts/About.js";
+import { withStyles } from "@material-ui/core/styles";
+import withWidth from "@material-ui/core/withWidth";
+import styles from "../components/problem-layout/common-styles.js";
+import { isMobileWidth } from "../util/responsive";
 
 let problemPool = require(`@generated/processed-content-pool/${CONTENT_SOURCE}.json`)
 
 let seed = Date.now().toString();
 console.log("Generated seed");
 
-class DebugPlatform extends React.Component {
+export class DebugPlatform extends React.Component {
     static contextType = ThemeContext;
 
     constructor(props, context) {
@@ -45,7 +53,8 @@ class DebugPlatform extends React.Component {
         this.state = {
             currProblem: chosenProblem,
             status: "learning",
-            seed: seed
+            seed: seed,
+            showPopup: false
         }
 
     }
@@ -179,52 +188,168 @@ class DebugPlatform extends React.Component {
         return this._nextProblem(context);
     }
 
+    togglePopup = () => {
+        this.setState((state) => ({ showPopup: !state.showPopup }));
+    }
+
+    getAdjacentProblemID = (offset) => {
+        const problemIDs = this.context.problemIDs || [];
+        const currentIndex = problemIDs.indexOf(this.state.currProblem?.id);
+        return problemIDs[currentIndex + offset] || null;
+    }
+
+    navigateToDebugProblem = (problemID) => {
+        if (problemID) {
+            this.props.history.push(`/debug/${problemID}`);
+        }
+    }
+
     render() {
+        const isMobile = isMobileWidth(this.props.width);
+        const primaryBarHeight = isMobile ? 56 : 64;
+        const secondaryBarHeight = isMobile ? 56 : 64;
+        const previousProblemID = this.getAdjacentProblemID(-1);
+        const nextProblemID = this.getAdjacentProblemID(1);
+
         return (
-            <div style={{ backgroundColor: "#F6F6F6", paddingBottom: 20 }}>
-                <AppBar position="static">
-                    <Toolbar>
-                        <Grid container spacing={0} role={"navigation"}>
-                            <Grid item xs={12} sm={3} key={1}>
+            <div style={{ backgroundColor: "#F6F6F6", minHeight: "100vh", paddingBottom: 20 }}>
+                <AppBar position="fixed" style={{ backgroundColor: "#FFFFFF", color: "#344054", boxShadow: "0 1px 3px rgba(16, 24, 40, 0.12)" }}>
+                    <Toolbar style={{ minHeight: primaryBarHeight, paddingLeft: isMobile ? 8 : 24, paddingRight: isMobile ? 8 : 24 }}>
+                        <Grid container spacing={0} role={"navigation"} alignItems="center">
+                            <Grid item xs={isMobile ? 6 : 4}>
                                 <BrandLogoNav noLink={true}/>
                             </Grid>
-                            <Grid item xs={12} sm={6} key={2}>
-                                <div
-                                    style={{
-                                        textAlign: 'center',
-                                        paddingTop: "6px",
-                                        paddingBottom: "6px",
-                                        wordBreak: "break-word",
-                                        fontSize: "clamp(14px, 4vw, 16px)",
-                                    }}>
-                                    {"Debug Mode: " + this.props.problemID}
+                            {!isMobile && (
+                                <Grid item xs={4}>
+                                    <div style={{ textAlign: "center", fontSize: 14, fontWeight: 600, color: "#667085" }}>
+                                        Content QA
+                                    </div>
+                                </Grid>
+                            )}
+                            <Grid item xs={isMobile ? 6 : 4}>
+                                <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", gap: 4 }}>
+                                    <div
+                                        style={{
+                                            color: "#344054",
+                                            fontSize: isMobile ? 12 : 14,
+                                            fontWeight: 600,
+                                            whiteSpace: "nowrap",
+                                        }}
+                                    >
+                                        Debug mode
+                                    </div>
+                                    <IconButton aria-label="about" title="About OATutor" onClick={this.togglePopup} size="small">
+                                        <HelpOutlineOutlinedIcon htmlColor="#344054" style={{ fontSize: isMobile ? 24 : 28 }} />
+                                    </IconButton>
                                 </div>
                             </Grid>
-                            <Grid item xs={12} sm={3} key={3}>
-                                <div style={{ textAlign: 'right' }}>
+                        </Grid>
+                    </Toolbar>
+                </AppBar>
+                <div style={{ height: primaryBarHeight }} />
+
+                <AppBar position="fixed" style={{ top: primaryBarHeight, backgroundColor: "#243B53", color: "#F8FAFC", boxShadow: "0 1px 3px rgba(16, 24, 40, 0.18)" }}>
+                    <Toolbar style={{ minHeight: secondaryBarHeight, paddingLeft: isMobile ? 8 : 24, paddingRight: isMobile ? 8 : 24 }}>
+                        <Grid container spacing={0} role={"secondary-navigation"} alignItems="center" style={{ position: "relative" }}>
+                            <Grid item xs={isMobile ? 5 : 7}>
+                                <div style={{ display: "flex", alignItems: "center", minWidth: 0, gap: isMobile ? 8 : 12 }}>
                                     <Button
-                                        aria-label={`Return to home`}
-                                        aria-roledescription={`Return to the home page`}
-                                        role={"link"}
-                                        color="inherit"
+                                        aria-label="Return to home"
+                                        aria-roledescription="Return to the home page"
+                                        role="link"
+                                        variant="contained"
+                                        color="primary"
                                         onClick={() => {
                                             this.props.history.push("/")
                                             this.setState({ status: "lessonSelection" })
-                                        }}>
+                                        }}
+                                        style={{
+                                            width: isMobile ? 92 : 176,
+                                            minWidth: isMobile ? 92 : 176,
+                                            height: isMobile ? 38 : 48,
+                                            flexShrink: 0,
+                                            whiteSpace: "nowrap",
+                                        }}
+                                    >
                                         Home
+                                    </Button>
+                                    {isMobile && <div style={{ width: 1, height: 24, backgroundColor: "rgba(255,255,255,0.45)" }} />}
+                                    <div
+                                        style={{
+                                            position: isMobile ? "static" : "absolute",
+                                            left: isMobile ? undefined : "50%",
+                                            transform: isMobile ? undefined : "translateX(-50%)",
+                                            maxWidth: isMobile ? undefined : "45vw",
+                                            minWidth: 0,
+                                            overflow: "hidden",
+                                            textOverflow: "ellipsis",
+                                            whiteSpace: "nowrap",
+                                            fontWeight: 600,
+                                        }}
+                                    >
+                                        Debug Link: {this.props.problemID}
+                                    </div>
+                                </div>
+                            </Grid>
+                            <Grid item xs={isMobile ? 7 : 5}>
+                                <div style={{ display: "flex", justifyContent: "flex-end", alignItems: "center", gap: isMobile ? 0 : 8 }}>
+                                    <Button
+                                        variant="contained"
+                                        color="primary"
+                                        size="small"
+                                        disabled={!previousProblemID}
+                                        onClick={() => this.navigateToDebugProblem(previousProblemID)}
+                                        style={{
+                                            minWidth: isMobile ? 92 : 176,
+                                            height: isMobile ? 38 : 48,
+                                            whiteSpace: "nowrap",
+                                        }}
+                                    >
+                                        {isMobile ? "Previous" : "Previous Problem"}
+                                    </Button>
+                                    <Button
+                                        variant="contained"
+                                        color="primary"
+                                        size="small"
+                                        disabled={!nextProblemID}
+                                        onClick={() => this.navigateToDebugProblem(nextProblemID)}
+                                        style={{
+                                            minWidth: isMobile ? 92 : 176,
+                                            height: isMobile ? 38 : 48,
+                                            whiteSpace: "nowrap",
+                                        }}
+                                    >
+                                        {isMobile ? "Next" : "Next Problem"}
                                     </Button>
                                 </div>
                             </Grid>
                         </Grid>
-
                     </Toolbar>
                 </AppBar>
+                <div style={{ height: secondaryBarHeight }} />
+
+                <Popup isOpen={this.state.showPopup} onClose={this.togglePopup}>
+                    <About />
+                </Popup>
+
                 {this.state.currProblem
-                    ? <ProblemWrapper key={this.state.currProblem.id}
-                               problem={this.state.currProblem} problemComplete={this.problemComplete}
-                               lesson={this.lesson}
-                               seed={this.state.seed}/>
-                    : <Box width={'100%'} textAlign={'center'} pt={4} pb={4}>
+                    ? <div
+                        style={{
+                            width: "100%",
+                            maxWidth: 960,
+                            margin: "0 auto",
+                            padding: isMobile ? "0 8px" : "0 32px",
+                            boxSizing: "border-box",
+                        }}
+                    >
+                        <ProblemWrapper key={this.state.currProblem.id}
+                                   problem={this.state.currProblem} problemComplete={this.problemComplete}
+                                   lesson={this.lesson}
+                                   seed={this.state.seed}
+                                   showDebugNavigation={false}
+                                   debugCenteredLayout/>
+                    </div>
+                    : <Box width={'100%'} textAlign={'center'} pt={8} pb={4}>
                         <Typography variant={'h3'}>Problem id <code>{this.props.problemID}</code> is not
                             valid!</Typography>
                     </Box>
@@ -236,4 +361,4 @@ class DebugPlatform extends React.Component {
 
 }
 
-export default DebugPlatform;
+export default withWidth()(withStyles(styles)(DebugPlatform));

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { MemoryRouter } from 'react-router-dom';
-import DebugPlatform from './DebugPlatform';
+import { DebugPlatform } from './DebugPlatform';
 import { ThemeContext } from '../config/config';
 
 jest.mock('@generated/processed-content-pool/oatutor.json', () => ([
