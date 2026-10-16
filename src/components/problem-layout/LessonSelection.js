@@ -17,6 +17,7 @@ import withTranslation from "../../util/withTranslation.js";
 import MenuBookIcon from '@material-ui/icons/MenuBook';
 import { LocalizationConsumer } from '../../util/LocalizationContext';
 import { withResponsive } from '../../util/ResponsiveContext';
+import { getLastVisited, resolveResume } from '../../util/lastVisited';
 
 class LessonSelection extends React.Component {
     static contextType = ThemeContext;
@@ -32,7 +33,79 @@ class LessonSelection extends React.Component {
         this.state = {
             preparedRemoveProgress: false,
             removedProgress: false,
+            lastVisited: null,
         }
+    }
+
+    componentDidMount() {
+        this._isMounted = true;
+        if (this.props.courseNum == null) this.loadResume();
+    }
+
+    componentWillUnmount() {
+        this._isMounted = false;
+    }
+
+    // Saved mastery decides whether Resume reopens the last lesson or moves on to the next one.
+    loadResume = async () => {
+        try {
+            await this.props.loadBktProgress?.();
+        } catch (e) {
+            console.debug("could not load saved progress for the resume card", e);
+        }
+        const lastVisited = await getLastVisited(this.context?.browserStorage);
+        if (this._isMounted) this.setState({ lastVisited });
+    }
+
+    renderResumeCard() {
+        const { translate, classes } = this.props;
+        const isMobile = this.props.responsive?.isMobile ?? false;
+        const resume = resolveResume(this.state.lastVisited, this.coursePlans, this.context?.bktParams);
+        if (!resume) return null;
+
+        const { kind, course, lesson, finished } = resume;
+        const label = (l) => [String(l?.name || l?.id || "").replace(/##/g, "").trim(), l?.topics].filter(Boolean).join(" · ");
+
+        return (
+            <Grid item xs={12}>
+                <Paper
+                    className={classes.paper}
+                    component="section"
+                    aria-label={translate('lessonSelection.resumeTitle')}
+                    style={{
+                        display: "flex",
+                        flexDirection: isMobile ? "column" : "row",
+                        alignItems: isMobile ? "stretch" : "center",
+                        gap: 16,
+                        textAlign: "left",
+                        border: "1.5px solid #3F7091",
+                    }}
+                >
+                    <div style={{ flex: 1, minWidth: 0 }}>
+                        <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.04em", textTransform: "uppercase", color: "#3F7091" }}>
+                            {translate('lessonSelection.resumeTitle')}
+                        </div>
+                        <h2 style={{ margin: "4px 0 2px", overflowWrap: "anywhere" }}>
+                            {course.courseName} · {label(lesson)}
+                        </h2>
+                        {kind === "up-next" && (
+                            <div style={{ color: "#5F6368" }}>
+                                {translate('lessonSelection.upNextAfter')} {label(finished)}
+                            </div>
+                        )}
+                    </div>
+                    <Button
+                        variant="contained"
+                        color="primary"
+                        className={classes.button}
+                        style={{ minWidth: "8em", flexShrink: 0 }}
+                        onClick={() => this.props.history.push(`/lessons/${lesson.id}`)}
+                    >
+                        {translate('lessonSelection.resume')}
+                    </Button>
+                </Paper>
+            </Grid>
+        );
     }
       
     removeProgress = () => {
@@ -96,6 +169,7 @@ class LessonSelection extends React.Component {
                             <Divider/>
                             <Spacer/>
                             <Grid container spacing={3}>
+                                {selectionMode === "course" && !this.isPrivileged && this.renderResumeCard()}
                                 {selectionMode === "course"
                                     ? this.coursePlans
                                         .map((course, i) =>
