@@ -1,0 +1,96 @@
+[
+    {
+        "id": "a736a57T3-diag-P10a-h1",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\left(-\\sqrt{3}\\right)}{2}$$"
+        ],
+        "dependencies": [],
+        "title": "Evaluate the inner value",
+        "text": "First, calculate the inner value: what is $$\\sin\\left(\\frac{4\\pi}{3}\\right)$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a736a57T3-diag-P10a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{\\left(-\\pi\\right)}{3}$$"
+        ],
+        "dependencies": [
+            "a736a57T3-diag-P10a-h1"
+        ],
+        "title": "Evaluate the outer value",
+        "text": "$$\\sin\\left(\\frac{4\\pi}{3}\\right)=\\frac{-\\sqrt{3}}{2}.$$ Now, what is $$\\arcsin\\left(\\frac{-\\sqrt{3}}{2}\\right)?$$",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{4\\pi}{3}$$",
+            "$$\\frac{\\pi}{3}$$",
+            "$$\\frac{\\left(-\\pi\\right)}{3}$$",
+            "$$\\frac{\\left(-4\\pi\\right)}{3}$$"
+        ],
+        "subHints": [
+            {
+                "id": "a736a57T3-diag-P10a-h2-s1",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Remember the range",
+                "text": "The range of $$\\arcsin$$ is $$\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right].$$ It cannot return a value like $$\\frac{4\\pi}{3}.$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            },
+            {
+                "id": "a736a57T3-diag-P10a-h2-s2",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Connection to the unit circle",
+                "text": "Recall that $$\\sin\\left(\\frac{4\\pi}{3}\\right)$$ represents the $$y$$ coordinate of a point on the unit circle at the angle $$\\frac{4\\pi}{3}.$$",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            },
+            {
+                "id": "a736a57T3-diag-P10a-h2-s3",
+                "type": "hint",
+                "dependencies": [],
+                "title": "Find equivalent angle geometrically",
+                "text": "The principal range of $$\\arcsin$$ is $$\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right], $$ which is the right half of the unit circle. To find an angle in this range that has the same $$y-$$ coordinate as $$\\frac{4\\pi}{3}, $$ extend a horizontal line straight from that point into Quadrant IV. It hits the right half of the circle at $$\\frac{-\\pi}{3}.$$ \\n\\n##figure1.gif##",
+                "variabilization": {},
+                "oer": "",
+                "license": ""
+            }
+        ]
+    },
+    {
+        "id": "a736a57T3-diag-P10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a736a57T3-diag-P10a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "Therefore $$\\arcsin\\left(\\sin\\left(\\frac{4\\pi}{3}\\right)\\right)=\\arcsin\\left(\\sin\\left(\\frac{-\\pi}{3}\\right)\\right)=\\frac{-\\pi}{3}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a736a57T3-diag-P10a-h4",
+        "type": "hint",
+        "dependencies": [
+            "a736a57T3-diag-P10a-h3"
+        ],
+        "title": "Remark",
+        "text": "You might be tempted to give $$\\frac{5\\pi}{3}$$ as your answer since it has the same sine value as $$\\frac{\\left(-\\pi\\right)}{3}$$, but $$\\frac{5\\pi}{3}$$ is outside the restricted domain of arcsin, so it cannot be returned.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
