@@ -1815,7 +1815,9 @@ class AgentChatbox extends React.Component {
                             <OskiAvatar className={classes.officeHoursIntroAvatar} aria-hidden="true" />
                             <h1 className={classes.officeHoursIntroTitle}>Oski · AI Tutor</h1>
                             <p className={classes.officeHoursIntroSubtitle}>
-                                Office Hours for {introScope}
+                                {courseName === 'Anthropology: Reading Review'
+                                    ? 'What is Property by Pierre-Joseph Proudhon'
+                                    : introScope}
                             </p>
                         </div>
                         {thread}
