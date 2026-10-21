@@ -43,7 +43,7 @@ import userIcon from "../assets/UserThumb.svg";
 import IconButton from "@material-ui/core/IconButton";
 import HelpOutlineOutlinedIcon from "@material-ui/icons/HelpOutlineOutlined";
 import FeedbackOutlinedIcon from "@material-ui/icons/FeedbackOutlined";
-import leftArrow from "../assets/chevron-left.svg";
+import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 
 import Popup from "../components/Popup/Popup";
 import About from "../pages/Posts/About.js";
@@ -1185,7 +1185,7 @@ class Platform extends React.Component {
     const PROGRESS_GAP = 20;
     const MAX_PROGRESS_BAR_WIDTH = 900;
     const MIN_PROGRESS_BAR_WIDTH = isMobile ? 0 : 200;
-    const progressStickyTop = isMobile ? 56 : 120;
+    const progressStickyTop = isMobile ? 56 : 64;
 
     return (
       <>
@@ -1233,7 +1233,7 @@ class Platform extends React.Component {
               flexShrink: 0,
               zIndex: this.state.drawerOpen ? 4 : 0,
             }}
-            PaperProps={{ style: { padding: 0 } }}
+            PaperProps={{ style: { padding: 0, top: 64, height: "calc(100vh - 64px)" } }}
           >
             <div style={{ width: drawerWidth, padding: 16 }}>
               <IconButton aria-label="Table of Contents Toggle" onClick={() => this.toggleDrawer(false)}>
@@ -1309,106 +1309,90 @@ class Platform extends React.Component {
                   </Popup>
                 </div>
               ) : (
-                <Grid container spacing={0} role={"navigation"} alignItems={"center"}>
-                  <Grid item xs={3} key={1}>
-                    <BrandLogoNav isPrivileged={this.isPrivileged} />
-                  </Grid>
-                  <Grid item xs={5} key={2}></Grid>
-                  <Grid xs={4} item key={3}>
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "flex-end",
-                        alignItems: "center",
-                        gap: "9px",
-                        color: "#344054",
-                      }}
-                    >
-                      <img src={userIcon} alt="User Icon" />
-                      <div style={{ fontWeight: 600 }}>{this.studentNameDisplay}</div>
+                <div role={"navigation"} style={{ display: "flex", alignItems: "center", width: "100%", gap: 16, minWidth: 0 }}>
+                  <BrandLogoNav isPrivileged={this.isPrivileged} />
+                  {!isOfficeHours && tocCourseName && (
+                    <div style={{ display: "flex", alignItems: "center", gap: 2, minWidth: 0, color: "#344054" }}>
+                      {!this.isFromCanvas && (
+                        <IconButton onClick={this.handleHierarchyBack} aria-label="Back" size="small">
+                          <ChevronLeftIcon htmlColor={"#344054"} />
+                        </IconButton>
+                      )}
+                      <div
+                        title={tocCourseName}
+                        style={{ fontWeight: 600, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}
+                      >
+                        {tocCourseName}
+                      </div>
                     </div>
-                  </Grid>
-                </Grid>
+                  )}
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "9px",
+                      marginLeft: "auto",
+                      flexShrink: 0,
+                      color: "#344054",
+                    }}
+                  >
+                    {/* "Report a problem" and "?" grouped in one small box */}
+                    {!isOfficeHours && (
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: 2,
+                          padding: 4,
+                          backgroundColor: "#FFFFFF",
+                          border: "1px solid #DFE8EE",
+                          borderRadius: 12,
+                          boxShadow: "0 1px 3px rgba(15, 46, 95, 0.06)",
+                        }}
+                      >
+                        {this.state.status === "learning" && (
+                          <Button
+                            variant="text"
+                            onClick={this.toggleFeedback}
+                            aria-label="report problem"
+                            style={{
+                              height: 32,
+                              padding: "0 10px",
+                              boxShadow: "none",
+                              color: "#3F7091",
+                              fontSize: 13,
+                              fontWeight: 600,
+                              textTransform: "none",
+                              backgroundColor: this.state.showFeedback ? "#E9F4FB" : "transparent",
+                            }}
+                          >
+                            Report a problem
+                          </Button>
+                        )}
+                        <IconButton
+                          aria-label="about"
+                          title={`About ${SITE_NAME}`}
+                          onClick={this.togglePopup}
+                          size="small"
+                          style={{ width: 32, height: 32 }}
+                        >
+                          <HelpOutlineOutlinedIcon htmlColor={"#253444"} style={{ fontSize: 22 }} />
+                        </IconButton>
+                      </div>
+                    )}
+                    <img src={userIcon} alt="User Icon" />
+                    <div style={{ fontWeight: 600 }}>{this.studentNameDisplay}</div>
+                  </div>
+                  <Popup isOpen={showPopup} onClose={this.togglePopup}>
+                    <About />
+                  </Popup>
+                </div>
               )}
             </Toolbar>
           </AppBar>
 
           <div className={classes.toolbarOffset} />
 
-          {/* Second top bar (desktop only). Hidden in office hours — one navbar. */}
-          {!isMobile && !isOfficeHours && (
-          <AppBar position="fixed" className={classes.secondBarOffset}>
-            <Toolbar style={{ minHeight: "56px" }}>
-              <Grid container spacing={0} role={"secondary-navigation"} alignItems={"center"}>
-                <Grid item xs={9} key={1}>
-                  {this.state.selectedCourse ? (
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "flex-start",
-                        alignItems: "center",
-                        gap: "8xpx",
-                      }}
-                    >
-                      {!this.isFromCanvas && (
-                      <IconButton onClick={this.handleHierarchyBack} aria-label="Back" style={{ padding: 2 }}>
-                        <img src={leftArrow} alt="Back Arrow" />
-                      </IconButton>
-                      )}
-
-                      <div style={{ fontWeight: 600 }}> {this.state.selectedCourse.courseName} </div>
-                    </div>
-                  ) : findLessonById(this.props.lessonID) ? (
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "flex-start",
-                        alignItems: "center",
-                        gap: "8px",
-                      }}
-                    >
-                      {!this.isFromCanvas && (
-                      <IconButton onClick={this.handleHierarchyBack} aria-label="Back" style={{ padding: 2 }}>
-                        <img src={leftArrow} alt="Back Arrow" />
-                      </IconButton>
-                      )}
-
-                      <div style={{ fontWeight: 600 }}> {findLessonById(this.props.lessonID).courseName} </div>
-                    </div>
-                  ) : (
-                    ""
-                  )}
-                </Grid>
-
-                <Grid xs={3} item key={3}>
-                  <div
-                    style={{
-                      display: "flex",
-                      flexGrow: 1,
-                      justifyContent: "flex-end",
-                      border: "none",
-                    }}
-                  >
-                    <IconButton aria-label="about" title={`About ${SITE_NAME}`} onClick={this.togglePopup}>
-                      <HelpOutlineOutlinedIcon htmlColor={"#ffffff"} style={{ fontSize: 36, margin: -2 }} />
-                    </IconButton>
-
-                    {this.state.status === "learning" && !isOfficeHours && (
-                      <IconButton aria-label="report problem" onClick={this.toggleFeedback} title={"Report Problem"}>
-                        <FeedbackOutlinedIcon htmlColor={"#ffffff"} style={{ fontSize: 32 }} />
-                      </IconButton>
-                    )}
-                  </div>
-                  <Popup isOpen={showPopup} onClose={this.togglePopup}>
-                    <About />
-                  </Popup>
-                </Grid>
-              </Grid>
-            </Toolbar>
-          </AppBar>
-          )}
-
-          {!isMobile && !isOfficeHours && <div style={{ height: 56 }} />}
 
           {/* Progress Bar */}
           <div
