@@ -3,6 +3,15 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { getStudentDisplayName } from './util/getStudentDisplayName';
 
+// These packages are ESM-only, while this project's Jest setup expects
+// CommonJS dependencies. Markdown rendering is outside the scope of these
+// App smoke and display-name tests, so use lightweight stand-ins here.
+jest.mock('react-markdown', () => ({ children }) => children || null);
+jest.mock('remark-math', () => () => {});
+jest.mock('remark-gfm', () => () => {});
+jest.mock('rehype-katex', () => () => {});
+jest.mock('@components/Firebase.js', () => jest.fn());
+
 it('renders without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(<App/>, div);
