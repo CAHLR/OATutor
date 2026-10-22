@@ -80,6 +80,8 @@ class Firebase {
         }
         const app = getApps().length ? getApp() : initializeApp(credentials);
 
+        // False with the blank local config: writes are attempted but never stored.
+        this.configured = !isPlaceholderFirebaseConfig(credentials);
         this.oats_user_id = oats_user_id;
         this.db = getFirestore(app);
         this.treatment = treatment;
