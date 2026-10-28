@@ -1,0 +1,18 @@
+.skill-map { background: #f3f6f9; border: 1px solid #e3e8ee; border-radius: 12px; }
+.skill-map, .skill-map .skill-node { font-family: 'Inter', sans-serif; font-size: 15px; color: #1f2933; }
+.skill-map .skill-node { border: none; border-radius: 10px; font-weight: 500; display: flex; align-items: center; gap: 10px; text-align: left; cursor: pointer; }
+.skill-map .skill-node.mastered    { background: #e6efe9; }
+.skill-map .skill-node.in-progress { background: #f3dc9c; }
+.skill-map .skill-node.available   { background: #dde7f0; }
+.skill-map .skill-node.locked      { background: #e9edf1; color: #4a5563; }
+.skill-map .skill-node.selected    { box-shadow: 0 0 0 2px #1f3a5f; }
+.skill-map .react-flow__handle { opacity: 0; }
+
+.skill-map .skill-icon { flex: none; width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; }
+.skill-map .mastered  .skill-icon { background: #2f7d55; color: #fff; }
+.skill-map .available .skill-icon { background: #4f7396; color: #fff; font-size: 9px; }
+.skill-map .locked    .skill-icon { background: #fff; color: #4a5563; }
+
+/* progress ring: conic fill for --p percent, white center holds the label */
+.skill-map .skill-icon.ring { width: 34px; height: 34px; padding: 3px; box-sizing: border-box; background: conic-gradient(#e0a526 calc(var(--p) * 1%), #fff 0); }
+.skill-map .skill-icon.ring > span { width: 100%; height: 100%; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 600; color: #1f2933; }

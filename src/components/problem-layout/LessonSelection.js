@@ -15,6 +15,7 @@ import { IS_STAGING_OR_DEVELOPMENT } from "../../util/getBuildType";
 import BuildTimeIndicator from "@components/BuildTimeIndicator";
 import withTranslation from "../../util/withTranslation.js";
 import MenuBookIcon from '@material-ui/icons/MenuBook';
+import SkillMap from './SkillMap';
 import { LocalizationConsumer } from '../../util/LocalizationContext';
 import { withResponsive } from '../../util/ResponsiveContext';
 
@@ -42,6 +43,18 @@ class LessonSelection extends React.Component {
 
     prepareRemoveProgress = () => {
         this.setState({ preparedRemoveProgress: true });
+    }
+
+    isLessonMastered = (lessonId) => {
+        const lesson = this.coursePlans.flatMap((c) => c.lessons).find((l) => l.id === lessonId);
+        const bktParams = this.context?.bktParams || {};
+        return !!lesson && Object.entries(lesson.learningObjectives || {})
+            .every(([kc, threshold]) => (bktParams[kc]?.probMastery ?? 0) >= threshold);
+    }
+
+    lessonStatus = (lesson) => {
+        if (this.isLessonMastered(lesson.id)) return "mastered";
+        return (lesson.prereqs || []).every(this.isLessonMastered) ? "available" : "locked";
     }
 
     handleCourseSelect = (course, courseIndex) => {
@@ -146,6 +159,34 @@ class LessonSelection extends React.Component {
                                         const visibleLessons = course.lessons.filter(
                                             (lesson) => !metaLessonChildIds.has(lesson.metaId) && !metaLessonChildIds.has(lesson.id)
                                         );
+
+                                        // TEMP: mockup lessons/prereqs/statuses for visualizing the skill map (borrows real ids so clicks navigate)
+                                        const demo = [
+                                            ["Equality & Implication", [], "mastered"],
+                                            ["Algebraic Operations", [0], "in-progress"],
+                                            ["Linear Equations", [0], "mastered"],
+                                            ["Exponents", [1], "locked"],
+                                            ["Polynomials", [1], "locked"],
+                                            ["Inequalities", [2], "available"],
+                                            ["Systems of Equations", [2], "available"],
+                                            ["Logarithms", [3, 4], "locked"],
+                                            ["Factoring", [3, 4], "locked"],
+                                            ["Absolute Value", [5], "locked"],
+                                            ["Quadratic Equations", [8], "locked"],
+                                            ["Rational Functions", [8], "locked"],
+                                        ];
+                                        const demoId = (i) => visibleLessons[i]?.id ?? `demo-${i}`;
+                                        const demoLessons = demo.map(([name, prereqs, status], i) => ({
+                                            id: demoId(i), name, status, prereqs: prereqs.map(demoId), progress: status === "in-progress" ? 15 : undefined,
+                                        }));
+                                        const demoStatusOf = (lesson) => lesson.status;
+                                        if (demoLessons.some((lesson) => Array.isArray(lesson.prereqs))) {
+                                            return (
+                                                <Grid item xs={12}>
+                                                    <SkillMap lessons={demoLessons} statusOf={demoStatusOf} history={this.props.history} />
+                                                </Grid>
+                                            );
+                                        }
 
                                         return (
                                             <Fragment>
