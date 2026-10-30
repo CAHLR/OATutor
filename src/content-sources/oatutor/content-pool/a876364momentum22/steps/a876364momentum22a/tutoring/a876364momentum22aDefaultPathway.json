@@ -4,24 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Use Conservation of Momentum",
-        "text": "Apply the principles of conservation of momentum and elastic collisions to calculate the velocity of the second puck. Here, $$p_{initial}$$ $$=$$ $$m v_{1,initial}$$, and $$p_{final}$$ $$=$$ $$2m v_{final}$$ as the two pucks will gain the same speed.",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": ""
-    },
-    {
-        "id": "a876364momentum22a-h2",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$3$$"
-        ],
-        "dependencies": [
-            "a876364momentum22a-h1"
-        ],
-        "title": "Calculate the Velocity",
-        "text": "What is $$\\frac{6}{2}$$?",
+        "text": "Momentum is conserved, and because the masses are equal and the collision is elastic, the two pucks move off at $$90**\\circ$$ to each other. Their momenta form a right triangle with the incoming momentum, so the second puck\u2019s speed is $$v_{2}=v_{1,\\text{i}}\\sin30.0**\\circ$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -30,10 +13,10 @@
         "id": "a876364momentum22a-h3",
         "type": "hint",
         "dependencies": [
-            "a876364momentum22a-h2"
+            "a876364momentum22a-h1"
         ],
         "title": "Calculate the Direction",
-        "text": "What is $$\\theta_2$$ in $$\\theta_1-\\theta_2=90$$?",
+        "text": "What is $$\\theta_{2}$$ in $$\\theta_{1}-\\theta_{2}=90**\\circ$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

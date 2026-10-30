@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Poiseuille's Law",
-        "text": "To determine by what factor the pressure difference must increase to maintain the same flow rate when the radius of a blood vessel decreases, we use Poiseuille's Law, which $$states:Q=\\frac{\\Delta P \\pi r^4}{8\\eta L}$$.",
+        "text": "To determine by what factor the pressure difference must increase to keep the same flow rate when the radius of a blood vessel decreases, use Poiseuille's law, which states: $$Q=\\frac{\\Delta{}P\\,\\pi{}r**4}{8\\eta{}L}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
@@ -16,24 +16,7 @@
             "a48e533fluid37a-h1"
         ],
         "title": "Set Up the Proportion",
-        "text": "Since Q must remain constant, we can set up the following proportion: $$\\frac{\\Delta P_2}{\\Delta P_1}=\\left(\\frac{r_1}{r_2}\\right)^4$$.",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
-    },
-    {
-        "id": "a48e533fluid37a-h3",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$1.52$$"
-        ],
-        "dependencies": [
-            "a48e533fluid37a-h2"
-        ],
-        "title": "Calculate the Factor by Which the Pressure Difference Must Increase",
-        "text": "What is $$\\frac{\\Delta P_2}{\\Delta P_1}=\\left(\\frac{r_1}{r_2}\\right)^4=\\left(\\frac{1}{0.9}\\right)^4$$?",
+        "text": "Since $$Q$$ must remain constant, we can set up the following proportion: $$\\frac{\\Delta{}P_{2}}{\\Delta{}P_{1}}=\\left(\\frac{r_{1}}{r_{2}}\\right)**4$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"

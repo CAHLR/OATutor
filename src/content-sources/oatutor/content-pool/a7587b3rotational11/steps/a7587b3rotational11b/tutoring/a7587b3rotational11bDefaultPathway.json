@@ -4,24 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Find the Work Done by the Father",
-        "text": "The work done by the father is given by: $$W=\\tau \\theta$$\\nwhere \u03c4 is the torque applied $$\u03c4=F r$$, and \u03b8 is the angular displacement in radians.",
-        "variabilization": {},
-        "oer": "",
-        "license": ""
-    },
-    {
-        "id": "a7587b3rotational11b-h2",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$375$$"
-        ],
-        "dependencies": [
-            "a7587b3rotational11b-h1"
-        ],
-        "title": "Calculating the Torque",
-        "text": "What is $$\u03c4=F r=250\\times1.5$$ in Nm?",
+        "text": "The work done by the father is $$W=\\tau\\theta,$$ where $$\\tau=Fr$$ is the torque he applies and $$\\theta$$ is the angular displacement in radians.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -35,10 +18,10 @@
             "$$0.493$$"
         ],
         "dependencies": [
-            "a7587b3rotational11b-h2"
+            "a7587b3rotational11b-h1"
         ],
         "title": "Relate Work Done to Rotational Kinetic Energy",
-        "text": "According to the work-energy principle, the work done by the father is equal to the change in the rotational kinetic energy: $$W=KE$$. Thus we have $$\\tau \\theta=185$$. Solve for \u03b8 in rad and keep three decimal places.",
+        "text": "According to the work-energy principle, the work done by the father equals the change in rotational kinetic energy: $$W=KE, $$ so $$\\tau\\theta=185\\,\\text{J}.$$ Solve for $$\\theta$$ to three decimal places (in $$\\text{rad})$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -55,7 +38,7 @@
             "a7587b3rotational11b-h3"
         ],
         "title": "Convert Angular Displacement to Number of Revolutions",
-        "text": "The number of revolutions (N) is given by $$N=\\frac{\\theta}{2} \\pi$$. What is N?",
+        "text": "The number of revolutions is $$N=\\frac{\\theta}{2\\pi}.$$ What is $$N$$?",
         "variabilization": {},
         "oer": "",
         "license": ""

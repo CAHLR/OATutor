@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Density Formula",
-        "text": "Density is mass per unit volume, and the formula is $$p=\\frac{m}{v}$$ where $$p$$ is the density, $$m$$ is the mass, and v is the volume occupied by the substance.",
+        "text": "Density is mass per unit volume: $$\\rho=\\frac{m}{V}, $$ where $$\\rho$$ is the density, $$m$$ is the mass, and $$V$$ is the volume occupied by the substance.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
@@ -14,25 +14,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Identify the Density of Gasoline",
-        "text": "The density of gasoline is approximately $$\\frac{670kg}{m^3}$$, and convert the volume of gasoline from $$20.0Lto$$ cubic meters $$0.02m^3$$.",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
-    },
-    {
-        "id": "a289fa8density8a-h3",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$13.4$$"
-        ],
-        "dependencies": [
-            "a289fa8density8a-h1",
-            "a289fa8density8a-h2"
-        ],
-        "title": "Substitute the Values and Solve for M",
-        "text": "Rearrange the formula to solve for mass: $$m_g=p_g v_g=670\\times0.02=$$? (in kg)",
+        "text": "The density of gasoline is approximately $$680\\,\\text{kg/m}**3,$$ and the density of steel is approximately $$7.80\\times10**{3}\\,\\text{kg/m}**3.$$ Convert the volume of gasoline from $$20.0\\, \\text{L}$$ to cubic meters.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
@@ -43,30 +25,26 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$15.9$$"
+            "$$16.1$$"
         ],
         "dependencies": [
-            "a289fa8density8a-h3"
+            "a289fa8density8a-h1",
+            "a289fa8density8a-h2"
         ],
         "title": "Calculate the Total Mass",
-        "text": "The total mass of the full gas can is the sum of the mass of the can and the mass of the gasoline: $$m_{total}=m_c+m_g$$. What is the total mass in kg?",
+        "text": "The total mass of the full gas can is the sum of the mass of the can and the mass of the gasoline: $$m_{\\text{total}}=m_{c}+m_{g}.$$ What is the total mass (in $$\\text{kg})$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
     },
     {
         "id": "a289fa8density8a-h5",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$795$$"
-        ],
+        "type": "hint",
         "dependencies": [
             "a289fa8density8a-h4"
         ],
-        "title": "Calculate the Average Density",
-        "text": "The average density is given by $$p_{total}=\\frac{m_{total}}{v}=\\frac{15.9}{0.02}=$$? in $$\\frac{kg}{m^3}$$",
+        "title": "Find the Total Volume and the Average Density",
+        "text": "The total volume is the volume of the gasoline plus the volume of the steel, $$V_{\\text{steel}}=\\frac{m_{c}}{\\rho_{\\text{steel}}}.$$ The average density is $$\\rho=\\frac{m_{\\text{total}}}{V_{\\text{total}}}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"

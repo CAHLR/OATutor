@@ -1,15 +1,5 @@
 [
     {
-        "id": "aed4feastability1a-h1",
-        "type": "hint",
-        "dependencies": [],
-        "title": "Determine the Net Torque",
-        "text": "What should the net torque be in Nm?",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": ""
-    },
-    {
         "id": "aed4feastability1a-h2",
         "type": "scaffold",
         "problemType": "TextBox",
@@ -17,59 +7,21 @@
         "hintAnswer": [
             "$$0$$"
         ],
-        "dependencies": [
-            "aed4feastability1a-h1"
-        ],
+        "dependencies": [],
         "title": "Determine the Net Torque",
-        "text": "What should the net torque be when the seesaw is balanced (in Nm)?",
+        "text": "What should the net torque be when the seesaw is balanced (in $$\\text{N}\\cdot\\text{m})$$?",
         "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
+        "oer": "",
         "license": ""
     },
     {
         "id": "aed4feastability1a-h3",
         "type": "hint",
-        "dependencies": [
-            "aed4feastability1a-h1"
-        ],
+        "dependencies": [],
         "title": "Calculate the Forces",
-        "text": "Assume the first child pushes in the negative direction and the second child pushes in the positive direction.",
+        "text": "Both weights point down. Take the torque from the first child's weight as negative and the torque from the second child's weight as positive.",
         "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": ""
-    },
-    {
-        "id": "aed4feastability1a-h4",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$-196$$"
-        ],
-        "dependencies": [
-            "aed4feastability1a-h3"
-        ],
-        "title": "Calculate Force from the First Child",
-        "text": "What force is exerted by the first child (in Newtons)? Take acceleration from gravity to be $$\\frac{9.8m}{s^2}$$.",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": ""
-    },
-    {
-        "id": "aed4feastability1a-h5",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$294$$"
-        ],
-        "dependencies": [
-            "aed4feastability1a-h3"
-        ],
-        "title": "Calculate Force from the Second Child",
-        "text": "What force is exerted by the second child (in Newtons)? Take acceleration from gravity to be $$\\frac{9.8m}{s^2}$$",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
+        "oer": "",
         "license": ""
     },
     {
@@ -79,26 +31,9 @@
             "aed4feastability1a-h3"
         ],
         "title": "Use the Torque Formula",
-        "text": "Recall the formula for torque: T $$=$$ $$r F sin\\left(\\theta\\right)$$. Note that if child one sits $$x$$ meters away from the pivot, child $$2$$ sits $$3-x$$ meters away from the pivot. Solve for $$x$$.",
+        "text": "Recall the formula for torque: $$\\tau=rF\\sin\\theta.$$ Note that if child one sits $$x$$ meters away from the pivot, child two sits $$3.00-x$$ meters away from the pivot. Solve for $$x$$.",
         "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": ""
-    },
-    {
-        "id": "aed4feastability1a-h7",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$1.8$$"
-        ],
-        "dependencies": [
-            "aed4feastability1a-h6"
-        ],
-        "title": "Solve for the Distance",
-        "text": "Solve for $$x$$ in meters: $$0$$ $$=$$ $$-196$$ * $$x$$ + $$294$$ * $$(3-x)$$.",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
+        "oer": "",
         "license": ""
     }
 ]

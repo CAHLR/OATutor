@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Density Formula",
-        "text": "Density is mass per unit volume, and the formula is $$p=\\frac{m}{v}$$ where $$p$$ is the density, $$m$$ is the mass, and v is the volume occupied by the substance.",
+        "text": "Density is mass per unit volume: $$\\rho=\\frac{m}{V}, $$ where $$\\rho$$ is the density, $$m$$ is the mass, and $$V$$ is the volume occupied by the substance.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
@@ -14,7 +14,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Identify the Densities of the Constituents",
-        "text": "We take the density of gold p_gold=19.32g/cm\u00b3, the density of silver p_silver=10.1g/cm\u00b3, and the density of copper p_copper=8.8g/cm\u00b3.",
+        "text": "We take the density of gold $$\\rho_{\\text{gold}}=19.32\\,\\text{g/cm}**3,$$ the density of silver $$\\rho_{\\text{silver}}=10.1\\,\\text{g/cm}**3,$$ and the density of copper $$\\rho_{\\text{copper}}=8.8\\,\\text{g/cm}**3$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
@@ -25,26 +25,8 @@
         "dependencies": [
             "a289fa8density9a-h1"
         ],
-        "title": "Formula for the Weighted Average Density",
-        "text": "The weighted average density is $$p_{mix}=\\frac{m_g}{M} p_{gold}+\\frac{m_s}{M} p_{silver}+\\frac{m_c}{M} p_{copper}$$, where M is the total mass and $$m_g$$, $$m_s$$, $$m_c$$ are the masses of gold, silver, and copper.",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
-    },
-    {
-        "id": "a289fa8density9a-h4",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$15.6$$"
-        ],
-        "dependencies": [
-            "a289fa8density9a-h2",
-            "a289fa8density9a-h3"
-        ],
-        "title": "Calculate the Weighted Average Density",
-        "text": "The mass fractions are provided: $$\\frac{18}{24}$$ for gold, $$\\frac{5}{24}$$ for silver, and $$\\frac{1}{24}$$ for copper. Now plug in the values and calculate the weighted average density $$p_{mix}$$.",
+        "title": "Formula for the Average Density",
+        "text": "The average density of a mixture by mass is found from $$\\frac{1}{\\rho}=\\frac{m_{g}/M}{\\rho_{\\text{gold}}}+\\frac{m_{s}/M}{\\rho_{\\text{silver}}}+\\frac{m_{c}/M}{\\rho_{\\text{copper}}},$$ where $$M$$ is the total mass and $$m_{g},$$ $$m_{s},$$ and $$m_{c}$$ are the masses of gold, silver, and copper.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"

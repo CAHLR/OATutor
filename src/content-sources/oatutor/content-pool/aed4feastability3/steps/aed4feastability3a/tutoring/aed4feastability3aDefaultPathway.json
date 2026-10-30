@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Torque Formula",
-        "text": "Recall the formula for torque: T $$=$$ $$r F sin\\left(\\theta\\right)$$.",
+        "text": "Recall the formula for torque: $$\\tau=rF\\sin\\theta$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
@@ -21,7 +21,7 @@
             "aed4feastability3a-h1"
         ],
         "title": "Net Torque",
-        "text": "What should the net torque be (in Nm)?",
+        "text": "What should the net torque be (in $$\\text{N}\\cdot\\text{m})$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
@@ -39,35 +39,13 @@
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
     },
     {
-        "id": "aed4feastability3a-h4",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$-4900$$"
-        ],
+        "id": "aed4feastability3a-h5",
+        "type": "hint",
         "dependencies": [
             "aed4feastability3a-h3"
         ],
-        "title": "Force at Center of Gravity",
-        "text": "What force is exerted by the horse's center of gravity (in Newtons)? Take acceleration from gravity to be $$\\frac{9.8m}{s^2}$$.",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
-    },
-    {
-        "id": "aed4feastability3a-h5",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$1430$$"
-        ],
-        "dependencies": [
-            "aed4feastability3a-h4"
-        ],
-        "title": "Solve for the Force",
-        "text": "Recall the formula for torque: T $$=$$ $$r F sin\\left(\\theta\\right)$$. Solve for F: $$0$$ $$=$$ (-4900N * $$0.35m)$$ + (F * $$1.2m)$$ (rounded to the nearest $$10$$ Newtons).",
+        "title": "Set Up the Torques",
+        "text": "Take torques about the horse's feet. The weight $$mg$$ acts at the center of gravity, at its horizontal distance from the feet, and the wall's force acts at its height above the feet. Set the net torque to zero and solve for $$F$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"

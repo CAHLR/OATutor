@@ -4,24 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Formula For the Change In Momentum",
-        "text": "Calculate the change in momentum of the ball with \u0394p=m*(v_final - v_initial).",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": ""
-    },
-    {
-        "id": "a876364momentum15a-h2",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$-1.296$$"
-        ],
-        "dependencies": [
-            "a876364momentum15a-h1"
-        ],
-        "title": "Calculate the Change In Momentum",
-        "text": "What is 0.24*(-2.4-3?) Keep three decimal places.",
+        "text": "Calculate the change in momentum of the ball with $$\\Delta{}p=m(v_{\\text{f}}-v_{\\text{i}})$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -30,27 +13,10 @@
         "id": "a876364momentum15a-h3",
         "type": "hint",
         "dependencies": [
-            "a876364momentum15a-h2"
+            "a876364momentum15a-h1"
         ],
         "title": "Use Formula For the Change In Momentum",
-        "text": "Use \u0394p $$=$$ $$F \\Delta t$$ to calculate the average force (F).",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": ""
-    },
-    {
-        "id": "a876364momentum15a-h4",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$86.4$$"
-        ],
-        "dependencies": [
-            "a876364momentum15a-h3"
-        ],
-        "title": "Calculate the Force",
-        "text": "What is $$\\frac{1.296}{0.015}$$?",
+        "text": "Use $$\\Delta{}p=F\\Delta{}t$$ to calculate the average force $$F$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

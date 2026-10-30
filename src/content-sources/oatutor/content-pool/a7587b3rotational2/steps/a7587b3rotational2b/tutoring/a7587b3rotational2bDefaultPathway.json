@@ -4,7 +4,19 @@
         "type": "hint",
         "dependencies": [],
         "title": "Rotational Kinematics Equation",
-        "text": "The total angular displacement \u03b8 (in radians) can be found using the following equation: (\u03c9_f)**2=(\u03c9_i)**2+2\\alpha\u03b8.",
+        "text": "The total angular displacement $$\\theta$$ (in radians) can be found using the following equation: $$\\omega_{f}**2=\\omega_{i}**2+2\\alpha\\theta$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7587b3rotational2b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7587b3rotational2b-h1"
+        ],
+        "title": "Convert Angular Displacement to Revolutions",
+        "text": "Since $$2\\pi$$ radians is one revolution, the number of revolutions is $$N=\\frac{\\theta}{2\\pi}$$.",
         "variabilization": {},
         "oer": "",
         "license": ""

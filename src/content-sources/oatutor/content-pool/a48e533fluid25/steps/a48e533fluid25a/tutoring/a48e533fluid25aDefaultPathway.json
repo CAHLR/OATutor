@@ -4,24 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Formula for Gravitational Potential Energy Converted to Power",
-        "text": "$$P=\u03c1ghQ$$ where P is the power in watts (W), \u03c1 is the density of water (1000 kg/m\u00b3), g is the acceleration due to gravity $$(9.81$$ m/s\u00b2), $$h$$ is the height (150 $$m$$ in this case), and Q is the flow rate (650 m\u00b3/s).",
-        "variabilization": {},
-        "oer": "https://OATutor.io <OATutor>",
-        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
-    },
-    {
-        "id": "a48e533fluid25a-h2",
-        "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
-        "hintAnswer": [
-            "$$956$$"
-        ],
-        "dependencies": [
-            "a48e533fluid25a-h1"
-        ],
-        "title": "Calculate the Power",
-        "text": "Substitute the values into the formula and calculate the power P in MW. (round to the nearest integer)",
+        "text": "Use $$P=\\rho{}ghQ, $$ where $$P$$ is the power in watts, $$\\rho=1000\\,\\text{kg/m}**3$$ is the density of water, $$g=9.81\\,\\text{m/s}**2$$ is the acceleration due to gravity, $$h=150\\, \\text{m}$$ is the height, and $$Q=650\\,\\text{m}**3/\\text{s}$$ is the flow rate. Remember that $$1\\,\\text{MW}=10**{6}\\,\\text{W}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
