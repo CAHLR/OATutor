@@ -53,29 +53,16 @@
             "$$30$$ to $$90$$",
             "$$59$$ to $$61$$",
             "$$57$$ to $$63$$"
-        ],
-        "subHints": [
-            {
-                "id": "a5b26d4accuracy4b-h3-s1",
-                "type": "scaffold",
-                "problemType": "MultipleChoice",
-                "answerType": "string",
-                "hintAnswer": [
-                    "$$59$$ to $$61$$"
-                ],
-                "dependencies": [],
-                "title": "Range of speeds +/- Uncertainty",
-                "text": "What is $$60$$ +/- our uncertainty?",
-                "variabilization": {},
-                "oer": "",
-                "license": "",
-                "choices": [
-                    "$$55$$ to $$65$$",
-                    "$$30$$ to $$90$$",
-                    "$$59$$ to $$61$$",
-                    "$$57$$ to $$63$$"
-                ]
-            }
         ]
+    },
+    {
+        "id": "a5b26d4accuracy4b-h4",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Uncertainty Equation",
+        "text": "Use the answer from the previous part with our uncertainty equation % unc $$=$$ uncertainty/(expected value) * 100%.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
     }
 ]
