@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Equation for Slope",
-        "text": "For $$y=m x+b$$, the coefficient of $$x$$, which is $$m$$, represents the slope.",
+        "text": "Solve the equation for $$y$$, then identify the coefficient of $$x$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -21,17 +21,19 @@
             "ad16e82class15a-h1"
         ],
         "title": "Finding Slope",
-        "text": "What is the slope of this line? Enter answer as a fraction if necessary. If there is a negative add it before the faction like $$\\frac{-8}{9}$$.",
+        "text": "Enter the slope as a fraction in $$\\frac{a}{b}$$ form.",
         "variabilization": {},
         "oer": "",
         "license": "",
         "subHints": [
             {
-                "id": "ad16e82class15a-h2-s1",
+                "id": "ad16e82class15a-h2-h3",
                 "type": "hint",
-                "dependencies": [],
+                "dependencies": [
+                    "ad16e82class15a-h2"
+                ],
                 "title": "Finding Slope",
-                "text": "$$6x-5y+15=0$$ is equivalent to $$y=\\frac{6}{5} x+3$$",
+                "text": "$$6x-5y+15=0$$ is equivalent to $$y=\\frac{6}{5} x+3$$.",
                 "variabilization": {},
                 "oer": "",
                 "license": ""

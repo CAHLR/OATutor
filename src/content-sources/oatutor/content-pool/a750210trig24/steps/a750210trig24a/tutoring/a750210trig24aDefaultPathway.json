@@ -3,8 +3,8 @@
         "id": "a750210trig24a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Reciprocal Triginometric Identity",
-        "text": "Recall that tanx is equal to $$\\frac{sinx}{cosx}$$",
+        "title": "Quotient Identity",
+        "text": "Use $$tan(x)=\\fracsin^c\\left(x\\right)os\\left(x\\right)}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -15,8 +15,8 @@
         "dependencies": [
             "a750210trig24a-h1"
         ],
-        "title": "Reciprocal Triginometric Identity",
-        "text": "Recall that secx is equal to $$\\frac{1}{cosx}$$",
+        "title": "Reciprocal Identity",
+        "text": "Use $$sec(x)=\\frac{1}cos^$\\left(x\\righ$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -27,8 +27,8 @@
         "dependencies": [
             "a750210trig24a-h2"
         ],
-        "title": "Finding Reciprocals of Fractions",
-        "text": "Remember that instead of dividing $$2$$ fractions, we can multiply the fraction in the numerator by the reciprocal of the fraction in the denominator.",
+        "title": "Divide Fractions",
+        "text": "Dividing by $${\\operatorname{sec}\\left(x\\right)}^2$$ is the same as multiplying by $$cos^2\\left(x\\right)$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -39,21 +39,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$sin\\left(x\\right) sin\\left(x\\right)$$"
+            "$$sin^2\\left(x\\right)$$"
         ],
         "dependencies": [
             "a750210trig24a-h3"
         ],
-        "title": "Use the above to simplify the following",
-        "text": "$$\\left(\\frac{sinx}{cosx}\\right)^2 \\left(\\frac{1}{cosx}\\right)^2$$",
+        "title": "Simplify",
+        "text": "$$\\left(\\fracsin^c\\left(x\\right)os\\left(x\\right)}\\right)^2 cos^2\\left(x\\right)$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "$$\\operatorname{csc}\\left(x\\right) \\operatorname{csc}\\left(x\\right)$$",
+            "$${\\operatorname{csc}\\left(x\\right)}^2$$",
             "$$1$$",
-            "(cos(x)",
-            "$$sin\\left(x\\right) sin\\left(x\\right)$$"
+            "$$cos^2\\left(x\\right)$$",
+            "$$sin^2\\left(x\\right)$$"
         ]
     }
 ]

@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Find a Line",
-        "text": "We want to find a line that passes through $$(0, 42.3)$$ and $$(1, 48.1)$$.",
+        "text": "Use the points $$(0, 42.3)$$ and $$(1, 48.1)$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -16,7 +16,7 @@
             "ad16e82class22a-h1"
         ],
         "title": "Equation for Slope",
-        "text": "$$m=\\frac{y1-y2}{x1-x2}$$",
+        "text": "$$m=\\frac{y2-y1}{x2-x1}$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -33,17 +33,19 @@
             "ad16e82class22a-h2"
         ],
         "title": "Solve the Value",
-        "text": "Following the given equation, what is the slope of the function? Enter answer as a decimal.",
+        "text": "Substitute the two points into the slope formula.",
         "variabilization": {},
         "oer": "",
         "license": "",
         "subHints": [
             {
-                "id": "ad16e82class22a-h3-s1",
+                "id": "ad16e82class22a-h3-h4",
                 "type": "hint",
-                "dependencies": [],
+                "dependencies": [
+                    "ad16e82class22a-h3"
+                ],
                 "title": "Solve the Value",
-                "text": "What is $$\\frac{48.1-42.3}{1-0}$$?",
+                "text": "$$m=\\frac{48.1-42.3}{1-0}=5.8$$ billion dollars per year.",
                 "variabilization": {},
                 "oer": "",
                 "license": ""

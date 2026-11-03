@@ -3,8 +3,8 @@
         "id": "a750210trig25a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Reciprocal Triginometric Identity",
-        "text": "Recall that cscx is equal to $$\\frac{1}{sinx}$$",
+        "title": "Reciprocal Identity",
+        "text": "Use $$csc(x)=\\frac{1}sin^$\\left(x\\righ$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -15,8 +15,8 @@
         "dependencies": [
             "a750210trig25a-h1"
         ],
-        "title": "Trignometric Identities",
-        "text": "Recall that $$sinx sinx$$ + $$cosx cosx=1$$",
+        "title": "Pythagorean Identity",
+        "text": "Use $$sin^2\\left(x\\right)+cos^2\\left(x\\right)=1$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -27,22 +27,21 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$cos\\left(x\\right) cos\\left(x\\right)$$"
+            "$$cos^2\\left(x\\right)$$"
         ],
         "dependencies": [
             "a750210trig25a-h2"
         ],
-        "title": "Use the above to simplify the following",
-        "text": "sin(x)*((1/sin(x)-sin(x))",
+        "title": "Simplify",
+        "text": "$$sin\\left(x\\right) \\left(\\frac{1}sin^s\\left(x\\right)in\\left(x\\right)\\right)$$",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "(cos(x)*cos(x)",
-            "$$1$$",
-            "$$cos\\left(x\\right) cos\\left(x\\right)$$",
             "sec(x)",
-            "$$sin\\left(x\\right) sin\\left(x\\right)$$"
+            "$$1$$",
+            "$$cos^2\\left(x\\right)$$",
+            "$$sin^2\\left(x\\right)$$"
         ]
     }
 ]

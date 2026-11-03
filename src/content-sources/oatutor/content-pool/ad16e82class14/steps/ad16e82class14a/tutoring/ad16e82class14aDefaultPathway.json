@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Equation for Slope",
-        "text": "For $$y=m x+b$$, the coefficient of $$x$$, which is $$m$$, represents the slope.",
+        "text": "Solve the equation for $$y$$, then identify the coefficient of $$x$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -15,23 +15,25 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$\\frac{-2}{3}$$"
+            "$$\\frac{\\left(-2\\right)}{3}$$"
         ],
         "dependencies": [
             "ad16e82class14a-h1"
         ],
         "title": "Finding Slope",
-        "text": "What is the slope of this line? Enter answer as a fraction if necessary. If there is a negative add it before the faction like $$\\frac{-8}{9}$$.",
+        "text": "Enter the slope as a fraction in $$\\frac{a}{b}$$ form.",
         "variabilization": {},
         "oer": "",
         "license": "",
         "subHints": [
             {
-                "id": "ad16e82class14a-h2-s1",
+                "id": "ad16e82class14a-h2-h3",
                 "type": "hint",
-                "dependencies": [],
+                "dependencies": [
+                    "ad16e82class14a-h2"
+                ],
                 "title": "Finding Slope",
-                "text": "$$2x+3y$$ $$=$$ $$6$$ is equivalent to $$y=2-\\frac{2}{3} x$$",
+                "text": "$$2x+3y=6$$ is equivalent to $$y=\\frac{\\left(-2\\right)}{3} x+2$$.",
                 "variabilization": {},
                 "oer": "",
                 "license": ""

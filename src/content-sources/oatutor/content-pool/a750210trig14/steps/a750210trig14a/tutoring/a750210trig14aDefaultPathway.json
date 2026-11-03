@@ -3,8 +3,8 @@
         "id": "a750210trig14a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Unit Circle $$1$$",
-        "text": "The value inside the parenthesis of the sin refers to an angle which also corresponds to a point on the unit circle.",
+        "title": "Locate the Angle",
+        "text": "The angle $$\\frac{\\pi}{6}$$ lies in quadrant I.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -15,8 +15,8 @@
         "dependencies": [
             "a750210trig14a-h1"
         ],
-        "title": "Unit Circle $$2$$",
-        "text": "The angle $$\\frac{\\pi}{6}$$ corresponds to the point $$(\\frac{\\sqrt{3}}{2},\\frac{1}{2})$$ on the unit circle.",
+        "title": "Unit-Circle Point",
+        "text": "The point at $$\\frac{\\pi}{6}$$ is $$(\\frac{\\sqrt{3}}{2},\\frac{1}{2})$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -27,8 +27,8 @@
         "dependencies": [
             "a750210trig14a-h2"
         ],
-        "title": "Definition of Trigonometric Functions",
-        "text": "Letting $$x$$ be an angle, cscx $$=$$ $$\\frac{1}{y}$$, secx $$=$$ $$\\frac{1}{x}$$, and cotx $$=$$ $$\\frac{x}{y}$$.",
+        "title": "Secant Definition",
+        "text": "For a unit-circle point (x,y), $$sec(theta)=\\frac{1}{x}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -36,23 +36,22 @@
     {
         "id": "a750210trig14a-h4",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
-            "$$\\frac{2}{\\sqrt{3}}$$"
+            "$$\\frac{2\\sqrt{3}}{3}$$"
         ],
         "dependencies": [
             "a750210trig14a-h3"
         ],
-        "title": "Combining",
-        "text": "Based on the above information, what is the value of secx at the angle $$\\frac{\\pi}{6}$$.",
+        "title": "Evaluate Secant",
+        "text": "Take the reciprocal of $$\\frac{\\sqrt{3}}{2}$$, then rationalize.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "$$\\frac{2}{\\sqrt{3}}$$",
-            "$$\\frac{-2}{\\sqrt{3}}$$",
-            "$$\\frac{2}{\\sqrt{3}}$$"
+            "$$\\frac{2\\sqrt{3}}{3}$$",
+            "$$\\frac{\\left(-2\\sqrt{3}\\right)}{3}$$"
         ]
     }
 ]

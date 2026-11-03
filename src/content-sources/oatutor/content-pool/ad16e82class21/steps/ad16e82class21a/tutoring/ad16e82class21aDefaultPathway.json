@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Equation for Slope",
-        "text": "$$m=\\frac{y1-y2}{x1-x2}$$",
+        "text": "$$m=\\frac{y2-y1}{x2-x1}$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -15,29 +15,30 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$-2733.33|2733.33|2500$$"
+            "$$-2733.33$$"
         ],
         "dependencies": [
             "ad16e82class21a-h1"
         ],
         "title": "Solve the Value",
-        "text": "Following the given equation, what is the slope of the function that determines the value V at the end of $$t$$ years?",
+        "text": "Use the points $$(0,20500)$$ and $$(3,12300)$$. What is the slope?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
             "$$-2733.33$$",
-            "$$-2733.33|2733.33|2500$$",
-            "$$2500$$",
-            "$$2733.33$$"
+            "$$2733.33$$",
+            "$$2500$$"
         ],
         "subHints": [
             {
-                "id": "ad16e82class21a-h2-s1",
+                "id": "ad16e82class21a-h2-h3",
                 "type": "hint",
-                "dependencies": [],
+                "dependencies": [
+                    "ad16e82class21a-h2"
+                ],
                 "title": "Solve the Value",
-                "text": "What is $$\\frac{12300-20500}{3}=-2733.33$$",
+                "text": "$$m=\\frac{12300-20500}{3-0}=\\frac{\\left(-8200\\right)}{3}$$, which is approximately $$-2733.33$$ dollars per year.",
                 "variabilization": {},
                 "oer": "",
                 "license": ""

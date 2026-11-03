@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Equation for Slope",
-        "text": "$$m=\\frac{y1-y2}{x1-x2}$$",
+        "text": "$$m=\\frac{y2-y1}{x2-x1}$$",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -21,17 +21,19 @@
             "ad16e82class7a-h1"
         ],
         "title": "Calculate the Slope",
-        "text": "What is the slope of this line? Enter the answer as a fraction.",
+        "text": "Calculate the slope. Enter a fraction in $$\\frac{a}{b}$$ form.",
         "variabilization": {},
         "oer": "",
         "license": "",
         "subHints": [
             {
-                "id": "ad16e82class7a-h2-s1",
+                "id": "ad16e82class7a-h2-h3",
                 "type": "hint",
-                "dependencies": [],
+                "dependencies": [
+                    "ad16e82class7a-h2"
+                ],
                 "title": "How to Calculate the Slope",
-                "text": "$$m=\\frac{9-5}{1+8}=\\frac{4}{9}$$",
+                "text": "$$m=\\frac{5-9}{\\left(-8-1\\right)}=\\frac{\\left(-4\\right)}{\\left(-9\\right)}=\\frac{4}{9}$$",
                 "variabilization": {},
                 "oer": "",
                 "license": ""
@@ -39,13 +41,13 @@
         ]
     },
     {
-        "id": "ad16e82class7a-h3",
+        "id": "ad16e82class7a-h4",
         "type": "hint",
         "dependencies": [
-            "ad16e82class7a-h2"
+            "ad16e82class7a-h2-h3"
         ],
         "title": "Explanation",
-        "text": "Since $$m>0$$, the line is increasing.",
+        "text": "Because $$m>0$$, the line is increasing.",
         "variabilization": {},
         "oer": "",
         "license": ""
