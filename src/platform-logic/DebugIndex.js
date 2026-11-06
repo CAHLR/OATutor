@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import Button from "@material-ui/core/Button";
+import MenuItem from "@material-ui/core/MenuItem";
 import TextField from "@material-ui/core/TextField";
 import BrandLogoNav from "@components/BrandLogoNav";
 import { coursePlans } from "../config/config.js";
@@ -63,14 +64,23 @@ const allProblems = directory.flatMap((course) =>
 );
 
 export default function DebugIndex({ history }) {
+    const [selectedCourse, setSelectedCourse] = useState("");
     const [selectedLessonId, setSelectedLessonId] = useState("all");
+    const [selectedTopic, setSelectedTopic] = useState("all");
     const [query, setQuery] = useState("");
     const [page, setPage] = useState(0);
 
+    const course = directory.find((entry) => entry.course === selectedCourse);
+    const lessons = course?.lessons || [];
+    const topics = [...new Set(lessons.map((lesson) => lesson.topic))].sort();
+
     const problems = useMemo(() => {
+        if (!selectedCourse) return [];
         const normalizedQuery = query.trim().toLowerCase();
         return allProblems.filter((problem) => {
+            const matchesCourse = problem.course === selectedCourse;
             const matchesLesson = selectedLessonId === "all" || problem.lesson.id === selectedLessonId;
+            const matchesTopic = selectedTopic === "all" || problem.lesson.topic === selectedTopic;
             const matchesQuery = !normalizedQuery || [
                 problem.id,
                 problem.title,
@@ -78,13 +88,19 @@ export default function DebugIndex({ history }) {
                 problem.lesson.name,
                 problem.lesson.topic,
             ].some((value) => value.toLowerCase().includes(normalizedQuery));
-            return matchesLesson && matchesQuery;
+            return matchesCourse && matchesLesson && matchesTopic && matchesQuery;
         });
-    }, [selectedLessonId, query]);
+    }, [selectedCourse, selectedLessonId, selectedTopic, query]);
 
     useEffect(() => {
         setPage(0);
-    }, [selectedLessonId, query]);
+    }, [selectedCourse, selectedLessonId, selectedTopic, query]);
+
+    const selectCourse = (event) => {
+        setSelectedCourse(event.target.value);
+        setSelectedLessonId("all");
+        setSelectedTopic("all");
+    };
 
     const pageCount = Math.max(1, Math.ceil(problems.length / PAGE_SIZE));
     const currentPage = Math.min(page, pageCount - 1);
@@ -104,30 +120,31 @@ export default function DebugIndex({ history }) {
                 <div style={{ maxWidth: 1240, margin: "0 auto", fontSize: 24, fontWeight: 700 }}>Debug Links Directory</div>
             </div>
 
-            <main style={{ maxWidth: 1240, margin: "0 auto", padding: "28px 32px", display: "grid", gridTemplateColumns: "280px minmax(0, 1fr)", gap: 24 }}>
-                <aside style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: 12, padding: 16, height: "fit-content", boxShadow: "0 1px 2px rgba(16,24,40,0.04)" }}>
-                    <div style={{ fontSize: 13, color: "#718096", fontWeight: 700, textTransform: "uppercase", letterSpacing: 0.7, marginBottom: 10 }}>Content directory</div>
-                    <button type="button" onClick={() => setSelectedLessonId("all")} style={navStyle(selectedLessonId === "all")}>All debug problems <span>{allProblems.length}</span></button>
-                    {directory.map((course) => (
-                        <div key={course.course} style={{ marginTop: 18 }}>
-                            <div style={{ fontWeight: 700, fontSize: 14, marginBottom: 6 }}>{course.course}</div>
-                            {course.lessons.map((lesson) => (
-                                <button key={lesson.id} type="button" onClick={() => setSelectedLessonId(lesson.id)} style={navStyle(selectedLessonId === lesson.id)}>
-                                    <span><span style={{ display: "block", fontWeight: 600 }}>{lesson.name}</span><span style={{ display: "block", marginTop: 2, fontSize: 12, color: "#718096" }}>{lesson.topic}</span></span>
-                                    <span>{lesson.problems.length}</span>
-                                </button>
-                            ))}
-                        </div>
-                    ))}
-                </aside>
-
+            <main style={{ maxWidth: 1240, margin: "0 auto", padding: "28px 32px" }}>
                 <section>
+                    <div style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: 12, padding: 20, marginBottom: 24, boxShadow: "0 1px 2px rgba(16,24,40,0.04)" }}>
+                        <div style={{ fontSize: 13, color: "#64748B", fontWeight: 700, letterSpacing: 0.6, textTransform: "uppercase", marginBottom: 14 }}>Choose QA scope</div>
+                        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 16 }}>
+                            <TextField select required label="Course" value={selectedCourse} onChange={selectCourse} variant="outlined" size="small">
+                                <MenuItem value=""><em>Select a course</em></MenuItem>
+                                {directory.map((entry) => <MenuItem key={entry.course} value={entry.course}>{entry.course}</MenuItem>)}
+                            </TextField>
+                            <TextField select label="Lesson" value={selectedLessonId} onChange={(event) => setSelectedLessonId(event.target.value)} variant="outlined" size="small" disabled={!selectedCourse}>
+                                <MenuItem value="all">All lessons</MenuItem>
+                                {lessons.map((lesson) => <MenuItem key={lesson.id} value={lesson.id}>{lesson.name} ({lesson.problems.length})</MenuItem>)}
+                            </TextField>
+                            <TextField select label="Topic" value={selectedTopic} onChange={(event) => setSelectedTopic(event.target.value)} variant="outlined" size="small" disabled={!selectedCourse}>
+                                <MenuItem value="all">All topics</MenuItem>
+                                {topics.map((topic) => <MenuItem key={topic} value={topic}>{topic}</MenuItem>)}
+                            </TextField>
+                            <TextField label="Search title or Problem ID" value={query} onChange={(event) => setQuery(event.target.value)} variant="outlined" size="small" disabled={!selectedCourse} />
+                        </div>
+                    </div>
                     <div style={{ display: "flex", alignItems: "end", justifyContent: "space-between", gap: 16, marginBottom: 18, flexWrap: "wrap" }}>
                         <div>
                             <h1 style={{ fontSize: 22, margin: 0 }}>Problems</h1>
-                            <div style={{ marginTop: 4, color: "#718096", fontSize: 14 }}>{problems.length} available in this QA scope</div>
+                            <div style={{ marginTop: 4, color: "#718096", fontSize: 14 }}>{selectedCourse ? `${selectedCourse} · ${problems.length} available in this QA scope` : "Select a course to browse its debug links."}</div>
                         </div>
-                        <TextField label="Search title, course, or Problem ID" value={query} onChange={(event) => setQuery(event.target.value)} variant="outlined" size="small" style={{ minWidth: 280 }} />
                     </div>
 
                     <div style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: 12, overflow: "hidden", boxShadow: "0 1px 2px rgba(16,24,40,0.04)" }}>
@@ -142,7 +159,7 @@ export default function DebugIndex({ history }) {
                                 <Button variant="contained" color="primary" onClick={() => history.push(`/debug/${problem.id}`)}>Open debug view</Button>
                             </div>
                         ))}
-                        {!problems.length && <div style={{ padding: 28, color: "#718096" }}>No matching debug problems.</div>}
+                        {!problems.length && <div style={{ padding: 28, color: "#718096" }}>{selectedCourse ? "No matching debug problems." : "Choose a course above to view its debug links."}</div>}
                     </div>
                     {problems.length > PAGE_SIZE && (
                         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: 16, gap: 12 }}>
@@ -157,11 +174,4 @@ export default function DebugIndex({ history }) {
             </main>
         </div>
     );
-}
-
-function navStyle(active) {
-    return {
-        width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center", textAlign: "left", padding: "9px 10px", border: 0,
-        borderRadius: 7, background: active ? "#E6F0F7" : "transparent", color: active ? "#1E5A7A" : "#344054", cursor: "pointer", fontSize: 13,
-    };
 }
