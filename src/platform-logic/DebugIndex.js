@@ -1,50 +1,62 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
 import BrandLogoNav from "@components/BrandLogoNav";
+import { coursePlans } from "../config/config.js";
+import { CONTENT_SOURCE } from "@common/global-config";
 
-// This is an intentionally small visual prototype. In production, Tooling can
-// generate this metadata alongside each Debug Link from the source sheet.
-const sampleCatalog = [
-    {
-        course: "Data 8 Discussion Worksheets",
-        lessons: [
-            {
-                id: "7Odjp3Xo-WDyk-UDcQuiclaW",
-                name: "Lesson Disc3",
-                topic: "Data types and visualizations",
-                problems: [
-                    { id: "ace4be0A1-diag-P05", title: "Polynomial expansion: Find A", steps: 4 },
-                    { id: "ace918bnlaws10", title: "Data table selection", steps: 1 },
-                ],
-            },
-            {
-                id: "0dJYDToW-hati-SjwIXGncTg",
-                name: "Lesson Disc4",
-                topic: "Visualizations",
-                problems: [
-                    { id: "ace788cLimitLaw5", title: "Limit laws", steps: 2 },
-                ],
-            },
-        ],
-    },
-    {
-        course: "OpenStax Statistics",
-        lessons: [
-            {
-                id: "statistics-hypothesis-testing",
-                name: "Hypothesis Testing",
-                topic: "Null hypotheses",
-                problems: [
-                    { id: "acd9137measure33", title: "Calculate null hypothesis", steps: 1 },
-                    { id: "statistics-pvalue-01", title: "Interpret a p-value", steps: 3 },
-                ],
-            },
-        ],
-    },
-];
+// DebugPlatform reads this same generated content pool. Building the directory
+// from it guarantees every entry has a currently loadable /debug/:problemID route.
+const problemPool = require(`@generated/processed-content-pool/${CONTENT_SOURCE}.json`);
 
-const allProblems = sampleCatalog.flatMap((course) =>
+const toLabel = (value) => String(value || "")
+    .replace(/[_&]+/g, " ")
+    .replace(/\b\w/g, (letter) => letter.toUpperCase());
+
+const topicFor = (lesson) => {
+    if (lesson?.topics) return lesson.topics;
+    const objectives = Object.keys(lesson?.learningObjectives || {});
+    return objectives.length ? objectives.map(toLabel).join(", ") : "No topic specified";
+};
+
+export const buildDebugDirectory = (plans, pool) => {
+    const problemsByLesson = new Map();
+
+    pool.forEach((problem) => {
+        if (!problem?.id || !problem.courseName) return;
+        const key = `${problem.courseName}::${problem.lessonId || problem.lesson || "unassigned"}`;
+        if (!problemsByLesson.has(key)) problemsByLesson.set(key, []);
+        problemsByLesson.get(key).push(problem);
+    });
+
+    return plans
+        .filter((course) => !course.editor)
+        .map((course) => {
+            const lessons = (course.lessons || []).map((lesson) => {
+                const problems = (problemsByLesson.get(`${course.courseName}::${lesson.id}`) || [])
+                    .map((problem) => ({
+                        id: problem.id,
+                        title: problem.title || problem.id,
+                        steps: Array.isArray(problem.steps) ? problem.steps.length : 0,
+                    }))
+                    .sort((a, b) => a.title.localeCompare(b.title));
+
+                return {
+                    id: lesson.id,
+                    name: lesson.displayName || lesson.name || lesson.id,
+                    topic: topicFor(lesson),
+                    problems,
+                };
+            }).filter((lesson) => lesson.problems.length);
+
+            return { course: course.courseName, lessons };
+        })
+        .filter((course) => course.lessons.length);
+};
+
+const directory = buildDebugDirectory(coursePlans, problemPool);
+const PAGE_SIZE = 50;
+const allProblems = directory.flatMap((course) =>
     course.lessons.flatMap((lesson) =>
         lesson.problems.map((problem) => ({ ...problem, course: course.course, lesson }))
     )
@@ -53,16 +65,32 @@ const allProblems = sampleCatalog.flatMap((course) =>
 export default function DebugIndex({ history }) {
     const [selectedLessonId, setSelectedLessonId] = useState("all");
     const [query, setQuery] = useState("");
+    const [page, setPage] = useState(0);
 
     const problems = useMemo(() => {
         const normalizedQuery = query.trim().toLowerCase();
         return allProblems.filter((problem) => {
             const matchesLesson = selectedLessonId === "all" || problem.lesson.id === selectedLessonId;
-            const matchesQuery = !normalizedQuery || [problem.id, problem.title, problem.lesson.name, problem.lesson.topic]
-                .some((value) => value.toLowerCase().includes(normalizedQuery));
+            const matchesQuery = !normalizedQuery || [
+                problem.id,
+                problem.title,
+                problem.course,
+                problem.lesson.name,
+                problem.lesson.topic,
+            ].some((value) => value.toLowerCase().includes(normalizedQuery));
             return matchesLesson && matchesQuery;
         });
     }, [selectedLessonId, query]);
+
+    useEffect(() => {
+        setPage(0);
+    }, [selectedLessonId, query]);
+
+    const pageCount = Math.max(1, Math.ceil(problems.length / PAGE_SIZE));
+    const currentPage = Math.min(page, pageCount - 1);
+    const visibleProblems = problems.slice(currentPage * PAGE_SIZE, (currentPage + 1) * PAGE_SIZE);
+    const firstProblem = problems.length ? currentPage * PAGE_SIZE + 1 : 0;
+    const lastProblem = Math.min((currentPage + 1) * PAGE_SIZE, problems.length);
 
     return (
         <div style={{ minHeight: "100vh", background: "#F7FAFC", color: "#243B53" }}>
@@ -73,19 +101,14 @@ export default function DebugIndex({ history }) {
             </header>
 
             <div style={{ background: "#243B53", color: "#F8FAFC", padding: "22px 32px" }}>
-                <div style={{ maxWidth: 1240, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 20, flexWrap: "wrap" }}>
-                    <div>
-                        <div style={{ fontSize: 24, fontWeight: 700 }}>Debug Index</div>
-                    </div>
-                    <div style={{ border: "1px solid #78909C", color: "#E2E8F0", borderRadius: 14, padding: "5px 10px", fontSize: 12, fontWeight: 700 }}>PROTOTYPE</div>
-                </div>
+                <div style={{ maxWidth: 1240, margin: "0 auto", fontSize: 24, fontWeight: 700 }}>Debug Links Directory</div>
             </div>
 
             <main style={{ maxWidth: 1240, margin: "0 auto", padding: "28px 32px", display: "grid", gridTemplateColumns: "280px minmax(0, 1fr)", gap: 24 }}>
                 <aside style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: 12, padding: 16, height: "fit-content", boxShadow: "0 1px 2px rgba(16,24,40,0.04)" }}>
                     <div style={{ fontSize: 13, color: "#718096", fontWeight: 700, textTransform: "uppercase", letterSpacing: 0.7, marginBottom: 10 }}>Content directory</div>
                     <button type="button" onClick={() => setSelectedLessonId("all")} style={navStyle(selectedLessonId === "all")}>All debug problems <span>{allProblems.length}</span></button>
-                    {sampleCatalog.map((course) => (
+                    {directory.map((course) => (
                         <div key={course.course} style={{ marginTop: 18 }}>
                             <div style={{ fontWeight: 700, fontSize: 14, marginBottom: 6 }}>{course.course}</div>
                             {course.lessons.map((lesson) => (
@@ -104,14 +127,14 @@ export default function DebugIndex({ history }) {
                             <h1 style={{ fontSize: 22, margin: 0 }}>Problems</h1>
                             <div style={{ marginTop: 4, color: "#718096", fontSize: 14 }}>{problems.length} available in this QA scope</div>
                         </div>
-                        <TextField label="Search title or Problem ID" value={query} onChange={(event) => setQuery(event.target.value)} variant="outlined" size="small" style={{ minWidth: 260 }} />
+                        <TextField label="Search title, course, or Problem ID" value={query} onChange={(event) => setQuery(event.target.value)} variant="outlined" size="small" style={{ minWidth: 280 }} />
                     </div>
 
                     <div style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: 12, overflow: "hidden", boxShadow: "0 1px 2px rgba(16,24,40,0.04)" }}>
                         <div style={{ display: "grid", gridTemplateColumns: "minmax(240px, 1fr) 170px 90px 160px", gap: 16, padding: "12px 20px", background: "#F1F5F9", color: "#64748B", fontWeight: 700, fontSize: 12, textTransform: "uppercase", letterSpacing: 0.6 }}>
                             <div>Problem</div><div>Lesson</div><div>Steps</div><div />
                         </div>
-                        {problems.map((problem) => (
+                        {visibleProblems.map((problem) => (
                             <div key={problem.id} style={{ display: "grid", gridTemplateColumns: "minmax(240px, 1fr) 170px 90px 160px", gap: 16, alignItems: "center", padding: "18px 20px", borderTop: "1px solid #E2E8F0" }}>
                                 <div><div style={{ fontWeight: 700 }}>{problem.title}</div><div style={{ fontSize: 12, color: "#718096", marginTop: 4 }}>{problem.id}</div></div>
                                 <div style={{ fontSize: 14 }}>{problem.lesson.name}<div style={{ fontSize: 12, color: "#718096", marginTop: 3 }}>{problem.lesson.topic}</div></div>
@@ -121,9 +144,15 @@ export default function DebugIndex({ history }) {
                         ))}
                         {!problems.length && <div style={{ padding: 28, color: "#718096" }}>No matching debug problems.</div>}
                     </div>
-                    <div style={{ marginTop: 14, padding: "12px 14px", borderRadius: 8, background: "#EEF6FF", color: "#35506B", fontSize: 13 }}>
-                        Prototype note: production data would come from a Tooling-generated content manifest, not these sample rows.
-                    </div>
+                    {problems.length > PAGE_SIZE && (
+                        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: 16, gap: 12 }}>
+                            <div style={{ color: "#718096", fontSize: 13 }}>Showing {firstProblem}–{lastProblem} of {problems.length}</div>
+                            <div style={{ display: "flex", gap: 8 }}>
+                                <Button variant="outlined" disabled={currentPage === 0} onClick={() => setPage(currentPage - 1)}>Previous</Button>
+                                <Button variant="outlined" disabled={currentPage === pageCount - 1} onClick={() => setPage(currentPage + 1)}>Next</Button>
+                            </div>
+                        </div>
+                    )}
                 </section>
             </main>
         </div>
