@@ -7,5 +7,8 @@
     "stepTitle": "B2) What is line 2?",
     "stepBody": "See image. Only type what is in the blank, do not include what is provided. Do not use spaces unless absolutely necessary. Please use double quotes (\" \"), instead of single quotes (' ')##figure3.gif## ",
     "answerType": "string",
-    "variabilization": {}
+    "variabilization": {},
+    "figureAlts": {
+        "figure3.gif": "Milena wants to use a regression line to predict the battery life of a laptop given the price. Define the fitted_value function below which takes in the following arguments: tbl, a table with the data points used to generate the regression line; x, the column name for the x variable; y, the column name for the y variable; x0, the x value we want to make a prediction at. The function should return a float by using a regression line to predict a y-value for the given x-value. Assume the slope(tbl, x, y) and intercept(tbl, x, y) functions are defined as in lecture. Defines the function fitted_value with arguments tbl, x, y, and x0. Inside the function: m is assigned a blank, b is assigned a blank, followed by a blank line."
+    }
 }

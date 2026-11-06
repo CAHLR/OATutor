@@ -8,6 +8,9 @@
     "stepBody": "##figure2.gif## ",
     "answerType": "string",
     "variabilization": {},
+    "figureAlts": {
+        "figure2.gif": "A scatter plot with Mean Area on the x-axis ranging from 0 to 1800 and Mean Compactness on the y-axis ranging from 0.05 to 0.30. Blue dots represent benign = 1, and red crosses represent benign = 0. Blue dots are mostly clustered on the left side of the plot, while red crosses are clustered on the right side. A legend indicates the color and symbol for each class."
+    },
     "choices": [
         "The decision boundary is the line that minimizes the total Euclidean distance between all benign points and all malignant points, splitting the data into two $$equal-sized$$ groups.",
         "The decision boundary is drawn by connecting the $$5$$ nearest neighbors of every point in the dataset and tracing the midpoints between them.",

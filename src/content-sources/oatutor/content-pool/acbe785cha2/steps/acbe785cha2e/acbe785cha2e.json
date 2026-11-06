@@ -7,5 +7,8 @@
     "stepTitle": "Part D: What is Blank 2?",
     "stepBody": "Only type what is in the blank, do not include what is provided. Do not use spaces unless absolutely necessary. Please use double quotes (\" \"), instead of single quotes (' ').##figure2.gif## ",
     "answerType": "string",
-    "variabilization": {}
+    "variabilization": {},
+    "figureAlts": {
+        "figure2.gif": "Complete the function flip_ten, which takes no arguments and does the following: simulates flipping a fair coin 10 times, computes and returns one simulated test statistic based on the test statistic chosen in the previous question. A fill-in-the-blank code block defining the function flip_ten. Inside, faces is set to make_array with \"Heads\" and \"Tails\". flips is assigned Blank 1, num_heads is assigned Blank 2, and the function returns Blank 3."
+    }
 }

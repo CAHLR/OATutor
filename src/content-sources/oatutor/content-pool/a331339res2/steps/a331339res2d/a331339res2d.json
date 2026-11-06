@@ -7,5 +7,8 @@
     "stepTitle": "B) What is blank 1?",
     "stepBody": "See image. Only type what is in the blank, do not include what is provided. Do not use spaces unless absolutely necessary. Please use double quotes (\" \"), instead of single quotes (' ').##figure2.gif## ",
     "answerType": "string",
-    "variabilization": {}
+    "variabilization": {},
+    "figureAlts": {
+        "figure2.gif": "(b) Noah decides to write a function which produces one bootstrapped estimate of the correlation between Loudness and Points. Define the one_relationship function below which takes in the following arguments: tbl is a table that contains a sample and has the same columns as noise. x_col is the column name for the x variable. y_col is the column name for the y variable. The function should return one bootstrapped estimate of the correlation coefficient r. You can assume that you have access to the function correlation(x, y), which returns the correlation between arrays x and y. Defines the function one_relationship with arguments tbl, x_col, and y_col. Inside the function: bootstrap is assigned a blank, x_values is assigned a blank, y_values is assigned a blank, and the function returns a blank."
+    }
 }

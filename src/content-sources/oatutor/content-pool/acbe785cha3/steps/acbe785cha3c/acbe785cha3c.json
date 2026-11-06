@@ -7,5 +7,8 @@
     "stepTitle": "Part B: What is Blank 2?",
     "stepBody": "Only type what is in the blank, do not include what is provided. Do not use spaces unless absolutely necessary. Please use double quotes (\" \"), instead of single quotes (' ').##figure2.gif## ",
     "answerType": "string",
-    "variabilization": {}
+    "variabilization": {},
+    "figureAlts": {
+        "figure2.gif": "(b) The roll function draws an empirical histogram of the number of results that are k or larger, when n fair 6-sided dice are rolled. For example, if k equals 5, n equals 3, and rolling three dice results in the faces {6, 4, 5}, then two of the three dice are 5 or larger (the 6 and the 5). Fill in the blanks to complete its implementation. A fill-in-the-blank code block defining the function roll with arguments k, n, and trials. Inside the function: outcomes is set to make_array, possible_results is assigned Blank 1, a for loop iterates over Blank 2, rolls is assigned Blank 3, and outcomes is updated with Blank 4. The function ends with a histogram plot of outcomes using Table().with_column and np.arange for bins."
+    }
 }

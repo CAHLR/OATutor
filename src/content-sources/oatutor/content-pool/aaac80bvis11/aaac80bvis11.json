@@ -7,5 +7,9 @@
     "license": "",
     "lesson": "Disc4",
     "lessonId": "0dJYDToW-hati-SjwIXGncTg",
-    "courseName": "Data 8 Discussion Worksheets"
+    "courseName": "Data 8 Discussion Worksheets",
+    "figureAlts": {
+        "figure1.gif": "The image shows a table related to insurance beneficiaries covered by a particular company. The table is titled insurance and contains five columns: age, bmi, smoker, region, and cost. Age is the age of the beneficiary. BMI is the Body Mass Index of the beneficiary. Smoker indicates whether the beneficiary smokes. Region is the region of the United States where the beneficiary lives. Cost is the total amount in medical costs that the insurance company paid for this beneficiary last year. The table includes three rows: Row 1: 25, 20.8, no, southwest, 3208.79; Row 2: 25, 30.2, yes, southwest, 33900.71; Row 3: 62, 32.1, no, northeast, 1355.50. There are 20198 rows omitted.",
+        "figure2.gif": "(b) Write a function that takes an age as an argument, and returns the average BMI among all beneficiaries of that age. A fill-in-the-blank code block defining the function average_bmi with one argument, age. Inside the function: right_age is set to insurance.where with two blanks, bmis is set to right_age with a method call containing a blank, and avg is calculated as the sum of bmis divided by the length of bmis. The function returns a blank."
+    }
 }

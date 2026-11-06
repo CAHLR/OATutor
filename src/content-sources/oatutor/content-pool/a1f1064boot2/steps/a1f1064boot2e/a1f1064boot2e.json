@@ -8,5 +8,8 @@
     "stepBody": "See image. Only type what is in the blank, do not include what is provided. Do not use spaces unless absolutely necessary. Please use double quotes (\" \"), instead of single quotes (' ').##figure1.gif## ",
     "answerType": "string",
     "variabilization": {},
+    "figureAlts": {
+        "figure1.gif": "The image shows a fill-in-the-blank code block for conducting 10,000 bootstrap resamples of data, calculating the proportion of students in each resample that drink less than 3 liters of water per day, and plotting the distribution of those proportions. The code includes six blanks to fill in: 1. proportions = Blank 1 2. for i in Blank 2: 3. resampled_table = Blank 3 4. resampled_statistic = Blank 4 5. proportions = Blank 5 6. proportions_table. Blank 6"
+    },
     "answerLatex": "$$\\operatorname{make_{array}}\\left(\\right)$$"
 }

@@ -8,6 +8,9 @@
     "stepBody": "##figure1.gif## ",
     "answerType": "string",
     "variabilization": {},
+    "figureAlts": {
+        "figure1.gif": "Scatter plot showing Mean Compactness versus Mean Area. Blue dots represent benign tumors with a value of 1, and red plus signs represent non-benign tumors with a value of 0. A yellow triangle marks a new tumor point at approximately (600, 0.15) on the plot."
+    },
     "answerLatex": "Compute the Euclidean distance between the new point and all the points in the dataset, then sort data in increasing order based on calculated distance, then take the top $$5$$ neighbors and take a majority vote.",
     "choices": [
         "Compute the Euclidean distance between the new point and all the points in the dataset, then sort data in increasing order based on calculated distance, then take the top $$5$$ neighbors and take a majority vote.",

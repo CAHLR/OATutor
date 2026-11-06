@@ -7,5 +7,8 @@
     "stepTitle": "E) What is blank 3?",
     "stepBody": "See image. Only type what is in the blank, do not include what is provided. Do not use spaces unless absolutely necessary. Please use double quotes (\" \"), instead of single quotes (' ').##figure3.gif## ",
     "answerType": "string",
-    "variabilization": {}
+    "variabilization": {},
+    "figureAlts": {
+        "figure3.gif": "The image shows a fill-in-the-blank code block for conducting 10,000 bootstrap resamples of data, calculating the proportion of students in each resample that drink less than 3 liters of water per day, and plotting the distribution of those proportions. The code includes six blanks labeled Blank 1 to Blank 6. The relevant line for Blank 3 is: \"resampled_table = ________________________________\"."
+    }
 }

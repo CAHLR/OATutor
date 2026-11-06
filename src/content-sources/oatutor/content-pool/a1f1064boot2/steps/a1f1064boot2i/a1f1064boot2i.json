@@ -8,5 +8,8 @@
     "stepBody": "See image. Only type what is in the blank, do not include what is provided. Do not use spaces unless absolutely necessary. Please use double quotes (\" \"), instead of single quotes (' ').##figure5.gif## ",
     "answerType": "string",
     "variabilization": {},
+    "figureAlts": {
+        "figure5.gif": "The image shows a fill-in-the-blank code block for conducting 10,000 bootstrap resamples of data, calculating the proportion of students in each resample that drink less than 3 liters of water per day, and plotting the distribution of those proportions. The code includes six blanks labeled Blank 1 to Blank 6. The relevant line for Blank 5 is: proportions = ________________________________."
+    },
     "answerLatex": "$$np.append(proportions,resampled_{statistic})$$"
 }

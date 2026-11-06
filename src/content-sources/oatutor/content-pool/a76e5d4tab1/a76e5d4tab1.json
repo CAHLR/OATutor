@@ -7,5 +7,8 @@
     "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
     "lesson": "Disc5",
     "lessonId": "7IYYDN35-tPVp-P9gwfgQ1wz",
-    "courseName": "Data 8 Discussion Worksheets"
+    "courseName": "Data 8 Discussion Worksheets",
+    "figureAlts": {
+        "figure1.gif": "The image contains two tables and a matching exercise. The first table, titled \"chocolates,\" has columns: Color, Shape, Amount, and Price ($). Row 1: Dark, Round, 4, 1.30; Row 2: Milk, Rectangular, 6, 1.20; Row 3: White, Rectangular, 12, 2.00; Row 4: Dark, Round, 7, 1.75; Row 5: Milk, Rectangular, 9, 1.40; Row 6: Milk, Round, 2, 1.00. The second table, titled \"nutrition,\" has columns: Type and Calories. Row 1: Dark, 120; Row 2: Milk, 130; Row 3: White, 115; Row 4: Ruby, 120. Below the tables, there is a matching exercise with a list of function calls and a list of table descriptions. The function calls are labeled A to F: A is chocolates.group(\"Shape\"), B is chocolates.group(\"Shape\", max), C is chocolates.group(make_array(\"Shape\", \"Color\"), max), D is chocolates.pivot(\"Color\", \"Shape\", \"Price ($)\", max), E is chocolates.join(\"Color\", nutrition, \"Type\"), F is chocolates.group(make_array(\"Shape\", \"Color\")). The table descriptions are numbered 1 to 6 with columns and number of"
+    }
 }
