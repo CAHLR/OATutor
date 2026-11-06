@@ -6,7 +6,7 @@ const REGEX_YOUTUBE = /^((?:https?:)?\/\/)?((?:www|m)\.)?(youtube(-nocookie)?\.c
 export default class RenderMedia extends React.Component {
     render() {
         const url = this.props.url?.toString() || ""
-        const { problemID = "", contentSource } = this.props
+        const { problemID = "", contentSource, alt } = this.props
 
         const yt_match = url.match(REGEX_YOUTUBE)
         if (yt_match) {
@@ -34,6 +34,6 @@ export default class RenderMedia extends React.Component {
         }
 
         return <ZoomImage src={`${process.env.PUBLIC_URL}/static/images/figures/${contentSource}/${problemID}/${url}`}
-                          alt={`${problemID} figure`} style={{ width: "100%", objectFit: "scale-down" }}/>
+                          alt={alt || `${problemID} figure`} style={{ width: "100%", objectFit: "scale-down" }}/>
     }
 }

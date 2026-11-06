@@ -294,7 +294,7 @@ class HintSystem extends React.Component {
                                                     ),
                                                     seed
                                                 ),
-                                                this.context
+                                                this.context, hint.figureAlts ?? this.props.step?.figureAlts
                                             )}
                                         </strong>
                                         <br />
@@ -311,7 +311,7 @@ class HintSystem extends React.Component {
                                         ),
                                         seed
                                     ),
-                                    this.context
+                                    this.context, hint.figureAlts ?? this.props.step?.figureAlts
                                 )}
                                 {hint.type === "scaffold" ? (
                                     <div>
