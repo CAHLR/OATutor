@@ -1463,8 +1463,12 @@ class Problem extends React.Component {
             ? 'Off'
             : this.props.lesson?.chat_display_mode || 'Off';
         const isMobile = this.props.responsive?.isMobile ?? false;
+        const debugCenteredLayout = Boolean(this.props.debugCenteredLayout);
         const showHintPanel = !hideHintPanel && chatDisplayMode !== 'Avatar';
-        const showSideHintPanel = showHintPanel && !isMobile;
+        const showSideHintPanel =
+            showHintPanel &&
+            !isMobile &&
+            !debugCenteredLayout;
         const avatarHintStepIndex = this.state.avatarHintStepIndex ?? this.getAvatarHintTargetStepIndex();
         const avatarHintPayload = this.state.avatarHintsByStep[avatarHintStepIndex];
         const avatarHints = avatarHintPayload?.hints || [];
@@ -1506,7 +1510,7 @@ class Problem extends React.Component {
                     <Grid
                         item
                         xs={12}
-                        md={hideHintPanel || isMobile ? 12 : (drawerOpen ? 8 : 7)}
+                        md={hideHintPanel || isMobile || debugCenteredLayout ? 12 : (drawerOpen ? 8 : 7)}
                     >
                         <div className={classes.prompt} role={"banner"}>
                             <Card className={classes.titleCard}>
@@ -1565,7 +1569,7 @@ class Problem extends React.Component {
                             <Spacer height={8} />
                         </div>
                     <div width="100%">
-                        {this.context.debug ? (
+                        {this.context.debug && this.props.showDebugNavigation ? (
                             <Grid container spacing={0}>
                                 <Grid item xs={2} key={0} />
                                 <Grid item xs={2} key={1}>
@@ -1580,9 +1584,6 @@ class Problem extends React.Component {
                                             className={classes.button}
                                             style={{ width: "100%" }}
                                             size="small"
-                                            onClick={() =>
-                                                (this.context.needRefresh = true)
-                                            }
                                         >
                                             {translate('problem.PreviousProblem')}
                                         </Button>
@@ -1601,9 +1602,6 @@ class Problem extends React.Component {
                                             className={classes.button}
                                             style={{ width: "100%" }}
                                             size="small"
-                                            onClick={() =>
-                                                (this.context.needRefresh = true)
-                                            }
                                         >
                                            {translate('problem.NextProblem')}
                                         </Button>
@@ -1615,6 +1613,12 @@ class Problem extends React.Component {
                             null
                         )}
                         </div>
+
+                        {debugCenteredLayout && showHintPanel && !isMobile && (
+                            <div style={{ marginBottom: 16 }}>
+                                {this.renderStandardHintPanel()}
+                            </div>
+                        )}
 
                         <div role={"main"}>
                             {problem.steps.map((step, idx) => {
@@ -1726,7 +1730,7 @@ class Problem extends React.Component {
                         {showHintPanel && isMobile && this.renderMobileHintSheet()}
 
                         <div width="100%">
-                            {this.context.debug ? (
+                            {this.context.debug && this.props.showDebugNavigation ? (
                                 <Grid container spacing={0}>
                                     <Grid item xs={2} key={0} />
                                     <Grid item xs={2} key={1}>
@@ -1741,9 +1745,6 @@ class Problem extends React.Component {
                                                 className={classes.button}
                                                 style={{ width: "100%" }}
                                                 size="small"
-                                                onClick={() =>
-                                                    (this.context.needRefresh = true)
-                                                }
                                             >
                                                 {translate('problem.PreviousProblem')}
                                             </Button>
@@ -1762,9 +1763,6 @@ class Problem extends React.Component {
                                                 className={classes.button}
                                                 style={{ width: "100%" }}
                                                 size="small"
-                                                onClick={() =>
-                                                    (this.context.needRefresh = true)
-                                                }
                                             >
                                             {translate('problem.NextProblem')}
                                             </Button>
@@ -1772,7 +1770,7 @@ class Problem extends React.Component {
                                     </Grid>
                                     <Grid item xs={2} key={4} />
                                 </Grid>
-                            ) : (
+                            ) : this.context.debug ? null : (
                                 
                                 <Grid
                                     container
@@ -1807,10 +1805,10 @@ class Problem extends React.Component {
                         xs={12}
                         md={drawerOpen ? 4 : 5}
                         style={{
-                        position: "sticky",
-                        top: hintStickTop,
-                        alignSelf: "flex-start",
-                        zIndex: 2,
+                            position: "sticky",
+                            top: hintStickTop,
+                            alignSelf: "flex-start",
+                            zIndex: 2,
                     }}
                     >
                         {chatDisplayMode === 'Avatar' ? (
@@ -1848,6 +1846,7 @@ class Problem extends React.Component {
                         )}
                     </Grid>
                     )}
+
 
                     {isMobile && chatDisplayMode === 'Avatar' && (
                     <Grid item xs={12}>
