@@ -19,6 +19,10 @@ export function toastNotifyCorrectness(isCorrect, reason, translate) {
             toast.error(translate("toast.cantProcess"), {
                 autoClose: 3000
             })
+        } else if (reason === WrongAnswerReasons.notPreciseEnough) {
+            toast.error(translate("toast.notPreciseEnough"), {
+                autoClose: 3000
+            })
         }
     }
 }
