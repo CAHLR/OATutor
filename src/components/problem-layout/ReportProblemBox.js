@@ -14,7 +14,7 @@ const MAX_SCREENSHOT_BYTES = 10 * 1024 * 1024;
 
 const rowStyle = {
     display: "flex",
-    alignItems: "center",
+    alignItems: "flex-start",
     gap: 6,
     padding: 6,
     margin: 0,
@@ -25,8 +25,11 @@ const rowStyle = {
 const inputStyle = {
     flex: 1,
     minWidth: 0,
-    height: 36,
-    padding: "0 10px",
+    boxSizing: "border-box",
+    height: 120,
+    resize: "vertical",
+    padding: "8px 10px",
+    lineHeight: 1.4,
     border: "1px solid #C9D7E2",
     borderRadius: 8,
     outline: "none",
@@ -139,8 +142,9 @@ const SentPreview = ({ report }) => (
 );
 
 /**
- * One-line "Report a problem" box that opens under its button. Students can attach a
- * screenshot from a file or by pasting one. Enter sends; Esc or clicking elsewhere closes it.
+ * "Report a problem" box that opens under its button. Students can attach a screenshot from
+ * a file or by pasting one. Enter sends, Shift+Enter starts a new line; Esc or clicking
+ * elsewhere closes it.
  * Mounted only while open, so every report starts from an empty box.
  */
 const ReportProblemBox = ({ anchorEl, onClose, onSubmit, saved }) => {
@@ -196,7 +200,7 @@ const ReportProblemBox = ({ anchorEl, onClose, onSubmit, saved }) => {
             PaperProps={{
                 style: {
                     marginTop: 8,
-                    width: "min(400px, calc(100vw - 24px))",
+                    width: "min(520px, calc(100vw - 24px))",
                     maxHeight: "calc(100vh - 96px)",
                     borderRadius: 12,
                     border: "1px solid #DFE8EE",
@@ -239,13 +243,16 @@ const ReportProblemBox = ({ anchorEl, onClose, onSubmit, saved }) => {
                             event.target.value = "";
                         }}
                     />
-                    <input
+                    <textarea
                         ref={inputRef}
                         value={text}
                         onChange={(event) => setText(event.target.value)}
+                        onKeyDown={(event) => {
+                            if (event.key === "Enter" && !event.shiftKey) handleSubmit(event);
+                        }}
                         placeholder="e.g. right answer marked wrong"
                         aria-label="Describe the problem"
-                        maxLength={500}
+                        maxLength={2000}
                         style={inputStyle}
                     />
                     <IconButton
