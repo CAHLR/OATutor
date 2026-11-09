@@ -34,6 +34,9 @@ class AgentIntegration extends React.Component {
             onPromoEligibilityChange,
             applyHelpPenalty,
             chatPenaltyMode,
+            combinedHelp,
+            hintPenaltyMode,
+            hintDockBottom,
         } = this.props;
 
         return (
@@ -62,6 +65,9 @@ class AgentIntegration extends React.Component {
                 onPromoEligibilityChange={onPromoEligibilityChange}
                 applyHelpPenalty={applyHelpPenalty}
                 chatPenaltyMode={chatPenaltyMode}
+                combinedHelp={combinedHelp}
+                hintPenaltyMode={hintPenaltyMode}
+                hintDockBottom={hintDockBottom}
             />
         );
     }
